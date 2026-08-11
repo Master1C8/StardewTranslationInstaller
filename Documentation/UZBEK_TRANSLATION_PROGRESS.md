@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-127: 6,223 / 14,720 records (42.28%)
+- Current coverage after UZ-128: 6,257 / 14,720 records (42.51%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1417,6 +1417,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Jodi`, `Kent`, `Sam`, `Vincent`, `Pam`, `Marnie`, `Caroline`, `Yoba`, `JojaMart`, `Yoba mehrobi`, `Bahor/Yoz/Kuz/Qish`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing family/Joja terms were confirmed before translation
 - Overall textual coverage after this batch: 6,223 / 14,720 unique English records (42.28%), an increase of 0.36 percentage points
+
+### UZ-128 — Kent character dialogue
+
+- Target: `Characters/Dialogue/Kent`
+- English source: `unpacked-all/Characters/Dialogue/Kent.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-kent.json`
+- Entries: all 34 English records
+- Scope: Kent’s return from war, family and Sam, Green Rain, resort conversations, fishing, marriage, movies, popcorn event branches, and daily routines
+- Control contract preserved exactly: player marker `@`, emotion markers `$h/$s/$u/$4/$5`, dialogue breaks `#$e#`/`#$b#`, timed ambient token `#$1 Kent1#`, and continuation token `$k`
+- Glossary decisions applied: canonical `Kent`, `Sam`, `Jodi`, `Mittilar tili`, `Pelikan shaharchasi`, `Baliqchilik`, `Sohil`, `Okean`, `Yoz`, and `turmush qurgan`
+- Online glossary check: the canonical project glossary had already returned HTTP 200 in the preceding block; the local Uzbek snapshot was rechecked for Kent’s family, Mittilar, fishing, and relationship terminology before this translation
+- Overall textual coverage after this batch: 6,257 / 14,720 unique English records (42.51%), an increase of 0.23 percentage points
 
 ## Next safe batch
 

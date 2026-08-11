@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-078: 4,274 / 14,720 records (29.04%)
+- Current coverage after UZ-079: 4,282 / 14,720 records (29.09%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -839,6 +839,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Zanjabil oroli`, `Mittilar`, `Vulqon`, `Changalzor`, `Sohil`, `Birdie`, `sovg‘a`, and established island terminology
 - Overall textual coverage after this batch: 4,274 / 14,720 unique English records (29.04%), an increase of 0.12 percentage points
 
+### UZ-079 — Extra dialogue: Professor Snail fossil hints
+
+- Target: `Data/ExtraDialogue`
+- English source: `unpacked-all/Data/ExtraDialogue.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-extra-dialogue-professor-snail.json`
+- Entries: all eight Professor Snail hints at source positions 109–116
+- Scope: frog and cave-bat habitats, snake spines, digging spots, fossil-bearing rocks, river panning, fishing for ancient bones, and Golden Coconuts
+- The English fossil item IDs remain unchanged in their record keys; displayed hints use the established archaeological and island vocabulary
+- Glossary decisions applied: canonical `Professor Snail`, `Zanjabil oroli`, `Orol g‘arbi`, `Ko‘rshapalak`, `qazilma`, `suyak`, `elash`, and `Oltin kokos`
+- Overall textual coverage after this batch: 4,282 / 14,720 unique English records (29.09%), an increase of 0.05 percentage points
+
 ## Next safe batch
 
-Continue `Data/ExtraDialogue` with the eight Professor Snail fossil hints, followed by the Summit sequence. Keep scripted event commands outside quoted dialogue byte-for-byte equal to English.
+Complete the remaining 31 `Data/ExtraDialogue` Summit records as one final audited target group. Keep all event commands outside quoted dialogue byte-for-byte equal to English.

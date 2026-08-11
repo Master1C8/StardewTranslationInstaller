@@ -644,6 +644,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - The English record keys remain unchanged; together with the English display slot they disambiguate the three base rows whose two English labels differ: `Dust Spirit / Dust Sprite`, `Iridium Golem / Wilderness Golem`, and `Truffle Crab / Rock Crab`
 - Every health, damage, defense, movement, drop table, probability, sprite/index, spawn, and behavior value remains unchanged
 
+### UZ-063 — Fish data
+
+- Target: `Data/Fish`
+- English source: `unpacked-all/Data/Fish.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-fish.json`
+- Entries: all 74 English fish, algae, seaweed, and crab-pot catch records
+- Scope: every display name stored by the base `Data/Fish` table
+- Naming contract: each English display name was matched to exactly one English `Strings/Objects` `*_Name` key and reuses the already reviewed Uzbek value from the completed `Strings/Objects` translation
+- Delimiter contract preserved: all 64 rod-catch records retain exactly 14 slash-separated fields and all 10 trap-catch records retain exactly 8; only the first display-name field is localized
+- Every difficulty, movement type, size, time window, season, weather, location/depth, probability, minimum level, tutorial flag, trap habitat, and numeric value remains byte-for-byte equal to English
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

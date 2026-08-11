@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-156: 8,457 / 14,720 records (57.45%)
+- Current coverage after UZ-157: 8,537 / 14,720 records (58.00%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1767,6 +1767,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `iridiy`, `Qattiq yog‘och`, `Kovboy`, `Dengizchi`, `ferma / Ferma`, and consistent Uzbek clothing terms for ko‘ylak, bluzka, kurtka, nimcha, tunika, sviter, and sovut
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for iridium, hardwood, cowboy, sailor, farm, and clothing terminology were rechecked before translation
 - Overall textual coverage after this batch: 8,457 / 14,720 unique English records (57.45%), an increase of 0.54 percentage points
+
+### UZ-157 — Shirts names and descriptions, part 3
+
+- Target: `Strings/Shirts`
+- English source: `unpacked-all/Strings/Shirts.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/shirts-3.json`
+- Entries: 80 consecutive English records, from `TunnelersJersey_Description` through `BeltedCoat_Description`
+- Scope: Zuzu Tunnelers and formalwear, holiday and novelty shirts, bandanas and vintage clothing, vacation and slime shirts, sports and chef clothing, overalls, Yoba, necklace, and belted coat entries
+- Control contract preserved exactly: all source keys and explicit `(F)` / `(M)` name suffixes remain unchanged; this range contains no runtime placeholders or dialogue commands
+- Glossary decisions applied: canonical `Zuzu shahri`, `Qish yulduzi ziyofati`, `Yoba`, `ferma / Ferma`, `iridiy`, and consistent Uzbek clothing terminology
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Zuzu City, Winter Star, Yoba, farm, iridium, and clothing terminology were rechecked before translation
+- Overall textual coverage after this batch: 8,537 / 14,720 unique English records (58.00%), an increase of 0.54 percentage points
 
 ## Next safe batch
 

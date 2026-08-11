@@ -28,6 +28,18 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 - Placeholders preserved: `{0}` in `QuestButton_Hover`
 - Glossary decisions applied: `Topshiriq`, `Jurnal`, `Anjomlar`, `Ko‘nikmalar`, `Ijtimoiy`, `Xarita`, `Yasash`, `To‘plamlar`, `Sozlamalar`, `Jamoat markazi`, and the three explicit exit labels
 
+### UZ-002 — inventory, stats, and short creation labels
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-inventory-stats.json`
+- Entries: 57
+- Scope: birthday and year labels, short carpenter actions, appearance labels, collection counters, item statistics, skill buffs, player funds, the last shipped item, and bundle names
+- Placeholders preserved: `{0}` and `{1}` in all 38 parameterized entries
+- Glossary decisions applied: `Tug‘ilgan kun`, `yil`, `Tungi bozor`, `Ko‘rinishni o‘zgartirish`, `Binolarni buzish`, `Binolarni ko‘chirish`, `Qurish`, `Mudofaa`, `Immunitet`, `Kritik ehtimol`, `Kritik kuch`, `Zarar`, `Tezlik`, `Og‘irlik`, `Quvvat`, `Salomatlik`, the five skill names, `Omad`, `Oxirgi jo‘natilgan buyum`, and `to‘plam`
+
+Current translated total: 88 `Strings/UI` entries.
+
 ## Next safe batch
 
-Continue `Strings/UI` with short inventory, item-stat, and collection-counter labels. Check every term against the `uz` glossary layer before adding it. Leave long multiplayer help text and context-sensitive prompts for a later editorial pass.
+Continue `Strings/UI` with short animal, shop, shipping, and confirmation labels. Check every term against the `uz` glossary layer before adding it. Leave long multiplayer help text and context-sensitive prompts for a later editorial pass.

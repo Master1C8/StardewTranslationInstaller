@@ -152,6 +152,35 @@ Current translated total: 679 `Strings/UI` entries.
 
 Current translated total: 887 `Strings/UI` entries. The English source contains 887 entries, so `Strings/UI` is complete for this source snapshot.
 
+### UZ-014 — NPC display names and titles
+
+- Target: `Strings/NPCNames`
+- English source: `unpacked-all/Strings/NPCNames.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/npc-names.json`
+- Entries: 49 of 49
+- Scope: every NPC display name; personal names remain names, while glossary-backed roles and titles are localized
+- Glossary decisions applied: `Ayiq`, `Birdie`, `Qo‘riqchi`, `Mitti`, `Gubernator`, `Bobo`, `Yugurdak`, `Mister Qi`, `Keksa dengizchi`, `Professor Snail`, and `Sehrgar`
+
+### UZ-015 — tools and upgrades
+
+- Target: `Strings/Tools`
+- English source: `unpacked-all/Strings/Tools.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/tools.json`
+- Entries: 54 of 54
+- Scope: names, upgrade tiers, and descriptions for axes, fishing rods, hoes, lantern, Milk Pail, pans, pickaxes, Return Scepter, shears, Trash Can, and Watering Can
+- Glossary decisions applied: `Bolta`, `Baliq qarmog‘i`, all five named rod variants, `Ketmon`, `Sut chelagi`, `Mis / Po‘lat / Oltin / Iridiy`, all four `tova` tiers, `Cho‘kich`, `Qaytish hassasi`, `Qaychi`, `Axlat qutisi`, `Sug‘orgich`, `ruda`, and `qalqovich`
+- Placeholder preserved: `{0}` in `TrashCan_Description`
+
+### UZ-016 — farm-animal names and moods
+
+- Target: `Strings/FarmAnimals`
+- English source: `unpacked-all/Strings/FarmAnimals.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/farm-animals.json`
+- Entries: 30 of 30
+- Scope: all displayed animal types plus sleep, arrival, hunger, sadness, happiness, overnight, and dog-disturbance mood messages
+- Glossary decisions applied: all five chicken types, both cow types, `Dinozavr`, `O‘rdak`, `Echki`, `Tuyaqush`, `Cho‘chqa`, `Quyon`, and `Qo‘y`
+- Placeholder preserved: `{0}` in all 16 parameterized mood entries
+
 ## Next safe batch
 
-Start the first non-UI data batches from the English source: short NPC names, location names, item names, tool names, and other glossary-backed mechanics. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.
+Continue the short English data targets with weapon names, basic location strings, and glossary-backed item names. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.

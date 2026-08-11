@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-090: 4,452 / 14,720 records (30.24%)
+- Current coverage after UZ-091: 4,470 / 14,720 records (30.37%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -972,6 +972,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Hokim Lewis`, `Maru`, `Pelikan shaharchasi`, `Muzey va kutubxona`/library context, `Tungi bozor`, `fasl`, and established Doctor Harvey terminology
 - Overall textual coverage after this batch: 4,452 / 14,720 unique English records (30.24%), an increase of 0.11 percentage points
 
+### UZ-091 — Short schedule dialogue: Sebastian and Shane
+
+- Targets: `Strings/schedules/Sebastian` and `Strings/schedules/Shane`
+- English sources: the two matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-sebastian.json` and `schedule-shane.json`
+- Entries: all 18 English records across the two targets; each target remains in its own auditable file
+- Scope: Sebastian and Shane’s clinic, spouse, Sam/Jas friendship, smoking, ocean, Night Market, saloon, JojaMart, Joja Cola, and arcade remarks
+- Control contract preserved exactly: player marker `@`, emotion markers `$6`, `$7`, `$a`, `$h`, numeric literal `10`, and source key punctuation
+- Glossary decisions applied: canonical `Sebastian`, `Shane`, `Sam`, `Jas`, `JojaMart`, `Joja Cola`, `Tungi bozor`, `Yulduz tomchisi saluni`, and Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,470 / 14,720 unique English records (30.37%), an increase of 0.12 percentage points
+
 ## Next safe batch
 
-Continue the remaining `Strings/schedules` targets in ascending size, next grouping the nine-entry Sebastian and Shane tables while preserving each target in a separate file.
+Continue the remaining `Strings/schedules` targets in ascending size, next grouping the ten-entry Abigail and Willy tables while preserving each target in a separate file.

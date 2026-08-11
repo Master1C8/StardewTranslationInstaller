@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-128: 6,257 / 14,720 records (42.51%)
+- Current coverage after UZ-129: 6,317 / 14,720 records (42.91%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1429,6 +1429,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Kent`, `Sam`, `Jodi`, `Mittilar tili`, `Pelikan shaharchasi`, `Baliqchilik`, `Sohil`, `Okean`, `Yoz`, and `turmush qurgan`
 - Online glossary check: the canonical project glossary had already returned HTTP 200 in the preceding block; the local Uzbek snapshot was rechecked for Kent’s family, Mittilar, fishing, and relationship terminology before this translation
 - Overall textual coverage after this batch: 6,257 / 14,720 unique English records (42.51%), an increase of 0.23 percentage points
+
+### UZ-129 — Demetrius character dialogue
+
+- Target: `Characters/Dialogue/Demetrius`
+- English source: `unpacked-all/Characters/Dialogue/Demetrius.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-demetrius.json`
+- Entries: all 60 English records
+- Scope: Demetrius’s laboratory and family, Maru and Robin, dinosaur and crab specimens, Green Rain, resort and desert observations, farm science, seasonal research, and event branches
+- Control contract preserved exactly: player marker `@`, `%fork` and `%Demetrius` placeholders, item code `[253]`, emotion markers `$h/$s/$u/$7/$5/$4`, dialogue breaks `#$e#`/`#$b#`, `$y` answer branches, and `$p 40#...|...` friendship branch
+- Glossary decisions applied: canonical `Demetrius`, `Maru`, `Robin`, `Pasternak`, `Yashil yomg‘ir`, `Kaliko cho‘li`, `Qisqichbaqa`, `Ekotizim`, `laboratoriya`, `nam saqlovchi tuproq`, and seasonal `Yoz/Kuz/Qish`
+- Online glossary check: the canonical project page was opened successfully in the in-app browser; the local snapshot and visible canonical entries for core place, character, farm, and season terminology were compared before translation. A direct command-line fetch was unavailable due to transient DNS resolution failure.
+- Overall textual coverage after this batch: 6,317 / 14,720 unique English records (42.91%), an increase of 0.41 percentage points
 
 ## Next safe batch
 

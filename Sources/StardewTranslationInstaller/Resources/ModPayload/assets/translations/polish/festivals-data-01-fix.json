@@ -1,0 +1,15 @@
+{
+  "Format": "2.9.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "mainEvent": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 27 69 0 27 67 1 32 67 3 28 71 0 26 71 0 25 63 2 32 63 2 34 63 2 left 33 71 0/pause 1000/viewport 27 67 true unfreeze/pause 2000/speak Lewis \"Nadszedł czas na główną atrakcję dzisiejszych uroczystości... Doroczne wiosenne polowanie na jajka!$h\"/pause 100/jump Jas/jump Vincent/pause 1000/speak Lewis \"Spokojnie, dzieciaki. Będziecie potrzebować całej energii, jeśli chcecie znaleźć najwięcej jajek i zdobyć wyjątkową nagrodę.\"/pause 100/faceDirection Vincent 3 true/faceDirection Jas 1 true/pause 1000/faceDirection Vincent 0 true/faceDirection Jas 0/pause 800/faceDirection Lewis 3/faceDirection Lewis 2/faceDirection Lewis 1/faceDirection Lewis 2/pause 800/speak Lewis \"No dobrze... Wszyscy gotowi?\"/pause 1000/waitForOtherPlayers startContest/jump Lewis/pause 1000/speak Lewis \"Niech rozpocznie się polowanie na jajka!$h\"/advancedMove Maru false -2 0 0 6 -9 0 0 -2 -9 0 0 -1 2 0 0 -12 6 0 0 -7 3 0/advancedMove Abigail false 0 21 -20 0 0 3 7 0 0 -15 -9 0 9 0 0 18/advancedMove Jas false 0 12 8 0 0 10 3 0 0 4 14 0 0 -20 -6 0 0 3/advancedMove Sam false 4 0 0 -4 2 0 0 -4 12 0 0 -6 19 0 0 20 0 -20 0 20/advancedMove Vincent false 0 3 24 0 0 21 9 0 0 4 -20 0 20 0 -20 0/advancedMove Leo false 0 -10 -1 0 0 -3 -6 0 0 -2 -3 0 0 -3 -1 0 0 20 -5 0 0 -10 -2 0/playSound whistle/playMusic tickTock/playerControl eggHunt"
+      }
+    }
+  ]
+}

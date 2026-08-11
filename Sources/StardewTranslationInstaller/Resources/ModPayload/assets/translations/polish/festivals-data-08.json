@@ -1,0 +1,197 @@
+{
+  "Format": "2.9.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "name": "Festiwal Lodu",
+        "mainEvent": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"Dobrze, wszyscy. Zacznijmy tegoroczne zawody wędkowania pod lodem.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Zawodnicy, waszym celem jest złapanie jak największej liczby ryb w ciągu dwóch minut za pomocą dostarczonych wędek.#$b#Ryby musicie łowić tutaj, z tych przerębli w lodzie.\"/pause 600/speak Lewis \"No dobrze, wszyscy gotowi?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Zaczynamy!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+        "afterIceFishing": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Wow, ile ryb!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*dławi się*... ten zapach...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"A teraz zwycięzca tegorocznych zawodów wędkowania pod lodem...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Oto twoja nagroda! Miłej zabawy.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Cóż, to koniec tegorocznego Festiwalu Lodu. Dziękuję wszystkim za przybycie! #$b#A teraz wypuśćmy te biedne ryby...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"Nie mogę uwierzyć, że wygrałem! Czas wracać do domu.\"/waitForOtherPlayers festivalEnd/end",
+        "OtherPlayerWin": "message \"Nie wygrałem zawodów, ale i tak było fajnie! Czas wracać do domu.\"/waitForOtherPlayers festivalEnd/end",
+        "DickWin": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"Oto twoja nagroda, Willy. Miłej zabawy.\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Cóż, to koniec tegorocznego Festiwalu Lodu. Dziękuję wszystkim za przybycie!#$b#A teraz wypuśćmy te biedne ryby...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"Nie wygrałem zawodów, ale i tak było fajnie! Czas wracać do domu.\"/waitForOtherPlayers festivalEnd/end",
+        "Abigail_spouse": "Hej, kochanie... spójrz, to ty!$h",
+        "Penny_spouse": "Bierzesz udział w zawodach wędkarskich w tym roku, @? Moja mama bardzo poważnie podchodzi do wygranej.",
+        "Haley_spouse": "Brr... Zmarzły mi ręce od robienia tego bałwana.$l",
+        "Sebastian_spouse": "Nie martw się o mnie, nigdy nie jest mi zimno...",
+        "Sam_spouse": "Nie jest ci zimno? Na pewno nie chcesz mojej kurtki?"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Abigail": "Co sądzisz o moim bałwanie-potworze?",
+        "Robin": "Przepraszam, ale rzeźbienie lodowych blanków wymaga mojej pełnej uwagi!",
+        "Demetrius": "Wiesz co? Pewnie powinienem był założyć kurtkę.",
+        "Maru": "Nie jestem zbyt kreatywna, jeśli chodzi o bałwany.$s",
+        "Sebastian": "Zimno? Nie, nigdy nie jest mi zimno.",
+        "Pierre": "Ten śnieg jest tak zimny, że nie czuję już palców...$s",
+        "Shane": "Gdyby to zależało ode mnie, zrobiłbym raczej festiwal pizzy w saloonie...",
+        "Caroline": "Jak ci mija zima, @?$h",
+        "Linus": "Budowanie igloo to sztuka, której nauczyłem się od mieszkańców tundry żyjących za zamarzniętym morzem.#$e#To było wiele lat temu.$h#$e#Igloo jest przyjemnym domem, ale łatwiej po prostu mieszkać cały rok w namiocie.",
+        "Alex": "Bałwany są w porządku, chyba. Ale głównie czekam na wiosnę."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "George": "Hmmph... Żona wyciągnęła mnie na ten mróz?",
+        "Evelyn": "Czy mówiłam ci kiedyś, jak po raz pierwszy poznaliśmy się z George'em? Tak naprawdę obrzucił mnie śnieżką właśnie na tym festiwalu.#$e#Był wtedy dżentelmenem i podszedł sprawdzić, czy nic mi nie jest.$h",
+        "Lewis": "Witaj na Festiwalu Lodu!#$e#Największą atrakcją są dziś zawody wędkowania pod lodem. Przygotowaliśmy to „zamarznięte jezioro” i zarybiliśmy je.#$b#Daj mi znać, kiedy zechcesz wziąć udział.",
+        "Clint": "Emily zaczęła mi pomagać bez żadnego powodu... czy to coś znaczy? *przełyka ślinę*$4",
+        "Emily": "Wow, ten bałwan potrzebuje metamorfozy. Kto go zrobił?$s",
+        "Penny": "$y 'Hmm... Jakiego bałwana powinniśmy zrobić?_Klasycznego. Marchewkowy nos, cylinder, szalik._Chyba najlepiej trzymać się klasyki, prawda?$h_Coś odjechanego. Anteny z sopli, oczy z szyszek._Dobrze! To brzmi fajnie.$h_Bałwany są nudne. Wymyśl coś nietypowego!_Eee, dobrze... Chyba jednak zostanę przy czymś bardziej konwencjonalnym.'",
+        "Pam": "Planuję wygrać zawody wędkowania pod lodem!#$e#Willy będzie jednak trudny do pokonania... Zajmuje się czymś takim dniem i nocą.$s",
+        "Haley": "Chyba zima nie jest taka zła... Zabawa na śniegu może być fajna!",
+        "Jodi": "Las wygląda zimą pięknie, prawda?"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Kent": "Lubię zimę. Jest spokojna.",
+        "Sam": "Hej, @. Weźmiesz udział w zawodach wędkowania pod lodem?#$e#Och, ja nie. Nie wiem, jak łowić ryby.",
+        "Leah": "Och, lód. Piękny materiał do rzeźbienia, ale taki nietrwały.#$e#Ale chyba to może czynić sztukę jeszcze lepszą.",
+        "Marnie": "Szkoda mi wszystkich biednych, zmarzniętych zwierząt.$s",
+        "Elliott": "Biorę dziś udział w zawodach wędkowania pod lodem. Czemu nie?#$e#Rzadko się zdarza, żeby Willy przegrał.",
+        "Gus": "Przepraszam, że nie ma jedzenia.#$e#Poczekaj tylko do Święta Zimowej Gwiazdy. Będziesz najedzony przez wiele dni.",
+        "Wizard": "Wymykasz się, żeby odwiedzić moją dziwną wieżę? ${Jesteś dziwny^Jesteś dziwna}$ jak na zwykłego człowieka.",
+        "Harvey": "Ekstremalne temperatury mogą mocno obciążyć organizm, więc dobrze się opatulkaj!#$e#Och, i baw się dobrze na festiwalu!$h",
+        "Sandy": "Słyszałam, że w domu pada deszcz. Czy dlatego tu ${przyjechałeś^przyjechałaś}$?$h#$e#Właściwie trochę tęsknię za deszczem...$s"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Jas": "Chcę dorobić mu marchewkowy nos!$h",
+        "Vincent": "Widziałem tam wielką rybę!",
+        "Marlon": "Hej, dzień dobry.",
+        "Leo": "Igloo byłoby dwa razy cieplejsze, ${gdybyś wypchał^gdybyś wypchała}$ ściany piórami!",
+        "Abigail_spouse_y2": "Wyobraź sobie, gdybyśmy razem mieszkali w igloo!$h#$e#Byłoby fajnie, ale jestem szczęśliwa, mieszkając z tobą gdziekolwiek.$l",
+        "Penny_spouse_y2": "Kiedy wrócimy do domu, rozpalmy ogień i napijmy się gorącego kakao.$0#$e#...z piankami?$h",
+        "Haley_spouse_y2": "Chodź tutaj, poprawię ci włosy... Zrobię ci zdjęcie w akcji podczas zawodów!",
+        "Sebastian_spouse_y2": "Hej, naprawdę musisz dziś wygrać zawody.$0#$e#Eee... cóż, założyłem się trochę z Marlonem...$1",
+        "Sam_spouse_y2": "Musisz kiedyś nauczyć mnie używać wędki. Chyba byłbym w tym dobry.",
+        "Alex_spouse_y2": "Hej! Dziś wygrasz z ogromną przewagą, wiem to. Przynieś nam chlubę!"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Harvey_spouse_y2": "Cześć, kochanie. Powodzenia w zawodach wędkowania pod lodem.$0",
+        "Elliott_spouse_y2": "Ćwiczyłem technikę wędkowania. Nie będę się przed tobą oszczędzał, moja droga.$1",
+        "Abigail_y2": "Czy kiedykolwiek ${wrzucałeś^wrzucałaś}$ garść kamyków na zamarznięte jezioro? Wydają wtedy bardzo przyjemny dźwięk.#$e#...Nie mów tacie, ale pod tym płaszczem mam sweter Zimowej Gwiazdy.",
+        "Robin_y2": "Rzeźbienie w lodzie to dla mnie satysfakcjonujące wyzwanie. To nietypowy materiał, z którym nie mam doświadczenia!",
+        "Demetrius_y2": "Lód wodny... naprawdę niezwykle głęboka substancja. Niezbędny do życia, jest odpowiednim materiałem na posągi przedstawiające żywe istoty.",
+        "Maru_y2": "Klucz do stworzenia dobrze wykonanego bałwana zaczyna się od zapewnienia równej podstawy i unikania nadmiernego obciążenia górnej części.$3",
+        "Shane_y2": "Zima może być naprawdę trudna dla zwierząt. ${Zainstalowałeś^Zainstalowałaś}$ grzejniki w kurnikach i oborach?",
+        "Sebastian_y2": "${Zauważyłeś^Zauważyłaś}$ kiedyś, jak cicho jest na śniegu?",
+        "Pierre_y2": "Nasza rodzina ma pasujące swetry Zimowej Gwiazdy.#$e#Gdyby tylko Abigail chciała swój założyć...$2",
+        "Caroline_y2": "Cześć, @. Czy tej zimy znajdujesz czas, by odpocząć od obowiązków na gospodarstwie?$0"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Linus_y2": "Ach... las zapadł w głęboki sen na zimę...$1",
+        "Alex_y2": "Myślisz, że ktoś miałby coś przeciwko, gdybym po festiwalu zanurzył się w zamarzniętym jeziorze?#$e#Słyszałem, że kąpiele lodowe dobrze wpływają na mięśnie.",
+        "George_y2": "Kiedy starzejesz się i łysiejesz jak ja, potrzebujesz dobrego, ciepłego kapelusza.",
+        "Evelyn_y2": "Nigdy nie wiadomo... Może to ostatni raz, kiedy robię bałwana z Alexem.#$e#Życie jest krótkie, kochanie. Pamiętaj, by cenić każdą chwilę.",
+        "Lewis_y2": "Witaj, @. Znów nadszedł czas festiwalu wędkowania pod lodem.#$b#Porozmawiaj ze mną, gdy ${będziesz gotowy^będziesz gotowa}$, by rozpocząć zawody!$1",
+        "Clint_y2": "Te bryły śniegu nie chcą uformować się w kule...$0#$e#Chyba lepiej pracuje mi się w cieple niż na mrozie.$2",
+        "Emily_y2": "Bałwan musi wyglądać jak bałwan! Czy cylinder i szalik nie są stylowe?",
+        "Penny_y2": "Boję się chodzić po zamarzniętym jeziorze...#$e#Kiedyś czytałam książkę, w której dziewczyna wpadła pod lód.#$b#Nic jej się nie stało! Ale... od tamtej pory jestem ostrożna.",
+        "Pam_y2": "$y 'Przegrałam w zeszłym roku, bo wybrałam złe miejsce. Mam dobre przeczucie, że tym razem będzie inaczej._Nie sądzę, żeby miejsce miało znaczenie._Ha! Łatwo ci mówić! Udowodnię, że się mylisz._I tak cię pokonam._...$4_Powodzenia._Nawzajem, młody.'",
+        "Haley_y2": "Cieszę się, że założyłam nauszniki, tu jest mroźno!$0#$e#W tym roku przyniosłam aparat. Światło jest idealne do zimowej sesji zdjęciowej!"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Jodi_y2": "Zgromadzenia takie jak to to dobry sposób na budowanie wspólnoty z sąsiadami.#$e#Miło, że zimna pogoda zbliża ludzi.",
+        "Kent_y2": "Gotowy do zawodów? Wszyscy sądzimy, że wygrasz.",
+        "Sam_y2": "Hej, czemu się śmiejesz? On jeszcze nie skończył!#$e#Poczekaj... gdy skończymy, będzie z niego wspaniały bałwan.",
+        "Leah_y2": "Przed cięciem lód trzeba zahartować, inaczej nie da się go formować!",
+        "Marnie_y2": "Aww... Ta świnka wygląda uroczo, cała opatulona!$1",
+        "Elliott_y2": "Spójrz, oto moja tajna broń... piersiówka z dobrym alkoholem, żeby zwilżyć usta chwilę przed gwizdkiem...",
+        "Gus_y2": "Spędzałem zbyt dużo czasu zamknięty w środku, oglądając Gridball... dobrze wyjść na rześkie zimowe powietrze.",
+        "Wizard_y2": "Hmm? Jak się tu ${dostałeś^dostałaś}$?#$e#Nie zwracaj na mnie uwagi. Po prostu obserwuję...",
+        "Harvey_y2": "Nie powinienem był dziś rano woskować wąsów, zamarzły na kość! Ojej...$2#$e#Cóż, jeśli potrzebujesz czekana, wiesz, gdzie mnie znaleźć...$h",
+        "Jas_y2": "Czy rybom nie jest tam zimno?$3"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Vincent_y2": "Mój starszy brat pomaga mi budować bałwana!$0",
+        "Marlon_y2": "Ta pora roku nie jest taka zła. Zimą nie ma robaków...#$e#Myślisz, że w tym roku pokonasz Willy'ego? To trudny konkurent...",
+        "Leo_y2": "*chrup* *chrup* Śnieg śmiesznie skrzypi, gdy się po nim chodzi!$1"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "Alex_spouse": "Będę za ciebie trzymał kciuki w zawodach wędkarskich.",
+        "Harvey_spouse": "Śnię o naszym ciepłym ogniu w domu...$l",
+        "Elliott_spouse": "Wiem, że pokonasz mnie w zawodach wędkarskich, ale nie mam nic przeciwko. Jestem tu tylko dla zabawy.$h",
+        "Willy": "$y 'Hej, @. Gotowy na wędkowanie pod lodem?_Tak. Dam z siebie wszystko!_O to chodzi!$h_Tak, i zamierzam cię pokonać!_Zobaczymy.$h_Szczerze mówiąc, nie. Nie umiem łowić._Potraktuj to jako dobry trening!$h'",
+        "mainEvent_y2": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 69 36 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 37 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 0/faceDirection Elliott 1/faceDirection Willy 3/positionOffset Harvey 12 24/viewport 71 35 true/pause 2000/speak Lewis \"Dobrze, wszyscy. Zacznijmy tegoroczne zawody wędkowania pod lodem.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Zawodnicy, korzystając z dostarczonych wędek, musicie złapać jak najwięcej ryb z tych przerębli.\"/pause 600/speak Lewis \"Wszyscy gotowi?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Zaczynamy!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Maru true 3 3000 4 300 0 -3 4 250 3 6400 2 300 0 3 2 300 3 4250/advancedMove Vincent true 2 6500 1 300 3 0 1 300 2 7400 3 300 -3 0 3 300 2 1000/advancedMove Penny true 4 5750 3 300 -5 0 3 300 4 6100 1 300 5 0 1 300 4 1000/advancedMove Clint false 4 6000 1 1500 4 4000 1 2000 1 0 0 -1 4 15000 1 2000 4 1000/advancedMove Emily false 4 17000 3 1750 4 4000 1 350 2 0 0 -2 1 0 1 250 4 250 3 5000/advancedMove Jas true 1 4500 4 5750/advancedMove Abigail true 1 8400 2 3650/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/animate Haley true true 150 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 33 33 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 24 24 31 30 30 30 30 30 30 30 33/playMusic fallFest/playerControl iceFishing"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "pl-vnrevival"
+      },
+      "Entries": {
+        "afterIceFishing_y2": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 3/faceDirection Elliott 1/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Imponujące, to mnóstwo złowionych ryb!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*dławi się*... Nigdy nie przyzwyczaję się do tego smrodu...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"A teraz zwycięzca tegorocznych zawodów wędkowania pod lodem...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Oto twoja nagroda! Miłej zabawy.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Cóż, to koniec tegorocznego Festiwalu Lodu. Dziękuję wszystkim za przybycie!#$b#A teraz wypuśćmy te biedne ryby...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -3 0 0 true/advancedMove Willy false 3 300 2 300 1 1000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"Nie mogę uwierzyć, że wygrałem! Czas wracać do domu.\"/waitForOtherPlayers festivalEnd/end",
+        "DickWin_y2": "pause 100/jump Willy/pause 800/move Willy -3 0 0/speak Lewis \"Oto twoja nagroda, Willy. Miłej zabawy.\"/pause 500/move Willy 0 -1 0/move Lewis 1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Cóż, to koniec tegorocznego Festiwalu Lodu. Dziękuję wszystkim za przybycie!#$b#A teraz wypuśćmy te biedne ryby...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -4 0 0 true/advancedMove Willy false 4 300 1 300 4 0 1 200 2 3000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"Nie wygrałem zawodów, ale i tak było fajnie! Czas wracać do domu.\"/waitForOtherPlayers festivalEnd/end",
+        "Leah_spouse_y2": "Kiedyś powinienem nauczyć cię rzeźbić w lodzie! Byłoby fajnie!$h#$e#Z ogromną ciekawością zobaczę, co uda ci się stworzyć.",
+        "Maru_spouse_y2": "Świetnie sobie poradzisz, kochanie! Zachowaj spokój i koncentrację.",
+        "Emily_spouse_y2": "Ta da! To ty!#$e#Co? Nie widzisz podobieństwa? Uważam, że jest idealne!",
+        "Shane_spouse_y2": "Pamiętasz, kiedy siedzieliśmy nad starym stawem i dzieliliśmy się piwem? To było gdzieś tutaj.#$e#Cóż, najlepiej nie rozpamiętywać przeszłości... nawet dobre wspomnienia sprawiają mi ból.",
+        "Willy_y2": "Aye, całe miasteczko będzie dziś oglądać nasz mały turniej. Dajmy im dobre przedstawienie."
+      }
+    }
+  ]
+}

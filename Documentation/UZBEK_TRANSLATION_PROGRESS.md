@@ -16,6 +16,13 @@ The local `Documentation/glossary/glossary.uz.json` snapshot was compared with t
 
 Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/uz/>
 
+## Overall textual coverage
+
+- Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
+- Current coverage after UZ-065: 3,739 / 14,720 records (25.40%)
+- The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
+- This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
+
 ## Completed batches
 
 ### UZ-001 — core interface labels
@@ -665,6 +672,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Shlyapachi / shlyapa`, `Mitti / Mittilar`, `Sehrgar`, `Janob Qi`, `Abigail`, `Emily`, `Gil`, `Gubernator`, `Joja`, `Junimo`, `Kaliko cho‘li`, `Qal’a qishlog‘i`, `Tuyaqush`, `Mumiya`, `Skelet`, `Qaroqchi`, `Prizmatik`, and `Abadiyat`
 - Delimiter contract preserved: all 94 legacy records retain exactly 6 slash-separated fields and all 28 indexed records retain exactly 7; fields 3–5 and every seventh index field remain byte-for-byte equal to English, while the repeated sixth display name matches the translated first field
 - Control content preserved: both `???` marker records and both `100%` numeric values remain exact
+
+### UZ-065 — NPC gift reactions
+
+- Target: `Data/NPCGiftTastes`
+- English source: `unpacked-all/Data/NPCGiftTastes.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-npc-gift-tastes.json`
+- Entries: all 39 English records: 5 universal item/category lists plus all 34 NPC rows
+- Visible scope: all 170 love, like, dislike, hate, and neutral gift-reaction lines, with each character’s warmth, terseness, formality, humor, or dialectal flavor retained in natural Uzbek
+- Delimiter contract preserved: every NPC row retains exactly 11 slash-separated fields; only message fields 1, 3, 5, 7, and 9 are localized, while all five item/category fields and the trailing field remain byte-for-byte equal to English
+- The five universal records are copied byte-for-byte from the English base because they contain only internal item IDs and category tokens
+- Control syntax preserved exactly: player marker `@`, dialogue break `#$e#`, emotion markers `$u`, `$h`, `$s`, and Sandy’s trailing `~`; translated stage directions remain enclosed in matching `*...*`
+- Overall textual coverage after this batch: 3,739 / 14,720 unique English records (25.40%)
 
 ## Next safe batch
 

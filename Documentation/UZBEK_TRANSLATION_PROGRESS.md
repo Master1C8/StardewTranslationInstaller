@@ -655,6 +655,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Delimiter contract preserved: all 64 rod-catch records retain exactly 14 slash-separated fields and all 10 trap-catch records retain exactly 8; only the first display-name field is localized
 - Every difficulty, movement type, size, time window, season, weather, location/depth, probability, minimum level, tutorial flag, trap habitat, and numeric value remains byte-for-byte equal to English
 
+### UZ-064 — Hats
+
+- Target: `Data/hats`
+- English source: `unpacked-all/Data/hats.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-hats.json`
+- Entries: all 122 English hat records
+- Scope: every hat, cap, mask, bow, head accessory, pan, helmet, crown, turban, and pair of goggles; both display names and all descriptions are localized
+- Glossary decisions applied: canonical `Shlyapachi / shlyapa`, `Mitti / Mittilar`, `Sehrgar`, `Janob Qi`, `Abigail`, `Emily`, `Gil`, `Gubernator`, `Joja`, `Junimo`, `Kaliko cho‘li`, `Qal’a qishlog‘i`, `Tuyaqush`, `Mumiya`, `Skelet`, `Qaroqchi`, `Prizmatik`, and `Abadiyat`
+- Delimiter contract preserved: all 94 legacy records retain exactly 6 slash-separated fields and all 28 indexed records retain exactly 7; fields 3–5 and every seventh index field remain byte-for-byte equal to English, while the repeated sixth display name matches the translated first field
+- Control content preserved: both `???` marker records and both `100%` numeric values remain exact
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

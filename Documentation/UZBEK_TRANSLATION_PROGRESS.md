@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-091: 4,470 / 14,720 records (30.37%)
+- Current coverage after UZ-092: 4,490 / 14,720 records (30.50%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -983,6 +983,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Sebastian`, `Shane`, `Sam`, `Jas`, `JojaMart`, `Joja Cola`, `Tungi bozor`, `Yulduz tomchisi saluni`, and Doctor Harvey terminology
 - Overall textual coverage after this batch: 4,470 / 14,720 unique English records (30.37%), an increase of 0.12 percentage points
 
+### UZ-092 — Short schedule dialogue: Abigail and Willy
+
+- Targets: `Strings/schedules/Abigail` and `Strings/schedules/Willy`
+- English sources: the two matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-abigail.json` and `schedule-willy.json`
+- Entries: all 20 English records across the two targets; each target remains in its own auditable file
+- Scope: Abigail’s clinic, family, relationships, annual check-up, and mysterious remarks; Willy’s clinic, fishing, ocean, warm-up drink, Night Market, and submarine dialogue
+- Control contract preserved exactly: player marker `@`, emotion markers `$9`, `$h`, `$s`, and source key punctuation
+- Glossary decisions applied: canonical `Abigail`, `Willy`, `Harvey`, `Baliq do‘koni`, `Tungi bozor`, ocean/water terminology, and deep-sea submarine context
+- Overall textual coverage after this batch: 4,490 / 14,720 unique English records (30.50%), an increase of 0.14 percentage points
+
 ## Next safe batch
 
-Continue the remaining `Strings/schedules` targets in ascending size, next grouping the ten-entry Abigail and Willy tables while preserving each target in a separate file.
+Continue the remaining `Strings/schedules` targets in ascending size, next translating Emily’s 16-entry schedule table while preserving the target in a separate file.

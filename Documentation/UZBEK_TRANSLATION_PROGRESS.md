@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-066: 3,805 / 14,720 records (25.85%)
+- Current coverage after UZ-067: 3,813 / 14,720 records (25.90%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -697,6 +697,16 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Numeric tokens are unchanged, including times, quantities, mine floors, rewards, and progress counters
 - Glossary decisions applied: canonical `Jamoat markazi`, `Sehrgar`, `Janob Qi`, `Hokim Lewis`, `Sohil`, `Konlar`, `Bosh suyagi g‘ori`, `Dehqonchilik`, `Qarg‘a qo‘riqchisi`, `Parrandaxona`, `Molxona`, `Silos`, `Pech`, `Temirchi`, `Temirchixona`, `Sarguzashtchilar uyushmasi`, `Muzey`, `artefakt`, `mineral`, `Jodugar kulbasi`, `Kanalizatsiya`, `Qora tumor`, `Sehrli siyoh`, `Krobus`, `Birdie`, `O‘roq`, and `Zanjabil oroli`; item names reuse reviewed Uzbek `Strings/Objects` values
 - Overall textual coverage after this batch: 3,805 / 14,720 unique English records (25.85%), an increase of 0.45 percentage points
+
+### UZ-067 — Festival calendar names
+
+- Target: `Data/Festivals/FestivalDates`
+- English source: `unpacked-all/Data/Festivals/FestivalDates.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-festival-dates.json`
+- Entries: all 8 English festival-date records
+- Scope: every festival name displayed through the base festival calendar table; internal seasonal date keys remain unchanged
+- All eight values come directly from canonical glossary entries: `Tuxum bayrami`, `Gullar raqsi`, `Luau`, `Oy shu’lali meduzalar raqsi`, `Stardew Valley yarmarkasi`, `Ruhlar arafasi`, `Muz bayrami`, and `Qish yulduzi ziyofati`
+- Overall textual coverage after this batch: 3,813 / 14,720 unique English records (25.90%), an increase of 0.05 percentage points
 
 ## Next safe batch
 

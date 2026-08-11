@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-154: 8,297 / 14,720 records (56.37%)
+- Current coverage after UZ-155: 8,377 / 14,720 records (56.91%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1743,6 +1743,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Ginger Island, Calico Desert, Saloon, Joja Special Services, Pelican Town, Solar Panel, Junimo, hardwood, and pet terminology were rechecked before translation
 - Overall textual coverage after this batch: 8,297 / 14,720 unique English records (56.37%), an increase of 0.13 percentage points
 - Resource completion: all 179 / 179 English `Data/mail` records are now covered by `mail-1.json` through `mail-5.json`
+
+### UZ-155 — Shirts names and descriptions, part 1
+
+- Target: `Strings/Shirts`
+- English source: `unpacked-all/Strings/Shirts.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/shirts-1.json`
+- Entries: 80 consecutive English records, from `Shirt_Name` through `BikiniTop_Name`
+- Scope: basic shirts, overalls, blouses, striped and themed shirts, formal tops, vests, jackets, tunics, Emily’s magic shirt, tank tops, ponchos, and the first crop/bikini entries
+- Control contract preserved exactly: all source keys and the explicit `(F)` / `(M)` name suffixes remain unchanged; this range contains no runtime placeholders or dialogue commands
+- Glossary decisions applied: canonical `ferma / Ferma`, `sarguzashtchi`, `Kovboy`, `Dengizchi`, `Jamoat markazi`-independent clothing terminology, and Uzbek gender suffix labels `(F)` / `(M)`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for farm, adventurer, cowboy, sailor, and clothing terminology were rechecked before translation
+- Overall textual coverage after this batch: 8,377 / 14,720 unique English records (56.91%), an increase of 0.54 percentage points
 
 ## Next safe batch
 

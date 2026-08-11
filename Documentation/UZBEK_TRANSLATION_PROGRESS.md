@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-146: 7,874 / 14,720 records (53.49%)
+- Current coverage after UZ-147: 7,946 / 14,720 records (53.97%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1646,6 +1646,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Sandon`, `iridiy`, `o‘g‘it`, `yem`, `Asalari uyasi`, `Parrandaxona`, `Molxona`, `Sandiq / Katta sandiq / Tosh sandiq / Katta tosh sandiq`, `Kristallariy`, `ferma / Ferma`, and `Dasht qiroli`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for anvil, iridium, fertilizer, bait, bee house, coop, barn, chest, Crystalarium, farm, and Prairie King terminology were rechecked before translation
 - Overall textual coverage after this batch: 7,874 / 14,720 unique English records (53.49%), an increase of 0.47 percentage points
+
+### UZ-147 — BigCraftables names and descriptions, part 2
+
+- Target: `Strings/BigCraftables`
+- English source: `unpacked-all/Strings/BigCraftables.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/strings-bigcraftables-2.json`
+- Entries: 72 consecutive English records, from `DecorativePitcher_Name` through `LogSection_Description`
+- Scope: dehydrator, deluxe scarecrow and worm bin, farm computer, fish smoker, furnaces, garden pot, geode crusher, heaters, hoppers, incubator, Junimo chest and arcade machine, keg, lightning rod, and related furniture/decorations
+- Control contract preserved exactly: all source keys, punctuation, ellipses, quotation marks, and the two literal unknown-name placeholders `??Foroguemon??` and `??HMTGF??` remain unchanged in structure; this part contains no runtime placeholders or dialogue commands
+- Glossary decisions applied: canonical `Quritkich`, `Baliq dudlagich`, `Pech`, `Og‘ir pech`, `Og‘ir shira yig‘gich`, `Geoda maydalagich`, `Inkubator`, `Keg/Bochka`, `Chaqmoq tutgich`, `Junimo`, `ferma / Ferma`, `o‘g‘it`, and `yem`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for dehydrator, fish smoker, furnace, geode crusher, heavy furnace/tapper, incubator, keg, lightning rod, Junimo, farm, fertilizer, and bait terminology were rechecked before translation
+- Overall textual coverage after this batch: 7,946 / 14,720 unique English records (53.97%), an increase of 0.48 percentage points
 
 ## Next safe batch
 

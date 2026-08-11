@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-119: 5,621 / 14,720 records (38.18%)
+- Current coverage after UZ-120: 5,678 / 14,720 records (38.57%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1309,6 +1309,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Leah`, `ferma / Ferma`, `Sohil`, `Tog‘`, `Cho‘qqi`, `Ferma uyi`, `Bobo`, `Qo‘ziqorin xodasi`, `Terimchilik`, `Suvpari kuloni`, `Pichan`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `Ziravorli rezavor`, `Kristall meva`, and `Muz bayrami`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,621 / 14,720 unique English records (38.18%), an increase of 0.50 percentage points
+
+### UZ-120 — Maru marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueMaru`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueMaru.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-maru.json`
+- Entries: all 57 English records
+- Scope: Maru’s astronomy, workshop and laboratory dialogue, weather and farm routines, parents and Penny, children, engineering, seasons, clinic work, and household projects
+- Control contract preserved exactly: player marker `@`, child and constellation/nebula placeholders `%kid1`/`%noun`, gender token `${husband^wife}$`, emotion markers `$h`/`$s`/`$l`, dialogue breaks `#$e#`/`#$c .5#`, stage directions, and item-code groups `[688 369 338 325 287]`, `[232 234 223 220]`, and `[286 287 205 732]`
+- Glossary decisions applied: canonical `Maru`, `Penny`, `ferma`, `Dehqonchilik`, `Terimchilik`, `Bahor`, `Yoz`, `Kuz`, `Qish`, and existing item term `Ravochli pirog`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,678 / 14,720 unique English records (38.57%), an increase of 0.39 percentage points
 
 ## Next safe batch
 

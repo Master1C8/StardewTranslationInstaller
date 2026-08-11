@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-134: 6,749 / 14,720 records (45.85%)
+- Current coverage after UZ-135: 6,807 / 14,720 records (46.24%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1501,6 +1501,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Robin`, `Demetrius`, `Maru`, `Sebastian`, `Pelikan shaharchasi`, `Parrandaxona`, `Molxona`, `Baliq hovuzi`, `Taxta`, `Tosh koni`, `Jamoat markazi`, and `Yashil yomg‘ir`
 - Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Robin, Demetrius, Maru, Sebastian, farm, buildings, and Green Rain were rechecked before translation
 - Overall textual coverage after this batch: 6,749 / 14,720 unique English records (45.85%), an increase of 0.39 percentage points
+
+### UZ-135 — Pierre character dialogue
+
+- Target: `Characters/Dialogue/Pierre`
+- English source: `unpacked-all/Characters/Dialogue/Pierre.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-pierre.json`
+- Entries: all 58 English records
+- Scope: Pierre’s general store, seeds and produce, Joja competition, Abigail and Caroline, Community Center, Green Rain, seasonal shop routines, and Fair judging
+- Control contract preserved exactly: player marker `@`, gender branch `^`, `${my son^daughter}$`, `%farm` and `%noturn` placeholders, `$d Joja#...|...`/`$d joja#...|...` conditionals, timed ambient tokens `#$1 pierre1#`, `#$1 pierre2#`, `#$1 pierreJoja#`, `#$1 pierreBlue#`, `#$1 pierreDin#`, `#$1 pierreMEGA#`, continuation token `$k`, and emotion markers `$h/$s/$u/$3/$6/$4`
+- Glossary decisions applied: canonical `Pierre`, `Caroline`, `Abigail`, `Joja`, `JojaMart`, `Pelikan shaharchasi`, `Jamoat markazi`, `Ferma`, `ekin`, `sifat`, and seasonal `Bahor/Yoz/Kuz/Qish`
+- Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Pierre, Caroline, Abigail, Joja, JojaMart, Pelikan shaharchasi, farm, crop, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 6,807 / 14,720 unique English records (46.24%), an increase of 0.39 percentage points
 
 ## Next safe batch
 

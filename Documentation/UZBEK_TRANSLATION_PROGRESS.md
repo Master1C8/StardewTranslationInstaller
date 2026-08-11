@@ -599,6 +599,27 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 
 `Strings/Objects` is now fully covered: all 1532 English keys have a dedicated Uzbek value, with no key copied from the Russian reference.
 
+### UZ-059 — Boots
+
+- Target: `Data/Boots`
+- English source: `unpacked-all/Data/Boots.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-boots.json`
+- Entries: all 18 English boot records
+- Scope: every boot/shoe display name and description; price, defense, immunity, index, and repeated internal display-name slots are preserved
+- Glossary decisions applied: canonical `Etik / oyoq kiyim`, `iridiy`, `Emily`, `Mitti`, and `Suvpari`
+- Delimiter contract preserved: exactly 7 slash-separated fields per entry; fields 3–6 remain byte-for-byte equal to English and the repeated final display name matches the translated first field
+
+### UZ-060 — Achievements
+
+- Target: `Data/Achievements`
+- English source: `unpacked-all/Data/Achievements.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-achievements.json`
+- Entries: all 39 English achievement records
+- Scope: every achievement title and requirement; unlock flags, prerequisite IDs, and icon IDs are preserved
+- Glossary decisions applied: canonical `Yutuqlar`, `do‘stlik / yuraklar`, `Muzey`, `yasash`, `pishirish`, `Yordam kerak`, `Stardew Valley yarmarkasi`, `Gubernator`, `Zanjabil oroli`, `qurol`, `Mukammallik`, and `Cho‘qqi`
+- Delimiter contract preserved: exactly 5 caret-separated fields per entry; fields 3–5 remain byte-for-byte equal to English
+- Numeric values preserved exactly, including earnings thresholds, heart levels, people/item/fish counts, and `1st → 1-o‘rin`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

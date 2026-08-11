@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-114: 5,305 / 14,720 records (36.04%)
+- Current coverage after UZ-115: 5,363 / 14,720 records (36.43%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1249,6 +1249,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Elliott`, `Sohil`, `Ferma`, `iridiy`, `Iridiy quymasi`, `Pari atirguli`, `Kaliko cho‘li`, `Yulduz tomchisi`, `Anor`, `Ziravorli rezavor`, `Luau`, `Ruhlar arafasi`, `Baliqchilik`, and `Qish`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,305 / 14,720 unique English records (36.04%), an increase of 0.37 percentage points
+
+### UZ-115 — Emily marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueEmily`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueEmily.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-emily.json`
+- Entries: all 58 English records
+- Scope: Emily’s married-life weather and meditation lines, parrot care, crystal energy, household routines, children, dream and relationship dialogue, seasonal reflections, Yoba, farming, and winter thoughts
+- Control contract preserved exactly: player marker `@`, farm and child placeholders `%farm`/`%kid1`/`%kid2`, emotion markers `$h`/`$l`/`$s`/`$u`/`$4`/`$7`, dialogue breaks `#$e#`, stage directions, and item-code groups `[428 440 444 338 207]`, `[232 234 223 220]`, `[428 440 444 338 207 395 749]`
+- Glossary decisions applied: canonical `Emily`, `ferma / Ferma`, `Yoba`, `Echki suti`, `Sohil`, `Terimchilik`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `qahva`, `Pari atirguli`, and `Suvpari kuloni`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,363 / 14,720 unique English records (36.43%), an increase of 0.39 percentage points
 
 ## Next safe batch
 

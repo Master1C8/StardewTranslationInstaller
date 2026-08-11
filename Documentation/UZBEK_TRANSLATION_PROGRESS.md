@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-117: 5,459 / 14,720 records (37.09%)
+- Current coverage after UZ-118: 5,548 / 14,720 records (37.69%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1285,6 +1285,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Harvey`, `Ferma`, `Ferma uyi`, `Bobo`, `Salomatlik`, `Muz bayrami`, `Luau`, `Gubernator`, `Kuz`, `Qish`, `klyukva`, `Tryufel`, `Tryufel moyi`, and `Tizza`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,459 / 14,720 unique English records (37.09%), an increase of 0.35 percentage points
+
+### UZ-118 — Krobus marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueKrobus`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueKrobus.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-krobus.json`
+- Entries: all 89 English records
+- Scope: Krobus’s roommate life, rain and humidity, Soya xalqi history, Kanalizatsiya refuge, human and Mitti relations, Yoba, household routines, children, seasonal lines, and relationship states
+- Control contract preserved exactly: player marker `@`, child placeholders `%kid1`/`%kid2`, emotion markers `$h`/`$l`/`$s`/`$a`/`$3`/`$7`, dialogue breaks `#$e#`/`#$b#`, conditional timing token `#$c .5#`, stage directions, and item-code groups `[305 308 203 795 397]` and `[203 204 651 225]`
+- Glossary decisions applied: canonical `Krobus`, `Soya xalqi`, `Mittilar`, `Kanalizatsiya`, `Bo‘shliq ruhi`, `Yoba`, `Bobo`, `Welwick`, `ferma`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `Gullar raqsi`, and `Ruhlar arafasi`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,548 / 14,720 unique English records (37.69%), an increase of 0.60 percentage points
 
 ## Next safe batch
 

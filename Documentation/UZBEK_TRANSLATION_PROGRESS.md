@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-147: 7,946 / 14,720 records (53.97%)
+- Current coverage after UZ-148: 8,026 / 14,720 records (54.52%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1658,6 +1658,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Quritkich`, `Baliq dudlagich`, `Pech`, `Og‘ir pech`, `Og‘ir shira yig‘gich`, `Geoda maydalagich`, `Inkubator`, `Keg/Bochka`, `Chaqmoq tutgich`, `Junimo`, `ferma / Ferma`, `o‘g‘it`, and `yem`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for dehydrator, fish smoker, furnace, geode crusher, heavy furnace/tapper, incubator, keg, lightning rod, Junimo, farm, fertilizer, and bait terminology were rechecked before translation
 - Overall textual coverage after this batch: 7,946 / 14,720 unique English records (53.97%), an increase of 0.48 percentage points
+
+### UZ-148 — BigCraftables names and descriptions, part 3
+
+- Target: `Strings/BigCraftables`
+- English source: `unpacked-all/Strings/BigCraftables.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/strings-bigcraftables-3.json`
+- Entries: 80 consecutive English records, from `Loom_Name` through `SkullBrazier_Description`
+- Scope: looms and processing machines, mini storage and teleportation objects, mushroom equipment, obelisks, oil and preserves, ostrich incubator, Prairie King arcade, rarecrows, recycling, seasonal decorations, seed and sewing machines, signs, and skeleton/skull decor
+- Control contract preserved exactly: all source keys, counts in the rarecrow descriptions, punctuation, and the literal unknown-name placeholders `??Pinky Lemon??` remain unchanged in structure; this part contains no runtime placeholders or dialogue commands
+- Glossary decisions applied: canonical `To‘quv dastgohi`, `Tuyaqush`, `Urug‘ tayyorlagich`, `Qo‘ziqorin xodasi`, `ferma / Ferma`, `fasl`, `Junimo`, `Dasht qiroli`, and `Sandon`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for loom, ostrich, seed maker, mushroom log, season, Junimo, Prairie King, farm, and anvil terminology were rechecked before translation
+- Overall textual coverage after this batch: 8,026 / 14,720 unique English records (54.52%), an increase of 0.54 percentage points
 
 ## Next safe batch
 

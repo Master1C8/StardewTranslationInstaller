@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-148: 8,026 / 14,720 records (54.52%)
+- Current coverage after UZ-149: 8,118 / 14,720 records (55.15%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1670,6 +1670,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `To‘quv dastgohi`, `Tuyaqush`, `Urug‘ tayyorlagich`, `Qo‘ziqorin xodasi`, `ferma / Ferma`, `fasl`, `Junimo`, `Dasht qiroli`, and `Sandon`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for loom, ostrich, seed maker, mushroom log, season, Junimo, Prairie King, farm, and anvil terminology were rechecked before translation
 - Overall textual coverage after this batch: 8,026 / 14,720 unique English records (54.52%), an increase of 0.54 percentage points
+
+### UZ-149 — BigCraftables names and descriptions, part 4
+
+- Target: `Strings/BigCraftables`
+- English source: `unpacked-all/Strings/BigCraftables.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/strings-bigcraftables-4.json`
+- Entries: 92 consecutive English records, from `SlimeBall_Name` through `WormBin_Description`
+- Scope: slime equipment, prehistoric displays, solar panel and statues, stone and garden decorations, strange capsule, armor, signs, tapper and telephone, workbench, and worm bin
+- Control contract preserved exactly: all source keys, rarecrow counts in the preceding batch, punctuation and ellipses remain stable; no runtime placeholders or dialogue commands occur in this range
+- Glossary decisions applied: canonical `Quyosh paneli`, `iridiy`, `Stardew Valley`, `Mukammallik`, `Junimo`, `Qattiq yog‘och`, `Shira yig‘gich`, `Dastgoh`, `Chuvalchang qutisi / Hashamatli chuvalchang qutisi`, and `yem`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for solar panel, iridium, perfection, Junimo, hardwood, tapper, workbench, worm bin, bait, and Stardew Valley were rechecked before translation
+- Overall textual coverage after this batch: 8,118 / 14,720 unique English records (55.15%), an increase of 0.63 percentage points
 
 ## Next safe batch
 

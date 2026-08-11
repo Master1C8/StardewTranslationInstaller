@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-150: 8,158 / 14,720 records (55.42%)
+- Current coverage after UZ-151: 8,198 / 14,720 records (55.69%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1694,6 +1694,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Pelikan shaharchasi`, `Kaliko cho‘li`, `JojaMart`, `Jamoat markazi`, `Yulduz tomchisi saluni`, `Stardew Valley`, `ferma / Ferma`, `iridiy`, `o‘g‘it`, and `yem`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Pelican Town, Calico Desert, JojaMart, Saloon, farm, fertilizer, bait, Stardew Valley, Mermaid’s Pendant, and bouquet terminology were rechecked before translation
 - Overall textual coverage after this batch: 8,158 / 14,720 unique English records (55.42%), an increase of 0.27 percentage points
+
+### UZ-151 — Mail and cooking-recipe letters, part 2
+
+- Target: `Data/mail`
+- English source: `unpacked-all/Data/mail.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/mail-2.json`
+- Entries: 40 consecutive English records, from `JodiCooking` through `marnieAutoGrabber`
+- Scope: remaining early cooking-recipe letters, family letters from Mom and Dad, newspaper and store notices, kitchen expansion, quest rewards, adoption and mine notices, festival/arcade letters, invitations, and the Auto-Grabber notice
+- Control contract preserved exactly: recipient marker `@`, line-break markers `^`, item and money commands `%item ...`, archive separator `%%`, recipe commands, item IDs `(O)`/`(BC)`, and mail-title marker `[#]` all match the English source
+- Glossary decisions applied: canonical `Pelikan shaharchasi`, `Kaliko cho‘li`, `JojaMart`, `Muzey va kutubxona`, `Jamoat markazi`, `Yulduz tomchisi saluni`, `Dasht qiroli`, `Junimo`, `Parrandaxona`, `ferma / Ferma`, and `o‘g‘it`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Pelican Town, Calico Desert, JojaMart, library, Community Center, Saloon, Prairie King, Junimo, coop, farm, and fertilizer were rechecked before translation
+- Overall textual coverage after this batch: 8,198 / 14,720 unique English records (55.69%), an increase of 0.27 percentage points
 
 ## Next safe batch
 

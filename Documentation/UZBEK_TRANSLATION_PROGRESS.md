@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-084: 4,352 / 14,720 records (29.57%)
+- Current coverage after UZ-085: 4,370 / 14,720 records (29.69%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -906,6 +906,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Leah`, `Vincent`, `Leo`, `Muzey va kutubxona` context, Lupini’s established `asl asar` wording, and Doctor Harvey terminology
 - Overall textual coverage after this batch: 4,352 / 14,720 unique English records (29.57%), an increase of 0.09 percentage points
 
+### UZ-085 — Short schedule dialogue: Alex, Evelyn, and George
+
+- Targets: `Strings/schedules/Alex`, `Strings/schedules/Evelyn`, and `Strings/schedules/George`
+- English sources: the three matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-alex.json`, `schedule-evelyn.json`, and `schedule-george.json`
+- Entries: all 18 English records across the three targets; each target remains in its own auditable file
+- Scope: Alex’s sports, clinic, spouse, and Night Market remarks; Evelyn and George’s Community Center, clinic, worship, and Night Market dialogue
+- Control contract preserved exactly: narrator marker `%`, player marker `@`, emotion markers, asterisk stage directions, repeated punctuation, and source key punctuation
+- Glossary decisions applied: canonical `Alex`, `Evelyn`, `George`, `Pelikan shaharchasi`, `Suvpari tomoshasi`, `Yoba`, and Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,370 / 14,720 unique English records (29.69%), an increase of 0.12 percentage points
+
 ## Next safe batch
 
-Continue the remaining short `Strings/schedules` targets in ascending size, next grouping six-entry character tables while preserving each target in a separate file.
+Continue the remaining six-entry `Strings/schedules` targets, next grouping Jas, Marnie, and Sandy while preserving each target in a separate file.

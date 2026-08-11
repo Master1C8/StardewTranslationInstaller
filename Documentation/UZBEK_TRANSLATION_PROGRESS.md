@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-105: 4,838 / 14,720 records (32.87%)
+- Current coverage after UZ-106: 4,876 / 14,720 records (33.12%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1141,6 +1141,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `George`, `Alex`, `Jamoat markazi`, `Tirkama uy`, `Pelikan shaharchasi`, `Qish`, `Bobo`, and established family/retirement terminology
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
 - Overall textual coverage after this batch: 4,838 / 14,720 unique English records (32.87%), an increase of 0.22 percentage points
+
+### UZ-106 — Gus character dialogue
+
+- Target: `Characters/Dialogue/Gus`
+- English source: `unpacked-all/Characters/Dialogue/Gus.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-gus.json`
+- Entries: all 38 English records
+- Scope: Gus’s saloon introduction, cooking and drink gifts, Green Rain, tomatoes, healthy meals, Emily and Pam/Clint references, resort and island beverages, crab cakes, saloon greetings, and cooking advice
+- Control contract preserved exactly: player marker `@`, spouse token `%spouse`, emotion markers `$h`/`$s`, dialogue breaks `#$e#`/`#$b#`, stage directions, slash-separated `SeedShop_Entry` responses, and source key punctuation
+- Glossary decisions applied: canonical `Gus`, `Yulduz tomchisi saluni`, `pishirish`, `retsept`, `Zanjabil oroli`, `Orol janubi`, `Qisqichbaqa tuzog‘i`, `Emily`, `Pam`, and `Clint`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
+- Overall textual coverage after this batch: 4,876 / 14,720 unique English records (33.12%), an increase of 0.26 percentage points
 
 ## Next safe batch
 

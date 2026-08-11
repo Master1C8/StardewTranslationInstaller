@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-108: 4,966 / 14,720 records (33.74%)
+- Current coverage after UZ-109: 5,037 / 14,720 records (34.22%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1177,6 +1177,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Jas`, `Marnie`, `Shane`, `Penny`, `Muzqaymoq`, `chig‘anoq`, `Qisqichbaqa tuzog‘i`, `ferma`, and child-dialogue terminology
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 4,966 / 14,720 unique English records (33.74%), an increase of 0.28 percentage points
+
+### UZ-109 — Lewis character dialogue
+
+- Target: `Characters/Dialogue/Lewis`
+- English source: `unpacked-all/Characters/Dialogue/Lewis.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-lewis.json`
+- Entries: all 71 English records
+- Scope: Hokim Lewis’s introductions, gifts, Green Rain, crops and seasons, Pelican Town governance, Community Center, bridge and bus repairs, festivals, saloon visits, farm advice, honey, mushrooms, elections, and winter reflections
+- Control contract preserved exactly: player marker `@`, `%farm`, `%spouse`, `%revealtaste:Lewis:258`, emotion markers `$h`/`$s`/`$u`, dialogue breaks `#$e#`/`#$b#`, conditional selectors `#$c .3#`/`#$c .5#`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Hokim Lewis`, `Pelikan shaharchasi`, `Jamoat markazi`, `Jo‘natma qutisi`, `O‘roq`, `Tosh koni`, `Ko‘prik ta’miri`, `Avtobus ta’miri`, `Oy shu’lali meduzalar raqsi`, `Asalari uyasi`, `Asal`, `Ko‘k rezavor`, and `Qish`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,037 / 14,720 unique English records (34.22%), an increase of 0.48 percentage points
 
 ## Next safe batch
 

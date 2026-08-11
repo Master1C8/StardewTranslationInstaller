@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-132: 6,579 / 14,720 records (44.69%)
+- Current coverage after UZ-133: 6,691 / 14,720 records (45.46%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1477,6 +1477,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Leah`, `Elliott`, `Shane`, `Willy`, `Pelikan shaharchasi`, `Cindersap o‘rmoni`, `Sohil`, `oqib kelgan yog‘och`, `Piña Colada`, and seasonal `Bahor/Yoz/Kuz/Qish`
 - Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Leah, Elliott, farm, Cindersap o‘rmoni, seasons, and related nature terms were rechecked before translation
 - Overall textual coverage after this batch: 6,579 / 14,720 unique English records (44.69%), an increase of 0.65 percentage points
+
+### UZ-133 — Maru character dialogue
+
+- Target: `Characters/Dialogue/Maru`
+- English source: `unpacked-all/Characters/Dialogue/Maru.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-maru.json`
+- Entries: all 112 English records
+- Scope: Maru’s laboratory, gadgets and robot project, family, Harvey’s clinic, Green Rain, astronomy, relationships, dialogue choices, and seasonal routines
+- Control contract preserved exactly: player marker `@`, `%farm` and `%fork` placeholders, gender branch `^`, `$q`/`$r` dialogue choices, `$p` conditional branch, emotion markers `$h/$s/$l/$u/$a/$8/$9/$3`, dialogue breaks `#$e#`/`#$b#`, `$c .5#` timing token, and literal `#` separators in the telescope line
+- Glossary decisions applied: canonical `Maru`, `Demetrius`, `Robin`, `Sebastian`, `Harvey`, `Penny`, `Batareya`, `Oltin`, `iridiy`, `laboratoriya`, `klinika`, `Pech`, and seasonal `Bahor/Yoz/Kuz/Qish`
+- Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Maru, Demetrius, Robin, Harvey, Sebastian, Sam, farm, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 6,691 / 14,720 unique English records (45.46%), an increase of 0.76 percentage points
 
 ## Next safe batch
 

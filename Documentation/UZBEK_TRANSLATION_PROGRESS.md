@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-070: 3,935 / 14,720 records (26.73%)
+- Current coverage after UZ-071: 3,973 / 14,720 records (26.99%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -742,6 +742,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Repeated episode contract preserved: the repeated Salmonberry and Blackberry notices retain matching Uzbek text, while the summer-fish reminder keeps its intentionally different introduction
 - Glossary decisions applied: canonical `Yerdan kun ko‘rish`, all four seasons, `Ferma`, `Qarg‘a qo‘riqchisi`, `Baliq qarmog‘i`, `qalqovich`, `Hammom`, `Chaqmoq tutgich`, `Ferma ko‘rgazmasi`, `Silos`, `Issiqxona`, `Pech`, `Temirchi`, `Geoda`, `Umumgeoda`, `Qisqichbaqa tuzog‘i`, `Yem`, `Asalari uyasi`, `Sarguzashtchilar uyushmasi`, `Bochka`, `Suvpari kuloni`, `Qayta ishlash mashinasi`, `Kristallariy`, and `Chuvalchang qutisi`; fish, crop, ingredient, and resource names reuse reviewed object terminology
 - Overall textual coverage after this batch: 3,935 / 14,720 unique English records (26.73%), an increase of 0.43 percentage points
+
+### UZ-071 — Secret Notes and Journal Scraps
+
+- Target: `Data/SecretNotes`
+- English source: `unpacked-all/Data/SecretNotes.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-secret-notes.json`
+- Entries: all 38 English records: 28 complete text notes and 10 unchanged `!image` commands
+- Scope: all Secret Notes, Ginger Island Journal Scraps, gift-preference lists, riddles, letters, pirate journals, forging guidance, and enchantment descriptions
+- Technical contract preserved: all ten `!image N` commands and every `%revealtaste:NPC:itemId` suffix are copied byte-for-byte from English; single and repeated caret separators, player marker `@`, numeric codes, days, floors, counts, and percentages remain in their original records and order
+- Puzzle contract preserved: the malformed Secret Woods clue remains intentionally broken into awkward Uzbek syllables; the Skull Cavern clue, Mermaid Show sequence, stone-size poem, and all image-only puzzle notes retain their functional structure
+- Glossary decisions applied: canonical `Jamoat markazi`, `Bosh suyagi g‘ori`, `Suvpari tomoshasi`, `Junimo`, `Mayiz`, `Hammom`, `Vulqon`, `Temirxona`, `toblash`, `Sehrlash`, all weapon and tool enchantment names, `Prizmatik parcha`, `Ajdar tishi`, `Oltin yong‘oq`, and established item, meal, fish, crop, and gemstone terminology
+- Overall textual coverage after this batch: 3,973 / 14,720 unique English records (26.99%), an increase of 0.26 percentage points
 
 ## Next safe batch
 

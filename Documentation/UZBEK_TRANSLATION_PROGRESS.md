@@ -1476,7 +1476,7 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Control contract preserved exactly: player marker `@`, `%farm` and `%fork` placeholders, `$q`/`$r` dialogue choices, `$query PLAYER_NPC_RELATIONSHIP current any married roommate#...|...` relationship branches, `$p` conditional branch, `$c .5#`/`$c 0.8#` timing tokens, `#$1 LeahBug#`, gender branch `^`, emotion markers, and all dialogue breaks
 - Glossary decisions applied: canonical `Leah`, `Elliott`, `Shane`, `Willy`, `Pelikan shaharchasi`, `Cindersap o‘rmoni`, `Sohil`, `oqib kelgan yog‘och`, `Piña Colada`, and seasonal `Bahor/Yoz/Kuz/Qish`
 - Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Leah, Elliott, farm, Cindersap o‘rmoni, seasons, and related nature terms were rechecked before translation
-- Overall textual coverage after this batch: 6,579 / 14,720 unique English records (44.69%), an increase of 0.65 percentage points
+- Overall textual coverage after this batch: 6,807 / 14,720 unique English records (46.24%), no change in record coverage
 
 ### UZ-133 — Maru character dialogue
 
@@ -1513,6 +1513,19 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Pierre`, `Caroline`, `Abigail`, `Joja`, `JojaMart`, `Pelikan shaharchasi`, `Jamoat markazi`, `Ferma`, `ekin`, `sifat`, and seasonal `Bahor/Yoz/Kuz/Qish`
 - Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Pierre, Caroline, Abigail, Joja, JojaMart, Pelikan shaharchasi, farm, crop, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 6,807 / 14,720 unique English records (46.24%), an increase of 0.39 percentage points
+
+### UZ-136 — Sandy character dialogue refinement
+
+- Target: `Characters/Dialogue/Sandy`
+- English source: `unpacked-all/Characters/Dialogue/Sandy.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-sandy.json`
+- Entries: all 21 English records
+- Scope: Sandy’s Oasis, Calico Desert, bus service, seasonal seeds, Emily, desert weather, secret club, flowers, and daily shop dialogue
+- Control contract preserved exactly: player marker `@`, item code `[184]`, emotion markers `$h/$s`, dialogue breaks `#$e#`/`#$b#`, literal branch separator `||`, wave marker `~`, and all source stage directions
+- Glossary decisions applied: canonical `Sandy`, `Emily`, `Kaliko cho‘li`, `Voha`, `Stardew Valley`, `Yashil yomg‘ir`, `Bahor/Yoz/Qish`, `urug‘`, `kokos`, and `kaktus mevasi`
+- Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Sandy, Emily, Kaliko cho‘li, Voha, farm, Green Rain, and seasons were rechecked before translation
+- This source was already included in the package baseline; this block refines all 21 Uzbek records without changing the unique-record denominator
+- Overall textual coverage after this batch: 6,807 / 14,720 unique English records (46.24%), no change in record coverage
 
 ## Next safe batch
 

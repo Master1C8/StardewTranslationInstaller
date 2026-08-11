@@ -223,6 +223,16 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Scope: randomized positive, negative, and food descriptors plus child terms, pronouns, yes/no answers, and the generic farmer label
 - Control syntax preserved: all `#`-separated variant counts match the English source
 
+### UZ-022 — farm buildings and building interactions
+
+- Target: `Strings/Buildings`
+- English source: `unpacked-all/Strings/Buildings.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/buildings.json`
+- Entries: 69 of 69
+- Scope: construction and entry status, silo and mill messages, Fish Pond restrictions, paint regions, all farm-building names, and every building description
+- Glossary decisions applied: `Pichan`, `Silos`, `Molxona`, `Katta molxona`, `Hashamatli molxona`, `Parrandaxona`, `Katta parrandaxona`, `Hashamatli parrandaxona`, `Omborxona`, `Kulba`, `Baliq hovuzi`, `Oltin soat`, `Issiqxona`, all four obelisks, `Junimo kulbasi`, `Tegirmon`, `Jo‘natma qutisi`, `Shilimshiqxona`, `Otxona`, `Quduq`, and `Uy hayvoni kosasi`
+- Placeholders preserved: `{0}` and `{1}` in all six parameterized entries
+
 ## Next safe batch
 
-Continue the short English data targets with glossary-backed item names, building strings, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.
+Continue the short English data targets with glossary-backed item names and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.

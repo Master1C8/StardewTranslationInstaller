@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-133: 6,691 / 14,720 records (45.46%)
+- Current coverage after UZ-134: 6,749 / 14,720 records (45.85%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1489,6 +1489,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Maru`, `Demetrius`, `Robin`, `Sebastian`, `Harvey`, `Penny`, `Batareya`, `Oltin`, `iridiy`, `laboratoriya`, `klinika`, `Pech`, and seasonal `Bahor/Yoz/Kuz/Qish`
 - Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Maru, Demetrius, Robin, Harvey, Sebastian, Sam, farm, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 6,691 / 14,720 unique English records (45.46%), an increase of 0.76 percentage points
+
+### UZ-134 — Robin character dialogue
+
+- Target: `Characters/Dialogue/Robin`
+- English source: `unpacked-all/Characters/Dialogue/Robin.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-robin.json`
+- Entries: all 58 English records
+- Scope: Robin’s carpentry shop, farm buildings, family, construction, Community Center, Green Rain, resort, and seasonal mountain dialogue
+- Control contract preserved exactly: player marker `@`, `%farm` and `%noturn` placeholders, timed ambient tokens `#$1 RobinSeb#`/`#$1 RobinDem#`, emotion markers `$h/$s/$u/$6/$4`, dialogue breaks `#$e#`/`#$b#`, and all source stage-direction markers
+- Glossary decisions applied: canonical `Robin`, `Demetrius`, `Maru`, `Sebastian`, `Pelikan shaharchasi`, `Parrandaxona`, `Molxona`, `Baliq hovuzi`, `Taxta`, `Tosh koni`, `Jamoat markazi`, and `Yashil yomg‘ir`
+- Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Robin, Demetrius, Maru, Sebastian, farm, buildings, and Green Rain were rechecked before translation
+- Overall textual coverage after this batch: 6,749 / 14,720 unique English records (45.85%), an increase of 0.39 percentage points
 
 ## Next safe batch
 

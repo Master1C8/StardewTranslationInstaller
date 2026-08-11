@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-110: 5,077 / 14,720 records (34.49%)
+- Current coverage after UZ-111: 5,130 / 14,720 records (34.85%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1201,6 +1201,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Marnie`, `Hokim Lewis`, `Shane`, `Jas`, `Marnie ranchosi`, `Chorvador`, `O‘roq`, `Pichan`, `Tovuq`, `Sigir`, `Ot`, `Hayvon mahsuloti`, `Sehrgar minorasi`, and `Stardew Valley yarmarkasi`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and animal terms were confirmed before translation
 - Overall textual coverage after this batch: 5,077 / 14,720 unique English records (34.49%), an increase of 0.27 percentage points
+
+### UZ-111 — Linus character dialogue
+
+- Target: `Characters/Dialogue/Linus`
+- English source: `unpacked-all/Characters/Dialogue/Linus.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-linus.json`
+- Entries: all 53 English records
+- Scope: Linus’s introduction, tent life, wilderness survival, moss, glaciers and mountain water, mines, fishing, trees, foraging, heron, environmental reflection, mushrooms, seasons, and winter survival
+- Control contract preserved exactly: player marker `@`, emotion markers `$h`/`$s`/`$u`, dialogue breaks `#$e#`/`#$b#`, selectors `#$1 linusVandal#`, `#$1 LinusHeron#`, and `#$1 LinusFall1#`, `$k`, stage directions, item marker `[166]`, and source key punctuation
+- Glossary decisions applied: canonical `Linus`, `Chodir`, `Mox`, `Konlar`, `Kamalak foreli`, `Yovvoyi yem`, `Taxta`, `Terimchilik`, `Baliqchilik`, `Tog‘`, and `Tosh koni`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,130 / 14,720 unique English records (34.85%), an increase of 0.36 percentage points
 
 ## Next safe batch
 

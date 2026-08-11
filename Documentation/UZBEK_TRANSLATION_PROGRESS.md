@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-096: 4,556 / 14,720 records (30.95%)
+- Current coverage after UZ-097: 4,576 / 14,720 records (31.09%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1038,6 +1038,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Mitti`, `Mittilar`, `Konlar`, `Zanjabil oroli`, `Vulqon zindoni`, `Temirxona`, `Toshbaliq`, `Muzcha baliq`, `Lava ilonbalig‘i`, and `Soya xalqi`
 - Overall textual coverage after this batch: 4,556 / 14,720 unique English records (30.95%), an increase of 0.16 percentage points
 
+### UZ-097 — Leo mainland character dialogue
+
+- Target: `Characters/Dialogue/LeoMainland`
+- English source: `unpacked-all/Characters/Dialogue/LeoMainland.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-leo-mainland.json`
+- Entries: all 20 English records
+- Scope: Leo’s transition to the mainland, school, Linus and Penny lessons, island visits, Zuzu City, parrots, golden walnuts, and friendship with Jas
+- Control contract preserved exactly: player marker `@`, emotion markers `$h`, `$s`, `$u`, dialogue breaks `#$e#`/`#$b#`, and source key punctuation
+- Glossary decisions applied: canonical `Leo`, `Linus`, `Penny`, `Jas`, `Vincent`, `Hokim Lewis`, `Zuzu shahri`, `Zanjabil oroli`, and `Oltin yong‘oq`
+- Overall textual coverage after this batch: 4,576 / 14,720 unique English records (31.09%), an increase of 0.14 percentage points
+
 ## Next safe batch
 
-Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/LeoMainland`, keeping each source target in its own auditable file.
+Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/Sandy`, keeping each source target in its own auditable file.

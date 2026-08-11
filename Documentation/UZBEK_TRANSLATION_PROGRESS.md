@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-145: 7,805 / 14,720 records (53.02%)
+- Current coverage after UZ-146: 7,874 / 14,720 records (53.49%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1634,6 +1634,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Penny`, `Pam`, `Jas`, `Vincent`, `Maru`, `Gunther`, `Pelikan shaharchasi`, `Muzey va kutubxona`, `Jamoat markazi`, `Yulduz tomchisi saluni`, `Joja / Joja korporatsiyasi / JojaMart`, `Kaliko cho‘li`, `ferma / Ferma`, and `Qish yulduzi ziyofati`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Penny, Pam, Jas, Vincent, Maru, Gunther, Pelikan shaharchasi, Muzey va kutubxona, Community Center, Saloon, Joja, Calico Desert, farm, and Winter Star were rechecked before translation
 - Overall textual coverage after this batch: 7,805 / 14,720 unique English records (53.02%), an increase of 0.71 percentage points
+
+### UZ-146 — BigCraftables names and descriptions, part 1
+
+- Target: `Strings/BigCraftables`
+- English source: `unpacked-all/Strings/BigCraftables.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/strings-bigcraftables-1.json`
+- Entries: 69 consecutive English records, from `AncientStool_Name` through `Deconstructor_Description`
+- Scope: ancient furniture, anvil and trinket reforging, animal automation, bait and honey equipment, chests, braziers, furniture, lighting, cooking and processing machines, and the first arcade/sign objects
+- Control contract preserved exactly: all source keys, punctuation, ellipses, and empty technical structure are unchanged; this part contains no runtime placeholders or dialogue commands
+- Glossary decisions applied: canonical `Sandon`, `iridiy`, `o‘g‘it`, `yem`, `Asalari uyasi`, `Parrandaxona`, `Molxona`, `Sandiq / Katta sandiq / Tosh sandiq / Katta tosh sandiq`, `Kristallariy`, `ferma / Ferma`, and `Dasht qiroli`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for anvil, iridium, fertilizer, bait, bee house, coop, barn, chest, Crystalarium, farm, and Prairie King terminology were rechecked before translation
+- Overall textual coverage after this batch: 7,874 / 14,720 unique English records (53.49%), an increase of 0.47 percentage points
 
 ## Next safe batch
 

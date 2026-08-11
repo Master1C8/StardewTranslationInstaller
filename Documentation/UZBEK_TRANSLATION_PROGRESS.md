@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-131: 6,483 / 14,720 records (44.04%)
+- Current coverage after UZ-132: 6,579 / 14,720 records (44.69%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1465,6 +1465,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Harvey`, `Maru`, `Gus`, `Pelikan shaharchasi`, `Salomatlik`, `klinika`, `shifokor`, `gripp`, `aerobika`, and seasonal `Yoz/Kuz/Qish/Bahor`
 - Online glossary check: the canonical project page was previously opened successfully in the in-app browser; local Uzbek glossary entries for Harvey, Maru, Gus, Pelikan shaharchasi, Salomatlik, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 6,483 / 14,720 unique English records (44.04%), an increase of 0.48 percentage points
+
+### UZ-132 — Leah character dialogue
+
+- Target: `Characters/Dialogue/Leah`
+- English source: `unpacked-all/Characters/Dialogue/Leah.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-leah.json`
+- Entries: all 96 English records
+- Scope: Leah’s art and sculpture, nature and foraging, relationships, resort and beach dialogue, Green Rain, choice branches, and seasonal routines
+- Control contract preserved exactly: player marker `@`, `%farm` and `%fork` placeholders, `$q`/`$r` dialogue choices, `$query PLAYER_NPC_RELATIONSHIP current any married roommate#...|...` relationship branches, `$p` conditional branch, `$c .5#`/`$c 0.8#` timing tokens, `#$1 LeahBug#`, gender branch `^`, emotion markers, and all dialogue breaks
+- Glossary decisions applied: canonical `Leah`, `Elliott`, `Shane`, `Willy`, `Pelikan shaharchasi`, `Cindersap o‘rmoni`, `Sohil`, `oqib kelgan yog‘och`, `Piña Colada`, and seasonal `Bahor/Yoz/Kuz/Qish`
+- Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Leah, Elliott, farm, Cindersap o‘rmoni, seasons, and related nature terms were rechecked before translation
+- Overall textual coverage after this batch: 6,579 / 14,720 unique English records (44.69%), an increase of 0.65 percentage points
 
 ## Next safe batch
 

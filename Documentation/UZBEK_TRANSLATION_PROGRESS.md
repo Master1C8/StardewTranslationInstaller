@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-102: 4,708 / 14,720 records (31.98%)
+- Current coverage after UZ-103: 4,760 / 14,720 records (32.34%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1105,6 +1105,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Vincent`, `Penny`, `Sam`, `Jas`, and established child-dialogue terminology
 - Online glossary check: canonical project page returned HTTP 200; local Uzbek glossary entries for `vincent`, `penny`, `sam`, `jas`, and `joja` were confirmed before translation
 - Overall textual coverage after this batch: 4,708 / 14,720 unique English records (31.98%), an increase of 0.18 percentage points
+
+### UZ-103 — Caroline character dialogue
+
+- Target: `Characters/Dialogue/Caroline`
+- English source: `unpacked-all/Characters/Dialogue/Caroline.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-caroline.json`
+- Entries: all 52 English records
+- Scope: Caroline’s introductions, gifts, tea and foraging, Abigail and Pierre family remarks, Green Rain, resort and movie-theater lines, seasonal routines, public gardens, the Wizard’s tower, and farm-life conversations
+- Control contract preserved exactly: player marker `@`, emotion markers `$h`/`$s`/`$a`, dialogue breaks `#$e#`/`#$b#`, conditional selectors `$y` and `$1 Caroline23#`/`$1 Caroline1#`/`$1 Caroline12#`, `%Caroline`, and source key punctuation
+- Glossary decisions applied: canonical `Caroline`, `Abigail`, `Pierre`, `Pelikan shaharchasi`, `Stardew Valley yarmarkasi`, `Sehrgar minorasi`, `Yovvoyi yerqalampir`, `Ko‘k choy`, `Terimchilik`, `Kuz`, and `Qish`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
+- Overall textual coverage after this batch: 4,760 / 14,720 unique English records (32.34%), an increase of 0.35 percentage points
 
 ## Next safe batch
 

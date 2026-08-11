@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-085: 4,370 / 14,720 records (29.69%)
+- Current coverage after UZ-086: 4,388 / 14,720 records (29.81%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -917,6 +917,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Alex`, `Evelyn`, `George`, `Pelikan shaharchasi`, `Suvpari tomoshasi`, `Yoba`, and Doctor Harvey terminology
 - Overall textual coverage after this batch: 4,370 / 14,720 unique English records (29.69%), an increase of 0.12 percentage points
 
+### UZ-086 — Short schedule dialogue: Jas, Marnie, and Sandy
+
+- Targets: `Strings/schedules/Jas`, `Strings/schedules/Marnie`, and `Strings/schedules/Sandy`
+- English sources: the three matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-jas.json`, `schedule-marnie.json`, and `schedule-sandy.json`
+- Entries: all 18 English records across the three targets; each target remains in its own auditable file
+- Scope: Jas and Marnie’s clinic, Night Market, exercise, and shopping remarks, plus the complete Sandy/Emily birthday outing dialogue
+- Control contract preserved exactly: every number, `1:30pm`, dialogue break, emotion marker, asterisk stage direction, repeated punctuation, and source key punctuation
+- Glossary decisions applied: canonical `Jas`, `Marnie`, `Sandy`, `Emily`, `Stardew Valley`, `Suvpari tomoshasi`, `JojaMart`, and Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,388 / 14,720 unique English records (29.81%), an increase of 0.12 percentage points
+
 ## Next safe batch
 
-Continue the remaining six-entry `Strings/schedules` targets, next grouping Jas, Marnie, and Sandy while preserving each target in a separate file.
+Continue the remaining `Strings/schedules` targets in ascending size, next grouping the seven-entry Haley and Harvey tables while preserving each target in a separate file.

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-067: 3,813 / 14,720 records (25.90%)
+- Current coverage after UZ-068: 3,839 / 14,720 records (26.08%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -707,6 +707,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Scope: every festival name displayed through the base festival calendar table; internal seasonal date keys remain unchanged
 - All eight values come directly from canonical glossary entries: `Tuxum bayrami`, `Gullar raqsi`, `Luau`, `Oy shu’lali meduzalar raqsi`, `Stardew Valley yarmarkasi`, `Ruhlar arafasi`, `Muz bayrami`, and `Qish yulduzi ziyofati`
 - Overall textual coverage after this batch: 3,813 / 14,720 unique English records (25.90%), an increase of 0.05 percentage points
+
+### UZ-068 — Engagement dialogue
+
+- Target: `Data/EngagementDialogue`
+- English source: `unpacked-all/Data/EngagementDialogue.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-engagement-dialogue.json`
+- Entries: all 26 English records for the twelve marriage candidates and Krobus
+- Scope: all post-engagement remarks plus Krobus’s housemate responses, retaining each character’s excitement, uncertainty, humor, or reserve in natural Uzbek
+- Glossary decisions applied: canonical `ferma / Ferma`, `fermer`, `nikoh / turmush o‘rtoq`, `unashtirilgan`, and Krobus’s non-romantic `uydosh` relationship context
+- Control syntax preserved exactly and in source order: player marker `@`, dialogue breaks `#$b#` and `#$e#`, and emotion markers `$h` and `$l`
+- Overall textual coverage after this batch: 3,839 / 14,720 unique English records (26.08%), an increase of 0.18 percentage points
 
 ## Next safe batch
 

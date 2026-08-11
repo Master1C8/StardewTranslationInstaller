@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-106: 4,876 / 14,720 records (33.12%)
+- Current coverage after UZ-107: 4,925 / 14,720 records (33.46%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1153,6 +1153,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Gus`, `Yulduz tomchisi saluni`, `pishirish`, `retsept`, `Zanjabil oroli`, `Orol janubi`, `Qisqichbaqa tuzog‘i`, `Emily`, `Pam`, and `Clint`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
 - Overall textual coverage after this batch: 4,876 / 14,720 unique English records (33.12%), an increase of 0.26 percentage points
+
+### UZ-107 — Evelyn character dialogue
+
+- Target: `Characters/Dialogue/Evelyn`
+- English source: `unpacked-all/Characters/Dialogue/Evelyn.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-evelyn.json`
+- Entries: all 49 English records
+- Scope: Evelyn’s greetings, gifts, Green Rain, flowers and gardens, Jamoat markazi memories, George and Alex family lines, cookies, ocean and seasons, gardening, winter, and grandfather references
+- Control contract preserved exactly: player marker `@`, gender branch `^`, emotion markers `$h`/`$s`/`$u`, dialogue breaks `#$e#`/`#$b#`, conditional selectors `#$1 evelynGarden1#` and `$k`, `%noturn`, stage directions, `${grandson^grand-daughter}`, and source key punctuation
+- Glossary decisions applied: canonical `Evelyn`, `George`, `Alex`, `Jamoat markazi`, `Hokim Lewis`, `Porey piyoz`, `Lola`, `Xushbo‘y no‘xat`, `Kokos`, `Pechenyelar`, `Qovoq`, `Oddiy qo‘ziqorin`, `Qish`, and `Bobo`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 4,925 / 14,720 unique English records (33.46%), an increase of 0.33 percentage points
 
 ## Next safe batch
 

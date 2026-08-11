@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-082: 4,327 / 14,720 records (29.40%)
+- Current coverage after UZ-083: 4,339 / 14,720 records (29.48%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -884,6 +884,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Pierre`, `Linus`, `Pam`, `Demetrius`, `Clint`, `Suvpari tomoshasi`, `Tungi bozor` context, and established Doctor Harvey terminology
 - Overall textual coverage after this batch: 4,327 / 14,720 unique English records (29.40%), an increase of 0.08 percentage points
 
+### UZ-083 — Short schedule dialogue: Robin, Elliott, and Gus
+
+- Targets: `Strings/schedules/Robin`, `Strings/schedules/Elliott`, and `Strings/schedules/Gus`
+- English sources: the three matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-robin.json`, `schedule-elliott.json`, and `schedule-gus.json`
+- Entries: all 12 English records across the three targets; each target remains in its own auditable file
+- Scope: clinic, exercise, Night Market, spouse, writing, shopping, saloon, and sports-viewing remarks
+- Control contract preserved exactly: player marker `@`, emotion markers, asterisk stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Robin`, `Elliott`, `Gus`, `Stardew Valley`, `Yulduz tomchisi saluni` context, and established Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,339 / 14,720 unique English records (29.48%), an increase of 0.08 percentage points
+
 ## Next safe batch
 
-Continue the remaining short `Strings/schedules` targets in ascending size, preserving each character target in a separate file and grouping only fully completed targets into each audited batch.
+Continue the remaining short `Strings/schedules` targets in ascending size, next grouping the four-to-six-entry character tables while preserving each target in a separate file.

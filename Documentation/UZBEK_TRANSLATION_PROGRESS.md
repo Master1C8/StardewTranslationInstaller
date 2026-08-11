@@ -327,6 +327,16 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: `Maxsus buyurtma`, `Bochka`, `Qattiq yog‘och`, `Populyatsiya`, `Pelikan shaharchasi`, `Zuzu shahri`, `Souslar malikasi`, `Sehrgar`, all four cave-monster names, `Prizmatik shilimshiq`, `Prizmatik parcha`, `Junimo Kart`, `Bosh suyagi g‘ori`, `mahluq`, `Umumgeoda`, and `Iridiy rudasi`
 - Control syntax preserved: all named braces such as `{FishType:Text}` and `{Treasure:LocalizedName}`, plus `$h#$b#` dialogue commands
 
+### UZ-033 — Objects, first A batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-a-01.json`
+- Entries: 60 of 1532, source positions 0–59
+- Scope: wallet-item messages, catalogue and recipe labels, then object names and descriptions from Acorn through Ancient Fruit
+- Glossary decisions applied: `Zanjabil oroli`, `Qora tumor`, `Sehrli siyoh`, `Lupa`, `Ayiq bilimi`, `Ko‘k piyoz mahorati`, `Maxsus tumor`, `Sirli qayd`, `To‘plamlar`, `Yovvoyi urug‘lar`, and `Yetiltirilgan ikra`
+- Placeholders preserved: `{0}` in all six parameterized entries
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

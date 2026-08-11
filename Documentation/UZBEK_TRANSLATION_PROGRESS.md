@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-100: 4,651 / 14,720 records (31.60%)
+- Current coverage after UZ-101: 4,681 / 14,720 records (31.80%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1082,6 +1082,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Krobus`, `Soya xalqi`, `Kanalizatsiya`, `Mittilar`, `Yoba`, `Sehrgar`, and `Arktika parchasi`
 - Overall textual coverage after this batch: 4,651 / 14,720 unique English records (31.60%), an increase of 0.20 percentage points
 
+### UZ-101 — rainy character dialogue
+
+- Target: `Characters/Dialogue/rainy`
+- English source: `unpacked-all/Characters/Dialogue/rainy.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-rainy.json`
+- Entries: all 30 English records
+- Scope: weather-specific remarks from Abigail, Robin, Demetrius, Maru, Sebastian, Linus, Pierre, Caroline, Alex, George, Evelyn, Lewis, Clint, Penny, Pam, Emily, Haley, Jodi, Sam, Leah, Shane, Marnie, Elliott, Gus, Dwarf, Wizard, Harvey, Sandy, Krobus, and Leo
+- Control contract preserved exactly: player marker `@`, emotion markers `$h`/`$s`, dialogue breaks `#$e#`/`#$b#`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `yomg‘ir`, `Konlar`, `ruda`, `Tirkama uy`, `Kaliko cho‘li`, `Kanalizatsiya`, `Mittilar`, `Unsurlar`, `Sehrgar`, and `Stardew Valley` terminology
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs (`rain`, `calico-desert`, `sewers`, `dwarf-dwarvish`, `wizard-rasmodius`, `ore-bar`, `trailer`) were applied
+- Overall textual coverage after this batch: 4,681 / 14,720 unique English records (31.80%), an increase of 0.20 percentage points
+
 ## Next safe batch
 
-Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/rainy`, keeping each source target in its own auditable file.
+Continue with the next small character-dialogue target outside schedules, keeping each source target in its own auditable file.

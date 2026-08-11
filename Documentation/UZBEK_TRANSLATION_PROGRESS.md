@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-126: 6,170 / 14,720 records (41.92%)
+- Current coverage after UZ-127: 6,223 / 14,720 records (42.28%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1405,6 +1405,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical \`Willy\`, \`Baliqchilik\`, \`Sohil\`, \`Kanalizatsiya\`, \`Yem\`, \`Qisqichbaqa tuzog‘i\`, \`Kamalak foreli\`, \`Forel musobaqasi\`, \`Kalmar bayrami\`, \`Oltin nishon\`, \`Afsona\`, and \`Muzlik balig‘i\`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and fish/fishing item names were confirmed before translation
 - Overall textual coverage after this batch: 6,170 / 14,720 unique English records (41.92%), an increase of 0.29 percentage points
+
+### UZ-127 — Jodi character dialogue
+
+- Target: `Characters/Dialogue/Jodi`
+- English source: `unpacked-all/Characters/Dialogue/Jodi.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-jodi.json`
+- Entries: all 53 English records
+- Scope: Jodi’s family life, Kent’s return, Sam and Vincent, Pam’s house/bus, Joja choices, aerobics, household routines, seasons, and Yoba
+- Control contract preserved exactly: player marker `@`, `%time`, conditional tokens `$d Joja#...|...` and `$d kent#...|...`, timing token `#$c .5#`, dialogue breaks `#$e#`/`#$b#`, emotion markers `$h/$s/$u/$4`, and branch separator `|`
+- Glossary decisions applied: canonical `Jodi`, `Kent`, `Sam`, `Vincent`, `Pam`, `Marnie`, `Caroline`, `Yoba`, `JojaMart`, `Yoba mehrobi`, `Bahor/Yoz/Kuz/Qish`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing family/Joja terms were confirmed before translation
+- Overall textual coverage after this batch: 6,223 / 14,720 unique English records (42.28%), an increase of 0.36 percentage points
 
 ## Next safe batch
 

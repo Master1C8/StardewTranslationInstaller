@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-074: 4,187 / 14,720 records (28.44%)
+- Current coverage after UZ-075: 4,230 / 14,720 records (28.74%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -789,6 +789,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Numeric values remain unchanged, including every business hour, Marnie’s `4:00 PM`, the Joja `10,000g` rebate and address number, and Leo’s internal memory IDs remain in the unchanged record keys
 - Glossary decisions applied: canonical `Ferma`, `Junimo`, `Konlar`, `Qora tumor`, `Kanalizatsiya`, `Kinoteatr`, `Yulduz tomchisi saluni`, `Pierre universal do‘koni`, `Marnie ranchosi`, and established relationship, tool, festival, animal, and location terminology
 - Overall textual coverage after this batch: 4,187 / 14,720 unique English records (28.44%), an increase of 1.16 percentage points
+
+### UZ-075 — Extra dialogue: core systems and Joja onboarding
+
+- Target: `Data/ExtraDialogue`
+- English source: `unpacked-all/Data/ExtraDialogue.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-extra-dialogue-core.json`
+- Entries: the first 43 of 147 English records, forming a complete core/Joja sub-batch
+- Scope: lost-item thanks, childbirth and adoption, spouse and construction remarks, privacy interactions, Clint and Gunther services, Sandy and Mr. Qi’s club dialogue, mine rescues, every Morris greeting, membership state, second-player restriction, Community Development processing, and both gendered form prompts
+- Control contract preserved exactly and in source order: numbered placeholders, dialogue breaks and emotion markers, all `$q`/`$r` membership choice commands with their `-1` arguments and internal `Yes`/`No` IDs, hash separators, and trailing whitespace where present in English
+- Glossary decisions applied: canonical `Ferma`, `mahluq`, `Anjomlar`, `Muzey`, `artefakt`, `mineral`, `Stardew Valley`, `Konlar`, `Janob Qi`, `Joja`, `Hokim Lewis`, `Jamoat markazi`, and `Joja ombori`
+- `Data/ExtraDialogue` continuation plan: purchased-item reactions, scripted Skull Cavern encounters, island dialogue, Professor Snail hints, and Summit dialogue remain in subsequent audited sub-batches
+- Overall textual coverage after this batch: 4,230 / 14,720 unique English records (28.74%), an increase of 0.29 percentage points
 
 ## Next safe batch
 

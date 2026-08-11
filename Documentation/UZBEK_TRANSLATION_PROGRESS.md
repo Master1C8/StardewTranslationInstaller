@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-143: 7,550 / 14,720 records (51.29%)
+- Current coverage after UZ-144: 7,700 / 14,720 records (52.31%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1610,6 +1610,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Sebastian`, `Sam`, `Abigail`, `Maru`, `Demetrius`, `Pelikan shaharchasi`, `Sohil`, `Gotoro imperiyasi`, `JojaMart`, `Yulduz tomchisi saluni`, `Bahor/Yoz/Kuz/Qish`, and `Junimo`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Sebastian, Sam, Abigail, Maru, Demetrius, JojaMart, beach, Saloon, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 7,550 / 14,720 unique English records (51.29%), an increase of 0.85 percentage points
+
+### UZ-144 — Abigail character dialogue
+
+- Target: `Characters/Dialogue/Abigail`
+- English source: `unpacked-all/Characters/Dialogue/Abigail.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-abigail.json`
+- Entries: all 150 English records
+- Scope: Abigail’s gaming, caves and adventure, spirits and graveyard, Sam and Sebastian friendships, family, resort, festivals, relationship branches, fashion choices, and seasonal dialogue
+- Control contract preserved exactly: player marker `@`, `%Abigail`, `%noun`, `$c 0.5#` variant, `$p` conditionals, `$q`/`$r` dialogue choices, `$query PLAYER_NPC_RELATIONSHIP current any married roommate#...|...`, `$d joja#...|...`/`$d cc#...|...` conditionals, timed tokens `#$1 Abigail1#`/`#$1 AbigailHAND#`, `${guy^lady}$`, dialogue breaks `#$e#`/`#$b#`, gender branches `^`, and emotion markers `$h/$s/$u/$a/$6/$8/$9/$l`
+- Glossary decisions applied: canonical `Abigail`, `Sam`, `Sebastian`, `Maru`, `Demetrius`, `Sandy`, `Pelikan shaharchasi`, `Jamoat markazi`, `JojaMart`, `Ruhlar arafasi`, `Yulduz tomchisi saluni`, `Bahor/Yoz/Kuz/Qish`, and `Junimo`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Abigail, Sam, Sebastian, Maru, Demetrius, Sandy, JojaMart, Community Center, Saloon, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 7,700 / 14,720 unique English records (52.31%), an increase of 1.02 percentage points
 
 ## Next safe batch
 

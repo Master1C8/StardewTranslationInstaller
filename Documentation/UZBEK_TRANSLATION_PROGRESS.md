@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-072: 3,994 / 14,720 records (27.13%)
+- Current coverage after UZ-073: 4,016 / 14,720 records (27.28%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -765,6 +765,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Control syntax preserved exactly and in source order: narrator prefix `%`, emotion markers `$4`, `$6`, `$7`, `$s`, and `$u`, conditional branch `$c .5#`, dialogue break `#$e#`, and paired stage-direction asterisks
 - Proper names and canonical `Stardew Valley` remain unchanged; billiards, exercise, work, and animation-specific wording is rendered as concise natural Uzbek suitable for short interaction bubbles
 - Overall textual coverage after this batch: 3,994 / 14,720 unique English records (27.13%), an increase of 0.14 percentage points
+
+### UZ-073 — Lost library books
+
+- Target: `Strings/Notes`
+- English source: `unpacked-all/Strings/Notes.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/strings-notes.json`
+- Entries: all 22 English records, including all 21 book texts and the missing-book message
+- Scope: complete books about farming, animals, foraging, fishing, mines, scarecrows, Stardrops, arcade games, diamonds, brewing, Dwarves, Yoba, marriage, legendary fish, technology, Goblins, and Gunther’s notes
+- Layout contract preserved: every source line break remains in its corresponding entry; all heading dividers, list asterisks, stage-direction asterisks, blank lines, and Goblin-book caret separators retain their original structure
+- Numeric research values remain exact, including mine floors `50`, odds `1` in `500`, rate `.000016`, and Yoba’s `11` days; the untranslated artificial Dwarvish passage remains byte-for-byte equal to English because it is an in-world cipher rather than English prose
+- Glossary decisions applied: canonical `Dehqonchilik`, `O‘g‘it`, `O‘roq`, `Qarg‘a qo‘riqchisi`, `Yulduz tomchisi`, `Dasht qirolining sarguzashti`, `Gavhar dengizi`, `Bochka`, `Sharbat`, `Pivo`, `Och el`, `Sharob`, `Mittilar`, `Guldasta`, `Suvpari kuloni`, `Keksa dengizchi`, `Kristallariy`, `Prizmatik parcha`, all five Afsonaviy baliq names, and `Bo‘shliq mayonezi`
+- Overall textual coverage after this batch: 4,016 / 14,720 unique English records (27.28%), an increase of 0.15 percentage points
 
 ## Next safe batch
 

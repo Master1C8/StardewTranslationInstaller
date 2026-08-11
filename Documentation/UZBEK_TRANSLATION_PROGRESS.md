@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-080: 4,313 / 14,720 records (29.30%)
+- Current coverage after UZ-081: 4,315 / 14,720 records (29.31%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -862,6 +862,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Cho‘qqi`, `Pelikan shaharchasi`, `Ferma`, `Bobo`, `Hokim Lewis`, `Joja korporatsiyasi`, `fermer`, and established spouse names; the local 673-entry glossary was compared again with the live endpoint and had zero Uzbek-layer differences
 - Overall textual coverage after this batch: 4,313 / 14,720 unique English records (29.30%), an increase of 0.21 percentage points
 
+### UZ-081 — Gil dialogue
+
+- Target: `Characters/Dialogue/Gil`
+- English source: `unpacked-all/Characters/Dialogue/Gil.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-gil.json`
+- Entries: all 2 English records
+- Scope: Gil’s sleeping caption and his response before the player has an eligible Mahluqlarni qirish maqsadlari reward
+- Control contract preserved: the paired asterisks around the sleeping sound and all leading/trailing ellipses
+- Glossary decisions applied: canonical `Gil` and established `Mahluqlarni qirish maqsadlari` context
+- Overall textual coverage after this batch: 4,315 / 14,720 unique English records (29.31%), an increase of 0.01 percentage points
+
 ## Next safe batch
 
-Select the next untranslated English target by comparing the complete source manifest with the 4,313 translated `(Target, key)` pairs. Prefer a self-contained short data or string table before beginning long-form villager dialogue.
+Continue with the remaining one-record `Strings/schedules/Pierre` dialogue, then select another short standalone English dialogue target before the larger villager files.

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-097: 4,576 / 14,720 records (31.09%)
+- Current coverage after UZ-098: 4,597 / 14,720 records (31.23%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1049,6 +1049,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Leo`, `Linus`, `Penny`, `Jas`, `Vincent`, `Hokim Lewis`, `Zuzu shahri`, `Zanjabil oroli`, and `Oltin yong‘oq`
 - Overall textual coverage after this batch: 4,576 / 14,720 unique English records (31.09%), an increase of 0.14 percentage points
 
+### UZ-098 — Sandy character dialogue
+
+- Target: `Characters/Dialogue/Sandy`
+- English source: `unpacked-all/Characters/Dialogue/Sandy.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-sandy.json`
+- Entries: all 21 English records
+- Scope: Sandy’s gifts, Stardew Valley flowers, bus service, Oasis shop, Calico Desert, seasonal seeds, milk sample, casino secrecy, and Emily/valley remarks
+- Control contract preserved exactly: player marker `@`, emotion markers `$h`, `$s`, dialogue breaks `#$e#`/`#$b#`, special branch separator `||`, stage directions, item token `[184]`, and source key punctuation
+- Glossary decisions applied: canonical `Sandy`, `Voha`, `Kaliko cho‘li`, `Stardew Valley`, `Nargiz`, `Xushbo‘y no‘xat`, `Kokos`, `Kaktus mevasi`, and `Sut`
+- Overall textual coverage after this batch: 4,597 / 14,720 unique English records (31.23%), an increase of 0.14 percentage points
+
 ## Next safe batch
 
-Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/Sandy`, keeping each source target in its own auditable file.
+Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/Wizard`, keeping each source target in its own auditable file.

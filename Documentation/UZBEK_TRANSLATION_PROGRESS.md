@@ -233,6 +233,24 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: `Pichan`, `Silos`, `Molxona`, `Katta molxona`, `Hashamatli molxona`, `Parrandaxona`, `Katta parrandaxona`, `Hashamatli parrandaxona`, `Omborxona`, `Kulba`, `Baliq hovuzi`, `Oltin soat`, `Issiqxona`, all four obelisks, `Junimo kulbasi`, `Tegirmon`, `Jo‘natma qutisi`, `Shilimshiqxona`, `Otxona`, `Quduq`, and `Uy hayvoni kosasi`
 - Placeholders preserved: `{0}` and `{1}` in all six parameterized entries
 
+### UZ-023 — activity and animation dialogue
+
+- Target: `Strings/animationDescriptions`
+- English source: `unpacked-all/Strings/animationDescriptions.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/animation-descriptions.json`
+- Entries: 21 of 21
+- Scope: every short line shown while villagers play, work, exercise, read, receive an examination, or practice an activity
+- Control syntax preserved: `%` action markers, `$` dialogue commands, `#` branches, and `*...*` action text
+
+### UZ-024 — pants, shorts, skirts, and dresses
+
+- Target: `Strings/Pants`
+- English source: `unpacked-all/Strings/Pants.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/pants.json`
+- Entries: 38 of 38
+- Scope: every wearable lower-body item name and description
+- Glossary decisions applied: `Shim`, `Shim rangi`, and `Prizmatik`; recurring apparel terms are standardized as `shortik`, `yubka`, and `ko‘ylak`
+
 ## Next safe batch
 
-Continue the short English data targets with glossary-backed item names and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.
+Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form dialogue.

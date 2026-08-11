@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-092: 4,490 / 14,720 records (30.50%)
+- Current coverage after UZ-093: 4,506 / 14,720 records (30.61%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -994,6 +994,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Abigail`, `Willy`, `Harvey`, `Baliq do‘koni`, `Tungi bozor`, ocean/water terminology, and deep-sea submarine context
 - Overall textual coverage after this batch: 4,490 / 14,720 unique English records (30.50%), an increase of 0.14 percentage points
 
+### UZ-093 — Short schedule dialogue: Emily
+
+- Target: `Strings/schedules/Emily`
+- English source: `unpacked-all/Strings/schedules/Emily.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/schedule-emily.json`
+- Entries: all 16 English records
+- Scope: Emily’s loom, clinic, fruit, marriage, saloon, mermaid, Night Market, and complete Sandy birthday outing dialogue
+- Control contract preserved exactly: player marker `@`, emotion marker `$h`, dialogue breaks `#$e#`/`#$b#`, and source key punctuation
+- Glossary decisions applied: canonical `Emily`, `Sandy`, `Gus`, `Harvey`, `To‘quv dastgohi`, `Tungi bozor`, `Suvpari`, and established spirit/magic terminology
+- Overall textual coverage after this batch: 4,506 / 14,720 unique English records (30.61%), an increase of 0.11 percentage points
+
 ## Next safe batch
 
-Continue the remaining `Strings/schedules` targets in ascending size, next translating Emily’s 16-entry schedule table while preserving the target in a separate file.
+All `Strings/schedules` targets are now represented in the Uzbek package. Continue with the next smallest untranslated English target outside schedules, keeping each source target in its own auditable file.

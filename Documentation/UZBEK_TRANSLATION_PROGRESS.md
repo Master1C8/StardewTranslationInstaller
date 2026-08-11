@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-081: 4,315 / 14,720 records (29.31%)
+- Current coverage after UZ-082: 4,327 / 14,720 records (29.40%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -873,6 +873,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Gil` and established `Mahluqlarni qirish maqsadlari` context
 - Overall textual coverage after this batch: 4,315 / 14,720 unique English records (29.31%), an increase of 0.01 percentage points
 
+### UZ-082 — Short schedule dialogue: Pierre, Linus, Pam, Demetrius, and Clint
+
+- Targets: `Strings/schedules/Pierre`, `Strings/schedules/Linus`, `Strings/schedules/Pam`, `Strings/schedules/Demetrius`, and `Strings/schedules/Clint`
+- English sources: the five matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-pierre.json`, `schedule-linus.json`, `schedule-pam.json`, `schedule-demetrius.json`, and `schedule-clint.json`
+- Entries: all 12 English records across the five targets; each target remains in its own auditable Content Patcher file
+- Scope: Friday relaxation, Night Market and winter remarks, Pam and Clint’s clinic dialogue, Demetrius’s submarine, vaccination, and medical-journal remarks
+- Control contract preserved exactly: all emotion markers, hash dialogue markers, asterisk stage directions, ellipses, and source key punctuation
+- Glossary decisions applied: canonical `Pierre`, `Linus`, `Pam`, `Demetrius`, `Clint`, `Suvpari tomoshasi`, `Tungi bozor` context, and established Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,327 / 14,720 unique English records (29.40%), an increase of 0.08 percentage points
+
 ## Next safe batch
 
-Continue with the remaining one-record `Strings/schedules/Pierre` dialogue, then select another short standalone English dialogue target before the larger villager files.
+Continue the remaining short `Strings/schedules` targets in ascending size, preserving each character target in a separate file and grouping only fully completed targets into each audited batch.

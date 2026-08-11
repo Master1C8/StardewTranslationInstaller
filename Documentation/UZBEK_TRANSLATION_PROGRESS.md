@@ -181,6 +181,48 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: all five chicken types, both cow types, `Dinozavr`, `O‘rdak`, `Echki`, `Tuyaqush`, `Cho‘chqa`, `Quyon`, and `Qo‘y`
 - Placeholder preserved: `{0}` in all 16 parameterized mood entries
 
+### UZ-017 — weapons and combat tools
+
+- Target: `Strings/Weapons`
+- English source: `unpacked-all/Strings/Weapons.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/weapons.json`
+- Entries: 134 of 134
+- Scope: all 67 weapon names and their 67 descriptions, including swords, daggers, clubs, slingshots, scythes, villager keepsakes, Galaxy weapons, and Infinity weapons
+- Glossary decisions applied: `Qilich / Xanjar / Gurzi`, `Rogatka`, `O‘roq`, `Oltin o‘roq`, `Iridiy o‘roq`, `Galaktika qilichi / Galaktika xanjari / Galaktika bolg‘asi`, and `Abadiyat tig‘i / Abadiyat xanjari / Abadiyat to‘qmog‘i`
+
+### UZ-018 — Ginger Island world-map labels
+
+- Target: `Strings/WorldMap`
+- English source: `unpacked-all/Strings/WorldMap.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/world-map.json`
+- Entries: 14 of 14
+- Glossary decisions applied: `Changalzor kulbasi`, `Qazish maydoni`, `Orol savdogari`, `Vulqon`, `Willy qayig‘i`, `Dam olish maskani`, `Qaroqchilar ko‘rfazi`, `Birdie kulbasi`, `Taomxo‘r qurbaqa`, `Orol fermasi uyi`, `Qi’ning Yong‘oq xonasi`, `Kema qoldig‘i`, and `Yo‘lbars shilimshiqlari daraxtzori`
+
+### UZ-019 — enchantment names
+
+- Target: `Strings/EnchantmentNames`
+- English source: `unpacked-all/Strings/EnchantmentNames.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/enchantment-names.json`
+- Entries: 18 of 18
+- Glossary decisions applied: all six weapon enchantments, all eight tool enchantments, and all four fishing enchantments from the canonical glossary
+
+### UZ-020 — remixed bundle names
+
+- Target: `Strings/BundleNames`
+- English source: `unpacked-all/Strings/BundleNames.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/bundle-names.json`
+- Entries: 19 of 19
+- Scope: every displayed remixed-bundle name, with possessive English labels rendered as Uzbek genitives for composition with the existing `to‘plam` UI term
+
+### UZ-021 — random dialogue lexicon
+
+- Target: `Strings/Lexicon`
+- English source: `unpacked-all/Strings/Lexicon.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/lexicon.json`
+- Entries: 20 of 20
+- Scope: randomized positive, negative, and food descriptors plus child terms, pronouns, yes/no answers, and the generic farmer label
+- Control syntax preserved: all `#`-separated variant counts match the English source
+
 ## Next safe batch
 
-Continue the short English data targets with weapon names, basic location strings, and glossary-backed item names. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.
+Continue the short English data targets with glossary-backed item names, building strings, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.

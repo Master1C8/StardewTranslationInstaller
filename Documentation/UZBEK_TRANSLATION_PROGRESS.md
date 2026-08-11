@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-113: 5,251 / 14,720 records (35.67%)
+- Current coverage after UZ-114: 5,305 / 14,720 records (36.04%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1237,6 +1237,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Alex`, `gridbol`, `Bobo`, `Bobo-buvi`, `Yulduz tomchisi`, `Gullar raqsi`, `Luau`, `Stardew Valley yarmarkasi`, `Pech`, `Shilimshiq`, `Konlar`, `Pelikan shaharchasi`, and `Forel musobaqasi`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,251 / 14,720 unique English records (35.67%), an increase of 0.33 percentage points
+
+### UZ-114 — Elliott marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueElliott`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueElliott.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-elliott.json`
+- Entries: all 54 English records
+- Scope: Elliott’s married-life writing and weather lines, coffee and cooking, beach and farm routines, poetic affection, household and children dialogue, seasonal festivals, Luau, Ruhlar arafasi, fishing, and New Year’s Eve
+- Control contract preserved exactly: player marker `@`, child placeholders `%kid1`/`%kid2`, gender branches `^`, emotion markers `$h`/`$l`/`$s`/`$u`/`$7`/`$8`/`$9`/`$a`, dialogue breaks `#$e#`, item-code groups `[395]`, `[198 202 727 728]`, and `[348]`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Elliott`, `Sohil`, `Ferma`, `iridiy`, `Iridiy quymasi`, `Pari atirguli`, `Kaliko cho‘li`, `Yulduz tomchisi`, `Anor`, `Ziravorli rezavor`, `Luau`, `Ruhlar arafasi`, `Baliqchilik`, and `Qish`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,305 / 14,720 unique English records (36.04%), an increase of 0.37 percentage points
 
 ## Next safe batch
 

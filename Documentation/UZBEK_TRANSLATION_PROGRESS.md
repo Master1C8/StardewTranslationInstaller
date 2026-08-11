@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-089: 4,436 / 14,720 records (30.14%)
+- Current coverage after UZ-090: 4,452 / 14,720 records (30.24%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -961,6 +961,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Caroline`, `Sam`, `Harvey`, `Joja Cola`, `Tungi bozor`/holiday context, and established doctor terminology
 - Overall textual coverage after this batch: 4,436 / 14,720 unique English records (30.14%), an increase of 0.12 percentage points
 
+### UZ-090 — Short schedule dialogue: Lewis and Maru
+
+- Targets: `Strings/schedules/Lewis` and `Strings/schedules/Maru`
+- English sources: the two matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-lewis.json` and `schedule-maru.json`
+- Entries: all 16 English records across the two targets; each target remains in its own auditable file
+- Scope: Lewis’s confidential clinic, local business, tax, library, grocery, and Night Market remarks; Maru’s spouse, clinic, experiment, technology, and astronomy dialogue
+- Control contract preserved exactly: emotion markers `$8`, `$h`, source key punctuation, and all trailing ellipses
+- Glossary decisions applied: canonical `Hokim Lewis`, `Maru`, `Pelikan shaharchasi`, `Muzey va kutubxona`/library context, `Tungi bozor`, `fasl`, and established Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,452 / 14,720 unique English records (30.24%), an increase of 0.11 percentage points
+
 ## Next safe batch
 
-Continue the remaining `Strings/schedules` targets in ascending size, next grouping the remaining small schedule tables while preserving each target in a separate file.
+Continue the remaining `Strings/schedules` targets in ascending size, next grouping the nine-entry Sebastian and Shane tables while preserving each target in a separate file.

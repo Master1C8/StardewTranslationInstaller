@@ -251,6 +251,35 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Scope: every wearable lower-body item name and description
 - Glossary decisions applied: `Shim`, `Shim rangi`, and `Prizmatik`; recurring apparel terms are standardized as `shortik`, `yubka`, and `ko‘ylak`
 
+### UZ-025 — Trout Derby and SquidFest participants
+
+- Target: `Strings/SimpleNonVillagerDialogues`
+- English source: `unpacked-all/Strings/SimpleNonVillagerDialogues.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/simple-non-villager-dialogues.json`
+- Entries: 22 of 22
+- Scope: every ambient participant line for the Trout Derby and SquidFest
+- Glossary decisions applied: `Forel musobaqasi`, `Kalmar bayrami`, `Grampleton`, `Qarmoqchi`, `yem`, and `Oltin nishon`; speaker labels are standardized throughout each `||` dialogue sequence
+- Control syntax preserved: all `||` dialogue separators
+
+### UZ-026 — shop and house speech bubbles
+
+- Target: `Strings/SpeechBubbles`
+- English source: `unpacked-all/Strings/SpeechBubbles.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/speech-bubbles.json`
+- Entries: 70 of 70
+- Scope: all short greetings and contextual shop/house bubbles for Robin, Marnie, Marlon, Maru, Leah, Elliott, Morris, Sandy, Lewis, Gus, Gunther, and Pierre
+- Placeholders and controls preserved: `{0}`, `{1}`, and the spouse-heart `<` marker
+
+### UZ-027 — birth, night events, and book titles
+
+- Target: `Strings/Events`
+- English source: `unpacked-all/Strings/Events.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/events.json`
+- Entries: 27 of 27
+- Scope: childbirth and adoption prompts, animal births, overnight farm-event messages, Night Market opening, Maru's comet lines, and Elliott's three book titles
+- Glossary decisions applied: `chaqaloq`, `asrab olish`, and `Tungi bozor`
+- Placeholders preserved: `{0}` and `{1}` in all eleven parameterized entries
+
 ## Next safe batch
 
-Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form dialogue.
+Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

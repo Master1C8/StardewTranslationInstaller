@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-120: 5,678 / 14,720 records (38.57%)
+- Current coverage after UZ-121: 5,731 / 14,720 records (38.93%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1321,6 +1321,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Maru`, `Penny`, `ferma`, `Dehqonchilik`, `Terimchilik`, `Bahor`, `Yoz`, `Kuz`, `Qish`, and existing item term `Ravochli pirog`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,678 / 14,720 unique English records (38.57%), an increase of 0.39 percentage points
+
+### UZ-121 — Penny marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialoguePenny`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialoguePenny.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-penny.json`
+- Entries: all 53 English records
+- Scope: Penny’s rainy-day cooking and reading, family and saloon concerns, bathhouse memories, archaeology and artifacts, household routines, children, marriage, town visits, and seasonal dialogue
+- Control contract preserved exactly: player marker `@`, child placeholders `%kid1`/`%kid2`, gender branch `^`, emotion markers `$h`/`$s`/`$l`/`$11`, dialogue breaks `#$e#`, stage directions, and item-code groups `[186 180 770 535]`, `[212 214 225 209 200]`, and `[195 210 211]`
+- Glossary decisions applied: canonical `Penny`, `Maru`, `Harvey`, `Gunther`, `ferma`, `Dehqonchilik`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `Hammom`, `salun`, `Arxeologiya`, `Artefakt`, `Qovun`, `Pechenyelar`, and `dolchin`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,731 / 14,720 unique English records (38.93%), an increase of 0.36 percentage points
 
 ## Next safe batch
 

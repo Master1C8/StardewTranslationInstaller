@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-101: 4,681 / 14,720 records (31.80%)
+- Current coverage after UZ-102: 4,708 / 14,720 records (31.98%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1093,6 +1093,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `yomg‘ir`, `Konlar`, `ruda`, `Tirkama uy`, `Kaliko cho‘li`, `Kanalizatsiya`, `Mittilar`, `Unsurlar`, `Sehrgar`, and `Stardew Valley` terminology
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs (`rain`, `calico-desert`, `sewers`, `dwarf-dwarvish`, `wizard-rasmodius`, `ore-bar`, `trailer`) were applied
 - Overall textual coverage after this batch: 4,681 / 14,720 unique English records (31.80%), an increase of 0.20 percentage points
+
+### UZ-102 — Vincent character dialogue
+
+- Target: `Characters/Dialogue/Vincent`
+- English source: `unpacked-all/Characters/Dialogue/Vincent.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-vincent.json`
+- Entries: all 27 English records
+- Scope: Vincent’s introduction, birthday gifts, Green Rain, resort trip, frog egg, Sam friendship, Kent’s return, Penny, school-age remarks, and player greetings
+- Control contract preserved exactly: player marker `@`, gender branches `^`, Kent branch selector `$d kent#` with `|`, emotion markers `$h`/`$s`/`$u`, dialogue breaks `#$e#`/`#$b#`, conditional timing token `#$c .3#`, `%noturn`, `%Vincent`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Vincent`, `Penny`, `Sam`, `Jas`, and established child-dialogue terminology
+- Online glossary check: canonical project page returned HTTP 200; local Uzbek glossary entries for `vincent`, `penny`, `sam`, `jas`, and `joja` were confirmed before translation
+- Overall textual coverage after this batch: 4,708 / 14,720 unique English records (31.98%), an increase of 0.18 percentage points
 
 ## Next safe batch
 

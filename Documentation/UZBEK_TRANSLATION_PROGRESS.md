@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-121: 5,731 / 14,720 records (38.93%)
+- Current coverage after UZ-122: 5,784 / 14,720 records (39.29%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1333,6 +1333,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Penny`, `Maru`, `Harvey`, `Gunther`, `ferma`, `Dehqonchilik`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `Hammom`, `salun`, `Arxeologiya`, `Artefakt`, `Qovun`, `Pechenyelar`, and `dolchin`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,731 / 14,720 unique English records (38.93%), an increase of 0.36 percentage points
+
+### UZ-122 — Sam marriage dialogue
+
+- Target: \`Characters/Dialogue/MarriageDialogueSam\`
+- English source: \`unpacked-all/Characters/Dialogue/MarriageDialogueSam.json\`, Stardew Valley 1.6.15
+- File: \`assets/translations/uzbek/marriage-dialogue-sam.json\`
+- Entries: all 53 English records
+- Scope: Sam’s guitar and comic-book routines, Vincent and family, JojaMart memories, farm life, children, marriage, festivals, Luau, meduzalar, yarmarka, and winter dialogue
+- Control contract preserved exactly: player marker \`@\`, child placeholders \`%kid1\`/\`%kid2\`, gender branch \`^\`, emotion markers \`$h\`/\`$s\`/\`$7\`/\`$10\`, dialogue breaks \`#$e#\`/\`#$b#\`, stage directions, and item-code groups \`[90 88 86 535]\`, \`[206]\`, and \`[211]\`
+- Glossary decisions applied: canonical \`Sam\`, \`Sebastian\`, \`Abigail\`, \`Vincent\`, \`JojaMart\`, \`Gullar raqsi\`, \`Luau\`, \`Oy shu’lali meduzalar raqsi\`, \`Muz bayrami\`, \`Gubernator\`, \`ferma\`, \`Bahor\`, \`Yoz\`, \`Kuz\`, and \`Qish\`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing festival/item names were confirmed before translation
+- Overall textual coverage after this batch: 5,784 / 14,720 unique English records (39.29%), an increase of 0.36 percentage points
 
 ## Next safe batch
 

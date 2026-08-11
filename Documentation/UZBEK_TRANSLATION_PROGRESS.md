@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-098: 4,597 / 14,720 records (31.23%)
+- Current coverage after UZ-099: 4,621 / 14,720 records (31.39%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1060,6 +1060,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Sandy`, `Voha`, `Kaliko cho‘li`, `Stardew Valley`, `Nargiz`, `Xushbo‘y no‘xat`, `Kokos`, `Kaktus mevasi`, and `Sut`
 - Overall textual coverage after this batch: 4,597 / 14,720 unique English records (31.23%), an increase of 0.14 percentage points
 
+### UZ-099 — Wizard character dialogue
+
+- Target: `Characters/Dialogue/Wizard`
+- English source: `unpacked-all/Characters/Dialogue/Wizard.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-wizard.json`
+- Entries: all 24 English records
+- Scope: Wizard’s predictions, elixirs, elemental language, magic, Green Rain, Krobus, marriage, forest spirits, and apprentice remarks
+- Control contract preserved exactly: player marker `@`, dialogue breaks `#$e#`/`#$b#`, and source key punctuation
+- Glossary decisions applied: canonical `Sehrgar`, `Krobus`, `Arktika parchasi`, `Unsurlar`, `O‘rmon ruhlari`, and established magic terminology
+- Overall textual coverage after this batch: 4,621 / 14,720 unique English records (31.39%), an increase of 0.16 percentage points
+
 ## Next safe batch
 
-Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/Wizard`, keeping each source target in its own auditable file.
+Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/Krobus`, keeping each source target in its own auditable file.

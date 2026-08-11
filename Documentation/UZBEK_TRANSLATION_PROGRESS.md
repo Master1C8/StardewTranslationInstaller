@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-068: 3,839 / 14,720 records (26.08%)
+- Current coverage after UZ-069: 3,871 / 14,720 records (26.30%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -718,6 +718,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `ferma / Ferma`, `fermer`, `nikoh / turmush o‘rtoq`, `unashtirilgan`, and Krobus’s non-romantic `uydosh` relationship context
 - Control syntax preserved exactly and in source order: player marker `@`, dialogue breaks `#$b#` and `#$e#`, and emotion markers `$h` and `$l`
 - Overall textual coverage after this batch: 3,839 / 14,720 unique English records (26.08%), an increase of 0.18 percentage points
+
+### UZ-069 — The Queen of Sauce cooking channel
+
+- Target: `Data/TV/CookingChannel`
+- English source: `unpacked-all/Data/TV/CookingChannel.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-tv-cooking-channel.json`
+- Entries: all 32 English cooking-channel episodes
+- Scope: every recipe name and complete television presentation, preserving the host’s enthusiastic, conversational cooking-show voice
+- Naming contract: every recipe title is matched to its unique English `Strings/Objects` `*_Name` key and reuses the already reviewed Uzbek object value
+- Delimiter contract preserved: every record retains exactly two slash-separated fields, with the English numeric episode keys unchanged
+- Glossary decisions applied: canonical `Bahor`, `Qish`, `Qish yulduzi ziyofati`, `Pelikan shaharchasi`, `Zuzu shahri`, `Stardew Valley`, `Gubernator`, and `Qisqichbaqa tuzog‘i`; ingredient names reuse established object terminology
+- Overall textual coverage after this batch: 3,871 / 14,720 unique English records (26.30%), an increase of 0.22 percentage points
 
 ## Next safe batch
 

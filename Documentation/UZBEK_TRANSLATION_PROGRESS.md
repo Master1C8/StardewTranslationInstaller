@@ -337,6 +337,25 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: `Zanjabil oroli`, `Qora tumor`, `Sehrli siyoh`, `Lupa`, `Ayiq bilimi`, `Ko‘k piyoz mahorati`, `Maxsus tumor`, `Sirli qayd`, `To‘plamlar`, `Yovvoyi urug‘lar`, and `Yetiltirilgan ikra`
 - Placeholders preserved: `{0}` in all six parameterized entries
 
+### UZ-034 — Objects, second A/B batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-a-02.json`
+- Entries: 60 of 1532, source positions 60–119
+- Scope: object names and descriptions from Ancient Seed through Battery Pack
+- Glossary decisions applied: `urug‘ / nihol`, `Qarmoqchi`, `kritik zarba`, `Yem`, `baliq paneli`, `Tikanli ilgak`, `Zanjabil oroli`, and `Oddiy nam saqlovchi tuproq`
+
+### UZ-035 — Objects, first B/book batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-b-01.json`
+- Entries: 60 of 1532, source positions 120–179
+- Scope: object names and descriptions from Bat Wing through Friendship 101
+- Glossary decisions applied: `Ko‘rshapalak`, `panjarali ekin`, `Ko‘k o‘t ekish to‘plami`, `Shilimshiq inkubatori`, `Qisqichbaqa tuzog‘i`, `Mudofaa`, and `do‘stlik`
+- Numeric values preserved exactly across all three object batches, including growth days, percentages, `+1`, and `Friendship 101`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

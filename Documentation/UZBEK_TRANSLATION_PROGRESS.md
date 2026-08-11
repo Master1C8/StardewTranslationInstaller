@@ -80,6 +80,38 @@ Current translated total: 239 `Strings/UI` entries.
 
 Current translated total: 359 `Strings/UI` entries.
 
+### UZ-007 — chat commands and player proposals
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-chat-commands-proposals.json`
+- Entries: 100
+- Scope: chat command help and errors, ban/unban controls, private replies, Mr. Qi messages, multiplayer relationship status, gifts, dance and marriage proposals, pregnancy and adoption responses, invite-code clipboard actions, lost items, and letters
+- Glossary decisions applied: `fermer / yordamchi fermer`, `Janob Qi`, `nikoh / turmush o‘rtoq`, `bo‘ydoq / turmushga chiqmagan qiz`, `homiladorlik / asrab olish`, `raqs jufti`, `Taklif kodi`, `Onlayn aloqa / Mahalliy aloqa`, and `Xatlar`
+- Control syntax preserved: all numbered placeholders, the wedding `^` separator, `/help commandName`, and item token `[126]`
+
+Current translated total: 459 `Strings/UI` entries.
+
+### UZ-008 — profiles, tailoring, dyeing, and emotes
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-profile-tailoring-emotes.json`
+- Entries: 61
+- Scope: fruit-tree and workbench warnings, the gift log and gift categories, Mini-Jukebox restrictions, tailoring and dye-pot instructions, and the complete emote menu
+- Glossary decisions applied: `Sovg‘a jurnali`, `Tug‘ilgan kun`, `hayvon mahsuloti`, `hunarmand mahsuloti`, `Baliq`, `Mini-musiqa qutisi`, and existing UI terminology for items and colors
+
+### UZ-009 — wallet milestones and Junimo Kart levels
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-wallet-achievements.json`
+- Entries: 38
+- Scope: shared/separate wallet announcements, money-gifting and solo-earnings milestones, bundle and monster-eradication notices, Luau soup, Junimo Kart high scores and all displayed level names, and the NPC busy message
+- Glossary decisions applied: `Mablag‘larni birlashtirish`, `Pul yuborish`, `to‘plam`, `Mahluqlarni qirish maqsadlari`, `iridiy`, `Luau`, `Junimo Kart`, and `Gavhar dengizi`
+
+Current translated total: 558 `Strings/UI` entries.
+
 ## Next safe batch
 
-Continue `Strings/UI` with chat commands, player proposals, shop, shipping, and confirmation labels. Check every term against the `uz` glossary layer before adding it. Keep context-sensitive event commands out of the UI batches.
+Continue `Strings/UI` with Fish Pond requests, advanced game options, shop, shipping, confirmation, mine, fishing, and remaining options labels. Check every term against the `uz` glossary layer before adding it. Keep context-sensitive event commands out of the UI batches.

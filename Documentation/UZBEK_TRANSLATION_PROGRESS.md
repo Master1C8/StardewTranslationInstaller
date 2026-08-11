@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-075: 4,230 / 14,720 records (28.74%)
+- Current coverage after UZ-076: 4,246 / 14,720 records (28.85%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -244,7 +244,7 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 
 - Target: `Strings/animationDescriptions`
 - English source: `unpacked-all/Strings/animationDescriptions.json`, Stardew Valley 1.6.15
-- File: `assets/translations/uzbek/animation-descriptions.json`
+- Current file: `assets/translations/uzbek/strings-animation-descriptions.json` (fully re-audited in UZ-072; the superseded duplicate asset was removed)
 - Entries: 21 of 21
 - Scope: every short line shown while villagers play, work, exercise, read, receive an examination, or practice an activity
 - Control syntax preserved: `%` action markers, `$` dialogue commands, `#` branches, and `*...*` action text
@@ -764,7 +764,8 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Scope: every spoken remark and narrator caption displayed while NPCs play, work, exercise, read, dance, take photos, or perform other scheduled animations
 - Control syntax preserved exactly and in source order: narrator prefix `%`, emotion markers `$4`, `$6`, `$7`, `$s`, and `$u`, conditional branch `$c .5#`, dialogue break `#$e#`, and paired stage-direction asterisks
 - Proper names and canonical `Stardew Valley` remain unchanged; billiards, exercise, work, and animation-specific wording is rendered as concise natural Uzbek suitable for short interaction bubbles
-- Overall textual coverage after this batch: 3,994 / 14,720 unique English records (27.13%), an increase of 0.14 percentage points
+- This batch re-audited and replaced the already complete UZ-023 target; it adds no new unique `(Target, key)` records
+- Overall textual coverage after this batch: 3,973 / 14,720 unique English records (26.99%), unchanged from the preceding batch
 
 ### UZ-073 — Lost library books
 
@@ -776,7 +777,7 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Layout contract preserved: every source line break remains in its corresponding entry; all heading dividers, list asterisks, stage-direction asterisks, blank lines, and Goblin-book caret separators retain their original structure
 - Numeric research values remain exact, including mine floors `50`, odds `1` in `500`, rate `.000016`, and Yoba’s `11` days; the untranslated artificial Dwarvish passage remains byte-for-byte equal to English because it is an in-world cipher rather than English prose
 - Glossary decisions applied: canonical `Dehqonchilik`, `O‘g‘it`, `O‘roq`, `Qarg‘a qo‘riqchisi`, `Yulduz tomchisi`, `Dasht qirolining sarguzashti`, `Gavhar dengizi`, `Bochka`, `Sharbat`, `Pivo`, `Och el`, `Sharob`, `Mittilar`, `Guldasta`, `Suvpari kuloni`, `Keksa dengizchi`, `Kristallariy`, `Prizmatik parcha`, all five Afsonaviy baliq names, and `Bo‘shliq mayonezi`
-- Overall textual coverage after this batch: 4,016 / 14,720 unique English records (27.28%), an increase of 0.15 percentage points
+- Overall textual coverage after this batch: 3,995 / 14,720 unique English records (27.14%), an increase of 0.15 percentage points
 
 ### UZ-074 — Character systems, movie theater, and phones
 
@@ -788,7 +789,7 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Control contract preserved exactly and in source order: numbered placeholders `{0}` and `{1}`, player marker `@`, dialogue breaks, emotion markers, narrator marker `%`, farm-name token `%farm`, Lewis’s complete `$y` choice expression, caret variant separator, standalone phone-script hashes, underscores, trailing heart marker `<`, and every stage/sound direction enclosed in `*...*`
 - Numeric values remain unchanged, including every business hour, Marnie’s `4:00 PM`, the Joja `10,000g` rebate and address number, and Leo’s internal memory IDs remain in the unchanged record keys
 - Glossary decisions applied: canonical `Ferma`, `Junimo`, `Konlar`, `Qora tumor`, `Kanalizatsiya`, `Kinoteatr`, `Yulduz tomchisi saluni`, `Pierre universal do‘koni`, `Marnie ranchosi`, and established relationship, tool, festival, animal, and location terminology
-- Overall textual coverage after this batch: 4,187 / 14,720 unique English records (28.44%), an increase of 1.16 percentage points
+- Overall textual coverage after this batch: 4,166 / 14,720 unique English records (28.30%), an increase of 1.16 percentage points
 
 ### UZ-075 — Extra dialogue: core systems and Joja onboarding
 
@@ -800,7 +801,20 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Control contract preserved exactly and in source order: numbered placeholders, dialogue breaks and emotion markers, all `$q`/`$r` membership choice commands with their `-1` arguments and internal `Yes`/`No` IDs, hash separators, and trailing whitespace where present in English
 - Glossary decisions applied: canonical `Ferma`, `mahluq`, `Anjomlar`, `Muzey`, `artefakt`, `mineral`, `Stardew Valley`, `Konlar`, `Janob Qi`, `Joja`, `Hokim Lewis`, `Jamoat markazi`, and `Joja ombori`
 - `Data/ExtraDialogue` continuation plan: purchased-item reactions, scripted Skull Cavern encounters, island dialogue, Professor Snail hints, and Summit dialogue remain in subsequent audited sub-batches
-- Overall textual coverage after this batch: 4,230 / 14,720 unique English records (28.74%), an increase of 0.29 percentage points
+- Overall textual coverage after this batch: 4,209 / 14,720 unique English records (28.59%), an increase of 0.29 percentage points
+
+### UZ-076 — Extra dialogue: purchased-item reactions
+
+- Target: `Data/ExtraDialogue`
+- English source: `unpacked-all/Data/ExtraDialogue.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-extra-dialogue-purchases.json`
+- Entries: 37 English records at source positions 44–80, forming a complete purchased-item and dumpster-reaction sub-batch
+- Scope: 34 reactions to items bought through Pierre or Willy, including quality, cooking, produce, forage, teen and character-specific variants, plus all three child, teen, and adult dumpster reactions
+- Control contract preserved exactly and in source order: numbered placeholders `{0}` through `{5}`, dialogue breaks, emotion markers, and every numeric value and `g` currency suffix
+- Dynamic item placeholders were restructured into natural Uzbek clauses where needed, so Uzbek case or plural suffixes are not mechanically attached to runtime item names
+- Glossary decisions applied: canonical `Pierre universal do‘koni`, `Baliq do‘koni`, `terim buyumi`, `Pierre`, and `Willy`; the local 673-entry glossary snapshot was compared with the live project endpoint again before packaging and had zero Uzbek-layer differences
+- A redundant duplicate JSON member found in the preceding core file was removed without changing its 43 unique translated records; the package-wide audit also consolidated the superseded 21-entry animation asset so every `(Target, key)` is counted exactly once
+- Overall textual coverage after this batch: 4,246 / 14,720 unique English records (28.85%), an increase of 0.25 percentage points
 
 ## Next safe batch
 

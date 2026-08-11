@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-129: 6,317 / 14,720 records (42.91%)
+- Current coverage after UZ-130: 6,413 / 14,720 records (43.57%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1441,6 +1441,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Demetrius`, `Maru`, `Robin`, `Pasternak`, `Yashil yomg‘ir`, `Kaliko cho‘li`, `Qisqichbaqa`, `Ekotizim`, `laboratoriya`, `nam saqlovchi tuproq`, and seasonal `Yoz/Kuz/Qish`
 - Online glossary check: the canonical project page was opened successfully in the in-app browser; the local snapshot and visible canonical entries for core place, character, farm, and season terminology were compared before translation. A direct command-line fetch was unavailable due to transient DNS resolution failure.
 - Overall textual coverage after this batch: 6,317 / 14,720 unique English records (42.91%), an increase of 0.41 percentage points
+
+### UZ-130 — Elliott character dialogue
+
+- Target: `Characters/Dialogue/Elliott`
+- English source: `unpacked-all/Characters/Dialogue/Elliott.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-elliott.json`
+- Entries: all 96 English records
+- Scope: Elliott’s writing, beach cabin, books and ink, Flower Dance, SquidFest, resort visits, relationships, seasonal routines, and event toasts/boats
+- Control contract preserved exactly: player marker `@`, `%Elliott`, `%fork`, `%noturn`, gender branch `^`, emotion markers `$h/$s/$u/$l/$a/$8/$6`, dialogue breaks `#$e#`/`#$b#`, timed ambient token `#$1 elliottApol#`, continuation token `$k`, and item-code groups `[154]`/`[155]`
+- Glossary decisions applied: canonical `Elliott`, `Leah`, `Gus`, `Pelikan shaharchasi`, `Sohil`, `Luau`, `Kalmar`, `Qisqichbaqa kotletlari`, `Qish/Bahor/Yoz/Kuz`, and existing writer/beach terminology
+- Online glossary check: the canonical project page was previously opened successfully in the in-app browser; local Uzbek glossary entries for Elliott, Leah, Gus, Pelikan shaharchasi, farm, Luau, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 6,413 / 14,720 unique English records (43.57%), an increase of 0.65 percentage points
 
 ## Next safe batch
 

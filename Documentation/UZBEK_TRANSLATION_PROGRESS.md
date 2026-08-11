@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-087: 4,402 / 14,720 records (29.90%)
+- Current coverage after UZ-088: 4,418 / 14,720 records (30.01%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -939,6 +939,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Haley`, `Harvey`, `Salomatlik` context, `fasl`, and `Klinika` wording
 - Overall textual coverage after this batch: 4,402 / 14,720 unique English records (29.90%), an increase of 0.09 percentage points
 
+### UZ-088 — Short schedule dialogue: Jodi and Penny
+
+- Targets: `Strings/schedules/Jodi` and `Strings/schedules/Penny`
+- English sources: the two matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-jodi.json` and `schedule-penny.json`
+- Entries: all 16 English records across the two targets; each target remains in its own auditable file
+- Scope: Jodi and Penny’s clinic, family, spouse, privacy, Night Market, and weather remarks
+- Control contract preserved exactly: emotion markers `$a`, `$h`, `$s`, `$u`, asterisk stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Jodi`, `Penny`, `Vincent`, `Maru`, `Suvpari tomoshasi` context, and Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,418 / 14,720 unique English records (30.01%), an increase of 0.11 percentage points
+
 ## Next safe batch
 
-Continue the remaining `Strings/schedules` targets in ascending size, next grouping the eight-entry Jodi and Penny tables while preserving each target in a separate file.
+Continue the remaining `Strings/schedules` targets in ascending size, next grouping the nine-entry Caroline and Sam tables while preserving each target in a separate file.

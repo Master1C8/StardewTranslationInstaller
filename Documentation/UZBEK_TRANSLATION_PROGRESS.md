@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-155: 8,377 / 14,720 records (56.91%)
+- Current coverage after UZ-156: 8,457 / 14,720 records (57.45%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1755,6 +1755,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `ferma / Ferma`, `sarguzashtchi`, `Kovboy`, `Dengizchi`, `Jamoat markazi`-independent clothing terminology, and Uzbek gender suffix labels `(F)` / `(M)`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for farm, adventurer, cowboy, sailor, and clothing terminology were rechecked before translation
 - Overall textual coverage after this batch: 8,377 / 14,720 unique English records (56.91%), an increase of 0.54 percentage points
+
+### UZ-156 — Shirts names and descriptions, part 2
+
+- Target: `Strings/Shirts`
+- English source: `unpacked-all/Strings/Shirts.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/shirts-2.json`
+- Entries: 80 consecutive English records, from `BikiniTop_Description` through `TunnelersJersey_Name`
+- Scope: themed and decade shirts, jackets, strap and crop tops, tie-dye and metal breastplates, flannel and bomber jackets, fishing/cave gear, hoodies, martial-arts uniforms, desert and blacksmith clothing, high-waisted shirts, sweaters, and iridium/tunneler apparel
+- Control contract preserved exactly: all source keys and explicit `(F)` / `(M)` name suffixes remain unchanged; this range contains no runtime placeholders or dialogue commands
+- Glossary decisions applied: canonical `iridiy`, `Qattiq yog‘och`, `Kovboy`, `Dengizchi`, `ferma / Ferma`, and consistent Uzbek clothing terms for ko‘ylak, bluzka, kurtka, nimcha, tunika, sviter, and sovut
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for iridium, hardwood, cowboy, sailor, farm, and clothing terminology were rechecked before translation
+- Overall textual coverage after this batch: 8,457 / 14,720 unique English records (57.45%), an increase of 0.54 percentage points
 
 ## Next safe batch
 

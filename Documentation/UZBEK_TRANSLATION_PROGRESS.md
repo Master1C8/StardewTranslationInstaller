@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-152: 8,238 / 14,720 records (55.96%)
+- Current coverage after UZ-153: 8,278 / 14,720 records (56.24%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1718,6 +1718,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Jamoat markazi`, `Pelikan shaharchasi`, `Qish yulduzi ziyofati`, `Ruhlar arafasi`, `Tuxum festivali`, `Gullar raqsi`, `Muz festivali`, `Tungi bozor`, `Stardew Valley`, `Kaliko cho‘li`, `qattiq yog‘och`, and `yem`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Community Center, Pelican Town, Winter Star, Spirit’s Eve, Egg Festival, Flower Dance, Festival of Ice, Night Market, Stardew Valley, Calico Desert, hardwood, and bait were rechecked before translation
 - Overall textual coverage after this batch: 8,238 / 14,720 unique English records (55.96%), an increase of 0.27 percentage points
+
+### UZ-153 — Mail and event notices, part 4
+
+- Target: `Data/mail`
+- English source: `unpacked-all/Data/mail.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/mail-4.json`
+- Entries: 40 consecutive English records, from `spring_1_2` through `MSB_Lewis`
+- Scope: dated requests, Joja invoices and exhaustion notices, Elliott’s travel letters, recovery and reward letters, crafting-recipe notices, and the Mini-Shipping Bin letters
+- Control contract preserved exactly: recipient marker `@`, line-break markers `^`, item/quest/crafting/conversation commands, `%secretsanta`, `{0}` billing placeholder, item IDs, archive separator `%%`, and mail-title marker `[#]` all match the English source
+- Glossary decisions applied: canonical `Qish yulduzi ziyofati`, `Pelikan shaharchasi`, `Yulduz tomchisi saluni`, `Stardew Valley`, `Zuzu shahri`, `JojaMart`, `Noyob qo‘rqinchiqush`, `Qattiq yog‘och`, `Mini-jo‘natish qutisi`, `iridiy`, and `ferma / Ferma`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Winter Star, Pelican Town, Saloon, Stardew Valley, Zuzu City, JojaMart, Rarecrow, hardwood, Mini-Shipping Bin, iridium, and farm were rechecked before translation
+- Overall textual coverage after this batch: 8,278 / 14,720 unique English records (56.24%), an increase of 0.27 percentage points
 
 ## Next safe batch
 

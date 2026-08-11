@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-069: 3,871 / 14,720 records (26.30%)
+- Current coverage after UZ-070: 3,935 / 14,720 records (26.73%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -730,6 +730,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Delimiter contract preserved: every record retains exactly two slash-separated fields, with the English numeric episode keys unchanged
 - Glossary decisions applied: canonical `Bahor`, `Qish`, `Qish yulduzi ziyofati`, `Pelikan shaharchasi`, `Zuzu shahri`, `Stardew Valley`, `Gubernator`, and `Qisqichbaqa tuzog‘i`; ingredient names reuse established object terminology
 - Overall textual coverage after this batch: 3,871 / 14,720 unique English records (26.30%), an increase of 0.22 percentage points
+
+### UZ-070 — Livin’ Off The Land tip channel
+
+- Target: `Data/TV/TipChannel`
+- English source: `unpacked-all/Data/TV/TipChannel.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-tv-tip-channel.json`
+- Entries: all 64 English advice episodes
+- Scope: the complete four-year advice rotation covering crops, seasons, fishing, animals, mining, crafting, relationships, festivals, and farm planning, with the presenter’s informal voice retained
+- Control contract preserved: every single and double caret separator remains in the same record and order; numeric values `9`, `24`, and `240` remain exact
+- Repeated episode contract preserved: the repeated Salmonberry and Blackberry notices retain matching Uzbek text, while the summer-fish reminder keeps its intentionally different introduction
+- Glossary decisions applied: canonical `Yerdan kun ko‘rish`, all four seasons, `Ferma`, `Qarg‘a qo‘riqchisi`, `Baliq qarmog‘i`, `qalqovich`, `Hammom`, `Chaqmoq tutgich`, `Ferma ko‘rgazmasi`, `Silos`, `Issiqxona`, `Pech`, `Temirchi`, `Geoda`, `Umumgeoda`, `Qisqichbaqa tuzog‘i`, `Yem`, `Asalari uyasi`, `Sarguzashtchilar uyushmasi`, `Bochka`, `Suvpari kuloni`, `Qayta ishlash mashinasi`, `Kristallariy`, and `Chuvalchang qutisi`; fish, crop, ingredient, and resource names reuse reviewed object terminology
+- Overall textual coverage after this batch: 3,935 / 14,720 unique English records (26.73%), an increase of 0.43 percentage points
 
 ## Next safe batch
 

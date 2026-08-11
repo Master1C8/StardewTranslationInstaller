@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-140: 7,179 / 14,720 records (48.77%)
+- Current coverage after UZ-141: 7,308 / 14,720 records (49.65%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1574,6 +1574,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Alex`, `Haley`, `Sebastian`, `Pelikan shaharchasi`, `Sohil`, `Bahor/Yoz/Kuz/Qish`, `ferma/Ferma`, `fermer`, `tuxum`, `losos`, and `gridbol`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Alex, Haley, Sebastian, farm, farmer, beach, eggs, seasons, and Pelikan shaharchasi were rechecked before translation
 - Overall textual coverage after this batch: 7,179 / 14,720 unique English records (48.77%), an increase of 0.84 percentage points
+
+### UZ-141 — Haley character dialogue
+
+- Target: `Characters/Dialogue/Haley`
+- English source: `unpacked-all/Characters/Dialogue/Haley.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-haley.json`
+- Entries: all 129 English records
+- Scope: Haley’s fashion and photography, beach and resort dialogue, Emily and Alex family branches, festivals and events, relationship choices, seasonal routines, shopping, and self-confidence arcs
+- Control contract preserved exactly: player marker `@`, `%Haley`, `%fork`, `$13`, `$c 0.8#` variant, `$p` conditionals, `$q`/`$r` dialogue choices, `#$1 HaleyClothes#`/`#$1 haleySeagull#`/`#$1 HaleySister#` timed tokens, dialogue breaks `#$e#`/`#$b#`, gender branches `^`, item marker `<`, and emotion markers `$h/$s/$u/$a/$7/$8/$k/$l`
+- Glossary decisions applied: canonical `Haley`, `Emily`, `Alex`, `Sandy`, `Zuzu shahri`, `Stardew Valley`, `Pelikan shaharchasi`, `Sohil`, `Bahor/Yoz/Kuz/Qish`, `ferma`, `poni`, and `Junimo`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Haley, Emily, Alex, Sandy, beach, Zuzu shahri, farm, Junimo, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 7,308 / 14,720 unique English records (49.65%), an increase of 0.88 percentage points
 
 ## Next safe batch
 

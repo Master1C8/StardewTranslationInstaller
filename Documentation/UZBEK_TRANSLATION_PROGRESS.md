@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-095: 4,533 / 14,720 records (30.79%)
+- Current coverage after UZ-096: 4,556 / 14,720 records (30.95%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1027,6 +1027,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Janob Qi`, `Qi’ning Yong‘oq xonasi`, `Mukammallik`, `Oltin yong‘oq`, and `Qi’ning Maxsus buyurtmalari` terminology
 - Overall textual coverage after this batch: 4,533 / 14,720 unique English records (30.79%), an increase of 0.10 percentage points
 
+### UZ-096 — Dwarf character dialogue
+
+- Target: `Characters/Dialogue/Dwarf`
+- English source: `unpacked-all/Characters/Dialogue/Dwarf.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-dwarf.json`
+- Entries: all 23 English records
+- Scope: Dwarf greetings, birthday and milk reactions, underground life, cave-carrot dishes, Ginger Island volcano, fish discoveries, Dwarvish Forge, technology, mines, and Shadow People
+- Control contract preserved exactly: dialogue breaks `#$e#`/`#$b#`, asterisk stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Mitti`, `Mittilar`, `Konlar`, `Zanjabil oroli`, `Vulqon zindoni`, `Temirxona`, `Toshbaliq`, `Muzcha baliq`, `Lava ilonbalig‘i`, and `Soya xalqi`
+- Overall textual coverage after this batch: 4,556 / 14,720 unique English records (30.95%), an increase of 0.16 percentage points
+
 ## Next safe batch
 
-Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/Dwarf`, keeping each source target in its own auditable file.
+Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/LeoMainland`, keeping each source target in its own auditable file.

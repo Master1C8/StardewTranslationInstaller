@@ -481,6 +481,27 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Aralash urug‘lar`, `mahluq / dushman`, `Mox`, `Kino chiptasi`, `Kinoteatr`, `Holsizlik`, and `Sirli quti`
 - Quoted status name preserved semantically as `«Holsizlik»`; no control tokens or numeric literals occur in this batch
 
+### UZ-048 — Objects, O–P batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-o-01.json`
+- Entries: 60 of 1532, source positions 900–959
+- Scope: object names and descriptions from Ocean Stone through Pet License
+- Glossary decisions applied: canonical `mahluq`, `Umumgeoda`, `Temirchi`, `Moy`, `Hammom binosi`, `Tuyaqush`, `Uy hayvoni`, and `Uy hayvoni kosasi`
+- Numeric values preserved exactly: fruit-tree growth `28`, empty surrounding tiles `8`, parsnip growth `4`, and pepper growth `5`
+
+### UZ-049 — Objects, P batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-p-01.json`
+- Entries: 60 of 1532, source positions 960–1019
+- Scope: object names and descriptions from Petrified Slime through Prehistoric Tool name
+- Glossary decisions applied: canonical `Shilimshiq`, `Uzuk`, `Pierre`, and `Qaroqchi`; `Prehistoric` follows the existing direct-English decision `Tarixdan oldingi`
+- Placeholder preserved exactly: `{0}` in the dynamic Pickles name
+- Numeric values preserved exactly: fossil age `100,000`, pineapple growth `14`, fruit-tree growth `28`, empty surrounding tiles `8`, poppy growth `7`, potato growth `6`, and powdermelon growth `7`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

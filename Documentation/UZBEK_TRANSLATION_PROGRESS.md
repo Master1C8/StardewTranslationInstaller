@@ -620,6 +620,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Delimiter contract preserved: exactly 5 caret-separated fields per entry; fields 3–5 remain byte-for-byte equal to English
 - Numeric values preserved exactly, including earnings thresholds, heart levels, people/item/fish counts, and `1st → 1-o‘rin`
 
+### UZ-061 — Community Center bundles
+
+- Target: `Data/Bundles`
+- English source: `unpacked-all/Data/Bundles.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-bundles.json`
+- Entries: all 31 English bundle records
+- Scope: every standard Community Center bundle label, the four Vault amounts, and the Missing Bundle label
+- Glossary decisions applied: canonical `to‘plam`, `ekin`, `terim buyumi`, `hayvon mahsuloti`, `hunarmand mahsuloti`, `Qisqichbaqa tuzog‘i`, `Temirchi`, `Geolog`, and `Yo‘qolgan to‘plam`
+- Composition contract preserved: labels are written to fit the existing `{0} to‘plami` UI template; possessive labels use Uzbek genitive forms, and the adjectival `The Missing` is rendered as `Yo‘qolgan buyumlar` so the complete generated name is grammatical
+- Delimiter contract preserved: exactly 7 slash-separated fields per entry; fields 2–6 remain byte-for-byte equal to English and the repeated final label matches the translated first field
+- Every reward code, item ID, item count, quality value, color/index field, required-slot count, and Vault amount remains unchanged
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

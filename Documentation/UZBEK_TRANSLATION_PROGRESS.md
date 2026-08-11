@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-124: 5,917 / 14,720 records (40.20%)
+- Current coverage after UZ-125A: 6,017 / 14,720 records (40.88%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1369,6 +1369,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical \`Shane\`, \`Marnie\`, \`Jas\`, \`Yoba\`, \`JojaMart\`, \`gridbol\`, \`Tuxum bayrami\`, \`Gullar raqsi\`, \`Luau\`, \`Sharob\`, \`Pivo\`, \`Pishloqli qalampir gazagi\`, and \`Bahor/Yoz/Kuz/Qish\`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing food/festival/item names were confirmed before translation
 - Overall textual coverage after this batch: 5,917 / 14,720 unique English records (40.20%), an increase of 0.45 percentage points
+
+### UZ-125A — generic marriage dialogue, weather/home/family block
+
+- Target: \`Characters/Dialogue/MarriageDialogue\`
+- English source: \`unpacked-all/Characters/Dialogue/MarriageDialogue.json\`, Stardew Valley 1.6.15
+- File: \`assets/translations/uzbek/marriage-dialogue-generic-01.json\`
+- Entries: first 100 of 211 English records
+- Scope: shared rainy-day and rainy-night spouse lines, indoor and outdoor routines, partner-specific home/farm lines, work departures/returns, and the first child/family lines
+- Control contract preserved exactly: player marker \`@\`, farm and child placeholders \`%farm\`/\`%kid1\`/\`%kid2\`, adjective/noun placeholders \`%adj\`/\`%noun\`, gender branches \`^\`, emotion markers including \`$h\`/\`$l\`/\`$s\`/\`$u\`/\`$7\`, timing token \`#$c .5#\`, dialogue breaks \`#$e#\`/\`#$b#\`, literal markers \`~\` and \`<$h\`, and item-code groups \`[194 195 210 211 216]\` and \`[199 218 219 727 730]\`
+- Glossary decisions applied: canonical spouse names, \`ferma\`, \`Pelikan shaharchasi\`, \`Qahva\`, \`Muz bayrami\`-compatible item terms, and existing local food/festival terminology
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing item names were confirmed before translation
+- Overall textual coverage after this batch: 6,017 / 14,720 unique English records (40.88%), an increase of 0.68 percentage points
 
 ## Next safe batch
 

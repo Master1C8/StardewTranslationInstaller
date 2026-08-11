@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-116: 5,407 / 14,720 records (36.73%)
+- Current coverage after UZ-117: 5,459 / 14,720 records (37.09%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1273,6 +1273,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Haley`, `Emily`, `Bobo`, `Fern orollari`, `Ferngill Respublikasi`, `ferma`, `Ferma uyi`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `quyoshli`, `yomg‘irli`, `Echki`, and `Echki suti`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,407 / 14,720 unique English records (36.73%), an increase of 0.30 percentage points
+
+### UZ-117 — Harvey marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueHarvey`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueHarvey.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-harvey.json`
+- Entries: all 52 English records
+- Scope: Harvey’s medical and rainy-day lines, clinic life, radio and airplane hobbies, household routines, children, scientific observations, festivals, Luau, health advice, and winter care
+- Control contract preserved exactly: player marker `@`, farm and child placeholders `%farm`/`%kid1`/`%kid2`, gender branch `^`, emotion markers `$h`/`$l`/`$s`/`$7`/`$8`, dialogue breaks `#$e#`, stage directions, and item-code groups `[212 214 225 209 200]` and `[201]`
+- Glossary decisions applied: canonical `Harvey`, `Ferma`, `Ferma uyi`, `Bobo`, `Salomatlik`, `Muz bayrami`, `Luau`, `Gubernator`, `Kuz`, `Qish`, `klyukva`, `Tryufel`, `Tryufel moyi`, and `Tizza`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,459 / 14,720 unique English records (37.09%), an increase of 0.35 percentage points
 
 ## Next safe batch
 

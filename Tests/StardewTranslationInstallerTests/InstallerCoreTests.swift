@@ -19,8 +19,8 @@ struct InstallerCoreTests {
     @Test("loads a package for a SiteForMods language")
     func loadsTranslationPackage() throws {
         let package = try translationPackage()
-        #expect(package.siteLocale == "pl")
-        #expect(package.languageCode == "pl-vnrevival")
+        #expect(package.siteLocale == "uz")
+        #expect(package.languageCode == "uz-vnrevival")
         #expect(TranslationPackage.supportedSiteLocales.count == 43)
     }
 
@@ -46,9 +46,9 @@ struct InstallerCoreTests {
 
         let payload = temporary.appendingPathComponent("Payload", isDirectory: true)
         try fm.createDirectory(at: payload, withIntermediateDirectories: true)
-        let manifest = #"{"UniqueID":"VNRevival.StardewValleyPolish"}"#.data(using: .utf8)!
+        let manifest = #"{"UniqueID":"VNRevival.StardewValleyUzbek"}"#.data(using: .utf8)!
         try manifest.write(to: payload.appendingPathComponent("manifest.json"))
-        try #"{"LanguageCode":"pl-vnrevival"}"#.data(using: .utf8)!
+        try #"{"LanguageCode":"uz-vnrevival"}"#.data(using: .utf8)!
             .write(to: payload.appendingPathComponent("content.json"))
 
         let core = InstallerCore(fileManager: fm)
@@ -79,8 +79,8 @@ struct InstallerCoreTests {
 
         let payload = temporary.appendingPathComponent("Payload", isDirectory: true)
         try fm.createDirectory(at: payload, withIntermediateDirectories: true)
-        try #"{"UniqueID":"VNRevival.StardewValleyPolish"}"#.data(using: .utf8)!.write(to: payload.appendingPathComponent("manifest.json"))
-        try #"{"LanguageCode":"pl-vnrevival"}"#.data(using: .utf8)!
+        try #"{"UniqueID":"VNRevival.StardewValleyUzbek"}"#.data(using: .utf8)!.write(to: payload.appendingPathComponent("manifest.json"))
+        try #"{"LanguageCode":"uz-vnrevival"}"#.data(using: .utf8)!
             .write(to: payload.appendingPathComponent("content.json"))
 
         let core = InstallerCore(fileManager: fm)

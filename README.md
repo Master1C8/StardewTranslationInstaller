@@ -1,8 +1,8 @@
 # Stardew Valley — VN Revival Translation Installer
 
-Универсальный нативный установщик языковых пакетов VN Revival для Stardew Valley. Текущая сборка устанавливает польский пакет. Пользователь просто открывает приложение: оно автоматически устанавливает всё необходимое и показывает кнопку запуска игры.
+Универсальный нативный установщик языковых пакетов VN Revival для Stardew Valley. Текущая рабочая сборка устанавливает отдельный узбекский пакет. Пользователь просто открывает приложение: оно автоматически устанавливает всё необходимое и показывает кнопку запуска игры.
 
-Код установщика не привязан к польскому: один и тот же движок собирается для любого языка SiteForMods с соответствующими `PackageConfig.json`, Content Patcher payload, глоссарным слоем и шрифтом. Каждая сборка содержит один заранее выбранный язык, поэтому интерфейс остаётся однокнопочным.
+Код установщика не привязан к узбекскому: один и тот же движок собирается для любого языка SiteForMods с соответствующими `PackageConfig.json`, Content Patcher payload, глоссарным слоем и шрифтом. Каждая сборка содержит один заранее выбранный язык, поэтому интерфейс остаётся однокнопочным.
 
 ## Что уже работает
 
@@ -12,7 +12,7 @@
 - проверка SHA-256 каждого загруженного архива до запуска или распаковки;
 - атомарная установка и обновление только принадлежащего приложению мода;
 - запуск игры через Steam одной кнопкой после установки;
-- новая строка языка `Polski — VN Revival` в меню выбора языка;
+- новая строка языка `O‘zbek — VN Revival` в меню выбора языка;
 - использование совместимого латинского шрифта Stardew Valley;
 - отдельная папка `assets/translations`, куда добавляются патчи перевода.
 
@@ -44,11 +44,11 @@ swift test
 
 - `manifest.json` — метаданные Content Patcher-пакета;
 - `content.json` — регистрация дополнительного языка и подключение переводов;
-- `assets/button-polish.png` — кнопка языка размером 174×78 пикселей;
-- `assets/translations/polish/*.json` — редактирование игровых строк для кода `pl-vnrevival`.
+- `assets/button-uzbek.png` — кнопка языка размером 174×78 пикселей;
+- `assets/translations/uzbek/*.json` — редактирование игровых строк для кода `uz-vnrevival`.
 
 Официальная документация: [Custom languages](https://stardewvalleywiki.com/Modding:Custom_languages), [Content Patcher](https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/README.md), [SMAPI](https://github.com/Pathoschild/SMAPI).
 
 ## Продолжение перевода
 
-Инструкция для моделей и переводчиков находится в [`Documentation/TRANSLATION_GUIDE.md`](Documentation/TRANSLATION_GUIDE.md). Краткие обязательные правила для работающего с репозиторием агента продублированы в [`AGENTS.md`](AGENTS.md). Полный рабочий снимок единого глоссария лежит в [`Documentation/glossary`](Documentation/glossary). Руководство описывает формат Content Patcher, связь с глоссарием SiteForMods, работу с английскими ассетами, сохранение плейсхолдеров и проверку новых пакетов перевода.
+Инструкция для моделей и переводчиков находится в [`Documentation/TRANSLATION_GUIDE.md`](Documentation/TRANSLATION_GUIDE.md). Краткие обязательные правила для работающего с репозиторием агента продублированы в [`AGENTS.md`](AGENTS.md). Полный рабочий снимок единого глоссария лежит в [`Documentation/glossary`](Documentation/glossary), а фактическое продвижение узбекского пакета — в [`Documentation/UZBEK_TRANSLATION_PROGRESS.md`](Documentation/UZBEK_TRANSLATION_PROGRESS.md). Руководство описывает формат Content Patcher, связь с глоссарием SiteForMods, работу с английскими ассетами, сохранение плейсхолдеров и проверку новых пакетов перевода.

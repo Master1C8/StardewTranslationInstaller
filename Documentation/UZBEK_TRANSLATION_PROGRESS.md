@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-077: 4,257 / 14,720 records (28.92%)
+- Current coverage after UZ-078: 4,274 / 14,720 records (29.04%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -828,6 +828,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Bosh suyagi g‘ori`, `Zina`, `iridiy`, `Salomatlik`, `bayram`, `Joja ombori`, and established Joja community-development wording
 - Overall textual coverage after this batch: 4,257 / 14,720 unique English records (28.92%), an increase of 0.07 percentage points
 
+### UZ-078 — Extra dialogue: island rescues and Birdie
+
+- Target: `Data/ExtraDialogue`
+- English source: `unpacked-all/Data/ExtraDialogue.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-extra-dialogue-island-birdie.json`
+- Entries: 17 English records at source positions 92–108
+- Scope: Willy’s gendered island-rescue variants, Leo’s rescue response, all 14 ambient Birdie conversations, and Birdie’s no-gift response
+- Control contract preserved exactly and in source order: the gender-variant caret, dialogue breaks, emotion markers, and the paired asterisks around Birdie’s sigh
+- Glossary decisions applied: canonical `Zanjabil oroli`, `Mittilar`, `Vulqon`, `Changalzor`, `Sohil`, `Birdie`, `sovg‘a`, and established island terminology
+- Overall textual coverage after this batch: 4,274 / 14,720 unique English records (29.04%), an increase of 0.12 percentage points
+
 ## Next safe batch
 
-Continue `Data/ExtraDialogue` with the self-contained Zanjabil oroli rescue and Birdie dialogue group, followed by Professor Snail hints and the Summit sequence. Keep scripted event commands outside quoted dialogue byte-for-byte equal to English.
+Continue `Data/ExtraDialogue` with the eight Professor Snail fossil hints, followed by the Summit sequence. Keep scripted event commands outside quoted dialogue byte-for-byte equal to English.

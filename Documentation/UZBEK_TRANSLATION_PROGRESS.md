@@ -418,6 +418,26 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Tola` for `Fiber` and `fermer`; other item names in this range were translated directly from English because the canonical glossary has no exact entries for them
 - Numeric values preserved exactly: crop growth periods `12` and `7`
 
+### UZ-042 — Objects, first F–G batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-g-01.json`
+- Entries: 60 of 1532, source positions 540–599
+- Scope: Frozen Geode description, then object names and descriptions through Golden Egg name
+- Glossary decisions applied: canonical `Temirchi`, `Geoda`, `Galaktika ruhi`, `toblash`, `Echki`, and `fermer`
+- Numeric values preserved exactly: forge count `3`, garlic growth period `4`, and coin count `1`
+
+### UZ-043 — Objects, second G–H batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-g-02.json`
+- Entries: 60 of 1532, source positions 600–659
+- Scope: Golden Egg description, then object names and descriptions through Herring
+- Glossary decisions applied: canonical `Oltin sirli quti`, `Oltin yong‘oq`, `Zanjabil oroli`, `O‘t ekish to‘plami`, `Yashil yomg‘ir`, `Tola`, `Aralash urug‘lar`, `Qattiq yog‘och`, and `Pichan`
+- Numeric value preserved exactly: grape growth period `10`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

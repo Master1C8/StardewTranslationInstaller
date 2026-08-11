@@ -565,6 +565,40 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Yoz`, `Kuz`, `Qish`, `uy hayvoni`, `Uzuk`, `Choy niholi`, `dushman`, and `Shilimshiq inkubatori`
 - Numeric values preserved exactly: strawberry growth `8`, sturgeon lifespan `150`, summer squash growth `6`, sunflower growth `8`, taro growth `10`, and tea maturity `20`
 
+### UZ-056 — Objects, T–V batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-t-01.json`
+- Entries: 60 of 1532, source positions 1380–1439
+- Scope: object names and descriptions from Tiger Trout through Vampire Ring
+- Glossary decisions applied: canonical `Uzuk`, `Tuzoq qalqovich`, `Xazina sandig‘i`, `Xazina ovchisi`, `Daraxt o‘g‘iti`, `Oltin nishon`, `Forel musobaqasi`, `Bolta`, `Yog‘och`, `Tegirmon`, and `mahluq`
+- Numeric values preserved exactly: tomato growth `11` and tulip growth `6`; spelled-out `Triple` remains spelled-out Uzbek `Uch`
+
+### UZ-057 — Objects, V–W batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-v-01.json`
+- Entries: 60 of 1532, source positions 1440–1499
+- Scope: object names and descriptions from Vegetable Medley through Wild Bait
+- Glossary decisions applied: canonical `Bo‘shliq`, `Soya xalqi`, `Ko‘chish totemi`, `Sohil`, `Kaliko cho‘li`, `Ferma`, `Zanjabil oroli`, `Zuzu shahri`, `fermer`, `Tola`, `Aralash urug‘lar`, `O‘roq`, `Tovuq`, `Yovvoyi yem`, and `Linus`
+- Quoted `warrior energy` preserved semantically as `«jangchi quvvati»`
+- Numeric value preserved exactly: wheat growth `4`; spelled-out `two` remains spelled-out Uzbek `ikki`
+
+### UZ-058 — Objects, W–Y final batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-w-01.json`
+- Entries: 32 of 1532, source positions 1500–1531
+- Scope: all remaining object names and descriptions from Wild Horseradish through Yam Seeds
+- Glossary decisions applied: canonical `Guldasta`, `sevishib yurish`, `Qish`, `Yog‘och`, and `to‘siq`
+- Placeholder preserved exactly: `{0}` in the dynamic Wine name
+- Numeric value preserved exactly: yam growth `10`
+
+`Strings/Objects` is now fully covered: all 1532 English keys have a dedicated Uzbek value, with no key copied from the Russian reference.
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

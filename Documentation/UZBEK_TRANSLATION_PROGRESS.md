@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-141: 7,308 / 14,720 records (49.65%)
+- Current coverage after UZ-142: 7,425 / 14,720 records (50.44%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1586,6 +1586,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Haley`, `Emily`, `Alex`, `Sandy`, `Zuzu shahri`, `Stardew Valley`, `Pelikan shaharchasi`, `Sohil`, `Bahor/Yoz/Kuz/Qish`, `ferma`, `poni`, and `Junimo`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Haley, Emily, Alex, Sandy, beach, Zuzu shahri, farm, Junimo, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 7,308 / 14,720 unique English records (49.65%), an increase of 0.88 percentage points
+
+### UZ-142 — Sam character dialogue
+
+- Target: `Characters/Dialogue/Sam`
+- English source: `unpacked-all/Characters/Dialogue/Sam.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-sam.json`
+- Entries: all 117 English records
+- Scope: Sam’s band, guitar, skateboarding, family and Gotoro Empire dialogue, Sebastian and Abigail friendships, resort, festivals, events, and seasonal routines
+- Control contract preserved exactly: player marker `@`, `%Sam`, `$p` conditionals, `$q`/`$r` dialogue choices, `$d Joja#...|...` conditional, `${He's^She's}$` gender placeholder, dialogue breaks `#$e#`/`#$b#`, gender branches `^`, and emotion markers `$h/$s/$u/$a/$7/$8/$9/$10/$l`
+- Glossary decisions applied: canonical `Sam`, `Sebastian`, `Abigail`, `Gus`, `Willy`, `Hokim Lewis`, `Gotoro imperiyasi`, `Zuzu shahri`, `Yulduz tomchisi saluni`, `Pelikan shaharchasi`, `Bahor/Yoz/Kuz/Qish`, and `Qish yulduzi ziyofati`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Sam, Sebastian, Abigail, Gus, Gotoro imperiyasi, Zuzu shahri, Saloon, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 7,425 / 14,720 unique English records (50.44%), an increase of 0.79 percentage points
 
 ## Next safe batch
 

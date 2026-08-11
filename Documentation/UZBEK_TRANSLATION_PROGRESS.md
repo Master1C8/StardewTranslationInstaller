@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-093: 4,506 / 14,720 records (30.61%)
+- Current coverage after UZ-094: 4,518 / 14,720 records (30.69%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1005,6 +1005,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Emily`, `Sandy`, `Gus`, `Harvey`, `To‘quv dastgohi`, `Tungi bozor`, `Suvpari`, and established spirit/magic terminology
 - Overall textual coverage after this batch: 4,506 / 14,720 unique English records (30.61%), an increase of 0.11 percentage points
 
+### UZ-094 — Leo character dialogue
+
+- Target: `Characters/Dialogue/Leo`
+- English source: `unpacked-all/Characters/Dialogue/Leo.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-leo.json`
+- Entries: all 12 English records
+- Scope: Leo’s daily greetings, parrot family, Ginger Island volcano, spirits, bird families, rain, and gift reactions
+- Control contract preserved exactly: dialogue breaks `#$b#`/`#$e#`, emotion markers `$3`, `$h`, `$s`, and source key punctuation
+- Glossary decisions applied: canonical `Leo`, `Zanjabil oroli`, `Vulqon zindoni` context, `ruhlar`, `to‘tiqush`, and established `Suvpari`/golden walnut terminology
+- Overall textual coverage after this batch: 4,518 / 14,720 unique English records (30.69%), an increase of 0.08 percentage points
+
 ## Next safe batch
 
-All `Strings/schedules` targets are now represented in the Uzbek package. Continue with the next smallest untranslated English target outside schedules, keeping each source target in its own auditable file.
+Continue with the next smallest safe character-dialogue target outside schedules, `Characters/Dialogue/Mister Qi`, keeping each source target in its own auditable file.

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-107: 4,925 / 14,720 records (33.46%)
+- Current coverage after UZ-108: 4,966 / 14,720 records (33.74%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1165,6 +1165,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Evelyn`, `George`, `Alex`, `Jamoat markazi`, `Hokim Lewis`, `Porey piyoz`, `Lola`, `Xushbo‘y no‘xat`, `Kokos`, `Pechenyelar`, `Qovoq`, `Oddiy qo‘ziqorin`, `Qish`, and `Bobo`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 4,925 / 14,720 unique English records (33.46%), an increase of 0.33 percentage points
+
+### UZ-108 — Jas character dialogue
+
+- Target: `Characters/Dialogue/Jas`
+- English source: `unpacked-all/Characters/Dialogue/Jas.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-jas.json`
+- Entries: all 41 English records
+- Scope: Jas’s greetings, birthday and fairy gifts, Green Rain, resort, Marnie and Shane family lines, dolls, Penny’s handwriting lessons, farm life, ice cream, river crawdads, and childhood memories
+- Control contract preserved exactly: player marker `@`, gender branches `^`, emotion markers `$h`/`$s`/`$u`, dialogue breaks `#$e#`/`#$b#`, `$y` response selector, `${Mr.^Ms.}` template, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Jas`, `Marnie`, `Shane`, `Penny`, `Muzqaymoq`, `chig‘anoq`, `Qisqichbaqa tuzog‘i`, `ferma`, and child-dialogue terminology
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 4,966 / 14,720 unique English records (33.74%), an increase of 0.28 percentage points
 
 ## Next safe batch
 

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-109: 5,037 / 14,720 records (34.22%)
+- Current coverage after UZ-110: 5,077 / 14,720 records (34.49%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1189,6 +1189,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Hokim Lewis`, `Pelikan shaharchasi`, `Jamoat markazi`, `Jo‘natma qutisi`, `O‘roq`, `Tosh koni`, `Ko‘prik ta’miri`, `Avtobus ta’miri`, `Oy shu’lali meduzalar raqsi`, `Asalari uyasi`, `Asal`, `Ko‘k rezavor`, and `Qish`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,037 / 14,720 unique English records (34.22%), an increase of 0.48 percentage points
+
+### UZ-110 — Marnie character dialogue
+
+- Target: `Characters/Dialogue/Marnie`
+- English source: `unpacked-all/Characters/Dialogue/Marnie.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-marnie.json`
+- Entries: all 40 English records
+- Scope: Marnie’s ranch introduction, livestock and pet care, Shane and Jas family lines, resort and saloon remarks, animals, hay, scythe use, Green Rain, Wizard’s tower, festival judging, and community life
+- Control contract preserved exactly: player marker `@`, gender branch `^`, `%pet`, `%Marnie`, emotion markers `$h`/`$s`/`$u`/`$3`/`$4`, dialogue breaks `#$e#`/`#$b#`, `$query PLAYER_NPC_RELATIONSHIP any Shane married roommate#` with `|`, `#$1 marnieAnimalSal#` and `$k`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Marnie`, `Hokim Lewis`, `Shane`, `Jas`, `Marnie ranchosi`, `Chorvador`, `O‘roq`, `Pichan`, `Tovuq`, `Sigir`, `Ot`, `Hayvon mahsuloti`, `Sehrgar minorasi`, and `Stardew Valley yarmarkasi`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and animal terms were confirmed before translation
+- Overall textual coverage after this batch: 5,077 / 14,720 unique English records (34.49%), an increase of 0.27 percentage points
 
 ## Next safe batch
 

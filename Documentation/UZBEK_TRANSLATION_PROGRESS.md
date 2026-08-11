@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-142: 7,425 / 14,720 records (50.44%)
+- Current coverage after UZ-143: 7,550 / 14,720 records (51.29%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1598,6 +1598,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Sam`, `Sebastian`, `Abigail`, `Gus`, `Willy`, `Hokim Lewis`, `Gotoro imperiyasi`, `Zuzu shahri`, `Yulduz tomchisi saluni`, `Pelikan shaharchasi`, `Bahor/Yoz/Kuz/Qish`, and `Qish yulduzi ziyofati`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Sam, Sebastian, Abigail, Gus, Gotoro imperiyasi, Zuzu shahri, Saloon, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 7,425 / 14,720 unique English records (50.44%), an increase of 0.79 percentage points
+
+### UZ-143 — Sebastian character dialogue
+
+- Target: `Characters/Dialogue/Sebastian`
+- English source: `unpacked-all/Characters/Dialogue/Sebastian.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-sebastian.json`
+- Entries: all 125 English records
+- Scope: Sebastian’s motorcycle, computers, caves and railroad, Sam and Abigail friendships, Maru family tension, resort, relationship choices, events, and gloomy seasonal dialogue
+- Control contract preserved exactly: player marker `@`, `%Sebastian`, `$c 0.8#`/`$c .5#` variants, `$p` conditionals, `$q`/`$r` dialogue choices, `$query PLAYER_NPC_RELATIONSHIP current any married roommate#...|...`, `$1 Sebastian1#` timed token, `$d Joja#...|...` conditional, dialogue breaks `#$e#`/`#$b#`, gender branches `^`, and emotion markers `$h/$s/$u/$a/$8/$9/$l`
+- Glossary decisions applied: canonical `Sebastian`, `Sam`, `Abigail`, `Maru`, `Demetrius`, `Pelikan shaharchasi`, `Sohil`, `Gotoro imperiyasi`, `JojaMart`, `Yulduz tomchisi saluni`, `Bahor/Yoz/Kuz/Qish`, and `Junimo`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Sebastian, Sam, Abigail, Maru, Demetrius, JojaMart, beach, Saloon, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 7,550 / 14,720 unique English records (51.29%), an increase of 0.85 percentage points
 
 ## Next safe batch
 

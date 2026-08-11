@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-118: 5,548 / 14,720 records (37.69%)
+- Current coverage after UZ-119: 5,621 / 14,720 records (38.18%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1297,6 +1297,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Krobus`, `Soya xalqi`, `Mittilar`, `Kanalizatsiya`, `Bo‘shliq ruhi`, `Yoba`, `Bobo`, `Welwick`, `ferma`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `Gullar raqsi`, and `Ruhlar arafasi`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,548 / 14,720 unique English records (37.69%), an increase of 0.60 percentage points
+
+### UZ-119 — Leah marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueLeah`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueLeah.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-leah.json`
+- Entries: all 73 English records
+- Scope: Leah’s art and wood-sculpture lines, nature walks, mushroom hunting, farm and house routines, children, wedding, destiny, and seasonal dialogue including Pichan, Kristall meva, Ziravorli rezavor, and Muz bayrami
+- Control contract preserved exactly: player marker `@`, farm and child placeholders `%farm`/`%kid1`, gender branch `^`, emotion markers `$h`/`$l`/`$u`/`$s`/`$a`, dialogue breaks `#$e#`/`#$b#`, stage directions, and item-code groups `[281 404 420 257]`, `[16 18 20 22 90 259 396 402]`, `[196]`, `[395]`, and `[348]`
+- Glossary decisions applied: canonical `Leah`, `ferma / Ferma`, `Sohil`, `Tog‘`, `Cho‘qqi`, `Ferma uyi`, `Bobo`, `Qo‘ziqorin xodasi`, `Terimchilik`, `Suvpari kuloni`, `Pichan`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `Ziravorli rezavor`, `Kristall meva`, and `Muz bayrami`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,621 / 14,720 unique English records (38.18%), an increase of 0.50 percentage points
 
 ## Next safe batch
 

@@ -523,6 +523,27 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Placeholder preserved exactly: `{0}` in the dynamic Roe name
 - Numeric values preserved exactly: radish growth `6`, red cabbage growth `9`, rhubarb growth `13`, and rice growth `8`
 
+### UZ-052 — Objects, R–S batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-r-02.json`
+- Entries: 60 of 1532, source positions 1140–1199
+- Scope: object names and descriptions from Ruby Ring through the Bait And Bobber skill book
+- Glossary decisions applied: canonical `Uzuk`, `Mitti / mittilarga oid`, `Daraxt shirasi`, `mahluq`, `Sirli qayd`, `Dehqonchilik`, `Baliqchilik`, `tajriba`, `Yem`, and `qalqovich`
+- Numeric value preserved exactly: Ruby Ring attack bonus `10%`; the English word `ten` in the Rusty Spoon description remains the Uzbek word `o‘n`
+
+### UZ-053 — Objects, S batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-s-01.json`
+- Entries: 60 of 1532, source positions 1200–1259
+- Scope: the remaining skill books, then object names and descriptions from Slate through Spice Berry
+- Glossary decisions applied: canonical `Terimchilik`, `Konchilik`, `Jang`, `Shilimshiq`, `Dudlangan baliq`, `Sonar qalqovich`, `mahluq`, `Yem`, `Speed-Gro`, and `yumshatilgan tuproq`
+- Placeholders preserved exactly: `{0}` in both Smoked Fish strings and both targeted Bait strings
+- Numeric values preserved exactly: Spangle growth `8` and Speed-Gro bonus `10%`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-079: 4,282 / 14,720 records (29.09%)
+- Current coverage after UZ-080: 4,313 / 14,720 records (29.30%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -850,6 +850,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Professor Snail`, `Zanjabil oroli`, `Orol g‘arbi`, `Ko‘rshapalak`, `qazilma`, `suyak`, `elash`, and `Oltin kokos`
 - Overall textual coverage after this batch: 4,282 / 14,720 unique English records (29.09%), an increase of 0.05 percentage points
 
+### UZ-080 — Extra dialogue: Summit finale
+
+- Target: `Data/ExtraDialogue`
+- English source: `unpacked-all/Data/ExtraDialogue.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-extra-dialogue-summit.json`
+- Entries: the final 31 English records at source positions 117–147; `Data/ExtraDialogue` is now complete at 147 of 147 records
+- Scope: Lewis and Morris reflections, shared spouse introductions, all 12 spouse-specific finale speeches, and the five closing messages
+- Event-script contract preserved: in all seven composite spouse records, every command, actor, direction, pause, emote, duration, separator, and quote boundary outside displayed dialogue is byte-for-byte equal to English
+- Control contract preserved: `%farm`, `%year`, `@`, all dialogue breaks, emotion markers, asterisk stage directions, and every numeric value
+- Glossary decisions applied: canonical `Cho‘qqi`, `Pelikan shaharchasi`, `Ferma`, `Bobo`, `Hokim Lewis`, `Joja korporatsiyasi`, `fermer`, and established spouse names; the local 673-entry glossary was compared again with the live endpoint and had zero Uzbek-layer differences
+- Overall textual coverage after this batch: 4,313 / 14,720 unique English records (29.30%), an increase of 0.21 percentage points
+
 ## Next safe batch
 
-Complete the remaining 31 `Data/ExtraDialogue` Summit records as one final audited target group. Keep all event commands outside quoted dialogue byte-for-byte equal to English.
+Select the next untranslated English target by comparing the complete source manifest with the 4,313 translated `(Target, key)` pairs. Prefer a self-contained short data or string table before beginning long-form villager dialogue.

@@ -40,6 +40,46 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 
 Current translated total: 88 `Strings/UI` entries.
 
+### UZ-003 — animals, character creation, and geode services
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-animals-character.json`
+- Entries: 63
+- Scope: learned-recipe notices, farmer statistics, animal management, remaining carpenter errors, multiplayer creation settings and help, six farm maps, skill labels, shipped collections, and geode service text
+- Glossary decisions applied: `retsept`, `Yashash binosini almashtirish`, `Homiladorlikka ruxsat`, `Mukammal!`, `Pul taqsimoti`, `Foyda ulushi`, `Boshlang‘ich kulbalar`, `Kulba joylashuvi`, all six farm-map names, the four skill names, `Jo‘natilgan buyumlar`, `Anjomlarda joy yo‘q`, and `Geoda`
+
+### UZ-004 — Community Center rewards and level professions
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-level-professions.json`
+- Entries: 88
+- Scope: Joja development descriptions, Community Center rewards, letter attachments, level-up bonuses, all 30 profession names and descriptions, and profession selection
+- Glossary decisions applied: `Kaliko cho‘li`, `Pelikan shaharchasi`, `Vagonchalar ta’mirlandi`, `Ko‘prik ta’miri`, `Issiqxona`, `Avtobus ta’miri`, `Yaltiragan xarsang olib tashlandi`, `Jamoat markazi`, `Tashlandiq JojaMart`, tool names, `Salomatlik`, all 30 canonical profession names, `Qisqichbaqa tuzog‘i`, `yem`, `Qattiq yog‘och`, `ruda / quyma`, `kritik zarba`, and `maxsus harakat / tiklanish vaqti`
+
+Current translated total: 239 `Strings/UI` entries.
+
+### UZ-005 — load, controller, and multiplayer menus
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-multiplayer.json`
+- Entries: 51
+- Scope: save loading, controller reconnection, item stowing, advanced crafting information, server modes, co-op connection states, invite codes, multiplayer options, cabin demolition, and host wait states
+- Glossary decisions applied: `Buyumni olib qo‘yish`, `Kontroller uslubidagi menyulardan foydalanish`, `Server rejimi`, `Oflayn / Onlayn`, `Taklif kodi`, `Yangi fermaga mezbon bo‘lish`, `Kulba`, and `Yordamchi fermer`
+
+### UZ-006 — multiplayer chat notifications
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-chat-notifications.json`
+- Entries: 69
+- Scope: chat formats and multiplayer announcements for joining, collections, relationships, sleep, earnings, films, achievements, and game pausing
+- Glossary decisions applied: `Yordamchi fermer`, `Afsonaviy baliq`, `to‘plam`, `Yulduz tomchisi`, `Dasht qirolining sarguzashti`, `Junimo Kart`, `Yo‘qolgan kitob`, `Galaktika qilichi`, and `Yutuqlar`
+
+Current translated total: 359 `Strings/UI` entries.
+
 ## Next safe batch
 
-Continue `Strings/UI` with short animal, shop, shipping, and confirmation labels. Check every term against the `uz` glossary layer before adding it. Leave long multiplayer help text and context-sensitive prompts for a later editorial pass.
+Continue `Strings/UI` with chat commands, player proposals, shop, shipping, and confirmation labels. Check every term against the `uz` glossary layer before adding it. Keep context-sensitive event commands out of the UI batches.

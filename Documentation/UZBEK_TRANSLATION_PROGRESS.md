@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-112: 5,202 / 14,720 records (35.34%)
+- Current coverage after UZ-113: 5,251 / 14,720 records (35.67%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1225,6 +1225,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Abigail`, `ferma`, `Konlar`, `Shilimshiqxona`/`Shilimshiq`, `Bobo`, `Tuxum bayrami`, `Suvpari kuloni`, `Kvarts`, `Ametist`, `Hayot eliksiri`, `Welwick`, and `Dasht qirolining sarguzashti`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,202 / 14,720 unique English records (35.34%), an increase of 0.49 percentage points
+
+### UZ-113 — Alex marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueAlex`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueAlex.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-alex.json`
+- Entries: all 49 English records
+- Scope: Alex’s married-life exercise and weather lines, indoor and outdoor farm routines, household and children dialogue, affection, seasonal festivals, Luau, Stardew Valley yarmarka, family visits, winter warmth, and fishing competition
+- Control contract preserved exactly: player marker `@`, child placeholders `%kid1`/`%kid2`, gender branches `^`, emotion markers `$h`/`$l`/`$u`/`$s`/`$6`/`$9`, dialogue breaks `#$e#`, item-code groups `[241 242 225 214 198]` and `[195 210 211]`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Alex`, `gridbol`, `Bobo`, `Bobo-buvi`, `Yulduz tomchisi`, `Gullar raqsi`, `Luau`, `Stardew Valley yarmarkasi`, `Pech`, `Shilimshiq`, `Konlar`, `Pelikan shaharchasi`, and `Forel musobaqasi`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,251 / 14,720 unique English records (35.67%), an increase of 0.33 percentage points
 
 ## Next safe batch
 

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-130: 6,413 / 14,720 records (43.57%)
+- Current coverage after UZ-131: 6,483 / 14,720 records (44.04%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1453,6 +1453,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Elliott`, `Leah`, `Gus`, `Pelikan shaharchasi`, `Sohil`, `Luau`, `Kalmar`, `Qisqichbaqa kotletlari`, `Qish/Bahor/Yoz/Kuz`, and existing writer/beach terminology
 - Online glossary check: the canonical project page was previously opened successfully in the in-app browser; local Uzbek glossary entries for Elliott, Leah, Gus, Pelikan shaharchasi, farm, Luau, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 6,413 / 14,720 unique English records (43.57%), an increase of 0.65 percentage points
+
+### UZ-131 — Harvey character dialogue
+
+- Target: `Characters/Dialogue/Harvey`
+- English source: `unpacked-all/Characters/Dialogue/Harvey.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-harvey.json`
+- Entries: all 70 English records
+- Scope: Harvey’s clinic, medical care, Green Rain, gifts, aerobics, relationships, resort visits, health advice, seasonal routines, and event conversations with George
+- Control contract preserved exactly: player marker `@`, `$query PLAYER_NPC_RELATIONSHIP current any married roommate#...|...` relationship branches, emotion markers `$h/$s/$l/$4/$6`, dialogue breaks `#$e#`/`#$b#`, and all source branch separators `|`
+- Glossary decisions applied: canonical `Harvey`, `Maru`, `Gus`, `Pelikan shaharchasi`, `Salomatlik`, `klinika`, `shifokor`, `gripp`, `aerobika`, and seasonal `Yoz/Kuz/Qish/Bahor`
+- Online glossary check: the canonical project page was previously opened successfully in the in-app browser; local Uzbek glossary entries for Harvey, Maru, Gus, Pelikan shaharchasi, Salomatlik, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 6,483 / 14,720 unique English records (44.04%), an increase of 0.48 percentage points
 
 ## Next safe batch
 

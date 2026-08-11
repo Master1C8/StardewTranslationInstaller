@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-125B: 6,128 / 14,720 records (41.63%)
+- Current coverage after UZ-126: 6,170 / 14,720 records (41.92%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1393,6 +1393,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical spouse names, \`ferma\`, \`Bobo\`, \`Suvpari kuloni\`, \`Tog‘\`, \`Qo‘ziqorin xodasi\`, \`Kanalizatsiya\`, \`Ruhlar arafasi\`, \`Gullar raqsi\`, \`Ravochli pirog\`, \`Sharob\`, \`Pivo\`, and seasonal \`Bahor/Yoz/Kuz/Qish\`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing item/festival names were confirmed before translation
 - Overall textual coverage after this batch: 6,128 / 14,720 unique English records (41.63%), an increase of 0.75 percentage points
+
+### UZ-126 — Willy character dialogue
+
+- Target: \`Characters/Dialogue/Willy\`
+- English source: \`unpacked-all/Characters/Dialogue/Willy.json\`, Stardew Valley 1.6.15
+- File: \`assets/translations/uzbek/dialogue-willy.json\`
+- Entries: all 42 English records
+- Scope: Willy’s fishing shop, gifts, legendary catches, crab pond, Trout Derby, Kalmar bayrami, daily fishing advice, and Fair judging
+- Control contract preserved exactly: player markers \`@\`, gender branches \`^\`, gender tokens \`\${bachelor^single}$\`/\`\${man^lady}$\`, emotion markers \`$h\`/\`$s\`/\`$u\`, dialogue breaks \`#$e#\`/\`#$b#\`, and item-code group \`[797]\`
+- Glossary decisions applied: canonical \`Willy\`, \`Baliqchilik\`, \`Sohil\`, \`Kanalizatsiya\`, \`Yem\`, \`Qisqichbaqa tuzog‘i\`, \`Kamalak foreli\`, \`Forel musobaqasi\`, \`Kalmar bayrami\`, \`Oltin nishon\`, \`Afsona\`, and \`Muzlik balig‘i\`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and fish/fishing item names were confirmed before translation
+- Overall textual coverage after this batch: 6,170 / 14,720 unique English records (41.92%), an increase of 0.29 percentage points
 
 ## Next safe batch
 

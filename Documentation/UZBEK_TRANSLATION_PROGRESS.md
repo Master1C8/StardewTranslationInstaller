@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-115: 5,363 / 14,720 records (36.43%)
+- Current coverage after UZ-116: 5,407 / 14,720 records (36.73%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1261,6 +1261,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Emily`, `ferma / Ferma`, `Yoba`, `Echki suti`, `Sohil`, `Terimchilik`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `qahva`, `Pari atirguli`, and `Suvpari kuloni`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,363 / 14,720 unique English records (36.43%), an increase of 0.39 percentage points
+
+### UZ-116 — Haley marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueHaley`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueHaley.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-haley.json`
+- Entries: all 44 English records
+- Scope: Haley’s married-life weather and photography lines, Fern orollari retirement dreams, home routines, farm support, children, social visits, seasonal changes, and firefly/stars reflections
+- Control contract preserved exactly: player marker `@`, child placeholder `%kid2`, emotion markers `$h`/`$l`/`$s`/`$5`/`$7`/`$10`/`$11`, dialogue breaks `#$e#`/`#$b#`, stage directions, literal `<$h` token, and item-code groups `[223 234 211 651 731]`, `[727 231 207 199]`, and `[194 195 210 211 216]`
+- Glossary decisions applied: canonical `Haley`, `Emily`, `Bobo`, `Fern orollari`, `Ferngill Respublikasi`, `ferma`, `Ferma uyi`, `Bahor`, `Yoz`, `Kuz`, `Qish`, `quyoshli`, `yomg‘irli`, `Echki`, and `Echki suti`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,407 / 14,720 unique English records (36.73%), an increase of 0.30 percentage points
 
 ## Next safe batch
 

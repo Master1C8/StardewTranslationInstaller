@@ -308,6 +308,25 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: `Stardew Valley`, `Ferngill Respublikasi`, `Gavhar dengizi`, `Fern orollari`, `Zuzu shahri`, `Dasht qirolining sarguzashti`, `Dasht qiroli`, `Wumbus`, `Yulduz tomchisi`, and `Grampleton`
 - Control syntax preserved: paired `*...*` action markers in the horror-film scene
 
+### UZ-031 — end credits
+
+- Target: `Strings/credits`
+- English source: `unpacked-all/Strings/credits.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/credits.json`
+- Entries: 78 of 78 numeric array indices
+- Scope: credit headings, language labels, platform and QA roles, official links, and the closing thank-you line; personal and company names remain unchanged
+- Control syntax preserved: all `[image]`, `[3]`, `[link]`, URLs, image coordinates, and the final spouse-heart `<` marker
+
+### UZ-032 — special orders and Qi challenges
+
+- Target: `Strings/SpecialOrderStrings`
+- English source: `unpacked-all/Strings/SpecialOrderStrings.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/special-order-strings.json`
+- Entries: 146 of 146
+- Scope: every town-board special order, randomized crop/fish/monster/resource fragment, all twelve Qi challenges, and the three Desert Festival Marlon quests
+- Glossary decisions applied: `Maxsus buyurtma`, `Bochka`, `Qattiq yog‘och`, `Populyatsiya`, `Pelikan shaharchasi`, `Zuzu shahri`, `Souslar malikasi`, `Sehrgar`, all four cave-monster names, `Prizmatik shilimshiq`, `Prizmatik parcha`, `Junimo Kart`, `Bosh suyagi g‘ori`, `mahluq`, `Umumgeoda`, and `Iridiy rudasi`
+- Control syntax preserved: all named braces such as `{FishType:Text}` and `{Treasure:LocalizedName}`, plus `$h#$b#` dialogue commands
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

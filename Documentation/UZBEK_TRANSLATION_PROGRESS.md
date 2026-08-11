@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-076: 4,246 / 14,720 records (28.85%)
+- Current coverage after UZ-077: 4,257 / 14,720 records (28.92%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -816,6 +816,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - A redundant duplicate JSON member found in the preceding core file was removed without changing its 43 unique translated records; the package-wide audit also consolidated the superseded 21-entry animation asset so every `(Target, key)` is counted exactly once
 - Overall textual coverage after this batch: 4,246 / 14,720 unique English records (28.85%), an increase of 0.25 percentage points
 
+### UZ-077 — Extra dialogue: Skull Cavern events and construction systems
+
+- Target: `Data/ExtraDialogue`
+- English source: `unpacked-all/Data/ExtraDialogue.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-extra-dialogue-skull-system.json`
+- Entries: 11 English records at source positions 81–91
+- Scope: both floor-100 Skull Cavern event variants, Robin’s normal, festival-delayed, upgrade, new-building, and instant-construction replies, Morris’s Community Development confirmation, Joja movie-theater investment offer and completion, and the no-projects response
+- Event-script contract preserved: all commands, actors, coordinates, animation frames, timings, directions, sprite and quest IDs, sounds, rewards, and command separators outside quoted dialogue are byte-for-byte equal to English
+- Control contract preserved: `{0}` and `{1}`, dialogue and choice commands, internal `Yes`/`No` IDs, emotion markers, asterisk stage directions, and every number including `25`, `500,000g`, `803`, and all event timings
+- Glossary decisions applied: canonical `Bosh suyagi g‘ori`, `Zina`, `iridiy`, `Salomatlik`, `bayram`, `Joja ombori`, and established Joja community-development wording
+- Overall textual coverage after this batch: 4,257 / 14,720 unique English records (28.92%), an increase of 0.07 percentage points
+
 ## Next safe batch
 
-Continue the short English data targets with glossary-backed item names and system notes. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.
+Continue `Data/ExtraDialogue` with the self-contained Zanjabil oroli rescue and Birdie dialogue group, followed by Professor Snail hints and the Summit sequence. Keep scripted event commands outside quoted dialogue byte-for-byte equal to English.

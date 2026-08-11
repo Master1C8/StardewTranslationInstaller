@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-139: 7,055 / 14,720 records (47.93%)
+- Current coverage after UZ-140: 7,179 / 14,720 records (48.77%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1562,6 +1562,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Emily`, `Haley`, `Shane`, `Sandy`, `Clint`, `Linus`, `Gus`, `Yulduz tomchisi saluni`, `Pelikan shaharchasi`, `Kaliko cho‘li`, `to‘tiqush`, `Junimo`, `Kristallariy`, `Bahor/Yoz/Kuz/Qish`, and `Ferma uyi`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Emily, Haley, Shane, Sandy, Saloon, parrot, Junimo, farm, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 7,055 / 14,720 unique English records (47.93%), an increase of 0.72 percentage points
+
+### UZ-140 — Alex character dialogue
+
+- Target: `Characters/Dialogue/Alex`
+- English source: `unpacked-all/Characters/Dialogue/Alex.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-alex.json`
+- Entries: all 124 English records
+- Scope: Alex’s sports ambitions, eggs and training, beach and resort dialogue, Haley, grandparents, relationship branches, sports-choice dialogues, seasonal routines, and family events
+- Control contract preserved exactly: player marker `@`, `%Alex`, `%season`, `%firstnameletter%name`, `$c 0.8#` variant, `$p` conditionals, `$q`/`$r` dialogue choices, dialogue breaks `#$e#`/`#$b#`, gender branches `^`, and emotion markers `$h/$s/$u/$a/$9/$7/$l`
+- Glossary decisions applied: canonical `Alex`, `Haley`, `Sebastian`, `Pelikan shaharchasi`, `Sohil`, `Bahor/Yoz/Kuz/Qish`, `ferma/Ferma`, `fermer`, `tuxum`, `losos`, and `gridbol`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Alex, Haley, Sebastian, farm, farmer, beach, eggs, seasons, and Pelikan shaharchasi were rechecked before translation
+- Overall textual coverage after this batch: 7,179 / 14,720 unique English records (48.77%), an increase of 0.84 percentage points
 
 ## Next safe batch
 

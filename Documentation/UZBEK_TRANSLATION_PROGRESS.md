@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-149: 8,118 / 14,720 records (55.15%)
+- Current coverage after UZ-150: 8,158 / 14,720 records (55.42%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1682,6 +1682,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Quyosh paneli`, `iridiy`, `Stardew Valley`, `Mukammallik`, `Junimo`, `Qattiq yog‘och`, `Shira yig‘gich`, `Dastgoh`, `Chuvalchang qutisi / Hashamatli chuvalchang qutisi`, and `yem`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for solar panel, iridium, perfection, Junimo, hardwood, tapper, workbench, worm bin, bait, and Stardew Valley were rechecked before translation
 - Overall textual coverage after this batch: 8,118 / 14,720 unique English records (55.15%), an increase of 0.63 percentage points
+
+### UZ-150 — Mail and cooking-recipe letters, part 1
+
+- Target: `Data/mail`
+- English source: `unpacked-all/Data/mail.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/mail-1.json`
+- Entries: 40 consecutive English records, from `Robin` through `ClintCooking`
+- Scope: gift letters from townspeople, animal-sale notices, Mermaid’s Pendant and bouquet guidance, and the first cooking-recipe letters
+- Control contract preserved exactly: recipient marker `@`, line-break markers `^`, item and money commands `%item ...`, recipe commands `%item cookingRecipe`, archive separator `%%`, and mail-title marker `[#]` all match the English source
+- Glossary decisions applied: canonical `Pelikan shaharchasi`, `Kaliko cho‘li`, `JojaMart`, `Jamoat markazi`, `Yulduz tomchisi saluni`, `Stardew Valley`, `ferma / Ferma`, `iridiy`, `o‘g‘it`, and `yem`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Pelican Town, Calico Desert, JojaMart, Saloon, farm, fertilizer, bait, Stardew Valley, Mermaid’s Pendant, and bouquet terminology were rechecked before translation
+- Overall textual coverage after this batch: 8,158 / 14,720 unique English records (55.42%), an increase of 0.27 percentage points
 
 ## Next safe batch
 

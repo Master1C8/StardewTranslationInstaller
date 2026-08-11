@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-083: 4,339 / 14,720 records (29.48%)
+- Current coverage after UZ-084: 4,352 / 14,720 records (29.57%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -895,6 +895,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Robin`, `Elliott`, `Gus`, `Stardew Valley`, `Yulduz tomchisi saluni` context, and established Doctor Harvey terminology
 - Overall textual coverage after this batch: 4,339 / 14,720 unique English records (29.48%), an increase of 0.08 percentage points
 
+### UZ-084 — Short schedule dialogue: Leah, Vincent, and Leo
+
+- Targets: `Strings/schedules/Leah`, `Strings/schedules/Vincent`, and `Strings/schedules/Leo`
+- English sources: the three matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-leah.json`, `schedule-vincent.json`, and `schedule-leo.json`
+- Entries: all 13 English records across the three targets; each target remains in its own auditable file
+- Scope: Leah’s clinic, spouse, and Night Market remarks; Vincent’s boat and vaccination remarks; Leo’s Night Market, library, school, dinner, and rain dialogue
+- Control contract preserved exactly: player marker `@`, dialogue breaks, emotion markers, asterisk stage directions, repeated exclamation marks, and source key punctuation
+- Glossary decisions applied: canonical `Leah`, `Vincent`, `Leo`, `Muzey va kutubxona` context, Lupini’s established `asl asar` wording, and Doctor Harvey terminology
+- Overall textual coverage after this batch: 4,352 / 14,720 unique English records (29.57%), an increase of 0.09 percentage points
+
 ## Next safe batch
 
-Continue the remaining short `Strings/schedules` targets in ascending size, next grouping the four-to-six-entry character tables while preserving each target in a separate file.
+Continue the remaining short `Strings/schedules` targets in ascending size, next grouping six-entry character tables while preserving each target in a separate file.

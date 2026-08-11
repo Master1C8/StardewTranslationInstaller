@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-103: 4,760 / 14,720 records (32.34%)
+- Current coverage after UZ-104: 4,805 / 14,720 records (32.64%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1117,6 +1117,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Caroline`, `Abigail`, `Pierre`, `Pelikan shaharchasi`, `Stardew Valley yarmarkasi`, `Sehrgar minorasi`, `Yovvoyi yerqalampir`, `Ko‘k choy`, `Terimchilik`, `Kuz`, and `Qish`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
 - Overall textual coverage after this batch: 4,760 / 14,720 unique English records (32.34%), an increase of 0.35 percentage points
+
+### UZ-104 — Clint character dialogue
+
+- Target: `Characters/Dialogue/Clint`
+- English source: `unpacked-all/Characters/Dialogue/Clint.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-clint.json`
+- Entries: all 45 English records
+- Scope: Clint’s blacksmith introduction, gifts, tool upgrades, mine progress, Green Rain, Emily relationship lines, resort remarks, minecart repair, family history, and daily blacksmith conversations
+- Control contract preserved exactly: player marker `@`, emotion markers `$h`/`$s`/`$u`, dialogue breaks `#$e#`/`#$b#`, response selectors `#$q 9/9 Mon_old#` and `#$r 9 30 Mon_9#`/`#$r 9 50 Mon_clown#`/`#$r 9 -50 Mon_rude#`, `%Clint`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Clint`, `Temirchi`, `Temirchixona`, `Cho‘kich`, `Konlar`, `ruda`, `iridiy`, `Pech`, `Sohil`, `Kaliko cho‘li`, `Asboblarni yaxshilash`, and `Emily`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
+- Overall textual coverage after this batch: 4,805 / 14,720 unique English records (32.64%), an increase of 0.31 percentage points
 
 ## Next safe batch
 

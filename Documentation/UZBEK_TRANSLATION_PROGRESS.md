@@ -376,6 +376,28 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: `Kaliko tuxumi`, `Cho‘l bayrami`, `Sinov yemi`, `mukammal tutish`, `baliq paneli`, `Qora ikra`, `Cho‘g‘ parchasi`, and `urug‘ / nihol`
 - Numeric values preserved exactly, including growth values `3`, `12`, `28`, and `8`
 
+### UZ-038 — Objects, second C batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-c-02.json`
+- Entries: 60 of 1532, source positions 300–359
+- Scope: object names and descriptions from Clay through Cranberry Sauce
+- Glossary decisions applied: `Bochka`, `Birlashgan uzuk`, `Mis rudasi / quyma`, `Po‘kak qalqovich`, `baliq paneli`, `Yem`, and `Qisqichbaqa tuzog‘i`
+- Technical unknowns preserved: both ConcernedApe Mask strings remain exactly `???`
+- Numeric values preserved exactly, including crop growth value `14`
+
+### UZ-039 — Objects, third C/D batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-c-03.json`
+- Entries: 60 of 1532, source positions 360–419
+- Scope: object names and descriptions from Cranberry Seeds through Dried Starfish
+- Glossary decisions applied: `Qiziquvchanlik xo‘ragi`, `Hashamatli yem`, `baliq paneli`, `Hashamatli o‘g‘it`, `Hashamatli nam saqlovchi tuproq`, `Deluxe Speed-Gro`, `Bezatilgan aylangich`, `iridiy`, and `Ilon`
+- Placeholders preserved: `{0}` in both dynamic dried-fruit strings
+- Numeric values preserved exactly, including `7`, `100%`, and `25%`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

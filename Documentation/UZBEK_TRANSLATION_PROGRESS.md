@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-104: 4,805 / 14,720 records (32.64%)
+- Current coverage after UZ-105: 4,838 / 14,720 records (32.87%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1129,6 +1129,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Clint`, `Temirchi`, `Temirchixona`, `Cho‘kich`, `Konlar`, `ruda`, `iridiy`, `Pech`, `Sohil`, `Kaliko cho‘li`, `Asboblarni yaxshilash`, and `Emily`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
 - Overall textual coverage after this batch: 4,805 / 14,720 unique English records (32.64%), an increase of 0.31 percentage points
+
+### UZ-105 — George character dialogue
+
+- Target: `Characters/Dialogue/George`
+- English source: `unpacked-all/Characters/Dialogue/George.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-george.json`
+- Entries: all 33 English records
+- Scope: George’s introduction, gifts, coal-mining memories, Green Rain, Pam’s house upgrade, movie invitation, Alex family lines, Community Center changes, retirement, television, winter, and friendship dialogue
+- Control contract preserved exactly: player marker `@`, gender branches `^`, emotion markers `$h`/`$s`, dialogue breaks `#$e#`/`#$b#`, `%noturn`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `George`, `Alex`, `Jamoat markazi`, `Tirkama uy`, `Pelikan shaharchasi`, `Qish`, `Bobo`, and established family/retirement terminology
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs were confirmed before translation
+- Overall textual coverage after this batch: 4,838 / 14,720 unique English records (32.87%), an increase of 0.22 percentage points
 
 ## Next safe batch
 

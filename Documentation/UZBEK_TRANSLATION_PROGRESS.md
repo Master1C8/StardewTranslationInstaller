@@ -544,6 +544,27 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Placeholders preserved exactly: `{0}` in both Smoked Fish strings and both targeted Bait strings
 - Numeric values preserved exactly: Spangle growth `8` and Speed-Gro bonus `10%`
 
+### UZ-054 — Objects, S batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-s-02.json`
+- Entries: 60 of 1532, source positions 1260–1319
+- Scope: object names and descriptions from Spicy Eel through Strange Doll
+- Glossary decisions applied: canonical `Aylangich`, `Ko‘k piyoz`, `Bahor`, `Sepkich`, `zaiflashtirish`, `Stardew Valley`, `Yulduz tomchisi`, `ko‘mir`, and `to‘siq`
+- Literal `???` preserved exactly for the Strange Doll description
+- Numeric values preserved exactly: sprinkler coverage `4` and Starfruit growth `13`
+
+### UZ-055 — Objects, S–T batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-s-03.json`
+- Entries: 60 of 1532, source positions 1320–1379
+- Scope: object names and descriptions from Strawberry through Tiger Slime Egg
+- Glossary decisions applied: canonical `Yoz`, `Kuz`, `Qish`, `uy hayvoni`, `Uzuk`, `Choy niholi`, `dushman`, and `Shilimshiq inkubatori`
+- Numeric values preserved exactly: strawberry growth `8`, sturgeon lifespan `150`, summer squash growth `6`, sunflower growth `8`, taro growth `10`, and tea maturity `20`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

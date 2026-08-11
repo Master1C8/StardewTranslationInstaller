@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-086: 4,388 / 14,720 records (29.81%)
+- Current coverage after UZ-087: 4,402 / 14,720 records (29.90%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -928,6 +928,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Jas`, `Marnie`, `Sandy`, `Emily`, `Stardew Valley`, `Suvpari tomoshasi`, `JojaMart`, and Doctor Harvey terminology
 - Overall textual coverage after this batch: 4,388 / 14,720 unique English records (29.81%), an increase of 0.12 percentage points
 
+### UZ-087 — Short schedule dialogue: Haley and Harvey
+
+- Targets: `Strings/schedules/Haley` and `Strings/schedules/Harvey`
+- English sources: the two matching `unpacked-all/Strings/schedules/*.json` files, Stardew Valley 1.6.15
+- Files: `assets/translations/uzbek/schedule-haley.json` and `schedule-harvey.json`
+- Entries: all 14 English records across the two targets; each target remains in its own auditable file
+- Scope: Haley’s clinic, weather, spouse, and winter remarks, plus Harvey’s clinic, grocery, spouse, and winter dialogue
+- Control contract preserved exactly: dialogue break `#$e#`, emotion marker `$h`, and source key punctuation
+- Glossary decisions applied: canonical `Haley`, `Harvey`, `Salomatlik` context, `fasl`, and `Klinika` wording
+- Overall textual coverage after this batch: 4,402 / 14,720 unique English records (29.90%), an increase of 0.09 percentage points
+
 ## Next safe batch
 
-Continue the remaining `Strings/schedules` targets in ascending size, next grouping the seven-entry Haley and Harvey tables while preserving each target in a separate file.
+Continue the remaining `Strings/schedules` targets in ascending size, next grouping the eight-entry Jodi and Penny tables while preserving each target in a separate file.

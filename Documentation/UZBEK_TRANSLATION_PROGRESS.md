@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-153: 8,278 / 14,720 records (56.24%)
+- Current coverage after UZ-154: 8,297 / 14,720 records (56.37%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1730,6 +1730,19 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Qish yulduzi ziyofati`, `Pelikan shaharchasi`, `Yulduz tomchisi saluni`, `Stardew Valley`, `Zuzu shahri`, `JojaMart`, `Noyob qo‘rqinchiqush`, `Qattiq yog‘och`, `Mini-jo‘natish qutisi`, `iridiy`, and `ferma / Ferma`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Winter Star, Pelican Town, Saloon, Stardew Valley, Zuzu City, JojaMart, Rarecrow, hardwood, Mini-Shipping Bin, iridium, and farm were rechecked before translation
 - Overall textual coverage after this batch: 8,278 / 14,720 unique English records (56.24%), an increase of 0.27 percentage points
+
+### UZ-154 — Mail and event notices, part 5 (complete)
+
+- Target: `Data/mail`
+- English source: `unpacked-all/Data/mail.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/mail-5.json`
+- Entries: final 19 English records, from `WizardReward` through `MarniePetRejectedAdoption`
+- Scope: wizard and Demetrius reward letters, Willy/Linus/Gus/Pam/Emily/Caroline island notices, Ginger Island and Green Rain notices, Desert Festival reminder, and pet-adoption letters
+- Control contract preserved exactly: line-break markers `^`, recipient marker `@`, item/crafting commands, item IDs, archive separator `%%`, and mail-title marker `[#]` all match the English source
+- Glossary decisions applied: canonical `Zanjabil oroli`, `Kaliko cho‘li`, `Yulduz tomchisi saluni`, `Joja Maxsus xizmatlari`, `Pelikan shaharchasi`, `Quyosh paneli`, `Junimo`, `qattiq yog‘och`, and `uy hayvoni`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Ginger Island, Calico Desert, Saloon, Joja Special Services, Pelican Town, Solar Panel, Junimo, hardwood, and pet terminology were rechecked before translation
+- Overall textual coverage after this batch: 8,297 / 14,720 unique English records (56.37%), an increase of 0.13 percentage points
+- Resource completion: all 179 / 179 English `Data/mail` records are now covered by `mail-1.json` through `mail-5.json`
 
 ## Next safe batch
 

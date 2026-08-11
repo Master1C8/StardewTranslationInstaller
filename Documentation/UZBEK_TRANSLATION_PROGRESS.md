@@ -398,6 +398,26 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Placeholders preserved: `{0}` in both dynamic dried-fruit strings
 - Numeric values preserved exactly, including `7`, `100%`, and `25%`
 
+### UZ-040 — Objects, first D–F batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-d-01.json`
+- Entries: 60 of 1532, source positions 420–479
+- Scope: Dried Starfish description, then object names and descriptions from Driftwood through Fairy Seeds
+- Glossary decisions applied: `Mitti / mittilar tili`, `Mittilar tilini tarjima qilish qo‘llanmasi`, `Sehrgar`, `Sepkich`, `Rogatka`, `Bochka`, and `Pech`
+- Numeric values preserved exactly: crop growth `5` and weapon speed `10%`; Dwarf Scroll Roman numerals `I–IV` are unchanged
+
+### UZ-041 — Objects, second F batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-f-01.json`
+- Entries: 60 of 1532, source positions 480–539
+- Scope: Fairy Seeds description, then object names and descriptions from Fairy Stone through Frozen Geode
+- Glossary decisions applied: canonical `Tola` for `Fiber` and `fermer`; other item names in this range were translated directly from English because the canonical glossary has no exact entries for them
+- Numeric values preserved exactly: crop growth periods `12` and `7`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

@@ -461,6 +461,26 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Numeric values preserved exactly: crop growth periods `7` and `6`, plus the Roman numeral `II`
 - Terminology corrections applied to prior batches: `Golden Bobber` now uses canonical `qalqovich`, and trellis growth uses canonical `panjara`
 
+### UZ-046 — Objects, L–M batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-l-01.json`
+- Entries: 60 of 1532, source positions 780–839
+- Scope: object names and descriptions from Lucky Lunch through Midnight Squid
+- Glossary decisions applied: canonical `Uzuk`, `Sehrli yem`, `Prizmatik parcha`, `Temirchi`, `Geoda`, `Zanjabil oroli`, and `Suvpari kuloni`
+- Numeric values preserved exactly: mango growth period `28` and melon growth period `12`
+
+### UZ-047 — Objects, M–O batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-m-01.json`
+- Entries: 60 of 1532, source positions 840–899
+- Scope: object names and descriptions from Milk through Obsidian
+- Glossary decisions applied: canonical `Aralash urug‘lar`, `mahluq / dushman`, `Mox`, `Kino chiptasi`, `Kinoteatr`, `Holsizlik`, and `Sirli quti`
+- Quoted status name preserved semantically as `«Holsizlik»`; no control tokens or numeric literals occur in this batch
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

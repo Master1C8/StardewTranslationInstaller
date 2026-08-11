@@ -280,6 +280,34 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: `chaqaloq`, `asrab olish`, and `Tungi bozor`
 - Placeholders preserved: `{0}` and `{1}` in all eleven parameterized entries
 
+### UZ-028 — lost-item quest templates
+
+- Target: `Strings/Quests`
+- English source: `unpacked-all/Strings/Quests.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/quests.json`
+- Entries: 2 of 2
+- Scope: the lost-item discovery message and return-to-NPC objective
+- Placeholders preserved: `{0}` and `{1}`
+
+### UZ-029 — movie-theater concessions
+
+- Target: `Strings/MovieConcessions`
+- English source: `unpacked-all/Strings/MovieConcessions.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/movie-concessions.json`
+- Entries: 48 of 48
+- Scope: every cinema snack name and description
+- Glossary decisions applied: `Joja Cola`, `shilimshiq`, and `Yulduz tomchisi`; branded `JojaCorn` is preserved while ordinary food names are localized
+
+### UZ-030 — movie titles, descriptions, and scenes
+
+- Target: `Strings/Movies`
+- English source: `unpacked-all/Strings/Movies.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/movies.json`
+- Entries: 87 of 87
+- Scope: all titles, descriptions, and displayed scenes for the eight cinema films
+- Glossary decisions applied: `Stardew Valley`, `Ferngill Respublikasi`, `Gavhar dengizi`, `Fern orollari`, `Zuzu shahri`, `Dasht qirolining sarguzashti`, `Dasht qiroli`, `Wumbus`, `Yulduz tomchisi`, and `Grampleton`
+- Control syntax preserved: paired `*...*` action markers in the horror-film scene
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

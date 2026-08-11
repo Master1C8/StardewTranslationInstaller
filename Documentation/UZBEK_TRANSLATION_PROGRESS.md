@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-122: 5,784 / 14,720 records (39.29%)
+- Current coverage after UZ-123: 5,851 / 14,720 records (39.75%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1345,6 +1345,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical \`Sam\`, \`Sebastian\`, \`Abigail\`, \`Vincent\`, \`JojaMart\`, \`Gullar raqsi\`, \`Luau\`, \`Oy shu’lali meduzalar raqsi\`, \`Muz bayrami\`, \`Gubernator\`, \`ferma\`, \`Bahor\`, \`Yoz\`, \`Kuz\`, and \`Qish\`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing festival/item names were confirmed before translation
 - Overall textual coverage after this batch: 5,784 / 14,720 unique English records (39.29%), an increase of 0.36 percentage points
+
+### UZ-123 — Sebastian marriage dialogue
+
+- Target: \`Characters/Dialogue/MarriageDialogueSebastian\`
+- English source: \`unpacked-all/Characters/Dialogue/MarriageDialogueSebastian.json\`, Stardew Valley 1.6.15
+- File: \`assets/translations/uzbek/marriage-dialogue-sebastian.json\`
+- Entries: all 67 English records
+- Scope: Sebastian’s rain, smoking and motorcycle lines, gaming and laptop work, farm and household routines, Maru and family, children, relationship dialogue, Slime care, festivals, and seasonal dialogue
+- Control contract preserved exactly: player marker \`@\`, child placeholders \`%kid1\`/\`%kid2\`, emotion markers \`$h\`/\`$l\`/\`$s\`/\`$7\`/\`$a\`, dialogue breaks \`#$e#\`/\`#$b#\`, stage directions, and item-code groups \`[575 769 767 84 66 78]\`, \`[395]\`, and \`[346]\`
+- Glossary decisions applied: canonical \`Sebastian\`, \`Maru\`, \`Sam\`, \`Pelikan shaharchasi\`, \`ferma\`, \`Shilimshiq\`, \`Shilimshiqxona\`, \`Hayot eliksiri\`, \`Gullar raqsi\`, \`Luau\`, \`Stardew Valley yarmarkasi\`, \`Ruhlar arafasi\`, \`Muz bayrami\`, and \`Bahor/Yoz/Kuz/Qish\`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing monster/festival/item names were confirmed before translation
+- Overall textual coverage after this batch: 5,851 / 14,720 unique English records (39.75%), an increase of 0.46 percentage points
 
 ## Next safe batch
 

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-111: 5,130 / 14,720 records (34.85%)
+- Current coverage after UZ-112: 5,202 / 14,720 records (35.34%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1213,6 +1213,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Linus`, `Chodir`, `Mox`, `Konlar`, `Kamalak foreli`, `Yovvoyi yem`, `Taxta`, `Terimchilik`, `Baliqchilik`, `Tog‘`, and `Tosh koni`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
 - Overall textual coverage after this batch: 5,130 / 14,720 unique English records (34.85%), an increase of 0.36 percentage points
+
+### UZ-112 — Abigail marriage dialogue
+
+- Target: `Characters/Dialogue/MarriageDialogueAbigail`
+- English source: `unpacked-all/Characters/Dialogue/MarriageDialogueAbigail.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/marriage-dialogue-abigail.json`
+- Entries: all 72 English records
+- Scope: Abigail’s married-life weather lines, farm routines, indoor and outdoor remarks, children, affection and relationship states, seasonal dialogue, Tuxum bayrami, Dasht qirolining sarguzashti, Suvpari kuloni, and spouse-room dialogue
+- Control contract preserved exactly: player marker `@`, child placeholders `%kid1`/`%kid2` (with Uzbek suffixes where grammatical), gender branch `^`, emotion markers `$h`/`$l`/`$u`/`$s`/`$6`/`$8`, dialogue breaks `#$e#`, conditional timing token `#$c .5#`, item-code groups `[768 767 769 66 82]`, `[199 218 219 727 730]`, `[286 287 205 732]`, stage directions, and source key punctuation
+- Glossary decisions applied: canonical `Abigail`, `ferma`, `Konlar`, `Shilimshiqxona`/`Shilimshiq`, `Bobo`, `Tuxum bayrami`, `Suvpari kuloni`, `Kvarts`, `Ametist`, `Hayot eliksiri`, `Welwick`, and `Dasht qirolining sarguzashti`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and item names were confirmed before translation
+- Overall textual coverage after this batch: 5,202 / 14,720 unique English records (35.34%), an increase of 0.49 percentage points
 
 ## Next safe batch
 

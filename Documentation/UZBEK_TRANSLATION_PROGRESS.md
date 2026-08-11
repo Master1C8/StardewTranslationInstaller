@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-094: 4,518 / 14,720 records (30.69%)
+- Current coverage after UZ-095: 4,533 / 14,720 records (30.79%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1016,6 +1016,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Leo`, `Zanjabil oroli`, `Vulqon zindoni` context, `ruhlar`, `to‘tiqush`, and established `Suvpari`/golden walnut terminology
 - Overall textual coverage after this batch: 4,518 / 14,720 unique English records (30.69%), an increase of 0.08 percentage points
 
+### UZ-095 — Mister Qi character dialogue
+
+- Target: `Characters/Dialogue/Mister Qi`
+- English source: `unpacked-all/Characters/Dialogue/Mister Qi.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-mister-qi.json`
+- Entries: all 15 English records
+- Scope: Mister Qi’s daily, married, Qi’s Nut Room, perfection, challenge, walnut, and mystery remarks
+- Control contract preserved exactly: player marker `@`, dialogue breaks `#$e#`/`#$b#`, and source key punctuation
+- Glossary decisions applied: canonical `Janob Qi`, `Qi’ning Yong‘oq xonasi`, `Mukammallik`, `Oltin yong‘oq`, and `Qi’ning Maxsus buyurtmalari` terminology
+- Overall textual coverage after this batch: 4,533 / 14,720 unique English records (30.79%), an increase of 0.10 percentage points
+
 ## Next safe batch
 
-Continue with the next smallest safe character-dialogue target outside schedules, `Characters/Dialogue/Mister Qi`, keeping each source target in its own auditable file.
+Continue with the next small character-dialogue target outside schedules, `Characters/Dialogue/Dwarf`, keeping each source target in its own auditable file.

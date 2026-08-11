@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-135: 6,807 / 14,720 records (46.24%)
+- Current coverage after UZ-137: 6,878 / 14,720 records (46.73%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1526,6 +1526,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Online glossary check: canonical project terminology was previously opened in the in-app browser; local Uzbek entries for Sandy, Emily, Kaliko cho‘li, Voha, farm, Green Rain, and seasons were rechecked before translation
 - This source was already included in the package baseline; this block refines all 21 Uzbek records without changing the unique-record denominator
 - Overall textual coverage after this batch: 6,807 / 14,720 unique English records (46.24%), no change in record coverage
+
+### UZ-137 — Shane character dialogue
+
+- Target: `Characters/Dialogue/Shane`
+- English source: `unpacked-all/Characters/Dialogue/Shane.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-shane.json`
+- Entries: all 71 English records
+- Scope: Shane’s JojaMart work, Saloon, Joja Cola, Tunnelers, Marnie and Jas, chickens, drinking recovery, resort dialogue, relationship branches, and event responses
+- Control contract preserved exactly: player marker `@`, `%Shane` speech bubble marker, `%time` placeholder, `$d Joja#...|...` conditionals, `#$1 ShaneJOSH#` timed token, `#$e#`/`#$b#` dialogue breaks, `||` branches, gender branch `^`, and emotion markers `$h/$s/$a/$u/$6/$l`
+- Glossary decisions applied: canonical `Shane`, `Joja`, `JojaMart`, `Marnie`, `Jas`, `Pelikan shaharchasi`, `Stardew Valley`, `ferma/Ferma`, `tovuq`, `pivo`, `Yulduz tomchisi saluni`, and `Bahor/Yoz/Kuz/Qish`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Shane, Joja, JojaMart, Marnie, Jas, farm, chicken, Saloon, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 6,878 / 14,720 unique English records (46.73%), an increase of 0.48 percentage points
 
 ## Next safe batch
 

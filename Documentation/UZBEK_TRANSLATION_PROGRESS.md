@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-123: 5,851 / 14,720 records (39.75%)
+- Current coverage after UZ-124: 5,917 / 14,720 records (40.20%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1357,6 +1357,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical \`Sebastian\`, \`Maru\`, \`Sam\`, \`Pelikan shaharchasi\`, \`ferma\`, \`Shilimshiq\`, \`Shilimshiqxona\`, \`Hayot eliksiri\`, \`Gullar raqsi\`, \`Luau\`, \`Stardew Valley yarmarkasi\`, \`Ruhlar arafasi\`, \`Muz bayrami\`, and \`Bahor/Yoz/Kuz/Qish\`
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing monster/festival/item names were confirmed before translation
 - Overall textual coverage after this batch: 5,851 / 14,720 unique English records (39.75%), an increase of 0.46 percentage points
+
+### UZ-124 — Shane marriage dialogue
+
+- Target: \`Characters/Dialogue/MarriageDialogueShane\`
+- English source: \`unpacked-all/Characters/Dialogue/MarriageDialogueShane.json\`, Stardew Valley 1.6.15
+- File: \`assets/translations/uzbek/marriage-dialogue-shane.json\`
+- Entries: all 66 English records
+- Scope: Shane’s animals and rain, Joja memories, pizza and cooking, gridbol, Tunnelchilar, children, Yoba, farm life, Tuxum bayrami, Gullar raqsi, Luau, seasonal routines, and personal recovery
+- Control contract preserved exactly: player marker \`@\`, child placeholder \`%kid1\`/\`%kid2\`, emotion markers \`$h\`/\`$s\`/\`$6\`/\`$8\`/\`$a\`, dialogue breaks \`#$e#\`/\`#$b#\`, stage directions, and item-code groups \`[346 174 303 305 215]\` and \`[195 215 206]\`
+- Glossary decisions applied: canonical \`Shane\`, \`Marnie\`, \`Jas\`, \`Yoba\`, \`JojaMart\`, \`gridbol\`, \`Tuxum bayrami\`, \`Gullar raqsi\`, \`Luau\`, \`Sharob\`, \`Pivo\`, \`Pishloqli qalampir gazagi\`, and \`Bahor/Yoz/Kuz/Qish\`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing food/festival/item names were confirmed before translation
+- Overall textual coverage after this batch: 5,917 / 14,720 unique English records (40.20%), an increase of 0.45 percentage points
 
 ## Next safe batch
 

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-138: 6,949 / 14,720 records (47.21%)
+- Current coverage after UZ-139: 7,055 / 14,720 records (47.93%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1550,6 +1550,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Pam`, `Penny`, `Alex`, `Marnie`, `Gus`, `Willy`, `Yoba`, `Pelikan shaharchasi`, `Kaliko cho‘li`, `Yulduz tomchisi saluni`, `ferma/Ferma`, and `Bahor/Yoz/Kuz/Qish`
 - Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Pam, Penny, Marnie, Joja, farm, Saloon, Calico Desert, and seasons were rechecked before translation
 - Overall textual coverage after this batch: 6,949 / 14,720 unique English records (47.21%), an increase of 0.48 percentage points
+
+### UZ-139 — Emily character dialogue
+
+- Target: `Characters/Dialogue/Emily`
+- English source: `unpacked-all/Characters/Dialogue/Emily.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/dialogue-emily.json`
+- Entries: all 106 English records
+- Scope: Emily’s Saloon work, tailoring, crystals and spiritual energy, Haley and Shane family dialogue, parrots, resort, festivals, relationship branches, seasonal routines, Sandy, Clint, Linus, Junimos, and cooking
+- Control contract preserved exactly: player marker `@`, `%Emily`, `%farm`, `%revealtaste:Emily:207`, `$c 0.5#` timed variants, `$query PLAYER_NPC_RELATIONSHIP current any married roommate#...|...`, `$d bus#...|...` conditional, dialogue breaks `#$e#`/`#$b#`, gender branches `^`, and emotion markers `$h/$s/$u/$3/$6/$l`
+- Glossary decisions applied: canonical `Emily`, `Haley`, `Shane`, `Sandy`, `Clint`, `Linus`, `Gus`, `Yulduz tomchisi saluni`, `Pelikan shaharchasi`, `Kaliko cho‘li`, `to‘tiqush`, `Junimo`, `Kristallariy`, `Bahor/Yoz/Kuz/Qish`, and `Ferma uyi`
+- Online glossary check: the canonical project page was opened in the in-app browser; local Uzbek entries for Emily, Haley, Shane, Sandy, Saloon, parrot, Junimo, farm, and seasons were rechecked before translation
+- Overall textual coverage after this batch: 7,055 / 14,720 unique English records (47.93%), an increase of 0.72 percentage points
 
 ## Next safe batch
 

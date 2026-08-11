@@ -112,6 +112,46 @@ Current translated total: 459 `Strings/UI` entries.
 
 Current translated total: 558 `Strings/UI` entries.
 
+### UZ-010 — Fish Pond status and requests
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-fish-pond.json`
+- Entries: 57
+- Scope: pond naming and population, empty-pond confirmation, healthy status variants, every polite/rude/demanding/formal/carnivorous item request, and every request-completion response
+- Glossary decisions applied: `Baliq hovuzi`, `Populyatsiya`, `Ko‘rinishni o‘zgartirish`, and `Baliq hovuzi topshirig‘i / buyum so‘rovi`
+
+### UZ-011 — advanced options and local co-op
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-advanced-options.json`
+- Entries: 64
+- Scope: Mini-Fridge and kitchen messages, advanced game options, mine and monster settings, randomization, slingshot mode, beds, lobby state, forge status, local co-op, building paint/move permissions, and the Beach Farm description
+- Glossary decisions applied: `Mini-sovutgich`, `Mavjud taxlamlarga qo‘shish`, `Geympad rejimi`, `Ilg‘or o‘yin sozlamalari`, `Oddiy / Qayta tuzilgan`, `Kon mukofotlari`, `Fermada mahluqlar paydo bo‘lsin`, `Tasodifiylik kaliti`, `Eski tasodifiylashtirishdan foydalanish`, `Rogatka otish rejimi`, `Toblashni bekor qilish`, `Mahalliy hamkorlik`, `Binolarni bo‘yash`, `Sohil fermasi`, and `Sepkich`
+
+Current translated total: 679 `Strings/UI` entries.
+
+### UZ-012 — Forge, Ginger Island, and Perfection Tracker
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-island-forge-perfection.json`
+- Entries: 107
+- Scope: Forge instructions and errors, construction and special-order notices, darts, Willy's boat repairs, every Ginger Island parrot upgrade, island travel labels, hard-mode mine notices, name-change responses, the Perfection Tracker, and end-credit group labels
+- Glossary decisions applied: `Temirxona`, `toblash / toblash jarayoni`, `Toblashni bekor qilish`, `Cho‘g‘ parchasi`, `Maxsus buyurtma`, `Willy qayig‘i`, `Orol dala idorasi`, `Orol fermasi uyi`, `Oltin yong‘oq`, `To‘tiqush ekspressi`, `Orol dam olish maskani`, `Vulqon`, `Qazish maydoni`, `Changalzor`, `Bandargoh`, `Mukammallik`, `Yulduz tomchisi`, `Soya xalqi`, `Shilimshiqlar`, and `Ko‘rshapalaklar`
+
+### UZ-013 — race chat, mobile controls, and tutorials
+
+- Target: `Strings/UI`
+- English source: `unpacked-all/Strings/UI.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/ui-mobile-tutorials.json`
+- Entries: 101
+- Scope: Parrot Express confirmation, page navigation, race guesses and results, hard-mode Skull Cavern notices, mobile character labels, display and toolbar settings, all 26 tutorial messages, save recovery, every mobile control scheme, Android storage migration, and cloud-save status
+- Glossary decisions applied: `To‘tiqush ekspressi`, `Bosh suyagi g‘ori`, `mahluq`, `Ekran o‘lchamini sozlash`, `Bo‘lingan ekran`, `Tik asboblar paneli`, `Asboblar paneli atrofidagi bo‘shliq`, `Jurnal`, `Pelikan shaharchasi`, `Sug‘orgich`, `Anjomlar`, `To‘plamlar`, `Avtomatik saqlash`, and `Bekor qilish`
+
+Current translated total: 887 `Strings/UI` entries. The English source contains 887 entries, so `Strings/UI` is complete for this source snapshot.
+
 ## Next safe batch
 
-Continue `Strings/UI` with Fish Pond requests, advanced game options, shop, shipping, confirmation, mine, fishing, and remaining options labels. Check every term against the `uz` glossary layer before adding it. Keep context-sensitive event commands out of the UI batches.
+Start the first non-UI data batches from the English source: short NPC names, location names, item names, tool names, and other glossary-backed mechanics. Keep each target in a separate auditable file and validate every key and token before moving to dialogue.

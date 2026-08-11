@@ -438,6 +438,29 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical `Oltin sirli quti`, `Oltin yong‘oq`, `Zanjabil oroli`, `O‘t ekish to‘plami`, `Yashil yomg‘ir`, `Tola`, `Aralash urug‘lar`, `Qattiq yog‘och`, and `Pichan`
 - Numeric value preserved exactly: grape growth period `10`
 
+### UZ-044 — Objects, H–J batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-h-01.json`
+- Entries: 60 of 1532, source positions 660–719
+- Scope: object names and descriptions from Holly through Jasper
+- Glossary decisions applied: canonical `Ot`, `mahluq`, `Hyper Speed-Gro`, `iridiy`, `Sepkich`, and `kritik zarba / Kritik kuch`
+- Placeholder preserved exactly: `{0}` in the flavored Honey name
+- Numeric values preserved exactly: crop growth `11`, fertilizer bonus `33%`, ring bonuses `10%`, and sprinkler coverage `24`
+
+### UZ-045 — Objects, J–L batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-j-01.json`
+- Entries: 60 of 1532, source positions 720–779
+- Scope: object names and descriptions from Jazz Seeds through Lost Book
+- Glossary decisions applied: canonical `Joja korporatsiyasi`, `Jurnal parchasi`, `O‘roq`, `baliq paneli`, `Qo‘rg‘oshin qalqovich`, `afsonaviy baliq`, `Echki`, `Willy`, `Robin`, and `Yo‘qolgan kitob`
+- Placeholders preserved exactly: `{0}` in flavored Jelly and Juice names
+- Numeric values preserved exactly: crop growth periods `7` and `6`, plus the Roman numeral `II`
+- Terminology corrections applied to prior batches: `Golden Bobber` now uses canonical `qalqovich`, and trellis growth uses canonical `panjara`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

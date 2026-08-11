@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-071: 3,973 / 14,720 records (26.99%)
+- Current coverage after UZ-072: 3,994 / 14,720 records (27.13%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -754,6 +754,17 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Puzzle contract preserved: the malformed Secret Woods clue remains intentionally broken into awkward Uzbek syllables; the Skull Cavern clue, Mermaid Show sequence, stone-size poem, and all image-only puzzle notes retain their functional structure
 - Glossary decisions applied: canonical `Jamoat markazi`, `Bosh suyagi g‘ori`, `Suvpari tomoshasi`, `Junimo`, `Mayiz`, `Hammom`, `Vulqon`, `Temirxona`, `toblash`, `Sehrlash`, all weapon and tool enchantment names, `Prizmatik parcha`, `Ajdar tishi`, `Oltin yong‘oq`, and established item, meal, fish, crop, and gemstone terminology
 - Overall textual coverage after this batch: 3,973 / 14,720 unique English records (26.99%), an increase of 0.26 percentage points
+
+### UZ-072 — NPC animation remarks
+
+- Target: `Strings/animationDescriptions`
+- English source: `unpacked-all/Strings/animationDescriptions.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/strings-animation-descriptions.json`
+- Entries: all 21 English animation-description records
+- Scope: every spoken remark and narrator caption displayed while NPCs play, work, exercise, read, dance, take photos, or perform other scheduled animations
+- Control syntax preserved exactly and in source order: narrator prefix `%`, emotion markers `$4`, `$6`, `$7`, `$s`, and `$u`, conditional branch `$c .5#`, dialogue break `#$e#`, and paired stage-direction asterisks
+- Proper names and canonical `Stardew Valley` remain unchanged; billiards, exercise, work, and animation-specific wording is rendered as concise natural Uzbek suitable for short interaction bubbles
+- Overall textual coverage after this batch: 3,994 / 14,720 unique English records (27.13%), an increase of 0.14 percentage points
 
 ## Next safe batch
 

@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-125A: 6,017 / 14,720 records (40.88%)
+- Current coverage after UZ-125B: 6,128 / 14,720 records (41.63%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -1381,6 +1381,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Glossary decisions applied: canonical spouse names, \`ferma\`, \`Pelikan shaharchasi\`, \`Qahva\`, \`Muz bayrami\`-compatible item terms, and existing local food/festival terminology
 - Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing item names were confirmed before translation
 - Overall textual coverage after this batch: 6,017 / 14,720 unique English records (40.88%), an increase of 0.68 percentage points
+
+### UZ-125B — generic marriage dialogue, relationships/seasons/rooms block
+
+- Target: \`Characters/Dialogue/MarriageDialogue\`
+- English source: \`unpacked-all/Characters/Dialogue/MarriageDialogue.json\`, Stardew Valley 1.6.15
+- File: \`assets/translations/uzbek/marriage-dialogue-generic-02.json\`
+- Entries: remaining 111 of 211 English records
+- Scope: shared relationship states, seasonal spouse lines, partner-specific seasons, spouse rooms, Krobus household lines, and no-bed fallback dialogue
+- Control contract preserved exactly: player marker \`@\`, farm and child placeholders \`%farm\`/\`%kid1\`/\`%kid2\`, emotion markers \`$h\`/\`$l\`/\`$s\`/\`$u\`/\`$7\`, gender branches \`^\`, timing token \`#$c .5#\`, dialogue breaks \`#$e#\`/\`#$b#\`, and all stage-direction markers
+- Glossary decisions applied: canonical spouse names, \`ferma\`, \`Bobo\`, \`Suvpari kuloni\`, \`Tog‘\`, \`Qo‘ziqorin xodasi\`, \`Kanalizatsiya\`, \`Ruhlar arafasi\`, \`Gullar raqsi\`, \`Ravochli pirog\`, \`Sharob\`, \`Pivo\`, and seasonal \`Bahor/Yoz/Kuz/Qish\`
+- Online glossary check: canonical project page returned HTTP 200; relevant local Uzbek glossary IDs and existing item/festival names were confirmed before translation
+- Overall textual coverage after this batch: 6,128 / 14,720 unique English records (41.63%), an increase of 0.75 percentage points
 
 ## Next safe batch
 

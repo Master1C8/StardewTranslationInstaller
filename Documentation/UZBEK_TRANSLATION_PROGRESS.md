@@ -19,7 +19,7 @@ Live project glossary: <https://vnrevival.fun/en/games/stardew-valley/projects/u
 ## Overall textual coverage
 
 - Stable denominator: 14,720 unique English `(Target, key)` text/data records enumerated by the complete technical reference manifest
-- Current coverage after UZ-073: 4,016 / 14,720 records (27.28%)
+- Current coverage after UZ-074: 4,187 / 14,720 records (28.44%)
 - The Russian reference is used only to enumerate the technical target/key universe; every translated value still comes exclusively from the English base
 - This percentage measures text/data records. Locale-specific image work is tracked separately and is not mixed into the textual denominator
 
@@ -777,6 +777,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Numeric research values remain exact, including mine floors `50`, odds `1` in `500`, rate `.000016`, and Yoba’s `11` days; the untranslated artificial Dwarvish passage remains byte-for-byte equal to English because it is an in-world cipher rather than English prose
 - Glossary decisions applied: canonical `Dehqonchilik`, `O‘g‘it`, `O‘roq`, `Qarg‘a qo‘riqchisi`, `Yulduz tomchisi`, `Dasht qirolining sarguzashti`, `Gavhar dengizi`, `Bochka`, `Sharbat`, `Pivo`, `Och el`, `Sharob`, `Mittilar`, `Guldasta`, `Suvpari kuloni`, `Keksa dengizchi`, `Kristallariy`, `Prizmatik parcha`, all five Afsonaviy baliq names, and `Bo‘shliq mayonezi`
 - Overall textual coverage after this batch: 4,016 / 14,720 unique English records (27.28%), an increase of 0.15 percentage points
+
+### UZ-074 — Character systems, movie theater, and phones
+
+- Target: `Strings/Characters`
+- English source: `unpacked-all/Strings/Characters.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/strings-characters.json`
+- Entries: all 171 English records
+- Scope: relationship labels, horse naming, Junimo reactions, Abigail’s mine dialogue, the Goblin henchman, Krobus and the Dark Talisman, divorce and pet messages, saloon sports reactions, all movie invitations and theater prompts, spouse movie replies, every business and incoming phone call, Leo memories, Pierre’s stock list, and Marlon’s item-recovery calls
+- Control contract preserved exactly and in source order: numbered placeholders `{0}` and `{1}`, player marker `@`, dialogue breaks, emotion markers, narrator marker `%`, farm-name token `%farm`, Lewis’s complete `$y` choice expression, caret variant separator, standalone phone-script hashes, underscores, trailing heart marker `<`, and every stage/sound direction enclosed in `*...*`
+- Numeric values remain unchanged, including every business hour, Marnie’s `4:00 PM`, the Joja `10,000g` rebate and address number, and Leo’s internal memory IDs remain in the unchanged record keys
+- Glossary decisions applied: canonical `Ferma`, `Junimo`, `Konlar`, `Qora tumor`, `Kanalizatsiya`, `Kinoteatr`, `Yulduz tomchisi saluni`, `Pierre universal do‘koni`, `Marnie ranchosi`, and established relationship, tool, festival, animal, and location terminology
+- Overall textual coverage after this batch: 4,187 / 14,720 unique English records (28.44%), an increase of 1.16 percentage points
 
 ## Next safe batch
 

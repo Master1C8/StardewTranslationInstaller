@@ -502,6 +502,27 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Placeholder preserved exactly: `{0}` in the dynamic Pickles name
 - Numeric values preserved exactly: fossil age `100,000`, pineapple growth `14`, fruit-tree growth `28`, empty surrounding tiles `8`, poppy growth `7`, potato growth `6`, and powdermelon growth `7`
 
+### UZ-050 — Objects, P–R batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-p-02.json`
+- Entries: 60 of 1532, source positions 1020–1079
+- Scope: Prehistoric Tool description, then object names and descriptions through Radish name
+- Glossary decisions applied: canonical `Sepkich`, `Prizmatik parcha`, `Shilimshiq`, `Sovrin chiptasi`, `Sovrin mashinasi`, `Qi gavhari`, `Sifatli qalqovich`, `Sifatli o‘g‘it`, `Sifatli nam saqlovchi tuproq`, `yumshatilgan tuproq`, and `Zuzu shahri`
+- Numeric values preserved exactly: pumpkin growth `13`, Qi Bean growth `4`, Qi Fruit shipment `500`, and sprinkler coverage `8`
+
+### UZ-051 — Objects, R batch
+
+- Target: `Strings/Objects`
+- English source: `unpacked-all/Strings/Objects.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/objects-r-01.json`
+- Entries: 60 of 1532, source positions 1080–1139
+- Scope: Radish description, then object names and descriptions through Ruby
+- Glossary decisions applied: canonical `yomg‘ir`, `Junimolar`, `uy hayvoni`, `Shilimshiq`, `O‘roq`, `Yoba`, `Ikra`, and `Konserva idishi`
+- Placeholder preserved exactly: `{0}` in the dynamic Roe name
+- Numeric values preserved exactly: radish growth `6`, red cabbage growth `9`, rhubarb growth `13`, and rice growth `8`
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

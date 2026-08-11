@@ -632,6 +632,18 @@ Current translated total: 887 `Strings/UI` entries. The English source contains 
 - Delimiter contract preserved: exactly 7 slash-separated fields per entry; fields 2–6 remain byte-for-byte equal to English and the repeated final label matches the translated first field
 - Every reward code, item ID, item count, quality value, color/index field, required-slot count, and Vault amount remains unchanged
 
+### UZ-062 — Monsters
+
+- Target: `Data/Monsters`
+- English source: `unpacked-all/Data/Monsters.json`, Stardew Valley 1.6.15
+- File: `assets/translations/uzbek/data-monsters.json`
+- Entries: all 51 English monster records
+- Scope: every monster display name stored by the base `Data/Monsters` table
+- Glossary decisions applied: canonical `Shilimshiq`, `Ko‘rshapalak`, `Chang ruhi`, `Duggy`, `Tosh qisqichbaqasi`, `Skelet afsungari`, `Mumiya`, `Ilon`, `Qalampir reks`, `Yo‘lbars shilimshig‘i`, `Magma ruhi`, `Magma uchquni`, `Arvoh`, `Karbon arvohi`, `Badbo‘y arvoh`, `Yovvoyi golem`, `Iridiy golem`, and `Qirollik iloni`
+- Delimiter contract preserved: exactly 15 slash-separated fields per entry; fields 1–14 remain byte-for-byte equal to English and only the final display-name field is localized
+- The English record keys remain unchanged; together with the English display slot they disambiguate the three base rows whose two English labels differ: `Dust Spirit / Dust Sprite`, `Iridium Golem / Wilderness Golem`, and `Truffle Crab / Rock Crab`
+- Every health, damage, defense, movement, drop table, probability, sprite/index, spawn, and behavior value remains unchanged
+
 ## Next safe batch
 
 Continue the short English data targets with glossary-backed item names, system notes, and the first basic location batch. Keep each target in a separate auditable file and validate every key and token before moving to long-form villager dialogue.

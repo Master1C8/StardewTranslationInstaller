@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"እ... ሰላም። እንደምን ${አደርክ^አደርሽ}$።#$b#ድንጋዮችን ${እየሰበርክ^እየሰበርሽ}$ ጥሬ ማዕድን ${እያገኘህ^እያገኘሽ}$ እንደሆነ አስተውያለሁ። ያ ጥሩ ነው!\"/pause 500/speak Clint \"ከምታገኛቸው ጥሬ ማዕድኖች ከፍተኛውን ጥቅም ማግኘት ${ከፈለግክ^ከፈለግሽ}$፣ እቶን ${ያስፈልግሃል^ያስፈልግሻል}$።\"/pause 500/speak Clint \"በአጋጣሚ ተጨማሪ የንድፍ ስብስብ ተቀምጦ ነበር። እነሆ፣ እንድትወስደው እፈልጋለሁ።\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"'እቶን' መሥራት ${ተማርክ^ተማርሽ}$\"/pause 800/speak Clint \"እቶኑ የብረት ጡቦችን እንድታቀልጥ ${ያስችልሃል^ያስችልሻል}$። ጡቦቹ ለዕቃ ሥራ፣ ለግንባታና ለመሣሪያ ማሻሻያ ሊውሉ ይችላሉ።\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \" ጥቂት የመዳብ ጡቦችን ${ካቀለጥክ^ካቀለጥሽ}$ በኋላ፣ ${ከመሣሪያዎችህ^ከመሣሪያዎችሽ}$ አንዱን ${እንዳሻሽልልህ^እንዳሻሽልልሽ}$ አስብ። ${ሥራህን^ሥራሽን}$ በጣም ${ሊያቀልልልህ^ሊያቀልልልሽ}$ ይችላል።#$b#ደህና፣ እሺ። ወደ ቤት እየሄድኩ ነው። ዘና በል።\"/pause 200/addQuest 11/end",
+        "900553/t 600 1130/Hn ccPantry/A cc_Greenhouse/w sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"እንደምን ${አደርክ^አደርሽ}$፣ ውዴ።\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"እዚህ ድረስ ያደረግሁት የእግር ጉዞ ውብ ነበር... ይህን አሮጌ እርሻ ለረጅም ጊዜ አላየሁትም።$s#$b#ከማስታውሰው የበለጠ ውብ ይመስላል!$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"እነሆ፣ ትንሽ ነገር ${አምጥቼልሃለሁ^አምጥቼልሻለሁ}$።#$b#ከአንድ አትክልተኛ ለሌላው... ስጦታ ነው።$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"'የአትክልት ድስት' ተቀበልክ\"/pause 800/speak Evelyn \"እነዚህ ድስቶች በእውነት ጠቃሚ ናቸው። የማንኛውንም ወቅት ሰብል ቤት ውስጥ ለማብቀል ልትጠቀምባቸው ${ትችላለህ^ትችያለሽ}$!#$b#ውጭም ጥሩ ይመስላሉ... ግን እዚህ ውጭ የወቅቱን ሰብሎች ብቻ ሊይዙ ይችላሉ።\"/pause 500/speak Evelyn \"ተጨማሪ ${ካስፈለገህ^ካስፈለገሽ}$፣ ለመሥራትም በእውነት ቀላል ናቸው... እነሆ፣ መመሪያ ያለበት የቆየ የመጽሔት ቅንጭብ አለኝ።\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"'የአትክልት ድስት' መሥራት ${ተማርክ^ተማርሽ}$\"/pause 800/speak Evelyn \"ደህና፣ ብሄድ ይሻለኛል። ጆርጅ ኦትሚሉን በሰዓቱ ካላገኘ ይናደዳል...#$b#ውዴ፣ መልካም ቀን ${ይሁንልህ^ይሁንልሽ}$!$h\"/pause 500/end"
+      }
+    }
+  ]
+}

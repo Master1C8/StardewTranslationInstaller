@@ -12,6 +12,7 @@ let package = Package(
             name: "StardewTranslationInstaller",
             resources: [
                 .copy("Resources/ModPayload"),
+                .copy("Resources/LanguageSwitcherPayload"),
                 .copy("Resources/PackageConfig.json"),
             ]
         ),

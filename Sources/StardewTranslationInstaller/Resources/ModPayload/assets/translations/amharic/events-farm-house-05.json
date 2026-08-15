@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "9333220/e 9333219/O Sebastian/A sebastianFrog/t 620 1900": "distantBanjo/-1000 -1000/farmer 51 25 2 Sebastian 52 25 2/addWorldState sebastianFrog/addConversationTopic sebastianFrog2 6/specificTemporarySprite sebastianFrogHouse/skippable/makeInvisible 44 16 4 4/makeInvisible 50 25 4 4/viewport -100 -100 true unfreeze/pause 3000/faceDirection farmer 1/emote farmer 8/speak Sebastian \"ትንሹ ጓደኛችን በጣም የተሻለ እየሆነ ነው፣ ${አየህ^አየሽ}$?\"/pause 500/faceDirection farmer 2/pause 250/showFrame farmer 4/pause 800/showFrame Sebastian 51/playSound thudStep/pause 800/speak Sebastian \"...ግን ወደ ዱር መመለስ የሚችል አይመስለኝም... ከአሁን በኋላ አዳኞችን ለማምለጥ በቂ ፍጥነት የለውም።#$b#...ስለዚህ ይህን ቴራሪየም አዘጋጅቻለሁ።#$b#ደስተኛ ይመስላል፣ አይደል?$h\"/pause 400/emote farmer 32/pause 500/showFrame farmer 0/pause 400/faceDirection farmer 1/speak Sebastian \"ግን ብቸኝነት ይሰማው ይሆን ብዬ አስባለሁ...\"/pause 500/faceDirection farmer 2/pause 600/quickQuestion #ለምን 'የእንቁራሪት መጠለያ' አትጀምርም?#ደህና ይሆናል።(break)speak Sebastian \"...በራሳቸው መኖር ለማይችሉ እንቁራሪቶችና ጉርጦች መጠለያ? መጥፎ ሐሳብ አይደለም።\"(break)speak Sebastian \"በጣም ጠንካራ ይመስላል። ግን አሁንም፣ ሌላ የተጎዳ እንቁራሪት ካገኘሁ ከጓደኛ ጋር ቢሆን የተሻለ ይመስለኛል።\"/faceDirection farmer 1/pause 1200/quickQuestion #ለማንኛውም እንቁራሪቶችን በጣም የምትወደው ለምንድን ነው?#ይህ ቤት ውስጥ እንዲኖር ብዙም አልፈልግም#አዲስ የትርፍ ጊዜ ሥራ በማግኘትህ ደስ ብሎኛል(break)speak Sebastian \"ምም... ደህና፣ በዝናብ ጊዜ ወደ ውጭ መውጣት እወዳለሁ። ስለዚህ ብዙ እንቁራሪቶችን ያጋጠሙኝ በዚያ መንገድ ይመስለኛል።#$b#በመጨረሻ ከትንንሾቹ ጋር የጋራ ትስስር ተሰማኝ።\"\\faceDirection farmer 1 true\\emote farmer 20(break)emote Sebastian 12\\showFrame Sebastian 12\\pause 400\\speak Sebastian \"ደህና፣ ይህ ለክርክር የቀረበ ጉዳይ አይደለም። ይህ የእኔ የቤቱ ጥግ ነው፣ የፈለግሁትንም ማድረግ እችላለሁ።\"\\showFrame Sebastian 0(break)speak Sebastian \"አዎ፣ አስደሳች ይሆናል። በኮምፒውተር ላይ ብዙ ጊዜ አሳልፋለሁ፣ ስለዚህ እውነተኛና በእጅ የሚደረጉ የትርፍ ጊዜ ሥራዎች መኖራቸው ጥሩ ነው።#$b#እንቁራሪቶችን ለማራባት እንኳ ልሞክር እችላለሁ!$h\"\\faceDirection farmer 1 true\\emote farmer 16\\pause 500/faceDirection farmer 2/showFrame farmer 0/pause 1000/playSound croak/specificTemporarySprite frogJump/pause 250/playSound slimeHit/pause 250/showFrame farmer 94/jump Sebastian/pause 250/playSound slimeHit/pause 500/playSound slimeHit/pause 250/fade/viewport -1000 -1000/pause 600/message \"ዛሬ ቤተሰባችን ትንሽ ተስፋፋ...\"/pause 1000/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 1000/message \"...እና በጣም የሚያዳልጥ ሆነ!\"/pause 1000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "uz-vnrevival"
+      },
+      "Entries": {
+        "sebastianRoom": "resetVariable/move farmer 0 2 1/playSound mouseClick/move farmer 3 0 0/playSound mouseClick/move farmer 0 -1 0/playSound mouseClick/move farmer 0 -1 0/pause 500/faceDirection farmer 0/question fork1 \"#Undan nima ustida ishlayotganini so‘rang.#Xonasidagi bezaklarni maqtang.\"/fork decor/pause 500/stopAnimation Sebastian/speak Sebastian \"Men dasturchi sifatida mustaqil ishlayman.\"/switchEvent enterRobin"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "2794460/f Sebastian 500/p Sebastian": "Hospital_Ambient/-1000 -1000/farmer 1 1 2 Sebastian 9 4 3 Robin -100 -100 2/skippable/doAction 1 3/removeTile 1 3 Buildings/removeTile 1 2 Front/playSound keyboardTyping/showFrame Sebastian 24/animate Sebastian false true 100 26 27 26 27 26 27 26/viewport 6 6 true/move farmer 0 4 1/move farmer 5 0 1/pause 1000/speak Sebastian \"ኦ፣ ሄይ። አንድ ሰከንድ ስጠኝ።\"/pause 500/playSound keyboardTyping/pause 1000/question fork1 \"#ሥራ በዝቶበታል... መሄድ አለብኝ።#እዚሁ ቆይ።\"/fork didntLeave/move farmer -2 0 3/speak Sebastian \"ወዴት ${እየሄድክ^እየሄድሽ}$ ነው?$u\"/pause 300/faceDirection farmer 1/stopAnimation Sebastian/speak Sebastian \"ይቅርታ... የሐሳቤን ፍሰት ሳላጣ ይህን የኮድ መስመር መጨረስ ነበረብኝ።\"/pause 500/move farmer 2 0 1/switchEvent sebastianRoom",
+        "didntLeave": "pause 5500/stopAnimation Sebastian/speak Sebastian \"እሺ። ስለዚያ ይቅርታ፣ እየሠራሁበት የነበረውን ብቻ መጨረስ አስፈልጎኝ ነበር።\"/switchEvent sebastianRoom",
+        "sebastianRoom": "resetVariable/move farmer 0 2 1/playSound mouseClick/move farmer 3 0 0/playSound mouseClick/move farmer 0 -1 0/playSound mouseClick/move farmer 0 -1 0/pause 500/faceDirection farmer 0/question fork1 \"#ምን እየሠራ እንደሆነ ጠይቀው።#የክፍሉን ማስጌጫ አድንቅ።\"/fork decor/pause 500/stopAnimation Sebastian/speak Sebastian \"እንደ ፕሮግራመር የነፃ ሥራ እሠራለሁ።\"/switchEvent enterRobin",
+        "decor": "pause 500/stopAnimation Sebastian/speak Sebastian \"ማስጌጫዎቹ?... ኦ፣ አዎ... አመሰግናለሁ። ለዓመታት ፖስተሮችን በግድግዳው ላይ ሳጣብቅ ኖሬያለሁ፣ ስለዚህ ትንሽ የተጨናነቀ ይመስላል።\"/switchEvent enterRobin",
+        "enterRobin": "pause 500/playSound mouseClick/pause 100/playSound mouseClick/pause 500/playSound Pickup_Coin15/pause 300/emote Sebastian 40/speak Sebastian \"ያ ከሳም የመጣ ፈጣን መልዕክት ነበር... አብረን ጊዜ እንድናሳልፍ የፈለገ ይመስለኛል...#$b#ኡፍ፣ ዛሬ መውጣት ብዙም አልፈልግም።$u\"/pause 500/playSound doorClose/warp Robin 1 1/move Robin 0 4 1/speak Robin \"ኦ፣ ሰላም @።\"/faceDirection farmer 3/move Robin 4 0 1/speak Robin \"ሴቢ፣ እዚህ ስገባ እንደማትወድ አውቃለሁ... ግን በሱቁ ውስጥ አቢጌልን አገኘኋት፣ እሷም አንተን እየፈለገች እንደሆነ ነገረችኝ።\"/pause 200/emote Sebastian 28/speak Sebastian \"እየሠራሁ እንደሆነ ነገርሻት?\"/speak Robin \"ነግሬያታለሁ... ግን ቢሆንም ምናልባት ጎራ እንደምትል ተናገረች።\"/emote Sebastian 12/speak Sebastian \"*ትንፋሽ*... ማንም ሥራዬን በቁም ነገር አይወስደውም።$u#$b#ማሩ በክሊኒኩ ውስጥ ስትሠራ ማንም አያስቸግራትም... ሁሉም ሰው ቀኑን ሙሉ ድረ ገጾችን እያሰስኩ ብቻ የማሳልፍ ይመስለዋል?\"/faceDirection farmer 0 true/move Robin -4 0 0/move Robin 0 -4 0/warp Robin -100 -100/playSound doorClose/pause 500/faceDirection farmer 0/resetVariable/question fork1 \"#ስለ ሙያ ግቦቹ ጠይቀው።#ጓደኞቹን ማየት ለምን እንደማይፈልግ ጠይቀው።\"/fork noFriends/pause 500/speak Sebastian \"ደህና፣ ከዚህ መውጣት እንድችል ገንዘብ ለመቆጠብ እየሞከርኩ ነው። ምናልባት ወደ ከተማዋ ወይም ወደ ሌላ ቦታ።\"/emote Sebastian 40/speak Sebastian \"${ታውቃለህ^ታውቂያለሽ}$፣ ኮሌጅ ብገባ ኖሮ አሁን ምናልባት በመቶ ሺዎች እያገኘሁ እሆን ነበር... ግን የዚያ የኩባንያዎች የአይጥ ውድድር አካል መሆን አልፈልግም፣ ${ገባህ^ገባሽ}$?#$b#ደግሞም ሰዎችን ፊት ለፊት ከመጋፈጥ ይልቅ ከኮምፒውተር ጀርባ ስደበቅ የበለጠ ምቾት ይሰማኛል።$s\"/emote Sebastian 28/pause 600/playSound mouseClick/pause 100/playSound mouseClick/pause 300/speak Sebastian \"ደህና፣ ወደ ሥራዬ መመለስ አለብኝ... እስከ ነገ ይህን ሞጁል መጨረስ አለብኝ።\"/animate Sebastian false true 100 24 24 24 24 24 24 24 24 24 24 25 26 27 26 27 26 27 26 25 24 24/playSound keyboardTyping/pause 500/move farmer 0 2 3/move farmer -3 0 0/move farmer 0 -2 3/move farmer -5 0 0 true/globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    }
+  ]
+}

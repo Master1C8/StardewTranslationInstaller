@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "chargeAhead": "pause 500/message \"ወደ ፊት ${ትሮጣለህ^ትሮጪያለሽ}$፣ ዛርት ግን ${ከጎንህ^ከጎንሽ}$ አምልጦ ${በጓደኞችህ^በጓደኞችሽ}$ ላይ የጥላ ጨረር ይልካል!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"ሴባስቲያንና ሳም ሙሉ በሙሉ ተጠብሰዋል...\"/pause 800/message \"${ሰይፍህን^ሰይፍሽን}$ እንደገና ${ወዝውዘህ^ወዝውዘሽ}$ ከባድ ምት ${ታሳርፋለህ^ታሳርፊያለሽ}$። ዛርት ጮኾ ወደ አቧራ ይፈራርሳል።\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"የሶላሪዮንን ዘንግ ${አንስተህ^አንስተሽ}$ ወደ ላይ ${ትይዘዋለህ^ትይዢዋለሽ}$። ሰላምና ሥርዓት ወደ ዓለም ተመልሰዋል።\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "finalBossWarrior": "pause 500/resetVariable/message \"የፍርሃት ጌታ ዛርት የጥንቆላ ቃላትን እያጉረመረመ ነው...\"/pause 500/question fork0 \"ምን ${ታደርጋለህ^ታደርጊያለሽ}$?#${ሰይፍህን^ሰይፍሽን}$ ${እያወዛወዝክ^እያወዛወዝሽ}$ ወደ ፊት ሩጥ።#${ጓደኞችህን^ጓደኞችሽን}$ ለመከላከል ${ጋሻህን^ጋሻሽን}$ ተጠቀም።\"/fork chargeAhead/pause 1200/message \"ዛርት በሴባስቲያን ላይ 'የጥላ ብልጭታ' ይጥላል... ግን ጥቃቱን ለመመከት ${ጋሻህን^ጋሻሽን}$ በትክክለኛው ጊዜ ${ታነሳለህ^ታነሺያለሽ}$!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"ዛርት ሌላ ጥንቆላ ሲያዘጋጅ፣ ወደ ፊት ${ተስፈንጥረህ^ተስፈንጥረሽ}$ ${በሰይፍህ^በሰይፍሽ}$ ${ትመታዋለህ^ትመቺዋለሽ}$።\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"የሶላሪዮንን ዘንግ ወደ ላይ ስትይዘው በሰላም ያበራል። ሥርዓት ወደ ዓለም ተመልሷል!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+        "leave": "pause 500/message \"የእስረኞቹን አስጨናቂ ሁኔታ ከአእምሯችሁ አስወጥታችሁ፣ ${አንተና^አንቺና}$ ${ጓደኞችህ^ጓደኞችሽ}$ በፍጥነት መሰላሉን ትወጣላችሁ።\"/pause 800/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor",
+        "end": "playMusic Hospital_Ambient/pause 9000/viewport 5 5 true/pause 800/showFrame Sebastian 29/speak Sebastian \"ሄይ፣ መጥፎ አይደለም!$7#$b#የመጀመሪያውን ትዕይንቴን ለማሸነፍ ሦስት ወይም አራት ጊዜ ያህል ሞክሬ ነበር።$7\"/emote farmer 32/pause 1000/speak Sebastian \"ጎራ ${ስላልክ^ስላልሽ}$ አመሰግናለሁ... በኋላ እንገናኛለን።$7\"/globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    }
+  ]
+}

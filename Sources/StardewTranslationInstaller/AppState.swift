@@ -58,7 +58,7 @@ final class AppState: ObservableObject {
             installation = core.detectInstallation()
         }
         guard let installation else { return fail(copy.gameNotFoundMessage) }
-        guard let payload = try? Self.resourceURLs().payload else {
+        guard let resources = try? Self.resourceURLs() else {
             return fail(copy.installationErrorMessage)
         }
 
@@ -73,7 +73,11 @@ final class AppState: ObservableObject {
                 }
             }
             message = copy.installingTranslationMessage
-            try core.install(payload: payload, package: package, into: installation)
+            try core.installLanguageSwitcher(
+                payload: resources.languageSwitcher,
+                into: installation
+            )
+            try core.install(payload: resources.payload, package: package, into: installation)
             phase = .ready
             message = copy.installedMessage
         } catch {
@@ -114,17 +118,21 @@ final class AppState: ObservableObject {
         }
     }
 
-    private static func resourceURLs() throws -> (config: URL, payload: URL) {
+    private static func resourceURLs() throws -> (config: URL, payload: URL, languageSwitcher: URL) {
         let bundleName = "StardewTranslationInstaller_StardewTranslationInstaller.bundle"
         guard let resources = Bundle.main.resourceURL,
               let resourceBundle = Bundle(
                 url: resources.appendingPathComponent(bundleName, isDirectory: true)
               ),
               let config = resourceBundle.url(forResource: "PackageConfig", withExtension: "json"),
-              let payload = resourceBundle.url(forResource: "ModPayload", withExtension: nil) else {
+              let payload = resourceBundle.url(forResource: "ModPayload", withExtension: nil),
+              let languageSwitcher = resourceBundle.url(
+                  forResource: "LanguageSwitcherPayload",
+                  withExtension: nil
+              ) else {
             throw InstallerError.missingPayload
         }
-        return (config, payload)
+        return (config, payload, languageSwitcher)
     }
 
     private func fail(_ text: String) {

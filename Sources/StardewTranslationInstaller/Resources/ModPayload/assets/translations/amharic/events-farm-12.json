@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "980559/t 600 1130/w sunny/e 739330/j 27/!Skill Fishing 1": "spring_day_ambient/64 15/farmer 64 16 2 Willy 64 18 0/skippable/pause 1500/speak Willy \"እንደምን አደሩ፣ ${ወጣት^ወይዘሪት}$!\"/pause 800/speak Willy \"በዚህ ማለዳ ስላስቸገርኩህ ይቅርታ፣ ግን፣ እ... ብዙም ዓሣ ስታጠምድ እንዳልነበር አስተውያለሁ።\"/pause 200/emote farmer 28/pause 200/speak Willy \"አዎ... ለጀማሪ ይህን ስፖርት መልመድ ከባድ ሊሆን ይችላል።\"/pause 400/speak Willy \"ስለዚህ ጥቂት ፍንጮችን ${ልሰጥህ^ልሰጥሽ}$ አሰብኩ... ምናልባት ከባሕሩ ጋር እንድትላመድ ይረዳሃል!\"/pause 500/playMusic distantBanjo/pause 500/speak Willy \"እንግዲህ፣ በትሩን እንዲህ መያዝ ${አለብህ^አለብሽ}$፣ ${አየህ^አየሽ}$?...\"/pause 300/fade/viewport -1000 -1000/pause 1000/message \"ዊሊ ስለ ዓሣ ማጥመድ መሠረታዊ ነገሮች አጭር ትምህርት ሰጠህ።\"/gainSkill Fishing 1/pause 500/message \"አሁን የበለጠ በራስ መተማመን ${ይሰማሃል^ይሰማሻል}$!\"/pause 400/viewport 64 15 clamp true/pause 1000/speak Willy \"አንድ ተጨማሪ ነገር... ይህን ${ልሰጥህ^ልሰጥሽ}$ ፈልጌ ነበር።#$b#'የልምምድ በትር' ይባላል። ዓሣ መያዝን በጣም ${ሊያቀልልልህ^ሊያቀልልልሽ}$ ይገባል።#$b#በዚህ መያዝ የምትችለው መሠረታዊ ዓሦችን ብቻ እንደሆነ ግን እወቅ። ነገር ግን በመጀመሪያ ክህሎቶችህን ለማዳበር ግሩም መንገድ ነው!\"/pause 800/itemAboveHead (T)TrainingRod/pause 3300/awardFestivalPrize (T)TrainingRod/pause 200/pause 500/speak Willy \"ዓሣ ማጥመድን እንደገና እንድትሞክር ተስፋ አደርጋለሁ። አንዴ ከለመድከው በጣም ${ትዝናናለህ^ትዝናኚያለሽ}$።#$b#መልካም ዕድል!$h\"/pause 1000/end"
+      }
+    }
+  ]
+}

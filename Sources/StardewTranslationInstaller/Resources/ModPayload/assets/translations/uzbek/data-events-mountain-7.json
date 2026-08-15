@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "uz-vnrevival"
+      },
+      "Entries": {
+        "8/f Maru 1500/w sunny/t 2100 2340": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/bgColor 0 0 0/changeToTemporaryMap NightSceneMaruMap false/ambientLight 0 0 0/viewport 14 23 true/pause 2000/playSound leafrustle/pause 200/faceDirection Maru 1/pause 400/emote Maru 8/pause 800/move farmer -5 0 3/speak Maru \"@! Sizni bu qadar kech bu yerda ko‘rib hayron qoldim.\"/faceDirection Maru 3/pause 1000/speak Maru \"Hozir tungi osmon ajoyib ko‘rinmoqda.\"/faceDirection Maru 1/speak Maru \"Bu yoqqa keling, sizga bir narsani ko‘rsatmoqchiman.\"/move farmer -3 0 3/speak Maru \"Mana, qarab ko‘ring.\"/move Maru 0 1 0/move farmer -1 0 3/pause 200/animate farmer true true 100 35/pause 1200/playMusic spaceMusic/speak Maru \"$q 40 null#Nimani ko‘ryapsiz?#$r 40 30 Event_Space1#Chiroyli sayyorani.#$r 40 -30 Event_Space2#Sovuq, qorong‘i tubsiz jarlikni.\"/stopAnimation farmer/faceDirection farmer 2/pause 1000/speak Maru \"Bu yulduzlarning birortasiga borishganda, ikkimiz ham allaqachon yo‘q bo‘lamiz...$8\"/emote farmer 28/pause 400/speak Maru \"Inson bo‘lishning qiyin tomoni ham shunda, shekilli, a?\"/faceDirection Maru 0/pause 1200/faceDirection Maru 2/emote Maru 40/pause 500/faceDirection Maru 0/speak Maru \"@, hm...$8\"/pause 500/faceDirection Maru 2/pause 1500/speak Maru \"Hechqisi yo‘q...$s\"/pause 500/faceDirection Maru 0/pause 800/speak Maru \"Mana, sizga qo‘shaloq yulduz tizimini ko‘rsataman...\"/pause 500/faceDirection farmer 3 true/animate farmer true true 100 35/pause 800/specificTemporarySprite maruTelescope/viewport move 0 -1 16000/pause 16000/globalFade .003/viewport -1000 -1000/pause 500/message \"Qanday go‘zal tun! Maru menga yangi narsani ko‘rsatdi...\"/pause 1000 /stopAnimation farmer/changeLocation Mountain/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "When": {
+        "Language": "uz-vnrevival"
+      },
+      "Entries": {
+        "7/f Maru 1000/p Maru": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*uf tortadi*... Bu namunalarni tayyorlashdan juda charchadim...$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"Voy! Voy, yo‘q!... $4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"Butun namuna yaroqsiz bo‘ldi... Harvey meni o‘ldiradi...$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#@, nima qilay?#$r 38 -50 Event_Hospital_1#Polni supurib ol. U farqini bilmaydi.#$r 39 -20 Event_Hospital_2#Harveyga bunga men aybdor ekanimni ayt.#$r 38 50 Event_Hospital_3#Harveyga bu baxtsiz hodisa bo‘lganini ayt.\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"Nima bo‘ldi? Biror narsa singanini eshitdim.\"/pause 500/speak Maru \"$p 38#Namunalardan birini tasodifan tushirib yubordim... Juda kechirasiz.$s|@ kirib, eshikni qattiq yopdi, shuning uchun bu namunani tushirib yubordim.$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"Muammolaring uchun boshqalarni ayblamasliging kerak, Maru.$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*uf tortadi*... Namunani qayta yig‘ish uchun bemorni yana chaqirishim kerak bo‘ladi.$s#$b#Bu yana bir oy davomida hisobimizni zarar bilan yopishimizga olib keladi...$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+        "toldTruth": "move Harvey 0 2 3/speak Harvey \"Rostini aytganing uchun rahmat, Maru.#$b#Xavotir olma, boshqa namuna olamiz.\"/pause 500/emote Harvey 32/pause 500/speak Maru \"Sabr qilganingiz uchun rahmat, doktor Harvey.\"/pause 500/speak Harvey \"Albatta... Bu yerda juda katta yordam beryapsan. Sensiz nima qilardim, bilmayman!\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"@? Rangingiz biroz oqarib ketibdi... o‘zingizni yaxshi his qilyapsizmi?\"/pause 500/faceDirection farmer 2/emote farmer 28/end"
+      }
+    }
+  ]
+}

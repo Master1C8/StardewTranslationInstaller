@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "980558/t 600 1130/w sunny/f Gus 1250": "playful/64 15/farmer 64 16 2 Gus 64 18 0/skippable/pause 1500/speak Gus \"እንደምን ${አደርክ^አደርሽ}$!\"/pause 500/faceDirection Gus 3/pause 600/speak Gus \"አህ... እንዴት ያለ ውብ ቀን ነው፣ አይደል?\"/pause 400/faceDirection Gus 0/speak Gus \"${ታውቃለህ^ታውቂያለሽ}$፣ የሳሎኑ ባለቤት እንደመሆኔ በከተማው ውስጥ ስለሚከሰቱት ነገሮች ሁሉ እሰማለሁ።#$b#መጀመሪያ ወደዚህ ስትመጣ አስታውሳለሁ... ሁሉም ሰው ምን እንደሚጠብቅ ትንሽ ግራ ተጋብቶ ነበር።#$b#ከከተማ የመጣ እንግዳ... የማይታወቅ ስብዕና...$s\"/textAboveHead Gus \"አንድ ሰከንድ...\"/faceDirection Gus 2/animate Gus false true 250 24 25/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/stopAnimation Gus/pause 500/faceDirection Gus 0/pause 500/speak Gus \"ይቅርታ፣ ይህን ድስት በየ5 ደቂቃው ማማሰል አለብኝ።\"/emote farmer 40/speak Gus \"ለማንኛውም፣ ምን እያልኩ ነበር? ኦ፣ አዎ... ${ታውቃለህ^ታውቂያለሽ}$፣ ልክ ስጎ ስትሠራ እንደሚሆነው ነው...\"/playMusic none/speak Gus \"...አዲስ ቅመም ${ከጨመርክ^ከጨመርሽ}$ ሁሉንም ነገር ልታበላሽ ${ትችላለህ^ትችያለሽ}$!$s\"/pause 500/playSound fireball/animate Gus false true 100 26/shake Gus 1000/specificTemporarySprite sauceFire/pause 2000/animate Gus false true 200 24 25/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/animate Gus false true 100 24/pause 500/playSound discoverMineral/specificTemporarySprite sauceGood/pause 800/playMusic distantBanjo/speak Gus \"...ግን እንደገና፣ አዲስና ጣፋጭ ነገር የመፍጠር ዕድል ሁልጊዜ አለ! አይደል? ሃሃሃሃ።$h\"/pause 100/stopAnimation Gus/faceDirection Gus 0/emote farmer 8/faceDirection Gus 3/faceDirection Gus 0/pause 500/speak Gus \"እ... ለማለት የሞከርኩት...$s#$b#${አንተን^አንቺን}$ በከተማው ማግኘታችን በጣም ጥሩ ነበር፣ እኔም ከጥሩ ጓደኞቼ እንደ አንዱ ማሰብ ${ጀምሬሃለሁ^ጀምሬሻለሁ}$!\"/emote farmer 32/speak Gus \"ለማንኛውም፣ አንድ ነገር ${ልሰጥህ^ልሰጥሽ}$ መጣሁ...#$b#የኋላውን ክፍል ሳጸዳ ይህን አሮጌ ትንሽ የሙዚቃ ማጫወቻ አገኘሁ። ${አንተ^አንቺ}$ እንድትወስደው እፈልጋለሁ!\"/pause 800/itemAboveHead jukebox/playSound getNewSpecialItem/pause 3300/awardFestivalPrize jukebox/pause 200/message \"'ትንሽ የሙዚቃ ማጫወቻ' ተቀበልክ\"/pause 800/speak Gus \"በእውነቱ ከብዙ ዓመታት በፊት ራሴ የሠራሁት ፕሮጀክት ነው። ለመሥራት በጣም ቀላል ናቸው!#$b#ስለዚህ፣ ተጨማሪ መሥራት ብትፈልግ ብዬ ንድፎቹን ${አምጥቼልሃለሁ^አምጥቼልሻለሁ}$...\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Mini-Jukebox/pause 500/message \"'ትንሽ የሙዚቃ ማጫወቻ' መሥራት ${ተማርክ^ተማርሽ}$\"/pause 800/speak Gus \"ደህና፣ ወደ ቤት ልሄድ ነው። ይህን የማሪናራ ስጎ ወደ ምድጃው መመለስ አለብኝ! መልካም ቀን!\"/pause 500/end"
+      }
+    }
+  ]
+}

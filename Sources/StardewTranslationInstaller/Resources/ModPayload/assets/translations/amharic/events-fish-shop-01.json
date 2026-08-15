@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FishShop",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"አሆይ!\"/pause 500/move Willy 1 0 2/speak Willy \"ግባ... እንደ ${ቤትህ^ቤትሽ}$ ተመችተህ ተቀመጥ...\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"አዎ... ያ ጥሩ ነገር ነው። ዓሦቹ በጣም ይወዱታል።#$b#እ... ${እጆችህን^እጆችሽን}$ በዚያ ፈሳሽ ውስጥ ካስገባህ በኋላ በደንብ ${መታጠብህን^መታጠብሽን}$ እርግጠኛ ሁን...$s\"/speak Willy \"ሽታው እስከ ሰባት ሳምንታት ድረስ ሊቆይ ይችላል፣ ${ወጣት^ወይዘሪት}$...\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"እንግዲህ... ብዙ ዓሣ እያጠመድክ ነው?\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #አዎ#አይ#በጣም ከባድ ነው...(break)emote Willy 20\\speak Willy \"አሃ! ከልቤ ጋር የሚስማማ ${ወንድ^ሴት}$...$h\"\\pause 500\\speak Willy \"ሁልጊዜ ${ዓሣ አጥማጅን ማመን^ዓሣ የምታጠምድ ሴትን መተማመን}$ ${ትችላለህ^ትችያለሽ}$...\"\\speak Willy \"ቢያንስ አሮጌው አባቴ እንዲህ ይል ነበር። ሃሃ!$h#$b#እንግዲህ፣ ቀጥልበት... በእነዚህ ውኆች ያለውን እያንዳንዱን ዓሣ መያዝ ${ከቻልክ^ከቻልሽ}$፣ ልዩ ሽልማት ${ይጠብቅሃል^ይጠብቅሻል}$...\"(break)emote Willy 28\\speak Willy \"የዓሣ ማጥመድ ዓይነት ${አይደለህም^አይደለሽም}$፣ እ? ያሳዝናል...$s\"(break)emote Willy 16\\speak Willy \"አዎ፣ ከባድ ስፖርት ነው... በተለይ ለጀማሪ።#$b#'የልምምድ በትር'ን ሞክረሃል? እዚሁ በጣም በዝቅተኛ ዋጋ እሸጣቸዋለሁ።#$b#ትንሽ ልምድ እስክታገኝ ድረስ 'የልምምድ በትር' ለመጠቀም ሞክር።\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #ምን ችግር አለ?#ሁሉም ደህና ነው?(break)pause 100(break)pause 100/pause 400/speak Willy \"አዎ... በቅርቡ ንግዱ ከባድ ሆኗል።$s#$b#ሁሉም ያረጀው የማኅበረሰብ ማዕከል በፈራረሰበት ጊዜ አካባቢ ተጀመረ... ዓሦቼ እንደ ቀድሞው አይሸጡም...#$b#ኑሮዬን ለማሸነፍ ሁለት እጥፍ እየሠራሁ ነው!\"/faceDirection Willy 2/pause 300/speak Willy \"ለራሴ ሥራዎች ጊዜ የለኝም...$s#$b#ነገር ግን እዚህ ንግዱ እንደገና ቢነቃቃ፣ አንድ ነገር ላሳይህ ጊዜ ላገኝ እችላለሁ...\"/move Willy -1 0 0/playMusic none/speak Willy \"ሄህ ሄህ... አዎ። እዚያ ኋላ አለች... የተሻለ ዘመን ያየች 'የድሮ ጓደኛ'...$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"አንድ ቀን፣ ${ወጣት^ወይዘሪት}$... ምን ማለቴ እንደሆነ ${ታያለህ^ታያለሽ}$።\"/pause 2000/end"
+      }
+    }
+  ]
+}

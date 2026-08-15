@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>VNRevival.LanguageSwitcher</AssemblyName>
+    <RootNamespace>VNRevival.LanguageSwitcher</RootNamespace>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>$(MSBuildProjectDirectory)/../../Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(StardewGamePath)/smapi-internal/0Harmony.dll" Private="false" />
+    <Reference Include="MonoGame.Framework" HintPath="$(StardewGamePath)/MonoGame.Framework.dll" Private="false" />
+    <Reference Include="StardewModdingAPI" HintPath="$(StardewGamePath)/StardewModdingAPI.dll" Private="false" />
+    <Reference Include="SMAPI.Toolkit.CoreInterfaces" HintPath="$(StardewGamePath)/smapi-internal/SMAPI.Toolkit.CoreInterfaces.dll" Private="false" />
+    <Reference Include="Stardew Valley" HintPath="$(StardewGamePath)/Stardew Valley.dll" Private="false" />
+    <Reference Include="StardewValley.GameData" HintPath="$(StardewGamePath)/StardewValley.GameData.dll" Private="false" />
+  </ItemGroup>
+</Project>

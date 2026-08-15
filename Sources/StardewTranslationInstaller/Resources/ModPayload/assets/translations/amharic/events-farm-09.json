@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "3912125/f Elliott 3500/O Elliott/t 500 1500/p Elliott/U 8": "continue/-10000 -1000/farmer -100 -100 2 Elliott -100 -100 2/addConversationTopic ElliottGone1 0/addConversationTopic elliottGone 6/addWorldState elliottGone/skippable/warp Elliott 63 15/warp farmer -100 -100/faceDirection Elliott 2/showFrame Elliott 38/viewport 64 15 clamp true/pause 1000/pause 2000/playSound doorClose/warp farmer 64 15/positionOffset farmer 0 16/pause 500/faceDirection farmer 3/emote farmer 8/pause 500/showFrame Elliott 39/emote Elliott 16/pause 500/speak Elliott \"@! አሁን እጅግ አስደሳች ዜና ደረሰኝ!\"/pause 50/jump Elliott/pause 500/speak Elliott \"ማሳወቂያው በጣም ድንገተኛ ነው... ግን '%book' የተባለውን መጽሐፌን በንባብ ጉብኝት እንዳቀርብ ተጋብዣለሁ!\"/emote farmer 32/showFrame Elliott 0/faceDirection Elliott 1/pause 500/emote Elliott 28/pause 400/speak Elliott \"...ለአንድ ሳምንት ከከተማ ውጭ እሆናለሁ። ደህና ${ትሆናለህ^ትሆኛለሽ}$?$s\"/quickQuestion #አዎ፣ ደህና እሆናለሁ።#እንደ ዓሣ በውኃ ደስተኛ እሆናለሁ!#አትሂድ!(break)emote Elliott 20\\speak Elliott \"በጣም ${እናፍቅሃለሁ^እናፍቅሻለሁ}$፣ ውዴ።#$b#እርግጥ በየቀኑ ${እጽፍልሃለሁ^እጽፍልሻለሁ}$!\"\\emote farmer 20(break)jump Elliott\\pause 500\\speak Elliott \"ሃሃ... ጥሩ ነው። አሁን ግን ከመጠን በላይ አትደሰት...$8#$b#በየቀኑ ${እንደምጽፍልህ^እንደምጽፍልሽ}$ አረጋግጣለሁ። ${እናፍቅሃለሁ^እናፍቅሻለሁ}$!\"(break)speak Elliott \"ግን፣ ውዴ... ይህ ለእኔ አልፎ አልፎ የሚገኝ ዕድል ነው። መሄድ አለብኝ!$s#$b#${እባክህ^እባክሽ}$ በዚህ ጉዳይ የጥፋተኝነት ስሜት እንዲሰማኝ አታድርግ። በየቀኑ ${እጽፍልሃለሁ^እጽፍልሻለሁ}$፣ ሳታስበውም እመለሳለሁ።\"/pause 1000/animate Elliott true true 100 35/animate farmer true true 100 101/specificTemporarySprite heart 63 15/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/pause 500/speak Elliott \"ነገ በማለዳ እሄዳለሁ...#$b#ሻንጣዬን ማሸግ አለብኝ!$8\"/end dialogue Elliott \"የጸጉር ብሩሴን፣ የጸጉር መርጫዬን፣ ባለጥቃቅን ጥርስ ማበጠሪያዬንና የሮማን ኮንዲሽነሬን እንዳልረሳ አስታውሰኝ!\""
+      }
+    }
+  ]
+}

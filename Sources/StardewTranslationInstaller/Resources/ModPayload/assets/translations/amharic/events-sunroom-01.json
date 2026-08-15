@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Sunroom",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "719926/t 900 1700/w sunny": "spring_day_ambient/-885 8/farmer -500 -500 0 Caroline 5 7 1/mail CarolineTea/skippable/specificTemporarySprite sunroom/viewport 5 8 true/pause 1000/showFrame Caroline 22/doAction 6 7/pause 500/doAction 6 7/pause 1000/showFrame Caroline 4/pause 500/warp farmer 5 13/playSound doorClose/move farmer 0 -4 0/faceDirection Caroline 2/pause 100/speak Caroline \"ኦ፣ ሰላም! እንደምን ${አደርክ^አደርሽ}$፣ @። ${መግባትህ^መግባትሽ}$ ደስ ብሎኛል...#$b#ይህን ላሳይህ ስፈልግ ነበር... የግል የፀሐይ ክፍሌ ነው።\"/pause 500/pause 500/speak Caroline \"እንግዲህ፣ ምን ${ይመስልሃል^ይመስልሻል}$?\"/pause 500/quickQuestion #ቆንጆ ነው!#በጣም ዘና ያደርጋል።#እዚህ በጣም ሞቃት ነው...#እንደ እርሻዬ ጥሩ አይደለም!(break)pause 100\\speak Caroline \"አመሰግናለሁ! እንዲህ ለማድረግ ብዙ ደክሜበታለሁ...$h\"(break)pause 100\\speak Caroline \"አዎ... ወደዚህ ስገባ ወዲያውኑ የተረጋጋሁና ዘና ያልኩ ይሰማኛል። በእውነት ፈዋሽ ነው!\"(break)pause 100\\speak Caroline \"ኦ? እኔ ግን ሙቀቱ ያረጋጋኛል።$s#$b#ሳትንቀሳቀስ ብትቆይ የተሻለ ${ይሰማሃል^ይሰማሻል}$።\"(break)emote Caroline 16\\pause 100\\speak Caroline \"ኦ፣ ግን ${አንተ^አንቺ}$ ባለሙያ ${ነህ^ነሽ}$... ለእኔ ግን የትርፍ ጊዜ ማሳለፊያ ብቻ ነው።\"/pause 500/faceDirection Caroline 1/speak Caroline \"እየው፣ ይህ መሸሸጊያዬ ነው... ሁልጊዜ ሰላም የማገኝበት ቦታ...\"/pause 300/faceDirection Caroline 2/speak Caroline \"እና በቤቴ ያበቀልኩትን ሻይ ለመጠጣት ምርጥ ቦታ ነው! እስቲ፣ አንድ ኩባያ እንጠጣ...\"/pause 300/playSound coin/showFrame Caroline 20/pause 1000/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound gulp/pause 1000/quickQuestion አንድ ኩባያ ትጠጣ?#አዎ#አይ(break)farmerEat 614\\pause 1000(break)pause 100\\speak Caroline \"እሺ፣ ችግር የለም...\"/pause 500/faceDirection farmer 0/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/textAboveHead Caroline \"ጣፋጭ\"/playMusic SunRoom/pause 1500/speak Caroline \"በየቀኑ ወደዚህ መጥቼ ትኩስ ሻይ መጠጣት እወዳለሁ።#$b#ይህ የራሴ ትንሽ ልማድ ነው... #$b#እ... ላስረዳህ ልሞክር...$h\"/fade/viewport -1000 -1000/pause 1000/cutscene greenTea/pause 1000/viewport 5 8 true/pause 1000/speak Caroline \"የሚገባህ እንደሆነ ተስፋ አደርጋለሁ... #$b#ሕይወት በጣም የተጨናነቀች ልትሆን ትችላለች፣ ስለዚህ እንዲህ ያለ የትርፍ ጊዜ ማሳለፊያ መኖሩ ጥሩ ነው።\"/pause 150/showFrame Caroline 0/pause 200/speak Caroline \"${በፈለግክ^በፈለግሽ}$ ጊዜ ወደዚህ ${መጥተህ^መጥተሽ}$ ዘና ማለት ${ትችላለህ^ትችያለሽ}$፣ እሺ?\"/emote farmer 32/pause 1000/move farmer 0 4 2 true/fade/viewport -5000 1000/pause 1000/end warpOut"
+      }
+    }
+  ]
+}

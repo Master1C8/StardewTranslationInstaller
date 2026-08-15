@@ -13,6 +13,9 @@ app="$project_dir/dist/Stardew Translation Installer.app"
 binary="$project_dir/.build/release/StardewTranslationInstaller"
 resource_bundle="$project_dir/.build/release/StardewTranslationInstaller_StardewTranslationInstaller.bundle"
 
+# The app is a generated artifact. Recreate it so deleted resources can never
+# survive an incremental build through cp -R's merge behavior.
+rm -rf "$app"
 mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources"
 cp "$binary" "$app/Contents/MacOS/Stardew Translation Installer"
 if [[ -d "$resource_bundle" ]]; then

@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "uz-vnrevival"
+      },
+      "Entries": {
+        "95/e 93/k 94/t 1800 1950/i 136/y 2": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0 Kent 3 15 1/removeItem 136/removeQuest 22/pause 300/faceDirection Kent 2/speak Kent \"Salom, @. Kiring.\"/move farmer 0 -3 0/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Voy, kelganingizdan juda xursandman, @! Baliqni ham olib kelibsiz! Ajoyib.\"/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Kent 1/faceDirection Jodi 1/speak Jodi \"Sam! Bu yoqqa kelib, shu baliqni tozalashga yordam bera olasanmi?\"/pause 300/speak Sam \"...Ha, xonim.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 500/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/speak Jodi \"Voy, juda ajoyib ko‘rinyapti... hidi ham juda yangi! Buni qilganingiz uchun katta rahmat, @.#$b#Kent ham baliq tutdi, ammo u deyarli butun bir baliqni o‘zi yeydi!$u\"/pause 200/faceDirection farmer 3/pause 1000/speak Kent \"Xe-xe.$h\"/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... qarsildoq bass juda mazali ekan! Usti ajoyib qovurilibdi...\"/pause 500/message \"Endi o‘zimni oilaning bir qismidek his qilyapman.\"/pause 1500/end warpOut",
+        "94/e 93/k 95/t 1800 1950/i 136/y 1": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0/removeItem 136/removeQuest 22/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Voy, salom, @! Kiring! Yangi baliq hidini sezayapmanmi?\"/move farmer 0 -3 1/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Jodi 1/speak Jodi \"Sam! Bu yoqqa kelib, kechki ovqatga yordam ber.\"/pause 300/speak Sam \"...Ha, xonim.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 300/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/pause 400/speak Jodi \"Voy, bu sifatli bassga o‘xshaydi, @. Uni olib kelganingiz uchun katta rahmat.$h\"/pause 1000/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... qarsildoq bass juda mazali ekan! Usti ajoyib qovurilibdi...\"/pause 500/message \"Endi o‘zimni oilaning bir qismidek his qilyapman.\"/pause 1500/end warpOut",
+        "stayPut": "playMusic musicboxsong/pause 1800/move Sam 1 0 1/pause 1200/move Sam 1 0 1/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/animate farmer true true 100 101/showFrame Sam 36/pause 3000/speak Sam \"Oramizda nimadir alohida ekanini doim bilardim...$l\"/globalFade/viewport -1000 -1000/pause 7000/speak Sam \"Bu tun haqida uzoq vaqt o‘ylab yuraman...$l\"/pause 1000/end dialogue Sam \"...$l\"",
+        "rejectSam": "pause 800/move farmer 0 3 2/faceDirection Sam 2/pause 800/showFrame Sam 37/emote Sam 28/speak Sam \"Tushundim...$s\"/pause 800/faceDirection Sam 0/speak Sam \"Kechirasiz... Men noto‘g‘ri tushunibman. Ko‘rishguncha.$7\"/move farmer 0 2 2/warp farmer -1000 -1000/playSound woodyStep/pause 1000/end dialogue Sam \"...$s\""
+      }
+    }
+  ]
+}

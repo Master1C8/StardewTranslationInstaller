@@ -44,11 +44,12 @@ struct TranslationPackage: Codable, Equatable, Sendable {
 
     let schemaVersion: Int
     let siteLocale: String
-    let languageCode: String
+    let languageCodes: [String]
     let nativeLanguageName: String
     let uniqueID: String
     let modFolderName: String
     let steamAppID: String
+    let legacyPackages: [LegacyTranslationPackage]
     let copy: InstallerCopy
 
     static func load(from url: URL) throws -> TranslationPackage {
@@ -58,22 +59,34 @@ struct TranslationPackage: Codable, Equatable, Sendable {
     }
 
     func validate() throws {
-        guard schemaVersion == 1 else { throw TranslationPackageError.unsupportedSchema(schemaVersion) }
+        guard schemaVersion == 2 else { throw TranslationPackageError.unsupportedSchema(schemaVersion) }
         guard Self.supportedSiteLocales.contains(siteLocale) else {
             throw TranslationPackageError.unsupportedSiteLocale(siteLocale)
         }
-        let required = [languageCode, nativeLanguageName, uniqueID, modFolderName, steamAppID]
+        let required = [nativeLanguageName, uniqueID, modFolderName, steamAppID] + languageCodes
         guard required.allSatisfy({ !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }) else {
             throw TranslationPackageError.missingValue
         }
+        guard !languageCodes.isEmpty, Set(languageCodes).count == languageCodes.count else {
+            throw TranslationPackageError.invalidLanguageCodes
+        }
         guard !modFolderName.contains("/") else { throw TranslationPackageError.invalidFolderName }
+        guard legacyPackages.allSatisfy({ !$0.modFolderName.contains("/") }) else {
+            throw TranslationPackageError.invalidFolderName
+        }
     }
+}
+
+struct LegacyTranslationPackage: Codable, Equatable, Sendable {
+    let uniqueID: String
+    let modFolderName: String
 }
 
 enum TranslationPackageError: LocalizedError {
     case unsupportedSchema(Int)
     case unsupportedSiteLocale(String)
     case missingValue
+    case invalidLanguageCodes
     case invalidFolderName
 
     var errorDescription: String? {
@@ -84,6 +97,8 @@ enum TranslationPackageError: LocalizedError {
             "Unsupported SiteForMods language: \(locale)."
         case .missingValue:
             "The translation package configuration has an empty required value."
+        case .invalidLanguageCodes:
+            "The translation package language-code list is empty or contains duplicates."
         case .invalidFolderName:
             "The translation package folder name is invalid."
         }

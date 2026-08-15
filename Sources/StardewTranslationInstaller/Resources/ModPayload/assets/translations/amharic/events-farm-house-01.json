@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"ውድ ልጄ...^እጅግ ውድ የልጅ ልጄ...#$b#ለመጨረሻ ጊዜ ከተነጋገርን ብዙ ዓመታት አልፈዋል። ትንሽ ልጅ ብቻ ነበርክ... ታስታውሳለህ?^ለመጨረሻ ጊዜ ከተነጋገርን ብዙ ዓመታት አልፈዋል። ትንሽ ልጃገረድ ብቻ ነበርሽ... ታስታውሻለሽ?#$b#ምን ያህል ርቀት ${እንደመጣህ^እንደመጣሽ}$ ተመልከት!#$b#እኔን ${ረስተኸኝ^ረስተሽኝ}$ ሊሆን ቢችልም፣ በዚህ ጊዜ ሁሉ እዚህ ነበርኩ።#$b#እንደምታየው... ሰውነቴ ከዚህ ዓለም ሄዷል፣ ልቤ ግን ሁልጊዜ በስታርዱ ቫሊ ይቆያል።\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"አሁን እዚህ ሁለት ዓመት ኖረሃል...\"/grandpaEvaluation/pause 3000/speak Grandpa \"የ%farm እርሻ የወደፊት ዕጣ አሁን በእጅህ ነው።#$b#ደህና ሁን!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"ውድ ልጄ...^እጅግ ውድ የልጅ ልጄ...#$b#ስለጠራኸኝ ደስ ብሎኛል። እኔ... ባለፈው ጊዜ ትንሽ ከመጠን በላይ ጨክኜብህ ሊሆን ይችላል።#$b#ይቅር በለኝ። በጣም ${ጠንክረህ^ጠንክረሽ}$ ${ሠርተሃል^ሠርተሻል}$፣ እኔም ${በአንተ^በአንቺ}$ እኮራለሁ።\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"እስቲ እንይ...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "3917601/f Emily 3500/O Emily/n emilyFiber/A emilyFiber/t 2000 2400/p Emily": "EmilyTheme/-1000 -1000/farmer 8 14 3 Emily 7 14 1/makeInvisible 8 14/viewport -100 -100 true unfreeze/pause 3000/speak Emily \"እንኳን ወደ ቤት ደህና ${መጣህ^መጣሽ}$፣ @። ጥሩ ቀን ${እንዳሳለፍክ^እንዳሳለፍሽ}$ ተስፋ አደርጋለሁ።\"/pause 1000/emote farmer 20/pause 1200/speak Emily \"እንግዲህ... እየሠራሁበት የነበረውን ሚስጥራዊ ፕሮጀክት ጨርሻለሁ።\"/emote farmer 8/pause 500/speak Emily \"${ለአንተ^ለአንቺ}$ በእጅ የተሠራ ፈጽሞ አዲስ አለባበስ ነው!$h\"/pause 500/awardFestivalPrize emilyClothes/pause 500/playSound coin/message \"የኤሚሊ አስማታዊ ኮፍያ፣ የኤሚሊ አስማታዊ ቡትስ፣ የኤሚሊ አስማታዊ ሸሚዝና ተመሳሳይ ሱሪ ተቀበልክ!\"/pause 500/speak Emily \"ልብስ መስፋትና የእጅ ሥራዎችን መሥራት ሁልጊዜ እወድ ነበር... ስለዚህ በእጄ አንድ ነገር ${ብሠራልህ^ብሠራልሽ}$ ጥሩ ይሆናል ብዬ አሰብኩ። በጣም ተዝናናሁ!#$b#በትክክል ${እንደሚሆንልህ^እንደሚሆንልሽ}$... እና ፋይበሩ በጣም ${እንደማያሳክክህ^እንደማያሳክክሽ}$ ተስፋ አደርጋለሁ።#$b#ቡትስ፣ ኮፍያ፣ ሸሚዝና ሱሪ አሉት! ሙሉ አለባበስ ነው።\"/pause 800/speak Emily \"አሁን፣ እነዚያን ልብሶች ስትለብስ እኔን ${ታስባለህ^ታስቢያለሽ}$... እና በሰላም ወደ ቤት እስክትመለስ እዚህ ${እየጠበቅኩህ^እየጠበቅኩሽ}$ እንደሆነ ${ታውቃለህ^ታውቂያለሽ}$... እሺ?$l\"/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 52 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/faceDirection farmer 2 true/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 500/eyes 1 -4500/pause 3000/fade/viewport -100 -100/pause 500/end dialogue Emily \"ለመተኛት ጊዜው ነው።\""
+      }
+    }
+  ]
+}

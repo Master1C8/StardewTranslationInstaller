@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Trailer_Big",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "503180/f Pam 2250/A pamHouseUpgrade/A pamHouseUpgradeAnonymous/Hn pamHouseUpgrade": "shaneTheme/-1000 -1000/farmer 18 11 1 Pam 25 9 1/skippable/specificTemporarySprite pamYobaStatue/viewport 25 9 true/move farmer 6 0 1/move farmer 0 -1 1/faceDirection Pam 2/pause 300/speak Pam \"ሄይ፣ ልጄ...\"/faceDirection Pam 1/pause 500/speak Pam \"ስጸልይ ያዝከኝ...\"/pause 500/move farmer 3 0 0/move farmer 0 -1 3/pause 500/speak Pam \"ይህ አዲሱ 'የመርከቡ ምልክት' ሐውልቴ ነው።#$b#...ከJoja.com በነጻ የ2 ቀን መላኪያ አዘዝኩት። ለፒየር አትንገረው።\"/pause 1000/faceDirection Pam 2/pause 400/faceDirection Pam 3/pause 500/faceDirection Pam 2/pause 500/faceDirection Pam 1/speak Pam \"...በአዲሱ ቤት መላመድ ጀምሬአለሁ። በእውነት ግሩም ቦታ ነው። ቀድሞውኑ ቤት ይመስለኛል። ይህን አዲስ ምቾት በእውነት አደንቃለሁ።$h\"/pause 500/faceDirection Pam 2/pause 1000/showFrame Pam 25/pause 1000/animate Pam false true 250 26 27/pause 400/emote farmer 8/pause 500/textAboveHead Pam \"ኦ፣ ይቅርታ...\"/pause 1000/stopAnimation Pam/pause 950/speak Pam \"*አፍንጫዋን ትስባለች*... ነገሩ...$s#$b#...በጣም ደስተኛ መሆን ይገባኝ ነበር...$s\"/showFrame Pam 0/faceDirection Pam 1/speak Pam \"...ግን ቢራውን መቀነስ አልቻልኩም... ምንም አልተለወጥኩም...$s\"/pause 500/emote farmer 28/pause 500/speak Pam \"አሁን ለረጅም ጊዜ... ከሕይወቴ አንድ ነገር እንደጎደለ ይሰማኛል፣ @... $s#$b#ሁልጊዜ ስለ ገንዘብ ነው ብዬ አስብ ነበር... ድሃ መሆን ብቻ... ${ታውቃለህ^ታውቂያለሽ}$? ስለዚህ ይህን ቤት ማግኘት ሁሉንም እንደሚፈታ አሰብኩ። ግን... አልፈታውም።$s#$b#ለዚያ ነው... ለዚያ ነው ይህን ሐውልት ያዘዝኩት።\"/pause 1000/question fork0 \"ለፓም የሆነ ነገር በል፦#ተስፋ እየተሰማሽ በመሆኑ ደስ ብሎኛል#ይቅርታ ፓም፣ ግን ዮባ እውን አይደለም...\"/fork positive/friendship Pam -1000/pause 500/speak Pam \"ያ አያስቅም! ...ልቤን ከፍቼ ${ነገርኩህ^ነገርኩሽ}$፣ ${አንተ^አንቺ}$ የምትመልሰው እንዲህ ነው? በባዶነቱ ስም ምን ችግር ${አለብህ^አለብሽ}$?$u\"/faceDirection Pam 3/shake Pam 10000/emote Pam 12/pause 1000/speak Pam \"ምንም ብትል ግድ የለኝም... በዮባ እምነት አለኝ! ብዙዎቻችን እናምናለን! አሁን ውጣ።$4\"/pause 1000/move farmer 0 1 3/move farmer -6 0 3 true/end",
+        "positive": "pause 100/emote farmer 56/pause 500/speak Pam \"ሃ! እስቲ ተመልከተኝ! በእርጅናዬ በጣም ስሜታዊ እየሆንኩ ነው፣ አይደል? ...ሄሄሄ።$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"ልጄ፣ ${ስላዳመጥከኝ^ስላዳመጥሽኝ}$ አመሰግናለሁ\"/pause 5000/end"
+      }
+    }
+  ]
+}

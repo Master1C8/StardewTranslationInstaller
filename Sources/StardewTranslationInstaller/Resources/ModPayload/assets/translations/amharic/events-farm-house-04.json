@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "3912132/e 3912126/O Elliott/A elliottGone/B": "spring_day_ambient/-1000 -1000/farmer 27 13 2 Elliott 25 13 1/fade unfade/makeInvisible 25 13/makeInvisible 26 13/makeInvisible 20 4/makeInvisible 22 4/eyes 1 -6000/viewport -100 -100 true unfreeze/pause 3000/emote farmer 24/pause 2000/speak Elliott \"@... ተመልሻለሁ...\"/jump farmer/pause 1000/move farmer -1 0 3/animate Elliott true true 100 35/animate farmer true true 100 101/positionOffset farmer -16 0/specificTemporarySprite heart 63 15/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/pause 1000/speak Elliott \"አህ... በጣም ${ናፍቀኸኝ^ናፍቀሽኝ}$ ነበር።$l#$b#ከትልቋ ከተማ አንዲት ጠብታ በቂዬ ነበር... ወደዚህ ተመልሼ ${ካንተ^ካንቺ}$ ጋር መሆንን በጣም እመርጣለሁ!\"/emote farmer 20/pause 300/speak Elliott \"ደህና፣ እንግዲህ እንደገና ወደ ድሮው የዕለት ተዕለት ልማድ መመለስ ነው!$h#$b#ማካካስ ያለብኝ ጥቂት የቤት ሥራዎች አሉኝ...\"/pause 1000/end dialogue Elliott \"መመለሴ ጥሩ ነው...\"",
+        "8675611/e 6184643/O Haley/A haleyCakewalk1/t 620 1700/p Haley": "continue/-1000 -1000/farmer 23 24 3 Haley 22 24 1/makeInvisible 23 24/addQuest 127/addConversationTopic haleyCakewalk2 0/skippable/viewport -100 -100 true unfreeze/pause 3000/speak Haley \"ሰላም፣ ውዴ።#$b#ሄይ... አንድ ሐሳብ አለኝ... ሁሉንም ሰው ለበጎ አድራጎት የኬክ ጉዞ ማሰባሰብ እፈልጋለሁ።\"/pause 500/emote farmer 8/pause 1000/speak Haley \"እ... ልክ እንደ የሙዚቃ ወንበር ጨዋታ ነው፣ ግን ሁሉም ያሸንፋል እና ኬክ ያገኛል! ${ታያለህ^ታያለሽ}$...$h#$b#በሚቀጥለው ፀሐያማ ቀን በከተማው አደባባይ ይሆናል።#$b#እ... የቸኮሌት ኬክ ብታመጣ ቅር ${ይልሃል^ይልሻል}$?\"/quickQuestion የቸኮሌት ኬክ ለማምጣት ${ትስማማለህ^ትስማሚያለሽ}$?#አዎ#አዎ (በቅሬታ)(break)speak Haley \"ግሩም! የአየር ሁኔታው ከፈቀደ ነገ በከተማው አደባባይ ${አገኝሃለሁ^አገኝሻለሁ}$።$h\"\\animate Haley false true 100 28\\animate farmer true true 100 101\\positionOffset Haley 8 0\\positionOffset farmer -8 0(break)emote Haley 12\\speak Haley \"ይህ የሽሙጥ አመለካከት ምንድን ነው?$3#$b#እሺ። ነገ የቸኮሌት ኬክ ${ይዘህ^ይዘሽ}$ ${ትመጣለህ^ትመጪያለሽ}$፣ አለበለዚያ ችግር ውስጥ ${ትገባለህ^ትገቢያለሽ}$። ይህ የተሻለ ${ይመስልሃል^ይመስልሻል}$?$3\"/pause 2000/fade/viewport -1000 -1000/end dialogue Haley \"እኔ ሮዝ ኬክ አመጣለሁ።\""
+      }
+    }
+  ]
+}

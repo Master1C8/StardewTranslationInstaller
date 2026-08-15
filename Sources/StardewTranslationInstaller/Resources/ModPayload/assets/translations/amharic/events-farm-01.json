@@ -1,0 +1,18 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "5/e 3/v Abigail/t 600 800": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"ሰላም። እም... ትናንት በጣም እንግዳ ባሕርይ ስላሳየሁ ይቅርታ ለማለት ብቻ ነበር።#$b#ምን እንደተከሰተ ሳታውቅ አትቀርም...$l#$b#እ... እሺ... ደህና ሁን።\"/pause 500/end",
+        "47/f Sam 2000/t 600 800/e 44": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"ሰላም @። ምን ${መሰለህ^መሰለሽ}$? ባንዴ ዛሬ ማታ በዙዙ ከተማ ትዕይንት ያቀርባል!#$b#ወደ ትዕይንቱ ለመሄድ ዛሬ ከሰዓት በኋላ 4:00 አካባቢ በአውቶቡስ ማቆሚያው አግኘኝ። ${መምጣትህን^መምጣትሽን}$ እርግጠኛ ሁን!\"/pause 300/end dialogue Sam \"ለዛሬ ማታው ትዕይንት ጓጉቻለሁ፣ ትንሽም ፈርቻለሁ። ሁሉም ነገር ደህና እንደሚሆን እርግጠኛ ነኝ።\"",
+        "2146991/y 3/H": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+        "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"ሰላም @! ዛሬ ከሰዓት በኋላ ነጻ ${ነህ^ነሽ}$?#$b#በመጨረሻ ራሴን አዘጋጅቼ ዛሬ ማታ በከተማው አደባባይ የሥነ ጥበብ ትርዒቴን አደርጋለሁ!$h#$b#እዚያ መሆን ${ከፈለግክ^ከፈለግሽ}$ ከሰዓት በኋላ በ3:00 እና 5:00 መካከል ወደ ከተማ ና!\"/pause 300/end dialogue Leah \"ፈርቻለሁ...$l\"",
+        "63/y 2/t 600 1800/H": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"እም፣ ሰላም። ስሜ ኬንት ነው። ትናንት ማታ ነው ከባሕር ማዶ... የተመለስኩት። እኔ በሌለሁበት አዲስ ገበሬ እንደመጣ ሚስቴ ነገረችኝ።\"/pause 500/speak Kent \"ደህና፣ ራሴን ላስተዋውቅ ብቻ ፈልጌ ነበር... በዙሪያው እንገናኛለን።\"/pause 300/end"
+      }
+    }
+  ]
+}

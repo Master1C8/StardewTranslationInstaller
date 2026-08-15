@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"አዎ... የሚያሳዝን እይታ ነው፣ አይደለችም?\"/pause 500/speak Willy \"የአባቴ ጀልባ ነበረች... ከ50 ዓመታት በላይ በሚገባ አገለገለችው።#$b#አሁን ግን በውኃ ላይ መቆየት እንኳ አቅቷታል።$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"እኔው በጠገንኳት፣ ግን የሚያስፈልጉት ቁሳቁሶች የሉኝም፣ ${ወጣት^ወይዘሪት}$።\"/faceDirection Willy 0/speak Willy \"አዎ... የጀልባዋን አካል ለመጠገን 200 ጠንካራ እንጨቶች ጥሩ መጀመሪያ ይሆናሉ።#$b#ነገር ግን የትኬት ማሽኑን መልሰን ማስነሳትና የኢሪዲየም መልህቁን መጠገንም ያስፈልገናል።\"/faceDirection farmer 0/pause 400/speak Willy \"የሚያስፈልጉትን ቁሳቁሶች አግኝቼ አሮጊቷን ብጠግናት... ወደ የፈርን ደሴቶች ልወስድህ እችላለሁ።\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"እንግዳ በቀቀኖች የሞሉባቸው የእሳተ ገሞራ ደሴቶች ናቸው ይላሉ...\"/pause 400/quickQuestion #መርዳት እፈልጋለሁ#አይ፣ እተወዋለሁ...(break)emote Willy 32\\speak Willy \"አዎ... እንደምትረዳ አውቅ ነበር፣ ${ወጣት^ወይዘሪት}$።$h\"\\speak Willy \"ይህን በር ሳልቆልፈው እተወዋለሁ... ${በፈለግክ^በፈለግሽ}$ ጊዜ ${መጥተህ^መጥተሽ}$ ቁሳቁሶቹን ማስቀመጥ ${ትችላለህ^ትችያለሽ}$።\"(break)emote Willy 28\\speak Willy \"እሺ፣ እንዳሻህ...$s#$b#${ሐሳብህን^ሐሳብሽን}$ ${ከቀየርክ^ከቀየርሽ}$ ሁልጊዜ ${ተመልሰህ^ተመልሰሽ}$ መርዳት ${ትችላለህ^ትችያለሽ}$። ለማንኛውም ይህን በር ሳልቆልፈው እተወዋለሁ።\"/pause 2000/end"
+      }
+    }
+  ]
+}

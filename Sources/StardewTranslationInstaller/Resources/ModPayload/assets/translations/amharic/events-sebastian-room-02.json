@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "noFriends": "pause 500/emote Sebastian 28/speak Sebastian \"*ትንፋሽ*... ጓደኞች መኖራቸውን እወዳለሁ፣ ማኅበራዊ ጉዳዮችን ለማመጣጠን ብዙ ጊዜ ብቻዬን መሆን ያስፈልገኛል።$s#$b#ሳም ተቃራኒዬ ነው... ለረጅም ጊዜ ብቻውን ከሆነ ይብዳል።#$b#ምናልባት ኮምፒውተሮችን በጣም የምወደው ለዚህ ነው... ትኩረትን ይስባሉ፣ ግልጽና ራስ ወዳድ ያልሆኑ ናቸው። ከማውቃቸው ብዙ ሰዎች ፍጹም ተቃራኒ።\"/pause 600/playSound mouseClick/pause 100/playSound mouseClick/pause 300/emote Sebastian 40/speak Sebastian \"ደህና፣ ወደ ሥራዬ መመለስ አለብኝ... እስከ ነገ ይህን ሞጁል መጨረስ አለብኝ።\"/pause 300/animate Sebastian false true 100 26 27/playSound keyboardTyping/pause 500/move farmer 0 2 3/move farmer -3 0 0/move farmer 0 -2 3/move farmer -5 0 0 true/globalFade/viewport -1000 -1000/pause 1000/end",
+        "27/f Sebastian 1500/p Sebastian": "jaunty/-1000 -1000/farmer 1 1 2 Sebastian 5 9 3 Sam 3 7 2/skippable/showFrame Sam 24/showFrame Sebastian 28/doAction 1 3/viewport 5 5 true/move farmer 0 6 1/pause 500/showFrame Sebastian 29/pause 500/speak Sebastian \"ሄይ፣ @። $7\"/pause 500/speak Sebastian \"እኔና ሳም 'የሶላሪዮን ዜና መዋዕል፦ ጨዋታው' ልንጫወት ነበር... ለምን አትቀላቀለንም? ለማንኛውም በሦስት ተጫዋቾች የተሻለ ነው።$7\"/move farmer 0 1 2/pause 500/playSound thudStep/faceDirection farmer 1 true/showFrame 117/positionOffset farmer 16 80/pause 600/speak Sebastian \"እሺ፣ እንጀምር... የትዕይንቱን ካርድ ልሳብ።$7\"/pause 900/showFrame Sebastian 30/playSound dwoop/pause 500/showFrame Sebastian 28/pause 500/speak Sebastian \"ምም... የዛሬው ተልዕኮ ወደ ሙታን ጠሪው ግንብ የሚወስደን ይመስላል... የሶላሪዮንን ዘንግ ከፍርሃት ጌታ ዛርት እጅ ለማስመለስ።\"/pause 600/speak Sam \"ጥሩ... @፣ ገጸ ${ባሕሪህን^ባሕሪሽን}$ ለመምረጥ ዝግጁ ${ነህ^ነሽ}$?\"/pause 500/question chooseCharacter \"ገጸ ${ባሕሪህን^ባሕሪሽን}$ ምረጥ፦#ተዋጊ። ቀጥተኛ አቀራረብን እወዳለሁ።#ፈዋሽ። ሌሎችን መርዳት እመርጣለሁ።#አስማተኛ። የሰላ አእምሮ ከሁሉ የበለጠ ኃይለኛ ሰይፍ ነው።\"/pause 500/speak Sebastian \"ሄይ! እኔ ልመርጠው የነበረው ያንን ነው!$h#$b#እንግዲህ እኔ ፈዋሹ እሆናለሁ።\"/pause 500/speak Sam \"ጥሩ። ለማንኛውም ተዋጊ የምወደው ነው።\"/addMailReceived choseWizard/switchEvent opening",
+        "warrior": "pause 500/speak Sebastian \"ጥሩ ምርጫ። ተዋጊ ለጀማሪዎች ከሁሉ ቀላሉ ሳይሆን አይቀርም።$7#$b#እንግዲህ እኔ አስማተኛውን እመርጣለሁ።\"/emote Sam 28/speak Sam \"እኔ ከፈዋሹ ጋር የቀረሁ ይመስላል።$s\"/addMailReceived choseWarrior/switchEvent opening",
+        "healer": "pause 500/speak Sebastian \"ፈዋሽ፣ እንዴ? ይህ በጣም አስፈላጊ ሚና ነው።$7#$b#እንግዲህ እኔ አስማተኛውን እመርጣለሁ።\"/speak Sam \"ጥሩ። ለማንኛውም ተዋጊ የምወደው ነው።\"/addMailReceived choseHealer/switchEvent opening"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "uz-vnrevival"
+      },
+      "Entries": {
+        "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"Hm... Salom. Xayrli tong.#$b#Toshlarni sindirib, ruda topayotganingizni payqadim. Juda yaxshi!\"/pause 500/speak Clint \"Topgan rudalaringizdan maksimal foyda olish uchun pech kerak.\"/pause 500/speak Clint \"Shunday bo‘ldiki, menda ortiqcha chizmalar bor edi. Mana, sizga beraman.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"«Pech» tayyorlashni o‘rgandingiz\"/pause 800/speak Clint \"Pech metall quymalarini eritishga imkon beradi. Quymalarni yasash, qurilish va asboblarni yaxshilashda ishlatish mumkin.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \" Bir nechta mis quymasini eritganingizdan so‘ng, asboblaringizdan birini yaxshilashimni o‘ylab ko‘ring. Bu ishingizni ancha osonlashtiradi.#$b#Xo‘p, men uyga ketdim. O‘zingizni ehtiyot qiling.\"/pause 200/addQuest 11/end"
+      }
+    }
+  ]
+}

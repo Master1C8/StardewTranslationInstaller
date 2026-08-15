@@ -1,0 +1,18 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "wizardDoor": "pause 500/updateMinigame 8/resetVariable/playMusic Lava_Ambient/pause 1600/message \"በመተላለፊያው መጨረሻ ወዳለ በር ደርሳችኋል።\"/pause 800/message \"የፍርሃት ጌታ ዛርትን የምትጋፈጡበት ጊዜ ደርሷል።\"/pause 500/playSound openChest/pause 1000/switchEvent Necromancer",
+        "Necromancer": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"ዛርት፦ ወራሪዎች? ወደ የግል ክፍሌ ለመግባት እንዴት ደፈራችሁ!\"/pause 800/message \"አሃ፣ እንግዲህ ለሶላሪዮን ዘንግ መጥታችኋል...\"/pause 800/message \"ሄሄሄ... ሞኞች። ለአጽም ሠራዊቴ ጥሩ ተጨማሪ ትሆናላችሁ!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"የፍርሃት ጌታ ዛርት የጥላ ጨረር ይጥላል!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"${አንተ^አንቺ}$ ጥንቆላውን ማምለጥ ${ችለሃል^ችለሻል}$፣ ${ጓደኞችህ^ጓደኞችሽ}$ ግን በከባድ ቆስለዋል!\"/pause 500/question fork0 \"ምን ${ታደርጋለህ^ታደርጊያለሽ}$?#ተዋጊውን (ሳምን) ፈውስ።#አስማተኛውን (ሴባስቲያንን) ፈውስ።\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"አመሰግናለሁ፣ @።$7\"/speak Sam \"...$s\"/pause 1000/playMusic none/message \"ሴባስቲያን 'ንጹሕ ብልጭታ' ይጥላል... ነጭ የብርሃን ጨረር ዛርትን በቀጥታ ፊቱን ይመታዋል። የፍርሃት ጌታው ጮኾ ወደ አቧራ ይፈራርሳል።\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"የሶላሪዮንን ዘንግ ${አንስተህ^አንስተሽ}$ ወደ ላይ ${ትይዘዋለህ^ትይዢዋለሽ}$። ሥርዓት ወደ ዓለም ተመልሷል።\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "healedSam": "playSound healSound/pause 500/speak Sam \"አመሰግናለሁ፣ @።\"/speak Sebastian \"...$s\"/pause 1000/playMusic none/message \"ሳም ወደ ፊት ተስፈንጥሮ ዛርትን ይመታዋል፣ የሶላሪዮንን ዘንግ ከእጁ ነፃ አውጥቶ ሰላምና ሥርዓትን ወደ ዓለም ይመልሳል።\"/pause 500/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "finalBossWizard": "pause 500/resetVariable/message \"የፍርሃት ጌታ ዛርት የጥንቆላ ቃላትን እያጉረመረመ ነው...\"/pause 500/question fork0 \"ምን ${ታደርጋለህ^ታደርጊያለሽ}$?#በዛርት ላይ 'ንጹሕ ጨረር' ጣል።#${በጓደኞችህ^በጓደኞችሽ}$ ላይ 'የጋሻ ምትሐት' አድርግ።\"/fork castBeam/pause 800/playSound debuffHit/message \"በሳምና በሴባስቲያን ላይ 'የጋሻ ምትሐት' ${ታደርጋለህ^ታደርጊያለሽ}$።\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"ዛርት ንጹሕ ጨለማ የሆኑ የኃይል ብልጭታዎችን ይልካል። አንደኛው ሴባስቲያንን ይመታል፣ ግን 'የጋሻ ${ምትሐትህ^ምትሐትሽ}$' መልሶ የዛርትን ፊት ይመታዋል!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"ዛርት ተሸንፏል፣ የሶላሪዮን ዘንግም በሰላም ያበራል። ሥርዓት ወደ ዓለም ተመልሷል።\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+        "castBeam": "pause 500/message \"${ጥንቆላህን^ጥንቆላሽን}$ ለመጣል ዕድል ${ከማግኘትህ^ከማግኘትሽ}$ በፊት፣ ዛርት ${በጓደኞችህ^በጓደኞችሽ}$ ላይ የጥላ ጨረር ይልካል!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"ሳምና ሴባስቲያን ሙሉ በሙሉ ተጠብሰዋል...\"/pause 500/playSound yoba/pause 800/message \"${ጥንቆላህ^ጥንቆላሽ}$ ዛርትን በቀጥታ ፊቱን ይመታዋል።\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"እሱም ጮኾ ወደ አቧራ ይፈራርሳል። የሶላሪዮንን ዘንግ ${አንስተህ^አንስተሽ}$ ወደ ላይ ${ትይዘዋለህ^ትይዢዋለሽ}$። ሰላምና ሥርዓት ወደ ዓለም ተመልሰዋል።\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "When": {
+        "Language": "uz-vnrevival"
+      },
+      "Entries": {
+        "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"Salom.\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"Qarang... Uyim yonida turgan eski eshkakli qayiqni tuzatdim. Chiroyli, a?\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... Uning ilk sayohatida menga hamroh bo‘lish sharafiga muyassar qilasizmi?$l\"/faceDirection farmer 2/question fork1 \"Qayiqqa chiqasizmi?#Ha#Yo‘q\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea false/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"Kitobim chiqqaniga ancha bo‘ldi... U bestseller emas, ammo tanqidchilardan yaxshi sharhlar olyapti.#$b#Ma’naviy qo‘llab-quvvatlashingizsiz uni tugata olmasdim.$l\"/pause 1000/speak Elliott \"Aslida, bu umuman to‘g‘ri emas. Har qanday holatda ham tugatgan bo‘lardim.$h#$b#Ammo menga... qarashlarimga ishonganingizdan minnatdorman. Va, xullas...\"/pause 500/speak Elliott \"Ee... @? Buni qanday aytsam ekan...$8\"/emote Elliott 40/speak Elliott \"Ancha vaqtdan beri do‘stmiz... Ammo men... endi sizga nisbatan shunday his qilayotganimga ishonchim komil emas.$l\"/emote farmer 16/speak Elliott \"Yo‘q! Siz bilan barcha aloqalarni uzmoqchiman, demayotgan edim!$8#$b#Aslida... aksincha.$l\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"...Qani, buni qanday ifodalasam ekan...?$l#$b#Bir marta bo‘lsa ham, so‘z topolmayapman...\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 24 8/positionOffset farmer -20 16/faceDirection farmer 1 true/showFrame 101/specificTemporarySprite heart 26 20/playSound dwop/pause 1500/startJittering/pause 700/speak Elliott \"$q -1 null#@? Siz titrayapsiz...$l#$r -1 50 event_boat1#Men xursandman.#$r -1 -50 event_boat2#Meni juda noqulay ahvolga solyapsiz. To‘xtang.\"/stopJittering/fork tooBold/pause 1800/globalFade/viewport -1000 -1000/speak Elliott \"Janubiy shamol kuchayishidan oldin qaytganimiz ma’qul.$l^Voy... Tanangizning titrashi Qirmizibaliqning e’tiborini tortdi... Bu yerdan ketganimiz ma’qul.$l\"/pause 1400/speak Elliott \"Bu yerdan vodiyga qarang... u nihoyat «Uy»ga o‘xshaydi.\"/pause 4000/speak Elliott \"*uf*... Qanday kun...$l\"/end"
+      }
+    }
+  ]
+}

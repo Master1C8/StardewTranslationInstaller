@@ -47,6 +47,9 @@ enum InstallerError: LocalizedError {
 }
 
 struct InstallerCore {
+    static let languageSwitcherUniqueID = "VNRevival.LanguageSwitcher"
+    static let languageSwitcherFolderName = "[SMAPI] VN Revival Language Switcher"
+
     let fileManager: FileManager
 
     init(fileManager: FileManager = .default) {
@@ -117,7 +120,9 @@ struct InstallerCore {
         guard folderHasUniqueID(payload, uniqueID: package.uniqueID) else {
             throw InstallerError.missingPayload
         }
-        guard payloadHasLanguageCode(payload, languageCode: package.languageCode) else {
+        guard package.languageCodes.allSatisfy({
+            payloadHasLanguageCode(payload, languageCode: $0)
+        }) else {
             throw InstallerError.packageMismatch
         }
         try replaceOwnedFolder(
@@ -125,6 +130,7 @@ struct InstallerCore {
             destination: installation.modDirectory(for: package),
             uniqueID: package.uniqueID
         )
+        try removeOwnedLegacyPackages(package.legacyPackages, from: installation)
     }
 
     func installContentPatcher(payload: URL, into installation: GameInstallation) throws {
@@ -136,6 +142,21 @@ struct InstallerCore {
             payload: payload,
             destination: destination,
             uniqueID: "Pathoschild.ContentPatcher"
+        )
+    }
+
+    func installLanguageSwitcher(payload: URL, into installation: GameInstallation) throws {
+        let destination = installation.modsDirectory.appendingPathComponent(
+            Self.languageSwitcherFolderName,
+            isDirectory: true
+        )
+        guard folderHasUniqueID(payload, uniqueID: Self.languageSwitcherUniqueID) else {
+            throw InstallerError.malformedManifest(payload)
+        }
+        try replaceOwnedFolder(
+            payload: payload,
+            destination: destination,
+            uniqueID: Self.languageSwitcherUniqueID
         )
     }
 
@@ -209,6 +230,21 @@ struct InstallerCore {
                 try? fileManager.moveItem(at: backup, to: destination)
             }
             throw error
+        }
+    }
+
+    private func removeOwnedLegacyPackages(
+        _ packages: [LegacyTranslationPackage],
+        from installation: GameInstallation
+    ) throws {
+        for package in packages {
+            let directory = installation.modsDirectory.appendingPathComponent(
+                package.modFolderName,
+                isDirectory: true
+            )
+            if ownsFolder(directory, uniqueID: package.uniqueID) {
+                try fileManager.removeItem(at: directory)
+            }
         }
     }
 }

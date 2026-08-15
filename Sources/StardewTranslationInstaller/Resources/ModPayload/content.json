@@ -5,12 +5,58 @@
       "Action": "EditData",
       "Target": "Data/AdditionalLanguages",
       "Entries": {
+        "{{ModId}}_Russian": {
+          "ID": "{{ModId}}_Russian",
+          "LanguageCode": "ru-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonRussian",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/Russian",
+          "FontPixelZoom": 3,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_WEEK] [DAY_OF_MONTH]",
+          "NumberComma": " "
+        },
+        "{{ModId}}_Polish": {
+          "ID": "{{ModId}}_Polish",
+          "LanguageCode": "pl-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonPolish",
+          "UseLatinFont": true,
+          "FontPixelZoom": 1,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
+        },
         "{{ModId}}_Uzbek": {
           "ID": "{{ModId}}_Uzbek",
           "LanguageCode": "uz-vnrevival",
-          "ButtonTexture": "Mods/{{ModId}}/Button",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonUzbek",
           "UseLatinFont": true,
           "FontPixelZoom": 1,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
+        },
+        "{{ModId}}_Swahili": {
+          "ID": "{{ModId}}_Swahili",
+          "LanguageCode": "sw-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonSwahili",
+          "UseLatinFont": true,
+          "FontPixelZoom": 1,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
+        },
+        "{{ModId}}_Amharic": {
+          "ID": "{{ModId}}_Amharic",
+          "LanguageCode": "am-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonAmharic",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/Amharic",
+          "FontPixelZoom": 3,
           "TimeFormat": "[HOURS_24_00]:[MINUTES]",
           "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
           "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
@@ -20,16 +66,3576 @@
     },
     {
       "Action": "Load",
-      "Target": "Mods/{{ModId}}/Button",
+      "Target": "Mods/{{ModId}}/ButtonRussian",
+      "FromFile": "assets/button-russian.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "ru-vnrevival",
+      "FromFile": "assets/title/TitleButtons-russian.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "ru-vnrevival",
+      "FromFile": "assets/fonts/russian/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "ru-vnrevival",
+      "FromFile": "assets/fonts/russian/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonPolish",
+      "FromFile": "assets/button.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "pl-vnrevival",
+      "FromFile": "assets/title/TitleButtons.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "pl-vnrevival",
+      "FromFile": "assets/fonts/polish/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "pl-vnrevival",
+      "FromFile": "assets/fonts/polish/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonUzbek",
       "FromFile": "assets/button-uzbek.png"
     },
     {
-      "Action": "Include",
-      "FromFile": "assets/translations/uzbek/ui.json"
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "uz-vnrevival",
+      "FromFile": "assets/title/TitleButtons-uzbek.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonSwahili",
+      "FromFile": "assets/button-swahili.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "sw-vnrevival",
+      "FromFile": "assets/title/TitleButtons-swahili.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonAmharic",
+      "FromFile": "assets/button-amharic.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "am-vnrevival",
+      "FromFile": "assets/title/TitleButtons-amharic.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "am-vnrevival",
+      "FromFile": "assets/fonts/amharic/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "am-vnrevival",
+      "FromFile": "assets/fonts/amharic/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Amharic",
+      "FromFile": "assets/fonts/amharic/Amharic.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Amharic_0",
+      "FromFile": "assets/fonts/amharic/Amharic_0.xnb"
     },
     {
       "Action": "Include",
-      "FromFile": "assets/translations/uzbek/ui-inventory-stats.json"
+      "FromFile": "assets/translations/russian/characters/abigail-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/abigail-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/abigail-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/alex-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/alex-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/dwarf.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/elliott-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/elliott-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/emily-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/emily-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/gil.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/haley-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/haley-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/harvey-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/harvey-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/jodi-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/jodi-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/kent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/krobus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/leah-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/leah-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/leo-mainland.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/lewis-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/lewis-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/linus-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/linus-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-abigail-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-abigail-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-alex-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-alex-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-elliott-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-elliott-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-emily-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-emily-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-haley-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-haley-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-harvey-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-harvey-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-krobus-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-krobus-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-krobus-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-leah-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-leah-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-maru-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-maru-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-penny-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-penny-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-sam-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-sam-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-sebastian-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-sebastian-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-shane-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/marriage-shane-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/mister-qi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/pam-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/pam-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/pierre-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/pierre-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/rainy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/robin-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/robin-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/characters/wizard.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-engagement.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-extradialogue-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-extradialogue-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-extradialogue-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-extradialogue-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-fall16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-fall27.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-spring13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-spring24.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-summer11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-summer28.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-winter25.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festival-winter8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-festivaldates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-furniture-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-mail-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-mail-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-mail-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-mail-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-mail-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-mail-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-mail-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-monsters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-quests-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-quests-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-secretnotes-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-secretnotes-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-secretnotes-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-tv-cooking.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/data-tv-tip-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/event-abandoned-jojamount.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/event-locations-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/event-locations-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-animalshop-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-09.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-imported-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/events-short-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-09.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-17.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-18.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-19.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/objects-20.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-16-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-bigcraftables-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-bigcraftables-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-bundlenames.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-characters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-characters-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-characters-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-characters-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-09.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-17.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-18.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-cs-19.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-enchantments.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-farmanimals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-furniture-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-furniture-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-furniture-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-locations-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-locations-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-locations-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-locations-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-locations-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-maps-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-maps-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-maps-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-maps-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-maps-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-movieconcessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-moviereactions-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-moviereactions-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-moviereactions-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-moviereactions-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-npcnames.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-shirts-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-shirts-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-shirts-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-shirts-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-special-order-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-speechbubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/strings-worldmap.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/technical-preserved-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/russian/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/polish/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/1-6-strings-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/1-6-strings-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/1-6-strings-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/1-6-strings-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/1-6-strings-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/1-6-strings-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-chair-tiles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-abandoned-joja-manor-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-animal-shop-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-animal-shop-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-archaeology-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-backwoods-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-bath-house-pool-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-beach-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-boat-harvey-desert-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-bus-stop-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-bus-stop-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-community-center-punch-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-elliott-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-17.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-18.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-19.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-20.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-21.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-22.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-23.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-24.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-25.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-26.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-27.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-farm-house-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-fish-shop-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-forest-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-haley-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-haley-house-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-haley-house-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-haley-house-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-hospital-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-hospital-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-hospital-manor-mine-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-island-hut-sewer-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-island-leo-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-island-south-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-island-south-leo-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-josh-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-josh-house-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-leah-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-manor-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-mountain-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-pam-marlon-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-railroad-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-saloon-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sam-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sam-house-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sandy-qi-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-science-house-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-science-house-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sebastian-room-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-seed-shop-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-seed-shop-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-seed-shop-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-sunroom-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-temp-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-temp-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-17.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-18.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-19.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-20.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-21.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-22.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-23.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-24.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-25.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-town-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-trailer-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-trailer-big-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-wizard-house-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-events-woods-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-extra-dialogue-core.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-extra-dialogue-island-birdie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-extra-dialogue-professor-snail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-extra-dialogue-purchases.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-extra-dialogue-skull-system.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-extra-dialogue-summit.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall16-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall16-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall16-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall16-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall16-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall16-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall16-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall27-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall27-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall27-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall27-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall27-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-fall27-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring13-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring24-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring24-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring24-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring24-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring24-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring24-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-spring24-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer11-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer28-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer28-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer28-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer28-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer28-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer28-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-summer28-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter25-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter25-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter25-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter25-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter25-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter25-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter25-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter8-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter8-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter8-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter8-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter8-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter8-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-festivals-winter8-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-furniture-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-furniture-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-furniture-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-furniture-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-furniture-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-furniture-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-furniture-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-hair-data.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-monsters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-paint-data.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-tv-cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/data-tv-tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-dwarf.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-gil.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-kent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-krobus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-leo-mainland.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-mister-qi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-rainy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/dialogue-wizard.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/furniture-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/furniture-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/furniture-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/furniture-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/furniture-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/furniture-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/mail-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/mail-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/mail-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/mail-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/mail-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-generic-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-generic-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-krobus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/marriage-dialogue-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/movie-reactions-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/movie-reactions-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/movie-reactions-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-a-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-a-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-b-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-b-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-c-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-c-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-c-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-d-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-f-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-g-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-g-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-h-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-j-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-l-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-m-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-o-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-p-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-p-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-r-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-r-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-s-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-s-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-s-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-t-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-v-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/objects-w-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/schedule-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/shirts-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/shirts-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/shirts-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/shirts-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/shirts-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/simple-non-villager-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/special-order-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-bigcraftables-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-bigcraftables-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-bigcraftables-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-bigcraftables-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-characters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-17.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-cs-files-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-maps-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-maps-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-maps-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-from-maps-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-locations-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/strings-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/ui-advanced-options.json"
     },
     {
       "Action": "Include",
@@ -37,11 +3643,7 @@
     },
     {
       "Action": "Include",
-      "FromFile": "assets/translations/uzbek/ui-level-professions.json"
-    },
-    {
-      "Action": "Include",
-      "FromFile": "assets/translations/uzbek/ui-multiplayer.json"
+      "FromFile": "assets/translations/uzbek/ui-chat-commands-proposals.json"
     },
     {
       "Action": "Include",
@@ -49,7 +3651,27 @@
     },
     {
       "Action": "Include",
-      "FromFile": "assets/translations/uzbek/ui-chat-commands-proposals.json"
+      "FromFile": "assets/translations/uzbek/ui-fish-pond.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/ui-inventory-stats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/ui-island-forge-perfection.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/ui-level-professions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/ui-mobile-tutorials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/ui-multiplayer.json"
     },
     {
       "Action": "Include",
@@ -58,6 +3680,2370 @@
     {
       "Action": "Include",
       "FromFile": "assets/translations/uzbek/ui-wallet-achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/uzbek/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/swahili/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-chair-tiles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-events-desert-festival-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-extra-dialogue-core.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-extra-dialogue-island-birdie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-extra-dialogue-professor-snail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-extra-dialogue-purchases.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-extra-dialogue-skull-system.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-extra-dialogue-summit.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-furniture-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-furniture-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-furniture-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-furniture-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-furniture-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-furniture-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-furniture-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-hair-data.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-hats-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-hats-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-hats-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-mail-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-mail-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-mail-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-mail-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-mail-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-monsters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-npc-gift-tastes-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-npc-gift-tastes-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-npc-gift-tastes-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-paint-data.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-quests-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-quests-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-quests-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-secret-notes-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-secret-notes-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-secret-notes-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-tv-cooking-channel-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-tv-cooking-channel-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-tv-tip-channel-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-tv-tip-channel-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-tv-tip-channel-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/data-tv-tip-channel-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-abigail-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-abigail-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-abigail-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-alex-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-alex-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-alex-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-caroline-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-caroline-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-clint-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-clint-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-demetrius-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-demetrius-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-dwarf.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-elliott-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-elliott-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-emily-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-emily-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-emily-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-evelyn-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-evelyn-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-gil.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-gus-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-gus-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-haley-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-haley-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-haley-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-harvey-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-harvey-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-jas-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-jas-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-jodi-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-jodi-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-kent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-krobus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-leah-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-leah-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-leo-mainland.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-lewis-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-lewis-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-linus-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-linus-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marnie-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marnie-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-abigail-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-abigail-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-alex-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-alex-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-elliott-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-elliott-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-emily-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-emily-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-haley-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-haley-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-harvey-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-harvey-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-krobus-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-krobus-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-leah-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-leah-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-maru-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-maru-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-penny-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-penny-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-sam-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-sam-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-sebastian-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-sebastian-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-shane-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-marriage-shane-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-maru-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-maru-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-maru-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-mister-qi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-pam-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-pam-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-penny-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-penny-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-penny-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-pierre-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-pierre-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-rainy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-robin-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-robin-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-sam-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-sam-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-sam-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-sebastian-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-sebastian-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-sebastian-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-shane-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-shane-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-willy-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-willy-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/dialogue-wizard.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-abandoned-joja-mart.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-animal-shop-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-archaeology-house-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-backwoods-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-bath-house-pool.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-beach-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-beach-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-beach-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-beach-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-beach-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-boat-tunnel-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-bus-stop-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-bus-stop-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-community-center-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-elliott-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-elliott-house-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-09.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-house-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-house-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-house-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-house-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-house-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-farm-house-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-fish-shop-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-forest-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-forest-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-forest-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-forest-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-forest-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-forest-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-forest-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-haley-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-haley-house-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-haley-house-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-harvey-room.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-hospital-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-hospital-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-island-hut-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-island-north-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-island-south-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-island-south-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-island-west-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-josh-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-leah-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-leah-house-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-manor-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-mine.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-mountain-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-mountain-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-mountain-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-qi-nut-room.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-railroad-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-saloon-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-saloon-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-saloon-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-saloon-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sam-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sam-house-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sandy-house.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-science-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-science-house-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sebastian-room-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sebastian-room-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sebastian-room-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sebastian-room-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sebastian-room-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sebastian-room-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-seed-shop-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-seed-shop-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sewer-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-sunroom-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-temp-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-temp-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-09.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-17.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-18.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-19.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-20.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-21.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-town-22.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-trailer-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-trailer-big.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-wizard-house-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events-woods-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-fall16-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-fall16-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-fall16-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-fall27-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-fall27-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-fall27-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-spring13-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-spring13-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-spring13-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-spring24-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-spring24-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-spring24-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-summer11-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-summer11-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-summer11-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-summer11-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-summer28-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-summer28-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-summer28-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-winter25-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-winter25-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-winter25-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-winter8-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-winter8-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/festival-winter8-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/marriage-dialogue-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/marriage-dialogue-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/marriage-dialogue-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/movie-reactions-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/movie-reactions-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/movie-reactions-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-a-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-a-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-b-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-b-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-c-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-c-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-c-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-d-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-f-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-g-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-g-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-h-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-j-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-l-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-m-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-o-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-p-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-p-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-r-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-r-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-s-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-s-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-s-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-t-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-v-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/objects-w-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/simple-non-villager-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/special-order-strings-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/special-order-strings-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/special-order-strings-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/special-order-strings-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-1-6-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-1-6-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-1-6-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-1-6-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-1-6-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-1-6-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-big-craftables-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-big-craftables-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-big-craftables-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-characters-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-characters-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-10.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-12.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-14.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-15.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-17.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-cs-files-9.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-maps-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-maps-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-maps-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-from-maps-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-furniture-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-furniture-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-furniture-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-furniture-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-furniture-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-furniture-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-5.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-6.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-7.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-locations-8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-movies-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-movies-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-notes-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-notes-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-notes-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-notes-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-shirts-1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-shirts-2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-shirts-3.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/strings-shirts-4.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-advanced-options.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-animals-character.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-chat-commands-proposals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-chat-notifications.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-fish-pond.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-inventory-stats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-island-forge-perfection.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-level-professions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-mobile-tutorials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-multiplayer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-profile-tailoring-emotes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui-wallet-achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/amharic/world-map.json"
     }
   ]
 }

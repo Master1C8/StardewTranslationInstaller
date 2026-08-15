@@ -1,0 +1,18 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "am-vnrevival"
+      },
+      "Entries": {
+        "2128292/e 3900074/t 600 630/f Shane 2500/D Shane": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"ሄይ፣ @!$6\"/pause 1000/speak Shane \"እ... ዛሬ ማታ ለቱነለሮች ጨዋታ ሁለት ትኬቶች አግኝቻለሁ።$6\"/pause 2000/speak Shane \"መምጣት ${ከፈለግክ^ከፈለግሽ}$፣ ከቀኑ 5 ሰዓት ገደማ በአውቶቡስ ማቆሚያው አግኘኝ።$6\"/pause 1000/end",
+        "3917587/f Alex 3500/O Alex/t 500 820/M 5000/d Sun/y 2": "continue/-10000 -1000/farmer -100 -100 2 Alex -100 -100 2/warp Alex -100 -100/warp farmer -100 -100/faceDirection Alex 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Alex 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Alex \"ሄይ፣ @። ${ከመውጣትህ^ከመውጣትሽ}$ በፊት...#$b#ይህን መጠየቅ ደስ አይለኝም... ግን 5,000g ልትሰጠኝ ${ትችላለህ^ትችያለሽ}$?#$b#እየሠራሁበት ላለ ሚስጥራዊ ፕሮጀክት ነው... የጋራ የባንክ ሂሳብ እንዳለን አውቃለሁ፣ ግን ቢሆንም መጠየቅ እንዳለብኝ አሰብኩ።\"/pause 1000/question fork0 \"ለሚስጥራዊ ፕሮጀክቱ ለአሌክስ 5,000g ትሰጣለህ?#አዎ#አይ\"/fork giveAlexMoney/playMusic none/pause 1000/emote Alex 12/speak Alex \"በእውነት? እኔን ደስ ለማሰኘት ተራ 5,000g እንኳ አትሰጠኝም?$a#$b#እንዲህ ስስታም ${እንደሆንክ^እንደሆንሽ}$ አላውቅም ነበር...$s\"/pause 500/faceDirection Alex 1 true/pause 100/faceDirection Alex 0/pause 500/emote Alex 28/pause 400/speak Alex \"ትንሽ መዝናናት ብቻ ነበር የፈለግሁት...$s\"/pause 800/playSound doorClose/warp Alex -100 -100/pause 2000/end dialogue Alex \"አሁን ${ላናግርህ^ላናግርሽ}$ አልፈልግም...$s\"",
+        "giveAlexMoney": "pause 200/addMailReceived gaveAlexMoney/money -5000/emote Alex 20/pause 500/speak Alex \"ግሩም! እሁድ ወደ ኮከብ ፍሬ ሳሎን ጎራ በልና የመጨረሻውን ውጤት ${አሳይሃለሁ^አሳይሻለሁ}$!$h\"/pause 500/end",
+        "3917600/f Emily 3500/O Emily/t 500 820": "continue/-10000 -1000/farmer -100 -100 2 Emily -100 -100 2/warp Emily -100 -100/warp farmer -100 -100/faceDirection Emily 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Emily 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Emily \"ሄይ፣ ውዴ... ዛሬ ${ሥራህን^ሥራሽን}$ ${ከመጀመርህ^ከመጀመርሽ}$ በፊት ትንሽ ጊዜ ${አለህ^አለሽ}$?#$b#${ለአንተ^ለአንቺ}$ አንድ ልዩ ነገር እየሠራሁ ነበር... ግን ለመጨረስ ትንሽ እርዳታ ያስፈልገኛል።\"/move farmer 0 -1 0/speak Emily \"ሚስጥር ነው፣ ስለዚህ ምን እንደሆነ ${ልነግርህ^ልነግርሽ}$ አልችልም... ግን 200 ፋይበር ልታመጣልኝ ${ትችላለህ^ትችያለሽ}$?\"/addQuest 126/pause 500/speak Emily \"የሚያስፈልገኝ ያ ብቻ ነው! ዕድሉን ስታገኝ 200ውን ፋይበር አምጣልኝ... አትቸኩል!\"/pause 2000/end dialogue Emily \"በድብቅ እንዳታይ! የመጨረሻውን ውጤት በቅርቡ ${ታየዋለህ^ታዪዋለሽ}$።\"",
+        "3911124/f Leah 3500/O Leah/t 500 820/w sunny/z winter/d Sun": "continue/-10000 -1000/farmer -100 -100 2 Leah -100 -100 2/warp Leah -100 -100/addConversationTopic leahPaint 0/warp farmer -100 -100/faceDirection Leah 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Leah 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Leah \"ሄይ፣ @። አንድ ሐሳብ አለኝ...#$b#ነገ እኩለ ቀን ላይ በሲንደርሳፕ ጫካ እንድታገኘኝ እፈልጋለሁ።#$b#እንዴት ሥዕል መሳል እንደምትችል ${አስተምርሃለሁ^አስተምርሻለሁ}$!$h\"/pause 1000/speak Leah \"የአየር ሁኔታው መጥፎ ከሆነ፣ በሚቀጥለው ቀን እናደርገዋለን። እሺ?\"/emote farmer 32/end dialogue Leah \"የፈጠራ ${ጎንህን^ጎንሽን}$ ትንሽ የበለጠ መመርመር ጥሩ ይሆናል፣ ${አይመስልህም^አይመስልሽም}$?\""
+      }
+    }
+  ]
+}

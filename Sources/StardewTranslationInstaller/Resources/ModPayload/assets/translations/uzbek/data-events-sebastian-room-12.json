@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "uz-vnrevival"
+      },
+      "Entries": {
+        "castBeam": "pause 500/message \"Sehringizni ishlatishga ulgurmasingizdan oldin, Xarth hamrohlaringizga soya nurini yuboradi!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sam va Sebastian qarsillab kuyib ketadi...\"/pause 500/playSound yoba/pause 800/message \"Sehringiz Xarthning yuziga aniq tegadi.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"U qichqirib yuboradi va changga aylanadi. Solarion asosini ko‘tarib olasiz. Dunyoga tinchlik va tartib qaytarildi.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "chargeAhead": "pause 500/message \"Oldinga otilasiz, ammo Xarth yoningizdan sirg‘alib o‘tib, hamrohlaringizga soya nurini yuboradi!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sebastian va Sam qarsillab kuyib ketadi...\"/pause 800/message \"Qilichingizni yana silkitasiz va kuchli zarba berasiz. Xarth qichqirib, changga aylanadi.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Solarion asosini ko‘tarib olasiz. Dunyoga tinchlik va tartib qaytarildi.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

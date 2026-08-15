@@ -162,10 +162,10 @@ jq '.pl["community-center"]' Documentation/glossary/glossary.pl.json
 На этой машине уже подготовлена распакованная английская выборка:
 
 ```text
-/Users/antonkrutov/Documents/Codex/2026-08-09/d/work/stardew-glossary-tools/unpacked-all/
+~/Developer/data/stardew-english-unpacked/
 ```
 
-Сейчас в ней 189 JSON-файлов из `Strings`, `Characters` и `Data`. Начинать нужно именно отсюда. Например:
+Сейчас в ней 187 JSON-файлов из `Strings`, `Characters` и `Data`. Начинать нужно именно отсюда. Например:
 
 ```text
 unpacked-all/Strings/UI.json
@@ -188,10 +188,10 @@ xnbcli оборачивает словарь ассета в верхнеуро�
 
 ```sh
 jq '.content.AcceptQuest' \
-  /Users/antonkrutov/Documents/Codex/2026-08-09/d/work/stardew-glossary-tools/unpacked-all/Strings/UI.json
+  "$HOME/Developer/data/stardew-english-unpacked/Strings/UI.json"
 
 jq '.content | to_entries[0:20]' \
-  /Users/antonkrutov/Documents/Codex/2026-08-09/d/work/stardew-glossary-tools/unpacked-all/Characters/Dialogue/Abigail.json
+  "$HOME/Developer/data/stardew-english-unpacked/Characters/Dialogue/Abigail.json"
 ```
 
 Путь относительно `unpacked-all` даёт Content Patcher target: `Strings/UI.json` превращается в `Strings/UI`, а `Characters/Dialogue/Abigail.json` — в `Characters/Dialogue/Abigail`. В мод переносится не весь xnbcli JSON и не поле `header`, а выбранные ключи из `content` в `Entries` патча.
@@ -221,11 +221,17 @@ Characters/Dialogue/Abigail.ru-RU.xnb ← официальный русский,
 
 Не использовать `*.ru-RU.xnb` и другие файлы с языковым суффиксом как английский источник. Перед новой большой волной перевода сверить версию игры и заново извлечь базовые XNB, если Steam обновил игру.
 
-Подготовленный распаковщик находится здесь:
+Закреплённый локальный распаковщик находится здесь:
 
 ```text
-/Users/antonkrutov/Documents/Codex/2026-08-09/d/work/stardew-glossary-tools/xnbcli/xnbcli
+~/Developer/tools/xnbcli/xnbcli
 ```
+
+Это постоянная локальная копия инструмента, а не путь внутри временного задания
+Codex. Она не входит в Git-репозиторий. Проверенный SHA-256 исполняемого файла:
+`54fff99783dc1946b70214f81e2eff47774acf1829c395f3d9ef147462959aa3`.
+Готовое английское извлечение для аудитов хранится отдельно в
+`~/Developer/data/stardew-english-unpacked/` и также не публикуется в GitHub.
 
 Безопасная схема извлечения:
 
@@ -239,7 +245,7 @@ Characters/Dialogue/Abigail.ru-RU.xnb ← официальный русский,
 ```sh
 SOURCE_ROOT=/private/tmp/stardew-english-source
 GAME_CONTENT='/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/Resources/Content'
-XNBCLI=/Users/antonkrutov/Documents/Codex/2026-08-09/d/work/stardew-glossary-tools/xnbcli/xnbcli
+XNBCLI="${XNBCLI:-$HOME/Developer/tools/xnbcli/xnbcli}"
 
 mkdir -p "$SOURCE_ROOT/packed/Strings" "$SOURCE_ROOT/unpacked"
 cp "$GAME_CONTENT/Strings/UI.xnb" "$SOURCE_ROOT/packed/Strings/UI.xnb"

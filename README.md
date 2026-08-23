@@ -1,8 +1,8 @@
 # Stardew Valley — VN Revival Translation Installer
 
-Единый нативный установщик языковых пакетов VN Revival для Stardew Valley. Текущая сборка за один запуск устанавливает русский, польский, узбекский, суахили и амхарский переводы. Пользователь просто открывает приложение: оно автоматически устанавливает всё необходимое и показывает кнопку запуска игры.
+Единый нативный установщик языковых пакетов VN Revival для Stardew Valley. Текущая сборка за один запуск устанавливает русский, польский, узбекский, суахили, амхарский, канна, малаялам, маратхи и бирманский переводы. Пользователь просто открывает приложение: оно автоматически устанавливает всё необходимое и показывает кнопку запуска игры.
 
-Все языки находятся в одном Content Patcher-пакете, но регистрируются в игре независимо (`ru-vnrevival`, `pl-vnrevival`, `uz-vnrevival`, `sw-vnrevival`, `am-vnrevival`). Интерфейс установщика остаётся однокнопочным; выбора языков перед установкой нет.
+Все языки находятся в одном Content Patcher-пакете, но регистрируются в игре независимо (`ru-vnrevival`, `pl-vnrevival`, `uz-vnrevival`, `sw-vnrevival`, `am-vnrevival`, `kn-vnrevival`, `ml-vnrevival`, `mr-vnrevival`, `my-vnrevival`). Интерфейс установщика остаётся однокнопочным; выбора языков перед установкой нет.
 
 ## Что уже работает
 
@@ -12,7 +12,7 @@
 - проверка SHA-256 каждого загруженного архива до запуска или распаковки;
 - атомарная установка и обновление только принадлежащего приложению мода;
 - запуск игры через Steam одной кнопкой после установки;
-- пять строк языка — `Русский`, `Polski`, `O‘zbek`, `Kiswahili` и `አማርኛ` — в меню выбора языка;
+- девять строк языка — `Русский`, `Polski`, `O‘zbek`, `Kiswahili`, `አማርኛ`, `ಕನ್ನಡ`, `മലയാളം`, `मराठी` и `မြန်မာ` — в меню выбора языка;
 - отдельные кнопки, титульные атласы и локальные шрифты для нужных языков;
 - безопасная миграция старых отдельных пакетов VN Revival в единый пакет;
 - отдельная папка `assets/translations`, куда добавляются патчи перевода.
@@ -80,11 +80,11 @@ git push origin main
 ## Структура мода
 
 - `manifest.json` — метаданные Content Patcher-пакета;
-- `content.json` — регистрация четырёх дополнительных языков и подключение всех переводов;
+- `content.json` — регистрация девяти дополнительных языков и подключение всех переводов;
 - `assets/button*.png` — отдельные двухкадровые кнопки языков;
 - `assets/title/TitleButtons*.png` — локализованные атласы главного меню;
-- `assets/fonts/{russian,polish,amharic}/*.xnb` — локализованные игровые шрифты;
-- `assets/translations/{russian,polish,uzbek,swahili,amharic}/*.json` — языковые патчи с независимыми условиями.
+- `assets/fonts/{russian,polish,amharic,kannada,malayalam,marathi,burmese}/*.xnb` — локализованные игровые шрифты;
+- `assets/translations/{russian,polish,uzbek,swahili,amharic,kannada,malayalam,marathi,burmese}/*.json` — языковые патчи с независимыми условиями.
 
 Официальная документация: [Custom languages](https://stardewvalleywiki.com/Modding:Custom_languages), [Content Patcher](https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/README.md), [SMAPI](https://github.com/Pathoschild/SMAPI).
 

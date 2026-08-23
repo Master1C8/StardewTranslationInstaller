@@ -61,6 +61,54 @@
           "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
           "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
           "NumberComma": " "
+        },
+        "{{ModId}}_Kannada": {
+          "ID": "{{ModId}}_Kannada",
+          "LanguageCode": "kn-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonKannada",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/Kannada",
+          "FontPixelZoom": 3,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
+        },
+        "{{ModId}}_Malayalam": {
+          "ID": "{{ModId}}_Malayalam",
+          "LanguageCode": "ml-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonMalayalam",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/Malayalam",
+          "FontPixelZoom": 3,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
+        },
+        "{{ModId}}_Marathi": {
+          "ID": "{{ModId}}_Marathi",
+          "LanguageCode": "mr-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonMarathi",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/Marathi",
+          "FontPixelZoom": 3,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
+        },
+        "{{ModId}}_Burmese": {
+          "ID": "{{ModId}}_Burmese",
+          "LanguageCode": "my-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonBurmese",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/Burmese",
+          "FontPixelZoom": 3,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
         }
       }
     },
@@ -164,6 +212,138 @@
       "Action": "Load",
       "Target": "Fonts/Amharic_0",
       "FromFile": "assets/fonts/amharic/Amharic_0.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonKannada",
+      "FromFile": "assets/button-kannada.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "kn-vnrevival",
+      "FromFile": "assets/title/TitleButtons-kannada.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "kn-vnrevival",
+      "FromFile": "assets/fonts/kannada/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "kn-vnrevival",
+      "FromFile": "assets/fonts/kannada/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Kannada",
+      "FromFile": "assets/fonts/kannada/Kannada.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Kannada_0",
+      "FromFile": "assets/fonts/kannada/Kannada_0.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonMalayalam",
+      "FromFile": "assets/button-malayalam.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "ml-vnrevival",
+      "FromFile": "assets/title/TitleButtons-malayalam.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "ml-vnrevival",
+      "FromFile": "assets/fonts/malayalam/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "ml-vnrevival",
+      "FromFile": "assets/fonts/malayalam/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Malayalam",
+      "FromFile": "assets/fonts/malayalam/Malayalam.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Malayalam_0",
+      "FromFile": "assets/fonts/malayalam/Malayalam_0.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonMarathi",
+      "FromFile": "assets/button-marathi.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "mr-vnrevival",
+      "FromFile": "assets/title/TitleButtons-marathi.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "mr-vnrevival",
+      "FromFile": "assets/fonts/marathi/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "mr-vnrevival",
+      "FromFile": "assets/fonts/marathi/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Marathi",
+      "FromFile": "assets/fonts/marathi/Marathi.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Marathi_0",
+      "FromFile": "assets/fonts/marathi/Marathi_0.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonBurmese",
+      "FromFile": "assets/button-burmese.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "my-vnrevival",
+      "FromFile": "assets/title/TitleButtons-burmese.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "my-vnrevival",
+      "FromFile": "assets/fonts/burmese/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "my-vnrevival",
+      "FromFile": "assets/fonts/burmese/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Burmese",
+      "FromFile": "assets/fonts/burmese/Burmese.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Burmese_0",
+      "FromFile": "assets/fonts/burmese/Burmese_0.xnb"
     },
     {
       "Action": "Include",
@@ -6044,6 +6224,2422 @@
     {
       "Action": "Include",
       "FromFile": "assets/translations/amharic/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/kannada/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/malayalam/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/marathi/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/burmese/world-map.json"
     }
   ]
 }

@@ -6,12 +6,15 @@ cd "$project_dir"
 
 export DEVELOPER_DIR="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Developer}"
 export CLANG_MODULE_CACHE_PATH="${CLANG_MODULE_CACHE_PATH:-/private/tmp/stardew-installer-swift-cache}"
+export SWIFT_MODULECACHE_PATH="${SWIFT_MODULECACHE_PATH:-$CLANG_MODULE_CACHE_PATH}"
+export SWIFTPM_MODULECACHE_OVERRIDE="${SWIFTPM_MODULECACHE_OVERRIDE:-$CLANG_MODULE_CACHE_PATH}"
+scratch_path="${VN_SWIFT_SCRATCH_PATH:-$project_dir/.build}"
 
-swift build -c release --disable-sandbox
+swift build -c release --disable-sandbox --scratch-path "$scratch_path"
 
 app="$project_dir/dist/Stardew Translation Installer.app"
-binary="$project_dir/.build/release/StardewTranslationInstaller"
-resource_bundle="$project_dir/.build/release/StardewTranslationInstaller_StardewTranslationInstaller.bundle"
+binary="$scratch_path/release/StardewTranslationInstaller"
+resource_bundle="$scratch_path/release/StardewTranslationInstaller_StardewTranslationInstaller.bundle"
 
 # The app is a generated artifact. Recreate it so deleted resources can never
 # survive an incremental build through cp -R's merge behavior.

@@ -124,6 +124,22 @@ const languages = [
       { target: "Fonts/Burmese_0", file: "assets/fonts/burmese/Burmese_0.xnb" },
     ],
   },
+  {
+    directory: "telugu",
+    suffix: "Telugu",
+    code: "te-vnrevival",
+    buttonTarget: "ButtonTelugu",
+    button: "assets/button-telugu.png",
+    title: "assets/title/TitleButtons-telugu.png",
+    fonts: "assets/fonts/telugu",
+    useLatinFont: false,
+    fontFile: "Fonts/Telugu",
+    fontPixelZoom: 3,
+    bitmapFonts: [
+      { target: "Fonts/Telugu", file: "assets/fonts/telugu/Telugu.xnb" },
+      { target: "Fonts/Telugu_0", file: "assets/fonts/telugu/Telugu_0.xnb" },
+    ],
+  },
 ];
 
 const entries = {};

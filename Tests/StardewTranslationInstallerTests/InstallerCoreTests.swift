@@ -76,7 +76,7 @@ final class InstallerCoreTests: XCTestCase {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival"])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales.count == 43)
     }
@@ -97,7 +97,7 @@ final class InstallerCoreTests: XCTestCase {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 9)
+        expect(languageEntries.count == 10)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "pl-vnrevival": ("ButtonPolish", "assets/button.png", "assets/title/TitleButtons.png"),
@@ -108,6 +108,7 @@ final class InstallerCoreTests: XCTestCase {
             "ml-vnrevival": ("ButtonMalayalam", "assets/button-malayalam.png", "assets/title/TitleButtons-malayalam.png"),
             "mr-vnrevival": ("ButtonMarathi", "assets/button-marathi.png", "assets/title/TitleButtons-marathi.png"),
             "my-vnrevival": ("ButtonBurmese", "assets/button-burmese.png", "assets/title/TitleButtons-burmese.png"),
+            "te-vnrevival": ("ButtonTelugu", "assets/button-telugu.png", "assets/title/TitleButtons-telugu.png"),
         ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
@@ -115,7 +116,7 @@ final class InstallerCoreTests: XCTestCase {
                 ($0["LanguageCode"] as? String) == code
             })
             expect(language["ButtonTexture"] as? String == "Mods/{{ModId}}/\(expected.0)")
-            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival"].contains(code))
+            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival"].contains(code))
             if code == "ru-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Russian")
                 expect(language["FontPixelZoom"] as? Int == 3)
@@ -140,6 +141,10 @@ final class InstallerCoreTests: XCTestCase {
                 expect(language["FontFile"] as? String == "Fonts/Burmese")
                 expect(language["FontPixelZoom"] as? Int == 3)
             }
+            if code == "te-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/Telugu")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
             let button = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
                     && ($0["Target"] as? String) == "Mods/{{ModId}}/\(expected.0)"
@@ -161,6 +166,7 @@ final class InstallerCoreTests: XCTestCase {
             ("ml-vnrevival", "malayalam"),
             ("mr-vnrevival", "marathi"),
             ("my-vnrevival", "burmese"),
+            ("te-vnrevival", "telugu"),
         ] {
           for target in ["Fonts/SpriteFont1", "Fonts/SmallFont"] {
             let font = try require(changes.first {
@@ -186,6 +192,8 @@ final class InstallerCoreTests: XCTestCase {
             ("Fonts/Marathi_0", "assets/fonts/marathi/Marathi_0.xnb"),
             ("Fonts/Burmese", "assets/fonts/burmese/Burmese.xnb"),
             ("Fonts/Burmese_0", "assets/fonts/burmese/Burmese_0.xnb"),
+            ("Fonts/Telugu", "assets/fonts/telugu/Telugu.xnb"),
+            ("Fonts/Telugu_0", "assets/fonts/telugu/Telugu_0.xnb"),
         ] {
             let font = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
@@ -256,6 +264,19 @@ final class InstallerCoreTests: XCTestCase {
             "assets/fonts/burmese/Burmese_0.xnb": "b9b9674065a2f72e335bce2ff979667d96ab763c125cb2bdde701560e48a492d",
         ]
         for (fontPath, expectedHash) in burmeseFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
+        let teluguFontHashes = [
+            "assets/fonts/telugu/SpriteFont1.xnb": "5f4eff41593621d02d692fea24d25fddcebef1f4cf642d87f8775143e11217be",
+            "assets/fonts/telugu/SmallFont.xnb": "5b897d77f962d01da2b53cc7a989ce407249951f372ce3ac9bf161139c80a222",
+            "assets/fonts/telugu/Telugu.xnb": "7777ddcee358c81a24184cdf9159600b491a58067b5f711e4e8965563602d001",
+            "assets/fonts/telugu/Telugu_0.xnb": "34852dbc004ce9e56480a6fcb2a423689e156da56780957362fd6ff6004ab31f",
+        ]
+        for (fontPath, expectedHash) in teluguFontHashes {
             try expect(
                 try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
                     == expectedHash
@@ -354,6 +375,19 @@ final class InstallerCoreTests: XCTestCase {
                 of: payload.appendingPathComponent("assets/title/TitleButtons-burmese.png")
             ) == "76d20f9fa6612f0c44c8d7b9c818d4e97b183cd6dc602b87c60e67500032ece1"
         )
+
+        try expect(try pngDimensions("assets/button-telugu.png") == (174, 78))
+        try expect(try pngDimensions("assets/title/TitleButtons-telugu.png") == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/button-telugu.png")
+            ) == "c4d5911f337dd0787d6f0eb78ee0c529c959241b1a29cc1c65df88a767f49835"
+        )
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/title/TitleButtons-telugu.png")
+            ) == "8568fe1e6852be1f6ae4bd47005c6b70ae53dc10783cc614f23da9360a182b19"
+        )
     }
 
     func testInstallsLanguageSwitcher() throws {
@@ -397,7 +431,7 @@ final class InstallerCoreTests: XCTestCase {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 2_074)
+        expect(includes.count == 2_225)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var malayalamPrivateUseGlyphs = 0
@@ -406,6 +440,8 @@ final class InstallerCoreTests: XCTestCase {
         var rawMarathiScalars = 0
         var burmesePrivateUseGlyphs = 0
         var rawBurmeseScalars = 0
+        var teluguPrivateUseGlyphs = 0
+        var rawTeluguScalars = 0
 
         for include in includes {
             let relativePath = try require(include["FromFile"] as? String)
@@ -434,6 +470,8 @@ final class InstallerCoreTests: XCTestCase {
                 expectedLanguage = "mr-vnrevival"
             } else if relativePath.contains("/burmese/") {
                 expectedLanguage = "my-vnrevival"
+            } else if relativePath.contains("/telugu/") {
+                expectedLanguage = "te-vnrevival"
             } else {
                 expectedLanguage = "kn-vnrevival"
             }
@@ -482,6 +520,19 @@ final class InstallerCoreTests: XCTestCase {
                         }
                     }
                 }
+                if expectedLanguage == "te-vnrevival" {
+                    let entries = try require(change["Entries"] as? [String: String])
+                    for value in entries.values {
+                        for scalar in value.unicodeScalars {
+                            if (0xE000...0xF8FF).contains(scalar.value) {
+                                teluguPrivateUseGlyphs += 1
+                            }
+                            if (0x0C00...0x0C7F).contains(scalar.value) {
+                                rawTeluguScalars += 1
+                            }
+                        }
+                    }
+                }
             }
         }
         expect(malayalamPrivateUseGlyphs > 100_000)
@@ -490,6 +541,8 @@ final class InstallerCoreTests: XCTestCase {
         expect(rawMarathiScalars == 0)
         expect(burmesePrivateUseGlyphs > 100_000)
         expect(rawBurmeseScalars == 0)
+        expect(teluguPrivateUseGlyphs > 100_000)
+        expect(rawTeluguScalars == 0)
     }
 
     func testComputesChecksum() throws {

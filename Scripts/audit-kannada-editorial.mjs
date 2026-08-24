@@ -499,6 +499,17 @@ if (needsGlossaryContext) {
         if (form.id === "loot-drop" && form.sourceTerm === "drop"
             && translatedSemantic.includes("ಬೀಳ")) return true;
         if (translatedSemantic.includes(target)) return true;
+        if (targetLocale === "te") {
+          // Telugu commonly drops a citation-form ending before case suffixes:
+          // పట్టణం -> పట్టణానికి, గనులు -> గనుల్లో. Accept those regular
+          // inflections without treating unrelated synonyms as glossary hits.
+          if (target.endsWith("ం") && target.length > 2
+              && translatedSemantic.includes(target.slice(0, -1))) return true;
+          if (target.endsWith("లు") && target.length > 3
+              && translatedSemantic.includes(target.slice(0, -1))) return true;
+          if (target.endsWith("ుడు") && target.length > 4
+              && translatedSemantic.includes(target.slice(0, -3))) return true;
+        }
         const letters = [...target];
         // Kannada plural nouns drop their final ಉ before many case suffixes:
         // ಗಣಿಗಳು -> ಗಣಿಗಳಲ್ಲಿ / ಗಣಿಗಳನ್ನು. Accept that grammatical form.

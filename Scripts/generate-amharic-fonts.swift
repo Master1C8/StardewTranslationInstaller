@@ -538,6 +538,7 @@ do {
     }
     requiredCharacters.insert("Ё")
     requiredCharacters.insert("ё")
+    requiredCharacters.formUnion(renderTextByCharacter.keys)
     let enumerator = FileManager.default.enumerator(
         at: translationsDirectory,
         includingPropertiesForKeys: [.isRegularFileKey]

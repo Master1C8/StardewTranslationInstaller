@@ -76,7 +76,7 @@ final class InstallerCoreTests: XCTestCase {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival"])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales.count == 43)
     }
@@ -97,7 +97,7 @@ final class InstallerCoreTests: XCTestCase {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 10)
+        expect(languageEntries.count == 11)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "pl-vnrevival": ("ButtonPolish", "assets/button.png", "assets/title/TitleButtons.png"),
@@ -109,6 +109,7 @@ final class InstallerCoreTests: XCTestCase {
             "mr-vnrevival": ("ButtonMarathi", "assets/button-marathi.png", "assets/title/TitleButtons-marathi.png"),
             "my-vnrevival": ("ButtonBurmese", "assets/button-burmese.png", "assets/title/TitleButtons-burmese.png"),
             "te-vnrevival": ("ButtonTelugu", "assets/button-telugu.png", "assets/title/TitleButtons-telugu.png"),
+            "ur-vnrevival": ("ButtonUrdu", "assets/button-urdu.png", "assets/title/TitleButtons-urdu.png"),
         ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
@@ -116,7 +117,7 @@ final class InstallerCoreTests: XCTestCase {
                 ($0["LanguageCode"] as? String) == code
             })
             expect(language["ButtonTexture"] as? String == "Mods/{{ModId}}/\(expected.0)")
-            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival"].contains(code))
+            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival"].contains(code))
             if code == "ru-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Russian")
                 expect(language["FontPixelZoom"] as? Int == 3)
@@ -145,6 +146,10 @@ final class InstallerCoreTests: XCTestCase {
                 expect(language["FontFile"] as? String == "Fonts/Telugu")
                 expect(language["FontPixelZoom"] as? Int == 3)
             }
+            if code == "ur-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/Urdu")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
             let button = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
                     && ($0["Target"] as? String) == "Mods/{{ModId}}/\(expected.0)"
@@ -167,6 +172,7 @@ final class InstallerCoreTests: XCTestCase {
             ("mr-vnrevival", "marathi"),
             ("my-vnrevival", "burmese"),
             ("te-vnrevival", "telugu"),
+            ("ur-vnrevival", "urdu"),
         ] {
           for target in ["Fonts/SpriteFont1", "Fonts/SmallFont"] {
             let font = try require(changes.first {
@@ -194,6 +200,8 @@ final class InstallerCoreTests: XCTestCase {
             ("Fonts/Burmese_0", "assets/fonts/burmese/Burmese_0.xnb"),
             ("Fonts/Telugu", "assets/fonts/telugu/Telugu.xnb"),
             ("Fonts/Telugu_0", "assets/fonts/telugu/Telugu_0.xnb"),
+            ("Fonts/Urdu", "assets/fonts/urdu/Urdu.xnb"),
+            ("Fonts/Urdu_0", "assets/fonts/urdu/Urdu_0.xnb"),
         ] {
             let font = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
@@ -277,6 +285,19 @@ final class InstallerCoreTests: XCTestCase {
             "assets/fonts/telugu/Telugu_0.xnb": "34852dbc004ce9e56480a6fcb2a423689e156da56780957362fd6ff6004ab31f",
         ]
         for (fontPath, expectedHash) in teluguFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
+        let urduFontHashes = [
+            "assets/fonts/urdu/SpriteFont1.xnb": "f7b64f70ac22194b944d807a41a61b186d2683036ca0bff8d19ef8fde9370fe3",
+            "assets/fonts/urdu/SmallFont.xnb": "ddaee34a326858e4a8f56a3229136fbde712cd16a7af50effbd931a16b8ce87a",
+            "assets/fonts/urdu/Urdu.xnb": "a5cf673f0d49a3cce99fa46cfcda5234cfd49a001d8f83c3f85ebc8bac105e89",
+            "assets/fonts/urdu/Urdu_0.xnb": "d124da8590f72568290d03e03b9bb07d03e2697067ca30f270c965a56264e1d0",
+        ]
+        for (fontPath, expectedHash) in urduFontHashes {
             try expect(
                 try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
                     == expectedHash
@@ -388,6 +409,19 @@ final class InstallerCoreTests: XCTestCase {
                 of: payload.appendingPathComponent("assets/title/TitleButtons-telugu.png")
             ) == "8568fe1e6852be1f6ae4bd47005c6b70ae53dc10783cc614f23da9360a182b19"
         )
+
+        try expect(try pngDimensions("assets/button-urdu.png") == (174, 78))
+        try expect(try pngDimensions("assets/title/TitleButtons-urdu.png") == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/button-urdu.png")
+            ) == "17725d462ff0d357f42ebc29782abea5314b530293dbc3f9fc509231786abc3a"
+        )
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/title/TitleButtons-urdu.png")
+            ) == "726e4ab46a89bfd78295316a51becf213a792949be965e4b7fc2ca96edc856b8"
+        )
     }
 
     func testInstallsLanguageSwitcher() throws {
@@ -403,6 +437,15 @@ final class InstallerCoreTests: XCTestCase {
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
+        let urduShapingMap = try require(
+            JSONSerialization.jsonObject(
+                with: Data(contentsOf: source.appendingPathComponent("urdu-shaping-map.json"))
+            ) as? [String: Any]
+        )
+        expect(urduShapingMap["format"] as? Int == 2)
+        let urduShapingEntries = try require(urduShapingMap["entries"] as? [[String: Any]])
+        expect(urduShapingEntries.count == 282)
+        expect(Set(urduShapingEntries.compactMap { $0["glyph"] as? String }).count == 282)
 
         let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         defer { try? fm.removeItem(at: temporary) }
@@ -431,7 +474,7 @@ final class InstallerCoreTests: XCTestCase {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 2_225)
+        expect(includes.count == 2_688)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var malayalamPrivateUseGlyphs = 0
@@ -472,6 +515,8 @@ final class InstallerCoreTests: XCTestCase {
                 expectedLanguage = "my-vnrevival"
             } else if relativePath.contains("/telugu/") {
                 expectedLanguage = "te-vnrevival"
+            } else if relativePath.contains("/urdu/") {
+                expectedLanguage = "ur-vnrevival"
             } else {
                 expectedLanguage = "kn-vnrevival"
             }

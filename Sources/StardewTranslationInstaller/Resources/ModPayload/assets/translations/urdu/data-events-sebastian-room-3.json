@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "warrior": "pause 500/speak Sebastian \"اچھا انتخاب ہے۔ شاید نئے کھلاڑیوں کے لیے جنگجو سب سے آسان ہے۔$7#$b#تو پھر میرا خیال ہے میں جادوگر چنتا ہوں۔\"/emote Sam 28/speak Sam \"لگتا ہے میرے حصے میں شفا گر ہی آیا ہے۔$s\"/addMailReceived choseWarrior/switchEvent opening",
+        "healer": "pause 500/speak Sebastian \"شفا گر، ہاں؟ یہ بہت اہم کردار ہے۔$7#$b#تو پھر میرا خیال ہے میں جادوگر چنتا ہوں۔\"/speak Sam \"خوب۔ ویسے بھی جنگجو میرا پسندیدہ ہے۔\"/addMailReceived choseHealer/switchEvent opening"
+      }
+    }
+  ]
+}

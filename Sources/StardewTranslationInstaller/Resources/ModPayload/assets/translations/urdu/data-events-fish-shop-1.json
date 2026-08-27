@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FishShop",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"آہوئے!\"/pause 500/move Willy 1 0 2/speak Willy \"اندر آؤ۔۔۔ اسے اپنا گھر سمجھو۔۔۔\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"ہاں۔۔۔ یہ اچھی چیز ہے۔ مچھلیاں اس کے لیے پاگل ہو جاتی ہیں۔#$b#بس۔۔۔ اہ۔۔۔ ان رسوں میں ہاتھ ڈالنے کے بعد انہیں اچھی طرح دھونا۔۔۔$s\"/speak Willy \"اس کی بو سات ہفتوں تک باقی رہ سکتی ہے، ${lad^miss}$۔۔۔\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"تو۔۔۔ تم بہت سی مچھلیاں پکڑ رہے ہو؟\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #ہاں#نہیں#یہ بہت مشکل ہے۔۔۔(break)emote Willy 20\\speak Willy \"آہا! ایک ${man^lady}$ بالکل میرے دل جیسا۔۔۔$h\"\\pause 500\\speak Willy \"تم ہمیشہ ${trust a fisherman^count on a lady who fishes}$ سکتے ہو۔۔۔\"\\speak Willy \"کم از کم میرے بوڑھے ابا یہی کہا کرتے تھے۔ ہاہا!$h#$b#خیر، جاری رکھو۔۔۔ اگر ان پانیوں کی ہر مچھلی پکڑ لو تو میرے پاس تمہارے لیے خاص انعام ہے۔۔۔\"(break)emote Willy 28\\speak Willy \"ماہی گیری پسند نہیں، ہے نا؟ یہ افسوس کی بات ہے۔۔۔$s\"(break)emote Willy 16\\speak Willy \"ہاں، یہ مشکل کھیل ہے۔۔۔ خاص طور پر نوآموز کے لیے۔#$b#کیا تم نے 'تربیتی چھڑی' آزمائی ہے؟ میں اسے یہیں بہت کم قیمت پر بیچتا ہوں۔#$b#کچھ تجربہ حاصل ہونے تک 'تربیتی چھڑی' استعمال کرنے کی کوشش کرو۔\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #کیا مسئلہ ہے؟#سب ٹھیک ہے؟(break)pause 100(break)pause 100/pause 400/speak Willy \"ہاں۔۔۔ خیر، کاروبار حال ہی میں مشکل رہا ہے۔$s#$b#یہ سب تقریباً اسی وقت شروع ہوا جب پرانا کمیونٹی سینٹر برباد ہوا۔۔۔ میری مچھلیاں پہلے جیسی نہیں بکتیں۔۔۔#$b#گزارا کرنے کے لیے دوگنا کام کر رہا ہوں!\"/faceDirection Willy 2/pause 300/speak Willy \"اپنے منصوبوں کے لیے وقت ہی نہیں۔۔۔$s#$b#مگر یہاں حالات پھر بہتر ہوئے تو شاید تمہیں کچھ دکھانے کا وقت مل جائے۔۔۔\"/move Willy -1 0 0/playMusic none/speak Willy \"ہی ہی۔۔۔ ہاں۔ وہ پیچھے ہے۔۔۔ ایک 'پرانی دوست' جس نے بہتر دن دیکھے ہیں۔۔۔$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"کسی دن، ${lad^miss}$۔۔۔ تم میرا مطلب سمجھ جاؤ گے۔\"/pause 2000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0291-bath-house-pool-events",
+  "reviewedAt": "2026-08-27",
+  "simplePreserved": {
+    "target": "Data/Events/BathHouse_Pool",
+    "reason": "Penny heartbreak branch contains only movement, animation, camera, swimming-state, and event-routing commands with no player-facing prose.",
+    "keys": ["pennyHeartbroken"]
+  },
+  "records": [
+    {
+      "target": "Data/Events/BathHouse_Pool",
+      "key": "38/f Penny 2500/t 1900 2400/n pennySpa",
+      "eventSegments": [
+        ["There you are... I was worried you didn't get my note.$6", "تم آ گئے۔۔۔ مجھے فکر تھی شاید تمہیں میرا خط نہیں ملا۔$6"],
+        ["It looks like we're alone.$8", "لگتا ہے ہم اکیلے ہیں۔$8"],
+        ["The water feels so good after being out in the cold of night, doesn't it?$6", "رات کی سردی میں باہر رہنے کے بعد پانی کتنا اچھا لگ رہا ہے، ہے نا؟$6"],
+        ["$q -1 null#Do you know why I asked you here tonight?$8#$r -1 0 event_pool1#You have something to tell me.#$r -1 0 event_pool2#I'm not exactly sure.#$r -1 0 event_pool3#You wanted to see me in my bathing suit.", "$q -1 null#جانتے ہو میں نے آج رات تمہیں یہاں کیوں بلایا؟$8#$r -1 0 event_pool1#تمہیں مجھ سے کچھ کہنا ہے۔#$r -1 0 event_pool2#مجھے ٹھیک سے معلوم نہیں۔#$r -1 0 event_pool3#تم مجھے نہانے کے لباس میں دیکھنا چاہتی تھیں۔"],
+        ["Um, how do I say this...$8", "ام، یہ کیسے کہوں۔۔۔$8"],
+        ["I've been meaning to tell you for a while now... about how I feel.$8#$b#I can't stop thinking about you...$8#$b#I've never felt this way about anyone.$8", "میں کافی عرصے سے تمہیں بتانا چاہتی تھی۔۔۔ اپنے احساسات کے بارے میں۔$8#$b#میں تمہارے بارے میں سوچنا نہیں روک سکتی۔۔۔$8#$b#میں نے کبھی کسی کے لیے ایسا محسوس نہیں کیا۔$8"],
+        ["$q -1 null#...$8#$r -1 0 event_pool4#I feel the same way about you.#$r -1 -1500 event_pool5#Sorry, but I don't like you in that way...", "$q -1 null#۔۔۔$8#$r -1 0 event_pool4#میں بھی تمہارے لیے ایسا ہی محسوس کرتا ہوں۔#$r -1 -1500 event_pool5#معذرت، مگر میں تمہیں اس طرح پسند نہیں کرتا۔۔۔"]
+      ]
+    }
+  ]
+}

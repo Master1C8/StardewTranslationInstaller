@@ -1,0 +1,51 @@
+{
+  "id": "0371-ui-g",
+  "reviewedAt": "2026-08-27",
+  "simpleTarget": {
+    "target": "Strings/UI",
+    "entries": {
+      "Server_InviteCode": ["Invite code: {0}", "دعوت رمز: {0}"],
+      "Server_InviteCode_Copied": ["Copied to clipboard", "تختہ تراشہ پر نقل ہو گیا"],
+      "Server_InviteCode_CopyFailed": ["Unable to copy to clipboard", "تختہ تراشہ پر نقل نہیں ہو سکا"],
+      "ProposalWithdrawn": ["{0} canceled the request.", "{0} نے درخواست منسوخ کر دی۔"],
+      "PendingProposal_Canceling": ["Canceling request...", "درخواست منسوخ ہو رہی ہے۔۔۔"],
+      "CoopMenu_InternetCommunication": ["Online Communication", "آن لائن رابطہ"],
+      "CoopMenu_LocalCommunication": ["Local Communication", "مقامی رابطہ"],
+      "TrashCanSale": ["Reclaim", "واپس حاصل کریں"],
+      "ItemList_ItemsLost": ["Items Lost:", "کھوئی اشیا:"],
+      "ItemList_ItemsLostValue": ["Total Value: {0}g", "کل قیمت: {0}g"],
+      "Collections_Letters": ["Letters", "خطوط"],
+      "Chat_ErrorMessageFormat": ["[Error] {0}", "[خرابی] {0}"],
+      "Chat_PrivateMessageFormat": ["{0} [Private]: {1}", "{0} [نجی]: {1}"],
+      "Chat_PlayerJoined": ["{0} has joined.", "{0} شامل ہو گیا۔"],
+      "Chat_PlayerJoinedNewName": ["Unnamed Farmhand", "بے نام کھیت مزدور"],
+      "Chat_PlayerDeath": ["{0} was knocked unconscious.", "{0} بے ہوش ہو گیا۔"],
+      "Chat_CaughtLegendaryFish": ["{0} caught the legendary '{1}' fish.", "{0} نے افسانوی '{1}' مچھلی پکڑ لی۔"],
+      "Chat_TrashCan": ["{1} caught {0} digging through the trash...", "{1} نے {0} کو کوڑا کھنگالتے پکڑ لیا۔۔۔"],
+      "Chat_LinusTrashCan": ["Linus was impressed!", "لائنس متاثر ہوا!"],
+      "Chat_Bundle": ["Bundle complete!", "گٹھڑی مکمل!"],
+      "Chat_Stardrop": ["{0} found a stardrop.", "{0} کو اسٹارڈراپ مل گیا۔"],
+      "Chat_HorseNamed": ["{0} named a horse {1}.", "{0} نے گھوڑے کا نام {1} رکھا۔"],
+      "Chat_PrairieKing": ["{0} beat Journey of the Prairie King.", "{0} نے پریری کنگ کا سفر مکمل کر لیا۔"],
+      "Chat_JunimoKart": ["{0} beat Junimo Kart.", "{0} نے جونی مو کارٹ مکمل کر لیا۔"],
+      "Chat_Dating": ["{0} is dating {1}.", "{0}، {1} سے محبت کر رہا ہے۔"],
+      "Chat_BreakUp": ["{0} broke up with {1}.", "{0} نے {1} سے رشتہ توڑ لیا۔"],
+      "Chat_Engaged": ["{0} got engaged to {1}.", "{0} کی {1} سے منگنی ہو گئی۔"],
+      "Chat_MuseumComplete": ["{0} Farm has completed the museum collection.", "{0} کھیت نے عجائب گھر مجموعہ مکمل کر لیا۔"],
+      "Chat_Museum40": ["{0} Farm has donated 40 pieces to the museum.", "{0} کھیت نے عجائب گھر کو 40 اشیا عطیہ کر دی ہیں۔"],
+      "Chat_donation": ["{0} donated '{1}' to the museum.", "{0} نے عجائب گھر کو '{1}' عطیہ کیا۔"],
+      "Chat_Walked10k": ["{0} has walked 10,000 paces.", "{0} نے 10,000 قدم چل لیے۔"],
+      "Chat_Walked100k": ["{0} has walked 100,000 paces.", "{0} نے 100,000 قدم چل لیے۔"]
+    }
+  },
+  "simplePreserved": {
+    "target": "Strings/UI",
+    "reason": "These chat entries contain only placeholders, punctuation, or an unknown-speaker symbol and have no lexical content to translate.",
+    "keys": [
+      "Chat_UnknownUserName",
+      "Chat_PlayerName",
+      "Chat_ChatMessageFormat",
+      "Chat_UserNotificationMessageFormat"
+    ]
+  }
+}

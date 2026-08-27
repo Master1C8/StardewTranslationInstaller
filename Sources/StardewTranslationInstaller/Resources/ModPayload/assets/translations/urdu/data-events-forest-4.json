@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "choseMinerals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"ہاں، ونسنٹ؟\"/speak Vincent \"کسان @؟ کیا یہ سچ ہے کہ غاروں کی گہرائی میں گوبلن رہتے ہیں۔۔۔ اور وہ ننھی لڑکیوں کو رات کے کھانے کے لیے اغوا کرنا پسند کرتے ہیں؟\"/jump Jas/pause 800/faceDirection Jas 3/emote Jas 28/animate farmer false true 100 102 103/speak Penny \"ونسنٹ! تم جاس کو ڈرا رہے ہو۔ عفریتوں کی بات نہ کریں۔$a\"/faceDirection Penny 1/faceDirection Jas 0/emote Penny 12/pause 400/stopAnimation farmer/pause 300/faceDirection farmer 3/emote farmer 40/faceDirection Penny 2/faceDirection farmer 2/switchEvent fieldTripEnd"
+      }
+    }
+  ]
+}

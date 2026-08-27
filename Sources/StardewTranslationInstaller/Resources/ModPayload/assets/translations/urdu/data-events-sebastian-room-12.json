@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "castBeam": "pause 500/message \"تمہیں اپنا منتر چلانے کا موقع ملنے سے پہلے زارتھ تمہارے ساتھیوں پر سایہ شعاع پھینک دیتا ہے!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"سیم اور سباسچین جل کر راکھ ہو جاتے ہیں۔۔۔\"/pause 500/playSound yoba/pause 800/message \"تمہارا منتر سیدھا زارتھ کے چہرے پر لگتا ہے۔\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"وہ چیخ مارتا ہے اور مٹی بن کر بکھر جاتا ہے۔ تم سولیرین عصا اٹھا کر بلند کرتے ہو۔ دنیا میں امن و نظم بحال ہو گیا ہے۔\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "chargeAhead": "pause 500/message \"تم آگے لپکتے ہو، مگر زارتھ تمہارے پاس سے نکل کر ساتھیوں پر سایہ شعاع پھینک دیتا ہے!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"سباسچین اور سیم جل کر راکھ ہو جاتے ہیں۔۔۔\"/pause 800/message \"تم دوبارہ تلوار چلا کر زوردار وار کرتے ہو۔ زارتھ چیختا ہے اور مٹی بن کر بکھر جاتا ہے۔\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"تم سولیرین عصا اٹھا کر بلند کرتے ہو۔ دنیا میں امن و نظم بحال ہو گیا ہے۔\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

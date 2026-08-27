@@ -1,0 +1,54 @@
+{
+  "id": "0274-sam-house-events-b",
+  "reviewedAt": "2026-08-27",
+  "records": [
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "46/f Sam 1000/p Sam",
+      "eventSegments": [
+        ["Oh, hi @. I was just about to have a snack.", "اوہ، سلام @۔ میں بس کچھ کھانے والا تھا۔"],
+        ["Here, let me get something for you.", "یہاں رکو، تمہارے لیے بھی کچھ لاتا ہوں۔"],
+        ["Oh no... What a mess.$s", "اوہ نہیں۔۔۔ کتنی گندگی ہو گئی۔$s"],
+        ["What was that sound?", "یہ کیسی آواز تھی؟"],
+        ["*gasp*$s", "*ہانپنا*$s"],
+        ["This is absolutely terrible! What happened?$u", "یہ تو بہت برا ہوا! کیا ہوا تھا؟$u"],
+        ["$q 80 null#...Tell her, @.$s#$r 80 -10 event_snack1#Sam dropped the snack as he was handing it to me.#$r 80 50 event_snack2#Sam handed me the snack and then I dropped it.#$r 81 -50 event_snack3#Sam dropped it on purpose. He thought it would be funny.", "$q 80 null#۔۔۔انہیں بتاؤ، @۔$s#$r 80 -10 event_snack1#سیم نے مجھے دیتے وقت کھانا گرا دیا۔#$r 80 50 event_snack2#سیم نے مجھے کھانا دیا اور پھر مجھ سے گر گیا۔#$r 81 -50 event_snack3#سیم نے جان بوجھ کر گرایا۔ اسے لگا یہ مزے دار ہو گا۔"],
+        ["$p 80#Thanks for telling me the truth, @. It's not such a big deal.|You did WHAT, Sam?! What's gotten into you?!$u", "$p 80#سچ بتانے کا شکریہ، @۔ یہ کوئی اتنی بڑی بات نہیں۔|تم نے کیا کیا، سیم؟! تمہیں کیا ہو گیا ہے؟!$u"],
+        ["I'm sorry about this, mom. I'll clean it up.$s", "اس کے لیے معذرت، امی۔ میں صاف کر دوں گا۔$s"],
+        ["Thanks, honey.$h", "شکریہ، بیٹا۔$h"],
+        ["$p 81#I'm angry at you. I have no idea why you lied like that.$s|Sorry about what happened earlier.", "$p 81#میں تم سے ناراض ہوں۔ سمجھ نہیں آتا تم نے ایسا جھوٹ کیوں بولا۔$s|پہلے جو ہوا، اس کے لیے معذرت۔"]
+      ]
+    },
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "44/f Sam 500/p Sam",
+      "eventSegments": [
+        ["Oh, hi @! Sebastian and I were just having a little 'jam session'.", "اوہ، سلام @! سیبیسچن اور میں بس تھوڑی سی 'جیم نشست' کر رہے تھے۔"],
+        ["We're trying to start a band, but we still don't know what kind of music to make. There's too many possibilities.", "ہم ایک بینڈ شروع کرنا چاہتے ہیں، مگر ابھی تک معلوم نہیں کس قسم کی موسیقی بنائیں۔ بہت زیادہ امکانات ہیں۔"],
+        ["#$q 76 null#Say, @... what kind of music do you like?#$r 76 50 Event_band1#Cheerful pop music.#$r 77 50 Event_band2#Experimental noise rock.#$r 78 50 Event_band3#Hi-Energy dance music.#$r 79 50 Event_band4#Honky-tonky country music.", "#$q 76 null#اچھا، @۔۔۔ تمہیں کس قسم کی موسیقی پسند ہے؟#$r 76 50 Event_band1#خوش مزاج پاپ موسیقی۔#$r 77 50 Event_band2#تجرباتی نوائز راک۔#$r 78 50 Event_band3#پُرجوش رقص کی موسیقی۔#$r 79 50 Event_band4#ہونکی ٹونک کنٹری موسیقی۔"],
+        ["What do you say, Sebastian? Should we do this?", "کیا کہتے ہو، سیبیسچن؟ یہی کریں؟"],
+        ["...Okay.", "۔۔۔ٹھیک ہے۔"],
+        ["Thanks for the help, @. With my guitar skills, and Sebastian's wizardry on the synthesizer, we're gonna be a screaming success. I'm convinced of it!$h", "مدد کا شکریہ، @۔ میری گٹار کی مہارت اور سنتھیسائزر پر سیبیسچن کے کمال کے ساتھ ہم شاندار کامیابی پائیں گے۔ مجھے پورا یقین ہے!$h"],
+        ["Now I just need to find someone to play drums...$u", "اب بس ڈرم بجانے کے لیے کسی کو ڈھونڈنا ہے۔۔۔$u"]
+      ]
+    },
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "100/f Kent 750/p Kent/p Jodi",
+      "eventSegments": [
+        ["Hi, @! I'm just making some popcorn.$h", "سلام، @! میں بس پاپ کارن بنا رہی ہوں۔$h"],
+        ["AAAAAHHHHHHH!!!$u", "آآآآآآہ!!!$u"],
+        ["That sound...$s", "وہ آواز۔۔۔$s"],
+        ["You should've known that sound would remind me of the war!$u", "تمہیں معلوم ہونا چاہیے تھا کہ وہ آواز مجھے جنگ یاد دلائے گی!$u"],
+        ["...I lost a lot of good friends in those bloody trenches.$s", "۔۔۔میں نے ان خون آلود خندقوں میں بہت سے اچھے دوست کھوئے تھے۔$s"],
+        ["But, dear... popcorn was always your favorite before you left.$s", "مگر پیارے۔۔۔ جانے سے پہلے پاپ کارن ہمیشہ تمہارا پسندیدہ تھا۔$s"],
+        ["...Things have changed.", "۔۔۔حالات بدل گئے ہیں۔"],
+        ["*whisper* @... can you say something to him?$s", "*سرگوشی* @۔۔۔ تم اس سے کچھ کہہ سکتے ہو؟$s"],
+        ["$q 215 null#(Say something to Kent)$s#$r 215 -25 event_popcorn1#Jodi's to blame... she should've known better!#$r 215 50 event_popcorn2#I know you're hurting... but don't blame your wife.#$r 215 -50 event_popcorn3#(Lie) Blame me... I asked for popcorn", "$q 215 null#(کینٹ سے کچھ کہو)$s#$r 215 -25 event_popcorn1#جوڈی کا قصور ہے۔۔۔ اسے بہتر سمجھنا چاہیے تھا!#$r 215 50 event_popcorn2#میں جانتا ہوں تم تکلیف میں ہو۔۔۔ مگر اپنی بیوی کو الزام مت دو۔#$r 215 -50 event_popcorn3#(جھوٹ) مجھے الزام دو۔۔۔ میں نے پاپ کارن مانگا تھا"],
+        ["...$s#$b#I'm sorry, honey. You couldn't have known the sound of popcorn would make me upset.", "۔۔۔$s#$b#معذرت، پیاری۔ تم نہیں جان سکتی تھی کہ پاپ کارن کی آواز مجھے پریشان کرے گی۔"],
+        ["It's okay, dear.$s#$b#The last thing I want to do is make you upset. I'll do my best to keep your spirits up from now on.", "کوئی بات نہیں، پیارے۔$s#$b#میں ہرگز تمہیں پریشان نہیں کرنا چاہتی۔ اب سے تمہارا حوصلہ بلند رکھنے کی پوری کوشش کروں گی۔"],
+        ["I'm glad you're a friend of the family, @. Sorry about my behavior before.", "خوشی ہے تم خاندان کے دوست ہو، @۔ پہلے میرے رویے کے لیے معذرت۔"]
+      ]
+    }
+  ]
+}

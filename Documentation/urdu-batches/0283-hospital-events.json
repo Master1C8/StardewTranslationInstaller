@@ -1,0 +1,76 @@
+{
+  "id": "0283-hospital-events",
+  "reviewedAt": "2026-08-27",
+  "records": [
+    {
+      "target": "Data/Events/Hospital",
+      "key": "PlayerKilled",
+      "eventSegments": [
+        [" ...{0}?", " ۔۔۔{0}؟"],
+        ["Easy, now... take it slow.", "آرام سے۔۔۔ جلدی مت کرو۔"],
+        ["Someone found you unconscious and battered... I had to perform an emergency surgery on you!#$b#Be a little more careful next time, okay?$s", "کسی نے تمہیں بے ہوش اور زخمی حالت میں پایا۔۔۔ مجھے تمہاری ہنگامی جراحی کرنی پڑی!#$b#اگلی بار کچھ زیادہ احتیاط کرنا، ٹھیک ہے؟$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "toldTruth",
+      "eventSegments": [
+        ["Thanks for telling me the truth, Maru.#$b#Don't worry about the sample, we'll just get another one.", "سچ بتانے کا شکریہ، مارو۔#$b#نمونے کی فکر مت کرو، ہم دوسرا لے لیں گے۔"],
+        ["Thanks for being patient with me, Doctor Harvey.", "میرے ساتھ صبر کرنے کا شکریہ، ڈاکٹر ہاروے۔"],
+        ["Of course... you've been a big help around here. I don't know what I'd do without you!", "بالکل۔۔۔ تم نے یہاں بہت مدد کی ہے۔ معلوم نہیں تمہارے بغیر کیا کرتا!"],
+        ["@? You look a little pale... are you feeling okay?", "@؟ تم کچھ زرد لگ رہے ہو۔۔۔ طبیعت ٹھیک ہے؟"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "7/f Maru 1000/p Maru",
+      "eventSegments": [
+        ["*sigh*... I'm so sick of preparing these samples...$s", "*آہ*۔۔۔ میں یہ نمونے تیار کر کر کے تنگ آ گئی ہوں۔۔۔$s"],
+        ["Agh! Oh no!... $4", "آہ! اوہ نہیں!۔۔۔ $4"],
+        ["The whole sample is ruined... Harvey's going to kill me...$s", "پورا نمونہ خراب ہو گیا۔۔۔ ہاروے مجھے مار ڈالے گا۔۔۔$s"],
+        ["$q 38 null#@, what should I do?#$r 38 -50 Event_Hospital_1#Just scoop it off the floor. He won't know the difference.#$r 39 -20 Event_Hospital_2#Tell Harvey it was my fault.#$r 38 50 Event_Hospital_3#Tell Harvey it was an accident.", "$q 38 null#@، مجھے کیا کرنا چاہیے؟#$r 38 -50 Event_Hospital_1#بس فرش سے اٹھا لو۔ اسے فرق معلوم نہیں ہو گا۔#$r 39 -20 Event_Hospital_2#ہاروے سے کہو یہ میری غلطی تھی۔#$r 38 50 Event_Hospital_3#ہاروے کو بتاؤ یہ حادثہ تھا۔"],
+        ["What happened? I heard something break.", "کیا ہوا؟ مجھے کچھ ٹوٹنے کی آواز آئی۔"],
+        ["$p 38#I accidentally dropped one of the samples... I'm so sorry.$s|@ came in and slammed the door so loud I dropped this sample.$u", "$p 38#مجھ سے غلطی سے ایک نمونہ گر گیا۔۔۔ مجھے بہت افسوس ہے۔$s|@ اندر آئے اور دروازہ اتنے زور سے بند کیا کہ مجھ سے یہ نمونہ گر گیا۔$u"],
+        ["You shouldn't blame others for your own problems, Maru.$a", "اپنے مسائل کا الزام دوسروں پر نہیں لگانا چاہیے، مارو۔$a"],
+        ["*sigh*... I'll have to call the patient back in to recollect this sample.$s#$b#This'll probably put us in the red for another month...$s", "*آہ*۔۔۔ یہ نمونہ دوبارہ لینے کے لیے مریض کو واپس بلانا پڑے گا۔$s#$b#شاید اس سے ہم ایک اور مہینہ خسارے میں رہیں گے۔۔۔$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "571102/f Harvey 2000",
+      "eventSegments": [
+        ["Hello? Hello? Is anyone out there?$9", "ہیلو؟ ہیلو؟ کیا کوئی سن رہا ہے؟$9"],
+        ["This is Dr. H at... 52 North 43.5 East... Seeking aerial response...Anyone out there?$9", "یہ ڈاکٹر ایچ ہے۔۔۔ 52 شمال، 43.5 مشرق پر۔۔۔ فضائی جواب مطلوب ہے۔۔۔ کوئی سن رہا ہے؟$9"],
+        ["Copy.. Dr. H on the ground... this is Blackbird Fiver Fiver Zuzu. Anything to report?", "سمجھ گیا۔۔۔ زمین پر ڈاکٹر ایچ۔۔۔ یہ بلیک برڈ فائیور فائیور زوزو ہے۔ کوئی اطلاع؟"],
+        ["Someone's there!?$10#$b#Er... I mean!... Standard ground report: Wind at 3 Clicks, 36 Degrees North of West. Ground Temperature at 42 Kraggs. Humidity 53%. Dr. H out!$10", "وہاں کوئی ہے؟!$10#$b#ار۔۔۔ میرا مطلب!۔۔۔ معیاری زمینی رپورٹ: ہوا 3 کلکس، مغرب سے 36 درجے شمال کی سمت۔ زمینی درجہ حرارت 42 کراگز۔ نمی 53%۔ ڈاکٹر ایچ، ختم!$10"],
+        ["Yikes, my pulse is soaring...$7", "اف، میری نبض بہت تیز ہو رہی ہے۔۔۔$7"],
+        ["@!", "@!"],
+        ["#Ask Harvey why he's all flustered.#Pretend like everything's normal.", "#ہاروے سے پوچھو وہ اتنا گھبرایا کیوں ہے۔#ایسا ظاہر کرو جیسے سب معمول کے مطابق ہے۔"],
+        ["Ah, well... You see, I was just on my radio here... and I made contact with a real pilot!", "آہ، خیر۔۔۔ دیکھو، میں یہاں اپنے ریڈیو پر تھا۔۔۔ اور میرا ایک حقیقی پائلٹ سے رابطہ ہو گیا!"],
+        ["As a matter of fact, we can probably see him flying overhead right now!", "دراصل، شاید ہم اسے ابھی اپنے اوپر اڑتا دیکھ سکتے ہیں!"],
+        ["Quick, get over here!", "جلدی، یہاں آؤ!"],
+        ["Look!", "دیکھو!"],
+        ["As a kid, my dream was always to be a pilot.", "بچپن میں میرا خواب ہمیشہ پائلٹ بننا تھا۔"],
+        ["...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s", "۔۔۔مگر میری کمزور نظر اور بلندی کے شدید خوف کے باعث وہ خواب مدھم پڑنے لگا۔$s"],
+        ["It's okay... don't be sad.#$b#I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.", "کوئی بات نہیں۔۔۔ اداس مت ہو۔#$b#میں نے زندگی میں اپنے مقام کو قبول کرنا سیکھ لیا ہے۔ ہر کوئی اپنے خواب پورے نہیں کر سکتا۔۔۔ دنیا ایسی ہی ہے۔"],
+        ["Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h", "ارے، تمہیں اپنے ماڈل ہوائی جہاز دکھاتا ہوں۔ میں نے ابھی نیا TR-Starbird عالیشان مجموعہ مکمل کیا ہے۔$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "57/f Harvey 1000/p Harvey",
+      "eventSegments": [
+        ["Ah, @! I was just about to write you a letter.", "آہ، @! میں ابھی تمہیں خط لکھنے والا تھا۔"],
+        ["You see, my records indicate that you're due for your annual checkup!", "دیکھو، میرے ریکارڈ کے مطابق تمہارے سالانہ معائنے کا وقت ہو گیا ہے!"],
+        ["Now, now... There's no need to worry. It'll be quick and painless. Please follow me.", "ارے، ارے۔۔۔ فکر کی ضرورت نہیں۔ یہ جلد اور بغیر درد کے ہو جائے گا۔ براہ کرم، میرے ساتھ آؤ۔"],
+        ["Hmm... Okay. Hold still, please.", "ہمم۔۔۔ ٹھیک ہے۔ براہ کرم، ساکت رہو۔"],
+        ["Say 'ahhh...'", "کہو 'آآآ۔۔۔'"],
+        ["Okay, you can stop.", "ٹھیک ہے، اب رک سکتے ہو۔"],
+        ["I just need to check your vitals.", "بس تمہاری اہم جسمانی علامات دیکھنی ہیں۔"],
+        ["$q 86 null#Hmm... Your pulse is high.$u#$r 86 20 event_heart1#I'm a little nervous...#$r 86 20 event_heart2#I'm out of breath from working on the farm.#$r 86 -50 event_heart3#Are you really a doctor? My pulse is fine!", "$q 86 null#ہمم۔۔۔ تمہاری نبض تیز ہے۔$u#$r 86 20 event_heart1#میں کچھ گھبرایا ہوا ہوں۔۔۔#$r 86 20 event_heart2#فارم پر کام کر کے سانس پھولا ہوا ہے۔#$r 86 -50 event_heart3#کیا تم واقعی ڈاکٹر ہو؟ میری نبض ٹھیک ہے!"],
+        ["Well, then! You seem very healthy, @.#$b#Just make sure not to overwork yourself on that farm!", "تو پھر ٹھیک ہے! تم بہت صحت مند لگتے ہو، @۔#$b#بس فارم پر حد سے زیادہ کام مت کرنا!"],
+        ["Thanks for stopping in.$h", "آنے کا شکریہ۔$h"]
+      ]
+    }
+  ]
+}

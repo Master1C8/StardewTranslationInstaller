@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "choseToBeKnown": "pause 200/addConversationTopic pamHouseUpgrade/speak Robin \"ٹھیک ہے۔۔۔ چلیں۔\"/pause 500/move Robin 0 1 2/move farmer 0 3 2 true/move Robin 0 3 1 false/move Robin 2 0 1/move farmer 3 0 1/faceDirection Pam 3/move Penny 0 -1 3/move Penny -1 0 3/speak Robin \"سلام، پڑوسیو۔۔۔ تمہارا نیا گھر بہت اچھا ہے!$4\"/pause 250/playMusic musicboxsong/speak Pam \"رابن۔۔۔ میں۔۔۔ مجھے نہیں معلوم کیا کہوں۔۔۔$s#$b#یہ خواب پورا ہونے جیسا ہے۔۔۔ یہی وہ سب ہے جو میں نے ہمیشہ چاہا۔$s\"/faceDirection Pam 2/animate Pam false true 100 25/pause 1000/animate Pam false true 150 26 27/pause 1000/speak Penny \"رابن، تمہارا بہت شکریہ۔۔۔$s\"/speak Robin \"ارے، میرا شکریہ نہ کرو! یہ @ کا خیال تھا۔۔۔ اور پورے پیسے بھی اسی نے دیے!^ارے، میرا شکریہ نہ کرو! یہ @ کا خیال تھا۔۔۔ اور پورے پیسے بھی اسی نے دیے!\"/pause 100/stopAnimation Pam/showFrame Pam 12/pause 500/speak Penny \"@۔۔۔ یہ بالکل ناقابل یقین ہے۔۔۔$7#$b#میں۔۔۔ مجھے نہیں معلوم اور کیا کہوں۔۔۔$s\"/stopAnimation Pam/faceDirection Pam 3/stopAnimation Penny/faceDirection Penny 3/pause 300/speak Pam \"اس پر بہت بڑی رقم خرچ ہوئی ہو گی، @۔۔۔$s#$b#۔۔۔سچ کہوں تو یہ کچھ شرمندگی کی بات ہے۔ میں کبھی اس کا بدلہ کیسے چکا سکتی ہوں؟$4\"/pause 300/question fork1 \"۔۔۔#یہ تحفہ ہے۔۔۔ بدلہ چکانے کی ضرورت نہیں۔#تم پینی کے ساتھ بہتر سلوک سے آغاز کر سکتی ہو۔۔۔\"/fork itsagift/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"۔۔۔مجھے افسوس ہے۔$s\"/pause 500/speak Pam \"تم جو کہو گے میں کروں گی۔۔۔$s\"/pause 500/animate Robin false true 150 34 35/pause 500/speak Penny \"ماں۔۔۔$s\"/faceDirection Pam 0/speak Penny \"فکر نہ کرو۔۔۔ میں سمجھتی ہوں تم کبھی کبھی ناراض کیوں ہو جاتی ہو۔ تمہاری زندگی اتنی آسان نہیں رہی۔۔۔$s\"/stopAnimation Robin/faceDirection Robin 1/speak Pam \"شکریہ، بچے۔$h#$b#اب سے ہم حقیقی خاندان کی طرح ہوں گے۔۔۔ سن رہے ہو؟#$b#میں اب ہر وقت اتنی تلخ نہیں رہنا چاہتی۔۔۔$s#$b#میں اپنی زندگی بدلنے کی کوشش کروں گی۔۔۔\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end"
+      }
+    }
+  ]
+}

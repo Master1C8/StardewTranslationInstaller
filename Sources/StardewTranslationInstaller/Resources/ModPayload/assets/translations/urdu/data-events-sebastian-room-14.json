@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "Necromancer": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"زارتھ: گھس پیٹھیو؟ تمہاری ہمت کیسے ہوئی میرے ذاتی حجرے میں گھسنے کی!\"/pause 800/message \"آہ، تو تم سولیرین عصا لینے آئے ہو۔۔۔\"/pause 800/message \"ہیہیہے۔۔۔ احمقو۔ تم میری ڈھانچوں کی فوج میں اچھا اضافہ بنو گے!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"خوف کا سردار زارتھ سایہ شعاع چلاتا ہے!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"تم منتر سے بچ نکلتے ہو، مگر تمہارے ساتھی بری طرح زخمی ہو جاتے ہیں!\"/pause 500/question fork0 \"تم کیا کرتے ہو؟#جنگجو (سیم) کو شفا دو۔#جادوگر (سباسچین) کو شفا دو۔\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"شکریہ، @۔$7\"/speak Sam \"۔۔۔$s\"/pause 1000/playMusic none/message \"سباسچین 'خالص تیر' چلاتا ہے۔۔۔ سفید روشنی کی شعاع سیدھی زارتھ کے چہرے پر لگتی ہے۔ خوف کا سردار چیختا ہے اور مٹی بن کر بکھر جاتا ہے۔\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"تم سولیرین عصا اٹھا کر بلند کرتے ہو۔ دنیا میں نظم بحال ہو گیا ہے۔\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

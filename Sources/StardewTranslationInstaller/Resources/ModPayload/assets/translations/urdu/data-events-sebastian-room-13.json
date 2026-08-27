@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "finalBossWizard": "pause 500/resetVariable/message \"خوف کا سردار زارتھ کوئی منتر بڑبڑا رہا ہے۔۔۔\"/pause 500/question fork0 \"تم کیا کرتے ہو؟#زارتھ پر 'خالص شعاع' چلاؤ۔#اپنے دوستوں پر 'حفاظتی تعویذ' لگاؤ۔\"/fork castBeam/pause 800/playSound debuffHit/message \"تم سیم اور سباسچین پر 'حفاظتی تعویذ' لگا دیتے ہو۔\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"زارتھ خالص تاریک توانائی کے تیر پھینکتا ہے۔ ان میں سے ایک سباسچین کو لگتا ہے، مگر تمہارا 'حفاظتی تعویذ' اسے پلٹا کر زارتھ کے چہرے پر دے مارتا ہے!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"زارتھ شکست کھا جاتا ہے اور سولیرین عصا پُرسکون روشنی سے چمکتا ہے۔ دنیا میں نظم بحال ہو گیا ہے۔\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+        "finalBossWarrior": "pause 500/resetVariable/message \"خوف کا سردار زارتھ کوئی منتر بڑبڑا رہا ہے۔۔۔\"/pause 500/question fork0 \"تم کیا کرتے ہو؟#تلوار چلاتے ہوئے آگے لپکو۔#دوستوں کے دفاع کے لیے ڈھال استعمال کرو۔\"/fork chargeAhead/pause 1200/message \"زارتھ سباسچین پر 'سایہ تیر' چلاتا ہے۔۔۔ مگر تم عین وقت پر ڈھال اٹھا کر حملہ موڑ دیتے ہو!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"جیسے ہی زارتھ دوسرا منتر تیار کرتا ہے، تم آگے لپک کر تلوار سے اسے مار گراتے ہو۔\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"تم سولیرین عصا بلند کرتے ہو تو وہ پُرسکون روشنی سے چمکتا ہے۔ دنیا میں نظم بحال ہو گیا ہے!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

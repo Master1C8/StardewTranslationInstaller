@@ -1,0 +1,14 @@
+{
+  "id": "0014-recipe-metadata",
+  "reviewedAt": "2026-08-24",
+  "preservedTargets": [
+    {
+      "target": "Data/CookingRecipes",
+      "reason": "Non-player-facing slash-delimited cooking recipe metadata; recipe names are record keys, while values contain ingredient IDs, yields, unlock conditions, and output IDs that must remain English-source identical."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "reason": "Non-player-facing slash-delimited crafting recipe metadata; recipe names are record keys, while values contain ingredient IDs, categories, outputs, flags, and unlock conditions that must remain English-source identical."
+    }
+  ]
+}

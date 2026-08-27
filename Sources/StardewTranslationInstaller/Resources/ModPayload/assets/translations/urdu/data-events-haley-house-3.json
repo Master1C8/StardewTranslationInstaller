@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HaleyHouse",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "choseToExplain": "pause 100/textAboveHead Haley \"مجھے شک ہے۔۔۔\"/pause 500/resetVariable/question fork2 \"#میں سمجھا تھا ہم صرف دوست ہیں! مجھے معلوم نہیں تھا بات اتنی سنجیدہ ہے!#پیئر نے مجھ پر دباؤ ڈالا! وہ مزید گلدستے بیچنا چاہتا تھا!#خواتین، یہ بالکل معمول کی بات ہے! بس زندگی گزارنے کا ایک انتخاب ہے۔۔۔\"/pause 100/fork lifestyleChoice/textAboveHead Haley \"جھوٹے!\"/textAboveHead Maru \"ہاں، ضرور!\"/speak Emily \"کیا واقعی تمہیں لگتا ہے ہم اس بات پر یقین کر لیں گی؟ تم اپنے لیے گڑھا اور گہرا کر رہے ہو۔۔۔$a\"/pause 1000/faceDirection Haley 2/playMusic none/speak Haley \"۔۔۔میرا خیال ہے ہم فیصلہ کر چکی ہیں۔۔۔ ہے نا، لڑکیو؟$u\"/pause 500/speak Penny \"۔۔۔ہاں۔$s\"/speak Leah \"بالکل۔$a\"/faceDirection Haley 3/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"ہم سب تمہیں نظر انداز کریں گی!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 4/end warpOut",
+        "lifestyleChoice": "pause 100/speak Penny \"ہوں! پتا نہیں زوزو شہر میں کس چیز کو 'معمول' سمجھا جاتا ہے، مگر یہ بندوبست مجھے بالکل منظور نہیں!$a\"/speak Maru \"اگر ہم میں سے کسی کو اس کا پتا ہی نہ ہو تو یہ کوئی 'انتخاب' نہیں!$a\"/pause 100/speak Abigail \"اس بار تم بہانے بنا کر نہیں بچ سکتے، @۔$a\"/pause 1000/faceDirection Haley 2/playMusic none/speak Haley \"۔۔۔میرا خیال ہے ہم فیصلہ کر چکی ہیں۔۔۔ ہے نا، لڑکیو؟$u\"/pause 500/speak Penny \"۔۔۔ہاں۔$s\"/speak Leah \"بالکل۔$a\"/faceDirection Haley 3/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"ہم سب تمہیں نظر انداز کریں گی!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 4/end warpOut"
+      }
+    }
+  ]
+}

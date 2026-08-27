@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"ہاں۔۔۔ افسوس ناک منظر ہے، ہے نا؟\"/pause 500/speak Willy \"یہ میرے والد کی کشتی تھی۔۔۔ 50 سال سے زیادہ ان کا خوب ساتھ دیا۔#$b#مگر اب بمشکل پانی پر رہ سکتی ہے۔$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"میں خود اس کی مرمت کرتا، مگر میرے پاس مناسب مواد نہیں، ${lad^miss}$۔\"/faceDirection Willy 0/speak Willy \"ہاں۔۔۔ ڈھانچہ مرمت کرنے کے لیے سخت لکڑی کے 200 ٹکڑے اچھی شروعات ہوں گے۔#$b#مگر ٹکٹ مشین دوبارہ چلانی اور اریڈیم لنگر کی مرمت بھی کرنی ہو گی۔\"/faceDirection farmer 0/pause 400/speak Willy \"اگر مناسب مواد ہاتھ آ جائے اور اس پرانی ساتھی کی مرمت کر سکوں۔۔۔ تو پھر تمہیں فرن جزائر لے جا سکتا ہوں۔\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"کہتے ہیں وہ عجیب طوطوں سے بھرے آتش فشانی جزائر ہیں۔۔۔\"/pause 400/quickQuestion #میں مدد کرنا چاہوں گا#نہیں، میں رہنے دوں گا۔۔۔(break)emote Willy 32\\speak Willy \"ہاں۔۔۔ مجھے لگا تھا تم کرو گے، ${lad^miss}$۔$h\"\\speak Willy \"میں تمہارے لیے یہ دروازہ کھلا چھوڑ دوں گا۔۔۔ جب چاہو مواد یہاں لا سکتے ہو۔\"(break)emote Willy 28\\speak Willy \"اچھا، جیسی تمہاری مرضی۔۔۔$s#$b#دل بدل جائے تو کبھی بھی واپس آ کر مدد کر سکتے ہو۔ بہرحال یہ دروازہ کھلا چھوڑ دوں گا۔\"/pause 2000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HarveyRoom",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "normal": "pause 400/speak Harvey \"بکھری حالت کے لیے معذرت۔۔۔ مجھے معلوم نہیں تھا تم آ رہے ہو۔$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"ارے، لگتا ہے اوپر ہوائی جہاز کی آواز آ رہی ہے۔۔۔\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@، یہاں آؤ!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"دیکھو!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"بچپن میں میرا خواب ہمیشہ پائلٹ بننا تھا۔\"/pause 1000/speak Harvey \"۔۔۔مگر میری کمزور نظر اور بلندی کے شدید خوف کے باعث وہ خواب مدھم پڑنے لگا۔$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"کوئی بات نہیں۔۔۔ اداس مت ہو۔#$b#میں نے زندگی میں اپنے مقام کو قبول کرنا سیکھ لیا ہے۔ ہر کوئی اپنے خواب پورے نہیں کر سکتا۔۔۔ دنیا ایسی ہی ہے۔\"/pause 1600/speak Harvey \"ارے، تمہیں اپنے ماڈل ہوائی جہاز دکھاتا ہوں۔ میں نے ابھی نیا TR-Starbird عالیشان مجموعہ مکمل کیا ہے۔$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/DesertFestival",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "PlayerKilled": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end"
+      }
+    }
+  ]
+}

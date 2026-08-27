@@ -140,6 +140,22 @@ const languages = [
       { target: "Fonts/Telugu_0", file: "assets/fonts/telugu/Telugu_0.xnb" },
     ],
   },
+  {
+    directory: "urdu",
+    suffix: "Urdu",
+    code: "ur-vnrevival",
+    buttonTarget: "ButtonUrdu",
+    button: "assets/button-urdu.png",
+    title: "assets/title/TitleButtons-urdu.png",
+    fonts: "assets/fonts/urdu",
+    useLatinFont: false,
+    fontFile: "Fonts/Urdu",
+    fontPixelZoom: 3,
+    bitmapFonts: [
+      { target: "Fonts/Urdu", file: "assets/fonts/urdu/Urdu.xnb" },
+      { target: "Fonts/Urdu_0", file: "assets/fonts/urdu/Urdu_0.xnb" },
+    ],
+  },
 ];
 
 const entries = {};

@@ -96,7 +96,16 @@ hover_background = (255, 255, 192, 255)
 hover_foreground = (239, 115, 115, 255)
 hover_shadow = (178, 99, 86, 255)
 
-if os.environ.get("VN_TITLE_LOCALE") == "te":
+if os.environ.get("VN_TITLE_LOCALE") == "ur":
+    buttons = [
+        ((6, 198, 65, 222), ["نیا", "کھیل"], 11),
+        ((80, 198, 139, 222), ["لوڈ"], 12),
+        ((154, 198, 213, 222), ["تعاونی", "کھیل"], 9),
+        ((228, 198, 287, 222), ["باہر", "نکلیں"], 9),
+    ]
+    back_label = "واپس"
+    developer_label = "تخلیق کار"
+elif os.environ.get("VN_TITLE_LOCALE") == "te":
     buttons = [
         ((6, 198, 65, 222), ["కొత్త", "ఆట"], 9),
         ((80, 198, 139, 222), ["లోడ్"], 11),

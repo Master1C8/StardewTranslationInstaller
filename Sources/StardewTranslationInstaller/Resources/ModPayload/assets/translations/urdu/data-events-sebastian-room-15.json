@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "enterRobin": "pause 500/playSound mouseClick/pause 100/playSound mouseClick/pause 500/playSound Pickup_Coin15/pause 300/emote Sebastian 40/speak Sebastian \"وہ سیم کا فوری پیغام تھا۔۔۔ شاید وہ ساتھ وقت گزارنا چاہتا ہے۔۔۔#$b#اف، آج واقعی باہر جانے کا دل نہیں۔$u\"/pause 500/playSound doorClose/warp Robin 1 1/move Robin 0 4 1/speak Robin \"اوہ، سلام @۔\"/faceDirection farmer 3/move Robin 4 0 1/speak Robin \"سیبی، جانتی ہوں تمہیں میرا یہاں آنا پسند نہیں۔۔۔ مگر دکان پر ایبیگیل ملی تھی اور اس نے کہا وہ تمہیں ڈھونڈ رہی ہے۔\"/pause 200/emote Sebastian 28/speak Sebastian \"کیا آپ نے اسے بتایا میں کام کر رہا ہوں؟\"/speak Robin \"بتایا تھا۔۔۔ مگر اس نے کہا شاید پھر بھی آ جائے گی۔\"/emote Sebastian 12/speak Sebastian \"*آہ*۔۔۔ کوئی میرے کام کو سنجیدگی سے نہیں لیتا۔$u#$b#مارو جب کلینک میں کام کر رہی ہو تو کوئی اسے پریشان نہیں کرتا۔۔۔ کیا سب سمجھتے ہیں میں سارا دن بس ویب پر گھومتا رہتا ہوں؟\"/faceDirection farmer 0 true/move Robin -4 0 0/move Robin 0 -4 0/warp Robin -100 -100/playSound doorClose/pause 500/faceDirection farmer 0/resetVariable/question fork1 \"#اس سے اس کے پیشہ ورانہ مقاصد کے بارے میں پوچھو۔#اس سے پوچھو وہ اپنے دوستوں سے کیوں نہیں ملنا چاہتا۔\"/fork noFriends/pause 500/speak Sebastian \"خیر، پیسے بچانے کی کوشش کر رہا ہوں تاکہ یہاں سے منتقل ہو سکوں۔ شاید شہر یا کسی اور جگہ۔\"/emote Sebastian 40/speak Sebastian \"جانتے ہو، اگر کالج گیا ہوتا تو شاید اب چھ ہندسوں میں کما رہا ہوتا۔۔۔ مگر میں اس کارپوریٹ دوڑ کا حصہ بننا ہی نہیں چاہتا، سمجھ رہے ہو؟#$b#اور شاید لوگوں سے آمنے سامنے نمٹنے کے بجائے کمپیوٹر کے پیچھے چھپ کر زیادہ آرام محسوس کرتا ہوں۔$s\"/emote Sebastian 28/pause 600/playSound mouseClick/pause 100/playSound mouseClick/pause 300/speak Sebastian \"خیر، مجھے کام پر واپس جانا چاہیے۔۔۔ یہ ماڈیول کل تک مکمل کرنا ہے۔\"/animate Sebastian false true 100 24 24 24 24 24 24 24 24 24 24 25 26 27 26 27 26 27 26 25 24 24/playSound keyboardTyping/pause 500/move farmer 0 2 3/move farmer -3 0 0/move farmer 0 -2 3/move farmer -5 0 0 true/globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    }
+  ]
+}

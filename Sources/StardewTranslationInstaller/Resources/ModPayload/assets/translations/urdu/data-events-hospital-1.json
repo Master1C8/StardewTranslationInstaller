@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "7/f Maru 1000/p Maru": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*آہ*۔۔۔ میں یہ نمونے تیار کر کر کے تنگ آ گئی ہوں۔۔۔$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"آہ! اوہ نہیں!۔۔۔ $4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"پورا نمونہ خراب ہو گیا۔۔۔ ہاروی مجھے مار ڈالے گا۔۔۔$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#@، مجھے کیا کرنا چاہیے؟#$r 38 -50 Event_Hospital_1#بس فرش سے اٹھا لو۔ اسے فرق معلوم نہیں ہو گا۔#$r 39 -20 Event_Hospital_2#ہاروی سے کہو یہ میری غلطی تھی۔#$r 38 50 Event_Hospital_3#ہاروی کو بتاؤ یہ حادثہ تھا۔\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"کیا ہوا؟ مجھے کچھ ٹوٹنے کی آواز آئی۔\"/pause 500/speak Maru \"$p 38#مجھ سے غلطی سے ایک نمونہ گر گیا۔۔۔ مجھے بہت افسوس ہے۔$s|@ اندر آئے اور دروازہ اتنے زور سے بند کیا کہ مجھ سے یہ نمونہ گر گیا۔$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"اپنے مسائل کا الزام دوسروں پر نہیں لگانا چاہیے، مارو۔$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*آہ*۔۔۔ یہ نمونہ دوبارہ لینے کے لیے مریض کو واپس بلانا پڑے گا۔$s#$b#شاید اس سے ہم ایک اور مہینہ خسارے میں رہیں گے۔۔۔$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+        "toldTruth": "move Harvey 0 2 3/speak Harvey \"سچ بتانے کا شکریہ، مارو۔#$b#نمونے کی فکر مت کرو، ہم دوسرا لے لیں گے۔\"/pause 500/emote Harvey 32/pause 500/speak Maru \"میرے ساتھ صبر کرنے کا شکریہ، ڈاکٹر ہاروی۔\"/pause 500/speak Harvey \"بالکل۔۔۔ تم نے یہاں بہت مدد کی ہے۔ معلوم نہیں تمہارے بغیر کیا کرتا!\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"@؟ تم کچھ زرد لگ رہے ہو۔۔۔ طبیعت ٹھیک ہے؟\"/pause 500/faceDirection farmer 2/emote farmer 28/end"
+      }
+    }
+  ]
+}

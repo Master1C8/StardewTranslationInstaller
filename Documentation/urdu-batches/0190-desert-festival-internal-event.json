@@ -1,0 +1,14 @@
+{
+  "id": "0190-desert-festival-internal-event",
+  "reviewedAt": "2026-08-25",
+  "records": [
+    {
+      "target": "Data/Events/DesertFestival",
+      "key": "PlayerKilled",
+      "source": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "translation": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "reviewedPreserve": true,
+      "preserveReason": "Non-player-facing event command sequence containing only map, actor, timing, inventory-display, and termination tokens; it has no translatable dialogue or message text."
+    }
+  ]
+}

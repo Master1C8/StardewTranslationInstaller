@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "opening": "pause 500/speak Sebastian \"شروع کرتے ہیں۔۔۔\"/globalFade/viewport -1000 -1000/playMusic Crystal Bells/cutscene boardGame/pause 1700/message \"بادشاہ نے تمہیں اور تمہارے ساتھیوں کو سولیرین عصا واپس لانے کی ذمہ داری سونپی ہے۔۔۔ یہ کام کامیابی سے مکمل ہوا تو داستانوں کے ایوان میں تمہاری جگہ یقینی ہوگی اور سونے چاندی کی بڑی دولت بھی ملے گی۔\"/pause 800/message \"سنگ دل سرزمینوں پر پورا مہینہ طویل سفر کرنے کے بعد تم ایک کھڑی چٹان پر قدم رکھتے ہو اور دور اپنی منزل کو سر اٹھائے دیکھتے ہو۔\"/pause 100/message \"وہاں چاندنی میں نہائے میدان کے پار مردہ گر کا مینار ہے۔۔۔ جہاں خوف کا سردار زارتھ چرائے ہوئے سولیرین عصا کی طاقت اپنے ناپاک مقاصد کے لیے استعمال کر رہا ہے۔\"/pause 500/pause 700/updateMinigame 1/resetVariable/pause 700/question fork1 \"مینار تمہارے سامنے ہے۔#سامنے سے داخل ہو۔ قسمت بہادروں کا ساتھ دیتی ہے۔#پچھلا داخلی راستہ تلاش کرو۔ چھپے رہتے ہیں۔\"/fork backEntrance/pause 500/updateMinigame 3/pause 50/playSound skeletonStep/pause 100/playMusic bigDrums/pause 500/message \"سامنے کی راہ داری پر ایک ڈھانچا پہرا دے رہا ہے۔ یہ خطرناک لگتا ہے۔\"/pause 900/resetVariable/question fork1 \"تم کیا کرتے ہو؟#ڈھانچے سے لڑو۔#بھاگ جاؤ۔\"/fork ranAway/pause 500/resetVariable/question fork0 \"ڈھانچا آگے جھپٹتا ہے!#اپنے ہتھیار چلاؤ۔#اپنی ڈھالیں اٹھاؤ۔\"/fork swungWeapons/pause 600/playSound clubhit/updateMinigame -1/pause 500/message \"تم کامیابی سے حملہ روک لیتے ہو۔ ڈھانچا لڑکھڑا کر پیچھے ہٹتا ہے اور تمہیں وار کر کے اس مکروہ مخلوق کو مارنے کا کافی وقت مل جاتا ہے۔\"/pause 200/playSound swordswipe/pause 400/playSound skeletonDie/updateMinigame 5/updateMinigame -1/pause 1000/addMailReceived killedSkeleton/message \"تم ڈھانچے کی باقیات پر قدم رکھنے سے بچتے ہوئے راہ داری میں آگے بڑھتے ہو۔\"/pause 900/switchEvent sewer"
+      }
+    }
+  ]
+}

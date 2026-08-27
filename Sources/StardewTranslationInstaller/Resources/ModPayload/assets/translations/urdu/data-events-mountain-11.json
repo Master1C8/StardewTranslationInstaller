@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "ur-vnrevival"
+      },
+      "Entries": {
+        "9333219/O Sebastian/f Sebastian 3500/w rainy/t 600 1900": "rain/48 36/farmer 49 31 2 Sebastian 50 36 3/makeInvisible 44 31 5 5/addConversationTopic sebastianFrog 0/skippable/move farmer 0 4 2/faceDirection Sebastian 0/speak Sebastian \"سنو @۔۔۔ خوشی ہے تم آ گئے۔\"/emote farmer 8/faceDirection Sebastian 3/speak Sebastian \"اس جھاڑی میں ایک زخمی مینڈک ہے۔۔۔ مجھے اسے بچانا ہے!\"/emote farmer 28/faceDirection Sebastian 0/speak Sebastian \"مجھے تمہاری مدد چاہیے۔ جھاڑی کے پاس جا کر اسے میری طرف لانے کی کوشش کرو۔ میں یہاں انتظار کر کے اسے پکڑوں گا۔\"/pause 500/faceDirection Sebastian 3/move farmer -5 0 2/pause 500/showFrame Sebastian 54/playSound grassyStep/pause 500/speak Sebastian \"ٹھیک ہے۔۔۔ تیار ہو؟\"/emote farmer 56/textAboveHead Sebastian \"اب!\"/pause 500/doAction 44 36/pause 1000/doAction 44 36/pause 1000/doAction 44 36/playSound croak/specificTemporarySprite sebastianFrog/pause 10000/playSound coin/showFrame Sebastian 55/jump Sebastian/textAboveHead Sebastian \"پکڑ لیا!\"/move farmer 5 0 2/move farmer 0 1 1/speak Sebastian \"بے چارا ننھا سا۔۔۔ اس کا پاؤں بری طرح زخمی ہے۔ $s\"/emote farmer 28/quickQuestion #ہمیں اس کے ساتھ کیا کرنا چاہیے؟#یہ ہمارا نیا بیٹا ہے۔۔۔#مجھے نہیں لگتا یہ بچ پائے گا#اس کی دیکھ بھال کر کے صحت یاب کرتے ہیں!(break)speak Sebastian \"ابھی اسے گھر لے جا کر آرام دوں گا۔#$b#میرا خیال ہے مینڈکوں کی دیکھ بھال پر کچھ تحقیق کروں گا۔ شاید مارنی کچھ جانتی ہو۔\"(break)speak Sebastian \"ہاہ۔۔۔ ہاں، شاید۔$h#$b#اس کی ناک یقیناً تم جیسی ہے۔۔۔$7\"\\faceDirection farmer 2 true\\jump farmer\\showFrame farmer 94\\startJittering(break)emote Sebastian 12\\speak Sebastian \"خیر، معذرت اگر تمہاری بات نہیں مانتا۔۔۔ میں اس بے چارے کو ایک موقع دوں گا۔\"(break)speak Sebastian \"ہم پوری کوشش کریں گے۔ مگر ابھی اس سے زیادہ دل نہ لگا لینا۔۔۔\"/pause 300/stopJittering/stopAnimation farmer/faceDirection farmer 1/pause 500/speak Sebastian \"اسے گھر لے چلتے ہیں۔\"/pause 500/playSound croak/pause 2000/end"
+      }
+    }
+  ]
+}

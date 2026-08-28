@@ -12,8 +12,8 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 - English glossary count: 673 entries
 - English glossary SHA-256: `b8fe9c8f5aaf9bedc990dabd2ce552d4f334450f03afee9949f75e376ab4bff9`
 - Public glossary endpoint: `https://vnrevival.fun/games/stardew-valley/glossary?locale=ur&offset=0&limit=1000`
-- Public glossary snapshot checked: 2026-08-24, 673 entries, all 673 translated
-- Initial public/local glossary comparison: one differing translation (`leo`); the public value contains Unicode replacement characters in `Ginger Island`, so the intact local spelling remains the canonical working value
+- Public glossary snapshot rechecked: 2026-08-28, 673 stable IDs, all 673 translated, with no missing or extra entries
+- The public CMS snapshot and previously committed SiteForMods baseline predate the completed editorial revision. After the full source-fidelity and literary audit, the local SiteForMods canonical `ur` data was updated to the reviewed 673-entry revision (301 corrected terms and 667 corrected meanings); the public CMS value for `leo` still contains Unicode replacement characters in `Ginger Island`. CMS publication was not authorized or performed.
 - Reviewed Urdu glossary SHA-256: `7294cea3451144f1066c8a09e6eadda4d9066b46a4aab6021d1caa7c88a9bb82`
 - Structural translation baseline: 14,720 unique `(Target, key)` records across 187 targets, 489 `EditData` changes, and 463 patch files
 
@@ -33,11 +33,12 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 - Urdu patch files integrated through root `Include` changes: 463 / 463
 - Urdu runtime configuration integrated: yes (`ur-vnrevival`, dedicated SpriteFonts/BMFont, button, and title atlas)
 - Urdu shaping and bidirectional adapter: built; all 282 contextual glyphs and mixed RTL/LTR samples pass the automated runtime probe
-- Urdu RTL behavior verified in a fresh SMAPI session: pending
+- Urdu RTL behavior verified in a fresh SMAPI session: yes (2026-08-28; shaping adapter enabled for 15 text methods, `ur-vnrevival` active, dedicated `SpriteFont1`, `SmallFont`, and `TitleButtons` loaded, title-menu labels visually checked, no SMAPI `WARN`/`ERROR`)
 - Urdu XNB fonts built, round-trip verified, character-map sorted/aligned, and generator-idempotent: yes
 - Consecutive clean full 14,720-record editorial audits: 2 / 2
 - Integrated release audit: 0 errors, 0 warnings
-- Swift tests: 8 / 8 passing
+- Swift tests: 8 / 8 passing on the clean `908adba` release snapshot
+- Release app: built from the clean `908adba` snapshot and passed `codesign --verify --deep --strict`
 
 Coverage counts only records whose Urdu value has passed source, context,
 glossary, language-quality, and token checks. Structural scaffolding and
@@ -52,7 +53,7 @@ source-identical English values do not count as translated.
 - Generators are idempotent.
 - Urdu fonts build and pass XNB round-trip validation.
 - Swift tests, release build, and strict code-signature verification pass.
-- The final verified source of truth is this Desktop working copy.
+- The final verified Urdu release snapshot is commit `908adba`; unrelated in-progress locale work in the shared Desktop working tree is outside this verification.
 
 ## Resume point
 
@@ -90,6 +91,11 @@ Island West, Qi's walnut room, Sandy's house, sewer, and sunroom event catalogs
 are fully reviewed. All event catalogs, the mail catalog, the movie-reaction
 catalog, the shared map-inspection strings, the shared location strings, the
 Stardew 1.6 shared string catalog, the shared UI catalog, and the shared object
-catalog and `Strings/StringsFromCSFiles` are complete. Remaining release work is
-the signed app build and a fresh SMAPI visual/log QA of Urdu shaping, RTL order,
-fonts, the language button, and `TitleButtons`.
+catalog and `Strings/StringsFromCSFiles` are complete. The clean release snapshot
+passes all eight Swift tests, rebuilds all four Urdu XNB fonts with successful
+round-trip verification, leaves the font/static-label/content generators
+idempotently clean, builds the release app, and passes strict signature
+verification. A fresh SMAPI visual/log session activated `ur-vnrevival`, enabled
+the Urdu shaping and bidi adapter, loaded the dedicated Urdu fonts and
+`TitleButtons`, displayed the shaped Urdu title-menu labels, and recorded no
+`WARN` or `ERROR`; the pre-QA Burmese startup preference was restored afterward.

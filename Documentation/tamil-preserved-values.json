@@ -1,0 +1,401 @@
+[
+  {
+    "target": "Strings/UI",
+    "key": "Emote_X",
+    "reason": "Single-letter controller-style emote label; X is the displayed symbol, not English prose."
+  },
+  {
+    "target": "Strings/BigCraftables",
+    "key": "HMTGF_Name",
+    "reason": "The intentionally obscured secret-statue label is an uppercase initialism, not translatable prose."
+  },
+  {
+    "target": "Strings/BigCraftables",
+    "key": "HMTGF_Description",
+    "reason": "The intentionally obscured secret-statue description is the same uppercase initialism, not translatable prose."
+  },
+  {
+    "target": "Data/Bundles",
+    "key": "Vault/23",
+    "reason": "The only player-facing label is the numeric 2,500g currency amount; the remaining segments are internal bundle data."
+  },
+  {
+    "target": "Data/Bundles",
+    "key": "Vault/24",
+    "reason": "The only player-facing label is the numeric 5,000g currency amount; the remaining segments are internal bundle data."
+  },
+  {
+    "target": "Data/Bundles",
+    "key": "Vault/25",
+    "reason": "The only player-facing label is the numeric 10,000g currency amount; the remaining segments are internal bundle data."
+  },
+  {
+    "target": "Data/Bundles",
+    "key": "Vault/26",
+    "reason": "The only player-facing label is the numeric 25,000g currency amount; the remaining segments are internal bundle data."
+  },
+  {
+    "target": "Strings/Objects",
+    "key": "StrangeDoll_Description",
+    "reason": "The source intentionally displays only three question marks as an obscured description, with no English prose to translate."
+  },
+  {
+    "target": "Strings/Objects",
+    "key": "SupplyCrate_Description",
+    "reason": "The source intentionally displays only an ellipsis as the description, with no English prose to translate."
+  },
+  {
+    "target": "Data/Furniture",
+    "key": "*exact",
+    "expected": 645,
+    "reason": "These records are furniture mechanics and placement metadata. Their leading English text is a legacy internal identifier; each player-facing name is loaded through its preserved LocalizedText reference into the fully translated Strings/Furniture target."
+  },
+  {
+    "target": "Data/animationDescriptions",
+    "key": "*exact",
+    "expected": 105,
+    "reason": "This target contains only animation frame sequences, flags, offsets, and LocalizedText references; all player-facing animation dialogue is localized separately in Strings/animationDescriptions."
+  },
+  {
+    "target": "Strings/credits",
+    "key": "*exact",
+    "expected": 43,
+    "reason": "The remaining source-identical credits entries are proper personal or company names, blank separators, or image directives; headings, language labels, link labels, and the closing message are translated separately."
+  },
+  {
+    "target": "Data/CraftingRecipes",
+    "key": "*exact",
+    "expected": 150,
+    "reason": "Recipe dictionary keys are stable internal IDs and these values contain only ingredient IDs, counts, categories, output IDs, unlock conditions, and empty legacy display-name fields; player-facing names are localized through object and crafting UI string targets."
+  },
+  {
+    "target": "Data/CookingRecipes",
+    "key": "*exact",
+    "expected": 81,
+    "reason": "Recipe dictionary keys are stable internal IDs and these values contain only ingredient IDs, counts, output IDs, and unlock conditions; player-facing names are localized through object and cooking UI string targets."
+  },
+  {
+    "target": "Data/AquariumFish",
+    "key": "*exact",
+    "expected": 72,
+    "reason": "This target contains only aquarium sprite indices and movement-type metadata keyed by object IDs, with no player-facing prose."
+  },
+  {
+    "target": "Data/ChairTiles",
+    "key": "*exact",
+    "expected": 60,
+    "reason": "This target contains only map coordinates, seat dimensions, facing directions, sprite categories, offsets, and booleans, with no player-facing prose."
+  },
+  {
+    "target": "Data/HairData",
+    "key": "*exact",
+    "expected": 23,
+    "reason": "This target contains only hairstyle texture paths, sprite coordinates, flags, and style links, with no player-facing prose."
+  },
+  {
+    "target": "Data/PaintData",
+    "key": "*exact",
+    "expected": 12,
+    "reason": "The English dictionary keys are stable building-style IDs and the values contain only texture region names and color offsets, with no player-facing prose."
+  },
+  {
+    "target": "Strings/StringsFromCSFiles",
+    "key": "NPC.cs.4066",
+    "reason": "This greeting is only the runtime-substituted person's name followed by an exclamation mark; it contains no English prose to translate."
+  },
+  {
+    "target": "Strings/StringsFromCSFiles",
+    "key": "GameLocation.cs.8214",
+    "reason": "This source value is intentionally encoded fantasy-language speech rather than English prose; preserving it retains the in-game language puzzle and all three gender branches."
+  },
+  {
+    "target": "Strings/StringsFromCSFiles",
+    "key": "ItemDeliveryQuest.cs.13620",
+    "reason": "This value contains only a runtime name placeholder, indentation, and line breaks; there is no English prose to translate."
+  },
+  {
+    "target": "Characters/Dialogue/Abigail",
+    "key": "Event_Tragic_2",
+    "reason": "This dialogue contains only punctuation and an emotion marker, with no English prose to translate."
+  },
+  {
+    "target": "Characters/Dialogue/Sam",
+    "key": "dumped_Guys",
+    "reason": "This dialogue contains only an ellipsis and an emotion marker, with no English prose to translate."
+  },
+  {
+    "target": "Characters/Dialogue/Maru",
+    "key": "event_robot4",
+    "reason": "This dialogue contains only punctuation, a player-name placeholder, and emotion or line-break markers, with no English prose to translate."
+  },
+  {
+    "target": "Characters/Dialogue/Emily",
+    "key": "dumped_Girls",
+    "reason": "This dialogue contains only an ellipsis and an emotion marker, with no English prose to translate."
+  },
+  {
+    "target": "Characters/Dialogue/Jas",
+    "key": "Wed",
+    "reason": "This dialogue contains only an ellipsis and an emotion marker, with no English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/summer11",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, actor movement and animation data, map and viewport operations, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/summer11",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/summer11",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, actor movement and animation data, map and viewport operations, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/winter8",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/winter8",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, actor movement and animation data, map and viewport operations, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/winter8",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, actor movement and animation data, map and viewport operations, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/fall16",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/fall16",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, actor movement and animation data, map and viewport operations, animal actor identifiers, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/fall16",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, actor movement and animation data, map and viewport operations, animal actor identifiers, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/fall27",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/fall27",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, actor movement and animation data, map and viewport operations, monster actor identifiers, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/fall27",
+    "key": "shop_y2",
+    "reason": "This value contains only internal shop item-type codes, item IDs, prices, and stock limits; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/fall27",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, actor movement and animation data, map and viewport operations, monster actor identifiers, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/winter25",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/winter25",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, map and viewport operations, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/winter25",
+    "key": "secretSanta",
+    "reason": "This value contains only gift-exchange event commands and internal dialogue lookup keys; the resolved player-facing dialogue is localized in its own records."
+  },
+  {
+    "target": "Data/Festivals/winter25",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, map and viewport operations, and an internal music cue; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/winter25",
+    "key": "secretSanta_y2",
+    "reason": "This value contains only year-two gift-exchange event commands and internal dialogue lookup keys; the resolved player-facing dialogue is localized in its own records."
+  },
+  {
+    "target": "Data/Festivals/summer28",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/summer28",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, actor movement data, map and viewport operations, and internal music and control cues; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/summer28",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, actor movement data, map and viewport operations, and internal music and control cues; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/spring24",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/spring24",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, actor movement and animation data, map and viewport operations, and internal music and control cues; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/spring24",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, actor movement and animation data, map and viewport operations, and internal music and control cues; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/spring13",
+    "key": "conditions",
+    "reason": "This value contains only the internal festival map name and start/end time conditions; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/spring13",
+    "key": "set-up",
+    "reason": "This value contains only festival setup commands, actor movement and animation data, map and viewport operations, and internal music and control cues; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Festivals/spring13",
+    "key": "set-up_y2",
+    "reason": "This value contains only year-two festival setup commands, actor movement and animation data, map and viewport operations, and internal music and control cues; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "11",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "16",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "17",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "18",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "19",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "20",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "21",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "1004",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "1006",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/SecretNotes",
+    "key": "1010",
+    "reason": "This value is an internal image-display command with no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/NPCGiftTastes",
+    "key": "Universal_Neutral",
+    "reason": "This value contains only internal item identifiers and a category token that define universal neutral gift tastes; there is no player-facing prose to translate."
+  },
+  {
+    "target": "Data/NPCGiftTastes",
+    "key": "Universal_Dislike",
+    "reason": "This value contains only internal item identifiers and category tokens that define universal disliked gift tastes; there is no player-facing prose to translate."
+  },
+  {
+    "target": "Strings/StringsFromCSFiles",
+    "key": "LoadGameMenu.cs.11020",
+    "reason": "This value is a currency-format placeholder and the game requires the literal g suffix; there is no translatable English prose."
+  },
+  {
+    "target": "Strings/Notes",
+    "key": "20",
+    "reason": "This value is an intentionally opaque in-world fantasy-language passage; preserving it maintains the authored cipher text and contains no English prose to translate."
+  },
+  {
+    "target": "Strings/1_6_Strings",
+    "key": "Scholar_Question_2_2_Answers",
+    "reason": "This value contains only numeric currency answer options using the game's required literal g suffix; there is no English prose to translate."
+  },
+  {
+    "target": "Strings/1_6_Strings",
+    "key": "Gil_Rating_50",
+    "reason": "This value contains only a runtime placeholder, punctuation, and an emotion token; there is no English prose to translate."
+  },
+  {
+    "target": "Strings/Locations",
+    "key": "MineCart_DestinationWithPrice",
+    "reason": "This value is a destination and currency formatting template made entirely of runtime placeholders and the game's required literal g suffix; there is no English prose to translate."
+  },
+  {
+    "target": "Data/hats",
+    "key": "92",
+    "reason": "This hidden hat definition contains only question-mark placeholders and internal data fields; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Events/IslandSouth",
+    "key": "IslandDepart",
+    "reason": "This event value contains only internal boat departure commands, coordinates, and control data; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Events/BathHouse_Pool",
+    "key": "pennyHeartbroken",
+    "reason": "This branch contains only actor movement, animation, swimming-state, fade, viewport, and event-ending commands; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Events/DesertFestival",
+    "key": "PlayerKilled",
+    "reason": "This value contains only internal player-death, lost-item display, pause, and event-ending commands; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Events/BusStop",
+    "key": "520702/a 11 23 11 24/t 600 1600/z spring/z fall/z summer",
+    "reason": "This value contains only internal actor movement, quest, sound, warp, viewport, and event-ending commands; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Events/LeahHouse",
+    "key": "creepySexualPass",
+    "reason": "This rejection branch contains only internal movement, animation, sound, event-ending commands, punctuation, and an emotion token; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Events/Beach",
+    "key": "7771191/t 2000 2500/f Krobus 3500/w sunny",
+    "reason": "This value contains only internal actor, animation, sprite, sound, lantern, viewport, movement, fade, and event-ending commands; there is no player-facing English prose to translate."
+  },
+  {
+    "target": "Data/Events/Farm",
+    "key": "2146991/y 3/H",
+    "reason": "This value contains only internal ambient, actor, broadcast, fade, viewport, pause, grandpa-candle, and event-ending commands; there is no player-facing English prose to translate."
+  }
+]

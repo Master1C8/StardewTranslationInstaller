@@ -1,0 +1,227 @@
+{
+  "id": "403-seed-shop-museum-bus-and-woods-events",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/SeedShop",
+      "key": "3/f Abigail 2000/p Abigail/t 2000 2200/n abbySpiritBoard",
+      "replacements": [
+        ["Hey! I was hoping you'd show up. I wanna show you something.", "ஏய்! நீங்கள் வருவீர்கள் என்று எதிர்பார்த்தேன். உங்களுக்கு ஒன்றைக் காட்ட விரும்புகிறேன்."],
+        ["See this? It's called a spirit board. Have you ever used one?", "இதைப் பாருங்கள்? இதன் பெயர் ஆவிப் பலகை. எப்போதாவது ஒன்றைப் பயன்படுத்தியிருக்கிறீர்களா?"],
+        ["Put your hands on the planchette with me...$l", "என்னுடன் சேர்ந்து உங்கள் கைகளை நகர்த்தியின் மீது வையுங்கள்...$l"],
+        ["Now the spirits will guide us toward a...$h", "இப்போது ஆவிகள் நம்மை ஒரு... நோக்கி வழிநடத்தும்.$h"],
+        ["LOOK, it's moving!$7", "பாருங்கள், அது நகர்கிறது!$7"],
+        ["The first letter is... 'I' ...", "முதல் எழுத்து... 'I' ..."],
+        ["Next is... '<' ...", "அடுத்து... '<' ..."],
+        ["Wow, look at it go! It's spelling out... '%firstnameletter'...#$b#I < %firstnameletter...?", "ஆஹா, அது போவதைப் பாருங்கள்! அது எழுதுவது... '%firstnameletter'...#$b#I < %firstnameletter...?"],
+        ["Oops, accidentally knocked over the board! Heh heh...$h#$b#It's just a silly game, it doesn't mean anything.$9", "அச்சச்சோ, தவறுதலாகப் பலகையைத் தள்ளிவிட்டேன்! ஹேஹே...$h#$b#இது ஒரு வேடிக்கையான விளையாட்டு மட்டும்தான், இதற்கு எந்த அர்த்தமும் இல்லை.$9"],
+        ["I, um, have something to do. You'll have to go... Sorry.$9", "எனக்கு, எர், கொஞ்சம் வேலை இருக்கிறது. நீங்கள் போக வேண்டும்... மன்னியுங்கள்.$9"]
+      ]
+    },
+    {
+      "target": "Data/Events/SeedShop",
+      "key": "16/f Pierre 1500/p Pierre",
+      "replacements": [
+        ["Found Pierre's 'secret stash'.", "பியரின் 'ரகசியப் பதுக்கலைக்' கண்டுபிடித்தீர்கள்."],
+        ["Hey! Who's in the bedroom?$4", "ஏய்! படுக்கையறையில் இருப்பது யார்?$4"],
+        ["Wha...? How did you find that?!$4", "என்ன...? அதை எப்படிக் கண்டுபிடித்தீர்கள்?!$4"],
+        ["Quick, give it to me!$u", "சீக்கிரம், அதை என்னிடம் கொடுங்கள்!$u"],
+        ["$q 50 null#Promise me you won't tell anyone about this.#$r 50 70 Event_naga1#Your secret is safe with me.#$r 50 -500 Event_naga2#Your wife deserves to know about this.", "$q 50 null#இதைப் பற்றி யாரிடமும் சொல்லமாட்டீர்கள் என்று சத்தியம் செய்யுங்கள்.#$r 50 70 Event_naga1#உங்கள் ரகசியத்தை நான் காப்பாற்றுவேன்.#$r 50 -500 Event_naga2#உங்கள் மனைவிக்கு இதைத் தெரிந்துகொள்ள உரிமை இருக்கிறது."],
+        ["*grumble*...now I have to find a new hiding spot...*grumble*$u ", "*முணுமுணுப்பு*... இப்போது ஒரு புதிய மறைவிடத்தைக் கண்டுபிடிக்க வேண்டும்... *முணுமுணுப்பு*$u "]
+      ]
+    },
+    {
+      "target": "Data/Events/SeedShop",
+      "key": "17/f Caroline 1500/p Caroline/p Abigail",
+      "replacements": [
+        ["Stop telling me how to live my life!$a", "என் வாழ்க்கையை எப்படி வாழ வேண்டும் என்று சொல்வதை நிறுத்து!$a"],
+        ["Hey, cut it out! We're letting you live here free of charge until you finish school. It seems like you don't appreciate that at all!$u", "ஏய், நிறுத்து! படிப்பை முடிக்கும்வரை இங்கே இலவசமாக வசிக்க அனுமதித்திருக்கிறோம். அதை நீ கொஞ்சமும் மதிப்பதாகத் தெரியவில்லை!$u"],
+        ["Stop trying to make me feel guilty.$a#$b#I appreciate that you and Dad are helping me out, but expecting me to dress the way you want is ridiculous.$a#$b#I'm not a little girl anymore, Mom.$u", "என்னைக் குற்ற உணர்வடையச் செய்ய முயல்வதை நிறுத்து.$a#$b#நீயும் அப்பாவும் எனக்கு உதவுவதை மதிக்கிறேன், ஆனால் உன் விருப்பப்படி நான் உடை அணிய வேண்டும் என்று எதிர்பார்ப்பது அபத்தம்.$a#$b#நான் இனியும் சிறுமி இல்லை, அம்மா.$u"],
+        ["...You're right. I'm sorry.$s", "...நீ சொல்வது சரி. மன்னித்துவிடு.$s"],
+        ["Is someone there?$7", "அங்கே யாராவது இருக்கிறீர்களா?$7"],
+        ["I swear, this house is haunted.", "சத்தியமாக, இந்த வீட்டில் பேய் இருக்கிறது."],
+        ["Urgghh...$a#$b#Sorry... I was fighting with my Mom earlier.$s", "அர்ர்...$a#$b#மன்னியுங்கள்... சற்று முன் அம்மாவுடன் சண்டையிட்டுக்கொண்டிருந்தேன்.$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/SeedShop",
+      "key": "58/f Harvey 1500/t 1100 1500",
+      "replacements": [
+        ["Alright! That concludes our aerobics class!#$b#Are you breaking a sweat?$h", "சரி! இத்துடன் நம் ஏரோபிக்ஸ் வகுப்பு முடிகிறது!#$b#வியர்க்கிறதா?$h"],
+        ["*pant*...*pant*...Yes.$7", "*மூச்சிரைப்பு*... *மூச்சிரைப்பு*... ஆம்.$7"],
+        ["@! You were watching me?$8#$b#...How embarrassing... I didn't want anyone to know. Least of all you.$s", "@! என்னைப் பார்த்துக்கொண்டிருந்தீர்களா?$8#$b#...எவ்வளவு சங்கடம்... யாருக்கும் தெரியக்கூடாது என்று நினைத்தேன். குறிப்பாக உங்களுக்கு.$s"],
+        ["I'm just trying to stay healthy. As you get older, it requires more effort.#$b#I'm not in very good shape, though... I can hardly keep up with them.$s", "ஆரோக்கியமாக இருக்க முயற்சி செய்கிறேன். வயதாக ஆக, அதற்கு அதிக முயற்சி தேவைப்படுகிறது.#$b#ஆனால் என் உடல்தகுதி நன்றாக இல்லை... அவர்களுடன் என்னால் ஈடுகொடுக்கவே முடியவில்லை.$s"],
+        ["$q -1 null#Look... Don't tell everyone in town that I'm doing dance aerobics, okay?#$r -1 20 event_aerobics1#I won't tell.#$r -1 -50 event_aerobics2#I can't promise that.", "$q -1 null#பாருங்கள்... நான் நடன ஏரோபிக்ஸ் செய்வதை நகரத்தில் எல்லோரிடமும் சொல்லாதீர்கள், சரியா?#$r -1 20 event_aerobics1#நான் சொல்லமாட்டேன்.#$r -1 -50 event_aerobics2#அப்படி உறுதியளிக்க முடியாது."],
+        ["Wow, that was quite a workout...", "ஆஹா, அது நல்ல உடற்பயிற்சியாக இருந்தது..."]
+      ]
+    },
+    {
+      "target": "Data/Events/SeedShop",
+      "key": "3102768/j 15/H",
+      "replacements": [
+        ["Welcome To Pierre's! How can I help you?", "பியரின் கடைக்கு வரவேற்கிறேன்! உங்களுக்கு எப்படி உதவலாம்?"],
+        ["Ahem...", "*கனைப்பு*..."],
+        ["Come and get it folks... coupons for 50% off your purchase at JojaMart!", "வாருங்கள் மக்களே... ஜோஜாமார்ட்டில் வாங்கும் பொருட்களுக்கு 50% தள்ளுபடிக் கூப்பன்கள்!"],
+        ["50 Percent!?!?", "50 சதவீதமா!?!?"],
+        ["Well? Any takers?", "சரி? யாருக்காவது வேண்டுமா?"],
+        ["But... I can't match those prices! I'd be selling at a loss!$s", "ஆனால்... அந்த விலைகளுக்கு என்னால் போட்டியிட முடியாது! நட்டத்துக்குத்தான் விற்க வேண்டியிருக்கும்!$s"],
+        ["It must be so difficult for you... To lose your loyal customers like that.#$b#But can you blame them? Joja Corporation is clearly the superior choice.$h#$b#Soon the whole town will realize that.", "இப்படி விசுவாசமான வாடிக்கையாளர்களை இழப்பது... உங்களுக்கு மிகவும் கடினமாக இருக்கும்.#$b#ஆனால் அவர்களைக் குற்றம் சொல்ல முடியுமா? ஜோஜா நிறுவனம் தெளிவாகவே சிறந்த தேர்வு.$h#$b#விரைவில் நகரமே அதை உணரும்."],
+        ["Sigh...$s", "*பெருமூச்சு*...$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/SeedShop",
+      "key": "963113/n pierreQualityCrops",
+      "replacements": [
+        ["Gus, I have just the thing for you...", "கஸ், உங்களுக்குப் பொருத்தமான ஒன்று என்னிடம் இருக்கிறது..."],
+        ["I'm all ears.", "சொல்லுங்கள், கேட்கிறேன்."],
+        ["It's a bundle of locally sourced, organic, heirloom veggies...#$b#These are hand picked and sorted, to ensure only the very finest in quality and taste.#$b#This is a once-in-a-lifetime kind of offer!", "இங்கிருந்தே பெறப்பட்ட, இயற்கை முறையில் விளைந்த, பாரம்பரிய வகைக் காய்கறிகளின் தொகுப்பு இது...#$b#தரத்திலும் சுவையிலும் மிகச் சிறந்தவை மட்டுமே கிடைப்பதை உறுதிசெய்ய, கைகளால் தேர்ந்தெடுத்துத் தரம் பிரிக்கப்பட்டவை.#$b#வாழ்நாளில் ஒரேமுறை கிடைக்கும் சலுகை இது!"],
+        ["That sounds pretty good! I could use some quality veggies for the saloon. How much does it cost?", "நன்றாக இருக்கிறதே! மதுக்கூடத்துக்குத் தரமான காய்கறிகள் தேவை. விலை எவ்வளவு?"],
+        ["ONLY... *mumble* mumble*", "வெறும்... *முணுமுணுப்பு* *முணுமுணுப்பு*"],
+        ["What was that?#$b#Hahaha... for a moment there, I thought I heard, '25,000g'.$h", "என்ன சொன்னீர்கள்?#$b#ஹாஹா... ஒரு கணம் '25,000g' என்று சொன்னதுபோல் கேட்டது.$h"],
+        ["Heh... that's right. It really is a bargain, isn't it?", "ஹே... அதுதான். இது உண்மையிலேயே மலிவான விலை, இல்லையா?"],
+        ["Pierre, are you crazy? There's no way I could afford that. I'd have to sell the saloon!$3", "பியர், உங்களுக்குப் பைத்தியமா? அந்த விலை என்னால் கட்டவே முடியாது. மதுக்கூடத்தை விற்க வேண்டியிருக்கும்!$3"],
+        ["I overheard the price... that's outrageous! You should be ashamed.$3", "விலை என் காதில் விழுந்தது... இது அநியாயம்! நீங்கள் வெட்கப்பட வேண்டும்.$3"],
+        ["Wait! How about 10,000g then!?$4", "காத்திருங்கள்! அப்படியானால் 10,000g எப்படி!?$4"],
+        ["No way!", "ஒருபோதும் முடியாது!"],
+        ["It's a disaster, @... $s#$b#I thought this was a surefire business strategy.$s#$b#But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them.$s", "இது ஒரு பேரழிவு, @... $s#$b#இது நிச்சயம் வெற்றிபெறும் வணிக உத்தி என்று நினைத்தேன்.$s#$b#ஆனால் சிறிய 'இயற்கை முறை' வில்லையை ஒட்டினாலும், 10 மடங்கு அதிக விலைக்குக் காய்கறிகளை வாங்க யாரும் தயாராக இல்லை.$s"],
+        ["#You win some, you lose some#You should be less greedy#I'm offended they didn't want my veggies", "#சில நேரம் வெற்றி, சில நேரம் தோல்வி#நீங்கள் பேராசையைக் குறைத்துக்கொள்ள வேண்டும்#என் காய்கறிகள் அவர்களுக்கு வேண்டாமென்றது மனதைப் புண்படுத்துகிறது"],
+        ["You're right, you can't run a business without taking some risk.", "நீங்கள் சொல்வது சரி, கொஞ்சம் ஆபத்தை ஏற்காமல் வணிகம் நடத்த முடியாது."],
+        ["Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on.$3", "ஏய், இதை வாங்கும்படி யாரையும் கட்டாயப்படுத்தவில்லை! விலை பிடிக்காவிட்டால் அவர்கள் போகலாம்.$3"],
+        ["...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all...$s", "...ஆனால், நீங்கள் சொல்வதிலும் நியாயம் இருக்கிறது. என் வாடிக்கையாளர்கள் அனைவரையும் கோபப்படுத்தினால், விரைவில் ஒரு வாடிக்கையாளர்கூட இல்லாமல் போய்விடுவார்...$s"],
+        ["Your veggies look great, @. It's Pierre's price that turned us away.", "உங்கள் காய்கறிகள் அருமையாக இருக்கின்றன, @. பியரின் விலைதான் எங்களை விரட்டியது."],
+        ["By the way, @... you look like you could really use a veggie dinner tonight.#$b#What do you say, wanna buy these back for the low, low price of 2,501g?", "சொல்ல மறந்துவிட்டேன், @... இன்று இரவு காய்கறி உணவு உங்களுக்கு மிகவும் தேவைப்படுவதுபோல் தெரிகிறது.#$b#என்ன சொல்கிறீர்கள், மிக மிகக் குறைந்த விலையான 2,501gக்கு இவற்றைத் திரும்ப வாங்க விரும்புகிறீர்களா?"]
+      ]
+    },
+    {
+      "target": "Data/Events/Woods",
+      "key": "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily",
+      "replacements": [
+        ["Well, this is fun, isn't it?", "இது மகிழ்ச்சியாக இருக்கிறது, இல்லையா?"],
+        ["Kind of spooky, actually...$u", "உண்மையில், கொஞ்சம் பயமுறுத்துகிறது...$u"],
+        ["Heh... it's chilly out here...$4", "ஹே... இங்கே குளிராக இருக்கிறது...$4"],
+        ["A bear! I hope he's not hungry... $6", "ஒரு கரடி! அது பசியுடன் இல்லை என்று நம்புகிறேன்... $6"],
+        ["Oh... the other sleeping bag is still outside...$u#$b#No way am I going back out there!$6", "ஓ... இன்னொரு உறக்கப்பை இன்னும் வெளியே இருக்கிறது...$u#$b#நான் ஒருபோதும் மீண்டும் அங்கே போகமாட்டேன்!$6"],
+        ["Um.. @? You don't mind sharing a sleeping bag with me, do you?$4", "எர்... @? என்னுடன் ஓர் உறக்கப்பையைப் பகிர்ந்துகொள்வதில் உங்களுக்கு ஆட்சேபனை இல்லையே?$4"]
+      ]
+    },
+    {
+      "target": "Data/Events/Woods",
+      "key": "2120303/S 23/i 724/t 600 1900",
+      "replacements": [
+        ["That smell... come closer...$2", "அந்த மணம்... அருகே வா...$2"],
+        ["Heh... It's not every day I get to speak to a human. Looks like you've got a little 'forest magic' in you...$3", "ஹே... தினமும் ஒரு மனிதருடன் பேசும் வாய்ப்பு எனக்குக் கிடைப்பதில்லை. உன்னிடம் கொஞ்சம் 'காட்டு மந்திரம்' இருப்பதுபோல் தெரிகிறது...$3"],
+        ["Now... about my note... Did you bring the good stuff?", "இப்போது... என் குறிப்பைப் பற்றி... அந்த நல்ல பொருளைக் கொண்டுவந்தாயா?"],
+        ["HOoOoOoooh... that smell... this is really sweet stuff!$h#$b#...it's my favorite sauce... it makes me very happy.$h", "ஓஓஓஓஓ... அந்த மணம்... இது உண்மையிலேயே இனிப்பான பொருள்!$h#$b#...இதுதான் எனக்குப் பிடித்த சாறு... இது எனக்கு மிகவும் மகிழ்ச்சியளிக்கிறது.$h"],
+        ["...You've made a friend today, @.", "...இன்று ஒரு நண்பரைப் பெற்றுவிட்டாய், @."],
+        ["I've got something special I want to show you...", "உனக்குக் காட்டுவதற்கு என்னிடம் விசேஷமான ஒன்று இருக்கிறது..."],
+        ["The bear left you with his special knowledge...", "கரடி தனது விசேஷ அறிவை உங்களுக்குக் கொடுத்துச் சென்றது..."],
+        ["Salmonberries and Blackberries are now worth 3x the gold!", "இப்போது சால்மன்பெர்ரிகளுக்கும் பிளாக்பெர்ரிகளுக்கும் 3 மடங்கு தங்கம் கிடைக்கும்!"]
+      ]
+    },
+    {
+      "target": "Data/Events/ArchaeologyHouse",
+      "key": "1848481/f Elliott 2000/t 1300 1900/n elliottReading",
+      "replacements": [
+        ["@, you made it!$h#$b#I feel so relieved to be done with my book... it's like an elephant's been lifted off my shoulders.", "@, வந்துவிட்டீர்கள்!$h#$b#என் புத்தகத்தை முடித்தது பெரும் நிம்மதியாக இருக்கிறது... தோள்களிலிருந்து ஒரு யானையை இறக்கிவிட்டதுபோல் இருக்கிறது."],
+        ["Well, I'd better get started with the reading... Wish me luck.$8", "சரி, வாசிப்பைத் தொடங்குவது நல்லது... எனக்கு நல்ல அதிர்ஷ்டம் வேண்டிக்கொள்ளுங்கள்.$8"],
+        ["Good afternoon, everyone.", "அனைவருக்கும் மதிய வணக்கம்."],
+        ["Hi!", "வணக்கம்!"],
+        ["Ever since I was a young boy, I've dreamt of becoming a writer.#$b#When the time came for me to leave home and start my own life, I moved here. I was drawn to the peaceful beauty of the valley, and hoped that days of quiet reflection in this idyllic atmosphere would fan the literary flames.", "சிறுவனாக இருந்ததிலிருந்தே எழுத்தாளராக வேண்டும் என்று கனவு கண்டேன்.#$b#வீட்டை விட்டு வெளியேறி என் சொந்த வாழ்க்கையைத் தொடங்கும் நேரம் வந்தபோது இங்கே குடியேறினேன். பள்ளத்தாக்கின் அமைதியான அழகு என்னை ஈர்த்தது; இந்த இனிய சூழலில் அமைதியாகச் சிந்திக்கும் நாட்கள் என் இலக்கியத் தீயைத் தூண்டும் என்று நம்பினேன்."],
+        ["After countless hours scribbling at my writing desk, I present to you my first novel: 'The Rise And Fall Of Planet Yazzo'... It's a sci-fi epic spanning thousands of years in an exotic planetary system.", "என் எழுதும் மேசையில் எண்ணற்ற மணிநேரங்கள் கிறுக்கிய பிறகு, என் முதல் நாவலை உங்களுக்கு வழங்குகிறேன்: 'யாஸோ கோளின் எழுச்சியும் வீழ்ச்சியும்'... ஓர் அயல் கோள் மண்டலத்தில் ஆயிரக்கணக்கான ஆண்டுகள் நீளும் அறிவியல் புனைவுக் காவியம்."],
+        ["Chapter One.#$b#Commander Yutkin stepped through the golden archway as the airlock snapped shut behind him. Today was his first day on Planet Yazzo, and all 14 of the alliance delegates had been summoned to the Grand Spire...", "அத்தியாயம் ஒன்று.#$b#தனக்குப் பின்னால் காற்றடைப்புக் கதவு சட்டென்று மூட, தளபதி யுட்கின் பொன்னிற வளைவாயிலைக் கடந்து சென்றார். யாஸோ கோளில் அது அவரது முதல் நாள்; கூட்டணியின் 14 பிரதிநிதிகளும் பெரும் கோபுரத்துக்கு அழைக்கப்பட்டிருந்தனர்..."],
+        ["...And as the 7th moon descended beneath the horizon, the planet of Yazzo would begin its sinister transformation... an event for which Commander Yutkin was completely unprepared.", "...ஏழாவது நிலவு அடிவானத்துக்குக் கீழே இறங்கியதும், யாஸோ கோள் தனது கொடூரமான உருமாற்றத்தைத் தொடங்கும்... தளபதி யுட்கின் சற்றும் தயாராக இல்லாத ஒரு நிகழ்வு."],
+        ["Well, that concludes my reading. I'll be selling signed copies of the book by the front desk. Thanks for listening!$h", "சரி, இத்துடன் என் வாசிப்பு முடிகிறது. முன் மேசையில் கையொப்பமிட்ட புத்தகப் பிரதிகளை விற்பேன். கேட்டதற்கு நன்றி!$h"],
+        ["Well, how was it?", "சரி, எப்படி இருந்தது?"],
+        ["Thanks. $h#$b#You know, I got the idea for making a sci-fi book from you. Do you remember?#$b#That's why I've dedicated this book to you...$l", "நன்றி. $h#$b#தெரியுமா, அறிவியல் புனைவுப் புத்தகம் எழுதும் யோசனை உங்களிடமிருந்துதான் கிடைத்தது. நினைவிருக்கிறதா?#$b#அதனால்தான் இந்தப் புத்தகத்தை உங்களுக்கு அர்ப்பணித்திருக்கிறேன்...$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/ArchaeologyHouse",
+      "key": "mysteryBook",
+      "replacements": [
+        ["After countless hours scribbling at my writing desk, I present to you my first book: 'Blue Tower'... It's a mystery novel set in a surreal, dystopian future.", "என் எழுதும் மேசையில் எண்ணற்ற மணிநேரங்கள் கிறுக்கிய பிறகு, என் முதல் புத்தகத்தை உங்களுக்கு வழங்குகிறேன்: 'நீலக் கோபுரம்'... மிகைமெய்த் தோற்றம் கொண்ட இருண்ட எதிர்காலத்தில் நடக்கும் ஒரு மர்ம நாவல்."],
+        ["Chapter One.#$b#From the shadows emerged a man, radiating with enigmatic omniscience. 'Good Evening, Mr. Lu,' he said, the corners of his mouth quivering. Lu seemed astonished. 'How did you know my name?'", "அத்தியாயம் ஒன்று.#$b#மர்மமான அனைத்தறிவை வெளிப்படுத்தியபடி நிழல்களிலிருந்து ஓர் ஆண் தோன்றினார். 'மாலை வணக்கம், திரு. லூ,' என்று உதட்டோரங்கள் நடுங்க அவர் சொன்னார். லூ திகைத்தார். 'என் பெயர் உங்களுக்கு எப்படித் தெரியும்?'"],
+        ["Lu checked Jenu's pockets, then stood up and walked into the bedroom. He quickly found the small golden key that he was looking for and slipped it into his coat pocket.", "லூ ஜெனுவின் பைகளைச் சோதித்துவிட்டு எழுந்து படுக்கையறைக்குள் சென்றார். தான் தேடிய சிறிய பொன்னிறச் சாவியை விரைவில் கண்டுபிடித்து மேலங்கிப் பைக்குள் நழுவவிட்டார்."],
+        ["Well, that concludes my reading. I'll be selling signed copies of the book by the front desk. Thanks for listening!$h", "சரி, இத்துடன் என் வாசிப்பு முடிகிறது. முன் மேசையில் கையொப்பமிட்ட புத்தகப் பிரதிகளை விற்பேன். கேட்டதற்கு நன்றி!$h"],
+        ["Well, how was it?", "சரி, எப்படி இருந்தது?"],
+        ["Thanks. $h#$b#You know, I got the idea for making a mystery from you. Do you remember?#$b#That's why I've dedicated this book to you...$l", "நன்றி. $h#$b#தெரியுமா, மர்மக்கதை எழுதும் யோசனை உங்களிடமிருந்துதான் கிடைத்தது. நினைவிருக்கிறதா?#$b#அதனால்தான் இந்தப் புத்தகத்தை உங்களுக்கு அர்ப்பணித்திருக்கிறேன்...$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/ArchaeologyHouse",
+      "key": "romanceBook",
+      "replacements": [
+        ["After countless hours scribbling at my writing desk, I present to you my first novel: 'Camellia Station'... It's a romance novel about a train stewardess who falls in love with a traveling architect...", "என் எழுதும் மேசையில் எண்ணற்ற மணிநேரங்கள் கிறுக்கிய பிறகு, என் முதல் நாவலை உங்களுக்கு வழங்குகிறேன்: 'கமீலியா நிலையம்'... பயணம் செய்யும் கட்டிடக் கலைஞரைக் காதலிக்கும் ரயில் பணிப்பெண்ணைப் பற்றிய காதல் நாவல்..."],
+        ["Chapter One.#$b#'Your ticket, sir?' Ticket collector Gozman extended a gloved hand towards the young commuter. 'Ah, yes. I have it right here,' he replied, reaching into his coat pocket. Mortified, he discovered that the ticket was missing.", "அத்தியாயம் ஒன்று.#$b#'உங்கள் பயணச்சீட்டு, ஐயா?' பயணச்சீட்டுப் பரிசோதகர் கோஸ்மன் கையுறை அணிந்த கையை அந்த இளம் பயணியை நோக்கி நீட்டினார். 'ஆ, ஆம். இதோ இங்கே இருக்கிறது,' என்று பதிலளித்தபடி அவன் மேலங்கிப் பைக்குள் கையை விட்டான். பயணச்சீட்டு காணாமல் போனதை அறிந்து அவமானத்தில் உறைந்தான்."],
+        ["...'Clara, there's something I must tell you,' he blurted as she turned to leave. Clara turned, slowly, and saw the look of desperation in Horatio's eye. At that moment Gozman burst into the compartment, red-faced.", "...'கிளாரா, உன்னிடம் ஒன்றைச் சொல்ல வேண்டும்,' அவள் கிளம்பத் திரும்பியபோது அவன் சட்டென்று சொன்னான். கிளாரா மெதுவாகத் திரும்பி, ஹோரேஷியோவின் கண்ணில் இருந்த விரக்தியைக் கண்டாள். அந்நேரம் முகம் சிவந்தபடி கோஸ்மன் அறைக்குள் பாய்ந்தார்."],
+        ["Well, that concludes my reading. I'll be selling signed copies of the book by the front desk. Thanks for listening!$h", "சரி, இத்துடன் என் வாசிப்பு முடிகிறது. முன் மேசையில் கையொப்பமிட்ட புத்தகப் பிரதிகளை விற்பேன். கேட்டதற்கு நன்றி!$h"],
+        ["Well, how was it?", "சரி, எப்படி இருந்தது?"],
+        ["Thanks. $h#$b#You know, I got the idea for writing a romance novel from you. Do you remember?#$b#That's why I've dedicated this book to you...$l", "நன்றி. $h#$b#தெரியுமா, காதல் நாவல் எழுதும் யோசனை உங்களிடமிருந்துதான் கிடைத்தது. நினைவிருக்கிறதா?#$b#அதனால்தான் இந்தப் புத்தகத்தை உங்களுக்கு அர்ப்பணித்திருக்கிறேன்...$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/ArchaeologyHouse",
+      "key": "0/n somethingToDonate/l somethingWasDonated",
+      "replacements": [
+        ["Abysmal...#$b#Not a single piece in the entire collection.", "பரிதாபம்...#$b#மொத்தச் சேகரிப்பிலும் ஒரு பொருள்கூட இல்லை."],
+        ["What's this? You found something? Let me see it!", "இது என்ன? ஏதாவது கண்டுபிடித்தீர்களா? என்னிடம் காட்டுங்கள்!"],
+        ["Remarkable!#$b#It's very old.#$b#I'd love to study this in greater detail... But it is yours.", "அற்புதம்!#$b#இது மிகவும் பழமையானது.#$b#இதை இன்னும் விரிவாக ஆராய விரும்புகிறேன்... ஆனால் இது உங்களுடையது."],
+        ["Hmmm...#$b#I've got a favor to ask you.#$b#Would you consider donating any new artifacts or minerals that you find?#$b#We could make a groundbreaking discovery together!#$b#Oh, and who knows... If you keep donating I might come across some interesting items to send your way.", "ஹ்ம்...#$b#உங்களிடம் ஓர் உதவி கேட்க வேண்டும்.#$b#நீங்கள் கண்டுபிடிக்கும் புதிய தொல்பொருட்களையோ கனிமங்களையோ நன்கொடையாக வழங்குவீர்களா?#$b#நாம் சேர்ந்து ஒரு புரட்சிகரமான கண்டுபிடிப்பைச் செய்யலாம்!#$b#ஓ, யாருக்குத் தெரியும்... தொடர்ந்து நன்கொடை அளித்தால் உங்களுக்கு அனுப்ப சில சுவாரசியமான பொருட்கள் எனக்குக் கிடைக்கலாம்."],
+        ["Think about it, will you?#$b#If you decide to donate, just bring the objects to the front desk.", "இதைப் பற்றி யோசித்துப் பாருங்கள், சரியா?#$b#நன்கொடை அளிக்க முடிவெடுத்தால், பொருட்களை முன் மேசைக்குக் கொண்டுவாருங்கள்."]
+      ]
+    },
+    {
+      "target": "Data/Events/BusStop",
+      "key": "4081148/e 47/t 1600 1900",
+      "replacements": [
+        ["Hi @. Thanks for coming.", "வணக்கம் @. வந்ததற்கு நன்றி."],
+        ["Well, our gear's loaded already... Looks like everything's set.", "சரி, எங்கள் இசைக்கருவிகள் ஏற்கெனவே ஏற்றப்பட்டுவிட்டன... எல்லாம் தயாராக இருப்பதுபோல் தெரிகிறது."],
+        ["Alright, everyone... let's get in the bus!$u", "சரி, எல்லோரும்... பேருந்தில் ஏறுவோம்!$u"],
+        ["*gulp*... I'm starting to get really nervous.$8", "*விழுங்குதல்*... எனக்கு மிகவும் பதற்றமாகத் தொடங்குகிறது.$8"],
+        ["Okay, here we are... wish me luck!$u", "சரி, வந்துவிட்டோம்... எனக்கு நல்ல அதிர்ஷ்டம் வேண்டிக்கொள்ளுங்கள்!$u"],
+        ["Hey. The show was a great success! Thanks again, @.", "ஏய். நிகழ்ச்சி பெரும் வெற்றி பெற்றது! மீண்டும் நன்றி, @."]
+      ]
+    },
+    {
+      "target": "Data/Events/BusStop",
+      "key": "60367/u 0",
+      "replacements": [
+        ["Hello! You must be @.#$b#I'm Robin, the local carpenter. Mayor Lewis sent me here to fetch you and show you the way to your new home. He's there right now, tidying things up for your arrival.#$b#The farm's right over here, if you'll follow me.", "வணக்கம்! நீங்கள்தான் @ ஆக இருக்க வேண்டும்.#$b#நான் ராபின், இங்குள்ள தச்சர். மேயர் லூயிஸ் உங்களை அழைத்துச் சென்று உங்கள் புதிய வீட்டுக்கு வழிகாட்டும்படி என்னை அனுப்பினார். உங்கள் வருகைக்காக அவர் இப்போது அங்கே ஒழுங்குபடுத்திக்கொண்டிருக்கிறார்.#$b#என்னைப் பின்தொடர்ந்தால், பண்ணை இதோ இங்கேதான் இருக்கிறது."],
+        ["This is %farm farm.", "இதுதான் %farm பண்ணை."],
+        ["What's the matter?#$b#Sure, it's a bit overgrown, but there's some good soil underneath that mess!#$b#With a little dedication you'll have it cleaned up in no time.", "என்ன ஆயிற்று?#$b#நிச்சயமாக, கொஞ்சம் புதர்மண்டிக் கிடக்கிறது; ஆனால் அந்தக் குப்பைக்குக் கீழே நல்ல மண் இருக்கிறது!#$b#கொஞ்சம் அர்ப்பணிப்புடன் வேலை செய்தால் விரைவில் சுத்தம் செய்துவிடலாம்."],
+        ["...And here we are, your new home.$h", "...இதோ வந்துவிட்டோம், உங்கள் புதிய வீடு.$h"],
+        ["Ah, the new farmer!$h", "ஆ, புதிய விவசாயி!$h"],
+        ["Welcome! I'm Lewis, Mayor of Pelican Town.#$b#You know, everyone's been asking about you.#$b#It's not every day that someone new moves in. It's quite a big deal!", "வரவேற்கிறேன்! நான் லூயிஸ், பெலிக்கன் நகரத்தின் மேயர்.#$b#தெரியுமா, எல்லோரும் உங்களைப் பற்றிக் கேட்டுக்கொண்டிருந்தார்கள்.#$b#தினமும் ஒரு புதிய நபர் இங்கே குடியேறுவதில்லை. இது பெரிய விஷயம்!"],
+        ["So... You're moving into your grandfather's old cottage.#$b#It's a good house... very 'rustic'.", "அப்படியானால்... உங்கள் தாத்தாவின் பழைய குடிலுக்குக் குடிபெயர்கிறீர்கள்.#$b#அது நல்ல வீடு... மிகவும் 'கிராமியமானது'."],
+        ["Rustic? That's one way to put it... $4#$b#'Crusty' might be a little more apt, though.$4", "கிராமியமா? அப்படியும் சொல்லலாம்... $4#$b#ஆனால் 'நாறிப்போனது' என்று சொல்வது இன்னும் பொருத்தமாக இருக்கலாம்.$4"],
+        ["Rude!", "மரியாதையற்றவள்!"],
+        ["Don't listen to her, @. She's just trying to make you dissatisfied so that you buy one of her house upgrades.$u", "அவள் சொல்வதைக் கேட்காதீர்கள், @. அவளுடைய வீட்டு மேம்பாடுகளில் ஒன்றை நீங்கள் வாங்குவதற்காக உங்களை அதிருப்தியடையச் செய்ய முயல்கிறாள்.$u"],
+        ["Hmmph.", "ஹ்ம்ஃப்."],
+        ["Anyway... You must be tired from the long journey. You should get some rest.#$b#Tomorrow you ought to explore the town a bit and introduce yourself.#$b#The townspeople would appreciate that.", "எப்படியிருந்தாலும்... நீண்ட பயணத்தால் களைப்பாக இருப்பீர்கள். கொஞ்சம் ஓய்வெடுங்கள்.#$b#நாளை நகரைச் சற்றுச் சுற்றிப் பார்த்து உங்களை அறிமுகப்படுத்திக்கொள்ளுங்கள்.#$b#நகர மக்கள் அதை விரும்புவார்கள்."],
+        ["Oh, I almost forgot. If you have anything to sell, just place it in this box here. I'll come by during the night to collect it.#$b#Well... Good luck!", "ஓ, சொல்ல மறந்துவிட்டேன். விற்க ஏதாவது இருந்தால், இங்கே இந்தப் பெட்டியில் வையுங்கள். இரவில் வந்து அதை எடுத்துக்கொள்வேன்.#$b#சரி... நல்ல அதிர்ஷ்டம்!"]
+      ]
+    },
+    {
+      "target": "Data/Events/BusStop",
+      "key": "9581348/e 2128292/t 1600 1800",
+      "replacements": [
+        ["Hey, there you are!$6#$b#I'm glad you decided to come. We should get going...$6", "ஏய், இதோ வந்துவிட்டீர்கள்!$6#$b#வர முடிவெடுத்ததில் மகிழ்ச்சி. நாம் கிளம்ப வேண்டும்...$6"],
+        ["We're almost there...", "கிட்டத்தட்ட வந்துவிட்டோம்..."],
+        ["*gulp* ...pre-game nerves...$10", "*விழுங்குதல்*... ஆட்டத்துக்கு முந்தைய பதற்றம்...$10"],
+        ["Here, I got you another cold one...", "இதோ, உங்களுக்காக இன்னொரு குளிர்ந்த பீர் வாங்கினேன்..."],
+        ["Hey, I've been meaning to say... $6#$b#Thanks for sticking with me through everything... my anxiety, depression... you know...$6#$b#You've been a really good friend to me.$6", "ஏய், இதைச் சொல்ல வேண்டுமென்று நினைத்துக்கொண்டிருந்தேன்... $6#$b#எல்லாவற்றிலும் என்னுடன் இருந்ததற்கு நன்றி... என் பதற்றம், மனச்சோர்வு... உங்களுக்குத் தெரியுமே...$6#$b#எனக்கு மிக நல்ல நண்பராக இருந்திருக்கிறீர்கள்.$6"],
+        ["Anyway...  it's your first gridball game, huh?", "எப்படியிருந்தாலும்... இது உங்கள் முதல் கிரிட்பால் ஆட்டம், இல்லையா?"],
+        ["$q -1 null#Well, what do you think?#$r -1 10 event_stadium1#Noisy... It makes me appreciate how peaceful it is back home.#$r -1 10 event_stadium2#Fun... Pelican Town seems really boring in comparison.", "$q -1 null#சரி, என்ன நினைக்கிறீர்கள்?#$r -1 10 event_stadium1#சத்தமாக இருக்கிறது... நம் ஊர் எவ்வளவு அமைதியானது என்பதை மதிக்க வைக்கிறது.#$r -1 10 event_stadium2#மகிழ்ச்சியாக இருக்கிறது... ஒப்பிடும்போது பெலிக்கன் நகரம் மிகவும் சலிப்பாகத் தெரிகிறது."],
+        ["Gahh!! Look, the Tunnelers are on the attack!$10", "ஆ!! பாருங்கள், டன்னலர்ஸ் தாக்குகிறார்கள்!$10"],
+        ["Goal!!", "கோல்!!"],
+        ["Goal!", "கோல்!"],
+        ["Oh!...$10", "ஓ!...$10"],
+        ["Um... Sorry... I got carried away there.$10#$b#Maybe I had one too many...", "எர்... மன்னியுங்கள்... உணர்ச்சிவசப்பட்டுவிட்டேன்.$10#$b#ஒருவேளை ஒன்றுக்கு அதிகமாகக் குடித்துவிட்டேன்..."],
+        ["Well... that was definitely a good game.$l", "சரி... நிச்சயமாக அது நல்ல ஆட்டமாக இருந்தது.$l"],
+        ["Oh, yeah... and we won, too.$l", "ஓ, ஆமாம்... நாமும் வென்றுவிட்டோம்.$l"],
+        ["Well... see you soon.$6", "சரி... விரைவில் சந்திப்போம்.$6"]
+      ]
+    }
+  ]
+}

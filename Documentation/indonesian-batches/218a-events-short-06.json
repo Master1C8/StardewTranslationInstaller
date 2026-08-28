@@ -1,0 +1,318 @@
+[
+  {
+    "target": "Data/Events/SeedShop",
+    "key": "16/f Pierre 1500/p Pierre",
+    "replacements": [
+      [
+        "Found Pierre's 'secret stash'.",
+        "Menemukan 'simpanan rahasia' Pierre."
+      ],
+      [
+        "Hey! Who's in the bedroom?$4",
+        "Hei! Siapa yang berada di kamar tidur?$4"
+      ],
+      [
+        "Wha...? How did you find that?!$4",
+        "Apa...? Bagaimana kamu menemukannya?!$4"
+      ],
+      [
+        "Quick, give it to me!$u",
+        "Cepat, berikan kepadaku!$u"
+      ],
+      [
+        "$q 50 null#Promise me you won't tell anyone about this.#$r 50 70 Event_naga1#Your secret is safe with me.#$r 50 -500 Event_naga2#Your wife deserves to know about this.",
+        "$q 50 null#Berjanjilah kamu tidak akan memberi tahu siapa pun tentang ini.#$r 50 70 Event_naga1#Rahasiamu aman bersamaku.#$r 50 -500 Event_naga2#Istrimu berhak mengetahui hal ini."
+      ],
+      [
+        "*grumble*...now I have to find a new hiding spot...*grumble*$u ",
+        "*menggerutu*... sekarang aku harus mencari tempat persembunyian baru... *menggerutu*$u "
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/SebastianRoom",
+    "key": "Necromancer",
+    "replacements": [
+      [
+        "Xarth: Intruders? How dare you trespass in my private chambers!",
+        "Xarth: Penyusup? Berani sekali kalian menerobos ruang pribadiku!"
+      ],
+      [
+        "Ah, so you've come for the Solarion Staff...",
+        "Ah, jadi kalian datang untuk mengambil Tongkat Solarion..."
+      ],
+      [
+        "Hehehe... fools. You'll make a nice addition to my skeleton army!",
+        "Hehehe... dasar bodoh. Kalian akan menjadi tambahan yang bagus bagi pasukan kerangkaku!"
+      ],
+      [
+        "Dreadlord Xarth casts shadow beam!",
+        "Dreadlord Xarth merapal sinar bayangan!"
+      ],
+      [
+        "You were able to dodge the spell, but your companions are gravely injured!",
+        "Kamu berhasil menghindari mantra itu, tetapi rekan-rekanmu terluka parah!"
+      ],
+      [
+        "What do you do?#Heal the Warrior (Sam).#Heal the Wizard (Sebastian).",
+        "Apa yang kamu lakukan?#Sembuhkan Prajurit (Sam).#Sembuhkan Penyihir (Sebastian)."
+      ],
+      [
+        "Thanks, @.$7",
+        "Terima kasih, @.$7"
+      ],
+      [
+        "Sebastian casts 'Pure Bolt'... A beam of white light hits Xarth square in the face. The Dreadlord shrieks and crumbles into dust.",
+        "Sebastian merapal 'Panah Murni'... Sinar cahaya putih menghantam tepat di wajah Xarth. Dreadlord itu menjerit lalu hancur menjadi debu."
+      ],
+      [
+        "You pick up the Solarion Staff and hold it high. Order has been restored to the world.",
+        "Kamu mengambil Tongkat Solarion dan mengangkatnya tinggi-tinggi. Ketertiban dunia telah dipulihkan."
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/Farm",
+    "key": "690006/n slimeHutchBuilt/H",
+    "replacements": [
+      [
+        "Bumped into Robin this morning... she told me you've got a new Slime Hutch!",
+        "Tadi pagi aku bertemu Robin... dia memberitahuku bahwa kamu punya Kandang Slime baru!"
+      ],
+      [
+        "Not bad!",
+        "Lumayan!"
+      ],
+      [
+        "I was into slime breeding at your age. It's a great hobby... but dangerous.#$b#How'd you think I lost this eye?",
+        "Saat seusiamu, aku gemar membiakkan Slime. Hobi yang bagus... tetapi berbahaya.#$b#Menurutmu, bagaimana aku kehilangan mata ini?"
+      ],
+      [
+        "Just Kidding.",
+        "Hanya Bercanda."
+      ],
+      [
+        "Here, I've got something for you.",
+        "Ini, aku punya sesuatu untukmu."
+      ],
+      [
+        "It's a slime egg. You can place that inside a slime incubator to hatch it.#$b#Now, take a good hard look at that egg. Next time you're out slime-hunting keep your eyes peeled for more eggs. They're rare, but slimes do drop them from time to time.#$b#Collect eggs from different slimes to add some variety to your herd!",
+        "Ini Telur Slime. Kamu bisa memasukkannya ke dalam Inkubator Slime untuk menetaskannya.#$b#Sekarang, perhatikan telur itu baik-baik. Lain kali saat berburu Slime, awasi keberadaan telur lain. Telur itu langka, tetapi sesekali Slime menjatuhkannya.#$b#Kumpulkan telur dari berbagai Slime untuk menambah keragaman kawananmu!"
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/Town",
+    "key": "itsagift",
+    "replacements": [
+      [
+        "Then... I'll just have to swallow my pride...",
+        "Kalau begitu... aku harus menelan harga diriku..."
+      ],
+      [
+        "*ahem*... Thank you, @.$s",
+        "*berdeham*... Terima kasih, @.$s"
+      ],
+      [
+        "Mom...$s",
+        "Ibu...$s"
+      ],
+      [
+        "Don't worry... @ just wants to make us happy. No one in Pelican Town looks down on us for being poor.$s",
+        "Jangan khawatir... @ hanya ingin membuat kita bahagia. Tidak seorang pun di Kota Pelican merendahkan kita karena miskin.$s"
+      ],
+      [
+        "...We aren't 'poor' anymore, kid... put that thought out of your mind!#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...",
+        "...Kita tidak 'miskin' lagi, Nak... buang pikiran itu!#$b#Mulai sekarang kita akan seperti keluarga sungguhan... kamu dengar?#$b#Aku tidak ingin terus-menerus merasa getir...$s#$b#Aku akan mencoba mengubah hidupku..."
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/WizardHouse",
+    "key": "418172/n hasPickedUpMagicInk",
+    "replacements": [
+      [
+        "You've found my ink! Excellent.",
+        "Kamu menemukan tintaku! Luar biasa."
+      ],
+      [
+        "Did you... happen to see my ex-wife?#$b#No? Well, what about her house...?#$b#Do you think she lives alone? Or...$h",
+        "Apa kamu... kebetulan melihat mantan istriku?#$b#Tidak? Lalu, bagaimana dengan rumahnya...?#$b#Menurutmu, apa dia tinggal sendirian? Atau...$h"
+      ],
+      [
+        "...Actually, don't tell me... I don't want to know.",
+        "...Sebenarnya, jangan beri tahu aku... Aku tidak ingin tahu."
+      ],
+      [
+        "Anyway... you must be wondering about your reward. Here...",
+        "Bagaimanapun... kamu pasti penasaran dengan hadiahmu. Ini..."
+      ],
+      [
+        "It's a book of summoning.#$b#The arcane potential is immense... but I'll make it simple for you.#$b#By using this book, you can summon magic buildings directly to your farm.#$b#I think you'll find it useful.",
+        "Ini buku pemanggilan.#$b#Potensi sihirnya sangat besar... tetapi akan kubuat sederhana untukmu.#$b#Dengan buku ini, kamu bisa memanggil bangunan sihir langsung ke Ladangmu.#$b#Kurasa buku ini akan berguna."
+      ],
+      [
+        "Oh, I almost forgot to say... ahem... Thank you.",
+        "Oh, aku hampir lupa mengatakan... ehem... Terima kasih."
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/Town",
+    "key": "itsagift_pennySpouse",
+    "replacements": [
+      [
+        "Then... I'll just have to swallow my pride...",
+        "Kalau begitu... aku harus menelan harga diriku..."
+      ],
+      [
+        "*ahem*... Thank you, @.$s",
+        "*berdeham*... Terima kasih, @.$s"
+      ],
+      [
+        "Mom...$s",
+        "Ibu...$s"
+      ],
+      [
+        "Don't worry, Mom... we just want to make you happy. No one in Pelican Town looks down on us for being poor.$s",
+        "Jangan khawatir, Bu... kami hanya ingin membuat Ibu bahagia. Tidak seorang pun di Kota Pelican merendahkan kita karena miskin.$s"
+      ],
+      [
+        "...I ain't 'poor' anymore, kid... put that thought out of your mind!#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...",
+        "...Aku tidak 'miskin' lagi, Nak... buang pikiran itu!#$b#Mulai sekarang kita akan seperti keluarga sungguhan... kamu dengar?#$b#Aku tidak ingin terus-menerus merasa getir...$s#$b#Aku akan mencoba mengubah hidupku..."
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/Forest",
+    "key": "611944/f Shane 500/t 2000 2400",
+    "replacements": [
+      [
+        "Up late, huh?",
+        "Belum tidur, ya?"
+      ],
+      [
+        "Here, have a cold one.",
+        "Ini, minumlah yang dingin."
+      ],
+      [
+        "Buh... Life.",
+        "Bah... Hidup."
+      ],
+      [
+        "You ever feel like... no matter what you do, you're gonna fail?#$b#...Like you're stuck in some miserable abyss and you're so deep you can't even see the light of day?",
+        "Pernahkah kamu merasa... apa pun yang dilakukan, kamu akan gagal?#$b#...Seolah terjebak dalam jurang penderitaan yang begitu dalam sampai cahaya siang pun tidak terlihat?"
+      ],
+      [
+        "I just feel like no matter how hard I try... I'm not strong enough to climb out of that hole.",
+        "Rasanya sekeras apa pun aku berusaha... aku tidak cukup kuat untuk memanjat keluar dari lubang itu."
+      ],
+      [
+        "Heh... fast drinker, huh? Man after my own heart.^Heh... fast drinker, huh? Woman after my own heart.#$b#Just don't make it a habit... you got a future ahead of you still.",
+        "Heh... cepat minum, ya? Pria yang sepemikiran denganku.^Heh... cepat minum, ya? Wanita yang sepemikiran denganku.#$b#Jangan jadikan kebiasaan... kamu masih punya masa depan."
+      ],
+      [
+        "Welp.. My liver's beggin' me to stop. Better call it a night.#$b#See you around, @.",
+        "Yah... Liverku memohon agar aku berhenti. Sebaiknya kita akhiri malam ini.#$b#Sampai jumpa, @."
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/JoshHouse",
+    "key": "2119820/f Alex 1500/p Alex",
+    "replacements": [
+      [
+        "Oh! Hey... I was just doing my daily strength training routine.$6#$b#... sorry I have no shirt on.$6",
+        "Oh! Hei... Aku baru saja melakukan latihan kekuatan harian.$6#$b#...maaf aku tidak memakai baju.$6"
+      ],
+      [
+        "Uh... @? I've been meaning to talk to you about something...$8",
+        "Eh... @? Aku sudah lama ingin membicarakan sesuatu...$8"
+      ],
+      [
+        "I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that.$8",
+        "Aku mulai menyadari bahwa... yah, dahulu aku bersikap sangat kasar kepadamu. Kamu tahu, tentang menjadi pemain profesional dan sebagainya.$8"
+      ],
+      [
+        "I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know?$8#$b#Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that.$6",
+        "Kurasa mungkin aku memang tidak ditakdirkan untuk olahraga profesional... mungkin itu hanya impian kekanak-kanakan... kamu mengerti?$8#$b#Bagaimanapun... Aku ingin meminta maaf karena terus membual dan mengganggumu tentang itu. Aku menghargai kamu tetap menjadi temanku selama semua itu.$6"
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/LeahHouse",
+    "key": "584059/f Leah 2000/p Leah/n LeahInternet",
+    "replacements": [
+      [
+        "Hey! Come check this out.",
+        "Hei! Kemarilah dan lihat ini."
+      ],
+      [
+        "I bought a laptop and set up an online art shop... like you suggested.",
+        "Aku membeli laptop dan mendirikan toko seni daring... seperti saranmu."
+      ],
+      [
+        "Did you hear that? That means someone just bought something from the store!$h",
+        "Kamu mendengarnya? Itu berarti seseorang baru saja membeli sesuatu dari toko!$h"
+      ],
+      [
+        "Hmm... There's this 'Mr. K' that keeps buying all my sculptures.$7#$b#I guess it must be some rich guy who loves my stuff.",
+        "Hmm... Ada 'Tuan K' yang terus membeli semua patungku.$7#$b#Kurasa dia orang kaya yang menyukai karyaku."
+      ],
+      [
+        "Wow! I'm not going to have to worry about my electricity bill for a while after that sale...$6",
+        "Wah! Setelah penjualan itu, untuk sementara aku tidak perlu mencemaskan tagihan listrik...$6"
+      ],
+      [
+        "Anyway... Thanks for giving me this idea, @. So far, it's been really successful! This is really going to give me the funding I need to keep working on art full-time.$h",
+        "Bagaimanapun... Terima kasih sudah memberiku gagasan ini, @. Sejauh ini hasilnya sangat sukses! Ini benar-benar akan memberiku dana yang kubutuhkan untuk terus berkarya penuh waktu.$h"
+      ],
+      [
+        "Now, sorry to ignore you... but I really need to tweak these CSS sheets...$7",
+        "Sekarang, maaf mengabaikanmu... tetapi aku benar-benar harus menyesuaikan lembar CSS ini...$7"
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/Farm",
+    "key": "980559/t 600 1130/w sunny/e 739330/j 27/!Skill Fishing 1",
+    "replacements": [
+      [
+        "Good morning, ${lad^miss}$!",
+        "Selamat pagi, ${Kawan^Nona}$!"
+      ],
+      [
+        "Sorry to bother you so early, but, eh... I've noticed you haven't been fishing much.",
+        "Maaf mengganggumu sepagi ini, tetapi, eh... Aku melihat kamu jarang memancing."
+      ],
+      [
+        "Aye... it can be difficult to get into the sport, for a beginner.",
+        "Aye... olahraga ini bisa sulit dipelajari oleh pemula."
+      ],
+      [
+        "So, I figured I'd give you a few pointers... maybe it'll help you develop yer sea legs!",
+        "Jadi, kupikir akan memberimu beberapa petunjuk... mungkin ini akan membantumu terbiasa di laut!"
+      ],
+      [
+        "So, you'll want to hold the rod like this, see?...",
+        "Jadi, kamu harus memegang pancing seperti ini, lihat?..."
+      ],
+      [
+        "Willy gave you a quick lesson on fishing basics.",
+        "Willy memberimu pelajaran singkat tentang dasar-dasar memancing."
+      ],
+      [
+        "You feel more confident already!",
+        "Kamu sudah merasa lebih percaya diri!"
+      ],
+      [
+        "One more thing... I wanted to give you this.#$b#It's called a 'training rod'. It should make catching fish a lot easier.#$b#Just be aware that you'll only be able to catch basic fish with this. But it's a great way to develop your skills early on!",
+        "Satu hal lagi... Aku ingin memberikan ini kepadamu.#$b#Namanya 'Joran Latihan'. Benda ini akan sangat memudahkanmu menangkap ikan.#$b#Perlu diingat, dengan pancing ini kamu hanya bisa menangkap ikan biasa. Namun, ini cara yang bagus untuk mengembangkan keterampilanmu sejak awal!"
+      ],
+      [
+        "I hope you'll give fishing another try. Once you get the hang of it, you'll be having a great time.#$b#Good luck out there!$h",
+        "Semoga kamu mau mencoba memancing lagi. Setelah terbiasa, kamu pasti akan sangat menikmatinya.#$b#Semoga berhasil!$h"
+      ]
+    ]
+  }
+]

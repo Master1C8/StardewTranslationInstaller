@@ -1,0 +1,478 @@
+# Bengali translation progress
+
+Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
+
+## Pinned inputs
+
+- Target locale: `bn`
+- Stardew language code: `bn-vnrevival`
+- English assets: `/Users/antonkrutov/Developer/data/stardew-english-unpacked/`
+- English asset count: 187 JSON targets
+- English glossary count: 673 entries
+- English glossary SHA-256: `b8fe9c8f5aaf9bedc990dabd2ce552d4f334450f03afee9949f75e376ab4bff9`
+- Public glossary endpoint: `https://vnrevival.fun/games/stardew-valley/glossary?locale=bn&offset=0&limit=1000`
+- Public glossary snapshot fetched: 2026-08-27, 673 entries
+- Public glossary normalized SHA-256: `8db34fd0597dbab0c9cd3f0cdf394455a7af2c4f527f5875ab10496e2b601b01`
+- Initial public/local glossary comparison: 0 differing translations
+- Structural translation baseline: 14,720 unique `(Target, key)` records across 187 targets and 151 patch files
+
+## Editorial state
+
+- Full glossary source-fidelity and Bengali editorial audit: complete, entries 1–673
+- Editorial override stack: 479 records across four ordered layers
+- Glossary override application is idempotent: yes
+- Current local Bengali glossary SHA-256: `653a4b51a875de7b2b48cdc0b80831990d47316f147d2c4c5865d221f79a41cc`
+- Consecutive clean full all-entry glossary audits after the last content correction: 2 of 2
+- Automated glossary audit: 0 warnings, 0 errors
+- Public glossary publication: not authorized and not performed
+
+## Translation coverage
+
+- Fully translated and editor-reviewed records: 14,720 / 14,720
+- Project progress: 100.000%
+- Bengali patch scaffold: 151 / 151 files, 187 / 187 targets
+- Bengali runtime configuration integrated: yes (`bn-vnrevival`, 151 Includes)
+- Bengali XNB fonts built and round-trip verified: yes (1,103 shaped clusters)
+- Consecutive clean full all-entry Bengali audits after runtime encoding: 2 of 2, with 0 warnings and 0 errors
+- Swift test suite: passed (8 / 8)
+- Release app build, strict code-signature verification, Info.plist validation, and full embedded `ModPayload` comparison against the source tree: passed
+
+## Resume commands
+
+```sh
+node Scripts/apply-bengali-glossary-editorial.mjs
+node Scripts/audit-bengali-glossary.mjs
+node Scripts/audit-bengali.mjs /Users/antonkrutov/Developer/data/stardew-english-unpacked
+```
+
+Only completed Bengali batch files count toward coverage. A source-identical value counts only when its batch record explicitly marks it as a reviewed technical preserve with a reason.
+
+Completed semantic batches:
+
+- `001-core-ui`: 60 short UI records
+- `002-inventory-progression-ui`: 60 short UI records
+- `003-professions-and-level-ui`: 40 short UI records
+- `004-multiplayer-ui-and-notices`: 52 short UI records
+- `005-multiplayer-life-events`: 60 short UI records
+- `006-social-profile-and-tailoring-ui`: 60 short UI records (59 translated, 1 reviewed symbol preserve)
+- `007-wallet-chat-and-pond-status-ui`: 60 short UI records
+- `008-chat-commands-and-player-prompts`: 60 short UI records
+- `009-fish-pond-and-advanced-options`: 60 short UI records
+- `010-advanced-setup-forge-and-build-ui`: 60 short UI records
+- `011-island-parrot-and-late-game-notices`: 60 short UI records
+- `012-perfection-race-and-mobile-ui`: 60 short UI records
+- `013-mobile-tutorial-and-controls`: 53 short UI records
+- `014-achievements`: 40 short achievement records
+- `015-building-management-and-descriptions`: 42 short building records
+- `016-big-craftables-furniture-and-machines-a`: 80 short big-craftable records
+- `017-big-craftables-furniture-and-machines-b`: 80 short big-craftable records (78 translated, 2 reviewed technical preserves)
+- `018-big-craftables-decor-and-statues`: 80 short big-craftable records
+- `019-big-craftables-and-tools`: 54 short big-craftable and tool records
+- `020-weapons-a`: 80 short weapon records
+- `021-weapons-b`: 44 short weapon records
+- `022-footwear-and-shirts-a`: 80 short footwear and clothing records
+- `023-shirts-b`: 79 short clothing records
+- `024-shirts-c`: 80 short clothing records
+- `025-shirts-d`: 80 short clothing records
+- `026-shirts-e`: 80 short clothing records
+- `027-shirts-and-pants`: 53 short clothing records
+- `028-hats-a`: 40 short hat records
+- `029-hats-b`: 40 short hat records
+- `030-hats-c`: 41 short hat records
+- `031-community-center-bundles`: 49 short bundle records (45 translated, 4 reviewed currency preserves)
+- `032-character-relatives-and-reactions`: 40 short character records
+- `033-mine-encounters`: 15 long character records
+- `034-movie-invitations-and-entry`: 20 long character records
+- `035-movie-theater-and-concessions`: 21 long character records
+- `036-spouse-movie-invitations`: 15 long character records
+- `037-shop-phone-services`: 30 long character records
+- `038-ranch-calls-and-memories`: 21 long character records
+- `039-guild-hatchery-and-night-market`: 30 long location records (27 translated, 3 reviewed format preserves)
+- `040-farm-setup-and-summary`: 15 long UI records (10 translated, 5 reviewed format preserves)
+- `041-beach-travel-and-community-center`: 30 long location records (29 translated, 1 reviewed format preserve)
+- `042-farm-access-and-shop-notices`: 30 long location records (29 translated, 1 reviewed symbol preserve)
+- `043-purchases-quest-clues-and-town-records`: 30 long location records
+- `044-quest-puzzles-arcade-and-club`: 30 long location records
+- `045-town-services-calicojack-and-upgrades`: 30 long location records
+- `046-mines-town-shrines-and-theater`: 30 long location records (29 translated, 1 reviewed format preserve)
+- `047-theater-tea-and-island-fieldwork`: 30 long location records
+- `048-island-survey-and-gourmand-requests`: 15 long location records
+- `049-gourmand-rewards-and-parrot-hints`: 28 long location records
+- `050-renovations-resort-and-boat-services`: 30 long location records
+- `051-island-boat-field-office-and-challenge`: 28 long location records
+- `052-objects-system-messages-and-a-items`: 40 short object records
+- `053-objects-artifacts-fruit-and-gems-a`: 40 short object records
+- `054-objects-food-minerals-and-farm-supplies-b`: 40 short object records
+- `055-objects-berries-fish-and-books-c`: 40 short object records
+- `056-objects-books-and-basic-goods-d`: 40 short object records
+- `057-objects-crops-artifacts-and-cave-goods-e`: 40 short object records
+- `058-objects-fish-fruit-and-artifacts-f`: 40 short object records
+- `059-objects-materials-coffee-and-copper-g`: 40 short object records (37 translated, 3 reviewed intentional-symbol preserves)
+- `060-objects-seafood-cranberries-and-crystal-h`: 40 short object records
+- `061-objects-deluxe-supplies-and-dried-goods-i`: 40 short object records
+- `062-objects-dwarf-relics-eggs-and-emerald-j`: 40 short object records
+- `063-objects-fairy-fiber-and-fire-k`: 40 short object records
+- `064-objects-fish-fossils-and-frozen-goods-l`: 40 short object records
+- `065-objects-garlic-gems-and-glow-rings-m`: 40 short object records
+- `066-objects-gold-grapes-and-grass-n`: 40 short object records
+- `067-objects-greenery-honey-and-horse-o`: 40 short object records
+- `068-objects-iridium-iron-and-ice-p`: 40 short object records
+- `069-objects-jelly-juice-and-large-produce-q`: 40 short object records
+- `070-objects-luck-lobster-and-magma-r`: 40 short object records
+- `071-objects-magnet-mango-and-melon-s`: 40 short object records
+- `072-objects-moss-mystery-and-mummified-t`: 40 short object records
+- `073-objects-ocean-opal-and-orange-u`: 40 short object records
+- `074-objects-parsnip-peach-and-pickles-v`: 40 short object records
+- `075-objects-pineapple-poppy-and-potato-w`: 40 short object records
+- `076-objects-powdermelon-prehistoric-and-purple-x`: 40 short object records
+- `077-objects-purple-qi-and-rain-y`: 40 short object records
+- `078-objects-rain-rare-and-savage-z`: 80 short object records
+- `079-objects-scorpion-sea-and-specific-aa`: 80 short object records
+- `080-objects-speedgro-spice-and-summer-ab`: 80 short object records (79 translated, 1 reviewed mystery-symbol preserve)
+- `081-objects-summer-sun-and-truffle-ac`: 80 short object records (79 translated, 1 reviewed ellipsis preserve)
+- `082-objects-truffle-tulip-and-wilted-ad`: 66 short object records
+- `083-objects-wheat-wine-and-yam-ae`: 40 short object records
+- `084-furniture-piano-chairs-and-couches-a`: 40 short furniture records
+- `085-furniture-couches-tables-and-bookcases-b`: 40 short furniture records
+- `086-furniture-decor-lamps-and-art-c`: 80 short furniture records
+- `087-furniture-nautical-fireplaces-and-beds-d`: 80 short furniture records
+- `088-furniture-tropical-wall-and-desert-e`: 80 short furniture records
+- `089-furniture-desert-joja-and-wizard-f`: 80 short furniture records (79 translated, 1 reviewed brand-logo preserve)
+- `090-furniture-runes-books-and-junimos-g`: 80 short furniture records
+- `091-furniture-portraits-retro-and-home-h`: 80 short furniture records
+- `092-furniture-trash-home-and-data-preserves-i`: 40 short furniture records (28 translated, 12 reviewed furniture-data preserves)
+- `093-animation-control-data-a`: 80 short reviewed animation-control preserves
+- `094-animation-control-and-visible-text-b`: 40 short animation records (15 translated, 25 reviewed animation-control preserves)
+- `095-character-shop-speech-bubbles-a`: 64 short character shop speech-bubble records
+- `096-credits-headings-languages-and-names`: 63 short credits records (35 translated, 28 reviewed image/name preserves)
+- `097-movie-concessions`: 48 short movie-concession records
+- `098-movies-sapling-and-mysterium`: 20 long movie-title, synopsis, and scene records
+- `099-movies-prairie-king-and-wumbus`: 20 long movie-scene records
+- `100-movies-zuzu-express-and-coldstar`: 21 long movie-title, synopsis, and scene records
+- `101-movies-natural-wonders-and-howls`: 25 long movie-title, synopsis, and scene records
+- `102-movie-reactions-penny-a`: 20 long Penny movie-reaction records
+- `103-movie-reactions-penny-pam-krobus-wizard-b`: 20 long movie-reaction records (18 translated, 2 reviewed silent-reaction preserves)
+- `104-movie-reactions-george-alex-evelyn-c`: 20 long movie-reaction records
+- `105-movie-reactions-evelyn-pierre-abigail-d`: 20 long movie-reaction records
+- `106-movie-reactions-abigail-caroline-harvey-e`: 20 long movie-reaction records
+- `107-movie-reactions-harvey-gus-lewis-f`: 20 long movie-reaction records
+- `108-movie-reactions-lewis-jodi-sam-vincent-g`: 20 long movie-reaction records
+- `109-movie-reactions-vincent-kent-clint-emily-h`: 20 long movie-reaction records
+- `110-movie-reactions-emily-haley-maru-i`: 20 long movie-reaction records
+- `111-movie-reactions-maru-sebastian-robin-demetrius-j`: 20 long movie-reaction records
+- `112-movie-reactions-demetrius-linus-dwarf-marnie-k`: 20 long movie-reaction records
+- `113-movie-reactions-marnie-shane-jas-l`: 20 long movie-reaction records
+- `114-movie-reactions-jas-leah-sandy-elliott-willy-leo-m`: 29 long movie-reaction records
+- `115-furniture-internal-localized-references-a`: 60 short reviewed furniture-schema preserves (12 earlier keys already reviewed in batch 092)
+- `116-furniture-internal-localized-references-b`: 72 short reviewed furniture-schema preserves
+- `117-furniture-internal-localized-references-c`: 72 short reviewed furniture-schema preserves
+- `118-furniture-internal-localized-references-d`: 72 short reviewed furniture-schema preserves
+- `119-furniture-internal-localized-references-e`: 72 short reviewed furniture-schema preserves
+- `120-furniture-internal-localized-references-f`: 72 short reviewed furniture-schema preserves
+- `121-furniture-internal-localized-references-g`: 72 short reviewed furniture-schema preserves
+- `122-furniture-internal-localized-references-h`: 72 short reviewed furniture-schema preserves
+- `123-furniture-internal-localized-references-i`: 69 short reviewed furniture-schema preserves
+- `124-internal-crafting-recipe-data-a`: 80 short reviewed crafting-recipe schema preserves
+- `125-internal-crafting-and-cooking-recipe-data-b`: 80 short reviewed crafting/cooking-recipe schema preserves
+- `126-internal-cooking-and-aquarium-data-c`: 80 short reviewed cooking-recipe/aquarium schema preserves
+- `127-internal-aquarium-and-chair-data-d`: 80 short reviewed aquarium/chair-tile schema preserves
+- `128-internal-chair-hair-and-paint-data-e`: 78 short reviewed chair/hair/paint schema preserves
+- `129-fish-display-names`: 74 short fish-display-name records with technical schema preserved
+- `130-monster-display-names`: 51 short monster-display-name records with technical schema preserved
+- `131-small-visible-string-completions`: 40 short cross-section visible-string records
+- `132-cs-buffs-ingredients-and-dialogue-words-a`: 77 short runtime strings (3 initial buff labels regrouped into batch 131)
+- `133-cs-dialogue-words-colors-and-event-ui-b`: 80 short runtime strings
+- `134-cs-book-grandpa-and-festival-prompts-c`: 30 long runtime dialogue and festival-prompt strings
+- `135-cs-fair-games-fortune-and-awards-d`: 30 long fair-game, fortune, and award strings
+- `136-cs-fortune-friends-and-romance-e`: 30 long fortune and relationship strings
+- `137-cs-fortune-scenes-and-farmer-notices-f`: 30 long fortune-scene and farmer-notice strings
+- `138-cs-farmer-titles-and-game-notices-g`: 30 long farmer-title and game-notice strings
+- `139-cs-stardrop-system-and-npc-prompts-h`: 30 long Stardrop, system, and NPC-prompt strings
+- `140-cs-dating-marriage-and-krobus-dialogue-i`: 30 long dating, marriage, and Krobus dialogue strings
+- `141-cs-greetings-and-loved-gift-rumors-j`: 30 long greeting and loved-gift rumor strings (29 translated, 1 reviewed placeholder preserve)
+- `142-cs-hated-gift-rumors-and-birthdays-k`: 30 long hated-gift rumor and birthday-reaction strings
+- `143-cs-birthday-reactions-and-family-dialogue-l`: 30 long birthday-reaction and family-dialogue strings
+- `144-cs-spouse-chores-decor-and-pet-names-m`: 30 long spouse, chore, decoration, and pet-name strings
+- `145-cs-save-marriage-and-season-music-n`: 30 long save, marriage, and seasonal-music strings
+- `146-cs-seasonal-and-mine-music-titles-o`: 30 long seasonal and mine-music title strings
+- `147-cs-festival-band-and-arcade-music-p`: 30 long festival, band, and arcade-music title strings
+- `148-cs-arcade-music-buildings-and-seasons-q`: 30 long arcade-music, building, and season strings
+- `149-cs-diary-location-and-fishing-ui-r`: 30 long diary, location, and fishing-interface strings (29 translated, 1 reviewed fictional-language preserve)
+- `150-cs-town-map-locations-and-hours-s`: 30 long town-map location and opening-hour strings
+- `151-cs-map-and-controls-options-t`: 30 long map and control-option strings
+- `152-cs-inventory-animal-purchase-and-quest-ui-u`: 30 long inventory, animal-purchase, and quest-interface strings
+- `153-cs-quest-shipping-and-shop-greetings-v`: 30 long quest, shipping, and shop-greeting strings
+- `154-cs-special-shops-skills-and-social-w`: 30 long special-shop, skill, and social-interface strings
+- `155-cs-social-status-and-strength-scale-x`: 30 long social-status and strength-game strings
+- `156-cs-strength-scale-and-title-tips-y`: 30 long strength-scale and title-tip strings
+- `157-cs-title-tutorial-and-arcade-results-z`: 30 long title-screen, tutorial, and arcade-result strings
+- `158-cs-calico-grandpa-and-minigame-ui-aa`: 30 long CalicoJack, Grandpa-letter, and minigame-interface strings
+- `159-cs-object-placement-and-categories-ab`: 30 long object-placement and inventory-category strings
+- `160-cs-object-discoveries-and-tv-intros-ac`: 30 long object-discovery and television-introduction strings
+- `161-cs-tv-oracle-weather-and-luck-ad`: 30 long television, oracle, weather, and luck strings
+- `162-cs-tv-luck-decor-and-fishing-quests-ae`: 30 long television, decor, and fishing-quest strings
+- `163-cs-fishing-rewards-and-delivery-requests-af`: 30 long fishing-reward and delivery-request strings
+- `164-cs-delivery-food-and-meal-requests-ag`: 30 long food and meal-delivery request strings
+- `165-cs-delivery-remedies-and-jewelry-ah`: 30 long remedy and jewelry-delivery request strings
+- `166-cs-delivery-body-parts-and-hand-in-ai`: 30 long delivery-request and body-part strings
+- `167-cs-delivery-responses-and-character-jobs-aj`: 30 long delivery responses and character-request strings
+- `168-cs-delivery-closeout-and-resource-quests-ak`: 30 long delivery closeout and resource-collection quest strings (29 translated, 1 reviewed signature-layout preserve)
+- `169-cs-resource-and-monster-quests-al`: 30 long resource and monster-slaying quest strings
+- `170-cs-social-farming-resource-and-fishing-ui-am`: 30 long social, farming, resource, and fishing-interface strings
+- `171-cs-tools-weapons-and-language-names-an`: 30 long tool, weapon, and language-name strings
+- `172-cs-language-random-sentences-and-keys-ao`: 30 long language, random-sentence, and key-label strings (19 translated, 11 reviewed physical-key preserves)
+- `173-cs-keyboard-key-labels-ap`: 30 long reviewed keyboard-key preserves
+- `174-cs-browser-media-and-symbol-keys-aq`: 30 long browser, media, and symbol-key labels
+- `175-cs-more-key-labels-recovery-and-krobus-ar`: 30 long key-label, item-recovery, and Krobus strings (22 translated, 8 reviewed platform-key preserves)
+- `176-cs-theater-music-desert-and-ostrich-as`: 30 long theater, music-title, desert-trader, and ostrich strings
+- `177-cs-furniture-volcano-buffs-and-farm-computer-at`: 30 long furniture, volcano, buff, and farm-computer strings
+- `178-cs-farm-computer-island-trader-and-music-au`: 30 long farm-computer, island-trader, and music-title strings
+- `179-cs-horse-flute-qi-buffs-and-final-notices-av`: 18 long horse-flute, Qi, buff, and final-notice strings
+- `180-one-six-pylons-squid-and-desert-dialogue-a`: 30 long version-1.6 pylon, SquidFest, and desert-festival dialogue strings
+- `181-one-six-desert-dialogue-and-cactus-b`: 30 long version-1.6 desert-festival and Cactus Man dialogue strings
+- `182-one-six-cactus-willy-and-scholar-c`: 30 long version-1.6 Cactus Man, Willy-challenge, and scholar-quiz strings
+- `183-one-six-scholar-quiz-and-chef-intro-d`: 30 long version-1.6 scholar-quiz and chef-introduction strings
+- `184-one-six-chef-ingredients-and-dishes-e`: 30 long version-1.6 chef-ingredient, sauce, and dish-name strings
+- `185-one-six-chef-finale-and-race-f`: 30 long version-1.6 chef-finale and race-announcer strings
+- `186-one-six-racers-shady-guy-and-marlon-g`: 30 long version-1.6 racer, suspicious-guy, Marlon, and Gil strings
+- `187-one-six-gil-ratings-and-makeover-h`: 30 long version-1.6 Gil-rating and makeover strings (29 translated, 1 reviewed punctuation/token preserve)
+- `188-one-six-sandy-makeover-and-egg-shops-i`: 30 long version-1.6 Sandy-makeover and egg-shop strings
+- `189-one-six-shops-and-calico-statues-j`: 30 long version-1.6 shop and Calico Statue strings
+- `190-one-six-statues-and-fishing-events`: 30 long version-1.6 Calico Statue and fishing-event strings
+- `191-one-six-events-and-mastery`: 30 long version-1.6 event and mastery strings
+- `192-one-six-blessings-trinkets`: 30 long version-1.6 blessing, mastery, and trinket strings
+- `193-one-six-trinkets-fizz`: 30 long version-1.6 trinket, Golden Parrot, and Fizz strings
+- `194-one-six-books-and-raccoons-a`: 30 long version-1.6 book, power, and raccoon strings
+- `195-one-six-raccoons-and-late-game`: 30 long version-1.6 raccoon, late-game, and mastery strings
+- `196-one-six-joja-books-and-enchantments`: 30 long version-1.6 Joja, book, quest-title, and enchantment strings
+- `197-one-six-machines-food-and-mannequins`: 30 long version-1.6 machine, food, and mannequin strings
+- `198-one-six-catalogues-renovations-and-pets`: 30 long version-1.6 catalogue, renovation, pet, and option strings
+- `199-one-six-final-and-animal-shop`: 30 long version-1.6 final-system and Animal Shop map strings
+- `200-maps-museum-bathhouse-blacksmith`: 30 long museum, bathhouse, blacksmith, club, and Elliott-house map strings
+- `201-maps-farm-fishshop-haley-house-a`: 30 long farm, fish-shop, forest, and Haley-house map strings
+- `202-maps-haley-harvey-hospital-joja-a`: 30 long Haley-house, Harvey-room, hospital, and JojaMart map strings
+- `203-maps-jojamart-shelves-b`: 30 long JojaMart shelf-product strings
+- `204-maps-jojamart-shelves-c`: 30 long JojaMart shelf-product strings
+- `205-maps-jojamart-shelves-d`: 30 long JojaMart shelf-product strings
+- `206-maps-joja-josh-and-leah`: 30 long JojaMart, Josh-house, and Leah-house map strings
+- `207-maps-leah-manor-sam-science-a`: 30 long Leah-house, manor, Sam-house, and science-house map strings
+- `208-maps-science-seedshop-and-town-a`: 30 long science-house, seed-shop, and town map strings
+- `209-maps-town-witch-and-theater-a`: 30 long town, trailer, Witch Hut, and movie-theater map strings
+- `210-maps-theater-and-pirates-a`: 30 long movie-theater, island-shrine, and pirate map strings
+- `211-maps-pirates-and-marriage-rain-a`: 30 long pirate-map and rainy-day marriage-dialogue strings
+- `212-marriage-rainy-night-and-indoor-day`: 30 long rainy-night and indoor-day marriage-dialogue strings
+- `213-marriage-indoor-night-and-outdoor-a`: 30 long indoor-night and outdoor marriage-dialogue strings
+- `214-marriage-outdoor-work-kids-and-good-a`: 30 long outdoor, work, children, and positive marriage-dialogue strings
+- `215-marriage-good-neutral-bad-and-seasons-a`: 30 long positive, neutral, strained, and seasonal marriage-dialogue strings
+- `216-marriage-seasons-b`: 30 long seasonal marriage-dialogue strings
+- `217-marriage-seasons-and-spouse-rooms-c`: 30 long seasonal and spouse-room marriage-dialogue strings
+- `218-marriage-finale-and-friend-gifts`: 30 long marriage-dialogue and friendship-gift mail strings
+- `219-mail-friendship-and-recipes-a`: 30 long friendship, shop-unlock, relationship, and recipe mail strings
+- `220-mail-family-notices-and-invitations`: 30 long family, service, achievement, and invitation mail strings
+- `221-mail-events-upgrades-and-festivals`: 30 long event, upgrade, quest, and festival mail strings
+- `222-mail-help-wanted-and-invoices`: 30 long help-wanted, material-price, festival-reminder, and invoice mail strings
+- `223-mail-recovery-elliott-and-special-orders`: 30 long recovery, Elliott-tour, and special-order reward mail strings
+- `224-mail-finale-and-abigail-intro`: 30 long late-game mail and Abigail introduction and gift-dialogue strings
+- `225-abigail-events-resort-and-relationships-a`: 30 long Abigail event-memory, resort, and relationship strings
+- `226-abigail-breakup-daily-and-events-b`: 30 long Abigail breakup, daily, branching, and event-dialogue strings
+- `227-abigail-events-and-summer-c`: 30 long Abigail event and summer-dialogue strings (28 translated, 2 reviewed punctuation/token preserves)
+- `228-abigail-fall-winter-and-festivals-d`: 30 long Abigail fall, winter, and festival-dialogue strings
+- `229-abigail-finale-and-haley-intro-a`: 30 long Abigail finale and Haley introduction, gift, and memory strings
+- `230-haley-relationships-resort-and-daily-b`: 30 long Haley relationship, resort, and daily-dialogue strings
+- `231-haley-friendship-events-and-summer-c`: 30 long Haley friendship, event, and summer-dialogue strings
+- `232-haley-summer-and-fall-d`: 30 long Haley summer, fall, and branching-dialogue strings
+- `233-haley-finale-and-sebastian-intro-a`: 30 long Haley finale and Sebastian introduction and relationship strings
+- `234-sebastian-gifts-resort-and-daily-b`: 30 long Sebastian gift, resort, relationship, and daily-dialogue strings
+- `235-sebastian-friends-daily-and-events-c`: 30 long Sebastian friendship, daily, branching, and event-dialogue strings
+- `236-sebastian-city-summer-and-fall-d`: 30 long Sebastian city-event, summer, fall, and festival-dialogue strings
+- `237-sebastian-fall-and-winter-finale`: 27 long Sebastian fall and winter-dialogue strings
+- `238-alex-intro-gifts-and-memories-a`: 30 long Alex introduction, gift, memory, and resort-dialogue strings
+- `239-alex-resort-relationships-and-daily-b`: 30 long Alex resort, relationship, branching, and daily-dialogue strings
+- `240-alex-events-and-summer-c`: 30 long Alex event, summer, and branching-dialogue strings
+- `241-alex-summer-fall-and-winter-d`: 30 long Alex summer, fall, winter, and branching-dialogue strings
+- `242-alex-finale-and-sam-intro-a`: 30 long Alex finale and Sam introduction, memory, and resort-dialogue strings
+- `243-sam-resort-relationships-and-daily-b`: 30 long Sam resort, relationship, family, branching, and daily-dialogue strings
+- `244-sam-events-and-summer-c`: 30 long Sam event, festival, family, and summer-dialogue strings
+- `245-sam-fall-and-winter-finale`: 30 long Sam fall and winter-dialogue strings
+- `246-maru-intro-gifts-resort-and-relationships-a`: 30 long Maru introduction, gift, resort, and relationship-dialogue strings
+- `247-maru-daily-and-events-b`: 30 long Maru daily, branching, clinic, and event-dialogue strings
+- `248-maru-robot-and-summer-c`: 30 long Maru robot-event, summer, branching, and fall-dialogue strings
+- `249-maru-fall-and-winter-finale`: 21 long Maru fall and winter-dialogue strings
+- `250-emily-intro-gifts-memories-and-resort-a`: 30 long Emily introduction, gift, memory, relationship, and resort-dialogue strings
+- `251-emily-resort-relationships-and-daily-b`: 30 long Emily resort, relationship, daily, and branching-dialogue strings
+- `252-emily-events-summer-and-fall-c`: 30 long Emily event, summer, fall, friendship, and branching-dialogue strings
+- `253-emily-fall-and-winter-finale`: 15 long Emily fall and winter-dialogue strings
+- `254-penny-intro-gifts-memories-and-resort-a`: 30 long Penny introduction, gift, memory, relationship, and resort-dialogue strings
+- `255-penny-relationships-family-and-daily-b`: 30 long Penny relationship, family, daily, and branching-dialogue strings
+- `256-penny-events-and-summer-c`: 30 long Penny event, summer, and branching-dialogue strings
+- `257-penny-fall-and-winter-finale`: 15 long Penny fall and winter-dialogue strings
+- `258-elliott-intro-gifts-memories-and-resort-a`: 30 long Elliott introduction, gift, memory, relationship, and resort-dialogue strings
+- `259-elliott-relationships-daily-and-events-b`: 30 long Elliott relationship, daily, event, and branching-dialogue strings
+- `260-elliott-summer-fall-and-winter-c`: 30 long Elliott summer, fall, winter, and branching-dialogue strings
+- `261-elliott-finale-and-leah-intro-a`: 30 long Elliott finale and Leah introduction, gift, memory, relationship, and resort-dialogue strings
+- `262-leah-relationships-and-daily-b`: 30 long Leah relationship, daily, and branching-dialogue strings
+- `263-leah-events-summer-and-fall-c`: 27 long Leah event, summer, fall, and branching-dialogue strings
+- `264-leah-fall-and-winter-finale`: 15 long Leah fall and winter-dialogue strings
+- `265-harvey-intro-gifts-memories-and-resort-a`: 30 long Harvey introduction, gift, memory, relationship, and resort-dialogue strings
+- `266-harvey-relationships-daily-and-events-b`: 30 long Harvey relationship, daily, event, and branching-dialogue strings
+- `267-harvey-events-seasons-finale-and-lewis-intro`: 30 long Harvey event and seasonal finale, and Lewis introduction, gift, and community-dialogue strings
+- `268-lewis-community-and-daily-a`: 30 long Lewis community, daily, and seasonal-dialogue strings
+- `269-lewis-seasons-finale`: 21 long Lewis seasonal and finale-dialogue strings
+- `270-pam-intro-family-resort-and-saloon-a`: 30 long Pam introduction, family, resort, saloon, and branching-dialogue strings
+- `271-pam-daily-summer-and-fall-b`: 30 long Pam daily, saloon, summer, fall, and branching-dialogue strings
+- `272-pam-fall-and-winter-finale`: 15 long Pam fall and winter finale, and Pierre introduction and gift-dialogue strings
+- `273-pierre-green-rain-resort-and-daily-a`: 30 long Pierre green-rain, resort, community, daily, and branching-dialogue strings
+- `274-pierre-seasons-and-events-finale`: 24 long Pierre seasonal, event, fair, and finale-dialogue strings
+- `275-shane-intro-gifts-resort-and-daily-a`: 30 long Shane introduction, gift, relationship, resort, and daily-dialogue strings
+- `276-shane-daily-and-events-b`: 30 long Shane daily, family, event, and branching-dialogue strings
+- `277-shane-events-finale-and-robin-intro`: 15 long Shane event finale and Robin introduction, resort, and gift-dialogue strings
+- `278-robin-family-buildings-and-resort-a`: 30 long Robin family, building, resort, community, and branching-dialogue strings
+- `279-robin-daily-and-seasons-finale`: 24 long Robin daily, family, seasonal, and event-dialogue strings
+- `280-demetrius-intro-science-and-daily-a`: 30 long Demetrius introduction, gift, science, family, resort, and daily-dialogue strings
+- `281-demetrius-research-and-seasons-finale`: 30 long Demetrius research, event, daily, seasonal, and finale-dialogue strings
+- `282-jodi-family-community-and-daily-a`: 30 long Jodi introduction, family, community, resort, and daily-dialogue strings
+- `283-jodi-family-and-seasons-finale`: 23 long Jodi family, seasonal, and finale-dialogue strings
+- `284-linus-wilderness-gifts-and-daily-a`: 30 long Linus introduction, wilderness, gift, community, and daily-dialogue strings
+- `285-linus-nature-and-seasons-finale`: 23 long Linus nature, seasonal, and finale-dialogue strings
+- `286-caroline-family-tea-and-daily-a`: 30 long Caroline introduction, family, tea, resort, community, and daily-dialogue strings
+- `287-caroline-family-and-seasons-finale`: 22 long Caroline family, seasonal, and finale-dialogue strings
+- `288-evelyn-community-family-and-daily-a`: 30 long Evelyn introduction, community, family, gift, and daily-dialogue strings
+- `289-evelyn-gardens-and-seasons-finale`: 19 long Evelyn garden, family, seasonal, and finale-dialogue strings
+- `290-clint-blacksmith-emily-and-daily-a`: 30 long Clint introduction, blacksmithing, Emily, resort, and daily-dialogue strings
+- `291-clint-work-and-daily-finale`: 15 long Clint work, relationship, and daily finale-dialogue strings
+- `292-gus-saloon-food-and-daily-a`: 30 long Gus introduction, food, saloon, community, and daily-dialogue strings
+- `293-gus-finale-and-kent-intro-a`: 15 long Gus daily finale and Kent introduction, gift, green-rain, and resort-dialogue strings
+- `294-kent-homecoming-family-and-finale`: 27 long Kent homecoming, family, relationship, event, and finale-dialogue strings
+- `295-george-family-gruffness-and-daily-a`: 30 long George introduction, family, community, gruffness, and daily-dialogue strings
+- `296-george-finale-and-jas-intro-a`: 15 long George finale and Jas introduction and gift-dialogue strings
+- `297-jas-family-farm-and-daily-finale`: 28 long Jas family, farm, relationship, and daily finale-dialogue strings
+- `298-marnie-ranch-family-and-saloon-a`: 30 long Marnie introduction, ranch, family, animal-care, resort, saloon, and green-rain dialogue strings
+- `299-marnie-finale-and-willy-intro-a`: 15 long Marnie daily and fair finale, and Willy introduction and gift-dialogue strings
+- `300-willy-fish-legends-and-festivals-a`: 30 long Willy fishing, legendary-fish, festival, relationship, and daily-dialogue strings
+- `301-willy-finale-and-vincent-intro-a`: 15 long Willy daily and fair finale, and Vincent introduction and gift-dialogue strings
+- `302-vincent-family-school-and-finale`: 19 long Vincent family, school, resort, and daily finale-dialogue strings
+- `303-krobus-shadow-people-and-daily-finale`: 28 long Krobus shadow-people, relationship, gift, shop, and daily finale-dialogue strings
+- `304-wizard-magic-nature-and-finale`: 24 long Wizard magic, nature, relationship, and daily finale-dialogue strings
+- `305-dwarf-mining-culture-and-finale`: 23 long Dwarf mining, culture, gift, fish, and daily finale-dialogue strings
+- `306-sandy-oasis-valley-and-finale`: 21 long Sandy oasis, valley, relationship, and daily finale-dialogue strings
+- `307-leo-mainland-friends-and-finale`: 20 long Leo mainland, friendship, school, island, and daily finale-dialogue strings
+- `308-mister-qi-club-and-walnut-room-finale`: 15 long Mister Qi club, perfection, Walnut Room, and daily finale-dialogue strings
+- `309-rainy-dialogue-all-characters`: 30 long rainy-day dialogue strings across all characters
+- `310-engagement-dialogue-all-candidates`: 26 long engagement and roommate-dialogue strings across all candidates
+- `311-lexicon-random-words-and-pronouns`: 17 long random lexicon, adjective, noun, and pronoun strings
+- `312-trout-derby-and-squidfest-contestants`: 22 long Trout Derby and SquidFest contestant-dialogue strings
+- `313-family-night-events-and-book-titles`: 26 long family, night-event, comet, and book-title strings
+- `314-leo-island-and-caroline-schedules`: 21 long Leo island and Caroline schedule-dialogue strings
+- `315-abigail-sam-and-sebastian-schedules`: 28 long Abigail, Sam, and Sebastian schedule-dialogue strings
+- `316-emily-and-willy-schedules`: 26 long Emily and Willy schedule-dialogue strings
+- `317-shane-jodi-and-lewis-schedules`: 25 long Shane, Jodi, and Lewis schedule-dialogue strings
+- `318-maru-penny-and-haley-schedules`: 23 long Maru, Penny, and Haley schedule-dialogue strings
+- `319-harvey-alex-evelyn-and-george-schedules`: 25 long Harvey, Alex, Evelyn, and George schedule-dialogue strings
+- `320-jas-marnie-sandy-and-leo-schedules`: 23 long Jas, Marnie, Sandy, and Leo schedule-dialogue strings
+- `321-clint-elliott-gus-leah-robin-vincent-schedules`: 24 long Clint, Elliott, Gus, Leah, Robin, and Vincent schedule-dialogue strings
+- `322-extra-dialogue-family-services-and-rescues-a`: 30 long family, service, museum, club, and mine-rescue extra-dialogue strings
+- `323-extra-dialogue-joja-and-purchased-items-b`: 30 long Joja membership and purchased-item extra-dialogue strings
+- `324-extra-dialogue-purchases-construction-and-rescue-c`: 30 long purchased-item, construction, cinema, and island-rescue extra-dialogue strings
+- `325-extra-dialogue-island-and-summit-d`: 30 long island, professor-hint, and Summit-event extra-dialogue strings
+- `326-extra-dialogue-summit-spouses-e`: 25 long Summit-event Morris, spouse, and closing-message extra-dialogue strings
+- `327-special-orders-town-and-biome-a`: 30 long town, resource, gemstone, fish, and biome special-order strings
+- `328-special-orders-crops-caves-and-cleanup-b`: 30 long crop, cave, monster, and cleanup special-order strings
+- `329-special-orders-island-resources-and-qi-c`: 30 long island, resource, fossil, fish, and Qi special-order strings
+- `330-special-orders-qi-challenges-d`: 30 long Qi crop, arcade, cavern, gift, and legendary-fish challenge strings
+- `331-special-orders-qi-and-marlon-finale-e`: 26 long Qi color and Marlon Desert Festival special-order strings
+- `332-luau-villagers-and-spouses-a`: 29 long Luau villager and spouse-dialogue strings
+- `333-luau-villagers-and-year-two-b`: 30 long Luau villager, spouse, and year-two dialogue strings
+- `334-luau-year-two-villagers-c`: 30 long Luau year-two villager-dialogue strings
+- `335-luau-events-and-reactions-finale-d`: 15 long Luau event, reaction, spouse, and finale strings
+- `336-festival-of-ice-villagers-a`: 30 long Festival of Ice villager and spouse-dialogue strings
+- `337-festival-of-ice-year-two-b`: 30 long Festival of Ice year-two villager and spouse-dialogue strings
+- `338-festival-of-ice-dialogue-finale-c`: 22 long Festival of Ice villager, spouse, and finale-dialogue strings
+- `339-festival-of-ice-events-finale-and-fair-spouses-a`: 15 long Festival of Ice event-finale and Stardew Valley Fair spouse-dialogue strings
+- `340-stardew-valley-fair-villagers-b`: 30 long Stardew Valley Fair villager-dialogue strings
+- `341-stardew-valley-fair-year-two-c`: 30 long Stardew Valley Fair year-two villager and spouse-dialogue strings
+- `342-stardew-valley-fair-finale-d`: 22 long Stardew Valley Fair year-two finale-dialogue strings
+- `343-spirits-eve-villagers-and-spouses-a`: 30 long Spirit's Eve villager and spouse-dialogue strings
+- `344-spirits-eve-year-two-b`: 30 long Spirit's Eve year-two villager and spouse-dialogue strings
+- `345-spirits-eve-finale-c`: 28 long Spirit's Eve year-two finale-dialogue strings
+- `346-feast-of-the-winter-star-villagers-a`: 30 long Feast of the Winter Star villager and spouse-dialogue strings
+- `347-feast-of-the-winter-star-year-two-b`: 30 long Feast of the Winter Star year-two villager and spouse-dialogue strings
+- `348-feast-of-the-winter-star-finale-c`: 27 long Feast of the Winter Star year-two finale-dialogue strings
+- `349-dance-of-the-moonlight-jellies-a`: 30 long Dance of the Moonlight Jellies event and villager-dialogue strings
+- `350-dance-of-the-moonlight-jellies-year-two-b`: 30 long Dance of the Moonlight Jellies year-two event and villager-dialogue strings
+- `351-dance-of-the-moonlight-jellies-finale-c`: 23 long Dance of the Moonlight Jellies year-two finale-dialogue strings
+- `352-flower-dance-villagers-a`: 30 long Flower Dance villager and spouse-dialogue strings
+- `353-flower-dance-year-two-b`: 30 long Flower Dance year-two villager and spouse-dialogue strings
+- `354-flower-dance-year-two-finale-c`: 20 long Flower Dance year-two finale-dialogue strings
+- `355-egg-festival-spouses-and-villagers-a`: 30 long Egg Festival villager and spouse-dialogue strings
+- `356-egg-festival-villagers-and-year-two-b`: 30 long Egg Festival villager and year-two dialogue strings
+- `357-egg-festival-finale-and-krobus-a`: 30 long Egg Festival finale and Krobus housemate-dialogue strings
+- `358-krobus-housemate-dialogue-b`: 30 long Krobus housemate daily, child, and relationship-dialogue strings
+- `359-krobus-housemate-dialogue-finale-c`: 26 long Krobus housemate relationship, seasonal, and finale-dialogue strings
+- `360-leah-marriage-dialogue-a`: 30 long Leah marriage daily, family, and relationship-dialogue strings
+- `361-leah-marriage-dialogue-b`: 30 long Leah marriage relationship and mood-dialogue strings
+- `362-leah-finale-and-abigail-a`: 30 long Leah marriage finale and Abigail marriage daily-dialogue strings
+- `363-abigail-marriage-dialogue-b`: 30 long Abigail marriage daily, family, and relationship-dialogue strings
+- `364-abigail-marriage-dialogue-finale-c`: 25 long Abigail marriage relationship, seasonal, and finale-dialogue strings
+- `365-sebastian-marriage-dialogue-a`: 30 long Sebastian marriage daily and family-dialogue strings
+- `366-sebastian-marriage-dialogue-b`: 30 long Sebastian marriage relationship and seasonal-dialogue strings
+- `367-sebastian-finale-and-shane-a`: 30 long Sebastian marriage finale and Shane marriage daily-dialogue strings
+- `368-shane-marriage-dialogue-b`: 30 long Shane marriage family, relationship, and mood-dialogue strings
+- `369-shane-finale-and-emily-a`: 30 long Shane marriage finale and Emily marriage daily-dialogue strings
+- `370-emily-marriage-dialogue-b`: 30 long Emily marriage daily, family, and relationship-dialogue strings
+- `371-emily-finale-and-maru-a`: 30 long Emily marriage finale and Maru marriage daily-dialogue strings
+- `372-maru-marriage-dialogue-b`: 30 long Maru marriage daily, family, relationship, and seasonal-dialogue strings
+- `373-maru-finale-and-elliott-a`: 30 long Maru marriage finale and Elliott marriage daily-dialogue strings
+- `374-elliott-marriage-dialogue-b`: 30 long Elliott marriage family, relationship, and seasonal-dialogue strings
+- `375-elliott-finale-and-penny-a`: 30 long Elliott marriage finale and Penny marriage daily-dialogue strings
+- `376-penny-marriage-dialogue-finale-b`: 25 long Penny marriage family, relationship, and seasonal finale-dialogue strings
+- `377-sam-marriage-dialogue-a`: 30 long Sam marriage daily and family-dialogue strings
+- `378-sam-marriage-dialogue-finale-b`: 23 long Sam marriage relationship and seasonal finale-dialogue strings
+- `379-harvey-marriage-dialogue-a`: 30 long Harvey marriage daily and family-dialogue strings
+- `380-harvey-marriage-dialogue-finale-b`: 22 long Harvey marriage family, relationship, and seasonal finale-dialogue strings
+- `381-alex-marriage-dialogue-a`: 30 long Alex marriage daily and family-dialogue strings
+- `382-alex-finale-and-haley-a`: 30 long Alex marriage finale and Haley marriage daily-dialogue strings
+- `383-haley-marriage-dialogue-b`: 30 long Haley marriage daily, family, and seasonal-dialogue strings
+- `384-haley-finale-and-quests-a`: 30 long Haley marriage finale and early quest strings
+- `385-quests-dark-talisman-and-town-errands-b`: 15 long Dark Talisman and town-errand quest strings
+- `386-quests-town-errands-c`: 15 long town-errand quest strings
+- `387-quests-finale-and-livin-off-land-a`: 30 long quest finale and Livin' Off The Land tip strings
+- `388-livin-off-land-b`: 30 long Livin' Off The Land tip strings
+- `389-livin-off-land-finale-and-queen-of-sauce-a`: 30 long Livin' Off The Land finale and Queen of Sauce recipe strings
+- `390-queen-of-sauce-finale`: 15 long Queen of Sauce recipe strings
+- `391-secret-notes-a`: 15 long secret-note strings (14 translated, 1 reviewed image-command preserve)
+- `392-secret-notes-b`: 15 long secret-note strings (9 translated, 6 reviewed image-command preserves)
+- `393-secret-notes-finale-and-gift-tastes-a`: 15 long secret-note and NPC gift-taste strings (10 translated, 5 reviewed technical preserves)
+- `394-gift-tastes-finale`: 29 long NPC gift-taste strings
+- `395-small-dialogue-schedules-and-ui`: 15 long dialogue, schedule, phone, quest, and UI strings (14 translated, 1 reviewed currency-format preserve)
+- `396-library-books-a`: 15 long library-book strings
+- `397-library-finale-and-small-runtime`: 12 unique long library, runtime, and event strings (three already-reviewed duplicate records excluded; 8 translated, 4 reviewed technical preserves)
+- `398-temp-events-and-seed-shop`: 15 long temporary, shop, island, and character-event strings (14 translated, 1 reviewed command preserve)
+- `399-sam-house-and-seed-shop`: 15 long Sam-house, Seed Shop, and character-event strings (14 translated, 1 reviewed command preserve)
+- `400-elliott-hospital-and-animal-events`: 15 long Elliott, hospital, Animal Shop, and festival-event strings
+- `401-island-location-egg-festival-and-trailer-events`: 15 long island-location, Egg Festival, trailer, Skull Cavern, and Bus Stop strings (14 translated, 1 reviewed command preserve)
+- `410-sebastian-room-events-a`: 15 long Sebastian tabletop-game and room-event strings
+- `411-sebastian-room-finale-and-farm-a`: 15 long Sebastian tabletop-game finale and farm-event strings (14 translated, 1 reviewed command preserve)
+- `412-farm-events-b`: 15 long farm visitor, pet, spouse, and quest-event strings
+- `413-farm-finale-and-town-events-a`: 15 long farm-finale, tailoring, spouse, and town-event strings
+- `409-mountain-and-forest-events-c`: 15 long mountain, forest, relationship, and tabletop-event strings
+- `407-beach-and-saloon-events-a`: 15 long beach, relationship, fishing, and saloon-event strings (14 translated, 1 reviewed command preserve)
+- `403-seed-shop-museum-bus-and-woods-events`: 15 long Seed Shop, museum, woods, Bus Stop, and spouse-event strings
+- `404-farmhouse-and-mine-events`: 15 long farmhouse, spouse, family, and mine-event strings
+- `408-saloon-and-mountain-events-b`: 15 long saloon, relationship, spouse, and mountain-event strings
+- `405-haley-house-railroad-and-island-north-events`: 15 long Haley-house, railroad, relationship, wizard, and island-event strings
+- `406-leah-house-and-remaining-small-event-targets`: 15 long Leah-house, Community Center, Fish Shop, island, sewer, and Backwoods-event strings (14 translated, 1 reviewed command preserve)
+- `402-science-josh-and-wizard-house-events`: 15 long Science House, Josh House, Wizard House, and relationship-event strings
+- `414-forest-and-town-events-finale`: 27 long forest, town, relationship, community, and finale-event strings
+- `415-remaining-object-names`: 64 short object, tackle, wallet, and late-game item-name strings
+- `416-remaining-big-craftable-names`: 56 short machine, container, scarecrow, and big-craftable-name strings (54 translated, 2 reviewed punctuation preserves)
+- `417-remaining-npc-names`: 47 short NPC-name and NPC-role strings
+- `418-remaining-core-ui-a`: 60 short core-menu, character-creation, inventory, and profession-name UI strings
+- `419-remaining-core-ui-b`: 67 short multiplayer, options, chat, profile, island, and mobile UI strings (56 translated, 11 reviewed technical preserves)
+- `420-remaining-building-names`: 27 long building-name strings
+- `421-remaining-location-ui`: 47 short location, service, and action-label strings
+- `422-remaining-names-and-basic-labels`: 59 short enchantment, tool, weapon, furniture, character, clothing, and basic-label strings (58 translated, 1 reviewed ellipsis preserve)
+- `423-remaining-gameplay-names-and-festivals`: 57 short gameplay, animal, world-map, festival, and 1.6 strings (56 translated, 1 reviewed ellipsis preserve)
+- `424-remaining-technical-data-preserves`: 46 short reviewed empty-credit, numeric-ID, festival-command, and punctuation preserves
+- `425-remaining-silent-dialogue`: 22 long reviewed silent-dialogue preserves with control tokens retained
+- `426-final-cs-labels-a`: 72 short runtime label, season, location, option, skill, and item-name strings
+- `427-final-cs-labels-b`: 71 short runtime option, skill, title, tool, TV, and location-label strings

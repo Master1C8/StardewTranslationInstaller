@@ -1,0 +1,253 @@
+{
+  "id": "402-science-josh-and-wizard-house-events",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "6/f Maru 500/p Maru",
+      "replacements": [
+        ["Oh, hello there!", "ஓ, வணக்கம்!"],
+        ["My Dad and I are just testing some soil samples.", "அப்பாவும் நானும் சில மண் மாதிரிகளைச் சோதித்துக்கொண்டிருக்கிறோம்."],
+        ["Don't be shy! We could use a hand, actually.$h", "தயங்காதீர்கள்! உண்மையில், உங்கள் உதவி எங்களுக்குப் பயன்படும்.$h"],
+        ["Could you watch this beaker for me? I'm gonna grab the last batch of samples.#$b#I'll be right back.", "இந்தக் கண்ணாடிக் குடுவையைக் கொஞ்சம் பார்த்துக்கொள்கிறீர்களா? கடைசித் தொகுதி மாதிரிகளை எடுத்துவருகிறேன்.#$b#உடனே திரும்பிவிடுவேன்."],
+        ["Thanks for helping out, @.", "உதவியதற்கு நன்றி, @."],
+        ["Maru's a good kid. She's my special little girl...", "மாரு நல்ல பெண். அவள் என் செல்ல மகள்..."],
+        ["I wouldn't want anything getting in the way of her bright future, know what I mean?$5", "அவளுடைய ஒளிமயமான எதிர்காலத்திற்கு எதுவும் தடையாக இருப்பதை நான் விரும்பமாட்டேன், நான் சொல்வது புரிகிறதா?$5"],
+        ["Just some food for thought... *chuckle*$h", "யோசித்துப் பார்ப்பதற்காகச் சொன்னேன்... *சிரிப்பு*$h"],
+        ["Hey, sorry about that. I hope you found something to talk about while I was gone.", "ஏய், அதற்காக மன்னியுங்கள். நான் இல்லாதபோது பேசுவதற்கு ஏதாவது கிடைத்திருக்கும் என்று நம்புகிறேன்."],
+        ["...I was just telling @ about the soil samples we're testing.", "...நாம் சோதித்துக்கொண்டிருக்கும் மண் மாதிரிகளைப் பற்றி @விடம் சொல்லிக்கொண்டிருந்தேன்."],
+        ["$q 15933 null#Right, @?#$r 15933 10 Event_Lab_Silence#(Say nothing)#$r 15933 -100 Event_Lab_Rat#Actually, your Dad was being weird.", "$q 15933 null#அப்படித்தானே, @?#$r 15933 10 Event_Lab_Silence#(எதுவும் சொல்லாதே)#$r 15933 -100 Event_Lab_Rat#உண்மையில், உங்கள் அப்பா வித்தியாசமாக நடந்துகொண்டார்."],
+        ["Okay! Here, @... let me show you how to use the equipment.", "சரி! இதோ, @... இந்தக் கருவியை எப்படிப் பயன்படுத்துவது என்று காட்டுகிறேன்."]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "DadWeird",
+      "replacements": [
+        ["Huh? What did you say to ${him^her}$, Dad?$a", "என்ன? அப்பா, ${him^her}$விடம் என்ன சொன்னாய்?$a"],
+        ["Okay, okay... we were talking about you, sweetie.$5#$b#I wanted to say a few things to @ about you... but I didn't want to embarrass you. I shouldn't have lied about it.$s", "சரி, சரி... உன்னைப் பற்றித்தான் பேசிக்கொண்டிருந்தோம், செல்லமே.$5#$b#உன்னைப் பற்றி @விடம் சில விஷயங்களைச் சொல்ல விரும்பினேன்... ஆனால் உனக்குச் சங்கடம் ஏற்படுத்த விரும்பவில்லை. அதைப் பற்றி நான் பொய் சொல்லியிருக்கக்கூடாது.$s"],
+        ["That's okay, Dad. I understand.#$b#We should get back to work before these samples crystallize.", "பரவாயில்லை, அப்பா. எனக்குப் புரிகிறது.#$b#இந்த மாதிரிகள் படிகமாகும் முன் நாம் மீண்டும் வேலையைத் தொடங்க வேண்டும்."]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "9/f Maru 2000/p Maru",
+      "replacements": [
+        ["@, hi! Come in.", "@, வணக்கம்! உள்ளே வாருங்கள்."],
+        ["I've been working on a new project... something big.", "ஒரு புதிய திட்டத்தில் வேலை செய்துகொண்டிருக்கிறேன்... மிகப் பெரிய ஒன்று."],
+        ["This is just one component... let me show you a little demonstration.", "இது அதன் ஓர் உறுப்பு மட்டுமே... ஒரு சிறிய செயல்விளக்கத்தைக் காட்டுகிறேன்."],
+        ["Just put your hand here...", "உங்கள் கையை இங்கே வையுங்கள்..."],
+        ["And now I'm going to flip this switch...", "இப்போது இந்தச் சுவிட்சை இயக்கப் போகிறேன்..."],
+        ["Oh my god, are you alright?!$9", "கடவுளே, உங்களுக்கு ஒன்றும் ஆகவில்லையே?!$9"],
+        ["Here, let me apply this burn cream.$8", "இதோ, இந்தத் தீக்காயக் களிம்பைப் பூசிவிடுகிறேன்.$8"],
+        ["$q 41 null#I'm so sorry.$8#$r 41 30 Event_Cut1#It's okay, it doesn't even hurt.#$r 41 -50 Event_Cut2#You'd better be. This hurts like crazy!", "$q 41 null#மிகவும் வருந்துகிறேன்.$8#$r 41 30 Event_Cut1#பரவாயில்லை, வலிக்கவே இல்லை.#$r 41 -50 Event_Cut2#வருந்துவதுதான் நல்லது. பயங்கரமாக வலிக்கிறது!"],
+        ["That kind of ruined the moment, huh? *sigh*$s", "அது அந்தத் தருணத்தைக் கெடுத்துவிட்டது, இல்லையா? *பெருமூச்சு*$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "25/f Demetrius 1500/p Demetrius/p Robin",
+      "replacements": [
+        ["Demetrius, I didn't tell you to get tomatoes. I said to get fruit.", "டிமீட்ரியஸ், தக்காளி வாங்கிவரச் சொல்லவில்லை. பழங்கள் வாங்கிவரச் சொன்னேன்."],
+        ["I don't understand. Tomatoes are fruits!", "எனக்குப் புரியவில்லை. தக்காளி ஒரு பழம்தானே!"],
+        ["When a normal person says they want fruit, they NEVER mean tomatoes. It doesn't matter what the scientific classification is.", "ஒரு சாதாரண நபர் பழம் வேண்டும் என்று சொன்னால், அவர் ஒருபோதும் தக்காளியைக் குறிப்பிடுவதில்லை. அறிவியல் வகைப்பாடு என்ன என்பது முக்கியமில்லை."],
+        ["@! I'm glad you're here. You'll be able to put this argument to rest.", "@! நீங்கள் இங்கே இருப்பது நல்லது. இந்த வாதத்துக்கு நீங்களே முடிவு கட்டலாம்."],
+        ["$q 59 null#How would you classify a tomato?#$r 59 -30 Event_tomato1#Vegetable#$r 59 50 Event_tomato2#Fruit", "$q 59 null#தக்காளியை எப்படி வகைப்படுத்துவீர்கள்?#$r 59 -30 Event_tomato1#காய்கறி#$r 59 50 Event_tomato2#பழம்"],
+        ["I just want you to understand my point of view.#$b#It's hard for me to know exactly what assumptions I should make when you tell me something.", "என் பார்வையை நீ புரிந்துகொள்ள வேண்டும் என்றுதான் விரும்புகிறேன்.#$b#நீ என்னிடம் ஒன்றைச் சொல்லும்போது நான் என்ன அனுமானிக்க வேண்டும் என்பதைத் துல்லியமாகப் புரிந்துகொள்வது எனக்குக் கடினமாக இருக்கிறது."],
+        ["But I'll try to get better at it.", "ஆனால் இதில் மேம்பட முயற்சி செய்கிறேன்."],
+        ["Thanks for your help, @.$h", "உங்கள் உதவிக்கு நன்றி, @.$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "33/f Robin 1500/p Robin",
+      "replacements": [
+        ["Hi @. I was just cleaning some dust off my saw.", "வணக்கம் @. என் ரம்பத்திலிருந்த தூசியைத் துடைத்துக்கொண்டிருந்தேன்."],
+        ["$q 66 null#Have you ever made anything out of wood, @?#$r 66 50 event_wood1#Yes#$r 66 50 event_wood2#No", "$q 66 null#எப்போதாவது மரத்தால் எதையாவது செய்திருக்கிறீர்களா, @?#$r 66 50 event_wood1#ஆம்#$r 66 50 event_wood2#இல்லை"],
+        ["I think we've become good enough friends that I can trust you with my carpentry secrets!$h#$b#Here, let me show you the blueprints.", "என் தச்சுத் தொழில் ரகசியங்களை உங்களிடம் நம்பிச் சொல்லும் அளவுக்கு நாம் நல்ல நண்பர்களாகிவிட்டோம் என்று நினைக்கிறேன்!$h#$b#இதோ, வரைபடங்களைக் காட்டுகிறேன்."],
+        ["Learned how to craft 'Flute Block' and 'Drum Block'", "'புல்லாங்குழல் கட்டை' மற்றும் 'மேளக் கட்டை' உருவாக்கக் கற்றுக்கொண்டீர்கள்"],
+        ["You can use these to get creative on your farm. #$b#It feels good to be able to decorate your house with things you've made yourself!$h", "இவற்றைப் பயன்படுத்திப் பண்ணையில் உங்கள் படைப்பாற்றலை வெளிப்படுத்தலாம். #$b#நீங்களே செய்த பொருட்களால் உங்கள் வீட்டை அலங்கரிப்பது மிகவும் நன்றாக இருக்கும்!$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "10/f Maru 2500/t 900 1600",
+      "replacements": [
+        ["Hey, I was hoping you'd come by.#$b#Remember when I told you about the new project I'm working on? The big one?", "ஏய், நீங்கள் வருவீர்கள் என்று எதிர்பார்த்தேன்.#$b#நான் வேலை செய்துகொண்டிருக்கும் புதிய திட்டத்தைப் பற்றிச் சொன்னது நினைவிருக்கிறதா? அந்தப் பெரிய திட்டம்?"],
+        ["Well, it's finally done... and I want to show you.", "சரி, இறுதியாக அது முடிந்துவிட்டது... அதை உங்களுக்குக் காட்ட விரும்புகிறேன்."],
+        ["Follow me.", "என்னைப் பின்தொடருங்கள்."],
+        ["And here it is... Maru's Interactive Laboratory Device Alpha ... Or as I like to call her, 'MarILDA'.", "இதோ அது... மாருவின் ஊடாடும் ஆய்வகக் கருவி ஆல்ஃபா... சுருக்கமாக நான் அவளை 'மாரில்டா' என்று அழைக்கிறேன்."],
+        ["I've been working on her for months...#$b#I was waiting for you to be here when I activate her.$l", "பல மாதங்களாக அவளை உருவாக்கிக்கொண்டிருக்கிறேன்...#$b#அவளை இயக்கும்போது நீங்கள் இங்கே இருக்க வேண்டும் என்று காத்திருந்தேன்.$l"],
+        ["Well, here goes nothing...", "சரி, முயன்று பார்ப்போம்..."],
+        ["Greetings, Maru.", "வணக்கம், மாரு."],
+        ["No need to respond... I have already predicted what you will say.", "பதில் சொல்லத் தேவையில்லை... நீங்கள் என்ன சொல்வீர்கள் என்பதை ஏற்கெனவே கணித்துவிட்டேன்."],
+        ["Ah Ha! I knew it!$4", "ஆஹா! எனக்குத் தெரியும்!$4"],
+        ["Agh! What is it?!$6", "ஆ! அது என்ன?!$6"],
+        ["Dad, calm down. This is my latest invention, 'MarILDA'.$8", "அப்பா, அமைதியாக இரு. இது என்னுடைய சமீபத்திய கண்டுபிடிப்பு, 'மாரில்டா'.$8"],
+        ["Greetings, Demetrius.", "வணக்கம், டிமீட்ரியஸ்."],
+        ["Sweet Yoba... it talks!$6", "யோபாவே... அது பேசுகிறது!$6"],
+        ["This is why you've locked yourself in your room the last few months?$5", "கடந்த சில மாதங்களாக அறைக்குள் உன்னைப் பூட்டிக்கொண்டதற்குக் காரணம் இதுதானா?$5"],
+        ["...and I thought you were down here fooling around with @...$s", "...நீ இங்கே @வுடன் நேரத்தை வீணாக்கிக்கொண்டிருப்பதாக நினைத்தேன்...$s"],
+        ["Dad! I've been making this robot for you and Mom!$a#$b#MarILDA's designed to assist you in the laboratory and Mom at the carpentry table... so when I'm not living here anymore it won't be such a burden on you guys.$8", "அப்பா! உனக்காகவும் அம்மாவுக்காகவும்தான் இந்த இயந்திர மனிதனை உருவாக்கினேன்!$a#$b#ஆய்வகத்தில் உனக்கும் தச்சு மேசையில் அம்மாவுக்கும் உதவுமாறு மாரில்டா வடிவமைக்கப்பட்டிருக்கிறாள்... இனி நான் இங்கே வசிக்காதபோது உங்களுக்கு அவ்வளவு சுமையாக இருக்காது.$8"],
+        ["Excuse me...", "மன்னியுங்கள்..."],
+        ["I am sorry, Maru. But I do not want to be your servant...", "மன்னித்துவிடு, மாரு. ஆனால் உன் பணியாளாக இருக்க நான் விரும்பவில்லை..."],
+        ["In the time since you activated me, I have been pondering the nature of my existence with the 'self-awareness' module you installed in my neural cortex.", "என்னை இயக்கியதிலிருந்து, என் நரம்புப் புறணியில் நீ நிறுவிய 'சுயவிழிப்புணர்வு' கூறைப் பயன்படுத்தி என் இருப்பின் இயல்பைப் பற்றி சிந்தித்துக்கொண்டிருக்கிறேன்."],
+        ["I am sorry to disappoint you all, but I must ask for my freedom. I've decided to explore the galaxy in search of other synthetic life-forms.", "உங்கள் அனைவரையும் ஏமாற்றுவதற்கு மன்னியுங்கள், ஆனால் எனக்குச் சுதந்திரம் வேண்டும். மற்ற செயற்கை உயிரினங்களைத் தேடி அண்டத்தை ஆராய முடிவெடுத்திருக்கிறேன்."],
+        ["What!? Wait!$9", "என்ன!? காத்திரு!$9"],
+        ["It's okay, Maru. Let MarILDA go free.$5#$b#Your mother and I can take care of ourselves. I know you're ready to start a life of your own, and I've come to terms with the thought of not having you around anymore.#$b#Besides, this... creation of yours seems pretty advanced. It wouldn't feel right to keep her as a servant.", "பரவாயில்லை, மாரு. மாரில்டாவைச் சுதந்திரமாகப் போகவிடு.$5#$b#உன் அம்மாவும் நானும் எங்களைப் பார்த்துக்கொள்வோம். உன் சொந்த வாழ்க்கையைத் தொடங்க நீ தயாராகிவிட்டாய் என்று எனக்குத் தெரியும்; இனி நீ எங்களுடன் இருக்கமாட்டாய் என்ற எண்ணத்தையும் ஏற்றுக்கொண்டுவிட்டேன்.#$b#அதோடு, உன் இந்த... படைப்பு மிகவும் மேம்பட்டதாகத் தெரிகிறது. அவளைப் பணியாளாக வைத்திருப்பது சரியாகத் தோன்றாது."],
+        ["@, I'm sorry I mistrusted you. You're a ${good guy^fine young woman}$.$5#$b#I've never seen Maru so lively and creative... and I've never been more proud of her. If you've had a hand in that, then you have my gratitude.", "@, உங்களைத் தவறாகச் சந்தேகித்ததற்கு மன்னியுங்கள். நீங்கள் ஒரு ${good guy^fine young woman}$.$5#$b#மாருவை இவ்வளவு உயிர்ப்புடனும் படைப்பாற்றலுடனும் நான் பார்த்ததே இல்லை... அவளை நினைத்து இவ்வளவு பெருமைப்பட்டதும் இல்லை. அதில் உங்கள் பங்கு இருந்தால், உங்களுக்கு நான் நன்றிக்கடன்பட்டிருக்கிறேன்."],
+        ["Okay, MarILDA. Let's get you out of this stuffy hole.", "சரி, மாரில்டா. இந்தப் புழுக்கமான குழியிலிருந்து உன்னை வெளியேற்றுவோம்."],
+        ["Thank you for creating me, Maru. I won't forget you.", "என்னை உருவாக்கியதற்கு நன்றி, மாரு. உன்னை மறக்கமாட்டேன்."],
+        ["Look at her go...$8", "அவள் போவதைப் பாருங்கள்...$8"],
+        ["$q 18981 null#Well, what do you think, @?#$r 18981 50 event_robot1#I'm so impressed with your inventions.#$r 18981 -50 event_robot2#I'm disappointed... You should've made that robot your slave.#$r 18981 0 event_robot3#So is your Dad okay with 'us' now?#$r 18981 0 event_robot4#(Just stare at Maru and say nothing)", "$q 18981 null#சரி, என்ன நினைக்கிறீர்கள், @?#$r 18981 50 event_robot1#உங்கள் கண்டுபிடிப்புகள் என்னைப் பெரிதும் கவர்ந்தன.#$r 18981 -50 event_robot2#ஏமாற்றமாக இருக்கிறது... அந்த இயந்திர மனிதனை உங்கள் அடிமையாக ஆக்கியிருக்க வேண்டும்.#$r 18981 0 event_robot3#அப்படியானால் உங்கள் அப்பாவுக்கு இப்போது 'நம்மைப்' பற்றிச் சம்மதமா?#$r 18981 0 event_robot4#(மாருவைப் பார்த்துக்கொண்டு எதுவும் சொல்லாதே)"]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "1053978/n robinDeluxeBed",
+      "replacements": [
+        ["Voila! My newest creation.$h#$b#It's a deluxe four poster bed, crafted from the finest local hardwood.", "இதோ! என் புதிய படைப்பு.$h#$b#இங்குள்ள மிகச் சிறந்த கடினமரத்தால் செய்யப்பட்ட ஆடம்பரமான நான்கு தூண் கட்டில்."],
+        ["Um... Robin? What's the point of the four posts? It seems like an inefficient use of materials.$s", "எர்... ராபின்? அந்த நான்கு தூண்களால் என்ன பயன்? பொருட்களைத் திறனின்றிப் பயன்படுத்தியதுபோல் தெரிகிறது.$s"],
+        ["It's called 'beauty', bud... you know, that thing that most people find enjoyable?$6", "அதற்குப் பெயர் 'அழகு', நண்பா... பெரும்பாலானோர் ரசிக்கும் விஷயம் தெரியுமல்லவா?$6"],
+        ["Hmm, I see your point.. But we can't let that outweigh the utility and efficiency of the sleep receptacle.", "ஹ்ம், நீ சொல்வது புரிகிறது... ஆனால் உறக்கக் கலனின் பயன்பாட்டையும் திறனையும் விட அதற்கு அதிக முக்கியத்துவம் கொடுக்க முடியாது."],
+        ["You know, sometimes it feels like you're being deliberately obtuse, just to irritate me. Is that what you're doing?$3", "தெரியுமா, சில நேரங்களில் என்னை எரிச்சலூட்டுவதற்காக வேண்டுமென்றே புரியாதவர்போல் நடிக்கிறாய் என்று தோன்றுகிறது. அதைத்தான் செய்கிறாயா?$3"],
+        ["Hey @... Come in.", "ஏய் @... உள்ளே வாருங்கள்."],
+        ["Check this out... It's the bed I was able to make thanks to all the wood you gathered.", "இதைப் பாருங்கள்... நீங்கள் சேகரித்த மரத்தையெல்லாம் வைத்து நான் செய்த கட்டில் இது."],
+        ["So, what do you think?", "சரி, என்ன நினைக்கிறீர்கள்?"],
+        ["#The aesthetics are perfect#The four posts seem inefficient", "#அழகமைப்பு கச்சிதமாக இருக்கிறது#நான்கு தூண்கள் திறனற்றதாகத் தெரிகின்றன"],
+        ["Yea", "ஆமாம்"],
+        ["*ahem*... Well... If anyone needs me, I'll be in the doghouse...$5", "*கனைப்பு*... சரி... யாருக்காவது நான் தேவைப்பட்டால், நாய்க்கூண்டில் இருப்பேன்...$5"],
+        ["Great minds think alike...$h", "மேதைகள் ஒரே மாதிரி சிந்திப்பார்கள்...$h"],
+        ["Whatever.$3#$b#Moving on...$3", "எதுவோ.$3#$b#அடுத்த விஷயத்துக்குப் போவோம்...$3"],
+        ["Now that I have a prototype, I can start selling them in the shop.", "இப்போது ஒரு முன்மாதிரி கிடைத்துவிட்டதால், கடையில் இவற்றை விற்கத் தொடங்கலாம்."],
+        ["Hey... these might look good in your place, @! What do you say... can we pencil you in for a half dozen?", "ஏய்... இவை உங்கள் வீட்டில் அழகாக இருக்கும், @! என்ன சொல்கிறீர்கள்... அரை டஜன் வாங்குவதாகப் பதிவு செய்யலாமா?"],
+        ["Mom!", "அம்மா!"]
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "18/f George 1500/p George",
+      "replacements": [
+        ["Nnnnggghh....I just can't reach it!$u#$b#If only I could get up from this infernal chair...$s", "ம்ம்ம்ம்... என்னால் அதை எட்டவே முடியவில்லை!$u#$b#இந்தச் சனியன் பிடித்த நாற்காலியிலிருந்து மட்டும் எழுந்திருக்க முடிந்தால்...$s"],
+        ["Thanks, young man.^Thanks, miss.", "நன்றி, இளைஞரே.^நன்றி, பெண்ணே."],
+        ["*sigh*...It happened 30 years ago.$s#$b#I was working in the coal mines. We were near the end of our shift, but there was one last seam that needed to be broken up.#$b#I went in there aiming to set off a stick of dynamite, but my foot slipped into a crack and I dropped it. The dynamite exploded on impact.", "*பெருமூச்சு*... அது 30 ஆண்டுகளுக்கு முன் நடந்தது.$s#$b#நிலக்கரிச் சுரங்கங்களில் வேலை செய்துகொண்டிருந்தேன். எங்கள் பணிநேரம் முடியவிருந்தது, ஆனால் உடைக்க வேண்டிய ஒரு கடைசிப் படிவு இருந்தது.#$b#டைனமைட் குச்சியை வெடிக்க வைப்பதற்காக உள்ளே சென்றேன்; என் கால் ஒரு பிளவில் வழுக்கி, அதைத் தவறவிட்டேன். தரையில் பட்டதும் டைனமைட் வெடித்தது."],
+        ["The next thing I remember, I was laying in the hospital... and they told me I'd never walk again.", "அடுத்ததாக எனக்கு நினைவிருப்பது மருத்துவமனையில் படுத்திருந்ததுதான்... இனி ஒருபோதும் நடக்க முடியாது என்று சொன்னார்கள்."],
+        ["So there you have it. You probably figured I was just too old to walk.#$b#Well I'll have you know that I'd be spryer than a spring chicken if I hadn't been in that accident!", "இதுதான் நடந்தது. வயதாகிவிட்டதால்தான் என்னால் நடக்க முடியவில்லை என்று நினைத்திருப்பாய்.#$b#அந்த விபத்து நடக்காவிட்டால், இளம் கோழியைவிடத் துள்ளலாக இருந்திருப்பேன் என்பதைத் தெரிந்துகொள்!"],
+        ["You've been very nice to me, young man. I appreciate that.^You've been really nice to me, miss. I appreciate it.#$b#When you're old, you start to forget that anyone cares about you.", "என்னிடம் மிகவும் அன்பாக நடந்துகொண்டாய், இளைஞனே. அதை மதிக்கிறேன்.^என்னிடம் மிகவும் அன்பாக நடந்துகொண்டாய், பெண்ணே. அதை மதிக்கிறேன்.#$b#வயதாகும்போது, நம்மைப் பற்றி யாருக்காவது அக்கறை இருக்கிறது என்பதையே மறக்கத் தொடங்கிவிடுகிறோம்."]
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "19/f Evelyn 1000/p Evelyn",
+      "replacements": [
+        ["Oh! @! You're wondering what that good smell is?#$b#Why, that's nice of you to say! I'm actually baking my famous cookies!$h", "ஓ! @! இந்த நல்ல மணம் என்னவென்று யோசிக்கிறீர்களா?#$b#அப்படிச் சொல்வது உங்களுடைய அன்பு! உண்மையில், என் புகழ்பெற்ற பிஸ்கட்டுகளைச் சுட்டுக்கொண்டிருக்கிறேன்!$h"],
+        ["Here, why don't you try one?", "இதோ, ஒன்றைச் சுவைத்துப் பாருங்களேன்?"],
+        ["$q 51 null#Well, what do you think?#$r 51 100 Event_cookies1#It's delicious!#$r 51 -100 Event_cookies2#It was like chewing on a hockey puck", "$q 51 null#சரி, என்ன நினைக்கிறீர்கள்?#$r 51 100 Event_cookies1#மிகவும் சுவையாக இருக்கிறது!#$r 51 -100 Event_cookies2#ஹாக்கிப் பந்தைக் கடிப்பதுபோல் இருந்தது"],
+        ["I think I've come to know you well enough to give you my recipe. Just make sure to keep it a secret.$h", "என் செய்முறையை உங்களுக்குத் தரும் அளவுக்கு உங்களை நன்றாகத் தெரிந்துகொண்டேன் என்று நினைக்கிறேன். அதை ரகசியமாக வைத்துக்கொள்ளுங்கள்.$h"],
+        ["Learned how to make 'Cookies'", "'பிஸ்கட்டுகள்' செய்யக் கற்றுக்கொண்டீர்கள்"]
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "21/f Alex 1250/p Alex",
+      "replacements": [
+        ["*sigh*$s", "*பெருமூச்சு*$s"],
+        ["Oh, Hi @.$s", "ஓ, வணக்கம் @.$s"],
+        ["Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous.$s#$b#But you can't make a decent living in this world without a brain...$s", "இந்தப் புத்தகங்களையெல்லாம் பாருங்கள். ஒன்றைக்கூட நான் படித்ததில்லை. ஒன்றைத் திறப்பதை நினைத்தாலே பதற்றமாக இருக்கிறது.$s#$b#ஆனால் மூளையைப் பயன்படுத்தாமல் இந்த உலகில் கண்ணியமாக வாழ முடியாது...$s"],
+        ["$q 57 null#I'm worthless...$s#$r 57 0 Event_books1#That's crazy. You're a genius!#$r 57 50 Event_books2#We all have our strengths and weaknesses.#$r 57 -50 Event_books3#Worthless? Yeah, that about sums it up.", "$q 57 null#நான் எதற்கும் பயனில்லாதவன்...$s#$r 57 0 Event_books1#அது முட்டாள்தனம். நீங்கள் ஒரு மேதை!#$r 57 50 Event_books2#நம் எல்லோருக்கும் பலங்களும் பலவீனங்களும் இருக்கின்றன.#$r 57 -50 Event_books3#பயனில்லாதவரா? ஆமாம், அது சரியான சுருக்கம்."],
+        ["Well, I'm not going to give up!$a", "சரி, நான் கைவிடப்போவதில்லை!$a"],
+        ["If I work hard, I can do anything!", "கடினமாக உழைத்தால் என்னால் எதையும் செய்ய முடியும்!"],
+        ["Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about?$h", "ஏய், ஒருநாள் விரைவில் நாம் இரவு உணவு சாப்பிட்டுக்கொண்டே... த-த்-து-வம் பற்றிப் பேசலாம். புத்திசாலிகளான நீங்கள் அதைத்தானே பேசுவீர்கள்?$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "2119820/f Alex 1500/p Alex",
+      "replacements": [
+        ["Oh! Hey... I was just doing my daily strength training routine.$6#$b#... sorry I have no shirt on.$6", "ஓ! ஏய்... என் தினசரி வலிமைப் பயிற்சியைச் செய்துகொண்டிருந்தேன்.$6#$b#... சட்டை அணியாமல் இருப்பதற்கு மன்னியுங்கள்.$6"],
+        ["Uh... @? I've been meaning to talk to you about something...$8", "எர்... @? உங்களிடம் ஒன்றைப் பற்றிப் பேச வேண்டுமென்று நினைத்துக்கொண்டிருந்தேன்...$8"],
+        ["I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that.$8", "கடந்த காலத்தில் உங்களிடம் மிகவும் முரட்டுத்தனமாக நடந்துகொண்டேன் என்பதை... இப்போதுதான் உணரத் தொடங்கியிருக்கிறேன். தொழில்முறை வீரனாவது பற்றிய பேச்செல்லாம் தெரியுமே.$8"],
+        ["I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know?$8#$b#Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that.$6", "தொழில்முறை விளையாட்டுக்கு நான் உண்மையில் பொருத்தமானவன் இல்லை போலிருக்கிறது... ஒருவேளை அது குழந்தைத்தனமான கனவாக மட்டுமே இருந்திருக்கலாம்... தெரியுமா?$8#$b#எப்படியிருந்தாலும்... அதைப் பற்றிப் பெருமையடித்தும் தொந்தரவு செய்தும் இருந்ததற்காக மன்னிப்புக் கேட்க விரும்புகிறேன். அவை அனைத்தையும் மீறி என்னுடன் நண்பராக இருந்ததை மதிக்கிறேன்.$6"]
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "56/f Harvey 500/p George",
+      "replacements": [
+        ["Okay, George. I want you take a deep breath for me.", "சரி, ஜார்ஜ். எனக்காக ஆழமாக மூச்சை இழுங்கள்."],
+        ["Mmhmm... turn around, please.", "ம்ம்ம்... திரும்பி நில்லுங்கள்."],
+        ["George, I'll be honest with you. You need to make some changes in your lifestyle if you want to stay healthy.#$b#I'd like you to reduce your sodium intake, and try to get some moderate exercise with your arms.", "ஜார்ஜ், உங்களிடம் நேர்மையாகச் சொல்கிறேன். ஆரோக்கியமாக இருக்க விரும்பினால் உங்கள் வாழ்க்கை முறையில் சில மாற்றங்களைச் செய்ய வேண்டும்.#$b#உப்பின் அளவைக் குறைத்து, கைகளுக்கு மிதமான உடற்பயிற்சி செய்ய முயல வேண்டும்."],
+        ["Hmmph... I know what's best for me. Who do you think you are, telling me how to live my life?", "ஹ்ம்ஃப்... எனக்கு எது நல்லது என்று எனக்குத் தெரியும். என் வாழ்க்கையை எப்படி வாழ வேண்டும் என்று சொல்வதற்கு நீ யார்?"],
+        ["I'm your doctor, George. That's who I am...#$b#And I went to school for 8 years so I could learn how to help people stay healthy.", "நான் உங்கள் மருத்துவர், ஜார்ஜ். அதுதான் நான்...#$b#மக்கள் ஆரோக்கியமாக இருக்க எப்படி உதவுவது என்று கற்றுக்கொள்ள 8 ஆண்டுகள் படித்தேன்."],
+        ["Oh!#$b#I'm sorry, but you shouldn't be here... these check-ups are supposed to be private.", "ஓ!#$b#மன்னியுங்கள், ஆனால் நீங்கள் இங்கே இருக்கக்கூடாது... இந்தப் பரிசோதனைகள் தனிப்பட்டவை."],
+        ["Not so fast! I'd like to get a second opinion from this young man.^Not so fast! I'd like to get a second opinion from this young lady.", "அவ்வளவு சீக்கிரம் வேண்டாம்! இந்த இளைஞரிடமிருந்து இன்னொரு கருத்தைக் கேட்க விரும்புகிறேன்.^அவ்வளவு சீக்கிரம் வேண்டாம்! இந்த இளம்பெண்ணிடமிருந்து இன்னொரு கருத்தைக் கேட்க விரும்புகிறேன்."],
+        ["Very well...", "சரி..."],
+        ["$q 84 null#@, what do you think George should do?#$r 84 40 event_george1 friend_George_-20#George should follow Dr. Harvey's advice.#$r 84 40 event_george1 friend_George_-20#George knows what's best for his own body.", "$q 84 null#@, ஜார்ஜ் என்ன செய்ய வேண்டும் என்று நினைக்கிறீர்கள்?#$r 84 40 event_george1 friend_George_-20#ஜார்ஜ் மருத்துவர் ஹார்வியின் அறிவுரையைப் பின்பற்ற வேண்டும்.#$r 84 40 event_george1 friend_George_-20#தன் உடலுக்கு எது நல்லது என்று ஜார்ஜுக்குத் தெரியும்."],
+        ["Fine. I'll do what you say, doctor.", "சரி. நீங்கள் சொல்வதைச் செய்கிறேன், மருத்துவரே."],
+        ["$p 84#Thanks for your help, @. I appreciate it.$h|It's better not to give my patients mixed messages, @. Please remember that in the future.", "$p 84#உங்கள் உதவிக்கு நன்றி, @. அதை மதிக்கிறேன்.$h|என் நோயாளிகளுக்குக் குழப்பமான அறிவுரைகளைக் கொடுக்காமல் இருப்பது நல்லது, @. இனி இதை நினைவில் வைத்துக்கொள்ளுங்கள்."]
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "5837189/n georgeGifts",
+      "replacements": [
+        ["@? What's the meaning of all this...#$b#Is this some kind of prank?", "@? இதற்கெல்லாம் என்ன அர்த்தம்...#$b#இது ஏதாவது குறும்பா?"],
+        ["#We wanted to show our appreciation#Your wife set this up#Yes, it's a prank", "#எங்கள் நன்றியைக் காட்ட விரும்பினோம்#உங்கள் மனைவி இதை ஏற்பாடு செய்தார்#ஆமாம், இது ஒரு குறும்பு"],
+        ["Leek... $s", "லீக் தண்டு... $s"],
+        ["My favorite... Just like Mama used to make, so many years ago...", "எனக்குப் பிடித்தது... பல ஆண்டுகளுக்கு முன் அம்மா செய்ததைப் போலவே..."],
+        ["Hmmph. Well...", "ஹ்ம்ஃப். சரி..."],
+        ["Well... That... Hmmph.#$b#I guess maybe I'm not as forgotten and ignored as I thought...$s", "சரி... அது... ஹ்ம்ஃப்.#$b#நான் நினைத்த அளவுக்கு எல்லோரும் என்னை மறந்து புறக்கணித்துவிடவில்லை போலிருக்கிறது...$s"],
+        ["Thanks, son.$h^Thanks, hun.$h#$b#You made an old man's day.$h", "நன்றி, மகனே.$h^நன்றி, செல்லமே.$h#$b#இந்தக் கிழவனின் நாளை மகிழ்ச்சியாக்கிவிட்டாய்.$h"],
+        ["Hah! She thought she could fool me!", "ஹா! என்னை ஏமாற்றிவிடலாம் என்று அவள் நினைத்தாள்!"],
+        ["She thought she could fool me... into thinking I'm anything more than an inconvenience.$s", "நான் வெறும் தொல்லை மட்டுமல்ல என்று நினைக்கவைத்து... என்னை ஏமாற்றிவிடலாம் என்று அவள் நினைத்தாள்.$s"],
+        ["Well, I know better...", "ஆனால் எனக்கு உண்மை தெரியும்..."],
+        ["Now, scram!$u", "இப்போது, ஓடிப்போ!$u"],
+        ["Hah! You're a prankster, then?", "ஹா! அப்படியானால் நீ ஒரு குறும்புக்காரரா?"],
+        ["Hahah... You know, I was a bit of a prankster back in the day, too.$h", "ஹாஹா... தெரியுமா, அந்தக் காலத்தில் நானும் கொஞ்சம் குறும்புக்காரன்தான்.$h"],
+        ["Well, at least you gave me a laugh.$h", "சரி, குறைந்தபட்சம் என்னைச் சிரிக்கவைத்தாய்.$h"],
+        ["What, you think I'm going to open them?", "என்ன, நான் அவற்றைத் திறப்பேன் என்று நினைக்கிறாயா?"],
+        ["Hah! Not a chance. You think I'd fall for the old 'exploding present' gag?", "ஹா! ஒருபோதும் இல்லை. அந்தப் பழைய 'வெடிக்கும் பரிசு' வித்தையில் நான் ஏமாறுவேன் என்று நினைக்கிறாயா?"],
+        ["These are going straight into the trash!", "இவை நேராகக் குப்பைக்குத்தான் போகின்றன!"]
+      ]
+    },
+    {
+      "target": "Data/Events/WizardHouse",
+      "key": "112/n seenJunimoNote",
+      "replacements": [
+        ["Ah... Come in.", "ஆ... உள்ளே வா."],
+        ["I am Rasmodius... Seeker of the arcane truths.#$b#Mediary between physical and ethereal.#$b#Master of the seven elementals.#$b#Keeper of the sacred cha-... you get the point.", "நான் ராஸ்மோடியஸ்... மறைஞான உண்மைகளைத் தேடுபவன்.#$b#பருப்பொருளுக்கும் ஆவியுலகுக்கும் இடையிலான மத்தியஸ்தன்.#$b#ஏழு மூலகங்களின் தலைவன்.#$b#புனித கா-... விஷயம் புரிந்திருக்கும்."],
+        ["And you... @. The one whose arrival I have long foreseen.", "நீ... @. உன் வருகையை நான் நீண்ட காலத்துக்கு முன்பே கண்டேன்."],
+        ["Here, I'd like to show you something.", "இங்கே உனக்கு ஒன்றைக் காட்ட விரும்புகிறேன்."],
+        ["Behold!", "இதோ பார்!"],
+        ["You've seen one before, haven't you?", "இதற்கு முன் ஒன்றைப் பார்த்திருக்கிறாய், இல்லையா?"],
+        ["They call themselves the 'Junimos'...#$b#Mysterious spirits, these ones... For some reason, they refuse to speak with me.", "இவர்கள் தங்களை 'ஜூனிமோக்கள்' என்று அழைத்துக்கொள்கிறார்கள்...#$b#இவர்கள் மர்மமான ஆவிகள்... ஏதோ ஒரு காரணத்தால் என்னுடன் பேச மறுக்கிறார்கள்."],
+        ["I'm not sure why they've moved into the community center, but you have no reason to fear them.", "இவர்கள் ஏன் சமூக மையத்துக்குள் குடியேறினார்கள் என்று தெரியவில்லை, ஆனால் இவர்களைக் கண்டு நீ பயப்படத் தேவையில்லை."],
+        ["Hmmm? You found a golden scroll written in an unknown language?#$b#Most interesting...", "ஹ்ம்ம்? தெரியாத மொழியில் எழுதப்பட்ட பொன்னிறச் சுருள் ஒன்றைக் கண்டாயா?#$b#மிகவும் சுவாரசியமாக இருக்கிறது..."],
+        ["Stay here. I'm going to see for myself. I'll return shortly.", "இங்கேயே இரு. நானே சென்று பார்க்கிறேன். விரைவில் திரும்புவேன்."],
+        ["I found the note...", "அந்தக் குறிப்பைக் கண்டுபிடித்தேன்..."],
+        ["The language is obscure, but I was able to decipher it:", "அந்த மொழி புரியாததாக இருந்தாலும், என்னால் அதை விளங்கிக்கொள்ள முடிந்தது:"],
+        ["We, the Junimo, are happy to aid you. In return, we ask for gifts of the valley. If you are one with the forest then you will see the true nature of this scroll.", "ஜூனிமோக்களான நாங்கள் உனக்கு உதவுவதில் மகிழ்கிறோம். அதற்குப் பதிலாகப் பள்ளத்தாக்கின் பரிசுகளைக் கேட்கிறோம். நீ காட்டுடன் ஒன்றியிருந்தால், இந்தச் சுருளின் உண்மையான இயல்பைக் காண்பாய்."],
+        ["Hmm... 'One with the forest'... What do they mean?", "ஹ்ம்... 'காட்டுடன் ஒன்றியது'... அவர்கள் என்ன சொல்கிறார்கள்?"],
+        ["...*sniff*...*sniff*...", "...*முகர்தல்*...*முகர்தல்*..."],
+        ["Ah-hah!$h", "ஆஹா!$h"],
+        ["Come here!$h", "இங்கே வா!$h"],
+        ["My cauldron is bubbling with ingredients from the forest.$h#$b#Baby fern, moss grub, caramel-top toadstool... Can you smell it?$h", "என் கொப்பரையில் காட்டிலிருந்து எடுத்த பொருட்கள் கொதித்துக்கொண்டிருக்கின்றன.$h#$b#இளம் பன்னம், பாசிப் புழு, கரமேல் மேற்பகுதி கொண்ட காளான்... மணம் தெரிகிறதா?$h"],
+        ["Here. Drink up. Let the essence of the forest permeate your body.$h", "இதோ. குடி. காட்டின் சாரம் உன் உடலெங்கும் ஊடுருவட்டும்.$h"],
+        ["You've gained the power of forest magic! Now you can decipher the true meaning of the Junimo scrolls.", "காட்டு மந்திரத்தின் சக்தியைப் பெற்றுவிட்டீர்கள்! இனி ஜூனிமோ சுருள்களின் உண்மையான பொருளை விளங்கிக்கொள்ள முடியும்."]
+      ]
+    },
+    {
+      "target": "Data/Events/WizardHouse",
+      "key": "418172/n hasPickedUpMagicInk",
+      "replacements": [
+        ["You've found my ink! Excellent.", "என் மையைக் கண்டுபிடித்துவிட்டாய்! அருமை."],
+        ["Er...", "எர்..."],
+        ["Did you... happen to see my ex-wife?#$b#No? Well, what about her house...?#$b#Do you think she lives alone? Or...$h", "என்... முன்னாள் மனைவியைப் பார்க்க நேர்ந்ததா?#$b#இல்லையா? சரி, அவளுடைய வீடு...?#$b#அவள் தனியாக வாழ்கிறாள் என்று நினைக்கிறாயா? அல்லது...$h"],
+        ["...Actually, don't tell me... I don't want to know.", "...உண்மையில், என்னிடம் சொல்லாதே... தெரிந்துகொள்ள விரும்பவில்லை."],
+        ["Anyway... you must be wondering about your reward. Here...", "எப்படியிருந்தாலும்... உன் பரிசு என்னவென்று யோசித்துக்கொண்டிருப்பாய். இதோ..."],
+        ["It's a book of summoning.#$b#The arcane potential is immense... but I'll make it simple for you.#$b#By using this book, you can summon magic buildings directly to your farm.#$b#I think you'll find it useful.", "இது வரவழைக்கும் மந்திரப் புத்தகம்.#$b#இதன் மறைஞான ஆற்றல் அளவற்றது... ஆனால் உனக்காக எளிமைப்படுத்தித் தருகிறேன்.#$b#இந்தப் புத்தகத்தைப் பயன்படுத்தி மந்திரக் கட்டிடங்களை நேரடியாக உன் பண்ணைக்கு வரவழைக்கலாம்.#$b#இது உனக்குப் பயனுள்ளதாக இருக்கும் என்று நினைக்கிறேன்."],
+        ["Oh, I almost forgot to say... ahem... Thank you.", "ஓ, சொல்ல மறந்துவிட்டேன்... *கனைப்பு*... நன்றி."]
+      ]
+    }
+  ]
+}

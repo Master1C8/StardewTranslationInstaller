@@ -1,0 +1,91 @@
+[
+  {
+    "target": "Data/Events/FarmHouse",
+    "key": "4325434/f Penny 3500/O Penny/t 1500 1900/p Penny",
+    "replacements": [
+      ["Welcome home, honey... How was your day?", "Selamat datang di rumah, Sayang... Bagaimana harimu?"],
+      ["#It was fine#Not good...#It was fantastic!(break)speak Penny \"Just business as usual, huh?#$b#Well, I've got a zesty new recipe in the oven, so maybe things will get a little more exciting!$h\"(break)emote Penny 28\\speak Penny \"Oh, I'm sorry!$s#$b#Well, you're back now... I'll do my best to make you feel better.\"(break)speak Penny \"That's great! I'm glad you enjoy your work so much.$h\"", "#Baik-baik saja#Kurang baik...#Luar biasa!(break)speak Penny \"Hari yang biasa, ya?#$b#Aku punya resep baru yang lezat di Oven, jadi mungkin keadaan akan menjadi sedikit lebih menarik!$h\"(break)emote Penny 28\\speak Penny \"Oh, maafkan aku!$s#$b#Sekarang kamu sudah pulang... Aku akan berusaha membuatmu merasa lebih baik.\"(break)speak Penny \"Bagus sekali! Aku senang kamu sangat menikmati pekerjaanmu.$h\""],
+      ["I'm happy you're home.$l", "Aku senang kamu sudah pulang.$l"],
+      ["Oh, you smell like the outdoors...$l#$b#It's nice...$11", "Oh, kamu beraroma alam terbuka...$l#$b#Harum...$11"],
+      ["You know... I really appreciate the hard work you do for the family.#$b#So it's important to me that when you come home, the house is nice and cozy, and everything's in order!", "Aku sungguh menghargai kerja kerasmu untuk keluarga.#$b#Jadi, penting bagiku agar saat kamu pulang, Rumah terasa nyaman dan semuanya tertata rapi!"],
+      ["So I was thinking... I'd like to re-decorate the bedroom with some of my own hand-made decor!#$b#But first, I have to ask you...$11", "Jadi, aku berpikir... Aku ingin menghias ulang Kamar Tidur dengan dekorasi buatanku sendiri!#$b#Namun, sebelumnya aku harus bertanya...$11"],
+      ["What style do you prefer?#Forest And Moon: Peaceful Blue#Strawberry Home#Pirate Theme#I don't want any changes!(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt0\\speak Penny \"Ah... something soothing. Okay!#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt1\\speak Penny \"Something warm and inviting, huh? That works for me!#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt2\\speak Penny \"Heh... Okay. Whatever you like, honey.$h#$b#Just give me a few days, then.#$b#I won't touch any of your chests, but it would be nice if you could move them out of the bedroom.\"(break)addMailReceived noQuilt\\speak Penny \"Oh! Okay... I won't worry about it, then.$s\"", "Gaya apa yang kamu sukai?#Hutan dan Bulan: Biru Damai#Rumah Stroberi#Tema Bajak Laut#Aku tidak ingin ada perubahan!(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt0\\speak Penny \"Ah... Sesuatu yang menenangkan. Baiklah!#$b#Beri aku waktu beberapa hari.#$b#Aku tidak akan menyentuh Peti apa pun, tetapi akan lebih baik jika kamu memindahkannya dari Kamar Tidur.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt1\\speak Penny \"Sesuatu yang hangat dan ramah, ya? Cocok bagiku!#$b#Beri aku waktu beberapa hari.#$b#Aku tidak akan menyentuh Peti apa pun, tetapi akan lebih baik jika kamu memindahkannya dari Kamar Tidur.\"(break)addConversationTopic pennyRedecorating 2\\addMailReceived pennyQuilt2\\speak Penny \"Heh... Baiklah. Apa pun yang kamu suka, Sayang.$h#$b#Beri aku waktu beberapa hari.#$b#Aku tidak akan menyentuh Peti apa pun, tetapi akan lebih baik jika kamu memindahkannya dari Kamar Tidur.\"(break)addMailReceived noQuilt\\speak Penny \"Oh! Baiklah... Aku tidak akan memikirkannya lagi.$s\""],
+      ["Oh! The pop-overs are ready.", "Oh! Popover-nya sudah matang."],
+      ["Make yourself comfortable, dear.", "Bersantailah, Sayang."]
+    ]
+  },
+  {
+    "target": "Data/Events/Woods",
+    "key": "2123343/e 2111294/t 2200 2540/w sunny/F/D Emily",
+    "replacements": [
+      ["Well, this is fun, isn't it?", "Kegiatan ini menyenangkan, bukan?"],
+      ["Kind of spooky, actually...$u", "Sebenarnya, agak menyeramkan...$u"],
+      ["Heh... it's chilly out here...$4", "Heh... Di luar sini dingin...$4"],
+      ["A bear! I hope he's not hungry... $6", "Seekor Beruang! Semoga dia tidak lapar... $6"],
+      ["Oh... the other sleeping bag is still outside...$u#$b#No way am I going back out there!$6", "Oh... Kantong Tidur satunya masih di luar...$u#$b#Aku tidak mungkin kembali ke luar sana!$6"],
+      ["Um.. @? You don't mind sharing a sleeping bag with me, do you?$4", "Em... @? Kamu tidak keberatan berbagi Kantong Tidur denganku, bukan?$4"]
+    ]
+  },
+  {
+    "target": "Data/Events/BusStop",
+    "key": "9581348/e 2128292/t 1600 1800",
+    "replacements": [
+      ["Hey, there you are!$6#$b#I'm glad you decided to come. We should get going...$6", "Hei, kamu datang!$6#$b#Aku senang kamu memutuskan untuk ikut. Kita harus berangkat...$6"],
+      ["We're almost there...", "Kita hampir sampai..."],
+      ["*gulp* ...pre-game nerves...$10", "*menelan ludah* ...Gugup sebelum pertandingan...$10"],
+      ["Here, I got you another cold one...", "Ini, kubawakan minuman dingin lagi untukmu..."],
+      ["Hey, I've been meaning to say... $6#$b#Thanks for sticking with me through everything... my anxiety, depression... you know...$6#$b#You've been a really good friend to me.$6", "Hei, sudah lama aku ingin mengatakan... $6#$b#Terima kasih sudah tetap bersamaku melalui segala hal... kecemasan, depresi... kamu mengerti...$6#$b#Kamu menjadi teman yang sangat baik bagiku.$6"],
+      ["Anyway...  it's your first gridball game, huh?", "Jadi... Ini pertandingan Gridball pertamamu, ya?"],
+      ["$q -1 null#Well, what do you think?#$r -1 10 event_stadium1#Noisy... It makes me appreciate how peaceful it is back home.#$r -1 10 event_stadium2#Fun... Pelican Town seems really boring in comparison.", "$q -1 null#Bagaimana menurutmu?#$r -1 10 event_stadium1#Berisik... Ini membuatku menghargai kedamaian di rumah.#$r -1 10 event_stadium2#Menyenangkan... Kota Pelican terasa sangat membosankan jika dibandingkan."],
+      ["Gahh!! Look, the Tunnelers are on the attack!$10", "Gahh!! Lihat, Tunnelers sedang menyerang!$10"],
+      ["Goal!!", "Gol!!"],
+      ["Goal!", "Skor!"],
+      ["Um... Sorry... I got carried away there.$10#$b#Maybe I had one too many...", "Em... Maaf... Tadi aku terbawa suasana.$10#$b#Mungkin aku minum sedikit terlalu banyak..."],
+      ["Well... that was definitely a good game.$l", "Tadi jelas pertandingan yang bagus.$l"],
+      ["Oh, yeah... and we won, too.$l", "Oh, ya... Kita juga menang.$l"],
+      ["Well... see you soon.$6", "Baiklah... Sampai jumpa.$6"]
+    ]
+  },
+  {
+    "target": "Data/Events/Railroad",
+    "key": "afraid",
+    "replacements": [
+      ["I am... yeah.$s#$b#But I'm determined to not let that stop me from doing what I want... and experiencing this with you.$l#$b#I'll try not to get scared.", "Aku takut... ya.$s#$b#Namun, aku bertekad tidak membiarkannya menghentikanku melakukan apa yang kuinginkan... dan mengalami ini bersamamu.$l#$b#Aku akan berusaha tidak ketakutan."],
+      ["We... We're up so high... *gulp*$8", "K... Kita berada sangat tinggi... *menelan ludah*$8"],
+      ["I wanted to impress you with this... but look at me. I'm a trembling coward.$7", "Aku ingin membuatmu terkesan dengan ini... tetapi lihat diriku. Aku seorang pengecut yang gemetar.$7"],
+      ["Well, you've got more than enough courage to make up for me, @... that's... that's part of why I like you.$11", "Kamu memiliki keberanian yang lebih dari cukup untuk menutupi kekuranganku, @... Itulah... salah satu alasan aku menyukaimu.$11"],
+      ["Okay, I'm going to open my eyes and look down... don't let go of my hand.$4", "Baiklah, aku akan membuka mata dan melihat ke bawah... Jangan lepaskan tanganku.$4"],
+      ["I... I think I can do it now.$8", "A... Aku rasa sekarang aku bisa melakukannya.$8"],
+      ["Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!$h", "Hei, ini luar biasa! Sepertinya aku bisa melihat Wali Kota Lewis berdiri di Alun-alun!$h"],
+      ["Oh dear... our time's almost up.$s", "Oh, tidak... Waktu kita hampir habis.$s"],
+      ["Um... @? We've known each other for a while now and... I... er...$11", "Em... @? Kita sudah cukup lama saling mengenal dan... Aku... ehm...$11"],
+      ["Whoops... Our time was up half an hour ago. We'd better touch down.$l", "Ups... Waktu kita habis setengah jam lalu. Sebaiknya kita mendarat.$l"],
+      ["I haven't had such a wonderful day for as long as I can remember.$l", "Sudah lama sekali aku tidak mengalami hari seindah ini.$l"]
+    ]
+  },
+  {
+    "target": "Data/Events/Forest",
+    "key": "54/f Leah 2500/t 1100 1600/z winter/w sunny",
+    "replacements": [
+      ["Hi @. I knew you'd be passing through here today.#$b#...So I put together a surprise...$h", "Hai, @. Aku tahu hari ini kamu akan melewati tempat ini.#$b#...Jadi, kusiapkan sebuah kejutan...$h"],
+      ["It's a little picnic for us!$h", "Ini Piknik kecil untuk kita!$h"],
+      ["This is a vegetable medley, with my 'special' spice blend.", "Ini Tumis Sayuran dengan campuran Rempah 'khusus' buatanku."],
+      ["...and this is a fresh salad, made from greens that I foraged right here in the forest!$h", "...dan ini Salad segar yang dibuat dari sayuran hijau yang kukumpulkan di Hutan ini!$h"],
+      ["@, um...$l", "@, em...$l"],
+      ["I just want to say thank you... for helping me get one step closer to becoming a real artist.$l", "Aku hanya ingin berterima kasih... karena membantuku selangkah lebih dekat untuk menjadi seniman sejati.$l"],
+      ["DISTANT VOICE: Well, well, well... What have we here?", "SUARA DARI KEJAUHAN: Lihatlah... Apa yang kita temukan di sini?"],
+      ["Kel??$6#$b#What the heck are you doing here?$a", "Kel??$6#$b#Apa yang kamu lakukan di sini?$a"],
+      ["KEL: Didn't you see me at the art show? I came all the way from Zuzu City to see your sculptures.", "KEL: Apa kamu tidak melihatku di pameran seni? Aku datang jauh-jauh dari Kota Zuzu untuk melihat Patungmu."],
+      ["KEL: And to get you to come back with me.", "KEL: Dan untuk mengajakmu kembali bersamaku."],
+      ["KEL: I want things to go back to the way they were... I miss you, babe.", "KEL: Aku ingin semuanya kembali seperti dahulu... Aku merindukanmu, Sayang."],
+      ["Yuck, don't call me that!$a#$b#You never supported my art before... now that I've had some success you want me back? You make me sick.$a", "Ih, jangan panggil aku begitu!$a#$b#Dahulu kamu tidak pernah mendukung karya seniku... Sekarang setelah aku cukup sukses, kamu ingin aku kembali? Kamu membuatku muak.$a"],
+      ["KEL: Hey! Come Here!", "KEL: Hei! Kemari!"],
+      ["#Punch Kel in the face.#Try reasoning with Kel.", "#Tinju wajah Kel.#Coba ajak Kel bicara baik-baik."],
+      ["Oh my God!$6", "Ya ampun!$6"],
+      ["Well, he'll make it... but that was pretty violent, @.^She's fine... but that was pretty violent, @.", "Yah, dia akan baik-baik saja... tetapi tadi cukup kejam, @.^Yah, dia baik-baik saja... tetapi tadi cukup kejam, @."],
+      ["Let's get out of here. I don't think Kel will be bothering us anymore.", "Mari pergi dari sini. Kurasa Kel tidak akan mengganggu kita lagi."],
+      ["Let's find a more secluded spot this time...$l", "Kali ini mari cari tempat yang lebih sepi...$l"],
+      ["Well, the picnic didn't pan out like I wanted it to.$h", "Yah, Pikniknya tidak berjalan seperti yang kuinginkan.$h"]
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+{
+  "id": "405-haley-house-railroad-and-island-north-events",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "11/f Haley 500/p Haley/p Emily",
+      "replacements": [
+        ["Urgghh! I always clean under the cushions! It's YOUR turn this week!$a", "அர்ர்! மெத்தைகளுக்கு அடியில் எப்போதும் நான்தான் சுத்தம் செய்கிறேன்! இந்த வாரம் உன் முறை!$a"],
+        ["You're being childish, Haley. I do the vast majority of work in this house, and you know it.$u", "குழந்தைத்தனமாக நடந்துகொள்கிறாய், ஹேலி. இந்த வீட்டில் பெரும்பாலான வேலையை நான்தான் செய்கிறேன், அது உனக்கும் தெரியும்.$u"],
+        ["Oh, it's that new ${farm boy^girl from the farm}$.$7", "ஓ, அந்தப் புதிய ${farm boy^girl from the farm}$.$7"],
+        ["${He^She}$ has a name, you know.$u", "${He^She}$க்கு ஒரு பெயர் இருக்கிறது, தெரியுமா.$u"],
+        ["Hey, I bet you'll understand my point of view here.", "ஏய், இங்கே என் பார்வை உங்களுக்குப் புரியும் என்று நம்புகிறேன்."],
+        ["*sigh*... I'm really sorry to involve you in this, @. Haley is complaining because I asked her to clean under the cushions.$u", "*பெருமூச்சு*... இதில் உங்களை இழுப்பதற்கு மிகவும் வருந்துகிறேன், @. மெத்தைகளுக்கு அடியில் சுத்தம் செய்யச் சொன்னதால் ஹேலி குறைசொல்கிறாள்.$u"],
+        ["$q 45 null#It's only because I cleaned them last week!$a#$r 46 -50 Event_clean2#Stop whining and just clean it!#$r 45 30 Event_clean1#Haley, why not have this be your one weekly job?#$r 46 -30 Event_clean3#Emily, take the high road and do it this time.", "$q 45 null#கடந்த வாரம் நான்தான் அவற்றைச் சுத்தம் செய்தேன்!$a#$r 46 -50 Event_clean2#குறைசொல்வதை நிறுத்திவிட்டுச் சுத்தம் செய்!#$r 45 30 Event_clean1#ஹேலி, இதை உன் ஒரே வாராந்திர வேலையாக வைத்துக்கொள்ளலாமே?#$r 46 -30 Event_clean3#எமிலி, பெருந்தன்மையுடன் இந்த முறை நீயே செய்."],
+        ["Alright, you win. I guess this can be my job every week. Then there won't be any reason to argue over it.$u", "சரி, நீங்கள்தான் வென்றீர்கள். இதை ஒவ்வொரு வாரமும் என் வேலையாக வைத்துக்கொள்கிறேன். பிறகு இதைப் பற்றி வாதிட எந்தக் காரணமும் இருக்காது.$u"],
+        ["Thanks, @. That was a great solution.$h", "நன்றி, @. அது அருமையான தீர்வு.$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "haleyWontDoIt",
+      "replacements": [
+        ["*sigh*... I guess I'll just do it, then...$s", "*பெருமூச்சு*... அப்படியானால் நானே அதைச் செய்கிறேன்...$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "12/f Haley 1000/p Haley",
+      "replacements": [
+        ["Nnnnnghhh... I just can't get this jar open!$a#$b#...$s", "ம்ம்ம்... இந்த ஜாடியை என்னால் திறக்கவே முடியவில்லை!$a#$b#...$s"],
+        ["Oh! It's you...@, right?", "ஓ! நீங்கள்... @, சரிதானே?"],
+        ["$q 47 null#Say... you're pretty strong, aren't you?#$r 47 30 Event_jar1#Yes#$r 47 -30 Event_jar2#No", "$q 47 null#சொல்லுங்கள்... நீங்கள் மிகவும் வலிமையானவர், இல்லையா?#$r 47 30 Event_jar1#ஆம்#$r 47 -30 Event_jar2#இல்லை"],
+        ["Hey, you did it! You're stronger than you look!$h", "ஏய், திறந்துவிட்டீர்கள்! தோற்றத்தைவிட வலிமையானவராக இருக்கிறீர்கள்!$h"],
+        ["Thanks!$h", "நன்றி!$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "917409/e 463391/f Emily 1500/p Emily",
+      "replacements": [
+        ["Come in, @! I want to show you something.$h", "உள்ளே வாருங்கள், @! உங்களுக்கு ஒன்றைக் காட்ட விரும்புகிறேன்.$h"],
+        ["It's my secret hobby... I've been practicing for months.#$b#Now, sit back, relax, and allow yourself to be carried away to a better place... okay?", "இது என் ரகசியப் பொழுதுபோக்கு... பல மாதங்களாகப் பயிற்சி செய்துகொண்டிருக்கிறேன்.#$b#இப்போது பின்னால் சாய்ந்து ஓய்வெடுங்கள்; ஓர் இனிய இடத்துக்கு உங்களை எடுத்துச் செல்ல அனுமதியுங்கள்... சரியா?"],
+        ["$q 213 null#So... *gasp*... what did you think?$h#$r 213 25 event_dance1#That was amazing!#$r 213 -50 event_dance2#That was embarrassing...#$r 213 25 event_dance1#(Say nothing and do a slow clap)", "$q 213 null#சரி... *மூச்சிரைப்பு*... என்ன நினைத்தீர்கள்?$h#$r 213 25 event_dance1#அற்புதமாக இருந்தது!#$r 213 -50 event_dance2#அது சங்கடமாக இருந்தது...#$r 213 25 event_dance1#(எதுவும் சொல்லாமல் மெதுவாகக் கைதட்டு)"],
+        ["Phew... that was quite a workout...$u", "அப்பாடா... அது நல்ல உடற்பயிற்சியாக இருந்தது...$u"],
+        ["I haven't been this sweaty since I ordered the pepper platter at Abigail's graduation fiesta!$h", "அபிகெயிலின் பட்டமளிப்பு விழாவில் மிளகுத் தட்டை வாங்கியதிலிருந்து இவ்வளவு வியர்த்ததே இல்லை!$h"],
+        ["...Well, I'd better take a shower. Thanks for watching.", "...சரி, நான் குளிப்பது நல்லது. பார்த்ததற்கு நன்றி."],
+        ["Don't tell anyone about the dance. That was for your eyes only.", "இந்த நடனத்தைப் பற்றி யாரிடமும் சொல்லாதீர்கள். அது உங்கள் கண்களுக்கு மட்டும்தான்."]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "471942/f Emily 500/p Emily",
+      "replacements": [
+        ["Mui-wah", "முய்-வா"],
+        ["Muuui-wah", "மூூய்-வா"],
+        ["Why are you here?$u", "நீங்கள் ஏன் இங்கே இருக்கிறீர்கள்?$u"],
+        ["...$u#$b#That reminded me of something.$u#$b#Even the tiniest, blandest, simplest light holds a wonderful secret.", "...$u#$b#அது எனக்கு ஒன்றை நினைவூட்டியது.$u#$b#மிகச் சிறிய, மங்கலான, எளிய ஒளியில்கூட ஓர் அற்புதமான ரகசியம் இருக்கிறது."],
+        ["Nowwwwww I know why you're here. It's a sign. Hahaha!$h", "இப்போஓஓஓது நீங்கள் ஏன் இங்கே இருக்கிறீர்கள் என்று தெரிகிறது. இது ஓர் அறிகுறி. ஹாஹா!$h"],
+        ["@... There's something special about @...$u#$b#Our destinies will intersect...$u", "@... @விடம் ஏதோ விசேஷம் இருக்கிறது...$u#$b#நம் விதிகள் ஒன்றையொன்று சந்திக்கும்...$u"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "195019/f Haley 2500/f Emily 2500/f Penny 2500/f Abigail 2500/f Leah 2500/f Maru 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 38/e 2123343/e 10/e 901756/e 54/e 15/i 446/k 195012",
+      "replacements": [
+        ["For some reason, you decide to place your hand in your pocket...", "ஏதோ ஒரு காரணத்தால் உங்கள் கையைப் பைக்குள் வைக்க முடிவெடுக்கிறீர்கள்..."],
+        ["You touch the rabbit's foot, and feel a sense of relief...", "முயலின் பாதத்தைத் தொட்டதும் நிம்மதி ஏற்படுகிறது..."],
+        ["Hi!", "வணக்கம்!"],
+        ["Hey there!", "வணக்கம்!"],
+        ["Look who it is!", "யார் வந்திருக்கிறார் என்று பாருங்கள்!"],
+        ["We were just gossiping about Mayor Lewis and Marnie...$h", "மேயர் லூயிஸையும் மார்னியையும் பற்றிப் பேசிக்கொண்டிருந்தோம்...$h"],
+        ["Personally, I don't think there's anything fishy going on between them...", "தனிப்பட்ட முறையில், அவர்களுக்கிடையே சந்தேகமான எதுவும் நடப்பதாக நான் நினைக்கவில்லை..."],
+        ["Hah! Were you born yesterday?$h", "ஹா! நீ நேற்று பிறந்தாயா?$h"],
+        ["You spent a short while with the group.", "அந்தக் குழுவுடன் சிறிது நேரம் செலவிட்டீர்கள்."],
+        ["It was an uneventful gathering!", "எந்தச் சம்பவமும் இல்லாத சந்திப்பாக இருந்தது!"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "195012/f Haley 2500/f Emily 2500/f Penny 2500/f Abigail 2500/f Leah 2500/f Maru 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 38/e 2123343/e 10/e 901756/e 54/e 15/k 195019",
+      "replacements": [
+        ["Not so fast!", "அவ்வளவு சீக்கிரம் வேண்டாம்!"],
+        ["Hold it!", "நில்!"],
+        ["Stop!", "நிறுத்துங்கள்!"],
+        ["Never thought you'd find all your 'girlfriends' in one room, huh @?$a", "உங்கள் 'காதலிகள்' அனைவரையும் ஒரே அறையில் பார்ப்பீர்கள் என்று நினைக்கவில்லை, இல்லையா @?$a"],
+        ["I... I thought you were different than other men...$s^You tricked all of us into thinking we loved you... You're horrible...$a", "நான்... மற்ற ஆண்களைவிட நீங்கள் வேறுபட்டவர் என்று நினைத்தேன்...$s^நாங்கள் உங்களைக் காதலிப்பதாக நினைக்கும்படி எங்கள் அனைவரையும் ஏமாற்றிவிட்டீர்கள்... நீங்கள் மோசமானவர்...$a"],
+        ["How could you do this to us, @?$s", "எங்களுக்கு எப்படி இப்படிச் செய்ய முடிந்தது, @?$s"],
+        ["You think you're real smooth, don't you? Thought you'd sample the whole 'buffet', huh? What a sleeze...$a", "உங்களைப் பெரிய கெட்டிக்காரர் என்று நினைக்கிறீர்கள், இல்லையா? மொத்த 'விருந்தையும்' சுவைத்துப் பார்க்கலாம் என்று நினைத்தீர்களா? என்ன ஒரு இழிபிறவி...$a"],
+        ["Th... That night in the tent... you whispered such sweet things to me in the dark...$s#$b#Now I have to face each day knowing it was all a lie.$s", "அ... அன்று இரவு கூடாரத்தில்... இருளில் என்னிடம் எவ்வளவு இனிமையாகப் பேசினீர்கள்...$s#$b#அதெல்லாம் பொய் என்பதை அறிந்தபடி இனி ஒவ்வொரு நாளையும் எதிர்கொள்ள வேண்டும்.$s"],
+        ["Well, us women stick together! And we're not going to put up with this!$a^Well, we're not going to put up with your abuse any longer!$a", "பெண்களான நாங்கள் ஒன்றாக நிற்போம்! இதை இனியும் பொறுத்துக்கொள்ள மாட்டோம்!$a^உங்கள் கொடுமையை இனியும் பொறுத்துக்கொள்ள மாட்டோம்!$a"],
+        ["That's right!", "அது சரி!"],
+        ["Well? What do you have to say for yourself?$a", "சரி? உங்களைப் பற்றி என்ன சொல்லப் போகிறீர்கள்?$a"],
+        ["#I'm sorry... what I did was wrong.#Ladies, calm down! I can explain...", "#மன்னியுங்கள்... நான் செய்தது தவறு.#பெண்களே, அமைதியாக இருங்கள்! என்னால் விளக்க முடியும்..."],
+        ["Hmmph...", "ஹ்ம்ஃப்..."],
+        ["Nice try, but that's not going to cut it...$u", "நல்ல முயற்சி, ஆனால் அது போதாது...$u"],
+        ["...so we've come to a decision... isn't that right, girls?$u", "...அதனால் நாங்கள் ஒரு முடிவுக்கு வந்திருக்கிறோம்... சரிதானே, பெண்களே?$u"],
+        ["...yes.$s", "...ஆம்.$s"],
+        ["Absolutely.$a", "நிச்சயமாக.$a"],
+        ["We're all gonna give you the cold shoulder!$a", "நாங்கள் எல்லோரும் உங்களைப் புறக்கணிக்கப் போகிறோம்!$a"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "choseToExplain",
+      "replacements": [
+        ["I doubt it...", "எனக்கு நம்பிக்கை இல்லை..."],
+        ["#I thought we were just friends! I didn't know it was so serious!#Pierre pressured me! He wanted to sell more bouquets!#Ladies, this is completely normal! It's just a lifestyle choice...", "#நாம் நண்பர்கள் மட்டும்தான் என்று நினைத்தேன்! இது இவ்வளவு தீவிரமானது என்று தெரியாது!#பியர் என்னை வற்புறுத்தினார்! இன்னும் அதிகப் பூங்கொத்துகளை விற்க விரும்பினார்!#பெண்களே, இது முற்றிலும் இயல்பானது! இது ஒரு வாழ்க்கை முறைத் தேர்வு மட்டும்தான்..."],
+        ["Liar!", "பொய்யர்!"],
+        ["Yeah, right!", "ஆமாம், நம்பிவிட்டோம்!"],
+        ["Do you really expect us to believe that? You're just digging yourself into a deeper hole...$a", "அதை நாங்கள் நம்புவோம் என்று உண்மையாகவே எதிர்பார்க்கிறீர்களா? உங்களை இன்னும் ஆழமான குழிக்குள் தள்ளிக்கொள்கிறீர்கள்...$a"],
+        ["...I think we've come to a decision... isn't that right, girls?$u", "...நாங்கள் ஒரு முடிவுக்கு வந்திருக்கிறோம்... சரிதானே, பெண்களே?$u"],
+        ["...yes.$s", "...ஆம்.$s"],
+        ["Absolutely.$a", "நிச்சயமாக.$a"],
+        ["We're all gonna give you the cold shoulder!$a", "நாங்கள் எல்லோரும் உங்களைப் புறக்கணிக்கப் போகிறோம்!$a"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "lifestyleChoice",
+      "replacements": [
+        ["Hmmph! I don't know what's considered 'normal' in Zuzu City, but I'm definitely not okay with this arrangement!$a", "ஹ்ம்ஃப்! சூசூ நகரத்தில் எது 'இயல்பானது' என்று கருதப்படுகிறது எனக்குத் தெரியாது, ஆனால் இந்த ஏற்பாட்டை நிச்சயமாக ஏற்க முடியாது!$a"],
+        ["It's not a 'choice' if none of us even know about it!$a", "எங்களில் யாருக்குமே அதைப் பற்றித் தெரியாவிட்டால் அது ஒரு 'தேர்வு' அல்ல!$a"],
+        ["You can't weasel your way out of this one, @.$a", "இதிலிருந்து நழுவித் தப்பிக்க முடியாது, @.$a"],
+        ["...I think we've come to a decision... isn't that right, girls?$u", "...நாங்கள் ஒரு முடிவுக்கு வந்திருக்கிறோம்... சரிதானே, பெண்களே?$u"],
+        ["...yes.$s", "...ஆம்.$s"],
+        ["Absolutely.$a", "நிச்சயமாக.$a"],
+        ["We're all gonna give you the cold shoulder!$a", "நாங்கள் எல்லோரும் உங்களைப் புறக்கணிக்கப் போகிறோம்!$a"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "150938/n emilyStones",
+      "replacements": [
+        ["Great... everyone has their stone.#$b#Now, close your eyes, and take slow, deep breaths. Focus on your lungs.", "அருமை... எல்லோரிடமும் அவரவர் கல் இருக்கிறது.#$b#இப்போது கண்களை மூடி, மெதுவாக ஆழமாக மூச்சை இழுங்கள். உங்கள் நுரையீரலில் கவனம் செலுத்துங்கள்."],
+        ["Visualize the pure energy flowing into your body with every breath.#$b#And when you exhale, feel all the tension and negative energy flowing out, leaving you more and more relaxed with every breath.", "ஒவ்வொரு மூச்சுடனும் தூய ஆற்றல் உங்கள் உடலுக்குள் பாய்வதாகக் கற்பனை செய்யுங்கள்.#$b#மூச்சை வெளியே விடும்போது, பதற்றமும் எதிர்மறை ஆற்றலும் வெளியேறி ஒவ்வொரு மூச்சிலும் இன்னும் அதிகமாக ஓய்வடைவதை உணருங்கள்."],
+        ["Now, open your heart to the vibrational frequency of your stone. Do you feel anything?", "இப்போது உங்கள் கல்லின் அதிர்வு அலைவரிசைக்கு உங்கள் இதயத்தைத் திறந்துவிடுங்கள். ஏதாவது உணர்கிறீர்களா?"],
+        ["Nope.", "இல்லை."],
+        ["I do!", "நான் உணர்கிறேன்!"],
+        ["Relaxed", "மன அமைதி"],
+        ["Looks like the gemstones were put to good use...", "ரத்தினக் கற்கள் நன்றாகப் பயன்படுத்தப்பட்டதுபோல் தெரிகிறது..."]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "15/f Haley 2500/p Haley",
+      "replacements": [
+        ["Come in! Just make sure to close the door quickly behind you!", "உள்ளே வாருங்கள்! உங்களுக்குப் பின்னால் கதவை விரைவாக மூடிவிடுங்கள்!"],
+        ["@, you're here!", "@, வந்துவிட்டீர்கள்!"],
+        ["Welcome to my brand new dark room!$h", "என் புத்தம்புதிய இருட்டறைக்கு வரவேற்கிறேன்!$h"],
+        ["$q -1 null#So... what do you think?#$r -1 10 Event_darkroom1#It looks great!#$r -1 0 Event_darkroom2#What does it do?#$r -1 -50 Event_darkroom3#I've seen better.", "$q -1 null#சரி... என்ன நினைக்கிறீர்கள்?#$r -1 10 Event_darkroom1#அருமையாக இருக்கிறது!#$r -1 0 Event_darkroom2#இது என்ன செய்யும்?#$r -1 -50 Event_darkroom3#இதைவிட நல்லதைப் பார்த்திருக்கிறேன்."],
+        ["Um... so, anyway... what do you want to do?$s", "எர்... எப்படியிருந்தாலும்... என்ன செய்ய விரும்புகிறீர்கள்?$s"],
+        [" #Offer to help decorate the dark room.#Make an excuse and leave.#Try to kiss her.", " #இருட்டறையை அலங்கரிக்க உதவ முன்வா.#ஒரு காரணம் சொல்லிவிட்டுக் கிளம்பு.#அவளை முத்தமிட முயற்சி செய்."],
+        ["Oh, @... I've been waiting so long for you to do that.$11", "ஓ, @... நீங்கள் அப்படிச் செய்வதற்காக நீண்ட காலமாகக் காத்திருந்தேன்.$11"],
+        ["One moment...$l", "ஒரு கணம்...$l"],
+        ["That was nice...$l", "அது நன்றாக இருந்தது...$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/Railroad",
+      "key": "528052/f Harvey 2500/t 900 1700/n harveyBalloon",
+      "replacements": [
+        ["There you are... just in time!$l", "இதோ வந்துவிட்டீர்கள்... சரியான நேரத்தில்!$l"],
+        ["Look, here it comes!$8", "பாருங்கள், இதோ வருகிறது!$8"],
+        ["Marcello's Balloon Rentals at your service!", "மார்செல்லோவின் பலூன் வாடகைச் சேவை உங்களுக்காகக் காத்திருக்கிறது!"],
+        ["Marcello: It's all yours for two hours.", "மார்செல்லோ: இரண்டு மணிநேரத்துக்கு இது முழுவதும் உங்களுடையது."],
+        ["Marcello: Now... I was told there's a saloon somewhere around here?", "மார்செல்லோ: இப்போது... இந்தப் பக்கத்தில் எங்கோ ஒரு மதுக்கூடம் இருப்பதாகச் சொன்னார்களே?"],
+        ["I saw an ad in the paper for these balloon rides and I knew I had to surprise you with one.", "இந்தப் பலூன் சவாரிகளைப் பற்றிய விளம்பரத்தைச் செய்தித்தாளில் பார்த்ததும், இதைக் கொண்டு உங்களை ஆச்சரியப்படுத்த வேண்டும் என்று முடிவெடுத்தேன்."],
+        ["#This looks fun! Let's ride!#...But aren't you afraid of heights?", "#இது மகிழ்ச்சியாக இருக்கும்! சவாரி செய்வோம்!#...ஆனால் உங்களுக்கு உயரம் என்றால் பயமில்லையா?"],
+        ["Okay... you first.$l", "சரி... முதலில் நீங்கள்.$l"],
+        ["We... We're up so high... *gulp*$8", "நாம்... மிகவும் உயரத்தில் இருக்கிறோம்... *விழுங்குதல்*$8"],
+        ["I wanted to impress you with this... but look at me. I'm a trembling coward.$7", "இதைக் கொண்டு உங்களைக் கவர விரும்பினேன்... ஆனால் என்னைப் பாருங்கள். நடுங்கும் கோழையாக இருக்கிறேன்.$7"],
+        ["Well, you've got more than enough courage to make up for me, @... that's... that's part of why I like you.$11", "சரி, என் குறையை ஈடுசெய்யும் அளவுக்கு உங்களிடம் துணிச்சல் இருக்கிறது, @... அதுவும்... உங்களை எனக்குப் பிடிப்பதற்கான ஒரு காரணம்.$11"],
+        ["Okay, I'm going to open my eyes and look down... don't let go of my hand.$4", "சரி, கண்களைத் திறந்து கீழே பார்க்கப் போகிறேன்... என் கையை விட்டுவிடாதீர்கள்.$4"],
+        ["I... I think I can do it now.$8", "என்னால்... இப்போது முடியும் என்று நினைக்கிறேன்.$8"],
+        ["Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!$h", "ஏய், இது நம்ப முடியாததாக இருக்கிறது! நகரச் சதுக்கத்தில் மேயர் லூயிஸ் நிற்பது தெரிகிறது என்று நினைக்கிறேன்!$h"],
+        ["Oh dear... our time's almost up.$s", "ஐயோ... நம் நேரம் கிட்டத்தட்ட முடிந்துவிட்டது.$s"],
+        ["Um... @? We've known each other for a while now and... I... er...$11", "எர்... @? நாம் ஒருவரையொருவர் அறிந்து கொஞ்ச காலம் ஆகிவிட்டது, மேலும்... நான்... எர்...$11"],
+        ["Whoops... Our time was up half an hour ago. We'd better touch down.$l", "அச்சச்சோ... நம் நேரம் அரை மணி நேரத்துக்கு முன்பே முடிந்துவிட்டது. நாம் தரையிறங்குவது நல்லது.$l"],
+        ["I haven't had such a wonderful day for as long as I can remember.$l", "எனக்கு நினைவு தெரிந்த காலத்தில் இவ்வளவு அற்புதமான நாள் இருந்ததே இல்லை.$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/Railroad",
+      "key": "afraid",
+      "replacements": [
+        ["I am... yeah.$s#$b#But I'm determined to not let that stop me from doing what I want... and experiencing this with you.$l#$b#I'll try not to get scared.", "எனக்குப் பயம்தான்... ஆமாம்.$s#$b#ஆனால் நான் விரும்பியதைச் செய்வதையும் உங்களுடன் இதை அனுபவிப்பதையும் அது தடுக்க அனுமதிக்கக்கூடாது என்று உறுதியாக இருக்கிறேன்.$l#$b#பயப்படாமல் இருக்க முயல்கிறேன்."],
+        ["We... We're up so high... *gulp*$8", "நாம்... மிகவும் உயரத்தில் இருக்கிறோம்... *விழுங்குதல்*$8"],
+        ["I wanted to impress you with this... but look at me. I'm a trembling coward.$7", "இதைக் கொண்டு உங்களைக் கவர விரும்பினேன்... ஆனால் என்னைப் பாருங்கள். நடுங்கும் கோழையாக இருக்கிறேன்.$7"],
+        ["Well, you've got more than enough courage to make up for me, @... that's... that's part of why I like you.$11", "சரி, என் குறையை ஈடுசெய்யும் அளவுக்கு உங்களிடம் துணிச்சல் இருக்கிறது, @... அதுவும்... உங்களை எனக்குப் பிடிப்பதற்கான ஒரு காரணம்.$11"],
+        ["Okay, I'm going to open my eyes and look down... don't let go of my hand.$4", "சரி, கண்களைத் திறந்து கீழே பார்க்கப் போகிறேன்... என் கையை விட்டுவிடாதீர்கள்.$4"],
+        ["I... I think I can do it now.$8", "என்னால்... இப்போது முடியும் என்று நினைக்கிறேன்.$8"],
+        ["Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!$h", "ஏய், இது நம்ப முடியாததாக இருக்கிறது! நகரச் சதுக்கத்தில் மேயர் லூயிஸ் நிற்பது தெரிகிறது என்று நினைக்கிறேன்!$h"],
+        ["Oh dear... our time's almost up.$s", "ஐயோ... நம் நேரம் கிட்டத்தட்ட முடிந்துவிட்டது.$s"],
+        ["Um... @? We've known each other for a while now and... I... er...$11", "எர்... @? நாம் ஒருவரையொருவர் அறிந்து கொஞ்ச காலம் ஆகிவிட்டது, மேலும்... நான்... எர்...$11"],
+        ["Whoops... Our time was up half an hour ago. We'd better touch down.$l", "அச்சச்சோ... நம் நேரம் அரை மணி நேரத்துக்கு முன்பே முடிந்துவிட்டது. நாம் தரையிறங்குவது நல்லது.$l"],
+        ["I haven't had such a wonderful day for as long as I can remember.$l", "எனக்கு நினைவு தெரிந்த காலத்தில் இவ்வளவு அற்புதமான நாள் இருந்ததே இல்லை.$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/Railroad",
+      "key": "529952/C",
+      "replacements": [
+        ["Ah... @. I've been waiting for you.", "ஆ... @. உனக்காகக் காத்திருந்தேன்."],
+        ["Have I ever told you I used to be married?", "நான் முன்பு திருமணமானவன் என்று எப்போதாவது சொல்லியிருக்கிறேனா?"],
+        ["Strange, I know... for a man like me. But it's true.", "என்னைப் போன்ற ஒருவனுக்கு அது விசித்திரம்தான்... ஆனால் உண்மை."],
+        ["My wife and I were together for many years, until... until I made a mistake that drove her away.", "என் மனைவியும் நானும் பல ஆண்டுகள் ஒன்றாக இருந்தோம்... நான் செய்த ஒரு தவறு அவளை விரட்டும்வரை."],
+        ["Her anger and envy were so intense that she turned green and began flying around the countryside, cursing everything in her path...", "அவளுடைய கோபமும் பொறாமையும் மிகவும் தீவிரமாக இருந்ததால், அவள் பச்சை நிறமாக மாறி நாட்டுப்புறமெங்கும் பறந்துகொண்டு வழியில் கண்ட அனைத்தையும் சபிக்கத் தொடங்கினாள்..."],
+        ["When I found out, I sealed this passage to her home... fearing that an innocent villager might fall prey to her dark magic.", "அதை அறிந்ததும், அப்பாவிக் கிராமவாசி அவளுடைய இருண்ட மந்திரத்துக்குப் பலியாகிவிடக்கூடும் என்று பயந்து, அவளுடைய வீட்டுக்குச் செல்லும் இந்தப் பாதையை அடைத்தேன்."],
+        ["But now, it must be unsealed... for when we separated, she took my magic ink!#$b#I need that magic ink back!$h#$b#I would do this myself, but I... I can't see her again. That's why I need your help.", "ஆனால் இப்போது அதைத் திறக்க வேண்டும்... நாங்கள் பிரிந்தபோது அவள் என் மந்திர மையை எடுத்துச் சென்றுவிட்டாள்!#$b#அந்த மந்திர மை எனக்குத் திரும்ப வேண்டும்!$h#$b#நானே இதைச் செய்வேன், ஆனால் நான்... அவளை மீண்டும் பார்க்க முடியாது. அதனால்தான் உன் உதவி தேவை."],
+        ["In order to unseal this passage, you'll need a dark talisman. Talk to Krobus, in the sewer... he should know where to find one.", "இந்தப் பாதையைத் திறக்க உனக்கு இருண்ட தாயத்து தேவை. சாக்கடையில் இருக்கும் க்ரோபஸிடம் பேசு... ஒன்றை எங்கே கண்டுபிடிப்பது என்று அவனுக்குத் தெரிந்திருக்க வேண்டும்."],
+        ["I'm counting on you... if you can retrieve my magic ink I promise I'll make it worth your while... Now go!", "உன்னை நம்பியிருக்கிறேன்... என் மந்திர மையை மீட்டுக் கொண்டுவந்தால் உனக்குத் தகுந்த பரிசளிப்பேன் என்று சத்தியம் செய்கிறேன்... இப்போது போ!"]
+      ]
+    },
+    {
+      "target": "Data/Events/IslandNorth",
+      "key": "6497421/e 6497423/f Leo 1000/w sunny/t 600 1800/Hl leoMoved",
+      "replacements": [
+        ["Sorry...$u", "மன்னியுங்கள்...$u"],
+        ["It's hard to remember to talk... normally...$s", "இயல்பாகப் பேச வேண்டும் என்பதை... நினைவில் வைப்பது கடினம்...$s"],
+        ["You think I'm weird, don't you?$s", "நான் வித்தியாசமானவன் என்று நினைக்கிறீர்கள், இல்லையா?$s"],
+        ["#Not at all#A little, but I'm used to it#(Squawk loudly)", "#கொஞ்சமும் இல்லை#கொஞ்சம், ஆனால் பழகிவிட்டேன்#(சத்தமாகக் கீச்சிடு)"],
+        ["Thanks for saying that.", "அப்படிச் சொன்னதற்கு நன்றி."],
+        ["Thanks, I've gotten used to you too!$h", "நன்றி, நானும் உங்களுக்குப் பழகிவிட்டேன்!$h"],
+        ["Hehe... You're getting pretty good at that!$h", "ஹேஹே... அதில் மிகவும் நன்றாகத் தேர்ச்சி பெற்றுவருகிறீர்கள்!$h"],
+        ["Sometimes I wonder how different my life would be if I had never washed up on this island...$s", "இந்தத் தீவில் நான் ஒருபோதும் கரையொதுங்காமல் இருந்திருந்தால் என் வாழ்க்கை எவ்வளவு வேறுபட்டிருக்கும் என்று சில நேரங்களில் யோசிப்பேன்...$s"],
+        ["Back home, I didn't really care about birds. I never thought to listen to what they might be saying.$s", "என் ஊரில் பறவைகளைப் பற்றி உண்மையில் அக்கறை கொண்டதில்லை. அவை என்ன சொல்கின்றன என்று கேட்க நினைத்ததே இல்லை.$s"],
+        ["Though I guess that's normal for... normal kids.$s", "ஆனால் அது... இயல்பான குழந்தைகளுக்கு இயல்புதான் என்று நினைக்கிறேன்.$s"],
+        ["I wonder what... normal kids would have to say about me...$s", "இயல்பான குழந்தைகள்... என்னைப் பற்றி என்ன சொல்வார்கள் என்று யோசிக்கிறேன்...$s"],
+        ["Do you think I could ever be a normal kid again?$s", "என்னால் எப்போதாவது மீண்டும் இயல்பான குழந்தையாக இருக்க முடியும் என்று நினைக்கிறீர்களா?$s"],
+        ["#Yes#No#Maybe...", "#ஆம்#இல்லை#ஒருவேளை..."],
+        ["Hmmm... I guess you're right.$u", "ஹ்ம்ம்... நீங்கள் சொல்வது சரி என்று நினைக்கிறேன்.$u"],
+        ["Though living on this island has given me a lot of experiences normal kids would never have.$h", "ஆனால் இந்தத் தீவில் வாழ்ந்ததால் இயல்பான குழந்தைகளுக்கு ஒருபோதும் கிடைக்காத பல அனுபவங்கள் எனக்குக் கிடைத்துள்ளன.$h"],
+        ["If it weren't for the parrots... who knows what would have happened to me.", "கிளிகள் இல்லாவிட்டால்... எனக்கு என்ன நடந்திருக்கும் என்று யாருக்குத் தெரியும்."],
+        ["I'm happy I met them. I'll always consider them to be my family, even if that makes me a little strange.$h", "அவற்றைச் சந்தித்ததில் மகிழ்ச்சி. அதனால் நான் கொஞ்சம் வித்தியாசமானவனாகத் தெரிந்தாலும், அவற்றை எப்போதும் என் குடும்பமாகவே கருதுவேன்.$h"],
+        ["Anyways, thanks for talking to me, @.", "எப்படியிருந்தாலும், என்னுடன் பேசியதற்கு நன்றி, @."],
+        ["Maybe some day, you can be a part of our family too, hehe.$h", "ஒருவேளை ஒருநாள் நீங்களும் எங்கள் குடும்பத்தில் ஒருவராகலாம், ஹேஹே.$h"],
+        ["Here, let me teach you how to say \\\"Let's play\\\" in parrot talk!", "இதோ, கிளி மொழியில் \\\"விளையாடலாம்\\\" என்று எப்படிச் சொல்வது என்று கற்றுத்தருகிறேன்!"]
+      ]
+    }
+  ]
+}

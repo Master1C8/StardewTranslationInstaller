@@ -1,0 +1,219 @@
+{
+  "id": "407-beach-and-saloon-events-a",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/Beach",
+      "key": "13/f Haley 1500/z winter/t 1000 1600",
+      "replacements": [
+        ["@! Come here, quick!$s", "@! சீக்கிரம் இங்கே வாருங்கள்!$s"],
+        ["My bracelet is gone! I know I had it on when I got here... $s#$b#But now it's gone and I can't find it anywhere...$s", "என் காப்பு காணாமல் போய்விட்டது! இங்கே வந்தபோது அதை அணிந்திருந்தேன் என்று தெரியும்... $s#$b#ஆனால் இப்போது காணவில்லை, எங்கேயும் கண்டுபிடிக்க முடியவில்லை...$s"],
+        ["$q 48 null#I'll never find another one like it...$s#$r 48 -30 Event_beach1#Relax, I'll just buy you a new one!#$r 48 50 Event_beach2#I'm really sorry...", "$q 48 null#அதைப் போன்ற இன்னொன்று ஒருபோதும் கிடைக்காது...$s#$r 48 -30 Event_beach1#அமைதியாக இருங்கள், புதிதாக ஒன்று வாங்கித் தருகிறேன்!#$r 48 50 Event_beach2#மிகவும் வருந்துகிறேன்..."],
+        ["Sorry, Great-Grandma. I lost your precious bracelet. Please forgive me.$s", "மன்னித்துவிடுங்கள், கொள்ளுப் பாட்டி. உங்கள் அருமையான காப்பைத் தொலைத்துவிட்டேன். என்னை மன்னித்துவிடுங்கள்.$s"],
+        ["Could she have dropped it nearby?", "அவள் அதை அருகிலேயே தவறவிட்டிருக்க முடியுமா?"],
+        ["Is that...?$8", "அது...?$8"],
+        ["You found it!$h", "அதைக் கண்டுபிடித்துவிட்டீர்கள்!$h"],
+        ["Thank you so much, @. You're a lifesaver.", "மிக்க நன்றி, @. என் உயிரைக் காப்பாற்றிவிட்டீர்கள்."],
+        ["I won't forget what you did for me here.$l", "இங்கே எனக்காக நீங்கள் செய்ததை மறக்கமாட்டேன்.$l"],
+        ["I really owe you one, @.", "உங்களுக்கு நான் மிகவும் கடன்பட்டிருக்கிறேன், @."]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "739330/t 600 1710/*n spring_2_1",
+      "replacements": [
+        ["Ahoy there, son.$u^Ahoy there, miss.$u#$b#Heard there was a newcomer in town... Good to finally meet ya.$u", "ஆஹோய், மகனே.$u^ஆஹோய், பெண்ணே.$u#$b#நகரத்துக்குப் புதிதாக ஒருவர் வந்திருப்பதாகக் கேள்விப்பட்டேன்... இறுதியாக உங்களைச் சந்தித்ததில் மகிழ்ச்சி.$u"],
+        ["Ah... I'm still tryin' to unwind from a month out on the salty seas...$h#$b#It was a big haul! I sold a lot of good fish.#$b#Finally saved enough to buy me a new rod.$h", "ஆ... உப்புக் கடலில் ஒரு மாதம் இருந்த களைப்பிலிருந்து இன்னும் மீள முயற்சி செய்கிறேன்...$h#$b#பெரிய அளவில் மீன் கிடைத்தது! நிறைய நல்ல மீன்களை விற்றேன்.#$b#இறுதியாகப் புதிய தூண்டில் வாங்கப் போதுமான பணம் சேமித்துவிட்டேன்.$h"],
+        ["Here, I want you to have my old fishing rod.$h#$b#It's important to me that the art o' fishing stays alive. And hey, maybe you'll buy somethin' from the shop once in a while.$h", "இதோ, என் பழைய மீன்பிடித் தூண்டிலை நீங்கள் வைத்துக்கொள்ள வேண்டும்.$h#$b#மீன்பிடிக் கலை தொடர்ந்து வாழ்வது எனக்கு முக்கியம். அவ்வப்போது கடையிலிருந்து ஏதாவது வாங்கவும் கூடும்.$h"],
+        ["There's good water here in the valley. All kinds o' fish.", "இந்தப் பள்ளத்தாக்கில் நல்ல நீர்நிலைகள் உள்ளன. எல்லா வகை மீன்களும் இருக்கின்றன."],
+        ["Oh yeah. My shop's back open now, so come by if you need supplies.$h#$b#I'll also buy anything you catch.#$b#'If it smells, it sells'. Heh heh. That's what my ol' Pappy used to say, anyway.$h", "ஓ ஆமாம். என் கடை மீண்டும் திறந்துவிட்டது; பொருட்கள் தேவைப்பட்டால் வாருங்கள்.$h#$b#நீங்கள் பிடிக்கும் எதையும் வாங்கிக்கொள்வேன்.#$b#'மணம் அடித்தால் விற்பனையாகும்'. ஹேஹே. எப்படியிருந்தாலும் என் வயதான அப்பா அப்படித்தான் சொல்வார்.$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "3131209/n willyBugWadCutscene",
+      "replacements": [
+        ["Hehe... they love it... Look at 'em go!$h", "ஹேஹே... அவற்றுக்கு மிகவும் பிடித்திருக்கிறது... அவை போவதைப் பாருங்கள்!$h"],
+        ["Ahoy!", "ஆஹோய்!"],
+        ["I was just thinkin' of you, lad.^I was just thinkin' of you, miss.#$b#This bug meat you found is perfect!#$b#Hehe... When I said 'fresh', I didn't expect it to still be wrigglin'!#$b#But I'm not complaining! The fish love it...  Hehehe...$h", "உங்களைப் பற்றித்தான் நினைத்துக்கொண்டிருந்தேன், இளைஞரே.^உங்களைப் பற்றித்தான் நினைத்துக்கொண்டிருந்தேன், பெண்ணே.#$b#நீங்கள் கண்டுபிடித்த இந்தப் பூச்சி இறைச்சி கச்சிதமாக இருக்கிறது!#$b#ஹேஹே... 'புதியது' என்று சொன்னபோது, இன்னும் நெளிந்துகொண்டிருக்கும் என்று எதிர்பார்க்கவில்லை!#$b#ஆனால் நான் குறைசொல்லவில்லை! மீன்களுக்கு மிகவும் பிடித்திருக்கிறது... ஹேஹேஹே...$h"],
+        ["As a way of saying 'thanks', I wanted to teach you an old fisherman's secret... My ol' Pappy taught me this on a fishing trip many years ago.", "'நன்றி' சொல்வதற்காக ஒரு பழைய மீனவரின் ரகசியத்தை உங்களுக்குக் கற்றுத்தர விரும்பினேன்... பல ஆண்டுகளுக்கு முன் ஒரு மீன்பிடிப் பயணத்தில் என் வயதான அப்பா இதை எனக்குக் கற்றுத்தந்தார்."],
+        ["Learned how to craft 'Quality Bobber'", "'தரமான மிதவை' உருவாக்கக் கற்றுக்கொண்டீர்கள்"],
+        ["Using that bobber will attract higher quality fish.#$b#That means more money in yer pocket, ${lad^lass}$. Hehe...$h", "அந்த மிதவையைப் பயன்படுத்தினால் அதிகத் தரமான மீன்கள் ஈர்க்கப்படும்.#$b#அதனால் உங்கள் பையில் அதிகப் பணம் கிடைக்கும், ${lad^lass}$. ஹேஹே...$h"],
+        ["Got one!", "ஒன்று சிக்கியது!"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "arrogantJosh",
+      "replacements": [
+        ["Hmmph... I think someone's a little jealous.$a", "ஹ்ம்ஃப்... யாருக்கோ கொஞ்சம் பொறாமை என்று நினைக்கிறேன்.$a"],
+        ["I'm out of here.$a", "நான் கிளம்புகிறேன்.$a"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "NoToElliott",
+      "replacements": [
+        ["I see.$7", "புரிகிறது.$7"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "20/f Alex 500/z winter/p Alex/w sunny",
+      "replacements": [
+        ["Oh, hi.", "ஓ, வணக்கம்."],
+        ["Um, it's @, right?", "எர், நீங்கள் @, சரிதானே?"],
+        ["I'm just enjoying this great weather, @.", "இந்த அருமையான வானிலையை ரசித்துக்கொண்டிருக்கிறேன், @."],
+        ["Hmm...$u#$b#Hey, go long!$h", "ஹ்ம்...$u#$b#ஏய், தூரமாக ஓடுங்கள்!$h"],
+        ["Heh... Nice try.", "ஹே... நல்ல முயற்சி."],
+        ["I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind.#$b#I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!", "ஸ்டார்டியூ பள்ளத்தாக்கிலிருந்து வரும் முதல் தொழில்முறை கிரிட்பால் வீரனாகப் போகிறேன்... அதில் எனக்குச் சிறிதும் சந்தேகமில்லை.#$b#என் பள்ளி அணியை ஏற்கெனவே பிராந்திய இறுதிச்சுற்றுக்கு வழிநடத்தியிருக்கிறேன்... இப்போது சூசூ சிட்டி டன்னலர்ஸ் அணிப் பட்டியலில் என் இடத்தைப் பெறப் பயிற்சி செய்து வலிமையாகிக்கொண்டிருக்கிறேன். பொறுத்திருந்து பாருங்கள்!"],
+        ["#I believe in you!#Wow, you're really arrogant.", "#உங்கள் மீது நம்பிக்கை இருக்கிறது!#ஆஹா, நீங்கள் மிகவும் ஆணவமாக இருக்கிறீர்கள்."],
+        ["Thanks, @. I'll remember that.", "நன்றி, @. அதை நினைவில் வைத்துக்கொள்வேன்."],
+        ["Hey, that was fun, huh?", "ஏய், அது மகிழ்ச்சியாக இருந்தது, இல்லையா?"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "288847/f Alex 2000/p Alex/w sunny/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest",
+      "replacements": [
+        ["*sniff*...$s", "*மூக்கை உறிஞ்சுதல்*...$s"],
+        ["Oh... @. You saw me crying.$s", "ஓ... @. நான் அழுவதைப் பார்த்துவிட்டீர்கள்.$s"],
+        ["It was today, twelve years ago... that my Mom died.$9", "பன்னிரண்டு ஆண்டுகளுக்கு முன் இதே நாளில்தான்... என் அம்மா இறந்தார்.$9"],
+        ["I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard.$9#$b#She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever.$9", "அவரை இன்னும் நன்றாக நினைவிருக்கிறது... மதிய உணவுக்கு உப்பிட்ட முள்ளங்கி ரொட்டிகள் செய்வார்... பின்புறத் தோட்டத்தில் என்னுடன் கிரிட்பால் வீசி விளையாடுவார்.$9#$b#என்னை நன்றாகப் பார்த்துக்கொண்டார்... உண்மையாக 'நன்றி' சொல்லும் அளவுக்கு எனக்கு வயதாகவில்லை. இப்போது அவர் என்றென்றும் போய்விட்டார்.$9"],
+        ["This is the only keepsake I have left... her secret music box.$s", "என்னிடம் எஞ்சியிருக்கும் ஒரே நினைவுப்பொருள் இது... அவருடைய ரகசிய இசைப்பெட்டி.$s"],
+        ["$q -1 null#So... What are you thinking right now, @?$9#$r -1 0 event_box1#Honor your mother's memory by always doing your best.#$r -1 0 event_box2#You shouldn't dwell in the past.#$r -1 0 event_box3#I'll always be here for you if you get lonely.#$r -1 0 event_box4#Get over it. Life is hard for everyone.", "$q -1 null#சரி... இப்போது என்ன நினைக்கிறீர்கள், @?$9#$r -1 0 event_box1#எப்போதும் உங்களால் முடிந்ததைச் செய்து உங்கள் அம்மாவின் நினைவைப் போற்றுங்கள்.#$r -1 0 event_box2#கடந்த காலத்திலேயே மூழ்கியிருக்கக்கூடாது.#$r -1 0 event_box3#தனிமையாக உணர்ந்தால் நான் எப்போதும் உங்களுக்காக இருப்பேன்.#$r -1 0 event_box4#அதை விட்டுவிடுங்கள். வாழ்க்கை எல்லோருக்கும் கடினம்தான்."],
+        ["Well, there's no sense sitting around sniveling... let's head back to town.$9", "சரி, இங்கே உட்கார்ந்து அழுதுகொண்டிருப்பதில் பயனில்லை... நகரத்துக்குத் திரும்புவோம்.$9"],
+        ["Um... @?$9", "எர்... @?$9"],
+        ["Don't tell anyone I was crying. Okay?$7", "நான் அழுததை யாரிடமும் சொல்லாதீர்கள். சரியா?$7"],
+        ["Hey!$7", "ஏய்!$7"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "29/f Sebastian 2000/t 1200 2300/w rainy",
+      "replacements": [
+        ["Hey. I'm surprised to find you out here in the rain.", "ஏய். மழையில் நீங்கள் இங்கே இருப்பது ஆச்சரியமாக இருக்கிறது."],
+        ["Look at those dark clouds looming over the horizon...", "அடிவானத்துக்கு மேலே சூழ்ந்திருக்கும் அந்த இருண்ட மேகங்களைப் பாருங்கள்..."],
+        ["I hope they come this way.", "அவை இந்தப் பக்கம் வரும் என்று நம்புகிறேன்."],
+        ["I like this weather because it makes everyone disappear... you know?#$b#Being around people makes me feel anxious.$s", "இந்த வானிலை எல்லோரையும் மறையச் செய்வதால் எனக்குப் பிடிக்கும்... தெரியுமா?#$b#மக்களுடன் இருப்பது எனக்குப் பதற்றத்தை ஏற்படுத்துகிறது.$s"],
+        ["I don't feel that way around you, though.$7", "ஆனால் உங்களுடன் இருக்கும்போது அப்படி உணர்வதில்லை.$7"],
+        ["We're getting soaked...", "நாம் முழுவதும் நனைந்துகொண்டிருக்கிறோம்..."],
+        ["Here... There's room for two.$7", "இதோ... இருவருக்கும் இடம் இருக்கிறது.$7"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest",
+      "replacements": [
+        ["Hey.", "ஏய்."],
+        ["Look... I fixed up that old rowboat that's been sitting by my house. Pretty nice, huh?", "பாருங்கள்... என் வீட்டருகே கிடந்த அந்தப் பழைய துடுப்புப் படகைச் சரிசெய்தேன். அழகாக இருக்கிறது, இல்லையா?"],
+        ["@... Would you do me the honor of joining me for her maiden voyage?$l", "@... அதன் முதல் பயணத்தில் என்னுடன் சேர்ந்து என்னைக் கௌரவிப்பீர்களா?$l"],
+        ["Get in the boat?#Yes#No", "படகில் ஏற வேண்டுமா?#ஆம்#இல்லை"],
+        ["So my book's been out for a while now... It's not a best-seller or anything, but it's been getting some good reviews from the critics.#$b#And I really couldn't have finished it without your moral support.$l", "என் புத்தகம் வெளியாகிக் கொஞ்ச காலம் ஆகிவிட்டது... அது அதிகம் விற்கும் புத்தகம் அல்ல, ஆனால் விமர்சகர்களிடமிருந்து சில நல்ல மதிப்புரைகள் கிடைக்கின்றன.#$b#உங்கள் மன ஆதரவின்றி அதை என்னால் முடித்திருக்கவே முடியாது.$l"],
+        ["Actually, that's not true at all. I would've finished it either way.$h#$b#But I am grateful that you believed in me... in my vision. And, well...", "உண்மையில் அது உண்மையே இல்லை. எப்படியிருந்தாலும் அதை முடித்திருப்பேன்.$h#$b#ஆனால் என் மீதும் என் பார்வையின் மீதும் நீங்கள் நம்பிக்கை வைத்ததற்கு நன்றியுள்ளவனாக இருக்கிறேன். மேலும்..."],
+        ["Um... @? How do I say this...$8", "எர்... @? இதை எப்படிச் சொல்வது...$8"],
+        ["Well, we've been friends for a while now... But I'm... I'm not sure if I feel that way about you anymore.$l", "சரி, நாம் கொஞ்ச காலமாக நண்பர்களாக இருக்கிறோம்... ஆனால் நான்... இனியும் உங்களைப் பற்றி அப்படி மட்டுமே உணர்கிறேனா என்று தெரியவில்லை.$l"],
+        ["No! I'm not saying I want to cut all ties with you!$8#$b#In fact... quite the opposite.$l", "இல்லை! உங்களுடனான எல்லா உறவையும் துண்டிக்க விரும்புகிறேன் என்று சொல்லவில்லை!$8#$b#உண்மையில்... அதற்கு நேரெதிராக.$l"],
+        ["...Let's see, how do I put this...?$l#$b#For once, I'm at a loss for words...", "...பார்ப்போம், இதை எப்படிச் சொல்வது...?$l#$b#ஒருமுறையாவது, எனக்கு வார்த்தைகள் கிடைக்கவில்லை..."],
+        ["$q -1 null#@? You're trembling...$l#$r -1 50 event_boat1#I'm happy.#$r -1 -50 event_boat2#You're making me very uncomfortable. Stop.", "$q -1 null#@? நீங்கள் நடுங்குகிறீர்கள்...$l#$r -1 50 event_boat1#நான் மகிழ்ச்சியாக இருக்கிறேன்.#$r -1 -50 event_boat2#நீங்கள் என்னை மிகவும் சங்கடப்படுத்துகிறீர்கள். நிறுத்துங்கள்."],
+        ["We'd better head back before the southern wind picks up.$l^Uh oh... The vibration from your body has caught the attention of a Crimsonfish... We'd better get out of here.$l", "தெற்குக் காற்று வேகமெடுக்கும் முன் திரும்புவது நல்லது.$l^அச்சச்சோ... உங்கள் உடலின் அதிர்வு ஒரு கிரிம்சன்ஃபிஷின் கவனத்தை ஈர்த்துவிட்டது... நாம் இங்கிருந்து கிளம்புவது நல்லது.$l"],
+        ["Look at the valley from here... it finally looks like 'Home'.", "இங்கிருந்து பள்ளத்தாக்கைப் பாருங்கள்... இறுதியாக அது 'வீடு' போலத் தெரிகிறது."],
+        ["*sigh*... What a day...$l", "*பெருமூச்சு*... என்ன ஒரு நாள்...$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "733330/f Sam 750/w sunny/t 700 1500/z winter/y 1",
+      "replacements": [
+        ["Hello @. Nice day, isn't it?", "வணக்கம் @. நல்ல நாள், இல்லையா?"],
+        ["I'm just keeping an eye on my little brother. It's good for him to get some fresh air on a day like this.", "என் தம்பியைப் பார்த்துக்கொண்டிருக்கிறேன். இப்படிப்பட்ட நாளில் அவனுக்குப் புதிய காற்று கிடைப்பது நல்லது."],
+        ["Our Dad used to take us to the beach on sunny days like this.$h", "இப்படிப்பட்ட வெயில் நாட்களில் அப்பா எங்களைக் கடற்கரைக்கு அழைத்துவருவார்.$h"],
+        ["Sam...?$u", "சாம்...?$u"],
+        ["Is Dad ever going to come home?$s", "அப்பா எப்போதாவது வீட்டுக்குத் திரும்பி வருவாரா?$s"],
+        ["Of course, Vince. Dad's going to come back as soon as he possibly can.$7", "நிச்சயமாக, வின்ஸ். முடிந்தவுடன் அப்பா திரும்பி வந்துவிடுவார்.$7"],
+        ["But I heard some grown-ups saying that... that all of our troops are getting shot to pieces.$s", "ஆனால் சில பெரியவர்கள்... நம் படைவீரர்கள் எல்லோரும் சுட்டுக் கொல்லப்படுகிறார்கள் என்று சொல்வதைக் கேட்டேன்.$s"],
+        ["Don't believe everything you hear!$8", "கேட்பதையெல்லாம் நம்பாதே!$8"],
+        ["Don't you remember how strong Dad is? He'd never let a pathetic Gotoro grunt get him like that! Don't you worry!$a#$b#And always remember that Mom and I are here to play with you if you ever feel lonely.", "அப்பா எவ்வளவு வலிமையானவர் என்று நினைவில்லையா? ஒரு பரிதாபமான கோடோரோ வீரன் அவரை அப்படிக் கொல்ல ஒருபோதும் அனுமதிக்கமாட்டார்! கவலைப்படாதே!$a#$b#உனக்குத் தனிமையாக உணர்ந்தால் அம்மாவும் நானும் உன்னுடன் விளையாட இங்கே இருக்கிறோம் என்பதை எப்போதும் நினைவில் வைத்துக்கொள்."],
+        ["Okay!", "சரி!"],
+        ["To be honest, I have no idea if my old man will come back... We've all read the reports. Our soldiers are falling by the thousands.$s#$b#But what am I going to say to Vincent?$7", "உண்மையைச் சொன்னால், அப்பா திரும்பி வருவாரா என்று எனக்குத் தெரியாது... அறிக்கைகளை நாம் எல்லோரும் படித்திருக்கிறோம். நம் வீரர்கள் ஆயிரக்கணக்கில் வீழ்கிறார்கள்.$s#$b#ஆனால் வின்சென்டிடம் நான் என்ன சொல்வது?$7"],
+        ["#It's best to be honest with kids.#You did the right thing. Kids should have hope.", "#குழந்தைகளிடம் நேர்மையாக இருப்பதே நல்லது.#நீங்கள் சரியானதைச் செய்தீர்கள். குழந்தைகளுக்கு நம்பிக்கை இருக்க வேண்டும்."],
+        ["You think so?$7#$b#Maybe you're right... The world is a cruel place, but kids have to learn that one way or another.$s~Yeah... kids should play and have fun while they still have the chance.", "அப்படி நினைக்கிறீர்களா?$7#$b#ஒருவேளை நீங்கள் சொல்வது சரியாக இருக்கலாம்... உலகம் கொடுமையான இடம், ஆனால் குழந்தைகள் அதை ஏதோ ஒரு வகையில் கற்றுக்கொள்ள வேண்டும்.$s~ஆமாம்... வாய்ப்பு இருக்கும்போதே குழந்தைகள் விளையாடி மகிழ வேண்டும்."],
+        ["Hey did I tell you the band's starting to come together?#$b#Yeah! It turns out Abigail's a pretty good drummer. And Sebastian seemed to really want her in the band...$h", "ஏய், இசைக்குழு உருவாகத் தொடங்கிவிட்டது என்று சொன்னேனா?#$b#ஆமாம்! அபிகெயில் நல்ல மேளக்காரர் என்று தெரிகிறது. செபாஸ்டியனும் அவள் இசைக்குழுவில் இருக்க வேண்டும் என்று மிகவும் விரும்பினான்...$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "711130/t 600 1710/f Willy 1500",
+      "replacements": [
+        ["Ah... it's a good thing you turned up, lad.^Ah... It's a good thing you turned up, miss.#$b#I've got a... a bit of a problem I could use a hand with...", "ஆ... நீங்கள் வந்தது நல்லதாகப் போயிற்று, இளைஞரே.^ஆ... நீங்கள் வந்தது நல்லதாகப் போயிற்று, பெண்ணே.#$b#எனக்கு ஒரு... சிறிய பிரச்சினை இருக்கிறது; உங்கள் உதவி தேவை..."],
+        ["Er... It'd be best if I just showed ya...", "எர்... உங்களுக்கு நேரிலேயே காட்டுவது நல்லது..."],
+        ["Take a deep breath, now.", "இப்போது ஆழமாக மூச்சை இழுங்கள்."],
+        ["As you can see...#$b#And smell... heh...#$b#The old girls 'ran wild' last night... heh...$h#$b#My experiment needs a little work...", "நீங்கள் பார்ப்பதுபோல்...#$b#முகர்வதுபோல்... ஹே...#$b#நேற்று இரவு இந்தக் கிழவிகள் 'கட்டுப்பாடின்றி ஓடினார்கள்'... ஹே...$h#$b#என் பரிசோதனையில் இன்னும் கொஞ்சம் வேலை செய்ய வேண்டும்..."],
+        ["Hooo~... Back at it again, huh Willy?$h", "ஓஓ~... மீண்டும் தொடங்கிவிட்டீர்களா, வில்லி?$h"],
+        ["textAboveHead Willy \"Aye...\"", "textAboveHead Willy \"ஆமாம்...\""],
+        ["They look fresh all right...", "நிச்சயமாகப் புதியதாக இருக்கின்றன..."],
+        ["Aye... These are the finest, meatiest crabs you'll ever set yer eyes on.$h#$b#They be a little too feisty, though...$s", "ஆமாம்... நீங்கள் பார்க்கும் நண்டுகளிலேயே இவைதான் மிகச் சிறந்தவை, அதிக இறைச்சி கொண்டவை.$h#$b#ஆனால் கொஞ்சம் அதிகமாகத் துள்ளுகின்றன...$s"],
+        ["I'll take the whole lot!$h#$b#With a discount for the extra labor, of course...", "எல்லாவற்றையும் வாங்கிக்கொள்கிறேன்!$h#$b#கூடுதல் உழைப்புக்கான தள்ளுபடியுடன், நிச்சயமாக..."],
+        ["Looks like we got 'em all...", "எல்லாவற்றையும் பிடித்துவிட்டோம் போலிருக்கிறது..."],
+        ["Goodbye, me sweet ladies...$s", "போய்வாருங்கள், என் இனிய பெண்களே...$s"],
+        ["Psst... @... Don't tell Willy, but I'll be doing a special on crab cakes at the saloon for the next few days...", "உஷ்... @... வில்லியிடம் சொல்லாதீர்கள்; அடுத்த சில நாட்களுக்கு மதுக்கூடத்தில் நண்டு கேக்குகளுக்கு விசேஷச் சலுகை வழங்கப் போகிறேன்..."]
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "7771191/t 2000 2500/f Krobus 3500/w sunny",
+      "reviewedPreserve": true,
+      "replacements": []
+    },
+    {
+      "target": "Data/Events/Saloon",
+      "key": "40/f Elliott 1000/p Gus/t 1500 2200",
+      "replacements": [
+        ["Hi. I'll take your order in a few moments.", "வணக்கம். சிறிது நேரத்தில் உங்கள் ஆர்டரை எடுத்துக்கொள்கிறேன்."],
+        ["Hello, @! What a pleasant surprise!#$b#I was just stopping in to relax after an eight hour writing session.$h", "வணக்கம், @! என்ன ஒரு இனிய ஆச்சரியம்!#$b#எட்டு மணிநேரம் எழுதிய பிறகு ஓய்வெடுக்க இங்கே வந்தேன்.$h"],
+        ["Bartender! Two of your finest ales, please!^Bartender! Fetch me your finest ale. And bring some wine for the lady!", "மதுக்கடைப் பணியாளரே! உங்களுடைய மிகச் சிறந்த இரண்டு ஏல்கள், தயவுசெய்து!^மதுக்கடைப் பணியாளரே! உங்களுடைய மிகச் சிறந்த ஏலைக் கொண்டுவாருங்கள். அந்தப் பெண்ணுக்குக் கொஞ்சம் வைனும் கொண்டுவாருங்கள்!"],
+        ["There you go, sir.$u", "இதோ, ஐயா.$u"],
+        ["$q 28376 null#Wait. I propose a toast! To...#$r 28376 25 event_toast4#To Pelican Town!#$r 28376 50 event_toast2#To our friendship!#$r 28376 -10 event_toast1#To my good health!#$r 28376 -50 event_toast3#To your doom!", "$q 28376 null#காத்திருங்கள். ஒரு வாழ்த்து முன்மொழிகிறேன்! இதற்காக...#$r 28376 25 event_toast4#பெலிக்கன் நகரத்திற்காக!#$r 28376 50 event_toast2#நம் நட்பிற்காக!#$r 28376 -10 event_toast1#என் நல்ல ஆரோக்கியத்திற்காக!#$r 28376 -50 event_toast3#உங்கள் அழிவிற்காக!"],
+        ["*Hic*... Strong stuff...$h", "*விக்கல்*... வலிமையான பானம்...$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/Saloon",
+      "key": "96/f Gus 1000/f Pam 500/p Gus",
+      "replacements": [
+        ["Oh, hello there, buddy.^Hi, @.", "ஓ, வணக்கம் நண்பரே.^வணக்கம், @."],
+        ["*sigh*... I'm just looking over last month's earnings... and it's not looking very good, @.$s#$b#The worst thing... and I hate to say this because she's my friend... is Pam! She hasn't paid off her tab in weeks!$s#$b#...But I can't ask her to do it. I know she'll get defensive, and I don't want to hurt her feelings.$s", "*பெருமூச்சு*... கடந்த மாத வருவாயைப் பார்த்துக்கொண்டிருக்கிறேன்... நிலைமை அவ்வளவு நன்றாக இல்லை, @.$s#$b#மிக மோசமான விஷயம்... அவள் என் தோழி என்பதால் இதைச் சொல்லவே பிடிக்கவில்லை... பாம் தான்! பல வாரங்களாக அவள் தன் கடனைச் செலுத்தவில்லை!$s#$b#...ஆனால் அதைச் செலுத்தும்படி அவளிடம் கேட்க முடியவில்லை. அவள் தற்காப்பாகப் பேசுவாள் என்று தெரியும்; அவளுடைய மனதைப் புண்படுத்தவும் விரும்பவில்லை.$s"],
+        ["@, you gotta help me!$s", "@, நீங்கள் எனக்கு உதவ வேண்டும்!$s"],
+        ["Hiya!$h#$b#Gus... I'm awful thirsty, if you catch my drift.", "வணக்கம்!$h#$b#கஸ்... எனக்கு பயங்கரத் தாகமாக இருக்கிறது, நான் சொல்வது புரிகிறதா."],
+        ["Er... Well, okay Pam.$s", "எர்... சரி, பாம்.$s"],
+        ["$q 207 null#@, what's going on here?#$r 207 -50 event_credit1#You need to pay your tab right now!#$r 208 15 event_credit2#The saloon isn't doing well, financially", "$q 207 null#@, இங்கே என்ன நடக்கிறது?#$r 207 -50 event_credit1#உங்கள் கடனை இப்போதே செலுத்த வேண்டும்!#$r 208 15 event_credit2#மதுக்கூடத்தின் நிதிநிலை சரியில்லை"],
+        ["....$u#$b#*sigh* ...Well, I guess I'd better pay off that tab, then.$s", "....$u#$b#*பெருமூச்சு* ...சரி, அப்படியானால் அந்தக் கடனைச் செலுத்திவிடுவது நல்லது.$s"],
+        ["Thanks, Pam!$h", "நன்றி, பாம்!$h"],
+        ["And thank you, @.$u", "உங்களுக்கும் நன்றி, @.$u"],
+        ["Now, let's get you that drink, Pam.$h", "இப்போது உங்களுக்கான பானத்தைக் கொண்டுவருகிறேன், பாம்.$h"],
+        ["Thanks for your help, @. This cash is going to be a big help to the saloon.", "உங்கள் உதவிக்கு நன்றி, @. இந்தப் பணம் மதுக்கூடத்திற்கு மிகவும் உதவியாக இருக்கும்."]
+      ]
+    },
+    {
+      "target": "Data/Events/Saloon",
+      "key": "97/f Clint 750/t 1900 2300/d Tue Wed Thu Fri Sat Sun",
+      "replacements": [
+        ["Hello, @... care to join me?", "வணக்கம், @... என்னுடன் சேர விரும்புகிறீர்களா?"],
+        ["Let me just go ahead and tell you what's on my mind.$u#$b#I have terrible luck with women, @...*sigh*$s#$b#I'm a nice guy if you get to know me, I swear!$u", "என் மனதில் இருப்பதை நேரடியாகச் சொல்லிவிடுகிறேன்.$u#$b#பெண்கள் விஷயத்தில் எனக்கு மிகவும் துரதிர்ஷ்டம், @...*பெருமூச்சு*$s#$b#என்னைப் பழகித் தெரிந்துகொண்டால் நான் நல்லவன், சத்தியமாக!$u"],
+        ["The girls all seem to like you, @...^You're a girl, @...", "பெண்கள் எல்லோரும் உங்களை விரும்புவது போலத் தெரிகிறது, @...^நீங்களும் ஒரு பெண், @..."],
+        ["$q 211 null#Got any tips?^What advice can you give me?#$r 211 25 event_advice1#Impress women with your strength and charm#$r 211 25 event_advice1#Act crazy, to keep people guessing#$r 211 0 event_advice2#Just act natural... be yourself#$r 211 25 event_advice1#Treat women the same as men", "$q 211 null#ஏதாவது யோசனை இருக்கிறதா?^எனக்கு என்ன ஆலோசனை தர முடியும்?#$r 211 25 event_advice1#உங்கள் வலிமையாலும் வசீகரத்தாலும் பெண்களைக் கவருங்கள்#$r 211 25 event_advice1#மற்றவர்கள் ஊகித்துக்கொண்டே இருக்கும்படி விநோதமாக நடந்துகொள்ளுங்கள்#$r 211 0 event_advice2#இயல்பாக இருங்கள்... நீங்களாகவே இருங்கள்#$r 211 25 event_advice1#ஆண்களை நடத்துவது போலவே பெண்களையும் நடத்துங்கள்"],
+        ["Hi Clint, what can I get for you tonight?$h", "வணக்கம் கிளின்ட், இன்று இரவு உங்களுக்கு என்ன கொண்டுவரட்டும்?$h"],
+        ["Yes!", "ஆம்!"],
+        ["Er.. I mean, I'll have the Big n' Cheesy. With extra sauce, please.$s#$b#...$u", "எர்... அதாவது, எனக்கு பிக் என் சீஸி வேண்டும். கூடுதல் சாஸுடன், தயவுசெய்து.$s#$b#...$u"],
+        ["Hi @.", "வணக்கம் @."],
+        ["Er... *ahem* Th...Thanks, Emily. For... taking my order.#$b#Um, Emily? I was...*gulp*... I was wondering...$h", "எர்... *தொண்டையைக் கனைத்தல்* ந...நன்றி, எமிலி. என்... ஆர்டரை எடுத்ததற்கு.#$b#ம், எமிலி? நான்...*விழுங்குதல்*... யோசித்துக்கொண்டிருந்தேன்...$h"],
+        ["Yes, Clint?$u", "என்ன, கிளின்ட்?$u"],
+        ["... never mind.$s", "... ஒன்றுமில்லை.$s"],
+        ["Hi, Shane! Here's your beverage.$h", "வணக்கம், ஷேன்! இதோ உங்கள் பானம்.$h"],
+        ["Thanks, Emily!$h#$b#So... How's your shift coming along?", "நன்றி, எமிலி!$h#$b#அப்படியே... உங்கள் பணி நேரம் எப்படி போகிறது?"],
+        ["It's fine! Thanks for asking, Shane!$h#$b#Do you have any new chicken stories for me?", "நன்றாகப் போகிறது! கேட்டதற்கு நன்றி, ஷேன்!$h#$b#எனக்குச் சொல்ல ஏதாவது புதிய கோழிக் கதை இருக்கிறதா?"],
+        ["*sigh*$s#$b#I'm doomed...$s", "*பெருமூச்சு*$s#$b#எனக்கு நம்பிக்கையே இல்லை...$s"]
+      ]
+    }
+  ]
+}

@@ -1,36 +1,38 @@
 import Foundation
-import XCTest
+import Testing
 @testable import StardewTranslationInstaller
 
-final class InstallerCoreTests: XCTestCase {
+@Suite
+struct InstallerCoreTests {
     private struct RequiredValueMissing: Error {}
 
     private func expect(
-        _ condition: @autoclosure () throws -> Bool,
-        file: StaticString = #filePath,
-        line: UInt = #line
+        _ condition: @autoclosure () throws -> Bool
     ) rethrows {
-        XCTAssertTrue(try condition(), file: file, line: line)
+        if try !condition() {
+            Issue.record("Expectation failed")
+        }
     }
 
     private func expect<E: Error>(
         throws expectedType: E.Type,
-        file: StaticString = #filePath,
-        line: UInt = #line,
         _ body: () throws -> Void
     ) {
-        XCTAssertThrowsError(try body(), file: file, line: line) { error in
-            XCTAssertTrue(error is E, "Expected \(expectedType), got \(type(of: error))", file: file, line: line)
+        do {
+            try body()
+            Issue.record("Expected \(expectedType), but no error was thrown")
+        } catch is E {
+            return
+        } catch {
+            Issue.record("Expected \(expectedType), got \(type(of: error))")
         }
     }
 
     private func require<T>(
-        _ value: T?,
-        file: StaticString = #filePath,
-        line: UInt = #line
+        _ value: T?
     ) throws -> T {
         guard let value else {
-            XCTFail("Required value is missing", file: file, line: line)
+            Issue.record("Required value is missing")
             throw RequiredValueMissing()
         }
         return value
@@ -72,16 +74,16 @@ final class InstallerCoreTests: XCTestCase {
             .write(to: payload.appendingPathComponent("content.json"))
     }
 
-    func testLoadsTranslationPackage() throws {
+    @Test func testLoadsTranslationPackage() throws {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival", "ta-vnrevival", "bn-vnrevival", "id-vnrevival"])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales.count == 43)
     }
 
-    func testValidatesCurrentInterfaceAssets() throws {
+    @Test func testValidatesCurrentInterfaceAssets() throws {
         let package = try translationPackage()
         let payload = projectRoot().appendingPathComponent(
             "Sources/StardewTranslationInstaller/Resources/ModPayload"
@@ -97,7 +99,7 @@ final class InstallerCoreTests: XCTestCase {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 11)
+        expect(languageEntries.count == 14)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "pl-vnrevival": ("ButtonPolish", "assets/button.png", "assets/title/TitleButtons.png"),
@@ -110,6 +112,9 @@ final class InstallerCoreTests: XCTestCase {
             "my-vnrevival": ("ButtonBurmese", "assets/button-burmese.png", "assets/title/TitleButtons-burmese.png"),
             "te-vnrevival": ("ButtonTelugu", "assets/button-telugu.png", "assets/title/TitleButtons-telugu.png"),
             "ur-vnrevival": ("ButtonUrdu", "assets/button-urdu.png", "assets/title/TitleButtons-urdu.png"),
+            "ta-vnrevival": ("ButtonTamil", "assets/button-tamil.png", "assets/title/TitleButtons-tamil.png"),
+            "bn-vnrevival": ("ButtonBengali", "assets/button-bengali.png", "assets/title/TitleButtons-bengali.png"),
+            "id-vnrevival": ("ButtonIndonesian", "assets/button-indonesian.png", "assets/title/TitleButtons-indonesian.png"),
         ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
@@ -117,7 +122,7 @@ final class InstallerCoreTests: XCTestCase {
                 ($0["LanguageCode"] as? String) == code
             })
             expect(language["ButtonTexture"] as? String == "Mods/{{ModId}}/\(expected.0)")
-            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival"].contains(code))
+            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival", "ta-vnrevival", "bn-vnrevival"].contains(code))
             if code == "ru-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Russian")
                 expect(language["FontPixelZoom"] as? Int == 3)
@@ -150,6 +155,14 @@ final class InstallerCoreTests: XCTestCase {
                 expect(language["FontFile"] as? String == "Fonts/Urdu")
                 expect(language["FontPixelZoom"] as? Int == 3)
             }
+            if code == "ta-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/Tamil")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
+            if code == "bn-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/Bengali")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
             let button = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
                     && ($0["Target"] as? String) == "Mods/{{ModId}}/\(expected.0)"
@@ -173,6 +186,8 @@ final class InstallerCoreTests: XCTestCase {
             ("my-vnrevival", "burmese"),
             ("te-vnrevival", "telugu"),
             ("ur-vnrevival", "urdu"),
+            ("ta-vnrevival", "tamil"),
+            ("bn-vnrevival", "bengali"),
         ] {
           for target in ["Fonts/SpriteFont1", "Fonts/SmallFont"] {
             let font = try require(changes.first {
@@ -202,6 +217,10 @@ final class InstallerCoreTests: XCTestCase {
             ("Fonts/Telugu_0", "assets/fonts/telugu/Telugu_0.xnb"),
             ("Fonts/Urdu", "assets/fonts/urdu/Urdu.xnb"),
             ("Fonts/Urdu_0", "assets/fonts/urdu/Urdu_0.xnb"),
+            ("Fonts/Tamil", "assets/fonts/tamil/Tamil.xnb"),
+            ("Fonts/Tamil_0", "assets/fonts/tamil/Tamil_0.xnb"),
+            ("Fonts/Bengali", "assets/fonts/bengali/Bengali.xnb"),
+            ("Fonts/Bengali_0", "assets/fonts/bengali/Bengali_0.xnb"),
         ] {
             let font = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
@@ -304,6 +323,32 @@ final class InstallerCoreTests: XCTestCase {
             )
         }
 
+        let tamilFontHashes = [
+            "assets/fonts/tamil/SpriteFont1.xnb": "1d3331c775f0a446ae24255dc1fdc960fd9270aaef811d4af071081d7652a283",
+            "assets/fonts/tamil/SmallFont.xnb": "aaaeee55715ef26754cb95d8c4af92116b43b0611543bd1846e3cc5a28dc3b89",
+            "assets/fonts/tamil/Tamil.xnb": "7e8d5b9170c073bbbb9c81e495915e98f13850008ecc87a7ca7d6646694a23ed",
+            "assets/fonts/tamil/Tamil_0.xnb": "5efcc6cbba126165e6fcf804d81ca3938a3bd656ab2a750989b6e71cb2c6b555",
+        ]
+        for (fontPath, expectedHash) in tamilFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
+        let bengaliFontHashes = [
+            "assets/fonts/bengali/SpriteFont1.xnb": "d72fd378a22b4bce6dae0bce9c0d47af342b53a9dcad489c15120aedb9c448ae",
+            "assets/fonts/bengali/SmallFont.xnb": "5894fc352355e1a23846bcfe7e34c90cf7761ede827dfe50c12f0d1b9ac8c30f",
+            "assets/fonts/bengali/Bengali.xnb": "97f973dc81602ca3c873a5e0d36008f5d5f0d0b9b63b6a418ff3ca32c54615ae",
+            "assets/fonts/bengali/Bengali_0.xnb": "a3e5a2ecd2bfc046d507ea6a597963a006e1a0c7cd3d43194d2f37ffd4223314",
+        ]
+        for (fontPath, expectedHash) in bengaliFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
         func pngDimensions(_ relativePath: String) throws -> (Int, Int) {
             let data = try Data(contentsOf: payload.appendingPathComponent(relativePath))
             expect(data.count >= 24)
@@ -316,6 +361,19 @@ final class InstallerCoreTests: XCTestCase {
             }
             return (integer(at: 16), integer(at: 20))
         }
+
+        let bengaliButtonPath = "assets/button-bengali.png"
+        try expect(try pngDimensions(bengaliButtonPath) == (174, 78))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(bengaliButtonPath))
+                == "3fa4967bfc34093ea267e442a8b2cb9eb08cb7267d6cd0dcc6b4bd53d3031eaa"
+        )
+        let bengaliTitlePath = "assets/title/TitleButtons-bengali.png"
+        try expect(try pngDimensions(bengaliTitlePath) == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(bengaliTitlePath))
+                == "0aca0fe2a79d6f02e7316d64e98995f31eb3a7925abf4c0770640c518f52c6d4"
+        )
 
         let buttonPath = "assets/button-amharic.png"
         let buttonSize = try pngDimensions(buttonPath)
@@ -343,6 +401,19 @@ final class InstallerCoreTests: XCTestCase {
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(swahiliTitlePath))
                 == "60ea1526f085758e190214431e9e82daab01b7e699d8792d4c09b1d493b7bec1"
+        )
+
+        let indonesianButtonPath = "assets/button-indonesian.png"
+        try expect(try pngDimensions(indonesianButtonPath) == (174, 78))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(indonesianButtonPath))
+                == "6e5a4b156c988f2dc7f94fed5c44d31f94604acf65bfd20d3f07fe26e22c0743"
+        )
+        let indonesianTitlePath = "assets/title/TitleButtons-indonesian.png"
+        try expect(try pngDimensions(indonesianTitlePath) == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(indonesianTitlePath))
+                == "03997fa4db85d3e0638a7db5210cf8020bd7aacd658cf00d1ba2112a9c62722a"
         )
 
         try expect(try pngDimensions("assets/button-kannada.png") == (174, 78))
@@ -422,9 +493,22 @@ final class InstallerCoreTests: XCTestCase {
                 of: payload.appendingPathComponent("assets/title/TitleButtons-urdu.png")
             ) == "726e4ab46a89bfd78295316a51becf213a792949be965e4b7fc2ca96edc856b8"
         )
+
+        try expect(try pngDimensions("assets/button-tamil.png") == (174, 78))
+        try expect(try pngDimensions("assets/title/TitleButtons-tamil.png") == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/button-tamil.png")
+            ) == "fc0b131efcd0bdcebbbf81039bdbeab5e8eea5f0b309858b4ce77ec7d0791d0f"
+        )
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/title/TitleButtons-tamil.png")
+            ) == "59109b526623feeaa435d2929e2d30421c455c93de129460ce564f6a9bd95e44"
+        )
     }
 
-    func testInstallsLanguageSwitcher() throws {
+    @Test func testInstallsLanguageSwitcher() throws {
         let fm = FileManager.default
         let source = projectRoot().appendingPathComponent(
             "Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload"
@@ -462,7 +546,7 @@ final class InstallerCoreTests: XCTestCase {
         expect(fm.fileExists(atPath: installed.appendingPathComponent("VNRevival.LanguageSwitcher.dll").path))
     }
 
-    func testValidatesIncludedTranslationFiles() throws {
+    @Test func testValidatesIncludedTranslationFiles() throws {
         let payload = projectRoot().appendingPathComponent(
             "Sources/StardewTranslationInstaller/Resources/ModPayload"
         )
@@ -474,7 +558,7 @@ final class InstallerCoreTests: XCTestCase {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 2_688)
+        expect(includes.count == 3_141)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var malayalamPrivateUseGlyphs = 0
@@ -485,6 +569,10 @@ final class InstallerCoreTests: XCTestCase {
         var rawBurmeseScalars = 0
         var teluguPrivateUseGlyphs = 0
         var rawTeluguScalars = 0
+        var tamilPrivateUseGlyphs = 0
+        var rawTamilScalars = 0
+        var bengaliPrivateUseGlyphs = 0
+        var rawBengaliScalars = 0
 
         for include in includes {
             let relativePath = try require(include["FromFile"] as? String)
@@ -517,6 +605,12 @@ final class InstallerCoreTests: XCTestCase {
                 expectedLanguage = "te-vnrevival"
             } else if relativePath.contains("/urdu/") {
                 expectedLanguage = "ur-vnrevival"
+            } else if relativePath.contains("/tamil/") {
+                expectedLanguage = "ta-vnrevival"
+            } else if relativePath.contains("/bengali/") {
+                expectedLanguage = "bn-vnrevival"
+            } else if relativePath.contains("/indonesian/") {
+                expectedLanguage = "id-vnrevival"
             } else {
                 expectedLanguage = "kn-vnrevival"
             }
@@ -578,6 +672,32 @@ final class InstallerCoreTests: XCTestCase {
                         }
                     }
                 }
+                if expectedLanguage == "ta-vnrevival" {
+                    let entries = try require(change["Entries"] as? [String: String])
+                    for value in entries.values {
+                        for scalar in value.unicodeScalars {
+                            if (0xE000...0xF8FF).contains(scalar.value) {
+                                tamilPrivateUseGlyphs += 1
+                            }
+                            if (0x0B80...0x0BFF).contains(scalar.value) {
+                                rawTamilScalars += 1
+                            }
+                        }
+                    }
+                }
+                if expectedLanguage == "bn-vnrevival" {
+                    let entries = try require(change["Entries"] as? [String: String])
+                    for value in entries.values {
+                        for scalar in value.unicodeScalars {
+                            if (0xE000...0xF8FF).contains(scalar.value) {
+                                bengaliPrivateUseGlyphs += 1
+                            }
+                            if (0x0980...0x09FF).contains(scalar.value) {
+                                rawBengaliScalars += 1
+                            }
+                        }
+                    }
+                }
             }
         }
         expect(malayalamPrivateUseGlyphs > 100_000)
@@ -588,9 +708,13 @@ final class InstallerCoreTests: XCTestCase {
         expect(rawBurmeseScalars == 0)
         expect(teluguPrivateUseGlyphs > 100_000)
         expect(rawTeluguScalars == 0)
+        expect(tamilPrivateUseGlyphs > 100_000)
+        expect(rawTamilScalars == 0)
+        expect(bengaliPrivateUseGlyphs > 100_000)
+        expect(rawBengaliScalars == 0)
     }
 
-    func testComputesChecksum() throws {
+    @Test func testComputesChecksum() throws {
         let file = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         defer { try? FileManager.default.removeItem(at: file) }
         try Data("hello".utf8).write(to: file)
@@ -600,7 +724,7 @@ final class InstallerCoreTests: XCTestCase {
         )
     }
 
-    func testInstallAndRemove() throws {
+    @Test func testInstallAndRemove() throws {
         let fm = FileManager.default
         let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
         defer { try? fm.removeItem(at: temporary) }
@@ -626,7 +750,7 @@ final class InstallerCoreTests: XCTestCase {
         expect(!fm.fileExists(atPath: installation.modDirectory(for: package).path))
     }
 
-    func testProtectsForeignFolder() throws {
+    @Test func testProtectsForeignFolder() throws {
         let fm = FileManager.default
         let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
         defer { try? fm.removeItem(at: temporary) }
@@ -653,7 +777,7 @@ final class InstallerCoreTests: XCTestCase {
         }
     }
 
-    func testMigratesLegacyPackages() throws {
+    @Test func testMigratesLegacyPackages() throws {
         let fm = FileManager.default
         let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
         defer { try? fm.removeItem(at: temporary) }

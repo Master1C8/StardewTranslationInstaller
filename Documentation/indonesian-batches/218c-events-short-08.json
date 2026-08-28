@@ -1,0 +1,208 @@
+[
+  {
+    "target": "Data/Events/SamHouse",
+    "key": "46/f Sam 1000/p Sam",
+    "replacements": [
+      [
+        "Oh, hi @. I was just about to have a snack.",
+        "Oh, hai @. Aku baru saja hendak makan camilan."
+      ],
+      [
+        "Here, let me get something for you.",
+        "Ini, akan kuambilkan sesuatu untukmu."
+      ],
+      [
+        "Oh no... What a mess.$s",
+        "Oh tidak... Berantakan sekali.$s"
+      ],
+      [
+        "What was that sound?",
+        "Suara apa itu?"
+      ],
+      [
+        "*gasp*$s",
+        "*terkesiap*$s"
+      ],
+      [
+        "This is absolutely terrible! What happened?$u",
+        "Ini benar-benar mengerikan! Apa yang terjadi?$u"
+      ],
+      [
+        "$q 80 null#...Tell her, @.$s#$r 80 -10 event_snack1#Sam dropped the snack as he was handing it to me.#$r 80 50 event_snack2#Sam handed me the snack and then I dropped it.#$r 81 -50 event_snack3#Sam dropped it on purpose. He thought it would be funny.",
+        "$q 80 null#...Beri tahu dia, @.$s#$r 80 -10 event_snack1#Sam menjatuhkan camilannya saat menyerahkannya kepadaku.#$r 80 50 event_snack2#Sam menyerahkan camilannya, lalu aku menjatuhkannya.#$r 81 -50 event_snack3#Sam sengaja menjatuhkannya. Dia mengira itu akan lucu."
+      ],
+      [
+        "$p 80#Thanks for telling me the truth, @. It's not such a big deal.|You did WHAT, Sam?! What's gotten into you?!$u",
+        "$p 80#Terima kasih sudah mengatakan yang sebenarnya, @. Ini bukan masalah besar.|Kamu melakukan APA, Sam?! Kenapa kamu?!$u"
+      ],
+      [
+        "I'm sorry about this, mom. I'll clean it up.$s",
+        "Maaf, Bu. Akan kubersihkan.$s"
+      ],
+      [
+        "Thanks, honey.$h",
+        "Terima kasih, Sayang.$h"
+      ],
+      [
+        "$p 81#I'm angry at you. I have no idea why you lied like that.$s|Sorry about what happened earlier.",
+        "$p 81#Aku marah kepadamu. Aku tidak mengerti kenapa kamu berbohong seperti itu.$s|Maaf atas kejadian tadi."
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/ManorHouse",
+    "key": "prizeTicketIntro/n completedFirstBillboardQuest",
+    "replacements": [
+      [
+        "Ah, hello there, @.",
+        "Ah, halo, @."
+      ],
+      [
+        "I was just loading some more prizes into this machine here...",
+        "Aku baru saja mengisi lebih banyak hadiah ke dalam mesin ini..."
+      ],
+      [
+        "It's a new program I've come up with, to help promote a spirit of goodwill among the townsfolk... You included!#$b#It's pretty simple... sometimes, when you help out others in town, you'll receive a 'Prize Ticket'. You can turn them in for rewards.#$b#There's some special stuff in there!$h",
+        "Ini program baru yang kucetuskan untuk menumbuhkan semangat kebaikan di antara warga kota... termasuk dirimu!#$b#Caranya cukup sederhana... terkadang, saat membantu orang lain di kota, kamu akan menerima 'Tiket Hadiah'. Tiket itu bisa ditukarkan dengan hadiah.#$b#Ada beberapa benda istimewa di dalamnya!$h"
+      ],
+      [
+        "My only worry is that people will just go after the tickets, rather than cultivating a true compassion for their fellow man...$s",
+        "Satu-satunya kekhawatiranku adalah orang-orang hanya akan mengejar tiket, alih-alih menumbuhkan kepedulian sejati kepada sesama...$s"
+      ],
+      [
+        "#I just want to help.#Yep, I'm in it for the prizes.",
+        "#Aku hanya ingin membantu.#Ya, aku mengincar hadiahnya."
+      ],
+      [
+        "Is that so? Well, I'm glad to hear that!$h",
+        "Begitu rupanya? Aku senang mendengarnya!$h"
+      ],
+      [
+        "I see!$u#$b#Well... that's not what I hoped to hear, but I appreciate the honesty.",
+        "Begitu rupanya!$u#$b#Yah... bukan itu yang kuharapkan, tetapi aku menghargai kejujuranmu."
+      ],
+      [
+        "At any rate... keep checking the 'Help Wanted' board in town. That's a good way to get your hands on more tickets.#$b#Good luck out there.",
+        "Bagaimanapun... teruslah memeriksa papan 'Butuh Bantuan' di kota. Itu cara yang bagus untuk memperoleh lebih banyak tiket.#$b#Semoga berhasil."
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/HaleyHouse",
+    "key": "11/f Haley 500/p Haley/p Emily",
+    "replacements": [
+      [
+        "Urgghh! I always clean under the cushions! It's YOUR turn this week!$a",
+        "Urgghh! Aku selalu membersihkan bagian bawah bantal sofa! Minggu ini giliran KAMU!$a"
+      ],
+      [
+        "You're being childish, Haley. I do the vast majority of work in this house, and you know it.$u",
+        "Kamu bersikap kekanak-kanakan, Haley. Aku mengerjakan sebagian besar pekerjaan di rumah ini, dan kamu tahu itu.$u"
+      ],
+      [
+        "Oh, it's that new ${farm boy^girl from the farm}$.$7",
+        "Oh, ternyata itu ${petani baru^petani baru}$.$7"
+      ],
+      [
+        "${He^She}$ has a name, you know.$u",
+        "${Dia^Dia}$ punya nama, kamu tahu.$u"
+      ],
+      [
+        "Hey, I bet you'll understand my point of view here.",
+        "Hei, aku yakin kamu akan memahami sudut pandangku."
+      ],
+      [
+        "*sigh*... I'm really sorry to involve you in this, @. Haley is complaining because I asked her to clean under the cushions.$u",
+        "*menghela napas*... Maaf melibatkanmu dalam hal ini, @. Haley mengeluh karena aku memintanya membersihkan bagian bawah bantal sofa.$u"
+      ],
+      [
+        "$q 45 null#It's only because I cleaned them last week!$a#$r 46 -50 Event_clean2#Stop whining and just clean it!#$r 45 30 Event_clean1#Haley, why not have this be your one weekly job?#$r 46 -30 Event_clean3#Emily, take the high road and do it this time.",
+        "$q 45 null#Itu hanya karena aku membersihkannya minggu lalu!$a#$r 46 -50 Event_clean2#Berhenti mengeluh dan bersihkan saja!#$r 45 30 Event_clean1#Haley, kenapa ini tidak dijadikan tugas mingguanmu?#$r 46 -30 Event_clean3#Emily, mengalahlah dan kerjakan kali ini."
+      ],
+      [
+        "Alright, you win. I guess this can be my job every week. Then there won't be any reason to argue over it.$u",
+        "Baiklah, kamu menang. Kurasa ini bisa menjadi tugasku setiap minggu. Dengan begitu, tidak ada alasan untuk memperdebatkannya.$u"
+      ],
+      [
+        "Thanks, @. That was a great solution.$h",
+        "Terima kasih, @. Itu solusi yang bagus.$h"
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/Beach",
+    "key": "20/f Alex 500/z winter/p Alex/w sunny",
+    "replacements": [
+      [
+        "Oh, hi.",
+        "Oh, hai."
+      ],
+      [
+        "Um, it's @, right?",
+        "Em, namamu @, bukan?"
+      ],
+      [
+        "I'm just enjoying this great weather, @.",
+        "Aku hanya sedang menikmati cuaca yang indah ini, @."
+      ],
+      [
+        "Hmm...$u#$b#Hey, go long!$h",
+        "Hmm...$u#$b#Hei, tangkap jauh di sana!$h"
+      ],
+      [
+        "Heh... Nice try.",
+        "Heh... Usaha yang bagus."
+      ],
+      [
+        "I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind.#$b#I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!",
+        "Aku akan menjadi pemain gridball profesional pertama dari Stardew Valley... Aku sama sekali tidak meragukannya.#$b#Aku sudah membawa tim sekolahku ke babak playoff regional... Sekarang aku hanya perlu berlatih dan menjadi lebih kuat agar mendapat tempat dalam daftar pemain Zuzu City Tunnelers. Tunggu saja!"
+      ],
+      [
+        "#I believe in you!#Wow, you're really arrogant.",
+        "#Aku percaya kepadamu!#Wah, kamu benar-benar sombong."
+      ],
+      [
+        "Thanks, @. I'll remember that.",
+        "Terima kasih, @. Aku akan mengingatnya."
+      ],
+      [
+        "Hey, that was fun, huh?",
+        "Hei, tadi menyenangkan, bukan?"
+      ]
+    ]
+  },
+  {
+    "target": "Data/Events/SamHouse",
+    "key": "44/f Sam 500/p Sam",
+    "replacements": [
+      [
+        "Oh, hi @! Sebastian and I were just having a little 'jam session'.",
+        "Oh, hai @! Aku dan Sebastian baru saja bermain musik bersama sebentar."
+      ],
+      [
+        "We're trying to start a band, but we still don't know what kind of music to make. There's too many possibilities.",
+        "Kami sedang mencoba membentuk band, tetapi belum tahu jenis musik apa yang akan dibuat. Pilihannya terlalu banyak."
+      ],
+      [
+        "#$q 76 null#Say, @... what kind of music do you like?#$r 76 50 Event_band1#Cheerful pop music.#$r 77 50 Event_band2#Experimental noise rock.#$r 78 50 Event_band3#Hi-Energy dance music.#$r 79 50 Event_band4#Honky-tonky country music.",
+        "#$q 76 null#Katakan, @... musik seperti apa yang kamu sukai?#$r 76 50 Event_band1#Musik pop ceria.#$r 77 50 Event_band2#Rock bising eksperimental.#$r 78 50 Event_band3#Musik dansa penuh energi.#$r 79 50 Event_band4#Musik country honky-tonk."
+      ],
+      [
+        "What do you say, Sebastian? Should we do this?",
+        "Bagaimana menurutmu, Sebastian? Apa kita akan melakukannya?"
+      ],
+      [
+        "...Okay.",
+        "...Baiklah."
+      ],
+      [
+        "Thanks for the help, @. With my guitar skills, and Sebastian's wizardry on the synthesizer, we're gonna be a screaming success. I'm convinced of it!$h",
+        "Terima kasih atas bantuanmu, @. Dengan keterampilan gitarku dan keahlian ajaib Sebastian memainkan synthesizer, kami akan meraih kesuksesan besar. Aku yakin!$h"
+      ],
+      [
+        "Now I just need to find someone to play drums...$u",
+        "Sekarang aku hanya perlu mencari pemain drum...$u"
+      ]
+    ]
+  }
+]

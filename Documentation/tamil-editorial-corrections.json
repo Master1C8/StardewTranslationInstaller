@@ -1,0 +1,166 @@
+{
+  "id": "415-editorial-visible-english-gender-and-terminology",
+  "globalReplacements": [
+    ["பெலிகன்", "பெலிக்கன்", 27],
+    ["ஸ்டார்ட்யூ", "ஸ்டார்டியூ", 10],
+    ["கலிகோ", "காலிகோ", 30],
+    ["ஜுனிமோ", "ஜூனிமோ", 7]
+  ],
+  "records": [
+    {
+      "target": "Characters/Dialogue/Evelyn",
+      "key": "fall_Sat_inlaw_Alex",
+      "replacements": [["${grandson^grand-daughter}$", "${பேரன்^பேத்தி}$"]]
+    },
+    {
+      "target": "Data/Events/AnimalShop",
+      "key": "92/e 91/i 78/t 900 1700",
+      "replacements": [["${Mr.^Ms.}$", "${திரு.^திருமதி.}$"]]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "3131209/n willyBugWadCutscene",
+      "replacements": [["${lad^lass}$", "${தம்பி^தங்கையே}$"]]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "choseAnimals",
+      "replacements": [
+        ["${Mr.^Ms.}$", "${திரு.^திருமதி.}$"],
+        ["${his^her}$", "${அவருடைய^அவருடைய}$"]
+      ]
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "leave",
+      "replacements": [["${he^she}$", "${அவர்^அவர்}$"]]
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "poppy",
+      "replacements": [["${his^her}$", "${அவருடைய^அவருடைய}$"]]
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "heavy",
+      "replacements": [["${his^her}$", "${அவருடைய^அவருடைய}$"]]
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "techno",
+      "replacements": [["${his^her}$", "${அவருடைய^அவருடைய}$"]]
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "honkytonk",
+      "replacements": [["${his^her}$", "${அவருடைய^அவருடைய}$"]]
+    },
+    {
+      "target": "Data/Events/BoatTunnel",
+      "key": "9348571/Hl willyBoatFixed",
+      "replacements": [["${lad^miss}$", "${தம்பி^தங்கையே}$", 2]]
+    },
+    {
+      "target": "Data/Events/FishShop",
+      "key": "16253595/j 29/X",
+      "replacements": [
+        ["${lad^miss}$", "${தம்பி^தங்கையே}$", 2],
+        ["${man^lady}$", "${ஆள்^பெண்}$"],
+        ["${trust a fisherman^count on a lady who fishes}$", "${ஒரு மீனவரை நம்பலாம்^மீன்பிடிக்கும் பெண்ணை நம்பலாம்}$"]
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "66/e 295672/t 600 700/H",
+      "replacements": [["${Mr.^Ms.}$", "${திரு.^திருமதி.}$"]]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "91/f Marnie 750/t 600 930",
+      "replacements": [["${Mr.^Ms.}$", "${திரு.^திருமதி.}$"]]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "3912125/f Elliott 3500/O Elliott/t 500 1500/p Elliott/U 8",
+      "replacements": [["#Yes, I'll be fine.#I'll be happy as a clam!#Don't go!", "#ஆம், நான் நன்றாக இருப்பேன்.#சிப்பிபோல் மகிழ்ச்சியாக இருப்பேன்!#போகாதீர்கள்!"]]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "980559/t 600 1130/w sunny/e 739330/j 27/!Skill Fishing 1",
+      "replacements": [["${lad^miss}$", "${தம்பி^தங்கையே}$"]]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "noPunch",
+      "replacements": [["${man^person}$", "${ஆண்^நபர்}$"]]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "11/f Haley 500/p Haley/p Emily",
+      "replacements": [
+        ["${farm boy^girl from the farm}$", "${பண்ணைப் பையன்^பண்ணையிலிருந்து வந்த பெண்}$"],
+        ["${He^She}$க்கு", "${அவனுக்கு^அவளுக்கு}$"]
+      ]
+    },
+    {
+      "target": "Data/Events/LeahHouse",
+      "key": "51/f Leah 1000/p Leah",
+      "replacements": [["${He^She}$", "${அவர்^அவர்}$"]]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "DadWeird",
+      "replacements": [["${him^her}$விடம்", "${அவனிடம்^அவளிடம்}$"]]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "10/f Maru 2500/t 900 1600",
+      "replacements": [["${good guy^fine young woman}$", "${நல்ல இளைஞர்^நல்ல இளம்பெண்}$"]]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "15389722/j 57",
+      "replacements": [["#I look forward to helping!#Heh... I dunno... we'll see...", "#உதவ ஆவலுடன் காத்திருக்கிறேன்!#ஹே... தெரியவில்லை... பார்ப்போம்..."]]
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Sat8",
+      "replacements": [["${Mr.^Ms.}$", "${திரு.^திருமதி.}$"]]
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogueMaru",
+      "key": "Good_4",
+      "replacements": [["${husband^wife}$", "${கணவன்^மனைவி}$"]]
+    },
+    {
+      "target": "Characters/Dialogue/Sam",
+      "key": "event_snack1",
+      "replacements": [["${He's^She's}$", "${அவர்^அவர்}$"]]
+    },
+    {
+      "target": "Characters/Dialogue/Sam",
+      "key": "event_snack3",
+      "replacements": [["${He's^She's}$", "${அவர்^அவர்}$"]]
+    },
+    {
+      "target": "Characters/Dialogue/Willy",
+      "key": "married",
+      "replacements": [["${bachelor^single}$", "${திருமணமாகாத^திருமணமாகாத}$"]]
+    },
+    {
+      "target": "Characters/Dialogue/Willy",
+      "key": "FullCrabPond",
+      "replacements": [["${man^lady}$", "${ஆள்^பெண்}$"]]
+    },
+    {
+      "target": "Data/Events/IslandHut",
+      "key": "1039573/N 10/Hl addedParrotBoy",
+      "replacements": [["*Awk*", "*கீச்*", 2]]
+    },
+    {
+      "target": "Data/Events/SeedShop",
+      "key": "3/f Abigail 2000/p Abigail/t 2000 2200/n abbySpiritBoard",
+      "replacements": [["I < %firstnameletter...?", "நான் < %firstnameletter...?"]]
+    }
+  ]
+}

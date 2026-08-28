@@ -1,0 +1,478 @@
+# Tamil translation progress
+
+Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
+
+## Pinned inputs
+
+- Target locale: `ta`
+- Planned Stardew language code: `ta-vnrevival`
+- English assets: `/Users/antonkrutov/Developer/data/stardew-english-unpacked/`
+- English asset count: 187 JSON targets
+- English glossary count: 673 entries
+- English glossary SHA-256: `b8fe9c8f5aaf9bedc990dabd2ce552d4f334450f03afee9949f75e376ab4bff9`
+- Public glossary endpoint: `https://vnrevival.fun/games/stardew-valley/glossary?locale=ta&offset=0&limit=1000`
+- Public glossary snapshot fetched: 2026-08-24, 673 entries
+- Initial public/local glossary comparison: 0 differing translations
+- Structural translation baseline: 14,720 unique `(Target, key)` records across 187 targets and 151 patch files
+
+## Editorial state
+
+- Full initial glossary source-fidelity and Tamil editorial audit: complete, entries 1–673
+- Confirmed glossary corrections applied: 311
+- Glossary override application is idempotent: yes
+- Current local Tamil glossary SHA-256: `7bc797b2a915003078a4460f868c8456619b1dc8d38647682738d32029464101`
+- Clean full glossary audits after the last content correction: 2 of 2
+- Current clean glossary audit pass: complete
+- Public glossary publication: not authorized and not performed
+
+## Translation coverage
+
+- Fully translated and editor-reviewed records: 14,720 / 14,720
+- Project progress: 100.000%
+- Consecutive clean full all-entry Tamil audits after semantic completion: 2 / 2
+- Follow-up editorial pass 415: complete; 37 targeted/idempotent corrections
+  (English choice text, gender branches, sound/board text, and canonical place/name spellings)
+- Follow-up editorial passes 416–418: complete; 105 additional idempotent correction
+  rules covering recurring character/place names, festival names, location and tool terminology,
+  mastery labels, inventory UI, and isolated glossary-root inconsistencies
+- Tamil patch files integrated into `ModPayload`: 151 / 151
+- Tamil runtime configuration integrated: yes
+- Tamil XNB fonts built and round-trip verified: yes (248 shaped clusters)
+- Final full Tamil audit: 2 consecutive clean passes, 0 warnings and 0 errors
+- Swift test suite: passed (8 / 8)
+- Release app build and strict code-signature verification: passed
+
+Completed semantic batches:
+
+- `001-core-ui`: 60 short UI records
+- `002-inventory-progression-ui`: 60 short UI records
+- `003-professions-and-level-ui`: 40 short UI records
+- `004-multiplayer-ui-and-notices`: 52 short UI records
+- `005-multiplayer-life-events`: 60 short UI records
+- `006-social-profile-and-tailoring-ui`: 60 short UI records
+- `007-wallet-chat-and-pond-status-ui`: 60 short UI records
+- `008-chat-commands-and-player-prompts`: 60 short UI records
+- `009-fish-pond-and-advanced-options`: 60 short UI records
+- `010-advanced-setup-forge-and-build-ui`: 60 short UI records
+- `011-island-parrot-and-late-game-notices`: 60 short UI records
+- `012-perfection-race-and-mobile-ui`: 60 short UI records
+- `013-mobile-tutorial-and-controls`: 53 short UI records
+- `014-achievements`: 40 short achievement/UI records
+- `015-building-management-and-descriptions`: 42 short building records
+- `016-big-craftables-furniture-and-machines-a`: 80 short big-craftable records
+- `017-big-craftables-furniture-and-machines-b`: 80 short big-craftable records
+- `018-big-craftables-decor-and-statues`: 80 short big-craftable records
+- `019-big-craftables-and-tools`: 54 short big-craftable/tool records
+- `020-weapons-a`: 80 short weapon records
+- `021-weapons-b`: 44 short weapon records
+- `022-footwear-and-shirts-a`: 80 short apparel records
+- `023-shirts-b`: 79 short shirt records
+- `024-shirts-c`: 80 short shirt records
+- `025-shirts-d`: 80 short shirt records
+- `026-shirts-e`: 80 short shirt records
+- `027-shirts-and-pants`: 53 short apparel records
+- `028-hats-a`: 40 short hat records
+- `029-hats-b`: 40 short hat records
+- `030-hats-c`: 41 short hat records
+- `031-community-center-bundles`: 49 short bundle records
+- `032-character-relatives-and-reactions`: 40 short character records
+- `033-mine-encounters`: 15 long character records
+- `034-movie-invitations-and-entry`: 20 long character records
+- `035-movie-theater-and-concessions`: 21 long character records
+- `036-spouse-movie-invitations`: 15 long character records
+- `037-shop-phone-services`: 30 long character records
+- `038-ranch-calls-and-memories`: 21 long character records
+- `039-guild-hatchery-and-night-market`: 30 long location records (27 translated, 3 reviewed format preserves)
+- `040-farm-setup-and-summary`: 15 long UI records (10 translated, 5 reviewed format preserves)
+- `041-beach-travel-and-community-center`: 30 long location records (29 translated, 1 reviewed format preserve)
+- `042-farm-access-and-shop-notices`: 30 long location records (29 translated, 1 reviewed punctuation preserve)
+- `043-purchases-quest-clues-and-town-records`: 30 long location records
+- `044-quest-puzzles-arcade-and-club`: 30 long location records
+- `045-town-services-calicojack-and-upgrades`: 30 long location records
+- `046-mines-town-shrines-and-theater`: 30 long location records (29 translated, 1 reviewed format preserve)
+- `047-theater-tea-and-island-fieldwork`: 30 long location records
+- `048-island-survey-and-gourmand-requests`: 15 long location records
+- `049-gourmand-rewards-and-parrot-hints`: 28 long location records
+- `050-renovations-resort-and-boat-services`: 30 long location records
+- `051-island-boat-field-office-and-challenge`: 28 long location records
+- `052-objects-system-messages-and-a-items`: 40 short object records
+- `053-objects-artifacts-fruit-and-gems-a`: 40 short object records
+- `054-objects-food-minerals-and-farm-supplies-b`: 40 short object records
+- `055-objects-berries-fish-and-books-c`: 40 short object records
+- `056-objects-books-and-basic-goods-d`: 40 short object records
+- `057-objects-crops-artifacts-and-cave-goods-e`: 40 short object records
+- `058-objects-fish-fruit-and-artifacts-f`: 40 short object records
+- `059-objects-materials-coffee-and-copper-g`: 40 short object records (37 translated, 3 reviewed punctuation preserves)
+- `060-objects-seafood-cranberries-and-crystal-h`: 40 short object records
+- `061-objects-deluxe-supplies-and-dried-goods-i`: 40 short object records
+- `062-objects-dwarf-relics-eggs-and-emerald-j`: 40 short object records
+- `063-objects-fairy-fiber-and-fire-k`: 40 short object records
+- `064-objects-fish-fossils-and-frozen-goods-l`: 40 short object records
+- `065-objects-garlic-gems-and-glow-rings-m`: 40 short object records
+- `066-objects-gold-grapes-and-grass-n`: 40 short object records
+- `067-objects-greenery-honey-and-horse-o`: 40 short object records
+- `068-objects-iridium-iron-and-ice-p`: 40 short object records
+- `069-objects-jelly-juice-and-large-produce-q`: 40 short object records
+- `070-objects-luck-lobster-and-magma-r`: 40 short object records
+- `071-objects-magnet-mango-and-melon-s`: 40 short object records
+- `072-objects-moss-mystery-and-mummified-t`: 40 short object records
+- `073-objects-ocean-opal-and-orange-u`: 40 short object records
+- `074-objects-parsnip-peach-and-pickles-v`: 40 short object records
+- `075-objects-pineapple-poppy-and-potato-w`: 40 short object records
+- `076-objects-powdermelon-prehistoric-and-purple-x`: 40 short object records
+- `077-objects-purple-qi-and-rain-y`: 40 short object records
+- `078-objects-rain-rare-and-savage-z`: 80 short object records
+- `079-objects-scorpion-sea-and-specific-aa`: 80 short object records
+- `080-objects-speedgro-spice-and-summer-ab`: 80 short object records (79 translated, 1 already-automatic punctuation preserve)
+- `081-objects-summer-sun-and-truffle-ac`: 80 short object records (79 translated, 1 already-automatic punctuation preserve)
+- `082-objects-truffle-tulip-and-wilted-ad`: 66 short object records
+- `083-objects-wheat-wine-and-yam-ae`: 40 short object records
+- `084-furniture-piano-chairs-and-couches-a`: 40 short furniture records
+- `085-furniture-couches-tables-and-bookcases-b`: 40 short furniture records
+- `086-furniture-decor-lamps-and-art-c`: 80 short furniture records
+- `087-furniture-nautical-fireplaces-and-beds-d`: 80 short furniture records
+- `088-furniture-tropical-wall-and-desert-e`: 80 short furniture records
+- `089-furniture-desert-joja-and-wizard-f`: 80 short furniture records
+- `090-furniture-runes-books-and-junimos-g`: 80 short furniture records
+- `091-furniture-portraits-retro-and-home-h`: 80 short furniture records
+- `092-furniture-trash-home-and-data-preserves-i`: 40 short furniture records (28 translated display names, 12 reviewed internal-data preserves)
+- `093-animation-control-data-a`: 80 reviewed animation-control records
+- `094-animation-control-and-visible-text-b`: 40 animation records (15 translated visible strings, 25 reviewed control-data preserves)
+- `095-character-shop-speech-bubbles-a`: 64 short character speech records
+- `096-credits-headings-languages-and-names`: 63 short credits records (35 translated labels, 28 reviewed proper-name preserves)
+- `097-movie-concessions`: 48 short concession records
+- `098-movies-sapling-and-mysterium`: 20 long movie records
+- `099-movies-prairie-king-and-wumbus`: 20 long movie records
+- `100-movies-zuzu-express-and-coldstar`: 21 long movie records
+- `101-movies-natural-wonders-and-howls`: 25 long movie records
+- `102-movie-reactions-penny-a`: 20 long movie-reaction records
+- `103-movie-reactions-penny-pam-krobus-wizard-b`: 20 long movie-reaction records (18 translated, 2 already-automatic punctuation preserves)
+- `104-movie-reactions-george-alex-evelyn-c`: 20 long movie-reaction records
+- `105-movie-reactions-evelyn-pierre-abigail-d`: 20 long movie-reaction records
+- `106-movie-reactions-abigail-caroline-harvey-e`: 20 long movie-reaction records
+- `107-movie-reactions-harvey-gus-lewis-f`: 20 long movie-reaction records
+- `108-movie-reactions-lewis-jodi-sam-vincent-g`: 20 long movie-reaction records
+- `109-movie-reactions-vincent-kent-clint-emily-h`: 20 long movie-reaction records
+- `110-movie-reactions-emily-haley-maru-i`: 20 long movie-reaction records
+- `111-movie-reactions-maru-sebastian-robin-demetrius-j`: 20 long movie-reaction records
+- `112-movie-reactions-demetrius-linus-dwarf-marnie-k`: 20 long movie-reaction records
+- `113-movie-reactions-marnie-shane-jas-l`: 20 long movie-reaction records
+- `114-movie-reactions-jas-leah-sandy-elliott-willy-leo-m`: 29 long movie-reaction records
+- `115-furniture-internal-localized-references-a`: 72 reviewed internal furniture-data records
+- `116-furniture-internal-localized-references-b`: 72 reviewed internal furniture-data records
+- `117-furniture-internal-localized-references-c`: 72 reviewed internal furniture-data records
+- `118-furniture-internal-localized-references-d`: 72 reviewed internal furniture-data records
+- `119-furniture-internal-localized-references-e`: 72 reviewed internal furniture-data records
+- `120-furniture-internal-localized-references-f`: 72 reviewed internal furniture-data records
+- `121-furniture-internal-localized-references-g`: 72 reviewed internal furniture-data records
+- `122-furniture-internal-localized-references-h`: 72 reviewed internal furniture-data records
+- `123-furniture-internal-localized-references-i`: 69 reviewed internal furniture-data records
+- `124-internal-crafting-recipe-data-a`: 80 reviewed internal crafting-recipe records
+- `125-internal-crafting-and-cooking-recipe-data-b`: 80 reviewed internal recipe-data records
+- `126-internal-cooking-and-aquarium-data-c`: 80 reviewed internal recipe/aquarium records
+- `127-internal-aquarium-and-chair-data-d`: 80 reviewed internal aquarium/chair records
+- `128-internal-chair-hair-and-paint-data-e`: 78 reviewed internal chair/hair/paint records
+- `129-fish-display-names`: 74 short fish data records
+- `130-monster-display-names`: 51 short monster data records
+- `131-small-visible-string-completions`: 40 short visible-string records (37 translated, 3 already-automatic numeric preserves)
+- `132-cs-buffs-ingredients-and-dialogue-words-a`: 80 short runtime-string records
+- `133-cs-dialogue-words-colors-and-event-ui-b`: 80 short runtime-string records
+- `134-cs-book-grandpa-and-festival-prompts-c`: 30 long runtime-string records
+- `135-cs-fair-games-fortune-and-awards-d`: 30 long runtime-string records
+- `136-cs-fortune-friends-and-romance-e`: 30 long runtime-string records
+- `137-cs-fortune-scenes-and-farmer-notices-f`: 30 long runtime-string records
+- `138-cs-farmer-titles-and-game-notices-g`: 30 long runtime-string records
+- `139-cs-stardrop-system-and-npc-prompts-h`: 30 long runtime-string records
+- `140-cs-dating-marriage-and-krobus-dialogue-i`: 30 long runtime-string records
+- `141-cs-greetings-and-loved-gift-rumors-j`: 30 long runtime-string records (29 translated, 1 already-automatic placeholder preserve)
+- `142-cs-hated-gift-rumors-and-birthdays-k`: 30 long runtime-string records
+- `143-cs-birthday-reactions-and-family-dialogue-l`: 30 long runtime-string records
+- `144-cs-spouse-chores-decor-and-pet-names-m`: 30 long runtime-string records
+- `145-cs-save-marriage-and-season-music-n`: 30 long runtime-string records
+- `146-cs-seasonal-and-mine-music-titles-o`: 30 long runtime-string records
+- `147-cs-festival-band-and-arcade-music-p`: 30 long runtime-string records
+- `148-cs-arcade-music-buildings-and-seasons-q`: 30 long runtime-string records
+- `149-cs-diary-location-and-fishing-ui-r`: 30 long runtime-string records (29 translated, 1 reviewed fantasy-language preserve)
+- `150-cs-town-map-locations-and-hours-s`: 30 long runtime-string records
+- `151-cs-map-and-controls-options-t`: 30 long runtime-string records
+- `152-cs-inventory-animal-purchase-and-quest-ui-u`: 30 long runtime-string records
+- `153-cs-quest-shipping-and-shop-greetings-v`: 30 long runtime-string records
+- `154-cs-special-shops-skills-and-social-w`: 30 long runtime-string records
+- `155-cs-social-status-and-strength-scale-x`: 30 long runtime-string records
+- `156-cs-strength-scale-and-title-tips-y`: 30 long runtime-string records
+- `157-cs-title-tutorial-and-arcade-results-z`: 30 long runtime-string records
+- `158-cs-calico-grandpa-and-minigame-ui-aa`: 30 long runtime-string records
+- `159-cs-object-placement-and-categories-ab`: 30 long runtime-string records
+- `160-cs-object-discoveries-and-tv-intros-ac`: 30 long runtime-string records
+- `161-cs-tv-oracle-weather-and-luck-ad`: 30 long runtime-string records
+- `162-cs-tv-luck-decor-and-fishing-quests-ae`: 30 long runtime-string records
+- `163-cs-fishing-rewards-and-delivery-requests-af`: 30 long runtime-string records
+- `164-cs-delivery-food-and-meal-requests-ag`: 30 long runtime-string records
+- `165-cs-delivery-remedies-and-jewelry-ah`: 30 long runtime-string records
+- `166-cs-delivery-body-parts-and-hand-in-ai`: 30 long runtime-string records
+- `167-cs-delivery-responses-and-character-jobs-aj`: 30 long runtime-string records
+- `168-cs-delivery-closeout-and-resource-quests-ak`: 30 long runtime-string records (29 translated, 1 already-automatic placeholder preserve)
+- `169-cs-resource-and-monster-quests-al`: 30 long runtime-string records
+- `170-cs-social-farming-resource-and-fishing-ui-am`: 30 long runtime-string records
+- `171-cs-tools-weapons-and-language-names-an`: 30 long runtime-string records
+- `172-cs-language-random-sentences-and-keys-ao`: 30 long runtime-string records
+- `173-cs-keyboard-key-labels-ap`: 30 long runtime-string records
+- `174-cs-browser-media-and-symbol-keys-aq`: 30 long runtime-string records
+- `175-cs-more-key-labels-recovery-and-krobus-ar`: 30 long runtime-string records
+- `176-cs-theater-music-desert-and-ostrich-as`: 30 long runtime-string records
+- `177-cs-furniture-volcano-buffs-and-farm-computer-at`: 30 long runtime-string records
+- `178-cs-farm-computer-island-trader-and-music-au`: 30 long runtime-string records
+- `179-cs-horse-flute-qi-buffs-and-final-notices-av`: 18 long runtime-string records
+- `180-one-six-pylons-squid-and-desert-dialogue-a`: 30 long 1.6 records
+- `181-one-six-desert-dialogue-and-cactus-b`: 30 long 1.6 records
+- `182-one-six-cactus-willy-and-scholar-c`: 30 long 1.6 records
+- `183-one-six-scholar-quiz-and-chef-intro-d`: 30 long 1.6 records (28 translated, 2 already-automatic numeric preserves)
+- `184-one-six-chef-ingredients-and-dishes-e`: 30 long 1.6 records
+- `185-one-six-chef-finale-and-race-f`: 30 long 1.6 records
+- `186-one-six-racers-shady-guy-and-marlon-g`: 30 long 1.6 records
+- `187-one-six-gil-ratings-and-makeover-h`: 30 long 1.6 records (29 translated, 1 already-automatic placeholder preserve)
+- `188-one-six-sandy-makeover-and-egg-shops-i`: 30 long 1.6 records
+- `189-one-six-shops-and-calico-statues-j`: 30 long 1.6 records
+- `190-one-six-statues-and-fishing-events`: 30 long 1.6 records
+- `191-one-six-events-and-mastery`: 30 long 1.6 records
+- `192-one-six-blessings-trinkets`: 30 long 1.6 records
+- `193-one-six-trinkets-fizz`: 30 long 1.6 records
+- `194-one-six-books-and-raccoons-a`: 30 long 1.6 records
+- `195-one-six-raccoons-and-late-game`: 30 long 1.6 records
+- `196-one-six-joja-books-and-enchantments`: 30 long 1.6 records
+- `197-one-six-machines-food-and-mannequins`: 30 long 1.6 records
+- `198-one-six-catalogues-renovations-and-pets`: 30 long 1.6 records
+- `199-one-six-final-and-animal-shop`: 30 long 1.6/map records
+- `200-maps-museum-bathhouse-blacksmith`: 30 long map records
+- `201-maps-farm-fishshop-haley-house-a`: 30 long map records
+- `202-maps-haley-harvey-hospital-joja-a`: 30 long map records
+- `203-maps-jojamart-shelves-b`: 30 long map records
+- `204-maps-jojamart-shelves-c`: 30 long map records
+- `205-maps-jojamart-shelves-d`: 30 long map records
+- `206-maps-joja-josh-and-leah`: 30 long map records
+- `207-maps-leah-manor-sam-science-a`: 30 long map records
+- `208-maps-science-seedshop-and-town-a`: 30 long map records
+- `209-maps-town-witch-and-theater-a`: 30 long map records
+- `210-maps-theater-and-pirates-a`: 30 long map records
+- `211-maps-pirates-and-marriage-rain-a`: 30 long map/marriage records
+- `212-marriage-rainy-night-and-indoor-day`: 30 long marriage-dialogue records
+- `213-marriage-indoor-night-and-outdoor-a`: 30 long marriage-dialogue records
+- `214-marriage-outdoor-work-kids-and-good-a`: 30 long marriage-dialogue records
+- `215-marriage-good-neutral-bad-and-seasons-a`: 30 long marriage-dialogue records
+- `216-marriage-seasons-b`: 30 long marriage-dialogue records
+- `217-marriage-seasons-and-spouse-rooms-c`: 30 long marriage-dialogue records
+- `218-marriage-finale-and-friend-gifts`: 30 long marriage/mail records
+- `219-mail-friendship-and-recipes-a`: 30 long mail records
+- `220-mail-family-notices-and-invitations`: 30 long mail records
+- `221-mail-events-upgrades-and-festivals`: 30 long mail records
+- `222-mail-help-wanted-and-invoices`: 30 long mail records
+- `223-mail-recovery-elliott-and-special-orders`: 30 long mail records
+- `224-mail-finale-and-abigail-intro`: 30 long mail/dialogue records
+- `225-abigail-events-resort-and-relationships-a`: 30 long dialogue records
+- `226-abigail-breakup-daily-and-events-b`: 30 long dialogue records
+- `227-abigail-events-and-summer-c`: 30 long dialogue records (28 translated, 2 already-automatic punctuation/placeholder preserves)
+- `228-abigail-fall-winter-and-festivals-d`: 30 long dialogue records
+- `229-abigail-finale-and-haley-intro-a`: 30 long dialogue records
+- `230-haley-relationships-resort-and-daily-b`: 30 long dialogue records
+- `231-haley-friendship-events-and-summer-c`: 30 long dialogue records
+- `232-haley-summer-and-fall-d`: 30 long dialogue records
+- `233-haley-finale-and-sebastian-intro-a`: 30 long dialogue records
+- `234-sebastian-gifts-resort-and-daily-b`: 30 long dialogue records
+- `235-sebastian-friends-daily-and-events-c`: 30 long dialogue records
+- `236-sebastian-city-summer-and-fall-d`: 30 long dialogue records
+- `237-sebastian-fall-and-winter-finale`: 27 long dialogue records
+- `238-alex-intro-gifts-and-memories-a`: 30 long dialogue records
+- `239-alex-resort-relationships-and-daily-b`: 30 long dialogue records
+- `240-alex-events-and-summer-c`: 30 long dialogue records
+- `241-alex-summer-fall-and-winter-d`: 30 long dialogue records
+- `242-alex-finale-and-sam-intro-a`: 30 long dialogue records
+- `243-sam-resort-relationships-and-daily-b`: 30 long dialogue records
+- `244-sam-events-and-summer-c`: 30 long dialogue records
+- `245-sam-fall-and-winter-finale`: 30 long dialogue records
+- `246-maru-intro-gifts-resort-and-relationships-a`: 30 long dialogue records
+- `247-maru-daily-and-events-b`: 30 long dialogue records
+- `248-maru-robot-and-summer-c`: 30 long dialogue records
+- `249-maru-fall-and-winter-finale`: 21 long dialogue records
+- `250-emily-intro-gifts-memories-and-resort-a`: 30 long dialogue records
+- `251-emily-resort-relationships-and-daily-b`: 30 long dialogue records
+- `252-emily-events-summer-and-fall-c`: 30 long dialogue records
+- `253-emily-fall-and-winter-finale`: 15 long dialogue records
+- `254-penny-intro-gifts-memories-and-resort-a`: 30 long dialogue records
+- `255-penny-relationships-family-and-daily-b`: 30 long dialogue records
+- `256-penny-events-and-summer-c`: 30 long dialogue records
+- `257-penny-fall-and-winter-finale`: 15 long dialogue records
+- `258-elliott-intro-gifts-memories-and-resort-a`: 30 long dialogue records
+- `259-elliott-relationships-daily-and-events-b`: 30 long dialogue records
+- `260-elliott-summer-fall-and-winter-c`: 30 long dialogue records
+- `261-elliott-finale-and-leah-intro-a`: 30 long dialogue records
+- `262-leah-relationships-and-daily-b`: 30 long dialogue records
+- `263-leah-events-summer-and-fall-c`: 27 long dialogue records
+- `264-leah-fall-and-winter-finale`: 15 long dialogue records
+- `265-harvey-intro-gifts-memories-and-resort-a`: 30 long dialogue records
+- `266-harvey-relationships-daily-and-events-b`: 30 long dialogue records
+- `267-harvey-events-seasons-finale-and-lewis-intro`: 30 long dialogue records
+- `268-lewis-community-and-daily-a`: 30 long dialogue records
+- `269-lewis-seasons-finale`: 21 long dialogue records
+- `270-pam-intro-family-resort-and-saloon-a`: 30 long dialogue records
+- `271-pam-daily-summer-and-fall-b`: 30 long dialogue records
+- `272-pam-fall-and-winter-finale`: 15 long dialogue records
+- `273-pierre-green-rain-resort-and-daily-a`: 30 long dialogue records
+- `274-pierre-seasons-and-events-finale`: 24 long dialogue records
+- `275-shane-intro-gifts-resort-and-daily-a`: 30 long dialogue records
+- `276-shane-daily-and-events-b`: 30 long dialogue records
+- `277-shane-events-finale-and-robin-intro`: 15 long dialogue records
+- `278-robin-family-buildings-and-resort-a`: 30 long dialogue records
+- `279-robin-daily-and-seasons-finale`: 24 long dialogue records
+- `280-demetrius-intro-science-and-daily-a`: 30 long dialogue records
+- `281-demetrius-research-and-seasons-finale`: 30 long dialogue records
+- `282-jodi-family-community-and-daily-a`: 30 long dialogue records
+- `283-jodi-family-and-seasons-finale`: 23 long dialogue records
+- `284-linus-wilderness-gifts-and-daily-a`: 30 long dialogue records
+- `285-linus-nature-and-seasons-finale`: 23 long dialogue records
+- `286-caroline-family-tea-and-daily-a`: 30 long dialogue records
+- `287-caroline-family-and-seasons-finale`: 22 long dialogue records
+- `288-evelyn-community-family-and-daily-a`: 30 long dialogue records
+- `289-evelyn-gardens-and-seasons-finale`: 19 long dialogue records
+- `290-clint-blacksmith-emily-and-daily-a`: 30 long dialogue records
+- `291-clint-work-and-daily-finale`: 15 long dialogue records
+- `292-gus-saloon-food-and-daily-a`: 30 long dialogue records
+- `293-gus-finale-and-kent-intro-a`: 15 long dialogue records
+- `294-kent-homecoming-family-and-finale`: 27 long dialogue records
+- `295-george-family-gruffness-and-daily-a`: 30 long dialogue records
+- `296-george-finale-and-jas-intro-a`: 15 long dialogue records
+- `297-jas-family-farm-and-daily-finale`: 29 long dialogue records (28 translated, 1 reviewed punctuation preserve)
+- `298-marnie-ranch-family-and-saloon-a`: 30 long dialogue records
+- `299-marnie-finale-and-willy-intro-a`: 15 long dialogue records
+- `300-willy-fish-legends-and-festivals-a`: 30 long dialogue records
+- `301-willy-finale-and-vincent-intro-a`: 15 long dialogue records
+- `302-vincent-family-school-and-finale`: 19 long dialogue records
+- `303-krobus-shadow-people-and-daily-finale`: 28 long dialogue records
+- `304-wizard-magic-nature-and-finale`: 24 long dialogue records
+- `305-dwarf-mining-culture-and-finale`: 23 long dialogue records
+- `306-sandy-oasis-valley-and-finale`: 21 long dialogue records
+- `307-leo-mainland-friends-and-finale`: 20 long dialogue records
+- `308-mister-qi-club-and-walnut-room-finale`: 15 long dialogue records
+- `309-rainy-dialogue-all-characters`: 30 long dialogue records
+- `310-engagement-dialogue-all-candidates`: 26 long dialogue records
+- `311-lexicon-random-words-and-pronouns`: 17 long runtime-string records
+- `312-trout-derby-and-squidfest-contestants`: 22 long dialogue records
+- `313-family-night-events-and-book-titles`: 26 long runtime-string records
+- `314-leo-island-and-caroline-schedules`: 21 long dialogue/schedule records
+- `315-abigail-sam-and-sebastian-schedules`: 28 long schedule records
+- `316-emily-and-willy-schedules`: 26 long schedule records
+- `317-shane-jodi-and-lewis-schedules`: 25 long schedule records
+- `318-maru-penny-and-haley-schedules`: 23 long schedule records
+- `319-harvey-alex-evelyn-and-george-schedules`: 25 long schedule records
+- `320-jas-marnie-sandy-and-leo-schedules`: 23 long schedule records
+- `321-clint-elliott-gus-leah-robin-vincent-schedules`: 24 long schedule records
+- `322-extra-dialogue-family-services-and-rescues-a`: 30 long dialogue records
+- `323-extra-dialogue-joja-and-purchased-items-b`: 30 long dialogue records
+- `324-extra-dialogue-purchases-construction-and-rescue-c`: 30 long dialogue records
+- `325-extra-dialogue-island-and-summit-d`: 30 long dialogue records
+- `326-extra-dialogue-summit-spouses-e`: 25 long dialogue records
+- `327-special-orders-town-and-biome-a`: 30 long special-order records
+- `328-special-orders-crops-caves-and-cleanup-b`: 30 long special-order records
+- `329-special-orders-island-resources-and-qi-c`: 30 long special-order records
+- `330-special-orders-qi-challenges-d`: 30 long special-order records
+- `331-special-orders-qi-and-marlon-finale-e`: 26 long special-order records
+- `332-luau-villagers-and-spouses-a`: 30 reviewed festival records (29 translated and one command-only setup value explicitly preserved)
+- `333-luau-villagers-and-year-two-b`: 30 long festival dialogue records
+- `334-luau-year-two-villagers-c`: 30 long festival dialogue records
+- `335-luau-events-and-reactions-finale-d`: 17 reviewed festival records (15 translated across the Luau finale and Festival of Ice, plus two command-only Luau values explicitly preserved)
+- `336-festival-of-ice-villagers-a`: 30 long festival dialogue records
+- `337-festival-of-ice-year-two-b`: 30 long festival dialogue records
+- `338-festival-of-ice-dialogue-finale-c`: 25 reviewed festival records (22 translated and three command-only values explicitly preserved)
+- `339-festival-of-ice-events-finale-and-fair-spouses-a`: 15 long festival records completing the Festival of Ice and starting the Stardew Valley Fair
+- `340-stardew-valley-fair-villagers-b`: 30 long festival dialogue records
+- `341-stardew-valley-fair-year-two-c`: 30 long festival dialogue records
+- `342-stardew-valley-fair-finale-d`: 25 reviewed festival records (22 translated and three command-only values explicitly preserved)
+- `343-spirits-eve-villagers-and-spouses-a`: 30 long festival dialogue records
+- `344-spirits-eve-year-two-b`: 30 long festival dialogue records
+- `345-spirits-eve-finale-c`: 32 reviewed festival records (28 translated and four command/data-only values explicitly preserved)
+- `346-feast-of-the-winter-star-villagers-a`: 30 long festival dialogue records
+- `347-feast-of-the-winter-star-year-two-b`: 30 long festival dialogue records
+- `348-feast-of-the-winter-star-finale-c`: 32 reviewed festival records (27 translated and five command-only values explicitly preserved)
+- `349-dance-of-the-moonlight-jellies-a`: 30 long festival records
+- `350-dance-of-the-moonlight-jellies-year-two-b`: 30 long festival records
+- `351-dance-of-the-moonlight-jellies-finale-c`: 26 reviewed festival records (23 translated and three command-only values explicitly preserved)
+- `352-flower-dance-villagers-a`: 30 long festival dialogue records
+- `353-flower-dance-year-two-b`: 30 long festival dialogue records
+- `354-flower-dance-year-two-finale-c`: 23 reviewed festival records (20 translated and three command-only values explicitly preserved)
+- `355-egg-festival-spouses-and-villagers-a`: 30 long festival dialogue records
+- `356-egg-festival-villagers-and-year-two-b`: 30 long festival dialogue records
+- `357-egg-festival-finale-and-krobus-a`: 33 reviewed records (30 translated across the Egg Festival finale and Krobus housemate dialogue, plus three command-only festival values explicitly preserved)
+- `358-krobus-housemate-dialogue-b`: 30 long Krobus housemate dialogue records
+- `359-krobus-housemate-dialogue-finale-c`: 26 long Krobus housemate dialogue records
+- `360-leah-marriage-dialogue-a`: 30 long Leah marriage dialogue records
+- `361-leah-marriage-dialogue-b`: 30 long Leah marriage dialogue records
+- `362-leah-finale-and-abigail-a`: 30 long marriage dialogue records completing Leah and starting Abigail
+- `363-abigail-marriage-dialogue-b`: 30 long Abigail marriage dialogue records
+- `364-abigail-marriage-dialogue-finale-c`: 25 long Abigail marriage dialogue records
+- `365-sebastian-marriage-dialogue-a`: 30 long Sebastian marriage dialogue records
+- `366-sebastian-marriage-dialogue-b`: 30 long Sebastian marriage dialogue records
+- `367-sebastian-finale-and-shane-a`: 30 long marriage dialogue records completing Sebastian and starting Shane
+- `368-shane-marriage-dialogue-b`: 30 long Shane marriage dialogue records
+- `369-shane-finale-and-emily-a`: 30 long marriage dialogue records completing Shane and starting Emily
+- `370-emily-marriage-dialogue-b`: 30 long Emily marriage dialogue records
+- `371-emily-finale-and-maru-a`: 30 long marriage dialogue records completing Emily and starting Maru
+- `372-maru-marriage-dialogue-b`: 30 long Maru marriage dialogue records
+- `373-maru-finale-and-elliott-a`: 30 long marriage dialogue records completing Maru and starting Elliott
+- `374-elliott-marriage-dialogue-b`: 30 long Elliott marriage dialogue records
+- `375-elliott-finale-and-penny-a`: 30 long marriage dialogue records completing Elliott and starting Penny
+- `376-penny-marriage-dialogue-finale-b`: 25 long Penny marriage dialogue records
+- `377-sam-marriage-dialogue-a`: 30 long Sam marriage dialogue records
+- `378-sam-marriage-dialogue-finale-b`: 23 long Sam marriage dialogue records
+- `379-harvey-marriage-dialogue-a`: 30 long Harvey marriage dialogue records
+- `380-harvey-marriage-dialogue-finale-b`: 22 long Harvey marriage dialogue records
+- `381-alex-marriage-dialogue-a`: 30 long Alex marriage dialogue records
+- `382-alex-finale-and-haley-a`: 30 long marriage dialogue records completing Alex and starting Haley
+- `383-haley-marriage-dialogue-b`: 30 long Haley marriage dialogue records
+- `384-haley-finale-and-quests-a`: 30 long records completing Haley and starting core quest text
+- `385-quests-dark-talisman-and-town-errands-b`: 15 long core quest records
+- `386-quests-town-errands-c`: 15 long core quest records
+- `387-quests-finale-and-livin-off-land-a`: 30 long records completing core quests and starting Livin' Off The Land tips
+- `388-livin-off-land-b`: 30 long Livin' Off The Land tip records
+- `389-livin-off-land-finale-and-queen-of-sauce-a`: 30 long records completing Livin' Off The Land tips and starting Queen of Sauce recipes
+- `390-queen-of-sauce-finale`: 15 long records completing Queen of Sauce recipes
+- `391-secret-notes-a`: 15 long Secret Notes records (14 translated and one image-command value explicitly preserved)
+- `392-secret-notes-b`: 15 long Secret Notes records (nine translated and six image-command values explicitly preserved)
+- `393-secret-notes-finale-and-gift-tastes-a`: 15 long records completing Secret Notes and starting NPC gift tastes (ten translated and five technical values explicitly preserved)
+- `394-gift-tastes-finale`: 29 long records completing NPC gift-taste dialogue
+- `395-small-dialogue-schedules-and-ui`: 15 long records completing several small dialogue, schedule, quest, and runtime-string targets (14 translated and one currency format explicitly preserved)
+- `396-library-books-a`: 15 long library-book records
+- `397-library-finale-and-small-runtime`: 15 long records completing library books, 1.6 strings, and IslandSouth events (nine translated and six technical/fantasy values explicitly preserved)
+- `398-temp-events-and-seed-shop`: 15 long records completing temporary band events and several small event targets (14 translated and one command-only branch explicitly preserved)
+- `399-sam-house-and-seed-shop`: 15 long records completing SamHouse and several smaller event targets (14 translated and one command-only death event explicitly preserved)
+- `400-elliott-hospital-and-animal-events`: 15 long records completing ElliottHouse and AnimalShop, completing most Hospital events, and translating the Flower Dance finale
+- `401-island-location-egg-festival-and-trailer-events`: 15 long records completing the Egg Festival, island location events, Trailer events, and Skull Cavern milestone dialogue, with one command-only BusStop event explicitly preserved
+- `402-science-josh-and-wizard-house-events`: 15 long records completing ScienceHouse, JoshHouse, and WizardHouse events
+- `403-seed-shop-museum-bus-and-woods-events`: 15 long records completing SeedShop, ArchaeologyHouse, BusStop, and Woods events
+- `404-farmhouse-and-mine-events`: 15 long records completing FarmHouse events and the remaining Mine event
+- `405-haley-house-railroad-and-island-north-events`: 15 long records completing HaleyHouse and Railroad events and the remaining IslandNorth event
+- `406-leah-house-and-remaining-small-event-targets`: 15 long records completing LeahHouse and all remaining one-record event targets, with one command-only rejection branch explicitly preserved
+- `407-beach-and-saloon-events-a`: 15 long records completing Beach events and starting Saloon events, with one command-only Beach event explicitly preserved
+- `408-saloon-and-mountain-events-b`: 15 long records completing Saloon events and translating six Mountain event branches
+- `409-mountain-and-forest-events-c`: 15 long records completing Mountain events and translating eight Forest event branches
+- `410-sebastian-room-events-a`: 15 long SebastianRoom event records covering the programmer scene and the first half of Solarion Chronicles
+- `411-sebastian-room-finale-and-farm-a`: 15 long records completing SebastianRoom and starting Farm events, with one command-only Farm event explicitly preserved
+- `412-farm-events-b`: 15 long Farm event records covering invitations, unlocks, pets, and spouse projects
+- `413-farm-finale-and-town-events-a`: 15 long records completing Farm events and starting Town events
+- `414-forest-and-town-events-finale`: 27 long records completing all remaining Forest and Town events and the full semantic translation corpus
+- `415-editorial-visible-english-gender-and-terminology`: full-corpus follow-up pass correcting two untranslated choice groups, 29 records with visible English or gender-branch text, and four non-canonical recurring Tamil spellings; the correction set is idempotent and the post-correction all-entry gate passed twice with 0 warnings and 0 errors
+- `416-editorial-names-festivals-locations-and-core-terms`: full-corpus terminology pass normalizing character names, festival titles, locations, businesses, and core gameplay terms; 42 correction rules, idempotent
+- `417-editorial-glossary-roots-and-one-off-name-variants`: follow-up glossary-root pass covering mastery, inventory, tools, machines, residences, and one-off name variants; 56 correction rules, idempotent
+- `418-editorial-final-glossary-one-offs`: final cold-pass corrections for Secret Woods, Slime Hutch, Prize Ticket, Immunity, birthday, and exhaustion terminology; seven correction rules, idempotent
+
+Coverage is calculated only from records whose Tamil value has passed source,
+context, glossary, language-quality, and token checks. File creation and
+source-identical scaffolding do not count as progress.
+
+## Resume point
+
+The two required consecutive clean 673-entry glossary audits and the final two
+consecutive clean full all-entry Tamil audits after editorial pass 418 are complete. All 14,720 semantic
+records are reviewed. The 151 Tamil patches are cluster-encoded and included
+exactly once, the `ta-vnrevival` runtime entry and static labels are integrated,
+and all four locale-specific XNB fonts are built and round-trip verified. The
+Swift test suite passes, the release app builds for macOS 14, and its strict
+code-signature verification passes without opening the installer.

@@ -1,0 +1,96 @@
+{
+  "id": "048-island-survey-and-gourmand-requests",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_PurpleFlower_Correct",
+      "source": "Yes, yes... that seems very accurate. Thank you!$h",
+      "translation": "হ্যাঁ, হ্যাঁ... হিসাবটা বেশ নিখুঁত বলেই মনে হচ্ছে। ধন্যবাদ!$h"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_Prompt_RightPlant",
+      "source": "Island Survey -- Please report the number of purple starfish present on the island.",
+      "translation": "দ্বীপ জরিপ -- দ্বীপে থাকা বেগুনি তারামাছের সংখ্যা জানান।"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_PurpleStarfish_Question",
+      "source": "How many purple starfish can be found on the island?",
+      "translation": "দ্বীপে কতটি বেগুনি তারামাছ পাওয়া যায়?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_Failed",
+      "source": "Hmm... I think you should take a break and try doing the survey again tomorrow...",
+      "translation": "হুম... আমার মনে হয় একটু বিরতি নিয়ে আগামীকাল আবার জরিপটি করার চেষ্টা করা উচিত..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Intro_Event",
+      "source": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ah... Come in!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Welcome to my field office.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"As you can see... it's quite empty.$s#$b#Getting stuck in that cave was a huge setback to my project.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"But that's where you come in! Hee hee...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"I'm in the bone business, you see...#$b#Ancient bones, in particular... And this island is full of them.#$b#So if you ever encounter any bones, fossils, or mummified specimens on this island, bring them to my desk, okay? I'll make it worth your while!$h\"/pause 200/faceDirection SafariGuy 1/end",
+      "translation": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"আহ্... ভেতরে এসো!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"আমার দ্বীপ গবেষণা কার্যালয়ে স্বাগতম।\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"দেখতেই পাচ্ছ... জায়গাটা বেশ ফাঁকা।$s#$b#ওই গুহায় আটকে পড়ায় আমার গবেষণার বিরাট ক্ষতি হয়েছে।$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"তবে সেই ঘাটতি পূরণ করতেই তো তুমি এসেছ! হি হি...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"বুঝলে, আমি হাড়গোড় নিয়েই কাজ করি...#$b#বিশেষ করে প্রাচীন হাড়গোড়... আর এই দ্বীপে সেগুলোর ছড়াছড়ি।#$b#তাই এই দ্বীপে কখনো কোনো হাড়, জীবাশ্ম বা মমি-করা নমুনা পেলে আমার ডেস্কে নিয়ে এসো, কেমন? তোমার পরিশ্রম সার্থক করে দেব!$h\"/pause 200/faceDirection SafariGuy 1/end"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_Intro",
+      "source": "*Kribbibbit*... Who dares to enter my nest?|Ah... A humble farmer, come to cultivate my lands... How fortunate!|Oh, how the rains have blessed me!",
+      "translation": "*ক্রিবিবিট*... আমার বাসায় ঢোকার সাহস কার?|আহ্... এক বিনয়ী কৃষক, আমার জমি চাষ করতে এসেছে... কী সৌভাগ্য!|আহা, বৃষ্টি যে আমাকে কী আশীর্বাদই না করেছে!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_RequestIntro",
+      "source": "*Gurrp*... You see... my fields once teemed with fresh fruit and vegetables...|But I have grown old, and without the vigor of youth, my fields have turned to worthless dust...|*sigh*... What I would give to feast my eyes upon that banquet of delights, once more...|That's where you come in.",
+      "translation": "*গুর্‌প*... দেখছ তো... এক সময় আমার ক্ষেত টাটকা ফল আর সবজিতে ভরে থাকত...|কিন্তু এখন আমি বুড়ো হয়ে গেছি, আর যৌবনের শক্তি না থাকায় আমার ক্ষেত পরিণত হয়েছে নিষ্ফলা ধুলোয়...|*দীর্ঘশ্বাস*... সেই রসনার ভোজ আবার একবার চোখভরে দেখতে কত কিছুই না দিতে পারি...|সেখানেই তোমার দরকার।"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_RequestQuestion",
+      "source": "Ah... You have something to show me?",
+      "translation": "আহ্... আমাকে দেখানোর মতো কিছু আছে তোমার কাছে?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_RequestFailed",
+      "source": "*Kriibbitt*... What is the meaning of this?! You haven't grown the thing which I seek... Now go!",
+      "translation": "*ক্রিইবিট*... এসবের মানে কী?! আমি যা চেয়েছিলাম, তা তো তুমি ফলাওনি... এবার যাও!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_Request_0",
+      "source": "You must grow for me... that sweet delight, which is both pink and juicy...|Do not pluck it from the earth! I wish to see it in its natural state...",
+      "translation": "আমার জন্য তোমাকে ফলাতে হবে... সেই গোলাপি, রসালো মিষ্টি সুখ...|মাটি থেকে সেটি তুলবে না! আমি ওটাকে স্বাভাবিক অবস্থায় দেখতে চাই..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_Request_0_Success",
+      "source": "*Gurrrp*... Yes... This is it!|...It's bringing me back to the old days... sunny days, when things were sweeter...|*slurp*... Oh, I could take a big, juicy bite...|...But, I won't.",
+      "translation": "*গুর্‌র্‌প*... হ্যাঁ... এটাই তো!|...এ আমাকে ফিরিয়ে নিয়ে যাচ্ছে পুরোনো দিনে... সেই রৌদ্রোজ্জ্বল দিনে, যখন সবকিছু আরও মিষ্টি ছিল...|*চুকচুক*... আহা, কী বড় এক রসালো কামড়ই না দিতে পারতাম...|...কিন্তু দেব না।"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_Request_1",
+      "source": "I wish to see the long yellow thing, which tickles the skin, and waves in the wind.",
+      "translation": "আমি সেই লম্বা হলুদ জিনিসটি দেখতে চাই, যা গায়ে সুড়সুড়ি দেয় আর বাতাসে দোলে।"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_Request_1_Success",
+      "source": "*Gurrrp*... Yes... This is it!|Heh... It reminds me of an old girlfriend... *gurp*...|Look here... I could tickle you with this!|...But, I won't.",
+      "translation": "*গুর্‌র্‌প*... হ্যাঁ... এটাই তো!|হেহ্... এ আমাকে আমার এক পুরোনো প্রেমিকার কথা মনে করিয়ে দেয়... *গুর্‌প*...|এই দেখো... এটা দিয়ে তোমাকে সুড়সুড়ি দিতে পারি!|...কিন্তু দেব না।"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_Request_2",
+      "source": "I would like to see the zesty ground fruit, which maketh the breath stink...",
+      "translation": "মাটির নিচে ফলানো সেই ঝাঁঝালো ফলটি দেখতে চাই, যা নিঃশ্বাসে দুর্গন্ধ ছড়ায়..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gourmand_Request_2_Success",
+      "source": "*Gurrrp*... Yes... I ate this once, long ago. It gave me a pungent aroma for days...|...Reminds me of Papa, when I was just a tadpole...|Heh... I could take a bite, and produce that poignant odor once more...|...But, I won't.",
+      "translation": "*গুর্‌র্‌প*... হ্যাঁ... বহু আগে একবার এটি খেয়েছিলাম। কয়েক দিন ধরে আমার গা থেকে তীব্র গন্ধ বেরিয়েছিল...|...আমি যখন ছোট্ট ব্যাঙাচি ছিলাম, তখনকার বাবার কথা মনে পড়ে যায়...|হেহ্... এক কামড় দিয়ে সেই কড়া গন্ধ আবার ছড়াতে পারি...|...কিন্তু দেব না।"
+    }
+  ]
+}

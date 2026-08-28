@@ -156,6 +156,46 @@ const languages = [
       { target: "Fonts/Urdu_0", file: "assets/fonts/urdu/Urdu_0.xnb" },
     ],
   },
+  {
+    directory: "tamil",
+    suffix: "Tamil",
+    code: "ta-vnrevival",
+    buttonTarget: "ButtonTamil",
+    button: "assets/button-tamil.png",
+    title: "assets/title/TitleButtons-tamil.png",
+    fonts: "assets/fonts/tamil",
+    useLatinFont: false,
+    fontFile: "Fonts/Tamil",
+    fontPixelZoom: 3,
+    bitmapFonts: [
+      { target: "Fonts/Tamil", file: "assets/fonts/tamil/Tamil.xnb" },
+      { target: "Fonts/Tamil_0", file: "assets/fonts/tamil/Tamil_0.xnb" },
+    ],
+  },
+  {
+    directory: "bengali",
+    suffix: "Bengali",
+    code: "bn-vnrevival",
+    buttonTarget: "ButtonBengali",
+    button: "assets/button-bengali.png",
+    title: "assets/title/TitleButtons-bengali.png",
+    fonts: "assets/fonts/bengali",
+    useLatinFont: false,
+    fontFile: "Fonts/Bengali",
+    fontPixelZoom: 3,
+    bitmapFonts: [
+      { target: "Fonts/Bengali", file: "assets/fonts/bengali/Bengali.xnb" },
+      { target: "Fonts/Bengali_0", file: "assets/fonts/bengali/Bengali_0.xnb" },
+    ],
+  },
+  {
+    directory: "indonesian",
+    suffix: "Indonesian",
+    code: "id-vnrevival",
+    buttonTarget: "ButtonIndonesian",
+    button: "assets/button-indonesian.png",
+    title: "assets/title/TitleButtons-indonesian.png",
+  },
 ];
 
 const entries = {};

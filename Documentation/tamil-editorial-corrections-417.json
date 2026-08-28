@@ -1,0 +1,179 @@
+{
+  "id": "417-editorial-glossary-roots-and-one-off-name-variants",
+  "globalReplacements": [
+    ["கேரலின", "கரோலைன", 3],
+    ["அபிகெய்ல", "அபிகெயில", 4],
+    ["எவ்லின", "எவலின", 2],
+    ["ஜிஞ்சர் தீவ", "இஞ்சி தீவ", 2],
+    ["நீர்ப்பாய்ச்சி", "நீர்க்குடுவை", 4],
+    ["தண்ணீர்த் தொட்டி", "நீர்க்குடுவை", 2],
+    ["விண்மீன் துளிப்பழச் சலூன", "ஸ்டார்டிராப் மதுக்கூட", 1],
+    ["பிறந்த நாள்", "பிறந்தநாள்", 12],
+    ["பழ மர", "பழமர", 4],
+    ["அடைகாப்பான", "முட்டைப் பொரிப்பான", 11],
+    ["சரக்குப் பெட்டி இடம்", "பொருட்பட்டி இடம்", 13],
+    ["பொருட்பை நிரம்பியுள்ளது", "பொருட்பட்டி நிரம்பியுள்ளது", 1],
+    ["மரத்துண்டாக்கி", "மரச்சில்லாக்கி", 2],
+    ["பணிமேசை", "வேலைமேசை", 1],
+    ["சிறிய குளிர்சாதனப் பெட்டி", "சிறு குளிர்பெட்டி", 1],
+    ["கோட்டை கிராம", "கேஸில் வில்லேஜ்", 1],
+    ["பதப்படுத்தும் ஜாடி", "பதனக் குடுவை", 1],
+    ["வைப்பிட டைல் காட்டி", "இடமிடல் சதுரக் குறி", 1],
+    ["உருப்பெருக்க அளவு", "பெரிதாக்கல் நிலை", 1],
+    ["நடமாடும் வீ", "சக்கர வீ", 5],
+    ["டிரெய்லருடன்", "சக்கர வீட்டுடன்", 1],
+    ["ஸ்டார்டிராப் மூத்த", "விண்மீன் துளிப்பழம் மூத்த", 1],
+    ["புகைத்த மீன", "புகைமீன", 1],
+    ["குறி சொல்பவரிடம்", "குறிசொல்லியிடம்", 1],
+    ["அரியகாக்கை", "அரிய சோளக்காட்டு பொம்மை", 3],
+    ["சோளக்கொல்லைப் பொம்மைகள்", "சோளக்காட்டு பொம்மைகள்", 1],
+    ["சேகரிப்புப் பக்கம்", "சேகரிப்புகள் பக்கம்", 1]
+  ],
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11114",
+      "replacements": [["இஇஇஇரகசியக் காடு", "இரகசியக் காடு"]]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "MasteryCave",
+      "replacements": [
+        ["ஐந்து வழிகளிலும் தேர்ச்சி பெற்றவர்", "ஐந்து வழிகளிலும் வல்லமை பெற்றவர்"]
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "0_Mastery",
+      "replacements": [["விவசாயத் தேர்ச்சி", "விவசாய வல்லமை"]]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "1_Mastery",
+      "replacements": [["மீன்பிடித் தேர்ச்சி", "மீன்பிடித்தல் வல்லமை"]]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "2_Mastery",
+      "replacements": [["சேகரிப்புத் தேர்ச்சி", "காட்டுச்சேகரிப்பு வல்லமை"]]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "3_Mastery",
+      "replacements": [["சுரங்கத் தேர்ச்சி", "சுரங்கப்பணி வல்லமை"]]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "4_Mastery",
+      "replacements": [["போர்த் தேர்ச்சி", "போர் வல்லமை"]]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Mastery",
+      "replacements": [["தேர்ச்சி:", "வல்லமை:"]]
+    },
+    {
+      "target": "Strings/Notes",
+      "key": "3",
+      "replacements": [["உன் தேர்ச்சியை", "உன் வல்லமையை"]]
+    },
+    {
+      "target": "Characters/Dialogue/Lewis",
+      "key": "movieTheater",
+      "replacements": [
+        ["புதிய திரைப்பட அரங்கை", "புதிய திரையரங்கத்தை"],
+        ["செழிப்பான அரங்கு", "செழிப்பான திரையரங்கம்"]
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Connecting",
+      "replacements": [["இணைக்கிறது", "இணைக்கப்படுகிறது"]]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_ConnectingOnlineServices",
+      "replacements": [["இணையச் சேவைகளுடன் இணைக்கிறது", "இணையச் சேவைகளுடன் இணைக்கப்படுகிறது"]]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "BlueGrassStarter_Description",
+      "replacements": [
+        ["நீலப் புற்களின் ஒரு கொத்தை நட, இதை உங்கள் பண்ணையில் வைக்கவும்.", "நீலப்புல் கொத்தை நடுவதற்கு இதை உங்கள் பண்ணையில் வைக்கவும்."]
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Farm_Ranching_Description",
+      "replacements": [["நீலப் புல்", "நீலப்புல்"]]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "AmethystRing_Description",
+      "replacements": [["பின்னுக்குத் தள்ளும் ஆற்றலை", "பின்னுக்குத்தள்ளலை"]]
+    },
+    {
+      "target": "Data/SecretNotes",
+      "key": "1007",
+      "replacements": [["பின்னுக்குத் தள்ளுதல்", "பின்னுக்குத்தள்ளல்"]]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "MuscleRemedy_Description",
+      "replacements": [["'களைப்பை'", "'சோர்வை'"]]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "DefenseEnchantment",
+      "replacements": [["+{0} பாதுகாப்பு", "+{0} தற்காப்பு"]]
+    },
+    {
+      "target": "Characters/Dialogue/Clint",
+      "key": "mineArea_40",
+      "replacements": [
+        ["உங்கள் கல்லுடைப்பானிலுள்ள", "உங்கள் பிக்காக்ஸிலுள்ள"],
+        ["உங்கள் கல்லுடைப்பானை", "உங்கள் பிக்காக்ஸை"]
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Clint",
+      "key": "mineArea_121",
+      "replacements": [["உங்கள் கல்லுடைப்பானில்", "உங்கள் பிக்காக்ஸில்"]]
+    },
+    {
+      "target": "Strings/Notes",
+      "key": "9",
+      "replacements": [["குந்தாலியால்", "பிக்காக்ஸால்"]]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11600",
+      "replacements": [["கைக்கோடரித் திறன்", "பிக்காக்ஸ் திறன்"]]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13952",
+      "replacements": [["உங்கள் கைக்கோடரி", "உங்கள் பிக்காக்ஸ்"]]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13956",
+      "replacements": [["உங்கள் கைக்கோடரி", "உங்கள் பிக்காக்ஸ்"]]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13963",
+      "replacements": [["மேம்படுத்தப்பட்ட கைக்கோடரி", "மேம்படுத்தப்பட்ட பிக்காக்ஸ்"]]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13964",
+      "replacements": [["மிக வலிமையான கைக்கோடரி", "மிக வலிமையான பிக்காக்ஸ்"]]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Pickaxe.cs.14194",
+      "replacements": [["உங்கள் கைக்கோடரி", "உங்கள் பிக்காக்ஸ்"]]
+    }
+  ]
+}

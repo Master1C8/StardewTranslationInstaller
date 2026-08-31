@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "noPunch": "pause 10/message \"کِل: حرفی با تو ندارم. از سر راهم برو کنار.\"/speed farmer 2/move farmer 1 0 3/move LeahEx 0 2 2/message \"کِل: جدی می‌گویم، لیا... اینجا با این دهاتی ساده‌لوح چه کار می‌کنی؟\"/faceDirection farmer 2/showFrame Leah 26/pause 1000/showFrame Leah 27/showFrame 94/playSound clubhit/screenFlash .25/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/stopAnimation farmer/speak Leah \"@ از هر نظر ${مرد^انسان}$ بهتری از توست!$a#$b#حالا از اینجا برو و هرگز برنگرد!$a\"/move Leah -1 0 0/move Leah 0 -4 1/speak Leah \"برویم، @. فکر نکنم کِل دیگر مزاحممان شود.\"/move farmer 0 1 2/faceDirection Leah 2 true/move farmer -2 0 0/move Leah 0 -11 0 true/move farmer 0 -11 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"این بار جای خلوت‌تری پیدا کنیم...$l\"/playMusic none/pause 2000/end dialogue Leah \"خب، پیک‌نیک آن‌طور که می‌خواستم پیش نرفت.$h\""
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "id": "th-long-0215",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "alreadyGotNuts",
+      "source": "pause 50/pause 50/pause 1000/speak Birdie \"Though you're a stranger, you went out of your way to help an old lady.#$b#Bless your heart!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "translation": "pause 50/pause 50/pause 1000/speak Birdie \"แม้จะเป็นคนแปลกหน้า แต่เธอก็อุตส่าห์ช่วยหญิงชราคนหนึ่ง#$b#ขอให้ได้รับพร!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "qiNutDoor",
+      "source": "You hear a strange voice from behind the door...#'Only the greatest walnut hunters may enter here.'^    Your current status: {0}/100",
+      "translation": "คุณได้ยินเสียงประหลาดจากหลังประตู...#'เฉพาะนักล่าวอลนัตผู้ยิ่งใหญ่ที่สุดเท่านั้นที่เข้ามาได้'^    สถานะปัจจุบันของคุณ: {0}/100"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateBatteries",
+      "source": "Donate 5 battery packs to repair the ticket machine?",
+      "translation": "บริจาคแบตเตอรี่ 5 ชุดเพื่อซ่อมเครื่องขายตั๋วหรือไม่?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateHardwood",
+      "source": "Donate 200 hardwood for hull repairs?",
+      "translation": "บริจาคไม้เนื้อแข็ง 200 ชิ้นเพื่อซ่อมตัวเรือหรือไม่?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateIridium",
+      "source": "Donate 5 iridium bars to repair the anchor?",
+      "translation": "บริจาคแท่งอิริเดียม 5 แท่งเพื่อซ่อมสมอหรือไม่?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateBatteriesHint",
+      "source": "This machine could be repaired with 5 battery packs.",
+      "translation": "ซ่อมเครื่องนี้ได้ด้วยแบตเตอรี่ 5 ชุด"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateHardwoodHint",
+      "source": "The hull could be repaired with 200 pieces of hardwood.",
+      "translation": "ซ่อมตัวเรือได้ด้วยไม้เนื้อแข็ง 200 ชิ้น"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateIridiumHint",
+      "source": "The anchor could be repaired with 5 iridium bars.",
+      "translation": "ซ่อมสมอได้ด้วยแท่งอิริเดียม 5 แท่ง"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_boatcomplete",
+      "source": "All materials have been found!#The boat will be repaired overnight.",
+      "translation": "พบวัสดุครบแล้ว!#เรือจะได้รับการซ่อมข้ามคืน"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_firstRide",
+      "source": "She looks good as new!",
+      "translation": "เรือดูดีเหมือนใหม่!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_random0",
+      "source": "Sorry if I smell like fish, heh!",
+      "translation": "ขอโทษถ้าข้ามีกลิ่นปลา ฮึฮึ!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_random1",
+      "source": "Ahoy!",
+      "translation": "อะฮอย!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_Ostrich",
+      "source": "A new ostrich chick hatched... it's a big one!",
+      "translation": "ลูกนกกระจอกเทศตัวใหม่ฟักแล้ว... ตัวใหญ่ทีเดียว!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeFinale",
+      "source": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Wow...#$b#Look how far we've come!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"The collection looks fantastic, and it's all thanks to you, @.\"/emote farmer 32/speak SafariGuy \"Here, as a way of saying 'thanks', I want to teach you something.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Learned how to craft 'Ostrich Incubator'\"/pause 400/speak SafariGuy \"This device will allow you to raise ostriches back home. Just place the incubator in a barn, place an ostrich egg inside, and wait...\"/faceDirection SafariGuy 0/speak SafariGuy \"Getting your hands on an ostrich egg is a different story, though... I'll leave that up to you!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Heh... Well... now the real work begins.#$b#I'll be studying these bones for years to come!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Farewell, @!\"/pause 600/end",
+      "translation": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"ว้าว...#$b#ดูสิว่าเรามาไกลเพียงใด!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"ของสะสมดูยอดเยี่ยม และทั้งหมดเป็นเพราะคุณ @\"/emote farmer 32/speak SafariGuy \"เอ้านี่ เพื่อกล่าว 'ขอบคุณ' ผมอยากสอนบางอย่างให้คุณ\"/faceDirection farmer 3/pause 700/playSound reward/message \"เรียนรู้การประดิษฐ์ 'ตู้ฟักนกกระจอกเทศ'\"/pause 400/speak SafariGuy \"อุปกรณ์นี้จะทำให้คุณเลี้ยงนกกระจอกเทศที่บ้านได้ เพียงวางตู้ฟักในโรงนา ใส่ไข่นกกระจอกเทศข้างใน แล้วรอ...\"/faceDirection SafariGuy 0/speak SafariGuy \"แต่การหาไข่นกกระจอกเทศเป็นอีกเรื่องหนึ่ง... ผมขอปล่อยให้เป็นหน้าที่คุณ!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"ฮึ... เอาล่ะ... ตอนนี้งานจริงเริ่มขึ้นแล้ว#$b#ผมจะศึกษากระดูกเหล่านี้ไปอีกหลายปี!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"ลาก่อน @!\"/pause 600/end"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Squawk",
+      "source": "*Awk*",
+      "translation": "*แอ้ก*"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoLava",
+      "source": "Fire mountain... Hidden down fire river...",
+      "translation": "ภูเขาไฟ... ซ่อนอยู่ปลายแม่น้ำไฟ..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_BuriedArch",
+      "source": "Buried near bones...",
+      "translation": "ฝังใกล้กระดูก..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Arch",
+      "source": "Help man in tent...",
+      "translation": "ช่วยคนในเต็นท์..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_NorthBuried",
+      "source": "{0} buried in the north...",
+      "translation": "{0} ฝังทางเหนือ..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_WestBuried",
+      "source": "{0} buried in the west...",
+      "translation": "{0} ฝังทางตะวันตก..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_NorthHidden",
+      "source": "{0} hidden in the north...",
+      "translation": "{0} ซ่อนทางเหนือ..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_HutTree",
+      "source": "Bulging very close by...",
+      "translation": "ปูดอยู่ใกล้มาก..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_TigerSlime",
+      "source": "Stripey slimes to the west...",
+      "translation": "สไลม์ลายทางตะวันตก..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_MusselStone",
+      "source": "{0} stuck in shelly stones by shore...",
+      "translation": "{0} ติดในหินเปลือกหอยริมฝั่ง..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_IslandFarming",
+      "source": "{0} grow on the farm to the west...",
+      "translation": "{0} ปลูกในฟาร์มทางตะวันตก..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_WestHidden",
+      "source": "{0} hidden in the west...",
+      "translation": "{0} ซ่อนทางตะวันตก..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_IslandFishing",
+      "source": "{0} deep in the water...",
+      "translation": "{0} ลึกในน้ำ..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoTreasure",
+      "source": "{0} hidden in fire mountain treasures...",
+      "translation": "{0} ซ่อนในสมบัติภูเขาไฟ..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoBarrel",
+      "source": "{0} encased in fire mountain gadgets...",
+      "translation": "{0} อยู่ในอุปกรณ์ภูเขาไฟ..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoMining",
+      "source": "{0} nutty stone in fire mountain...",
+      "translation": "{0} หินมีถั่วในภูเขาไฟ..."
+    }
+  ]
+}

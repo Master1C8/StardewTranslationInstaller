@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"اِ... سلام. صبح بخیر.#$b#متوجه شدم سنگ‌ها را می‌شکنی و سنگ معدن پیدا می‌کنی. خوب است!\"/pause 500/speak Clint \"اگر می‌خواهی بیشترین بهره را از سنگ معدن‌ها ببری، به کوره نیاز داری.\"/pause 500/speak Clint \"اتفاقاً یک نسخهٔ اضافه از نقشه‌ها داشتم. بفرما، می‌خواهم مال تو باشد.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"ساخت «کوره» را یاد گرفتی\"/pause 800/speak Clint \"کوره به تو اجازه می‌دهد شمش‌های فلزی ذوب کنی. شمش‌ها برای ساخت، ساختمان‌سازی و ارتقای ابزارها به کار می‌روند.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \" وقتی چند شمش مس ذوب کردی، بد نیست یکی از ابزارهایت را برایت ارتقا بدهم. کارت را خیلی آسان‌تر می‌کند.#$b#خب، بسیار خوب. می‌روم خانه. مراقب خودت باش.\"/pause 200/addQuest 11/end"
+      }
+    }
+  ]
+}

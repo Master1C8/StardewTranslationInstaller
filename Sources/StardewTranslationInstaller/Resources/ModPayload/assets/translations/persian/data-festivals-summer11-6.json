@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "name": "لواو",
+        "conditions": "Beach/900 1400",
+        "mainEvent": "pause 500/playMusic ocean/globalFade/viewport -1000 -1000/loadActors MainEvent/addTemporaryActor Governor 16 32 35 10 2/warpFarmers 33 19 0 32 19 0 40 19 0 28 9 1 42 9 3 37 19 0 38 19 0 34 19 0 right 36 6 2/viewport 35 12 true/pause 2000/faceDirection Lewis 3/pause 100/faceDirection Lewis 2/pause 100/faceDirection Lewis 1/pause 100/faceDirection Lewis 2/speak Lewis \"خب دوستان، باز هم وقت مراسم غذای همگانی رسیده است.#$b#اطمینان دارم امسال همه مواد باکیفیتی در دیگ ریخته‌اید. نمی‌خواهیم فرماندار از دیدارش از دره پشیمان شود!\"/pause 1000/faceDirection Lewis 3/pause 500/speak Lewis \"خب... فرماندار؟ افتخار می‌دهید سوپ را بچشید؟\"/pause 500/speak Governor \"البته! تمام سال منتظرش بوده‌ام.\"/playMusic none/pause 500/move Governor 0 1 2/pause 1000/playSound dwop/showFrame Governor 8 true/pause 1000/animate Governor false false 200 8 8 9 10 11 11/pause 1100/playSound sipTea/pause 1000/playSound gulp/pause 500/showFrame Governor 8 true/animate Governor false false 200 11 10 9 8/pause 900/speak Governor \"...$h\"/pause 300/cutscene governorTaste/null"
+      }
+    }
+  ]
+}

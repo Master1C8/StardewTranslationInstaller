@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "9333219/O Sebastian/f Sebastian 3500/w rainy/t 600 1900": "rain/48 36/farmer 49 31 2 Sebastian 50 36 3/makeInvisible 44 31 5 5/addConversationTopic sebastianFrog 0/skippable/move farmer 0 4 2/faceDirection Sebastian 0/speak Sebastian \"مرحبًا يا @... يسعدني أنك جئت.\"/emote farmer 8/faceDirection Sebastian 3/speak Sebastian \"ثمة ضفدع مصاب في تلك الشجيرة... علي إنقاذه!\"/emote farmer 28/faceDirection Sebastian 0/speak Sebastian \"أحتاج إلى مساعدتك. اذهب إلى الشجيرة وحاول دفعه إلى المجيء نحوي. سأنتظر هنا وأمسك به.\"/pause 500/faceDirection Sebastian 3/move farmer -5 0 2/pause 500/showFrame Sebastian 54/playSound grassyStep/pause 500/speak Sebastian \"حسنًا... أأنت مستعد؟\"/emote farmer 56/textAboveHead Sebastian \"الآن!\"/pause 500/doAction 44 36/pause 1000/doAction 44 36/pause 1000/doAction 44 36/playSound croak/specificTemporarySprite sebastianFrog/pause 10000/playSound coin/showFrame Sebastian 55/jump Sebastian/textAboveHead Sebastian \"أمسكت به!\"/move farmer 5 0 2/move farmer 0 1 1/speak Sebastian \"يا له من مسكين صغير... قدمه مشوهة تمامًا. $s\"/emote farmer 28/quickQuestion #ماذا ينبغي أن نفعل به؟#إنه ابننا الجديد...#لا أظن أنه سينجو#لنعتن به حتى يتعافى!(break)speak Sebastian \"سآخذه إلى المنزل الآن وأجعله مرتاحًا.#$b#أظن أنني سأبحث في كيفية الاعتناء بالضفادع. لعل مارني تعرف شيئًا عن ذلك.\"(break)speak Sebastian \"هاه... أجل، أظن ذلك.$h#$b#لا شك أن أنفه يشبه أنفك...$7\"\\faceDirection farmer 2 true\\jump farmer\\showFrame farmer 94\\startJittering(break)emote Sebastian 12\\speak Sebastian \"حسنًا، اعذرني إن لم آخذ بكلامك... سأمنح هذا المسكين فرصة.\"(break)speak Sebastian \"سنبذل قصارى جهدنا. لكن لا تتعلق به كثيرًا بعد...\"/pause 300/stopJittering/stopAnimation farmer/faceDirection farmer 1/pause 500/speak Sebastian \"لنأخذه إلى المنزل.\"/pause 500/playSound croak/pause 2000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FishShop",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"آهای!\"/pause 500/move Willy 1 0 2/speak Willy \"بیا داخل... راحت باش...\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"آره... جنس خوبی است. ماهی‌ها دیوانه‌اش می‌شوند.#$b#فقط... اِ... بعد از فروبردن دست‌هایت در آن شیره‌ها حتماً خوب بشویشان...$s\"/speak Willy \"می‌گویند بویش تا هفت هفته می‌ماند، ${پسر^خانم}$...\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"خب... ماهی زیادی گرفته‌ای؟\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #بله#نه#خیلی سخت است...(break)emote Willy 20\\speak Willy \"آها! یک ${مرد^بانو}$ درست باب دل من...$h\"\\pause 500\\speak Willy \"همیشه می‌توانی ${به یک ماهیگیر اعتماد کنی^روی بانویی ماهیگیر حساب کنی}$...\"\\speak Willy \"دست‌کم پدربزرگم همین را می‌گفت. هاها!$h#$b#خب، ادامه بده... اگر بتوانی همهٔ ماهی‌های این آب‌ها را بگیری، جایزه‌ای ویژه منتظرت است...\"(break)emote Willy 28\\speak Willy \"اهل ماهیگیری نیستی، نه؟ حیف شد...$s\"(break)emote Willy 16\\speak Willy \"بله، ورزش سختی است... به‌ویژه برای تازه‌کارها.#$b#«چوب تمرینی» را امتحان کرده‌ای؟ همین‌جا با قیمت خیلی کم می‌فروشم.#$b#تا کمی باتجربه‌تر شوی باید از «چوب تمرینی» استفاده کنی.\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #چه مشکلی هست؟#همه‌چیز خوب است؟(break)pause 100(break)pause 100/pause 400/speak Willy \"آره... خب، این اواخر کسب‌وکار سخت شده.$s#$b#تقریباً از همان وقتی شروع شد که مرکز اجتماعات قدیمی ویران شد... ماهی‌هایم دیگر مثل قبل فروش نمی‌روند...#$b#فقط برای گذران زندگی دو برابر کار می‌کنم!\"/faceDirection Willy 2/pause 300/speak Willy \"برای پروژه‌های خودم وقتی ندارم...$s#$b#اما اگر اوضاع اینجا دوباره رونق بگیرد، شاید وقت کنم چیزی نشانت بدهم...\"/move Willy -1 0 0/playMusic none/speak Willy \"هه‌هه... بله. آن پشت است... «دوستی قدیمی» که روزهای بهتری دیده...$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"یک روز، ${پسر^خانم}$... منظورم را می‌فهمی.\"/pause 2000/end"
+      }
+    }
+  ]
+}

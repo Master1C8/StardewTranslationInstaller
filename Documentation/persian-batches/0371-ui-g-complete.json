@@ -1,0 +1,39 @@
+{
+  "id": "0371-ui-g-complete",
+  "reviewedAt": "2026-08-28",
+  "simpleTarget": {
+    "target": "Strings/UI",
+    "entries": {
+      "Chat_PrivateMessageFormat": ["{0} [Private]: {1}", "{0} [خصوصی]: {1}"],
+      "Chat_PlayerJoined": ["{0} has joined.", "{0} پیوست."],
+      "Chat_PlayerJoinedNewName": ["Unnamed Farmhand", "کارگر بی‌نام مزرعه"],
+      "Chat_PlayerDeath": ["{0} was knocked unconscious.", "{0} از هوش رفت."],
+      "Chat_CaughtLegendaryFish": ["{0} caught the legendary '{1}' fish.", "{0} ماهی افسانه‌ای «{1}» را گرفت."],
+      "Chat_TrashCan": ["{1} caught {0} digging through the trash...", "{1}، {0} را هنگام گشتن در زباله‌ها دید..."],
+      "Chat_LinusTrashCan": ["Linus was impressed!", "لینوس تحت‌تأثیر قرار گرفت!"],
+      "Chat_Bundle": ["Bundle complete!", "بسته کامل شد!"],
+      "Chat_Stardrop": ["{0} found a stardrop.", "{0} یک استاردراپ پیدا کرد."],
+      "Chat_HorseNamed": ["{0} named a horse {1}.", "{0} نام اسبی را {1} گذاشت."],
+      "Chat_PrairieKing": ["{0} beat Journey of the Prairie King.", "{0} سفر شاه چمنزار را تمام کرد."],
+      "Chat_JunimoKart": ["{0} beat Junimo Kart.", "{0} جونیمو کارت را تمام کرد."],
+      "Chat_Dating": ["{0} is dating {1}.", "{0} با {1} رابطه دارد."],
+      "Chat_BreakUp": ["{0} broke up with {1}.", "{0} رابطه‌اش را با {1} تمام کرد."],
+      "Chat_Engaged": ["{0} got engaged to {1}.", "{0} با {1} نامزد کرد."],
+      "Chat_MuseumComplete": ["{0} Farm has completed the museum collection.", "مزرعهٔ {0} مجموعهٔ موزه را کامل کرد."],
+      "Chat_Museum40": ["{0} Farm has donated 40 pieces to the museum.", "مزرعهٔ {0}، 40 شیء به موزه اهدا کرد."],
+      "Chat_donation": ["{0} donated '{1}' to the museum.", "{0}، «{1}» را به موزه اهدا کرد."],
+      "Chat_Walked10k": ["{0} has walked 10,000 paces.", "{0}، 10,000 قدم راه رفته است."],
+      "Chat_Walked100k": ["{0} has walked 100,000 paces.", "{0}، 100,000 قدم راه رفته است."]
+    }
+  },
+  "simplePreserved": {
+    "target": "Strings/UI",
+    "reason": "These chat entries contain only placeholders, punctuation, or an unknown-speaker symbol and have no lexical content to translate.",
+    "keys": [
+      "Chat_UnknownUserName",
+      "Chat_PlayerName",
+      "Chat_ChatMessageFormat",
+      "Chat_UserNotificationMessageFormat"
+    ]
+  }
+}

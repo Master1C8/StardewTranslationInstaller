@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "sebastianRoom": "resetVariable/move farmer 0 2 1/playSound mouseClick/move farmer 3 0 0/playSound mouseClick/move farmer 0 -1 0/playSound mouseClick/move farmer 0 -1 0/pause 500/faceDirection farmer 0/question fork1 \"#بپرس روی چه چیزی کار می‌کند.#از تزئینات اتاقش تعریف کن.\"/fork decor/pause 500/stopAnimation Sebastian/speak Sebastian \"به‌صورت آزاد برنامه‌نویسی می‌کنم.\"/switchEvent enterRobin"
+      }
+    }
+  ]
+}

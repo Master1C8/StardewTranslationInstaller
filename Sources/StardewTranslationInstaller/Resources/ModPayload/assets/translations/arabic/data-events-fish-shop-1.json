@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FishShop",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"أهلًا!\"/pause 500/move Willy 1 0 2/speak Willy \"ادخل... واجعل المكان مكانك...\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"أجل... هذا شيء جيد. تفقد الأسماك صوابها من أجله.#$b#لكن... آه... احرص على غسل يديك جيدًا بعد غمسهما في تلك العصارة...$s\"/speak Willy \"من المعروف أن الرائحة قد تبقى سبعة أسابيع يا ${فتى^فتاة}$...\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"إذن... هل اصطدت كثيرًا من الأسماك؟\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #نعم#لا#الأمر صعب جدًا...(break)emote Willy 20\\speak Willy \"آها! ${رجل^امرأة}$ على هواي...$h\"\\pause 500\\speak Willy \"يمكنك دائمًا ${الوثوق بصياد^الاعتماد على امرأة تصطاد السمك}$...\"\\speak Willy \"هذا ما كان جدي العجوز يقوله على الأقل. هاها!$h#$b#حسنًا، واصل الصيد... إن استطعت صيد كل سمكة في هذه المياه، فلدي جائزة خاصة تنتظرك...\"(break)emote Willy 28\\speak Willy \"لست من هواة الصيد، أليس كذلك؟ هذا مؤسف...$s\"(break)emote Willy 16\\speak Willy \"أجل، إنها رياضة صعبة... ولا سيما للمبتدئ.#$b#هل جربت «صنارة التدريب»؟ أبيعها هنا بسعر منخفض جدًا.#$b#ينبغي أن تجرب استخدام «صنارة التدريب» حتى تكتسب مزيدًا من الخبرة.\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #ما الخطب؟#هل كل شيء بخير؟(break)pause 100(break)pause 100/pause 400/speak Willy \"أجل... حسنًا، صارت التجارة صعبة مؤخرًا.$s#$b#بدأ كل شيء تقريبًا حين تداعى المركز المجتمعي القديم... لم تعد أسماكي تباع كما كانت...#$b#وصرت أعمل ضعف الوقت لمجرد تدبير معيشتي!\"/faceDirection Willy 2/pause 300/speak Willy \"لا وقت لدي لمشروعاتي الخاصة...$s#$b#لكن إن انتعشت الأمور هنا مجددًا، فقد أجد وقتًا لأريك شيئًا...\"/move Willy -1 0 0/playMusic none/speak Willy \"ههه... أجل. إنها في الخلف... «صديقة قديمة» عرفت أيامًا أفضل...$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"ستفهم ما أعنيه يومًا ما يا ${فتى^فتاة}$...\"/pause 2000/end"
+      }
+    }
+  ]
+}

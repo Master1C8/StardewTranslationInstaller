@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "3912125/f Elliott 3500/O Elliott/t 500 1500/p Elliott/U 8": "continue/-10000 -1000/farmer -100 -100 2 Elliott -100 -100 2/addConversationTopic ElliottGone1 0/addConversationTopic elliottGone 6/addWorldState elliottGone/skippable/warp Elliott 63 15/warp farmer -100 -100/faceDirection Elliott 2/showFrame Elliott 38/viewport 64 15 clamp true/pause 1000/pause 2000/playSound doorClose/warp farmer 64 15/positionOffset farmer 0 16/pause 500/faceDirection farmer 3/emote farmer 8/pause 500/showFrame Elliott 39/emote Elliott 16/pause 500/speak Elliott \"@! تلقيت للتو أروع الأخبار!\"/pause 50/jump Elliott/pause 500/speak Elliott \"جاءت الدعوة في مهلة قصيرة جدًا... لكنني دعيت إلى جولة قراءات لكتابي «%book»!\"/emote farmer 32/showFrame Elliott 0/faceDirection Elliott 1/pause 500/emote Elliott 28/pause 400/speak Elliott \"...سأغيب عن البلدة أسبوعًا. هل ستكون بخير؟$s\"/quickQuestion #نعم، سأكون بخير.#سأكون في غاية السعادة!#لا تذهب!(break)emote Elliott 20\\speak Elliott \"سأشتاق إليك كثيرًا يا عزيزي.#$b#وسأكتب إليك كل يوم بالطبع!\"\\emote farmer 20(break)jump Elliott\\pause 500\\speak Elliott \"هاه... نكتة طيبة. لا تفرط في الحماس الآن...$8#$b#سأحرص على الكتابة إليك كل يوم. سأشتاق إليك!\"(break)speak Elliott \"لكن يا عزيزي... هذه فرصة نادرة بالنسبة إلي. لا بد أن أذهب!$s#$b#لا تجعلني أشعر بالذنب حيال ذلك من فضلك. سأكتب إليك كل يوم، وسأعود قبل أن تشعر بغيابي.\"/pause 1000/animate Elliott true true 100 35/animate farmer true true 100 101/specificTemporarySprite heart 63 15/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/pause 500/speak Elliott \"سأغادر في وقت مبكر صباح غد...#$b#علي أن أحزم أمتعتي!$8\"/end dialogue Elliott \"لا تدعني أنسى فرشاة شعري ورذاذ الشعر والمشط دقيق الأسنان وملطف الشعر بالرمان!\""
+      }
+    }
+  ]
+}

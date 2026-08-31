@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "100/f Kent 750/p Kent/p Jodi": "none/6 5/farmer 7 12 0 Jodi 5 5 0 Kent 7 16 2/skippable/playSound cowboy_monsterhit/move farmer 0 -3 0/playSound cowboy_monsterhit/move farmer 0 -2 0/playSound cowboy_monsterhit/move farmer 0 -1 0/playSound cowboy_monsterhit/move farmer 0 -1 3/playSound cowboy_monsterhit/pause 200/faceDirection Jodi 1/speak Jodi \"سلام، @! فقط دارم کمی پاپ‌کورن درست می‌کنم.$h\"/pause 50/playSound cowboy_monsterhit/pause 79/playSound cowboy_monsterhit/pause 100/playSound cowboy_monsterhit/pause 26/playSound cowboy_monsterhit/pause 39/playSound cowboy_monsterhit/pause 50/playSound cowboy_monsterhit/pause 110/playSound cowboy_monsterhit/pause 59/playSound cowboy_monsterhit/speak Kent \"آآآآآآآآآه!!!$u\"/faceDirection Jodi 2 true/faceDirection farmer 2 true/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -1 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -2 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -1 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -2 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -1 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -3 0/playSound cowboy_monsterhit/pause 50/playSound cowboy_monsterhit/pause 100/playSound cowboy_monsterhit/pause 80/playSound cowboy_monsterhit/speak Kent \"آن صدا...$s\"/playSound cowboy_monsterhit/pause 70/playSound cowboy_monsterhit/pause 100/playSound cowboy_monsterhit/pause 180/playSound cowboy_monsterhit/emote Kent 12/faceDirection Kent 3/speak Kent \"باید می‌دانستی آن صدا جنگ را به یادم می‌آورد!$u\"/pause 50/playSound cowboy_monsterhit/pause 75/playSound cowboy_monsterhit/faceDirection Jodi 0/playSound openBox/pause 400/faceDirection Jodi 2/pause 500/playMusic desolate/faceDirection Kent 2/pause 800/showFrame Kent 16/pause 800/speak Kent \"...دوستان خوب زیادی را در آن سنگرهای خونین از دست دادم.$s\"/pause 800/emote Jodi 28/pause 500/speak Jodi \"اما عزیزم... پیش از رفتنت پاپ‌کورن همیشه خوراکی محبوبت بود.$s\"/pause 500/showFrame Kent 0/pause 500/pause 800/speak Kent \"...همه‌چیز تغییر کرده است.\"/pause 600/faceDirection Jodi 1/pause 400/move Jodi 1 0 1/speak Jodi \"*پچ‌پچ* @... می‌توانی چیزی به او بگویی؟$s\"/pause 300/faceDirection farmer 3/pause 500/faceDirection farmer 2/pause 500/faceDirection Kent 0/pause 300/speak Kent \"$q 215 null#(چیزی به کنت بگو)$s#$r 215 -25 event_popcorn1#تقصیر جودی است... باید بهتر می‌دانست!#$r 215 50 event_popcorn2#می‌دانم رنج می‌کشی... اما همسرت را سرزنش نکن.#$r 215 -50 event_popcorn3#(دروغ) مرا سرزنش کن... من پاپ‌کورن خواستم\"/pause 900/faceDirection Kent 2/pause 700/emote Kent 28/pause 600/speak Kent \"...$s#$b#ببخشید، عزیزم. نمی‌توانستی بدانی صدای پاپ‌کورن آشفته‌ام می‌کند.\"/pause 700/move Jodi 0 1 1/speak Jodi \"اشکالی ندارد، عزیزم.$s#$b#آخرین چیزی که می‌خواهم ناراحت‌کردن توست. از این به بعد تمام تلاشم را می‌کنم روحیه‌ات را بالا نگه دارم.\"/pause 500/faceDirection Kent 3/pause 1000/end dialogue Kent \"خوشحالم دوست خانواده هستی، @. بابت رفتار قبلی‌ام ببخشید.\""
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "44/f Sam 500/p Sam": "sampractice/-1000 -1000/farmer 4 15 1 Sam 17 16 2 Sebastian 18 18 0/positionOffset Sebastian 32 -31/skippable/animate Sam false true 200 20 21/showFrame Sebastian 41/viewport 17 16 true/move farmer 8 0 0/pause 500/doAction 12 14/move farmer 0 -2 1/move farmer 4 0 2/pause 9000/stopAnimation Sam/showFrame Sebastian 8/pause 1000/faceDirection Sam 0/pause 800/speak Sam \"اوه، سلام @! من و سباستین داشتیم کمی با هم بداهه‌نوازی می‌کردیم.\"/move farmer 0 3 1/faceDirection Sam 3/faceDirection Sebastian 3/speak Sam \"می‌خواهیم یک گروه راه بیندازیم، اما هنوز نمی‌دانیم چه نوع موسیقی‌ای بسازیم. انتخاب‌ها خیلی زیادند.\"/pause 500/emote Sebastian 28/faceDirection Sam 2/pause 500/emote Sam 16/faceDirection Sam 3/speak Sam \"#$q 76 null#راستی، @... چه نوع موسیقی‌ای دوست داری؟#$r 76 50 Event_band1#موسیقی پاپ شاد.#$r 77 50 Event_band2#نویز راک تجربی.#$r 78 50 Event_band3#موسیقی رقص پرانرژی.#$r 79 50 Event_band4#موسیقی کانتری هانکی‌تانک.\"/move Sam 0 2 1/speak Sam \"چه می‌گویی، سباستین؟ همین را بسازیم؟\"/pause 300/faceDirection Sebastian 0/pause 300/faceDirection Sebastian 3/speak Sebastian \"...باشد.\"/pause 500/faceDirection Sam 0/move Sam 0 -2 3/speak Sam \"ممنون از کمکت، @. با مهارت گیتار من و جادوی سباستین با سینتی‌سایزر، موفقیتی پرسر‌وصدا خواهیم داشت. مطمئنم!$h\"/faceDirection Sam 2/speak Sam \"حالا فقط باید کسی را برای نواختن درام پیدا کنم...$u\"/pause 500/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "46/f Sam 1000/p Sam": "playful/7 4/farmer 7 12 0 Sam 7 5 0 Jodi 17 7 0/skippable/move farmer 0 -6 0/faceDirection Sam 2/pause 300/speak Sam \"اوه، سلام @. درست می‌خواستم میان‌وعده‌ای بخورم.\"/pause 500/speak Sam \"بگذار چیزی هم برایت بیاورم.\"/faceDirection Sam 0/pause 500/playSound openBox/pause 500/faceDirection Sam 3/playSound dwop/specificTemporarySprite dropEgg/showFrame Sam 33/jump Sam/pause 1000/emote Sam 12/showFrame Sam 12/speak Sam \"اوه نه... چه کثافت‌کاری‌ای.$s\"/speed Jodi 4/move Jodi -10 0 0/speak Jodi \"آن صدا چه بود؟\"/emote Jodi 16/speak Jodi \"*نفس‌حبس* $s\"/move Jodi -1 0 0/move Jodi 0 -1 0/speak Jodi \"این واقعاً افتضاح است! چه اتفاقی افتاد؟$u\"/speak Sam \"$q 80 null#...به او بگو، @.$s#$r 80 -10 event_snack1#سم هنگام دادن میان‌وعده به من آن را انداخت.#$r 80 50 event_snack2#سم میان‌وعده را به من داد و بعد من آن را انداختم.#$r 81 -50 event_snack3#سم عمداً آن را انداخت. فکر کرد خنده‌دار است.\"/pause 300/speak Jodi \"$p 80#ممنون که حقیقت را گفتی، @. مسئلهٔ بزرگی نیست.|چه کار کردی، سم؟! چه مرگت شده؟!$u\"/faceDirection Jodi 0/speak Sam \"بابت این ماجرا ببخشید، مامان. تمیزش می‌کنم.$s\"/emote Jodi 20/speak Jodi \"ممنون، عزیزم.$h\"/move Jodi 0 1 1/move Jodi 1 0 2 /faceDirection Sam 2 true/move Jodi 0 7 2 true/globalFade/viewport -1000 -1000/end dialogue Sam \"$p 81#از دستت عصبانی‌ام. نمی‌دانم چرا این‌طور دروغ گفتی.$s|بابت اتفاق پیش‌تر متأسفم.\""
+      }
+    }
+  ]
+}

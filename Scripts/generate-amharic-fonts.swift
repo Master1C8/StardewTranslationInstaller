@@ -521,9 +521,15 @@ do {
     }
     var registrationError: Unmanaged<CFError>?
     _ = CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, &registrationError)
-    guard let descriptors = CTFontManagerCreateFontDescriptorsFromURL(fontURL as CFURL) as? [CTFontDescriptor],
-          let descriptor = descriptors.first,
-          let fontName = CTFontDescriptorCopyAttribute(descriptor, kCTFontNameAttribute) as? String else {
+    guard let descriptors = CTFontManagerCreateFontDescriptorsFromURL(fontURL as CFURL) as? [CTFontDescriptor] else {
+        throw GeneratorError.missingFont
+    }
+    let requestedFontName = ProcessInfo.processInfo.environment["VN_FONT_NAME"]
+    let availableFontNames = descriptors.compactMap {
+        CTFontDescriptorCopyAttribute($0, kCTFontNameAttribute) as? String
+    }
+    guard let fontName = requestedFontName ?? availableFontNames.first,
+          availableFontNames.contains(fontName) else {
         throw GeneratorError.missingFont
     }
 
@@ -538,6 +544,13 @@ do {
     }
     requiredCharacters.insert("Ё")
     requiredCharacters.insert("ё")
+    if let extraCharacters = ProcessInfo.processInfo.environment["VN_EXTRA_CHARACTERS"] {
+        for scalar in extraCharacters.precomposedStringWithCanonicalMapping.unicodeScalars {
+            if !CharacterSet.whitespacesAndNewlines.contains(scalar) {
+                requiredCharacters.insert(String(scalar))
+            }
+        }
+    }
     requiredCharacters.formUnion(renderTextByCharacter.keys)
     let enumerator = FileManager.default.enumerator(
         at: translationsDirectory,
@@ -554,10 +567,20 @@ do {
         collectStrings(from: value, into: &requiredCharacters)
     }
 
+    let spriteAtlasSize = Int(ProcessInfo.processInfo.environment["VN_SPRITEFONT_ATLAS_SIZE"] ?? "")
+        ?? (renderTextByCharacter.isEmpty ? 1024 : 2048)
+    let smallAtlasSize = Int(ProcessInfo.processInfo.environment["VN_SMALLFONT_ATLAS_SIZE"] ?? "")
+        ?? (renderTextByCharacter.isEmpty ? 512 : 2048)
+    let bitmapAtlasSize = Int(ProcessInfo.processInfo.environment["VN_BITMAP_FONT_ATLAS_SIZE"] ?? "") ?? 1024
+    let generateBitmapFont = !renderTextByCharacter.isEmpty
+        || ProcessInfo.processInfo.environment["VN_GENERATE_BITMAP_FONT"] == "1"
+
     try processFont(
         name: "SpriteFont1",
-        fontSize: 34,
-        atlasSize: renderTextByCharacter.isEmpty ? 1024 : 2048,
+        fontSize: CGFloat(
+            Double(ProcessInfo.processInfo.environment["VN_SPRITEFONT_SIZE"] ?? "") ?? 34
+        ),
+        atlasSize: spriteAtlasSize,
         englishDirectory: englishDirectory,
         outputDirectory: outputDirectory,
         requiredCharacters: requiredCharacters,
@@ -566,20 +589,22 @@ do {
     )
     try processFont(
         name: "SmallFont",
-        fontSize: 22,
-        atlasSize: renderTextByCharacter.isEmpty ? 512 : 2048,
+        fontSize: CGFloat(
+            Double(ProcessInfo.processInfo.environment["VN_SMALLFONT_SIZE"] ?? "") ?? 22
+        ),
+        atlasSize: smallAtlasSize,
         englishDirectory: englishDirectory,
         outputDirectory: outputDirectory,
         requiredCharacters: requiredCharacters,
         fontName: fontName,
         renderTextByCharacter: renderTextByCharacter
     )
-    if !renderTextByCharacter.isEmpty {
+    if generateBitmapFont {
         let bitmapFontName = ProcessInfo.processInfo.environment["VN_BITMAP_FONT_NAME"] ?? "Malayalam"
         try processBmFont(
             name: bitmapFontName,
             fontSize: 12,
-            atlasSize: 1024,
+            atlasSize: bitmapAtlasSize,
             outputDirectory: outputDirectory,
             requiredCharacters: requiredCharacters,
             fontName: fontName,

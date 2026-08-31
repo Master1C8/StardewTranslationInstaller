@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/AnimalShop",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "92/e 91/i 78/t 900 1700": "jaunty/13 17/farmer 13 19 0 Marnie 13 14 2/move farmer 0 -1 0/removeQuest 21/removeItem 78/friendship Marnie 100/skippable/emote Marnie 16/speed Marnie 4/move Marnie 0 -1 2/speed Marnie 4/move Marnie 2 0 2/speed Marnie 4/move Marnie 0 3 2/move Marnie -2 0 2/pause 300/speak Marnie \"أوه! لقد أحضرت الجزر الكهفي! شكرًا جزيلًا يا ${سيد^آنسة}$ @.$h\"/pause 500/move farmer 0 -1 1/faceDirection farmer 1/pause 500/playSound woodyStep/addObject 14 17 78/showFrame 35/pause 500/showFrame 6/pause 400/faceDirection farmer 1/move Marnie 1 0 2/emote Marnie 32/speak Marnie \"يبدو رائعًا... أكاد أرغب في أكله بنفسي!$h#$b#...أكاد.\"/faceDirection farmer 1/pause 600/speak Marnie \"آمل أنه لم يسبب لك عناءً كبيرًا... إنني أقدّر ذلك حقًا.\"/pause 300/removeObject 14 17/pause 400/end dialogue Marnie \"شكرًا مجددًا على مساعدتي.$h#$e#...وماعزي تقول «شكرًا» أيضًا.\"",
+        "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"يا شين؟\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"يا إلهي...\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"يا @... هل يمكنك فعل شيء؟ إنه فاقد للوعي تمامًا.$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"بووه...$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"ماذا...؟!\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"يا شين! ما خطبك؟ لم تعد تفعل سوى الكآبة في غرفتك وشرب الجعة!$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"...\"/pause 1500/speak Shane \"لن تفهمي...\"/pause 1000/textAboveHead Marnie \"أنا قلقة...\"/move Jas 0 -8 1/speak Marnie \"ما خطتك؟ ألا تفكر في المستقبل أبدًا؟\"/faceDirection Shane 0/textAboveHead Shane \"خطة؟\"/pause 2000/speak Shane \"آمل ألا أبقى حيًا مدة تكفي لأحتاج إلى «خطة»...\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"...*تشهق باكية*...\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"يا جاز...\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"أنا آسف...\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end"
+      }
+    }
+  ]
+}

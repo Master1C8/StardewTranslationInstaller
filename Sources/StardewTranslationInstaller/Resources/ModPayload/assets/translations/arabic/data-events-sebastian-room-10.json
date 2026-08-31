@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "opening": "pause 500/speak Sebastian \"لنبدأ...\"/globalFade/viewport -1000 -1000/playMusic Crystal Bells/cutscene boardGame/pause 1700/message \"عهد الملك إليك وإلى رفاقك باستعادة عصا سولاريون... وهي مهمة ستضمن لكم، إن أتممتموها بنجاح، مكانًا في قاعة الأساطير وثروة طائلة من الذهب والفضة.\"/pause 800/message \"بعد شهر طويل من الترحال عبر أراض قاسية، تخرجون إلى حافة هاوية لتروا وجهتكم تلوح في البعيد.\"/pause 100/message \"هناك، وراء سهل يضيئه القمر، ينتصب برج مستحضر الأرواح... حيث يغتصب سيد الرهبة زارث قوة عصا سولاريون المسروقة لأغراضه الدنيئة.\"/pause 500/pause 700/updateMinigame 1/resetVariable/pause 700/question fork1 \"ينتصب البرج أمامكم.#ادخلوا من الأمام. الحظ يحالف الشجعان.#ابحثوا عن مدخل خلفي. لنبق مختبئين.\"/fork backEntrance/pause 500/updateMinigame 3/pause 50/playSound skeletonStep/pause 100/playMusic bigDrums/pause 500/message \"يحرس هيكل عظمي الممر أمامكم. يبدو خطرًا.\"/pause 900/resetVariable/question fork1 \"ماذا تفعل؟#قاتل الهيكل العظمي.#اهرب.\"/fork ranAway/pause 500/resetVariable/question fork0 \"ينقض الهيكل العظمي إلى الأمام!#لوحوا بأسلحتكم.#ارفعوا دروعكم.\"/fork swungWeapons/pause 600/playSound clubhit/updateMinigame -1/pause 500/message \"تصدون الهجوم بنجاح. يترنح الهيكل العظمي إلى الخلف، مانحًا إياكم وقتًا كافيًا للهجوم وقتل المخلوق الكريه.\"/pause 200/playSound swordswipe/pause 400/playSound skeletonDie/updateMinigame 5/updateMinigame -1/pause 1000/addMailReceived killedSkeleton/message \"تواصلون السير في الممر، حريصين على ألا تطؤوا بقايا الهيكل العظمي.\"/pause 900/switchEvent sewer"
+      }
+    }
+  ]
+}

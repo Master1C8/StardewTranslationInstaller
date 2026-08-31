@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "choseToExplain": "pause 100/textAboveHead Shane \"أشك في ذلك...\"/pause 500/resetVariable/question fork2 \"#لقد ضغطتم علي جميعًا أكثر مما ينبغي! جعلتم قول «لا» صعبًا علي!#ضغط علي بيير! فقد أراد بيع مزيد من الباقات!#(ابدأ بالبكاء)\"/pause 100/fork crying/textAboveHead Sam \"كاذب!\"/textAboveHead Alex \"أجل، بالطبع!\"/speak Elliott \"لا تلم الآخرين على أخطائك! إنك لا تفعل سوى خسارة مزيد من احترامنا...$a\"/pause 1000/faceDirection Sam 2/playMusic none/speak Sam \"...أظن أننا توصلنا إلى قرار... أليس كذلك يا شباب؟$u\"/pause 500/speak Harvey \"...أجل.$s\"/speak Sebastian \"بالتأكيد.$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"سنعاملك جميعًا ببرود من الآن فصاعدًا!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "crying": "pause 100/faceDirection farmer 0/emote farmer 28/pause 1000/emote Harvey 12 true/emote Sebastian 12 true/emote Shane 12 true/emote Sam 12 true/emote Elliott 12 true/emote Alex 12 true/speak Harvey \"لن ينجح ذلك! لن تستغل تعاطفنا هذه المرة!$a\"/speak Alex \"سأفترض أن هذه مجرد تمثيلية أخرى...$a^هذا متوقع...$a\"/pause 100/speak Sebastian \"عليك تحمل مسؤولية ما فعلته...$a\"/pause 1000/faceDirection Sam 2/playMusic none/speak Sam \"...أظن أننا توصلنا إلى قرار... أليس كذلك يا شباب؟$u\"/pause 500/speak Harvey \"...أجل.$s\"/speak Sebastian \"بالتأكيد.$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"سنعاملك جميعًا ببرود من الآن فصاعدًا!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "wewereworried": "emote farmer 40/faceDirection Marnie 1/pause 1000/faceDirection Shane 2/emote Shane 12/speak Shane \"أنا زوجك... وينبغي أن تثق بي. لطالما صارحتك بمشكلاتي.$a#$b#اسمع... أعلم أنني لم أتمكن من الإقلاع فجأة... لكنني أبذل قصارى جهدي... وقد تحسنت صحتي كثيرًا.#$b#حياتي الآن أفضل مما كانت عليه قط. ولم أعد في ذلك المكان المظلم...\"/pause 500/emote Marnie 20 true/emote farmer 20 true/pause 1300/faceDirection Shane 0/speak Shane \"أتعلم، عندما ألعب هذه اللعبة أركز إلى حد لا أستطيع معه التفكير في أي شيء آخر. وذلك يساعدني حقًا حين تداهمني «الرغبة»...\"/faceDirection Shane 2/speak Shane \"على أي حال... سألعب... آه... جولة واحدة أخرى فقط ثم أعود إلى المنزل. اتفقنا؟\"/pause 500/emote farmer 32/pause 1000/end dialogue Shane \"لا بد أنكم ارتبكتم كثيرًا حين دخلتم ورأيتموني أمام آلة ألعاب الأركيد!$h\""
+      }
+    }
+  ]
+}

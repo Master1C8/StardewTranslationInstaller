@@ -1,0 +1,17 @@
+{"id":"0283-events-shortest-a","kind":"long","records":[
+{"target":"Characters/Dialogue/Gil","key":"Snoring","translation":"……呼……"},
+{"target":"Characters/Dialogue/Gil","key":"ComeBackLater","translation":"……孩子，等你有值得拿給我看的東西再回來吧。"},
+{"target":"Data/Events/DesertFestival","key":"PlayerKilled","reviewedPreserve":true},
+{"target":"Data/Events/Forest","key":"eventEnd","translation":"faceDirection Penny 3/emote Penny 12/end dialogue Penny \"真不敢相信你竟然不肯幫我。$a\""},
+{"target":"Data/Events/Farm","key":"2146991/y 3/H","reviewedPreserve":true},
+{"target":"Data/Events/BathHouse_Pool","key":"pennyHeartbroken","reviewedPreserve":true},
+{"target":"Data/Events/SebastianRoom","key":"didntLeave","translation":"pause 5500/stopAnimation Sebastian/speak Sebastian \"好了。剛才抱歉了，我只是得先把手上的工作做完。\"/switchEvent sebastianRoom"},
+{"target":"Data/Events/HaleyHouse","key":"haleyWontDoIt","translation":"move Haley -2 0 0/move Haley 0 -2 0/emote Haley 12/faceDirection Emily 1/emote Emily 28/speak Emily \"*嘆氣*……那我自己來吧……$s\"/pause 1000/end"},
+{"target":"Data/Events/ElliottHouse","key":"howLong","translation":"pause 500/resetVariable/speak Elliott \"哦，我也不太確定……我從小就偶爾彈彈鋼琴。$7#$b#雖然彈得不怎麼樣，但很好玩。\"/switchEvent elliottPianoJoin"},
+{"target":"Data/Events/Farm","key":"giveAlexMoney","translation":"pause 200/addMailReceived gaveAlexMoney/money -5000/emote Alex 20/pause 500/speak Alex \"太棒了！星期日來酒館一趟，我會讓你看看最後的成果！$h\"/pause 500/end"},
+{"target":"Data/Events/SebastianRoom","key":"decor","translation":"pause 500/stopAnimation Sebastian/speak Sebastian \"裝飾？……哦，對……謝了。我這些年一直往牆上貼海報，看來是有點亂。\"/switchEvent enterRobin"},
+{"target":"Data/Events/Beach","key":"NoToElliott","translation":"emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"我明白了。$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"……$a\""},
+{"target":"Data/Events/SebastianRoom","key":"ranAway","translation":"pause 300/message \"你轉身沿著昏暗的走廊跑去。冰冷的石徑一路傾斜、盤旋而下，彷彿永無止境。最後，你來到了一片新的區域。\"/pause 400/switchEvent sewer"},
+{"target":"Data/Events/Town","key":"3917589/n gaveAlexMoney/O Alex/d Mon/d Tue/d Wed/d Thu/d Fri/d Sat","translation":"continue/-1000 -1000/farmer 100 100 2/addWorldState saloonSportsRoom/addMailReceived saloonSportsRoom/message \"今天是星期日……晚點去酒館看看艾利克斯最近在忙些什麼吧！\"/end"},
+{"target":"Data/Events/Temp","key":"tooBold","translation":"showFrame 6/playMusic none/positionOffset farmer -8 0/positionOffset Elliott 8 0/showFrame Elliott 12/jump Elliott/pause 1000/faceDirection Elliott 1/pause 1000/end dialogue Elliott \"真是太丟臉了……$8\""}
+]}

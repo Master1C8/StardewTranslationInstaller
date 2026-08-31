@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "57/f Harvey 1000/p Harvey": "sweet/-100 -100/farmer 10 19 0 Harvey 9 14 3/skippable/doAction 10 13/viewport 10 14/move farmer 0 -2 0/pause 300/faceDirection Harvey 2/speak Harvey \"آه يا @! كنت على وشك كتابة رسالة إليك.\"/faceDirection farmer 0/emote farmer 8/speak Harvey \"أترى، تشير سجلاتي إلى أن موعد فحصك السنوي قد حان!\"/emote farmer 28/speak Harvey \"اهدأ... لا داعي للقلق. سيكون سريعًا وغير مؤلم. اتبعني من فضلك.\"/pause 600/advancedMove Harvey false 1 0 0 -4 -5 0/move farmer 0 -7 0 false/move farmer -4 0 3 true/viewport move -1 -2 4500/proceedPosition Harvey 5 10/doAction 5 9/move Harvey 0 -5 2 false/move farmer -1 0 0 false/move farmer 0 -4 0 false/pause 500/speak Harvey \"همم... حسنًا. ابق ساكنًا من فضلك.\"/pause 2000/speak Harvey \"قل «آآآه...»\"/pause 500/speak Harvey \"حسنًا، يمكنك التوقف.\"/pause 600/move Harvey -1 0 0/pause 1000/showFrame Harvey 19/playSound openBox/pause 1000/showFrame Harvey 8/move Harvey 0 1 1/faceDirection farmer 3/speak Harvey \"علي فقط فحص مؤشراتك الحيوية.\"/pause 800/animate Harvey false true 100 4 5 6 7/positionOffset Harvey 2 0/pause 50/positionOffset Harvey 2 0/pause 50/positionOffset Harvey 2 2/pause 50/positionOffset Harvey 2 2/pause 50/positionOffset Harvey 2 2/pause 50/positionOffset Harvey 2 2/pause 50/positionOffset Harvey 2 2/pause 50/positionOffset Harvey 2 2/pause 50/stopAnimation Harvey/showFrame Harvey 20/pause 150/showFrame Harvey 21/pause 1500/speak Harvey \"$q 86 null#همم... نبضك مرتفع.$u#$r 86 20 event_heart1#أنا متوتر قليلًا...#$r 86 20 event_heart2#انقطع نفسي من العمل في المزرعة.#$r 86 -50 event_heart3#أأنت طبيب حقًا؟ نبضي طبيعي!\"/pause 800/showFrame Harvey 20/pause 150/showFrame Harvey 4/animate Harvey false true 100 7 6 5 4/positionOffset Harvey -2 0/pause 50/positionOffset Harvey -2 0/pause 50/positionOffset Harvey -2 0/pause 50/positionOffset Harvey -2 0/pause 50/positionOffset Harvey -2 0/pause 50/positionOffset Harvey -2 0/pause 50/positionOffset Harvey -2 0/pause 50/positionOffset Harvey -2 0/pause 50/stopAnimation Harvey/pause 1300/speak Harvey \"حسنًا إذن! تبدو بصحة ممتازة يا @.#$b#احرص فقط على ألا ترهق نفسك في تلك المزرعة!\"/emote farmer 32/pause 800/move farmer 0 1 2 true/faceDirection Harvey 2 true/move farmer 0 1 2/speak Harvey \"شكرًا لمرورك.$h\"/faceDirection farmer 0 true/end",
+        "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/pause 1500/showFrame 5/message \" ...يا {0}؟\"/pause 1000/message \"اهدأ الآن... وتمهل.\"/viewport 20 12 true/pause 1000/speak Harvey \"وجدك أحدهم فاقدًا للوعي ومصابًا بجروح بالغة... واضطررت إلى إجراء جراحة طارئة لك!#$b#كن أكثر حذرًا قليلًا في المرة المقبلة، اتفقنا؟$s\"/showFrame 0/pause 1000/emote farmer 28/hospitaldeath/end"
+      }
+    }
+  ]
+}

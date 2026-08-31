@@ -1,0 +1,403 @@
+{
+  "id": "0298-events-long-finale-b",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "980558/t 600 1130/w sunny/f Gus 1250",
+      "replacements": [
+        ["Good morning!", "早安！"],
+        ["Ah... what a beautiful day, huh?", "啊……今天真是個好天氣，對吧？"],
+        ["You know, as the Saloon owner, I hear about everything that's going on in town.#$b#I remember when you first moved here... everyone was a bit unsure of what to expect.#$b#A stranger from the city... an unknown personality...$s", "你知道，身為酒館老闆，鎮上發生的大小事我都聽得到。#$b#我記得你剛搬來時……大家都有點摸不清狀況。#$b#一個來自城市的陌生人……沒人知道是什麼個性……$s"],
+        ["One sec...", "等一下……"],
+        ["Sorry, I have to stir this pot every 5 minutes.", "抱歉，這鍋東西每5分鐘就得攪一下。"],
+        ["Anyway, what was I saying? Oh yeah... you know, it's like when you're making a sauce...", "話說回來，我剛才講到哪裡？哦，對了……你知道，這就像調醬汁一樣……"],
+        ["...If you put in a new spice you could ruin everything!$s", "……加入一種新香料，可能會毀掉整鍋！$s"],
+        ["...But then again, there's always a chance you'll create something new and delicious! Right? Hahahaha.$h", "……但反過來說，也可能創造出全新又美味的風味！對吧？哈哈哈哈。$h"],
+        ["Er... What I'm trying to say is...$s#$b#It's been great having you in town, and I've come to think of you as one of my good friends!", "呃……我想說的是……$s#$b#有你住在鎮上真的很好，而且我已經把你當成自己的好朋友了！"],
+        ["Anyway, I came to give you something...#$b#I was cleaning out the back room and I found this old Mini-Jukebox. I want you to have it!", "總之，我今天是來送你一樣東西的……#$b#我整理後房時找到這台舊迷你點唱機。送給你吧！"],
+        ["Received a 'Mini-Jukebox'", "獲得了「迷你點唱機」"],
+        ["It's actually an old Do-It-Yourself project of mine, from many years ago. They're pretty easy to make!#$b#So, just in case you wanted to make more, I brought the blueprints for you...", "其實這是我多年前做過的DIY作品。做起來很簡單！#$b#所以我把設計圖也帶來了，免得你以後想多做幾台……"],
+        ["Learned how to craft a 'Mini-Jukebox'", "學會了製作「迷你點唱機」"],
+        ["Well, I'm gonna head home. I gotta get this marinara back on the stove! Have a good one!", "好了，我要回家了。得趕快把這鍋義式番茄醬放回爐上！祝你今天愉快！"]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "choseToBeKnown_pennySpouse",
+      "replacements": [
+        ["Okay... let's go.", "好……我們走吧。"],
+        ["Hi there, neighbors... that's a nice new house you got there!$4", "鄰居們，你們好……這棟新房子真漂亮！$4"],
+        ["Robin... I... I dunno what to say...$s#$b#This is a dream come true... it's all I've ever wanted.$s", "羅賓……我……我不知道該說什麼……$s#$b#這簡直是夢想成真……是我一直以來最大的心願。$s"],
+        ["@? What are you doing here?", "@？你怎麼會在這裡？"],
+        ["What, you didn't tell your wife about this, @?$u", "怎麼，你沒把這件事告訴妻子嗎，@？$u"],
+        ["@ came up with this idea and paid for the whole thing!", "這是@想出的主意，而且全部費用也是他出的！"],
+        ["@... you didn't need to do this...#$b#But, thank you. This means a lot to me.$s", "@……你真的不必這麼做……#$b#但還是謝謝你。這對我意義重大。$s"],
+        ["This must have cost a fortune, @...$s#$b#...To be honest, this is kind of embarrassing. How can I ever repay you for this?$4", "這一定花了很多錢，@……$s#$b#……老實說，這讓我有點難為情。我要怎麼報答你？$4"],
+        ["...#You're my 'Mom'!. No repayment needed!#You can start by treating Penny better...", "……#您是我的「媽媽」！不用報答！#先從對潘妮好一點開始吧……"],
+        ["...I'm sorry.$s", "……對不起。$s"],
+        ["I'll do whatever you say...$s", "我會照你說的做……$s"],
+        ["Mom...$s", "媽……$s"],
+        ["Don't worry... I understand why you get angry sometimes. Your life hasn't been so easy...$s", "別擔心……我明白你有時為什麼會生氣。你的人生一直都不容易……$s"],
+        ["Thanks, kid.$h#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...", "謝了，孩子。$h#$b#從現在起，我們要像真正的家人一樣……聽見了嗎？#$b#我不想再一直這麼怨天尤人……$s#$b#我要努力改變自己的人生……"]
+      ]
+    },
+    {
+      "target": "Data/Events/Mountain",
+      "key": "384882/f Sebastian 2500/t 2000 2400",
+      "replacements": [
+        ["Hey @. I was just about to head out.#$b#Hop on...I wanna show you something.", "嘿，@。我正準備出發。#$b#上車吧……我想帶你看個地方。"],
+        ["That's Zuzu City in the distance...", "遠處那裡就是祖祖城……"],
+        ["I come here when I want to get away from everything and just... think.", "想逃離一切、靜靜……思考時，我就會來這裡。"],
+        ["$q -1 null#So, what do you think?#$r -1 0 event_city1#It's beautiful.#$r -1 10 event_city2#It gives me a strange, sad feeling.#$r -1 -10 event_city3#Kind of ugly.#$r -1 0 event_city4#You should quit smoking.", "$q -1 null#所以，你覺得怎麼樣？#$r -1 0 event_city1#很美。#$r -1 10 event_city2#讓我有種奇怪又悲傷的感覺。#$r -1 -10 event_city3#有點難看。#$r -1 0 event_city4#你應該戒菸。"],
+        ["The city used to draw me in... but now I'm finding myself happier at home in the valley.", "那座城市以前很吸引我……但現在，我發現待在山谷的家裡更快樂。"],
+        ["@...?$s#$b#Um... I've never... felt anything like this with another guy before... But you're different.$l^I don't usually bring girls to this place... In fact, you're the only one.$l#$b#You know what I'm trying to say, don't you?$l", "@……？$s#$b#呃……我以前從沒……對另一個男生有過這種感覺……但你不一樣。$l^我通常不會帶女生來這裡……事實上，你是唯一一個。$l#$b#你明白我想說什麼，對吧？$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "917409/e 463391/f Emily 1500/p Emily",
+      "replacements": [
+        ["Come in, @! I want to show you something.$h", "進來吧，@！我想讓你看個東西。$h"],
+        ["It's my secret hobby... I've been practicing for months.#$b#Now, sit back, relax, and allow yourself to be carried away to a better place... okay?", "這是我的祕密嗜好……我已經練了好幾個月。#$b#現在請坐好、放輕鬆，讓自己隨著表演前往更美好的地方……好嗎？"],
+        ["$q 213 null#So... *gasp*... what did you think?$h#$r 213 25 event_dance1#That was amazing!#$r 213 -50 event_dance2#That was embarrassing...#$r 213 25 event_dance1#(Say nothing and do a slow clap)", "$q 213 null#所以……*喘氣*……你覺得怎麼樣？$h#$r 213 25 event_dance1#太精彩了！#$r 213 -50 event_dance2#好尷尬……#$r 213 25 event_dance1#（什麼也不說，慢慢拍手）"],
+        ["Phew... that was quite a workout...$u", "呼……這運動量可真不小……$u"],
+        ["I haven't been this sweaty since I ordered the pepper platter at Abigail's graduation fiesta!$h", "自從在阿比蓋爾的畢業慶典上點了香辣鰻魚以來，我就沒流過這麼多汗了！$h"],
+        ["...Well, I'd better take a shower. Thanks for watching.", "……好了，我最好去洗個澡。謝謝你來看。"],
+        ["Don't tell anyone about the dance. That was for your eyes only.", "別把這支舞告訴任何人。那是只為你一個人表演的。"]
+      ]
+    },
+    {
+      "target": "Data/Events/Saloon",
+      "key": "97/f Clint 750/t 1900 2300/d Tue Wed Thu Fri Sat Sun",
+      "replacements": [
+        ["Hello, @... care to join me?", "你好，@……要不要坐下來陪我？"],
+        ["Let me just go ahead and tell you what's on my mind.$u#$b#I have terrible luck with women, @...*sigh*$s#$b#I'm a nice guy if you get to know me, I swear!$u", "我就直接說出心裡的話吧。$u#$b#我和女人實在太沒緣了，@……*嘆氣*$s#$b#只要深入認識我，就會知道我是個好人，我發誓！$u"],
+        ["The girls all seem to like you, @...^You're a girl, @...", "女生好像都很喜歡你，@……^你是女生，@……"],
+        ["$q 211 null#Got any tips?^What advice can you give me?#$r 211 25 event_advice1#Impress women with your strength and charm#$r 211 25 event_advice1#Act crazy, to keep people guessing#$r 211 0 event_advice2#Just act natural... be yourself#$r 211 25 event_advice1#Treat women the same as men", "$q 211 null#有什麼訣竅嗎？^你能給我什麼建議？#$r 211 25 event_advice1#用力量和魅力打動女人#$r 211 25 event_advice1#表現得瘋瘋癲癲，讓人猜不透#$r 211 0 event_advice2#自然一點……做你自己#$r 211 25 event_advice1#用對待男人的方式對待女人"],
+        ["Hi Clint, what can I get for you tonight?$h", "嗨，克林特，今晚想點什麼？$h"],
+        ["Yes!", "太好了！"],
+        ["Er.. I mean, I'll have the Big n' Cheesy. With extra sauce, please.$s#$b#...$u", "呃……我是說，我要一份超大起司堡。請多加醬。$s#$b#……$u"],
+        ["Hi @.", "嗨，@。"],
+        ["Er... *ahem* Th...Thanks, Emily. For... taking my order.#$b#Um, Emily? I was...*gulp*... I was wondering...$h", "呃……*清喉嚨* 謝……謝謝你，艾蜜莉。謝謝你……幫我點餐。#$b#呃，艾蜜莉？我……*吞口水*……我想問……$h"],
+        ["Yes, Clint?$u", "什麼事，克林特？$u"],
+        ["... never mind.$s", "……沒事。$s"],
+        ["Hi, Shane! Here's your beverage.$h", "嗨，謝恩！這是你的飲料。$h"],
+        ["Thanks, Emily!$h#$b#So... How's your shift coming along?", "謝啦，艾蜜莉！$h#$b#對了……你今天值班還順利嗎？"],
+        ["It's fine! Thanks for asking, Shane!$h#$b#Do you have any new chicken stories for me?", "很順利！謝謝你關心，謝恩！$h#$b#最近有沒有新的雞故事可以說給我聽？"],
+        ["*sigh*$s#$b#I'm doomed...$s", "*嘆氣*$s#$b#我沒救了……$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "52/f Leah 1500/p Leah/z winter",
+      "replacements": [
+        ["Oh! @! You scared me.$6", "哦！@！你嚇到我了。$6"],
+        ["See that fruit up there? It looks delicious, doesn't it?#$b#But I can't reach it.$s", "看見上面的果實了嗎？看起來很好吃，對吧？#$b#可是我搆不到。$s"],
+        ["Aghh!$6#$b#Hehe...Thanks.$h", "啊！$6#$b#嘿嘿……謝謝。$h"],
+        ["Okay... got it!", "好了……拿到了！"],
+        ["You're stronger than you look!$h", "你比外表看起來強壯多了！$h"],
+        ["Here, try a piece... ", "來，嚐一塊吧……"],
+        ["You know, I just realized something.#$b#Even if my art career is a flop, I'll always have a friend to catch me on the way down.$h", "你知道嗎，我剛剛想通了一件事。#$b#就算我的藝術生涯徹底失敗，也永遠有個朋友會在我墜落時接住我。$h"],
+        ["Thanks for helping me earlier...$h", "謝謝你剛才幫我……$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/FishShop",
+      "key": "16253595/j 29/X",
+      "replacements": [
+        ["#Yes#No#It's too difficult...", "#是#不是#太難了……"],
+        ["#What's wrong?#Everything okay?", "#怎麼了？#一切還好嗎？"],
+        ["Ahoy!", "喂——！"],
+        ["Come in... make yourself at home...", "進來吧……別客氣……"],
+        ["Aye... that's good stuff, there. The fish go crazy for it.#$b#Just... eh... make sure to wash yer hands good after dipping them in those juices...$s", "對……那可是好東西。魚兒會為它瘋狂。#$b#只是……呃……手伸進那些汁液後，一定要好好洗乾淨……$s"],
+        ["The aroma has been known to linger for up to seven weeks, ${lad^miss}$...", "那股氣味據說最久能殘留七週，${lad^miss}$……"],
+        ["So... you been catching a lot o' fish?", "那麼……最近抓到很多魚嗎？"],
+        ["Aha! A ${man^lady}$ after me own heart...$h", "啊哈！真是與我志同道合的${man^lady}$……$h"],
+        ["You can always ${trust a fisherman^count on a lady who fishes}$...", "${trust a fisherman^count on a lady who fishes}$總是靠得住……"],
+        ["That's what me ol' Pappy used to say, at least. Haha!$h#$b#Well, keep it goin'... if you can catch every fish in these waters, I've got a special prize waitin' for ye...", "至少我老爸以前總這麼說。哈哈！$h#$b#好啦，繼續努力……要是你能抓到這些水域裡的每一種魚，我有份特別獎品等著你……"],
+        ["Not the fishin' type, eh? That's too bad...$s", "不是釣魚的料嗎？真可惜……$s"],
+        ["Yes, it's a difficult sport... especially for a beginner.#$b#Have you tried the 'Training Rod'? I sell them right here, at a very low price.#$b#You should try using a 'Training Rod' until you get a little more experienced.", "是啊，這項運動很難……對初學者尤其如此。#$b#試過「訓練用魚竿」嗎？我這裡就有賣，而且非常便宜。#$b#累積更多經驗前，你應該先用「訓練用魚竿」試試。"],
+        ["Aye... well, business has been tough, lately.$s#$b#It all started about the same time that old community center fell to ruin... me fish just don't sell like they used to...#$b#I've been working double-time just to make ends meet!", "是啊……最近生意很難做。$s#$b#差不多就是那座老社區中心荒廢時開始的……我的魚再也不像以前那麼好賣……#$b#我得加倍工作，才能勉強維持生計！"],
+        ["No time for me own projects...$s#$b#But, if things picked back up around here, I might have the time to show ya somethin'...", "完全沒時間做自己的計畫……$s#$b#不過要是這一帶能恢復繁榮，或許我就有時間帶你看樣東西……"],
+        ["Heh heh... yep. She's back there... an 'old friend' that's seen better days...$h", "嘿嘿……沒錯。她就在後面……是一位風光不再的「老朋友」……$h"],
+        ["Some day, ${lad^miss}$... you'll see what I mean.", "總有一天，${lad^miss}$……你會明白我的意思。"]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "34/f Penny 500/t 900 1400/w sunny",
+      "replacements": [
+        ["*Sigh*... How am I going to reach that letter in the back?$s", "*嘆氣*……後面那封信要怎麼拿到？$s"],
+        ["Here, let me help you, Mr. Mullner!", "來，我幫您，穆爾納先生！"],
+        ["There you go!$h", "拿到了！$h"],
+        ["Hmmph. I could've done it myself! And I can certainly move around on my own!$u#$b#How feeble do you think I am?", "哼。我自己也辦得到！而且我當然能靠自己移動！$u#$b#你把我想得有多虛弱？"],
+        ["$q 71 null#@? You were watching us?#$r 71 50 event_mail1#I was. You did a kind thing there, Penny.#$r 71 -50 event_mail2 friend_George_25#I was. You should've asked instead of assuming George wanted help.#$r 71 0 event_mail3#I'm just taking a walk, minding my own business.", "$q 71 null#@？你剛才一直在看嗎？#$r 71 50 event_mail1#對。你剛才做了件好事，潘妮。#$r 71 -50 event_mail2 friend_George_25#對。你應該先問，而不是認定喬治需要幫忙。#$r 71 0 event_mail3#我只是在散步，沒想管別人的事。"],
+        ["*sigh*...No, no... I'm sorry, miss. I shouldn't have gotten so angry.$s", "*嘆氣*……不、不……對不起，小姐。我不該那麼生氣。$s"],
+        ["It was actually very kind of you to help me out.", "其實你願意幫我，真的很有心。"],
+        ["That's okay, Mr. Mullner. I understand.", "沒關係，穆爾納先生。我明白。"],
+        ["$q -1 null#It must be difficult to grow old...$u#$r -1 0 event_old1#I'd rather not think about it.#$r -1 0 event_old2#It's just a different part of life.#$r -1 0 event_old3#That's why we should respect our elders.#$r -1 0 event_old4#I'd rather die young...", "$q -1 null#年老一定很辛苦……$u#$r -1 0 event_old1#我寧願不要去想。#$r -1 0 event_old2#那只是人生的另一個階段。#$r -1 0 event_old3#所以我們才應該尊重長者。#$r -1 0 event_old4#我寧願年輕時就死去……"],
+        ["Well, it was interesting talking to you, @. I should go.$u", "好了，和你談話很有意思，@。我該走了。$u"]
+      ]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "181928/f Penny 2000/t 900 1600/w sunny/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19",
+      "replacements": [
+        ["Oh, @! It's perfect timing that you showed up.", "哦，@！你來得正是時候。"],
+        ["I brought the children on a little field trip into the countryside.#$b#You know all about life in the country, right?$h", "我帶孩子們到鄉間進行小小的戶外教學。#$b#你很熟悉鄉村生活，對吧？$h"],
+        ["$q -1 null#So I was thinking... could you be my guest speaker today?#$r -1 10 event_speaker_yes#I'd love to!#$r -1 0 event_speaker_yes#Sure.#$r -1 -1500 event_speaker_no#No... I can't stand kids.", "$q -1 null#所以我在想……你今天能不能擔任特別講師？#$r -1 10 event_speaker_yes#我很樂意！#$r -1 0 event_speaker_yes#當然。#$r -1 -1500 event_speaker_no#不要……我受不了小孩。"],
+        ["Jas! Vincent! May I have your attention please!", "賈斯！文森！請注意這邊！"],
+        ["I have a very special guest here to talk to you today... our very own local farmer, @.#$b#He has first-hand experience living in the countryside... so he knows all about the valley's 'natural resources'!^She has first-hand experience living in the countryside... so she knows all about the valley's 'natural resources'!", "今天有一位非常特別的來賓要跟你們說話……就是本地的農夫@。#$b#他有親身居住在鄉間的經驗……所以非常了解山谷裡的「自然資源」！^她有親身居住在鄉間的經驗……所以非常了解山谷裡的「自然資源」！"],
+        ["Can anyone tell me what a 'natural resource' is?", "有人能告訴我什麼是「自然資源」嗎？"],
+        ["Jas?", "賈斯？"],
+        ["A natural resource is a material source of wealth that occurs in a natural state and has economic value.$4", "自然資源是以自然狀態存在，並具有經濟價值的物質財富來源。$4"],
+        ["Very good! That's worth two star points, Jas.", "非常好！賈斯，這值得兩顆星。"],
+        ["Yesss!$h", "太好了！$h"],
+        ["Okay, now let's give @ our full attention.", "好了，現在大家專心聽@說話。"],
+        ["#Country life is all about farming.#Country life is all about gathering from the wild.", "#鄉村生活的核心就是耕種。#鄉村生活的核心就是野外採集。"],
+        ["#This valley is chock-full of precious minerals.#The water around here is teeming with fresh seafood.#You'll find no better lumber south of Grampleton.", "#這座山谷到處都是珍貴礦物。#這一帶水域充滿了新鮮海產。#格蘭普頓以南找不到比這更好的木材。"],
+        ["Yes, Vincent?", "怎麼了，文森？"],
+        ["Mr. @, are you going to marry Miss Penny?$s^Ms. @... Um, do you have a boyfriend?", "@先生，你會和潘妮小姐結婚嗎？$s^@小姐……呃，你有男朋友嗎？"],
+        ["Vincent! That's not an appropriate question! Behave yourself, or I'll have to take away all your star points for the day.$a", "文森！這個問題不合適！規矩一點，否則我就要扣掉你今天所有的星星。$a"]
+      ]
+    },
+    {
+      "target": "Data/Events/IslandNorth",
+      "key": "6497421/e 6497423/f Leo 1000/w sunny/t 600 1800/Hl leoMoved",
+      "replacements": [
+        ["#Not at all#A little, but I'm used to it#(Squawk loudly)", "#完全不會#有一點，但我習慣了#（大聲嘎嘎叫）"],
+        ["Sorry...$u", "對不起……$u"],
+        ["It's hard to remember to talk... normally...$s", "要記得……正常說話……真的很難。$s"],
+        ["You think I'm weird, don't you?$s", "你覺得我很奇怪，對吧？$s"],
+        ["Thanks for saying that.", "謝謝你這麼說。"],
+        ["Thanks, I've gotten used to you too!$h", "謝謝，我也已經習慣你了！$h"],
+        ["Hehe... You're getting pretty good at that!$h", "嘿嘿……你學得很不錯了！$h"],
+        ["Sometimes I wonder how different my life would be if I had never washed up on this island...$s", "有時我會想，如果當初沒有漂流到這座島，我的人生會有多麼不同……$s"],
+        ["Back home, I didn't really care about birds. I never thought to listen to what they might be saying.$s", "以前在家鄉，我根本不在意鳥。從沒想過要聽聽牠們可能在說什麼。$s"],
+        ["Though I guess that's normal for... normal kids.$s", "不過對……普通孩子來說，這應該很正常。$s"],
+        ["I wonder what... normal kids would have to say about me...$s", "不知道……普通孩子會怎麼看我……$s"],
+        ["Do you think I could ever be a normal kid again?$s", "你覺得我還有可能變回普通孩子嗎？$s"],
+        ["#Yes#No#Maybe...", "#可以#不行#或許……"],
+        ["Hmmm... I guess you're right.$u", "嗯……我想你說得對。$u"],
+        ["Though living on this island has given me a lot of experiences normal kids would never have.$h", "不過住在這座島上，也讓我有了許多普通孩子永遠不會有的經歷。$h"],
+        ["If it weren't for the parrots... who knows what would have happened to me.", "要不是那些鸚鵡……真不知道我會變成什麼樣。"],
+        ["I'm happy I met them. I'll always consider them to be my family, even if that makes me a little strange.$h", "我很高興遇見了牠們。就算這讓我顯得有點奇怪，我也永遠會把牠們當作家人。$h"],
+        ["Anyways, thanks for talking to me, @.", "總之，謝謝你陪我聊天，@。"],
+        ["Maybe some day, you can be a part of our family too, hehe.$h", "也許有一天，你也能成為我們家的一分子，嘿嘿。$h"],
+        ["Here, let me teach you how to say \\\"Let's play\\\" in parrot talk!", "來，我教你怎麼用鸚鵡語說\\\"一起玩吧\\\"！"]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "831125/f Shane 1750/f Clint 500/f Emily 500/t 1000 1600/w sunny",
+      "replacements": [
+        ["Okay guys, do you remember your lines?$u", "好了，各位，還記得自己的台詞嗎？$u"],
+        ["Yes!", "記得！"],
+        ["Ready? Action!$u", "準備好了嗎？開拍！$u"],
+        ["I thought we had something special... I guess I was wrong.$s", "我以為我們之間有特別的感情……看來是我錯了。$s"],
+        ["I... I... Uh...", "我……我……呃……"],
+        ["Cut!", "卡！", 2],
+        ["I'm sorry!$s", "對不起！$s"],
+        ["It's hard to remember my lines when her face is right in front of me like that...$s", "她的臉就這樣出現在我眼前，我很難記住台詞……$s"],
+        ["Oh, hey.", "哦，嘿。"],
+        ["Check out my new camera...#$b#Joja Co. is having a video advertisement competition. The prize is 10,000g.", "看看我的新攝影機……#$b#Joja公司正在舉辦影片廣告比賽。獎金是10,000g。"],
+        ["Hey! I want you to be in this shot... okay?#$b#Just walk by Clint and Emily in the background while they're talking... It'll give the scene a little more authenticity.", "嘿！我想讓你出現在這個鏡頭裡……好嗎？#$b#只要在克林特和艾蜜莉說話時，從背景走過去……這樣場景會更真實。"],
+        ["Okay... Ready?#$b#Action!$u", "好了……準備好了嗎？#$b#開拍！$u"],
+        ["I thought we had something special... You said you wouldn't leave me for anything. I guess that was a lie.$s", "我以為我們之間有特別的感情……你說過無論如何都不會離開我。看來那是謊話。$s"],
+        ["No! It's not like that... This is just something I have to do. It's very important to me.", "不！不是那樣……這只是我非做不可的事。對我非常重要。"],
+        ["I've just got to try new 'Joja Bluu' cola.$5#$b#It's got three times the sorbitol for a thick, sweet blast. And it's cheaper than water!$5", "我就是非得試試全新的「Joja蔚藍」可樂。$5#$b#它含有三倍山梨糖醇，帶來濃稠甜蜜的衝擊。而且比水還便宜！$5"],
+        ["But... But... Isn't soda unhealthy? You promised me...$s", "可是……可是……汽水不是不健康嗎？你答應過我……$s"],
+        ["Have no fear, my dear. The world-class science team at Joja Headquarters have determined that 'Joja Bluu' does not cause a significant erosion of the stomach lining. So you can drink it whenever you like, as much as you like.$5#$b#The real question is... 'When will YOU turn bluu?'... *glug* *glug*... Ahh...$5", "別怕，親愛的。Joja總部的世界級科學團隊已經證實，「Joja蔚藍」不會顯著侵蝕胃黏膜。所以想喝就喝，愛喝多少都可以。$5#$b#真正的問題是……「你何時也會變蔚藍？」……*咕嚕* *咕嚕*……啊……$5"],
+        ["That was perfect.", "太完美了。"],
+        ["Thanks for the help. $h", "謝謝你幫忙。$h"],
+        ["...Clint?$s", "……克林特？$s"],
+        ["What a productive day... I got some great footage.", "今天真有效率……拍到了很棒的素材。"]
+      ]
+    },
+    {
+      "target": "Data/Events/Mountain",
+      "key": "8959199/w sunny/t 600 1900/e 6497428/f Leo 2250/F",
+      "replacements": [
+        ["It's ready!", "準備好了！"],
+        ["Not yet...", "還沒……"],
+        ["Good answer, Leo!", "答得好，里歐！"],
+        ["Got one, lad!", "釣到一條了，小伙子！"],
+        ["Haha! ...That was a great day!$h", "哈哈！……今天真是美好的一天！$h"],
+        ["You know... I still miss my family back on the island...$s", "你知道……我還是很想念島上的家人……$s"],
+        ["But mostly, I feel happy about the memories, not sad.", "但回想那些回憶時，我大多感到快樂，而不是悲傷。"],
+        ["...and I really feel like I belong here!$h", "……而且我真的覺得自己屬於這裡！$h"],
+        ["It's a beautiful world, friends...", "這個世界真美，各位朋友……"],
+        ["...and I'm glad to be part of it!$h", "……我很高興自己也是其中一分子！$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "15389722/j 57",
+      "replacements": [
+        ["#I look forward to helping!#Heh... I dunno... we'll see...", "#我很期待能幫上忙！#嘿……不知道……到時再說吧……"],
+        ["Ah, hello there, @. You showed up at the perfect time.$h", "啊，你好，@。你來得正是時候。$h"],
+        ["It's our new 'Special Orders' board.#$b#Robin and I built it from scratch.$h", "這是全新的「特別訂單」告示板。#$b#羅賓和我從零開始打造的。$h"],
+        ["Um... Lewis? All you did was hold the nails.", "呃……路易斯？你做的只有拿釘子。"],
+        ["*Ahem*... Ignore her.$5", "*清喉嚨*……別理她。$5"],
+        ["Now, let me explain...", "現在，讓我來說明……"],
+        ["You see... with %farm Farm back in business, the local economy has really been picking up.#$b#As a result, some of the local townsfolk have been asking me for a way to source local ingredients for their businesses or personal projects.", "你看……隨著%farm農場重新營運，本地經濟確實活絡了起來。#$b#因此，有些鎮民問我，能不能提供一種管道，替他們的生意或個人計畫取得本地材料。"],
+        ["So, Robin and I came up with the idea of a new 'Special Orders' board, where people can post bigger jobs than would make sense for the old billboard outside Pierre's.", "所以羅賓和我想出了新的「特別訂單」告示板，讓大家張貼規模更大的工作，不必擠在皮埃爾店外的舊告示板上。"],
+        ["Yeah... for example, I plan on requesting some hardwood for a bed I want to make.$h#$b#I won't put you on the spot, but if you want to help me out you can just accept the job from this board.#$b#Who knows, maybe if the bed turns out well I'll start selling them in my shop!$h", "對啊……例如，我打算徵求一些硬木，做一張我構思中的床。$h#$b#我不會當場逼你答應，但如果想幫忙，只要從這塊告示板接下工作即可。#$b#誰知道呢，要是床做得不錯，也許我會開始在店裡販售！$h"],
+        ["I thought so! I wouldn't expect anything less from you, @.", "我就知道！你果然不會讓人失望，@。"],
+        ["So, can we say that you're... --On Board--?$4", "所以，可以說你已經……「登板」了嗎？$4"],
+        ["*groan*", "*呻吟*"],
+        ["Well, I'm sure you're busy, so we won't keep you away from your work any longer.#$b#As always, I appreciate your willingness to contribute!$h#$b#Take care, @.", "好了，你一定很忙，我們就不再耽誤你的工作。#$b#一如往常，感謝你願意貢獻心力！$h#$b#保重，@。"],
+        ["Huh... I wouldn't expect such a tepid response from you, @. I'm disappointed.$s", "咦……沒想到你的反應這麼冷淡，@。我很失望。$s"],
+        ["It's fine, Lewis... there's no pressure to help out.$5#$b#Maybe I can get Sebastian to help. He could use some work away from the computer.", "沒關係，路易斯……沒必要勉強人家幫忙。$5#$b#也許我可以請塞巴斯蒂安幫忙。他也該做點離開電腦的工作。"],
+        ["Hmmph... Well, we're done here, Robin.$u#$b#...Wouldn't want to waste any more of @'s precious 'me' time.$u", "哼……好了，我們說完了，羅賓。$u#$b#……可不能再浪費@寶貴的「私人時間」。$u"]
+      ]
+    },
+    {
+      "target": "Data/Events/Trailer",
+      "key": "35/f Penny 1000/p Penny",
+      "replacements": [
+        ["Ughh... It's so dirty in here.$s", "唉……這裡真的好髒。$s"],
+        ["@! Um... Sorry that it's such a mess. I was about to clean up.$u", "@！呃……抱歉，家裡這麼亂。我正要開始打掃。$u"],
+        ["You'll help me? You really mean it?$h", "你要幫我？真的嗎？$h"],
+        ["Okay, you can get started over there. I'll clean the kitchen.", "好，你可以從那邊開始。我來清理廚房。"],
+        ["Whaddya think you're doing?!$u", "你們到底在搞什麼！？$u"],
+        ["Stop it! I had everything just the way I like it!$u", "住手！我明明把一切都擺成自己喜歡的樣子了！$u"],
+        ["Mom, the house is a total mess. @ and I were just trying to tidy things up a bit.#$b#*sniff* *sniff*... Were you at the saloon just now? You smell like beer...$s", "媽，家裡亂得一塌糊塗。@和我只是想稍微整理一下。#$b#*嗅* *嗅*……你剛才在酒館嗎？身上都是啤酒味……$s"],
+        ["It's none of your damn business where I go!$4", "我去哪裡關你什麼事！$4"],
+        ["It IS my business! I don't want you destroying yourself!$a#$b#Don't you realize your choices have an effect on me? Stop being so selfish!$a", "當然關我的事！我不想看你毀掉自己！$a#$b#你難道不明白自己的選擇也會影響我嗎？別再那麼自私了！$a"],
+        ["Selfish? I put a roof over your head and clothes on your back and you call me selfish!? You ungrateful little...$u", "自私？我給你房子住、給你衣服穿，你還說我自私！？你這忘恩負義的死丫頭……$u"],
+        ["You'd better go. I'm sorry you had to see this, kid.$4", "你最好先走。抱歉讓你看見這些，孩子。$4"],
+        ["He's a nice young man...^She's a nice young lady...", "他是個好青年……^她是個好姑娘……"],
+        ["But I don't want you tellin' others to clean up my house! It's embarrassing! You understand?$4", "但我不准你叫別人來打掃我的房子！太丟臉了！明白嗎？$4"],
+        ["...Yes, mother.$s", "……明白，媽媽。$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/IslandWest",
+      "key": "6497423/e 1039573/f Leo 500/w sunny/t 600 1800/Hl leoMoved",
+      "replacements": [
+        ["#Just enjoying the waves#Looking for fish#Thinking about someone special#Pondering the big questions", "#只是在享受海浪#在找魚#在想某個特別的人#在思考重大問題"],
+        ["#There's a town full of people#There's forests, beaches, and mountains#It's like here, but colder#I live on a farm", "#有一座住滿人的城鎮#有森林、海灘和高山#和這裡很像，但更冷#我住在農場"],
+        ["#Yes#What does that matter to a bird?", "#有#這跟一隻鳥有什麼關係？"],
+        ["What are you doing, @?", "你在做什麼，@？"],
+        ["Waves...$s#$b#The other birds say the reason Leo can't fly... is because Leo spend too much time in the waves, long ago.$s#$b#My wings full of water, now.$s", "海浪……$s#$b#其他鳥說里歐不會飛……是因為很久以前，里歐在海浪裡待太久。$s#$b#我的翅膀現在裝滿了水。$s"],
+        ["Fish? Easy... $h#$b#If you want to say 'hi', you just have to ask.", "魚？簡單……$h#$b#如果想打聲招呼，開口問就好了。"],
+        ["Hmm... I don't understand that, yet.$s#$b#Maybe when I become an elder, someday.", "嗯……我還不明白那種感覺。$s#$b#也許有一天，等我成為長者時就懂了。"],
+        ["Oh.. Yeah. Leo ponders the big questions, too.", "哦……對。里歐也會思考重大問題。"],
+        ["Like... 'will I find more walnuts on the beach, or in the volcano?'", "例如……「在海灘還是火山能找到更多核桃？」"],
+        ["*sigh*...Life complicated...$s", "*嘆氣*……生活真複雜……$s"],
+        ["@?$s", "@？$s"],
+        ["Tell me about the place you come from... your home.$s", "告訴我你來自什麼地方……你的家。$s"],
+        ["People...$s", "人們……$s"],
+        ["Sounds nice.", "聽起來很不錯。"],
+        ["Cold? ...I don't understand...$s", "冷？……我不明白……$s"],
+        ["Farm? So, you're saying you grow your own walnuts? You don't have to hunt for them?$3#$b#...Wow..$3", "農場？所以你會自己種核桃？不用到處找？$3#$b#……哇……$3"],
+        ["I'm thinking... @ is smart.$h", "我在想……@很聰明。$h"],
+        ["Are... Are there... other kids?$s", "那裡……那裡有……其他孩子嗎？$s"],
+        ["...I know I'm not actually a bird, @...$s#$b#I'm like you.$s#$b#But I don't like thinking about it...$s#$b# ...because I'm so alone.$s", "……我知道自己其實不是鳥，@……$s#$b#我和你一樣。$s#$b#但我不喜歡去想這件事……$s#$b#……因為我太孤單了。$s"],
+        ["With my bird family, I feel like I belong.$s", "和鳥家人在一起時，我覺得自己有所歸屬。$s"],
+        ["But... I don't belong.$s#$b#...I don't belong anywhere...$s", "可是……我並不屬於牠們。$s#$b#……我不屬於任何地方……$s"],
+        ["Poor lad...$s", "可憐的孩子……$s"],
+        ["I wonder if there's some way to help...$s", "不知道有沒有辦法能幫助他……$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "100/f Kent 750/p Kent/p Jodi",
+      "replacements": [
+        ["Hi, @! I'm just making some popcorn.$h", "嗨，@！我正在做爆米花。$h"],
+        ["AAAAAHHHHHHH!!!$u", "啊啊啊啊啊啊啊！！！$u"],
+        ["That sound...$s", "那個聲音……$s"],
+        ["You should've known that sound would remind me of the war!$u", "你應該知道那個聲音會讓我想起戰爭！$u"],
+        ["...I lost a lot of good friends in those bloody trenches.$s", "……我在那些血腥的戰壕裡失去了很多好友。$s"],
+        ["But, dear... popcorn was always your favorite before you left.$s", "可是親愛的……你離開前一直最喜歡爆米花。$s"],
+        ["...Things have changed.", "……一切都變了。"],
+        ["*whisper* @... can you say something to him?$s", "*小聲說* @……你能跟他說點什麼嗎？$s"],
+        ["$q 215 null#(Say something to Kent)$s#$r 215 -25 event_popcorn1#Jodi's to blame... she should've known better!#$r 215 50 event_popcorn2#I know you're hurting... but don't blame your wife.#$r 215 -50 event_popcorn3#(Lie) Blame me... I asked for popcorn", "$q 215 null#（對肯特說些什麼）$s#$r 215 -25 event_popcorn1#都怪喬迪……她早該知道！#$r 215 50 event_popcorn2#我知道你很痛苦……但別責怪妻子。#$r 215 -50 event_popcorn3#（說謊）怪我吧……是我想吃爆米花"],
+        ["...$s#$b#I'm sorry, honey. You couldn't have known the sound of popcorn would make me upset.", "……$s#$b#對不起，親愛的。你不可能知道爆米花的聲音會讓我難受。"],
+        ["It's okay, dear.$s#$b#The last thing I want to do is make you upset. I'll do my best to keep your spirits up from now on.", "沒關係，親愛的。$s#$b#我最不願意做的就是讓你難受。從今以後，我會盡力讓你打起精神。"],
+        ["I'm glad you're a friend of the family, @. Sorry about my behavior before.", "很高興你是我們家的朋友，@。抱歉我剛才失態了。"]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "15/f Haley 2500/p Haley",
+      "replacements": [
+        ["Come in! Just make sure to close the door quickly behind you!", "進來！記得快點把身後的門關上！"],
+        ["@, you're here!", "@，你來了！"],
+        ["Welcome to my brand new dark room!$h", "歡迎來到我全新的暗房！$h"],
+        ["$q -1 null#So... what do you think?#$r -1 10 Event_darkroom1#It looks great!#$r -1 0 Event_darkroom2#What does it do?#$r -1 -50 Event_darkroom3#I've seen better.", "$q -1 null#所以……你覺得怎麼樣？#$r -1 10 Event_darkroom1#看起來棒極了！#$r -1 0 Event_darkroom2#這是做什麼用的？#$r -1 -50 Event_darkroom3#我看過更好的。"],
+        ["Um... so, anyway... what do you want to do?$s", "呃……總之……你想做什麼？$s"],
+        [" #Offer to help decorate the dark room.#Make an excuse and leave.#Try to kiss her.", " #主動幫忙布置暗房。#找個藉口離開。#試著親她。"],
+        ["Oh, @... I've been waiting so long for you to do that.$11", "哦，@……我等你這麼做已經等很久了。$11"],
+        ["One moment...$l", "稍等一下……$l"],
+        ["That was nice...$l", "感覺真好……$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "233104/f Sam 2500/t 2000 2400/w sunny/n samMessage",
+      "replacements": [
+        ["Hi @.#$b#I wanted to talk to you in private...", "嗨，@。#$b#我想私下和你談談……"],
+        ["It's kinda cold out here though... let's sneak into my room.$u", "不過外面有點冷……我們偷偷進我房間吧。$u"],
+        ["So... @.$10#$b#I know I've been talking about nothing but the band for a while now... But I don't want you to think that's all I'm interested in.#$b#Um... Er... What I mean is...$8#$b#Well, I'm really happy that we've grown so close... Heh.$10", "那個……@。$10#$b#我知道最近總是在談樂團……但我不希望你以為我只對樂團有興趣。#$b#呃……嗯……我的意思是……$8#$b#我們變得這麼親近，我真的很開心……嘿嘿。$10"],
+        ["@... do you think of me as... just a friend?$l", "@……你覺得我……只是朋友嗎？$l"],
+        ["Sam? I'm coming in!", "山姆？我要進來囉！"],
+        ["Quick! Hide in the bed!$8", "快！躲到床上！$8"],
+        ["What's wrong, Honey? Were you doing something... bad?#$b#I thought I heard some weird sounds coming from your room...", "怎麼了，親愛的？你是不是在做什麼……壞事？#$b#我好像聽見你房間傳出奇怪的聲音……"],
+        ["No Mom! I was just... doing push-ups! I wanna beat Dad at arm-wrestling some day! ...heh.$8", "沒有，媽！我只是在……做伏地挺身！我想有一天能在扳手腕時贏過爸爸！……嘿嘿。$8"],
+        ["Oh! *giggle*... That explains why you're all red and sweaty.$h#$b#Okay, well good luck. I'll see you in the morning.", "哦！*咯咯笑*……難怪你滿臉通紅，還流了這麼多汗。$h#$b#好吧，祝你好運。明早見。"],
+        ["Goodnight, Mom.$10", "晚安，媽。$10"],
+        ["Whew... That was close.$h", "呼……好險。$h"],
+        ["...@?", "……@？"],
+        ["#Get out of the bed.#Stay put.", "#離開床鋪。#留在原地。"],
+        ["Earlier, I was trying to say... that I really like you, @. I think we could really have something special together... Know what I mean?", "剛才我想說的是……我真的很喜歡你，@。我覺得我們能發展出一段很特別的感情……你明白嗎？"],
+        ["Alright, I said it.$7", "好了，我說出口了。$7"],
+        ["#Move closer to Sam.#Head for the window.", "#靠近山姆。#走向窗戶。"],
+        ["I'm going to be thinking about this night for a long time...", "今晚的事，我會回味很久……"],
+        ["...$l", "……$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/ArchaeologyHouse",
+      "key": "1848481/f Elliott 2000/t 1300 1900/n elliottReading",
+      "replacements": [
+        ["@, you made it!$h#$b#I feel so relieved to be done with my book... it's like an elephant's been lifted off my shoulders.", "@，你來了！$h#$b#完成這本書讓我如釋重負……簡直像有頭大象從肩上被搬走。"],
+        ["Well, I'd better get started with the reading... Wish me luck.$8", "好了，我該開始朗讀了……祝我好運。$8"],
+        ["Good afternoon, everyone.", "各位午安。"],
+        ["Hi!", "嗨！"],
+        ["Ever since I was a young boy, I've dreamt of becoming a writer.#$b#When the time came for me to leave home and start my own life, I moved here. I was drawn to the peaceful beauty of the valley, and hoped that days of quiet reflection in this idyllic atmosphere would fan the literary flames.", "從年幼時起，我就夢想成為作家。#$b#到了離家展開自己人生的時候，我搬來了這裡。山谷寧靜的美吸引著我，我希望在這片田園風光中靜思的日子，能搧旺文學的火焰。"],
+        ["After countless hours scribbling at my writing desk, I present to you my first novel: 'The Rise And Fall Of Planet Yazzo'... It's a sci-fi epic spanning thousands of years in an exotic planetary system.", "在書桌前奮筆疾書了無數個小時後，我向各位獻上第一部小說：《亞佐星的興衰》……這是一部橫跨數千年、發生在異域行星系的科幻史詩。"],
+        ["Chapter One.#$b#Commander Yutkin stepped through the golden archway as the airlock snapped shut behind him. Today was his first day on Planet Yazzo, and all 14 of the alliance delegates had been summoned to the Grand Spire...", "第一章。#$b#尤特金指揮官穿過金色拱門，氣閘在身後猛然關閉。今天是他來到亞佐星的第一天，聯盟的14名代表全都受召前往宏偉尖塔……"],
+        ["...And as the 7th moon descended beneath the horizon, the planet of Yazzo would begin its sinister transformation... an event for which Commander Yutkin was completely unprepared.", "……當第七顆衛星沉入地平線下，亞佐星將開始邪惡的轉變……尤特金指揮官對此完全沒有準備。"],
+        ["Well, that concludes my reading. I'll be selling signed copies of the book by the front desk. Thanks for listening!$h", "好了，朗讀到此結束。我會在櫃檯旁販售親筆簽名本。謝謝各位聆聽！$h"],
+        ["Well, how was it?", "怎麼樣？"],
+        ["Thanks. $h#$b#You know, I got the idea for making a sci-fi book from you. Do you remember?#$b#That's why I've dedicated this book to you...$l", "謝謝。$h#$b#你知道嗎，寫科幻小說的點子是你給我的。還記得嗎？#$b#所以我把這本書獻給了你……$l"]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "611173/Hn pamHouseUpgrade/o Penny",
+      "replacements": [
+        ["Hey @! So... what do you think?", "嘿，@！所以……你覺得怎麼樣？"],
+        ["I feel pretty good about it...#$b#In fact, it might be my finest work yet!$h", "我對成果相當滿意……#$b#事實上，這可能是我至今最棒的作品！$h"],
+        ["Notice the round window... very very difficult to bend the frame like that.#$b#Oh, and the intricate carvings on the door. Took me forever. Did you notice that?", "注意到圓窗了嗎……要把窗框彎成那樣非常、非常困難。#$b#哦，還有門上精細的雕刻，花了我好久。你有看到嗎？"],
+        ["Oh... heh. I guess I'm rambling about wood again... huh?$h", "哦……嘿嘿。看來我又開始滔滔不絕地談木工了……對吧？$h"],
+        ["Anyway, I'm going to go talk to them... But first I have to ask...", "總之，我要去和她們談談……但得先問你……"],
+        ["Do you want me to tell them you paid for this?#Yes, of course!#No, I'd rather remain anonymous", "要我告訴她們是你出錢的嗎？#當然要！#不用，我想保持匿名"],
+        ["Okay... you stay here, then.", "好……那你就留在這裡。"],
+        ["Hi there, neighbors... that's a nice new house you got there!$4", "鄰居們，你們好……這棟新房子真漂亮！$4"],
+        ["Robin... I... I dunno what to say...$s#$b#This is a dream come true... it's all I've ever wanted.$s", "羅賓……我……我不知道該說什麼……$s#$b#這簡直是夢想成真……是我一直以來最大的心願。$s"],
+        ["Robin, thank you so much...$s", "羅賓，真的非常謝謝你……$s"],
+        ["Hey, don't thank me! Someone else came up with the idea... and they paid for everything, too.", "嘿，別謝我！是別人想出的主意……而且全部費用也是對方出的。"],
+        ["Then... who?$s", "那麼……是誰？$s"],
+        ["I can't say... They insisted on remaining anonymous.$5", "我不能說……對方堅持保持匿名。$5"],
+        ["...They probably stayed anonymous so we wouldn't have to feel obligated to them.", "……對方大概是怕我們覺得欠了人情，才選擇匿名。"],
+        ["Whoever you are... You are truly a pure angel...$s", "無論你是誰……你真是一位純潔的天使……$s"],
+        ["Well, I wouldn't go *that* far...$4", "呃，我倒不會說到*那種*程度……$4"],
+        ["Penny, from now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...", "潘妮，從現在起，我們要像真正的家人一樣……聽見了嗎？#$b#我不想再一直這麼怨天尤人……$s#$b#我要努力改變自己的人生……"]
+      ]
+    }
+  ]
+}

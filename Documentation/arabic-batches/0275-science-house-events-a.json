@@ -1,0 +1,40 @@
+{
+  "id": "0275-science-house-events-a",
+  "reviewedAt": "2026-08-30",
+  "records": [
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "DadWeird",
+      "eventSegments": [
+        ["Huh? What did you say to ${him^her}$, Dad?$a", "ماذا؟ ماذا قلت لـ${him^her}$ يا أبي؟$a"],
+        ["Okay, okay... we were talking about you, sweetie.$5#$b#I wanted to say a few things to @ about you... but I didn't want to embarrass you. I shouldn't have lied about it.$s", "حسنًا، حسنًا... كنا نتحدث عنك يا عزيزتي.$5#$b#أردت أن أخبر @ ببعض الأمور عنك... لكنني لم أرد إحراجك. ما كان ينبغي أن أكذب بشأن ذلك.$s"],
+        ["That's okay, Dad. I understand.#$b#We should get back to work before these samples crystallize.", "لا بأس يا أبي. أنا أتفهم.#$b#علينا العودة إلى العمل قبل أن تتبلور هذه العينات."]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "33/f Robin 1500/p Robin",
+      "eventSegments": [
+        ["Hi @. I was just cleaning some dust off my saw.", "مرحبًا يا @. كنت أنظف بعض نشارة الخشب عن منشاري فحسب."],
+        ["$q 66 null#Have you ever made anything out of wood, @?#$r 66 50 event_wood1#Yes#$r 66 50 event_wood2#No", "$q 66 null#هل سبق أن صنعت شيئًا من الخشب يا @؟#$r 66 50 event_wood1#نعم#$r 66 50 event_wood2#لا"],
+        ["I think we've become good enough friends that I can trust you with my carpentry secrets!$h#$b#Here, let me show you the blueprints.", "أظن أننا صرنا صديقين مقربين بما يكفي لأئتمنك على أسرار النجارة خاصتي!$h#$b#تعال، دعني أريك المخططات."],
+        ["Learned how to craft 'Flute Block' and 'Drum Block'", "تعلمت صنع «قالب الناي» و«قالب الطبل»"],
+        ["You can use these to get creative on your farm. #$b#It feels good to be able to decorate your house with things you've made yourself!$h", "يمكنك استخدامهما للإبداع في مزرعتك. #$b#من الجميل أن تزين منزلك بأشياء صنعتها بنفسك!$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "25/f Demetrius 1500/p Demetrius/p Robin",
+      "eventSegments": [
+        ["Demetrius, I didn't tell you to get tomatoes. I said to get fruit.", "يا ديميتريوس، لم أطلب منك إحضار طماطم. قلت لك أن تحضر فاكهة."],
+        ["I don't understand. Tomatoes are fruits!", "لا أفهم. الطماطم من الفاكهة!"],
+        ["When a normal person says they want fruit, they NEVER mean tomatoes. It doesn't matter what the scientific classification is.", "حين يقول شخص عادي إنه يريد فاكهة، فإنه لا يقصد الطماطم أبدًا. ولا يهم ما يقوله التصنيف العلمي."],
+        ["@! I'm glad you're here. You'll be able to put this argument to rest.", "يا @! يسعدني أنك هنا. ستتمكن من حسم هذا الجدال."],
+        ["$q 59 null#How would you classify a tomato?#$r 59 -30 Event_tomato1#Vegetable#$r 59 50 Event_tomato2#Fruit", "$q 59 null#كيف تصنّف الطماطم؟#$r 59 -30 Event_tomato1#خضار#$r 59 50 Event_tomato2#فاكهة"],
+        ["I just want you to understand my point of view.#$b#It's hard for me to know exactly what assumptions I should make when you tell me something.", "أريدك فقط أن تفهمي وجهة نظري.#$b#من الصعب علي أن أعرف بالضبط ما الافتراضات التي ينبغي أن أضعها حين تقولين لي شيئًا."],
+        ["But I'll try to get better at it.", "لكنني سأحاول التحسن في ذلك."],
+        ["Thanks for your help, @.$h", "شكرًا على مساعدتك يا @.$h"]
+      ]
+    }
+  ]
+}

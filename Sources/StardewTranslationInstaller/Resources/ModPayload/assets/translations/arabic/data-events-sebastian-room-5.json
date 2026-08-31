@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "2794460/f Sebastian 500/p Sebastian": "Hospital_Ambient/-1000 -1000/farmer 1 1 2 Sebastian 9 4 3 Robin -100 -100 2/skippable/doAction 1 3/removeTile 1 3 Buildings/removeTile 1 2 Front/playSound keyboardTyping/showFrame Sebastian 24/animate Sebastian false true 100 26 27 26 27 26 27 26/viewport 6 6 true/move farmer 0 4 1/move farmer 5 0 1/pause 1000/speak Sebastian \"آه، مرحبًا. أمهلني لحظة.\"/pause 500/playSound keyboardTyping/pause 1000/question fork1 \"#إنه مشغول... ينبغي أن أغادر.#ابق مكانك.\"/fork didntLeave/move farmer -2 0 3/speak Sebastian \"إلى أين تذهب؟$u\"/pause 300/faceDirection farmer 1/stopAnimation Sebastian/speak Sebastian \"عذرًا... كان علي إنهاء هذا السطر قبل أن ينقطع تسلسل أفكاري.\"/pause 500/move farmer 2 0 1/switchEvent sebastianRoom"
+      }
+    }
+  ]
+}

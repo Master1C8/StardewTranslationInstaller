@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "finalBossWizard": "pause 500/resetVariable/message \"يتمتم سيد الرهبة زارث بتعويذة...\"/pause 500/question fork0 \"ماذا تفعل؟#ألق «الشعاع النقي» على زارث.#ضع «تعويذة الدرع» على أصدقائك.\"/fork castBeam/pause 800/playSound debuffHit/message \"تضع «تعويذة الدرع» على سام وسيباستيان.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"يطلق زارث صواعق من الطاقة المظلمة الخالصة. تصيب إحداها سيباستيان، لكن «تعويذة الدرع» تعكسها إلى وجه زارث!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"يهزم زارث، وتتوهج عصا سولاريون في سكينة. لقد عاد النظام إلى العالم.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+        "finalBossWarrior": "pause 500/resetVariable/message \"يتمتم سيد الرهبة زارث بتعويذة...\"/pause 500/question fork0 \"ماذا تفعل؟#اندفع إلى الأمام ملوحًا بسيفك.#استخدم درعك للدفاع عن أصدقائك.\"/fork chargeAhead/pause 1200/message \"يلقي زارث «صاعقة الظل» على سيباستيان... لكنك ترفع درعك في الوقت المناسب لصد الهجوم!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"بينما يعد زارث تعويذة أخرى، تندفع إلى الأمام وتصرعه بسيفك.\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"تتوهج عصا سولاريون في سكينة وأنت ترفعها عاليًا. لقد عاد النظام إلى العالم!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

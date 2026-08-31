@@ -11,9 +11,10 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 - English glossary count: 673 entries
 - English glossary SHA-256: `b8fe9c8f5aaf9bedc990dabd2ce552d4f334450f03afee9949f75e376ab4bff9`
 - Public glossary endpoint: `https://vnrevival.fun/games/stardew-valley/glossary?locale=bn&offset=0&limit=1000`
-- Public glossary snapshot fetched: 2026-08-27, 673 entries
-- Public glossary normalized SHA-256: `8db34fd0597dbab0c9cd3f0cdf394455a7af2c4f527f5875ab10496e2b601b01`
-- Initial public/local glossary comparison: 0 differing translations
+- Public glossary snapshot fetched: 2026-08-28, 673 entries
+- Public glossary endpoint `entries` SHA-256: `6a816ab73e731ad5068291369f3ccc7e1c1a2813de0c57cf22ab12bc08044f53`
+- Public glossary endpoint object-translation SHA-256: `f2c80ef21506d4f71b753f7b1baa4a96a686fba6045801baed5546aaa00284b8`
+- Current editorial glossary differs from the unpublished public snapshot at 398 stable IDs
 - Structural translation baseline: 14,720 unique `(Target, key)` records across 187 targets and 151 patch files
 
 ## Editorial state
@@ -36,6 +37,31 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 - Consecutive clean full all-entry Bengali audits after runtime encoding: 2 of 2, with 0 warnings and 0 errors
 - Swift test suite: passed (8 / 8)
 - Release app build, strict code-signature verification, Info.plist validation, and full embedded `ModPayload` comparison against the source tree: passed
+
+## Editorial pass — 2026-08-30
+
+- Rechecked player-visible Bengali against the English assets and normalized objective duplicate-source inconsistencies; ten context-dependent source duplicates remain intentionally distinct.
+- Corrected canonical spellings for character names and gameplay terminology, including Sebastian, Caroline, Linus, Demetrius, Haley, Evelyn, Abigail, Harvey, Governor, Farming, Foraging, Pickaxe, Journal, Crafting, Mining Mastery, and season terminology in gameplay contexts.
+- Corrected confirmed semantic, grammatical, gender, register, sound-effect, UI-label, item-description, and spouse-dialogue issues in both review batches and encoded runtime patches.
+- Hardened the audit for canonical-term drift, untranslated narration names, identical-source consistency, quest completion text, and event-command skeleton preservation.
+- Consecutive clean post-edit full audits: Bengali 2 of 2 and glossary 2 of 2, each with 0 warnings and 0 errors.
+- Editorial transformation and Bengali runtime encoding are idempotent: a repeated application changed 0 records and 0 files.
+
+## Final release validation
+
+- Repeated Bengali generation is idempotent: yes; the combined batch and encoded-patch tree SHA-256 remained `aba12184ec9ac80c7815c7ce357e200f85658301fe6b8f1c0f42f5d1c412df92`, and the cluster-map SHA-256 remained `047dd004c616d4be444632c7559b18afa8710692d5278928bfcae52f671c4c0d`
+- Fresh SMAPI title-screen launch for `bn-vnrevival`: loaded `Fonts/SpriteFont1`, `Fonts/SmallFont`, and `Minigames/TitleButtons` with no adjacent Content Patcher error
+- Required regression launches: Russian, Polish, and Amharic locale-specific fonts and `TitleButtons` loaded with no adjacent Content Patcher error
+- Original startup language restored after runtime QA: `VNRevival.StardewValleyTranslations_Burmese`; no game or SMAPI process remained running
+- Bengali button PNG SHA-256: `3fa4967bfc34093ea267e442a8b2cb9eb08cb7267d6cd0dcc6b4bd53d3031eaa`
+- Bengali title PNG SHA-256: `0aca0fe2a79d6f02e7316d64e98995f31eb3a7925abf4c0770640c518f52c6d4`
+- `Bengali.xnb` SHA-256: `82c7fdc1b1f4e67bef08c52e737819c65142b883c19b211460d568e5119800f7`
+- `Bengali_0.xnb` SHA-256: `f93976f8e3df23fe7dd73639f9a42bd41d3ec0ec16233cfd8d09453d768f4a50`
+- `SmallFont.xnb` SHA-256: `f25cc6185456d980889f53990da689d5200c0644ff3df823907f3be63eaeaa38`
+- `SpriteFont1.xnb` SHA-256: `4ec241daeae2c84f6a53abedcfd550c99b32bc20e49ec43dda5dadffcf0d1a4b`
+- Final Desktop-copy JSON parse: 3,757 `ModPayload` JSON files valid, including 151 Bengali patches
+- Final Swift suite: 8 tests in 1 suite passed
+- Final release app: source payloads exactly match embedded payloads; strict code-signature verification passed
 
 ## Resume commands
 

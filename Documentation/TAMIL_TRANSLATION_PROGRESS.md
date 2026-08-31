@@ -462,6 +462,12 @@ Completed semantic batches:
 - `416-editorial-names-festivals-locations-and-core-terms`: full-corpus terminology pass normalizing character names, festival titles, locations, businesses, and core gameplay terms; 42 correction rules, idempotent
 - `417-editorial-glossary-roots-and-one-off-name-variants`: follow-up glossary-root pass covering mastery, inventory, tools, machines, residences, and one-off name variants; 56 correction rules, idempotent
 - `418-editorial-final-glossary-one-offs`: final cold-pass corrections for Secret Woods, Slime Hutch, Prize Ticket, Immunity, birthday, and exhaustion terminology; seven correction rules, idempotent
+- `419-editorial-player-facing-names-and-forge`: full-corpus cold pass translating five player-facing `%Name` narration labels for Abigail and Haley and normalizing the Volcano Forge location term; six correction rules, idempotent
+- `420-editorial-building-and-machine-glossary`: follow-up exact-term audit normalizing Coop, Barn, Silo, Shed, Keg, and Tapper terminology across mail, dialogue, events, quests, objects, special orders, and television tips; 16 correction rules across 13 records, idempotent
+- `421-editorial-location-glossary-cold-pass`: new full-corpus cold pass normalizing Jungle, Quarry, Fish Shop, and the Summit terminology in dialogue, furniture, objects, map labels, and summit-event text; 18 correction rules, idempotent
+- `422-editorial-character-name-cold-pass`: follow-up name audit replacing two visible Dwarf transliterations with the canonical glossary forms and correcting one inflected Kent spelling; three correction rules, idempotent
+- `423-editorial-glossary-and-duplicate-consistency-cold-pass`: full-corpus glossary-label and exact-duplicate pass normalizing 42 records across enchantment names, interface labels, rewards, names, stats, equipment, objects, and repeated descriptions; 52 replacements, idempotent
+- `424-editorial-audit-follow-up`: post-audit follow-up correcting two remaining Bat spellings, one Critical Chance label, and the full Forge/Enchantment terminology table in Secret Note 1007; four records and ten replacements, idempotent
 
 Coverage is calculated only from records whose Tamil value has passed source,
 context, glossary, language-quality, and token checks. File creation and
@@ -469,8 +475,8 @@ source-identical scaffolding do not count as progress.
 
 ## Resume point
 
-The two required consecutive clean 673-entry glossary audits and the final two
-consecutive clean full all-entry Tamil audits after editorial pass 418 are complete. All 14,720 semantic
+The required clean 673-entry glossary audit and the final two consecutive clean
+full all-entry Tamil audits after editorial pass 424 are complete. All 14,720 semantic
 records are reviewed. The 151 Tamil patches are cluster-encoded and included
 exactly once, the `ta-vnrevival` runtime entry and static labels are integrated,
 and all four locale-specific XNB fonts are built and round-trip verified. The

@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Temp",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "decorate": "speak Haley \"نزينها؟$s#$b#أمم، حسنًا.$u\"/faceDirection Haley 1/speak Haley \"إذن فهذا أفضل ما خطر لك أن تفعله الآن؟ هنا... في هذه الغرفة الصغيرة المظلمة معي؟$u#$b#مثير للاهتمام.$u\"/faceDirection farmer 0/faceDirection Haley 2/showFrame Haley 22/pause 1000/end dialogue Haley \"حسنًا، تبدو غرفة التحميض رائعة الآن... شكرًا يا @.$u\"",
+        "leave": "speak Haley \"أوه، أعليك المغادرة الآن؟$s#$b#حسنًا... لا بأس. وداعًا.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"رائع... لم أظن أن ${هذا الشاب^هذه الفتاة}$ بهذا الغباء.$s\"/end dialogue Haley \"ظننت أن لديك شيئًا مهمًا تفعله...$u\"",
+        "tooBold": "showFrame 6/playMusic none/positionOffset farmer -8 0/positionOffset Elliott 8 0/showFrame Elliott 12/jump Elliott/pause 1000/faceDirection Elliott 1/pause 1000/end dialogue Elliott \"أشعر بإحراج شديد...$8\""
+      }
+    }
+  ]
+}

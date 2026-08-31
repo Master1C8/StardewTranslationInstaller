@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "didntHear": "pause 400/pause 100/faceDirection Alex 1/speak Alex \"آه... كنت أتحدث إلى داستي.#$b#في الواقع، ثمة الكثير من القواسم المشتركة بيننا.$s\"/faceDirection Alex 2/pause 1000/showFrame Alex 27/pause 600/playMusic desolate/emote Alex 28/speak Alex \"لا أحب عادة التحدث عن الأمر... لكننا صديقان منذ مدة، وأظن أن بوسعي الوثوق بك.$s\"/pause 1000/faceDirection Alex 0/pause 500/speak Alex \"هل تساءلت يومًا لماذا أعيش مع جدي وجدتي؟$s#$b#لم يكن أبي رجلًا صالحًا... لقد... حسنًا، أفسد كل شيء لي ولأمي.$a#$b#كان غائبًا نصف الوقت... وفي النصف الآخر كان يشرب طوال الليل ويقول إنني عديم القيمة ولن أحقق شيئًا أبدًا.$a#$b#أظن أنه كان يضمر لي الضغينة لأنني شاب... فقد كان ناقمًا لأنه أهدر شبابه بلا طائل ولم يحقق شيئًا في حياته.$a\"/faceDirection Alex 1/speak Alex \"حسنًا... ذلك رأيي في الأمر على أي حال. ومن يدري ما كان يجول في ذهنه.$a\"/pause 800/speak Alex \"رحل ذات يوم، وبعد ذلك بوقت قصير مرضت أمي وتوفيت. لم يكن أمامي خيار سوى الانتقال للعيش مع جدي وجدتي.$s\"/move farmer 0 1 1/pause 3000/emote Alex 40/faceDirection Alex 0/playMusic spring_day_ambient/pause 500/faceDirection farmer 2/pause 500/speak Alex \"أتعلم؟ لا جدوى من الاستغراق في هذه الأمور... ولا أريد شفقة من أحد.#$b#ينبغي أن تنظر إلى الجانب الإيجابي... لم تكن طفولتي رائعة، لكنها جعلتني قويًا. كان لا بد أن أكون كذلك.\"/pause 1000/speak Alex \"تعال، دعني أريك ما يفعله داستي لقاء شريحة لحم مشوية.$h\"/faceDirection Alex 1/faceDirection farmer 1/showFrame Alex 26/specificTemporarySprite joshSteak/playSound dwop/pause 500/pause 500/speak Alex \"ها! انظر كيف يسيل لعابه. أظنه يحب شرائح اللحم بقدر ما أحبها.$h\"/playSound dogWhining/pause 3000/end"
+      }
+    }
+  ]
+}

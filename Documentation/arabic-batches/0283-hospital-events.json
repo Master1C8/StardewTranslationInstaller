@@ -1,0 +1,76 @@
+{
+  "id": "0283-hospital-events",
+  "reviewedAt": "2026-08-30",
+  "records": [
+    {
+      "target": "Data/Events/Hospital",
+      "key": "PlayerKilled",
+      "eventSegments": [
+        [" ...{0}?", " ...يا {0}؟"],
+        ["Easy, now... take it slow.", "اهدأ الآن... وتمهل."],
+        ["Someone found you unconscious and battered... I had to perform an emergency surgery on you!#$b#Be a little more careful next time, okay?$s", "وجدك أحدهم فاقدًا للوعي ومصابًا بجروح بالغة... واضطررت إلى إجراء جراحة طارئة لك!#$b#كن أكثر حذرًا قليلًا في المرة المقبلة، اتفقنا؟$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "toldTruth",
+      "eventSegments": [
+        ["Thanks for telling me the truth, Maru.#$b#Don't worry about the sample, we'll just get another one.", "شكرًا على إخباري بالحقيقة يا مارو.#$b#لا تقلقي بشأن العينة، سنأخذ أخرى فحسب."],
+        ["Thanks for being patient with me, Doctor Harvey.", "شكرًا على صبرك معي يا دكتور هارفي."],
+        ["Of course... you've been a big help around here. I don't know what I'd do without you!", "بالطبع... لقد كنت عونًا كبيرًا هنا. لا أدري ماذا كنت سأفعل من دونك!"],
+        ["@? You look a little pale... are you feeling okay?", "يا @؟ تبدو شاحبًا قليلًا... هل أنت بخير؟"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "7/f Maru 1000/p Maru",
+      "eventSegments": [
+        ["*sigh*... I'm so sick of preparing these samples...$s", "*تتنهد*... سئمت إعداد هذه العينات...$s"],
+        ["Agh! Oh no!... $4", "آه! أوه لا!... $4"],
+        ["The whole sample is ruined... Harvey's going to kill me...$s", "فسدت العينة كلها... سيقتلني هارفي...$s"],
+        ["$q 38 null#@, what should I do?#$r 38 -50 Event_Hospital_1#Just scoop it off the floor. He won't know the difference.#$r 39 -20 Event_Hospital_2#Tell Harvey it was my fault.#$r 38 50 Event_Hospital_3#Tell Harvey it was an accident.", "$q 38 null#يا @، ماذا أفعل؟#$r 38 -50 Event_Hospital_1#اجمعيها عن الأرض فحسب. لن يلاحظ الفرق.#$r 39 -20 Event_Hospital_2#أخبري هارفي أن الخطأ خطئي.#$r 38 50 Event_Hospital_3#أخبري هارفي أن ما حدث كان حادثًا."],
+        ["What happened? I heard something break.", "ماذا حدث؟ سمعت صوت شيء ينكسر."],
+        ["$p 38#I accidentally dropped one of the samples... I'm so sorry.$s|@ came in and slammed the door so loud I dropped this sample.$u", "$p 38#أسقطت إحدى العينات مصادفة... أنا آسفة جدًا.$s|دخل @ وصفق الباب بقوة حتى أسقطت هذه العينة.$u"],
+        ["You shouldn't blame others for your own problems, Maru.$a", "لا ينبغي أن تلومي الآخرين على مشكلاتك يا مارو.$a"],
+        ["*sigh*... I'll have to call the patient back in to recollect this sample.$s#$b#This'll probably put us in the red for another month...$s", "*يتنهد*... علي استدعاء المريض مجددًا لأخذ هذه العينة مرة أخرى.$s#$b#من المرجح أن يجعلنا ذلك نسجل خسارة لشهر آخر...$s"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "571102/f Harvey 2000",
+      "eventSegments": [
+        ["Hello? Hello? Is anyone out there?$9", "مرحبًا؟ مرحبًا؟ هل من أحد هناك؟$9"],
+        ["This is Dr. H at... 52 North 43.5 East... Seeking aerial response...Anyone out there?$9", "معكم الدكتور هـ عند... 52 شمالًا و43.5 شرقًا... أطلب استجابة جوية... هل من أحد هناك؟$9"],
+        ["Copy.. Dr. H on the ground... this is Blackbird Fiver Fiver Zuzu. Anything to report?", "وصلت الرسالة... الدكتور هـ على الأرض... معك بلاكبيرد فايفر فايفر زوزو. هل من شيء يستحق الإبلاغ؟"],
+        ["Someone's there!?$10#$b#Er... I mean!... Standard ground report: Wind at 3 Clicks, 36 Degrees North of West. Ground Temperature at 42 Kraggs. Humidity 53%. Dr. H out!$10", "ثمة أحد هناك؟!$10#$b#آه... أعني!... تقرير أرضي قياسي: سرعة الرياح 3 كليكات، واتجاهها 36 درجة شمال الغرب. درجة حرارة الأرض 42 كراغ. الرطوبة 53%. الدكتور هـ، انتهى!$10"],
+        ["Yikes, my pulse is soaring...$7", "يا إلهي، نبضي يتسارع بشدة...$7"],
+        ["@!", "يا @!"],
+        ["#Ask Harvey why he's all flustered.#Pretend like everything's normal.", "#اسأل هارفي عن سبب ارتباكه.#تظاهر بأن كل شيء طبيعي."],
+        ["Ah, well... You see, I was just on my radio here... and I made contact with a real pilot!", "آه، حسنًا... أترى، كنت أستخدم جهاز اللاسلكي هنا... واتصلت بطيار حقيقي!"],
+        ["As a matter of fact, we can probably see him flying overhead right now!", "في الواقع، لعلنا نستطيع رؤيته يحلق فوقنا الآن!"],
+        ["Quick, get over here!", "بسرعة، تعال إلى هنا!"],
+        ["Look!", "انظر!"],
+        ["As a kid, my dream was always to be a pilot.", "حين كنت طفلًا، كان حلمي دائمًا أن أصبح طيارًا."],
+        ["...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s", "...لكن مع ضعف بصري وخوفي الشديد المعيق من المرتفعات، بدأ ذلك الحلم يتلاشى.$s"],
+        ["It's okay... don't be sad.#$b#I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.", "لا بأس... لا تحزن.#$b#تعلمت تقبل نصيبي في الحياة. لا يستطيع الجميع تحقيق أحلامهم... هكذا هي الدنيا."],
+        ["Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h", "دعني أريك نماذج طائراتي. لقد أنهيت للتو مجموعة TR-Starbird الفاخرة الجديدة.$h"]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "57/f Harvey 1000/p Harvey",
+      "eventSegments": [
+        ["Ah, @! I was just about to write you a letter.", "آه يا @! كنت على وشك كتابة رسالة إليك."],
+        ["You see, my records indicate that you're due for your annual checkup!", "أترى، تشير سجلاتي إلى أن موعد فحصك السنوي قد حان!"],
+        ["Now, now... There's no need to worry. It'll be quick and painless. Please follow me.", "اهدأ... لا داعي للقلق. سيكون سريعًا وغير مؤلم. اتبعني من فضلك."],
+        ["Hmm... Okay. Hold still, please.", "همم... حسنًا. ابق ساكنًا من فضلك."],
+        ["Say 'ahhh...'", "قل «آآآه...»"],
+        ["Okay, you can stop.", "حسنًا، يمكنك التوقف."],
+        ["I just need to check your vitals.", "علي فقط فحص مؤشراتك الحيوية."],
+        ["$q 86 null#Hmm... Your pulse is high.$u#$r 86 20 event_heart1#I'm a little nervous...#$r 86 20 event_heart2#I'm out of breath from working on the farm.#$r 86 -50 event_heart3#Are you really a doctor? My pulse is fine!", "$q 86 null#همم... نبضك مرتفع.$u#$r 86 20 event_heart1#أنا متوتر قليلًا...#$r 86 20 event_heart2#انقطع نفسي من العمل في المزرعة.#$r 86 -50 event_heart3#أأنت طبيب حقًا؟ نبضي طبيعي!"],
+        ["Well, then! You seem very healthy, @.#$b#Just make sure not to overwork yourself on that farm!", "حسنًا إذن! تبدو بصحة ممتازة يا @.#$b#احرص فقط على ألا ترهق نفسك في تلك المزرعة!"],
+        ["Thanks for stopping in.$h", "شكرًا لمرورك.$h"]
+      ]
+    }
+  ]
+}

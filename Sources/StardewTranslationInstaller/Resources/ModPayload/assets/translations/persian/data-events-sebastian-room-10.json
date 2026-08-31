@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "opening": "pause 500/speak Sebastian \"شروع کنیم...\"/globalFade/viewport -1000 -1000/playMusic Crystal Bells/cutscene boardGame/pause 1700/message \"شاه بازیابی عصای سولاریون را به تو و همراهانت سپرده است... مأموریتی که اگر با موفقیت انجام شود، هم جایگاهتان را در تالار افسانه‌ها تضمین می‌کند و هم ثروتی هنگفت از طلا و نقره نصیبتان می‌سازد.\"/pause 800/message \"پس از یک ماه سفر طولانی در سرزمین‌های بی‌رحم، به لبهٔ پرتگاهی می‌رسی و مقصدت را می‌بینی که در دوردست قد برافراشته است.\"/pause 100/message \"آنجا، آن‌سوی دشتی مهتابی، برج مرده‌خوان قرار دارد... جایی که ارباب وحشت زارث نیروی عصای سولاریون دزدیده‌شده را برای اهداف پلیدش غصب کرده است.\"/pause 500/pause 700/updateMinigame 1/resetVariable/pause 700/question fork1 \"برج پیش روی شماست.#از ورودی جلو برو. بخت با دلیران است.#دنبال ورودی پشتی بگرد. پنهان بمانیم.\"/fork backEntrance/pause 500/updateMinigame 3/pause 50/playSound skeletonStep/pause 100/playMusic bigDrums/pause 500/message \"اسکلتی از راهروی پیش رو نگهبانی می‌دهد. خطرناک به نظر می‌رسد.\"/pause 900/resetVariable/question fork1 \"چه کار می‌کنی؟#با اسکلت بجنگ.#فرار کن.\"/fork ranAway/pause 500/resetVariable/question fork0 \"اسکلت به جلو حمله می‌کند!#سلاح‌هایتان را بچرخانید.#سپرهایتان را بالا ببرید.\"/fork swungWeapons/pause 600/playSound clubhit/updateMinigame -1/pause 500/message \"حمله را با موفقیت دفع می‌کنید. اسکلت به عقب تلوتلو می‌خورد و فرصت کافی می‌دهد تا ضربه بزنید و موجود پلید را بکشید.\"/pause 200/playSound swordswipe/pause 400/playSound skeletonDie/updateMinigame 5/updateMinigame -1/pause 1000/addMailReceived killedSkeleton/message \"در راهرو پیش می‌روید و مراقبید روی بقایای اسکلت پا نگذارید.\"/pause 900/switchEvent sewer"
+      }
+    }
+  ]
+}

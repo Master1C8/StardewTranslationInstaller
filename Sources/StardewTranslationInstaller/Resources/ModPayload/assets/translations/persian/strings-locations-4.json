@@ -1,0 +1,43 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "IslandNorth_CaveTool_0": "این فایده‌ای ندارد.",
+        "IslandNorth_CaveTool_1": "خیلی ضعیف است.",
+        "IslandNorth_CaveTool_2": "هوم...",
+        "IslandNorth_CaveTool_3": "چیز دیگری را امتحان کن.",
+        "IslandNorth_Event_SafariManAppear": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"ممنون! فکر کردم دیگر کارم تمام است... $h#$b#ماه‌ها بود که در این غار گیر افتاده بودم!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...اگر یک سالاد قارچ غاری دیگر می‌خوردم، عقلم را از دست می‌دادم... *لرزش* ...خیلی لاستیکی بود...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"به‌هرحال... من پروفسور اسنیل هستم.#$b#در یک سال گذشته مشغول بررسی گیاهان و جانوران این جزیره بوده‌ام. واقعاً جای شگفت‌انگیزی است!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"خب، فکر کنم به چادرم برگردم و کمی خودم را سرحال بیاورم. می‌ترسم بوی قارچ گرفته باشم...$s#$b#هی... گاهی به چادر سر بزن! آدم باابتکاری مثل تو می‌تواند کمک بزرگی به پروژه‌هایم بکند... هی‌هی! بدرود.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48",
+        "IslandFieldOffice_Welcome_0": "درود!",
+        "IslandFieldOffice_Welcome_1": "سلام!",
+        "IslandFieldOffice_Welcome_2": "هی!",
+        "IslandFieldOffice_Welcome_3": "خوش آمدی!",
+        "IslandFieldOffice_Survey_Yes": "آمادهٔ گزارش دادن هستم",
+        "IslandFieldOffice_Survey_Notyet": "آماده نیستم",
+        "IslandFieldOffice_Survey_Prompt_LeftPlant": "بررسی جزیره -- لطفاً تعداد گل‌های بنفش موجود در جزیره را گزارش کن.",
+        "IslandFieldOffice_Survey_PurpleFlower_Question": "چند گل بنفش در جزیره پیدا می‌شود؟",
+        "IslandFieldOffice_Survey_PurpleFlower_Wrong": "هوم... این عدد اصلاً با الگوهایم جور درنمی‌آید... شاید بهتر باشد فردا دوباره امتحان کنی.$s",
+        "IslandFieldOffice_Survey_PurpleFlower_Correct": "بله، بله... خیلی دقیق به نظر می‌رسد. ممنون!$h",
+        "IslandFieldOffice_Survey_Prompt_RightPlant": "بررسی جزیره -- لطفاً تعداد ستاره‌های دریایی بنفش موجود در جزیره را گزارش کن.",
+        "IslandFieldOffice_Survey_PurpleStarfish_Question": "چند ستارهٔ دریایی بنفش در جزیره پیدا می‌شود؟",
+        "IslandFieldOffice_Survey_Failed": "هوم... فکر می‌کنم بهتر است کمی استراحت کنی و فردا دوباره بررسی را انجام دهی...",
+        "IslandFieldOffice_Intro_Event": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"آه... بیا تو!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"به دفتر صحرایی من خوش آمدی.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"همان‌طور که می‌بینی... اینجا حسابی خالی است.$s#$b#گیر افتادن در آن غار ضربهٔ بزرگی به پروژه‌ام زد.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"اما اینجاست که تو وارد ماجرا می‌شوی! هی‌هی...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"می‌دانی، کار من استخوان است...#$b#به‌ویژه استخوان‌های باستانی... و این جزیره پر از آن‌هاست.#$b#پس اگر در این جزیره به استخوان، فسیل یا نمونهٔ مومیایی‌شده‌ای برخوردی، آن را به میزم بیاور، قبول؟ زحمتت را جبران می‌کنم!$h\"/pause 200/faceDirection SafariGuy 1/end",
+        "ScienceHouse_CarpenterMenu_RenovateHouse": "نوسازی خانه",
+        "ScienceHouse_CarpenterMenu_RenovateCabin": "نوسازی کلبه",
+        "ScienceHouse_Renovation_RemoveCrib": "برداشتن گهواره/گهواره را از خانه‌ات برمی‌دارد./گهواره‌ای را برای برداشتن انتخاب کن.",
+        "ScienceHouse_Renovation_BuildCrib": "ساخت گهواره/یک گهواره در خانه‌ات می‌سازد./جایی را برای گهواره انتخاب کن.",
+        "ScienceHouse_Renovation_OpenBedroom": "باز کردن اتاق خواب/دیوار میان اتاق خواب و اتاق ورودی را برمی‌دارد./ناحیه‌ای را برای نوسازی انتخاب کن.",
+        "ScienceHouse_Renovation_CloseBedroom": "بستن اتاق خواب/میان اتاق خواب و اتاق ورودی دیوار می‌سازد./ناحیه‌ای را برای نوسازی انتخاب کن.",
+        "ScienceHouse_Renovation_AddSouthernRoom": "افزودن اتاق جنوبی/اتاقی به سمت جنوب اتاق خوابت اضافه می‌کند./ناحیه‌ای را برای نوسازی انتخاب کن.",
+        "ScienceHouse_Renovation_RemoveSouthernRoom": "برداشتن اتاق جنوبی/اتاق واقع در جنوب اتاق خوابت را برمی‌دارد./ناحیه‌ای را برای نوسازی انتخاب کن.",
+        "ScienceHouse_Renovation_AddCornerRoom": "افزودن اتاق گوشه/اتاقی در گوشهٔ شمال شرقی خانه اضافه می‌کند./ناحیه‌ای را برای نوسازی انتخاب کن.",
+        "ScienceHouse_Renovation_RemoveCornerRoom": "برداشتن اتاق گوشه/اتاق گوشهٔ شمال شرقی خانه را برمی‌دارد./ناحیه‌ای را برای نوسازی انتخاب کن.",
+        "Journal_Name": "تکهٔ دفترچه"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "3917587/f Alex 3500/O Alex/t 500 820/M 5000/d Sun/y 2": "continue/-10000 -1000/farmer -100 -100 2 Alex -100 -100 2/warp Alex -100 -100/warp farmer -100 -100/faceDirection Alex 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Alex 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Alex \"مرحبًا يا @. قبل أن تخرج...#$b#أكره أن أطلب هذا... لكن هل يمكنني أخذ 5,000g؟#$b#إنها من أجل مشروع سري أعمل عليه... أعلم أن لدينا حسابًا مصرفيًا مشتركًا، لكنني رأيت أن علي أن أطلب إذنك على أي حال.\"/pause 1000/question fork0 \"هل تعطي أليكس 5,000g لمشروعه السري؟#نعم#لا\"/fork giveAlexMoney/playMusic none/pause 1000/emote Alex 12/speak Alex \"حقًا؟ لن تمنحني مبلغًا زهيدًا قدره 5,000g لتسعدني؟$a#$b#لم أعلم أنك بخيل إلى هذا الحد...$s\"/pause 500/faceDirection Alex 1 true/pause 100/faceDirection Alex 0/pause 500/emote Alex 28/pause 400/speak Alex \"أردت فقط أن أستمتع قليلًا...$s\"/pause 800/playSound doorClose/warp Alex -100 -100/pause 2000/end dialogue Alex \"لا أريد التحدث إليك الآن...$s\""
+      }
+    }
+  ]
+}

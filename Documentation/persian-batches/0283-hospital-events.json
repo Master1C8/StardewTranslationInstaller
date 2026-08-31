@@ -1,0 +1,196 @@
+{
+  "id": "0283-hospital-events",
+  "reviewedAt": "2026-08-30",
+  "records": [
+    {
+      "target": "Data/Events/Hospital",
+      "key": "PlayerKilled",
+      "eventSegments": [
+        [
+          " ...{0}?",
+          " ...{0}؟"
+        ],
+        [
+          "Easy, now... take it slow.",
+          "آرام... عجله نکن."
+        ],
+        [
+          "Someone found you unconscious and battered... I had to perform an emergency surgery on you!#$b#Be a little more careful next time, okay?$s",
+          "کسی تو را بیهوش و زخمی پیدا کرد... مجبور شدم جراحی اضطراری رویت انجام بدهم!#$b#دفعهٔ بعد کمی بیشتر مراقب باش، باشد؟$s"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "toldTruth",
+      "eventSegments": [
+        [
+          "Thanks for telling me the truth, Maru.#$b#Don't worry about the sample, we'll just get another one.",
+          "ممنون که حقیقت را گفتی، مارو.#$b#نگران نمونه نباش، یکی دیگر می‌گیریم."
+        ],
+        [
+          "Thanks for being patient with me, Doctor Harvey.",
+          "ممنون که با من صبور بودید، دکتر هاروی."
+        ],
+        [
+          "Of course... you've been a big help around here. I don't know what I'd do without you!",
+          "البته... اینجا کمک بزرگی بوده‌ای. نمی‌دانم بدون تو چه کار می‌کردم!"
+        ],
+        [
+          "@? You look a little pale... are you feeling okay?",
+          "@؟ کمی رنگ‌پریده به نظر می‌رسی... حالت خوب است؟"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "7/f Maru 1000/p Maru",
+      "eventSegments": [
+        [
+          "*sigh*... I'm so sick of preparing these samples...$s",
+          "*آه*... از آماده‌کردن این نمونه‌ها خسته شده‌ام...$s"
+        ],
+        [
+          "Agh! Oh no!... $4",
+          "آخ! اوه نه!... $4"
+        ],
+        [
+          "The whole sample is ruined... Harvey's going to kill me...$s",
+          "تمام نمونه خراب شد... هاروی مرا می‌کشد...$s"
+        ],
+        [
+          "$q 38 null#@, what should I do?#$r 38 -50 Event_Hospital_1#Just scoop it off the floor. He won't know the difference.#$r 39 -20 Event_Hospital_2#Tell Harvey it was my fault.#$r 38 50 Event_Hospital_3#Tell Harvey it was an accident.",
+          "$q 38 null#@، چه کار کنم؟#$r 38 -50 Event_Hospital_1#فقط از روی زمین جمعش کن. متوجه تفاوت نمی‌شود.#$r 39 -20 Event_Hospital_2#به هاروی بگو تقصیر من بود.#$r 38 50 Event_Hospital_3#به هاروی بگو تصادفی بود."
+        ],
+        [
+          "What happened? I heard something break.",
+          "چه اتفاقی افتاد؟ صدای شکستن چیزی را شنیدم."
+        ],
+        [
+          "$p 38#I accidentally dropped one of the samples... I'm so sorry.$s|@ came in and slammed the door so loud I dropped this sample.$u",
+          "$p 38#تصادفی یکی از نمونه‌ها را انداختم... خیلی متأسفم.$s|@ آمد و در را آن‌قدر محکم کوبید که این نمونه را انداختم.$u"
+        ],
+        [
+          "You shouldn't blame others for your own problems, Maru.$a",
+          "نباید دیگران را به‌خاطر مشکلات خودت سرزنش کنی، مارو.$a"
+        ],
+        [
+          "*sigh*... I'll have to call the patient back in to recollect this sample.$s#$b#This'll probably put us in the red for another month...$s",
+          "*آه*... باید دوباره بیمار را خبر کنم تا این نمونه را بگیریم.$s#$b#احتمالاً یک ماه دیگر هم زیان خواهیم کرد...$s"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "571102/f Harvey 2000",
+      "eventSegments": [
+        [
+          "Hello? Hello? Is anyone out there?$9",
+          "الو؟ الو؟ کسی آنجاست؟$9"
+        ],
+        [
+          "This is Dr. H at... 52 North 43.5 East... Seeking aerial response...Anyone out there?$9",
+          "این دکتر اچ است در... 52 شمالی، 43.5 شرقی... درخواست پاسخ هوایی... کسی آنجاست؟$9"
+        ],
+        [
+          "Copy.. Dr. H on the ground... this is Blackbird Fiver Fiver Zuzu. Anything to report?",
+          "دریافت شد... دکتر اچ روی زمین... این بلک‌برد فایور فایور زوزو است. گزارشی دارید؟"
+        ],
+        [
+          "Someone's there!?$10#$b#Er... I mean!... Standard ground report: Wind at 3 Clicks, 36 Degrees North of West. Ground Temperature at 42 Kraggs. Humidity 53%. Dr. H out!$10",
+          "کسی آنجاست؟!$10#$b#اِ... منظورم این است!... گزارش استاندارد زمینی: باد با سرعت 3 کلیک، 36 درجه شمال غربی. دمای زمین 42 کراگ. رطوبت 53%. دکتر اچ، تمام!$10"
+        ],
+        [
+          "Yikes, my pulse is soaring...$7",
+          "وای، نبضم خیلی بالا رفته...$7"
+        ],
+        [
+          "@!",
+          "@!"
+        ],
+        [
+          "#Ask Harvey why he's all flustered.#Pretend like everything's normal.",
+          "#از هاروی بپرس چرا این‌قدر دستپاچه است.#وانمود کن همه‌چیز عادی است."
+        ],
+        [
+          "Ah, well... You see, I was just on my radio here... and I made contact with a real pilot!",
+          "آه، خب... می‌بینی، با رادیویم اینجا بودم... و با یک خلبان واقعی تماس گرفتم!"
+        ],
+        [
+          "As a matter of fact, we can probably see him flying overhead right now!",
+          "راستش احتمالاً همین حالا می‌توانیم پروازش را بالای سرمان ببینیم!"
+        ],
+        [
+          "Quick, get over here!",
+          "زود، بیا اینجا!"
+        ],
+        [
+          "Look!",
+          "نگاه کن!"
+        ],
+        [
+          "As a kid, my dream was always to be a pilot.",
+          "در کودکی همیشه رؤیایم این بود که خلبان شوم."
+        ],
+        [
+          "...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s",
+          "...اما با ضعف بینایی و ترس فلج‌کننده‌ام از ارتفاع، آن رؤیا کم‌کم محو شد.$s"
+        ],
+        [
+          "It's okay... don't be sad.#$b#I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.",
+          "اشکالی ندارد... ناراحت نباش.#$b#یاد گرفته‌ام جایگاهم در زندگی را بپذیرم. همه نمی‌توانند به رؤیاهایشان برسند... دنیا همین است."
+        ],
+        [
+          "Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h",
+          "هی، بگذار هواپیماهای مدل را نشانت بدهم. تازه مجموعهٔ مجلل TR-Starbird را تمام کرده‌ام.$h"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "57/f Harvey 1000/p Harvey",
+      "eventSegments": [
+        [
+          "Ah, @! I was just about to write you a letter.",
+          "آه، @! درست می‌خواستم برایت نامه بنویسم."
+        ],
+        [
+          "You see, my records indicate that you're due for your annual checkup!",
+          "می‌بینی، پرونده‌هایم نشان می‌دهند زمان معاینهٔ سالانه‌ات رسیده است!"
+        ],
+        [
+          "Now, now... There's no need to worry. It'll be quick and painless. Please follow me.",
+          "خب، خب... لازم نیست نگران باشی. سریع و بدون درد است. لطفاً دنبالم بیا."
+        ],
+        [
+          "Hmm... Okay. Hold still, please.",
+          "هوم... بسیار خب. لطفاً تکان نخور."
+        ],
+        [
+          "Say 'ahhh...'",
+          "بگو «آآآ...»"
+        ],
+        [
+          "Okay, you can stop.",
+          "بسیار خب، کافی است."
+        ],
+        [
+          "I just need to check your vitals.",
+          "فقط باید علائم حیاتی‌ات را بررسی کنم."
+        ],
+        [
+          "$q 86 null#Hmm... Your pulse is high.$u#$r 86 20 event_heart1#I'm a little nervous...#$r 86 20 event_heart2#I'm out of breath from working on the farm.#$r 86 -50 event_heart3#Are you really a doctor? My pulse is fine!",
+          "$q 86 null#هوم... نبضت بالاست.$u#$r 86 20 event_heart1#کمی مضطربم...#$r 86 20 event_heart2#از کار در مزرعه نفس کم آورده‌ام.#$r 86 -50 event_heart3#واقعاً پزشک هستی؟ نبضم خوب است!"
+        ],
+        [
+          "Well, then! You seem very healthy, @.#$b#Just make sure not to overwork yourself on that farm!",
+          "خب پس! بسیار سالم به نظر می‌رسی، @.#$b#فقط حواست باشد در آن مزرعه بیش از حد کار نکنی!"
+        ],
+        [
+          "Thanks for stopping in.$h",
+          "ممنون که سر زدی.$h"
+        ]
+      ]
+    }
+  ]
+}

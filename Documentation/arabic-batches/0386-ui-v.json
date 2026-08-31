@@ -1,0 +1,51 @@
+{
+  "id": "0386-ui-v",
+  "reviewedAt": "2026-08-30",
+  "simpleTarget": {
+    "target": "Strings/UI",
+    "entries": {
+      "Client_WaitForHostLoad": ["Waiting for the host to finish setting up...", "في انتظار أن ينتهي المضيف من الإعداد..."],
+      "FruitTree_Warning": ["Your {0} tree wasn't able to grow last night.", "لم تتمكن شجرة {0} الخاصة بك من النمو ليلة أمس."],
+      "Workbench_Chest_Warning": ["One of the chests near the workbench is in use.", "أحد الصناديق القريبة من منضدة العمل قيد الاستخدام."],
+      "Profile_GiftLog": ["Gift Log", "سجل الهدايا"],
+      "Profile_GiftLog_NoGiftsGiven": ["You haven't given any gifts of this kind.", "لم تقدم أي هدايا من هذا النوع."],
+      "Profile_Status": ["Status", "الحالة"],
+      "Profile_Birthday": ["Birthday", "عيد الميلاد"],
+      "Profile_Gift_Loved": ["Loved Gifts", "الهدايا المفضلة"],
+      "Profile_Gift_Liked": ["Liked Gifts", "الهدايا المحبوبة"],
+      "Profile_Gift_Neutral": ["Normal Gifts", "الهدايا العادية"],
+      "Profile_Gift_Disliked": ["Disliked Gifts", "الهدايا غير المحبوبة"],
+      "Profile_Gift_Hated": ["Hated Gifts", "الهدايا المكروهة"],
+      "Profile_Gift_Category_LikedGifts": ["{0}'s Favorites", "مفضلات {0}"],
+      "Profile_Gift_Category_FruitsAndVegetables": ["Fruits & Vegetables", "الفواكه والخضروات"],
+      "Profile_Gift_Category_AnimalProduce": ["Animal Produce", "المنتجات الحيوانية"],
+      "Profile_Gift_Category_ArtisanItems": ["Artisan Items", "المنتجات الحرفية"],
+      "Profile_Gift_Category_CookedItems": ["Cooked Items", "الأطعمة المطهوة"],
+      "Profile_Gift_Category_ForagedItems": ["Flowers & Foraged Items", "الزهور والموارد البرية"],
+      "Profile_Gift_Category_Fish": ["Fish", "الأسماك"],
+      "Profile_Gift_Category_Ingredients": ["Ingredients", "المكونات"],
+      "Profile_Gift_Category_MineralsAndGems": ["Metals, Minerals & Gems", "الفلزات والمعادن والأحجار الكريمة"],
+      "Profile_Gift_Category_Misc": ["Miscellaneous", "متفرقات"],
+      "Mini_JukeBox_Off": ["Off", "إيقاف"],
+      "Mini_JukeBox_NotFarmPlay": ["The Mini-Jukebox can only be played on your farm!", "لا يمكن تشغيل مشغل الموسيقى الصغير إلا في مزرعتك!"],
+      "Mini_JukeBox_OutdoorRainy": ["The Mini-Jukebox cannot be played in the rain!", "لا يمكن تشغيل مشغل الموسيقى الصغير تحت المطر!"],
+      "Tailor_MissingIngredients": ["Place cloth or dyeable clothing in the feed and materials in the spool to begin tailoring.", "ضع قماشًا أو ملابس قابلة للصبغ في المدخل، والمواد في البكرة، لبدء الخياطة."],
+      "Tailor_Busy": ["Now tailoring...", "جارٍ الخياطة الآن..."],
+      "Tailor_Valid": ["Press the power button to begin tailoring!", "اضغط زر التشغيل لبدء الخياطة!"],
+      "Tailor_InvalidRecipe": ["The current materials cannot be used to tailor an item!", "لا يمكن استخدام المواد الحالية لخياطة غرض!"],
+      "Tailor_NotDyeable": ["The clothing item in the feed is not dyeable!", "قطعة الملابس الموجودة في المدخل غير قابلة للصبغ!"],
+      "Tailor_MakeResult": ["You'll Make:", "ستصنع:"],
+      "Tailor_Feed": ["Feed", "المدخل"],
+      "Tailor_Spool": ["Spool", "البكرة"],
+      "Clothes_Dyeable": ["Dyeable.", "قابل للصبغ."],
+      "DyePot_Help": ["Place an item of each color into the dye pots in order to dye any dyeable clothes you're wearing.", "ضع غرضًا من كل لون في أوعية الصبغة لصبغ أي ملابس قابلة للصبغ ترتديها."]
+    }
+  },
+  "simplePreserved": {
+    "target": "Strings/UI",
+    "reason": "The unknown tailoring-result label is intentionally only question-mark punctuation and contains no lexical content to translate.",
+    "keys": [
+      "Tailor_MakeResultUnknown"
+    ]
+  }
+}

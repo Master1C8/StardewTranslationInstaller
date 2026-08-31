@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "warrior": "pause 500/speak Sebastian \"اختيار جيد. لعل المحارب هو الأسهل للمبتدئين.$7#$b#أظن أنني سأختار الساحر إذن.\"/emote Sam 28/speak Sam \"يبدو أنني علقت بدور المعالج.$s\"/addMailReceived choseWarrior/switchEvent opening",
+        "healer": "pause 500/speak Sebastian \"معالج، أليس كذلك؟ هذا دور مهم جدًا.$7#$b#أظن أنني سأختار الساحر إذن.\"/speak Sam \"رائع. المحارب هو المفضل لدي على أي حال.\"/addMailReceived choseHealer/switchEvent opening"
+      }
+    }
+  ]
+}

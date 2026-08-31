@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"يا بني العزيز...^يا حفيدتي العزيزة...#$b#مرت أعوام كثيرة منذ آخر حديث بيننا. كنت آنذاك صبيًا صغيرًا... أتذكر؟^مرت أعوام كثيرة منذ آخر حديث بيننا. كنت آنذاك فتاة صغيرة... أتذكرين؟#$b#انظر إلى كل ما حققته!#$b#ورغم أنك ربما نسيتني، فقد كنت هنا طوال الوقت.#$b#كما ترى... فارق جسدي هذا العالم، لكن قلبي سيبقى دومًا في وادي ستارديو.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"لقد مضى على وجودك هنا عامان...\"/grandpaEvaluation/pause 3000/speak Grandpa \"بات مستقبل مزرعة %farm بين يديك الآن.#$b#وداعًا!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+      }
+    }
+  ]
+}

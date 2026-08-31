@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "choseMinerals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"نعم يا فينسنت؟\"/speak Vincent \"أيها المزارع @؟ أصحيح أن الغوبلن يعيشون في أعماق الكهوف... وأنهم يحبون خطف الفتيات الصغيرات لتناولهن في العشاء؟\"/jump Jas/pause 800/faceDirection Jas 3/emote Jas 28/animate farmer false true 100 102 103/speak Penny \"فينسنت! إنك تخيف جاز. دعنا لا نتحدث عن الوحوش.$a\"/faceDirection Penny 1/faceDirection Jas 0/emote Penny 12/pause 400/stopAnimation farmer/pause 300/faceDirection farmer 3/emote farmer 40/faceDirection Penny 2/faceDirection farmer 2/switchEvent fieldTripEnd"
+      }
+    }
+  ]
+}

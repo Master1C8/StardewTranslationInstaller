@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "5183338/e 3917666/O Maru/w sunny/t 2200 2500": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/changeToTemporaryMap NightSceneMaruMap2 false/bgColor 0 0 0/ambientLight 0 0 0/viewport 14 25 true clamp/pause 1000/move farmer -8 0 3/faceDirection Maru 1/pause 800/showFrame Maru 32/pause 700/showFrame Maru 4/speak Maru \"هی، @. درست به‌موقع رسیدی... دنباله‌دار نزدیک است ظاهر شود.\"/pause 500/faceDirection Maru 2/pause 1000/faceDirection farmer 2/pause 1000/speak Maru \"شب زیبایی است، نه؟\"/pause 2000/faceDirection Maru 1/faceDirection farmer 3/pause 1000/speak Maru \"نخستین باری را که این کار را کردیم یادت هست؟ مدتی گذشته...\"/faceDirection Maru 2/speak Maru \"آن شب نزدیک بود احساس واقعی‌ام را آشکار کنم... اما می‌ترسیدم مرا رد کنی.\"/faceDirection Maru 1/speak Maru \"چه کسی فکر می‌کرد کمی بعد ازدواج کنیم!$h\"/pause 500/emote farmer 20/pause 500/jump Maru/pause 400/speak Maru \"اوه! وقتش است...\"/faceDirection Maru 3/faceDirection farmer 3 true/showFrame Maru 28/emote Maru 40/pause 1000/textAboveHead Maru \"وای!\"/pause 3000/showFrame Maru 12/move Maru 0 1 0/speak Maru \"نگاه کن!\"/pause 500/move farmer -1 0 3/pause 1000/animate farmer true true 100 35/pause 1000/fade/viewport -1000 -1000/pause 1000/playMusic spaceMusic/warp Maru 15 29/faceDirection Maru 3/cutscene marucomet/pause 1000/viewport 14 25 true clamp/pause 3000/stopAnimation farmer/pause 1000/faceDirection farmer 1/pause 500/speak Maru \"پس از دیدن دنباله‌دار رسم است آرزو کنی...\"/pause 500/quickQuestion چه آرزویی می‌کنی؟#یک بچهٔ جدید#با هم پیر شویم#پول بیشتر(break)jump Maru\\pause 500\\speak Maru \"اوه! حتماً می‌توانیم تلاش کنیم...$l\"\\emote Maru 20(break)emote Maru 20\\speak Maru \"این... واقعاً شیرین است!$l#$b#من هم همین آرزو را دارم.$l\"(break)speak Maru \"پول؟ اوه...$s#$b#خب، فکر کنم کاربردی باشد...$8\"\\emote Maru 28\\speak Maru \"آرزوی من کمی عاشقانه‌تر است...\"/pause 2000/animate Maru false true 100 28/animate farmer false true 100 101/positionOffset farmer 16 0/specificTemporarySprite heart 15 29/pause 2000/specificTemporarySprite maruTelescope/viewport move 0 -1 13000/pause 16000/fade/viewport -1000 -1000/pause 3000/end newDay"
+      }
+    }
+  ]
+}

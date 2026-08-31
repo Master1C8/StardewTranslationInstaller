@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Trailer_Big",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "positive": "pause 100/emote farmer 56/pause 500/speak Pam \"ها! خب، مرا ببین! در پیری خیلی احساساتی شده‌ام، نه؟ ...هه‌هه‌هه.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"ممنون که گوش دادی، بچه\"/pause 5000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mine",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "100162/t 600 2600": "MarlonsTheme/21 9/farmer -100 -100 0 Marlon 23 6 2/addQuest 14/skippable/pause 1000/move Marlon 0 2 2/pause 500/showFrame Marlon 4/pause 1000/speak Marlon \"Hmmm... \"/pause 500/warp farmer 18 13/playSound stoneStep/move farmer 0 -3 1/move farmer 5 0 0/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"...I was just peering down into this old mine shaft.#$b#It's been abandoned for decades.\"/pause 500/showFrame Marlon 4/speak Marlon \"Still, there's probably good ore down there.#$b#But a dark place, undisturbed for so long... I'm afraid ore isn't the only thing you'll find...\"/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"Here, take this. You might need it.\"/pause 500/playSound dwop/faceDirection farmer 1 true/pause 50/faceDirection farmer 2/itemAboveHead sword/pause 3300/awardFestivalPrize sword/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 500/speak Marlon \"راستی، اسمم مارلون است. انجمن ماجراجویان درست بیرون را اداره می‌کنم.#$b#حواسم به تو هست. خودت را ثابت کن تا شاید به عضویتت فکر کنم.\"/pause 500/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mine",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "PlayerKilled": "none/-100 -100/farmer 19 10 2 {0} 18 10 1/pause 1500/showFrame 5/message \" ...{2}؟\"/pause 1000/message \" {2}، بیدار شو!\"/viewport 19 10 true/pause 1000/speak {0} {1}/move {0} 0 3 2/warp {0} -100 -100/showFrame 0/pause 1000/emote farmer 28/minedeath/end"
+      }
+    }
+  ]
+}

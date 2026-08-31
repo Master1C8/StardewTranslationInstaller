@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "980559/t 600 1130/w sunny/e 739330/j 27/!Skill Fishing 1": "spring_day_ambient/64 15/farmer 64 16 2 Willy 64 18 0/skippable/pause 1500/speak Willy \"صبح بخیر، ${پسرجان^خانم}$!\"/pause 800/speak Willy \"ببخشید این‌قدر زود مزاحمت می‌شوم، اما، اِ... متوجه شدم زیاد ماهیگیری نکرده‌ای.\"/pause 200/emote farmer 28/pause 200/speak Willy \"آره... شروع این کار برای تازه‌کار سخت است.\"/pause 400/speak Willy \"برای همین گفتم چند نکته یادت بدهم... شاید کمک کند پاهای دریایی‌ات جان بگیرند!\"/pause 500/playMusic distantBanjo/pause 500/speak Willy \"خب، چوب را باید این‌طور بگیری، می‌بینی؟...\"/pause 300/fade/viewport -1000 -1000/pause 1000/message \"ویلی یک درس کوتاه دربارهٔ اصول ماهیگیری به تو داد.\"/gainSkill Fishing 1/pause 500/message \"همین حالا اعتمادبه‌نفس بیشتری داری!\"/pause 400/viewport 64 15 clamp true/pause 1000/speak Willy \"یک چیز دیگر... می‌خواستم این را به تو بدهم.#$b#نامش «چوب تمرینی» است. صید ماهی را خیلی آسان‌تر می‌کند.#$b#فقط حواست باشد با آن تنها ماهی‌های ساده را می‌توانی بگیری. اما برای تقویت مهارت‌هایت در آغاز راه عالی است!\"/pause 800/itemAboveHead (T)TrainingRod/pause 3300/awardFestivalPrize (T)TrainingRod/pause 200/pause 500/speak Willy \"امیدوارم دوباره ماهیگیری را امتحان کنی. وقتی قلقش دستت بیاید، خیلی خوش می‌گذرد.#$b#موفق باشی!$h\"/pause 1000/end"
+      }
+    }
+  ]
+}

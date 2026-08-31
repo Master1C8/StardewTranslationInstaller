@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "980558/t 600 1130/w sunny/f Gus 1250": "playful/64 15/farmer 64 16 2 Gus 64 18 0/skippable/pause 1500/speak Gus \"صبح بخیر!\"/pause 500/faceDirection Gus 3/pause 600/speak Gus \"آه... چه روز زیبایی، نه؟\"/pause 400/faceDirection Gus 0/speak Gus \"می‌دانی، به‌عنوان صاحب میخانه از همهٔ اتفاق‌های شهر باخبر می‌شوم.#$b#یادم است وقتی تازه به اینجا آمدی... هیچ‌کس نمی‌دانست چه انتظاری داشته باشد.#$b#غریبه‌ای از شهر بزرگ... با شخصیتی ناشناخته...$s\"/textAboveHead Gus \"یک لحظه...\"/faceDirection Gus 2/animate Gus false true 250 24 25/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/stopAnimation Gus/pause 500/faceDirection Gus 0/pause 500/speak Gus \"ببخشید، باید هر 5 دقیقه این قابلمه را هم بزنم.\"/emote farmer 40/speak Gus \"به‌هرحال، چه می‌گفتم؟ آهان... می‌دانی، مثل وقتی است که سس درست می‌کنی...\"/playMusic none/speak Gus \"...اگر ادویهٔ تازه‌ای اضافه کنی ممکن است همه‌چیز خراب شود!$s\"/pause 500/playSound fireball/animate Gus false true 100 26/shake Gus 1000/specificTemporarySprite sauceFire/pause 2000/animate Gus false true 200 24 25/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/animate Gus false true 100 24/pause 500/playSound discoverMineral/specificTemporarySprite sauceGood/pause 800/playMusic distantBanjo/speak Gus \"...اما از طرفی همیشه ممکن است چیزی تازه و خوشمزه بسازی! درست است؟ هاهاهاها.$h\"/pause 100/stopAnimation Gus/faceDirection Gus 0/emote farmer 8/faceDirection Gus 3/faceDirection Gus 0/pause 500/speak Gus \"اِ... چیزی که می‌خواهم بگویم این است...$s#$b#بودنت در شهر عالی بوده و حالا تو را یکی از دوستان خوبم می‌دانم!\"/emote farmer 32/speak Gus \"به‌هرحال، آمدم چیزی به تو بدهم...#$b#داشتم اتاق پشتی را تمیز می‌کردم که این مینی‌جوک‌باکس قدیمی را پیدا کردم. می‌خواهم مال تو باشد!\"/pause 800/itemAboveHead jukebox/playSound getNewSpecialItem/pause 3300/awardFestivalPrize jukebox/pause 200/message \"یک «مینی‌جوک‌باکس» دریافت کردی\"/pause 800/speak Gus \"درواقع یک پروژهٔ قدیمی خودساختهٔ من از سال‌ها پیش است. ساختشان خیلی آسان است!#$b#پس اگر خواستی بیشتر بسازی، نقشه‌ها را هم برایت آورده‌ام...\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Mini-Jukebox/pause 500/message \"ساخت «مینی‌جوک‌باکس» را یاد گرفتی\"/pause 800/speak Gus \"خب، می‌روم خانه. باید این مارینارا را برگردانم روی اجاق! روز خوبی داشته باشی!\"/pause 500/end"
+      }
+    }
+  ]
+}

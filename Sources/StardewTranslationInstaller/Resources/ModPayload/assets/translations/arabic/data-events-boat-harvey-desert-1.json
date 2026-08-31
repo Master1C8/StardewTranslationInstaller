@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"أجل... إنه منظر حزين، أليس كذلك؟\"/pause 500/speak Willy \"كان قارب أبي... خدمه بإخلاص أكثر من 50 عامًا.#$b#أما الآن فبالكاد يبقى طافيًا.$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"كنت سأصلحها بنفسي، لكنني لا أملك المواد اللازمة يا ${فتى^فتاة}$.\"/faceDirection Willy 0/speak Willy \"أجل... ستكون 200 قطعة من الخشب الصلب لترقيع الهيكل بداية جيدة.#$b#لكن علينا أيضًا إعادة آلة التذاكر إلى العمل، وإصلاح مرساة الإيريديوم.\"/faceDirection farmer 0/pause 400/speak Willy \"إن استطعت الحصول على المواد اللازمة وإصلاح هذه العجوز... فسأتمكن عندئذ من اصطحابك إلى جزر السرخس.\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"يقولون إنها جزر بركانية حافلة بببغاوات غريبة...\"/pause 400/quickQuestion #أود المساعدة#لا، سأعتذر...(break)emote Willy 32\\speak Willy \"أجل... ظننت أنك ستفعل يا ${فتى^فتاة}$.$h\"\\speak Willy \"سأترك هذا الباب مفتوحًا لك... يمكنك المجيء وإيداع المواد متى شئت.\"(break)emote Willy 28\\speak Willy \"حسنًا، كما تشاء...$s#$b#إن غيرت رأيك، يمكنك دائمًا العودة والمساعدة. وسأترك هذا الباب مفتوحًا على أي حال.\"/pause 2000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HarveyRoom",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "normal": "pause 400/speak Harvey \"اعذرني على فوضى مظهري... لم أكن أعلم أنك قادم.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"أظن أنني أسمع طائرة تحلق فوقنا...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"يا @، تعال إلى هنا!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"انظر!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"حين كنت طفلًا، كان حلمي دائمًا أن أصبح طيارًا.\"/pause 1000/speak Harvey \"...لكن مع ضعف بصري وخوفي الشديد المعيق من المرتفعات، بدأ ذلك الحلم يتلاشى.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"لا بأس... لا تحزن.#$b#تعلمت تقبل نصيبي في الحياة. لا يستطيع الجميع تحقيق أحلامهم... هكذا هي الدنيا.\"/pause 1600/speak Harvey \"دعني أريك نماذج طائراتي. لقد أنهيت للتو مجموعة TR-Starbird الفاخرة الجديدة.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/DesertFestival",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "PlayerKilled": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end"
+      }
+    }
+  ]
+}

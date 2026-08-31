@@ -10,12 +10,14 @@ if (!batchArgument) {
 }
 
 const projectRoot = path.resolve(import.meta.dirname, "..");
+const translationSlug = process.env.VNREVIVAL_TRANSLATION_SLUG ?? "urdu";
+const languageName = process.env.VNREVIVAL_LANGUAGE_NAME ?? "Urdu";
 const translationRoot = path.join(
   projectRoot,
-  "Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/urdu",
+  `Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/${translationSlug}`,
 );
 const englishRoot = "/Users/antonkrutov/Developer/data/stardew-english-unpacked";
-const editorialPath = path.join(projectRoot, "Documentation/urdu-editorial-overrides.json");
+const editorialPath = path.join(projectRoot, `Documentation/${translationSlug}-editorial-overrides.json`);
 const batchPath = path.resolve(batchArgument);
 
 function listJSONFiles(directory, prefix = "") {
@@ -109,7 +111,7 @@ for (const relative of listJSONFiles(translationRoot)) {
   for (const change of document.Changes ?? []) {
     for (const key of Object.keys(change.Entries ?? {})) {
       const id = `${change.Target}\u0000${key}`;
-      if (index.has(id)) throw new Error(`Duplicate Urdu record: ${id}`);
+      if (index.has(id)) throw new Error(`Duplicate ${languageName} record: ${id}`);
       index.set(id, { file, change });
     }
   }
@@ -130,6 +132,7 @@ editorial.preservedReasons ??= {};
 editorial.preservedTargets ??= [];
 editorial.preservedTargetReasons ??= {};
 editorial.batches ??= {};
+const previouslyAppliedBatch = editorial.batches[batch.id];
 const preserved = new Set(editorial.preservedRecords);
 const preservedTargets = new Set(editorial.preservedTargets);
 const batchIds = new Set();
@@ -387,7 +390,7 @@ for (const inputRecord of inputRecords) {
   if (batchIds.has(id)) throw new Error(`Duplicate batch record: ${id}`);
   batchIds.add(id);
   const location = index.get(id);
-  if (!location) throw new Error(`Unknown Urdu record: ${id}`);
+  if (!location) throw new Error(`Unknown ${languageName} record: ${id}`);
   const english = englishContent(record.target)?.[record.key];
   if (english !== record.source) {
     throw new Error(`English source drift for ${id}`);
@@ -418,10 +421,16 @@ for (const inputRecord of inputRecords) {
     existing
     && JSON.stringify(existing) !== JSON.stringify(expectedEditorial)
     && !batch.replaceReviewed
+    && !previouslyAppliedBatch
   ) {
     throw new Error(`Refusing to replace reviewed editorial record: ${id}`);
   }
-  if (preserved.has(id) && !record.reviewedPreserve) {
+  if (
+    preserved.has(id)
+    && !record.reviewedPreserve
+    && !batch.replacePreserved
+    && !previouslyAppliedBatch
+  ) {
     throw new Error(`Record is already preserved: ${id}`);
   }
   const current = location.change.Entries[record.key];
@@ -432,21 +441,37 @@ for (const inputRecord of inputRecords) {
     current !== record.source
     && current !== record.translation
     && current !== allowedReviewedTranslation
+    && !previouslyAppliedBatch
   ) {
-    throw new Error(`Refusing to overwrite different Urdu translation: ${id}`);
+    throw new Error(`Refusing to overwrite different ${languageName} translation: ${id}`);
   }
   normalized.push({ ...record, id, location });
 }
 
-const existingBatch = editorial.batches[batch.id];
+const existingBatch = previouslyAppliedBatch;
 const batchRecordIds = normalized.map((record) => record.id);
 if (existingBatch && JSON.stringify(existingBatch.records) !== JSON.stringify(batchRecordIds)) {
   throw new Error(`Batch id already records different entries: ${batch.id}`);
+}
+if (existingBatch) {
+  console.log(JSON.stringify({
+    batch: batch.id,
+    records: normalized.length,
+    changed: 0,
+    editorialAdded: 0,
+    editorialUpdated: 0,
+    preservedAdded: 0,
+    preservedTargetsAdded: 0,
+    touchedFiles: 0,
+    alreadyApplied: true,
+  }, null, 2));
+  process.exit(0);
 }
 
 const touchedFiles = new Set();
 let changed = 0;
 let preservedAdded = 0;
+let preservedRemoved = 0;
 let preservedTargetsAdded = 0;
 let editorialAdded = 0;
 let editorialUpdated = 0;
@@ -471,6 +496,10 @@ for (const record of normalized) {
       editorial.preservedReasons[record.id] = record.preserveReason ?? batch.preserveReason;
     }
   } else if (!editorial.records[record.id]) {
+    if (batch.replacePreserved && preserved.delete(record.id)) {
+      delete editorial.preservedReasons[record.id];
+      preservedRemoved += 1;
+    }
     editorial.records[record.id] = {
       english: record.source,
       translation: record.translation,
@@ -505,7 +534,8 @@ console.log(JSON.stringify({
   changed,
   editorialAdded,
   editorialUpdated,
-  preservedAdded,
-  preservedTargetsAdded,
+    preservedAdded,
+    preservedRemoved,
+    preservedTargetsAdded,
   touchedFiles: touchedFiles.size,
 }, null, 2));

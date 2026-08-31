@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "900553/t 600 1130/Hn ccPantry/A cc_Greenhouse/w sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"صبح بخیر، عزیزم.\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"پیاده‌روی دلپذیری تا اینجا بود... مدت زیادی بود این مزرعهٔ قدیمی را ندیده بودم.$s#$b#حتی بهتر از چیزی شده که به یاد داشتم!$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"بیا، چیز کوچکی برایت آورده‌ام.#$b#هدیه‌ای است... از یک باغبان به باغبانی دیگر.$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"یک «گلدان باغچه» دریافت کردی\"/pause 800/speak Evelyn \"این گلدان‌ها واقعاً کاربردی‌اند. می‌توانی در فضای بسته محصولات هر فصلی را در آن‌ها پرورش بدهی!#$b#بیرون هم زیبا هستند... اما آنجا فقط می‌توانند محصول همان فصل را نگه دارند.\"/pause 500/speak Evelyn \"اگر بیشتر لازم داشتی، ساختشان هم خیلی آسان است... بیا، بریده‌ای از یک مجلهٔ قدیمی با دستور ساخت دارم.\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"ساخت «گلدان باغچه» را یاد گرفتی\"/pause 800/speak Evelyn \"خب، بهتر است بروم. اگر بلغور جو جورج به‌موقع حاضر نباشد، بداخلاق می‌شود...#$b#روز خیلی خوبی داشته باشی، عزیزم!$h\"/pause 500/end"
+      }
+    }
+  ]
+}

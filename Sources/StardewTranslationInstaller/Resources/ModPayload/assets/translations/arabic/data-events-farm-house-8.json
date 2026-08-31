@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "3917666/f Maru 3500/O Maru/t 610 1700/p Maru/d Sun/z winter": "sweet/-1000 -1000/farmer 23 24 3 Maru 22 24 1/makeInvisible 23 24/viewport -100 -100 true unfreeze/pause 3000/speak Maru \"مرحبًا يا عزيزي.#$b#ستحدث ليلة الغد ظاهرة فلكية نادرة... سيمر مذنب قريبًا جدًا من كوكبنا!#$b#كنت أفكر... لعلنا نرصده معًا؟$l\"/pause 100/emote farmer 32/speak Maru \"رائع!$h#$b#قابلني في الجبال عند منتصف ليلة الغد.#$b#إن هطل المطر، فسنفعل ذلك في الليلة التالية... سيظل المذنب هنا بضعة أيام.\"/pause 500/pause 500/end",
+        "3912132/e 3912126/O Elliott/A elliottGone/B": "spring_day_ambient/-1000 -1000/farmer 27 13 2 Elliott 25 13 1/fade unfade/makeInvisible 25 13/makeInvisible 26 13/makeInvisible 20 4/makeInvisible 22 4/eyes 1 -6000/viewport -100 -100 true unfreeze/pause 3000/emote farmer 24/pause 2000/speak Elliott \"يا @... لقد عدت...\"/jump farmer/pause 1000/move farmer -1 0 3/animate Elliott true true 100 35/animate farmer true true 100 101/positionOffset farmer -16 0/specificTemporarySprite heart 63 15/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/pause 1000/speak Elliott \"آه... لقد اشتقت إليك.$l#$b#كانت رشفة واحدة من المدينة الكبيرة كافية لتروي ظمئي... أفضّل كثيرًا أن أعود إلى هنا معك!\"/emote farmer 20/pause 300/speak Elliott \"حسنًا، أظن أنني سأعود إلى روتيني القديم مجددًا!$h#$b#لدي بعض الأعمال المتراكمة التي علي إنجازها...\"/pause 1000/end dialogue Elliott \"من الجميل أن أعود...\""
+      }
+    }
+  ]
+}

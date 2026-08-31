@@ -1,0 +1,43 @@
+{
+  "id": "0367-ui-c-complete",
+  "reviewedAt": "2026-08-28",
+  "replaceReviewed": true,
+  "simpleTarget": {
+    "target": "Strings/UI",
+    "entries": {
+      "AnimalQuery_ConfirmSell": ["Are you sure?", "مطمئن هستید؟"],
+      "AnimalQuery_ChooseBuilding": ["Please choose a {0} for your {1}", "لطفاً یک {0} برای {1} خود انتخاب کن"],
+      "BobberBar_Perfect": ["Perfect!", "بی‌نقص!"],
+      "Carpenter_Upgrade": ["Upgrade from {0}", "ارتقا از {0}"],
+      "Carpenter_CantDemolish_DuringConstruction": ["Can't demolish during construction", "هنگام ساخت‌وساز نمی‌توان تخریب کرد"],
+      "Carpenter_CantDemolish_AnimalsHere": ["Can't demolish until animals are relocated", "تا جابه‌جایی حیوانات نمی‌توان تخریب کرد"],
+      "Carpenter_CantDemolish_PlayerHere": ["Can't demolish while a player is in here", "تا وقتی بازیکنی داخل است نمی‌توان تخریب کرد"],
+      "Carpenter_CantDemolish_LockFailed": ["Can't demolish this right now", "فعلاً نمی‌توان این را تخریب کرد"],
+      "Carpenter_CantUpgrade_BuildingType": ["Incorrect Building Type", "نوع ساختمان نادرست"],
+      "Carpenter_CantBuild": ["Can't Build There", "نمی‌توان آنجا ساخت"],
+      "Carpenter_SelectBuilding_Upgrade": ["Select a {0} to upgrade", "یک {0} برای ارتقا انتخاب کن"],
+      "Carpenter_SelectBuilding_Demolish": ["Choose a structure to demolish", "سازه‌ای برای تخریب انتخاب کن"],
+      "Carpenter_SelectBuilding_Move": ["Choose a building to move", "ساختمانی برای جابه‌جایی انتخاب کن"],
+      "Carpenter_SelectBuilding_Paint": ["Select a building to paint", "ساختمانی برای رنگ‌کردن انتخاب کن"],
+      "Character_Wallets": ["Money Style", "سبک پول"],
+      "Character_SharedWallet": ["Shared", "مشترک"],
+      "Character_SeparateWallet": ["Separate", "جداگانه"],
+      "Character_Difficulty": ["Profit Margin", "حاشیهٔ سود"],
+      "Character_Close": ["Nearby", "نزدیک"],
+      "Character_CoopHelpString": ["Starting Cabins: Start with 1-{0} cabins already in place, allowing your friends to join immediately. Alternatively, you can select \"None\" and build the cabins yourself (via Robin).^^Cabin Layout: If you decide to start your farm with pre-existing cabins, you can choose between two layout styles: \"Nearby\" places all cabins near the main farmhouse, encouraging a communal farming style. \"Separate\" places the cabins far apart, allowing more room for independence.^^Profit Margin: Adjusts the profit margin (money you earn) on goods you sell. 'Normal' is the original Stardew Valley experience. More experienced and/or larger groups may wish to decrease the margin.", "کلبه‌های آغازین: بازی را با 1 تا {0} کلبهٔ آماده شروع کن تا دوستانت بتوانند بی‌درنگ بپیوندند. همچنین می‌توانی «هیچ‌کدام» را انتخاب کنی و خودت کلبه‌ها را از طریق رابین بسازی.^^چیدمان کلبه‌ها: اگر مزرعه را با کلبه‌های آماده شروع کنی، می‌توانی یکی از دو چیدمان را انتخاب کنی: «نزدیک» همهٔ کلبه‌ها را کنار خانهٔ اصلی مزرعه می‌گذارد و کشاورزی گروهی را تشویق می‌کند. «جداگانه» کلبه‌ها را دور از هم می‌گذارد تا فضای بیشتری برای استقلال باشد.^^حاشیهٔ سود: حاشیهٔ سود کالاهای فروخته‌شده، یعنی پولی را که به دست می‌آوری، تنظیم می‌کند. «عادی» تجربهٔ اصلی استاردیو ولی است. گروه‌های باتجربه‌تر یا بزرگ‌تر شاید بخواهند حاشیه را کاهش دهند."],
+      "Character_CoopHelpString2": ["Money Style: You can choose how money is earned and spent. In \"Shared\" mode, all players share the same pool of money. In \"Separate\" mode, each player has their own, individual pool of money. \"Shared\" is the classic Stardew Valley experience. ", "سبک پول: می‌توانی شیوهٔ به‌دست‌آوردن و خرج کردن پول را انتخاب کنی. در حالت «مشترک»، همهٔ بازیکنان از یک ذخیرهٔ پول استفاده می‌کنند. در حالت «جداگانه»، هر بازیکن ذخیرهٔ پول مستقل خود را دارد. «مشترک» تجربهٔ کلاسیک استاردیو ولی است. "],
+      "Character_Normal": ["Normal", "عادی"],
+      "Character_Separate": ["Separate", "جداگانه"],
+      "Character_StartingCabins": ["Starting Cabins", "کلبه‌های آغازین"]
+    }
+  },
+  "simplePreserved": {
+    "target": "Strings/UI",
+    "reason": "Difficulty labels contain only runtime-displayed percentage values and no lexical content to translate.",
+    "keys": [
+      "Character_Tough",
+      "Character_Hard",
+      "Character_Super"
+    ]
+  }
+}

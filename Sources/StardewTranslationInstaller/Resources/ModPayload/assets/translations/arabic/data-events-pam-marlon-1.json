@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Trailer_Big",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "positive": "pause 100/emote farmer 56/pause 500/speak Pam \"هاه! انظر إلي! صرت عاطفية جدًا في شيخوختي، أليس كذلك؟ ...هههه.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"شكرًا على إصغائك يا فتى\"/pause 5000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mine",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "100162/t 600 2600": "MarlonsTheme/21 9/farmer -100 -100 0 Marlon 23 6 2/addQuest 14/skippable/pause 1000/move Marlon 0 2 2/pause 500/showFrame Marlon 4/pause 1000/speak Marlon \"همم... \"/pause 500/warp farmer 18 13/playSound stoneStep/move farmer 0 -3 1/move farmer 5 0 0/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"...كنت أحدق في عمق بئر المنجم القديم هذا فحسب.#$b#لقد ظل مهجورًا عقودًا.\"/pause 500/showFrame Marlon 4/speak Marlon \"ومع ذلك، يرجح أن هناك خامًا جيدًا في الأسفل.#$b#لكن مكانًا مظلمًا لم يزعجه أحد طوال هذه المدة... أخشى أن الخام لن يكون الشيء الوحيد الذي ستجده...\"/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"تفضل، خذ هذا. قد تحتاج إليه.\"/pause 500/playSound dwop/faceDirection farmer 1 true/pause 50/faceDirection farmer 2/itemAboveHead sword/pause 3300/awardFestivalPrize sword/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 500/speak Marlon \"اسمي مارلون بالمناسبة. أدير نقابة المغامرين في الخارج مباشرة.#$b#سأراقبك. أثبت جدارتك، وقد أفكر في ضمك عضوًا.\"/pause 500/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mine",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "PlayerKilled": "none/-100 -100/farmer 19 10 2 {0} 18 10 1/pause 1500/showFrame 5/message \" ...يا {2}؟\"/pause 1000/message \" يا {2}، استيقظ!\"/viewport 19 10 true/pause 1000/speak {0} {1}/move {0} 0 3 2/warp {0} -100 -100/showFrame 0/pause 1000/emote farmer 28/minedeath/end"
+      }
+    }
+  ]
+}

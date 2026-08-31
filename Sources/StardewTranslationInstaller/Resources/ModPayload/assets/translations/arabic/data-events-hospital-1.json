@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "7/f Maru 1000/p Maru": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*تتنهد*... سئمت إعداد هذه العينات...$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"آه! أوه لا!... $4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"فسدت العينة كلها... سيقتلني هارفي...$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#يا @، ماذا أفعل؟#$r 38 -50 Event_Hospital_1#اجمعيها عن الأرض فحسب. لن يلاحظ الفرق.#$r 39 -20 Event_Hospital_2#أخبري هارفي أن الخطأ خطئي.#$r 38 50 Event_Hospital_3#أخبري هارفي أن ما حدث كان حادثًا.\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"ماذا حدث؟ سمعت صوت شيء ينكسر.\"/pause 500/speak Maru \"$p 38#أسقطت إحدى العينات مصادفة... أنا آسفة جدًا.$s|دخل @ وصفق الباب بقوة حتى أسقطت هذه العينة.$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"لا ينبغي أن تلومي الآخرين على مشكلاتك يا مارو.$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*يتنهد*... علي استدعاء المريض مجددًا لأخذ هذه العينة مرة أخرى.$s#$b#من المرجح أن يجعلنا ذلك نسجل خسارة لشهر آخر...$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+        "toldTruth": "move Harvey 0 2 3/speak Harvey \"شكرًا على إخباري بالحقيقة يا مارو.#$b#لا تقلقي بشأن العينة، سنأخذ أخرى فحسب.\"/pause 500/emote Harvey 32/pause 500/speak Maru \"شكرًا على صبرك معي يا دكتور هارفي.\"/pause 500/speak Harvey \"بالطبع... لقد كنت عونًا كبيرًا هنا. لا أدري ماذا كنت سأفعل من دونك!\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"يا @؟ تبدو شاحبًا قليلًا... هل أنت بخير؟\"/pause 500/faceDirection farmer 2/emote farmer 28/end"
+      }
+    }
+  ]
+}

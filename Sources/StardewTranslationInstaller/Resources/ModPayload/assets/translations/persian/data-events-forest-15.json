@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "choseInternet": "pause 10/message \"کِل: فروشگاه هنری آنلاینت را پیدا کردم... کنجکاو نبودی «آقای ک» که مدام همهٔ مجسمه‌هایت را می‌خرید چه کسی بود؟\"/pause 90/speak Leah \"تو «آقای ک» هستی؟ من... فکر می‌کردم فقط مرد ثروتمندی است که واقعاً هنرم را دوست دارد.$s\"/move LeahEx 0 1 2/message \"کِل: هه. خب، نصفش درست بود...\"/pause 1000/message \"کِل: ببین، لیا. می‌خواهم برگردی. دلم برایت تنگ شده، عزیزم.\"/emote Leah 12/faceDirection Leah 0/speak Leah \"اَه، مرا این‌طور صدا نکن!$a#$b#قبلاً هرگز از هنرم حمایت نکردی... حالا که کمی موفق شده‌ام مرا پس می‌خواهی؟ حالم را به هم می‌زنی.$a\"/move Leah 0 2 2/showFrame LeahEx 4/message \"کِل: هی! بیا اینجا!\"/speed farmer 4/move farmer -2 0 0 false/question fork1 \"#مشتی به صورت کِل بزن.#سعی کن منطقی با کِل حرف بزنی.\"/fork noPunch/pause 300/screenFlash .25/animate farmer false false 650 15/positionOffset farmer 0 -8/faceDirection Leah 0 true/playSound clubhit/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/speak Leah \"وای خدای من!$6\"/speed Leah 4/move Leah -1 0 0/speed Leah 4/move Leah 0 -4 1/emote Leah 40/pause 1700/speak Leah \"خب، حالش خوب است... اما خیلی خشن بود، @.^خب، حالش خوب است... اما خیلی خشن بود، @.\"/faceDirection Leah 2/speak Leah \"بیا از اینجا برویم. فکر نکنم کِل دیگر مزاحممان شود.\"/speed farmer 2/positionOffset farmer 2 0/move farmer -1 0 0/move Leah 0 -8 0 true/move farmer 0 -8 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"این بار جای خلوت‌تری پیدا کنیم...$l\"/playMusic none/pause 2000/end dialogue Leah \"خب، پیک‌نیک آن‌طور که می‌خواستم پیش نرفت.$h\""
+      }
+    }
+  ]
+}

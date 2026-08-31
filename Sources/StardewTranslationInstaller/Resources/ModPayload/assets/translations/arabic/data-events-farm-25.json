@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "980559/t 600 1130/w sunny/e 739330/j 27/!Skill Fishing 1": "spring_day_ambient/64 15/farmer 64 16 2 Willy 64 18 0/skippable/pause 1500/speak Willy \"صباح الخير يا ${فتى^فتاة}$!\"/pause 800/speak Willy \"آسف لإزعاجك في هذا الوقت المبكر، لكنني... لاحظت أنك لم تمارس الصيد كثيرًا.\"/pause 200/emote farmer 28/pause 200/speak Willy \"أجل... قد يصعب على المبتدئ دخول هذا المجال.\"/pause 400/speak Willy \"لذلك ارتأيت أن أقدم لك بضع نصائح... لعلها تساعدك على الاعتياد على البحر!\"/pause 500/playMusic distantBanjo/pause 500/speak Willy \"عليك أن تمسك الصنارة هكذا، أترى؟...\"/pause 300/fade/viewport -1000 -1000/pause 1000/message \"قدم لك ويلي درسًا سريعًا في أساسيات الصيد.\"/gainSkill Fishing 1/pause 500/message \"تشعر بمزيد من الثقة بالفعل!\"/pause 400/viewport 64 15 clamp true/pause 1000/speak Willy \"ثمة شيء آخر... أردت أن أعطيك هذا.#$b#إنها تسمى «صنارة تدريبية». وينبغي أن تسهل صيد الأسماك كثيرًا.#$b#انتبه فقط إلى أنك لن تستطيع بها صيد سوى الأسماك الأساسية. لكنها وسيلة رائعة لتنمية مهاراتك في البداية!\"/pause 800/itemAboveHead (T)TrainingRod/pause 3300/awardFestivalPrize (T)TrainingRod/pause 200/pause 500/speak Willy \"آمل أن تجرب الصيد مرة أخرى. ما إن تتقنه حتى تستمتع به كثيرًا.#$b#حظًا موفقًا!$h\"/pause 1000/end"
+      }
+    }
+  ]
+}

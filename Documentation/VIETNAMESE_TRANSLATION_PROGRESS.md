@@ -1,0 +1,571 @@
+# Vietnamese translation progress
+
+Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
+
+## Pinned inputs
+
+- Target locale: `vi`
+- Stardew language code: `vi-vnrevival`
+- English assets: `/Users/antonkrutov/Developer/data/stardew-english-unpacked/`
+- English asset count: 187 JSON targets
+- English asset-tree SHA-256: `2955464ad360aa57f1b00df2a467386e6cbf58c95e9aca4847493443479d3724`
+- English glossary count: 673 entries
+- English glossary SHA-256: `b8fe9c8f5aaf9bedc990dabd2ce552d4f334450f03afee9949f75e376ab4bff9`
+- Public glossary endpoint: `https://vnrevival.fun/games/stardew-valley/glossary?locale=vi&offset=0&limit=1000`
+- Public glossary snapshot fetched: 2026-08-30, 673 entries
+- Public glossary endpoint response SHA-256: `3af6959d988f7e74157733eddf6eecfcd41ed0d7e1ecd43bd965460d14a72ae6`
+- Structural translation baseline: 14,720 unique `(Target, key)` records across 187 targets and 151 patch files
+
+## Editorial glossary state
+
+- Full source-fidelity and Vietnamese editorial audit: complete, entries 1–673
+- Editorial override stack: 204 stable-ID records
+- Current local Vietnamese glossary SHA-256: `736ec793919095ed724c446fd12e6297a4ac4fc66bbb2e74970f994414878deb`
+- Consecutive clean full all-entry audits after the last content correction: 2 of 2
+- Automated glossary audit: 0 warnings, 0 errors
+- Override application is idempotent: yes
+- Public glossary publication: not authorized and not performed
+
+## Translation coverage
+
+- Fully translated and editor-reviewed records: 14,720 / 14,720
+- Project progress: 100.000%
+- Vietnamese patch scaffold: 151 / 151 files, 187 / 187 targets
+- Consecutive clean full all-entry translation audits after the last correction: 2 of 2
+- Vietnamese runtime configuration integrated: yes (`vi-vnrevival`, 151 Includes)
+- Vietnamese fonts: 454 sorted glyphs in each XNB; round-trip verified with all 308 required characters
+- Vietnamese button/title assets: complete (174×78 and 400×655)
+- Final editorial validation: complete, 0 warnings and 0 errors
+- Latest editorial rerun: 2026-08-30; 8 additional textual corrections across 8 keys, with the deterministic correction layer expanded to 116 rules
+- Latest rerun findings: four interface/glossary term corrections (`Inventory`, `profession`, `Immunity`, and `Gathering`), three `Tỷ lệ` spelling corrections, and one restored question in Emily's clothing-therapy event
+- Latest rerun gate: two consecutive full 14,720-record audits after the final correction, both with 0 candidates, 0 glossary candidates, 0 warnings, and 0 errors
+- Swift release gate: 8 / 8 tests passing with the Xcode toolchain
+- Release app: built successfully as unified package version 1.7.0
+- Code signature: `codesign --verify --deep --strict` passes
+- Built-app Vietnamese translations, fonts, button, and title atlas match the canonical source copy byte-for-byte
+- Final release validation: complete
+
+Coverage is computed from completed semantic batch manifests in
+`Documentation/vietnamese-batches/` plus the deterministic reviewed correction layer in
+`Documentation/vietnamese-editorial-corrections.json`. A source-identical value counts only when
+its batch record marks it as an explicit `reviewedPreserve` and gives a technical reason. Changed
+values outside those reviewed layers are audit errors.
+
+## Resume commands
+
+```sh
+node Scripts/apply-vietnamese-glossary-editorial.mjs
+node Scripts/audit-vietnamese-glossary.mjs --endpoint=/private/tmp/stardew-vi-glossary-endpoint.json
+node Scripts/apply-vietnamese-editorial-corrections.mjs
+node Scripts/audit-vietnamese-editorial.mjs /Users/antonkrutov/Developer/data/stardew-english-unpacked
+node Scripts/audit-vietnamese.mjs /Users/antonkrutov/Developer/data/stardew-english-unpacked
+node Scripts/audit-vietnamese-runtime.mjs
+./Scripts/build-vietnamese-fonts.sh
+```
+
+## Completed semantic batches
+
+- `001-core-ui`: 60 short interface, animal-management, building, character-creation, skill, and collection records
+- `002-inventory-progression-ui`: 60 short collection, inventory, stat, Joja, bundle, letter, and level-up records
+- `003-professions-and-level-ui`: 40 short profession, progression, save-menu, title-screen, and farm-limit records
+- `004-multiplayer-ui-and-notices`: 52 short sign-in, controller, co-op, connection, chat, relationship, and museum notices
+- `005-multiplayer-life-events`: 60 short co-op milestones, sleep, family, cinema, earnings, achievement, and relationship records
+- `006-social-profile-and-tailoring-ui`: 60 short proposal, loss, gift-profile, jukebox, tailoring, dyeing, and emote records (59 translated, 1 reviewed symbol preserve)
+- `007-wallet-chat-and-pond-status-ui`: 60 short emote, wallet, co-op milestone, Junimo Kart, fish-pond, and chat-command records
+- `008-chat-commands-and-player-prompts`: 60 short command-help, moderation, private-message, ready-check, gift, dance, marriage, and family prompts
+- `009-fish-pond-and-advanced-options`: 60 short family, fish-pond request voices, cinema, kitchen, controller, and advanced-option records
+- `010-advanced-setup-forge-and-build-ui`: 60 short setup, connection, local co-op, building, Beach Farm, forge, construction, order, and darts records
+- `011-island-parrot-and-late-game-notices`: 60 short darts, island restoration, parrot voice, forge, late-game, mine-state, and anti-cheat records
+- `012-perfection-race-and-mobile-ui`: 60 short perfection, end-credit, race, sabotage, Skull Cavern, display, shipping, and mobile tutorial records
+- `013-mobile-tutorial-and-controls`: 53 short mobile tutorial, navigation, backup, touch-control, display, storage-migration, and cloud-save records
+- `014-achievements`: 40 short achievement titles/objectives and the new-achievement HUD notice, with technical caret fields preserved
+- `015-building-management-and-descriptions`: 42 short building-state, fish-pond, painting, management, housing, transport, production, and pet records
+- `016-big-craftables-furniture-and-machines-a`: 80 short furniture, lighting, storage, production-machine, decoration, and farm-equipment records (78 translated, 2 reviewed fictional-name preserves)
+- `017-big-craftables-furniture-and-machines-b`: 80 short lighting, animal-care, production, storage, arcade, decoration, and utility records (76 translated, 4 reviewed mystery-name preserves)
+- `018-big-craftables-decor-and-statues`: 80 short seasonal, tailoring, Slime, fossil, machine, trophy, statue, stone-art, lighting, and sign records
+- `019-big-craftables-and-tools`: 54 short decoration, workbench, worm-bin, axe, rod, hoe, pan, pickaxe, scepter, shears, trash-can, and watering-can records
+- `020-weapons-a`: 80 short personal, bone, crystal, dark, dragon-tooth, Người Lùn, forest, Galaxy, Infinity, Iridi, iron, lava, and named-weapon records (79 translated, 1 reviewed crossover-name preserve)
+- `021-weapons-b`: 44 short obsidian, pirate, shadow, silver, steel, templar, wooden, and named-weapon records
+- `022-footwear-and-shirts-a`: 80 short footwear and early shirt records covering names, descriptions, colors, materials, and technical slash-delimited fields
+- `023-shirts-b`: 79 short shirt, jacket, armor, hoodie, martial-arts, and vest records
+- `024-shirts-c`: 80 short shirt, suit, festival, uniform, island, bandana, and themed-garment records
+- `025-shirts-d`: 80 short shirt, overall, uniform, jewelry, relic, food, and novelty-garment records
+- `026-shirts-e`: 80 short seasonal, dyed, patterned, food, island, and novelty-garment records
+- `027-shirts-and-pants`: 53 short late shirt, trouser, skirt, dress, and shorts records
+- `028-hats-a`: 40 short slash-delimited hat, mask, bow, ear, and headwear records with technical fields preserved
+- `029-hats-b`: 40 short slash-delimited living, profession, costume, magical, island, and novelty-headwear records with technical fields preserved
+- `030-hats-c`: 41 short slash-delimited late-game, character, Joja, festival, pan, mystery, and Infinity headwear records with technical fields preserved
+- `031-community-center-bundles`: 49 short remixed-name and slash-delimited Community Center bundle records (45 translated, 4 reviewed currency-field preserves)
+- `032-character-relatives-and-reactions`: 40 short kinship, naming, Junimo, divorce, pet, and saloon-reaction records (38 translated, 2 reviewed proper-name preserves)
+- `033-mine-encounters`: 15 long memory, Abigail mine, henchman, and Krobus Dark Talisman dialogue records
+- `034-movie-invitations-and-entry`: 20 long movie invitation, acceptance, rejection, ticket, and theater-entry records
+- `035-movie-theater-and-concessions`: 21 long theater prompt, concession, and post-movie reaction records
+- `036-spouse-movie-invitations`: 15 long gendered-concession and spouse-specific movie invitation records
+- `037-shop-phone-services`: 30 long Robin, Clint, Gus, and Pierre phone-service, opening-hours, menu, and voicemail records
+- `038-ranch-calls-and-memories`: 21 long Marnie, random-caller, Leo-memory, Pierre-stock, and Marlon recovery records
+- `039-guild-hatchery-and-night-market`: 30 long guild-goal, incubator, Night Market, painter, warper, and beach-bridge records (27 translated, 3 reviewed format preserves)
+- `040-farm-setup-and-summary`: 15 long farm-summary, co-op-help, farm-type, percentage, and recipe-format records (10 translated, 5 reviewed format preserves)
+- `041-beach-travel-and-community-center`: 30 long Old Mariner, minecart, desert-bus, horse, bouncer, and Junimo completion records (29 translated, 1 reviewed price-format preserve)
+- `042-farm-access-and-shop-notices`: 30 long farm-event, shrine, spouse-attack, access-control, locker-room, and shop-notice records (29 translated, 1 reviewed symbol preserve)
+- `043-purchases-quest-clues-and-town-records`: 30 long purchase, Mr. Qi clue, ledger, fund-transfer, divorce, and mayor-fridge records
+- `044-quest-puzzles-arcade-and-club`: 30 long Mr. Qi puzzle, Skull Key, arcade, submarine, mine reset, CalicoJack, Club, and Người Lùn epitaph records (29 translated, 1 reviewed game-title preserve)
+- `045-town-services-calicojack-and-upgrades`: 30 long town clue, access notice, CalicoJack rules, carpenter upgrade, Joja membership, and mine-state records
+- `046-mines-town-shrines-and-theater`: 30 long mine-fall, guild, town-sign, profession-statue, dark-shrine, eviction, and theater-poster records (29 translated, 1 reviewed title-format preserve)
+- `047-theater-tea-and-island-fieldwork`: 30 long theater, tea, island-rescue event, field-office welcome, and survey records
+- `048-island-survey-and-gourmand-requests`: 15 long island-survey, field-office introduction event, and Gourmand Frog request records
+- `049-gourmand-rewards-and-parrot-hints`: 28 long Gourmand Frog reward and Golden Walnut parrot-hint records
+- `050-renovations-resort-and-boat-services`: 30 long home-renovation, arcade, island-resort, lost-and-found, and boat-repair records
+- `051-island-boat-field-office-and-challenge`: 28 long Qi-door, boat, Field Office finale, donation, island-shop, Challenge Shrine, guild, and summit records
+- `052-objects-system-messages-and-a-items`: 40 short object-system, recipe, artifact, mineral, fish, crop, seed, gem, and ring records
+- `053-objects-artifacts-fruit-and-gems-a`: 40 short artifact, fossil, fish, ancient-item, fruit-tree, gem, and crop records
+- `054-objects-food-minerals-and-farm-supplies-b`: 40 short food, artifact, fruit-tree, mineral, fertilizer, farm-supply, drink, and crop records
+- `055-objects-berries-fish-and-books-c`: 40 short berry, fish, flower, crop, Slime, artifact, and book records
+- `056-objects-books-and-basic-goods-d`: 40 short book, skill-effect, relationship, food, fish, and flooring records
+- `057-objects-crops-artifacts-and-cave-goods-e`: 40 short crop, trash, egg, food, monster-drop, fish, ring, powder, mineral, festival, and camping records
+- `058-objects-fish-fruit-and-artifacts-f`: 40 short crop, fish, fruit, mushroom, cheese, bomb, sapling, artifact, meal, and mineral records
+- `059-objects-materials-coffee-and-copper-g`: 40 short mineral, shellfish, material, path, drink, crop, meal, ring, mushroom, mask, and ore records
+- `060-objects-seafood-cranberries-and-crystal-h`: 40 short ore, coral, crop, seafood, bait, ring, berry, flower, flooring, and crystal records
+- `061-objects-deluxe-supplies-and-dried-goods-i`: 40 short flower, fertilizer, gem, dinosaur, fish, mineral, tackle, dried-food, artifact, and music-block records
+- `062-objects-dwarf-relics-eggs-and-emerald-j`: 40 short music-block, duck, Người Lùn relic, crystal, monster-drop, fish, crop, artifact, gem, and ring records
+- `063-objects-fairy-fiber-and-fire-k`: 40 short tonic, sprinkler attachment, meal, mineral, ammo, fairy, seasonal seed, Sợi, fern, gem, and firework records
+- `064-objects-fish-fossils-and-frozen-goods-l`: 40 short fireworks, seafood, fish, mineral, music-block, fossil, fried-food, geode, crystal, and fruit records
+- `065-objects-garlic-gems-and-glow-rings-m`: 40 short fruit, Galaxy, crop, gate, mineral, geode, fish, ginger, artifact, meal, ring, and goat records
+- `066-objects-gold-grapes-and-grass-n`: 40 short fish, gold material, animal treat, special item, artifact, Óc chó Vàng, mineral, grape, book, Mầm Cỏ, path, algae, and crop records
+- `067-objects-greenery-honey-and-horse-o`: 40 short crop, Mưa Xanh, Slime, tea, quest item, fish, Gỗ cứng, food, Cỏ khô, mineral, honey, hops, horse, and ring records
+- `068-objects-iridium-iron-and-ice-p`: 40 short crop, growth aid, food, ice fish and crystal, ring, Iridi, iron, decoration, gem, and mineral records
+- `069-objects-jelly-juice-and-large-produce-q`: 40 short mineral, flower seed, preserve, Joja, journal, juice, ring, crop, large produce, fish, tackle, and forage records
+- `070-objects-luck-lobster-and-magma-r`: 40 short legendary fish, mineral, goat produce, elixir, seafood, quest item, luck item, wood, bait, candy, mushroom, and geode records
+- `071-objects-magnet-mango-and-melon-s`: 40 short bait, ring, tree seed, meal, mineral, tropical fruit, Đảo Gừng sapling, maple, dairy, drink, bomb, crop, proposal, and fish records
+- `072-objects-moss-mystery-and-mummified-t`: 40 short dairy, meal, mixed seed, monster aid, mushroom, Rêu, tree seed, Vé Phim, fish, mineral, fossil, remedy, shellfish, Hộp Bí ẩn, and mystic item records
+- `073-objects-ocean-opal-and-orange-u`: 40 short tree seed, ring, fossil, shell, mineral, resin, ocean item, seafood, oil, food, Geode Toàn năng, fruit-tree, artifact, and quest-item records
+- `074-objects-parsnip-peach-and-pickles-v`: 40 short egg, shellfish, drink, meal, fossil, crop, fruit-tree, pearl, fish, pet, Slime, ring, and preserve records
+- `075-objects-pineapple-poppy-and-potato-w`: 40 short preserve format, Pierre quest item, fish, drink, tropical crop, tree seed, food, quest item, fruit-tree, flower, and tuber records
+- `076-objects-powdermelon-prehistoric-and-purple-x`: 40 short winter crop, prehistoric artifact, sprinkler attachment, Lăng kính item, Vé Thưởng, ring, fish, pumpkin, book, mushroom, and Slime records
+- `077-objects-purple-qi-and-rain-y`: 40 short Slime, mineral, Qi crop and currency, fertilizer, retaining soil, sprinkler, rabbit item, radioactive material and fish, crop, shell, fish, and rain item records
+- `078-objects-rain-rare-and-savage-z`: 80 short rain item, dried fruit, artifact, crop, fish, mushroom, meal, Slime, mineral, rice, ring, jelly, roe, flooring, rusty artifact, seafood, and Sashimi records
+- `079-objects-scorpion-sea-and-specific-aa`: 80 short fish, seafood, jelly, note, fossil, skill book, Slime, ring, smoked-food format, mineral, trash, essence, flower seed, and bait records
+- `080-objects-speedgro-spice-and-summer-ab`: 80 short growth aid, berry, meal, tackle, torch, fish, seasonal seed, sprinkler, squid, Thung lũng Stardew, Quả Sao Rơi, crop, mineral, flooring, artifact, ring, and seasonal produce records
+- `081-objects-summer-sun-and-truffle-ac`: 80 short seasonal crop, fish, flower, meal, supply crate, fruit, tea, tent, ring, mineral, Slime, produce, food, treasure item, Phân Cây, fossil, quest item, coffee, Giải Cá hồi, and truffle records
+- `082-objects-truffle-tulip-and-wilted-ad`: 66 short truffle, flower, fish, wood, rice, ring, meal, vinegar, Hư Không, gold, fish, war item, Vật tổ Dịch chuyển, flooring, wedding, weeds, and wheat records
+- `083-objects-wheat-wine-and-yam-ae`: 40 short flour, wheat, algae, egg, bait, forage, relationship item, wine format, seasonal seed, wood, fish, wool, worm, and tuber records
+- `084-furniture-piano-chairs-and-couches-a`: 40 short piano, chair, stool, throne, bench, armchair, and sofa furniture records
+- `085-furniture-couches-tables-and-bookcases-b`: 40 short sofa, dresser, dining-table, general-table, tea-table, catalogue, cabinet, and bookcase furniture records
+- `086-furniture-decor-lamps-and-art-c`: 80 short bookcase, pillar, plant, sculpture, decorative object, side-table, seasonal tree, lamp, rug, TV, artwork, window, plush, and statue furniture records
+- `087-furniture-nautical-fireplaces-and-beds-d`: 80 short nautical decor, window, rug, plant, lamp, hanging decor, artwork, fireplace, movie poster, plush, statue, tree, wall decor, bed, and fish-tank furniture records
+- `088-furniture-tropical-wall-and-desert-e`: 80 short fish-tank, tropical decor, bed, artwork, wall decor, banner, divider, rug, TV, photo, bookcase, sign, science decor, statue, and desert furniture records
+- `089-furniture-desert-joja-and-wizard-f`: 80 short desert, bed, tank, Joja, retail, Pháp sư, witch, plant, cushion, Tiên dược, and lamp furniture records
+- `090-furniture-runes-books-and-junimos-g`: 80 short Pháp sư, cổ tự, crystal-ball, book, Junimo, Trung tâm Cộng đồng, portrait, rug, and decorative furniture records
+- `091-furniture-portraits-retro-and-home-h`: 80 short portrait, Junimo, retro, door, home, pet, lamp-table, window, rug, cushion, and decorative furniture records
+- `092-furniture-trash-home-and-data-preserves-i`: 40 short trash, home, pet, beach-bed, and furniture records, including 12 reviewed slash-delimited data preserves
+- `093-animation-control-data-a`: 80 short reviewed technical animation-control preserves containing frame indices, flags, and resource references
+- `094-animation-control-and-visible-text-b`: 40 short animation records: 25 reviewed technical preserves and 15 character remarks with dialogue tokens intact
+- `095-character-shop-speech-bubbles-a`: 64 short Robin, Marnie, Marlon, Maru, Leah, Elliott, Morris, Sandy, Lewis, Gus, Gunther, and Pierre shop speech bubbles
+- `096-credits-headings-languages-and-names`: 63 short credit headings, translator-language labels, links, names, organizations, and image directives, including 28 reviewed proper-name or technical preserves
+- `097-movie-concessions`: 48 short movie-theater concession names and descriptions, including two reviewed Joja brand-name preserves
+- `098-movies-sapling-and-mysterium`: 20 long title, synopsis, and scene records for Cây Non Bé nhỏ Dũng cảm, Mysterium, and Hành trình của Vua Đồng cỏ
+- `099-movies-prairie-king-and-wumbus`: 20 long scene and synopsis records for Hành trình của Vua Đồng cỏ and Wumbus, including one reviewed fictional-title preserve
+- `100-movies-zuzu-express-and-coldstar`: 21 long title, synopsis, and scene records for Tàu Tốc hành Thành phố Zuzu and Phép màu tại Trang trại Coldstar
+- `101-movies-natural-wonders-and-howls`: 25 long title, synopsis, and scene records for the Ferngill nature documentary and Tiếng Tru Trong Mưa
+- `102-movie-reactions-penny-a`: 20 long Penny and Pam movie reactions covering family, comedy, horror, and general preferences
+- `103-movie-reactions-penny-pam-krobus-wizard-b`: 20 long Penny, Pam, Krobus, and Pháp sư reactions with dialogue breaks, emotes, and two reviewed silent-response preserves
+- `104-movie-reactions-george-alex-evelyn-c`: 20 long George, Alex, and Evelyn reactions covering loved, liked, and disliked movies
+- `105-movie-reactions-evelyn-pierre-abigail-d`: 20 long Evelyn, Pierre, and Abigail reactions to classics, documentaries, fantasy, horror, and Vua Đồng cỏ
+- `106-movie-reactions-abigail-caroline-harvey-e`: 20 long Abigail, Caroline, and Harvey reactions with title placeholders, emotes, and character-specific voices
+- `107-movie-reactions-harvey-gus-lewis-f`: 20 long Harvey, Gus, and Lewis reactions covering food, holidays, classics, documentaries, and community concerns
+- `108-movie-reactions-lewis-jodi-sam-vincent-g`: 20 long Lewis, Jodi, Sam, and Vincent reactions with name tokens and emotes intact
+- `109-movie-reactions-vincent-kent-clint-emily-h`: 20 long Vincent, Kent, Clint, and Emily reactions, including gender-split Clint dialogue and all control tokens
+- `110-movie-reactions-emily-haley-maru-i`: 20 long Emily, Haley, and Maru reactions covering spiritual, romantic, fantasy, and documentary preferences
+- `111-movie-reactions-maru-sebastian-robin-demetrius-j`: 20 long Maru, Sebastian, Robin, and Demetrius reactions covering science fiction, cinematography, action, and romance
+- `112-movie-reactions-demetrius-linus-dwarf-marnie-k`: 20 long Demetrius, Linus, Người Lùn, and Marnie reactions with scientific, outsider, and cultural voices preserved
+- `113-movie-reactions-marnie-shane-jas-l`: 20 long Marnie, Shane, and Jas reactions covering loved, liked, disliked, and age-targeted movies
+- `114-movie-reactions-jas-leah-sandy-elliott-willy-leo-m`: 29 long Jas, Leah, Sandy, Elliott, Willy, and Leo reactions with glossary locations and character voices applied
+- `115-furniture-internal-localized-references-a`: 60 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `116-furniture-internal-localized-references-b`: 72 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `117-furniture-internal-localized-references-c`: 72 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `118-furniture-internal-localized-references-d`: 72 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `119-furniture-internal-localized-references-e`: 72 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `120-furniture-internal-localized-references-f`: 72 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `121-furniture-internal-localized-references-g`: 72 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `122-furniture-internal-localized-references-h`: 72 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `123-furniture-internal-localized-references-i`: 69 short reviewed technical Data/Furniture preserves whose display names resolve through LocalizedText references
+- `124-internal-crafting-recipe-data-a`: 80 short reviewed technical crafting-recipe preserves containing only IDs, quantities, flags, and unlock data
+- `125-internal-crafting-and-cooking-recipe-data-b`: 80 short reviewed technical crafting and cooking recipe preserves containing only IDs, quantities, flags, and unlock data
+- `126-internal-cooking-and-aquarium-data-c`: 80 short reviewed technical cooking-recipe and aquarium behavior preserves without player-facing text
+- `127-internal-aquarium-and-chair-data-d`: 80 short reviewed technical aquarium and chair-tile preserves controlling sprites, movement, placement, and direction
+- `128-internal-chair-hair-and-paint-data-e`: 78 short reviewed technical chair-tile, hair, and paint-data preserves controlling placement, sprites, masks, and textures
+- `129-fish-display-names`: 74 short Data/Fish records with display-name fields translated consistently with the reviewed object names and all technical fields intact
+- `130-monster-display-names`: 51 short Data/Monsters records with final display-name fields translated and all combat, drop, sprite, and behavior fields intact
+- `131-small-visible-string-completions`: 40 short object, animation, shop-bubble, farm-animal, saloon, NPC-name, world-map, and buff records, including one reviewed proper-name preserve
+- `132-cs-buffs-ingredients-and-dialogue-words-a`: 77 short buff, stat, ingredient, debris, adjective, and noun records with leading/trailing spacing preserved
+- `133-cs-dialogue-words-colors-and-event-ui-b`: 80 short random-dialogue word, color-segment, event-result, cave-choice, naming, and pet-adoption records with slash and spacing syntax intact
+- `134-cs-book-grandpa-and-festival-prompts-c`: 30 long pet, Elliott book, Grandpa evaluation, secret-gift, score, egg-hunt, festival-start, and dance records with all dialogue tokens intact
+- `135-cs-fair-games-fortune-and-awards-d`: 30 long Vũ hội Hoa, Hội chợ, Xu Sao, fortune-teller, Trưng bày Nông sản award, secret-gift, and festival-exit records
+- `136-cs-fortune-friends-and-romance-e`: 30 long Shane, Xu Sao, pet-name, gift, friendship, hospital, and romance fortune records, including four reviewed proper-name preserves
+- `137-cs-fortune-scenes-and-farmer-notices-f`: 30 long fortune scene, soup, fishing result, item receipt, exhaustion, level-up, journal, and title records, including one reviewed name preserve
+- `138-cs-farmer-titles-and-game-notices-g`: 30 long farmer-title, gamepad, festival-location, wedding, fullness, setup, and weekday-label records
+- `139-cs-stardrop-system-and-npc-prompts-h`: 30 long weekday, Quả Sao Rơi, energy, item-consumption, test, gamepad, playtime, crash, loading, naming, and dating prompts
+- `140-cs-dating-marriage-and-krobus-dialogue-i`: 30 long dating, breakup, proposal, marriage, jealousy, gift-limit, Krobus, spouse, and Club Card records
+- `141-cs-greetings-and-loved-gift-rumors-j`: 30 long greeting and loved-gift rumor fragments with spacing, placeholders, gendered references, and one reviewed placeholder-only preserve
+- `142-cs-hated-gift-rumors-and-birthdays-k`: 30 long loved-gift suffix, hated-gift rumor, members-only, and birthday-reaction records
+- `143-cs-birthday-reactions-and-family-dialogue-l`: 30 long birthday, injury, spouse mood, adoption, pregnancy, and parenting records with slash variants and dialogue tokens intact
+- `144-cs-spouse-chores-decor-and-pet-names-m`: 30 long spouse mood, farm chore, pet-bowl, decoration, wallpaper, flooring, housekeeping, and affectionate-name records
+- `145-cs-save-marriage-and-season-music-n`: 30 long nickname, option, loading, monster-goal, wedding-ceremony, date, and spring music-title records
+- `146-cs-seasonal-and-mine-music-titles-o`: 30 long seasonal, Khu Mỏ, festival, wedding, forest, Grandpa, and music-box track titles
+- `147-cs-festival-band-and-arcade-music-p`: 30 long festival, Sam band, Khu Mỏ, library, shop, character, and Vua Đồng cỏ track titles
+- `148-cs-arcade-music-buildings-and-seasons-q`: 30 long Vua Đồng cỏ, music, animal-building requirement, Junimo farewell, season, and diary records
+- `149-cs-diary-location-and-fishing-ui-r`: 30 long diary, location, shop, pack, resource, time, fishing, Junimo-note, load-game, and delete-file records, including one reviewed fictional-language preserve
+- `150-cs-town-map-locations-and-hours-s`: 30 long map labels, household descriptions, opening hours, shop, museum, sewer, graveyard, tent, Khu Mỏ, and ruined-house records
+- `151-cs-map-and-controls-options-t`: 30 long map, option-section, window, effects, control binding, movement, chat, running, and inventory-slot records
+- `152-cs-inventory-animal-purchase-and-quest-ui-u`: 30 long inventory-slot, animal purchase, building, care, naming, quest cancellation, and duration records
+- `153-cs-quest-shipping-and-shop-greetings-v`: 30 long quest, save, shipping, outdoor, traveling, magic-boat, carpentry, blacksmith, fishing, supply, and Pierre shop records
+- `154-cs-special-shops-skills-and-social-w`: 30 long shop greetings, Hat Mouse dialect, special-currency shops, skill labels, wallet items, and social-state records
+- `155-cs-social-status-and-strength-scale-x`: 30 long relationship labels, social status, monster names, and strength-game scale records
+- `156-cs-strength-scale-and-title-tips-y`: 30 long strength-game scale, title-screen tips, controller guidance, and challenge records
+- `157-cs-title-tutorial-and-arcade-results-z`: 30 long title-menu milestones, tutorial topics, Abigail game reactions, Wheel Spin, and CalicoJack result records
+- `158-cs-calico-grandpa-and-minigame-ui-aa`: 30 long CalicoJack results, Grandpa prologue and letter, Junimo Kart, slots, and target-game UI records
+- `159-cs-object-placement-and-categories-ab`: 30 long footwear, furniture placement, machine requirements, Slime hatching, weather, and item-category records
+- `160-cs-object-discoveries-and-tv-intros-ac`: 30 long item categories, scarecrow and hopper status, artifact discoveries, planting constraints, wallet notices, and TV introductions
+- `161-cs-tv-oracle-weather-and-luck-ad`: 30 long Nhà Tiên tri của Welwick, KOZU 5, recipe, festival, weather, and daily-luck records
+- `162-cs-tv-luck-decor-and-fishing-quests-ae`: 30 long neutral-luck, wallpaper, fish-population quest, fishing request, and reward-fragment records
+- `163-cs-fishing-rewards-and-delivery-requests-af`: 30 long fishing reward, item-delivery, Demetrius, Marnie, Sebastian, and request-purpose records
+- `164-cs-delivery-food-and-meal-requests-ag`: 30 long food-request purposes, meal cravings, seasonal cooking, and dish-type records
+- `165-cs-delivery-remedies-and-jewelry-ah`: 30 long food preparation, Harvey remedy, medical-condition, Gus appetizer, display-location, and Emily jewelry records
+- `166-cs-delivery-body-parts-and-hand-in-ai`: 30 long general delivery requests, body-part remedy, urgency, payment, and hand-in greeting records
+- `167-cs-delivery-responses-and-character-jobs-aj`: 30 long delivery responses and Pháp sư, Haley, Sam, Maru, and Abigail request records with selection syntax intact
+- `168-cs-delivery-closeout-and-resource-quests-ak`: 30 long delivery closeout, reward, Clint ore-study, quality, and Robin resource-collection records, including one reviewed signature-layout preserve
+- `169-cs-resource-and-monster-quests-al`: 30 long resource completion, Duggy, Slime, invasive Cua Đá, elemental-balance, and monster-hunting records
+- `170-cs-social-farming-resource-and-fishing-ui-am`: 30 long monster completion, social greeting, farming constraints, resource clumps, Cây fertilizer, and fishing UI records
+- `171-cs-tools-weapons-and-language-names-an`: 30 long fishing tackle, Kiếm Thiên hà, weapon stats, animal tools, slingshot, tool upgrade, Bình tưới, and language-name records
+- `172-cs-language-random-sentences-and-keys-ao`: 30 long language names, randomized passphrase sentences, and 11 reviewed standard keyboard-label preserves
+- `173-cs-keyboard-key-labels-ap`: 30 long reviewed standard keyboard-key labels preserved for direct physical-key and input-configuration matching
+- `174-cs-browser-media-and-symbol-keys-aq`: 30 long localized Alt, browser, volume, media, application-launch, punctuation, and ChatPad key labels
+- `175-cs-more-key-labels-recovery-and-krobus-ar`: 30 long key labels, controller options, tool readiness, item recovery, Krobus move-in, and housemate records, including eight reviewed specialist key-code preserves
+- `176-cs-theater-music-desert-and-ostrich-as`: 30 long housemate, movie-theater, cursed-doll, soundtrack-title, Sa mạc trader, customized-boot, and ostrich records
+- `177-cs-furniture-volcano-buffs-and-farm-computer-at`: 30 long furniture placement, volcano shop, jukebox, fish tank, Hương Quái vật, nausea, darkness, Cột Nhỏ, and Máy tính Nông trại records
+- `178-cs-farm-computer-island-trader-and-music-au`: 30 long farm analysis, fishing broadcast, Đảo trader dialect, soundtrack title, Sáo Ngựa, Chìa khóa Thị trấn, and weakness records
+- `179-cs-horse-flute-qi-buffs-and-final-notices-av`: 18 long deconstructor, Sáo Ngựa, Quần đảo Dương Xỉ weather, Gia vị Qi, fishing chime, island trade, ravioli buff, renovation, quest, and combat notices
+- `180-one-six-pylons-squid-and-desert-dialogue-a`: 30 long forest pylon, squid-fishing, and spouse and villager Sa mạc Festival dialogue records
+- `181-one-six-desert-dialogue-and-cactus-b`: 30 long Sa mạc Festival villager dialogue and Người Xương rồng adoption records
+- `182-one-six-cactus-willy-and-scholar-c`: 30 long Người Xương rồng matching, Willy fishing challenges, and Học giả quiz introduction records, including one reviewed proper-name answer list
+- `183-one-six-scholar-quiz-and-chef-intro-d`: 30 long Học giả season, crop, fruit-tree, schedule, fish, animal, mine, surname, and count quiz records plus chef introductions, including three reviewed proper-name or numeric answer lists
+- `184-one-six-chef-ingredients-and-dishes-e`: 30 long chef ingredients, sauces, and generated dish names, including one reviewed culinary-name preserve
+- `185-one-six-chef-finale-and-race-f`: 30 long generated chef dishes, race booth, countdown, commentary, prize, and racer-name records
+- `186-one-six-racers-shady-guy-and-marlon-g`: 30 long racer names, race-sabotage dialogue, Marlon challenge booth, and Gil completion records, including one reviewed racer-name preserve
+- `187-one-six-gil-ratings-and-makeover-h`: 30 long Gil egg-rating reactions and Emily makeover dialogue, including one reviewed placeholder-and-control-token preserve
+- `188-one-six-sandy-makeover-and-egg-shops-i`: 30 long Sandy makeover and Sa mạc Festival villager shop dialogue records
+- `189-one-six-shops-and-calico-statues-j`: 30 long villager shop, Hang Sọ challenge explanation, Tượng Calico effect-name, and effect-description records
+- `190-one-six-statues-and-fishing-events`: 30 long Tượng Calico effects, Giải Cá hồi and Hội Mực signs, fishing reactions, and reward-booth records
+- `191-one-six-events-and-mastery`: 30 long fishing-event notices, Hội Mực rewards, Mưa Xanh, Tinh thông paths, Lò Hạng nặng requirements, and Phúc lành records
+- `192-one-six-blessings-trinkets`: 30 long Phúc lành descriptions, Tinh thông rewards, Người Lùn statue powers, and Bùa names and descriptions
+- `193-one-six-trinkets-fizz`: 30 long Bùa variants, anvil, Golden Parrot, and Fizz Hoàn mỹ-waiver sales records
+- `194-one-six-books-and-raccoons-a`: 30 long Hoàn mỹ waiver, book, skill, forest power, Danh mục Động vật, Gỗ cứng stump, Mưa Xanh forecast, and Gấu mèo family records
+- `195-one-six-raccoons-and-late-game`: 30 long Gấu mèo family, Tinh thông, Nông trại Đồng cỏ, starter-chicken names, fish frenzy, travel, spouse, Grandpa note, Qi, and Joja THRIVE records
+- `196-one-six-joja-books-and-enchantments`: 30 long Joja THRIVE legal terms, Nông trại Thác nước debt, bookseller, quest titles, Pháp sư catalogue, enchantments, summit-cheat, freezer, and dried-flower records
+- `197-one-six-machines-food-and-mannequins`: 30 long deluxe machines, Gấu mèo finale, mayonnaise reactions, Đồng hồ Vàng, Lò Hun cá, mannequins, multiplayer privacy, and new food records
+- `198-one-six-catalogues-renovations-and-pets`: 30 long catalogue, home renovation, pet adoption, Bột Bướm, festival, Bùa, Tinh thông, option, and Vòi lấy nhựa records
+- `199-one-six-final-and-animal-shop`: 30 long profession, Hang Sọ, fishing, power, Animal Shop inspection, and Archaeology House book-title records
+- `200-maps-museum-bathhouse-blacksmith`: 30 long museum book, bathhouse locker, blacksmith inspection, bus sign, casino, and Elliott home records
+- `201-maps-farm-fishshop-haley-house-a`: 30 long Elliott home, Miếu thờ Ông, fish shop, Rừng Cindersap signs, and Haley and Emily home inspection records
+- `202-maps-haley-harvey-hospital-joja-a`: 30 long Haley family, Harvey room, hospital, medical disclaimer, and JojaMart shelf records
+- `203-maps-jojamart-shelves-b`: 30 long JojaMart food, condiment, bread, hair-care, snack, oil, soda, and dental shelf-label records
+- `204-maps-jojamart-shelves-c`: 30 long JojaMart canned food, snack, sauce, bread, powdered meal, drink, hygiene, and novelty shelf-label records
+- `205-maps-jojamart-shelves-d`: 30 long JojaMart powdered food, sauce, candy, canned meal, novelty drink, oil, detergent, gluten, and snack shelf-label records
+- `206-maps-joja-josh-and-leah`: 30 long final JojaMart shelf labels, Clara family letter, Alex room, gridball, book-title, kitchen, and Leah art records
+- `207-maps-leah-manor-sam-science-a`: 30 long Leah home, Lewis and Marnie note, mountain and saloon signs, Kent family letter, Sam and Vincent room, and Science House records
+- `208-maps-science-seedshop-and-town-a`: 30 long Science House, Sebastian room, Pierre family, Morris corporate letter, town sign, Mona grave, fair tourist, and strength-game records
+- `209-maps-town-witch-and-theater-a`: 30 long fair and town signs, tourist dialogue, trailer books, Phù thủy Hut inspection, and movie-theater Máy gắp and Welwick records
+- `210-maps-theater-and-pirates-a`: 30 long movie-theater visitor, Thống đốc, Gunther, Marlon, Marcello, Morris, Máy gắp, Island Shrine riddle, and pirate dialogue records
+- `211-maps-pirates-and-marriage-rain-a`: 30 long pirate bartender and darts dialogue plus spouse rainy-day dialogue records
+- `212-marriage-rainy-night-and-indoor-day`: 30 long spouse rainy-night, breakfast, dream, indoor-day, and character-specific home dialogue records
+- `213-marriage-indoor-night-and-outdoor-a`: 30 long spouse indoor-day, indoor-night, romantic, household, and outdoor dialogue records
+- `214-marriage-outdoor-work-kids-and-good-a`: 30 long spouse outdoor, job, child-care, family, and happy-marriage dialogue records
+- `215-marriage-good-neutral-bad-and-seasons-a`: 30 long happy, neutral, strained-marriage, and seasonal spouse dialogue records
+- `216-marriage-seasons-b`: 30 long seasonal, festival, and character-specific spouse dialogue records
+- `217-marriage-seasons-and-spouse-rooms-c`: 30 long fall, winter, and spouse-room dialogue records
+- `218-marriage-finale-and-friend-gifts`: 30 long spouse-room, Krobus, missing-bed, and friend gift mail records
+- `219-mail-friendship-and-recipes-a`: 30 long friendship, livestock unlock, romance guidance, and cooking-recipe mail records
+- `220-mail-family-notices-and-invitations`: 30 long family letters, farm notices, service promotions, arcade rewards, and character invitations
+- `221-mail-events-upgrades-and-festivals`: 30 long event invitations, equipment upgrades, quests, and seasonal festival notices
+- `222-mail-help-wanted-and-invoices`: 30 long help-wanted requests, seasonal errands, festival reminders, and Joja medical invoices
+- `223-mail-recovery-elliott-and-special-orders`: 30 long recovery notices, Elliott tour letters, and special-order rewards
+- `224-mail-finale-and-abigail-intro`: 30 long late-game mail, island and pet notices, and Abigail introduction and gift dialogue
+- `225-abigail-events-resort-and-relationships-a`: 30 long Abigail event memories, relationship reactions, resort dialogue, and breakup states
+- `226-abigail-breakup-daily-and-events-b`: 30 long Abigail breakup, daily schedule, branching conversation, and event dialogue records
+- `227-abigail-events-and-summer-c`: 30 long Abigail event responses and summer daily, relationship, and branching dialogue records, including two reviewed technical preserves
+- `228-abigail-fall-winter-and-festivals-d`: 30 long Abigail fall, winter, festival, and branching daily dialogue records
+- `229-abigail-finale-and-haley-intro-a`: 30 long final Abigail winter dialogue and Haley introduction, gift, Green Rain, and event-memory records
+- `230-haley-relationships-resort-and-daily-b`: 30 long Haley relationship, resort, breakup, and early daily dialogue records
+- `231-haley-friendship-events-and-summer-c`: 30 long Haley friendship, event, darkroom, beach, and early summer dialogue records
+- `232-haley-summer-and-fall-d`: 30 long Haley summer, fall, branching conversation, and friendship dialogue records
+- `233-haley-finale-and-sebastian-intro-a`: 30 long final Haley seasonal dialogue and Sebastian introduction, birthday, dating, and dance records
+- `234-sebastian-gifts-resort-and-daily-b`: 30 long Sebastian Green Rain, gift, resort, relationship, and early daily dialogue records
+- `235-sebastian-friends-daily-and-events-c`: 30 long Sebastian friendship, daily, branching conversation, and event dialogue records
+- `236-sebastian-city-summer-and-fall-d`: 30 long Sebastian city-event, summer, festival, and early fall dialogue records
+- `237-sebastian-fall-and-winter-finale`: 27 long final Sebastian fall, winter, reading, family, and reflective dialogue records
+- `238-alex-intro-gifts-and-memories-a`: 30 long Alex introduction, gift, memory, Green Rain, relationship, and resort-arrival records
+- `239-alex-resort-relationships-and-daily-b`: 30 long Alex resort, relationship, breakup, and early daily branching dialogue records
+- `240-alex-events-and-summer-c`: 30 long Alex event, family-memory, ambition, and summer daily dialogue records
+- `241-alex-summer-fall-and-winter-d`: 30 long Alex late-summer, fall, winter, study, family, and friendship dialogue records
+- `242-alex-finale-and-sam-intro-a`: 30 long final Alex winter dialogue and Sam introduction, gifts, Green Rain, relationship, and resort records
+- `243-sam-resort-relationships-and-daily-b`: 30 long Sam resort, relationship, breakup, family, branching song, and daily dialogue records
+- `244-sam-events-and-summer-c`: 30 long Sam event, festival, summer, family, and Gotoro dialogue records
+- `245-sam-fall-and-winter-finale`: 30 long final Sam fall, winter, city-memory, family, work, and seasonal dialogue records
+- `246-maru-intro-gifts-resort-and-relationships-a`: 30 long Maru introduction, gifts, Green Rain, relationships, and resort dialogue records
+- `247-maru-daily-and-events-b`: 30 long Maru daily, family, clinic, branching conversation, and event dialogue records
+- `248-maru-robot-and-summer-c`: 30 long Maru robot ethics, invention, summer, family, and early fall dialogue records
+- `249-maru-fall-and-winter-finale`: 21 long final Maru fall, winter, clinic, machine, and relationship dialogue records
+- `250-emily-intro-gifts-memories-and-resort-a`: 30 long Emily introduction, gifts, Green Rain, memories, relationships, and resort dialogue records
+- `251-emily-resort-relationships-and-daily-b`: 30 long Emily resort, relationship, breakup, tailoring, spiritual, and daily dialogue records
+- `252-emily-events-summer-and-fall-c`: 30 long Emily dance-event, summer, friendship, Sandy, Clint, and fall dialogue records
+- `253-emily-fall-and-winter-finale`: 15 long final Emily fall, winter, family, crystal, and relationship dialogue records
+- `254-penny-intro-gifts-memories-and-resort-a`: 30 long Penny introduction, gifts, teaching memories, relationships, and resort dialogue records
+- `255-penny-relationships-family-and-daily-b`: 30 long Penny relationship, family, teaching, Green Rain, household, and daily dialogue records
+- `256-penny-events-and-summer-c`: 30 long Penny speaker, family, elder, cooking, pool, Community Center, and summer dialogue records
+- `257-penny-fall-and-winter-finale`: 15 long final Penny fall, winter, family, farm, and festival dialogue records
+- `258-elliott-intro-gifts-memories-and-resort-a`: 30 long Elliott introduction, gifts, memories, relationship, and resort dialogue records
+- `259-elliott-relationships-daily-and-events-b`: 30 long Elliott relationship, breakup, daily, literary, and event dialogue records
+- `260-elliott-summer-fall-and-winter-c`: 30 long Elliott toast, summer, Green Rain, fall, and early winter dialogue records
+- `261-elliott-finale-and-leah-intro-a`: 30 long final Elliott winter dialogue and Leah introduction, gifts, memories, and resort dialogue records
+- `262-leah-relationships-and-daily-b`: 30 long Leah relationship, Green Rain, farming, nature, and daily dialogue records
+- `263-leah-events-summer-and-fall-c`: 27 long Leah sculpture, relationship-event, summer, nature, and early fall dialogue records
+- `264-leah-fall-and-winter-finale`: 15 long final Leah fall, winter, food, rest, and cabin dialogue records
+- `265-harvey-intro-gifts-memories-and-resort-a`: 30 long Harvey introduction, gifts, clinical memories, relationships, and resort dialogue records
+- `266-harvey-relationships-daily-and-events-b`: 30 long Harvey relationship, health, clinic, daily, and event dialogue records
+- `267-harvey-events-seasons-finale-and-lewis-intro`: 30 long final Harvey event and seasonal dialogue plus Lewis introduction, gifts, Green Rain, civic, and resort dialogue records
+- `268-lewis-community-and-daily-a`: 30 long Lewis community, town-service, farming, saloon, spring, and early summer dialogue records
+- `269-lewis-seasons-finale`: 21 long final Lewis summer, fall, winter, farming, civic, and personal dialogue records
+- `270-pam-intro-family-resort-and-saloon-a`: 30 long Pam introduction, family, Green Rain, resort, home, bus, and saloon dialogue records
+- `271-pam-daily-summer-and-fall-b`: 30 long Pam daily, family, bus, saloon, summer, and early fall dialogue records
+- `272-pam-fall-and-winter-finale`: 15 long final Pam fall and winter dialogue plus Pierre introduction, Joja concern, and gift dialogue records
+- `273-pierre-green-rain-resort-and-daily-a`: 30 long Pierre Green Rain, family, resort, Community Center, Joja, shop, and daily dialogue records
+- `274-pierre-seasons-and-events-finale`: 24 long final Pierre summer, fall, winter, shop, bedroom-event, and fair dialogue records
+- `275-shane-intro-gifts-resort-and-daily-a`: 30 long Shane gifts, Green Rain, recovery, relationship, resort, breakup, and early daily dialogue records
+- `276-shane-daily-and-events-b`: 30 long Shane daily, family, Joja, saloon, recovery, chicken, and friendship dialogue records
+- `277-shane-events-finale-and-robin-intro`: 15 long final Shane event and relationship dialogue plus Robin introduction, resort, and woodworking-book dialogue records
+- `278-robin-family-buildings-and-resort-a`: 30 long Robin family, Green Rain, building, farm-upgrade, resort, Community Center, and gift dialogue records
+- `279-robin-daily-and-seasons-finale`: 24 long final Robin family, carpentry, daily, summer, fall, and winter dialogue records
+- `280-demetrius-intro-science-and-daily-a`: 30 long Demetrius introduction, gifts, science, family, Green Rain, resort, cave, and early daily dialogue records
+- `281-demetrius-research-and-seasons-finale`: 30 long final Demetrius laboratory, research, family, farming, and seasonal dialogue records
+- `282-jodi-family-community-and-daily-a`: 30 long Jodi introduction, family, Green Rain, resort, community, household, and early daily dialogue records
+- `283-jodi-family-and-seasons-finale`: 23 long final Jodi family, household, freedom, summer, fall, and winter dialogue records
+- `284-linus-wilderness-gifts-and-daily-a`: 30 long Linus introduction, gifts, Green Rain, wilderness, Community Center, trust, and daily dialogue records
+- `285-linus-nature-and-seasons-finale`: 23 long final Linus nature, philosophy, survival, summer, fall, and winter dialogue records
+- `286-caroline-family-tea-and-daily-a`: 30 long Caroline introduction, family, gifts, tea, Green Rain, resort, kitchen, and daily dialogue records
+- `287-caroline-family-and-seasons-finale`: 22 long final Caroline family, friendship, foraging, summer, fall, and winter dialogue records
+- `288-evelyn-community-family-and-daily-a`: 30 long Evelyn introduction, gifts, Green Rain, family, Community Center, gardens, and early daily dialogue records
+- `289-evelyn-gardens-and-seasons-finale`: 19 long final Evelyn baking, gardens, family memories, fall, and winter dialogue records
+- `290-clint-blacksmith-emily-and-daily-a`: 30 long Clint introduction, gifts, mining, Green Rain, Emily, resort, minecart, family trade, and early daily dialogue records
+- `291-clint-work-and-daily-finale`: 15 long final Clint work, tools, loneliness, self-worth, advice, and daily dialogue records
+- `292-gus-saloon-food-and-daily-a`: 30 long Gus introduction, gifts, food, Green Rain, relationships, resort, saloon, and daily dialogue records
+- `293-gus-finale-and-kent-intro-a`: 15 long final Gus saloon, food, and daily dialogue plus Kent introduction, gifts, Green Rain, and resort dialogue records
+- `294-kent-homecoming-family-and-finale`: 27 long final Kent homecoming, war memory, family, friendship, routine, and event dialogue records
+- `295-george-family-gruffness-and-daily-a`: 30 long George introduction, gifts, Green Rain, family, marriage, aging, friendship, and daily dialogue records
+- `296-george-finale-and-jas-intro-a`: 15 long final George aging and Winter Star dialogue plus Jas introduction, gifts, Green Rain, and resort-arrival dialogue records
+- `297-jas-family-farm-and-daily-finale`: 28 long final Jas family, farm, friendship, fairy, resort, and daily dialogue records
+- `298-marnie-ranch-family-and-saloon-a`: 30 long Marnie introduction, ranch, pets, animals, family, resort, saloon, and Green Rain dialogue records
+- `299-marnie-finale-and-willy-intro-a`: 15 long final Marnie ranch, family, fair, and daily dialogue plus Willy introduction and fishing-book dialogue records
+- `300-willy-fish-legends-and-festivals-a`: 30 long Willy gifts, Green Rain, legendary fish, crab, Trout Derby, SquidFest, and daily fishing dialogue records
+- `301-willy-finale-and-vincent-intro-a`: 15 long final Willy fishing dialogue plus Vincent introduction, gifts, Green Rain, and resort dialogue records
+- `302-vincent-family-school-and-finale`: 19 long final Vincent family, school, friendship, resort, and daily dialogue records
+- `303-krobus-shadow-people-and-daily-finale`: 28 long Krobus Tộc Bóng Tối history, gifts, daily life, friendship, and seasonal dialogue records
+- `304-wizard-magic-nature-and-finale`: 24 long Pháp sư magic, nature, gifts, Green Rain, relationship, and daily dialogue records
+- `305-dwarf-mining-culture-and-finale`: 23 long Người Lùn mining, technology, food, fish, culture, and daily dialogue records
+- `306-sandy-oasis-valley-and-finale`: 21 long Sandy gifts, Ốc đảo, Thung lũng Stardew, friendship, and daily dialogue records
+- `307-leo-mainland-friends-and-finale`: 20 long Leo mainland adjustment, schooling, friendship, Linus, island, and daily dialogue records
+- `308-mister-qi-club-and-walnut-room-finale`: 15 long Ngài Qi casino, self-mastery, secrecy, Walnut Room, challenge, and excellence dialogue records
+- `309-rainy-dialogue-all-characters`: 30 long rainy-day dialogue records for villagers and special characters
+- `310-engagement-dialogue-all-candidates`: 26 long engagement dialogue records for every marriage candidate and Krobus
+- `311-lexicon-random-words-and-pronouns`: 17 long random noun, adjective, food-description, child-term, and pronoun lexicon records
+- `312-trout-derby-and-squidfest-contestants`: 22 long Giải Cá hồi and Hội Mực contestant dialogue records
+- `313-family-night-events-and-book-titles`: 26 long birth, adoption, animal-naming, nighttime event, comet, and Elliott book-title records
+- `314-leo-island-and-caroline-schedules`: 21 long Leo island and Caroline schedule dialogue records
+- `315-abigail-sam-and-sebastian-schedules`: 28 long Abigail, Sam, and Sebastian schedule dialogue records
+- `316-emily-and-willy-schedules`: 26 long Emily and Willy schedule dialogue records
+- `317-shane-jodi-and-lewis-schedules`: 25 long Shane, Jodi, and Lewis schedule dialogue records
+- `318-maru-penny-and-haley-schedules`: 23 long Maru, Penny, and Haley schedule dialogue records
+- `319-harvey-alex-evelyn-and-george-schedules`: 25 long Harvey, Alex, Evelyn, and George schedule dialogue records
+- `320-jas-marnie-sandy-and-leo-schedules`: 23 long Jas, Marnie, Sandy, and Leo schedule dialogue records
+- `321-clint-elliott-gus-leah-robin-vincent-schedules`: 24 long Clint, Elliott, Gus, Leah, Robin, and Vincent schedule dialogue records
+- `322-extra-dialogue-family-services-and-rescues-a`: 30 long family, construction, museum, club, Joja, and mine-rescue dialogue records
+- `323-extra-dialogue-joja-and-purchased-items-b`: 30 long Joja membership and purchased-item reaction dialogue records
+- `324-extra-dialogue-purchases-construction-and-rescue-c`: 30 long purchased-item reactions, construction confirmations, Joja theater, and island rescue dialogue records
+- `325-extra-dialogue-island-and-summit-d`: 30 long island rescue, Birdie, Professor Snail, and summit Lewis and Morris dialogue records
+- `326-extra-dialogue-summit-spouses-e`: 25 long summit Morris, spouse, candidate-specific, event-command, and closing-message dialogue records
+- `327-special-orders-town-and-biome-a`: 30 long town special-order titles, descriptions, objectives, and biome-fish records
+- `328-special-orders-crops-caves-and-cleanup-b`: 30 long crop, omelet, cave, ectoplasm, monster, and cleanup special-order records
+- `329-special-orders-island-resources-and-qi-c`: 30 long cleanup, island, resource, fossil, tropical fish, and initial Qi challenge records
+- `330-special-orders-qi-challenges-d`: 30 long Qi crop, arcade, shard, cavern, cooking, gift, legendary-fish, and danger challenge records
+- `331-special-orders-qi-and-marlon-finale-e`: 26 long final Qi color-collection and Marlon desert-festival challenge records
+- `332-luau-villagers-and-spouses-a`: 29 long Luau governor, spouse, and villager festival dialogue records
+- `333-luau-villagers-and-year-two-b`: 30 long Luau villager and second-year governor and spouse dialogue records
+- `334-luau-year-two-villagers-c`: 30 long second-year Luau villager dialogue records
+- `335-luau-events-and-reactions-finale-d`: 15 long final Luau dialogue, main events, governor reactions, event-command, and Ice Festival spouse records
+- `336-festival-of-ice-villagers-a`: 30 long Lễ hội Băng spouse and villager dialogue records
+- `337-festival-of-ice-year-two-b`: 30 long second-year Lễ hội Băng spouse and villager dialogue records
+- `338-festival-of-ice-dialogue-finale-c`: 22 long final second-year and spouse Lễ hội Băng dialogue records
+- `339-festival-of-ice-events-finale-and-fair-spouses-a`: 15 long Lễ hội Băng contest events, result branches, event-command, and fair spouse dialogue records
+- `340-stardew-valley-fair-villagers-b`: 30 long Hội chợ Thung lũng Stardew spouse and villager dialogue records
+- `341-stardew-valley-fair-year-two-c`: 30 long second-year Hội chợ Thung lũng Stardew spouse and villager dialogue records
+- `342-stardew-valley-fair-finale-d`: 22 long final second-year Hội chợ Thung lũng Stardew villager and event dialogue records
+- `343-spirits-eve-villagers-and-spouses-a`: 30 long Đêm Linh hồn spouse and villager dialogue records
+- `344-spirits-eve-villagers-and-spouses-b`: 30 long Đêm Linh hồn villager and second-year spouse dialogue records
+- `345-spirits-eve-year-two-finale-c`: 28 long final second-year Đêm Linh hồn villager dialogue records
+- `346-winter-star-spouses-and-villagers-a`: 30 long Yến tiệc Sao Đông spouse and villager dialogue records
+- `347-winter-star-villagers-and-year-two-b`: 30 long Yến tiệc Sao Đông villager and second-year spouse dialogue records
+- `348-winter-star-year-two-finale-c`: 27 long final second-year Yến tiệc Sao Đông villager dialogue records
+- `349-egg-festival-spouses-and-villagers-a`: 30 long Lễ hội Trứng result, spouse, and villager dialogue records
+- `350-egg-festival-villagers-and-year-two-b`: 30 long Lễ hội Trứng villager and second-year dialogue records
+- `351-egg-festival-year-two-finale-c`: 15 long final second-year Lễ hội Trứng dialogue, localized festival name, and reviewed technical condition record
+- `352-egg-festival-events-and-flower-dance-a`: 15 long Lễ hội Trứng event scripts and initial Vũ hội Hoa villager dialogue records, including two reviewed technical setup preserves
+- `353-flower-dance-villagers-and-spouses-b`: 30 long Vũ hội Hoa villager and second-year spouse dialogue records
+- `354-flower-dance-spouses-and-year-two-c`: 30 long Vũ hội Hoa second-year spouse and villager dialogue records
+- `355-flower-dance-year-two-finale-d`: 15 long final second-year Vũ hội Hoa dialogue, localized festival name, and reviewed technical records
+- `356-flower-dance-events-and-moonlight-jellies-a`: 15 long Vũ hội Hoa event records and initial Vũ điệu Sứa Ánh trăng technical and villager records
+- `357-moonlight-jellies-villagers-and-spouses-b`: 30 long Vũ điệu Sứa Ánh trăng villager and second-year spouse dialogue records
+- `358-moonlight-jellies-spouses-and-year-two-c`: 30 long Vũ điệu Sứa Ánh trăng second-year spouse and villager dialogue records
+- `359-moonlight-jellies-finale-and-krobus-a`: 15 long final Vũ điệu Sứa Ánh trăng dialogue and event records plus initial Krobus housemate dialogue, including one reviewed technical setup preserve
+- `360-krobus-housemate-rain-and-home-a`: 30 long Krobus rainy-day, indoor, outdoor, and housemate dialogue records
+- `361-krobus-family-moods-and-silences-b`: 30 long Krobus family, relationship-mood, and silent Friday dialogue records, including three reviewed ellipsis preserves
+- `362-krobus-seasons-and-finale-c`: 27 long Krobus seasonal, festival, room, and finale dialogue records, including thirteen reviewed ellipsis preserves
+- `363-leah-marriage-rain-home-and-outdoors-a`: 30 long Leah rainy-day, indoor, outdoor, nature-walk, and parenting marriage dialogue records
+- `364-leah-marriage-family-and-moods-b`: 30 long Leah family, positive, neutral, and strained marriage dialogue records
+- `365-leah-finale-and-abigail-rain-a`: 15 long final seasonal Leah marriage dialogue and initial Abigail rainy-day dialogue records
+- `366-abigail-marriage-rain-home-and-outdoors-b`: 30 long Abigail rainy-day, indoor, and outdoor marriage dialogue records
+- `367-abigail-marriage-family-moods-and-seasons-c`: 30 long Abigail family, relationship-mood, and early seasonal marriage dialogue records
+- `368-abigail-finale-and-sebastian-rain-a`: 15 long final seasonal Abigail marriage dialogue and initial Sebastian rainy-day dialogue records
+- `369-sebastian-marriage-rain-home-family-b`: 30 long Sebastian rainy-night, indoor, outdoor, family, and positive marriage dialogue records
+- `370-sebastian-marriage-moods-and-seasons-c`: 30 long Sebastian relationship-mood, social, festival, and seasonal marriage dialogue records
+- `371-sebastian-finale-and-shane-rain-a`: 15 long final seasonal Sebastian marriage dialogue and initial Shane rainy-day dialogue records
+- `372-shane-marriage-home-family-and-good-b`: 30 long Shane indoor, outdoor, family, and positive marriage dialogue records
+- `373-shane-marriage-moods-and-seasons-finale-c`: 23 long final Shane relationship-mood, social, festival, and seasonal marriage dialogue records
+- `374-emily-marriage-rain-home-and-family-a`: 30 long Emily rainy-day, indoor, outdoor, and early family marriage dialogue records
+- `375-emily-marriage-family-moods-and-seasons-b`: 28 long final Emily family, relationship-mood, social, festival, and seasonal marriage dialogue records
+- `376-maru-marriage-rain-home-and-family-a`: 30 long Maru rainy-day, indoor, outdoor, and early family marriage dialogue records
+- `377-maru-marriage-family-moods-and-seasons-b`: 27 long final Maru family, relationship, social, and seasonal marriage dialogue records
+- `378-elliott-marriage-rain-home-and-family-a`: 30 long Elliott rainy-day, indoor, outdoor, and early family marriage dialogue records
+- `379-elliott-marriage-family-good-and-seasons-b`: 24 long final Elliott family, relationship, social, festival, and seasonal marriage dialogue records
+- `380-penny-marriage-rain-home-and-family-a`: 30 long Penny rainy-day, indoor, outdoor, and early family marriage dialogue records
+- `381-penny-marriage-family-good-and-seasons-b`: 23 long final Penny family, relationship, social, and seasonal marriage dialogue records
+- `382-sam-marriage-rain-home-and-family-a`: 30 long Sam rainy-day, indoor, outdoor, and early family marriage dialogue records
+- `383-sam-marriage-family-good-and-seasons-b`: 23 long final Sam family, relationship, social, festival, and seasonal marriage dialogue records
+- `384-harvey-marriage-rain-home-and-family-a`: 30 long Harvey rainy-day, indoor, outdoor, and early family marriage dialogue records
+- `385-harvey-marriage-family-good-and-seasons-b`: 22 long final Harvey family, relationship, social, festival, and seasonal marriage dialogue records
+- `386-alex-marriage-rain-home-and-family-a`: 30 long Alex rainy-day, indoor, outdoor, and early family marriage dialogue records
+- `387-alex-marriage-family-good-and-seasons-b`: 19 long final Alex family, relationship, social, festival, and seasonal marriage dialogue records
+- `388-haley-marriage-rain-home-and-outdoors-a`: 30 long Haley rainy-day, indoor, outdoor, social, and early family marriage dialogue records
+- `389-haley-marriage-finale-and-core-cs-labels`: 30 long final Haley family and seasonal marriage dialogue plus core gameplay labels, including one reviewed proper-name preserve
+- `390-cs-professions-options-and-map-labels-a`: 60 short profession, option, season, animal, map, and location labels, including two reviewed technical and brand-name preserves
+- `391-cs-options-skills-tv-and-tool-labels-b`: 60 short option, skill, wallet, television, quest, weapon, and tool labels
+- `392-cs-fishing-and-character-ui-a`: 40 short fishing-channel, island, character-creation, carpenter, collection, and menu labels
+- `393-ui-professions-coop-and-profile`: 60 short profession, co-op, profile, map, and status labels, including four reviewed format preserves
+- `394-ui-mobile-formats-and-npc-names`: 40 short mobile, format, and NPC-name records, including ten reviewed format and name preserves
+- `395-npc-display-names`: 42 short NPC display-name records, including 35 reviewed proper-name preserves
+- `396-quests-one-to-thirty`: 30 long quest title, description, objective, progress, and reward records
+- `397-quests-thirty-one-and-one-hundred-to-one-twenty-eight`: 30 long quest title, description, objective, progress, and reward records
+- `398-quest-finale-and-tip-channel-opening`: 15 long final quest and initial Living Off The Land television records
+- `399-tip-channel-middle`: 30 long Living Off The Land advice records
+- `400-tip-channel-finale`: 25 long final Living Off The Land advice records
+- `401-special-objects-bait-and-tackle`: 40 short special-object, bait, tackle, tool, and quest-item display names
+- `402-object-finale-and-big-craftables-opening`: 40 short final object and initial Big Craftable display names
+- `403-big-craftables-finale`: 40 short final Big Craftable display names
+- `404-location-display-names`: 40 short location display names
+- `405-building-and-animal-display-names`: 40 short building and farm-animal display names
+- `406-enchantments-tools-and-galaxy-weapons`: 40 short animal, enchantment, tool, and Galaxy-weapon display names
+- `407-gift-reactions-robin-to-penny`: 19 long universal gift-taste data and Robin-through-Penny reaction records, including five reviewed technical preserves
+- `408-gift-reactions-pam-to-leo`: 20 long Pam-through-Leo gift-reaction records
+- `409-secret-notes-one-to-nineteen`: 19 long secret-note records, including five reviewed image directives
+- `410-secret-notes-twenty-to-volcano-eleven`: 19 long secret-note and island-journal records, including five reviewed image directives
+- `411-queen-of-sauce-year-one`: 16 long first-year Queen of Sauce recipe segments
+- `412-queen-of-sauce-year-two`: 16 long second-year Queen of Sauce recipe segments
+- `413-system-labels-and-remaining-display-names`: 40 short weapon, kinship, furniture, lexicon, quest, festival, clothing, skill, and schedule records, including four reviewed preserves
+- `414-world-labels-festival-dates-and-incidental-lines`: 40 short world-map, location, schedule, festival-date, and incidental-dialogue records, including four reviewed silence preserves
+- `415-library-books-farming-to-brewing`: 11 complex long library-book records covering farming, fishing, mines, Quả Sao, diamonds, and brewing
+- `416-library-books-dwarves-to-missing-volume`: 11 complex long library-book records covering Người Lùn, Yoba, marriage, legendary fish, Goblins, and the missing volume, including one reviewed fictional-language preserve
+- `417-credit-layout-spacers`: 15 reviewed blank credit-layout records
+- `418-farm-visits-introductions-and-gifts`: 15 long farm-visit, introduction, gift, pet-adoption, and request events, including one reviewed technical event preserve
+- `419-farm-visits-spouses-and-tutorials`: 15 long farm-visit, spouse, tailoring, fishing-tutorial, and pylon-event records, including two reviewed silent-dialogue preserves
+- `420-character-phone-calls`: 2 complex long Lewis and cursed phone-call records with branching and control syntax preserved
+- `421-sebastian-programming-and-solarion-intro`: 8 complex long Sebastian programming and Solarion tabletop-game introduction records
+- `422-solarion-board-game-finale`: 16 long Solarion tabletop-game turns, choices, combat branches, and finale records
+- `423-festival-names-and-technical-setup`: 24 long festival-name, setup, and reviewed technical records, including 19 source-identical preserves
+- `424-elliott-house-events`: 5 complex long Elliott relationship and household event scripts
+- `425-technical-event-transitions`: 5 reviewed source-identical event-transition and choreography records
+- `426-marnie-and-shane-animal-shop-events`: 4 complex long Marnie, Shane, and Jas Animal Shop event scripts
+- `427-mr-qi-skull-cavern-challenges`: 2 complex long Mr. Qi Skull Cavern challenge-result scripts
+- `428-qi-secret-walnut-room`: 1 complex long Mr. Qi secret walnut-room introduction script
+- `429-missing-junimo-homecoming`: 1 complex long missing-Junimo homecoming cinematic
+- `430-sandy-oasis-introduction`: 1 complex long Sandy and Oasis introduction event
+- `431-leo-parrot-hut-introduction`: 1 complex long Leo parrot-hut introduction cinematic
+- `432-birdie-pirate-keepsake-introduction`: 1 complex long Birdie pirate-keepsake quest introduction
+- `433-birdie-pirate-keepsake-finale`: 2 complex long Birdie quest-finale and shared reward records
+- `434-willy-boat-restoration-request`: 1 complex long Willy boat-restoration request event
+- `435-caroline-sunroom-and-tea`: 1 complex long Caroline sunroom and tea-ritual event
+- `436-pierre-and-morris-showdown`: 1 complex long Pierre and Morris Community Center showdown cinematic
+- `437-dwarf-krobus-sewer-truce`: 1 complex long Người Lùn, Krobus, and Wizard sewer-truce cinematic
+- `438-penny-spa-confession`: 1 complex long Penny spa confession event with nested choices
+- `439-abigail-backwoods-rescue`: 1 complex long Abigail rescue event with four moral-response branches
+- `440-willy-fishing-and-old-friend`: 1 complex long Willy fishing event with gender branches and boat teaser
+- `441-leo-remembers-his-name`: 1 complex long Leo origin, parrot-language, and identity-reveal event
+- `442-leo-normal-life-and-parrot-family`: 1 complex long Leo identity and parrot-family event
+- `443-leo-home-and-belonging`: 1 complex long Leo shoreline event about home and belonging
+- `444-penny-and-pam-trailer-events`: 3 complex long Trailer family, cooking, and potato-juice events
+- `445-bus-stop-arrival-and-trips`: 3 complex long farm-arrival, concert-trip, and gridball-trip events
+- `446-emily-camping-and-bear-knowledge`: 2 complex long Woods camping and bear-knowledge events
+- `447-wizard-junimo-and-magic-ink`: 2 complex long Wizard, Junimo-scroll, forest-magic, and magic-ink events
+- `448-pam-new-house-and-faith`: 2 complex long Pam new-house faith event and positive branch
+- `449-lewis-prize-ticket-program`: 1 complex long Lewis Prize Ticket tutorial event
+- `450-emily-clothing-therapy`: 1 complex long ensemble clothing-therapy event
+- `451-harvey-leo-and-mine-events`: 6 complex long Harvey, Leo, Abigail, Marlon, and dynamic rescue records
+- `452-museum-donations-and-elliott-reading`: 4 complex long Gunther donation and Elliott genre-reading events
+- `453-harvey-balloon-and-wizard-quest`: 3 complex long Harvey balloon and Wizard Bùa Tối quest records
+- `454-hospital-samples-checkup-radio-and-rescue`: 5 complex long Hospital sample, checkup, radio, and rescue events
+- `455-george-evelyn-and-alex-home-events`: 6 complex long George, Evelyn, Alex, Harvey, and leek-gift home events
+- `456-haley-elliott-and-sam-band-branches`: 7 long Haley darkroom, Elliott, and Sam concert-style branches
+- `457-science-house-soil-electricity-and-tomato`: 4 complex long ScienceHouse soil, electricity, and tomato-debate events
+- `458-science-house-carpentry-marilda-and-bed`: 3 complex long ScienceHouse crafting, MarILDA, and deluxe-bed events
+- `459-sam-house-family-band-and-romance`: 7 complex long SamHouse family, band, trauma, and romance events
+- `460-abigail-arcade-spirit-board-and-pierre-stash`: 4 complex long SeedShop arcade, spirit-board, and secret-stash events
+- `461-seed-shop-family-aerobics-and-pierre-business`: 4 complex long SeedShop family, aerobics, Joja-coupon, and crop-markup events
+- `462-leah-art-career-and-relationship-history`: 8 complex long LeahHouse art-career, ex-partner, online-shop, and response records, including one reviewed ellipsis preserve
+- `463-haley-emily-sisters-jar-dance-and-dream`: 5 complex long HaleyHouse sisters, jar, dance, and dream events
+- `464-haley-house-group-events-stones-and-darkroom`: 6 complex long HaleyHouse group-ten-heart, gemstone, and darkroom events
+- `465-beach-haley-willy-and-alex-events`: 6 complex long Beach bracelet, fishing, bobber, and response records
+- `466-alex-mother-memorial`: 1 complex long Alex memorial event
+- `467-sebastian-rainy-beach-umbrella`: 1 complex long Sebastian rain and umbrella event
+- `468-elliott-rowboat-confession`: 1 complex long Elliott rowboat confession event
+- `469-sam-vincent-war-conversation`: 1 complex long Sam and Vincent wartime family event
+- `470-willy-crab-experiment`: 1 complex long Willy and Gus crab-shop event
+- `471-saloon-elliott-pam-clint-alex`: 4 complex long saloon relationship events with gender branches and player choices
+- `472-saloon-bachelor-group-events`: 5 complex long bachelor group-event records with confrontation branches
+- `473-saloon-shane-sports-omelet`: 3 complex long Shane recovery, sports-room, and giant-omelet events
+- `474-mountain-maru-linus-willy-leo`: 6 complex long Mountain events covering Maru, Linus, Willy, and Leo
+- `475-mountain-maru-comet-frog-rain`: 3 complex long Maru comet, Sebastian frog, and Abigail rain events
+- `476-mountain-linus-sebastian`: 4 complex long Linus and Sebastian friendship and romance events
+- `477-farmhouse-grandpa-emily-sam-work`: 6 complex long Grandpa, Emily, and Sam spouse events
+- `478-farmhouse-sam-maru-elliott-haley`: 4 complex long Sam, Maru, Elliott, and Haley spouse events
+- `479-farmhouse-penny-decor-sebastian-frogs`: 2 complex long Penny redecoration and Sebastian frog-sanctuary events
+- `480-farmhouse-penny-home-redesign`: 1 exceptionally complex Penny spouse home-redesign event
+- `481-farmhouse-harvey-dinner`: 1 exceptionally complex Harvey spouse dinner event
+- `482-forest-penny-field-trip`: 6 linked complex long Penny field-trip records
+- `483-forest-haley-leah-sewer-shane-onions`: 5 complex long Forest character, sewer, Shane, and Spring Onion events
+- `484-forest-leah-picnic-and-kel`: 3 linked complex long Leah picnic and Kel confrontation records
+- `485-forest-shane-cliff-leah-painting`: 2 exceptionally complex Shane crisis and Leah painting events
+- `486-town-alex-past-and-penny-george`: 3 complex long Alex and Penny relationship events
+- `487-town-abigail-graveyard-lewis-secret`: 2 complex long Abigail graveyard and Lewis-Marnie secret events
+- `488-town-shane-commercial-sam-skateboard`: 2 complex long Joja commercial and skateboard-dispute events
+- `489-town-shane-recovery-haley-schoolbooks`: 5 linked complex long Shane recovery, sports-room reminder, and schoolbook records
+- `490-town-community-joja-linus-emily`: 4 complex long Community Center, Joja, Linus, and Emily events
+- `491-town-clint-date-sam-confession`: 2 complex long Clint and Sam romance events
+- `492-town-pam-house-upgrade-branches`: 6 linked complex long Pam house-upgrade branches
+- `493-town-special-orders-board`: 1 complex long Special Orders tutorial event
+- `494-town-haley-charity-cakewalk`: 1 exceptionally complex Haley charity cake-walk event
+- `495-town-leah-art-show`: 1 exceptionally complex Leah art-show ensemble event
+- `496-town-community-center-celebration`: 1 exceptionally complex Community Center completion ceremony
+
+## Guardrails
+
+- Translate meaning only from the pinned English assets.
+- Use other locales only to verify file structure and technical formatting.
+- Do not publish the glossary without explicit owner authorization.
+- Do not launch the installer merely to inspect it; opening the release app starts installation.
+- Do not commit or push without explicit user instruction.

@@ -115,14 +115,31 @@ function characterCount(value, character) {
 }
 
 function eventSkeleton(value) {
-  return value
-    .replace(/"(?:\\.|[^"\\])*"/g, '"TEXT"')
-    .replace(/\/quickQuestion .*?\(break\)/g, "/quickQuestion CHOICES(break)");
+  const firstQuote = value.indexOf('"');
+  const prefix = firstQuote < 0 ? value : value.slice(0, firstQuote);
+  const commandBeforeFirstQuote = /(?:^|\/)(?:speak|message|question|quickQuestion|textAboveHead|spriteText|end dialogue)\b/.test(prefix);
+  let insideText = firstQuote >= 0 && !commandBeforeFirstQuote;
+  let result = insideText ? "TEXT" : "";
+  for (let index = 0; index < value.length; index += 1) {
+    const character = value[index];
+    if (character === '"') {
+      let backslashes = 0;
+      for (let offset = index - 1; offset >= 0 && value[offset] === "\\"; offset -= 1) backslashes += 1;
+      if (backslashes % 2 === 1) {
+        if (!insideText) result += character;
+        continue;
+      }
+      if (insideText) result += '"';
+      else result += '"TEXT';
+      insideText = !insideText;
+    } else if (!insideText) result += character;
+  }
+  if (insideText) result += '"';
+  return result.replace(/\/quickQuestion .*?\(break\)/g, "/quickQuestion CHOICES(break)");
 }
 
 function isEventScript(target, value) {
   if (target.startsWith("Data/Events/")) return true;
-  if (!target.startsWith("Data/Festivals/") && target !== "Strings/1_6_Strings" && target !== "Strings/Locations") return false;
   return /(?:^|\/)(?:speak|message|question|quickQuestion|textAboveHead|pause|move|warp|faceDirection|playSound|viewport|skippable|end)(?: |\/|$)/.test(value);
 }
 
@@ -138,7 +155,7 @@ function playerFacingText(target, original, translation) {
   if (target === "Data/Achievements") value = translation.split("^").slice(0, 2).join(" ");
   if (target === "Data/Quests") {
     const parts = translation.split("/");
-    value = [parts[1], parts[2], parts[3], parts.at(-2)].join(" ");
+    value = [parts[1], parts[2], parts[3], parts.at(-1)].join(" ");
   }
   return value
     .replace(/Xbox (?:One|360)/g, " ")
@@ -314,6 +331,60 @@ for (const [id, record] of records) {
     .filter((word) => commonEnglishWords.has(word));
   if (residues.length) {
     errors.push(`probable untranslated English word(s) ${[...new Set(residues)].join(", ")}: ${record.target} :: ${record.key}`);
+  }
+}
+
+const bannedEditorialForms = new Map([
+  ["সেবাস্তিয়ান", "সেবাস্টিয়ান"],
+  ["ক্যারোলাইন", "ক্যারোলিন"],
+  ["লাইন্যাস", "লিনাস"],
+  ["ডিমেট্রিয়াস", "ডিমিট্রিয়াস"],
+  ["ডেমেট্রিয়াস", "ডিমিট্রিয়াস"],
+  ["হ্যালি", "হেইলি"],
+  ["হেলি", "হেইলি"],
+  ["ইভলিন", "এভলিন"],
+  ["অ্যাবিগেল", "অ্যাবিগেইল"],
+  ["হার্ভে", "হার্ভি"],
+  ["রাজ্যপাল", "গভর্নর"],
+  ["চাষাবাদ", "কৃষিকাজ"],
+  ["পিকঅ্যাক্স", "পিক্যাক্স"],
+  ["মরসুম", "ঋতু"],
+]);
+const untranslatedNarrationNames = /%(?:Abigail|Caroline|Clint|Demetrius|Elliott|Emily|Harvey|Marnie|Pam|Shane|Vincent)(?![A-Za-z])/;
+for (const record of records.values()) {
+  if (record.translation === record.original) continue;
+  for (const [rejected, expected] of bannedEditorialForms) {
+    if (record.translation.includes(rejected)) {
+      errors.push(`noncanonical Bengali form ${JSON.stringify(rejected)}; expected ${JSON.stringify(expected)}: ${record.target} :: ${record.key}`);
+    }
+  }
+  const untranslatedNarration = record.translation.match(untranslatedNarrationNames)?.[0];
+  if (untranslatedNarration) {
+    errors.push(`untranslated narrative name ${JSON.stringify(untranslatedNarration)}: ${record.target} :: ${record.key}`);
+  }
+}
+
+const contextDependentDuplicateSources = new Set([
+  "Hi, {0}",
+  "None",
+  "Blacksmith",
+  "Question",
+  "Hi!",
+  "Honey",
+  "Are you having fun, @? You need to remember to take breaks now and then too!",
+  "her",
+  "Ship 100,000g worth of freshly cooked items.",
+  "Give 50 loved gifts in one week.",
+]);
+const translationsBySource = new Map();
+for (const record of records.values()) {
+  if (record.translation === record.original) continue;
+  if (!translationsBySource.has(record.original)) translationsBySource.set(record.original, new Set());
+  translationsBySource.get(record.original).add(record.translation);
+}
+for (const [source, translations] of translationsBySource) {
+  if (translations.size > 1 && !contextDependentDuplicateSources.has(source)) {
+    errors.push(`inconsistent duplicate source has ${translations.size} Bengali variants: ${JSON.stringify(source)}`);
   }
 }
 

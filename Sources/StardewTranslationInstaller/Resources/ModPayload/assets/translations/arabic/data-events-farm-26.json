@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "980558/t 600 1130/w sunny/f Gus 1250": "playful/64 15/farmer 64 16 2 Gus 64 18 0/skippable/pause 1500/speak Gus \"صباح الخير!\"/pause 500/faceDirection Gus 3/pause 600/speak Gus \"آه... يا له من يوم جميل، أليس كذلك؟\"/pause 400/faceDirection Gus 0/speak Gus \"كما تعلم، بوصفي مالك الحانة أسمع عن كل ما يجري في البلدة.#$b#أتذكر حين انتقلت إلى هنا أول مرة... لم يكن أحد واثقًا مما ينبغي توقعه.#$b#غريب من المدينة... ذو شخصية مجهولة...$s\"/textAboveHead Gus \"لحظة واحدة...\"/faceDirection Gus 2/animate Gus false true 250 24 25/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 500/stopAnimation Gus/pause 500/faceDirection Gus 0/pause 500/speak Gus \"عذرًا، علي تقليب هذا القدر كل 5 دقائق.\"/emote farmer 40/speak Gus \"على أي حال، ماذا كنت أقول؟ آه نعم... الأمر يشبه إعداد الصلصة...\"/playMusic none/speak Gus \"...إن أضفت بهارًا جديدًا فقد تفسد كل شيء!$s\"/pause 500/playSound fireball/animate Gus false true 100 26/shake Gus 1000/specificTemporarySprite sauceFire/pause 2000/animate Gus false true 200 24 25/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/animate Gus false true 100 24/pause 500/playSound discoverMineral/specificTemporarySprite sauceGood/pause 800/playMusic distantBanjo/speak Gus \"...لكن هناك دائمًا احتمال أن تبتكر شيئًا جديدًا وشهيًا! أليس كذلك؟ هاهاهاها.$h\"/pause 100/stopAnimation Gus/faceDirection Gus 0/emote farmer 8/faceDirection Gus 3/faceDirection Gus 0/pause 500/speak Gus \"آه... ما أحاول قوله هو...$s#$b#كان وجودك في البلدة رائعًا، وقد أصبحت أعدك واحدًا من أصدقائي المقربين!\"/emote farmer 32/speak Gus \"على أي حال، جئت لأعطيك شيئًا...#$b#كنت أنظف الغرفة الخلفية فعثرت على مشغل الموسيقى الصغير القديم هذا. أريدك أن تأخذه!\"/pause 800/itemAboveHead jukebox/playSound getNewSpecialItem/pause 3300/awardFestivalPrize jukebox/pause 200/message \"حصلت على «مشغل موسيقى صغير»\"/pause 800/speak Gus \"إنه في الواقع مشروع قديم صنعته بنفسي منذ أعوام كثيرة. ومن السهل جدًا صنعه!#$b#لذلك أحضرت لك المخططات تحسبًا لرغبتك في صنع المزيد...\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Mini-Jukebox/pause 500/message \"تعلمت كيفية صنع «مشغل موسيقى صغير»\"/pause 800/speak Gus \"حسنًا، سأعود إلى المنزل. علي إعادة صلصة المارينارا هذه إلى الموقد! أتمنى لك يومًا طيبًا!\"/pause 500/end"
+      }
+    }
+  ]
+}

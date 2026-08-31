@@ -19,7 +19,11 @@ namespace VNRevival.LanguageSwitcher;
 public sealed class ModEntry : Mod
 {
     private const string UrduLanguageCode = "ur-vnrevival";
+    private const string PersianLanguageCode = "fa-vnrevival";
+    private const string ArabicLanguageCode = "ar-vnrevival";
     private static UrduTextAdapter? UrduAdapter;
+    private static UrduTextAdapter? PersianAdapter;
+    private static UrduTextAdapter? ArabicAdapter;
 
     public override void Entry(IModHelper helper)
     {
@@ -36,8 +40,12 @@ public sealed class ModEntry : Mod
 
         string shapingMap = Path.Combine(helper.DirectoryPath, "urdu-shaping-map.json");
         UrduAdapter = UrduTextAdapter.Load(shapingMap);
+        string persianShapingMap = Path.Combine(helper.DirectoryPath, "persian-shaping-map.json");
+        PersianAdapter = UrduTextAdapter.Load(persianShapingMap);
+        string arabicShapingMap = Path.Combine(helper.DirectoryPath, "arabic-shaping-map.json");
+        ArabicAdapter = UrduTextAdapter.Load(arabicShapingMap);
         MethodInfo textPrefix = AccessTools.Method(typeof(ModEntry), nameof(BeforeTextRendering))
-            ?? throw new InvalidOperationException("The Urdu rendering adapter was not found.");
+            ?? throw new InvalidOperationException("The Arabic-script rendering adapter was not found.");
         HarmonyMethod textHarmonyPrefix = new(textPrefix);
 
         IEnumerable<MethodInfo> spriteTextMethods = AccessTools.GetDeclaredMethods(typeof(SpriteText))
@@ -58,7 +66,7 @@ public sealed class ModEntry : Mod
             harmony.Patch(method, prefix: textHarmonyPrefix);
             patched += 1;
         }
-        Monitor.Log($"Urdu shaping and bidi adapter enabled for {patched} text methods.", LogLevel.Trace);
+        Monitor.Log($"Urdu, Persian, and Arabic shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
     }
 
     private static bool IsTextParameter(ParameterInfo parameter)
@@ -85,17 +93,24 @@ public sealed class ModEntry : Mod
 
     private static void BeforeTextRendering(object[] __args)
     {
-        if (UrduAdapter is null
-            || LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod
-            || LocalizedContentManager.CurrentModLanguage?.LanguageCode != UrduLanguageCode)
+        if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod)
             return;
+
+        UrduTextAdapter? adapter = LocalizedContentManager.CurrentModLanguage?.LanguageCode switch
+        {
+            UrduLanguageCode => UrduAdapter,
+            PersianLanguageCode => PersianAdapter,
+            ArabicLanguageCode => ArabicAdapter,
+            _ => null,
+        };
+        if (adapter is null) return;
 
         for (int index = 0; index < __args.Length; index += 1)
         {
             if (__args[index] is string text)
-                __args[index] = UrduAdapter.Transform(text);
+                __args[index] = adapter.Transform(text);
             else if (__args[index] is StringBuilder builder)
-                __args[index] = new StringBuilder(UrduAdapter.Transform(builder.ToString()));
+                __args[index] = new StringBuilder(adapter.Transform(builder.ToString()));
         }
     }
 }
@@ -143,7 +158,7 @@ public sealed class UrduTextAdapter
             new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
         );
         if (document?.Format != 2 || document.Entries.Length == 0)
-            throw new InvalidDataException("The Urdu shaping map is missing or invalid.");
+            throw new InvalidDataException("The Arabic-script shaping map is missing or invalid.");
         return new UrduTextAdapter(document.Entries);
     }
 

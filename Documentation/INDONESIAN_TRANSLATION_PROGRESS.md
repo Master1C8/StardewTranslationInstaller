@@ -26,9 +26,10 @@
 - Consecutive clean full all-entry audits after semantic completion: 2 / 2, with 0 warnings and 0 errors
 - Independent editorial rerun on 2026-08-28: objective prose, punctuation, spacing, untranslated-fragment, and contextual glossary issues corrected across all 14,720 records; the post-edit gate completed with 2 / 2 consecutive clean full audits
 - Second independent editorial rerun on 2026-08-28: localized all 35 gender-branch tokens, restored one omitted branch marker, corrected the remaining `Pelican Town` fragment, and applied 24 dialogue-fragment corrections across 19 event records; the post-edit gate again completed with 2 / 2 consecutive clean full audits
+- Third independent editorial rerun on 2026-08-30: corrected 1,699 context-sensitive capitalization occurrences across 1,238 records in 100 files, preserving sentence starts, headings, quoted item names, proper names, festivals, and technical syntax; the new contextual-case pass is idempotent and the post-edit gate again completed with 2 / 2 consecutive clean full audits
 - Gender-branch integrity is now enforced by the main Indonesian audit, including source/translation marker-count parity; no source-identical English branch text remains
 - Glossary rewrite idempotence: 0 pending replacements; final full glossary audits: 2 / 2 clean
-- Unified-content generation idempotence SHA-256: `7bcbd3e0988a21aee55a343f4b5e33799cc9e2c67c9eaf2fe71c81f73ad848d8`
+- Unified-content generation idempotence SHA-256: `546ecf11de4d1bc02cdded9f6c96925f3107d2c8e92a45f219134c7e6e1fb837`
 - Indonesian font configuration: verified `UseLatinFont: true` with no custom `FontFile`; Russian, Polish, and Amharic XNB font assets also passed reverse unpack, sorted-character-map, aligned-metadata, Polish glyph-set, and Amharic used-character checks
 - Swift test suite: passed 8 / 8 after the completed Tamil and Bengali PUA integrations were regenerated into the shared payload
 - Release application build, strict code-signature verification, Info.plist validation, and full embedded `ModPayload` comparison against the source tree: passed

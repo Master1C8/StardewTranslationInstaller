@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "27/f Sebastian 1500/p Sebastian": "jaunty/-1000 -1000/farmer 1 1 2 Sebastian 5 9 3 Sam 3 7 2/skippable/showFrame Sam 24/showFrame Sebastian 28/doAction 1 3/viewport 5 5 true/move farmer 0 6 1/pause 500/showFrame Sebastian 29/pause 500/speak Sebastian \"مرحبًا يا @. $7\"/pause 500/speak Sebastian \"كنت أنا وسام على وشك لعب «سجلات سولاريون: اللعبة»... لم لا تنضم إلينا؟  إنها أفضل بثلاثة لاعبين على أي حال.$7\"/move farmer 0 1 2/pause 500/playSound thudStep/faceDirection farmer 1 true/showFrame 117/positionOffset farmer 16 80/pause 600/speak Sebastian \"حسنًا، ها نحن نبدأ... دعني أسحب بطاقة السيناريو.$7\"/pause 900/showFrame Sebastian 30/playSound dwoop/pause 500/showFrame Sebastian 28/pause 500/speak Sebastian \"همم... يبدو أن مهمة اليوم ستأخذنا إلى برج مستحضر الأرواح... لمحاولة استعادة عصا سولاريون من قبضة سيد الرهبة زارث.\"/pause 600/speak Sam \"رائع... يا @، هل أنت مستعد لاختيار شخصيتك؟\"/pause 500/question chooseCharacter \"اختر شخصيتك:#محارب. أحب النهج المباشر.#معالج. أفضل مساعدة الآخرين.#ساحر. العقل الحاد أمضى من كل نصل.\"/pause 500/speak Sebastian \"مهلًا! كنت سأختار ذلك!$h#$b#أظن أنني سأكون المعالج إذن.\"/pause 500/speak Sam \"رائع. المحارب هو المفضل لدي على أي حال.\"/addMailReceived choseWizard/switchEvent opening"
+      }
+    }
+  ]
+}

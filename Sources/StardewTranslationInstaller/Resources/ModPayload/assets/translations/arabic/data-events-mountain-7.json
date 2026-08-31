@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "8/f Maru 1500/w sunny/t 2100 2340": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/bgColor 0 0 0/changeToTemporaryMap NightSceneMaruMap false/ambientLight 0 0 0/viewport 14 23 true/pause 2000/playSound leafrustle/pause 200/faceDirection Maru 1/pause 400/emote Maru 8/pause 800/move farmer -5 0 3/speak Maru \"يا @! تفاجأت برؤيتك هنا في هذا الوقت المتأخر.\"/faceDirection Maru 3/pause 1000/speak Maru \"تبدو سماء الليل مذهلة الآن.\"/faceDirection Maru 1/speak Maru \"تعال إلى هنا، أريد أن أريك شيئًا.\"/move farmer -3 0 3/speak Maru \"تفضل، ألق نظرة.\"/move Maru 0 1 0/move farmer -1 0 3/pause 200/animate farmer true true 100 35/pause 1200/playMusic spaceMusic/speak Maru \"$q 40 null#ماذا ترى؟#$r 40 30 Event_Space1#كوكبًا جميلًا.#$r 40 -30 Event_Space2#هاوية باردة مظلمة.\"/stopAnimation farmer/faceDirection farmer 2/pause 1000/speak Maru \"حين يزور أحد أيًا من هذه النجوم، سنكون أنا وأنت قد رحلنا منذ زمن بعيد...$8\"/emote farmer 28/pause 400/speak Maru \"أظن أن تلك هي مشكلة كوننا بشرًا، أليس كذلك؟\"/faceDirection Maru 0/pause 1200/faceDirection Maru 2/emote Maru 40/pause 500/faceDirection Maru 0/speak Maru \"يا @، أمم...$8\"/pause 500/faceDirection Maru 2/pause 1500/speak Maru \"لا عليك...$s\"/pause 500/faceDirection Maru 0/pause 800/speak Maru \"دعني أريك نظامًا نجميًا ثنائيًا...\"/pause 500/faceDirection farmer 3 true/animate farmer true true 100 35/pause 800/specificTemporarySprite maruTelescope/viewport move 0 -1 16000/pause 16000/globalFade .003/viewport -1000 -1000/pause 500/message \"يا لها من ليلة جميلة! أرتني مارو شيئًا جديدًا...\"/pause 1000 /stopAnimation farmer/changeLocation Mountain/end"
+      }
+    }
+  ]
+}

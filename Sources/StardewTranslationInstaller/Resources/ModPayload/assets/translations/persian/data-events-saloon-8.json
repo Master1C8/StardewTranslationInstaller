@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "choseToExplain": "pause 100/textAboveHead Shane \"بعید می‌دانم...\"/pause 500/resetVariable/question fork2 \"#همه‌تان زیادی به من فشار آوردید! «نه» گفتن را برایم سخت کردید!#پیر به من فشار آورد! می‌خواست دسته‌گل‌های بیشتری بفروشد!#(شروع به گریه)\"/pause 100/fork crying/textAboveHead Sam \"دروغ‌گو!\"/textAboveHead Alex \"آره، حتماً!\"/speak Elliott \"دیگران را به‌خاطر اشتباه‌هایت سرزنش نکن! فقط داری احترام بیشتری نزد ما از دست می‌دهی...$a\"/pause 1000/faceDirection Sam 2/playMusic none/speak Sam \"...فکر کنم به تصمیمی رسیده‌ایم... درست است، پسرها؟$u\"/pause 500/speak Harvey \"...بله.$s\"/speak Sebastian \"کاملاً.$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"همه‌مان دیگر به تو محل نمی‌گذاریم!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "crying": "pause 100/faceDirection farmer 0/emote farmer 28/pause 1000/emote Harvey 12 true/emote Sebastian 12 true/emote Shane 12 true/emote Sam 12 true/emote Elliott 12 true/emote Alex 12 true/speak Harvey \"این دیگر جواب نمی‌دهد! این بار نمی‌توانی از همدردی‌مان سوءاستفاده کنی!$a\"/speak Alex \"I'll assume this is just another act...$a^Typical...$a\"/pause 100/speak Sebastian \"You need to take responsibility for what you've done...$a\"/pause 1000/faceDirection Sam 2/playMusic none/speak Sam \"...I think we've come to a decision... isn't that right, boys?$u\"/pause 500/speak Harvey \"...yes.$s\"/speak Sebastian \"Absolutely.$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"We're all giving you the cold shoulder!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "wewereworried": "emote farmer 40/faceDirection Marnie 1/pause 1000/faceDirection Shane 2/emote Shane 12/speak Shane \"من شوهرت هستم... باید به من اعتماد کنی. همیشه دربارهٔ مشکلاتم با تو صادق بوده‌ام.$a#$b#ببین... می‌دانم نتوانسته‌ام یک‌دفعه ترک کنم... اما تمام تلاشم را می‌کنم... و خیلی سالم‌تر شده‌ام.#$b#زندگی‌ام حالا بهتر از همیشه است. دیگر در آن جای تاریک نیستم...\"/pause 500/emote Marnie 20 true/emote farmer 20 true/pause 1300/faceDirection Shane 0/speak Shane \"می‌دانی، وقتی این بازی را می‌کنم آن‌قدر غرقش می‌شوم که نمی‌توانم به چیز دیگری فکر کنم. وقتی «وسوسه» می‌شوم واقعاً کمک می‌کند...\"/faceDirection Shane 2/speak Shane \"به‌هرحال... فقط... اِ... یک دور دیگر بازی می‌کنم و به خانه می‌روم. باشد؟\"/pause 500/emote farmer 32/pause 1000/end dialogue Shane \"وقتی آمدید و مرا جلوی دستگاه بازی دیدید حتماً خیلی گیج شدید!$h\""
+      }
+    }
+  ]
+}

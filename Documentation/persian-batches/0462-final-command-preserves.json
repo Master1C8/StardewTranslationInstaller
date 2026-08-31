@@ -1,0 +1,30 @@
+{
+  "id": "0462-final-command-preserves",
+  "reviewedAt": "2026-08-30",
+  "records": [
+    {
+      "target": "Data/Events/BathHouse_Pool",
+      "key": "pennyHeartbroken",
+      "source": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+      "translation": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+      "reviewedPreserve": true,
+      "preserveReason": "دنبالهٔ فنی رویداد تنها شامل حرکت، جهت، لرزش، محوشدن، دوربین، پایان شنا و پایان رویداد است و هیچ متن قابل‌نمایشی ندارد."
+    },
+    {
+      "target": "Data/Events/BusStop",
+      "key": "520702/a 11 23 11 24/t 600 1600/z spring/z fall/z summer",
+      "source": "winter_day_ambient/-1000 -1000/farmer 10 23 1 Krobus 26 23 3/viewport 24 23 clamp true/addQuest 31/skippable/move Krobus -2 0 3/pause 1000/emote Krobus 16/jump Krobus/pause 500/speed Krobus 8/move Krobus 20 0 1 true/move farmer 2 0 1 true/move false/playSound shadowpeep/warp Krobus -1000 -1000/pause 500/emote farmer 8/pause 1000/end",
+      "translation": "winter_day_ambient/-1000 -1000/farmer 10 23 1 Krobus 26 23 3/viewport 24 23 clamp true/addQuest 31/skippable/move Krobus -2 0 3/pause 1000/emote Krobus 16/jump Krobus/pause 500/speed Krobus 8/move Krobus 20 0 1 true/move farmer 2 0 1 true/move false/playSound shadowpeep/warp Krobus -1000 -1000/pause 500/emote farmer 8/pause 1000/end",
+      "reviewedPreserve": true,
+      "preserveReason": "دنبالهٔ فنی رویداد تنها شامل شناسهٔ صدای محیطی، بازیگران، دوربین، مأموریت، حرکت، مکث، حالت چهره، پرش، صدا و پایان رویداد است و هیچ متن قابل‌نمایشی ندارد."
+    },
+    {
+      "target": "Data/Events/IslandSouth",
+      "key": "IslandDepart",
+      "source": "none/-1000 -1000/farmer 15 43 2 Willy 17 45 2/playMusic none/skippable true/playSound furnace/beginSimultaneousCommand/viewport 16 44 clamp true/globalFadeToClear 0.007/endSimultaneousCommand/locationSpecificCommand boat_reset/locationSpecificCommand boat_depart/globalFade/viewport -1000 -1000/end islandDepart",
+      "translation": "none/-1000 -1000/farmer 15 43 2 Willy 17 45 2/playMusic none/skippable true/playSound furnace/beginSimultaneousCommand/viewport 16 44 clamp true/globalFadeToClear 0.007/endSimultaneousCommand/locationSpecificCommand boat_reset/locationSpecificCommand boat_depart/globalFade/viewport -1000 -1000/end islandDepart",
+      "reviewedPreserve": true,
+      "preserveReason": "دنبالهٔ فنی رویداد تنها شامل بازیگران، موسیقی، صدا، دوربین، محوشدن، فرمان‌های قایق و پایان رویداد است و هیچ متن قابل‌نمایشی ندارد."
+    }
+  ]
+}

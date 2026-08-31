@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "2481135/f Alex 1000/t 900 1600": "sweet/-1000 -1000/farmer 44 65 1 Alex 50 68 1/skippable/specificTemporarySprite joshDog/viewport 53 67 true/pause 3000/speak Alex \"أنت كلب مطيع يا داستي.\"/pause 2000/speak Alex \"لعلك الوحيد هنا الذي يفهمني.$s#$b#لم ير أحد آخر ما رأيناه أنا وأنت.$s\"/faceDirection Alex 2/pause 700/emote Alex 28/playSound leafrustle/move farmer 6 0 2/pause 500/faceDirection Alex 0/jump Alex/pause 800/speak Alex \"@! هل سمعت حديثي؟$7\"/move farmer 0 1 2/question fork1 \"#نعم، سمعت كل شيء.#ليس تمامًا... لماذا؟\"/fork didntHear/pause 500/faceDirection Alex 2/pause 1000/showFrame Alex 27/pause 600/playMusic desolate/emote Alex 28/speak Alex \"لا أحب حقًا التحدث عن الأمر، لكنني سأشرح على ما أظن...$s\"/pause 1000/showFrame Alex 0 true/faceDirection Alex 0/pause 500/speak Alex \"هل تساءلت يومًا لماذا أعيش مع جدي وجدتي؟$s#$b#كما ترى، لم يكن أبي رجلًا صالحًا... لقد... حسنًا، أفسد كل شيء لي ولأمي.$a#$b#كان غائبًا نصف الوقت... وفي النصف الآخر كان يشرب طوال الليل ويقول إنني عديم القيمة ولن أحقق شيئًا أبدًا.$a#$b#أظن أنه كان يضمر لي الضغينة لأنني شاب... فقد كان ناقمًا لأنه أهدر شبابه بلا طائل ولم يحقق شيئًا في حياته.\"/faceDirection Alex 1/speak Alex \"حسنًا... ذلك رأيي في الأمر على أي حال. ومن يدري ما كان يجول في ذهنه.$a\"/pause 800/speak Alex \"رحل ذات يوم، وبعد ذلك بوقت قصير مرضت أمي وتوفيت. لم يكن أمامي خيار سوى الانتقال للعيش مع جدي وجدتي.$s\"/move farmer 0 1 1/pause 3000/emote Alex 40/faceDirection Alex 0/playMusic spring_day_ambient/speak Alex \"تبدو شخصًا يمكنني الوثوق به... ولهذا أخبرك بهذا يا @. لا أريد أي شفقة.$s#$b#إن كان في ماضي شيء طيب، فهو أنه جعلني قويًا.\"/pause 500/faceDirection farmer 2/pause 500/speak Alex \"والآن... دعني أريك ما يفعله داستي لقاء شريحة لحم مشوية.$h\"/faceDirection Alex 1/faceDirection farmer 1/showFrame Alex 26/specificTemporarySprite joshSteak/playSound dwop/pause 500/pause 500/speak Alex \"ها! انظر كيف يسيل لعابه. أظنه يحب شرائح اللحم بقدر ما أحبها.$h\"/playSound dogWhining/pause 3000/globalFade/viewport -1000 -1000/end"
+      }
+    }
+  ]
+}

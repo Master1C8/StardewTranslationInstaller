@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "Necromancer": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"زارث: مزاحمان؟ چطور جرئت کردید وارد تالار خصوصی من شوید!\"/pause 800/message \"آه، پس برای عصای سولاریون آمده‌اید...\"/pause 800/message \"هه‌هه‌هه... احمق‌ها. افزودهٔ خوبی برای ارتش اسکلت‌هایم می‌شوید!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"ارباب وحشت زارث پرتوی سایه را اجرا می‌کند!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"توانستی از طلسم جاخالی بدهی، اما همراهانت به‌شدت زخمی شده‌اند!\"/pause 500/question fork0 \"چه کار می‌کنی؟#جنگجو (سم) را درمان کن.#جادوگر (سباستین) را درمان کن.\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"ممنون، @.$7\"/speak Sam \"...$s\"/pause 1000/playMusic none/message \"سباستین «تیر پاک» را اجرا می‌کند... پرتوی نور سفید درست به صورت زارث می‌خورد. ارباب وحشت جیغ می‌کشد و به خاک فرو می‌ریزد.\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"عصای سولاریون را برمی‌داری و بالا می‌بری. نظم به جهان بازگشته است.\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

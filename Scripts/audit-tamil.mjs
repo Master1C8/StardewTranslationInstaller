@@ -260,6 +260,21 @@ const forbiddenTamilVariants = new Map([
   ["சேறு வளர்ப்பக", "ஸ்லைம் கூட"],
   ["பரிசுச் சீட்டு", "பரிசுச்சீட்டு"],
   ["எதிர்ப்பாற்றல் வளையம்", "எதிர்ப்புத்திறன் வளையம்"],
+  ["%Abigail", "%அபிகெயில்"],
+  ["%Haley", "%ஹேலி"],
+  ["ட்வார்ஃப்", "குள்ளர்"],
+  ["கெண்டுடன்", "கென்டுடன்"],
+  ["வும்பஸ்", "வம்பஸ்"],
+  ["வெளவால்", "வவ்வால்"],
+  ["அசுரக் கஸ்தூரி", "அரக்கர் கஸ்தூரி"],
+  ["எரிமலைக் கண்ணாடிக் குவளை", "அப்சிடியன் பூச்சாடி"],
+  ["சோம்பற்கரடி எலும்புக்கூடு", "சோம்பல் விலங்கு எலும்புக்கூடு"],
+  ["தங்க விளிம்புள்ள அதிர்ஷ்ட ஊதா கால்சட்டை", "ஓரமிட்ட அதிர்ஷ்ட ஊதாக் குறுங்கால்சட்டை"],
+  ["தீவிரத் தாக்குதல் வாய்ப்பு", "முக்கியத் தாக்கு வாய்ப்பு"],
+  ["தீவிரத் தாக்குதல் சக்தி", "முக்கியத் தாக்கு வலிமை"],
+  ["முக்கியத் தாக்குதல் வாய்ப்பு", "முக்கியத் தாக்கு வாய்ப்பு"],
+  ["முக்கியத் தாக்குதல் வலிமை", "முக்கியத் தாக்கு வலிமை"],
+  ["அதிமுக்கியத் தாக்குதல் ஆற்றல்", "முக்கியத் தாக்கு வலிமை"],
 ]);
 
 const contextualTamilVariants = [
@@ -272,6 +287,158 @@ const contextualTamilVariants = [
     english: /\bSecret Woods\b/iu,
     variants: [/(?<!இ)ரகசியக் காட/u],
     canonical: "இரகசியக் காடு",
+  },
+  {
+    english: /\bthe forge\b/iu,
+    variants: ["உருக்குப்பட்டறை"],
+    canonical: "உலைக்கூடம்",
+  },
+  {
+    english: /\bcoop\b/iu,
+    variants: ["கோழிக்கூண்டு", "கூண்டின் கொள்ளளவை", "கூண்டில் இடம்"],
+    canonical: "கோழிக்கூடம்",
+  },
+  {
+    english: /\bbarn\b/iu,
+    variants: ["கொட்டக"],
+    canonical: "தொழுவம்",
+  },
+  {
+    english: /\bsilo\b/iu,
+    variants: ["தானியக் கிடங்கு"],
+    canonical: "வைக்கோல் களஞ்சியம்",
+  },
+  {
+    english: /\bnew shed\b/iu,
+    variants: ["கொட்டக"],
+    canonical: "சேமிப்புக்கூடம்",
+  },
+  {
+    english: /\bkeg\b/iu,
+    variants: [/(?<!நொதிப்)பீப்பாய்/u],
+    canonical: "நொதிப்பீப்பாய்",
+  },
+  {
+    english: /\btapper\b/iu,
+    variants: ["வடிகருவி"],
+    canonical: "மரச்சாறு வடிப்பான்",
+  },
+  {
+    english: /\bJungle\b(?! Hut)/iu,
+    variants: [/(?<!மழைக்)காட்ட/u],
+    canonical: "மழைக்காடு",
+  },
+  {
+    english: /\bQuarry\b/iu,
+    variants: ["கல் குவாரி"],
+    canonical: "கற்குவாரி",
+  },
+  {
+    english: /\bFish Shop\b/iu,
+    variants: ["மீன் கடை"],
+    canonical: "மீன்கடை",
+  },
+  {
+    english: /\b(?:reached|climb to|reach|made it to) the summit\b/iu,
+    variants: ["உச்சி"],
+    canonical: "சிகரம்",
+  },
+  {
+    english: /\bdocks\b/iu,
+    variants: ["துறைமுகம்"],
+    canonical: "படகுத்துறை",
+  },
+  {
+    english: /^Crafting$/iu,
+    variants: ["உருவாக்கம்"],
+    canonical: "தயாரித்தல்",
+  },
+  {
+    english: /^Host$/iu,
+    variants: ["விருந்தோம்பு"],
+    canonical: "நடத்து",
+  },
+  {
+    english: /^Footwear$/iu,
+    variants: ["காலணி"],
+    canonical: "பாதணி",
+  },
+  {
+    english: /^Gathering:/iu,
+    variants: ["சேகரித்தல்:"],
+    canonical: "சேகரிப்பு:",
+  },
+  {
+    english: /\bReward:/iu,
+    variants: ["பரிசு:"],
+    canonical: "வெகுமதி:",
+  },
+  {
+    english: /--Forging Table--/iu,
+    variants: [
+      "--உருக்குதல் அட்டவணை--",
+      "மந்திரமேற்றுதல்",
+      "உருக்கி மேம்படுத்த",
+      "மந்திரமும் ஏற்றலாம்",
+      "'இயல்பான மந்திரங்கள்'",
+      "கருவிகளுக்கு மந்திரம் மட்டுமே ஏற்றலாம்",
+    ],
+    canonical: "வடித்தல் / மந்திரமேற்றல்",
+  },
+  {
+    english: /\bArtful:/iu,
+    variants: ["கலைநயம்:"],
+    canonical: "நுட்பம்:",
+  },
+  {
+    english: /\bCrusader:/iu,
+    variants: ["புனித வீரர்:"],
+    canonical: "அறப்போராளி:",
+  },
+  {
+    english: /\bHaymaker:/iu,
+    variants: ["வைக்கோல் அறுவடையாளர்:"],
+    canonical: "புல்வெட்டி:",
+  },
+  {
+    english: /\bPowerful:/iu,
+    variants: ["ஆற்றல்மிக்கது:"],
+    canonical: "வலிமை:",
+  },
+  {
+    english: /\bReaching:/iu,
+    variants: ["எட்டுதல்:"],
+    canonical: "தொலைவு:",
+  },
+  {
+    english: /\bShaving:/iu,
+    variants: ["சீவுதல்:"],
+    canonical: "சீவல்:",
+  },
+  {
+    english: /\bBottomless:/iu,
+    variants: ["வற்றாதது:"],
+    canonical: "அடியற்ற:",
+  },
+  {
+    english: /\bEfficient:/iu,
+    variants: ["திறன்மிக்கது:"],
+    canonical: "செயல்திறன்:",
+  },
+  {
+    english: /\bSwift:/iu,
+    variants: ["விரைவானது:"],
+    canonical: "விரைவு:",
+  },
+  {
+    english: /\bAuto-Hook:/iu,
+    variants: ["தானியங்கித் தூண்டில்:"],
+    canonical: "தானியங்கிக் கொக்கி:",
+  },
+  {
+    english: /\bPreserving:/iu,
+    variants: ["பாதுகாத்தல்:"],
+    canonical: "பாதுகாப்பு:",
   },
 ];
 

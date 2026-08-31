@@ -1,0 +1,13 @@
+{
+  "id": "431-leo-parrot-hut-introduction",
+  "kind": "long",
+  "complexityReason": "A single cinematic event script with four narrated messages.",
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "IslandHut_Event_ParrotBoyIntro",
+      "source": "continue/-1000 -1000/farmer 7 7 3/skippable/specificTemporarySprite removeSprite 777/addTemporaryActor ParrotBoy 16 32 5 2 2 true ???/pause 2000/viewport 5 7 true/pause 2000/emote ParrotBoy 8/pause 1500/message \"The boy looks at you with curious eyes...\"/pause 1500/animate ParrotBoy false true 500 17 0/playSound parrot_squawk/pause 1000/playSound parrot_squawk/pause 800/stopAnimation ParrotBoy/specificTemporarySprite parrotHutSquawk/pause 800/move farmer -2 0 0/pause 500/emote farmer 8/pause 1000/message \"He seems to have a close bond with the parrots.\"/pause 500/message \"But he's too shy to approach you right now.\"/pause 1400/faceDirection farmer 1/pause 500/message \"Perhaps making friends with the parrots could earn his trust?\"/pause 1000/end position 5 7",
+      "translation": "continue/-1000 -1000/farmer 7 7 3/skippable/specificTemporarySprite removeSprite 777/addTemporaryActor ParrotBoy 16 32 5 2 2 true ???/pause 2000/viewport 5 7 true/pause 2000/emote ParrotBoy 8/pause 1500/message \"Cậu bé nhìn bạn bằng ánh mắt tò mò...\"/pause 1500/animate ParrotBoy false true 500 17 0/playSound parrot_squawk/pause 1000/playSound parrot_squawk/pause 800/stopAnimation ParrotBoy/specificTemporarySprite parrotHutSquawk/pause 800/move farmer -2 0 0/pause 500/emote farmer 8/pause 1000/message \"Có vẻ cậu bé rất gắn bó với những chú vẹt.\"/pause 500/message \"Nhưng lúc này cậu bé còn quá nhút nhát để đến gần bạn.\"/pause 1400/faceDirection farmer 1/pause 500/message \"Có lẽ kết bạn với những chú vẹt sẽ giúp bạn giành được lòng tin của cậu bé?\"/pause 1000/end position 5 7"
+    }
+  ]
+}

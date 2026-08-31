@@ -1,0 +1,72 @@
+{
+  "id": "0229-town-events-d",
+  "reviewedAt": "2026-08-30",
+  "records": [
+    {
+      "target": "Data/Events/Town",
+      "key": "34/f Penny 500/t 900 1400/w sunny",
+      "eventSegments": [
+        ["*Sigh*... How am I going to reach that letter in the back?$s", "*يتنهد*... كيف سأصل إلى تلك الرسالة في الخلف؟$s"],
+        ["Here, let me help you, Mr. Mullner!", "دعني أساعدك يا سيد مولنر!"],
+        ["There you go!$h", "تفضل!$h"],
+        ["Hmmph. I could've done it myself! And I can certainly move around on my own!$u#$b#How feeble do you think I am?", "همف. كان بوسعي فعل ذلك بنفسي! وبوسعي بالتأكيد التحرك وحدي!$u#$b#كم تظنينني واهناً؟"],
+        ["$q 71 null#@? You were watching us?#$r 71 50 event_mail1#I was. You did a kind thing there, Penny.#$r 71 -50 event_mail2 friend_George_25#I was. You should've asked instead of assuming George wanted help.#$r 71 0 event_mail3#I'm just taking a walk, minding my own business.", "$q 71 null#@؟ أكنت تراقبنا؟#$r 71 50 event_mail1#نعم. لقد فعلت شيئاً طيباً يا بيني.#$r 71 -50 event_mail2 friend_George_25#نعم. كان عليك أن تسألي بدلاً من افتراض أن جورج يريد المساعدة.#$r 71 0 event_mail3#إنني أتنزه فحسب ولا أتدخل في شؤون الآخرين."],
+        ["*sigh*...No, no... I'm sorry, miss. I shouldn't have gotten so angry.$s", "*يتنهد*... لا، لا... أنا آسف يا آنسة. لم يكن ينبغي لي أن أغضب هكذا.$s"],
+        ["It was actually very kind of you to help me out.", "لقد كان من لطفك حقاً أن تساعديني."],
+        ["That's okay, Mr. Mullner. I understand.", "لا بأس يا سيد مولنر. أنا أتفهم ذلك."],
+        ["$q -1 null#It must be difficult to grow old...$u#$r -1 0 event_old1#I'd rather not think about it.#$r -1 0 event_old2#It's just a different part of life.#$r -1 0 event_old3#That's why we should respect our elders.#$r -1 0 event_old4#I'd rather die young...", "$q -1 null#لا بد أن التقدم في السن صعب...$u#$r -1 0 event_old1#أفضل ألا أفكر في الأمر.#$r -1 0 event_old2#إنه مجرد طور مختلف من أطوار الحياة.#$r -1 0 event_old3#لهذا ينبغي لنا احترام كبار السن.#$r -1 0 event_old4#أفضل أن أموت شاباً..."],
+        ["Well, it was interesting talking to you, @. I should go.$u", "حسناً، كان الحديث معك مثيراً للاهتمام يا @. علي أن أذهب.$u"]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "831125/f Shane 1750/f Clint 500/f Emily 500/t 1000 1600/w sunny",
+      "eventSegments": [
+        ["Okay guys, do you remember your lines?$u", "حسناً يا رفاق، هل تتذكرون أدواركم؟$u"],
+        ["Yes!", "نعم!"],
+        ["Ready? Action!$u", "مستعدون؟ تصوير!$u"],
+        ["I thought we had something special... I guess I was wrong.$s", "ظننت أن بيننا شيئاً مميزاً... يبدو أنني كنت مخطئة.$s"],
+        ["I... I... Uh...", "أنا... أنا... آه..."],
+        ["speak Shane \"Cut!\"/speak Clint", "speak Shane \"توقف!\"/speak Clint"],
+        ["speak Shane \"Cut!\"/faceDirection Clint", "speak Shane \"توقف!\"/faceDirection Clint"],
+        ["I'm sorry!$s", "أنا آسف!$s"],
+        ["It's hard to remember my lines when her face is right in front of me like that...$s", "يصعب علي تذكر دوري حين يكون وجهها أمامي مباشرة هكذا...$s"],
+        ["Oh, hey.", "آه، مرحباً."],
+        ["Check out my new camera...#$b#Joja Co. is having a video advertisement competition. The prize is 10,000g.", "انظر إلى آلة التصوير الجديدة لدي...#$b#تقيم شركة جوجا مسابقة للإعلانات المصورة. والجائزة 10,000g."],
+        ["Hey! I want you to be in this shot... okay?#$b#Just walk by Clint and Emily in the background while they're talking... It'll give the scene a little more authenticity.", "أريدك أن تظهر في هذه اللقطة... اتفقنا؟#$b#مر بجوار كلينت وإميلي في الخلفية وهما يتحدثان فحسب... سيضفي ذلك على المشهد شيئاً من الواقعية."],
+        ["Okay... Ready?#$b#Action!$u", "حسناً... مستعدون؟#$b#تصوير!$u"],
+        ["I thought we had something special... You said you wouldn't leave me for anything. I guess that was a lie.$s", "ظننت أن بيننا شيئاً مميزاً... قلت إنك لن تتركني من أجل أي شيء. يبدو أن ذلك كان كذباً.$s"],
+        ["No! It's not like that... This is just something I have to do. It's very important to me.", "لا! ليس الأمر كذلك... هذا مجرد شيء لا بد أن أفعله. إنه مهم جداً بالنسبة إلي."],
+        ["I've just got to try new 'Joja Bluu' cola.$5#$b#It's got three times the sorbitol for a thick, sweet blast. And it's cheaper than water!$5", "لا بد لي من تجربة كولا «جوجا بلوو» الجديدة.$5#$b#تحتوي ثلاثة أمثال السوربيتول لتمنحك دفعة حلوة كثيفة. وهي أرخص من الماء!$5"],
+        ["But... But... Isn't soda unhealthy? You promised me...$s", "لكن... لكن... أليست المشروبات الغازية مضرة بالصحة؟ لقد وعدتني...$s"],
+        ["Have no fear, my dear. The world-class science team at Joja Headquarters have determined that 'Joja Bluu' does not cause a significant erosion of the stomach lining. So you can drink it whenever you like, as much as you like.$5#$b#The real question is... 'When will YOU turn bluu?'... *glug* *glug*... Ahh...$5", "لا تخافي يا عزيزتي. قرر الفريق العلمي العالمي المستوى في مقر جوجا أن «جوجا بلوو» لا تسبب تآكلاً ملحوظاً في بطانة المعدة. لذا يمكنك شربها متى شئت وبأي قدر تشائين.$5#$b#السؤال الحقيقي هو... «متى ستصبحين أنت بلوو؟»... *يجرع* *يجرع*... آه...$5"],
+        ["That was perfect.", "كان ذلك مثالياً."],
+        ["Thanks for the help. $h", "شكراً على المساعدة. $h"],
+        ["...Clint?$s", "...كلينت؟$s"],
+        ["What a productive day... I got some great footage.", "يا له من يوم مثمر... لقد التقطت مقاطع رائعة."]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "15389722/j 57",
+      "eventSegments": [
+        ["Ah, hello there, @. You showed up at the perfect time.$h", "آه، مرحباً يا @. لقد وصلت في الوقت المثالي.$h"],
+        ["It's our new 'Special Orders' board.#$b#Robin and I built it from scratch.$h", "إنها لوحة «الطلبات الخاصة» الجديدة.#$b#بنيتها أنا وروبن من الصفر.$h"],
+        ["Um... Lewis? All you did was hold the nails.", "أمم... لويس؟ كل ما فعلته هو إمساك المسامير."],
+        ["*Ahem*... Ignore her.$5", "*يتنحنح*... تجاهلها.$5"],
+        ["Now, let me explain...", "والآن، دعني أشرح..."],
+        ["You see... with %farm Farm back in business, the local economy has really been picking up.#$b#As a result, some of the local townsfolk have been asking me for a way to source local ingredients for their businesses or personal projects.", "كما ترى... منذ أن عادت مزرعة %farm إلى العمل، أخذ الاقتصاد المحلي ينتعش حقاً.#$b#ونتيجة لذلك، طلب مني بعض أهل البلدة وسيلة للحصول على مكونات محلية لأعمالهم أو مشروعاتهم الشخصية."],
+        ["So, Robin and I came up with the idea of a new 'Special Orders' board, where people can post bigger jobs than would make sense for the old billboard outside Pierre's.", "لذلك ابتكرنا أنا وروبن فكرة لوحة جديدة لـ«الطلبات الخاصة»، يستطيع الناس أن ينشروا عليها أعمالاً أكبر مما يناسب لوحة الإعلانات القديمة خارج متجر بيير."],
+        ["Yeah... for example, I plan on requesting some hardwood for a bed I want to make.$h#$b#I won't put you on the spot, but if you want to help me out you can just accept the job from this board.#$b#Who knows, maybe if the bed turns out well I'll start selling them in my shop!$h", "نعم... على سبيل المثال، أخطط لطلب بعض الخشب الصلب من أجل سرير أريد صنعه.$h#$b#لن أضعك تحت الضغط، لكن إن أردت مساعدتي فما عليك سوى قبول العمل من هذه اللوحة.#$b#ومن يدري، لعلني أبدأ ببيع هذه الأسرة في متجري إن نجح صنعها!$h"],
+        ["#I look forward to helping!#Heh... I dunno... we'll see...", "#أتطلع إلى المساعدة!#هه... لا أدري... سنرى..."],
+        ["I thought so! I wouldn't expect anything less from you, @.", "هذا ما ظننته! لم أكن لأتوقع منك أقل من ذلك يا @."],
+        ["So, can we say that you're... --On Board--?$4", "إذن، هل يمكننا القول إنك أصبحت... --على لوحتنا--؟$4"],
+        ["*groan*", "*تئن*"],
+        ["Well, I'm sure you're busy, so we won't keep you away from your work any longer.#$b#As always, I appreciate your willingness to contribute!$h#$b#Take care, @.", "حسناً، أنا واثق بأنك مشغول، لذلك لن نبعدك عن عملك أكثر.#$b#أقدر، كما هو الحال دائماً، استعدادك للمساهمة!$h#$b#اعتن بنفسك يا @."],
+        ["Huh... I wouldn't expect such a tepid response from you, @. I'm disappointed.$s", "همم... لم أتوقع منك مثل هذا الرد الفاتر يا @. لقد خاب أملي.$s"],
+        ["It's fine, Lewis... there's no pressure to help out.$5#$b#Maybe I can get Sebastian to help. He could use some work away from the computer.", "لا بأس يا لويس... لا يوجد أي ضغط للمساعدة.$5#$b#لعلني أستطيع الاستعانة بسيباستيان. فهو بحاجة إلى بعض العمل بعيداً عن الحاسوب."],
+        ["Hmmph... Well, we're done here, Robin.$u#$b#...Wouldn't want to waste any more of @'s precious 'me' time.$u", "همف... حسناً، انتهى عملنا هنا يا روبن.$u#$b#...لا نريد إهدار مزيد من «الوقت الخاص» الثمين لدى @.$u"]
+      ]
+    }
+  ]
+}

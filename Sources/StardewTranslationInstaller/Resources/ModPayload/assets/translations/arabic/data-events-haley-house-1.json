@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HaleyHouse",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "11/f Haley 500/p Haley/p Emily": "50s/6 20/farmer -10 -10 0 Haley 5 20 1 Emily 8 20 3/skippable/pause 1000/shake Haley 500/pause 500/speak Haley \"آآآه! أنا دائمًا من ينظف تحت الوسائد! إنه دور *أنت* هذا الأسبوع!$a\"/emote Emily 12/speak Emily \"إنك تتصرفين بطفولية يا هايلي. أنا أقوم بمعظم العمل في هذا المنزل، وأنت تعلمين ذلك.$u\"/pause 200/warp farmer 2 24/playSound doorClose/pause 400/faceDirection Haley 2/faceDirection Emily 2/speak Haley \"أوه، ${إنه فتى المزرعة الجديد^إنها فتاة المزرعة الجديدة}$.$7\"/faceDirection Emily 3/speak Emily \"${له^لها}$ اسم، كما تعلمين.$u\"/move farmer 0 -1 1/move farmer 3 0 0/faceDirection Emily 2/speak Haley \"أراهن أنك ستفهم وجهة نظري هنا.\"/emote farmer 8/speak Emily \"*تتنهد*... أنا آسفة حقًا على إقحامك في هذا يا @. تشكو هايلي لأنني طلبت منها التنظيف تحت الوسائد.$u\"/faceDirection Haley 1/speak Haley \"$q 45 null#ذلك لأنني نظفتها الأسبوع الماضي!$a#$r 46 -50 Event_clean2#كفي عن التذمر ونظفيها فحسب!#$r 45 30 Event_clean1#يا هايلي، لم لا تجعلين هذه مهمتك الأسبوعية الوحيدة؟#$r 46 -30 Event_clean3#يا إميلي، كوني أرفع خلقًا ونظفيها هذه المرة.\"/fork haleyWontDoIt/stopMusic/faceDirection Haley 3/emote Haley 12/pause 400/faceDirection Haley 1/speak Haley \"حسنًا، لقد فزت. أظن أن هذا يمكن أن يصبح عملي كل أسبوع. وعندئذ لن يبقى سبب للجدال بشأنه.$u\"/faceDirection Haley 2/speak Emily \"شكرًا يا @. كان ذلك حلًا رائعًا.$h\"/pause 1000/end",
+        "haleyWontDoIt": "move Haley -2 0 0/move Haley 0 -2 0/emote Haley 12/faceDirection Emily 1/emote Emily 28/speak Emily \"*تتنهد*... أظن أنني سأفعل ذلك بنفسي إذن...$s\"/pause 1000/end"
+      }
+    }
+  ]
+}

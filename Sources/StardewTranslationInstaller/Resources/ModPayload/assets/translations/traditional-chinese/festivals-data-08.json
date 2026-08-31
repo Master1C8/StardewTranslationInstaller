@@ -1,0 +1,196 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "name": "冰雪節",
+        "mainEvent": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"好了，各位。讓我們開始今年的冰釣比賽。\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"參賽者的目標是使用現場提供的釣竿，在兩分鐘內盡可能釣到最多的魚。#$b#你們必須在這裡，從冰面上的這些洞口釣魚。\"/pause 600/speak Lewis \"好了，大家都準備好了嗎？\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"開始！\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+        "afterIceFishing": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"哇，魚可真多！$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*乾嘔*……這股味道……$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"現在，宣布今年冰釣比賽的獲勝者……\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"這是你的獎品！好好享用。\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"好了，今年的冰雪節就到此結束。謝謝大家前來參加！ #$b#現在來放走這些可憐的魚吧……$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"真不敢相信我贏了！好了，該回家了。\"/waitForOtherPlayers festivalEnd/end",
+        "OtherPlayerWin": "message \"我沒有贏得比賽，但還是很好玩！該回家了。\"/waitForOtherPlayers festivalEnd/end",
+        "DickWin": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"這是你的獎品，威利。好好享用。\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"好了，今年的冰雪節就到此結束。謝謝大家前來參加！#$b#現在來放走這些可憐的魚吧……$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"我沒有贏得比賽，但還是很好玩！該回家了。\"/waitForOtherPlayers festivalEnd/end",
+        "Abigail_spouse": "嘿，親愛的……看，是你耶！$h",
+        "Penny_spouse": "@，你今年要參加釣魚比賽嗎？我媽媽可是很認真想贏。",
+        "Haley_spouse": "嘶……為了堆這個雪人，我的手都凍僵了。$l",
+        "Sebastian_spouse": "別擔心我，我從來不會冷……",
+        "Sam_spouse": "你不冷嗎？真的不想穿我的外套？"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Abigail": "你覺得我的雪怪人怎麼樣？",
+        "Robin": "抱歉，但雕刻冰製胸牆需要我全神貫注！",
+        "Demetrius": "你知道嗎？我大概該穿件外套。",
+        "Maru": "說到堆雪人，我沒什麼創意。$s",
+        "Sebastian": "冷？不會，我從來不覺得冷。",
+        "Pierre": "這雪冷得讓我的手指失去知覺了……$s",
+        "Shane": "要是由我決定，大概會改在酒館舉辦披薩節……",
+        "Caroline": "@，你的冬天過得怎麼樣？$h",
+        "Linus": "建造冰屋是我向居住在冰封海洋彼端的凍原居民學來的手藝。#$e#那是很多年前的事了。$h#$e#冰屋是個舒適的家，但全年住在帳篷裡更省事。",
+        "Alex": "雪人還可以吧。但我主要還是在期待春天。"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "George": "哼……妻子把我拖到寒風裡，就為了這個？",
+        "Evelyn": "我有沒有告訴過你，我和喬治最初是怎麼認識的？他就在這個節慶上拿雪球砸我。#$e#他那時還是個紳士，特地走過來確認我有沒有受傷。$h",
+        "Lewis": "歡迎來到冰雪節！#$e#今天節慶的重頭戲是冰釣比賽。我們設置了這座「冰湖」，並在裡面放滿了魚。#$b#準備好參賽時告訴我。",
+        "Clint": "艾蜜莉無緣無故就開始幫我……這代表了什麼嗎？*吞口水*$4",
+        "Emily": "哇，這個雪人需要好好改造。是誰做的？$s",
+        "Penny": "$y '嗯……我們該堆什麼樣的雪人？_經典款。胡蘿蔔鼻子、高帽子、圍巾。_我想還是經典款最穩妥，對吧？$h_有創意一點。冰柱觸角、松果眼睛。_好啊！聽起來很有趣。$h_雪人很無聊。跳脫框架想想吧！_呃，好吧……我想自己還是會選比較傳統的款式。'",
+        "Pam": "我打算贏得冰釣比賽！#$e#不過威利會很難擊敗……他日夜都在做這種事。$s",
+        "Haley": "看來冬天也不全是壞事……在雪地裡玩還挺有趣的！",
+        "Jodi": "森林在冬天看起來很美，不是嗎？"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Kent": "我喜歡冬天。很平靜。",
+        "Sam": "嘿，@。你要參加冰釣比賽嗎？#$e#喔，我不參加。我不會釣魚。",
+        "Leah": "喔，冰。這是美麗卻轉瞬即逝的雕塑材料。#$e#不過我想，這點也許反而讓藝術更加美好。",
+        "Marnie": "我替外面那些可憐又寒冷的動物感到難過。$s",
+        "Elliott": "我今天要參加冰釣比賽。有何不可？#$e#不過威利很少輸。",
+        "Gus": "抱歉，這裡沒有食物。#$e#等到冬日星盛宴吧。你會一連好幾天都撐得吃不下。",
+        "Wizard": "偷偷跑來參觀我古怪的塔？以凡人而言，你還真奇特。",
+        "Harvey": "極端低溫會讓身體承受巨大壓力，所以一定要穿暖和！#$e#喔，還有，祝你節慶愉快！$h",
+        "Sandy": "我聽說老家正在下雨。你是因此才來這裡嗎？$h#$e#其實我有點想念下雨的感覺……$s"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Jas": "我想替他裝上胡蘿蔔鼻子！$h",
+        "Vincent": "我看到下面有一條大魚！",
+        "Marlon": "嘿，午安。",
+        "Leo": "如果在牆裡塞滿羽毛，就能讓冰屋暖和一倍！",
+        "Abigail_spouse_y2": "想像一下，如果我們一起住在冰屋裡！$h#$e#那會很有趣，不過只要和你在一起，住在哪裡我都開心。$l",
+        "Penny_spouse_y2": "回家後，我們生起爐火，喝些熱可可吧。$0#$e#……加棉花糖，好嗎？$h",
+        "Haley_spouse_y2": "過來，讓我整理一下你的頭髮……比賽時我要替你拍一張動態照片！",
+        "Sebastian_spouse_y2": "嘿，你今天真的得贏得比賽。$0#$e#呃……好吧，我和馬龍打了個小賭……$1",
+        "Sam_spouse_y2": "你改天該教我怎麼使用釣竿。我覺得自己會很擅長。",
+        "Alex_spouse_y2": "嘿！我知道你今天會以壓倒性優勢獲勝。讓我們為你驕傲！"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Harvey_spouse_y2": "嗨，親愛的。祝你今天冰釣比賽順利。$0",
+        "Elliott_spouse_y2": "我一直在練習釣魚技巧。親愛的，我面對你可不會手下留情。$1",
+        "Abigail_y2": "你有沒有把一把小石子丟到冰湖上？會發出很好聽的聲音。#$e#……別告訴爸爸，但我在外套底下穿了冬日星毛衣。",
+        "Robin_y2": "冰雕對我來說是項很有成就感的挑戰。這種獨特材料我還不習慣！",
+        "Demetrius_y2": "水冰……確實是一種意義深遠的物質。水是生命所必需，因此很適合用作表現生命形態的雕像材料。",
+        "Maru_y2": "想堆出做工精良的雪人，首先要確保基底平整，並避免上半部過重。$3",
+        "Shane_y2": "冬天對動物來說真的很難熬。你在雞舍和畜棚裡安裝暖氣了嗎？",
+        "Sebastian_y2": "你有沒有注意過，雪地裡有多安靜？",
+        "Pierre_y2": "我們家有成套的冬日星毛衣。#$e#只要阿比蓋爾肯穿她那件就好了……$2",
+        "Caroline_y2": "嗨，@。今年冬天，你有從農務中抽出時間放鬆嗎？$0"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Linus_y2": "啊……森林已經進入漫長的冬眠……$1",
+        "Alex_y2": "你覺得節慶結束後我去冰湖裡泡一下，會有人介意嗎？#$e#我聽說冰浴對肌肉有好處。",
+        "George_y2": "等你像我一樣又老又禿，就需要一頂暖和的好帽子。",
+        "Evelyn_y2": "誰也說不準……這可能是我最後一次和亞歷克斯堆雪人。#$e#親愛的，人生苦短。一定要珍惜每個時刻。",
+        "Lewis_y2": "你好，@。一年一度的冰釣節慶又到了。#$b#準備好開始比賽時就來找我！$1",
+        "Clint_y2": "這些雪塊怎麼都搓不成球……$0#$e#我想自己更擅長在炎熱環境裡工作，而不是寒冷中。$2",
+        "Emily_y2": "雪人一定得有雪人的樣子！高帽子和圍巾不是很時髦嗎？",
+        "Penny_y2": "我太緊張，不敢走上結冰的湖面……#$e#我以前讀過一本書，裡面的女孩從冰面掉了下去。#$b#她沒事！但……從那以後我對冰湖一直很謹慎。",
+        "Pam_y2": "$y '我去年會輸，是因為選了個壞位置。我有預感，這次情況會不一樣。_我不覺得位置有什麼影響。_哈，這只是你說的！我會證明你錯了。_反正我都會打敗你。_……$4_好吧，祝你好運。_你也是，孩子。'",
+        "Haley_y2": "幸好我戴了耳罩，外面冷死了！$0#$e#今年我帶了相機。這種光線最適合拍冬季照片！"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Jodi_y2": "這樣的聚會是和鄰居建立社區情誼的好方法。#$e#寒冷天氣似乎能讓人們相聚，這點真好。",
+        "Kent_y2": "準備好比賽了嗎？我們都覺得你會贏。",
+        "Sam_y2": "嘿，你為什麼笑？他還沒完成呢！#$e#等著瞧……等我們做完，他會是個很棒的雪人。",
+        "Leah_y2": "切割冰塊前必須先讓它回溫，否則根本無法塑形！",
+        "Marnie_y2": "啊……那隻小豬裹得暖暖的，看起來真可愛！$1",
+        "Elliott_y2": "看這裡，這是我的祕密武器……一小瓶上等烈酒，在哨聲響起前用來潤潤嘴唇……",
+        "Gus_y2": "我花太多時間窩在室內看格球了……到戶外呼吸清冽的冬日空氣真好。",
+        "Wizard_y2": "嗯？你怎麼來到這裡的？#$e#不必在意我。我只是在觀察……",
+        "Harvey_y2": "今天早上我真不該替鬍子上蠟，現在整撮都凍硬了！天啊……$2#$e#好吧，如果你需要冰鎬，知道該去哪裡找了……$h",
+        "Jas_y2": "下面的魚不會冷嗎？$3"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Vincent_y2": "哥哥正在幫我堆雪人！$0",
+        "Marlon_y2": "一年中的這個時節還不算糟。冬天沒有蟲子……#$e#你覺得今年能打敗威利嗎？他是個強勁的對手……",
+        "Leo_y2": "*嘎吱* *嘎吱* 踩在雪上會發出有趣的聲音！$1"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "Alex_spouse": "釣魚比賽時我會替你加油。",
+        "Harvey_spouse": "我正想念家裡溫暖的爐火……$l",
+        "Elliott_spouse": "我知道你會在釣魚比賽中打敗我，但我不介意。我只是來享受樂趣的。$h",
+        "Willy": "$y '嘿，@。準備好冰釣了嗎？_好了。我會盡力！_就是要有這股精神！$h_好了，而且我會打敗你！_走著瞧。$h_老實說，還沒。我不擅長釣魚。_好吧，那就把它當成一次很好的練習！$h'",
+        "mainEvent_y2": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 69 36 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 37 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 0/faceDirection Elliott 1/faceDirection Willy 3/positionOffset Harvey 12 24/viewport 71 35 true/pause 2000/speak Lewis \"好了，各位。讓我們開始今年的冰釣比賽。\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"參賽者必須使用現場提供的釣竿，從冰面上的這些洞口盡可能釣到最多的魚。\"/pause 600/speak Lewis \"大家都準備好了嗎？\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"開始！\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Maru true 3 3000 4 300 0 -3 4 250 3 6400 2 300 0 3 2 300 3 4250/advancedMove Vincent true 2 6500 1 300 3 0 1 300 2 7400 3 300 -3 0 3 300 2 1000/advancedMove Penny true 4 5750 3 300 -5 0 3 300 4 6100 1 300 5 0 1 300 4 1000/advancedMove Clint false 4 6000 1 1500 4 4000 1 2000 1 0 0 -1 4 15000 1 2000 4 1000/advancedMove Emily false 4 17000 3 1750 4 4000 1 350 2 0 0 -2 1 0 1 250 4 250 3 5000/advancedMove Jas true 1 4500 4 5750/advancedMove Abigail true 1 8400 2 3650/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/animate Haley true true 150 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 33 33 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 24 24 31 30 30 30 30 30 30 30 33/playMusic fallFest/playerControl iceFishing"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "zh-TW-vnrevival"
+      },
+      "Entries": {
+        "afterIceFishing_y2": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 3/faceDirection Elliott 1/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"真厲害，釣到了好多魚！$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*乾嘔*……我永遠都習慣不了這股惡臭……$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"現在，宣布今年冰釣比賽的獲勝者……\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"這是你的獎品！好好享用。\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"好了，今年的冰雪節就到此結束。謝謝大家前來參加！#$b#現在來放走這些可憐的魚吧……$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -3 0 0 true/advancedMove Willy false 3 300 2 300 1 1000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"真不敢相信我贏了！好了，該回家了。\"/waitForOtherPlayers festivalEnd/end",
+        "DickWin_y2": "pause 100/jump Willy/pause 800/move Willy -3 0 0/speak Lewis \"這是你的獎品，威利。好好享用。\"/pause 500/move Willy 0 -1 0/move Lewis 1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"好了，今年的冰雪節就到此結束。謝謝大家前來參加！#$b#現在來放走這些可憐的魚吧……$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -4 0 0 true/advancedMove Willy false 4 300 1 300 4 0 1 200 2 3000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"我沒有贏得比賽，但還是很好玩！該回家了。\"/waitForOtherPlayers festivalEnd/end",
+        "Leah_spouse_y2": "改天我該教你怎麼做冰雕！一定很有趣！$h#$e#我很想看看你會創作出什麼。",
+        "Maru_spouse_y2": "親愛的，你在場上會表現得很棒！只要保持冷靜與專注。",
+        "Emily_spouse_y2": "鏘鏘！這是你！#$e#什麼？你看不出來很像嗎？我覺得完美極了！",
+        "Shane_spouse_y2": "還記得我們坐在老池塘邊一起喝啤酒嗎？那地方就在這附近。#$e#算了，最好別沉溺於過去……即使是美好的回憶也會令我痛苦。",
+        "Willy_y2": "是啊，全鎮今天都會觀看我們這場小比賽。讓大家看場好戲吧。"
+      }
+    }
+  ]
+}

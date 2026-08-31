@@ -1,0 +1,400 @@
+{
+  "id": "hi-long-0403",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "finalBossWizard",
+      "replacements": [
+        [
+          "Dreadlord Xarth is muttering an incantation...",
+          "ड्रेडलॉर्ड ज़ार्थ कोई मंत्र बुदबुदा रहा है..."
+        ],
+        [
+          "What do you do?#Cast 'Pure Beam' at Xarth.#Put a 'Shield Charm' on your friends.",
+          "आप क्या करेंगे?#ज़ार्थ पर 'शुद्ध किरण' चलाएँ।#अपने दोस्तों पर 'ढाल ताबीज़' लगाएँ।"
+        ],
+        [
+          "You place a 'Shield Charm' on Sam and Sebastian.",
+          "आप सैम और सेबेस्टियन पर 'ढाल ताबीज़' लगाते हैं।"
+        ],
+        [
+          "Xarth sends bolts of pure dark energy flying. One of them strikes Sebastian, but your 'Shield Charm' reflects it back into Xarth's face!",
+          "ज़ार्थ शुद्ध अंधकारमय ऊर्जा के तीर छोड़ता है। उनमें से एक सेबेस्टियन को लगता है, मगर आपका 'ढाल ताबीज़' उसे पलटकर ज़ार्थ के चेहरे पर भेज देता है!"
+        ],
+        [
+          "Xarth is defeated, and the Solarion Staff glows peacefully. Order has been restored to the world.",
+          "ज़ार्थ पराजित हो गया है और सोलारियन दंड शांतिपूर्वक चमक रहा है। दुनिया में व्यवस्था बहाल हो गई है।"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "finalBossWarrior",
+      "replacements": [
+        [
+          "Dreadlord Xarth is muttering an incantation...",
+          "ड्रेडलॉर्ड ज़ार्थ कोई मंत्र बुदबुदा रहा है..."
+        ],
+        [
+          "What do you do?#Charge ahead, swinging your sword.#Use your shield to defend your friends.",
+          "आप क्या करेंगे?#तलवार चलाते हुए आगे धावा बोलें।#दोस्तों की रक्षा के लिए ढाल इस्तेमाल करें।"
+        ],
+        [
+          "Xarth casts 'Shadow Bolt' at Sebastian... but you raise your shield just in time to deflect the attack!",
+          "ज़ार्थ सेबेस्टियन पर 'छाया तीर' चलाता है... मगर आप ठीक समय पर ढाल उठाकर हमला मोड़ देते हैं!"
+        ],
+        [
+          "As Xarth prepares another spell, you charge forward and strike him down with your sword.",
+          "ज़ार्थ जैसे ही दूसरा मंत्र तैयार करता है, आप आगे धावा बोलकर उसे तलवार से धराशायी कर देते हैं।"
+        ],
+        [
+          "The Solarion Staff glows peacefully as you hold it high. Order has been restored to the world!",
+          "आपके ऊँचा उठाते ही सोलारियन दंड शांतिपूर्वक चमकता है। दुनिया में व्यवस्था बहाल हो गई है!"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "19/f Evelyn 1000/p Evelyn",
+      "replacements": [
+        [
+          "Oh! @! You're wondering what that good smell is?#$b#Why, that's nice of you to say! I'm actually baking my famous cookies!$h",
+          "ओह! @! यह अच्छी महक किसकी है, जानना है?#$b#अरे, यह कहना तुम्हारी अच्छाई है! असल में मैं अपनी मशहूर कुकीज़ बना रही हूँ!$h"
+        ],
+        [
+          "Here, why don't you try one?",
+          "यह लो, एक चखकर देखो।"
+        ],
+        [
+          "$q 51 null#Well, what do you think?#$r 51 100 Event_cookies1#It's delicious!#$r 51 -100 Event_cookies2#It was like chewing on a hockey puck",
+          "$q 51 null#ख़ैर, कैसी लगी?#$r 51 100 Event_cookies1#बहुत स्वादिष्ट है!#$r 51 -100 Event_cookies2#यह हॉकी पक चबाने जैसा था"
+        ],
+        [
+          "I think I've come to know you well enough to give you my recipe. Just make sure to keep it a secret.$h",
+          "लगता है अब मैं तुम्हें इतना जानती हूँ कि अपना नुस्ख़ा दे सकती हूँ। बस इसे गुप्त रखना।$h"
+        ],
+        [
+          "Learned how to make 'Cookies'",
+          "आपने 'कुकीज़' बनाना सीखा"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "33/f Robin 1500/p Robin",
+      "replacements": [
+        [
+          "Hi @. I was just cleaning some dust off my saw.",
+          "नमस्ते @। मैं बस अपनी आरी से थोड़ी धूल साफ़ कर रही थी।"
+        ],
+        [
+          "$q 66 null#Have you ever made anything out of wood, @?#$r 66 50 event_wood1#Yes#$r 66 50 event_wood2#No",
+          "$q 66 null#क्या कभी लकड़ी से कुछ बनाया है, @?#$r 66 50 event_wood1#हाँ#$r 66 50 event_wood2#नहीं"
+        ],
+        [
+          "I think we've become good enough friends that I can trust you with my carpentry secrets!$h#$b#Here, let me show you the blueprints.",
+          "लगता है अब हमारी दोस्ती इतनी अच्छी है कि बढ़ईगीरी के अपने राज़ तुम्हें बता सकती हूँ!$h#$b#यहाँ आओ, तुम्हें नक़्शे दिखाती हूँ।"
+        ],
+        [
+          "Learned how to craft 'Flute Block' and 'Drum Block'",
+          "आपने 'बाँसुरी ब्लॉक' और 'ढोल ब्लॉक' बनाना सीखा"
+        ],
+        [
+          "You can use these to get creative on your farm. #$b#It feels good to be able to decorate your house with things you've made yourself!$h",
+          "इनसे फ़ार्म पर रचनात्मकता दिखाई जा सकती है। #$b#अपनी बनाई चीज़ों से घर सजाना बहुत अच्छा लगता है!$h"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "2118991/e 3910975/t 600 800",
+      "replacements": [
+        [
+          "Hey...",
+          "सुनो..."
+        ],
+        [
+          "Oh man... Uh... How do I say this?$s#$b#I'm really sorry about what happened at the cliffs. That was... embarrassing...",
+          "ओह यार... उह... यह कैसे कहूँ?$s#$b#चट्टानों पर जो हुआ उसके लिए सच में माफ़ी चाहता हूँ। वह... शर्मनाक था..."
+        ],
+        [
+          "$q -1 null#  #$r -1 10 event_apologize1#I'm glad I was there to help.#$r -1 -10 event_apologize2#You needed a serious wake-up call.#$r -1 10 event_apologize3#I'm just happy you're still here.",
+          "$q -1 null#  #$r -1 10 event_apologize1#ख़ुशी है कि मदद के लिए मैं वहाँ था।#$r -1 -10 event_apologize2#तुम्हें सच में होश में लाने वाला झटका चाहिए था।#$r -1 10 event_apologize3#बस ख़ुशी है कि तुम अब भी यहाँ हो।"
+        ],
+        [
+          "I've decided I want to see a therapist. Harvey got me in touch with a colleague of his...$s",
+          "मैंने तय किया है कि किसी मनोचिकित्सक से मिलना चाहता हूँ। हार्वी ने अपने एक सहकर्मी से मेरी बात करवाई है...$s"
+        ],
+        [
+          "Anyway... I just wanted to thank you for taking care of me. And I want you to know that I'm going to take things a little more seriously from now on.#$b#I don't want to be a burden on anyone...",
+          "वैसे... बस मेरा ख़याल रखने के लिए धन्यवाद कहना चाहता था। और तुम्हें बताना चाहता हूँ कि अब से चीज़ों को थोड़ा ज़्यादा गंभीरता से लूँगा।#$b#मैं किसी पर बोझ नहीं बनना चाहता..."
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "3917587/f Alex 3500/O Alex/t 500 820/M 5000/d Sun/y 2",
+      "replacements": [
+        [
+          "Hey, @. Before you head out...#$b#I hate to ask this... but can I have 5,000g?#$b#It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway.",
+          "सुनो, @। बाहर निकलने से पहले...#$b#यह माँगना अच्छा नहीं लग रहा... मगर क्या मुझे 5,000g मिल सकते हैं?#$b#यह मेरी एक गुप्त परियोजना के लिए है... जानता हूँ हमारा बैंक खाता साझा है, मगर फिर भी पूछना ठीक लगा।"
+        ],
+        [
+          "Give Alex 5,000g for his secret project?#Yes#No",
+          "एलेक्स को उसकी गुप्त परियोजना के लिए 5,000g दें?#हाँ#नहीं"
+        ],
+        [
+          "Really? You won't spare a measly 5,000g to make me happy?$a#$b#I didn't know you were such a cheapskate...$s",
+          "सच में? मेरी ख़ुशी के लिए मामूली-से 5,000g भी नहीं मिलेंगे?$a#$b#मुझे नहीं पता था कि तुममें इतनी कंजूसी है...$s"
+        ],
+        [
+          "I just wanted to have a little fun...$s",
+          "मैं तो बस थोड़ा मज़ा करना चाहता था...$s"
+        ],
+        [
+          "I don't want to talk to you right now...$s",
+          "अभी तुमसे बात नहीं करनी...$s"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "3917584/f Shane 3500/O Shane/d Fri/t 800 1700",
+      "replacements": [
+        [
+          "Phew... that was fun.$h#$b#Haven't had a session like that in a while... *urp*",
+          "फू... बड़ा मज़ा आया।$h#$b#काफ़ी समय से ऐसा सत्र नहीं हुआ था... *डकार*"
+        ],
+        [
+          "Welp... I'm all sweaty. Better head back home.",
+          "ख़ैर... मैं पसीने से तर हूँ। बेहतर होगा घर लौट जाऊँ।"
+        ],
+        [
+          "Oh no... this doesn't look good.$s",
+          "अरे नहीं... यह ठीक नहीं लग रहा।$s"
+        ],
+        [
+          "@? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something...$s",
+          "@? उस पर नज़र रखना बेहतर होगा... अगली बार उसे सैलून से निकलते देखो तो कुछ कहना...$s"
+        ],
+        [
+          "Is everything alright, @? You seem worried...",
+          "सब ठीक है, @? तुम्हारे चेहरे पर चिंता दिख रही है..."
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Mine",
+      "key": "100162/t 600 2600",
+      "replacements": [
+        [
+          "Hmmm... ",
+          "हम्म्म... "
+        ],
+        [
+          "...I was just peering down into this old mine shaft.#$b#It's been abandoned for decades.",
+          "...मैं बस इस पुराने खदान-कूप में नीचे झाँक रहा था।#$b#यह दशकों से वीरान पड़ा है।"
+        ],
+        [
+          "Still, there's probably good ore down there.#$b#But a dark place, undisturbed for so long... I'm afraid ore isn't the only thing you'll find...",
+          "फिर भी नीचे शायद अच्छा अयस्क होगा।#$b#मगर इतनी लंबी अवधि से अछूती अँधेरी जगह में... डर है कि अयस्क ही इकलौती चीज़ नहीं मिलेगी..."
+        ],
+        [
+          "Here, take this. You might need it.",
+          "यह लो। शायद इसकी ज़रूरत पड़े।"
+        ],
+        [
+          "Name's Marlon, by the way. I run the adventurer's guild right outside.#$b#I'll keep my eye on you. Prove yourself and I might think about making you a member.",
+          "वैसे नाम मार्लन है। ठीक बाहर साहसी संघ चलाता हूँ।#$b#तुम पर मेरी नज़र रहेगी। अपनी योग्यता साबित करो, फिर शायद तुम्हें सदस्य बनाने पर विचार करूँगा।"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "8675611/e 6184643/O Haley/A haleyCakewalk1/t 620 1700/p Haley",
+      "replacements": [
+        [
+          "Hi, honey.#$b#Hey... I have an idea... I want to get everyone together for a charity cake-walk.",
+          "नमस्ते, जान।#$b#सुनो... मेरे पास एक विचार है... मैं धर्मार्थ केक-वॉक के लिए सबको इकट्ठा करना चाहती हूँ।"
+        ],
+        [
+          "Uh... It's kind of like musical chairs, but everyone wins and gets cake! You'll see...$h#$b#It'll be on the next sunny day in the town square.#$b#Um... would you mind bringing a chocolate cake?",
+          "उह... यह कुछ म्यूज़िकल चेयर्स जैसा है, मगर हर कोई जीतता है और सबको केक मिलता है! देख लेना...$h#$b#यह अगले धूप वाले दिन नगर चौक में होगा।#$b#उम्म... क्या चॉकलेट केक लाना संभव होगा?"
+        ],
+        [
+          "Do you agree to bring chocolate cake?#Yes#Yes (begrudgingly)",
+          "क्या चॉकलेट केक लाना मंज़ूर है?#हाँ#हाँ (अनमने ढंग से)"
+        ],
+        [
+          "Great! I'll meet you in the town square tomorrow, weather permitting.$h",
+          "बढ़िया! मौसम ने साथ दिया तो कल नगर चौक में मिलूँगी।$h"
+        ],
+        [
+          "What's up with the snarky attitude?$3#$b#Fine. You're going to show up tomorrow with a chocolate cake, or else you're in the dog house. You like that better?$3",
+          "यह ताना मारने वाला रवैया क्यों?$3#$b#ठीक है। कल चॉकलेट केक लेकर पहुँचना होगा, वरना तुम्हारी ख़ैर नहीं। अब बेहतर लगा?$3"
+        ],
+        [
+          "I'm bringing a pink cake.",
+          "मैं गुलाबी केक ला रही हूँ।"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "12/f Haley 1000/p Haley",
+      "replacements": [
+        [
+          "Nnnnnghhh... I just can't get this jar open!$a#$b#...$s",
+          "न्न्न्ग्ह्ह... यह मर्तबान मुझसे खुल ही नहीं रहा!$a#$b#...$s"
+        ],
+        [
+          "Oh! It's you...@, right?",
+          "ओह! तुम हो... @, है न?"
+        ],
+        [
+          "$q 47 null#Say... you're pretty strong, aren't you?#$r 47 30 Event_jar1#Yes#$r 47 -30 Event_jar2#No",
+          "$q 47 null#अच्छा... तुम काफ़ी ताक़तवर हो, है न?#$r 47 30 Event_jar1#हाँ#$r 47 -30 Event_jar2#नहीं"
+        ],
+        [
+          "Hey, you did it! You're stronger than you look!$h",
+          "अरे, खुल गया! जितना दिखता है उससे कहीं ज़्यादा दम है!$h"
+        ],
+        [
+          "Thanks!$h",
+          "धन्यवाद!$h"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "3918600/f Sam 3500/O Sam/t 610 1700/p Sam/L",
+      "replacements": [
+        [
+          "Oh, hey @. You look like you've been working hard out there!",
+          "ओह, सुनो @। लगता है बाहर खूब मेहनत हुई है!"
+        ],
+        [
+          "Hey, I was just thinking...$s#$b#You know, I really like living here with you. I mean... I love it!#$b#But, I feel like I've gotten really lazy. I just bum around aimlessly every day.$s",
+          "सुनो, मैं बस सोच रहा था...$s#$b#पता है, मुझे तुम्हारे साथ यहाँ रहना सच में पसंद है। मतलब... बहुत पसंद है!#$b#मगर लगता है मैं बहुत आलसी हो गया हूँ। हर दिन बस बेकार इधर-उधर घूमता हूँ।$s"
+        ],
+        [
+          "Oh, I know you don't mind! You make enough money on the farm that I don't really need to work, and I really appreciate that!#$b#But I want to feel like I'm contributing to something... know what I mean?",
+          "ओह, जानता हूँ तुम्हें कोई आपत्ति नहीं! फ़ार्म पर इतने पैसे बन जाते हैं कि मुझे सच में काम करने की ज़रूरत नहीं और मैं इसकी बहुत क़द्र करता हूँ!#$b#मगर मैं महसूस करना चाहता हूँ कि किसी चीज़ में मेरा भी योगदान है... बात समझ आई?"
+        ],
+        [
+          "So... I think I'm gonna try to find some work... something to do with music.#$b#That's always been what I love the most!$h#$b#Oh, uh... besides you, of course!$8#$b#Heh...$10",
+          "तो... लगता है मैं कोई काम ढूँढ़ने की कोशिश करूँगा... संगीत से जुड़ा कोई काम।#$b#मुझे हमेशा से वही सबसे ज़्यादा पसंद रहा है!$h#$b#ओह, उह... बेशक तुम्हारे अलावा!$8#$b#हेह...$10"
+        ],
+        [
+          "Anyway... I'll let you know how it goes!",
+          "वैसे... जो होगा तुम्हें बताऊँगा!"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "itsagift",
+      "replacements": [
+        [
+          "Then... I'll just have to swallow my pride...",
+          "तो... मुझे अपना अभिमान निगलना ही होगा..."
+        ],
+        [
+          "*ahem*... Thank you, @.$s",
+          "*खँखारती है*... धन्यवाद, @।$s"
+        ],
+        [
+          "Mom...$s",
+          "माँ...$s"
+        ],
+        [
+          "Don't worry... @ just wants to make us happy. No one in Pelican Town looks down on us for being poor.$s",
+          "चिंता मत करो... @ की इच्छा बस हमें ख़ुश देखने की है। ग़रीब होने के कारण पेलिकन टाउन में कोई हमें नीची नज़र से नहीं देखता।$s"
+        ],
+        [
+          "...We aren't 'poor' anymore, kid... put that thought out of your mind!#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...",
+          "...अब हम 'ग़रीब' नहीं हैं, बच्चे... यह बात मन से निकाल दो!#$b#अब से हम एक असली परिवार की तरह रहेंगे... समझ आई?#$b#अब मैं हर समय इतनी कड़वाहट में नहीं रहना चाहती...$s#$b#मैं अपना जीवन बदलने की कोशिश करूँगी..."
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "itsagift_pennySpouse",
+      "replacements": [
+        [
+          "Then... I'll just have to swallow my pride...",
+          "तो... मुझे अपना अभिमान निगलना ही होगा..."
+        ],
+        [
+          "*ahem*... Thank you, @.$s",
+          "*खँखारती है*... धन्यवाद, @।$s"
+        ],
+        [
+          "Mom...$s",
+          "माँ...$s"
+        ],
+        [
+          "Don't worry, Mom... we just want to make you happy. No one in Pelican Town looks down on us for being poor.$s",
+          "चिंता मत करो, माँ... हम बस तुम्हें ख़ुश देखना चाहते हैं। ग़रीब होने के कारण पेलिकन टाउन में कोई हमें नीची नज़र से नहीं देखता।$s"
+        ],
+        [
+          "...I ain't 'poor' anymore, kid... put that thought out of your mind!#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...",
+          "...अब मैं 'ग़रीब' नहीं हूँ, बच्चे... यह बात मन से निकाल दो!#$b#अब से हम एक असली परिवार की तरह रहेंगे... समझ आई?#$b#अब मैं हर समय इतनी कड़वाहट में नहीं रहना चाहती...$s#$b#मैं अपना जीवन बदलने की कोशिश करूँगी..."
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "502261/J/w sunny/H",
+      "replacements": [
+        [
+          "There he is, everyone! Look sharp!^There she is, everyone! Look sharp!",
+          "वह रहा, सभी लोग! चुस्त दिखो!^वह रही, सभी लोग! चुस्त दिखो!"
+        ],
+        [
+          "*Ahem*...",
+          "*खँखारता है*..."
+        ],
+        [
+          "Just a few short years ago, the great innovators at Joja Headquarters came up with a new idea, the Joja Community Development Project.#$b#The project was conceived as a way to provide important construction services to the beloved communities we hold so dear...*sniff*... all while generating substantial revenue!#$b#Pelican Town, with its run-down infrastructure, was a perfect testing ground.",
+          "कुछ ही साल पहले जोजा मुख्यालय के महान नवाचारकों को एक नया विचार आया—जोजा सामुदायिक विकास परियोजना।#$b#यह परियोजना उन प्यारे समुदायों को महत्त्वपूर्ण निर्माण सेवाएँ देने के तरीक़े के रूप में बनाई गई, जो हमें इतने प्रिय हैं... *सूँघता है*... और साथ ही भारी आमदनी भी पैदा करती है!#$b#जर्जर बुनियादी ढाँचे वाला पेलिकन टाउन इसका आदर्श परीक्षण-स्थल था।"
+        ],
+        [
+          "Well, thanks to you, our Community Development Pilot Program has been a major success!#$b#From repairing old bridges, to fixing buses, to turning piles of rubble into a greenhouse, we've really turned this city around!#$b#I've also received a big promotion! Hehehe.",
+          "ख़ैर, तुम्हारी बदौलत हमारा सामुदायिक विकास प्रायोगिक कार्यक्रम बड़ी सफलता रहा!#$b#पुराने पुलों की मरम्मत और बसों को ठीक करने से लेकर मलबे के ढेर को ग्रीनहाउस में बदलने तक, हमने सच में इस नगर की दशा बदल दी!#$b#मुझे बड़ी पदोन्नति भी मिली है! हेहेहे।"
+        ],
+        [
+          "The president of the company asked me to give you this exclusive gift as a way of saying 'thanks'.",
+          "कंपनी के अध्यक्ष ने 'धन्यवाद' के रूप में तुम्हें यह विशेष उपहार देने को कहा है।"
+        ]
+      ]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "fieldTripEnd",
+      "replacements": [
+        [
+          "Well, that's probably enough for today. You two run along and play.",
+          "ख़ैर, आज के लिए शायद इतना काफ़ी है। तुम दोनों जाओ, खेलो।"
+        ],
+        [
+          "It's a lot of work to take care of these kids...$u#$b#But I don't really mind. I enjoy seeing them learn... and hopefully I can help them grow up to be good people.",
+          "इन बच्चों की देखभाल में बहुत मेहनत लगती है...$u#$b#मगर मुझे सच में कोई आपत्ति नहीं। उन्हें सीखते देखना अच्छा लगता है... और आशा है उन्हें अच्छा इंसान बनने में मदद कर सकूँगी।"
+        ],
+        [
+          "$q -1 null#Would you ever want to be a parent, @?#$r -1 0 event_speaker_kids1#I haven't really thought about it.#$r -1 20 event_speaker_kids2#Absolutely. I want a big family.#$r -1 20 event_speaker_kids3#I guess so. It's a natural urge.#$r -1 10 event_speaker_kids4#No, I don't think I'd be good at it.#$r -1 -10 event_speaker_kids5#No, the world's crowded enough already.#$r -1 -10 event_speaker_kids6#No, I don't want to be tied down with a family.",
+          "$q -1 null#क्या कभी माता-पिता बनने की इच्छा होगी, @?#$r -1 0 event_speaker_kids1#मैंने सच में इसके बारे में नहीं सोचा।#$r -1 20 event_speaker_kids2#बिल्कुल। मुझे बड़ा परिवार चाहिए।#$r -1 20 event_speaker_kids3#शायद। यह स्वाभाविक इच्छा है।#$r -1 10 event_speaker_kids4#नहीं, शायद मुझसे यह अच्छी तरह न हो पाए।#$r -1 -10 event_speaker_kids5#नहीं, दुनिया में पहले ही काफ़ी भीड़ है।#$r -1 -10 event_speaker_kids6#नहीं, परिवार के बंधन में रहने की इच्छा नहीं है।"
+        ],
+        [
+          "Well, I'm glad you showed up, @. I think the kids had a great time.$h",
+          "ख़ैर, तुम्हारे आने की ख़ुशी है, @। लगता है बच्चों ने खूब मज़े किए।$h"
+        ],
+        [
+          "Thanks for making my field trip a success today.",
+          "आज मेरी शैक्षिक यात्रा को सफल बनाने के लिए धन्यवाद।"
+        ]
+      ]
+    }
+  ]
+}

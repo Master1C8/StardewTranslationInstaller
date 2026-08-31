@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HaleyHouse",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "11/f Haley 500/p Haley/p Emily": "50s/6 20/farmer -10 -10 0 Haley 5 20 1 Emily 8 20 3/skippable/pause 1000/shake Haley 500/pause 500/speak Haley \"اُرغ! همیشه من زیر کوسن‌ها را تمیز می‌کنم! این هفته نوبت *تو* است!$a\"/emote Emily 12/speak Emily \"بچه‌گانه رفتار می‌کنی، هیلی. بیشتر کارهای این خانه را من انجام می‌دهم و خودت هم می‌دانی.$u\"/pause 200/warp farmer 2 24/playSound doorClose/pause 400/faceDirection Haley 2/faceDirection Emily 2/speak Haley \"اوه، همان ${پسر مزرعه^دختر تازهٔ مزرعه}$ است.$7\"/faceDirection Emily 3/speak Emily \"${او^او}$ اسم دارد، می‌دانی.$u\"/move farmer 0 -1 1/move farmer 3 0 0/faceDirection Emily 2/speak Haley \"هی، شرط می‌بندم اینجا دیدگاه مرا درک می‌کنی.\"/emote farmer 8/speak Emily \"*آه*... واقعاً ببخشید که تو را درگیر می‌کنم، @. هیلی چون از او خواستم زیر کوسن‌ها را تمیز کند شکایت می‌کند.$u\"/faceDirection Haley 1/speak Haley \"$q 45 null#فقط چون هفتهٔ پیش من تمیزشان کردم!$a#$r 46 -50 Event_clean2#غرزدن را بس کن و تمیزش کن!#$r 45 30 Event_clean1#هیلی، چرا این تنها کار هفتگی‌ات نباشد؟#$r 46 -30 Event_clean3#امیلی، بزرگوار باش و این بار خودت انجامش بده.\"/fork haleyWontDoIt/stopMusic/faceDirection Haley 3/emote Haley 12/pause 400/faceDirection Haley 1/speak Haley \"باشد، تو بردی. فکر کنم می‌تواند هر هفته کار من باشد. آن‌وقت دیگر دلیلی برای بحث بر سرش نیست.$u\"/faceDirection Haley 2/speak Emily \"ممنون، @. راه‌حل خیلی خوبی بود.$h\"/pause 1000/end",
+        "haleyWontDoIt": "move Haley -2 0 0/move Haley 0 -2 0/emote Haley 12/faceDirection Emily 1/emote Emily 28/speak Emily \"*آه*... پس فکر کنم خودم انجامش بدهم...$s\"/pause 1000/end"
+      }
+    }
+  ]
+}

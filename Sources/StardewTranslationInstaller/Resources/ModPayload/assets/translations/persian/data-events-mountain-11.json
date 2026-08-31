@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "9333219/O Sebastian/f Sebastian 3500/w rainy/t 600 1900": "rain/48 36/farmer 49 31 2 Sebastian 50 36 3/makeInvisible 44 31 5 5/addConversationTopic sebastianFrog 0/skippable/move farmer 0 4 2/faceDirection Sebastian 0/speak Sebastian \"هی @... خوشحالم آمدی.\"/emote farmer 8/faceDirection Sebastian 3/speak Sebastian \"یک قورباغهٔ زخمی در آن بوته است... باید نجاتش بدهم!\"/emote farmer 28/faceDirection Sebastian 0/speak Sebastian \"کمکت را لازم دارم. برو کنار بوته و سعی کن وادارش کنی به‌سمت من بیاید. اینجا منتظر می‌مانم و می‌گیرمش.\"/pause 500/faceDirection Sebastian 3/move farmer -5 0 2/pause 500/showFrame Sebastian 54/playSound grassyStep/pause 500/speak Sebastian \"خب... آماده‌ای؟\"/emote farmer 56/textAboveHead Sebastian \"حالا!\"/pause 500/doAction 44 36/pause 1000/doAction 44 36/pause 1000/doAction 44 36/playSound croak/specificTemporarySprite sebastianFrog/pause 10000/playSound coin/showFrame Sebastian 55/jump Sebastian/textAboveHead Sebastian \"گرفتمش!\"/move farmer 5 0 2/move farmer 0 1 1/speak Sebastian \"بیچارهٔ کوچولو... پایش کاملاً آسیب دیده. $s\"/emote farmer 28/quickQuestion #با او چه کار کنیم؟#پسر جدید ماست...#فکر نکنم زنده بماند#کمکش کنیم دوباره سالم شود!(break)speak Sebastian \"فعلاً او را به خانه می‌برم و راحتش می‌کنم.#$b#فکر کنم کمی دربارهٔ مراقبت از قورباغه‌ها پژوهش کنم. شاید مارنی چیزی بداند.\"(break)speak Sebastian \"ها... بله، فکر کنم.$h#$b#قطعاً بینی‌اش به تو رفته...$7\"\\faceDirection farmer 2 true\\jump farmer\\showFrame farmer 94\\startJittering(break)emote Sebastian 12\\speak Sebastian \"خب، ببخشید اگر حرفت را قبول نمی‌کنم... به این بیچاره یک فرصت می‌دهم.\"(break)speak Sebastian \"تمام تلاشمان را می‌کنیم. اما هنوز زیادی وابسته نشو...\"/pause 300/stopJittering/stopAnimation farmer/faceDirection farmer 1/pause 500/speak Sebastian \"او را به خانه ببریم.\"/pause 500/playSound croak/pause 2000/end"
+      }
+    }
+  ]
+}

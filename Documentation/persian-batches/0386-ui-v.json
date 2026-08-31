@@ -1,0 +1,50 @@
+{
+  "id": "0386-ui-v",
+  "reviewedAt": "2026-08-28",
+  "replaceReviewed": true,
+  "simpleTarget": {
+    "target": "Strings/UI",
+    "entries": {
+      "Client_WaitForHostLoad": ["Waiting for the host to finish setting up...", "در انتظار پایان آماده‌سازی میزبان..."],
+      "FruitTree_Warning": ["Your {0} tree wasn't able to grow last night.", "درخت {0} تو دیشب نتوانست رشد کند."],
+      "Workbench_Chest_Warning": ["One of the chests near the workbench is in use.", "یکی از صندوق‌های نزدیک میز کار در حال استفاده است."],
+      "Profile_GiftLog": ["Gift Log", "دفتر هدایا"],
+      "Profile_GiftLog_NoGiftsGiven": ["You haven't given any gifts of this kind.", "هیچ هدیه‌ای از این نوع نداده‌ای."],
+      "Profile_Status": ["Status", "وضعیت"],
+      "Profile_Birthday": ["Birthday", "زادروز"],
+      "Profile_Gift_Loved": ["Loved Gifts", "هدیه‌های محبوب"],
+      "Profile_Gift_Liked": ["Liked Gifts", "هدیه‌های پسندیده"],
+      "Profile_Gift_Neutral": ["Normal Gifts", "هدیه‌های معمولی"],
+      "Profile_Gift_Disliked": ["Disliked Gifts", "هدیه‌های ناپسند"],
+      "Profile_Gift_Hated": ["Hated Gifts", "هدیه‌های منفور"],
+      "Profile_Gift_Category_LikedGifts": ["{0}'s Favorites", "علاقه‌مندی‌های {0}"],
+      "Profile_Gift_Category_FruitsAndVegetables": ["Fruits & Vegetables", "میوه‌ها و سبزیجات"],
+      "Profile_Gift_Category_AnimalProduce": ["Animal Produce", "محصولات حیوانی"],
+      "Profile_Gift_Category_ArtisanItems": ["Artisan Items", "کالاهای صنعتگری"],
+      "Profile_Gift_Category_CookedItems": ["Cooked Items", "غذاهای پخته‌شده"],
+      "Profile_Gift_Category_ForagedItems": ["Flowers & Foraged Items", "گل‌ها و یافته‌های طبیعی"],
+      "Profile_Gift_Category_Fish": ["Fish", "ماهی‌ها"],
+      "Profile_Gift_Category_Ingredients": ["Ingredients", "مواد اولیه"],
+      "Profile_Gift_Category_MineralsAndGems": ["Metals, Minerals & Gems", "فلزها، کانی‌ها و گوهرها"],
+      "Profile_Gift_Category_Misc": ["Miscellaneous", "متفرقه"],
+      "Mini_JukeBox_Off": ["Off", "خاموش"],
+      "Mini_JukeBox_NotFarmPlay": ["The Mini-Jukebox can only be played on your farm!", "جوک‌باکس کوچک فقط در مزرعه‌ات پخش می‌شود!"],
+      "Mini_JukeBox_OutdoorRainy": ["The Mini-Jukebox cannot be played in the rain!", "جوک‌باکس کوچک در باران پخش نمی‌شود!"],
+      "Tailor_MissingIngredients": ["Place cloth or dyeable clothing in the feed and materials in the spool to begin tailoring.", "برای آغاز خیاطی، پارچه یا لباس رنگ‌پذیر را در ورودی و مواد را در قرقره بگذار."],
+      "Tailor_Busy": ["Now tailoring...", "در حال خیاطی..."],
+      "Tailor_Valid": ["Press the power button to begin tailoring!", "برای آغاز خیاطی دکمهٔ نیرو را فشار بده!"],
+      "Tailor_InvalidRecipe": ["The current materials cannot be used to tailor an item!", "با مواد فعلی نمی‌توان چیزی دوخت!"],
+      "Tailor_NotDyeable": ["The clothing item in the feed is not dyeable!", "لباس داخل ورودی رنگ‌پذیر نیست!"],
+      "Tailor_MakeResult": ["You'll Make:", "خواهی ساخت:"],
+      "Tailor_Feed": ["Feed", "ورودی"],
+      "Tailor_Spool": ["Spool", "قرقره"],
+      "Clothes_Dyeable": ["Dyeable.", "رنگ‌پذیر."],
+      "DyePot_Help": ["Place an item of each color into the dye pots in order to dye any dyeable clothes you're wearing.", "برای رنگ کردن لباس رنگ‌پذیری که پوشیده‌ای، یک شیء از هر رنگ در دیگ‌های رنگ بگذار."]
+    }
+  },
+  "simplePreserved": {
+    "target": "Strings/UI",
+    "reason": "The unknown tailoring-result label is intentionally only question-mark punctuation and contains no lexical content to translate.",
+    "keys": ["Tailor_MakeResultUnknown"]
+  }
+}

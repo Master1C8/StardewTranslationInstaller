@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "enterRobin": "pause 500/playSound mouseClick/pause 100/playSound mouseClick/pause 500/playSound Pickup_Coin15/pause 300/emote Sebastian 40/speak Sebastian \"آن پیام فوری از سم بود... انگار می‌خواهد با هم وقت بگذرانیم...#$b#اوه، امروز واقعاً حوصلهٔ بیرون‌رفتن ندارم.$u\"/pause 500/playSound doorClose/warp Robin 1 1/move Robin 0 4 1/speak Robin \"اوه، سلام @.\"/faceDirection farmer 3/move Robin 4 0 1/speak Robin \"سبی، می‌دانم دوست نداری بیایم اینجا... اما در فروشگاه ابیگیل را دیدم و گفت دنبالت می‌گردد.\"/pause 200/emote Sebastian 28/speak Sebastian \"به او گفتی دارم کار می‌کنم؟\"/speak Robin \"گفتم... اما گفت احتمالاً بااین‌حال سری می‌زند.\"/emote Sebastian 12/speak Sebastian \"*آه*... هیچ‌کس کارم را جدی نمی‌گیرد.$u#$b#هیچ‌کس وقتی مارو در درمانگاه کار می‌کند مزاحمش نمی‌شود... همه فکر می‌کنند من تمام روز فقط در وب می‌چرخم؟\"/faceDirection farmer 0 true/move Robin -4 0 0/move Robin 0 -4 0/warp Robin -100 -100/playSound doorClose/pause 500/faceDirection farmer 0/resetVariable/question fork1 \"#دربارهٔ هدف‌های شغلی‌اش بپرس.#بپرس چرا نمی‌خواهد دوستانش را ببیند.\"/fork noFriends/pause 500/speak Sebastian \"خب، دارم پس‌انداز می‌کنم تا بتوانم از اینجا بروم. احتمالاً به شهر بزرگ یا جایی شبیه آن.\"/emote Sebastian 40/speak Sebastian \"می‌دانی، اگر به دانشگاه رفته بودم احتمالاً حالا درآمد شش‌رقمی داشتم... اما نمی‌خواهم بخشی از آن رقابت فرسایندهٔ شرکتی باشم، می‌فهمی؟#$b#خب، و فکر کنم پشت رایانه پنهان‌شدن برایم راحت‌تر از روبه‌روشدن مستقیم با آدم‌هاست.$s\"/emote Sebastian 28/pause 600/playSound mouseClick/pause 100/playSound mouseClick/pause 300/speak Sebastian \"خب، باید برگردم سر کار... باید این ماژول را تا فردا تمام کنم.\"/animate Sebastian false true 100 24 24 24 24 24 24 24 24 24 24 25 26 27 26 27 26 27 26 25 24 24/playSound keyboardTyping/pause 500/move farmer 0 2 3/move farmer -3 0 0/move farmer 0 -2 3/move farmer -5 0 0 true/globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "5183338/e 3917666/O Maru/w sunny/t 2200 2500": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/changeToTemporaryMap NightSceneMaruMap2 false/bgColor 0 0 0/ambientLight 0 0 0/viewport 14 25 true clamp/pause 1000/move farmer -8 0 3/faceDirection Maru 1/pause 800/showFrame Maru 32/pause 700/showFrame Maru 4/speak Maru \"مرحبًا يا @. وصلت في الوقت المناسب تمامًا... المذنب على وشك الظهور.\"/pause 500/faceDirection Maru 2/pause 1000/faceDirection farmer 2/pause 1000/speak Maru \"إنها ليلة جميلة، أليس كذلك؟\"/pause 2000/faceDirection Maru 1/faceDirection farmer 3/pause 1000/speak Maru \"أتذكر المرة الأولى التي فعلنا فيها هذا؟ لقد مضى عليها وقت...\"/faceDirection Maru 2/speak Maru \"كدت أبوح بمشاعري الحقيقية تلك الليلة... لكنني خشيت أن ترفضني.\"/faceDirection Maru 1/speak Maru \"من كان يعلم أننا سنتزوج بعد ذلك بوقت قصير!$h\"/pause 500/emote farmer 20/pause 500/jump Maru/pause 400/speak Maru \"أوه! حان الوقت...\"/faceDirection Maru 3/faceDirection farmer 3 true/showFrame Maru 28/emote Maru 40/pause 1000/textAboveHead Maru \"رائع!\"/pause 3000/showFrame Maru 12/move Maru 0 1 0/speak Maru \"انظر!\"/pause 500/move farmer -1 0 3/pause 1000/animate farmer true true 100 35/pause 1000/fade/viewport -1000 -1000/pause 1000/playMusic spaceMusic/warp Maru 15 29/faceDirection Maru 3/cutscene marucomet/pause 1000/viewport 14 25 true clamp/pause 3000/stopAnimation farmer/pause 1000/faceDirection farmer 1/pause 500/speak Maru \"جرت العادة أن يتمنى المرء أمنية بعد رؤية مذنب...\"/pause 500/quickQuestion ماذا ستتمنى؟#طفلًا جديدًا#أن نهرم معًا#مزيدًا من المال(break)jump Maru\\pause 500\\speak Maru \"أوه! يمكننا أن نحاول بالتأكيد...$l\"\\emote Maru 20(break)emote Maru 20\\speak Maru \"هذه... أمنية رقيقة حقًا!$l#$b#لدي الأمنية نفسها.$l\"(break)speak Maru \"المال؟ أوه...$s#$b#حسنًا، أظن أن ذلك سيكون عمليًا...$8\"\\emote Maru 28\\speak Maru \"أمنيتي أكثر رومانسية بقليل...\"/pause 2000/animate Maru false true 100 28/animate farmer false true 100 101/positionOffset farmer 16 0/specificTemporarySprite heart 15 29/pause 2000/specificTemporarySprite maruTelescope/viewport move 0 -1 13000/pause 16000/fade/viewport -1000 -1000/pause 3000/end newDay"
+      }
+    }
+  ]
+}

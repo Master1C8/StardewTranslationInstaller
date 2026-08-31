@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "288847/f Alex 2000/p Alex/w sunny/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-100 -100/farmer 52 13 2 Alex 53 24 2/showFrame Alex 38/skippable/viewport 53 24 true/pause 2000/speak Alex \"*يشهق*...$s\"/move farmer 0 11 2/pause 1000/showFrame Alex 36/pause 500/showFrame Alex 37/pause 500/speak Alex \"أوه... يا @. لقد رأيتني أبكي.$s\"/pause 500/showFrame Alex 36/pause 1000/showFrame 95/pause 2000/speak Alex \"في مثل هذا اليوم قبل اثني عشر عامًا... ماتت أمي.$9\"/pause 1000/speak Alex \"ما زلت أذكرها جيدًا... كانت تعد شطائر الفجل المملح للغداء... وتلعب معي بالغريدبول في الفناء الخلفي.$9#$b#اعتنت بي عناية فائقة... وكنت أصغر من أن أقول لها «شكرًا» بحق. أما الآن فقد رحلت إلى الأبد.$9\"/pause 1000/showFrame Alex 38/pause 1000/speak Alex \"هذا هو التذكار الوحيد الذي بقي لي منها... صندوق موسيقاها السري.$s\"/pause 1000/playSound openBox/showFrame Alex 35/pause 500/playMusic tinymusicbox/pause 10000/specificTemporarySprite JoshMom/pause 20000/playMusic ocean/pause 900/showFrame Alex 37/pause 900/showFrame Alex 36/pause 800/speak Alex \"$q -1 null#إذن... فيم تفكر الآن يا @؟$9#$r -1 0 event_box1#كرّم ذكرى أمك ببذل قصارى جهدك دائمًا.#$r -1 0 event_box2#ينبغي ألا تظل أسير الماضي.#$r -1 0 event_box3#سأكون دائمًا إلى جانبك إن شعرت بالوحدة.#$r -1 0 event_box4#تجاوز الأمر. فالحياة قاسية على الجميع.\"/pause 1000/showFrame Alex 36/pause 1000/speak Alex \"حسنًا، لا جدوى من الجلوس هنا والبكاء... لنعد إلى البلدة.$9\"/showFrame Alex 0/stopAnimation farmer/move Alex 0 -2 0 true/move farmer 0 -2 0 false/pause 1000/faceDirection Alex 3/pause 800/speak Alex \"أمم... يا @؟$9\"/pause 800/faceDirection farmer 1/pause 500/speak Alex \"لا تخبر أحدًا أنني كنت أبكي. اتفقنا؟$7\"/pause 500/faceDirection farmer 2/animate farmer false true 100 102 103/pause 100/jump Alex/pause 1500/stopAnimation farmer/move farmer 0 -8 0 true/faceDirection Alex 0/emote Alex 16/speak Alex \"مهلًا!$7\"/move Alex 0 -8 0 true/globalFade/viewport -1000 -1000/end"
+      }
+    }
+  ]
+}

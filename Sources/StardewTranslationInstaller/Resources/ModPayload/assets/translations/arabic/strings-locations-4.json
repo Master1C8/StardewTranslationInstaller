@@ -1,0 +1,43 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "IslandNorth_CaveTool_0": "لن ينجح ذلك.",
+        "IslandNorth_CaveTool_1": "إنه أضعف من اللازم.",
+        "IslandNorth_CaveTool_2": "همم...",
+        "IslandNorth_CaveTool_3": "جرّب شيئًا آخر.",
+        "IslandNorth_Event_SafariManAppear": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"شكرًا! ظننت أن أمري انتهى... $h#$b#أنا عالق في هذا الكهف منذ أشهر!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...لو أكلت طبقًا آخر من سلطة فطر الكهف لفقدت صوابي... *ارتجاف* ...إنها مطاطية جدًا...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"على أي حال... أنا الأستاذ سنيل.#$b#أجري منذ عام مسحًا لنباتات هذه الجزيرة وحيواناتها. إنها مكان استثنائي حقًا!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"حسنًا، أظن أنني سأعود إلى خيمتي لأنتعش قليلًا. أخشى أن رائحتي صارت كالفطر...$s#$b#مرحبًا... ينبغي أن تمر بالخيمة يومًا ما! شخص مبادر مثلك قد يكون عونًا كبيرًا في مشروعاتي... هيهي! وداعًا.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48",
+        "IslandFieldOffice_Welcome_0": "تحياتي!",
+        "IslandFieldOffice_Welcome_1": "مرحبًا!",
+        "IslandFieldOffice_Welcome_2": "مرحبًا!",
+        "IslandFieldOffice_Welcome_3": "أهلًا بك!",
+        "IslandFieldOffice_Survey_Yes": "جاهز للإبلاغ",
+        "IslandFieldOffice_Survey_Notyet": "لست جاهزًا",
+        "IslandFieldOffice_Survey_Prompt_LeftPlant": "مسح الجزيرة -- أبلغ عن عدد الزهور الأرجوانية الموجودة على الجزيرة.",
+        "IslandFieldOffice_Survey_PurpleFlower_Question": "كم زهرة أرجوانية توجد على الجزيرة؟",
+        "IslandFieldOffice_Survey_PurpleFlower_Wrong": "همم... هذا الرقم لا يلائم نماذجي إطلاقًا... لعل عليك المحاولة مجددًا غدًا.$s",
+        "IslandFieldOffice_Survey_PurpleFlower_Correct": "نعم، نعم... يبدو ذلك دقيقًا جدًا. شكرًا لك!$h",
+        "IslandFieldOffice_Survey_Prompt_RightPlant": "مسح الجزيرة -- أبلغ عن عدد نجوم البحر الأرجوانية الموجودة على الجزيرة.",
+        "IslandFieldOffice_Survey_PurpleStarfish_Question": "كم نجم بحر أرجوانيًا يوجد على الجزيرة؟",
+        "IslandFieldOffice_Survey_Failed": "همم... أظن أن عليك أخذ استراحة ومحاولة إجراء المسح مجددًا غدًا...",
+        "IslandFieldOffice_Intro_Event": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"آه... تفضل بالدخول!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"مرحبًا بك في مكتبي الميداني.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"كما ترى... إنه فارغ إلى حد بعيد.$s#$b#كان علوقي في ذلك الكهف نكسة هائلة لمشروعي.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"لكن هنا يأتي دورك! هيهي...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"أنا أعمل في مجال العظام، كما ترى...#$b#العظام القديمة تحديدًا... وهذه الجزيرة مملوءة بها.#$b#لذا إن عثرت على أي عظام أو أحافير أو عينات محنطة في هذه الجزيرة، فأحضرها إلى مكتبي، اتفقنا؟ سأكافئك بما يستحق العناء!$h\"/pause 200/faceDirection SafariGuy 1/end",
+        "ScienceHouse_CarpenterMenu_RenovateHouse": "تجديد المنزل",
+        "ScienceHouse_CarpenterMenu_RenovateCabin": "تجديد الكوخ",
+        "ScienceHouse_Renovation_RemoveCrib": "إزالة المهد/يزيل المهد من منزلك./اختر مهدًا لإزالته.",
+        "ScienceHouse_Renovation_BuildCrib": "بناء مهد/يبني مهدًا في منزلك./اختر موقعًا للمهد.",
+        "ScienceHouse_Renovation_OpenBedroom": "فتح غرفة النوم/يزيل الجدار الفاصل بين غرفة نومك وغرفة المدخل./اختر منطقة للتجديد.",
+        "ScienceHouse_Renovation_CloseBedroom": "إغلاق غرفة النوم/يبني جدارًا يفصل غرفة نومك عن غرفة المدخل./اختر منطقة للتجديد.",
+        "ScienceHouse_Renovation_AddSouthernRoom": "إضافة غرفة جنوبية/يضيف غرفة جنوب غرفة نومك./اختر منطقة للتجديد.",
+        "ScienceHouse_Renovation_RemoveSouthernRoom": "إزالة الغرفة الجنوبية/يزيل الغرفة الواقعة جنوب غرفة نومك./اختر منطقة للتجديد.",
+        "ScienceHouse_Renovation_AddCornerRoom": "إضافة غرفة زاوية/يضيف غرفة في الزاوية الشمالية الشرقية من المنزل./اختر منطقة للتجديد.",
+        "ScienceHouse_Renovation_RemoveCornerRoom": "إزالة غرفة الزاوية/يزيل الغرفة الواقعة في الزاوية الشمالية الشرقية من المنزل./اختر منطقة للتجديد.",
+        "Journal_Name": "قصاصة من دفتر اليوميات"
+      }
+    }
+  ]
+}

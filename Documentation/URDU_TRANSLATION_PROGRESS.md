@@ -20,6 +20,9 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 ## Editorial state
 
 - Full initial glossary source-fidelity and Urdu editorial audit: complete (673 / 673)
+- Owner-requested full Urdu editorial rerun completed on 2026-08-30: all 14,720 records re-audited; 237 unique records received objective terminology, grammar, phrasing, consistency, or punctuation corrections through review batches `0474`–`0477`.
+- Consecutive clean full 14,720-record audits after the 2026-08-30 correction set: 2 of 2; each release audit reported 0 errors and 0 warnings.
+- Swift verification for the 2026-08-30 correction set: 8 / 8 tests passed on an isolated clean `HEAD` snapshot with only the Urdu editorial diff applied; failures in the shared Desktop checkout remain attributable to unrelated in-progress locale/interface changes.
 - Clean full glossary audits after the last content correction: 2 of 2
 - Automated glossary audit: 0 errors, 0 warnings
 - Editorial override application: idempotent (identical SHA-256 on consecutive runs)
@@ -61,7 +64,7 @@ Translation and iterative editorial review are complete. The release audit
 proves exactly 463 files, 489 changes, 187 targets, and 14,720 unique records;
 all locale gates are `ur-vnrevival`, with 0 errors and 0 warnings. Reviewed
 coverage includes 13,845 translated records and 875 technically justified
-non-player-facing or internal-identifier records. All 473 review batches passed
+non-player-facing or internal-identifier records. All 477 review batches passed
 an immediate consecutive replay with zero changes; the
 furniture, shirt, large craftable, weapon, hat, shared character-string,
 special-order, engagement, schedule, shared marriage-dialogue, Krobus

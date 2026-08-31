@@ -19,6 +19,7 @@ if len(sys.argv) != 4:
 source_path = Path(sys.argv[1])
 font_path = Path(sys.argv[2])
 output_path = Path(sys.argv[3])
+font_index = int(os.environ.get("VN_FONT_INDEX", "0"))
 
 source = Image.open(source_path).convert("RGBA")
 if source.width < 174 or source.height < 78:
@@ -91,7 +92,7 @@ def render_label(max_width: int = 132, max_height: int = 17) -> Image.Image:
     while True:
         kannada = render_text(
             os.environ.get("VN_LANGUAGE_LABEL", "ಕನ್ನಡ"),
-            ImageFont.truetype(str(font_path), font_size),
+            ImageFont.truetype(str(font_path), font_size, index=font_index),
             font_path,
         )
         latin = render_text("VN", ImageFont.truetype(str(latin_font_path), font_size - 2))

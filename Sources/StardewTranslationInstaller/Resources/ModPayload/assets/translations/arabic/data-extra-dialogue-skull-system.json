@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "SkullCavern_100_event": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"حسنًا، حسنًا، حسنًا... لقد نجحت.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"اقترب الآن... لا تخجل.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"سمعت أنك تحاول التوغل عميقًا في هذه الكهوف اليوم...#$b#كان علي أن أرى ذلك بنفسي!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"مذهل... مذهل جدًا. إن الوصول إلى هذا العمق إنجاز عظيم!#$b#...رغم أنك تجاوزت عددًا كبيرًا من المستويات بتصنيع السلالم. فكرة ذكية بلا شك... لكنها ليست شريفة جدًا.$1#$b#ومع ذلك، لا بد أن تعدين كل ذلك الحجر تطلب عملًا كثيرًا. وهذا النوع من التفاني جدير بالثناء. أنت شخص نادر يا فتى.\"/pause 500/speak MrQi \"والآن... اذهب إلى الطاولة واشرب هذا الحليب الخاص الذي أعددته لك.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"يسمى «حليب أفعى الإيريديوم»... جرعة كبيرة منه ستجعلك أشد قوة.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"مذاقه فظيع، وقوامه أسوأ.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... لكن صحتك ازدادت 25 نقطة بصفة دائمة!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"حظًا موفقًا هناك يا فتى.\"/pause 500/playSound boop/end",
+        "SkullCavern_100_event_honorable": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"حسنًا، حسنًا، حسنًا... لقد نجحت.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"اقترب الآن... لا تخجل.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"سمعت أنك تحاول التوغل عميقًا في هذه الكهوف اليوم...#$b#كان علي أن أرى ذلك بنفسي!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"مذهل... مذهل جدًا. لقد اجتزت اختباري بامتياز يا فتى.#$b#يسرني كثيرًا أنك تحديت نفسك وهبطت بالطريقة الشريفة، بدلًا من تجاوز المستويات كلها بتصنيع السلالم.#$b#يثبت ذلك أنك أهل للمهمة حقًا يا فتى، وأن لديك مبادئ.#$b#فأنت تفهم أهمية تحدي نفسك والالتزام بأعلى المعايير، حتى إن لم يراقبك أحد.#$b#ولهذا أنت مميز يا فتى... أترى؟ أنت تقود بالقدوة. يعجبني ذلك.\"/pause 500/speak MrQi \"والآن... اذهب إلى الطاولة واشرب هذا الحليب الخاص الذي أعددته لك.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"يسمى «حليب أفعى الإيريديوم»... جرعة كبيرة منه ستجعلك أشد قوة.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"مذاقه فظيع، وقوامه أسوأ.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... لكن صحتك ازدادت 25 نقطة بصفة دائمة!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"حظًا موفقًا هناك يا فتى.\"/pause 500/playSound boop/end",
+        "Robin_UpgradeConstruction_Festival": "حسنًا، سأبدأ العمل على تطوير {1} بعد غد. آخذ عطلة في أيام المهرجانات دائمًا.$h",
+        "Robin_UpgradeConstruction": "حسنًا، سأبدأ العمل على تطوير {1} أول شيء صباح الغد!$h",
+        "Robin_NewConstruction_Festival": "حسنًا، سأبدأ العمل على {0} الجديد بعد غد. آخذ عطلة في أيام المهرجانات دائمًا.$h",
+        "Robin_NewConstruction": "حسنًا، سأبدأ العمل على {0} الجديد أول شيء صباح الغد!$h",
+        "Robin_Instant": "هذا {0} مسبق الصنع، لذلك لا يستغرق بناؤه أي وقت! ملائم، أليس كذلك؟$h",
+        "Morris_JojaCDConfirm": "ممتاز! سنكلف عمالنا به الليلة، وينبغي أن يجهز لك بحلول الغد.",
+        "Morris_BuyMovieTheater": "آه، عميلنا المفضل... لدي خبر مثير لك! وافق المقر الرئيسي لشركة جوجا على بناء «فرصة ترفيهية» جديدة لتحل محل مستودع جوجا القريب. لا نحتاج إلا إلى مستثمر يرغب في دعم رؤيتنا! ولذلك أتوجه إليك بطبيعة الحال... عضو جوجا الأشد إخلاصًا وكرمًا.#$b#$q -1 -1#يمكننا تحقيق ذلك باستثمار بسيط قدره... *سعال*... 500,000g...$h#$r -1 -1 Yes#نعم#$r -1 -1 No#لا",
+        "Morris_TheaterBought": "نصف مليون...!$2#$b#*تنحنح*... أعني... ممتاز! سيبدأ فريق جوجا للبناء العمل على المبنى الجديد الليلة! شكرًا لدعم عملنا.",
+        "Morris_NoMoreCD": "آه! عميلي المفضل... للأسف، لا تتوفر لدي حاليًا مشروعات أخرى لتنمية المجتمع."
+      }
+    }
+  ]
+}

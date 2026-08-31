@@ -1,0 +1,51 @@
+{
+  "id": "0367-ui-c",
+  "reviewedAt": "2026-08-30",
+  "simpleTarget": {
+    "target": "Strings/UI",
+    "entries": {
+      "AnimalQuery_Moving_BuildingFull": ["That Building Is Full", "ذلك المبنى ممتلئ"],
+      "AnimalQuery_Moving_AlreadyHome": ["That Is My Home", "ذلك مسكني"],
+      "AnimalQuery_Moving_CantLiveThere": ["{0}s Can't Live There.", "لا يمكن لـ{0} العيش هناك."],
+      "AnimalQuery_Sell": ["Sell for {0}g", "البيع مقابل {0}g"],
+      "AnimalQuery_AllowReproduction": ["Allow Pregnancy", "السماح بالحمل"],
+      "AnimalQuery_Age1": ["Age: 1 month", "العمر: شهر واحد"],
+      "AnimalQuery_AgeN": ["Age: {0} months", "العمر: {0} أشهر"],
+      "AnimalQuery_AgeBaby": [" (Baby)", " (صغير)"],
+      "AnimalQuery_Parent": ["Parent: {0}", "الوالد: {0}"],
+      "AnimalQuery_ConfirmSell": ["Are you sure?", "هل أنت متأكد؟"],
+      "AnimalQuery_ChooseBuilding": ["Please choose a {0} for your {1}", "يرجى اختيار {0} لـ{1}"],
+      "BobberBar_Perfect": ["Perfect!", "مثالي!"],
+      "Carpenter_Upgrade": ["Upgrade from {0}", "الترقية من {0}"],
+      "Carpenter_CantDemolish_DuringConstruction": ["Can't demolish during construction", "لا يمكن الهدم أثناء الإنشاء"],
+      "Carpenter_CantDemolish_AnimalsHere": ["Can't demolish until animals are relocated", "لا يمكن الهدم قبل نقل الحيوانات"],
+      "Carpenter_CantDemolish_PlayerHere": ["Can't demolish while a player is in here", "لا يمكن الهدم ما دام لاعب موجودًا هنا"],
+      "Carpenter_CantDemolish_LockFailed": ["Can't demolish this right now", "لا يمكن هدم هذا الآن"],
+      "Carpenter_CantUpgrade_BuildingType": ["Incorrect Building Type", "نوع المبنى غير صحيح"],
+      "Carpenter_CantBuild": ["Can't Build There", "لا يمكن البناء هناك"],
+      "Carpenter_SelectBuilding_Upgrade": ["Select a {0} to upgrade", "اختر {0} لترقيته"],
+      "Carpenter_SelectBuilding_Demolish": ["Choose a structure to demolish", "اختر منشأة لهدمها"],
+      "Carpenter_SelectBuilding_Move": ["Choose a building to move", "اختر مبنى لنقله"],
+      "Carpenter_SelectBuilding_Paint": ["Select a building to paint", "اختر مبنى لطلائه"],
+      "Character_Wallets": ["Money Style", "نمط المال"],
+      "Character_SharedWallet": ["Shared", "مشترك"],
+      "Character_SeparateWallet": ["Separate", "منفصل"],
+      "Character_Difficulty": ["Profit Margin", "هامش الربح"],
+      "Character_Close": ["Nearby", "قريب"],
+      "Character_CoopHelpString": ["Starting Cabins: Start with 1-{0} cabins already in place, allowing your friends to join immediately. Alternatively, you can select \"None\" and build the cabins yourself (via Robin).^^Cabin Layout: If you decide to start your farm with pre-existing cabins, you can choose between two layout styles: \"Nearby\" places all cabins near the main farmhouse, encouraging a communal farming style. \"Separate\" places the cabins far apart, allowing more room for independence.^^Profit Margin: Adjusts the profit margin (money you earn) on goods you sell. 'Normal' is the original Stardew Valley experience. More experienced and/or larger groups may wish to decrease the margin.", "أكواخ البداية: ابدأ بوجود 1-{0} أكواخ جاهزة، مما يتيح لأصدقائك الانضمام فورًا. ويمكنك بدلًا من ذلك اختيار «لا شيء» وبناء الأكواخ بنفسك (عن طريق روبن).^^تخطيط الأكواخ: إن قررت بدء مزرعتك بأكواخ موجودة سلفًا، فيمكنك الاختيار بين نمطين للتخطيط: يضع «قريب» كل الأكواخ قرب بيت المزرعة الرئيسي، مما يشجع أسلوب الزراعة الجماعية. أما «منفصل» فيضع الأكواخ متباعدة، مما يوفر مساحة أكبر للاستقلالية.^^هامش الربح: يضبط هامش الربح (المال الذي تكسبه) على السلع التي تبيعها. يمثل «عادي» تجربة وادي ستارديو الأصلية. وقد ترغب المجموعات الأكبر و/أو الأكثر خبرة في خفض الهامش."],
+      "Character_CoopHelpString2": ["Money Style: You can choose how money is earned and spent. In \"Shared\" mode, all players share the same pool of money. In \"Separate\" mode, each player has their own, individual pool of money. \"Shared\" is the classic Stardew Valley experience. ", "نمط المال: يمكنك اختيار كيفية كسب المال وإنفاقه. في وضع «مشترك»، يتشارك جميع اللاعبين رصيد المال نفسه. وفي وضع «منفصل»، يكون لكل لاعب رصيد مال مستقل. يمثل «مشترك» تجربة وادي ستارديو الكلاسيكية. "],
+      "Character_Normal": ["Normal", "عادي"],
+      "Character_Separate": ["Separate", "منفصل"],
+      "Character_StartingCabins": ["Starting Cabins", "أكواخ البداية"]
+    }
+  },
+  "simplePreserved": {
+    "target": "Strings/UI",
+    "reason": "Difficulty labels contain only runtime-displayed percentage values and no lexical content to translate.",
+    "keys": [
+      "Character_Tough",
+      "Character_Hard",
+      "Character_Super"
+    ]
+  }
+}

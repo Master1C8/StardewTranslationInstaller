@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "sewer": "updateMinigame 4/resetVariable/playMusic pool_ambient/pause 1600/message \"خودت را در راهرویی شبیه فاضلاب می‌یابی. سمت چپت راهرویی با نور سبز عجیبی می‌درخشد و سمت راستت پلکانی به تاریکی بالا می‌رود.\"/pause 500/question fork1 \"چه کار می‌کنی؟#وارد راهروی سمت چپ شو.#از پلکان سمت راست بالا برو.\"/fork wizardDoor/switchEvent podRoom",
+        "podRoom": "pause 500/updateMinigame 7/resetVariable/playMusic Hospital_Ambient/pause 1600/message \"در اتاقی هستید. سمت چپ نردبانی است. سمت راست سه زندانی در کپسول‌های عجیب و درخشان شناورند. به نظر می‌رسد در حال نوعی دگرگونی‌اند.\"/pause 500/message \"ممکن است این یکی از آزمایش‌های بیمارگونهٔ ارباب وحشت باشد؟\"/pause 500/question fork0 \"چه کار می‌کنی؟#هرچه سریع‌تر خارج شو.#کپسول‌ها را نابود کن.\"/fork leave/pause 500/pause 500/playSound swordswipe/pause 200/playSound breakingGlass/updateMinigame -1/pause 1000/message \"پس از آرام‌کردن ابدی این بینوایان، تو و همراهانت از نردبان بالا می‌روید.\"/pause 800/addMailReceived destroyedPods/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor",
+        "wizardDoor": "pause 500/updateMinigame 8/resetVariable/playMusic Lava_Ambient/pause 1600/message \"به دری در انتهای راهرو رسیده‌اید.\"/pause 800/message \"زمان رویارویی با ارباب وحشت زارث فرا رسیده است.\"/pause 500/playSound openChest/pause 1000/switchEvent Necromancer"
+      }
+    }
+  ]
+}

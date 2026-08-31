@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "finalBossWizard": "pause 500/resetVariable/message \"ارباب وحشت زارث زیر لب وردی می‌خواند...\"/pause 500/question fork0 \"چه کار می‌کنی؟#«پرتوی پاک» را به‌سوی زارث اجرا کن.#«افسون سپر» را روی دوستانت بگذار.\"/fork castBeam/pause 800/playSound debuffHit/message \"«افسون سپر» را روی سم و سباستین می‌گذاری.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"زارث تیرهای انرژی تاریک خالص را پرتاب می‌کند. یکی به سباستین می‌خورد، اما «افسون سپر» تو آن را به صورت زارث بازمی‌تاباند!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"زارث شکست می‌خورد و عصای سولاریون با آرامش می‌درخشد. نظم به جهان بازگشته است.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+        "finalBossWarrior": "pause 500/resetVariable/message \"ارباب وحشت زارث زیر لب وردی می‌خواند...\"/pause 500/question fork0 \"چه کار می‌کنی؟#با چرخاندن شمشیر به جلو یورش ببر.#با سپر از دوستانت دفاع کن.\"/fork chargeAhead/pause 1200/message \"زارث «تیر سایه» را به‌سوی سباستین اجرا می‌کند... اما درست به‌موقع سپرت را بالا می‌آوری و حمله را منحرف می‌کنی!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"هنگامی که زارث طلسم دیگری آماده می‌کند، به جلو یورش می‌بری و با شمشیر از پایش درمی‌آوری.\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"عصای سولاریون در حالی که آن را بالا گرفته‌ای با آرامش می‌درخشد. نظم به جهان بازگشته است!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

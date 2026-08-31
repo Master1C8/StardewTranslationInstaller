@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"آه... مرحبًا. صباح الخير.#$b#لاحظت أنك تكسر بعض الصخور وتعثر على الخام. هذا جيد!\"/pause 500/speak Clint \"إن أردت تحقيق أقصى استفادة من الخامات التي تجدها، فستحتاج إلى فرن.\"/pause 500/speak Clint \"يصادف أن لدي مجموعة زائدة من المخططات. تفضل، أريدك أن تأخذها.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"تعلمت كيفية صنع «فرن»\"/pause 800/speak Clint \"يتيح لك الفرن صهر السبائك المعدنية. ويمكن استخدام السبائك في الصنع والبناء وتطوير الأدوات.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \" حين تصهر بضعة سبائك نحاسية، فكر في أن تطلب مني تطوير إحدى أدواتك. فهذا قد يسهل عملك كثيرًا.#$b#حسنًا. سأعود إلى المنزل. اعتن بنفسك.\"/pause 200/addQuest 11/end"
+      }
+    }
+  ]
+}

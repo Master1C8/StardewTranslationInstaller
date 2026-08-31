@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "When": {
+        "Language": "hi-vnrevival"
+      },
+      "Entries": {
+        "4081148/e 47/t 1600 1900": "none/-1000 -1000/farmer 23 22 0 Sam 24 10 2 Sebastian 25 11 3 Emily 20 11 3 Maru 19 10 2 Shane 22 15 0 Elliott 27 14 1 Leah 28 14 3 Abigail 23 11 1 Penny 28 10 3 Harvey 18 11 1 Linus 31 5 2 Jodi 18 15 2 Vincent 18 16 0/viewport 22 11 clamp true/skippable/move farmer 0 -10 0 true/move Shane 0 -6 0 true/proceedPosition Shane/warp Shane -100 -100/proceedPosition farmer/move farmer 1 0 0 false/speak Sam \" @    \"/faceDirection Sam 3/faceDirection Sam 1/faceDirection Sam 2/speak Sam \",       ...     \"/jump Sam/pause 800/speak Sam \" ,  ...    !$u\"/pause 600/move Abigail -1 0 0 true/move Emily 1 0 1 true/faceDirection Maru 1/proceedPosition Abigail/move Abigail 0 -2 2 true/move Sebastian -3 0 0 true/move Elliott -5 0 0 true/move Leah -5 0 0 true/globalFade/viewport -1000 -1000/pause 3000/speak Sam \"* *...         $8\"/pause 1000/playSound busDoorOpen/pause 4000/speak Sam \" ,   ...   !$u\"/pause 800/changeToTemporaryMap SamShow false/warp Sam 18 14/faceDirection Sam 0 true/warp Sebastian 21 14/positionOffset Sebastian 20 -20/warp Abigail 15 13/positionOffset Abigail 40 -24/warp farmer 18 20/warp Elliott 20 19/faceDirection Elliott 0/warp Leah 21 19/faceDirection Leah 0 true/warp Maru 13 16/faceDirection Maru 1 true/warp Harvey 14 17/faceDirection Harvey 0 true/warp Emily 21 16/faceDirection Emily 0 true/warp Shane 16 20/warp Linus 31 14/faceDirection Linus 0 true/warp Penny 17 16/faceDirection Penny 0 true/faceDirection Sebastian 2 true/warp Jodi 11 19/warp Vincent 12 19/faceDirection Jodi 0/viewport 18 15 true/move farmer 0 -4 0/pause 3000/faceDirection Sam 2/pause 800/jump Sam/pause 1000/cutscene bandFork/mail afterSamShow/end dialogue Sam \"    !   , @\"",
+        "520702/a 11 23 11 24/t 600 1600/z spring/z fall/z summer": "winter_day_ambient/-1000 -1000/farmer 10 23 1 Krobus 26 23 3/viewport 24 23 clamp true/addQuest 31/skippable/move Krobus -2 0 3/pause 1000/emote Krobus 16/jump Krobus/pause 500/speed Krobus 8/move Krobus 20 0 1 true/move farmer 2 0 1 true/move false/playSound shadowpeep/warp Krobus -1000 -1000/pause 500/emote farmer 8/pause 1000/end"
+      }
+    }
+  ]
+}

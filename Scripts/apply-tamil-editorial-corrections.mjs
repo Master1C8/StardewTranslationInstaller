@@ -86,13 +86,18 @@ for (const record of correctionSet.records) {
   let value = location.change.Entries[record.key];
   let recordChanged = false;
   for (const replacement of record.replacements) {
-    if (!Array.isArray(replacement) || replacement.length < 2 || replacement.length > 3) {
+    if (!Array.isArray(replacement) || replacement.length < 2 || replacement.length > 4) {
       throw new Error(`Invalid replacement: ${record.target} :: ${record.key}`);
     }
-    const [before, after, expectedCount = 1] = replacement;
+    const [before, after, expectedCount = 1, mode = "replace-before"] = replacement;
+    if (!new Set(["replace-before", "prefer-after"]).has(mode)) {
+      throw new Error(`Invalid replacement mode: ${record.target} :: ${record.key}`);
+    }
     const beforeCount = value.split(before).length - 1;
     const afterCount = value.split(after).length - 1;
-    if (beforeCount === expectedCount) {
+    if (mode === "prefer-after" && afterCount >= expectedCount) {
+      alreadyApplied += 1;
+    } else if (beforeCount === expectedCount) {
       value = value.split(before).join(after);
       changedReplacements += 1;
       recordChanged = true;

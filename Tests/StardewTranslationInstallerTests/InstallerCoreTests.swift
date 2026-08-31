@@ -7,10 +7,11 @@ struct InstallerCoreTests {
     private struct RequiredValueMissing: Error {}
 
     private func expect(
-        _ condition: @autoclosure () throws -> Bool
+        _ condition: @autoclosure () throws -> Bool,
+        line: Int = #line
     ) rethrows {
         if try !condition() {
-            Issue.record("Expectation failed")
+            Issue.record("Expectation failed at line \(line)")
         }
     }
 
@@ -78,7 +79,7 @@ struct InstallerCoreTests {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival", "ta-vnrevival", "bn-vnrevival", "id-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "uz-vnrevival", "vi-vnrevival", "sw-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival", "fa-vnrevival", "ar-vnrevival", "ta-vnrevival", "bn-vnrevival", "id-vnrevival", "hi-vnrevival", "zh-TW-vnrevival"])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales.count == 43)
     }
@@ -99,11 +100,12 @@ struct InstallerCoreTests {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 14)
+        expect(languageEntries.count == 19)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "pl-vnrevival": ("ButtonPolish", "assets/button.png", "assets/title/TitleButtons.png"),
             "uz-vnrevival": ("ButtonUzbek", "assets/button-uzbek.png", "assets/title/TitleButtons-uzbek.png"),
+            "vi-vnrevival": ("ButtonVietnamese", "assets/button-vietnamese.png", "assets/title/TitleButtons-vietnamese.png"),
             "sw-vnrevival": ("ButtonSwahili", "assets/button-swahili.png", "assets/title/TitleButtons-swahili.png"),
             "am-vnrevival": ("ButtonAmharic", "assets/button-amharic.png", "assets/title/TitleButtons-amharic.png"),
             "kn-vnrevival": ("ButtonKannada", "assets/button-kannada.png", "assets/title/TitleButtons-kannada.png"),
@@ -112,9 +114,13 @@ struct InstallerCoreTests {
             "my-vnrevival": ("ButtonBurmese", "assets/button-burmese.png", "assets/title/TitleButtons-burmese.png"),
             "te-vnrevival": ("ButtonTelugu", "assets/button-telugu.png", "assets/title/TitleButtons-telugu.png"),
             "ur-vnrevival": ("ButtonUrdu", "assets/button-urdu.png", "assets/title/TitleButtons-urdu.png"),
+            "fa-vnrevival": ("ButtonPersian", "assets/button-persian.png", "assets/title/TitleButtons-persian.png"),
+            "ar-vnrevival": ("ButtonArabic", "assets/button-arabic.png", "assets/title/TitleButtons-arabic.png"),
             "ta-vnrevival": ("ButtonTamil", "assets/button-tamil.png", "assets/title/TitleButtons-tamil.png"),
             "bn-vnrevival": ("ButtonBengali", "assets/button-bengali.png", "assets/title/TitleButtons-bengali.png"),
             "id-vnrevival": ("ButtonIndonesian", "assets/button-indonesian.png", "assets/title/TitleButtons-indonesian.png"),
+            "hi-vnrevival": ("ButtonHindi", "assets/button-hindi.png", "assets/title/TitleButtons-hindi.png"),
+            "zh-TW-vnrevival": ("ButtonTraditionalChinese", "assets/button-traditional-chinese.png", "assets/title/TitleButtons-traditional-chinese.png"),
         ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
@@ -122,7 +128,7 @@ struct InstallerCoreTests {
                 ($0["LanguageCode"] as? String) == code
             })
             expect(language["ButtonTexture"] as? String == "Mods/{{ModId}}/\(expected.0)")
-            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival", "ta-vnrevival", "bn-vnrevival"].contains(code))
+            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "am-vnrevival", "kn-vnrevival", "ml-vnrevival", "mr-vnrevival", "my-vnrevival", "te-vnrevival", "ur-vnrevival", "fa-vnrevival", "ar-vnrevival", "ta-vnrevival", "bn-vnrevival", "hi-vnrevival", "zh-TW-vnrevival"].contains(code))
             if code == "ru-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Russian")
                 expect(language["FontPixelZoom"] as? Int == 3)
@@ -155,12 +161,28 @@ struct InstallerCoreTests {
                 expect(language["FontFile"] as? String == "Fonts/Urdu")
                 expect(language["FontPixelZoom"] as? Int == 3)
             }
+            if code == "fa-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/Persian")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
+            if code == "ar-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/Arabic")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
             if code == "ta-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Tamil")
                 expect(language["FontPixelZoom"] as? Int == 3)
             }
             if code == "bn-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Bengali")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
+            if code == "hi-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/Hindi")
+                expect(language["FontPixelZoom"] as? Int == 3)
+            }
+            if code == "zh-TW-vnrevival" {
+                expect(language["FontFile"] as? String == "Fonts/ChineseTraditional")
                 expect(language["FontPixelZoom"] as? Int == 3)
             }
             let button = try require(changes.first {
@@ -179,6 +201,7 @@ struct InstallerCoreTests {
         for (locale, directory) in [
             ("ru-vnrevival", "russian"),
             ("pl-vnrevival", "polish"),
+            ("vi-vnrevival", "vietnamese"),
             ("am-vnrevival", "amharic"),
             ("kn-vnrevival", "kannada"),
             ("ml-vnrevival", "malayalam"),
@@ -186,8 +209,12 @@ struct InstallerCoreTests {
             ("my-vnrevival", "burmese"),
             ("te-vnrevival", "telugu"),
             ("ur-vnrevival", "urdu"),
+            ("fa-vnrevival", "persian"),
+            ("ar-vnrevival", "arabic"),
             ("ta-vnrevival", "tamil"),
             ("bn-vnrevival", "bengali"),
+            ("hi-vnrevival", "hindi"),
+            ("zh-TW-vnrevival", "traditional-chinese"),
         ] {
           for target in ["Fonts/SpriteFont1", "Fonts/SmallFont"] {
             let font = try require(changes.first {
@@ -217,10 +244,16 @@ struct InstallerCoreTests {
             ("Fonts/Telugu_0", "assets/fonts/telugu/Telugu_0.xnb"),
             ("Fonts/Urdu", "assets/fonts/urdu/Urdu.xnb"),
             ("Fonts/Urdu_0", "assets/fonts/urdu/Urdu_0.xnb"),
+            ("Fonts/Persian", "assets/fonts/persian/Persian.xnb"),
+            ("Fonts/Persian_0", "assets/fonts/persian/Persian_0.xnb"),
+            ("Fonts/Arabic", "assets/fonts/arabic/Arabic.xnb"),
+            ("Fonts/Arabic_0", "assets/fonts/arabic/Arabic_0.xnb"),
             ("Fonts/Tamil", "assets/fonts/tamil/Tamil.xnb"),
             ("Fonts/Tamil_0", "assets/fonts/tamil/Tamil_0.xnb"),
             ("Fonts/Bengali", "assets/fonts/bengali/Bengali.xnb"),
             ("Fonts/Bengali_0", "assets/fonts/bengali/Bengali_0.xnb"),
+            ("Fonts/Hindi", "assets/fonts/hindi/Hindi.xnb"),
+            ("Fonts/Hindi_0", "assets/fonts/hindi/Hindi_0.xnb"),
         ] {
             let font = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
@@ -230,6 +263,17 @@ struct InstallerCoreTests {
             expect(font["FromFile"] as? String == fontPath)
             let fontData = try Data(contentsOf: payload.appendingPathComponent(fontPath))
             expect(Array(fontData.prefix(3)) == Array("XNB".utf8))
+        }
+
+        let vietnameseFontHashes = [
+            "assets/fonts/vietnamese/SpriteFont1.xnb": "460c192146c5c7099aaebaff9e1dbb39ce00843670a9d79fdb96d897ce3494dd",
+            "assets/fonts/vietnamese/SmallFont.xnb": "812f32313bdebe4a2b240a4ad4818a41b445d70a0bad630c3d26997f5596b72a",
+        ]
+        for (fontPath, expectedHash) in vietnameseFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
         }
 
         let amharicFontHashes = [
@@ -323,6 +367,32 @@ struct InstallerCoreTests {
             )
         }
 
+        let persianFontHashes = [
+            "assets/fonts/persian/SpriteFont1.xnb": "763d7805feef033a1d4c5cfd3dce5d430758b353bd8570a5f4b8daffefe7c5da",
+            "assets/fonts/persian/SmallFont.xnb": "446d9bab23f4d36e6b0494711a9bc1de6f042b5cde31f3d59bde83eddd5f946a",
+            "assets/fonts/persian/Persian.xnb": "e07656aeedc1a1ef578b354334dd84a5052da6301310b5bbb416c9ceac3f8fe0",
+            "assets/fonts/persian/Persian_0.xnb": "7d528e00b6080746408844a1672fe93dec92a30f1a2e762818a1ac368ea22da8",
+        ]
+        for (fontPath, expectedHash) in persianFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
+        let arabicFontHashes = [
+            "assets/fonts/arabic/SpriteFont1.xnb": "f437e6068eb98369c941499e885bd1f9efb70de1503ea656927bd38814fdde92",
+            "assets/fonts/arabic/SmallFont.xnb": "6d44e66e157890fcefabe44f72edaeb765777ecc7650c3b0dd21e0160c8a2267",
+            "assets/fonts/arabic/Arabic.xnb": "bdb595905f1f7033fe63b59413b8ff954df89a73ad12f8ddddf0ffcfe7a14f91",
+            "assets/fonts/arabic/Arabic_0.xnb": "e789a4688f0ab61263155172914788910aaa883599e3c31133abb14b1e8d5199",
+        ]
+        for (fontPath, expectedHash) in arabicFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
         let tamilFontHashes = [
             "assets/fonts/tamil/SpriteFont1.xnb": "1d3331c775f0a446ae24255dc1fdc960fd9270aaef811d4af071081d7652a283",
             "assets/fonts/tamil/SmallFont.xnb": "aaaeee55715ef26754cb95d8c4af92116b43b0611543bd1846e3cc5a28dc3b89",
@@ -337,12 +407,25 @@ struct InstallerCoreTests {
         }
 
         let bengaliFontHashes = [
-            "assets/fonts/bengali/SpriteFont1.xnb": "d72fd378a22b4bce6dae0bce9c0d47af342b53a9dcad489c15120aedb9c448ae",
-            "assets/fonts/bengali/SmallFont.xnb": "5894fc352355e1a23846bcfe7e34c90cf7761ede827dfe50c12f0d1b9ac8c30f",
-            "assets/fonts/bengali/Bengali.xnb": "97f973dc81602ca3c873a5e0d36008f5d5f0d0b9b63b6a418ff3ca32c54615ae",
-            "assets/fonts/bengali/Bengali_0.xnb": "a3e5a2ecd2bfc046d507ea6a597963a006e1a0c7cd3d43194d2f37ffd4223314",
+            "assets/fonts/bengali/SpriteFont1.xnb": "4ec241daeae2c84f6a53abedcfd550c99b32bc20e49ec43dda5dadffcf0d1a4b",
+            "assets/fonts/bengali/SmallFont.xnb": "f25cc6185456d980889f53990da689d5200c0644ff3df823907f3be63eaeaa38",
+            "assets/fonts/bengali/Bengali.xnb": "82c7fdc1b1f4e67bef08c52e737819c65142b883c19b211460d568e5119800f7",
+            "assets/fonts/bengali/Bengali_0.xnb": "f93976f8e3df23fe7dd73639f9a42bd41d3ec0ec16233cfd8d09453d768f4a50",
         ]
         for (fontPath, expectedHash) in bengaliFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
+        let hindiFontHashes = [
+            "assets/fonts/hindi/SpriteFont1.xnb": "690371af4bcbb60748efc616a7e437cca91955f5d7583093d2979802775ac796",
+            "assets/fonts/hindi/SmallFont.xnb": "ead57d283edf138d6e3baf5d3d8924d48326c8b7a1cd443c54b9d36ee31d09eb",
+            "assets/fonts/hindi/Hindi.xnb": "dc929c21e434e8414243ef21a169aa8e4370ed7fd3694234d8a39435fe07b861",
+            "assets/fonts/hindi/Hindi_0.xnb": "79e16c38128299e038a339535e6f81dfaf154ee32bf92d1f473f5292cf82c90a",
+        ]
+        for (fontPath, expectedHash) in hindiFontHashes {
             try expect(
                 try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
                     == expectedHash
@@ -362,6 +445,19 @@ struct InstallerCoreTests {
             return (integer(at: 16), integer(at: 20))
         }
 
+        let vietnameseButtonPath = "assets/button-vietnamese.png"
+        try expect(try pngDimensions(vietnameseButtonPath) == (174, 78))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(vietnameseButtonPath))
+                == "be0551c7dd7214b17e7e1b42c9808063ec91e2ce4e67dfe51ebb9994bd3018ba"
+        )
+        let vietnameseTitlePath = "assets/title/TitleButtons-vietnamese.png"
+        try expect(try pngDimensions(vietnameseTitlePath) == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(vietnameseTitlePath))
+                == "3df4db304c9f1487c3e620bee52615b801f783bff976a103504e1f59e4bd2803"
+        )
+
         let bengaliButtonPath = "assets/button-bengali.png"
         try expect(try pngDimensions(bengaliButtonPath) == (174, 78))
         try expect(
@@ -373,6 +469,19 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(bengaliTitlePath))
                 == "0aca0fe2a79d6f02e7316d64e98995f31eb3a7925abf4c0770640c518f52c6d4"
+        )
+
+        let hindiButtonPath = "assets/button-hindi.png"
+        try expect(try pngDimensions(hindiButtonPath) == (174, 78))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(hindiButtonPath))
+                == "63d1b99db23dbc7237b254804cbf347716d2a8dd8cf5132697085c7cdd80fd67"
+        )
+        let hindiTitlePath = "assets/title/TitleButtons-hindi.png"
+        try expect(try pngDimensions(hindiTitlePath) == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(hindiTitlePath))
+                == "85e12d552629e046f774807531e3ff5b4ca2cc05be86e37992aa845815970768"
         )
 
         let buttonPath = "assets/button-amharic.png"
@@ -494,6 +603,32 @@ struct InstallerCoreTests {
             ) == "726e4ab46a89bfd78295316a51becf213a792949be965e4b7fc2ca96edc856b8"
         )
 
+        try expect(try pngDimensions("assets/button-persian.png") == (174, 78))
+        try expect(try pngDimensions("assets/title/TitleButtons-persian.png") == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/button-persian.png")
+            ) == "ae33c27660fe31e4b8c70f5c63094b0131ad99cb61bd9223bf2473cf6f9f2765"
+        )
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/title/TitleButtons-persian.png")
+            ) == "1e55ce4c9a3fac77c2836adbec0fd8699d012ff14a587840ceac466a12d67684"
+        )
+
+        try expect(try pngDimensions("assets/button-arabic.png") == (174, 78))
+        try expect(try pngDimensions("assets/title/TitleButtons-arabic.png") == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/button-arabic.png")
+            ) == "be46227a1a3a0e2d98bb17d9d70fe11d705143badcaee6a01ce8141b38a4a8dc"
+        )
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/title/TitleButtons-arabic.png")
+            ) == "994bb20ff4a583a31ffddaafbc6d53b5f7a14644fa1425a8c37e6d7d09873962"
+        )
+
         try expect(try pngDimensions("assets/button-tamil.png") == (174, 78))
         try expect(try pngDimensions("assets/title/TitleButtons-tamil.png") == (400, 655))
         try expect(
@@ -530,6 +665,24 @@ struct InstallerCoreTests {
         let urduShapingEntries = try require(urduShapingMap["entries"] as? [[String: Any]])
         expect(urduShapingEntries.count == 282)
         expect(Set(urduShapingEntries.compactMap { $0["glyph"] as? String }).count == 282)
+        let persianShapingMap = try require(
+            JSONSerialization.jsonObject(
+                with: Data(contentsOf: source.appendingPathComponent("persian-shaping-map.json"))
+            ) as? [String: Any]
+        )
+        expect(persianShapingMap["format"] as? Int == 2)
+        let persianShapingEntries = try require(persianShapingMap["entries"] as? [[String: Any]])
+        expect(persianShapingEntries.count == 381)
+        expect(Set(persianShapingEntries.compactMap { $0["glyph"] as? String }).count == 381)
+        let arabicShapingMap = try require(
+            JSONSerialization.jsonObject(
+                with: Data(contentsOf: source.appendingPathComponent("arabic-shaping-map.json"))
+            ) as? [String: Any]
+        )
+        expect(arabicShapingMap["format"] as? Int == 2)
+        let arabicShapingEntries = try require(arabicShapingMap["entries"] as? [[String: Any]])
+        expect(arabicShapingEntries.count == 556)
+        expect(Set(arabicShapingEntries.compactMap { $0["glyph"] as? String }).count == 556)
 
         let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         defer { try? fm.removeItem(at: temporary) }
@@ -558,7 +711,7 @@ struct InstallerCoreTests {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 3_141)
+        expect(includes.count == 4_520)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var malayalamPrivateUseGlyphs = 0
@@ -573,6 +726,8 @@ struct InstallerCoreTests {
         var rawTamilScalars = 0
         var bengaliPrivateUseGlyphs = 0
         var rawBengaliScalars = 0
+        var hindiPrivateUseGlyphs = 0
+        var rawHindiScalars = 0
 
         for include in includes {
             let relativePath = try require(include["FromFile"] as? String)
@@ -591,6 +746,8 @@ struct InstallerCoreTests {
                 expectedLanguage = "pl-vnrevival"
             } else if relativePath.contains("/uzbek/") {
                 expectedLanguage = "uz-vnrevival"
+            } else if relativePath.contains("/vietnamese/") {
+                expectedLanguage = "vi-vnrevival"
             } else if relativePath.contains("/swahili/") {
                 expectedLanguage = "sw-vnrevival"
             } else if relativePath.contains("/amharic/") {
@@ -605,14 +762,26 @@ struct InstallerCoreTests {
                 expectedLanguage = "te-vnrevival"
             } else if relativePath.contains("/urdu/") {
                 expectedLanguage = "ur-vnrevival"
+            } else if relativePath.contains("/persian/") {
+                expectedLanguage = "fa-vnrevival"
+            } else if relativePath.contains("/arabic/") {
+                expectedLanguage = "ar-vnrevival"
             } else if relativePath.contains("/tamil/") {
                 expectedLanguage = "ta-vnrevival"
             } else if relativePath.contains("/bengali/") {
                 expectedLanguage = "bn-vnrevival"
             } else if relativePath.contains("/indonesian/") {
                 expectedLanguage = "id-vnrevival"
-            } else {
+            } else if relativePath.contains("/hindi/") {
+                expectedLanguage = "hi-vnrevival"
+            } else if relativePath.contains("/traditional-chinese/") {
+                expectedLanguage = "zh-TW-vnrevival"
+            } else if relativePath.contains("/thai/") {
+                expectedLanguage = "th-vnrevival"
+            } else if relativePath.contains("/kannada/") {
                 expectedLanguage = "kn-vnrevival"
+            } else {
+                throw RequiredValueMissing()
             }
             for change in secondaryChanges {
                 let condition = try require(change["When"] as? [String: String])
@@ -698,6 +867,20 @@ struct InstallerCoreTests {
                         }
                     }
                 }
+                if expectedLanguage == "hi-vnrevival" {
+                    let entries = try require(change["Entries"] as? [String: String])
+                    for value in entries.values {
+                        for scalar in value.unicodeScalars {
+                            if (0xE000...0xF8FF).contains(scalar.value) {
+                                hindiPrivateUseGlyphs += 1
+                            }
+                            if (0x0900...0x097F).contains(scalar.value)
+                                || (0xA8E0...0xA8FF).contains(scalar.value) {
+                                rawHindiScalars += 1
+                            }
+                        }
+                    }
+                }
             }
         }
         expect(malayalamPrivateUseGlyphs > 100_000)
@@ -712,6 +895,8 @@ struct InstallerCoreTests {
         expect(rawTamilScalars == 0)
         expect(bengaliPrivateUseGlyphs > 100_000)
         expect(rawBengaliScalars == 0)
+        expect(hindiPrivateUseGlyphs > 100_000)
+        expect(rawHindiScalars == 0)
     }
 
     @Test func testComputesChecksum() throws {

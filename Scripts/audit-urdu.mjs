@@ -10,15 +10,36 @@ const sourceRoot = path.resolve(
 const requireIncludes = process.argv.includes("--require-includes");
 const release = process.argv.includes("--release");
 const projectRoot = path.resolve(import.meta.dirname, "..");
+const translationSlug = process.env.VNREVIVAL_TRANSLATION_SLUG ?? "urdu";
+const glossaryLocale = process.env.VNREVIVAL_GLOSSARY_LOCALE ?? "ur";
+const languageName = process.env.VNREVIVAL_LANGUAGE_NAME ?? "Urdu";
 const payloadRoot = path.join(
   projectRoot,
   "Sources/StardewTranslationInstaller/Resources/ModPayload",
 );
 const resourcesRoot = path.dirname(payloadRoot);
-const translationRoot = path.join(payloadRoot, "assets/translations/urdu");
-const editorialFile = path.join(projectRoot, "Documentation/urdu-editorial-overrides.json");
+const translationRoot = path.join(payloadRoot, `assets/translations/${translationSlug}`);
+const editorialFile = path.join(projectRoot, `Documentation/${translationSlug}-editorial-overrides.json`);
 const expected = { files: 463, changes: 489, targets: 187, records: 14720, glossary: 673 };
-const languageCode = "ur-vnrevival";
+const languageCode = process.env.VNREVIVAL_LANGUAGE_CODE ?? "ur-vnrevival";
+const releaseConfigs = {
+  urdu: {
+    suffix: "Urdu",
+    nativeName: "اردو",
+    expectedShapingEntries: 282,
+  },
+  persian: {
+    suffix: "Persian",
+    nativeName: "فارسی",
+    expectedShapingEntries: 381,
+  },
+  arabic: {
+    suffix: "Arabic",
+    nativeName: "العربية",
+    expectedShapingEntries: 556,
+  },
+};
+const releaseConfig = releaseConfigs[translationSlug] ?? releaseConfigs.urdu;
 const errors = [];
 const warnings = [];
 const sourceCache = new Map();
@@ -228,7 +249,7 @@ for (const relative of files) {
       records.set(id, { target: change.Target, key, original, translated, relative });
       if (!translated.length && original.length) errors.push(`empty translation: ${id}`);
       if (translated.includes("�")) errors.push(`replacement character: ${id}`);
-      if (translated !== translated.normalize("NFC")) errors.push(`non-NFC Urdu: ${id}`);
+      if (translated !== translated.normalize("NFC")) errors.push(`non-NFC ${languageName}: ${id}`);
       if (JSON.stringify(markerSignature(original)) !== JSON.stringify(markerSignature(translated))) {
         errors.push(`marker mismatch: ${id} (${relative})`);
       }
@@ -267,13 +288,13 @@ for (const [id, record] of records) {
       record.translated !== record.original
       && /[A-Za-z]{2}/.test(record.original)
       && !/[\u0600-\u06FF]/u.test(record.translated)
-    ) errors.push(`reviewed translation lacks Urdu script: ${id}`);
+    ) errors.push(`reviewed translation lacks ${languageName} script: ${id}`);
   } else if (record.translated !== record.original) {
-    errors.push(`unreviewed Urdu mutation: ${id}`);
+    errors.push(`unreviewed ${languageName} mutation: ${id}`);
   }
 }
 
-const deprecatedEditorialTerms = [
+const deprecatedEditorialTerms = translationSlug === "urdu" ? [
   { source: /Community Center/i, urdu: /برادری مرکز/, canonical: "کمیونٹی سینٹر" },
   { source: /Junimo/i, urdu: /جونی مو|جونی‌مو/, canonical: "جونیمو" },
   { source: /Stardew Valley/i, urdu: /(?<!ا)سٹارڈیو ویلی|اا+سٹارڈیو ویلی/u, canonical: "اسٹارڈیو ویلی" },
@@ -297,14 +318,14 @@ const deprecatedEditorialTerms = [
   { source: /\bResolution\b/, urdu: /قرارداد|ریزولوشن/, canonical: "ریزولیوشن" },
   { source: /\bUnforge\b|\bunforge\b/, urdu: /دوبارہ ڈھل/, canonical: "فورج ہٹائیں" },
   { source: /\bEnchantments?\b|\benchanted\b/, urdu: /افسون|افسوں/, canonical: "سحر" },
-];
+] : [];
 for (const [id, record] of records) {
   for (const rule of deprecatedEditorialTerms) {
     if (rule.source.test(record.original) && rule.urdu.test(record.translated)) {
-      errors.push(`deprecated Urdu term, use ${rule.canonical}: ${id}`);
+      errors.push(`deprecated ${languageName} term, use ${rule.canonical}: ${id}`);
     }
   }
-  if (/[!؟]۔(?!۔)/u.test(record.translated)) {
+  if (translationSlug === "urdu" && /[!؟]۔(?!۔)/u.test(record.translated)) {
     errors.push(`redundant Urdu sentence stop after terminal punctuation: ${id}`);
   }
 }
@@ -336,21 +357,21 @@ if (sourceCache.size !== expected.targets) errors.push(`target count ${sourceCac
 if (records.size !== expected.records) errors.push(`record count ${records.size}, expected ${expected.records}`);
 
 const englishGlossary = readJSON(path.join(projectRoot, "Documentation/glossary/glossary.en.json"));
-const urduGlossary = readJSON(path.join(projectRoot, "Documentation/glossary/glossary.ur.json"))?.ur;
+const urduGlossary = readJSON(path.join(projectRoot, `Documentation/glossary/glossary.${glossaryLocale}.json`))?.[glossaryLocale];
 if (!Array.isArray(englishGlossary) || englishGlossary.length !== expected.glossary) {
   errors.push(`English glossary count ${englishGlossary?.length ?? "invalid"}, expected ${expected.glossary}`);
 }
 if (Object.keys(urduGlossary ?? {}).length !== expected.glossary) {
-  errors.push(`Urdu glossary count ${Object.keys(urduGlossary ?? {}).length}, expected ${expected.glossary}`);
+  errors.push(`${languageName} glossary count ${Object.keys(urduGlossary ?? {}).length}, expected ${expected.glossary}`);
 }
 if (
   JSON.stringify(Object.keys(urduGlossary ?? {}))
   !== JSON.stringify((englishGlossary ?? []).map((entry) => entry.id))
-) errors.push("Urdu glossary ID/order mismatch");
+) errors.push(`${languageName} glossary ID/order mismatch`);
 for (const entry of englishGlossary ?? []) {
   const translated = urduGlossary?.[entry.id];
   if (!translated?.term?.trim() || !translated?.meaning?.trim() || !/[\u0600-\u06FF]/u.test(translated.meaning)) {
-    errors.push(`invalid Urdu glossary entry: ${entry.id}`);
+    errors.push(`invalid ${languageName} glossary entry: ${entry.id}`);
   }
 }
 const contextualGlossaryExceptions = new Set([
@@ -367,6 +388,7 @@ for (const entry of englishGlossary ?? []) {
     `${entry.term}?`,
   ]);
   for (const [id, record] of records) {
+    if (record.translated === record.original) continue;
     if (
       exactEnglishLabels.has(record.original.trim())
       && !record.translated.includes(canonical)
@@ -381,25 +403,25 @@ const includes = (content?.Changes ?? [])
   .filter((change) => change.Action === "Include")
   .map((change) => change.FromFile);
 if (new Set(includes).size !== includes.length) errors.push("duplicate Include entries");
-const urduIncludes = includes.filter((file) => file.startsWith("assets/translations/urdu/")).sort();
-const expectedIncludes = files.map((file) => `assets/translations/urdu/${file}`);
+const urduIncludes = includes.filter((file) => file.startsWith(`assets/translations/${translationSlug}/`)).sort();
+const expectedIncludes = files.map((file) => `assets/translations/${translationSlug}/${file}`);
 if (
   (requireIncludes || urduIncludes.length > 0)
   && JSON.stringify(urduIncludes) !== JSON.stringify(expectedIncludes)
-) errors.push(`Urdu Include set differs: actual=${urduIncludes.length}, expected=${expectedIncludes.length}`);
+) errors.push(`${languageName} Include set differs: actual=${urduIncludes.length}, expected=${expectedIncludes.length}`);
 
 if (release) {
   if (content?.Format !== "2.9.0") errors.push(`unexpected root Format: ${content?.Format}`);
   const changes = content?.Changes ?? [];
   const additional = changes
     .find((change) => change.Action === "EditData" && change.Target === "Data/AdditionalLanguages")
-    ?.Entries?.["{{ModId}}_Urdu"];
+    ?.Entries?.[`{{ModId}}_${releaseConfig.suffix}`];
   const expectedAdditional = {
-    ID: "{{ModId}}_Urdu",
+    ID: `{{ModId}}_${releaseConfig.suffix}`,
     LanguageCode: languageCode,
-    ButtonTexture: "Mods/{{ModId}}/ButtonUrdu",
+    ButtonTexture: `Mods/{{ModId}}/Button${releaseConfig.suffix}`,
     UseLatinFont: false,
-    FontFile: "Fonts/Urdu",
+    FontFile: `Fonts/${releaseConfig.suffix}`,
     FontPixelZoom: 3,
     TimeFormat: "[HOURS_24_00]:[MINUTES]",
     ClockTimeFormat: "[HOURS_24_00]:[MINUTES]",
@@ -407,30 +429,30 @@ if (release) {
     NumberComma: " ",
   };
   if (JSON.stringify(additional) !== JSON.stringify(expectedAdditional)) {
-    errors.push("invalid Urdu AdditionalLanguages entry");
+    errors.push(`invalid ${languageName} AdditionalLanguages entry`);
   }
   const expectedLoads = [
-    ["Mods/{{ModId}}/ButtonUrdu", "assets/button-urdu.png", undefined],
-    ["Minigames/TitleButtons", "assets/title/TitleButtons-urdu.png", languageCode],
-    ["Fonts/SpriteFont1", "assets/fonts/urdu/SpriteFont1.xnb", languageCode],
-    ["Fonts/SmallFont", "assets/fonts/urdu/SmallFont.xnb", languageCode],
-    ["Fonts/Urdu", "assets/fonts/urdu/Urdu.xnb", undefined],
-    ["Fonts/Urdu_0", "assets/fonts/urdu/Urdu_0.xnb", undefined],
+    [`Mods/{{ModId}}/Button${releaseConfig.suffix}`, `assets/button-${translationSlug}.png`, undefined],
+    ["Minigames/TitleButtons", `assets/title/TitleButtons-${translationSlug}.png`, languageCode],
+    ["Fonts/SpriteFont1", `assets/fonts/${translationSlug}/SpriteFont1.xnb`, languageCode],
+    ["Fonts/SmallFont", `assets/fonts/${translationSlug}/SmallFont.xnb`, languageCode],
+    [`Fonts/${releaseConfig.suffix}`, `assets/fonts/${translationSlug}/${releaseConfig.suffix}.xnb`, undefined],
+    [`Fonts/${releaseConfig.suffix}_0`, `assets/fonts/${translationSlug}/${releaseConfig.suffix}_0.xnb`, undefined],
   ];
   for (const [target, fromFile, targetLocale] of expectedLoads) {
     const matching = changes.filter((change) => change.Action === "Load"
       && change.Target === target
       && change.FromFile === fromFile
       && change.TargetLocale === targetLocale);
-    if (matching.length !== 1) errors.push(`missing or duplicate Urdu load: ${target}`);
+    if (matching.length !== 1) errors.push(`missing or duplicate ${languageName} load: ${target}`);
   }
 
   const requiredAssets = expectedLoads.map(([, file]) => file);
   for (const file of requiredAssets) {
     const fullPath = path.join(payloadRoot, file);
-    if (!fs.existsSync(fullPath)) errors.push(`missing Urdu asset: ${file}`);
+    if (!fs.existsSync(fullPath)) errors.push(`missing ${languageName} asset: ${file}`);
     else if (file.endsWith(".xnb") && fs.readFileSync(fullPath).subarray(0, 3).toString() !== "XNB") {
-      errors.push(`invalid Urdu XNB signature: ${file}`);
+      errors.push(`invalid ${languageName} XNB signature: ${file}`);
     }
   }
   function pngDimensions(file) {
@@ -439,46 +461,46 @@ if (release) {
     return [data.readUInt32BE(16), data.readUInt32BE(20)];
   }
   for (const [file, dimensions] of [
-    ["assets/button-urdu.png", [174, 78]],
-    ["assets/title/TitleButtons-urdu.png", [400, 655]],
+    [`assets/button-${translationSlug}.png`, [174, 78]],
+    [`assets/title/TitleButtons-${translationSlug}.png`, [400, 655]],
   ]) {
     const actual = fs.existsSync(path.join(payloadRoot, file))
       ? pngDimensions(path.join(payloadRoot, file))
       : null;
     if (JSON.stringify(actual) !== JSON.stringify(dimensions)) {
-      errors.push(`invalid Urdu PNG dimensions: ${file}`);
+      errors.push(`invalid ${languageName} PNG dimensions: ${file}`);
     }
   }
 
   const packageConfig = readJSON(path.join(resourcesRoot, "PackageConfig.json"));
   if ((packageConfig?.languageCodes ?? []).filter((code) => code === languageCode).length !== 1) {
-    errors.push("PackageConfig lacks exactly one Urdu locale code");
+    errors.push(`PackageConfig lacks exactly one ${languageName} locale code`);
   }
-  if (!packageConfig?.nativeLanguageName?.includes("اردو")) {
-    errors.push("PackageConfig lacks the native Urdu language name");
+  if (!packageConfig?.nativeLanguageName?.includes(releaseConfig.nativeName)) {
+    errors.push(`PackageConfig lacks the native ${languageName} language name`);
   }
 
-  const documentedMapPath = path.join(projectRoot, "Documentation/urdu-cluster-map.json");
-  const runtimeMapPath = path.join(resourcesRoot, "LanguageSwitcherPayload/urdu-shaping-map.json");
+  const documentedMapPath = path.join(projectRoot, `Documentation/${translationSlug}-cluster-map.json`);
+  const runtimeMapPath = path.join(resourcesRoot, `LanguageSwitcherPayload/${translationSlug}-shaping-map.json`);
   const documentedMap = readJSON(documentedMapPath);
   const runtimeMap = readJSON(runtimeMapPath);
   if (JSON.stringify(documentedMap) !== JSON.stringify(runtimeMap)) {
-    errors.push("runtime Urdu shaping map differs from its canonical document");
+    errors.push(`runtime ${languageName} shaping map differs from its canonical document`);
   }
-  if (documentedMap?.format !== 2 || documentedMap?.entries?.length !== 282) {
-    errors.push(`invalid Urdu shaping-map structure/count: ${documentedMap?.entries?.length ?? "invalid"}`);
+  if (documentedMap?.format !== 2 || documentedMap?.entries?.length !== releaseConfig.expectedShapingEntries) {
+    errors.push(`invalid ${languageName} shaping-map structure/count: ${documentedMap?.entries?.length ?? "invalid"}`);
   }
   const mapGlyphs = documentedMap?.entries?.map((entry) => entry.glyph) ?? [];
-  if (new Set(mapGlyphs).size !== mapGlyphs.length) errors.push("duplicate Urdu shaping-map glyph");
+  if (new Set(mapGlyphs).size !== mapGlyphs.length) errors.push(`duplicate ${languageName} shaping-map glyph`);
   for (let index = 0; index < mapGlyphs.length; index += 1) {
     if (mapGlyphs[index]?.codePointAt(0) !== 0xE000 + index) {
-      errors.push(`non-contiguous Urdu shaping-map glyph at index ${index}`);
+      errors.push(`non-contiguous ${languageName} shaping-map glyph at index ${index}`);
       break;
     }
   }
   const switcherLibrary = path.join(resourcesRoot, "LanguageSwitcherPayload/VNRevival.LanguageSwitcher.dll");
   if (!fs.existsSync(switcherLibrary) || fs.statSync(switcherLibrary).size <= 4_096) {
-    errors.push("missing or truncated Urdu-aware language switcher");
+    errors.push(`missing or truncated ${languageName}-aware language switcher`);
   }
 }
 
@@ -494,7 +516,7 @@ for (const record of records.values()) {
 const reviewed = [...reviewedIds].filter((id) => records.has(id)).length;
 const unreviewed = records.size - reviewed;
 if (unreviewed > 0) {
-  const message = `${unreviewed} Urdu records remain unreviewed`;
+  const message = `${unreviewed} ${languageName} records remain unreviewed`;
   if (release) errors.push(message);
   else warnings.push(message);
 }

@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "castBeam": "pause 500/message \"قبل أن تسنح لك فرصة إلقاء تعويذتك، يرسل زارث شعاعًا ظليًا نحو رفاقك!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"يحترق سام وسيباستيان حتى التفحم...\"/pause 500/playSound yoba/pause 800/message \"تصيب تعويذتك زارث في وجهه مباشرة.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"يطلق صرخة ويتفتت إلى غبار. تلتقط عصا سولاريون وترفعها عاليًا. لقد عاد السلام والنظام إلى العالم.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "chargeAhead": "pause 500/message \"تندفع إلى الأمام، لكن زارث يفلت منك ويرسل شعاعًا ظليًا نحو رفاقك!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"يحترق سيباستيان وسام حتى التفحم...\"/pause 800/message \"تلوح بسيفك مرة أخرى وتوجه ضربة قوية. يصرخ زارث ويتفتت إلى غبار.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"تلتقط عصا سولاريون وترفعها عاليًا. لقد عاد السلام والنظام إلى العالم.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

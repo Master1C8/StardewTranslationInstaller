@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "181928/f Penny 2000/t 900 1600/w sunny/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19": "50s/-1000 -1000/farmer 75 40 2 Penny 71 45 2 Jas 71 49 3 Vincent 70 49 1/skippable/specificTemporarySprite pennyFieldTrip/positionOffset Penny 0 -16/animate Jas false true 90 16 17 18 19/viewport 71 45 true/move farmer 0 5 3/pause 600/faceDirection Penny 1/pause 600/speak Penny \"آه يا @! لقد وصلت في الوقت المناسب تمامًا.\"/emote farmer 8/speak Penny \"أحضرت الطفلين في رحلة ميدانية صغيرة إلى الريف.#$b#أنت تعرف كل شيء عن الحياة الريفية، أليس كذلك؟$h\"/speak Penny \"$q -1 null#لذلك فكرت... هل يمكنك أن تكون ضيفي المتحدث اليوم؟#$r -1 10 event_speaker_yes#يسعدني ذلك!#$r -1 0 event_speaker_yes#بالتأكيد.#$r -1 -1500 event_speaker_no#لا... لا أطيق الأطفال.\"/fork eventEnd/faceDirection Penny 2/faceDirection farmer 2/showFrame Penny 26/pause 500/shake Penny 500/speak Penny \"جاز! فينسنت! انتبها إلي من فضلكما!\"/pause 80/stopAnimation Jas/faceDirection Jas 0 true/faceDirection Vincent 0/jump Vincent/jump Jas/pause 800/speed Vincent 4/speed Jas 4/move Vincent 0 -3 0 true/move Jas 0 -3 0 true/showFrame Penny 0/faceDirection Penny 2/faceDirection farmer 3/speak Penny \"لدينا اليوم ضيف مميز جدًا ليتحدث إليكما... مزارعنا المحلي @.#$b#لديه خبرة مباشرة في العيش بالريف... ولذلك يعرف كل شيء عن «الموارد الطبيعية» في الوادي!^لديها خبرة مباشرة في العيش بالريف... ولذلك تعرف كل شيء عن «الموارد الطبيعية» في الوادي!\"/pause 500/speak Penny \"هل يستطيع أحد أن يخبرني ما «المورد الطبيعي»؟\"/animate Jas false true 50 20 21/animate Vincent false true 50 16 17/playSound dwop/pause 1200/speak Penny \"جاز؟\"/stopAnimation Vincent/stopAnimation Jas/speak Jas \"المورد الطبيعي مصدر مادي للثروة يوجد في حالته الطبيعية وله قيمة اقتصادية.$4\"/faceDirection Vincent 1/speak Penny \"جيد جدًا! تستحقين نقطتي نجمة يا جاز.\"/speak Jas \"أجل!$h\"/faceDirection Vincent 0/speak Penny \"حسنًا، فلنعر @ كامل انتباهنا الآن.\"/move Penny -1 0 1/move farmer -4 0 2/question fork0 \"#تتمحور الحياة الريفية حول الزراعة.#تتمحور الحياة الريفية حول جمع الموارد البرية.\"/fork choseFarming/pause 500/question fork0 \"#هذا الوادي زاخر بالمعادن النفيسة.#تعج المياه هنا بالمأكولات البحرية الطازجة.#لن تجد خشبًا أفضل جنوب غرامبلتون.\"/fork choseMinerals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"نعم يا فينسنت؟\"/speak Vincent \"سيد @، هل ستتزوج الآنسة بيني؟$s^آنسة @... أمم، ألديك حبيب؟\"/speak Penny \"فينسنت! هذا سؤال غير لائق! أحسن التصرف، وإلا اضطررت إلى سحب جميع نقاط النجمة التي حصلت عليها اليوم.$a\"/emote Vincent 28/switchEvent fieldTripEnd"
+      }
+    }
+  ]
+}

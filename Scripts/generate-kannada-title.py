@@ -39,7 +39,9 @@ def draw_label(
 ) -> None:
     width = box[2] - box[0]
     height = box[3] - box[1]
-    font = ImageFont.truetype(str(font_path), font_size)
+    font = ImageFont.truetype(
+        str(font_path), font_size, index=int(os.environ.get("VN_FONT_INDEX", "0"))
+    )
     line_height = font_size + 1
     mask = Image.new("L", (width, height), 0)
     canvas = ImageDraw.Draw(mask)
@@ -96,7 +98,52 @@ hover_background = (255, 255, 192, 255)
 hover_foreground = (239, 115, 115, 255)
 hover_shadow = (178, 99, 86, 255)
 
-if os.environ.get("VN_TITLE_LOCALE") == "ur":
+if os.environ.get("VN_TITLE_LOCALE") == "th":
+    buttons = [
+        ((6, 198, 65, 222), ["เกม", "ใหม่"], 11),
+        ((80, 198, 139, 222), ["โหลด"], 12),
+        ((154, 198, 213, 222), ["เล่น", "ร่วมกัน"], 9),
+        ((228, 198, 287, 222), ["ออก"], 12),
+    ]
+    back_label = "กลับ"
+    developer_label = "ผู้พัฒนา"
+elif os.environ.get("VN_TITLE_LOCALE") == "bn":
+    buttons = [
+        ((6, 198, 65, 222), ["নতুন", "খেলা"], 9),
+        ((80, 198, 139, 222), ["লোড"], 11),
+        ((154, 198, 213, 222), ["সহযোগী", "খেলা"], 8),
+        ((228, 198, 287, 222), ["বেরিয়ে", "যান"], 9),
+    ]
+    back_label = "পেছনে"
+    developer_label = "নির্মাতা"
+elif os.environ.get("VN_TITLE_LOCALE") == "zh-TW":
+    buttons = [
+        ((6, 198, 65, 222), ["新遊戲"], 11),
+        ((80, 198, 139, 222), ["載入"], 12),
+        ((154, 198, 213, 222), ["合作"], 12),
+        ((228, 198, 287, 222), ["離開"], 12),
+    ]
+    back_label = "返回"
+    developer_label = "製作人"
+elif os.environ.get("VN_TITLE_LOCALE") == "fa":
+    buttons = [
+        ((6, 198, 65, 222), ["بازی", "جدید"], 10),
+        ((80, 198, 139, 222), ["بارگیری"], 10),
+        ((154, 198, 213, 222), ["بازی", "چندنفره"], 8),
+        ((228, 198, 287, 222), ["خروج"], 11),
+    ]
+    back_label = "بازگشت"
+    developer_label = "سازنده"
+elif os.environ.get("VN_TITLE_LOCALE") == "ar":
+    buttons = [
+        ((6, 198, 65, 222), ["لعبة", "جديدة"], 10),
+        ((80, 198, 139, 222), ["تحميل"], 11),
+        ((154, 198, 213, 222), ["لعب", "تعاوني"], 9),
+        ((228, 198, 287, 222), ["خروج"], 11),
+    ]
+    back_label = "رجوع"
+    developer_label = "تطوير"
+elif os.environ.get("VN_TITLE_LOCALE") == "ur":
     buttons = [
         ((6, 198, 65, 222), ["نیا", "کھیل"], 11),
         ((80, 198, 139, 222), ["لوڈ"], 12),

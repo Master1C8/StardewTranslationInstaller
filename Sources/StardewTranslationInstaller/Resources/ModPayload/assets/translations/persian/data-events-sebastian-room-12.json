@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "fa-vnrevival"
+      },
+      "Entries": {
+        "castBeam": "pause 500/message \"پیش از آنکه فرصت اجرای طلسم پیدا کنی، زارث پرتوی سایه‌ای به‌سوی همراهانت می‌فرستد!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"سم و سباستین کاملاً برشته می‌شوند...\"/pause 500/playSound yoba/pause 800/message \"طلسمت درست به صورت زارث می‌خورد.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"جیغی می‌کشد و به خاک فرو می‌ریزد. عصای سولاریون را برمی‌داری و بالا می‌بری. صلح و نظم به جهان بازگشته است.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "chargeAhead": "pause 500/message \"به جلو یورش می‌بری، اما زارث از کنارت می‌لغزد و پرتوی سایه‌ای به‌سوی همراهانت می‌فرستد!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"سباستین و سم کاملاً برشته می‌شوند...\"/pause 800/message \"دوباره شمشیرت را می‌چرخانی و ضربه‌ای محکم می‌زنی. زارث جیغ می‌کشد و به خاک فرو می‌ریزد.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"عصای سولاریون را برمی‌داری و بالا می‌بری. صلح و نظم به جهان بازگشته است.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

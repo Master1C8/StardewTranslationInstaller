@@ -1,0 +1,54 @@
+{
+  "id": "0274-sam-house-events-b",
+  "reviewedAt": "2026-08-30",
+  "records": [
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "46/f Sam 1000/p Sam",
+      "eventSegments": [
+        ["Oh, hi @. I was just about to have a snack.", "أوه، مرحبًا يا @. كنت على وشك تناول وجبة خفيفة."],
+        ["Here, let me get something for you.", "دعني أحضر لك شيئًا."],
+        ["Oh no... What a mess.$s", "أوه لا... يا لها من فوضى.$s"],
+        ["What was that sound?", "ما ذلك الصوت؟"],
+        ["*gasp*$s", "*تشهق*$s"],
+        ["This is absolutely terrible! What happened?$u", "هذا فظيع للغاية! ماذا حدث؟$u"],
+        ["$q 80 null#...Tell her, @.$s#$r 80 -10 event_snack1#Sam dropped the snack as he was handing it to me.#$r 80 50 event_snack2#Sam handed me the snack and then I dropped it.#$r 81 -50 event_snack3#Sam dropped it on purpose. He thought it would be funny.", "$q 80 null#...أخبرها يا @.$s#$r 80 -10 event_snack1#أسقط سام الوجبة الخفيفة وهو يناولني إياها.#$r 80 50 event_snack2#ناولني سام الوجبة الخفيفة، ثم أسقطتها أنا.#$r 81 -50 event_snack3#أسقطها سام عمدًا. ظن أن ذلك سيكون مضحكًا."],
+        ["$p 80#Thanks for telling me the truth, @. It's not such a big deal.|You did WHAT, Sam?! What's gotten into you?!$u", "$p 80#شكرًا على إخباري بالحقيقة يا @. الأمر ليس جللًا.|ماذا فعلت يا سام؟! ما الذي أصابك؟!$u"],
+        ["I'm sorry about this, mom. I'll clean it up.$s", "أنا آسف بشأن هذا يا أمي. سأنظف المكان.$s"],
+        ["Thanks, honey.$h", "شكرًا يا عزيزي.$h"],
+        ["$p 81#I'm angry at you. I have no idea why you lied like that.$s|Sorry about what happened earlier.", "$p 81#أنا غاضب منك. لا أفهم لماذا كذبت هكذا.$s|أنا آسف بشأن ما حدث سابقًا."]
+      ]
+    },
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "44/f Sam 500/p Sam",
+      "eventSegments": [
+        ["Oh, hi @! Sebastian and I were just having a little 'jam session'.", "أوه، مرحبًا يا @! كنت أنا وسيباستيان نعزف ارتجالًا قليلًا."],
+        ["We're trying to start a band, but we still don't know what kind of music to make. There's too many possibilities.", "نحاول تأسيس فرقة موسيقية، لكننا لا نزال نجهل نوع الموسيقى التي سنؤلفها. فالخيارات كثيرة جدًا."],
+        ["#$q 76 null#Say, @... what kind of music do you like?#$r 76 50 Event_band1#Cheerful pop music.#$r 77 50 Event_band2#Experimental noise rock.#$r 78 50 Event_band3#Hi-Energy dance music.#$r 79 50 Event_band4#Honky-tonky country music.", "#$q 76 null#قل لي يا @... أي نوع من الموسيقى تحب؟#$r 76 50 Event_band1#موسيقى بوب مرحة.#$r 77 50 Event_band2#موسيقى روك ضوضائية تجريبية.#$r 78 50 Event_band3#موسيقى رقص حماسية.#$r 79 50 Event_band4#موسيقى كانتري هونكي تونك."],
+        ["What do you say, Sebastian? Should we do this?", "ما رأيك يا سيباستيان؟ هل نختار هذا؟"],
+        ["...Okay.", "...حسنًا."],
+        ["Thanks for the help, @. With my guitar skills, and Sebastian's wizardry on the synthesizer, we're gonna be a screaming success. I'm convinced of it!$h", "شكرًا على المساعدة يا @. بمهارتي في الغيتار وبراعة سيباستيان السحرية في آلة المزج، سنحقق نجاحًا مدويًا. أنا واثق من ذلك!$h"],
+        ["Now I just need to find someone to play drums...$u", "والآن علي فقط العثور على شخص يعزف الطبول...$u"]
+      ]
+    },
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "100/f Kent 750/p Kent/p Jodi",
+      "eventSegments": [
+        ["Hi, @! I'm just making some popcorn.$h", "مرحبًا يا @! أعد بعض الفشار فحسب.$h"],
+        ["AAAAAHHHHHHH!!!$u", "آآآآآآآآه!!!$u"],
+        ["That sound...$s", "ذلك الصوت...$s"],
+        ["You should've known that sound would remind me of the war!$u", "كان ينبغي أن تعلمي أن ذلك الصوت سيذكرني بالحرب!$u"],
+        ["...I lost a lot of good friends in those bloody trenches.$s", "...فقدت كثيرًا من الأصدقاء الطيبين في تلك الخنادق الدامية.$s"],
+        ["But, dear... popcorn was always your favorite before you left.$s", "لكن يا عزيزي... لطالما كان الفشار طعامك المفضل قبل أن ترحل.$s"],
+        ["...Things have changed.", "...لقد تغيرت الأمور."],
+        ["*whisper* @... can you say something to him?$s", "*تهمس* يا @... هل يمكنك أن تقول له شيئًا؟$s"],
+        ["$q 215 null#(Say something to Kent)$s#$r 215 -25 event_popcorn1#Jodi's to blame... she should've known better!#$r 215 50 event_popcorn2#I know you're hurting... but don't blame your wife.#$r 215 -50 event_popcorn3#(Lie) Blame me... I asked for popcorn", "$q 215 null#(قل شيئًا لكينت)$s#$r 215 -25 event_popcorn1#جودي هي المذنبة... كان ينبغي أن تعرف ذلك!#$r 215 50 event_popcorn2#أعلم أنك تتألم... لكن لا تلم زوجتك.#$r 215 -50 event_popcorn3#(اكذب) ألقي اللوم علي... أنا من طلب الفشار"],
+        ["...$s#$b#I'm sorry, honey. You couldn't have known the sound of popcorn would make me upset.", "...$s#$b#أنا آسف يا عزيزتي. لم يكن بوسعك معرفة أن صوت الفشار سيزعجني."],
+        ["It's okay, dear.$s#$b#The last thing I want to do is make you upset. I'll do my best to keep your spirits up from now on.", "لا بأس يا عزيزي.$s#$b#آخر ما أريده هو إزعاجك. سأبذل قصارى جهدي لرفع معنوياتك من الآن فصاعدًا."],
+        ["I'm glad you're a friend of the family, @. Sorry about my behavior before.", "يسعدني أنك صديق للعائلة يا @. أنا آسف على تصرفي السابق."]
+      ]
+    }
+  ]
+}

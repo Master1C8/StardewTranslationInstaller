@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "100/f Kent 750/p Kent/p Jodi": "none/6 5/farmer 7 12 0 Jodi 5 5 0 Kent 7 16 2/skippable/playSound cowboy_monsterhit/move farmer 0 -3 0/playSound cowboy_monsterhit/move farmer 0 -2 0/playSound cowboy_monsterhit/move farmer 0 -1 0/playSound cowboy_monsterhit/move farmer 0 -1 3/playSound cowboy_monsterhit/pause 200/faceDirection Jodi 1/speak Jodi \"مرحبًا يا @! أعد بعض الفشار فحسب.$h\"/pause 50/playSound cowboy_monsterhit/pause 79/playSound cowboy_monsterhit/pause 100/playSound cowboy_monsterhit/pause 26/playSound cowboy_monsterhit/pause 39/playSound cowboy_monsterhit/pause 50/playSound cowboy_monsterhit/pause 110/playSound cowboy_monsterhit/pause 59/playSound cowboy_monsterhit/speak Kent \"آآآآآآآآه!!!$u\"/faceDirection Jodi 2 true/faceDirection farmer 2 true/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -1 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -2 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -1 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -2 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -1 0/speed Kent 4/playSound cowboy_monsterhit/move Kent 0 -3 0/playSound cowboy_monsterhit/pause 50/playSound cowboy_monsterhit/pause 100/playSound cowboy_monsterhit/pause 80/playSound cowboy_monsterhit/speak Kent \"ذلك الصوت...$s\"/playSound cowboy_monsterhit/pause 70/playSound cowboy_monsterhit/pause 100/playSound cowboy_monsterhit/pause 180/playSound cowboy_monsterhit/emote Kent 12/faceDirection Kent 3/speak Kent \"كان ينبغي أن تعلمي أن ذلك الصوت سيذكرني بالحرب!$u\"/pause 50/playSound cowboy_monsterhit/pause 75/playSound cowboy_monsterhit/faceDirection Jodi 0/playSound openBox/pause 400/faceDirection Jodi 2/pause 500/playMusic desolate/faceDirection Kent 2/pause 800/showFrame Kent 16/pause 800/speak Kent \"...فقدت كثيرًا من الأصدقاء الطيبين في تلك الخنادق الدامية.$s\"/pause 800/emote Jodi 28/pause 500/speak Jodi \"لكن يا عزيزي... لطالما كان الفشار طعامك المفضل قبل أن ترحل.$s\"/pause 500/showFrame Kent 0/pause 500/pause 800/speak Kent \"...لقد تغيرت الأمور.\"/pause 600/faceDirection Jodi 1/pause 400/move Jodi 1 0 1/speak Jodi \"*تهمس* يا @... هل يمكنك أن تقول له شيئًا؟$s\"/pause 300/faceDirection farmer 3/pause 500/faceDirection farmer 2/pause 500/faceDirection Kent 0/pause 300/speak Kent \"$q 215 null#(قل شيئًا لكينت)$s#$r 215 -25 event_popcorn1#جودي هي المذنبة... كان ينبغي أن تعرف ذلك!#$r 215 50 event_popcorn2#أعلم أنك تتألم... لكن لا تلم زوجتك.#$r 215 -50 event_popcorn3#(اكذب) ألقي اللوم علي... أنا من طلب الفشار\"/pause 900/faceDirection Kent 2/pause 700/emote Kent 28/pause 600/speak Kent \"...$s#$b#أنا آسف يا عزيزتي. لم يكن بوسعك معرفة أن صوت الفشار سيزعجني.\"/pause 700/move Jodi 0 1 1/speak Jodi \"لا بأس يا عزيزي.$s#$b#آخر ما أريده هو إزعاجك. سأبذل قصارى جهدي لرفع معنوياتك من الآن فصاعدًا.\"/pause 500/faceDirection Kent 3/pause 1000/end dialogue Kent \"يسعدني أنك صديق للعائلة يا @. أنا آسف على تصرفي السابق.\""
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "44/f Sam 500/p Sam": "sampractice/-1000 -1000/farmer 4 15 1 Sam 17 16 2 Sebastian 18 18 0/positionOffset Sebastian 32 -31/skippable/animate Sam false true 200 20 21/showFrame Sebastian 41/viewport 17 16 true/move farmer 8 0 0/pause 500/doAction 12 14/move farmer 0 -2 1/move farmer 4 0 2/pause 9000/stopAnimation Sam/showFrame Sebastian 8/pause 1000/faceDirection Sam 0/pause 800/speak Sam \"أوه، مرحبًا يا @! كنت أنا وسيباستيان نعزف ارتجالًا قليلًا.\"/move farmer 0 3 1/faceDirection Sam 3/faceDirection Sebastian 3/speak Sam \"نحاول تأسيس فرقة موسيقية، لكننا لا نزال نجهل نوع الموسيقى التي سنؤلفها. فالخيارات كثيرة جدًا.\"/pause 500/emote Sebastian 28/faceDirection Sam 2/pause 500/emote Sam 16/faceDirection Sam 3/speak Sam \"#$q 76 null#قل لي يا @... أي نوع من الموسيقى تحب؟#$r 76 50 Event_band1#موسيقى بوب مرحة.#$r 77 50 Event_band2#موسيقى روك ضوضائية تجريبية.#$r 78 50 Event_band3#موسيقى رقص حماسية.#$r 79 50 Event_band4#موسيقى كانتري هونكي تونك.\"/move Sam 0 2 1/speak Sam \"ما رأيك يا سيباستيان؟ هل نختار هذا؟\"/pause 300/faceDirection Sebastian 0/pause 300/faceDirection Sebastian 3/speak Sebastian \"...حسنًا.\"/pause 500/faceDirection Sam 0/move Sam 0 -2 3/speak Sam \"شكرًا على المساعدة يا @. بمهارتي في الغيتار وبراعة سيباستيان السحرية في آلة المزج، سنحقق نجاحًا مدويًا. أنا واثق من ذلك!$h\"/faceDirection Sam 2/speak Sam \"والآن علي فقط العثور على شخص يعزف الطبول...$u\"/pause 500/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "ar-vnrevival"
+      },
+      "Entries": {
+        "46/f Sam 1000/p Sam": "playful/7 4/farmer 7 12 0 Sam 7 5 0 Jodi 17 7 0/skippable/move farmer 0 -6 0/faceDirection Sam 2/pause 300/speak Sam \"أوه، مرحبًا يا @. كنت على وشك تناول وجبة خفيفة.\"/pause 500/speak Sam \"دعني أحضر لك شيئًا.\"/faceDirection Sam 0/pause 500/playSound openBox/pause 500/faceDirection Sam 3/playSound dwop/specificTemporarySprite dropEgg/showFrame Sam 33/jump Sam/pause 1000/emote Sam 12/showFrame Sam 12/speak Sam \"أوه لا... يا لها من فوضى.$s\"/speed Jodi 4/move Jodi -10 0 0/speak Jodi \"ما ذلك الصوت؟\"/emote Jodi 16/speak Jodi \"*تشهق*$s\"/move Jodi -1 0 0/move Jodi 0 -1 0/speak Jodi \"هذا فظيع للغاية! ماذا حدث؟$u\"/speak Sam \"$q 80 null#...أخبرها يا @.$s#$r 80 -10 event_snack1#أسقط سام الوجبة الخفيفة وهو يناولني إياها.#$r 80 50 event_snack2#ناولني سام الوجبة الخفيفة، ثم أسقطتها أنا.#$r 81 -50 event_snack3#أسقطها سام عمدًا. ظن أن ذلك سيكون مضحكًا.\"/pause 300/speak Jodi \"$p 80#شكرًا على إخباري بالحقيقة يا @. الأمر ليس جللًا.|ماذا فعلت يا سام؟! ما الذي أصابك؟!$u\"/faceDirection Jodi 0/speak Sam \"أنا آسف بشأن هذا يا أمي. سأنظف المكان.$s\"/emote Jodi 20/speak Jodi \"شكرًا يا عزيزي.$h\"/move Jodi 0 1 1/move Jodi 1 0 2 /faceDirection Sam 2 true/move Jodi 0 7 2 true/globalFade/viewport -1000 -1000/end dialogue Sam \"$p 81#أنا غاضب منك. لا أفهم لماذا كذبت هكذا.$s|أنا آسف بشأن ما حدث سابقًا.\""
+      }
+    }
+  ]
+}

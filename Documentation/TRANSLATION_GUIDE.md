@@ -2,7 +2,7 @@
 
 Этот документ предназначен для модели или переводчика, продолжающего польский перевод **VN Revival**. Цель проекта — добавить в Stardew Valley отдельный язык `pl-vnrevival` через Content Patcher, не заменяя оригинальные XNB-файлы игры.
 
-Текущая сборка — единый установщик завершённых языков VN Revival. Один `ModPayload` регистрирует русский, польский, узбекский, суахили и амхарский языки независимо. Пользователь получает простой сценарий: открыть → дождаться установки всех переводов → нажать кнопку запуска. Нужный язык выбирается уже внутри Stardew Valley; отдельный выбор в установщике не нужен.
+Текущая сборка — единый установщик завершённых языков VN Revival. Один `ModPayload` регистрирует русский, польский, вьетнамский, суахили, персидский, арабский, индонезийский, хинди и традиционный китайский языки независимо. Пользователь получает простой сценарий: открыть → дождаться установки всех переводов → нажать кнопку запуска. Нужный язык выбирается уже внутри Stardew Valley; отдельный выбор в установщике не нужен.
 
 ## 0. Универсальный контракт языкового пакета
 
@@ -22,14 +22,14 @@ Sources/StardewTranslationInstaller/Resources/PackageConfig.json
 - `steamAppID` — приложение, запускаемое после установки;
 - `copy` — весь видимый текст установщика на языке сборки.
 
-Установщик принимает 30 текущих языков SiteForMods:
+Установщик принимает единый канонический каталог из 30 языков SiteForMods:
 
 ```text
-en ru fr de es pl tr ar pt ja ko zh zh-TW it th vi id fa hi bn ur ta te my mr
-ml kn uz sw am
+zh en ru es pt-BR ja de ko fr tr pl zh-TW it th vi id uk ar cs hu nl fa ro hi
+fil el bg sr sw he
 ```
 
-Список синхронизирован с `SITE_LOCALE_CODES` в `SiteForMods/lib/languages.ts`. При изменении списка сайта нужно вместе обновить `TranslationPackage.supportedSiteLocales` и тесты.
+Список синхронизирован с `SITE_LOCALE_CODES` в `SiteForMods/lib/language-data/site-locales.ts`. При изменении списка сайта нужно вместе обновить `TranslationPackage.supportedSiteLocales` и тесты.
 
 `PackageConfig.json`, `ModPayload/manifest.json` и `ModPayload/content.json` обязаны совпадать:
 
@@ -73,7 +73,7 @@ Stardew Valley/Contents/MacOS/Mods/[CP] VN Revival Polish/
 
 Каждая английская запись содержит стабильный `id`, `priority`, `term`, пояснение `meaning`, категорию и необязательную точную ссылку на источник. Каждый переводной слой сопоставляет тот же `id` с полями `term` и `meaning`. Стабильные ID нельзя менять после появления переводов.
 
-В репозитории сохранены полные рабочие снимки:
+В репозитории сохранены рабочие снимки для активных и незавершённых пакетов:
 
 ```text
 Documentation/glossary/glossary.en.json
@@ -86,17 +86,7 @@ Documentation/glossary/glossary.vi.json
 Documentation/glossary/glossary.id.json
 Documentation/glossary/glossary.fa.json
 Documentation/glossary/glossary.hi.json
-Documentation/glossary/glossary.bn.json
-Documentation/glossary/glossary.ur.json
-Documentation/glossary/glossary.ta.json
-Documentation/glossary/glossary.te.json
-Documentation/glossary/glossary.my.json
-Documentation/glossary/glossary.mr.json
-Documentation/glossary/glossary.ml.json
-Documentation/glossary/glossary.kn.json
-Documentation/glossary/glossary.uz.json
 Documentation/glossary/glossary.sw.json
-Documentation/glossary/glossary.am.json
 ```
 
 В английском снимке 673 записи, и каждый переводной снимок содержит ровно 673 соответствия внутри объекта своей локали. У термина без подходящей конкретной страницы `sourceUrl` намеренно отсутствует; общую статью нельзя подставлять вместо точного источника.
@@ -115,7 +105,7 @@ data/games/stardew-valley/glossary-translations.json
 ```sh
 cmp Documentation/glossary/glossary.en.json \
   /Users/antonkrutov/Desktop/SiteForMods/data/games/stardew-valley/glossary.json
-for locale in ru pl ar zh-TW th vi id fa hi bn ur ta te my mr ml kn uz sw am; do
+for locale in ru pl ar zh-TW th vi id fa hi sw; do
   jq --arg locale "$locale" '{($locale): .[$locale]}' \
     /Users/antonkrutov/Desktop/SiteForMods/data/games/stardew-valley/glossary-translations.json \
     > "/tmp/glossary.$locale.json"

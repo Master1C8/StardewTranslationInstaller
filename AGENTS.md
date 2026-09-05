@@ -2,7 +2,7 @@
 
 Read `Documentation/TRANSLATION_GUIDE.md` completely before changing translation files.
 Read `Documentation/POLISH_IMPLEMENTATION_RUNBOOK.md` completely before changing Content Patcher includes, language assets, XNB fonts, installer packaging, or the Polish runtime configuration.
-Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing Uzbek text or assets, the shared VN language switcher, or the Uzbek runtime configuration.
+Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing the shared VN language switcher or investigating the retired Uzbek package.
 
 ## Non-negotiable rules
 
@@ -20,7 +20,7 @@ Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing 
 - One app build contains one unified `PackageConfig.json` and one `ModPayload` that installs all finished VN Revival languages. Do not add a language picker to the installer: the app installs the complete set, and the player chooses a language inside Stardew Valley.
 - Translation work belongs under `Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/`. Package identity and localized installer copy belong in `Resources/PackageConfig.json`. Do not modify XNB files inside the installed game's `Content` directory. Generated locale-specific XNB assets belong only under the source `ModPayload/assets/fonts/` and must follow the runbook.
 - Keep `Format` only in the root `ModPayload/content.json`. Every secondary file loaded through `Include` must omit `Format`, have non-empty `Changes`, and be included exactly once.
-- The Russian, Polish, and Amharic packages must load locale-specific `Fonts/SpriteFont1`, `Fonts/SmallFont`, and `Minigames/TitleButtons` for their exact locale codes. Every generated XNB character map must stay sorted by Unicode with the four SpriteFont metadata lists aligned; `UseLatinFont` alone does not provide missing glyphs.
+- Every retained font-backed package must load locale-specific `Fonts/SpriteFont1`, `Fonts/SmallFont`, and `Minigames/TitleButtons` for its exact locale code. Every generated XNB character map must stay sorted by Unicode with the four SpriteFont metadata lists aligned; `UseLatinFont` alone does not provide missing glyphs.
 - The shared Stardew Valley glossary is mandatory. Start with the repository snapshot in `Documentation/glossary/`, then check whether SiteForMods/CMS has a newer complete export. Apply the translation for the package's `siteLocale` by stable glossary ID consistently across UI, items, locations, quests, and dialogue. The glossary belongs to the game in SiteForMods and is shared by every language project; it is not owned by this installer.
 - Translate from the original English text yourself. Do not call a machine-translation service and do not copy an official localization as the translation. Official localized assets may only be consulted to understand file structure or established control-token syntax.
 - The ready English extraction on this machine is `/Users/antonkrutov/Developer/data/stardew-english-unpacked/`, and the pinned extractor is `/Users/antonkrutov/Developer/tools/xnbcli/xnbcli`. In xnbcli JSON, translate entries from the top-level `content` object. If the extraction is missing or stale, follow section 3 of the translation guide and extract only base XNB files without locale suffixes from the installed game.
@@ -37,4 +37,4 @@ Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing 
 4. Glossary terms for the package's `siteLocale` are applied consistently.
 5. `swift test --disable-sandbox` passes with the Xcode toolchain.
 6. `./Scripts/build-app.sh` succeeds when producing a deliverable.
-7. A fresh SMAPI launch loads the locale-specific Russian, Polish, and Amharic fonts and each language's `TitleButtons` without any adjacent Content Patcher error; visual QA covers Polish `ĄĆĘŁŃÓŚŹŻąćęłńóśźż` and the complete Amharic character set used by the package.
+7. A fresh SMAPI launch loads the locale-specific fonts and each retained language's `TitleButtons` without any adjacent Content Patcher error; visual QA covers Polish `ĄĆĘŁŃÓŚŹŻąćęłńóśźż` and the complete character sets used by the retained packages.

@@ -14,16 +14,15 @@ using StardewValley;
 using StardewValley.BellsAndWhistles;
 using StardewValley.GameData;
 
-namespace VNRevival.LanguageSwitcher;
+namespace VNRevival.LanguageSwitcher
+{
 
 public sealed class ModEntry : Mod
 {
-    private const string UrduLanguageCode = "ur-vnrevival";
     private const string PersianLanguageCode = "fa-vnrevival";
     private const string ArabicLanguageCode = "ar-vnrevival";
-    private static UrduTextAdapter? UrduAdapter;
-    private static UrduTextAdapter? PersianAdapter;
-    private static UrduTextAdapter? ArabicAdapter;
+    private static ArabicScriptTextAdapter? PersianAdapter;
+    private static ArabicScriptTextAdapter? ArabicAdapter;
 
     public override void Entry(IModHelper helper)
     {
@@ -38,12 +37,10 @@ public sealed class ModEntry : Mod
         Harmony harmony = new(ModManifest.UniqueID);
         harmony.Patch(target, prefix: new HarmonyMethod(prefix));
 
-        string shapingMap = Path.Combine(helper.DirectoryPath, "urdu-shaping-map.json");
-        UrduAdapter = UrduTextAdapter.Load(shapingMap);
         string persianShapingMap = Path.Combine(helper.DirectoryPath, "persian-shaping-map.json");
-        PersianAdapter = UrduTextAdapter.Load(persianShapingMap);
+        PersianAdapter = ArabicScriptTextAdapter.Load(persianShapingMap);
         string arabicShapingMap = Path.Combine(helper.DirectoryPath, "arabic-shaping-map.json");
-        ArabicAdapter = UrduTextAdapter.Load(arabicShapingMap);
+        ArabicAdapter = ArabicScriptTextAdapter.Load(arabicShapingMap);
         MethodInfo textPrefix = AccessTools.Method(typeof(ModEntry), nameof(BeforeTextRendering))
             ?? throw new InvalidOperationException("The Arabic-script rendering adapter was not found.");
         HarmonyMethod textHarmonyPrefix = new(textPrefix);
@@ -66,7 +63,7 @@ public sealed class ModEntry : Mod
             harmony.Patch(method, prefix: textHarmonyPrefix);
             patched += 1;
         }
-        Monitor.Log($"Urdu, Persian, and Arabic shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
+        Monitor.Log($"Persian and Arabic shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
     }
 
     private static bool IsTextParameter(ParameterInfo parameter)
@@ -96,9 +93,8 @@ public sealed class ModEntry : Mod
         if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod)
             return;
 
-        UrduTextAdapter? adapter = LocalizedContentManager.CurrentModLanguage?.LanguageCode switch
+        ArabicScriptTextAdapter? adapter = LocalizedContentManager.CurrentModLanguage?.LanguageCode switch
         {
-            UrduLanguageCode => UrduAdapter,
             PersianLanguageCode => PersianAdapter,
             ArabicLanguageCode => ArabicAdapter,
             _ => null,
@@ -115,7 +111,7 @@ public sealed class ModEntry : Mod
     }
 }
 
-public sealed class UrduTextAdapter
+public sealed class ArabicScriptTextAdapter
 {
     private enum Direction { Neutral, LeftToRight, RightToLeft }
 
@@ -138,7 +134,7 @@ public sealed class UrduTextAdapter
     private readonly Dictionary<string, string> joiningByCluster;
     private readonly HashSet<string> glyphs;
 
-    private UrduTextAdapter(MapEntry[] entries)
+    private ArabicScriptTextAdapter(MapEntry[] entries)
     {
         glyphByClusterAndForm = entries.ToDictionary(
             entry => Key(entry.Logical, entry.Form),
@@ -151,7 +147,7 @@ public sealed class UrduTextAdapter
         glyphs = entries.Select(entry => entry.Glyph).ToHashSet(StringComparer.Ordinal);
     }
 
-    public static UrduTextAdapter Load(string file)
+    public static ArabicScriptTextAdapter Load(string file)
     {
         MapDocument? document = JsonSerializer.Deserialize<MapDocument>(
             File.ReadAllText(file),
@@ -159,14 +155,14 @@ public sealed class UrduTextAdapter
         );
         if (document?.Format != 2 || document.Entries.Length == 0)
             throw new InvalidDataException("The Arabic-script shaping map is missing or invalid.");
-        return new UrduTextAdapter(document.Entries);
+        return new ArabicScriptTextAdapter(document.Entries);
     }
 
     public string Transform(string value)
     {
         if (string.IsNullOrEmpty(value)) return value;
-        if (ContainsMappedGlyph(value) && !ContainsLogicalUrdu(value)) return value;
-        if (!ContainsLogicalUrdu(value)) return value;
+        if (ContainsMappedGlyph(value) && !ContainsLogicalScript(value)) return value;
+        if (!ContainsLogicalScript(value)) return value;
 
         StringBuilder result = new(value.Length);
         int start = 0;
@@ -298,7 +294,7 @@ public sealed class UrduTextAdapter
         return false;
     }
 
-    private static bool ContainsLogicalUrdu(string value)
+    private static bool ContainsLogicalScript(string value)
     {
         foreach (char character in value)
             if (IsArabic(character) && char.IsLetter(character)) return true;
@@ -325,4 +321,5 @@ public sealed class UrduTextAdapter
     }
 
     private static string Key(string logical, string form) => $"{logical}\0{form}";
+}
 }

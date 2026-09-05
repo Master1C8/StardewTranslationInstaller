@@ -36,10 +36,9 @@ struct InstallerCopy: Codable, Equatable, Sendable {
 
 struct TranslationPackage: Codable, Equatable, Sendable {
     static let supportedSiteLocales: Set<String> = [
-        "en", "ru", "fr", "de", "es", "pl", "tr", "ar", "pt", "ja", "ko", "zh", "zh-TW",
-        "it", "th", "vi", "id", "fa", "hi", "cs", "hu", "ro", "el", "bn", "ur", "ta",
-        "te", "he", "fi", "fil", "bg", "sr", "my", "mr", "ml", "kn", "hy", "ka", "kk",
-        "uz", "uk", "sw", "am",
+        "zh", "en", "ru", "es", "pt-BR", "ja", "de", "ko", "fr", "tr", "pl", "zh-TW",
+        "it", "th", "vi", "id", "uk", "ar", "cs", "hu", "nl", "fa", "ro", "hi", "fil",
+        "el", "bg", "sr", "sw", "he",
     ]
 
     let schemaVersion: Int

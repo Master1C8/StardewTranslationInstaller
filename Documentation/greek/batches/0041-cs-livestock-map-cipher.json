@@ -1,0 +1,419 @@
+{
+  "id": "0041-cs-livestock-map-cipher",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "8db020ae69a2450aa9cb4fad2437d03dbf9f14578ceb3ee071ddc4a5d0554a6b",
+    "notes": "All 58 complete bilingual pairs read; male/female romantic diary choices corrected and reread. Intentional Junimo childlike farewell spelling retained as directly authored Greek. Dwarvish inscription and Junimo cipher preservation reasons are grounded in native GameLocation/JunimoNoteMenu/SpriteText code, not missing translations. Time, prices, construction tiers, names and map address preserved. Diary name-bearing row deferred because native DiaryEvent inserts an English internal NPC ID rather than displayName. Later canonical-name correction: Πιερ is the locked unaccented monosyllabic name; corrected the only Πιέρ occurrence and reread the complete sentence."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5936",
+      "source": "Requires construction of a Big Barn",
+      "translation": "Απαιτείται η κατασκευή Μεγάλου Στάβλου",
+      "glossaryIds": [
+        "big-barn"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5937",
+      "source": "Duck",
+      "translation": "Πάπια",
+      "glossaryIds": [
+        "duck"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5940",
+      "source": "Requires construction of a Big Coop",
+      "translation": "Απαιτείται η κατασκευή Μεγάλου Κοτετσιού",
+      "glossaryIds": [
+        "big-coop"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5942",
+      "source": "Sheep",
+      "translation": "Πρόβατο",
+      "glossaryIds": [
+        "sheep"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5944",
+      "source": "Requires construction of a Deluxe Barn",
+      "translation": "Απαιτείται η κατασκευή Πολυτελούς Στάβλου",
+      "glossaryIds": [
+        "deluxe-barn"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5945",
+      "source": "Rabbit",
+      "translation": "Κουνέλι",
+      "glossaryIds": [
+        "rabbit"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5947",
+      "source": "Requires construction of a Deluxe Coop",
+      "translation": "Απαιτείται η κατασκευή Πολυτελούς Κοτετσιού",
+      "glossaryIds": [
+        "deluxe-coop"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5948",
+      "source": "Pig",
+      "translation": "Γουρούνι",
+      "glossaryIds": [
+        "pig"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Utility.cs.5950",
+      "source": "Requires construction of a Deluxe Barn",
+      "translation": "Απαιτείται η κατασκευή Πολυτελούς Στάβλου",
+      "glossaryIds": [
+        "deluxe-barn"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Junimo.cs.6625",
+      "source": "Bai!",
+      "translation": "Για!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Junimo.cs.6626",
+      "source": "Gud-Bai!",
+      "translation": "Αντιό!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "spring",
+      "source": "spring",
+      "translation": "άνοιξη"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "winter",
+      "source": "winter",
+      "translation": "χειμώνας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "fall",
+      "source": "fall",
+      "translation": "φθινόπωρο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "summer",
+      "source": "summer",
+      "translation": "καλοκαίρι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DiaryEvent.cs.6658",
+      "source": "I think I'll write in my journal tonight...",
+      "translation": "Λέω να γράψω στο ημερολόγιό μου απόψε..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DiaryEvent.cs.6660",
+      "source": "I think I'll write in my diary tonight...",
+      "translation": "Λέω να γράψω στο ημερολόγιό μου απόψε..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DiaryEvent.cs.6667",
+      "source": "...We're becoming good friends. I hope things stay that way.",
+      "translation": "...Η φιλία μας δυναμώνει. Ελπίζω να παραμείνει έτσι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DiaryEvent.cs.6669",
+      "source": "...I like him more than just a friend.",
+      "translation": "...Τον βλέπω σαν κάτι παραπάνω από φίλο."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DiaryEvent.cs.6670",
+      "source": "...I like her more than just a friend.",
+      "translation": "...Τη βλέπω σαν κάτι παραπάνω από φίλη."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "QuestionEvent.cs.6692",
+      "source": "Choose a name:",
+      "translation": "Διαλέξτε όνομα:"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8175",
+      "source": "It's locked.",
+      "translation": "Είναι κλειδωμένα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8214",
+      "source": "Unop dunyuu doo pusutn snaus^Op hanp o toeday na doo smol^Vhu lonozol yenn huot olait tol",
+      "translation": "Unop dunyuu doo pusutn snaus^Op hanp o toeday na doo smol^Vhu lonozol yenn huot olait tol",
+      "preserveReason": "Intentionally unintelligible in-world Dwarvish inscription, displayed only when the player cannot understand Dwarves. Native GameLocation DwarfGrave uses the separate Strings/Locations:Town_DwarfGrave_Translated when understood. Preserve the invented-language text and line delimiters; it is not untranslated English."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8429",
+      "source": "You don't have any mail.",
+      "translation": "Δεν έχετε αλληλογραφία."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8525",
+      "source": "Come back when Pierre's tending the shop.",
+      "translation": "Επιστρέψτε όταν ο Πιερ εξυπηρετεί στο κατάστημα.",
+      "glossaryIds": [
+        "pierre"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8708",
+      "source": "Large Pack",
+      "translation": "Μεγάλο Σακίδιο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8709",
+      "source": "Deluxe Pack",
+      "translation": "Πολυτελές Σακίδιο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8715",
+      "source": "Error: Not enough money.",
+      "translation": "Σφάλμα: Δεν έχετε αρκετά χρήματα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MineShaft.cs.9484",
+      "source": "A way down has appeared.",
+      "translation": "Εμφανίστηκε δίοδος προς τα κάτω."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "BlueprintsMenu.cs.10002",
+      "source": "Not Enough Resources",
+      "translation": "Δεν Υπάρχουν Αρκετοί Πόροι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ChatBox.cs.10261",
+      "source": " Invalid Command ::",
+      "translation": " Μη Έγκυρη Εντολή ::"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DayTimeMoneyBox.cs.10370",
+      "source": "am",
+      "translation": "π.μ."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DayTimeMoneyBox.cs.10371",
+      "source": "pm",
+      "translation": "μ.μ."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DayTimeMoneyBox.cs.10378",
+      "source": "Paused",
+      "translation": "Παύση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.10444",
+      "source": "Score: {0}",
+      "translation": "Βαθμολογία: {0}"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12010",
+      "source": "Fish Caught: {0}",
+      "translation": "Ψάρια που Πιάστηκαν: {0}"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12011",
+      "source": "{0} Perfection Bonus!",
+      "translation": "Μπόνους Τελειότητας {0}!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12012",
+      "source": "No Perfection Bonus",
+      "translation": "Χωρίς Μπόνους Τελειότητας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12013",
+      "source": "Reward: {0} Star Tokens",
+      "translation": "Ανταμοιβή: {0} Αστερομάρκες",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12021",
+      "source": "No Reward... Try Harder",
+      "translation": "Καμία Ανταμοιβή... Προσπαθήστε Περισσότερο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "JunimoNoteMenu.cs.10783",
+      "source": "Rewards",
+      "translation": "Ανταμοιβές"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "JunimoNoteMenu.cs.10786",
+      "source": "We    the  Junimo are    happy to    aid  you.  In     return we     ask for gifts   of      the valley.    If you   are one     with    forest   magic    then you    will   see    the true    nature   of  this scroll.",
+      "translation": "We    the  Junimo are    happy to    aid  you.  In     return we     ask for gifts   of      the valley.    If you   are one     with    forest   magic    then you    will   see    the true    nature   of  this scroll.",
+      "preserveReason": "Encoded Junimo-script input, never shown as readable English by its native caller: JunimoNoteMenu.draw passes junimoText:true and non-Latin locales explicitly use LoadBaseString. SpriteText selects ASCII-indexed Junimo sprite glyphs. Preserve text and spacing as cipher glyph/layout data; readable story text is translated separately."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10992",
+      "source": "OK",
+      "translation": "Εντάξει"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10993",
+      "source": "Cancel",
+      "translation": "Ακύρωση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10994",
+      "source": "Delete File",
+      "translation": "Διαγραφή Αρχείου"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11019",
+      "source": "{0} Farm",
+      "translation": "Φάρμα {0}"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11020",
+      "source": "{0}g",
+      "translation": "{0}g",
+      "preserveReason": "Runtime numeric money placeholder and canonical g currency unit only; no translatable source wording."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11022",
+      "source": "No Saved Games Found",
+      "translation": "Δεν Βρέθηκαν Αποθηκευμένα Παιχνίδια"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11023",
+      "source": "Really delete file: {0}?",
+      "translation": "Να διαγραφεί πράγματι το αρχείο: {0};"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11062",
+      "source": "Calico Desert",
+      "translation": "Έρημος Κάλικο",
+      "glossaryIds": [
+        "calico-desert"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11064",
+      "source": "{0} Farm",
+      "translation": "Φάρμα {0}"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11065",
+      "source": "Backwoods",
+      "translation": "Πίσω Δάσος",
+      "glossaryIds": [
+        "backwoods"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11066",
+      "source": "Bus Stop",
+      "translation": "Στάση Λεωφορείου",
+      "glossaryIds": [
+        "bus-stop"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11067",
+      "source": "Wizard's Tower",
+      "translation": "Πύργος του Μάγου",
+      "glossaryIds": [
+        "wizards-tower"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11068",
+      "source": "Marnie's Ranch",
+      "translation": "Ράντσο της Μάρνι",
+      "glossaryIds": [
+        "marnies-ranch"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11069",
+      "source": "Open 9:00AM to 4:00PM most days",
+      "translation": "Ανοιχτά 9:00π.μ. έως 4:00μ.μ. τις περισσότερες ημέρες"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11070",
+      "source": "Leah's Cottage",
+      "translation": "Σπιτάκι της Λία",
+      "glossaryIds": [
+        "leahs-cottage"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11071",
+      "source": "1 Willow Lane",
+      "translation": "Οδός Γουίλοου 1",
+      "glossaryIds": [
+        "one-willow-lane"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "id": "0068-cs-traders-island-buffs",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "e8d69a09905abc84039aa7c73cc80a9050766a2949ad7c08081152e1a10e34b3",
+    "notes": "All 30 bilingual entries plus female traveler variant read in full. Data/Shops DesertTrade uses localized random greetings for the local shopper; explicit Greek player-gender override supplies ταξιδιώτισσα while default supplies ταξιδιώτη. Existing sir/miss variants kept. Boots receive invariant κατά παραγγελία label. Volcano dialogue and buff wording avoid unsupported gender adjectives, retaining all restrictions, monster-free refuge and ancestry details."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DesertTrader4_male",
+      "source": "The camel seems to like you, sir. That is indeed a very good sign.",
+      "translation": "Η καμήλα φαίνεται να σας συμπαθεί, κύριε. Αυτό είναι πράγματι πολύ καλό σημάδι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DesertTrader4_female",
+      "source": "The camel seems to like you, miss. That is indeed a very good sign.",
+      "translation": "Η καμήλα φαίνεται να σας συμπαθεί, δεσποινίς. Αυτό είναι πράγματι πολύ καλό σημάδι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DesertTrader3",
+      "source": "Your coin has no value where I come from... Do you have anything else to trade?",
+      "translation": "Το νόμισμά σας δεν έχει αξία στον τόπο μου... Έχετε κάτι άλλο για ανταλλαγή;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DesertTrader2",
+      "source": "Exotic goods for trade!",
+      "translation": "Εξωτικά αγαθά για ανταλλαγή!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DesertTrader1",
+      "source": "Welcome, traveler... interested in making a trade?",
+      "translation": "Καλώς ήρθατε, ταξιδιώτη... ενδιαφέρεστε για μια ανταλλαγή;",
+      "femaleTranslation": "Καλώς ήρθατε, ταξιδιώτισσα... ενδιαφέρεστε για μια ανταλλαγή;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CustomizedBootItemName",
+      "source": "Custom-tailored {0}",
+      "translation": "{0} (κατά παραγγελία)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Ostrich_Description",
+      "source": "Adult ostriches will lay a very large egg once a week.",
+      "translation": "Οι ενήλικες στρουθοκάμηλοι γεννούν ένα πολύ μεγάλο αυγό μία φορά την εβδομάδα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Furniture_Outdoors",
+      "source": "Outdoor Furniture",
+      "translation": "Έπιπλα εξωτερικού χώρου"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Furniture_Outdoors_Description",
+      "source": "Can be placed outside.",
+      "translation": "Μπορεί να τοποθετηθεί έξω."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Furniture_Outdoors_Message",
+      "source": "Can only be placed outside.",
+      "translation": "Μπορεί να τοποθετηθεί μόνο έξω."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Furniture_Decoration",
+      "source": "Decoration",
+      "translation": "Διακοσμητικό"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Furniture_Decoration_Description",
+      "source": "Can be placed as decoration.",
+      "translation": "Μπορεί να τοποθετηθεί ως διακοσμητικό."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13060_Fruit",
+      "source": "Too close to a fruit tree",
+      "translation": "Πολύ κοντά σε οπωροφόρο δέντρο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "VolcanoShop0",
+      "source": "A human who speaks our language? I'm impressed...",
+      "translation": "Ένας άνθρωπος που μιλά τη γλώσσα μας; Εντυπωσιάστηκα..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "VolcanoShop1",
+      "source": "Please, stay and rest. There are no monsters here.",
+      "translation": "Σε παρακαλώ, μείνε να ξεκουραστείς. Δεν υπάρχουν τέρατα εδώ."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "VolcanoShop2",
+      "source": "I haven't seen a human here for many years...",
+      "translation": "Έχω πολλά χρόνια να δω άνθρωπο εδώ..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "VolcanoShop3",
+      "source": "You are very brave to come here. Please, peruse my stock.",
+      "translation": "Θέλει πολύ θάρρος για να έρθεις ως εδώ. Σε παρακαλώ, ρίξε μια ματιά στα εμπορεύματά μου."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "VolcanoShop4",
+      "source": "This mountain was the home of my ancestors. Now we live in the ruins of their great civilization.",
+      "translation": "Αυτό το βουνό ήταν η πατρίδα των προγόνων μου. Τώρα ζούμε στα ερείπια του σπουδαίου πολιτισμού τους."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "JukeboxRandomTrack",
+      "source": "Randomize",
+      "translation": "Τυχαία επιλογή"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishTank_Full",
+      "source": "You cannot add any more items of this type",
+      "translation": "Δεν μπορείτε να προσθέσετε άλλα αντικείμενα αυτού του τύπου"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage_UIScale",
+      "source": "UI Scale",
+      "translation": "Κλίμακα διεπαφής"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NoSprinklers",
+      "source": "Sprinklers won't work on this terrain.",
+      "translation": "Οι ποτιστήρες δεν λειτουργούν σε αυτό το έδαφος."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MonsterMusk_BuffName",
+      "source": "Monster Musk",
+      "translation": "Μόσχος Τεράτων"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MonsterMusk_BuffDescription",
+      "source": "Your scent makes you irresistible to monsters",
+      "translation": "Η μυρωδιά σας τραβά ακαταμάχητα τα τέρατα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Nauseous_BuffName",
+      "source": "Nauseated",
+      "translation": "Ναυτία"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Nauseous_BuffDescription",
+      "source": "Urgh... You're too sick to eat anything",
+      "translation": "Ουφ... Η αδιαθεσία δεν σας αφήνει να φάτε τίποτα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Nauseous_CantEat",
+      "source": "Too nauseated to eat...",
+      "translation": "Η ναυτία δεν σας αφήνει να φάτε..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Darkness_BuffName",
+      "source": "Darkness",
+      "translation": "Σκοτάδι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Darkness_BuffDescription",
+      "source": "Darkness clouds your vision, making it difficult to see",
+      "translation": "Το σκοτάδι θολώνει την όρασή σας και σας δυσκολεύει να δείτε"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OnlyPlaceOnFarm",
+      "source": "Can only be placed on the Farm.",
+      "translation": "Μπορεί να τοποθετηθεί μόνο στο αγρόκτημα."
+    }
+  ]
+}

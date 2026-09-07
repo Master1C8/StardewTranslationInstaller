@@ -1,0 +1,432 @@
+{
+  "id": "0009-ui-chat",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "9942f6a31cf6c17e4396e1d64f636b1acfa4a1cd0ea2ca4f7678a1d1d3829a78",
+    "notes": "All 69 pairs read; removed an unsupported combat qualifier and gendered possessive from unconsciousness, improved safe arrival wording, then re-read both. Chat templates without words individually preserved. Greek thousands separators are periods; values remain identical. Baby message deferred until Lexicon pronoun composition is resolved."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_IPConnections",
+      "source": "Accept IP connections",
+      "translation": "Αποδοχή συνδέσεων IP"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_FarmhandCreation",
+      "source": "Enable new character creation",
+      "translation": "Ενεργοποίηση δημιουργίας νέου χαρακτήρα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowInviteCode",
+      "source": "Show Invite Code",
+      "translation": "Εμφάνιση Κωδικού Πρόσκλησης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowReadyStatus",
+      "source": "Show Overnight Player Status List",
+      "translation": "Εμφάνιση Λίστας Νυχτερινής Κατάστασης Παικτών"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ScreenshotHeader",
+      "source": "Screenshot:",
+      "translation": "Στιγμιότυπο Οθόνης:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_RemotelyDisconnected",
+      "source": "The server has closed the connection.",
+      "translation": "Ο διακομιστής έκλεισε τη σύνδεση."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_FarmhandOnline",
+      "source": "Can't demolish while this cabin's farmhand is online",
+      "translation": "Δεν γίνεται κατεδάφιση όσο ο εργάτης αυτής της καλύβας είναι σε σύνδεση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_DemolishCabinConfirm",
+      "source": "This will permanently remove {0} from the game. Are you sure you want to demolish this cabin?",
+      "translation": "Θα αφαιρεθεί οριστικά από το παιχνίδι ο χαρακτήρας {0}. Είστε σίγουροι ότι θέλετε να κατεδαφίσετε αυτή την καλύβα;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostAvailability",
+      "source": "Waiting for the host's event to finish...",
+      "translation": "Αναμονή για να τελειώσει η σκηνή του οικοδεσπότη..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostLoad",
+      "source": "Waiting for the host to finish setting up...",
+      "translation": "Αναμονή για να ολοκληρώσει την προετοιμασία ο οικοδεσπότης..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UnknownUserName",
+      "source": "???",
+      "translation": "???",
+      "preserveReason": "Unknown-name question-mark placeholder, without lexical text."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerName",
+      "source": "{0} ({1})",
+      "translation": "{0} ({1})",
+      "preserveReason": "Structural chat formatting with runtime text substitutions; no English words."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ChatMessageFormat",
+      "source": "{0}: {1}",
+      "translation": "{0}: {1}",
+      "preserveReason": "Structural chat formatting with runtime text substitutions; no English words."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ErrorMessageFormat",
+      "source": "[Error] {0}",
+      "translation": "[Σφάλμα] {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PrivateMessageFormat",
+      "source": "{0} [Private]: {1}",
+      "translation": "{0} [Προσωπικό]: {1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UserNotificationMessageFormat",
+      "source": "> {0}",
+      "translation": "> {0}",
+      "preserveReason": "Structural chat formatting with runtime text substitutions; no English words."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoined",
+      "source": "{0} has joined.",
+      "translation": "{0} συνδέθηκε."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoinedNewName",
+      "source": "Unnamed Farmhand",
+      "translation": "Ανώνυμος Εργάτης Αγροκτήματος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerDeath",
+      "source": "{0} was knocked unconscious.",
+      "translation": "{0} έχασε τις αισθήσεις."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CaughtLegendaryFish",
+      "source": "{0} caught the legendary '{1}' fish.",
+      "translation": "{0} έπιασε το θρυλικό ψάρι «{1}»."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_TrashCan",
+      "source": "{1} caught {0} digging through the trash...",
+      "translation": "{1} έπιασε τον χαρακτήρα {0} να ψαχουλεύει στα σκουπίδια..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LinusTrashCan",
+      "source": "Linus was impressed!",
+      "translation": "Ο Λάινους εντυπωσιάστηκε!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Bundle",
+      "source": "Bundle complete!",
+      "translation": "Το πακέτο ολοκληρώθηκε!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Stardrop",
+      "source": "{0} found a stardrop.",
+      "translation": "{0} βρήκε μια αστεροσταγόνα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HorseNamed",
+      "source": "{0} named a horse {1}.",
+      "translation": "{0} ονόμασε ένα άλογο {1}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PrairieKing",
+      "source": "{0} beat Journey of the Prairie King.",
+      "translation": "{0} τερμάτισε το Ταξίδι του Βασιλιά του Λιβαδιού."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_JunimoKart",
+      "source": "{0} beat Junimo Kart.",
+      "translation": "{0} τερμάτισε το Καρτ Τζουνίμο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Dating",
+      "source": "{0} is dating {1}.",
+      "translation": "{0} είναι σε σχέση με {1}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BreakUp",
+      "source": "{0} broke up with {1}.",
+      "translation": "{0} χώρισε με {1}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Engaged",
+      "source": "{0} got engaged to {1}.",
+      "translation": "{0} αρραβωνιάστηκε με {1}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MuseumComplete",
+      "source": "{0} Farm has completed the museum collection.",
+      "translation": "Το Αγρόκτημα {0} ολοκλήρωσε τη συλλογή του μουσείου."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Museum40",
+      "source": "{0} Farm has donated 40 pieces to the museum.",
+      "translation": "Το Αγρόκτημα {0} δώρισε 40 εκθέματα στο μουσείο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_donation",
+      "source": "{0} donated '{1}' to the museum.",
+      "translation": "{0} δώρισε το «{1}» στο μουσείο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked10k",
+      "source": "{0} has walked 10,000 paces.",
+      "translation": "{0} περπάτησε 10.000 βήματα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked100k",
+      "source": "{0} has walked 100,000 paces.",
+      "translation": "{0} περπάτησε 100.000 βήματα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked1m",
+      "source": "{0} has walked 1,000,000 paces.",
+      "translation": "{0} περπάτησε 1.000.000 βήματα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked10m",
+      "source": "{0} has walked 10,000,000 paces.",
+      "translation": "{0} περπάτησε 10.000.000 βήματα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Divorce",
+      "source": "{0} has filed for divorce.",
+      "translation": "{0} έκανε αίτηση διαζυγίου."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BackpackLarge",
+      "source": "{0} bought the Large Pack.",
+      "translation": "{0} αγόρασε το Μεγάλο Σακίδιο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BackpackDeluxe",
+      "source": "{0} bought the Deluxe Pack.",
+      "translation": "{0} αγόρασε το Πολυτελές Σακίδιο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Makeover",
+      "source": "{0} got a magical makeover.",
+      "translation": "{0} άλλαξε εμφάνιση με μαγικό τρόπο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Makeover_Pet",
+      "source": "{0} and {1} got a magical makeover.",
+      "translation": "{0} και {1} άλλαξαν εμφάνιση με μαγικό τρόπο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DivorceCancel",
+      "source": "{0} has canceled the divorce.",
+      "translation": "{0} ακύρωσε το διαζύγιο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly0",
+      "source": "{0} is calling it an early night.",
+      "translation": "{0} αποφάσισε να κοιμηθεί νωρίς."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly1",
+      "source": "{0} is going to bed early today.",
+      "translation": "{0} πάει για ύπνο νωρίς σήμερα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly2",
+      "source": "{0} is turning in early today.",
+      "translation": "{0} πέφτει νωρίς στο κρεβάτι σήμερα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed0",
+      "source": "{0} has gone to bed.",
+      "translation": "{0} πήγε για ύπνο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed1",
+      "source": "{0} has tucked into bed.",
+      "translation": "{0} χώθηκε στο κρεβάτι."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed2",
+      "source": "{0} is hitting the sack.",
+      "translation": "{0} πέφτει για ύπνο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate0",
+      "source": "{0} has made it to bed!",
+      "translation": "{0} πρόλαβε να φτάσει στο κρεβάτι!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate1",
+      "source": "{0} has made it to bed, safe and sound!",
+      "translation": "{0} έφτασε με ασφάλεια στο κρεβάτι!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate2",
+      "source": "Whew! {0} has made it to bed!",
+      "translation": "Ουφ! {0} πρόλαβε να φτάσει στο κρεβάτι!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut0",
+      "source": "{0} has passed out!",
+      "translation": "{0} λιποθύμησε!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut1",
+      "source": "{0} didn't make it to bed...",
+      "translation": "{0} δεν πρόλαβε να φτάσει στο κρεβάτι..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut2",
+      "source": "{0} stayed out too late...",
+      "translation": "{0} έμεινε έξω μέχρι πολύ αργά..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_EvilShrine",
+      "source": "{0} visited an evil shrine...",
+      "translation": "{0} επισκέφτηκε ένα σκοτεινό ιερό..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonstersActivated",
+      "source": "{0} has removed the farm's ancient magi-seal of protection. Watch out!",
+      "translation": "{0} αφαίρεσε την αρχαία μαγική σφραγίδα προστασίας του αγροκτήματος. Προσοχή!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonstersDeActivated",
+      "source": "{0} has restored the farm's ancient magi-seal of protection.",
+      "translation": "{0} αποκατέστησε την αρχαία μαγική σφραγίδα προστασίας του αγροκτήματος."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SleepAnnounceModeSet",
+      "source": "Sleep announce mode is now: {0}.",
+      "translation": "Η λειτουργία ανακοινώσεων ύπνου είναι τώρα: {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LostBook",
+      "source": "{0} has found a Lost Book!",
+      "translation": "{0} βρήκε ένα Χαμένο Βιβλίο!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieInviteAccept",
+      "source": "{0} has invited {1} to a movie!",
+      "translation": "{0} προσκάλεσε τον χαρακτήρα {1} σε μια ταινία!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieInviteReject",
+      "source": "{1} has turned down {0}'s offer to see a movie...",
+      "translation": "{1} απέρριψε την πρόταση του χαρακτήρα {0} να δουν μια ταινία..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieStart",
+      "source": "The next showing of '{0}' is about to begin!",
+      "translation": "Η επόμενη προβολή της ταινίας «{0}» ξεκινά σε λίγο!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieEnd",
+      "source": "The showing of '{0}' has concluded.",
+      "translation": "Η προβολή της ταινίας «{0}» τελείωσε."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned15k",
+      "source": "{0} Farm has earned 15,000g.",
+      "translation": "Το Αγρόκτημα {0} κέρδισε 15.000g."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned50k",
+      "source": "{0} Farm has earned 50,000g.",
+      "translation": "Το Αγρόκτημα {0} κέρδισε 50.000g."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned250k",
+      "source": "{0} Farm has earned 250,000g.",
+      "translation": "Το Αγρόκτημα {0} κέρδισε 250.000g."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned1m",
+      "source": "{0} Farm has earned 1,000,000g.",
+      "translation": "Το Αγρόκτημα {0} κέρδισε 1.000.000g."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned10m",
+      "source": "{0} Farm has earned 10,000,000g.",
+      "translation": "Το Αγρόκτημα {0} κέρδισε 10.000.000g."
+    }
+  ]
+}

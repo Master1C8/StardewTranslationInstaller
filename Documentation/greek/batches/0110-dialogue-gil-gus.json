@@ -1,0 +1,226 @@
+{
+  "id": "0110-dialogue-gil-gus",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "125d312f558221dc2efd4f08c91772db17b19e99e8c04070f8769540c9646f41",
+    "notes": "Full all-entry editorial review: refined Gil return phrasing, gourmet salt terminology, saloon-work voice, Emily curiosity, resort service and bar greetings; preserved the source emote delimiter pattern and added gender-specific welcomes and friendship forms; verified slash variants, names, controls, placeholders, glossary terms, and source fidelity."
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Gil",
+      "key": "Snoring",
+      "source": "...*snore*...",
+      "translation": "...*ροχαλητό*..."
+    },
+    {
+      "target": "Characters/Dialogue/Gil",
+      "key": "ComeBackLater",
+      "source": "...Come back when you've got something to show me, kid.",
+      "translation": "...Ξαναέλα όταν έχεις κάτι να μου δείξεις, μικρέ.",
+      "femaleTranslation": "...Ξαναέλα όταν έχεις κάτι να μου δείξεις, μικρή."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Introduction",
+      "source": "Well hello there! I'm Gus, chef and owner of the Stardrop Saloon.#$e#Stop in if you need any refreshments. I've always got hot coffee and cold beer at the ready.$h",
+      "translation": "Καλώς τον! Είμαι ο Γκας, μάγειρας και ιδιοκτήτης του Σαλούν της Αστεροσταγόνας.#$e#Πέρασε αν θέλεις κάτι να φας ή να πιεις. Έχω πάντα έτοιμο ζεστό καφέ και κρύα μπίρα.$h",
+      "femaleTranslation": "Καλώς την! Είμαι ο Γκας, μάγειρας και ιδιοκτήτης του Σαλούν της Αστεροσταγόνας.#$e#Πέρασε αν θέλεις κάτι να φας ή να πιεις. Έχω πάντα έτοιμο ζεστό καφέ και κρύα μπίρα.$h",
+      "glossaryIds": [
+        "gus",
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "AcceptGift_(O)StardropTea",
+      "source": "Oh wow, thank you! I'm tempted to drink all of it, but I'm going to save some for the saloon. I bet I could make an interesting cocktail with this!",
+      "translation": "Α, τι ωραία, ευχαριστώ! Μπαίνω στον πειρασμό να το πιω όλο, αλλά θα κρατήσω λίγο για το σαλούν. Βάζω στοίχημα ότι μπορώ να φτιάξω μ' αυτό ένα ενδιαφέρον κοκτέιλ!"
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "AcceptGift_Positive_category_cooking",
+      "source": "*sniff*... Ah. Exquisite cuisine. You know what I like, @.$h",
+      "translation": "*μυρίζει*... Α. Εξαιρετικό έδεσμα. Ξέρεις τι μου αρέσει, @.$h"
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "accept_865",
+      "source": "*sniff* sniff* ... that sharp smell!#$b#*slurp* *slurp* ... that zesty taste! That gritty texture!#$b#It can only be gourmet tomato salt! I'll trade you for it.",
+      "translation": "*μυρίζει* μυρίζει*... αυτή η έντονη μυρωδιά!#$b#*γλείφει* *γλείφει*... αυτή η πικάντικη γεύση! Αυτή η κοκκώδης υφή!#$b#Δεν μπορεί να είναι τίποτε άλλο από γκουρμέ αλάτι ντομάτας! Θα σου δώσω κάτι ως αντάλλαγμα."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "GreenRain",
+      "source": "I saw the weather report last night. It really gave me a scare!$s#$e#Are there monsters out there? What's happening?",
+      "translation": "Είδα το δελτίο καιρού χθες το βράδυ. Με τρόμαξε για τα καλά!$s#$e#Υπάρχουν τέρατα εκεί έξω; Τι συμβαίνει;"
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "GreenRainFinished",
+      "source": "I'm glad that's over. Running the saloon is enough to worry about, I don't need exotic weather in my life!",
+      "translation": "Χαίρομαι που τελείωσε. Έχω ήδη αρκετές σκοτούρες με το σαλούν· δεν χρειάζομαι και αλλόκοτο καιρό στη ζωή μου!"
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "GreenRain_2",
+      "source": "*sniff*... These rains have a particular smell. Have you noticed? Almost like freshly minced herbs...",
+      "translation": "*μυρίζει*... Αυτές οι βροχές έχουν μια ιδιαίτερη μυρωδιά. Το πρόσεξες; Μοιάζει σχεδόν με φρεσκοκομμένα μυρωδικά..."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "cropMatured_256",
+      "source": "Lewis tells me your tomatoes have ripened. That's great news!#$b#...Just imagine what the culinary world would be like without tomatoes...",
+      "translation": "Ο Λιούις μού είπε ότι ωρίμασαν οι ντομάτες σου. Υπέροχα νέα!#$b#...Φαντάσου μόνο πώς θα ήταν ο κόσμος της μαγειρικής χωρίς ντομάτες...",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "eventSeen_502969",
+      "source": "It's important to me that people can eat healthy, delicious meals. Unfortunately, in today's world, that's not so easy for everyone.",
+      "translation": "Είναι σημαντικό για μένα να μπορούν οι άνθρωποι να τρώνε υγιεινά και νόστιμα γεύματα. Δυστυχώς, στον σημερινό κόσμο αυτό δεν είναι τόσο εύκολο για όλους."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "married",
+      "source": "Hey @, just want to say that I'm happy for you and %spouse.",
+      "translation": "Γεια σου, @. Θέλω απλώς να πω ότι χαίρομαι για σένα και για %spouse."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "dating_Emily_memory_oneweek",
+      "source": "Emily has a real pep in her step lately... I wonder why? *wink*",
+      "translation": "Η Έμιλι είναι γεμάτη ζωντάνια τελευταία... Αναρωτιέμαι γιατί; *κλείνει το μάτι*",
+      "glossaryIds": [
+        "emily"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "divorced_once",
+      "source": "Hey, I'm sorry to hear about the break-up...$s#$e#If you need company, you're always welcome at the Saloon.",
+      "translation": "Λυπάμαι που έμαθα για τον χωρισμό...$s#$e#Αν χρειάζεσαι παρέα, είσαι πάντα ευπρόσδεκτος στο Σαλούν της Αστεροσταγόνας.",
+      "femaleTranslation": "Λυπάμαι που έμαθα για τον χωρισμό...$s#$e#Αν χρειάζεσαι παρέα, είσαι πάντα ευπρόσδεκτη στο Σαλούν της Αστεροσταγόνας.",
+      "glossaryIds": [
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "divorced_twice",
+      "source": "Another failed marriage? Well, it happens. Guess I'll be seeing you at the Saloon more often...$s",
+      "translation": "Άλλος ένας αποτυχημένος γάμος; Ε, συμβαίνουν αυτά. Μάλλον θα σε βλέπω συχνότερα στο Σαλούν της Αστεροσταγόνας...$s",
+      "glossaryIds": [
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "eventSeen_3206194",
+      "source": "Hey, you really pulled through with those eggs. The omelet turned out great, thanks to you!",
+      "translation": "Μας έσωσες πραγματικά με εκείνα τα αυγά. Η ομελέτα βγήκε υπέροχη, χάρη σ' εσένα!"
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Resort_Entering",
+      "source": "Hey, @! Glad you're here. I'm gonna be serving up some good stuff from behind the bar.",
+      "translation": "Γεια σου, @! Χαίρομαι που είσαι εδώ. Θα βρίσκομαι πίσω από το μπαρ και θα σερβίρω ωραία πράγματα."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Resort_Leaving",
+      "source": "I'll see you back home, @.",
+      "translation": "Θα τα πούμε όταν επιστρέψουμε, @."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Resort",
+      "source": "Meet me at the bar if you need a beverage.",
+      "translation": "Έλα να με βρεις στο μπαρ αν θέλεις κάποιο ποτό."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "IslandSouth_14_21",
+      "source": "Hey, need a drink? I've got some special beverages that showcase local ingredients from this island.$h",
+      "translation": "Γεια, θέλεις κάτι να πιεις; Έχω μερικά ξεχωριστά ποτά που αναδεικνύουν ντόπια υλικά από αυτό το νησί.$h"
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "willyCrabs",
+      "source": "These might be the best crab cakes I've ever made...",
+      "translation": "Ίσως αυτοί να είναι οι καλύτεροι καβουροκεφτέδες που έχω φτιάξει ποτέ..."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Mon",
+      "source": "Yeah, I know a lot about the people living here.#$e#That's one of the benefits of being a bartender.$h#$e#Sometimes I hear too much...",
+      "translation": "Ναι, ξέρω πολλά για τους ανθρώπους που ζουν εδώ.#$e#Είναι ένα από τα πλεονεκτήματα του να είσαι μπάρμαν.$h#$e#Μερικές φορές ακούω υπερβολικά πολλά..."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "pamHouseUpgrade",
+      "source": "Hey. I heard what you did for Pam. That was really really nice of you!$h#$e#Sadly, I don't think it will get her to cut back on the 'beverages'...",
+      "translation": "Γεια σου. Έμαθα τι έκανες για την Παμ. Ήταν πραγματικά πάρα πολύ καλό εκ μέρους σου!$h#$e#Δυστυχώς, δεν νομίζω ότι θα την κάνει να περιορίσει τα «ποτά»...",
+      "glossaryIds": [
+        "pam"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "pamHouseUpgradeAnonymous",
+      "source": "I saw Pam earlier today... she was grinning from ear to ear! She said someone bought her a new house!#$e#Whoever it was, they truly deserve the best!$h",
+      "translation": "Είδα την Παμ νωρίτερα σήμερα... Χαμογελούσε μέχρι τ' αφτιά! Είπε ότι κάποιος της αγόρασε καινούριο σπίτι!#$e#Όποιος κι αν ήταν, του αξίζουν πραγματικά τα καλύτερα!$h",
+      "glossaryIds": [
+        "pam"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Saloon",
+      "source": "Welcome to the Stardrop Saloon! Can I get you anything?",
+      "translation": "Καλώς όρισες στο Σαλούν της Αστεροσταγόνας! Να σου φέρω κάτι;",
+      "glossaryIds": [
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Saloon4",
+      "source": "Hi there, @. Make yourself at home.",
+      "translation": "Γεια σου, @. Σαν στο σπίτι σου."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "SeedShop_Entry",
+      "source": "Hi, Pierre!/Now, what do I need.../Ah, that looks good!/Makin' my special sauce tonight!/Pierre! What's fresh?/Pierre! Waddya got for me?",
+      "translation": "Γεια σου, Πιερ!/Λοιπόν, τι χρειάζομαι.../Α, αυτό φαίνεται καλό!/Απόψε φτιάχνω την ξεχωριστή μου σάλτσα!/Πιερ! Τι έχεις φρέσκο;/Πιερ! Τι έχεις για μένα;",
+      "glossaryIds": [
+        "pierre"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Saloon8",
+      "source": "Hi there @. I'm glad to see you! You're always welcome here.",
+      "translation": "Γεια σου, @. Χαίρομαι που σε βλέπω! Είσαι πάντα ευπρόσδεκτος εδώ.",
+      "femaleTranslation": "Γεια σου, @. Χαίρομαι που σε βλέπω! Είσαι πάντα ευπρόσδεκτη εδώ."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Saloon_Tue",
+      "source": "Hi! Please relax and enjoy yourself.",
+      "translation": "Γεια σου! Χαλάρωσε και πέρνα όμορφα."
+    },
+    {
+      "target": "Characters/Dialogue/Gus",
+      "key": "Saloon_Thu",
+      "source": "Hey, you look like you could use a beverage.",
+      "translation": "Γεια, μάλλον σου χρειάζεται ένα ποτό."
+    }
+  ]
+}

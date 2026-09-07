@@ -1,0 +1,428 @@
+{
+  "id": "0004-buildings",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "95e85947c8a88477b386d0cf34144105b4b79d0a9e17a3fceb665fa329259c2e",
+    "notes": "All 69 source/Greek pairs read in full. Building capacities and unlocks checked; Στάβλος versus Ιπποστάσιο and Τζουνίμο/Γλίτσες follow the glossary. Dynamic item names use quotation marks or parentheses to avoid forcing inflection of the inserted label."
+  },
+  "records": [
+    {
+      "target": "Strings/Buildings",
+      "key": "UnderConstruction",
+      "source": "Under construction.",
+      "translation": "Υπό κατασκευή."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DismountBeforeEntering",
+      "source": "Dismount before entering",
+      "translation": "Ξεπεζέψτε πριν μπείτε"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PiecesOfHay",
+      "source": "Pieces of Hay: {0}/{1}",
+      "translation": "Μονάδες Σανού: {0}/{1}"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "AddedHay",
+      "source": "Added {0} pieces of hay to the silo.",
+      "translation": "Προστέθηκαν {0} μονάδες σανού στο σιλό."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "MillFull",
+      "source": "No space left",
+      "translation": "Δεν υπάρχει άλλος χώρος"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "CantMill",
+      "source": "Can't be milled",
+      "translation": "Δεν αλέθεται"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "NeedSilo",
+      "source": "Silo Required",
+      "translation": "Απαιτείται Σιλό"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "CantEnter",
+      "source": "Can't enter right now",
+      "translation": "Δεν μπορείτε να μπείτε τώρα"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WrongFishType",
+      "source": "Your {0} doesn't want to live in a {1} pond.",
+      "translation": "Το ψάρι σας ({0}) δεν θέλει να ζήσει σε λίμνη με {1}."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WrongFishTypeCoral",
+      "source": "{0} can only be placed in a {0} Pond.",
+      "translation": "Το «{0}» τοποθετείται μόνο σε λίμνη με «{0}»."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "CantPutInPonds",
+      "source": "The {0} wouldn't be happy in there.",
+      "translation": "Το «{0}» δεν θα ήταν ευτυχισμένο εκεί μέσα."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "NoFish",
+      "source": "Fish can be placed into this pond.",
+      "translation": "Μπορείτε να βάλετε ψάρια σε αυτή τη λίμνη."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PondFull",
+      "source": "This pond is full.",
+      "translation": "Αυτή η λίμνη είναι γεμάτη."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Paint_Region_Building",
+      "source": "Building",
+      "translation": "Κτίριο"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Paint_Region_Roof",
+      "source": "Roof",
+      "translation": "Στέγη"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Paint_Region_Trim",
+      "source": "Trim",
+      "translation": "Διακοσμητικές Λεπτομέρειες"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BuildingSkinMenu_ChooseAppearance",
+      "source": "Select an appearance for your {0}.",
+      "translation": "Επιλογή εμφάνισης: {0}."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Construction_ChooseLocation",
+      "source": "Where do you want to manage buildings?",
+      "translation": "Πού θέλετε να διαχειριστείτε κτίρια;"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Barn_Name",
+      "source": "Barn",
+      "translation": "Στάβλος"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Barn_Description",
+      "source": "Houses 4 barn-dwelling animals.",
+      "translation": "Στεγάζει 4 ζώα στάβλου."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Barn_GeneralName",
+      "source": "Barn",
+      "translation": "Στάβλος"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigBarn_Name",
+      "source": "Big Barn",
+      "translation": "Μεγάλος Στάβλος"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigBarn_Description",
+      "source": "Houses 8 barn-dwelling animals. Allows animals to give birth. Unlocks goats.",
+      "translation": "Στεγάζει 8 ζώα στάβλου. Επιτρέπει στα ζώα να γεννούν. Ξεκλειδώνει τις κατσίκες."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigCoop_Name",
+      "source": "Big Coop",
+      "translation": "Μεγάλο Κοτέτσι"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigCoop_Description",
+      "source": "Houses 8 coop-dwelling animals. Comes with an incubator. Unlocks ducks.",
+      "translation": "Στεγάζει 8 ζώα κοτετσιού. Περιλαμβάνει εκκολαπτήριο. Ξεκλειδώνει τις πάπιες."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigShed_Name",
+      "source": "Big Shed",
+      "translation": "Μεγάλο Υπόστεγο"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigShed_Description",
+      "source": "Doubles the size of the shed. The interior can be decorated.",
+      "translation": "Διπλασιάζει το μέγεθος του υπόστεγου. Μπορείτε να διακοσμήσετε το εσωτερικό."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Cabin_Name",
+      "source": "Cabin",
+      "translation": "Καλύβα"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Cabin_Description",
+      "source": "A home for a friend! Subsidized by the town agricultural fund.",
+      "translation": "Σπίτι για έναν φίλο! Επιδοτείται από το αγροτικό ταμείο της πόλης."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Coop_Name",
+      "source": "Coop",
+      "translation": "Κοτέτσι"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Coop_Description",
+      "source": "Houses 4 coop-dwelling animals.",
+      "translation": "Στεγάζει 4 ζώα κοτετσιού."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Coop_GeneralName",
+      "source": "Coop",
+      "translation": "Κοτέτσι"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeBarn_Name",
+      "source": "Deluxe Barn",
+      "translation": "Πολυτελής Στάβλος"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeBarn_Description",
+      "source": "Houses 12 barn-dwelling animals. Comes with an auto-feed system. Unlocks sheep and pigs.",
+      "translation": "Στεγάζει 12 ζώα στάβλου. Περιλαμβάνει αυτόματο σύστημα ταΐσματος. Ξεκλειδώνει τα πρόβατα και τα γουρούνια."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeCoop_Name",
+      "source": "Deluxe Coop",
+      "translation": "Πολυτελές Κοτέτσι"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeCoop_Description",
+      "source": "Houses 12 coop-dwelling animals. Comes with an auto-feed system. Unlocks rabbits.",
+      "translation": "Στεγάζει 12 ζώα κοτετσιού. Περιλαμβάνει αυτόματο σύστημα ταΐσματος. Ξεκλειδώνει τα κουνέλια."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DesertObelisk_Name",
+      "source": "Desert Obelisk",
+      "translation": "Οβελίσκος Ερήμου"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DesertObelisk_Description",
+      "source": "Warps you to the desert.",
+      "translation": "Σας τηλεμεταφέρει στην έρημο."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "EarthObelisk_Name",
+      "source": "Earth Obelisk",
+      "translation": "Οβελίσκος Γης"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "EarthObelisk_Description",
+      "source": "Warps you to the mountains.",
+      "translation": "Σας τηλεμεταφέρει στα βουνά."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "FishPond_Name",
+      "source": "Fish Pond",
+      "translation": "Ιχθυολίμνη"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "FishPond_Description",
+      "source": "Raise fish and harvest their produce. Fish multiply over time.",
+      "translation": "Εκτρέφετε ψάρια και συλλέγετε τα προϊόντα τους. Τα ψάρια πολλαπλασιάζονται με τον καιρό."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "GoldClock_Name",
+      "source": "Gold Clock",
+      "translation": "Χρυσό Ρολόι"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "GoldClock_Description",
+      "source": "Prevents debris from appearing on your farm. Keeps fences from decaying.",
+      "translation": "Εμποδίζει την εμφάνιση άχρηστων υλικών στο αγρόκτημά σας. Προστατεύει τις περιφράξεις από τη φθορά."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Greenhouse_Name",
+      "source": "Greenhouse",
+      "translation": "Θερμοκήπιο"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Greenhouse_Description",
+      "source": "A place to grow crops from any season, year round!",
+      "translation": "Χώρος για καλλιέργειες κάθε εποχής, όλο τον χρόνο!"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "IslandObelisk_Name",
+      "source": "Island Obelisk",
+      "translation": "Οβελίσκος Νησιού"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "IslandObelisk_Description",
+      "source": "Warps you to Ginger Island.",
+      "translation": "Σας τηλεμεταφέρει στο Νησί Τζίντζερ."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "JunimoHut_Name",
+      "source": "Junimo Hut",
+      "translation": "Καλύβα Τζουνίμο"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "JunimoHut_Description",
+      "source": "Junimos will harvest crops around the hut for you.",
+      "translation": "Τα Τζουνίμο θα συγκομίζουν για εσάς τις καλλιέργειες γύρω από την καλύβα."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Mill_Name",
+      "source": "Mill",
+      "translation": "Μύλος"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Mill_Description",
+      "source": "Allows you to mill wheat, beets and rice.",
+      "translation": "Σας επιτρέπει να αλέθετε σιτάρι, παντζάρια και ρύζι."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Shed_Name",
+      "source": "Shed",
+      "translation": "Υπόστεγο"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Shed_Description",
+      "source": "An empty building. Fill it with whatever you like! The interior can be decorated.",
+      "translation": "Άδειο κτίριο. Γεμίστε το με ό,τι θέλετε! Μπορείτε να διακοσμήσετε το εσωτερικό."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Shed_GeneralName",
+      "source": "Shed",
+      "translation": "Υπόστεγο"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "ShippingBin_Name",
+      "source": "Shipping Bin",
+      "translation": "Κιβώτιο Αποστολών"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "ShippingBin_Description",
+      "source": "Throw items inside to sell them overnight.",
+      "translation": "Ρίξτε μέσα αντικείμενα για να πουληθούν κατά τη διάρκεια της νύχτας."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Silo_Name",
+      "source": "Silo",
+      "translation": "Σιλό"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Silo_Description",
+      "source": "Allows you to cut and store grass for feed.",
+      "translation": "Σας επιτρέπει να κόβετε και να αποθηκεύετε γρασίδι για ζωοτροφή."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "SlimeHutch_Name",
+      "source": "Slime Hutch",
+      "translation": "Εκτροφείο Γλίτσας"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "SlimeHutch_Description",
+      "source": "Raise up to 20 slimes. Fill water troughs and slimes will create slime balls.",
+      "translation": "Εκτρέφετε έως και 20 Γλίτσες. Γεμίστε τις ποτίστρες και οι Γλίτσες θα παράγουν Μπάλες Γλίτσας."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Stable_Name",
+      "source": "Stable",
+      "translation": "Ιπποστάσιο"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Stable_Description",
+      "source": "Allows you to keep and ride a horse. Horse included.",
+      "translation": "Σας επιτρέπει να έχετε και να ιππεύετε ένα άλογο. Το άλογο περιλαμβάνεται."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WaterObelisk_Name",
+      "source": "Water Obelisk",
+      "translation": "Οβελίσκος Νερού"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WaterObelisk_Description",
+      "source": "Warps you to the beach.",
+      "translation": "Σας τηλεμεταφέρει στην παραλία."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Well_Name",
+      "source": "Well",
+      "translation": "Πηγάδι"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Well_Description",
+      "source": "Provides a place for you to refill your watering can.",
+      "translation": "Σας παρέχει ένα σημείο για να γεμίζετε ξανά το ποτιστήρι σας."
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PetBowl_Name",
+      "source": "Pet Bowl",
+      "translation": "Μπολ Κατοικίδιου"
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PetBowl_Description",
+      "source": "Provides a dedicated home for one pet.",
+      "translation": "Παρέχει ξεχωριστό σπίτι για ένα κατοικίδιο."
+    }
+  ]
+}

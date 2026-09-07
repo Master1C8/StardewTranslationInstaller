@@ -1,0 +1,293 @@
+{
+  "id": "0064-cs-keyboard-labels",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "ea0c41190bb6ac99a9469007c5fc0cb1eb88aac64ee33b93114b0823590cf17c",
+    "notes": "All 45 bilingual entries read in full. Native InputButton.ToString resolves these values from Keys names after Oem removal. Familiar physical legends retained with explicit rationale or conventional spacing/abbreviation; Back is Backspace, Escape Esc, Scroll Scroll Lock. Directions, IME actions and side modifiers localized. No bindings or IDs changed."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Ring.cs.1",
+      "source": "Ring",
+      "translation": "Δαχτυλίδι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Back",
+      "source": "Back",
+      "translation": "Backspace"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Tab",
+      "source": "Tab",
+      "translation": "Tab",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Enter",
+      "source": "Enter",
+      "translation": "Enter",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Pause",
+      "source": "Pause",
+      "translation": "Pause",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CapsLock",
+      "source": "CapsLock",
+      "translation": "Caps Lock"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Kana",
+      "source": "Kana",
+      "translation": "Kana",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Kanji",
+      "source": "Kanji",
+      "translation": "Kanji",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Escape",
+      "source": "Escape",
+      "translation": "Esc"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ImeConvert",
+      "source": "ImeConvert",
+      "translation": "Μετατροπή IME"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ImeNoConvert",
+      "source": "ImeNoConvert",
+      "translation": "Χωρίς μετατροπή IME"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Space",
+      "source": "Space",
+      "translation": "Διάστημα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PageUp",
+      "source": "PageUp",
+      "translation": "Page Up"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PageDown",
+      "source": "PageDown",
+      "translation": "Page Down"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "End",
+      "source": "End",
+      "translation": "End",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Home",
+      "source": "Home",
+      "translation": "Home",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Left",
+      "source": "Left",
+      "translation": "Αριστερά"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Up",
+      "source": "Up",
+      "translation": "Πάνω"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Right",
+      "source": "Right",
+      "translation": "Δεξιά"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Down",
+      "source": "Down",
+      "translation": "Κάτω"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Select",
+      "source": "Select",
+      "translation": "Επιλογή"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Print",
+      "source": "Print",
+      "translation": "Εκτύπωση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Execute",
+      "source": "Execute",
+      "translation": "Εκτέλεση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Insert",
+      "source": "Insert",
+      "translation": "Insert",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Delete",
+      "source": "Delete",
+      "translation": "Delete",
+      "preserveReason": "Standard physical keyboard key legend retained for recognition in key-binding UI; native InputButton.ToString loads this key-name value."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Help",
+      "source": "Help",
+      "translation": "Βοήθεια"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PrintScreen",
+      "source": "PrintScreen",
+      "translation": "Print Screen"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LeftWindows",
+      "source": "LeftWindows",
+      "translation": "Αριστερό Windows"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "RightWindows",
+      "source": "RightWindows",
+      "translation": "Δεξί Windows"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Apps",
+      "source": "Apps",
+      "translation": "Μενού εφαρμογών"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Sleep",
+      "source": "Sleep",
+      "translation": "Αναστολή λειτουργίας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Multiply",
+      "source": "Multiply",
+      "translation": "Πολλαπλασιασμός"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Add",
+      "source": "Add",
+      "translation": "Πρόσθεση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Separator",
+      "source": "Separator",
+      "translation": "Διαχωριστικό"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Subtract",
+      "source": "Subtract",
+      "translation": "Αφαίρεση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Decimal",
+      "source": "Decimal",
+      "translation": "Δεκαδικό σημείο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Divide",
+      "source": "Divide",
+      "translation": "Διαίρεση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NumLock",
+      "source": "NumLock",
+      "translation": "Num Lock"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Scroll",
+      "source": "Scroll",
+      "translation": "Scroll Lock"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LeftShift",
+      "source": "LeftShift",
+      "translation": "Αριστερό Shift"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "RightShift",
+      "source": "RightShift",
+      "translation": "Δεξί Shift"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LeftControl",
+      "source": "LeftControl",
+      "translation": "Αριστερό Ctrl"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "RightControl",
+      "source": "RightControl",
+      "translation": "Δεξί Ctrl"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LeftAlt",
+      "source": "LeftAlt",
+      "translation": "Αριστερό Alt"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "RightAlt",
+      "source": "RightAlt",
+      "translation": "Δεξί Alt"
+    }
+  ]
+}

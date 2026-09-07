@@ -1,0 +1,502 @@
+{
+  "id": "0044-cs-merchants-wallet",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "206a2634a70fd169902d286d585c49327b59e2d09ba2102ed4f9ca3136f788dd",
+    "notes": "All 69 full pairs read. Two single-status strings corrected and reread after native SocialPage inspection: farmer rows load Single_Female for either gender, so both Greek forms use gender-neutral χωρίς σχέση. Boyfriend/girlfriend branches describe the current player relationship. Hat Mouse deliberately retains broken speech, misspelling and πόκε nickname; source mail and phone dialogue inspected for future consistency. Merchant claims, weekly stock, tool turnaround, wallet items and proficiency terms preserved."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.blueboat",
+      "source": "I specialize in outdoor decorations. Does anything catch your eye?",
+      "translation": "Ειδικεύομαι στη διακόσμηση εξωτερικών χώρων. Σου τράβηξε κάτι το βλέμμα;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.travelernightmarket",
+      "source": "Surprised to see me? I trade by sea, too! The pig likes a good swim.",
+      "translation": "Εκπλήσσεσαι που με βλέπεις; Κάνω εμπόριο και διά θαλάσσης! Στο γουρούνι αρέσει να κάνει μια καλή βουτιά."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.magicBoat",
+      "source": "...E...Each day... S...Something new...",
+      "translation": "...Κ...Κάθε μέρα... Κ...Κάτι καινούριο..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11460",
+      "source": "Need some construction supplies? Or are you looking to re-decorate?",
+      "translation": "Χρειάζεσαι οικοδομικά υλικά; Ή σκέφτεσαι να αλλάξεις διακόσμηση;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11461",
+      "source": "I have a rotating selection of hand-made furniture.",
+      "translation": "Έχω μια ποικιλία χειροποίητων επίπλων που ανανεώνεται."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11462",
+      "source": "I've got some great furniture for sale.",
+      "translation": "Πουλάω μερικά υπέροχα έπιπλα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11463",
+      "source": "Got any spare construction material to sell?",
+      "translation": "Σου περισσεύουν οικοδομικά υλικά για πούλημα;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11469",
+      "source": "Too lazy to mine your own ore? No problem.",
+      "translation": "Βαριέσαι να βγάλεις μετάλλευμα με τα χέρια σου; Κανένα πρόβλημα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11470",
+      "source": "I've got lumps of raw metal for sale. Knock yourself out.",
+      "translation": "Πουλάω κομμάτια ακατέργαστου μετάλλου. Διάλεξε ό,τι θέλεις."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11471",
+      "source": "Looking to sell any metals or minerals?",
+      "translation": "Θέλεις να πουλήσεις μέταλλα ή ορυκτά;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11474",
+      "source": "I can upgrade your tools with more power. You'll have to leave them with me for a few days, though.",
+      "translation": "Μπορώ να αναβαθμίσω τα εργαλεία σου για να γίνουν πιο δυνατά. Θα πρέπει όμως να μου τα αφήσεις για λίγες μέρες."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11477",
+      "source": "Need fishing supplies? You've come to the right place.",
+      "translation": "Χρειάζεσαι είδη ψαρέματος; Ήρθες στο σωστό μέρος."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11478",
+      "source": "Sorry about the smell.",
+      "translation": "Συγγνώμη για τη μυρωδιά."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11481",
+      "source": "Need some supplies?",
+      "translation": "Χρειάζεσαι προμήθειες;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11482",
+      "source": "Don't forget to check out my daily wallpaper and flooring selection!",
+      "translation": "Μην ξεχάσεις να δεις τη συλλογή μου από ταπετσαρίες και δάπεδα! Αλλάζει καθημερινά!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11483",
+      "source": "What can I get for you?",
+      "translation": "Τι να σου δώσω;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11484",
+      "source": "I carry only the finest goods.",
+      "translation": "Έχω μόνο τα εκλεκτότερα προϊόντα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11485",
+      "source": "I've got quality goods for sale.",
+      "translation": "Πουλάω ποιοτικά προϊόντα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11486",
+      "source": "Looking to buy something?",
+      "translation": "Θέλεις να αγοράσεις κάτι;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11487",
+      "source": "Got anything you want to sell?",
+      "translation": "Έχεις τίποτα για πούλημα;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11488",
+      "source": "Welcome to Pierre's! ",
+      "translation": "Καλώς ήρθες στου Πιερ! ",
+      "glossaryIds": [
+        "pierre"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11489",
+      "source": "The season's almost over. I'll be changing stock tomorrow.",
+      "translation": "Η εποχή σχεδόν τελείωσε. Αύριο θα αλλάξω τα εμπορεύματα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11492",
+      "source": "Buy something?",
+      "translation": "Θα αγοράσεις κάτι;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11494",
+      "source": "Hiyo, poke. Did you bring coins? Gud. Me sell hats.",
+      "translation": "Γειάα, πόκε. Έφερες κέρματα; Καλλά. Εγώ πουλάει καπέλα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11497",
+      "source": "Rare Goods",
+      "translation": "Σπάνια Αγαθά"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11499",
+      "source": "I've got a little bit of everything. Take a look!",
+      "translation": "Έχω λίγο απ’ όλα. Ρίξε μια ματιά!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11500",
+      "source": "I smuggled these goods out of the Gotoro Empire. Why do you think they're so expensive?",
+      "translation": "Έβγαλα λαθραία αυτά τα εμπορεύματα από την Αυτοκρατορία Γκοτόρο. Γιατί νομίζεις πως είναι τόσο ακριβά;",
+      "glossaryIds": [
+        "gotoro-empire"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11501",
+      "source": "I'll have new items every week, so make sure to come back!",
+      "translation": "Θα έχω καινούρια πράγματα κάθε εβδομάδα, οπότε φρόντισε να ξανάρθεις!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11502",
+      "source": "Let me see... Oh! I've got just what you need: {0}!",
+      "translation": "Για να δω... Α! Έχω ακριβώς αυτό που χρειάζεσαι: {0}!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11504",
+      "source": "Beautiful country you have here. One of my favorite stops. The pig likes it, too.",
+      "translation": "Όμορφος τόπος εδώ. Μία από τις αγαπημένες μου στάσεις. Αρέσει και στο γουρούνι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11507",
+      "source": "Animal supplies for sale!",
+      "translation": "Πουλάμε είδη για ζώα!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11508",
+      "source": "*sigh*... When the door opened I thought it might be Lewis.",
+      "translation": "*αναστεναγμός*... Όταν άνοιξε η πόρτα, νόμιζα πως μπορεί να ήταν ο Λιούις.",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11511",
+      "source": "What'll you have?",
+      "translation": "Τι θα πάρεις;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11512",
+      "source": "Can you smell that? It's the {0}",
+      "translation": "Το μυρίζεις; Είναι το άρωμα από «{0}»"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11513",
+      "source": "Hungry? Thirsty? I've got just the thing.",
+      "translation": "Πεινάς; Διψάς; Έχω ό,τι πρέπει."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11514",
+      "source": "Welcome to the Stardrop Saloon! What can I get ya?",
+      "translation": "Καλώς ήρθες στο Σαλούν της Αστεροσταγόνας! Τι να σου φέρω;",
+      "glossaryIds": [
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11517",
+      "source": "The caves can be dangerous. Make sure you're prepared.",
+      "translation": "Οι σπηλιές μπορεί να είναι επικίνδυνες. Φρόντισε να προετοιμαστείς."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11518",
+      "source": "In the market for a new sword?",
+      "translation": "Ψάχνεις για καινούριο σπαθί;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11519",
+      "source": "Welcome to the adventurer's guild.",
+      "translation": "Καλώς ήρθες στη Συντεχνία Τυχοδιωκτών.",
+      "glossaryIds": [
+        "adventurers-guild"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11520",
+      "source": "Slay any monsters? I'll buy the loot.",
+      "translation": "Σκότωσες κανένα τέρας; Αγοράζω τα λάφυρα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11521",
+      "source": "The caves can be dangerous. How do you think I lost this eye?",
+      "translation": "Οι σπηλιές μπορεί να είναι επικίνδυνες. Πώς νομίζεις ότι έχασα αυτό το μάτι;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11524",
+      "source": "You won't find these goods anywhere else!",
+      "translation": "Δεν θα βρεις αυτά τα αγαθά πουθενά αλλού!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11525",
+      "source": "I've got just what you need.",
+      "translation": "Έχω ακριβώς αυτό που χρειάζεσαι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11583",
+      "source": "Out of stock",
+      "translation": "Εξαντλήθηκε"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11587",
+      "source": "Dwarvish Translation Guide",
+      "translation": "Οδηγός Μετάφρασης Νανικών",
+      "glossaryIds": [
+        "dwarvish-translation-guide"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11588",
+      "source": "Rusty Key",
+      "translation": "Σκουριασμένο Κλειδί",
+      "glossaryIds": [
+        "rusty-key"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11589",
+      "source": "Club Card",
+      "translation": "Κάρτα Λέσχης",
+      "glossaryIds": [
+        "club-card"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11590",
+      "source": "Special Charm",
+      "translation": "Ειδικό Γούρι",
+      "glossaryIds": [
+        "special-charm"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11591",
+      "source": "Skull Key",
+      "translation": "Κλειδί Κρανίου",
+      "glossaryIds": [
+        "skull-key"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.magnifyingglass",
+      "source": "Magnifying Glass",
+      "translation": "Μεγεθυντικός Φακός",
+      "glossaryIds": [
+        "magnifying-glass"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11592",
+      "source": "+{0} Hoe Efficiency",
+      "translation": "+{0} Επάρκεια Τσάπας",
+      "glossaryIds": [
+        "tool-proficiency",
+        "hoe"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11594",
+      "source": "+{0} Water Can Efficiency",
+      "translation": "+{0} Επάρκεια Ποτιστηριού",
+      "glossaryIds": [
+        "tool-proficiency",
+        "watering-can"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11596",
+      "source": "+{0} Axe Efficiency",
+      "translation": "+{0} Επάρκεια Τσεκουριού",
+      "glossaryIds": [
+        "tool-proficiency",
+        "axe"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11598",
+      "source": "+{0} Fishing Rod Efficiency",
+      "translation": "+{0} Επάρκεια Καλαμιού Ψαρέματος",
+      "glossaryIds": [
+        "tool-proficiency",
+        "fishing-rod-pole"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11600",
+      "source": "+{0} Pickaxe Efficiency",
+      "translation": "+{0} Επάρκεια Αξίνας",
+      "glossaryIds": [
+        "tool-proficiency",
+        "pickaxe"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11602",
+      "source": "+{0} Health",
+      "translation": "+{0} Υγεία",
+      "glossaryIds": [
+        "health"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11604",
+      "source": "Farming",
+      "translation": "Γεωργία",
+      "glossaryIds": [
+        "farming-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11605",
+      "source": "Mining",
+      "translation": "Εξόρυξη",
+      "glossaryIds": [
+        "mining-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11606",
+      "source": "Foraging",
+      "translation": "Συλλογή",
+      "glossaryIds": [
+        "foraging-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11607",
+      "source": "Fishing",
+      "translation": "Ψάρεμα",
+      "glossaryIds": [
+        "fishing-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11608",
+      "source": "Combat",
+      "translation": "Μάχη",
+      "glossaryIds": [
+        "combat-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11609",
+      "source": "Luck",
+      "translation": "Τύχη",
+      "glossaryIds": [
+        "luck"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SkillsPage.cs.11610",
+      "source": "Wallet",
+      "translation": "Πορτοφόλι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocialPage_Relationship_Single_Female",
+      "source": "(single)",
+      "translation": "(χωρίς σχέση)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocialPage_Relationship_Single_Male",
+      "source": "(single)",
+      "translation": "(χωρίς σχέση)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocialPage_Relationship_Husband",
+      "source": "(husband)",
+      "translation": "(ο σύζυγος)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocialPage_Relationship_Wife",
+      "source": "(wife)",
+      "translation": "(η σύζυγος)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocialPage_Relationship_Boyfriend",
+      "source": "(boyfriend)",
+      "translation": "(το αγόρι σας)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocialPage_Relationship_Girlfriend",
+      "source": "(girlfriend)",
+      "translation": "(το κορίτσι σας)"
+    }
+  ]
+}

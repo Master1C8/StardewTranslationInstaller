@@ -1,0 +1,128 @@
+{
+  "id": "0052-cs-delivery-produce",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "6ddd692bc6acce3a4bebbdb675c4f09b0a8cc1b03f2df6ca5980651b4fec90c9",
+    "notes": "All 16 full bilingual entries read. Dissection wording and milk-production/one-product request corrected and reread. Native ItemDeliveryQuest crop branch inspected: all three random request prefixes combine with all three produce suffixes and optional delivery/payment endings. Explicit neuter προϊόν keeps these combinations grammatical; nominative/accusative forms are identical. Demetrius receives a crop sample for biological research, Marnie feeds goats/cows, and Sebastian’s mountain-throwing request preserves its mood and address. Original newlines and signature spacing retained."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13285",
+      "source": "Delivery",
+      "translation": "Παράδοση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13299",
+      "source": "Looking for",
+      "translation": "Ψάχνω"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13300",
+      "source": "I'm in the market for",
+      "translation": "Θέλω να αγοράσω"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13301",
+      "source": "I could really go for",
+      "translation": "Θα μου άρεσε πολύ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13302",
+      "source": " a farm-fresh {0}. ",
+      "translation": " ένα φρέσκο προϊόν από τη φάρμα, «{0}». "
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13303",
+      "source": " a delicious {0}. ",
+      "translation": " ένα νόστιμο προϊόν, «{0}». "
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13304",
+      "source": " a ripe {0}. ",
+      "translation": " ένα ώριμο προϊόν, «{0}». "
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13306",
+      "source": "Could a local farmer deliver one to me?",
+      "translation": "Μπορεί κάποιος ντόπιος αγρότης να μου φέρει ένα;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13307",
+      "source": "I'll pay you when you bring it.",
+      "translation": "Θα σε πληρώσω όταν το φέρεις."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13308",
+      "source": "I would be so happy if someone delivered one to me.",
+      "translation": "Θα χαιρόμουν πολύ αν κάποιος μου έφερνε ένα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13311",
+      "source": "Greetings! Demetrius here. Could someone please bring me {0}?\nI'm studying them as part of my biological research.",
+      "translation": "Χαιρετώ! Εδώ Ντιμίτριους. Μπορεί κάποιος να μου φέρει ένα δείγμα του είδους «{0}»;\nΤο μελετώ στο πλαίσιο της βιολογικής μου έρευνας.",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13314",
+      "source": "Looking to dissect {0}. Please deliver to Demetrius at 24 Mountain Road.",
+      "translation": "Θέλω ένα δείγμα του είδους «{0}» για ανατομή. Παράδοση στον Ντιμίτριους, στην Οδό Μάουντεν 24.",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13317",
+      "source": "Howdy neighbors! My goats are really hankerin' for {0}. I can't find any myself! Help?     -Marnie",
+      "translation": "Γεια χαρά, γείτονες! Οι κατσίκες μου έχουν τρελή λαχτάρα για «{0}». Δεν μπορώ να βρω πουθενά! Καμιά βοήθεια;     -Μάρνι",
+      "glossaryIds": [
+        "marnie"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13320",
+      "source": "Howdy neighbors! I want to try giving my cows {0} to increase their milk production. If you find one could you swing it by for me?.     -Marnie",
+      "translation": "Γεια χαρά, γείτονες! Θέλω να δοκιμάσω να δώσω στις αγελάδες μου «{0}» για να αυξηθεί η παραγωγή γάλακτος. Αν βρεις ένα τέτοιο προϊόν, μπορείς να μου το φέρεις;     -Μάρνι",
+      "glossaryIds": [
+        "marnie"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13324",
+      "source": "Feeling gloomy... {0} might cheer me up.     -Sebastian",
+      "translation": "Έχω τις μαύρες μου... Ίσως κάτι όπως «{0}» να μου φτιάξει τη διάθεση.     -Σεμπάστιαν",
+      "glossaryIds": [
+        "sebastian"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ItemDeliveryQuest.cs.13327",
+      "source": "...feel like throwing {0} as hard as I can against the mountain face. Please deliver to Sebastian at 24 Mountain Road.",
+      "translation": "...μου έρχεται να εκσφενδονίσω «{0}» με όλη μου τη δύναμη στο βραχώδες τοίχωμα του βουνού. Παράδοση στον Σεμπάστιαν, στην Οδό Μάουντεν 24.",
+      "glossaryIds": [
+        "sebastian"
+      ]
+    }
+  ]
+}

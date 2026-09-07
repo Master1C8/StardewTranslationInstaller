@@ -1,0 +1,301 @@
+{
+  "id": "0048-cs-categories-discoveries",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "667c14c33996cb834acac57a19b66d19056cc2f846f39f8daac0b35781f94610",
+    "notes": "All 40 bilingual entries read fully; concise recipe/blueprint labels and hay-hopper clarification corrected and reread. Native Object handles this hopper using piecesOfHay; it is the hay dispenser. Native SpecialItem which=99 loads Large/Deluxe Pack and inserts maxItems, confirming the backpack and inventory-slot wording. Crow singular/plural, discoveries, wallet effects, restrictions and all distinct object categories preserved."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12852",
+      "source": "Fish",
+      "translation": "Ψάρι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12853",
+      "source": "Cooking",
+      "translation": "Μαγειρική"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12854",
+      "source": "Fruit",
+      "translation": "Φρούτο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12855",
+      "source": "Seed",
+      "translation": "Σπόρος"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12856",
+      "source": "Fertilizer",
+      "translation": "Λίπασμα",
+      "glossaryIds": [
+        "fertilizer"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12857",
+      "source": "Bait",
+      "translation": "Δόλωμα",
+      "glossaryIds": [
+        "bait"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12858",
+      "source": "Fishing Tackle",
+      "translation": "Εξάρτημα Ψαρέματος",
+      "glossaryIds": [
+        "tackle-bobber"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12859",
+      "source": "Decor",
+      "translation": "Διακοσμητικό"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12860",
+      "source": "Trash",
+      "translation": "Σκουπίδια"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12862",
+      "source": "Artisan Goods",
+      "translation": "Βιοτεχνικά Προϊόντα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12863",
+      "source": "Crafting",
+      "translation": "Κατασκευή",
+      "glossaryIds": [
+        "crafting"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12864",
+      "source": "Animal Product",
+      "translation": "Ζωικό Προϊόν"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12866",
+      "source": "Flower",
+      "translation": "Λουλούδι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12867",
+      "source": "Monster Loot",
+      "translation": "Λάφυρα Τεράτων"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12868",
+      "source": "Resource",
+      "translation": "Πόρος"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12869",
+      "source": "Forage",
+      "translation": "Προϊόντα Συλλογής"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "category_clothes",
+      "source": "Clothes",
+      "translation": "Ρούχα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12873",
+      "source": "Progress Mode",
+      "translation": "Λειτουργία Προόδου"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12875",
+      "source": "Endless Mode",
+      "translation": "Ατελείωτη Λειτουργία"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12926",
+      "source": "I haven't encountered any crows yet.",
+      "translation": "Δεν έχω συναντήσει ακόμα κανένα κοράκι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12927",
+      "source": "I've scared off 1 crow.",
+      "translation": "Έχω διώξει 1 κοράκι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12929",
+      "source": "I've scared off {0} crows.",
+      "translation": "Έχω διώξει {0} κοράκια."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12942",
+      "source": "The hopper is empty. Build a silo and cut grass with your scythe to refill it.",
+      "translation": "Ο διανομέας σανού είναι άδειος. Χτίστε ένα σιλό και κόψτε χόρτα με το δρεπάνι σας για να τον ξαναγεμίσετε.",
+      "glossaryIds": [
+        "silo",
+        "scythe"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12993",
+      "source": "You found an artifact! The curator of the local museum might want to know about this.",
+      "translation": "Βρήκατε ένα τεχνούργημα! Ο επιμελητής του τοπικού μουσείου ίσως ενδιαφέρεται να το μάθει.",
+      "glossaryIds": [
+        "artifact-mineral"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12994",
+      "source": "You found a 'Lost Book'. The library's collection has expanded!",
+      "translation": "Βρήκατε ένα «Χαμένο Βιβλίο». Η συλλογή της βιβλιοθήκης μεγάλωσε!",
+      "glossaryIds": [
+        "lost-book"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12995",
+      "source": "You found a 'Geode'! The local blacksmith can break it open for you. Who knows what might be hidden inside?",
+      "translation": "Βρήκατε ένα «Γεώδιο»! Ο τοπικός σιδηρουργός μπορεί να το σπάσει για εσάς. Ποιος ξέρει τι μπορεί να κρύβει μέσα;",
+      "glossaryIds": [
+        "geode",
+        "blacksmith"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.12996",
+      "source": "You found a peculiar statue behind Grandpa's Shrine.",
+      "translation": "Βρήκατε ένα παράξενο άγαλμα πίσω από το Ιερό του Παππού."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13021",
+      "source": "Invalid Position.",
+      "translation": "Μη Έγκυρη Θέση."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13053",
+      "source": "Unsuitable Location.",
+      "translation": "Ακατάλληλη Τοποθεσία."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13060",
+      "source": "Too close to another tree.",
+      "translation": "Πολύ κοντά σε άλλο δέντρο."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13068",
+      "source": "Can't be planted here.",
+      "translation": "Δεν μπορεί να φυτευτεί εδώ."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13073",
+      "source": "A recipe to make {0}",
+      "translation": "Συνταγή παρασκευής: {0}",
+      "glossaryIds": [
+        "recipe"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13074",
+      "source": "Blueprints for crafting {0}",
+      "translation": "Σχέδια κατασκευής: {0}",
+      "glossaryIds": [
+        "crafting"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Object.cs.13078",
+      "source": "Gunther can tell you more about this if you donate it to the museum.",
+      "translation": "Ο Γκάνθερ μπορεί να σας πει περισσότερα γι’ αυτό, αν το δωρίσετε στο μουσείο.",
+      "glossaryIds": [
+        "gunther"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13088",
+      "source": "Skull Key",
+      "translation": "Κλειδί Κρανίου",
+      "glossaryIds": [
+        "skull-key"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13089",
+      "source": "Club Card",
+      "translation": "Κάρτα Λέσχης",
+      "glossaryIds": [
+        "club-card"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13090",
+      "source": "Under a piece of wood, you found a {0}! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+      "translation": "Κάτω από ένα κομμάτι ξύλο βρήκατε ένα αντικείμενο: {0}! Δεν ξέρετε σε τι χρησιμεύει, αλλά φαίνεται σημαντικό. Προστέθηκε στο πορτοφόλι σας."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13092",
+      "source": "You've found the {0}! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+      "translation": "Βρήκατε το αντικείμενο «{0}»! Δεν ξέρετε σε τι χρησιμεύει, αλλά φαίνεται σημαντικό. Προστέθηκε στο πορτοφόλι σας."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13094",
+      "source": "You got the {0}! Your inventory space has increased to {1}.",
+      "translation": "Αποκτήσατε το σακίδιο «{0}»! Οι θέσεις στο απόθεμά σας αυξήθηκαν σε {1}.",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13105",
+      "source": "Weather Report",
+      "translation": "Δελτίο Καιρού",
+      "glossaryIds": [
+        "weather-report"
+      ]
+    }
+  ]
+}

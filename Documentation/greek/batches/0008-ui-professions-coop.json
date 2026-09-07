@@ -1,0 +1,435 @@
+{
+  "id": "0008-ui-professions-coop",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "695f626ba0053d4775da69e35e7fb7553d85d0e0b9fdb03329da2a14e4e0208e",
+    "notes": "All 70 pairs read in full. Profession effects and percent bonuses checked; the empty startup value is deliberately retained. Gendered setting values agree with Απόκρυψη. IP/LAN abbreviations follow glossary. Source placeholder {1} in HostFile preserved exactly."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Botanist",
+      "source": "Foraged items are always highest quality.",
+      "translation": "Τα άγρια ευρήματα είναι πάντα της υψηλότερης ποιότητας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Tracker",
+      "source": "Tracker",
+      "translation": "Ιχνηλάτης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Tracker",
+      "source": "Location of forageable items revealed.",
+      "translation": "Αποκαλύπτονται οι θέσεις των άγριων ευρημάτων."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Miner",
+      "source": "Miner",
+      "translation": "Μεταλλωρύχος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Miner",
+      "source": "+1 ore per vein.",
+      "translation": "+1 μετάλλευμα ανά κοίτασμα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Geologist",
+      "source": "Geologist",
+      "translation": "Γεωλόγος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Geologist",
+      "source": "Chance for gems to appear in pairs.",
+      "translation": "Πιθανότητα να εμφανιστούν πετράδια σε ζεύγη."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Blacksmith",
+      "source": "Blacksmith",
+      "translation": "Σιδηρουργός"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Blacksmith",
+      "source": "Metal bars worth 50% more.",
+      "translation": "Οι μεταλλικές ράβδοι αξίζουν 50% περισσότερο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Prospector",
+      "source": "Prospector",
+      "translation": "Χρυσοθήρας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Prospector",
+      "source": "Chance to find coal doubled.",
+      "translation": "Διπλασιάζεται η πιθανότητα εύρεσης κάρβουνου."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Excavator",
+      "source": "Excavator",
+      "translation": "Ανασκαφέας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Excavator",
+      "source": "Chance to find geodes doubled.",
+      "translation": "Διπλασιάζεται η πιθανότητα εύρεσης γεωδίων."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Gemologist",
+      "source": "Gemologist",
+      "translation": "Γεμολόγος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Gemologist",
+      "source": "Gems worth 30% more.",
+      "translation": "Τα πετράδια αξίζουν 30% περισσότερο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Fighter",
+      "source": "Fighter",
+      "translation": "Μαχητής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Fighter",
+      "source": "All attacks deal 10% more damage.",
+      "translation": "Όλες οι επιθέσεις προκαλούν 10% περισσότερη ζημιά."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Scout",
+      "source": "Scout",
+      "translation": "Ανιχνευτής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Scout",
+      "source": "Critical strike chance increased by 50%.",
+      "translation": "Η πιθανότητα κρίσιμου χτυπήματος αυξάνεται κατά 50%."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Brute",
+      "source": "Brute",
+      "translation": "Θηριώδης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Brute",
+      "source": "Deal 15% more damage.",
+      "translation": "Προκαλείτε 15% περισσότερη ζημιά."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Defender",
+      "source": "Defender",
+      "translation": "Υπερασπιστής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Defender",
+      "source": "+25 HP.",
+      "translation": "+25 Πόντοι Ζωής."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Acrobat",
+      "source": "Acrobat",
+      "translation": "Ακροβάτης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Acrobat",
+      "source": "Cooldown on special moves cut in half.",
+      "translation": "Ο χρόνος επαναφόρτισης ειδικών κινήσεων μειώνεται στο μισό."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Desperado",
+      "source": "Desperado",
+      "translation": "Παράτολμος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Desperado",
+      "source": "Critical strikes are deadlier.",
+      "translation": "Τα κρίσιμα χτυπήματα είναι πιο φονικά."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ChooseProfession",
+      "source": "Choose a profession:",
+      "translation": "Επιλέξτε επάγγελμα:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_NewRecipe",
+      "source": "New {0} recipe: {1}",
+      "translation": "Νέα συνταγή {0}: {1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LoadGameMenu_LookingForSavedGames",
+      "source": "Looking for Saved Games...",
+      "translation": "Αναζήτηση Αποθηκευμένων Παιχνιδιών..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LoadGameMenu_Deleting",
+      "source": "Deleting...",
+      "translation": "Διαγραφή..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "TitleMenu_PressAToStart",
+      "source": "PRESS @ TO START",
+      "translation": "ΠΑΤΗΣΤΕ @ ΓΙΑ ΝΑ ΞΕΚΙΝΗΣΕΤΕ"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "TooManyFarmsMenu_TooManyFarms",
+      "source": "You already have the maximum number of farms.",
+      "translation": "Έχετε ήδη τον μέγιστο αριθμό αγροκτημάτων."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_SignInChange",
+      "source": "A sign-in change has occurred. Sign back in or exit to the title screen.",
+      "translation": "Άλλαξε η κατάσταση σύνδεσης. Συνδεθείτε ξανά ή επιστρέψτε στην οθόνη τίτλου."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_Returning",
+      "source": "Returning to title.",
+      "translation": "Επιστροφή στην οθόνη τίτλου."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_SignIn",
+      "source": "Sign-in",
+      "translation": "Σύνδεση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_Exit",
+      "source": "Exit",
+      "translation": "Έξοδος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "StartupMessage_FirstRun",
+      "source": "",
+      "translation": "",
+      "preserveReason": "Empty startup message in the original English asset; retain the intentional empty value."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ControllerConnectMenu_PleaseReconnect",
+      "source": "Please reconnect your controller to continue the game.",
+      "translation": "Συνδέστε ξανά το χειριστήριό σας για να συνεχίσετε το παιχνίδι."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode",
+      "source": "Item Stowing",
+      "translation": "Απόκρυψη Αντικειμένου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode_Off",
+      "source": "Off",
+      "translation": "Ανενεργή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode_GamepadOnly",
+      "source": "Gamepad Only",
+      "translation": "Μόνο Χειριστήριο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode_On",
+      "source": "On",
+      "translation": "Ενεργή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_ShowAdvancedCraftingInformation",
+      "source": "Show Advanced Crafting Information",
+      "translation": "Εμφάνιση Προηγμένων Πληροφοριών Κατασκευής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Crafting_NumberCrafted",
+      "source": "Number Crafted: {0}",
+      "translation": "Αριθμός Κατασκευών: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadStyleMenus",
+      "source": "Use Controller-Style Menus",
+      "translation": "Μενού Τύπου Χειριστηρίου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerInvite",
+      "source": "Invite Friend...",
+      "translation": "Πρόσκληση Φίλου..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode",
+      "source": "Server Mode",
+      "translation": "Λειτουργία Διακομιστή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_Offline",
+      "source": "Offline",
+      "translation": "Εκτός Σύνδεσης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_Online",
+      "source": "Online",
+      "translation": "Σε Σύνδεση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_FriendsOnly",
+      "source": "Friends-Only",
+      "translation": "Μόνο Φίλοι"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_InviteOnly",
+      "source": "Invite-Only",
+      "translation": "Μόνο με Πρόσκληση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_EnterIP",
+      "source": "Enter IP...",
+      "translation": "Εισαγωγή IP..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Join",
+      "source": "Join",
+      "translation": "Συμμετοχή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Host",
+      "source": "Host",
+      "translation": "Φιλοξενία"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_JoinLANGame",
+      "source": "Join LAN Game...",
+      "translation": "Συμμετοχή σε Παιχνίδι LAN..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_EnterInviteCode",
+      "source": "Enter Invite Code...",
+      "translation": "Εισαγωγή Κωδικού Πρόσκλησης..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_HostNewFarm",
+      "source": "Host New Farm...",
+      "translation": "Φιλοξενία Νέου Αγροκτήματος..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_NoInvites",
+      "source": "No invitations",
+      "translation": "Δεν υπάρχουν προσκλήσεις"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Failed",
+      "source": "Connection failed",
+      "translation": "Αποτυχία σύνδεσης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_FailedProtocolVersion",
+      "source": "Connection failed (version mismatch)",
+      "translation": "Αποτυχία σύνδεσης (ασυμφωνία έκδοσης)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Connecting",
+      "source": "Connecting...",
+      "translation": "Σύνδεση..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_ConnectingOnlineServices",
+      "source": "Connecting to online services",
+      "translation": "Σύνδεση σε διαδικτυακές υπηρεσίες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_NoSlots",
+      "source": "No available cabins",
+      "translation": "Δεν υπάρχουν διαθέσιμες καλύβες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_NewFarmhand",
+      "source": "New Farmer",
+      "translation": "Νέος Αγρότης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_HostFile",
+      "source": "Host {1} Farm",
+      "translation": "Φιλοξενία Αγροκτήματος {1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_RevisitFriendFarm",
+      "source": "Rejoin {0} Farm",
+      "translation": "Επανασύνδεση στο Αγρόκτημα {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_JoinFriendFarm",
+      "source": "Join {0} Farm",
+      "translation": "Συμμετοχή στο Αγρόκτημα {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Refresh",
+      "source": "Refresh",
+      "translation": "Ανανέωση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_MultiplayerSection",
+      "source": "Multiplayer",
+      "translation": "Πολλοί Παίκτες"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "0027-extra-spouse-summit",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "2ee6c7bac7973a42b33d71856faf33886a24262cc7e041553abc04675d74b982",
+    "notes": "All 20 records read in full: 20 spoken fields across 12 spouse fragments, eight plain lines, and both fields of the Maru female-player variant. One opening phrase clarified and re-read. Native Summit.cs confirms insertion after speak <spouse> and conditional final-quote completion; validator reconstructs this exact frame and locks all embedded actors, pauses, motion, emotes and quote boundaries in both genders. Each spouses individual reflection retained, including Shane vulnerability and implicit survival, Harvey fear, Sam diapers, Emily destiny and Haley childhood wish. Final watchers address the player warmly in singular."
+  },
+  "records": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue1_Spouse",
+      "source": "I was just thinking about the last %year years...",
+      "translation": "Σκεφτόμουν μόλις τώρα τα τελευταία %year χρόνια..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue1B_Spouse",
+      "source": "We've been through a lot together, haven't we?$h",
+      "translation": "Έχουμε περάσει πολλά μαζί, έτσι δεν είναι;$h"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue2_Spouse",
+      "source": "...But look how far we've come.",
+      "translation": "...Αλλά κοίτα πόσο μακριά έχουμε φτάσει."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Alex",
+      "source": "I've finally discovered who I want to be... and I feel certain about the future.\"/pause 500/speak Alex \"I don't think I would've gotten here without you, @.\"",
+      "structure": "eventFragment",
+      "translation": "Επιτέλους ανακάλυψα ποιος θέλω να είμαι... και νιώθω σιγουριά για το μέλλον.\"/pause 500/speak Alex \"Δεν νομίζω ότι θα είχα φτάσει ως εδώ χωρίς εσένα, @.\""
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Sebastian",
+      "source": "Before I met you, I spent most of my time turned away from reality... because I thought I'd never find happiness.#$b#...but you've shown me that the world isn't such a dark place, after all.$h\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...That's one of the reasons I love you...\"",
+      "structure": "eventFragment",
+      "translation": "Πριν σε γνωρίσω, περνούσα τον περισσότερο καιρό αποφεύγοντας την πραγματικότητα... γιατί πίστευα ότι δεν θα έβρισκα ποτέ την ευτυχία.#$b#...αλλά μου έδειξες πως τελικά ο κόσμος δεν είναι τόσο σκοτεινός.$h\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...Αυτός είναι ένας από τους λόγους που σ' αγαπώ...\""
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Sam",
+      "source": "I feel like I've changed a lot from when we first met... you know?#$b#...you might call it 'maturity'... hehe.$10#$b#But I'm at a place, now, where I'm actually really excited about our future together...$l#$b#Even if that means just doing normal stuff, like... uh... buying groceries and changing diapers... hah...$10",
+      "structure": "eventFragment",
+      "translation": "Νιώθω πως έχω αλλάξει πολύ από τότε που πρωτογνωριστήκαμε... καταλαβαίνεις;#$b#...θα μπορούσες να το πεις «ωριμότητα»... χεχε.$10#$b#Τώρα όμως νιώθω πραγματικά ενθουσιασμό για το κοινό μας μέλλον...$l#$b#Ακόμη κι αν αυτό σημαίνει απλά, καθημερινά πράγματα, όπως... εε... να αγοράζουμε τρόφιμα και να αλλάζουμε πάνες... χα...$10"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Shane",
+      "source": "If I hadn't met you, @... I might not even be here right now.#$b#Which would be a shame, because the bird-watching up here is phenomenal!$h\"/emote farmer 16/pause 1000/speak Shane \"Heh... I... I tend to joke a lot, because...well...$s#$b#I guess keeping things light-hearted makes it so I don't have to open up and make myself vulnerable.\"/emote Shane 28/speak Shane \"But every season that goes by, with you, I get a little more comfortable with myself.#$b#Uh.. I guess what I want to say is...#$b#I have no regrets marrying you!$h\"",
+      "structure": "eventFragment",
+      "translation": "Αν δεν σε είχα γνωρίσει, @... μπορεί να μην ήμουν καν εδώ αυτή τη στιγμή.#$b#Και θα ήταν κρίμα, γιατί η παρατήρηση πουλιών εδώ πάνω είναι καταπληκτική!$h\"/emote farmer 16/pause 1000/speak Shane \"Χε... Εγώ... Συχνά το ρίχνω στα αστεία, γιατί... ξέρεις...$s#$b#Μάλλον, κρατώντας την κουβέντα ανάλαφρη, δεν χρειάζεται να ανοίγομαι και να εκθέτω τον εαυτό μου.\"/emote Shane 28/speak Shane \"Αλλά με κάθε εποχή που περνάει μαζί σου, νιώθω λίγο πιο άνετα με τον εαυτό μου.#$b#Εε.. Μάλλον αυτό που θέλω να πω είναι...#$b#Δεν μετανιώνω καθόλου που σε παντρεύτηκα!$h\""
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Elliott",
+      "source": "Heh... it just dawned on me...$h#$b#We've reached the summit, but not just physically... metaphorically as well.#$b#How poetic!$l",
+      "structure": "eventFragment",
+      "translation": "Χε... μόλις το συνειδητοποίησα...$h#$b#Φτάσαμε στην κορυφή, αλλά όχι μόνο κυριολεκτικά... και μεταφορικά.#$b#Πόσο ποιητικό!$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Harvey",
+      "source": "When I'm next to you, I'm not even scared of falling off this cliff and dashing onto the sharp rocks below...$l\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#I... I love and admire you very much, @...$l\"",
+      "structure": "eventFragment",
+      "translation": "Όταν είμαι δίπλα σου, δεν φοβάμαι ούτε μήπως πέσω απ' αυτόν τον γκρεμό και τσακιστώ στους μυτερούς βράχους από κάτω...$l\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#Εγώ... Σ' αγαπώ και σε θαυμάζω πάρα πολύ, @...$l\""
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Abigail",
+      "source": "Standing here, looking out on the horizon... I get a feeling of endless possibility.#$b#I'm just happy I get to explore this world, with you by my side...$l",
+      "structure": "eventFragment",
+      "translation": "Εδώ που στεκόμαστε, κοιτάζοντας τον ορίζοντα... νιώθω πως οι δυνατότητες είναι ατελείωτες.#$b#Χαίρομαι τόσο που μπορώ να εξερευνώ αυτόν τον κόσμο με εσένα στο πλευρό μου...$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Emily",
+      "source": "This is a special moment...#$b#I've always known I would be standing here with you, someday. I've always felt it in my heart.#$b#Now, it's all come true.\"/pause 500/speak Emily \"The world is a mysterious and special place...$l\"",
+      "structure": "eventFragment",
+      "translation": "Αυτή είναι μια ξεχωριστή στιγμή...#$b#Πάντα ήξερα ότι κάποια μέρα θα στεκόμουν εδώ μαζί σου. Πάντα το ένιωθα στην καρδιά μου.#$b#Τώρα όλα έγιναν πραγματικότητα.\"/pause 500/speak Emily \"Ο κόσμος είναι ένα μυστηριώδες και ξεχωριστό μέρος...$l\""
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Haley",
+      "source": "*giggle*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"Oh, it's just that...#$b#As a little girl, I always dreamed that one day, I would climb to the summit with my true love, and share a kiss.$l\"",
+      "structure": "eventFragment",
+      "translation": "*χαχανητό*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"Α, απλώς...#$b#Όταν ήμουν κοριτσάκι, ονειρευόμουν πάντα ότι μια μέρα θα ανέβαινα στην κορυφή με την αληθινή μου αγάπη και θα ανταλλάσσαμε ένα φιλί.$l\""
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Leah",
+      "source": "I think we've both found what we were looking for in this place.#$b#I wouldn't want to be anywhere else, but here with you.$l",
+      "structure": "eventFragment",
+      "translation": "Νομίζω ότι βρήκαμε και οι δυο σ' αυτό το μέρος όσα ψάχναμε.#$b#Δεν θα ήθελα να είμαι πουθενά αλλού, παρά εδώ μαζί σου.$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Penny",
+      "source": "We have a beautiful home and a thriving family... it's all I've ever dreamed of, and more.$l",
+      "structure": "eventFragment",
+      "translation": "Έχουμε ένα όμορφο σπίτι και μια οικογένεια που ανθίζει... Είναι όλα όσα ονειρευόμουν, κι ακόμη περισσότερα.$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Maru",
+      "source": "You've really accomplished a lot since you moved here, @. It's incredible.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"I think it's safe to say that you were meant to be a farmer!$h\"",
+      "structure": "eventFragment",
+      "translation": "Έχεις καταφέρει πάρα πολλά από τότε που μετακόμισες εδώ, @. Είναι απίστευτο.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"Νομίζω ότι μπορούμε να πούμε με σιγουριά πως γεννήθηκες για να γίνεις αγρότης!$h\"",
+      "femaleTranslation": "Έχεις καταφέρει πάρα πολλά από τότε που μετακόμισες εδώ, @. Είναι απίστευτο.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"Νομίζω ότι μπορούμε να πούμε με σιγουριά πως γεννήθηκες για να γίνεις αγρότισσα!$h\""
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage",
+      "source": "It's been a long road...",
+      "translation": "Ήταν μακρύς ο δρόμος..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage2",
+      "source": "You challenged yourself to reach the summit",
+      "translation": "Δοκίμασες τις δυνάμεις σου για να φτάσεις στην κορυφή"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage3",
+      "source": "What an accomplishment!",
+      "translation": "Τι κατόρθωμα!"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage4",
+      "source": "We've been watching every step of the way",
+      "translation": "Παρακολουθούσαμε κάθε σου βήμα"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage5",
+      "source": "And you've made us very proud!",
+      "translation": "Και μας έκανες πολύ περήφανους!"
+    }
+  ]
+}

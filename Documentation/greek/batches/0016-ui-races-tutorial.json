@@ -1,0 +1,437 @@
+{
+  "id": "0016-ui-races-tutorial",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "91a8e70ef2e5ef501b94cd7541369f88709bf24edd59b6634b64b169e623b9dd",
+    "notes": "All 70 pairs read in full. Fourteen racer phrases corrected and re-read after inspecting DesertFestival and the five English racer names: explicit δρομέας provides grammatical agreement for unchanged dynamic names. Native ProfileMenu confirms birthday placeholders are fixed season label and day, retained as compact UI order. Waiver glyph ¾, newline layout, quantities and list continuation punctuation preserved. Placeholder-only records have explicit reasons."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "PT_Stardrops",
+      "source": "Found All Stardrops",
+      "translation": "Βρέθηκαν Όλες οι Αστεροσταγόνες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_Cooking",
+      "source": "Cooking Recipes Made",
+      "translation": "Εκτελεσμένες Συνταγές Μαγειρικής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_Crafting",
+      "source": "Crafting Recipes Made",
+      "translation": "Εκτελεσμένες Συνταγές Κατασκευής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_Fish",
+      "source": "Fish Caught",
+      "translation": "Ψάρια που Πιάστηκαν"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_GoldenWalnut",
+      "source": "Golden Walnuts Found",
+      "translation": "Χρυσά Καρύδια που Βρέθηκαν"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_Total",
+      "source": "Total Complete",
+      "translation": "Συνολική Ολοκλήρωση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_Total_Value",
+      "source": "{0}%",
+      "translation": "{0}%",
+      "preserveReason": "Percentage format consists only of an unchanged placeholder and percent sign."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_Total_ValueWithWaiver",
+      "source": "{0}% (¾1 waiver)",
+      "translation": "{0}% (¾1 απαλλαγή)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PT_Total_ValueWithWaivers",
+      "source": "{0}% (¾{1} waivers)",
+      "translation": "{0}% (¾{1} απαλλαγές)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "EndCredit_Neighbors",
+      "source": "Neighbors",
+      "translation": "Γείτονες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "EndCredit_Animals",
+      "source": "Animals",
+      "translation": "Ζώα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "EndCredit_Fish",
+      "source": "Fish",
+      "translation": "Ψάρια"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "EndCredit_Monsters",
+      "source": "Monsters",
+      "translation": "Τέρατα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "EndCredit_ShadowPeople",
+      "source": "Shadow People",
+      "translation": "Άνθρωποι της Σκιάς"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "EndCredit_Slimes",
+      "source": "Slimes",
+      "translation": "Γλίτσες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "EndCredit_Bats",
+      "source": "Bats",
+      "translation": "Νυχτερίδες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ParrotPlatform_Question",
+      "source": "Take Parrot Express?",
+      "translation": "Να πάρετε το Εξπρές Παπαγάλων;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NextPage",
+      "source": "Next page",
+      "translation": "Επόμενη σελίδα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PreviousPage",
+      "source": "Previous page",
+      "translation": "Προηγούμενη σελίδα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "TextSignEntry",
+      "source": "Enter sign text",
+      "translation": "Εισαγάγετε κείμενο πινακίδας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceStarting",
+      "source": "The next race is starting soon...",
+      "translation": "Η επόμενη κούρσα αρχίζει σύντομα..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_1",
+      "source": "{0} thinks {1} is going to win the race...",
+      "translation": "{0} πιστεύει ότι ο δρομέας «{1}» θα νικήσει στην κούρσα..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_2",
+      "source": "{0} will be seeing {1} at the finish line!",
+      "translation": "{0} περιμένει τον δρομέα «{1}» στη γραμμή τερματισμού!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_3",
+      "source": "{0} is hoping {1} pulls off a first place finish!",
+      "translation": "{0} ελπίζει ότι ο δρομέας «{1}» θα καταφέρει να τερματίσει πρώτος!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_4",
+      "source": "{0} is rooting for {1}!",
+      "translation": "{0} υποστηρίζει τον δρομέα «{1}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_5",
+      "source": "{0} is Team {1}!",
+      "translation": "{0} είναι στην ομάδα «{1}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_6",
+      "source": "{0} thinks {1} is a sure bet!",
+      "translation": "{0} πιστεύει ότι ο δρομέας «{1}» είναι σίγουρο στοίχημα!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_7",
+      "source": "{0} is cheering for {1}!",
+      "translation": "{0} ζητωκραυγάζει για τον δρομέα «{1}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_8",
+      "source": "{0}'s going 'all in' on {1}!",
+      "translation": "{0} τα ποντάρει όλα στον δρομέα «{1}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_9",
+      "source": "{0} is betting big on {1}!",
+      "translation": "{0} ποντάρει πολλά στον δρομέα «{1}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GuessRacer_10",
+      "source": "{0} is sure {1}'s gonna win!",
+      "translation": "{0} δεν αμφιβάλλει ότι ο δρομέας «{1}» θα κερδίσει!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceSabotage_1",
+      "source": "There's a rumor that the next race is rigged...",
+      "translation": "Φημολογείται ότι η επόμενη κούρσα είναι στημένη..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceSabotage_2",
+      "source": "Maniacal laughter was heard behind Sandy's Oasis...",
+      "translation": "Ένα παρανοϊκό γέλιο ακούστηκε πίσω από την Όαση της Σάντι..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceSabotage_3",
+      "source": "The fix is in...",
+      "translation": "Το στήσιμο έγινε..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceSabotage_4",
+      "source": "The race track is looking a little slippery...",
+      "translation": "Η πίστα φαίνεται να γλιστράει λίγο..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceSabotage_5",
+      "source": "The little racers seem nervous about the next race...",
+      "translation": "Οι μικροί δρομείς δείχνουν νευρικοί για την επόμενη κούρσα..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceWinners_Zero",
+      "source": "{0} has won the race!",
+      "translation": "Ο δρομέας «{0}» κέρδισε την κούρσα!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceWinners_One",
+      "source": "{0} has won the race! Congratulations {1}!",
+      "translation": "Ο δρομέας «{0}» κέρδισε την κούρσα! Συγχαρητήρια, {1}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceWinners_Two",
+      "source": "{0} has won the race! Congratulations {1} and {2}!",
+      "translation": "Ο δρομέας «{0}» κέρδισε την κούρσα! Συγχαρητήρια, {1} και {2}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceWinners_Many",
+      "source": "{0} has won the race! Congratulations",
+      "translation": "Ο δρομέας «{0}» κέρδισε την κούρσα! Συγχαρητήρια,"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceWinners_List",
+      "source": "{0},",
+      "translation": "{0},",
+      "preserveReason": "List member consists only of a player-name placeholder and comma."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RaceWinners_Final",
+      "source": "and {0}!",
+      "translation": "και {0}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CalicoStatue_Activated",
+      "source": "Calico Statue: {0}",
+      "translation": "Άγαλμα Κάλικο: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tomorrow",
+      "source": "Tomorrow...",
+      "translation": "Αύριο..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HardModeSkullCaveActivated",
+      "source": "{0} has removed an ancient magi-seal of protection in the Skull Cavern. Tonight, powerful monsters will ascend from the deep...",
+      "translation": "{0} αφαίρεσε μια αρχαία μαγική σφραγίδα προστασίας στο Σπήλαιο του Κρανίου. Απόψε, ισχυρά τέρατα θα ανέβουν από τα βάθη..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HardModeSkullCaveDeactivated",
+      "source": "{0} has restored an ancient magi-seal of protection in the Skull Cavern. Tomorrow, it will return to normal...",
+      "translation": "{0} αποκατέστησε μια αρχαία μαγική σφραγίδα προστασίας στο Σπήλαιο του Κρανίου. Αύριο, θα επιστρέψει στην κανονική του κατάσταση..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "BirthdayOrder",
+      "source": "{1} {0}",
+      "translation": "{1} {0}",
+      "preserveReason": "Placeholder-only birthday order also suits Greek."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_EyeColor.mobile",
+      "source": "Eye \nColor",
+      "translation": "Χρώμα \nΜατιών"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_HairColor.mobile",
+      "source": "Hair\nColor",
+      "translation": "Χρώμα\nΜαλλιών"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_PantsColor.mobile",
+      "source": "Pants\nColor",
+      "translation": "Χρώμα\nΠαντελονιού"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_ShirtColor.mobile",
+      "source": "Shirt\nColor",
+      "translation": "Χρώμα\nΠουκαμίσου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DisplayAdjustmentText",
+      "source": "Press up/down to adjust the screen size to fit your display.",
+      "translation": "Πατήστε πάνω ή κάτω για να προσαρμόσετε το μέγεθος της εικόνας στην οθόνη σας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DisplayAdjustmentButton",
+      "source": "Adjust Screen Size",
+      "translation": "Προσαρμογή Μεγέθους Εικόνας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Split_Screen",
+      "source": "Split Screen",
+      "translation": "Διαιρεμένη Οθόνη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "mobile_options_vertical_toolbar",
+      "source": "Vertical Toolbar",
+      "translation": "Κατακόρυφη Γραμμή Εργαλείων"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "mobile_options_menu_side_margin",
+      "source": "Menu padding",
+      "translation": "Περιθώρια μενού"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "mobile_options_toolbar_padding",
+      "source": "Toolbar padding",
+      "translation": "Περιθώρια γραμμής εργαλείων"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "mobile_button_craft",
+      "source": "Craft",
+      "translation": "Κατασκευή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "shippingInstructionText",
+      "source": "Drop items here to ship them for sale.",
+      "translation": "Αφήστε αντικείμενα εδώ για να σταλούν προς πώληση."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorialWant",
+      "source": "Enable tutorial hints?",
+      "translation": "Ενεργοποίηση συμβουλών εκμάθησης;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial1",
+      "source": "First, choose your appearance and farm type. When you're done, tap the check mark button to start playing.",
+      "translation": "Πρώτα, επιλέξτε την εμφάνισή σας και τον τύπο αγροκτήματος. Όταν τελειώσετε, αγγίξτε το κουμπί με το σημάδι επιλογής για να αρχίσετε να παίζετε."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial2",
+      "source": "Good morning! Remember to head back to the farmhouse to sleep and save your game later on.",
+      "translation": "Καλημέρα! Θυμηθείτε να επιστρέψετε αργότερα στην αγροικία για να κοιμηθείτε και να αποθηκεύσετε το παιχνίδι σας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial3",
+      "source": "You've received a gift! Tap on the package to open it.",
+      "translation": "Λάβατε ένα δώρο! Αγγίξτε το πακέτο για να το ανοίξετε."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial4",
+      "source": "New quests are shown in the Journal. Tap on a quest to take a closer look - there's useful information there!",
+      "translation": "Οι νέες αποστολές εμφανίζονται στο Ημερολόγιο. Αγγίξτε μια αποστολή για περισσότερες λεπτομέρειες. Θα βρείτε χρήσιμες πληροφορίες!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial5",
+      "source": "Tap the Close button when you're done with the Journal.",
+      "translation": "Αγγίξτε το κουμπί Κλείσιμο όταν τελειώσετε με το Ημερολόγιο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial6",
+      "source": "Looks like quite a mess! Let's clear this place up.",
+      "translation": "Εδώ γίνεται χαμός! Ας συμμαζέψουμε λίγο τον χώρο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial7",
+      "source": "Tap on a weed to clear it.",
+      "translation": "Αγγίξτε ένα ζιζάνιο για να το καθαρίσετε."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial8",
+      "source": "Well done! Try clearing some more weeds and rocks.",
+      "translation": "Μπράβο! Δοκιμάστε να καθαρίσετε κι άλλα ζιζάνια και πέτρες."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial9",
+      "source": "You can use the hoe to prepare the soil for planting.",
+      "translation": "Μπορείτε να χρησιμοποιήσετε την τσάπα για να προετοιμάσετε το έδαφος για φύτευση."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "tutorial10",
+      "source": "Try preparing a garden patch to sow your first seeds.",
+      "translation": "Δοκιμάστε να ετοιμάσετε ένα παρτέρι για να σπείρετε τους πρώτους σας σπόρους."
+    }
+  ]
+}

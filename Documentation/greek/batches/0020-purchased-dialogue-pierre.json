@@ -1,0 +1,140 @@
+{
+  "id": "0020-purchased-dialogue-pierre",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "2c1f28720b8ceb5a3bd418dd0d10952a3d3ee88283019f215b28aa9285e4fd1d",
+    "notes": "All 21 source/Greek pairs read in full. All item-name placeholders stay uninflected in quotes; explicit neuter προϊόν agrees with empty/fresh article branch, all adjective alternatives, and subsequent pronouns. SeedShop.cs.9701 deliberately includes one trailing space so the native empty and fresh branches both form correct text; both ShopLocation and FishShop call sites were checked. Aroma uses neuter άρωμα. Chef adjectives refer to Pierre and are masculine regardless of speaker sex. Pierre taking credit, rude reactions, compost jokes, hoisin sauce, names and every control marker retained."
+  },
+  "records": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityHigh",
+      "source": "Hey, {0}.#$b# So I stopped by Pierre's the other day and bought {1} {2}. It was the first time I've seen one of those there in a while... #$b#I cooked it up for dinner last night... It filled the house with a {3} smell.. It was a hit!$h#$b#I'm glad Pierre's stock is starting to expand again.#$e# Anyways...",
+      "translation": "Γεια σου, {0}.#$b# Πέρασα τις προάλλες από το μαγαζί του Πιερ και αγόρασα ένα {1}προϊόν «{2}». Είχα καιρό να δω κάτι τέτοιο εκεί... #$b#Το μαγείρεψα χθες για βραδινό... Το άρωμα που γέμισε το σπίτι ήταν {3}.. Έκανε θραύση!$h#$b#Χαίρομαι που ο Πιερ αρχίζει πάλι να φέρνει μεγαλύτερη ποικιλία στο μαγαζί του.#$e# Τέλος πάντων..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityLow",
+      "source": "Hey, {0}.#$b# So I stopped by Pierre's the other day and bought {1} {2}. It was the first time I've seen one of those there in a while... #$b#I cooked it up for dinner last night... It filled the house with a {3} odor. I don't even want to know where Pierre found that thing.$s#$e# Anyways...",
+      "translation": "Γεια σου, {0}.#$b# Πέρασα τις προάλλες από το μαγαζί του Πιερ και αγόρασα ένα {1}προϊόν «{2}». Είχα καιρό να δω κάτι τέτοιο εκεί... #$b#Το μαγείρεψα χθες για βραδινό... Το άρωμα που γέμισε το σπίτι ήταν {3}. Ούτε που θέλω να ξέρω πού το βρήκε αυτό το πράγμα ο Πιερ.$s#$e# Τέλος πάντων..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh",
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It was pretty high-quality stuff. I'm impressed.",
+      "translation": "Γεια... μήπως πούλησες ένα {1}προϊόν «{2}» στο παντοπωλείο τις προάλλες; Νομίζω ότι το αγόρασα...#$e#Ήταν πολύ καλής ποιότητας. Εντυπωσιάστηκα."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh_Jodi",
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It was pretty high-quality stuff. As soon as I smelled it I was back in Granny's old cottage...",
+      "translation": "Γεια... μήπως πούλησες ένα {1}προϊόν «{2}» στο παντοπωλείο τις προάλλες; Νομίζω ότι το αγόρασα...#$e#Ήταν πολύ καλής ποιότητας. Μόλις το μύρισα, ήταν σαν να βρέθηκα ξανά στο παλιό σπιτάκι της γιαγιάς..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityLow",
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#The quality was decent.",
+      "translation": "Γεια... μήπως πούλησες ένα {1}προϊόν «{2}» στο παντοπωλείο τις προάλλες; Νομίζω ότι το αγόρασα...#$e#Η ποιότητα ήταν αξιοπρεπής."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityLow_Rude",
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was {4}! No wonder Pierre was selling that {5} for so cheap...",
+      "translation": "Πήγα για ψώνια χθες το βράδυ και πήρα ένα {1}προϊόν «{2}» σε προσφορά, μόνο {3}g.#$e# Ήταν {4}! Δεν απορώ που ο Πιερ πουλούσε αυτό το {5} τόσο φτηνά..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityHigh_Rude",
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was actually pretty {4}.",
+      "translation": "Πήγα για ψώνια χθες το βράδυ και πήρα ένα {1}προϊόν «{2}» σε προσφορά, μόνο {3}g.#$e# Τελικά ήταν αρκετά {4}."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_NonRude",
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# I couldn't pass up that great price.",
+      "translation": "Πήγα για ψώνια χθες το βράδυ και πήρα ένα {1}προϊόν «{2}» σε προσφορά, μόνο {3}g.#$e# Δεν μπορούσα να αντισταθώ σε τέτοια τιμή."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_4",
+      "source": "So I was at the store the other day and Pierre showed me {1} {2} you brought in.#$e#I bought it.$h",
+      "translation": "Ήμουν στο μαγαζί τις προάλλες και ο Πιερ μού έδειξε ένα {1}προϊόν «{2}» που είχες φέρει.#$e#Το αγόρασα.$h"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_5_VegetableOrFruit",
+      "source": "I bought the tastiest {2} from Pierre's shop the other day. #$b#He said that he grew the thing in his own backyard. I didn't know Pierre was such a talented farmer!$h#$b#Looks like you might have some competition, huh?",
+      "translation": "Αγόρασα τις προάλλες από το μαγαζί του Πιερ ένα πεντανόστιμο προϊόν, «{2}». #$b#Μου είπε ότι το καλλιέργησε ο ίδιος στην πίσω αυλή του. Δεν ήξερα ότι ο Πιερ ήταν τόσο ταλαντούχος αγρότης!$h#$b#Φαίνεται πως έχεις ανταγωνισμό, ε;"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_5_Cooking",
+      "source": "I bought the tastiest {2} from Pierre's shop the other day. #$b#He said he cooked the thing himself using local ingredients. I didn't know Pierre was such {3} {4} chef!",
+      "translation": "Αγόρασα τις προάλλες από το μαγαζί του Πιερ ένα πεντανόστιμο προϊόν, «{2}». #$b#Μου είπε ότι το μαγείρεψε ο ίδιος με ντόπια υλικά. Δεν ήξερα ότι ο Πιερ ήταν τόσο {3}{4} μάγειρας!"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_5_Foraged",
+      "source": "I bought the tastiest {2} from Pierre's shop the other day. He said he found it himself while exploring the mountains. I didn't know Pierre was such a talented forager!",
+      "translation": "Αγόρασα τις προάλλες από το μαγαζί του Πιερ ένα πεντανόστιμο προϊόν, «{2}». Μου είπε ότι το βρήκε ο ίδιος καθώς εξερευνούσε τα βουνά. Δεν ήξερα ότι ο Πιερ ήταν τόσο ταλαντούχος στη συλλογή!"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Teen",
+      "source": "Hey, so I picked up {2} at the store last night. My mom wanted something good for dinner.",
+      "translation": "Γεια, πήρα «{2}» από το μαγαζί χθες το βράδυ. Η μαμά μου ήθελε κάτι καλό για βραδινό."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Abigail_QualityLow",
+      "source": "Hey. We had one of those {2}s you sold at the shop for dinner last night... I guess it was starting to go bad and my Dad couldn't bear to throw it out.$h#$b#Unfortunately it tasted like {3}.$s",
+      "translation": "Γεια. Χθες το βράδυ φάγαμε ένα από τα προϊόντα «{2}» που πούλησες στο μαγαζί... Μάλλον είχε αρχίσει να χαλάει και ο μπαμπάς μου δεν άντεχε να το πετάξει.$h#$b#Δυστυχώς, είχε γεύση σαν {3}.$s"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Abigail_QualityHigh",
+      "source": "Hey. We had one of those {2}s you sold at the shop for dinner last night... I guess it was starting to go bad and my Dad couldn't bear to throw it out.$h#$b#It was still pretty good, though.",
+      "translation": "Γεια. Χθες το βράδυ φάγαμε ένα από τα προϊόντα «{2}» που πούλησες στο μαγαζί... Μάλλον είχε αρχίσει να χαλάει και ο μπαμπάς μου δεν άντεχε να το πετάξει.$h#$b#Παρ' όλα αυτά, ήταν ακόμη αρκετά καλό."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Caroline_QualityLow",
+      "source": "Oh, @... This is embarrassing. I threw one of your {2}s you sold us into my compost bin.$s#$b#Now the whole thing smells horrendous. Where did you find that thing again?",
+      "translation": "Αχ, @... Ντρέπομαι που το λέω. Έριξα ένα από τα προϊόντα «{2}» που μας πούλησες στον κάδο κομποστοποίησης.$s#$b#Τώρα όλος ο κάδος βρομοκοπάει. Πού είπες ότι το βρήκες αυτό το πράγμα;"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Caroline_QualityHigh",
+      "source": "Oh, @... This is embarrassing. I threw one of your {2}s you sold us into my compost bin.$s#$b#But on the bright side, the worms are really loving it! They've never looked happier!",
+      "translation": "Αχ, @... Ντρέπομαι που το λέω. Έριξα ένα από τα προϊόντα «{2}» που μας πούλησες στον κάδο κομποστοποίησης.$s#$b#Το καλό είναι ότι τα σκουλήκια το λατρεύουν! Δεν τα έχω ξαναδεί τόσο χαρούμενα!"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityLow",
+      "source": "Hey, remember that {2} you sold me the other day? I ended up serving it to the family for a special dinner.#$b#I can't say it was a hit... $s#$b#... well,... back to business, huh?",
+      "translation": "Ε, θυμάσαι εκείνο το προϊόν «{2}» που μου πούλησες τις προάλλες; Τελικά το σέρβιρα στην οικογένεια για ένα ξεχωριστό δείπνο.#$b#Δεν μπορώ να πω ότι έκανε θραύση... $s#$b#... λοιπόν,... ας γυρίσουμε στη δουλειά μας, ε;"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityHigh",
+      "source": "Hey, remember that {2} you sold me the other day? I ended up serving it to the family for a special dinner.#$b#My wife loved it! ...And Abby even started going to town on it after I smothered the thing in hoisin sauce. $h#$b#... well,... back to business, huh?",
+      "translation": "Ε, θυμάσαι εκείνο το προϊόν «{2}» που μου πούλησες τις προάλλες; Τελικά το σέρβιρα στην οικογένεια για ένα ξεχωριστό δείπνο.#$b#Η γυναίκα μου το λάτρεψε! ...Κι η Άμπι έπεσε με τα μούτρα στο φαΐ μόλις το έλουσα με σάλτσα χόισιν. $h#$b#... λοιπόν,... ας γυρίσουμε στη δουλειά μας, ε;"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Haley",
+      "source": "Emily tried to serve me {1} {2} for dinner last night... I threw it away when she wasn't looking.#$e#I don't like health food...$s",
+      "translation": "Η Έμιλι προσπάθησε να μου σερβίρει ένα {1}προϊόν «{2}» για βραδινό χθες... Το πέταξα όταν δεν κοιτούσε.#$e#Δεν μου αρέσουν οι υγιεινές τροφές...$s"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SeedShop.cs.9701",
+      "source": "a fresh",
+      "translation": "φρέσκο "
+    }
+  ]
+}

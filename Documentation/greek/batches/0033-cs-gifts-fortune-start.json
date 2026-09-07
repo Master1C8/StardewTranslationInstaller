@@ -1,0 +1,178 @@
+{
+  "id": "0033-cs-gifts-fortune-start",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "167fb7023b9f1fb2b1c76f6e24dc81d41d10bc747ace454fb50657d5874b9c6f",
+    "notes": "All 25 complete pairs and both female variants read. Four corrections reread: recipient labels avoid declining substituted names, birthday vision does not invent a party, friendship compliment preserves meaning naturally. Native Event.readFortune birthday prefix concatenation and NPC-gender branching inspected: femaleTranslation follows player gender independently of NPC branch. Native gift fallback article is empty for custom languages, item remains quoted. Shane dialogue keeps distress, hiccup and Yoba reference without changing emotional codes."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1740",
+      "source": "Give {0} his secret gift?",
+      "translation": "Να δώσετε το μυστικό δώρο; Παραλήπτης: {0}."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1741",
+      "source": "Give {0} her secret gift?",
+      "translation": "Να δώσετε το μυστικό δώρο; Παραλήπτρια: {0}."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1758",
+      "source": "Leave the {0}? Once you do, the festival will end.",
+      "translation": "Να φύγετε από τη γιορτή «{0}»; Μόλις φύγετε, η γιορτή θα τελειώσει."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1760",
+      "source": "Maybe for you, but not for me! You're not going to understand...  Just... go away.$7#$b#...Ugh...$7#$b#Wait...$7",
+      "translation": "Μπορεί για σένα, αλλά όχι για μένα! Δεν πρόκειται να καταλάβεις...  Απλώς... φύγε.$7#$b#...Ουφ...$7#$b#Περίμενε...$7"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1761",
+      "source": "...You're right. Jas... Ugh, God... I'm a horrible, *hic*... selfish person.$7#$b#Now I feel even worse...$7",
+      "translation": "...Έχεις δίκιο. Η Τζας... Αχ, Θεέ μου... Είμαι απαίσιος, *χικ*... εγωιστής.$7#$b#Τώρα νιώθω ακόμα χειρότερα...$7",
+      "glossaryIds": [
+        "jas"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1763",
+      "source": "Wha... Yoba...? @, don't... don't you know I'm an atheist? Ugh... $7",
+      "translation": "Τι... Ο Γιόμπα...; @, δεν... δεν ξέρεις ότι είμαι άθεος; Ουφ... $7",
+      "glossaryIds": [
+        "yoba"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1764",
+      "source": "...$7#$b#Thanks... I appreciate that... I really do.$7",
+      "translation": "...$7#$b#Ευχαριστώ... Το εκτιμώ... Αλήθεια.$7"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1774",
+      "source": "How many star tokens would you like to buy?",
+      "translation": "Πόσες αστερομάρκες θέλετε να αγοράσετε;",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1776",
+      "source": "How many star tokens would you like to wager?",
+      "translation": "Πόσες αστερομάρκες θέλετε να ποντάρετε;",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1780",
+      "source": "You don't have enough money.",
+      "translation": "Δεν έχετε αρκετά χρήματα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1785",
+      "source": "You've already bought everything in the shop!",
+      "translation": "Έχετε αγοράσει ήδη τα πάντα από το κατάστημα!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1788",
+      "source": "Select a gift for {0}.",
+      "translation": "Επιλέξτε δώρο με παραλήπτη: {0}."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1794",
+      "source": "Dudley",
+      "translation": "Ντάντλι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1795",
+      "source": "Yogi",
+      "translation": "Γιόγκι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1796",
+      "source": "Miso",
+      "translation": "Μίσο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1797",
+      "source": "Snooch",
+      "translation": "Σνουτς"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1798",
+      "source": "No? Okay... I'll find a different home for the poor thing.$s",
+      "translation": "Όχι; Εντάξει... Θα βρω άλλο σπίτι για το καημένο.$s"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1801",
+      "source": "Oh! So it's you?$h#$b#Ah... {1} {0}! Thanks.",
+      "translation": "Ω! Εσύ είσαι λοιπόν;$h#$b#Α... {1}«{0}»! Ευχαριστώ."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1803",
+      "source": "Not a valid gift.",
+      "translation": "Μη έγκυρο δώρο."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1810",
+      "source": "Ahh... I see you in the saloon, surrounded by friends. It doesn't seem like you have any favorites... you're popular with everyone!",
+      "translation": "Αα... Σε βλέπω στο σαλούν, ανάμεσα σε φίλους. Δεν φαίνεται να ξεχωρίζεις κανέναν... όλοι σε συμπαθούν!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1811",
+      "source": "Ahh... yes. I see you at the beach. There's some kind of event taking place. You walk up to {0} and say something funny... Hmmm... It seems like you two are good friends.",
+      "translation": "Αα... ναι. Σε βλέπω στην παραλία. Κάποια εκδήλωση γίνεται εκεί. Πλησιάζεις ένα γνώριμο πρόσωπο, με το όνομα {0}, και λες κάτι αστείο... Χμμ... Φαίνεται πως σας συνδέει καλή φιλία."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1813",
+      "source": "Ahhh... yes. It's {0}'s birthday. ",
+      "translation": "Ααα... ναι. Βλέπω γενέθλια... και το όνομα {0}. "
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1815",
+      "source": "He thought everyone forgot, but then you show up with a nice gift. What a good friend.",
+      "translation": "Νόμιζε ότι όλοι τα ξέχασαν, αλλά τότε εμφανίζεσαι εσύ με ένα ωραίο δώρο. Τι καλό φίλο έχει στο πρόσωπό σου.",
+      "femaleTranslation": "Νόμιζε ότι όλοι τα ξέχασαν, αλλά τότε εμφανίζεσαι εσύ με ένα ωραίο δώρο. Τι καλή φίλη έχει στο πρόσωπό σου."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1816",
+      "source": "She thought everyone forgot, but then you show up with a nice gift. What a good friend.",
+      "translation": "Νόμιζε ότι όλοι τα ξέχασαν, αλλά τότε εμφανίζεσαι εσύ με ένα ωραίο δώρο. Τι καλό φίλο έχει στο πρόσωπό σου.",
+      "femaleTranslation": "Νόμιζε ότι όλοι τα ξέχασαν, αλλά τότε εμφανίζεσαι εσύ με ένα ωραίο δώρο. Τι καλή φίλη έχει στο πρόσωπό σου."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1818",
+      "source": "Hmm... I see you laying on a cot... It looks like a hospital. {0} is there to keep you company while you recover. What a nice friend.",
+      "translation": "Χμμ... Σε βλέπω να ξαπλώνεις σε ένα ράντζο... Μοιάζει με νοσοκομείο. Υπάρχει κι ένα πρόσωπο εκεί, για να σου κάνει παρέα όσο αναρρώνεις: {0}. Αυτό θα πει φιλία."
+    }
+  ]
+}

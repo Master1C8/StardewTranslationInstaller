@@ -37,6 +37,14 @@ public sealed class ModEntry : Mod
         Harmony harmony = new(ModManifest.UniqueID);
         harmony.Patch(target, prefix: new HarmonyMethod(prefix));
 
+        MethodInfo articleTarget = AccessTools.Method(typeof(Utility), nameof(Utility.AOrAn))
+            ?? throw new InvalidOperationException("The Stardew Valley article method was not found.");
+        harmony.Patch(articleTarget, prefix: new HarmonyMethod(
+            typeof(ModEntry), nameof(BeforeGreekArticle)));
+
+        PatchGreekNpcNames(harmony);
+        PatchGreekRandomWords(harmony);
+
         string persianShapingMap = Path.Combine(helper.DirectoryPath, "persian-shaping-map.json");
         PersianAdapter = ArabicScriptTextAdapter.Load(persianShapingMap);
         string arabicShapingMap = Path.Combine(helper.DirectoryPath, "arabic-shaping-map.json");
@@ -70,6 +78,174 @@ public sealed class ModEntry : Mod
     {
         return parameter.ParameterType == typeof(string)
             || parameter.ParameterType == typeof(StringBuilder);
+    }
+
+    private static bool BeforeGreekArticle(ref string __result)
+    {
+        if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod
+            || LocalizedContentManager.CurrentModLanguage?.LanguageCode != "el-vnrevival")
+            return true;
+
+        // Unlike Lexicon, Utility.AOrAn still returns English articles for custom
+        // languages. Greek construction messages supply their own inflected noun.
+        __result = string.Empty;
+        return false;
+    }
+
+    private static readonly HashSet<string> GreekNpcReferenceKeys = new(StringComparer.Ordinal)
+    {
+        "NPC.cs.4083", "NPC.cs.4086", "NPC.cs.4091", "NPC.cs.4094", "NPC.cs.4097",
+        "NPC.cs.4100", "NPC.cs.4103", "NPC.cs.4106", "NPC.cs.4141", "NPC.cs.4144",
+        "NPC.cs.4147", "NPC.cs.4149", "NPC.cs.4152", "NPC.cs.4153", "NPC.cs.4154",
+        "NPC.cs.4161", "NPC.cs.4164", "NPC.cs.4182", "DiaryEvent.cs.6664",
+    };
+
+    private static readonly HashSet<string> GreekMovieReferenceKeys = new(StringComparer.Ordinal)
+    {
+        "MovieTheater_AfterMovieAlone", "MovieTheater_AfterMovie", "MovieTheater_LoveMovie",
+        "MovieTheater_LikeMovie", "MovieTheater_DislikeMovie", "MovieTheater_LoveConcession",
+        "MovieTheater_LikeConcession", "MovieTheater_DislikeConcession",
+        "MovieTheater_LoveConcession_Female", "MovieTheater_LikeConcession_Female", "MovieTheater_DislikeConcession_Female",
+        "MovieTheater_LoveConcession_Male", "MovieTheater_LikeConcession_Male", "MovieTheater_DislikeConcession_Male",
+    };
+
+    private static void PatchGreekNpcNames(Harmony harmony)
+    {
+        // Each overload formats independently; patch only calls with substitutions.
+        foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(LocalizedContentManager))
+            .Where(method => method.Name == nameof(LocalizedContentManager.LoadString)
+                && method.GetParameters().Length >= 2))
+            harmony.Patch(method, prefix: new HarmonyMethod(typeof(ModEntry),
+                method.GetParameters()[1].ParameterType == typeof(object[])
+                    ? nameof(BeforeGreekNpcNames) : nameof(BeforeGreekNpcName)));
+        // This helper formats directly instead of calling a LoadString overload.
+        MethodInfo gendered = AccessTools.Method(typeof(Game1), nameof(Game1.LoadStringByGender),
+            new[] { typeof(Gender), typeof(string), typeof(object[]) })
+            ?? throw new InvalidOperationException("The Stardew Valley gendered string method was not found.");
+        harmony.Patch(gendered, prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeGreekGenderedNpcName)));
+    }
+
+    private static bool IsGreekNpcReference(string path)
+    {
+        if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod
+            || LocalizedContentManager.CurrentModLanguage?.LanguageCode != "el-vnrevival"
+            || path is null)
+            return false;
+        const string asset = "Strings/StringsFromCSFiles:";
+        path = path.Replace('\\', '/');
+        const string characters = "Strings/Characters:";
+        return (path.StartsWith(asset, StringComparison.Ordinal)
+                && GreekNpcReferenceKeys.Contains(path.Substring(asset.Length)))
+            || (path.StartsWith(characters, StringComparison.Ordinal)
+                && GreekMovieReferenceKeys.Contains(path.Substring(characters.Length)));
+    }
+
+    private static void BeforeGreekNpcName(string path, ref object sub1)
+    {
+        if (IsGreekNpcReference(path) && sub1 is string reference)
+            sub1 = GreekNpcReference(path, reference);
+    }
+
+    private static void BeforeGreekNpcNames(string path, ref object[] substitutions)
+    {
+        if (!IsGreekNpcReference(path) || substitutions is null
+            || substitutions.Length == 0 || substitutions[0] is not string reference)
+            return;
+        object[] copy = (object[])substitutions.Clone();
+        copy[0] = GreekNpcReference(path, reference);
+        substitutions = copy;
+    }
+
+    private static void BeforeGreekGenderedNpcName(string key, ref object[] substitutions)
+    {
+        BeforeGreekNpcNames(key, ref substitutions);
+    }
+
+    private static string GreekNpcReference(string path, string reference)
+    {
+        string value = GreekNpcNominative(reference);
+        // These movie reactions start with their NPC subject; gift hints embed it.
+        if (value.Length > 0 && path.Replace('\\', '/').StartsWith("Strings/Characters:", StringComparison.Ordinal))
+            return char.ToUpperInvariant(value[0]) + value.Substring(1);
+        return value;
+    }
+
+    private static string GreekNpcNominative(string reference)
+    {
+        // Relationship wrappers already supply an article. Gift-hint translations
+        // keep every reference in nominative, so names need no case conversion.
+        if (reference.StartsWith("ο ", StringComparison.Ordinal)
+            || reference.StartsWith("η ", StringComparison.Ordinal)
+            || reference.StartsWith("το ", StringComparison.Ordinal)
+            || Game1.characterData is null)
+            return reference;
+        foreach (var entry in Game1.characterData)
+        {
+            string name = NPC.GetDisplayName(entry.Key);
+            if (reference != entry.Key && reference != name)
+                continue;
+            string article = entry.Value.Gender switch
+            {
+                Gender.Male => "ο ",
+                Gender.Female => "η ",
+                _ => "το ",
+            };
+            return article + name;
+        }
+        return reference;
+    }
+
+    private static readonly HashSet<string> GreekRandomWordKeys = new(StringComparer.Ordinal)
+    {
+        "Characters/Dialogue/MarriageDialogue:Indoor_Day_3",
+        "Characters/Dialogue/MarriageDialogueMaru:Outdoor_2",
+        "Characters/Dialogue/MarriageDialogueMaru:Good_6",
+        "Characters/Dialogue/Abigail:fall_Thu",
+    };
+
+    private static void PatchGreekRandomWords(Harmony harmony)
+    {
+        MethodInfo method = AccessTools.Method(typeof(Dialogue), nameof(Dialogue.checkForSpecialCharacters))
+            ?? throw new InvalidOperationException("The Stardew Valley dialogue token method was not found.");
+        harmony.Patch(method, postfix: new HarmonyMethod(typeof(ModEntry), nameof(AfterGreekRandomWords)));
+    }
+
+    private static void AfterGreekRandomWords(Dialogue __instance, ref string __result)
+    {
+        if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod
+            || LocalizedContentManager.CurrentModLanguage?.LanguageCode != "el-vnrevival")
+            return;
+        string key = __instance.TranslationKey?.Replace('\\', '/') ?? "";
+        if (!GreekRandomWordKeys.Contains(key))
+            return;
+        // Leave every original random choice in place. Inflect only the selected
+        // words after the native method finishes, using the reviewed Greek forms.
+        var grammar = Game1.content.Load<Dictionary<string, string[]>>("VNRevival/GreekGrammar");
+        __result = InflectGreekRandomWords(key, __result, grammar);
+    }
+
+    private static string InflectGreekRandomWords(string key, string text, Dictionary<string, string[]> grammar)
+    {
+        string nouns = string.Join("|", grammar.Keys.Where(value => value.StartsWith("noun:", StringComparison.Ordinal))
+            .Select(value => Regex.Escape(value.Substring(5))));
+        if (key == "Characters/Dialogue/MarriageDialogueMaru:Outdoor_2"
+            || key == "Characters/Dialogue/MarriageDialogueMaru:Good_6")
+            return Regex.Replace(text, "«(" + nouns + ")»", match =>
+                "«" + char.ToUpperInvariant(match.Groups[1].Value[0]) + match.Groups[1].Value.Substring(1) + "»");
+        string adjectives = string.Join("|", grammar.Keys.Where(value => value.StartsWith("adj:", StringComparison.Ordinal))
+            .Select(value => Regex.Escape(value.Substring(4))));
+        return Regex.Replace(text, @"(?<!\p{L})ένα (?<adj>" + adjectives + @"|γιγάντιο) (?<noun>" + nouns + @")(?!\p{L})", match =>
+        {
+            string adjective = match.Groups["adj"].Value;
+            if (adjective == "γιγάντιο") adjective = "γιγάντιος";
+            string[] noun = grammar["noun:" + match.Groups["noun"].Value];
+            string[] forms = grammar["adj:" + adjective];
+            int gender = int.Parse(noun[0], CultureInfo.InvariantCulture);
+            string article = new[] { "έναν", "μια", "ένα" }[gender];
+            string phrase = forms.Length == 4 && forms[3] == "after"
+                ? noun[1] + " " + forms[gender] : forms[gender] + " " + noun[1];
+            return article + " " + phrase;
+        });
     }
 
     private static void BeforeSetModLanguage(ModLanguage __0)

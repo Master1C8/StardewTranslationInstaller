@@ -1,0 +1,40 @@
+{
+  "scope": "Greek construction articles, NPC reference formatting and four random-word dialogue corrections; full live release runtime QA pending",
+  "build": "passed with installed csc against native game assemblies",
+  "probe": "passed",
+  "isolationCases": 48,
+  "greekCases": 6,
+  "renderedConstructionMessages": 2,
+  "files": {
+    "/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS/Stardew Valley.dll": "8937c582cad1c1127017944778c4102467bf299aea44869491f28ab0ec84cd73",
+    "Tools/VNRevivalLanguageSwitcher/ModEntry.cs": "e1cc611d4c262009da209777a2f1e59b6e7e156c7f4f6ce172fbaa2b5694aa3e",
+    "Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/VNRevival.LanguageSwitcher.dll": "589808d0499051076bea2b49bbedb0e98080123da9a0aa5e9353394d3b926fa9",
+    "Tools/GreekRuntimeProbe/Program.cs": "4a5958c2159b1f567284a6b5088e8e868af7533f8ec9911941d1ee7ff9ad7be9",
+    "Scripts/greek-runtime-probe.py": "53670e8f0151212842149d3276bd07358064d64bf19f2e35b3dde61b2ea6d42a",
+    "Scripts/greek-batches.py": "e868c93161b106d7fdf2f9bc1cd3ee7d3f092b492fa4e6773dee2c5bbc0fbdaa"
+  },
+  "liveRuntimeQA": "pending",
+  "npcReferenceProbe": {
+    "nativeOverloadAndIsolationCases": 6111,
+    "greekCases": 679,
+    "nonGreekIsolationCases": 5432,
+    "renderedRelations": 21,
+    "referencedKeys": 19,
+    "formatters": [
+      "LocalizedContentManager.LoadString: four formatting overloads",
+      "Game1.LoadStringByGender: params overload, both speaker genders"
+    ],
+    "status": "passed",
+    "notes": "Actual native Harmony formatting methods; fake read-only template source and two native CharacterData name/gender records. Display names, raw internal names, pre-articled relations and unknown references covered. Caller substitution arrays remain unchanged. Explicit ref-argument prefixes required: generic Harmony __args mutation failed to update formatted arguments on this bundled runtime and was replaced."
+  },
+  "randomWordProbe": {
+    "status": "passed",
+    "nativeRngAndIsolationCases": 720,
+    "nonGreekCases": 640,
+    "greekCases": 80,
+    "adjectiveNounCombinations": 460,
+    "celestialNameCases": 46,
+    "independentAgreementExamples": 9,
+    "notes": "Actual Dialogue.checkForSpecialCharacters before/after Harmony postfix, with identical next RNG values. Minimal uninitialized Game1/Farmer/Dialogue fixtures avoid game startup. All four original source token contexts exercised. Grammar asset supplied by fake content loader in probe; live Content Patcher loading pending."
+  }
+}

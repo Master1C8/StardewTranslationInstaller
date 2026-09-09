@@ -1,5 +1,12 @@
 # Instructions for translation agents
 
+Before starting or resuming a game localization, or preparing its task prompt,
+read `Documentation/GAME_LOCALIZATION_PROMPT.md` in full. Apply its workflow
+within the current user request: continue verified checkpoints, preserve the
+glossary and editorial gates, and never loop on unchanged progress messages.
+Reading this reference does not itself start a localization or authorize
+publication, deployment, or changes outside the current request.
+
 Read `Documentation/TRANSLATION_GUIDE.md` completely before changing translation files.
 Read `Documentation/POLISH_IMPLEMENTATION_RUNBOOK.md` completely before changing Content Patcher includes, language assets, XNB fonts, installer packaging, or the Polish runtime configuration.
 Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing the shared VN language switcher or investigating the retired Uzbek package.

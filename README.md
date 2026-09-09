@@ -90,4 +90,23 @@ git push origin main
 
 ## Продолжение перевода
 
+Для новой игры или следующего языка используйте
+[`универсальный промпт локализации`](Documentation/GAME_LOCALIZATION_PROMPT.md).
+Заполните игру, путь к репозиторию, slug SiteForMods и язык; один запуск — одна
+локаль. Обязательное чтение шаблона закреплено в `AGENTS.md`.
+
+Для подключения того же правила ко всем игровым проектам на этой машине:
+
+```sh
+python3 Scripts/install-localization-workflow.py
+```
+
+Команда сохраняет копию в `~/.codex/instructions/game-localization-prompt.md`
+и добавляет обязательную ссылку в общие инструкции `sitefor-mods.md`, на которые
+уже ссылается глобальный `AGENTS.md`. `--check` проверяет подключение без записи;
+`--dry-run` показывает необходимые изменения. После переноса проекта на другую
+машину повторите подключение. Правки универсального шаблона храните в Git и
+обновляйте установленную копию командой с `--update`; она сохраняет предыдущую
+версию перед заменой.
+
 Инструкция для моделей и переводчиков находится в [`Documentation/TRANSLATION_GUIDE.md`](Documentation/TRANSLATION_GUIDE.md). Технические знания о польском пакете зафиксированы в [`Documentation/POLISH_IMPLEMENTATION_RUNBOOK.md`](Documentation/POLISH_IMPLEMENTATION_RUNBOOK.md), а итоговые редакторские и runtime-выводы по узбекскому пакету — в [`Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md`](Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md). Краткие обязательные правила для работающего с репозиторием агента продублированы в [`AGENTS.md`](AGENTS.md). Полный рабочий снимок единого глоссария лежит в [`Documentation/glossary`](Documentation/glossary).

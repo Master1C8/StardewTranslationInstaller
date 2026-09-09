@@ -1,0 +1,128 @@
+{
+  "id": "0237-data-npc-gift-tastes-complete-monsters-01-14",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "aef49e2b8da6f925a52eb4fcdc4290ff4dba0c428de67a28d1b7f2d0d5b594b5",
+    "notes": "Checked Leo's complete gift-taste tuple and 14 monster definitions against authoritative English assets; preserved every slash-delimited gameplay field, item/category identifier, number, boolean, empty field, and action marker. Two editorial passes confirmed Leo's child voice and concise, consistent Greek monster names, including glossary terms for Slimes, Bats, Golems, and Shadow People."
+  },
+  "records": [
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Leo",
+      "source": "I love this. I'm going to put it in my nest./444 289 834 906 ParrotEgg/Are you sure? This is so nice.../852 396 392 394 397 905/Oh... I don't know if I can digest this.../-7 -81 330 303 459 342 346 348/*sniff* *sniff*... Why are you giving this to me? Do you want me to bury it for you?/257 253 247 271 283 304 303 346 873 348 459 167/I accept your gift./-4 395/",
+      "translation": "Το λατρεύω. Θα το βάλω στη φωλιά μου./444 289 834 906 ParrotEgg/Σίγουρα; Είναι τόσο ωραίο.../852 396 392 394 397 905/Α... Δεν ξέρω αν μπορώ να το χωνέψω.../-7 -81 330 303 459 342 346 348/*σνιφ* *σνιφ*... Γιατί μου το δίνεις; Θέλεις να σου το θάψω;/257 253 247 271 283 304 303 346 873 348 459 167/Δέχομαι το δώρο σου./-4 395/"
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Green Slime",
+      "source": "24/5/0/0/false/1000/766 .75 766 .05 153 .1 66 .015 92 .15 96 .005 99 .001/1/.01/4/2/.00/true/3/Green Slime",
+      "translation": "24/5/0/0/false/1000/766 .75 766 .05 153 .1 66 .015 92 .15 96 .005 99 .001/1/.01/4/2/.00/true/3/Πράσινη Γλίτσα",
+      "glossaryIds": [
+        "slime-monster"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Dust Spirit",
+      "source": "40/6/0/0/false/1000/382 .5 433 .01 336 .001 84 .02 414 .02 97 .005 99 .001/2/.00/4/3/.00/true/2/Dust Sprite",
+      "translation": "40/6/0/0/false/1000/382 .5 433 .01 336 .001 84 .02 414 .02 97 .005 99 .001/2/.00/4/3/.00/true/2/Ξωτικό της Σκόνης"
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Bat",
+      "source": "24/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Bat",
+      "translation": "24/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Νυχτερίδα",
+      "glossaryIds": [
+        "bat-monster"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frost Bat",
+      "source": "36/7/0/0/true/1000/767 .9 767 .55 108 .001 287 .02 97 .005 99 .001/1/.01/4/3/.00/true/7/Frost Bat",
+      "translation": "36/7/0/0/true/1000/767 .9 767 .55 108 .001 287 .02 97 .005 99 .001/1/.01/4/3/.00/true/7/Νυχτερίδα του Παγετού",
+      "glossaryIds": [
+        "bat-monster"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Lava Bat",
+      "source": "80/15/0/0/true/1000/767 .9 767 .7 108 .001 287 .02 98 .005 99 .001/1/.01/4/3/.00/true/15/Lava Bat",
+      "translation": "80/15/0/0/true/1000/767 .9 767 .7 108 .001 287 .02 98 .005 99 .001/1/.01/4/3/.00/true/15/Νυχτερίδα της Λάβας",
+      "glossaryIds": [
+        "bat-monster"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Bat",
+      "source": "300/30/0/0/true/1000/386 .9 386 .5 386 .25 386 .1 288 .05 768 .5 773 .05 349 .05 787 .05 337 .008/1/.01/4/3/.00/true/22/Iridium Bat",
+      "translation": "300/30/0/0/true/1000/386 .9 386 .5 386 .25 386 .1 288 .05 768 .5 773 .05 349 .05 787 .05 337 .008/1/.01/4/3/.00/true/22/Νυχτερίδα Ιριδίου",
+      "glossaryIds": [
+        "bat-monster"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Stone Golem",
+      "source": "45/5/0/0/false/1000/390 .9 80 .1 382 .1 380 .1 96 .005 99 .001/5/.01/3/2/.00/true/5/Stone Golem",
+      "translation": "45/5/0/0/false/1000/390 .9 80 .1 382 .1 380 .1 96 .005 99 .001/5/.01/3/2/.00/true/5/Πέτρινο Γκόλεμ"
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Wilderness Golem",
+      "source": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "translation": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Γκόλεμ Άγριας Φύσης",
+      "glossaryIds": [
+        "golem-monster"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Golem",
+      "source": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "translation": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Γκόλεμ Άγριας Φύσης",
+      "glossaryIds": [
+        "golem-monster"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Grub",
+      "source": "20/4/0/0/false/1000/684 .6 273 .05 273 .05 157 .02 114 .005 96 .005 99 .001/0/.005/3/1/.00/true/2/Grub",
+      "translation": "20/4/0/0/false/1000/684 .6 273 .05 273 .05 157 .02 114 .005 96 .005 99 .001/0/.005/3/1/.00/true/2/Προνύμφη"
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Fly",
+      "source": "22/6/0/0/true/1000/684 .9 157 .02 114 .005 96 .005 99 .001/1/.005/13/2/.0/true/10/Fly",
+      "translation": "22/6/0/0/true/1000/684 .9 157 .02 114 .005 96 .005 99 .001/1/.005/13/2/.0/true/10/Μύγα"
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frost Jelly",
+      "source": "106/7/0/0/false/1000/766 .75 412 .08 70 .02 98 .015 92 .5 97 .005 99 .001/0/.01/4/2/.0/true/6/Frost Jelly",
+      "translation": "106/7/0/0/false/1000/766 .75 412 .08 70 .02 98 .015 92 .5 97 .005 99 .001/0/.01/4/2/.0/true/6/Ζελέ του Παγετού"
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Sludge",
+      "source": "205/16/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/10/Sludge",
+      "translation": "205/16/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/10/Λυματολάσπη"
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Guy",
+      "source": "125/20/0/0/false/0/769 .75 769 .1 329 .02 337 .002 336 .01 335 .02 334 .04 203 .04 293 .03 108 .003 -4 .1 98 .005 99 .001/2/.01/-1/2/.0/true/15/Shadow Guy",
+      "translation": "125/20/0/0/false/0/769 .75 769 .1 329 .02 337 .002 336 .01 335 .02 334 .04 203 .04 293 .03 108 .003 -4 .1 98 .005 99 .001/2/.01/-1/2/.0/true/15/Άνθρωπος της Σκιάς",
+      "glossaryIds": [
+        "shadow-people"
+      ]
+    }
+  ]
+}

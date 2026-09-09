@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Trailer_Big",
+      "When": {
+        "Language": "el-vnrevival"
+      },
+      "Entries": {
+        "503180/f Pam 2250/A pamHouseUpgrade/A pamHouseUpgradeAnonymous/Hn pamHouseUpgrade": "shaneTheme/-1000 -1000/farmer 18 11 1 Pam 25 9 1/skippable/specificTemporarySprite pamYobaStatue/viewport 25 9 true/move farmer 6 0 1/move farmer 0 -1 1/faceDirection Pam 2/pause 300/speak Pam \"Έι, παιδί μου...\"/faceDirection Pam 1/pause 500/speak Pam \"Με έπιασες να προσεύχομαι...\"/pause 500/move farmer 3 0 0/move farmer 0 -1 3/pause 500/speak Pam \"Αυτό εδώ είναι το καινούριο μου άγαλμα «Σημάδι του Δοχείου».#$b#...Το παρήγγειλα από το Joja.com με δωρεάν αποστολή 2 ημερών. Μην το πεις στον Πιερ.\"/pause 1000/faceDirection Pam 2/pause 400/faceDirection Pam 3/pause 500/faceDirection Pam 2/pause 500/faceDirection Pam 1/speak Pam \"...Έχω αρχίσει να τακτοποιούμαι στο καινούριο σπίτι. Είναι πραγματικά υπέροχο μέρος. Το νιώθω ήδη σαν σπίτι. Εκτιμώ πραγματικά αυτή την καινούρια άνεση.$h\"/pause 500/faceDirection Pam 2/pause 1000/showFrame Pam 25/pause 1000/animate Pam false true 250 26 27/pause 400/emote farmer 8/pause 500/textAboveHead Pam \"Α, συγγνώμη...\"/pause 1000/stopAnimation Pam/pause 950/speak Pam \"*ρουθούνισμα*... Απλώς...$s#$b#...Θα έπρεπε να είμαι τόσο ευτυχισμένη...$s\"/showFrame Pam 0/faceDirection Pam 1/speak Pam \"...Αλλά δεν έχω καταφέρει να περιορίσω την μπίρα... Δεν έχω αλλάξει καθόλου...$s\"/pause 500/emote farmer 28/pause 500/speak Pam \"Εδώ και πολύ καιρό... νιώθω πως λείπει κάτι από τη ζωή μου, @... $s#$b#Πάντα νόμιζα πως έφταιγαν τα χρήματα... Απλώς το ότι ήμουν φτωχή... καταλαβαίνεις; Οπότε σκέφτηκα πως αυτό το σπίτι θα έλυνε τα πάντα. Αλλά... δεν τα έλυσε.$s#$b#Οπότε γι' αυτό... Γι' αυτό παρήγγειλα αυτό το άγαλμα.\"/pause 1000/question fork0 \"Πες κάτι στην Παμ:#Χαίρομαι που νιώθεις ελπίδα#Συγγνώμη, Παμ, αλλά ο Γιόμπα δεν είναι αληθινός...\"/fork positive/friendship Pam -1000/pause 500/speak Pam \"Δεν είναι αστείο! ...Σου ανοίγω την καρδιά μου κι εσύ απαντάς έτσι; Τι στο Κενό συμβαίνει μ' εσένα;$u\"/faceDirection Pam 3/shake Pam 10000/emote Pam 12/pause 1000/speak Pam \"Δεν με νοιάζει τι λες... Έχω πίστη στον Γιόμπα! Πολλοί από εμάς έχουμε! Τώρα φύγε.$4\"/pause 1000/move farmer 0 1 3/move farmer -6 0 3 true/end",
+        "positive": "pause 100/emote farmer 56/pause 500/speak Pam \"Χα! Λοιπόν, κοίταξέ με! Γίνομαι πολύ συναισθηματική στα γεράματα, έτσι δεν είναι; ...χεχεχε.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Ευχαριστώ που με άκουσες, παιδί μου\"/pause 5000/end"
+      }
+    }
+  ]
+}

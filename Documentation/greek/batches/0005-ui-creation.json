@@ -1,0 +1,425 @@
+{
+  "id": "0005-ui-creation",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "99e9ab7976ba543feea95f6638390a953b88c0409b4b5831730249a3aef65367",
+    "notes": "All 68 pairs read in full. Recipe fragments use genitive case in the combined sentence. Dynamic names avoid forced inflection. Leading/trailing spaces, line breaks, placeholders and g currency marker preserved. Three unchanged percentage labels individually reviewed."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe_cooking",
+      "source": "cooking",
+      "translation": "μαγειρικής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe_crafting",
+      "source": "crafting",
+      "translation": "κατασκευής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe",
+      "source": "You've learned a new {0} recipe: {1}",
+      "translation": "Μάθατε μια νέα συνταγή {0}: {1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FarmerFile_1",
+      "source": "File on: {0}\nSteps Taken: {1}\nGifts Given: {2}\nDays In Stardew Valley: {3}\nDirt Hoed: {4}\nItems Crafted: {5}\nItems Cooked: {6}\nTrash Recycled: {7}",
+      "translation": "Φάκελος: {0}\nΒήματα: {1}\nΔώρα που δόθηκαν: {2}\nΗμέρες στη Stardew Valley: {3}\nΟργωμένα πλακίδια: {4}\nΑντικείμενα που κατασκευάστηκαν: {5}\nΦαγητά που μαγειρεύτηκαν: {6}\nΣκουπίδια που ανακυκλώθηκαν: {7}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FarmerFile_2",
+      "source": "Monsters Slain: {0}\nFish Caught: {1}\nLines Cast: {2}\nSeeds Sown: {3}\nItems Shipped: {4} ",
+      "translation": "Τέρατα που εξοντώθηκαν: {0}\nΨάρια που πιάστηκαν: {1}\nΡίψεις πετονιάς: {2}\nΣπόροι που σπάρθηκαν: {3}\nΑντικείμενα που απεστάλησαν: {4} "
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney1",
+      "source": "You don't have enough money.",
+      "translation": "Δεν έχετε αρκετά χρήματα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney2",
+      "source": "Not enough money.",
+      "translation": "Δεν υπάρχουν αρκετά χρήματα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney3",
+      "source": "You don't have enough money...",
+      "translation": "Δεν έχετε αρκετά χρήματα..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Toggle_ColorPicker",
+      "source": "Toggle Color Picker",
+      "translation": "Εναλλαγή Επιλογέα Χρώματος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Move",
+      "source": "Change Home Building",
+      "translation": "Αλλαγή Κτιρίου Κατοικίας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_HomeChanged",
+      "source": "Home changed",
+      "translation": "Η κατοικία άλλαξε"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_BuildingFull",
+      "source": "That Building Is Full",
+      "translation": "Αυτό το Κτίριο Είναι Γεμάτο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_AlreadyHome",
+      "source": "That Is My Home",
+      "translation": "Αυτό Είναι το Σπίτι Μου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_CantLiveThere",
+      "source": "{0}s Can't Live There.",
+      "translation": "Ζώα του τύπου «{0}» δεν μπορούν να ζήσουν εκεί."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Sell",
+      "source": "Sell for {0}g",
+      "translation": "Πώληση για {0}g"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AllowReproduction",
+      "source": "Allow Pregnancy",
+      "translation": "Να Επιτρέπεται Εγκυμοσύνη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Age1",
+      "source": "Age: 1 month",
+      "translation": "Ηλικία: 1 μήνας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AgeN",
+      "source": "Age: {0} months",
+      "translation": "Ηλικία: {0} μήνες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AgeBaby",
+      "source": " (Baby)",
+      "translation": " (Μωρό)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Parent",
+      "source": "Parent: {0}",
+      "translation": "Γονέας: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_ConfirmSell",
+      "source": "Are you sure?",
+      "translation": "Είστε σίγουροι;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_ChooseBuilding",
+      "source": "Please choose a {0} for your {1}",
+      "translation": "Επιλέξτε κτίριο τύπου «{0}» για το ζώο σας ({1})"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_Birthday",
+      "source": "{0}'s Birthday",
+      "translation": "Γενέθλια: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_SBirthday",
+      "source": "{0}' Birthday",
+      "translation": "Γενέθλια: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_Year",
+      "source": "Year {0}",
+      "translation": "Έτος {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_NothingPosted",
+      "source": "Nothing is posted today.",
+      "translation": "Δεν υπάρχει καμία ανάρτηση σήμερα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_NightMarket",
+      "source": "Night Market",
+      "translation": "Νυχτερινή Αγορά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AcceptQuest",
+      "source": "Accept Quest",
+      "translation": "Αποδοχή Αποστολής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "BobberBar_Perfect",
+      "source": "Perfect!",
+      "translation": "Τέλεια!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Confirm",
+      "source": "OK",
+      "translation": "Εντάξει"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_ChangeAppearance",
+      "source": "Change Appearance",
+      "translation": "Αλλαγή Εμφάνισης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Demolish",
+      "source": "Demolish Buildings",
+      "translation": "Κατεδάφιση Κτιρίων"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_MoveBuildings",
+      "source": "Move Buildings",
+      "translation": "Μετακίνηση Κτιρίων"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Upgrade",
+      "source": "Upgrade from {0}",
+      "translation": "Αναβάθμιση από: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Build",
+      "source": "Build",
+      "translation": "Κατασκευή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_DuringConstruction",
+      "source": "Can't demolish during construction",
+      "translation": "Δεν γίνεται κατεδάφιση κατά την κατασκευή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_AnimalsHere",
+      "source": "Can't demolish until animals are relocated",
+      "translation": "Μεταφέρετε πρώτα τα ζώα για να γίνει κατεδάφιση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_PlayerHere",
+      "source": "Can't demolish while a player is in here",
+      "translation": "Δεν γίνεται κατεδάφιση όσο βρίσκεται παίκτης μέσα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_LockFailed",
+      "source": "Can't demolish this right now",
+      "translation": "Δεν γίνεται κατεδάφιση τώρα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantUpgrade_BuildingType",
+      "source": "Incorrect Building Type",
+      "translation": "Λανθασμένος Τύπος Κτιρίου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantBuild",
+      "source": "Can't Build There",
+      "translation": "Δεν Μπορείτε να Χτίσετε Εκεί"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Upgrade",
+      "source": "Select a {0} to upgrade",
+      "translation": "Επιλέξτε κτίριο τύπου «{0}» για αναβάθμιση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Demolish",
+      "source": "Choose a structure to demolish",
+      "translation": "Επιλέξτε κατασκευή για κατεδάφιση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Move",
+      "source": "Choose a building to move",
+      "translation": "Επιλέξτε κτίριο για μετακίνηση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Paint",
+      "source": "Select a building to paint",
+      "translation": "Επιλέξτε κτίριο για βάψιμο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_ChooseLocation",
+      "source": "Choose a location",
+      "translation": "Επιλέξτε τοποθεσία"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Name",
+      "source": "Name",
+      "translation": "Όνομα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Wallets",
+      "source": "Money Style",
+      "translation": "Χρήματα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_SharedWallet",
+      "source": "Shared",
+      "translation": "Κοινά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_SeparateWallet",
+      "source": "Separate",
+      "translation": "Χωριστά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Difficulty",
+      "source": "Profit Margin",
+      "translation": "Περιθώριο Κέρδους"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Close",
+      "source": "Nearby",
+      "translation": "Κοντά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Normal",
+      "source": "Normal",
+      "translation": "Κανονικό"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Tough",
+      "source": "75%",
+      "translation": "75%",
+      "preserveReason": "Numeric profit-margin percentage; identical notation in Greek."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Hard",
+      "source": "50%",
+      "translation": "50%",
+      "preserveReason": "Numeric profit-margin percentage; identical notation in Greek."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Super",
+      "source": "25%",
+      "translation": "25%",
+      "preserveReason": "Numeric profit-margin percentage; identical notation in Greek."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Separate",
+      "source": "Separate",
+      "translation": "Χωριστά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_none",
+      "source": "None",
+      "translation": "Καμία"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_CoopHelp",
+      "source": "Help",
+      "translation": "Βοήθεια"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_StartingCabins",
+      "source": "Starting Cabins",
+      "translation": "Αρχικές Καλύβες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_CabinLayout",
+      "source": "Cabin Layout",
+      "translation": "Διάταξη Καλυβών"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Farm",
+      "source": "Farm\nName",
+      "translation": "Όνομα\nΑγροκτήματος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FavoriteThing",
+      "source": "Favorite\nThing",
+      "translation": "Αγαπημένο\nΠράγμα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Animal",
+      "source": "Animal\nPreference",
+      "translation": "Προτίμηση\nΖώου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Skin",
+      "source": "Skin",
+      "translation": "Δέρμα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_EyeColor",
+      "source": "Eye Color:",
+      "translation": "Χρώμα Ματιών:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Hair",
+      "source": "Hair",
+      "translation": "Μαλλιά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_HairColor",
+      "source": "Hair Color:",
+      "translation": "Χρώμα Μαλλιών:"
+    }
+  ]
+}

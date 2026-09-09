@@ -1,0 +1,189 @@
+{
+  "id": "0018-lexicon-coop-birth",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "969a8e2966d69fda08d561d3bd93d7101366419c603a6e281a24d9569a61a4cb",
+    "notes": "All 29 source/Greek pairs and the female-player variant read in full; negative-food adjective list corrected for natural Greek and re-read. Native call sites establish child pronouns refer to the Greek neuter αγόρι/κορίτσι, possessives refer to the homeowner, and NPC-specific positive adjective lists describe Pierre as chef regardless of speaker sex. Food and PlaceOrEvent adjectives are neuter and their later templates must agree. CP PlayerGender Female override provides the vocative αγρότισσα without introducing source-absent control characters. Co-op help matches every existing Greek setting label and preserves all numbers/paragraph delimiters. See grammar-context.md for mandatory template dependencies and native evidence."
+  },
+  "records": [
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeItemNoun",
+      "source": "garbage#trash#junk#slop#crap",
+      "translation": "σκουπίδι#σκουπιδαριό#παλιοπράγμα#νεροζούμι#σκατό"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_Child",
+      "source": "cool#fun#neat#nice#nifty#super#great",
+      "translation": "φοβερός#διασκεδαστικός#ωραίος#καλός#επιδέξιος#σούπερ#σπουδαίος"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_AdultMale",
+      "source": "interesting#exciting#neat#fun#great#terrific",
+      "translation": "ενδιαφέρων#συναρπαστικός#ωραίος#διασκεδαστικός#σπουδαίος#καταπληκτικός"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_AdultFemale",
+      "source": "wonderful#amazing#heart-warming#magical#incredible#lovely#exhilarating#delightful",
+      "translation": "υπέροχος#καταπληκτικός#συγκινητικός#μαγικός#απίστευτος#αξιαγάπητος#συναρπαστικός#απολαυστικός"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_PlaceOrEvent",
+      "source": "wonderful#amazing#heart-warming#magical#incredible#lovely#exhilarating#delightful",
+      "translation": "υπέροχο#καταπληκτικό#συγκινητικό#μαγικό#απίστευτο#πανέμορφο#συναρπαστικό#απολαυστικό"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomDeliciousAdjective",
+      "source": "delicious#tasty#wonderful#satisfying#filling#scrumptious#appetizing#delightful",
+      "translation": "νόστιμο#γευστικό#υπέροχο#ικανοποιητικό#χορταστικό#πεντανόστιμο#λαχταριστό#απολαυστικό"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomDeliciousAdjective_Child",
+      "source": "yummy",
+      "translation": "νοστιμούλι"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeFoodAdjective_Child",
+      "source": "gross",
+      "translation": "σιχαμένο"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeFoodAdjective_Polite",
+      "source": "...interesting#...unusual#...different#...unconventional",
+      "translation": "...ενδιαφέρον#...ασυνήθιστο#...διαφορετικό#...αντισυμβατικό"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeFoodAdjective",
+      "source": "nasty#gross#disgusting#despicable#revolting#sickening#awful#repulsive#nauseating#foul#horrendous#putrid",
+      "translation": "αηδιαστικό#σιχαμένο#αποκρουστικό#άθλιο#βδελυρό#αναγουλιαστικό#απαίσιο#απωθητικό#εμετικό#βρωμερό#φρικτό#σάπιο"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomSlightlyPositiveFoodAdjective",
+      "source": "decent#good#edible",
+      "translation": "αξιοπρεπές#καλό#βρώσιμο"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "ChildTerm_Male",
+      "source": "boy",
+      "translation": "αγόρι"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "ChildTerm_Female",
+      "source": "girl",
+      "translation": "κορίτσι"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "Pronoun_Male",
+      "source": "him",
+      "translation": "το"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "Pronoun_Female",
+      "source": "her",
+      "translation": "το"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "QuestionDialogue_Yes",
+      "source": "Yes",
+      "translation": "Ναι"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "QuestionDialogue_No",
+      "source": "No",
+      "translation": "Όχι"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "GenericPlayerTerm",
+      "source": "farmer",
+      "translation": "αγρότη",
+      "femaleTranslation": "αγρότισσα"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "Possessive_Pronoun_Male",
+      "source": "his",
+      "translation": "του"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "Possessive_Pronoun_Female",
+      "source": "her",
+      "translation": "της"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_CoopHelpString",
+      "source": "Starting Cabins: Start with 1-{0} cabins already in place, allowing your friends to join immediately. Alternatively, you can select \"None\" and build the cabins yourself (via Robin).^^Cabin Layout: If you decide to start your farm with pre-existing cabins, you can choose between two layout styles: \"Nearby\" places all cabins near the main farmhouse, encouraging a communal farming style. \"Separate\" places the cabins far apart, allowing more room for independence.^^Profit Margin: Adjusts the profit margin (money you earn) on goods you sell. 'Normal' is the original Stardew Valley experience. More experienced and/or larger groups may wish to decrease the margin.",
+      "translation": "Αρχικές Καλύβες: Ξεκινήστε με 1-{0} καλύβες ήδη χτισμένες, ώστε οι φίλοι σας να μπορούν να μπουν αμέσως στο παιχνίδι. Εναλλακτικά, μπορείτε να επιλέξετε «Καμία» και να χτίσετε τις καλύβες αργότερα μέσω της Ρόμπιν.^^Διάταξη Καλυβών: Αν αποφασίσετε να ξεκινήσετε το αγρόκτημά σας με έτοιμες καλύβες, μπορείτε να επιλέξετε ανάμεσα σε δύο διατάξεις: η επιλογή «Κοντά» τοποθετεί όλες τις καλύβες κοντά στην κύρια αγροικία, ενθαρρύνοντας την από κοινού καλλιέργεια. Η επιλογή «Χωριστά» τοποθετεί τις καλύβες μακριά τη μία από την άλλη, αφήνοντας περισσότερο χώρο για ανεξαρτησία.^^Περιθώριο Κέρδους: Ρυθμίζει το περιθώριο κέρδους (τα χρήματα που κερδίζετε) από τα αγαθά που πουλάτε. Η επιλογή «Κανονικό» προσφέρει την αρχική εμπειρία του Stardew Valley. Οι πιο έμπειρες ή μεγαλύτερες ομάδες μπορεί να θέλουν να μειώσουν το περιθώριο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_CoopHelpString2",
+      "source": "Money Style: You can choose how money is earned and spent. In \"Shared\" mode, all players share the same pool of money. In \"Separate\" mode, each player has their own, individual pool of money. \"Shared\" is the classic Stardew Valley experience. ",
+      "translation": "Χρήματα: Μπορείτε να επιλέξετε πώς κερδίζονται και ξοδεύονται τα χρήματα. Με την επιλογή «Κοινά», όλοι οι παίκτες μοιράζονται το ίδιο ταμείο. Με την επιλογή «Χωριστά», κάθε παίκτης έχει το δικό του, προσωπικό ταμείο. Η επιλογή «Κοινά» προσφέρει την κλασική εμπειρία του Stardew Valley. "
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Baby",
+      "source": "{0} and {1} welcomed a baby {2} to the family! They named {3} {4}.",
+      "translation": "{0} και {1} καλωσόρισαν ένα νεογέννητο {2} στην οικογένεια! Ονόμασαν {3} μωρό {4}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HouseUpgrade",
+      "source": "{0} has requested construction on {1} home!",
+      "translation": "{0} ζήτησε εργασίες στο σπίτι {1}!"
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_Adoption",
+      "source": "During the night, the adoption agency dropped off your new baby {0}.",
+      "translation": "Μέσα στη νύχτα, η υπηρεσία υιοθεσιών σάς έφερε το νέο σας μωρό, ένα {0}."
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_PlayerMother",
+      "source": "During the night, you gave birth to a baby {0}.",
+      "translation": "Μέσα στη νύχτα, γεννήσατε ένα {0}."
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_SpouseMother",
+      "source": "During the night, {1} gave birth to a baby {0}.",
+      "translation": "Μέσα στη νύχτα, η {1} γέννησε ένα {0}."
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_SpouseNaming_Male",
+      "source": "{0} is naming your baby boy.",
+      "translation": "{0} δίνει όνομα στο αγοράκι σας."
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_SpouseNaming_Female",
+      "source": "{0} is naming your baby girl.",
+      "translation": "{0} δίνει όνομα στο κοριτσάκι σας."
+    }
+  ]
+}

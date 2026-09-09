@@ -1,0 +1,194 @@
+{
+  "id": "0061-cs-socializing-tools",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "d5c11684b77ec99fddf029278f63c08b0b5bd7da0e3631a5e4b5979adba16fa7",
+    "notes": "All 30 bilingual entries read in full, corrected dense-stone wording reread. Emily message fragments use genitive after μήνυμα; community spirit conveyed as κοινοτική αλληλεγγύη. Tool and farming messages use consistent UI plural address and glossary terminology. FishingRod.draw native code multiplies fishSize by 2.54 for every non-English locale, including custom el, so 14083 correctly labels centimetres εκ. rather than English inches. No numeric value or runtime conversion changed."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocializeQuest.cs.13785",
+      "source": "Saying 'Hello'",
+      "translation": "Λέγοντας «γεια»"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocializeQuest.cs.13786",
+      "source": "Hey! Will someone say 'Hi' to everyone in town for me? I want to spread a message of {0} today!   -Emily",
+      "translation": "Έι! Μπορεί κάποιος να πει ένα «γεια» από μένα σε όλους στην πόλη; Θέλω να διαδώσω ένα μήνυμα {0} σήμερα!   -Έμιλι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocializeQuest.cs.13787",
+      "source": "pure joy",
+      "translation": "αγνής χαράς"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocializeQuest.cs.13788",
+      "source": "peace & goodwill",
+      "translation": "ειρήνης και καλής θέλησης"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocializeQuest.cs.13789",
+      "source": "community spirit",
+      "translation": "κοινοτικής αλληλεγγύης"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocializeQuest.cs.13791",
+      "source": "\n\n- Everyone will like you a little more",
+      "translation": "\n\n- Όλοι θα σε συμπαθούν λίγο περισσότερο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SocializeQuest.cs.13802",
+      "source": "{0}/{1} people greeted",
+      "translation": "Χαιρετισμοί: {0}/{1} άτομα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "HoeDirt.cs.13915",
+      "source": "Requires Scythe",
+      "translation": "Απαιτείται Δρεπάνι"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "HoeDirt.cs.13916",
+      "source": "Must be added before planting",
+      "translation": "Πρέπει να προστεθεί πριν από το φύτεμα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "HoeDirt.cs.13916-2",
+      "source": "This spot is already fertilized",
+      "translation": "Αυτό το σημείο έχει ήδη λίπασμα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "HoeDirt.cs.13919",
+      "source": "Must be planted on farm.",
+      "translation": "Πρέπει να φυτευτεί στο αγρόκτημα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "HoeDirt.cs.13924",
+      "source": "Out of season.",
+      "translation": "Εκτός εποχής."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "HoeDirt.cs.13925",
+      "source": "Can't plant here.",
+      "translation": "Δεν μπορείτε να φυτέψετε εδώ."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13945",
+      "source": "Your axe isn't strong enough to break this stump.",
+      "translation": "Το τσεκούρι σας δεν είναι αρκετά δυνατό για να σπάσει αυτό το κούτσουρο."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13948",
+      "source": "Your axe isn't strong enough to break this log.",
+      "translation": "Το τσεκούρι σας δεν είναι αρκετά δυνατό για να σπάσει αυτόν τον κορμό."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13952",
+      "source": "Your pickaxe isn't strong enough to break this.",
+      "translation": "Η αξίνα σας δεν είναι αρκετά δυνατή για να το σπάσει."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13956",
+      "source": "Your pickaxe isn't strong enough to break this boulder.",
+      "translation": "Η αξίνα σας δεν είναι αρκετά δυνατή για να σπάσει αυτόν τον ογκόλιθο."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13962",
+      "source": "Looks like you'll need an upgraded axe to destroy this gnarled old log.",
+      "translation": "Φαίνεται ότι θα χρειαστείτε αναβαθμισμένο τσεκούρι για να καταστρέψετε αυτόν τον ροζιασμένο παλιό κορμό."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13963",
+      "source": "Looks like you'll need an upgraded pickaxe to destroy this dense stone.",
+      "translation": "Φαίνεται ότι θα χρειαστείτε αναβαθμισμένη αξίνα για να καταστρέψετε αυτή τη συμπαγή πέτρα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ResourceClump.cs.13964",
+      "source": "It looks pretty solid... maybe a very strong pickaxe could break it?",
+      "translation": "Φαίνεται πολύ συμπαγές... ίσως μια πολύ δυνατή αξίνα να μπορούσε να το σπάσει;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TreeFertilizer1",
+      "source": "Already Mature",
+      "translation": "Έχει ήδη μεγαλώσει πλήρως"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TreeFertilizer2",
+      "source": "Already Fertilized",
+      "translation": "Έχει ήδη λίπασμα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Axe.cs.14023",
+      "source": "You're only allowed to chop trees on your farm... It's a town rule.",
+      "translation": "Επιτρέπεται να κόβετε δέντρα μόνο στο αγρόκτημά σας... Είναι κανόνας της πόλης."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingRod.cs.14068",
+      "source": "You've caught one of the legendary fish.",
+      "translation": "Πιάσατε ένα από τα θρυλικά ψάρια."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingRod.cs.14069",
+      "source": "New Record!",
+      "translation": "Νέο ρεκόρ!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingRod.cs.14082",
+      "source": "Length:",
+      "translation": "Μήκος:"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingRod.cs.14083",
+      "source": "{0} in.",
+      "translation": "{0} εκ."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingRod.cs.14085",
+      "source": "You've used your last piece of bait.",
+      "translation": "Χρησιμοποιήσατε το τελευταίο σας δόλωμα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingRod.cs.14086",
+      "source": "Your fishing tackle has worn out.",
+      "translation": "Το σύνεργο ψαρέματός σας φθάρθηκε."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingRod.cs.14100",
+      "source": "You found a lost book. The library has been expanded.",
+      "translation": "Βρήκατε ένα Χαμένο Βιβλίο. Η συλλογή της βιβλιοθήκης εμπλουτίστηκε."
+    }
+  ]
+}

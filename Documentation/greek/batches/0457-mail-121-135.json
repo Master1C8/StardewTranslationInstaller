@@ -1,0 +1,158 @@
+{
+  "id": "0457-mail-121-135",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "9117500cbaca4ed8288d5eed5d38a50623bdec181bc8d0875e80a6f25405930b",
+    "notes": "Editorial pass 1 and pass 2 complete: checked all 15 letters against the English asset; reviewed material prices, item requests, festival reminder, Joja billing gender variants, sender voices, subject lines, glossary terms, quest commands, placeholders, IDs, and reward values."
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "spring_1_2",
+      "source": "Notice:^^The price of raw materials at Robin's shop and Clint's shop has increased.[#]Raw Material Price Notice",
+      "translation": "Ειδοποίηση:^^Η τιμή των πρώτων υλών στα καταστήματα της Ρόμπιν και του Κλιντ αυξήθηκε.[#]Ειδοποίηση Τιμών Πρώτων Υλών",
+      "glossaryIds": [
+        "robin",
+        "clint"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_6_2",
+      "source": "@-^I'm really craving a fresh apricot. I haven't been able to find one at the store, so I'm asking you. I'll pay you well for it!^   -Emily%item quest 115 %%[#]Emily's Request",
+      "translation": "@-^Λαχταράω πραγματικά ένα φρέσκο Βερίκοκο. Δεν κατάφερα να βρω κανένα στο κατάστημα, γι' αυτό ζητάω από σένα. Θα σε πληρώσω καλά!^   -Έμιλι%item quest 115 %%[#]Το Αίτημα της Έμιλι",
+      "glossaryIds": [
+        "emily"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_15_2",
+      "source": "Dear @,^I'd like to surprise my husband with a gift. He's a big fan of leeks. Could you bring me one?^   -Granny Evelyn%item quest 116 %%[#]Evelyn's Surprise",
+      "translation": "Γεια σου, @,^Θα ήθελα να κάνω έκπληξη στον σύζυγό μου με ένα δώρο. Λατρεύει τα Πράσα. Μπορείς να μου φέρεις ένα;^   -Γιαγιά Έβελιν%item quest 116 %%[#]Η Έκπληξη της Έβελιν",
+      "glossaryIds": [
+        "evelyn",
+        "george"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_21_2",
+      "source": "NOTICE^Pierre here... I really, really want a plate of sashimi. I'll pay top coin to whoever brings me some.^   -Pierre%item quest 117 %%[#]Pierre's Craving",
+      "translation": "ΕΙΔΟΠΟΙΗΣΗ^Ο Πιερ εδώ... Θέλω πάρα, πάρα πολύ ένα πιάτο Σασίμι. Θα πληρώσω αδρά αν μου φέρεις λίγο.^   -Πιερ%item quest 117 %%[#]Η Λαχτάρα του Πιερ",
+      "glossaryIds": [
+        "pierre"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_6_2",
+      "source": "Fisherman Wanted^I need a good pufferfish specimen. I'm conducting an experiment on the toxin created by the pufferfish.^Reward: 1000g^ -Demetrius%item quest 118 %%[#]Demetrius' Study On Toxins",
+      "translation": "ΖΗΤΕΙΤΑΙ ΑΤΟΜΟ ΓΙΑ ΨΑΡΕΜΑ^Χρειάζομαι ένα καλό δείγμα Λαγοκέφαλου. Διεξάγω ένα πείραμα πάνω στην τοξίνη που παράγει ο Λαγοκέφαλος.^Ανταμοιβή: 1000g^ -Ντιμίτριους%item quest 118 %%[#]Η Μελέτη του Ντιμίτριους για τις Τοξίνες",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_15_2",
+      "source": "Dear Farmer @,^I'd like to give my wife a starfruit for our anniversary. Are you growing any on your farm? If you brought me one, I'd be very grateful.^   -Kent%item quest 119 %%[#]Kent Needs A Gift",
+      "translation": "Γεια σου, @,^Θα ήθελα να δώσω στη σύζυγό μου ένα Αστερόφρουτο για την επέτειό μας. Καλλιεργείς κανένα στο αγρόκτημά σου; Αν μου έφερνες ένα, θα σου ήμουν πολύ ευγνώμων.^   -Κεντ%item quest 119 %%[#]Ο Κεντ Χρειάζεται ένα Δώρο",
+      "glossaryIds": [
+        "kent",
+        "jodi"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_21_2",
+      "source": "@,^I need truffle oil. Don't ask me why.^ -Mayor Lewis%item quest 120 %%[#]Lewis' Request",
+      "translation": "@,^Χρειάζομαι Λάδι Τρούφας. Μη με ρωτήσεις γιατί.^ -Δήμαρχος Λιούις%item quest 120 %%[#]Το Αίτημα του Λιούις",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_6_2",
+      "source": "Wanted: 1 Fresh Lobster for a marvelous bisque I'm creating.^Who: Gus, proprietor of the Stardrop Saloon^Reward: 800g %item quest 121 %%[#]Gus Needs Lobster",
+      "translation": "Ζητείται: 1 Φρέσκος Αστακός για μια θαυμάσια μπισκ που δημιουργώ.^Ποιος: Γκας, ιδιοκτήτης του Σαλούν της Αστεροσταγόνας^Ανταμοιβή: 800g %item quest 121 %%[#]Ο Γκας Χρειάζεται Αστακό",
+      "glossaryIds": [
+        "gus",
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_19_2",
+      "source": "NOTICE^Does anybody have one of them battery packs? My TV remote died, and it's a real hassle getting off the couch to change the station.^  -Pam%item quest 122 %%[#]Pam Needs Help",
+      "translation": "ΕΙΔΟΠΟΙΗΣΗ^Μήπως έχει κανείς καμιά από εκείνες τις Συστοιχίες Μπαταριών; Το τηλεχειριστήριο της τηλεόρασής μου τα έφτυσε και είναι μεγάλος μπελάς να σηκώνομαι από τον καναπέ για να αλλάξω κανάλι.^  -Παμ%item quest 122 %%[#]Η Παμ Χρειάζεται Βοήθεια",
+      "glossaryIds": [
+        "pam"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_5_2",
+      "source": "@,^I'm creating an enchanted staff of phenomenal power.^However, I'm missing something: an Iridium Bar.^I'm willing to pay 5x the market value for it. Bring it as soon as you can.^ -M. Rasmodius, Wizard %item quest 123 %%[#]Wizard Needs A Rare Item",
+      "translation": "@,^Δημιουργώ ένα μαγεμένο ραβδί εκπληκτικής δύναμης.^Ωστόσο, μου λείπει κάτι: μια Ράβδος Ιριδίου.^Είμαι διατεθειμένος να πληρώσω 5 φορές την αγοραία αξία της. Φέρε τη όσο πιο σύντομα μπορείς.^ -Μ. Ρασμόντιους, Μάγος %item quest 123 %%[#]Ο Μάγος Χρειάζεται ένα Σπάνιο Αντικείμενο",
+      "glossaryIds": [
+        "wizard-rasmodius",
+        "iridium"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_13_2",
+      "source": "I've got another challenge for you: Catch me a Lingcod.^They don't go down easy, but I know you can do it.^  -Willy%item quest 124 %%[#]Willy's Challenge #2",
+      "translation": "Έχω άλλη μία πρόκληση για σένα: Πιάσε μου έναν Οφιομπακαλιάρο.^Δεν πιάνεται εύκολα, αλλά ξέρω πως μπορείς να τα καταφέρεις.^  -Γουίλι%item quest 124 %%[#]Η Πρόκληση του Γουίλι #2",
+      "glossaryIds": [
+        "willy"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_19_2",
+      "source": "Dear @,^I'm at my wit's end. I desperately want to make a Coco-no-no at the saloon, but I have no way of getting a coconut!^Can you help me?^  -Gus%item quest 125 %%[#]Gus Needs A Coconut",
+      "translation": "Γεια σου, @,^Δεν ξέρω πια τι να κάνω. Θέλω απεγνωσμένα να φτιάξω ένα Κόκο-Νόου-Νόου στο Σαλούν της Αστεροσταγόνας, αλλά δεν έχω κανέναν τρόπο να βρω Καρύδα!^Μπορείς να με βοηθήσεις;^  -Γκας%item quest 125 %%[#]Ο Γκας Χρειάζεται μια Καρύδα",
+      "glossaryIds": [
+        "gus",
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_24",
+      "source": "Dear @,^Tomorrow is the Feast of the Winter Star.^Did you get a gift for your 'secret friend'... %secretsanta?^The feast starts at 9 AM in the town square. See you then! ^   -Mayor Lewis[#]Feast Of The Winter Star Reminder",
+      "translation": "Γεια σου, @,^Αύριο είναι η Γιορτή του Χειμερινού Αστεριού.^Πήρες δώρο για το «μυστικό σου ταίρι»... %secretsanta;^Η γιορτή αρχίζει στις 9 π.μ. στην πλατεία της πόλης. Τα λέμε εκεί! ^   -Δήμαρχος Λιούις[#]Υπενθύμιση για τη Γιορτή του Χειμερινού Αστεριού",
+      "glossaryIds": [
+        "mayor-lewis",
+        "feast-winter-star"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut1_Billed_Male",
+      "source": "Dear Mr. @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^(You've been billed {0}g for this service)^^-Morris^Joja Customer Satisfaction Representative[#]Joja Invoice",
+      "translation": "Αγαπητέ κ. @,^Χθες βράδυ, ένα μέλος της ομάδας Joja σε βρήκε χωρίς τις αισθήσεις σου. Στάλθηκε ιατρική ομάδα για να σε μεταφέρει με ασφάλεια στο σπίτι.^Χαιρόμαστε που είσαι καλά!^^(Χρεώθηκες {0}g για αυτή την υπηρεσία)^^-Μόρις^Εκπρόσωπος Ικανοποίησης Πελατών Joja[#]Τιμολόγιο Joja",
+      "glossaryIds": [
+        "morris",
+        "joja"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut1_Billed_Female",
+      "source": "Dear Ms. @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^(You've been billed {0}g for this service)^^-Morris^Joja Customer Satisfaction Representative[#]Joja Invoice",
+      "translation": "Αγαπητή κα @,^Χθες βράδυ, ένα μέλος της ομάδας Joja σε βρήκε χωρίς τις αισθήσεις σου. Στάλθηκε ιατρική ομάδα για να σε μεταφέρει με ασφάλεια στο σπίτι.^Χαιρόμαστε που είσαι καλά!^^(Χρεώθηκες {0}g για αυτή την υπηρεσία)^^-Μόρις^Εκπρόσωπος Ικανοποίησης Πελατών Joja[#]Τιμολόγιο Joja",
+      "glossaryIds": [
+        "morris",
+        "joja"
+      ]
+    }
+  ]
+}

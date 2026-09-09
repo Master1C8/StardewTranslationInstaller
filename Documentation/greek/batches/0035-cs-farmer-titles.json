@@ -1,0 +1,424 @@
+{
+  "id": "0035-cs-farmer-titles",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "84b8f9dbb625ff4d1b116b6b3a8dbe11d38ffc14a5dfd871b3cfaa5dc08cb853",
+    "notes": "All 60 bilingual entries and all rank female forms read; Sodbuster common-gender title and late-hour wording corrected and reread. Native Farmer.getTitle callers are only local-player InventoryPage and SkillsPage, so PlayerGender conditions select the right rank forms. Farmboy/Farmgirl retain native separate keys. Native reward singular article versus plural quantity mapping, tie list punctuation, festival location concatenation inspected. Skill/profession glossary terms applied. Blue Tower consistent with the reviewed Elliott title."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1857",
+      "source": "You added {0} to the soup.",
+      "translation": "Προσθέσατε στη σούπα το υλικό «{0}»."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1862",
+      "source": "Abigail!",
+      "translation": "Άμπιγκεϊλ!",
+      "glossaryIds": [
+        "abigail"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1864",
+      "source": "It's a tie between",
+      "translation": "Έχουμε ισοπαλία ανάμεσα στα εξής άτομα:"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1865",
+      "source": " and",
+      "translation": " και"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1871",
+      "source": "Willy, with 5 big, fresh fish!",
+      "translation": "Ο Γουίλι, με 5 μεγάλα, φρέσκα ψάρια!",
+      "glossaryIds": [
+        "willy"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1872",
+      "source": "{0}, with {1} big, slimy fish!",
+      "translation": "{0}, με {1} μεγάλα, γλιστερά ψάρια!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1918",
+      "source": "You received 15 Parsnip Seeds!^^'Here's a little something to get you started.^-Mayor Lewis'",
+      "translation": "Λάβατε 15 Σπόρους Παστινάκης!^^«Ορίστε κάτι μικρό για να ξεκινήσεις.^-Δήμαρχος Λιούις»",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1919",
+      "source": "You received {1} {0}!",
+      "translation": "Λάβατε {1}«{0}»!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1922",
+      "source": "You received {1} x{0} !",
+      "translation": "Λάβατε «{1}» x{0} !"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1972",
+      "source": "the farm",
+      "translation": "η φάρμα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1986",
+      "source": "You feel sluggish from over-exertion.",
+      "translation": "Νιώθετε νωθρότητα από την υπερβολική καταπόνηση."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1987",
+      "source": "You're starting to feel exhausted.",
+      "translation": "Αρχίζετε να νιώθετε εξάντληση."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1991",
+      "source": "Farming",
+      "translation": "Γεωργία",
+      "glossaryIds": [
+        "farming-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1992",
+      "source": "Mining",
+      "translation": "Εξόρυξη",
+      "glossaryIds": [
+        "mining-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1993",
+      "source": "Fishing",
+      "translation": "Ψάρεμα",
+      "glossaryIds": [
+        "fishing-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1994",
+      "source": "Foraging",
+      "translation": "Συλλογή",
+      "glossaryIds": [
+        "foraging-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1995",
+      "source": "Luck",
+      "translation": "Τύχη",
+      "glossaryIds": [
+        "luck"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1996",
+      "source": "Combat",
+      "translation": "Μάχη",
+      "glossaryIds": [
+        "combat-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2003",
+      "source": "{0} Level Up",
+      "translation": "Άνοδος Επιπέδου: {0}"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2010",
+      "source": "Nice try...",
+      "translation": "Καλή προσπάθεια..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2011",
+      "source": "New Journal Entry",
+      "translation": "Νέα Καταχώριση στο Ημερολόγιο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2016",
+      "source": "Farm King",
+      "translation": "Βασιλιάς της Φάρμας",
+      "femaleTranslation": "Βασίλισσα της Φάρμας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2017",
+      "source": "Cropmaster",
+      "translation": "Άρχοντας της Σοδειάς",
+      "femaleTranslation": "Αρχόντισσα της Σοδειάς"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2018",
+      "source": "Agriculturist",
+      "translation": "Γεωπόνος",
+      "glossaryIds": [
+        "artisan-agriculturist"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2019",
+      "source": "Farmer",
+      "translation": "Αγρότης",
+      "femaleTranslation": "Αγρότισσα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2020",
+      "source": "Rancher",
+      "translation": "Κτηνοτρόφος",
+      "glossaryIds": [
+        "rancher-tiller"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2021",
+      "source": "Planter",
+      "translation": "Φυτευτής",
+      "femaleTranslation": "Φυτεύτρια"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2022",
+      "source": "Granger",
+      "translation": "Σιτοκαλλιεργητής",
+      "femaleTranslation": "Σιτοκαλλιεργήτρια"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2023",
+      "source": "Farmboy",
+      "translation": "Αγόρι της Φάρμας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2024",
+      "source": "Farmgirl",
+      "translation": "Κορίτσι της Φάρμας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2025",
+      "source": "Sodbuster",
+      "translation": "Σκαπανέας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2026",
+      "source": "Smallholder",
+      "translation": "Μικροκτηματίας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2027",
+      "source": "Tiller",
+      "translation": "Καλλιεργητής",
+      "femaleTranslation": "Καλλιεργήτρια",
+      "glossaryIds": [
+        "rancher-tiller"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2028",
+      "source": "Farmhand",
+      "translation": "Εργάτης της Φάρμας",
+      "femaleTranslation": "Εργάτρια της Φάρμας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2029",
+      "source": "Cowpoke",
+      "translation": "Αγελαδάρης",
+      "femaleTranslation": "Αγελαδάρισσα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2030",
+      "source": "Bumpkin",
+      "translation": "Χωριάτης",
+      "femaleTranslation": "Χωριάτισσα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2031",
+      "source": "Greenhorn",
+      "translation": "Πρωτάρης",
+      "femaleTranslation": "Πρωτάρα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2032",
+      "source": "Newcomer",
+      "translation": "Νεοφερμένος",
+      "femaleTranslation": "Νεοφερμένη"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2156",
+      "source": "The Alfalfas",
+      "translation": "Τα Τριφύλλια"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2157",
+      "source": "Blue Tower",
+      "translation": "Ο Μπλε Πύργος"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2574",
+      "source": "Gamepad mode activated.",
+      "translation": "Ενεργοποιήθηκε η λειτουργία χειριστηρίου."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2575",
+      "source": "Gamepad disconnected.",
+      "translation": "Το χειριστήριο αποσυνδέθηκε."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2634",
+      "source": "near Marnie's ranch.",
+      "translation": "κοντά στο Ράντσο της Μάρνι.",
+      "glossaryIds": [
+        "marnies-ranch"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2635",
+      "source": "in the forest.",
+      "translation": "στο δάσος."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2637",
+      "source": "in the town square.",
+      "translation": "στην πλατεία της πόλης."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2639",
+      "source": "at the beach.",
+      "translation": "στην παραλία."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2640",
+      "source": "The {0} has begun ",
+      "translation": "Η γιορτή «{0}» ξεκίνησε "
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2652",
+      "source": "It's getting late...",
+      "translation": "Έχει αρχίσει να γίνεται αργά..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2782",
+      "source": "The wedding was wonderful... wasn't it, dear?$h#$e#Well, we can't forget about the farm... time to get to work.",
+      "translation": "Ο γάμος ήταν υπέροχος... έτσι δεν είναι, αγάπη μου;$h#$e#Λοιπόν, δεν πρέπει να ξεχνάμε τη φάρμα... ώρα για δουλειά."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2898",
+      "source": "I'm not thirsty right now...",
+      "translation": "Δεν διψάω τώρα..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2899",
+      "source": "I'm too full...",
+      "translation": "Έχω παραχορτάσει..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2973",
+      "source": "Today's festival is being set up. Come back later.",
+      "translation": "Η σημερινή γιορτή ετοιμάζεται. Επιστρέψτε αργότερα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3042",
+      "source": "Sun",
+      "translation": "Κυρ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3043",
+      "source": "Mon",
+      "translation": "Δευ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3044",
+      "source": "Tue",
+      "translation": "Τρί"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3045",
+      "source": "Wed",
+      "translation": "Τετ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3046",
+      "source": "Thu",
+      "translation": "Πέμ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3047",
+      "source": "Fri",
+      "translation": "Παρ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3048",
+      "source": "Sat",
+      "translation": "Σάβ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3094",
+      "source": "Your mind is filled with thoughts of ",
+      "translation": "Το μυαλό σας γεμίζει σκέψεις για "
+    }
+  ]
+}

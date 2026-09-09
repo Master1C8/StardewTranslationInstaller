@@ -1,0 +1,436 @@
+{
+  "id": "0010-ui-commands-proposals",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "aa206e8695fe15a70c8f96f9d946fb07e8c0d8937b45d9ad075e112374e2fc8d",
+    "notes": "All 70 pairs read. Replaced male-only kid address with παιδί μου in both Qi messages and re-read. ConcernedApe remains the creator handle. /help is the literal command; commandName and bracketed argument descriptions are human-facing metavariables, localized without changing command IDs or numeric emote [126]. Two list format strings explicitly preserved. Calico Spin is Περιστροφή Κάλικο; apply consistently later."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned100m",
+      "source": "{0} Farm has earned 100,000,000g.",
+      "translation": "Το Αγρόκτημα {0} κέρδισε 100.000.000g."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GalaxySword",
+      "source": "{0} found the Galaxy Sword.",
+      "translation": "{0} βρήκε το Σπαθί του Γαλαξία."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Achievement",
+      "source": "{0} has earned the '{1}' achievement.",
+      "translation": "{0} κέρδισε το επίτευγμα «{1}»."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Jackpot",
+      "source": "{0} hit the ultimate jackpot in Calico Spin.",
+      "translation": "{0} πέτυχε το απόλυτο τζάκποτ στην Περιστροφή Κάλικο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Slingshot_Hit",
+      "source": "{0} pelted {1} with {2}!",
+      "translation": "{0} χτύπησε τον χαρακτήρα {1} με «{2}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Caught_Snooping",
+      "source": "{0} was caught snooping through {1}'s private belongings!",
+      "translation": "{0} πιάστηκε να ψαχουλεύει τα προσωπικά πράγματα του χαρακτήρα {1}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerLeft",
+      "source": "{0} has quit.",
+      "translation": "{0} αποχώρησε."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Paused",
+      "source": "The host has paused the game.",
+      "translation": "Ο οικοδεσπότης έθεσε το παιχνίδι σε παύση."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Resumed",
+      "source": "The host has resumed the game.",
+      "translation": "Ο οικοδεσπότης συνέχισε το παιχνίδι."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SelfPlayerID",
+      "source": "you",
+      "translation": "εσείς"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_CheatsOnly",
+      "source": "This command can only be used when cheats are enabled.",
+      "translation": "Αυτή η εντολή χρησιμοποιείται μόνο όταν είναι ενεργές οι ζαβολιές."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_HostOnly",
+      "source": "Only the host can use this command.",
+      "translation": "Μόνο ο οικοδεσπότης μπορεί να χρησιμοποιήσει αυτή την εντολή."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_MultiplayerOnly",
+      "source": "This command can only be used in multiplayer mode.",
+      "translation": "Αυτή η εντολή χρησιμοποιείται μόνο σε παιχνίδι πολλών παικτών."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NiceTry",
+      "source": "ConcernedApe: Nice try...",
+      "translation": "ConcernedApe: Καλή προσπάθεια..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchOnlinePlayer",
+      "source": "No online player with that name",
+      "translation": "Δεν υπάρχει συνδεδεμένος παίκτης με αυτό το όνομα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchPlayer",
+      "source": "No player with that name",
+      "translation": "Δεν υπάρχει παίκτης με αυτό το όνομα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayers",
+      "source": "The following players are present:",
+      "translation": "Οι παρακάτω παίκτες είναι παρόντες:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayersEntry",
+      "source": " - {0}",
+      "translation": " - {0}",
+      "preserveReason": "List indentation and runtime placeholder only; no English text."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Help",
+      "source": "{0} [farmer name/user id]: bans the player from this farm.",
+      "translation": "{0} [όνομα αγρότη/αναγνωριστικό χρήστη]: αποκλείει τον παίκτη από αυτό το αγρόκτημα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Done",
+      "source": "{0} was banned",
+      "translation": "{0} αποκλείστηκε"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Failed",
+      "source": "Failed to ban player",
+      "translation": "Αποτυχία αποκλεισμού παίκτη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Clear_Help",
+      "source": "{0}: clear chat log.",
+      "translation": "{0}: καθαρίζει το ιστορικό συνομιλίας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Color_Help",
+      "source": "{0} [color]: sets your default text color.",
+      "translation": "{0} [χρώμα]: ορίζει το προεπιλεγμένο χρώμα κειμένου σας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ColorList_Help",
+      "source": "{0}: lists the available text colors.",
+      "translation": "{0}: εμφανίζει τα διαθέσιμα χρώματα κειμένου."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_1",
+      "source": "ConcernedApe: Hello. I hope you're enjoying your new life here. Take care! [126]",
+      "translation": "ConcernedApe: Γεια σου. Ελπίζω να απολαμβάνεις την καινούργια σου ζωή εδώ. Να προσέχεις! [126]"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_2",
+      "source": "ConcernedApe is hard at work...",
+      "translation": "Ο ConcernedApe δουλεύει σκληρά..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Emote_Help",
+      "source": "{0} [emote id]: perform an emote (omit the argument for a list of emotes).",
+      "translation": "{0} [αναγνωριστικό έκφρασης]: εκτελεί μια έκφραση (παραλείψτε την παράμετρο για να δείτε τις διαθέσιμες εκφράσεις)."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandDescription",
+      "source": " - {0}",
+      "translation": " - {0}",
+      "preserveReason": "List indentation and runtime placeholder only; no English text."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandList",
+      "source": "Supported commands: {0}.",
+      "translation": "Υποστηριζόμενες εντολές: {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_Intro",
+      "source": "Enter '/help commandName' for help with a specific command.",
+      "translation": "Πληκτρολογήστε '/help όνομαΕντολής' για βοήθεια σχετικά με μια συγκεκριμένη εντολή."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_MultiplayerCommandList",
+      "source": "Multiplayer commands: {0}.",
+      "translation": "Εντολές πολλών παικτών: {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_NoSuchCommand",
+      "source": "No command found matching '{0}'.",
+      "translation": "Δεν βρέθηκε εντολή που να αντιστοιχεί στο «{0}»."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Kick_Help",
+      "source": "{0} [farmer name/user id]: disconnects the player.",
+      "translation": "{0} [όνομα αγρότη/αναγνωριστικό χρήστη]: αποσυνδέει τον παίκτη."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_List_Help",
+      "source": "{0}: list online players.",
+      "translation": "{0}: εμφανίζει τους συνδεδεμένους παίκτες."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_MapScreenshot_Help",
+      "source": "{0}: save a screenshot of the current location's full map.",
+      "translation": "{0}: αποθηκεύει στιγμιότυπο ολόκληρου του χάρτη της τρέχουσας τοποθεσίας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Message_Help",
+      "source": "{0} [farmer name]: sends a private message to a player.",
+      "translation": "{0} [όνομα αγρότη]: στέλνει προσωπικό μήνυμα σε έναν παίκτη."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Pause_Help",
+      "source": "{0}: pause the game for all players.",
+      "translation": "{0}: θέτει το παιχνίδι σε παύση για όλους τους παίκτες."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_1",
+      "source": "Mr. Qi: Hey, kid. Yeah, I'm here. What'd you expect?",
+      "translation": "κ. Τσι: Γεια σου, παιδί μου. Ναι, εδώ είμαι. Τι περίμενες;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_2",
+      "source": "Mr. Qi: Hey... keep up the good work, and never stop striving for success!      I'll see you soon, kid...",
+      "translation": "κ. Τσι: Έι... συνέχισε την καλή δουλειά και μην πάψεις ποτέ να προσπαθείς για την επιτυχία!      Θα τα πούμε σύντομα, παιδί μου..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_3",
+      "source": "Mr. Qi is away",
+      "translation": "Ο κ. Τσι απουσιάζει"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Help",
+      "source": "{0}: replies to a private message.",
+      "translation": "{0}: απαντά σε προσωπικό μήνυμα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Failed",
+      "source": "Could not send reply",
+      "translation": "Δεν ήταν δυνατή η αποστολή απάντησης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_NoMessageFound",
+      "source": "No player to reply to",
+      "translation": "Δεν υπάρχει παίκτης στον οποίο να απαντήσετε"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Resume_Help",
+      "source": "{0}: resume a paused game.",
+      "translation": "{0}: συνεχίζει ένα παιχνίδι που βρίσκεται σε παύση."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_All",
+      "source": "All",
+      "translation": "Όλοι"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_First",
+      "source": "First",
+      "translation": "Πρώτος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_Off",
+      "source": "Off",
+      "translation": "Ανενεργή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_Help",
+      "source": "{0} [farmer name/user id]: unbans the player from this farm.",
+      "translation": "{0} [όνομα αγρότη/αναγνωριστικό χρήστη]: αίρει τον αποκλεισμό του παίκτη από αυτό το αγρόκτημα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_Done",
+      "source": "{0} was unbanned",
+      "translation": "Άρθηκε ο αποκλεισμός για {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_NoPlayersBanned",
+      "source": "No players are banned",
+      "translation": "Δεν υπάρχουν αποκλεισμένοι παίκτες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_PlayerList",
+      "source": "Banned Players:",
+      "translation": "Αποκλεισμένοι Παίκτες:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_PlayerNotFound",
+      "source": "Could not find a banned player with that name or id.",
+      "translation": "Δεν βρέθηκε αποκλεισμένος παίκτης με αυτό το όνομα ή αναγνωριστικό."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnbanAll_Help",
+      "source": "{0}: unbans all players from this farm.",
+      "translation": "{0}: αίρει τον αποκλεισμό όλων των παικτών από αυτό το αγρόκτημα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnbanAll_Done",
+      "source": "All banned players were unbanned",
+      "translation": "Άρθηκαν οι αποκλεισμοί όλων των παικτών"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnlinkPlayer_Help",
+      "source": "{0} [farmer name/user id]: let anyone claim this character when they connect.",
+      "translation": "{0} [όνομα αγρότη/αναγνωριστικό χρήστη]: επιτρέπει σε οποιονδήποτε συνδεθεί να αναλάβει αυτόν τον χαρακτήρα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "SocialPage_Relationship_MarriedToOtherPlayer_FemaleNpc",
+      "source": "(married)",
+      "translation": "(παντρεμένη)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "SocialPage_Relationship_MarriedToOtherPlayer_MaleNpc",
+      "source": "(married)",
+      "translation": "(παντρεμένος)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ReadyCheck",
+      "source": "Waiting for other players... ({0}/{1})",
+      "translation": "Αναμονή για τους άλλους παίκτες... ({0}/{1})"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PendingProposal",
+      "source": "Waiting for the other player...",
+      "translation": "Αναμονή για τον άλλον παίκτη..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_Male",
+      "source": "Offer your {0} to {1}?",
+      "translation": "Να προσφέρετε το «{0}» σας στον παίκτη {1};"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_Female",
+      "source": "Offer your {0} to {1}?",
+      "translation": "Να προσφέρετε το «{0}» σας στην παίκτρια {1};"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_NoInventorySpace_Male",
+      "source": "{0} doesn't have space for this item.",
+      "translation": "Ο {0} δεν έχει χώρο για αυτό το αντικείμενο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_NoInventorySpace_Female",
+      "source": "{0} doesn't have space for this item.",
+      "translation": "Η {0} δεν έχει χώρο για αυτό το αντικείμενο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Proposal_PlayerBusy_Male",
+      "source": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "Ο {0} δεν μπορεί να ανταποκριθεί στο αίτημά σας τώρα. Δοκιμάστε ξανά σε λίγο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Proposal_PlayerBusy_Female",
+      "source": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "Η {0} δεν μπορεί να ανταποκριθεί στο αίτημά σας τώρα. Δοκιμάστε ξανά σε λίγο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Male",
+      "source": "{0} has asked you to dance with him. Will you dance with {0}?",
+      "translation": "Ο {0} σας ζήτησε να χορέψετε μαζί του. Θα είναι ο {0} ο παρτενέρ σας;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Female",
+      "source": "{0} has asked you to dance with her. Will you dance with {0}?",
+      "translation": "Η {0} σας ζήτησε να χορέψετε μαζί της. Θα είναι η {0} η παρτενέρ σας;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Male",
+      "source": "{0} has asked you to marry him! Will you accept his offer of marriage?",
+      "translation": "Ο {0} σας ζήτησε να τον παντρευτείτε! Θα δεχτείτε την πρόταση γάμου του;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Female",
+      "source": "{0} has asked you to marry her! Will you accept her offer of marriage?",
+      "translation": "Η {0} σας ζήτησε να την παντρευτείτε! Θα δεχτείτε την πρόταση γάμου της;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Male",
+      "source": "{0} has asked you to have a baby with him! Do you want to have a baby?",
+      "translation": "Ο {0} σας ζήτησε να κάνετε ένα μωρό μαζί του! Θέλετε να κάνετε μωρό;"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "0079-characters-cinema-reactions",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "40ab538e2e952e06dbdc8e0c4f5e3d0b17c7d452e5064c76db39479c3f70748d",
+    "notes": "All 25 bilingual entries read in full; two corrected prompts reread. Native cinema code supplies NPC display names. Exact Greek formatter support now covers fourteen movie reaction keys and supplies capitalized nominative subjects; 1764 native movie-reference/isolation cases and all fourteen rendered reactions passed and were read. Invitation states, ticket use, snack ordering and delivery seat/timing retained."
+  },
+  "records": [
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Rude",
+      "source": "A movie? Yeah, whatever, sounds good. See you at the theater...",
+      "translation": "Μια ταινία; Ναι, ό,τι πεις, καλή ακούγεται. Τα λέμε στον Κινηματογράφο..."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Child",
+      "source": "A movie? Yay! Let's meet up at the theater!",
+      "translation": "Μια ταινία; Γιούπι! Ας βρεθούμε στον Κινηματογράφο!"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Reject_Child",
+      "source": "I don't think I'm allowed to see this...",
+      "translation": "Δεν νομίζω ότι μου επιτρέπεται να τη δω..."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Reject",
+      "source": "Sorry, I'm not in the mood to see a movie right now...",
+      "translation": "Συγγνώμη, δεν έχω διάθεση να δω ταινία αυτή τη στιγμή..."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_NoTicket",
+      "source": "You cannot enter the theater without a ticket!",
+      "translation": "Δεν μπορείτε να μπείτε στον Κινηματογράφο χωρίς εισιτήριο!"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_CurrentlyShowing",
+      "source": "A movie is currently being screened, come back again later.",
+      "translation": "Γίνεται προβολή ταινίας αυτή τη στιγμή. Ελάτε ξανά αργότερα."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_AlreadySeen",
+      "source": "You've already seen a movie this week.",
+      "translation": "Έχετε ήδη δει ταινία αυτή την εβδομάδα."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_WatchAlonePrompt",
+      "source": "Would you like to spend your movie ticket to see a movie by yourself?",
+      "translation": "Θέλετε να χρησιμοποιήσετε το εισιτήριό σας για να δείτε ταινία χωρίς παρέα;"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_WatchWithFriendPrompt",
+      "source": "Would you like to spend your movie ticket to see a movie with {0}?",
+      "translation": "Θέλετε να χρησιμοποιήσετε το εισιτήριό σας για να δείτε ταινία με το εξής άτομο: {0};"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LeavePrompt",
+      "source": "Are you sure you want to leave the theater without seeing the movie?",
+      "translation": "Θέλετε σίγουρα να φύγετε από τον Κινηματογράφο χωρίς να δείτε την ταινία;"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ClosedFestival",
+      "source": "The movie theater is closed for the festival.",
+      "translation": "Ο Κινηματογράφος είναι κλειστός λόγω της γιορτής."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_Closed",
+      "source": "The movie theater is closed.",
+      "translation": "Ο Κινηματογράφος είναι κλειστός."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_BoxOfficeClosed",
+      "source": "The box office is empty.",
+      "translation": "Το ταμείο είναι άδειο."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_Concession",
+      "source": "Welcome to the concessions stand! Would you like to order a snack for your guest?",
+      "translation": "Καλώς ήρθατε στο κυλικείο! Θέλετε να παραγγείλετε ένα σνακ για το άτομο που καλέσατε;"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ConcessionAlone",
+      "source": "Oh, it looks like you're here by yourself. If you come here with a guest, you can order them a snack. Try it out some time!",
+      "translation": "Α, βλέπω ότι ήρθατε χωρίς παρέα. Αν έρθετε με κάποιον, μπορείτε να του παραγγείλετε ένα σνακ. Δοκιμάστε το κάποια στιγμή!"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ConcessionPurchased",
+      "source": "You wanted the {0}, right? We'll deliver it to {1}'s seat once the movie starts!",
+      "translation": "Θέλατε «{0}», σωστά; Θα το φέρουμε στο κάθισμα του ατόμου «{1}» μόλις αρχίσει η ταινία!"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ConcessionAfterMovie",
+      "source": "So, how was the movie?",
+      "translation": "Λοιπόν, πώς ήταν η ταινία;"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_AfterMovieAlone",
+      "source": "{0} is thinking silently about the film.",
+      "translation": "{0} συλλογίζεται σιωπηλά την ταινία."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_AfterMovie",
+      "source": "{0} is engaging in lively discussion about the film.",
+      "translation": "{0} κουβεντιάζει ζωηρά για την ταινία."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LoveMovie",
+      "source": "{0} is absolutely enthralled...!",
+      "translation": "{0} παρακολουθεί με απόλυτη προσήλωση...!"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LikeMovie",
+      "source": "{0} seems to be having a good time!",
+      "translation": "{0} φαίνεται να περνάει καλά!"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_DislikeMovie",
+      "source": "{0} is dozing off...",
+      "translation": "{0} αποκοιμιέται..."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LoveConcession",
+      "source": "{0} is really enjoying their {1}!",
+      "translation": "{0} απολαμβάνει πραγματικά το σνακ «{1}»!"
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LikeConcession",
+      "source": "{0} is enjoying their {1}.",
+      "translation": "{0} απολαμβάνει το σνακ «{1}»."
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_DislikeConcession",
+      "source": "{0} hasn't touched their {1} at all...",
+      "translation": "{0} δεν έχει αγγίξει καθόλου το σνακ «{1}»..."
+    }
+  ]
+}

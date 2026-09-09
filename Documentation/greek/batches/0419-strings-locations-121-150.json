@@ -1,0 +1,244 @@
+{
+  "id": "0419-strings-locations-121-150",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "533792163602093ea56cde20fb53a10ba5337d3ee69a46ac5747f05c74d52d5d",
+    "notes": "Editorial pass 1 and pass 2 complete: checked all 30 entries against the English asset; refined neutral multiplayer and spouse wording; verified ledger actions, divorce flow, Qi quest notes, arcade labels, controls, line breaks, numbers, placeholders, and glossary terms."
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_SharedWallets_CancelQuestion",
+      "source": "Cancel splitting up funds?",
+      "translation": "Να ακυρωθεί ο διαχωρισμός των χρημάτων;"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_SeparateWallets_HostQuestion",
+      "source": "It's the mayor's ledger book. What would you like to do?",
+      "translation": "Είναι το λογιστικό βιβλίο του δημάρχου. Τι θέλεις να κάνεις;",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_SendMoney",
+      "source": "Send Money",
+      "translation": "Αποστολή Χρημάτων"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_MergeWallets",
+      "source": "Merge Funds",
+      "translation": "Ενοποίηση Χρημάτων"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_CancelMerge",
+      "source": "Cancel Merging Funds",
+      "translation": "Ακύρωση Ενοποίησης Χρημάτων"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_Leave",
+      "source": "Leave",
+      "translation": "Έξοδος"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_TransferCancel",
+      "source": "Cancel",
+      "translation": "Ακύρωση"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_SeparateWallets_MergeQuestion",
+      "source": "Merge the funds of each farmer? Tonight, everyone's money will be combined. If you change your mind, come back here before night's end.",
+      "translation": "Να ενοποιηθούν τα χρήματα όλων των μελών του αγροκτήματος; Απόψε, τα χρήματα όλων θα συνδυαστούν. Αν αλλάξεις γνώμη, έλα ξανά εδώ πριν τελειώσει η νύχτα.",
+      "glossaryIds": [
+        "farmer-farmhand"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_SeparateWallets_CancelQuestion",
+      "source": "Cancel merging funds?",
+      "translation": "Να ακυρωθεί η ενοποίηση των χρημάτων;"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_SeparateWallets_TransferQuestion",
+      "source": "Who would you like to send money to?",
+      "translation": "Σε ποιο άτομο θέλεις να στείλεις χρήματα;"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LedgerBook_SeparateWallets_HowMuchQuestion",
+      "source": "How much money would you like to send?",
+      "translation": "Πόσα χρήματα θέλεις να στείλεις;"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_NoSpouse",
+      "source": "Pelican Town Marriage Log... After marriage, you may file for divorce here. Let's hope that isn't necessary!",
+      "translation": "Μητρώο Γάμων της Πόλης Πέλικαν... Μετά τον γάμο, μπορείς να καταθέσεις εδώ αίτηση διαζυγίου. Ας ελπίσουμε να μη χρειαστεί!",
+      "glossaryIds": [
+        "pelican-town",
+        "divorce"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_Question",
+      "source": "File for divorce? There is a 50,000g fee.",
+      "translation": "Να καταθέσεις αίτηση διαζυγίου; Υπάρχει χρέωση 50.000g.",
+      "glossaryIds": [
+        "divorce"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_CancelQuestion",
+      "source": "Cancel your divorce?",
+      "translation": "Να ακυρώσεις το διαζύγιό σου;",
+      "glossaryIds": [
+        "divorce"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_Cancelled",
+      "source": "Your divorce request has been cancelled.",
+      "translation": "Η αίτηση διαζυγίου σου ακυρώθηκε.",
+      "glossaryIds": [
+        "divorce"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_Filed",
+      "source": "Your divorce papers have been filed, but your spouse won't know until tomorrow morning. If you change your mind, come back here before night's end.",
+      "translation": "Τα έγγραφα του διαζυγίου σου κατατέθηκαν, αλλά το ταίρι σου δεν θα το μάθει μέχρι αύριο το πρωί. Αν αλλάξεις γνώμη, έλα ξανά εδώ πριν τελειώσει η νύχτα.",
+      "glossaryIds": [
+        "divorce"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_MayorFridge_Initial",
+      "source": "It's the mayor's fridge. It's mostly full of milk and iced tea.",
+      "translation": "Είναι το ψυγείο του δημάρχου. Είναι κυρίως γεμάτο γάλα και παγωμένο τσάι.",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_MayorFridge_ConsumeBeets",
+      "source": "You quickly place the beets in the fridge. Wait a sec... there's a note taped to the milk. It's addressed to you:",
+      "translation": "Βάζεις γρήγορα τα παντζάρια στο ψυγείο. Μια στιγμή... υπάρχει ένα σημείωμα κολλημένο στο γάλα. Απευθύνεται σε σένα:"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_MayorFridge_MrQiNote",
+      "source": "'Good job, kid. Your final task: Give the sand dragon his last meal. -Mr. Qi'",
+      "translation": "«Μπράβο, παιδί μου. Η τελευταία σου δοκιμασία: Δώσε στον δράκο της ερήμου το τελευταίο του γεύμα. -κ. Τσι»",
+      "glossaryIds": [
+        "mr-qi"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Tunnel_TunnelSafe_Initial",
+      "source": "It's a battery powered lock-box. Unfortunately, there's no battery in it.",
+      "translation": "Είναι ένα κουτί ασφαλείας που λειτουργεί με μπαταρία. Δυστυχώς, δεν έχει μπαταρία μέσα."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Tunnel_TunnelSafe_ConsumeBattery",
+      "source": "It worked! The lock-box swings open. Inside, there's a note:",
+      "translation": "Έπιασε! Το κουτί ασφαλείας ανοίγει διάπλατα. Μέσα υπάρχει ένα σημείωμα:"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Tunnel_TunnelSafe_MrQiNote",
+      "source": "'Your first task: Bring a rainbow shell to the train platform. Leave it in the box. -Mr. Qi'",
+      "translation": "«Η πρώτη σου δοκιμασία: Φέρε ένα Κοχύλι Ουράνιου Τόξου στην αποβάθρα του τρένου. Άφησέ το στο κουτί. -κ. Τσι»",
+      "glossaryIds": [
+        "mr-qi"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "SkullCave_SkullDoor_Locked",
+      "source": "The door is locked.",
+      "translation": "Η πόρτα είναι κλειδωμένη."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "SkullCave_SkullDoor_Unlock",
+      "source": "You insert the skull key into the keyhole. It's a perfect fit!",
+      "translation": "Βάζεις το Κλειδί Κρανίου στην κλειδαρότρυπα. Ταιριάζει τέλεια!",
+      "glossaryIds": [
+        "skull-key",
+        "skull-cavern"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FarmHouse_Crib_NewbornSleeping",
+      "source": "{0} is sleeping.",
+      "translation": "Το μωρό {0} κοιμάται."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Farm_GreenhouseRuins",
+      "source": "Whatever this once was, it's now in ruins.",
+      "translation": "Ό,τι κι αν ήταν κάποτε, τώρα είναι ερείπια.",
+      "glossaryIds": [
+        "greenhouse"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Saloon_Arcade_Minecart_Menu",
+      "source": "= Junimo Kart =",
+      "translation": "= Καρτ Τζουνίμο =",
+      "glossaryIds": [
+        "junimo-kart"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Saloon_Arcade_Minecart_ProgressMode",
+      "source": "Progress Mode",
+      "translation": "Λειτουργία Προόδου",
+      "glossaryIds": [
+        "junimo-kart"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Saloon_Arcade_Minecart_EndlessMode",
+      "source": "Endless Mode",
+      "translation": "Ατελείωτη Λειτουργία",
+      "glossaryIds": [
+        "junimo-kart"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Saloon_Arcade_Minecart_Exit",
+      "source": "Exit",
+      "translation": "Έξοδος",
+      "glossaryIds": [
+        "junimo-kart"
+      ]
+    }
+  ]
+}

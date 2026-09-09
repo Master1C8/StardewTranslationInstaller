@@ -210,6 +210,15 @@ const languages = [
       { target: "Fonts/Thai_0", file: "assets/fonts/thai/Thai_0.xnb" },
     ],
   },
+  {
+    directory: "greek",
+    suffix: "Greek",
+    code: "el-vnrevival",
+    buttonTarget: "ButtonGreek",
+    button: "assets/button-greek.png",
+    title: "assets/title/TitleButtons-greek.png",
+    fonts: "assets/fonts/greek",
+  },
 ];
 
 const entries = {};
@@ -277,6 +286,7 @@ for (const language of languages) {
 for (const language of languages) {
   const directory = path.join(payload, "assets/translations", language.directory);
   for (const file of listJSONFiles(directory).sort()) {
+    if (language.directory === "greek" && file === "grammar-data.json") continue;
     changes.push({ Action: "Include", FromFile: `assets/translations/${language.directory}/${file}` });
   }
 }

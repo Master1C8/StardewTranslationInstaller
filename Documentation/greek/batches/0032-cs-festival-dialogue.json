@@ -1,0 +1,298 @@
+{
+  "id": "0032-cs-festival-dialogue",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "a66a846abf1de16242fbb9cce077cd31e98309ef2f36c8a67caf73427656744a",
+    "notes": "All 41 bilingual entries read completely; readiness and crystal-ball image corrected and reread. All reward ranks, scores, currency amounts, response IDs, emotion codes retained. Generic dance partnership avoids speaker/player gender assumptions; spouse dear uses αγάπη μου. Canonical Luau, Governor, Mayor Lewis, Flower Dance, Slingshot and Star Token applied. Native dance response substitutes displayName, retained as a standalone name label."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1504",
+      "source": "It's nothing fancy, but it's the best I could afford.",
+      "translation": "Δεν είναι τίποτα πολυτελές, αλλά ήταν ό,τι καλύτερο μπορούσα να αγοράσω."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1514",
+      "source": "Time: {0}",
+      "translation": "Χρόνος: {0}"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1515",
+      "source": "Eggs: {0}",
+      "translation": "Αυγά: {0}"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1521",
+      "source": "$q -1 null#Do you think everyone's ready for the egg hunt yet?#$r -1 0 yes#Yes, let's start.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Λες να είναι πια όλοι έτοιμοι για το κυνήγι των αυγών;#$r -1 0 yes#Ναι, ας αρχίσουμε.#$r -1 0 no#Όχι ακόμα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1524",
+      "source": "$q -1 null#Well, should we start the dance now?#$r -1 0 yes#Yes, let's start.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Λοιπόν, να ξεκινήσουμε τον χορό τώρα;#$r -1 0 yes#Ναι, ας αρχίσουμε.#$r -1 0 no#Όχι ακόμα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1527",
+      "source": "$q -1 null#Should we move forward with the Luau? The governor seems a little hungry.#$r -1 0 yes#Yes, let's start.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Να προχωρήσουμε με το Λουάου; Ο Κυβερνήτης φαίνεται να πεινάει λιγάκι.#$r -1 0 yes#Ναι, ας αρχίσουμε.#$r -1 0 no#Όχι ακόμα.",
+      "glossaryIds": [
+        "luau",
+        "governor"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1531",
+      "source": "$q -1 null#What do you think... should I launch the boat now?#$r -1 0 yes#Yes.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Τι λες... να ρίξω τη βάρκα στο νερό τώρα;#$r -1 0 yes#Ναι.#$r -1 0 no#Όχι ακόμα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1535",
+      "source": "$q -1 null#Oh... are you already finished setting up your grange display?#$r -1 0 yes#Yes.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Α... τελείωσες κιόλας με το στήσιμο της έκθεσης των προϊόντων σου;#$r -1 0 yes#Ναι.#$r -1 0 no#Όχι ακόμα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1548",
+      "source": "$q -1 null#Are you ready to participate in the ice fishing competition?#$r -1 0 yes#Yes.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Έχεις ετοιμαστεί για να πάρεις μέρος στον διαγωνισμό ψαρέματος στον πάγο;#$r -1 0 yes#Ναι.#$r -1 0 no#Όχι ακόμα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1584",
+      "source": "Your grange display has been judged. Return to Mayor Lewis for the result!",
+      "translation": "Η έκθεση των προϊόντων σας αξιολογήθηκε. Επιστρέψτε στον Δήμαρχο Λιούις για το αποτέλεσμα!",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1632",
+      "source": "Of course I'll dance with you!$h",
+      "translation": "Φυσικά και θα χορέψω μαζί σου!$h"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1633",
+      "source": "You want to be my partner for the flower dance?#$b#Okay. I look forward to it.$h",
+      "translation": "Θέλεις να χορέψουμε μαζί στον Χορό των Λουλουδιών;#$b#Εντάξει. Ανυπομονώ.$h",
+      "glossaryIds": [
+        "flower-dance"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1634",
+      "source": "You want to be my partner for the flower dance?#$b#Okay! I'd love to.$h",
+      "translation": "Θέλεις να χορέψουμε μαζί στον Χορό των Λουλουδιών;#$b#Εντάξει! Με μεγάλη μου χαρά.$h",
+      "glossaryIds": [
+        "flower-dance"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1635",
+      "source": "I'm sorry... I already have a partner.",
+      "translation": "Λυπάμαι... έχω ήδη κανονίσει με ποιο άτομο θα χορέψω."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1645",
+      "source": "Orange",
+      "translation": "Πορτοκαλί"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1647",
+      "source": "Green",
+      "translation": "Πράσινο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1650",
+      "source": "I don't want to play",
+      "translation": "Δεν θέλω να παίξω"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1652",
+      "source": "Step right up! Pick a color and place your bet for a chance to double your wager!",
+      "translation": "Πλησιάστε! Διαλέξτε χρώμα και βάλτε το στοίχημά σας για μια ευκαιρία να διπλασιάσετε το ποντάρισμά σας!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1654",
+      "source": "Buy",
+      "translation": "Αγορά"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1656",
+      "source": "Leave",
+      "translation": "Αποχώρηση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1659",
+      "source": "Selling Star Tokens for just 50g a piece!",
+      "translation": "Πουλάμε Αστερομάρκες με μόλις 50g τη μία!",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1662",
+      "source": "Play (50g)",
+      "translation": "Παίξτε (50g)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1663",
+      "source": "Leave",
+      "translation": "Αποχώρηση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1666",
+      "source": "Play the slingshot game and win star tokens!",
+      "translation": "Παίξτε το παιχνίδι με τη σφεντόνα και κερδίστε αστερομάρκες!",
+      "glossaryIds": [
+        "star-token",
+        "slingshot"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1672",
+      "source": "Trade in your star tokens for prizes?",
+      "translation": "Θέλετε να ανταλλάξετε τις αστερομάρκες σας με βραβεία;",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1681",
+      "source": "Try your hand at some fishing? You could win big.",
+      "translation": "Θέλετε να δοκιμάσετε την τύχη σας στο ψάρεμα; Μπορεί να κερδίσετε πολλά."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1684",
+      "source": "Please stand at the red arrow.",
+      "translation": "Παρακαλώ σταθείτε στο κόκκινο βέλος."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1688",
+      "source": "Read my fortune (100g)",
+      "translation": "Πες μου τη μοίρα μου (100g)"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1690",
+      "source": "No Thanks",
+      "translation": "Όχι, ευχαριστώ"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1691",
+      "source": "Ah, yes... my crystal ball is swirling with visions of your future, young one.",
+      "translation": "Α, ναι... στην κρυστάλλινη σφαίρα μου στροβιλίζονται οράματα του μέλλοντός σου, παιδί μου."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1694",
+      "source": "I've already read your fortune... go away.",
+      "translation": "Σου είπα ήδη τη μοίρα σου... φύγε."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1695",
+      "source": "You don't have enough money to pay my fee... What a shame.",
+      "translation": "Δεν έχεις αρκετά χρήματα για την αμοιβή μου... Τι κρίμα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1714",
+      "source": "Out of Stock.",
+      "translation": "Εξαντλήθηκε."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1719",
+      "source": "Select an ingredient to add.",
+      "translation": "Επιλέξτε ένα υλικό για προσθήκη."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1723",
+      "source": "Congratulations! You won 1st place with a rating of {0}!#$b#Your prize is 1000 star tokens! Spend them wisely.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Συγχαρητήρια! Κέρδισες την 1η θέση με βαθμολογία {0}!#$b#Το βραβείο σου είναι 1000 αστερομάρκες! Ξόδεψέ τες συνετά.$h#$b#Α, και μην ξεχάσεις να αδειάσεις το κιβώτιο με τα προϊόντα που εξέθεσες.",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1726",
+      "source": "Hey, not bad! You won 2nd place with a rating of {0}.#$b#Your prize is 500 star tokens! Spend them wisely.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Ε, καθόλου άσχημα! Κέρδισες τη 2η θέση με βαθμολογία {0}.#$b#Το βραβείο σου είναι 500 αστερομάρκες! Ξόδεψέ τες συνετά.$h#$b#Α, και μην ξεχάσεις να αδειάσεις το κιβώτιο με τα προϊόντα που εξέθεσες.",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1729",
+      "source": "Hi there, @. It looks like you won 3rd place with a rating of {0}.#$b#Your prize is 200 star tokens! Spend them wisely.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Γεια σου, @. Φαίνεται πως κέρδισες την 3η θέση με βαθμολογία {0}.#$b#Το βραβείο σου είναι 200 αστερομάρκες! Ξόδεψέ τες συνετά.$h#$b#Α, και μην ξεχάσεις να αδειάσεις το κιβώτιο με τα προϊόντα που εξέθεσες.",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1730",
+      "source": "You!!! Was that some kind of sick prank?! Those are very private!$4#$b#Here, take 750 star tokens and don't tell a soul.$3#$b#Now go clean up your box and bring me my... item... tomorrow.$3",
+      "translation": "Εσύ!!! Ήταν αυτό κάποιο αρρωστημένο αστείο;! Αυτά είναι πολύ προσωπικά!$4#$b#Ορίστε, πάρε 750 αστερομάρκες και μην πεις λέξη σε κανέναν.$3#$b#Τώρα πήγαινε να αδειάσεις το κιβώτιό σου και φέρε μου το... αντικείμενό μου... αύριο.$3",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1732",
+      "source": "Hi there, @. You got 4th place with a score of {0}.#$b#Your reward for participating is 50 star tokens. Hey, maybe you'll do better next year.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Γεια σου, @. Πήρες την 4η θέση με βαθμολογία {0}.#$b#Η ανταμοιβή σου για τη συμμετοχή είναι 50 αστερομάρκες. Ε, ίσως του χρόνου τα πας καλύτερα.$h#$b#Α, και μην ξεχάσεις να αδειάσεις το κιβώτιο με τα προϊόντα που εξέθεσες.",
+      "glossaryIds": [
+        "star-token"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1736",
+      "source": "$q -1 null#...Yes, dear?#$r -1 0 danceAsk#(Ask {0} to be your dance partner)#$r -1 0 null#Never mind...",
+      "translation": "$q -1 null#...Ναι, αγάπη μου;#$r -1 0 danceAsk#(Πρόταση για χορό — {0})#$r -1 0 null#Άσε, τίποτα..."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1738",
+      "source": "$q -1 null#...Yes?#$r -1 0 danceAsk#(Ask {0} to be your dance partner)#$r -1 0 null#Never mind...",
+      "translation": "$q -1 null#...Ναι;#$r -1 0 danceAsk#(Πρόταση για χορό — {0})#$r -1 0 null#Άσε, τίποτα..."
+    }
+  ]
+}

@@ -79,7 +79,7 @@ struct InstallerCoreTests {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "sr-vnrevival", "pl-vnrevival", "uk-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "nl-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "sr-vnrevival", "pl-vnrevival", "uk-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "nl-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival", "el-vnrevival"])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales == [
             "zh", "en", "ru", "es", "pt-BR", "ja", "de", "ko", "fr", "tr", "pl", "zh-TW",
@@ -104,7 +104,7 @@ struct InstallerCoreTests {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 17)
+        expect(languageEntries.count == 18)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "sr-vnrevival": ("ButtonSerbian", "assets/button-serbian.png", "assets/title/TitleButtons-serbian.png"),
@@ -123,6 +123,7 @@ struct InstallerCoreTests {
             "he-vnrevival": ("ButtonHebrew", "assets/button-hebrew.png", "assets/title/TitleButtons-hebrew.png"),
             "bg-vnrevival": ("ButtonBulgarian", "assets/button-bulgarian.png", "assets/title/TitleButtons-bulgarian.png"),
             "th-vnrevival": ("ButtonThai", "assets/button-thai.png", "assets/title/TitleButtons-thai.png"),
+            "el-vnrevival": ("ButtonGreek", "assets/button-greek.png", "assets/title/TitleButtons-greek.png"),
         ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
@@ -188,6 +189,7 @@ struct InstallerCoreTests {
             ("he-vnrevival", "hebrew"),
             ("bg-vnrevival", "bulgarian"),
             ("th-vnrevival", "thai"),
+            ("el-vnrevival", "greek"),
         ] {
           for target in ["Fonts/SpriteFont1", "Fonts/SmallFont"] {
             let font = try require(changes.first {
@@ -455,6 +457,29 @@ struct InstallerCoreTests {
             ) == "6a9c3877950f84e4cd260d1347a042e0576dc33762acc73ac1e01bda13bd0ea8"
         )
 
+        let greekFontHashes = [
+            "assets/fonts/greek/SpriteFont1.xnb": "247798383dfa9b9d2bce83ae1cdc4d942afbd3c1e83c4b94ba2ebb2172a3c000",
+            "assets/fonts/greek/SmallFont.xnb": "83b9c73b735a0250318326c7f5b65b99accfbd262ec07552ce8b9133178a8f20",
+        ]
+        for (fontPath, expectedHash) in greekFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+        try expect(try pngDimensions("assets/button-greek.png") == (174, 78))
+        try expect(try pngDimensions("assets/title/TitleButtons-greek.png") == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/button-greek.png")
+            ) == "7179ce8375733d0064bce58dca08799ace3a1f002e838f78d55cdb161648ad5a"
+        )
+        try expect(
+            try DependencyInstaller.sha256(
+                of: payload.appendingPathComponent("assets/title/TitleButtons-greek.png")
+            ) == "ec8697fd82a9c6430aec0e3353d6f1bf58378c69a2e1da87be3b0754fac901d0"
+        )
+
         let retiredLanguages = [
             "uzbek", "amharic", "kannada", "malayalam", "marathi",
             "burmese", "telugu", "urdu", "tamil", "bengali",
@@ -537,7 +562,7 @@ struct InstallerCoreTests {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 4_043)
+        expect(includes.count == 4_233)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var hindiPrivateUseGlyphs = 0
@@ -590,12 +615,15 @@ struct InstallerCoreTests {
                 expectedLanguage = "bg-vnrevival"
             } else if relativePath.contains("/thai/") {
                 expectedLanguage = "th-vnrevival"
+            } else if relativePath.contains("/greek/") {
+                expectedLanguage = "el-vnrevival"
             } else {
                 throw RequiredValueMissing()
             }
             for change in secondaryChanges {
                 let condition = try require(change["When"] as? [String: String])
-                expect(condition == ["Language": expectedLanguage])
+                expect(condition["Language"] == expectedLanguage)
+                expect(Set(condition.keys).isSubset(of: ["Language", "PlayerGender"]))
                 if expectedLanguage == "hi-vnrevival" {
                     let entries = try require(change["Entries"] as? [String: String])
                     for value in entries.values {

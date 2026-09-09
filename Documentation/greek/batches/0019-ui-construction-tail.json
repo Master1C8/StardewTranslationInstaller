@@ -1,0 +1,27 @@
+{
+  "id": "0019-ui-construction-tail",
+  "kind": "short",
+  "sizeReason": "The final two UI records form one narrowly scoped runtime-article integration unit; reviewed with a native Harmony probe.",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "7935fbeb94b819f9d14418f160e9aad97885f9b24c33d230bb770f47e8b41978",
+    "notes": "Both source/Greek pairs read in full, then magical summoning phrasing corrected and re-read. Exact Greek runtime prefix removes the native English article; explicit κτίριο τύπου carries grammatical inflection and preserves arbitrary building display names. Native functional probe is the required integration gate."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BuildingBuild",
+      "source": "{0} has requested construction of {1} {2}!",
+      "translation": "{0} ζήτησε την κατασκευή ενός {1}κτιρίου τύπου «{2}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BuildingMagicBuild",
+      "source": "{0} has summoned {1} {2}!",
+      "translation": "{0} έφερε με μαγεία ένα {1}κτίριο τύπου «{2}»!"
+    }
+  ]
+}

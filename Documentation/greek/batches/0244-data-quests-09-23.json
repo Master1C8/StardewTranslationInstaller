@@ -1,0 +1,156 @@
+{
+  "id": "0244-data-quests-09-23",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "271e367a59c887e176381726a880a1c19be0bc1c2664a9aa508b626e20a839b5",
+    "notes": "Checked all 15 quest definitions twice against authoritative English source. Preserved quest types, target metadata, location IDs, reward values, booleans, punctuation-only objective fields, numeric forms, and slash structure exactly. Titles, descriptions, and objectives received two editorial passes for concise quest-log Greek, gender-neutral player references, consistent imperatives, and current glossary terms for the Mines, Furnace, Clint, Willy, Marlon, Slimes, Adventurer's Guild, Skull Key, Skull Cavern, Marnie, Jodi, Gunther, farm, artifacts, and minerals."
+  },
+  "records": [
+    {
+      "target": "Data/Quests",
+      "key": "9",
+      "source": "Social/Introductions/It would be a nice gesture to introduce yourself around town. Some people might be anxious to meet the new farmer././null/25/0/-1/true",
+      "translation": "Social/Συστάσεις/Θα ήταν μια όμορφη κίνηση να συστηθείς στους κατοίκους της πόλης. Μερικοί ίσως ανυπομονούν να σε γνωρίσουν././null/25/0/-1/true"
+    },
+    {
+      "target": "Data/Quests",
+      "key": "10",
+      "source": "Basic/Copper Ore/You found a piece of copper ore. You're not sure what you can use it for, but the local blacksmith ought to know./Bring a piece of copper ore to Clint's blacksmith shop././-1/0/-1/false",
+      "translation": "Basic/Μετάλλευμα Χαλκού/Βρήκες ένα κομμάτι μεταλλεύματος χαλκού. Δεν ξέρεις σε τι μπορεί να χρησιμεύει, αλλά ο ντόπιος σιδηρουργός λογικά θα ξέρει./Πήγαινε ένα κομμάτι μεταλλεύματος χαλκού στο σιδηρουργείο του Κλιντ././-1/0/-1/false",
+      "glossaryIds": [
+        "clint"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "11",
+      "source": "Crafting/Forging Ahead/If you're going to keep mining, you should build a furnace./Craft a Furnace./(BC)13/12/0/-1/true",
+      "translation": "Crafting/Σφυρηλατώντας το μέλλον/Αν σκοπεύεις να συνεχίσεις την εξόρυξη, πρέπει να κατασκευάσεις ένα Καμίνι./Κατασκεύασε ένα Καμίνι./(BC)13/12/0/-1/true",
+      "glossaryIds": [
+        "furnace"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "12",
+      "source": "ItemHarvest/Smelting/Now that you've built a furnace, you can smelt some metal. According to Clint's instructions, if you place 5 copper ore and 1 piece of coal in the furnace, it should produce a copper bar./Use your furnace to smelt a Copper Bar./(O)334 1/-1/0/-1/true",
+      "translation": "ItemHarvest/Τήξη/Τώρα που κατασκεύασες ένα Καμίνι, μπορείς να λιώσεις μέταλλα. Σύμφωνα με τις οδηγίες του Κλιντ, αν βάλεις 5 κομμάτια μεταλλεύματος χαλκού και 1 κομμάτι κάρβουνο στο Καμίνι, θα πρέπει να παραχθεί μια Ράβδος Χαλκού./Χρησιμοποίησε το Καμίνι σου για να παράγεις μια Ράβδο Χαλκού./(O)334 1/-1/0/-1/true",
+      "glossaryIds": [
+        "furnace",
+        "clint"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "13",
+      "source": "Basic/To The Beach/Someone named Willy invited you to visit the beach south of town. He says he has something to give you./Visit the beach south of town before 5:00pm./-1/-1/0/-1/true",
+      "translation": "Basic/Στην Παραλία/Κάποιος που λέγεται Γουίλι σε κάλεσε στην παραλία νότια της πόλης. Λέει πως έχει κάτι να σου δώσει./Πήγαινε στην παραλία νότια της πόλης πριν από τις 5:00 μ.μ./-1/-1/0/-1/true",
+      "glossaryIds": [
+        "willy"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "14",
+      "source": "Basic/Explore The Mine/There's an old mine shaft in the mountains north of town. There could be valuable minerals inside, but Marlon hinted that it might be dangerous./Reach level 5 in the mines./17/17/0/-1/false",
+      "translation": "Basic/Εξερεύνησε το Ορυχείο/Υπάρχει ένα παλιό φρέαρ ορυχείου στα βουνά βόρεια της πόλης. Ίσως κρύβει πολύτιμα ορυκτά, αλλά ο Μάρλον άφησε να εννοηθεί πως μπορεί να είναι επικίνδυνο./Φτάσε στο επίπεδο 5 στα Ορυχεία./17/17/0/-1/false",
+      "glossaryIds": [
+        "the-mines",
+        "marlon"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "15",
+      "source": "Monster/Initiation/If you can slay 10 slimes, you'll have earned your place in the Adventurer's Guild./0 of 10 slimes slain./Green_Slime 10 null false/16/0/-1/false",
+      "translation": "Monster/Μύηση/Αν εξοντώσεις 10 Γλίτσες, θα έχεις κερδίσει τη θέση σου στη Συντεχνία Τυχοδιωκτών./Εξοντώθηκαν 0 από 10 Γλίτσες./Green_Slime 10 null false/16/0/-1/false",
+      "glossaryIds": [
+        "slime-monster",
+        "adventurers-guild"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "16",
+      "source": "Location/Initiation/You successfully dispatched 10 slimes. Now you can enter the Adventurer's Guild./Enter the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
+      "translation": "Location/Μύηση/Εξόντωσες με επιτυχία 10 Γλίτσες. Τώρα μπορείς να μπεις στη Συντεχνία Τυχοδιωκτών./Μπες στη Συντεχνία Τυχοδιωκτών./AdventureGuild/-1/0/-1/false",
+      "glossaryIds": [
+        "slime-monster",
+        "adventurers-guild"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "17",
+      "source": "Basic/Deeper In The Mine/It seems that the mine elevator is still functional. It will allow you to quickly return to any elevator doors you've discovered. A deeper expedition might be in order./Reach level 40 in the mines./18/18/0/-1/false",
+      "translation": "Basic/Βαθύτερα στο Ορυχείο/Φαίνεται πως ο ανελκυστήρας του ορυχείου λειτουργεί ακόμα. Θα σου επιτρέπει να επιστρέφεις γρήγορα σε κάθε πόρτα ανελκυστήρα που έχεις ανακαλύψει. Ίσως χρειάζεται μια βαθύτερη εξερεύνηση./Φτάσε στο επίπεδο 40 στα Ορυχεία./18/18/0/-1/false",
+      "glossaryIds": [
+        "the-mines",
+        "mine-elevator"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "18",
+      "source": "Basic/To The Bottom?/So far, there's no sign of the bottom. How low does it go?/Reach the bottom of the mine./-1/-1/0/-1/false",
+      "translation": "Basic/Ως τον Πάτο;/Μέχρι στιγμής, δεν υπάρχει κανένα ίχνος του πάτου. Πόσο βαθιά φτάνει;/Φτάσε στον πάτο του ορυχείου./-1/-1/0/-1/false",
+      "glossaryIds": [
+        "the-mines"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "19",
+      "source": "Basic/The Skull Key/You found a strange looking key in the bottom of the mines./Discover the purpose of the Skull Key./-1/-1/0/-1/false",
+      "translation": "Basic/Το Κλειδί Κρανίου/Βρήκες ένα παράξενο κλειδί στον πάτο των Ορυχείων./Ανακάλυψε σε τι χρησιμεύει το Κλειδί Κρανίου./-1/-1/0/-1/false",
+      "glossaryIds": [
+        "skull-key",
+        "the-mines"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "20",
+      "source": "Basic/Qi's Challenge/You've been challenged to reach level 25 in the skull cavern. You've been promised a substantial reward if you're successful./Reach level 25 in the Skull Cavern./-1/-1/0/-1/false",
+      "translation": "Basic/Η Πρόκληση του Τσι/Η πρόκληση είναι να φτάσεις στο επίπεδο 25 στο Σπήλαιο του Κρανίου. Αν τα καταφέρεις, σε περιμένει μια γενναιόδωρη ανταμοιβή./Φτάσε στο επίπεδο 25 στο Σπήλαιο του Κρανίου./-1/-1/0/-1/false",
+      "glossaryIds": [
+        "mr-qi",
+        "skull-cavern"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "21",
+      "source": "Basic/Marnie's Request/Marnie came by the farm and asked if you'd bring her a cave carrot. She's trying to train her goats to speak, and cave carrot is their favorite snack./Bring a Cave Carrot into Marnie's shop./-1/-1/0/-1/true",
+      "translation": "Basic/Το Αίτημα της Μάρνι/Η Μάρνι πέρασε από το αγρόκτημα και σου ζήτησε να της φέρεις ένα Καρότο Σπηλαίου. Προσπαθεί να μάθει στις κατσίκες της να μιλούν και τα Καρότα Σπηλαίου είναι το αγαπημένο τους σνακ./Πήγαινε ένα Καρότο Σπηλαίου στο κατάστημα της Μάρνι./-1/-1/0/-1/true",
+      "glossaryIds": [
+        "marnie",
+        "farm"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "22",
+      "source": "Basic/Fish Casserole/Jodi swung by the farm to ask you to dinner at 7:00 PM. Her only request was that you bring a largemouth bass for her fish casserole./Enter Jodi's house with a largemouth bass at 7:00 PM./-1/-1/0/-1/true",
+      "translation": "Basic/Ψαρόπιτα/Η Τζόντι πέρασε από το αγρόκτημα και σε κάλεσε για δείπνο στις 7:00 μ.μ. Το μόνο που ζήτησε ήταν να φέρεις ένα Μεγαλόστομο Λαβράκι για την ψαρόπιτά της./Μπες στο σπίτι της Τζόντι με ένα Μεγαλόστομο Λαβράκι στις 7:00 μ.μ./-1/-1/0/-1/true",
+      "glossaryIds": [
+        "jodi",
+        "farm"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "23",
+      "source": "Location/Archaeology/You found an ancient-looking object. Could it be some kind of artifact from long ago? Perhaps Gunther, curator of the local museum, has the answer./Visit Gunther at the museum./ArchaeologyHouse/-1/0/-1/true",
+      "translation": "Location/Αρχαιολογία/Βρήκες ένα αντικείμενο που μοιάζει αρχαίο. Μήπως είναι κάποιο τεχνούργημα από τα παλιά; Ίσως ο Γκάνθερ, ο επιμελητής του τοπικού μουσείου, ξέρει την απάντηση./Επισκέψου τον Γκάνθερ στο μουσείο./ArchaeologyHouse/-1/0/-1/true",
+      "glossaryIds": [
+        "artifact-mineral",
+        "gunther"
+      ]
+    }
+  ]
+}

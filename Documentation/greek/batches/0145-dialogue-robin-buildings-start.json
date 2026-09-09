@@ -1,0 +1,244 @@
+{
+  "id": "0145-dialogue-robin-buildings-start",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "3dd0fae7b743af1775696e8db1e824c26faec1b2864214521cefb3825ec490f3",
+    "notes": "Full all-entry editorial review: restored the introduction’s already/yet nuance, naturalized Willy’s time-honored-tradition phrase and supplied an exact player-gender satisfaction override; verified Robin’s practical builder voice, woodcutting book joke, Green Rain family conflict, Sebastian/Maru farm placeholder, all canonical building names, character names, controls, and source fidelity."
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "Introduction",
+      "source": "Have you met everyone in town yet? That sounds exhausting.",
+      "translation": "Έχεις γνωρίσει ήδη τους πάντες στην πόλη; Ακούγεται εξαντλητικό."
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "Resort",
+      "source": "Wow, look at these structures!$h#$b#I can tell they were made by a master builder. I'm really impressed!",
+      "translation": "Ουάου, κοίτα αυτές τις κατασκευές!$h#$b#Φαίνεται ότι τις έφτιαξε αρχιμάστορας. Έχω εντυπωσιαστεί πραγματικά!"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "AcceptGift_(O)StardropTea",
+      "source": "Wait a sec... you're giving me this? What a special treat! Thank you.",
+      "translation": "Για στάσου... Μου το δίνεις αυτό; Τι ξεχωριστή λιχουδιά! Σ' ευχαριστώ."
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "AcceptGift_(O)Book_Woodcutting",
+      "source": "What's this... 'Woody's Secret'? ... Um, what kind of book is this, @?$6#$b#Oh, it's about woodcutting! Hahaha... Oh yeah, I'm going to love this. Thanks!$4",
+      "translation": "Τι είναι αυτό... «Το Μυστικό του Γούντι»; ... Εμ, τι είδους βιβλίο είναι αυτό, @;$6#$b#Α, είναι για την ξυλοκοπία! Χα χα χα... Ναι, θα το λατρέψω. Ευχαριστώ!$4"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "AcceptGift_(O)SkillBook_2",
+      "source": "Ah, 'Woodcutter's Weekly'... I was hoping to get my hands on the newest issue! They've got all the latest techniques in here!#$b#From one woodcutter to another... Thank you.$h",
+      "translation": "Α, «Η Εβδομαδιαία του Ξυλοκόπου»... Ήλπιζα να βρω το πιο πρόσφατο τεύχος! Εδώ έχει όλες τις νεότερες τεχνικές!#$b#Από ξυλοκόπο σε ξυλοκόπο... Σ' ευχαριστώ.$h"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "GreenRain",
+      "source": "That man is insane! Why does he have to go out there? We have no idea if this rain is dangerous!$u%noturn",
+      "translation": "Αυτός ο άνθρωπος είναι τρελός! Γιατί πρέπει να βγει εκεί έξω; Δεν έχουμε ιδέα αν αυτή η βροχή είναι επικίνδυνη!$u%noturn"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "GreenRainFinished",
+      "source": "I hope Demetrius is happy with the 'samples' he collected. Seems like his little science project is more important to him than his own wife. Hmmph.$6",
+      "translation": "Ελπίζω ο Ντιμίτριους να είναι ευχαριστημένος με τα «δείγματα» που μάζεψε. Φαίνεται ότι το μικρό επιστημονικό του έργο είναι πιο σημαντικό γι' αυτόν από την ίδια του τη γυναίκα. Χμφ.$6",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "GreenRain_2",
+      "source": "There's all kinds of good wood out there today. Better get chopping, huh?",
+      "translation": "Υπάρχουν κάθε λογής καλά ξύλα εκεί έξω σήμερα. Καλύτερα να αρχίσεις να κόβεις, ε;"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "divorced_Sebastian",
+      "source": "Sebastian's back in the basement... what happened between you two?$s",
+      "translation": "Ο Σεμπάστιαν γύρισε στο υπόγειο... Τι συνέβη μεταξύ σας;$s",
+      "glossaryIds": [
+        "sebastian"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "divorced_Maru",
+      "source": "Maru was crying through the night... We're all devastated...$s",
+      "translation": "Η Μαρού έκλαιγε όλη τη νύχτα... Είμαστε όλοι συντετριμμένοι...$s",
+      "glossaryIds": [
+        "maru"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "married_Sebastian",
+      "source": "Oh, don't worry... these are tears of joy. I know Sebastian will be very happy on %farm Farm!$h",
+      "translation": "Α, μην ανησυχείς... Είναι δάκρυα χαράς. Ξέρω ότι ο Σεμπάστιαν θα είναι πολύ ευτυχισμένος στο αγρόκτημα %farm!$h",
+      "glossaryIds": [
+        "sebastian"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "married_Maru",
+      "source": "We'll all miss having Maru around the house, but I'm sure we'll still see her often!",
+      "translation": "Θα μας λείψει σε όλους η Μαρού στο σπίτι, αλλά είμαι σίγουρη ότι θα συνεχίσουμε να τη βλέπουμε συχνά!",
+      "glossaryIds": [
+        "maru"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "houseUpgrade_1",
+      "source": "It was fun working on your house. That might be some of the finest construction I've ever done!$h#$e#I hope you're enjoying the new kitchen.",
+      "translation": "Ήταν διασκεδαστικό να δουλεύω στο σπίτι σου. Ίσως είναι μια από τις καλύτερες κατασκευές που έχω κάνει ποτέ!$h#$e#Ελπίζω να απολαμβάνεις την καινούρια κουζίνα."
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "houseUpgrade_2",
+      "source": "What are you going to do with all that new space in your house?#$e#Or perhaps I should call it... your 'mansion'?$h",
+      "translation": "Τι θα κάνεις με όλον αυτόν τον καινούριο χώρο στο σπίτι σου;#$e#Ή μήπως θα έπρεπε να το αποκαλώ... «έπαυλή» σου;$h"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "houseUpgrade_3",
+      "source": "So, are you getting into the aged wine business? I've heard it's very lucrative... if you have the patience.",
+      "translation": "Λοιπόν, μπαίνεις στην επιχείρηση παλαίωσης κρασιού; Έχω ακούσει ότι είναι πολύ επικερδής... αν έχεις την υπομονή."
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "structureBuilt_Coop",
+      "source": "That's probably the sturdiest coop I've ever built. Hope you get a lot of use out of it!",
+      "translation": "Αυτό είναι μάλλον το πιο γερό Κοτέτσι που έχω χτίσει ποτέ. Ελπίζω να σου φανεί πολύ χρήσιμο!",
+      "glossaryIds": [
+        "coop"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "structureBuilt_Shed",
+      "source": "So, what are your plans with the new shed? The possibilities are endless!",
+      "translation": "Λοιπόν, τι σχέδια έχεις για το καινούριο Υπόστεγο; Οι δυνατότητες είναι ατελείωτες!",
+      "glossaryIds": [
+        "shed"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "structureBuilt_Coop_memory_oneweek",
+      "source": "How's that new coop treatin' ya? I'll be excited to meet your new animals!",
+      "translation": "Πώς σου φαίνεται το καινούριο Κοτέτσι; Ανυπομονώ να γνωρίσω τα καινούρια σου ζώα!",
+      "glossaryIds": [
+        "coop"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "structureBuilt_Barn_memory_oneweek",
+      "source": "Are you satisfied with the new barn? I'm sure you'll raise some very happy livestock in there!",
+      "translation": "Είσαι ικανοποιημένος με τον καινούριο Στάβλο; Είμαι σίγουρη ότι θα εκτρέψεις πολύ ευτυχισμένα ζώα εκεί μέσα!",
+      "femaleTranslation": "Είσαι ικανοποιημένη με τον καινούριο Στάβλο; Είμαι σίγουρη ότι θα εκτρέψεις πολύ ευτυχισμένα ζώα εκεί μέσα!",
+      "glossaryIds": [
+        "barn"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "structureBuilt_Slime Hutch",
+      "source": "*phew*... Building that slime hutch was a lot of work... I'll need a day at the spa to recuperate!$h",
+      "translation": "*ουφ*... Η κατασκευή εκείνου του Εκτροφείου Γλίτσας ήταν πολλή δουλειά... Θα χρειαστώ μια μέρα στο σπα για να συνέλθω!$h",
+      "glossaryIds": [
+        "slime-hutch"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "structureBuilt_Stable_memory_oneweek",
+      "source": "So, have you been riding your new horse around town?#$b#I imagine you're pretty sore, but you'll get used to it soon.$h",
+      "translation": "Λοιπόν, ιππεύεις το καινούριο σου Άλογο στην πόλη;#$b#Φαντάζομαι ότι πονάς αρκετά, αλλά σύντομα θα το συνηθίσεις.$h",
+      "glossaryIds": [
+        "horse",
+        "stable"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "structureBuilt_Fish Pond",
+      "source": "I mentioned to Willy that you got a new fish pond. He seemed really happy about it.#$e#Apparently, he raised crabs when he was a young man. Called it a 'time-honored tradition'.$h",
+      "translation": "Ανέφερα στον Γουίλι ότι απέκτησες καινούρια Ιχθυολίμνη. Φάνηκε πραγματικά χαρούμενος γι' αυτό.#$e#Απ' ό,τι φαίνεται, εξέτρεφε καβούρια όταν ήταν νεαρός. Το αποκαλούσε «παράδοση με ιστορία αιώνων».$h",
+      "glossaryIds": [
+        "willy",
+        "fish-pond"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "Resort_Leaving",
+      "source": "That was fun!$h",
+      "translation": "Ήταν διασκεδαστικό!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "Resort_Shore",
+      "source": "Hey, look! I can see another island from here.",
+      "translation": "Κοίτα! Μπορώ να δω ένα άλλο νησί από εδώ."
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "Resort_Chair",
+      "source": "Hey @. You know, I was just thinking about how far the town has come since you first moved here.#$b#You should really be proud of all you've done!$h",
+      "translation": "Γεια σου, @. Ξέρεις, μόλις σκεφτόμουν πόσο έχει προοδεύσει η πόλη από τότε που μετακόμισες εδώ.#$b#Έχεις κάθε λόγο να νιώθεις περηφάνια για όλα όσα έκανες!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "Resort_Bar",
+      "source": "This is so relaxing...",
+      "translation": "Είναι τόσο χαλαρωτικό..."
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "reject_865",
+      "source": "Veggie salt? Sounds good, but I don't need it.",
+      "translation": "Αλάτι λαχανικών; Ακούγεται καλό, αλλά δεν το χρειάζομαι."
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "reject_866",
+      "source": "Hmm... when I think of flowers, I think of Evelyn. Maybe show this to her?",
+      "translation": "Χμμ... Όταν σκέφτομαι λουλούδια, σκέφτομαι την Έβελιν. Μήπως να το δείξεις σ' εκείνη;",
+      "glossaryIds": [
+        "evelyn"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "pamHouseUpgrade",
+      "source": "Our little plan worked out well, don't you think? Pam and Penny seem really happy.",
+      "translation": "Το μικρό μας σχέδιο πέτυχε, δεν νομίζεις; Η Παμ και η Πένι φαίνονται πραγματικά ευτυχισμένες.",
+      "glossaryIds": [
+        "pam",
+        "penny"
+      ]
+    },
+    {
+      "target": "Characters/Dialogue/Robin",
+      "key": "pamHouseUpgradeAnonymous",
+      "source": "Our little plan worked out well, don't you think? Pam and Penny seem really happy.",
+      "translation": "Το μικρό μας σχέδιο πέτυχε, δεν νομίζεις; Η Παμ και η Πένι φαίνονται πραγματικά ευτυχισμένες.",
+      "glossaryIds": [
+        "pam",
+        "penny"
+      ]
+    }
+  ]
+}

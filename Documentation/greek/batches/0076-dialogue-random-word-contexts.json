@@ -1,0 +1,39 @@
+{
+  "id": "0076-dialogue-random-word-contexts",
+  "kind": "long",
+  "sizeReason": "All four English source dialogues using %adj/%noun reviewed as one bounded grammar family alongside the complete random-word forms.",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "23b4848a6f22119ae6a2dbdabb9d663fc8938b9f2a31ede7a1fcbc891e5cf977",
+    "notes": "All four complete bilingual dialogues read in full and corrected Abigail narration reread. Native percentTokens/getCurrentDialogue inspected: %Abigail is a portrait-suppression prefix followed by literal prose, not a name token; now %Η Άμπιγκεϊλ. Actual %noun/%adj and AbigailHAND condition remain unchanged. Greek agreement/celestial naming use the verified exact-locale postfix. Native RNG/formatting probe passed before this literal-name correction; rerun follows. Live Content Patcher loading remains final QA."
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "Indoor_Day_3",
+      "source": "Did you have any strange dreams last night?#$e#I did, but all I remember is that it had something to do with a %adj %noun. Weird.$s#$e#Hehe. Dreams don't mean anything... do they, Honey?$l#$e#Well, we can't spend all day chit-chatting. You have work to do!",
+      "translation": "Είδες κανένα παράξενο όνειρο χτες βράδυ;#$e#Εγώ είδα, αλλά το μόνο που θυμάμαι είναι πως είχε κάποια σχέση με ένα %adj %noun. Περίεργο.$s#$e#Χεχε. Τα όνειρα δεν σημαίνουν τίποτα... έτσι δεν είναι, αγάπη μου;$l#$e#Λοιπόν, δεν μπορούμε να περάσουμε όλη τη μέρα στην κουβέντα. Έχεις δουλειές να κάνεις!"
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogueMaru",
+      "key": "Outdoor_2",
+      "source": "It's going to be clear tonight... I wonder if the %noun constellation will be visible?",
+      "translation": "Απόψε θα έχει ξαστεριά... Άραγε θα φαίνεται ο αστερισμός «%noun»;"
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogueMaru",
+      "key": "Good_6",
+      "source": "Last night, I had a dream that I was looking through a gigantic telescope. I saw something moving in the %noun nebula. Kind of spooky.",
+      "translation": "Χτες βράδυ είδα στον ύπνο μου ότι κοίταζα μέσα από ένα γιγάντιο τηλεσκόπιο. Είδα κάτι να κινείται στο νεφέλωμα «%noun». Κάπως ανατριχιαστικό."
+    },
+    {
+      "target": "Characters/Dialogue/Abigail",
+      "key": "fall_Thu",
+      "source": "#$1 AbigailHAND#Last night I dreamt that my left hand had turned into a gigantic %noun. Does that mean anything?#$e#%Abigail doesn't seem to be interested in talking right now.",
+      "translation": "#$1 AbigailHAND#Χτες βράδυ είδα στον ύπνο μου ότι το αριστερό μου χέρι είχε μεταμορφωθεί σε ένα γιγάντιο %noun. Σημαίνει κάτι αυτό;#$e#%Η Άμπιγκεϊλ δεν φαίνεται να έχει όρεξη για κουβέντα τώρα."
+    }
+  ]
+}

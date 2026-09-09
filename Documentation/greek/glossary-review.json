@@ -1,0 +1,82 @@
+{
+  "locale": "el",
+  "passes": [
+    {
+      "pass": 1,
+      "scope": [
+        1,
+        673
+      ],
+      "kind": "English fidelity and initial Greek edit",
+      "result": "corrections",
+      "correctedEntriesAfterPass": 122
+    },
+    {
+      "pass": 2,
+      "scope": [
+        1,
+        673
+      ],
+      "kind": "Full source-fidelity re-read of corrected layer",
+      "result": "corrections",
+      "findings": [
+        "villager",
+        "mastery",
+        "friendship-hearts",
+        "gift-taste",
+        "quality",
+        "fertilizer",
+        "cask",
+        "bear",
+        "gourmand-frog-cave",
+        "joja-community-development-form",
+        "overnight-player-status",
+        "incubator",
+        "mine-elevator",
+        "fish-smoked-fish",
+        "story-quest",
+        "lost-and-found",
+        "rerun",
+        "key-to-the-town",
+        "grampleton"
+      ]
+    },
+    {
+      "pass": 3,
+      "scope": [
+        1,
+        673
+      ],
+      "kind": "Full English fidelity and consistency audit",
+      "result": "one Greek grammar correction",
+      "findings": [
+        "tiger-slime-grove: replace awkward genitive plural with natural με + accusative; no source meaning changes."
+      ]
+    },
+    {
+      "pass": 4,
+      "scope": [
+        1,
+        673
+      ],
+      "kind": "Full English fidelity and consistency audit",
+      "result": "clean",
+      "findings": [],
+      "sha256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629"
+    },
+    {
+      "pass": 5,
+      "scope": [
+        1,
+        673
+      ],
+      "kind": "Independent full Greek readability, grammar and terminology audit",
+      "result": "clean",
+      "findings": [],
+      "sha256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629"
+    }
+  ],
+  "consecutiveCleanFullPasses": 2,
+  "pending": null,
+  "lockedSHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629"
+}

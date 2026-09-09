@@ -1,0 +1,515 @@
+{
+  "id": "0043-cs-controls-livestock",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "6c2934d69d277c2e74016654bc9bb97bbc1d04620b45fd66dad8850b430f251b",
+    "notes": "All 70 bilingual entries read in full. All 12 inventory positions, controls and display settings kept distinct. Native PurchaseAnimalsMenu uses displayHouse/displayType in the building-choice prompt and displayType in the invalid-home message; Greek generic nouns and quoted labels handle every animal/building gender. Purchase confirmations use neuter ζωάκι consistently. Animal production intervals, maturity, happiness, shearing friendship effect and required tools retained. Shipping categories and Journal use canonical terms."
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11246",
+      "source": "Dialogue Typing Sound",
+      "translation": "Ήχος Πληκτρολόγησης Διαλόγων"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11247",
+      "source": "Graphics:",
+      "translation": "Γραφικά:"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11248",
+      "source": "Window Mode",
+      "translation": "Λειτουργία Παραθύρου"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11251",
+      "source": "Resolution",
+      "translation": "Ανάλυση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11252",
+      "source": "Menu Backgrounds",
+      "translation": "Φόντα Μενού"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11253",
+      "source": "Lock Toolbar",
+      "translation": "Κλείδωμα Γραμμής Εργαλείων",
+      "glossaryIds": [
+        "lock-toolbar"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11254",
+      "source": "Zoom Level",
+      "translation": "Επίπεδο Μεγέθυνσης"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11266",
+      "source": "Zoom Buttons",
+      "translation": "Κουμπιά Μεγέθυνσης"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11271",
+      "source": "Snow Transparency",
+      "translation": "Διαφάνεια Χιονιού",
+      "glossaryIds": [
+        "snow-transparency"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11272",
+      "source": "Show Flash Effects",
+      "translation": "Εμφάνιση Εφέ Λάμψης"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11273",
+      "source": "Use Hardware Cursor",
+      "translation": "Χρήση Δρομέα Υλικού",
+      "glossaryIds": [
+        "hardware-cursor"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11274",
+      "source": "Controls:",
+      "translation": "Χειρισμός:"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11276",
+      "source": "Invert Toolbar Scroll Direction",
+      "translation": "Αντιστροφή Κατεύθυνσης Κύλισης Γραμμής Εργαλείων"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11277",
+      "source": "Reset Controls To Default",
+      "translation": "Επαναφορά Προεπιλεγμένου Χειρισμού"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11278",
+      "source": "Check/Do Action",
+      "translation": "Έλεγχος/Εκτέλεση Ενέργειας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11279",
+      "source": "Use Tool",
+      "translation": "Χρήση Εργαλείου"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11280",
+      "source": "Access Menu",
+      "translation": "Άνοιγμα Μενού"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11281",
+      "source": "Access Journal",
+      "translation": "Άνοιγμα Ημερολογίου",
+      "glossaryIds": [
+        "quest-log"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11282",
+      "source": "Access Map",
+      "translation": "Άνοιγμα Χάρτη"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11283",
+      "source": "Move Up",
+      "translation": "Κίνηση Πάνω"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11284",
+      "source": "Move Left",
+      "translation": "Κίνηση Αριστερά"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11285",
+      "source": "Move Down",
+      "translation": "Κίνηση Κάτω"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11286",
+      "source": "Move Right",
+      "translation": "Κίνηση Δεξιά"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11287",
+      "source": "Chat Box",
+      "translation": "Πλαίσιο Συνομιλίας"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11288",
+      "source": "Run",
+      "translation": "Τρέξιμο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11289",
+      "source": "Inventory Slot #1",
+      "translation": "Θέση Αποθέματος #1",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11290",
+      "source": "Inventory Slot #2",
+      "translation": "Θέση Αποθέματος #2",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11291",
+      "source": "Inventory Slot #3",
+      "translation": "Θέση Αποθέματος #3",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11292",
+      "source": "Inventory Slot #4",
+      "translation": "Θέση Αποθέματος #4",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11293",
+      "source": "Inventory Slot #5",
+      "translation": "Θέση Αποθέματος #5",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11294",
+      "source": "Inventory Slot #6",
+      "translation": "Θέση Αποθέματος #6",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11295",
+      "source": "Inventory Slot #7",
+      "translation": "Θέση Αποθέματος #7",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11296",
+      "source": "Inventory Slot #8",
+      "translation": "Θέση Αποθέματος #8",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11297",
+      "source": "Inventory Slot #9",
+      "translation": "Θέση Αποθέματος #9",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11298",
+      "source": "Inventory Slot #10",
+      "translation": "Θέση Αποθέματος #10",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11299",
+      "source": "Inventory Slot #11",
+      "translation": "Θέση Αποθέματος #11",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11300",
+      "source": "Inventory Slot #12",
+      "translation": "Θέση Αποθέματος #12",
+      "glossaryIds": [
+        "inventory"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11308",
+      "source": "Name Unavailable",
+      "translation": "Το Όνομα Δεν Είναι Διαθέσιμο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.ChooseLocation",
+      "source": "Where do you want to manage animals?",
+      "translation": "Πού θέλετε να διαχειριστείτε ζώα;"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11311",
+      "source": "Great! I'll send little {0} to his new home right away.",
+      "translation": "Τέλεια! Θα στείλω αμέσως το μικρό σου ζωάκι, «{0}», στο νέο του σπίτι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11314",
+      "source": "Great! I'll send little {0} to her new home right away.",
+      "translation": "Τέλεια! Θα στείλω αμέσως το μικρό σου ζωάκι, «{0}», στο νέο του σπίτι."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11321",
+      "source": "That Building Is Full",
+      "translation": "Το Κτίριο Είναι Γεμάτο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11325",
+      "source": "Not enough money",
+      "translation": "Δεν έχετε αρκετά χρήματα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11326",
+      "source": "{0}s Can't Live There.",
+      "translation": "Τα ζώα τύπου «{0}» δεν μπορούν να ζήσουν εκεί."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11334",
+      "source": "Well cared-for adult chickens lay eggs every day.",
+      "translation": "Οι ενήλικες κότες που δέχονται καλή φροντίδα γεννούν αυγά κάθε μέρα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11335",
+      "source": "Lives in the coop.",
+      "translation": "Ζει στο κοτέτσι.",
+      "glossaryIds": [
+        "coop"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11337",
+      "source": "Happy adults lay duck eggs every other day.",
+      "translation": "Οι χαρούμενες ενήλικες πάπιες γεννούν αυγά πάπιας μέρα παρά μέρα."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11340",
+      "source": "These are woolly rabbits! They shed precious wool every few days.",
+      "translation": "Αυτά τα κουνέλια έχουν μαλλί! Αποβάλλουν πολύτιμο μαλλί κάθε λίγες μέρες."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11343",
+      "source": "Adults can be milked daily. A milk pail is required to harvest the milk.",
+      "translation": "Οι ενήλικες αγελάδες αρμέγονται καθημερινά. Για το άρμεγμα απαιτείται κουβάς αρμέγματος.",
+      "glossaryIds": [
+        "cow",
+        "milk-pail"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11344",
+      "source": "Lives in the barn.",
+      "translation": "Ζει στον στάβλο.",
+      "glossaryIds": [
+        "barn"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11346",
+      "source": "These pigs are trained to find truffles!",
+      "translation": "Αυτά τα γουρούνια είναι εκπαιδευμένα να βρίσκουν τρούφες!"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11349",
+      "source": "Happy adults provide goat milk every other day. A milk pail is required to harvest the milk.",
+      "translation": "Οι χαρούμενες ενήλικες κατσίκες δίνουν κατσικίσιο γάλα μέρα παρά μέρα. Για το άρμεγμα απαιτείται κουβάς αρμέγματος.",
+      "glossaryIds": [
+        "goat",
+        "milk-pail"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11352",
+      "source": "Adults can be shorn for wool. Sheep who form a close bond with their owners can grow wool faster. A pair of shears is required to harvest the wool.",
+      "translation": "Τα ενήλικα πρόβατα κουρεύονται για το μαλλί τους. Όσα αναπτύσσουν στενό δεσμό με τους ιδιοκτήτες τους βγάζουν μαλλί γρηγορότερα. Για το κούρεμα απαιτείται ψαλίδα.",
+      "glossaryIds": [
+        "sheep",
+        "shears"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11354",
+      "source": "Livestock:",
+      "translation": "Ζώα Φάρμας:"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11355",
+      "source": "Choose a {0} for your new {1}",
+      "translation": "Διαλέξτε κτίριο τύπου «{0}» για το νέο σας ζώο ({1})"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PurchaseAnimalsMenu.cs.11357",
+      "source": "Name your new animal: ",
+      "translation": "Ονομάστε το νέο σας ζώο: "
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "QuestLog.cs.11364",
+      "source": "Cancel Quest",
+      "translation": "Ακύρωση Αποστολής"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "QuestLog.cs.11373",
+      "source": "Journal",
+      "translation": "Ημερολόγιο",
+      "glossaryIds": [
+        "quest-log"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "QuestLog.cs.11374",
+      "source": "{0} Days",
+      "translation": "{0} Ημέρες"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "QuestLog.cs.11375",
+      "source": "{0} Day",
+      "translation": "{0} Ημέρα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "QuestLog.cs.11376",
+      "source": "Reward:",
+      "translation": "Ανταμοιβή:"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SaveGameMenu.cs.11378",
+      "source": "Your progress has been saved.",
+      "translation": "Η πρόοδός σας αποθηκεύτηκε."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SaveGameMenu.cs.11381",
+      "source": "Saving",
+      "translation": "Αποθήκευση"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShippingMenu.cs.11389",
+      "source": "Farming",
+      "translation": "Γεωργία",
+      "glossaryIds": [
+        "farming-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShippingMenu.cs.11390",
+      "source": "Foraging",
+      "translation": "Συλλογή",
+      "glossaryIds": [
+        "foraging-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShippingMenu.cs.11391",
+      "source": "Fishing",
+      "translation": "Ψάρεμα",
+      "glossaryIds": [
+        "fishing-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShippingMenu.cs.11392",
+      "source": "Mining",
+      "translation": "Εξόρυξη",
+      "glossaryIds": [
+        "mining-skill"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShippingMenu.cs.11393",
+      "source": "Other",
+      "translation": "Άλλα"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShippingMenu.cs.11394",
+      "source": "Total",
+      "translation": "Σύνολο"
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ShopMenu.cs.11457",
+      "source": "Have a look at my wares.",
+      "translation": "Ρίξε μια ματιά στην πραμάτειά μου."
+    }
+  ]
+}

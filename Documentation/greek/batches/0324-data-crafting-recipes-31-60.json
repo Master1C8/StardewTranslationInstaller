@@ -1,0 +1,224 @@
+{
+  "id": "0324-data-crafting-recipes-31-60",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "a1e8a1ef98843acddc295bbe14511cab119d3f676f93a269daf6d4d631f89c63",
+    "notes": "Two-pass structural review against the authoritative source. Confirmed all 30 values are technical crafting definitions; every ingredient ID and amount, category, output ID and count, flag, unlock condition, NPC or skill ID, and slash field remains byte-for-byte exact. Visible names resolve through object strings."
+  },
+  "records": [
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Loom",
+      "source": "388 60 771 30 726 1/Home/17/true/s Farming 7/",
+      "translation": "388 60 771 30 726 1/Home/17/true/s Farming 7/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Oil Maker",
+      "source": "766 50 709 20 336 1/Home/19/true/s Farming 8/",
+      "translation": "766 50 709 20 336 1/Home/19/true/s Farming 8/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Recycling Machine",
+      "source": "388 25 390 25 335 1/Home/20/true/s Fishing 4/",
+      "translation": "388 25 390 25 335 1/Home/20/true/s Fishing 4/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Worm Bin",
+      "source": "709 15 336 1 335 1 771 50/Home/154/true/s Fishing 4/",
+      "translation": "709 15 336 1 335 1 771 50/Home/154/true/s Fishing 4/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Deluxe Worm Bin",
+      "source": "(BC)154 1 Moss 30/Home/DeluxeWormBin/true/s Fishing 8/",
+      "translation": "(BC)154 1 Moss 30/Home/DeluxeWormBin/true/s Fishing 8/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Bait Maker",
+      "source": "335 3 393 3 397 1/Home/BaitMaker/true/s Fishing 6/",
+      "translation": "335 3 393 3 397 1/Home/BaitMaker/true/s Fishing 6/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Fish Smoker",
+      "source": "709 10 SeaJelly 1 RiverJelly 1 CaveJelly 1/Home/FishSmoker/true/null/",
+      "translation": "709 10 SeaJelly 1 RiverJelly 1 CaveJelly 1/Home/FishSmoker/true/null/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Preserves Jar",
+      "source": "388 50 390 40 382 8/Home/15/true/s Farming 4/",
+      "translation": "388 50 390 40 382 8/Home/15/true/s Farming 4/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Charcoal Kiln",
+      "source": "388 20 334 2/Home/114/true/s Foraging 2/",
+      "translation": "388 20 334 2/Home/114/true/s Foraging 2/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Tapper",
+      "source": "388 40 334 2/Home/105/true/s Foraging 4/",
+      "translation": "388 40 334 2/Home/105/true/s Foraging 4/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mushroom Log",
+      "source": "709 10 Moss 10/Home/MushroomLog/true/s Foraging 4/",
+      "translation": "709 10 Moss 10/Home/MushroomLog/true/s Foraging 4/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Lightning Rod",
+      "source": "335 1 338 1 767 5/Home/9/true/s Foraging 6/",
+      "translation": "335 1 338 1 767 5/Home/9/true/s Foraging 6/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Slime Incubator",
+      "source": "337 2 766 100/Home/156/true/s Combat 8/",
+      "translation": "337 2 766 100/Home/156/true/s Combat 8/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Slime Egg-Press",
+      "source": "382 25 82 1 787 1/Home/158/true/s Combat 6/",
+      "translation": "382 25 82 1 787 1/Home/158/true/s Combat 6/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Crystalarium",
+      "source": "390 99 336 5 337 2 787 1/Home/21/true/s Mining 9/",
+      "translation": "390 99 336 5 337 2 787 1/Home/21/true/s Mining 9/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mini-Jukebox",
+      "source": "335 2 787 1/Home/209/true/null/",
+      "translation": "335 2 787 1/Home/209/true/null/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Sprinkler",
+      "source": "334 1 335 1/Home/599/false/s Farming 2/",
+      "translation": "334 1 335 1/Home/599/false/s Farming 2/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Quality Sprinkler",
+      "source": "335 1 336 1 338 1/Home/621/false/s Farming 6/",
+      "translation": "335 1 336 1 338 1/Home/621/false/s Farming 6/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Iridium Sprinkler",
+      "source": "336 1 337 1 787 1/Home/645/false/s Farming 9/",
+      "translation": "336 1 337 1 787 1/Home/645/false/s Farming 9/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Staircase",
+      "source": "390 99/Field/71/true/s Mining 2/",
+      "translation": "390 99/Field/71/true/s Mining 2/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Flute Block",
+      "source": "388 10 378 2 771 20/Home/464/false/null/",
+      "translation": "388 10 378 2 771 20/Home/464/false/null/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Drum Block",
+      "source": "390 10 378 2 771 20/Home/463/false/null/",
+      "translation": "390 10 378 2 771 20/Home/463/false/null/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Basic Fertilizer",
+      "source": "92 2/Field/368/false/s Farming 1/",
+      "translation": "92 2/Field/368/false/s Farming 1/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Tree Fertilizer",
+      "source": "771 5 390 5/Field/805/false/s Foraging 7/",
+      "translation": "771 5 390 5/Field/805/false/s Foraging 7/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mystic Tree Seed",
+      "source": "309 5 310 5 311 5 292 5/Field/MysticTreeSeed/false/null/",
+      "translation": "309 5 310 5 311 5 292 5/Field/MysticTreeSeed/false/null/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Quality Fertilizer",
+      "source": "92 4 -4 1/Field/369 2/false/s Farming 9/",
+      "translation": "92 4 -4 1/Field/369 2/false/s Farming 9/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Basic Retaining Soil",
+      "source": "390 2/Field/370/false/s Farming 4/",
+      "translation": "390 2/Field/370/false/s Farming 4/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Quality Retaining Soil",
+      "source": "390 3 330 1/Field/371 2/false/s Farming 7/",
+      "translation": "390 3 330 1/Field/371 2/false/s Farming 7/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Speed-Gro",
+      "source": "726 1 Moss 5/Field/465 5/false/s Farming 3/",
+      "translation": "726 1 Moss 5/Field/465 5/false/s Farming 3/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Deluxe Speed-Gro",
+      "source": "725 1 881 5/Field/466 5/false/s Farming 8/",
+      "translation": "725 1 881 5/Field/466 5/false/s Farming 8/",
+      "preserveReason": "Technical crafting recipe definition; ingredient IDs, quantities, category, output ID and count, big-craftable or ring flag, unlock condition, NPC or skill ID, and slash-delimited fields must remain exact. Player-visible item names are localized through object or big-craftable strings."
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "id": "0013-ui-pond-options",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "594145b4f15102b7c8c519bc27a2c810dddacbba025b5691026bd9a1d2cfa7d7",
+    "notes": "All 70 source/Greek pairs read in full. Native PondQueryMenu.UpdateState and Lexicon decompiled locally: custom locales get an empty article and no automatic pluralization; the OneCount fallback occurs for a single requested item. Quoted unchanged item labels and ×quantity preserve exact quantities without false Greek inflections. OneCount deliberately renders 1. Fish voices retain rude, demanding, stiff and carnivore distinctions. Glossary terms for fish pond, mini-fridge and community center applied."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ConfirmEmpty",
+      "source": "Are you sure you want to remove all the fish and return the pond to its original state?",
+      "translation": "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε όλα τα ψάρια και να επαναφέρετε την ιχθυολίμνη στην αρχική της κατάσταση;"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ChangeNetting",
+      "source": "Change Appearance",
+      "translation": "Αλλαγή Εμφάνισης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_Population",
+      "source": "Population: {0}/{1}",
+      "translation": "Πληθυσμός: {0}/{1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusNoFish",
+      "source": "This pond is empty...",
+      "translation": "Αυτή η ιχθυολίμνη είναι άδεια..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk0",
+      "source": "\"We're doing fine!\"",
+      "translation": "«Είμαστε μια χαρά!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk1",
+      "source": "\"Nothing to complain about!\"",
+      "translation": "«Δεν έχουμε κανένα παράπονο!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk2",
+      "source": "\"Everything is okay!\"",
+      "translation": "«Όλα πάνε καλά!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk3",
+      "source": "\"We're feeling pretty good!\"",
+      "translation": "«Νιώθουμε πολύ καλά!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk4",
+      "source": "\"We're feeling healthy!\"",
+      "translation": "«Νιώθουμε υγιέστατα!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk5",
+      "source": "The fish look happy.",
+      "translation": "Τα ψάρια φαίνονται χαρούμενα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk6",
+      "source": "The fish seem to be thriving.",
+      "translation": "Τα ψάρια φαίνεται να ευημερούν."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk_Coral",
+      "source": "The {0} are doing well.",
+      "translation": "Ο πληθυσμός «{0}» τα πηγαίνει καλά."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequest_Bring",
+      "source": "Bring",
+      "translation": "Φέρτε"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending0",
+      "source": "\"You know, {1} {0} would liven things up around here!\"",
+      "translation": "«Ξέρεις, αν είχαμε “{0}” (×{1}), θα ζωντάνευε λίγο ο τόπος!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending1",
+      "source": "\"If it's not too much to ask... could you bring us {1} {0}?\"",
+      "translation": "«Αν δεν σου είναι κόπος... μπορείς να μας φέρεις “{0}” (×{1});»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending2",
+      "source": "\"We'd be more comfortable if we had {1} {0} in here.\"",
+      "translation": "«Θα ήμασταν πιο άνετα αν είχαμε “{0}” (×{1}) εδώ μέσα.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending3",
+      "source": "\"Please... could you bring us {1} {0}?\"",
+      "translation": "«Σε παρακαλούμε... μπορείς να μας φέρεις “{0}” (×{1});»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending4",
+      "source": "\"We're doing okay, but we'd be happier with {1} {0}...\"",
+      "translation": "«Είμαστε καλά, αλλά με “{0}” (×{1}) θα ήμασταν πιο χαρούμενα...»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending5",
+      "source": "\"Excuse me... we'd like {1} {0}, please.\"",
+      "translation": "«Με συγχωρείς... θα θέλαμε “{0}” (×{1}), σε παρακαλούμε.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending6",
+      "source": "\"We'd feel more at home with {1} {0}...\"",
+      "translation": "«Με “{0}” (×{1}) θα νιώθαμε περισσότερο σαν στο σπίτι μας...»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude0_Male",
+      "source": "\"Hey, landlubber, you think you could bring us {1} {0}?\"",
+      "translation": "«Ε, στεριανέ, λες να μπορείς να μας φέρεις “{0}” (×{1});»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude1_Male",
+      "source": "\"Oi... leg boy! How about bringing us {1} {0}, huh?\"",
+      "translation": "«Ε... εσύ με τα πόδια! Δεν μας φέρνεις “{0}” (×{1}), λέω εγώ;»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude2_Male",
+      "source": "\"Psst... Hey, buddy... think you could send {1} {0} our way?\"",
+      "translation": "«Ψιτ... Ε, φίλε... λες να μπορείς να μας στείλεις “{0}” (×{1});»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude0_Female",
+      "source": "\"Hey, land dweller, you think you could bring us {1} {0}?\"",
+      "translation": "«Ε, στεριανή, λες να μπορείς να μας φέρεις “{0}” (×{1});»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude1_Female",
+      "source": "\"Hey, lady... You got {1} {0} you can send our way?\"",
+      "translation": "«Ε, κυρά μου... Μήπως έχεις “{0}” (×{1}) να μας στείλεις;»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude2_Female",
+      "source": "\"Psst... think you could nab us {1} {0} on the sly?\"",
+      "translation": "«Ψιτ... λες να μπορείς να μας βουτήξεις στα κρυφά “{0}” (×{1});»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding0",
+      "source": "\"{2}! {2}! We want {1} {0}...!\"",
+      "translation": "«{2}! {2}! Θέλουμε “{0}” (×{1})...!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding1",
+      "source": "\"We need {1} {0}! We need {1} {0}!\"",
+      "translation": "«Χρειαζόμαστε “{0}” (×{1})! Χρειαζόμαστε “{0}” (×{1})!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding2",
+      "source": "\"Where's the {2}? We need {1} {0}!\"",
+      "translation": "«Πού είναι αυτό που λέγεται “{2}”; Χρειαζόμαστε “{0}” (×{1})!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff0",
+      "source": "\"We require {1} {0}...\"",
+      "translation": "«Απαιτούμε “{0}” (×{1})...»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff1",
+      "source": "\"{1} {0} would allow us to multiply further.\"",
+      "translation": "«Η προσθήκη “{0}” (×{1}) θα μας επέτρεπε να πολλαπλασιαστούμε περαιτέρω.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff2",
+      "source": "\"We've decided that we need {1} {0}.\"",
+      "translation": "«Αποφασίσαμε ότι χρειαζόμαστε “{0}” (×{1}).»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore0",
+      "source": "\"We're hungry... could you bring us {1} {0}?\"",
+      "translation": "«Πεινάμε... μπορείς να μας φέρεις “{0}” (×{1});»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore1",
+      "source": "\"Could you bring us {1} {0} for our dinner?\"",
+      "translation": "«Μπορείς να μας φέρεις “{0}” (×{1}) για το βραδινό μας;»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore2",
+      "source": "\"We need protein... {1} {0} should do the trick!\"",
+      "translation": "«Χρειαζόμαστε πρωτεΐνη... με “{0}” (×{1}) θα βολευτούμε!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude0",
+      "source": "\"Cha cha cha! We're in business.\"",
+      "translation": "«Τσα τσα τσα! Τώρα μάλιστα.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude1",
+      "source": "\"Ah... it's the good stuff. Thanks, kid.\"",
+      "translation": "«Α... πρώτης ποιότητας πράμα. Ευχαριστούμε, παιδί μου.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude2",
+      "source": "\"Thanks, boss!\"",
+      "translation": "«Ευχαριστούμε, αφεντικό!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff0",
+      "source": "\"Ah... the {0} we requested.\"",
+      "translation": "«Α... η προμήθεια “{0}” που ζητήσαμε.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff1",
+      "source": "\"This {0} is satisfactory for our needs.\"",
+      "translation": "«Αυτή η προμήθεια “{0}” καλύπτει ικανοποιητικά τις ανάγκες μας.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff2",
+      "source": "The fish look satisfied with the {0}.",
+      "translation": "Τα ψάρια φαίνονται ικανοποιημένα με την προμήθεια «{0}»."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Demanding0",
+      "source": "\"Thank you! Thank you!\"",
+      "translation": "«Ευχαριστούμε! Ευχαριστούμε!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Demanding1",
+      "source": "\"{0}! {0}! {0}! We're happy!\"",
+      "translation": "«{0}! {0}! {0}! Είμαστε χαρούμενα!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Demanding2",
+      "source": "The fish are swimming in circles.",
+      "translation": "Τα ψάρια κολυμπούν σε κύκλους."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Carnivore0",
+      "source": "\"Looks like {0} is on the menu tonight!\"",
+      "translation": "«Απ' ό,τι φαίνεται, απόψε το μενού έχει “{0}”!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Carnivore1",
+      "source": "\"Fresh {0}! Yum...\"",
+      "translation": "«Φρέσκια προμήθεια: “{0}”! Μιαμ...»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Carnivore2",
+      "source": "\"This {0} looks delicious. Thank you!\"",
+      "translation": "«Λαχταριστή προμήθεια: “{0}”. Ευχαριστούμε!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete0",
+      "source": "\"Wow, thanks for the {0}!\"",
+      "translation": "«Πω πω, ευχαριστούμε για την προμήθεια “{0}”!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete1",
+      "source": "\"Hey, look, it's {0}. Just what we needed!\"",
+      "translation": "«Ε, κοιτάξτε, “{0}”. Ό,τι ακριβώς χρειαζόμασταν!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete2",
+      "source": "\"Hey! This {0} looks pretty nice!\"",
+      "translation": "«Ε! Ωραία φαίνεται αυτή η προμήθεια “{0}”!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete3",
+      "source": "\"Thank you! This {0} will keep us healthy.\"",
+      "translation": "«Ευχαριστούμε! Με την προμήθεια “{0}” θα παραμείνουμε υγιή.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete4",
+      "source": "\"Ah, {0}... this really makes us feel at home.\"",
+      "translation": "«Α, “{0}”... τώρα νιώθουμε πραγματικά σαν στο σπίτι μας.»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete5",
+      "source": "\"Everyone, look... fresh {0}!\"",
+      "translation": "«Κοιτάξτε όλοι... φρέσκια προμήθεια “{0}”!»"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete6",
+      "source": "The fish seem happy.",
+      "translation": "Τα ψάρια φαίνονται χαρούμενα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestOneCount",
+      "source": "some",
+      "translation": "1",
+      "numericContext": "PondQueryMenu.UpdateState uses this fallback only when neededItemCount <= 1; exact quantity 1 replaces the English mass-noun article in ×quantity notation."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AlreadyDatingBouquet",
+      "source": "You are already dating {0}.",
+      "translation": "Έχετε ήδη σχέση με τον χαρακτήρα {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "MovieStartRequest",
+      "source": "The movie is about to begin!",
+      "translation": "Η ταινία πρόκειται να αρχίσει!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "MiniFridge_NoKitchen",
+      "source": "The Mini-Fridge can only be placed in a house with a kitchen.",
+      "translation": "Το Μίνι Ψυγείο μπορεί να τοποθετηθεί μόνο σε σπίτι με κουζίνα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Kitchen_InUse",
+      "source": "A kitchen appliance is currently in use, please try again later.",
+      "translation": "Μια συσκευή κουζίνας χρησιμοποιείται αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemGrab_FillStacks",
+      "source": "Add To Existing Stacks",
+      "translation": "Προσθήκη στις Υπάρχουσες Στοίβες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_OpenFolder",
+      "source": "Open Destination Folder",
+      "translation": "Άνοιγμα Φακέλου Προορισμού"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Calendar_Wedding",
+      "source": "{0} and {1}'s Wedding",
+      "translation": "Γάμος: {0} και {1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_Vsync",
+      "source": "VSync",
+      "translation": "Κάθετος Συγχρονισμός"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "VersionMismatch",
+      "source": "Version mismatch ({0})",
+      "translation": "Ασυμφωνία εκδόσεων ({0})"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode",
+      "source": "Gamepad Mode",
+      "translation": "Λειτουργία Χειριστηρίου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode_Auto",
+      "source": "Auto-detect",
+      "translation": "Αυτόματη Ανίχνευση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode_ForceOn",
+      "source": "Force On",
+      "translation": "Πάντα Ενεργό"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode_ForceOff",
+      "source": "Force Off",
+      "translation": "Πάντα Ανενεργό"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_Label",
+      "source": "Advanced Game Options:",
+      "translation": "Προχωρημένες Επιλογές Παιχνιδιού:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB",
+      "source": "Community Center Bundles:",
+      "translation": "Πακέτα Κοινοτικού Κέντρου:"
+    }
+  ]
+}

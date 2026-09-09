@@ -1,0 +1,152 @@
+{
+  "id": "0245-data-quests-24-38",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "f14243e85499053df266a53e99488b42cc136bd890540a68179951e6840ac87c",
+    "notes": "Checked all 15 quest definitions twice against authoritative English source. Preserved quest types, target metadata, NPC/location/item IDs, coordinates, rewards, booleans, numeric forms, slash layouts, and dialogue control sequences exactly; localized only player-visible prose and sound captions. Titles, descriptions, objectives, and completion dialogue received two editorial passes for natural modern Greek, gender-neutral player language, distinct NPC voices, decipherable intentional misspellings in the Strange Note, and current glossary terms for Gunther, artifacts/minerals, Community Center, Witch's Hut, Dark Talisman, Magic Ink, the Sewers, Krobus, Secret Woods, Skull Cavern, Robin, Marnie, Jodi, Mayor Lewis, Pam, Keg, Demetrius, and George."
+  },
+  "records": [
+    {
+      "target": "Data/Quests",
+      "key": "24",
+      "source": "Basic/Archaeology/Gunther asked if you'd consider donating any new artifacts or minerals you find to the museum. He says he'll compensate you by way of occasional rare goods./Donate an artifact or a mineral to the museum./-1/-1/250/-1/true",
+      "translation": "Basic/Αρχαιολογία/Ο Γκάνθερ σε ρώτησε αν θα ήθελες να δωρίζεις στο μουσείο όσα νέα τεχνουργήματα ή ορυκτά βρίσκεις. Λέει πως θα σε ανταμείβει κατά διαστήματα με σπάνια αγαθά./Δώρισε ένα τεχνούργημα ή ένα ορυκτό στο μουσείο./-1/-1/250/-1/true",
+      "glossaryIds": [
+        "gunther",
+        "artifact-mineral"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "25",
+      "source": "Basic/How To Win Friends/Giving gifts is a great way to build friendships. Learn each person's individual tastes and you'll be popular in no time./Give someone a gift./-1/-1/100/-1/true",
+      "translation": "Basic/Πώς να Κερδίζεις Φίλους/Τα δώρα είναι ένας εξαιρετικός τρόπος να χτίζεις φιλίες. Μάθε τα προσωπικά γούστα του καθενός και σύντομα όλοι θα σε συμπαθούν./Κάνε ένα δώρο σε κάποιον./-1/-1/100/-1/true"
+    },
+    {
+      "target": "Data/Quests",
+      "key": "26",
+      "source": "Basic/\"Rat Problem\"/There's something odd going on in the Community Center.../Investigate the Community Center/-1/-1/0/-1/true",
+      "translation": "Basic/«Πρόβλημα με Αρουραίους»/Κάτι παράξενο συμβαίνει στο Κοινοτικό Κέντρο.../Ερεύνησε το Κοινοτικό Κέντρο/-1/-1/0/-1/true",
+      "glossaryIds": [
+        "community-center"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "27",
+      "source": "Basic/Goblin Problem/There's a goblin blocking the path to the Witch's hut. There must be some way to get him to move... Perhaps I should seek out more information on Goblins./Gain entrance to the Witch's hut./-1/-1/0/-1/true",
+      "translation": "Basic/Πρόβλημα με τον Καλικάντζαρο/Ένας καλικάντζαρος κλείνει τον δρόμο προς την Καλύβα της Μάγισσας. Κάποιος τρόπος θα υπάρχει για να τον κάνω να φύγει... Ίσως πρέπει να βρω περισσότερες πληροφορίες για τους καλικάντζαρους./Μπες στην Καλύβα της Μάγισσας./-1/-1/0/-1/true",
+      "glossaryIds": [
+        "witchs-hut",
+        "henchman"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "28",
+      "source": "Basic/Dark Talisman/The Wizard asked me to retrieve the magic ink from his ex-wife's house... but to gain access I'll need a dark talisman./Enter the sewer and ask Krobus about the dark talisman./-1/-1/0/-1/false",
+      "translation": "Basic/Σκοτεινό Φυλαχτό/Ο Μάγος μού ζήτησε να πάρω το Μαγικό Μελάνι από το σπίτι της πρώην συζύγου του... αλλά για να αποκτήσω πρόσβαση θα χρειαστώ ένα Σκοτεινό Φυλαχτό./Μπες στους Υπονόμους και ρώτησε τον Κρόμπους για το Σκοτεινό Φυλαχτό./-1/-1/0/-1/false",
+      "glossaryIds": [
+        "wizard-rasmodius",
+        "magic-ink",
+        "dark-talisman",
+        "sewers",
+        "krobus"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "29",
+      "source": "Basic/Strange Note/You found a note, barely legible, asking you to bring \"may-pal serrup\" to the \"seecrit wuds\"./Bring \"may-pal serrup\" to the \"seecrit wuds\"/-1/-1/0/-1/true",
+      "translation": "Basic/Παράξενο Σημείωμα/Βρήκες ένα σχεδόν δυσανάγνωστο σημείωμα που σου ζητά να πας «σιρόπι σφεντάμου» στο «μουστικό δάσος»./Πήγαινε «σιρόπι σφεντάμου» στο «μουστικό δάσος»/-1/-1/0/-1/true",
+      "glossaryIds": [
+        "secret-woods"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "30",
+      "source": "Basic/Cryptic Note/You found a note that reads, \"Someone is waiting for you on level 100 in the Skull Cavern\"/Reach level 100 in the Skull Cavern/-1/-1/0/-1/true",
+      "translation": "Basic/Αινιγματικό Σημείωμα/Βρήκες ένα σημείωμα που γράφει: «Κάποιος σε περιμένει στο επίπεδο 100 στο Σπήλαιο του Κρανίου»/Φτάσε στο επίπεδο 100 στο Σπήλαιο του Κρανίου/-1/-1/0/-1/true",
+      "glossaryIds": [
+        "skull-cavern"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "31",
+      "source": "Basic/A Winter Mystery/You encountered a suspicious looking figure by the bus stop. When it saw you, it fled toward town. Could there be a clue to its whereabouts?/Find the shadowy figure./-1/-1/0/-1/true",
+      "translation": "Basic/Ένα Χειμωνιάτικο Μυστήριο/Συνάντησες μια ύποπτη φιγούρα δίπλα στη στάση του λεωφορείου. Μόλις σε είδε, έφυγε προς την πόλη. Ίσως υπάρχει κάποιο στοιχείο για το πού πήγε;/Βρες τη σκιώδη φιγούρα./-1/-1/0/-1/true"
+    },
+    {
+      "target": "Data/Quests",
+      "key": "100",
+      "source": "LostItem/Robin's Lost Axe/Robin lost her favorite axe. The last time she remembers using it, she was cutting wood south of Marnie's ranch./Find Robin's lost axe./Robin (O)788 Forest 110 81/-1/250/-1/true/Hey, you found my axe! What a relief... I almost chopped my toe off with the other one I was using. Thank you!",
+      "translation": "LostItem/Το Χαμένο Τσεκούρι της Ρόμπιν/Η Ρόμπιν έχασε το αγαπημένο της τσεκούρι. Την τελευταία φορά που θυμάται να το χρησιμοποιεί, έκοβε ξύλα νότια από το Ράντσο της Μάρνι./Βρες το χαμένο τσεκούρι της Ρόμπιν./Robin (O)788 Forest 110 81/-1/250/-1/true/Πω, βρήκες το τσεκούρι μου! Τι ανακούφιση... Παραλίγο να κόψω το δάχτυλο του ποδιού μου με το άλλο που χρησιμοποιούσα. Ευχαριστώ!",
+      "glossaryIds": [
+        "robin",
+        "marnie",
+        "marnies-ranch"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "101",
+      "source": "ItemDelivery/Jodi's Request/Jodi needs a fresh cauliflower for a recipe she's making. She's asking you to bring her one./Bring Jodi a cauliflower./Jodi (O)190/-1/350/-1/true/Oh, that looks so delicious! Thank you, this is just what I wanted. It's going to be perfect for my yellow curry.",
+      "translation": "ItemDelivery/Το Αίτημα της Τζόντι/Η Τζόντι χρειάζεται ένα φρέσκο κουνουπίδι για μια συνταγή που ετοιμάζει. Σου ζητά να της φέρεις ένα./Πήγαινε ένα κουνουπίδι στην Τζόντι./Jodi (O)190/-1/350/-1/true/Α, φαίνεται πεντανόστιμο! Ευχαριστώ, είναι ακριβώς αυτό που ήθελα. Θα είναι τέλειο για το κίτρινο κάρι μου.",
+      "glossaryIds": [
+        "jodi"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "102",
+      "source": "LostItem/Mayor's \"Shorts\"/Mayor Lewis has lost his purple \"shorts\". He's asking you to find and return them... Discreetly./Find and return Mayor Lewis' purple shorts./Lewis (O)789 AnimalShop 13 7/-1/750/-1/true/You found them... where? ...Oh!...Uhmm...Heh.#$b#There? I have no idea how they could've gotten there...*cough*#$b#This stays between you and me. Got it?$u",
+      "translation": "LostItem/Το «Σορτς» του Δημάρχου/Ο Δήμαρχος Λιούις έχασε το μοβ «σορτς» του. Σου ζητά να το βρεις και να του το επιστρέψεις... Διακριτικά./Βρες και επέστρεψε το μοβ σορτς του Δημάρχου Λιούις./Lewis (O)789 AnimalShop 13 7/-1/750/-1/true/Το βρήκες... πού; ...Α!... Εμμ... Χεχ.#$b#Εκεί; Δεν έχω ιδέα πώς μπορεί να βρέθηκε εκεί... *βήχας*#$b#Αυτό θα μείνει μεταξύ μας. Κατάλαβες;$u",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "103",
+      "source": "ItemDelivery/Pam Is Thirsty/Pam is hankerin' for a pale ale. Regular old beer won't do. You can brew one yourself if you have hops and a keg./Bring Pam a pale ale./Pam (O)303/-1/350/-1/true/Gimme that. *slurp*... Ahh, that's the stuff.#$b#It's real nice and hoppy... notes of citrus and pine, but with a robust body to keep it grounded.#$b#Thanks, kid. This means a lot to me. I knew I could count on you.$h",
+      "translation": "ItemDelivery/Η Παμ Διψάει/Η Παμ λαχταρά μια Ξανθιά Μπίρα. Μια απλή μπίρα δεν της κάνει. Μπορείς να παρασκευάσεις μία, αν έχεις λυκίσκο και Βαρέλι Ζύμωσης./Πήγαινε μια Ξανθιά Μπίρα στην Παμ./Pam (O)303/-1/350/-1/true/Δώσ' τη μου. *γκλουπ*... Ααα, αυτό μάλιστα.#$b#Είναι ωραία και λυκισκώδης... με νότες εσπεριδοειδών και πεύκου, αλλά και γεμάτο σώμα για ισορροπία.#$b#Ευχαριστώ, παιδί μου. Σημαίνει πολλά για μένα. Ήξερα πως μπορούσα να βασιστώ πάνω σου.$h",
+      "glossaryIds": [
+        "pam",
+        "keg"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "104",
+      "source": "ItemDelivery/Crop Research/Demetrius needs a fresh melon for his research./Bring Demetrius a melon./Demetrius (O)254/-1/550/-1/true/This is perfect! It's just what I need for my research. It's going to be hard not to eat it! Thanks a bunch.",
+      "translation": "ItemDelivery/Έρευνα Καλλιεργειών/Ο Ντιμίτριους χρειάζεται ένα φρέσκο πεπόνι για την έρευνά του./Πήγαινε ένα πεπόνι στον Ντιμίτριους./Demetrius (O)254/-1/550/-1/true/Είναι τέλειο! Ακριβώς αυτό χρειάζομαι για την έρευνά μου. Θα είναι δύσκολο να μην το φάω! Ευχαριστώ πάρα πολύ.",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "105",
+      "source": "ItemDelivery/Knee Therapy/George needs a hot pepper to soothe his aching knee./Bring George a Hot Pepper./George (O)260/-1/200/-1/true/Took you long enough... hmmph... Well it's good and spicy at least. Thanks.",
+      "translation": "ItemDelivery/Θεραπεία για το Γόνατο/Ο Τζορτζ χρειάζεται μια Καυτερή Πιπεριά για να ανακουφίσει το πονεμένο του γόνατο./Πήγαινε μια Καυτερή Πιπεριά στον Τζορτζ./George (O)260/-1/200/-1/true/Άργησες αρκετά... χμφ... Τουλάχιστον είναι καλή και καυτερή. Ευχαριστώ.",
+      "glossaryIds": [
+        "george"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "106",
+      "source": "ItemDelivery/Cow's Delight/Marnie wants to give her cows a special treat. She's asking for a single bunch of amaranth./Bring Marnie one bunch of amaranth./Marnie (O)300/-1/500/-1/true/Oh, the amaranth I asked for! Thank you so much... my cows are going to love this!$h",
+      "translation": "ItemDelivery/Η Απόλαυση των Αγελάδων/Η Μάρνι θέλει να δώσει στις αγελάδες της μια ξεχωριστή λιχουδιά. Ζητά ένα ματσάκι αμάραντο./Πήγαινε ένα ματσάκι αμάραντο στη Μάρνι./Marnie (O)300/-1/500/-1/true/Α, ο αμάραντος που ζήτησα! Ευχαριστώ πάρα πολύ... οι αγελάδες μου θα ξετρελαθούν!$h",
+      "glossaryIds": [
+        "marnie"
+      ]
+    }
+  ]
+}

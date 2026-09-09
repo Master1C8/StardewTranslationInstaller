@@ -1,0 +1,164 @@
+{
+  "id": "0454-mail-076-090",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "1b261598187c95ccb4a16606a30e90c1e883ec76080cfb4fff5256b6bd819dd1",
+    "notes": "Editorial pass 1 and pass 2 complete: checked all 15 letters against the English asset; reviewed invitations, private statue humor, Auto-Grabber functions, fishing equipment, Wizard summons, Winter Star schedule, Community Center bulletin, guild quest, subject lines, glossary terms, commands, IDs, and quantities."
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "harveyBalloon",
+      "source": "@,^I have a surprise for you. Meet me by the railroad tracks. ^   -Harvey[#]Harvey's Surprise",
+      "translation": "@,^Σου έχω μια έκπληξη. Συνάντησέ με δίπλα στις γραμμές του τρένου. ^   -Χάρβεϊ[#]Η Έκπληξη του Χάρβεϊ",
+      "glossaryIds": [
+        "harvey"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "samMessage",
+      "source": "@,^meet me in front of my house tonight after dark. ^   -Sam[#]Sam's Note",
+      "translation": "@,^συνάντησέ με μπροστά στο σπίτι μου απόψε, αφού νυχτώσει. ^   -Σαμ[#]Σημείωμα του Σαμ",
+      "glossaryIds": [
+        "sam"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "joshMessage",
+      "source": "@,^meet me at the saloon tonight after dark. ^   -Alex[#]Alex' Invitation",
+      "translation": "@,^συνάντησέ με απόψε στο Σαλούν της Αστεροσταγόνας, αφού νυχτώσει. ^   -Άλεξ[#]Πρόσκληση του Άλεξ",
+      "glossaryIds": [
+        "alex",
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "lewisStatue",
+      "source": "@,^^In the future, I'd appreciate it very much if you refrained from placing my PRIVATE belongings in town for all to see!^^I'm very displeased!^^Take this money and never speak of my 'project' to anyone.%item money 750 751 %%[#]Lewis' Angry Letter",
+      "translation": "@,^^Στο μέλλον, θα το εκτιμούσα ιδιαίτερα αν απέφευγες να τοποθετείς τα ΠΡΟΣΩΠΙΚΑ μου αντικείμενα στην πόλη, σε κοινή θέα!^^Είμαι πάρα πολύ δυσαρεστημένος!^^Πάρε αυτά τα χρήματα και μη μιλήσεις ποτέ σε κανέναν για το «έργο» μου.%item money 750 751 %%[#]Το Θυμωμένο Γράμμα του Λιούις",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "marnieAutoGrabber",
+      "source": "@,^I've got a new item in stock... It's called the \"Auto-Grabber\".^^This thing can milk your cows and goats, shear your sheep, gather eggs, and pluck your wooly rabbits... all on its own!^^It's considered a 'luxury item', so I'm charging 25,000g.^^    -Marnie[#]Auto-Grabber Notice",
+      "translation": "@,^Έχω ένα νέο αντικείμενο σε απόθεμα... Λέγεται «Αυτόματος Συλλέκτης».^^Αυτό το μηχάνημα μπορεί να αρμέγει τις αγελάδες και τις κατσίκες σου, να κουρεύει τα πρόβατά σου, να μαζεύει αυγά και να αφαιρεί το μαλλί από τα χνουδωτά κουνέλια σου... ολομόναχο!^^Θεωρείται «αντικείμενο πολυτελείας», οπότε χρεώνω 25,000g.^^    -Μάρνι[#]Ειδοποίηση για τον Αυτόματο Συλλέκτη",
+      "glossaryIds": [
+        "marnie",
+        "auto-grabber",
+        "cow",
+        "goat",
+        "sheep",
+        "rabbit"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "EmilyClothingTherapy",
+      "source": "@,^I have this crazy new idea that I want to involve you in... It's called \"Clothing Therapy\".^^Please come to the Mayor's house today to see what it's all about.^^ Love, Emily[#]Emily's Idea",
+      "translation": "@,^Έχω μια τρελή καινούρια ιδέα στην οποία θέλω να σε συμπεριλάβω... Λέγεται «Θεραπεία μέσω της Ένδυσης».^^Σε παρακαλώ, έλα σήμερα στο σπίτι του Δημάρχου για να δεις περί τίνος πρόκειται.^^ Με αγάπη, Έμιλι[#]Η Ιδέα της Έμιλι",
+      "glossaryIds": [
+        "emily",
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "EmilyCamping",
+      "source": "@,^Let's go camping! ^^ Meet me in the secret woods after 10pm.^^ Love, Emily[#]Emily's Invitation",
+      "translation": "@,^Πάμε για κάμπινγκ! ^^ Συνάντησέ με στο Μυστικό Δάσος μετά τις 10 μ.μ.^^ Με αγάπη, Έμιλι[#]Η Πρόσκληση της Έμιλι",
+      "glossaryIds": [
+        "emily",
+        "secret-woods"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "EmilyDoneCamping",
+      "source": "Thanks for joining me last night... I had a great time.^I'm actually glad that bear showed up!^^See you soon^^  Love, Emily[#]Emily's Note",
+      "translation": "Ευχαριστώ που ήρθες μαζί μου χθες βράδυ... Πέρασα υπέροχα.^Βασικά, χαίρομαι που εμφανίστηκε εκείνη η αρκούδα!^^Τα λέμε σύντομα^^  Με αγάπη, Έμιλι[#]Σημείωμα της Έμιλι",
+      "glossaryIds": [
+        "emily"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "foundLostTools",
+      "source": "Dear @,^Someone dropped your tools into the lost and found bin last night.^^Stop by the mayor's office to pick them up. ^^  -Mayor Lewis[#]Lost Tools",
+      "translation": "Γεια σου, @,^Κάποιος έβαλε τα εργαλεία σου στο κουτί απολεσθέντων χθες βράδυ.^^Πέρασε από το γραφείο του δημάρχου για να τα παραλάβεις. ^^  -Δήμαρχος Λιούις[#]Χαμένα Εργαλεία",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fishing2",
+      "source": "I've got some new items in stock...^A deluxe fishing pole and some bait that you can attach to it!^You can use bait to make fish bite faster. Hope to see you soon! ^   -Willy[#]Willy's New Items",
+      "translation": "Έχω μερικά νέα αντικείμενα σε απόθεμα...^Ένα καλάμι ψαρέματος πολυτελείας και λίγο δόλωμα που μπορείς να στερεώσεις πάνω του!^Μπορείς να χρησιμοποιήσεις δόλωμα ώστε τα ψάρια να τσιμπούν γρηγορότερα. Ελπίζω να σε δω σύντομα! ^   -Γουίλι[#]Τα Νέα Αντικείμενα του Γουίλι",
+      "glossaryIds": [
+        "willy",
+        "bait"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fishing6",
+      "source": "Come by the shop and check out the new rods I'm selling.^They're the best money can buy... and you can customize them with different kinds of tackle!^Hope to see you soon! ^   -Willy[#]Willy's New Items #2",
+      "translation": "Πέρασε από το κατάστημα και δες τα νέα καλάμια που πουλάω.^Είναι ό,τι καλύτερο μπορεί να αγοράσει κανείς... και μπορείς να τα προσαρμόσεις με διάφορα είδη εξαρτημάτων!^Ελπίζω να σε δω σύντομα! ^   -Γουίλι[#]Τα Νέα Αντικείμενα του Γουίλι #2",
+      "glossaryIds": [
+        "willy",
+        "tackle-bobber"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "wizardJunimoNote",
+      "source": "My sources tell me you've been poking around inside the old community center.^Why don't you pay me a visit?^My chambers are west of the forest lake, in the stone tower. I may have information concerning your... 'rat problem'.^   -M. Rasmodius, Wizard %item quest 1 true %%[#]Wizard's Summons",
+      "translation": "Οι πηγές μου λένε ότι εξερευνάς το παλιό Κοινοτικό Κέντρο.^Γιατί δεν με επισκέπτεσαι;^Τα διαμερίσματά μου βρίσκονται δυτικά της δασικής λίμνης, στον πέτρινο πύργο. Ίσως έχω πληροφορίες σχετικά με το... «πρόβλημά σου με τους αρουραίους».^   -Μ. Ρασμόντιους, Μάγος %item quest 1 true %%[#]Το Κάλεσμα του Μάγου",
+      "glossaryIds": [
+        "wizard-rasmodius",
+        "community-center"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_18",
+      "source": "Dear @,^I would like to give you some information about an upcoming event: the Feast of the Winter Star. It's a time for the community to come together and think back on all the good fortune we've had this year.^A favorite tradition is the \"secret gift exchange\", where everyone in town is randomly assigned to someone else. On the day of the festival, everyone brings a gift for their secret friend and surprises them with something special!^This year, your secret friend is:^    %secretsanta ^Don't tell anyone! The feast will take place on the 25th from 9AM to 2PM at the town square. See you then! ^   -Mayor Lewis[#]Secret Gift-Giver",
+      "translation": "Γεια σου, @,^Θα ήθελα να σου δώσω μερικές πληροφορίες για μια επερχόμενη εκδήλωση: τη Γιορτή του Χειμερινού Αστεριού. Είναι μια ευκαιρία για την κοινότητα να συγκεντρωθεί και να αναλογιστεί όλη την καλή τύχη που είχαμε φέτος.^Μια αγαπημένη παράδοση είναι η «μυστική ανταλλαγή δώρων», όπου κάθε κάτοικος της πόλης αντιστοιχίζεται τυχαία με κάποιο άλλο πρόσωπο. Την ημέρα της γιορτής, όλοι φέρνουν ένα δώρο για το μυστικό τους ταίρι και του κάνουν μια ξεχωριστή έκπληξη!^Φέτος, το μυστικό σου ταίρι είναι:^    %secretsanta ^Μην το πεις σε κανέναν! Η γιορτή θα πραγματοποιηθεί στις 25, από τις 9 π.μ. έως τις 2 μ.μ., στην πλατεία της πόλης. Τα λέμε εκεί! ^   -Δήμαρχος Λιούις[#]Μυστική Ανταλλαγή Δώρων",
+      "glossaryIds": [
+        "mayor-lewis",
+        "feast-winter-star"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "ccBulletinThankYou",
+      "source": "Dear @,^Everyone around town has been talking about your great generosity lately!^Apparently, packages have been appearing in people's houses containing items they posted about years ago on the community center bulletin! And the packages are all addressed from your farm!^Thanks for going out of your way to do something like that... all of us in town are delighted! ^   -Mayor Lewis[#]Bulletin Board Thank-you",
+      "translation": "Γεια σου, @,^Όλοι στην πόλη μιλούν τελευταία για τη μεγάλη σου γενναιοδωρία!^Από ό,τι φαίνεται, εμφανίζονται στα σπίτια των κατοίκων δέματα που περιέχουν αντικείμενα για τα οποία είχαν γράψει πριν από χρόνια στον πίνακα ανακοινώσεων του Κοινοτικού Κέντρου! Και όλα τα δέματα έχουν ως αποστολέα το αγρόκτημά σου!^Ευχαριστούμε που μπήκες σε τόσο κόπο για κάτι τέτοιο... όλοι μας στην πόλη είμαστε ενθουσιασμένοι! ^   -Δήμαρχος Λιούις[#]Ευχαριστήριο του Πίνακα Ανακοινώσεων",
+      "glossaryIds": [
+        "mayor-lewis",
+        "community-center"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "guildQuest",
+      "source": "I see you've been exploring the old mine. You've got the adventurer's spirit, that much I can tell.^If you can slay 10 slimes, you'll have earned your place in my adventurer's guild. ^Be careful.    -Marlon %item quest 15 true %%[#]Quest To Slay Slimes",
+      "translation": "Βλέπω πως εξερευνάς το παλιό ορυχείο. Διαθέτεις πνεύμα περιπέτειας, αυτό είναι βέβαιο.^Αν εξοντώσεις 10 Γλίτσες, θα έχεις κερδίσει τη θέση σου στη Συντεχνία Τυχοδιωκτών. ^Πρόσεχε.    -Μάρλον %item quest 15 true %%[#]Αποστολή Εξόντωσης Γλιτσών",
+      "glossaryIds": [
+        "marlon",
+        "slime-monster",
+        "adventurers-guild"
+      ]
+    }
+  ]
+}

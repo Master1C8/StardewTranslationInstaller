@@ -1,0 +1,434 @@
+{
+  "id": "0006-ui-farms-menus",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "4b93bf7f5c2c52c49a593bf9e81879bf61995a9d98c798f2d68131477eeb712a",
+    "notes": "All 70 pairs read. Corrected and re-read NumberShipped to make it quantity of items, not shipment count. Farm titles, skill names and stats follow glossary. Farm underscores, double newlines and placeholders preserved. Clint speaks casually in singular; neutral interface prompts use plural."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Character_Shirt",
+      "source": "Shirt",
+      "translation": "Πουκάμισο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_PantsColor",
+      "source": "Pants Color:",
+      "translation": "Χρώμα Παντελονιού:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_ShirtColor",
+      "source": "Shirt Color:",
+      "translation": "Χρώμα Πουκαμίσου:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_DyeColor",
+      "source": "Dye Color:",
+      "translation": "Χρώμα Βαφής:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_SkipIntro",
+      "source": "Skip Intro",
+      "translation": "Παράλειψη Εισαγωγής"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Pants",
+      "source": "Pants",
+      "translation": "Παντελόνι"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Accessory",
+      "source": "Acc.",
+      "translation": "Αξεσ."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmNameSuffix",
+      "source": "Farm",
+      "translation": "Αγρόκτημα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmStandard",
+      "source": "Standard Farm_A simple plot of land, with a large amount of open space to design your farm.",
+      "translation": "Τυπικό Αγρόκτημα_Απλό κομμάτι γης με άφθονο ελεύθερο χώρο για να σχεδιάσετε το αγρόκτημά σας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmForaging",
+      "source": "Forest Farm_The woods limit your farming space. However, the bounty of the forest is nearly at your doorstep...",
+      "translation": "Δασικό Αγρόκτημα_Τα δέντρα περιορίζουν τον χώρο καλλιέργειας. Όμως, τα πλούτη του δάσους βρίσκονται σχεδόν στο κατώφλι σας..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmFishing",
+      "source": "Riverland Farm_Your farm is spread across several islands and scenic riverbanks. Fish are more common here than usual. You start with a fish smoker.",
+      "translation": "Παραποτάμιο Αγρόκτημα_Το αγρόκτημά σας απλώνεται σε πολλά νησιά και γραφικές όχθες ποταμών. Τα ψάρια εδώ είναι πιο άφθονα από το συνηθισμένο. Ξεκινάτε με ένα καπνιστήριο ψαριών."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmMining",
+      "source": "Hill-top Farm_Rocky terrain and a winding river make it difficult to design your farm. However, a mineral deposit provides mining opportunities.",
+      "translation": "Αγρόκτημα Λόφου_Το βραχώδες έδαφος και ένα ποτάμι με πολλές στροφές δυσκολεύουν τον σχεδιασμό του αγροκτήματός σας. Ωστόσο, ένα κοίτασμα ορυκτών προσφέρει ευκαιρίες εξόρυξης."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmCombat",
+      "source": "Wilderness Farm_There's plenty of good land here, but beware... at night the monsters come out.",
+      "translation": "Αγρόκτημα Άγριας Φύσης_Εδώ υπάρχει άφθονη καλή γη, αλλά προσέξτε... τη νύχτα βγαίνουν τα τέρατα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmFourCorners",
+      "source": "Four Corners Farm_The land is divided into four parcels, each with its own perk. Perfect for a group!",
+      "translation": "Αγρόκτημα Τεσσάρων Γωνιών_Η γη χωρίζεται σε τέσσερα τμήματα, καθένα με το δικό του πλεονέκτημα. Ιδανικό για παρέα!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_foraging",
+      "source": "foraging",
+      "translation": "συλλογή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_fishing",
+      "source": "fishing",
+      "translation": "ψάρεμα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_mining",
+      "source": "mining",
+      "translation": "εξόρυξη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_combat",
+      "source": "combat",
+      "translation": "μάχη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "JukeboxMenu_Title",
+      "source": "Jukebox",
+      "translation": "Τζουκμπόξ"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Shipped",
+      "source": "Items Shipped (Farm & Forage)",
+      "translation": "Απεσταλμένα Αντικείμενα (Αγρόκτημα και Συλλογή)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Fish",
+      "source": "Fish",
+      "translation": "Ψάρια"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Artifacts",
+      "source": "Artifacts",
+      "translation": "Τεχνουργήματα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Minerals",
+      "source": "Minerals",
+      "translation": "Ορυκτά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Cooking",
+      "source": "Cooking",
+      "translation": "Μαγειρική"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Achievements",
+      "source": "Achievements",
+      "translation": "Επιτεύγματα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_SecretNotes",
+      "source": "Secret Notes",
+      "translation": "Μυστικά Σημειώματα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Description_ArtifactsFound",
+      "source": "Total Found: {0}",
+      "translation": "Σύνολο Ευρημάτων: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Description_RecipesCooked",
+      "source": "Times Cooked: {0}",
+      "translation": "Φορές που Μαγειρεύτηκε: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Description_FishCaught",
+      "source": "Number Caught: {0}",
+      "translation": "Αριθμός Αλιευμάτων: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Description_BiggestCatch",
+      "source": "Biggest Catch: {0}",
+      "translation": "Μεγαλύτερο Αλίευμα: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Description_MineralsFound",
+      "source": "Number Found: {0}",
+      "translation": "Αριθμός Ευρημάτων: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Description_NumberShipped",
+      "source": "Number Shipped: {0}",
+      "translation": "Ποσότητα που Απεστάλη: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "QuestButton_Hover",
+      "source": "Journal ({0})",
+      "translation": "Ημερολόγιο ({0})"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "QuestButton_Hover_Console",
+      "source": "Journal",
+      "translation": "Ημερολόγιο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ZoomInButton_Hover",
+      "source": "Zoom In",
+      "translation": "Μεγέθυνση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ZoomOutButton_Hover",
+      "source": "Zoom Out",
+      "translation": "Σμίκρυνση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ExitToTitle",
+      "source": "Exit To Title",
+      "translation": "Επιστροφή στην Οθόνη Τίτλου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ExitToDesktop",
+      "source": "Exit To Desktop",
+      "translation": "Έξοδος στην Επιφάνεια Εργασίας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Inventory",
+      "source": "Inventory",
+      "translation": "Απόθεμα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Skills",
+      "source": "Skills",
+      "translation": "Δεξιότητες"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Social",
+      "source": "Social",
+      "translation": "Κοινωνικά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Map",
+      "source": "Map",
+      "translation": "Χάρτης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Crafting",
+      "source": "Crafting",
+      "translation": "Κατασκευή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Collections",
+      "source": "Collections",
+      "translation": "Συλλογές"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Options",
+      "source": "Options",
+      "translation": "Επιλογές"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_Exit",
+      "source": "Exit Game",
+      "translation": "Έξοδος από το Παιχνίδι"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_JunimoNote_Hover",
+      "source": "Community Center",
+      "translation": "Κοινοτικό Κέντρο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GeodeMenu_InventoryFull",
+      "source": "You don't have enough room in your inventory.",
+      "translation": "Δεν έχετε αρκετό χώρο στο απόθεμά σας."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GeodeMenu_Description_NotEnoughMoney",
+      "source": "The price is 25g per geode...\n\nIt looks you can't afford it right now.",
+      "translation": "Η τιμή είναι 25g ανά γεώδιο...\n\nΜάλλον δεν σου φτάνουν τα χρήματα τώρα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GeodeMenu_Description",
+      "source": "Just place your geodes on my anvil and I'll give them a whack.\n\nThe price is 25g per geode.",
+      "translation": "Βάλε απλώς τα γεώδιά σου στο αμόνι μου κι εγώ θα τα κοπανήσω.\n\nΗ τιμή είναι 25g ανά γεώδιο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_DefenseBonus",
+      "source": "+{0} Defense",
+      "translation": "+{0} Άμυνα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_ImmunityBonus",
+      "source": "+{0} Immunity",
+      "translation": "+{0} Ανοσία"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_CritChanceBonus",
+      "source": "+{0} Crit. Chance",
+      "translation": "+{0} Πιθανότητα Κρίσιμου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_CritPowerBonus",
+      "source": "+{0} Crit. Power",
+      "translation": "+{0} Ισχύς Κρίσιμου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Damage",
+      "source": "{0}-{1} Damage",
+      "translation": "{0}-{1} Ζημιά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Speed",
+      "source": "{0} Speed",
+      "translation": "{0} Ταχύτητα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Weight",
+      "source": "{0} Weight",
+      "translation": "{0} Βάρος"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Energy",
+      "source": "{0} Energy",
+      "translation": "{0} Ενέργεια"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Health",
+      "source": "{0} Health",
+      "translation": "{0} Υγεία"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff0",
+      "source": "{0} Farming",
+      "translation": "{0} Γεωργία"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff1",
+      "source": "{0} Fishing",
+      "translation": "{0} Ψάρεμα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff2",
+      "source": "{0} Mining",
+      "translation": "{0} Εξόρυξη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff3",
+      "source": "{0} Combat",
+      "translation": "{0} Μάχη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff4",
+      "source": "{0} Luck",
+      "translation": "{0} Τύχη"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff5",
+      "source": "{0} Foraging",
+      "translation": "{0} Συλλογή"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff6",
+      "source": "{0} Max Energy",
+      "translation": "{0} Μέγ. Ενέργεια"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff7",
+      "source": "{0} Max Energy",
+      "translation": "{0} Μέγ. Ενέργεια"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff8",
+      "source": "{0} Magnetism",
+      "translation": "{0} Μαγνητισμός"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff9",
+      "source": "{0} Speed",
+      "translation": "{0} Ταχύτητα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_Buff10",
+      "source": "{0} Defense",
+      "translation": "{0} Άμυνα"
+    }
+  ]
+}

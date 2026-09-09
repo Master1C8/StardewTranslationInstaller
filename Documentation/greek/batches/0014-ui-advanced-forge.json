@@ -1,0 +1,422 @@
+{
+  "id": "0014-ui-advanced-forge",
+  "kind": "short",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "49dd3814da9df3d9238d11921f859bf32fee53df57747657d96b63efd92ac009",
+    "notes": "All 67 pairs read in full. Corrected enchanting to the locked glossary μάγεμα and re-read that pair. Advanced settings retain gameplay effects and recommendations; glossary names for beach farm, cinder shards, special orders, random seed and unforge applied. Deferred the three dynamic construction/possessive chat templates for joint grammar review with Lexicon. Follow-up glossary consistency check corrected the single Forge_noroom instance from σακίδιο to απόθεμα; the changed source/Greek pair was re-read. All other records remain as fully reviewed."
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB_Tooltip",
+      "source": "Modifies the bundles that appear in the Community Center.",
+      "translation": "Αλλάζει τα πακέτα που εμφανίζονται στο Κοινοτικό Κέντρο."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB_Normal",
+      "source": "Normal",
+      "translation": "Κανονικά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB_Remixed",
+      "source": "Remixed",
+      "translation": "Ανασυνδυασμένα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_Year1Completable",
+      "source": "Guarantee Year 1 Completable",
+      "translation": "Εγγυημένη Δυνατότητα Ολοκλήρωσης το Έτος 1"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_Year1Completable_Tooltip",
+      "source": "Ensures that the Traveling Merchant sells a Red Cabbage seed some time during the first year.",
+      "translation": "Εξασφαλίζει ότι η Πλανόδια Έμπορος θα πουλήσει σπόρο Κόκκινου Λάχανου κάποια στιγμή μέσα στο πρώτο έτος."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_MineTreasureShuffle",
+      "source": "Mine Rewards:",
+      "translation": "Ανταμοιβές Ορυχείων:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_MineTreasureShuffle_Tooltip",
+      "source": "Modifies the rewards that appear in the Mines.",
+      "translation": "Αλλάζει τις ανταμοιβές που εμφανίζονται στα Ορυχεία."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_FarmMonsters",
+      "source": "Spawn monsters on the farm",
+      "translation": "Εμφάνιση τεράτων στο αγρόκτημα"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_FarmMonsters_Tooltip",
+      "source": "Allows monsters to spawn at night.",
+      "translation": "Επιτρέπει την εμφάνιση τεράτων τη νύχτα."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_ProfitMargin_Tooltip",
+      "source": "A multiplier applied to the price of items sold.",
+      "translation": "Συντελεστής που εφαρμόζεται στην τιμή πώλησης των αντικειμένων."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_MPOptions_Label",
+      "source": "Multiplayer Options:",
+      "translation": "Επιλογές Παιχνιδιού Πολλών Παικτών:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_StartingCabins_Tooltip",
+      "source": "The number of starting cabins.",
+      "translation": "Ο αριθμός των αρχικών καλυβών."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_OtherOptions_Label",
+      "source": "Other Options:",
+      "translation": "Άλλες Επιλογές:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CabinLayout_Tooltip",
+      "source": "Whether the cabins are placed closer or further away from one another.",
+      "translation": "Καθορίζει αν οι καλύβες θα βρίσκονται κοντά ή μακριά η μία από την άλλη."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_RandomSeed",
+      "source": "Random Seed:",
+      "translation": "Αρχική Τιμή Τυχαιότητας:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_RandomSeed_Tooltip",
+      "source": "The seed used to randomize the game world.",
+      "translation": "Η αρχική τιμή που χρησιμοποιείται για την τυχαία διαμόρφωση του κόσμου του παιχνιδιού."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_LegacyRandomization",
+      "source": "Use Legacy Randomization",
+      "translation": "Χρήση Παλιού Συστήματος Τυχαιότητας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_LegacyRandomization_Tooltip",
+      "source": "Make random choices in a way that often repeats patterns. Most players should keep this disabled.",
+      "translation": "Κάνει τυχαίες επιλογές με τρόπο που συχνά επαναλαμβάνει μοτίβα. Για τους περισσότερους παίκτες προτείνεται να παραμείνει ανενεργό."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_SlingshotMode",
+      "source": "Slingshot Fire Mode",
+      "translation": "Τρόπος Βολής Σφεντόνας"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_SlingshotMode_Hold",
+      "source": "Hold and release",
+      "translation": "Κρατήστε πατημένο και αφήστε"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_SlingshotMode_Pull",
+      "source": "Pull in opposite direction",
+      "translation": "Τραβήξτε προς την αντίθετη κατεύθυνση"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Bed_InUse",
+      "source": "Cannot move a bed that is currently being used.",
+      "translation": "Δεν μπορείτε να μετακινήσετε κρεβάτι που χρησιμοποιείται αυτή τη στιγμή."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Bed_CantMoveOthersBeds",
+      "source": "You cannot move beds in another player's house.",
+      "translation": "Δεν μπορείτε να μετακινήσετε κρεβάτια στο σπίτι άλλου παίκτη."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Bed_NeedsUpgrade",
+      "source": "Bed type cannot be placed without further house upgrades.",
+      "translation": "Αυτός ο τύπος κρεβατιού απαιτεί επιπλέον αναβαθμίσεις του σπιτιού για να τοποθετηθεί."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost",
+      "source": "Disconnected from the game session. {0}",
+      "translation": "Αποσυνδεθήκατε από την παρτίδα. {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost_UserLeft",
+      "source": "(User left session)",
+      "translation": "(Ο χρήστης αποχώρησε από την παρτίδα)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost_LobbyClosed",
+      "source": "(Session ended)",
+      "translation": "(Η παρτίδα ολοκληρώθηκε)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost_ConnectionLost",
+      "source": "(Lost connection to lobby server)",
+      "translation": "(Χάθηκε η σύνδεση με τον διακομιστή του λόμπι)"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyJoined",
+      "source": "Connected to game session. {0}",
+      "translation": "Συνδεθήκατε στην παρτίδα. {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyRecreated",
+      "source": "Established a new game session. {0}",
+      "translation": "Δημιουργήθηκε νέα παρτίδα. {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyJoined_InviteCode",
+      "source": "(Invite code: {0})",
+      "translation": "(Κωδικός πρόσκλησης: {0})"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyCreateFail",
+      "source": "Failed to create a new game session...",
+      "translation": "Αποτυχία δημιουργίας νέας παρτίδας..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_StartingServer",
+      "source": "You are now hosting a multiplayer game.",
+      "translation": "Τώρα φιλοξενείτε ένα παιχνίδι πολλών παικτών."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DisablingServer",
+      "source": "You are no longer hosting a multiplayer game.",
+      "translation": "Δεν φιλοξενείτε πλέον παιχνίδι πολλών παικτών."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Farmhand_Locked",
+      "source": "This character belongs to another player.",
+      "translation": "Αυτός ο χαρακτήρας ανήκει σε άλλον παίκτη."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_Unforge",
+      "source": "Unforge",
+      "translation": "Αναίρεση Σφυρηλάτησης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Item_Tooltip_Forged",
+      "source": "Forged",
+      "translation": "Σφυρηλατημένο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LocalJoinPrompt",
+      "source": "Press * to join game.",
+      "translation": "Πατήστε * για να μπείτε στο παιχνίδι."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "StartLocalMulti",
+      "source": "Start Local Co-op",
+      "translation": "Έναρξη Τοπικού Συνεργατικού Παιχνιδιού"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DropOutLocalMulti",
+      "source": "Leave Game",
+      "translation": "Αποχώρηση από το Παιχνίδι"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChooseOne",
+      "source": "Choose One:",
+      "translation": "Επιλέξτε Ένα:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_PaintBuildings",
+      "source": "Paint Buildings",
+      "translation": "Βάψιμο Κτιρίων"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CannotPaint",
+      "source": "This building cannot be painted",
+      "translation": "Αυτό το κτίριο δεν βάφεται"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CannotPaint_Permission",
+      "source": "You do not have permission to paint this building",
+      "translation": "Δεν έχετε άδεια να βάψετε αυτό το κτίριο"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions",
+      "source": "Building Move Mode",
+      "translation": "Δικαιώματα Μετακίνησης Κτιρίων"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_Off",
+      "source": "Host Only",
+      "translation": "Μόνο ο Οικοδεσπότης"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_Owned",
+      "source": "Building Owner Only",
+      "translation": "Μόνο ο Ιδιοκτήτης του Κτιρίου"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_On",
+      "source": "Everyone",
+      "translation": "Όλοι"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmBeach",
+      "source": "Beach Farm_Good foraging and fishing, and tons of open space. Sometimes, supply crates wash up on shore. However, sprinklers don't work in the sandy soil.",
+      "translation": "Παραλιακό Αγρόκτημα_Καλό για συλλογή και ψάρεμα, με άφθονο ελεύθερο χώρο. Μερικές φορές, η θάλασσα ξεβράζει κιβώτια με εφόδια στην ακτή. Ωστόσο, οι ποτιστήρες δεν λειτουργούν στο αμμώδες έδαφος."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_enchanting",
+      "source": "Now enchanting...",
+      "translation": "Γίνεται μάγεμα...",
+      "glossaryIds": [
+        "enchant-enchantment"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_forging",
+      "source": "Now forging...",
+      "translation": "Γίνεται σφυρηλάτηση..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_description1",
+      "source": "Place weapon or tool in the left slot. Place gemstone in the right slot.",
+      "translation": "Τοποθετήστε όπλο ή εργαλείο στην αριστερή θέση. Τοποθετήστε πολύτιμο λίθο στη δεξιά θέση."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_description2",
+      "source": "You can also combine two rings.",
+      "translation": "Μπορείτε επίσης να συνδυάσετε δύο δαχτυλίδια."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_shards",
+      "source": "Cinder shards are automatically consumed when forging.",
+      "translation": "Τα Θραύσματα Στάχτης καταναλώνονται αυτόματα κατά τη σφυρηλάτηση."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_notenoughshards",
+      "source": "Not enough cinder shards...",
+      "translation": "Δεν υπάρχουν αρκετά Θραύσματα Στάχτης..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_wrongorder",
+      "source": "Incorrect order",
+      "translation": "Λάθος σειρά"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_noroom",
+      "source": "No room in inventory...",
+      "translation": "Δεν υπάρχει χώρος στο απόθεμα...",
+      "glossaryIds": [
+        "inventory-full"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_unforge_right_slot",
+      "source": "Empty out the right slot to unforge...",
+      "translation": "Αδειάστε τη δεξιά θέση για να αναιρέσετε τη σφυρηλάτηση..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_unforge_invalid",
+      "source": "Only forged items and combined rings can be unforged...",
+      "translation": "Η αναίρεση σφυρηλάτησης εφαρμόζεται μόνο σε σφυρηλατημένα αντικείμενα και συνδυασμένα δαχτυλίδια..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_valid",
+      "source": "Press the power button to begin forging!",
+      "translation": "Πατήστε το κουμπί λειτουργίας για να ξεκινήσει η σφυρηλάτηση!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CommunityUpgrade",
+      "source": "{0} has requested a community upgrade!",
+      "translation": "{0} ζήτησε αναβάθμιση της κοινότητας!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_AcceptedSpecialOrder",
+      "source": "{0} has accepted the special order '{1}'!",
+      "translation": "{0} ανέλαβε την Ειδική Παραγγελία «{1}»!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CompletedSpecialOrder",
+      "source": "The special order '{0}' has been fulfilled!",
+      "translation": "Η Ειδική Παραγγελία «{0}» ολοκληρώθηκε!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DartsWin",
+      "source": "{0} has won a game of darts in {1} throws!",
+      "translation": "{0} κέρδισε μια παρτίδα βελάκια με {1} ρίψεις!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DartsWinPerfect",
+      "source": "{0} has won a perfect game of darts!",
+      "translation": "{0} κέρδισε μια τέλεια παρτίδα βελάκια!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_OffTheIsland",
+      "source": "Off the island...",
+      "translation": "Έξω απ' το νησί..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_Bull",
+      "source": "Bull!",
+      "translation": "Κέντρο!"
+    }
+  ]
+}

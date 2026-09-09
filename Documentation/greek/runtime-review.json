@@ -1,0 +1,55 @@
+{
+  "scope": "Greek construction articles, NPC reference formatting, random-word dialogue grammar, and non-game native isolation probes; full live release runtime QA pending",
+  "build": "passed with installed csc against native game assemblies",
+  "probe": "passed",
+  "isolationCases": 48,
+  "greekCases": 6,
+  "renderedConstructionMessages": 2,
+  "files": {
+    "/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS/Stardew Valley.dll": "8937c582cad1c1127017944778c4102467bf299aea44869491f28ab0ec84cd73",
+    "Tools/VNRevivalLanguageSwitcher/ModEntry.cs": "ecd4c14ee497fe007fccf38f4d5f503b1799ff99bbd68b2a8dbcf29dda429769",
+    "Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/VNRevival.LanguageSwitcher.dll": "343769ed621160aa5954b30730d47a54f29f717f29d493290e78e00acb03db72",
+    "Tools/GreekRuntimeProbe/Program.cs": "4d8c24a271dd23e771af90a027c0edd8f9dda02d0503a84ca79f67aa2995c6b3",
+    "Scripts/greek-runtime-probe.py": "53670e8f0151212842149d3276bd07358064d64bf19f2e35b3dde61b2ea6d42a",
+    "Scripts/greek-batches.py": "4181ce101ea8483b5f79c8b03bf2922fc85b2d49f82ff770919eda6019f223fe"
+  },
+  "liveRuntimeQA": {
+    "date": "2026-09-09",
+    "status": "smapi-passed-visual-owner-pending",
+    "gameVersion": "1.6.15 build 24356",
+    "smapiVersion": "4.5.2",
+    "contentPatcherVersion": "2.9.0",
+    "locale": "el-vnrevival",
+    "loadedAssets": [
+      "Fonts/SpriteFont1.el-vnrevival",
+      "Fonts/SmallFont.el-vnrevival",
+      "Minigames/TitleButtons.el-vnrevival"
+    ],
+    "adjacentContentPatcherErrors": 0,
+    "notes": "Fresh isolated launch reached titleScreenGameMode and set the Content Patcher context to el-vnrevival. The original Burmese startup preference was restored byte-for-byte after exit. Owner elected to perform the visual inspection personally."
+  },
+  "npcReferenceProbe": {
+    "nativeOverloadAndIsolationCases": 6111,
+    "greekCases": 679,
+    "nonGreekIsolationCases": 5432,
+    "renderedRelations": 21,
+    "movieReferenceCases": 1764,
+    "referencedKeys": 19,
+    "formatters": [
+      "LocalizedContentManager.LoadString: four formatting overloads",
+      "Game1.LoadStringByGender: params overload, both speaker genders"
+    ],
+    "status": "passed",
+    "notes": "Actual native Harmony formatting methods; fake read-only template source and two native CharacterData name/gender records. Display names, raw internal names, pre-articled relations and unknown references covered. Caller substitution arrays remain unchanged. Explicit ref-argument prefixes required: generic Harmony __args mutation failed to update formatted arguments on this bundled runtime and was replaced."
+  },
+  "randomWordProbe": {
+    "status": "passed",
+    "nativeRngAndIsolationCases": 720,
+    "nonGreekCases": 640,
+    "greekCases": 80,
+    "adjectiveNounCombinations": 460,
+    "celestialNameCases": 46,
+    "independentAgreementExamples": 9,
+    "notes": "Actual Dialogue.checkForSpecialCharacters before/after Harmony postfix, with identical next RNG values. Minimal uninitialized Game1/Farmer/Dialogue fixtures avoid game startup. All four original source token contexts exercised. Grammar asset supplied by fake content loader in probe; live Content Patcher loading pending."
+  }
+}

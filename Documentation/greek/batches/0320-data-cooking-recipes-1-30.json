@@ -1,0 +1,224 @@
+{
+  "id": "0320-data-cooking-recipes-1-30",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "d10a049de44c746ea7d50ed496a881b16b5cd2c57451f67098b9ab14fc41ff9f",
+    "notes": "Two-pass structural review against the authoritative source. Confirmed all 30 values are slash-delimited technical recipe definitions only; every ingredient ID, amount, output ID, unlock condition, NPC or skill identifier, and field boundary is preserved byte-for-byte. Visible names resolve through object strings."
+  },
+  "records": [
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Fried Egg",
+      "source": "-5 1/10 10/194/default/",
+      "translation": "-5 1/10 10/194/default/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Omelet",
+      "source": "-5 1 -6 1/1 10/195/l 10/",
+      "translation": "-5 1 -6 1/1 10/195/l 10/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Salad",
+      "source": "20 1 22 1 419 1/25 5/196/f Emily 3/",
+      "translation": "20 1 22 1 419 1/25 5/196/f Emily 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Cheese Cauli.",
+      "source": "190 1 424 1/5 5/197/f Pam 3/",
+      "translation": "190 1 424 1/5 5/197/f Pam 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Baked Fish",
+      "source": "145 1 132 1 246 1/6 5/198/l 12/",
+      "translation": "145 1 132 1 246 1/6 5/198/l 12/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Parsnip Soup",
+      "source": "24 1 -6 1 419 1/1 8/199/f Caroline 3/",
+      "translation": "24 1 -6 1 419 1/1 8/199/f Caroline 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Vegetable Stew",
+      "source": "256 1 284 1/1 8/200/f Caroline 7/",
+      "translation": "256 1 284 1/1 8/200/f Caroline 7/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Complete Breakfast",
+      "source": "194 1 -6 1 210 1 211 1/2 2/201/l 26/",
+      "translation": "194 1 -6 1 210 1 211 1/2 2/201/l 26/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Fried Calamari",
+      "source": "151 1 246 1 247 1/3 3/202/f Jodi 3/",
+      "translation": "151 1 246 1 247 1/3 3/202/f Jodi 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Strange Bun",
+      "source": "246 1 722 1 308 1/1 1/203/f Shane 7/",
+      "translation": "246 1 722 1 308 1/1 1/203/f Shane 7/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Lucky Lunch",
+      "source": "154 1 229 1 597 1/20 1/204/s Luck 8/",
+      "translation": "154 1 229 1 597 1/20 1/204/s Luck 8/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Fried Mushroom",
+      "source": "404 1 257 1 247 1/22 3/205/f Demetrius 3/",
+      "translation": "404 1 257 1 247 1/22 3/205/f Demetrius 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Pizza",
+      "source": "246 1 256 1 424 1/6 4/206/l 20/",
+      "translation": "246 1 256 1 424 1/6 4/206/l 20/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Bean Hotpot",
+      "source": "188 2/1 8/207/f Clint 7/",
+      "translation": "188 2/1 8/207/f Clint 7/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Glazed Yams",
+      "source": "280 1 245 1/1 10/208/l 22/",
+      "translation": "280 1 245 1/1 10/208/l 22/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Carp Surprise",
+      "source": "142 4/1 6/209/l 16/",
+      "translation": "142 4/1 6/209/l 16/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Hashbrowns",
+      "source": "192 1 247 1/1 9/210/l 14/",
+      "translation": "192 1 247 1/1 9/210/l 14/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Pancakes",
+      "source": "246 1 -5 1/5 5/211/l 18/",
+      "translation": "246 1 -5 1/5 5/211/l 18/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Salmon Dinner",
+      "source": "139 1 300 1 250 1/3 3/212/f Gus 3/",
+      "translation": "139 1 300 1 250 1/3 3/212/f Gus 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Fish Taco",
+      "source": "130 1 229 1 266 1 306 1/1 4/213/f Linus 7/",
+      "translation": "130 1 229 1 266 1 306 1/1 4/213/f Linus 7/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Crispy Bass",
+      "source": "136 1 246 1 247 1/1 5/214/f Kent 3/",
+      "translation": "136 1 246 1 247 1/1 5/214/f Kent 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Pepper Poppers",
+      "source": "260 1 424 1/10 3/215/f Shane 3/",
+      "translation": "260 1 424 1/10 3/215/f Shane 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Bread",
+      "source": "246 1/50 2/216/l 11/",
+      "translation": "246 1/50 2/216/l 11/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Tom Kha Soup",
+      "source": "88 1 720 1 404 1/15 2/218/f Sandy 7/",
+      "translation": "88 1 720 1 404 1/15 2/218/f Sandy 7/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Trout Soup",
+      "source": "138 1 153 1/5 4/219/l 19/",
+      "translation": "138 1 153 1/5 4/219/l 19/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Chocolate Cake",
+      "source": "246 1 245 1 -5 1/5 5/220/l 23/",
+      "translation": "246 1 245 1 -5 1/5 5/220/l 23/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Pink Cake",
+      "source": "254 1 246 1 245 1 -5 1/6 5/221/l 25/",
+      "translation": "254 1 246 1 245 1 -5 1/6 5/221/l 25/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Rhubarb Pie",
+      "source": "252 1 246 1 245 1/2 4/222/f Marnie 7/",
+      "translation": "252 1 246 1 245 1/2 4/222/f Marnie 7/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Cookies",
+      "source": "246 1 245 1 -5 1/3 7/223/null/",
+      "translation": "246 1 245 1 -5 1/3 7/223/null/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    },
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Spaghetti",
+      "source": "246 1 256 1/5 5/224/f Lewis 3/",
+      "translation": "246 1 256 1/5 5/224/f Lewis 3/",
+      "preserveReason": "Technical cooking recipe definition; ingredient IDs, quantities, unlock conditions, output IDs, skill gates, NPC IDs, and slash-delimited fields must remain exact. Player-visible recipe names are localized through object strings."
+    }
+  ]
+}

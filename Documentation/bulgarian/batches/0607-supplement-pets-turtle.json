@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "0607-supplement-pets-turtle",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Pets",
+  "status": "reviewed",
+  "entries": {
+    "Turtle.DisplayName": "Костенурка"
+  },
+  "preserveReasons": {},
+  "sourceHashes": {
+    "Turtle.DisplayName": "5171ce3048d31e55453e6465e144e041ac1128ae40ac6f5f4b54bd7bf8e987c8"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Reviewed the literal Turtle DisplayName directly from the typed English PetData extraction.",
+      "Applied the locked pet-type term Костенурка consistently with the existing character-creation and island strings.",
+      "Confirmed with installed-assembly IL that PetData.DisplayName is parsed and inserted into the player-facing adoption question."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "af0bc7ac32aa9c15bff81ba7d8e86954cbf66d6f388eeaa17003cf48de079472"
+  }
+}

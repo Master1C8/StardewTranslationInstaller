@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "0386-npc-gift-tastes-000-009",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/NPCGiftTastes",
+  "status": "reviewed",
+  "entries": {
+    "Universal_Love": "74 446 797 373 279",
+    "Universal_Like": "-2 -7 -26 -75 -80 72 395 613 634 635 636 637 638 724 459 873 394 166",
+    "Universal_Neutral": "194 216 262 304 815 book_item",
+    "Universal_Dislike": "-4 -8 -12 -15 -16 -19 -22 -24 -25 -28 -74 78 169 246 247 305 309 310 311 403 419 423 535 536 537 725 726 749 271 Book_PriceCatalogue category_trinket",
+    "Universal_Hate": "0 -20 -21 92 110 111 112 142 152 153 157 178 105 168 170 171 172 374 376 378 380 397 420 684 721 766 767 772 203 308 265 909 910",
+    "Robin": "Това е за мен? Уау, направо го обожавам!!/224 426 636 Book_Woodcutting/Благодаря! Наистина е много хубаво!/-6 -79 424 709 SkillBook_2/Ъм... защо?/16 330/Какво, по...? Това е ужасно!//Благодаря. Може да ми влезе в употреба.//",
+    "Demetrius": "Даваш това на мен? Невероятно е!/207 232 233 400/Благодаря! Това е много интересен екземпляр./-5 -79 422 107/...Какво е това?/80 330/Това е отвратително.//Много мило от твоя страна./-4/",
+    "Maru": "Това...? О, уау, @! Великолепно е!/72 197 190 215 222 243 336 337 400 787 910 122/Страхотен подарък! Благодаря!/-260 62 64 66 68 70 334 335 725 726 909 edible_mushroom/О... Това е за мен? Просто ще го сложа ей тук.../-4 330 414 410 404 724/Гадост! Реши, че това ще ми хареса?/340 342 430 416/Благодаря.//",
+    "Sebastian": "Наистина обожавам това. Как разбра?/84 227 236 575 305 FrogEgg/Благодаря, харесва ми./267 614 276 Book_Void SkillBook_4/...?/-81 -80/...Мразя това./-5 459 195 201 240 330 -26 873/...благодаря./-4/",
+    "Linus": "Прекрасно е! Наистина направи деня ми специален./88 90 234 242 280 Book_Trash/Чудесен подарък. Благодаря!/-5 -6 -79 -81/Хм... Това не ми е особено полезно./-2 330 166/Защо ми даваш това? Мислиш, че харесвам боклуци само защото живея в палатка? Ужасно е.//Подарък? Колко мило./774 -4 142/"
+  },
+  "preserveReasons": {
+    "Universal_Love": "Structural universal gift-taste item and category identifiers with no player-facing prose; preserved byte-for-byte.",
+    "Universal_Like": "Structural universal gift-taste item and category identifiers with no player-facing prose; preserved byte-for-byte.",
+    "Universal_Neutral": "Structural universal gift-taste item and category identifiers with no player-facing prose; preserved byte-for-byte.",
+    "Universal_Dislike": "Structural universal gift-taste item and category identifiers with no player-facing prose; preserved byte-for-byte.",
+    "Universal_Hate": "Structural universal gift-taste item and category identifiers with no player-facing prose; preserved byte-for-byte."
+  },
+  "sourceHashes": {
+    "Universal_Love": "0f0d1b889aa22dc83cf63f159a8a2ad07910a81cf976fc4436fa32590e749a10",
+    "Universal_Like": "09d63ba08ead185ab4eea7f85171a0fc36e14fe43b0b056b0a877da3901b8605",
+    "Universal_Neutral": "88b2e977107aa956872a1a0a636b43e4e8cfb7bfdd0450014537c58e1697eb1a",
+    "Universal_Dislike": "d5e8b8089670a160e998c7dfa478426a9d169833bb44db45358326d6b529cfd8",
+    "Universal_Hate": "fedc25be7d592c7421ae38add7ac85eb77449bdcb05aa5a355969053e29e1f3d",
+    "Robin": "c9aa6e9538bac4524b30dc4b43a5403a95318840919f16dfd597f39b3b8b3b21",
+    "Demetrius": "491bdd4cb76ae39d779cb8eee509737faed32833e36c12f192e40cc38f2f88b8",
+    "Maru": "9917459652d82e017219a72510f41c6ceb888282d277b4828b04802f3c950935",
+    "Sebastian": "bd6c8fe7452391daf90b92050db0912c0d26bdf5319e706ac63fab8f6b09059a",
+    "Linus": "ea6d8a0ee34a353dcfd81df60765e8b1e44039c301a188faf71b9f23af40e667"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 10,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Classified the five Universal records as item and category identifier lists and preserved them byte-for-byte with explicit reasons.",
+      "Translated all five love, like, dislike, hate and neutral reactions for Robin, Demetrius, Maru, Sebastian and Linus directly from English while retaining every gift identifier field and control marker exactly.",
+      "Reread all twenty-five reactions for each character’s established voice, natural Bulgarian phrasing and correct emotional intensity."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "8357baf2dafc89d1114006eae933822deafe3c6fd610ad47e2bc439cee929dcc"
+  }
+}

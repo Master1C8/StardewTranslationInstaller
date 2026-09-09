@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Trailer_Big",
+      "When": {
+        "Language": "ro-vnrevival"
+      },
+      "Entries": {
+        "503180/f Pam 2250/A pamHouseUpgrade/A pamHouseUpgradeAnonymous/Hn pamHouseUpgrade": "shaneTheme/-1000 -1000/farmer 18 11 1 Pam 25 9 1/skippable/specificTemporarySprite pamYobaStatue/viewport 25 9 true/move farmer 6 0 1/move farmer 0 -1 1/faceDirection Pam 2/pause 300/speak Pam \"Hei...\"/faceDirection Pam 1/pause 500/speak Pam \"M-ai prins rugându-mă...\"/pause 500/move farmer 3 0 0/move farmer 0 -1 3/pause 500/speak Pam \"Aceasta este noua mea statuie „Semnul Vasului”.#$b#...Am comandat-o de pe Joja.com, cu livrare gratuită în două zile. Să nu-i spui lui Pierre.\"/pause 1000/faceDirection Pam 2/pause 400/faceDirection Pam 3/pause 500/faceDirection Pam 2/pause 500/faceDirection Pam 1/speak Pam \"...M-am obișnuit cu noua casă. Este un loc grozav. Deja mă simt ca acasă. Apreciez foarte mult noul confort.$h\"/pause 500/faceDirection Pam 2/pause 1000/showFrame Pam 25/pause 1000/animate Pam false true 250 26 27/pause 400/emote farmer 8/pause 500/textAboveHead Pam \"O, scuze...\"/pause 1000/stopAnimation Pam/pause 950/speak Pam \"*trage aer pe nas*... Doar că...$s#$b#...Ar trebui să fiu atât de fericită...$s\"/showFrame Pam 0/faceDirection Pam 1/speak Pam \"...Dar nu am reușit să beau mai puțină bere... Nu m-am schimbat deloc...$s\"/pause 500/emote farmer 28/pause 500/speak Pam \"De multă vreme... simt că îmi lipsește ceva din viață, @... $s#$b#Am crezut mereu că este vorba despre bani... despre faptul că sunt săracă... știi? Așa că mi-am închipuit că această casă va rezolva totul. Dar... nu a fost așa.$s#$b#De aceea... de aceea am comandat statuia aceasta.\"/pause 1000/question fork0 \"Spune-i ceva lui Pam:#Mă bucur că ai speranță#Îmi pare rău, Pam, dar Yoba nu există...\"/fork positive/friendship Pam -1000/pause 500/speak Pam \"Nu este amuzant! ...Îmi deschid sufletul în fața ta, iar tu așa îmi răspunzi? Ce naiba este în neregulă cu tine?$u\"/faceDirection Pam 3/shake Pam 10000/emote Pam 12/pause 1000/speak Pam \"Nu-mi pasă ce spui... Eu cred în Yoba! Mulți dintre noi cred! Acum, ieși.$4\"/pause 1000/move farmer 0 1 3/move farmer -6 0 3 true/end",
+        "positive": "pause 100/emote farmer 56/pause 500/speak Pam \"Ha! Ia uită-te la mine! Devin tare sentimentală la bătrânețe, nu-i așa? ...hehehe.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Mulțumesc că m-ai ascultat\"/pause 5000/end"
+      }
+    }
+  ]
+}

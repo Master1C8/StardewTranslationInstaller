@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "When": {
+        "Language": "he-vnrevival"
+      },
+      "Entries": {
+        "911526/f Alex 2500/t 1900 2200/n joshMessage": "gusviolin/-1000 -1000/farmer 5 5 1 Gus 10 6 2 Alex 9 5 3 Emily 9 17 2/skippable/showFrame 117/showFrame Alex 39/positionOffset farmer 12 8/positionOffset Alex -12 0/animate Gus false true 723 16 17/viewport 7 4 true/pause 23000/stopAnimation Gus/pause 1000/faceDirection Gus 3/speak Alex \"תודה, גאס. זה היה נהדר.\"/move Gus 0 1 1/move Gus 1 0 2/move Gus 0 1 2/doAction 11 9/move Gus 0 3 1/move Gus 12 0 3 true/speak Alex \"נחמד כאן... מעולם לא סעדתי כאן קודם.\"/pause 1000/emote Alex 40/speak Alex \"אממ, בכל אופן... הזמנתי את החדר הפרטי הזה כדי שנוכל לדבר...$l\"/warp Emily 11 11 true/playSound woodyStep/move Emily 0 -4 3/move Emily -4 0 0/move Emily 0 -1 0/speak Emily \"יש לי לינגוויני ברוטב שמנת פטריות למר @.^יש לי סלט קייל ואגוזי מלך לגברת.#$b#...וסטייק צלוי לאלכס.^וסטייק צלוי לאדון.\"/playSound woodyHit/specificTemporarySprite joshDinner/speak Alex \"תודה.\"/move Emily 4 0 2/move Emily 0 5 1/move Emily 11 0 1 true/speak Alex \"אז מה שרציתי לומר הוא...$9\"/playMusic musicboxsong/speak Alex \"*בליעה*$s\"/pause 600/speak Alex \"ובכן... כשנפגשנו לראשונה, מיד נמשכתי אליך. זה היה מבלבל... מעולם לא הרגשתי כך כלפי איש.$l^כשפגשתי אותך לראשונה, חשבתי שאת ממש חמודה.$l#$b#חזרתי ואמרתי לעצמי, 'אסור לך להרגיש כך כלפי בחור אחר'.$l^בדרך כלל, כשאני נדלק על מישהי, התחושה חולפת די מהר...$l\"/pause 800/speak Alex \"...אבל הלב שלי אמר לי משהו אחר.^...אבל איתך, התחושה רק הלכה והתחזקה.$l\"/pause 400/emote Alex 40/pause 600/question fork1 \"#${גם אני מרגיש^גם אני מרגישה}$ כך.#${אני מצטער^אני מצטערת}$... ${איני מרגיש^איני מרגישה}$ כך כלפיך.\"/pause 400/fork rejectJosh/speak Alex \"...$l#$b#אני לא מאמין שלקח לנו זמן רב כל כך לומר זאת זה לזה.$l\"/emote Alex 32/pause 800/animate Alex false false 400 40 41 41 40 41 41 40 41 41 40 41 41 40/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound gulp/pause 400/speak Alex \"מממ... הסטייק הזה מעולה. אתם מריחים את הרוטב הריחני?$10\"/eyes 1 -4000/animate Alex false false 400 40 41 41 40 41 41 40/pause 1000/specificTemporarySprite alexDiningDog/playSound dogWhining/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Alex \"...$l\"",
+        "rejectJosh": "pause 100/playMusic none/shake Alex 2000/emote Alex 28/speak Alex \"...הו...$s#$b#אני... מצטער אם גרמתי לכם אי נוחות...$s\"/pause 2000/speak Alex \"אני כבר לא רעב...$s\"/viewport move 1 1 5000/globalFade/viewport -1000 -1000/pause 4000/end dialogue Alex \"...$l\""
+      }
+    }
+  ]
+}

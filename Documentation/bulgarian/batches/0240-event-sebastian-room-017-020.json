@@ -1,0 +1,33 @@
+{
+  "id": "0240-event-sebastian-room-017-020",
+  "target": "Data/Events/SebastianRoom",
+  "status": "reviewed",
+  "sourceHashes": {
+    "healedSam": "02f89cf88b0cc1bf74fa23da6a441d29a4d98ce4358e1a3ac459a63ed7d9a763",
+    "finalBossWizard": "69da62ec47dbb5756ac878d815daa7c913fd109c5cc7e954cd7b4f0bff168e0d",
+    "castBeam": "e743e06b93981aa719c056b8a58801438fc25e133aa32b15d8d8748e70182cde",
+    "chargeAhead": "82d392d374fec59fe46bae696518893082c59727951b46859d21c43980a1259f"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "healedSam": "playSound healSound/pause 500/speak Sam \"Благодаря, @.\"/speak Sebastian \"...$s\"/pause 1000/playMusic none/message \"Сам се втурва напред и поваля Зарт, измъква Жезъла на Соларион от лапите му и възстановява мира и реда в света.\"/pause 500/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+    "finalBossWizard": "pause 500/resetVariable/message \"Лордът на ужаса Зарт мърмори заклинание...\"/pause 500/question fork0 \"Какво правиш?#Направи заклинанието „Лъч на чистотата“ срещу Зарт.#Омагьосай приятелите си със „Защитен талисман“.\"/fork castBeam/pause 800/playSound debuffHit/message \"Омагьосваш Сам и Себастиан със „Защитен талисман“.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"Зарт изпраща във въздуха заряди от чиста тъмна енергия. Един от тях улучва Себастиан, но твоят „Защитен талисман“ го отразява право в лицето на Зарт!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Зарт е победен, а Жезълът на Соларион сияе спокойно. Редът в света е възстановен.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+    "castBeam": "pause 500/message \"Преди да успееш да направиш заклинанието си, Зарт изстрелва сенчест лъч към спътниците ти!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Сам и Себастиан са изпържени до хрупкава коричка...\"/pause 500/playSound yoba/pause 800/message \"Заклинанието ти удря Зарт право в лицето.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"Той изпищява и се разпада на прах. Вземаш Жезъла на Соларион и го вдигаш високо. Мирът и редът в света са възстановени.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+    "chargeAhead": "pause 500/message \"Втурваш се напред, но Зарт се изплъзва покрай теб и изстрелва сенчест лъч към спътниците ти!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Себастиан и Сам са изпържени до хрупкава коричка...\"/pause 800/message \"Замахваш отново с меча и нанасяш силен удар. Зарт изпищява и се разпада на прах.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Вземаш Жезъла на Соларион и го вдигаш високо. Мирът и редът в света са възстановени.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 4,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all sixteen quoted tabletop-roleplay healing, wizard and warrior finale fields in Sebastian Room source ordinals 17–20.",
+      "Preserved conditional forks, mail flags, minigame updates, scene commands, character identifiers and every byte outside quoted player-facing text.",
+      "Kept the established Solarion setting and role vocabulary consistent while distinguishing the named Pure Beam and Shield Charm spells."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "e011a24edc0c00b8b0f1e7a5c3714d0330525974357197117950991f165d914c"
+  }
+}

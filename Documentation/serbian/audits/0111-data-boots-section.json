@@ -1,0 +1,29 @@
+{
+  "scope": "Data/Boots",
+  "records": 18,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All names and descriptions read directly against English. Footwear type, material, protection, magical origin, item voice and duplicate display-name fields were checked.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_boots",
+  "schemaNegativeChecks": [
+    {
+      "case": "field-count",
+      "rejected": true,
+      "reason": "Boot field count changed"
+    },
+    {
+      "case": "stats",
+      "rejected": true,
+      "reason": "Boot price, stats, or index changed"
+    },
+    {
+      "case": "name-copies",
+      "rejected": true,
+      "reason": "Boot display-name copies differ"
+    }
+  ],
+  "translationSha256": "d6fef636831dc67a6716456642e19523443f791e0e0247c91c3b7a8af4e0bac7",
+  "finalLocaleCleanAudits": 0
+}

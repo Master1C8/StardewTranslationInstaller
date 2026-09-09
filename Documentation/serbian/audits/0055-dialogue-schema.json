@@ -1,0 +1,30 @@
+{
+  "scope": "Characters/Dialogue schema",
+  "validator": "Scripts/serbian-batch.py::validate_dialogue",
+  "schemaNegativeChecks": [
+    {
+      "case": "condition-command",
+      "rejected": true,
+      "reason": "AssertionError: Dialogue command changed: $d joja"
+    },
+    {
+      "case": "response-id",
+      "rejected": true,
+      "reason": "AssertionError: Dialogue command changed: $r 25 0 Sun_25"
+    },
+    {
+      "case": "gender-branch",
+      "rejected": true,
+      "reason": "AssertionError: Token/markup mismatch: summer_Tue4"
+    }
+  ],
+  "validated": [
+    "hash-anchored original-English assets",
+    "exact dialogue field counts",
+    "immutable $q/$r/$p/$query/$c/$d/$y/$1 commands and IDs",
+    "pipe-branch counts",
+    "caret gender-branch counts excluding (^_-) emoticons",
+    "branch-local placeholder and emote signatures"
+  ],
+  "result": "clean"
+}

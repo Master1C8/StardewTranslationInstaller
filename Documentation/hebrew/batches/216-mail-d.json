@@ -1,0 +1,463 @@
+{
+  "id": "216-mail-d",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/mail": "f7342fbf8c522b75d2d9a0005a9242e5e7d6e604028b29c8c9d3aa77ecb51b75"
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "spring_1_2",
+      "english": "Notice:^^The price of raw materials at Robin's shop and Clint's shop has increased.[#]Raw Material Price Notice",
+      "translation": "הודעה:^^מחירי חומרי הגלם בחנויות של רובין ושל קלינט עלו.[#]הודעה על מחירי חומרי גלם"
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_6_2",
+      "english": "@-^I'm really craving a fresh apricot. I haven't been able to find one at the store, so I'm asking you. I'll pay you well for it!^   -Emily%item quest 115 %%[#]Emily's Request",
+      "translation": "@-^אני ממש משתוקקת למשמש טרי. לא הצלחתי למצוא אחד בחנות, ולכן אני מבקשת מכם. אשלם לכם היטב תמורתו!^   -אמילי%item quest 115 %%[#]הבקשה של אמילי",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_15_2",
+      "english": "Dear @,^I'd like to surprise my husband with a gift. He's a big fan of leeks. Could you bring me one?^   -Granny Evelyn%item quest 116 %%[#]Evelyn's Surprise",
+      "translation": "@ היקרים,^אני רוצה להפתיע את בעלי במתנה. הוא אוהב מאוד כרישות. תוכלו להביא לי אחת?^   -סבתא אוולין%item quest 116 %%[#]ההפתעה של אוולין",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_21_2",
+      "english": "NOTICE^Pierre here... I really, really want a plate of sashimi. I'll pay top coin to whoever brings me some.^   -Pierre%item quest 117 %%[#]Pierre's Craving",
+      "translation": "הודעה^פייר כאן... אני ממש ממש רוצה צלחת סשימי. אשלם סכום נאה למי שיביא לי אחת.^   -פייר%item quest 117 %%[#]התשוקה של פייר",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_6_2",
+      "english": "Fisherman Wanted^I need a good pufferfish specimen. I'm conducting an experiment on the toxin created by the pufferfish.^Reward: 1000g^ -Demetrius%item quest 118 %%[#]Demetrius' Study On Toxins",
+      "translation": "דרושים דייגים^אני זקוק לדגימת אבו נפחא טובה. אני עורך ניסוי ברעלן שמייצר האבו נפחא.^פרס: 1000g^ -דמטריוס%item quest 118 %%[#]מחקר הרעלנים של דמטריוס",
+      "latinException": {
+        "tokens": [
+          "g",
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_15_2",
+      "english": "Dear Farmer @,^I'd like to give my wife a starfruit for our anniversary. Are you growing any on your farm? If you brought me one, I'd be very grateful.^   -Kent%item quest 119 %%[#]Kent Needs A Gift",
+      "translation": "@ היקרים מהחווה,^אני רוצה להעניק לאשתי פרי כוכב ליום הנישואין שלנו. האם אתם מגדלים כאלה בחווה? אם תביאו לי אחד, אהיה אסיר תודה.^   -קנט%item quest 119 %%[#]קנט זקוק למתנה",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_21_2",
+      "english": "@,^I need truffle oil. Don't ask me why.^ -Mayor Lewis%item quest 120 %%[#]Lewis' Request",
+      "translation": "@,^אני צריך שמן כמהין. אל תשאלו אותי למה.^ -ראש העיר לואיס%item quest 120 %%[#]הבקשה של לואיס",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_6_2",
+      "english": "Wanted: 1 Fresh Lobster for a marvelous bisque I'm creating.^Who: Gus, proprietor of the Stardrop Saloon^Reward: 800g %item quest 121 %%[#]Gus Needs Lobster",
+      "translation": "דרוש: לובסטר טרי אחד לביסק נפלא שאני מכין.^מי: גאס, הבעלים של מסבאת טיפת הכוכב^פרס: 800g %item quest 121 %%[#]גאס זקוק ללובסטר",
+      "latinException": {
+        "tokens": [
+          "g",
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_19_2",
+      "english": "NOTICE^Does anybody have one of them battery packs? My TV remote died, and it's a real hassle getting off the couch to change the station.^  -Pam%item quest 122 %%[#]Pam Needs Help",
+      "translation": "הודעה^יש למישהו מארז סוללות כזה? הסוללה בשלט הטלוויזיה שלי נגמרה, וזה ממש מעיק לקום מהספה כדי להחליף ערוץ.^  -פאם%item quest 122 %%[#]פאם זקוקה לעזרה",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_5_2",
+      "english": "@,^I'm creating an enchanted staff of phenomenal power.^However, I'm missing something: an Iridium Bar.^I'm willing to pay 5x the market value for it. Bring it as soon as you can.^ -M. Rasmodius, Wizard %item quest 123 %%[#]Wizard Needs A Rare Item",
+      "translation": "@,^אני יוצר מטה מכושף בעל עוצמה אדירה.^אבל חסר לי דבר אחד: מטיל אירידיום.^אני מוכן לשלם פי 5 ממחיר השוק תמורתו. הביאו אותו בהקדם האפשרי.^ -מ׳ רזמודיוס, הקוסם %item quest 123 %%[#]הקוסם זקוק לפריט נדיר",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_13_2",
+      "english": "I've got another challenge for you: Catch me a Lingcod.^They don't go down easy, but I know you can do it.^  -Willy%item quest 124 %%[#]Willy's Challenge #2",
+      "translation": "יש לי אתגר נוסף בשבילכם: תפסו לי לינגקוד.^הם לא נכנעים בקלות, אבל אני יודע שתצליחו.^  -וילי%item quest 124 %%[#]האתגר של וילי #2",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_19_2",
+      "english": "Dear @,^I'm at my wit's end. I desperately want to make a Coco-no-no at the saloon, but I have no way of getting a coconut!^Can you help me?^  -Gus%item quest 125 %%[#]Gus Needs A Coconut",
+      "translation": "@ היקרים,^אני כבר אובד עצות. אני נואש להכין קוקו-נו-נו במסבאה, אבל אין לי שום דרך להשיג קוקוס!^תוכלו לעזור לי?^  -גאס%item quest 125 %%[#]גאס זקוק לקוקוס",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_24",
+      "english": "Dear @,^Tomorrow is the Feast of the Winter Star.^Did you get a gift for your 'secret friend'... %secretsanta?^The feast starts at 9 AM in the town square. See you then! ^   -Mayor Lewis[#]Feast Of The Winter Star Reminder",
+      "translation": "@ היקרים,^מחר יתקיים משתה כוכב החורף.^השגתם מתנה לאדם ששמו הוגרל עבורכם... %secretsanta?^המשתה מתחיל ב-9 בבוקר בכיכר העיירה. נתראה שם! ^   -ראש העיר לואיס[#]תזכורת למשתה כוכב החורף"
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut1_Billed_Male",
+      "english": "Dear Mr. @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^(You've been billed {0}g for this service)^^-Morris^Joja Customer Satisfaction Representative[#]Joja Invoice",
+      "translation": "מר @ היקר,^אתמול בלילה אותרת מחוסר הכרה בידי צוות ג'וג'ה. צוות רפואי נשלח כדי להחזיר אותך הביתה בשלום.^אנחנו שמחים שאתה בסדר!^^(חויבת ב-{0}g עבור השירות הזה)^^-מוריס^נציג שביעות רצון הלקוחות של ג'וג'ה[#]חשבונית ג'וג'ה",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut1_Billed_Female",
+      "english": "Dear Ms. @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^(You've been billed {0}g for this service)^^-Morris^Joja Customer Satisfaction Representative[#]Joja Invoice",
+      "translation": "גב' @ היקרה,^אתמול בלילה אותרת מחוסרת הכרה בידי צוות ג'וג'ה. צוות רפואי נשלח כדי להחזיר אותך הביתה בשלום.^אנחנו שמחים שאת בסדר!^^(חויבת ב-{0}g עבור השירות הזה)^^-מוריס^נציג שביעות רצון הלקוחות של ג'וג'ה[#]חשבונית ג'וג'ה",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut1_NotBilled_Male",
+      "english": "Dear Mr. @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^Since you have no money, we were obligated by law to provide this service free of charge.^^-Morris^Joja Customer Satisfaction Representative[#]Legally Required Notice",
+      "translation": "מר @ היקר,^אתמול בלילה אותרת מחוסר הכרה בידי צוות ג'וג'ה. צוות רפואי נשלח כדי להחזיר אותך הביתה בשלום.^אנחנו שמחים שאתה בסדר!^^מאחר שאין לך כסף, החוק חייב אותנו לספק את השירות הזה ללא תשלום.^^-מוריס^נציג שביעות רצון הלקוחות של ג'וג'ה[#]הודעה הנדרשת בחוק"
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut1_NotBilled_Female",
+      "english": "Dear Ms. @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^Since you have no money, we were obligated by law to provide this service free of charge.^^-Morris^Joja Customer Satisfaction Representative[#]Legally Required Notice",
+      "translation": "גב' @ היקרה,^אתמול בלילה אותרת מחוסרת הכרה בידי צוות ג'וג'ה. צוות רפואי נשלח כדי להחזיר אותך הביתה בשלום.^אנחנו שמחים שאת בסדר!^^מאחר שאין לך כסף, החוק חייב אותנו לספק את השירות הזה ללא תשלום.^^-מוריס^נציג שביעות רצון הלקוחות של ג'וג'ה[#]הודעה הנדרשת בחוק"
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut2",
+      "english": "@, ^You're lucky I found you last night! You were unconscious, and someone was searching your pockets. I have no idea how much money they took... they ran away as soon as I approached. Be more careful!^^-Linus[#]Note From Linus",
+      "translation": "@, ^יש לכם מזל שמצאתי אתכם אתמול בלילה! הייתם חסרי הכרה, ודמות כלשהי חיטטה בכיסים שלכם. אין לי מושג כמה כסף היא לקחה... היא ברחה ברגע שהתקרבתי. היזהרו יותר!^^-לינוס[#]פתק מלינוס"
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut3_Billed",
+      "english": "@,^Someone dropped you off at the clinic last night. You'd passed out from exhaustion!^You've got to take better care of yourself and go to bed at a reasonable hour.^I've billed you {0}g to cover your medical expenses.^^-Dr. Harvey[#]From The Office Of Dr. Harvey",
+      "translation": "@,^מישהו הביא אתכם למרפאה אתמול בלילה. התעלפתם מתשישות!^עליכם לשמור על עצמכם טוב יותר וללכת לישון בשעה סבירה.^חייבתי אתכם ב-{0}g לכיסוי הוצאות הטיפול הרפואי.^^-דוקטור הארווי[#]ממרפאתו של דוקטור הארווי",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut3_NotBilled",
+      "english": "@,^Someone dropped you off at the clinic last night. You'd passed out from exhaustion!^You've got to take better care of yourself and go to bed at a reasonable hour.^Since you have no money, I provided your medical care free of charge.^^-Dr. Harvey[#]Harvey's Free Medical Service",
+      "translation": "@,^מישהו הביא אתכם למרפאה אתמול בלילה. התעלפתם מתשישות!^עליכם לשמור על עצמכם טוב יותר וללכת לישון בשעה סבירה.^מאחר שאין לכם כסף, הענקתי לכם טיפול רפואי ללא תשלום.^^-דוקטור הארווי[#]הטיפול הרפואי החינמי של הארווי"
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut4",
+      "english": "@, ^^Found you face-down in the mud during my 3:00 AM sweep.^^You should try to make it home a little earlier next time!^^     -Marlon[#]Note From Marlon",
+      "translation": "@, ^^מצאתי אתכם שרועים עם הפנים בבוץ במהלך הסיור שלי ב-3 לפנות בוקר.^^בפעם הבאה כדאי שתנסו להגיע הביתה קצת מוקדם יותר!^^     -מרלון[#]פתק ממרלון"
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter1",
+      "english": "@, my love,^^I've just arrived in Grampleton, to start the tour. I've forgotten how hectic the city is! The streets are packed with people... they either seem in a mad hurry, or lost in a daze, unaware of their surroundings. I miss Pelican Town already!^^I begin the tour this evening, at a local bookstore. I must admit, I'm becoming a bit nervous at the thought of public speaking... my stomach feels as if it's been twisted into a soft pretzel and doused with spicy cheese dip. Wish me luck!^^-Love, Elliott^^P.S. I hope you had a peaceful night, and weren't too scared all alone in that big house! %item conversationTopic ElliottGone2 0 %%[#]Letter From My Husband",
+      "translation": "@, יקיריי,^^זה עתה הגעתי לגרמפלטון כדי להתחיל את סיבוב ההופעות. שכחתי עד כמה העיר סוערת! הרחובות עמוסים באנשים... נדמה שכולם ממהרים בטירוף או משוטטים בערפול חושים, בלי לשים לב לסביבתם. אני כבר מתגעגע לעיירת פליקן!^^הערב אני מתחיל את הסיבוב בחנות ספרים מקומית. עליי להודות שהמחשבה על דיבור בפני קהל מתחילה להלחיץ אותי... הבטן שלי מרגישה כאילו פיתלו אותה לבייגלה רך והטביעו אותה במטבל גבינה חריף. אחלו לי הצלחה!^^-באהבה, אליוט^^נ.ב. אני מקווה שעבר עליכם לילה שליו ושלא פחדתם יותר מדי לבד בבית הגדול ההוא! %item conversationTopic ElliottGone2 0 %%[#]מכתב מבעלי",
+      "latinException": {
+        "tokens": [
+          "conversationTopic",
+          "ElliottGone2"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter2",
+      "english": "My dear @,^^The first reading went well, though the audience was a bit smaller than I'd hoped. Still, I sold enough copies of the book to pay for my (bug-infested) hotel room!^^In a few hours, I leave for Zuzu City. If yesterday's reading was a warm-up, this next one will be a true napalm blast...^^I miss you very much. Remember to eat well! Oh, and don't forget the leftover crab cakes I put in the fridge...^-Love, Elliott %item conversationTopic ElliottGone3 0 %%[#]Letter From My Husband 2",
+      "translation": "@ יקיריי,^^ההקראה הראשונה עברה היטב, אף שהקהל היה קטן מעט מכפי שקיוויתי. ובכל זאת, מכרתי מספיק עותקים מהספר כדי לשלם על חדר המלון שלי, השורץ חרקים!^^בעוד כמה שעות אצא לעיר זוזו. אם ההקראה של אתמול הייתה חימום, הבאה תהיה פיצוץ נפאלם אמיתי...^^אני מתגעגע אליכם מאוד. זכרו לאכול היטב! אה, ואל תשכחו את עוגות הסרטנים שנשארו ושמתי במקרר...^-באהבה, אליוט %item conversationTopic ElliottGone3 0 %%[#]מכתב מבעלי 2",
+      "latinException": {
+        "tokens": [
+          "conversationTopic",
+          "ElliottGone3"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter3",
+      "english": "My sweet @,^^Last night in Zuzu City was quite the experience! It seems there's a large literary scene here... a few dozen people showed up at my reading!^^I even signed a couple of autographs... it's strange to be seen as someone important. It's all a matter of framing, a grand illusion... for truly I am no one special. Only your devoted Elliott, as always.^^Currently I'm alone, in my hotel room, 'ingesting' a Joja Value Meal...^^Should this be called 'food'?^Or 'edible matter'?^I needn't long brood^It must be the latter^^I look forward to returning home soon. Hope you enjoyed the crab cakes.^^-Love, Elliott %item conversationTopic ElliottGone4 0 %%[#]Letter From My Husband 3",
+      "translation": "@ המתוקים שלי,^^הלילה שעבר בעיר זוזו היה חוויה מיוחדת! נראה שיש כאן סצנה ספרותית גדולה... כמה עשרות אנשים הגיעו להקראה שלי!^^אפילו נתתי כמה חתימות... מוזר להיחשב לאדם חשוב. הכול עניין של מסגור, אשליה גדולה... כי למען האמת, אינני מיוחד. אני רק אליוט המסור שלכם, כתמיד.^^כרגע אני לבד בחדר המלון שלי ו'צורך' ארוחה חסכונית של ג'וג'ה...^^האם ראוי לקרוא לזה 'אוכל'?^או 'חומר אכיל'?^לא צריך להרהר זמן רב^זה מוכרח להיות השני^^אני מצפה לשוב הביתה בקרוב. מקווה שנהניתם מעוגות הסרטנים.^^-באהבה, אליוט %item conversationTopic ElliottGone4 0 %%[#]מכתב מבעלי 3",
+      "latinException": {
+        "tokens": [
+          "conversationTopic",
+          "ElliottGone4"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter4",
+      "english": "In dreams, when graced with lofty view^I gaze upon the sunlit sea^What distant shores I've traveled to^But time now clouds my memory^^There is but one eternal place^Where I shall someday pass beyond^In Valley dear, where my love waits:^Our little home beside the pond^^-Elliott %item conversationTopic ElliottGone5 0 %%[#]Letter From My Husband 4",
+      "translation": "בחלומות, כשנגלה לי נוף נשגב^אני מביט אל הים שטוף השמש^אל חופים רחוקים נשאו אותי מסעותיי^אך הזמן מערפל כעת את זיכרוני^^יש רק מקום נצחי אחד^שבו בבוא היום אעבור הלאה^בעמק היקר, שם אהבתי מחכה:^ביתנו הקטן לצד הבריכה^^-אליוט %item conversationTopic ElliottGone5 0 %%[#]מכתב מבעלי 4",
+      "latinException": {
+        "tokens": [
+          "conversationTopic",
+          "ElliottGone5"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter5",
+      "english": "My dear @,^^I won't bore you with any more details about my readings. They are mostly the same.^^I'm sure your time has been much more exciting! I can't wait to return and see what progress has been made.^^On these long travels between towns, I amuse myself by closing my eyes and envisioning the farm... I see kegs pulsing with sweet wine, a furnace ablaze with precious ore, and our little kitchen with the smell of cinnamon and nutmeg. There's a lot to enjoy!^^Just don't stay out too late in the mines, my love. It's dangerous in there! If you must go... bring plenty of food.^^-Love, Elliott %item conversationTopic ElliottGone6 0 %%[#]Letter From My Husband 5",
+      "translation": "@ יקיריי,^^לא אשעמם אתכם בפרטים נוספים על ההקראות שלי. הן דומות זו לזו ברובן.^^אני בטוח שהזמן שלכם היה מרגש הרבה יותר! אני כבר רוצה לחזור ולראות איזו התקדמות חלה.^^במסעות הארוכים האלה בין העיירות אני משעשע את עצמי בעצימת עיניים ובדמיון החווה... אני רואה חביות תסיסה פועמות ביין מתוק, כבשן שבוער מעפרות יקרות ואת המטבח הקטן שלנו, ובו ניחוחות קינמון ואגוז מוסקט. יש הרבה ממה ליהנות!^^רק אל תישארו עד מאוחר מדי במכרות, יקיריי. מסוכן שם! אם אתם מוכרחים ללכת... הביאו הרבה אוכל.^^-באהבה, אליוט %item conversationTopic ElliottGone6 0 %%[#]מכתב מבעלי 5",
+      "latinException": {
+        "tokens": [
+          "conversationTopic",
+          "ElliottGone6"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter6",
+      "english": "My dear @,^^This will be my last letter before I return home. I've had a fine trip... though nothing too exciting. It's been nice to meet people who enjoy my work, but I'm eager to return home.^^I look forward to the comfort of our little house, the satisfying farm work, a home-cooked meal, and most of all, cozying into the flannel sheets with you.^^See you soon!^-Love, Elliott %item conversationTopic ElliottGone7 0 %%[#]Letter From My Husband 6",
+      "translation": "@ יקיריי,^^זה יהיה המכתב האחרון שלי לפני שאחזור הביתה. היה לי מסע מוצלח... אף ששום דבר מרגש במיוחד לא קרה. היה נחמד לפגוש אנשים שנהנים מעבודתי, אבל אני משתוקק לחזור הביתה.^^אני מצפה לנוחות של ביתנו הקטן, לעבודת החווה המספקת, לארוחה ביתית, ובעיקר להתכרבל אתכם בין סדיני הפלנל.^^נתראה בקרוב!^-באהבה, אליוט %item conversationTopic ElliottGone7 0 %%[#]מכתב מבעלי 6",
+      "latinException": {
+        "tokens": [
+          "conversationTopic",
+          "ElliottGone7"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "MarlonRecovery",
+      "english": "@,^Found your lost item.^^Be more careful next time!^   -Marlon%item itemRecovery %%[#]Marlon Found Your Item",
+      "translation": "@,^מצאתי את הפריט שאיבדתם.^^בפעם הבאה היזהרו יותר!^   -מרלון%item itemRecovery %%[#]מרלון מצא את הפריט שלכם",
+      "latinException": {
+        "tokens": [
+          "itemRecovery"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "RarecrowSociety",
+      "english": "Dear @,^^Your dedication is truly impressive...^^Only a select few manage to acquire the complete Rarecrow collection!^^Please accept this blueprint to commemorate your achievement.^   -The Z.C. Rarecrow Society%item craftingRecipe Deluxe_Scarecrow %%[#]From The Rarecrow Society",
+      "translation": "@ היקרים,^^המסירות שלכם מרשימה באמת...^^רק מעטים מצליחים להשיג אוסף מלא של דחלילים נדירים!^^אנא קבלו את התוכנית הזאת לציון ההישג שלכם.^   -אגודת הדחלילים הנדירים Z.C.%item craftingRecipe Deluxe_Scarecrow %%[#]מאגודת הדחלילים הנדירים",
+      "latinException": {
+        "tokens": [
+          "Z",
+          "C",
+          "craftingRecipe",
+          "Deluxe",
+          "Scarecrow"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "CarolineTea",
+      "english": "Dear @,^^Thanks for stopping by my sunroom yesterday. I usually drink tea alone, but it was fun to share with you!^^I've enclosed instructions on how to prepare and grow your own tea. No pressure, but if you do end up growing some, make sure to bring me a cup!^^-Caroline%item craftingRecipe Tea_Sapling %%[#]Caroline's Tea Note",
+      "translation": "@ היקרים,^^תודה שביקרתם בחדר השמש שלי אתמול. בדרך כלל אני שותה תה לבד, אבל נהניתי לחלוק אותו איתכם!^^צירפתי הוראות להכנת תה ולגידולו בעצמכם. אין שום לחץ, אבל אם תגדלו קצת בסופו של דבר, הקפידו להביא לי ספל!^^-קרוליין%item craftingRecipe Tea_Sapling %%[#]פתק התה של קרוליין",
+      "latinException": {
+        "tokens": [
+          "craftingRecipe",
+          "Tea",
+          "Sapling"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "WoodChipper",
+      "english": "Hey @,^^Just wanted to let you know about a new item I'm carrying... it's called a 'Wood Chipper'.^^You can use it to break hardwood into several pieces of regular wood!^^I know wood can be hard to come by in the winter, so if your supply gets low, consider picking one up.^       -Robin[#]Wood Chipper Notice",
+      "translation": "היי, @,^^רק רציתי לספר לכם על פריט חדש שאני מחזיקה... הוא נקרא 'מרסקת עץ'.^^אפשר להשתמש בה כדי לפרק עץ קשה לכמה חתיכות של עץ רגיל!^^אני יודעת שקשה להשיג עץ בחורף, לכן אם המלאי שלכם מידלדל, שקלו לקנות אחת.^       -רובין[#]הודעה על מרסקת עץ"
+    },
+    {
+      "target": "Data/mail",
+      "key": "willyBackRoomInvitation",
+      "english": "@,^^I've unlocked the back room of the shop.^Come by when you have a chance.^There's something I want to show you.^^-Willy[#]Willy's Back Room Invitation",
+      "translation": "@,^^פתחתי את החדר האחורי של החנות.^בואו כשתהיה לכם הזדמנות.^יש משהו שאני רוצה להראות לכם.^^-וילי[#]הזמנה לחדר האחורי של וילי"
+    },
+    {
+      "target": "Data/mail",
+      "key": "KrobusCrafting",
+      "english": "@, I'm not sure how the human message system works, so I asked Wizard to help me write this letter.^^I hope you are doing okay.^^I wanted to share this with you... it's notes on how my people build a certain item.^^   -Krobus%item craftingRecipe Dark_Sign %%[#]A letter from Krobus",
+      "translation": "@, אני לא בטוח כיצד פועלת מערכת ההודעות של בני האדם, ולכן ביקשתי מהקוסם לעזור לי לכתוב את המכתב הזה.^^אני מקווה ששלומכם טוב.^^רציתי לחלוק את זה איתכם... אלה רשימות המסבירות כיצד בני עמי בונים פריט מסוים.^^   -קרובוס%item craftingRecipe Dark_Sign %%[#]מכתב מקרובוס",
+      "latinException": {
+        "tokens": [
+          "craftingRecipe",
+          "Dark",
+          "Sign"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "georgeGifts",
+      "english": "Dear @,^^Thank you so much for the leeks. They look fresh and delicious. George will love them.^^Today, I'm going to surprise him with 12 little gift-wrapped treasures (thanks to you!). Stop by if you want to be there!^^-Evelyn^^P.S. Please accept this gift. I think you'll enjoy it!%item id (BC)246 %%[#]Evelyn's thank-you note",
+      "translation": "@ היקרים,^^תודה רבה על הכרישות. הן נראות טריות וטעימות. ג'ורג' יאהב אותן.^^היום אפתיע אותו ב-12 אוצרות קטנים עטופים כמתנות, בזכותכם! בואו לבקר אם תרצו להיות שם!^^-אוולין^^נ.ב. אנא קבלו את המתנה הזאת. אני חושבת שתיהנו ממנה!%item id (BC)246 %%[#]פתק התודה של אוולין",
+      "latinException": {
+        "tokens": [
+          "id",
+          "BC"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "robinResource",
+      "english": "Hey @,^^Congratulations on completing my little challenge. I'm impressed!^^As an added bonus, I've included the blueprints for a new type of chest. Enjoy!^^-Robin^^^^P.S. -- Now that you have all those resources laying around, why not swing by for some construction work?%item craftingRecipe Stone_Chest %%[#]Robin's Resource Rush",
+      "translation": "היי, @,^^ברכות על השלמת האתגר הקטן שלי. התרשמתי!^^כבונוס נוסף, צירפתי תוכניות לתיבה מסוג חדש. תיהנו!^^-רובין^^^^נ.ב. -- עכשיו, כשכל חומרי הגלם האלה מונחים אצלכם, למה שלא תקפצו אליי לעבודת בנייה?%item craftingRecipe Stone_Chest %%[#]מרוץ המשאבים של רובין",
+      "latinException": {
+        "tokens": [
+          "craftingRecipe",
+          "Stone",
+          "Chest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "ClintReward",
+      "english": "Um, Hello...     ^Thanks for helping me clear out those monsters.^^I'm not scared at all! ...But it should make the mines safer for everyone else... right?^^Take this blueprint. (Hope it doesn't make me obsolete...)^^   -Clint, the blacksmith%item craftingRecipe Geode_Crusher %%[#]Clint's Thank-you",
+      "translation": "אממ, שלום...     ^תודה שעזרתם לי לחסל את המפלצות האלה.^^אני בכלל לא מפחד! ...אבל זה אמור להפוך את המכרות לבטוחים יותר לכל השאר... נכון?^^קחו את התוכנית הזאת. אני מקווה שהיא לא תהפוך אותי למיותר...^^   -קלינט, הנפח%item craftingRecipe Geode_Crusher %%[#]מכתב התודה של קלינט",
+      "latinException": {
+        "tokens": [
+          "craftingRecipe",
+          "Geode",
+          "Crusher"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "ClintReward2",
+      "english": "Um, Hello...     ^Thanks for helping me clear out more monsters.^^Maybe next time, I'll take care of them myself... if I have time!^^Take this item. I found it in the back room...^^   -Clint, the blacksmith%item id (O)286 10 (O)287 5 (O)231 3 %%[#]Clint's Alternate Thank-you",
+      "translation": "אממ, שלום...     ^תודה שעזרתם לי לחסל מפלצות נוספות.^^אולי בפעם הבאה אטפל בהן בעצמי... אם יהיה לי זמן!^^קחו את הפריט הזה. מצאתי אותו בחדר האחורי...^^   -קלינט, הנפח%item id (O)286 10 (O)287 5 (O)231 3 %%[#]מכתב התודה החלופי של קלינט",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "willyBugWadCutscene",
+      "english": "^^   -Willy%item craftingRecipe Quality_Bobber %%[#]Willy's Thank-you",
+      "translation": "^^   -וילי%item craftingRecipe Quality_Bobber %%[#]מכתב התודה של וילי",
+      "latinException": {
+        "tokens": [
+          "craftingRecipe",
+          "Quality",
+          "Bobber"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "MSB_Pierre",
+      "english": "Dear @,^^I guess people didn't take to 'Pierre's Prime Produce' like I'd hoped...^^Anyways, here's my old 'Mini-Shipping Bin'.^The next time you get your hands on some produce worthy of the 'Pierre's Prime' luxury brand, maybe you could have them shipped my way?^^   -Pierre%item id (BC)248 %%[#]Pierre's Prime Produce",
+      "translation": "@ היקרים,^^כנראה שאנשים לא התלהבו מ'התוצרת המשובחת של פייר' כפי שקיוויתי...^^בכל אופן, הנה 'תיבת המשלוחים הקטנה' הישנה שלי.^בפעם הבאה שתשיגו תוצרת הראויה למותג היוקרה 'התוצרת המשובחת של פייר', אולי תוכלו לשלוח לי אותה?^^   -פייר%item id (BC)248 %%[#]התוצרת המשובחת של פייר",
+      "latinException": {
+        "tokens": [
+          "id",
+          "BC"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "MSB_Lewis",
+      "english": "@,^I wanted to thank you for taking care of my special order. All of the hard work you've done has been a great boost to Pelican Town's image.^Here's a 'Mini-Shipping Bin' as a token of my appreciation.^Place it anywhere and I'll be sure to make a stop when I make my rounds.^^   -Lewis%item id (BC)248 %%[#]Lewis's Thank You",
+      "translation": "@,^רציתי להודות לכם שטיפלתם בהזמנה המיוחדת שלי. כל העבודה הקשה שעשיתם תרמה רבות לתדמיתה של עיירת פליקן.^הנה 'תיבת משלוחים קטנה' כאות להערכתי.^הציבו אותה בכל מקום, ואקפיד לעצור לידה כשאעשה את הסיבוב שלי.^^   -לואיס%item id (BC)248 %%[#]התודה של לואיס",
+      "latinException": {
+        "tokens": [
+          "id",
+          "BC"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    }
+  ]
+}

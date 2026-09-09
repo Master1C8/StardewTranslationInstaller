@@ -1,0 +1,1272 @@
+{
+  "schemaVersion": 1,
+  "locale": "ro",
+  "languageCode": "ro-vnrevival",
+  "workingRoot": "/Users/antonkrutov/.codex/worktrees/fd02/StardewTranslationInstaller",
+  "finalRoot": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+  "sourceRoot": "/Users/antonkrutov/Developer/data/stardew-english-unpacked",
+  "sourceAssets": 187,
+  "sourceRecords": 14720,
+  "reviewedRecords": 14720,
+  "percent": 100.0,
+  "phase": "complete",
+  "glossaryEntries": 673,
+  "glossaryCleanFullAudits": 2,
+  "glossaryInitialReviewThrough": 673,
+  "glossaryEndpoint": "https://vnrevival.fun/games/stardew-valley/glossary?locale=ro&offset=0&limit=1000",
+  "glossaryFetchedAt": "2026-09-05T09:49:42.415362+00:00",
+  "initialEndpointCanonicalParity": true,
+  "finalGates": {
+    "coverage": true,
+    "editorial": true,
+    "technicalAudit": true,
+    "idempotence": true,
+    "swiftTests": true,
+    "fontRoundtrip": true,
+    "smapiVisualQA": true,
+    "releaseBuildSignature": true,
+    "desktopSyncAndVerification": true
+  },
+  "nextAction": "Maintenance only: repeat the full gate after an English source, glossary, runtime, or packaging change.",
+  "commitPushAuthorized": false,
+  "glossarySnapshotSha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "glossaryCanonicalParity": true,
+  "glossaryPasses": [
+    {
+      "pass": 1,
+      "type": "initial all-entry English/Romanian audit",
+      "entriesRead": 673,
+      "clean": false,
+      "corrections": 40
+    },
+    {
+      "pass": 2,
+      "type": "full post-correction fidelity/editorial audit",
+      "entriesRead": 673,
+      "clean": false,
+      "newOrRevisedCorrections": 8
+    },
+    {
+      "pass": 3,
+      "type": "full source-fidelity and cross-reference audit of revised ro, English pairs retained in review context",
+      "entriesRead": 673,
+      "clean": true,
+      "snapshotSha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a"
+    },
+    {
+      "pass": 4,
+      "type": "separate Romanian all-entry editorial audit in term-sorted order",
+      "entriesRead": 673,
+      "clean": true,
+      "snapshotSha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a"
+    }
+  ],
+  "lastBatch": "0487-editorial-data-festivals-winter8.json",
+  "deferredRecords": [],
+  "runtimeContextNotes": [
+    "FarmNameSuffix: separate right-side label in CharacterCustomization.draw; use parenthetical noun, not a grammatical English suffix.",
+    "Chat_Baby: BirthingEvent passes Lexicon ChildTerm_Male/Female and Pronoun_Male/Female; ro forms planned băiețel/fetiță and el/ea.",
+    "PondQueryMenu uses fallback OneCount only when count<=1 and article unavailable; Lexicon returns no article and no pluralization for custom locales. Use numeric 1 and item-name × quantity notation to avoid invalid Romanian plural agreement."
+  ],
+  "lastFullProgressAuditReviewedRecords": 14720,
+  "glossaryCanonicalSync": {
+    "authorized": true,
+    "locale": "ro",
+    "entries": 673,
+    "changedEntries": 47,
+    "otherLocalesPreserved": true,
+    "englishSourcePreserved": true,
+    "published": false
+  },
+  "glossaryValidation": {
+    "canonicalStructuralCheck": "passed",
+    "englishSourceSha256": "100dd0c9f06f25159a3189a9cce3022a99aac1a6ea89ac86fb2f48505e775487",
+    "focusedSuitePassed": 24,
+    "focusedSuiteFailed": 1,
+    "unrelatedFailure": "Thai weapon-enchantments critical-term snapshot differs from owner/concurrent Thai edits. Other locales unchanged by Romanian synchronization."
+  },
+  "sectionStatus": {
+    "Strings/UI": {
+      "sourceRecords": 887,
+      "reviewedRecords": 887,
+      "technicalFullCheck": "passed",
+      "idempotence": "passed",
+      "sectionFinalEditorialAudit": "complete; all 887 current records read with original English context, including runtime-sensitive date/article/quantity constructions"
+    },
+    "Strings/Lexicon": {
+      "sourceRecords": 20,
+      "reviewedRecords": 20,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete; all 20 source pairs re-read after lexical corrections"
+    },
+    "Data/ExtraDialogue": {
+      "sourceRecords": 147,
+      "reviewedRecords": 147,
+      "technicalFullCheck": "passed for all records, including nine events",
+      "sectionFinalEditorialAudit": "complete; all 147 source pairs re-read, including all 33 event-speech segments and the three %year clauses"
+    },
+    "Strings/EnchantmentNames": {
+      "sourceRecords": 18,
+      "reviewedRecords": 18,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete; all 18 source pairs re-read"
+    },
+    "Strings/Tools": {
+      "sourceRecords": 54,
+      "reviewedRecords": 54,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete; all 54 source pairs re-read"
+    },
+    "Strings/Weapons": {
+      "sourceRecords": 134,
+      "reviewedRecords": 134,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete; all 134 source pairs re-read after three acknowledged wording corrections"
+    },
+    "Strings/1_6_Strings": {
+      "sourceRecords": 592,
+      "reviewedRecords": 592,
+      "technicalFullCheck": "passed; event commands, Scholar CSV lists, renovation fields, starter-name pairs, tokens and controls preserved",
+      "idempotence": "passed",
+      "sectionFinalEditorialAudit": "complete; all 592 source pairs read in English context and rechecked after corrections"
+    },
+    "Strings/Quests": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/WorldMap": {
+      "sourceRecords": 14,
+      "reviewedRecords": 14,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/animationDescriptions": {
+      "sourceRecords": 21,
+      "reviewedRecords": 21,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/SimpleNonVillagerDialogues": {
+      "sourceRecords": 22,
+      "reviewedRecords": 22,
+      "technicalFullCheck": "passed; all double-pipe alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Data/Boots": {
+      "sourceRecords": 18,
+      "reviewedRecords": 18,
+      "technicalFullCheck": "passed; all seven-field records and numeric fields preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Data/Festivals/FestivalDates": {
+      "sourceRecords": 8,
+      "reviewedRecords": 8,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/Events": {
+      "sourceRecords": 27,
+      "reviewedRecords": 27,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Data/HairData": {
+      "sourceRecords": 23,
+      "reviewedRecords": 23,
+      "technicalFullCheck": "passed; all structural identities byte-exact",
+      "sectionFinalEditorialAudit": "complete; no player-visible wording"
+    },
+    "Data/PaintData": {
+      "sourceRecords": 12,
+      "reviewedRecords": 12,
+      "technicalFullCheck": "passed; all structural identities byte-exact",
+      "sectionFinalEditorialAudit": "complete; no player-visible wording"
+    },
+    "Strings/FarmAnimals": {
+      "sourceRecords": 30,
+      "reviewedRecords": 30,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Data/EngagementDialogue": {
+      "sourceRecords": 26,
+      "reviewedRecords": 26,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Gil": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Sandy": {
+      "sourceRecords": 21,
+      "reviewedRecords": 21,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Dwarf": {
+      "sourceRecords": 23,
+      "reviewedRecords": 23,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Wizard": {
+      "sourceRecords": 24,
+      "reviewedRecords": 24,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Mister Qi": {
+      "sourceRecords": 15,
+      "reviewedRecords": 15,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Leo": {
+      "sourceRecords": 12,
+      "reviewedRecords": 12,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/LeoMainland": {
+      "sourceRecords": 20,
+      "reviewedRecords": 20,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Krobus": {
+      "sourceRecords": 30,
+      "reviewedRecords": 30,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Vincent": {
+      "sourceRecords": 27,
+      "reviewedRecords": 27,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/rainy": {
+      "sourceRecords": 30,
+      "reviewedRecords": 30,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/George": {
+      "sourceRecords": 33,
+      "reviewedRecords": 33,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Kent": {
+      "sourceRecords": 34,
+      "reviewedRecords": 34,
+      "technicalFullCheck": "passed; conditional alternatives preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/BundleNames": {
+      "sourceRecords": 19,
+      "reviewedRecords": 19,
+      "technicalFullCheck": "passed; dynamic bundle-label context checked",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Data/TV/CookingChannel": {
+      "sourceRecords": 32,
+      "reviewedRecords": 32,
+      "technicalFullCheck": "passed; all two-field recipe records preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Gus": {
+      "sourceRecords": 38,
+      "reviewedRecords": 38,
+      "technicalFullCheck": "passed; slash alternatives and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Marnie": {
+      "sourceRecords": 40,
+      "reviewedRecords": 40,
+      "technicalFullCheck": "passed; relationship query and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Jas": {
+      "sourceRecords": 41,
+      "reviewedRecords": 41,
+      "technicalFullCheck": "passed; question IDs, gender choices and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Willy": {
+      "sourceRecords": 42,
+      "reviewedRecords": 42,
+      "technicalFullCheck": "passed; gender choices and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Data/ChairTiles": {
+      "sourceRecords": 60,
+      "reviewedRecords": 60,
+      "technicalFullCheck": "passed; technical records byte-identical",
+      "sectionFinalEditorialAudit": "complete; no player-visible wording"
+    },
+    "Strings/NPCNames": {
+      "sourceRecords": 49,
+      "reviewedRecords": 49,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/Pants": {
+      "sourceRecords": 38,
+      "reviewedRecords": 38,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/schedules/Pierre": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Clint": {
+      "sourceRecords": 45,
+      "reviewedRecords": 45,
+      "technicalFullCheck": "passed; response commands and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Data/Achievements": {
+      "sourceRecords": 39,
+      "reviewedRecords": 39,
+      "technicalFullCheck": "passed; five-field achievement records preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/MovieConcessions": {
+      "sourceRecords": 48,
+      "reviewedRecords": 48,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/schedules/Emily": {
+      "sourceRecords": 16,
+      "reviewedRecords": 16,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Evelyn": {
+      "sourceRecords": 49,
+      "reviewedRecords": 49,
+      "technicalFullCheck": "passed; gender choice and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Caroline": {
+      "sourceRecords": 52,
+      "reviewedRecords": 52,
+      "technicalFullCheck": "passed; visible question branches and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Jodi": {
+      "sourceRecords": 53,
+      "reviewedRecords": 53,
+      "technicalFullCheck": "passed; conditional branch commands and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Linus": {
+      "sourceRecords": 53,
+      "reviewedRecords": 53,
+      "technicalFullCheck": "passed; dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/MarriageDialogueSam": {
+      "sourceRecords": 53,
+      "reviewedRecords": 53,
+      "technicalFullCheck": "passed; gender branches, item lists and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/MarriageDialoguePenny": {
+      "sourceRecords": 53,
+      "reviewedRecords": 53,
+      "technicalFullCheck": "passed; gender branches, item lists and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/MarriageDialogueMaru": {
+      "sourceRecords": 57,
+      "reviewedRecords": 57,
+      "technicalFullCheck": "passed; conditional, gender choice, inserts and controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/MarriageDialogueEmily": {
+      "sourceRecords": 58,
+      "reviewedRecords": 58,
+      "technicalFullCheck": "passed; inserts, item lists and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/MarriageDialogueElliott": {
+      "sourceRecords": 54,
+      "reviewedRecords": 54,
+      "technicalFullCheck": "passed; gender branches, item lists and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Pierre": {
+      "sourceRecords": 58,
+      "reviewedRecords": 58,
+      "technicalFullCheck": "passed; conditional branches, gender choices and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Robin": {
+      "sourceRecords": 58,
+      "reviewedRecords": 58,
+      "technicalFullCheck": "passed; farm token and dialogue controls preserved",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/schedules/Abigail": {
+      "sourceRecords": 10,
+      "reviewedRecords": 10,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/schedules/Willy": {
+      "sourceRecords": 10,
+      "reviewedRecords": 10,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/schedules/Sam": {
+      "sourceRecords": 9,
+      "reviewedRecords": 9,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Strings/schedules/Caroline": {
+      "sourceRecords": 9,
+      "reviewedRecords": 9,
+      "technicalFullCheck": "passed",
+      "sectionFinalEditorialAudit": "complete"
+    },
+    "Characters/Dialogue/Demetrius": {
+      "sourceRecords": 60,
+      "reviewedRecords": 60,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueAlex": {
+      "sourceRecords": 49,
+      "reviewedRecords": 49,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueHaley": {
+      "sourceRecords": 44,
+      "reviewedRecords": 44,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueHarvey": {
+      "sourceRecords": 52,
+      "reviewedRecords": 52,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Alex": {
+      "sourceRecords": 6,
+      "reviewedRecords": 6,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Clint": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Demetrius": {
+      "sourceRecords": 3,
+      "reviewedRecords": 3,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Elliott": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Evelyn": {
+      "sourceRecords": 6,
+      "reviewedRecords": 6,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/George": {
+      "sourceRecords": 6,
+      "reviewedRecords": 6,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Gus": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Haley": {
+      "sourceRecords": 7,
+      "reviewedRecords": 7,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Harvey": {
+      "sourceRecords": 7,
+      "reviewedRecords": 7,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Jas": {
+      "sourceRecords": 6,
+      "reviewedRecords": 6,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Leah": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Leo": {
+      "sourceRecords": 5,
+      "reviewedRecords": 5,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Lewis": {
+      "sourceRecords": 8,
+      "reviewedRecords": 8,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Linus": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Marnie": {
+      "sourceRecords": 6,
+      "reviewedRecords": 6,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Maru": {
+      "sourceRecords": 8,
+      "reviewedRecords": 8,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Pam": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Penny": {
+      "sourceRecords": 8,
+      "reviewedRecords": 8,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Robin": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Sandy": {
+      "sourceRecords": 6,
+      "reviewedRecords": 6,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Sebastian": {
+      "sourceRecords": 9,
+      "reviewedRecords": 9,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Shane": {
+      "sourceRecords": 9,
+      "reviewedRecords": 9,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Vincent": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Harvey": {
+      "sourceRecords": 70,
+      "reviewedRecords": 70,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueShane": {
+      "sourceRecords": 66,
+      "reviewedRecords": 66,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueSebastian": {
+      "sourceRecords": 67,
+      "reviewedRecords": 67,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueAbigail": {
+      "sourceRecords": 72,
+      "reviewedRecords": 72,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueLeah": {
+      "sourceRecords": 73,
+      "reviewedRecords": 73,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/schedules/Jodi": {
+      "sourceRecords": 8,
+      "reviewedRecords": 8,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Buildings": {
+      "sourceRecords": 69,
+      "reviewedRecords": 69,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogueKrobus": {
+      "sourceRecords": 89,
+      "reviewedRecords": 89,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/SpeechBubbles": {
+      "sourceRecords": 70,
+      "reviewedRecords": 70,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/AquariumFish": {
+      "sourceRecords": 72,
+      "reviewedRecords": 72,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Bundles": {
+      "sourceRecords": 31,
+      "reviewedRecords": 31,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Fish": {
+      "sourceRecords": 74,
+      "reviewedRecords": 74,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/CookingRecipes": {
+      "sourceRecords": 81,
+      "reviewedRecords": 81,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/CraftingRecipes": {
+      "sourceRecords": 150,
+      "reviewedRecords": 150,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Furniture": {
+      "sourceRecords": 645,
+      "reviewedRecords": 645,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Monsters": {
+      "sourceRecords": 51,
+      "reviewedRecords": 51,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/hats": {
+      "sourceRecords": 122,
+      "reviewedRecords": 122,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/TV/TipChannel": {
+      "sourceRecords": 64,
+      "reviewedRecords": 64,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Movies": {
+      "sourceRecords": 87,
+      "reviewedRecords": 87,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/credits": {
+      "sourceRecords": 78,
+      "reviewedRecords": 78,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Lewis": {
+      "sourceRecords": 71,
+      "reviewedRecords": 71,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/AbandonedJojaMart": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Pam": {
+      "sourceRecords": 71,
+      "reviewedRecords": 71,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Shane": {
+      "sourceRecords": 71,
+      "reviewedRecords": 71,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/NPCGiftTastes": {
+      "sourceRecords": 39,
+      "reviewedRecords": 39,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Shirts": {
+      "sourceRecords": 398,
+      "reviewedRecords": 398,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/BigCraftables": {
+      "sourceRecords": 313,
+      "reviewedRecords": 313,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Furniture": {
+      "sourceRecords": 591,
+      "reviewedRecords": 591,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Notes": {
+      "sourceRecords": 22,
+      "reviewedRecords": 22,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/SecretNotes": {
+      "sourceRecords": 38,
+      "reviewedRecords": 38,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/animationDescriptions": {
+      "sourceRecords": 105,
+      "reviewedRecords": 105,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Quests": {
+      "sourceRecords": 66,
+      "reviewedRecords": 66,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Characters": {
+      "sourceRecords": 171,
+      "reviewedRecords": 171,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Abigail": {
+      "sourceRecords": 150,
+      "reviewedRecords": 150,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Alex": {
+      "sourceRecords": 124,
+      "reviewedRecords": 124,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Elliott": {
+      "sourceRecords": 96,
+      "reviewedRecords": 96,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Emily": {
+      "sourceRecords": 106,
+      "reviewedRecords": 106,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Haley": {
+      "sourceRecords": 129,
+      "reviewedRecords": 129,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Leah": {
+      "sourceRecords": 96,
+      "reviewedRecords": 96,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Maru": {
+      "sourceRecords": 112,
+      "reviewedRecords": 112,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/MarriageDialogue": {
+      "sourceRecords": 211,
+      "reviewedRecords": 211,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Penny": {
+      "sourceRecords": 105,
+      "reviewedRecords": 105,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Sam": {
+      "sourceRecords": 117,
+      "reviewedRecords": 117,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Characters/Dialogue/Sebastian": {
+      "sourceRecords": 125,
+      "reviewedRecords": 125,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Locations": {
+      "sourceRecords": 392,
+      "reviewedRecords": 392,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/MovieReactions": {
+      "sourceRecords": 269,
+      "reviewedRecords": 269,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/AnimalShop": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/ArchaeologyHouse": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Backwoods": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/BathHouse_Pool": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Beach": {
+      "sourceRecords": 12,
+      "reviewedRecords": 12,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/BoatTunnel": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/BusStop": {
+      "sourceRecords": 4,
+      "reviewedRecords": 4,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/CommunityCenter": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/DesertFestival": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/ElliottHouse": {
+      "sourceRecords": 5,
+      "reviewedRecords": 5,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Farm": {
+      "sourceRecords": 27,
+      "reviewedRecords": 27,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/FarmHouse": {
+      "sourceRecords": 14,
+      "reviewedRecords": 14,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/FishShop": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Forest": {
+      "sourceRecords": 16,
+      "reviewedRecords": 16,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/HaleyHouse": {
+      "sourceRecords": 11,
+      "reviewedRecords": 11,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/HarveyRoom": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Hospital": {
+      "sourceRecords": 5,
+      "reviewedRecords": 5,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/IslandHut": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/IslandNorth": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/IslandSouth": {
+      "sourceRecords": 3,
+      "reviewedRecords": 3,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/IslandWest": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/JoshHouse": {
+      "sourceRecords": 6,
+      "reviewedRecords": 6,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/LeahHouse": {
+      "sourceRecords": 8,
+      "reviewedRecords": 8,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/ManorHouse": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Mine": {
+      "sourceRecords": 3,
+      "reviewedRecords": 3,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Mountain": {
+      "sourceRecords": 13,
+      "reviewedRecords": 13,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/QiNutRoom": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Railroad": {
+      "sourceRecords": 3,
+      "reviewedRecords": 3,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Saloon": {
+      "sourceRecords": 12,
+      "reviewedRecords": 12,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/SamHouse": {
+      "sourceRecords": 7,
+      "reviewedRecords": 7,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/SandyHouse": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/ScienceHouse": {
+      "sourceRecords": 7,
+      "reviewedRecords": 7,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/SebastianRoom": {
+      "sourceRecords": 24,
+      "reviewedRecords": 24,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/SeedShop": {
+      "sourceRecords": 8,
+      "reviewedRecords": 8,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Sewer": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Sunroom": {
+      "sourceRecords": 1,
+      "reviewedRecords": 1,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Temp": {
+      "sourceRecords": 7,
+      "reviewedRecords": 7,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Town": {
+      "sourceRecords": 28,
+      "reviewedRecords": 28,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Trailer": {
+      "sourceRecords": 3,
+      "reviewedRecords": 3,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Trailer_Big": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/WizardHouse": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Events/Woods": {
+      "sourceRecords": 2,
+      "reviewedRecords": 2,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/fall16": {
+      "sourceRecords": 94,
+      "reviewedRecords": 94,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/fall27": {
+      "sourceRecords": 94,
+      "reviewedRecords": 94,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/spring13": {
+      "sourceRecords": 82,
+      "reviewedRecords": 82,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/spring24": {
+      "sourceRecords": 85,
+      "reviewedRecords": 85,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/summer11": {
+      "sourceRecords": 105,
+      "reviewedRecords": 105,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/summer28": {
+      "sourceRecords": 86,
+      "reviewedRecords": 86,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/winter25": {
+      "sourceRecords": 93,
+      "reviewedRecords": 93,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/Festivals/winter8": {
+      "sourceRecords": 96,
+      "reviewedRecords": 96,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Data/mail": {
+      "sourceRecords": 179,
+      "reviewedRecords": 179,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/SpecialOrderStrings": {
+      "sourceRecords": 146,
+      "reviewedRecords": 146,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/StringsFromMaps": {
+      "sourceRecords": 367,
+      "reviewedRecords": 367,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/Objects": {
+      "sourceRecords": 1532,
+      "reviewedRecords": 1532,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    },
+    "Strings/StringsFromCSFiles": {
+      "sourceRecords": 1673,
+      "reviewedRecords": 1673,
+      "technicalFullCheck": "passed; source hashes, translation hashes, target grammar and language gate verified",
+      "sectionFinalEditorialAudit": "complete; full source-paired section reread and two consecutive clean checks"
+    }
+  },
+  "translationFinalEditorialGate": {
+    "requiredConsecutiveCleanPasses": 2,
+    "consecutiveCleanPasses": 2,
+    "recordsPerPass": 14720,
+    "assetsPerPass": 187,
+    "newIssuesPerPass": [
+      0,
+      0
+    ],
+    "correctionsBetweenPasses": 0,
+    "evidence": "Documentation/romanian/audit-current.json"
+  },
+  "releaseValidation": {
+    "jsonFilesParsed": 187,
+    "sourceKeysAndHashes": "passed",
+    "tokensAndTargetGrammar": "passed",
+    "romanianIncludes": 187,
+    "romanianRecords": 14720,
+    "contentGenerationIdempotent": true,
+    "staticAssetGenerationIdempotent": true,
+    "fontGenerationIdempotent": true,
+    "fontRoundtripGlyphsPerFont": 458,
+    "requiredRomanianGlyphs": "ĂÂÎȘȚăâîșț",
+    "swiftTests": "8 tests passed",
+    "releaseBuild": "passed",
+    "codesign": "valid on disk; satisfies Designated Requirement; ad hoc signature",
+    "bundleModPayloadParity": true,
+    "bundleLanguageSwitcherPayloadParity": true,
+    "smapiExactLocale": "ro-vnrevival",
+    "smapiAssets": [
+      "Fonts/SpriteFont1.ro-vnrevival",
+      "Fonts/SmallFont.ro-vnrevival",
+      "Minigames/TitleButtons.ro-vnrevival"
+    ],
+    "smapiContentPatcherErrors": 0,
+    "visualEvidence": "Documentation/romanian/qa/evidence.json"
+  },
+  "desktopIntegration": {
+    "canonicalRoot": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+    "preservedConcurrentLocales": [
+      "uk-vnrevival",
+      "fil-vnrevival",
+      "nl-vnrevival"
+    ],
+    "canonicalPackageVersion": "1.12.0",
+    "romanianOwnedFileParity": true,
+    "romanianOwnedFilesCompared": 201,
+    "languageCodes": 13,
+    "unifiedChanges": 2874,
+    "unifiedIncludes": 2817,
+    "romanianIncludes": 187,
+    "unifiedContentIdempotent": true,
+    "swiftTests": "8 tests passed",
+    "releaseBuildSignature": "passed",
+    "bundleModPayloadParity": true,
+    "bundleLanguageSwitcherPayloadParity": true,
+    "commitPushPublicationDeploymentPerformed": false
+  }
+}

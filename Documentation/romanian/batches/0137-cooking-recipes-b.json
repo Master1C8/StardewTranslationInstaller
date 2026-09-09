@@ -1,0 +1,20 @@
+{
+  "locale": "ro",
+  "target": "Data/CookingRecipes",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "This batch reviews 1 cooking recipe records. Every value contains only runtime ingredient/output metadata, category and unlock conditions, plus localized-text lookup tokens where present; the English dictionary keys are immutable IDs. All values are therefore retained byte-exact and individually documented.",
+  "entries": {
+    "Moss Soup": {
+      "source": "Moss 20/1 10/MossSoup/s Foraging 3/",
+      "translation": "Moss 20/1 10/MossSoup/s Foraging 3/",
+      "preservationReason": "Runtime recipe metadata only: ingredient IDs and quantities, output ID and quantity, object category, cooking/crafting flag, unlock condition, and localized-text lookup tokens are preserved byte-exact; the English recipe key is an immutable data key and is not player-visible text in this field."
+    }
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "id": "302-ui-chat-junimo-kart-and-fish-pond-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 UI strings covering chat achievements, Junimo Kart levels and Fish Pond status or item requests. Canonical glossary names, level-name meaning, distinct fish voices, gendered forms of address, repeated placeholders, quantities, quotation boundaries and the language-independent unknown marker were checked against the English source.",
+    "reviewedTextSHA256": "ecb6c6dd818ae87d76183f84b5272ca0208410bdf6ce2045034625ad3784fda3",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 87
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BundleDonate",
+      "english": "{0} donated '{1}' to a bundle.",
+      "translation": "{0} додає «{1}» до набору.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer0",
+      "english": "{0} just defeated a {1}, completing a monster eradication goal.",
+      "translation": "{0} перемагає монстра «{1}» й завершує завдання зі знищення чудовиськ.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer1",
+      "english": "{0} just defeated a {1}, and Marlon is very pleased.",
+      "translation": "{0} перемагає монстра «{1}», чим дуже тішить Марлона.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer2",
+      "english": "{0} kept the valley safe by defeating a {1}.",
+      "translation": "{0} захищає долину, здолавши монстра «{1}».",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer3",
+      "english": "{0} has culled the local {1} population, and everyone feels a little safer!",
+      "translation": "Полювання {0} скорочує місцеву популяцію «{1}», і всі почуваються трохи безпечніше!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_IridiumToolUpgrade",
+      "english": "{0} got the {1}.",
+      "translation": "{0} отримує {1}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LuauSoup",
+      "english": "{0} put '{1}' into the potluck soup.",
+      "translation": "{0} додає «{1}» до спільного супу на Луау.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_JunimoKartHighScore",
+      "english": "{0} just got a new 'Best Score' in Junimo Kart!",
+      "translation": "{0} встановлює новий рекорд у «Вагонетці джунімо»!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_0",
+      "english": "Crumble Cavern",
+      "translation": "Печера обвалів",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_1",
+      "english": "Slippery Slopes",
+      "translation": "Слизькі схили",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_4",
+      "english": "Red Hot Rollercoaster",
+      "translation": "Розпечені американські гірки",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_2",
+      "english": "The Gem Sea Giant",
+      "translation": "Велетень Самоцвітного моря",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_3",
+      "english": "Ghastly Galleon",
+      "translation": "Примарний галеон",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_5",
+      "english": "Slomp's Stomp",
+      "translation": "Тупотня Сломпа",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_6",
+      "english": "Sunset Speedway",
+      "translation": "Траса заходу сонця",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_8",
+      "english": "???",
+      "translation": "???",
+      "reviewed": true,
+      "preserveReason": "Unknown-level marker preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_9",
+      "english": "Glowshroom Grotto",
+      "translation": "Грот світлогрибів",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NPC_Busy",
+      "english": "{0} is busy right now...",
+      "translation": "{0} зараз не має часу...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_Name",
+      "english": "{0} Pond",
+      "translation": "Рибний ставок: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_EmptyPond",
+      "english": "Empty Pond",
+      "translation": "Порожній ставок",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ConfirmEmpty",
+      "english": "Are you sure you want to remove all the fish and return the pond to its original state?",
+      "translation": "Точно прибрати всю рибу й повернути ставок до початкового стану?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ChangeNetting",
+      "english": "Change Appearance",
+      "translation": "Змінити вигляд",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_Population",
+      "english": "Population: {0}/{1}",
+      "translation": "Популяція: {0}/{1}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusNoFish",
+      "english": "This pond is empty...",
+      "translation": "Цей ставок порожній...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk0",
+      "english": "\"We're doing fine!\"",
+      "translation": "«У нас усе гаразд!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk1",
+      "english": "\"Nothing to complain about!\"",
+      "translation": "«Немає на що скаржитися!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk2",
+      "english": "\"Everything is okay!\"",
+      "translation": "«Усе добре!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk3",
+      "english": "\"We're feeling pretty good!\"",
+      "translation": "«Ми почуваємося досить добре!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk4",
+      "english": "\"We're feeling healthy!\"",
+      "translation": "«Ми почуваємося здоровими!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk5",
+      "english": "The fish look happy.",
+      "translation": "Риба має задоволений вигляд.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk6",
+      "english": "The fish seem to be thriving.",
+      "translation": "Схоже, риба чудово розвивається.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk_Coral",
+      "english": "The {0} are doing well.",
+      "translation": "{0} почуваються добре.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequest_Bring",
+      "english": "Bring",
+      "translation": "Принести",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending0",
+      "english": "\"You know, {1} {0} would liven things up around here!\"",
+      "translation": "«Знаєш, тут не завадило б {1} {0}!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending1",
+      "english": "\"If it's not too much to ask... could you bring us {1} {0}?\"",
+      "translation": "«Якщо це не надто важко... принесеш нам {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending2",
+      "english": "\"We'd be more comfortable if we had {1} {0} in here.\"",
+      "translation": "«Нам було б затишніше, якби тут було {1} {0}.»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending3",
+      "english": "\"Please... could you bring us {1} {0}?\"",
+      "translation": "«Будь ласка... принесеш нам {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending4",
+      "english": "\"We're doing okay, but we'd be happier with {1} {0}...\"",
+      "translation": "«У нас усе гаразд, але {1} {0} зробили б нас щасливішими...»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending5",
+      "english": "\"Excuse me... we'd like {1} {0}, please.\"",
+      "translation": "«Перепрошуємо... нам би {1} {0}, будь ласка.»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending6",
+      "english": "\"We'd feel more at home with {1} {0}...\"",
+      "translation": "«Додай сюди {1} {0} — і ми почуватимемося як удома...»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude0_Male",
+      "english": "\"Hey, landlubber, you think you could bring us {1} {0}?\"",
+      "translation": "«Гей, сухопутний щуре, принесеш нам {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude1_Male",
+      "english": "\"Oi... leg boy! How about bringing us {1} {0}, huh?\"",
+      "translation": "«Агов... хлопче з ногами! Принесеш нам {1} {0}, га?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude2_Male",
+      "english": "\"Psst... Hey, buddy... think you could send {1} {0} our way?\"",
+      "translation": "«Пс-с... Гей, друже... може, підкинеш нам {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude0_Female",
+      "english": "\"Hey, land dweller, you think you could bring us {1} {0}?\"",
+      "translation": "«Гей, жителько суші, принесеш нам {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude1_Female",
+      "english": "\"Hey, lady... You got {1} {0} you can send our way?\"",
+      "translation": "«Гей, пані... Маєш для нас {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude2_Female",
+      "english": "\"Psst... think you could nab us {1} {0} on the sly?\"",
+      "translation": "«Пс-с... можеш нишком роздобути для нас {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding0",
+      "english": "\"{2}! {2}! We want {1} {0}...!\"",
+      "translation": "«{2}! {2}! Ми хочемо {1} {0}...!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding1",
+      "english": "\"We need {1} {0}! We need {1} {0}!\"",
+      "translation": "«Нам потрібно {1} {0}! Нам потрібно {1} {0}!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding2",
+      "english": "\"Where's the {2}? We need {1} {0}!\"",
+      "translation": "«Де {2}? Нам потрібно {1} {0}!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff0",
+      "english": "\"We require {1} {0}...\"",
+      "translation": "«Нам потрібно {1} {0}...»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff1",
+      "english": "\"{1} {0} would allow us to multiply further.\"",
+      "translation": "«Завдяки {1} {0} ми зможемо й далі розмножуватися.»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff2",
+      "english": "\"We've decided that we need {1} {0}.\"",
+      "translation": "«Ми вирішили, що нам потрібно {1} {0}.»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore0",
+      "english": "\"We're hungry... could you bring us {1} {0}?\"",
+      "translation": "«Ми голодні... принесеш нам {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore1",
+      "english": "\"Could you bring us {1} {0} for our dinner?\"",
+      "translation": "«Принесеш нам на вечерю {1} {0}?»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore2",
+      "english": "\"We need protein... {1} {0} should do the trick!\"",
+      "translation": "«Нам потрібен білок... {1} {0} цілком підійде!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude0",
+      "english": "\"Cha cha cha! We're in business.\"",
+      "translation": "«Ча-ча-ча! Справа пішла.»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude1",
+      "english": "\"Ah... it's the good stuff. Thanks, kid.\"",
+      "translation": "«А-а... Саме те, що треба. Дякуємо, малечо.»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude2",
+      "english": "\"Thanks, boss!\"",
+      "translation": "«Дякуємо, босе!»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff0",
+      "english": "\"Ah... the {0} we requested.\"",
+      "translation": "«А-а... Ось і {0}, що ми замовляли.»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff1",
+      "english": "\"This {0} is satisfactory for our needs.\"",
+      "translation": "«Це {0} задовольняє наші потреби.»",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Strings/Lexicon",
+  "records": 20,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "readThrough": 20,
+  "newTextIssues": 0,
+  "status": "clean",
+  "review": "Read all20 original English/Serbian entries plus every randomized option rendered in every relevant grammatical frame. Check names, pronouns, occupations, speaker-vocabulary categories and # delimiters.",
+  "finalLocaleCleanAudits": 0,
+  "renderedContextExamples": 109,
+  "schemaNegativeChecks": [
+    {
+      "case": "empty-random-option",
+      "rejected": true,
+      "reason": "Empty Lexicon option"
+    },
+    {
+      "case": "removed-hesitation",
+      "rejected": true,
+      "reason": "Lexicon hesitation prefixes changed"
+    }
+  ],
+  "translationSha256": "20b2e68147b49574da6c04862e08f57aefc87fafe9118dc7164f69ade87e40a2"
+}

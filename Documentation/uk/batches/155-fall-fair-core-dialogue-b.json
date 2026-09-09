@@ -1,0 +1,223 @@
+{
+  "id": "155-fall-fair-core-dialogue-b",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of Fall 16 records 41 through 70, covering the remaining first-year visitors, all year-two spouse dialogue, villagers through George, and the year-two runtime setup. Every character voice, grange-display reference, food, game, animal, Calico Desert and Star Token term, placeholder, and control marker was reviewed against scene context and the canonical Ukrainian glossary. The setup record was explicitly preserved as runtime-only payload; keys, dialogue delimiters, emotion markers, actor identifiers, and non-text structure were preserved. Remaining Fall 16 records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "84d9da3bcec9a635c5a48990de2b716c9e46c5b6fdd2ddfdb21b818c89e67119",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 20
+  },
+  "records": [
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "set-up_y2",
+      "english": "fallFest/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Fair2/viewport -1000 -1000/loadActors Set-Up/animate Sebastian false true 200 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 20 21 21 21 21 20 22 22 23/animate Penny false true 1000 34/positionOffset Penny 0 24/advancedMove Marnie true 2 3500 3 300 -2 0 3 300 4 4000 1 300 2 0 2 5750/advancedMove Abigail true 4 6000 3 300 -1 0 3 300 4 4500 1 300 2 0 1 300 4 4750 3 300 -1 0 3 250 4 1000/advancedMove Maru true 2 8000 1 300 2 0 0 3 2 0 1 2500 2 3000 1 3000 2 300 3 300 -3 0 0 5 2 300 3 4000 2 300 1 3000 4 300 0 -5 1 0 0 -3 -2 0 3 3000 2 4000/advancedMove Linus true 2 7000 1 300 2 0 1 250 2 6000 3 300 -2 0 3 300 2 1000/advancedMove Demetrius true 1 6500 2 300 0 3 3 0 1 300 4 5500 3 300 -3 0 0 -3 4 300 1 2000/advancedMove Jas true 3 6000 4 250 0 -2 -4 0 3 300 2 5000 3 300 -2 0 0 4 2 300 1 5000 4 300 0 -4 2 0 1 300 2 4000 1 300 4 0 0 2 2 300 3 1000/advancedMove Leo true 2 7500 1 300 2 0 0 2 2 300 3 5000 4 300 0 -2 -2 0 3 300 2 1000/advancedMove Pam true 3 7750 4 300 0 -1 -2 0 0 -1 4 5000 1 300 2 350 0 1 2 0 0 1 2 300 3 1000/advancedMove Gus true 4 4300 1 300 1 0 1 300 4 3500 3 350 -2 0 3 350 4 4600 1 300 1 0 4 1000/advancedMove Robin true 4 4500 3 300 -1 0 0 -2 4 300 1 5000 2 300 0 2 1 0 1 300 4 1000/advancedMove Leah true 3 6300 4 300 0 -1 -1 0 3 300 2 5000 3 300 -1 0 0 1 2 300 1 5000 4 300 0 -1 1 0 1 300 2 4500 1 300 1 0 0 1 2 300 3 1250/advancedMove Elliott true 2 6800 3 2500 2 8000 3 2000 2 300/positionOffset Shane 12 -16/positionOffset Vincent 0 -12/positionOffset Kent? 12 -16/positionOffset Jodi 20 0/positionOffset Sebastian 16 0/positionOffset Clint 20 -8/positionOffset Marlon 0 -20/positionOffset George 12 16/positionOffset Alex 0 16/positionOffset Emily 12 -20/positionOffset Sandy 18 -24/positionOffset Wizard 24 -12/positionOffset Sebastian -8 -12/addTemporaryActor Brown_Chicken 16 16 25 36 1 false Animal/addTemporaryActor White_Chicken 16 16 25 33 2 false Animal/addTemporaryActor BabyWhite_Cow 32 32 16 33 2 false Animal/addTemporaryActor BabyBrown_Cow 32 32 13 34 3 false Animal/addTemporaryActor White_Cow 32 32 16 35 2 false Animal/addTemporaryActor Brown_Cow 32 32 14 36 1 false Animal/addTemporaryActor BabyRabbit 16 16 32 33 2 false Animal/addTemporaryActor Rabbit 16 16 30 33 3 false Animal/addTemporaryActor Sheep 32 32 30 35 1 false Animal/addTemporaryActor BabySheep 32 32 32 36 2 false Animal/addTemporaryActor Goat 32 32 22 35 1 false Animal/addTemporaryActor BabyGoat 32 32 21 33 3 false Animal/animate White_Chicken false true 500 16 17/advancedMove Brown_Chicken true 1 3500 4 500 0 -1 4 2000 3 1750 2 2000 0 1 2 1000 1 3000 2 1500 3 1750 2 500 1 1500/advancedMove Sheep true 1 2500 2 3000 3 2000 2 3000 1 4000 2 2500 3 4000 2 3000 1 1000/advancedMove Goat true 1 4500 2 500 3 6250/positionOffset BabyGoat 24 -8/positionOffset BabyRabbit 24 24/advancedMove Brown_Cow true 2 4000 1 3500 2 1000 3 2000/advancedMove BabyWhite_Cow true 2 3000 3 4500 2 2000 1 3500 2 1000/advancedMove White_Cow true 1 7500 2 2000 3 4600 2 1500 1 6000/viewport player clamp true unfreeze/playerControl fair/globalFadeToClear/pause 2000",
+      "translation": "fallFest/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Fair2/viewport -1000 -1000/loadActors Set-Up/animate Sebastian false true 200 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 20 21 21 21 21 20 22 22 23/animate Penny false true 1000 34/positionOffset Penny 0 24/advancedMove Marnie true 2 3500 3 300 -2 0 3 300 4 4000 1 300 2 0 2 5750/advancedMove Abigail true 4 6000 3 300 -1 0 3 300 4 4500 1 300 2 0 1 300 4 4750 3 300 -1 0 3 250 4 1000/advancedMove Maru true 2 8000 1 300 2 0 0 3 2 0 1 2500 2 3000 1 3000 2 300 3 300 -3 0 0 5 2 300 3 4000 2 300 1 3000 4 300 0 -5 1 0 0 -3 -2 0 3 3000 2 4000/advancedMove Linus true 2 7000 1 300 2 0 1 250 2 6000 3 300 -2 0 3 300 2 1000/advancedMove Demetrius true 1 6500 2 300 0 3 3 0 1 300 4 5500 3 300 -3 0 0 -3 4 300 1 2000/advancedMove Jas true 3 6000 4 250 0 -2 -4 0 3 300 2 5000 3 300 -2 0 0 4 2 300 1 5000 4 300 0 -4 2 0 1 300 2 4000 1 300 4 0 0 2 2 300 3 1000/advancedMove Leo true 2 7500 1 300 2 0 0 2 2 300 3 5000 4 300 0 -2 -2 0 3 300 2 1000/advancedMove Pam true 3 7750 4 300 0 -1 -2 0 0 -1 4 5000 1 300 2 350 0 1 2 0 0 1 2 300 3 1000/advancedMove Gus true 4 4300 1 300 1 0 1 300 4 3500 3 350 -2 0 3 350 4 4600 1 300 1 0 4 1000/advancedMove Robin true 4 4500 3 300 -1 0 0 -2 4 300 1 5000 2 300 0 2 1 0 1 300 4 1000/advancedMove Leah true 3 6300 4 300 0 -1 -1 0 3 300 2 5000 3 300 -1 0 0 1 2 300 1 5000 4 300 0 -1 1 0 1 300 2 4500 1 300 1 0 0 1 2 300 3 1250/advancedMove Elliott true 2 6800 3 2500 2 8000 3 2000 2 300/positionOffset Shane 12 -16/positionOffset Vincent 0 -12/positionOffset Kent? 12 -16/positionOffset Jodi 20 0/positionOffset Sebastian 16 0/positionOffset Clint 20 -8/positionOffset Marlon 0 -20/positionOffset George 12 16/positionOffset Alex 0 16/positionOffset Emily 12 -20/positionOffset Sandy 18 -24/positionOffset Wizard 24 -12/positionOffset Sebastian -8 -12/addTemporaryActor Brown_Chicken 16 16 25 36 1 false Animal/addTemporaryActor White_Chicken 16 16 25 33 2 false Animal/addTemporaryActor BabyWhite_Cow 32 32 16 33 2 false Animal/addTemporaryActor BabyBrown_Cow 32 32 13 34 3 false Animal/addTemporaryActor White_Cow 32 32 16 35 2 false Animal/addTemporaryActor Brown_Cow 32 32 14 36 1 false Animal/addTemporaryActor BabyRabbit 16 16 32 33 2 false Animal/addTemporaryActor Rabbit 16 16 30 33 3 false Animal/addTemporaryActor Sheep 32 32 30 35 1 false Animal/addTemporaryActor BabySheep 32 32 32 36 2 false Animal/addTemporaryActor Goat 32 32 22 35 1 false Animal/addTemporaryActor BabyGoat 32 32 21 33 3 false Animal/animate White_Chicken false true 500 16 17/advancedMove Brown_Chicken true 1 3500 4 500 0 -1 4 2000 3 1750 2 2000 0 1 2 1000 1 3000 2 1500 3 1750 2 500 1 1500/advancedMove Sheep true 1 2500 2 3000 3 2000 2 3000 1 4000 2 2500 3 4000 2 3000 1 1000/advancedMove Goat true 1 4500 2 500 3 6250/positionOffset BabyGoat 24 -8/positionOffset BabyRabbit 24 24/advancedMove Brown_Cow true 2 4000 1 3500 2 1000 3 2000/advancedMove BabyWhite_Cow true 2 3000 3 4500 2 2000 1 3500 2 1000/advancedMove White_Cow true 1 7500 2 2000 3 4600 2 1500 1 6000/viewport player clamp true unfreeze/playerControl fair/globalFadeToClear/pause 2000",
+      "reviewed": true,
+      "preserveReason": "Year-two festival map, actor, animation, movement, animal identifier, offset, viewport, and control payload contains no player-facing prose and must remain byte-exact."
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Harvey",
+      "english": "And just a few steps over there, Gus is grilling up a batch of pork ribs... Yikes.$s#$e#I've got some soul-searching to do...$11",
+      "translation": "А лише за кілька кроків звідси Ґас смажить цілу партію свинячих реберець... Ой.$s#$e#Мені треба добряче зазирнути в себе...$11",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sandy",
+      "english": "I heard it's raining back home. Is that why you came here?$h#$e#I kind of miss the rain, actually...$s",
+      "translation": "Я чула, вдома дощить. Тому ти тут?$h#$e#Насправді я трохи сумую за дощем...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Jas",
+      "english": "Ow! A hen pecked my little finger!$u",
+      "translation": "Ой! Курка клюнула мене за мізинець!$u",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Vincent",
+      "english": "Moooo!",
+      "translation": "Му-у-у!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Marlon",
+      "english": "Clint's blades get sharper every year.#$e#So do his prices...",
+      "translation": "Клинки Клінта щороку стають гострішими.#$e#Як і його ціни...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Willy",
+      "english": "Are you setting up a grange display, @? It's your chance to show off all the good produce from %farm!",
+      "translation": "Оформлюєш виставкову вітрину господарства, @? Це твій шанс похизуватися всіма чудовими продуктами з ферми %farm!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Leo",
+      "english": "Haha! I've never seen anything like this before...$h",
+      "translation": "Ха-ха! Я ще ніколи такого не бачив...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Abigail_spouse_y2",
+      "english": "Aren't these weapons cool? I might have to bring one of these home with us today.$0",
+      "translation": "Хіба ця зброя не чудова? Може, сьогодні доведеться взяти щось із цього додому.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Leah_spouse_y2",
+      "english": "Hey, Robin is teaching me some innovative techniques this year.#$e#I'll have to show you later...$1",
+      "translation": "Гей, цього року Робін навчає мене новаторських прийомів.#$e#Пізніше я тобі покажу...$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Maru_spouse_y2",
+      "english": "I hope we win the grange display contest! You worked really hard this year.",
+      "translation": "Сподіваюся, ми переможемо в конкурсі виставкових вітрин господарства! Цього року вкладено стільки праці.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Penny_spouse_y2",
+      "english": "Come here, sit for a while! There's space on the bench for the both of us.$1",
+      "translation": "Іди сюди, посидь трохи! На лавці вистачить місця нам обом.$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Haley_spouse_y2",
+      "english": "It's a little funny seeing Alex stuff his face. He seems to be doing well.#$e#I hope we win the grange display contest this year!$1",
+      "translation": "Трохи смішно дивитися, як Алекс набиває рота. Схоже, у нього все добре.#$e#Сподіваюся, цього року ми переможемо в конкурсі виставкових вітрин господарства!$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Emily_spouse_y2",
+      "english": "Sandy traveled all the way from Calico Desert to be here today.#$b#It's not very often that I get to see her!",
+      "translation": "Сенді подолала весь шлях із пустелі Каліко, щоб сьогодні бути тут.#$b#Мені нечасто випадає нагода її побачити!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sebastian_spouse_y2",
+      "english": "That lady in the graveyard predicted our future...$0#$b#Apparently, we're destined to live a happy life together.$1",
+      "translation": "Та пані на кладовищі передбачила наше майбутнє...$0#$b#Виявляється, нам судилося прожити щасливе життя разом.$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sam_spouse_y2",
+      "english": "Hey, are you enjoying the festival? I'll be rooting for our grange display!$0#$e#Psst... If you're going to bet your tokens on the wheel... bet on green!$0",
+      "translation": "Гей, тобі подобається фестиваль? Я вболіватиму за нашу виставкову вітрину господарства!$0#$e#Пс-с... Якщо ставитимеш жетони на колесо... став на зелене!$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Alex_spouse_y2",
+      "english": "Did you eat yet? There's almost too much to go around!$0#$e#I already ate three sandwiches... Mmm... that sauce...",
+      "translation": "Уже вдалося поїсти? Їжі тут навіть забагато!$0#$e#Я вже з’їв три бутерброди... М-м-м... Цей соус...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Harvey_spouse_y2",
+      "english": "Hi, honey. Good luck today in the competition. I just know you're going to shine!$0",
+      "translation": "Привіт, сонечко. Удачі сьогодні в конкурсі. Я просто знаю, що ти всіх затьмариш!$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Elliott_spouse_y2",
+      "english": "Victory! I achieved a score of '216' with five fish caught... a new personal best!$1#$e#Now, I must choose a fitting prize to purchase for you with these star tokens...$0",
+      "translation": "Перемога! Я набрав 216 очок, упіймавши п’ять рибин... Новий особистий рекорд!$1#$e#Тепер мушу вибрати гідний приз для тебе за ці Зоряні жетони...$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Shane_spouse_y2",
+      "english": "I might ask you to watch the animals soon so I can grab some food.$0",
+      "translation": "Можливо, невдовзі попрошу тебе приглянути за тваринами, щоб я міг сходити по їжу.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Abigail_y2",
+      "english": "This blade is so elegant. Maybe some day I'll have enough money to buy one!$0",
+      "translation": "Який витончений клинок. Може, колись у мене вистачить грошей його купити!$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Robin_y2",
+      "english": "If you want to master the wood, you have to think like a tree...$0",
+      "translation": "Якщо хочеш опанувати дерево, треба мислити як дерево...$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Demetrius_y2",
+      "english": "Sheep have remarkable memory capabilities... retaining familiarity with both fellow sheep and humans...$0#$e#They even form friendships, mirroring the close bonds we humans cultivate with one another!$1",
+      "translation": "Вівці мають дивовижну пам’ять... Вони впізнають як інших овець, так і людей...$0#$e#Вони навіть заводять друзів, віддзеркалюючи тісні зв’язки, які ми, люди, вибудовуємо між собою!$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Maru_y2",
+      "english": "There's so much to do! I don't know where to begin.$0",
+      "translation": "Тут стільки всього можна зробити! Не знаю, з чого почати.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sebastian_y2",
+      "english": "That lady told me my fortune. I don't know what to make of it...$0",
+      "translation": "Та пані напророкувала мені майбутнє. Не знаю, що й думати...$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Linus_y2",
+      "english": "Animals are kind of like little people... they also have feelings and emotions.$0",
+      "translation": "Тварини трохи схожі на маленьких людей... У них теж є почуття й емоції.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Pierre_y2",
+      "english": "I'm confident that I'll emerge victorious in this year's grange display competition!$1",
+      "translation": "Я впевнений, що цього року переможу в конкурсі виставкових вітрин господарства!$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Caroline_y2",
+      "english": "Some of the produce in our grange display came from my little greenhouse. We've been carefully growing this stuff all year!$0",
+      "translation": "Деякі продукти в нашій виставковій вітрині господарства виросли в моїй маленькій теплиці. Ми дбайливо вирощували їх увесь рік!$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Alex_y2",
+      "english": "Every hundred rounds of the strength game I win, I eat another BBQ sandwich.$0",
+      "translation": "Після кожної сотні перемог у грі на силу я з’їдаю ще один бутерброд із барбекю.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "George_y2",
+      "english": "%George is on the verge of falling asleep.",
+      "translation": "%George ось-ось засне.",
+      "reviewed": true
+    }
+  ]
+}

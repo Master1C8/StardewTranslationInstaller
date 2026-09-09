@@ -1,0 +1,27 @@
+{
+  "id": "0262-event-town-010",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "611439/j 4/t 800 1300/w sunny/a 0 54/H": "630a011f708dd6751dd98ab5468c11fcd8cd5ad2fe5910234d6a907b56e692a1"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "611439/j 4/t 800 1300/w sunny/a 0 54/H": "distantBanjo/53 23/farmer 53 31 0 Lewis 53 23 0 Junimo -3000 -3000 2/broadcastEvent/pause 500/addMailReceived ccDoorUnlock/addQuest 26/skippable/move farmer 0 -3 0/emote Lewis 28 true/move farmer 0 -3 0/pause 300/faceDirection Lewis 2/pause 500/speak Lewis \"О, здравей.\"/pause 500/move farmer -1 0 0/move farmer 0 -2 0/faceDirection Lewis 0/pause 600/emote Lewis 40/pause 400/viewport move 0 -1 5000/speak Lewis \"Каква грозна гледка...$s\"/pause 600/faceDirection Lewis 3/pause 500/faceDirection farmer 1/pause 400/speak Lewis \"Това е Общественият център на град Пеликан... или поне това, което е останало от него.$s\"/pause 800/faceDirection farmer 0/pause 400/faceDirection Lewis 0/pause 200/speak Lewis \"Някога беше гордостта и радостта на града... винаги кипеше от живот.\"/pause 800/faceDirection Lewis 3/pause 500/speak Lewis \"А сега... само го погледни. Срамота е.$s#$b#Днес младите предпочитат да седят пред телевизора, вместо да участват в живота на общността.\"/pause 800/speak Lewis \"Но я ме чуй, звуча като стар глупак.$s\"/move Lewis 0 -1 0/speak Lewis \"Корпорация Joja не спира да ме притиска да им продам земята, за да я превърнат в склад... #$b#Парите биха били от полза за град Пеликан, но нещо ме спира да я продам... Май старците като мен се привързват към реликвите от миналото... Е, както и да е.$s#$b#Ако още някой си купи членство в Joja Co., просто ще го продам.\"/pause 1000/speak Lewis \"*въздишка*... Хайде да влезем... \"/move Lewis 0 -2 0/pause 300/showFrame Lewis 21/pause 300/showFrame Lewis 20/playSound openBox/pause 500/playSound doorClose/stopAnimation Lewis/warp Lewis -1 -1/move farmer 0 -3 0/playSound doorClose/warp farmer -1 -1/globalFade/viewport -1000 -1000/changeLocation CommunityCenter/warp Lewis 32 15/warp farmer 32 22/playMusic communityCenter/pause 1000/viewport 32 15 true/viewport move 0 -1 5000/move farmer 0 -10 0 true/move Lewis 0 -4 3 true/pause 5000/faceDirection Lewis 3/pause 500/emote Lewis 8/pause 500/speak Lewis \"Хмм? Какво е това?...#$b#Май Винсънт и Джас са си играли тук.\"/faceDirection Lewis 2/speak Lewis \"Това място е още по-порутено, отколкото го помня.\"/pause 500/temporarySprite 29 8 5 8 50 false 1/warp Junimo 29 8/animate Junimo true true 70 28 29 30 31/playSound coin/pause 400/jump farmer/pause 500/emote Lewis 8/pause 800/speak Lewis \"Какво?\"/pause 500/warp Junimo -1 -1/temporarySprite 29 8 6 8 30 false 1/stopAnimation Junimo/playSound dwop/faceDirection Lewis 0/pause 1000/faceDirection Lewis 1/pause 400/faceDirection Lewis 3/pause 800/faceDirection Lewis 2/pause 600/speak Lewis \"Какво има? Не се чувстваш добре?$s\"/speed farmer 4/move farmer -2 0 0/speed farmer 4/move farmer 0 -1 0/faceDirection Lewis 3/pause 400/faceDirection farmer 2/pause 500/showFrame 96/pause 600/move Lewis 0 1 3/move Lewis -2 0 0/showFrame farmer 0/speak Lewis \"Видя нещо? Хмм... Няма да се изненадам, ако мястото е пълно с плъхове.$h\"/pause 500/temporarySprite 31 14 5 8 50 false 1/warp Junimo 31 14/animate Junimo true true 100 12 13 14 15/playSound coin/pause 400/speed farmer 4/move farmer 1 0 2/jump farmer/startJittering/showFrame 94/pause 1600/playSound dwop/temporarySprite 31 14 6 8 50 false 1/warp Junimo -1 -1/faceDirection Lewis 2/pause 1000/showFrame farmer 0/stopJittering/emote Lewis 40/animate Lewis true false 100 18/pause 900/stopAnimation Lewis/move Lewis 1 0 0/faceDirection Lewis 0/pause 500/speak Lewis \"Тревожиш ме, @...$s\"/pause 700/speak Lewis \"Виж, мисля да се прибирам. Трябва да обядвам.\"/pause 500/showFrame 96/move Lewis 0 3 2/pause 500/faceDirection Lewis 0/pause 500/showFrame 0/speak Lewis \"Хей. Отсега нататък ще оставям това място отключено... може да помогнеш да хванем онзи плъх, ако ти остане време.\"/pause 600/move Lewis 1 0 2/move Lewis 0 5 2 true/globalFade/viewport -1000 -1000/pause 500/message \"Странно...\"/pause 500/message \"Ще трябва да се върна и да проуча тази сграда по-обстойно.\"/pause 800/changeLocation Town/warp farmer 52 20/pause 800/end position 52 20"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all eighteen quoted Community Center introduction, Joja sale, Junimo sighting and exploration fields in Town source ordinal 10.",
+      "Preserved the unlock mail, quest, location changes, Junimo animations, event commands, actor identifiers, emotion markers and control tokens.",
+      "Applied the locked Community Center, Pelican Town and Joja terminology and replaced the source’s gendered illness question with neutral Bulgarian."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "8bc4b0bd79fb97eea2f8e27b72fc9d47db619b0051d4185791d0587729350991"
+  }
+}

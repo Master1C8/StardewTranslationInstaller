@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HarveyRoom",
+      "When": {
+        "Language": "nl-vnrevival"
+      },
+      "Entries": {
+        "normal": "pause 400/speak Harvey \"Sorry dat ik er zo slordig uitzie... Ik wist niet dat je langskwam.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Hé, volgens mij hoor ik een vliegtuig overvliegen...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, kom eens hier!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Kijk!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"Als kind droomde ik er altijd van om piloot te worden.\"/pause 1000/speak Harvey \"...Maar door mijn slechte ogen en verlammende hoogtevrees begon die droom te vervagen.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"Het is goed... wees niet verdrietig.#$b#Ik heb mijn plaats in het leven leren aanvaarden. Niet iedereen kan zijn dromen verwezenlijken... zo zit de wereld nu eenmaal in elkaar.\"/pause 1600/speak Harvey \"Hé, laat me je mijn modelvliegtuigen tonen. Ik heb net de nieuwe luxe set van de TR-Starbird afgemaakt.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "0076-notes-legends-goblins",
+  "locale": "sr",
+  "target": "Strings/Notes",
+  "glossarySha256": "717e409d631b59e1069713078c555dee4f7ee3f658bdbe1d620a066c87902fab",
+  "review": "source-meaning-terminology-Serbian-grammar-voice-context-tokens",
+  "smallBatchReason": "Final seven library records: complete Crystalarium and legendary-fish guides, Gunther notes, Goblins book, opaque fictional inscription, and missing-book message.",
+  "entries": {
+    "15": "Технолошки извештај!\n\nНедавно су објављени нацрти за напредну машину под називом 'Кристаларијум'.\n Ова машина може да узгаја кристале готово ни из чега, пружајући власницима бескрајне залихе драгоцених драгуља!\nЕво како ради: Ставите драгуљ по свом избору у кристаларијум...\nа сад будите стрпљиви, то може потрајати и неколико дана... али кристаларијум ће на крају узгојити копију онога што ставите унутра!\nЗнаћете да је спреман када престане да се мрда. Чим извадите драгуљ, кристаларијум ће почети да ради на још једној копији... Никада нећете морати да га поново пуните, осим ако желите да промените врсту драгуља коју производи!\nНажалост, кристаларијум не ради са изузетно ретким драгуљем познатим као 'Призматична крхотина'... Из неког разлога, електромагнетно поље крхотине неповољно утиче на кристаларијум.",
+    "16": "Тајне легендарних риба\n\nРибари причају о пет ретких и јединствених риба које могу да улове само вешти пецароши. Једном уловљене, више се никада неће појавити.\n\nГримизна риба живи у топлим океанским водама током лета. Виђена је на крајњем истоку Плаже.\n\nГлечерска риба, која се појављује само зими, може се уловити крај јужног врха острва у облику врха стреле у шуми Синдерсап... близу места где се река улива у океан.\n\nУдичар је виђен у јесен, северно од града, где река тече с планина.\n\nПрича се о необичној, изобличеној риби која живи у канализацији.\n\n\n\nПоследња риба, чија врста никада до сада није уловљена, позната је само као 'Легенда'. Прича се да живи у потопљеном деблу у планинском језеру, а излази само током кишних пролећних дана да грицка жабља јаја. Само највештији рибар може да се нада да ће је уловити.\n\nВежбајте Риболов и будите упорни, па ћете с временом уловити ове неухватљиве рибе. Обавезно поштујте воду и немојте изловити превише рибе из екосистема.",
+    "17": "...Видео сам нешто чудно у тунелу који води из града Пеликана. У мраку су скривена мала врата. Ипак, нисам успео да их отворим.\n\n-Гантер",
+    "18": "Порука од Гантера: Ух, ова библиотека је стварно постала сјајна, захваљујући вашој помоћи! Много вам хвала!",
+    "19": "Гоблини^М. Џаспер^^Изгледа да врста општепозната као \"Гоблин\" потиче из шума далеког североистока, иза брда Блумајер. Препознатљиви по зеленој кожи, јаркоцрвеним очима и непријатном мирису, Гоблини при првом сусрету могу да уплаше неискусне путнике.^^Упркос узнемирујућем изгледу, Гоблини имају интелектуалне и емоционалне способности сличне људским и без тешкоћа уче наше обичаје и језике. При сусретима са мном, Гоблини су били прилично пријатељски настројени и срдачни чим би схватили да им не желим зло. Нажалост, векови неповерења и злостављања од стране људи навели су многе Гоблине да потраже запослење код вештица, вештаца, некроманата и других сумњивих типова.^^Традиционална исхрана Гоблина углавном се састоји од меса ларви, обично крупних и сочних врста које потичу из њихове завичајне шуме. У посебним приликама Гоблини се часте нечим што се зове 'Празнински мајонез'... што се сматра можда најфинијом посластицом целе гоблинске кухиње.",
+    "20": "Solok Ulan Paa Eno Ra Coto Ulan Coto Ulan Mabo Bel Eno Ra Teba Omi Walo Nemo^^Dop Ulan Coto Kui Mabo Awa Yoba Omi Solok Awa Lon Omi Omi Nemo^^Solok Teba Ra Awa Nemo Gawa Eno Bel Ulan Nemo Teba Omi Yoba Bel Omi Xi",
+    "Missing": "Овде недостаје књига..."
+  },
+  "preservedReasons": {
+    "20": "The source is entirely opaque fictional-language inscription, not English prose. GameLocation.readNote loads Strings/Notes:<id>, replaces LF with ^ and displays the text without a translation/decryption step. Preserve every word, original Latin spelling, order and ^^ boundaries rather than invent a meaning or expose a puzzle solution."
+  },
+  "allowedLatin": {
+    "20": [
+      "Awa",
+      "Bel",
+      "Coto",
+      "Dop",
+      "Eno",
+      "Gawa",
+      "Kui",
+      "Lon",
+      "Mabo",
+      "Nemo",
+      "Omi",
+      "Paa",
+      "Ra",
+      "Solok",
+      "Teba",
+      "Ulan",
+      "Walo",
+      "Xi",
+      "Yoba"
+    ]
+  },
+  "contextNotes": {
+    "15": "EMF is an ordinary abbreviation for electromagnetic field and is expanded into Serbian електромагнетно поље; it is not a runtime token. Copy timing, repeated output, restart conditions and Prismatic Shard exception are retained.",
+    "16": "Establish object-name contracts Crimsonfish=Гримизна риба, Glacierfish=Глечерска риба, Angler=Удичар, Legend=Легенда. Anglerfish in this source book refers to the legendary Angler, not the Пецарош profession. The sewer fish stays unnamed because the English book does not disclose its name. Translate the original book’s instructions faithfully without updating mechanics. Arrowhead island describes its shape; no new proper place name invented.",
+    "17": "Gunther is an established male character; first-person Видео сам/нисам успео is appropriate. The note concerns the tunnel out of Pelican Town, not a mine or sewer.",
+    "19": "Bluemire Hills is directly rendered брда Блумајер. Narrator M. Jasper retains no invented gender. Void Mayonnaise is Празнински мајонез, consistent with canonical Void Chicken adjective. The author distinguishes frightening appearance from equal human-like capacities and locates hostile employment in human mistreatment; all of those qualifications remain.",
+    "20": "Read-only IL inspection of installed Stardew Valley 1.6.15 GameLocation.readNote confirmed direct text loading and LF-to-caret conversion. This record contains no source-English words to translate; the Latin fragment allowance applies only to this exact source-hashed inscription."
+  }
+}

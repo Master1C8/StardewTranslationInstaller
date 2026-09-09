@@ -1,0 +1,40 @@
+{
+  "id": "0197-dialogue-shane-2",
+  "locale": "sr",
+  "target": "Characters/Dialogue/Shane",
+  "glossarySha256": "717e409d631b59e1069713078c555dee4f7ee3f658bdbe1d620a066c87902fab",
+  "review": "source-meaning-terminology-Serbian-grammar-voice-context-tokens",
+  "entries": {
+    "Sat": "Зашто ме гњавиш? Желим да будем сам.",
+    "Sat2": "#$1 ShaneJOSH#Изненађен сам што и даље покушаваш да се спријатељиш са мном. Зар још нисам био довољно непристојан према теби?#$e#*уздах*...$s",
+    "Sat4": "$d Joja#Изнајмљујем собу од Марни по заиста доброј цени. Мала је, али не могу да се жалим.|Када бих могао да почнем живот испочетка, можда бих отворио фарму кокошака. Само јаја кокошака из слободног узгоја, наравно.",
+    "Sat8": "Стварно сам се везао за Марнине кокошке.$h||Кокошка те никада неће изневерити. Људи, с друге стране...",
+    "Sat10": "Твоја фарма делује као одлично место за гајење кокошака.$h",
+    "Sun": "Заузет сам, зар не видиш?||...Не разговара ми се ни са ким.",
+    "Sun2": "Опет ти? Колико пута морам да ти кажем да ме оставиш на миру?$s",
+    "Sun4": "Хм... Сада је %time. Да ли да убацим смрзнуту пицу у микроталасну или да сачекам?$u||Ако Тунелерси победе, попићу хладно пиво да прославим.#$e#Ако изгубе? Попићу хладно пиво да утопим тугу.",
+    "Sun6": "...Мислим да се можда гојим.$s",
+    "Sun8": "Можда ћу, ако будем гледао више телевизије, заборавити на живот. То би било опуштајуће.$u",
+    "Sun10": "Здраво, @. Заправо ми је дан до сада прилично добар.$h",
+    "event_room1": "У реду... За то ће бити потребан сјајан сценарио. Можда ћу следећи пут када видим Елиота у салуну затражити његов савет.$s",
+    "event_room2": "Звучи сјајно. Мораћу да направим гомилу практичних ефеката како би изгледало добро.",
+    "event_noLoan1": "Нисам знао да тако чврсто држиш новчаник...$s",
+    "event_noLoan2": "У реду, тата...$s^У реду, мама...$s",
+    "event_noLoan3": "О, вау...$s",
+    "event_apologize1": "...Да, и мени.",
+    "event_apologize2": "Знам... Зато сам свратио, да ти кажем о томе.",
+    "event_apologize3": "Вау, било је толико озбиљно, а? Једва да се сећам...",
+    "event_stadium1": "О, да? Ваљда то има смисла.$6#$b#Ја? Мени град Пеликан понекад досади.#$b#Али... допада ми се што се разликујеш. Уравнотежујемо једно друго.$l",
+    "event_stadium2": "О, стварно? Изненађен сам... Није ли твој долазак у долину Стардју био бекство од градске буке?$6#$b#Хоћу да кажем... Немој ме погрешно схватити, потпуно те разумем. Мој живот у граду Пеликану је прилично једноличан, знаш."
+  },
+  "smallBatchReason": "Complete the final 21 records of Shane’s 71-record dialogue asset and close its section audit.",
+  "contextNotes": {
+    "Sat4": "Both source Joja-state branches remain intact.",
+    "Sat8": "Both source pipe-separated chicken variants remain intact.",
+    "Sun": "Both source pipe-separated dialogue variants remain intact.",
+    "Sun4": "Both source pipe-separated time and Tunnelers variants remain intact, including %time.",
+    "event_noLoan1": "The miser insult is recast through the player’s grip on the wallet to avoid unsupported gender agreement.",
+    "event_noLoan2": "Both source player-gender parental branches remain intact.",
+    "event_stadium2": "The move-to-the-valley question is recast through the player’s arrival to avoid unsupported player-gender agreement."
+  }
+}

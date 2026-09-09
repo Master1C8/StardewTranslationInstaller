@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "0390-paint-data",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/PaintData",
+  "status": "reviewed",
+  "entries": {
+    "House": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+    "Log Cabin": "Building/-20 20/Roof/-15 5/Trim/-10 5",
+    "Stone Cabin": "Building/-15 25/Roof/-15 5/Trim/-5 5",
+    "Plank Cabin": "Building/-55 -20/Roof/-10 5/Trim/-55 -30",
+    "Beach Cabin": "Building/-10 0/Roof/0 5/Trim/-5 5",
+    "Neighbor Cabin": "Building/-10 0/Roof/-15 10/Trim/-10 5",
+    "Rustic Cabin": "Building/-20 5/Roof/-5 5/Trim/-5 0",
+    "Trailer Cabin": "Building/-5 0/Roof/-5 5/Trim/-5 0",
+    "Stable": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+    "Big Shed": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+    "Deluxe Coop": "Building/-25 0/Roof/-15 5/Trim/-25 0",
+    "Deluxe Barn": "Building/-15 0/Roof/-10 5/Trim/-10 5"
+  },
+  "preserveReasons": {
+    "House": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Log Cabin": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Stone Cabin": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Plank Cabin": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Beach Cabin": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Neighbor Cabin": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Rustic Cabin": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Trailer Cabin": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Stable": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Big Shed": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Deluxe Coop": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte.",
+    "Deluxe Barn": "Structural building paint-mask channel and color-offset metadata with no player-facing prose; preserved byte-for-byte."
+  },
+  "sourceHashes": {
+    "House": "bd8d2636a16a2f95fc6ddb7123963af3780b7ff518a19f19dd819334543993f0",
+    "Log Cabin": "b2469d2a9c301afb43db9f6f68f0a601f7ce7585d5792af46d01d23ef06e9cc7",
+    "Stone Cabin": "9ed7b48ef1edd89a2da72e9b97760475895bfcf10de91d890110abe96707f615",
+    "Plank Cabin": "0c65bbd6baf186ddc522e15ede09bb98009e1537175347b1cf55b0cc6f8e6679",
+    "Beach Cabin": "c4968bb31c99442116d9a163301a84bb88bbcd9c60f68f47c25219b43371ba4b",
+    "Neighbor Cabin": "cd85d4b90fd4272b3ad61e5fc3dbd32835623a7bfc5bef05d0fbbd797a0bdcf2",
+    "Rustic Cabin": "f6978fe3bd233ace63c8abc530be5eefb6771384eb8dcc69438b11316a55f840",
+    "Trailer Cabin": "cb036479b101793fad710d8b006a9e3f43cf49a3cfa702faecf0e1581990f338",
+    "Stable": "1acd8439577ea65247c865a9ccd3774d3d0a0c0ad7cec7126989794d7abdf7d6",
+    "Big Shed": "26872f530e02364f3da7886be258127640f9fedb19f636c1409b9cb7e211b74b",
+    "Deluxe Coop": "04add56e37fc39bf2783055b378b6b800aaf7328278633ba68af2650ef8a99b1",
+    "Deluxe Barn": "b1d91a9538855caa0bcbbfdcaa9a660f9a9252fe95cd8585aae6088d5d38e927"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 12,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Classified and reread all twelve Data/PaintData values directly from the English extraction; every value consists only of paint-mask channel names and numeric color offsets.",
+      "Preserved every structural record byte-for-byte with an explicit reason and verified the Building, Roof and Trim channel sequence."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "2c15a8868d676abba6fbed33575d276f240d386725e5f8702aa325daefa4b512"
+  }
+}

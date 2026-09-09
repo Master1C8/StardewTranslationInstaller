@@ -1,0 +1,27 @@
+{
+  "id": "0213-event-josh-house-005",
+  "target": "Data/Events/JoshHouse",
+  "status": "reviewed",
+  "sourceHashes": {
+    "5837189/n georgeGifts": "c47d15c5cd8b87c03202913aea720e7be5c0a338c06e4a5312be7e23090ec570"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "5837189/n georgeGifts": "jaunty/-1000 -1000/farmer -100 -100 02 George 18 19 2 Evelyn 3 17 0/skippable/animate George false true 400 0 20/positionOffset George 0 -16/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 19.5 18.5/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 16.5 18/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 20 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 19 17/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 103 243 10 13 18.5 19.5/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17.25 20.6/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17 21 999 .8/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 114 241 14 15 17.5 21 999 .8/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 103 243 10 13 15 18/specificTemporarySprite staticSprite LooseSprites\\\\Cursors 288 1231 16 16 17 19 998/viewport 18 19 true/pause 5000/warp farmer 9 24/playSound doorClose/move farmer 0 -4 1/move farmer 4 0 1/stopAnimation George/faceDirection George 3/speak George \"@? Какво означава всичко това...#$b#Някакъв номер ли ми погаждате?\"/pause 500/quickQuestion #Искахме да ти покажем благодарността си#Съпругата ти организира всичко#Да, това е номер(break)playMusic none\\pause 1000\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\positionOffset George -4 0\\playSound Cowboy_Footstep\\pause 500\\specificTemporarySprite georgeLeekGift\\specificTemporarySprite removeSprite 998\\playSound Ship\\pause 800\\showFrame George 21\\playSound coin\\playMusic echos\\pause 1000\\speak George \"Праз... $s\"\\pause 1000\\speak George \"Любимият ми... Точно както мама го приготвяше преди толкова много години...\"\\pause 2000\\showFrame George 0\\faceDirection George 2\\speak George \"Хмпф. Е...\"\\emote George 40\\showFrame George 16\\pause 500\\speak George \"Е... Това... Хмпф.#$b#Може би все пак не съм толкова забравен и пренебрегван, колкото си мислех...$s\"\\faceDirection George 3\\speak George \"Благодаря, синко.$h^Благодаря, миличка.$h#$b#Зарадва един старец.$h\"\\pause 500\\emote farmer 32(break)playMusic none\\pause 300\\jump George\\pause 1000\\speak George \"Ха! Мислеше си, че може да ме заблуди!\"\\pause 500\\faceDirection George 2\\pause 400\\showFrame George 16\\pause 600\\speak George \"Мислеше си, че може да ме заблуди... да ме накара да повярвам, че не съм само в тежест.$s\"\\stopAnimation George\\faceDirection George 3\\speak George \"Но аз си знам...\"\\pause 400\\faceDirection George 1\\speak George \"А сега се омитай!$u\"\\emote farmer 28(break)playMusic none\\pause 300\\jump George\\pause 1000\\speak George \"Ха! Значи обичаш номерата?\"\\emote George 40\\playMusic playful\\speak George \"Хахах... Знаеш ли, навремето и аз обичах да погаждам номера.$h\"\\faceDirection George 2\\speak George \"Е, поне ме разсмя.$h\"\\pause 2000\\faceDirection George 3\\emote George 8\\speak George \"Какво, мислиш, че ще ги отворя?\"\\jump George\\pause 1000\\speak George \"Ха! Няма начин. Мислиш, че ще се хвана на стария номер с „избухващия подарък“?\"\\faceDirection George 2\\speak George \"Те отиват право в боклука!\"\\pause 300\\faceDirection farmer 2 true\\showFrame farmer 94\\jump farmer/pause 2000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all sixteen quoted dialogue fields and the complete three-choice quick question in Josh House source ordinal 5.",
+      "Preserved every branch boundary, gift sprite, item placement, gender branch and event command while applying the established праз term and George’s established синко/миличка address pair.",
+      "Maintained the distinct appreciation, wife-attribution and prank outcomes, including George’s vulnerability, suspicion and humor."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "5f8814baa5b62cd48f157fd0fc2bb175694485753a0762a591f8f56627374c8b"
+  }
+}

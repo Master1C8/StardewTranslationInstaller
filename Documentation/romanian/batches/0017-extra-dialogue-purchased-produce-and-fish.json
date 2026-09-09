@@ -1,0 +1,115 @@
+{
+  "locale": "ro",
+  "target": "Data/ExtraDialogue",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Reviewed 25 purchase dialogues, named NPC voices and culinary details. Pierre intentionally takes false credit for grown/cooked/foraged goods; preserved. Dynamic names are catalogue labels/appositions; pronouns refer to explicit ceva/produs rather than guessing item gender. Lexicon masculine alternatives agree with ceva and bucătar; articles remain adjacent empty placeholders. Retained original general-store wording in PurchasedItem_2_QualityLow_Willy despite its key. Casserole remains a general baked dish, not a narrower soufflé; vinaigrette rendered by its oil/vinegar description.",
+  "entries": {
+    "PurchasedItem_3_NonRude": {
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# I couldn't pass up that great price.",
+      "translation": "Am fost aseară la cumpărături și am luat {1}{2} la reducere, cu doar {3}g.#$e# Nu puteam rata un preț atât de bun."
+    },
+    "PurchasedItem_4": {
+      "source": "So I was at the store the other day and Pierre showed me {1} {2} you brought in.#$e#I bought it.$h",
+      "translation": "Eram zilele trecute în magazin, iar Pierre mi-a arătat ce aduseseși: {1}{2}.#$e#Am cumpărat.$h"
+    },
+    "PurchasedItem_5_VegetableOrFruit": {
+      "source": "I bought the tastiest {2} from Pierre's shop the other day. #$b#He said that he grew the thing in his own backyard. I didn't know Pierre was such a talented farmer!$h#$b#Looks like you might have some competition, huh?",
+      "translation": "Am cumpărat zilele trecute de la Pierre ceva deosebit de gustos: {2}. #$b#A spus că l-a cultivat chiar el în curtea din spate. Nu știam că Pierre e un fermier atât de talentat!$h#$b#Se pare că ai concurență, nu?"
+    },
+    "PurchasedItem_5_Cooking": {
+      "source": "I bought the tastiest {2} from Pierre's shop the other day. #$b#He said he cooked the thing himself using local ingredients. I didn't know Pierre was such {3} {4} chef!",
+      "translation": "Am cumpărat zilele trecute de la Pierre ceva deosebit de gustos: {2}. #$b#A spus că l-a gătit chiar el, cu ingrediente locale. Nu știam că Pierre e un bucătar atât de {3}{4}!"
+    },
+    "PurchasedItem_5_Foraged": {
+      "source": "I bought the tastiest {2} from Pierre's shop the other day. He said he found it himself while exploring the mountains. I didn't know Pierre was such a talented forager!",
+      "translation": "Am cumpărat zilele trecute de la Pierre ceva deosebit de gustos: {2}. A spus că l-a găsit chiar el, explorând munții. Nu știam că Pierre se pricepe atât de bine la cules!"
+    },
+    "PurchasedItem_Teen": {
+      "source": "Hey, so I picked up {2} at the store last night. My mom wanted something good for dinner.",
+      "translation": "Hei, am luat aseară de la magazin {2}. Mama voia ceva bun pentru cină."
+    },
+    "PurchasedItem_Abigail_QualityLow": {
+      "source": "Hey. We had one of those {2}s you sold at the shop for dinner last night... I guess it was starting to go bad and my Dad couldn't bear to throw it out.$h#$b#Unfortunately it tasted like {3}.$s",
+      "translation": "Salut. Aseară am mâncat la cină ceva din ce ai vândut la magazin: {2}... Cred că începuse să se strice, iar tata nu s-a îndurat să arunce.$h#$b#Din păcate, avea gust de {3}.$s"
+    },
+    "PurchasedItem_Abigail_QualityHigh": {
+      "source": "Hey. We had one of those {2}s you sold at the shop for dinner last night... I guess it was starting to go bad and my Dad couldn't bear to throw it out.$h#$b#It was still pretty good, though.",
+      "translation": "Salut. Aseară am mâncat la cină ceva din ce ai vândut la magazin: {2}... Cred că începuse să se strice, iar tata nu s-a îndurat să arunce.$h#$b#Totuși, încă era destul de bun."
+    },
+    "PurchasedItem_Caroline_QualityLow": {
+      "source": "Oh, @... This is embarrassing. I threw one of your {2}s you sold us into my compost bin.$s#$b#Now the whole thing smells horrendous. Where did you find that thing again?",
+      "translation": "O, @... Mi-e cam rușine. Am aruncat în lada de compost unul dintre produsele pe care ni le-ai vândut: {2}.$s#$b#Acum, tot compostul miroase îngrozitor. Unde ziceai că ai găsit așa ceva?"
+    },
+    "PurchasedItem_Caroline_QualityHigh": {
+      "source": "Oh, @... This is embarrassing. I threw one of your {2}s you sold us into my compost bin.$s#$b#But on the bright side, the worms are really loving it! They've never looked happier!",
+      "translation": "O, @... Mi-e cam rușine. Am aruncat în lada de compost unul dintre produsele pe care ni le-ai vândut: {2}.$s#$b#Dar partea bună e că viermilor le place la nebunie! Nu i-am văzut niciodată mai fericiți!"
+    },
+    "PurchasedItem_Pierre_QualityLow": {
+      "source": "Hey, remember that {2} you sold me the other day? I ended up serving it to the family for a special dinner.#$b#I can't say it was a hit... $s#$b#... well,... back to business, huh?",
+      "translation": "Hei, îți amintești ce mi-ai vândut zilele trecute, acel produs numit {2}? Până la urmă, l-am servit familiei la o cină specială.#$b#Nu pot spune că a avut succes... $s#$b#... ei bine... să revenim la afaceri, ce zici?"
+    },
+    "PurchasedItem_Pierre_QualityHigh": {
+      "source": "Hey, remember that {2} you sold me the other day? I ended up serving it to the family for a special dinner.#$b#My wife loved it! ...And Abby even started going to town on it after I smothered the thing in hoisin sauce. $h#$b#... well,... back to business, huh?",
+      "translation": "Hei, îți amintești ce mi-ai vândut zilele trecute, acel produs numit {2}? Până la urmă, l-am servit familiei la o cină specială.#$b#Soției mele i-a plăcut la nebunie! ...Până și Abby a început să-l înfulece după ce l-am înecat în sos hoisin. $h#$b#... ei bine... să revenim la afaceri, ce zici?"
+    },
+    "PurchasedItem_Haley": {
+      "source": "Emily tried to serve me {1} {2} for dinner last night... I threw it away when she wasn't looking.#$e#I don't like health food...$s",
+      "translation": "Emily a încercat să-mi servească {1}{2} la cină aseară... Am aruncat cât nu se uita.#$e#Nu-mi place mâncarea sănătoasă...$s"
+    },
+    "PurchasedItem_Elliott": {
+      "source": "I saw that Pierre had fresh {2} in the shop the other day! Marvelous. It smelled just perfect... and firm, too!",
+      "translation": "Am văzut zilele trecute că Pierre avea la magazin marfă proaspătă: {2}! Minunat. Avea un miros perfect... și o textură fermă!"
+    },
+    "PurchasedItem_Alex": {
+      "source": "Hey, so I picked up {1} {2} at the store last night. Grandma made her special casserole...",
+      "translation": "Hei, am luat aseară de la magazin {1}{2}. Bunica a făcut preparatul ei special la cuptor..."
+    },
+    "PurchasedItem_Leah": {
+      "source": "The other day I bought {1} {2} at Pierre's. It was perfect on a bed of greens and a dash of my 'special' vinaigrette.",
+      "translation": "Zilele trecute am cumpărat de la Pierre {1}{2}. A mers perfect pe un pat de verdețuri, cu puțin din sosul meu „special” de ulei și oțet."
+    },
+    "PurchasedItem_1_QualityHigh_Willy": {
+      "source": "Hey, {0}.#$b# So I stopped by Willy's the other day and bought {1} {2}. I've never seen one so fresh! #$b#So I cooked it up for dinner last night, and it filled the house with a {3} smell.. It was a hit!$h#$b#He told me you caught it yourself... I'm impressed!#$e# Anyways...",
+      "translation": "Salut, {0}.#$b# Am trecut zilele trecute pe la Willy și am cumpărat {1}{2}. N-am mai văzut așa ceva atât de proaspăt! #$b#Am gătit aseară pentru cină din ce am cumpărat, iar în toată casa mirosea a ceva {3}... A avut mare succes!$h#$b#Mi-a spus că e chiar captura ta... Impresionant!#$e# În fine..."
+    },
+    "PurchasedItem_1_QualityLow_Willy": {
+      "source": "Hey, {0}.#$b# So I stopped by Willy's the other day and bought {1} {2}. He said you caught it yourself! #$b#I cooked it up for dinner last night... and, uh... It filled the house with a {3} odor. I don't even want to know where you found that thing...$s#$e#Anyways...",
+      "translation": "Salut, {0}.#$b# Am trecut zilele trecute pe la Willy și am cumpărat {1}{2}. Mi-a spus că e chiar captura ta! #$b#Am gătit aseară pentru cină din ce am cumpărat... și, ăă... În toată casa mirosea a ceva {3}. Nici nu vreau să știu de unde ai luat așa ceva...$s#$e#În fine..."
+    },
+    "PurchasedItem_2_QualityHigh_Willy": {
+      "source": "Hi... did you sell {1} {2} to the fish shop the other day? I think I bought it...#$e#It was pretty high-quality stuff. I'm impressed.",
+      "translation": "Salut... ai vândut {1}{2} pescăriei zilele trecute? Cred că am cumpărat eu...#$e#Era ceva de foarte bună calitate. M-a impresionat."
+    },
+    "PurchasedItem_2_QualityHigh_Jodi_Willy": {
+      "source": "Hi... did you sell {1} {2} to the fish shop the other day? I think I bought it...#$e#It was pretty high-quality stuff. Very firm meat.",
+      "translation": "Salut... ai vândut {1}{2} pescăriei zilele trecute? Cred că am cumpărat eu...#$e#Era ceva de foarte bună calitate. Carnea era foarte fermă."
+    },
+    "PurchasedItem_2_QualityLow_Willy": {
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It smelled kind of fishy, but it was alright.",
+      "translation": "Salut... ai vândut {1}{2} magazinului universal zilele trecute? Cred că am cumpărat eu...#$e#Mirosea cam tare a pește, dar era în regulă."
+    },
+    "PurchasedItem_3_QualityLow_Rude_Willy": {
+      "source": "I went shopping last night and picked up {1} {2} on a 'chum-bucket' sale for only {3}g.#$e# It was {4}! No wonder Willy was practically giving that {5} away...",
+      "translation": "Am fost aseară la cumpărături și am luat {1}{2} la reducerea „găleata cu nadă”, cu doar {3}g.#$e# Era ceva {4}! Nu-i de mirare că Willy dădea aproape pe gratis acel {5}..."
+    },
+    "PurchasedItem_3_QualityHigh_Rude_Willy": {
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was actually pretty {4}.",
+      "translation": "Am fost aseară la cumpărături și am luat {1}{2} la reducere, cu doar {3}g.#$e# De fapt, era ceva destul de {4}."
+    },
+    "PurchasedItem_3_NonRude_Willy": {
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# I couldn't pass up that great price.",
+      "translation": "Am fost aseară la cumpărături și am luat {1}{2} la reducere, cu doar {3}g.#$e# Nu puteam rata un preț atât de bun."
+    },
+    "PurchasedItem_4_Willy": {
+      "source": "So I was at Willy's other day and he showed me {1} {2} you brought in.#$e#I cooked it up for dinner with some lemon and a side of rice pilaf. Pretty good!$h",
+      "translation": "Eram zilele trecute la Willy, iar el mi-a arătat ce aduseseși: {1}{2}.#$e#Am gătit pentru cină cu puțină lămâie și o garnitură de pilaf de orez. Destul de bun!$h"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Strings/Objects",
+  "records": 1532,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "readThrough": 1532,
+  "status": "completed-all-findings-corrected",
+  "review": "Read every entry side by side against original English, checking meaning, grammar, game mechanics, named concepts, dynamic insertion contexts and source formatting.",
+  "newTextIssues": 2,
+  "corrections": [
+    {
+      "key": "Book_Roe_Description",
+      "before": "Шкриње с благом из риболова могу да садрже икру.",
+      "after": "Сандуци с благом из риболова могу да садрже икру.",
+      "reason": "Mandatory glossary сандук с благом must replace noncanonical шкриња.",
+      "batch": "0091-objects-bombs-calcite"
+    },
+    {
+      "key": "SeaUrchin_Description",
+      "before": "Споро бодљикаво створење које неки сматрају посластицом.",
+      "after": "Бодљикаво створење које се споро креће и које неки сматрају посластицом.",
+      "reason": "Explicitly preserve slow movement and remove ambiguous adjective sequence.",
+      "batch": "0103-objects-rice-skillbooks"
+    }
+  ],
+  "finalLocaleCleanAudits": 0,
+  "terminologyResearch": {
+    "bioluminescence": {
+      "finding": "Both биолуминесценција and биолуминисценција are attested in Serbian university teaching materials. Existing Angler and MsAngler variants are not treated as an objective spelling defect.",
+      "sources": [
+        "https://www.bg.ac.rs/files/sr/studije/studije-uni/Program_Biofotonika_jul_2020.pdf",
+        "https://www.pmf.uns.ac.rs/wp-content/uploads/2024/DBE/MAS-MOL/MMFB28.pdf"
+      ]
+    }
+  },
+  "translationSha256": "4748b0fabbfce28e3ca78fb3e82f9ad0a1b8a84ef9c6736cc6b15d635a88c2b0"
+}

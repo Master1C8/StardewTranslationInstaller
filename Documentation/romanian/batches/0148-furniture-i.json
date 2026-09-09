@@ -1,0 +1,40 @@
+{
+  "locale": "ro",
+  "target": "Data/Furniture",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "This batch reviews 5 furniture runtime records. Every player-visible display name is delegated by field 7 to the Romanian Strings/Furniture localization target; the leading English value is a legacy internal name and every remaining field is runtime metadata. Each record is therefore retained byte-exact with an explicit reason.",
+  "entries": {
+    "FancyHousePlant5": {
+      "source": "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]/270/TileSheets\\furniture_3/true",
+      "translation": "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]/270/TileSheets\\furniture_3/true",
+      "preservationReason": "Furniture runtime data only: the leading English value is an internal legacy name, field 7 is a LocalizedText lookup into the Romanian Strings/Furniture localization target, and all type, geometry, rotation, price, placement, tilesheet and collection fields are preserved byte-exact."
+    },
+    "PigPainting": {
+      "source": "Pig Painting/painting/3 2/3 2/1/500/-1/[LocalizedText Strings\\Furniture:PigPainting]/93/TileSheets\\furniture_2/true",
+      "translation": "Pig Painting/painting/3 2/3 2/1/500/-1/[LocalizedText Strings\\Furniture:PigPainting]/93/TileSheets\\furniture_2/true",
+      "preservationReason": "Furniture runtime data only: the leading English value is an internal legacy name, field 7 is a LocalizedText lookup into the Romanian Strings/Furniture localization target, and all type, geometry, rotation, price, placement, tilesheet and collection fields are preserved byte-exact."
+    },
+    "MidnightBeachBed": {
+      "source": "Midnight Beach Bed/bed/2 4/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:MidnightBed]/299/TileSheets\\furniture_3/true",
+      "translation": "Midnight Beach Bed/bed/2 4/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:MidnightBed]/299/TileSheets\\furniture_3/true",
+      "preservationReason": "Furniture runtime data only: the leading English value is an internal legacy name, field 7 is a LocalizedText lookup into the Romanian Strings/Furniture localization target, and all type, geometry, rotation, price, placement, tilesheet and collection fields are preserved byte-exact."
+    },
+    "MidnightBeachDoubleBed": {
+      "source": "Midnight Beach Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:MidnightDoubleBed]/303/TileSheets\\furniture_3/true",
+      "translation": "Midnight Beach Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:MidnightDoubleBed]/303/TileSheets\\furniture_3/true",
+      "preservationReason": "Furniture runtime data only: the leading English value is an internal legacy name, field 7 is a LocalizedText lookup into the Romanian Strings/Furniture localization target, and all type, geometry, rotation, price, placement, tilesheet and collection fields are preserved byte-exact."
+    },
+    "DarkPiano": {
+      "source": "Dark Piano/decor/4 3/4 1/1/999/-1/[LocalizedText Strings\\Furniture:DarkPiano]/265/TileSheets\\furniture_3/true",
+      "translation": "Dark Piano/decor/4 3/4 1/1/999/-1/[LocalizedText Strings\\Furniture:DarkPiano]/265/TileSheets\\furniture_3/true",
+      "preservationReason": "Furniture runtime data only: the leading English value is an internal legacy name, field 7 is a LocalizedText lookup into the Romanian Strings/Furniture localization target, and all type, geometry, rotation, price, placement, tilesheet and collection fields are preserved byte-exact."
+    }
+  }
+}

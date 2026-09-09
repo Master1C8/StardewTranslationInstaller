@@ -1,0 +1,38 @@
+{
+  "locale": "nl",
+  "target": "Strings/Locations",
+  "sourceAssetSha256": "892128ef8bb14de2375994caff8212e30574764bd8504c34798162dfe007a376",
+  "reviewed": true,
+  "entries": {
+    "BeachNightMarket_PainterQuestion": "Beroemde schilder Lupini: Ik verkoop dit schilderij voor 1.200g. Wat denk je ervan?",
+    "Beach_Mariner_PlayerBuyItem_AnswerYes": "Kopen (5.000g)",
+    "FarmHouse_Bed_GoToSleep": "Gaan slapen?",
+    "Desert_SandDragon_MrQiNote": "'Je hebt jezelf bewezen. Bekijk de stapel hout naast je huis. -Meneer Qi'",
+    "ManorHouse_MayorFridge_MrQiNote": "'Goed gedaan. Je laatste opdracht: geef de zanddraak zijn laatste maaltijd. -Meneer Qi'",
+    "Club_CalicoJack_HS": "Deze tafel is voor de grote spelers. De inzet is 1.000 munten.",
+    "Club_QiCoins_BuyStarter": "Je hebt 0 Qi-munten. Een startpakket kopen voor 1.000g?",
+    "Town_SpecialCharmQuestion": "Chauffeur: Hé daar... Ik heb wat geluk nodig... breng me eens een 'Konijnenpootje'. Ik zorg dat het de moeite waard is.",
+    "Town_specialCharmNoFoot": "Chauffeur: Kom terug wanneer je een 'Konijnenpootje' bij je hebt.",
+    "Club_CalicoJackHS_NotEnoughCoins": "Je hebt minstens 1.000 munten nodig om hier te spelen.",
+    "IslandSecret_Event_BirdieFinished": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/removeQuest 130/skippable/addTemporaryActor Birdie 32 32 17 58 3 true/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 2300/playMusic none/animate farmer true true 100 35/addObject 19 58 870/playSound sandyStep/pause 800/stopAnimation farmer/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/move Birdie 0 -1 2/move Birdie 1 0 2/pause 500/jump Birdie/pause 500/playMusic desolate/speak Birdie \"Hij was van hem...$s\"/emote Birdie 20/pause 1200/playSound coin/removeObject 19 58/showFrame Birdie 20/pause 2500/speak Birdie \"Heh... Na al die jaren zit zijn geur er nog aan...#$b#...die vertrouwde, bedorven stank...$h\"/pause 300/faceDirection farmer 2 true/playSound croak/animate farmer false false 350 104 105 104 105 104 105/pause 1000/faceDirection farmer 3/speak Birdie \"Weet je... Het is een eenzaam leven hier geweest, mijn kind... maar ik heb nergens spijt van.#$b#Ik doe wat goed is voor mijn man... en op een dag zullen we weer samen zijn... hehe\"/pause 500/stopAnimation Birdie/move Birdie 0 1 3/playMusic tropical_island_day_ambient/faceDirection Birdie 1/quickQuestion #Het is eervol wat u doet.#Hij is er niet meer. U moet uw eigen leven leiden.(break)speak Birdie \"Je bezit grote wijsheid, mijn kind.#$b#En je hebt me veel rust gebracht... dit medaillon zal me de rest van mijn dagen troosten.$h\"(break)emote Birdie 28\\speak Birdie \"Een oude vrouw zoals ik? Ik denk dat het te laat is, lieverd...$s#$b#Bovendien... Ik vind het hier fijn! Het is rustig en prachtig. En ik heb een eindeloze voorraad verse vis, oesters en apenvlees. Hehehe.$h#$b#...Dat van het apenvlees was een grapje.\"/pause 1000/speak Birdie \"En nu... hoe kan ik je hiervoor belonen?\"/jump Birdie/pause 500/speak Birdie \"O... Wat dacht je ervan als ik je een bijzonder recept leer... Iets wat ik tijdens mijn vele jaren hier heb ontdekt.\"/pause 1000/playSound reward/addCraftingRecipe Fairy Dust/message \"Je hebt geleerd 'Feeënstof' te maken.\"/pause 1000/fork gotBirdieReward Strings\\\\Locations:alreadyGotNuts true/speak Birdie \"Deze mag je ook hebben...\"/awardFestivalPrize birdieReward true/pause 1000/speak Birdie \"Hoewel je een vreemde bent, heb je alles op alles gezet om een oude vrouw te helpen.#$b#Je hebt een hart van goud!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+    "FieldOfficeFinale": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Wauw...#$b#Kijk eens hoe ver we zijn gekomen!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"De collectie ziet er fantastisch uit, en dat is allemaal aan jou te danken, @.\"/emote farmer 32/speak SafariGuy \"Hier, om je te bedanken wil ik je iets leren.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Je hebt geleerd een 'Struisvogelbroedmachine' te maken.\"/pause 400/speak SafariGuy \"Met dit apparaat kun je thuis struisvogels grootbrengen. Zet de broedmachine gewoon in een Stal, leg er een Struisvogelei in en wacht...\"/faceDirection SafariGuy 0/speak SafariGuy \"Een Struisvogelei bemachtigen is echter een ander verhaal... Dat laat ik aan jou over!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Heh... Nou... nu begint het echte werk.#$b#Ik zal deze botten nog jaren bestuderen!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Vaarwel, @!\"/pause 600/end",
+    "AnimalHouse_Incubator_HouseFull": "Er staat een ei op het punt uit te komen, maar het gebouw is vol.",
+    "Backwoods_MonsterGrave": "Abigail heeft iemand gedood om mij te redden...#Dat zal ik nooit vergeten."
+  },
+  "notes": {
+    "BeachNightMarket_PainterQuestion": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Beach_Mariner_PlayerBuyItem_AnswerYes": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "FarmHouse_Bed_GoToSleep": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Desert_SandDragon_MrQiNote": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "ManorHouse_MayorFridge_MrQiNote": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Club_CalicoJack_HS": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Club_QiCoins_BuyStarter": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Town_SpecialCharmQuestion": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Town_specialCharmNoFoot": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Club_CalicoJackHS_NotEnoughCoins": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "IslandSecret_Event_BirdieFinished": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "FieldOfficeFinale": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "AnimalHouse_Incubator_HouseFull": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting.",
+    "Backwoods_MonsterGrave": "Corrects Dutch meaning, grammar, idiom, inclusive address, or numeric formatting."
+  }
+}

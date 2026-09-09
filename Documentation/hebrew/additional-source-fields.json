@@ -1,0 +1,34 @@
+{
+  "sourceKind": "native typed XNB fields",
+  "gameVersion": "1.6.15 build24356",
+  "reader": "/private/tmp/stardew-he-data-reader",
+  "records": [
+    {
+      "target": "Data/Pets",
+      "entry": "Turtle",
+      "field": "DisplayName",
+      "english": "Turtle",
+      "sourceXNB": "/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/Resources/Content/Data/Pets.xnb",
+      "sourceSHA256": "be3df20caa54fc05a445c8881cdf051af6d5de0c90318422aee66d8ab2f1949f",
+      "evidence": "GameData XML documents this field as a tokenizable display name/description. Native ContentManager deserialized original base XNB; value is literal English, not a localized-text reference."
+    },
+    {
+      "target": "Data/Buildings",
+      "entry": "Farmhouse",
+      "field": "Name",
+      "english": "Farmhouse",
+      "sourceXNB": "/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/Resources/Content/Data/Buildings.xnb",
+      "sourceSHA256": "1917de8574cfab091c3e40dbb6cf8243f09066a53cc41b08bd1e67f7f4ed3290",
+      "evidence": "GameData XML documents this field as a tokenizable display name/description. Native ContentManager deserialized original base XNB; value is literal English, not a localized-text reference."
+    },
+    {
+      "target": "Data/Buildings",
+      "entry": "Farmhouse",
+      "field": "Description",
+      "english": "Farmhouse",
+      "sourceXNB": "/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/Resources/Content/Data/Buildings.xnb",
+      "sourceSHA256": "1917de8574cfab091c3e40dbb6cf8243f09066a53cc41b08bd1e67f7f4ed3290",
+      "evidence": "GameData XML documents this field as a tokenizable display name/description. Native ContentManager deserialized original base XNB; value is literal English, not a localized-text reference."
+    }
+  ]
+}

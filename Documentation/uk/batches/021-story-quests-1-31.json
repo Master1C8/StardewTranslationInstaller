@@ -1,0 +1,229 @@
+{
+  "id": "021-story-quests-1-31",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of quest records 1–31: all titles, descriptions, and objectives. Every quest type, target query, item or location identifier, dependency, reward, cancel flag, and other field from position five onward was compared byte-for-byte with English. Deliberate clue misspellings were retained in Ukrainian, and canonical glossary terms were applied throughout. The remaining quest records are tracked separately and the full-locale final audits remain pending.",
+    "reviewedTextSHA256": "ef828607edde3b175a38592a74cc2f6870eeda518d0ae07427934dc6d44ae977",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 4
+  },
+  "records": [
+    {
+      "target": "Data/Quests",
+      "key": "1",
+      "english": "Location/Meet The Wizard/You received a letter from the local wizard. He claims to have information regarding the old community center./Enter the wizard's tower./WizardHouse/-1/0/-1/false",
+      "translation": "Location/Зустріч із Чарівником/Ви отримали листа від місцевого Чарівника. Він стверджує, що має відомості про старий Громадський центр./Увійдіть до Вежі чарівника./WizardHouse/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "2",
+      "english": "Basic/The Mysterious Qi/Within a secret lock-box, you found a note with peculiar instructions. It's signed by a 'Mr. Qi'./Leave a rainbow shell in the box at the train platform./null/-1/0/-1/false",
+      "translation": "Basic/Таємничий Ці/У таємній скриньці із замком ви знайшли записку з дивними вказівками. Її підписав «пан Ці»./Залиште Райдужну мушлю в скриньці на залізничній платформі./null/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "3",
+      "english": "Basic/The Mysterious Qi/You've found another note written by 'Mr. Qi'. The request is even more unusual this time./Place 10 beets inside Mayor Lewis' fridge./null/-1/0/-1/false",
+      "translation": "Basic/Таємничий Ці/Ви знайшли ще одну записку від «пана Ці». Цього разу прохання ще дивніше./Покладіть 10 буряків у холодильник мера Льюїса./null/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "4",
+      "english": "Basic/The Mysterious Qi/You've found yet another strange note within the Mayor's fridge. This time, the instructions are more cryptic./\"Give the sand dragon his final meal.\"/null/-1/0/-1/false",
+      "translation": "Basic/Таємничий Ці/У холодильнику мера ви знайшли ще одну дивну записку. Цього разу вказівки загадковіші./«Віддайте піщаному дракону його останню страву»./null/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "5",
+      "english": "Basic/The Mysterious Qi/You found another note in the sand dragon's eye. It seems Mr. Qi's strange scavenger hunt has come to an end./Inspect the lumber pile beside your house./null/-1/0/-1/false",
+      "translation": "Basic/Таємничий Ці/В оці піщаного дракона ви знайшли ще одну записку. Схоже, дивне полювання за скарбами пана Ці добігло кінця./Огляньте купу деревини біля свого будинку./null/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "6",
+      "english": "ItemHarvest/Getting Started/If you want to become a farmer, you have to start with the basics. Use your hoe to till the soil, then use a seed packet on the tilled soil to sow a crop. Water every day until the crop is ready for harvest./Cultivate and harvest a parsnip./(O)24/h7 8/100/-1/true",
+      "translation": "ItemHarvest/Перші кроки/Якщо хочете стати фермером, почніть з основ. Розпушіть землю Мотикою, а потім посійте культуру, використавши на обробленій землі пакунок насіння. Поливайте щодня, доки врожай не буде готовий./Виростіть і зберіть Пастернак./(O)24/h7 8/100/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "7",
+      "english": "Building/Raising Animals/Robin, the local carpenter, lives north of town. In exchange for raw materials and money, she'll construct new buildings on your farm. You'll need her to build a coop or barn so that you can raise animals./Build a Coop./Coop/-1/100/-1/true",
+      "translation": "Building/Розведення тварин/Місцева теслярка Робін живе на північ від містечка. В обмін на сировину й гроші вона зводитиме на вашій фермі нові споруди. Щоб розводити тварин, попросіть її збудувати Курник або Хлів./Збудуйте Курник./Coop/-1/100/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "8",
+      "english": "Crafting/Advancement/As you gain experience, you'll discover new crafting recipes to increase profit and make life easier. A scarecrow, for example, will prevent crows from snacking on your precious crops./Reach Farming level 1 and craft a scarecrow./(BC)8/-1/100/-1/true",
+      "translation": "Crafting/Розвиток/Здобуваючи досвід, ви відкриватимете нові рецепти виготовлення, які збільшать прибуток і полегшать життя. Наприклад, Опудало не дозволить воронам ласувати вашими цінними культурами./Досягніть 1-го рівня Фермерства й виготовте Опудало./(BC)8/-1/100/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "9",
+      "english": "Social/Introductions/It would be a nice gesture to introduce yourself around town. Some people might be anxious to meet the new farmer././null/25/0/-1/true",
+      "translation": "Social/Знайомства/Було б чемно представитися жителям містечка. Дехто, можливо, уже прагне познайомитися з новим фермером././null/25/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "10",
+      "english": "Basic/Copper Ore/You found a piece of copper ore. You're not sure what you can use it for, but the local blacksmith ought to know./Bring a piece of copper ore to Clint's blacksmith shop././-1/0/-1/false",
+      "translation": "Basic/Мідна руда/Ви знайшли шматок Мідної руди. Поки незрозуміло, для чого вона придатна, але місцевий коваль напевно знає./Принесіть шматок Мідної руди до Ковальні Клінта././-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "11",
+      "english": "Crafting/Forging Ahead/If you're going to keep mining, you should build a furnace./Craft a Furnace./(BC)13/12/0/-1/true",
+      "translation": "Crafting/Крок до ковальства/Якщо плануєте й далі працювати в Шахтах, треба збудувати Піч./Виготовте Піч./(BC)13/12/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "12",
+      "english": "ItemHarvest/Smelting/Now that you've built a furnace, you can smelt some metal. According to Clint's instructions, if you place 5 copper ore and 1 piece of coal in the furnace, it should produce a copper bar./Use your furnace to smelt a Copper Bar./(O)334 1/-1/0/-1/true",
+      "translation": "ItemHarvest/Виплавлення/Тепер, коли у вас є Піч, можна виплавити метал. За вказівками Клінта, 5 шматків Мідної руди й 1 шматок Вугілля в Печі мають перетворитися на Мідний зливок./Виплавте Мідний зливок у Печі./(O)334 1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "13",
+      "english": "Basic/To The Beach/Someone named Willy invited you to visit the beach south of town. He says he has something to give you./Visit the beach south of town before 5:00pm./-1/-1/0/-1/true",
+      "translation": "Basic/На Пляж/Хтось на ім’я Віллі запросив вас на Пляж на південь від містечка. Каже, що має дещо для вас./Відвідайте Пляж на південь від містечка до 17:00./-1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "14",
+      "english": "Basic/Explore The Mine/There's an old mine shaft in the mountains north of town. There could be valuable minerals inside, but Marlon hinted that it might be dangerous./Reach level 5 in the mines./17/17/0/-1/false",
+      "translation": "Basic/Дослідження Шахт/У горах на північ від містечка є стара шахта. Усередині можуть бути цінні мінерали, але Марлон натякнув, що там небезпечно./Дістаньтеся 5-го рівня Шахт./17/17/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "15",
+      "english": "Monster/Initiation/If you can slay 10 slimes, you'll have earned your place in the Adventurer's Guild./0 of 10 slimes slain./Green_Slime 10 null false/16/0/-1/false",
+      "translation": "Monster/Посвята/Убийте 10 слизнів, щоб заслужити місце в Гільдії шукачів пригод./Убито слизнів: 0 із 10./Green_Slime 10 null false/16/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "16",
+      "english": "Location/Initiation/You successfully dispatched 10 slimes. Now you can enter the Adventurer's Guild./Enter the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
+      "translation": "Location/Посвята/Ви успішно знищили 10 слизнів. Тепер можна ввійти до Гільдії шукачів пригод./Увійдіть до Гільдії шукачів пригод./AdventureGuild/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "17",
+      "english": "Basic/Deeper In The Mine/It seems that the mine elevator is still functional. It will allow you to quickly return to any elevator doors you've discovered. A deeper expedition might be in order./Reach level 40 in the mines./18/18/0/-1/false",
+      "translation": "Basic/Глибше в Шахти/Схоже, шахтний ліфт і досі працює. Він дасть змогу швидко повертатися до всіх уже знайдених дверей ліфта. Варто спуститися глибше./Дістаньтеся 40-го рівня Шахт./18/18/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "18",
+      "english": "Basic/To The Bottom?/So far, there's no sign of the bottom. How low does it go?/Reach the bottom of the mine./-1/-1/0/-1/false",
+      "translation": "Basic/До самого дна?/Ознак дна досі немає. Наскільки ж глибокі Шахти?/Дістаньтеся дна Шахт./-1/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "19",
+      "english": "Basic/The Skull Key/You found a strange looking key in the bottom of the mines./Discover the purpose of the Skull Key./-1/-1/0/-1/false",
+      "translation": "Basic/Ключ-череп/На дні Шахт ви знайшли дивний ключ./З’ясуйте призначення Ключа-черепа./-1/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "20",
+      "english": "Basic/Qi's Challenge/You've been challenged to reach level 25 in the skull cavern. You've been promised a substantial reward if you're successful./Reach level 25 in the Skull Cavern./-1/-1/0/-1/false",
+      "translation": "Basic/Випробування Ці/Вам кинули виклик: дістатися 25-го рівня Печери Черепа. У разі успіху обіцяно значну винагороду./Дістаньтеся 25-го рівня Печери Черепа./-1/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "21",
+      "english": "Basic/Marnie's Request/Marnie came by the farm and asked if you'd bring her a cave carrot. She's trying to train her goats to speak, and cave carrot is their favorite snack./Bring a Cave Carrot into Marnie's shop./-1/-1/0/-1/true",
+      "translation": "Basic/Прохання Марні/Марні завітала на ферму й попросила принести їй Печерну моркву. Вона намагається навчити своїх кіз говорити, а це їхні улюблені ласощі./Принесіть Печерну моркву до крамниці Марні./-1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "22",
+      "english": "Basic/Fish Casserole/Jodi swung by the farm to ask you to dinner at 7:00 PM. Her only request was that you bring a largemouth bass for her fish casserole./Enter Jodi's house with a largemouth bass at 7:00 PM./-1/-1/0/-1/true",
+      "translation": "Basic/Рибна запіканка/Джоді завітала на ферму й запросила вас на вечерю о 19:00. Вона попросила лише принести Великоротого окуня для рибної запіканки./Увійдіть до будинку Джоді з Великоротим окунем о 19:00./-1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "23",
+      "english": "Location/Archaeology/You found an ancient-looking object. Could it be some kind of artifact from long ago? Perhaps Gunther, curator of the local museum, has the answer./Visit Gunther at the museum./ArchaeologyHouse/-1/0/-1/true",
+      "translation": "Location/Археологія/Ви знайшли предмет, який має стародавній вигляд. Невже це якийсь давній артефакт? Можливо, відповідь знає Ґантер, куратор місцевого Музею./Відвідайте Ґантера в Музеї./ArchaeologyHouse/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "24",
+      "english": "Basic/Archaeology/Gunther asked if you'd consider donating any new artifacts or minerals you find to the museum. He says he'll compensate you by way of occasional rare goods./Donate an artifact or a mineral to the museum./-1/-1/250/-1/true",
+      "translation": "Basic/Археологія/Ґантер попросив передавати до Музею всі нові артефакти й мінерали, які ви знайдете. Каже, що час від часу винагороджуватиме рідкісними речами./Передайте до Музею артефакт або мінерал./-1/-1/250/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "25",
+      "english": "Basic/How To Win Friends/Giving gifts is a great way to build friendships. Learn each person's individual tastes and you'll be popular in no time./Give someone a gift./-1/-1/100/-1/true",
+      "translation": "Basic/Як здобувати друзів/Подарунки чудово зміцнюють дружбу. Дізнайтеся про особисті вподобання кожного — і популярність не забариться./Подаруйте комусь подарунок./-1/-1/100/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "26",
+      "english": "Basic/\"Rat Problem\"/There's something odd going on in the Community Center.../Investigate the Community Center/-1/-1/0/-1/true",
+      "translation": "Basic/«Щуряча проблема»/У Громадському центрі відбувається щось дивне.../Дослідіть Громадський центр./-1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "27",
+      "english": "Basic/Goblin Problem/There's a goblin blocking the path to the Witch's hut. There must be some way to get him to move... Perhaps I should seek out more information on Goblins./Gain entrance to the Witch's hut./-1/-1/0/-1/true",
+      "translation": "Basic/Проблема з гобліном/Шлях до Відьомської хатини перегородив гоблін. Мусить бути спосіб змусити його відійти... Можливо, варто дізнатися більше про гоблінів./Потрапте до Відьомської хатини./-1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "28",
+      "english": "Basic/Dark Talisman/The Wizard asked me to retrieve the magic ink from his ex-wife's house... but to gain access I'll need a dark talisman./Enter the sewer and ask Krobus about the dark talisman./-1/-1/0/-1/false",
+      "translation": "Basic/Темний талісман/Чарівник попросив мене забрати Магічне чорнило з будинку його колишньої дружини... але для входу потрібен Темний талісман./Увійдіть до Каналізації й запитайте Кробуса про Темний талісман./-1/-1/0/-1/false",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "29",
+      "english": "Basic/Strange Note/You found a note, barely legible, asking you to bring \"may-pal serrup\" to the \"seecrit wuds\"./Bring \"may-pal serrup\" to the \"seecrit wuds\"/-1/-1/0/-1/true",
+      "translation": "Basic/Дивна записка/Ви знайшли ледве розбірливу записку з проханням принести «кленовий сироб» до «таємного лису»./Принесіть «кленовий сироб» до «таємного лису»./-1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "30",
+      "english": "Basic/Cryptic Note/You found a note that reads, \"Someone is waiting for you on level 100 in the Skull Cavern\"/Reach level 100 in the Skull Cavern/-1/-1/0/-1/true",
+      "translation": "Basic/Загадкова записка/Ви знайшли записку: «Хтось чекає на вас на 100-му рівні Печери Черепа»./Дістаньтеся 100-го рівня Печери Черепа./-1/-1/0/-1/true",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Quests",
+      "key": "31",
+      "english": "Basic/A Winter Mystery/You encountered a suspicious looking figure by the bus stop. When it saw you, it fled toward town. Could there be a clue to its whereabouts?/Find the shadowy figure./-1/-1/0/-1/true",
+      "translation": "Basic/Зимова таємниця/Біля автобусної зупинки ви зустріли підозрілу постать. Побачивши вас, вона втекла в бік містечка. Можливо, десь є підказка про її місцеперебування?/Знайдіть тіньову постать./-1/-1/0/-1/true",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "locale": "uk",
+  "languageCode": "uk-vnrevival",
+  "sourceOfTruth": "/Users/antonkrutov/.codex/worktrees/770a/StardewTranslationInstaller",
+  "delivery": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+  "phase": "complete-synced-to-desktop",
+  "sourceRoot": "/Users/antonkrutov/Developer/data/stardew-english-unpacked",
+  "glossaryEndpoint": "https://vnrevival.fun/games/stardew-valley/glossary?locale=uk&offset=0&limit=1000",
+  "glossaryEntries": 673,
+  "endpointCanonicalDifferences": 0,
+  "glossaryAudit": {
+    "pass": 4,
+    "readThroughIndex": 672,
+    "consecutiveCleanFullPasses": 2,
+    "correctedEntries": 89,
+    "lockedFingerprint": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "history": "Documentation/uk/glossary-audit-history.json",
+    "snapshot": "Documentation/glossary/glossary.uk.json"
+  },
+  "reviewedGameStrings": 14725,
+  "completionPercent": 100,
+  "releaseReady": true,
+  "commitPushAuthorized": false,
+  "sourceVerification": {
+    "freshExtraction": "/private/tmp/stardew-uk-source/unpacked",
+    "successfulAssets": 187,
+    "failedAssets": 0,
+    "differencesFromPinnedSource": 0,
+    "inventory": "Documentation/uk/source-inventory.json",
+    "records": 14720,
+    "inventoryRecords": 14725,
+    "inventoryAssets": 191
+  },
+  "nextSteps": [
+    "No requested work remains. Do not commit, push, publish the glossary, deploy, or open the auto-installing app without a new explicit request."
+  ],
+  "fontPreparation": {
+    "status": "generated-activated-round-trip-and-visual-qa-passed",
+    "glyphsPerFont": 807,
+    "requiredCharacters": 179,
+    "roundTripPassed": true,
+    "repeatBuildIdentical": true,
+    "runtimeVisualQAPassed": true,
+    "script": "Scripts/build-ukrainian-fonts.sh",
+    "visualProof": "Documentation/uk/ukrainian-font-visual-proof.png",
+    "artifacts": {
+      "SpriteFont1": "045b0bd9ceeec489cae09dc79fecb3bff679c85d823d1d56f8aaf117d1c3247c",
+      "SmallFont": "e969f3cec92d0989fdc00da7d770090388e356b478383f59271e35fb1b64b82c"
+    }
+  },
+  "structuredSourceVerification": {
+    "assets": 49,
+    "stringLeaves": 20650,
+    "unrecordedLeaves": 0,
+    "directReferences": 4068,
+    "specialOrderReferences": 148,
+    "bundleReferences": 43,
+    "unresolvedReferences": 0,
+    "plainDisplayCandidates": 5,
+    "repeatExtractionAndAuditIdentical": true,
+    "report": "Documentation/uk/structured-source-audit.json",
+    "unpacked": "/private/tmp/stardew-uk-structured-unpacked"
+  },
+  "lastContinuation": {
+    "classification": "complete",
+    "completed": [
+      "All 14725 inventory records are reviewed: 13398 translated and 1327 explicitly justified language-independent or technical preserves.",
+      "Two consecutive full clean editorial audits passed at wording fingerprint eee4bf34eabf67de178c52e2b7a7eff7bff061430a2c59cee9258767155eef48.",
+      "Ukrainian locale registration, 191 exact includes, language button, TitleButtons, both locale fonts, XNB round-trip, repeat-build idempotence, 8 Swift tests, release build, deep strict signature verification, and fresh SMAPI locale/font/title loading all passed.",
+      "The pre-QA installed mod, updater, and Burmese startup language were restored.",
+      "The complete Ukrainian change set was safely merged into the Desktop checkout; its concurrent Dutch and unrelated owner changes were preserved. The combined checkout contains 11 locale registrations, 2478 unique translation includes (191 Ukrainian and 187 Dutch), passes all 8 Swift tests, builds a valid signed app, and passes the Ukrainian release audit with zero warnings or errors."
+    ],
+    "remainingWork": "None within the authorized scope. No commit, push, glossary publication, deployment, or installer launch was performed."
+  },
+  "resolvedBlocker": {
+    "action": "node Scripts/sync-uk-glossary-local.mjs",
+    "kind": "automatic-approval-review-rejection",
+    "reason": "Automatic reviewer requires explicit owner authorization to update local canonical SiteForMods uk glossary outside worktree.",
+    "approvalRequested": true,
+    "publicationRequested": false,
+    "canonicalFileUnchanged": true,
+    "consecutiveGoalTurns": 3,
+    "canonicalFingerprint": "f86961ef6a1fb8e5b3c100ca7f58be8659f36c12c905ae32c6b5095c1fd0b326",
+    "revalidatedDifferences": 89,
+    "requiredInstruction": "Documentation/TRANSLATION_GUIDE.md:116: the installer snapshot is a working source only when it fully matches canonical SiteForMods files.",
+    "blockedAudit": {
+      "previousGoalTurn": "progress: source fonts and structured English extraction completed and verified",
+      "currentGoalTurn": "no progress: canonical Ukrainian glossary rechecked; the same 89 differences remain and no explicit owner approval has arrived",
+      "thresholdMet": true,
+      "independentPreparationCompleted": [
+        "source inventory and structured extraction",
+        "font generation and repeat-build/round-trip verification"
+      ],
+      "resumeCondition": "Explicit owner approval for the rejected local uk-only canonical glossary write, or authoritative canonical parity established externally."
+    },
+    "resolved": true,
+    "ownerAuthorization": "разрешаю",
+    "canonicalParity": true,
+    "otherLocaleBytesUnchanged": true,
+    "englishSourceUnchanged": true
+  },
+  "canonicalGlossarySync": {
+    "entries": 673,
+    "correctedEntries": 89,
+    "ukSHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "otherLocaleBytesUnchanged": true,
+    "englishSourceUnchanged": true,
+    "published": false,
+    "canonicalCliCheckPassed": true
+  },
+  "reviewedBatches": 361,
+  "draftIncludeFiles": 191,
+  "translationBuild": {
+    "idempotent": true,
+    "records": 14725,
+    "files": 191,
+    "sourceFreshnessPassed": true,
+    "reviewToPatchParityPassed": true,
+    "formatPlaceholdersPassed": true,
+    "basicControlMarkersPassed": true,
+    "structuredControlMarkersPassed": true,
+    "runtimeControlTokensPassed": true,
+    "dialogueResponseIdentifiersPassed": true,
+    "variantMacrosPassed": true,
+    "completeAssetFormatValidationPassed": true,
+    "allStructuredResponseIdentifiersPassed": true
+  },
+  "desktopSync": {
+    "completed": true,
+    "date": "2026-09-08",
+    "destination": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+    "head": "bfe9263275065357b3059bbdf451ff2e505b8688",
+    "ukFilesMatchedSource": true,
+    "dutchChangesPreserved": true,
+    "unrelatedOwnerChangesPreserved": true,
+    "combinedLanguageCodes": 11,
+    "combinedIncludes": 2478,
+    "ukrainianIncludes": 191,
+    "dutchIncludes": 187,
+    "swiftTestsPassed": 8,
+    "releaseBuildPassed": true,
+    "codesignDeepStrictPassed": true,
+    "ukrainianAuditErrors": 0
+  }
+}

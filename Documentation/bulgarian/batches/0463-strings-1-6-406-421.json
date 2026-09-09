@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "0463-strings-1-6-406-421",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/1_6_Strings",
+  "status": "reviewed",
+  "entries": {
+    "frog_variant_0": "Зелено жабешко яйце",
+    "frog_variant_1": "Кафяво жабешко яйце",
+    "frog_variant_2": "Синьо-зелено жабешко яйце",
+    "frog_variant_3": "Синьо жабешко яйце",
+    "frog_variant_4": "Червено жабешко яйце",
+    "frog_variant_5": "Жълто жабешко яйце",
+    "frog_variant_6": "Жабешко яйце от Пустотата",
+    "frog_variant_7": "Призматично жабешко яйце",
+    "IridiumSpur": "IridiumSpur",
+    "ParrotEgg_Chance_0": "нисък",
+    "ParrotEgg_Chance_1": "среден",
+    "ParrotEgg_Chance_2": "висок",
+    "ParrotEgg_Chance_3": "много висок",
+    "Anvil_fail": "На тази Наковалня могат да се прековават само талисмани.",
+    "Anvil_bars": "Изисква 3 Иридиеви кюлчета.",
+    "GoldenParrot": "*Грак*... Пари! *Грак*... Намери Златни орехи!"
+  },
+  "preserveReasons": {
+    "IridiumSpur": "Internal compatibility identifier without spaces; the player-facing item name is separately translated by IridiumSpur_Name, so this value must remain byte-exact."
+  },
+  "sourceHashes": {
+    "frog_variant_0": "e5d1ddaa817bab8b8cb051931456595c8a3814261cde4e8a9bef8d586e9f137b",
+    "frog_variant_1": "0ee8715649c9ec2af4dca5729a245442337ad4ad3312b183793dfe7e5aa289e5",
+    "frog_variant_2": "a973ef98500d16ca03940a06e1c8d487ae0cc8605f65c7e0489de82691a60db4",
+    "frog_variant_3": "ed194ec182054f76ac5a2fc22cb51e9ec238db8f7196c15fe0425d481102d98f",
+    "frog_variant_4": "e910c8447a617f0c11dd48cdc2f2935203cd623a151b4368f55d7127862d2b08",
+    "frog_variant_5": "c4b7b43b4bd9c6231b15e7f6c7eadfcef31ea4a28ef3020b8ff2edb1246bd6db",
+    "frog_variant_6": "1976de0d09a0dd887d6843c23b40b6c3fd4a818a8c2e73ed157d7c30681169f1",
+    "frog_variant_7": "46533837ffda7a4a9a06d69cd9f8b6d5dcd37f6f52969191df16d6f4b840997c",
+    "IridiumSpur": "63adbb377d29ab82f1371c3741966a81d1f1c6a5583ad1d4c67f51776dab0e93",
+    "ParrotEgg_Chance_0": "6c1ff09db3a73dc4a854f695d20d174a848d55f2d743bab2ee1f8fc75be454f3",
+    "ParrotEgg_Chance_1": "c082456a7766e23a18db084cd34b6ff510baef506548b897cc80e9b7d3e121c8",
+    "ParrotEgg_Chance_2": "6ef7c9b15ecdd69083724b84cfdc2100351963488b51b4ea2fcbddf493fbec94",
+    "ParrotEgg_Chance_3": "acaf32badba19da6326087f422e242146eeb5f1570f21024f11eb9be9fe1fba3",
+    "Anvil_fail": "50e569b92f987f09cdcd8abcda637c53a60a2b6979428e978835098fdf6885d0",
+    "Anvil_bars": "bbe690fbc346fbce43efa2c375ce251dd8ae71c46ec7efd61ffaa2cebed34024",
+    "GoldenParrot": "e7e20f34cc89436d05a7c6ff02449101e6fa91d56f65d05260fa03fb30affcaa"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated all eight Frog Egg variants, four Parrot Egg chance labels, both Anvil messages and the Golden Parrot line directly from English; retained the internal IridiumSpur identifier byte-exact with a documented reason.",
+      "Applied locked Пустотата, Талисман, Наковалня, Иридиево кюлче and Златен орех terminology and made every chance adjective agree with the masculine chance placeholder in the earlier description.",
+      "Read the variant family and Anvil interaction together; refined the invalid-item message to name the workstation explicitly while preserving its only-trinkets restriction."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "d405e44e6344a5360ce2cf4ff525bc3adb21f060b7a671b17f19e76efb3cb544"
+  }
+}

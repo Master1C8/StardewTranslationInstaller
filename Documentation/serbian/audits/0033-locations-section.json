@@ -1,0 +1,30 @@
+{
+  "scope": "Strings/Locations",
+  "records": 392,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All 392 entries read against English, including all quoted event speeches, both Birdie quickQuestion choices/replies, renovation fields, Gourmand pages, parrot clues and numerical/gameplay conditions.",
+  "newTextIssues": 3,
+  "corrections": [
+    {
+      "key": "NutHint_SouthEastBuried",
+      "before": "Закопано: {0}... Пиратска увала...",
+      "after": "Закопано: {0}... Гусарска увала...",
+      "reason": "Canonical Pirate Cove glossary name applies to the composite parrot hint."
+    },
+    {
+      "key": "BeachNightMarket_GiftGiverClosed",
+      "before": "Трговац: Ноћна пијаца почиње у 17:00... Посетите ме тада за бесплатну шољу кафе! ",
+      "after": "Трговац: Ноћна пијаца почиње у 17:00... Свратите тада код мене на бесплатну шољу кафе! ",
+      "reason": "Use idiomatic Serbian invitation на шољу кафе rather than an English-calqued посетите ме за."
+    },
+    {
+      "key": "ManorHouse_MayorFridge_MrQiNote",
+      "before": "'Добар посао, дете. Твој последњи задатак: Дај пешчаном змају његов последњи оброк. -г. Ки'",
+      "after": "'Браво, дете. Твој последњи задатак: Дај пешчаном змају његов последњи оброк. -г. Ки'",
+      "reason": "Translate Good job as the Serbian congratulation Браво rather than the literal job noun phrase."
+    }
+  ],
+  "translationSha256": "1d25afc37d348afeca8adb9638ba3aad2cbce22bbad0a45027afc87d09d5b836",
+  "finalLocaleCleanAudits": 0
+}

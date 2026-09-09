@@ -1,0 +1,25 @@
+{
+  "id": "0268-data-extra-dialogue-1",
+  "locale": "sr",
+  "target": "Data/ExtraDialogue",
+  "glossarySha256": "717e409d631b59e1069713078c555dee4f7ee3f658bdbe1d620a066c87902fab",
+  "review": "source-meaning-terminology-Serbian-grammar-voice-context-tokens",
+  "entries": {
+    "LostItemQuest_DefaultThankYou": "Ево га! Хвала ти.",
+    "NewChild_SecondChild1": "Погледај само нашу малу породицу... Далеко смо догурали, зар не?",
+    "NewChild_SecondChild2": "Двоје дивне деце... Далеко смо догурали, зар не?",
+    "NewChild_Adoption": "Дивно је што је дете {0} стигло у наш живот.",
+    "NewChild_FirstChild": "Све је прошло добро, а сада је дете {0} део породице. Имамо много среће.",
+    "Spouse_MonstersInHouse": "Овај... душо? Зашто су чудовишта у кући?",
+    "Farm_RobinWorking_ReadyTomorrow": "Радови на објекту {0} биће завршени сутра! Једва чекаш?",
+    "Farm_RobinWorking1": "Радови на објекту {0} биће завршени за {1} дана. Само се прави да нисам овде."
+  },
+  "smallBatchReason": "The first eight records establish neutral child, spouse and construction phrasing while preserving runtime placeholders.",
+  "contextNotes": {
+    "LostItemQuest_DefaultThankYou": "The item can have any grammatical gender, so the response avoids agreeing with an unknown noun.",
+    "NewChild_Adoption": "The child name placeholder can refer to either sex; neutral wording avoids guessing its gender.",
+    "NewChild_FirstChild": "The child name placeholder can refer to either sex; neutral wording avoids guessing its gender.",
+    "Farm_RobinWorking_ReadyTomorrow": "The building placeholder can carry any Serbian grammatical gender, so the sentence agrees with радови.",
+    "Farm_RobinWorking1": "The building placeholder can carry any Serbian grammatical gender, so the sentence agrees with радови."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "locale": "ro",
+  "target": "Data/Festivals/spring24",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "The Flower Dance title, runtime setup, ceremony ending, and first 21 villager conversations were translated directly from English. Two full editorial audits cover event-command fidelity, character voice, canonical dance terminology, natural Romanian, and exact controls; both found no remaining objective issue.",
+  "entries": {
+    "name": {
+      "source": "Flower Dance",
+      "translation": "Dansul Florilor"
+    },
+    "conditions": {
+      "source": "Forest/900 1400",
+      "translation": "Forest/900 1400",
+      "preservationReason": "Festival location, hours, temporary map, actors, movement, and player-control setup are runtime configuration."
+    },
+    "set-up": {
+      "source": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "preservationReason": "Festival location, hours, temporary map, actors, movement, and player-control setup are runtime configuration."
+    },
+    "mainEvent": {
+      "source": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"That was fun! Time to go home...\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"A fost distractiv! E timpul să mergem acasă...\"/waitForOtherPlayers festivalEnd/end",
+      "eventReview": {
+        "commands": "exactly-preserved",
+        "visibleTextSegments": 1
+      }
+    },
+    "Abigail": {
+      "source": "I really hate dancing in front of everyone... It's so embarrassing.#$e#Mom makes me do it.$u",
+      "translation": "Urăsc să dansez în fața tuturor... Este atât de stânjenitor.#$e#Mama mă obligă.$u"
+    },
+    "Robin": {
+      "source": "Ahh... The air smells so sweet with all these flowers.$h",
+      "translation": "Ahh... Aerul are un parfum atât de dulce de la toate florile acestea.$h"
+    },
+    "Demetrius": {
+      "source": "These springtime dances can be traced back to ancient fertility rituals.#$e#Hey... You should know about this stuff, farmer.",
+      "translation": "Dansurile acestea de primăvară își au originea în ritualuri antice de fertilitate.#$e#Hei... Ar trebui să știi lucrurile astea, doar te ocupi de fermă."
+    },
+    "Maru": {
+      "source": "I like dancing, but this one is a little stilted. The old timers really love it, though.",
+      "translation": "Îmi place să dansez, dar dansul acesta este puțin rigid. Totuși, celor mai în vârstă le place foarte mult."
+    },
+    "Sebastian": {
+      "source": "Ugh...",
+      "translation": "Of..."
+    },
+    "Linus": {
+      "source": "Oh, hello there. It's nice of you to talk to me.#$b#Spring is almost over... what a shame.",
+      "translation": "Oh, salut. Este drăguț din partea ta să vorbești cu mine.#$b#Primăvara se apropie de sfârșit... ce păcat."
+    },
+    "Pierre": {
+      "source": "What! How'd you get back here?$u#$b#Don't touch anything.",
+      "translation": "Ce?! Cum ai ajuns aici, în spate?$u#$b#Nu atinge nimic."
+    },
+    "Caroline": {
+      "source": "I wish Pierre would spend this time with the family...$s",
+      "translation": "Mi-aș dori ca Pierre să petreacă timpul acesta cu familia...$s"
+    },
+    "Alex": {
+      "source": "I'm just enjoying the scenery... hehe.",
+      "translation": "Doar admir priveliștea... hehe."
+    },
+    "George": {
+      "source": "Flowers? I can hardly see them.#$e#It's too bright out here!",
+      "translation": "Flori? Abia dacă le văd.#$e#Este prea multă lumină aici!"
+    },
+    "Evelyn": {
+      "source": "I've been working on these floral arrangements for a week. Do you like them?",
+      "translation": "Lucrez la aceste aranjamente florale de o săptămână. Îți plac?"
+    },
+    "Lewis": {
+      "source": "If you'd like to dance with the other young people, you'll need to find a partner.",
+      "translation": "Dacă vrei să dansezi cu ceilalți tineri, va trebui să-ți găsești un partener de dans."
+    },
+    "Clint": {
+      "source": "I wonder if Emily would dance with me?",
+      "translation": "Mă întreb dacă Emily ar dansa cu mine?"
+    },
+    "Penny": {
+      "source": "*gulp*... I'm nervous.$s",
+      "translation": "*înghite în sec*... Am emoții.$s"
+    },
+    "Pam": {
+      "source": "Now this is the life... Huh, kid? Sweet wine, a babbling brook, warm air... Did I mention wine?",
+      "translation": "Asta înseamnă să trăiești... Nu-i așa, copile? Vin dulce, un pârâu care susură, aer cald... Am pomenit de vin?"
+    },
+    "Emily": {
+      "source": "Whoo... I'm stuffed. Hey, have you tried the red jelly yet?",
+      "translation": "Uuuf... Am mâncat pe săturate. Hei, ai încercat jeleul roșu?"
+    },
+    "Haley": {
+      "source": "I'm practicing my dance moves... It needs to be perfect.#$e#I've been flower queen for the past 5 years and I'm not ready to step off the throne just yet!",
+      "translation": "Îmi exersez mișcările de dans... Trebuie să iasă perfect.#$e#Am fost regina florilor în ultimii cinci ani și încă nu sunt gata să cobor de pe tron!"
+    },
+    "Jodi": {
+      "source": "Are you going to be dancing today, @?$h",
+      "translation": "Vei dansa astăzi, @?$h"
+    },
+    "Kent": {
+      "source": "This open field... it makes me nervous.#$e#*whisper* Happy thoughts, Kent. Happy Thoughts.",
+      "translation": "Câmpul acesta deschis... mă neliniștește.#$e#*șoptește* Gânduri fericite, Kent. Gânduri fericite."
+    },
+    "Marlon": {
+      "source": "Marnie looks lovely today...",
+      "translation": "Marnie arată minunat astăzi..."
+    },
+    "Sam": {
+      "source": "You know what? I admit it... I really like flowers!",
+      "translation": "Știi ceva? Recunosc... chiar îmi plac florile!"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "0181-event-beach-004-006",
+  "target": "Data/Events/Beach",
+  "status": "reviewed",
+  "sourceHashes": {
+    "29/f Sebastian 2000/t 1200 2300/w rainy": "328ad7fdb2c8caf8c6de0d4aaf626d24917c41dfc80446a79bb04b94ccfcd573",
+    "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "b27c9f8d8a185b3c7f63eadaeeec57a24963c5bbb88d0baafe0f85b8a3dec455",
+    "NoToElliott": "aad3d2e88f351cfa0863442a0ad4c0f82a522a339a7e7a05974fdfadb531216f"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "29/f Sebastian 2000/t 1200 2300/w rainy": "rain/12 38/farmer 12 29 2 Sebastian 12 39 2/skippable/move farmer 0 7 2/faceDirection Sebastian 0/pause 400/speak Sebastian \"@?\"/pause 500/move farmer 0 2 2/speak Sebastian \"Хей. Изненадан съм да те видя навън в дъжда.\"/pause 500/faceDirection Sebastian 2/pause 200/move farmer 1 0 2/move farmer 0 1 3/pause 500/faceDirection farmer 2/pause 1000/playMusic echos/pause 1000/speak Sebastian \"Погледни онези тъмни облаци, надвиснали над хоризонта...\"/pause 2000/speak Sebastian \"Надявам се да дойдат насам.\"/faceDirection farmer 3/pause 800/faceDirection farmer 2/pause 1000/speak Sebastian \"Харесвам това време, защото кара всички да изчезнат... разбираш ли?#$b#Когато съм сред хора, изпитвам тревожност.$s\"/faceDirection Sebastian 1/pause 400/faceDirection Sebastian 2/pause 400/speak Sebastian \"Но около теб не се чувствам така.$7\"/pause 2000/emote Sebastian 28/speak Sebastian \"Подгизваме...\"/pause 900/showFrame Sebastian 39/animate Sebastian false false 300 37 38 39/pause 300/playSound cast/pause 280/specificTemporarySprite umbrella/pause 800/speak Sebastian \"Ето... Има място за двама.$7\"/pause 500/faceDirection farmer 3/animate farmer true true 100 6 7/playSound dwop/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/pause 800/faceDirection farmer 3/animate farmer true true 100 6 7/playSound dwop/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/pause 800/faceDirection farmer 3/animate farmer true true 100 6 7/playSound dwop/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/positionOffset farmer -2 0/pause 100/stopAnimation farmer/faceDirection farmer 2/pause 3500/end",
+    "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"Хей.\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"Виж... Поправих онази стара гребна лодка, която стоеше до къщата ми. Хубава е, нали?\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... Ще ми окажеш ли честта да се присъединиш към първото ѝ плаване?$l\"/faceDirection farmer 2/question fork1 \"Качваш ли се в лодката?#Да#Не\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea false/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"Книгата ми е на пазара от известно време... Не е бестселър или нещо подобно, но получава добри отзиви от критиците.#$b#И наистина нямаше да я завърша без моралната ти подкрепа.$l\"/pause 1000/speak Elliott \"Всъщност това изобщо не е вярно. Щях да я завърша така или иначе.$h#$b#Но съм благодарен, че вярваше в мен... във виждането ми. И, ами...\"/pause 500/speak Elliott \"Ъм... @? Как да го кажа...$8\"/emote Elliott 40/speak Elliott \"Е, приятели сме от известно време... Но аз... Вече не съм сигурен, че изпитвам към теб само това.$l\"/emote farmer 16/speak Elliott \"Не! Не казвам, че искам да прекъсна всякаква връзка с теб!$8#$b#Всъщност... точно обратното.$l\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"...Да видим, как да го кажа...?$l#$b#За пръв път не намирам думи...\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 24 8/positionOffset farmer -20 16/faceDirection farmer 1 true/showFrame 101/specificTemporarySprite heart 26 20/playSound dwop/pause 1500/startJittering/pause 700/speak Elliott \"$q -1 null#@? Трепериш...$l#$r -1 50 event_boat1#От щастие е.#$r -1 -50 event_boat2#Караш ме да се чувствам много неудобно. Спри.\"/stopJittering/fork tooBold/pause 1800/globalFade/viewport -1000 -1000/speak Elliott \"По-добре да се върнем, преди да се усили южният вятър.$l^О, не... Вибрациите от тялото ти привлякоха Пурпурната риба... По-добре да се махаме оттук.$l\"/pause 1400/speak Elliott \"Погледни долината оттук... най-сетне изглежда като „Дом“.\"/pause 4000/speak Elliott \"*въздишка*... Какъв ден...$l\"/end",
+    "NoToElliott": "emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"Разбирам.$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"...$a\""
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-06",
+    "recordsRead": 3,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twenty-four quoted dialogue, question and response fields in Beach source ordinals 4–6.",
+      "Kept the player response to Elliott gender-neutral, preserved both caret-separated branches, and retained the established гридбол context and proper names.",
+      "Verified every command, fork, coordinate, numeric value and control token outside quoted fields byte-for-byte."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "97d222350852647a0434f3e6314955cd3a005a3410d99c20401fafc881e1f79b"
+  }
+}

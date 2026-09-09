@@ -1,0 +1,22 @@
+{
+  "scope": "Data/ExtraDialogue",
+  "records": 147,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All 147 records were read directly against English. Child and construction lines, Gunther and Morris dialogue, mine and island rescues, PurchasedItem templates, both Skull Cavern events, Birdie and Professor Snail lines, and every Summit variant were checked for meaning, character voice, Serbian grammar, player neutrality, canonical terms, runtime placeholders, control fields and embedded event commands. PurchasedItem templates were also checked against every previously reviewed Lexicon insertion form and the optional fresh-item suffix.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_extra_dialogue",
+  "schemaAudit": "audits/0161-data-extra-dialogue-schema.json",
+  "crossFileContracts": [
+    "Strings/Lexicon randomized adjective and noun forms",
+    "Strings/StringsFromCSFiles::SeedShop.cs.9701 optional suffix",
+    "planned sr-vnrevival Utility.AOrAn empty-article runtime patch"
+  ],
+  "sourceRecords": 147,
+  "translatedRecords": 147,
+  "ledgerRecords": 147,
+  "sourceAndTranslationHashesVerified": true,
+  "translationSha256": "e35f5002e4e10c8789a2d002a47f2be2827d707942409df2ce2eeac6d60f3b49",
+  "finalLocaleCleanAudits": 0
+}

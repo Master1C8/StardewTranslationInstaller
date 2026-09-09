@@ -1,0 +1,27 @@
+{
+  "id": "0235-event-science-house-006",
+  "target": "Data/Events/ScienceHouse",
+  "status": "reviewed",
+  "sourceHashes": {
+    "1053978/n robinDeluxeBed": "3eb8c75402f11f45271d0b3683fbaa85b73dc5814a08040c75e6d03b77d8ae88"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "1053978/n robinDeluxeBed": "distantBanjo/-1000 -1000/farmer -100 -100 0 Robin 5 20 3 Demetrius 7 20 3 Maru 8 18 2 Sebastian 3 23 0/skippable/specificTemporarySprite staticSprite TileSheets\\\\furniture 160 1087 48 64 2.25 18/positionOffset Robin 32 0/viewport 5 22 true/pause 3000/speak Robin \"Воала! Най-новото ми творение.$h#$b#Това е луксозно легло с четири колони, изработено от най-добрата местна твърда дървесина.\"/pause 400/emote Demetrius 8/speak Demetrius \"Ъм... Робин? Каква е целта на четирите колони? Това ми се струва неефективно използване на материали.$s\"/emote Robin 12/faceDirection Robin 1/speak Robin \"Нарича се „красота“, приятелю... знаеш, онова нещо, което повечето хора намират за приятно?$6\"/emote Demetrius 8/speak Demetrius \"Хмм, разбирам гледната ти точка.. Но не можем да позволим това да надделее над практичността и ефективността на контейнера за спане.\"/pause 500/jump Robin/pause 500/speak Robin \"Знаеш ли, понякога ми се струва, че нарочно се правиш на неразбрал, само за да ме дразниш. Това ли правиш?$3\"/pause 100/animate Demetrius true true 100 18/shake Demetrius 1000/emote Maru 28 true/emote Sebastian 12 true/jump Demetrius/pause 1000/stopAnimation Demetrius/pause 400/warp farmer 6 24/playSound doorClose/move farmer 0 -1 0/faceDirection Robin 2 true/faceDirection Demetrius 2 true/faceDirection Sebastian 1/speak Robin \"Хей, @... Влизай.\"/move farmer 0 -2 0/speak Robin \"Виж това... Това е леглото, което успях да направя благодарение на цялата дървесина, която събра.\"/faceDirection farmer 3/faceDirection Robin 3 true/faceDirection Demetrius 3/pause 300/speak Robin \"Е, какво мислиш?\"/quickQuestion #Естетиката е съвършена#Четирите колони изглеждат неефективни(break)faceDirection Sebastian 0 true\\textAboveHead Sebastian \"Да\"\\emote Robin 20 true\\emote Demetrius 12\\pause 2000\\move Demetrius 15 0 1 true\\pause 500\\speak Demetrius \"*прочиства гърло*... Е... Ако някой ме търси, ще бъда в кучешката колибка...$5\"(break)emote Demetrius 32\\speak Demetrius \"Великите умове мислят еднакво...$h\"\\emote Robin 12 \\speak Robin \"Както и да е.$3#$b#Да продължим...$3\"/pause 1000/speak Robin \"Сега, когато имам прототип, мога да започна да ги продавам в магазина.\"/faceDirection Robin 2/speak Robin \"Хей... тези легла може да изглеждат добре у вас, @! Какво ще кажеш... да те запиша за половин дузина?\"/faceDirection farmer 2 true/startJittering/animate farmer false true 100 94/jump farmer/pause 200/textAboveHead Maru \"Мамо!\"/pause 1000/fade/viewport -1000 -1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all fifteen quoted furniture-dialogue fields plus both quick-question choices in Science House source ordinal 6.",
+      "Preserved the two response branches, furniture sprite, scene commands and control tokens while applying locked Робин and Деметриус names and consistent four-column bed terminology.",
+      "Kept Demetrius’s clinical humor and Robin’s sales pitch natural in Bulgarian, clarified the collective material-use statement and supplied the omitted bed referent in the closing offer."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "8bd060c47646e1c743b06ef372b0f76ac5a19c6275e5ee5578af94df55e7552b"
+  }
+}

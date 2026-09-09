@@ -1,0 +1,225 @@
+{
+  "id": "252-locations-adventure-guild-animal-house-night-market-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 30 location strings covering Adventure Guild goals, incubator hatches, Night Market and Beach bridge. Glossary monster, character and festival names, layout lines, placeholders, currency, quantities and exact runtime templates were preserved.",
+    "reviewedTextSHA256": "7291c54cb215316c86c315d4f45d32d242023126315df17a6594c82904e806f0",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 43
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Header",
+      "english": "------------------------------\n\t\t\t --Monster Eradication Goals--\n             \"Help us keep the valley safe.\"\n------------------------------",
+      "translation": "------------------------------\n\t\t\t --Цілі винищення чудовиськ--\n             «Допоможіть нам берегти долину.»\n------------------------------",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat",
+      "english": "{0}/{1} {2}",
+      "translation": "{0}/{1} {2}",
+      "reviewed": true,
+      "preserveReason": "This value is a language-independent runtime layout template made only of numeric placeholders, separators, a missing-name sentinel or completion marker; it remains exact to preserve formatting."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat_None",
+      "english": "{0}/{1} ????",
+      "translation": "{0}/{1} ????",
+      "reviewed": true,
+      "preserveReason": "This value is a language-independent runtime layout template made only of numeric placeholders, separators, a missing-name sentinel or completion marker; it remains exact to preserve formatting."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat_OverTarget",
+      "english": "{0} {2} *",
+      "translation": "{0} {2} *",
+      "reviewed": true,
+      "preserveReason": "This value is a language-independent runtime layout template made only of numeric placeholders, separators, a missing-name sentinel or completion marker; it remains exact to preserve formatting."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Slimes",
+      "english": "Slimes",
+      "translation": "Слизні",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_VoidSpirits",
+      "english": "Void Spirits",
+      "translation": "Духи Порожнечі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Bats",
+      "english": "Bats",
+      "translation": "Кажани",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Skeletons",
+      "english": "Skeletons",
+      "translation": "Скелети",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_CaveInsects",
+      "english": "Cave Insects",
+      "translation": "Печерні комахи",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Duggies",
+      "english": "Duggies",
+      "translation": "Землериї",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_DustSprites",
+      "english": "Dust Sprites",
+      "translation": "Пиловики",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_RockCrabs",
+      "english": "Rock Crabs",
+      "translation": "Кам’яні краби",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Mummies",
+      "english": "Mummies",
+      "translation": "Мумії",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_PepperRex",
+      "english": "Pepper Rex",
+      "translation": "Перцеві рекси",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Serpent",
+      "english": "Serpents",
+      "translation": "Змії",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Footer",
+      "english": "\n  -See Gil to claim your rewards.",
+      "translation": "\n  — Зверніться до Ґіла, щоб забрати нагороди.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_VoidEgg",
+      "english": "A new chick hatched... It looks odd.",
+      "translation": "Вилупилося нове курча... Дивно виглядає.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_RegularEgg",
+      "english": "A new baby chick hatched!",
+      "translation": "Вилупилося нове курча!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_DuckEgg",
+      "english": "A new baby duckling hatched!",
+      "translation": "Вилупилося нове каченя!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_DinosaurEgg",
+      "english": "A new baby ...lizard?... hatched.",
+      "translation": "Вилупилася нова... ящірка?..",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_Closed",
+      "english": "Opens at 5pm.",
+      "translation": "Відкривається о 17:00.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_SubmarineInUse",
+      "english": "The submarine is currently in use. Come back later.",
+      "translation": "Підводним човном зараз користуються. Поверніться пізніше.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverClosed",
+      "english": "Merchant: The night market starts at 5pm... visit me then for a free cup of coffee! ",
+      "translation": "Торговець: Нічний ринок починається о 17:00... Завітайте тоді по безплатну чашку кави! ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverQuestion",
+      "english": "Merchant: Hello there! Care for a cup of coffee?",
+      "translation": "Торговець: Вітаю! Бажаєте чашку кави?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverEnjoy",
+      "english": "Merchant: Mmm... smells great, doesn't it?",
+      "translation": "Торговець: М-м-м... Чудово пахне, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterClosed",
+      "english": "Famous Painter Lupini: Come back when the market opens, if you wish to purchase my fine work.",
+      "translation": "Відомий художник Лупіні: Повертайтеся після відкриття ринку, якщо бажаєте придбати одну з моїх вишуканих робіт.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterQuestion",
+      "english": "Famous Painter Lupini: I'm selling this painting for 1200g. What do you say?",
+      "translation": "Відомий художник Лупіні: Я продаю цю картину за 1200g. Що скажете?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterSold",
+      "english": "Famous Painter Lupini: My apologies... I have no more paintings to sell today.",
+      "translation": "Відомий художник Лупіні: Перепрошую... Сьогодні в мене більше немає картин на продаж.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_WarperQuestion",
+      "english": "Shrouded Figure: I can send you home for 250g.",
+      "translation": "Постать у плащі: Я можу відправити вас додому за 250g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_FixBridge_Question",
+      "english": "Use 300 pieces of wood to fix the bridge?",
+      "translation": "Витратити 300 одиниць деревини, щоб полагодити міст?",
+      "reviewed": true
+    }
+  ]
+}

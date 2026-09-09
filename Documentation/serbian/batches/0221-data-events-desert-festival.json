@@ -1,0 +1,14 @@
+{
+  "id": "0221-data-events-desert-festival",
+  "locale": "sr",
+  "target": "Data/Events/DesertFestival",
+  "glossarySha256": "717e409d631b59e1069713078c555dee4f7ee3f658bdbe1d620a066c87902fab",
+  "review": "source-meaning-terminology-Serbian-grammar-voice-context-tokens",
+  "entries": {
+    "PlayerKilled": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end"
+  },
+  "smallBatchReason": "Complete the single non-visible DesertFestival event record.",
+  "preservedReasons": {
+    "PlayerKilled": "Technical player-defeat event containing only setup, delay, lost-item display and end commands; no player-facing text is stored in this record."
+  }
+}

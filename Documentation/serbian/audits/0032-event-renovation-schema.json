@@ -1,0 +1,31 @@
+{
+  "scope": "Expanded event quoted-text/quickQuestion and Locations renovation schemas",
+  "positiveBatch": "0070-locations-island-events (20 records, 32 quoted spans plus 2 choices) and 0069 (8 renovation records)",
+  "negativeCases": [
+    {
+      "case": "event quest ID mutation",
+      "rejected": true,
+      "reason": "AssertionError: Event command, ID, order, or non-speech data changed"
+    },
+    {
+      "case": "empty second quickQuestion choice",
+      "rejected": true,
+      "reason": "AssertionError: Empty event choice"
+    },
+    {
+      "case": "untranslated nested reply",
+      "rejected": true,
+      "reason": "AssertionError: Unreviewed Latin fragments: IslandSecret_Event_BirdieFinished: ['An', 'And', 'Besides', 'Hehehe', 'It', 'about', 'an', 'and', 'beautiful', 'dear', 'endless', 'fish', 'fresh', 'have', 'here', 'it', 'kidding', 'late', 'like', 'me', 'meat', 'monkey', 'of', 'old', 'oysters', 'relaxing', 'supply', 'the', 'think', 'too', 'woman']"
+    },
+    {
+      "case": "emotion moved between event speeches",
+      "rejected": true,
+      "reason": "AssertionError: Event speech token mismatch"
+    },
+    {
+      "case": "removed renovation prompt field",
+      "rejected": true,
+      "reason": "AssertionError: Renovation title/description/prompt fields changed: ScienceHouse_Renovation_RemoveCrib"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0462-strings-1-6-390-405",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/1_6_Strings",
+  "status": "reviewed",
+  "entries": {
+    "MagicHairDye_Description": "Косата ти проблясва във всички цветове на Призматичния отломък.",
+    "FairyBox_Name": "Кутия с фея",
+    "FairyBox_Description": "Призовава фея за спътник, която те лекува по време на битка.",
+    "FairyBox_Description2": "Призовава фея от ниво {0}, която те придружава и лекува по време на битка.",
+    "ParrotEgg_Name": "Папагалско яйце",
+    "ParrotEgg_Description": "Призовава папагал от ниво {0}, който те придружава и дава {1} шанс да намираш златни монети, когато убиваш чудовища.",
+    "IceRod_Name": "Леден жезъл",
+    "IceRod_Description": "Изстрелва ледено кълбо на всеки {0} секунди, което замразява за {1} секунди всички врагове по пътя си.",
+    "IridiumSpur_Name": "Златна шпора",
+    "IridiumSpur_Description": "Критичните удари ти дават ускорение за {0} секунди.",
+    "BasiliskPaw_Name": "Лапа на базилиск",
+    "BasiliskPaw_Description": "Имаш имунитет срещу отслабвания.",
+    "PerfectIceRod": "Съвършен леден жезъл",
+    "RapidMagicQuiver": "Бърз магически колчан",
+    "HeavyMagicQuiver": "Тежък магически колчан",
+    "PerfectMagicQuiver": "Съвършен магически колчан"
+  },
+  "sourceHashes": {
+    "MagicHairDye_Description": "4c3a1cacded849a55fb30dbb1231387ca2cbca394e2829fcc95c0ea77b8e9573",
+    "FairyBox_Name": "262b0822697379a7d86e293e805d42666c9f7a1431b73b7bc651da3c39745cfd",
+    "FairyBox_Description": "4bc54cf74a01d06cf56624abcca2bb9ec7d0dc4813db13cde6328fdd140257fd",
+    "FairyBox_Description2": "2e31daaecd115900ce954255eeea810d437a007e966960d31de16d775858ea28",
+    "ParrotEgg_Name": "276e1cc94056c113305ed64fb97d87d425a97b2e73933553a886b11e7b896383",
+    "ParrotEgg_Description": "83c96d43fb37473bbe6cb1a8f96fb10b7571424560e7762b99ccedb41bec6104",
+    "IceRod_Name": "fc0cfaaf2c3f01035d5c55461aa5b988ca4085bb4b17390d215b4c4dabe02630",
+    "IceRod_Description": "db8d50d70302b3d4ddd762b13dd52f599a173079af56a30ec129529ccd47963c",
+    "IridiumSpur_Name": "3f75612ab01fe55d4b9356f3a6b4befcfde07f5d4441b3f677ab1e36df8bb2cf",
+    "IridiumSpur_Description": "505f088c42937bf5a4ad59085308ce1f8ad51d594307a1b6b5452e157ff0f9a1",
+    "BasiliskPaw_Name": "7a8afcc722b61fc4dde37a41dc0b8d7f60393d1f876904eae6d601257afc13a0",
+    "BasiliskPaw_Description": "bfddaacecac140685d57a943bff89d00b7c6d534624c91ff85399457448707e0",
+    "PerfectIceRod": "f379fdc8823622b0fb1c15dbfd8d74bb95f10a2ad3cbf8c5aaecb63ec2496835",
+    "RapidMagicQuiver": "794a64a11e65d8c30955947be576690d01f417aaa0fd470c8c4c3bad986ceba0",
+    "HeavyMagicQuiver": "0f99ce8312ba2baf7e6879c7dcb31390591eafdc7870b95f61e38c62d155e0b4",
+    "PerfectMagicQuiver": "5136372df0928bb8c338b2b9695d5bba131e9ec093ebb9fdd1a79522345c0112"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated the Magic Hair Gel effect and the Fairy Box, Parrot Egg, Ice Rod, Golden Spur, Basilisk Paw and four upgraded trinket names or descriptions directly from English.",
+      "Applied locked Призматичен отломък, Талисман, критичен удар and отслабване terminology and established consistent base names reused by every upgraded variant.",
+      "Read each trinket description for exact combat behavior and preserved all six runtime placeholders, including companion levels, coin chance, firing interval, freeze duration and speed duration."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "148aa5855611117328b0bb25cb5a687f616339437fb7c11f4752ba4958e19961"
+  }
+}

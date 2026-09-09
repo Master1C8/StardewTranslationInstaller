@@ -1,0 +1,344 @@
+{
+  "locale": "ro",
+  "target": "Strings/UI",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Direct English review of save/account states, connection settings, irreversible cabin warning and chat notices. Placeholder names avoid gendered past participles. Farm names use Romanian noun-before-name order. All achievement counts retain their numeric value with Romanian thousands separators. Empty/format-only rows and established Romanian loans have individual preservation evidence. Runtime audit: Game1.pressUseToolButton toggles the held item through netItemStowed; this is putting the held item away, not depositing items in storage.",
+  "entries": {
+    "LevelUp_NewRecipe": {
+      "source": "New {0} recipe: {1}",
+      "translation": "Rețetă nouă de {0}: {1}"
+    },
+    "LoadGameMenu_LookingForSavedGames": {
+      "source": "Looking for Saved Games...",
+      "translation": "Se caută jocuri salvate..."
+    },
+    "LoadGameMenu_Deleting": {
+      "source": "Deleting...",
+      "translation": "Se șterge..."
+    },
+    "TitleMenu_PressAToStart": {
+      "source": "PRESS @ TO START",
+      "translation": "APASĂ @ PENTRU A ÎNCEPE"
+    },
+    "TooManyFarmsMenu_TooManyFarms": {
+      "source": "You already have the maximum number of farms.",
+      "translation": "Ai deja numărul maxim de ferme."
+    },
+    "UserSignoutMenu_SignInChange": {
+      "source": "A sign-in change has occurred. Sign back in or exit to the title screen.",
+      "translation": "Starea autentificării s-a schimbat. Autentifică-te din nou sau ieși la ecranul de titlu."
+    },
+    "UserSignoutMenu_Returning": {
+      "source": "Returning to title.",
+      "translation": "Se revine la ecranul de titlu."
+    },
+    "UserSignoutMenu_SignIn": {
+      "source": "Sign-in",
+      "translation": "Autentificare"
+    },
+    "UserSignoutMenu_Exit": {
+      "source": "Exit",
+      "translation": "Ieși"
+    },
+    "StartupMessage_FirstRun": {
+      "source": "",
+      "translation": "",
+      "preservationReason": "The original is intentionally empty; adding a startup message would introduce content."
+    },
+    "ControllerConnectMenu_PleaseReconnect": {
+      "source": "Please reconnect your controller to continue the game.",
+      "translation": "Reconectează controlerul pentru a continua jocul."
+    },
+    "Options_StowingMode": {
+      "source": "Item Stowing",
+      "translation": "Punerea deoparte a obiectului",
+      "previousTranslation": "Depozitarea obiectelor"
+    },
+    "Options_StowingMode_Off": {
+      "source": "Off",
+      "translation": "Oprit"
+    },
+    "Options_StowingMode_GamepadOnly": {
+      "source": "Gamepad Only",
+      "translation": "Doar gamepad"
+    },
+    "Options_StowingMode_On": {
+      "source": "On",
+      "translation": "Pornit"
+    },
+    "Options_ShowAdvancedCraftingInformation": {
+      "source": "Show Advanced Crafting Information",
+      "translation": "Afișează informații avansate de confecționare"
+    },
+    "Crafting_NumberCrafted": {
+      "source": "Number Crafted: {0}",
+      "translation": "Număr de obiecte confecționate: {0}"
+    },
+    "Options_GamepadStyleMenus": {
+      "source": "Use Controller-Style Menus",
+      "translation": "Folosește meniuri pentru controler"
+    },
+    "GameMenu_ServerInvite": {
+      "source": "Invite Friend...",
+      "translation": "Invită un prieten..."
+    },
+    "GameMenu_ServerMode": {
+      "source": "Server Mode",
+      "translation": "Mod server"
+    },
+    "GameMenu_ServerMode_Offline": {
+      "source": "Offline",
+      "translation": "Offline",
+      "preservationReason": "Offline is the approved Romanian glossary connection-state label."
+    },
+    "GameMenu_ServerMode_Online": {
+      "source": "Online",
+      "translation": "Online",
+      "preservationReason": "Online is the approved Romanian glossary connection-state label."
+    },
+    "GameMenu_ServerMode_FriendsOnly": {
+      "source": "Friends-Only",
+      "translation": "Doar prieteni"
+    },
+    "GameMenu_ServerMode_InviteOnly": {
+      "source": "Invite-Only",
+      "translation": "Doar cu invitație"
+    },
+    "CoopMenu_EnterIP": {
+      "source": "Enter IP...",
+      "translation": "Introdu adresa IP..."
+    },
+    "CoopMenu_Join": {
+      "source": "Join",
+      "translation": "Alătură-te"
+    },
+    "CoopMenu_Host": {
+      "source": "Host",
+      "translation": "Găzduiește"
+    },
+    "CoopMenu_JoinLANGame": {
+      "source": "Join LAN Game...",
+      "translation": "Alătură-te unui joc LAN..."
+    },
+    "CoopMenu_EnterInviteCode": {
+      "source": "Enter Invite Code...",
+      "translation": "Introdu codul de invitație..."
+    },
+    "CoopMenu_HostNewFarm": {
+      "source": "Host New Farm...",
+      "translation": "Găzduiește o fermă nouă..."
+    },
+    "CoopMenu_NoInvites": {
+      "source": "No invitations",
+      "translation": "Nicio invitație"
+    },
+    "CoopMenu_Failed": {
+      "source": "Connection failed",
+      "translation": "Conexiune eșuată"
+    },
+    "CoopMenu_FailedProtocolVersion": {
+      "source": "Connection failed (version mismatch)",
+      "translation": "Conexiune eșuată (versiuni incompatibile)"
+    },
+    "CoopMenu_Connecting": {
+      "source": "Connecting...",
+      "translation": "Se conectează..."
+    },
+    "CoopMenu_ConnectingOnlineServices": {
+      "source": "Connecting to online services",
+      "translation": "Se conectează la serviciile online"
+    },
+    "CoopMenu_NoSlots": {
+      "source": "No available cabins",
+      "translation": "Nicio cabană disponibilă"
+    },
+    "CoopMenu_NewFarmhand": {
+      "source": "New Farmer",
+      "translation": "Fermier nou"
+    },
+    "CoopMenu_HostFile": {
+      "source": "Host {1} Farm",
+      "translation": "Găzduiește Ferma {1}"
+    },
+    "CoopMenu_RevisitFriendFarm": {
+      "source": "Rejoin {0} Farm",
+      "translation": "Revino la Ferma {0}"
+    },
+    "CoopMenu_JoinFriendFarm": {
+      "source": "Join {0} Farm",
+      "translation": "Alătură-te Fermei {0}"
+    },
+    "CoopMenu_Refresh": {
+      "source": "Refresh",
+      "translation": "Reîmprospătează"
+    },
+    "OptionsPage_MultiplayerSection": {
+      "source": "Multiplayer",
+      "translation": "Multiplayer",
+      "preservationReason": "Multiplayer is the conventional Romanian game-mode loanword used throughout the approved glossary."
+    },
+    "OptionsPage_IPConnections": {
+      "source": "Accept IP connections",
+      "translation": "Acceptă conexiuni prin IP"
+    },
+    "OptionsPage_FarmhandCreation": {
+      "source": "Enable new character creation",
+      "translation": "Permite crearea unui personaj nou"
+    },
+    "OptionsPage_ShowInviteCode": {
+      "source": "Show Invite Code",
+      "translation": "Afișează codul de invitație"
+    },
+    "OptionsPage_ShowReadyStatus": {
+      "source": "Show Overnight Player Status List",
+      "translation": "Afișează lista stărilor jucătorilor peste noapte"
+    },
+    "OptionsPage_ScreenshotHeader": {
+      "source": "Screenshot:",
+      "translation": "Captură de ecran:"
+    },
+    "Client_RemotelyDisconnected": {
+      "source": "The server has closed the connection.",
+      "translation": "Serverul a închis conexiunea."
+    },
+    "Carpenter_CantDemolish_FarmhandOnline": {
+      "source": "Can't demolish while this cabin's farmhand is online",
+      "translation": "Nu poți demola cât timp ajutorul la fermă care locuiește în această cabană este online"
+    },
+    "Carpenter_DemolishCabinConfirm": {
+      "source": "This will permanently remove {0} from the game. Are you sure you want to demolish this cabin?",
+      "translation": "Această acțiune elimină definitiv din joc personajul {0}. Sigur vrei să demolezi această cabană?"
+    },
+    "Client_WaitForHostAvailability": {
+      "source": "Waiting for the host's event to finish...",
+      "translation": "Se așteaptă încheierea evenimentului gazdei..."
+    },
+    "Client_WaitForHostLoad": {
+      "source": "Waiting for the host to finish setting up...",
+      "translation": "Se așteaptă ca gazda să termine pregătirile..."
+    },
+    "Chat_UnknownUserName": {
+      "source": "???",
+      "translation": "???",
+      "preservationReason": "Technical unknown-name marker; no words to translate."
+    },
+    "Chat_PlayerName": {
+      "source": "{0} ({1})",
+      "translation": "{0} ({1})",
+      "preservationReason": "Technical name/identifier format; both values are supplied dynamically."
+    },
+    "Chat_ChatMessageFormat": {
+      "source": "{0}: {1}",
+      "translation": "{0}: {1}",
+      "preservationReason": "Technical user-chat format; no fixed prose to translate."
+    },
+    "Chat_ErrorMessageFormat": {
+      "source": "[Error] {0}",
+      "translation": "[Eroare] {0}"
+    },
+    "Chat_PrivateMessageFormat": {
+      "source": "{0} [Private]: {1}",
+      "translation": "{0} [Privat]: {1}"
+    },
+    "Chat_UserNotificationMessageFormat": {
+      "source": "> {0}",
+      "translation": "> {0}",
+      "preservationReason": "Technical notification format; keep the arrow and dynamically supplied message."
+    },
+    "Chat_PlayerJoined": {
+      "source": "{0} has joined.",
+      "translation": "{0} a intrat în joc."
+    },
+    "Chat_PlayerJoinedNewName": {
+      "source": "Unnamed Farmhand",
+      "translation": "Ajutor la fermă fără nume"
+    },
+    "Chat_PlayerDeath": {
+      "source": "{0} was knocked unconscious.",
+      "translation": "{0} și-a pierdut cunoștința."
+    },
+    "Chat_CaughtLegendaryFish": {
+      "source": "{0} caught the legendary '{1}' fish.",
+      "translation": "{0} a prins peștele legendar „{1}”."
+    },
+    "Chat_TrashCan": {
+      "source": "{1} caught {0} digging through the trash...",
+      "translation": "{1} a observat că {0} scotocea prin gunoi..."
+    },
+    "Chat_LinusTrashCan": {
+      "source": "Linus was impressed!",
+      "translation": "Linus a fost impresionat!"
+    },
+    "Chat_Bundle": {
+      "source": "Bundle complete!",
+      "translation": "Pachet completat!"
+    },
+    "Chat_Stardrop": {
+      "source": "{0} found a stardrop.",
+      "translation": "{0} a găsit o picătură stelară."
+    },
+    "Chat_HorseNamed": {
+      "source": "{0} named a horse {1}.",
+      "translation": "{0} a numit un cal {1}."
+    },
+    "Chat_PrairieKing": {
+      "source": "{0} beat Journey of the Prairie King.",
+      "translation": "{0} a terminat Călătoria Regelui Preriei."
+    },
+    "Chat_JunimoKart": {
+      "source": "{0} beat Junimo Kart.",
+      "translation": "{0} a terminat Junimo Kart."
+    },
+    "Chat_Dating": {
+      "source": "{0} is dating {1}.",
+      "translation": "{0} are o relație cu {1}."
+    },
+    "Chat_BreakUp": {
+      "source": "{0} broke up with {1}.",
+      "translation": "{0} s-a despărțit de {1}."
+    },
+    "Chat_Engaged": {
+      "source": "{0} got engaged to {1}.",
+      "translation": "{0} s-a logodit cu {1}."
+    },
+    "Chat_MuseumComplete": {
+      "source": "{0} Farm has completed the museum collection.",
+      "translation": "Ferma {0} a completat colecția muzeului."
+    },
+    "Chat_Museum40": {
+      "source": "{0} Farm has donated 40 pieces to the museum.",
+      "translation": "Ferma {0} a donat 40 de piese muzeului."
+    },
+    "Chat_donation": {
+      "source": "{0} donated '{1}' to the museum.",
+      "translation": "{0} a donat muzeului „{1}”."
+    },
+    "Chat_Walked10k": {
+      "source": "{0} has walked 10,000 paces.",
+      "translation": "{0} a făcut 10.000 de pași."
+    },
+    "Chat_Walked100k": {
+      "source": "{0} has walked 100,000 paces.",
+      "translation": "{0} a făcut 100.000 de pași."
+    },
+    "Chat_Walked1m": {
+      "source": "{0} has walked 1,000,000 paces.",
+      "translation": "{0} a făcut 1.000.000 de pași."
+    },
+    "Chat_Walked10m": {
+      "source": "{0} has walked 10,000,000 paces.",
+      "translation": "{0} a făcut 10.000.000 de pași."
+    },
+    "Chat_Divorce": {
+      "source": "{0} has filed for divorce.",
+      "translation": "{0} a depus cererea de divorț."
+    }
+  }
+}

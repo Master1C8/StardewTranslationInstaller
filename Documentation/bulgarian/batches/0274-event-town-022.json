@@ -1,0 +1,27 @@
+{
+  "id": "0274-event-town-022",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "3917585/e 3917584/O Shane/A shaneSaloon1": "20363433d9340cb52734f259feea5aa1ab853ede60e0a8cb0d2df6909d000ec6"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "3917585/e 3917584/O Shane/A shaneSaloon1": "distantBanjo/45 71/farmer 37 67 2 Shane -100 -100 2/addConversationTopic shaneSaloon2 0/skippable/move farmer 0 3 2/warp Shane 45 71/playSound doorClose/move Shane 0 1 2/jump farmer/pause 1000/emote farmer 16/advancedMove Shane false -7 0/pause 500/textAboveHead Shane \"*оригване*\"/move farmer 0 2 1/speak Shane \"О! Здравей, @. Тъкмо се прибирах...\"/pause 500/emote farmer 40/textAboveHead Shane \"Какво?\"/pause 2000/speak Shane \"„Пил ли си?“... Не!$a#$b#Защо реши така?$a\"/speed Shane 4/advancedMove Shane false 0 1 -5 0 0 -10/pause 500/textAboveHead Shane \"Хмф..\"/faceDirection farmer 2 true/pause 2000/emote farmer 28 true/pause 3000/end dialogue Shane \"...$a\""
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all six quoted saloon-exit, drinking-question, denial and reaction fields in Town source ordinal 22.",
+      "Preserved the follow-up conversation topic, prerequisite, event commands, actor identifiers, movement path, emphasis notation and dialogue control tokens.",
+      "Kept the player’s quoted question explicitly addressed to Shane and retained his defensive denial and terse closing reaction."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "51f69789a378119f6e081cbdfc33e273840b6e955d8b8163f4d27c7a3b880314"
+  }
+}

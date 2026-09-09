@@ -1,0 +1,755 @@
+{
+  "id": "056-emily-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Emily dialogue entry. Energetic, spiritual, compassionate and fashion-focused voice, gemstones, tailoring, animals, relationships, seasonal dialogue, player gender handling, canonical glossary terms, randomized gift branches, relationship queries, conditional branches, gender variants, reveal commands, placeholders, emotes, and control tokens were checked against English. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "6229159b2f5a0da52bf6b718d46bb0f130d12becad67a029efecb33376b187d9",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 8
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Introduction",
+      "english": "Ooh!... I can read it on your face. You're going to love it here in Pelican Town.#$b#If you're ever looking for something to do in the evening, stop by the saloon. That's where I work!",
+      "translation": "О-о!.. Я бачу це на твоєму обличчі. Тобі сподобається в містечку Пелікан.#$b#Якщо колись шукатимеш, чим зайнятися ввечері, заходь до салуну. Я там працюю!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptBirthdayGift_Positive",
+      "english": "Oh, you remembered my birthday! Thanks, @! That's really nice of you.$h",
+      "translation": "О, ти пам’ятаєш про мій день народження! Дякую, @! Це так мило з твого боку.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "Oh, you remembered my birthday! Thanks, @! That's really ni--$h#$b#...*sniff*...*sniff*... what is that smell?$s#$b#... What is this...?$s",
+      "translation": "О, ти пам’ятаєш про мій день народження! Дякую, @! Це так ми--$h#$b#...*нюх*... *нюх*... Що це за запах?$s#$b#...Що це...?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "FlowerDance_Accept",
+      "english": "Yes, I'd love to dance with you, @!$h#$e#Now I'm excited... This is going to be a lot of fun!",
+      "translation": "Так, я з радістю потанцюю з тобою, @!$h#$e#Тепер мені вже не терпиться... Буде дуже весело!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Wow, thank you! I've heard that if you drink this before bed you'll have vivid dreams.",
+      "translation": "Ого, дякую! Кажуть, якщо випити цей чай перед сном, сни будуть яскравими.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(TR)ParrotEgg",
+      "english": "Oh, good, it's still warm... Poor thing, where's it's mother? *Whisper* ...I'll be your mother, don't worry... Poor baby.$s#$b#I'm glad you gave this to me, @. I'll take very good care of it.",
+      "translation": "О, добре, воно ще тепле... Бідолашне, де ж його мати? *пошепки* ...Я буду твоєю мамою, не хвилюйся... Бідне маля.$s#$b#Я рада, що це яйце тепер у мене завдяки тобі, @. Я чудово про нього подбаю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(O)68",
+      "english": "$c 0.5#Oh, wow... Thank you! This color perfectly captures my mood today.$h#The warm, soothing energy of this stone helps us re-center our thoughts... It's actually just what I needed on a day like this. Thanks!",
+      "translation": "$c 0.5#Ого... Дякую! Цей колір ідеально передає мій сьогоднішній настрій.$h#Тепла, заспокійлива енергія цього каменя допомагає нам знову зосередити думки... Саме це мені сьогодні й було потрібно. Дякую!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(O)70",
+      "english": "$c 0.5#That's funny, I had a dream that you would give me a piece of jade today!$h#Ooh, it's jade! This is supposed to attract wealth... And who couldn't do with a few extra coins in the pocket?$h",
+      "translation": "$c 0.5#Як кумедно: мені наснилося, що сьогодні ти подаруєш мені шматочок нефриту!$h#О-о, це нефрит! Кажуть, він притягує багатство... А кому не знадобиться кілька зайвих монет у кишені?$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(O)66",
+      "english": "$c 0.5#Oh, it's beautiful, @! I hope you didn't put yourself in too much danger to get this.$h#Ah, an amethyst! This will protect me on those late nights working at the Saloon.",
+      "translation": "$c 0.5#О, він прекрасний, @! Сподіваюся, заради нього тобі не довелося надто ризикувати.$h#А, аметист! Він захищатиме мене під час пізніх змін у Салуні «Зоряна крапля».",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(O)64",
+      "english": "$c 0.5#Wow, look at that color! It matches perfectly with my outfit.$h#Oh, this is perfect... I've been feeling a little sluggish lately. Rubies are great for energizing the spirit!",
+      "translation": "$c 0.5#Ого, поглянь на цей колір! Він ідеально пасує до мого вбрання.$h#О, це саме те, що треба... Останнім часом я трохи млява. Рубіни чудово заряджають дух енергією!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(O)62",
+      "english": "$c 0.5#It's so smooth! When I hold it... I can feel the energy of all the mermaids in the sea. Thank you!#Thank you! I'm gonna put this under my pillow, and hopefully I'll dream about the ocean.",
+      "translation": "$c 0.5#Який гладенький! Коли тримаю його... Відчуваю енергію всіх русалок у морі. Дякую!#Дякую! Я покладу його під подушку й, сподіваюся, побачу уві сні океан.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "AcceptGift_(O)60",
+      "english": "$c 0.5#Oh!... Heheh... I know exactly why you gave me this stone today. Very interesting...#Wow, it's beautiful! This color makes me think of all the spiritual power within the forest... Can you feel that wood energy?",
+      "translation": "$c 0.5#О!.. Хе-хе... Я точно знаю, чому сьогоднішній подарунок — саме цей камінь. Дуже цікаво...#Ого, він прекрасний! Цей колір нагадує мені про всю духовну силу лісу... Відчуваєш цю енергію дерев?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "GreenRain",
+      "english": "There must be a meaning behind this... Nature is trying to tell us something.$3#$e#What, though? I can't tell... It's hard to read. I feel a strong presence, though...$3",
+      "translation": "За цим має стояти якийсь сенс... Природа намагається нам щось сказати.$3#$e#Але що? Я не можу розібрати... Важко прочитати. Та я відчуваю чиюсь сильну присутність...$3",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "GreenRain_2",
+      "english": "Can you feel it? The forest is singing! The trees are dancing with joy!",
+      "translation": "Відчуваєш? Ліс співає! Дерева танцюють від радості!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "married_Haley",
+      "english": "That was a beautiful wedding... I'm really happy for you and Haley!$h",
+      "translation": "Це було прекрасне весілля... Я така рада за вас із Гейлі!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "divorced_Haley",
+      "english": "Haley is too proud to be heartbroken over the divorce... Or at least to show it.$3",
+      "translation": "Гейлі надто горда, щоб страждати через розлучення... Принаймні щоб це показувати.$3",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "eventSeen_471942",
+      "english": "Hello @. I had a feeling I'd be seeing you today.",
+      "translation": "Привіт, @. Я відчувала, що сьогодні тебе побачу.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "eventSeen_463391",
+      "english": "Nothing is more sad than an injured animal...$s",
+      "translation": "Немає нічого сумнішого за поранену тварину...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "purchasedAnimal_Sheep",
+      "english": "Now that you have a sheep, you'll be able to make cloth! That'll open up a whole new world of tailoring possibilities. Just wait and see.",
+      "translation": "Тепер, коли в тебе є Вівця, можна виготовляти Тканину! Перед тобою відкриється цілий новий світ кравецьких можливостей. Ось побачиш.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "eventSeen_11_memory_oneweek",
+      "english": "Have you ever tried cooking without a recipe? It's kind of liberating.#$b#And who knows... you might discover something amazing!",
+      "translation": "Тобі доводилося готувати без рецепта? Це дарує таку свободу.#$b#І хтозна... Може, відкриєш щось дивовижне!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "eventSeen_101_memory_oneweek",
+      "english": "My outing with Clint was pretty fun!#$b#Although, he spilled a root beer all over himself within ten minutes of getting there, and then barely said a word the rest of the night.$3",
+      "translation": "Ми з Клінтом доволі весело погуляли!#$b#Щоправда, не минуло й десяти хвилин, як він облився кореневим пивом, а потім решту вечора майже не промовив ані слова.$3",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "eventSeen_4081148",
+      "english": "Hey, I saw you at Sam's show. It was fun!$h#$e#The city smelled pretty bad, though.$s",
+      "translation": "Гей, я бачила тебе на виступі Сема. Було весело!$h#$e#Але місто пахло доволі неприємно.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "eventSeen_2123343_memory_oneday",
+      "english": "I won't forget our camping trip any time soon...$l",
+      "translation": "Я ще нескоро забуду наш похід із наметами...$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "dating_Emily",
+      "english": "%Emily has a big smile on her face.",
+      "translation": "%Emily широко усміхається.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "dating_Emily_memory_oneday",
+      "english": "We're going to have a lot of fun together, I just know it.$h",
+      "translation": "Ми чудово проводитимемо час разом, я це точно знаю.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "married_Shane",
+      "english": "Well, now that you're married, I assume Shane won't be coming to the Saloon as much!#$e#That's probably a good thing, but it's always a little sad to lose a regular...$s",
+      "translation": "Що ж, тепер, коли ви одружені, гадаю, Шейн уже не так часто приходитиме до Салуну «Зоряна крапля»!#$e#Мабуть, це добре, але завжди трохи сумно втрачати постійного відвідувача...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Resort_Entering",
+      "english": "Oh, I like this place! It's full of parrots!",
+      "translation": "О, мені тут подобається! Усюди папуги!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Resort_Leaving",
+      "english": "Ah... my lungs feel perfect.",
+      "translation": "А... Мої легені почуваються чудово.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Resort_Shore",
+      "english": "Can you feel it? The ocean has a profound healing energy.",
+      "translation": "Відчуваєш? Океан має могутню цілющу енергію.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Resort_Chair",
+      "english": "Are you having fun, @? You need to remember to take breaks now and then too!",
+      "translation": "Тобі весело, @? Не забувай, що й тобі час від часу треба відпочивати!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Resort_Bar",
+      "english": "It's nice to be on this side of the bar for once!$h",
+      "translation": "Як приємно хоч раз опинитися по цей бік барної стійки!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Resort",
+      "english": "If you open your heart to the sun, you can feel a loving energy inside of you.$h",
+      "translation": "Якщо відкрити серце сонцю, можна відчути всередині його люблячу енергію.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Resort_Dance",
+      "english": "%Emily is lost in the music.",
+      "translation": "%Emily загубилася в музиці.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "FlowerDance_Accept_Spouse",
+      "english": "Of course, my love. I've been looking forward to this!$h",
+      "translation": "Звісно, моє кохання. Я так чекала на це!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "FlowerDance_Decline",
+      "english": "I'm very sorry... but I've already agreed to dance with someone else.$u",
+      "translation": "Мені дуже шкода... Але я вже погодилася танцювати з кимось іншим.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "divorced",
+      "english": "@... You broke my heart... I just can't talk to you anymore.$s#$e#Please, let me try to heal...$s",
+      "translation": "@... Моє серце розбите через тебе... Я більше просто не можу з тобою розмовляти.$s#$e#Будь ласка, дай мені зцілитися...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "dumped_Girls",
+      "english": "...$s",
+      "translation": "...$s",
+      "reviewed": true,
+      "preserveReason": "Intentional silent reaction with an unchanged runtime emotion marker and no linguistic content."
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "breakUp",
+      "english": "B...But I thought we had a special bond... *sniff*$s",
+      "translation": "А... Але я думала, між нами особливий зв’язок... *схлип*$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "reject_866",
+      "english": "Oh, that's beautiful... I have a friend who would love that! But she lives far from here...",
+      "translation": "О, яка краса... У мене є подруга, якій це дуже сподобалося б! Але вона живе далеко звідси...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "secondChance_Girls",
+      "english": "@... I'm ready to give you a second chance. I still have faith that there's a good person inside of you.$s",
+      "translation": "@... Я готова дати тобі другий шанс. Я досі вірю, що всередині тебе живе добра людина.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Mon",
+      "english": "Have I told you Haley and I are sisters? Strange, isn't it?",
+      "translation": "Я вже казала, що ми з Гейлі сестри? Дивно, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Mon2",
+      "english": "I have a secret hobby, but I won't say any more.#$e#Maybe I'll show you some day.$h",
+      "translation": "У мене є таємне захоплення, але більше нічого не скажу.#$e#Може, одного дня я тобі його покажу.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Mon4",
+      "english": "This world is full of spirits and magic... Some don't believe me, but I know it's true.#$e#I can see it in your eyes... you believe in the other world, like me.",
+      "translation": "Цей світ повний духів і магії... Дехто мені не вірить, але я знаю, що це правда.#$e#Я бачу це у твоїх очах... Ти, як і я, віриш у потойбічний світ.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Mon6",
+      "english": "I wish Haley would get a job or at least contribute to cooking and cleaning.$s#$e#I think she's hoping to marry someone rich.$u",
+      "translation": "Хотілося б, щоб Гейлі знайшла роботу або хоча б допомагала готувати й прибирати.$s#$e#Гадаю, вона сподівається вийти заміж за когось багатого.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Mon6_inlaw_Haley",
+      "english": "I have to say, now that Haley's gone I've had a much easier time keeping things in order.",
+      "translation": "Мушу сказати, відколи Гейлі переїхала, підтримувати порядок стало набагато легше.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Mon8",
+      "english": "There's good people in this town who just can't seem to find happiness. It makes me sad.$u#$e#Working in the saloon, I hear first-hand about everyone's problems.$u",
+      "translation": "У цьому містечку є хороші люди, які ніяк не можуть знайти щастя. Мені від цього сумно.$u#$e#Працюючи в салуні, я з перших вуст чую про проблеми кожного.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Tue",
+      "english": "I work part-time at Gus' saloon. It pays the bills.",
+      "translation": "Я працюю неповний день у салуні Ґаса. На рахунки вистачає.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Tue4",
+      "english": "I'm just working at Gus' to make ends meet... but my real passion is tailoring.$u#$e#I made these clothes from scratch, see?",
+      "translation": "Я працюю в Ґаса лише для того, щоб зводити кінці з кінцями... А справжня моя пристрасть — кравецтво.$u#$e#Я пошила цей одяг власноруч від початку до кінця, бачиш?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Tue6",
+      "english": "Oh, hi... It's nice of you to visit me like this.$h",
+      "translation": "О, привіт... Так мило, що ти заходиш до мене.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Tue8",
+      "english": "You know, @... I think the future looks bright for both of us.",
+      "translation": "Знаєш, @... Гадаю, на нас обох чекає світле майбутнє.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Wed",
+      "english": "I've heard rumors of rare and powerful magic rings, forged long ago by forgotten civilizations. I'm not sure if it's true or just a fairy tale.",
+      "translation": "Я чула чутки про рідкісні й могутні магічні персні, викувані дуже давно забутими цивілізаціями. Не знаю, правда це чи лише казка.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Wed4",
+      "english": "You catch fish? I just hope you treat the poor things humanely.$s#$e#Every critter deserves our respect, even the slimy ones.",
+      "translation": "Ти ловиш рибу? Сподіваюся лише, що ставишся до бідолашних створінь гуманно.$s#$e#Усі істоти заслуговують на нашу повагу, навіть слизькі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Wed6",
+      "english": "Have faith... every day you're taking one more step on the path of your destiny.",
+      "translation": "Вір у себе... Щодня ти робиш ще один крок шляхом своєї долі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Wed8",
+      "english": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Hey, @.#$e#I always knew we would become good friends. It was written in the stars!|Hi, @.$u#$e#I always knew we'd become close like this...",
+      "translation": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Гей, @.#$e#Я завжди знала, що ми станемо добрими друзями. Це було написано в зорях!|Привіт, @.$u#$e#Я завжди знала, що ми так зблизимося...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Thu",
+      "english": "I hope you're farming in a sustainable way. The valley's ecosystem is fragile!#$e#How do I know? I have a strong gut-feeling!",
+      "translation": "Сподіваюся, ти ведеш фермерство екологічно. Екосистема долини тендітна!#$e#Звідки я знаю? Маю сильне передчуття!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Thu4",
+      "english": "Sometimes the flowers speak to me... each one has a different story to tell!",
+      "translation": "Іноді квіти розмовляють зі мною... Кожна має власну історію!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Fri",
+      "english": "Ah, spring. The season of pastels. I actually prefer jewel tones, myself.#$b#Oh, excuse me! I was mumbling about fashion again, wasn't I?",
+      "translation": "А, весна. Пора пастельних кольорів. Особисто я віддаю перевагу насиченим коштовним відтінкам.#$b#О, пробач! Я знову бурмотіла про моду, так?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Sat",
+      "english": "I like making my own clothes, but it's not easy to get cloth.#$e#And it's such a long trip to the city.",
+      "translation": "Мені подобається шити власний одяг, але Тканину дістати нелегко.#$e#А до міста їхати так далеко.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Sat6",
+      "english": "Do you ever think about the texture of fabric, @? Each texture has a distinct personality... feel my dress... see?",
+      "translation": "Ти колись замислюєшся про фактуру тканини, @? У кожної фактури своя виразна особистість... Торкнися моєї сукні... Відчуваєш?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Sun",
+      "english": "Hi @!#$e#Do you raise sheep in your barn? You can turn their wool into beautiful bolts of cloth!#$e#You'll need a loom, though. You can make them yourself if you know the crafting recipe.",
+      "translation": "Привіт, @!#$e#Ти тримаєш у хліві овець? Із їхньої вовни можна робити прекрасні рулони Тканини!#$e#Але знадобиться Ткацький верстат. Його можна змайструвати, якщо знаєш рецепт.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "Sun4",
+      "english": "This house was left in our care by my parents. They've been traveling the world for the last two years.#$e#We have no idea when they'll be back.#$e#I enjoy living here, though. It's a beautiful area and the town is nice.",
+      "translation": "Батьки залишили цей будинок під нашу опіку. Останні два роки вони подорожують світом.#$e#Ми не знаємо, коли вони повернуться.#$e#Але мені подобається тут жити. Місцевість прекрасна, та й містечко хороше.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "event_dance1",
+      "english": "Thank you!",
+      "translation": "Дякую!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "event_dance2",
+      "english": "Um... Okay. Sorry you didn't like it. I guess those three years of practice were a complete waste...$s",
+      "translation": "Ем... Гаразд. Шкода, що тобі не сподобалося. Мабуть, ті три роки занять були змарновані...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "event_dance3",
+      "english": "Did you really think so? That's exactly the effect I was shooting for!$h#$b#I'm so glad you liked it.",
+      "translation": "Ти справді так думаєш? Саме такого враження я й хотіла досягти!$h#$b#Я така рада, що тобі сподобалося.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Mon",
+      "english": "Haley is a picky eater. It's so hard to cook for her.",
+      "translation": "Гейлі дуже перебірлива в їжі. Для неї так важко готувати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Mon4",
+      "english": "Eating healthy is very important to me. I want to live a long and active life.",
+      "translation": "Здорове харчування дуже важливе для мене. Я хочу прожити довге й активне життя.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Mon_inlaw_Haley",
+      "english": "Haley and I get along much better now that she's moved out. I look forward to her visits!",
+      "translation": "Відколи Гейлі переїхала, ми ладнаємо набагато краще. Я завжди чекаю на її візити!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Tue",
+      "english": "Hello there, @.#$e#I feel lazy today.$u",
+      "translation": "Привіт, @.#$e#Сьогодні мені ліньки.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Tue6",
+      "english": "I feel bad for Linus. People judge him, but he's just living a different lifestyle.$u#$e#I wish everyone could learn to be accepting of others.",
+      "translation": "Мені шкода Лінуса. Люди його засуджують, хоча він просто живе інакше.$u#$e#От би всі навчилися приймати інших.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Sun6",
+      "english": "Hi, @! We've become decent friends, haven't we?$h#$e#That's fine with me. You're a cool guy.^I'm glad.$h",
+      "translation": "Привіт, @! Ми вже непогані друзі, правда?$h#$e#Мене це цілком влаштовує. Ти крутий хлопець.^Я рада.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Sun8",
+      "english": "Hi, @! We've become decent friends, haven't we?$h#$e#This may sound weird, but I've always been certain this would happen.",
+      "translation": "Привіт, @! Ми вже непогані друзі, правда?$h#$e#Може, це прозвучить дивно, але я завжди знала, що так станеться.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Wed",
+      "english": "It doesn't rain much in summer, does it?#$e#That just means more watering work for you, huh?#$e#Or do you enjoy the sunny weather?",
+      "translation": "Улітку дощить нечасто, правда?#$e#Це означає лише більше поливання для тебе, еге ж?#$e#Чи тобі подобається сонячна погода?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Thu",
+      "english": "I consider the bees and butterflies to be my special friends!",
+      "translation": "Я вважаю бджіл і метеликів своїми особливими друзями!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Fri",
+      "english": "If I wasn't so busy I'd come help you on the farm!#$e#But Gus would be upset if I had another job...$s",
+      "translation": "Якби я не була такою зайнятою, то прийшла б допомогти тобі на фермі!#$e#Але Ґас засмутився б, якби я знайшла іншу роботу...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Fri6",
+      "english": "You know, I'm sure Gus would understand if I wanted to leave the Saloon someday.#$b#There's so much out there, I can't stay a barmaid forever.$u",
+      "translation": "Знаєш, я впевнена, що Ґас зрозумів би, якби одного дня я захотіла піти із Салуну «Зоряна крапля».#$b#У світі стільки всього, я не можу вічно залишатися барменкою.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Sat",
+      "english": "Don't overwork yourself or you might end up in Harvey's clinic!",
+      "translation": "Не перенапружуйся, інакше можеш опинитися в клініці Гарві!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Sun",
+      "english": "Hi @!",
+      "translation": "Привіт, @!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "summer_Sun4",
+      "english": "It's around this time of year that my good friends visit the region... I mean the parrots!",
+      "translation": "Приблизно цієї пори року мої добрі друзі прилітають у наш край... Я про папуг!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_1",
+      "english": "Well, fall is here. Time to plant some new crops, huh?",
+      "translation": "Що ж, настала осінь. Час садити нові культури, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_15",
+      "english": "$d bus#I'm visiting Sandy today. We're best friends!#$e#I'm really happy that the bus is repaired.|*Sigh*... If only that old bus were fixed, I would've visited my friend Sandy today...$s",
+      "translation": "$d bus#Сьогодні я навідаю Сенді. Ми найкращі подруги!#$e#Я така рада, що автобус відремонтовано.|*Зітхання*... Якби той старий автобус полагодили, сьогодні я навідала б свою подругу Сенді...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Mon",
+      "english": "It's good weather for a picnic, isn't it?",
+      "translation": "Чудова погода для пікніка, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Mon8",
+      "english": "If I didn't have to work I'd suggest we go on a nice picnic!",
+      "translation": "Якби мені не треба було працювати, я запропонувала б нам влаштувати чудовий пікнік!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Tue",
+      "english": "Hello. Did you have a good summer?",
+      "translation": "Привіт. Літо минуло добре?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Tue4",
+      "english": "Hi @! I bet your farm did great this past summer, huh?#$e#You're an excellent farmer.$h",
+      "translation": "Привіт, @! Закладаюся, минулого літа твоя ферма процвітала, еге ж?#$e#У тебе справжній талант до фермерства.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Wed",
+      "english": "My friend runs a shop in the desert. If you ever go there stop in and say hi for me.#$e#I think she sells some rare products.",
+      "translation": "Моя подруга тримає крамницю в пустелі. Якщо колись туди потрапиш, зайди й передай їй від мене вітання.#$e#Гадаю, вона продає деякі рідкісні товари.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Thu",
+      "english": "Are you friends with Clint? He's a nice guy, if you get to know him.#$e#He gets lonely working in his shop all day. But he's so shy he has trouble making new friends.",
+      "translation": "Ти дружиш із Клінтом? Якщо пізнати його ближче, він хороший хлопець.#$e#Йому самотньо цілими днями працювати у своїй крамниці. Але він такий сором’язливий, що йому важко знаходити нових друзів.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Thu8",
+      "english": "I think Clint's mad at me. He never looks at me anymore...$u#$e#I always thought we were friends.$u",
+      "translation": "Здається, Клінт сердиться на мене. Він більше ніколи на мене не дивиться...$u#$e#Я завжди думала, що ми друзі.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Fri",
+      "english": "Another beautiful fall day.#$e#It's a pity it'll soon be over.",
+      "translation": "Ще один прекрасний осінній день.#$e#Шкода, що осінь скоро закінчиться.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Fri6",
+      "english": "Smell that clean air? It's lovely, isn't it?#$b#I just fear that the Joja Co.'s of the world will take this away from us.$u",
+      "translation": "Відчуваєш це чисте повітря? Воно чудове, правда?#$b#Я лише боюся, що всілякі корпорації на кшталт Joja відберуть його в нас.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Sat",
+      "english": "Keep your mind open and some interesting things might take root.#$e#Anyway, how is your day going?",
+      "translation": "Тримай розум відкритим, і в ньому може пустити коріння щось цікаве.#$e#Утім, як минає твій день?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Sat6",
+      "english": "I don't have any huge plans for life. I prefer not to stress about the future.",
+      "translation": "У мене немає якихось грандіозних життєвих планів. Я волію не перейматися майбутнім.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Sun",
+      "english": "Nothing like a sunny Sunday to lift the spirits!",
+      "translation": "Ніщо так не підносить дух, як сонячна неділя!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Sun6",
+      "english": "There's so many invisible barriers holding us back. Why can't people learn to let go and explore their true potential?#$e#Me? Well, you know what they say... 'You can't cage a wild Junimo'.",
+      "translation": "Нас стримує стільки невидимих перешкод. Чому люди не можуть навчитися відпускати їх і розкривати свій справжній потенціал?#$e#Я? Ну, знаєш, як кажуть... «Дикого джунімо не посадиш у клітку».",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "fall_Sun10",
+      "english": "You're such a nice person, @! Thanks for being my friend.$h",
+      "translation": "Ти така хороша людина, @! Дякую за нашу дружбу.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Mon",
+      "english": "Be careful an icicle doesn't fall on your head!",
+      "translation": "Бережися, щоб бурулька не впала тобі на голову!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Mon10",
+      "english": "Be careful an icicle doesn't fall on your head! I wouldn't want you to get hurt!",
+      "translation": "Бережися, щоб бурулька не впала тобі на голову! Я не хочу, щоб із тобою щось сталося!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Tue",
+      "english": "Oh, hello @!$h#$e#You must be getting very good at farming by now, huh?",
+      "translation": "О, привіт, @!$h#$e#Мабуть, тепер у тебе вже чималий досвід у фермерстві, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Tue2",
+      "english": "I bet you're an excellent farmer by now!",
+      "translation": "Закладаюся, тепер у тебе справжній талант до фермерства!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Tue4",
+      "english": "I think my hair is frozen solid...$s",
+      "translation": "Здається, моє волосся геть замерзло...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Wed",
+      "english": "Haley and I aren't made for such a big house. It's a hassle to keep it clean.#$e#Ah well. I really shouldn't be complaining.#$e#Your farmhouse seems nice and cozy.$h",
+      "translation": "Ми з Гейлі не створені для такого великого будинку. Підтримувати чистоту — суцільний клопіт.#$e#Ну та гаразд. Мені справді не варто скаржитися.#$e#Твій фермерський будинок здається таким милим і затишним.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Thu",
+      "english": "It must be so cold for the poor fish.$s#$e#I wonder if any fish hibernate? Maybe I should ask Demetrius.",
+      "translation": "Бідолашній рибі, мабуть, страшенно холодно.$s#$e#Цікаво, чи впадає якась риба в зимову сплячку? Може, запитаю Деметріуса.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Fri",
+      "english": "If I wasn't so busy I'd help you dig around in that cave by the lake.#$e#I bet there are some powerful crystals inside there.",
+      "translation": "Якби я не була такою зайнятою, то допомогла б тобі покопатися в тій печері біля озера.#$e#Закладаюся, усередині є могутні кристали.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Sat",
+      "english": "Do you know how to cook 'Bean Hotpot'?#$e#I like that dish quite a bit.$h%revealtaste:Emily:207#$e#It's hard to get fresh ingredients in the winter, huh?",
+      "translation": "Ти вмієш готувати «Квасолеве рагу»?#$e#Мені дуже подобається ця страва.$h%revealtaste:Emily:207#$e#Узимку важко дістати свіжі інгредієнти, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Sun",
+      "english": "Hi!#$e#...Yes?",
+      "translation": "Привіт!#$e#...Так?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Sun6",
+      "english": "My sister and I might fight sometimes, but I would really miss her if she left.#$e#I think she'll become a very nice young lady some day... Don't tell her I said that.$h#$e#So, is there anything you want to talk about?",
+      "translation": "Ми із сестрою іноді сваримося, але якби вона поїхала, я б дуже сумувала.#$e#Гадаю, одного дня вона стане дуже приємною молодою жінкою... Не кажи їй, що я так сказала.$h#$e#Отже, ти хочеш про щось поговорити?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Emily",
+      "key": "winter_Sun6_inlaw_Haley",
+      "english": "Say hi to my sister for me! And remind her to visit me tomorrow.",
+      "translation": "Передай моїй сестрі вітання! І нагадай, щоб завтра мене навідала.",
+      "reviewed": true
+    }
+  ]
+}

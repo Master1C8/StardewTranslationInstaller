@@ -1,0 +1,27 @@
+{
+  "id": "0194-event-fish-shop",
+  "target": "Data/Events/FishShop",
+  "status": "reviewed",
+  "sourceHashes": {
+    "16253595/j 29/X": "18a6e325aa8405d6790ce4af95bda83af89f216b51f4dea46fbdce72ece855ea"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"Ахой!\"/pause 500/move Willy 1 0 2/speak Willy \"Влизай... чувствай се като у дома си...\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"Аха... това върши добра работа. Рибите полудяват по него.#$b#Само... ъъ... не забравяй хубаво да си измиеш ръцете, след като ги топиш в тези сокове...$s\"/speak Willy \"Известно е, че миризмата се задържа до седем седмици, ${момко^госпожице}$...\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"Та... хващаш ли много риба?\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #Да#Не#Твърде трудно е...(break)emote Willy 20\\speak Willy \"Аха! ${Рибар^Рибарка}$ по моя вкус...$h\"\\pause 500\\speak Willy \"Винаги можеш ${да се довериш на рибар^да разчиташ на жена, която лови риба}$...\"\\speak Willy \"Поне така казваше старият ми татко. Хаха!$h#$b#Е, продължавай все така... ако успееш да хванеш всяка риба в тези води, те чака специална награда...\"(break)emote Willy 28\\speak Willy \"Не си падаш по риболова, а? Жалко...$s\"(break)emote Willy 16\\speak Willy \"Да, труден спорт е... особено в началото.#$b#Пробва ли „Учебна въдица“? Продавам ги точно тук на много ниска цена.#$b#Използвай „Учебна въдица“, докато натрупаш малко повече опит.\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #Какво не е наред?#Всичко наред ли е?(break)pause 100(break)pause 100/pause 400/speak Willy \"Аха... ами, напоследък бизнесът върви трудно.$s#$b#Всичко започна горе-долу когато старият Обществен център се превърна в развалина... рибата ми вече не се продава както преди...#$b#Работя двойно само за да свържа двата края!\"/faceDirection Willy 2/pause 300/speak Willy \"Не ми остава време за собствените ми проекти...$s#$b#Но ако нещата тук отново потръгнат, може да имам време да ти покажа нещо...\"/move Willy -1 0 0/playMusic none/speak Willy \"Хе-хе... да. Тя е отзад... една „стара приятелка“, която е виждала и по-добри дни...$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"Някой ден, ${момко^госпожице}$... ще разбереш какво имам предвид.\"/pause 2000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-06",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all fourteen quoted dialogue fields and all five choices across both quick questions.",
+      "Applied locked Учебна въдица and Обществен център terminology, translated every gender-selector branch, and preserved Willy’s informal maritime voice and the old-boat reveal.",
+      "Refined the bait-effect and kindred-fisher idioms, avoided an unselected beginner-gender form, and verified the complete event and branch skeleton byte-for-byte outside localized text."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "75bbb2d0ece3bf7cbc63e01fa1c297bd47764c9badb1cc609e065b1d91ee381a"
+  }
+}

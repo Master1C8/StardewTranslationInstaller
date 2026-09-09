@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "0608-supplement-characters-mystery",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Characters",
+  "status": "reviewed",
+  "entries": {
+    "???.DisplayName": "???"
+  },
+  "preserveReasons": {
+    "???.DisplayName": "The three question marks are the intentional player-facing mystery label; they contain no English text and must remain exact."
+  },
+  "sourceHashes": {
+    "???.DisplayName": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Reviewed the mystery character DisplayName directly from the typed English CharacterData extraction.",
+      "Preserved the exact three-question-mark label because it is intentional symbolic player-facing copy with no English text.",
+      "Confirmed the field is used by NPC display-name parsing and that changing it would reveal or invent a name."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "f4062a16d401b6dff61105616acf472e74edc67be30978a8ba94b7abc663628e"
+  }
+}

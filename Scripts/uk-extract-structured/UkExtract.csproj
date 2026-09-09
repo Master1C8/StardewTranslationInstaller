@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GameAssemblyRoot Condition="'$(GameAssemblyRoot)' == ''">/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS</GameAssemblyRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(GameAssemblyRoot)/MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="StardewValley.GameData">
+      <HintPath>$(GameAssemblyRoot)/StardewValley.GameData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

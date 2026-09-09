@@ -1,0 +1,13 @@
+{
+  "id": "0029-16-legacy-spur-identity",
+  "locale": "sr",
+  "target": "Strings/1_6_Strings",
+  "glossarySha256": "717e409d631b59e1069713078c555dee4f7ee3f658bdbe1d620a066c87902fab",
+  "review": "source-meaning-terminology-Serbian-grammar-voice-context-tokens",
+  "smallBatchReason": "Single deferred identity record, accepted only after reading original typed Data/Trinkets through MonoGame ContentManager.",
+  "preservedReasons": {
+    "IridiumSpur": "Legacy technical identity: original Data/Trinkets has the dictionary ID IridiumSpur, while its visible name explicitly references Strings/1_6_Strings:IridiumSpur_Name (Golden Spur, translated as Златна мамуза). Its description similarly uses IridiumSpur_Description. No exact localized lookup of the legacy key was found in the installed assembly. Preserve the internal identity instead of translating it as a second item name."
+  },
+  "allowedLatin": {"IridiumSpur": ["IridiumSpur"]},
+  "entries": {"IridiumSpur": "IridiumSpur"}
+}

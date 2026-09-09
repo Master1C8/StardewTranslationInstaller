@@ -1,0 +1,434 @@
+{
+  "id": "299-ui-chat-commands-and-player-proposals-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 UI strings covering chat commands, moderation, sleep announcements, gifts and player proposals. Command semantics, canonical character names, gender-specific proposal meaning, player-neutral status messages, exact technical bracket arguments, spaces, placeholders and command literals were checked against the English source.",
+    "reviewedTextSHA256": "7c933f74af2f3a8ebcaf1a4380089291bb2e7000c0fe1a012270c0b3a436869d",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 84
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_CheatsOnly",
+      "english": "This command can only be used when cheats are enabled.",
+      "translation": "Цю команду можна використовувати, лише коли дозволено чити.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_HostOnly",
+      "english": "Only the host can use this command.",
+      "translation": "Цю команду може використовувати лише господар.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_MultiplayerOnly",
+      "english": "This command can only be used in multiplayer mode.",
+      "translation": "Цю команду можна використовувати лише в багатокористувацькому режимі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NiceTry",
+      "english": "ConcernedApe: Nice try...",
+      "translation": "ConcernedApe: Гарна спроба...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchOnlinePlayer",
+      "english": "No online player with that name",
+      "translation": "Гравця з таким ім’ям немає в мережі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchPlayer",
+      "english": "No player with that name",
+      "translation": "Гравця з таким ім’ям немає",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayers",
+      "english": "The following players are present:",
+      "translation": "Присутні такі гравці:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayersEntry",
+      "english": " - {0}",
+      "translation": " - {0}",
+      "reviewed": true,
+      "preserveReason": "Technical command-list formatting preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Help",
+      "english": "{0} [farmer name/user id]: bans the player from this farm.",
+      "translation": "{0} [farmer name/user id]: блокує гравця на цій фермі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Done",
+      "english": "{0} was banned",
+      "translation": "{0} заблоковано",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Failed",
+      "english": "Failed to ban player",
+      "translation": "Не вдалося заблокувати гравця",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Clear_Help",
+      "english": "{0}: clear chat log.",
+      "translation": "{0}: очищає журнал чату.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Color_Help",
+      "english": "{0} [color]: sets your default text color.",
+      "translation": "{0} [color]: задає стандартний колір твого тексту.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ColorList_Help",
+      "english": "{0}: lists the available text colors.",
+      "translation": "{0}: показує доступні кольори тексту.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_1",
+      "english": "ConcernedApe: Hello. I hope you're enjoying your new life here. Take care! [126]",
+      "translation": "ConcernedApe: Вітаю. Сподіваюся, тобі подобається нове життя тут. Бережи себе! [126]",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_2",
+      "english": "ConcernedApe is hard at work...",
+      "translation": "ConcernedApe наполегливо працює...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Emote_Help",
+      "english": "{0} [emote id]: perform an emote (omit the argument for a list of emotes).",
+      "translation": "{0} [emote id]: виконує емоцію (без аргументу показує список емоцій).",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandDescription",
+      "english": " - {0}",
+      "translation": " - {0}",
+      "reviewed": true,
+      "preserveReason": "Technical command-list formatting preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandList",
+      "english": "Supported commands: {0}.",
+      "translation": "Підтримувані команди: {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_Intro",
+      "english": "Enter '/help commandName' for help with a specific command.",
+      "translation": "Введи «/help commandName», щоб отримати довідку про певну команду.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_MultiplayerCommandList",
+      "english": "Multiplayer commands: {0}.",
+      "translation": "Команди багатокористувацької гри: {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_NoSuchCommand",
+      "english": "No command found matching '{0}'.",
+      "translation": "Не знайдено команди, що відповідає «{0}».",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Kick_Help",
+      "english": "{0} [farmer name/user id]: disconnects the player.",
+      "translation": "{0} [farmer name/user id]: від’єднує гравця.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_List_Help",
+      "english": "{0}: list online players.",
+      "translation": "{0}: показує список гравців у мережі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_MapScreenshot_Help",
+      "english": "{0}: save a screenshot of the current location's full map.",
+      "translation": "{0}: зберігає знімок повної мапи поточного місця.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Message_Help",
+      "english": "{0} [farmer name]: sends a private message to a player.",
+      "translation": "{0} [farmer name]: надсилає гравцеві приватне повідомлення.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Pause_Help",
+      "english": "{0}: pause the game for all players.",
+      "translation": "{0}: призупиняє гру для всіх гравців.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_1",
+      "english": "Mr. Qi: Hey, kid. Yeah, I'm here. What'd you expect?",
+      "translation": "Пан Ці: Гей, малечо. Так, я тут. А чого було чекати?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_2",
+      "english": "Mr. Qi: Hey... keep up the good work, and never stop striving for success!      I'll see you soon, kid...",
+      "translation": "Пан Ці: Гей... Продовжуй у тому ж дусі й ніколи не припиняй прагнути успіху!      Скоро побачимося, малечо...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_3",
+      "english": "Mr. Qi is away",
+      "translation": "Пана Ці немає",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Help",
+      "english": "{0}: replies to a private message.",
+      "translation": "{0}: відповідає на приватне повідомлення.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Failed",
+      "english": "Could not send reply",
+      "translation": "Не вдалося надіслати відповідь",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_NoMessageFound",
+      "english": "No player to reply to",
+      "translation": "Немає гравця, якому можна відповісти",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Resume_Help",
+      "english": "{0}: resume a paused game.",
+      "translation": "{0}: продовжує призупинену гру.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_All",
+      "english": "All",
+      "translation": "Усі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_First",
+      "english": "First",
+      "translation": "Перший",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_Off",
+      "english": "Off",
+      "translation": "Вимкнено",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_Help",
+      "english": "{0} [farmer name/user id]: unbans the player from this farm.",
+      "translation": "{0} [farmer name/user id]: розблоковує гравця на цій фермі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_Done",
+      "english": "{0} was unbanned",
+      "translation": "{0} розблоковано",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_NoPlayersBanned",
+      "english": "No players are banned",
+      "translation": "Заблокованих гравців немає",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_PlayerList",
+      "english": "Banned Players:",
+      "translation": "Заблоковані гравці:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_PlayerNotFound",
+      "english": "Could not find a banned player with that name or id.",
+      "translation": "Не вдалося знайти заблокованого гравця з таким ім’ям або ідентифікатором.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnbanAll_Help",
+      "english": "{0}: unbans all players from this farm.",
+      "translation": "{0}: розблоковує всіх гравців на цій фермі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnbanAll_Done",
+      "english": "All banned players were unbanned",
+      "translation": "Усіх заблокованих гравців розблоковано",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnlinkPlayer_Help",
+      "english": "{0} [farmer name/user id]: let anyone claim this character when they connect.",
+      "translation": "{0} [farmer name/user id]: дозволяє будь-кому отримати цього персонажа після під’єднання.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "SocialPage_Relationship_MarriedToOtherPlayer_FemaleNpc",
+      "english": "(married)",
+      "translation": "(у шлюбі)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "SocialPage_Relationship_MarriedToOtherPlayer_MaleNpc",
+      "english": "(married)",
+      "translation": "(у шлюбі)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ReadyCheck",
+      "english": "Waiting for other players... ({0}/{1})",
+      "translation": "Очікування інших гравців... ({0}/{1})",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PendingProposal",
+      "english": "Waiting for the other player...",
+      "translation": "Очікування іншого гравця...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_Male",
+      "english": "Offer your {0} to {1}?",
+      "translation": "Запропонувати свій предмет «{0}» гравцеві {1}?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_Female",
+      "english": "Offer your {0} to {1}?",
+      "translation": "Запропонувати свій предмет «{0}» гравчині {1}?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_NoInventorySpace_Male",
+      "english": "{0} doesn't have space for this item.",
+      "translation": "У {0} немає місця для цього предмета.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_NoInventorySpace_Female",
+      "english": "{0} doesn't have space for this item.",
+      "translation": "У {0} немає місця для цього предмета.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Proposal_PlayerBusy_Male",
+      "english": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "{0} зараз не може відповісти на твій запит. Спробуй за мить.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Proposal_PlayerBusy_Female",
+      "english": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "{0} зараз не може відповісти на твій запит. Спробуй за мить.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Male",
+      "english": "{0} has asked you to dance with him. Will you dance with {0}?",
+      "translation": "{0} запросив тебе на танець. Потанцюєш із {0}?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Female",
+      "english": "{0} has asked you to dance with her. Will you dance with {0}?",
+      "translation": "{0} запросила тебе на танець. Потанцюєш із {0}?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Male",
+      "english": "{0} has asked you to marry him! Will you accept his offer of marriage?",
+      "translation": "{0} пропонує тобі одружитися з ним! Прийняти його пропозицію?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Female",
+      "english": "{0} has asked you to marry her! Will you accept her offer of marriage?",
+      "translation": "{0} пропонує тобі одружитися з нею! Прийняти її пропозицію?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Male",
+      "english": "{0} has asked you to have a baby with him! Do you want to have a baby?",
+      "translation": "{0} пропонує тобі завести з ним дитину! Хочеш дитину?",
+      "reviewed": true
+    }
+  ]
+}

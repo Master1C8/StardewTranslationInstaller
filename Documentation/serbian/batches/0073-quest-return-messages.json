@@ -1,0 +1,16 @@
+{
+  "id": "0073-quest-return-messages",
+  "locale": "sr",
+  "target": "Strings/Quests",
+  "glossarySha256": "717e409d631b59e1069713078c555dee4f7ee3f658bdbe1d620a066c87902fab",
+  "review": "source-meaning-terminology-Serbian-grammar-voice-context-tokens",
+  "smallBatchReason": "Complete two-record asset for dynamically named lost items and return-to-NPC objectives.",
+  "entries": {
+    "MessageFoundLostItem": "Пронашли сте предмет „{0}“. Вратите га особи по имену {1}.",
+    "ObjectiveReturnToNPC": "Вратите се до особе по имену {0}."
+  },
+  "contextNotes": {
+    "MessageFoundLostItem": "Original lost-item message identifies {0} as item display name and {1} as recipient. Item classifier and по имену keep arbitrary localized names uninflected; pronoun га agrees with предмет.",
+    "ObjectiveReturnToNPC": "The original objective specifies a dynamic NPC name. по имену preserves its nominative form without assuming gender or a declension."
+  }
+}

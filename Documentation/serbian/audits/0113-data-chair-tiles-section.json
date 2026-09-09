@@ -1,0 +1,34 @@
+{
+  "scope": "Data/ChairTiles",
+  "records": 60,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "Every record classified directly against English as non-visible tilesheet chair geometry, direction, furniture type, animation offset and draw-order metadata and preserved exactly.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_chair_tiles",
+  "schemaNegativeChecks": [
+    {
+      "case": "field-count",
+      "rejected": true,
+      "reason": "Chair tile field count changed"
+    },
+    {
+      "case": "direction",
+      "rejected": true,
+      "reason": "Invalid chair direction"
+    },
+    {
+      "case": "type",
+      "rejected": true,
+      "reason": "Invalid chair type"
+    },
+    {
+      "case": "changed",
+      "rejected": true,
+      "reason": "Chair tile technical record changed"
+    }
+  ],
+  "translationSha256": "1f7065f25f25870d81f25dad4e0a869163461bec5b40af3204a1d494ee1aefa3",
+  "finalLocaleCleanAudits": 0
+}

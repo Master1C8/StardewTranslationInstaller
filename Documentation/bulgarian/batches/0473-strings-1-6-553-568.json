@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0473-strings-1-6-553-568",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/1_6_Strings",
+  "status": "reviewed",
+  "entries": {
+    "MannequinFemale_Name": "Манекен (Ж)",
+    "CursedMannequinMale_Name": "Прокълнат манекен (М)",
+    "CursedMannequinDemale_Name": "Прокълнат манекен (Ж)",
+    "JunimoCatalogueDescription": "Колекция от мебели, пропити с енергията на джунимо.",
+    "RetroCatalogueDescription": "Колекция от уникални мебели от отминала епоха.",
+    "Renovation_AddDiningRoom": "Добави трапезария/Добавя голяма стая вляво от кухнята./Избери зона за преустройството.",
+    "Renovation_RemoveDiningRoom": "Премахни трапезарията/Премахва голямата стая вляво от кухнята./Избери зона за преустройството.",
+    "Renovation_AddCubby": "Добави ниша/Добавя малка ниша до входната врата./Избери зона за преустройството.",
+    "Renovation_RemoveCubby": "Премахни нишата/Премахва малката ниша до входната врата./Избери зона за преустройството.",
+    "Renovation_AddAttic": "Добави таванско помещение/Добавя допълнително стълбище и стая на горния етаж./Избери зона за преустройството.",
+    "Renovation_RemoveAttic": "Премахни таванското помещение/Премахва таванското помещение./Избери зона за преустройството.",
+    "Renovation_AddExtendedCornerRoom": "Разшири ъгловата стая/Разширява ъгловата стая, като добавя голяма нова площ./Избери зона за преустройството.",
+    "Renovation_RemoveExtendedCornerRoom": "Намали ъгловата стая/Премахва разширението на ъгловата стая и възстановява първоначалния ѝ размер./Избери зона за преустройството.",
+    "Renovation_OpenDiningRoom": "Отвори трапезарията/Премахва стената между трапезарията и кухнята./Избери зона за преустройството.",
+    "Renovation_CloseDiningRoom": "Затвори трапезарията/Възстановява стената между трапезарията и кухнята./Избери зона за преустройството.",
+    "Marnie_Pet_Adoption": "Тези сладурчета се нуждаят от добър дом..."
+  },
+  "sourceHashes": {
+    "MannequinFemale_Name": "c554592054e36b43351a9990ee865c8e558299f5a2bba7a5973e99f07994eddc",
+    "CursedMannequinMale_Name": "7ca168f210750c04e0e1a6f4d1cf6f9d95e6630b33a69499f90c2418d4bbbaf8",
+    "CursedMannequinDemale_Name": "cf64c68ec85fbc8c2efc5b641f356a58d8e7c4a157e953e8202a67eaf7fa76fb",
+    "JunimoCatalogueDescription": "a4048ffe0aaa6a785abecb8984f78e128235291f818a400847b936ec7b0a8550",
+    "RetroCatalogueDescription": "f4b362a9d782787354764556820e6dfdf656c754e8752eefd257f01b050b9ec7",
+    "Renovation_AddDiningRoom": "e950cac9f2357642ca0bd1ee0921fb2c9b270ee02f24043faeb4e63961ad6bf8",
+    "Renovation_RemoveDiningRoom": "ed74ae1a5f403d5bea5a62765018456e280db5d16ca080f203eab168e8a96001",
+    "Renovation_AddCubby": "317a6f0cab7c5d327ba5a9c991c44c886233e9f3b3aee93ef36b8966ea6a3bc0",
+    "Renovation_RemoveCubby": "0dff58b5c74f10fef0db1199946fdcbe2c8ce191bb105382db49e8df63470f27",
+    "Renovation_AddAttic": "e2bc8e5c5277be6561233bf733bd350a0ba03f65e2285b392cfc7e1c2183ce7e",
+    "Renovation_RemoveAttic": "123b3ad8cb8556cc60392f78bc37c070d4835ad91bc3c8825b5eb9f06fab336c",
+    "Renovation_AddExtendedCornerRoom": "3a1aaa2b9ced8bf11a53a890598f70dfe5fa42a5027e349a6ecac37098231a32",
+    "Renovation_RemoveExtendedCornerRoom": "1b82e4e7961cbb72da73212d5b1d9249449c335e512a28025f906f869d68a116",
+    "Renovation_OpenDiningRoom": "a25e68bcd509796d6277ddb142c72db242a2b5e306ab82a6e2cf0d9295fb164e",
+    "Renovation_CloseDiningRoom": "c2f37df8b63363917485874030f05884871472a9256eed06f3749fd098f2ffef",
+    "Marnie_Pet_Adoption": "c71906210d94b3213912dd0f2f4f703d50243b32b7b9a20e838fa55894caf7c2"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated the female and cursed mannequin names, Junimo and Retro catalogue descriptions, all ten dining-room, cubby, attic and corner-room renovation records, and Marnie’s adoption prompt directly from English.",
+      "Preserved each renovation’s three-field title, outcome and selection-prompt grammar, all slash delimiters and both mannequin body markers while applying established джунимо terminology.",
+      "Added and negatively exercised a dedicated renovation-field validator; read every add/remove and expand/shrink pair side by side and refined the attic addition for clear spatial meaning."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "46d700510ab47e74a5b0c2fa1027daab7db1ae09becef5d20ddcc9e86fc47f3a"
+  }
+}

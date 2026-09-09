@@ -1,0 +1,432 @@
+{
+  "id": "043-demetrius-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Demetrius dialogue entry. Character voice, scientific and family register, player-gender neutrality, relationship and world-state context, biological, chemical, mathematical, item and location references, dialogue commands, response identifiers, emotes, runtime tokens, and canonical glossary terms were checked against English. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "6a6705ecef02c85f7f46419ea111cc8f9cd490e67af429fa9a622924c8da406b",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 13
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Introduction",
+      "english": "Greetings! I'm Demetrius, local scientist and father. Thanks for introducing yourself!#$e#I'm studying the local plants and animals from my home laboratory.#$b#Have you met my daughter Maru? She's interested to meet you.",
+      "translation": "Вітаю! Я Деметріус, місцевий науковець і батько. Дякую за знайомство!#$e#У домашній лабораторії я досліджую місцеві рослини й тварин.#$b#Ти вже знаєш мою доньку Мару? Вона хоче з тобою познайомитися.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Wow, this is a rare substance. I'll have to take it to the lab for... uh... further analysis.",
+      "translation": "Овва, це рідкісна речовина. Треба віднести її до лабораторії для... е-е... подальшого аналізу.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "AcceptBirthdayGift_Positive",
+      "english": "A present!... with optimal timing. Today is the anniversary of my birth. Thank you!$h",
+      "translation": "Подарунок!.. І в оптимальний момент. Сьогодні річниця мого народження. Дякую!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "A present!... with optimal timing. Today is the anniversary of my birth.$h#$b#Let's see what it is... $h#$b#...Oh.$s",
+      "translation": "Подарунок!.. І в оптимальний момент. Сьогодні річниця мого народження.$h#$b#Погляньмо, що це... $h#$b#...О.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "AcceptGift_(O)107",
+      "english": "Wow, an intact dinosaur egg! This is an extremely rare specimen. Now, if only it could be incubated...",
+      "translation": "Овва, неушкоджене Яйце динозавра! Це надзвичайно рідкісний зразок. От якби його ще можна було інкубувати...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Resort_Entering",
+      "english": "I already spotted a rare crab. This place is great.$h",
+      "translation": "Я вже помітив рідкісного краба. Це місце чудове.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "GreenRain",
+      "english": "Don't mind me, @. I'm just collecting some samples. This may be a once-in-a-lifetime opportunity!$7#$e#Erm... If you see my wife, can you tell her I'm okay?$7",
+      "translation": "Не зважай на мене, @. Я просто збираю зразки. Така нагода може випасти лише раз у житті!$7#$e#Ем... Якщо побачиш мою дружину, скажеш їй, що зі мною все гаразд?$7",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "GreenRain_2",
+      "english": "The rain appears to be harmless, so I'm taking less precaution this year.",
+      "translation": "Схоже, дощ нешкідливий, тож цього року я вживаю менше запобіжних заходів.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "firstVisit_Desert",
+      "english": "I heard you visited Calico Desert recently. How fascinating! I'm sure you observed many unique life forms on your trip.",
+      "translation": "Я чув про твою недавню подорож до пустелі Каліко. Як захопливо! Певен, там вдалося побачити багато унікальних форм життя.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "questComplete_104_memory_oneday",
+      "english": "Checking up on the melon research? Yes, I... uh... 'analyzed' it, and it certainly has an optimal macronutrient profile...",
+      "translation": "Перевіряєш, як просувається дослідження дині? Так, я... е-е... «проаналізував» її, і вона безперечно має оптимальний склад макронутрієнтів...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "purchasedAnimal_Dinosaur",
+      "english": "Say that again!? You successfully incubated a dinosaur egg? This is unprecedented!$5#$e#Here, take my coffee, I'm all worked up now... I can't drink any more. [253]",
+      "translation": "Повтори!? Тобі вдалося успішно інкубувати Яйце динозавра? Це безпрецедентно!$5#$e#Ось, забирай мою каву, я тепер надто збуджений... Більше пити не можна. [253]",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "dating_Maru",
+      "english": "Yes, Maru told me the news. I can't say I'm thrilled about it, but maybe you'll prove me wrong.$u",
+      "translation": "Так, Мару розповіла мені новину. Не можу сказати, що я в захваті, але, можливо, ти доведеш, що я помиляюся.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "married_Maru",
+      "english": "*sigh*... @, I've come to accept that it's time for my 'little girl' to become a woman. You have my blessing.$s",
+      "translation": "*зітхання*... @, я змирився з тим, що моїй «маленькій дівчинці» час стати жінкою. Ти маєш моє благословення.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "married_Sebastian",
+      "english": "Congratulations on the marriage. Robin's been crying since the wedding. 'Tears of joy', as she calls it! A most peculiar concept...#$e#Hmm, now that the basement is unoccupied, I might have to expand the laboratory...$u",
+      "translation": "Вітаю зі шлюбом. Робін плаче ще від самого весілля. «Сльози радості», як вона це називає! Надзвичайно дивне поняття...#$e#Хм-м, тепер, коли підвал звільнився, мабуть, варто розширити лабораторію...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "eventSeen_65_memory_oneweek",
+      "english": "$y 'How's that cave experiment coming along? Has it produced anything of value yet?_Yes_Ah! That means the conditions must be more suitable than I originally theorized... hmm..._No_Well, keep checking on it every now and then. I'm sure those little guys will yield something eventually.'",
+      "translation": "$y 'Як просувається дослід у печері? Він уже дав щось цінне?_Yes_А! Отже, умови там, мабуть, сприятливіші, ніж я спершу припускав... хм-м..._No_Що ж, час від часу перевіряй її. Упевнений, зрештою ці малюки щось дадуть.'",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "eventSeen_65_memory_twoweeks",
+      "english": "Don't forget to check that farm cave! There's bound to be something useful in there by now.",
+      "translation": "Не забувай перевіряти Фермерську печеру! Там уже напевно з’явилося щось корисне.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Resort_Leaving",
+      "english": "I'll be analyzing this data for months.",
+      "translation": "Я аналізуватиму ці дані місяцями.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Resort_Shore",
+      "english": "*crunch*... whoops, there goes an endangered crab species...$s#$b#...#$b#Oh, never mind. It was just the empty shell! I can sleep tonight.",
+      "translation": "*хрусь*... Ой, щойно загинув представник виду крабів під загрозою вимирання...$s#$b#...#$b#О, ні, це була лише порожня мушля! Сьогодні я зможу заснути.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Resort_Chair",
+      "english": "Are you having fun, @? You need to remember to take breaks now and then too!",
+      "translation": "Весело проводиш час, @? Не забувай, що час від часу тобі теж треба відпочивати!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Resort_Bar",
+      "english": "I usually don't partake... but I'm usually not on a tropical island, either. Hahaha.$h",
+      "translation": "Зазвичай я не п’ю... але й на тропічному острові зазвичай не буваю. Ха-ха-ха.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Resort",
+      "english": "Can you believe this place? It's teeming with exotic life!",
+      "translation": "Можеш повірити, що таке місце існує? Тут аж кишить екзотичними формами життя!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "reject_869",
+      "english": "It's a good specimen, but a very common species. You can keep it.",
+      "translation": "Це добрий зразок, але вид дуже поширений. Можеш залишити його собі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "reject_865",
+      "english": "Fruit and salt? What an odd combination...$s",
+      "translation": "Фрукти й сіль? Яке дивне поєднання...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "pamHouseUpgradeAnonymous",
+      "english": "Robin won't even tell *me* who paid for Pam's new house!#$e#I pretend I'm mad at her but secretly I'm glad she's so loyal to her word...$h",
+      "translation": "Робін навіть *мені* не каже, хто заплатив за новий будинок Пем!#$e#Я вдаю, що серджуся на неї, але потай радію, що вона так твердо тримає слово...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Mon",
+      "english": "Maru helps me out in the lab sometimes... She's a good kid.",
+      "translation": "Мару іноді допомагає мені в лабораторії... Вона хороша дитина.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Mon_inlaw_Maru",
+      "english": "It's hard to do good science without Maru's help...#$b#But her happiness is much more important than my experiment!",
+      "translation": "Без допомоги Мару важко проводити якісні дослідження...#$b#Але її щастя набагато важливіше за мій експеримент!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Tue",
+      "english": "This valley has a very vibrant and diverse ecosystem. That's one reason I was excited to move here.",
+      "translation": "У цій долині дуже жвава й різноманітна екосистема. Це одна з причин, чому я так хотів сюди переїхати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Wed",
+      "english": "You're probably growing a lot of interesting plants on your farm, huh?#$e#Maybe I'll stop by your place some day and check it out.",
+      "translation": "На твоїй фермі, мабуть, росте багато цікавих рослин, еге ж?#$e#Може, якось завітаю й огляну їх.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Thu",
+      "english": "How's the farming business going? It's parsnip season, isn't it?#$e#I can imagine it being pretty peaceful, working outdoors with plants all day.",
+      "translation": "Як ідуть фермерські справи? Зараз сезон пастернаку, правда?#$e#Уявляю, як спокійно працювати цілий день надворі з рослинами.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Fri",
+      "english": "Robin has a hot temper. It's better to stay on her good side.#$e#Don't tell her I said that.$h",
+      "translation": "Робін має запальний характер. Краще не потрапляти їй під гарячу руку.#$e#Тільки не кажи їй, що я це сказав.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Sat",
+      "english": "Let's see... If compounds in the rhizosphere contain sufficient levels of Carbon-13, then...$u#$b#Oh! Sorry. I was pondering some data and I didn't notice you there.#$e#Do you need anything?",
+      "translation": "Погляньмо... Якщо сполуки в ризосфері містять достатню концентрацію вуглецю-13, тоді...$u#$b#О! Вибач. Я розмірковував над даними й не помітив тебе.#$e#Тобі щось потрібно?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Sun",
+      "english": "It's good to take a break from work every now and then.#$e#I guess that's kind of difficult when you live on a farm, though.#$e#Hey, at least in the winter you don't have to worry about crops.",
+      "translation": "Час від часу корисно відпочивати від роботи.#$e#Щоправда, коли живеш на фермі, це, мабуть, доволі складно.#$e#Зате взимку принаймні не треба турбуватися про культури.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Fri4",
+      "english": "Robin has a hot temper. It's better to stay on her good side.#$e#...now if I could only quantify her mood levels, perhaps I could model the fluctuations using a sinusoidal curve...$u",
+      "translation": "Робін має запальний характер. Краще не потрапляти їй під гарячу руку.#$e#...От якби ще кількісно виміряти рівень її настрою, можливо, коливання вдалося б змоделювати синусоїдою...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Wed6",
+      "english": "Hi @! How are you doing today?#$e#I wish I could make your farming job easier somehow.",
+      "translation": "Привіт, @! Як твої справи сьогодні?#$e#Хотілося б якось полегшити твою фермерську працю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Event_tomato1",
+      "english": "Really? I figured a farmer would know the correct answer...$s",
+      "translation": "Справді? Я гадав, людина з фермерським досвідом знатиме правильну відповідь...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Event_tomato2",
+      "english": "See? @ agrees with me.",
+      "translation": "Бачиш? @ погоджується зі мною.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Event_Lab_Silence",
+      "english": "Well, we'd better titrate this solution before it crystallizes on us.",
+      "translation": "Що ж, треба титрувати цей розчин, доки він не закристалізувався.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "Event_Lab_Rat",
+      "english": "*sigh*... %fork$4",
+      "translation": "*зітхання*... %fork$4",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "summer_Mon",
+      "english": "#$e#%Demetrius is deep in thought.#$e#Sorry, I'm really busy.#$e#There's so many plants to study right now.",
+      "translation": "#$e#%Деметріус глибоко задумався.#$e#Вибач, я дуже зайнятий.#$e#Зараз стільки рослин для дослідження.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "summer_Tue",
+      "english": "Make sure to water your plants every day.#$e#Although, if you're using water retaining soil you don't need to worry about watering as often.#$e#It's pretty convenient.",
+      "translation": "Не забувай поливати рослини щодня.#$e#Хоча якщо використовуєш водозатримувальний ґрунт, можна поливати рідше.#$e#Це доволі зручно.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "summer_Thu",
+      "english": "How's the farming business going? It's tomato season, isn't it?#$e#I can imagine it being pretty peaceful, working outdoors with plants all day.",
+      "translation": "Як ідуть фермерські справи? Зараз сезон помідорів, правда?#$e#Уявляю, як спокійно працювати цілий день надворі з рослинами.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "summer_Fri",
+      "english": "$p 40#So I heard Maru had you look through that telescope out back.|If you and Maru become friends, I'm sure she'll show you how to use that telescope out back.#$e#Pretty exciting, huh?",
+      "translation": "$p 40#Я чув, Мару дозволила тобі поглянути в телескоп позаду будинку.|Якщо ви з Мару подружитеся, вона неодмінно покаже, як користуватися телескопом позаду будинку.#$e#Доволі захопливо, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "summer_Fri_inlaw_Maru",
+      "english": "I hope my daughter's keeping up on her math and science!",
+      "translation": "Сподіваюся, моя донька не занедбує математику й природничі науки!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "summer_Sat",
+      "english": "Hmm... If strigolactone levels could be increased, would it have a proportional effect on mycorrhizal growth?$u#$b#Oh! Sorry. I was pondering some data and I didn't notice you there.#$e#Do you need anything?",
+      "translation": "Хм-м... Якщо підвищити рівень стриголактону, чи матиме це пропорційний вплив на ріст мікоризи?$u#$b#О! Вибач. Я розмірковував над даними й не помітив тебе.#$e#Тобі щось потрібно?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "summer_Mon6",
+      "english": "I became a scientist because I wanted to contribute to the progression of our species.#$e#Of course, none of this would be possible without farmers such as yourself.$h",
+      "translation": "Я став науковцем, бо хотів сприяти розвитку нашого виду.#$e#Звісно, нічого цього не було б можливо без таких фермерів, як ти.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "fall_Mon",
+      "english": "During this time of year I divert my attentions to fungi.",
+      "translation": "У цю пору року я спрямовую увагу на гриби.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "fall_Tue",
+      "english": "We know a lot about nature thanks to science.#$e#But there's always a lot more to learn.",
+      "translation": "Завдяки науці ми багато знаємо про природу.#$e#Але завжди залишається ще безліч незвіданого.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "fall_Thu",
+      "english": "How's the farming business going? It's corn season, isn't it?#$e#I can imagine it being pretty peaceful, working outdoors with plants all day.",
+      "translation": "Як ідуть фермерські справи? Зараз сезон кукурудзи, правда?#$e#Уявляю, як спокійно працювати цілий день надворі з рослинами.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "fall_Fri",
+      "english": "Maru sure spends a lot of time working on those gadgets of hers.#$e#I'm glad she's so dedicated.",
+      "translation": "Мару й справді проводить багато часу, працюючи над своїми пристроями.#$e#Я радий, що вона така віддана справі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "fall_Fri_inlaw_Maru",
+      "english": "I'm still flabbergasted about Maru's secret robot... was it all a dream?",
+      "translation": "Я досі приголомшений таємним роботом Мару... Невже це був лише сон?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "fall_Sat",
+      "english": "Let's see... perhaps the nitrogen fixation level is affected by nematode secretions...$u#$b#Oh! Sorry. I was pondering some data and I didn't notice you there.#$e#Do you need anything?",
+      "translation": "Погляньмо... Можливо, на рівень фіксації азоту впливають виділення нематод...$u#$b#О! Вибач. Я розмірковував над даними й не помітив тебе.#$e#Тобі щось потрібно?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "fall_Wed6",
+      "english": "Hi @. I'm always glad when you come for a visit.#$e#It's nice to have some company after all this lonely lab-work.",
+      "translation": "Привіт, @. Я завжди радий твоїм візитам.#$e#Після самотньої роботи в лабораторії приємно мати товариство.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Mon",
+      "english": "I'm taking a break from my research right now.",
+      "translation": "Зараз я відпочиваю від досліджень.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Tue",
+      "english": "Talk to my wife if you want to increase the size of your house.",
+      "translation": "Якщо хочеш збільшити свій будинок, поговори з моєю дружиною.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Wed",
+      "english": "Do you have a kitchen in your house yet?#$e#Cooking is kind of like doing lab work.",
+      "translation": "У твоєму будинку вже є кухня?#$e#Готувати — це трохи як працювати в лабораторії.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Thu",
+      "english": "Do you have any animals on your farm?",
+      "translation": "На твоїй фермі є тварини?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Fri",
+      "english": "Hello.#$e#%Demetrius seems lost in thought.",
+      "translation": "Вітаю.#$e#%Деметріус, схоже, заглибився в думки.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Sat",
+      "english": "Let's see... if seasonal nitrogen levels could be modeled by a piecewise function...$u#$b#Oh! Sorry. I was analyzing data and I didn't notice you there.#$e#Do you need anything?",
+      "translation": "Погляньмо... Якби сезонні рівні азоту можна було змоделювати кусково-заданою функцією...$u#$b#О! Вибач. Я аналізував дані й не помітив тебе.#$e#Тобі щось потрібно?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Sun",
+      "english": "Feel free to harvest as much lumber and stone from this area as you please.",
+      "translation": "Можеш заготовляти в цій місцевості скільки завгодно деревини й каменю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Demetrius",
+      "key": "winter_Fri4",
+      "english": "Thanks for stopping by. I need to think about something other than legumes for a while.#$e#So, what have you been doing lately?#$e#That sounds interesting.",
+      "translation": "Дякую за візит. Мені треба трохи подумати про щось інше, крім бобових.#$e#Отже, що нового останнім часом?#$e#Звучить цікаво.",
+      "reviewed": true
+    }
+  ]
+}

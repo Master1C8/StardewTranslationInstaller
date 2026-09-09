@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Trailer",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "36/f Penny 1500/p Penny": "musicboxsong/9 7/farmer -30 30 0 Penny 9 7 0/skippable/pause 1000/playSound doorClose/warp farmer 12 9/pause 400/faceDirection Penny 2/pause 300/speak Penny \"@, идваш точно навреме!#$b#Почти приключих с една нова рецепта, която измислих!$h\"/pause 400/move farmer 0 -2 3/faceDirection Penny 1/move farmer -2 0 3/speak Penny \"Само да я довърша набързо.\"/pause 200/faceDirection Penny 0/pause 200/animate Penny false true 120 29 30/playSound crafting/pause 320/playSound crafting/pause 320/playSound crafting/pause 320/playSound crafting/pause 320/stopAnimation Penny/pause 500/playSound openBox/showFrame Penny 29/pause 400/playSound furnace/showFrame Penny 30/pause 1500/playSound clank/faceDirection Penny 0/pause 500/faceDirection Penny 1 true/showFrame Penny 28/speak Penny \"Ето, опитай малко.\"/pause 800/faceDirection farmer 2/farmerEat 200/showFrame Penny 4/pause 2500/stopAnimation farmer/pause 500/playSound gulp/animate farmer false true 350 104 105/pause 500/specificTemporarySprite pennyCook/pause 1500/faceDirection farmer 2/pause 500/speak Penny \"$q 72 null#...как е?#$r 72 50 event_cook1#(Излъжи) Ммм! Беше вкусно!#$r 73 -50 event_cook2#Ъъ... може ли да взема останалото за вкъщи?#$r 73 0 event_cook3#Е, определено е необичайно... как го направи толкова гумено?\"/pause 500/speak Penny \"$p 72#Хей, понеже никой друг още не го е опитвал, ще го нарека „Чили де @“.$h|Е, май тази рецепта се оказа провал...$s\"/stopAnimation farmer/faceDirection farmer 3/pause 600/speak Penny \"Ъм... искаш ли да гледаме филм или нещо друго?\"/pause 500/move farmer 5 0 0 true/move Penny 5 0 0 true/globalFade/viewport -1000 -1000/end dialogue Penny \"Благодаря за помощта с дегустацията.$h\""
+      }
+    }
+  ]
+}

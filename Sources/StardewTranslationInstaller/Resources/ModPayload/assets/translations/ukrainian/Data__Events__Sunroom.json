@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Sunroom",
+      "When": {
+        "Language": "uk-vnrevival"
+      },
+      "Entries": {
+        "719926/t 900 1700/w sunny": "spring_day_ambient/-885 8/farmer -500 -500 0 Caroline 5 7 1/mail CarolineTea/skippable/specificTemporarySprite sunroom/viewport 5 8 true/pause 1000/showFrame Caroline 22/doAction 6 7/pause 500/doAction 6 7/pause 1000/showFrame Caroline 4/pause 500/warp farmer 5 13/playSound doorClose/move farmer 0 -4 0/faceDirection Caroline 2/pause 100/speak Caroline \"О, привіт! Доброго ранку, @. Я рада, що ти тут...#$b#Я давно хотіла показати тобі це місце... Це моя особиста сонячна кімната.\"/pause 500/pause 500/speak Caroline \"То як тобі?\"/pause 500/quickQuestion #Тут чудово!#Тут дуже затишно.#Тут надто спекотно...#Не так гарно, як на моїй фермі!(break)pause 100\\speak Caroline \"Дякую! Я доклала багато зусиль, щоб зробити її такою...$h\"(break)pause 100\\speak Caroline \"Так... Щойно я сюди заходжу, то одразу відчуваю спокій і розслаблення. Це справді цілюще!\"(break)pause 100\\speak Caroline \"О? А мене це тепло заспокоює.$s#$b#Якщо не рухатися, стає приємніше.\"(break)emote Caroline 16\\pause 100\\speak Caroline \"О, але ж ти професійно цим займаєшся... Для мене це лише захоплення.\"/pause 500/faceDirection Caroline 1/speak Caroline \"Розумієш, це мій прихисток... місце, де я завжди можу знайти спокій...\"/pause 300/faceDirection Caroline 2/speak Caroline \"І це ідеальне місце, щоб випити власноруч вирощеного чаю! Нумо вип’ємо по чашечці...\"/pause 300/playSound coin/showFrame Caroline 20/pause 1000/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound gulp/pause 1000/quickQuestion Випити чашечку?#Так#Ні(break)farmerEat 614\\pause 1000(break)pause 100\\speak Caroline \"Звісно, без проблем...\"/pause 500/faceDirection farmer 0/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/textAboveHead Caroline \"Смакота\"/playMusic SunRoom/pause 1500/speak Caroline \"Я люблю щодня приходити сюди за чашкою свіжого чаю.#$b#Це мій маленький ритуал... #$b#Е-е... Спробую пояснити...$h\"/fade/viewport -1000 -1000/pause 1000/cutscene greenTea/pause 1000/viewport 5 8 true/pause 1000/speak Caroline \"Сподіваюся, це має сенс... #$b#Життя буває доволі метушливим, тож добре мати таке захоплення.\"/pause 150/showFrame Caroline 0/pause 200/speak Caroline \"Заходь сюди відпочити, коли захочеш, гаразд?\"/emote farmer 32/pause 1000/move farmer 0 4 2 true/fade/viewport -5000 1000/pause 1000/end warpOut"
+      }
+    }
+  ]
+}

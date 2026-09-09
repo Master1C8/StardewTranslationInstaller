@@ -1,0 +1,122 @@
+{
+  "locale": "ro",
+  "target": "Data/Festivals/winter25",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "The festival identity, unchanged runtime setup and gift cutscene, spouse conversations, and first villagers were translated directly from English. Two full editorial audits cover runtime keys, character voice, canonical festival and season terms, natural Romanian, and exact controls; both found no remaining objective issue.",
+  "entries": {
+    "name": {
+      "source": "Feast of the Winter Star",
+      "translation": "Ospățul Stelei Iernii"
+    },
+    "conditions": {
+      "source": "Town/900 1400",
+      "translation": "Town/900 1400",
+      "preservationReason": "Festival location and opening hours are runtime configuration."
+    },
+    "set-up": {
+      "source": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+      "translation": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+      "preservationReason": "Festival temporary map, actors, and player-control setup are runtime commands."
+    },
+    "secretSanta": {
+      "source": "none/-1000 -1000/farmer 30 69 0/warp Emily 37 59/warp Haley 35 74/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 300/faceDirection farmer 0/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Emily 29 72/warp Haley 30 72/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "translation": "none/-1000 -1000/farmer 30 69 0/warp Emily 37 59/warp Haley 35 74/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 300/faceDirection farmer 0/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Emily 29 72/warp Haley 30 72/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "preservationReason": "The gift cutscene contains runtime commands and dialogue lookup keys, with no embedded player-visible English text.",
+      "eventReview": {
+        "commands": "exactly-preserved",
+        "visibleTextSegments": 2
+      }
+    },
+    "Abigail_spouse": {
+      "source": "I wonder if I could lick one of those canes...",
+      "translation": "Mă întreb dacă aș putea linge unul dintre bastoanele acelea de zahăr..."
+    },
+    "Leah_spouse": {
+      "source": "I'm thankful for our simple life on the farm.$h",
+      "translation": "Sunt recunoscătoare pentru viața noastră simplă la fermă.$h"
+    },
+    "Maru_spouse": {
+      "source": "Hey, @. I'm ready to head home whenever you are.",
+      "translation": "Hei, @. Sunt gata să mergem acasă când vrei tu."
+    },
+    "Penny_spouse": {
+      "source": "I'm thankful to have met you...$l",
+      "translation": "Sunt recunoscătoare că te-am întâlnit...$l"
+    },
+    "Haley_spouse": {
+      "source": "Me?... Oh, I'm thankful for... how about I just show you when we get home tonight?$l",
+      "translation": "Eu?... Oh, sunt recunoscătoare pentru... ce-ar fi să-ți arăt pur și simplu când ajungem acasă în seara asta?$l"
+    },
+    "Sebastian_spouse": {
+      "source": "Hey, @. As you can see, I'm fulfilling my family obligations...",
+      "translation": "Hei, @. După cum vezi, îmi îndeplinesc obligațiile față de familie..."
+    },
+    "Sam_spouse": {
+      "source": "*yawn*... I'm here for the gifts and the cookies.$h",
+      "translation": "*cască*... Sunt aici pentru cadouri și fursecuri.$h"
+    },
+    "Alex_spouse": {
+      "source": "What am I thankful for? I'll show you when we get back home...$l",
+      "translation": "Pentru ce sunt recunoscător? Îți arăt când ne întoarcem acasă...$l"
+    },
+    "Harvey_spouse": {
+      "source": "I'm feeling a little overwhelmed... thank goodness for this crisp air...$l",
+      "translation": "Mă simt puțin copleșit... noroc cu aerul acesta rece și proaspăt...$l"
+    },
+    "Elliott_spouse": {
+      "source": "You don't need to get me anything, you've already given me the greatest gift of all...$l",
+      "translation": "Nu trebuie să-mi iei nimic. Mi-ai oferit deja darul cel mai de preț dintre toate...$l"
+    },
+    "Abigail": {
+      "source": "Nothing like a piping hot feast on a cold winter's day, huh?$h",
+      "translation": "Nimic nu se compară cu un ospăț aburind într-o zi rece de Iarnă, nu-i așa?$h"
+    },
+    "Robin": {
+      "source": "Hiya, @. You're welcome to join our family table if you need company.$h",
+      "translation": "Salutare, @. Poți lua loc la masa familiei noastre dacă vrei companie.$h"
+    },
+    "Demetrius": {
+      "source": "I'll probably get another tool set this year... *sigh*",
+      "translation": "Probabil că voi primi iar o trusă de unelte anul acesta... *oftează*"
+    },
+    "Maru": {
+      "source": "Hi, @.$h",
+      "translation": "Salut, @.$h"
+    },
+    "Shane": {
+      "source": "I've met some people who believe in spirits, and magic... but me? I've never seen anything that couldn't be explained by science.",
+      "translation": "Am întâlnit oameni care cred în spirite și magie... dar eu? N-am văzut niciodată nimic care să nu poată fi explicat de știință."
+    },
+    "Sebastian": {
+      "source": "Spending time with family is tiring sometimes.",
+      "translation": "Uneori este obositor să petreci timp cu familia."
+    },
+    "Pierre": {
+      "source": "My sales figures have been phenomenal lately... thanks to the Feast of the Winter Star!$h#$e#Boy, holidays are good for business. I wonder if I could invent some new ones...",
+      "translation": "În ultima vreme, cifrele mele de vânzări au fost fenomenale... mulțumită Ospățului Stelei Iernii!$h#$e#Ei, sărbătorile fac bine afacerilor. Mă întreb dacă aș putea inventa unele noi..."
+    },
+    "Caroline": {
+      "source": "Ooohh... I've had too much nog.$h",
+      "translation": "Ooo... Am băut prea mult lichior de ouă.$h"
+    },
+    "Linus": {
+      "source": "I'd join in... but I don't think I'm welcome.$s",
+      "translation": "M-aș alătura și eu... dar nu cred că sunt binevenit.$s"
+    },
+    "Alex": {
+      "source": "Oh, hello.$s",
+      "translation": "Oh, salut.$s"
+    },
+    "George": {
+      "source": "A feast for some stupid star? Humbug!",
+      "translation": "Un ospăț pentru o stea stupidă? Prostii!"
+    }
+  }
+}

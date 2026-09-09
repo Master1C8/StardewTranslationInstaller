@@ -1,0 +1,335 @@
+{
+  "locale": "ro",
+  "target": "Strings/UI",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Reviewed all source pairs for proposal actor gender, relationship intent, 3-day ceremony and 14-day child arrival, caret and repeated placeholders. Explicit Male/Female contexts use appropriate pronouns; common clauses are gender-neutral. Gift categories follow the reviewed preference glossary. Fruit tree name kept as parenthetical name to avoid inflection guesses. Command names remain dynamic and argument descriptions are visible help text.",
+  "entries": {
+    "ChatCommands_Unban_Done": {
+      "source": "{0} was unbanned",
+      "translation": "Accesul a fost restabilit pentru {0}"
+    },
+    "ChatCommands_Unban_NoPlayersBanned": {
+      "source": "No players are banned",
+      "translation": "Nu există jucători cu accesul interzis"
+    },
+    "ChatCommands_Unban_PlayerList": {
+      "source": "Banned Players:",
+      "translation": "Jucători cu accesul interzis:"
+    },
+    "ChatCommands_Unban_PlayerNotFound": {
+      "source": "Could not find a banned player with that name or id.",
+      "translation": "Nu s-a găsit niciun jucător cu accesul interzis care să aibă acest nume sau ID."
+    },
+    "ChatCommands_UnbanAll_Help": {
+      "source": "{0}: unbans all players from this farm.",
+      "translation": "{0}: le redă tuturor jucătorilor accesul la această fermă."
+    },
+    "ChatCommands_UnbanAll_Done": {
+      "source": "All banned players were unbanned",
+      "translation": "Toți jucătorii cu accesul interzis au primit din nou acces"
+    },
+    "ChatCommands_UnlinkPlayer_Help": {
+      "source": "{0} [farmer name/user id]: let anyone claim this character when they connect.",
+      "translation": "{0} [nume fermier/ID utilizator]: permite oricui să preia acest personaj la conectare."
+    },
+    "SocialPage_Relationship_MarriedToOtherPlayer_FemaleNpc": {
+      "source": "(married)",
+      "translation": "(căsătorită)"
+    },
+    "SocialPage_Relationship_MarriedToOtherPlayer_MaleNpc": {
+      "source": "(married)",
+      "translation": "(căsătorit)"
+    },
+    "ReadyCheck": {
+      "source": "Waiting for other players... ({0}/{1})",
+      "translation": "Se așteaptă ceilalți jucători... ({0}/{1})"
+    },
+    "PendingProposal": {
+      "source": "Waiting for the other player...",
+      "translation": "Se așteaptă celălalt jucător..."
+    },
+    "GiftPlayerItem_Male": {
+      "source": "Offer your {0} to {1}?",
+      "translation": "Oferi obiectul {0} jucătorului {1}?"
+    },
+    "GiftPlayerItem_Female": {
+      "source": "Offer your {0} to {1}?",
+      "translation": "Oferi obiectul {0} jucătoarei {1}?"
+    },
+    "GiftPlayerItem_NoInventorySpace_Male": {
+      "source": "{0} doesn't have space for this item.",
+      "translation": "{0} nu are loc pentru acest obiect."
+    },
+    "GiftPlayerItem_NoInventorySpace_Female": {
+      "source": "{0} doesn't have space for this item.",
+      "translation": "{0} nu are loc pentru acest obiect."
+    },
+    "Proposal_PlayerBusy_Male": {
+      "source": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "{0} nu poate răspunde cererii tale acum. Încearcă din nou peste o clipă."
+    },
+    "Proposal_PlayerBusy_Female": {
+      "source": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "{0} nu poate răspunde cererii tale acum. Încearcă din nou peste o clipă."
+    },
+    "AskedToDance_Male": {
+      "source": "{0} has asked you to dance with him. Will you dance with {0}?",
+      "translation": "{0} te-a invitat să dansezi cu el. Vei dansa cu {0}?"
+    },
+    "AskedToDance_Female": {
+      "source": "{0} has asked you to dance with her. Will you dance with {0}?",
+      "translation": "{0} te-a invitat să dansezi cu ea. Vei dansa cu {0}?"
+    },
+    "AskedToMarry_Male": {
+      "source": "{0} has asked you to marry him! Will you accept his offer of marriage?",
+      "translation": "{0} te-a cerut în căsătorie! Îi accepți cererea?"
+    },
+    "AskedToMarry_Female": {
+      "source": "{0} has asked you to marry her! Will you accept her offer of marriage?",
+      "translation": "{0} te-a cerut în căsătorie! Îi accepți cererea?"
+    },
+    "AskedToHaveBaby_Male": {
+      "source": "{0} has asked you to have a baby with him! Do you want to have a baby?",
+      "translation": "{0} te-a întrebat dacă vrei să aveți un copil împreună! Îți dorești un copil?"
+    },
+    "AskedToHaveBaby_Female": {
+      "source": "{0} has asked you to have a baby with her! Do you want to have a baby?",
+      "translation": "{0} te-a întrebat dacă vrei să aveți un copil împreună! Îți dorești un copil?"
+    },
+    "AskedToAdoptBaby_Male": {
+      "source": "{0} has asked you to adopt a baby with him! Do you want to have a baby?",
+      "translation": "{0} te-a întrebat dacă vrei să adoptați un copil împreună! Vrei să adopți un copil?"
+    },
+    "AskedToAdoptBaby_Female": {
+      "source": "{0} has asked you to adopt a baby with her! Do you want to have a baby?",
+      "translation": "{0} te-a întrebat dacă vrei să adoptați un copil împreună! Vrei să adopți un copil?"
+    },
+    "AskedToDance_Accepted_Male": {
+      "source": "{0} accepted your offer to dance!",
+      "translation": "{0} ți-a acceptat invitația la dans!"
+    },
+    "AskedToDance_Accepted_Female": {
+      "source": "{0} accepted your offer to dance!",
+      "translation": "{0} ți-a acceptat invitația la dans!"
+    },
+    "AskedToMarry_Accepted_Male": {
+      "source": "{0} accepted your offer of marriage!^The ceremony will take place in 3 days.",
+      "translation": "{0} ți-a acceptat cererea în căsătorie!^Ceremonia va avea loc peste 3 zile."
+    },
+    "AskedToMarry_Accepted_Female": {
+      "source": "{0} accepted your offer of marriage!^The ceremony will take place in 3 days.",
+      "translation": "{0} ți-a acceptat cererea în căsătorie!^Ceremonia va avea loc peste 3 zile."
+    },
+    "AskedToHaveBaby_Accepted_Male": {
+      "source": "{0} agreed to have a baby with you! It's due in 14 days.",
+      "translation": "{0} a fost de acord să aveți un copil împreună! Copilul se va naște peste 14 zile."
+    },
+    "AskedToHaveBaby_Accepted_Female": {
+      "source": "{0} agreed to have a baby with you! It's due in 14 days.",
+      "translation": "{0} a fost de acord să aveți un copil împreună! Copilul se va naște peste 14 zile."
+    },
+    "AskedToHaveBaby_Rejected_Male": {
+      "source": "{0} has decided he'd rather not have a baby at this point.",
+      "translation": "{0} a hotărât că preferă să nu aibă un copil deocamdată."
+    },
+    "AskedToHaveBaby_Rejected_Female": {
+      "source": "{0} has decided she'd rather not have a baby at this point.",
+      "translation": "{0} a hotărât că preferă să nu aibă un copil deocamdată."
+    },
+    "AskedToAdoptBaby_Accepted_Male": {
+      "source": "{0} agreed to adopt a baby with you! The paperwork has all been filed. The baby is due to arrive in 14 days.",
+      "translation": "{0} a fost de acord să adoptați un copil împreună! Toate actele au fost depuse. Copilul va sosi peste 14 zile."
+    },
+    "AskedToAdoptBaby_Accepted_Female": {
+      "source": "{0} agreed to adopt a baby with you! The paperwork has all been filed. The baby is due to arrive in 14 days.",
+      "translation": "{0} a fost de acord să adoptați un copil împreună! Toate actele au fost depuse. Copilul va sosi peste 14 zile."
+    },
+    "AskedToAdoptBaby_Rejected_Male": {
+      "source": "{0} has decided he'd rather not adopt a baby at the moment.",
+      "translation": "{0} a hotărât că preferă să nu adopte un copil deocamdată."
+    },
+    "AskedToAdoptBaby_Rejected_Female": {
+      "source": "{0} has decided she'd rather not adopt a baby at the moment.",
+      "translation": "{0} a hotărât că preferă să nu adopte un copil deocamdată."
+    },
+    "AskedToMarry_NotSingle_Male": {
+      "source": "{0} is not single!",
+      "translation": "{0} are deja pe cineva!"
+    },
+    "AskedToMarry_NotSingle_Female": {
+      "source": "{0} is not single!",
+      "translation": "{0} are deja pe cineva!"
+    },
+    "AskedToDance_Rejected_Male": {
+      "source": "{0} refused your offer to dance.",
+      "translation": "{0} ți-a refuzat invitația la dans."
+    },
+    "AskedToDance_Rejected_Female": {
+      "source": "{0} refused your offer to dance.",
+      "translation": "{0} ți-a refuzat invitația la dans."
+    },
+    "AskedToMarry_Rejected_Male": {
+      "source": "{0} turned down your offer of marriage.",
+      "translation": "{0} ți-a refuzat cererea în căsătorie."
+    },
+    "AskedToMarry_Rejected_Female": {
+      "source": "{0} turned down your offer of marriage.",
+      "translation": "{0} ți-a refuzat cererea în căsătorie."
+    },
+    "GivenGift_Male": {
+      "source": "{0} is offering you his {1}. Will you accept it?",
+      "translation": "{0} îți oferă un obiect de-al lui: {1}. Îl accepți?"
+    },
+    "GivenGift_Female": {
+      "source": "{0} is offering you her {1}. Will you accept it?",
+      "translation": "{0} îți oferă un obiect de-al ei: {1}. Îl accepți?"
+    },
+    "AskToDance_Male": {
+      "source": "Ask {0} to dance with you?",
+      "translation": "Îl inviți pe {0} să danseze cu tine?"
+    },
+    "AskToDance_Female": {
+      "source": "Ask {0} to dance with you?",
+      "translation": "O inviți pe {0} să danseze cu tine?"
+    },
+    "AskToMarry_Male": {
+      "source": "Ask {0} to marry you?",
+      "translation": "Îl ceri pe {0} în căsătorie?"
+    },
+    "AskToMarry_Female": {
+      "source": "Ask {0} to marry you?",
+      "translation": "O ceri pe {0} în căsătorie?"
+    },
+    "PlayerWeddingArranged": {
+      "source": "The ceremony will take place in 3 days.",
+      "translation": "Ceremonia va avea loc peste 3 zile."
+    },
+    "Server_InviteCode": {
+      "source": "Invite code: {0}",
+      "translation": "Cod de invitație: {0}"
+    },
+    "Server_InviteCode_Copied": {
+      "source": "Copied to clipboard",
+      "translation": "Copiat în clipboard"
+    },
+    "Server_InviteCode_CopyFailed": {
+      "source": "Unable to copy to clipboard",
+      "translation": "Nu se poate copia în clipboard"
+    },
+    "ProposalWithdrawn": {
+      "source": "{0} canceled the request.",
+      "translation": "{0} a anulat cererea."
+    },
+    "PendingProposal_Canceling": {
+      "source": "Canceling request...",
+      "translation": "Se anulează cererea..."
+    },
+    "CoopMenu_InternetCommunication": {
+      "source": "Online Communication",
+      "translation": "Comunicare online"
+    },
+    "CoopMenu_LocalCommunication": {
+      "source": "Local Communication",
+      "translation": "Comunicare locală"
+    },
+    "TrashCanSale": {
+      "source": "Reclaim",
+      "translation": "Recuperezi"
+    },
+    "ItemList_ItemsLost": {
+      "source": "Items Lost:",
+      "translation": "Obiecte pierdute:"
+    },
+    "ItemList_ItemsLostValue": {
+      "source": "Total Value: {0}g",
+      "translation": "Valoare totală: {0}g"
+    },
+    "Collections_Letters": {
+      "source": "Letters",
+      "translation": "Scrisori"
+    },
+    "FruitTree_Warning": {
+      "source": "Your {0} tree wasn't able to grow last night.",
+      "translation": "Pomul tău ({0}) nu a putut crește noaptea trecută."
+    },
+    "Workbench_Chest_Warning": {
+      "source": "One of the chests near the workbench is in use.",
+      "translation": "Unul dintre cuferele de lângă bancul de lucru este folosit."
+    },
+    "Profile_GiftLog": {
+      "source": "Gift Log",
+      "translation": "Jurnal de cadouri"
+    },
+    "Profile_GiftLog_NoGiftsGiven": {
+      "source": "You haven't given any gifts of this kind.",
+      "translation": "Nu ai oferit niciun cadou de acest fel."
+    },
+    "Profile_Status": {
+      "source": "Status",
+      "translation": "Stare"
+    },
+    "Profile_Birthday": {
+      "source": "Birthday",
+      "translation": "Zi de naștere"
+    },
+    "Profile_Gift_Loved": {
+      "source": "Loved Gifts",
+      "translation": "Cadouri adorate"
+    },
+    "Profile_Gift_Liked": {
+      "source": "Liked Gifts",
+      "translation": "Cadouri plăcute"
+    },
+    "Profile_Gift_Neutral": {
+      "source": "Normal Gifts",
+      "translation": "Cadouri neutre"
+    },
+    "Profile_Gift_Disliked": {
+      "source": "Disliked Gifts",
+      "translation": "Cadouri neplăcute"
+    },
+    "Profile_Gift_Hated": {
+      "source": "Hated Gifts",
+      "translation": "Cadouri detestate"
+    },
+    "Profile_Gift_Category_LikedGifts": {
+      "source": "{0}'s Favorites",
+      "translation": "Preferințe: {0}"
+    },
+    "Profile_Gift_Category_FruitsAndVegetables": {
+      "source": "Fruits & Vegetables",
+      "translation": "Fructe și legume"
+    },
+    "Profile_Gift_Category_AnimalProduce": {
+      "source": "Animal Produce",
+      "translation": "Produse animale"
+    },
+    "Profile_Gift_Category_ArtisanItems": {
+      "source": "Artisan Items",
+      "translation": "Produse artizanale"
+    },
+    "Profile_Gift_Category_CookedItems": {
+      "source": "Cooked Items",
+      "translation": "Preparate culinare"
+    },
+    "Profile_Gift_Category_ForagedItems": {
+      "source": "Flowers & Foraged Items",
+      "translation": "Flori și produse culese"
+    },
+    "Profile_Gift_Category_Fish": {
+      "source": "Fish",
+      "translation": "Pești"
+    },
+    "Profile_Gift_Category_Ingredients": {
+      "source": "Ingredients",
+      "translation": "Ingrediente"
+    }
+  }
+}

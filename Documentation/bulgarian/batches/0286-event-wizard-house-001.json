@@ -1,0 +1,27 @@
+{
+  "id": "0286-event-wizard-house-001",
+  "target": "Data/Events/WizardHouse",
+  "status": "reviewed",
+  "sourceHashes": {
+    "418172/n hasPickedUpMagicInk": "65b17f23d6589db48d42a0d420bef498a2a6efbc439e41a4071f4f231276b467"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "418172/n hasPickedUpMagicInk": "WizardSong/2 14/farmer 3 14 3 Wizard 1 14 1/skippable/pause 1000/speak Wizard \"Намери магическото ми мастило! Отлично.\"/move Wizard 1 0 1/pause 1000/speak Wizard \"Ъъ...\"/faceDirection Wizard 2/pause 500/showFrame Wizard 18/pause 500/speak Wizard \"Случайно... попадна ли на бившата ми съпруга?#$b#Не? Ами домът ѝ...?#$b#Мислиш ли, че живее сама? Или...$h\"/pause 500/showFrame Wizard 0/emote Wizard 12/pause 500/faceDirection Wizard 3/pause 500/speak Wizard \"...Всъщност не ми казвай... Не искам да знам.\"/pause 500/pause 500/faceDirection Wizard 2/pause 500/speak Wizard \"Както и да е... сигурно се питаш каква е наградата ти. Ето...\"/move Wizard -1 0 1/pause 800/faceDirection Wizard 2/pause 1000/showFrame Wizard 16/pause 800/specificTemporarySprite arcaneBook/playSound fireball/shake Wizard 500/pause 4000/faceDirection farmer 0/faceDirection Wizard 1/faceDirection Wizard 0/pause 500/speak Wizard \"Това е книга за призоваване.#$b#Магическият ѝ потенциал е огромен... но ще опростя нещата за теб.#$b#С тази книга можеш да призоваваш магически сгради направо във фермата си.#$b#Мисля, че ще ти бъде полезна.\"/pause 500/faceDirection farmer 3/faceDirection Wizard 1/speak Wizard \"О, почти забравих да кажа... ъхъм... Благодаря.\"/pause 1000/emote farmer 32/pause 800/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all seven quoted magic-ink return, ex-wife aside, reward and summoning-book fields in WizardHouse source ordinal 1.",
+      "Preserved the magic-ink prerequisite, complete event commands, actor identifiers, emotion markers and every dialogue break.",
+      "Applied the locked магическо мастило term, avoided assigning the player a gender in the ex-wife question, and refined the Wizard’s reluctant throat-clearing thanks."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "dc7ddb05fce2ff2e32054205fac973010474137ad9ec27ea253654587f3aba57"
+  }
+}

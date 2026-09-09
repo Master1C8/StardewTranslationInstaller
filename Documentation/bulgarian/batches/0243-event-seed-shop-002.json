@@ -1,0 +1,27 @@
+{
+  "id": "0243-event-seed-shop-002",
+  "target": "Data/Events/SeedShop",
+  "status": "reviewed",
+  "sourceHashes": {
+    "3/f Abigail 2000/p Abigail/t 2000 2200/n abbySpiritBoard": "b9494bde2062504ee12f2cd78463f214c4ce11d8ffc4bad58638dfcccec8377b"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "3/f Abigail 2000/p Abigail/t 2000 2200/n abbySpiritBoard": "echos/-1000 -1000/farmer 13 6 3 Abigail 6 8 1/skippable/specificTemporarySprite abbyOuijaCandles/viewport 7 5/speak Abigail \"Хей! Надявах се да дойдеш. Искам да ти покажа нещо.\"/move farmer -5 0 0/move farmer 0 2 3/faceDirection Abigail 2/speak Abigail \"Виждаш ли това? Нарича се спиритическа дъска. Случвало ли ти се е да използваш такава?\"/emote farmer 8/move Abigail 0 2 1/move farmer 0 2 3/pause 500/speak Abigail \"Сложи ръце върху показалеца заедно с мен...$l\"/showFrame Abigail 30/pause 200/animate farmer true true 9999 89/pause 600/speak Abigail \"Сега духовете ще ни насочат към...$h\"/showFrame Abigail 31/pause 500/speak Abigail \"ВИЖ, движи се!$7\"/emote farmer 16/speak Abigail \"Първата буква е... „I“ ...\"/pause 600/speak Abigail \"Следва... „<“ ...\"/pause 800/speak Abigail \"Уау, виж само как се движи! Изписва... „%firstnameletter“...#$b#I < %firstnameletter...?\"/emote Abigail 16/showFrame Abigail 12/faceDirection Abigail 3/stopMusic/pause 200/stopAnimation farmer/faceDirection Abigail 1/pause 400/specificTemporarySprite abbyOuija/playSound swordswipe/pause 900/playSound seeds/pause 500/speak Abigail \"Опа, без да искам бутнах дъската! Хе-хе...$h#$b#Това е просто глупава игра, не означава нищо.$9\"/faceDirection Abigail 3/emote Abigail 60/faceDirection Abigail 1/speak Abigail \"Аз, ъъ, имам работа. Трябва да си вървиш... Съжалявам.$9\"/faceDirection Abigail 2/emote farmer 28/pause 500/move farmer 0 -3 0/pause 800/faceDirection farmer 2/pause 1000/move farmer 5 0 1 true/globalFade/viewport -1000 -1000/end invisibleWarpOut Abigail"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all ten quoted spirit-board cutscene fields in Seed Shop source ordinal 2.",
+      "Preserved the symbolic I, less-than sign and %firstnameletter sequence that the board reveals, along with all event commands, identifiers and control tokens.",
+      "Used neutral player-directed Bulgarian and natural terminology for the spirit board and its pointer."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "992d5f58ddf129b47d3e6003f3b581d6f45c922000b96a4bbc302386d6ab1780"
+  }
+}

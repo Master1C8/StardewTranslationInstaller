@@ -1,0 +1,27 @@
+{
+  "id": "0244-event-seed-shop-003",
+  "target": "Data/Events/SeedShop",
+  "status": "reviewed",
+  "sourceHashes": {
+    "16/f Pierre 1500/p Pierre": "322a4bebf7bb2956328e5fce7647152eeb2654a35aacf4b807435f6be3258f51"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "16/f Pierre 1500/p Pierre": "Hospital_Ambient/20 5/farmer 20 12 0 Pierre 14 15 0/skippable/doAction 20 11/move farmer 0 -7 1/move farmer -1 0 0/move farmer 0 -1 0/pause 600/faceDirection farmer 1/pause 1000/showFrame 35/emote farmer 8/pause 1000/playSound secret1/stopAnimation farmer/message \"Откри „тайния запас“ на Пиер.\"/pause 1000/speak Pierre \"Хей! Кой е в спалнята?$4\"/warp Pierre 20 12 true/faceDirection Pierre 0/playMusic ragtime/move Pierre 0 -4 0 true/faceDirection farmer 2 true/showFrame 94/jump farmer/pause 1000/stopAnimation farmer/proceedPosition Pierre/emote Pierre 16/speed Pierre 4/move Pierre 0 -3 1 false/move Pierre -1 0 0/faceDirection farmer 2/speak Pierre \"К-какво...? Как откри това?!$4\"/faceDirection Pierre 2/pause 200/faceDirection Pierre 0/speak Pierre \"Бързо, дай ми го!$u\"/showFrame 95/pause 300/playSound coin/pause 600/showFrame 0/pause 500/speak Pierre \"$q 50 null#Обещай ми, че няма да казваш на никого за това.#$r 50 70 Event_naga1#Тайната ти е в безопасност при мен.#$r 50 -500 Event_naga2#Жена ти заслужава да знае за това.\"/pause 500/speed Pierre 2/move Pierre 1 0 2/emote Pierre 12/speak Pierre \"*мърморене*... сега трябва да намеря ново скривалище... *мърморене*$u \"/move Pierre 0 8 0 true/globalFade/viewport -1000 -1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all six quoted discovery, confrontation, response-choice and closing fields in Seed Shop source ordinal 3.",
+      "Preserved every question-response token, friendship delta, event command, identifier, control token and the source’s trailing dialogue space.",
+      "Kept Pierre’s secret stash deliberately vague and rendered both player responses without imposing a player gender."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "22b2a4ed62c9fa1b5b44a77b5dadb08882a1227c1d2b5bab00deaeb845865876"
+  }
+}

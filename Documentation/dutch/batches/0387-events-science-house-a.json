@@ -1,0 +1,77 @@
+{
+  "locale": "nl",
+  "target": "Data/Events/ScienceHouse",
+  "sourceAssetSha256": "0bbc50109a13bdf56004c2215bdcaf5f0f125dea710e64fc177aeacb58177c9f",
+  "reviewed": true,
+  "quotedReplacements": {
+    "6/f Maru 500/p Maru": {
+      "Oh, hello there!": "O, hallo!",
+      "My Dad and I are just testing some soil samples.": "Mijn vader en ik onderzoeken wat bodemmonsters.",
+      "Don't be shy! We could use a hand, actually.$h": "Wees niet verlegen! Eigenlijk kunnen we wel hulp gebruiken.$h",
+      "Could you watch this beaker for me? I'm gonna grab the last batch of samples.#$b#I'll be right back.": "Kun je even op deze beker letten? Ik haal de laatste reeks monsters.#$b#Ik ben zo terug.",
+      "Thanks for helping out, @.": "Bedankt voor je hulp, @.",
+      "Maru's a good kid. She's my special little girl...": "Maru is een goed kind. Ze is mijn bijzondere kleine meisje...",
+      "I wouldn't want anything getting in the way of her bright future, know what I mean?$5": "Ik zou niet willen dat iets haar schitterende toekomst in de weg staat, begrijp je wat ik bedoel?$5",
+      "Just some food for thought... *chuckle*$h": "Gewoon iets om over na te denken... *grinnikt*$h",
+      "Hey, sorry about that. I hope you found something to talk about while I was gone.": "Hé, sorry daarvoor. Ik hoop dat jullie iets hadden om over te praten terwijl ik weg was.",
+      "...I was just telling @ about the soil samples we're testing.": "...Ik vertelde @ net over de bodemmonsters die we onderzoeken.",
+      "$q 15933 null#Right, @?#$r 15933 10 Event_Lab_Silence#(Say nothing)#$r 15933 -100 Event_Lab_Rat#Actually, your Dad was being weird.": "$q 15933 null#Toch, @?#$r 15933 10 Event_Lab_Silence#(Zeg niets)#$r 15933 -100 Event_Lab_Rat#Eigenlijk deed je vader vreemd.",
+      "Okay! Here, @... let me show you how to use the equipment.": "Goed! Kom, @... laat me je tonen hoe je de apparatuur gebruikt."
+    },
+    "DadWeird": {
+      "Huh? What did you say to ${him^her}$, Dad?$a": "Hè? Wat heb je tegen ${hem^haar}$ gezegd, pap?$a",
+      "Okay, okay... we were talking about you, sweetie.$5#$b#I wanted to say a few things to @ about you... but I didn't want to embarrass you. I shouldn't have lied about it.$s": "Goed, goed... we hadden het over jou, lieverd.$5#$b#Ik wilde een paar dingen over jou tegen @ zeggen... maar ik wilde je niet in verlegenheid brengen. Ik had er niet over moeten liegen.$s",
+      "That's okay, Dad. I understand.#$b#We should get back to work before these samples crystallize.": "Het is goed, pap. Ik begrijp het.#$b#We moeten weer aan het werk voordat deze monsters kristalliseren."
+    },
+    "9/f Maru 2000/p Maru": {
+      "@, hi! Come in.": "@, hoi! Kom binnen.",
+      "I've been working on a new project... something big.": "Ik werk aan een nieuw project... iets groots.",
+      "This is just one component... let me show you a little demonstration.": "Dit is maar één onderdeel... laat me een kleine demonstratie geven.",
+      "Just put your hand here...": "Leg je hand hier maar...",
+      "And now I'm going to flip this switch...": "En nu haal ik deze schakelaar over...",
+      "Oh my god, are you alright?!$9": "O mijn god, gaat het goed met je?!$9",
+      "Here, let me apply this burn cream.$8": "Hier, laat me deze brandwondenzalf aanbrengen.$8",
+      "$q 41 null#I'm so sorry.$8#$r 41 30 Event_Cut1#It's okay, it doesn't even hurt.#$r 41 -50 Event_Cut2#You'd better be. This hurts like crazy!": "$q 41 null#Het spijt me zo.$8#$r 41 30 Event_Cut1#Het is goed, het doet niet eens pijn.#$r 41 -50 Event_Cut2#Dat mag ik hopen. Dit doet verschrikkelijk veel pijn!",
+      "That kind of ruined the moment, huh? *sigh*$s": "Dat heeft het moment wel een beetje verpest, hè? *zucht*$s"
+    },
+    "25/f Demetrius 1500/p Demetrius/p Robin": {
+      "Demetrius, I didn't tell you to get tomatoes. I said to get fruit.": "Demetrius, ik vroeg je niet om tomaten. Ik zei dat je fruit moest halen.",
+      "I don't understand. Tomatoes are fruits!": "Ik begrijp het niet. Tomaten zijn vruchten!",
+      "When a normal person says they want fruit, they NEVER mean tomatoes. It doesn't matter what the scientific classification is.": "Als een normaal mens zegt dat die fruit wil, bedoelt die NOOIT tomaten. De wetenschappelijke classificatie doet er niet toe.",
+      "@! I'm glad you're here. You'll be able to put this argument to rest.": "@! Fijn dat je er bent. Jij kunt een einde maken aan deze discussie.",
+      "$q 59 null#How would you classify a tomato?#$r 59 -30 Event_tomato1#Vegetable#$r 59 50 Event_tomato2#Fruit": "$q 59 null#Hoe zou je een tomaat classificeren?#$r 59 -30 Event_tomato1#Groente#$r 59 50 Event_tomato2#Fruit",
+      "I just want you to understand my point of view.#$b#It's hard for me to know exactly what assumptions I should make when you tell me something.": "Ik wil alleen dat je mijn standpunt begrijpt.#$b#Ik vind het moeilijk om precies te weten welke aannames ik moet doen wanneer je me iets vertelt.",
+      "But I'll try to get better at it.": "Maar ik zal proberen er beter in te worden.",
+      "Thanks for your help, @.$h": "Bedankt voor je hulp, @.$h"
+    },
+    "33/f Robin 1500/p Robin": {
+      "Hi @. I was just cleaning some dust off my saw.": "Hoi @. Ik veegde net wat stof van mijn zaag.",
+      "$q 66 null#Have you ever made anything out of wood, @?#$r 66 50 event_wood1#Yes#$r 66 50 event_wood2#No": "$q 66 null#Heb je ooit iets van hout gemaakt, @?#$r 66 50 event_wood1#Ja#$r 66 50 event_wood2#Nee",
+      "I think we've become good enough friends that I can trust you with my carpentry secrets!$h#$b#Here, let me show you the blueprints.": "Volgens mij zijn we inmiddels zulke goede vrienden dat ik je mijn timmergeheimen kan toevertrouwen!$h#$b#Kom, ik laat je de bouwtekeningen zien.",
+      "Learned how to craft 'Flute Block' and 'Drum Block'": "Je hebt geleerd hoe je een 'Fluitblok' en een 'Trommelblok' maakt",
+      "You can use these to get creative on your farm. #$b#It feels good to be able to decorate your house with things you've made yourself!$h": "Hiermee kun je je creativiteit op de boerderij kwijt. #$b#Het voelt goed om je huis te kunnen versieren met dingen die je zelf hebt gemaakt!$h"
+    },
+    "1053978/n robinDeluxeBed": {
+      "Voila! My newest creation.$h#$b#It's a deluxe four poster bed, crafted from the finest local hardwood.": "Voilà! Mijn nieuwste creatie.$h#$b#Het is een luxe hemelbed, gemaakt van het beste lokale hardhout.",
+      "Um... Robin? What's the point of the four posts? It seems like an inefficient use of materials.$s": "Eh... Robin? Wat is het nut van die vier stijlen? Het lijkt me een inefficiënt gebruik van materialen.$s",
+      "It's called 'beauty', bud... you know, that thing that most people find enjoyable?$6": "Dat heet 'schoonheid', vriend... je weet wel, dat waar de meeste mensen van genieten?$6",
+      "Hmm, I see your point.. But we can't let that outweigh the utility and efficiency of the sleep receptacle.": "Hmm, ik begrijp je punt... Maar dat mag niet zwaarder wegen dan het nut en de efficiëntie van het slaapmeubel.",
+      "You know, sometimes it feels like you're being deliberately obtuse, just to irritate me. Is that what you're doing?$3": "Weet je, soms lijkt het alsof je expres zo stompzinnig doet om me te irriteren. Is dat wat je doet?$3",
+      "Hey @... Come in.": "Hé @... Kom binnen.",
+      "Check this out... It's the bed I was able to make thanks to all the wood you gathered.": "Kijk eens... Dit is het bed dat ik dankzij al het hout dat jij verzamelde kon maken.",
+      "So, what do you think?": "En, wat vind je ervan?",
+      "Yea": "Ja",
+      "*ahem*... Well... If anyone needs me, I'll be in the doghouse...$5": "*ahem*... Nou... Als iemand me nodig heeft, zit ik in het hondenhok...$5",
+      "Great minds think alike...$h": "Grote geesten denken hetzelfde...$h",
+      "Whatever.$3#$b#Moving on...$3": "Wat jij wilt.$3#$b#We gaan verder...$3",
+      "Now that I have a prototype, I can start selling them in the shop.": "Nu ik een prototype heb, kan ik ze in de winkel gaan verkopen.",
+      "Hey... these might look good in your place, @! What do you say... can we pencil you in for a half dozen?": "Hé... Deze zouden mooi bij jou staan, @! Wat denk je... kan ik er zes voor je noteren?",
+      "Mom!": "Mam!"
+    }
+  },
+  "quickQuestionReplacements": {
+    "1053978/n robinDeluxeBed": {
+      "#The aesthetics are perfect#The four posts seem inefficient": "#De vormgeving is perfect#De vier stijlen lijken inefficiënt"
+    }
+  }
+}

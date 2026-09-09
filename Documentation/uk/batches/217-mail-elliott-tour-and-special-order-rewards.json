@@ -1,0 +1,180 @@
+{
+  "id": "217-mail-elliott-tour-and-special-order-rewards",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 24 letters covering clinic and Marlon rescues, Elliotts complete six-letter tour including both poems, recovery and crafting rewards, shop invitations, and special-order rewards through the Wizards Mini-Obelisk. Mail page breaks, titles, item and conversation commands, placeholders, signatures and poetic structure were preserved.",
+    "reviewedTextSHA256": "f2b3cf68714c4badee514d51dcb6130f464b722de9b371f04a46eaa196065c6f",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 69
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "passedOut3_Billed",
+      "english": "@,^Someone dropped you off at the clinic last night. You'd passed out from exhaustion!^You've got to take better care of yourself and go to bed at a reasonable hour.^I've billed you {0}g to cover your medical expenses.^^-Dr. Harvey[#]From The Office Of Dr. Harvey",
+      "translation": "@,^Минулої ночі хтось приніс тебе до клініки. Причиною непритомності було виснаження!^Тобі слід краще дбати про себе й лягати спати в розумну годину.^Я виставив рахунок на {0}g, щоб покрити медичні витрати.^^— Доктор Гарві[#]З кабінету доктора Гарві",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut3_NotBilled",
+      "english": "@,^Someone dropped you off at the clinic last night. You'd passed out from exhaustion!^You've got to take better care of yourself and go to bed at a reasonable hour.^Since you have no money, I provided your medical care free of charge.^^-Dr. Harvey[#]Harvey's Free Medical Service",
+      "translation": "@,^Минулої ночі хтось приніс тебе до клініки. Причиною непритомності було виснаження!^Тобі слід краще дбати про себе й лягати спати в розумну годину.^Оскільки в тебе немає грошей, я надав медичну допомогу безплатно.^^— Доктор Гарві[#]Безплатна медична допомога Гарві",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOut4",
+      "english": "@, ^^Found you face-down in the mud during my 3:00 AM sweep.^^You should try to make it home a little earlier next time!^^     -Marlon[#]Note From Marlon",
+      "translation": "@, ^^Під час обходу о 3:00 я знайшов тебе обличчям у багнюці.^^Наступного разу спробуй повернутися додому трохи раніше!^^     — Марлон[#]Записка від Марлона",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter1",
+      "english": "@, my love,^^I've just arrived in Grampleton, to start the tour. I've forgotten how hectic the city is! The streets are packed with people... they either seem in a mad hurry, or lost in a daze, unaware of their surroundings. I miss Pelican Town already!^^I begin the tour this evening, at a local bookstore. I must admit, I'm becoming a bit nervous at the thought of public speaking... my stomach feels as if it's been twisted into a soft pretzel and doused with spicy cheese dip. Wish me luck!^^-Love, Elliott^^P.S. I hope you had a peaceful night, and weren't too scared all alone in that big house! %item conversationTopic ElliottGone2 0 %%[#]Letter From My Husband",
+      "translation": "@, кохання моє,^^Я щойно прибув до Ґрамплтона, де починається тур. Я вже забув, яка метушня панує в місті! Вулиці переповнені людьми... Вони або кудись шалено поспішають, або блукають у заціпенінні, не помічаючи нічого довкола. Я вже сумую за містечком Пелікан!^^Сьогодні ввечері починаю тур у місцевій книгарні. Мушу визнати, думка про публічний виступ дедалі більше нервує мене... Шлунок наче скрутили в м’який крендель і щедро полили гострим сирним соусом. Побажай мені успіху!^^— З любов’ю, Елліотт^^P.S. Сподіваюся, ніч минула спокійно, а самотність у великому будинку не надто лякала! %item conversationTopic ElliottGone2 0 %%[#]Лист від мого чоловіка",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter2",
+      "english": "My dear @,^^The first reading went well, though the audience was a bit smaller than I'd hoped. Still, I sold enough copies of the book to pay for my (bug-infested) hotel room!^^In a few hours, I leave for Zuzu City. If yesterday's reading was a warm-up, this next one will be a true napalm blast...^^I miss you very much. Remember to eat well! Oh, and don't forget the leftover crab cakes I put in the fridge...^-Love, Elliott %item conversationTopic ElliottGone3 0 %%[#]Letter From My Husband 2",
+      "translation": "@, кохання моє,^^Перше читання пройшло добре, хоча слухачів було трохи менше, ніж я сподівався. Та все ж я продав достатньо примірників, щоб оплатити свій готельний номер, повний жуків!^^За кілька годин вирушаю до міста Зузу. Якщо вчорашнє читання було розминкою, наступне стане справжнім напалмовим вибухом...^^Я дуже за тобою сумую. Не забувай добре їсти! І не забудь про крабові котлети, які я залишив у холодильнику...^— З любов’ю, Елліотт %item conversationTopic ElliottGone3 0 %%[#]Лист від мого чоловіка 2",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter3",
+      "english": "My sweet @,^^Last night in Zuzu City was quite the experience! It seems there's a large literary scene here... a few dozen people showed up at my reading!^^I even signed a couple of autographs... it's strange to be seen as someone important. It's all a matter of framing, a grand illusion... for truly I am no one special. Only your devoted Elliott, as always.^^Currently I'm alone, in my hotel room, 'ingesting' a Joja Value Meal...^^Should this be called 'food'?^Or 'edible matter'?^I needn't long brood^It must be the latter^^I look forward to returning home soon. Hope you enjoyed the crab cakes.^^-Love, Elliott %item conversationTopic ElliottGone4 0 %%[#]Letter From My Husband 3",
+      "translation": "@, моє сонце,^^Учорашній вечір у місті Зузу був неабиякою пригодою! Схоже, тут вирує літературне життя... На моє читання прийшло кілька десятків людей!^^Я навіть підписав кілька автографів... Дивно, коли тебе вважають кимось важливим. Усе залежить від погляду, це велика ілюзія... адже насправді я нічим не особливий. Як завжди, лише твій відданий Елліотт.^^Зараз я сам у готельному номері й «поглинаю» вигідний обід Joja...^^Чи можна назвати це «їжею»?^Чи «їстівною масою» радше?^Не треба мучити душу мою:^Без сумніву, друге — найкраще.^^Я з нетерпінням чекаю повернення додому. Сподіваюся, крабові котлети були смачними.^^— З любов’ю, Елліотт %item conversationTopic ElliottGone4 0 %%[#]Лист від мого чоловіка 3",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter4",
+      "english": "In dreams, when graced with lofty view^I gaze upon the sunlit sea^What distant shores I've traveled to^But time now clouds my memory^^There is but one eternal place^Where I shall someday pass beyond^In Valley dear, where my love waits:^Our little home beside the pond^^-Elliott %item conversationTopic ElliottGone5 0 %%[#]Letter From My Husband 4",
+      "translation": "У снах, піднесений красою,^Дивлюсь на море золоте.^В які краї ходив порою —^Вже час у пам’яті зітре.^^Та є одне одвічне місце,^Куди піду за небокрай:^В Долині, де кохання жде,^Наш дім над ставом — тихий рай.^^— Елліотт %item conversationTopic ElliottGone5 0 %%[#]Лист від мого чоловіка 4",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter5",
+      "english": "My dear @,^^I won't bore you with any more details about my readings. They are mostly the same.^^I'm sure your time has been much more exciting! I can't wait to return and see what progress has been made.^^On these long travels between towns, I amuse myself by closing my eyes and envisioning the farm... I see kegs pulsing with sweet wine, a furnace ablaze with precious ore, and our little kitchen with the smell of cinnamon and nutmeg. There's a lot to enjoy!^^Just don't stay out too late in the mines, my love. It's dangerous in there! If you must go... bring plenty of food.^^-Love, Elliott %item conversationTopic ElliottGone6 0 %%[#]Letter From My Husband 5",
+      "translation": "@, кохання моє,^^Не нудитиму тебе новими подробицями читань. Вони здебільшого однакові.^^Упевнений, твій час був значно цікавішим! Не можу дочекатися повернення й нагоди побачити весь поступ.^^Під час довгих подорожей між містами я розважаюся тим, що заплющую очі й уявляю ферму... Бачу, як у барилах зріє солодке вино, у палаючій печі плавиться дорогоцінна руда, а маленька кухня пахне корицею та мускатним горіхом. Стільки всього чудового!^^Тільки не затримуйся допізна в шахтах, кохання моє. Там небезпечно! Якщо мусиш іти... візьми багато їжі.^^— З любов’ю, Елліотт %item conversationTopic ElliottGone6 0 %%[#]Лист від мого чоловіка 5",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottLetter6",
+      "english": "My dear @,^^This will be my last letter before I return home. I've had a fine trip... though nothing too exciting. It's been nice to meet people who enjoy my work, but I'm eager to return home.^^I look forward to the comfort of our little house, the satisfying farm work, a home-cooked meal, and most of all, cozying into the flannel sheets with you.^^See you soon!^-Love, Elliott %item conversationTopic ElliottGone7 0 %%[#]Letter From My Husband 6",
+      "translation": "@, кохання моє,^^Це мій останній лист перед поверненням додому. Подорож була гарною... хоча нічого надто захопливого не сталося. Було приємно зустрічати людей, яким подобається моя творчість, але я прагну додому.^^Не можу дочекатися затишку нашого маленького будинку, приємної праці на фермі, домашньої їжі й понад усе — нагоди загорнутися з тобою у фланелеві простирадла.^^До скорої зустрічі!^— З любов’ю, Елліотт %item conversationTopic ElliottGone7 0 %%[#]Лист від мого чоловіка 6",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "MarlonRecovery",
+      "english": "@,^Found your lost item.^^Be more careful next time!^   -Marlon%item itemRecovery %%[#]Marlon Found Your Item",
+      "translation": "@,^Я знайшов твою загублену річ.^^Наступного разу бережи себе!^   — Марлон%item itemRecovery %%[#]Марлон знайшов твою річ",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "RarecrowSociety",
+      "english": "Dear @,^^Your dedication is truly impressive...^^Only a select few manage to acquire the complete Rarecrow collection!^^Please accept this blueprint to commemorate your achievement.^   -The Z.C. Rarecrow Society%item craftingRecipe Deluxe_Scarecrow %%[#]From The Rarecrow Society",
+      "translation": "Вітаємо, @,^^Твоя відданість справді вражає...^^Лише небагатьом вдається зібрати повну колекцію Рідкісних опудал!^^Прийми це креслення на згадку про своє досягнення.^   — Товариство рідкісних опудал Z.C.%item craftingRecipe Deluxe_Scarecrow %%[#]Від Товариства рідкісних опудал",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "CarolineTea",
+      "english": "Dear @,^^Thanks for stopping by my sunroom yesterday. I usually drink tea alone, but it was fun to share with you!^^I've enclosed instructions on how to prepare and grow your own tea. No pressure, but if you do end up growing some, make sure to bring me a cup!^^-Caroline%item craftingRecipe Tea_Sapling %%[#]Caroline's Tea Note",
+      "translation": "Вітаю, @,^^Дякую, що вчора завітали до моєї оранжереї. Зазвичай я п’ю чай наодинці, але разом було весело!^^Додаю вказівки з приготування та вирощування власного чаю. Жодного тиску, але якщо таки виростиш трохи, обов’язково принеси мені чашечку!^^— Керолайн%item craftingRecipe Tea_Sapling %%[#]Чайна записка Керолайн",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "WoodChipper",
+      "english": "Hey @,^^Just wanted to let you know about a new item I'm carrying... it's called a 'Wood Chipper'.^^You can use it to break hardwood into several pieces of regular wood!^^I know wood can be hard to come by in the winter, so if your supply gets low, consider picking one up.^       -Robin[#]Wood Chipper Notice",
+      "translation": "Привіт, @,^^Хочу розповісти про новий товар... Він називається «Подрібнювач деревини».^^У ньому можна розділити Тверду деревину на кілька шматків звичайної!^^Знаю, узимку деревину буває важко знайти, тож якщо запаси вичерпуються, подумай про таку покупку.^       — Робін[#]Оголошення про Подрібнювач деревини",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "willyBackRoomInvitation",
+      "english": "@,^^I've unlocked the back room of the shop.^Come by when you have a chance.^There's something I want to show you.^^-Willy[#]Willy's Back Room Invitation",
+      "translation": "@,^^Я відімкнув задню кімнату крамниці.^Завітай, коли матимеш нагоду.^Хочу дещо тобі показати.^^— Віллі[#]Запрошення до задньої кімнати Віллі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "KrobusCrafting",
+      "english": "@, I'm not sure how the human message system works, so I asked Wizard to help me write this letter.^^I hope you are doing okay.^^I wanted to share this with you... it's notes on how my people build a certain item.^^   -Krobus%item craftingRecipe Dark_Sign %%[#]A letter from Krobus",
+      "translation": "@, я не знаю, як працює людська система повідомлень, тож попросив Чарівника допомогти написати цього листа.^^Сподіваюся, у тебе все гаразд.^^Хочу поділитися цим із тобою... Це нотатки про те, як мій народ створює певний предмет.^^   — Кробус%item craftingRecipe Dark_Sign %%[#]Лист від Кробуса",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "georgeGifts",
+      "english": "Dear @,^^Thank you so much for the leeks. They look fresh and delicious. George will love them.^^Today, I'm going to surprise him with 12 little gift-wrapped treasures (thanks to you!). Stop by if you want to be there!^^-Evelyn^^P.S. Please accept this gift. I think you'll enjoy it!%item id (BC)246 %%[#]Evelyn's thank-you note",
+      "translation": "Вітаю, @,^^Щиро дякую за Цибулю-порей. Вона виглядає свіжою та смачною. Джордж буде в захваті.^^Сьогодні я здивую його 12 маленькими скарбами в подарунковій упаковці завдяки тобі! Завітай, якщо хочеш усе побачити!^^— Евелін^^P.S. Прийми цей подарунок. Думаю, він тобі сподобається!%item id (BC)246 %%[#]Подячна записка Евелін",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "robinResource",
+      "english": "Hey @,^^Congratulations on completing my little challenge. I'm impressed!^^As an added bonus, I've included the blueprints for a new type of chest. Enjoy!^^-Robin^^^^P.S. -- Now that you have all those resources laying around, why not swing by for some construction work?%item craftingRecipe Stone_Chest %%[#]Robin's Resource Rush",
+      "translation": "Привіт, @,^^Вітаю із завершенням мого невеличкого випробування. Я вражена!^^Як додаткову винагороду додаю креслення нового виду скрині. Насолоджуйся!^^— Робін^^^^P.S. Тепер, коли в тебе лежить стільки ресурсів, чому б не завітати й не замовити якесь будівництво?%item craftingRecipe Stone_Chest %%[#]Ресурсний аврал Робін",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "ClintReward",
+      "english": "Um, Hello...     ^Thanks for helping me clear out those monsters.^^I'm not scared at all! ...But it should make the mines safer for everyone else... right?^^Take this blueprint. (Hope it doesn't make me obsolete...)^^   -Clint, the blacksmith%item craftingRecipe Geode_Crusher %%[#]Clint's Thank-you",
+      "translation": "Ем, привіт...     ^Дякую за допомогу зі знищенням тих монстрів.^^Я зовсім не боюся! ...Але тепер шахти мають стати безпечнішими для всіх інших... правда?^^Візьми це креслення. Сподіваюся, воно не зробить мене непотрібним...^^   — Клінт, коваль%item craftingRecipe Geode_Crusher %%[#]Подяка Клінта",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "ClintReward2",
+      "english": "Um, Hello...     ^Thanks for helping me clear out more monsters.^^Maybe next time, I'll take care of them myself... if I have time!^^Take this item. I found it in the back room...^^   -Clint, the blacksmith%item id (O)286 10 (O)287 5 (O)231 3 %%[#]Clint's Alternate Thank-you",
+      "translation": "Ем, привіт...     ^Дякую за допомогу зі знищенням нових монстрів.^^Може, наступного разу я сам із ними розберуся... якщо матиму час!^^Візьми цей предмет. Я знайшов його в задній кімнаті...^^   — Клінт, коваль%item id (O)286 10 (O)287 5 (O)231 3 %%[#]Інша подяка Клінта",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "willyBugWadCutscene",
+      "english": "^^   -Willy%item craftingRecipe Quality_Bobber %%[#]Willy's Thank-you",
+      "translation": "^^   — Віллі%item craftingRecipe Quality_Bobber %%[#]Подяка Віллі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "MSB_Pierre",
+      "english": "Dear @,^^I guess people didn't take to 'Pierre's Prime Produce' like I'd hoped...^^Anyways, here's my old 'Mini-Shipping Bin'.^The next time you get your hands on some produce worthy of the 'Pierre's Prime' luxury brand, maybe you could have them shipped my way?^^   -Pierre%item id (BC)248 %%[#]Pierre's Prime Produce",
+      "translation": "Вітаю, @,^^Схоже, людям не сподобався «Відбірний урожай П’єра» так, як я сподівався...^^Що ж, ось мій старий «Міні-контейнер для продажу».^Якщо тобі знову трапиться врожай, гідний розкішної марки «Відбірне від П’єра», то, може, відправиш його мені?^^   — П’єр%item id (BC)248 %%[#]Відбірний урожай П’єра",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "MSB_Lewis",
+      "english": "@,^I wanted to thank you for taking care of my special order. All of the hard work you've done has been a great boost to Pelican Town's image.^Here's a 'Mini-Shipping Bin' as a token of my appreciation.^Place it anywhere and I'll be sure to make a stop when I make my rounds.^^   -Lewis%item id (BC)248 %%[#]Lewis's Thank You",
+      "translation": "@,^Хочу подякувати за виконання мого особливого замовлення. Уся твоя важка праця чудово позначилася на образі містечка Пелікан.^Ось «Міні-контейнер для продажу» на знак моєї вдячності.^Постав його де завгодно, і я неодмінно заїду під час обходу.^^   — Льюїс%item id (BC)248 %%[#]Подяка Льюїса",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "WizardReward",
+      "english": "The specimen you delivered offered great insight into the machinations of the fell beings we call 'monsters'.^^I've formulated a pungent tincture that these beings find intoxicating. Use it with caution...^^   -M. Rasmodius, Wizard%item craftingRecipe Monster_Musk %%[#]The Wizard's Discovery",
+      "translation": "Доставлений тобою зразок дав глибоке розуміння механізмів роботи лихих істот, яких ми називаємо «монстрами».^^Я створив різку настоянку, яка п’янить цих істот. Використовуй її обережно...^^   — М. Размодіус, Чарівник%item craftingRecipe Monster_Musk %%[#]Відкриття Чарівника",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "WizardReward2",
+      "english": "Thanks to the ectoplasm you delivered to me, I've made a major breakthrough in the field of arcane engineering.^^Enclosed, you'll find blueprints for a most useful machine...^^   -M. Rasmodius, Wizard%item craftingRecipe Mini-Obelisk %%[#]The Wizard's Breakthrough",
+      "translation": "Завдяки доставленій тобою ектоплазмі я здійснив великий прорив у галузі магічної інженерії.^^Усередині ти знайдеш креслення надзвичайно корисного механізму...^^   — М. Размодіус, Чарівник%item craftingRecipe Mini-Obelisk %%[#]Прорив Чарівника",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "id": "215-mail-festivals-and-story-quests-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 24 letters covering the first Skull Cavern challenge, well and Joja notices, all annual festival notices through the Night Market, and story requests from Robins axe through Carolines pumpkin. Mail page breaks, titles, quest and money commands, signatures, festival times and the secret formatting were preserved.",
+    "reviewedTextSHA256": "d24f2c1fd7c485784f83d66cd2a99e420c56753e201b3fdc84d3d81a07729786",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 66
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "skullCave",
+      "english": "I see you've entered the Skull Cavern. Well done.^I've got a better challenge for you, kid. Make it at least 25 levels deep. I've got a mountain of $ to send if you can do it.^  Your friend, Mr. Qi %item quest 20 %%[#]Qi's Challenge",
+      "translation": "Бачу, шлях привів тебе до Печери Черепа. Чудова робота.^У мене є краще випробування для тебе, дитино. Спустися принаймні на 25 рівнів углиб. Якщо впораєшся, надішлю цілу гору грошей.^  Твій друг, пан Ці %item quest 20 %%[#]Випробування Ці",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "robinWell",
+      "english": "Robin here!^I know there's a lot of stone scattered around your farm.^If you have a surplus, you might consider having me build a well for you.^Wells can be placed all over your farm, and serve as convenient places to refill your watering can.^^Just swing by my shop with 75 stones and 1000g when you're ready for it.^-Robin[#]Build A Well",
+      "translation": "Говорить Робін!^Я знаю, що на твоїй фермі всюди розкидано багато каменю.^Якщо маєш надлишок, можеш замовити в мене криницю.^Криниці можна розміщувати по всій фермі й зручно набирати в них воду до лійки.^^Коли вирішиш її збудувати, просто завітай до моєї крамниці із 75 каменями та 1000g.^— Робін[#]Збудуйте криницю",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "landslideDone",
+      "english": "To our valued JojaMart customers:^Our team members have removed the landslide caused by our drilling operation near the mountain lake. I'd like to remind you that our drilling operation is entirely legal (pursuant to init. L61091, JojaCo Amendment). Responsible stewardship of the local environment is our top priority! ^^We apologize for any inconvenience this accident may have caused.^As always, we value your continued support and patronage!^^-Morris,^Joja Customer Satisfaction Representative[#]Joja Removed Landslide",
+      "translation": "Шановним покупцям JojaMart:^Наші працівники прибрали зсув, спричинений буровими роботами біля гірського озера. Нагадуємо, що бурові роботи цілком законні згідно з постановою L61091, поправкою корпорації Joja. Відповідальне піклування про місцеве довкілля — наш найвищий пріоритет! ^^Перепрошуємо за будь-які незручності, спричинені цією аварією.^Як завжди, ми цінуємо вашу незмінну підтримку й відданість!^^— Морріс,^представник служби задоволеності клієнтів Joja[#]Joja прибрала зсув",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "QiChallengeComplete",
+      "english": "You did it.^ I'm very impressed.^ Enjoy your reward.^   -Qi. %item money 10000 %%[#]Qi Challenge Complete",
+      "translation": "Тобі вдалося.^ Я дуже вражений.^ Насолоджуйся винагородою.^   — Ці. %item money 10000 %%[#]Випробування Ці завершено",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_2_1",
+      "english": "Hello there,^Just got back from a fishing trip. You should come down to the beach some time.^I've got something for ya.^-Willy %item quest 13 true %%[#]Willy's Invitation",
+      "translation": "Вітаю,^Щойно повернувся з риболовлі. Якось завітай на пляж.^У мене дещо для тебе є.^— Віллі %item quest 13 true %%[#]Запрошення Віллі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_12",
+      "english": "Dear @,^Tomorrow we're holding the Egg Festival in the town square. ^^You should arrive between 9 AM and 2 PM if you'd like to attend.^You wouldn't want to miss the annual egg hunt!^  -Mayor Lewis[#]Egg Festival Notice",
+      "translation": "Вітаю, @,^Завтра на міській площі відбудеться Яєчний фестиваль. ^^Якщо хочеш долучитися, приходь із 9:00 до 14:00.^Не пропусти щорічне полювання на яйця!^  — Мер Льюїс[#]Оголошення про Яєчний фестиваль",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_15_1",
+      "english": "Hello, dear...^^I know you're just getting started as a gardener, so I wanted to give you a little tip.^^Most crops only grow in one season. When summer arrives, your spring crops will all die out. So plan ahead!^^-Granny Evelyn[#]Evelyn's Tip",
+      "translation": "Вітаю, сонечко...^^Я знаю, що ти лише починаєш опановувати садівництво, тож хочу дати невеличку пораду.^^Більшість культур росте лише одну пору року. Коли настане літо, усі весняні культури загинуть. Тож плануй наперед!^^— Бабуся Евелін[#]Порада Евелін",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_23",
+      "english": "Dear @,^Tomorrow we're all getting together for the Flower Dance.^^If you can find a partner, you might even want to participate in the dance yourself!^There's a little clearing beyond the forest west of town where we hold the dance. Arrive between 9 AM and 2 PM if you're interested.^  -Mayor Lewis[#]Flower Dance Notice",
+      "translation": "Вітаю, @,^Завтра ми всі збираємося на Танець квітів.^^Якщо знайдеш пару, то навіть зможеш узяти участь у танці!^Ми танцюємо на невеликій галявині за лісом на захід від містечка. Якщо хочеш долучитися, приходь із 9:00 до 14:00.^  — Мер Льюїс[#]Оголошення про Танець квітів",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_10",
+      "english": "Dear @,^Tomorrow we're all gathering at the beach for the annual Pelican Town Luau.^^The highlight of the event is the communal potluck. Make sure you bring something good to contribute!^The governor himself is attending the event, so make sure you're on your best behavior.^Come to the beach sometime between 9 AM and 2 PM.^   -Mayor Lewis[#]Luau Notice",
+      "translation": "Вітаю, @,^Завтра ми всі збираємося на пляжі на щорічне Луау містечка Пелікан.^^Головна подія — спільний бенкет. Обов’язково принеси щось смачне до загального столу!^На подію завітає сам губернатор, тож поводься якнайкраще.^Приходь на пляж із 9:00 до 14:00.^   — Мер Льюїс[#]Оголошення про Луау",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_28",
+      "english": "Dear @,^Tonight at around 10 o'clock PM, a rare and beautiful event will take place.^^The moonlight jellies will be passing by Pelican Town on their long journey south for the winter.^^We're all gathering at the beach to watch. You don't want to miss this!^See you tonight,^ -Demetrius[#]Dance Of The Moonlight Jellies",
+      "translation": "Вітаю, @,^Сьогодні близько 22:00 відбудеться рідкісна й прекрасна подія.^^Місячні медузи пропливатимуть повз містечко Пелікан під час своєї довгої зимової подорожі на південь.^^Ми всі зберемося на пляжі, щоб подивитися. Не пропусти!^До зустрічі ввечері,^ — Деметріус[#]Танець місячних медуз",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_9",
+      "english": "Dear @,^One week from today, we are holding the Stardew Valley Fair in the town square!^It's the biggest event of the year, drawing people from all across the country to our humble town.^If you'd like, you can set up a grange display for the event. Just bring up to 9 items that best showcase your talents. You'll be judged on the quality and diversity of your display.^The fair starts at 9 AM... don't miss it!^   -Mayor Lewis[#]Stardew Valley Fair Notice",
+      "translation": "Вітаю, @,^Рівно за тиждень ми проведемо Ярмарок долини Стардью на міській площі!^Це найбільша подія року, яка приваблює до нашого скромного містечка людей з усієї країни.^За бажанням можна оформити виставкову вітрину господарства. Принеси до 9 предметів, які найкраще демонструють твої таланти. Оцінюватимуть якість і різноманітність вітрини.^Ярмарок починається о 9:00... Не пропусти!^   — Мер Льюїс[#]Оголошення про Ярмарок долини Стардью",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_15",
+      "english": "Dear @,^I just want to remind you that the Stardew Valley Fair is happening tomorrow.^Don't forget to bring your 9 items for the grange display.^Remember, the fair starts at 9AM in the town square. See you there!^   -Mayor Lewis[#]Stardew Valley Fair Reminder",
+      "translation": "Вітаю, @,^Нагадую, що завтра відбудеться Ярмарок долини Стардью.^Не забудь принести 9 предметів для виставкової вітрини господарства.^Пам’ятай: ярмарок починається о 9:00 на міській площі. До зустрічі!^   — Мер Льюїс[#]Нагадування про Ярмарок долини Стардью",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_26",
+      "english": "Dear @,^Notice a chill in the air? It could just be the approach of winter...^Or it could be the tingle of a dark specter, here to help us celebrate tomorrow's festival... the Spirit's Eve.^Come to town at 10 PM if you'd like to participate.^  -Mayor Lewis[#]Spirit's Eve Notice",
+      "translation": "Вітаю, @,^Відчуваєш холод у повітрі? Можливо, це просто наближається зима...^А може, це крижаний дотик темного привида, який допоможе нам відсвяткувати завтрашній Переддень духів.^Якщо хочеш долучитися, приходь у містечко о 22:00.^  — Мер Льюїс[#]Оголошення про Переддень духів",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_7",
+      "english": "Dear @,^Tomorrow we're all gathering in front of Marnie's house for the Festival of Ice.^^It's a celebration of winter... there'll be snowmen, ice sculptures, and an ice fishing competition!^Arrive between 9 AM and 2 PM if you'd like to participate.^  -Mayor Lewis[#]Festival Of Ice Notice",
+      "translation": "Вітаю, @,^Завтра ми всі збираємося перед будинком Марні на Фестиваль льоду.^^Це свято зими... Будуть сніговики, льодові скульптури й змагання з підлідної риболовлі!^Якщо хочеш долучитися, приходь із 9:00 до 14:00.^  — Мер Льюїс[#]Оголошення про Фестиваль льоду",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_14",
+      "english": "Starting tomorrow, a traveling merchant fleet will dock at Pelican Town for the yearly night market.^^The market starts at 5pm, and will be in port for the next three days.^^Please visit the beach after 5pm to join the festivities. There's free coffee![#]Night Market Notice",
+      "translation": "Від завтра в містечку Пелікан пришвартується мандрівний торговий флот і відкриється щорічний Нічний ринок.^^Ринок починає роботу о 17:00 й залишатиметься в порту наступні три дні.^^Завітайте на пляж після 17:00, щоб долучитися до святкувань. Кава безплатна![#]Оголошення про Нічний ринок",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_11_1",
+      "english": "MISSING:^I lost my favorite Axe! If you find it, please return ASAP. I'm having a tough time without it. There's 250g in it for whoever finds the thing.^   -Robin%item quest 100 %%[#]Robin Lost Her Axe",
+      "translation": "ЗНИКЛА:^Я загубила свою улюблену Сокиру! Якщо знайдеш, поверни її ЯКНАЙШВИДШЕ. Без неї мені дуже важко. Той, хто її знайде, отримає 250g.^   — Робін%item quest 100 %%[#]Робін загубила Сокиру",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_19_1",
+      "english": "Farmer @-^I have a request for you. I need fresh cauliflower for a recipe I want to make. Could you bring me one?^   -Jodi%item quest 101 %%[#]Jodi Asks For Cauliflower",
+      "translation": "@.^У мене до тебе прохання. Для одного рецепта потрібна свіжа Цвітна капуста. Можеш принести одну?^   — Джоді%item quest 101 %%[#]Джоді просить Цвітну капусту",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_3_1",
+      "english": "@-^This is embarrassing... I lost my lucky purple shorts. I'm telling you because I think I can trust you.^If you find them, bring them back to me DISCREETLY. I'll pay well.^Thanks.^   -Mayor Lewis%item quest 102 %%[#]Lewis Asks For A Favor",
+      "translation": "@.^Це незручно... Я загубив свої щасливі фіолетові шорти. Розповідаю тобі, бо думаю, що можу довіряти.^Якщо знайдеш їх, поверни мені НЕПОМІТНО. Я добре заплачу.^Дякую.^   — Мер Льюїс%item quest 102 %%[#]Льюїс просить про послугу",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_14_1",
+      "english": "Hey Kid,^My throat's about as dry as a desert bone. I'm real thirsty for a pale ale. You got one? Regular old beer won't do. I need a pale ale.^   -Pam%item quest 103 %%[#]Pam's Request",
+      "translation": "Гей, дитино,^У горлі сухо, мов стара кістка в пустелі. Страшенно хочеться світлого елю. У тебе немає? Звичайне старе пиво не підійде. Мені потрібен Світлий ель.^   — Пем%item quest 103 %%[#]Прохання Пем",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_20_1",
+      "english": "@-^I'm gathering data on the correlation between soil alkalinity and crop fructose levels. Long story short, I need a fresh melon from your farm. If you brought me one I'd be very grateful.^   -Demetrius%item quest 104 %%[#]Demetrius Asks For A Sample",
+      "translation": "@.^Я збираю дані про зв’язок між лужністю ґрунту та рівнем фруктози в урожаї. Коротше кажучи, мені потрібна свіжа Диня з твоєї ферми. Буду дуже вдячний, якщо принесеш одну.^   — Деметріус%item quest 104 %%[#]Деметріус просить зразок",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_25_1",
+      "english": "To Farmer @:^My knee's acting up again, and you know what helps? ^Rubbing the darn thing with hot pepper.^ Trouble is, my supply's run dry. If you've got one to spare I'd be much obliged.^   -George %item quest 105 %%[#]George Needs A Pepper",
+      "translation": "@:^Моє коліно знову розболілося, а знаєш, що допомагає? ^Натерти клятуще місце Гострим перцем.^ От біда: мої запаси скінчилися. Якщо маєш зайвий, я буду дуже вдячний.^   — Джордж %item quest 105 %%[#]Джорджу потрібен Перець",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_3_1",
+      "english": "Dear @,^I'd like to give my cows a special treat. They're such good girls and hungry, too. Could you bring me one bunch of amaranth? They love the stuff. ^Thanks, Dear.^   -Marnie %item quest 106 %%[#]Marnie's Request",
+      "translation": "Вітаю, @,^Хочу дати своїм коровам особливе частування. Вони такі хороші дівчатка, а ще голодні. Можеш принести один пучок Амаранту? Вони його обожнюють. ^Дякую, сонечко.^   — Марні %item quest 106 %%[#]Прохання Марні",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_8_1",
+      "english": "Hello,^It's blackberry season right now. The bushes are full of them. I want to pick some, but I lost my basket. Can you help?^   -Linus%item quest 107 %%[#]Linus Lost His Basket",
+      "translation": "Вітаю,^Зараз сезон ожини. Кущі нею всипані. Я хочу трохи назбирати, але загубив кошик. Допоможеш?^   — Лінус%item quest 107 %%[#]Лінус загубив кошик",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_19_1",
+      "english": "@-^I'd like to buy a pumpkin from you. My daughter and I want to carve a jack-o-lantern for the upcoming Spirit's Eve festival. ^   -Caroline%item quest 108 %%[#]Caroline's Request",
+      "translation": "@.^Я хочу купити в тебе Гарбуз. Ми з донькою плануємо вирізати ліхтар Джека до майбутнього Переддня духів. ^   — Керолайн%item quest 108 %%[#]Прохання Керолайн",
+      "reviewed": true
+    }
+  ]
+}

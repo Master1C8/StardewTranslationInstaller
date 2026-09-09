@@ -1,0 +1,41 @@
+{
+  "scope": "Strings/StringsFromMaps",
+  "records": 367,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "readThrough": 367,
+  "status": "completed-all-findings-corrected",
+  "review": "Read all367 English/Serbian pairs in source order in three complete segments (1–125,126–250,251–367), checking prop descriptions, correspondence voice, food-label satire, names, puzzle clues, schedules, numbers and control delimiters.",
+  "newTextIssues": 2,
+  "corrections": [
+    {
+      "keys": [
+        "Blacksmith.5",
+        "Blacksmith.6"
+      ],
+      "reason": "Correct reflexive-clitic placement in the duplicate molten-metal description.",
+      "batch": "0109-maps-shops-haley"
+    },
+    {
+      "keys": [
+        "SamHouse.6"
+      ],
+      "reason": "Replace nominative quantity after existential има with grammatical има много гела.",
+      "batch": "0112-maps-family-town"
+    }
+  ],
+  "layoutCorrections": [
+    {
+      "keys": [
+        "Town-Christmas.4",
+        "Town-EggFestival.4",
+        "Town-Fair.8",
+        "Town-Halloween.4",
+        "Town.5"
+      ],
+      "reason": "Restore exact single leading source space, replacing two draft spaces; opening hours unchanged."
+    }
+  ],
+  "finalLocaleCleanAudits": 0,
+  "translationSha256": "8df6b7e5833fd40186dbc804e4c6983d7b837a38fe5d2f78c424a989b650c1ed"
+}

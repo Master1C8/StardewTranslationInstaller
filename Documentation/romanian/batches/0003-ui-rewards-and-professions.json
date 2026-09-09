@@ -1,0 +1,340 @@
+{
+  "locale": "ro",
+  "target": "Strings/UI",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Direct English editorial review of bundle rewards, letters and all profession branches. Profession labels follow stable glossary IDs, including Săpător and Brută. Every percentage, additive bonus, probability condition and halving is preserved. PV abbreviates puncte de viață, the glossary explanation of Health/HP. The recipe placeholder is governed by de gătit/confecționare.",
+  "entries": {
+    "JunimoNote_RewardCrafts": {
+      "source": "Reward: Bridge Repair",
+      "translation": "Recompensă: Repararea Podului"
+    },
+    "JunimoNote_RewardPantry": {
+      "source": "Reward: Greenhouse",
+      "translation": "Recompensă: Seră"
+    },
+    "JunimoNote_RewardVault": {
+      "source": "Reward: Bus Repair",
+      "translation": "Recompensă: Repararea Autobuzului"
+    },
+    "JunimoNote_RewardFishTank": {
+      "source": "Reward: Glittering Boulder Removed",
+      "translation": "Recompensă: Bolovanul Strălucitor îndepărtat"
+    },
+    "JunimoNote_MustBeAtCC": {
+      "source": "Must be deposited at Community Center",
+      "translation": "Trebuie depus la Centrul comunitar"
+    },
+    "JunimoNote_MustBeAtAJM": {
+      "source": "Must be deposited at Abandoned JojaMart",
+      "translation": "Trebuie depus la JojaMart abandonat"
+    },
+    "LetterViewer_MoneyIncluded": {
+      "source": "$ {0}g enclosed",
+      "translation": "$ {0}g în plic"
+    },
+    "LetterViewer_LearnedRecipe": {
+      "source": "New {0} recipe:",
+      "translation": "Rețetă nouă de {0}:"
+    },
+    "LetterViewer_LearnedRecipeName": {
+      "source": "'{0}'",
+      "translation": "'{0}'",
+      "preservationReason": "Technical quoted placeholder only; recipe wording is supplied by the translated recipe name."
+    },
+    "LevelUp_Title": {
+      "source": "Level {0} {1}",
+      "translation": "{1}: nivel {0}"
+    },
+    "LevelUp_ExtraInfo_Farming1": {
+      "source": "+1 Watering Can Proficiency",
+      "translation": "+1 Pricepere cu stropitoarea"
+    },
+    "LevelUp_ExtraInfo_Farming2": {
+      "source": "+1 Hoe Proficiency",
+      "translation": "+1 Pricepere cu sapa"
+    },
+    "LevelUp_ExtraInfo_Mining": {
+      "source": "+1 Pickaxe Proficiency",
+      "translation": "+1 Pricepere cu târnăcopul"
+    },
+    "LevelUp_ExtraInfo_Fishing": {
+      "source": "+1 Fishing Rod Proficiency",
+      "translation": "+1 Pricepere cu undița"
+    },
+    "LevelUp_ExtraInfo_Foraging1": {
+      "source": "+1 Axe Proficiency",
+      "translation": "+1 Pricepere cu toporul"
+    },
+    "LevelUp_ExtraInfo_Foraging2": {
+      "source": "Trees sometimes drop seeds.",
+      "translation": "Copacii lasă uneori semințe."
+    },
+    "LevelUp_ExtraInfo_Foraging3": {
+      "source": "+1 Wild berry harvesting.",
+      "translation": "+1 fruct de pădure la cules."
+    },
+    "LevelUp_ExtraInfo_Combat": {
+      "source": "+5 HP",
+      "translation": "+5 PV"
+    },
+    "LevelUp_ExtraInfo_Luck": {
+      "source": "Luck Increased",
+      "translation": "Noroc mărit"
+    },
+    "LevelUp_ProfessionName_Rancher": {
+      "source": "Rancher",
+      "translation": "Crescător"
+    },
+    "LevelUp_ProfessionDescription_Rancher": {
+      "source": "Animal products worth 20% more.",
+      "translation": "Produsele animale valorează cu 20% mai mult."
+    },
+    "LevelUp_ProfessionName_Tiller": {
+      "source": "Tiller",
+      "translation": "Cultivator"
+    },
+    "LevelUp_ProfessionDescription_Tiller": {
+      "source": "Crops worth 10% more.",
+      "translation": "Culturile valorează cu 10% mai mult."
+    },
+    "LevelUp_ProfessionName_Coopmaster": {
+      "source": "Coopmaster",
+      "translation": "Maestru al cotețului"
+    },
+    "LevelUp_ProfessionDescription_Coopmaster": {
+      "source": "Befriend coop animals quicker.\nIncubation time cut in half.",
+      "translation": "Te împrietenești mai repede cu animalele din coteț.\nTimpul de incubare se reduce la jumătate."
+    },
+    "LevelUp_ProfessionName_Shepherd": {
+      "source": "Shepherd",
+      "translation": "Păstor"
+    },
+    "LevelUp_ProfessionDescription_Shepherd": {
+      "source": "Befriend barn animals quicker.\nSheep produce wool faster.",
+      "translation": "Te împrietenești mai repede cu animalele din grajd.\nOile produc lână mai repede."
+    },
+    "LevelUp_ProfessionName_Artisan": {
+      "source": "Artisan",
+      "translation": "Meșteșugar"
+    },
+    "LevelUp_ProfessionDescription_Artisan": {
+      "source": "Artisan goods (wine, cheese, oil, etc.) worth 40% more.",
+      "translation": "Produsele artizanale (vin, brânză, ulei etc.) valorează cu 40% mai mult."
+    },
+    "LevelUp_ProfessionName_Agriculturist": {
+      "source": "Agriculturist",
+      "translation": "Agricultor"
+    },
+    "LevelUp_ProfessionDescription_Agriculturist": {
+      "source": "All crops grow 10% faster.",
+      "translation": "Toate culturile cresc cu 10% mai repede."
+    },
+    "LevelUp_ProfessionName_Fisher": {
+      "source": "Fisher",
+      "translation": "Pescar"
+    },
+    "LevelUp_ProfessionDescription_Fisher": {
+      "source": "Fish worth 25% more.",
+      "translation": "Peștii valorează cu 25% mai mult."
+    },
+    "LevelUp_ProfessionName_Trapper": {
+      "source": "Trapper",
+      "translation": "Capcanar"
+    },
+    "LevelUp_ProfessionDescription_Trapper": {
+      "source": "Resources required to craft crab pots reduced.",
+      "translation": "Ai nevoie de mai puține resurse pentru a confecționa capcane pentru crabi."
+    },
+    "LevelUp_ProfessionName_Angler": {
+      "source": "Angler",
+      "translation": "Pescar sportiv"
+    },
+    "LevelUp_ProfessionDescription_Angler": {
+      "source": "Fish worth 50% more.",
+      "translation": "Peștii valorează cu 50% mai mult."
+    },
+    "LevelUp_ProfessionName_Pirate": {
+      "source": "Pirate",
+      "translation": "Pirat"
+    },
+    "LevelUp_ProfessionDescription_Pirate": {
+      "source": "Chance to find treasure doubled.",
+      "translation": "Șansa de a găsi comori se dublează."
+    },
+    "LevelUp_ProfessionName_Mariner": {
+      "source": "Mariner",
+      "translation": "Marinar"
+    },
+    "LevelUp_ProfessionDescription_Mariner": {
+      "source": "Crab pots no longer produce junk items.",
+      "translation": "Capcanele pentru crabi nu mai adună vechituri."
+    },
+    "LevelUp_ProfessionName_Luremaster": {
+      "source": "Luremaster",
+      "translation": "Maestru al momelii"
+    },
+    "LevelUp_ProfessionDescription_Luremaster": {
+      "source": "Crab pots no longer require bait.",
+      "translation": "Capcanele pentru crabi nu mai au nevoie de momeală."
+    },
+    "LevelUp_ProfessionName_Forester": {
+      "source": "Forester",
+      "translation": "Pădurar"
+    },
+    "LevelUp_ProfessionDescription_Forester": {
+      "source": "Trees drop 25% more wood.",
+      "translation": "Copacii lasă cu 25% mai mult lemn."
+    },
+    "LevelUp_ProfessionName_Gatherer": {
+      "source": "Gatherer",
+      "translation": "Culegător"
+    },
+    "LevelUp_ProfessionDescription_Gatherer": {
+      "source": "Chance for double harvest of foraged items.",
+      "translation": "Ai șansa de a aduna de două ori mai multe obiecte la cules."
+    },
+    "LevelUp_ProfessionName_Lumberjack": {
+      "source": "Lumberjack",
+      "translation": "Tăietor de lemne"
+    },
+    "LevelUp_ProfessionDescription_Lumberjack": {
+      "source": "All trees have a chance to drop hardwood.",
+      "translation": "Orice copac are șansa să lase lemn de esență tare."
+    },
+    "LevelUp_ProfessionName_Tapper": {
+      "source": "Tapper",
+      "translation": "Colector de sevă"
+    },
+    "LevelUp_ProfessionDescription_Tapper": {
+      "source": "Syrups worth 25% more.",
+      "translation": "Siropurile valorează cu 25% mai mult."
+    },
+    "LevelUp_ProfessionName_Botanist": {
+      "source": "Botanist",
+      "translation": "Botanist",
+      "preservationReason": "Approved Romanian glossary profession; independently reviewed Romanian homograph."
+    },
+    "LevelUp_ProfessionDescription_Botanist": {
+      "source": "Foraged items are always highest quality.",
+      "translation": "Obiectele culese au întotdeauna cea mai înaltă calitate."
+    },
+    "LevelUp_ProfessionName_Tracker": {
+      "source": "Tracker",
+      "translation": "Urmăritor"
+    },
+    "LevelUp_ProfessionDescription_Tracker": {
+      "source": "Location of forageable items revealed.",
+      "translation": "Îți arată unde se află obiectele de cules."
+    },
+    "LevelUp_ProfessionName_Miner": {
+      "source": "Miner",
+      "translation": "Miner",
+      "preservationReason": "Approved Romanian glossary profession; independently reviewed Romanian homograph."
+    },
+    "LevelUp_ProfessionDescription_Miner": {
+      "source": "+1 ore per vein.",
+      "translation": "+1 minereu pe zăcământ."
+    },
+    "LevelUp_ProfessionName_Geologist": {
+      "source": "Geologist",
+      "translation": "Geolog"
+    },
+    "LevelUp_ProfessionDescription_Geologist": {
+      "source": "Chance for gems to appear in pairs.",
+      "translation": "Nestematele au șansa să apară în perechi."
+    },
+    "LevelUp_ProfessionName_Blacksmith": {
+      "source": "Blacksmith",
+      "translation": "Fierar"
+    },
+    "LevelUp_ProfessionDescription_Blacksmith": {
+      "source": "Metal bars worth 50% more.",
+      "translation": "Lingourile metalice valorează cu 50% mai mult."
+    },
+    "LevelUp_ProfessionName_Prospector": {
+      "source": "Prospector",
+      "translation": "Prospector",
+      "preservationReason": "Approved Romanian glossary profession; independently reviewed Romanian homograph."
+    },
+    "LevelUp_ProfessionDescription_Prospector": {
+      "source": "Chance to find coal doubled.",
+      "translation": "Șansa de a găsi cărbune se dublează."
+    },
+    "LevelUp_ProfessionName_Excavator": {
+      "source": "Excavator",
+      "translation": "Săpător"
+    },
+    "LevelUp_ProfessionDescription_Excavator": {
+      "source": "Chance to find geodes doubled.",
+      "translation": "Șansa de a găsi geode se dublează."
+    },
+    "LevelUp_ProfessionName_Gemologist": {
+      "source": "Gemologist",
+      "translation": "Gemolog"
+    },
+    "LevelUp_ProfessionDescription_Gemologist": {
+      "source": "Gems worth 30% more.",
+      "translation": "Nestematele valorează cu 30% mai mult."
+    },
+    "LevelUp_ProfessionName_Fighter": {
+      "source": "Fighter",
+      "translation": "Luptător"
+    },
+    "LevelUp_ProfessionDescription_Fighter": {
+      "source": "All attacks deal 10% more damage.",
+      "translation": "Toate atacurile provoacă cu 10% mai multe daune."
+    },
+    "LevelUp_ProfessionName_Scout": {
+      "source": "Scout",
+      "translation": "Cercetaș"
+    },
+    "LevelUp_ProfessionDescription_Scout": {
+      "source": "Critical strike chance increased by 50%.",
+      "translation": "Șansa de lovitură critică crește cu 50%."
+    },
+    "LevelUp_ProfessionName_Brute": {
+      "source": "Brute",
+      "translation": "Brută"
+    },
+    "LevelUp_ProfessionDescription_Brute": {
+      "source": "Deal 15% more damage.",
+      "translation": "Provoci cu 15% mai multe daune."
+    },
+    "LevelUp_ProfessionName_Defender": {
+      "source": "Defender",
+      "translation": "Apărător"
+    },
+    "LevelUp_ProfessionDescription_Defender": {
+      "source": "+25 HP.",
+      "translation": "+25 PV."
+    },
+    "LevelUp_ProfessionName_Acrobat": {
+      "source": "Acrobat",
+      "translation": "Acrobat",
+      "preservationReason": "Approved Romanian glossary profession; independently reviewed Romanian homograph."
+    },
+    "LevelUp_ProfessionDescription_Acrobat": {
+      "source": "Cooldown on special moves cut in half.",
+      "translation": "Timpul de reîncărcare al mișcărilor speciale se reduce la jumătate."
+    },
+    "LevelUp_ProfessionName_Desperado": {
+      "source": "Desperado",
+      "translation": "Temerar"
+    },
+    "LevelUp_ProfessionDescription_Desperado": {
+      "source": "Critical strikes are deadlier.",
+      "translation": "Loviturile critice sunt mai letale."
+    },
+    "LevelUp_ChooseProfession": {
+      "source": "Choose a profession:",
+      "translation": "Alege o profesie:"
+    }
+  }
+}

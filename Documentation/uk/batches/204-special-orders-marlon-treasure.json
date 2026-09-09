@@ -1,0 +1,54 @@
+{
+  "id": "204-special-orders-marlon-treasure",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the final six special-order strings for Marlon treasure hunts. Item terminology was matched to the canonical glossary and reviewed item names; all runtime placeholders were preserved.",
+    "reviewedTextSHA256": "fdb46e4972742a016d130872eb7b9e27f43ac6322492137b02b3f28e4c433aaa",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 8
+  },
+  "records": [
+    {
+      "target": "Strings/SpecialOrderStrings",
+      "key": "Marlon_DF_2_Name",
+      "english": "Treasure Hunt",
+      "translation": "Полювання за скарбами",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/SpecialOrderStrings",
+      "key": "Marlon_DF_2_Text",
+      "english": "Collect {Treasure:Count} {Treasure:LocalizedName} from the Skull Cavern.",
+      "translation": "Зберіть у Печері Черепа {Treasure:LocalizedName}: {Treasure:Count}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/SpecialOrderStrings",
+      "key": "Marlon_DF_2_Objective",
+      "english": "Collect {Treasure:Count} {Treasure:LocalizedName}.",
+      "translation": "Зберіть {Treasure:LocalizedName}: {Treasure:Count}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/SpecialOrderStrings",
+      "key": "Marlon_DF_Item_0_LocalizedName",
+      "english": "Omni Geodes",
+      "translation": "Омні-геоди",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/SpecialOrderStrings",
+      "key": "Marlon_DF_Item_1_LocalizedName",
+      "english": "pieces of Iridium Ore",
+      "translation": "шматки Іридієвої руди",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/SpecialOrderStrings",
+      "key": "Marlon_DF_Item_2_LocalizedName",
+      "english": "Prismatic Shards",
+      "translation": "Райдужні уламки",
+      "reviewed": true
+    }
+  ]
+}

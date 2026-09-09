@@ -1,0 +1,432 @@
+{
+  "id": "338-cs-fortune-events-and-farmer-status-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 fortune-teller, fishing result, receipt, skill and farmer-status strings. Canonical character, skill, combat, journal and farm terminology, placeholders, dialogue commands, carets, concatenated spaces and speaker gender were checked against the English source.",
+    "reviewedTextSHA256": "149d2b8eedecb9e6eb729b7d963890f074753d34b9f95ae0fed89836f910257c",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 124
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1796",
+      "english": "Miso",
+      "translation": "Місо",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1797",
+      "english": "Snooch",
+      "translation": "Снуч",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1798",
+      "english": "No? Okay... I'll find a different home for the poor thing.$s",
+      "translation": "Ні? Гаразд... Я знайду для бідолашної тваринки іншу домівку.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1801",
+      "english": "Oh! So it's you?$h#$b#Ah... {1} {0}! Thanks.",
+      "translation": "О! То це ти?$h#$b#А... {1} {0}! Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1803",
+      "english": "Not a valid gift.",
+      "translation": "Неприпустимий подарунок.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1810",
+      "english": "Ahh... I see you in the saloon, surrounded by friends. It doesn't seem like you have any favorites... you're popular with everyone!",
+      "translation": "Ага... Бачу тебе в салуні в оточенні друзів. Схоже, ти нікого не вирізняєш... тебе люблять усі!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1811",
+      "english": "Ahh... yes. I see you at the beach. There's some kind of event taking place. You walk up to {0} and say something funny... Hmmm... It seems like you two are good friends.",
+      "translation": "Ага... так. Бачу тебе на пляжі. Там відбувається якась подія. Ти підходиш до {0} і кажеш щось кумедне... Гм... Схоже, ви добрі друзі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1813",
+      "english": "Ahhh... yes. It's {0}'s birthday. ",
+      "translation": "А-а... так. У {0} день народження. ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1815",
+      "english": "He thought everyone forgot, but then you show up with a nice gift. What a good friend.",
+      "translation": "Він думав, що всі забули, але тут з’являєшся ти з чудовим подарунком. Оце справжній друг.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1816",
+      "english": "She thought everyone forgot, but then you show up with a nice gift. What a good friend.",
+      "translation": "Вона думала, що всі забули, але тут з’являєшся ти з чудовим подарунком. Оце справжній друг.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1818",
+      "english": "Hmm... I see you laying on a cot... It looks like a hospital. {0} is there to keep you company while you recover. What a nice friend.",
+      "translation": "Гм... Бачу, як ти лежиш на ліжку... Схоже, це лікарня. {0} поруч і підтримує тебе під час одужання. Який добрий друг.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1820",
+      "english": "Ahh... Indeed. I see you in a room, having a conversation with a man.",
+      "translation": "Ага... Саме так. Бачу тебе в кімнаті за розмовою з чоловіком.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1821",
+      "english": "Ahh... Indeed. I see you in a room, having a conversation with a lady.",
+      "translation": "Ага... Саме так. Бачу тебе в кімнаті за розмовою з жінкою.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1823",
+      "english": "..  Oh! It's {0}. You seem to be close friends.",
+      "translation": "..  О! Це {0}. Схоже, ви близькі друзі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1825",
+      "english": "Hmm... I see you sitting in a plush chair by the fire... you're surrounded by luxury, yet filled with lonely desperation.",
+      "translation": "Гм... Бачу тебе в м’якому кріслі біля вогню... навколо розкіш, але всередині — відчайдушна самотність.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1826",
+      "english": "...Oh? It seems you'll be leaving more than a few heartbroken... Are you playing games with those who put their trust in you? Hmm... ",
+      "translation": "...О? Схоже, ти розіб’єш не одне серце... Невже ти граєшся з тими, хто тобі довірився? Гм... ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1827",
+      "english": "Now I see you and {0} in a field of grass. You seem happy.",
+      "translation": "Тепер бачу тебе й {0} на трав’яному полі. Ви здаєтеся щасливими.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1829",
+      "english": "Now I see you and {0} in a dimly lit room. You look serious... but not unhappy. Something important must be happening.",
+      "translation": "Тепер бачу тебе й {0} у тьмяно освітленій кімнаті. Ви маєте серйозний вигляд... але не нещасний. Напевно, відбувається щось важливе.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1831",
+      "english": "Ooo... It's dark, and I see you and a certain young man. He looks a little bashful, but happy to be with you.",
+      "translation": "О-о... Темно, і я бачу тебе з одним молодим чоловіком. Він трохи соромиться, але радий бути поруч із тобою.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1832",
+      "english": "Ooo... It's dark, and I see you and a certain young man. He looks quite hopeful, and eager to spend time with you.",
+      "translation": "О-о... Темно, і я бачу тебе з одним молодим чоловіком. Він сповнений надії й прагне провести з тобою час.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1833",
+      "english": "Ooo... It's dark, and I see you and a certain young lady. She looks a little bashful, but happy to be with you.",
+      "translation": "О-о... Темно, і я бачу тебе з однією молодою жінкою. Вона трохи соромиться, але рада бути поруч із тобою.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1834",
+      "english": "Ooo... It's dark, and I see you and a certain young lady. She looks quite hopeful, and eager to spend time with you.",
+      "translation": "О-о... Темно, і я бачу тебе з однією молодою жінкою. Вона сповнена надії й прагне провести з тобою час.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1837",
+      "english": "Hmmm... now what's this young man's name? ... I believe it starts with an '{0}'.",
+      "translation": "Гм-м... як же звати цього молодого чоловіка? ... Здається, його ім’я починається з «{0}».",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1838",
+      "english": "Hmmm... now what's this young lady's name? ... I believe it starts with an '{0}'.",
+      "translation": "Гм-м... як же звати цю молоду жінку? ... Здається, її ім’я починається з «{0}».",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1843",
+      "english": "Interesting... I see you and {0} working together on a farm. You seem very pleased about something.",
+      "translation": "Цікаво... Бачу, як ви з {0} разом працюєте на фермі. Схоже, ви чимось дуже задоволені.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1845",
+      "english": "Now I see you, middle-aged, walking through town at dusk. You pause at a window to see a family having dinner. You hang your head and hurry off into the darkness.",
+      "translation": "Тепер бачу тебе в середньому віці: у сутінках ти йдеш містом. Біля одного вікна зупиняєшся й бачиш родину за вечерею. Похнюпившись, ти квапливо зникаєш у темряві.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1846",
+      "english": "The crystal ball has moved on... Now I see you harvesting a plump, ripe melon. You're on a wonderful looking farm, bursting with life!",
+      "translation": "Видіння в кришталевій кулі змінилося... Тепер бачу, як ти збираєш велику стиглу диню. Ти на чудовій фермі, де все буяє життям!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1847",
+      "english": "The crystal ball has moved on... I see you somewhere dark... but there you are, inspecting a marvelous gemstone! It's glittering in the light of a small lantern.",
+      "translation": "Видіння в кришталевій кулі змінилося... Бачу тебе десь у темряві... ось ти розглядаєш дивовижний самоцвіт! Він мерехтить у світлі маленького ліхтаря.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1848",
+      "english": "The crystal ball has moved on... AH! You're in combat! There's something dreadful bearing down on you from the dark, but you seem more than ready to face it.",
+      "translation": "Видіння в кришталевій кулі змінилося... АХ! Ти в бою! З темряви на тебе насувається щось жахливе, але ти цілком готовий дати йому відсіч.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1849",
+      "english": "The crystal ball has moved on... Now I see you relaxing on the riverbanks, holding a fishing pole. Oh! Looks like something big is on the line!",
+      "translation": "Видіння в кришталевій кулі змінилося... Тепер бачу, як ти відпочиваєш на березі річки з вудкою в руках. О! Схоже, на гачку щось велике!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1850",
+      "english": "The crystal ball has moved on... It's you... in the forest. You spot some rare and delicious mushrooms hidden beneath a clump of grass... what a find!",
+      "translation": "Видіння в кришталевій кулі змінилося... Це ти... у лісі. Під жмутом трави тобі трапляються рідкісні й смачні гриби... оце знахідка!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1851",
+      "english": "The crystal ball has moved on... I see you in a golden room... grinning about something. Oh, I see... You're playing some kind of game and you just can't lose!",
+      "translation": "Видіння в кришталевій кулі змінилося... Бачу тебе в золотій кімнаті... ти чомусь усміхаєшся. А, зрозуміло... Ти граєш у якусь гру й просто не можеш програти!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1852",
+      "english": "Ah... the crystal ball has gone dim. That's all I can do for you, young one.",
+      "translation": "А... кришталева куля потьмяніла. Це все, що я можу для тебе зробити, юний друже.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1853",
+      "english": "Now, just keep in mind that the future isn't set in stone! Whatever I've told you today can still be changed, if you set your heart on it. Farewell.",
+      "translation": "Лише пам’ятай: майбутнє не викарбуване в камені! Усе, що я сьогодні розповіла, ще можна змінити, якщо щиро цього прагнути. Прощавай.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1857",
+      "english": "You added {0} to the soup.",
+      "translation": "Ти додав {0} до супу.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1862",
+      "english": "Abigail!",
+      "translation": "Ебіґейл!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1864",
+      "english": "It's a tie between",
+      "translation": "Нічия між",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1865",
+      "english": " and",
+      "translation": " та",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1871",
+      "english": "Willy, with 5 big, fresh fish!",
+      "translation": "Віллі з 5 великими свіжими рибинами!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1872",
+      "english": "{0}, with {1} big, slimy fish!",
+      "translation": "{0} з {1} великими слизькими рибинами!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1918",
+      "english": "You received 15 Parsnip Seeds!^^'Here's a little something to get you started.^-Mayor Lewis'",
+      "translation": "Ти отримав 15 насінин пастернаку!^^«Ось дещо для початку.^— мер Льюїс»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1919",
+      "english": "You received {1} {0}!",
+      "translation": "Ти отримав {1} {0}!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1922",
+      "english": "You received {1} x{0} !",
+      "translation": "Ти отримав {1} x{0}!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1972",
+      "english": "the farm",
+      "translation": "ферму",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1986",
+      "english": "You feel sluggish from over-exertion.",
+      "translation": "Через перенапруження тебе охопила млявість.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1987",
+      "english": "You're starting to feel exhausted.",
+      "translation": "Ти починаєш відчувати виснаження.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1991",
+      "english": "Farming",
+      "translation": "Фермерство",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1992",
+      "english": "Mining",
+      "translation": "Гірництво",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1993",
+      "english": "Fishing",
+      "translation": "Рибальство",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1994",
+      "english": "Foraging",
+      "translation": "Збиральництво",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1995",
+      "english": "Luck",
+      "translation": "Удача",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1996",
+      "english": "Combat",
+      "translation": "Бій",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2003",
+      "english": "{0} Level Up",
+      "translation": "Новий рівень навички «{0}»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2010",
+      "english": "Nice try...",
+      "translation": "Непогана спроба...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2011",
+      "english": "New Journal Entry",
+      "translation": "Новий запис у Журналі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2016",
+      "english": "Farm King",
+      "translation": "Король ферми",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2017",
+      "english": "Cropmaster",
+      "translation": "Майстер культур",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2018",
+      "english": "Agriculturist",
+      "translation": "Агроном",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2019",
+      "english": "Farmer",
+      "translation": "Фермер",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2020",
+      "english": "Rancher",
+      "translation": "Тваринник",
+      "reviewed": true
+    }
+  ]
+}

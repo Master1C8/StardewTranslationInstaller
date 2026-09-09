@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "0392-quests-010-019",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Quests",
+  "status": "reviewed",
+  "entries": {
+    "11": "Crafting/Напред към топенето/Ако ще продължаваш да копаеш в Мините, трябва да построиш Пещ./Изработи Пещ./(BC)13/12/0/-1/true",
+    "12": "ItemHarvest/Топене/След като вече имаш Пещ, можеш да топиш метал. Според указанията на Клинт, ако сложиш в Пещта 5 Медни руди и 1 Въглен, тя ще произведе Медно кюлче./Използвай Пещта, за да направиш Медно кюлче./(O)334 1/-1/0/-1/true",
+    "13": "Basic/Към Плажа/Уили те покани да посетиш Плажа южно от града. Казва, че има нещо за теб./Посети Плажа южно от града преди 5:00 следобед./-1/-1/0/-1/true",
+    "14": "Basic/Изследвай Мините/В планината северно от града има стара минна шахта. Вътре може да има ценни минерали, но Марлон намекна, че може да е опасно./Достигни ниво 5 в Мините./17/17/0/-1/false",
+    "15": "Monster/Посвещение/Ако победиш 10 слайма, ще заслужиш мястото си в Гилдията на приключенците./Победени слаймове: 0 от 10./Green_Slime 10 null false/16/0/-1/false",
+    "16": "Location/Посвещение/Победени са 10 слайма. Сега можеш да влезеш в Гилдията на приключенците./Влез в Гилдията на приключенците./AdventureGuild/-1/0/-1/false",
+    "17": "Basic/По-надълбоко в Мините/Изглежда, асансьорът в Мините още работи. С него можеш бързо да се връщаш до всяка вече открита асансьорна врата. Време е за по-дълбока експедиция./Достигни ниво 40 в Мините./18/18/0/-1/false",
+    "18": "Basic/До дъното?/Засега няма следа от дъното. Докъде ли стига?/Достигни дъното на Мините./-1/-1/0/-1/false",
+    "19": "Basic/Черепният ключ/На дъното на Мините е намерен странен ключ./Разбери предназначението на Черепния ключ./-1/-1/0/-1/false",
+    "20": "Basic/Предизвикателството на Ци/Предизвикателството е да достигнеш ниво 25 в Черепната пещера. Обещана ти е солидна награда при успех./Достигни ниво 25 в Черепната пещера./-1/-1/0/-1/false"
+  },
+  "preserveReasons": {},
+  "sourceHashes": {
+    "11": "37b1fbb3847a562b25a011375b93da42f8dd635035a3ae0e5d7c52e09e7894df",
+    "12": "1e75d271dcf4870c8df11cf9d07071cdd126d51318820fe69d731566fdcd492f",
+    "13": "946b07d52d5642d4b87d2fb2863d411932dfc80a4f73c5b2e9d78186b2501858",
+    "14": "80338048e1ba9cd7e50abe8094370256c0e023f939141a4784912c5c2f3519e8",
+    "15": "002be107ce5df80885a6bcc6052ac19a8a9b7f2f97268191f6e41345d4a03a29",
+    "16": "d0754f91f246d82eaf6ee17c041020d279efc914b983a3b90466ada5d50e0c7a",
+    "17": "3373d96d79a5c65f8b36aee79349942ecd04478feaa2d2cdfb1a65b73088d1ee",
+    "18": "8d587f822a4bdf2f3104d9be440e146c8537b2bffa11af4f4609577a58461f9a",
+    "19": "8754f0c09bc727839192ec3b5ac492202da97b52b661f488e28d98d40bc92a6f",
+    "20": "a5a7319e4b41b7f02f4770a3767a64b863a0c5cc6419af2e337e81035e9df289"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 10,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated all thirty quest titles, journal descriptions and objectives directly from English while preserving every quest type and gameplay metadata field.",
+      "Applied locked Пещ, Медна руда, Медно кюлче, Плаж, Мини, Гилдия на приключенците, Черепен ключ and Черепна пещера terminology with all source numbers intact.",
+      "Reread the complete batch for concise instructions and player-neutral Bulgarian; standardized the two mine quest titles to the locked Мините location form."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "900e7da5d0c03617a18f4397e88849677dae1313a951893ae14a0f320b5c0f17"
+  }
+}

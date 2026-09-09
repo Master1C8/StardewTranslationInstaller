@@ -1,0 +1,251 @@
+{
+  "id": "108-extra-dialogue-c",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/ExtraDialogue": "d267b636cc905be5056cd60b13d6839e821da8f968244b661c6bdd3b87bd3786"
+  },
+  "records": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Intro_Morris",
+      "english": "Ah, @... My favorite Joja member.",
+      "translation": "אה, @... חברי ג'וג'ה האהובים עליי."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue1_Morris",
+      "english": "You know, when I was first assigned to this location over %year years ago, I considered it a step back in my career.#$b#What self-respecting Joja Manager would want to preside over a tiny, backwater location like Pelican Town?$h",
+      "translation": "אתם יודעים, כשהוצבתי במיקום הזה לראשונה לפני יותר מ־%year שנים, ראיתי בכך נסיגה בקריירה שלי.#$b#איזה מנהל ג'וג'ה שמכבד את עצמו ירצה לנהל סניף קטן ונידח כמו זה שבעיירת פליקן?$h"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue2_Morris",
+      "english": "But I have to say, this valley has really grown on me, over the years.#$b#Working here has opened my eyes to a different way of life. It's hard to say this, but... It's been... a humbling experience.",
+      "translation": "אבל אני חייב לומר שלאורך השנים העמק הזה התחבב עליי מאוד.#$b#העבודה כאן פקחה את עיניי לדרך חיים אחרת. קשה לי לומר זאת, אבל... זו הייתה... חוויה שלימדה אותי צניעות."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Outro_Morris",
+      "english": "I just want to say, @... I appreciate all the hard work you've done for Joja Co.#$b#Our strength comes from our members, and you've shown exemplary drive and ingenuity. It makes me proud to work for the company.$h",
+      "translation": "אני רק רוצה לומר, @... אני מעריך את כל העבודה הקשה שעשיתם למען חברת ג'וג'ה.#$b#כוחנו בא לנו מהחברים שלנו, ואתם הפגנתם נחישות ותושייה למופת. אתם גורמים לי להתגאות בעבודתי בחברה.$h"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Intro_Spouse",
+      "english": "Hey, @.",
+      "translation": "היי, @."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Intro2_Spouse",
+      "english": "It's so beautiful up here...",
+      "translation": "יפה כאן כל כך..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Intro2_Spouse_Gruff",
+      "english": "Great view, huh?",
+      "translation": "נוף נהדר, מה?"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue1_Spouse",
+      "english": "I was just thinking about the last %year years...",
+      "translation": "הרגע חשבתי על %year השנים האחרונות..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue1B_Spouse",
+      "english": "We've been through a lot together, haven't we?$h",
+      "translation": "עברנו הרבה יחד, נכון?$h"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue2_Spouse",
+      "english": "...But look how far we've come.",
+      "translation": "...אבל הביטו כמה רחוק הגענו."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Alex",
+      "english": "I've finally discovered who I want to be... and I feel certain about the future.\"/pause 500/speak Alex \"I don't think I would've gotten here without you, @.\"",
+      "translation": "סוף סוף גיליתי מי אני רוצה להיות... ואני בטוח בעתיד.\"/pause 500/speak Alex \"לא נראה לי שהייתי מגיע לכאן בלעדיכם, @.\"",
+      "latinException": {
+        "tokens": [
+          "pause",
+          "speak",
+          "Alex"
+        ],
+        "reason": "Embedded event commands and character identifiers are preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Sebastian",
+      "english": "Before I met you, I spent most of my time turned away from reality... because I thought I'd never find happiness.#$b#...but you've shown me that the world isn't such a dark place, after all.$h\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...That's one of the reasons I love you...\"",
+      "translation": "לפני שפגשתי אתכם, ביליתי את רוב זמני בהפניית הגב למציאות... כי חשבתי שלעולם לא אמצא אושר.#$b#...אבל הראיתם לי שבכל זאת העולם אינו מקום חשוך כל כך.$h\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...זו אחת הסיבות שאני אוהב אתכם...\"",
+      "latinException": {
+        "tokens": [
+          "faceDirection",
+          "Sebastian",
+          "pause",
+          "speak",
+          "Sebastian"
+        ],
+        "reason": "Embedded event commands and character identifiers are preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Sam",
+      "english": "I feel like I've changed a lot from when we first met... you know?#$b#...you might call it 'maturity'... hehe.$10#$b#But I'm at a place, now, where I'm actually really excited about our future together...$l#$b#Even if that means just doing normal stuff, like... uh... buying groceries and changing diapers... hah...$10",
+      "translation": "אני מרגיש שהשתניתי מאוד מאז שנפגשנו לראשונה... אתם יודעים?#$b#...אפשר לקרוא לזה 'בגרות'... הה־הה.$10#$b#אבל עכשיו הגעתי למקום שבו אני ממש מתרגש מהעתיד המשותף שלנו...$l#$b#גם אם פירוש הדבר הוא לעשות דברים רגילים, כמו... אה... לקנות מצרכים ולהחליף חיתולים... הה...$10"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Shane",
+      "english": "If I hadn't met you, @... I might not even be here right now.#$b#Which would be a shame, because the bird-watching up here is phenomenal!$h\"/emote farmer 16/pause 1000/speak Shane \"Heh... I... I tend to joke a lot, because...well...$s#$b#I guess keeping things light-hearted makes it so I don't have to open up and make myself vulnerable.\"/emote Shane 28/speak Shane \"But every season that goes by, with you, I get a little more comfortable with myself.#$b#Uh.. I guess what I want to say is...#$b#I have no regrets marrying you!$h\"",
+      "translation": "אילו לא פגשתי אתכם, @... אולי אפילו לא הייתי כאן עכשיו.#$b#וחבל, כי הצפייה בציפורים כאן למעלה מדהימה!$h\"/emote farmer 16/pause 1000/speak Shane \"הה... אני... אני מרבה להתבדח, כי... טוב...$s#$b#אני מניח ששמירה על אווירה קלילה חוסכת ממני את הצורך להיפתח ולחשוף את הפגיעות שלי.\"/emote Shane 28/speak Shane \"אבל עם כל עונה שחולפת לצידכם, אני מרגיש קצת יותר בנוח עם עצמי.#$b#אה... אני מניח שמה שאני רוצה לומר הוא...#$b#אין לי שום חרטה על כך שהתחתנתי איתכם!$h\"",
+      "latinException": {
+        "tokens": [
+          "emote",
+          "farmer",
+          "pause",
+          "speak",
+          "Shane",
+          "emote",
+          "Shane",
+          "speak",
+          "Shane"
+        ],
+        "reason": "Embedded event commands and character identifiers are preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Elliott",
+      "english": "Heh... it just dawned on me...$h#$b#We've reached the summit, but not just physically... metaphorically as well.#$b#How poetic!$l",
+      "translation": "הה... פתאום הבנתי...$h#$b#הגענו לפסגה, ולא רק מבחינה גופנית... אלא גם באופן מטפורי.#$b#כמה פיוטי!$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Harvey",
+      "english": "When I'm next to you, I'm not even scared of falling off this cliff and dashing onto the sharp rocks below...$l\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#I... I love and admire you very much, @...$l\"",
+      "translation": "כשאני לידכם, אני אפילו לא מפחד ליפול מהצוק הזה ולהתרסק על הסלעים החדים שלמטה...$l\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#אני... אני אוהב ומעריץ אתכם מאוד, @...$l\"",
+      "latinException": {
+        "tokens": [
+          "jump",
+          "Harvey",
+          "shake",
+          "Harvey",
+          "pause",
+          "speak",
+          "Harvey"
+        ],
+        "reason": "Embedded event commands and character identifiers are preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Abigail",
+      "english": "Standing here, looking out on the horizon... I get a feeling of endless possibility.#$b#I'm just happy I get to explore this world, with you by my side...$l",
+      "translation": "כשאני עומדת כאן ומשקיפה אל האופק... מתעוררת בי תחושה של אפשרויות אינסופיות.#$b#אני פשוט שמחה שאני זוכה לחקור את העולם הזה כשאתם לצידי...$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Emily",
+      "english": "This is a special moment...#$b#I've always known I would be standing here with you, someday. I've always felt it in my heart.#$b#Now, it's all come true.\"/pause 500/speak Emily \"The world is a mysterious and special place...$l\"",
+      "translation": "זה רגע מיוחד...#$b#תמיד ידעתי שיום אחד אעמוד כאן איתכם. תמיד הרגשתי זאת בליבי.#$b#עכשיו הכול התגשם.\"/pause 500/speak Emily \"העולם הוא מקום מסתורי ומיוחד...$l\"",
+      "latinException": {
+        "tokens": [
+          "pause",
+          "speak",
+          "Emily"
+        ],
+        "reason": "Embedded event commands and character identifiers are preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Haley",
+      "english": "*giggle*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"Oh, it's just that...#$b#As a little girl, I always dreamed that one day, I would climb to the summit with my true love, and share a kiss.$l\"",
+      "translation": "*צחקוק*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"הו, זה פשוט ש...#$b#כשהייתי ילדה קטנה, תמיד חלמתי שיום אחד אטפס לפסגה עם אהבת חיי ואחלוק נשיקה.$l\"",
+      "latinException": {
+        "tokens": [
+          "faceDirection",
+          "farmer",
+          "true",
+          "emote",
+          "farmer",
+          "pause",
+          "speak",
+          "Haley"
+        ],
+        "reason": "Embedded event commands and character identifiers are preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Leah",
+      "english": "I think we've both found what we were looking for in this place.#$b#I wouldn't want to be anywhere else, but here with you.$l",
+      "translation": "נראה לי ששנינו מצאנו במקום הזה את מה שחיפשנו.#$b#לא הייתי רוצה להיות בשום מקום אחר מלבד כאן איתכם.$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Penny",
+      "english": "We have a beautiful home and a thriving family... it's all I've ever dreamed of, and more.$l",
+      "translation": "יש לנו בית יפה ומשפחה משגשגת... זה כל מה שאי פעם חלמתי עליו, ואף יותר.$l"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Maru",
+      "english": "You've really accomplished a lot since you moved here, @. It's incredible.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"I think it's safe to say that you were meant to be a farmer!$h\"",
+      "translation": "הגעתם להישגים רבים כל כך מאז שעברתם לכאן, @. זה מדהים.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"אפשר לומר בבטחה ש${נועדת להיות חקלאי^נועדת להיות חקלאית}$!$h\"",
+      "genderAdaptation": {
+        "subject": "current-player",
+        "evidence": "StardewValley.Dialogue.applyGenderSwitchBlocks applies the native ${male^female}$ block to dialogue for the current player gender."
+      },
+      "latinException": {
+        "tokens": [
+          "pause",
+          "faceDirection",
+          "Maru",
+          "pause",
+          "speak",
+          "Maru"
+        ],
+        "reason": "Embedded event commands and character identifiers are preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage",
+      "english": "It's been a long road...",
+      "translation": "זו הייתה דרך ארוכה..."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage2",
+      "english": "You challenged yourself to reach the summit",
+      "translation": "הצבתם לעצמכם אתגר להגיע לפסגה"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage3",
+      "english": "What an accomplishment!",
+      "translation": "איזה הישג!"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage4",
+      "english": "We've been watching every step of the way",
+      "translation": "צפינו בכם לאורך כל הדרך"
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage5",
+      "english": "And you've made us very proud!",
+      "translation": "ומילאתם אותנו גאווה!"
+    }
+  ]
+}

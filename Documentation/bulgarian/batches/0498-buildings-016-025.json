@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "0498-buildings-016-025",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/Buildings",
+  "status": "reviewed",
+  "entries": {
+    "BuildingSkinMenu_ChooseAppearance": "Избери облик за {0}.",
+    "Construction_ChooseLocation": "Къде искаш да управляваш сградите?",
+    "Barn_Name": "Обор",
+    "Barn_Description": "Приютява 4 животни, които живеят в Обор.",
+    "Barn_GeneralName": "Обор",
+    "BigBarn_Name": "Голям обор",
+    "BigBarn_Description": "Приютява 8 животни, които живеят в Обор. Позволява им да раждат. Отключва козите.",
+    "BigCoop_Name": "Голям кокошарник",
+    "BigCoop_Description": "Приютява 8 животни, които живеят в Кокошарник. Има инкубатор. Отключва патиците.",
+    "BigShed_Name": "Голям навес"
+  },
+  "sourceHashes": {
+    "BuildingSkinMenu_ChooseAppearance": "a83bea7ea2c6653b6790979c31f100810cf2c416c758a0306750f9e3eac5a940",
+    "Construction_ChooseLocation": "23b007268185999c921b6ecb8761d914455153588d265c08d151a551da52e1d3",
+    "Barn_Name": "84113c4f55bd0a7ca7ca9a7d0fab602f26839f3142d6f40000dd0ca3a1ae8b8f",
+    "Barn_Description": "123026fbc494ef3bbbd7f37aa7fefe826a7656ae0127d7a71c38c5f1643c717e",
+    "Barn_GeneralName": "84113c4f55bd0a7ca7ca9a7d0fab602f26839f3142d6f40000dd0ca3a1ae8b8f",
+    "BigBarn_Name": "f7ddc96ebb5f891fda55bb2bd248eabfd2892306d82924a1b65d16db4b15c248",
+    "BigBarn_Description": "9eeec0def488e802cf25a978ddea92b4d9d3517bf9fd076c2d57ff590f7072c1",
+    "BigCoop_Name": "1eb73c71e5b1b11039316de646fdd6fa67d3f42ea8d6984275fc9f377e04ff54",
+    "BigCoop_Description": "31a3d0d16f4bebcf1ce77194f1a564ea3670b05a21ee2a567e7c2fb4ae7db1b7",
+    "BigShed_Name": "077ce7599492bd337ce83f17486387a0f5c44209446c5b36f7435d18d5fda0c9"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 10,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated the building-appearance and construction-location prompts plus the Barn, Big Barn, Big Coop and Big Shed records directly from English.",
+      "Applied locked Обор, Голям обор, Голям кокошарник, Голям навес and Инкубатор terminology and used a placeholder-safe appearance prompt for building names of different grammatical genders.",
+      "Reread both capacity descriptions to retain the exact counts 4 and 8, birth permission, incubator inclusion and goat or duck unlocks."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "f90ace7f90c011671ba496e0dfe73dc2a6382018c9b7a5221dcd4f3144475ca4"
+  }
+}

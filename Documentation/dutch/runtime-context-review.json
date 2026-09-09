@@ -1,0 +1,58 @@
+{
+  "source": "Installed Stardew Valley.dll decompiled locally with ilspycmd 9.1.0.7988; no external translation source.",
+  "confirmed": [
+    {
+      "keys": [
+        "LearnedRecipe",
+        "LetterViewer_LearnedRecipe",
+        "LevelUp_NewRecipe"
+      ],
+      "finding": "LetterViewerMenu and LevelUpMenu load LearnedRecipe_cooking or LearnedRecipe_crafting and insert it into the recipe templates. Dutch kook/maak + {0}recept is correct."
+    },
+    {
+      "keys": [
+        "Carpenter_Upgrade"
+      ],
+      "finding": "CarpenterMenu inserts Blueprint.GetDisplayNameForBuildingToUpgrade into the hover label; Verbetering van {0} describes the required base building."
+    },
+    {
+      "keys": [
+        "Chat_HouseUpgrade"
+      ],
+      "finding": "GameLocation inserts Lexicon.getTokenizedPossessivePronoun(Game1.player.IsMale) into {1}; use Dutch zijn/haar through the Lexicon asset."
+    },
+    {
+      "keys": [
+        "PondQuery_StatusRequestPending*",
+        "PondQuery_StatusRequestOneCount"
+      ],
+      "finding": "PondQueryMenu uses display names without plural inflection for mod languages. Dutch quantity templates explicitly use {1}× {0}; the one-item branch uses 1. This preserves numerical quantity and avoids incorrect plural grammar without inventing item forms."
+    },
+    {
+      "keys": [
+        "NameChange_EasterEgg6"
+      ],
+      "finding": "CharacterCustomization supplies Lexicon.getProperArticleForWord as {0}. It is empty for all non-English languages, so Dutch can keep {0} directly adjacent to {1} inside its compound noun."
+    },
+    {
+      "keys": [
+        "Chat_BuildingBuild",
+        "Chat_BuildingMagicBuild"
+      ],
+      "finding": "Multiplayer.receiveChatInfoMessage expands aOrAn: via Utility.AOrAn; this returns literal a/an for mod languages. Keeping all source placeholders requires a Dutch-only runtime patch returning een.",
+      "requiredAction": "Patch Utility.AOrAn only while CurrentLanguageCode is mod and CurrentModLanguage.LanguageCode is nl-vnrevival. Test Dutch and unchanged other languages, then apply the two currently deferred UI translations.",
+      "coverageCredited": true,
+      "resolution": "Implemented AfterIndefiniteArticle in the shared language switcher, guarded by mod + nl-vnrevival. Built with zero errors/warnings; VNRevivalDutchProbe on .NET 6.0.32 x64 passed nine actual Harmony calls. Both UI translations applied."
+    },
+    {
+      "keys": [
+        "Dialogue.cs.679–698",
+        "%adj",
+        "%noun"
+      ],
+      "finding": "Dialogue substitutes uninflected random adjectives and nouns. English assets contain %adj in MarriageDialogue:Indoor_Day_3; %noun also occurs in Abigail:fall_Thu and MarriageDialogueMaru:Outdoor_2/Good_6. Dutch dialogue must use predicative adjective constructions or noun naming to work for both de/het nouns without changing tokens.",
+      "requiredFollowThrough": "Apply this constraint when translating the four containing dialogue entries, then validate sample substitutions."
+    }
+  ],
+  "pending": []
+}

@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "gameDataVersion": "1.6.15.24356",
+  "extractor": "Scripts/uk-extract-structured/UkExtract.csproj",
+  "extractedAssets": 49,
+  "stringLeaves": 20650,
+  "unrecordedLeaves": 0,
+  "directReferences": 4068,
+  "specialOrderReferences": 148,
+  "bundleReferences": 43,
+  "unresolved": [],
+  "candidates": [
+    {
+      "target": "Data/Buildings",
+      "pointer": "/Farmhouse/Name",
+      "english": "Farmhouse",
+      "sourceSHA256": "0b06835fb45d5ea0d44dc199e8bd1ac3b3a151459ee87aed56fea9e6ab536b1a",
+      "member": "F:StardewValley.GameData.Buildings.BuildingData.Name",
+      "documentation": "A tokenizable string for the display name (e.g. shown in the construction menu)."
+    },
+    {
+      "target": "Data/Buildings",
+      "pointer": "/Farmhouse/Description",
+      "english": "Farmhouse",
+      "sourceSHA256": "0b06835fb45d5ea0d44dc199e8bd1ac3b3a151459ee87aed56fea9e6ab536b1a",
+      "member": "F:StardewValley.GameData.Buildings.BuildingData.Description",
+      "documentation": "A tokenizable string for the description (e.g. shown in the construction menu)."
+    },
+    {
+      "target": "Data/Characters",
+      "pointer": "/???/DisplayName",
+      "english": "???",
+      "sourceSHA256": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615",
+      "member": "F:StardewValley.GameData.Characters.CharacterData.DisplayName",
+      "documentation": "A tokenizable string for the NPC's display name."
+    },
+    {
+      "target": "Data/JukeboxTracks",
+      "pointer": "/_disabled_/Name",
+      "english": "Invalid",
+      "sourceSHA256": "96c34a0719eb565c268a1626c44313a20de4f83927890933bd9b480849adb76c",
+      "member": "F:StardewValley.GameData.JukeboxTrackData.Name",
+      "documentation": "A tokenizable string for the track's display name, or null to use the ID (i.e. cue name)."
+    },
+    {
+      "target": "Data/Pets",
+      "pointer": "/Turtle/DisplayName",
+      "english": "Turtle",
+      "sourceSHA256": "5171ce3048d31e55453e6465e144e041ac1128ae40ac6f5f4b54bd7bf8e987c8",
+      "member": "F:StardewValley.GameData.Pets.PetData.DisplayName",
+      "documentation": "A tokenizable string for the pet type's display name (like \"cat\"), which can be used in dialogue."
+    }
+  ],
+  "scope": "All serialized string leaves in the 49 structured Data assets are inventoried. Reference counts are occurrences, not additional translation records. Candidate fields require a reviewed translation or an explicit preservation reason. This does not certify coverage outside these assets.",
+  "assets": [
+    {
+      "target": "Data/AdditionalFarms",
+      "sourceSHA256": "225428d9689bab67774f2491c0353202eb45f8a8999e51ae6e018f2f38616005",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.ModFarmType, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "bc7f29c157647f6716c4568069325d53dc10516eaa866d8df283975250f17f81"
+    },
+    {
+      "target": "Data/AdditionalLanguages",
+      "sourceSHA256": "4160e3b7471860da9b078bd5a1d8fdbd10c8d226934c6fcbd85353c60996bb4a",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.ModLanguage, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "target": "Data/AdditionalWallpaperFlooring",
+      "sourceSHA256": "fd6159e48c67203c847f0a9d3e1b769a16b252a092826503124080d9c9bebc66",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.ModWallpaperOrFlooring, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "df8a39615f5b2c46059632600ec69074bf6dcc92aa0a1963ab691c77863622ee"
+    },
+    {
+      "target": "Data/AudioChanges",
+      "sourceSHA256": "5edc685837cda2c87673df882efd61bdd87dd126f29ac16c97b6c0d39870e550",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.AudioCueData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "target": "Data/BigCraftables",
+      "sourceSHA256": "e0e23b6427474a57ab331d00a6c9e8f3b97453930ff75b1eb31eb14453c42889",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.BigCraftables.BigCraftableData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "6355f3594f5aa11b45dcc174aad5c9ee2a2c3c36bff0d4407448a88da0257294"
+    },
+    {
+      "target": "Data/Buffs",
+      "sourceSHA256": "1c32b3ff054b59df2f4e942015e4b7967e06d7f620f2c42f2f6543c6d88699fa",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Buffs.BuffData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "dc6d87f3a7282245e1182bb0ad4cca76a25f4198c7ced44f2532d1333a479326"
+    },
+    {
+      "target": "Data/Buildings",
+      "sourceSHA256": "1917de8574cfab091c3e40dbb6cf8243f09066a53cc41b08bd1e67f7f4ed3290",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Buildings.BuildingData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "a689867d54667898281a49be64c7a99821e20a7749f599d1ca14ee6030835762"
+    },
+    {
+      "target": "Data/Characters",
+      "sourceSHA256": "3b9519bf4887b557fb73c68834871c16755616a7ef26d84dc0bdbd95447f64a8",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Characters.CharacterData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "01fde0c27a8dd53429e1aafa0b723757ee7ec472b0a558f8297c3c94123187ee"
+    },
+    {
+      "target": "Data/ConcessionTastes",
+      "sourceSHA256": "b66dea308dea026ec0613b023947d535050ad1a5dfa45ceeb0fd973b8c47d08d",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.Movies.ConcessionTaste, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "fbbfb73473a7199cb79171f7cce0c4cf0bd57f5cf4c95ad2b2dd323f36bf94c9"
+    },
+    {
+      "target": "Data/Concessions",
+      "sourceSHA256": "756eda8c97423bd5e0ad941466a17476e12e767266221809ffadf68d05213da7",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.Movies.ConcessionItemData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "90ec184dc3eea3c339f6b0cb1404ac6a188b1173339c9c1edcb573bcdcc7d2ef"
+    },
+    {
+      "target": "Data/Crops",
+      "sourceSHA256": "f8a4479265a9218badf47d3324bfe6f2be3f0ede453cb06db278cf77721aa4c8",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Crops.CropData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "f421b7e12559b50e9707ca22fca9c6a44f35bd647e92296051271fb14ee34438"
+    },
+    {
+      "target": "Data/FarmAnimals",
+      "sourceSHA256": "84fbcb80e492b6c2c6e09f16a1d4d92bbb1081fee917ebfd6297be3c4815be65",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.FarmAnimals.FarmAnimalData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "13ecd6651466bbc14b4939ce6dea804cc8c9d9c6186a96dc4e50ca23f10b7387"
+    },
+    {
+      "target": "Data/Fences",
+      "sourceSHA256": "02b6a9156e774c9fa27dd98eaf79fdc3506501fef677cf65636cc86db719befa",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Fences.FenceData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "70ac3c35dc964944d126f9d8b0df4d2f33fd8cdb042059b5b67a82b449179c68"
+    },
+    {
+      "target": "Data/FishPondData",
+      "sourceSHA256": "0c4305097c297c6667ca9b9d2330a275cc7935a9dca5d072f1e31346f9c4cd84",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.FishPonds.FishPondData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "52d117677111f3a4466c3a85736389aa318fd703c26d480b745155ada9590c43"
+    },
+    {
+      "target": "Data/FloorsAndPaths",
+      "sourceSHA256": "9b67e0b80185e49481f9f98bce963f1b7ff3ba4c7b1f7faa08745db71231b679",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.FloorsAndPaths.FloorPathData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "8568235ab422fe2286059c93ff5ea858db4fbc95635bab8317e77abb51dcedf6"
+    },
+    {
+      "target": "Data/FruitTrees",
+      "sourceSHA256": "e9d8eb03613068fd244067539acac74546ec1ddd7461f922416b331444744f73",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.FruitTrees.FruitTreeData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "98d895f398885c73657d66364894066d4b34e655479396d66af50710823a49b3"
+    },
+    {
+      "target": "Data/GarbageCans",
+      "sourceSHA256": "c68e09f108102050a3cb96cc01e6c4f5b4f7138fd5159f01fb4a1ad952a56334",
+      "type": "StardewValley.GameData.GarbageCans.GarbageCanData",
+      "extractedJSONSHA256": "867d187b72f4aafdfc2faf2f4e26a6612afc37586b0ba7cc914fc5921338eb58"
+    },
+    {
+      "target": "Data/GiantCrops",
+      "sourceSHA256": "bb84916d88ba438ac7917e28ba0c2930441540edc5bac1a934dd1cc9c1996d72",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.GiantCrops.GiantCropData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "4970bfc1728877a7ff7df8641e4a6f3d1b263c84fc787adbac8ce4f271e0687e"
+    },
+    {
+      "target": "Data/HomeRenovations",
+      "sourceSHA256": "c535c9fc2fcef20cf9a4f74656130300f17e9ac37a954a3b7053e4494f9654aa",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.HomeRenovations.HomeRenovation, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "3591d6cb606b8517132dc1dafb93a9db9fe0770fa1d972818036fe18aa7155f9"
+    },
+    {
+      "target": "Data/IncomingPhoneCalls",
+      "sourceSHA256": "2acf9a516a073a39cc19f471b07f2da87bc59d1763f965be58befbf5faf9b7d6",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.IncomingPhoneCallData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "850467a40e0f2c36f61a9663d24dc7fb2b2b6df49bd8bb48b159a7d49202fec2"
+    },
+    {
+      "target": "Data/JukeboxTracks",
+      "sourceSHA256": "6c6a32ff96b7fd4f5be1ddb4b0f3bdda3399c838d4b1947cd41b42889aca51c3",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.JukeboxTrackData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "a3da406668838006215f4db2bbad1c0f3e11bc1c055428cac7215d30d2ccf320"
+    },
+    {
+      "target": "Data/LocationContexts",
+      "sourceSHA256": "4dad0d69bae21208591ad378d091491238833a6ce06e51be8c9026f14f2f3fa4",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.LocationContexts.LocationContextData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "a5ba00ca0d3c86070df2a55229059236422058e26496bad2297f0b43ecb9ead3"
+    },
+    {
+      "target": "Data/Locations",
+      "sourceSHA256": "adb0e19de4c88a03543454d7ed10ef281a1ee27c1ee76c657eee8008ccd8be49",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Locations.LocationData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "f44433b9b297a49f4a77382188177be0d944db35c4ff02a6ba7e57049712711a"
+    },
+    {
+      "target": "Data/LostItemsShop",
+      "sourceSHA256": "001770579f95f906b43d0cc69863cacc25aaa34fc62bf4efe318f35f2ca35609",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.LostItem, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "2bfda37a7fb33f2518968491b046544a39e7a869ffbe74b5b38c139a219c1544"
+    },
+    {
+      "target": "Data/Machines",
+      "sourceSHA256": "d77e939ec715634fe2f77506d55e8c21f701ef7ff6447f9048c677929ebc84e4",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Machines.MachineData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "d3286532bfccc53d16c5154ac0d12b9bbc50267c25a565fa339c23b272d552f1"
+    },
+    {
+      "target": "Data/MakeoverOutfits",
+      "sourceSHA256": "24d1949cb4b5abae8a012ea34e47e4594298c39d7d6972379ae68387bf2b148a",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.MakeoverOutfits.MakeoverOutfit, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "28f4930859ed97689ddf56ab5e02ac829af92e75711678a30b4bfffeb2ca64eb"
+    },
+    {
+      "target": "Data/Mannequins",
+      "sourceSHA256": "82eb9587db0a694246b2d491533daad9e88d22ac1ec5eae79f60e448d9753643",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.MannequinData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "c6ee6ed3e33569ae0df5a1da025024ae9d797dcd76ad637d130f1f3df524c2cc"
+    },
+    {
+      "target": "Data/Minecarts",
+      "sourceSHA256": "231de64ab169c26038b2d17272bab7e79c46795dac1ec2587418c100efff79c6",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Minecarts.MinecartNetworkData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "ebb6cc695d179c938342b8edc5dd667b8316a28bc429ab57c88c7918eb4c81a9"
+    },
+    {
+      "target": "Data/MonsterSlayerQuests",
+      "sourceSHA256": "02c2f5920445fbe9fa386af8cfadfb121a7a4aae587b42127d760bc11e566690",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.MonsterSlayerQuestData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "1473af31aec9c021fd3804e6681536357f7ce0887832ab7c2f6757ff548fd4f0"
+    },
+    {
+      "target": "Data/Movies",
+      "sourceSHA256": "0b6aec39244ff2fe2a1e6c542c5b02faf9d3d7c3bddfe853d6a56fdf205d1554",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.Movies.MovieData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "8387b9854f2d1fcd8fb00452811626fa81b00614b4496b018dc26d5237166348"
+    },
+    {
+      "target": "Data/MoviesReactions",
+      "sourceSHA256": "2908b7e47ee270cda159968568b0d3364c895c635fa3a838b1fd38f584912cb0",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.Movies.MovieCharacterReaction, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "ee20e59de58ac8265302e7d0d66ab64779620252728d40ee279062684fbabd28"
+    },
+    {
+      "target": "Data/MuseumRewards",
+      "sourceSHA256": "6180af57f389d68f8c96b4e8effae32a610bfa224bac6d8f77759c2c9e25aa47",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Museum.MuseumRewards, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "6bfb72eef3e8947917fc0ac1fa90a1a8769cfdd26ce8da67641cc0174baa7cd0"
+    },
+    {
+      "target": "Data/Objects",
+      "sourceSHA256": "f29fcd49bc979537645ea0dd8735c53acb39e3b8299d9ee8258ad33c4822ff30",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Objects.ObjectData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "73bbe23b4bc3c62dc87e7ebd72c4bf1617973c544c413f32fe7f6d765325b200"
+    },
+    {
+      "target": "Data/Pants",
+      "sourceSHA256": "62feb36593e7238c06cb83616dfe235b8f5e99ea8b15a5fb97d82be000e43804",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Pants.PantsData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "b79a5391d832229f527d44779a7e8d09f73bdff33ea525b54ef1083c9f7685f6"
+    },
+    {
+      "target": "Data/PassiveFestivals",
+      "sourceSHA256": "84f960728e3ceed666c2aa0a5fd173fa0483f69d76052bf2da45485c946229ae",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.PassiveFestivalData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "54d89f3c66958a288d8c97886fe47f17e3a51ecb3423b686948f726529af1470"
+    },
+    {
+      "target": "Data/Pets",
+      "sourceSHA256": "be3df20caa54fc05a445c8881cdf051af6d5de0c90318422aee66d8ab2f1949f",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Pets.PetData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "4755ced8444ab4aa5cbad66c6a73f6d1e04686b1ea7d06bd11ded589fc1ae775"
+    },
+    {
+      "target": "Data/Powers",
+      "sourceSHA256": "ea9ff4ce0d7d77fc167f24052f4d1bac6a0ecdd160ee3eb8f697ceb544f72e79",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Powers.PowersData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "24cdaca9f65a9fa18228e77f6e4ba4752be69ed80cea22293a1ea973141bdd38"
+    },
+    {
+      "target": "Data/RandomBundles",
+      "sourceSHA256": "67390e9d98451b6dd5b10a5daea5a82da479a3bf1992f8d24e9d00d08b9b1b75",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.Bundles.RandomBundleData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "193019efcccdf2d7d5d3b12628942f237f5a62916d0cc5c581a647fa9dcff231"
+    },
+    {
+      "target": "Data/Shirts",
+      "sourceSHA256": "f7853b9cb4612accea8b0aa6585a88fb6fa0853643ec81748a88b51964a9d08e",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Shirts.ShirtData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "bd954592dcd413d64f9cf11dc4f06d44e736525b4992a4dbb6ed099e0f5f8ade"
+    },
+    {
+      "target": "Data/Shops",
+      "sourceSHA256": "dcdc84318f1025b4a200764de11b42368a0ffe0391ca69955e2b941b36d23d48",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Shops.ShopData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "6443a6a783b113e151719c83631c9a77249d7465579d49ae6819523eba5dc79e"
+    },
+    {
+      "target": "Data/SpecialOrders",
+      "sourceSHA256": "f024a27f714d960d3dedd965258ace69b23df2875f6653d2394527e50c96726e",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.SpecialOrders.SpecialOrderData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "986a3e9faa0f2104814684e2554baafcb5939d65abd4366bbad553bfa7f65906"
+    },
+    {
+      "target": "Data/TailoringRecipes",
+      "sourceSHA256": "e239efd2219f717398067dd367046aaef54144110d43e32c1ec2e91efe3dd67c",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.Crafting.TailorItemRecipe, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "def0c61372d6e20968e4e01657312e514dee61ccf44ed7335a7db0a42d111eb2"
+    },
+    {
+      "target": "Data/Tools",
+      "sourceSHA256": "86a85235a08d9056d53fd7622ae871ce0f56fbc465415c99364e0932f7a14c97",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Tools.ToolData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "c9473826ffd0815dffc2759fd0cb7777b45f7eb0991cc6c061b63e91fdd562d0"
+    },
+    {
+      "target": "Data/TriggerActions",
+      "sourceSHA256": "67f76c05a3f2f89c44f97c6585b3e00369b8926c0501e51c97161736653db647",
+      "type": "System.Collections.Generic.List`1[[StardewValley.GameData.TriggerActionData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "62db19ffb614a99285317483fe9648e0b38c2389be394c15c64d69e5258584f2"
+    },
+    {
+      "target": "Data/Trinkets",
+      "sourceSHA256": "d231c496f3a7480898900a0ebc87c09929d5208286959da5d3bdc8be77bfa39d",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.TrinketData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "e95ffc1113795fd7b17e0744731f240f518e0dd7405cd8da41af0ec87452aae9"
+    },
+    {
+      "target": "Data/Weapons",
+      "sourceSHA256": "1d7f1c2ce413bb92b28d7282c0f288dec351b05d317efaf778f30e30e671579e",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.Weapons.WeaponData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "f1fafcef3b2cf3a867427a1f848564ea9083301bedb2896d7955aee0379770fa"
+    },
+    {
+      "target": "Data/Weddings",
+      "sourceSHA256": "bc3c7bd7292b8194a6491c2e54a5151443582ca5809087a76f060f7208149783",
+      "type": "StardewValley.GameData.Weddings.WeddingData",
+      "extractedJSONSHA256": "a015945debb975bfaa7dc46e2118cd545026e2a6325813eb98cfa779fb57740a"
+    },
+    {
+      "target": "Data/WildTrees",
+      "sourceSHA256": "11a3317bf6a5e3c5d301ec45a5c26812060f46f655c423dbf39861a73b6588d2",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.WildTrees.WildTreeData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "6fb949e556740e19ee1308dff426d1e0e6546296a0cad87f57b552c65fd5e486"
+    },
+    {
+      "target": "Data/WorldMap",
+      "sourceSHA256": "84726561dedf8fab6a6b8625bc6ad3e04b5cb688695537b68f7f28d128e30070",
+      "type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StardewValley.GameData.WorldMaps.WorldMapRegionData, StardewValley.GameData, Version=1.6.15.24356, Culture=neutral, PublicKeyToken=null]]",
+      "extractedJSONSHA256": "9ebd1123feb488d7055067acf6484eaa7c5e03c298b0c07bd1f840674fb5cb52"
+    }
+  ]
+}

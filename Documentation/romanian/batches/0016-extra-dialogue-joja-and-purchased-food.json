@@ -1,0 +1,115 @@
+{
+  "locale": "ro",
+  "target": "Data/ExtraDialogue",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Full immediate paired review of 25 dialogues. Morris retains corporate cheer, membership cost and warehouse consequence; literal question/response commands and IDs Yes/No remain English while visible answers become Da/Nu. Rescue emotion portraits preserved. Purchased-food sentences follow the inspected lexical agreement contract: empty article next to item name, masculine ceva for all adjective alternatives, masculine/neuter acel before slander noun. Dinner timing explicitly retains last night. No NPC speaker gender guessed in generic purchase dialogue.",
+  "entries": {
+    "Mines_PlayerKilled_Maru_NotSpouse": {
+      "source": "...I found you unconscious in the mines. I was hunting for minerals and I almost stepped on your head!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Te-am găsit fără cunoștință în mine. Căutam minerale și era să te calc pe cap!#$b#Ai ceva mai multă grijă data viitoare, bine?$s"
+    },
+    "Mines_PlayerKilled_Linus": {
+      "source": "...I found you unconscious in the mines. You're lucky I happened to pass by!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Te-am găsit fără cunoștință în mine. Ai noroc că am trecut pe acolo!#$b#Ai ceva mai multă grijă data viitoare, bine?$s"
+    },
+    "Mines_PlayerKilled_Spouse_PlayerMale": {
+      "source": "You were gone so long I started to get worried about you! I started crying when I saw your limp body...$s",
+      "translation": "Lipsiseși atât de mult, încât începusem să-mi fac griji pentru tine! Am început să plâng când ți-am văzut trupul inert...$s"
+    },
+    "Mines_PlayerKilled_Spouse_PlayerFemale": {
+      "source": "You were gone so long I started to get worried about you! I almost had a heart attack when I saw your limp body...$a",
+      "translation": "Lipsiseși atât de mult, încât începusem să-mi fac griji pentru tine! Era să fac infarct când ți-am văzut trupul inert...$a"
+    },
+    "Morris_PlayerSignedUp": {
+      "source": "Excellent! Welcome to Joja Corporation! Come back tomorrow and we can see about getting started on some community development projects... Oh, and don't forget your wallet! Hehe.#$b#Now, let me call Mayor Lewis and see about gutting that nasty old community center...",
+      "translation": "Excelent! Bun venit în Corporația Joja! Revino mâine și vom vedea cum putem începe niște proiecte de dezvoltare comunitară... A, și nu-ți uita portofelul! Hehe.#$b#Acum, dă-mi voie să-l sun pe primarul Lewis ca să vedem cum golim centrul acela comunitar vechi și respingător..."
+    },
+    "Morris_ComeBackLater": {
+      "source": "Come back tomorrow and we can see about getting some community improvements started... Just make sure to bring a lot of money. Hehe.",
+      "translation": "Revino mâine și vom vedea cum putem începe câteva îmbunătățiri pentru comunitate... Ai grijă doar să aduci mulți bani. Hehe."
+    },
+    "Morris_Greeting": {
+      "source": "Welcome to JojaMart! How are you doing today?#$b#I don't believe we've met. I'm Morris, Joja Customer Satisfaction Representative.#$b#When you decide you want to become a Joja Member, I'll be delighted to help make your transition a joyous experience.",
+      "translation": "Bun venit la JojaMart! Ce mai faci astăzi?#$b#Nu cred că ne-am cunoscut. Sunt Morris, reprezentant Joja pentru satisfacția clienților.#$b#Când hotărăști că vrei să devii membru Joja, te voi ajuta cu plăcere să faci din înscriere o experiență plină de bucurie."
+    },
+    "Morris_WeekendGreeting": {
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#We're currently in the process of setting up a brand-new membership system for our customers. Please check back soon to join!",
+      "translation": "Bun venit la JojaMart! Cum îți merge weekendul?#$b#Lucrăm la un sistem nou-nouț de înscriere a clienților noștri ca membri. Te rugăm să revii curând ca să te înscrii!"
+    },
+    "Morris_FirstGreeting": {
+      "source": "Welcome to JojaMart! How are you doing today?#$b#We're currently in the process of setting up a brand-new membership system for our customers. Please check back soon to join!",
+      "translation": "Bun venit la JojaMart! Ce mai faci astăzi?#$b#Lucrăm la un sistem nou-nouț de înscriere a clienților noștri ca membri. Te rugăm să revii curând ca să te înscrii!"
+    },
+    "Morris_FirstGreeting_CommunityCenterComplete": {
+      "source": "Welcome to JojaMart! How are you doing today?#$b#Unfortunately, due to unforeseen circumstances our Joja Membership offer is not currently available. I'm certain it will get sorted out soon!",
+      "translation": "Bun venit la JojaMart! Ce mai faci astăzi?#$b#Din păcate, din cauza unor împrejurări neprevăzute, oferta noastră de înscriere ca membru Joja nu este disponibilă în acest moment. Sunt convins că totul se va rezolva curând!"
+    },
+    "Morris_WeekendGreeting_CommunityCenterComplete": {
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#Unfortunately, due to unforeseen circumstances our Joja Membership offer is not currently available. I'm certain it will get sorted out soon!",
+      "translation": "Bun venit la JojaMart! Cum îți merge weekendul?#$b#Din păcate, din cauza unor împrejurări neprevăzute, oferta noastră de înscriere ca membru Joja nu este disponibilă în acest moment. Sunt convins că totul se va rezolva curând!"
+    },
+    "Morris_WeekendGreeting_MembershipAvailable": {
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#Membership is now available! With a Joja Membership, you'll be able to make improvements in the community with the help of our dedicated personnel... for a fee, of course.#$b#Oh, and another thing... Mayor Lewis promised us that if anyone else joined up, he'd let us turn that old community center into a Joja Warehouse. Isn't that wonderful?#$q -1 -1#Membership costs {0}g. Well, would you like to join us?#$r -1 -1 Yes#Yes.#$r -1 -1 No#No.",
+      "translation": "Bun venit la JojaMart! Cum îți merge weekendul?#$b#Acum te poți înscrie! Ca membru Joja, vei putea aduce îmbunătățiri comunității cu ajutorul personalului nostru devotat... contra cost, desigur.#$b#A, și încă ceva... Primarul Lewis ne-a promis că, dacă se mai înscrie cineva, ne va lăsa să transformăm vechiul centru comunitar într-un Depozit Joja. Nu-i minunat?#$q -1 -1#Înscrierea costă {0}g. Ei bine, vrei să ni te alături?#$r -1 -1 Yes#Da.#$r -1 -1 No#Nu."
+    },
+    "Morris_FirstGreeting_MembershipAvailable": {
+      "source": "Welcome to JojaMart! How are you doing today?#$b#Membership is now available! With a Joja Membership, you'll be able to make improvements in the community with the help of our dedicated personnel... for a fee, of course.#$b#Oh, and another thing... Mayor Lewis promised us that if anyone else joined up, he'd let us turn that old community center into a Joja Warehouse. Isn't that wonderful?#$q -1 -1#Membership costs {0}g. Well, would you like to join us?#$r -1 -1 Yes#Yes.#$r -1 -1 No#No.",
+      "translation": "Bun venit la JojaMart! Ce mai faci astăzi?#$b#Acum te poți înscrie! Ca membru Joja, vei putea aduce îmbunătățiri comunității cu ajutorul personalului nostru devotat... contra cost, desigur.#$b#A, și încă ceva... Primarul Lewis ne-a promis că, dacă se mai înscrie cineva, ne va lăsa să transformăm vechiul centru comunitar într-un Depozit Joja. Nu-i minunat?#$q -1 -1#Înscrierea costă {0}g. Ei bine, vrei să ni te alături?#$r -1 -1 Yes#Da.#$r -1 -1 No#Nu."
+    },
+    "Morris_WeekendGreeting_SecondPlayer": {
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#Hmm... Our records show that you live on a farm with some other folks... I'm sorry, but we can only sell a membership to the owner of your residence.",
+      "translation": "Bun venit la JojaMart! Cum îți merge weekendul?#$b#Hmm... Evidențele noastre arată că locuiești la o fermă împreună cu alte persoane... Îmi pare rău, dar putem oferi contra cost calitatea de membru doar proprietarului locuinței tale."
+    },
+    "Morris_FirstGreeting_SecondPlayer": {
+      "source": "Welcome to JojaMart! How are you doing today?#$b#Hmm... Our records show that you live on a farm with some other folks... I'm sorry, but we can only sell a membership to the owner of your residence.",
+      "translation": "Bun venit la JojaMart! Ce mai faci astăzi?#$b#Hmm... Evidențele noastre arată că locuiești la o fermă împreună cu alte persoane... Îmi pare rău, dar putem oferi contra cost calitatea de membru doar proprietarului locuinței tale."
+    },
+    "Morris_StillProcessingOrder": {
+      "source": "We're currently processing your last Community Development order. Please come back after the work is complete.",
+      "translation": "Încă procesăm ultima ta comandă de dezvoltare comunitară. Te rugăm să revii după încheierea lucrărilor."
+    },
+    "Morris_CommunityDevelopmentForm_PlayerMale": {
+      "source": "$q -1 -1#I've got the Joja Community Development Form right here for you, sir. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+      "translation": "$q -1 -1#Am aici pentru dumneavoastră Formularul Joja de dezvoltare comunitară, domnule. Doriți să aruncați o privire?#$r -1 -1 Yes#Da#$r -1 -1 No#Nu"
+    },
+    "Morris_CommunityDevelopmentForm_PlayerFemale": {
+      "source": "$q -1 -1#I've got the Joja Community Development Form right here for you, miss. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+      "translation": "$q -1 -1#Am aici pentru dumneavoastră Formularul Joja de dezvoltare comunitară, domnișoară. Doriți să aruncați o privire?#$r -1 -1 Yes#Da#$r -1 -1 No#Nu"
+    },
+    "PurchasedItem_1_QualityHigh": {
+      "source": "Hey, {0}.#$b# So I stopped by Pierre's the other day and bought {1} {2}. It was the first time I've seen one of those there in a while... #$b#I cooked it up for dinner last night... It filled the house with a {3} smell.. It was a hit!$h#$b#I'm glad Pierre's stock is starting to expand again.#$e# Anyways...",
+      "translation": "Salut, {0}.#$b# Am trecut zilele trecute pe la Pierre și am cumpărat {1}{2}. Nu mai văzusem așa ceva acolo de ceva vreme... #$b#Am pregătit aseară ceva pentru cină din ce am cumpărat... Mirosea a ceva {3} în toată casa... A avut mare succes!$h#$b#Mă bucur că Pierre începe să-și diversifice din nou marfa.#$e# În fine..."
+    },
+    "PurchasedItem_1_QualityLow": {
+      "source": "Hey, {0}.#$b# So I stopped by Pierre's the other day and bought {1} {2}. It was the first time I've seen one of those there in a while... #$b#I cooked it up for dinner last night... It filled the house with a {3} odor. I don't even want to know where Pierre found that thing.$s#$e# Anyways...",
+      "translation": "Salut, {0}.#$b# Am trecut zilele trecute pe la Pierre și am cumpărat {1}{2}. Nu mai văzusem așa ceva acolo de ceva vreme... #$b#Am pregătit aseară ceva pentru cină din ce am cumpărat... Mirosea a ceva {3} în toată casa. Nici nu vreau să știu unde a găsit Pierre lucrul acela.$s#$e# În fine..."
+    },
+    "PurchasedItem_2_QualityHigh": {
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It was pretty high-quality stuff. I'm impressed.",
+      "translation": "Salut... ai vândut {1}{2} magazinului universal zilele trecute? Cred că am cumpărat eu...#$e#Era ceva de foarte bună calitate. M-a impresionat."
+    },
+    "PurchasedItem_2_QualityHigh_Jodi": {
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It was pretty high-quality stuff. As soon as I smelled it I was back in Granny's old cottage...",
+      "translation": "Salut... ai vândut {1}{2} magazinului universal zilele trecute? Cred că am cumpărat eu...#$e#Era ceva de foarte bună calitate. De cum i-am simțit mirosul, parcă eram din nou în vechea căsuță a bunicii..."
+    },
+    "PurchasedItem_2_QualityLow": {
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#The quality was decent.",
+      "translation": "Salut... ai vândut {1}{2} magazinului universal zilele trecute? Cred că am cumpărat eu...#$e#Calitatea era acceptabilă."
+    },
+    "PurchasedItem_3_QualityLow_Rude": {
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was {4}! No wonder Pierre was selling that {5} for so cheap...",
+      "translation": "Am fost aseară la cumpărături și am luat {1}{2} la reducere, cu doar {3}g.#$e# Era ceva {4}! Nu-i de mirare că Pierre vindea acel {5} atât de ieftin..."
+    },
+    "PurchasedItem_3_QualityHigh_Rude": {
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was actually pretty {4}.",
+      "translation": "Am fost aseară la cumpărături și am luat {1}{2} la reducere, cu doar {3}g.#$e# De fapt, era ceva destul de {4}."
+    }
+  }
+}

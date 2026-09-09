@@ -1,0 +1,14 @@
+{
+  "id": "0231-data-events-harvey-room",
+  "locale": "sr",
+  "target": "Data/Events/HarveyRoom",
+  "glossarySha256": "717e409d631b59e1069713078c555dee4f7ee3f658bdbe1d620a066c87902fab",
+  "review": "source-meaning-terminology-Serbian-grammar-voice-context-tokens",
+  "entries": {
+    "normal": "pause 400/speak Harvey \"Извини што сам сав рашчупан... Нисам знао да долазиш.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Хеј, чини ми се да чујем авион изнад нас...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, дођи овамо!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Погледај!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"Као дете, увек сам сањао да постанем пилот.\"/pause 1000/speak Harvey \"...Али због слабог вида и паралишућег страха од висине, тај сан је почео да бледи.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"У реду је... немој да тугујеш.#$b#Научио сам да прихватим своје место у животу. Не може свако да оствари своје снове... свет је једноставно такав.\"/pause 1600/speak Harvey \"Хеј, да ти покажем своје моделе авиона. Управо сам завршио нови луксузни комплет ТР-Старберд.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end"
+  },
+  "smallBatchReason": "HarveyRoom contains one self-contained scene whose dialogue is duplicated by a Hospital event and must stay consistent.",
+  "contextNotes": {
+    "normal": "Harvey’s masculine self-reference, aviation terminology and ТР-Старберд model name are localized consistently with the duplicate Hospital scene. Player-directed wording is gender-neutral."
+  }
+}

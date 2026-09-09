@@ -1,0 +1,580 @@
+{
+  "id": "027-marnie-jas-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Marnie and Jas dialogue entry. Character voice, child speech, gender and response branches, relationship and world-state conditions, pet placeholders, item and location references, dialogue commands, emotes, pauses, separators, and canonical glossary terms were checked against English. The ellipsis-only sentinel is explicitly preserved. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "bf11f3a7878494e270bcd4035ab43f0ca52c6952a9c16115a69670eaa91d14db",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 13
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Introduction",
+      "english": "Ah, Mayor Lewis told me you just arrived. I'm Marnie!#$e#I sell livestock and animal care products at my ranch. You should swing by some time.$h",
+      "translation": "А, мер Льюїс розповів про твоє прибуття. Я Марні!#$e#На своєму ранчо я продаю худобу й усе для догляду за тваринами. Якось завітай.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Wow, thanks a million, @. I won't forget this!",
+      "translation": "Овва, безмежно дякую, @. Я цього не забуду!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "AcceptGift_(O)SkillBook_0",
+      "english": "Thanks, @. I always like to have a copy of the Almanac around. It's pretty accurate!$h",
+      "translation": "Дякую, @. Люблю мати під рукою примірник Альманаху. Він доволі точний!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "gotPet",
+      "english": "I think you'll love having a little friend on the farm with you.",
+      "translation": "Гадаю, тобі сподобається мати на фермі маленького друга.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "gotPet_memory_oneday",
+      "english": "I'm sure %pet will be a little shy at first. It takes a while for an animal to get comfortable in a new setting.",
+      "translation": "Упевнена, спочатку %pet трохи соромитиметься. Тварині потрібен час, щоб звикнути до нового місця.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "gotPet_memory_oneweek",
+      "english": "Has little %pet settled in yet? It's such a nice property for a pet to explore.",
+      "translation": "%pet уже звикає до нового дому? На фермі стільки чудових місць для дослідження.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "gotPet_memory_oneyear",
+      "english": "I just remembered... it's been about a year since you adopted %pet. I bet you two have grown really close by now!",
+      "translation": "Я щойно згадала... Минув уже майже рік, відколи в тебе з’явилося %pet. Закладаюся, ви вже дуже зблизилися!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "structureBuilt_Stable",
+      "english": "Oh, you got a horse? That's so wonderful! Horses are amazing animals.$h",
+      "translation": "О, у тебе з’явився кінь? Як чудово! Коні — дивовижні тварини.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "dating_Shane_memory_oneweek",
+      "english": "Shane seems a lot more positive and hopeful, lately.#$b#I'm so happy you moved here, and that you two get along so well!$h",
+      "translation": "Останнім часом Шейн став значно життєрадіснішим і сповненим надії.#$b#Я така рада твоєму переїзду сюди й тому, що ви так добре ладнаєте!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "married_Shane",
+      "english": "I'm glad Shane's moving to your farm... he can keep the family tradition alive!",
+      "translation": "Я рада, що Шейн переїжджає на твою ферму... Він зможе продовжити родинну традицію!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Resort",
+      "english": "Hehe... finally a chance to show off all my hard work at aerobics club.$h",
+      "translation": "Хе-хе... нарешті можна похизуватися результатами наполегливих занять у клубі аеробіки.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Resort_Leaving",
+      "english": "I feel warm.",
+      "translation": "Мені тепло.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Resort_Shore",
+      "english": "Hee hee... It's interesting to see everyone in their bathing suits.",
+      "translation": "Хі-хі... Цікаво побачити всіх у купальниках.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Resort_Chair",
+      "english": "Ew... the chair's wet.",
+      "translation": "Фу... стілець мокрий.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Resort_Bar",
+      "english": "Phew... It's hot!$s",
+      "translation": "Ху... Як спекотно!$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "reject_789",
+      "english": "Gah!$4#$b#...Um... What? Heh.. I don't know what that is...$3",
+      "translation": "А-а!$4#$b#...Ем... Що? Хе... Я не знаю, що це...$3",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Mon",
+      "english": "I love animals, Mr. @. If you treat yours well I'm sure we'll become good friends!^I just love animals, Ms. @. Treat them kindly and we'll become friends, I'm sure!",
+      "translation": "Я люблю тварин, пане @. Якщо добре ставитиметеся до своїх, ми неодмінно подружимося!^Я просто обожнюю тварин, пані @. Ставтеся до них із добротою, і ми неодмінно подружимося!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Mon4",
+      "english": "Animals are so innocent, so sweet. And If I don't look after them, who will?$s#$e#I just hope my chickens aren't too upset when I take their eggs.$s",
+      "translation": "Тварини такі невинні й милі. Якщо я про них не подбаю, то хто?$s#$e#Сподіваюся лише, що мої кури не надто засмучуються, коли я забираю їхні яйця.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Thu_2",
+      "english": "You've been here a while, now... how's your farm doing?#$e#Taking care of animals is easy as long as you don't forget about them!$h",
+      "translation": "Ти вже тут деякий час... як справи на фермі?#$e#Доглядати тварин легко, якщо про них не забувати!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Saloon",
+      "english": "Now that I'm here I can finally relax and socialize a bit.",
+      "translation": "Тепер, коли я тут, можна нарешті розслабитися й трохи поспілкуватися.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Saloon_Tue",
+      "english": "There aren't very many people here today...$s",
+      "translation": "Сьогодні тут небагато людей...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Saloon_Wed",
+      "english": "#$1 marnieAnimalSal#I spilled a whole bucket of milk on the floor today, it was horrible. And such a waste of my poor Belinda's hard work.$k$s#$e#It's nice of you to show up! It's a little more lively now.",
+      "translation": "#$1 marnieAnimalSal#Сьогодні я розлила на підлогу ціле відро молока, це було жахливо. І вся тяжка праця моєї бідолашної Белінди намарне.$k$s#$e#Як добре, що ти тут! Тепер стало трохи жвавіше.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Saloon_Thu",
+      "english": "Phew! It sure feels good to kick back after a hard day's work.",
+      "translation": "Ху! Як же приємно розслабитися після важкого робочого дня.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Saloon_Fri",
+      "english": "%Marnie doesn't seem to notice that you're there...",
+      "translation": "%Marnie, здається, не помічає твоєї присутності...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Saloon_Sun",
+      "english": "*sigh*... I wasn't very productive today.",
+      "translation": "*зітхання*... Сьогодні я зробила не так уже й багато.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Saloon_Sat",
+      "english": "I always see Clint here but he won't talk to anyone. He just glances over his shoulder now and then.$s",
+      "translation": "Я постійно бачу тут Клінта, але він ні з ким не розмовляє. Лише час від часу позирає через плече.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Tue",
+      "english": "$query PLAYER_NPC_RELATIONSHIP any Shane married roommate#Now that Shane's gone, I'm going to have to teach Jas how to care for the chickens.|My nephew Shane has been staying at my place the last few months.#$e#He helps me out with the chickens, so I'm not complaining.",
+      "translation": "$query PLAYER_NPC_RELATIONSHIP any Shane married roommate#Тепер, коли Шейн переїхав, доведеться навчити Джас доглядати курей.|Мій небіж Шейн останні кілька місяців живе в мене.#$e#Він допомагає з курми, тож я не нарікаю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "GreenRain",
+      "english": "You're not worried about this rain? That does put me at ease a little...#$e#I just hope the cows tucked themselves in...$s",
+      "translation": "Тебе не турбує цей дощ? Це мене трохи заспокоює...#$e#Сподіваюся лише, що корови сховалися в хліві...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "GreenRainFinished",
+      "english": "Well, looks like we all got scared for nothing... The rain was totally harmless!",
+      "translation": "Що ж, схоже, ми всі даремно злякалися... Дощ був цілком безпечним!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "GreenRain_2",
+      "english": "The animals seems to enjoy this rain... I think it's putting extra nutrients into the grass.",
+      "translation": "Схоже, тваринам подобається цей дощ... Гадаю, він насичує траву додатковими поживними речовинами.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Wed",
+      "english": "You can use a scythe to cut feed from grass.#$e#Or you can buy it from me, of course!$h#$e#I could use the cash...$u#$e#Adios.",
+      "translation": "Косою можна заготовляти Сіно з трави.#$e#Або ж, звісно, можеш купувати його в мене!$h#$e#Гроші мені не завадять...$u#$e#Адіос.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Thu",
+      "english": "Hi. Need something?#$e#I might be getting some different kinds of animals in the future.#$e#Although, I'll need to make sure there's a market for them, so you'll have to prove your skill with animals first.#$e#Just keep treating your animals with respect and good things will happen.",
+      "translation": "Привіт. Щось потрібно?#$e#Можливо, у майбутньому я заведу інші види тварин.#$e#Але спершу треба переконатися, що на них є попит, тож тобі доведеться довести своє вміння поводитися з тваринами.#$e#Просто й далі стався до них із повагою, і все буде добре.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Fri",
+      "english": "You can catch me at the saloon most nights.#$e#Animals are great company, but I need to spend time with people, too.",
+      "translation": "Більшістю вечорів мене можна зустріти в салуні.#$e#Тварини — чудове товариство, але мені теж треба проводити час із людьми.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Fri6",
+      "english": "I wonder if Mr. Lewis gets lonely in that big house of his... $s#$e#It seems so empty in there, doesn't it?",
+      "translation": "Цікаво, чи не самотньо панові Льюїсу в його великому будинку... $s#$e#Там здається так порожньо, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Sat",
+      "english": "Have you been to that strange tower west of my house?#$e#One time I heard this terrible, otherworldly noise coming from there.$s#$e#I would avoid that place if I were you...",
+      "translation": "Тобі доводилося бувати в дивній вежі на захід від мого будинку?#$e#Якось я почула звідти жахливий, потойбічний звук.$s#$e#На твоєму місці я уникала б тієї споруди...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Sun",
+      "english": "Hey there, it's good to see ya!#$e#Feel free to visit us any time you please.",
+      "translation": "Привіт, рада тебе бачити!#$e#Заходь до нас коли завгодно.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Sun8",
+      "english": "Hi @!$h#$e#I'm glad we've become friends. I know I can trust you to take care of my dear animals.",
+      "translation": "Привіт, @!$h#$e#Я рада, що ми подружилися. Знаю, тобі можна довірити моїх любих тварин.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Fair_Judging",
+      "english": "Well, here goes nothing...",
+      "translation": "Що ж, була не була...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Fair_Judged",
+      "english": "Well, I didn't win... but it was still satisfying to share all my hard work!",
+      "translation": "Що ж, я не перемогла... але все одно було приємно показати плоди своєї наполегливої праці!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Marnie",
+      "key": "Fair_Judged_PlayerLost_PurpleShorts",
+      "english": "That was some strange-looking purple lettuce in your grange display!$h#$b#I swear, it looked just like Mayor Lewis' special und... $3#$b#Oh!... heh... never mind!$4",
+      "translation": "Дивний же фіолетовий латук був у тебе на виставці!$h#$b#Присягаюся, він виглядав точнісінько як особлива спідня бі... мера Льюїса. $3#$b#Ой!.. хе... не зважай!$4",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Introduction",
+      "english": "...$u#$b#Hi...$u",
+      "translation": "...$u#$b#Привіт...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptBirthdayGift_Positive",
+      "english": "Wow, a birthday present! I love it!$h",
+      "translation": "Овва, подарунок на день народження! Мені так подобається!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "GreenRain",
+      "english": "I'm scared...$s",
+      "translation": "Мені страшно...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "GreenRain_2",
+      "english": "I hope the rain doesn't turn my dress green...$s",
+      "translation": "Сподіваюся, дощ не зробить мою сукню зеленою...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "A birthday present? Oh... I don't like this.$s",
+      "translation": "Подарунок на день народження? Ох... Мені це не подобається.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Are you sure? It smells so good! I'll only drink a thimbleful a day.$h",
+      "translation": "Точно можна? Пахне так гарно! Я питиму лише по наперстку на день.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptGift_(TR)FairyBox",
+      "english": "Wow, it's so pretty! And there's a fairy inside? *giggle*... I can hear her singing. She'll be my secret friend.$h",
+      "translation": "Овва, яка краса! І всередині фея? *хихоче*... Я чую, як вона співає. Вона буде моєю таємною подругою.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptGift_(O)103",
+      "english": "Oh, a little dolly! She's kind of dirty, but I'll give her a bath. Thanks!$h",
+      "translation": "О, маленька лялечка! Вона трохи брудна, але я її скупаю. Дякую!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptGift_Positive_doll_item",
+      "english": "Oh, I like him! He'll fit right in with my other friends.$h",
+      "translation": "О, він мені подобається! Чудово впишеться до решти моїх друзів.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptGift_Negative_alcohol_item",
+      "english": "Umm... I'm not supposed to drink this. Isn't it for adults?$s",
+      "translation": "Ем... Мені не можна таке пити. Хіба це не для дорослих?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "AcceptGift_Negative_coffee_item",
+      "english": "Oh... Aunt Marnie doesn't let me drink coffee yet...$s",
+      "translation": "Ох... Тітка Марні ще не дозволяє мені пити каву...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Resort_Entering",
+      "english": "I see a crab!",
+      "translation": "Я бачу краба!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Resort_Leaving",
+      "english": "I've got sand in my shoe...$s",
+      "translation": "У мене в черевичку пісок...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Resort_Shore",
+      "english": "I'm collecting seashells... I'm gonna make a necklace!",
+      "translation": "Я збираю мушлі... Зроблю намисто!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Resort",
+      "english": "Aunt Marnie told me not to get burnt... But when I walk fast, it feels cool, so I think I'll be okay.$h",
+      "translation": "Тітка Марні сказала, щоб я не обгоріла... Але коли я швидко ходжу, мені прохолодно, тож усе буде гаразд.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "movieTheater",
+      "english": "Aunt Marnie says I'm not old enough to see a movie by myself...$s",
+      "translation": "Тітка Марні каже, що я ще замала, щоб дивитися кіно сама...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "reject_869",
+      "english": "Ew, gross!$s",
+      "translation": "Фу, гидота!$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "married_Shane",
+      "english": "I hope Shane will still come and see me...$s",
+      "translation": "Сподіваюся, Шейн усе одно приходитиме до мене...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "married",
+      "english": "*sigh*... I hope I can get married some day.$u",
+      "translation": "*зітхання*... Сподіваюся, колись і в мене буде весілля.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "cropMatured_595",
+      "english": "$y 'Um... Have you ever seen a fairy?_Yes_Wow! I wanna see one, too.$h_No_...Me neither.$s'",
+      "translation": "$y 'Ем... Тобі колись траплялося бачити фею?_Yes_Овва! Я теж хочу побачити.$h_No_...Я теж не бачила.$s'",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "eventSeen_3910975",
+      "english": "...Is Shane going to be okay?$s",
+      "translation": "...Із Шейном усе буде гаразд?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "eventSeen_3910975_memory_oneweek",
+      "english": "I had a nightmare that the house was on fire...$s",
+      "translation": "Мені наснився кошмар, ніби будинок охопила пожежа...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "eventSeen_3910974",
+      "english": "*giggle* ...look, I've got real bunny-jewel slippers!$h",
+      "translation": "*хихоче*... поглянь, у мене справжні капці з кроликами зі самоцвітів!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Mon",
+      "english": "Oh...Are you looking for Aunt Marnie?$u",
+      "translation": "О... Ти шукаєш тітку Марні?$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Mon4",
+      "english": "Hi, Mr. @.^Hi, Ms. @.#$e#It's fun to live on a farm.$h",
+      "translation": "Вітаю, пане @.^Вітаю, пані @.#$e#На фермі жити весело.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Tue",
+      "english": "What? *giggle*$h#$e#...hi.",
+      "translation": "Що? *хихоче*$h#$e#...привіт.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Tue6",
+      "english": "You can play with my dolls if you want to. Just make sure to brush their hair when you're done.",
+      "translation": "Можеш погратися з моїми ляльками, якщо хочеш. Тільки не забудь причесати їм волосся після гри.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Wed",
+      "english": "...$u",
+      "translation": "...$u",
+      "preserveReason": "Ellipsis-only dialogue with an emote command is language-independent.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Wed2",
+      "english": "...Hi.$u",
+      "translation": "...Привіт.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Wed4",
+      "english": "Aunt Marnie won't let me go out after 6 o'clock. It's not fair!$s#$e#I'm not afraid of the dark anymore!",
+      "translation": "Тітка Марні не дозволяє мені виходити після шостої. Це несправедливо!$s#$e#Я більше не боюся темряви!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Thu",
+      "english": "I'm not supposed to talk to strangers...$u",
+      "translation": "Мені не можна розмовляти з незнайомцями...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Thu2",
+      "english": "Miss Penny is teaching me how to write in cursive.$h#$e#She has such pretty handwriting.",
+      "translation": "Пані Пенні вчить мене писати прописом.$h#$e#У неї такий гарний почерк.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Fri",
+      "english": "... I don't know you.$u",
+      "translation": "... Я тебе не знаю.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Fri2",
+      "english": "Do you like my bow?",
+      "translation": "Тобі подобається мій бантик?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Fri4",
+      "english": "I like living on the farm... my favorite is the fresh ice cream from our cows' milk.",
+      "translation": "Мені подобається жити на фермі... а найбільше я люблю свіже морозиво з молока наших корів.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Sat",
+      "english": "You smell like grass.$u",
+      "translation": "Від тебе пахне травою.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Sat2",
+      "english": "Sometimes I look for crawdads in the river. Don't tell Aunt Marnie... but I fed one to a cow once.#$e#She loved it.",
+      "translation": "Іноді я шукаю в річці раків. Не кажи тітці Марні... але якось я дала одного корові.#$e#Їй дуже сподобалося.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Sat8",
+      "english": "You're always so nice to me, ${Mr.^Ms.}$ @.$h#$e#Grown-ups are usually mean and boring, but you're different.",
+      "translation": "Ви завжди такі добрі до мене, ${пане^пані}$ @.$h#$e#Дорослі зазвичай злі й нудні, але ви не такі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Sun",
+      "english": "Um... d...do you want something?$u#$e#I'm not supposed to talk to strangers.$u",
+      "translation": "Ем... в... вам щось потрібно?$u#$e#Мені не можна розмовляти з незнайомцями.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Sun2",
+      "english": "Shane's gone a lot, and Aunt Marnie is busy all the time... so I have to invent my own games.#$e#I'm thankful for all my toys.$h",
+      "translation": "Шейна часто немає, а тітка Марні весь час зайнята... тож доводиться самій вигадувати ігри.#$e#Добре, що в мене стільки іграшок.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Jas",
+      "key": "Sun10",
+      "english": "Did you know Shane's my godfather? He was a friend of my parents.$s#$e#...they died. *sniff*$s",
+      "translation": "Ти знаєш, що Шейн — мій хрещений батько? Він дружив із моїми батьками.$s#$e#...вони померли. *схлип*$s",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0203-event-harvey-room",
+  "target": "Data/Events/HarveyRoom",
+  "status": "reviewed",
+  "sourceHashes": {
+    "normal": "54a831d5be4dd984b085ccdfe373c777452ea2e7638b776fb112916912a3b8a2"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "normal": "pause 400/speak Harvey \"Извинявай за разрошения ми вид... Не знаех, че ще идваш.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Хей, май чувам самолет над нас...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, ела тук!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Погледни!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"Като дете винаги мечтаех да стана пилот.\"/pause 1000/speak Harvey \"...Но заради лошото ми зрение и парализиращия страх от височини тази мечта започна да избледнява.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"Всичко е наред... не тъжи.#$b#Вече приех мястото си в живота. Не всеки може да осъществи мечтите си... светът просто е устроен така.\"/pause 1600/speak Harvey \"Хей, нека ти покажа моделите си на самолети. Тъкмо завърших новия луксозен комплект TR-Starbird.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all eight quoted dialogue fields in the complete Harvey Room event.",
+      "Preserved the plane cutscene, actor movements, scene transition, TR-Starbird model-set name and every event command and control token.",
+      "Kept Harvey’s reflective voice and the distinction between his childhood ambition, physical limitations and acceptance of his present life in natural Bulgarian."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "ca56fb14658626669df5e630297f4126e633b821a280bd862977928ef381321f"
+  }
+}

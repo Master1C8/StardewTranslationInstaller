@@ -1,0 +1,372 @@
+{
+  "id": "232-winter25-a",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/Festivals/winter25": "304c19466d31c937e6cc3d2fe90a84ccd4c5536fb98c633bf752df51878e3b6d"
+  },
+  "records": [
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "name",
+      "english": "Feast of the Winter Star",
+      "translation": "משתה כוכב החורף"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "conditions",
+      "english": "Town/900 1400",
+      "translation": "Town/900 1400",
+      "preservationReason": "This value is an engine-authored festival condition or event script with no player-facing text.",
+      "latinException": {
+        "tokens": [
+          "Town"
+        ],
+        "reason": "The preserved festival event script or dialogue-choice syntax uses engine-defined ASCII commands and identifiers."
+      }
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "set-up",
+      "english": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+      "translation": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+      "preservationReason": "This value is an engine-authored festival condition or event script with no player-facing text.",
+      "latinException": {
+        "tokens": [
+          "christmasTheme",
+          "farmer",
+          "changeToTemporaryMap",
+          "Town-Christmas",
+          "viewport",
+          "loadActors",
+          "Set-Up",
+          "viewport",
+          "player",
+          "clamp",
+          "true",
+          "unfreeze",
+          "globalFadeToClear",
+          "playerControl",
+          "christmas"
+        ],
+        "reason": "The preserved festival event script or dialogue-choice syntax uses engine-defined ASCII commands and identifiers."
+      }
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "secretSanta",
+      "english": "none/-1000 -1000/farmer 30 69 0/warp Emily 37 59/warp Haley 35 74/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 300/faceDirection farmer 0/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Emily 29 72/warp Haley 30 72/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "translation": "none/-1000 -1000/farmer 30 69 0/warp Emily 37 59/warp Haley 35 74/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 300/faceDirection farmer 0/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Emily 29 72/warp Haley 30 72/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "preservationReason": "This value is an engine-authored festival condition or event script with no player-facing text.",
+      "latinException": {
+        "tokens": [
+          "none",
+          "farmer",
+          "warp",
+          "Emily",
+          "warp",
+          "Haley",
+          "warp",
+          "secretSanta",
+          "faceDirection",
+          "secretSanta",
+          "viewport",
+          "true",
+          "pause",
+          "move",
+          "secretSanta",
+          "move",
+          "secretSanta",
+          "pause",
+          "shake",
+          "secretSanta",
+          "playSound",
+          "stoneStep",
+          "specificTemporarySprite",
+          "secretGift",
+          "pause",
+          "faceDirection",
+          "farmer",
+          "pause",
+          "jump",
+          "farmer",
+          "pause",
+          "emote",
+          "farmer",
+          "pause",
+          "move",
+          "secretSanta",
+          "move",
+          "secretSanta",
+          "pause",
+          "faceDirection",
+          "farmer",
+          "pause",
+          "faceDirection",
+          "farmer",
+          "pause",
+          "faceDirection",
+          "secretSanta",
+          "pause",
+          "speak",
+          "secretSanta",
+          "dialogue1",
+          "pause",
+          "faceDirection",
+          "farmer",
+          "pause",
+          "showFrame",
+          "pause",
+          "playSound",
+          "cut",
+          "specificTemporarySprite",
+          "secretGiftOpen",
+          "pause",
+          "stopAnimation",
+          "farmer",
+          "faceDirection",
+          "farmer",
+          "pause",
+          "cutscene",
+          "addSecretSantaItem",
+          "pause",
+          "null",
+          "faceDirection",
+          "farmer",
+          "speak",
+          "secretSanta",
+          "dialogue2",
+          "pause",
+          "eyes",
+          "emote",
+          "farmer",
+          "pause",
+          "globalFade",
+          "viewport",
+          "warp",
+          "Emily",
+          "warp",
+          "Haley",
+          "warp",
+          "secretSanta",
+          "warpX",
+          "warpY",
+          "faceDirection",
+          "farmer",
+          "cutscene",
+          "clearTempSprites",
+          "playMusic",
+          "christmasTheme",
+          "viewport",
+          "true",
+          "playerControl",
+          "christmas2"
+        ],
+        "reason": "The preserved festival event script or dialogue-choice syntax uses engine-defined ASCII commands and identifiers."
+      }
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Abigail_spouse",
+      "english": "I wonder if I could lick one of those canes...",
+      "translation": "מעניין אם אוכל ללקק אחד ממקלות הסוכר האלה..."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Leah_spouse",
+      "english": "I'm thankful for our simple life on the farm.$h",
+      "translation": "אני אסירת תודה על חיינו הפשוטים בחווה.$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Maru_spouse",
+      "english": "Hey, @. I'm ready to head home whenever you are.",
+      "translation": "היי, @. אני מוכנה לחזור הביתה כשתהיו מוכנים."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Penny_spouse",
+      "english": "I'm thankful to have met you...$l",
+      "translation": "אני אסירת תודה שפגשתי אתכם...$l"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Haley_spouse",
+      "english": "Me?... Oh, I'm thankful for... how about I just show you when we get home tonight?$l",
+      "translation": "אני?... הו, אני אסירת תודה על... אולי פשוט אראה לכם כשנחזור הביתה הערב?$l"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sebastian_spouse",
+      "english": "Hey, @. As you can see, I'm fulfilling my family obligations...",
+      "translation": "היי, @. כפי שאתם רואים, אני ממלא את חובותיי המשפחתיות..."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sam_spouse",
+      "english": "*yawn*... I'm here for the gifts and the cookies.$h",
+      "translation": "*פיהוק*... באתי בשביל המתנות והעוגיות.$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Alex_spouse",
+      "english": "What am I thankful for? I'll show you when we get back home...$l",
+      "translation": "על מה אני אסיר תודה? אראה לכם כשנחזור הביתה...$l"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Harvey_spouse",
+      "english": "I'm feeling a little overwhelmed... thank goodness for this crisp air...$l",
+      "translation": "אני מרגיש קצת מוצף... תודה לאל על האוויר הצונן הזה...$l"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Elliott_spouse",
+      "english": "You don't need to get me anything, you've already given me the greatest gift of all...$l",
+      "translation": "אינכם צריכים להביא לי דבר, כבר הענקתם לי את המתנה הגדולה מכול...$l"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Abigail",
+      "english": "Nothing like a piping hot feast on a cold winter's day, huh?$h",
+      "translation": "אין כמו ארוחה חמה ומהבילה ביום חורף קר, נכון?$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Robin",
+      "english": "Hiya, @. You're welcome to join our family table if you need company.$h",
+      "translation": "היי, @. אתם מוזמנים להצטרף לשולחן המשפחה שלנו אם אתם זקוקים לחברה.$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Demetrius",
+      "english": "I'll probably get another tool set this year... *sigh*",
+      "translation": "כנראה אקבל עוד ערכת כלים השנה... *אנחה*"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Maru",
+      "english": "Hi, @.$h",
+      "translation": "שלום, @.$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Shane",
+      "english": "I've met some people who believe in spirits, and magic... but me? I've never seen anything that couldn't be explained by science.",
+      "translation": "פגשתי אנשים שמאמינים ברוחות ובקסם... אבל אני? מעולם לא ראיתי דבר שלא היה אפשר להסביר בעזרת המדע."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sebastian",
+      "english": "Spending time with family is tiring sometimes.",
+      "translation": "לפעמים מעייף לבלות עם המשפחה."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Pierre",
+      "english": "My sales figures have been phenomenal lately... thanks to the Feast of the Winter Star!$h#$e#Boy, holidays are good for business. I wonder if I could invent some new ones...",
+      "translation": "נתוני המכירות שלי היו מדהימים לאחרונה... בזכות משתה כוכב החורף!$h#$e#בחיי, חגים טובים לעסקים. מעניין אם אוכל להמציא כמה חגים חדשים..."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Caroline",
+      "english": "Ooohh... I've had too much nog.$h",
+      "translation": "אווו... שתיתי יותר מדי ליקר ביצים.$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Linus",
+      "english": "I'd join in... but I don't think I'm welcome.$s",
+      "translation": "הייתי מצטרף... אבל אני לא חושב שאני רצוי.$s"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Alex",
+      "english": "Oh, hello.$s",
+      "translation": "הו, שלום.$s"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "George",
+      "english": "A feast for some stupid star? Humbug!",
+      "translation": "משתה לכבוד איזה כוכב טיפשי? שטויות!"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Evelyn",
+      "english": "Oh, my! Aren't you cold, dear? It's freezing!",
+      "translation": "הו, אלוהים! לא קר לכם? קפוא כאן!"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Lewis",
+      "english": "Today is a time to be thankful for this year's good fortune. Forget your worries for a day and relax!",
+      "translation": "היום הוא זמן להודות על המזל הטוב שנפל בחלקנו השנה. שכחו מהדאגות ליום אחד והירגעו!"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Clint",
+      "english": "*sigh*... All these happy families. But for me, just another lonely year.",
+      "translation": "*אנחה*... כל המשפחות המאושרות האלה. אבל בשבילי זו רק עוד שנה בודדה."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Emily",
+      "english": "$y '@! What are you hoping to find under the spirit tree?_A new watering can._All work and no play? That's not very fun.$s_A jug of spiced mead._Ooo... that sounds nice. Make sure to give me a taste.$h_A pair of stylish boots._I see. That would be a great gift!'",
+      "translation": "$y '@! מה אתם מקווים למצוא מתחת לעץ הרוחות?_מזלף חדש._רק עבודה בלי הנאה? זה לא כיף במיוחד.$s_כד של תמד מתובל._אווו... נשמע נחמד. הקפידו לתת לי לטעום.$h_זוג מגפיים אופנתיים._הבנתי. זו תהיה מתנה נהדרת!'"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Penny",
+      "english": "What a beautiful tree.$h",
+      "translation": "איזה עץ יפהפה.$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Pam",
+      "english": "Hmmph... I'm still upset I didn't win the ice fishing competition.$4",
+      "translation": "הממף... אני עדיין כועסת שלא ניצחתי בתחרות הדיג בקרח.$4"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Haley",
+      "english": "I hope there's a new camera for me under the spirit tree!",
+      "translation": "אני מקווה שמחכה לי מצלמה חדשה מתחת לעץ הרוחות!"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Jodi",
+      "english": "It's not a good time of year for a diet...$s",
+      "translation": "זו לא תקופה טובה בשנה לדיאטה...$s"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Kent",
+      "english": "Good afternoon, @. Happy Feasting.",
+      "translation": "צהריים טובים, @. חג שמח."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sam",
+      "english": "I'm thankful for my guitar and my skateboard. Oh, and my family I guess.",
+      "translation": "אני אסיר תודה על הגיטרה ועל הסקייטבורד שלי. הו, וגם על המשפחה שלי, אני מניח."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Leah",
+      "english": "Gus was just telling me about his artisan candy canes. *yawn*$u#$e#I think he had too much cinnamon nog.",
+      "translation": "גאס בדיוק סיפר לי על מקלות הסוכר בעבודת יד שלו. *פיהוק*$u#$e#נראה לי שהוא שתה יותר מדי ליקר ביצים עם קינמון."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Marnie",
+      "english": "Welcome to the Feast of the Winter Star!$h",
+      "translation": "ברוכים הבאים למשתה כוכב החורף!$h"
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Elliott",
+      "english": "Why, hello @. It's chilly, isn't it?",
+      "translation": "ובכן, שלום @. קריר, נכון?"
+    }
+  ]
+}

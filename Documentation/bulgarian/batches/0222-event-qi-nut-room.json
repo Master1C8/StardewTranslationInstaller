@@ -1,0 +1,27 @@
+{
+  "id": "0222-event-qi-nut-room",
+  "target": "Data/Events/QiNutRoom",
+  "status": "reviewed",
+  "sourceHashes": {
+    "10040609": "c0dd614fb65c4660341b4371662542d45fa2a3e9103c8f2c040557a7c2f0db50"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "10040609": "clubloop/7 4/farmer 7 8 0 MrQi 7 4 0/skippable/move farmer 0 -2 0/pause 3000/speak MrQi \"Е, е, е... Я кой е стигнал до тайната Орехова стая на Ци.\"/pause 1000/faceDirection MrQi 1 true/pause 100/faceDirection MrQi 2/pause 1000/speak MrQi \"Наистина съм впечатлен.#$b#Макар че ти трябваше само част от Златните орехи, за да получиш пълен достъп до острова, реши да продължиш напред.#$b#Желанието ти да влезеш през тази тайна врата беше толкова силно, че направи повече от необходимото, за да стигнеш дотук.#$b#Този устрем те отличава от останалите, хлапе. Имаш много особена енергия.\"/pause 1000/faceDirection MrQi 3 true/pause 100/faceDirection MrQi 0/pause 500/speak MrQi \"И все пак...#$b#Не мислеше, че предизвикателството свършва тук, нали?#$b#Не... Ха. Ха. Ха... Всъщност предизвикателството едва сега започва.\"/faceDirection MrQi 3 true/pause 40/faceDirection MrQi 2/pause 1000/faceDirection MrQi 3/speak MrQi \"Отляво ще намериш табло с някои много интересни възможности.#$b#Тези предизвикателства, които съм създал специално за теб, ще те доведат до самия предел на възможностите ти.\"/faceDirection MrQi 2/speak MrQi \"Ако обаче успееш да преодолееш предизвикателствата ми, ще спечелиш специална валута... Наричам я „Скъпоценни камъни Ци“\"/pause 400/speak MrQi \"Само не ги слагай в устата си, хлапе... Силно радиоактивни са. Хе. хе. хе...\"/emote farmer 28/pause 500/faceDirection MrQi 1/speak MrQi \"Можеш да използваш машината отдясно, за да разменяш тези Скъпоценни камъни Ци за редки и мощни награди.\"/pause 1000/faceDirection MrQi 2/speak MrQi \"Звучи интересно, нали?#$b#Да... Имам чувството, че това много ще допадне на човек като теб...\"/pause 400/faceDirection MrQi 1 true/pause 50/faceDirection MrQi 0/pause 500/speak MrQi \"А сега, ако ме извиниш... имам важна работа.\"/pause 2000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all nine quoted dialogue fields in the complete Qi Nut Room event asset.",
+      "Applied locked Ореховата стая на Ци, Златен орех and Скъпоценен камък Ци terminology while preserving every event command, actor ID and control token.",
+      "Refined the challenge transition and reward descriptions for natural Bulgarian while retaining Mr. Qi’s theatrical voice and radioactivity joke."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "2f0c7ce771e7344760e20fd3a46966ef72e2ef65e90ad90afbf148e3f77716f0"
+  }
+}

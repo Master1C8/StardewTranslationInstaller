@@ -1,0 +1,37 @@
+{
+  "id": "0236-event-sebastian-room-000-005",
+  "target": "Data/Events/SebastianRoom",
+  "status": "reviewed",
+  "sourceHashes": {
+    "2794460/f Sebastian 500/p Sebastian": "35dae525eea7d86b3b9d8e98dbf0c70cbc531487e1d5f5ecf6a7add7521f68fb",
+    "didntLeave": "71ec629b24d372e540b513cbcc248d8821031a4bced75ce043b06a3928838eee",
+    "sebastianRoom": "de169f431d8165f46c058d13b62a41373a32a8c9076182cc7593082093c4938b",
+    "decor": "feb0dc7e6804b0d96fa66484aa8ef70a8e89e1f7ea1924c0ddd6914f258b9edf",
+    "enterRobin": "27606706eef0b001ceb890cfca1c7640dc8eef43f0aebd14daeffd2a38ad3196",
+    "noFriends": "e7ae71bf9bee4490dee6326d16185a47965e44b73b8faf4d119b4af931e52e61"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "2794460/f Sebastian 500/p Sebastian": "Hospital_Ambient/-1000 -1000/farmer 1 1 2 Sebastian 9 4 3 Robin -100 -100 2/skippable/doAction 1 3/removeTile 1 3 Buildings/removeTile 1 2 Front/playSound keyboardTyping/showFrame Sebastian 24/animate Sebastian false true 100 26 27 26 27 26 27 26/viewport 6 6 true/move farmer 0 4 1/move farmer 5 0 1/pause 1000/speak Sebastian \"О, здрасти. Дай ми секунда.\"/pause 500/playSound keyboardTyping/pause 1000/question fork1 \"#Зает е... Трябва да си тръгна.#Остани на място.\"/fork didntLeave/move farmer -2 0 3/speak Sebastian \"Къде отиваш?$u\"/pause 300/faceDirection farmer 1/stopAnimation Sebastian/speak Sebastian \"Съжалявам... Трябваше да довърша този ред, преди да изгубя нишката на мисълта си.\"/pause 500/move farmer 2 0 1/switchEvent sebastianRoom",
+    "didntLeave": "pause 5500/stopAnimation Sebastian/speak Sebastian \"Добре. Извинявай, просто трябваше да довърша това, по което работех.\"/switchEvent sebastianRoom",
+    "sebastianRoom": "resetVariable/move farmer 0 2 1/playSound mouseClick/move farmer 3 0 0/playSound mouseClick/move farmer 0 -1 0/playSound mouseClick/move farmer 0 -1 0/pause 500/faceDirection farmer 0/question fork1 \"#Попитай го върху какво работи.#Похвали обзавеждането на стаята му.\"/fork decor/pause 500/stopAnimation Sebastian/speak Sebastian \"Работя на свободна практика като програмист.\"/switchEvent enterRobin",
+    "decor": "pause 500/stopAnimation Sebastian/speak Sebastian \"Украса?... А, да... благодаря. От години лепя плакати по стената, така че май е малко претрупано.\"/switchEvent enterRobin",
+    "enterRobin": "pause 500/playSound mouseClick/pause 100/playSound mouseClick/pause 500/playSound Pickup_Coin15/pause 300/emote Sebastian 40/speak Sebastian \"Това беше незабавно съобщение от Сам... Май иска да се видим...#$b#Ъх, днес изобщо не ми се излиза.$u\"/pause 500/playSound doorClose/warp Robin 1 1/move Robin 0 4 1/speak Robin \"О, здравей, @.\"/faceDirection farmer 3/move Robin 4 0 1/speak Robin \"Себи, знам, че не обичаш да влизам тук... но срещнах Абигейл в магазина и тя каза, че те търси.\"/pause 200/emote Sebastian 28/speak Sebastian \"Каза ли ѝ, че работя?\"/speak Robin \"Казах ѝ... но тя отвърна, че вероятно все пак ще се отбие.\"/emote Sebastian 12/speak Sebastian \"*въздиша*... Никой не приема работата ми сериозно.$u#$b#Никой не безпокои Мару, когато работи в клиниката... всички ли мислят, че по цял ден просто сърфирам в мрежата?\"/faceDirection farmer 0 true/move Robin -4 0 0/move Robin 0 -4 0/warp Robin -100 -100/playSound doorClose/pause 500/faceDirection farmer 0/resetVariable/question fork1 \"#Попитай го за професионалните му цели.#Попитай го защо не иска да се вижда с приятелите си.\"/fork noFriends/pause 500/speak Sebastian \"Е, опитвам се да спестя достатъчно, за да се изнеса. Вероятно в града или нещо такова.\"/emote Sebastian 40/speak Sebastian \"Знаеш ли, ако бях учил в колеж, сега сигурно щях да изкарвам шестцифрена сума... но просто не искам да участвам в тази корпоративна надпревара, разбираш ли?#$b#Е, предполагам, че просто се чувствам по-удобно скрит зад компютъра, отколкото да общувам с хора лице в лице.$s\"/emote Sebastian 28/pause 600/playSound mouseClick/pause 100/playSound mouseClick/pause 300/speak Sebastian \"Е, трябва да се връщам към работата... Трябва да завърша този модул до утре.\"/animate Sebastian false true 100 24 24 24 24 24 24 24 24 24 24 25 26 27 26 27 26 27 26 25 24 24/playSound keyboardTyping/pause 500/move farmer 0 2 3/move farmer -3 0 0/move farmer 0 -2 3/move farmer -5 0 0 true/globalFade/viewport -1000 -1000/pause 1000/end",
+    "noFriends": "pause 500/emote Sebastian 28/speak Sebastian \"*въздиша*... Харесва ми да имам приятели, просто ми трябва много време насаме, за да уравновеся общуването.$s#$b#Сам е обратното... полудява, ако остане сам твърде дълго.#$b#Може би затова толкова харесвам компютрите... Те са увлекателни, ясни и безкористни. Точна противоположност на много хора, които познавам.\"/pause 600/playSound mouseClick/pause 100/playSound mouseClick/pause 300/emote Sebastian 40/speak Sebastian \"Е, трябва да се връщам към работата... Трябва да завърша този модул до утре.\"/pause 300/animate Sebastian false true 100 26 27/playSound keyboardTyping/pause 500/move farmer 0 2 3/move farmer -3 0 0/move farmer 0 -2 3/move farmer -5 0 0 true/globalFade/viewport -1000 -1000/pause 1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 6,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twenty quoted programming, room-choice, family and friendship fields in Sebastian Room source ordinals 0–5.",
+      "Preserved every fork label, scene transition, actor command and control token while applying locked Сам, Себастиан, Робин, Абигейл and Мару names and consistent clinic terminology.",
+      "Refined the train-of-thought idiom, career language and social-balance explanation while retaining the two repeated module-deadline lines exactly."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "426e270a883529b0d09d82ff01c88fcbac7b3d6f0cef1a5e4fb37626d01f8592"
+  }
+}

@@ -5,19 +5,10 @@ using System.Linq;
 using System.Text.Json;
 using VNRevival.LanguageSwitcher;
 
-if (args.Length != 3)
-    throw new ArgumentException("Pass the paths to urdu-shaping-map.json, persian-shaping-map.json, and arabic-shaping-map.json.");
+if (args.Length != 2)
+    throw new ArgumentException("Pass the paths to persian-shaping-map.json and arabic-shaping-map.json.");
 
-Probe("Urdu", args[0], new[]
-{
-    "سلام دنیا",
-    "سلام 123 دنیا",
-    "سلام Alex دنیا",
-    "(سلام دنیا)",
-    "پیارے @، خوش آمدید!",
-    "کمیونٹی سینٹر\nجنجر آئی لینڈ",
-});
-Probe("Persian", args[1], new[]
+Probe("Persian", args[0], new[]
 {
     "سلام دنیا",
     "سلام 123 دنیا",
@@ -26,7 +17,7 @@ Probe("Persian", args[1], new[]
     "کشاورز عزیز، خوش آمدی!",
     "مرکز اجتماعات\nجزیره زنجبیل",
 });
-Probe("Arabic", args[2], new[]
+Probe("Arabic", args[1], new[]
 {
     "مرحبا بالعالم",
     "مرحبا 123 بالعالم",
@@ -35,10 +26,11 @@ Probe("Arabic", args[2], new[]
     "أهلا بك يا مزارع!",
     "مركز المجتمع\nجزيرة الزنجبيل",
 });
+ProbeSerbianGrammar();
 
 static void Probe(string language, string mapPath, string[] samples)
 {
-    UrduTextAdapter adapter = UrduTextAdapter.Load(mapPath);
+    ArabicScriptTextAdapter adapter = ArabicScriptTextAdapter.Load(mapPath);
     foreach (string sample in samples)
     {
         string transformed = adapter.Transform(sample);
@@ -85,6 +77,33 @@ static void Probe(string language, string mapPath, string[] samples)
         throw new InvalidDataException($"Unreachable contextual {language} glyphs: {string.Join(", ", missingGlyphs)}");
 
     Console.WriteLine($"{language} shaping probe passed {samples.Length} mixed-direction samples and {mappingEntries.Count} contextual glyphs.");
+}
+
+static void ProbeSerbianGrammar()
+{
+    if (SerbianGrammar.SuppressIndefiniteArticle("a", true) != string.Empty
+        || SerbianGrammar.SuppressIndefiniteArticle("an", true) != string.Empty
+        || SerbianGrammar.SuppressIndefiniteArticle("a", false) != "a")
+        throw new InvalidDataException("Serbian indefinite-article suppression is not locale-scoped.");
+
+    int combinations = 0;
+    foreach ((string adjective, string feminine) in SerbianGrammar.FeminineAdjectives)
+    {
+        foreach ((string noun, SerbianNounGender gender) in SerbianGrammar.NounGenders)
+        {
+            string source = $"{adjective} {noun}";
+            string expected = gender == SerbianNounGender.Feminine ? $"{feminine} {noun}" : source;
+            string result = SerbianGrammar.ApplyAdjectiveAgreement(source);
+            if (result != expected)
+                throw new InvalidDataException($"Serbian agreement failed: {source} -> {result}; expected {expected}.");
+            combinations += 1;
+        }
+    }
+    if (combinations != 460)
+        throw new InvalidDataException($"Expected 460 Serbian adjective/noun combinations, got {combinations}.");
+    if (SerbianGrammar.ApplyAdjectiveAgreement("Љубичаст Планета") != "Љубичаста Планета")
+        throw new InvalidDataException("Serbian agreement did not preserve initial capitalization.");
+    Console.WriteLine($"Serbian grammar probe passed {combinations} adjective/noun combinations and locale-scoped article suppression.");
 }
 
 static bool ContainsArabicLetter(string value)

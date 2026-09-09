@@ -1,0 +1,33 @@
+{
+  "id": "0214-event-leah-house-000-002",
+  "target": "Data/Events/LeahHouse",
+  "status": "reviewed",
+  "sourceHashes": {
+    "50/f Leah 500/p Leah": "903cae3ec9afb424145340c8a57faae47f84155a9f9cf48c49ef73bbcc5bcd1d",
+    "internet": "111175d4b5d59bfbe94d69e0b0e89c15e41715a722979467525ba3eb13369e40",
+    "creepySexualPass": "21213e90bac3b2486e9b40b044c539567e7307408fed6c5765b7f9e7e98eb3c7"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "50/f Leah 500/p Leah": "breezy/9 8/farmer -50 -50 0 Leah 3 7 3/skippable/animate Leah false true 100 16 17 18 19 19 19 19 16/pause 100/playSound woodyStep/pause 800/playSound woodyStep/pause 800/playSound woodyStep/pause 800/warp farmer 7 9/playSound woodyStep/playSound doorClose/pause 300/stopAnimation Leah/pause 300/faceDirection Leah 1 true/emote Leah 16/speak Leah \"О, здравей, @! Влизай, влизай.\"/move farmer 0 -2 3/faceDirection Leah 1/move farmer -2 0 3/pause 500/speak Leah \"Тъкмо работя върху тази скулптура.\"/pause 300/speak Leah \"Ела тук. Гледай.\"/pause 300/move farmer -1 0 3/move farmer 0 -1 0/move farmer -1 0 2/faceDirection Leah 3/pause 500/animate Leah false true 100 16 17 18 19 19 19 19 16/pause 100/playSound woodyStep/pause 800/playSound woodyStep/pause 800/playSound woodyStep/pause 800/playSound woodyStep/pause 600/stopAnimation Leah/showFrame Leah 19/speak Leah \"Виждаш ли? Разкривам същността на дървото.\"/pause 500/showFrame Leah 12/faceDirection Leah 0/speak Leah \"$q -1 null#Когато премахнеш външните слоеве, истинската природа започва да се разкрива...#$r -1 0 event_sculpt1#Същото е и с хората.#$r -1 0 event_sculpt2#Всъщност предпочитам вида на естественото, необработено дърво.#$r -1 -100 event_sculpt3#(зловещо) Може ли една целувка?\"/fork creepySexualPass/faceDirection Leah 3/pause 1500/faceDirection Leah 3/speak Leah \"За пръв път посетих тази долина като малко момиче, когато бях на почивка с родителите си.#$b#Знаех, че някой ден трябва да се върна... Това място има огромен художествен потенциал!\"/faceDirection Leah 3/pause 500/emote Leah 28/speak Leah \"Но трябва да призная... не е лесно да си плащаш сметките като художничка.$s\"/pause 1000/emote farmer 16/faceDirection Leah 0/question fork1 \"#Защо не направиш художествена изложба в града?#Защо не продаваш изкуството си по интернет?\"/fork internet/faceDirection Leah 0/speak Leah \"Хммм... интересно. Предполагам, че това може да постави началото на превръщането на град Пеликан в истински център на изкуствата...$7\"/faceDirection Leah 3/pause 700/speak Leah \"Но какво ще стане, ако никой не хареса скулптурите ми? Ще бъда съсипана.$s\"/pause 500/speak Leah \"...Ще трябва да помисля.$s\"/faceDirection Leah 0/speak Leah \"Е, благодаря, че се отби, @.\"/pause 600/move farmer 4 0 2 true/globalFade/viewport -1000 -1000/addMailReceived LeahArtShowSuggestion/end dialogueWarpOut Leah \"Художествена изложба за цялото село? Това е смела идея, @.\"",
+    "internet": "speak Leah \"Хмм... Предполагам, че това е идея... Но първо ще ми трябва компютър.$7\"/addMailReceived LeahInternet/faceDirection Leah 3/emote Leah 28/pause 500/speak Leah \"А и това... е скъпо.$s\"/pause 1000/speak Leah \"Е, беше мило, че дойде на гости...\"/pause 600/move farmer 4 0 2 true/globalFade/viewport -1000 -1000/end warpOut",
+    "creepySexualPass": "stopMusic/faceDirection farmer 2/speed Leah 4/move Leah 1 0 0/speed Leah 4/move Leah 0 -1 3/animate Leah false false 100 16 17 18 19/pause 100/playSound ow/playSound clubhit/animate farmer false false 1200 94/positionOffset farmer -8 0/pause 50/positionOffset farmer 8 0/pause 800/stopAnimation farmer/pause 100/end dialogueWarpOut Leah \"...$a\""
+  },
+  "preserveReasons": {
+    "creepySexualPass": "The rejection event contains only structural commands and an emotion-only ellipsis; preserve it byte-for-byte because there is no English prose to translate."
+  },
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 3,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Reviewed Leah House source ordinals 0–2, translated all sixteen prose-bearing quoted fields, and justified the byte-exact preservation of the command-and-ellipsis rejection branch.",
+      "Applied locked град Пеликан terminology, preserved every response key, friendship value, art-show and internet branch, scene command and control token, and retained the deliberately creepy response label.",
+      "Corrected Leah’s artist noun to the feminine form and refined the computer-cost line for natural Bulgarian."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "8f7ac3de2c8cd769b7e29130d9f7011ed851e32c31718bcb4989c0b97e588794"
+  }
+}

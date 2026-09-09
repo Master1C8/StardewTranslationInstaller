@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"Аха... тъжна гледка е, нали?\"/pause 500/speak Willy \"Това беше лодката на баща ми... Служи му добре повече от 50 години.#$b#Но сега едва се държи над водата.$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Сам щях да я поправя, но нямам подходящите материали, ${момко^госпожице}$.\"/faceDirection Willy 0/speak Willy \"Аха... 200 парчета Твърда дървесина за корпуса са добро начало.#$b#Но трябва също да поправим машината за билети и иридиевата котва.\"/faceDirection farmer 0/pause 400/speak Willy \"Ако се сдобия с подходящите материали и поправя старата красавица... тогава ще мога да те отведа до острови Фърн.\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Казват, че са вулканични острови, пълни със странни папагали...\"/pause 400/quickQuestion #Искам да помогна#Не, ще пропусна...(break)emote Willy 32\\speak Willy \"Аха... Знаех си, че ще се съгласиш, ${момко^госпожице}$.$h\"\\speak Willy \"Ще оставя тази врата отключена... можеш да идваш и да оставяш материалите, когато пожелаеш.\"(break)emote Willy 28\\speak Willy \"Добре, както искаш...$s#$b#Ако размислиш, винаги можеш да се върнеш и да помогнеш. Така или иначе ще оставя вратата отключена.\"/pause 2000/end"
+      }
+    }
+  ]
+}

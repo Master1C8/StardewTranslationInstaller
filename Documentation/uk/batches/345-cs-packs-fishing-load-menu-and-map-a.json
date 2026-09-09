@@ -1,0 +1,433 @@
+{
+  "id": "345-cs-packs-fishing-load-menu-and-map-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 pack, fishing minigame, Junimo note, load-menu and map strings. Canonical Junimo, Star Token, Calico Desert, Backwoods, building and character names, placeholders, deliberately irregular note spacing, leading or trailing spaces and localized business hours were checked against the English source.",
+    "reviewedTextSHA256": "857945a3e2f268752fb1254ad0d6d2c257bfcf4126170d742133e05024b54e4c",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 134
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8708",
+      "english": "Large Pack",
+      "translation": "Великий наплічник",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8709",
+      "english": "Deluxe Pack",
+      "translation": "Розкішний наплічник",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "GameLocation.cs.8715",
+      "english": "Error: Not enough money.",
+      "translation": "Помилка: бракує грошей.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MineShaft.cs.9484",
+      "english": "A way down has appeared.",
+      "translation": "З’явився спуск униз.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SeedShop.cs.9701",
+      "english": "a fresh",
+      "translation": "свіжий",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "BlueprintsMenu.cs.10002",
+      "english": "Not Enough Resources",
+      "translation": "Бракує ресурсів",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ChatBox.cs.10261",
+      "english": " Invalid Command ::",
+      "translation": " Неприпустима команда ::",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DayTimeMoneyBox.cs.10370",
+      "english": "am",
+      "translation": "дп",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DayTimeMoneyBox.cs.10371",
+      "english": "pm",
+      "translation": "пп",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "DayTimeMoneyBox.cs.10378",
+      "english": "Paused",
+      "translation": "Призупинено",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.10444",
+      "english": "Score: {0}",
+      "translation": "Рахунок: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12010",
+      "english": "Fish Caught: {0}",
+      "translation": "Спіймано риб: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12011",
+      "english": "{0} Perfection Bonus!",
+      "translation": "Бонус за досконалість: {0}!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12012",
+      "english": "No Perfection Bonus",
+      "translation": "Без бонусу за досконалість",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12013",
+      "english": "Reward: {0} Star Tokens",
+      "translation": "Нагорода: {0} Зоряних жетонів",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingGame.cs.12021",
+      "english": "No Reward... Try Harder",
+      "translation": "Без нагороди... Старайся краще",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "JunimoNoteMenu.cs.10783",
+      "english": "Rewards",
+      "translation": "Нагороди",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "JunimoNoteMenu.cs.10786",
+      "english": "We    the  Junimo are    happy to    aid  you.  In     return we     ask for gifts   of      the valley.    If you   are one     with    forest   magic    then you    will   see    the true    nature   of  this scroll.",
+      "translation": "Ми    джунімо   раді    допомогти  тобі.  Натомість     просимо     дари   долини.    Якщо ти   єдиний    із    лісовою   магією,    то побачиш    справжню    природу   цього  сувою.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10992",
+      "english": "OK",
+      "translation": "Гаразд",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10993",
+      "english": "Cancel",
+      "translation": "Скасувати",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10994",
+      "english": "Delete File",
+      "translation": "Видалити файл",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11019",
+      "english": "{0} Farm",
+      "translation": "Ферма «{0}»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11020",
+      "english": "{0}g",
+      "translation": "{0}g",
+      "reviewed": true,
+      "preserveReason": "Placeholder plus the language-independent in-game gold suffix contains no translatable text and is preserved exactly."
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11022",
+      "english": "No Saved Games Found",
+      "translation": "Збережених ігор не знайдено",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11023",
+      "english": "Really delete file: {0}?",
+      "translation": "Справді видалити файл «{0}»?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11062",
+      "english": "Calico Desert",
+      "translation": "пустеля Каліко",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11064",
+      "english": "{0} Farm",
+      "translation": "Ферма «{0}»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11065",
+      "english": "Backwoods",
+      "translation": "Залісся",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11066",
+      "english": "Bus Stop",
+      "translation": "Автобусна зупинка",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11067",
+      "english": "Wizard's Tower",
+      "translation": "Вежа чарівника",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11068",
+      "english": "Marnie's Ranch",
+      "translation": "Ранчо Марні",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11069",
+      "english": "Open 9:00AM to 4:00PM most days",
+      "translation": "Зазвичай відчинено з 9:00 до 16:00",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11070",
+      "english": "Leah's Cottage",
+      "translation": "Котедж Лії",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11071",
+      "english": "1 Willow Lane",
+      "translation": "Віллоу-лейн, 1",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11072",
+      "english": "Home of Jodi, Kent & Sam",
+      "translation": "Домівка Джоді, Кента й Сема",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11073",
+      "english": "2 Willow Lane",
+      "translation": "Віллоу-лейн, 2",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11074",
+      "english": "Home of Emily & Haley",
+      "translation": "Домівка Емілі й Гейлі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11075",
+      "english": "Town Square",
+      "translation": "Міська площа",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11076",
+      "english": "Harvey's Clinic",
+      "translation": "Клініка Гарві",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11077",
+      "english": "Open 9:00AM to 3:00PM",
+      "translation": "Відчинено з 9:00 до 15:00",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11078",
+      "english": "Pierre's General Store",
+      "translation": "Універсальна крамниця П’єра",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11079",
+      "english": "Home of Pierre, Caroline & Abigail ",
+      "translation": "Домівка П’єра, Кароліни й Ебіґейл ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11080",
+      "english": "Open 9:00AM to 5:00PM (Closed Wednesday)",
+      "translation": "Відчинено з 9:00 до 17:00 (у середу зачинено)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11080_ExtendedHours",
+      "english": "Open 9:00AM to 5:00PM",
+      "translation": "Відчинено з 9:00 до 17:00",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11081",
+      "english": "Blacksmith",
+      "translation": "Коваль",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11082",
+      "english": "Open 9:00AM to 4:00PM",
+      "translation": "Відчинено з 9:00 до 16:00",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11083",
+      "english": "Saloon",
+      "translation": "Салун",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11084",
+      "english": "Open 12:00PM To 12:00AM",
+      "translation": "Відчинено з 12:00 до 00:00",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11085",
+      "english": "Mayor's Manor",
+      "translation": "Садиба мера",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11086",
+      "english": "Stardew Valley Museum & Library",
+      "translation": "Музей і бібліотека долини Стардью",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11087",
+      "english": "Open 8:00AM to 6:00PM",
+      "translation": "Відчинено з 8:00 до 18:00",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11088",
+      "english": "Elliott's Cabin",
+      "translation": "Хатина Елліотта",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11089",
+      "english": "Sewer",
+      "translation": "Каналізація",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11090",
+      "english": "Graveyard",
+      "translation": "Кладовище",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11091",
+      "english": "Trailer",
+      "translation": "Трейлер",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.PamHouse",
+      "english": "2 River Road",
+      "translation": "Річкова дорога, 2",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.PamHouseHomeOf",
+      "english": "Home of Pam & Penny",
+      "translation": "Домівка Пем і Пенні",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11092",
+      "english": "1 River Road",
+      "translation": "Рівер-роуд, 1",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11093",
+      "english": "Home of George, Evelyn & Alex",
+      "translation": "Домівка Джорджа, Евелін і Алекса",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11094",
+      "english": "Carpenter's Shop",
+      "translation": "Теслярська майстерня",
+      "reviewed": true
+    }
+  ]
+}

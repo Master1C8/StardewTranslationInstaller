@@ -1,0 +1,29 @@
+{
+  "scope": "Data/Bundles",
+  "records": 31,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All bundle category names read directly against English. Season, skill, profession, fish habitat, currency labels and the Missing Bundle were checked; reward and requirement metadata stayed exact.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_bundles",
+  "schemaNegativeChecks": [
+    {
+      "case": "field-count",
+      "rejected": true,
+      "reason": "Bundle field count changed"
+    },
+    {
+      "case": "metadata",
+      "rejected": true,
+      "reason": "Bundle reward or requirement metadata changed"
+    },
+    {
+      "case": "name-copies",
+      "rejected": true,
+      "reason": "Bundle display-name copies differ"
+    }
+  ],
+  "translationSha256": "915c2bb8e4e7510fdc1bcd8d6b92beb0a15c00c9ccfecbc1ba74abb2f51506ad",
+  "finalLocaleCleanAudits": 0
+}

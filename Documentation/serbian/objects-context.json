@@ -1,0 +1,45 @@
+{
+  "gameVersion": "1.6.15 build24356",
+  "method": "Read-only IL; no game or installer launched.",
+  "walletItems": {
+    "DarkTalismanDescription": {
+      "argumentKey": "DarkTalisman",
+      "value": "Мрачни талисман",
+      "agreement": "masculine"
+    },
+    "MagicInkDescription": {
+      "argumentKey": "MagicInk",
+      "value": "Магично мастило",
+      "agreement": "neuter"
+    },
+    "MagnifyingGlassDescription": {
+      "argumentKey": "MagnifyingGlass",
+      "value": "Лупа",
+      "agreement": "feminine"
+    },
+    "SpecialCharmDescription": {
+      "argumentKey": "SpecialCharm",
+      "value": "Посебна амајлија",
+      "agreement": "feminine"
+    }
+  },
+  "proof": "SpecialItem.checkForSpecialItemHoldUpMeessage calls LoadString with its displayName; SpecialItem.get_displayName resolves the corresponding four Strings/Objects keys. Passive receipt/finding clauses agree with the fixed item, avoiding invented player gender.",
+  "runtimeAssemblySha256": "8937c582cad1c1127017944778c4102467bf299aea44869491f28ab0ec84cd73",
+  "bassTerminology": {
+    "source": "https://www.isj.sanu.ac.rs/wp-content/uploads/2025/09/Nas-jezik-XLVIII-3-4-3.pdf",
+    "publication": "Наш језик XLVIII/3–4 (2017), pp127–128; Institute for the Serbian Language SANU",
+    "finding": "The primary linguistic paper attests бас for Micropterus, including великоусти бас and малоусти бас. Use these Serbian fish names, rather than assigning the separate perch name гргеч.",
+    "contracts": {
+      "Crispy Bass": "Хрскави бас",
+      "Largemouth Bass": "Великоусти бас",
+      "Smallmouth Bass": "Малоусти бас"
+    }
+  },
+  "cranberryCandy": {
+    "source": "Original Data/Objects612 and Maps/springobjects.xnb sprite612",
+    "IsDrink": true,
+    "visualObservation": "Red liquid in a bottle; inspected original asset crop.",
+    "translation": "Слатки напитак од бруснице",
+    "reason": "Sweet beverage, not solid candies."
+  }
+}

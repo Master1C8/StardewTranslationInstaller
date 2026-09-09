@@ -1,0 +1,131 @@
+{
+  "id": "218-mail-special-order-rewards-and-new-events",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the final 17 mail records: special-order rewards, Willys boat, island rescue variants, crafting rewards, Fizz, Green Rain shelter, Desert Festival and pet-adoption notices. Both no-title rescue records were reviewed explicitly; mail page breaks, titles, item commands, signatures and canonical item and event terms were preserved.",
+    "reviewedTextSHA256": "2d7782c7b8845178fec9b3c7e5310ef8e83ed68de89e0c5eb4d2317e65fafc66",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 45
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "DemetriusReward",
+      "english": "Hi @,^^Thanks for your help with the fish.^Nature is usually good at keeping things balanced, but sometimes artificial factors can cause an imbalance.^^I've enclosed a blueprint from a science magazine that you might find interesting.^^-Demetrius%item craftingRecipe Farm_Computer %%[#]Demetrius' Thank You",
+      "translation": "Привіт, @,^^Дякую за допомогу з рибою.^Зазвичай природа добре підтримує рівновагу, але іноді штучні чинники її порушують.^^Додаю креслення з наукового журналу, яке може тебе зацікавити.^^— Деметріус%item craftingRecipe Farm_Computer %%[#]Подяка Деметріуса",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "willyHours",
+      "english": "Good news!^^The ol' boat is seaworthy once again, thanks to you!^^Stop by the back room whenever you want a ride.^^My shop is now open at 8AM every day, so you can get an early start.^^-Willy[#]Willy's Boat",
+      "translation": "Чудова новина!^^Завдяки тобі старий човен знову придатний до плавання!^^Завітай до задньої кімнати, коли захочеш вирушити в дорогу.^^Тепер моя крамниця щодня відкривається о 8:00, тож можна почати раніше.^^— Віллі[#]Човен Віллі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "linusTrashCleanup",
+      "english": "Hi @,^^Thanks for helping me clean up around the valley.^The waters are looking much cleaner. I think everyone will appreciate it. I know I will.^As a way of saying 'thanks', I wanted to teach you how to grow your own fiber. I hope it's useful.^^-Linus%item craftingRecipe Fiber_Seeds %%[#]Linus' Thank You",
+      "translation": "Привіт, @,^^Дякую за допомогу з прибиранням у долині.^Вода стала значно чистішою. Думаю, усі це оцінять. Я точно оцінив.^На знак подяки хочу навчити тебе вирощувати власне волокно. Сподіваюся, це стане в пригоді.^^— Лінус%item craftingRecipe Fiber_Seeds %%[#]Подяка Лінуса",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "gusGiantOmelet",
+      "english": "Hi @,^^Thanks for the eggs.^The yolks look amazing... I think this will be my best omelet yet!^^Please accept this gift.^^-Gus%item id (BC)216 %%[#]Gus' Famous Omelet",
+      "translation": "Привіт, @,^^Дякую за яйця.^Жовтки мають чудовий вигляд... Думаю, це буде мій найкращий омлет!^^Прийми цей подарунок.^^— Ґас%item id (BC)216 %%[#]Знаменитий омлет Ґаса",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "pamNewChannel",
+      "english": "Hey kid,^^Thanks for the 'juice'. It definitely had a ...one-of-a-kind... flavor.^^By the way, have you ever tuned in to channel 736? It's a seasonal fishing program that you might find interesting.^^Take care,^-Pam[#]Pam's Tip",
+      "translation": "Гей, дитино,^^Дякую за «сік». У нього безперечно був... неповторний... смак.^^До речі, тобі доводилося вмикати канал 736? Це сезонна програма про риболовлю, яка може тебе зацікавити.^^Бережи себе,^— Пем[#]Порада Пем",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "emilyStones",
+      "english": "Hi @,^^Thanks again for the wonderful gemstones.^These will be perfect for my energy re-alignment work!^I wanted to thank you with this special gift. I hope you create some wonderful items with it!^^-Emily%item id (BC)247 %%[#]Emily's Gemstones",
+      "translation": "Привіт, @,^^Ще раз дякую за прекрасні самоцвіти.^Вони ідеально підійдуть для моєї роботи з переналаштування енергії!^На знак подяки я хочу подарувати тобі цю особливу річ. Сподіваюся, з нею ти створиш щось чудове!^^— Емілі%item id (BC)247 %%[#]Самоцвіти Емілі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "carolineSO",
+      "english": "Hi @,^^Lewis told me that you've been shipping a lot of ingredients from the island! It's great to have access to new produce... it really opens a whole new world of culinary possibilities!^I'm including a gift for you... some blueprints you might find useful.^^-Caroline%item craftingRecipe Solar_Panel %%[#]Caroline's Tropical Ingredients",
+      "translation": "Привіт, @,^^Льюїс розповів, що ти продаєш багато складників з острова! Чудово мати доступ до нового врожаю... Це відкриває цілий новий світ кулінарних можливостей!^Додаю для тебе подарунок... кілька креслень, які можуть стати в пригоді.^^— Керолайн%item craftingRecipe Solar_Panel %%[#]Тропічні складники Керолайн",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "WillyTropicalFish",
+      "english": "@,^^Congrats on a successful island fishing trip. I'm proud of ya!^^Here, take this special fish tank. It'll make a great piece in your house.^^-Willy%item id (F)2312 %%[#]Willy's Tropical Challenge",
+      "translation": "@,^^Вітаю з успішною острівною риболовлею. Я пишаюся тобою!^^Ось, візьми цей особливий Акваріум. Він стане чудовою окрасою будинку.^^— Віллі%item id (F)2312 %%[#]Тропічне випробування Віллі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOutIsland",
+      "english": "@,^^You never showed up at the boat, so I went lookin' for ya.^^Found you sprawled out in the dirt, with a couple o' parrots pulling gold out of your pockets!^^Had to drag you all the way down to the boat. Me legs feel like two freshwater shrimp...^-Willy",
+      "translation": "@,^^Тебе все не було біля човна, тож я пішов шукати.^^Знайшов тебе на землі, а кілька папуг витягали золото з твоїх кишень!^^Довелося тягти тебе аж до човна. Ноги тепер мов дві прісноводні креветки...^— Віллі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "passedOutIsland_Leo",
+      "english": "Hi @,^^Last night, I found you slumbering in the dark.^It wasn't a very safe place, so the bird friends air-lifted you to your bed.^Please be careful from now on.^^-Leo^^P.S. Willy helped me write this.",
+      "translation": "Привіт, @,^^Минулої ночі я побачив, що ти спиш у темряві.^Місце було небезпечне, тож друзі-птахи перенесли тебе повітрям у ліжко.^Надалі бережи себе.^^— Лео^^P.S. Віллі допоміг мені написати цього листа.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "guntherBones",
+      "english": "Hi @,^^Thanks for all the bones. I've got a lot to sort through here! To think, each fragment belonged to a living, breathing body from the past. Fascinating.^^Please accept this unique crafting recipe as a thank-you gift!^^-Gunther%item craftingRecipe Bone_Mill %%[#]Gunther's Note",
+      "translation": "Привіт, @,^^Дякую за всі кістки. Тут стільки всього треба перебрати! Тільки подумати: кожен уламок колись належав живому тілу з минулого. Захопливо.^^Прийми цей унікальний рецепт виготовлення як подячний подарунок!^^— Ґюнтер%item craftingRecipe Bone_Mill %%[#]Записка Ґюнтера",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "LeoCooking",
+      "english": "@,^Here's a food from my home, that me and my family enjoy. Hope you like it. ^^  -Leo^^P.S. Willy helped me write this.%item cookingRecipe %%[#]Leo's Recipe",
+      "translation": "@,^Ось страва з мого дому, яку любимо ми з родиною. Сподіваюся, тобі сподобається. ^^  — Лео^^P.S. Віллі допоміг мені написати цього листа.%item cookingRecipe %%[#]Рецепт Лео",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "FizzIntro",
+      "english": "Hello.^^I've heard you're working on a very special challenge.^^I have the 'perfect' solution to help you out.^^Meet me in the watery cave on Ginger Island.^^-Fizz^Joja Special Services Division[#]Letter From Fizz",
+      "translation": "Вітаю.^^Я чув, що ти працюєш над дуже особливим випробуванням.^^У мене є «ідеальне» рішення, яке тобі допоможе.^^Зустрінь мене у водяній печері на Імбирному острові.^^— Фізз^Відділ особливих послуг Joja[#]Лист від Фізза",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "GreenRainGus",
+      "english": "Saw the weather report last night.^^I'm not sure what will happen, but if anyone wants to take shelter in the Saloon, I'll keep it open all day.^^-Gus[#]Shelter In The Saloon",
+      "translation": "Учора ввечері я бачив прогноз погоди.^^Не знаю, що станеться, але якщо комусь знадобиться прихисток у Салуні, я триматиму його відкритим увесь день.^^— Ґас[#]Прихисток у Салуні",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "DesertFestival",
+      "english": "Dear @,^^Tomorrow begins a 3-day festival in Calico Desert.^^With the bus back in order, we're all delighted to be able to continue this time-honored, beloved tradition.^^There will be games, free food, prizes, and much more!^^Also, two townspeople are selected each day to run a little shop, so make sure you swing by and check out what they have to offer.^^See you there!^-Lewis[#]Desert Festival Reminder",
+      "translation": "Вітаю, @,^^Завтра в пустелі Каліко починається триденний Фестиваль пустелі.^^Автобус знову працює, тож ми всі в захваті від можливості продовжити цю давню й улюблену традицію.^^Будуть ігри, безплатна їжа, призи та багато іншого!^^Крім того, щодня двох містян обиратимуть для роботи в маленьких крамничках, тож неодмінно завітай і поглянь на їхні товари.^^До зустрічі!^— Льюїс[#]Нагадування про Фестиваль пустелі",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "MarniePetAdoption",
+      "english": "Dear @,^^From what I can tell, you've been taking really good care of your pet! I'm really happy about that!^^But there are many sweet animals that need a home... If you're interested, I'll start offering pet adoptions at my shop.^^Just be aware that there is a licensing fee, and also that each pet will want their own outdoor pet bowl area, or else they'll be unhappy. Robin will be happy to construct additional pet bowls, for a price.^^See you soon!^-Marnie[#]Pet Adoptions Letter",
+      "translation": "Вітаю, @,^^Схоже, ти чудово дбаєш про свого улюбленця! Я дуже рада!^^Але ще багато милих тварин потребують домівки... Якщо тобі цікаво, я почну пропонувати всиновлення улюбленців у своїй крамниці.^^Лише пам’ятай про плату за ліцензію й про те, що кожному улюбленцеві потрібна власна Миска улюбленця надворі, інакше він буде нещасний. Робін із радістю збудує додаткові миски за певну ціну.^^До зустрічі!^— Марні[#]Лист про всиновлення улюбленців",
+      "reviewed": true
+    },
+    {
+      "target": "Data/mail",
+      "key": "MarniePetRejectedAdoption",
+      "english": "Dear @,^^I hope this letter finds you well.^^I know you decided against adopting a pet when I last asked. However, if you've changed your mind, I am now offering pet adoptions from my shop.^^See you around!^-Marnie[#]Pet Adoptions Letter",
+      "translation": "Вітаю, @,^^Сподіваюся, у тебе все добре.^^Знаю, минулого разу всиновлення улюбленця тебе не зацікавило. Але якщо твоя думка змінилася, тепер у моїй крамниці можна всиновити улюбленця.^^До зустрічі!^— Марні[#]Лист про всиновлення улюбленців",
+      "reviewed": true
+    }
+  ]
+}

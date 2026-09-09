@@ -1,0 +1,166 @@
+{
+  "id": "153-extra-dialogue-summit-spouses-and-closing",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of all remaining Summit spouse speeches and closing messages. Every spouse-specific reflection, embedded event command boundary, marriage and recovery statement, metaphor, farm-vocation line, year placeholder, romantic beat, and final narration was reviewed against its character and scene context and the canonical Ukrainian glossary. Keys, embedded event commands, placeholders, dialogue delimiters, emotion markers, and non-text payloads were preserved. This completes Data/ExtraDialogue; full-locale final audits remain pending.",
+    "reviewedTextSHA256": "4cc4f5848dd4ace429c599486184b03a1189a1d0203037be749bb442c881f491",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 17
+  },
+  "records": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Intro2_Spouse",
+      "english": "It's so beautiful up here...",
+      "translation": "Тут так гарно...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Intro2_Spouse_Gruff",
+      "english": "Great view, huh?",
+      "translation": "Чудовий краєвид, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue1_Spouse",
+      "english": "I was just thinking about the last %year years...",
+      "translation": "Я саме думаю про останні %year років...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue1B_Spouse",
+      "english": "We've been through a lot together, haven't we?$h",
+      "translation": "Ми стільки всього пережили разом, правда?$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue2_Spouse",
+      "english": "...But look how far we've come.",
+      "translation": "...Але поглянь, як далеко ми зайшли.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Alex",
+      "english": "I've finally discovered who I want to be... and I feel certain about the future.\"/pause 500/speak Alex \"I don't think I would've gotten here without you, @.\"",
+      "translation": "Я нарешті зрозумів, ким хочу бути... і впевнено дивлюся в майбутнє.\"/pause 500/speak Alex \"Без тебе мені, мабуть, не вдалося б опинитися тут, @.\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Sebastian",
+      "english": "Before I met you, I spent most of my time turned away from reality... because I thought I'd never find happiness.#$b#...but you've shown me that the world isn't such a dark place, after all.$h\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...That's one of the reasons I love you...\"",
+      "translation": "До знайомства з тобою я переважно відвертався від реальності... бо думав, що ніколи не знайду щастя.#$b#...Але завдяки тобі я побачив, що світ зрештою не такий уже й темний.$h\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...Це одна з причин, чому я тебе кохаю...\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Sam",
+      "english": "I feel like I've changed a lot from when we first met... you know?#$b#...you might call it 'maturity'... hehe.$10#$b#But I'm at a place, now, where I'm actually really excited about our future together...$l#$b#Even if that means just doing normal stuff, like... uh... buying groceries and changing diapers... hah...$10",
+      "translation": "Мені здається, я дуже змінився відтоді, як ми познайомилися... розумієш?#$b#...Можна назвати це «дорослішанням»... Хе-хе.$10#$b#Але тепер я справді з нетерпінням чекаю на наше спільне майбутнє...$l#$b#Навіть якщо воно складатиметься зі звичайних справ, як-от... е-е... купівля продуктів і зміна підгузків... ха...$10",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Shane",
+      "english": "If I hadn't met you, @... I might not even be here right now.#$b#Which would be a shame, because the bird-watching up here is phenomenal!$h\"/emote farmer 16/pause 1000/speak Shane \"Heh... I... I tend to joke a lot, because...well...$s#$b#I guess keeping things light-hearted makes it so I don't have to open up and make myself vulnerable.\"/emote Shane 28/speak Shane \"But every season that goes by, with you, I get a little more comfortable with myself.#$b#Uh.. I guess what I want to say is...#$b#I have no regrets marrying you!$h\"",
+      "translation": "Якби я не зустрів тебе, @... Можливо, мене зараз навіть не було б тут.#$b#І це було б прикро, бо спостерігати звідси за птахами просто неймовірно!$h\"/emote farmer 16/pause 1000/speak Shane \"Хе... Я... Я часто жартую, бо... ну...$s#$b#Мабуть, коли все здається легким і веселим, мені не потрібно розкриватися й показувати свою вразливість.\"/emote Shane 28/speak Shane \"Але з кожною порою року поруч із тобою мені дедалі затишніше із самим собою.#$b#Е-е... Мабуть, я хочу сказати...#$b#Я анітрохи не шкодую, що одружився з тобою!$h\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Elliott",
+      "english": "Heh... it just dawned on me...$h#$b#We've reached the summit, but not just physically... metaphorically as well.#$b#How poetic!$l",
+      "translation": "Хе... Мене щойно осяяло...$h#$b#Ми досягли вершини не лише буквально... а й метафорично.#$b#Як поетично!$l",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Harvey",
+      "english": "When I'm next to you, I'm not even scared of falling off this cliff and dashing onto the sharp rocks below...$l\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#I... I love and admire you very much, @...$l\"",
+      "translation": "Коли ти поруч, мені навіть не страшно зірватися з цієї кручі й розбитися об гостре каміння внизу...$l\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"...$8#$b#Я... Я дуже тебе кохаю й захоплююся тобою, @...$l\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Abigail",
+      "english": "Standing here, looking out on the horizon... I get a feeling of endless possibility.#$b#I'm just happy I get to explore this world, with you by my side...$l",
+      "translation": "Стоячи тут і дивлячись на обрій... я відчуваю безмежні можливості.#$b#Я просто щаслива досліджувати цей світ разом із тобою...$l",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Emily",
+      "english": "This is a special moment...#$b#I've always known I would be standing here with you, someday. I've always felt it in my heart.#$b#Now, it's all come true.\"/pause 500/speak Emily \"The world is a mysterious and special place...$l\"",
+      "translation": "Це особлива мить...#$b#Я завжди знала, що колись стоятиму тут із тобою. Завжди відчувала це серцем.#$b#А тепер усе здійснилося.\"/pause 500/speak Emily \"Світ — загадкове й особливе місце...$l\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Haley",
+      "english": "*giggle*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"Oh, it's just that...#$b#As a little girl, I always dreamed that one day, I would climb to the summit with my true love, and share a kiss.$l\"",
+      "translation": "*хихоче*... $h\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"О, просто...#$b#У дитинстві я завжди мріяла, що одного дня піднімуся на вершину зі своїм справжнім коханням і ми поцілуємося.$l\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Leah",
+      "english": "I think we've both found what we were looking for in this place.#$b#I wouldn't want to be anywhere else, but here with you.$l",
+      "translation": "Гадаю, ми обоє знайшли тут те, що шукали.#$b#Я не хочу бути ніде, крім як тут, із тобою.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Penny",
+      "english": "We have a beautiful home and a thriving family... it's all I've ever dreamed of, and more.$l",
+      "translation": "У нас прекрасний дім і квітуча родина... Це все, про що я мріяла, і навіть більше.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_Dialogue3_Maru",
+      "english": "You've really accomplished a lot since you moved here, @. It's incredible.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"I think it's safe to say that you were meant to be a farmer!$h\"",
+      "translation": "Відколи ти тут, твої досягнення просто неймовірні, @.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"Можна впевнено сказати: фермерство — твоє покликання!$h\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage",
+      "english": "It's been a long road...",
+      "translation": "Це був довгий шлях...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage2",
+      "english": "You challenged yourself to reach the summit",
+      "translation": "Шлях до вершини став твоїм випробуванням",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage3",
+      "english": "What an accomplishment!",
+      "translation": "Яке досягнення!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage4",
+      "english": "We've been watching every step of the way",
+      "translation": "Ми спостерігали за кожним кроком",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SummitEvent_closingmessage5",
+      "english": "And you've made us very proud!",
+      "translation": "І ми дуже пишаємося тобою!",
+      "reviewed": true
+    }
+  ]
+}

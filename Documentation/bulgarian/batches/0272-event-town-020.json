@@ -1,0 +1,27 @@
+{
+  "id": "0272-event-town-020",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "itsagift_pennySpouse": "7c532c0b62a13487b3e4d076d9cbc74b802517728da75bd64681666e0df35be8"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "itsagift_pennySpouse": "pause 200/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"Тогава... просто ще трябва да преглътна гордостта си...\"/pause 500/speak Pam \"*ъхъм*... Благодаря, @.$s\"/pause 500/speak Penny \"Мамо...$s\"/faceDirection Pam 0/speak Penny \"Не се тревожи, мамо... просто искаме да те направим щастлива. Никой в град Пеликан не ни гледа отвисоко, защото сме бедни.$s\"/faceDirection Robin 1/pause 500/speak Pam \"...Вече не съм „бедна“, хлапе... изхвърли тази мисъл от главата си!#$b#Отсега нататък ще бъдем истинско семейство... чуваш ли?#$b#Не искам повече да съм толкова озлобена през цялото време...$s#$b#Ще се опитам да преобърна живота си...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all five quoted Penny-spouse gift-response, gratitude, reassurance and family-renewal fields in Town source ordinal 20.",
+      "Preserved the spouse-specific branch, event commands, actor identifiers, animation sequence, emphasis markers and dialogue control tokens.",
+      "Kept the shared gift ending consistent while correctly shifting Penny’s reassurance to both spouses and Pam’s statement about poverty to singular feminine agreement."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "3b71816cf22aa37d3000376856becf0a9b102e5cc283ba73110525b91b5182a6"
+  }
+}

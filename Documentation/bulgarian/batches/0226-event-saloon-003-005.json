@@ -1,0 +1,31 @@
+{
+  "id": "0226-event-saloon-003-005",
+  "target": "Data/Events/Saloon",
+  "status": "reviewed",
+  "sourceHashes": {
+    "911526/f Alex 2500/t 1900 2200/n joshMessage": "e5066cd112b2ca16303131732e79be05f17824b39a76e6c760fb45ebef009534",
+    "rejectJosh": "04b7be8a06159598513a71856b079cb429d000ca54251c84f8dbdb99452dfa88",
+    "195099/f Shane 2500/f Sebastian 2500/f Sam 2500/f Harvey 2500/f Alex 2500/f Elliott 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 911526/e 528052/e 9581348/e 43/e 384882/e 233104/i 446/k 195013": "339d3f213dd0c2876cb0dca7ed42a30cbe5f9ba58b7dce05e1c085062daeb4a2"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "911526/f Alex 2500/t 1900 2200/n joshMessage": "gusviolin/-1000 -1000/farmer 5 5 1 Gus 10 6 2 Alex 9 5 3 Emily 9 17 2/skippable/showFrame 117/showFrame Alex 39/positionOffset farmer 12 8/positionOffset Alex -12 0/animate Gus false true 723 16 17/viewport 7 4 true/pause 23000/stopAnimation Gus/pause 1000/faceDirection Gus 3/speak Alex \"Благодаря, Гас. Беше чудесно.\"/move Gus 0 1 1/move Gus 1 0 2/move Gus 0 1 2/doAction 11 9/move Gus 0 3 1/move Gus 12 0 3 true/speak Alex \"Тук е хубаво... Никога досега не съм вечерял тук.\"/pause 1000/emote Alex 40/speak Alex \"Ъм, както и да е... Запазих тази частна зала, за да можем да поговорим...$l\"/warp Emily 11 11 true/playSound woodyStep/move Emily 0 -4 3/move Emily -4 0 0/move Emily 0 -1 0/speak Emily \"Имам лингуини със сметанов гъбен сос за г-н @.^Имам салата от кейл и орехи за дамата.#$b#...и стек на грил за Алекс.^И стек на грил за господина.\"/playSound woodyHit/specificTemporarySprite joshDinner/speak Alex \"Благодаря.\"/move Emily 4 0 2/move Emily 0 5 1/move Emily 11 0 1 true/speak Alex \"Та, това, което исках да кажа, е...$9\"/playMusic musicboxsong/speak Alex \"*преглъща*$s\"/pause 600/speak Alex \"Е... когато се запознахме, веднага ме привлече. Това ме обърка... Никога не бях изпитвал подобно нещо към никого.$l^Когато се запознахме, помислих, че си много сладка.$l#$b#Непрекъснато си повтарях: „Не може да изпитваш такива чувства към друг мъж“.$l^Обикновено, когато си падам по някого, чувството отшумява доста бързо...$l\"/pause 800/speak Alex \"...Но сърцето ми говореше друго.^...Но с теб чувството продължи да расте.$l\"/pause 400/emote Alex 40/pause 600/question fork1 \"#И аз чувствам същото.#Съжалявам... Не изпитвам същото към теб.\"/pause 400/fork rejectJosh/speak Alex \"...$l#$b#Не мога да повярвам, че ни отне толкова време да си го кажем.$l\"/emote Alex 32/pause 800/animate Alex false false 400 40 41 41 40 41 41 40 41 41 40 41 41 40/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound gulp/pause 400/speak Alex \"Ммм... този стек е невероятен. Усещаш ли аромата на соса?$10\"/eyes 1 -4000/animate Alex false false 400 40 41 41 40 41 41 40/pause 1000/specificTemporarySprite alexDiningDog/playSound dogWhining/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Alex \"...$l\"",
+    "rejectJosh": "pause 100/playMusic none/shake Alex 2000/emote Alex 28/speak Alex \"...О...$s#$b#С...Съжалявам, ако те накарах да се почувстваш неудобно...$s\"/pause 2000/speak Alex \"Вече не съм гладен...$s\"/viewport move 1 1 5000/globalFade/viewport -1000 -1000/pause 4000/end dialogue Alex \"...$l\"",
+    "195099/f Shane 2500/f Sebastian 2500/f Sam 2500/f Harvey 2500/f Alex 2500/f Elliott 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 911526/e 528052/e 9581348/e 43/e 384882/e 233104/i 446/k 195013": "playful/-1000 -1000/farmer 27 19 1 Sam 36 20 1 Sebastian 37 19 2 Harvey 39 19 2 Shane 40 17 2 Elliott 41 19 2 Alex 42 20 3/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 1000/message \"По някаква причина решаваш да бръкнеш в джоба си...\"/pause 500/message \"Докосваш заешката лапичка и изпитваш облекчение...\"/move farmer 5 0 1 true/viewport 37 19 true/move false/pause 500/faceDirection Sam 3 true/faceDirection Elliott 3 true/faceDirection Harvey 3 true/faceDirection Alex 3 true/faceDirection Shane 3 true/faceDirection Sebastian 3 true/textAboveHead Sam \"Хей!\"/textAboveHead Alex \"Какво става?\"/textAboveHead Shane \"О, здрасти\"/pause 2000/move farmer 3 0 1/emote farmer 32/pause 500/speak Harvey \"Появи се точно навреме за първия в историята турнир по билярд „8-а топка“ в град Пеликан!\"/pause 500/speak Elliott \"Не се тревожи, аз също никога не съм играл.$h\"/pause 500/speak Shane \"Лесно е, просто трябва да удариш топката-бияч с малко повече хъс...$h\"/pause 500/fade/viewport -1000 -1000/pause 1500/message \"Изигра една партия билярд с момчетата.\"/pause 1000/message \"Себастиан спечели, разбира се... но пак беше много забавно!\"/pause 500/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 3,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twenty-six quoted dialogue, player-choice and narration fields in Saloon source ordinals 3–5.",
+      "Preserved all four romance gender branches, fork outcomes, event commands, rabbit-foot gate and control tokens while applying locked град Пеликан and Bulgarian character names.",
+      "Kept player-directed narration gender-neutral, localized the eight-ball tournament accurately and rendered the cue-ball idiom by meaning while preserving its playful tone."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "79d7e509c4f2b1a9c1dc3f7d3333fe123a14ad9f11c2798f2e5bda4d8ae467ef"
+  }
+}

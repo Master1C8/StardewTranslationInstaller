@@ -1,0 +1,27 @@
+{
+  "id": "0256-event-town-004",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "34/f Penny 500/t 900 1400/w sunny": "a402516409b3dd14fd0ea771f35e64d33b7031ec961145edd5830ef98a59fb39"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "34/f Penny 500/t 900 1400/w sunny": "50s/49 64/farmer 43 64 1 Penny 59 69 1 George 49 64 0 Gus 37 70 3 Abigail -100 -100 2/skippable/pause 700/emote George 28/pause 500/speak George \"*Въздишка*... Как ще стигна до онова писмо отзад?$s\"/move Penny -3 0 0/move Penny 0 -5 3/move Penny -3 0 3/emote Penny 16/pause 300/speed Penny 4/move Penny -3 0 3/faceDirection George 1/pause 400/showFrame Penny 20/pause 400/speak Penny \"Ето, позволете да ви помогна, г-н Мълнър!\"/pause 400/speed Penny 2/move Penny 0 1 3/move Penny -2 0 0/move Penny 0 -1 1/positionOffset Penny 2 0/pause 50/showFrame Penny 5/positionOffset Penny 2 0/pause 50/showFrame Penny 4/positionOffset Penny 2 0/pause 50/showFrame Penny 5/positionOffset Penny 2 0/pause 50/showFrame Penny 4/showFrame Penny 21/move George 1 0 1 true/emote George 16/positionOffset Penny 2 0/pause 50/showFrame Penny 22/positionOffset Penny 2 0/pause 50/faceDirection Penny 1/move Penny 1 0 1/pause 400/faceDirection Penny 0/playSound openBox/pause 600/faceDirection George 3/faceDirection Penny 1/speak Penny \"Готово!$h\"/pause 300/emote George 12/speak George \"Хмф. Можех да се справя и сам! И със сигурност мога да се придвижвам самостоятелно!$u#$b#За колко немощен ме мислиш?\"/move farmer 5 0 1/pause 200/faceDirection George 3/emote George 8/faceDirection Penny 3/speak Penny \"$q 71 null#@? Наблюдаваше ли ни?#$r 71 50 event_mail1#Да. Постъпи много мило, Пени.#$r 71 -50 event_mail2 friend_George_25#Да. Трябваше да попиташ, вместо да приемаш, че Джордж иска помощ.#$r 71 0 event_mail3#Просто се разхождам и си гледам работата.\"/pause 400/faceDirection George 2/pause 800/showFrame George 16/pause 500/emote George 28/pause 1000/faceDirection Penny 1/speak George \"*въздишка*... Не, не... Съжалявам, госпожице. Не трябваше да се ядосвам толкова.$s\"/pause 500/faceDirection George 3/pause 400/speak George \"Всъщност беше много мило от твоя страна да ми помогнеш.\"/pause 400/speak Penny \"Няма нищо, г-н Мълнър. Разбирам.\"/warp Abigail 44 1/pause 500/move Abigail 0 8 2 true/move George 7 0 0 false/pause 550/move Abigail -18 0 2 true/warp George -1 -1/playSound doorClose/pause 600/emote Penny 28/pause 700/faceDirection Penny 3/playMusic spring_day_ambient/pause 600/speak Penny \"$q -1 null#Сигурно е трудно да остарееш...$u#$r -1 0 event_old1#Предпочитам да не мисля за това.#$r -1 0 event_old2#Просто е друг етап от живота.#$r -1 0 event_old3#Затова трябва да уважаваме възрастните.#$r -1 0 event_old4#Предпочитам да умра, преди да остарея...\"/pause 500/emote Penny 40/faceDirection Penny 2/pause 500/faceDirection Penny 3/speak Penny \"Е, беше ми интересно да си поговорим, @. Трябва да тръгвам.$u\"/showFrame Penny 20/pause 500/showFrame Penny 12/pause 900/move Penny 6 0 2 true/globalFade/viewport -1000 -1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all ten quoted accessibility, response-choice, apology and aging-discussion fields in Town source ordinal 4.",
+      "Preserved both complete question-response structures, friendship effects, event commands, actor identifiers, emotion markers and control tokens.",
+      "Applied the established Mullner family name and rendered the player’s young-death response without imposing a player gender."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "351ea1630b1f95b2f4dcab8b61637b0030fa19faad1fa4d2b9a73f31bae24a07"
+  }
+}

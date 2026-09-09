@@ -1,0 +1,27 @@
+{
+  "id": "0269-event-town-017",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "itsagift": "dee4fc6ca06a8bbc2cb5936f62e71dc0b2e0c6c8b9efd848c35290ae42338443"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "itsagift": "pause 200/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"Тогава... просто ще трябва да преглътна гордостта си...\"/pause 500/speak Pam \"*ъхъм*... Благодаря, @.$s\"/pause 500/speak Penny \"Мамо...$s\"/faceDirection Pam 0/speak Penny \"Не се тревожи... @ просто иска да ни направи щастливи. Никой в град Пеликан не ни гледа отвисоко, защото сме бедни.$s\"/faceDirection Robin 1/pause 500/speak Pam \"...Вече не сме „бедни“, хлапе... изхвърли тази мисъл от главата си!#$b#Отсега нататък ще бъдем истинско семейство... чуваш ли?#$b#Не искам повече да съм толкова озлобена през цялото време...$s#$b#Ще се опитам да преобърна живота си...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all five quoted gift-response, gratitude, reassurance and family-renewal fields in Town source ordinal 17.",
+      "Preserved the branch command, event commands, actor identifiers, animation sequence, emphasis markers and dialogue control tokens.",
+      "Kept this branch consistent with the shared house-reveal ending while preserving Pam’s pride and Penny’s explicit rejection of the town’s social judgment."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "972ffcf16d64f11db2d2c5f34cbfa71e8dff5889c26b95bf4cdc452a853ab1c4"
+  }
+}

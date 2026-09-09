@@ -1,0 +1,181 @@
+{
+  "id": "180-winter-star-year-two-dialogue-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of Winter 25 records 49–72. Year-two spouse and villager voices, Feast and Winter Star terms, the Powdermelon description context, gift, family, food and gridball references, placeholders, dialogue delimiters, emotion markers, and gift-exchange commands were checked together. Keys and control structure were preserved; the gift-exchange record is explicitly justified as runtime data.",
+    "reviewedTextSHA256": "1ffeb8446f39c1a44d413d40b789c6c75a128b9bbc2f31c34a1667a9c3717b53",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 20
+  },
+  "records": [
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "secretSanta_y2",
+      "english": "none/-1000 -1000/farmer 30 69 0/warp Abigail 35 73/warp Caroline 16 54/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Abigail 29 71/warp Caroline 30 71/faceDirection Caroline 0 true/faceDirection Abigail 0 true/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "translation": "none/-1000 -1000/farmer 30 69 0/warp Abigail 35 73/warp Caroline 16 54/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Abigail 29 71/warp Caroline 30 71/faceDirection Caroline 0 true/faceDirection Abigail 0 true/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "reviewed": true,
+      "preserveReason": "Festival runtime gift-exchange sequence; language-independent commands and dialogue lookup identifiers."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Abigail_spouse_y2",
+      "english": "Brr... It's cold! I wanna get back under the covers...",
+      "translation": "Бр-р... Холодно! Хочу назад під ковдру...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Leah_spouse_y2",
+      "english": "Elliott's drinking too much cider again...$7#$e#I'll come meet you at the table when I can find an exit... I'm starving!",
+      "translation": "Елліотт знову п’є забагато сидру...$7#$e#Зустрінуся з тобою за столом, щойно знайду вихід... Я помираю з голоду!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Maru_spouse_y2",
+      "english": "I'm thankful to have a loving family and you in my life...$0",
+      "translation": "Я вдячна, що в моєму житті є любляча родина й ти...$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Penny_spouse_y2",
+      "english": "I hope everyone likes my powdermelon crisp...$h",
+      "translation": "Сподіваюся, всім сподобається мій крамбл із припорошеної дині...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Haley_spouse_y2",
+      "english": "When I count all the good things in my life, I feel like I've been blessed by the Winter Star.",
+      "translation": "Коли я рахую все добре у своєму житті, то відчуваю, ніби мене благословила Зимова зоря.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Emily_spouse_y2",
+      "english": "When Haley and I were kids, we always used to decorate cookies at this festival.#$b#We should do it sometime! You can't let good traditions die out.$h",
+      "translation": "Коли ми з Гейлі були дітьми, то завжди прикрашали печиво на цьому святі.#$b#Треба якось це повторити! Не можна дозволяти гарним традиціям згаснути.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sebastian_spouse_y2",
+      "english": "Hey... don't worry, you don't need to get me anything.$h#$e#I'm just happy to wake up next to you every morning... what else could a guy ask for?$l",
+      "translation": "Гей... Не хвилюйся, не треба нічого мені дарувати.$h#$e#Я просто щасливий щоранку прокидатися поруч із тобою... чого ще може бажати чоловік?$l",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sam_spouse_y2",
+      "english": "It's kinda fun watching everyone unwrap their presents... seeing their reactions.$h#$e#Oh yeah, I got you something. I'll uhh... show you when we get back to the farmhouse!$10",
+      "translation": "Доволі весело дивитися, як усі розгортають подарунки... і бачити їхню реакцію.$h#$e#А, точно, я дещо для тебе приготував. Е-е... покажу, коли повернемося на ферму!$10",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Alex_spouse_y2",
+      "english": "Let me know if you get cold. I'll lend you my jacket.$0",
+      "translation": "Скажи, якщо стане холодно. Я позичу тобі свою куртку.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Harvey_spouse_y2",
+      "english": "There's a lot I'm thankful for, like my clinic, the good health of my patients...#$b#But ultimately, I'm most thankful for the life we're building together...$l",
+      "translation": "Я багато за що вдячний: за клініку, добре здоров’я пацієнтів...#$b#Але найбільше — за життя, яке ми будуємо разом...$l",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Elliott_spouse_y2",
+      "english": "My dear, I require nothing at all on this day... you are already the greatest gift a man could hope for.$h",
+      "translation": "Кохання моє, сьогодні мені зовсім нічого не потрібно... ти вже є найкращим подарунком, про який чоловік може мріяти.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Shane_spouse_y2",
+      "english": "What am I thankful for?#$b#....uh...$3#$b#I'm thankful... that you pulled me out of the gutter. And showed me that life is worth living.$6",
+      "translation": "За що я вдячний?#$b#...Е-е...$3#$b#Я вдячний... за твою допомогу вибратися з канави. І за те, що завдяки тобі я побачив: життя варте того, щоб жити.$6",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Abigail_y2",
+      "english": "I wonder which present is mine...$0#$e#I hope it's the big box!$h",
+      "translation": "Цікаво, який подарунок мій...$0#$e#Сподіваюся, та велика коробка!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Robin_y2",
+      "english": "Welp... Husband got me a new power saw this year...$6#$b#He must've forgotten that he got me the same thing two years ago!$6",
+      "translation": "Ну ось... Чоловік подарував мені цього року нову електропилку...$6#$b#Мабуть, забув, що два роки тому подарував точнісінько таку саму!$6",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Demetrius_y2",
+      "english": "Hmm... this green jelly has a minty flavor to it.$3#$b#I wonder how mint became associated with the Feast Of The Winter Star? Does mint even grow in Winter?$3",
+      "translation": "Хм... У цього зеленого желе м’ятний смак.$3#$b#Цікаво, як м’ята стала пов’язаною зі Святом Зимової зорі? Хіба м’ята взагалі росте взимку?$3",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Maru_y2",
+      "english": "It's pretty chilly today. Good thing everyone here is bundled up.$0",
+      "translation": "Сьогодні доволі холодно. Добре, що всі тут тепло вдягнені.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Shane_y2",
+      "english": "One benefit of the cold weather is that I can put frozen pizzas under the tree.#$e#Someone's in for a real treat...$h",
+      "translation": "Одна з переваг холодної погоди — можна покласти під дерево заморожену піцу.#$e#На когось чекає справжня смакота...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sebastian_y2",
+      "english": "I guess it's nice the whole family is together for once.$7",
+      "translation": "Мабуть, добре, що хоча б раз уся родина зібралася разом.$7",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Pierre_y2",
+      "english": "Need any last minute gifts? I've got you covered! Take a look at my wares.$0",
+      "translation": "Потрібні подарунки в останню мить? У мене все є! Поглянь на товари.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Caroline_y2",
+      "english": "Isn't the tree gorgeous?$h#$b#I spent all morning decorating it with Marnie and Jodi. It's a fun tradition!",
+      "translation": "Хіба дерево не розкішне?$h#$b#Ми з Марні та Джоді прикрашали його весь ранок. Весела традиція!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Linus_y2",
+      "english": "The mayor personally invited me to his table. I couldn't turn that down!",
+      "translation": "Мер особисто запросив мене до свого столу. Я не міг відмовитися!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Alex_y2",
+      "english": "I'm pretty sure there's a gridball-shaped present with my name on it underneath the spirit tree.$1",
+      "translation": "Майже впевнений, що під деревом духів лежить подарунок у формі м’яча для ґрідболу з моїм ім’ям.$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "George_y2",
+      "english": "I already spend all day with the family, anyway. Why do we need a big hubbub out in the cold?$0",
+      "translation": "Я й так цілий день проводжу з родиною. Навіщо нам уся ця метушня на морозі?$0",
+      "reviewed": true
+    }
+  ]
+}

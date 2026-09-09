@@ -1,0 +1,339 @@
+{
+  "locale": "ro",
+  "target": "Strings/UI",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Direct full paired review of all fish dialogue voices and game options. Runtime PondQueryMenu.UpdateState uses OneCount only for quantity <=1, and Lexicon performs neither articles nor plurals for a custom locale. Romanian therefore uses immutable item names followed by (×quantity), and OneCount is exactly 1. This preserves required quantities without ungrammatical plural/indefinite-article concatenation. Repeated placeholders and demanding/rude/formal/carnivore tones retained; complete strings avoid gender assumptions for item names. Glossary comparison corrected the inflected Remixate mode label and exact Recompensele Minei title.",
+  "entries": {
+    "PondQuery_Name": {
+      "source": "{0} Pond",
+      "translation": "Iaz: {0}"
+    },
+    "PondQuery_EmptyPond": {
+      "source": "Empty Pond",
+      "translation": "Golește iazul"
+    },
+    "PondQuery_ConfirmEmpty": {
+      "source": "Are you sure you want to remove all the fish and return the pond to its original state?",
+      "translation": "Sigur vrei să scoți toți peștii și să readuci iazul la starea inițială?"
+    },
+    "PondQuery_ChangeNetting": {
+      "source": "Change Appearance",
+      "translation": "Schimbă aspectul"
+    },
+    "PondQuery_Population": {
+      "source": "Population: {0}/{1}",
+      "translation": "Populație: {0}/{1}"
+    },
+    "PondQuery_StatusNoFish": {
+      "source": "This pond is empty...",
+      "translation": "Acest iaz este gol..."
+    },
+    "PondQuery_StatusOk0": {
+      "source": "\"We're doing fine!\"",
+      "translation": "„Ne merge bine!”"
+    },
+    "PondQuery_StatusOk1": {
+      "source": "\"Nothing to complain about!\"",
+      "translation": "„N-avem de ce să ne plângem!”"
+    },
+    "PondQuery_StatusOk2": {
+      "source": "\"Everything is okay!\"",
+      "translation": "„Totul e în regulă!”"
+    },
+    "PondQuery_StatusOk3": {
+      "source": "\"We're feeling pretty good!\"",
+      "translation": "„Ne simțim destul de bine!”"
+    },
+    "PondQuery_StatusOk4": {
+      "source": "\"We're feeling healthy!\"",
+      "translation": "„Ne simțim sănătoși!”"
+    },
+    "PondQuery_StatusOk5": {
+      "source": "The fish look happy.",
+      "translation": "Peștii par fericiți."
+    },
+    "PondQuery_StatusOk6": {
+      "source": "The fish seem to be thriving.",
+      "translation": "Peștilor pare să le priască aici."
+    },
+    "PondQuery_StatusOk_Coral": {
+      "source": "The {0} are doing well.",
+      "translation": "În iaz, totul merge bine pentru {0}."
+    },
+    "PondQuery_StatusRequest_Bring": {
+      "source": "Bring",
+      "translation": "Adu"
+    },
+    "PondQuery_StatusRequestPending0": {
+      "source": "\"You know, {1} {0} would liven things up around here!\"",
+      "translation": "„Știi, {0} (×{1}) ar mai înveseli locul!”"
+    },
+    "PondQuery_StatusRequestPending1": {
+      "source": "\"If it's not too much to ask... could you bring us {1} {0}?\"",
+      "translation": "„Dacă nu cerem prea mult... ne-ai putea aduce {0} (×{1})?”"
+    },
+    "PondQuery_StatusRequestPending2": {
+      "source": "\"We'd be more comfortable if we had {1} {0} in here.\"",
+      "translation": "„Ne-ar fi mai comod dacă am avea aici {0} (×{1}).”"
+    },
+    "PondQuery_StatusRequestPending3": {
+      "source": "\"Please... could you bring us {1} {0}?\"",
+      "translation": "„Te rugăm... ne-ai putea aduce {0} (×{1})?”"
+    },
+    "PondQuery_StatusRequestPending4": {
+      "source": "\"We're doing okay, but we'd be happier with {1} {0}...\"",
+      "translation": "„Ne merge bine, dar ne-am bucura mai mult dacă am avea {0} (×{1})...”"
+    },
+    "PondQuery_StatusRequestPending5": {
+      "source": "\"Excuse me... we'd like {1} {0}, please.\"",
+      "translation": "„Scuză-ne... am dori {0} (×{1}), te rugăm.”"
+    },
+    "PondQuery_StatusRequestPending6": {
+      "source": "\"We'd feel more at home with {1} {0}...\"",
+      "translation": "„Ne-am simți mai ca acasă dacă am avea {0} (×{1})...”"
+    },
+    "PondQuery_StatusRequestPending_Rude0_Male": {
+      "source": "\"Hey, landlubber, you think you could bring us {1} {0}?\"",
+      "translation": "„Hei, marinar de uscat, crezi că ne-ai putea aduce {0} (×{1})?”"
+    },
+    "PondQuery_StatusRequestPending_Rude1_Male": {
+      "source": "\"Oi... leg boy! How about bringing us {1} {0}, huh?\"",
+      "translation": "„Hei... băiete cu picioare! Ce-ar fi să ne aduci {0} (×{1}), hă?”"
+    },
+    "PondQuery_StatusRequestPending_Rude2_Male": {
+      "source": "\"Psst... Hey, buddy... think you could send {1} {0} our way?\"",
+      "translation": "„Psst... Hei, amice... crezi că ne-ai putea trimite {0} (×{1})?”"
+    },
+    "PondQuery_StatusRequestPending_Rude0_Female": {
+      "source": "\"Hey, land dweller, you think you could bring us {1} {0}?\"",
+      "translation": "„Hei, locuitoare a uscatului, crezi că ne-ai putea aduce {0} (×{1})?”"
+    },
+    "PondQuery_StatusRequestPending_Rude1_Female": {
+      "source": "\"Hey, lady... You got {1} {0} you can send our way?\"",
+      "translation": "„Hei, doamnă... Ai {0} (×{1}) să ne trimiți și nouă?”"
+    },
+    "PondQuery_StatusRequestPending_Rude2_Female": {
+      "source": "\"Psst... think you could nab us {1} {0} on the sly?\"",
+      "translation": "„Psst... crezi că ne-ai putea șterpeli {0} (×{1}) pe furiș?”"
+    },
+    "PondQuery_StatusRequestPending_Demanding0": {
+      "source": "\"{2}! {2}! We want {1} {0}...!\"",
+      "translation": "„{2}! {2}! Vrem {0} (×{1})...!”"
+    },
+    "PondQuery_StatusRequestPending_Demanding1": {
+      "source": "\"We need {1} {0}! We need {1} {0}!\"",
+      "translation": "„Ne trebuie {0} (×{1})! Ne trebuie {0} (×{1})!”"
+    },
+    "PondQuery_StatusRequestPending_Demanding2": {
+      "source": "\"Where's the {2}? We need {1} {0}!\"",
+      "translation": "„Unde e ce am cerut: {2}? Ne trebuie {0} (×{1})!”"
+    },
+    "PondQuery_StatusRequestPending_Stiff0": {
+      "source": "\"We require {1} {0}...\"",
+      "translation": "„Avem nevoie de {0} (×{1})...”"
+    },
+    "PondQuery_StatusRequestPending_Stiff1": {
+      "source": "\"{1} {0} would allow us to multiply further.\"",
+      "translation": "„Cu {0} (×{1}), am putea să ne înmulțim în continuare.”"
+    },
+    "PondQuery_StatusRequestPending_Stiff2": {
+      "source": "\"We've decided that we need {1} {0}.\"",
+      "translation": "„Am decis că avem nevoie de {0} (×{1}).”"
+    },
+    "PondQuery_StatusRequestPending_Carnivore0": {
+      "source": "\"We're hungry... could you bring us {1} {0}?\"",
+      "translation": "„Ne e foame... ne-ai putea aduce {0} (×{1})?”"
+    },
+    "PondQuery_StatusRequestPending_Carnivore1": {
+      "source": "\"Could you bring us {1} {0} for our dinner?\"",
+      "translation": "„Ne-ai putea aduce {0} (×{1}) pentru cină?”"
+    },
+    "PondQuery_StatusRequestPending_Carnivore2": {
+      "source": "\"We need protein... {1} {0} should do the trick!\"",
+      "translation": "„Avem nevoie de proteine... {0} (×{1}) ar trebui să fie de ajuns!”"
+    },
+    "PondQuery_StatusRequestComplete_Rude0": {
+      "source": "\"Cha cha cha! We're in business.\"",
+      "translation": "„Cha cha cha! Acum ne merge treaba.”"
+    },
+    "PondQuery_StatusRequestComplete_Rude1": {
+      "source": "\"Ah... it's the good stuff. Thanks, kid.\"",
+      "translation": "„A... marfă bună. Mersi, puștiule.”"
+    },
+    "PondQuery_StatusRequestComplete_Rude2": {
+      "source": "\"Thanks, boss!\"",
+      "translation": "„Mersi, șefu’!”"
+    },
+    "PondQuery_StatusRequestComplete_Stiff0": {
+      "source": "\"Ah... the {0} we requested.\"",
+      "translation": "„A... am primit ce am cerut: {0}.”"
+    },
+    "PondQuery_StatusRequestComplete_Stiff1": {
+      "source": "\"This {0} is satisfactory for our needs.\"",
+      "translation": "„Ne sunt satisfăcute nevoile cu acest aport de {0}.”"
+    },
+    "PondQuery_StatusRequestComplete_Stiff2": {
+      "source": "The fish look satisfied with the {0}.",
+      "translation": "Peștii par mulțumiți de ce au primit: {0}."
+    },
+    "PondQuery_StatusRequestComplete_Demanding0": {
+      "source": "\"Thank you! Thank you!\"",
+      "translation": "„Mulțumim! Mulțumim!”"
+    },
+    "PondQuery_StatusRequestComplete_Demanding1": {
+      "source": "\"{0}! {0}! {0}! We're happy!\"",
+      "translation": "„{0}! {0}! {0}! Ce fericiți suntem!”"
+    },
+    "PondQuery_StatusRequestComplete_Demanding2": {
+      "source": "The fish are swimming in circles.",
+      "translation": "Peștii înoată în cerc."
+    },
+    "PondQuery_StatusRequestComplete_Carnivore0": {
+      "source": "\"Looks like {0} is on the menu tonight!\"",
+      "translation": "„Se pare că în seara asta avem în meniu {0}!”"
+    },
+    "PondQuery_StatusRequestComplete_Carnivore1": {
+      "source": "\"Fresh {0}! Yum...\"",
+      "translation": "„O porție proaspătă de {0}! Mmm...”"
+    },
+    "PondQuery_StatusRequestComplete_Carnivore2": {
+      "source": "\"This {0} looks delicious. Thank you!\"",
+      "translation": "„Ce apetisant arată porția asta de {0}. Mulțumim!”"
+    },
+    "PondQuery_StatusRequestComplete0": {
+      "source": "\"Wow, thanks for the {0}!\"",
+      "translation": "„Uau, mulțumim pentru {0}!”"
+    },
+    "PondQuery_StatusRequestComplete1": {
+      "source": "\"Hey, look, it's {0}. Just what we needed!\"",
+      "translation": "„Hei, uite, {0}. Exact ce ne trebuia!”"
+    },
+    "PondQuery_StatusRequestComplete2": {
+      "source": "\"Hey! This {0} looks pretty nice!\"",
+      "translation": "„Hei! Ce bine arată: {0}!”"
+    },
+    "PondQuery_StatusRequestComplete3": {
+      "source": "\"Thank you! This {0} will keep us healthy.\"",
+      "translation": "„Mulțumim! Cu {0}, ne vom păstra sănătatea.”"
+    },
+    "PondQuery_StatusRequestComplete4": {
+      "source": "\"Ah, {0}... this really makes us feel at home.\"",
+      "translation": "„A, {0}... chiar ne face să ne simțim ca acasă.”"
+    },
+    "PondQuery_StatusRequestComplete5": {
+      "source": "\"Everyone, look... fresh {0}!\"",
+      "translation": "„Uitați-vă cu toții... un aport proaspăt de {0}!”"
+    },
+    "PondQuery_StatusRequestComplete6": {
+      "source": "The fish seem happy.",
+      "translation": "Peștii par fericiți."
+    },
+    "PondQuery_StatusRequestOneCount": {
+      "source": "some",
+      "translation": "1"
+    },
+    "AlreadyDatingBouquet": {
+      "source": "You are already dating {0}.",
+      "translation": "Ai deja o relație cu {0}."
+    },
+    "MovieStartRequest": {
+      "source": "The movie is about to begin!",
+      "translation": "Filmul este pe cale să înceapă!"
+    },
+    "MiniFridge_NoKitchen": {
+      "source": "The Mini-Fridge can only be placed in a house with a kitchen.",
+      "translation": "Mini-frigiderul poate fi amplasat doar într-o casă cu bucătărie."
+    },
+    "Kitchen_InUse": {
+      "source": "A kitchen appliance is currently in use, please try again later.",
+      "translation": "Un aparat din bucătărie este folosit acum. Încearcă din nou mai târziu."
+    },
+    "ItemGrab_FillStacks": {
+      "source": "Add To Existing Stacks",
+      "translation": "Adaugă la stivele existente"
+    },
+    "OptionsPage_OpenFolder": {
+      "source": "Open Destination Folder",
+      "translation": "Deschide dosarul de destinație"
+    },
+    "Calendar_Wedding": {
+      "source": "{0} and {1}'s Wedding",
+      "translation": "Nuntă: {0} și {1}"
+    },
+    "Options_Vsync": {
+      "source": "VSync",
+      "translation": "VSync",
+      "preservationReason": "Standard technical display synchronization label."
+    },
+    "VersionMismatch": {
+      "source": "Version mismatch ({0})",
+      "translation": "Versiuni incompatibile ({0})"
+    },
+    "Options_GamepadMode": {
+      "source": "Gamepad Mode",
+      "translation": "Mod gamepad"
+    },
+    "Options_GamepadMode_Auto": {
+      "source": "Auto-detect",
+      "translation": "Detectare automată"
+    },
+    "Options_GamepadMode_ForceOn": {
+      "source": "Force On",
+      "translation": "Forțează activarea"
+    },
+    "Options_GamepadMode_ForceOff": {
+      "source": "Force Off",
+      "translation": "Forțează dezactivarea"
+    },
+    "AGO_Label": {
+      "source": "Advanced Game Options:",
+      "translation": "Opțiuni avansate de joc:"
+    },
+    "AGO_CCB": {
+      "source": "Community Center Bundles:",
+      "translation": "Pachetele Centrului comunitar:"
+    },
+    "AGO_CCB_Tooltip": {
+      "source": "Modifies the bundles that appear in the Community Center.",
+      "translation": "Modifică pachetele care apar în Centrul comunitar."
+    },
+    "AGO_CCB_Normal": {
+      "source": "Normal",
+      "translation": "Normal",
+      "preservationReason": "Normal is also the Romanian label for the standard mode."
+    },
+    "AGO_CCB_Remixed": {
+      "source": "Remixed",
+      "translation": "Remixate",
+      "previousTranslation": "Recombinate"
+    },
+    "AGO_Year1Completable": {
+      "source": "Guarantee Year 1 Completable",
+      "translation": "Garantează finalizarea în anul 1"
+    },
+    "AGO_Year1Completable_Tooltip": {
+      "source": "Ensures that the Traveling Merchant sells a Red Cabbage seed some time during the first year.",
+      "translation": "Asigură că Negustorul ambulant vinde o sămânță de varză roșie cândva în primul an."
+    },
+    "AGO_MineTreasureShuffle": {
+      "source": "Mine Rewards:",
+      "translation": "Recompensele Minei:",
+      "previousTranslation": "Recompensele din Mine:"
+    },
+    "AGO_MineTreasureShuffle_Tooltip": {
+      "source": "Modifies the rewards that appear in the Mines.",
+      "translation": "Modifică recompensele care apar în Mine."
+    },
+    "AGO_FarmMonsters": {
+      "source": "Spawn monsters on the farm",
+      "translation": "Generează monștri la fermă"
+    }
+  }
+}

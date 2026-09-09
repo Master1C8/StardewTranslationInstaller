@@ -1,0 +1,27 @@
+{
+  "id": "0186-event-desert-festival",
+  "target": "Data/Events/DesertFestival",
+  "status": "reviewed",
+  "sourceHashes": {
+    "PlayerKilled": "4a534ade8bf5b8360778ce93d5fa76388bc7de278bedf0d09768aaf6f889c4d4"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "PlayerKilled": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end"
+  },
+  "preserveReasons": {
+    "PlayerKilled": "Structural player-death event state, viewport, fade, and termination commands only; no player-facing wording."
+  },
+  "editorialReview": {
+    "date": "2026-09-06",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Read the complete record, classified it as a command-only player-death event with no player-facing wording, and preserved it byte-for-byte."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "a54884b513395af3612bf20aab1a33f3378dc130ba8f720d5c58dd4094c3cbec"
+  }
+}

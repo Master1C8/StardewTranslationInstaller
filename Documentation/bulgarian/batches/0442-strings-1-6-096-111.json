@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "0442-strings-1-6-096-111",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/1_6_Strings",
+  "status": "reviewed",
+  "entries": {
+    "Scholar_Question_0_2_Answers": "пустинята Калико,пустинята Карлито,Коничната пустиня,пустинята Каприко,Каноничната пустиня,пустинята Кравелико,Катакомбната пустиня,пустинята Капикола,пустинята Черепна пещера",
+    "Scholar_Question_1_0": "Въпрос 2: През кой сезон расте {0}?",
+    "Scholar_Question_1_0_Options": "Чесън,Червено зеле,Артишок",
+    "Scholar_Question_1_0_Answers": "Пролет,Лято,Есен",
+    "Scholar_Question_1_1": "Въпрос 2: През кой сезон дървото {0} дава плодове?",
+    "Scholar_Question_1_1_Options": "Кайсия,Праскова,Нар",
+    "Scholar_Question_1_1_Answers": "Пролет,Лято,Есен",
+    "Scholar_Question_1_2": "Въпрос 2: Кога обикновено не работи магазинът на Пиер?",
+    "Scholar_Question_1_2_Answers": "Сряда,Четвъртък,Вторник,Понеделник,Събота,Неделя,Петък",
+    "Scholar_Question_2_0": "Въпрос 3: През кой сезон можеш да уловиш {0}?",
+    "Scholar_Question_2_0_Options": "Шаран,Риба балон,Сьомга,Калмар",
+    "Scholar_Question_2_0_Answers": "Всеки сезон,Лято,Есен,Зима",
+    "Scholar_Question_2_1": "Въпрос 3: Колко стъпки досега?",
+    "Scholar_Question_2_2": "Въпрос 3: Колко струва {0}?",
+    "Scholar_Question_2_2_Options": "Кокошка,Крава,Прасе,Заек,Патица",
+    "Scholar_Question_2_2_Answers": "800g,1500g,16000g,8000g,1200g,11000g,7500g"
+  },
+  "preserveReasons": {
+    "Scholar_Question_2_2_Answers": "Player-facing price-answer array contains only exact gold amounts; every amount and comma-delimited answer slot must remain unchanged."
+  },
+  "sourceHashes": {
+    "Scholar_Question_0_2_Answers": "cb2f9ebb2d636d36017084fd80106aff21812b3dc093b959bd777c3d9b8b5b3e",
+    "Scholar_Question_1_0": "e8c6902210ddf588405ab3e708ff25fcf2bf7a1aa5d21d81cc5e06b35aa89d8b",
+    "Scholar_Question_1_0_Options": "c20ef0038ed350b5080a7f8f22d58ee72f75de396f474ac846ecfe4c1cf94f2e",
+    "Scholar_Question_1_0_Answers": "39d17e6f66135427bbe5ac9590f9c614d54fac79ec64c52eb3ee4849907d0209",
+    "Scholar_Question_1_1": "4c0affdb42cbb60095aff21dbf64668c058d812e76bf633ab7db842b5defe82e",
+    "Scholar_Question_1_1_Options": "80e06321ce40d276c6d7302887bfd791d02daf33e970dc20d77cf4137a6af0b6",
+    "Scholar_Question_1_1_Answers": "39d17e6f66135427bbe5ac9590f9c614d54fac79ec64c52eb3ee4849907d0209",
+    "Scholar_Question_1_2": "ecf99810839d0ca08b6e155425263d0e961e034e7e3f5f63da4a2b25259d0613",
+    "Scholar_Question_1_2_Answers": "4c559734af1e59de929f4f17bc34724b02f683c5b6ca243d7a7200bd4cfb1452",
+    "Scholar_Question_2_0": "b1cbc7aed9b1e8e53333d9fcb5825b193834ba381a9cef25ca8156d621f570d5",
+    "Scholar_Question_2_0_Options": "f2e8ad61b8bd3f99c22c48a952c842bdfa45c94cd102f5a820ca8405924d6394",
+    "Scholar_Question_2_0_Answers": "a81f64abdd1299d544b76ca6cde23b47e4c305879db136ebf1c507c25a0ca551",
+    "Scholar_Question_2_1": "a83f2f7962b937b29ccc24f93319246f0242bbe3dc4458425bfa85162e129469",
+    "Scholar_Question_2_2": "beef93fe4deebd7e9cd090d5eaf1ff514d7b9ca2364692100e2335ea211d83c4",
+    "Scholar_Question_2_2_Options": "5a4f45cb5a978da10d9e6f8104a37fda053ff310e76bff1d08ea5e83d89be23b",
+    "Scholar_Question_2_2_Answers": "d77f8bac09d8fcfac6cb7474658966d20c4c83a04ab9ab8f17929aeb477f7841"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated all fifteen textual quiz questions, options and answer arrays directly from English and preserved the numeric gold-price array byte-exact with an explicit reason.",
+      "Applied locked пустинята Калико, crop, fruit, weekday, season, fish and farm-animal terms while retaining every distractor and all comma-delimited slots in exact source order.",
+      "Reread all quiz compositions with their substitutions for clarity and grammatical fit; replaced the gendered steps question with a concise neutral form."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "8ccf4caa35ec44dc903171326db474cac617cb7ae92cc933a1f4d12a189f6bc3"
+  }
+}

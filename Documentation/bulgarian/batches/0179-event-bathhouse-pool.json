@@ -1,0 +1,31 @@
+{
+  "id": "0179-event-bathhouse-pool",
+  "target": "Data/Events/BathHouse_Pool",
+  "status": "reviewed",
+  "sourceHashes": {
+    "38/f Penny 2500/t 1900 2400/n pennySpa": "2a87229526636b355b6d79e45316806b2c5c5db3e179b444580d7a2cc797377f",
+    "pennyHeartbroken": "25ebd17b14a70604b8ecc47688f1b4d76b113cc34d02f69a3d81ee4f4c34e097"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "38/f Penny 2500/t 1900 2400/n pennySpa": "echos/-1000 -1000/farmer 13 23 2 Penny 9 29 1/swimming farmer/swimming Penny/skippable/showFrame Penny 31/viewport 13 27 true/pause 2000/playSound slosh/move farmer 0 6 3/positionOffset farmer 0 16/pause 700/speak Penny \"Ето те... Притеснявах се, че бележката ми не е стигнала до теб.$6\"/playSound slosh/move Penny 1 0 1/pause 1500/faceDirection Penny 0/speak Penny \"Изглежда, че сме сами.$8\"/pause 800/speak Penny \"Водата е толкова приятна след студа навън през нощта, нали?$6\"/faceDirection farmer 0/pause 1300/faceDirection Penny 1/pause 500/playSound slosh/move Penny 1 0 1/faceDirection farmer 3/speak Penny \"$q -1 null#Знаеш ли защо те помолих да дойдеш тук тази вечер?$8#$r -1 0 event_pool1#Имаш да ми кажеш нещо.#$r -1 0 event_pool2#Не знам със сигурност.#$r -1 0 event_pool3#Искаше да ме видиш по бански.\"/faceDirection Penny 3/pause 800/faceDirection Penny 1/speak Penny \"Ъм, как да го кажа...$8\"/pause 1000/playSound slosh/move Penny 1 0 1/pause 500/speak Penny \"От известно време искам да ти кажа... какво изпитвам.$8#$b#Не мога да спра да мисля за теб...$8#$b#Никога не съм изпитвала това към никого.$8\"/speak Penny \"$q -1 null#...$8#$r -1 0 event_pool4#И аз изпитвам същото към теб.#$r -1 -1500 event_pool5#Съжалявам, но чувствата ми към теб не са такива...\"/fork pennyHeartbroken/pause 1000/showFrame Penny 32/pause 200/playSound slosh/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Penny 2 0/positionOffset farmer -2 2/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/specificTemporarySprite heart 13 29/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+    "pennyHeartbroken": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut"
+  },
+  "preserveReasons": {
+    "pennyHeartbroken": "Structural fork branch with movement, facing, fade, swimming-state, and warp commands only; no player-facing wording."
+  },
+  "editorialReview": {
+    "date": "2026-09-06",
+    "recordsRead": 2,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all seven quoted dialogue fields, including both question prompts and all five response branches.",
+      "Recast player responses without assuming player gender and preserved Penny’s voice and emotional progression.",
+      "Classified the pennyHeartbroken branch as command-only, preserved it byte-for-byte with an explicit reason, and verified both complete event command skeletons."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "1e5d8cfb9d9d5af76cca8f780f01227efbd9de0e198e64900d02c1deaa9766d2"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-08",
+  "sourceInventory": {
+    "assets": 191,
+    "records": 14725,
+    "reviewed": 14725,
+    "errors": 0
+  },
+  "editorial": {
+    "consecutiveCleanFullPasses": 2,
+    "wordingFingerprint": "eee4bf34eabf67de178c52e2b7a7eff7bff061430a2c59cee9258767155eef48"
+  },
+  "translationBuild": {
+    "files": 191,
+    "records": 14725,
+    "repeatBuildIdentical": true
+  },
+  "fonts": {
+    "roundTripPassed": true,
+    "repeatBuildIdentical": true,
+    "sortedCharacterMaps": true,
+    "alignedMetadata": true,
+    "requiredCharacters": 179,
+    "missingCharacters": 0,
+    "SpriteFont1SHA256": "045b0bd9ceeec489cae09dc79fecb3bff679c85d823d1d56f8aaf117d1c3247c",
+    "SmallFontSHA256": "e969f3cec92d0989fdc00da7d770090388e356b478383f59271e35fb1b64b82c"
+  },
+  "staticAssets": {
+    "buttonSHA256": "b94356c0f235b5c701f69969997432a8c0fd0742b94468d6cc887e6898fc6478",
+    "titleButtonsSHA256": "1702190e8a7402279ec7d02f5b98fcf00bced57cca2cb662d002fb67ff13b4e1",
+    "visualProofSHA256": "6003cbb5bb69bba7ba4f6967e67f2e8c1afb7a7edc3eed65b2ac86105f2034c9"
+  },
+  "swiftTests": {
+    "command": "DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --disable-sandbox",
+    "tests": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "releaseBuild": {
+    "command": "./Scripts/build-app.sh",
+    "succeeded": true,
+    "app": "dist/Stardew Translation Installer.app",
+    "executableSHA256": "38248cf58bbe3edfff6d932835ec0849e83e14e9dc9dbee81d46e17ff151b786",
+    "codesignDeepStrictPassed": true,
+    "signature": "adhoc"
+  },
+  "runtimeQA": {
+    "freshSMAPILaunchPassed": true,
+    "locale": "uk-vnrevival",
+    "localeFontsLoaded": true,
+    "titleButtonsLoaded": true,
+    "adjacentContentPatcherErrors": 0,
+    "visualQAPassed": true,
+    "preQAInstalledStateRestored": true
+  }
+}

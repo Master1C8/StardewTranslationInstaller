@@ -1,0 +1,222 @@
+{
+  "id": "259-locations-house-upgrades-mines-signs-dark-shrines-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 30 location strings covering CalicoJack, house and community upgrades, Joja membership, Mines, town signs, profession statue and Dark Shrines. Glossary corporation, building, material, item, profession and place names, placeholders, quantities, currency, newlines and caret-delimited shrine pages were preserved.",
+    "reviewedTextSHA256": "0d817961cfa0ba61f0f0d01f64c37fa090e0d976faecba9efccd795cf00e3075",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 52
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "Club_CalicoJack_NotEnoughCoins",
+      "english": "Hey, the betting's fixed at 100 coins. You don't have enough. Go buy some coins from the machine if you want to play.",
+      "translation": "Гей, ставка незмінна — 100 монет. У вас недостатньо. Якщо хочете грати, придбайте монети в автоматі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Carpenter_UpgradeHouse1",
+      "english": "I can increase the size of your house and add a kitchen. It will cost 10,000g and you'll also need to provide me with 450 pieces of wood. Are you interested?",
+      "translation": "Я можу розширити ваш будинок і додати кухню. Це коштуватиме 10 000g, а ще мені знадобиться 450 одиниць деревини. Зацікавились?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Carpenter_UpgradeHouse2",
+      "english": "I can increase the size of your house and add a nursery. It will cost {0}g and you'll also need to provide me with {1} pieces of hardwood. Are you interested?",
+      "translation": "Я можу розширити ваш будинок і додати дитячу кімнату. Це коштуватиме {0}g, а ще мені знадобиться {1} одиниць Твердої деревини. Зацікавились?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Carpenter_UpgradeHouse3",
+      "english": "I can add a cellar to your house. The cellar can be used to age certain products, like wine and cheese. It will cost 100,000g. Are you interested?",
+      "translation": "Я можу додати до вашого будинку льох. У ньому можна витримувати деякі продукти, як-от вино й сир. Це коштуватиме 100 000g. Зацікавились?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Carpenter_CommunityUpgrade1",
+      "english": "...What's that? You want to build Pam a house? That's a great idea!^I'll just need 950 wood and 500,000g...",
+      "translation": "...Що-що? Ви хочете збудувати Пем будинок? Чудова думка!^Мені знадобиться лише 950 одиниць деревини й 500 000g...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Carpenter_NotEnoughWood",
+      "english": "Sorry... You have the money, but I also need {0} pieces of wood.",
+      "translation": "Вибачте... Грошей у вас достатньо, але мені також потрібно {0} одиниць деревини.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Carpenter_NotEnoughHardwood",
+      "english": "Sorry... You have the money, but I also need {0} pieces of hardwood.",
+      "translation": "Вибачте... Грошей у вас достатньо, але мені також потрібно {0} одиниць Твердої деревини.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Farm_WeedsDestruction",
+      "english": "The spreading weeds have caused damage to your farm.",
+      "translation": "Бур’яни, що розростаються, пошкодили вашу ферму.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "JojaMart_SignUp",
+      "english": "If you become a Joja Member, the community center will become a Joja Warehouse, and you will no longer be able to refurbish it. However, Joja will provide an alternative means to improving the town. Are you sure you want to join?",
+      "translation": "Якщо ви станете членом Joja, Громадський центр перетвориться на Склад Joja й відновити його вже не вдасться. Натомість Joja запропонує інший спосіб поліпшення містечка. Ви точно хочете приєднатися?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Mines_Infested",
+      "english": "This area is infested...",
+      "translation": "Ця ділянка кишить чудовиськами...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Mines_Overrun",
+      "english": "This area is overrun with monsters.",
+      "translation": "Цю ділянку заполонили чудовиська.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Mines_Fallen",
+      "english": "You fell {0} levels.",
+      "translation": "Ви впали на {0} рівнів.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Mines_FallenFar",
+      "english": "You fell {0} levels. Ouch!",
+      "translation": "Ви впали на {0} рівнів. Ой!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Mines_ShaftJumpIn",
+      "english": "Jump In",
+      "translation": "Стрибнути",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Mines_Shaft",
+      "english": "There's a shaft leading down.",
+      "translation": "Униз веде шахтний стовбур.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Mountain_AdventurersGuildNote",
+      "english": "      * Adventurer's Guild *\n\n    Proven adventurers only.",
+      "translation": "      * Гільдія шукачів пригод *\n\n    Лише для випробуваних шукачів пригод.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Railroad_TrainComing",
+      "english": "A train is passing through Stardew Valley.",
+      "translation": "Долиною Стардью проїжджає потяг.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Town_SeedShopSign",
+      "english": "- Pierre's General Store -\nNow open 7 days a week From 9am-5pm!",
+      "translation": "— Універсальна крамниця П’єра —\nТепер працює 7 днів на тиждень із 9:00 до 17:00!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Town_JojaSign_Destroyed",
+      "english": "Out of Business.",
+      "translation": "Зачинено назавжди.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Town_PickupTruck",
+      "english": "It's just the back of Lewis' old pickup truck...",
+      "translation": "Це лише кузов старого пікапа Льюїса...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Sewer_DogStatue",
+      "english": "-Statue Of Uncertainty-^The statue can help you change professions.^Make an offering of 10,000g?",
+      "translation": "— Статуя невизначеності —^Статуя допоможе вам змінити професії.^Пожертвувати 10 000g?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Sewer_DogStatueCancel",
+      "english": "None, I changed my mind...",
+      "translation": "Нічого, вже не треба...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Sewer_DogStatueQuestion",
+      "english": "Which skill's professions would you like to change?",
+      "translation": "Професії якої навички бажаєте змінити?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Sewer_DogStatueAlready",
+      "english": "This skill is already being altered tonight. Come back tomorrow...",
+      "translation": "Професії цієї навички вже зміняться сьогодні вночі. Поверніться завтра...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Sewer_DogStatueFinished",
+      "english": "*woof* *woof* (It's done... now go to sleep...)",
+      "translation": "*гав* *гав* (Готово... тепер ідіть спати...)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_EvilShrineLeft",
+      "english": "-Dark Shrine of Selfishness-^Your children will turn into doves and fly away...^Make an offering of one Prismatic Shard?",
+      "translation": "— Темне святилище егоїзму —^Ваші діти перетворяться на голубів і полетять геть...^Пожертвувати один Райдужний уламок?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_EvilShrineLeftInactive",
+      "english": "-Dark Shrine of Selfishness-^The statue stares through you...",
+      "translation": "— Темне святилище егоїзму —^Статуя дивиться крізь вас...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_EvilShrineCenter",
+      "english": "-Dark Shrine of Memory-^The relationship between you and your ex-spouses will be wiped from memory. It will be like you've never met.^Make an offering of 30,000g?",
+      "translation": "— Темне святилище пам’яті —^Стосунки з вашими колишніми партнерами буде стерто з пам’яті. Усе буде так, наче ви ніколи не зустрічалися.^Пожертвувати 30 000g?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_Goodbye",
+      "english": "Goodbye, {0}.",
+      "translation": "Прощавай, {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_EvilShrineCenterInactive",
+      "english": "-Dark Shrine of Memory-^The statue stares through you...",
+      "translation": "— Темне святилище пам’яті —^Статуя дивиться крізь вас...",
+      "reviewed": true
+    }
+  ]
+}

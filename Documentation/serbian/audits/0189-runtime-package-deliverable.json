@@ -1,0 +1,71 @@
+{
+  "scope": "Serbian runtime, merged package, and release deliverable",
+  "pass": 1,
+  "game": "Stardew Valley 1.6.15 build 24356",
+  "result": "clean",
+  "checks": {
+    "serbianAudit": {
+      "records": 14720,
+      "files": 187,
+      "packageIncludes": 187,
+      "warnings": 0,
+      "errors": 0
+    },
+    "packageIntegration": {
+      "languages": 15,
+      "changes": 3350,
+      "includes": 3283,
+      "contentPackVersion": "1.13.0"
+    },
+    "languageSwitcher": {
+      "version": "1.6.0",
+      "standaloneGrammarCombinations": 460,
+      "result": "passed"
+    },
+    "fontRoundTrip": {
+      "requiredCharacters": 188,
+      "spriteFontGlyphs": 806,
+      "smallFontGlyphs": 806,
+      "result": "passed"
+    },
+    "swiftTests": {
+      "tests": 8,
+      "failures": 0,
+      "result": "passed"
+    },
+    "releaseBuild": {
+      "architecture": "arm64",
+      "signature": "adhoc",
+      "codesignDeepStrict": "passed",
+      "embeddedPayloadsByteIdentical": true
+    },
+    "liveSmapi": {
+      "isolatedTemporaryGameCopy": true,
+      "switchChain": [
+        "sr-vnrevival",
+        "pl-vnrevival",
+        "sr-vnrevival"
+      ],
+      "serbianArticleSuppression": "passed",
+      "nonSerbianArticlePreservation": "passed",
+      "serbianFontsLoaded": true,
+      "serbianTitleAtlasLoaded": true,
+      "qaComplete": true,
+      "unexpectedErrors": 0,
+      "expectedEnvironmentNotice": "Steam achievements unavailable because the isolated QA launch did not use Steam"
+    }
+  },
+  "artifacts": {
+    "translationTreeSha256": "0c1c56a28c1bd44fdf340fd7de2d13cb28f774dc0eab662b1d1461fd31357fa3",
+    "rootContentSha256": "144add6091eedbd1827b3b3e5272604ec3949a7790895bfcc37013ad3fa9e85d",
+    "contentPackManifestSha256": "0359569951c06281819ad0747843663dbf27a825d723d31c76674864db1fdc12",
+    "switcherAssemblySha256": "c5b4ae84c1d3dd54e159e91344f1b25928147738ccf51bdb34702a294d09da53",
+    "switcherManifestSha256": "00e912ba382ba747da86f51f91fea046e7cddddb4ff927e1a084f14c30da92ad",
+    "spriteFontSha256": "dd3b3dc920938920c60316291e43d42de8088a27abb5199c00aa55fa354ec1d9",
+    "smallFontSha256": "582291f282347b303e2bc547ecbded102edc3e4f36a6e4fb4e2dcb92417f465e",
+    "buttonSha256": "cb36cff1cafc2d37d550cefcc6e84de8fb0ac96efe0d62127387dac9db429d81",
+    "titleAtlasSha256": "af1a800352081286fb823432cadac9ba03ba8f4fa1810a94a4c40aa8016addbb",
+    "releaseExecutableSha256": "f173757ee8cfcd2c397e917042fb0cf41035fa9c7948a0979bb49f0e31b3159d",
+    "smapiLogSha256": "78720b2492dd2df3c159053d366df21e873922fceb73b7636e0b30496b5b02fe"
+  }
+}

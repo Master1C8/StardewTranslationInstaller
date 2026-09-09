@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "0326-summer28-000-005",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Festivals/summer28",
+  "status": "reviewed",
+  "entries": {
+    "name": "Танц на лунните медузи",
+    "conditions": "Beach/2200 2400",
+    "set-up": "ocean/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Jellies/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true 0 12 3 3000 2 0 1 3000 0 -12 -2 0 3 3000/advancedMove Jas true 0 2 3 5000 0 -2 3 5000/advancedMove Clint false 2 50000 -2 0 3 500 2 1000 3 1000 1 0 2 1000/advancedMove Harvey True 0 -12 -10 0 0 6 2 25000 0 -6 10 0 0 12 2 25000/playerControl jellies/viewport player clamp true unfreeze/globalFadeToClear",
+    "mainEvent": "pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/changeLocation Beach/warpFarmers 28 36 2 29 35 2 34 36 2 37 35 2 25 36 2 10 39 3 30 35 2 33 35 2 36 35 2 up 25 33 3/positionOffset farmer 0 16/warp spouse 29 36/faceDirection spouse 2/specificTemporarySprite candleBoat/showFrame Pam 24/positionOffset Pam 0 12/showFrame Haley 30/viewport 26 36 true/pause 2000/move Lewis 0 1 2/move Lewis -2 0 3/pause 400/showFrame Lewis 16 true/animate Lewis false false 200 25 16 17 17/pause 800/playSound parry/specificTemporarySprite candleBoatMove/pause 500/showFrame Lewis 0 true/animate Lewis false false 200 25 12/pause 400/move Lewis 1 0 2/pause 6000/specificTemporarySprite moonlightJellies/pause 10000/playMusic moonlightJellies/pause 18000/emote Jodi 16 true/pause 800/emote Emily 16 true/pause 700/emote Abigail 56 true/pause 8500/move Jas 0 1 2/pause 300/faceDirection Jas 3 true/pause 300/jump Jas 8 true/pause 500/emote Jas 20/pause 500/viewport move -1 0 8000/pause 4000/move Caroline -2 0 3 true/pause 4000/faceDirection Sebastian 2/move Abigail 1 0 2/showFrame Abigail 24/pause 500/viewport move 1 0 21000/pause 5000/move Lewis 0 1 2/showFrame Lewis 18/pause 3000/showFrame Haley 31/pause 100/showFrame Haley 24/pause 1000/showFrame Haley 31/pause 100/showFrame Haley 30/pause 1800/showFrame Jodi 25/pause 1000/showFrame Emily 27/showFrame Haley 31/pause 100/showFrame Haley 24/pause 1000/showFrame Haley 31/pause 100/showFrame Haley 30/pause 1000/move Clint -1 0 2/pause 2000/globalFade/viewport -1000 -1000/pause 2000/pause 1000/message \"Лятното сияние вече угасна... а лунните медузи продължават към великата неизвестност.\"/playMusic none/pause 2000/waitForOtherPlayers festivalEnd/end",
+    "Leah_spouse": "Хей. Отдавам почит на поредното отминало лято. Ще дойда при теб, когато пуснем лодката със свещта.",
+    "Abigail": "Толкова рядко и вълнуващо явление... "
+  },
+  "preserveReasons": {
+    "conditions": "Structural festival location and opening-time metadata; preserved byte-for-byte.",
+    "set-up": "Structural festival map, actor, animation and control command script; preserved byte-for-byte."
+  },
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 6,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread the festival name, the sole quoted first-year event narration and both initial dialogue records directly from English.",
+      "Preserved the location/time and first-year set-up records byte-for-byte, every event command and Abigail’s significant trailing space, with target-specific structural and event-skeleton validation.",
+      "Applied locked Танц на лунните медузи terminology and retained the farewell-to-summer and candle-boat imagery."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "a6e744c3c90cd21ee7856c230433cd7d67956cb0193155de34bce95bf860747c"
+  },
+  "sourceHashes": {
+    "name": "cc9f8627f06b0dbacf0cb63e1e83bf7821df9b018dfad473ad509e9740d98879",
+    "conditions": "119c615e7594a91c21e25aebc8f8bd37fd96294501f90e4f01ace286f7ee099e",
+    "set-up": "8c27356b9e39d17d654ed60cefd875589d15c0a8bbcf58e19097d8d33e2c1128",
+    "mainEvent": "5a514782d0440b335371261e4ee8481a9d48d48d0934379509290fb3e6fc9d63",
+    "Leah_spouse": "052a6b51b0f69704dea278632d33812c447306ca0da95c59ec66899545b07f87",
+    "Abigail": "8c2e35f82301672d4d69c9ae754ab9e47c7dc9c36608ab96be04ec9cd5dc2b63"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488"
+}

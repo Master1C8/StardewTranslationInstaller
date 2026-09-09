@@ -1,0 +1,461 @@
+{
+  "id": "109-quests-a",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/Quests": "273ac8de1f6dacc2111ddd683609efb9296fcb94a163c2df4d4ee7765e0eafa3"
+  },
+  "records": [
+    {
+      "target": "Data/Quests",
+      "key": "1",
+      "english": "Location/Meet The Wizard/You received a letter from the local wizard. He claims to have information regarding the old community center./Enter the wizard's tower./WizardHouse/-1/0/-1/false",
+      "translation": "Location/פגישה עם הקוסם/קיבלתם מכתב מהקוסם המקומי. הוא טוען שיש לו מידע בנוגע למרכז הקהילתי הישן./היכנסו למגדל הקוסם./WizardHouse/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Location",
+          "WizardHouse",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "2",
+      "english": "Basic/The Mysterious Qi/Within a secret lock-box, you found a note with peculiar instructions. It's signed by a 'Mr. Qi'./Leave a rainbow shell in the box at the train platform./null/-1/0/-1/false",
+      "translation": "Basic/צ'י המסתורי/בתוך תיבה סודית ונעולה מצאתם פתק ובו הוראות משונות. הוא חתום בידי 'מר צ'י'./השאירו קונכיית קשת בתיבה שעל רציף הרכבת./null/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "null",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "3",
+      "english": "Basic/The Mysterious Qi/You've found another note written by 'Mr. Qi'. The request is even more unusual this time./Place 10 beets inside Mayor Lewis' fridge./null/-1/0/-1/false",
+      "translation": "Basic/צ'י המסתורי/מצאתם פתק נוסף שכתב 'מר צ'י'. הפעם הבקשה חריגה עוד יותר./הניחו 10 סלקים בתוך המקרר של ראש העיר לואיס./null/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "null",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "4",
+      "english": "Basic/The Mysterious Qi/You've found yet another strange note within the Mayor's fridge. This time, the instructions are more cryptic./\"Give the sand dragon his final meal.\"/null/-1/0/-1/false",
+      "translation": "Basic/צ'י המסתורי/מצאתם עוד פתק מוזר בתוך המקרר של ראש העיר. הפעם ההוראות חידתיות יותר./\"תנו לדרקון החול את סעודתו האחרונה.\"/null/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "null",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "5",
+      "english": "Basic/The Mysterious Qi/You found another note in the sand dragon's eye. It seems Mr. Qi's strange scavenger hunt has come to an end./Inspect the lumber pile beside your house./null/-1/0/-1/false",
+      "translation": "Basic/צ'י המסתורי/מצאתם פתק נוסף בעינו של דרקון החול. נראה שחיפוש המטמון המוזר של מר צ'י הגיע לסיומו./בדקו את ערמת העצים לצד ביתכם./null/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "null",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "6",
+      "english": "ItemHarvest/Getting Started/If you want to become a farmer, you have to start with the basics. Use your hoe to till the soil, then use a seed packet on the tilled soil to sow a crop. Water every day until the crop is ready for harvest./Cultivate and harvest a parsnip./(O)24/h7 8/100/-1/true",
+      "translation": "ItemHarvest/מתחילים/אם ברצונכם לעסוק בחקלאות, עליכם להתחיל מהיסודות. השתמשו במעדר כדי לעבד את האדמה, ואז השתמשו בחבילת זרעים על האדמה המעובדת כדי לזרוע גידול. השקו מדי יום עד שהגידול יהיה מוכן לקציר./גדלו גזר לבן וקצרו אותו./(O)24/h7 8/100/-1/true",
+      "latinException": {
+        "tokens": [
+          "ItemHarvest",
+          "O",
+          "h7",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "7",
+      "english": "Building/Raising Animals/Robin, the local carpenter, lives north of town. In exchange for raw materials and money, she'll construct new buildings on your farm. You'll need her to build a coop or barn so that you can raise animals./Build a Coop./Coop/-1/100/-1/true",
+      "translation": "Building/גידול בעלי חיים/רובין, הנגרית המקומית, גרה מצפון לעיירה. בתמורה לחומרי גלם ולכסף היא תקים מבנים חדשים בחווה שלכם. תזדקקו לה כדי לבנות לול או אסם שבהם תוכלו לגדל בעלי חיים./בנו לול./Coop/-1/100/-1/true",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Coop",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "8",
+      "english": "Crafting/Advancement/As you gain experience, you'll discover new crafting recipes to increase profit and make life easier. A scarecrow, for example, will prevent crows from snacking on your precious crops./Reach Farming level 1 and craft a scarecrow./(BC)8/-1/100/-1/true",
+      "translation": "Crafting/התקדמות/ככל שתצברו ניסיון, תגלו מתכוני יצירה חדשים שיגדילו את הרווח ויקלו על חייכם. דחליל, למשל, ימנע מעורבים לנשנש את הגידולים היקרים שלכם./הגיעו לרמת חקלאות 1 וצרו דחליל./(BC)8/-1/100/-1/true",
+      "latinException": {
+        "tokens": [
+          "Crafting",
+          "BC",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "9",
+      "english": "Social/Introductions/It would be a nice gesture to introduce yourself around town. Some people might be anxious to meet the new farmer././null/25/0/-1/true",
+      "translation": "Social/היכרויות/יהיה נחמד להציג את עצמכם בפני תושבי העיירה. ייתכן שכמה אנשים כבר להוטים לפגוש את החקלאים החדשים././null/25/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Social",
+          "null",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "10",
+      "english": "Basic/Copper Ore/You found a piece of copper ore. You're not sure what you can use it for, but the local blacksmith ought to know./Bring a piece of copper ore to Clint's blacksmith shop././-1/0/-1/false",
+      "translation": "Basic/עפרת נחושת/מצאתם חתיכת עפרת נחושת. אינכם בטוחים למה היא יכולה לשמש, אבל הנפח המקומי ודאי ידע./הביאו חתיכת עפרת נחושת לנפחייה של קלינט././-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "11",
+      "english": "Crafting/Forging Ahead/If you're going to keep mining, you should build a furnace./Craft a Furnace./(BC)13/12/0/-1/true",
+      "translation": "Crafting/מתקדמים בחישול/אם בכוונתכם להמשיך לכרות, כדאי שתבנו כבשן./צרו כבשן./(BC)13/12/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Crafting",
+          "BC",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "12",
+      "english": "ItemHarvest/Smelting/Now that you've built a furnace, you can smelt some metal. According to Clint's instructions, if you place 5 copper ore and 1 piece of coal in the furnace, it should produce a copper bar./Use your furnace to smelt a Copper Bar./(O)334 1/-1/0/-1/true",
+      "translation": "ItemHarvest/התכה/עכשיו, לאחר שבניתם כבשן, תוכלו להתיך מעט מתכת. לפי הוראותיו של קלינט, הכנסת 5 עפרות נחושת וחתיכת פחם אחת לכבשן אמורה להפיק מטיל נחושת./השתמשו בכבשן כדי להתיך מטיל נחושת./(O)334 1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "ItemHarvest",
+          "O",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "13",
+      "english": "Basic/To The Beach/Someone named Willy invited you to visit the beach south of town. He says he has something to give you./Visit the beach south of town before 5:00pm./-1/-1/0/-1/true",
+      "translation": "Basic/אל החוף/מישהו בשם וילי הזמין אתכם לבקר בחוף שמדרום לעיירה. הוא אומר שיש לו משהו לתת לכם./בקרו בחוף שמדרום לעיירה לפני 17:00./-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "14",
+      "english": "Basic/Explore The Mine/There's an old mine shaft in the mountains north of town. There could be valuable minerals inside, but Marlon hinted that it might be dangerous./Reach level 5 in the mines./17/17/0/-1/false",
+      "translation": "Basic/חקירת המכרה/בהרים שמצפון לעיירה יש פיר מכרה ישן. ייתכן שיש בתוכו מינרלים יקרי ערך, אבל מרלון רמז שהוא עלול להיות מסוכן./הגיעו לרמה 5 במכרות./17/17/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "15",
+      "english": "Monster/Initiation/If you can slay 10 slimes, you'll have earned your place in the Adventurer's Guild./0 of 10 slimes slain./Green_Slime 10 null false/16/0/-1/false",
+      "translation": "Monster/טקס חניכה/אם תחסלו 10 סליימים, תרוויחו את מקומכם בגילדת ההרפתקנים./0 מתוך 10 סליימים חוסלו./Green_Slime 10 null false/16/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Monster",
+          "Green",
+          "Slime",
+          "null",
+          "false",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "16",
+      "english": "Location/Initiation/You successfully dispatched 10 slimes. Now you can enter the Adventurer's Guild./Enter the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
+      "translation": "Location/טקס חניכה/חיסלתם בהצלחה 10 סליימים. עכשיו תוכלו להיכנס לגילדת ההרפתקנים./היכנסו לגילדת ההרפתקנים./AdventureGuild/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Location",
+          "AdventureGuild",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "17",
+      "english": "Basic/Deeper In The Mine/It seems that the mine elevator is still functional. It will allow you to quickly return to any elevator doors you've discovered. A deeper expedition might be in order./Reach level 40 in the mines./18/18/0/-1/false",
+      "translation": "Basic/עמוק יותר במכרה/נראה שמעלית המכרה עדיין פועלת. היא תאפשר לכם לחזור במהירות לכל דלת מעלית שגיליתם. אולי כדאי לצאת למסע עמוק יותר./הגיעו לרמה 40 במכרות./18/18/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "18",
+      "english": "Basic/To The Bottom?/So far, there's no sign of the bottom. How low does it go?/Reach the bottom of the mine./-1/-1/0/-1/false",
+      "translation": "Basic/עד התחתית?/עד כה אין כל סימן לתחתית. עד לאיזה עומק הוא מגיע?/הגיעו לתחתית המכרה./-1/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "19",
+      "english": "Basic/The Skull Key/You found a strange looking key in the bottom of the mines./Discover the purpose of the Skull Key./-1/-1/0/-1/false",
+      "translation": "Basic/מפתח הגולגולת/מצאתם מפתח מוזר למראה בתחתית המכרות./גלו מהי מטרתו של מפתח הגולגולת./-1/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "20",
+      "english": "Basic/Qi's Challenge/You've been challenged to reach level 25 in the skull cavern. You've been promised a substantial reward if you're successful./Reach level 25 in the Skull Cavern./-1/-1/0/-1/false",
+      "translation": "Basic/האתגר של צ'י/הציבו בפניכם אתגר להגיע לרמה 25 במערת הגולגולת. הובטח לכם פרס נכבד אם תצליחו./הגיעו לרמה 25 במערת הגולגולת./-1/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "21",
+      "english": "Basic/Marnie's Request/Marnie came by the farm and asked if you'd bring her a cave carrot. She's trying to train her goats to speak, and cave carrot is their favorite snack./Bring a Cave Carrot into Marnie's shop./-1/-1/0/-1/true",
+      "translation": "Basic/הבקשה של מארני/מארני הגיעה לחווה וביקשה שתביאו לה גזר מערות. היא מנסה ללמד את העזים שלה לדבר, וגזר מערות הוא החטיף האהוב עליהן./הביאו גזר מערות לחנות של מארני./-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "22",
+      "english": "Basic/Fish Casserole/Jodi swung by the farm to ask you to dinner at 7:00 PM. Her only request was that you bring a largemouth bass for her fish casserole./Enter Jodi's house with a largemouth bass at 7:00 PM./-1/-1/0/-1/true",
+      "translation": "Basic/קדירת דגים/ג'ודי קפצה לחווה כדי להזמין אתכם לארוחת ערב בשעה 19:00. בקשתה היחידה הייתה שתביאו בס גדול־פה לקדירת הדגים שלה./היכנסו לביתה של ג'ודי עם בס גדול־פה בשעה 19:00./-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "23",
+      "english": "Location/Archaeology/You found an ancient-looking object. Could it be some kind of artifact from long ago? Perhaps Gunther, curator of the local museum, has the answer./Visit Gunther at the museum./ArchaeologyHouse/-1/0/-1/true",
+      "translation": "Location/ארכאולוגיה/מצאתם חפץ שנראה עתיק. האם ייתכן שזה חפץ עתיק מתקופה קדומה? אולי לגונתר, אוצר המוזיאון המקומי, יש תשובה./בקרו את גונתר במוזיאון./ArchaeologyHouse/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Location",
+          "ArchaeologyHouse",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "24",
+      "english": "Basic/Archaeology/Gunther asked if you'd consider donating any new artifacts or minerals you find to the museum. He says he'll compensate you by way of occasional rare goods./Donate an artifact or a mineral to the museum./-1/-1/250/-1/true",
+      "translation": "Basic/ארכאולוגיה/גונתר ביקש שתשקלו לתרום למוזיאון כל חפץ עתיק או מינרל חדש שתמצאו. הוא אומר שייתן לכם בתמורה פריטים נדירים מדי פעם./תרמו חפץ עתיק או מינרל למוזיאון./-1/-1/250/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "25",
+      "english": "Basic/How To Win Friends/Giving gifts is a great way to build friendships. Learn each person's individual tastes and you'll be popular in no time./Give someone a gift./-1/-1/100/-1/true",
+      "translation": "Basic/איך לרכוש חברים/מתנות הן דרך מצוינת לבנות חברויות. למדו את הטעם האישי של כל אדם, ועד מהרה תהיו אהודים./תנו למישהו מתנה./-1/-1/100/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "26",
+      "english": "Basic/\"Rat Problem\"/There's something odd going on in the Community Center.../Investigate the Community Center/-1/-1/0/-1/true",
+      "translation": "Basic/\"בעיית חולדות\"/משהו מוזר מתרחש במרכז הקהילתי.../חקרו את המרכז הקהילתי/-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "27",
+      "english": "Basic/Goblin Problem/There's a goblin blocking the path to the Witch's hut. There must be some way to get him to move... Perhaps I should seek out more information on Goblins./Gain entrance to the Witch's hut./-1/-1/0/-1/true",
+      "translation": "Basic/בעיית הגובלין/גובלין חוסם את הדרך לבקתת המכשפה. ודאי יש דרך לגרום לו לזוז... אולי כדאי שאחפש מידע נוסף על גובלינים./היכנסו לבקתת המכשפה./-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "28",
+      "english": "Basic/Dark Talisman/The Wizard asked me to retrieve the magic ink from his ex-wife's house... but to gain access I'll need a dark talisman./Enter the sewer and ask Krobus about the dark talisman./-1/-1/0/-1/false",
+      "translation": "Basic/קמע אפל/הקוסם ביקש ממני להשיב את דיו הקסם מבית גרושתו... אבל כדי להיכנס אזדקק לקמע אפל./היכנסו לביוב ושאלו את קרובוס על הקמע האפל./-1/-1/0/-1/false",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "false"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "29",
+      "english": "Basic/Strange Note/You found a note, barely legible, asking you to bring \"may-pal serrup\" to the \"seecrit wuds\"./Bring \"may-pal serrup\" to the \"seecrit wuds\"/-1/-1/0/-1/true",
+      "translation": "Basic/פתק מוזר/מצאתם פתק שכמעט אי אפשר לקרוא ובו בקשה להביא \"סירופ מיפל\" אל \"הייער הסודי\"./הביאו \"סירופ מיפל\" אל \"הייער הסודי\"/-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "30",
+      "english": "Basic/Cryptic Note/You found a note that reads, \"Someone is waiting for you on level 100 in the Skull Cavern\"/Reach level 100 in the Skull Cavern/-1/-1/0/-1/true",
+      "translation": "Basic/פתק חידתי/מצאתם פתק שכתוב בו: \"מישהו מחכה לכם ברמה 100 במערת הגולגולת\"/הגיעו לרמה 100 במערת הגולגולת/-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "31",
+      "english": "Basic/A Winter Mystery/You encountered a suspicious looking figure by the bus stop. When it saw you, it fled toward town. Could there be a clue to its whereabouts?/Find the shadowy figure./-1/-1/0/-1/true",
+      "translation": "Basic/תעלומת חורף/נתקלתם בדמות חשודה למראה ליד תחנת האוטובוס. כשהיא ראתה אתכם, היא נמלטה לעבר העיירה. האם יש רמז למקום הימצאה?/מצאו את הדמות הצללית./-1/-1/0/-1/true",
+      "latinException": {
+        "tokens": [
+          "Basic",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "100",
+      "english": "LostItem/Robin's Lost Axe/Robin lost her favorite axe. The last time she remembers using it, she was cutting wood south of Marnie's ranch./Find Robin's lost axe./Robin (O)788 Forest 110 81/-1/250/-1/true/Hey, you found my axe! What a relief... I almost chopped my toe off with the other one I was using. Thank you!",
+      "translation": "LostItem/הגרזן האבוד של רובין/רובין איבדה את הגרזן האהוב עליה. בפעם האחרונה שהיא זוכרת שהשתמשה בו, היא חטבה עצים מדרום לחווה של מארני./מצאו את הגרזן האבוד של רובין./Robin (O)788 Forest 110 81/-1/250/-1/true/היי, מצאתם את הגרזן שלי! איזו הקלה... כמעט קצצתי לעצמי בוהן בגרזן האחר שבו השתמשתי. תודה!",
+      "latinException": {
+        "tokens": [
+          "LostItem",
+          "Robin",
+          "O",
+          "Forest",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    },
+    {
+      "target": "Data/Quests",
+      "key": "101",
+      "english": "ItemDelivery/Jodi's Request/Jodi needs a fresh cauliflower for a recipe she's making. She's asking you to bring her one./Bring Jodi a cauliflower./Jodi (O)190/-1/350/-1/true/Oh, that looks so delicious! Thank you, this is just what I wanted. It's going to be perfect for my yellow curry.",
+      "translation": "ItemDelivery/הבקשה של ג'ודי/ג'ודי זקוקה לכרובית טרייה בשביל מתכון שהיא מכינה. היא מבקשת שתביאו לה אחת./הביאו כרובית לג'ודי./Jodi (O)190/-1/350/-1/true/הו, זה נראה טעים כל כך! תודה, זה בדיוק מה שרציתי. זה יהיה מושלם לקארי הצהוב שלי.",
+      "latinException": {
+        "tokens": [
+          "ItemDelivery",
+          "Jodi",
+          "O",
+          "true"
+        ],
+        "reason": "Quest type names, location names, item qualifiers, branch data, and boolean fields are structural identifiers preserved verbatim."
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "0251-event-temp-000-002",
+  "target": "Data/Events/Temp",
+  "status": "reviewed",
+  "sourceHashes": {
+    "decorate": "87b59708d1071deeec9f07b46e29486c8ef6214bc2ca607fa76306b82498528a",
+    "leave": "6ac05282dc280ff89d68e23ad77891fe05688f538622f6e99b1da7c2ea630ec5",
+    "tooBold": "56088169b129cedebd92397c7bd59e7c8ecd3f089024dda8c05b3d0da8a6fa01"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "decorate": "speak Haley \"Да украсяваме?$s#$b#Ъм, добре.$u\"/faceDirection Haley 1/speak Haley \"Значи това е най-доброто, което ти хрумва да правим точно сега? Тук... в тази малка тъмна стая с мен?$u#$b#Интересно.$u\"/faceDirection farmer 0/faceDirection Haley 2/showFrame Haley 22/pause 1000/end dialogue Haley \"Е, тъмната стая изглежда чудесно сега... Благодаря, @.$u\"",
+    "leave": "speak Haley \"О, вече трябва да тръгваш?$s#$b#Е... добре. Чао.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"Уау... Не очаквах ${той^тя}$ да прояви такава недосетливост.$s\"/end dialogue Haley \"Мислех, че имаш да вършиш нещо важно...$u\"",
+    "tooBold": "showFrame 6/playMusic none/positionOffset farmer -8 0/positionOffset Elliott 8 0/showFrame Elliott 12/jump Elliott/pause 1000/faceDirection Elliott 1/pause 1000/end dialogue Elliott \"Толкова се срамувам...$8\""
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 3,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all seven quoted darkroom branch, departure branch and embarrassed-response fields in Temp source ordinals 0–2.",
+      "Preserved every event command, actor identifier and dialogue control token, and localized the complete ${...^...}$ gender selector syntax.",
+      "Kept Haley’s romantic implication and frustration clear while avoiding gendered adjective agreement for the player."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "369bc90bc90c62ffeea62bd5048b45d441df9d0fc471f6bf0d8c1950f353a7fc"
+  }
+}

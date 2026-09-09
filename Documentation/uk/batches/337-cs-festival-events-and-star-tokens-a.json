@@ -1,0 +1,432 @@
+{
+  "id": "337-cs-festival-events-and-star-tokens-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 festival event and choice strings. Canonical Egg Festival, Flower Dance, Luau, Festival of Ice, Mayor Lewis, Slingshot, Star Token and Yoba terminology, response identifiers, placeholders, dialogue commands, spaces and character voice were checked against the English source.",
+    "reviewedTextSHA256": "6ed644e215ac9ce7f5b7c433ad08e460303b4d5cc0affa0c88ac7b344b362cdd",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 125
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1497",
+      "english": "Um, excuse me.#$b#I have a gift for you. I found it last summer when I was playing at the beach. I hope you like it.$h",
+      "translation": "Ем, перепрошую.#$b#У мене є для тебе подарунок. Я знайшов його минулого літа, коли грався на пляжі. Сподіваюся, він тобі сподобається.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1498",
+      "english": "I'm glad you moved here, farmer @!$h",
+      "translation": "Я радий, що ти переїхав сюди, фермере @!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1499",
+      "english": "Hey, @. I'm your secret gift-giver this year.#$b#Here, open it.$h",
+      "translation": "Привіт, @. Цього року я твій таємний дарувальник.#$b#Ось, відкривай.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1500",
+      "english": "It's not much, but I hope you like it.$h",
+      "translation": "Це дрібничка, але сподіваюся, вона тобі сподобається.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1501",
+      "english": "Hi. So, I'm your secret gift-giver this year.#$b#Well? Open it!",
+      "translation": "Привіт. Отже, цього року я твій таємний дарувальник.#$b#Ну? Відкривай!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1504",
+      "english": "It's nothing fancy, but it's the best I could afford.",
+      "translation": "Нічого вишуканого, але це найкраще, що було мені по кишені.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1514",
+      "english": "Time: {0}",
+      "translation": "Час: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1515",
+      "english": "Eggs: {0}",
+      "translation": "Яйця: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1521",
+      "english": "$q -1 null#Do you think everyone's ready for the egg hunt yet?#$r -1 0 yes#Yes, let's start.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Як гадаєш, усі вже готові до полювання на яйця?#$r -1 0 yes#Так, почнімо.#$r -1 0 no#Ще ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1524",
+      "english": "$q -1 null#Well, should we start the dance now?#$r -1 0 yes#Yes, let's start.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#То що, починаємо танець?#$r -1 0 yes#Так, почнімо.#$r -1 0 no#Ще ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1527",
+      "english": "$q -1 null#Should we move forward with the Luau? The governor seems a little hungry.#$r -1 0 yes#Yes, let's start.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Починаємо Луау? Губернатор, здається, трохи зголоднів.#$r -1 0 yes#Так, почнімо.#$r -1 0 no#Ще ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1531",
+      "english": "$q -1 null#What do you think... should I launch the boat now?#$r -1 0 yes#Yes.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Як гадаєш... уже спускати човен на воду?#$r -1 0 yes#Так.#$r -1 0 no#Ще ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1535",
+      "english": "$q -1 null#Oh... are you already finished setting up your grange display?#$r -1 0 yes#Yes.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#О... ти вже завершив облаштовувати свою фермерську експозицію?#$r -1 0 yes#Так.#$r -1 0 no#Ще ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1548",
+      "english": "$q -1 null#Are you ready to participate in the ice fishing competition?#$r -1 0 yes#Yes.#$r -1 0 no#Not yet.",
+      "translation": "$q -1 null#Ти готовий узяти участь у змаганні з підлідної риболовлі?#$r -1 0 yes#Так.#$r -1 0 no#Ще ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1584",
+      "english": "Your grange display has been judged. Return to Mayor Lewis for the result!",
+      "translation": "Твою фермерську експозицію оцінено. Повернися до мера Льюїса, щоб дізнатися результат!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1632",
+      "english": "Of course I'll dance with you!$h",
+      "translation": "Звісно, я з тобою потанцюю!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1633",
+      "english": "You want to be my partner for the flower dance?#$b#Okay. I look forward to it.$h",
+      "translation": "Хочеш, щоб я був твоїм партнером на Танці квітів?#$b#Гаразд. Чекатиму з нетерпінням.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1634",
+      "english": "You want to be my partner for the flower dance?#$b#Okay! I'd love to.$h",
+      "translation": "Хочеш, щоб я була твоєю партнеркою на Танці квітів?#$b#Так! Із задоволенням.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1635",
+      "english": "I'm sorry... I already have a partner.",
+      "translation": "Вибач... У мене вже є партнер.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1645",
+      "english": "Orange",
+      "translation": "Помаранчевий",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1647",
+      "english": "Green",
+      "translation": "Зелений",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1650",
+      "english": "I don't want to play",
+      "translation": "Я не хочу грати",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1652",
+      "english": "Step right up! Pick a color and place your bet for a chance to double your wager!",
+      "translation": "Підходь! Вибери колір і зроби ставку, щоб отримати шанс подвоїти її!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1654",
+      "english": "Buy",
+      "translation": "Купити",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1656",
+      "english": "Leave",
+      "translation": "Вийти",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1659",
+      "english": "Selling Star Tokens for just 50g a piece!",
+      "translation": "Продаю Зоряні жетони всього по 50g за штуку!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1662",
+      "english": "Play (50g)",
+      "translation": "Грати (50g)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1663",
+      "english": "Leave",
+      "translation": "Вийти",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1666",
+      "english": "Play the slingshot game and win star tokens!",
+      "translation": "Зіграй у гру з рогаткою й виграй Зоряні жетони!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1672",
+      "english": "Trade in your star tokens for prizes?",
+      "translation": "Обміняти Зоряні жетони на призи?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1681",
+      "english": "Try your hand at some fishing? You could win big.",
+      "translation": "Хочеш спробувати порибалити? Можна виграти великий приз.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1684",
+      "english": "Please stand at the red arrow.",
+      "translation": "Стань біля червоної стрілки.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1688",
+      "english": "Read my fortune (100g)",
+      "translation": "Дізнатися майбутнє (100g)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1690",
+      "english": "No Thanks",
+      "translation": "Ні, дякую",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1691",
+      "english": "Ah, yes... my crystal ball is swirling with visions of your future, young one.",
+      "translation": "Ага... моя кришталева куля вже показує видіння твого майбутнього, юний друже.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1694",
+      "english": "I've already read your fortune... go away.",
+      "translation": "Я вже передбачила твоє майбутнє... іди геть.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1695",
+      "english": "You don't have enough money to pay my fee... What a shame.",
+      "translation": "Тобі бракує грошей, щоб заплатити мені... Яка прикрість.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1714",
+      "english": "Out of Stock.",
+      "translation": "Розпродано.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1719",
+      "english": "Select an ingredient to add.",
+      "translation": "Вибери інгредієнт, який хочеш додати.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1723",
+      "english": "Congratulations! You won 1st place with a rating of {0}!#$b#Your prize is 1000 star tokens! Spend them wisely.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Вітаю! Ти посів 1-ше місце з оцінкою {0}!#$b#Твій приз — 1000 Зоряних жетонів! Витрачай їх із розумом.$h#$b#І не забудь забрати все зі скриньки фермерської експозиції.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1726",
+      "english": "Hey, not bad! You won 2nd place with a rating of {0}.#$b#Your prize is 500 star tokens! Spend them wisely.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Непогано! Ти посів 2-ге місце з оцінкою {0}.#$b#Твій приз — 500 Зоряних жетонів! Витрачай їх із розумом.$h#$b#І не забудь забрати все зі скриньки фермерської експозиції.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1729",
+      "english": "Hi there, @. It looks like you won 3rd place with a rating of {0}.#$b#Your prize is 200 star tokens! Spend them wisely.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Привіт, @. Схоже, ти посів 3-тє місце з оцінкою {0}.#$b#Твій приз — 200 Зоряних жетонів! Витрачай їх із розумом.$h#$b#І не забудь забрати все зі скриньки фермерської експозиції.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1730",
+      "english": "You!!! Was that some kind of sick prank?! Those are very private!$4#$b#Here, take 750 star tokens and don't tell a soul.$3#$b#Now go clean up your box and bring me my... item... tomorrow.$3",
+      "translation": "Ти!!! Це що, якийсь хворий жарт?! Це дуже особисте!$4#$b#Ось, забирай 750 Зоряних жетонів і нікому ані слова.$3#$b#А тепер прибери зі своєї скриньки й завтра поверни мені мій... предмет...$3",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1732",
+      "english": "Hi there, @. You got 4th place with a score of {0}.#$b#Your reward for participating is 50 star tokens. Hey, maybe you'll do better next year.$h#$b#Oh, and don't forget to clean out your grange display box.",
+      "translation": "Привіт, @. Ти посів 4-те місце з оцінкою {0}.#$b#За участь ти отримуєш 50 Зоряних жетонів. Можливо, наступного року пощастить більше.$h#$b#І не забудь забрати все зі скриньки фермерської експозиції.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1736",
+      "english": "$q -1 null#...Yes, dear?#$r -1 0 danceAsk#(Ask {0} to be your dance partner)#$r -1 0 null#Never mind...",
+      "translation": "$q -1 null#...Так, любий?#$r -1 0 danceAsk#(Запросити {0} танцювати разом)#$r -1 0 null#Неважливо...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1738",
+      "english": "$q -1 null#...Yes?#$r -1 0 danceAsk#(Ask {0} to be your dance partner)#$r -1 0 null#Never mind...",
+      "translation": "$q -1 null#...Так?#$r -1 0 danceAsk#(Запросити {0} танцювати разом)#$r -1 0 null#Неважливо...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1740",
+      "english": "Give {0} his secret gift?",
+      "translation": "Подарувати {0} таємний подарунок?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1741",
+      "english": "Give {0} her secret gift?",
+      "translation": "Подарувати {0} таємний подарунок?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1758",
+      "english": "Leave the {0}? Once you do, the festival will end.",
+      "translation": "Залишити {0}? Після цього фестиваль завершиться.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1760",
+      "english": "Maybe for you, but not for me! You're not going to understand...  Just... go away.$7#$b#...Ugh...$7#$b#Wait...$7",
+      "translation": "Можливо, для тебе, але не для мене! Тобі не зрозуміти... Просто... іди геть.$7#$b#...Ох...$7#$b#Зачекай...$7",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1761",
+      "english": "...You're right. Jas... Ugh, God... I'm a horrible, *hic*... selfish person.$7#$b#Now I feel even worse...$7",
+      "translation": "...Твоя правда. Джас... Ох, Боже... Я жахлива, *гик*... егоїстична людина.$7#$b#Тепер мені ще гірше...$7",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1763",
+      "english": "Wha... Yoba...? @, don't... don't you know I'm an atheist? Ugh... $7",
+      "translation": "Що... Йоба...? @, невже... невже ти не знаєш, що я атеїст? Ох... $7",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1764",
+      "english": "...$7#$b#Thanks... I appreciate that... I really do.$7",
+      "translation": "...$7#$b#Дякую... Для мене це багато означає... Справді.$7",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1774",
+      "english": "How many star tokens would you like to buy?",
+      "translation": "Скільки Зоряних жетонів ти хочеш купити?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1776",
+      "english": "How many star tokens would you like to wager?",
+      "translation": "Скільки Зоряних жетонів ти хочеш поставити?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1780",
+      "english": "You don't have enough money.",
+      "translation": "Тобі бракує грошей.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1785",
+      "english": "You've already bought everything in the shop!",
+      "translation": "Ти вже купив усе в крамниці!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1788",
+      "english": "Select a gift for {0}.",
+      "translation": "Вибери подарунок для {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1794",
+      "english": "Dudley",
+      "translation": "Дадлі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1795",
+      "english": "Yogi",
+      "translation": "Йогі",
+      "reviewed": true
+    }
+  ]
+}

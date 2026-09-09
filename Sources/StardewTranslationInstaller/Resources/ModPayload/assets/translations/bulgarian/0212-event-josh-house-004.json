@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/JoshHouse",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "56/f Harvey 500/p George": "jaunty/16 18/farmer 9 24 0 George 16 18 1 Harvey 15 18 1/skippable/move farmer 0 -4 1/move farmer 1 0 1/speak Harvey \"Добре, Джордж. Искам да поемеш дълбоко въздух.\"/pause 700/speak Harvey \"Мхм... обърни се, моля.\"/pause 300/faceDirection George 2/faceDirection George 3/speak Harvey \"Джордж, ще бъда откровен с теб. Трябва да направиш някои промени в начина си на живот, ако искаш да останеш здрав.#$b#Искам да намалиш приема на натрий и да опиташ да правиш умерени упражнения с ръцете.\"/emote George 12/speak George \"Хмпф... Аз знам кое е най-добро за мен. Кой си ти, че да ми казваш как да живея?\"/pause 500/speak Harvey \"Аз съм лекарят ти, Джордж. Ето кой съм...#$b#И учих 8 години, за да разбера как да помагам на хората да бъдат здрави.\"/move farmer 0 -1 1/move farmer 5 0 0/faceDirection Harvey 2 true/faceDirection George 2/speak Harvey \"О!#$b#Съжалявам, но не бива да си тук... Тези прегледи трябва да бъдат поверителни.\"/faceDirection farmer 3/speak George \"Не толкова бързо! Искам да чуя второ мнение от този младеж.^Не толкова бързо! Искам да чуя второ мнение от тази млада дама.\"/faceDirection farmer 1/speak Harvey \"Добре тогава...\"/speak Harvey \"$q 84 null#@, какво според теб трябва да направи Джордж?#$r 84 40 event_george1 friend_George_-20#Джордж трябва да последва съвета на доктор Харви.#$r 84 40 event_george1 friend_George_-20#Джордж най-добре познава собственото си тяло.\"/faceDirection Harvey 1/faceDirection George 2/emote George 28/speak George \"Добре. Ще направя каквото казваш, докторе.\"/pause 500/faceDirection Harvey 2/speak Harvey \"$p 84#Благодаря за помощта, @. Оценявам я.$h|По-добре е пациентите ми да не получават противоречиви съвети, @. Моля те, помни това занапред.\"/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "scope": "Data/Events schema",
+  "validator": "Scripts/serbian-batch.py::visible_text event-script path",
+  "sourceAssets": 43,
+  "reviewedRecords": 258,
+  "sourceCoverage": 100,
+  "validated": [
+    "hash-anchored original English event assets",
+    "immutable slash and backslash event-command skeletons, IDs, actors, coordinates, frames, sounds and timing",
+    "quoted speak, splitSpeak, message, textAboveHead, spriteText, end dialogue, end dialogueWarpOut and question fields",
+    "quoted questions with ordinary prompts, intentional blank or whitespace-only prompts, nested #$q dialogue questions and response fields",
+    "promptless and prompt-bearing quickQuestion text, choice counts and embedded (break) command branches",
+    "placeholder, emote, caret-branch, pipe-branch, underscore-field and trailing-space signatures"
+  ],
+  "positiveRegressionCases": [
+    {
+      "case": "quick-question-with-prompt",
+      "accepted": true
+    },
+    {
+      "case": "quick-question-empty-prompt",
+      "accepted": true
+    },
+    {
+      "case": "quoted-whitespace-prompt",
+      "accepted": true
+    },
+    {
+      "case": "nested-dialogue-question",
+      "accepted": true
+    },
+    {
+      "case": "dialogue-warp-out",
+      "accepted": true
+    }
+  ],
+  "schemaNegativeChecks": [
+    {
+      "case": "technical-command",
+      "rejected": true,
+      "reason": "Event command, ID, order, or non-speech data changed"
+    },
+    {
+      "case": "question-choice-count",
+      "rejected": true,
+      "reason": "Event speech token or question field count mismatch"
+    },
+    {
+      "case": "split-speech-branch",
+      "rejected": true,
+      "reason": "Split-speech branch count changed"
+    },
+    {
+      "case": "quick-question-choice-count",
+      "rejected": true,
+      "reason": "Quick-question choice or embedded branch count changed"
+    },
+    {
+      "case": "nested-response-field",
+      "rejected": true,
+      "reason": "Nested #$q or #$r field structure changed"
+    },
+    {
+      "case": "dialogue-warp-out-command",
+      "rejected": true,
+      "reason": "End-dialogue command or speaker changed"
+    },
+    {
+      "case": "speech-token",
+      "rejected": true,
+      "reason": "Event speech token mismatch"
+    }
+  ],
+  "result": "clean"
+}

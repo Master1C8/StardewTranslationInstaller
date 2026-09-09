@@ -1,0 +1,474 @@
+{
+  "id": "213-mail-a",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/mail": "f7342fbf8c522b75d2d9a0005a9242e5e7d6e604028b29c8c9d3aa77ecb51b75"
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "Robin",
+      "english": "Hey there!^I had some extra wood lying around... I thought maybe you could use it. Take care!  ^   -Robin %item id (O)388 50 %%[#]A Gift From Robin",
+      "translation": "שלום!^נשארו לי עודפי עץ... חשבתי שאולי תוכלו להשתמש בהם. שמרו על עצמכם!  ^   -רובין %item id (O)388 50 %%[#]מתנה מרובין",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Demetrius",
+      "english": "Dear @,^I was conducting a field study the other day, and I found this specimen. ^I hope you find it as interesting as I did.    ^   -Demetrius%item id (O)392 1 (O)394 1 (O)132 1 (O)66 1 %%[#]A Gift From Demetrius",
+      "translation": "שלום, @,^ערכתי מחקר שטח לפני כמה ימים ומצאתי את הדגימה הזאת. ^אני מקווה שהיא תעניין אתכם כפי שעניינה אותי.    ^   -דמטריוס%item id (O)392 1 (O)394 1 (O)132 1 (O)66 1 %%[#]מתנה מדמטריוס",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Linus",
+      "english": "Hello, friend.^The mountain lake has been kind to me lately. I'd like to share my good fortune with you.  ^   -Linus %item id (O)136 1 (O)143 1 (O)202 1 (O)227 1 (O)228 1 %%[#]A Gift From Linus",
+      "translation": "שלום, חברים.^אגם ההר היטיב עמי לאחרונה. ארצה לחלוק עמכם את מזלי הטוב.  ^   -לינוס %item id (O)136 1 (O)143 1 (O)202 1 (O)227 1 (O)228 1 %%[#]מתנה מלינוס",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Pierre",
+      "english": "Dear valued customer,^Thanks for visiting 'Pierre's'! Enclosed is your 'Cash-back Rewards Program' rebate. See you soon! ^   -Pierre^  P.S. Sorry for the stock message, @. Enjoy! %item money 250 601  %%[#]A Gift From Pierre",
+      "translation": "לקוחות יקרים,^תודה שביקרתם אצל 'פייר'! מצורף ההחזר שלכם מתוכנית 'תגמולי החזר כספי'. נתראה בקרוב! ^   -פייר^  נ.ב. סליחה על הנוסח הקבוע, @. תיהנו! %item money 250 601  %%[#]מתנה מפייר",
+      "latinException": {
+        "tokens": [
+          "money"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Caroline",
+      "english": "Dear @,^Here's a vegetable from the little garden I keep out back. You probably have more veggies than you know what to do with, but oh well.   ^   -Caroline%item id (O)190 1 (O)192 1 (O)24 1 %%[#]A Gift From Caroline",
+      "translation": "שלום, @,^הנה ירק מן הגינה הקטנה שאני מטפחת מאחור. כנראה כבר יש לכם יותר ירקות משאתם יודעים מה לעשות בהם, אבל לא נורא.   ^   -קרוליין%item id (O)190 1 (O)192 1 (O)24 1 %%[#]מתנה מקרוליין",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "George",
+      "english": "Found some good quality stone. ^Maybe you can build with it or something.  ^   -George %item id (O)390 35 %%[#]A Gift From George",
+      "translation": "מצאתי אבן באיכות טובה. ^אולי תוכלו לבנות איתה משהו.  ^   -ג'ורג' %item id (O)390 35 %%[#]מתנה מג'ורג'",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Evelyn",
+      "english": "Hello there, dear,  I hope your farm is doing well.^ I'm sending you a little something from my kitchen... I hope it didn't crumble in the mail.  ^   -Evelyn  %item id (O)216 1 (O)220 1 (O)223 1 %%[#]A Gift From Evelyn",
+      "translation": "שלום, יקירים. אני מקווה שהכול מתנהל היטב בחווה שלכם.^ אני שולחת לכם משהו קטן מן המטבח שלי... אני מקווה שהוא לא התפורר בדואר.  ^   -אוולין  %item id (O)216 1 (O)220 1 (O)223 1 %%[#]מתנה מאוולין",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Pam",
+      "english": "Hey. ^I found this in a drawer somewhere. Thought you could use it.   ^   -Pam %item id (O)346 1 (O)349 1 (O)787 1 %%[#]A Gift From Pam",
+      "translation": "היי. ^מצאתי את זה באיזו מגירה. חשבתי שתוכלו להשתמש בזה.   ^   -פאם %item id (O)346 1 (O)349 1 (O)787 1 %%[#]מתנה מפאם",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Lewis",
+      "english": "@,^I'm really glad you've become part of our community! I've enclosed a 500g check from the Stardew Valley Agricultural Fund to help you continue your good work. ^Maybe you can buy some more seeds with it.  ^  Sincerely, Mr. Lewis%item money 500 501 %%[#]A Gift From Lewis",
+      "translation": "@,^אני ממש שמח שהצטרפתם לקהילה שלנו! צירפתי המחאה על סך 500g מקרן החקלאות של עמק סטארדיו, כדי לעזור לכם להמשיך בעבודתכם הטובה. ^אולי תוכלו לקנות בה עוד זרעים.  ^  בכבוד רב, מר לואיס%item money 500 501 %%[#]מתנה מלואיס",
+      "latinException": {
+        "tokens": [
+          "g",
+          "money"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Gus",
+      "english": "@!^I made you a little treat this morning in the saloon. Dig in!   ^   -Your friend, Gus%item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 (O)200 1 (O)195 1 (O)198 1 %%[#]A Gift From Gus",
+      "translation": "@!^הכנתי לכם הבוקר פינוק קטן במסבאה. בתיאבון!   ^   -חברכם, גאס%item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 (O)200 1 (O)195 1 (O)198 1 %%[#]מתנה מגאס",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Clint",
+      "english": "Um, Hello...     ^Sorry, I'm not good at writing letters. I made one metal bar too many, and I thought you might need it.  ^   -Clint, the blacksmith %item id (O)334 1 (O)335 1 (O)336 1 %%[#]A Gift From Clint",
+      "translation": "אממ, שלום...     ^סליחה, אני לא טוב בכתיבת מכתבים. הכנתי מטיל מתכת אחד יותר מדי, וחשבתי שאולי תזדקקו לו.  ^   -קלינט, הנפח %item id (O)334 1 (O)335 1 (O)336 1 %%[#]מתנה מקלינט",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Jodi",
+      "english": "Dear @,^I ordered too much fertilizer for the garden!! I bet you can put it to some good use. Take care!  ^   -Jodi %item id (O)368 5 (O)369 5 (O)370 5 %%[#]A Gift From Jodi",
+      "translation": "שלום, @,^הזמנתי יותר מדי דשן לגינה!! אני בטוחה שתוכלו לעשות בו שימוש טוב. שמרו על עצמכם!  ^   -ג'ודי %item id (O)368 5 (O)369 5 (O)370 5 %%[#]מתנה מג'ודי",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Kent",
+      "english": "Hello, @.^This item was collecting dust in the tool shed. I figured you might be able to use it.  ^   -Kent%item id (O)286 1 (O)287 1 (O)288 1 (O)787 1 %%[#]A Gift From Kent",
+      "translation": "שלום, @.^החפץ הזה צבר אבק במחסן הכלים. חשבתי שאולי תוכלו להשתמש בו.  ^   -קנט%item id (O)286 1 (O)287 1 (O)288 1 (O)787 1 %%[#]מתנה מקנט",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Emily",
+      "english": "Hi!^How are you doing? I hope you enjoy the gift I've sent you... Well, goodbye! +   ^   -Emily %item id (O)397 1 (O)428 1 (O)440 1 %%[#]A Gift From Emily",
+      "translation": "היי!^מה שלומכם? אני מקווה שתיהנו מהמתנה ששלחתי לכם... טוב, להתראות! +   ^   -אמילי %item id (O)397 1 (O)428 1 (O)440 1 %%[#]מתנה מאמילי",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Marnie",
+      "english": "Dear @,^You're such a good neighbor I thought I'd send over some animal feed to make your job easier. Keep it up! ^   -Marnie %item id (O)178 30 %%[#]A Gift From Marnie",
+      "translation": "שלום, @,^אתם שכנים טובים כל כך, שחשבתי לשלוח לכם קצת מזון לבעלי חיים כדי להקל על עבודתכם. המשיכו כך! ^   -מארני %item id (O)178 30 %%[#]מתנה ממארני",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Shane",
+      "english": "Hey,^I thought it would be fun to send you a letter. I don't really know what to write, though.^ Here, I've enclosed a treat for you. Don't tell anyone, but I snagged this from the back room of JojaMart ages ago.^Okay, see you soon. ^   -Shane %item id (O)215 1 (O)206 1 %%[#]A Gift From Shane",
+      "translation": "היי,^חשבתי שיהיה נחמד לשלוח לכם מכתב. אבל אני לא ממש יודע מה לכתוב.^ הנה, צירפתי פינוק בשבילכם. אל תספרו לאיש, אבל סחבתי אותו מן המחסן האחורי של ג'וג'ה-מארט לפני שנים.^טוב, נתראה בקרוב. ^   -שיין %item id (O)215 1 (O)206 1 %%[#]מתנה משיין",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Wizard",
+      "english": "Greetings, young adept.^I have enclosed in this package an item of arcane significance. Use it wisely.   ^   -M. Rasmodius, Wizard%item id (O)422 1 (O)82 1 (O)84 1 (O)70 1 %%[#]A Gift From the Wizard",
+      "translation": "ברכות, תלמידים צעירים.^צירפתי לחבילה הזאת חפץ בעל חשיבות מאגית. השתמשו בו בתבונה.   ^   -מ׳ רזמודיוס, הקוסם%item id (O)422 1 (O)82 1 (O)84 1 (O)70 1 %%[#]מתנה מהקוסם",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "Sandy",
+      "english": "Greetings from Calico Desert!^Come visit me soon, I'm really bored out here :(. I've included a gift from the desert. You can come and thank me in person!   ^   -Sandy %item id (O)88 1 (O)90 1 (O)218 1 %%[#]A Gift From Sandy",
+      "translation": "ברכות ממדבר קליקו!^בואו לבקר אותי בקרוב, ממש משעמם לי כאן :(. צירפתי מתנה מן המדבר. תוכלו לבוא ולהודות לי אישית!   ^   -סנדי %item id (O)88 1 (O)90 1 (O)218 1 %%[#]מתנה מסנדי",
+      "latinException": {
+        "tokens": [
+          "id",
+          "O",
+          "O",
+          "O"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "afterSamShow",
+      "english": "@,^the show was a rockin' success! I wanted to say thanks again for all your help in creating this amazing band. We couldn't have done it without you!   ^   -Sam[#]Sam's Thank-you Note",
+      "translation": "@,^המופע היה הצלחה מסחררת! רציתי להודות לכם שוב על כל עזרתכם בהקמת הלהקה המדהימה הזאת. לא היינו מצליחים בלעדיכם!   ^   -סם[#]מכתב התודה של סם"
+    },
+    {
+      "target": "Data/mail",
+      "key": "afterArtShow",
+      "english": "Dear @,^Thanks again for coming to my art show. It was such a success! I sold nearly all of my sculptures, and everyone was so positive and encouraging! I hope to see you again soon.  ^   -Leah[#]Leah's Thank-you Note",
+      "translation": "שלום, @,^שוב תודה שבאתם לתערוכת האמנות שלי. היא הייתה הצלחה אדירה! מכרתי כמעט את כל הפסלים שלי, וכולם פרגנו ועודדו אותי כל כך! אני מקווה לראות אתכם שוב בקרוב.  ^   -ליאה[#]מכתב התודה של ליאה"
+    },
+    {
+      "target": "Data/mail",
+      "key": "haleyGarden",
+      "english": "@,^I thought it would be fun to write you a note.^ I had so much fun with the cows yesterday... I'm starting to understand why you chose the farmer's life! Hope to see you soon.  ^   -Haley[#]Haley's Note",
+      "translation": "@,^חשבתי שיהיה נחמד לכתוב לכם פתק.^ נהניתי מאוד עם הפרות אתמול... אני מתחילה להבין למה בחרתם בחיי החקלאות! מקווה לראות אתכם בקרוב.  ^   -היילי[#]הפתק של היילי"
+    },
+    {
+      "target": "Data/mail",
+      "key": "PennyCleanTrailer",
+      "english": "Sorry about what happened at my place yesterday... My mom can get into bad moods sometimes.^Please just forget it happened.  ^   -Penny[#]Penny's Apology",
+      "translation": "סליחה על מה שקרה אצלי אתמול... אמא שלי נכנסת לפעמים למצבי רוח רעים.^בבקשה פשוט תשכחו שזה קרה.  ^   -פני[#]ההתנצלות של פני"
+    },
+    {
+      "target": "Data/mail",
+      "key": "Duck",
+      "english": "Dear @,^You've proven your ability to raise chickens, so I'm now selling ducks at my shop!       ^   -Marnie[#]Ducks For Sale!",
+      "translation": "שלום, @,^הוכחתם שאתם יודעים לגדל תרנגולות, ולכן אני מוכרת עכשיו ברווזים בחנות שלי!       ^   -מארני[#]ברווזים למכירה!"
+    },
+    {
+      "target": "Data/mail",
+      "key": "Rabbits",
+      "english": "Dear @,^I now have rabbits in the animal shop! They will provide you with fluffy wool ...and more!       ^   -Marnie[#]Rabbits For Sale!",
+      "translation": "שלום, @,^יש לי עכשיו ארנבים בחנות החיות! הם יספקו לכם צמר רך... ועוד דברים!       ^   -מארני[#]ארנבים למכירה!"
+    },
+    {
+      "target": "Data/mail",
+      "key": "Sheep",
+      "english": "Dear @,^You've proven your ability to raise cows, so I'm now selling sheep at my shop!       ^   -Marnie[#]Sheep For Sale!",
+      "translation": "שלום, @,^הוכחתם שאתם יודעים לגדל פרות, ולכן אני מוכרת עכשיו כבשים בחנות שלי!       ^   -מארני[#]כבשים למכירה!"
+    },
+    {
+      "target": "Data/mail",
+      "key": "Goats",
+      "english": "Dear @,^I now have goats available for purchase at the animal shop. You've done well so far!       ^   -Marnie[#]Goats For Sale!",
+      "translation": "שלום, @,^אפשר לקנות עכשיו עזים בחנות החיות שלי. הצלחתם יפה עד כה!       ^   -מארני[#]עזים למכירה!"
+    },
+    {
+      "target": "Data/mail",
+      "key": "Pigs",
+      "english": "Dear @,^You've come a long way since you first arrived. As a result, I've decided to start selling pigs at my shop. These pigs are trained at finding gourmet truffles!       ^   -Marnie[#]Pigs For Sale!",
+      "translation": "שלום, @,^עברתם דרך ארוכה מאז שהגעתם לראשונה. לכן החלטתי להתחיל למכור חזירים בחנות שלי. החזירים האלה מאומנים למצוא כמהין משובחים!       ^   -מארני[#]חזירים למכירה!"
+    },
+    {
+      "target": "Data/mail",
+      "key": "SeaAmulet",
+      "english": "@,^I'm going to give you this advice because I like you and I want you to stay in Pelican Town. If there comes a day that you want to ask for someone's hand in marriage, you'll need to give them a 'Mermaid's Pendant'. Don't worry, everyone in Pelican Town understands the significance of the amulet. It's an ancient tradition in this region. Good luck! ^   -Lewis[#]About Mermaid's Pendants",
+      "translation": "@,^אתן לכם את העצה הזאת מפני שאני מחבב אתכם ורוצה שתישארו בעיירת פליקן. אם יבוא יום שבו תרצו לבקש את ידו של מישהו בנישואים, תצטרכו לתת לו 'תליון בת הים'. אל תדאגו, כולם בעיירת פליקן מבינים את משמעות הקמע. זו מסורת עתיקה באזור הזה. בהצלחה! ^   -לואיס[#]על תליוני בת הים"
+    },
+    {
+      "target": "Data/mail",
+      "key": "Bouquet",
+      "english": "@,^It seems like you're starting to get close with some of the townspeople. If you want to show someone that you're romantically interested, you've got to give them one of my beautiful flower bouquets. I'm selling them now, for a very fair price! If you want to start a family someday, this is the first step! ^   -Pierre[#]About Bouquets",
+      "translation": "@,^נראה שאתם מתחילים להתקרב לכמה מתושבי העיירה. אם תרצו להראות למישהו שיש לכם עניין רומנטי בו, עליכם לתת לו אחד מזרי הפרחים היפהפיים שלי. אני מוכר אותם עכשיו במחיר הוגן מאוד! אם תרצו להקים משפחה יום אחד, זה הצעד הראשון! ^   -פייר[#]על זרי פרחים"
+    },
+    {
+      "target": "Data/mail",
+      "key": "RobinCooking",
+      "english": "Dear @,^here is an old recipe that my grandma passed down to me. Enjoy!   ^   -Robin%item cookingRecipe %%[#]Robin's Family Recipe",
+      "translation": "שלום, @,^הנה מתכון ישן שסבתא שלי העבירה לי. תיהנו!   ^   -רובין%item cookingRecipe %%[#]המתכון המשפחתי של רובין",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "DemetriusCooking",
+      "english": "I wanted to say 'thanks' for taking an interest in my work. Here's a cooking recipe that I like. ^   -Demetrius%item cookingRecipe %%[#]Demetrius' Recipe",
+      "translation": "רציתי לומר 'תודה' על שהתעניינתם בעבודתי. הנה מתכון שאני אוהב. ^   -דמטריוס%item cookingRecipe %%[#]המתכון של דמטריוס",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "LinusCooking",
+      "english": "@,^how are you doing? I've enclosed some instructions on how to make one of my favorite fish recipes. ^   -Linus%item cookingRecipe %%[#]Linus' Recipe",
+      "translation": "@,^מה שלומכם? צירפתי הוראות להכנת אחד ממתכוני הדגים האהובים עליי. ^   -לינוס%item cookingRecipe %%[#]המתכון של לינוס",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "PierreCooking",
+      "english": "TOP SECRET:^Here's the recipe for my famous blueberry tart.^Don't tell anyone! I'm giving it to you because we are such good friends. ^   -Pierre%item cookingRecipe %%[#]Pierre's Famous Tart",
+      "translation": "סודי ביותר:^הנה המתכון לטארט האוכמניות המפורסם שלי.^אל תספרו לאיש! אני נותן לכם אותו מפני שאנחנו חברים טובים כל כך. ^   -פייר%item cookingRecipe %%[#]הטארט המפורסם של פייר",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "CarolineCooking",
+      "english": "Dear @,^Nothing is more satisfying than cooking with fresh vegetables from your own garden! I've enclosed a recipe to help you out. Take care, ^   -Caroline%item cookingRecipe %%[#]Caroline's Recipe",
+      "translation": "שלום, @,^אין דבר מספק יותר מבישול עם ירקות טריים מן הגינה שלכם! צירפתי מתכון שיעזור לכם. שמרו על עצמכם, ^   -קרוליין%item cookingRecipe %%[#]המתכון של קרוליין",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "GeorgeCooking",
+      "english": "Figured I'd give you this recipe I had laying around. Try not to burn it. ^   -George%item cookingRecipe %%[#]George's Recipe",
+      "translation": "חשבתי לתת לכם את המתכון הזה ששכב אצלי. השתדלו לא לשרוף אותו. ^   -ג'ורג'%item cookingRecipe %%[#]המתכון של ג'ורג'",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "EvelynCooking",
+      "english": "Dear @,^I usually don't give out my recipes... but since you've been such a sweetheart to George and I, I've written this one down for you. ^   -Evelyn%item cookingRecipe %%[#]Evelyn's Recipe",
+      "translation": "שלום, @,^אני בדרך כלל לא מוסרת את המתכונים שלי... אבל מכיוון שהתייחסתם יפה כל כך אל ג'ורג' ואליי, כתבתי בשבילכם את המתכון הזה. ^   -אוולין%item cookingRecipe %%[#]המתכון של אוולין",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "PamCooking",
+      "english": "Hey Kid,^here's the recipe for a little treat my pappy used to make. Cook it slow. ^   -Pam%item cookingRecipe %%[#]Pam's Recipe",
+      "translation": "היי לכם,^הנה מתכון לפינוק קטן שאבא'לה שלי נהג להכין. בשלו אותו על אש נמוכה. ^   -פאם%item cookingRecipe %%[#]המתכון של פאם",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "LewisCooking",
+      "english": "@,^remember to eat healthy, or you won't have enough energy to work hard! I'm including one of my favorite recipes. Make sure to use ripe tomatoes! ^   -Lewis%item cookingRecipe %%[#]Lewis's Recipe",
+      "translation": "@,^זכרו לאכול מזון בריא, אחרת לא תהיה לכם די אנרגיה לעבוד קשה! אני מצרף את אחד המתכונים האהובים עליי. הקפידו להשתמש בעגבניות בשלות! ^   -לואיס%item cookingRecipe %%[#]המתכון של לואיס",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "GusCooking",
+      "english": "Dear @,^Here's a recipe from my saloon. I only share this with my good friends! ^   -Gus%item cookingRecipe %%[#]Gus's Recipe",
+      "translation": "שלום, @,^הנה מתכון מן המסבאה שלי. אני חולק אותו רק עם חבריי הטובים! ^   -גאס%item cookingRecipe %%[#]המתכון של גאס",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "ClintCooking",
+      "english": "Well, I know a couple of recipes.^I thought I'd send you one... maybe it'll help you mine more ore or something.^Take care. ^   -Clint%item cookingRecipe %%[#]Clint's Recipe",
+      "translation": "טוב, אני מכיר כמה מתכונים.^חשבתי לשלוח לכם אחד... אולי הוא יעזור לכם לכרות יותר עפרות או משהו.^שמרו על עצמכם. ^   -קלינט%item cookingRecipe %%[#]המתכון של קלינט",
+      "latinException": {
+        "tokens": [
+          "cookingRecipe"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    }
+  ]
+}

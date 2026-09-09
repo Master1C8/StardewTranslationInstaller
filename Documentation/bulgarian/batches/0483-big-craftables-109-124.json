@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "0483-big-craftables-109-124",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/BigCraftables",
+  "status": "reviewed",
+  "entries": {
+    "Heater_Name": "Отоплител",
+    "Heater_Description": "Поддържа животните ти по-топли и щастливи през зимата.",
+    "HeavyFurnace_Name": "Усилена пещ",
+    "HeavyFurnace_Description": "По-ефективна е от обикновена Пещ. При всяко използване изисква 25 къса руда и 3 Въглища.",
+    "HeavyTapper_Name": "Усилена канелка",
+    "HeavyTapper_Description": "Постави я върху клен, дъб или бор и изчакай резервоарът да се напълни с продукт! Работи два пъти по-бързо от обикновена Канелка.",
+    "HMTGF_Name": "??HMTGF??",
+    "HMTGF_Description": "??HMTGF??",
+    "Hopper_Name": "Бункер",
+    "Hopper_Description": "Предметите, поставени вътре, автоматично се зареждат в машината пред него.",
+    "HousePlant_Name": "Стайно растение",
+    "HousePlant_Description": "Придава характер на дома или фермата ти.",
+    "Incubator_Name": "Инкубатор",
+    "Incubator_Description": "От яйцата в него се излюпват пиленца и патета.",
+    "IronLamppost_Name": "Железен лампион",
+    "IronLamppost_Description": "Осигурява обилна светлина."
+  },
+  "preserveReasons": {
+    "HMTGF_Name": "Opaque all-capitals mystery identifier bracketed by question marks; no English lexical wording is exposed to translate, so it must remain byte-exact.",
+    "HMTGF_Description": "The description intentionally repeats the same opaque mystery identifier and contains no English lexical wording, so it must remain byte-exact."
+  },
+  "sourceHashes": {
+    "Heater_Name": "e216d77d631614a4788d607c7413f59a44054a0cbcf7f9669dea27ad61305f91",
+    "Heater_Description": "b78e34e36fd980516993274e865e4885c87f92c27173f50639a17c65a7970086",
+    "HeavyFurnace_Name": "644688c3f8cffe439b35fbb1f66c41542c06e52382823449dd6ce8c26012935a",
+    "HeavyFurnace_Description": "e41229fdb9b52577c312549b1e8ee3e507cbdacef1483c97e704a3045e746f10",
+    "HeavyTapper_Name": "80524726249176fcfbc2bdc05e8b567d4e20c747539d8a6a3c810c5a9618bd7f",
+    "HeavyTapper_Description": "b17041961d7f904369a81b568b7f0fdbf3229a299d84cc602fcf7096cbc9af67",
+    "HMTGF_Name": "dfe21115674bfc9835b29bc23d39b1022de74bba98258af304c1cfe1ad7d3c36",
+    "HMTGF_Description": "dfe21115674bfc9835b29bc23d39b1022de74bba98258af304c1cfe1ad7d3c36",
+    "Hopper_Name": "4e61bf4653c3f91f5c0ea3dc6497acb3bef3296ab60c9f97991fb2b75541587a",
+    "Hopper_Description": "6617a5a17b3633abd7b5655c84345313ce1d61dc47185217a26597ae4da1740d",
+    "HousePlant_Name": "751e965b4382dea8f1c836b62a85802534bcf4d73a7471898b4785971bb06d59",
+    "HousePlant_Description": "a5a155b7df36a79c281ef46ace7972385c06e58ebcea10087b015c6bef748fe5",
+    "Incubator_Name": "b7a34fb39f8a5daf7661d2021e8c8f833c4c00013e76e2b5ff77abbeaac7e481",
+    "Incubator_Description": "f61eca817467bc45305e79f08e216f0d4ab9fb0faa674fd4da3c1d1587e617f0",
+    "IronLamppost_Name": "487f78358eb114de5a732090e716160f413ed4e63cb27ac1086eb308801b16b5",
+    "IronLamppost_Description": "780a4a8e79beaf8cc5688b92dc499f0f774a5a69ddea68798ecf7beb16b4c7c4"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated seven complete Big Craftable name-description pairs directly from English and retained both opaque ??HMTGF?? mystery values byte-exact with separate documented reasons.",
+      "Applied locked Усилена пещ, Усилена канелка, Пещ, Канелка and Инкубатор terminology while preserving the 25-ore and 3-coal requirements.",
+      "Read each pair for precise placement, speed, loading and hatching behavior; refined the Incubator sentence so chickens and ducks clearly hatch from eggs inside the machine."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "9082588bcf2ed96e80052aa89794382ff8c1ef83bcc9f43316c563a278404850"
+  }
+}

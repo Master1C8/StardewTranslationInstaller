@@ -1,0 +1,68 @@
+{
+  "id": "236-winter8-setup",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/Festivals/winter8": "04b427d0b8e7af312f0db12d30963e088cac2c7217874176b9011f6f1e33849e"
+  },
+  "records": [
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "name",
+      "english": "Festival of Ice",
+      "translation": "פסטיבל הקרח"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "conditions",
+      "english": "Forest/900 1400",
+      "translation": "Forest/900 1400",
+      "preservationReason": "This value is an engine-authored festival condition or setup script with no player-facing text.",
+      "latinException": {
+        "tokens": [
+          "Forest"
+        ],
+        "reason": "The preserved festival setup uses engine-defined ASCII commands and identifiers."
+      }
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "set-up",
+      "english": "christmasTheme/-1000 -1000/farmer 68 0 1/changeToTemporaryMap Forest-IceFestival/viewport -1000 -1000/loadActors Set-Up/animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27/advancedMove Pierre true -1 0 0 -1 1 5000 0 1 1 0 4 5000/advancedMove Vincent true 0 3 3 0 2 5000 0 -5 2 0 1 5000 -5 0 0 2 3 5000/advancedMove Pam true -5 0 0 1 2 5000 0 -1 5 0 2 7000/playerControl iceFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "christmasTheme/-1000 -1000/farmer 68 0 1/changeToTemporaryMap Forest-IceFestival/viewport -1000 -1000/loadActors Set-Up/animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27/advancedMove Pierre true -1 0 0 -1 1 5000 0 1 1 0 4 5000/advancedMove Vincent true 0 3 3 0 2 5000 0 -5 2 0 1 5000 -5 0 0 2 3 5000/advancedMove Pam true -5 0 0 1 2 5000 0 -1 5 0 2 7000/playerControl iceFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "preservationReason": "This value is an engine-authored festival condition or setup script with no player-facing text.",
+      "latinException": {
+        "tokens": [
+          "christmasTheme",
+          "farmer",
+          "changeToTemporaryMap",
+          "Forest-IceFestival",
+          "viewport",
+          "loadActors",
+          "Set-Up",
+          "animate",
+          "Robin",
+          "false",
+          "true",
+          "advancedMove",
+          "Pierre",
+          "true",
+          "advancedMove",
+          "Vincent",
+          "true",
+          "advancedMove",
+          "Pam",
+          "true",
+          "playerControl",
+          "iceFestival",
+          "viewport",
+          "player",
+          "clamp",
+          "true",
+          "unfreeze",
+          "globalFadeToClear"
+        ],
+        "reason": "The preserved festival setup uses engine-defined ASCII commands and identifiers."
+      }
+    }
+  ]
+}

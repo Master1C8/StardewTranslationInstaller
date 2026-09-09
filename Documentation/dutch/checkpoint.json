@@ -1,0 +1,64 @@
+{
+  "locale": "nl",
+  "languageCode": "nl-vnrevival",
+  "sourceOfTruth": "/Users/antonkrutov/.codex/worktrees/3ea2/StardewTranslationInstaller",
+  "deliveryPath": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+  "phase": "translation-complete-owner-visual-qa-pending",
+  "reviewedGameRecords": 14720,
+  "coverageDenominator": 14720,
+  "coveragePercent": 100.0,
+  "sourceRoot": "/Users/antonkrutov/Developer/data/stardew-english-unpacked",
+  "sourceInventory": {
+    "jsonFiles": 187,
+    "dictionaryRecords": 14642,
+    "creditsRequiresSeparateReview": true,
+    "freshnessVerified": true,
+    "creditsRecords": 78,
+    "freshnessMethod": "Re-unpacked all 187 installed base XNB files; every content value equals the existing English extraction"
+  },
+  "glossary": {
+    "entries": 673,
+    "endpoint": "https://vnrevival.fun/games/stardew-valley/glossary?locale=nl&offset=0&limit=1000",
+    "liveEqualsCanonical": false,
+    "englishEqualsCanonical": true,
+    "auditReadThrough": 673,
+    "consecutiveCleanFullAudits": 2,
+    "locked": true,
+    "initialAuditCorrections": 21,
+    "canonicalSyncPending": false,
+    "correctionEntries": 23,
+    "sha256": "45deccd8680f07c673e0ec87625071223a7a9e1642c061ac4c66ac6410fcb495",
+    "canonicalEqualsSnapshot": true
+  },
+  "releaseChecks": {
+    "editorialAudits": true,
+    "swiftTests": true,
+    "fontRoundTrip": true,
+    "releaseBuild": true,
+    "signature": true,
+    "runtimeQA": false,
+    "desktopParity": true
+  },
+  "authorization": {
+    "commit": false,
+    "push": false,
+    "publish": false,
+    "canonicalNlLocalSync": true
+  },
+  "coverageCommand": "python3 Scripts/dutch-work.py audit",
+  "nextAction": "Owner will perform the remaining live nl-vnrevival visual inspection in Stardew Valley.",
+  "runtimeArticleProbe": {
+    "passedCalls": 9,
+    "runtime": ".NET 6.0.32 x64",
+    "payloadSha256": "f2c6ddf9a364e9791dd428191fa30900b848f69574ddba4d8c41aa93d561d313",
+    "liveSMAPIPending": false
+  },
+  "currentBatchValidation": {
+    "batches": 553,
+    "idempotent": true,
+    "errors": 0,
+    "warnings": 0,
+    "canonicalGlossaryParity": true,
+    "releaseReady": false
+  }
+}

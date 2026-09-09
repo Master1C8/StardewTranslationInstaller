@@ -1,0 +1,18 @@
+{
+  "locale": "ro",
+  "target": "Strings/1_6_Strings",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": ["english-fidelity", "context", "terminology", "romanian-editorial", "tokens"],
+  "reviewNotes": "The sole embedded event and all thirty starter-chicken name pairs complete Strings/1_6_Strings. The event parser proves every command byte and quoted-field boundary unchanged while translating its only visible speech. Chicken pairs retain exactly two non-empty names in their original order; semantic joke names are localized and established personal, culinary and musical names are retained where Romanian uses the same form.",
+  "entries": {
+    "ForestPylonEvent": {
+      "source": "communityCenter/-2000 -2000/farmer 16 5 0 Wizard -1000 -1000 2/pause 1000/viewport 16 5 true/move farmer -2 0 1/pause 4000/playSound terraria_warp/specificTemporarySprite terraria_warp_begin/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/faceDirection farmer 1/pause 3600/playSound coin/pause 100/awardFestivalPrize meowmere/pause 1000/specificTemporarySprite terraria_cat_leave/pause 5000/emote farmer 8/pause 500/warp Wizard 4 4/playSound doorClose/pause 400/faceDirection Wizard 1/emote Wizard 12/speak Wizard \"Don't touch that!\"/faceDirection farmer 3/emote farmer 16 true/end",
+      "translation": "communityCenter/-2000 -2000/farmer 16 5 0 Wizard -1000 -1000 2/pause 1000/viewport 16 5 true/move farmer -2 0 1/pause 4000/playSound terraria_warp/specificTemporarySprite terraria_warp_begin/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/faceDirection farmer 1/pause 3600/playSound coin/pause 100/awardFestivalPrize meowmere/pause 1000/specificTemporarySprite terraria_cat_leave/pause 5000/emote farmer 8/pause 500/warp Wizard 4 4/playSound doorClose/pause 400/faceDirection Wizard 1/emote Wizard 12/speak Wizard \"Nu atinge asta!\"/faceDirection farmer 3/emote farmer 16 true/end",
+      "eventReview": {"commands": "exactly-preserved", "visibleTextSegments": 1}
+    },
+    "StarterChicken_Names": {
+      "source": "Portobello,Porcini | Chicky,Grushenka | Lucky,Clover | Salt,Pepper | Pecky,Clucky | Brunhilde,Gretchen | Billie,Bertha | Pickle,Zucchini | Peachie,Papaya | Potpourri,Ann | Buster,Scrappy | Petal,Twig | Cheeper,Squeaks | Skwash,Pumpkin | Goldie,Cocoa | Toast,Beans | Chip,Dip | Hazel,Peanut | Winky,Nod | Huffy,Puffy | Eggy,Ollie | Polka,Dot | Tiny,Shrimp | Fishy,Roe | Princess,Lady | Misty,Beluga | Snowy,Gingersnap | Honey,Biscuit | Piccolo,Viola | Potatoes,Gravy",
+      "translation": "Portobello,Porcini | Puiuța,Grușenka | Norocica,Trifoi | Sare,Piper | Ciugulica,Cotcodăcila | Brunhilde,Gretchen | Billie,Bertha | Murătură,Dovlecel | Piersicuța,Papaya | Potpuri,Ann | Năzdrăvana,Zgâriata | Petală,Rămurică | Piuitoarea,Chițăilă | Dovlecel,Dovleac | Aurica,Cacao | Pâine Prăjită,Fasole | Cips,Sos | Alunica,Arahidă | Ochișor,Ațipilă | Bosumflici,Pufulici | Oușor,Oli | Polka,Bulină | Mititica,Crevețica | Peștișoara,Icre | Prințesa,Doamna | Misty,Beluga | Albișoara,Turtă-Dulce | Miere,Biscuit | Piccolo,Viola | Cartofi,Sos"
+    }
+  }
+}

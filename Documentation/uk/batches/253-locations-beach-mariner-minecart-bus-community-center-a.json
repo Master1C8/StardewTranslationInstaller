@@ -1,0 +1,223 @@
+{
+  "id": "253-locations-beach-mariner-minecart-bus-community-center-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 30 location strings covering Beach repairs, Old Mariner, minecart, bus stop, Club and Community Center. Glossary item, place and creature names, gender address variants, placeholders, currency, quantities, layout whitespace and the exact price template were preserved.",
+    "reviewedTextSHA256": "c96adfeeae10374f37db39cfbf6c86f91231b82dab09284392c8a629deb82b6e",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 44
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_FixBridge_Hint",
+      "english": "Hmmm... With 300 pieces of wood this could be fixed.",
+      "translation": "Гм-м... Це можна полагодити за допомогою 300 одиниць деревини.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_GoneFishingMessage",
+      "english": "    Gone fishing.\n\n   I'll be back tomorrow.",
+      "translation": "    Пішов рибалити.\n\n   Повернуся завтра.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_Player_Male",
+      "english": "lad",
+      "translation": "юначе",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_Player_Female",
+      "english": "miss",
+      "translation": "панночко",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerMarried",
+      "english": "Old Mariner: Glad the amulet worked out for ye, {0}.",
+      "translation": "Старий моряк: Радий, що кулон став тобі в пригоді, {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerHasItem",
+      "english": "Old Mariner: Don't be shy, now. Show that amulet to the one you intend to marry.",
+      "translation": "Старий моряк: Не соромся. Покажи цей кулон людині, з якою хочеш побратися.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerNotUpgradedHouse",
+      "english": "Old Mariner: I can see that sparkle in yer eye, {0}. Ye must be head over heels in love. But I'm afraid a bigger house is essential for a happy marriage.",
+      "translation": "Старий моряк: Бачу блиск у твоїх очах, {0}. Схоже, кохання геть запаморочило тобі голову. Але для щасливого шлюбу конче потрібен більший будинок.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerBuyItem_Question",
+      "english": "Old Mariner: Ah, I can see it in yer eyes... There be a special someone in yer heart. Just so happens I'm sellin' a 'Mermaid's Pendant'. Give that to yer intended and they'll know exactly what you mean.",
+      "translation": "Старий моряк: Ага, я бачу це у твоїх очах... У твоєму серці є особлива людина. Так сталося, що я продаю «Кулон русалки». Подаруй його людині, з якою хочеш побратися, і вона відразу все зрозуміє.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerBuyItem_AnswerYes",
+      "english": "Buy (5000g)",
+      "translation": "Купити (5000g)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerBuyItem_AnswerNo",
+      "english": "Not now...",
+      "translation": "Не зараз...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerNoRelationship",
+      "english": "Old Mariner: I've got this old amulet to sell... but somethin' tells me yer not ready for it, {0}.",
+      "translation": "Старий моряк: Я маю на продаж старий кулон... але щось підказує мені, що твій час іще не настав, {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Mines",
+      "english": "Mines",
+      "translation": "Шахти",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Town",
+      "english": "Town",
+      "translation": "Містечко",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_BusStop",
+      "english": "Bus Stop",
+      "translation": "Автобусна зупинка",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Quarry",
+      "english": "Quarry",
+      "translation": "Кар’єр",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Cancel",
+      "english": "Cancel",
+      "translation": "Скасувати",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_ChooseDestination",
+      "english": "Choose destination:",
+      "translation": "Виберіть місце призначення:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_OutOfOrder",
+      "english": "Out of order",
+      "translation": "Не працює",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_DestinationWithPrice",
+      "english": "{0} ({1}g)",
+      "translation": "{0} ({1}g)",
+      "reviewed": true,
+      "preserveReason": "This value is a language-independent destination and price layout template made only of placeholders and the currency suffix; it remains exact."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_BuyTicketToDesert",
+      "english": "Buy a ticket to Calico Desert for {0}g?",
+      "translation": "Купити квиток до пустелі Каліко за {0}g?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_DesertOutOfService",
+      "english": "The bus to Calico Desert is out of service.",
+      "translation": "Автобус до пустелі Каліко не працює.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_NotEnoughMoneyForTicket",
+      "english": "You don't have enough money.",
+      "translation": "У вас недостатньо грошей.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_NoDriver",
+      "english": "Please return when a bus driver is present.",
+      "translation": "Поверніться, коли водій автобуса буде на місці.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_ReturnToHorse1",
+      "english": "{0} is wondering where you've been.",
+      "translation": "{0} дивується, де ти пропадаєш.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_ReturnToHorse2",
+      "english": "Your loyal horse waits patiently for your return.",
+      "translation": "Твій вірний кінь терпляче чекає на твоє повернення.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Club_Bouncer_TextAboveHead1",
+      "english": "Now I'm angry!",
+      "translation": "Тепер я розлютився!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Club_Bouncer_TextAboveHead2",
+      "english": "You little punk...",
+      "translation": "Ах ти ж шмаркачу...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion1",
+      "english": "We are the Junimos... Keepers of the forest.",
+      "translation": "Ми — джунімо... Охоронці лісу.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion2",
+      "english": "This house was empty for years... The trees moved in and so did we.",
+      "translation": "Цей будинок роками стояв порожній... Сюди перебралися дерева, а разом із ними й ми.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion3",
+      "english": "We're happy to help... It's not our house, after all.",
+      "translation": "Раді допомогти... Зрештою, це не наш дім.",
+      "reviewed": true
+    }
+  ]
+}

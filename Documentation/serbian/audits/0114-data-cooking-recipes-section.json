@@ -1,0 +1,34 @@
+{
+  "scope": "Data/CookingRecipes",
+  "records": 81,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "Every recipe record classified directly against English as non-visible ingredient IDs, quantities, output IDs and unlock rules. Player-visible names come from the already localized output objects; immutable recipe keys and values were preserved exactly.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_cooking_recipe",
+  "schemaNegativeChecks": [
+    {
+      "case": "field-count",
+      "rejected": true,
+      "reason": "Cooking recipe field count changed"
+    },
+    {
+      "case": "ingredients",
+      "rejected": true,
+      "reason": "Invalid cooking ingredients"
+    },
+    {
+      "case": "unlock",
+      "rejected": true,
+      "reason": "Invalid cooking unlock rule"
+    },
+    {
+      "case": "changed",
+      "rejected": true,
+      "reason": "Cooking recipe technical record changed"
+    }
+  ],
+  "translationSha256": "5667bc85dc72f4c6d95a44e971586949024c1e0480fea945756bb85a69e7c92a",
+  "finalLocaleCleanAudits": 0
+}

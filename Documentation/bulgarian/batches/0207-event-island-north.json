@@ -1,0 +1,27 @@
+{
+  "id": "0207-event-island-north",
+  "target": "Data/Events/IslandNorth",
+  "status": "reviewed",
+  "sourceHashes": {
+    "6497421/e 6497423/f Leo 1000/w sunny/t 600 1800/Hl leoMoved": "5b03f83cbc8ea1ea664046825acb0da609a3c5cd7ade7c2cd4f0a06a58a34207"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "6497421/e 6497423/f Leo 1000/w sunny/t 600 1800/Hl leoMoved": "none/19 14/farmer 18 19 0 Leo 19 13 0/playMusic tropical_island_day_ambient/skippable/move farmer 0 -5 0/pause 1500/playSound parrot/shake Leo 500/pause 250/playSound batScreech/faceDirection farmer 2 true/startJittering/animate farmer false false 1000 94/jump farmer 8/pause 250/faceDirection Leo 2 true/animate Leo false false 1000 16/shake Leo 500/jump Leo 8/pause 250/stopJittering/faceDirection farmer 0 true/pause 3000/speak Leo \"Съжалявам...$u\"/speak Leo \"Трудно ми е да помня да говоря... нормално...$s\"/pause 500/emote Leo 40/pause 1000/speak Leo \"Мислиш ме за странен, нали?$s\"/quickQuestion #Изобщо не#Малко, но вече свикнах#(Изкряскай силно)(break)pause 250\\speak Leo \"Благодаря, че го каза.\"(break)pause 250\\speak Leo \"Благодаря, и аз вече свикнах с теб!$h\"(break)pause 250\\startJittering\\playSound parrot\\pause 250\\stopJittering\\pause 250\\speak Leo \"Хехе... Вече се справяш доста добре с това!$h\"/viewport move 0 -1 4000/pause 500/faceDirection Leo 1 true/pause 500/faceDirection Leo 0 true/pause 1000/playMusic sad_kid/pause 4000/speak Leo \"Понякога се чудя колко различен щеше да бъде животът ми, ако морето никога не ме беше изхвърляло на този остров...$s\"/pause 3000/speak Leo \"Преди, у дома, птиците всъщност не ме интересуваха. Никога не ми беше хрумвало да се заслушам какво може би казват.$s\"/pause 1000/emote Leo 40/pause 2000/speak Leo \"Но предполагам, че това е нормално за... нормалните деца.$s\"/pause 1000/faceDirection Leo 1 true/pause 1000/speak Leo \"Чудя се какво ли... биха казали нормалните деца за мен...$s\"/pause 1000/emote Leo 40/pause 1000/faceDirection Leo 2 true/pause 500/speak Leo \"Мислиш ли, че някога отново мога да бъда нормално дете?$s\"/question null \"#Да#Не#Може би...\"/pause 1000/speak Leo \"Хммм... Май има смисъл в думите ти.$u\"/speak Leo \"Но животът на този остров ми даде много преживявания, които нормалните деца никога няма да имат.$h\"/pause 1000/faceDirection Leo 0 true/pause 500/speak Leo \"Ако не бяха папагалите... кой знае какво щеше да се случи с мен.\"/pause 500/emote Leo 32/pause 500/speak Leo \"Щастлив съм, че ги срещнах. Винаги ще ги смятам за свое семейство, дори това да ме прави малко странен.$h\"/pause 500/viewport move 0 1 4000/pause 100/faceDirection Leo 2 true/move Leo 0 1 2/pause 250/faceDirection Leo 3/faceDirection farmer 1/pause 3000/speak Leo \"Както и да е, благодаря, че поговори с мен, @.\"/pause 500/speak Leo \"Може би някой ден и ти ще станеш част от семейството ни, хехе.$h\"/pause 1000/faceDirection Leo 2 true/pause 1000/speak Leo \"Ела, ще те науча как се казва \\\"Хайде да играем\\\" на папагалски!\"/pause 500/viewport move 0 1 99999/pause 500/playSound parrot/animate Leo false false 1000 17/shake Leo 1000/pause 2000/faceDirection farmer 2 true/startJittering/playSound parrot/pause 250/stopJittering/globalFade/viewport -5000 -5000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all nineteen quoted dialogue, response and nested-quotation fields plus the complete three-choice quick question in the Island North event.",
+      "Preserved every friendship and world-state condition, branch command, response count, embedded quotation escape and control token while maintaining Leo’s hesitant voice.",
+      "Removed two added player-gender assumptions from Leo’s praise and response, and refined the identity, family and parrot-speech passages for natural Bulgarian."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "682e1e5cb32b9ff64c751c662d4db6a6bbe9c336fcaaf8f9bfd54b034ed34ae3"
+  }
+}

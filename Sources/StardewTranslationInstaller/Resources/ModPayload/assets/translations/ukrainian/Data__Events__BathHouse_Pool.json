@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BathHouse_Pool",
+      "When": {
+        "Language": "uk-vnrevival"
+      },
+      "Entries": {
+        "38/f Penny 2500/t 1900 2400/n pennySpa": "echos/-1000 -1000/farmer 13 23 2 Penny 9 29 1/swimming farmer/swimming Penny/skippable/showFrame Penny 31/viewport 13 27 true/pause 2000/playSound slosh/move farmer 0 6 3/positionOffset farmer 0 16/pause 700/speak Penny \"Ось і ти... Я хвилювалася, що моя записка до тебе не дійшла.$6\"/playSound slosh/move Penny 1 0 1/pause 1500/faceDirection Penny 0/speak Penny \"Схоже, ми тут удвох.$8\"/pause 800/speak Penny \"Як же приємно зануритися у воду після нічного холоду, правда?$6\"/faceDirection farmer 0/pause 1300/faceDirection Penny 1/pause 500/playSound slosh/move Penny 1 0 1/faceDirection farmer 3/speak Penny \"$q -1 null#Ти знаєш, чому я попросила тебе прийти сюди сьогодні ввечері?$8#$r -1 0 event_pool1#Ти хочеш мені щось сказати.#$r -1 0 event_pool2#Я не зовсім розумію.#$r -1 0 event_pool3#Ти хотіла побачити мене в купальнику.\"/faceDirection Penny 3/pause 800/faceDirection Penny 1/speak Penny \"Ем-м, як би це сказати...$8\"/pause 1000/playSound slosh/move Penny 1 0 1/pause 500/speak Penny \"Я вже давно хотіла розповісти тобі... про свої почуття.$8#$b#Я не можу перестати думати про тебе...$8#$b#Я ще ніколи такого ні до кого не відчувала.$8\"/speak Penny \"$q -1 null#...$8#$r -1 0 event_pool4#Я відчуваю до тебе те саме.#$r -1 -1500 event_pool5#Вибач, але ти мені не подобаєшся в такому сенсі...\"/fork pennyHeartbroken/pause 1000/showFrame Penny 32/pause 200/playSound slosh/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Penny 2 0/positionOffset farmer -2 2/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/specificTemporarySprite heart 13 29/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+        "pennyHeartbroken": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut"
+      }
+    }
+  ]
+}

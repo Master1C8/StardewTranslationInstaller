@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0507-characters-064-079",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/Characters",
+  "status": "reviewed",
+  "entries": {
+    "MovieInvite_AlreadyInvitedSomeone": "Вече имаш уговорка да гледаш филм с {0} днес!",
+    "MovieInvite_NoTheater": "{0} изглежда в недоумение...",
+    "MovieInvite_CantInvite": "Не можеш да поканиш {0} на кино.",
+    "MovieInvite_InvitedBySomeoneElse": "Съжалявам, вече имам уговорка за филм днес, но може да се присъединиш към нас там?",
+    "MovieInvite_FarmerAlreadySeen": "Още не ми се ходи отново на кино...",
+    "MovieInvite_AlreadySeen": "Съжалявам, тази седмица вече гледах филм...",
+    "MovieInvite_Invited_Sandy": "Оо... С удоволствие ще дойда с теб.  Ти тръгвай, а аз ще се срещна с теб там, миличко... Трябва да се освежа!",
+    "MovieInvite_Invited_Dwarf": "Му-какво? Е, сигурно ще ми хареса! С удоволствие ще дойда с теб.",
+    "MovieInvite_Invited_Krobus": "О? Обикновено се крия от хората...#$b#Но имам идея... Ще се срещна с теб в Киносалона по-късно.",
+    "MovieInvite_Invited_Wizard": "Хмпф... Добре тогава. Ще се присъединя към теб за този... спектакъл.",
+    "MovieInvite_Invited": "Филм? Разбира се. Ще се видим в Киносалона.",
+    "MovieInvite_Invited_Rude": "Филм? Да, както и да е, звучи добре. Ще се видим в Киносалона...",
+    "MovieInvite_Invited_Child": "Филм? Ура! Да се срещнем в Киносалона!",
+    "MovieInvite_Reject_Child": "Май не ми е позволено да гледам това...",
+    "MovieInvite_Reject": "Съжалявам, в момента не ми се гледа филм...",
+    "MovieTheater_NoTicket": "Не можеш да влезеш в Киносалона без билет!"
+  },
+  "sourceHashes": {
+    "MovieInvite_AlreadyInvitedSomeone": "2f92a3aeca3120122a25d68f33cbd9c374a5d590acf82f486638f909a4262fa4",
+    "MovieInvite_NoTheater": "ceabd233c2bcd47b39ee112df1e6717490a79ff9fdf8d5b539a00b16c41b7d53",
+    "MovieInvite_CantInvite": "fe0657ca82b0bd531206b1ff6827885910f98061cd0c6afd11a14b192e3bff47",
+    "MovieInvite_InvitedBySomeoneElse": "a13d12ab5410d893f0f250dc55d5b810eac85e7f3c87ffe6d587463cb2959f2f",
+    "MovieInvite_FarmerAlreadySeen": "4d06a99b2bcdf56a0027164ac4c1b4a71598da614649f6f206a3baaf31e4d9e7",
+    "MovieInvite_AlreadySeen": "513b568f5394c502b5c992b63555193bb5d6f7667039b9915a7c804c817cb4bb",
+    "MovieInvite_Invited_Sandy": "a67e15893eda537e67619683203ec6f2a3f1db0895eb62694ab3daf9b14f7e09",
+    "MovieInvite_Invited_Dwarf": "f3f350dc1ff3a793bcc91ef9e97ea2c23aca0aefcde3cdd86f9ff296a2305a03",
+    "MovieInvite_Invited_Krobus": "2c128bf2be2985e858ed8f221122318acee2c77feb3f38bc4ded500c531e26fe",
+    "MovieInvite_Invited_Wizard": "1e97298202cb0eb159409d2433346ed9d8da6d581d22ce92de04eb0a93272d03",
+    "MovieInvite_Invited": "a0e62206f1ddb6bdb1d5a3088bccd3b2c85fb23b9a64d681a689921b60f04bcd",
+    "MovieInvite_Invited_Rude": "1ea1481654e7424fea40318f92db7e1ac8e4bdd1fa9676ef4eda00463679a56a",
+    "MovieInvite_Invited_Child": "6ca326fb0c78e3832bb49dcb81c73693bb7a92efc2dcad0f5feb3231a4ccae9b",
+    "MovieInvite_Reject_Child": "a670a919ab1a7e26bec65fa37de4a7e76cc11ac0bca39854716226835a6dae67",
+    "MovieInvite_Reject": "b9effb1e698483f0be96eade52b4a4e3b372fc72d9c100b8f19f16bb9416a09f",
+    "MovieTheater_NoTicket": "d505c8abe86f876fc390ccf11ed075e7ae2645a5f8130406e8e584a0380aa147"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated all sixteen movie-invitation state and response strings directly from English, including Sandy, Dwarf, Krobus, Wizard, rude and child voices.",
+      "Applied locked Киносалон terminology and Sandy’s established gender-neutral „миличко“ address while keeping all dynamic-NPC and player wording free of unsupported grammatical gender.",
+      "Reread invitation ownership, weekly viewing limits, festival and closing states, ticket requirement and every acceptance or refusal; preserved both placeholders, Krobus’s dialogue break and Sandy’s source double space."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "d4dced13ffb9a413fdc3687e89a4afad216aef77b2ab0400c9cd9beb8c838d59"
+  }
+}

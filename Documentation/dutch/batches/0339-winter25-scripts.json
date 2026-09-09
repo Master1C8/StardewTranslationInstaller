@@ -1,0 +1,23 @@
+{
+  "locale": "nl",
+  "target": "Data/Festivals/winter25",
+  "sourceAssetSha256": "304c19466d31c937e6cc3d2fe90a84ccd4c5536fb98c633bf752df51878e3b6d",
+  "reviewed": true,
+  "entries": {
+    "name": "Feest van de Winterster"
+  },
+  "preserveSourceEntries": [
+    "conditions",
+    "set-up",
+    "secretSanta",
+    "set-up_y2",
+    "secretSanta_y2"
+  ],
+  "notes": {
+    "conditions": "Reviewed festival location and schedule data; retained source-identical because it contains only engine tokens and numeric values.",
+    "set-up": "Reviewed year-one event setup commands; retained source-identical because they contain only engine commands, actor identifiers, map identifiers, animation instructions, and numeric values.",
+    "secretSanta": "Reviewed year-one gift cutscene commands; retained source-identical because quoted values are dialogue lookup IDs and all remaining content consists of engine commands, actor identifiers, music and sound identifiers, and numeric values.",
+    "set-up_y2": "Reviewed year-two event setup commands; retained source-identical because they contain only engine commands, actor identifiers, map identifiers, animation instructions, and numeric values.",
+    "secretSanta_y2": "Reviewed year-two gift cutscene commands; retained source-identical because quoted values are dialogue lookup IDs and all remaining content consists of engine commands, actor identifiers, music and sound identifiers, and numeric values."
+  }
+}

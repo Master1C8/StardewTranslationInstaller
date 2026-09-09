@@ -1,0 +1,260 @@
+{
+  "locale": "ro",
+  "target": "Strings/UI",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Reviewed race announcer/betting humor and concatenated winners list, Skull Cavern modifiers, mobile labels, input-method distinctions and Android migration warning. All control counts and grouping parentheses retained. Real folder StardewValley and version 1.5 preserved; the quoted Android action is translated as user-facing text. Birthday order requires runtime confirmation before approval and is excluded from this batch if not yet resolved. Runtime ProfileMenu.draw confirms argument 0 is the numeric birthday day and argument 1 is the localized season. Romanian places day before season.",
+  "entries": {
+    "Chat_GuessRacer_8": {
+      "source": "{0}'s going 'all in' on {1}!",
+      "translation": "{0} mizează totul pe {1}!"
+    },
+    "Chat_GuessRacer_9": {
+      "source": "{0} is betting big on {1}!",
+      "translation": "{0} pariază din greu pe {1}!"
+    },
+    "Chat_GuessRacer_10": {
+      "source": "{0} is sure {1}'s gonna win!",
+      "translation": "{0} nu are nicio îndoială că {1} va câștiga!"
+    },
+    "Chat_RaceSabotage_1": {
+      "source": "There's a rumor that the next race is rigged...",
+      "translation": "Se zvonește că următoarea cursă este aranjată..."
+    },
+    "Chat_RaceSabotage_2": {
+      "source": "Maniacal laughter was heard behind Sandy's Oasis...",
+      "translation": "Un râs nebunesc s-a auzit în spatele Oazei lui Sandy..."
+    },
+    "Chat_RaceSabotage_3": {
+      "source": "The fix is in...",
+      "translation": "Totul e aranjat..."
+    },
+    "Chat_RaceSabotage_4": {
+      "source": "The race track is looking a little slippery...",
+      "translation": "Pista de curse pare cam alunecoasă..."
+    },
+    "Chat_RaceSabotage_5": {
+      "source": "The little racers seem nervous about the next race...",
+      "translation": "Micii concurenți par neliniștiți în privința următoarei curse..."
+    },
+    "Chat_RaceWinners_Zero": {
+      "source": "{0} has won the race!",
+      "translation": "{0} a câștigat cursa!"
+    },
+    "Chat_RaceWinners_One": {
+      "source": "{0} has won the race! Congratulations {1}!",
+      "translation": "{0} a câștigat cursa! Felicitări, {1}!"
+    },
+    "Chat_RaceWinners_Two": {
+      "source": "{0} has won the race! Congratulations {1} and {2}!",
+      "translation": "{0} a câștigat cursa! Felicitări, {1} și {2}!"
+    },
+    "Chat_RaceWinners_Many": {
+      "source": "{0} has won the race! Congratulations",
+      "translation": "{0} a câștigat cursa! Felicitări,"
+    },
+    "Chat_RaceWinners_List": {
+      "source": "{0},",
+      "translation": "{0},",
+      "preservationReason": "Dynamic list member with separator punctuation; no prose."
+    },
+    "Chat_RaceWinners_Final": {
+      "source": "and {0}!",
+      "translation": "și {0}!"
+    },
+    "Chat_CalicoStatue_Activated": {
+      "source": "Calico Statue: {0}",
+      "translation": "Statuia Calico: {0}"
+    },
+    "Tomorrow": {
+      "source": "Tomorrow...",
+      "translation": "Mâine..."
+    },
+    "Chat_HardModeSkullCaveActivated": {
+      "source": "{0} has removed an ancient magi-seal of protection in the Skull Cavern. Tonight, powerful monsters will ascend from the deep...",
+      "translation": "{0} a înlăturat un străvechi sigiliu magic de protecție din Peștera Craniului. În noaptea asta, monștri puternici vor urca din adâncuri..."
+    },
+    "Chat_HardModeSkullCaveDeactivated": {
+      "source": "{0} has restored an ancient magi-seal of protection in the Skull Cavern. Tomorrow, it will return to normal...",
+      "translation": "{0} a refăcut un străvechi sigiliu magic de protecție din Peștera Craniului. Mâine, peștera va reveni la normal..."
+    },
+    "Character_EyeColor.mobile": {
+      "source": "Eye \nColor",
+      "translation": "Culoarea \nochilor"
+    },
+    "Character_HairColor.mobile": {
+      "source": "Hair\nColor",
+      "translation": "Culoarea\npărului"
+    },
+    "Character_PantsColor.mobile": {
+      "source": "Pants\nColor",
+      "translation": "Culoarea\npantalonilor"
+    },
+    "Character_ShirtColor.mobile": {
+      "source": "Shirt\nColor",
+      "translation": "Culoarea\ncămășii"
+    },
+    "DisplayAdjustmentText": {
+      "source": "Press up/down to adjust the screen size to fit your display.",
+      "translation": "Apasă sus/jos pentru a adapta dimensiunea imaginii la ecranul tău."
+    },
+    "DisplayAdjustmentButton": {
+      "source": "Adjust Screen Size",
+      "translation": "Ajustează dimensiunea ecranului"
+    },
+    "Split_Screen": {
+      "source": "Split Screen",
+      "translation": "Ecran divizat"
+    },
+    "mobile_options_vertical_toolbar": {
+      "source": "Vertical Toolbar",
+      "translation": "Bară de unelte verticală"
+    },
+    "mobile_options_menu_side_margin": {
+      "source": "Menu padding",
+      "translation": "Spațierea meniului"
+    },
+    "mobile_options_toolbar_padding": {
+      "source": "Toolbar padding",
+      "translation": "Spațierea barei de unelte"
+    },
+    "mobile_button_craft": {
+      "source": "Craft",
+      "translation": "Confecționează"
+    },
+    "shippingInstructionText": {
+      "source": "Drop items here to ship them for sale.",
+      "translation": "Pune obiecte aici pentru a le expedia spre vânzare."
+    },
+    "mobile_options_green_squares": {
+      "source": "Item Placement Guide",
+      "translation": "Ghid pentru amplasarea obiectelor"
+    },
+    "tutorial_auto_attack": {
+      "source": "You can choose between auto and manual attack modes on the game options screen.",
+      "translation": "Poți alege între atacul automat și cel manual în ecranul de opțiuni al jocului."
+    },
+    "question_restore_backup": {
+      "source": "Would you like to restore from where you previously left off?",
+      "translation": "Vrei să reiei jocul de unde ai rămas ultima dată?"
+    },
+    "mobile_options_bigger_numbers": {
+      "source": "Bigger Font for Numbers",
+      "translation": "Font mai mare pentru numere"
+    },
+    "mobile_options_auto_save": {
+      "source": "Auto Save",
+      "translation": "Salvare automată"
+    },
+    "save_backup": {
+      "source": "Save Backup",
+      "translation": "Salvează o copie de siguranță"
+    },
+    "swap_saves": {
+      "source": "Swap to previous save",
+      "translation": "Treci la salvarea anterioară"
+    },
+    "control_method_tap_to_move": {
+      "source": "Tap-to-move & Auto-Attack",
+      "translation": "Deplasare prin atingere și atac automat"
+    },
+    "control_method_attack_joystick": {
+      "source": "Tap-to-move & Attack Joystick",
+      "translation": "Deplasare prin atingere și joystick de atac"
+    },
+    "control_method_invis_2": {
+      "source": "Invisible Joystick & 2 Buttons",
+      "translation": "Joystick invizibil și 2 butoane"
+    },
+    "control_method_invis_1": {
+      "source": "Invisible Joystick & 1 Button",
+      "translation": "Joystick invizibil și 1 buton"
+    },
+    "control_method_joystick_buttons": {
+      "source": "Tap-to-move & Joystick & Buttons",
+      "translation": "Deplasare prin atingere, joystick și butoane"
+    },
+    "control_method_joystick_buttons_no_tap_to_move": {
+      "source": "Joystick & Buttons",
+      "translation": "Joystick și butoane"
+    },
+    "control_method_joystick_buttons_b": {
+      "source": "Tap-to-move & (Joystick & Buttons) (weapons)",
+      "translation": "Deplasare prin atingere și (joystick și butoane) (arme)"
+    },
+    "control_method_joystick_buttons_c": {
+      "source": "Tap-to-move & Joystick & (Buttons) (weapons)",
+      "translation": "Deplasare prin atingere, joystick și (butoane) (arme)"
+    },
+    "control_method_joystick": {
+      "source": "Tap-to-move & Joystick",
+      "translation": "Deplasare prin atingere și joystick"
+    },
+    "show_controls_toggle_button": {
+      "source": "Show controls toggle button",
+      "translation": "Afișează butonul de comutare a comenzilor"
+    },
+    "button_diameter": {
+      "source": "Button Diameter",
+      "translation": "Diametrul butoanelor"
+    },
+    "adjust_joypad_controls": {
+      "source": "Adjust Joypad Controls",
+      "translation": "Ajustează comenzile gamepadului"
+    },
+    "invisible_button_width": {
+      "source": "Invisible Button Width",
+      "translation": "Lățimea butoanelor invizibile"
+    },
+    "Default": {
+      "source": "Default",
+      "translation": "Implicit"
+    },
+    "pinch_zoom": {
+      "source": "Pinch Zoom",
+      "translation": "Zoom prin apropierea și depărtarea degetelor"
+    },
+    "store_demo": {
+      "source": "This version of Stardew Valley has been created specifically for demonstration purposes.",
+      "translation": "Această versiune de Stardew Valley a fost creată special în scop demonstrativ."
+    },
+    "mobile_options_toolbar_slot_size": {
+      "source": "Toolbar size",
+      "translation": "Dimensiunea barei de unelte"
+    },
+    "mobile_options_date_time_size": {
+      "source": "Date box size",
+      "translation": "Dimensiunea casetei cu data"
+    },
+    "select_building": {
+      "source": "Select a building",
+      "translation": "Alege o clădire"
+    },
+    "android_storage_migration": {
+      "source": "Stardew Valley needs to perform a one time copy of your farms to a new location for the 1.5 update of the game.\n\nIn the following screen please select the `StardewValley` folder and tap 'Use this folder'.",
+      "translation": "Stardew Valley trebuie să copieze o singură dată fermele tale într-o locație nouă pentru actualizarea 1.5 a jocului.\n\nÎn ecranul următor, selectează dosarul `StardewValley` și atinge „Folosește acest dosar”."
+    },
+    "mobile_options_larger_font": {
+      "source": "Use Larger Tooltip Font",
+      "translation": "Folosește un font mai mare pentru explicații"
+    },
+    "Syncing_cloud_saves": {
+      "source": "Syncing cloud saves",
+      "translation": "Se sincronizează salvările din cloud"
+    },
+    "Cancel": {
+      "source": "Cancel",
+      "translation": "Anulează"
+    },
+    "BirthdayOrder": {
+      "source": "{1} {0}",
+      "translation": "{0} {1}"
+    }
+  }
+}

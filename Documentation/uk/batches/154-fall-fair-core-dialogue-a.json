@@ -1,0 +1,294 @@
+{
+  "id": "154-fall-fair-core-dialogue-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the first forty Fall 16 festival records: the canonical fair name, all spouse greetings, villagers through the Wizard, and both language-independent festival runtime records. Every character voice, grange-display reference, food and game term, Star Token term, festival instruction, placeholder, and control marker was reviewed against scene context and the canonical Ukrainian glossary. Conditions and setup were explicitly preserved as runtime-only payloads; keys, dialogue delimiters, emotion markers, actor identifiers, and non-text structure were preserved. Remaining Fall 16 records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "a44cca6a2441cc517aaed1534cecd5bb1c2778d2d30a1a14ad0ab15ad663a457",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 24
+  },
+  "records": [
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "conditions",
+      "english": "Town/900 1500",
+      "translation": "Town/900 1500",
+      "reviewed": true,
+      "preserveReason": "Festival location and time condition payload is language-independent runtime data."
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "set-up",
+      "english": "fallFest/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Fair/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -3 0 2 5000 3 0 2 5000/advancedMove Jas true 2 0 4 5000 -2 0 4 5000/advancedMove Marnie true -2 0 4 5000 2 0 4 5000/advancedMove Abigail true 4 6000 5 0 0 3 2 6000 0 -3 -5 0/advancedMove Robin true 0 1 1 5000 0 -2 3 5000 0 1 1 5000/animate Sebastian false true 200 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 20 21 21 21 21 20 22 22 23/addTemporaryActor BabyPig 32 32 65 68 2 false Animal/addTemporaryActor Pig 32 32 65 70 3 false Animal/addTemporaryActor \"White Chicken\" 16 16 59 67 2 false Animal/addTemporaryActor \"Brown Chicken\" 16 16 61 67 2 false Animal/addTemporaryActor \"White Cow\" 32 32 59 72 0 false Animal/addTemporaryActor \"BabyWhite Cow\" 32 32 61 72 1 false Animal/advancedMove BabyPig true 0 1 3 5000 0 -1 0 7000/advancedMove Pig true 3 5000 0 1 1 5000 0 -1 3 5000/advancedMove White_Chicken true 1 0 2 7000 -1 0 2 10000/animate \"Brown Chicken\" false true 500 16 17/playerControl fair/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "fallFest/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Fair/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -3 0 2 5000 3 0 2 5000/advancedMove Jas true 2 0 4 5000 -2 0 4 5000/advancedMove Marnie true -2 0 4 5000 2 0 4 5000/advancedMove Abigail true 4 6000 5 0 0 3 2 6000 0 -3 -5 0/advancedMove Robin true 0 1 1 5000 0 -2 3 5000 0 1 1 5000/animate Sebastian false true 200 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 20 21 21 21 21 20 22 22 23/addTemporaryActor BabyPig 32 32 65 68 2 false Animal/addTemporaryActor Pig 32 32 65 70 3 false Animal/addTemporaryActor \"White Chicken\" 16 16 59 67 2 false Animal/addTemporaryActor \"Brown Chicken\" 16 16 61 67 2 false Animal/addTemporaryActor \"White Cow\" 32 32 59 72 0 false Animal/addTemporaryActor \"BabyWhite Cow\" 32 32 61 72 1 false Animal/advancedMove BabyPig true 0 1 3 5000 0 -1 0 7000/advancedMove Pig true 3 5000 0 1 1 5000 0 -1 3 5000/advancedMove White_Chicken true 1 0 2 7000 -1 0 2 10000/animate \"Brown Chicken\" false true 500 16 17/playerControl fair/viewport player clamp true unfreeze/globalFadeToClear",
+      "reviewed": true,
+      "preserveReason": "Festival map, actor, animation, movement, animal identifier, and viewport setup payload contains no player-facing prose and must remain byte-exact."
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "name",
+      "english": "Stardew Valley Fair",
+      "translation": "Ярмарок долини Стардью",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Abigail_spouse",
+      "english": "I beat all these games last year!$h",
+      "translation": "Минулого року я перемогла в усіх цих іграх!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Leah_spouse",
+      "english": "I learned all of Robin's techniques last year, but she's always one step ahead of me!",
+      "translation": "Минулого року я опанувала всі прийоми Робін, але вона завжди на крок попереду!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Maru_spouse",
+      "english": "mumph... This is my one chance to pig out on barbecue sandwiches.",
+      "translation": "М-мф... Це моя єдина нагода досхочу наїстися бутербродів із барбекю.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Penny_spouse",
+      "english": "I hope we win the grange display contest!",
+      "translation": "Сподіваюся, ми переможемо в конкурсі виставкових вітрин господарства!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Haley_spouse",
+      "english": "Did you remember to bring good stuff for our grange display? I hope we win this year.",
+      "translation": "У нас же є добрі речі для виставкової вітрини господарства? Сподіваюся, цього року ми переможемо.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sebastian_spouse",
+      "english": "Hey, @. I'm just catching up with Sam. Go ahead and have some fun.",
+      "translation": "Привіт, @. Ми із Семом надолужуємо спілкування. Іди трохи розважся.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sam_spouse",
+      "english": "Sebastian's the same as always. Are you having fun at the festival?",
+      "translation": "Себастіан зовсім не змінився. Тобі весело на фестивалі?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Alex_spouse",
+      "english": "I'm just catching up with some old friends... you go on and have a good time.",
+      "translation": "Ми зі старими друзями надолужуємо спілкування... А ти йди повеселися.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Harvey_spouse",
+      "english": "I'll wait here until you're ready to go home...",
+      "translation": "Я чекатиму тут, доки ти не захочеш додому...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Elliott_spouse",
+      "english": "The smokey aroma drew me here, yet 'twas the zesty sauce that truly sealed my fate... *gurgle*$s",
+      "translation": "Димний аромат заманив мене сюди, та лише пікантний соус остаточно вирішив мою долю... *бурчить живіт*$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Abigail",
+      "english": "I already beat all the games... now what?",
+      "translation": "Я вже перемогла в усіх іграх... Що тепер?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Robin",
+      "english": "Woodworking is an ancient tradition that I'm very proud to be a part of.$h",
+      "translation": "Деревообробка — давня традиція, і я дуже пишаюся тим, що належу до неї.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Demetrius",
+      "english": "Robin really works hard on her carpentry stuff... she deserves a little recognition now and then.",
+      "translation": "Робін дуже наполегливо працює над своїми теслярськими виробами... Час від часу вона заслуговує на визнання.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Maru",
+      "english": "*slurp* mmm... this barbecue sauce is amazing.$h",
+      "translation": "*сьорб* М-м-м... Цей соус барбекю неймовірний.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sebastian",
+      "english": "It's kinda hectic today... I'm just gonna hang out here for a while.",
+      "translation": "Сьогодні трохи метушливо... Я поки що побуду тут.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Pierre",
+      "english": "My store carries the very finest quality products in the whole valley. Please, inspect my grange display closely and see for yourself!",
+      "translation": "У моїй крамниці продаються найякісніші товари в усій долині. Уважно огляньте мою виставкову вітрину господарства й переконайтеся самі!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Caroline",
+      "english": "Pierre is very serious about his grange display. He's been setting aside the best-looking produce for weeks in preparation.#$e#Hey, best of luck to you if you enter!",
+      "translation": "П’єр дуже серйозно ставиться до своєї виставкової вітрини господарства. Кілька тижнів він відкладав для неї найкращі на вигляд продукти.#$e#Гей, якщо береш участь, бажаю удачі!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Linus",
+      "english": "These animals never judge people by their looks. The same can't be said for humans.",
+      "translation": "Ці тварини ніколи не судять людей за зовнішністю. Про людей такого не скажеш.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Alex",
+      "english": "I played the 'Strength' game too many times and now my arms feel like rubber.",
+      "translation": "Я забагато разів зіграв у «Силу», і тепер мої руки наче гумові.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "George",
+      "english": "Hmm... smoked turkey haunch? I guess this festival isn't all bad.$h",
+      "translation": "Гм... Копчене індиче стегно? Мабуть, цей фестиваль не такий уже й поганий.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Evelyn",
+      "english": "I wish Gus would include a vegetarian option. Some zucchini skewers, maybe?",
+      "translation": "Хотілося б, щоб Ґас додав вегетаріанську страву. Може, шашлички з цукіні?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Lewis",
+      "english": "Well @, it's the big day... Our most important festival of the year, the 'Stardew Valley Fair'.#$b#If you'd like to participate by setting up a grange display, I've left an empty stand for you. Just let me know after you've set everything up so we can get to the judging.",
+      "translation": "Що ж, @, великий день настав... Наш найважливіший фестиваль року — «Ярмарок долини Стардью».#$b#Якщо хочеш узяти участь і оформити виставкову вітрину господарства, я залишив для тебе порожній стенд. Дай мені знати, коли все буде готове до оцінювання.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Clint",
+      "english": "I complain about my job sometimes, but I do take pride in my work.#$b#These are some of my finest pieces. I hope you like them.",
+      "translation": "Іноді я скаржуся на роботу, але насправді пишаюся нею.#$b#Це одні з моїх найкращих виробів. Сподіваюся, вони тобі сподобаються.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Emily",
+      "english": "You know, I would've made a pretty good clown. I think I missed my calling.",
+      "translation": "Знаєш, із мене вийшла б непогана клоунеса. Мабуть, я не помітила свого покликання.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Penny",
+      "english": "I won the wheel of chance ten times in a row and now the man won't let me play anymore...$s",
+      "translation": "Я десять разів поспіль виграла в колесо фортуни, а тепер той чоловік більше не дозволяє мені грати...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Pam",
+      "english": "Better hurry up, kid... Before ol' Pam here fishes every last lunker out of the tent! Hehe.$h",
+      "translation": "Поквапся, малечо... Поки стара Пем не виловила з намету всіх до останньої здоровезних рибин! Хе-хе.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Haley",
+      "english": "Have you been to the fortune teller? She set up her stand in the graveyard.#$e#I already saw her... she told me something... interesting. *giggle*$h",
+      "translation": "Тобі вже доводилося бувати у ворожки? Вона поставила намет на кладовищі.#$e#Я вже ходила... Вона розповіла мені дещо... цікаве. *хихоче*$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Jodi",
+      "english": "He doesn't look very happy... I guess Mayor Lewis had to cut costs with a budget clown this year.",
+      "translation": "Він не надто щасливий... Мабуть, цього року меру Льюїсу довелося заощадити й найняти дешевого клоуна.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Kent",
+      "english": "I'm waiting for this clown to start doing something funny.#$e#Pretty disappointing.",
+      "translation": "Я чекаю, коли цей клоун почне робити щось смішне.#$e#Суцільне розчарування.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Sam",
+      "english": "Hey @. Having a good time?#$e#The slingshot tent is pretty fun, and if you get good at it you can really rack up the star tokens.",
+      "translation": "Гей, @. Весело проводиш час?#$e#У наметі з рогаткою доволі весело, а якщо навчитися добре стріляти, можна назбирати купу Зоряних жетонів.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Leah",
+      "english": "I really admire Robin's carpentry skills. I use a lot of the same techniques in my own line of work.",
+      "translation": "Я справді захоплююся теслярською майстерністю Робін. У своїй роботі використовую багато тих самих прийомів.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Shane",
+      "english": "All these animals are friendly and love to get massaged.",
+      "translation": "Усі ці тварини дружні й люблять, коли їм роблять масаж.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Marnie",
+      "english": "I tried my best, but my display is pretty weak compared to Pierre's.$s#$e#Well, maybe the judges will give me bonus points for the massive cheese wheel.",
+      "translation": "Я дуже старалася, але моя вітрина доволі слабка порівняно з вітриною П’єра.$s#$e#Що ж, може, судді дадуть додаткові бали за величезну головку сиру.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Elliott",
+      "english": "I'm trying to get Gus to tell me his sauce recipe, but he won't budge.",
+      "translation": "Я намагаюся вивідати в Ґаса рецепт його соусу, але він непохитний.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Gus",
+      "english": "Eat as much as you like! It's all free today... compliments of Mayor Lewis.$h#$e#Oh! Make sure to dribble some of my secret sauce on there.",
+      "translation": "Їжте скільки завгодно! Сьогодні все безкоштовно... мер Льюїс пригощає.$h#$e#О! Не забудьте полити все моїм секретним соусом.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Dwarf",
+      "english": "You say it's raining up above? *gasp*#$e#Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it.",
+      "translation": "Кажеш, нагорі йде дощ? *ахає*#$e#Дощ... Для нас це майже міф. Дехто з нас проживає ціле життя, так його й не побачивши.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/fall16",
+      "key": "Wizard",
+      "english": "Welwick and I have known each other for a long time... she is a remarkable diviner, and a good friend.#$e#...#$e#That clown... I know him from somewhere.#$e#Was it the school of illusion? Or maybe the Carnival of Secrets? Hmm...",
+      "translation": "Ми з Велвік знайомі багато років... Вона видатна провидиця й добра подруга.#$e#...#$e#Цей клоун... Я його звідкись знаю.#$e#Може, зі школи ілюзій? Чи з Карнавалу таємниць? Гм...",
+      "reviewed": true
+    }
+  ]
+}

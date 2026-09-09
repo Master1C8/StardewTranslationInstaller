@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "nl-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"Aye... een treurig gezicht, hè?\"/pause 500/speak Willy \"Ze was de boot van m'n vader... Heeft hem meer dan vijftig jaar goed gediend.#$b#Maar nu blijft ze amper nog drijven.$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Ik zou haar zelf repareren, maar ik heb niet de juiste materialen, ${jongen^juffie}$.\"/faceDirection Willy 0/speak Willy \"Aye... tweehonderd stukken hardhout om de romp te dichten zouden een goed begin zijn.#$b#Maar we moeten ook de kaartjesautomaat weer aan de praat krijgen en het iridiumanker repareren.\"/faceDirection farmer 0/pause 400/speak Willy \"Als ik de juiste materialen in handen kreeg en het ouwe meisje kon repareren... dan zou ik je naar de Vareneilanden kunnen brengen.\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Vulkanische eilanden vol vreemde papegaaien, zeggen ze...\"/pause 400/quickQuestion #Ik wil wel helpen#Nee, ik sla over...(break)emote Willy 32\\speak Willy \"Aye... Dat dacht ik al, ${jongen^juffie}$.$h\"\\speak Willy \"Ik laat deze deur voor je open... je kunt de materialen brengen wanneer je maar wilt.\"(break)emote Willy 28\\speak Willy \"Goed dan, zoals je wilt...$s#$b#Als je van gedachten verandert, kun je altijd terugkomen om te helpen. Ik laat deze deur hoe dan ook open.\"/pause 2000/end"
+      }
+    }
+  ]
+}

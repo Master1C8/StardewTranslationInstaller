@@ -1,0 +1,317 @@
+{
+  "locale": "ro",
+  "target": "Characters/Dialogue/Abigail",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "The second half of Abigail dialogue was translated directly from English. Seasonal dialogue, events, relationship context, conditional branches, response IDs, placeholders, dialogue controls, and glossary terms were reviewed in context.",
+  "entries": {
+    "Event_Grave4": {
+      "source": "Really? That's surprising.$8#$b#I've lived in the valley my whole life, but I've never really done anything memorable. I want to go on an adventure!$8",
+      "translation": "Serios? Este surprinzător.$8#$b#Am trăit în vale toată viața, dar nu am făcut niciodată ceva cu adevărat memorabil. Vreau să plec într-o aventură!$8"
+    },
+    "Event_Rain_1": {
+      "source": "I see...$8",
+      "translation": "Înțeleg...$8"
+    },
+    "Event_Rain_2": {
+      "source": "Yea... I guess you would be one to appreciate this somber ambience.",
+      "translation": "Da... Cred că tu ai aprecia această atmosferă sumbră."
+    },
+    "Event_Rain_3": {
+      "source": "...That's true.$8",
+      "translation": "...Așa este.$8"
+    },
+    "Event_Tragic_1": {
+      "source": "Yeah... I guess my own life is okay...$s",
+      "translation": "Da... Cred că viața mea este în regulă...$s"
+    },
+    "Event_Tragic_2": {
+      "source": "...!$h",
+      "translation": "...!$h",
+      "preservationReason": "The entry contains only punctuation and a dialogue emotion control, so its player-visible form is language-neutral."
+    },
+    "Event_Tragic_3": {
+      "source": "I would feel better if I could believe that...#$b#But I don't.$s",
+      "translation": "M-aș simți mai bine dacă aș putea să cred asta...#$b#Dar nu pot.$s"
+    },
+    "Event_Cave2_1": {
+      "source": "@...$8",
+      "translation": "@...$8",
+      "preservationReason": "The entry contains only the player-name placeholder, punctuation, and a dialogue emotion control, so its player-visible form is language-neutral."
+    },
+    "Event_Cave2_2": {
+      "source": "@... I'm alright.$8",
+      "translation": "@... Sunt bine.$8"
+    },
+    "Event_Cave_1": {
+      "source": "...okay.$8",
+      "translation": "...bine.$8"
+    },
+    "Event_Cave_2": {
+      "source": "I guess when you have something to lose, it's normal to be afraid...$l",
+      "translation": "Cred că, atunci când ai ceva de pierdut, este firesc să-ți fie frică...$l"
+    },
+    "Event_Cave_3": {
+      "source": "...Um, okay. Sorry.$9",
+      "translation": "...Ăă, bine. Îmi pare rău.$9"
+    },
+    "summer_1": {
+      "source": "Summer's here. It's not really my favorite season.#$e#The air is so muggy I feel like I'm floating in soup.",
+      "translation": "A venit Vara. Nu este chiar anotimpul meu preferat.#$e#Aerul este atât de înăbușitor, încât parcă aș pluti în supă."
+    },
+    "summer_Mon": {
+      "source": "My pet guinea pig, David, just hates this hot weather. He's fussy.",
+      "translation": "Porcușorul meu de Guineea, David, urăște vremea asta călduroasă. Este tare mofturos."
+    },
+    "summer_Tue": {
+      "source": "The air is so thick with honey and nectar all summer. I almost feel dizzy.$u",
+      "translation": "Toată Vara, aerul este încărcat de mireasma mierii și a nectarului. Aproape că mă amețește.$u"
+    },
+    "summer_Wed": {
+      "source": "Have you decorated your house at all? That's what I'd be doing if I had a house.",
+      "translation": "Ți-ai decorat cumva casa? Asta aș face eu dacă aș avea o casă."
+    },
+    "summer_6": {
+      "source": "I went to the beach last night, after dark... Sometimes you can see strange lights bobbing over the sea.#$e#Or maybe that was just a dream I had... It doesn't feel real anymore.",
+      "translation": "Noaptea trecută am mers la plajă, după lăsarea întunericului... Uneori poți vedea lumini ciudate plutind deasupra mării.#$e#Sau poate a fost doar un vis... Nu mai pare real."
+    },
+    "summer_Thu": {
+      "source": "If I knew how to use a sword I would be exploring those caves by the mountain lake right now. It's probably nice and cool in there.",
+      "translation": "Dacă aș ști să folosesc o sabie, chiar acum aș explora peșterile de lângă lacul din munți. Probabil că acolo este plăcut și răcoare."
+    },
+    "summer_Thu4": {
+      "source": "Ew, I hope I don't get a tan this summer.$s",
+      "translation": "Iu, sper să nu mă bronzez Vara aceasta.$s"
+    },
+    "summer_Fri": {
+      "source": "I kind of wish I had a cat. Unfortunately, my Dad is allergic to pretty much everything.",
+      "translation": "Mi-aș dori să am o pisică. Din nefericire, tata este alergic la aproape orice."
+    },
+    "summer_Sat": {
+      "source": "I'm looking forward to fall... the cool mountain breeze, the swirling red petals, the smell of mushrooms... *sigh*",
+      "translation": "Abia aștept Toamna... briza răcoroasă de munte, petalele roșii care se rotesc în aer, mirosul ciupercilor... *oftează*"
+    },
+    "summer_Sun": {
+      "source": "Do you ever get an urge to go exploring, @?#$q 25/26 summer_Sun_old#Okay... pretend you just won a free vacation. Where would you go?#$r 25 0 Sun_25#The beach#$r 26 30 Sun_26#In a dark cave#$r 26 30 Sun_26#The old, gnarled forest#$r 25 0 Sun_25#Joja Mega-Mall",
+      "translation": "Simți vreodată nevoia să pleci în explorare, @?#$q 25/26 summer_Sun_old#Bine... imaginează-ți că tocmai ai câștigat o vacanță gratuită. Unde ai merge?#$r 25 0 Sun_25#La plajă#$r 26 30 Sun_26#Într-o peșteră întunecată#$r 26 30 Sun_26#În pădurea bătrână și noduroasă#$r 25 0 Sun_25#La Mega-Mall Joja"
+    },
+    "summer_Sun_old": {
+      "source": "$p 25#I do... but you probably wouldn't like the places I'm thinking about...|Maybe we'll be neighbors someday. I think we both have similar, weird tastes.$h",
+      "translation": "$p 25#Eu simt... dar probabil că nu ți-ar plăcea locurile la care mă gândesc...|Poate vom fi vecini într-o zi. Cred că avem aceleași gusturi ciudate.$h"
+    },
+    "Sun_25": {
+      "source": "Huh. I think that would get old fast.",
+      "translation": "Hm. Cred că m-aș plictisi repede de acel loc."
+    },
+    "Sun_26": {
+      "source": "Yea! That sounds wonderful.$h",
+      "translation": "Da! Sună minunat.$h"
+    },
+    "summer_Wed2": {
+      "source": "I would love to live in an old farmhouse like you.#$b#The creak of a floorboard, the slow plumes of dust whispering through the rafters... There's something special about an old building, isn't there?",
+      "translation": "Mi-ar plăcea să locuiesc într-o fermă veche ca a ta.#$b#Scârțâitul unei scânduri, fuioarele lente de praf care șoptesc printre căpriori... O clădire veche are ceva aparte, nu-i așa?"
+    },
+    "summer_Tue4": {
+      "source": "You're an interesting ${guy^lady}$, @. I'm glad you moved here.$h",
+      "translation": "Ești ${un tip interesant^o fată interesantă}$, @. Mă bucur că te-ai mutat aici.$h"
+    },
+    "summer_Sat6": {
+      "source": "I'm actually enjoying myself this summer.$h#$e#It's funny how quickly one's outlook can change.",
+      "translation": "Chiar mă distrez Vara aceasta.$h#$e#Este amuzant cât de repede se poate schimba perspectiva cuiva."
+    },
+    "summer_Mon8": {
+      "source": "I used to think Pelican Town was kinda drab, but lately I'm starting to love some things about it.$h",
+      "translation": "Înainte credeam că Orașul Pelican este cam mohorât, dar în ultima vreme încep să îndrăgesc unele lucruri de aici.$h"
+    },
+    "summer_Thu10": {
+      "source": "Wow, you look nice today.#$e#I mean, that summer air is really good for the complexion, isn't it?... heh...$l",
+      "translation": "Uau, arăți bine astăzi.#$e#Adică, aerul de Vară face foarte bine tenului, nu-i așa?... heh...$l"
+    },
+    "summer_Fri10": {
+      "source": "Do you ever get lonely on your farm?",
+      "translation": "Simți vreodată singurătatea la fermă?"
+    },
+    "fall_1": {
+      "source": "Ah... Fall's here!$h#$e#I was getting so tired of summer.",
+      "translation": "Ah... A venit Toamna!$h#$e#Mă săturasem de Vară."
+    },
+    "fall_Mon": {
+      "source": "I need to stretch my legs and get some fresh air today.",
+      "translation": "Astăzi trebuie să-mi dezmorțesc picioarele și să iau puțin aer curat."
+    },
+    "fall_Tue": {
+      "source": "$d joja#I try to help out in the shop on most days. Business has been pretty bad since the Joja Mart opened, though.|Ever since Joja Mart shut down we've been doing great at the shop!$h",
+      "translation": "$d joja#Încerc să ajut la magazin în majoritatea zilelor. Totuși, afacerile au mers destul de prost de când s-a deschis JojaMart.|De când s-a închis JojaMart, magazinul nostru merge grozav!$h"
+    },
+    "fall_Wed": {
+      "source": "I can't wait to see some pumpkins this year.$h#$e#The spirit's eve festival happens at the end of the season. It's pretty low-key compared to what you'd see in Zuzu City, but for a small town like this it's a lot of fun.",
+      "translation": "Abia aștept să văd dovlecii de anul acesta.$h#$e#Ajunul Spiritelor are loc la sfârșitul anotimpului. Este destul de modest în comparație cu ce ai vedea în Orașul Zuzu, dar pentru un orășel ca acesta este foarte distractiv."
+    },
+    "fall_Thu": {
+      "source": "#$1 AbigailHAND#Last night I dreamt that my left hand had turned into a gigantic %noun. Does that mean anything?#$e#%Abigail doesn't seem to be interested in talking right now.",
+      "translation": "#$1 AbigailHAND#Noaptea trecută am visat că mâna mea stângă se transformase într-un %noun uriaș. Oare înseamnă ceva?#$e#%Abigail nu pare să aibă chef de vorbă acum."
+    },
+    "fall_Sat": {
+      "source": "$d cc#I can't believe you fixed up that old Community Center all by yourself. I'm really impressed.|Do you have any scarecrows on your farm?",
+      "translation": "$d cc#Nu-mi vine să cred că ai reparat fără ajutor vechiul Centru comunitar. Sunt foarte impresionată.|Ai vreo sperietoare de ciori la fermă?"
+    },
+    "fall_Sun": {
+      "source": "Hmm... what should I do tonight?#$q 27/28 fall_Sun_old#I was thinking about dyeing my hair again... what do you think?#$r 27 10 Sun_27#Dye it black.#$r 27 10 Sun_27#Why not blonde?#$r 27 20 Sun_WildColor#How about bubblegum pink?#$r 28 0 Sun_28#I like your hair just the way it is!",
+      "translation": "Hmm... ce să fac în seara aceasta?#$q 27/28 fall_Sun_old#Mă gândeam să-mi vopsesc din nou părul... ce părere ai?#$r 27 10 Sun_27#Vopsește-l negru.#$r 27 10 Sun_27#De ce nu blond?#$r 27 20 Sun_WildColor#Ce zici de un roz ca guma de mestecat?#$r 28 0 Sun_28#Îmi place părul tău așa cum este!"
+    },
+    "fall_Sun_old": {
+      "source": "$p 27#I was going to dye my hair but then I decided against it.|Yes? What is it?",
+      "translation": "$p 27#Aveam de gând să-mi vopsesc părul, dar apoi m-am răzgândit.|Da? Ce este?"
+    },
+    "Sun_27": {
+      "source": "I guess that's a pretty safe choice, huh?#$e#I'll think about it.",
+      "translation": "Cred că este o alegere destul de sigură, nu?#$e#Mă voi gândi."
+    },
+    "Sun_28": {
+      "source": "Of course that's what you'd say.$u",
+      "translation": "Bineînțeles că asta ai spune.$u"
+    },
+    "Sun_WildColor": {
+      "source": "You're always good for a laugh.$h",
+      "translation": "Mă faci mereu să râd.$h"
+    },
+    "fall_Wed2": {
+      "source": "Are you growing pumpkins on your farm this year?#$e#Save one for me!$h",
+      "translation": "Cultivi dovleci la fermă anul acesta?#$e#Păstrează unul pentru mine!$h"
+    },
+    "fall_Tue4": {
+      "source": "I may fight with my parents a lot, but I know they're just looking out for me. They're doing what they think is best.$s#$b#I dunno why I'm saying this to you. Don't tell anyone.$8",
+      "translation": "Mă cert mult cu părinții mei, dar știu că vor doar să-mi fie bine. Fac ceea ce cred ei că este mai bine.$s#$b#Nu știu de ce îți spun asta. Să nu spui nimănui.$8"
+    },
+    "fall_Sat6": {
+      "source": "Hi.$h#$e#Your hair looks cool today... did you do something different?",
+      "translation": "Salut.$h#$e#Părul tău arată grozav astăzi... ai făcut ceva diferit?"
+    },
+    "fall_Mon8": {
+      "source": "You know, I could actually see myself becoming a farmer some day...#$e#But how would that ever happen? *chuckle*$l",
+      "translation": "Știi, chiar m-aș putea vedea devenind fermieră într-o zi...#$e#Dar cum s-ar putea întâmpla asta vreodată? *chicotește*$l"
+    },
+    "fall_Thu10": {
+      "source": "I had an interesting dream last night, with you in it.#$e#It was a good dream.$h",
+      "translation": "Noaptea trecută am avut un vis interesant în care apăreai și tu.#$e#A fost un vis frumos.$h"
+    },
+    "fall_Fri6": {
+      "source": "I wish the season lasted a little longer.$8#$e#When the wind really picks up, I almost feel like a kid again.",
+      "translation": "Mi-aș dori ca anotimpul să dureze puțin mai mult.$8#$e#Când vântul se întețește, aproape că mă simt din nou copil."
+    },
+    "fall_Fri10": {
+      "source": "I usually feel lonely this time of year, but not anymore.$l#$e#@, what are your plans for the future?",
+      "translation": "De obicei mă simt singură în perioada aceasta a anului, dar nu și acum.$l#$e#@, ce planuri ai pentru viitor?"
+    },
+    "winter_1": {
+      "source": "Well, fall is over...$s#$e#But I like winter, too!$h",
+      "translation": "Ei bine, Toamna s-a încheiat...$s#$e#Dar îmi place și Iarna!$h"
+    },
+    "winter_Mon": {
+      "source": "It's just too cold to go outside much.#$e#But I do enjoy building a snowgoon.$h",
+      "translation": "Este pur și simplu prea frig ca să ies prea mult afară.#$e#Dar îmi place să construiesc un monstru de zăpadă.$h"
+    },
+    "winter_Tue": {
+      "source": "Doesn't a steaming hot cup of cocoa sound good right now?",
+      "translation": "Nu ți-ar prinde bine chiar acum o cană de cacao fierbinte și aburindă?"
+    },
+    "winter_Wed": {
+      "source": "Hi. Is it boring to be a farmer during the winter?",
+      "translation": "Salut. Este plictisitor să fii fermier în timpul Iernii?"
+    },
+    "spring_12": {
+      "source": "I'm definitely going to enter the egg hunt tomorrow. Are you?",
+      "translation": "Cu siguranță voi participa mâine la vânătoarea de ouă. Tu participi?"
+    },
+    "spring_23": {
+      "source": "Well, tomorrow is the flower dance. Dancing is alright, but they make me wear this stupid white dress...$s",
+      "translation": "Ei bine, mâine este Dansul Florilor. Dansul este în regulă, dar mă pun să port rochia aceea albă și ridicolă...$s"
+    },
+    "winter_7": {
+      "source": "I'm looking forward to making a snow man tomorrow.",
+      "translation": "Abia aștept să fac mâine un om de zăpadă."
+    },
+    "fall_26": {
+      "source": "Will I see you tomorrow at the Spirit's Eve festival? Look for me in the haunted maze.$h",
+      "translation": "Ne vedem mâine la festivalul Ajunul Spiritelor? Caută-mă în labirintul bântuit.$h"
+    },
+    "summer_10": {
+      "source": "Everyone's excited for the Luau tomorrow. Maybe a little nervous, too, considering the Governor will be here.",
+      "translation": "Toată lumea este entuziasmată de Luau de mâine. Poate și puțin emoționată, având în vedere că va veni Guvernatorul."
+    },
+    "summer_27": {
+      "source": "You can't miss tomorrow's festival. It's one of the most beautiful wonders of the valley.",
+      "translation": "Nu poți rata festivalul de mâine. Este una dintre cele mai frumoase minuni ale văii."
+    },
+    "winter_24": {
+      "source": "I'm going to eat so much cranberry sauce tomorrow.$h",
+      "translation": "Mâine voi mânca atât de mult sos de merișoare.$h"
+    },
+    "winter_Thu": {
+      "source": "Another year is almost over.#$e#It goes by so fast, doesn't it?$s",
+      "translation": "Încă un an este pe cale să se încheie.#$e#Trece atât de repede, nu-i așa?$s"
+    },
+    "winter_Fri": {
+      "source": "One thing I've learned living here... everyone stares at you if you look different.",
+      "translation": "Un lucru pe care l-am învățat trăind aici... toată lumea se uită lung la tine dacă arăți diferit."
+    },
+    "winter_Sat": {
+      "source": "It's the weekend!#$e#That means I can play twice as many video games.$h#$e#Bye.",
+      "translation": "Este weekend!#$e#Asta înseamnă că pot juca de două ori mai multe jocuri video.$h#$e#Pa."
+    },
+    "winter_Sun": {
+      "source": "Oh, hello.#$q 29/30 winter_Sun_old#I made these two drawings. What do you think?#$r 29 20 Sun_29#I like the jungle island and the tiger.#$r 30 5 Sun_30#I like the orc with the battleaxe.#$r 29 -50 Sun_Bad#I don't like either of them.",
+      "translation": "Oh, salut.#$q 29/30 winter_Sun_old#Am făcut aceste două desene. Ce părere ai?#$r 29 20 Sun_29#Îmi plac insula cu junglă și tigrul.#$r 30 5 Sun_30#Îmi place orcul cu securea de luptă.#$r 29 -50 Sun_Bad#Nu-mi place niciunul."
+    },
+    "winter_Sun_old": {
+      "source": "$p 29#Remember those drawings I showed you a while ago? I accidentally threw them away.$s|Remember that drawing I showed you with the orc? I entered it into an online contest and won 50g!$h",
+      "translation": "$p 29#Îți amintești desenele pe care ți le-am arătat acum ceva timp? Le-am aruncat din greșeală.$s|Îți amintești desenul cu orcul pe care ți l-am arătat? L-am înscris într-un concurs online și am câștigat 50g!$h"
+    },
+    "Sun_29": {
+      "source": "Oh yeah? I guess that makes sense.",
+      "translation": "Da? Cred că are logică."
+    },
+    "Sun_30": {
+      "source": "I'm glad. It's embarrassing to share your art with others. But I think you and I are on the same page.",
+      "translation": "Mă bucur. Este stânjenitor să-ți arăți arta altora. Dar cred că noi doi gândim la fel."
+    },
+    "Sun_Bad": {
+      "source": "Rude! Why would you hurt my feelings like that? You're so insensitive!$s",
+      "translation": "Ce nepoliticos! De ce mi-ai răni sentimentele așa? Nu ai deloc pic de sensibilitate!$s"
+    },
+    "winter_Wed2": {
+      "source": "Hi. If you're ever bored, you can always hang out in my room.#$e#As long as I'm not changing, of course!",
+      "translation": "Salut. Dacă te plictisești vreodată, poți oricând să vii în camera mea.#$e#Atât timp cât nu mă schimb, bineînțeles!"
+    },
+    "winter_Tue4": {
+      "source": "It's so cold, I wish we had a hot cup of cocoa to share.$h",
+      "translation": "Este atât de frig! Mi-aș dori să avem o cană de cacao fierbinte de împărțit.$h"
+    },
+    "winter_Sat6": {
+      "source": "I've been daydreaming a lot lately...#$e#Oh! You want to know what it's about? Well...$u#$b#...It's a secret.$h",
+      "translation": "În ultima vreme visez mult cu ochii deschiși...#$e#Oh! Vrei să știi la ce? Ei bine...$u#$b#...Este un secret.$h"
+    },
+    "winter_Thu10": {
+      "source": "Another year is almost over...#$b#But this was a really good year, don't you think?$h",
+      "translation": "Încă un an este pe cale să se încheie...#$b#Dar a fost un an foarte bun, nu crezi?$h"
+    },
+    "winter_Wed6": {
+      "source": "It must be nice not having crops to worry about this time of year.#$e#And that means you can hang out with me more often!$h",
+      "translation": "Trebuie să fie plăcut să nu ai grija culturilor în perioada aceasta a anului.#$e#Și asta înseamnă că poți petrece mai mult timp cu mine!$h"
+    },
+    "winter_Fri10": {
+      "source": "@, there's something I want to tell you...#$e#It's just... um... well... your boots! They, uh...look really clean... *gulp*#$e#That's all... *sigh*$s",
+      "translation": "@, vreau să-ți spun ceva...#$e#Doar că... ăă... ei bine... cizmele tale! Ăă... arată foarte curate... *înghite în sec*#$e#Asta-i tot... *oftează*$s"
+    },
+    "Wed4": {
+      "source": "I can't trust a person who doesn't like animals...#$e#Oh, don't worry! I know you're an animal lover!$h",
+      "translation": "Nu pot avea încredere într-o persoană căreia nu-i plac animalele...#$e#Oh, nu-ți face griji! Știu că iubești animalele!$h"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0239-event-sebastian-room-015-016",
+  "target": "Data/Events/SebastianRoom",
+  "status": "reviewed",
+  "sourceHashes": {
+    "wizardDoor": "b60a18472d05f43c7c969d74dc95565fc05e33ab8c412e794162ac7000c78bd5",
+    "Necromancer": "90a6b900c60aeb0fa7af82625341b05113544dcc0815084a86c5ad5dfd3aa616"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "wizardDoor": "pause 500/updateMinigame 8/resetVariable/playMusic Lava_Ambient/pause 1600/message \"Стигаш до врата в края на коридора.\"/pause 800/message \"Дойде време да се изправите срещу Лорда на ужаса Зарт.\"/pause 500/playSound openChest/pause 1000/switchEvent Necromancer",
+    "Necromancer": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"Зарт: Натрапници? Как смеете да нахлувате в личните ми покои!\"/pause 800/message \"А, значи сте дошли за Жезъла на Соларион...\"/pause 800/message \"Хехехе... глупаци. Ще бъдете чудесно попълнение към скелетната ми армия!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"Лордът на ужаса Зарт изстрелва сенчест лъч!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"Успяваш да избегнеш заклинанието, но спътниците ти са тежко ранени!\"/pause 500/question fork0 \"Какво правиш?#Излекувай Воина (Сам).#Излекувай Магьосника (Себастиан).\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"Благодаря, @.$7\"/speak Sam \"...$s\"/pause 1000/playMusic none/message \"Себастиан използва „Чист лъч“... Лъч бяла светлина удря Зарт право в лицето. Лордът на ужаса изпищява и се разпада на прах.\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Вземаш Жезъла на Соларион и го вдигаш високо. Редът в света е възстановен.\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 2,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twelve quoted tabletop-roleplay confrontation, combat-choice and victory fields in Sebastian Room source ordinals 15–16.",
+      "Preserved branch conditions, role-choice flags, mail flags, minigame updates, scene commands and every byte outside quoted player-facing text.",
+      "Kept the established Solarion, Dreadlord Xarth and character-role terminology consistent across narration, dialogue and choice text."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "4f264731905da669fdd9274db1518b489db550e4e22938579e4eefb94baa22f4"
+  }
+}

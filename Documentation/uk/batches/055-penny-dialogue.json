@@ -1,0 +1,747 @@
+{
+  "id": "055-penny-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Penny dialogue entry. Shy, compassionate, bookish and increasingly warm voice, teaching, family hardship, gifts, relationships, seasonal dialogue, player gender handling, canonical glossary terms, structured dialogue choices and response identifiers, conditional branches, event forks, gender variants, placeholders, emotes, and control tokens were checked against English. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "6db0016a8a3900fb7a10d4e843fd64d6993a6d40c3f248c5878aae34f91134d6",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 3
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Introduction",
+      "english": "Oh... Hello! I'm Penny...",
+      "translation": "О... Привіт! Я Пенні...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptBirthdayGift_Loved",
+      "english": "Oh! Is this for me? For... for my birthday?$3#$b#*sniff*... Sorry.$s#$b#I'm... just not used to such kindness...#$b#... I love it, though. It's perfect. Thank you so much.",
+      "translation": "О! Це мені? На... на день народження?$3#$b#*схлип*... Вибач.$s#$b#Я... просто не звикла до такої доброти...#$b#...Але мені дуже подобається. Просто ідеально. Величезне спасибі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptBirthdayGift_Positive",
+      "english": "For my birthday? That's so nice of you! It's a great gift.$h",
+      "translation": "На день народження? Це так мило з твого боку! Чудовий подарунок.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "For my birthday? That's so kind of you! Let me unwrap it...$h#$b#...What!?$12#$b#...Oh, I see. It's a cruel joke.$s#$b#Silly me, I should've known better...$s",
+      "translation": "На день народження? Це так люб’язно! Зараз розгорну...$h#$b#...Що!?$12#$b#...А, зрозуміло. Це жорстокий жарт.$s#$b#От дурненька, треба було здогадатися...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "FlowerDance_Accept",
+      "english": "Oh... with me? Yes, of course!$h#$b#...Will you take the lead, though? I'm nervous...$12",
+      "translation": "О... Зі мною? Так, звісно!$h#$b#...Але поведеш ти, добре? Я хвилююся...$12",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_35_memory_oneweek",
+      "english": "$y '@, what do you think... should a person be judged by their actions, or by their intentions?_Actions_Hmm... but don't we all make mistakes sometimes?$s_Intentions_Mmhmm... But what if you intend to do good, yet your actions cause harm?$s_Both_That's true... I guess it doesn't have to be one or the other. It might depend on the situation, too.'#$b#I was just wondering what you thought...",
+      "translation": "$y '@, як ти гадаєш... людину треба судити за вчинками чи за намірами?_Actions_Хм-м... Але хіба всі ми часом не помиляємося?$s_Intentions_Угу... Але що, як наміри добрі, а вчинки завдають шкоди?$s_Both_Це правда... Мабуть, не обов’язково обирати щось одне. Усе може залежати й від ситуації.'#$b#Мені просто було цікаво, що ти думаєш...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Mmm... it's so fragrant. I'm going to love this.",
+      "translation": "М-м-м... Який запашний. Мені точно сподобається.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptGift_Positive_ancient_item",
+      "english": "Wow... this looks really old. I'll have to ask Gunther about it. Thank you!$h",
+      "translation": "Ого... Має дуже старовинний вигляд. Треба запитати про це Ґантера. Дякую!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptGift_Positive_book_item",
+      "english": "Thank you! I'm almost finished with a book right now, but I'll read this one next!$h",
+      "translation": "Дякую! Я вже майже дочитала одну книжку, а наступною прочитаю цю!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_34_memory_oneweek",
+      "english": "I've been teaching Jas and Vincent about Dwarvish Archaeology...#$b#Jas is curious about the origins of the Dwarves... but Vincent is mainly interested in dwarvish weapons!$h",
+      "translation": "Я розповідаю Джас і Вінсенту про гномську археологію...#$b#Джас цікавиться походженням гномів... А Вінсента найбільше захоплює гномська зброя!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_34_memory_twoweeks",
+      "english": "Vincent has been asking me about slugs for weeks... so I prepared a whole lesson on them. They're actually pretty interesting!#$e#Whenever I see a banana slug, I feel like it's a sign of good luck.",
+      "translation": "Вінсент уже кілька тижнів розпитує мене про слимаків... Тож я підготувала про них цілий урок. Насправді вони доволі цікаві!#$e#Коли я бачу бананового слимака, то сприймаю це як знак удачі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_34_memory_fourweeks",
+      "english": "I'm teaching the kids about art history this week.#$b#It can be a little dry for the kids, so I'm having them learn by drawing a picture in the predominant style of each century.#$b#It's really been a hit!$h",
+      "translation": "Цього тижня я навчаю дітей історії мистецтва.#$b#Для них це може бути трохи сухо, тож вони вчаться, малюючи картину в панівному стилі кожного століття.#$b#Їм страшенно сподобалося!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_36_memory_oneweek",
+      "english": "Oh, pardon this bandage on my hand...$s#$b#I went over to Maru's the other day and she showed me a new gadget of hers. The darn thing charred my palm!$s",
+      "translation": "О, пробач за цю пов’язку на руці...$s#$b#Нещодавно я заходила до Мару, і вона показала свій новий пристрій. Клята штука обпекла мені долоню!$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_35_memory_twoweeks",
+      "english": "I've been reading a book about the ocean. It accounts for most of the area of the world, and yet we hardly know anything about it!",
+      "translation": "Я читаю книжку про океан. Він займає більшу частину поверхні світу, але ми майже нічого про нього не знаємо!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny",
+      "english": "I... I don't know what to say. I'm so happy...$l",
+      "translation": "Я... Я не знаю, що сказати. Я така щаслива...$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny_memory_oneday",
+      "english": "Suddenly, the world looks a lot more beautiful, don't you think?",
+      "translation": "Раптом світ став набагато прекраснішим, тобі не здається?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny_memory_oneweek",
+      "english": "I'm trying to finish this book, but I keep getting distracted thinking of you.$l",
+      "translation": "Я намагаюся дочитати цю книжку, але постійно відволікаюся на думки про тебе.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny_memory_twoweeks",
+      "english": "I never thought my life would be more exciting than a novel, but it sure feels that way right now!$h",
+      "translation": "Ніколи не думала, що моє життя стане захопливішим за роман, але зараз саме так і здається!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "married_Maru",
+      "english": "That was a beautiful wedding. I know Maru will make you very happy, she's a great person.",
+      "translation": "Це було прекрасне весілля. Я знаю, що з Мару в тебе буде дуже щасливе життя: вона чудова людина.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Maru_memory_oneday",
+      "english": "Hi, @. Maru told me the news... I'm happy for you two!$h",
+      "translation": "Привіт, @. Мару розповіла мені новину... Я така рада за вас обох!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Entering",
+      "english": "This island is so beautiful!",
+      "translation": "Цей острів такий прекрасний!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Leaving",
+      "english": "I had a great time.$h",
+      "translation": "Я чудово провела час.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "married_Sam",
+      "english": "Congratulations, @. Sam's a lot of fun, I'm sure you'll never have a dull moment!",
+      "translation": "Вітаю, @. Із Семом завжди весело, тож нудьгувати тобі точно не доведеться!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Shore",
+      "english": "I'm a little embarrassed wearing my bathing suit in public.$s#$b#I hope no one's looking...$s",
+      "translation": "Мені трохи ніяково носити купальник на людях.$s#$b#Сподіваюся, ніхто не дивиться...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Shore_2",
+      "english": "Somehow, the water here looks so different...#$e#I can hardly believe this is the same ocean I've been gazing at my entire life.",
+      "translation": "Чомусь вода тут виглядає зовсім інакше...#$e#Важко повірити, що це той самий океан, на який я дивилася все життя.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Towel",
+      "english": "The wind keeps making me lose my page, but it feels really great on the skin.$h",
+      "translation": "Вітер постійно перегортає сторінку, зате він такий приємний для шкіри.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Towel_2",
+      "english": "I'm reading a book about a sailor who washes up on a deserted island.#$b#I wonder what I would do in that sort of a situation?",
+      "translation": "Я читаю книжку про моряка, якого викинуло на безлюдний острів.#$b#Цікаво, що б я робила в такій ситуації?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Towel_2_Married",
+      "english": "Hey honey, do you mind standing a little to the left?#$b#Thanks, the sun was making it a little bit hard to read!$h",
+      "translation": "Гей, серденько, можеш стати трохи лівіше?#$b#Дякую, сонце трохи заважало читати!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort",
+      "english": "This sand is so soft and fine. It feels great on my toes!$h",
+      "translation": "Цей пісок такий м’який і дрібний. Пальцям ніг дуже приємно!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon",
+      "english": "Hi... #$e#Oh, did you want something?",
+      "translation": "Привіт... #$e#О, тобі щось потрібно?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "FlowerDance_Accept_Spouse",
+      "english": "I accept!$h#$b#*whisper* Thanks for going through with the formalities, dear.",
+      "translation": "Я згодна!$h#$b#*пошепки* Дякую, що дотримуєшся всіх формальностей, любове.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "FlowerDance_Decline",
+      "english": "Oh... No, thanks.$s",
+      "translation": "О... Ні, дякую.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "breakUp",
+      "english": "...$s#$b#I... I see... *sniff* ... W... We can just be friends, then.$s",
+      "translation": "...$s#$b#Я... Зрозуміло... *схлип* ... Т... Тоді ми можемо просто залишитися друзями.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "pamHouseUpgrade",
+      "english": "What you did for my family is so generous. Thank you!",
+      "translation": "Твоя допомога моїй родині була надзвичайно щедрою. Дякую!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "pamHouseUpgradeAnonymous",
+      "english": "There are some truly wonderful people in the world...",
+      "translation": "У світі є справді чудові люди...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dumped_Girls",
+      "english": "I can't bear to see you...$s",
+      "translation": "Я не можу на тебе дивитися...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "divorced",
+      "english": "...Please, leave me alone.$s",
+      "translation": "...Будь ласка, залиш мене в спокої.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "secondChance_Girls",
+      "english": "You've left a permanent scar on my heart, @. Still... I'm ready to speak to you again.$s",
+      "translation": "Твій учинок назавжди залишив шрам у моєму серці, @. Та все ж... Я готова знову з тобою розмовляти.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon4",
+      "english": "*sigh*... My mother definitely has a problem with going to the saloon too much.$s#$q 7/8 Mon_old#But it's best not to dwell on bad things, right?#$r 7 50 Mon_7#Right. It's best to be positive!#$r 8 10 Mon_8#I think it's good to be realistic.",
+      "translation": "*зітхання*... Моя мама точно надто часто ходить до салуну.$s#$q 7/8 Mon_old#Але ж краще не зациклюватися на поганому, правда?#$r 7 50 Mon_7#Так. Найкраще зберігати позитивний настрій!#$r 8 10 Mon_8#Гадаю, корисно дивитися на речі реалістично.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon_old",
+      "english": "#$p 7#But if I keep trying I think I can get her to change.|I guess it makes sense. There's not much I can do to change it, anyway.",
+      "translation": "#$p 7#Але якщо я й далі старатимуся, то, мабуть, зможу допомогти їй змінитися.|Мабуть, у цьому є сенс. Усе одно я мало що можу змінити.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon_7",
+      "english": "That's how I feel. I'm just going to focus on making the future better.",
+      "translation": "Я теж так вважаю. Просто зосереджуся на тому, щоб зробити майбутнє кращим.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon_8",
+      "english": "Maybe you're right. It's better to cope with reality.$u",
+      "translation": "Може, твоя правда. Краще навчитися приймати реальність.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon8",
+      "english": "I'm eager to move out. It's such a burden to be worrying about Mom all the time.#$e#I want her to be happy, but I can't stay here forever... you know?$s",
+      "translation": "Я дуже хочу переїхати. Постійно хвилюватися за маму — такий тягар.#$e#Я хочу, щоб вона була щаслива, але не можу залишатися тут вічно... Розумієш?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Tue",
+      "english": "I'm tutoring Vincent and Jas today... They're a handful, but it's nice to make a difference in someone's life.",
+      "translation": "Сьогодні я займаюся з Вінсентом і Джас... Із ними нелегко, але приємно змінювати чиєсь життя на краще.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Tue4",
+      "english": "$d bus#Maybe now that my mother has her bus driving job back, I can start saving more money. Things are looking a little brighter.|I'm trying to save money from my tutoring job, but it's hard with my mother out of work.$s",
+      "translation": "$d bus#Може, тепер, коли мама повернулася до роботи водійки автобуса, я зможу відкладати більше грошей. Усе здається трохи світлішим.|Я намагаюся відкладати гроші із заробітку за уроки, але це важко, поки мама без роботи.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Tue10",
+      "english": "Um, @? A farm seems like a good place for children, don't you think?$l#$e#It was just a thought I had.$l",
+      "translation": "Ем, @? Ферма здається хорошим місцем для дітей, тобі не здається?$l#$e#Просто така думка спала мені на гадку.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Wed",
+      "english": "We don't have a school here but I'm doing my best to give Vincent and Jas a proper education.#$e#Every child deserves a chance to be successful.#$e#Jas is very good at math and reading. Vincent is good at... well, he has an active imagination!",
+      "translation": "У нас немає школи, але я з усіх сил намагаюся дати Вінсенту та Джас належну освіту.#$e#Кожна дитина заслуговує на шанс досягти успіху.#$e#Джас дуже добре знається на математиці й читанні. А Вінсент добре... Ну, в нього жвава уява!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Wed2",
+      "english": "You know what? I should take the children on a field trip some time. Maybe to the forest.#$e#A guest speaker would be nice... maybe someone familiar with nature?#$e#Sorry, I'm just thinking out loud.",
+      "translation": "Знаєш що? Треба якось повести дітей на екскурсію. Може, до лісу.#$e#Було б добре запросити доповідача... Можливо, когось, хто знається на природі?#$e#Вибач, я просто думаю вголос.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "GreenRain",
+      "english": "Are you alright? We're all wondering what's going on...$3",
+      "translation": "З тобою все гаразд? Ми всі гадаємо, що відбувається...$3",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "GreenRain_2",
+      "english": "This strange weather is a good opportunity to get the kids interested in nature!$h",
+      "translation": "Ця дивна погода — чудова нагода зацікавити дітей природою!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Wed4",
+      "english": "I've lived in Pelican Town my whole life. Can you believe that?#$e#I guess there's a lot out there I'll never experience.",
+      "translation": "Я все життя прожила в містечку Пелікан. Можеш у це повірити?#$e#Мабуть, у світі є багато такого, чого я ніколи не пізнаю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Thu",
+      "english": "We're very lucky to have a library in such a small town.#$e#When you're lost in a book, it's easy to forget the realities of your life.$u#$e#...Maybe that's why I like reading so much.$s#$e#...Sorry. I got carried away there.",
+      "translation": "Нам дуже пощастило мати бібліотеку в такому маленькому містечку.#$e#Коли губишся в книжці, легко забути про реалії власного життя.$u#$e#...Може, саме тому я так люблю читати.$s#$e#...Вибач. Я трохи захопилася.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Thu6",
+      "english": "I wish I could keep a garden, but our yard is such a mess.$u#$e#Maybe I'll live in a place where I can have a garden someday.#$e#Maybe I'll live on a farm! *giggle*$h",
+      "translation": "Хотіла б я мати сад, але в нашому дворі такий безлад.$u#$e#Може, одного дня я житиму там, де зможу завести сад.#$e#Може, я житиму на фермі! *хихоче*$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Fri",
+      "english": "If you dig in the dirt you can find some interesting things.#$e#One time I found a really old piece of pottery. I brought it to Gunther and he said it was over a thousand years old.",
+      "translation": "Якщо копатися в землі, можна знайти цікаві речі.#$e#Якось я знайшла дуже старий уламок кераміки. Віднесла його Ґантеру, а він сказав, що йому понад тисячу років.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Fri8",
+      "english": "I shouldn't complain so much about chores... some people in the world are really struggling, and here I am complaining about doing dishes...$s",
+      "translation": "Не варто так скаржитися на хатні справи... Деякі люди у світі справді бідують, а я тут нарікаю на миття посуду...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Fri4",
+      "english": "Dishes, dishes, dishes. Ugh... If my mother wasn't always nursing a headache from her late nights at the saloon, maybe she could help around the house a little.$s",
+      "translation": "Посуд, посуд, посуд. Ох... Якби мама не лікувала постійно головний біль після пізніх вечорів у салуні, то, може, трохи допомагала б удома.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sat",
+      "english": "This is such a small town. You can't avoid meeting everyone.#$e#I wonder what it's like to live in the city?",
+      "translation": "Це таке маленьке містечко. Тут неможливо не зустрічатися з усіма.#$e#Цікаво, як це — жити в місті?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sat2",
+      "english": "$d Joja#Things changed a lot after the JojaMart went up. It's been really bad for Pierre's shop. Mom loves JojaMart, though. The prices are cheap, so she can afford a lot more there than she ever could at Pierre's.|Mom's been complaining ever since JojaMart closed down. I think it's good for her, though. Maybe she'll drink less Joja Cola now.",
+      "translation": "$d Joja#Після появи JojaMart багато що змінилося. Для крамниці П’єра це було дуже погано. Але мама любить JojaMart. Там низькі ціни, тому вона може дозволити собі набагато більше, ніж будь-коли могла в П’єра.|Мама скаржиться відколи закрився JojaMart. Але гадаю, для неї це корисно. Може, тепер вона питиме менше Joja Cola.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sun",
+      "english": "Hello. Ummm...$u#$b#The weather's interesting today, don't you think?#$e#Sorry...$u",
+      "translation": "Привіт. Ем-м-м...$u#$b#Сьогодні цікава погода, правда?#$e#Вибач...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sun4",
+      "english": "I've been trying to keep our place clean, but it always gets messy again.$s#$e#It's hard to run a household all by yourself.$u",
+      "translation": "Я намагаюся підтримувати чистоту в нашому домі, але там постійно знову виникає безлад.$s#$e#Самій вести господарство важко.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids1",
+      "english": "Oh no?$l#$b#Well, I guess that makes sense... you're busy with other things right now.",
+      "translation": "Ой, ні?$l#$b#Що ж, мабуть, це зрозуміло... Зараз у тебе багато інших справ.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids2",
+      "english": "... Me too. I'm glad you feel that way.$7",
+      "translation": "...Я теж. Рада, що ти так вважаєш.$7",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids3",
+      "english": "Yes... the urge to care for something innocent and helpless. It makes sense that we'd feel that.",
+      "translation": "Так... Бажання піклуватися про щось невинне й безпорадне. Цілком природно, що ми це відчуваємо.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids4",
+      "english": "Oh, really?$s#$b# I think you'd make a good parent.$7",
+      "translation": "О, справді?$s#$b#Гадаю, ти чудово впораєшся з батьківством.$7",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids5",
+      "english": "hmm...$s#$b#If everyone thought like that, humans would die out.$s",
+      "translation": "Хм-м...$s#$b#Якби всі так думали, людство вимерло б.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids6",
+      "english": "Oh...$s#$b#That's kind of sad... but I guess I can understand your point.$s",
+      "translation": "О...$s#$b#Це трохи сумно... Але, мабуть, я розумію твою думку.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_yes",
+      "english": "Great!$h#$b#Let me just call the children over.",
+      "translation": "Чудово!$h#$b#Я лише покличу дітей.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_no",
+      "english": "Really?... Uh... Well, alright. I guess I'll see you later then.%fork$s",
+      "translation": "Справді?.. Е-е... Що ж, гаразд. Тоді, мабуть, побачимося пізніше.%fork$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_mail1",
+      "english": "Thank you...$l#$b#I just wish George wasn't so upset... I was only trying to help.$s",
+      "translation": "Дякую...$l#$b#Шкода лише, що Джордж так засмутився... Я просто хотіла допомогти.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_mail2",
+      "english": "Oh... I guess you're right.$l#$b#I'm sorry, Mr. Mullner. It was rude, what I did.$s",
+      "translation": "О... Мабуть, твоя правда.$l#$b#Пробачте, пане Маллнере. Мій учинок був грубим.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_mail3",
+      "english": "I see.",
+      "translation": "Зрозуміло.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old1",
+      "english": "I guess you're right... why stress out about something you can't change?$u",
+      "translation": "Мабуть, твоя правда... Навіщо хвилюватися через те, чого не можеш змінити?$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old2",
+      "english": "You're right, we shouldn't ignore the reality of aging.$u#$b#I guess the sooner we come to terms with our mortality, the more time we can spend really living in the here-and-now.$u",
+      "translation": "Твоя правда, не варто заплющувати очі на старіння.$u#$b#Гадаю, що раніше ми приймемо власну смертність, то більше часу зможемо присвятити справжньому життю тут і тепер.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old3",
+      "english": "That's nice of you to say... I totally agree with you.#$b#We should treat our elders with the same respect we hope to receive ourselves some day.",
+      "translation": "Дуже мило з твого боку... Я цілком згодна.#$b#До старших треба ставитися з тією самою повагою, яку ми самі сподіваємося колись отримати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old4",
+      "english": "That's a horrible thing to say. Life is a precious thing to waste like that!$a",
+      "translation": "Жахливо таке казати. Життя надто дорогоцінне, щоб отак ним нехтувати!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_cook1",
+      "english": "You really mean it? Thank you! ... it's such a relief to hear that.$h#$b#I've been working so hard on this recipe, and I'm really proud of it.",
+      "translation": "Ти справді так вважаєш? Дякую! ...Яке полегшення це чути.$h#$b#Я так старанно працювала над цим рецептом і дуже ним пишаюся.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_cook2",
+      "english": "Oh... Uh, sure.$s",
+      "translation": "О... Е-е, авжеж.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_cook3",
+      "english": "Oh...I'm sorry.$s",
+      "translation": "О... Вибач.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_pool1",
+      "english": "That's right...$8",
+      "translation": "Так і є...$8",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_pool2",
+      "english": "Really? I thought you'd have noticed by now...$8",
+      "translation": "Справді? Я думала, це вже вдалося помітити...$8",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_pool3",
+      "english": "No!$9",
+      "translation": "Ні!$9",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_pool4",
+      "english": "...Oh, @. I thought you did, but I wasn't sure.$6#$b#...I'll always remember this night.$6^You look so beautiful tonight... I... *gasp*$6",
+      "translation": "...О, @. Я думала, що так, але не була певна.$6#$b#...Я завжди пам’ятатиму цю ніч.$6^Сьогодні ти така прекрасна... Я... *ах*$6",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_pool5",
+      "english": "Y...You don't?$8#$b#...!!!%fork$10",
+      "translation": "Т... Тобі не подобається?$8#$b#...!!!%fork$10",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_family1",
+      "english": "Me too.$h",
+      "translation": "Я теж.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_family2",
+      "english": "...sorry.$s",
+      "translation": "...Вибач.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_family3",
+      "english": "I see.$s",
+      "translation": "Зрозуміло.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "summer_Mon",
+      "english": "Hi... Um, nice weather, isn't it?",
+      "translation": "Привіт... Ем, чудова погода, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "summer_Mon4",
+      "english": "$d cc#Thanks for fixing the community center back up. I guess you're kind of a town hero.|Hello, @. It's nice to see you're doing well.",
+      "translation": "$d cc#Дякую за відновлення Громадського центру. Ти справжня гордість містечка.|Привіт, @. Приємно бачити, що в тебе все добре.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "summer_Fri",
+      "english": "$d bus#I heard you were responsible for fixing the bus back up. Thank you.|My mother used to drive the bus to Calico Desert... but the bus stopped working a few years ago. Mayor says there's not enough money in the town coffers, or else he'd have it fixed.$u",
+      "translation": "$d bus#Кажуть, автобус відремонтовано завдяки тобі. Дякую.|Колись моя мама возила автобусом людей до пустелі Каліко... Але кілька років тому автобус зламався. Мер каже, у міській скарбниці замало грошей, інакше він би його полагодив.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "summer_Sun",
+      "english": "So... do you like to decorate your farm house?#$e#It must be nice having your own place to decorate.",
+      "translation": "Отже... Тобі подобається прикрашати свій фермерський будинок?#$e#Мабуть, приємно мати власне місце, яке можна прикрашати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "summer_Sat",
+      "english": "Hello. Ummm...$u#$b#The mountains look nice today, don't they?$u",
+      "translation": "Привіт. Ем-м-м...$u#$b#Сьогодні гори прекрасні, правда?$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Mon",
+      "english": "Hi... Um, are you doing okay?$u",
+      "translation": "Привіт... Ем, у тебе все гаразд?$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Mon4",
+      "english": "It's kind of embarrassing to be the only family in town who lives in a trailer.$u#$e#I wish I could live in a nice house, someday.$s",
+      "translation": "Трохи соромно бути єдиною родиною в містечку, яка живе в трейлері.$u#$e#От би мені одного дня жити в гарному будинку.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Tue4",
+      "english": "Your farm looks really pretty right now.$h",
+      "translation": "Зараз твоя ферма дуже гарна.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Thu6",
+      "english": "Mom doesn't take very good care of herself...$u#$e#I worry about her.$u",
+      "translation": "Мама не дуже добре про себе дбає...$u#$e#Я хвилююся за неї.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Fri",
+      "english": "Fall is a sad time of year for me...$s",
+      "translation": "Осінь для мене сумна пора року...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Fri6",
+      "english": "When I was a little girl, my father abandoned us because he said he felt 'trapped'. We haven't seen him since.$s#$b#I'm sorry to make things uncomfortable for you... It's just that this time of year makes me think of it for some reason.$u#$e#Anyway... How's the farming life going?",
+      "translation": "Коли я була маленькою, батько покинув нас, бо, за його словами, почувався «в пастці». Відтоді ми його не бачили.$s#$b#Вибач, що створюю незручність... Просто ця пора року чомусь нагадує мені про це.$u#$e#Утім... Як там фермерське життя?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Sun10",
+      "english": "@! I was just thinking about the future...#$e#Where do you picture yourself in ten years?$l#$e#I have a few ideas for myself...$u",
+      "translation": "@! Я саме думала про майбутнє...#$e#Де ти уявляєш себе через десять років?$l#$e#Щодо себе я маю кілька ідей...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "fall_Sat8",
+      "english": "Hi @.$h#$e#Your farmhouse must be pretty easy to clean, huh?",
+      "translation": "Привіт, @.$h#$e#Твій фермерський будинок, мабуть, доволі легко прибирати, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "winter_Fri",
+      "english": "...yes?$u",
+      "translation": "...Так?$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "winter_Fri2",
+      "english": "Are you friends with Linus? He lives in a tent up in the mountains.#$e#Everyone ignores him, the poor guy. He's actually really nice... Just a little odd.#$e#It must be so cold to live in a tent this time of year.",
+      "translation": "Ти дружиш із Лінусом? Він живе в наметі в горах.#$e#Усі його ігнорують, бідолаху. Насправді він дуже добрий... Просто трохи дивакуватий.#$e#Цієї пори року в наметі, мабуть, страшенно холодно.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "winter_Tue4",
+      "english": "I'm looking forward to seeing what your farm looks like in the spring.#$e#It's going to be so fresh and beautiful.$h",
+      "translation": "Я з нетерпінням чекаю, який вигляд матиме твоя ферма навесні.#$e#Вона буде такою свіжою й прекрасною.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "winter_Tue",
+      "english": "I try to stay indoors as much as possible during the winter. I hate being cold.",
+      "translation": "Узимку я намагаюся якомога більше часу проводити в приміщенні. Ненавиджу мерзнути.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "winter_Thu",
+      "english": "Oh... hi. You want to talk?$u#$e#If you find any interesting artifacts or minerals, Gunther will gladly display them in the museum.#$e#He told me he has special gifts for people who donate.",
+      "translation": "О... Привіт. Хочеш поговорити?$u#$e#Якщо знайдеш цікаві артефакти чи мінерали, Ґантер із радістю виставить їх у Музеї.#$e#Він казав, що має особливі подарунки для тих, хто робить пожертви.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "winter_Mon",
+      "english": "On the 25th we'll be having the Feast of the Winter Star. It's one of my favorite events.#$e#It's supposed to be a time to show gratitude for all the good things in your life... but for most people it's just a time to relax and exchange gifts.",
+      "translation": "Двадцять п’ятого в нас буде Свято Зимової зорі. Це один із моїх улюблених заходів.#$e#У цей час заведено дякувати за все хороше у своєму житті... Але для більшості людей це просто нагода відпочити й обмінятися подарунками.",
+      "reviewed": true
+    }
+  ]
+}

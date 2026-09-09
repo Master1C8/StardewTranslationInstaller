@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0465-strings-1-6-438-453",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/1_6_Strings",
+  "status": "reviewed",
+  "entries": {
+    "SkillBookMessage": "Научи няколко неща за {0}.",
+    "SkillName_0": "Фермерство",
+    "SkillName_1": "Риболов",
+    "SkillName_2": "Събирачество",
+    "SkillName_3": "Миньорство",
+    "SkillName_4": "Бой",
+    "QoS_Cookbook": "Научи {0} нови рецепти.",
+    "guild_door": "Убий 1000 чудовища, за да влезеш тук. ([FarmerStat monstersKilled]/1000)",
+    "FoundABook": "Намери екземпляр от „{0}“.",
+    "ForestMagic": "Горска магия",
+    "ForestMagic_Description": "В единство си с горската магия...",
+    "BearPaw_Description": "Къпините и сьомговите малини носят 3 пъти повече злато.",
+    "SpringOnionMastery_Description": "Пресният лук носи 5 пъти повече злато.",
+    "Marnie_Counter": "„Няма ме, но пак можеш да купуваш чрез Каталога за животни!“  —Марни",
+    "GameMenu_Powers": "Специални предмети и сили",
+    "FixRaccoonStump_Hint": "Старото дърво го няма... Но със 100 къса Твърда дървесина дънерът може да бъде възстановен."
+  },
+  "sourceHashes": {
+    "SkillBookMessage": "3cb09ffc4c28ee3841e036f853cb21461ed3f4ba5748a941253d149198ef749a",
+    "SkillName_0": "a61abd5d17a01f86ae8e95c1fd18e81621bb3ab208601726376fca10a917f5d7",
+    "SkillName_1": "79cea8ff2ba190bbb1bdb045610c272c4c3c56fd19ac0cc07b380e08f736a476",
+    "SkillName_2": "a4966b4bc08a051c29a86ac61ee96052c82db586f26e29d0d953b1b26d591f77",
+    "SkillName_3": "bf94ba9e2d861e6c1478d938a5d58d71506368426b5dfa9e9f56bfa12422c95e",
+    "SkillName_4": "49fcf2c78b506b3e32115f752124e4ee1b998f4f578cc2d35425e6ee3eb203a6",
+    "QoS_Cookbook": "3b2893c54856431d661ef9d06ef5b9ecfe0bc80e8c72d2e02ba7e0413a5f9e4a",
+    "guild_door": "202e9655e8e3d66f2aa9840518e55af367f84fc0c672933b2851a3111641907e",
+    "FoundABook": "622646fb586300d499fbdd3c25415325c4c994f16f0cdad5dc164f303a750a38",
+    "ForestMagic": "a5b9cae1feeee3c6983de7cab974debfa0af8cb8bcc0067fe5c9c1dfcaad80fa",
+    "ForestMagic_Description": "784876982459dbd81c920d083caa77245aabe60226c8288ca6e82066316dcd3e",
+    "BearPaw_Description": "3e51948d54f1cb4b61951d8e0d0e5e501002b1b8354da75d8438e0e1e7fe8a67",
+    "SpringOnionMastery_Description": "a76f5a5771cd569828c019e76ac271bdbced233be087fbc27b34e6ddfabe22f6",
+    "Marnie_Counter": "e896e8041212994fc8a8a8edca83807390ad81591ffd2eb9116ddd193a79d374",
+    "GameMenu_Powers": "ef820ce8ed735c682b4ee2c0ca48a325e7ef638f8cd162e6db4972f812ecbe18",
+    "FixRaccoonStump_Hint": "2b1e3b4124b1badf226e29bdeab2311b9fb7515181d6adc982ab37ea42e95146"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated the skill-book result, five skill names, cookbook result, guild-door requirement, book discovery, three permanent powers, Marnie’s unattended-counter note, Powers menu and raccoon-stump repair hint directly from English.",
+      "Applied locked skill names, Горска магия, сьомгови малини, Майсторство на пресния лук and Твърда дървесина terminology while preserving both placeholders, the complete FarmerStat token and all three numeric multipliers or requirements.",
+      "Read the power descriptions as gameplay modifiers and refined the berry and onion lines to state the exact threefold and fivefold gold return without implying a different quantity of items."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "44e4c3a948104ed1f5ce4a70ba94d3d88ed015c2c1d124baa082791ef197ef3c"
+  }
+}

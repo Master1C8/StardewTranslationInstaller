@@ -1,0 +1,33 @@
+{
+  "id": "0238-event-sebastian-room-011-014",
+  "target": "Data/Events/SebastianRoom",
+  "status": "reviewed",
+  "sourceHashes": {
+    "ranAway": "74daaca7ab14a28fa111a79eeba8599894bbe532cf7af8cbaac25f5401cc3cec",
+    "backEntrance": "03a3e4b56843b2b7a99e33ed7c25b30883b4d54ea736bf10ba8ed223c95f8928",
+    "sewer": "8cad2fcc23002ee28b8751699d4578bd4a0b4266a56717a490ac0f6f7c3bea52",
+    "podRoom": "c9edde540b1015eedd5fa3cf7f6b1e5fbab9510e8f4f962b818d8ff2d5904b5d"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "ranAway": "pause 300/message \"Обръщаш се и побягваш по сумрачен коридор. Студеният каменен под се спуска и вие надолу сякаш цяла вечност. Накрая излизаш на ново място.\"/pause 400/switchEvent sewer",
+    "backEntrance": "pause 300/playSound leafrustle/pause 500/playSound grassyStep/pause 400/playSound leafrustle/pause 500/updateMinigame 2/pause 600/message \"След като оглеждаш около основата на кулата, откриваш капак, скрит сред храстите. Под него има стълба, по която се спуска дружината ти.\"/pause 800/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent sewer",
+    "sewer": "updateMinigame 4/resetVariable/playMusic pool_ambient/pause 1600/message \"Озоваваш се в коридор, подобен на канализация. Отляво проход сияе с необичайна зелена светлина. Отдясно стълбище води нагоре в мрака.\"/pause 500/question fork1 \"Какво правиш?#Влез в прохода отляво.#Изкачи стълбите отдясно.\"/fork wizardDoor/switchEvent podRoom",
+    "podRoom": "pause 500/updateMinigame 7/resetVariable/playMusic Hospital_Ambient/pause 1600/message \"Озоваваш се в стая. Отляво има стълба. Отдясно трима затворници се носят в странни светещи капсули. Изглежда, че претърпяват някаква трансформация.\"/pause 500/message \"Дали това не е някакъв болен експеримент на Лорда на ужаса?\"/pause 500/question fork0 \"Какво правиш?#Махни се оттам възможно най-бързо.#Унищожи капсулите.\"/fork leave/pause 500/pause 500/playSound swordswipe/pause 200/playSound breakingGlass/updateMinigame -1/pause 1000/message \"След като дарявате тези нещастни души с покой, ти и спътниците ти се изкачвате по стълбата.\"/pause 800/addMailReceived destroyedPods/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 4,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all eight quoted tabletop-roleplay exploration and choice fields in Sebastian Room source ordinals 11–14.",
+      "Preserved fork labels, mail flags, minigame updates, scene commands and every byte outside quoted player-facing text.",
+      "Maintained singular player narration and plural party action while consistently localizing the tower, sewer and capsule-room branches."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "240b99c197a0b99ac98c718fd9c0c107f6d2493c8edf1d6a7dd1d0319c52b036"
+  }
+}

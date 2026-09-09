@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "0334-winter25-044-063",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Festivals/winter25",
+  "status": "reviewed",
+  "entries": {
+    "Vincent": "Може ли вече да отворим подаръците?!",
+    "Marlon": "Хей, добър ден.",
+    "Leo": "Лайнъс се чувства неловко да се присъедини, затова ще му правя компания.#$e#Ще си устроим свое малко пиршество... пюре от зимен корен и риба с пикантно зрънце!$h",
+    "set-up_y2": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas2/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+    "secretSanta_y2": "none/-1000 -1000/farmer 30 69 0/warp Abigail 35 73/warp Caroline 16 54/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Abigail 29 71/warp Caroline 30 71/faceDirection Caroline 0 true/faceDirection Abigail 0 true/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+    "Abigail_spouse_y2": "Брр... Студено е! Искам отново да се мушна под завивките...",
+    "Leah_spouse_y2": "Елиът отново пие твърде много сайдер...$7#$e#Ще дойда при теб на масата, когато намеря изход... Умирам от глад!",
+    "Maru_spouse_y2": "Благодарна съм, че в живота си имам любящо семейство и теб...$0",
+    "Penny_spouse_y2": "Надявам се всички да харесат крамбъла ми с прахов пъпеш...$h",
+    "Haley_spouse_y2": "Когато преброя всички хубави неща в живота си, усещам, че Зимната звезда ме е благословила.",
+    "Emily_spouse_y2": "Когато с Хейли бяхме деца, на този празник винаги украсявахме сладки.#$b#Някой път трябва да го направим! Не бива да оставяме хубавите традиции да изчезнат.$h",
+    "Sebastian_spouse_y2": "Хей... не се тревожи, не е нужно да ми подаряваш нищо.$h#$e#Щастлив съм просто да се събуждам до теб всяка сутрин... какво повече може да иска един мъж?$l",
+    "Sam_spouse_y2": "Доста е забавно да гледаш как всички разопаковат подаръците си... и да виждаш реакциите им.$h#$e#О, да, взех ти нещо. Ще ти го... ъъ... покажа, когато се върнем във фермерската къща!$10",
+    "Alex_spouse_y2": "Кажи ми, ако ти стане студено. Ще ти дам якето си.$0",
+    "Harvey_spouse_y2": "Благодарен съм за много неща, например за клиниката си и за доброто здраве на пациентите си...#$b#Но най-вече съм благодарен за живота, който изграждаме заедно...$l",
+    "Elliott_spouse_y2": "Любов моя, в този ден не ми трябва абсолютно нищо... ти вече си най-великият дар, на който един мъж може да се надява.$h",
+    "Shane_spouse_y2": "За какво съм благодарен?#$b#....ъъ...$3#$b#Благодарен съм... че ме измъкна от канавката. И ми показа, че си струва да се живее.$6",
+    "Abigail_y2": "Чудя се кой подарък е моят...$0#$e#Надявам се да е голямата кутия!$h",
+    "Robin_y2": "Ех... Съпругът ми подари нов електрически трион тази година...$6#$b#Сигурно е забравил, че ми подари същото преди две години!$6",
+    "Demetrius_y2": "Хмм... това зелено желе има ментов вкус.$3#$b#Чудя се как ментата се е свързала с Празника на Зимната звезда? Изобщо расте ли мента през зимата?$3"
+  },
+  "preserveReasons": {
+    "set-up_y2": "Structural second-year festival map and control command script; preserved byte-for-byte.",
+    "secretSanta_y2": "Structural second-year Secret Santa cutscene command script whose quoted dialogue1/dialogue2 values are lookup identifiers, not visible prose; preserved byte-for-byte."
+  },
+  "sourceHashes": {
+    "Vincent": "8bbe6b6b4d88418d925d840694dd930027134be6cd4714f3147857e27c85aec1",
+    "Marlon": "a1115317c5529d22f172b508ce5634a084d55fd9e6f6de5e62ba2b34fc000abb",
+    "Leo": "55d11b0b0b485c2def0d608fa459c5e1e63f7b7ef906f8715875a763d48b3253",
+    "set-up_y2": "00ea4bb7ae4d5270a719c9c238d679d7895527b9b06b6a22d4cbd84f14dc868f",
+    "secretSanta_y2": "c31c507973686cf291df07473edd6a323c516ef9e3207703483d39320920d67f",
+    "Abigail_spouse_y2": "c93115bca890a78ee2f5a838c147176f9c7868783c91eb5e555c9e5098c3fee0",
+    "Leah_spouse_y2": "ec9239020f9ac3e3a814c4d1fc277418546f74b0a0280f4736658c94f6aba113",
+    "Maru_spouse_y2": "9befa1af66a41679462a8ee7b30f1f31c2a0aaae93dd89f1fb95831ef017fd27",
+    "Penny_spouse_y2": "be887c698eadf303d08303e9a84246eb0d493195a9d0132f4b930d94c596a238",
+    "Haley_spouse_y2": "bddf76751edb9587bdc673fe1f034e2336548db7a5b4c0016ea0d6c30a3f14d8",
+    "Emily_spouse_y2": "4a65f08eb62f0cca7707443ee389edcfabfee6c7515e49cdd7a1d29e30976ac2",
+    "Sebastian_spouse_y2": "617a61e670a3573c4eea108cb39997d47742718d1793cc74ff4a1cfa3fa3dbda",
+    "Sam_spouse_y2": "049081e4df7edef18f1d0f16c786caef55ce8da2e03fc06cab4dc0aa572f872c",
+    "Alex_spouse_y2": "2992ebdc9fa5e367e9c3127bd17e1c56fe5215b56de732d645ab3f8104d55eed",
+    "Harvey_spouse_y2": "dde1461938e6dd9a788e3048fb05ad48fe27dc9dced57fe56a8c1c805a94717f",
+    "Elliott_spouse_y2": "0b28b6947484b9fd342dfef59fd5de386b133e59c7e262197ce4f18d8302a954",
+    "Shane_spouse_y2": "a3d630feeee0ef5aa4b472feb5801048103690a4560c168c29067c408278ea2e",
+    "Abigail_y2": "f9be6072b0ef9e7e22f5fe0ed6fe972be6f4a532ca885e3072ca0288ee3d6342",
+    "Robin_y2": "689db5e4ccbc7cf682288d3e79d1e595807d898414c92b88371b8600e0988b1f",
+    "Demetrius_y2": "c1c48f811e3be5089de401f04feb61185989ea0e2355136c15a8f2e3ade1a179"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 20,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread every winter25 record from source ordinals 44 through 63 directly from English, including all second-year spouse and town dialogue.",
+      "Preserved the second-year setup and Secret Santa command scripts byte-for-byte and retained every dialogue, emotion, paragraph and numeric control marker.",
+      "Kept Powdermelon and Winter Root as direct item names and standardized Spice Berry as пикантно зрънце to match the previously reviewed Leo dialogue."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "b2e7ef952ac3c25c4403c097f60713d3403731ea429d31abdaad2a55ec99f679"
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "id": "052-technical-fish-b-monsters",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/Fish": "c1156447cdf7539bf5337fdd5eaed49fb28250ccdaa6bbb0ab6208c30f25110e",
+    "Data/Monsters": "fb2186211a734c3a51144b6563583178584d96ab9356fcee6e2ef37d56c0c8b1"
+  },
+  "records": [
+    {
+      "target": "Data/Fish",
+      "key": "Goby",
+      "english": "Goby/55/dart/3/12/800 1800/spring summer fall/both/684 .35/1/.25/.2/0/false",
+      "translation": "Goby/55/dart/3/12/800 1800/spring summer fall/both/684 .35/1/.25/.2/0/false",
+      "preservationReason": "The slash-delimited value contains an exact fish identifier plus numeric behavior, season, weather, habitat, and parser flags; displayed names are localized through the object-string assets, so this data must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Goby",
+          "dart",
+          "spring",
+          "summer",
+          "fall",
+          "both",
+          "false"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Green Slime",
+      "english": "24/5/0/0/false/1000/766 .75 766 .05 153 .1 66 .015 92 .15 96 .005 99 .001/1/.01/4/2/.00/true/3/Green Slime",
+      "translation": "24/5/0/0/false/1000/766 .75 766 .05 153 .1 66 .015 92 .15 96 .005 99 .001/1/.01/4/2/.00/true/3/Green Slime",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Green",
+          "Slime"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Dust Spirit",
+      "english": "40/6/0/0/false/1000/382 .5 433 .01 336 .001 84 .02 414 .02 97 .005 99 .001/2/.00/4/3/.00/true/2/Dust Sprite",
+      "translation": "40/6/0/0/false/1000/382 .5 433 .01 336 .001 84 .02 414 .02 97 .005 99 .001/2/.00/4/3/.00/true/2/Dust Sprite",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Dust",
+          "Sprite"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Bat",
+      "english": "24/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Bat",
+      "translation": "24/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Bat",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Bat"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frost Bat",
+      "english": "36/7/0/0/true/1000/767 .9 767 .55 108 .001 287 .02 97 .005 99 .001/1/.01/4/3/.00/true/7/Frost Bat",
+      "translation": "36/7/0/0/true/1000/767 .9 767 .55 108 .001 287 .02 97 .005 99 .001/1/.01/4/3/.00/true/7/Frost Bat",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Frost",
+          "Bat"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Lava Bat",
+      "english": "80/15/0/0/true/1000/767 .9 767 .7 108 .001 287 .02 98 .005 99 .001/1/.01/4/3/.00/true/15/Lava Bat",
+      "translation": "80/15/0/0/true/1000/767 .9 767 .7 108 .001 287 .02 98 .005 99 .001/1/.01/4/3/.00/true/15/Lava Bat",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Lava",
+          "Bat"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Bat",
+      "english": "300/30/0/0/true/1000/386 .9 386 .5 386 .25 386 .1 288 .05 768 .5 773 .05 349 .05 787 .05 337 .008/1/.01/4/3/.00/true/22/Iridium Bat",
+      "translation": "300/30/0/0/true/1000/386 .9 386 .5 386 .25 386 .1 288 .05 768 .5 773 .05 349 .05 787 .05 337 .008/1/.01/4/3/.00/true/22/Iridium Bat",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Iridium",
+          "Bat"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Stone Golem",
+      "english": "45/5/0/0/false/1000/390 .9 80 .1 382 .1 380 .1 96 .005 99 .001/5/.01/3/2/.00/true/5/Stone Golem",
+      "translation": "45/5/0/0/false/1000/390 .9 80 .1 382 .1 380 .1 96 .005 99 .001/5/.01/3/2/.00/true/5/Stone Golem",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Stone",
+          "Golem"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Wilderness Golem",
+      "english": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "translation": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Wilderness",
+          "Golem"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Golem",
+      "english": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "translation": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Wilderness",
+          "Golem"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Grub",
+      "english": "20/4/0/0/false/1000/684 .6 273 .05 273 .05 157 .02 114 .005 96 .005 99 .001/0/.005/3/1/.00/true/2/Grub",
+      "translation": "20/4/0/0/false/1000/684 .6 273 .05 273 .05 157 .02 114 .005 96 .005 99 .001/0/.005/3/1/.00/true/2/Grub",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Grub"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Fly",
+      "english": "22/6/0/0/true/1000/684 .9 157 .02 114 .005 96 .005 99 .001/1/.005/13/2/.0/true/10/Fly",
+      "translation": "22/6/0/0/true/1000/684 .9 157 .02 114 .005 96 .005 99 .001/1/.005/13/2/.0/true/10/Fly",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Fly"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frost Jelly",
+      "english": "106/7/0/0/false/1000/766 .75 412 .08 70 .02 98 .015 92 .5 97 .005 99 .001/0/.01/4/2/.0/true/6/Frost Jelly",
+      "translation": "106/7/0/0/false/1000/766 .75 412 .08 70 .02 98 .015 92 .5 97 .005 99 .001/0/.01/4/2/.0/true/6/Frost Jelly",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Frost",
+          "Jelly"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Sludge",
+      "english": "205/16/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/10/Sludge",
+      "translation": "205/16/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/10/Sludge",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Sludge"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Guy",
+      "english": "125/20/0/0/false/0/769 .75 769 .1 329 .02 337 .002 336 .01 335 .02 334 .04 203 .04 293 .03 108 .003 -4 .1 98 .005 99 .001/2/.01/-1/2/.0/true/15/Shadow Guy",
+      "translation": "125/20/0/0/false/0/769 .75 769 .1 329 .02 337 .002 336 .01 335 .02 334 .04 203 .04 293 .03 108 .003 -4 .1 98 .005 99 .001/2/.01/-1/2/.0/true/15/Shadow Guy",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Shadow",
+          "Guy"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Ghost",
+      "english": "96/10/0/3/false/0/768 .95 768 .1 156 .08 338 .08 -6 .2 97 .005 99 .001/3/.01/12/4/.0/true/15/Ghost",
+      "translation": "96/10/0/3/false/0/768 .95 768 .1 156 .08 338 .08 -6 .2 97 .005 99 .001/3/.01/12/4/.0/true/15/Ghost",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Ghost"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Carbon Ghost",
+      "english": "190/25/0/3/false/0/749 .99 338 .1/3/.01/12/4/.0/true/20/Carbon Ghost",
+      "translation": "190/25/0/3/false/0/749 .99 338 .1/3/.01/12/4/.0/true/20/Carbon Ghost",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Carbon",
+          "Ghost"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Duggy",
+      "english": "40/6/0/0/false/0/286 .25 535 .25 280 .03 105 .02 86 .1 72 .01 96 .005 99 .001/0/.01/1/2/.0/true/10/Duggy",
+      "translation": "40/6/0/0/false/0/286 .25 535 .25 280 .03 105 .02 86 .1 72 .01 96 .005 99 .001/0/.01/1/2/.0/true/10/Duggy",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Duggy"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Rock Crab",
+      "english": "30/5/0/0/false/0/717 .15 286 .4 96 .005 99 .001/1/0/1/2/.0/true/4/Rock Crab",
+      "translation": "30/5/0/0/false/0/717 .15 286 .4 96 .005 99 .001/1/0/1/2/.0/true/4/Rock Crab",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Rock",
+          "Crab"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Truffle Crab",
+      "english": "30/5/0/0/false/0/430 .999 430 .5 430 .1 717 .25 432 .1/1/0/1/2/.0/true/4/Rock Crab",
+      "translation": "30/5/0/0/false/0/430 .999 430 .5 430 .1 717 .25 432 .1/1/0/1/2/.0/true/4/Rock Crab",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Rock",
+          "Crab"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Lava Crab",
+      "english": "120/15/0/0/false/0/717 .25 287 .4 98 .005 99 .001/3/0/1/3/.0/true/12/Lava Crab",
+      "translation": "120/15/0/0/false/0/717 .25 287 .4 98 .005 99 .001/3/0/1/3/.0/true/12/Lava Crab",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Lava",
+          "Crab"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Crab",
+      "english": "240/15/0/0/false/0/732 .5 386 .5 386 .5 386 .5/3/0/1/3/.0/true/20/Iridium Crab",
+      "translation": "240/15/0/0/false/0/732 .5 386 .5 386 .5 386 .5/3/0/1/3/.0/true/20/Iridium Crab",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Iridium",
+          "Crab"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Fireball",
+      "english": "1/18/0/0/true/0/72 .0000001/0/0/-1/3/.00/false/0/Fireball",
+      "translation": "1/18/0/0/true/0/72 .0000001/0/0/-1/3/.00/false/0/Fireball",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "false",
+          "Fireball"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Squid Kid",
+      "english": "1/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Squid Kid",
+      "translation": "1/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Squid Kid",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Squid",
+          "Kid"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Skeleton Warrior",
+      "english": "300/12/1/3/false/0/769 .25 105 .03 106 .03 166 .001 60 .04 232 .04 72 .03 74 .01 97 .005 99 .001/3/0/5/2/.0/true/15/Skeleton Warrior",
+      "translation": "300/12/1/3/false/0/769 .25 105 .03 106 .03 166 .001 60 .04 232 .04 72 .03 74 .01 97 .005 99 .001/3/0/5/2/.0/true/15/Skeleton Warrior",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Skeleton",
+          "Warrior"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Crow",
+      "english": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Crow",
+      "translation": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Crow",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "false",
+          "Crow"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frog",
+      "english": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Frog",
+      "translation": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Frog",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "false",
+          "Frog"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Cat",
+      "english": "300/0/0/0/false/0/-6 .001/3/0/6/2/.0/false/0/Cat",
+      "translation": "300/0/0/0/false/0/-6 .001/3/0/6/2/.0/false/0/Cat",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "false",
+          "Cat"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Brute",
+      "english": "160/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Brute",
+      "translation": "160/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Brute",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Shadow",
+          "Brute"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Shaman",
+      "english": "80/17/0/0/false/0/769 .75 769 .2 337 .002 336 .01 335 .02 334 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Shaman",
+      "translation": "80/17/0/0/false/0/769 .75 769 .2 337 .002 336 .01 335 .02 334 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Shaman",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Shadow",
+          "Shaman"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Skeleton",
+      "english": "140/10/0/2/false/2000/881 .5 881 .4 881 .2 579 .005/1/.01/8/2/.0/true/8/Skeleton",
+      "translation": "140/10/0/2/false/2000/881 .5 881 .4 881 .2 579 .005/1/.01/8/2/.0/true/8/Skeleton",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Skeleton"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Skeleton Mage",
+      "english": "60/5/0/2/false/2000/80 0/1/.01/8/2/.0/true/8/Skeleton Mage",
+      "translation": "60/5/0/2/false/2000/80 0/1/.01/8/2/.0/true/8/Skeleton Mage",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Skeleton",
+          "Mage"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Metal Head",
+      "english": "40/15/0/0/false/2000/768 .65 378 .1 378 .1 380 .1 380 .1 382 .1 98 .005 99 .001/8/.01/8/2/.0/true/6/Metal Head",
+      "translation": "40/15/0/0/false/2000/768 .65 378 .1 378 .1 380 .1 380 .1 382 .1 98 .005 99 .001/8/.01/8/2/.0/true/6/Metal Head",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Metal",
+          "Head"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Spiker",
+      "english": "5/15/0/0/false/2000/378 .1 378 .1 380 .1 380 .1 382 .1/4/.01/8/2/.0/true/1/Spiker",
+      "translation": "5/15/0/0/false/2000/378 .1 378 .1 380 .1 380 .1 382 .1/4/.01/8/2/.0/true/1/Spiker",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Spiker"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Bug",
+      "english": "1/8/0/0/false/2000/684 .76 157 .02 114 .005 96 .005 99 .001/0/0/-1/2/.0/true/1/Bug",
+      "translation": "1/8/0/0/false/2000/684 .76 157 .02 114 .005 96 .005 99 .001/0/0/-1/2/.0/true/1/Bug",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Bug"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Mummy",
+      "english": "260/30/0/3/false/1000/768 .99 428 .2 428 .05 768 .15 243 .04 856 .01 99 .001 74 .001/0/.01/8/2/.0/true/20/Mummy",
+      "translation": "260/30/0/3/false/1000/768 .99 428 .2 428 .05 768 .15 243 .04 856 .01 99 .001 74 .001/0/.01/8/2/.0/true/20/Mummy",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Mummy"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Big Slime",
+      "english": "60/5/0/0/false/1000/766 .99 766 .9 766 .4 99 .001/0/.01/5/2/.0/true/7/Big Slime",
+      "translation": "60/5/0/0/false/1000/766 .99 766 .9 766 .4 99 .001/0/.01/5/2/.0/true/7/Big Slime",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Big",
+          "Slime"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Serpent",
+      "english": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Serpent",
+      "translation": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Serpent",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Serpent"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Pepper Rex",
+      "english": "300/15/0/0/false/1000/80 0/5/.01/3/2/.0/true/7/Pepper Rex",
+      "translation": "300/15/0/0/false/1000/80 0/5/.01/3/2/.0/true/7/Pepper Rex",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Pepper",
+          "Rex"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Tiger Slime",
+      "english": "415/23/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/20/Tiger Slime",
+      "translation": "415/23/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/20/Tiger Slime",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Tiger",
+          "Slime"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Lava Lurk",
+      "english": "220/15/0/0/false/1000/881 .5 881 .4 881 .2 852 .15/5/.01/3/2/.0/true/12/Lava Lurk",
+      "translation": "220/15/0/0/false/1000/881 .5 881 .4 881 .2 852 .15/5/.01/3/2/.0/true/12/Lava Lurk",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Lava",
+          "Lurk"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Hot Head",
+      "english": "250/18/0/0/false/2000/768 .65 287 .1 378 .1 378 .1 380 .1 380 .1 382 .1 833 .1 833 .1 98 .005 99 .001/8/.01/8/2/.0/true/16/Hot Head",
+      "translation": "250/18/0/0/false/2000/768 .65 287 .1 378 .1 378 .1 380 .1 380 .1 382 .1 833 .1 833 .1 98 .005 99 .001/8/.01/8/2/.0/true/16/Hot Head",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Hot",
+          "Head"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Magma Sprite",
+      "english": "220/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/15/Magma Sprite",
+      "translation": "220/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/15/Magma Sprite",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Magma",
+          "Sprite"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Magma Duggy",
+      "english": "380/16/0/0/false/0/831 .5 831 .5 288 .4 848 .4 848 .15/0/.01/1/2/.0/true/18/Magma Duggy",
+      "translation": "380/16/0/0/false/0/831 .5 831 .5 288 .4 848 .4 848 .15/0/.01/1/2/.0/true/18/Magma Duggy",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Magma",
+          "Duggy"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Magma Sparker",
+      "english": "310/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/17/Magma Sparker",
+      "translation": "310/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/17/Magma Sparker",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Magma",
+          "Sparker"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "False Magma Cap",
+      "english": "290/15/0/0/false/0/851 .99 848 .5 848 .2/3/0/1/3/.0/true/14/False Magma Cap",
+      "translation": "290/15/0/0/false/0/851 .99 848 .5 848 .2/3/0/1/3/.0/true/14/False Magma Cap",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "False",
+          "Magma",
+          "Cap"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Dwarvish Sentry",
+      "english": "300/18/0/0/true/0/60 .1 62 .1 64 .1 66 .1 68 .1 70 .1 72 .1/5/0/-1/3/.0/true/15/Dwarvish Sentry",
+      "translation": "300/18/0/0/true/0/60 .1 62 .1 64 .1 66 .1 68 .1 70 .1 72 .1/5/0/-1/3/.0/true/15/Dwarvish Sentry",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Dwarvish",
+          "Sentry"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Putrid Ghost",
+      "english": "500/25/0/3/false/0/749 .99/3/.01/12/4/.0/true/25/Putrid Ghost",
+      "translation": "500/25/0/3/false/0/749 .99/3/.01/12/4/.0/true/25/Putrid Ghost",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Putrid",
+          "Ghost"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Sniper",
+      "english": "300/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/20/Shadow Sniper",
+      "translation": "300/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/20/Shadow Sniper",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Shadow",
+          "Sniper"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Spider",
+      "english": "200/15/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/15/Spider",
+      "translation": "200/15/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/15/Spider",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "false",
+          "true",
+          "Spider"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Royal Serpent",
+      "english": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Royal Serpent",
+      "translation": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Royal Serpent",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Royal",
+          "Serpent"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Blue Squid",
+      "english": "80/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Blue Squid",
+      "translation": "80/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Blue Squid",
+      "preservationReason": "The slash-delimited value contains exact combat statistics, loot tables, flags, sprite identifiers, and internal monster names; translating it would break data parsing and display names are localized separately.",
+      "latinException": {
+        "tokens": [
+          "true",
+          "true",
+          "Blue",
+          "Squid"
+        ],
+        "reason": "These ASCII words are exact internal identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    }
+  ]
+}
+

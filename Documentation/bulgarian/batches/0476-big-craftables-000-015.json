@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "0476-big-craftables-000-015",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/BigCraftables",
+  "status": "reviewed",
+  "entries": {
+    "AncientStool_Name": "Древна табуретка",
+    "AncientStool_Description": "Мирише на апартамента на баба.",
+    "AncientTable_Name": "Древна маса",
+    "AncientTable_Description": "Покрита е с невероятно дебели паяжини.",
+    "Anvil_Name": "Наковалня",
+    "Anvil_Description": "Позволява да прековаваш талисмани, като променя произволно характеристиките им. Всяко използване струва 3 Иридиеви кюлчета.",
+    "AutoGrabber_Name": "Автоматичен събирач",
+    "AutoGrabber_Description": "Автоматично събира продукцията от животните ти всяка сутрин. Трябва да бъде поставен в Кокошарник или Обор.",
+    "AutoPetter_Name": "Автоматична машина за галене",
+    "AutoPetter_Description": "Патентована технология на Joja Co. за Кокошарници и Обори. Поддържа животните ти доволни, но не може да замени всички ползи от човешкото докосване. Можеш допълнително да ги галиш на ръка.",
+    "BaitMaker_Name": "Машина за стръв",
+    "BaitMaker_Description": "Постави риба вътре, за да създадеш целева стръв.",
+    "Barrel_Name": "Бъчва",
+    "Barrel_Description": "...",
+    "BarrelBrazier_Name": "Мангал от бъчва",
+    "BarrelBrazier_Description": "Осигурява умерена светлина."
+  },
+  "preserveReasons": {
+    "Barrel_Description": "Player-facing description contains only an ellipsis and must remain byte-exact."
+  },
+  "sourceHashes": {
+    "AncientStool_Name": "d12041b8bfc8e225a6927281108771abf7ad638a42fc3a1f6bf3e8b7dfa6a7ee",
+    "AncientStool_Description": "3b0e72cafd4909eadef9a66679e2403102ac5f8e91ffcbf783f48f1c803e58e9",
+    "AncientTable_Name": "62d3d08b4a8e00de4243db09761a07d90e94194cf937a5f8629aab3039390265",
+    "AncientTable_Description": "0dad199b25fe3626dd4a2bf73182e1ae666da25ceb56456332c60df589a1d7a2",
+    "Anvil_Name": "297fa03ced0b0de4014e5ffee0f640f9da30016210c7adbdfca3df7ab8f74166",
+    "Anvil_Description": "48a55a04616337f77110f88ec2b159fd1209621435c7059eed04bbb078e146e1",
+    "AutoGrabber_Name": "812a09e833761455c0c35441cc7cabe72947d4756afa283e6636d68d6a88eb6a",
+    "AutoGrabber_Description": "36fb77adca74494f032ffd47a39e5fa20fc00d708362b4dc3de402a67ca3381b",
+    "AutoPetter_Name": "690f1ad37ef65986d44b7da4b8102beaed600d51f71defdd10c01f976ddb573c",
+    "AutoPetter_Description": "5e98c5324a8c604a38ca06deeed66335380aea7b3fa51006e02a45c6bbf035a5",
+    "BaitMaker_Name": "3fda100a9207454884a8b5c96c889a19c35ff03ffadd1848e50eca25fc4b557f",
+    "BaitMaker_Description": "03eac50883afad34a1c0a4151c59f58f9c5b1d217c27b11fa2038b0e1ae5dfee",
+    "Barrel_Name": "ae8695893112e3113c47f25dfe30c82f59c0a36f7ace8962865ab3718a44297f",
+    "Barrel_Description": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46",
+    "BarrelBrazier_Name": "95150c36cf2b11f739bd455a870e046d733de4d00ea4b796591827abf12f6bee",
+    "BarrelBrazier_Description": "347b291045e500e4a75441fc6286c952d939aadeef8dd3403617952d03701b6a"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated eight Big Craftable names and seven descriptions directly from English; retained the punctuation-only Barrel description byte-exact with a documented reason.",
+      "Applied locked Наковалня, Талисман, Иридиево кюлче, Автоматичен събирач, Автоматична машина за галене, Кокошарник, Обор, Машина за стръв and целева стръв terminology.",
+      "Read every name-description pair together for exact workstation behavior, placement restrictions, daily timing and the partial benefit of automated petting."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "87ea40a35e5258d5376fc5d61714d823ab52eb29911968dd3df402776a9fd28f"
+  }
+}

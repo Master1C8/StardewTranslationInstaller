@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "0443-strings-1-6-112-127",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/1_6_Strings",
+  "status": "reviewed",
+  "entries": {
+    "Scholar_Question_3_0": "Въпрос 4: Къде може да уловиш {0}?",
+    "Scholar_Question_3_0_Options": "Каменна риба,Ледено рибе,Лавова змиорка",
+    "Scholar_Question_3_0_Answers": "Ниво 20 в Мините,Ниво 60 в Мините,Ниво 100 в Мините,Плажът,Канализацията,Ниво 120 в Мините",
+    "Scholar_Question_3_1": "Въпрос 4: Каква е фамилията на Джордж?",
+    "Scholar_Question_3_1_Answers": "Мълнър,Миленър,Молнар,Нелсън,Милър",
+    "Scholar_Question_3_2": "Въпрос 4: Колко кофи за боклук има в град Пеликан?",
+    "Scholar_Question_3_2_Answers": "8,12,6,11,4,10",
+    "Cook_Intro": "Готвачът: О, здравей... искаш ли нещо за хапване?",
+    "Cook_Intro_Yes": "Готвачът: Ох, да... Много се радвам да го чуя. *сърба*",
+    "Cook_Intro_Yes2": "Готвачът: Искам да ти приготвя много специално ястие. Нещо, което напълно отговаря на неповторимия ти вкус. Позволяваш ли?",
+    "Cook_Intro_Yes3": "Готвачът: Ухуху... *кикоти се*... много добре. А сега... какво ще желаеш?",
+    "Cook_Ingredient0": "Засищащ боб",
+    "Cook_Ingredient1": "Пещерен хляб",
+    "Cook_Ingredient2": "Рядък плод",
+    "Cook_Ingredient3": "Изключително остър чедър",
+    "Cook_Ingredient4": "Скариди"
+  },
+  "preserveReasons": {
+    "Scholar_Question_3_2_Answers": "Player-facing garbage-can answer array contains only exact numeric choices; every value and comma-delimited answer slot must remain unchanged."
+  },
+  "sourceHashes": {
+    "Scholar_Question_3_0": "de5ab16b5f84d6831818e2de47d59a2ac815d647e8f7539d377032c44a91aa88",
+    "Scholar_Question_3_0_Options": "5dd7aa3a628f479194668214df00bca365d4c3748b32a24502495c8cc09f123a",
+    "Scholar_Question_3_0_Answers": "4ef58724318ca800048d987c1984e9d28cec2782c01e64804bea9b17614e6d40",
+    "Scholar_Question_3_1": "0bb4f4e81351cd57cef2c31e627b525e82e3f68400db9d74427257989980cfdd",
+    "Scholar_Question_3_1_Answers": "2888eaa1b768b88341bf5f1ba231fbd77efbb5bc9ede8a04f5a62f77b57fd6e9",
+    "Scholar_Question_3_2": "90f7556535081bbaecba9aac9030ecc8fb5cddc788b289dd8a1ce87828850065",
+    "Scholar_Question_3_2_Answers": "2043c38449758899dedc11e5da9ff651cf7f69b8fc5367744898e732859bf3ac",
+    "Cook_Intro": "2a42ff4c5b735cb1f851f22d5511dadf3b28b93522dcd6ab5426a4cf53e29900",
+    "Cook_Intro_Yes": "a61c13cb290aa1568482fc6948f16407e40f11e481b6bdb57008341c5ebc4509",
+    "Cook_Intro_Yes2": "4ff15ac400efd8dd190e830ae49a8b22b847b15a3d07ff6eac1509a18b6593c6",
+    "Cook_Intro_Yes3": "0c5f8e3b1e64b991c47f8b25bd10451905369697e3ad90569da3efcf4d992c04",
+    "Cook_Ingredient0": "e343988aa482279da2b6efe128935db191dbe020b4a563c88f7f58902b24e08f",
+    "Cook_Ingredient1": "71275e26d35bf3bcb1421a839f11b21b8e4cc8f420ee45c8afe91435ae7fafa1",
+    "Cook_Ingredient2": "ca14ef5b12e93e1c73ef883a4f21d331149b52c096df602fe116aa59fc9874f4",
+    "Cook_Ingredient3": "31eebece2b73375fcd117e71db7261d98d91bf0647f0f0038c4b4cdae99eaaf3",
+    "Cook_Ingredient4": "dbe63bf56b312b9ba5ce88c928857fb1a8683568acbaaf3ab781c0f37f083a03"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated all fifteen textual quiz and chef strings directly from English and preserved the numeric garbage-can answer array byte-exact with an explicit reason.",
+      "Applied reviewed Каменна риба, Ледено рибе, Лавова змиорка and Мълнър terms while retaining every placeholder, number and comma-delimited answer slot in source order.",
+      "Reread the quiz compositions and complete chef opening for grammatical fit, menu clarity and gender-neutral player address; the final wording required no further correction."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "ae317183703491d145daed9974ebdf35ceb6778fa67258dbb8b6922a09b871f7"
+  }
+}

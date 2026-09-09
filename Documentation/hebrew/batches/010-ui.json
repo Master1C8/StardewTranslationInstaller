@@ -1,0 +1,464 @@
+{
+  "id": "010-ui",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Strings/UI": "ea02f5523d75e54663b7bd7c1df9487f4c321fb1a1fb126c713d039d33e0710f"
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Hi",
+      "english": "Hi!",
+      "translation": "היי!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Taunt",
+      "english": "Taunt",
+      "translation": "התגרות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Uh",
+      "english": "Uh",
+      "translation": "אה..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Music",
+      "english": "Music",
+      "translation": "מוזיקה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Jar",
+      "english": "Jar",
+      "translation": "צנצנת"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparatedWallets",
+      "english": "{0} has split up the farm's funds. Everyone gets {1}g for themselves.",
+      "translation": "כספי החווה חולקו בידי {0}. כל אחד מקבל {1}g לעצמו.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergedWallets",
+      "english": "{0} has merged everyone's funds.",
+      "translation": "הכספים של כולם אוחדו בידי {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SentMoney",
+      "english": "{0} has sent {1} {2}g",
+      "translation": "הועברו {2}g מ{0} אל {1}",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergeWallets",
+      "english": "{0} has filed for everyone's funds to be combined.",
+      "translation": "הוגשה בקשה מטעם {0} לאיחוד הכספים של כולם."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergeWalletsCancel",
+      "english": "{0} has cancelled combining everyone's funds.",
+      "translation": "איחוד הכספים של כולם בוטל ביוזמת {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparateWallets",
+      "english": "{0} has filed for everyone's funds to be split up.",
+      "translation": "הוגשה בקשה מטעם {0} לחלוקת הכספים של כולם."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparateWalletsCancel",
+      "english": "{0} has cancelled splitting up everyone's funds.",
+      "translation": "חלוקת הכספים של כולם בוטלה ביוזמת {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted1mil",
+      "english": "{0} has gifted over 1,000,000g in total. That's very generous!",
+      "translation": "מ{0} ניתנו במתנה יותר מ-1,000,000g בסך הכול. איזו נדיבות!",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted100k",
+      "english": "{0} has gifted over 100,000g in total. Not bad!",
+      "translation": "מ{0} ניתנו במתנה יותר מ-100,000g בסך הכול. לא רע!",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted10k",
+      "english": "{0} has gifted over 10,000g in total.",
+      "translation": "מ{0} ניתנו במתנה יותר מ-10,000g בסך הכול.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted1k",
+      "english": "{0} has gifted over 1,000g in total.",
+      "translation": "מ{0} ניתנו במתנה יותר מ-1,000g בסך הכול.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Sent1g",
+      "english": "{0} sent {1} 1g... Don't spend it all in one place!",
+      "translation": "הועבר 1g מ{0} אל {1}... אל תבזבזו הכול במקום אחד!",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1mil_Male",
+      "english": "{0} has earned 1,000,000g on his own.",
+      "translation": "{0} הרוויח 1,000,000g בכוחות עצמו.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned100k_Male",
+      "english": "{0} has earned 100,000g on his own.",
+      "translation": "{0} הרוויח 100,000g בכוחות עצמו.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned10k_Male",
+      "english": "{0} has earned 10,000g on his own.",
+      "translation": "{0} הרוויח 10,000g בכוחות עצמו.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1k_Male",
+      "english": "{0} has earned 1,000g on his own.",
+      "translation": "{0} הרוויח 1,000g בכוחות עצמו.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1mil_Female",
+      "english": "{0} has earned 1,000,000g on her own.",
+      "translation": "{0} הרוויחה 1,000,000g בכוחות עצמה.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned100k_Female",
+      "english": "{0} has earned 100,000g on her own.",
+      "translation": "{0} הרוויחה 100,000g בכוחות עצמה.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned10k_Female",
+      "english": "{0} has earned 10,000g on her own.",
+      "translation": "{0} הרוויחה 10,000g בכוחות עצמה.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1k_Female",
+      "english": "{0} has earned 1,000g on her own.",
+      "translation": "{0} הרוויחה 1,000g בכוחות עצמה.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BundleDonate",
+      "english": "{0} donated '{1}' to a bundle.",
+      "translation": "הפריט '{1}' נתרם לחבילה בידי {0}.",
+      "contextNote": "Item names and quantities have variable grammatical gender/number; generic noun or quantity phrase keeps correct agreement even for one item."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer0",
+      "english": "{0} just defeated a {1}, completing a monster eradication goal.",
+      "translation": "ניצחון של {0} על {1} השלים כעת יעד חיסול מפלצות."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer1",
+      "english": "{0} just defeated a {1}, and Marlon is very pleased.",
+      "translation": "ניצחון נוסף של {0} על {1}, ומרלון מרוצה מאוד."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer2",
+      "english": "{0} kept the valley safe by defeating a {1}.",
+      "translation": "הניצחון של {0} על {1} שמר על ביטחון העמק."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer3",
+      "english": "{0} has culled the local {1} population, and everyone feels a little safer!",
+      "translation": "האוכלוסייה המקומית של {1} צומצמה בידי {0}, וכולם מרגישים קצת יותר בטוחים!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_IridiumToolUpgrade",
+      "english": "{0} got the {1}.",
+      "translation": "הפריט {1} הגיע לידי {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LuauSoup",
+      "english": "{0} put '{1}' into the potluck soup.",
+      "translation": "הפריט '{1}' הוכנס למרק המשותף בידי {0}.",
+      "contextNote": "Item names and quantities have variable grammatical gender/number; generic noun or quantity phrase keeps correct agreement even for one item."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_JunimoKartHighScore",
+      "english": "{0} just got a new 'Best Score' in Junimo Kart!",
+      "translation": "נקבע שיא חדש בג'ונימו קארט בידי {0}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_0",
+      "english": "Crumble Cavern",
+      "translation": "המערה המתפוררת"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_1",
+      "english": "Slippery Slopes",
+      "translation": "המדרונות החלקלקים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_4",
+      "english": "Red Hot Rollercoaster",
+      "translation": "רכבת ההרים הלוהטת"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_2",
+      "english": "The Gem Sea Giant",
+      "translation": "ענק ים אבני החן"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_3",
+      "english": "Ghastly Galleon",
+      "translation": "ספינת הרפאים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_5",
+      "english": "Slomp's Stomp",
+      "translation": "הרקיעה של סלומפ"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_6",
+      "english": "Sunset Speedway",
+      "translation": "מסלול המרוצים בשקיעה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_8",
+      "english": "???",
+      "translation": "???",
+      "preservationReason": "Intentionally hidden level name, punctuation only."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_9",
+      "english": "Glowshroom Grotto",
+      "translation": "מערת הפטריות הזוהרות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NPC_Busy",
+      "english": "{0} is busy right now...",
+      "translation": "ל{0} אין פנאי כרגע..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_Name",
+      "english": "{0} Pond",
+      "translation": "בריכת {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_EmptyPond",
+      "english": "Empty Pond",
+      "translation": "בריכה ריקה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ConfirmEmpty",
+      "english": "Are you sure you want to remove all the fish and return the pond to its original state?",
+      "translation": "האם אתם בטוחים שברצונכם להסיר את כל הדגים ולהחזיר את הבריכה למצבה המקורי?"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ChangeNetting",
+      "english": "Change Appearance",
+      "translation": "שינוי מראה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_Population",
+      "english": "Population: {0}/{1}",
+      "translation": "אוכלוסייה: {0}/{1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusNoFish",
+      "english": "This pond is empty...",
+      "translation": "הבריכה הזאת ריקה..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk0",
+      "english": "\"We're doing fine!\"",
+      "translation": "\"שלומנו טוב!\""
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk1",
+      "english": "\"Nothing to complain about!\"",
+      "translation": "\"אין על מה להתלונן!\""
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk2",
+      "english": "\"Everything is okay!\"",
+      "translation": "\"הכול בסדר!\""
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk3",
+      "english": "\"We're feeling pretty good!\"",
+      "translation": "\"אנחנו מרגישים די טוב!\""
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk4",
+      "english": "\"We're feeling healthy!\"",
+      "translation": "\"אנחנו מרגישים בריאים!\""
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk5",
+      "english": "The fish look happy.",
+      "translation": "הדגים נראים מרוצים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk6",
+      "english": "The fish seem to be thriving.",
+      "translation": "נראה שהדגים משגשגים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk_Coral",
+      "english": "The {0} are doing well.",
+      "translation": "ה{0} במצב טוב."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequest_Bring",
+      "english": "Bring",
+      "translation": "הביאו"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending0",
+      "english": "\"You know, {1} {0} would liven things up around here!\"",
+      "translation": "\"אתם יודעים, עם {0} בכמות של {1}, יהיה כאן הרבה יותר מעניין!\"",
+      "contextNote": "Item names and quantities have variable grammatical gender/number; generic noun or quantity phrase keeps correct agreement even for one item."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending1",
+      "english": "\"If it's not too much to ask... could you bring us {1} {0}?\"",
+      "translation": "\"אם זו לא בקשה מוגזמת... תוכלו להביא לנו {0} בכמות של {1}?\"",
+      "contextNote": "Item names and quantities have variable grammatical gender/number; generic noun or quantity phrase keeps correct agreement even for one item."
+    }
+  ]
+}

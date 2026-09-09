@@ -1,0 +1,89 @@
+{
+  "id": "102-marriage-spouse-rooms-krobus-and-no-bed",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the final MarriageDialogue records: Emily and Shane’s spouse rooms, all Krobus weather and home lines, and every missing-bed complaint. Each line was checked for natural Ukrainian, character voice, humor, emotional tone, and canonical Krobus and Sewers terminology. Dialogue separators, random-choice markers, emotion markers, the player token, stage directions, and all source keys were preserved. All 211 MarriageDialogue records are now covered together with the preceding batches; the full-locale final audits remain pending.",
+    "reviewedTextSHA256": "fee927a9236be0da5d9ffcbb07515dbfa11a4caacc2714783eec6b965e8f8f4f",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 2
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "spouseRoom_Emily",
+      "english": "I'm going to spend some time with the parrot today. It breaks my heart that he'll never fly again.$u",
+      "translation": "Сьогодні я трохи побуду з папугою. Серце крається від того, що він уже ніколи не літатиме.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "spouseRoom_Shane",
+      "english": "#$c .5#Beer or cider? Sometimes life can be challenging.#$e#Hi, @. I'll just hang out in here today and uh... maybe sweep the floor a little bit or something.",
+      "translation": "#$c .5#Пиво чи сидр? Іноді життя ставить перед нами непрості випробування.#$e#Привіт, @. Сьогодні я просто посиджу тут і, е-е... може, трохи підмету підлогу чи щось таке.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "Rainy_Day_Krobus",
+      "english": "Ah, it's more humid today with the rain... I feel a lot more comfortable.",
+      "translation": "Ох, сьогодні через дощ вологіше... Мені значно зручніше.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "Rainy_Night_Krobus",
+      "english": "The sound of the rain reminds me of the sewers... it's comforting.#$e#The sewers were my refuge... I felt safe there. But don't worry... I feel the same way about my new home, too.",
+      "translation": "Шум дощу нагадує мені Каналізацію... Це заспокоює.#$e#Каналізація була моїм прихистком... Там я почувався в безпеці. Але не хвилюйся... У новому домі я теж почуваюся так само.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "Indoor_Day_Krobus",
+      "english": "I wish I could help you on the farm, but I can't go out in the sun...",
+      "translation": "Хотілося б допомогти тобі на фермі, але мені не можна виходити на сонце...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "Indoor_Night_Krobus",
+      "english": "Hi, @. Welcome home. You look like you've been working hard out there!$h",
+      "translation": "Привіт, @. Вітаю вдома. Схоже, там було чимало важкої роботи!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "Outdoor_Krobus",
+      "english": "On a day like this, I can enjoy the outdoors with you. This is really nice!$h#$b#Just let me know if you see anyone coming, so I can hide.$u",
+      "translation": "У такий день я можу побути надворі разом із тобою. Як же тут добре!$h#$b#Тільки скажи, якщо побачиш, що хтось іде, щоб я встиг сховатися.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "NoBed_0",
+      "english": "Where am I supposed to sleep...?$s",
+      "translation": "І де мені тепер спати...?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "NoBed_1",
+      "english": "I wasn't able to sleep well last night...$s",
+      "translation": "Минулої ночі мені не вдалося добре виспатися...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "NoBed_2",
+      "english": "I had to sleep on the floor last night...$s",
+      "translation": "Минулої ночі мені довелося спати на підлозі...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue",
+      "key": "NoBed_3",
+      "english": "Did something happen to our bed...?$s",
+      "translation": "З нашим ліжком щось сталося...?$s",
+      "reviewed": true
+    }
+  ]
+}

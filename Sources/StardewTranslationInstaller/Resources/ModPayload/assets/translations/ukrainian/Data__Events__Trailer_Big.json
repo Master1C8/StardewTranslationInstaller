@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Trailer_Big",
+      "When": {
+        "Language": "uk-vnrevival"
+      },
+      "Entries": {
+        "503180/f Pam 2250/A pamHouseUpgrade/A pamHouseUpgradeAnonymous/Hn pamHouseUpgrade": "shaneTheme/-1000 -1000/farmer 18 11 1 Pam 25 9 1/skippable/specificTemporarySprite pamYobaStatue/viewport 25 9 true/move farmer 6 0 1/move farmer 0 -1 1/faceDirection Pam 2/pause 300/speak Pam \"Гей, малече...\"/faceDirection Pam 1/pause 500/speak Pam \"А я тут молюся...\"/pause 500/move farmer 3 0 0/move farmer 0 -1 3/pause 500/speak Pam \"Оце моя нова статуя «Знак Посудини».#$b#...Замовила на Joja.com із безплатною доставкою за два дні. Тільки не кажи П’єру.\"/pause 1000/faceDirection Pam 2/pause 400/faceDirection Pam 3/pause 500/faceDirection Pam 2/pause 500/faceDirection Pam 1/speak Pam \"...Я потроху облаштовуюсь у новому будинку. Тут справді чудово. Уже почуваюся як удома. Я дуже вдячна за цей новий затишок.$h\"/pause 500/faceDirection Pam 2/pause 1000/showFrame Pam 25/pause 1000/animate Pam false true 250 26 27/pause 400/emote farmer 8/pause 500/textAboveHead Pam \"Ой, вибач...\"/pause 1000/stopAnimation Pam/pause 950/speak Pam \"*шморгає носом*... Просто...$s#$b#...Я мала б так радіти...$s\"/showFrame Pam 0/faceDirection Pam 1/speak Pam \"...Але я так і не змогла пити менше пива... Я зовсім не змінилася...$s\"/pause 500/emote farmer 28/pause 500/speak Pam \"Уже давно... я відчуваю, ніби в моєму житті чогось бракує, @... $s#$b#Я завжди думала, що справа в грошах... Просто в бідності... розумієш? Тож гадала, що цей будинок усе владнає. Але... не владнав.$s#$b#Тому... Тому я й замовила цю статую.\"/pause 1000/question fork0 \"Скажи щось Пем:#Добре, що в тебе з’явилася надія#Вибач, Пем, але Йоби не існує...\"/fork positive/friendship Pam -1000/pause 500/speak Pam \"Це не смішно! ...Я відкриваю тобі душу, а ти ось як відповідаєш? Що, в ім’я Порожнечі, з тобою не так?$u\"/faceDirection Pam 3/shake Pam 10000/emote Pam 12/pause 1000/speak Pam \"Мені байдуже, що ти кажеш... Я вірю в Йобу! І не тільки я! А тепер забирайся.$4\"/pause 1000/move farmer 0 1 3/move farmer -6 0 3 true/end",
+        "positive": "pause 100/emote farmer 56/pause 500/speak Pam \"Ха! Ну поглянь на мене! На старості років я стала такою сентиментальною, еге ж? ...Хе-хе.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Дякую, що слухаєш, малече\"/pause 5000/end"
+      }
+    }
+  ]
+}

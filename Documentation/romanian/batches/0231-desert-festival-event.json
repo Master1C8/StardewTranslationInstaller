@@ -1,0 +1,24 @@
+{
+  "locale": "ro",
+  "target": "Data/Events/DesertFestival",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "The sole Desert Festival event record contains no player-visible text. Its complete event command stream was reviewed twice and remains byte-identical.",
+  "entries": {
+    "PlayerKilled": {
+      "source": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "translation": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "preservationReason": "Technical event record with no player-visible text; every command remains byte-identical.",
+      "eventReview": {
+        "commands": "exactly-preserved",
+        "visibleTextSegments": 0
+      }
+    }
+  }
+}

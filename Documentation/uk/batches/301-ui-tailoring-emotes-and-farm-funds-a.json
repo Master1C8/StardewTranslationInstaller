@@ -1,0 +1,434 @@
+{
+  "id": "301-ui-tailoring-emotes-and-farm-funds-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 UI strings covering the Mini-Jukebox, tailoring and dyeing, emote labels, shared farm funds and money milestones. Canonical glossary terms, sewing-machine controls, concise icon meanings, gender-specific earnings, currency notation, placeholders and language-independent markers were checked against the English source.",
+    "reviewedTextSHA256": "911488cd6d6c7f05d1cc11bd7303f8caa861aa2ec6468564a523d078a7ccceed",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 86
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Mini_JukeBox_Off",
+      "english": "Off",
+      "translation": "Вимкнено",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Mini_JukeBox_NotFarmPlay",
+      "english": "The Mini-Jukebox can only be played on your farm!",
+      "translation": "Мініпрогравач можна вмикати лише на твоїй фермі!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Mini_JukeBox_OutdoorRainy",
+      "english": "The Mini-Jukebox cannot be played in the rain!",
+      "translation": "Мініпрогравач не можна вмикати під дощем!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_MissingIngredients",
+      "english": "Place cloth or dyeable clothing in the feed and materials in the spool to begin tailoring.",
+      "translation": "Поклади тканину або одяг, який можна фарбувати, у подавач, а матеріали — на котушку, щоб почати пошиття.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Busy",
+      "english": "Now tailoring...",
+      "translation": "Триває пошиття...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Valid",
+      "english": "Press the power button to begin tailoring!",
+      "translation": "Натисни кнопку живлення, щоб почати шиття!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_InvalidRecipe",
+      "english": "The current materials cannot be used to tailor an item!",
+      "translation": "Із цих матеріалів не можна пошити річ!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_NotDyeable",
+      "english": "The clothing item in the feed is not dyeable!",
+      "translation": "Одяг у подавачі не можна фарбувати!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_MakeResult",
+      "english": "You'll Make:",
+      "translation": "Буде створено:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_MakeResultUnknown",
+      "english": "???",
+      "translation": "???",
+      "reviewed": true,
+      "preserveReason": "Language-independent symbol or unknown-result marker preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Feed",
+      "english": "Feed",
+      "translation": "Подавач",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Spool",
+      "english": "Spool",
+      "translation": "Котушка",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Clothes_Dyeable",
+      "english": "Dyeable.",
+      "translation": "Можна фарбувати.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_Help",
+      "english": "Place an item of each color into the dye pots in order to dye any dyeable clothes you're wearing.",
+      "translation": "Поклади по одному предмету кожного кольору в горщики з фарбою, щоб пофарбувати свій одяг, придатний до фарбування.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_CanDye",
+      "english": "Press the Dye button to color your clothes!",
+      "translation": "Натисни кнопку «Фарбувати», щоб пофарбувати одяг!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_WillDye",
+      "english": "Will dye:",
+      "translation": "Буде пофарбовано:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_NoDyeable",
+      "english": "You aren't wearing any dyeable clothes.",
+      "translation": "На тобі немає одягу, який можна пофарбувати.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Input_EmoteButton",
+      "english": "Emote Menu",
+      "translation": "Меню емоцій",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Happy",
+      "english": "Happy",
+      "translation": "Радість",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Sad",
+      "english": "Sad",
+      "translation": "Сум",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Heart",
+      "english": "Heart",
+      "translation": "Серце",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Exclamation",
+      "english": "Exclamation",
+      "translation": "Знак оклику",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Note",
+      "english": "Note",
+      "translation": "Нота",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Sleep",
+      "english": "Sleep",
+      "translation": "Сон",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Game",
+      "english": "Game",
+      "translation": "Гра",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Question",
+      "english": "Question",
+      "translation": "Знак питання",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_X",
+      "english": "X",
+      "translation": "X",
+      "reviewed": true,
+      "preserveReason": "Language-independent symbol or unknown-result marker preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Pause",
+      "english": "Pause",
+      "translation": "Пауза",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Blush",
+      "english": "Blush",
+      "translation": "Рум’янець",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Angry",
+      "english": "Angry",
+      "translation": "Злість",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Yes",
+      "english": "Yes",
+      "translation": "Так",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_No",
+      "english": "No",
+      "translation": "Ні",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Sick",
+      "english": "Sick",
+      "translation": "Недуга",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Laugh",
+      "english": "Laugh",
+      "translation": "Сміх",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Surprised",
+      "english": "Surprised",
+      "translation": "Подив",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Hi",
+      "english": "Hi!",
+      "translation": "Привіт!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Taunt",
+      "english": "Taunt",
+      "translation": "Глузування",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Uh",
+      "english": "Uh",
+      "translation": "Е-е",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Music",
+      "english": "Music",
+      "translation": "Музика",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Jar",
+      "english": "Jar",
+      "translation": "Банка",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparatedWallets",
+      "english": "{0} has split up the farm's funds. Everyone gets {1}g for themselves.",
+      "translation": "{0} розділяє кошти ферми. Кожен отримує по {1}g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergedWallets",
+      "english": "{0} has merged everyone's funds.",
+      "translation": "{0} об’єднує кошти всіх гравців.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SentMoney",
+      "english": "{0} has sent {1} {2}g",
+      "translation": "Переказ від {0} для {1}: {2}g",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergeWallets",
+      "english": "{0} has filed for everyone's funds to be combined.",
+      "translation": "{0} подає заявку на об’єднання коштів усіх гравців.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergeWalletsCancel",
+      "english": "{0} has cancelled combining everyone's funds.",
+      "translation": "{0} скасовує об’єднання коштів усіх гравців.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparateWallets",
+      "english": "{0} has filed for everyone's funds to be split up.",
+      "translation": "{0} подає заявку на розділення коштів усіх гравців.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparateWalletsCancel",
+      "english": "{0} has cancelled splitting up everyone's funds.",
+      "translation": "{0} скасовує розділення коштів усіх гравців.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted1mil",
+      "english": "{0} has gifted over 1,000,000g in total. That's very generous!",
+      "translation": "Загальна сума подарунків від {0} перевищує 1 000 000g. Оце щедрість!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted100k",
+      "english": "{0} has gifted over 100,000g in total. Not bad!",
+      "translation": "Загальна сума подарунків від {0} перевищує 100 000g. Непогано!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted10k",
+      "english": "{0} has gifted over 10,000g in total.",
+      "translation": "Загальна сума подарунків від {0} перевищує 10 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted1k",
+      "english": "{0} has gifted over 1,000g in total.",
+      "translation": "Загальна сума подарунків від {0} перевищує 1 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Sent1g",
+      "english": "{0} sent {1} 1g... Don't spend it all in one place!",
+      "translation": "Переказ від {0} для {1}: ціла 1g... Не витрать усе одразу!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1mil_Male",
+      "english": "{0} has earned 1,000,000g on his own.",
+      "translation": "{0} самостійно заробив 1 000 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned100k_Male",
+      "english": "{0} has earned 100,000g on his own.",
+      "translation": "{0} самостійно заробив 100 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned10k_Male",
+      "english": "{0} has earned 10,000g on his own.",
+      "translation": "{0} самостійно заробив 10 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1k_Male",
+      "english": "{0} has earned 1,000g on his own.",
+      "translation": "{0} самостійно заробив 1 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1mil_Female",
+      "english": "{0} has earned 1,000,000g on her own.",
+      "translation": "{0} самостійно заробила 1 000 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned100k_Female",
+      "english": "{0} has earned 100,000g on her own.",
+      "translation": "{0} самостійно заробила 100 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned10k_Female",
+      "english": "{0} has earned 10,000g on her own.",
+      "translation": "{0} самостійно заробила 10 000g.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1k_Female",
+      "english": "{0} has earned 1,000g on her own.",
+      "translation": "{0} самостійно заробила 1 000g.",
+      "reviewed": true
+    }
+  ]
+}

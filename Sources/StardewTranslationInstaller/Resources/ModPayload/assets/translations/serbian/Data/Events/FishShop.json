@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FishShop",
+      "When": {
+        "Language": "sr-vnrevival"
+      },
+      "Entries": {
+        "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"Охо!\"/pause 500/move Willy 1 0 2/speak Willy \"Улази... осећај се као код куће...\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"Аха... добра је то ствар. Рибе луде за њом.#$b#Само... овај... добро опери руке након што их умочиш у те сокове...$s\"/speak Willy \"Мирис уме да се задржи и до седам недеља, ${младићу^девојко}$...\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"Дакле... хваташ ли много рибе?\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #Да#Не#Превише је тешко...(break)emote Willy 20\\speak Willy \"Аха! ${Рибар^Рибарка}$ по мом укусу...$h\"\\pause 500\\speak Willy \"${Рибару увек можеш веровати^На рибарку увек можеш рачунати}$...\"\\speak Willy \"Бар је тако говорио мој стари тата. Хаха!$h#$b#Само тако настави... ако ухватиш сваку рибу у овим водама, чека те посебна награда...\"(break)emote Willy 28\\speak Willy \"Пецање није за тебе, а? Баш штета...$s\"(break)emote Willy 16\\speak Willy \"Да, то је тежак спорт... нарочито на почетку.#$b#Пробај Штап за обуку. Продајем га управо овде, по веома ниској цени.#$b#Користи Штап за обуку док не стекнеш мало више искуства.\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #Шта није у реду?#Да ли је све у реду?(break)pause 100(break)pause 100/pause 400/speak Willy \"Да... па, посао у последње време иде лоше.$s#$b#Све је почело отприлике кад је стари Друштвени центар пропао... моја риба се више не продаје као некада...#$b#Радим двоструко више само да бих саставио крај с крајем!\"/faceDirection Willy 2/pause 300/speak Willy \"Немам времена за сопствене пројекте...$s#$b#Али ако овде посао поново крене, можда ћу имати времена да ти нешто покажем...\"/move Willy -1 0 0/playMusic none/speak Willy \"Хех, хех... да. Тамо позади је... „стара пријатељица“ која памти и боље дане...$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"Једног дана, ${младићу^девојко}$... видећеш на шта мислим.\"/pause 2000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "0603-special-order-strings-133-145",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/SpecialOrderStrings",
+  "status": "reviewed",
+  "entries": {
+    "Marlon_DF_0_Objective": "Убий 10 {Monster:LocalizedName}.",
+    "Marlon_DF_Monster_0_LocalizedName": "Змии",
+    "Marlon_DF_Monster_1_LocalizedName": "Пурпурни слаймове",
+    "Marlon_DF_Monster_2_LocalizedName": "Мумии",
+    "Marlon_DF_1_Name": "Спускане в дълбините",
+    "Marlon_DF_1_Text": "Стигни до ниво 30 в Черепната пещера.",
+    "Marlon_DF_1_Objective": "Стигни до ниво 30 в Черепната пещера.",
+    "Marlon_DF_2_Name": "Лов на съкровища",
+    "Marlon_DF_2_Text": "Събери {Treasure:Count} {Treasure:LocalizedName} от Черепната пещера.",
+    "Marlon_DF_2_Objective": "Събери {Treasure:Count} {Treasure:LocalizedName}.",
+    "Marlon_DF_Item_0_LocalizedName": "Омнигеоди",
+    "Marlon_DF_Item_1_LocalizedName": "парчета Иридиева руда",
+    "Marlon_DF_Item_2_LocalizedName": "Призматични отломки"
+  },
+  "preserveReasons": {},
+  "sourceHashes": {
+    "Marlon_DF_0_Objective": "e4dc47e12c462163f39f13de82a7f30722771dc8e3f8e0fa6a57281cea7009d1",
+    "Marlon_DF_Monster_0_LocalizedName": "7f1bbdc508bc6a4945eef56f0a6e16794045bee9ad4f43a52c195bd5a7cd8596",
+    "Marlon_DF_Monster_1_LocalizedName": "50eea187ec3122c537b0e700c14acef86805b616d5aeff5179050af61d91720f",
+    "Marlon_DF_Monster_2_LocalizedName": "085a2e3b587f90cda1153f750cb55d87eaebb3ed024bb274ba1bfcad952f1cb7",
+    "Marlon_DF_1_Name": "b4d80cda29affe1fe8d62f4a222a4160b699471f27c442b1125c0cb3f839ea7b",
+    "Marlon_DF_1_Text": "5c9d2a6762b028578fd0480f8be76fcec68bfef7f91f7c3630dee26cb09a120b",
+    "Marlon_DF_1_Objective": "5c9d2a6762b028578fd0480f8be76fcec68bfef7f91f7c3630dee26cb09a120b",
+    "Marlon_DF_2_Name": "f9488b73b1e7d8471d8dd242e3e71ce4a2ec35136126ba9f50fc554b81554ef9",
+    "Marlon_DF_2_Text": "5f29b8be59d251c21485bf6cf4bb1825a624d24065ffbbb9cc0c05656928c73d",
+    "Marlon_DF_2_Objective": "8da90900dcb06dce098aa001ba8629d1fb218bba063f1235fa472318b8824f05",
+    "Marlon_DF_Item_0_LocalizedName": "83e16f840636d1ab90ead9f76647faff605148f59d56b958684b34d089e4ca73",
+    "Marlon_DF_Item_1_LocalizedName": "66d2a7bbb04e88f1a5eb47149f272234f42a0ed4aeb159c833348f228e3e8589",
+    "Marlon_DF_Item_2_LocalizedName": "aa0c2ff76bfb3d8714c054ee2f7d930ca3f9f04c27323c1f31bfa30950985894"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 13,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread Strings/SpecialOrderStrings source ordinals 133–145 directly from English, completing Marlon’s three Desert Festival challenges.",
+      "Applied established Черепната пещера, Змия, Мумия, слайм, Омнигеода, Иридиева руда and Призматичен отломък terminology in the runtime substitution phrases.",
+      "Preserved all monster and treasure placeholders and counts while checking that every localized-name value composes with both the request and objective templates."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "034db0948589399129af1f73af6cad9de4caae3e2664bc1437dcdc221cb5ef56"
+  }
+}

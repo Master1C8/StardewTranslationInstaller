@@ -1,0 +1,1898 @@
+{
+  "schemaVersion": 1,
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "phase": "complete",
+  "sourceOfTruth": "/Users/antonkrutov/.codex/worktrees/b054/StardewTranslationInstaller",
+  "deliveryRoot": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+  "commitAuthorized": false,
+  "sourceRoot": "/Users/antonkrutov/Developer/data/stardew-english-unpacked",
+  "sourceAssetCount": 238,
+  "sourceRecordCount": 14725,
+  "denominatorProvisional": false,
+  "reviewedGameRecords": 14725,
+  "projectPercent": 100.0,
+  "glossary": {
+    "endpoint": "https://vnrevival.fun/games/stardew-valley/glossary?locale=bg&offset=0&limit=1000",
+    "fetchedAt": "2026-09-05T09:49:22.805457+00:00",
+    "entries": 673,
+    "liveCanonicalParity": true,
+    "englishSnapshotParity": true,
+    "pass": 5,
+    "reviewedThrough": 673,
+    "consecutiveCleanFullAudits": 2,
+    "locked": true,
+    "pendingCorrectionEntries": 0,
+    "initialReviewComplete": true,
+    "appliedCorrectionEntries": 98,
+    "workingSnapshotCanonicalParity": true,
+    "workingSnapshotSha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+    "passHistory": [
+      {
+        "pass": 1,
+        "entriesRead": 673,
+        "correctionEntries": 98,
+        "clean": false
+      },
+      {
+        "pass": 2,
+        "entriesRead": 673,
+        "correctionEntries": 31,
+        "clean": false
+      },
+      {
+        "pass": 3,
+        "entriesRead": 673,
+        "correctionEntries": 1,
+        "clean": false
+      },
+      {
+        "pass": 4,
+        "entriesRead": 673,
+        "correctionEntries": 0,
+        "clean": true,
+        "focus": "Full source fidelity, terminology, Bulgarian grammar and naturalness; all entries reread after pass 3 correction."
+      },
+      {
+        "pass": 5,
+        "entriesRead": 673,
+        "correctionEntries": 0,
+        "clean": true,
+        "focus": "Cold Bulgarian all-entry reading in reverse order: meaning, grammar, register, terminology and naturalness."
+      }
+    ],
+    "canonicalSynchronized": true,
+    "canonicalEnglishSha256": "100dd0c9f06f25159a3189a9cce3022a99aac1a6ea89ac86fb2f48505e775487",
+    "canonicalStructuralCheck": "passed",
+    "canonicalTests": {
+      "passed": 24,
+      "failed": 1,
+      "failure": "Existing Thai weapon-enchantment critical-term fixture differs from its current locale; all non-bg bytes were preserved by this task."
+    }
+  },
+  "pending": [],
+  "lastAppliedBatch": "0002-ui",
+  "projectAudits": [
+    {
+      "trigger": "First 1% milestone and underscore delimiter rule",
+      "recordsRead": 160,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "newEditorialIssues": 0,
+      "batchIds": [
+        "0001-ui",
+        "0002-ui",
+        "0003-ui"
+      ]
+    },
+    {
+      "trigger": "Numeric, currency and editorial-hash validation rules",
+      "recordsChecked": 220,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changed numeric amount, removed currency marker and changed wording after editorial approval rejected."
+    },
+    {
+      "trigger": "Allow explicitly reviewed originally empty source; continue rejecting blank translations",
+      "recordsChecked": 280,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Missing preservation reason and empty translation of nonempty source rejected."
+    },
+    {
+      "trigger": "Second 1% milestone and Bulgarian thousands-separator rule",
+      "recordsRead": 340,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "newEditorialIssues": 0,
+      "batchIds": [
+        "0001-ui",
+        "0002-ui",
+        "0003-ui",
+        "0004-ui",
+        "0005-ui",
+        "0006-ui"
+      ]
+    },
+    {
+      "trigger": "Numeric grouping immediately before currency suffix",
+      "recordsChecked": 400,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Equivalent grouped amounts accepted; missing g or changed amount rejected."
+    },
+    {
+      "trigger": "Third 1% milestone",
+      "recordsChecked": 480,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "Every batch fully read against source and approved at current wording hash; full section editorial pass due when Strings/UI completes."
+    },
+    {
+      "trigger": "Fourth 1% milestone",
+      "recordsChecked": 600,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "Every batch fully read against source and approved at current wording hash; full section editorial pass due when Strings/UI completes."
+    },
+    {
+      "trigger": "Runtime-proven fish singleton numeric localization rule",
+      "recordsChecked": 660,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Wrong number, currency, injected substitution and untranslated some rejected; exact singleton 1 accepted.",
+      "runtimeEvidence": "runtime-fragments.md"
+    },
+    {
+      "trigger": "Fifth 1% milestone, button/plus/waiver marker rules and Bulgarian article hook",
+      "recordsChecked": 835,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removed *, + and ¾ markers rejected.",
+      "runtimeProbe": "Compiled postfix passed 20 cases; live SMAPI Harmony patch registration remains pending."
+    },
+    {
+      "trigger": "Sixth 1% milestone and Strings/UI completion",
+      "recordsChecked": 887,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "Every batch read against source and approved at its current hash; full section reread pending."
+    },
+    {
+      "trigger": "Lexicon grammar support and section completion",
+      "recordsChecked": 907,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Empty random alternative rejected despite unchanged separator count."
+    },
+    {
+      "trigger": "StringsFromCSFiles grammar support",
+      "recordsChecked": 954,
+      "technicalErrors": 0,
+      "technicalWarnings": 0
+    },
+    {
+      "trigger": "Seventh 1% milestone and dialogue color control identifier rule",
+      "recordsChecked": 1074,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "A translated slash-prefixed dialogue color identifier was rejected; all 16 identifiers are preserved byte-for-byte with explicit reasons."
+    },
+    {
+      "trigger": "Eighth 1% milestone and received-item runtime composition rules",
+      "recordsChecked": 1194,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "A singleton article gap and reversed plural item/count placeholders were both rejected after inspecting the installed-game caller."
+    },
+    {
+      "trigger": "Ninth 1% milestone and composed gift-gossip fragment boundaries",
+      "recordsChecked": 1374,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing either a required leading fragment space or the required trailing space was rejected."
+    },
+    {
+      "trigger": "Tenth 1% milestone and wedding placeholder integrity",
+      "recordsChecked": 1494,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing either the spouse token or a player-name marker from the wedding introduction was rejected."
+    },
+    {
+      "trigger": "Eleventh 1% milestone, map hours and preserved brand names",
+      "recordsChecked": 1674,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing an opening-hour number and removing the JojaMart preservation reason were both rejected."
+    },
+    {
+      "trigger": "Twelfth 1% milestone and shop dialogue composition",
+      "recordsChecked": 1794,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing the furniture article placeholder and removing asterisks from a stage direction were both rejected."
+    },
+    {
+      "trigger": "Thirteenth 1% milestone, title-screen counts and minigame rating placeholder",
+      "recordsChecked": 1914,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing the 10,000-start count and removing the board-game rating placeholder were both rejected."
+    },
+    {
+      "trigger": "Fourteenth 1% milestone and generated fishing-quest fragment syntax",
+      "recordsChecked": 2094,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing the player-gender selector caret and removing a required leading quest-summary newline were both rejected."
+    },
+    {
+      "trigger": "Fifteenth 1% milestone and full generated item-request gender selectors",
+      "recordsChecked": 2214,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing either the caret separator or the broken-bar separator from full gender-selected quest text was rejected; the validator now protects both delimiters."
+    },
+    {
+      "trigger": "Sixteenth 1% milestone, combat-stat markers and localized keyboard labels",
+      "recordsChecked": 2394,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing a Galaxy Sword line-break caret or a weapon-level placeholder was rejected; replacing a translated key label with Latin-only wording produced a warning."
+    },
+    {
+      "trigger": "Seventeenth 1% milestone, item-recovery composition and Krobus dialogue controls",
+      "recordsChecked": 2514,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing either a Krobus dialogue branch token or an item-recovery placeholder was rejected."
+    },
+    {
+      "trigger": "StringsFromMaps grammar activation and map-sign glyph protection",
+      "recordsChecked": 2580,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "The validator now protects both the backtick left-arrow glyph and greater-than right-arrow glyph used by map signs."
+    },
+    {
+      "trigger": "Eighteenth 1% milestone and first full map-string audit",
+      "recordsChecked": 2701,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing either directional map-sign glyph from a reviewed forest sign was rejected."
+    },
+    {
+      "trigger": "Nineteenth 1% milestone, map letters and satirical product quantities",
+      "recordsChecked": 2821,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing a letter caret or the percent marker from a Joja shelf label was rejected."
+    },
+    {
+      "trigger": "Twentieth 1% milestone, completed map asset and Tools grammar activation",
+      "recordsChecked": 3001,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing the value-recovery percent marker from the trash-can description was rejected."
+    },
+    {
+      "trigger": "Twenty-first 1% milestone and completed Weapons asset",
+      "recordsChecked": 3135,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing the Shadow Dagger soul count from its source-equivalent grouped value was rejected."
+    },
+    {
+      "trigger": "Twenty-second 1% milestone, ordered credits grammar and preservation audit",
+      "recordsChecked": 3248,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a preserved image-command rectangle in the ordered credits list was rejected."
+    },
+    {
+      "trigger": "Schedule-dialogue grammar activation through Harvey",
+      "recordsChecked": 3330,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing a schedule dialogue branch marker was rejected."
+    },
+    {
+      "trigger": "Twenty-third 1% milestone and schedule dialogue through Penny",
+      "recordsChecked": 3387,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing a schedule emote token or changing the numeric appointment time was rejected."
+    },
+    {
+      "trigger": "Twenty-fourth 1% milestone, all Strings assets complete, and character-dialogue grammar activation",
+      "recordsChecked": 3559,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing a dialogue question command or changing a player-gender selector separator was rejected."
+    },
+    {
+      "trigger": "Twenty-fifth 1% milestone and complete Abigail dialogue",
+      "recordsChecked": 3709,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "Every character-dialogue batch was read against its English source and approved at its current wording hash."
+    },
+    {
+      "trigger": "Twenty-sixth 1% milestone and complete dialogue through Demetrius",
+      "recordsChecked": 3870,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred applied batches validate cleanly against their pinned English records and glossary hash."
+    },
+    {
+      "trigger": "Twenty-seventh 1% milestone and complete dialogue through Elliott",
+      "recordsChecked": 3989,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All applied batches validate cleanly; Dwarf and Elliott dialogue received complete source-to-target review."
+    },
+    {
+      "trigger": "Twenty-eighth 1% milestone and complete dialogue through Evelyn",
+      "recordsChecked": 4144,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred six applied batches validate cleanly against source and glossary hashes."
+    },
+    {
+      "trigger": "Twenty-ninth 1% milestone and complete dialogue through Gus",
+      "recordsChecked": 4269,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ten applied batches validate cleanly; Haley dialogue is reviewed through source ordinal 52."
+    },
+    {
+      "trigger": "Thirtieth 1% milestone and complete dialogue through Harvey",
+      "recordsChecked": 4416,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred fourteen applied batches validate cleanly against source and glossary hashes."
+    },
+    {
+      "trigger": "Thirty-first 1% milestone and complete dialogue through Krobus",
+      "recordsChecked": 4574,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighteen applied batches validate cleanly; Jas, Jodi, Kent and Krobus dialogue received complete review."
+    },
+    {
+      "trigger": "Thirty-second 1% milestone and complete dialogue through LeoMainland",
+      "recordsChecked": 4762,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred twenty-three applied batches validate cleanly; Leah, Leo and LeoMainland dialogue received complete source-to-target review, and Lewis is reviewed through source ordinal 59."
+    },
+    {
+      "trigger": "Thirty-third 1% milestone and complete dialogue through Marnie",
+      "recordsChecked": 4866,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred twenty-six applied batches validate cleanly; Lewis, Linus and Marnie dialogue received complete source-to-target review."
+    },
+    {
+      "trigger": "Thirty-fourth 1% milestone and MarriageDialogue through source ordinal 179",
+      "recordsChecked": 5046,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred twenty-nine applied batches validate cleanly; the first one hundred eighty MarriageDialogue records received complete source-to-target review, including generic spouse and player-neutral rewrites."
+    },
+    {
+      "trigger": "Thirty-fifth 1% milestone and complete MarriageDialogue through Alex",
+      "recordsChecked": 5198,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred thirty-three applied batches validate cleanly; MarriageDialogue, Abigail marriage dialogue and Alex marriage dialogue received complete source-to-target review."
+    },
+    {
+      "trigger": "Thirty-sixth 1% milestone and complete marriage dialogue through Emily",
+      "recordsChecked": 5310,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred thirty-five applied batches validate cleanly; Elliott and Emily marriage dialogue received complete source-to-target review."
+    },
+    {
+      "trigger": "Thirty-seventh 1% milestone and Krobus marriage dialogue through source ordinal 59",
+      "recordsChecked": 5466,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred thirty-eight applied batches validate cleanly; Haley and Harvey marriage dialogue received complete source-to-target review, and Krobus marriage dialogue is reviewed through source ordinal 59."
+    },
+    {
+      "trigger": "Thirty-eighth 1% milestone and complete marriage dialogue through Maru",
+      "recordsChecked": 5625,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred forty-one applied batches validate cleanly; Krobus, Leah and Maru marriage dialogue received complete source-to-target review, including protected runtime fragment compositions."
+    },
+    {
+      "trigger": "Thirty-ninth 1% milestone and complete marriage dialogue through Sebastian",
+      "recordsChecked": 5798,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred forty-four applied batches validate cleanly; Penny, Sam and Sebastian marriage dialogue received complete source-to-target review, including player-neutral rewrites and glossary-locked festival terminology."
+    },
+    {
+      "trigger": "Fortieth 1% milestone and Maru dialogue through source ordinal 59",
+      "recordsChecked": 5924,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred forty-six applied batches validate cleanly; Shane marriage dialogue and the first sixty Maru dialogue records received complete source-to-target review, including player-neutral rewrites and control-flow verification."
+    },
+    {
+      "trigger": "Forty-first 1% milestone and Pam dialogue through source ordinal 59",
+      "recordsChecked": 6051,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred forty-nine applied batches validate cleanly; Maru and Mister Qi dialogue, plus the first sixty Pam dialogue records, received complete source-to-target review with player-neutral wording and glossary-locked terminology."
+    },
+    {
+      "trigger": "Forty-second 1% milestone and complete dialogue through Pierre",
+      "recordsChecked": 6225,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred fifty-three applied batches validate cleanly; Pam, Penny and Pierre dialogue received complete source-to-target review with player-neutral rewrites, explicit gender branches, and glossary-locked terminology."
+    },
+    {
+      "trigger": "Forty-third 1% milestone and Sam dialogue through source ordinal 59",
+      "recordsChecked": 6343,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred fifty-five applied batches validate cleanly; Robin dialogue and the first sixty Sam dialogue records received complete source-to-target review with player-neutral rewrites, explicit gender branches, and glossary-locked terminology."
+    },
+    {
+      "trigger": "Forty-fourth 1% milestone and Sebastian dialogue through source ordinal 59",
+      "recordsChecked": 6481,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred fifty-eight applied batches validate cleanly; Sandy dialogue and the first sixty Sebastian dialogue records received complete source-to-target review with player-neutral rewrites, relationship branches, and glossary-locked terminology."
+    },
+    {
+      "trigger": "Forty-fifth 1% milestone and complete dialogue through Vincent",
+      "recordsChecked": 6644,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred sixty-three applied batches validate cleanly; Sebastian, Shane and Vincent dialogue received complete source-to-target review with player-neutral rewrites, explicit gender branches, and glossary-locked terminology."
+    },
+    {
+      "trigger": "Forty-sixth 1% milestone, dialogue section completion, and Data/Achievements grammar introduction",
+      "recordsChecked": 6779,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred sixty-seven applied batches validate cleanly; all canonical character dialogue is complete, Data/Achievements received a full field-by-field review, and achievement metadata is structurally locked."
+    },
+    {
+      "trigger": "Data/AquariumFish and Data/Boots grammar introduction",
+      "recordsChecked": 6869,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred sixty-nine applied batches validate cleanly; all aquarium animation records were classified and preserved byte-for-byte, and every boot record retained exact identity/gameplay metadata with reviewed Bulgarian descriptions and display names."
+    },
+    {
+      "trigger": "Data/Bundles grammar introduction",
+      "recordsChecked": 6900,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy applied batches validate cleanly; each bundle identity, reward, ingredient, color, count and sprite field is locked, and all thirty-one display labels were reviewed with the Bulgarian bundle-name wrapper."
+    },
+    {
+      "trigger": "Forty-seventh 1% milestone and Data/ChairTiles grammar introduction",
+      "recordsChecked": 6960,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-one applied batches validate cleanly; every chair tile record was classified as non-player-facing structural metadata and preserved byte-for-byte."
+    },
+    {
+      "trigger": "Data/CookingRecipes grammar introduction",
+      "recordsChecked": 7041,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-two applied batches validate cleanly; every cooking recipe value was classified as non-player-facing recipe metadata and preserved byte-for-byte, while visible recipe names remain sourced from translated object data."
+    },
+    {
+      "trigger": "Forty-eighth 1% milestone and Data/CraftingRecipes grammar introduction",
+      "recordsChecked": 7191,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-three applied batches validate cleanly; every crafting recipe value was classified as non-player-facing recipe metadata and preserved byte-for-byte, including optional localized-name lookup tokens."
+    },
+    {
+      "trigger": "Forty-ninth 1% milestone and Data/EngagementDialogue grammar introduction",
+      "recordsChecked": 7217,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-four applied batches validate cleanly; all twenty-six engagement lines received a full source-to-target review with control tokens preserved and player-gender assumptions removed."
+    },
+    {
+      "trigger": "Data/Events/AbandonedJojaMart event-script grammar introduction",
+      "recordsChecked": 7218,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-five applied batches validate cleanly; the complete event command skeleton and all three localized sprite-text boundaries were verified."
+    },
+    {
+      "trigger": "Data/Events/AnimalShop event-script grammar introduction",
+      "recordsChecked": 7222,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-six applied batches validate cleanly; all thirty-seven player-facing quoted fields were reviewed, all five temporary-actor identifiers remained exact, and every event command byte outside quoted fields was preserved."
+    },
+    {
+      "trigger": "Data/Events/ArchaeologyHouse event-script grammar introduction",
+      "recordsChecked": 7226,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-seven applied batches validate cleanly; all twenty-eight dialogue and literary fields were reviewed and every event-script byte outside quoted fields remained exact."
+    },
+    {
+      "trigger": "Data/Events/Backwoods event-script grammar introduction",
+      "recordsChecked": 7227,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-eight applied batches validate cleanly; all twelve quoted lines and four quick-question choices were reviewed, and the full event command and branch skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/BathHouse_Pool event-script grammar introduction",
+      "recordsChecked": 7229,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred seventy-nine applied batches validate cleanly; all seven dialogue fields and their question branches were reviewed, the command-only heartbreak branch was justified and preserved, and both complete event skeletons remained exact."
+    },
+    {
+      "trigger": "Data/Events/Beach event-script grammar introduction",
+      "recordsChecked": 7233,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighty applied batches validate cleanly; Beach source ordinals 0–3 received full field review and every event-script byte outside the thirty-two localized quoted fields remained exact."
+    },
+    {
+      "trigger": "Data/Events/Beach section completion",
+      "recordsChecked": 7241,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighty-two applied batches validate cleanly; all twelve Beach records and ninety-four quoted fields were fully reviewed, the command-only Krobus scene was justified and preserved, and every event command skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/BoatTunnel event-script grammar introduction",
+      "recordsChecked": 7242,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighty-three applied batches validate cleanly; all nine dialogue fields and both quick-question choices were reviewed, locked terminology was applied, and the complete event command and branch skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/BusStop event-script grammar and event-visible-text audit rule introduction",
+      "recordsChecked": 7246,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighty-four applied batches validate cleanly; all thirty-four player-facing quoted fields were reviewed, the command-only seasonal Krobus event was justified and preserved, and event prose checks now exclude structural commands."
+    },
+    {
+      "trigger": "Data/Events/CommunityCenter and DesertFestival event-script grammar introduction",
+      "recordsChecked": 7248,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighty-six applied batches validate cleanly; all thirteen Community Center dialogue fields were reviewed, the command-only Desert Festival event was justified and preserved, and both command skeletons remained exact."
+    },
+    {
+      "trigger": "Data/Events/ElliottHouse event-script grammar introduction",
+      "recordsChecked": 7253,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighty-seven applied batches validate cleanly; all twenty-five dialogue and choice fields were reviewed, player-gender assumptions were removed, and every event command skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/Farm event-script grammar introduction",
+      "recordsChecked": 7264,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred eighty-eight applied batches validate cleanly; Farm source ordinals 0–10 and all thirty-seven quoted fields were reviewed, the command-only event was justified and preserved, and every command skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/Farm section completion and quick-question grammar extension",
+      "recordsChecked": 7280,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ninety applied batches validate cleanly; all twenty-seven Farm records, one hundred fifteen quoted fields and all quick-question branches were reviewed, the command-only record was justified and preserved, and every command skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/FarmHouse event-script grammar introduction",
+      "recordsChecked": 7289,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ninety-one applied batches validate cleanly; FarmHouse source ordinals 0–8, forty-eight quoted fields and both multi-branch quick questions were fully reviewed, and every event command skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/FarmHouse section completion",
+      "recordsChecked": 7294,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ninety-three applied batches validate cleanly; all fourteen FarmHouse records, one hundred twelve quoted fields and every quick-question choice were fully reviewed, and every event command skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/FishShop event-script grammar introduction",
+      "recordsChecked": 7295,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ninety-four applied batches validate cleanly; all fourteen Fish Shop dialogue fields and both quick-question sets were fully reviewed, locked terminology was applied, and the complete event and branch skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/Forest event-script grammar introduction",
+      "recordsChecked": 7300,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ninety-five applied batches validate cleanly; Forest source ordinals 0–4 and all fifty-five quoted fields were fully reviewed, and every event command skeleton remained exact."
+    },
+    {
+      "trigger": "Data/Events/Forest section completion and quick-question grammar extension",
+      "recordsChecked": 7311,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ninety-eight applied batches validate cleanly; all sixteen Forest records, one hundred forty-seven quoted fields and both quick-question choice lists were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/HaleyHouse event-script grammar introduction",
+      "recordsChecked": 7315,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All one hundred ninety-nine applied batches validate cleanly; Haley House source ordinals 0–3 and all twenty-four quoted fields were fully reviewed, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/HaleyHouse section completion",
+      "recordsChecked": 7322,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred two applied batches validate cleanly; all eleven Haley House records and eighty-eight quoted fields were fully reviewed, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/HarveyRoom event-script grammar introduction and section completion",
+      "recordsChecked": 7323,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred three applied batches validate cleanly; the complete Harvey Room record and all eight quoted fields were fully reviewed, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Hospital section completion",
+      "recordsChecked": 7328,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred five applied batches validate cleanly; all five Hospital records and forty quoted fields were fully reviewed, duplicate Harvey Room dialogue remained exact, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/IslandHut quick-question grammar introduction and section completion",
+      "recordsChecked": 7329,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred six applied batches validate cleanly; the complete Island Hut record, all sixteen quoted fields and both quick-question choice lists were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/IslandNorth quick-question grammar introduction and section completion",
+      "recordsChecked": 7330,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred seven applied batches validate cleanly; the complete Island North record, all nineteen quoted fields and its three-choice quick question were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/IslandSouth quick-question grammar introduction and section completion",
+      "recordsChecked": 7333,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eight applied batches validate cleanly; all three Island South records, twenty-four quoted fields and the quick-question choice list were fully reviewed, the command-only departure was justified, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/IslandWest quick-question grammar introduction and section completion",
+      "recordsChecked": 7334,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred nine applied batches validate cleanly; the complete Island West record, all twenty quoted fields and all three quick-question choice lists were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/JoshHouse event-script and quick-question grammar introduction",
+      "recordsChecked": 7337,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred ten applied batches validate cleanly; Josh House source ordinals 0–2 and all nineteen quoted fields were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/JoshHouse section completion",
+      "recordsChecked": 7340,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred thirteen applied batches validate cleanly; all six Josh House records, fifty quoted fields and the quick-question choice list were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/LeahHouse section completion",
+      "recordsChecked": 7348,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred fifteen applied batches validate cleanly; all eight Leah House records and forty quoted fields were fully reviewed, the emotion-only rejection branch was justified, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/ManorHouse quick-question grammar introduction and section completion",
+      "recordsChecked": 7350,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred sixteen applied batches validate cleanly; both Manor House records, all forty-one quoted fields and both quick-question choices were fully reviewed, locked terminology was applied, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/Mine event-script grammar introduction and section completion",
+      "recordsChecked": 7353,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred seventeen applied batches validate cleanly; all three Mine records and fourteen quoted fields were fully reviewed, both romance branches and player responses were preserved, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Mountain event-script and quick-question grammar introduction",
+      "recordsChecked": 7356,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighteen applied batches validate cleanly; Mountain source ordinals 0–2 and all twenty-four quoted fields were fully reviewed, locked terminology was applied, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Fiftieth 1% milestone",
+      "recordsChecked": 7360,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred nineteen applied batches validate cleanly; Mountain source ordinals 3–6 and all twenty-five quoted fields were fully reviewed, and coverage reached exactly fifty percent with every protected event-script byte unchanged."
+    },
+    {
+      "trigger": "Data/Events/Mountain section completion",
+      "recordsChecked": 7366,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred twenty-one applied batches validate cleanly; all thirteen Mountain records, one hundred seven quoted fields and both quick-question choice lists were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/QiNutRoom event-script grammar introduction and section completion",
+      "recordsChecked": 7367,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred twenty-two applied batches validate cleanly; the complete Qi Nut Room record and all nine quoted fields were fully reviewed, locked late-game terminology was applied, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Railroad event-script grammar introduction",
+      "recordsChecked": 7368,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred twenty-three applied batches validate cleanly; Railroad source ordinal 0 and all nineteen quoted fields were fully reviewed, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Railroad section completion",
+      "recordsChecked": 7370,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred twenty-four applied batches validate cleanly; all three Railroad records and forty quoted fields were fully reviewed, the shared balloon sequence remained exact across both branches, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Saloon event-script grammar introduction",
+      "recordsChecked": 7373,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred twenty-five applied batches validate cleanly; Saloon source ordinals 0–2 and all thirty-three quoted fields were fully reviewed, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Saloon section completion",
+      "recordsChecked": 7382,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred twenty-eight applied batches validate cleanly; all twelve Saloon records and one hundred twenty-six quoted fields were fully reviewed, all repeated confrontation branches remained consistent, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/SamHouse event-script grammar introduction",
+      "recordsChecked": 7385,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred twenty-nine applied batches validate cleanly; Sam House source ordinals 0–2 and all twenty-one quoted fields were fully reviewed, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/SamHouse section completion",
+      "recordsChecked": 7389,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred thirty applied batches validate cleanly; all seven Sam House records and fifty quoted fields were fully reviewed, all conditional and romance branches remained exact, and every event-script byte outside quoted text remained unchanged."
+    },
+    {
+      "trigger": "Data/Events/SandyHouse event-script grammar introduction and section completion",
+      "recordsChecked": 7390,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred thirty-one applied batches validate cleanly; the complete Sandy House record and all three quoted fields were fully reviewed, locked terminology was applied, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/ScienceHouse event-script and quick-question grammar introduction",
+      "recordsChecked": 7393,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred thirty-two applied batches validate cleanly; Science House source ordinals 0–2 and all twenty-four quoted fields were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/ScienceHouse section completion",
+      "recordsChecked": 7397,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred thirty-five applied batches validate cleanly; all seven Science House records, eighty quoted fields and the complete quick-question choice list were fully reviewed, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/SebastianRoom event-script grammar introduction",
+      "recordsChecked": 7403,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred thirty-six applied batches validate cleanly; Sebastian Room source ordinals 0–5 and all twenty quoted fields were fully reviewed, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/SebastianRoom section completion",
+      "recordsChecked": 7421,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred forty-one applied batches validate cleanly; all twenty-four Sebastian Room records and every quoted tabletop-roleplay field were fully reviewed, all branches use consistent Solarion terminology, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/SeedShop event-script grammar introduction",
+      "recordsChecked": 7423,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred forty-two applied batches validate cleanly; Seed Shop source ordinals 0–1 and all six quoted fields were fully reviewed, both caret-separated dialogue branches remained intact, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/SeedShop quick-question grammar and section completion",
+      "recordsChecked": 7429,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred forty-eight applied batches validate cleanly; all eight Seed Shop records, every quoted field and all three unquoted quick-question choices were fully reviewed, all amounts and branch effects remained exact, and every protected event-script byte was unchanged."
+    },
+    {
+      "trigger": "Data/Events/Sewer event-script grammar introduction and section completion",
+      "recordsChecked": 7430,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred forty-nine applied batches validate cleanly; the complete Sewer event record and all ten quoted fields were fully reviewed, locked lore terminology was applied consistently, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Sunroom event-script and quick-question grammar introduction and section completion",
+      "recordsChecked": 7431,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred fifty applied batches validate cleanly; the complete Sunroom event record, all thirteen quoted fields and both quick-question choice lists were fully reviewed, established Caroline terminology was applied, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/Temp event-script grammar introduction",
+      "recordsChecked": 7434,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred fifty-one applied batches validate cleanly; Temp source ordinals 0–2 and all seven quoted fields were fully reviewed, the complete inline player-gender selector was localized with its syntax intact, and every event-script byte outside quoted text remained exact."
+    },
+    {
+      "trigger": "Data/Events/Temp section completion",
+      "recordsChecked": 7438,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred fifty-two applied batches validate cleanly; all seven Temp records and all forty-seven quoted fields were fully reviewed, both inline player-gender selectors were localized with their syntax intact, all four band variants remained structurally exact, and every event-script byte outside quoted text was unchanged."
+    },
+    {
+      "trigger": "Data/Events/Town event-script grammar introduction",
+      "recordsChecked": 7439,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred fifty-three applied batches validate cleanly; Town source ordinal 0 and all nineteen quoted fields were fully reviewed, every response branch and friendship effect remained exact, and every protected event-script byte was unchanged."
+    },
+    {
+      "trigger": "Data/Events/Town split-speech branch-count rule",
+      "recordsChecked": 7444,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred fifty-seven applied batches validate cleanly; Town source ordinal 5 and all eleven quoted fields were fully reviewed, each three-way split-speech sequence retained its exact branch count, and every protected event-script byte remained exact."
+    },
+    {
+      "trigger": "Data/Events/Town section completion",
+      "recordsChecked": 7466,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred seventy-nine applied batches validate cleanly; all 28 Town records, all 372 quoted player-facing fields and all 2 unquoted quick-question choices were fully reviewed, event command grammar and every response branch remained structurally exact, and the complete Town section is translated."
+    },
+    {
+      "trigger": "Data/Events/Trailer event-script grammar introduction",
+      "recordsChecked": 7467,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty applied batches validate cleanly; Trailer source ordinal 0 and all fourteen quoted fields were fully reviewed, both player-gender branches remained exact, and every protected event-script byte outside translated text was unchanged."
+    },
+    {
+      "trigger": "Data/Events/Trailer dialogue-branch command rule",
+      "recordsChecked": 7468,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-one applied batches validate cleanly; Trailer source ordinal 1 and all seven quoted fields were fully reviewed, all $q, $r and $p dialogue branch command sequences remained exact, and every protected event-script byte outside translated text was unchanged."
+    },
+    {
+      "trigger": "Data/Events/Trailer section completion",
+      "recordsChecked": 7469,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-two applied batches validate cleanly; all 3 Trailer records and all 26 quoted player-facing fields were fully reviewed, every embedded dialogue branch command and player-gender branch remained exact, and the complete Trailer section is translated."
+    },
+    {
+      "trigger": "Data/Events/Trailer_Big event-script grammar introduction",
+      "recordsChecked": 7470,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-three applied batches validate cleanly; Trailer_Big source ordinal 0 and all eleven quoted fields were fully reviewed, the quoted response-choice structure remained exact, and every protected event-script byte outside translated text was unchanged."
+    },
+    {
+      "trigger": "Data/Events/Trailer_Big section completion",
+      "recordsChecked": 7471,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-four applied batches validate cleanly; both Trailer_Big records and all 13 quoted player-facing fields were fully reviewed, the response fork and its quoted choice structure remained exact, and the complete Trailer_Big section is translated."
+    },
+    {
+      "trigger": "Data/Events/WizardHouse event-script grammar introduction",
+      "recordsChecked": 7472,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-five applied batches validate cleanly; WizardHouse source ordinal 0 and all twenty quoted fields were fully reviewed, all event commands and the junimo-note message structure remained exact, and every protected event-script byte outside translated text was unchanged."
+    },
+    {
+      "trigger": "Data/Events/WizardHouse section completion",
+      "recordsChecked": 7473,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-six applied batches validate cleanly; both WizardHouse records and all 27 quoted player-facing fields were fully reviewed, all event commands and control markers remained exact, and the complete WizardHouse section is translated."
+    },
+    {
+      "trigger": "Data/Events/Woods event-script grammar introduction",
+      "recordsChecked": 7474,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-seven applied batches validate cleanly; Woods source ordinal 0 and all six quoted fields were fully reviewed, all event commands and relationship prerequisites remained exact, and every protected event-script byte outside translated text was unchanged."
+    },
+    {
+      "trigger": "Data/Events/Woods section completion",
+      "recordsChecked": 7475,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-eight applied batches validate cleanly; both Woods records and all 14 quoted player-facing fields were fully reviewed, all event commands and control markers remained exact, and the complete Woods section is translated."
+    },
+    {
+      "trigger": "Data/ExtraDialogue text-record grammar introduction",
+      "recordsChecked": 7495,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred eighty-nine applied batches validate cleanly; ExtraDialogue source ordinals 0–19 were fully reviewed, all substitutions, dialogue markers and boundary whitespace remained exact, and all twenty translated records contain direct Bulgarian wording."
+    },
+    {
+      "trigger": "Fifty-first 1% milestone and ExtraDialogue response-branch command rule",
+      "recordsChecked": 7515,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred ninety applied batches validate cleanly; ExtraDialogue source ordinals 20–39 were fully reviewed, all embedded $q and $r response commands remained byte-exact, and coverage passed fifty-one percent with direct Bulgarian wording and locked Joja terminology."
+    },
+    {
+      "trigger": "Data/ExtraDialogue Skull Cavern event-script rule",
+      "recordsChecked": 7557,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred ninety-three applied batches validate cleanly; both ExtraDialogue Skull Cavern level-100 scripts and all eighteen quoted fields were fully reviewed, and every protected event command, numeric parameter and quoted-field delimiter remained exact."
+    },
+    {
+      "trigger": "Data/ExtraDialogue section completion and Summit fragment rule",
+      "recordsChecked": 7622,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred ninety-six applied batches validate cleanly; all 147 ExtraDialogue records were fully reviewed, both Skull Cavern event scripts and all seven multi-command Summit fragments retained exact command structure, randomized purchase templates were composition-checked against Bulgarian Lexicon forms, and the complete section is translated."
+    },
+    {
+      "trigger": "Data/Festivals/FestivalDates grammar introduction and section completion",
+      "recordsChecked": 7630,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred ninety-seven applied batches validate cleanly; all eight festival date labels were fully reviewed against the English source and the locked Bulgarian glossary, all date keys remained unchanged, and the complete FestivalDates section is translated."
+    },
+    {
+      "trigger": "Data/Festivals/fall16 structural grammar introduction",
+      "recordsChecked": 7650,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing the festival location/time record was rejected by both generic marker integrity and the target-specific structural-metadata rule.",
+      "editorialGate": "All two hundred ninety-eight applied batches validate cleanly; fall16 source ordinals 0–19 were fully reviewed, both structural festival records stayed byte-exact, and all eighteen player-facing records use direct Bulgarian wording and locked festival terminology."
+    },
+    {
+      "trigger": "Fifty-second 1% milestone",
+      "recordsChecked": 7670,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All two hundred ninety-nine applied batches validate cleanly; fall16 source ordinals 20–39 were fully reviewed against English, all player and dialogue markers remained exact, and coverage passed fifty-two percent with direct Bulgarian wording and locked festival terminology."
+    },
+    {
+      "trigger": "Data/Festivals/fall16 section completion",
+      "recordsChecked": 7724,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred two applied batches validate cleanly; all 94 fall16 source records were fully reviewed, all three structural festival records remained byte-exact, every player-facing field was translated directly from English, and the complete two-year Stardew Valley Fair asset is translated."
+    },
+    {
+      "trigger": "Data/Festivals/fall27 structural grammar introduction",
+      "recordsChecked": 7744,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing the first-year festival set-up command script was rejected by both generic marker integrity and the target-specific structural-metadata rule.",
+      "editorialGate": "All three hundred three applied batches validate cleanly; fall27 source ordinals 0–19 were fully reviewed, all structural metadata and the punctuation-only reaction stayed exact, and every translatable player-facing record uses direct Bulgarian wording and locked festival terminology."
+    },
+    {
+      "trigger": "Fifty-third 1% milestone",
+      "recordsChecked": 7804,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred six applied batches validate cleanly; fall27 source ordinals 60–79 were fully reviewed against English, every control marker remained exact, and coverage passed fifty-three percent with direct Bulgarian wording."
+    },
+    {
+      "trigger": "Data/Festivals/fall27 section completion",
+      "recordsChecked": 7818,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred seven applied batches validate cleanly; all 94 fall27 source records were fully reviewed, all four structural festival records remained byte-exact, every translatable player-facing field was translated directly from English, and the complete two-year Spirit’s Eve asset is translated."
+    },
+    {
+      "trigger": "Data/Festivals/spring13 structural and event-script grammar introduction",
+      "recordsChecked": 7827,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing an unquoted pause duration in AbbyWin was rejected by generic marker integrity and the target-specific event command-skeleton rule.",
+      "editorialGate": "All three hundred nine applied batches validate cleanly; spring13 source ordinals 0–8 were fully reviewed, all three structural records stayed byte-exact, and every quoted line in all five egg-hunt event scripts was translated with commands unchanged."
+    },
+    {
+      "trigger": "Data/Festivals/spring13 section completion",
+      "recordsChecked": 7900,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred thirteen applied batches validate cleanly; all 82 spring13 source records were fully reviewed, structural festival data and event commands remained exact, every player-facing field was translated directly from English, and the complete two-year Egg Festival asset is translated."
+    },
+    {
+      "trigger": "Data/Festivals/spring24 structural and event-script grammar introduction",
+      "recordsChecked": 7904,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred fourteen applied batches validate cleanly; spring24 source ordinals 0–3 were fully reviewed, both structural records stayed byte-exact, and the festival name and sole quoted first-year event line were translated with commands unchanged."
+    },
+    {
+      "trigger": "Fifty-fourth 1% milestone",
+      "recordsChecked": 7964,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred seventeen applied batches validate cleanly; spring24 source ordinals 44–63 were fully reviewed against English, every control marker remained exact, and coverage passed fifty-four percent with direct Bulgarian wording."
+    },
+    {
+      "trigger": "Data/Festivals/spring24 section completion",
+      "recordsChecked": 7985,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred eighteen applied batches validate cleanly; all 85 spring24 source records were fully reviewed, structural festival data and event commands remained exact, every player-facing field was translated directly from English, and the complete two-year Flower Dance asset is translated."
+    },
+    {
+      "trigger": "Data/Festivals/summer11 structural grammar introduction",
+      "recordsChecked": 7988,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred nineteen applied batches validate cleanly; summer11 source ordinals 0–2 were fully reviewed, both structural records stayed byte-exact, and the festival name uses the locked Луау terminology."
+    },
+    {
+      "trigger": "Data/Festivals/summer11 event-script grammar introduction",
+      "recordsChecked": 7998,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing an unquoted pause duration in the soup ceremony was rejected by generic marker integrity and the target-specific event command-skeleton rule.",
+      "editorialGate": "All three hundred twenty applied batches validate cleanly; summer11 source ordinals 3–12 were fully reviewed, the second-year set-up stayed byte-exact, and every quoted line in both ceremonies and all seven governor reactions was translated with commands unchanged."
+    },
+    {
+      "trigger": "Data/Festivals/summer11 section completion",
+      "recordsChecked": 8090,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred twenty-five applied batches validate cleanly; all 105 summer11 source records were fully reviewed, structural festival data and every event command remained exact, every player-facing field was translated directly from English, and the complete two-year Luau asset is translated."
+    },
+    {
+      "trigger": "Fifty-fifth 1% milestone and Data/Festivals/summer28 grammar introduction",
+      "recordsChecked": 8096,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred twenty-six applied batches validate cleanly; summer28 source ordinals 0–5 were fully reviewed, structural data and event commands stayed exact, and coverage reached fifty-five percent with locked festival terminology and preserved trailing whitespace."
+    },
+    {
+      "trigger": "Data/Festivals/summer28 section completion",
+      "recordsChecked": 8176,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred thirty applied batches validate cleanly; all 86 summer28 source records were fully reviewed, structural festival data and both event scripts remained exact, every player-facing field was translated directly from English, and the complete two-year Dance of the Moonlight Jellies asset is translated."
+    },
+    {
+      "trigger": "Data/Festivals/winter25 structural grammar introduction",
+      "recordsChecked": 8180,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred thirty-one applied batches validate cleanly; winter25 source ordinals 0–3 were fully reviewed, all three structural records stayed byte-exact, the Secret Santa dialogue tokens remained lookup identifiers, and the festival name uses locked terminology."
+    },
+    {
+      "trigger": "Data/Festivals/winter25 second-year structural grammar expansion",
+      "recordsChecked": 8240,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing the second-year Secret Santa command script was rejected by editorial-hash, generic marker-integrity, target-specific structural-metadata and preservation rules.",
+      "editorialGate": "All three hundred thirty-four applied batches validate cleanly; winter25 source ordinals 0–63 were fully reviewed, all first- and second-year structural records remained byte-exact, and every player-facing field uses direct Bulgarian wording with dialogue controls intact."
+    },
+    {
+      "trigger": "Fifty-sixth 1% milestone",
+      "recordsChecked": 8244,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred thirty-five applied batches validate cleanly; winter25 source ordinals 64–67 were fully reviewed against English, every dialogue and emotion marker remained exact, and coverage passed fifty-six percent with direct Bulgarian wording."
+    },
+    {
+      "trigger": "Data/Festivals/winter25 section completion",
+      "recordsChecked": 8269,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred thirty-seven applied batches validate cleanly; all 93 winter25 source records were fully reviewed, all five structural festival records stayed byte-exact, every player-facing field was translated directly from English, and the complete two-year Feast of the Winter Star asset is translated."
+    },
+    {
+      "trigger": "Data/Festivals/winter8 structural and event-script grammar introduction",
+      "recordsChecked": 8276,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing an unquoted main-event pause duration and changing a first-year setup coordinate were rejected by generic integrity and their target-specific event-skeleton or structural-metadata rules.",
+      "editorialGate": "All three hundred thirty-eight applied batches validate cleanly; winter8 source ordinals 0–6 and all eighteen quoted event fields were fully reviewed, both structural records stayed byte-exact, every event command remained unchanged, and the festival name uses locked Леден фестивал terminology."
+    },
+    {
+      "trigger": "Data/Festivals/winter8 section completion",
+      "recordsChecked": 8365,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred forty-three applied batches validate cleanly; all 96 winter8 source records and all 31 quoted event fields were fully reviewed, all three structural festival records and every event command stayed exact, every player-facing field was translated directly from English, and the complete two-year Festival of Ice asset is translated."
+    },
+    {
+      "trigger": "Fifty-seventh 1% milestone and Data/Fish structured-record grammar introduction",
+      "recordsChecked": 8391,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a fish behavior value was rejected by generic numeric integrity and the target-specific catch-metadata rule.",
+      "editorialGate": "All three hundred forty-four applied batches validate cleanly; Data/Fish source ordinals 0–25 were fully reviewed, all 26 names use direct Bulgarian wording consistent with prior dialogue, every catch and behavior field stayed byte-exact, and coverage passed fifty-seven percent."
+    },
+    {
+      "trigger": "Data/Fish section completion",
+      "recordsChecked": 8439,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred forty-seven applied batches validate cleanly; all 74 Data/Fish records were fully reviewed, all fish, algae, crustacean and mollusk names were translated directly from English, every behavior and catch field remained byte-exact, and the complete asset is translated."
+    },
+    {
+      "trigger": "Data/Furniture structured-record grammar introduction",
+      "recordsChecked": 8459,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a furniture price was rejected by generic numeric integrity and the target-specific furniture-metadata rule.",
+      "editorialGate": "All three hundred forty-eight applied batches validate cleanly; Data/Furniture source ordinals 0–19 were fully reviewed, all twenty furniture names use direct Bulgarian wording, and every type, placement, price, texture and localization-reference field stayed byte-exact."
+    },
+    {
+      "trigger": "Fifty-eighth 1% milestone",
+      "recordsChecked": 8538,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred fifty-two applied batches validate cleanly; Data/Furniture source ordinals 0–98 were fully reviewed, all furniture and decorative-object names use direct Bulgarian wording, every structural field remained byte-exact, and coverage passed fifty-eight percent."
+    },
+    {
+      "trigger": "Fifty-ninth 1% milestone",
+      "recordsChecked": 8685,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred sixty applied batches validate cleanly; Data/Furniture source ordinals 0–245 were fully reviewed, all names use direct Bulgarian wording, every structural field remained byte-exact, and coverage passed fifty-nine percent."
+    },
+    {
+      "trigger": "Sixtieth 1% milestone",
+      "recordsChecked": 8832,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred sixty-eight applied batches validate cleanly; Data/Furniture source ordinals 0–392 were fully reviewed, all names use direct Bulgarian wording or an explicit brand-glyph preservation, every structural field remained byte-exact, and coverage reached sixty percent."
+    },
+    {
+      "trigger": "Sixty-first 1% milestone",
+      "recordsChecked": 8980,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred seventy-six applied batches validate cleanly; Data/Furniture source ordinals 0–540 were fully reviewed, all names use direct Bulgarian wording or an explicit brand-glyph preservation, every structural field remained byte-exact, and coverage passed sixty-one percent."
+    },
+    {
+      "trigger": "Data/Furniture section completion",
+      "recordsChecked": 9084,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred eighty-one applied batches validate cleanly; all 645 Data/Furniture records were fully reviewed, every furniture and decor name was translated directly from English or explicitly preserved as a Joja brand glyph, every structural field remained byte-exact, and the complete asset is translated."
+    },
+    {
+      "trigger": "Data/HairData structural grammar introduction and section completion",
+      "recordsChecked": 9107,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a hairstyle sprite offset was rejected by generic numeric integrity, target-specific structural metadata and preservation rules.",
+      "editorialGate": "All three hundred eighty-two applied batches validate cleanly; all 23 Data/HairData records were classified as non-player-facing structural metadata and preserved byte-for-byte with explicit reasons, and the complete asset is reviewed."
+    },
+    {
+      "trigger": "Sixty-second 1% milestone and Data/Monsters structured-record grammar introduction",
+      "recordsChecked": 9127,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a monster combat-stat field was rejected by editorial-hash, generic marker-integrity and target-specific monster-metadata rules.",
+      "editorialGate": "All three hundred eighty-three applied batches validate cleanly; Data/Monsters source ordinals 0–19 were fully reviewed, all display names use direct Bulgarian wording and locked monster-family terminology, every combat, drop, movement and spawn field stayed byte-exact, and coverage passed sixty-two percent."
+    },
+    {
+      "trigger": "Data/Monsters section completion",
+      "recordsChecked": 9158,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred eighty-five applied batches validate cleanly; all 51 Data/Monsters records were fully reviewed, every display name was translated directly from its English display-name field with locked monster-family terminology, all fourteen structural fields remained byte-exact, and the complete asset is translated."
+    },
+    {
+      "trigger": "Data/NPCGiftTastes structured-record grammar introduction",
+      "recordsChecked": 9168,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a character gift identifier was rejected by editorial-hash, generic marker-integrity and target-specific gift-metadata rules.",
+      "editorialGate": "All three hundred eighty-six applied batches validate cleanly; the five universal gift-taste identifier lists were preserved byte-for-byte with explicit reasons, and all twenty-five reactions for Robin, Demetrius, Maru, Sebastian and Linus were translated directly from English with every identifier field intact."
+    },
+    {
+      "trigger": "Data/NPCGiftTastes section completion",
+      "recordsChecked": 9197,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred eighty-nine applied batches validate cleanly; all 39 Data/NPCGiftTastes records were fully reviewed, the five universal identifier lists remained byte-exact with explicit reasons, all 170 character gift reactions were translated directly from English, every item and category identifier and control marker stayed exact, and the complete asset is translated."
+    },
+    {
+      "trigger": "Data/PaintData structural grammar introduction and section completion",
+      "recordsChecked": 9209,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a building paint color offset was rejected by editorial-hash, generic marker-integrity, target-specific structural-metadata and preservation rules.",
+      "editorialGate": "All three hundred ninety applied batches validate cleanly; all 12 Data/PaintData records were classified as non-player-facing paint-mask metadata and preserved byte-for-byte with explicit reasons, and the complete asset is reviewed."
+    },
+    {
+      "trigger": "Data/Quests structured-record grammar introduction",
+      "recordsChecked": 9219,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a quest trigger field was rejected by editorial-hash, generic marker-integrity and target-specific quest-metadata rules.",
+      "editorialGate": "All three hundred ninety-one applied batches validate cleanly; Data/Quests source ordinals 0–9 were fully reviewed, all thirty player-facing title, description and objective fields were translated directly from English with player-neutral quest-log wording, and every quest type, target, trigger, reward and repeatability field remained byte-exact."
+    },
+    {
+      "trigger": "Sixty-third 1% milestone and Data/Quests section completion",
+      "recordsChecked": 9275,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All three hundred ninety-seven applied batches validate cleanly; all 66 Data/Quests records were fully reviewed, every title, description, objective and available completion reaction was translated directly from English, all quest types, targets, triggers, rewards and state metadata remained byte-exact, and coverage passed sixty-three percent."
+    },
+    {
+      "trigger": "Data/SecretNotes revealed-taste grammar introduction",
+      "recordsChecked": 9285,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a revealed-taste item identifier was rejected by editorial-hash, generic marker-integrity and target-specific secret-note rules.",
+      "editorialGate": "All three hundred ninety-eight applied batches validate cleanly; Data/SecretNotes source ordinals 0–9 were fully reviewed, all ten diary, list and clue texts were translated directly from English, and every caret layout marker, quantity and revealed-taste identifier remained exact."
+    },
+    {
+      "trigger": "Data/SecretNotes image-command grammar introduction",
+      "recordsChecked": 9295,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a preserved !image index was rejected by editorial-hash, generic marker-integrity, target-specific image-command and preservation rules.",
+      "editorialGate": "All three hundred ninety-nine applied batches validate cleanly; Data/SecretNotes source ordinals 10–19 were fully reviewed, six image commands stayed byte-exact with explicit reasons, and four clue texts were translated directly from English with every layout marker and number intact."
+    },
+    {
+      "trigger": "Data/SecretNotes section completion",
+      "recordsChecked": 9313,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred one applied batches validate cleanly; all 38 Data/SecretNotes records were fully reviewed, every prose note was translated directly from English, all ten image commands remained byte-exact with explicit reasons, every layout, number and revealed-taste token stayed exact, and the complete asset is translated."
+    },
+    {
+      "trigger": "Data/TV/CookingChannel structured-record grammar introduction",
+      "recordsChecked": 9321,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Adding an extra slash to a cooking-show description was rejected by editorial-hash, generic marker-integrity and target-specific name/description field-count rules.",
+      "editorialGate": "All four hundred two applied batches validate cleanly; CookingChannel source ordinals 0–7 were fully reviewed, all eight recipe names and host scripts were translated directly from English, the name/description delimiter and trailing whitespace remained exact, and player address stayed gender-neutral."
+    },
+    {
+      "trigger": "Data/TV/CookingChannel section completion",
+      "recordsChecked": 9345,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred five applied batches validate cleanly; all 32 CookingChannel records were fully reviewed, every recipe name and complete Queen of Sauce script was translated directly from English, all delimiters, numbers and boundary whitespace remained exact, and the complete asset is translated."
+    },
+    {
+      "trigger": "Data/TV/TipChannel grammar activation",
+      "recordsChecked": 9353,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred six applied batches validate cleanly; TipChannel source ordinals 0–7 were fully reviewed, all eight complete practical-advice scripts were translated directly from English, and every caret, quantity and boundary whitespace marker remained exact."
+    },
+    {
+      "trigger": "Data/TV/TipChannel section completion",
+      "recordsChecked": 9409,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred thirteen applied batches validate cleanly; all 64 TipChannel records were fully reviewed, every practical-advice script was translated directly from English, all repeated source text stayed identical, every caret, number and boundary whitespace marker remained exact, and the complete asset is translated."
+    },
+    {
+      "trigger": "Sixty-fourth 1% milestone and Data/animationDescriptions byte-exact grammar",
+      "recordsChecked": 9421,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing an animation frame was rejected by generic marker integrity, target-specific animation metadata and preservation rules.",
+      "editorialGate": "All four hundred fourteen applied batches validate cleanly; animationDescriptions source ordinals 0–11 were fully reviewed and preserved byte-exact as non-player-facing animation frame and behavior metadata."
+    },
+    {
+      "trigger": "Data/animationDescriptions section completion",
+      "recordsChecked": 9514,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred nineteen applied batches validate cleanly; all 105 Data/animationDescriptions records were fully reviewed and preserved byte-exact as non-player-facing animation frame, behavior, pose, offset and localized-reference metadata, completing the asset."
+    },
+    {
+      "trigger": "Sixty-fifth 1% milestone and Data/hats compound-record grammar",
+      "recordsChecked": 9568,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a hat draw or hair metadata field was rejected by the target-specific hat grammar while translated internal/display name pairs remain required to match.",
+      "editorialGate": "All four hundred twenty-two applied batches validate cleanly; Data/hats source ordinals 0–53 were fully reviewed, every visible name and description was translated directly from English, and all draw, hair, prismatic and texture metadata remained exact."
+    },
+    {
+      "trigger": "Data/hats section completion",
+      "recordsChecked": 9636,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred twenty-six applied batches validate cleanly; all 122 Data/hats records were fully reviewed, 121 visible names and descriptions were translated directly from English, one unknown question-mark record was justifiably preserved, every internal/display name pair matches, and all draw, hair, prismatic and texture metadata remained exact."
+    },
+    {
+      "trigger": "Sixty-sixth 1% milestone and Data/mail command grammar",
+      "recordsChecked": 9716,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing an attached item quantity was rejected by generic numeric and target-specific mail attachment-command checks.",
+      "editorialGate": "All four hundred thirty applied batches validate cleanly; Data/mail source ordinals 0–79 were fully reviewed, every complete letter and subject was translated directly from English, and all carets, placeholders, attachments, commands, quantities and subject delimiters remained exact."
+    },
+    {
+      "trigger": "Data/mail section completion",
+      "recordsChecked": 9815,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred thirty-five applied batches validate cleanly after the final section reread correction; all 179 Data/mail records were fully reviewed, every letter and subject was translated directly from English, both subjectless recovery messages stayed structurally exact, and all carets, placeholders, control tokens, attachments, quantities and delimiters remained exact."
+    },
+    {
+      "trigger": "Sixty-seventh 1% milestone and Strings/1_6_Strings event-command grammar",
+      "recordsChecked": 9863,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Changing a ForestPylonEvent pause duration was rejected by generic marker integrity and the target-specific quoted-dialogue event skeleton check.",
+      "editorialGate": "All four hundred thirty-eight applied batches validate cleanly; Strings/1_6_Strings source ordinals 0–47 were fully reviewed, every visible string and the pylon event dialogue were translated directly from English, and all command, dialogue, emotion, substitution and stage-direction markers remained exact."
+    },
+    {
+      "trigger": "Sixty-eighth 1% milestone and Strings/1_6_Strings scholar-array grammar",
+      "recordsChecked": 10010,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing one Scholar quiz option was rejected by the target-specific comma-delimited answer-slot count check.",
+      "editorialGate": "All four hundred forty-eight applied batches validate cleanly; Strings/1_6_Strings source ordinals 0–194 were fully reviewed, all visible event, festival, quiz, chef, race and proposition text was translated directly from English, and every runtime marker and structured answer slot remained exact."
+    }
+  ],
+  "nextFullAuditAtReviewedRecords": null,
+  "gameCursor": {
+    "target": "Data/Festivals/FestivalDates",
+    "reviewedThroughSourceOrdinal": -1,
+    "nextSourceOrdinal": 0
+  },
+  "fragmentDependencies": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Baby",
+      "requires": "Translate ChildTerm_Male/Female as момче/момиче; both are neuter. Inspect all pronoun consumers before selecting Pronoun_Male/Female, and ensure Нарекоха го works for either child. Earlier planned female я was only provisional and must not be applied mechanically.",
+      "resolved": true,
+      "verification": "Applied 0018-lexicon and read composed male/female notifications; Bulgarian neuter го and reflexive своя are correct."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_CanDye",
+      "requires": "Use Боядисай for the Dye action label and verify its matching UI text."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HouseUpgrade",
+      "requires": "Strings/Lexicon Possessive_Pronoun_Male and Possessive_Pronoun_Female both своя; runtime caller inspected. Confirm assembled sentences when Lexicon is applied.",
+      "resolved": true,
+      "verification": "Applied 0018-lexicon and read composed male/female notifications; Bulgarian neuter го and reflexive своя are correct."
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_*",
+      "requires": "Use reviewed neuter/adverbial Lexicon adjectives. Smell clauses can refer to миризма/ухание на нещо {adjective}; purchased-item clauses use нещо {adjective}; chef clause must accept adverbial vocabulary. Negative random nouns have mixed gender, so avoid gendered determiners. Keep every original token and placeholder."
+    },
+    {
+      "target": "Characters/Dialogue/MarriageDialogue and related consumers",
+      "key": "%adj/%noun",
+      "requires": "0020-cs-strings uses neuter random adjectives and normal Bulgarian nouns. Translate the four actual source consumers with gender-neutral constructions: нещо %adj, свързано с %noun; quoted constellation/nebula labels; and нещо гигантско, подобно на %noun. Verify compositions before resolving."
+    }
+  ],
+  "sectionAudits": [
+    {
+      "target": "Strings/UI",
+      "recordsRead": 887,
+      "newTranslationCorrections": 0,
+      "report": "ui-section-review.json"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "recordsRead": 20,
+      "variantsRead": 72,
+      "newTranslationCorrections": 0,
+      "runtimeEvidence": "runtime-fragments.md",
+      "note": "All source alternatives read in order; baby and house compositions verified."
+    }
+  ],
+  "currentAsset": null,
+  "fullAudits": [
+    {
+      "trigger": "Sixty-ninth 1% milestone",
+      "recordsChecked": 10157,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred fifty-eight applied batches validate cleanly; Strings/1_6_Strings source ordinals 0–341 were fully reviewed, including Desert Festival shops, Calico Statue mechanics, fishing-event notices and booth text, with every placeholder, markup token, quantity and layout marker preserved."
+    },
+    {
+      "trigger": "Seventieth 1% milestone",
+      "recordsChecked": 10304,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing a comma from one StarterChicken_Names pair was rejected by the dedicated thirty-pair slot validator.",
+      "editorialGate": "All four hundred sixty-eight applied batches validate cleanly; Strings/1_6_Strings source ordinals 0–488 were fully reviewed through the mastery, trinket, Fizz, bookseller, raccoon, Meadowlands Farm, starter-name and Fish Frenzy content with all placeholders, structured slots, runtime markers and quantities preserved."
+    },
+    {
+      "trigger": "Strings/1_6_Strings section completion",
+      "recordsChecked": 10407,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing one StarterChicken_Names comma and removing one house-renovation field were both rejected by their dedicated structure validators.",
+      "editorialGate": "All four hundred seventy-five applied batches validate cleanly after the section reread; all 592 Strings/1_6_Strings records were translated directly from English or justified as internal structure, and every placeholder, command fragment, markup token, structured choice, name pair, renovation field, quantity and boundary marker remained valid."
+    },
+    {
+      "trigger": "Seventy-first 1% milestone",
+      "recordsChecked": 10452,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing one field from a three-field house renovation remained rejected by the dedicated renovation grammar validator.",
+      "editorialGate": "All four hundred seventy-eight applied batches validate cleanly; Strings/1_6_Strings is complete and Strings/BigCraftables source ordinals 0–44 were fully reviewed, with the initial workstation, storage, decoration, light and cooking names and descriptions translated directly from English and all markers preserved."
+    },
+    {
+      "trigger": "Seventy-second 1% milestone",
+      "recordsChecked": 10599,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred eighty-eight applied batches validate cleanly; Strings/BigCraftables source ordinals 0–191 were fully reviewed, including production machines, decorative objects, arcade systems, collectible Rarecrows and ostrich incubation, with locked glossary terminology and every source marker and collection counter preserved."
+    },
+    {
+      "trigger": "Strings/BigCraftables section completion",
+      "recordsChecked": 10720,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All four hundred ninety-six applied batches validate cleanly; all 313 Strings/BigCraftables records were fully reviewed, every player-facing name and description was translated directly from English or justifiably preserved as an unknown internal label, locked glossary terminology was applied, and every counter, quantity, boundary space and source marker remained valid."
+    },
+    {
+      "trigger": "Seventy-third 1% milestone and Strings/Buildings activation",
+      "recordsChecked": 10746,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "negativeChecks": "Removing the {1} pond-type placeholder from WrongFishType was rejected by generic control-marker integrity.",
+      "editorialGate": "All four hundred ninety-eight applied batches validate cleanly; Strings/BigCraftables is complete and Strings/Buildings source ordinals 0–25 were fully reviewed through construction, hay, mill, fish-pond, paint and initial livestock-building content, with every placeholder and capacity exact."
+    },
+    {
+      "trigger": "Strings/Buildings section completion",
+      "recordsChecked": 10789,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred one applied batches validate cleanly; all 69 Strings/Buildings records were fully reviewed, every construction, capacity, building, teleport, production and paint-interface string was translated directly from English with locked glossary terminology, and every placeholder and numeric limit remained exact."
+    },
+    {
+      "trigger": "Strings/BundleNames section completion",
+      "recordsChecked": 10808,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred two applied batches validate cleanly; all 19 Strings/BundleNames records were translated directly from English and reviewed in the Bulgarian runtime composition „Пакет „{0}““, with every remixed bundle theme distinct and locked festival terminology applied."
+    },
+    {
+      "trigger": "Seventy-fourth 1% milestone and Strings/Characters activation",
+      "recordsChecked": 10893,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred eight applied batches validate cleanly; Strings/BundleNames is complete and Strings/Characters source ordinals 0–84 were fully reviewed through relationship labels, Abigail mine dialogue, henchman and Krobus quest dialogue, saloon reactions and Movie Theater invitation states, with every placeholder, control marker and boundary space preserved."
+    },
+    {
+      "trigger": "Strings/Characters section completion",
+      "recordsChecked": 10979,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred fourteen applied batches validate cleanly; all 171 Strings/Characters records were fully reviewed, including relationship fragments, mine and quest dialogue, Movie Theater flows, telephone systems, branching calls and memory prompts, with locked terminology and every placeholder, dialogue token, choice delimiter, sound marker and boundary space preserved."
+    },
+    {
+      "trigger": "Strings/EnchantmentNames section completion",
+      "recordsChecked": 10997,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred fifteen applied batches validate cleanly; all 18 Strings/EnchantmentNames records were translated directly from English and matched the locked weapon, tool and fishing enchantment glossary groups exactly, with the Artful and Master labels kept distinct."
+    },
+    {
+      "trigger": "Strings/Events section completion",
+      "recordsChecked": 11024,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred sixteen applied batches validate cleanly; all 27 Strings/Events records were translated directly from English, including birth and adoption flows, animal naming, overnight notices, Night Market text, comet narration and book titles, with every placeholder and event marker preserved."
+    },
+    {
+      "trigger": "Seventy-fifth 1% milestone and Strings/FarmAnimals activation",
+      "recordsChecked": 11040,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred seventeen applied batches validate cleanly; Strings/Events is complete and Strings/FarmAnimals source ordinals 0–15 were fully reviewed through all animal display types, sleep state and the first newborn mood line, with locked species terminology and gender-safe dynamic-name composition."
+    },
+    {
+      "trigger": "Strings/FarmAnimals section completion",
+      "recordsChecked": 11054,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred eighteen applied batches validate cleanly; all 30 Strings/FarmAnimals records were translated directly from English, all display types use locked species terminology, and every sleep, newborn, new-home, overnight-disturbance, hunger and mood line composes with arbitrary animal names without unsupported grammatical gender."
+    },
+    {
+      "trigger": "Seventy-sixth 1% milestone and Strings/Furniture activation",
+      "recordsChecked": 11188,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred twenty-one applied batches validate cleanly; Strings/FarmAnimals is complete and Strings/Furniture source ordinals 0–133 were reread directly against English, with exact visible-name parity to the previously source-reviewed Data/Furniture LocalizedText mappings and all furniture types, materials, colors and titles kept distinct."
+    },
+    {
+      "trigger": "Seventy-seventh 1% milestone",
+      "recordsChecked": 11335,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred twenty-four applied batches validate cleanly; Strings/Furniture source ordinals 0–280 were reread directly against English, with exact visible-name parity to the previously source-reviewed Data/Furniture LocalizedText mappings and every object type, material, color, title, size and numbered variant verified individually."
+    },
+    {
+      "trigger": "Seventy-eighth 1% milestone",
+      "recordsChecked": 11482,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred twenty-seven applied batches validate cleanly; Strings/Furniture source ordinals 0–427 were reread directly against English. Five inherited display-name mismatches were corrected in both Strings/Furniture and Data/Furniture, restoring Manager of the Year, Swamp Plant and Bulgarian title quotation for Runes, Wizard’s Tower and Void Swirls."
+    },
+    {
+      "trigger": "Seventy-ninth 1% milestone",
+      "recordsChecked": 11629,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred thirty applied batches validate cleanly; Strings/Furniture source ordinals 0–574 were reread directly against English. The latest range preserves every pet purpose, wood species, fixture type and light, dark or broken variant, while prior retro painting titles and identically named decorative-door variants were corrected from the full localized source."
+    },
+    {
+      "trigger": "Strings/Furniture section completion",
+      "recordsChecked": 11645,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred thirty-one applied batches validate cleanly; all 591 Strings/Furniture records were reread directly against English and completed. The second pass corrected full localized display meanings and title punctuation where compact Data/Furniture identifiers had obscured them, with the linked Data/Furniture entries corrected whenever their player-visible fallback also required the change."
+    },
+    {
+      "trigger": "Eightieth 1% milestone and Strings/Locations activation",
+      "recordsChecked": 11776,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred thirty-four applied batches validate cleanly; Strings/Furniture is complete and Strings/Locations source ordinals 0–130 were translated directly from English, covering Guild goals, hatching, travel, Community Center rooms, the Old Mariner, farm and household interactions, Qi clues, and multiplayer fund management with every placeholder and layout marker preserved."
+    },
+    {
+      "trigger": "Eighty-first 1% milestone",
+      "recordsChecked": 11924,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred thirty-eight applied batches validate cleanly; Strings/Locations source ordinals 0–278 were translated directly from English, including shop, museum, Carpenter, casino, shrine, cinema, cave and Professor Snail content. Embedded event commands, layout, prices, quantities and placeholders remain exact while all visible prose was reread in Bulgarian."
+    },
+    {
+      "trigger": "Strings/Locations section completion",
+      "recordsChecked": 12037,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred forty-two applied batches validate cleanly; all 392 Strings/Locations records were translated directly from English and reread. The completed asset preserves every runtime placeholder and layout marker plus all commands, identifiers and branch syntax in its embedded events, with natural Bulgarian for shops, travel, shrines, island quests, renovations, notices and late-game interactions."
+    },
+    {
+      "trigger": "Eighty-second 1% milestone and Strings/MovieConcessions section completion",
+      "recordsChecked": 12085,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred forty-three applied batches validate cleanly; Strings/Locations is complete and all 48 Strings/MovieConcessions records were translated directly from English. Every concession name and description preserves its ingredients, preparation, texture and joke, with locked brand and Stardrop terminology and explicit reasons for the two retained Joja product names."
+    },
+    {
+      "trigger": "Eighty-third 1% milestone and Strings/MovieReactions activation",
+      "recordsChecked": 12218,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred forty-six applied batches validate cleanly; Strings/MovieConcessions is complete and Strings/MovieReactions source ordinals 0–132 were translated directly from English. Penny, Pam, Krobus, the Wizard, George, Alex, Evelyn, Pierre, Abigail, Caroline, Harvey, Gus, Lewis, Jodi and Sam retain distinct voices with all placeholders and reaction markers exact."
+    },
+    {
+      "trigger": "Strings/MovieReactions section completion",
+      "recordsChecked": 12354,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred forty-nine applied batches validate cleanly; all 269 Strings/MovieReactions records were translated directly from English and reread. Every resident retains a distinct voice, film taste and emotional response, with all player or title placeholders, gender branches, stage actions, dialogue breaks, emotion codes and deliberate whitespace preserved."
+    },
+    {
+      "trigger": "Eighty-fourth 1% milestone and Strings/Movies activation",
+      "recordsChecked": 12365,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred fifty applied batches validate cleanly; Strings/MovieReactions is complete and Strings/Movies source ordinals 0–10 were translated directly from English. The Brave Little Sapling title, description and complete narrative preserve every scene beat and deliberate trailing space, and the linked Bulgarian film title remains consistent across assets."
+    },
+    {
+      "trigger": "Strings/Movies section completion",
+      "recordsChecked": 12441,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred fifty-three applied batches validate cleanly; all 87 Strings/Movies records were translated directly from English and reread. All eight film titles match their Furniture and MovieReactions uses, while every synopsis and scene preserves plot, genre voice, quoted dialogue, emphasis, numeric facts and deliberate boundary whitespace."
+    },
+    {
+      "trigger": "Strings/NPCNames section completion",
+      "recordsChecked": 12490,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred fifty-four applied batches validate cleanly; Strings/Movies is complete and all 49 Strings/NPCNames records were reviewed directly against English and the locked Bulgarian glossary. Every personal name, title and descriptive role is consistent, and the only newly found cross-asset spelling mismatch was corrected in its prior Locations batch."
+    },
+    {
+      "trigger": "Eighty-fifth 1% milestone and Strings/Notes section completion",
+      "recordsChecked": 12512,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred fifty-seven applied batches validate cleanly; Strings/NPCNames is complete and all 22 Strings/Notes records were translated directly from English and reread. Farming manuals, research, myths, dialogue, numeric formulas and multi-paragraph lore preserve every title, list, quote, indent, blank line, decimal, percent sign and field separator; the Dwarvish cipher alone is explicitly preserved."
+    },
+    {
+      "trigger": "Eighty-sixth 1% milestone and Strings/Objects activation",
+      "recordsChecked": 12660,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred sixty applied batches validate cleanly; Strings/Notes is complete and Strings/Objects source ordinals 0–147 were translated directly from English. Wallet powers, crafting labels and seventy-two item name-description pairs preserve every placeholder, percentage, growth time, season and quoted UI term, while locked item, crop, mineral, fish, farming and fishing terminology remains consistent across prior assets."
+    },
+    {
+      "trigger": "Eighty-seventh 1% milestone",
+      "recordsChecked": 12807,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred sixty-three applied batches validate cleanly; Strings/Objects source ordinals 0–294 were translated directly from English. The reviewed range now extends through early crops, fish, artifacts, dishes, rings, bombs, farming supplies and all permanent-power books, with every title, gameplay effect, number, percentage, season, growth interval and quoted UI term preserved."
+    },
+    {
+      "trigger": "Eighty-eighth 1% milestone",
+      "recordsChecked": 12954,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred sixty-six applied batches validate cleanly; Strings/Objects source ordinals 0–441 were translated directly from English. The reviewed range now extends through cranberries, legendary fish, fertilizers, dried products, duck goods and all four Dwarf Scrolls, with placeholders, Roman numerals, percentages, brands, gameplay rules and intentional unknown strings preserved."
+    },
+    {
+      "trigger": "Eighty-ninth 1% milestone",
+      "recordsChecked": 13101,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred sixty-nine applied batches validate cleanly; Strings/Objects source ordinals 0–588 were translated directly from English. The reviewed range now extends through minerals, fairy goods, fossils, geodes, Galaxy materials, goat products and Goby, with all quantities, colors, growth rules, machine effects and cross-asset item names preserved consistently."
+    },
+    {
+      "trigger": "Ninetieth 1% milestone",
+      "recordsChecked": 13248,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred seventy-two applied batches validate cleanly; Strings/Objects source ordinals 0–735 were translated directly from English. The reviewed range now extends through gold goods, grass and Green Rain items, iridium and iron materials, honey variants, preserves, juices and the Jukebox Ring, with all placeholders, percentages, quantities, brands and gameplay effects preserved."
+    },
+    {
+      "trigger": "Ninety-first 1% milestone",
+      "recordsChecked": 13396,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred seventy-five applied batches validate cleanly; Strings/Objects source ordinals 0–883 were translated directly from English. The reviewed range now extends through legendary fish, animal products, Magma Geodes, artisan goods, movie invitations, mummified specimens and Mystic Syrup, with all placeholders, counts, seasons, runtime effects and locked terms preserved."
+    },
+    {
+      "trigger": "Ninety-second 1% milestone",
+      "recordsChecked": 13543,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred seventy-eight applied batches validate cleanly; Strings/Objects source ordinals 0–1030 were translated directly from English. The reviewed range now extends through fruit, seeds, preserves, prehistoric artifacts, Pressure Nozzle, Prismatic Jelly, Prismatic Shard and Prize Ticket, with every placeholder, quoted label, number, crop rule and gameplay effect preserved."
+    },
+    {
+      "trigger": "Ninety-third 1% milestone",
+      "recordsChecked": 13690,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred eighty-one applied batches validate cleanly; Strings/Objects source ordinals 0–1177 were translated directly from English. The reviewed range now extends through radioactive materials, Qi goods, vegetables, preserves, archaeological objects, salmon, desert fish and Seafoam Pudding, with every placeholder, count, percentage, trigger and crop rule preserved."
+    },
+    {
+      "trigger": "Ninety-fourth 1% milestone",
+      "recordsChecked": 13837,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred eighty-four applied batches validate cleanly; Strings/Objects source ordinals 0–1324 were translated directly from English. The reviewed range now extends through stone materials, fences, floors, Strange Bun, Strange Doll and strawberries, with every source meaning, crop rule and intentionally unknown description preserved."
+    },
+    {
+      "trigger": "Ninety-fifth 1% milestone",
+      "recordsChecked": 13984,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred eighty-seven applied batches validate cleanly; Strings/Objects source ordinals 0–1471 were translated directly from English. The reviewed range now extends through summer crops, tea goods, tackle, treasures, truffles, Void items and all Warp Totems through Qi’s Arena, with every number, gameplay effect, location name and deliberate punctuation sequence preserved."
+    },
+    {
+      "trigger": "Strings/Objects section completion",
+      "recordsChecked": 14044,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred eighty-eight applied batches validate cleanly; all 1,532 Strings/Objects records were translated or justifiably preserved directly from English and reread. Every item name, description, gameplay effect, number, placeholder, crop rule, tool instruction and cross-asset glossary term remains exact and consistent throughout the completed asset."
+    },
+    {
+      "trigger": "Strings/Pants section completion",
+      "recordsChecked": 14082,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred eighty-nine applied batches validate cleanly; all 38 Strings/Pants records were translated directly from English and reread. Every clothing name, cut, material, joke, prismatic effect and deliberate punctuation mark remains distinct and consistent with the matching Objects strings."
+    },
+    {
+      "trigger": "Strings/Quests section completion",
+      "recordsChecked": 14084,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred ninety applied batches validate cleanly; both Strings/Quests records were translated directly from English and reread. All placeholders retain their original semantic roles and order, and the found-item message remains grammatically neutral for every possible object."
+    },
+    {
+      "trigger": "Ninety-sixth 1% milestone and Strings/Shirts activation",
+      "recordsChecked": 14132,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred ninety-one applied batches validate cleanly; Strings/Quests is complete and Strings/Shirts source ordinals 0–47 were translated directly from English. Every garment type, color, stripe, material, printed design, joke, quotation and ellipsis remains distinct and natural in Bulgarian."
+    },
+    {
+      "trigger": "Ninety-seventh 1% milestone",
+      "recordsChecked": 14279,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred ninety-four applied batches validate cleanly; Strings/Shirts source ordinals 0–194 were translated directly from English. The reviewed range now covers shirts, blouses, jackets, tunics, formalwear, armor, themed costumes and varied cuts, with all colors, materials, gender labels, named references and clothing jokes preserved."
+    },
+    {
+      "trigger": "Ninety-eighth 1% milestone",
+      "recordsChecked": 14426,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred ninety-seven applied batches validate cleanly; Strings/Shirts source ordinals 0–341 were translated directly from English. The reviewed range now extends through themed food, relic, uniform, seasonal, symbolic, stained, patterned and dyeable garments, with every named reference, joke, color, material and punctuation mark preserved."
+    },
+    {
+      "trigger": "Strings/Shirts section completion",
+      "recordsChecked": 14482,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred ninety-eight applied batches validate cleanly; all 398 Strings/Shirts records were translated directly from English and reread. Every garment name, color, material, cut, gender label, dyeable component, named reference, visual description, pun and deliberate punctuation mark remains distinct and consistent."
+    },
+    {
+      "trigger": "Strings/SimpleNonVillagerDialogues section completion",
+      "recordsChecked": 14504,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All five hundred ninety-nine applied batches validate cleanly; all 22 Strings/SimpleNonVillagerDialogues records were translated directly from English and reread. Every visible speaker label and dialogue slot is translated, all slot separators and repeated silent responses remain exact, and the Trout Derby and SquidFest speakers retain their distinct jokes and voices."
+    },
+    {
+      "trigger": "Ninety-ninth 1% milestone",
+      "recordsChecked": 14573,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All six hundred one applied batches validate cleanly; Strings/SpecialOrderStrings source ordinals 0–68 were translated directly from English. The reviewed range covers orders from Willy through the Wizard’s prismatic-jelly request, with every title, objective, requester voice, placeholder, number, dialogue token and signature preserved."
+    },
+    {
+      "trigger": "Strings/SpecialOrderStrings section completion",
+      "recordsChecked": 14650,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All six hundred three applied batches validate cleanly; all 146 Strings/SpecialOrderStrings records were translated directly from English and reread. Every order title, request, objective, completion message, runtime substitution, number, currency marker, character voice and established item, monster, fish and location term remains exact and consistent."
+    },
+    {
+      "trigger": "One-hundredth 1% milestone and Strings/SpeechBubbles section completion",
+      "recordsChecked": 14720,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All six hundred five applied batches validate cleanly; all 70 Strings/SpeechBubbles records and all 14,720 records in the provisional source inventory were translated or justifiably preserved directly from English and reread. Every short greeting, weather line, shop prompt, player and farm placeholder, spouse marker, character voice and gender-specific Marlon variant remains exact and natural."
+    },
+    {
+      "trigger": "Final source denominator reconciliation and typed-GameData supplement completion",
+      "recordsChecked": 14725,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "editorialGate": "All six hundred nine applied batches validate cleanly against the final inventory of 238 source assets and 14,725 reviewable strings. The two Farmhouse display fields and Turtle display name are translated; the mystery label and disabled jukebox sentinel are justifiably preserved. All 43 null LocationData display names were classified as structural technical fallbacks and excluded without inventing source text."
+    },
+    {
+      "trigger": "Bulgarian release editorial audit 1 after live visual correction",
+      "recordsChecked": 14725,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "direction": "forward",
+      "editorialGate": "All 609 hash-bound batches and all 14,725 final-inventory records were reread in forward order after shortening Character_PantsColor to prevent overlap at 1280×720. Source fidelity, Bulgarian wording, glossary terms, placeholders, control syntax and package structure produced no new issue."
+    },
+    {
+      "trigger": "Bulgarian release editorial audit 2 after live visual correction",
+      "recordsChecked": 14725,
+      "technicalErrors": 0,
+      "technicalWarnings": 0,
+      "direction": "reverse",
+      "editorialGate": "A consecutive reverse-order all-entry audit of all 609 batches and 14,725 records produced no new issue. This is the second clean full release audit after the last wording correction."
+    }
+  ],
+  "runtimeQA": {
+    "date": "2026-09-08",
+    "gameVersion": "1.6.15 build 24356",
+    "smapiVersion": "4.5.2",
+    "contentPatcherVersion": "2.9.0",
+    "locale": "bg-vnrevival",
+    "freshLaunches": 2,
+    "finalScreenshots": 9,
+    "contentPatcherErrors": 0,
+    "loadedAssets": [
+      "Fonts/SpriteFont1.bg-vnrevival",
+      "Fonts/SmallFont.bg-vnrevival",
+      "Minigames/TitleButtons.bg-vnrevival",
+      "Mods/VNRevival.StardewValleyTranslations/ButtonBulgarian"
+    ],
+    "visualCoverage": [
+      "language selector",
+      "Bulgarian title buttons",
+      "character creation",
+      "inventory",
+      "skills",
+      "small-font options",
+      "dialogue font",
+      "complete Bulgarian alphabet including Ѝ/ѝ and punctuation"
+    ],
+    "correction": "Character_PantsColor shortened to „Цвят:“ after the first live launch showed an overlap; the second fresh launch verified the corrected layout.",
+    "startupPreferenceRestored": true,
+    "desktopVerificationDate": "2026-09-09",
+    "desktopFreshLaunches": 2,
+    "desktopLaunchIsolation": "Temporary SMAPI_MODS_PATH and XDG_CONFIG_HOME under /private/tmp; installed Mods and user startup_preferences remained byte-for-byte unchanged.",
+    "desktopContentPatcherErrors": 0,
+    "desktopLoadedAssets": [
+      "Fonts/SpriteFont1.bg-vnrevival",
+      "Fonts/SmallFont.bg-vnrevival",
+      "Minigames/TitleButtons.bg-vnrevival",
+      "Mods/VNRevival.StardewValleyTranslations/ButtonBulgarian"
+    ],
+    "desktopVisualEvidence": "The 9-screen live visual QA remains authoritative because all Bulgarian translations, fonts, title texture and button are byte-identical across worktree, Desktop source and the verified release bundle. A new post-sync UI capture was denied by macOS Computer Use access; the fresh isolated SMAPI launch independently confirmed the Bulgarian locale and all four assets loaded with zero runtime errors."
+  },
+  "releaseVerification": {
+    "fullGameAudits": "2 consecutive clean after final correction",
+    "fontRoundTrip": "807 sorted aligned glyphs in both fonts; all 172 used characters present",
+    "articleRuntimeProbe": "20 cases passed",
+    "swiftTests": "8 of 8 passed",
+    "releaseBuild": "passed",
+    "codeSignature": "codesign --verify --deep --strict passed",
+    "builtResourceParity": "passed",
+    "desktopSync": "passed with SHA-256 guards; preserved parallel locale changes",
+    "desktopJSON": "1232 Bulgarian/shared JSON files parsed with duplicate-key checks",
+    "desktopFullBatchAudit": "609 batches, 14725 records, 0 failures, 0 warnings",
+    "desktopCoverage": "14725/14725 reviewed; 701 justified preserves",
+    "desktopGeneratorIdempotence": "passed byte-for-byte; content SHA-256 6866ce4db64124b69ded68b7c59f8084827009bbd704f57ac27916779a01d12a",
+    "desktopFontRoundTrip": "both XNB files unpacked/repacked byte-identically; 807 sorted aligned glyphs and all 172 used characters",
+    "desktopArticleRuntimeProbe": "20 cases passed against compiled 1.7.0 switcher",
+    "desktopSwiftTests": "8 of 8 passed",
+    "desktopReleaseBuild": "passed",
+    "desktopCodeSignature": "codesign --verify --deep --strict passed",
+    "desktopBuiltResourceParity": "ModPayload 4121 files, LanguageSwitcherPayload 6 files, and PackageConfig match source",
+    "desktopSMAPIRuntime": "two isolated fresh launches; final signed bundle loaded bg-vnrevival and four locale assets with 0 Content Patcher/runtime errors",
+    "liveEnvironmentPreserved": "installed Mods and startup_preferences remained byte-for-byte unchanged",
+    "desktopDependencyMetadata": "LanguageSwitcher manifest, assembly, project, AssemblyInfo, and deps.json aligned at 1.7.0",
+    "desktopEvidenceHashes": {
+      "contentJson": "6866ce4db64124b69ded68b7c59f8084827009bbd704f57ac27916779a01d12a",
+      "languageSwitcherDll": "7d91600d5728b7c64d0ceed94f47f000918cb5b77855fcb0ae69d7273c371f9e",
+      "releaseExecutable": "f70d7c194d327a538646cb0e4ffb7525d17d0c173dd8f0faab49270b08091777",
+      "finalSMAPILog": "8931bf1063c574958406b58b3019ba98db63ece688e3717a58bdbe522493870a",
+      "bulgarianTranslationsTree": "bcdded1f066a7928da0d5dc32c22b016a085d3b495b707cbaf1415be229f5dbe"
+    },
+    "liveEnvironmentAfterQA": "installed Mods and user startup_preferences matched their pre-QA SHA-256 inventories byte-for-byte",
+    "desktopSMAPILog": "Documentation/bulgarian/desktop-smapi-final.log"
+  },
+  "releaseComplete": true
+}

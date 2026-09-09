@@ -1,0 +1,376 @@
+{
+  "id": "004-ui",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Strings/UI": "ea02f5523d75e54663b7bd7c1df9487f4c321fb1a1fb126c713d039d33e0710f"
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "JunimoNote_RewardVault",
+      "english": "Reward: Bus Repair",
+      "translation": "פרס: תיקון האוטובוס"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "JunimoNote_RewardFishTank",
+      "english": "Reward: Glittering Boulder Removed",
+      "translation": "פרס: הסלע הנוצץ הוסר"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "JunimoNote_MustBeAtCC",
+      "english": "Must be deposited at Community Center",
+      "translation": "יש להפקיד במרכז הקהילתי"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "JunimoNote_MustBeAtAJM",
+      "english": "Must be deposited at Abandoned JojaMart",
+      "translation": "יש להפקיד בג'וג'ה-מארט הנטוש"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LetterViewer_MoneyIncluded",
+      "english": "$ {0}g enclosed",
+      "translation": "$ צורפו {0}g",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Gold currency suffix preserved exactly."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LetterViewer_LearnedRecipe",
+      "english": "New {0} recipe:",
+      "translation": "מתכון חדש ל{0}:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LetterViewer_LearnedRecipeName",
+      "english": "'{0}'",
+      "translation": "'{0}'",
+      "preservationReason": "Quoted recipe-name substitution only; recipe name itself is translated through its source key."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_Title",
+      "english": "Level {0} {1}",
+      "translation": "רמה {0} ב{1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Farming1",
+      "english": "+1 Watering Can Proficiency",
+      "translation": "+1 למיומנות במזלף"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Farming2",
+      "english": "+1 Hoe Proficiency",
+      "translation": "+1 למיומנות במעדר"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Mining",
+      "english": "+1 Pickaxe Proficiency",
+      "translation": "+1 למיומנות במכוש"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Fishing",
+      "english": "+1 Fishing Rod Proficiency",
+      "translation": "+1 למיומנות בחכה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Foraging1",
+      "english": "+1 Axe Proficiency",
+      "translation": "+1 למיומנות בגרזן"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Foraging2",
+      "english": "Trees sometimes drop seeds.",
+      "translation": "לפעמים נושרים זרעים מהעצים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Foraging3",
+      "english": "+1 Wild berry harvesting.",
+      "translation": "+1 לאיסוף פירות יער."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Combat",
+      "english": "+5 HP",
+      "translation": "+5 נקודות בריאות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ExtraInfo_Luck",
+      "english": "Luck Increased",
+      "translation": "המזל השתפר"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Rancher",
+      "english": "Rancher",
+      "translation": "מגדל מקנה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Rancher",
+      "english": "Animal products worth 20% more.",
+      "translation": "תוצרת בעלי חיים שווה 20% יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Tiller",
+      "english": "Tiller",
+      "translation": "עובד אדמה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Tiller",
+      "english": "Crops worth 10% more.",
+      "translation": "גידולים שווים 10% יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Coopmaster",
+      "english": "Coopmaster",
+      "translation": "מומחה לול"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Coopmaster",
+      "english": "Befriend coop animals quicker.\nIncubation time cut in half.",
+      "translation": "הידידות עם חיות לול משתפרת מהר יותר.\nזמן הדגירה מתקצר בחצי."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Shepherd",
+      "english": "Shepherd",
+      "translation": "רועה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Shepherd",
+      "english": "Befriend barn animals quicker.\nSheep produce wool faster.",
+      "translation": "הידידות עם חיות רפת משתפרת מהר יותר.\nכבשים מפיקות צמר מהר יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Artisan",
+      "english": "Artisan",
+      "translation": "בעל מלאכה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Artisan",
+      "english": "Artisan goods (wine, cheese, oil, etc.) worth 40% more.",
+      "translation": "מוצרי מלאכה (יין, גבינה, שמן וכו') שווים 40% יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Agriculturist",
+      "english": "Agriculturist",
+      "translation": "אגרונום"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Agriculturist",
+      "english": "All crops grow 10% faster.",
+      "translation": "כל הגידולים צומחים 10% מהר יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Fisher",
+      "english": "Fisher",
+      "translation": "דייג"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Fisher",
+      "english": "Fish worth 25% more.",
+      "translation": "דגים שווים 25% יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Trapper",
+      "english": "Trapper",
+      "translation": "לוכד"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Trapper",
+      "english": "Resources required to craft crab pots reduced.",
+      "translation": "יצירת מלכודות סרטנים דורשת פחות משאבים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Angler",
+      "english": "Angler",
+      "translation": "דייג מומחה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Angler",
+      "english": "Fish worth 50% more.",
+      "translation": "דגים שווים 50% יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Pirate",
+      "english": "Pirate",
+      "translation": "פיראט"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Pirate",
+      "english": "Chance to find treasure doubled.",
+      "translation": "הסיכוי למצוא אוצר מוכפל."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Mariner",
+      "english": "Mariner",
+      "translation": "ימאי"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Mariner",
+      "english": "Crab pots no longer produce junk items.",
+      "translation": "מלכודות סרטנים כבר אינן מפיקות גרוטאות."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Luremaster",
+      "english": "Luremaster",
+      "translation": "מומחה פיתיונות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Luremaster",
+      "english": "Crab pots no longer require bait.",
+      "translation": "מלכודות סרטנים כבר אינן דורשות פיתיון."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Forester",
+      "english": "Forester",
+      "translation": "יערן"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Forester",
+      "english": "Trees drop 25% more wood.",
+      "translation": "עצים מניבים 25% יותר עץ."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Gatherer",
+      "english": "Gatherer",
+      "translation": "מלקט"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Gatherer",
+      "english": "Chance for double harvest of foraged items.",
+      "translation": "סיכוי לאיסוף כפול של פריטי ליקוט."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Lumberjack",
+      "english": "Lumberjack",
+      "translation": "חוטב עצים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Lumberjack",
+      "english": "All trees have a chance to drop hardwood.",
+      "translation": "כל עץ עשוי להניב עץ קשה."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Tapper",
+      "english": "Tapper",
+      "translation": "מנקז שרף"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Tapper",
+      "english": "Syrups worth 25% more.",
+      "translation": "סירופים שווים 25% יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Botanist",
+      "english": "Botanist",
+      "translation": "בוטנאי"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Botanist",
+      "english": "Foraged items are always highest quality.",
+      "translation": "פריטי ליקוט תמיד באיכות הגבוהה ביותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Tracker",
+      "english": "Tracker",
+      "translation": "גשש"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Tracker",
+      "english": "Location of forageable items revealed.",
+      "translation": "מיקומם של פריטי ליקוט נחשף."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Miner",
+      "english": "Miner",
+      "translation": "כורה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Miner",
+      "english": "+1 ore per vein.",
+      "translation": "+1 עפרה מכל עורק."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Geologist",
+      "english": "Geologist",
+      "translation": "גאולוג"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Geologist",
+      "english": "Chance for gems to appear in pairs.",
+      "translation": "סיכוי שאבני חן יופיעו בזוגות."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Blacksmith",
+      "english": "Blacksmith",
+      "translation": "נפח"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionDescription_Blacksmith",
+      "english": "Metal bars worth 50% more.",
+      "translation": "מטילי מתכת שווים 50% יותר."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LevelUp_ProfessionName_Prospector",
+      "english": "Prospector",
+      "translation": "מחפש מחצבים"
+    }
+  ]
+}

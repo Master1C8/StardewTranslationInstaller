@@ -1,0 +1,880 @@
+{
+  "id": "059-alex-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Alex dialogue entry. Cocky athletic voice and later emotional growth, sports terminology, family loss, seasonal dialogue, explicit player-gender variants, canonical glossary terms, response identifiers, conditional branches, placeholders, emotes, and control tokens were checked against English. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "f20842b84736fd8a7cb596c7b966a4ea5287a2e2e00aa08f0326abe4960345d6",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 21
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Introduction",
+      "english": "Oh, hey. So you're the new guy, huh? Cool.^Hey, you're the new girl, huh? I think we're going to get along great. I'm Alex.#$e#I'll see you around.",
+      "translation": "О, привіт. То ти новенький, так? Круто.^Гей, то ти новенька, так? Думаю, ми чудово поладнаємо. Я Алекс.#$e#Ще побачимося.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "FlowerDance_Accept",
+      "english": "You beat me to it! I was about to ask you...$h#$e#I'll see you out there.",
+      "translation": "Отакої! А я саме збирався тебе запросити...$h#$e#Побачимося на танцях.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptBirthdayGift_Loved",
+      "english": "Aw yeah, that's the good stuff... Thanks for the birthday gift, @.",
+      "translation": "О так, оце те, що треба... Дякую за подарунок на день народження, @.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "What the...? Uh, I dunno what it's like where you grew up, but to me, this is trash.$a",
+      "translation": "Що за...? Ем, не знаю, як там у твоїх рідних краях, але для мене це сміття.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Whoa... this is great. Thanks!",
+      "translation": "Ого... Це чудово. Дякую!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)Book_Defense",
+      "english": "Aw, yeah... I've been looking for this one. It's supposed to be full of tips for bulking up. Rule number one... Eat a ton of eggs! Hah, no problem! Thanks!$h",
+      "translation": "О так... Я саме шукав цю книжку. Кажуть, вона повна порад про те, як накачати м’язи. Правило номер один... Їсти купу яєць! Ха, без проблем! Дякую!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_Negative_book_item",
+      "english": "Uhhh... Reading? Yeah, um... I guess I can give it a try.$s",
+      "translation": "Е-е-е... Читання? Так, е-е... Мабуть, можна спробувати.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(TR)FrogEgg",
+      "english": "Umm... I know I'm pretty big on eggs... But this isn't what I meant...$s#$b#Oh well... Down the hatch! *gulp*$h",
+      "translation": "Ем... Знаю, я дуже люблю яйця... Але це не зовсім те, що я мав на увазі...$s#$b#Та гаразд... У пащу! *ковть*$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(TR)ParrotEgg",
+      "english": "Can you eat this?$s#$b#I guess there's only one way to find out...",
+      "translation": "Це можна їсти?$s#$b#Мабуть, дізнатися можна лише одним способом...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)928",
+      "english": "Hehe... Keep giving me these every day, and I'll be able to retire at thirty!$h",
+      "translation": "Хе-хе... Продовжуй дарувати мені таке щодня — і в тридцять я вже зможу піти на пенсію!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)107",
+      "english": "Now that's what I call an egg! Imagine the size of the omelet...",
+      "translation": "Оце я розумію — яйце! Уяви, який великий з нього вийде омлет...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)289",
+      "english": "Whoaa... It's so heavy I could use it for bicep curls. I'll be slurping on this for a week! Hah hah!$h",
+      "translation": "Ого... Воно таке важке, що з ним можна качати біцепси. Я сьорбатиму це цілий тиждень! Ха-ха!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)442",
+      "english": "Mmm... Duck egg... Rich and creamy. *crack*... *slurp*. Ahhhh...",
+      "translation": "М-м-м... Качине яйце... Насичене й вершкове. *хрусь*... *сьорб*. А-а-а...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)305",
+      "english": "Oh... um... I usually like eggs, but this one looks evil.$s",
+      "translation": "О... Ем... Зазвичай я люблю яйця, але це має якийсь зловісний вигляд.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_(O)403",
+      "english": "*crunch*... Mmm... Nuts. That hits the spot. Thanks, @!",
+      "translation": "*хрум*... М-м-м... Горіхи. Саме те, що треба. Дякую, @!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "AcceptGift_Positive_category_egg",
+      "english": "$c 0.8#Hey, thanks. Eggs are great for bulking up.#*crack*... *sluuurp*... Mmmm. Now that's what I call a snack.",
+      "translation": "$c 0.8#Гей, дякую. Яйця чудово допомагають накачати м’язи.#*хрусь*... *сьо-о-орб*... М-м-м. Оце я розумію — перекус.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "cc_Bridge",
+      "english": "Have you been up by the lake recently? I was on a run late last night, and I noticed that the old bridge was repaired...",
+      "translation": "Тобі доводилося нещодавно бувати біля озера? Пізно ввечері я бігав і помітив, що старий міст полагодили...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "eventSeen_288847",
+      "english": "Uh... I'm not used to opening up like that...$s",
+      "translation": "Ем... Я не звик так відкривати душу...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fishCaught_159",
+      "english": "Heard you caught some kind of rare fish?#$b#I'm impressed. Your arms must be stronger than they look! *pinch* ... not bad!$h",
+      "translation": "Чув, тобі вдалося спіймати якусь рідкісну рибу?#$b#Вражає. Твої руки, мабуть, сильніші, ніж здаються! *щип*... Непогано!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "purchasedAnimal_Chicken_memory_oneday",
+      "english": "Hey, I overheard someone saying that you got your first chicken the other day.#$b#Man... I wish Grandma had chickens. I'd eat a dozen raw eggs for breakfast each morning!",
+      "translation": "Гей, я підслухав, як хтось казав, що нещодавно в тебе з’явилася перша курка.#$b#Ех... От би бабуся тримала курей. Я б щоранку з’їдав на сніданок дюжину сирих яєць!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "eventSeen_288847_memory_oneweek",
+      "english": "Hey... uh... @? I... feel a lot more 'at peace' after talking to you on the beach last week.$s#$b#Thanks for listening to me.$s",
+      "translation": "Гей... Ем... @? Після нашої розмови на пляжі минулого тижня я почуваюся набагато «спокійніше».$s#$b#Дякую за можливість виговоритися.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fishCaught_139",
+      "english": "I saw you catch that salmon.#$b#If you happen to make a 'salmon dinner' out of it, let me have a bite!",
+      "translation": "Я бачив, як тобі вдалося впіймати того лосося.#$b#Якщо приготуєш із нього «Вечерю з лососем», дай мені шматочок!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "firstVisit_BathHouse_MensLocker_memory_oneday",
+      "english": "I saw you checking out the bath house the other day. Trying to get in shape? Heh.#$e#Uh... you didn't go poking around in my locker, did you?$9",
+      "translation": "Нещодавно я бачив тебе в Спа. Намагаєшся набрати форму? Хе-хе.#$e#Ем... Ти ж не нишпориш у моїй шафці, правда?$9",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "GreenRain",
+      "english": "What's going on out there? Any action?#$e#I gotta stay here with my grandparents...$s",
+      "translation": "Що там відбувається? Є якась движуха?#$e#Мені треба залишатися тут із дідусем і бабусею...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "GreenRain_2",
+      "english": "I tried to go for a run this morning, but the plants have gone crazy! I couldn't get very far...",
+      "translation": "Уранці я спробував піти на пробіжку, але рослини наче збожеволіли! Далеко пробігти не вдалося...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "dating_Alex",
+      "english": "%Alex gives your arm a squeeze, grinning.",
+      "translation": "%Alex усміхається й стискає твою руку.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "dating_Alex_memory_oneday",
+      "english": "Well, this is a %season I'll never forget!$l",
+      "translation": "Що ж, цей %season я ніколи не забуду!$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "married_Haley",
+      "english": "You got Haley to marry you, huh? I always figured she was out of your league!",
+      "translation": "Отже, ви з Гейлі одружилися? Я завжди думав, що вона для тебе недосяжна!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Entering",
+      "english": "Finally, we're here!",
+      "translation": "Нарешті ми тут!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Leaving",
+      "english": "Aw... I guess it can't last forever.$s",
+      "translation": "Ех... Мабуть, це не може тривати вічно.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Wander",
+      "english": "I knew I shoulda brought a frisbee... Oh well.$h",
+      "translation": "Я так і знав, що треба було взяти фризбі... Ну й нехай.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Wander_2",
+      "english": "I wonder if anyone would be up for a volleyball tournament.#$e#Don't worry, I'll go easy!$h",
+      "translation": "Цікаво, хтось погодиться на волейбольний турнір?#$e#Не хвилюйся, я гратиму впівсили!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Shore",
+      "english": "I wonder how far I could swim out, and still make it back?#$e#I'm guessing at least a mile.#$b#... Don't worry, I'm not going to try it.$h",
+      "translation": "Цікаво, як далеко я зможу заплисти й усе одно повернутися?#$e#Гадаю, щонайменше на милю.#$b#...Не хвилюйся, я не збираюся це перевіряти.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Chair",
+      "english": "Aren't you hot in that outfit? C'mon, man... It's the beach!^Aren't you hot in that outfit? You gotta get some ocean breeze goin'!",
+      "translation": "Тобі не спекотно в цьому одязі? Та годі, друже... Це ж пляж!^Тобі не спекотно в цьому одязі? Треба ж трохи освіжитися океанським бризом!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Towel",
+      "english": "With this island open, there's no excuse to be pasty anymore!",
+      "translation": "З відкриттям острова блідість уже нічим виправдовувати!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Towel_2",
+      "english": "Phew, it feels good to finally get these abs a little sunlight.#$e#Kind of a shame to have them hidden away all the time back home.",
+      "translation": "Фух, як же добре нарешті дати пресу трохи сонячного світла.#$e#Навіть шкода, що вдома його весь час доводиться ховати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Towel_3",
+      "english": "When I go pro, I'll vacation on islands all around the world.#$e#But for now, this place will do just fine!$h",
+      "translation": "Коли я стану професіоналом, то відпочиватиму на островах усього світу.#$e#А поки й це місце чудово підійде!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort_Bar",
+      "english": "I'm ordering a banana shake with two scoops of protein powder.",
+      "translation": "Я замовляю банановий коктейль із двома порціями протеїнового порошку.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Resort",
+      "english": "Ah... The island life. I could get used to this!",
+      "translation": "А-а... Острівне життя. До такого можна звикнути!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "FlowerDance_Accept_Spouse",
+      "english": "Okay, this should be fun... I hope I can remember the moves this year! It's been a while...$h",
+      "translation": "Гаразд, має бути весело... Сподіваюся, цього року згадаю всі рухи! Давненько я не танцював...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "FlowerDance_Decline",
+      "english": "Nah... I'm gonna ask someone else. Good luck.",
+      "translation": "Ні... Я запрошу когось іншого. Удачі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "divorced",
+      "english": "I thought we had something special... I guess I was wrong.$s",
+      "translation": "Я думав, між нами є щось особливе... Мабуть, я помилявся.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "dumped_Guys",
+      "english": "You're not worth my time.$a",
+      "translation": "Ти не вартий мого часу.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "secondChance_Guys",
+      "english": "I don't know if I can trust you anymore, but I'm willing to give you a chance.$9",
+      "translation": "Не знаю, чи зможу знову тобі довіряти, але готовий дати тобі шанс.$9",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "breakUp",
+      "english": "You're giving me wha...?$7#$b#*huff*... Got it. Alright... well, you've made your choice. You're not gonna see me begging.$a",
+      "translation": "Ти даєш мені що...?$7#$b#*пихкає*... Зрозуміло. Гаразд... Що ж, це твій вибір. Благати я не стану.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Mon",
+      "english": "Did you know I was an all-star quarterback in high school? It's true.$u#$e#See this little star on my jacket here? That proves it.",
+      "translation": "Ти знаєш, що в школі я був зірковим квотербеком команди з ґрідболу? Це правда.$u#$e#Бачиш цю маленьку зірку на моїй куртці? Ось доказ.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Tue",
+      "english": "The beach is a cool place to hang out and soak up some rays.#$e#You gotta spend some time in the sun or else you'll get all pale.#$e#*sigh*... I wish there were more girls in this town, know what I mean?$s^Hey, do you wanna hang out with me at the beach some time? Do you have a bikini?",
+      "translation": "Пляж — круте місце, щоб потусуватися й поніжитися на сонці.#$e#Треба проводити трохи часу на сонці, інакше зовсім збліднеш.#$e#*зітхає*... От би в містечку було більше дівчат, розумієш?$s^Гей, може, якось потусуємося разом на пляжі? У тебе є бікіні?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Wed",
+      "english": "Looks like a good day to play catch, huh?$u#$e#$q 5/6 Wed_01_old#I'd ask you to throw the ball around, but you don't really seem like the sports type.^If you weren't a girl I'd ask you to play catch.#$r 6 0 Wed_01_02#I'm fine just watching you from a distance.#$r 5 15 Wed_01_01#I want to play catch with you!#$r 5 0 Wed_01_03#(angry) What's that supposed to mean?",
+      "translation": "Схоже, сьогодні чудовий день, щоб покидати м’яч, еге ж?$u#$e#$q 5/6 Wed_01_old#Я б запропонував тобі пограти, але ти не дуже схожий на спортсмена.^Якби ти не була дівчиною, я б запропонував пограти разом.#$r 6 0 Wed_01_02#Мені й здалеку добре за тобою спостерігати.#$r 5 15 Wed_01_01#Я хочу пограти з тобою!#$r 5 0 Wed_01_03#(сердито) Що це має означати?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Wed_01_old",
+      "english": "#$p 5#Go long! ...just kidding. Hahaha.|I just wish I had someone to play catch with...$s",
+      "translation": "#$p 5#Лови дальню! ...Я жартую. Ха-ха-ха.|От би мені було з ким покидати м’яч...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Wed_01_01",
+      "english": "Really? I guess I underestimated you.#$b#My arm's a little sore, but maybe next time.",
+      "translation": "Справді? Мабуть, я тебе недооцінив.#$b#У мене трохи болить рука, але, може, наступного разу.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Wed_01_02",
+      "english": "Yeah, some people just aren't made for sports.",
+      "translation": "Так, декому просто не судилося займатися спортом.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Wed_01_03",
+      "english": "Uh... never mind.",
+      "translation": "Ем... Забудь.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Thu",
+      "english": "The air's starting to warm up... I'm feeling pumped.",
+      "translation": "Повітря починає теплішати... Я аж заряджений енергією.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Fri",
+      "english": "Hey, what's up farmer guy?^Hey, it's farm girl. Did you get new pants? You're doing something right.#$e#Oh, I almost forgot! It's my day for doing push-ups!#$e#Every time I do push-ups I try to do one more than last time. Pretty cool strategy, huh?",
+      "translation": "Гей, як справи, хлопче з ферми?^Гей, це дівчина з ферми. Нові штани? Тобі вдалося підібрати щось як слід.#$e#О, мало не забув! Сьогодні день відтискань!#$e#Щоразу я намагаюся зробити на одне відтискання більше, ніж минулого разу. Крута стратегія, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Sat",
+      "english": "My arms are really sore, but that's the sign of progress for a guy like me.#$e#I must've done a thousand push-ups yesterday.",
+      "translation": "Руки страшенно болять, але для такого хлопця, як я, це ознака поступу.#$e#Учора я, мабуть, відтиснувся тисячу разів.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Sun",
+      "english": "Hey.#$e#What, you wanna talk to me? I'm busy.",
+      "translation": "Гей.#$e#Що, хочеш зі мною поговорити? Я зайнятий.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Sun2",
+      "english": "Hey, @.#$e#That's right, I remember your name.",
+      "translation": "Гей, @.#$e#Саме так, я пам’ятаю твоє ім’я.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Sun4",
+      "english": "Hey, @.#$e#How's your day going?",
+      "translation": "Гей, @.#$e#Як минає твій день?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Fri4",
+      "english": "Hey, @. I'm glad you stopped by.#$e#I'm not ashamed to say that I love my grandma!#$e#Now Grandpa, on the other hand...#$e#Just kidding.$h",
+      "translation": "Гей, @. Радий твоєму візиту.#$e#Я не соромлюся казати, що люблю бабусю!#$e#А от дідусь — інша річ...#$e#Та я жартую.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Tue6",
+      "english": "Nothing's better than an energetic day at the beach with your friends... right?",
+      "translation": "Немає нічого кращого за сповнений енергії день на пляжі з друзями... Еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Mon8",
+      "english": "You know, I used to want fame and fortune, but lately I've been starting to sing a different tune. In the end it's the humble little things that satisfy, don't you think?#$e#I still want to go pro, but it's not the most important thing in the world.",
+      "translation": "Знаєш, раніше я прагнув слави й багатства, але останнім часом починаю дивитися на це інакше. Зрештою, задоволення приносять прості дрібниці, правда?#$e#Я й досі хочу стати професіоналом, але це не найважливіше у світі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Fri8",
+      "english": "Hi @. You look sporty today.$h^Hey @. Did you do something different with your hair? Something keeps grabbing my attention.$h",
+      "translation": "Привіт, @. Сьогодні в тебе спортивний вигляд.$h^Гей, @. Ти щось зробила з волоссям? Щось постійно привертає мою увагу.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Sat10",
+      "english": "I've been having a hard time staying focused lately.$l",
+      "translation": "Останнім часом мені важко зосередитися.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_beach1",
+      "english": "Of course you do. If you didn't I'd think you were crazy. Or some kind of nerd.",
+      "translation": "Звісно, подобається. Якби ні, я б подумав, що з тобою щось не так. Або що ти справжня зануда.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_beach2",
+      "english": "Really? You must be some kind of weirdo.$a#$b#Sorry.",
+      "translation": "Справді? Ти, мабуть, ще та дивна людина.$a#$b#Вибач.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_books1",
+      "english": "No, I'm not! You're just trying to flatter me.$a",
+      "translation": "Ні! Ти просто намагаєшся мені лестити.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_books2",
+      "english": "Yeah, I guess you're right...$s",
+      "translation": "Так, мабуть, твоя правда...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_books3",
+      "english": "You were supposed to disagree with me.$a",
+      "translation": "Тобі належало зі мною не погодитися.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "event_box1",
+      "english": "Yes... I know. That's why I've been so determined to be successful with my sports stuff...$9#$b#Make it or not... As long as I try my hardest I think she'd be proud. Thanks.",
+      "translation": "Так... Я знаю. Саме тому я так рішуче прагну досягти успіху в спорті...$9#$b#Вийде чи ні... Поки я докладаю всіх сил, думаю, вона пишалася б мною. Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "event_box2",
+      "english": "Wow... It's the anniversary of my Mom's death! Have a heart...$a",
+      "translation": "Ого... Сьогодні річниця смерті моєї мами! Май совість...$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "event_box3",
+      "english": "...Thanks, @.#$b#You... you're different than the other guys. More sensitive.$l^You've become my best friend in the whole town... #$b#I'm glad.^Is that embarrassing to say?$l",
+      "translation": "...Дякую, @.#$b#Ти... Ти не такий, як інші хлопці. Чуйніший.$l^Ти стала моєю найкращою подругою в усьому містечку... #$b#Я радий.^Таке казати ніяково?$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "event_box4",
+      "english": "That doesn't make me feel any better, jerk.$a",
+      "translation": "Мені від цього не легше, дурню.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_parents1",
+      "english": "That's an interesting thought...",
+      "translation": "Цікава думка...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_parents2",
+      "english": "They would never do that!$a",
+      "translation": "Вони б ніколи так не вчинили!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "Event_parents3",
+      "english": "...Maybe you're right... I dunno.$s",
+      "translation": "...Може, твоя правда... Не знаю.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_1",
+      "english": "Hey. Summer is definitely the best time of year.#$e#Right now is great because we've got the whole season to look forward to. Catch you later.",
+      "translation": "Гей. Літо однозначно найкраща пора року.#$e#Зараз чудово, бо попереду ще ціле літо. Побачимося.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Mon",
+      "english": "Hey, farmer guy. You look a little burnt.^Hey Farmer girl. You've got a nice tan going.$h#$e#The more I practice this summer, the easier it'll be for me to go pro.#$e#Then you'd be able to say you knew me once. Cool, huh?",
+      "translation": "Гей, хлопче з ферми. Схоже, ти трохи обгорів.^Гей, дівчино з ферми. У тебе гарна засмага.$h#$e#Що більше я вправлятимуся цього літа, то легше буде стати професіоналом.#$e#Тоді можна буде казати, що ти знаєш мене ще до слави. Круто, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Tue",
+      "english": "If my hair wasn't so popular with the ladies, I swear I'd shave it all off in a second.#$e#*sigh*... Life can be tough.",
+      "translation": "Якби моє волосся не мало такого успіху в дівчат, присягаюся, я б миттю поголився налисо.#$e#*зітхає*... Життя буває складним.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Wed",
+      "english": "Hey farm guy, I've got a question for you.^Hey Farm girl, I've got a question for you.#$b#$q 52/53 summer_Wed_01_old#Do you think I'll ever turn pro?#$r 52 30 summer_Wed_01_01#You're destined to be a sports legend#$r 52 0 summer_Wed_01_02#Maybe, if you practice a lot#$r 53 -50 summer_Wed_01_03#No, you'll most likely fail and become a salesman",
+      "translation": "Гей, хлопче з ферми, у мене є до тебе питання.^Гей, дівчино з ферми, у мене є до тебе питання.#$b#$q 52/53 summer_Wed_01_old#Як гадаєш, я колись стану професіоналом?#$r 52 30 summer_Wed_01_01#Тобі судилося стати легендою спорту#$r 52 0 summer_Wed_01_02#Може, якщо багато вправлятимешся#$r 53 -50 summer_Wed_01_03#Ні, найімовірніше, ти зазнаєш невдачі й станеш продавцем",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Wed_01_old",
+      "english": "$p 52#Hey, when I turn pro you can say you were my first \"fan\". Not bad, huh?|Hey, I've been practicing twice as hard so I can turn pro and prove you wrong. You just wait.$a",
+      "translation": "$p 52#Гей, коли я стану професіоналом, ти зможеш казати, що підтримуєш мене від самого початку. Непогано, еге ж?|Гей, я тренуюся вдвічі наполегливіше, щоб стати професіоналом і довести, що ти помиляєшся. Ось побачиш.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Wed_01_01",
+      "english": "Hey, now that's what I'm talking about!$h#$e#You're cooler than I thought.",
+      "translation": "Гей, оце я розумію!$h#$e#Я й не думав, що в тобі стільки крутості.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Wed_01_02",
+      "english": "Yeah, well I'm so good I'm not going to have to practice all that much.$u",
+      "translation": "Так, але я настільки вправний, що мені не доведеться так уже й багато тренуватися.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Wed_01_03",
+      "english": "That's insane. You're just jealous that I'm talented and popular and you're not.$a^That's ridiculous. You're just jealous that I'm way more popular than you'll ever be, freak.$a#$e#Get away from me.$a",
+      "translation": "Це безглуздя. Ти просто заздриш, бо я талановитий і популярний, а ти ні.$a^Це сміховинно. Ти просто заздриш, бо ніколи не станеш такою популярною, як я, дивакувата.$a#$e#Відійди від мене.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Thu",
+      "english": "Hey, you must be getting pretty strong working on that farm all day.^Hey, you must be getting pretty fit working on that farm all day.#$e#Maybe you'll reach my level some day. Something to look forward to, huh?#$e#Why do you have that look on your face?",
+      "translation": "Гей, мабуть, за цілий день роботи на фермі ти стаєш доволі сильним.^Гей, мабуть, за цілий день роботи на фермі ти набуваєш чудової форми.#$e#Може, колись досягнеш мого рівня. Є чого прагнути, еге ж?#$e#Чому в тебе такий вираз обличчя?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Fri",
+      "english": "What do you want?#$e#I've got more important things to do right now.",
+      "translation": "Що тобі треба?#$e#Зараз у мене є важливіші справи.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Sat",
+      "english": "Mmmm... I smell a barbeque.#$e#Damn I could go for a burger.",
+      "translation": "М-м-м... Пахне барбекю.#$e#Чорт, я б зараз не відмовився від бургера.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Sun",
+      "english": "I got these new shoes yesterday 'cuz my old pair had a brown smudge.#$b#I just threw them into the garbage. I would've donated them but I don't like the idea of some weirdo wearing my shoes, ya know?#$e#...What?$a",
+      "translation": "Учора я купив нове взуття, бо на старій парі з’явилася коричнева пляма.#$b#Я просто викинув її у сміття. Можна було віддати комусь, але мені не подобається думка, що якийсь дивак носитиме моє взуття, розумієш?#$e#...Що?$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Sun4",
+      "english": "Oh wow...your shoes are a little dirty... but that's fine, too!#$e#Different people have different tastes I guess.",
+      "translation": "Ого... Твоє взуття трохи брудне... Але й це нормально!#$e#У різних людей різні смаки, мабуть.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Thu4",
+      "english": "Hey, you look like you're getting into some good shape this summer!#$b#All that farm work is paying off, huh?",
+      "translation": "Гей, схоже, цього літа ти набуваєш чудової форми!#$b#Уся ця робота на фермі дається взнаки, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Mon4",
+      "english": "Hey, nice tan.",
+      "translation": "Гей, гарна засмага.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Fri6",
+      "english": "Sorry my room is so messy.$s#$e#It's just hard to always remember to clean. I'm trying to get better, though.",
+      "translation": "Вибач за безлад у моїй кімнаті.$s#$e#Просто важко завжди пам’ятати про прибирання. Але я намагаюся виправитися.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Wed8",
+      "english": "You know, I actually wouldn't mind being a farmer... it seems a lot like playing sports, in a way.#$e#I like being outdoors and doing things with my hands.",
+      "translation": "Знаєш, я, власне, не заперечував би проти роботи на фермі... У певному сенсі вона дуже схожа на спорт.#$e#Мені подобається бувати надворі й працювати руками.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "summer_Sat10",
+      "english": "I've been trying to do more reading lately... I feel like I've been neglecting my brain for years because of my athletic obsession.",
+      "translation": "Останнім часом я намагаюся більше читати... Здається, через одержимість спортом я роками занедбував свій мозок.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_1",
+      "english": "Sure, it's getting colder... But it's still warm enough for sports!#$e#That's all I care about.",
+      "translation": "Так, стає холодніше... Але для спорту ще досить тепло!#$e#Для мене лише це й важливо.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Mon",
+      "english": "My grandma told me I should spend more time studying.#$e#I was like, '...Grams, don't fret. I'm turning pro!'$h#$e#Studying is for nerds, anyway.",
+      "translation": "Бабуся сказала, що мені слід більше вчитися.#$e#А я такий: «...Ба, не хвилюйся. Я стану професіоналом!»$h#$e#Та й узагалі, навчання — для ботанів.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Wed",
+      "english": "Hey, I want to ask you something.^Hey, can I ask you something?#$e#$q 54/55 fall_Wed_01_old#Do you think the ladies like my haircut?^What do you think about my haircut?#$r 54 30 fall_Wed_01_01#It looks very fashionable.#$r 55 -30 fall_Wed_01_02#It looks like some kind of fungal growth.",
+      "translation": "Гей, хочу тебе про щось запитати.^Гей, можна тебе про щось запитати?#$e#$q 54/55 fall_Wed_01_old#Як гадаєш, дівчатам подобається моя зачіска?^Що ти думаєш про мою зачіску?#$r 54 30 fall_Wed_01_01#Вона має дуже модний вигляд.#$r 55 -30 fall_Wed_01_02#Вона схожа на якийсь грибковий наріст.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Wed_01_old",
+      "english": "I put too much gel in my hair today. It kind of hurts.#$e#Don't touch it!#$e#...what?",
+      "translation": "Сьогодні я наніс забагато гелю на волосся. Від нього аж трохи болить шкіра голови.#$e#Не торкайся!#$e#...Що?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Wed_01_01",
+      "english": "Yeah, I know. That's why I have it like this.",
+      "translation": "Так, я знаю. Саме тому я так укладаю волосся.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Wed_01_02",
+      "english": "Yeah right. You're just jealous that I look so good.",
+      "translation": "Ага, звісно. Ти просто заздриш моїй красі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Thu",
+      "english": "What's up?#$e#Isn't your name, like, %firstnameletter%name, or something?#$e#Oh. It's @? Okay. Sorry.",
+      "translation": "Як справи?#$e#Тебе ж звати якось на кшталт %firstnameletter%name, правда?#$e#А, @? Гаразд. Вибач.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Fri",
+      "english": "I'm going to do two hundred sit-ups tonight.#$b#I'm pretty dedicated, aren't I?$h#$e#Need anything else?",
+      "translation": "Сьогодні ввечері я зроблю двісті скручувань.#$b#Я доволі цілеспрямований, еге ж?$h#$e#Щось іще?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Sat",
+      "english": "I think you can find salmon in the river this time of year.#$e#At least that's what I heard.",
+      "translation": "Здається, цієї пори в річці можна знайти лосося.#$e#Принаймні я так чув.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Sun",
+      "english": "Hey, the gridball game is on today!#$e#Sundays are pretty awesome in the fall.$u",
+      "translation": "Гей, сьогодні показують матч із ґрідболу!#$e#Осінні неділі просто чудові.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Thu2",
+      "english": "What's up, @?",
+      "translation": "Як справи, @?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Fri6",
+      "english": "I'm going to do a ton of sit-ups tonight.#$e#You have to work really hard if you want to achieve your maximum potential.",
+      "translation": "Сьогодні ввечері я зроблю купу скручувань.#$e#Якщо хочеш повністю розкрити свій потенціал, треба дуже наполегливо працювати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Mon4",
+      "english": "My grandma told me I should spend more time studying.#$e#Maybe she's right...$s",
+      "translation": "Бабуся сказала, що мені слід більше вчитися.#$e#Може, вона має рацію...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Wed8",
+      "english": "I finally took the plunge... I've decided to stop putting gel in my hair.#$e#I wouldn't want to be friends with someone who only liked me because I have gel in my hair.",
+      "translation": "Нарешті я наважився... Я вирішив більше не наносити гель на волосся.#$e#Я б не хотів дружити з людиною, якій подобаюся лише через гель у моєму волоссі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "fall_Thu10",
+      "english": "@! Um... Hi.$l",
+      "translation": "@! Ем... Привіт.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_1",
+      "english": "Winter is kind of lame. There's too much snow to do anything fun.#$e#I guess some people like it.",
+      "translation": "Зима якась нудна. Снігу забагато, щоб робити щось веселе.#$e#Хоча декому вона подобається.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Mon",
+      "english": "You like the snow? Me... I'm just looking forward to spring.",
+      "translation": "Тобі подобається сніг? А я... Я просто чекаю на весну.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Tue",
+      "english": "Hey, can you go find Haley and tell her I said 'hi'?",
+      "translation": "Гей, можеш знайти Гейлі й передати їй від мене привіт?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Tue_inlaw_Haley",
+      "english": "Oh, hey. How's the married life coming along?$9",
+      "translation": "О, привіт. Як тобі подружнє життя?$9",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Wed",
+      "english": "People stay indoors a lot during the winter, and do boring stuff.$s#$e#Maybe if I read a book I'd be less bored... nah.",
+      "translation": "Узимку люди багато сидять у приміщеннях і займаються нудними справами.$s#$e#Може, якби я прочитав книжку, то менше нудьгував би... Та ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Thu",
+      "english": "When I turn pro, I'll be so rich that I'll get a vacation home in the tropics.#$e#Then I won't have to deal with these boring winters.",
+      "translation": "Коли я стану професіоналом, то буду таким багатим, що куплю будинок для відпочинку в тропіках.#$e#Тоді не доведеться терпіти ці нудні зими.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Fri",
+      "english": "You came all the way through the snow to see me?#$e#I guess that makes sense.",
+      "translation": "Тобі вдалося пройти крізь увесь цей сніг, щоб побачитися зі мною?#$e#Мабуть, це цілком логічно.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Sat",
+      "english": "There's some weird people living in this town.#$e#...like that guy Sebastian. Why does he wear black all the time?#$e#I don't get it.",
+      "translation": "У цьому містечку живуть якісь дивні люди.#$e#...Наприклад, той хлопець Себастьян. Чому він весь час носить чорне?#$e#Не розумію.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Sun",
+      "english": "Hey, the gridball game is on today!#$e#This might be my favorite day of the week.",
+      "translation": "Гей, сьогодні показують матч із ґрідболу!#$e#Можливо, це мій улюблений день тижня.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Fri4",
+      "english": "You came all the way through the snow to see me?#$e#That's nice of you.$h",
+      "translation": "Тобі вдалося пройти крізь увесь цей сніг, щоб побачитися зі мною?#$e#Це так мило з твого боку.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Sat6",
+      "english": "I guess it's interesting that some people are totally different than us, you know?#$b#I don't always understand why others act the way they do, but that's fine.",
+      "translation": "Мабуть, цікаво, що деякі люди зовсім не схожі на нас, розумієш?#$b#Я не завжди розумію, чому інші так поводяться, але це нормально.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Tue4",
+      "english": "Hey, @. Could you do me a favor?$l#$b#If you see Haley, tell her I'm busy.$l#$e#Thanks.",
+      "translation": "Гей, @. Зробиш мені послугу?$l#$b#Якщо побачиш Гейлі, скажи їй, що я зайнятий.$l#$e#Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Tue4_inlaw_Haley",
+      "english": "I'll admit... I was a little jealous when you and Haley got married. But, hey... It's a chance for me to learn something new about myself.$9",
+      "translation": "Зізнаюся... Коли ви з Гейлі одружилися, я трохи ревнував. Але, гей... Це нагода дізнатися про себе щось нове.$9",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Wed8",
+      "english": "You know what? I'm going to start reading a book!",
+      "translation": "Знаєш що? Я почну читати книжку!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Thu6",
+      "english": "I wish I could control the weather.",
+      "translation": "От би я міг керувати погодою.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Alex",
+      "key": "winter_Thu10",
+      "english": "If I ever make a lot of money, I'll make sure all my friends and family are taken care of.#$e#That means you, too.$h",
+      "translation": "Якщо я колись зароблю багато грошей, то подбаю про всіх друзів і рідних.#$e#І про тебе також.$h",
+      "reviewed": true
+    }
+  ]
+}

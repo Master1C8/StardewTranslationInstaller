@@ -1,0 +1,432 @@
+{
+  "id": "352-cs-special-items-tv-weather-and-fishing-quests-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 special-item, television, weather, fortune, wallpaper and fishing-quest strings. Canonical show, Welwick, Pelican Town, Demetrius and Willy terms, placeholders, TV caret, dialogue commands, runtime gender macro, alignment and trailing spaces were checked against the English source.",
+    "reviewedTextSHA256": "e3026da88bc8f8e110570e835e8874f723912bde7cf28af85727bde175526e3e",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 140
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13090",
+      "english": "Under a piece of wood, you found a {0}! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+      "translation": "Під шматком деревини ти знайшов {0}! Не зовсім зрозуміло, для чого це, але річ здається важливою. Її додано до твого гаманця.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13092",
+      "english": "You've found the {0}! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+      "translation": "Ти знайшов {0}! Не зовсім зрозуміло, для чого це, але річ здається важливою. Її додано до твого гаманця.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "SpecialItem.cs.13094",
+      "english": "You got the {0}! Your inventory space has increased to {1}.",
+      "translation": "Ти отримав {0}! Місткість інвентарю збільшено до {1}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13105",
+      "english": "Weather Report",
+      "translation": "Прогноз погоди",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13107",
+      "english": "Fortune Teller",
+      "translation": "Ворожка",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13111",
+      "english": "Livin' Off The Land",
+      "translation": "Живемо з дарів землі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13114",
+      "english": "The Queen Of Sauce",
+      "translation": "Королева соусу",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13117",
+      "english": "The Queen Of Sauce (Re-run)",
+      "translation": "Королева соусу (Повтор)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13118",
+      "english": "(Leave)",
+      "translation": "(Піти)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13120",
+      "english": "Select channel:",
+      "translation": "Вибери канал:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13124",
+      "english": "Welcome to \"Livin' Off The Land\". We're back again with another tip for y'all. Now listen up:",
+      "translation": "Ласкаво просимо до програми «Життя від землі». Ми знову з вами й маємо ще одну пораду. Слухайте уважно:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13127",
+      "english": "Greetings! It is I, the queen of sauce... here to teach you a new mouth-watering recipe from my secret cookbook. This week's dish...",
+      "translation": "Вітаю! Це я, Королева соусу... і сьогодні я навчу вас нового апетитного рецепта з моєї таємної кулінарної книги. Страва цього тижня...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13128",
+      "english": "Ah... I sense that a new viewer has joined us. A young man from... Stardew Valley? Welcome, welcome!",
+      "translation": "А... Відчуваю, що до нас приєднався новий глядач. Молодий чоловік із... долини Стардью? Вітаю, вітаю!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13130",
+      "english": "Ah... I sense that a new viewer has joined us. A young lady from... Stardew Valley? Welcome, welcome!",
+      "translation": "А... Відчуваю, що до нас приєдналася нова глядачка. Молода жінка з... долини Стардью? Вітаю, вітаю!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13132",
+      "english": "Ah... yes, I can hear the spirits whispering something to me... ",
+      "translation": "А... так, чую, як духи щось мені шепочуть... ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13133",
+      "english": "Welcome back to 'Welwick's Oracle'... If you seek hidden knowledge of the future, well you've come to the right place.",
+      "translation": "З поверненням до «Оракула Велвік»... Якщо шукаєте прихованих знань про майбутнє, то потрапили куди слід.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13134",
+      "english": "Hoo.. I see a glimmer within my scrying orb... A shard of knowledge from the future!",
+      "translation": "О-о... Бачу мерехтіння у своїй віщувальній кулі... Уламок знань із майбутнього!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13135",
+      "english": "Welcome to Welwick's Oracle... the ONLY show where the voice of the spirits is channeled directly... to YOU.",
+      "translation": "Ласкаво просимо до «Оракула Велвік»... ЄДИНОЇ програми, де голос духів передають безпосередньо... ВАМ.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13136",
+      "english": "Welcome to KOZU 5... your number one source for weather, news, and entertainment.^And now, the weather forecast for tomorrow...",
+      "translation": "Ласкаво просимо на KOZU 5... ваше головне джерело погоди, новин і розваг.^А тепер прогноз погоди на завтра...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13148",
+      "english": "Just kidding... I'm not ready. I don't have anything for you today.",
+      "translation": "Жартую... Я ще не готова. Сьогодні для вас нічого немає.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13151",
+      "english": "You already know how to cook {0}.",
+      "translation": "Ти вже вмієш готувати {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13153",
+      "english": "You learned how to cook '{0}'!",
+      "translation": "Ти навчився готувати «{0}»!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13164",
+      "english": "Um... that's odd. My information sheet just says 'null'. This is embarrassing... ",
+      "translation": "Ем... дивно. У моїй довідці написано лише «null». Як незручно... ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13170",
+      "english": "in Pelican Town",
+      "translation": "у містечку Пелікан",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13172",
+      "english": "on the beach",
+      "translation": "на пляжі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13174",
+      "english": "in the forest",
+      "translation": "у лісі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13175",
+      "english": "It's going to be clear and sunny tomorrow... perfect weather for the {0}! The event will take place {1}, starting between {2} and {3}. Don't be late!",
+      "translation": "Завтра буде ясно й сонячно... ідеальна погода для події «{0}»! Вона відбудеться {1} й розпочнеться між {2} та {3}. Не запізнюйтеся!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13180",
+      "english": "Bundle up, folks. It's going to snow tomorrow!",
+      "translation": "Одягайтеся тепліше. Завтра сніжитиме!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13181",
+      "english": "Expect a few inches of snow tomorrow.",
+      "translation": "Завтра очікується кілька сантиметрів снігу.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13182",
+      "english": "It's going to be a beautiful, sunny day tomorrow!",
+      "translation": "Завтра буде прекрасний сонячний день!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13183",
+      "english": "It's going to be clear and sunny all day.",
+      "translation": "Увесь день буде ясно й сонячно.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13184",
+      "english": "It's going to rain all day tomorrow.",
+      "translation": "Завтра цілий день дощитиме.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13185",
+      "english": "Looks like a storm is approaching. Thunder and lightning is expected.",
+      "translation": "Схоже, наближається буря. Очікуються грім і блискавки.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13187",
+      "english": "Partially cloudy with a light breeze. Expect lots of pollen!",
+      "translation": "Мінлива хмарність і легкий вітерець. Очікується багато пилку!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13189",
+      "english": "It's going to be cloudy, with gusts of wind throughout the day.",
+      "translation": "Буде хмарно, а протягом дня здійматимуться пориви вітру.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13190",
+      "english": "It's going to snow all day. Make sure you bundle up, folks!",
+      "translation": "Увесь день сніжитиме. Одягайтеся тепліше!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13191",
+      "english": "The spirits are furious. Apparently someone tried to give them a worthless offering... Hmm. It's unwise to play jokes on the spirits!",
+      "translation": "Духи розлючені. Схоже, хтось підніс їм нікчемну жертву... Гм. Не варто жартувати з духами!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13192",
+      "english": "The spirits are very displeased today. They will do their best to make your life difficult.",
+      "translation": "Сьогодні духи дуже невдоволені. Вони докладуть усіх зусиль, щоб ускладнити вам життя.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13193",
+      "english": "The spirits are somewhat annoyed today. Luck will not be on your side.",
+      "translation": "Сьогодні духи трохи роздратовані. Удача буде не на вашому боці.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13195",
+      "english": "The spirits are somewhat mildly perturbed today. Luck will not be on your side.",
+      "translation": "Сьогодні духи ледь помітно стривожені. Удача буде не на вашому боці.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13197",
+      "english": "The spirits are joyous! Someone gave them a nice offering today, and they are very pleased.",
+      "translation": "Духи радіють! Сьогодні хтось підніс їм гарну жертву, і вони дуже задоволені.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13198",
+      "english": "The spirits are very happy today! They will do their best to shower everyone with good fortune.",
+      "translation": "Сьогодні духи дуже щасливі! Вони докладуть усіх зусиль, щоб усім щастило.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13199",
+      "english": "The spirits are in good humor today. I think you'll have a little extra luck.",
+      "translation": "Сьогодні духи в доброму гуморі. Гадаю, вам трохи більше щаститиме.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13200",
+      "english": "The spirits feel neutral today. The day is in your hands.",
+      "translation": "Сьогодні духи байдужі. Усе у ваших руках.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV.cs.13201",
+      "english": "This is rare. The spirits feel absolutely neutral today.",
+      "translation": "Таке буває рідко. Сьогодні духи цілковито байдужі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Wallpaper.cs.13203",
+      "english": "Flooring",
+      "translation": "Підлога",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Wallpaper.cs.13204",
+      "english": "Wallpaper",
+      "translation": "Шпалери",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Wallpaper.cs.13205",
+      "english": "Decorates the floor of one room.",
+      "translation": "Оздоблює підлогу однієї кімнати.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Wallpaper.cs.13206",
+      "english": "Decorates the walls of one room.",
+      "translation": "Оздоблює стіни однієї кімнати.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13227",
+      "english": "Fishing",
+      "translation": "Рибальство",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13228",
+      "english": "The local {0} population is starting to threaten other species. If you can fish {1} of them for me, it would be a big help.   -Demetrius",
+      "translation": "Місцева популяція виду {0} починає загрожувати іншим видам. Якщо зможеш виловити для мене {1} особин, це дуже допоможе.   — Деметріус",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13231",
+      "english": "Thanks, @!$h#$b#The {0} population was getting out of hand because {1}",
+      "translation": "Дякую, @!$h#$b#Популяція виду {0} вийшла з-під контролю через те, що {1}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13233",
+      "english": "pollutants in the water accelerated their reproductive cycle.",
+      "translation": "забруднювачі у воді прискорили цикл їхнього розмноження.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13234",
+      "english": "careless fishermen released way too many for a local tournament.",
+      "translation": "необережні рибалки випустили надто багато особин для місцевого турніру.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13235",
+      "english": "overfishing of their competitor species allowed them complete access to their favorite food.",
+      "translation": "надмірний вилов конкуруючого виду відкрив їм необмежений доступ до улюбленої їжі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13236",
+      "english": "a genetically modified 'super{0}' escaped from a fishery and started multiplying.",
+      "translation": "генетично модифікована «супер{0}» утекла з рибного господарства й почала розмножуватися.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13243",
+      "english": "{0}/{1} Octopi caught",
+      "translation": "Спіймано восьминогів: {0}/{1}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13244",
+      "english": "{0}/{1} {2} caught",
+      "translation": "Спіймано {2}: {0}/{1}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13248",
+      "english": "Trying to keep the art o' fishing alive... I'll pay {0}g to any ${fisherman^fishing enthusiast}$ who catches {1} {2}. Good luck!  -Willy",
+      "translation": "Намагаюся зберегти мистецтво рибальства... Заплачу {0}g кожному ${рибалці^шанувальниці риболовлі}$, хто спіймає {1} {2}. Удачі!  — Віллі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FishingQuest.cs.13253",
+      "english": "Squids",
+      "translation": "Кальмари",
+      "reviewed": true
+    }
+  ]
+}

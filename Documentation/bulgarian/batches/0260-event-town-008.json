@@ -1,0 +1,27 @@
+{
+  "id": "0260-event-town-008",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "101/f Clint 1500/e 97/k 2123243/k 2123343/o Emily/t 900 1830/a 0 90/!D Emily": "4aa56ab9cb450057f6359c3b051406fd4522f4c25beb5e4cf949a14cbc533b20"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "101/f Clint 1500/e 97/k 2123243/k 2123343/o Emily/t 900 1830/a 0 90/!D Emily": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"@!$4#$b#...Хвана ме.$s\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"Канех се да поканя Емили на среща. Бях стигнал чак до прага ѝ... но тогава я чух да идва и се хвърлих в този храст.$s#$b#Сега чакам да приключи разговора си с Каролайн, за да се промъкна обратно в дома си.$s\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"Какво каза току-що? Повече никога няма да подобриш инструментите си, ако не я поканя на среща?$s\"/faceDirection Clint 1/pause 1500/speak Clint \"Ти си злодей, @.#$b#*въздишка* ...добре, ще го направя.$s\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"Трябва да си припомня съвета, който @ ми даде в салона.\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"Ъм... Емили?\"/pause 800/faceDirection Emily 3/pause 800/faceDirection Emily 1/speak Emily \"Извинявай, Каролайн. Ще ме извиниш ли за минутка?\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"Да, Клинт?\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"Чудех се дали би излязла с... с мен... утре... *преглъщане*$4\"/pause 200/faceDirection Clint 3/pause 300/emote Emily 8/pause 300/faceDirection Clint 1/pause 500/jump Clint/pause 800/speak Clint \"Имам два билета за Карнавала в Грампълтън утре. Щ... Ще дойдеш ли с мен? $4\"/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"Разбира се, Клинт! Звучи забавно!$h\"/pause 800/speak Clint \"Наистина ли? Добре! Ще мина да те взема в пет.$h\"/speak Emily \"Добре! До утре!\"/move Emily 7 0 1/faceDirection Caroline 3/speed Clint 4/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"Видя ли това?! Утре вечер съм на среща!$h\"/pause 500/jump farmer/pause 1000/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"Ох... Толкова съм нервен.$s\"/end dialogue Clint \"Благодаря, че по-рано ме принуди да го направя. Страх ме е, но съм и много доволен.$h\""
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all sixteen quoted hiding, encouragement, nervous invitation, acceptance and aftermath fields in Town source ordinal 8.",
+      "Preserved every event command, actor identifier, condition, emotion marker and dialogue control token, including the deliberately spaced lines and gulp notation.",
+      "Applied the locked Grampleton name, kept Clint’s first failed invitation visibly hesitant and rendered every player-directed line without a gender assumption."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "bf87533b6a133584de079af1eaadd3a645b35f829713f14a00ee9749be84149e"
+  }
+}

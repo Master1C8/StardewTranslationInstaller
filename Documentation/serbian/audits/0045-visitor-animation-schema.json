@@ -1,0 +1,30 @@
+{
+  "positiveBatches": [
+    "0084-fishing-visitors",
+    "0086-animation-descriptions"
+  ],
+  "negativeCases": [
+    {
+      "case": "second visitor speaker changed",
+      "rejected": true,
+      "expectedDiagnostic": "Non-villager speaker label mismatch"
+    },
+    {
+      "case": "visitor sequence boundary split",
+      "rejected": true,
+      "expectedDiagnostic": "Non-villager dialogue sequence changed"
+    },
+    {
+      "case": "random probability changed",
+      "rejected": true,
+      "expectedDiagnostic": "Sam pool probability command changed"
+    },
+    {
+      "case": "emotion tokens swapped between random branches",
+      "rejected": true,
+      "expectedDiagnostic": "Sam pool branch tokens changed"
+    }
+  ],
+  "mutationsMaterialized": false,
+  "errors": 0
+}

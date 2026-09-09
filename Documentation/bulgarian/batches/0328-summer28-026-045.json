@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "0328-summer28-026-045",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Festivals/summer28",
+  "status": "reviewed",
+  "entries": {
+    "Shane": "Медузите бяха тук преди година и след още една година пак ще се върнат... природата е удивителна.",
+    "Marnie": "Древният дървен док е претоварен с толкова много хора! Аз ще остана тук близо до плажа.",
+    "Elliott": "Ако продължаваме да замърсяваме океаните, медузите със сигурност ще изчезнат. Това вече се случва.#$e#Колко жалко... вече не изпитваме никакво уважение към природата.",
+    "Gus": "„Лунни медузи“... Чудя се какъв ли е вкусът им?$h#$b#Разбира се, никога не бих ги опитал!$u",
+    "Dwarf": "Казваш, че горе вали? *ахва*#$e#Дъждът... За нас той е почти митичен. Някои от нас живеят цял живот, без никога да го преживеят.",
+    "Wizard": "Как ме намери тук отзад? Мислех, че съм се скрил добре.#$b#Може би притежаваш дарбата на ясновидството.#$e#Тук съм, за да наблюдавам луналу... или „лунните медузи“, както ги наричате. Те притежават необичайно мощна магическа аура за водна форма на живот.",
+    "Harvey": "Е, лятото свърши. Честно казано, с радост ще се сбогувам с тези проклети комари!",
+    "Sandy": "Чух, че у дома вали. Затова ли дойде тук?$h#$e#Всъщност дъждът малко ми липсва...$s",
+    "Jas": "Надявам се тази година да има бебета!",
+    "Vincent": "Искам да видя рядката зелена медуза!",
+    "Willy": "Повечето нощни риби биха се уплашили от светлината... тези са странни.",
+    "Leo": "Лунните медузи са мои стари приятели... всяка година идват и на острова.",
+    "set-up_y2": "ocean/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Jellies2/viewport -1000 01000/loadActors Set-Up/positionOffset Willy 0 -20/advancedMove Haley true 3 6750 4 300 0 -2 4 300 3 5500 2 300 0 2 2 250 3 2000/advancedMove Vincent true 3 4000 2 300 1 250 3 0 0 -2 4 250 1 5350 4 300 0 -3 4 300 1 5750 2 300 0 3 2 300 1 5000 2 250 0 2 -3 0 3 2000/advancedMove Abigail true 3 4250 2 250 0 5 2 300 3 7500 4 300 0 -5 4 250 3 1000/advancedMove Caroline false 2 12500 -2 0 0 1 -13 0 0 8 2 300 3 1000/advancedMove Alex true 2 7250 1 250 3 0 1 250 2 5000 3 300 -3 0 2 3000/playerControl jellies/viewport player clamp true unfreeze/globalFadeToClear",
+    "mainEvent_y2": "pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/changeLocation Beach/warpFarmers 28 36 2 26 36 2 33 35 2 40 35 2 27 35 2 30 35 2 37 34 2 39 34 2 up 42 35 3/positionOffset farmer 0 16/warp spouse 29 36/faceDirection spouse 2/warp Caroline 36 35/faceDirection Caroline 2 true/warp Pierre 37 35/faceDirection Pierre 2 true/specificTemporarySprite candleBoat/viewport 26 36 true/pause 2000/move Lewis 0 1 2/move Lewis -2 0 3/pause 400/showFrame Lewis 16 true/animate Lewis false false 200 25 16 17 17/pause 800/playSound parry/specificTemporarySprite candleBoatMove/pause 500/showFrame Lewis 0 true/animate Lewis false false 200 25 12/pause 400/faceDirection Lewis 2/pause 6000/specificTemporarySprite moonlightJellies/pause 10000/playMusic moonlightJellies/pause 18000/emote Robin 16/pause 500/emote Jodi 56/pause 500/jump Maru/pause 500/emote Penny 20/pause 1250/emote Caroline 16/pause 1250/faceDirection Robin 1 true/pause 750/faceDirection Demetrius 3 true/pause 2000/faceDirection Robin 2 true/pause 750/faceDirection Demetrius 2 true/pause 2500/showFrame Willy 24/pause 500/showFrame Willy 25/pause 1500/viewport move -1 0 8000/pause 2650/showFrame Kent 16/pause 1500/move Jodi 0 1 2/pause 1500/showFrame Jodi 25/pause 4500/faceDirection Vincent 2 true/pause 300/faceDirection Vincent 1 true/pause 150/move Vincent 1 0 2/move Vincent 0 2 2/pause 600/jump Vincent/pause 400/viewport move 1 0 20000/pause 2000/faceDirection Vincent 1 true/pause 1000/faceDirection Vincent 2 true/pause 1000/move Lewis 1 0 2/move Lewis 0 1 2/showFrame Lewis 18/pause 4300/showFrame Demetrius 19/pause 3000/faceDirection Caroline 1 true/pause 1000/faceDirection Pierre 3 true/pause 2000/globalFade/viewport -1000 -1000/pause 2000/pause 1000/message \"Лятното сияние вече угасна... а лунните медузи продължават към великата неизвестност.\"/playMusic none/pause 2000/waitForOtherPlayers festivalEnd/end",
+    "Abigail_spouse_y2": "Донесох одеяло за нас, в случай че по-късно ни стане студено.$0#$e#Малко е, но съм сигурна, че някак ще се поберем...$4",
+    "Haley_spouse_y2": "Ооо... Толкова е романтично с всички тези свещи.$4#$e#Сбогом, лято...$s",
+    "Maru_spouse_y2": "Мислиш ли, че имам достатъчно време да взема телескопа си от къщата във фермата?$0#$e#Хмм... вероятно не. Не искам да пропусна това!$0",
+    "Emily_spouse_y2": "Хей, ето къде си!$0#$e#Океанът крие толкова много тайни и чудеса. Наистина е удивителен.$0",
+    "Leah_spouse_y2": "Донесох пенливо вино за главното събитие... Лятото още не е свършило!$0",
+    "Penny_spouse_y2": "Щях да донеса чайник с чай за нас, ако знаех, че ще е толкова хладно!$0"
+  },
+  "preserveReasons": {
+    "set-up_y2": "Structural second-year festival map, actor, animation and control command script; preserved byte-for-byte."
+  },
+  "sourceHashes": {
+    "Shane": "989c84f4ffd37682e7d292f904d7586b42f63ad0eadb10a3297ddd1a60b07e50",
+    "Marnie": "fa10235413ce7ef13577b9948e264ddd646148071680b35c1566ffdf03f7b5e4",
+    "Elliott": "de1b142da2306b4f2225e82f59eabbad021a42fcca97a91628b1b3054ceb1d34",
+    "Gus": "bbb2e551a8e2607351e552e94aa1731b7dfa6b7ecb06688f3665c922631aea85",
+    "Dwarf": "51ccf137304ca2dbdd1493515b0c1a352bda1887088255465c80ae3915aa0e17",
+    "Wizard": "d8194fa3463801c5754e087fc300879af1670ceac7a606f1a366641ae9b91cb4",
+    "Harvey": "ccfbaec523a3b5dbc413c2a0d9e12fe795295867a6cefedfd5dd3d5facb3e66d",
+    "Sandy": "5d4ca2d31c6f326b9ac4ad075aab4132c1ff835f792c29cd883631ec7698da42",
+    "Jas": "20d59e8a076d992dea7350f97870c2561082cd035f4f5124c6e91d028a3b167f",
+    "Vincent": "0afacbec03c6794f24239405d599959919130d146a286dba322d1807508b6636",
+    "Willy": "bf1443d2a2a8dee2a2f36fbf00413781310650191c91a4573ad87ba6989ee646",
+    "Leo": "1915e7ab7e0c5b7b5dd88261f9f23c7cb81d16c4165d8e5ba4521f41363a8eed",
+    "set-up_y2": "058db612bf1948ac0d9ff61238a357f38aaea7a92a102d91c7ec6a04ccde28d9",
+    "mainEvent_y2": "bf41f3dd9982db7c1556aedc6fa1714bd89f14fa220875f6a8e563ec08f28401",
+    "Abigail_spouse_y2": "6ea5ae433314c9f4e1f23f85d776c0783b993ced1dca7d26fd72c4ed3eabfa16",
+    "Haley_spouse_y2": "f124f24e56e8cffc46cb23e4dfe2afb2675524b0a3ec80564ebaa7b01026b56c",
+    "Maru_spouse_y2": "a9c7543ade81cf04a94cda6c3da6f71fbf32183bc80bd486d4c3fedcfd418797",
+    "Emily_spouse_y2": "65b81e957376decb48f4d3df1817d4617da1218d129a771d677d619ee7632425",
+    "Leah_spouse_y2": "6bc29c065b77b1c2cb1b5d38dafc586af588601112a50965184a638420e1d7e2",
+    "Penny_spouse_y2": "9a62a602a8b5139aa4a76bce637d6d944973d3a1d4da7eb0427bdc55f1f9265a"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 20,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all eighteen player-facing summer28 records from source ordinals 26 through 45 directly from English and preserved the second-year set-up script byte-for-byte.",
+      "Preserved every event command, dialogue, emotion and asterisk marker, reused the reviewed Dwarf and Sandy wording, and kept the second-year closing narration identical to the first year.",
+      "Applied locked лунни медузи terminology, transliterated the Wizard’s distinct Lunaloos name as луналу, and retained the environmental, magical and spouse imagery naturally."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "50be93c2ecfd69e16421407d01c7811b23efa1686eb239637e959fc2edf84b03"
+  }
+}

@@ -19,10 +19,15 @@ namespace VNRevival.LanguageSwitcher
 
 public sealed class ModEntry : Mod
 {
+    private const string BulgarianLanguageCode = "bg-vnrevival";
     private const string PersianLanguageCode = "fa-vnrevival";
     private const string ArabicLanguageCode = "ar-vnrevival";
+    private const string HebrewLanguageCode = "he-vnrevival";
+    private const string DutchLanguageCode = "nl-vnrevival";
+    private const string SerbianLanguageCode = "sr-vnrevival";
     private static ArabicScriptTextAdapter? PersianAdapter;
     private static ArabicScriptTextAdapter? ArabicAdapter;
+    private static ArabicScriptTextAdapter? HebrewAdapter;
 
     public override void Entry(IModHelper helper)
     {
@@ -37,10 +42,27 @@ public sealed class ModEntry : Mod
         Harmony harmony = new(ModManifest.UniqueID);
         harmony.Patch(target, prefix: new HarmonyMethod(prefix));
 
+        // The game's aOrAn: chat token calls AOrAn, which hardcodes English
+        // articles for mod languages. Supply the locale-specific Dutch article
+        // and suppress the article for Bulgarian and Serbian.
+        harmony.Patch(
+            AccessTools.Method(typeof(Utility), nameof(Utility.AOrAn)),
+            postfix: new HarmonyMethod(typeof(ModEntry), nameof(AfterIndefiniteArticle))
+        );
+
+        MethodInfo dialogueTarget = AccessTools.Method(typeof(Dialogue), "checkForSpecialCharacters", new[] { typeof(string) })
+            ?? throw new InvalidOperationException("The dialogue token method was not found.");
+        MethodInfo dialoguePrefix = AccessTools.Method(typeof(ModEntry), nameof(BeforeDialogueTokens))
+            ?? throw new InvalidOperationException("The Serbian dialogue prefix was not found.");
+        MethodInfo dialoguePostfix = AccessTools.Method(typeof(ModEntry), nameof(AfterDialogueTokens))
+            ?? throw new InvalidOperationException("The Serbian dialogue postfix was not found.");
+        harmony.Patch(dialogueTarget, prefix: new HarmonyMethod(dialoguePrefix), postfix: new HarmonyMethod(dialoguePostfix));
+
         string persianShapingMap = Path.Combine(helper.DirectoryPath, "persian-shaping-map.json");
         PersianAdapter = ArabicScriptTextAdapter.Load(persianShapingMap);
         string arabicShapingMap = Path.Combine(helper.DirectoryPath, "arabic-shaping-map.json");
         ArabicAdapter = ArabicScriptTextAdapter.Load(arabicShapingMap);
+        HebrewAdapter = ArabicScriptTextAdapter.CreateBidiOnly();
         MethodInfo textPrefix = AccessTools.Method(typeof(ModEntry), nameof(BeforeTextRendering))
             ?? throw new InvalidOperationException("The Arabic-script rendering adapter was not found.");
         HarmonyMethod textHarmonyPrefix = new(textPrefix);
@@ -63,13 +85,40 @@ public sealed class ModEntry : Mod
             harmony.Patch(method, prefix: textHarmonyPrefix);
             patched += 1;
         }
-        Monitor.Log($"Persian and Arabic shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
+        Monitor.Log($"Persian, Arabic, and Hebrew shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
     }
 
     private static bool IsTextParameter(ParameterInfo parameter)
     {
         return parameter.ParameterType == typeof(string)
             || parameter.ParameterType == typeof(StringBuilder);
+    }
+
+    private static void AfterIndefiniteArticle(ref string __result)
+    {
+        if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod)
+            return;
+
+        string? languageCode = LocalizedContentManager.CurrentModLanguage?.LanguageCode;
+        if (languageCode == DutchLanguageCode)
+            __result = "een";
+        else if (languageCode == BulgarianLanguageCode)
+            __result = string.Empty;
+        else
+            __result = SerbianGrammar.SuppressIndefiniteArticle(__result, languageCode == SerbianLanguageCode);
+    }
+
+    private static void BeforeDialogueTokens(string str, out bool __state)
+    {
+        __state = LocalizedContentManager.CurrentLanguageCode == LocalizedContentManager.LanguageCode.mod
+            && LocalizedContentManager.CurrentModLanguage?.LanguageCode == SerbianLanguageCode
+            && str.Contains("%adj", StringComparison.Ordinal)
+            && str.Contains("%noun", StringComparison.Ordinal);
+    }
+
+    private static void AfterDialogueTokens(ref string __result, bool __state)
+    {
+        if (__state) __result = SerbianGrammar.ApplyAdjectiveAgreement(__result);
     }
 
     private static void BeforeSetModLanguage(ModLanguage __0)
@@ -97,6 +146,7 @@ public sealed class ModEntry : Mod
         {
             PersianLanguageCode => PersianAdapter,
             ArabicLanguageCode => ArabicAdapter,
+            HebrewLanguageCode => HebrewAdapter,
             _ => null,
         };
         if (adapter is null) return;
@@ -156,6 +206,11 @@ public sealed class ArabicScriptTextAdapter
         if (document?.Format != 2 || document.Entries.Length == 0)
             throw new InvalidDataException("The Arabic-script shaping map is missing or invalid.");
         return new ArabicScriptTextAdapter(document.Entries);
+    }
+
+    public static ArabicScriptTextAdapter CreateBidiOnly()
+    {
+        return new ArabicScriptTextAdapter(Array.Empty<MapEntry>());
     }
 
     public string Transform(string value)
@@ -259,7 +314,7 @@ public sealed class ArabicScriptTextAdapter
         if (joiningByCluster.ContainsKey(value) || glyphs.Contains(value)) return Direction.RightToLeft;
         foreach (char character in value)
         {
-            if (IsArabic(character)) return Direction.RightToLeft;
+            if (IsRightToLeft(character)) return Direction.RightToLeft;
             if (char.IsLetterOrDigit(character)) return Direction.LeftToRight;
         }
         return Direction.Neutral;
@@ -297,7 +352,7 @@ public sealed class ArabicScriptTextAdapter
     private static bool ContainsLogicalScript(string value)
     {
         foreach (char character in value)
-            if (IsArabic(character) && char.IsLetter(character)) return true;
+            if (IsRightToLeft(character) && char.IsLetter(character)) return true;
         return false;
     }
 
@@ -306,6 +361,12 @@ public sealed class ArabicScriptTextAdapter
         return character is >= '\u0600' and <= '\u06FF'
             or >= '\u0750' and <= '\u077F'
             or >= '\u08A0' and <= '\u08FF';
+    }
+
+    private static bool IsRightToLeft(char character)
+    {
+        return IsArabic(character)
+            || character is >= '\u0590' and <= '\u05FF';
     }
 
     private static string Mirror(string value)

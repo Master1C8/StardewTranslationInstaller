@@ -1,0 +1,82 @@
+[13:10:10 INFO  SMAPI] SMAPI 4.5.2 with Stardew Valley 1.6.15 build 24356 on macOS Unix 26.6.2
+[13:10:11 INFO  SMAPI] Mods go here: /private/tmp/stardew-ro-smapi-exact
+[13:10:11 TRACE SMAPI] (Using custom --mods-path argument. Game folder: /Volumes/KINGSTONMAC/SteamLibrary/common/Stardew Valley/Contents/MacOS.)
+[13:10:11 TRACE SMAPI] Log started at 2026-09-08T06:10:11 UTC
+[13:10:26 DEBUG SMAPI] Waiting for game to launch...
+[13:10:29 TRACE game] Instance_Initialize() finished, elapsed = '00:00:01.5870212'
+[13:10:30 TRACE SMAPI] Scanning for malicious files...
+[13:10:30 DEBUG SMAPI] Loading mod metadata...
+[13:10:30 DEBUG SMAPI] Loading mods...
+[13:10:31 TRACE SMAPI]    Content Patcher (from stardew-ro-smapi-exact/ContentPatcher/ContentPatcher.dll, ID: Pathoschild.ContentPatcher, assembly version: 2.9.0)...
+[13:10:32 TRACE SMAPI]    Stardew Valley — VN Revival Languages (from stardew-ro-smapi-exact/[CP] VN Revival Languages, ID: VNRevival.StardewValleyTranslations) [content pack]...
+[13:10:32 TRACE SMAPI]    VN Revival Language Switcher (from stardew-ro-smapi-exact/[SMAPI] VN Revival Language Switcher/VNRevival.LanguageSwitcher.dll, ID: VNRevival.LanguageSwitcher, assembly version: 1.4.0)...
+[13:10:32 TRACE SMAPI]       Detected game patcher in assembly VNRevival.LanguageSwitcher.dll.
+[13:10:32 TRACE SMAPI]    VN Revival Filipino Visual QA (from stardew-ro-smapi-exact/VN Revival Exit Harness/VNRevival.FilipinoVisualQA.dll, ID: VNRevival.FilipinoVisualQA, assembly version: 1.0.0)...
+[13:10:32 INFO  SMAPI] Loaded 3 mods:
+[13:10:32 INFO  SMAPI]    Content Patcher 2.9.0 by Pathoschild | Loads content packs which edit game data, images, and maps without changing the game files.
+[13:10:32 INFO  SMAPI]    VN Revival Filipino Visual QA 1.0.0 by VN Revival QA | Temporary local screenshot harness for Filipino release QA.
+[13:10:32 INFO  SMAPI]    VN Revival Language Switcher 1.4.0 by VN Revival | Fixes switching directly between custom VN Revival languages and renders Persian and Arabic with contextual shaping and bidirectional layout.
+
+[13:10:32 INFO  SMAPI] Loaded 1 content packs:
+[13:10:32 INFO  SMAPI]    Stardew Valley — VN Revival Languages 1.9.0 by VN Revival | for Content Patcher | Adds Russian, Polish, Vietnamese, Swahili, Persian, Arabic, Indonesian, Hindi, Traditional Chinese, and Romanian as separate VN Revival languages in Stardew Valley.
+
+[13:10:32 INFO  SMAPI]    Patched game code
+[13:10:32 INFO  SMAPI]    --------------------------------------------------
+[13:10:32 INFO  SMAPI]       These mods directly change the game code. They're more likely to cause errors or bugs in-game; if
+[13:10:32 INFO  SMAPI]       your game has issues, try removing these first. Otherwise you can ignore this warning.
+
+[13:10:32 INFO  SMAPI]       - VN Revival Language Switcher
+
+[13:10:32 DEBUG SMAPI]    No update keys
+[13:10:32 DEBUG SMAPI]    --------------------------------------------------
+[13:10:32 DEBUG SMAPI]       These mods have no update keys in their manifest. SMAPI may not notify you about updates for these
+[13:10:32 DEBUG SMAPI]       mods. Consider notifying the mod authors about this problem.
+
+[13:10:32 DEBUG SMAPI]       - Stardew Valley — VN Revival Languages
+[13:10:32 DEBUG SMAPI]       - VN Revival Filipino Visual QA
+[13:10:32 DEBUG SMAPI]       - VN Revival Language Switcher
+
+[13:10:32 DEBUG SMAPI] Launching mods...
+[13:10:32 TRACE SMAPI]    Found mod-provided API (ContentPatcher.Framework.ContentPatcherAPI).
+[13:10:33 TRACE VN Revival Language Switcher] Persian and Arabic shaping/bidi adapters enabled for 15 text methods.
+[13:10:33 INFO  VN Revival Filipino Visual QA] Visual QA output: /private/tmp/stardew-ro-exact-output
+[13:10:33 DEBUG SMAPI] Mods loaded and ready!
+[13:10:34 TRACE SMAPI] Checking for updates...
+[13:10:43 TRACE game] setGameMode( 'titleScreenGameMode (0)' )
+[13:10:44 TRACE game] Instance_LoadContent() finished, elapsed = '00:00:14.2373119'
+[13:10:44 ERROR game] Oops! Steam achievements won't work because Steam isn't loaded. You can launch the game through Steam to fix that.
+[13:10:44 INFO  SMAPI] Type 'help' for help, or 'help <cmd>' for a command's usage
+[13:10:45 TRACE game] Registered trigger action handler 'Pathoschild.ContentPatcher_MigrateIds'.
+[13:10:45 TRACE SMAPI]    SMAPI okay.
+[13:10:45 TRACE SMAPI]    Checking for updates to 4 mods...
+
+[13:10:46 ALERT SMAPI] You can update 1 mod:
+[13:10:46 ALERT SMAPI]    Content Patcher 2.9.1: https://www.nexusmods.com/stardewvalley/mods/1915 (you have 2.9.0)
+[13:10:48 TRACE SMAPI]    Mod blacklist OK.
+[13:10:51 TRACE Content Patcher] Requested cache invalidation for all assets matching a predicate.
+[13:10:51 TRACE game] Successfully loaded ContentHashes.json containing 3560 file(s);
+[13:10:51 TRACE game] EnsureManifestInitialized() finished, elapsed = '00:00:00.0328575'
+[13:10:51 TRACE SMAPI] Invalidated 3 asset names (Fonts/SmallFont, Fonts/SpriteFont1, Minigames/TitleButtons).
+Propagated 3 core assets (Fonts/SmallFont, Fonts/SpriteFont1, Minigames/TitleButtons).
+[13:10:52 TRACE SMAPI] Content Patcher edited Data/AdditionalLanguages (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:52 TRACE game] LocalizedContentManager.CurrentLanguageCode CHANGING from 'en' to 'mod'
+[13:10:52 TRACE Content Patcher] Requested cache invalidation for all assets matching a predicate.
+[13:10:52 TRACE SMAPI] Content Patcher edited Data/Achievements (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:52 TRACE SMAPI] Content Patcher edited Data/NPCGiftTastes (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:52 TRACE SMAPI] Content Patcher edited Data/CraftingRecipes (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:52 TRACE SMAPI] Content Patcher edited Data/CookingRecipes (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:52 TRACE SMAPI] Content Patcher edited Strings/StringsFromCSFiles (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:52 TRACE SMAPI] Invalidated 10 asset names (Data/Achievements, Data/Boots, Data/CookingRecipes, Data/CraftingRecipes, Data/Furniture, Data/hats, Data/NPCGiftTastes, Strings/StringsFromCSFiles, Strings/Tools, Strings/Weapons).
+Propagated 8 core assets (Data/Achievements, Data/Boots, Data/CookingRecipes, Data/CraftingRecipes, Data/Furniture, Data/hats, Data/NPCGiftTastes, Strings/StringsFromCSFiles).
+[13:10:52 TRACE SMAPI] Content Patcher loaded asset 'Fonts/SpriteFont1.ro-vnrevival' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:52 TRACE SMAPI] Content Patcher loaded asset 'Fonts/SmallFont.ro-vnrevival' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:53 TRACE SMAPI] Content Patcher loaded asset 'Minigames/TitleButtons.ro-vnrevival' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:53 TRACE SMAPI] Content Patcher edited Strings/StringsFromCSFiles (for the 'Stardew Valley — VN Revival Languages' content pack).
+[13:10:53 TRACE game] LocalizedContentManager.CurrentLanguageCode CHANGED from 'en' to 'mod'
+[13:10:53 TRACE SMAPI] Context: locale set to mod (ro-vnrevival).
+[13:10:53 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:80 Y:90 Width:1280 Height:720}
+[13:10:58 TRACE VN Revival Filipino Visual QA] Waiting for title/Filipino assets (menu=TitleMenu, locale=ro-vnrevival).
+[13:10:59 INFO  VN Revival Filipino Visual QA] FILIPINO_VISUAL_QA_COMPLETE: 0 screenshots
+[13:10:59 TRACE game] Disconnected: ClosedGame
+[13:10:59 TRACE SMAPI] Disposing...
+[13:10:59 TRACE SMAPI] Disposing the content coordinator. Content managers will no longer be usable after this point.

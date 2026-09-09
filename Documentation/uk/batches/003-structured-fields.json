@@ -1,0 +1,48 @@
+{
+  "id": "003-structured-fields",
+  "locale": "uk",
+  "audit": {
+    "method": "All five structured source fields reviewed against extracted English and GameData documentation. Three display fields directly translated using the approved glossary; two source markers explicitly preserved. Full-locale final audits remain pending.",
+    "reviewedTextSHA256": "66289ef16fc7022ee945a6093c456d05392574c4f7eefa4da1e80f1e352e0483",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3"
+  },
+  "records": [
+    {
+      "target": "Data/Buildings",
+      "key": "/Farmhouse/Name",
+      "english": "Farmhouse",
+      "translation": "Фермерський будинок",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Buildings",
+      "key": "/Farmhouse/Description",
+      "english": "Farmhouse",
+      "translation": "Фермерський будинок",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Characters",
+      "key": "/???/DisplayName",
+      "english": "???",
+      "translation": "???",
+      "reviewed": true,
+      "preserveReason": "Intentional anonymous NPC display marker, not untranslated wording; preserve all three question marks."
+    },
+    {
+      "target": "Data/JukeboxTracks",
+      "key": "/_disabled_/Name",
+      "english": "Invalid",
+      "translation": "Invalid",
+      "reviewed": true,
+      "preserveReason": "Disabled track group has Available=false in the verified English Data/JukeboxTracks asset. This is an internal sentinel, not a selectable music title."
+    },
+    {
+      "target": "Data/Pets",
+      "key": "/Turtle/DisplayName",
+      "english": "Turtle",
+      "translation": "Черепаха",
+      "reviewed": true
+    }
+  ]
+}

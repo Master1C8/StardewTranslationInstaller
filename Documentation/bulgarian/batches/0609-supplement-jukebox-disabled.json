@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "0609-supplement-jukebox-disabled",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/JukeboxTracks",
+  "status": "reviewed",
+  "entries": {
+    "_disabled_.Name": "Invalid"
+  },
+  "preserveReasons": {
+    "_disabled_.Name": "Internal sentinel for the unavailable jukebox entry (_disabled_, Available=false); it is excluded from the track picker and must remain byte-exact."
+  },
+  "sourceHashes": {
+    "_disabled_.Name": "96c34a0719eb565c268a1626c44313a20de4f83927890933bd9b480849adb76c"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Reviewed the disabled jukebox Name directly from the typed English JukeboxTrackData extraction.",
+      "Preserved Invalid as the internal sentinel for _disabled_, whose Available flag is false.",
+      "Confirmed with installed-assembly IL that available jukebox titles are parsed from Name while this disabled sentinel is excluded from the picker."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "275a07ca6e057478bb57962f83322d3cdfd8db2b547ab171a6611ed6370fcf0f"
+  }
+}

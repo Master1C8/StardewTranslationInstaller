@@ -1,0 +1,81 @@
+{
+  "scope": "Data/ExtraDialogue schema",
+  "validator": "Scripts/serbian-batch.py::validate_extra_dialogue",
+  "sourceAssets": 1,
+  "reviewedRecords": 147,
+  "sourceCoverage": 100,
+  "recordKinds": {
+    "ordinaryDialogue": 138,
+    "fullEventScripts": 2,
+    "alreadyOpenEventSpeechFragments": 7,
+    "explicitCaretGenderBranches": 1
+  },
+  "validated": [
+    "hash-anchored original English asset and exact source key order",
+    "ordinary dialogue fields, control markers, random variants, runtime placeholders and explicit caret branches",
+    "full embedded event scripts with immutable commands, actors, IDs, timing, coordinates and text-field order",
+    "Summit fragments whose first visible line begins inside an already-open event speech field",
+    "nested dialogue questions with immutable response commands and IDs",
+    "cross-file PurchasedItem placeholder contracts for invariant adjective and noun insertion"
+  ],
+  "positiveRegressionCases": [
+    {
+      "case": "ordinary-dialogue",
+      "accepted": true
+    },
+    {
+      "case": "full-event-script",
+      "accepted": true
+    },
+    {
+      "case": "already-open-event-speech-fragment",
+      "accepted": true
+    },
+    {
+      "case": "explicit-caret-gender-branch",
+      "accepted": true
+    },
+    {
+      "case": "nested-question-response-fields",
+      "accepted": true
+    }
+  ],
+  "schemaNegativeChecks": [
+    {
+      "case": "ordinary-emote",
+      "rejected": true,
+      "reason": "Token/markup mismatch"
+    },
+    {
+      "case": "caret-branch",
+      "rejected": true,
+      "reason": "Token/markup mismatch"
+    },
+    {
+      "case": "full-event-timing",
+      "rejected": true,
+      "reason": "Event command, ID, order, or non-speech data changed"
+    },
+    {
+      "case": "full-event-actor",
+      "rejected": true,
+      "reason": "Event command, ID, order, or non-speech data changed"
+    },
+    {
+      "case": "full-event-speech-token",
+      "rejected": true,
+      "reason": "Token/markup mismatch"
+    },
+    {
+      "case": "mixed-fragment-command",
+      "rejected": true,
+      "reason": "Event command, ID, order, or non-speech data changed"
+    }
+  ],
+  "fullAssetRegression": {
+    "recordsChecked": 147,
+    "errors": 0,
+    "warnings": 0
+  },
+  "result": "clean"
+}

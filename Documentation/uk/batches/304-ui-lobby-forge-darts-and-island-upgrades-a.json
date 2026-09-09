@@ -1,0 +1,432 @@
+{
+  "id": "304-ui-lobby-forge-darts-and-island-upgrades-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 UI strings covering lobby hosting, local co-op, building permissions, the Forge, darts and Ginger Island upgrades. Canonical glossary names, farm-description separators, forge operations, dart score distinctions, parrot voice, placeholders, button markers and multiplayer ownership meaning were checked against the English source.",
+    "reviewedTextSHA256": "d2c32a451aa5f730a6f1a5c68bfcdb572dcea481f0403576e3585560c98cac94",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 90
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyJoined_InviteCode",
+      "english": "(Invite code: {0})",
+      "translation": "(Код запрошення: {0})",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyCreateFail",
+      "english": "Failed to create a new game session...",
+      "translation": "Не вдалося створити новий ігровий сеанс...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_StartingServer",
+      "english": "You are now hosting a multiplayer game.",
+      "translation": "Тепер ти проводиш багатокористувацьку гру.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DisablingServer",
+      "english": "You are no longer hosting a multiplayer game.",
+      "translation": "Ти більше не проводиш багатокористувацьку гру.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Farmhand_Locked",
+      "english": "This character belongs to another player.",
+      "translation": "Цей персонаж належить іншому гравцеві.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_Unforge",
+      "english": "Unforge",
+      "translation": "Скасувати кування",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Item_Tooltip_Forged",
+      "english": "Forged",
+      "translation": "Кований",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LocalJoinPrompt",
+      "english": "Press * to join game.",
+      "translation": "Натисни *, щоб приєднатися до гри.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "StartLocalMulti",
+      "english": "Start Local Co-op",
+      "translation": "Почати локальну спільну гру",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DropOutLocalMulti",
+      "english": "Leave Game",
+      "translation": "Вийти з гри",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChooseOne",
+      "english": "Choose One:",
+      "translation": "Вибери одне:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_PaintBuildings",
+      "english": "Paint Buildings",
+      "translation": "Пофарбувати будівлі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CannotPaint",
+      "english": "This building cannot be painted",
+      "translation": "Цю будівлю не можна фарбувати",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CannotPaint_Permission",
+      "english": "You do not have permission to paint this building",
+      "translation": "У тебе немає дозволу фарбувати цю будівлю",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions",
+      "english": "Building Move Mode",
+      "translation": "Режим переміщення будівель",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_Off",
+      "english": "Host Only",
+      "translation": "Лише господар",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_Owned",
+      "english": "Building Owner Only",
+      "translation": "Лише власник будівлі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_On",
+      "english": "Everyone",
+      "translation": "Усі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmBeach",
+      "english": "Beach Farm_Good foraging and fishing, and tons of open space. Sometimes, supply crates wash up on shore. However, sprinklers don't work in the sandy soil.",
+      "translation": "Пляжна ферма_Добре підходить для збиральництва й риболовлі та має вдосталь вільного місця. Іноді до берега прибиває ящики з припасами. Однак зрошувачі не працюють на піщаному ґрунті.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_enchanting",
+      "english": "Now enchanting...",
+      "translation": "Триває зачарування...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_forging",
+      "english": "Now forging...",
+      "translation": "Триває кування...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_description1",
+      "english": "Place weapon or tool in the left slot. Place gemstone in the right slot.",
+      "translation": "Поклади зброю або інструмент у ліву комірку. Поклади самоцвіт у праву комірку.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_description2",
+      "english": "You can also combine two rings.",
+      "translation": "Також можна поєднати два персні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_shards",
+      "english": "Cinder shards are automatically consumed when forging.",
+      "translation": "Жужільні уламки автоматично витрачаються під час кування.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_notenoughshards",
+      "english": "Not enough cinder shards...",
+      "translation": "Недостатньо Жужільних уламків...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_wrongorder",
+      "english": "Incorrect order",
+      "translation": "Неправильний порядок",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_noroom",
+      "english": "No room in inventory...",
+      "translation": "В інвентарі немає місця...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_unforge_right_slot",
+      "english": "Empty out the right slot to unforge...",
+      "translation": "Спорожни праву комірку, щоб скасувати кування...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_unforge_invalid",
+      "english": "Only forged items and combined rings can be unforged...",
+      "translation": "Скасувати кування можна лише для кованих предметів і поєднаних перснів...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_valid",
+      "english": "Press the power button to begin forging!",
+      "translation": "Натисни кнопку живлення, щоб почати кування!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BuildingBuild",
+      "english": "{0} has requested construction of {1} {2}!",
+      "translation": "{0} замовляє будівництво: {1} {2}!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BuildingMagicBuild",
+      "english": "{0} has summoned {1} {2}!",
+      "translation": "Магія {0} викликає {1} {2}!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HouseUpgrade",
+      "english": "{0} has requested construction on {1} home!",
+      "translation": "На запит {0} починаються будівельні роботи в домі {1}!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CommunityUpgrade",
+      "english": "{0} has requested a community upgrade!",
+      "translation": "{0} замовляє громадське поліпшення!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_AcceptedSpecialOrder",
+      "english": "{0} has accepted the special order '{1}'!",
+      "translation": "{0} приймає Особливе замовлення «{1}»!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CompletedSpecialOrder",
+      "english": "The special order '{0}' has been fulfilled!",
+      "translation": "Особливе замовлення «{0}» виконано!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DartsWin",
+      "english": "{0} has won a game of darts in {1} throws!",
+      "translation": "{0} перемагає в дартсі за {1} кидків!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DartsWinPerfect",
+      "english": "{0} has won a perfect game of darts!",
+      "translation": "{0} завершує ідеальну гру в дартс!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_OffTheIsland",
+      "english": "Off the island...",
+      "translation": "За межі острова...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_Bull",
+      "english": "Bull!",
+      "translation": "Бул!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_Bullseye",
+      "english": "Bullseye!",
+      "translation": "Яблучко!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_PointsToGo",
+      "english": "{0} Points to Go",
+      "translation": "Залишилося очок: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_PointToGo",
+      "english": "{0} Point to Go",
+      "translation": "Залишилося очко: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_WinText",
+      "english": "You won in {0} throws!",
+      "translation": "Перемога за {0} кидків!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_WinTextPerfect",
+      "english": "Perfect game!",
+      "translation": "Ідеальна гра!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_FieldOfficeDonation",
+      "english": "{0} has donated {1} to the island field office.",
+      "translation": "{0} передає {1} Острівній польовій станції.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoatAnchor",
+      "english": "{0} has repaired the anchor of Willy's boat!",
+      "translation": "{0} лагодить якір Човна Віллі!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoatHull",
+      "english": "{0} has repaired the hull of Willy's boat!",
+      "translation": "{0} лагодить корпус Човна Віллі!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoatMachine",
+      "english": "{0} has repaired the ticket machine by Willy's boat!",
+      "translation": "{0} лагодить квитковий автомат біля Човна Віллі!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoat",
+      "english": "The preparations to repair Willy's boat are complete!",
+      "translation": "Підготовку до ремонту Човна Віллі завершено!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_House",
+      "english": "{0} has asked the parrots to restore the island farmhouse!",
+      "translation": "{0} просить папуг відновити Острівний фермерський будинок!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_House_Mailbox",
+      "english": "{0} has asked the parrots to begin delivering mail to the island!",
+      "translation": "{0} просить папуг почати доставляти пошту на острів!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_VolcanoShortcutOut",
+      "english": "{0} has asked the parrots to build a shortcut out of the volcano!",
+      "translation": "{0} просить папуг прокласти вихід із Вулкана!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_VolcanoBridge",
+      "english": "{0} has asked the parrots to build a bridge in the volcano!",
+      "translation": "{0} просить папуг збудувати міст у Вулкані!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Turtle",
+      "english": "{0} has asked the parrots to clear the path to the west side of the island!",
+      "translation": "{0} просить папуг розчистити шлях до західної частини острова!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_ParrotPlatforms",
+      "english": "{0} has asked the parrots to resume the Parrot Express!",
+      "translation": "{0} просить папуг відновити Папужий експрес!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Bridge",
+      "english": "{0} has asked the parrots to fix the bridge near the tent!",
+      "translation": "{0} просить папуг полагодити міст біля намету!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Resort",
+      "english": "{0} has asked the parrots to restore the island resort!",
+      "translation": "{0} просить папуг відновити Острівний курорт!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Hut",
+      "english": "{0} has fed a parrot a walnut!",
+      "translation": "{0} годує папугу Золотим горіхом!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_Hut",
+      "english": "*Awk*... Walnut! *Awk*... Give?",
+      "translation": "*Кра-а*... Горіх! *Кра-а*... Даси?",
+      "reviewed": true
+    }
+  ]
+}

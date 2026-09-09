@@ -1,0 +1,222 @@
+{
+  "id": "261-locations-professor-snail-surveys-renovations-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 30 location strings covering Professor Snail rescue and field office, island surveys, house renovations and Journal Scrap. Glossary character and item names, event commands and actors, dialogue markers, survey distinctions, emotion markers and three-part slash-delimited renovation records were preserved.",
+    "reviewedTextSHA256": "5bcd9a5f0ce4f0112f45c20a231acf2d9a69cbdb78b06246a6e633c65015d0c6",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 52
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveTool_0",
+      "english": "That won't work.",
+      "translation": "Це не спрацює.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveTool_1",
+      "english": "It's too weak.",
+      "translation": "Цей інструмент надто слабкий.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveTool_2",
+      "english": "Hmm...",
+      "translation": "Гм...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveTool_3",
+      "english": "Try something else.",
+      "translation": "Спробуйте щось інше.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_Event_SafariManAppear",
+      "english": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"Thank you! I thought I was done for... $h#$b#I've been stuck in this cave for months!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...One more cave mushroom salad and I would've gone off the deep end... *shudder* ...so rubbery...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"Anyway... I'm Professor Snail.#$b#I've been conducting a survey of this island's flora and fauna for the last year. Truly a remarkable place!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"Well, I think I'll go back to my tent and freshen up a little. I'm afraid I smell like mushrooms...$s#$b#Hey... you should stop by the tent sometime! An enterprising individual like yourself could be a major asset in my projects... hee hee! Farewell.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48",
+      "translation": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"Дякую! Я вже думав, що мені кінець... $h#$b#Я стирчав у цій печері кілька місяців!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...Ще один салат із печерних грибів — і я б збожеволів... *здригається* ...такі гумові...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"Хай там як... Я професор Равлик.#$b#Увесь останній рік я досліджую флору й фауну цього острова. Воістину дивовижне місце!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"Що ж, повернуся до намету й трохи приведу себе до ладу. Боюся, від мене тхне грибами...$s#$b#Гей... Якось завітай до намету! Така підприємлива людина могла б дуже допомогти моїм проєктам... хе-хе! Бувай.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Welcome_0",
+      "english": "Greetings!",
+      "translation": "Вітаю!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Welcome_1",
+      "english": "Hello!",
+      "translation": "Привіт!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Welcome_2",
+      "english": "Hey!",
+      "translation": "Гей!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Welcome_3",
+      "english": "Welcome!",
+      "translation": "Ласкаво просимо!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_Yes",
+      "english": "Ready to report",
+      "translation": "Надіслати звіт",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_Notyet",
+      "english": "Not ready",
+      "translation": "Ще не готово",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_Prompt_LeftPlant",
+      "english": "Island Survey -- Please report the number of purple flowers present on the island.",
+      "translation": "Дослідження острова — повідомте кількість фіолетових квітів на острові.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_PurpleFlower_Question",
+      "english": "How many purple flowers can be found on the island?",
+      "translation": "Скільки фіолетових квітів росте на острові?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_PurpleFlower_Wrong",
+      "english": "Hmm... That number doesn't fit my models at all... Maybe you should give it another shot tomorrow.$s",
+      "translation": "Гм... Це число зовсім не узгоджується з моїми моделями... Може, спробуєш іще раз завтра.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_PurpleFlower_Correct",
+      "english": "Yes, yes... that seems very accurate. Thank you!$h",
+      "translation": "Так, так... Схоже на правду. Дякую!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_Prompt_RightPlant",
+      "english": "Island Survey -- Please report the number of purple starfish present on the island.",
+      "translation": "Дослідження острова — повідомте кількість фіолетових морських зірок на острові.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_PurpleStarfish_Question",
+      "english": "How many purple starfish can be found on the island?",
+      "translation": "Скільки фіолетових морських зірок є на острові?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Survey_Failed",
+      "english": "Hmm... I think you should take a break and try doing the survey again tomorrow...",
+      "translation": "Гм... Гадаю, варто перепочити й повторити дослідження завтра...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Intro_Event",
+      "english": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ah... Come in!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Welcome to my field office.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"As you can see... it's quite empty.$s#$b#Getting stuck in that cave was a huge setback to my project.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"But that's where you come in! Hee hee...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"I'm in the bone business, you see...#$b#Ancient bones, in particular... And this island is full of them.#$b#So if you ever encounter any bones, fossils, or mummified specimens on this island, bring them to my desk, okay? I'll make it worth your while!$h\"/pause 200/faceDirection SafariGuy 1/end",
+      "translation": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"А... Заходь!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Ласкаво просимо до моєї польової станції.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"Як бачиш... тут доволі порожньо.$s#$b#Через ту пригоду в печері мій проєкт зазнав серйозної невдачі.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"Але тут і знадобиться твоя допомога! Хе-хе...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"Я займаюся кістками, розумієш...#$b#Передусім стародавніми... А на цьому острові їх повно.#$b#Тож якщо знайдеш тут кістки, скам’янілості чи муміфіковані зразки, принеси їх до мого столу, гаразд? Я щедро віддячу!$h\"/pause 200/faceDirection SafariGuy 1/end",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_CarpenterMenu_RenovateHouse",
+      "english": "Make House Renovations",
+      "translation": "Перебудувати будинок",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_CarpenterMenu_RenovateCabin",
+      "english": "Make Cabin Renovations",
+      "translation": "Перебудувати хатину",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_RemoveCrib",
+      "english": "Remove Crib/Remove the crib from your home./Select a crib to remove.",
+      "translation": "Прибрати колиску/Прибирає колиску з вашого будинку./Виберіть колиску, яку потрібно прибрати.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_BuildCrib",
+      "english": "Build Crib/Builds a crib in your home./Select a location for the crib.",
+      "translation": "Збудувати колиску/Будує колиску у вашому будинку./Виберіть місце для колиски.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_OpenBedroom",
+      "english": "Open Bedroom/Removes the wall separating your bedroom and the entrance room./Select an area for the renovation.",
+      "translation": "Відкрити спальню/Прибирає стіну між спальнею та передпокоєм./Виберіть ділянку для перебудови.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_CloseBedroom",
+      "english": "Close Bedroom/Builds a wall separating your bedroom and the entrance room./Select an area for the renovation.",
+      "translation": "Закрити спальню/Будує стіну між спальнею та передпокоєм./Виберіть ділянку для перебудови.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_AddSouthernRoom",
+      "english": "Add Southern Room/Adds a room to the south of your bedroom./Select an area for the renovation.",
+      "translation": "Додати південну кімнату/Додає кімнату на південь від спальні./Виберіть ділянку для перебудови.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_RemoveSouthernRoom",
+      "english": "Remove Southern Room/Removes the room to the south of your bedroom./Select an area for the renovation.",
+      "translation": "Прибрати південну кімнату/Прибирає кімнату на південь від спальні./Виберіть ділянку для перебудови.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_AddCornerRoom",
+      "english": "Add Corner Room/Adds a room in the northeast corner of the house./Select an area for the renovation.",
+      "translation": "Додати кутову кімнату/Додає кімнату в північно-східному куті будинку./Виберіть ділянку для перебудови.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Renovation_RemoveCornerRoom",
+      "english": "Remove Corner Room/Removes the room in the northeast corner of the house./Select an area for the renovation.",
+      "translation": "Прибрати кутову кімнату/Прибирає кімнату в північно-східному куті будинку./Виберіть ділянку для перебудови.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Journal_Name",
+      "english": "Journal Scrap",
+      "translation": "Уривок щоденника",
+      "reviewed": true
+    }
+  ]
+}

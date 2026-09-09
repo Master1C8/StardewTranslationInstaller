@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "0338-winter8-000-006",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Festivals/winter8",
+  "status": "reviewed",
+  "entries": {
+    "name": "Леден фестивал",
+    "conditions": "Forest/900 1400",
+    "set-up": "christmasTheme/-1000 -1000/farmer 68 0 1/changeToTemporaryMap Forest-IceFestival/viewport -1000 -1000/loadActors Set-Up/animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27/advancedMove Pierre true -1 0 0 -1 1 5000 0 1 1 0 4 5000/advancedMove Vincent true 0 3 3 0 2 5000 0 -5 2 0 1 5000 -5 0 0 2 3 5000/advancedMove Pam true -5 0 0 1 2 5000 0 -1 5 0 2 7000/playerControl iceFestival/viewport player clamp true unfreeze/globalFadeToClear",
+    "mainEvent": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"Добре, всички. Нека започнем тазгодишното състезание по подледен риболов.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Състезатели, целта ви е да уловите колкото можете повече риба за две минути с предоставените въдици.#$b#Трябва да ловите рибата си тук, от тези дупки в леда.\"/pause 600/speak Lewis \"Е, всички готови ли са?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Започвайте!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+    "afterIceFishing": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Уау, това е много риба!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*позив за повръщане*... миризмата...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"Сега е време да обявим победителя в тазгодишното състезание по подледен риболов...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Ето наградата ти! Наслаждавай ѝ се.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Е, това беше всичко за тазгодишния Леден фестивал. Благодаря на всички, че дойдохте! #$b#Сега нека пуснем тези клети риби...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"Не мога да повярвам, че спечелих! Е, време е да се прибирам.\"/waitForOtherPlayers festivalEnd/end",
+    "OtherPlayerWin": "message \"Не спечелих състезанието, но пак беше забавно! Време е да се прибирам.\"/waitForOtherPlayers festivalEnd/end",
+    "DickWin": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"Ето наградата ти, Уили. Наслаждавай ѝ се.\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Е, това беше всичко за тазгодишния Леден фестивал. Благодаря на всички, че дойдохте!#$b#Сега нека пуснем тези клети риби...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"Не спечелих състезанието, но пак беше забавно! Време е да се прибирам.\"/waitForOtherPlayers festivalEnd/end"
+  },
+  "preserveReasons": {
+    "conditions": "Structural festival location and time record; preserved byte-for-byte.",
+    "set-up": "Structural first-year festival map and control command script; preserved byte-for-byte."
+  },
+  "sourceHashes": {
+    "name": "3a2130899af0f9f9ef50767ee9bcbfd4bb94d70f2f99b5285065a055b432cd34",
+    "conditions": "ae388d824db6ec6eb21b8b5827887553632f8ace708be330f768a39dd28ca673",
+    "set-up": "0844013615ce31501b271060f34eadc01667e0e6f39f4a047fc830828dd208dd",
+    "mainEvent": "f40d67731c50c228c1204a245deca0561598bf3c557b118ba469908da3c700ee",
+    "afterIceFishing": "0f4d805913a905384905d20224f3660ad97e102ee9e44553f778c991ada42563",
+    "OtherPlayerWin": "1732ccbbba3f221c80a4c42085b8a3a1d2f451610a5a3e2d31003ebe7f525bb0",
+    "DickWin": "a9c8696bfc52d215f928821c08770d48987ad847b55b2dbc906eb1472e2a5bb7"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 7,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread winter8 source ordinals 0 through 6 directly from English, including all eighteen quoted player-facing event fields.",
+      "Preserved both structural festival records byte-for-byte and kept every event command, numeric parameter, multiplayer branch and quoted-field boundary unchanged.",
+      "Applied the locked Леден фестивал name consistently and used natural подледен риболов terminology throughout the competition announcements."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "6f07827772d55c12bbae3a466f2e2f343aba74daa67d7c478cd7650494daa61d"
+  }
+}

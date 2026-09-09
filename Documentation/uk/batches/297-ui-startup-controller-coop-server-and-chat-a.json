@@ -1,0 +1,439 @@
+{
+  "id": "297-ui-startup-controller-coop-server-and-chat-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 UI strings covering startup, controller settings, cooperative hosting, server state and chat notifications. UI brevity, multiplayer terminology, player-neutral event messages, intentional blank and template preservation, IP, controller glyph, placeholders and formatting punctuation were checked against the English source.",
+    "reviewedTextSHA256": "6839977c4dabcb901e210697c9e426ed57bc5a5887c4bf69936d0e2e616a5565",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 79
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "LoadGameMenu_Deleting",
+      "english": "Deleting...",
+      "translation": "Видалення...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "TitleMenu_PressAToStart",
+      "english": "PRESS @ TO START",
+      "translation": "НАТИСНІТЬ @, ЩОБ ПОЧАТИ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "TooManyFarmsMenu_TooManyFarms",
+      "english": "You already have the maximum number of farms.",
+      "translation": "У тебе вже максимальна кількість ферм.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_SignInChange",
+      "english": "A sign-in change has occurred. Sign back in or exit to the title screen.",
+      "translation": "Стан входу змінився. Увійди знову або вийди до головного меню.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_Returning",
+      "english": "Returning to title.",
+      "translation": "Повернення до головного меню.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_SignIn",
+      "english": "Sign-in",
+      "translation": "Увійти",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UserSignoutMenu_Exit",
+      "english": "Exit",
+      "translation": "Вийти",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "StartupMessage_FirstRun",
+      "english": "",
+      "translation": "",
+      "reviewed": true,
+      "preserveReason": "Intentionally blank startup message preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ControllerConnectMenu_PleaseReconnect",
+      "english": "Please reconnect your controller to continue the game.",
+      "translation": "Щоб продовжити гру, знову під’єднай контролер.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode",
+      "english": "Item Stowing",
+      "translation": "Прибирання предметів",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode_Off",
+      "english": "Off",
+      "translation": "Вимкнено",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode_GamepadOnly",
+      "english": "Gamepad Only",
+      "translation": "Лише геймпад",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_StowingMode_On",
+      "english": "On",
+      "translation": "Увімкнено",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_ShowAdvancedCraftingInformation",
+      "english": "Show Advanced Crafting Information",
+      "translation": "Показувати докладні відомості про ремесло",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Crafting_NumberCrafted",
+      "english": "Number Crafted: {0}",
+      "translation": "Створено: {0}",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadStyleMenus",
+      "english": "Use Controller-Style Menus",
+      "translation": "Використовувати меню для контролера",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerInvite",
+      "english": "Invite Friend...",
+      "translation": "Запросити друга...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode",
+      "english": "Server Mode",
+      "translation": "Режим сервера",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_Offline",
+      "english": "Offline",
+      "translation": "Не в мережі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_Online",
+      "english": "Online",
+      "translation": "У мережі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_FriendsOnly",
+      "english": "Friends-Only",
+      "translation": "Лише для друзів",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_ServerMode_InviteOnly",
+      "english": "Invite-Only",
+      "translation": "Лише за запрошенням",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_EnterIP",
+      "english": "Enter IP...",
+      "translation": "Введи IP-адресу...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Join",
+      "english": "Join",
+      "translation": "Приєднатися",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Host",
+      "english": "Host",
+      "translation": "Створити сервер",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_JoinLANGame",
+      "english": "Join LAN Game...",
+      "translation": "Приєднатися до гри в LAN...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_EnterInviteCode",
+      "english": "Enter Invite Code...",
+      "translation": "Введи код запрошення...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_HostNewFarm",
+      "english": "Host New Farm...",
+      "translation": "Створити сервер нової ферми...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_NoInvites",
+      "english": "No invitations",
+      "translation": "Запрошень немає",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Failed",
+      "english": "Connection failed",
+      "translation": "Не вдалося з’єднатися",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_FailedProtocolVersion",
+      "english": "Connection failed (version mismatch)",
+      "translation": "Не вдалося під’єднатися (версії не збігаються)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Connecting",
+      "english": "Connecting...",
+      "translation": "Під’єднання...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_ConnectingOnlineServices",
+      "english": "Connecting to online services",
+      "translation": "Під’єднання до мережевих служб",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_NoSlots",
+      "english": "No available cabins",
+      "translation": "Немає вільних хатин",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_NewFarmhand",
+      "english": "New Farmer",
+      "translation": "Новий фермер",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_HostFile",
+      "english": "Host {1} Farm",
+      "translation": "Створити сервер ферми «{1}»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_RevisitFriendFarm",
+      "english": "Rejoin {0} Farm",
+      "translation": "Знову приєднатися до ферми «{0}»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_JoinFriendFarm",
+      "english": "Join {0} Farm",
+      "translation": "Приєднатися до ферми «{0}»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "CoopMenu_Refresh",
+      "english": "Refresh",
+      "translation": "Оновити",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_MultiplayerSection",
+      "english": "Multiplayer",
+      "translation": "Багатокористувацька гра",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_IPConnections",
+      "english": "Accept IP connections",
+      "translation": "Приймати під’єднання за IP-адресою",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_FarmhandCreation",
+      "english": "Enable new character creation",
+      "translation": "Дозволити створення нового персонажа",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowInviteCode",
+      "english": "Show Invite Code",
+      "translation": "Показати код запрошення",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowReadyStatus",
+      "english": "Show Overnight Player Status List",
+      "translation": "Показувати список станів гравців уночі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ScreenshotHeader",
+      "english": "Screenshot:",
+      "translation": "Знімок екрана:",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_RemotelyDisconnected",
+      "english": "The server has closed the connection.",
+      "translation": "Сервер закрив з’єднання.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_FarmhandOnline",
+      "english": "Can't demolish while this cabin's farmhand is online",
+      "translation": "Не можна знести, поки помічник цієї хатини в мережі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_DemolishCabinConfirm",
+      "english": "This will permanently remove {0} from the game. Are you sure you want to demolish this cabin?",
+      "translation": "Це назавжди вилучить {0} із гри. Точно знести цю хатину?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostAvailability",
+      "english": "Waiting for the host's event to finish...",
+      "translation": "Очікування завершення події господаря...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostLoad",
+      "english": "Waiting for the host to finish setting up...",
+      "translation": "Очікування завершення налаштування господарем...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UnknownUserName",
+      "english": "???",
+      "translation": "???",
+      "reviewed": true,
+      "preserveReason": "Language-independent chat placeholder or formatting template preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerName",
+      "english": "{0} ({1})",
+      "translation": "{0} ({1})",
+      "reviewed": true,
+      "preserveReason": "Language-independent chat placeholder or formatting template preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ChatMessageFormat",
+      "english": "{0}: {1}",
+      "translation": "{0}: {1}",
+      "reviewed": true,
+      "preserveReason": "Language-independent chat placeholder or formatting template preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ErrorMessageFormat",
+      "english": "[Error] {0}",
+      "translation": "[Error] {0}",
+      "reviewed": true,
+      "preserveReason": "Language-independent chat placeholder or formatting template preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PrivateMessageFormat",
+      "english": "{0} [Private]: {1}",
+      "translation": "{0} [Private]: {1}",
+      "reviewed": true,
+      "preserveReason": "Language-independent chat placeholder or formatting template preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UserNotificationMessageFormat",
+      "english": "> {0}",
+      "translation": "> {0}",
+      "reviewed": true,
+      "preserveReason": "Language-independent chat placeholder or formatting template preserved exactly."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoined",
+      "english": "{0} has joined.",
+      "translation": "{0} приєднується.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoinedNewName",
+      "english": "Unnamed Farmhand",
+      "translation": "Безіменний помічник на фермі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerDeath",
+      "english": "{0} was knocked unconscious.",
+      "translation": "{0} непритомніє.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CaughtLegendaryFish",
+      "english": "{0} caught the legendary '{1}' fish.",
+      "translation": "{0} ловить легендарну рибу «{1}».",
+      "reviewed": true
+    }
+  ]
+}

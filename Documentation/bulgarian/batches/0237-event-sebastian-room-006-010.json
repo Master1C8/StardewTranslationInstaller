@@ -1,0 +1,35 @@
+{
+  "id": "0237-event-sebastian-room-006-010",
+  "target": "Data/Events/SebastianRoom",
+  "status": "reviewed",
+  "sourceHashes": {
+    "27/f Sebastian 1500/p Sebastian": "e8467e4283121920acc674aa32fdd24da28b783fd38db4659d0fbc06e555a79d",
+    "warrior": "81618c15e6449bc343b71b9605585dc5c06a660ca7eae04f0b8394ec970f1159",
+    "healer": "231cd5a6b3e5a967e9a55613f33e4c07ec8e3120b7b46d4eff643daea1046dfd",
+    "opening": "60c9f13983d70a42286d89baa6af0394516ab2b4157bf5d932318df27c0cfbf1",
+    "swungWeapons": "19a55027b1bf30bb2bddd63de8632978e79fe59150ed5c374c3326b8f9f5b817"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "27/f Sebastian 1500/p Sebastian": "jaunty/-1000 -1000/farmer 1 1 2 Sebastian 5 9 3 Sam 3 7 2/skippable/showFrame Sam 24/showFrame Sebastian 28/doAction 1 3/viewport 5 5 true/move farmer 0 6 1/pause 500/showFrame Sebastian 29/pause 500/speak Sebastian \"Хей, @. $7\"/pause 500/speak Sebastian \"Със Сам тъкмо щяхме да играем „Хрониките на Соларион: Играта“... Защо не се присъединиш?  И без това е по-хубаво с трима играчи.$7\"/move farmer 0 1 2/pause 500/playSound thudStep/faceDirection farmer 1 true/showFrame 117/positionOffset farmer 16 80/pause 600/speak Sebastian \"Добре, да започваме... Нека изтегля картата със сценария.$7\"/pause 900/showFrame Sebastian 30/playSound dwoop/pause 500/showFrame Sebastian 28/pause 500/speak Sebastian \"Хмм... Изглежда, че днешната задача ще ни отведе в Кулата на некроманта... за да се опитаме да върнем Жезъла на Соларион от лапите на Лорда на ужаса Зарт.\"/pause 600/speak Sam \"Яко... @, ще избереш ли героя си?\"/pause 500/question chooseCharacter \"Избери своя герой:#Воин. Харесвам прекия подход.#Лечител. Предпочитам да помагам на другите.#Магьосник. Острият ум е най-могъщото острие.\"/pause 500/speak Sebastian \"Хей! Тъкмо него щях да избера!$h#$b#Тогава май аз ще бъда лечителят.\"/pause 500/speak Sam \"Яко. И без това воинът ми е любим.\"/addMailReceived choseWizard/switchEvent opening",
+    "warrior": "pause 500/speak Sebastian \"Добър избор. Воинът вероятно е най-лесен за начинаещи.$7#$b#Тогава май аз ще избера магьосника.\"/emote Sam 28/speak Sam \"Май за мен остана лечителят.$s\"/addMailReceived choseWarrior/switchEvent opening",
+    "healer": "pause 500/speak Sebastian \"Лечител, а? Това е много важна роля.$7#$b#Тогава май аз ще избера магьосника.\"/speak Sam \"Яко. И без това воинът ми е любим.\"/addMailReceived choseHealer/switchEvent opening",
+    "opening": "pause 500/speak Sebastian \"Да започваме...\"/globalFade/viewport -1000 -1000/playMusic Crystal Bells/cutscene boardGame/pause 1700/message \"Кралят възложи на теб и спътниците ти да върнете Жезъла на Соларион... задача, чието успешно изпълнение ще ви осигури място в залата на легендите, както и солидно богатство от злато и сребро.\"/pause 800/message \"След цял месец пътуване през безмилостни земи излизаш на ръба на пропаст и виждаш целта си да се извисява в далечината.\"/pause 100/message \"Там, отвъд осветена от луната равнина, се издига Кулата на некроманта... където Лордът на ужаса Зарт използва силата на откраднатия Жезъл на Соларион за своите подли цели.\"/pause 500/pause 700/updateMinigame 1/resetVariable/pause 700/question fork1 \"Кулата е пред теб.#Влез през главния вход. Съдбата обича смелите.#Потърси заден вход. Нека останем скрити.\"/fork backEntrance/pause 500/updateMinigame 3/pause 50/playSound skeletonStep/pause 100/playMusic bigDrums/pause 500/message \"Скелет пази коридора пред вас. Изглежда опасен.\"/pause 900/resetVariable/question fork1 \"Какво правиш?#Нападни скелета.#Избягай.\"/fork ranAway/pause 500/resetVariable/question fork0 \"Скелетът се хвърля напред!#Замахнете с оръжията си.#Вдигнете щитовете си.\"/fork swungWeapons/pause 600/playSound clubhit/updateMinigame -1/pause 500/message \"Успявате да блокирате атаката. Скелетът залита назад и ви дава достатъчно време да нанесете удар и да убиете нечестивото създание.\"/pause 200/playSound swordswipe/pause 400/playSound skeletonDie/updateMinigame 5/updateMinigame -1/pause 1000/addMailReceived killedSkeleton/message \"Продължавате по коридора, като внимавате да не стъпите върху останките на скелета.\"/pause 900/switchEvent sewer",
+    "swungWeapons": "pause 300/message \"Скелетът е твърде бърз и напада дружината ви, преди някой да успее да атакува!\"/playSound killAnimal/updateMinigame -1/pause 1000/message \"Силата на удара запраща дружината ви назад. Без да успеете да спрете навреме, се претъркулвате по стръмен склон и цопвате в нещо мокро.\"/pause 100/playSound dropItemInWater/pause 700/switchEvent sewer"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 5,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twenty-four quoted tabletop-roleplay setup, character-choice and combat fields in Sebastian Room source ordinals 6–10.",
+      "Preserved character-choice mail flags, fork labels, minigame updates, scene commands and control tokens while consistently localizing the Solarion setting, roles and named artifacts.",
+      "Kept player-directed questions gender-neutral, clarified the King’s commission and maintained singular player narration versus plural party combat where the source shifts scope."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "aa31f96f81b2c4dcefcd090f97999606aa8e4a189c8e5de802beda9715a1c549"
+  }
+}

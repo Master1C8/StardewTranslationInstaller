@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "0298-fall16-000-019",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Festivals/fall16",
+  "status": "reviewed",
+  "entries": {
+    "name": "Панаир на Stardew Valley",
+    "conditions": "Town/900 1500",
+    "set-up": "fallFest/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Fair/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -3 0 2 5000 3 0 2 5000/advancedMove Jas true 2 0 4 5000 -2 0 4 5000/advancedMove Marnie true -2 0 4 5000 2 0 4 5000/advancedMove Abigail true 4 6000 5 0 0 3 2 6000 0 -3 -5 0/advancedMove Robin true 0 1 1 5000 0 -2 3 5000 0 1 1 5000/animate Sebastian false true 200 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 20 21 21 21 21 20 22 22 23/addTemporaryActor BabyPig 32 32 65 68 2 false Animal/addTemporaryActor Pig 32 32 65 70 3 false Animal/addTemporaryActor \"White Chicken\" 16 16 59 67 2 false Animal/addTemporaryActor \"Brown Chicken\" 16 16 61 67 2 false Animal/addTemporaryActor \"White Cow\" 32 32 59 72 0 false Animal/addTemporaryActor \"BabyWhite Cow\" 32 32 61 72 1 false Animal/advancedMove BabyPig true 0 1 3 5000 0 -1 0 7000/advancedMove Pig true 3 5000 0 1 1 5000 0 -1 3 5000/advancedMove White_Chicken true 1 0 2 7000 -1 0 2 10000/animate \"Brown Chicken\" false true 500 16 17/playerControl fair/viewport player clamp true unfreeze/globalFadeToClear",
+    "Abigail_spouse": "Победих във всички тези игри миналата година!$h",
+    "Leah_spouse": "Миналата година научих всички похвати на Робин, но тя винаги е една крачка пред мен!",
+    "Maru_spouse": "Мммф... Това е единствената ми възможност да се натъпча със сандвичи с барбекю.",
+    "Penny_spouse": "Надявам се да спечелим състезанието за селскостопанска изложба!",
+    "Haley_spouse": "Не забрави да донесеш хубави неща за изложбения ни щанд, нали? Надявам се тази година да спечелим.",
+    "Sebastian_spouse": "Хей, @. Говоря си със Сам за пропуснатото. Върви да се позабавляваш.",
+    "Sam_spouse": "Себастиан си е все същият. Забавляваш ли се на празника?",
+    "Alex_spouse": "Просто си говоря със стари приятели... върви да си прекараш добре.",
+    "Harvey_spouse": "Ще изчакам тук, докато поискаш да се прибираме...",
+    "Elliott_spouse": "Опушеният аромат ме привлече насам, ала пикантният сос наистина реши съдбата ми... *къркорене*$s",
+    "Abigail": "Вече победих във всички игри... сега какво?",
+    "Robin": "Дърводелството е древна традиция и се гордея, че съм част от нея.$h",
+    "Demetrius": "Робин наистина се труди усърдно над дърводелските си изделия... заслужава от време на време да получи малко признание.",
+    "Maru": "*сърба* Ммм... този барбекю сос е невероятен.$h",
+    "Sebastian": "Днес е доста хаотично... просто ще остана тук за известно време.",
+    "Pierre": "В магазина ми ще откриеш стоки с най-високо качество в цялата долина. Моля те, разгледай внимателно изложбения ми щанд и ще се убедиш!",
+    "Caroline": "Пиер приема изложбения си щанд много сериозно. От седмици заделя най-добре изглеждащата продукция, за да се подготви.#$e#Хей, успех и на теб, ако участваш!"
+  },
+  "preserveReasons": {
+    "conditions": "Structural festival location and opening-time metadata; preserved byte-for-byte.",
+    "set-up": "Structural festival map, actor, animation and control command script; preserved byte-for-byte."
+  },
+  "sourceHashes": {
+    "name": "74308771fc7b7f6dd4b61b5e7b7ee2a2e8ffb959d5caea8083df75960d0359e4",
+    "conditions": "88a62e9f746fcde4841a68e82023c54d704fee1e811970e93808f51e79b77a3f",
+    "set-up": "b28636a6000a3676eac7b86d8edfbbf2d79d18ccc0e9af143d58e4ca83d6c4e0",
+    "Abigail_spouse": "17b1cb33b527c0d05aa0c75ebf4c13f52dd5b1dcdd15f818a5801d1763c95c68",
+    "Leah_spouse": "b92310a1e7bf4e7bcd744e9e8a9ddc4c2d746b15678e2a48f76646c6a7541e58",
+    "Maru_spouse": "2bd12a9088194ba72973cbd9b2efa8aab47d5506a81be09249c1d2e6017c1070",
+    "Penny_spouse": "aa27595ebed2883584e6d9b829f9245574dd620f32cc5db0d500d33fcb7c90c0",
+    "Haley_spouse": "931c04bac45febe3e8e8502582e1cbdee9c6f8bc5082c0ad44c853bb340c2f65",
+    "Sebastian_spouse": "78c799cfd7d04e3fe759ce4885e7f2575356e5191e496fdc3fe3e133e5b6e16d",
+    "Sam_spouse": "7786d3b91e440e943b46c08416d8956a31dd0189ceb54db46a761224644db1ae",
+    "Alex_spouse": "d9a4c2590dc8570fe3430d17d7382402a052964e627504ff6ecebce3ef3a9a14",
+    "Harvey_spouse": "4aaee3740665db975b530fd50457d054bd2ba4171177994681d32da1bbfcd408",
+    "Elliott_spouse": "2ba76083b291ba87c9e5861db1962bf8aefad0e780cb5eff4a2a71f7f17f79c8",
+    "Abigail": "b882c6abde03156914544730d8eb1688adae31a597fc6e90ae23d859356555cf",
+    "Robin": "74f41647aa0b82c1314f3094cc08bb12c65720b63c93cb5def67ae996950fcf1",
+    "Demetrius": "caa3fc72c24c94af26ea563e87d24e7c2cd258460fa7f54c6f5cfc3b8abe3ca6",
+    "Maru": "b9d1fa14bf858ccb3d678385b30258364f83f5c2f56157a54217bd7143b82f71",
+    "Sebastian": "e1b4fd7ec13036b99b199c72fed8328c1966c431edf4f33ac9ed83e68833ed76",
+    "Pierre": "7f36879846e0ff8f818b45599fcdc17e2c26dc57ca9130b135c3ab2f002ae52c",
+    "Caroline": "2d7ce08688023c3c1e64d326079b03288cdc961c6e80aaf0d6d3db61284ba1ee"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 20,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread the festival name and all seventeen player-facing dialogue records from source ordinals 3 through 19 directly from English.",
+      "Kept the conditions and first-year set-up command records byte-exact with explicit preservation reasons and added target-specific validation for all structural festival records.",
+      "Applied the locked Панаир на Stardew Valley terminology, used established wording for the exhibition stand and competition, preserved every dialogue and player token, and removed a gendered construction from Pierre’s invitation."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "57d3832e430f864a7ee3b6f4316fb994e9d60317d19a6de08f33b3c816dd236e"
+  }
+}

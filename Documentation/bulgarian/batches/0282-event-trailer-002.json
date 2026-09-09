@@ -1,0 +1,27 @@
+{
+  "id": "0282-event-trailer-002",
+  "target": "Data/Events/Trailer",
+  "status": "reviewed",
+  "sourceHashes": {
+    "963313/n pamPotatoJuice": "4c7eceea92b9521a35e2030082a90abb3f88c2e4a36c45da08c0be2e4e4c9cea"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "963313/n pamPotatoJuice": "playful/10 7/farmer -100 -100 0 Pam 10 7 0/mail pamNewChannel/skippable/pause 3000/speak Pam \"Хехе... Виждам, че доставката е пристигнала.$h\"/pause 500/speak Pam \"Я да опитам малко.$h\"/pause 1000/playSound coin/showFrame Pam 32/pause 2000/animate Pam false true 400 33 34/playSound glug/pause 800/playSound glug/pause 800/playSound glug/pause 800/playSound glug/pause 790/stopAnimation Pam/showFrame Pam 32/pause 400/emote Pam 40/pause 800/showFrame Pam 35/textAboveHead Pam \"Пфу!\"/playSound slimedead/shake Pam 2000/pause 2000/animate Pam false true 400 28 29/speak Pam \"Казах картоф, а не ферментирал бъбрек от павиан!$u\"/pause 2000/end dialogue Pam \"Сокът ли? Да, опитах го, хлапе. $4#$b#Как беше на вкус? ...Някои неща е по-добре да останат неизречени. Нека приключим дотук.$4\""
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all five quoted potato-juice delivery, tasting reaction and closing fields in Trailer source ordinal 2.",
+      "Preserved the mail update, event command script, actor identifiers, emotion markers, dialogue breaks and the space before the first emotion marker in the closing line.",
+      "Kept Pam’s spit-take, fermented-baboon-kidney comparison and deliberately evasive verdict distinct in natural Bulgarian."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "190d44ca4857456e508da8d73819568408e4131b2156348224f16aab27c69f4e"
+  }
+}

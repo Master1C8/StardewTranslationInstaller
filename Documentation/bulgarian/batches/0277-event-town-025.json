@@ -1,0 +1,27 @@
+{
+  "id": "0277-event-town-025",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "6184643/f Haley 3500/O Haley/t 800 1500/w sunny": "c9b0fa0b6984c8c7cb2608b2c60316d430547795b49261142feac720fc12fa95"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "6184643/f Haley 3500/O Haley/t 800 1500/w sunny": "sweet/20 90/farmer -100 -100 2 Haley 26 90 3 Penny 16 90 3 Vincent 15 90 1 Jas 15 91 1/addConversationTopic haleyCakewalk1 0/skippable/move Haley -6 0 0/move Haley 0 -1 0/emote Vincent 28/emote Haley 8/faceDirection Haley 3/pause 500/speak Jas \"Госпожице Пени? Корицата на учебника ми по математика се откъсна...$s\"/speak Penny \"Я да видя...$s\"/pause 500/move Penny 0 1 3/pause 500/speak Penny \"О, не... Книгите ви се разпадат...$s#$b#Просто са твърде стари.$s\"/faceDirection Penny 2/pause 500/showFrame Penny 23/pause 500/speak Penny \"...Но новите книги са скъпи, затова ще трябва да се оправяме с това, което имаме...$s\"/pause 500/emote Haley 28/jump Vincent/pause 1500/speak Vincent \"Това означава ли, че не трябва да си пиша домашното?$h\"/faceDirection Jas 0/showFrame Penny 27/jump Penny/pause 1000/faceDirection Haley 0/pause 500/warp Haley -1000 -1000/playSound doorClose/pause 1000/end dialogue Haley \"Напоследък често си мисля за торта...\""
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all six quoted classroom book, homework and cake-thought fields in Town source ordinal 25.",
+      "Preserved the sunny-weather and Haley friendship prerequisites, event commands, actor identifiers, emotion markers and dialogue breaks.",
+      "Refined the torn-off book cover and making-do wording for natural Bulgarian while preserving Penny’s concern and Vincent’s joke."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "280159b3ef7914a67a03ef7898b9331d64e7f48698668925d27e3141ca335773"
+  }
+}

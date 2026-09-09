@@ -1,0 +1,12 @@
+{
+  "batches": 51,
+  "records": 2814,
+  "errors": 0,
+  "warnings": 0,
+  "dryChecks": 51,
+  "replays": 51,
+  "idempotent": true,
+  "changedFiles": [],
+  "scope": "All 55 accepted batches; patches, ledger and checkpoint byte identity on replay; source records and context-note metadata validated.",
+  "priorFailureCorrected": "Batch 0005 had a pre-schema string contextNotes. Retained as batchContextNote and attached the relevant note to Chat_Baby in the keyed record metadata, then replayed before this idempotence pass."
+}

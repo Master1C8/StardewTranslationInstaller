@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FishShop",
+      "When": {
+        "Language": "uk-vnrevival"
+      },
+      "Entries": {
+        "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"Агов!\"/pause 500/move Willy 1 0 2/speak Willy \"Заходь... Почувайся як удома...\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"Еге ж... Хороша штука. Риба від неї шаленіє.#$b#Тільки... Е-е... Не забудь добре вимити руки після того, як зануриш їх у ці соки...$s\"/speak Willy \"Кажуть, цей аромат може триматися аж сім тижнів, ${хлопче^панянко}$...\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"То... Багато риби ловиться?\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #Так#Ні#Це надто складно...(break)emote Willy 20\\speak Willy \"Ага! ${чоловік^жінка}$ мені до душі...$h\"\\pause 500\\speak Willy \"Завжди можна ${довіритися рибалці^покластися на рибалку}$...\"\\speak Willy \"Принаймні так завжди казав мій старий татусь. Ха-ха!$h#$b#Що ж, так тримати... Якщо спіймаєш усю рибу в цих водах, на тебе чекатиме особливий приз...\"(break)emote Willy 28\\speak Willy \"Не любиш рибалити, еге ж? Шкода...$s\"(break)emote Willy 16\\speak Willy \"Так, це складне заняття... Особливо для початківців.#$b#Тобі вже доводилося пробувати «Навчальну вудку»? Я продаю їх тут за дуже низькою ціною.#$b#Спробуй користуватися «Навчальною вудкою», доки не наберешся трохи досвіду.\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #Що сталося?#Усе гаразд?(break)pause 100(break)pause 100/pause 400/speak Willy \"Еге ж... Останнім часом справи кепські.$s#$b#Усе почалося приблизно тоді, коли старий Громадський центр занепав... Моя риба вже не продається, як колись...#$b#Мені доводиться працювати за двох, щоб зводити кінці з кінцями!\"/faceDirection Willy 2/pause 300/speak Willy \"На власні задуми часу не лишається...$s#$b#Але якщо справи тут знову підуть угору, можливо, з’явиться час дещо тобі показати...\"/move Willy -1 0 0/playMusic none/speak Willy \"Хе-хе... Так. Вона там, позаду... «Стара подруга», яка бачила й кращі часи...$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"Колись, ${хлопче^панянко}$... Ти зрозумієш, що я маю на увазі.\"/pause 2000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-08",
+  "locale": "uk-vnrevival",
+  "contentPackVersion": "1.9.0",
+  "freshLaunch": true,
+  "titleScreenOnly": true,
+  "loadedAssets": [
+    "Fonts/SpriteFont1.uk-vnrevival",
+    "Fonts/SmallFont.uk-vnrevival",
+    "Minigames/TitleButtons.uk-vnrevival"
+  ],
+  "contentPatcherErrors": 0,
+  "localeContextConfirmed": true,
+  "staticTitleAtlasInspected": true,
+  "staticLanguageButtonInspected": true,
+  "packedFontVisualInspection": true,
+  "packedFontVisualProof": "Documentation/uk/ukrainian-font-visual-proof.png",
+  "visualQAPassed": true,
+  "inGameVisualInspection": false,
+  "visualQAMethod": "A fresh title-screen SMAPI session proved that the Ukrainian locale loaded SpriteFont1, SmallFont, and TitleButtons without an adjacent Content Patcher error. Both exact packed XNB fonts were then unpacked and visually inspected through a rendered proof covering the complete Ukrainian alphabet, apostrophes, punctuation, and digits; the exact language-button and TitleButtons PNGs were also visually inspected.",
+  "inGameVisualInspectionBlocker": "Codex Computer Use was not approved to access the running Stardew Valley window; the combined live-load and exact-packed-resource proof was used instead.",
+  "log": "Documentation/uk/SMAPI-uk-runtime-2026-09-08.txt"
+}

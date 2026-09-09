@@ -1,0 +1,40 @@
+{
+  "id": "114-farm-tunnelers-alex-money-and-emily-fiber",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of Shane’s Tunnelers invitation, Alex’s 5,000g secret-project request and accepted branch, and Emily’s Fiber request. Every spoken line, question and response, currency amount, relationship beat, meeting instruction, secret-project reference, item quantity, and canonical Fiber term was reviewed in full event context. Event commands, actors, movement, timing, money and special-order state, response branches, placeholders, gender and dialogue delimiters, emotion markers, music and sound IDs, and non-text payloads were preserved and structurally compared with English. The remaining Farm records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "352665908ea0ea595e7ff81cc6dd994e2eabc21af57da220c45af7a1654e0a6e",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 5
+  },
+  "records": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "2128292/e 3900074/t 600 630/f Shane 2500/D Shane",
+      "english": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Hey, @!$6\"/pause 1000/speak Shane \"Uh... So I got two tickets to the Tunnelers game tonight.$6\"/pause 2000/speak Shane \"If you want to come, meet me at the bus stop around 5pm.$6\"/pause 1000/end",
+      "translation": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Гей, @!$6\"/pause 1000/speak Shane \"Е-е... Отже, у мене є два квитки на сьогоднішній матч «Тунельників».$6\"/pause 2000/speak Shane \"Якщо хочеш піти, зустрінь мене на Автобусній зупинці близько 5-ї вечора.$6\"/pause 1000/end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "3917587/f Alex 3500/O Alex/t 500 820/M 5000/d Sun/y 2",
+      "english": "continue/-10000 -1000/farmer -100 -100 2 Alex -100 -100 2/warp Alex -100 -100/warp farmer -100 -100/faceDirection Alex 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Alex 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Alex \"Hey, @. Before you head out...#$b#I hate to ask this... but can I have 5,000g?#$b#It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway.\"/pause 1000/question fork0 \"Give Alex 5,000g for his secret project?#Yes#No\"/fork giveAlexMoney/playMusic none/pause 1000/emote Alex 12/speak Alex \"Really? You won't spare a measly 5,000g to make me happy?$a#$b#I didn't know you were such a cheapskate...$s\"/pause 500/faceDirection Alex 1 true/pause 100/faceDirection Alex 0/pause 500/emote Alex 28/pause 400/speak Alex \"I just wanted to have a little fun...$s\"/pause 800/playSound doorClose/warp Alex -100 -100/pause 2000/end dialogue Alex \"I don't want to talk to you right now...$s\"",
+      "translation": "continue/-10000 -1000/farmer -100 -100 2 Alex -100 -100 2/warp Alex -100 -100/warp farmer -100 -100/faceDirection Alex 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Alex 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Alex \"Гей, @. Перш ніж підеш...#$b#Мені дуже ніяково просити... але можна мені 5 000g?#$b#Це для таємного проєкту, над яким я працюю... Я знаю, що в нас спільний банківський рахунок, але вирішив усе одно запитати.\"/pause 1000/question fork0 \"Дати Алексу 5 000g на таємний проєкт?#Так#Ні\"/fork giveAlexMoney/playMusic none/pause 1000/emote Alex 12/speak Alex \"Справді? Тобі шкода якихось 5 000g, щоб зробити мене щасливим?$a#$b#Не очікував від тебе такої скупості...$s\"/pause 500/faceDirection Alex 1 true/pause 100/faceDirection Alex 0/pause 500/emote Alex 28/pause 400/speak Alex \"Я просто хотів трохи розважитися...$s\"/pause 800/playSound doorClose/warp Alex -100 -100/pause 2000/end dialogue Alex \"Я зараз не хочу з тобою розмовляти...$s\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "giveAlexMoney",
+      "english": "pause 200/addMailReceived gaveAlexMoney/money -5000/emote Alex 20/pause 500/speak Alex \"Great! Swing by the Saloon on Sunday and I'll show you the end result!$h\"/pause 500/end",
+      "translation": "pause 200/addMailReceived gaveAlexMoney/money -5000/emote Alex 20/pause 500/speak Alex \"Чудово! Завітай до салуну в неділю, і я покажу тобі результат!$h\"/pause 500/end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "3917600/f Emily 3500/O Emily/t 500 820",
+      "english": "continue/-10000 -1000/farmer -100 -100 2 Emily -100 -100 2/warp Emily -100 -100/warp farmer -100 -100/faceDirection Emily 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Emily 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Emily \"Hey, honey... before you get to work today, do you have a moment?#$b#I've been working on something special for you... but I need a little help finishing it.\"/move farmer 0 -1 0/speak Emily \"It's a secret, so I can't tell you what it is... but could you bring me 200 pieces of fiber?\"/addQuest 126/pause 500/speak Emily \"That's all I need! Just bring the 200 fiber by when you have a chance... no rush!\"/pause 2000/end dialogue Emily \"No peeking! You'll see the end result soon.\"",
+      "translation": "continue/-10000 -1000/farmer -100 -100 2 Emily -100 -100 2/warp Emily -100 -100/warp farmer -100 -100/faceDirection Emily 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Emily 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Emily \"Привіт, сонце... перш ніж сьогодні візьмешся до роботи, приділиш мені хвилинку?#$b#Я готую для тебе дещо особливе... але мені потрібна невелика допомога, щоб завершити роботу.\"/move farmer 0 -1 0/speak Emily \"Це таємниця, тож я не можу сказати, що саме роблю... але принесеш мені 200 одиниць Волокна?\"/addQuest 126/pause 500/speak Emily \"Це все, що мені потрібно! Просто принеси 200 одиниць Волокна, коли матимеш нагоду... поспішати не треба!\"/pause 2000/end dialogue Emily \"Не підглядай! Скоро побачиш результат.\"",
+      "reviewed": true
+    }
+  ]
+}

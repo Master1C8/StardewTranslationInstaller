@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "0518-farm-animals-016-029",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/FarmAnimals",
+  "status": "reviewed",
+  "entries": {
+    "MoodMessage_NewHome_Baby_Female": "След раждането {0} все още се движи малко непохватно. Проявява любопитство към новия свят.",
+    "MoodMessage_NewHome_Adult_Male_1": "Животното {0} изглежда любопитно, но и малко предпазливо. Постепенно свиква с новия дом.",
+    "MoodMessage_NewHome_Adult_Male_2": "Животното {0} изглежда любопитно, но и малко предпазливо. Това е странен нов свят.",
+    "MoodMessage_NewHome_Adult_Female_1": "Животното {0} изглежда любопитно, но и малко предпазливо. Постепенно свиква с новия дом.",
+    "MoodMessage_NewHome_Adult_Female_2": "Животното {0} изглежда любопитно, но и малко предпазливо. Това е странен нов свят.",
+    "MoodMessage_LeftOutsideAtNight_Male": "Миналата нощ животното {0} беше оставено навън при затворена врата... Днес е в лошо настроение.",
+    "MoodMessage_LeftOutsideAtNight_Female": "Миналата нощ животното {0} беше оставено навън при затворена врата... Днес е в лошо настроение.",
+    "MoodMessage_DisturbedByDog_Male": "Днес животното {0} изглежда стресирано и подозрително. Явно снощи се е случило нещо лошо.",
+    "MoodMessage_DisturbedByDog_Female": "Днес животното {0} изглежда стресирано и подозрително. Явно снощи се е случило нещо лошо.",
+    "MoodMessage_Hungry1": "Животното {0} изглежда в лошо настроение.",
+    "MoodMessage_Hungry2": "Животното {0} изглежда малко отслабнало.",
+    "MoodMessage_Sad": "Животното {0} изглежда тъжно.",
+    "MoodMessage_Fine": "Животното {0} изглежда добре.",
+    "MoodMessage_Happy": "Животното {0} изглежда много щастливо днес!"
+  },
+  "sourceHashes": {
+    "MoodMessage_NewHome_Baby_Female": "99618b27c15412afefbb8fd5917100f56d969a63e924a39052e7edfe60cb65be",
+    "MoodMessage_NewHome_Adult_Male_1": "7649d841220387d9d4cc783e2ff826e356accc457eefac66311d44a2a3451a83",
+    "MoodMessage_NewHome_Adult_Male_2": "3ee335a6a1bdd4806130cf6c3f9dc3ef0fae77bf12b0f3dd3cc3d39cf3bae214",
+    "MoodMessage_NewHome_Adult_Female_1": "1021214dc8cc6e161c61b6b9bc3ec6fa0892e67d3f0ca50beed63618c133b62e",
+    "MoodMessage_NewHome_Adult_Female_2": "3ee335a6a1bdd4806130cf6c3f9dc3ef0fae77bf12b0f3dd3cc3d39cf3bae214",
+    "MoodMessage_LeftOutsideAtNight_Male": "243bba2c9251f1ec1f22b26c9f60dc4d8ab9832744046728bb777292c3e6cbba",
+    "MoodMessage_LeftOutsideAtNight_Female": "c5524e2cc863c186122cfade67e4a01b6a7c3faee651f98005bcfecec2a5b4d1",
+    "MoodMessage_DisturbedByDog_Male": "51edf89071b7cbe79a7cceb0f05dd34d38c450ba20d59ef6e5b932529b1e0e52",
+    "MoodMessage_DisturbedByDog_Female": "51edf89071b7cbe79a7cceb0f05dd34d38c450ba20d59ef6e5b932529b1e0e52",
+    "MoodMessage_Hungry1": "c0867648f120584a7350a41b7362c669cbf6e06e82a0cf45eacabd7fce45cf72",
+    "MoodMessage_Hungry2": "25a10477e9c0601573963256cdc3c1bf46596b58358f4634bfd19ea45b2115f6",
+    "MoodMessage_Sad": "704d8ec7ade3e3e1b9b9cf62ade5b58633eaaa73450e81b11e11e08eae0c4c1f",
+    "MoodMessage_Fine": "de09b1767d7cfcd38727ec5594fdb43376c2386aaf98bc520f088ee4092e5891",
+    "MoodMessage_Happy": "fe67ddfb3749362bf7e354c2d8c98055933072ca2f137366781c5b14331b8dd5"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 14,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated all fourteen remaining newborn, new-home, overnight-disturbance, hunger and general mood messages directly from English.",
+      "Used the explicit neutral noun „животното“ so arbitrary names compose with correct Bulgarian agreement in both male and female source variants.",
+      "Reread every paired variant and corrected the dog-disturbance line to preserve both stressed and paranoid meanings, completing all 30 Strings/FarmAnimals records."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "c8333897c12c0be6c54210130c1ae48af53e678c25063fb9b7c491f8f632e338"
+  }
+}

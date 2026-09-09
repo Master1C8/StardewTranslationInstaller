@@ -1,0 +1,35 @@
+{
+  "id": "0187-event-elliott-house",
+  "target": "Data/Events/ElliottHouse",
+  "status": "reviewed",
+  "sourceHashes": {
+    "39/f Elliott 500/p Elliott": "beb6768435e6617e480f192dca951b1931a222fa3c9822a1b9f9cfbc24fb4c72",
+    "423502/f Elliott 1500/p Elliott": "407e7f85a6efd1b19cd009cdbb3c0ffbaa388e7c44cc9e0cefd2ba5177c4dcfe",
+    "howLong": "65f2b9f5e3666b49031eca73bf8f3b9af0fab3143d478f4f301d14eda2e33863",
+    "elliottPianoJoin": "30010edf9ca9d9ed3dfcd46f3d61d75bc1ffdd505c22910cf594958c30cac9f3",
+    "extraHelp": "a41c6e528fdb380febdfc51769a6d796a4c37c08b3c21eacb2c7c0a6ca3630c0"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "39/f Elliott 500/p Elliott": "50s/2 5/farmer 3 9 0 Elliott 1 5 0/skippable/move farmer 0 -1 0/pause 400/faceDirection Elliott 2/emote Elliott 16/speak Elliott \"@! Влизай.\"/pause 500/move farmer 0 -2 3/move farmer -2 0 0/pause 500/speak Elliott \"Заповядай в моята скромна... ами, колиба.\"/faceDirection Elliott 0/speak Elliott \"Това е писалището ми. Тук прекарвам по-голямата част от времето си.\"/pause 500/faceDirection Elliott 2/speak Elliott \"Откакто се помня, искам да стана писател. Казвал ли съм ти?#$b#Затова живея тук сам. Реших, че самотният живот край морето ще ми помогне да се съсредоточа върху литературните си стремежи...$s\"/faceDirection Elliott 1/speak Elliott \"Всички у дома казваха, че съм луд... че никога няма да успея като писател.#$b#Представяш ли си? Казаха: „На всеки успял автор се падат 1000, които се провалят жалко.“ Такъв песимизъм... отвратително е.\"/pause 700/faceDirection Elliott 2/speak Elliott \"Виждам го в очите ти... ти вярваш в мен, @. Имаш тази искра.#$b#Ето това е вдъхновяващо! Точно това търся...\"/pause 500/emote Elliott 16/speak Elliott \"$q 958699 null#Един въпрос... Какви книги харесваш, @?#$r 958699 30 event_idea1#Загадки#$r 958700 30 event_idea2#Любовни романи#$r 958701 30 event_idea3#Научна фантастика\"/pause 500/speak Elliott \"Е! Стига толкова за мен!\"/pause 400/emote Elliott 16/speak Elliott \"Хмм... сигурно знаеш много за растенията, нали?\"/pause 500/faceDirection Elliott 1/speak Elliott \"Ще погледнеш ли тази роза? Опасявам се, че не се развива добре.$7\"/pause 400/move farmer 2 0 0/move farmer 0 -2 3/pause 400/animate farmer true true 100 35/pause 200/end dialogue Elliott \"Благодаря за разговора... Ще помисля над казаното от теб.\"",
+    "423502/f Elliott 1500/p Elliott": "elliottPiano/-200 -1000/farmer 3 9 0 Elliott 8 4 0/skippable/positionOffset Elliott 32 16/animate Elliott false true 400 25 26 26 27 27 26 26 25 26 27 27 26 26 25/pause 1000/viewport 8 4 true/pause 24000/stopAnimation Elliott/showFrame Elliott 24/move farmer 0 -3 0/move farmer 4 0 0/showFrame Elliott 28/pause 1000/speak Elliott \"А... Помислих, че има някого.$7\"/pause 1000/showFrame Elliott 30/animate Elliott false false 200 28 29 30/playSound dwop/pause 1000/question fork1 \"#Беше прекрасно.#От колко време свириш?\"/fork howLong/pause 500/emote Elliott 32/speak Elliott \"Благодаря. Не ме бива много, но е забавно да свиря.$h\"/switchEvent elliottPianoJoin",
+    "howLong": "pause 500/resetVariable/speak Elliott \"О, не съм сигурен... Посвирвам на пиано още от дете.$7#$b#Не ме бива много, но е забавно.\"/switchEvent elliottPianoJoin",
+    "elliottPianoJoin": "pause 800/showFrame Elliott 0/animate Elliott false true 220 0 1 2 3/playSound woodyStep/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/stopAnimation Elliott/faceDirection Elliott 2/pause 500/move Elliott 1 0 1 true/faceDirection farmer 1/pause 1500/showFrame Elliott 31/pause 800/emote Elliott 28/pause 800/speak Elliott \"Опитвам се ден и нощ да завърша книгата си... Побърква ме, @.$s\"/showFrame Elliott 4/pause 800/move Elliott -2 0 0/pause 800/speak Elliott \"Някоя и друга мелодия е единственото развлечение, което си позволявам.$7\"/pause 600/faceDirection Elliott 2/speak Elliott \"Просто има твърде много работа! А банковата ми сметка започва да се изпразва.$7#$b#Понякога ми се иска да зарежа всичко и да се захвана с фермерство като теб.$h\"/pause 300/faceDirection farmer 0/question fork1 \"#Знаеш, че фермерството е също толкова трудно.#Ела да живееш във фермата, ще ми е от полза още малко помощ.\"/fork extraHelp/pause 500/emote Elliott 16/speak Elliott \"Така е... беше нетактично от моя страна.$8\"/move Elliott 0 1 3/faceDirection farmer 1/speak Elliott \"Исках да кажа, че ми се ще да избягам от този тъмен, мухлясал затвор и да вкуся от истинския живот... това е всичко.$s\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*въздишка*... съжалявам, че се оплаквам така. Просто от време на време имам нужда от човек, с когото да поговоря.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+    "extraHelp": "pause 500/emote Elliott 16/speak Elliott \"Сериозно?$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"Звучи прекрасно... но не мога да се откажа от романа си. Вече е наполовина готов.$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*въздишка*... съжалявам, че се оплаквам така. Просто от време на време имам нужда от човек, с когото да поговоря.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-06",
+    "recordsRead": 5,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twenty-five quoted dialogue, question and response fields across the five complete events.",
+      "Kept all genre branches, the 1000-to-one quotation, Elliott’s literary register and repeated piano dialogue consistent, while recasting farmer references without assuming player gender.",
+      "Refined the shack, piano, finances, apology and real-life metaphors for natural Bulgarian; verified every event command, fork and control token outside quoted text byte-for-byte."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "b66de500a19cd5f28d7a8fd03377ecf6fc1f65fde6ba97bcd6f9a295a97d9dbf"
+  }
+}

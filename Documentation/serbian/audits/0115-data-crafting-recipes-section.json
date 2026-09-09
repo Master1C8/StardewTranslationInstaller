@@ -1,0 +1,39 @@
+{
+  "scope": "Data/CraftingRecipes",
+  "records": 150,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "Every recipe record classified directly against English as non-visible ingredient IDs, quantities, placement category, output metadata, type flags, unlock rules and localized-object references. Player-visible names come from already localized output objects; immutable keys and values stayed exact.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_crafting_recipe",
+  "schemaNegativeChecks": [
+    {
+      "case": "field-count",
+      "rejected": true,
+      "reason": "Crafting recipe field count changed"
+    },
+    {
+      "case": "ingredient-pair",
+      "rejected": true,
+      "reason": "Invalid crafting ingredient pair"
+    },
+    {
+      "case": "category",
+      "rejected": true,
+      "reason": "Invalid crafting category"
+    },
+    {
+      "case": "reference",
+      "rejected": true,
+      "reason": "Invalid crafting display-name reference"
+    },
+    {
+      "case": "changed",
+      "rejected": true,
+      "reason": "Crafting recipe technical record changed"
+    }
+  ],
+  "translationSha256": "8e477e719747c700fa7329243c4726a31adea162ce4904783a69d90070b63c7b",
+  "finalLocaleCleanAudits": 0
+}

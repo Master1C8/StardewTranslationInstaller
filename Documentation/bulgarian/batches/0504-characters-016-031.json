@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "0504-characters-016-031",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/Characters",
+  "status": "reviewed",
+  "entries": {
+    "Relative_Grandma": "баба",
+    "Relative_Grandpa": "дядо",
+    "Relative_Grandson": "внук",
+    "Relative_Nephew": "племенник",
+    "Relative_Niece": "племенница",
+    "FallbackDialogueForError": "...",
+    "NameYourHorse": "Дай име на коня си",
+    "WipedMemory": "Наскоро пое фермата, нали?#$e#Изглеждаш ми... не. Със сигурност не сме се срещали.",
+    "DefaultHorseName": "Гроувър",
+    "JunimoTextAboveHead1": "Junimo!",
+    "JunimoTextAboveHead2": "Звезда!",
+    "JunimoThankYou1": "Благодаря!",
+    "JunimoThankYou2": "Подарък!",
+    "AbigailInMineFlute": "%Абигейл е потънала в музиката...",
+    "AbigailInMineFirst": "Хей, @. Изненада ли се? ...Най-сетне събрах смелост да сляза тук.#$b#Отначало ме беше страх, но го преодолях.#$b#Сега съм много по-уверена. Всъщност е много забавно!$h",
+    "AbigailInMine0": "Хей! Стигнах доста далеч, нали?$h"
+  },
+  "preserveReasons": {
+    "FallbackDialogueForError": "Language-independent ellipsis used as the visible fallback when dialogue loading fails; no lexical content to translate.",
+    "JunimoTextAboveHead1": "Locked proper creature name Junimo remains in its canonical Latin spelling; only punctuation is present besides the name."
+  },
+  "sourceHashes": {
+    "Relative_Grandma": "ba8d3e6a2d8b5ed67ba21927de648785e0dccf8fdf6efacde32b8456f534f70b",
+    "Relative_Grandpa": "1eb4d6a000efefe9aadbb4910424c708727d10c018bdb188fe09b4e07cdeed61",
+    "Relative_Grandson": "8644c8af89f1a425dbde70e422cf0d84ea48be78a1de290509c492c151e287e4",
+    "Relative_Nephew": "f1004e926e8eb10e1f6c137e0c5dbeb5f75d310ec2ce165f569dc1b50dd37efd",
+    "Relative_Niece": "cbe6181036b5818eb3190b277bdc445b0c1fff31507aae15bf780e8176c9d942",
+    "FallbackDialogueForError": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46",
+    "NameYourHorse": "7287c2d30e8f0f400936a64a1caa591403ae38bbd12553d68c1b9effe1086908",
+    "WipedMemory": "5be6db895874265a5c2dee24a7324b999d5f15d00798586aed05489166e588ad",
+    "DefaultHorseName": "081d99a3176c6a6aefd2d9243c26b2bb360c85248debb0aca372ba51763866b5",
+    "JunimoTextAboveHead1": "1d3fc2d46bf776eb3fb5f6576a61dbace24960225e7c8bfb36efa044eb351115",
+    "JunimoTextAboveHead2": "f66ffe0845c9ac5f478f332c5cd5b6e371f36f0077253beb0368b5cf1d198af8",
+    "JunimoThankYou1": "3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55",
+    "JunimoThankYou2": "50eae40dfe1d0f38ec9ee134247669c823972e3d2f6529b73a908119785f6a1d",
+    "AbigailInMineFlute": "47917fff263d7583d185ca13a5b2742fd87ac237d92918ceb99ec3b1c975aa7d",
+    "AbigailInMineFirst": "27ca578955e3f5959683e0ad8ec3f78889cd77d77f45b12c718a54c82e7a9f79",
+    "AbigailInMine0": "c12efc0e778e394f62d8d04b7e52670ac5d9ec4c7b872982ba1bc03d6afdab61"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated five extended-family labels, horse naming, the memory-wiped greeting, default horse name, Junimo exclamations and the first three Abigail mine strings directly from English.",
+      "Applied locked Абигейл and Junimo terminology, retaining the language-independent fallback ellipsis and canonical Latin Junimo name byte-exact with explicit reasons.",
+      "Rewrote the dynamic new-farmer greeting without assigning a player gender, preserved every %, @, dialogue-break and emotion marker, and reread Abigail’s fear-to-confidence progression and stage direction."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "759b32e233ef0aa34a193c9194e5a95f0119b0f320b8757ec252c622ae3a48f8"
+  }
+}

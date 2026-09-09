@@ -1,0 +1,182 @@
+{
+  "id": "165-flower-dance-core-dialogue-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the first twenty-four Spring 24 records. The canonical Flower Dance term, embedded event message, character voices, dance and floral context, placeholders, dialogue delimiters, emotion markers, and surrounding festival commands were checked together. Keys and control structure were preserved; the condition and setup records are explicitly justified as runtime data.",
+    "reviewedTextSHA256": "cf1f3994317ea5c8cf13a7014eec995cd254dd12b75d872e972666a0b2954025",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 18
+  },
+  "records": [
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "name",
+      "english": "Flower Dance",
+      "translation": "Танець квітів",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "conditions",
+      "english": "Forest/900 1400",
+      "translation": "Forest/900 1400",
+      "reviewed": true,
+      "preserveReason": "Festival runtime condition; language-independent command."
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "set-up",
+      "english": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "reviewed": true,
+      "preserveReason": "Festival runtime setup; language-independent commands, actor IDs, coordinates, and movement data."
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "mainEvent",
+      "english": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"That was fun! Time to go home...\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"Було весело! Час додому...\"/waitForOtherPlayers festivalEnd/end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Abigail",
+      "english": "I really hate dancing in front of everyone... It's so embarrassing.#$e#Mom makes me do it.$u",
+      "translation": "Я страшенно не люблю танцювати перед усіма... Це так соромно.#$e#Мама змушує мене.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Robin",
+      "english": "Ahh... The air smells so sweet with all these flowers.$h",
+      "translation": "А-а... Від усіх цих квітів повітря так солодко пахне.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Demetrius",
+      "english": "These springtime dances can be traced back to ancient fertility rituals.#$e#Hey... You should know about this stuff, farmer.",
+      "translation": "Ці весняні танці походять від стародавніх обрядів родючості.#$e#Гей... Фермерство до цього дотичне — тобі варто про таке знати.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Maru",
+      "english": "I like dancing, but this one is a little stilted. The old timers really love it, though.",
+      "translation": "Я люблю танцювати, але цей танець трохи скутий. А старше покоління його просто обожнює.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sebastian",
+      "english": "Ugh...",
+      "translation": "Ех...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Linus",
+      "english": "Oh, hello there. It's nice of you to talk to me.#$b#Spring is almost over... what a shame.",
+      "translation": "О, привіт. Дуже мило з твого боку зі мною поговорити.#$b#Весна майже скінчилася... яка шкода.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Pierre",
+      "english": "What! How'd you get back here?$u#$b#Don't touch anything.",
+      "translation": "Що! Як тобі вдалося сюди зайти?$u#$b#Нічого не чіпай.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Caroline",
+      "english": "I wish Pierre would spend this time with the family...$s",
+      "translation": "Хотілося б, щоб П’єр провів цей час із родиною...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Alex",
+      "english": "I'm just enjoying the scenery... hehe.",
+      "translation": "Я просто милуюся краєвидом... хе-хе.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "George",
+      "english": "Flowers? I can hardly see them.#$e#It's too bright out here!",
+      "translation": "Квіти? Я їх майже не бачу.#$e#Тут надто яскраво!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Evelyn",
+      "english": "I've been working on these floral arrangements for a week. Do you like them?",
+      "translation": "Я цілий тиждень працювала над цими квітковими композиціями. Вони тобі подобаються?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Lewis",
+      "english": "If you'd like to dance with the other young people, you'll need to find a partner.",
+      "translation": "Якщо хочеш танцювати з іншими молодими людьми, треба знайти пару.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Clint",
+      "english": "I wonder if Emily would dance with me?",
+      "translation": "Цікаво, чи погодиться Емілі зі мною танцювати?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Penny",
+      "english": "*gulp*... I'm nervous.$s",
+      "translation": "*ковтає*... Я хвилююся.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Pam",
+      "english": "Now this is the life... Huh, kid? Sweet wine, a babbling brook, warm air... Did I mention wine?",
+      "translation": "Оце життя... Га, малечо? Солодке вино, дзюркотливий струмок, тепле повітря... Я вже згадувала вино?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Emily",
+      "english": "Whoo... I'm stuffed. Hey, have you tried the red jelly yet?",
+      "translation": "Ух... Я об’їлася. Слухай, уже доводилося куштувати червоне желе?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Haley",
+      "english": "I'm practicing my dance moves... It needs to be perfect.#$e#I've been flower queen for the past 5 years and I'm not ready to step off the throne just yet!",
+      "translation": "Я відпрацьовую танцювальні рухи... Усе має бути бездоганно.#$e#Останні п’ять років я була королевою квітів і поки не готова поступитися троном!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Jodi",
+      "english": "Are you going to be dancing today, @?$h",
+      "translation": "Ти сьогодні танцюватимеш, @?$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Kent",
+      "english": "This open field... it makes me nervous.#$e#*whisper* Happy thoughts, Kent. Happy Thoughts.",
+      "translation": "Це відкрите поле... від нього мені тривожно.#$e#*пошепки* Думай про хороше, Кенте. Про хороше.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Marlon",
+      "english": "Marnie looks lovely today...",
+      "translation": "Марні сьогодні чарівна...",
+      "reviewed": true
+    }
+  ]
+}

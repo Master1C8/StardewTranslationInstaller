@@ -1,0 +1,29 @@
+{
+  "scope": "Data/Achievements",
+  "records": 39,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All achievement titles and objectives read directly against English. Earnings tiers, friendship thresholds, museum goals, cooking, crafting, fishing, shipping, festivals, locations and metadata were checked.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_achievements",
+  "schemaNegativeChecks": [
+    {
+      "case": "field-count",
+      "rejected": true,
+      "reason": "AssertionError"
+    },
+    {
+      "case": "metadata",
+      "rejected": true,
+      "reason": "AssertionError"
+    },
+    {
+      "case": "empty-title",
+      "rejected": true,
+      "reason": "AssertionError"
+    }
+  ],
+  "translationSha256": "6247e9d80e72b661aa59811438b67f138df5ed5e1208f8e734dfcc869101bc61",
+  "finalLocaleCleanAudits": 0
+}

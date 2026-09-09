@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "0447-strings-1-6-176-191",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/1_6_Strings",
+  "status": "reviewed",
+  "entries": {
+    "Race_Comment_4": "А сега моментът, който всички очаквахте...",
+    "Race_Close": "Това беше последното състезание за днес. Ще се видим утре!",
+    "Race_Close_LastDay": "И с това тазгодишните състезания приключиха! До следващия път!",
+    "Race_Winner": "Победителят в това състезание е...",
+    "Race_Win": "Ела да вземеш наградата си!",
+    "Race_Lose": "Повече късмет следващия път!",
+    "Racer_0": "Скоростен петел",
+    "Racer_1": "Кралско жило",
+    "Racer_2": "Обувкобисквит",
+    "Racer_3": "Escar-go",
+    "Racer_4": "Кактусов пълзач",
+    "Shady_Guy_Closed": "Подозрителният тип: Хех... не сега, хлапе. Ела по-късно и ще поговорим.",
+    "Shady_Guy_Ended": "Подозрителният тип: Твърде късно е, хлапе. Върни се, когато има състезания.",
+    "Shady_Guy_Ongoing": "Подозрителният тип: Гледай състезанието, хлапе! Ще говорим по-късно...",
+    "Shady_Guy_Late": "Подозрителният тип: Твърде късно, състезанието започна. Ще говорим пак по-късно...",
+    "Shady_Guy_Intro": "Подозрителният тип: Псст... Хей, хлапе. Гледаш ли тези състезания? Доста са вълнуващи, а?"
+  },
+  "preserveReasons": {
+    "Racer_3": "Escar-go is the racer’s intentional escargot/go proper-name pun and must remain identical wherever the name is substituted at runtime."
+  },
+  "sourceHashes": {
+    "Race_Comment_4": "cd2ba94cdc80f7e6a8f8bf03e41377e1f129d64ad910db2d78104efc9073b6c2",
+    "Race_Close": "92ed0ddbe9c4bb85e209d6800d52905dad51408c2da0de4979e3b2d3a5ea4463",
+    "Race_Close_LastDay": "c5c0ea8052aac3450bf2c738873a2f3abe48bcf1c6bd3d0ca6d83f0d52cbc49c",
+    "Race_Winner": "f5316be5a66e94de1c02fb2e035c9e71d5d51ecbe476b0117eeb8e7aa93227d7",
+    "Race_Win": "56ad96cd89eb8358cfa127e61f6b9d830809ab2467c7e7d16f086d0993405d48",
+    "Race_Lose": "0c4d73be807682ec25fa68d95d30791a70e5ab1d035003d01a9b2f389937e12e",
+    "Racer_0": "2696bcad3e57e524f47cd7ad7842e2a4e15a1f2f687be3f96cedc4c56a1a8179",
+    "Racer_1": "1ced3479549e864d1207672d7a49c554c8517afda28ec11ed94720ac99557178",
+    "Racer_2": "546ac2272cb138cb56c9c40deee0ed9bff975596b65f8577ba775b67a8fb3afb",
+    "Racer_3": "aa7461d9adca90530501f5fa07f2ac853a64b2f449a131a861ba9ac33a1f6108",
+    "Racer_4": "b7006248ffad8e88d18f4f0fb216c69b1bde24ce75ed3a6d5c4c6f5509bd189d",
+    "Shady_Guy_Closed": "d2d174d57ce635e2578284f6e755ec8c1323f851ebde73063ae3d80a9bc19723",
+    "Shady_Guy_Ended": "21b53829951086187b8c0379702e1091d0ca65517e8b72d531c1c0d9175539d1",
+    "Shady_Guy_Ongoing": "f4ea0574aa373282388829e140e7a3a969b67c8e5b0f8581554af42c548c24ae",
+    "Shady_Guy_Late": "1d46d9b4adb7de01cc1a3995cf3ca8e742eeec5b9f09168db46293035efd6767",
+    "Shady_Guy_Intro": "eddf7fd1f438d973e3fe507f60e74b11ac8ed93612324649067dfe6d69b771e1"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated fifteen race-closing, racer-name and Suspicious Guy strings directly from English and preserved Escar-go byte-exact as an intentional proper-name pun with an explicit reason.",
+      "Kept all five racer identities distinct and consistent with the earlier payout line, and used one stable Подозрителният тип speaker label.",
+      "Reread the race sequence and shady dialogue for announcer energy, terse UI wording, colloquial voice and gender-neutral player address; the final wording required no further correction."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "dfe5b828fba6bba1370b2fb92f3645a1fbd7cd575d7ecbd5310ae0e50a71283e"
+  }
+}

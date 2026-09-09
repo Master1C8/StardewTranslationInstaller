@@ -1,0 +1,385 @@
+{
+  "id": "215-mail-c",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/mail": "f7342fbf8c522b75d2d9a0005a9242e5e7d6e604028b29c8c9d3aa77ecb51b75"
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "EmilyClothingTherapy",
+      "english": "@,^I have this crazy new idea that I want to involve you in... It's called \"Clothing Therapy\".^^Please come to the Mayor's house today to see what it's all about.^^ Love, Emily[#]Emily's Idea",
+      "translation": "@,^יש לי רעיון חדש ומטורף שאני רוצה לשתף אתכם בו... הוא נקרא \"טיפול בבגדים\".^^בואו היום לבית ראש העיר כדי לגלות במה מדובר.^^ באהבה, אמילי[#]הרעיון של אמילי"
+    },
+    {
+      "target": "Data/mail",
+      "key": "EmilyCamping",
+      "english": "@,^Let's go camping! ^^ Meet me in the secret woods after 10pm.^^ Love, Emily[#]Emily's Invitation",
+      "translation": "@,^בואו נצא לקמפינג! ^^ פגשו אותי ביער הסודי אחרי 10 בלילה.^^ באהבה, אמילי[#]ההזמנה של אמילי"
+    },
+    {
+      "target": "Data/mail",
+      "key": "EmilyDoneCamping",
+      "english": "Thanks for joining me last night... I had a great time.^I'm actually glad that bear showed up!^^See you soon^^  Love, Emily[#]Emily's Note",
+      "translation": "תודה שהצטרפתם אליי אתמול בלילה... נהניתי מאוד.^למען האמת, אני שמחה שהדוב ההוא הופיע!^^נתראה בקרוב^^  באהבה, אמילי[#]הפתק של אמילי"
+    },
+    {
+      "target": "Data/mail",
+      "key": "foundLostTools",
+      "english": "Dear @,^Someone dropped your tools into the lost and found bin last night.^^Stop by the mayor's office to pick them up. ^^  -Mayor Lewis[#]Lost Tools",
+      "translation": "@ היקרים,^מישהו הכניס את כלי העבודה שלכם לתיבת האבדות והמציאות אתמול בלילה.^^עברו בלשכת ראש העיר כדי לאסוף אותם. ^^  -ראש העיר לואיס[#]כלי עבודה אבודים"
+    },
+    {
+      "target": "Data/mail",
+      "key": "fishing2",
+      "english": "I've got some new items in stock...^A deluxe fishing pole and some bait that you can attach to it!^You can use bait to make fish bite faster. Hope to see you soon! ^   -Willy[#]Willy's New Items",
+      "translation": "יש לי כמה פריטים חדשים במלאי...^חכת דיג משובחת וכמה פיתיונות שאפשר לחבר אליה!^אפשר להשתמש בפיתיון כדי לגרום לדגים לנשוך מהר יותר. מקווה לראות אתכם בקרוב! ^   -וילי[#]הפריטים החדשים של וילי"
+    },
+    {
+      "target": "Data/mail",
+      "key": "fishing6",
+      "english": "Come by the shop and check out the new rods I'm selling.^They're the best money can buy... and you can customize them with different kinds of tackle!^Hope to see you soon! ^   -Willy[#]Willy's New Items #2",
+      "translation": "בואו לחנות והתרשמו מהחכות החדשות שאני מוכר.^אלה החכות הטובות ביותר שכסף יכול לקנות... ואפשר להתאים אותן באמצעות סוגים שונים של אביזרי דיג!^מקווה לראות אתכם בקרוב! ^   -וילי[#]הפריטים החדשים של וילי #2"
+    },
+    {
+      "target": "Data/mail",
+      "key": "wizardJunimoNote",
+      "english": "My sources tell me you've been poking around inside the old community center.^Why don't you pay me a visit?^My chambers are west of the forest lake, in the stone tower. I may have information concerning your... 'rat problem'.^   -M. Rasmodius, Wizard %item quest 1 true %%[#]Wizard's Summons",
+      "translation": "המקורות שלי מספרים לי שחיטטתם בתוך המרכז הקהילתי הישן.^מדוע שלא תבואו לבקר אותי?^משכני נמצא ממערב לאגם שביער, במגדל האבן. ייתכן שיש לי מידע בנוגע ל... 'בעיית החולדות' שלכם.^   -מ׳ רזמודיוס, הקוסם %item quest 1 true %%[#]הזימון של הקוסם",
+      "latinException": {
+        "tokens": [
+          "quest",
+          "true"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_18",
+      "english": "Dear @,^I would like to give you some information about an upcoming event: the Feast of the Winter Star. It's a time for the community to come together and think back on all the good fortune we've had this year.^A favorite tradition is the \"secret gift exchange\", where everyone in town is randomly assigned to someone else. On the day of the festival, everyone brings a gift for their secret friend and surprises them with something special!^This year, your secret friend is:^    %secretsanta ^Don't tell anyone! The feast will take place on the 25th from 9AM to 2PM at the town square. See you then! ^   -Mayor Lewis[#]Secret Gift-Giver",
+      "translation": "@ היקרים,^ברצוני למסור לכם מידע על אירוע קרוב: משתה כוכב החורף. זה הזמן שבו הקהילה מתכנסת ונזכרת בכל המזל הטוב שפקד אותנו השנה.^מסורת אהובה היא 'החלפת המתנות הסודית', שבה לכל תושב בעיירה מוקצה באקראי אדם אחר. ביום הפסטיבל כולם מביאים מתנה לאדם ששמו הוגרל עבורם ומעניקים לו הפתעה מיוחדת!^השנה, עליכם להביא מתנה ל:^    %secretsanta ^אל תספרו לאיש! המשתה יתקיים ב-25 בחודש, בין 9 בבוקר ל-2 אחר הצהריים, בכיכר העיירה. נתראה שם! ^   -ראש העיר לואיס[#]נותני המתנה הסודית"
+    },
+    {
+      "target": "Data/mail",
+      "key": "ccBulletinThankYou",
+      "english": "Dear @,^Everyone around town has been talking about your great generosity lately!^Apparently, packages have been appearing in people's houses containing items they posted about years ago on the community center bulletin! And the packages are all addressed from your farm!^Thanks for going out of your way to do something like that... all of us in town are delighted! ^   -Mayor Lewis[#]Bulletin Board Thank-you",
+      "translation": "@ היקרים,^לאחרונה כולם בעיירה מדברים על הנדיבות הרבה שלכם!^מתברר שבבתיהם של אנשים מופיעות חבילות ובהן פריטים שעליהם פרסמו לפני שנים בלוח המודעות של המרכז הקהילתי! וכל החבילות נשלחו מהחווה שלכם!^תודה שטרחתם לעשות דבר כזה... כולנו בעיירה מאושרים! ^   -ראש העיר לואיס[#]תודה מלוח המודעות"
+    },
+    {
+      "target": "Data/mail",
+      "key": "guildQuest",
+      "english": "I see you've been exploring the old mine. You've got the adventurer's spirit, that much I can tell.^If you can slay 10 slimes, you'll have earned your place in my adventurer's guild. ^Be careful.    -Marlon %item quest 15 true %%[#]Quest To Slay Slimes",
+      "translation": "אני רואה שחקרתם את המכרה הישן. יש בכם רוח של הרפתקנים, את זה אני יכול לומר בוודאות.^אם תחסלו 10 סליימים, תרוויחו את מקומכם בגילדת ההרפתקנים שלי. ^היזהרו.    -מרלון %item quest 15 true %%[#]משימה לחיסול סליימים",
+      "latinException": {
+        "tokens": [
+          "quest",
+          "true"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "skullCave",
+      "english": "I see you've entered the Skull Cavern. Well done.^I've got a better challenge for you, kid. Make it at least 25 levels deep. I've got a mountain of $ to send if you can do it.^  Your friend, Mr. Qi %item quest 20 %%[#]Qi's Challenge",
+      "translation": "אני רואה שנכנסתם למערת הגולגולת. כל הכבוד.^יש לי אתגר קשה יותר בשבילכם. הגיעו לעומק של 25 קומות לפחות. יש לי הר של $ לשלוח לכם אם תצליחו.^  ידידכם, מר צ'י %item quest 20 %%[#]האתגר של צ'י",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "robinWell",
+      "english": "Robin here!^I know there's a lot of stone scattered around your farm.^If you have a surplus, you might consider having me build a well for you.^Wells can be placed all over your farm, and serve as convenient places to refill your watering can.^^Just swing by my shop with 75 stones and 1000g when you're ready for it.^-Robin[#]Build A Well",
+      "translation": "רובין כאן!^אני יודעת שמפוזרות אבנים רבות ברחבי החווה שלכם.^אם יש לכם עודף, אולי כדאי שתשקלו לבקש ממני לבנות לכם באר.^אפשר להציב בארות בכל רחבי החווה, והן משמשות מקומות נוחים למילוי המזלף.^^פשוט קפצו לחנות שלי עם 75 אבנים ו-1000g כשתהיו מוכנים.^-רובין[#]בניית באר",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "landslideDone",
+      "english": "To our valued JojaMart customers:^Our team members have removed the landslide caused by our drilling operation near the mountain lake. I'd like to remind you that our drilling operation is entirely legal (pursuant to init. L61091, JojaCo Amendment). Responsible stewardship of the local environment is our top priority! ^^We apologize for any inconvenience this accident may have caused.^As always, we value your continued support and patronage!^^-Morris,^Joja Customer Satisfaction Representative[#]Joja Removed Landslide",
+      "translation": "ללקוחותינו המוערכים בג'וג'ה-מארט:^חברי הצוות שלנו פינו את מפולת הסלעים שנגרמה עקב פעולת הקידוח שלנו ליד אגם ההר. ברצוני להזכיר לכם שפעולת הקידוח שלנו חוקית לחלוטין (בהתאם לתקנה L61091, תיקון חברת ג'וג'ה). ניהול אחראי של הסביבה המקומית עומד בראש סדר העדיפויות שלנו! ^^אנו מתנצלים על כל אי-נוחות שהתאונה הזאת אולי גרמה.^כמו תמיד, אנו מעריכים את תמיכתכם ואת נאמנותכם המתמשכות!^^-מוריס,^נציג שביעות רצון הלקוחות של ג'וג'ה[#]ג'וג'ה פינתה את המפולת",
+      "latinException": {
+        "tokens": [
+          "L61091"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "QiChallengeComplete",
+      "english": "You did it.^ I'm very impressed.^ Enjoy your reward.^   -Qi. %item money 10000 %%[#]Qi Challenge Complete",
+      "translation": "עשיתם זאת.^ אני מתרשם מאוד.^ תיהנו מהפרס.^   -צ'י. %item money 10000 %%[#]האתגר של צ'י הושלם",
+      "latinException": {
+        "tokens": [
+          "money"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_2_1",
+      "english": "Hello there,^Just got back from a fishing trip. You should come down to the beach some time.^I've got something for ya.^-Willy %item quest 13 true %%[#]Willy's Invitation",
+      "translation": "שלום,^זה עתה חזרתי ממסע דיג. כדאי שתרדו לחוף מתישהו.^יש לי משהו בשבילכם.^-וילי %item quest 13 true %%[#]ההזמנה של וילי",
+      "latinException": {
+        "tokens": [
+          "quest",
+          "true"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_12",
+      "english": "Dear @,^Tomorrow we're holding the Egg Festival in the town square. ^^You should arrive between 9 AM and 2 PM if you'd like to attend.^You wouldn't want to miss the annual egg hunt!^  -Mayor Lewis[#]Egg Festival Notice",
+      "translation": "@ היקרים,^מחר נקיים את פסטיבל הביצים בכיכר העיירה. ^^כדאי להגיע בין 9 בבוקר ל-2 אחר הצהריים אם תרצו להשתתף.^לא כדאי להחמיץ את ציד הביצים השנתי!^  -ראש העיר לואיס[#]הודעה על פסטיבל הביצים"
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_15_1",
+      "english": "Hello, dear...^^I know you're just getting started as a gardener, so I wanted to give you a little tip.^^Most crops only grow in one season. When summer arrives, your spring crops will all die out. So plan ahead!^^-Granny Evelyn[#]Evelyn's Tip",
+      "translation": "שלום, יקירים...^^אני יודעת שאתם רק מתחילים את דרככם בגינון, ולכן רציתי לתת לכם עצה קטנה.^^רוב הגידולים צומחים רק בעונה אחת. כשהקיץ יגיע, כל גידולי האביב שלכם יקמלו. לכן תכננו מראש!^^-סבתא אוולין[#]העצה של אוולין"
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_23",
+      "english": "Dear @,^Tomorrow we're all getting together for the Flower Dance.^^If you can find a partner, you might even want to participate in the dance yourself!^There's a little clearing beyond the forest west of town where we hold the dance. Arrive between 9 AM and 2 PM if you're interested.^  -Mayor Lewis[#]Flower Dance Notice",
+      "translation": "@ היקרים,^מחר כולנו נתכנס לריקוד הפרחים.^^אם תמצאו בן או בת זוג, אולי אפילו תרצו להשתתף בריקוד בעצמכם!^יש קרחת יער קטנה מעבר ליער שממערב לעיירה, ושם אנו עורכים את הריקוד. הגיעו בין 9 בבוקר ל-2 אחר הצהריים אם אתם מעוניינים.^  -ראש העיר לואיס[#]הודעה על ריקוד הפרחים"
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_10",
+      "english": "Dear @,^Tomorrow we're all gathering at the beach for the annual Pelican Town Luau.^^The highlight of the event is the communal potluck. Make sure you bring something good to contribute!^The governor himself is attending the event, so make sure you're on your best behavior.^Come to the beach sometime between 9 AM and 2 PM.^   -Mayor Lewis[#]Luau Notice",
+      "translation": "@ היקרים,^מחר כולנו נתכנס בחוף ללואו השנתי של עיירת פליקן.^^שיא האירוע הוא ארוחת השיתוף הקהילתית. הקפידו להביא משהו טוב לתרום לה!^המושל בכבודו ובעצמו ישתתף באירוע, לכן הקפידו להתנהג יפה.^בואו לחוף בין 9 בבוקר ל-2 אחר הצהריים.^   -ראש העיר לואיס[#]הודעה על הלואו"
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_28",
+      "english": "Dear @,^Tonight at around 10 o'clock PM, a rare and beautiful event will take place.^^The moonlight jellies will be passing by Pelican Town on their long journey south for the winter.^^We're all gathering at the beach to watch. You don't want to miss this!^See you tonight,^ -Demetrius[#]Dance Of The Moonlight Jellies",
+      "translation": "@ היקרים,^הלילה, בסביבות השעה 10, יתרחש אירוע נדיר ויפהפה.^^מדוזות אור הירח יעברו ליד עיירת פליקן במסען הארוך דרומה לקראת החורף.^^כולנו נתכנס בחוף כדי לצפות בהן. אל תחמיצו את זה!^נתראה הערב,^ -דמטריוס[#]ריקוד מדוזות אור הירח"
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_9",
+      "english": "Dear @,^One week from today, we are holding the Stardew Valley Fair in the town square!^It's the biggest event of the year, drawing people from all across the country to our humble town.^If you'd like, you can set up a grange display for the event. Just bring up to 9 items that best showcase your talents. You'll be judged on the quality and diversity of your display.^The fair starts at 9 AM... don't miss it!^   -Mayor Lewis[#]Stardew Valley Fair Notice",
+      "translation": "@ היקרים,^בעוד שבוע מהיום נקיים את יריד עמק סטארדיו בכיכר העיירה!^זה האירוע הגדול ביותר בשנה, והוא מושך אנשים מכל רחבי המדינה אל עיירתנו הצנועה.^אם תרצו, תוכלו להקים באירוע תצוגת תוצרת. פשוט הביאו עד 9 פריטים שמציגים בצורה הטובה ביותר את כישרונותיכם. התצוגה שלכם תישפט לפי איכותה וגיוונה.^היריד מתחיל ב-9 בבוקר... אל תחמיצו אותו!^   -ראש העיר לואיס[#]הודעה על יריד עמק סטארדיו"
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_15",
+      "english": "Dear @,^I just want to remind you that the Stardew Valley Fair is happening tomorrow.^Don't forget to bring your 9 items for the grange display.^Remember, the fair starts at 9AM in the town square. See you there!^   -Mayor Lewis[#]Stardew Valley Fair Reminder",
+      "translation": "@ היקרים,^רק רציתי להזכיר לכם שיריד עמק סטארדיו מתקיים מחר.^אל תשכחו להביא את 9 הפריטים שלכם לתצוגת התוצרת.^זכרו, היריד מתחיל ב-9 בבוקר בכיכר העיירה. נתראה שם!^   -ראש העיר לואיס[#]תזכורת ליריד עמק סטארדיו"
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_26",
+      "english": "Dear @,^Notice a chill in the air? It could just be the approach of winter...^Or it could be the tingle of a dark specter, here to help us celebrate tomorrow's festival... the Spirit's Eve.^Come to town at 10 PM if you'd like to participate.^  -Mayor Lewis[#]Spirit's Eve Notice",
+      "translation": "@ היקרים,^מרגישים צינה באוויר? אולי זו רק התקרבות החורף...^ואולי זהו רעד שמעוררת רוח אפלה, שהגיעה לעזור לנו לחגוג את הפסטיבל של מחר... ערב הרוחות.^בואו לעיירה ב-10 בלילה אם תרצו להשתתף.^  -ראש העיר לואיס[#]הודעה על ערב הרוחות"
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_7",
+      "english": "Dear @,^Tomorrow we're all gathering in front of Marnie's house for the Festival of Ice.^^It's a celebration of winter... there'll be snowmen, ice sculptures, and an ice fishing competition!^Arrive between 9 AM and 2 PM if you'd like to participate.^  -Mayor Lewis[#]Festival Of Ice Notice",
+      "translation": "@ היקרים,^מחר כולנו נתכנס מול ביתה של מארני לכבוד פסטיבל הקרח.^^זוהי חגיגה של החורף... יהיו בובות שלג, פסלי קרח ותחרות דיג בקרח!^הגיעו בין 9 בבוקר ל-2 אחר הצהריים אם תרצו להשתתף.^  -ראש העיר לואיס[#]הודעה על פסטיבל הקרח"
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_14",
+      "english": "Starting tomorrow, a traveling merchant fleet will dock at Pelican Town for the yearly night market.^^The market starts at 5pm, and will be in port for the next three days.^^Please visit the beach after 5pm to join the festivities. There's free coffee![#]Night Market Notice",
+      "translation": "החל ממחר, צי של סוחרים נודדים יעגון בעיירת פליקן לרגל שוק הלילה השנתי.^^השוק מתחיל בשעה 5 אחר הצהריים ויישאר בנמל במשך שלושת הימים הבאים.^^בואו לחוף אחרי השעה 5 כדי להצטרף לחגיגות. הקפה בחינם![#]הודעה על שוק הלילה"
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_11_1",
+      "english": "MISSING:^I lost my favorite Axe! If you find it, please return ASAP. I'm having a tough time without it. There's 250g in it for whoever finds the thing.^   -Robin%item quest 100 %%[#]Robin Lost Her Axe",
+      "translation": "אבדה:^איבדתי את הגרזן האהוב עליי! אם תמצאו אותו, אנא החזירו אותו בהקדם האפשרי. קשה לי מאוד בלעדיו. מי שימצא אותו יקבל 250g.^   -רובין%item quest 100 %%[#]רובין איבדה את הגרזן שלה",
+      "latinException": {
+        "tokens": [
+          "g",
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_19_1",
+      "english": "Farmer @-^I have a request for you. I need fresh cauliflower for a recipe I want to make. Could you bring me one?^   -Jodi%item quest 101 %%[#]Jodi Asks For Cauliflower",
+      "translation": "אל @ מהחווה-^יש לי בקשה מכם. אני זקוקה לכרובית טרייה למתכון שאני רוצה להכין. תוכלו להביא לי אחת?^   -ג'ודי%item quest 101 %%[#]ג'ודי מבקשת כרובית",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_3_1",
+      "english": "@-^This is embarrassing... I lost my lucky purple shorts. I'm telling you because I think I can trust you.^If you find them, bring them back to me DISCREETLY. I'll pay well.^Thanks.^   -Mayor Lewis%item quest 102 %%[#]Lewis Asks For A Favor",
+      "translation": "@-^זה מביך... איבדתי את המכנסיים הקצרים הסגולים שמביאים לי מזל. אני מספר לכם מפני שנראה לי שאפשר לבטוח בכם.^אם תמצאו אותם, החזירו לי אותם בדיסקרטיות. אשלם היטב.^תודה.^   -ראש העיר לואיס%item quest 102 %%[#]לואיס מבקש טובה",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_14_1",
+      "english": "Hey Kid,^My throat's about as dry as a desert bone. I'm real thirsty for a pale ale. You got one? Regular old beer won't do. I need a pale ale.^   -Pam%item quest 103 %%[#]Pam's Request",
+      "translation": "היי, ילדים,^הגרון שלי יבש כמו עצם במדבר. אני ממש צמאה לפייל אייל. יש לכם אחד? בירה רגילה לא תספיק. אני צריכה פייל אייל.^   -פאם%item quest 103 %%[#]הבקשה של פאם",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_20_1",
+      "english": "@-^I'm gathering data on the correlation between soil alkalinity and crop fructose levels. Long story short, I need a fresh melon from your farm. If you brought me one I'd be very grateful.^   -Demetrius%item quest 104 %%[#]Demetrius Asks For A Sample",
+      "translation": "@-^אני אוסף נתונים על המתאם בין בסיסיות הקרקע לרמות הפרוקטוז בגידולים. בקיצור, אני זקוק למלון טרי מהחווה שלכם. אם תביאו לי אחד, אהיה אסיר תודה.^   -דמטריוס%item quest 104 %%[#]דמטריוס מבקש דגימה",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_25_1",
+      "english": "To Farmer @:^My knee's acting up again, and you know what helps? ^Rubbing the darn thing with hot pepper.^ Trouble is, my supply's run dry. If you've got one to spare I'd be much obliged.^   -George %item quest 105 %%[#]George Needs A Pepper",
+      "translation": "אל @ מהחווה:^הברך שלי שוב עושה בעיות, ואתם יודעים מה עוזר? ^לשפשף את הדבר הארור בפלפל חריף.^ הבעיה היא שהמלאי שלי נגמר. אם יש לכם אחד מיותר, אהיה אסיר תודה.^   -ג'ורג' %item quest 105 %%[#]ג'ורג' זקוק לפלפל",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_3_1",
+      "english": "Dear @,^I'd like to give my cows a special treat. They're such good girls and hungry, too. Could you bring me one bunch of amaranth? They love the stuff. ^Thanks, Dear.^   -Marnie %item quest 106 %%[#]Marnie's Request",
+      "translation": "@ היקרים,^אני רוצה לתת לפרות שלי פינוק מיוחד. הן ילדות טובות וגם רעבות. תוכלו להביא לי צרור אחד של אמרנט? הן אוהבות את זה. ^תודה, יקירים.^   -מארני %item quest 106 %%[#]הבקשה של מארני",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_8_1",
+      "english": "Hello,^It's blackberry season right now. The bushes are full of them. I want to pick some, but I lost my basket. Can you help?^   -Linus%item quest 107 %%[#]Linus Lost His Basket",
+      "translation": "שלום,^זאת עונת הפטל השחור עכשיו. השיחים מלאים בפירות. אני רוצה לקטוף קצת, אבל איבדתי את הסל שלי. תוכלו לעזור?^   -לינוס%item quest 107 %%[#]לינוס איבד את הסל שלו",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_19_1",
+      "english": "@-^I'd like to buy a pumpkin from you. My daughter and I want to carve a jack-o-lantern for the upcoming Spirit's Eve festival. ^   -Caroline%item quest 108 %%[#]Caroline's Request",
+      "translation": "@-^אני רוצה לקנות מכם דלעת. בתי ואני רוצות לגלף פנס דלעת לקראת פסטיבל ערב הרוחות הקרוב. ^   -קרוליין%item quest 108 %%[#]הבקשה של קרוליין",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_2_1",
+      "english": "Hey, I've got a little challenge for you:^    Catch me a squid.^You can fish them from the ocean at night. They only show up in the winter, though.^   -Willy%item quest 109 %%[#]Willy's Challenge",
+      "translation": "היי, יש לי אתגר קטן בשבילכם:^    תפסו לי דיונון.^אפשר לדוג אותם מהאוקיינוס בלילה. אבל הם מופיעים רק בחורף.^   -וילי%item quest 109 %%[#]האתגר של וילי",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_6_1",
+      "english": "I've got an unusual request. Could you keep this a secret?^ I want you to deliver an amethyst to Emily. It's her favorite stone. Tell her it's from me.^   -Clint %item quest 110 %%[#]Clint's Unusual Request",
+      "translation": "יש לי בקשה יוצאת דופן. תוכלו לשמור עליה בסוד?^ אני רוצה שתמסרו לאמילי אמטיסט. זו האבן האהובה עליה. אמרו לה שהיא ממני.^   -קלינט %item quest 110 %%[#]הבקשה יוצאת הדופן של קלינט",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_12_1",
+      "english": "@-^I am researching the forgotten art of shadow divination. I require an item known as 'Void Essence'. Bring it to me and you will be rewarded.^ -M. Rasmodius, Wizard %item quest 111 %%[#]Wizard's Request",
+      "translation": "@-^אני חוקר את האמנות הנשכחת של ניבוי באמצעות צללים. אני זקוק לפריט המכונה 'מהות ריק'. הביאו לי אותו ותתוגמלו.^ -מ׳ רזמודיוס, הקוסם %item quest 111 %%[#]הבקשה של הקוסם",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_17_1",
+      "english": "@,^Sorry to bother you again, but I need another favor.^I got a new hammer and I want to try it on a variety of metals.^Could you smelt an iron bar and bring it to me? ^Thanks.^ -Clint %item quest 112 %%[#]Clint's Request",
+      "translation": "@,^סליחה שאני מטריד אתכם שוב, אבל אני זקוק לטובה נוספת.^קיבלתי פטיש חדש ואני רוצה לנסות אותו על מגוון מתכות.^תוכלו להתיך מטיל ברזל ולהביא לי אותו? ^תודה.^ -קלינט %item quest 112 %%[#]הבקשה של קלינט",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_21_1",
+      "english": "@-^How are you doing? Hope the winter hasn't been too hard on you.^Anyway, I'm writing to ask you for some hardwood. I need about ten pieces, if you've got it.^If not, no worries. Take Care!^  -Robin%item quest 113 %%[#]Robin's Request",
+      "translation": "@-^מה שלומכם? מקווה שהחורף לא היה קשה מדי בשבילכם.^בכל אופן, אני כותבת כדי לבקש מכם מעט עץ קשה. אני צריכה כעשר חתיכות, אם יש לכם.^אם אין, לא נורא. שמרו על עצמכם!^  -רובין%item quest 113 %%[#]הבקשה של רובין",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_26_1",
+      "english": "Dear @-^I want to make fish stew, but I need an albacore! I know they're almost out of season... sorry about the short notice. Could you catch one for me?^   -Gus%item quest 114 %%[#]Gus Needs A Certain Fish",
+      "translation": "@ היקרים-^אני רוצה להכין נזיד דגים, אבל אני זקוק לאלבקור! אני יודע שהם כמעט כבר לא בעונה... סליחה על ההתראה הקצרה. תוכלו לתפוס אחד בשבילי?^   -גאס%item quest 114 %%[#]גאס זקוק לדג מסוים",
+      "latinException": {
+        "tokens": [
+          "quest"
+        ],
+        "reason": "The preserved mail item directive uses engine-defined ASCII arguments and object type codes; g is the game currency suffix."
+      }
+    }
+  ]
+}

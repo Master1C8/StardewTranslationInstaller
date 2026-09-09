@@ -1,0 +1,48 @@
+{
+  "id": "109-farm-morning-invitations-and-kent",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of Abigail’s apology, Sam’s Zuzu City concert invitation, Leah’s art-show invitation, and Kent’s introduction, plus a full technical audit of the silent third-year farm event. Every line was reviewed for natural Ukrainian, character voice, time and place instructions, emotional tone, and newcomer meaning. The silent record is explicitly preserved. Event commands, actors, movement, timing, state conditions, placeholders, branch delimiters, emotion markers, music and sound IDs, and non-text payloads were preserved and structurally compared with English. The remaining Farm records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "7798d4ad981753aca146170d526e8e60c34434cf4188b7e062c170c41323ba35",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 4
+  },
+  "records": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "5/e 3/v Abigail/t 600 800",
+      "english": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Hi. Um... I just wanted to say sorry for acting so weird yesterday.#$b#You probably understand what happened...$l#$b#Uh, okay...bye.\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Привіт. Ем-м... Я лише хотіла перепросити за те, що вчора так дивно поводилася.#$b#Ти, мабуть, розумієш, що сталося...$l#$b#Е-е, гаразд... бувай.\"/pause 500/end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "47/f Sam 2000/t 600 800/e 44",
+      "english": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Hi @. Guess what? My band is playing a show tonight, in Zuzu City!#$b#Meet me at the bus stop around 4:00 this afternoon to leave for the show. You better be there!\"/pause 300/end dialogue Sam \"I'm excited and a little nervous for the show tonight. I'm sure everything will turn out okay.\"",
+      "translation": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Привіт, @. Угадай що? Сьогодні ввечері мій гурт виступає в місті Зузу!#$b#Зустрінь мене на Автобусній зупинці близько 4-ї години дня, і звідти поїдемо на виступ. Ти неодмінно маєш прийти!\"/pause 300/end dialogue Sam \"Я водночас радію й трохи нервую через сьогоднішній виступ. Упевнений, усе буде добре.\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "2146991/y 3/H",
+      "english": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+      "translation": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+      "reviewed": true,
+      "preserveReason": "This farm event record is a completely silent visual sequence containing only event commands, actors, coordinates, movement, animation, timing, sound IDs, and the grandpa-score command. Preserve it exactly without inventing player-facing text."
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion",
+      "english": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Hi @! Are you free this afternoon?#$b#I finally got my act together and I'm doing my art show tonight in the town square!$h#$b#Come into town between 3:00 and 5:00 pm if you want to be there!\"/pause 300/end dialogue Leah \"I'm nervous...$l\"",
+      "translation": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Привіт, @! У тебе є вільний час сьогодні після обіду?#$b#Я нарешті зібралася з духом і сьогодні ввечері влаштовую мистецьку виставку на міській площі!$h#$b#Якщо хочеш там побувати, приходь до міста між 3-ю та 5-ю годинами дня!\"/pause 300/end dialogue Leah \"Я нервую...$l\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "63/y 2/t 600 1800/H",
+      "english": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"Um, hello there. My name's Kent. I just got back last night... from overseas. My wife told me that a new farmer had moved in while I was gone.\"/pause 500/speak Kent \"Well, I just wanted to introduce myself... I'll see you around.\"/pause 300/end",
+      "translation": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"Ем-м, вітаю. Мене звати Кент. Я лише минулої ночі повернувся... з-за кордону. Дружина розповіла, що за моєї відсутності сюди переїхала нова людина й узялася господарювати на фермі.\"/pause 500/speak Kent \"Що ж, я просто хотів відрекомендуватися... Ще побачимося.\"/pause 300/end",
+      "reviewed": true
+    }
+  ]
+}

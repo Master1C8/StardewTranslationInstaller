@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "healedSam": "playSound healSound/pause 500/speak Sam \"Благодаря, @.\"/speak Sebastian \"...$s\"/pause 1000/playMusic none/message \"Сам се втурва напред и поваля Зарт, измъква Жезъла на Соларион от лапите му и възстановява мира и реда в света.\"/pause 500/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "finalBossWizard": "pause 500/resetVariable/message \"Лордът на ужаса Зарт мърмори заклинание...\"/pause 500/question fork0 \"Какво правиш?#Направи заклинанието „Лъч на чистотата“ срещу Зарт.#Омагьосай приятелите си със „Защитен талисман“.\"/fork castBeam/pause 800/playSound debuffHit/message \"Омагьосваш Сам и Себастиан със „Защитен талисман“.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"Зарт изпраща във въздуха заряди от чиста тъмна енергия. Един от тях улучва Себастиан, но твоят „Защитен талисман“ го отразява право в лицето на Зарт!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Зарт е победен, а Жезълът на Соларион сияе спокойно. Редът в света е възстановен.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+        "castBeam": "pause 500/message \"Преди да успееш да направиш заклинанието си, Зарт изстрелва сенчест лъч към спътниците ти!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Сам и Себастиан са изпържени до хрупкава коричка...\"/pause 500/playSound yoba/pause 800/message \"Заклинанието ти удря Зарт право в лицето.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"Той изпищява и се разпада на прах. Вземаш Жезъла на Соларион и го вдигаш високо. Мирът и редът в света са възстановени.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+        "chargeAhead": "pause 500/message \"Втурваш се напред, но Зарт се изплъзва покрай теб и изстрелва сенчест лъч към спътниците ти!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Себастиан и Сам са изпържени до хрупкава коричка...\"/pause 800/message \"Замахваш отново с меча и нанасяш силен удар. Зарт изпищява и се разпада на прах.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Вземаш Жезъла на Соларион и го вдигаш високо. Мирът и редът в света са възстановени.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end"
+      }
+    }
+  ]
+}

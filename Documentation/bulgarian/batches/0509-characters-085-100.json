@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0509-characters-085-100",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/Characters",
+  "status": "reviewed",
+  "entries": {
+    "MovieTheater_ClosedFestival": "Киносалонът е затворен заради фестивала.",
+    "MovieTheater_Closed": "Киносалонът е затворен.",
+    "MovieTheater_BoxOfficeClosed": "На касата няма никого.",
+    "MovieTheater_Concession": "Добре дошли на щанда за храна! Искаш ли да поръчаш нещо за хапване за госта си?",
+    "MovieTheater_ConcessionAlone": "О, май си тук без компания. Ако дойдеш с някого, можеш да поръчаш нещо за хапване и за компанията си. Опитай някой път!",
+    "MovieTheater_ConcessionPurchased": "Искаше {0}, нали? Поръчката ще бъде доставена до мястото на {1}, щом филмът започне!",
+    "MovieTheater_ConcessionAfterMovie": "Е, как беше филмът?",
+    "MovieTheater_AfterMovieAlone": "{0} размишлява мълчаливо върху филма.",
+    "MovieTheater_AfterMovie": "{0} оживено обсъжда филма.",
+    "MovieTheater_LoveMovie": "Филмът е приковал цялото внимание на {0}...!",
+    "MovieTheater_LikeMovie": "{0} явно се забавлява!",
+    "MovieTheater_DislikeMovie": "{0} задрямва...",
+    "MovieTheater_LoveConcession": "{0} истински се наслаждава на {1}!",
+    "MovieTheater_LikeConcession": "{0} се наслаждава на {1}.",
+    "MovieTheater_DislikeConcession": "{0} изобщо не докосва {1}...",
+    "MovieTheater_LoveConcession_Female": "{0} истински се наслаждава на {1}!"
+  },
+  "sourceHashes": {
+    "MovieTheater_ClosedFestival": "66faf211444749a6b9babef23b4f637d1caa447277ab0edfc4a490fb5117ae35",
+    "MovieTheater_Closed": "159bcb4b5c896d1f494034223c91e1496d8f98456063f6ec2cb31a10c9c4fe0d",
+    "MovieTheater_BoxOfficeClosed": "41fd99eec551a716340f1484337fa38b3061604e535ab72533a709dae8115c57",
+    "MovieTheater_Concession": "8e69ca1c4780ef24b1e3b47e357a07062c01fb18b40c3f4e8c16428237611759",
+    "MovieTheater_ConcessionAlone": "8ff3e77dc2ad035da55bb85575a59e204a7cc610a838f4ec24e1b43e280914ae",
+    "MovieTheater_ConcessionPurchased": "4c904719e8dd5a48785c48354c0122de8dc19233c2b739a6852746c20633e926",
+    "MovieTheater_ConcessionAfterMovie": "6551de96bac09d67eb83d479eb66516f334ba8dc6fb22a9ad4e1222cd2517bab",
+    "MovieTheater_AfterMovieAlone": "9ee8c2362842d67d63da7c992d2758b90f6c60fc1b1e1016185fbe53fe1e1cd6",
+    "MovieTheater_AfterMovie": "9a0d561c3b5f99b583b7be6b6eb3aab1343e515750c58cb8b7b3fd5473d9e31c",
+    "MovieTheater_LoveMovie": "950fca3a3bb0b04c2994c20a3ded2d3e39530ae06b422758c6ab5ce2c2f7d0e2",
+    "MovieTheater_LikeMovie": "c90c394c667146ea781e79a6a3547a34124fb90510029cb379ef84e44fc6e0c4",
+    "MovieTheater_DislikeMovie": "3fb5290628780e9575867cd5495265328e57c5bdf246624601f5ba90f5b91bcc",
+    "MovieTheater_LoveConcession": "ab9a2404d48982c5bcdddd083d2074326a8988863e1fb467b8413db1068cbc93",
+    "MovieTheater_LikeConcession": "e2a4b9f344eab7e9cecac84a961f3de8bbd2f0d711c42288a2ae4e3c7a2df5ef",
+    "MovieTheater_DislikeConcession": "5b44a6d0eea48a1f7181bd9c7aafee2d3cd112246a85770ff924e2c62d6792b3",
+    "MovieTheater_LoveConcession_Female": "98003a3078e6dd642325266e274c8a1132c9d14eabae60a984f6327eec6548a1"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated sixteen Movie Theater closure, concession-counter and post-screening reaction strings directly from English.",
+      "Applied locked Киносалон terminology and rewrote dynamic guest reactions in present-tense or noun-centered Bulgarian so male, female and nonbinary guests all compose naturally.",
+      "Reread both concession placeholders in their correct item-then-guest order, preserved every ellipsis and exclamation, and refined the alone-at-counter message to avoid a gendered pronoun for the future guest."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "44549dd693104787d82e648846798c9eedb332deb384f328b65c6275293d6d15"
+  }
+}

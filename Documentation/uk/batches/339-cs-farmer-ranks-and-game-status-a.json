@@ -1,0 +1,432 @@
+{
+  "id": "339-cs-farmer-ranks-and-game-status-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 60 farmer-rank, game-state, day-label, Stardrop, crash, loading and NPC status strings. Canonical farmhand, ranch, Stardrop and Lewis terminology, abbreviations, placeholders, control prefixes, URLs, leading and trailing spaces and dialogue commands were checked against the English source.",
+    "reviewedTextSHA256": "bb8494637d54808aba3e1d4de0515062617b494fd89f4a1d14839c084f9aacdf",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 127
+  },
+  "records": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2021",
+      "english": "Planter",
+      "translation": "Садівник",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2022",
+      "english": "Granger",
+      "translation": "Хлібороб",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2023",
+      "english": "Farmboy",
+      "translation": "Фермерський парубок",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2024",
+      "english": "Farmgirl",
+      "translation": "Фермерська дівчина",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2025",
+      "english": "Sodbuster",
+      "translation": "Землероб",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2026",
+      "english": "Smallholder",
+      "translation": "Дрібний фермер",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2027",
+      "english": "Tiller",
+      "translation": "Землероб",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2028",
+      "english": "Farmhand",
+      "translation": "Помічник на фермі",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2029",
+      "english": "Cowpoke",
+      "translation": "Ковбой",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2030",
+      "english": "Bumpkin",
+      "translation": "Селюк",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2031",
+      "english": "Greenhorn",
+      "translation": "Зелений новачок",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2032",
+      "english": "Newcomer",
+      "translation": "Новоприбулий",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2156",
+      "english": "The Alfalfas",
+      "translation": "«Люцерни»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2157",
+      "english": "Blue Tower",
+      "translation": "Блакитна вежа",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2574",
+      "english": "Gamepad mode activated.",
+      "translation": "Режим геймпада ввімкнено.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2575",
+      "english": "Gamepad disconnected.",
+      "translation": "Геймпад від’єднано.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2634",
+      "english": "near Marnie's ranch.",
+      "translation": "біля ранчо Марні.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2635",
+      "english": "in the forest.",
+      "translation": "у лісі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2637",
+      "english": "in the town square.",
+      "translation": "на міській площі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2639",
+      "english": "at the beach.",
+      "translation": "на пляжі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2640",
+      "english": "The {0} has begun ",
+      "translation": "Починається {0} ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2652",
+      "english": "It's getting late...",
+      "translation": "Уже пізно...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2782",
+      "english": "The wedding was wonderful... wasn't it, dear?$h#$e#Well, we can't forget about the farm... time to get to work.",
+      "translation": "Весілля було чудове... правда ж, любий?$h#$e#Та не можна забувати про ферму... час до роботи.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2898",
+      "english": "I'm not thirsty right now...",
+      "translation": "Зараз я не хочу пити...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2899",
+      "english": "I'm too full...",
+      "translation": "Я надто ситий...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.2973",
+      "english": "Today's festival is being set up. Come back later.",
+      "translation": "Сьогодні готують фестиваль. Повертайся пізніше.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3042",
+      "english": "Sun",
+      "translation": "Нд",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3043",
+      "english": "Mon",
+      "translation": "Пн",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3044",
+      "english": "Tue",
+      "translation": "Вт",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3045",
+      "english": "Wed",
+      "translation": "Ср",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3046",
+      "english": "Thu",
+      "translation": "Чт",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3047",
+      "english": "Fri",
+      "translation": "Пт",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3048",
+      "english": "Sat",
+      "translation": "Сб",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3094",
+      "english": "Your mind is filled with thoughts of ",
+      "translation": "Усі твої думки про ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3095",
+      "english": "It's strange, but the taste reminds you of ",
+      "translation": "Дивно, але смак нагадує тобі про ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3097",
+      "english": "You feel an unwavering connection to the valley itself.",
+      "translation": "Ти відчуваєш непохитний зв’язок із самою долиною.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3099",
+      "english": "Your mind is filled with thoughts of... ConcernedApe? (Well, thanks!)",
+      "translation": "Усі твої думки про... ConcernedApe? (Що ж, дякую!)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3100",
+      "english": "You found a =Stardrop! ",
+      "translation": "Ти знайшов =Зоряну краплю! ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3101",
+      "english": ". ^^Your maximum energy level has increased.",
+      "translation": ". ^^Твій максимальний запас енергії збільшився.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3116",
+      "english": "+{0} Energy",
+      "translation": "+{0} енергії",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3118",
+      "english": "+{0} Health",
+      "translation": "+{0} здоров’я",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3159",
+      "english": "Drink {0}?",
+      "translation": "Випити {0}?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3160",
+      "english": "Eat {0}?",
+      "translation": "З’їсти {0}?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3191",
+      "english": " ...Waiting for tile location click...",
+      "translation": " ...Очікування клацання по клітинці...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3206",
+      "english": "Hello! This is a test",
+      "translation": "Привіт! Це перевірка",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3209",
+      "english": "using gamepad",
+      "translation": "з геймпадом",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3210",
+      "english": "not using gamepad",
+      "translation": "без геймпада",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3332",
+      "english": "{0} days played.",
+      "translation": "Зіграно днів: {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3666",
+      "english": "Screenshot mode activated. Press 'F4' to exit.",
+      "translation": "Режим знімка екрана ввімкнено. Натисни «F4», щоб вийти.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3685",
+      "english": "Stardew Valley has crashed...",
+      "translation": "У Stardew Valley стався збій...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3686",
+      "english": "Please send the error report or a screenshot of this message to @ConcernedApe. (http://stardewvalley.net/contact/)",
+      "translation": "Надішли звіт про помилку або знімок цього повідомлення користувачу @ConcernedApe. (http://stardewvalley.net/contact/)",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3688",
+      "english": "Loading",
+      "translation": "Завантаження",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3689",
+      "english": "Loading...",
+      "translation": "Завантаження...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3747",
+      "english": "Exhausted",
+      "translation": "Виснажено",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Game1.cs.3756",
+      "english": "Mr. Lewis",
+      "translation": "пан Льюїс",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "HUDMessage.cs.3824",
+      "english": "New Achievement: ",
+      "translation": "Нове досягнення: ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NameSelect.cs.3864",
+      "english": "Done",
+      "translation": "Готово",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.3926",
+      "english": "Be patient, I still have a lot of work to do.",
+      "translation": "Май терпіння, у мене ще багато роботи.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.3927",
+      "english": "Your house should be ready tomorrow.",
+      "translation": "Твій будинок буде готовий завтра.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.3954",
+      "english": "Wrong Person",
+      "translation": "Не та людина",
+      "reviewed": true
+    }
+  ]
+}

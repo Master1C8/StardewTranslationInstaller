@@ -1,0 +1,51 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "IslandFieldOffice_Survey_Yes": "Докладвай резултата",
+        "IslandFieldOffice_Survey_Notyet": "Още не",
+        "IslandFieldOffice_Survey_Prompt_LeftPlant": "Островно проучване -- Докладвай броя на лилавите цветя на острова.",
+        "IslandFieldOffice_Survey_PurpleFlower_Question": "Колко лилави цветя има на острова?",
+        "IslandFieldOffice_Survey_PurpleFlower_Wrong": "Хмм... Това число изобщо не се вписва в моделите ми... Може би трябва да опиташ отново утре.$s",
+        "IslandFieldOffice_Survey_PurpleFlower_Correct": "Да, да... това изглежда много точно. Благодаря!$h",
+        "IslandFieldOffice_Survey_Prompt_RightPlant": "Островно проучване -- Докладвай броя на лилавите морски звезди на острова.",
+        "IslandFieldOffice_Survey_PurpleStarfish_Question": "Колко лилави морски звезди има на острова?",
+        "IslandFieldOffice_Survey_Failed": "Хмм... Мисля, че трябва да си починеш и да опиташ проучването отново утре...",
+        "IslandFieldOffice_Intro_Event": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ах... Влизай!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Заповядай в полевия ми кабинет.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"Както виждаш... тук е доста празно.$s#$b#Това, че заседнах в онази пещера, нанесе тежък удар на проекта ми.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"Но точно тук се намесваш ти! Хи-хи...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"Занимавам се с кости, разбираш ли...#$b#И по-точно с древни кости... А този остров е пълен с тях.#$b#Ако попаднеш на кости, вкаменелости или мумифицирани образци на острова, донеси ги на бюрото ми, става ли? Ще си заслужава!$h\"/pause 200/faceDirection SafariGuy 1/end",
+        "ScienceHouse_CarpenterMenu_RenovateHouse": "Направи ремонт на къщата",
+        "ScienceHouse_CarpenterMenu_RenovateCabin": "Направи ремонт на къщичката",
+        "ScienceHouse_Renovation_RemoveCrib": "Премахни креватчето/Премахва креватчето от дома ти./Избери креватче за премахване.",
+        "ScienceHouse_Renovation_BuildCrib": "Построй креватче/Построява креватче в дома ти./Избери място за креватчето.",
+        "ScienceHouse_Renovation_OpenBedroom": "Отвори спалнята/Премахва стената, която разделя спалнята и входната стая./Избери зона за ремонта.",
+        "ScienceHouse_Renovation_CloseBedroom": "Затвори спалнята/Построява стена, която разделя спалнята и входната стая./Избери зона за ремонта.",
+        "ScienceHouse_Renovation_AddSouthernRoom": "Добави южна стая/Добавя стая на юг от спалнята ти./Избери зона за ремонта.",
+        "ScienceHouse_Renovation_RemoveSouthernRoom": "Премахни южната стая/Премахва стаята на юг от спалнята ти./Избери зона за ремонта.",
+        "ScienceHouse_Renovation_AddCornerRoom": "Добави ъглова стая/Добавя стая в североизточния ъгъл на къщата./Избери зона за ремонта.",
+        "ScienceHouse_Renovation_RemoveCornerRoom": "Премахни ъгловата стая/Премахва стаята в североизточния ъгъл на къщата./Избери зона за ремонта.",
+        "Journal_Name": "Къс от дневник",
+        "Gourmand_Intro": "*Кръбибит*... Кой смее да влезе в гнездото ми?|Ах... Скромен фермер, дошъл да обработва земите ми... Какъв късмет!|О, как ме благословиха дъждовете!",
+        "Gourmand_RequestIntro": "*Гърп*... Виждаш ли... някога нивите ми изобилстваха от пресни плодове и зеленчуци...|Но остарях и без младежката сила нивите ми се превърнаха в безплодна пръст...|*въздишка*... Какво ли не бих дал отново да видя онова пиршество от наслади...|Тук се намесваш ти.",
+        "Gourmand_RequestQuestion": "Ах... Имаш нещо, което да ми покажеш?",
+        "Gourmand_RequestFailed": "*Криибит*... Какво означава това?! Това, което търся, не е отгледано... А сега върви!",
+        "Gourmand_Request_0": "Трябва да отгледаш за мен... онази сладка наслада, едновременно розова и сочна...|Не я откъсвай от земята! Искам да я видя в естественото ѝ състояние...",
+        "Gourmand_Request_0_Success": "*Гърррп*... Да... Това е!|...Връща ме към отминалите дни... слънчеви дни, когато всичко беше по-сладко...|*сърбане*... О, бих могъл да отхапя голяма, сочна хапка...|...Но няма да го направя.",
+        "Gourmand_Request_1": "Искам да видя онова дълго жълто нещо, което гъделичка кожата и се вее на вятъра.",
+        "Gourmand_Request_1_Success": "*Гърррп*... Да... Това е!|Хех... Напомня ми за една стара приятелка... *гърп*...|Виж само... Бих могъл да те погъделичкам с това!|...Но няма да го направя.",
+        "Gourmand_Request_2": "Бих искал да видя лютивия плод на земята, от който дъхът се вмирисва...",
+        "Gourmand_Request_2_Success": "*Гърррп*... Да... Ядох това веднъж, много отдавна. От него дни наред излъчвах остра миризма...|...Напомня ми за татко, когато бях само попова лъжичка...|Хех... Бих могъл да отхапя и отново да издам онази остра миризма...|...Но няма да го направя.",
+        "Gourmand_Reward": "*Криибит*... Да... Много съм доволен.|Ето... Това е за теб.",
+        "Gourmand_LastReward": "*Криибит*... Да... Направи ми голяма услуга. Подари на една стара жаба последно пътешествие назад към спомените...|Ето ти една последна награда, приятелю.",
+        "Gourmand_Finished": "*Криибит*... Радвам се да те видя отново, приятелю.|Имаш благословията ми да обработваш тези ниви. Нека дъждовете бъдат с теб!",
+        "Gourmand_InProgress": "Ах... Виждам, че отглеждаш това, което търся. Но то още е съвсем младо. Върни се, когато узрее...",
+        "Saloon_Arcade_Cowboy_Menu": "= Пътешествието на Краля на прерията =",
+        "Saloon_Arcade_Cowboy_Continue": "Продължи пътешествието",
+        "Saloon_Arcade_Cowboy_NewGame": "Започни ново пътешествие"
+      }
+    }
+  ]
+}

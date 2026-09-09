@@ -1,0 +1,53 @@
+{
+  "locale": "nl",
+  "target": "Data/Events/Hospital",
+  "sourceAssetSha256": "ac8b886938b06673581a0ac74ceca61b082276a849f78f1081c3e6a05c0a043d",
+  "reviewed": true,
+  "quotedReplacements": {
+    "7/f Maru 1000/p Maru": {
+      "*sigh*... I'm so sick of preparing these samples...$s": "*zucht*... Ik ben het zo zat om deze monsters voor te bereiden...$s",
+      "Agh! Oh no!... $4": "Agh! O nee!... $4",
+      "The whole sample is ruined... Harvey's going to kill me...$s": "Het hele monster is verpest... Harvey vermoordt me...$s",
+      "$q 38 null#@, what should I do?#$r 38 -50 Event_Hospital_1#Just scoop it off the floor. He won't know the difference.#$r 39 -20 Event_Hospital_2#Tell Harvey it was my fault.#$r 38 50 Event_Hospital_3#Tell Harvey it was an accident.": "$q 38 null#@, wat moet ik doen?#$r 38 -50 Event_Hospital_1#Schep het gewoon van de vloer. Hij merkt het verschil niet.#$r 39 -20 Event_Hospital_2#Zeg tegen Harvey dat het mijn schuld was.#$r 38 50 Event_Hospital_3#Zeg tegen Harvey dat het een ongeluk was.",
+      "What happened? I heard something break.": "Wat is er gebeurd? Ik hoorde iets breken.",
+      "$p 38#I accidentally dropped one of the samples... I'm so sorry.$s|@ came in and slammed the door so loud I dropped this sample.$u": "$p 38#Ik heb per ongeluk een van de monsters laten vallen... Het spijt me zo.$s|@ kwam binnen en sloeg de deur zo hard dicht dat ik dit monster liet vallen.$u",
+      "You shouldn't blame others for your own problems, Maru.$a": "Je moet anderen niet de schuld geven van je eigen problemen, Maru.$a",
+      "*sigh*... I'll have to call the patient back in to recollect this sample.$s#$b#This'll probably put us in the red for another month...$s": "*zucht*... Ik moet de patiënt terugroepen om dit monster opnieuw af te nemen.$s#$b#Hierdoor staan we waarschijnlijk weer een maand in het rood...$s"
+    },
+    "toldTruth": {
+      "Thanks for telling me the truth, Maru.#$b#Don't worry about the sample, we'll just get another one.": "Bedankt dat je me de waarheid vertelde, Maru.#$b#Maak je geen zorgen over het monster, we nemen gewoon een nieuw af.",
+      "Thanks for being patient with me, Doctor Harvey.": "Bedankt voor uw geduld met mij, dokter Harvey.",
+      "Of course... you've been a big help around here. I don't know what I'd do without you!": "Natuurlijk... je bent hier een enorme hulp geweest. Ik weet niet wat ik zonder je zou moeten!",
+      "@? You look a little pale... are you feeling okay?": "@? Je ziet een beetje bleek... voel je je wel goed?"
+    },
+    "57/f Harvey 1000/p Harvey": {
+      "Ah, @! I was just about to write you a letter.": "Ah, @! Ik wilde je net een brief schrijven.",
+      "You see, my records indicate that you're due for your annual checkup!": "Mijn administratie geeft aan dat het tijd is voor je jaarlijkse controle!",
+      "Now, now... There's no need to worry. It'll be quick and painless. Please follow me.": "Rustig maar... Je hoeft je geen zorgen te maken. Het gaat snel en pijnloos. Volg me alsjeblieft.",
+      "Hmm... Okay. Hold still, please.": "Hmm... Goed. Blijf alsjeblieft stilzitten.",
+      "Say 'ahhh...'": "Zeg eens 'aaa...'",
+      "Okay, you can stop.": "Goed, je mag stoppen.",
+      "I just need to check your vitals.": "Ik hoef alleen nog je vitale functies te controleren.",
+      "$q 86 null#Hmm... Your pulse is high.$u#$r 86 20 event_heart1#I'm a little nervous...#$r 86 20 event_heart2#I'm out of breath from working on the farm.#$r 86 -50 event_heart3#Are you really a doctor? My pulse is fine!": "$q 86 null#Hmm... Je hartslag is hoog.$u#$r 86 20 event_heart1#Ik ben een beetje zenuwachtig...#$r 86 20 event_heart2#Ik ben buiten adem van het werk op de boerderij.#$r 86 -50 event_heart3#Bent u wel echt een dokter? Mijn hartslag is prima!",
+      "Well, then! You seem very healthy, @.#$b#Just make sure not to overwork yourself on that farm!": "Nou dan! Je lijkt kerngezond, @.#$b#Zorg er alleen voor dat je jezelf niet overwerkt op die boerderij!",
+      "Thanks for stopping in.$h": "Bedankt dat je langskwam.$h"
+    },
+    "571102/f Harvey 2000": {
+      "Hello? Hello? Is anyone out there?$9": "Hallo? Hallo? Is daar iemand?$9",
+      "This is Dr. H at... 52 North 43.5 East... Seeking aerial response...Anyone out there?$9": "Dit is dr. H op... 52 noord, 43,5 oost... Ik zoek contact met een luchtvaartuig... Is daar iemand?$9",
+      "Copy.. Dr. H on the ground... this is Blackbird Fiver Fiver Zuzu. Anything to report?": "Begrepen... Dr. H op de grond... dit is Blackbird Vijf Vijf Zuzu. Iets te melden?",
+      "Someone's there!?$10#$b#Er... I mean!... Standard ground report: Wind at 3 Clicks, 36 Degrees North of West. Ground Temperature at 42 Kraggs. Humidity 53%. Dr. H out!$10": "Daar is iemand!?$10#$b#Eh... Ik bedoel!... Standaard grondrapport: wind met drie kliks, 36 graden ten noorden van west. Grondtemperatuur 42 Kraggs. Luchtvochtigheid 53%. Dr. H uit!$10",
+      "Yikes, my pulse is soaring...$7": "Jeetje, mijn hartslag schiet omhoog...$7",
+      "@!": "@!",
+      "#Ask Harvey why he's all flustered.#Pretend like everything's normal.": "#Vraag Harvey waarom hij zo van streek is.#Doe alsof alles normaal is.",
+      "Ah, well... You see, I was just on my radio here... and I made contact with a real pilot!": "Ah, nou... Ik zat hier net achter mijn radio... en ik heb contact gelegd met een echte piloot!",
+      "As a matter of fact, we can probably see him flying overhead right now!": "Sterker nog, waarschijnlijk kunnen we hem nu zien overvliegen!",
+      "Quick, get over here!": "Snel, kom hier!",
+      "Look!": "Kijk!",
+      "As a kid, my dream was always to be a pilot.": "Als kind droomde ik er altijd van om piloot te worden.",
+      "...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s": "...Maar door mijn slechte ogen en verlammende hoogtevrees begon die droom te vervagen.$s",
+      "It's okay... don't be sad.#$b#I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.": "Het is goed... wees niet verdrietig.#$b#Ik heb mijn plaats in het leven leren aanvaarden. Niet iedereen kan zijn dromen verwezenlijken... zo zit de wereld nu eenmaal in elkaar.",
+      "Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h": "Hé, laat me je mijn modelvliegtuigen tonen. Ik heb net de nieuwe luxe set van de TR-Starbird afgemaakt.$h"
+    }
+  }
+}

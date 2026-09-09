@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "0606-supplement-buildings-farmhouse",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Buildings",
+  "status": "reviewed",
+  "entries": {
+    "Farmhouse.Name": "Фермерска къща",
+    "Farmhouse.Description": "Фермерска къща"
+  },
+  "preserveReasons": {},
+  "sourceHashes": {
+    "Farmhouse.Name": "0b06835fb45d5ea0d44dc199e8bd1ac3b3a151459ee87aed56fea9e6ab536b1a",
+    "Farmhouse.Description": "0b06835fb45d5ea0d44dc199e8bd1ac3b3a151459ee87aed56fea9e6ab536b1a"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 2,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Reviewed both literal Farmhouse display fields directly from the typed English BuildingData extraction.",
+      "Applied the locked glossary term Фермерска къща to both the carpenter blueprint name and its one-word description.",
+      "Confirmed with installed-assembly IL that BuildingData.Name and Description are parsed into the player-facing CarpenterMenu blueprint fields."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "51cf65fb3ca0744973cdd401205be02b5cd887ce138aae2b303fd32f56c2ce46"
+  }
+}

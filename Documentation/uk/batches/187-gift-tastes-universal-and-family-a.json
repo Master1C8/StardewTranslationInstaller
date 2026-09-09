@@ -1,0 +1,101 @@
+{
+  "id": "187-gift-tastes-universal-and-family-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the five universal gift-taste lists and every love, like, dislike, hate and neutral response for Robin, Demetrius, Maru, Sebastian, Linus, Pierre and Caroline. All 35 dialogue fields were translated in character; all alternating item-ID/category fields, empty delimiters, placeholders and dialogue markers were preserved exactly. The five universal records contain no player-facing prose and are explicitly justified.",
+    "reviewedTextSHA256": "35b6bfe214ab1b1652947f5d4bac81c3542d61f82fb24661c6633dc72c05fde1",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 23
+  },
+  "records": [
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Universal_Love",
+      "english": "74 446 797 373 279",
+      "translation": "74 446 797 373 279",
+      "reviewed": true,
+      "preserveReason": "Universal gift-taste record contains only item IDs, category tokens and lookup identifiers; it has no player-facing prose and must remain byte-identical."
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Universal_Like",
+      "english": "-2 -7 -26 -75 -80 72 395 613 634 635 636 637 638 724 459 873 394 166",
+      "translation": "-2 -7 -26 -75 -80 72 395 613 634 635 636 637 638 724 459 873 394 166",
+      "reviewed": true,
+      "preserveReason": "Universal gift-taste record contains only item IDs, category tokens and lookup identifiers; it has no player-facing prose and must remain byte-identical."
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Universal_Neutral",
+      "english": "194 216 262 304 815 book_item",
+      "translation": "194 216 262 304 815 book_item",
+      "reviewed": true,
+      "preserveReason": "Universal gift-taste record contains only item IDs, category tokens and lookup identifiers; it has no player-facing prose and must remain byte-identical."
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Universal_Dislike",
+      "english": "-4 -8 -12 -15 -16 -19 -22 -24 -25 -28 -74 78 169 246 247 305 309 310 311 403 419 423 535 536 537 725 726 749 271 Book_PriceCatalogue category_trinket",
+      "translation": "-4 -8 -12 -15 -16 -19 -22 -24 -25 -28 -74 78 169 246 247 305 309 310 311 403 419 423 535 536 537 725 726 749 271 Book_PriceCatalogue category_trinket",
+      "reviewed": true,
+      "preserveReason": "Universal gift-taste record contains only item IDs, category tokens and lookup identifiers; it has no player-facing prose and must remain byte-identical."
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Universal_Hate",
+      "english": "0 -20 -21 92 110 111 112 142 152 153 157 178 105 168 170 171 172 374 376 378 380 397 420 684 721 766 767 772 203 308 265 909 910",
+      "translation": "0 -20 -21 92 110 111 112 142 152 153 157 178 105 168 170 171 172 374 376 378 380 397 420 684 721 766 767 772 203 308 265 909 910",
+      "reviewed": true,
+      "preserveReason": "Universal gift-taste record contains only item IDs, category tokens and lookup identifiers; it has no player-facing prose and must remain byte-identical."
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Robin",
+      "english": "This is for me? Wow, I absolutely love it!!/224 426 636 Book_Woodcutting/Thanks! This is really nice!/-6 -79 424 709 SkillBook_2/Um... why?/16 330/What the...? This is terrible!//Thank you. This might come in handy.//",
+      "translation": "Це мені? Ого, я просто в захваті!!/224 426 636 Book_Woodcutting/Дякую! Дуже мило!/-6 -79 424 709 SkillBook_2/Ем... Навіщо?/16 330/Що за...? Яка гидота!//Дякую. Може, це стане в пригоді.//",
+      "reviewed": true
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Demetrius",
+      "english": "You're giving this to me? This is amazing!/207 232 233 400/Thank you! This is a very interesting specimen./-5 -79 422 107/...What is this?/80 330/This is disgusting.//That was very thoughtful of you./-4/",
+      "translation": "Ти даруєш це мені? Неймовірно!/207 232 233 400/Дякую! Дуже цікавий зразок./-5 -79 422 107/...Що це?/80 330/Яка гидота.//Дуже дбайливо з твого боку./-4/",
+      "reviewed": true
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Maru",
+      "english": "Is that...? Oh wow, @! This is spectacular!/72 197 190 215 222 243 336 337 400 787 910 122/This is a super gift! Thank you!/-260 62 64 66 68 70 334 335 725 726 909 edible_mushroom/Oh... That's for me? I'll just put it over here.../-4 330 414 410 404 724/Yuck! You thought I would like this?/340 342 430 416/Thanks.//",
+      "translation": "Це що...? Ого, @! Неймовірно!/72 197 190 215 222 243 336 337 400 787 910 122/Чудовий подарунок! Дякую!/-260 62 64 66 68 70 334 335 725 726 909 edible_mushroom/О... Це мені? Я просто покладу його ось сюди.../-4 330 414 410 404 724/Фу! І ти гадаєш, що мені це сподобається?/340 342 430 416/Дякую.//",
+      "reviewed": true
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Sebastian",
+      "english": "I really love this. How did you know?/84 227 236 575 305 FrogEgg/Thanks, I like this./267 614 276 Book_Void SkillBook_4/...?/-81 -80/...I hate this./-5 459 195 201 240 330 -26 873/...thanks./-4/",
+      "translation": "Я це обожнюю. Звідки тобі було знати?/84 227 236 575 305 FrogEgg/Дякую, мені подобається./267 614 276 Book_Void SkillBook_4/...?/-81 -80/...Терпіти цього не можу./-5 459 195 201 240 330 -26 873/...Дякую./-4/",
+      "reviewed": true
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Linus",
+      "english": "This is wonderful! You've really made my day special./88 90 234 242 280 Book_Trash/This is a great gift. Thank you!/-5 -6 -79 -81/Hmm... This doesn't really do much for me./-2 330 166/Why would you give this to me? Do you think I like junk just because I live in a tent? That's terrible.//A gift? How nice./774 -4 142/",
+      "translation": "Це чудово! Завдяки тобі цей день став особливим./88 90 234 242 280 Book_Trash/Чудовий подарунок. Дякую!/-5 -6 -79 -81/Хм... Мене це не надто тішить./-2 330 166/Навіщо ти мені це даєш? Гадаєш, якщо я живу в наметі, то люблю сміття? Це жахливо.//Подарунок? Як мило./774 -4 142/",
+      "reviewed": true
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Pierre",
+      "english": "This is my all-time favorite! Thank you!/202 Book_PriceCatalogue/That's very kind of you. I like this./-5 -6 -7 18 22 402 418 259 227/This isn't exactly my favorite.../-2 -81 330/Please, never bring this to me again./167 -4 199 270 229 248/A present? Thanks!//",
+      "translation": "Це моя найулюбленіша річ! Дякую!/202 Book_PriceCatalogue/Дуже люб’язно з твого боку. Мені подобається./-5 -6 -7 18 22 402 418 259 227/Це не зовсім те, що я люблю.../-2 -81 330/Будь ласка, більше ніколи мені цього не принось./167 -4 199 270 229 248/Подарунок? Дякую!//",
+      "reviewed": true
+    },
+    {
+      "target": "Data/NPCGiftTastes",
+      "key": "Caroline",
+      "english": "Oh, @... you're spoiling me! I love it!/213 614 593 907/For me? This is such a thoughtful gift! Thank you!/-7 18 815 402 418 16/Oh... I see. I'll, uh... make sure to put it to good use.../-81 330 300 306 307/Um... I guess I could use it for compost.../80 296/Oh, that's sweet. Thank you.//",
+      "translation": "О, @... Ти мене балуєш! Я в захваті!/213 614 593 907/Для мене? Який турботливий подарунок! Дякую!/-7 18 815 402 418 16/О... Розумію. Я, е-е... неодмінно знайду цьому застосування.../-81 330 300 306 307/Ем... Мабуть, це згодиться для компосту.../80 296/О, як мило. Дякую.//",
+      "reviewed": true
+    }
+  ]
+}

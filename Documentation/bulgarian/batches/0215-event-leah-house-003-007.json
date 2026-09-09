@@ -1,0 +1,35 @@
+{
+  "id": "0215-event-leah-house-003-007",
+  "target": "Data/Events/LeahHouse",
+  "status": "reviewed",
+  "sourceHashes": {
+    "51/f Leah 1000/p Leah": "d2893828a47413c3d73b3956685b94bbfa43fe84dad9441155bbcf63e8ff1cf1",
+    "584059/f Leah 2000/p Leah/n LeahInternet": "942f8008daf17be242580606c9944eeba2fb15d8e78c2a380d9a9c289e325032",
+    "angry": "7e0f6d9a615f6c33fe7e1d02b5f76c1880610830bf8827c4139c272f9968ec92",
+    "internet2": "56fe1ee2ad68200fec99ef5eadf078753d357f842a88780c937dbde03bd260c8",
+    "artShowSuggest": "6e931d31e3d30cf432ffa4986fe28117cd43c5a26a1141466268cb683fdc77de"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "51/f Leah 1000/p Leah": "sadpiano/-1000 -1000/farmer 7 9 0 Leah 13 8 0/skippable/showFrame Leah 20/changeMapTile Front 14 7 1453/viewport 12 8/move farmer 0 -1 1/speak Leah \"Кел... Колко пъти трябва да ти повтарям? Не искам да се връщам в града!$8#$b#Спри да ми звъниш... Не искам повече да те чувам! *щрак*$8\"/playSound openBox/faceDirection Leah 1/changeMapTile Front 14 7 1454/emote Leah 12/pause 1000/move farmer 4 0 1/faceDirection Leah 3/speak Leah \"@...$6\"/pause 300/emote Leah 28/speak Leah \"Предполагам, че ме чу как крещя по телефона?$s\"/faceDirection Leah 2/move farmer 1 0 1/pause 1000/playMusic desolate/speak Leah \"Това беше бившата ми половинка...$s\"/faceDirection Leah 3/emote farmer 16/pause 600/speak Leah \"Май е най-добре да ти разкажа малко за това...$u\"/pause 500/faceDirection Leah 2/pause 500/speak Leah \"Имахме общ апартамент в града.$u#$b#През деня работех каквото намеря, а по цяла нощ се занимавах с художествените си проекти... едва изкарвахме колкото да свързваме двата края.$u#$b#${Той^Тя}$ постоянно ме тормозеше да се върна в университета и да уча бизнес или медицина... нещо, от което се печелят много пари.$a#$b#Предполагам, че идеята беше да спестим за нормален живот. Знаеш... къща в предградията, деца, родителски срещи... такива неща.$u\"/faceDirection Leah 3/speak Leah \"Не бях готова за такъв живот, @... Трябваше да си тръгна. Затова дойдох тук, за да следвам мечтата си да бъда художничка.\"/pause 900/faceDirection Leah 2/speak Leah \"$q 83 null#Това беше ли егоистично от моя страна, @?$s#$r 83 0 event_parents1#Не, беше необходимо.#$r 83 0 event_parents2#Не, а бившата ти половинка явно няма никакъв ум.#$r 83 -20 event_parents3#Не, но щеше да ти е по-добре да останеш в града.#$r 83 -20 event_parents4#Да, малко.#$r 83 -20 event_parents5#Да, но е естествено първо да се погрижиш за себе си.\"/faceDirection Leah 3/fork angry/pause 200/fork LeahInternet internet2/fork LeahArtShowSuggestion artShowSuggest/speak Leah \"Е, благодаря, че ме изслуша. Хубаво е да има с кого да поговориш.\"/pause 1500/globalFade/viewport -1000 -1000/end dialogueWarpOut Leah \"Хей, благодаря, че по-рано ме изслуша толкова търпеливо.\"",
+    "584059/f Leah 2000/p Leah/n LeahInternet": "breezy/-1000 -1000/farmer 7 9 0 Leah 12 10 2/skippable/specificTemporarySprite leahLaptop/showFrame Leah 28/positionOffset Leah 0 12/viewport 11 9/move farmer 0 -1 1/move farmer 4 0 2/showFrame Leah 29/speak Leah \"Хей! Ела да видиш това.\"/pause 500/showFrame Leah 28/move farmer 0 2 2/pause 400/speak Leah \"Купих си лаптоп и създадох онлайн магазин за изкуство... както предложи.\"/pause 800/playSound Pickup_Coin15/showFrame Leah 29/pause 400/speak Leah \"Чу ли това? Означава, че някой току-що е купил нещо от магазина!$h\"/showFrame Leah 28/emote Leah 40/speak Leah \"Хмм... Един „г-н К“ продължава да купува всичките ми скулптури.$7#$b#Предполагам, че е някакъв богаташ, който обожава творбите ми.\"/pause 500/playSound Pickup_Coin15/pause 300/emote Leah 16/speak Leah \"Уау! След тази продажба известно време няма да се тревожа за сметката за ток...$6\"/pause 800/showFrame Leah 29/speak Leah \"Както и да е... Благодаря за идеята, @. Засега се радва на голям успех! Това наистина ще ми осигури средствата, от които се нуждая, за да се занимавам с изкуство на пълен работен ден.$h\"/showFrame Leah 28/speak Leah \"А сега съжалявам, че не ти обръщам внимание... но наистина трябва да коригирам тези CSS таблици със стилове...$7\"/pause 500/playSound Pickup_Coin15/pause 1000/playSound Pickup_Coin15/globalFade/viewport -1000 -1000/end warpOut",
+    "angry": "emote Leah 12/faceDirection Leah 1/speak Leah \"Съжалявам... Не бива да се ядосвам.$s\"/emote Leah 40/speak Leah \"Може би в думите ти има истина... животът ми щеше да бъде много по-лесен, ако бях останала.$u#$b#Може би е по-добре да бъда практична и реалистична... доколкото знам, кариерата ми в изкуството може никога да не потръгне и да прекарам последните си години в мизерия.$s\"/pause 500/faceDirection Leah 3/pause 500/speak Leah \"Е, благодаря, че ме изслуша. Хубаво е да има с кого да поговориш.\"/pause 1500/globalFade/viewport -1000 -1000/end warpOut",
+    "internet2": "pause 50/speak Leah \"И така, спестявам пари за компютър... Знаеш, за да мога да опитам да продавам изкуството си онлайн, както предложи.\"/emote farmer 32/speak Leah \"Хубаво е да има кой да се грижи за теб!\"/pause 1500/globalFade/viewport -1000 -1000/end warpOut",
+    "artShowSuggest": "pause 50/speak Leah \"Както и да е... Поразмислих още малко върху идеята ти за художествена изложба.#$b#Работя върху няколко нови скулптури, които да покажа там... Притеснявам се, но мисълта да представя творбите си пред хора е доста вълнуваща.#$b#Просто се радвам, че подкрепяш превръщането на Stardew Valley във водещ център на изкуствата, @!$h\"/pause 500/end warpOut"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 5,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twenty-three quoted dialogue, question, response and branch fields in Leah House source ordinals 3–7.",
+      "Preserved Kel’s explicit gender branch, every response key, friendship effect, mail flag, CSS reference, scene command and control token while applying locked град Пеликан, Stardew Valley and г-н К terminology.",
+      "Removed two added gender assumptions from player-directed lines and refined the online-shop success statement while maintaining Leah’s artistic voice and each prior-choice continuation."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "43ae54b9148de01b94d70151ac5b95a25303d60eca7cf65bf597ccfe3d553477"
+  }
+}

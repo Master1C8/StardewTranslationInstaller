@@ -1,0 +1,518 @@
+{
+  "id": "088-penny-a",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Characters/Dialogue/Penny": "6f6adb162a07358538052d65f7173cf8d5195342af32f231ce6a8ac7cc23d529"
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Introduction",
+      "english": "Oh... Hello! I'm Penny...",
+      "translation": "הו... שלום! אני פני..."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptBirthdayGift_Loved",
+      "english": "Oh! Is this for me? For... for my birthday?$3#$b#*sniff*... Sorry.$s#$b#I'm... just not used to such kindness...#$b#... I love it, though. It's perfect. Thank you so much.",
+      "translation": "הו! זה בשבילי? ל... ליום ההולדת שלי?$3#$b#*רחרוח*... סליחה.$s#$b#אני... פשוט לא רגילה לטוב לב כזה...#$b#... אבל אני אוהבת את זה. זה מושלם. תודה רבה."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptBirthdayGift_Positive",
+      "english": "For my birthday? That's so nice of you! It's a great gift.$h",
+      "translation": "ליום ההולדת שלי? כמה נחמד מצדכם! זו מתנה נהדרת.$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "For my birthday? That's so kind of you! Let me unwrap it...$h#$b#...What!?$12#$b#...Oh, I see. It's a cruel joke.$s#$b#Silly me, I should've known better...$s",
+      "translation": "ליום ההולדת שלי? כמה אדיב מצדכם! אפתח אותה...$h#$b#...מה!?$12#$b#...הו, הבנתי. זו בדיחה אכזרית.$s#$b#טיפשה שכמותי, הייתי צריכה לדעת...$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "FlowerDance_Accept",
+      "english": "Oh... with me? Yes, of course!$h#$b#...Will you take the lead, though? I'm nervous...$12",
+      "translation": "הו... איתי? כן, כמובן!$h#$b#...אבל אתם תובילו? אני לחוצה...$12"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_35_memory_oneweek",
+      "english": "$y '@, what do you think... should a person be judged by their actions, or by their intentions?_Actions_Hmm... but don't we all make mistakes sometimes?$s_Intentions_Mmhmm... But what if you intend to do good, yet your actions cause harm?$s_Both_That's true... I guess it doesn't have to be one or the other. It might depend on the situation, too.'#$b#I was just wondering what you thought...",
+      "translation": "$y '@, מה דעתכם... האם יש לשפוט אדם לפי מעשיו או לפי כוונותיו?_Actions_הממ... אבל כולנו טועים לפעמים, לא?$s_Intentions_מהממ... אבל מה אם מתכוונים לעשות טוב, ובכל זאת המעשים גורמים נזק?$s_Both_נכון... אני מניחה שלא חייבים לבחור רק באחד מהם. אולי זה גם תלוי במצב.'#$b#רק תהיתי מה דעתכם...",
+      "latinException": {
+        "tokens": [
+          "Actions",
+          "Intentions",
+          "Both"
+        ],
+        "reason": "These ASCII values are exact internal dialogue response, condition, or branching identifiers inside game control syntax and must remain unchanged."
+      }
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Mmm... it's so fragrant. I'm going to love this.",
+      "translation": "מממ... זה ריחני כל כך. אני בטוחה שאאהב את זה."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptGift_Positive_ancient_item",
+      "english": "Wow... this looks really old. I'll have to ask Gunther about it. Thank you!$h",
+      "translation": "וואו... זה נראה עתיק מאוד. אצטרך לשאול את גונתר על זה. תודה!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "AcceptGift_Positive_book_item",
+      "english": "Thank you! I'm almost finished with a book right now, but I'll read this one next!$h",
+      "translation": "תודה! אני כמעט מסיימת ספר עכשיו, אבל מיד אחריו אקרא את הספר הזה!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_34_memory_oneweek",
+      "english": "I've been teaching Jas and Vincent about Dwarvish Archaeology...#$b#Jas is curious about the origins of the Dwarves... but Vincent is mainly interested in dwarvish weapons!$h",
+      "translation": "אני מלמדת את ג'אס ואת וינסנט על ארכאולוגיה גמדית...#$b#ג'אס סקרנית לגבי מוצא הגמדים... אבל וינסנט מתעניין בעיקר בכלי נשק גמדיים!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_34_memory_twoweeks",
+      "english": "Vincent has been asking me about slugs for weeks... so I prepared a whole lesson on them. They're actually pretty interesting!#$e#Whenever I see a banana slug, I feel like it's a sign of good luck.",
+      "translation": "וינסנט שואל אותי על חשופיות כבר שבועות... אז הכנתי שיעור שלם עליהן. הן מעניינות למדי!#$e#בכל פעם שאני רואה חשופית בננה, אני מרגישה שזה סימן למזל טוב."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_34_memory_fourweeks",
+      "english": "I'm teaching the kids about art history this week.#$b#It can be a little dry for the kids, so I'm having them learn by drawing a picture in the predominant style of each century.#$b#It's really been a hit!$h",
+      "translation": "השבוע אני מלמדת את הילדים על תולדות האמנות.#$b#הנושא עלול להיות מעט יבש לילדים, לכן הם לומדים באמצעות ציור בסגנון שהיה נפוץ בכל מאה.#$b#הם ממש נהנים מזה!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_36_memory_oneweek",
+      "english": "Oh, pardon this bandage on my hand...$s#$b#I went over to Maru's the other day and she showed me a new gadget of hers. The darn thing charred my palm!$s",
+      "translation": "הו, סלחו לי על התחבושת שעל ידי...$s#$b#ביקרתי אצל מארו לפני כמה ימים והיא הראתה לי מכשיר חדש שבנתה. הדבר הארור חרך את כף ידי!$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "eventSeen_35_memory_twoweeks",
+      "english": "I've been reading a book about the ocean. It accounts for most of the area of the world, and yet we hardly know anything about it!",
+      "translation": "אני קוראת ספר על האוקיינוס. הוא מכסה את רוב שטחו של העולם, ובכל זאת איננו יודעים עליו כמעט דבר!"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny",
+      "english": "I... I don't know what to say. I'm so happy...$l",
+      "translation": "אני... איני יודעת מה לומר. אני מאושרת כל כך...$l"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny_memory_oneday",
+      "english": "Suddenly, the world looks a lot more beautiful, don't you think?",
+      "translation": "פתאום העולם נראה יפה הרבה יותר, אינכם חושבים?"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny_memory_oneweek",
+      "english": "I'm trying to finish this book, but I keep getting distracted thinking of you.$l",
+      "translation": "אני מנסה לסיים את הספר הזה, אבל המחשבות עליכם שוב ושוב מסיחות את דעתי.$l"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Penny_memory_twoweeks",
+      "english": "I never thought my life would be more exciting than a novel, but it sure feels that way right now!$h",
+      "translation": "מעולם לא חשבתי שחיי יהיו מרגשים יותר מרומן, אבל כרגע זה בהחלט מרגיש כך!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "married_Maru",
+      "english": "That was a beautiful wedding. I know Maru will make you very happy, she's a great person.",
+      "translation": "זו הייתה חתונה יפהפייה. אני יודעת שמארו תשמח אתכם מאוד; היא אדם נהדר."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dating_Maru_memory_oneday",
+      "english": "Hi, @. Maru told me the news... I'm happy for you two!$h",
+      "translation": "שלום, @. מארו סיפרה לי את החדשות... אני שמחה בשביל שניכם!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Entering",
+      "english": "This island is so beautiful!",
+      "translation": "האי הזה יפה כל כך!"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Leaving",
+      "english": "I had a great time.$h",
+      "translation": "נהניתי מאוד.$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "married_Sam",
+      "english": "Congratulations, @. Sam's a lot of fun, I'm sure you'll never have a dull moment!",
+      "translation": "מזל טוב, @. ממש כיף בחברתו של סאם, ואני בטוחה שלעולם לא יהיה לכם רגע משעמם!"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Shore",
+      "english": "I'm a little embarrassed wearing my bathing suit in public.$s#$b#I hope no one's looking...$s",
+      "translation": "אני מעט נבוכה ללבוש בגד ים בציבור.$s#$b#אני מקווה שאיש אינו מסתכל...$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Shore_2",
+      "english": "Somehow, the water here looks so different...#$e#I can hardly believe this is the same ocean I've been gazing at my entire life.",
+      "translation": "איכשהו המים כאן נראים שונים כל כך...#$e#קשה לי להאמין שזה אותו אוקיינוס שהבטתי בו כל חיי."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Towel",
+      "english": "The wind keeps making me lose my page, but it feels really great on the skin.$h",
+      "translation": "בגלל הרוח אני כל הזמן מאבדת את המקום בספר, אבל היא נעימה מאוד על העור.$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Towel_2",
+      "english": "I'm reading a book about a sailor who washes up on a deserted island.#$b#I wonder what I would do in that sort of a situation?",
+      "translation": "אני קוראת ספר על מלח שנפלט אל אי בודד.#$b#מעניין מה הייתי עושה במצב כזה?"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort_Towel_2_Married",
+      "english": "Hey honey, do you mind standing a little to the left?#$b#Thanks, the sun was making it a little bit hard to read!$h",
+      "translation": "היי, יקירים, תוכלו לעמוד מעט שמאלה?#$b#תודה, השמש הקשתה מעט על הקריאה!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Resort",
+      "english": "This sand is so soft and fine. It feels great on my toes!$h",
+      "translation": "החול הזה רך ועדין כל כך. הוא נעים מאוד בין אצבעות הרגליים!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon",
+      "english": "Hi... #$e#Oh, did you want something?",
+      "translation": "שלום... #$e#הו, רציתם משהו?"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "FlowerDance_Accept_Spouse",
+      "english": "I accept!$h#$b#*whisper* Thanks for going through with the formalities, dear.",
+      "translation": "אני מסכימה!$h#$b#*לחישה* תודה שאתם מקיימים איתי את גינוני הטקס, יקירים."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "FlowerDance_Decline",
+      "english": "Oh... No, thanks.$s",
+      "translation": "הו... לא, תודה.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "breakUp",
+      "english": "...$s#$b#I... I see... *sniff* ... W... We can just be friends, then.$s",
+      "translation": "...$s#$b#אני... אני מבינה... *רחרוח*... א... אנחנו יכולים פשוט להישאר חברים.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "pamHouseUpgrade",
+      "english": "What you did for my family is so generous. Thank you!",
+      "translation": "מה שעשיתם למען משפחתי נדיב כל כך. תודה!"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "pamHouseUpgradeAnonymous",
+      "english": "There are some truly wonderful people in the world...",
+      "translation": "יש בעולם אנשים נפלאים באמת..."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "dumped_Girls",
+      "english": "I can't bear to see you...$s",
+      "translation": "איני מסוגלת לראות אתכם...$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "divorced",
+      "english": "...Please, leave me alone.$s",
+      "translation": "...בבקשה, הניחו לי.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "secondChance_Girls",
+      "english": "You've left a permanent scar on my heart, @. Still... I'm ready to speak to you again.$s",
+      "translation": "השארתם צלקת קבועה בלבי, @. ובכל זאת... אני מוכנה לדבר איתכם שוב.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon4",
+      "english": "*sigh*... My mother definitely has a problem with going to the saloon too much.$s#$q 7/8 Mon_old#But it's best not to dwell on bad things, right?#$r 7 50 Mon_7#Right. It's best to be positive!#$r 8 10 Mon_8#I think it's good to be realistic.",
+      "translation": "*אנחה*... לאמא שלי בהחלט יש בעיה עם הביקורים התכופים מדי במסבאה.$s#$q 7/8 Mon_old#אבל עדיף לא להתעכב על דברים רעים, נכון?#$r 7 50 Mon_7#נכון. עדיף להיות חיוביים!#$r 8 10 Mon_8#לדעתי טוב להיות מציאותיים.",
+      "latinException": {
+        "tokens": [
+          "Mon",
+          "old",
+          "Mon",
+          "Mon"
+        ],
+        "reason": "These ASCII values are exact internal dialogue response, condition, or branching identifiers inside game control syntax and must remain unchanged."
+      }
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon_old",
+      "english": "#$p 7#But if I keep trying I think I can get her to change.|I guess it makes sense. There's not much I can do to change it, anyway.",
+      "translation": "#$p 7#אבל אם אמשיך לנסות, לדעתי אצליח לגרום לה להשתנות.|אני מניחה שזה הגיוני. ממילא אין הרבה שאוכל לעשות כדי לשנות את המצב."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon_7",
+      "english": "That's how I feel. I'm just going to focus on making the future better.",
+      "translation": "כך אני מרגישה. פשוט אתמקד בשיפור העתיד."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon_8",
+      "english": "Maybe you're right. It's better to cope with reality.$u",
+      "translation": "אולי אתם צודקים. עדיף להתמודד עם המציאות.$u"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Mon8",
+      "english": "I'm eager to move out. It's such a burden to be worrying about Mom all the time.#$e#I want her to be happy, but I can't stay here forever... you know?$s",
+      "translation": "אני כבר משתוקקת לעזוב את הבית. הדאגה המתמדת לאמא מכבידה כל כך.#$e#אני רוצה שהיא תהיה מאושרת, אבל איני יכולה להישאר כאן לנצח... אתם מבינים?$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Tue",
+      "english": "I'm tutoring Vincent and Jas today... They're a handful, but it's nice to make a difference in someone's life.",
+      "translation": "היום אני מלמדת את וינסנט ואת ג'אס... הם דורשים הרבה תשומת לב, אבל נעים לחולל שינוי בחייו של אדם."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Tue4",
+      "english": "$d bus#Maybe now that my mother has her bus driving job back, I can start saving more money. Things are looking a little brighter.|I'm trying to save money from my tutoring job, but it's hard with my mother out of work.$s",
+      "translation": "$d bus#אולי עכשיו, כשאמא שלי חזרה לעבוד כנהגת אוטובוס, אוכל להתחיל לחסוך יותר כסף. המצב נראה מעט בהיר יותר.|אני מנסה לחסוך כסף מעבודתי כמורה פרטית, אבל קשה כשאמא שלי מובטלת.$s",
+      "latinException": {
+        "tokens": [
+          "bus"
+        ],
+        "reason": "These ASCII values are exact internal dialogue response, condition, or branching identifiers inside game control syntax and must remain unchanged."
+      }
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Tue10",
+      "english": "Um, @? A farm seems like a good place for children, don't you think?$l#$e#It was just a thought I had.$l",
+      "translation": "אממ, @? חווה נראית כמו מקום טוב לילדים, אינכם חושבים?$l#$e#זו הייתה רק מחשבה שעלתה בי.$l"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Wed",
+      "english": "We don't have a school here but I'm doing my best to give Vincent and Jas a proper education.#$e#Every child deserves a chance to be successful.#$e#Jas is very good at math and reading. Vincent is good at... well, he has an active imagination!",
+      "translation": "אין כאן בית ספר, אבל אני עושה כמיטב יכולתי להעניק לווינסנט ולג'אס חינוך ראוי.#$e#לכל ילד מגיעה הזדמנות להצליח.#$e#ג'אס טובה מאוד בחשבון ובקריאה. וינסנט טוב ב... טוב, יש לו דמיון פעיל!"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Wed2",
+      "english": "You know what? I should take the children on a field trip some time. Maybe to the forest.#$e#A guest speaker would be nice... maybe someone familiar with nature?#$e#Sorry, I'm just thinking out loud.",
+      "translation": "יודעים מה? כדאי שאקח את הילדים לטיול לימודי מתישהו. אולי ליער.#$e#יהיה נחמד להזמין מרצה אורח... אולי מישהו שמכיר היטב את הטבע?#$e#סליחה, אני רק חושבת בקול."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "GreenRain",
+      "english": "Are you alright? We're all wondering what's going on...$3",
+      "translation": "אתם בסדר? כולנו תוהים מה קורה...$3"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "GreenRain_2",
+      "english": "This strange weather is a good opportunity to get the kids interested in nature!$h",
+      "translation": "מזג האוויר המוזר הזה הוא הזדמנות טובה לעורר בילדים עניין בטבע!$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Wed4",
+      "english": "I've lived in Pelican Town my whole life. Can you believe that?#$e#I guess there's a lot out there I'll never experience.",
+      "translation": "חייתי בעיירת פליקן כל חיי. אתם מאמינים?#$e#אני מניחה שיש הרבה דברים שם בחוץ שלעולם לא אחווה."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Thu",
+      "english": "We're very lucky to have a library in such a small town.#$e#When you're lost in a book, it's easy to forget the realities of your life.$u#$e#...Maybe that's why I like reading so much.$s#$e#...Sorry. I got carried away there.",
+      "translation": "יש לנו מזל רב שיש ספרייה בעיירה קטנה כל כך.#$e#כששוקעים בספר, קל לשכוח את מציאות החיים.$u#$e#...אולי לכן אני אוהבת לקרוא כל כך.$s#$e#...סליחה. קצת נסחפתי."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Thu6",
+      "english": "I wish I could keep a garden, but our yard is such a mess.$u#$e#Maybe I'll live in a place where I can have a garden someday.#$e#Maybe I'll live on a farm! *giggle*$h",
+      "translation": "הלוואי שיכולתי לטפח גינה, אבל החצר שלנו מבולגנת כל כך.$u#$e#אולי יום אחד אגור במקום שבו אוכל לגדל גינה.#$e#אולי אגור בחווה! *צחקוק*$h"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Fri",
+      "english": "If you dig in the dirt you can find some interesting things.#$e#One time I found a really old piece of pottery. I brought it to Gunther and he said it was over a thousand years old.",
+      "translation": "אם חופרים באדמה, אפשר למצוא כמה דברים מעניינים.#$e#פעם מצאתי חתיכת חרס עתיקה מאוד. הבאתי אותה לגונתר והוא אמר שהיא בת יותר מאלף שנה."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Fri8",
+      "english": "I shouldn't complain so much about chores... some people in the world are really struggling, and here I am complaining about doing dishes...$s",
+      "translation": "לא כדאי שאתלונן כל כך על מטלות הבית... יש אנשים בעולם שנאבקים באמת, והנה אני מתלוננת על שטיפת כלים...$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Fri4",
+      "english": "Dishes, dishes, dishes. Ugh... If my mother wasn't always nursing a headache from her late nights at the saloon, maybe she could help around the house a little.$s",
+      "translation": "כלים, כלים, כלים. אוף... אילו אמא שלי לא הייתה תמיד סובלת מכאב ראש אחרי לילות מאוחרים במסבאה, אולי היא הייתה יכולה לעזור מעט בבית.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sat",
+      "english": "This is such a small town. You can't avoid meeting everyone.#$e#I wonder what it's like to live in the city?",
+      "translation": "זו עיירה קטנה כל כך. אי אפשר להימנע מלפגוש את כולם.#$e#מעניין איך זה לגור בעיר?"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sat2",
+      "english": "$d Joja#Things changed a lot after the JojaMart went up. It's been really bad for Pierre's shop. Mom loves JojaMart, though. The prices are cheap, so she can afford a lot more there than she ever could at Pierre's.|Mom's been complaining ever since JojaMart closed down. I think it's good for her, though. Maybe she'll drink less Joja Cola now.",
+      "translation": "$d Joja#דברים רבים השתנו אחרי שג'וג'ה-מארט נפתח. המצב נעשה רע מאוד לעסק של פייר. אבל אמא מתה על ג'וג'ה-מארט. המחירים נמוכים, לכן היא יכולה לקנות שם הרבה יותר מכפי שיכלה אי פעם אצל פייר.|אמא מתלוננת מאז שג'וג'ה-מארט נסגר. אבל לדעתי זה טוב בשבילה. אולי עכשיו היא תשתה פחות ג'וג'ה קולה.",
+      "latinException": {
+        "tokens": [
+          "Joja"
+        ],
+        "reason": "These ASCII values are exact internal dialogue response, condition, or branching identifiers inside game control syntax and must remain unchanged."
+      }
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sun",
+      "english": "Hello. Ummm...$u#$b#The weather's interesting today, don't you think?#$e#Sorry...$u",
+      "translation": "שלום. אממ...$u#$b#מזג האוויר מעניין היום, אינכם חושבים?#$e#סליחה...$u"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "Sun4",
+      "english": "I've been trying to keep our place clean, but it always gets messy again.$s#$e#It's hard to run a household all by yourself.$u",
+      "translation": "אני מנסה לשמור על הבית שלנו נקי, אבל הוא תמיד מתבלגן שוב.$s#$e#קשה לנהל משק בית לגמרי לבד.$u"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids1",
+      "english": "Oh no?$l#$b#Well, I guess that makes sense... you're busy with other things right now.",
+      "translation": "הו, לא?$l#$b#טוב, אני מניחה שזה הגיוני... אתם עסוקים כרגע בדברים אחרים."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids2",
+      "english": "... Me too. I'm glad you feel that way.$7",
+      "translation": "... גם אני. אני שמחה שאתם מרגישים כך.$7"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids3",
+      "english": "Yes... the urge to care for something innocent and helpless. It makes sense that we'd feel that.",
+      "translation": "כן... הדחף לטפל בדבר תמים וחסר ישע. הגיוני שנרגיש כך."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids4",
+      "english": "Oh, really?$s#$b# I think you'd make a good parent.$7",
+      "translation": "הו, באמת?$s#$b# לדעתי יש בכם תכונות של הורים טובים.$7"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids5",
+      "english": "hmm...$s#$b#If everyone thought like that, humans would die out.$s",
+      "translation": "הממ...$s#$b#אילו כולם חשבו כך, האנושות הייתה נכחדת.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_kids6",
+      "english": "Oh...$s#$b#That's kind of sad... but I guess I can understand your point.$s",
+      "translation": "הו...$s#$b#זה מעט עצוב... אבל אני מניחה שאני מבינה את עמדתכם.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_yes",
+      "english": "Great!$h#$b#Let me just call the children over.",
+      "translation": "נהדר!$h#$b#רק אקרא לילדים לבוא."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_speaker_no",
+      "english": "Really?... Uh... Well, alright. I guess I'll see you later then.%fork$s",
+      "translation": "באמת?... אה... טוב, בסדר. אני מניחה שנתראה אחר כך.%fork$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_mail1",
+      "english": "Thank you...$l#$b#I just wish George wasn't so upset... I was only trying to help.$s",
+      "translation": "תודה...$l#$b#הלוואי שג'ורג' לא היה נסער כל כך... רק ניסיתי לעזור.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_mail2",
+      "english": "Oh... I guess you're right.$l#$b#I'm sorry, Mr. Mullner. It was rude, what I did.$s",
+      "translation": "הו... אני מניחה שאתם צודקים.$l#$b#אני מצטערת, מר מאלנר. מה שעשיתי היה גס רוח.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_mail3",
+      "english": "I see.",
+      "translation": "אני מבינה."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old1",
+      "english": "I guess you're right... why stress out about something you can't change?$u",
+      "translation": "אני מניחה שאתם צודקים... למה להילחץ ממשהו שאי אפשר לשנות?$u"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old2",
+      "english": "You're right, we shouldn't ignore the reality of aging.$u#$b#I guess the sooner we come to terms with our mortality, the more time we can spend really living in the here-and-now.$u",
+      "translation": "אתם צודקים, אסור לנו להתעלם ממציאות ההזדקנות.$u#$b#אני מניחה שככל שנשלים מוקדם יותר עם היותנו בני תמותה, כך נוכל להקדיש זמן רב יותר לחיים של ממש כאן ועכשיו.$u"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old3",
+      "english": "That's nice of you to say... I totally agree with you.#$b#We should treat our elders with the same respect we hope to receive ourselves some day.",
+      "translation": "נחמד מצדכם לומר זאת... אני מסכימה איתכם לחלוטין.#$b#עלינו להתייחס לקשישים באותו כבוד שנקווה לקבל בעצמנו יום אחד."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_old4",
+      "english": "That's a horrible thing to say. Life is a precious thing to waste like that!$a",
+      "translation": "זה דבר נורא לומר. החיים יקרים מכדי לבזבז אותם כך!$a"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_cook1",
+      "english": "You really mean it? Thank you! ... it's such a relief to hear that.$h#$b#I've been working so hard on this recipe, and I'm really proud of it.",
+      "translation": "אתם באמת מתכוונים לזה? תודה! ... איזו הקלה לשמוע זאת.$h#$b#עבדתי קשה כל כך על המתכון הזה, ואני ממש גאה בו."
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_cook2",
+      "english": "Oh... Uh, sure.$s",
+      "translation": "הו... אה, בטח.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_cook3",
+      "english": "Oh...I'm sorry.$s",
+      "translation": "הו... אני מצטערת.$s"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_pool1",
+      "english": "That's right...$8",
+      "translation": "נכון...$8"
+    },
+    {
+      "target": "Characters/Dialogue/Penny",
+      "key": "event_pool2",
+      "english": "Really? I thought you'd have noticed by now...$8",
+      "translation": "באמת? חשבתי שכבר שמתם לב...$8"
+    }
+  ]
+}

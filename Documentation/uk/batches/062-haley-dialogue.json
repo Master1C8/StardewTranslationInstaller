@@ -1,0 +1,915 @@
+{
+  "id": "062-haley-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Haley dialogue entry. Fashion-conscious, initially dismissive and later warm voice, photography and family context, seasonal dialogue, explicit player-gender variants, canonical glossary terms, randomized branches, response identifiers, placeholders, emotes, and control tokens were checked against English. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "7c5915f3725ad0d111d6eb57dd811a3fc3c1814b754c86b72bbb6228c5dd17d4",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 13
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Introduction",
+      "english": "Oh... you're that new farmer boy, aren't you?^Oh... You're that new farmer girl, or whatever. Aren't you?#$e#Huh? Oh... I'm Haley.#$e#Hmm... If it weren't for those horrendous clothes you might actually be cute.^Hmm... If it weren't for those horrendous clothes you might actually be pretty... Actually, never mind.$h",
+      "translation": "О... То ти той новий хлопець із ферми?^О... То ти та нова дівчина з ферми чи як там? Так?#$e#Га? О... Я Гейлі.#$e#Гм... Якби не цей жахливий одяг, ти міг би бути навіть симпатичним.^Гм... Якби не цей жахливий одяг, ти могла б бути навіть гарною... Хоча ні, забудь.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "FlowerDance_Accept",
+      "english": "Oh... you want to dance with *me*, do you?$13^Oh? Sure! I'll dance with you!#$b#Hehe... of course. I'd love to be your partner.$h^We'll have a great time!$h#$e#Hmm... I admire your confidence. Most guys are too shy to ask me.^You look so pretty today!$h",
+      "translation": "О... Ти хочеш танцювати саме зі *мною*?$13^О? Звісно! Я потанцюю з тобою!#$b#Хе-хе... Авжеж. Я з радістю стану твоєю партнеркою.$h^Ми чудово проведемо час!$h#$e#Гм... Захоплююся твоєю впевненістю. Більшість хлопців соромляться мене запросити.^Ти сьогодні така гарна!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "AcceptBirthdayGift_Loved",
+      "english": "*gasp*... You got this for me? Wow, @, this is the best birthday gift ever!$h",
+      "translation": "*зойк*... Це мені? Ого, @, це найкращий подарунок на день народження у світі!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "AcceptBirthdayGift_Liked",
+      "english": "Awwwww, you got me a birthday gift? Well, I really like it!$h",
+      "translation": "О-о-о, це мені подарунок на день народження? Що ж, він мені дуже подобається!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "Gross! You got me this on my birthday? What's wrong with you!$a",
+      "translation": "Фу! І це мені на день народження? Що з тобою не так?!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "For me? Ooooh... I can't decide if I should drink it, or use it as shampoo...",
+      "translation": "Мені? О-о-о... Не можу вирішити: випити його чи використати як шампунь...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "AcceptGift_(O)88",
+      "english": "$c 0.8#Is that... coconut? I love this!$h#Mmm.... coconuts remind me of warm, sunny days at the beach. When I hold one, I feel like I'm there... even when it's raining.",
+      "translation": "$c 0.8#Це що... кокос? Обожнюю!$h#М-м-м... Кокоси нагадують мені теплі сонячні дні на пляжі. Коли тримаю кокос у руках, то ніби опиняюся там... Навіть якщо надворі дощить.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "AcceptGift_(O)421",
+      "english": "Wow, they're beautiful! These are my absolute favorite.$h",
+      "translation": "Ого, вони прекрасні! Це мої найулюбленіші квіти.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "GreenRain",
+      "english": "I don't think I've ever set foot in this place. It's actually kind of cozy!$h#$e#Oh, I'm not worried about the rain. I'm sure it'll pass.",
+      "translation": "Здається, я ще ніколи тут не була. А тут, власне, доволі затишно!$h#$e#О, дощ мене не турбує. Упевнена, він скоро мине.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "GreenRain_2",
+      "english": "Wake me up when there's a pink rain... Or better yet, a pink cake rain!",
+      "translation": "Розбуди мене, коли піде рожевий дощ... А ще краще — дощ із рожевих тортів!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "eventSeen_14",
+      "english": "It was fun taking pictures, but I had to shower for two hours to get the mud out of my hair!$h",
+      "translation": "Фотографувати було весело, але потім довелося дві години стояти під душем, щоб вимити бруд із волосся!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "eventSeen_13_memory_oneweek",
+      "english": "%Haley greets you with a smile. You notice that she's wearing her Great-Grandma's bracelet.",
+      "translation": "%Haley вітає тебе усмішкою. Ти помічаєш, що на ній браслет її прабабусі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "eventSeen_12_memory_oneweek",
+      "english": "Wow, looks like someone's read the latest issue of 'Super Fashion Girl'... muddy boots are totally in right now!$h",
+      "translation": "Ого, схоже, хтось прочитав останній випуск «Супермодниці»... Брудні чоботи зараз страшенно модні!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "eventSeen_12_memory_twoweeks",
+      "english": "My parents sent another postcard... I guess they're in the middle of a cruise down the Gem Sea Coast.#$e#They said me and Emily could join them at any point, but let's be honest... who wants to go on vacation with their parents?",
+      "translation": "Батьки надіслали ще одну листівку... Здається, вони саме пливуть у круїз узбережжям Самоцвітного моря.#$e#Вони написали, що ми з Емілі можемо будь-коли приєднатися, але відверто... Хто захоче відпочивати з батьками?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "eventSeen_11_memory_oneweek",
+      "english": "The other day, Emily baked something called a 'squirrel loaf'...$u#$e#How'd it taste? Um... well, if my tail was a little bushier I probably would've loved it.$h",
+      "translation": "Нещодавно Емілі спекла щось під назвою «білячий хліб»...$u#$e#Яке воно на смак? Ем... Що ж, якби мій хвіст був трохи пухнастішим, мені б, мабуть, дуже сподобалося.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "eventSeen_11_memory_twoweeks",
+      "english": "Did you see last night's episode of 'Tears'? *sob*... I can't believe Kyle and Amy broke up...$s",
+      "translation": "Тобі вдалося подивитися вчорашню серію «Сліз»? *схлип*... Не можу повірити, що Кайл і Емі розійшлися...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "cropMatured_421",
+      "english": "My name means 'field of hay', but I like to imagine it as a meadow full of sunflowers...",
+      "translation": "Моє ім’я означає «сінне поле», але мені подобається уявляти луку, повну соняшників...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "dating_Haley",
+      "english": "I was waiting for you to ask me that.$l",
+      "translation": "Я чекала, коли ти нарешті мене про це запитаєш.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "dating_Haley_memory_oneday",
+      "english": "You look really handsome today.$l^You look really pretty today.$l",
+      "translation": "Ти сьогодні такий красень.$l^Ти сьогодні така гарна.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "married_Emily",
+      "english": "Well, I guess this makes you my 'brother-in-law', huh? That's funny to think about.^Hey, I guess we're kind of like sisters now!$h",
+      "translation": "Що ж, тепер ти мій «шваґро», так? Кумедно про це думати.^Гей, тепер ми наче сестри!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "divorced_Emily",
+      "english": "Things didn't work out between you and Emily, huh? Well... It happens.#$e#It *is* kind of awkward that you're both still living in this tiny town, though.",
+      "translation": "У вас із Емілі не склалося, так? Що ж... Таке буває.#$e#Але те, що ви досі живете в цьому крихітному містечку, *справді* трохи ніяково.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "dating_Haley_memory_oneyear",
+      "english": "So, what's the idea here... am I just going to be your 'girlfriend' forever...?$7",
+      "translation": "То який тут задум... Я назавжди залишуся лише твоєю «дівчиною»...?$7",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "married_Emily_memory_oneweek",
+      "english": "Is Emily settling into the farm life?#$e#You know, I was starting to wonder if Emily would ever get married...",
+      "translation": "Емілі вже звикає до життя на фермі?#$e#Знаєш, я вже починала думати, що Емілі ніколи не вийде заміж...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Entering",
+      "english": "I saw a dolphin on the way in!",
+      "translation": "Дорогою сюди я бачила дельфіна!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Leaving",
+      "english": "There's something about the sun that just makes me feel good.",
+      "translation": "У сонці є щось таке, від чого мені стає добре.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Shore",
+      "english": "It's strange the places life can take you... who knows what other lands are out there?",
+      "translation": "Дивно, куди може завести життя... Хтозна, які ще землі існують у світі?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Shore_2",
+      "english": "Wow, look at how the sunlight sparkles on the horizon!$h#$b#I bet the sunsets here would make for an amazing photo.#$e#I have to remember to bring my camera next time.",
+      "translation": "Ого, поглянь, як сонячне світло виблискує на обрії!$h#$b#Закладаюся, тутешні заходи сонця дали б дивовижні фотографії.#$e#Треба не забути наступного разу взяти камеру.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Towel",
+      "english": "Getting the perfect tan is an art form...#$e#It's kind of like toasting a marshmallow... you have to rotate the body just right.$h",
+      "translation": "Ідеальна засмага — це справжнє мистецтво...#$e#Трохи схоже на підсмажування маршмелоу... Треба правильно повертати тіло.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Towel_2",
+      "english": "Laying out on a tropical beach.#$b#*sigh* I think I've finally found my place in the universe.#$e#But I guess Stardew Valley's not such a bad place either!$h",
+      "translation": "Лежу на тропічному пляжі.#$b#*зітхає* Здається, я нарешті знайшла своє місце у всесвіті.#$e#Але долина Стардью, мабуть, теж не така вже й погана!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Towel_3",
+      "english": "Emily's friend had this swimsuit shipped to me from all the way out in Zuzu City.#$e#City fashion is on a whole different level, isn't it?$h",
+      "translation": "Подруга Емілі надіслала мені цей купальник аж із міста Зузу.#$e#Міська мода — це зовсім інший рівень, еге ж?$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Chair",
+      "english": "I painted my toenails blue to match the sea. What do you think? *wiggle* *wiggle*$h",
+      "translation": "Я нафарбувала нігті на ногах синім під колір моря. Як тобі? *ворушить пальцями* *ворушить пальцями*$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort_Bar",
+      "english": "Gus made a cute, fruity drink just for me!$h",
+      "translation": "Ґас приготував милий фруктовий напій спеціально для мене!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Resort",
+      "english": "This is such a perfect beach. I'd stay here forever if I could!",
+      "translation": "Який ідеальний пляж. Якби могла, залишилася б тут назавжди!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "FlowerDance_Accept_Spouse",
+      "english": "*sigh*... My days of being Flower Queen are over... so it's a bittersweet dance for me.$s#$b#But, yes...",
+      "translation": "*зітхає*... Мої дні в ролі Королеви квітів скінчилися... Тож цей танець для мене і солодкий, і гіркий.$s#$b#Але так...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "FlowerDance_Decline",
+      "english": "Ew... No.",
+      "translation": "Фу... Ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "divorced",
+      "english": "I'll be fine on my own...$7#$e#Thanks for the memories.$7#$e#Why are you still clinging to me? Go live your own life.$7",
+      "translation": "Я й сама дам собі раду...$7#$e#Дякую за спогади.$7#$e#Чому ти досі за мене чіпляєшся? Живи власним життям.$7",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "breakUp",
+      "english": "Agh!$8#$b#Oh... hmph. Beat me to it, huh? Alright...",
+      "translation": "А-а!$8#$b#О... Пхе. Отже, мене випередили? Гаразд...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "dumped_Girls",
+      "english": "I've got nothing to say to you!$a",
+      "translation": "Мені нічого тобі сказати!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "secondChance_Girls",
+      "english": "Alright, alright... I'm done giving you the cold shoulder. Just promise me you'll never, ever lie to me again.$s",
+      "translation": "Гаразд, гаразд... Годі вже вдавати, ніби тебе не існує. Просто пообіцяй, що більше ніколи-ніколи мені не брехатимеш.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Mon",
+      "english": "This town is so small. It sucks.$u#$e#I have to drive, like, twenty miles to buy any decent clothes.$s#$e#That's why I usually just order online.#$e#What?",
+      "translation": "Це містечко таке маленьке. Жах.$u#$e#Щоб купити хоч якийсь пристойний одяг, мені доводиться їхати десь двадцять миль.$s#$e#Тому зазвичай я просто замовляю все в мережі.#$e#Що?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Tue",
+      "english": "Nice shoes.^Nice makeup.#$b#Are those made out of plastic?^Or wait... Are you even wearing any?#$e#I'm bored.",
+      "translation": "Гарне взуття.^Гарний макіяж.#$b#Воно з пластику?^Чи стривай... На тобі взагалі є макіяж?#$e#Мені нудно.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Wed",
+      "english": "The only thing I like about this town is the beach.$u",
+      "translation": "Єдине, що мені подобається в цьому містечку, — пляж.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Thu",
+      "english": "#$1 HaleyClothes#I've decided I am going to organize my clothes today. I'll have to throw out all of last year's styles to make room for the new ones!#$e#*sigh* I could really go for a cupcake right now.#$e#Do you need something?",
+      "translation": "#$1 HaleyClothes#Я вирішила сьогодні впорядкувати одяг. Доведеться викинути всі торішні фасони, щоб звільнити місце для нових!#$e#*зітхає* Як же мені зараз хочеться кексика.#$e#Тобі щось треба?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Fri",
+      "english": "%Haley is ignoring you.",
+      "translation": "%Haley не звертає на тебе уваги.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Fri2",
+      "english": "Don't you get tired of running around on that farm all day, or whatever it is you do?#$e#I couldn't stand getting all dirty like that.#$e#You probably get a nice tan, though.",
+      "translation": "Тобі не набридає цілий день бігати фермою чи що там ти робиш?#$e#Я б не витримала весь час так бруднитися.#$e#Хоча засмага в тебе, мабуть, гарна.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Sat",
+      "english": "I'm feeling an urge to go shopping. Ugh! I wish there was a mall here.",
+      "translation": "Мені страшенно захотілося на шопінг. Ох! От би тут був торговий центр.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Sun",
+      "english": "My sister is so weird. Sometimes I wonder if we're actually related.$u",
+      "translation": "Моя сестра така дивна. Іноді я сумніваюся, що ми справді родички.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Wed8",
+      "english": "There are only two things I like about this town.#$b#One of them is the beach.#$e#The other one is a secret! *giggle*$h",
+      "translation": "У цьому містечку мені подобаються лише дві речі.#$b#Одна з них — пляж.#$e#А друга — таємниця! *хихоче*$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Tue2",
+      "english": "I wonder if any nice shells washed up on the beach this morning?#$e#This isn't the best time of year for shells, though.",
+      "translation": "Цікаво, чи винесло сьогодні вранці на пляж якісь гарні мушлі?#$e#Хоча зараз не найкраща пора для мушель.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Wed4",
+      "english": "I'm glad that the flowers are starting to bloom.#$e#Those pink ones smell so good.$h",
+      "translation": "Я рада, що квіти починають розквітати.#$e#Ті рожеві так гарно пахнуть.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Fri6",
+      "english": "I need to find some kind of hobby other than shopping.#$e#I've decided I want to expand my horizons.#$e#Maybe I should learn to play the mini-harp?",
+      "translation": "Мені треба знайти якесь захоплення, крім шопінгу.#$e#Я вирішила розширити свої обрії.#$e#Може, навчитися грати на мініарфі?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Mon6",
+      "english": "I used to complain about this town being so small, but I've grown to like it.#$e#If it was much bigger it wouldn't feel like a community.",
+      "translation": "Раніше я скаржилася, що це містечко таке маленьке, але тепер воно мені подобається.#$e#Якби воно було значно більшим, то вже не здавалося б справжньою громадою.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Thu6",
+      "english": "I cooked dinner last night. It actually turned out okay!#$e#But I did make a huge mess in the kitchen...",
+      "translation": "Учора я приготувала вечерю. І вона навіть вийшла непоганою!#$e#Щоправда, на кухні я влаштувала страшенний безлад...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Sun6",
+      "english": "I'm thinking about donating a bunch of clothes... I must have a hundred pairs of shoes.",
+      "translation": "Я думаю віддати купу одягу... У мене, мабуть, із сотню пар взуття.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Sat8",
+      "english": "#$1 haleySeagull#Yesterday I found a seagull with her wing caught in a net. I set her free, of course. She looked so helpless, the poor thing.$k$s#$e#You know, I should probably start exercising more... this youthful metabolism won't last forever.",
+      "translation": "#$1 haleySeagull#Учора я знайшла чайку, крило якої заплуталося в сітці. Звісно, я її звільнила. Бідолашна була така безпорадна.$k$s#$e#Знаєш, мабуть, мені варто більше тренуватися... Швидкий обмін речовин у молодості не триватиме вічно.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Fri10",
+      "english": "@, can we go on a camping trip someday?#$e#The most exotic place I've been is Zuzu city.",
+      "translation": "@, може, колись поїдемо в похід із наметами?#$e#Найекзотичніше місце, де я була, — місто Зузу.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_clean1",
+      "english": "*sigh*...$u",
+      "translation": "*зітхає*...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_clean2",
+      "english": "NO!! I'm not going to do it!$a#$b#You guys are both stupid!%fork$a",
+      "translation": "НІ!! Я не буду цього робити!$a#$b#Ви обоє дурні!%fork$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_clean3",
+      "english": "She should take the 'high road'? What's that supposed to mean?$u#$b#You think I'm being a baby, huh?%fork$a",
+      "translation": "Вона має «вчинити шляхетно»? Що це взагалі означає?$u#$b#Думаєш, я поводжуся як дитина, так?%fork$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_jar1",
+      "english": "Great, then you shouldn't have any problem opening this jar for me!$h",
+      "translation": "Чудово, тоді відкрити для мене цю банку тобі буде зовсім не важко!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_jar2",
+      "english": "Oh... you aren't? Hmmm...$s#$b#Well could you try opening this jar for me anyways?",
+      "translation": "О... Справді ні? Гм-м...$s#$b#Що ж, тоді можеш усе одно спробувати відкрити для мене цю банку?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_darkroom1",
+      "english": "Aw, thanks!$h",
+      "translation": "О, дякую!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_darkroom2",
+      "english": "Oh! I thought you knew.#$b#This room's for developing photos.",
+      "translation": "О! Я думала, ти знаєш.#$b#Ця кімната призначена для проявлення фотографій.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_darkroom3",
+      "english": "Is that so...?$s",
+      "translation": "Ось як...?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_darkroom4",
+      "english": "Aw, thanks!$h",
+      "translation": "О, дякую!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_darkroom5",
+      "english": "Oh! I thought you knew.#$b#This room's for developing photos.",
+      "translation": "О! Я думала, ти знаєш.#$b#Ця кімната призначена для проявлення фотографій.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_darkroom6",
+      "english": "Is that so...?$s",
+      "translation": "Ось як...?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_beach1",
+      "english": "No, you won't! This bracelet was passed down to me by my great-grandmother!$a",
+      "translation": "Ні, не повернеться! Цей браслет дістався мені від прабабусі!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_beach2",
+      "english": "*sigh*$s#$b#...Maybe it'll wash up on another shore. I can't bear to think of it at the bottom of the ocean.$s",
+      "translation": "*зітхає*$s#$b#...Може, його винесе на інший берег. Я не можу думати, що він лежить на дні океану.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_room1",
+      "english": "Him? No!#$b#...Well, I guess I used to like Alex. But not anymore! He's immature.",
+      "translation": "Він? Ні!#$b#...Що ж, раніше мені, мабуть, подобався Алекс. Але вже ні! Він незрілий.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_room2",
+      "english": "What? That sounds fun, but I wouldn't want to leave Stardew Valley right now...",
+      "translation": "Що? Звучить весело, але зараз я не хотіла б залишати долину Стардью...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "Event_room3",
+      "english": "Huh? What's an android?",
+      "translation": "Га? Що таке андроїд?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Mon",
+      "english": "I'm going to get such a nice tan this summer.",
+      "translation": "Цього літа я так гарно засмагну.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Tue",
+      "english": "Ew, you're all dirty.",
+      "translation": "Фу, скільки на тобі бруду.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Wed",
+      "english": "Um... Yes?#$e#I didn't hear you, I'm thinking about something else.",
+      "translation": "Ем... Так?#$e#Я не почула, бо думала про щось інше.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_10",
+      "english": "Do you have baby bunnies on your farm? Bunnies are SO cute! <",
+      "translation": "У тебе на фермі є маленькі кроленята? Кроленята ТАКІ милі! <",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Thu",
+      "english": "If you stay in the sun a lot it'll make your hair lighter.#$e#It's a good thing to know!",
+      "translation": "Якщо багато бувати на сонці, волосся стане світлішим.#$e#Корисно знати!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Fri",
+      "english": "I wonder what Alex is doing today...#$e#Huh? I didn't notice you standing there.",
+      "translation": "Цікаво, що сьогодні робить Алекс...#$e#Га? Я не помітила тебе поруч.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Sat",
+      "english": "Farming sounds so boring...#$q 42/43 summer_Sat_old#What do you even do all day?#$r 42 10 summer_Sat_12#Care for plants#$r 42 10 summer_Sat_12#Explore the caves#$r 43 -10 summer_Sat_13#Snoop around in your room#$r 42 10 summer_Sat_12#Dig for treasure",
+      "translation": "Фермерство звучить так нудно...#$q 42/43 summer_Sat_old#Що ти взагалі робиш цілими днями?#$r 42 10 summer_Sat_12#Доглядаю рослини#$r 42 10 summer_Sat_12#Досліджую печери#$r 43 -10 summer_Sat_13#Нишпорю у твоїй кімнаті#$r 42 10 summer_Sat_12#Шукаю скарби",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Sat_old",
+      "english": "#$p 43#Hey, you better not be snooping around in my room anymore!$a|But I guess it could get you in pretty good shape.",
+      "translation": "#$p 43#Гей, тобі краще більше не нишпорити в моїй кімнаті!$a|Але, мабуть, так можна набрати чудову форму.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Sat_12",
+      "english": "Hmm... sounds like a lot of work.",
+      "translation": "Гм... Звучить як купа роботи.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Sat_13",
+      "english": "What? You'd better not be doing that!$a",
+      "translation": "Що? Тобі краще такого не робити!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Sun",
+      "english": "Emily usually cooks dinner... But she makes weird stuff like quinoa.",
+      "translation": "Зазвичай вечерю готує Емілі... Але вона робить дивні страви, наприклад із кіноа.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Tue2",
+      "english": "Do you wear those clothes every day?",
+      "translation": "Ти щодня носиш цей одяг?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Tue4",
+      "english": "$p 47#Hey I found this new tool to open jars with. So you won't need to help me anymore.$h|There's not a cloud in the sky today.$h",
+      "translation": "$p 47#Гей, я знайшла новий інструмент для відкривання банок. Тож твоя допомога мені більше не потрібна.$h|Сьогодні в небі ані хмаринки.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Wed4",
+      "english": "It's so hot today!#$e#I wish I had some ice cream.$s",
+      "translation": "Сьогодні так спекотно!#$e#От би зараз морозива.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Fri4",
+      "english": "I spent 3 hours practicing my signature today.#$e#I guess that's pretty silly, huh?",
+      "translation": "Сьогодні я три години тренувала свій підпис.#$e#Мабуть, це доволі безглуздо, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Thu6",
+      "english": "If you stay in the sun a lot it will make your hair lighter... But you don't want to get sunburnt, either.#$e#I just want a healthy amount of sunlight. Everything in moderation, right?",
+      "translation": "Якщо багато бувати на сонці, волосся стане світлішим... Але й обгоріти не хочеться.#$e#Мені потрібна лише помірна кількість сонячного світла. Усе добре в міру, так?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Mon6",
+      "english": "I should start reading some books instead of magazines.#$e#It's good to learn things, isn't it?#$e#I only ever look at the pictures.",
+      "translation": "Мені варто почати читати книжки замість журналів.#$e#Корисно дізнаватися нове, еге ж?#$e#Я ж завжди дивлюся лише на картинки.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Sun6",
+      "english": "#$1 HaleySister#I talked to my sister for a while last night. I actually enjoyed it quite a bit.#$e#You know, Emily's not actually that weird. I guess we have more in common than I used to think.#$e#Don't tell her I said so.",
+      "translation": "#$1 HaleySister#Минулої ночі ми із сестрою трохи поговорили. Насправді мені навіть дуже сподобалося.#$e#Знаєш, Емілі насправді не така вже й дивна. Мабуть, у нас більше спільного, ніж я думала.#$e#Не кажи їй, що я це сказала.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Sat6",
+      "english": "It seems like a good day to go swimming.",
+      "translation": "Схоже, сьогодні гарний день для плавання.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Tue8",
+      "english": "I guess living in the country isn't so bad.#$e#If I lived in the city I might start to miss all the trees.#$e#@, I think I've been hanging out with you too much.$h",
+      "translation": "Мабуть, життя за містом не таке вже й погане.#$e#Якби я жила в місті, то могла б засумувати за всіма цими деревами.#$e#@, здається, я проводжу з тобою забагато часу.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "summer_Fri10",
+      "english": "Oh, hi @!#$e#Do you like kids?$l",
+      "translation": "О, привіт, @!#$e#Ти любиш дітей?$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_1",
+      "english": "It's fall already?$s",
+      "translation": "Уже осінь?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Mon",
+      "english": "It's gross when all these fallen leaves get slimy.",
+      "translation": "Огидно, коли все це опале листя стає слизьким.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Tue",
+      "english": "Hmm... Something smells weird...#$e#You've been working on the farm, huh?",
+      "translation": "Гм... Щось дивно пахне...#$e#Працюєш на фермі, так?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Wed",
+      "english": "Oh, hi. Did you want something?",
+      "translation": "О, привіт. Тобі щось треба?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Thu",
+      "english": "I feel the urge to go shopping. *sigh*",
+      "translation": "Мені страшенно хочеться на шопінг. *зітхає*",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Fri",
+      "english": "Is that a grass stain on your knee?#$e#Sorry, I'm allergic to grass.",
+      "translation": "Це пляма від трави на твоєму коліні?#$e#Вибач, у мене алергія на траву.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Sat",
+      "english": "It's too cold to go to the beach anymore.#$q 44 fall_Sat_old#*sigh*...what do you think I should do today?#$r 44 10 fall_Sat_12#Watercolor painting#$r 44 20 fall_Sat_12#Relax and read a magazine#$r 44 -30 fall_Sat_13#Stop being a selfish crybaby",
+      "translation": "На пляж уже надто холодно ходити.#$q 44 fall_Sat_old#*зітхає*... Як думаєш, чим мені сьогодні зайнятися?#$r 44 10 fall_Sat_12#Малювати аквареллю#$r 44 20 fall_Sat_12#Відпочити й почитати журнал#$r 44 -30 fall_Sat_13#Перестати бути егоїстичною плаксою",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Sat_old",
+      "english": "I'll probably take a nap later.",
+      "translation": "Мабуть, потім я трохи подрімаю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Sat_12",
+      "english": "Hmm... That's a pretty good idea, actually.",
+      "translation": "Гм... Насправді це доволі гарна ідея.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Sat_13",
+      "english": "Get away from me, you stupid jerk.$a",
+      "translation": "Відійди від мене, тупе ти створіння.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Sun",
+      "english": "I've never been to the forest. It's muddy and I could get a blister on my foot.",
+      "translation": "Я ніколи не була в лісі. Там брудно, і я можу натерти ногу.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Tue2",
+      "english": "Something smells earthy...#$b#Oh, right. You work on a farm.",
+      "translation": "Пахне землею...#$b#А, точно. Ти працюєш на фермі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Fri4",
+      "english": "You look like you've been doing a lot of hard work.#$b#Why don't you take the rest of the day off?",
+      "translation": "Схоже, ти дуже важко працюєш.#$b#Чому б не відпочити до кінця дня?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Wed4",
+      "english": "If you're ever bored, come say hi.",
+      "translation": "Якщо колись стане нудно, заходь привітатися.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Thu6",
+      "english": "Shopping just doesn't sound as fun as it used to.#$e#What's happening to me?#$e#Hmm...",
+      "translation": "Шопінг уже не здається таким веселим, як раніше.#$e#Що зі мною відбувається?#$e#Гм...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Mon6",
+      "english": "$p 48#Did I ever tell you I found another one of my great-grandma's bracelets in the attic?|See this bracelet? It belonged to my great-grandmother.#$e#She was a really interesting lady.",
+      "translation": "$p 48#Я вже розповідала, що знайшла на горищі ще один браслет прабабусі?|Бачиш цей браслет? Він належав моїй прабабусі.#$e#Вона була дуже цікавою жінкою.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Sun6",
+      "english": "I've never been to the forest, you know.#$e#It might be interesting to explore it some day.",
+      "translation": "Знаєш, я ніколи не була в лісі.#$e#Може, колись буде цікаво його дослідити.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Tue8",
+      "english": "I'm starting to like the smell of dirt. Isn't that weird?#$e#I think it's because you're around all the time.$h",
+      "translation": "Мені починає подобатися запах землі. Хіба це не дивно?#$e#Думаю, це через те, що ти весь час поруч.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "fall_Mon10",
+      "english": "@, I'm happy to see you today.$h",
+      "translation": "@, я рада сьогодні тебе бачити.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Mon",
+      "english": "I want to move somewhere warmer.",
+      "translation": "Я хочу переїхати туди, де тепліше.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Tue",
+      "english": "Hi. Do you need something from me?#$e#...",
+      "translation": "Привіт. Тобі щось від мене треба?#$e#...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_9",
+      "english": "Hmm. What brand is your shirt?#$e#Oh. Um, never mind.",
+      "translation": "Гм. Якого бренду твоя сорочка?#$e#О. Ем, забудь.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Wed",
+      "english": "I wish someone would bring me a peppermint coffee.$s#$e#Don't even bother, I know you won't be able to make one.",
+      "translation": "От би хтось приніс мені каву з перцевою м’ятою.$s#$e#Можеш навіть не намагатися, я знаю, що тобі таку не приготувати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Thu",
+      "english": "I'm going to start writing a list of all the clothes I need for next spring.",
+      "translation": "Я почну складати список усього одягу, який потрібен мені наступної весни.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Fri",
+      "english": "Do you have a pony on your farm?$h#$e#Oh. That's disappointing...$s",
+      "translation": "У тебе на фермі є поні?$h#$e#О. Як прикро...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Sat",
+      "english": "The only good thing about winter is that I get to sleep more.#$e#I like at least 10 hours of sleep every night.",
+      "translation": "Єдине хороше в зимі — можна довше спати.#$e#Мені потрібно щонайменше десять годин сну щоночі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Sun",
+      "english": "Will you say hi to Alex for me?#$e#Thanks.",
+      "translation": "Передаси Алексу від мене привіт?#$e#Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Tue2",
+      "english": "Your name is @, right?#$e#I keep forgetting.",
+      "translation": "Тебе звати @, так?#$e#Я весь час забуваю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Tue4",
+      "english": "Hi @.#$e#Is anything exciting happening on your farm?",
+      "translation": "Привіт, @.#$e#На твоїй фермі відбувається щось цікаве?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Wed6",
+      "english": "I think I'm starting to realize that clothes aren't the most important thing. Right?#$e#I still like clothes, though. I mean, what's wrong with expressing yourself a little?",
+      "translation": "Здається, я починаю розуміти, що одяг — не найважливіше. Так?#$e#Хоча одяг мені досі подобається. Тобто що поганого в тому, щоб трохи проявити себе?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Thu6",
+      "english": "Maybe I'll donate some of my skirts to a charity this spring.#$e#I mean, I do have over 1,000 skirts.$h#$e#...what?",
+      "translation": "Може, цієї весни я пожертвую частину своїх спідниць на благодійність.#$e#Зрештою, у мене їх понад тисячу.$h#$e#...Що?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Sun6",
+      "english": "Um, if you see Alex could you tell him I'm busy today?#$e#Thanks.",
+      "translation": "Ем, якщо побачиш Алекса, можеш сказати йому, що сьогодні я зайнята?#$e#Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Mon8",
+      "english": "I wish it were warmer here in Stardew Valley.#$e#I could move somewhere else, but...",
+      "translation": "Хотілося б, щоб тут, у долині Стардью, було тепліше.#$e#Я могла б переїхати кудись іще, але...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Fri8",
+      "english": "Do you think you'll ever have a pony on your farm?",
+      "translation": "Як думаєш, на твоїй фермі колись з’явиться поні?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Sat8",
+      "english": "I'm glad you have less work to do in the winter.#$e#It must be nice to have a break, huh?",
+      "translation": "Я рада, що взимку в тебе менше роботи.#$e#Мабуть, приємно трохи відпочити, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Haley",
+      "key": "winter_Sun10",
+      "english": "@, you look rugged today. I like it.^@, you look pretty today.#$e#...$h",
+      "translation": "@, сьогодні ти маєш такий мужній вигляд. Мені подобається.^@, сьогодні ти така гарна.#$e#...$h",
+      "reviewed": true
+    }
+  ]
+}

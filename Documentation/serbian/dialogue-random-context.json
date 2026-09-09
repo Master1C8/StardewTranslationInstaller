@@ -1,0 +1,144 @@
+{
+  "evidence": "Read-only installed game IL dumps /tmp/stardew-sr-cs-first-il.txt and /tmp/stardew-sr-dialogue-arrays-il.txt. Dialogue.TranslateArraysOfStrings loads20adjectives and23nouns; getRandom* uses arrays, checkForSpecialCharacters directly replaces tokens. German alone preserves noun capitalization; custom sr gets lowercased nouns.",
+  "pinnedSourceConsumers": {
+    "Characters/Dialogue/Abigail::fall_Thu": "%noun only. Recast transformation result with a colon before nominative random noun, preserving gigantic size and hand transformation, not inventing a noun case.",
+    "Characters/Dialogue/MarriageDialogueMaru::Outdoor_2": "%noun as constellation name: сазвежђе „%noun“ avoids genitive insertion.",
+    "Characters/Dialogue/MarriageDialogueMaru::Good_6": "%noun as nebula name: маглини „%noun“ avoids genitive insertion.",
+    "Characters/Dialogue/MarriageDialogue::Indoor_Day_3": "%adj %noun dream phrase: preserve tokens, use nominative quoted phrase; required runtime adjective gender agreement before release."
+  },
+  "requiredFix": "Exact mod locale sr-vnrevival only; adapt randomized adjective to known noun gender using directly authored forms, preserving original random selection and all other locales. Not yet implemented; release blocked until complete and tested.",
+  "adjectiveForms": [
+    [
+      "љубичаст",
+      "љубичаста",
+      "љубичасто"
+    ],
+    [
+      "гњецав",
+      "гњецава",
+      "гњецаво"
+    ],
+    [
+      "кредаст",
+      "кредаста",
+      "кредасто"
+    ],
+    [
+      "зелен",
+      "зелена",
+      "зелено"
+    ],
+    [
+      "плишан",
+      "плишана",
+      "плишано"
+    ],
+    [
+      "здепаст",
+      "здепаста",
+      "здепасто"
+    ],
+    [
+      "џиновски",
+      "џиновска",
+      "џиновско"
+    ],
+    [
+      "мастан",
+      "масна",
+      "масно"
+    ],
+    [
+      "тмуран",
+      "тмурна",
+      "тмурно"
+    ],
+    [
+      "практичан",
+      "практична",
+      "практично"
+    ],
+    [
+      "дугоног",
+      "дугонога",
+      "дугоного"
+    ],
+    [
+      "тупав",
+      "тупава",
+      "тупаво"
+    ],
+    [
+      "скорео",
+      "скорела",
+      "скорело"
+    ],
+    [
+      "фантастичан",
+      "фантастична",
+      "фантастично"
+    ],
+    [
+      "гумаст",
+      "гумаста",
+      "гумасто"
+    ],
+    [
+      "шашав",
+      "шашава",
+      "шашаво"
+    ],
+    [
+      "храбар",
+      "храбра",
+      "храбро"
+    ],
+    [
+      "разуман",
+      "разумна",
+      "разумно"
+    ],
+    [
+      "усамљен",
+      "усамљена",
+      "усамљено"
+    ],
+    [
+      "горак",
+      "горка",
+      "горко"
+    ]
+  ],
+  "adjectiveFormOrder": [
+    "masculine",
+    "feminine",
+    "neuter"
+  ],
+  "nounGenders": {
+    "змај": "m",
+    "шведски сто": "m",
+    "кекс": "m",
+    "робот": "m",
+    "планета": "f",
+    "паприка": "f",
+    "гробница": "f",
+    "хијена": "f",
+    "усна": "f",
+    "препелица": "f",
+    "сир": "m",
+    "катастрофа": "f",
+    "кишни мантил": "m",
+    "ципела": "f",
+    "замак": "m",
+    "вилењак": "m",
+    "пумпа": "f",
+    "чипс": "m",
+    "перика": "f",
+    "сирена": "f",
+    "батак": "m",
+    "лутка": "f",
+    "подморница": "f"
+  },
+  "legacyTitleArrays": "Installed TitleMenu ctor0754 checks CurrentLanguageCode==en before using random nouns/verbs/positionals. Mod sr uses RandomSentence.N. No runtime adaptation of those unused title arrays is needed.",
+  "legacyColors": "Slash-bearing colors array has initialization but no installed field-read consumer; directly translated with slash count preserved."
+}

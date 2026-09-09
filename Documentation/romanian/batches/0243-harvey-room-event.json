@@ -1,0 +1,23 @@
+{
+  "locale": "ro",
+  "target": "Data/Events/HarveyRoom",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "The complete Data/Events/HarveyRoom asset was translated directly from English. All 8 visible dialogue, prompt, response, and message segments were reviewed in context; Harvey and Maru’s voices, medical and aviation meaning, player-gender branches, response IDs, controls, and commands remain intact.",
+  "entries": {
+    "normal": {
+      "source": "pause 400/speak Harvey \"Sorry I'm all disheveled... I didn't know you were coming over.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Hey, I think I hear a plane overhead...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, get over here!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Look!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"As a kid, my dream was always to be a pilot.\"/pause 1000/speak Harvey \"...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"It's okay... don't be sad.#$b#I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.\"/pause 1600/speak Harvey \"Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end",
+      "translation": "pause 400/speak Harvey \"Scuză-mă că sunt atât de ciufulit... Nu știam că vei trece pe la mine.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Hei, cred că aud un avion deasupra...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, vino aici!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Privește!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"Când eram copil, visam mereu să devin pilot.\"/pause 1000/speak Harvey \"...Dar, din cauza vederii slabe și a fricii paralizante de înălțime, visul acela a început să se stingă.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"Nu-i nimic... nu te întrista.#$b#Am învățat să-mi accept locul în viață. Nu toți își pot îndeplini visurile... așa este lumea.\"/pause 1600/speak Harvey \"Hei, lasă-mă să-ți arăt machetele mele de avioane. Tocmai am terminat noul set TR-Starbird de lux.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end",
+      "eventReview": {
+        "commands": "exactly-preserved",
+        "visibleTextSegments": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "locale": "ro",
+  "target": "Data/ExtraDialogue",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": ["english-fidelity", "context", "terminology", "romanian-editorial", "tokens"],
+  "reviewNotes": "Final three records complete Data/ExtraDialogue. Runtime inspection proves %year is replaced by the raw current in-game year. The Summit/Perfection scene is unreachable in year one, so every reachable value is plural and Romanian ani is grammatically valid. Lewis retains his earlier fear for the valley; Morris retains the assignment timing and perceived career setback; spouse retains reflection over the recent years. All tokens, breaks and portraits are preserved.",
+  "entries": {
+    "SummitEvent_Outro_Lewis": {
+      "source": "You might not realize it, but I care a lot about this town, @.#$b#%year years ago, I was deeply worried about the future of the valley.$s#$b#But now, I feel completely at ease.#$b#Who knew a humble farmer moving to town would change everything?$h#$b#...Thank you.",
+      "translation": "Poate că nu-ți dai seama, dar țin foarte mult la orașul acesta, @.#$b#În urmă cu %year ani, eram foarte îngrijorat de viitorul văii.$s#$b#Dar acum sunt pe deplin liniștit.#$b#Cine ar fi crezut că venirea unui fermier modest în oraș va schimba totul?$h#$b#...Îți mulțumesc."
+    },
+    "SummitEvent_Dialogue1_Morris": {
+      "source": "You know, when I was first assigned to this location over %year years ago, I considered it a step back in my career.#$b#What self-respecting Joja Manager would want to preside over a tiny, backwater location like Pelican Town?$h",
+      "translation": "Știi, când am fost repartizat prima dată aici, cu mai bine de %year ani în urmă, am considerat asta un pas înapoi în carieră.#$b#Ce manager Joja care se respectă ar vrea să conducă o filială mică și uitată de lume precum cea din Orașul Pelican?$h"
+    },
+    "SummitEvent_Dialogue1_Spouse": {
+      "source": "I was just thinking about the last %year years...",
+      "translation": "Tocmai mă gândeam la ultimii %year ani..."
+    }
+  }
+}

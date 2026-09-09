@@ -1,0 +1,51 @@
+{
+  "passes": [
+    {
+      "pass": 1,
+      "scope": "All 673 entries: English source fidelity and Ukrainian wording",
+      "findings": 75,
+      "clean": false
+    },
+    {
+      "pass": 2,
+      "scope": "All 673 corrected entries: English source fidelity and Ukrainian wording",
+      "findings": 14,
+      "ids": [
+        "spa",
+        "spirits-eve",
+        "fruit-tree-sapling",
+        "farm-cave",
+        "random-seed",
+        "spawn-monsters-on-farm",
+        "online-local-communication",
+        "water-source",
+        "wood-chipper",
+        "anvil",
+        "junk",
+        "fishing-bar",
+        "hook-lure-tackle",
+        "spring-onion-mastery"
+      ],
+      "clean": false,
+      "sourceContext": [
+        "Data/Events/Forest:3910979/f Vincent 2000/f Jas 2000/t 600 1700/z summer/z fall/z winter/w sunny",
+        "Data/Events/Farm:65/m 25000/t 600 1200/H"
+      ]
+    },
+    {
+      "pass": 3,
+      "scope": "All 673 corrected entries, English fidelity rechecked against the full source read in passes 1–2, Ukrainian term/meaning read in full",
+      "findings": 0,
+      "clean": true,
+      "fingerprint": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3"
+    },
+    {
+      "pass": 4,
+      "scope": "Separate full Ukrainian editorial reading of all 673 terms and meanings: grammar, idiom, internal terminology, labels, names, retained Latin brands",
+      "findings": 0,
+      "clean": true,
+      "fingerprint": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3"
+    }
+  ],
+  "consecutiveCleanFullPasses": 2
+}

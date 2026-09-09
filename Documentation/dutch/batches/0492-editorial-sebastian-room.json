@@ -1,0 +1,12 @@
+{
+  "locale": "nl",
+  "target": "Data/Events/SebastianRoom",
+  "sourceAssetSha256": "52814c6d7e40c9208d560fe31dac41e4ce2b1d4c6fbf882ee30960412c307e82",
+  "reviewed": true,
+  "entries": {
+    "enterRobin": "pause 500/playSound mouseClick/pause 100/playSound mouseClick/pause 500/playSound Pickup_Coin15/pause 300/emote Sebastian 40/speak Sebastian \"Dat was een chatbericht van Sam... Hij wil blijkbaar iets gaan doen...#$b#Ugh, ik heb vandaag eigenlijk geen zin om naar buiten te gaan.$u\"/pause 500/playSound doorClose/warp Robin 1 1/move Robin 0 4 1/speak Robin \"O, hoi @.\"/faceDirection farmer 3/move Robin 4 0 1/speak Robin \"Sebby, ik weet dat je het niet leuk vindt als ik hier binnenkom... maar ik kwam Abigail tegen in de winkel en ze zei dat ze je zocht.\"/pause 200/emote Sebastian 28/speak Sebastian \"Heb je haar verteld dat ik aan het werk ben?\"/speak Robin \"Ja... maar ze zei dat ze waarschijnlijk toch langskomt.\"/emote Sebastian 12/speak Sebastian \"*zucht*... Niemand neemt mijn werk serieus.$u#$b#Niemand stoort Maru ooit wanneer ze in de kliniek werkt... denkt iedereen dat ik de hele dag maar wat op internet surf?\"/faceDirection farmer 0 true/move Robin -4 0 0/move Robin 0 -4 0/warp Robin -100 -100/playSound doorClose/pause 500/faceDirection farmer 0/resetVariable/question fork1 \"#Vraag naar zijn carrièredoelen.#Vraag waarom hij zijn vrienden niet wil zien.\"/fork noFriends/pause 500/speak Sebastian \"Nou, ik probeer genoeg te sparen om hier weg te kunnen. Waarschijnlijk naar de stad of zo.\"/emote Sebastian 40/speak Sebastian \"Weet je, als ik naar de universiteit was gegaan, verdiende ik nu waarschijnlijk een salaris met zes cijfers... maar ik wil gewoon geen deel uitmaken van die ratrace in het bedrijfsleven, begrijp je?#$b#En ik voel me achter een computer gewoon meer op mijn gemak dan wanneer ik rechtstreeks met mensen moet omgaan.$s\"/emote Sebastian 28/pause 600/playSound mouseClick/pause 100/playSound mouseClick/pause 300/speak Sebastian \"Nou, ik moet weer aan het werk... Deze module moet morgen af zijn.\"/animate Sebastian false true 100 24 24 24 24 24 24 24 24 24 24 25 26 27 26 27 26 27 26 25 24 24/playSound keyboardTyping/pause 500/move farmer 0 2 3/move farmer -3 0 0/move farmer 0 -2 3/move farmer -5 0 0 true/globalFade/viewport -1000 -1000/pause 1000/end"
+  },
+  "notes": {
+    "enterRobin": "Corrects a literal English calque for a six-figure salary."
+  }
+}

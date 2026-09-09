@@ -1,0 +1,18 @@
+{
+  "locale": "nl",
+  "target": "Data/Events/Farm",
+  "sourceAssetSha256": "bd8807acbd5582969afc334b1cd543cc8923758edae5ee76dc2cd832f3fd6397",
+  "reviewed": true,
+  "entries": {
+    "102/z spring/z summer/z fall/d Mon Tue Wed Thu Fri Sat/y 1/H": "continue/64 15/farmer 64 16 2 Pierre 64 18 0/broadcastEvent/skippable/pause 1500/speak Pierre \"Hallo, @. Zo! Je eerste jaar in Stardew Valley zit er bijna op, hè?#$b#Als je bij mij zaden blijft kopen, ben je volgend jaar twee keer zo productief!$h#$b#En ik heb spannend nieuws...#$b#Volgend jaar verkoop ik nieuwe zaadsoorten in mijn winkel! Ik krijg waarschijnlijk per seizoen 1 nieuwe soort.#$b#...Nou, dat was alles wat ik wilde zeggen. Fijne dag.\"/pause 300/move Pierre 0 1 2/pause 1000/faceDirection Pierre 0/speak Pierre \"Weet je... Ik zou niet eens de moeite nemen om de zaden van mijn concurrent te proberen.$u#$b# Pierres zaden zijn van de *hoogste* kwaliteit die je maar kunt vinden. Dat beloof ik.$h\"/pause 500/end",
+    "giveAlexMoney": "pause 200/addMailReceived gaveAlexMoney/money -5000/emote Alex 20/pause 500/speak Alex \"Geweldig! Kom zondag langs de saloon, dan laat ik je het eindresultaat zien!$h\"/pause 500/end",
+    "992559/t 600 1130/n clothFound/o Emily/w sunny": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Hoi, @! Goedemorgen!\"/pause 500/faceDirection Emily 3/pause 800/faceDirection Emily 0/speak Emily \"Het gaat zo te zien goed met je... de boerderij ziet er geweldig uit!$h\"/pause 500/emote farmer 32/pause 500/speak Emily \"Dus... je woont hier nu een tijdje en hebt inmiddels vast wat 'Doek' bemachtigd... toch?\"/pause 500/speak Emily \"Wist je dat je met Doek allerlei kleding kunt maken? Je hebt alleen een naaimachine nodig...#$b#En toevallig heb ik er thuis een! Kom gerust langs om hem te gebruiken wanneer je wilt.$h\"/pause 800/playSound reward/message \"Je kunt nu Emilys naaimachine gebruiken!\"/pause 800/speak Emily \"Om kleding te maken heb je een stuk Doek en een tweede voorwerp nodig. Experimenteer en ontdek welke unieke stijlen er bestaan!\"/pause 500/emote Emily 32/pause 500/end",
+    "992559/t 600 1130/n clothFound/O Emily/w sunny": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Goedemorgen, @.$h\"/pause 500/speak Emily \"Ik bedacht net... bij mijn oude huis staat een naaimachine!\"/pause 500/speak Emily \"Als je ooit kleding wilt maken, moet je maar eens langskomen om hem te bekijken.$h\"/pause 800/playSound reward/message \"Je kunt nu Emilys naaimachine gebruiken!\"/pause 800/speak Emily \"Om kleding te maken heb je een stuk Doek en een tweede voorwerp nodig. Experimenteer en ontdek welke unieke stijlen er bestaan!#$b#Ik ga er veel plezier aan beleven om je in allerlei verschillende outfits te zien!$h\"/pause 500/emote Emily 20/pause 500/end"
+  },
+  "notes": {
+    "102/z spring/z summer/z fall/d Mon Tue Wed Thu Fri Sat/y 1/H": "Removes a duplicated noun phrase.",
+    "giveAlexMoney": "Corrects the Stardrop Saloon from a beauty salon.",
+    "992559/t 600 1130/n clothFound/o Emily/w sunny": "Corrects Dutch possessive spelling.",
+    "992559/t 600 1130/n clothFound/O Emily/w sunny": "Corrects Dutch possessive spelling."
+  }
+}

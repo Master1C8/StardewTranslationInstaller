@@ -176,10 +176,23 @@ func renderGlyph(_ character: String, index: Int, font: NSFont, lineHeight: Int)
     return GlyphBitmap(index: index, character: character, image: image)
 }
 
-func writePNG(_ image: NSImage, to url: URL) throws {
-    guard let tiff = image.tiffRepresentation,
-          let bitmap = NSBitmapImageRep(data: tiff),
-          let pixels = bitmap.bitmapData else {
+func makeBitmap(width: Int, height: Int) -> NSBitmapImageRep? {
+    NSBitmapImageRep(
+        bitmapDataPlanes: nil,
+        pixelsWide: width,
+        pixelsHigh: height,
+        bitsPerSample: 8,
+        samplesPerPixel: 4,
+        hasAlpha: true,
+        isPlanar: false,
+        colorSpaceName: .deviceRGB,
+        bytesPerRow: 0,
+        bitsPerPixel: 0
+    )
+}
+
+func writePNG(_ bitmap: NSBitmapImageRep, to url: URL) throws {
+    guard let pixels = bitmap.bitmapData else {
         throw GeneratorError.renderFailed(url.lastPathComponent)
     }
     // The game's texture uses binary alpha. Thresholding avoids coloured DXT
@@ -305,8 +318,14 @@ func processFont(
     print("\(name): packed area \(packedArea)/\(atlasSize * atlasSize)")
     let placements = try pack(bitmaps, atlasSize: atlasSize, padding: padding)
 
-    let atlas = NSImage(size: NSSize(width: atlasSize, height: atlasSize))
-    atlas.lockFocus()
+    guard let atlas = makeBitmap(width: atlasSize, height: atlasSize) else {
+        throw GeneratorError.renderFailed(name)
+    }
+    NSGraphicsContext.saveGraphicsState()
+    guard let atlasContext = NSGraphicsContext(bitmapImageRep: atlas) else {
+        throw GeneratorError.renderFailed(name)
+    }
+    NSGraphicsContext.current = atlasContext
     NSColor.clear.setFill()
     NSRect(x: 0, y: 0, width: atlasSize, height: atlasSize).fill()
     NSGraphicsContext.current?.imageInterpolation = .none
@@ -329,7 +348,8 @@ func processFont(
             "height": glyph.image.height,
         ]
     }
-    atlas.unlockFocus()
+    atlasContext.flushGraphics()
+    NSGraphicsContext.restoreGraphicsState()
 
     // MonoGame searches this list as an ordered table and rejects an XNB when
     // new characters are merely appended. Reorder every parallel metadata
@@ -431,8 +451,14 @@ func processBmFont(
         yOffsets[index] = max(0, (lineHeight - glyph.image.height) / 2)
     }
     let placements = try pack(bitmaps, atlasSize: atlasSize, padding: 1)
-    let atlas = NSImage(size: NSSize(width: atlasSize, height: atlasSize))
-    atlas.lockFocus()
+    guard let atlas = makeBitmap(width: atlasSize, height: atlasSize) else {
+        throw GeneratorError.renderFailed(name)
+    }
+    NSGraphicsContext.saveGraphicsState()
+    guard let atlasContext = NSGraphicsContext(bitmapImageRep: atlas) else {
+        throw GeneratorError.renderFailed(name)
+    }
+    NSGraphicsContext.current = atlasContext
     NSColor.clear.setFill()
     NSRect(x: 0, y: 0, width: atlasSize, height: atlasSize).fill()
     NSGraphicsContext.current?.imageInterpolation = .none
@@ -446,7 +472,8 @@ func processBmFont(
             height: glyph.image.height
         ))
     }
-    atlas.unlockFocus()
+    atlasContext.flushGraphics()
+    NSGraphicsContext.restoreGraphicsState()
     try FileManager.default.createDirectory(at: outputDirectory, withIntermediateDirectories: true)
     try writePNG(atlas, to: outputDirectory.appendingPathComponent("\(name)_0.png"))
 

@@ -1,0 +1,29 @@
+{
+  "id": "0204-event-hospital-000-001",
+  "target": "Data/Events/Hospital",
+  "status": "reviewed",
+  "sourceHashes": {
+    "7/f Maru 1000/p Maru": "a05834da25e811199cb2dbb92973326bb79a44e2c5e2077ee97c41c87aa35b26",
+    "toldTruth": "ccb57dcb82be1dbf0dfec03d2609e79ab43f7471497957e651f11b053c5e9a23"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "7/f Maru 1000/p Maru": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*въздишка*... Толкова ми писна да подготвям тези проби...$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"Ах! О, не!... $4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"Цялата проба е съсипана... Харви ще ме убие...$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#@, какво да направя?#$r 38 -50 Event_Hospital_1#Просто я събери от пода. Той няма да забележи разлика.#$r 39 -20 Event_Hospital_2#Кажи на Харви, че вината е моя.#$r 38 50 Event_Hospital_3#Кажи на Харви, че е било злополука.\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"Какво стана? Чух нещо да се чупи.\"/pause 500/speak Maru \"$p 38#Случайно изпуснах една от пробите... Много съжалявам.$s|@ влезе и тръшна вратата толкова силно, че изпуснах тази проба.$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"Не бива да обвиняваш другите за собствените си проблеми, Мару.$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*въздишка*... Ще трябва да повикам пациента отново, за да взема нова проба.$s#$b#Заради това вероятно ще бъдем на загуба още един месец...$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+    "toldTruth": "move Harvey 0 2 3/speak Harvey \"Благодаря, че ми каза истината, Мару.#$b#Не се тревожи за пробата, просто ще вземем нова.\"/pause 500/emote Harvey 32/pause 500/speak Maru \"Благодаря за търпението, доктор Харви.\"/pause 500/speak Harvey \"Разбира се... оказваш ни голяма помощ тук. Не знам какво щях да правя без теб!\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"@? Лицето ти е малко бледо... чувстваш ли се добре?\"/pause 500/faceDirection farmer 2/emote farmer 28/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 2,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all twelve quoted dialogue, question and response fields in Hospital source ordinals 0–1.",
+      "Preserved both blame branches, response keys, friendship values, actor and portrait changes, sample-scene commands and every control token.",
+      "Removed an added player-gender assumption from Harvey’s health observation and refined the hidden-difference response for natural Bulgarian."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "bed181e3125ce0bce035b37ab7c22398dfe2a758bf281ac2deec2e6cb48658bd"
+  }
+}

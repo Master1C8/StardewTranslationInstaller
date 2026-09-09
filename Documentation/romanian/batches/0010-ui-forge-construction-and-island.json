@@ -1,0 +1,336 @@
+{
+  "locale": "ro",
+  "target": "Strings/UI",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Reviewed all 80 source pairs, random seed/legacy semantics, multiplayer permissions, island restoration and forging terminology. Building chat article argument uses aOrAn plus building name in CarpenterMenu; Lexicon returns empty article in custom locales, so place it directly next to the unchanged building-name placeholder. HouseUpgrade uses the possessive argument after locuința; Lexicon must provide lui/ei. Controller star and beach separator preserved. Exact enchantment glossary noun vrajă applied.",
+  "entries": {
+    "AGO_FarmMonsters_Tooltip": {
+      "source": "Allows monsters to spawn at night.",
+      "translation": "Permite apariția monștrilor noaptea."
+    },
+    "AGO_ProfitMargin_Tooltip": {
+      "source": "A multiplier applied to the price of items sold.",
+      "translation": "Un multiplicator aplicat prețului obiectelor vândute."
+    },
+    "AGO_MPOptions_Label": {
+      "source": "Multiplayer Options:",
+      "translation": "Opțiuni multiplayer:"
+    },
+    "AGO_StartingCabins_Tooltip": {
+      "source": "The number of starting cabins.",
+      "translation": "Numărul de cabane inițiale."
+    },
+    "AGO_OtherOptions_Label": {
+      "source": "Other Options:",
+      "translation": "Alte opțiuni:"
+    },
+    "AGO_CabinLayout_Tooltip": {
+      "source": "Whether the cabins are placed closer or further away from one another.",
+      "translation": "Stabilește dacă sunt amplasate cabanele mai aproape sau mai departe unele de altele."
+    },
+    "AGO_RandomSeed": {
+      "source": "Random Seed:",
+      "translation": "Valoare de inițializare aleatorie:"
+    },
+    "AGO_RandomSeed_Tooltip": {
+      "source": "The seed used to randomize the game world.",
+      "translation": "Valoarea folosită pentru generarea aleatorie a lumii jocului."
+    },
+    "AGO_LegacyRandomization": {
+      "source": "Use Legacy Randomization",
+      "translation": "Folosește aleatorizarea clasică"
+    },
+    "AGO_LegacyRandomization_Tooltip": {
+      "source": "Make random choices in a way that often repeats patterns. Most players should keep this disabled.",
+      "translation": "Face alegeri aleatorii într-un mod care repetă frecvent anumite tipare. Majoritatea jucătorilor ar trebui să lase această opțiune dezactivată."
+    },
+    "Options_SlingshotMode": {
+      "source": "Slingshot Fire Mode",
+      "translation": "Mod de tragere cu praștia"
+    },
+    "Options_SlingshotMode_Hold": {
+      "source": "Hold and release",
+      "translation": "Ține apăsat și eliberează"
+    },
+    "Options_SlingshotMode_Pull": {
+      "source": "Pull in opposite direction",
+      "translation": "Trage în direcția opusă"
+    },
+    "Bed_InUse": {
+      "source": "Cannot move a bed that is currently being used.",
+      "translation": "Nu poți muta un pat folosit în acest moment."
+    },
+    "Bed_CantMoveOthersBeds": {
+      "source": "You cannot move beds in another player's house.",
+      "translation": "Nu poți muta paturile din casa altui jucător."
+    },
+    "Bed_NeedsUpgrade": {
+      "source": "Bed type cannot be placed without further house upgrades.",
+      "translation": "Acest tip de pat nu poate fi amplasat fără îmbunătățiri suplimentare ale casei."
+    },
+    "Chat_LobbyLost": {
+      "source": "Disconnected from the game session. {0}",
+      "translation": "Conexiunea la sesiunea de joc s-a întrerupt. {0}"
+    },
+    "Chat_LobbyLost_UserLeft": {
+      "source": "(User left session)",
+      "translation": "(Utilizatorul a părăsit sesiunea)"
+    },
+    "Chat_LobbyLost_LobbyClosed": {
+      "source": "(Session ended)",
+      "translation": "(Sesiunea s-a încheiat)"
+    },
+    "Chat_LobbyLost_ConnectionLost": {
+      "source": "(Lost connection to lobby server)",
+      "translation": "(Conexiunea la serverul sălii de așteptare s-a întrerupt)"
+    },
+    "Chat_LobbyJoined": {
+      "source": "Connected to game session. {0}",
+      "translation": "Conexiune stabilită cu sesiunea de joc. {0}"
+    },
+    "Chat_LobbyRecreated": {
+      "source": "Established a new game session. {0}",
+      "translation": "S-a creat o nouă sesiune de joc. {0}"
+    },
+    "Chat_LobbyJoined_InviteCode": {
+      "source": "(Invite code: {0})",
+      "translation": "(Cod de invitație: {0})"
+    },
+    "Chat_LobbyCreateFail": {
+      "source": "Failed to create a new game session...",
+      "translation": "Nu s-a putut crea o nouă sesiune de joc..."
+    },
+    "Chat_StartingServer": {
+      "source": "You are now hosting a multiplayer game.",
+      "translation": "Acum găzduiești un joc multiplayer."
+    },
+    "Chat_DisablingServer": {
+      "source": "You are no longer hosting a multiplayer game.",
+      "translation": "Nu mai găzduiești un joc multiplayer."
+    },
+    "Farmhand_Locked": {
+      "source": "This character belongs to another player.",
+      "translation": "Acest personaj aparține altui jucător."
+    },
+    "Forge_Unforge": {
+      "source": "Unforge",
+      "translation": "Anulează forjarea"
+    },
+    "Item_Tooltip_Forged": {
+      "source": "Forged",
+      "translation": "Forjat"
+    },
+    "LocalJoinPrompt": {
+      "source": "Press * to join game.",
+      "translation": "Apasă * pentru a te alătura jocului."
+    },
+    "StartLocalMulti": {
+      "source": "Start Local Co-op",
+      "translation": "Pornește jocul cooperativ local"
+    },
+    "DropOutLocalMulti": {
+      "source": "Leave Game",
+      "translation": "Părăsește jocul"
+    },
+    "ChooseOne": {
+      "source": "Choose One:",
+      "translation": "Alege o variantă:"
+    },
+    "Carpenter_PaintBuildings": {
+      "source": "Paint Buildings",
+      "translation": "Vopsește clădiri"
+    },
+    "Carpenter_CannotPaint": {
+      "source": "This building cannot be painted",
+      "translation": "Această clădire nu poate fi vopsită"
+    },
+    "Carpenter_CannotPaint_Permission": {
+      "source": "You do not have permission to paint this building",
+      "translation": "Nu ai permisiunea să vopsești această clădire"
+    },
+    "GameMenu_MoveBuildingPermissions": {
+      "source": "Building Move Mode",
+      "translation": "Mod de mutare a clădirilor"
+    },
+    "GameMenu_MoveBuildingPermissions_Off": {
+      "source": "Host Only",
+      "translation": "Doar gazda"
+    },
+    "GameMenu_MoveBuildingPermissions_Owned": {
+      "source": "Building Owner Only",
+      "translation": "Doar proprietarul clădirii"
+    },
+    "GameMenu_MoveBuildingPermissions_On": {
+      "source": "Everyone",
+      "translation": "Toată lumea"
+    },
+    "Character_FarmBeach": {
+      "source": "Beach Farm_Good foraging and fishing, and tons of open space. Sometimes, supply crates wash up on shore. However, sprinklers don't work in the sandy soil.",
+      "translation": "Ferma de pe Plajă_Un loc bun pentru cules și pescuit, cu foarte mult spațiu liber. Uneori, valurile aduc la mal lăzi cu provizii. Totuși, aspersoarele nu funcționează pe solul nisipos."
+    },
+    "Forge_enchanting": {
+      "source": "Now enchanting...",
+      "translation": "Se aplică vraja...",
+      "previousTranslation": "Se aplică descântecul..."
+    },
+    "Forge_forging": {
+      "source": "Now forging...",
+      "translation": "Se forjează..."
+    },
+    "Forge_description1": {
+      "source": "Place weapon or tool in the left slot. Place gemstone in the right slot.",
+      "translation": "Pune o armă sau o unealtă în locașul din stânga. Pune o nestemată în locașul din dreapta."
+    },
+    "Forge_description2": {
+      "source": "You can also combine two rings.",
+      "translation": "Poți și să combini două inele."
+    },
+    "Forge_shards": {
+      "source": "Cinder shards are automatically consumed when forging.",
+      "translation": "Cioburile de Cenușă se consumă automat la forjare."
+    },
+    "Forge_notenoughshards": {
+      "source": "Not enough cinder shards...",
+      "translation": "Nu sunt suficiente Cioburi de Cenușă..."
+    },
+    "Forge_wrongorder": {
+      "source": "Incorrect order",
+      "translation": "Ordine incorectă"
+    },
+    "Forge_noroom": {
+      "source": "No room in inventory...",
+      "translation": "Nu este loc în inventar..."
+    },
+    "Forge_unforge_right_slot": {
+      "source": "Empty out the right slot to unforge...",
+      "translation": "Golește locașul din dreapta pentru a anula forjarea..."
+    },
+    "Forge_unforge_invalid": {
+      "source": "Only forged items and combined rings can be unforged...",
+      "translation": "Poți anula forjarea doar pentru obiecte forjate și inele combinate..."
+    },
+    "Forge_valid": {
+      "source": "Press the power button to begin forging!",
+      "translation": "Apasă butonul de pornire pentru a începe forjarea!"
+    },
+    "Chat_BuildingBuild": {
+      "source": "{0} has requested construction of {1} {2}!",
+      "translation": "{0} a cerut construirea unei clădiri de tip {1}{2}!"
+    },
+    "Chat_BuildingMagicBuild": {
+      "source": "{0} has summoned {1} {2}!",
+      "translation": "{0} a invocat o construcție de tip {1}{2}!"
+    },
+    "Chat_HouseUpgrade": {
+      "source": "{0} has requested construction on {1} home!",
+      "translation": "{0} a cerut lucrări la locuința {1}!"
+    },
+    "Chat_CommunityUpgrade": {
+      "source": "{0} has requested a community upgrade!",
+      "translation": "{0} a cerut o îmbunătățire pentru comunitate!"
+    },
+    "Chat_AcceptedSpecialOrder": {
+      "source": "{0} has accepted the special order '{1}'!",
+      "translation": "{0} a acceptat comanda specială „{1}”!"
+    },
+    "Chat_CompletedSpecialOrder": {
+      "source": "The special order '{0}' has been fulfilled!",
+      "translation": "Comanda specială „{0}” a fost îndeplinită!"
+    },
+    "Chat_DartsWin": {
+      "source": "{0} has won a game of darts in {1} throws!",
+      "translation": "{0} a câștigat o partidă de darts din {1} aruncări!"
+    },
+    "Chat_DartsWinPerfect": {
+      "source": "{0} has won a perfect game of darts!",
+      "translation": "{0} a câștigat o partidă perfectă de darts!"
+    },
+    "Darts_OffTheIsland": {
+      "source": "Off the island...",
+      "translation": "În afara insulei..."
+    },
+    "Darts_Bull": {
+      "source": "Bull!",
+      "translation": "Centru!"
+    },
+    "Darts_Bullseye": {
+      "source": "Bullseye!",
+      "translation": "Fix în centru!"
+    },
+    "Darts_PointsToGo": {
+      "source": "{0} Points to Go",
+      "translation": "Mai ai {0} puncte"
+    },
+    "Darts_PointToGo": {
+      "source": "{0} Point to Go",
+      "translation": "Mai ai {0} punct"
+    },
+    "Darts_WinText": {
+      "source": "You won in {0} throws!",
+      "translation": "Ai câștigat din {0} aruncări!"
+    },
+    "Darts_WinTextPerfect": {
+      "source": "Perfect game!",
+      "translation": "Partidă perfectă!"
+    },
+    "Chat_FieldOfficeDonation": {
+      "source": "{0} has donated {1} to the island field office.",
+      "translation": "{0} a donat {1} Biroului de teren al insulei."
+    },
+    "Chat_RepairBoatAnchor": {
+      "source": "{0} has repaired the anchor of Willy's boat!",
+      "translation": "{0} a reparat ancora bărcii lui Willy!"
+    },
+    "Chat_RepairBoatHull": {
+      "source": "{0} has repaired the hull of Willy's boat!",
+      "translation": "{0} a reparat corpul bărcii lui Willy!"
+    },
+    "Chat_RepairBoatMachine": {
+      "source": "{0} has repaired the ticket machine by Willy's boat!",
+      "translation": "{0} a reparat automatul de bilete de lângă barca lui Willy!"
+    },
+    "Chat_RepairBoat": {
+      "source": "The preparations to repair Willy's boat are complete!",
+      "translation": "Pregătirile pentru repararea bărcii lui Willy s-au încheiat!"
+    },
+    "Chat_UpgradePerch_House": {
+      "source": "{0} has asked the parrots to restore the island farmhouse!",
+      "translation": "{0} le-a cerut papagalilor să restaureze casa fermei de pe insulă!"
+    },
+    "Chat_UpgradePerch_House_Mailbox": {
+      "source": "{0} has asked the parrots to begin delivering mail to the island!",
+      "translation": "{0} le-a cerut papagalilor să înceapă să livreze corespondența pe insulă!"
+    },
+    "Chat_UpgradePerch_VolcanoShortcutOut": {
+      "source": "{0} has asked the parrots to build a shortcut out of the volcano!",
+      "translation": "{0} le-a cerut papagalilor să construiască o scurtătură pentru a ieși din vulcan!"
+    },
+    "Chat_UpgradePerch_VolcanoBridge": {
+      "source": "{0} has asked the parrots to build a bridge in the volcano!",
+      "translation": "{0} le-a cerut papagalilor să construiască un pod în vulcan!"
+    },
+    "Chat_UpgradePerch_Turtle": {
+      "source": "{0} has asked the parrots to clear the path to the west side of the island!",
+      "translation": "{0} le-a cerut papagalilor să elibereze drumul spre partea de vest a insulei!"
+    },
+    "Chat_UpgradePerch_ParrotPlatforms": {
+      "source": "{0} has asked the parrots to resume the Parrot Express!",
+      "translation": "{0} le-a cerut papagalilor să repornească Expresul Papagalilor!"
+    },
+    "Chat_UpgradePerch_Bridge": {
+      "source": "{0} has asked the parrots to fix the bridge near the tent!",
+      "translation": "{0} le-a cerut papagalilor să repare podul de lângă cort!"
+    },
+    "Chat_UpgradePerch_Resort": {
+      "source": "{0} has asked the parrots to restore the island resort!",
+      "translation": "{0} le-a cerut papagalilor să restaureze stațiunea insulei!"
+    }
+  }
+}

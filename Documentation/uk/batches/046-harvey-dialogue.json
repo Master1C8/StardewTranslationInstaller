@@ -1,0 +1,502 @@
+{
+  "id": "046-harvey-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Harvey dialogue entry. Medical meaning, reserved and conscientious character voice, relationships, gifts, events, seasonal advice, player gender handling, canonical glossary terms, dialogue commands, emotes, runtime queries, response branches, and control tokens were checked against English. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "e3c7ad9b692a9eb960ad55986351ecf7a501f1f7bd978289d9f7cc20518ff26e",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 10
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Introduction",
+      "english": "It's a pleasure to meet you. I'm Harvey, the local doctor.#$e#I perform regular check-ups and medical procedures for all the residents of Pelican Town. It's rewarding work.#$e#I hope you'll find your own work equally rewarding, in time.$h",
+      "translation": "Радий познайомитися. Я Гарві, місцевий лікар.#$e#Я проводжу регулярні огляди й медичні процедури для всіх жителів містечка Пелікан. Ця праця приносить задоволення.#$e#Сподіваюся, з часом твоя робота приноситиме не менше задоволення.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "AcceptBirthdayGift_Positive",
+      "english": "Oh! Thank you very much! I didn't expect anyone to know it was my birthday today.$h",
+      "translation": "О! Дуже дякую! Я не очікував, що хтось знатиме, що сьогодні в мене день народження.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "Oh! It's a... well, it's something. I didn't expect anyone to know it was my birthday today.",
+      "translation": "О! Це... ну, це щось. Я не очікував, що хтось знатиме, що сьогодні в мене день народження.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "You're giving me this? I'm honored. Thank you!",
+      "translation": "Ти віддаєш це мені? Для мене це честь. Дякую!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "FlowerDance_Accept",
+      "english": "Oh! You... want to dance with me?$4#$b#...Yes. I'd love to!$h",
+      "translation": "О! Ти... хочеш потанцювати зі мною?$4#$b#...Так. Із радістю!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "GreenRain",
+      "english": "I brought some medical supplies, just in case. Be careful out there!",
+      "translation": "Я прихопив медичне приладдя про всяк випадок. Бережи себе надворі!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "GreenRain_2",
+      "english": "The first time this happened, we were all worried that the rain might be dangerous.#$b#But what if it's actually healthy for the body? Who knows... The plants seem to respond well to it, at least.",
+      "translation": "Коли це сталося вперше, ми всі хвилювалися, що дощ може бути небезпечним.#$b#А що, як він насправді корисний для організму? Хтозна... Принаймні рослинам він, здається, йде на користь.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "AcceptGift_(O)432",
+      "english": "It's for me? Thank you! This will be fantastic drizzled on some pasta.$h",
+      "translation": "Це мені? Дякую! Буде чудово полити цим пасту.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "AcceptGift_(O)348",
+      "english": "For me? What a gift! This looks fantastic!$h#$b#You know, on a physiological level, I wouldn't advise the consumption of alcohol...#$b#But there's no denying the benefit of kicking back and enjoying a glass of fine Stardew Valley wine!$h",
+      "translation": "Мені? Оце подарунок! Має чудовий вигляд!$h#$b#Знаєш, із погляду фізіології я не радив би вживати алкоголь...#$b#Але не можна заперечувати користі відпочинку за келихом доброго вина з долини Стардью!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_56_memory_fourweeks",
+      "english": "I've been working on an 'animal checklist' for a few years now. I want to observe every species living in the valley!",
+      "translation": "Я вже кілька років складаю «список тварин». Хочу поспостерігати за кожним видом, що мешкає в долині!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_56_memory_twoweeks",
+      "english": "I tried making my own pickles one time...$s#$e#Um, let me put it this way... The frogs we dissected in high school smelled like roses in comparison...",
+      "translation": "Якось я спробував сам приготувати соління...$s#$e#Ем, скажімо так... Порівняно з ним жаби, яких ми препарували в школі, пахли трояндами...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_56",
+      "english": "As a small town doctor, you can't help but form a personal connection with your patients. That can be both good and bad...",
+      "translation": "Як лікар у маленькому містечку, мимоволі встановлюєш особистий зв’язок із пацієнтами. У цьому є і добре, і погане...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_58_memory_oneweek",
+      "english": "Well now that you know my secret, I might as well give you an update... I was significantly less winded after aerobics class this week!",
+      "translation": "Що ж, тепер, коли ти знаєш мій секрет, можу й розповісти про успіхи... Цього тижня після занять з аеробіки я задихався значно менше!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_58_memory_twoweeks",
+      "english": "I got such a good workout during aerobics class, I think I can treat myself to some pasta primavera tonight...$h",
+      "translation": "На занятті з аеробіки я так добре потренувався, що сьогодні ввечері можу побалувати себе пастою примавера...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_58_memory_fourweeks",
+      "english": "I don't know why I was ashamed about being in dance aerobics class. My legs have become so strong, I should feel as bold as a lion!",
+      "translation": "Не знаю, чому я соромився занять із танцювальної аеробіки. Мої ноги стали такими сильними, що мені час набратися левової сміливості!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_571102_memory",
+      "english": "I've never told anyone about my airplane hobby before... I guess I just feel comfortable talking to you.",
+      "translation": "Я ще нікому не розповідав про своє захоплення літаками... Мабуть, мені просто легко з тобою говорити.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "eventSeen_571102_memory_oneweek",
+      "english": "As a doctor, you can only do so much to help your patients...#$e#I've made the mistake of getting too emotionally involved in the past... I won't let that happen again...$s",
+      "translation": "Лікар може зробити для пацієнтів лише те, що в його силах...#$e#У минулому я припускався помилки й надто емоційно прив’язувався... Більше цього не допущу...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "dating_Harvey",
+      "english": "I've never felt like this before...$l",
+      "translation": "Я ще ніколи не відчував нічого подібного...$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "dating_Harvey_memory_oneday",
+      "english": "I've been thinking about you so much, I can hardly do my work.$l",
+      "translation": "Я так багато думаю про тебе, що майже не можу працювати.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "dating_Maru_memory_oneday",
+      "english": "Maru's been unusually cheerful lately... I hear you may have something to do with that.",
+      "translation": "Останнім часом Мару надзвичайно весела... Я чув, що ти можеш мати до цього стосунок.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "married_Maru",
+      "english": "Congratulations on your marriage, @. Maru's already informed me that she'll continue to work at the clinic, which is a relief!",
+      "translation": "Вітаю з весіллям, @. Мару вже повідомила, що й надалі працюватиме в клініці, і це неабияке полегшення!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "married_Harvey",
+      "english": "This is the happiest moment of my life...$l",
+      "translation": "Це найщасливіша мить у моєму житті...$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Resort_Entering",
+      "english": "Sunscreen? Check...#$b#Sun hat? Check...",
+      "translation": "Сонцезахисний крем? Є...#$b#Капелюх від сонця? Є...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Resort_Leaving",
+      "english": "If you get burnt, a little aloe vera cream might help soothe the skin.",
+      "translation": "Якщо обгориш, трохи крему з алое вера допоможе заспокоїти шкіру.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Resort_Shore",
+      "english": "I combed the whole beach for glass. We wouldn't want anyone to get a cut on their foot!",
+      "translation": "Я обійшов увесь пляж у пошуках скла. Не хочеться, щоб хтось порізав ногу!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Resort_Chair",
+      "english": "It's nice to have an opportunity to relax now and then.#$b#The trouble is actually letting go of your worries...$s",
+      "translation": "Приємно час від часу мати нагоду відпочити.#$b#Складність у тому, щоб справді відпустити тривоги...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Resort_Bar",
+      "english": "It's important to stay hydrated in this heat. I'm going to ask Gus if he has any coconut water!$h",
+      "translation": "У таку спеку важливо підтримувати водний баланс. Запитаю в Ґаса, чи є в нього кокосова вода!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Resort",
+      "english": "I'll let you in on a little secret... I can only swim with floaties.$s",
+      "translation": "Відкрию тобі маленький секрет... Я вмію плавати лише з надувними нарукавниками.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "FlowerDance_Accept_Spouse",
+      "english": "I've been looking forward to it all afternoon! You look radiant in the fresh spring air, my love.$l",
+      "translation": "Я чекав на це всю другу половину дня! У свіжому весняному повітрі ти просто сяєш, моє кохання.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "FlowerDance_Decline",
+      "english": "Oh! I'm sorry... I, er... have plans to ask someone else.$s",
+      "translation": "О! Вибач... Я, е-е... збирався запросити когось іншого.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "divorced",
+      "english": "I... I can't look at you. Please spare me any more pain.$s",
+      "translation": "Я... Я не можу на тебе дивитися. Будь ласка, не завдавай мені ще більше болю.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "breakUp",
+      "english": "...Y...You...?$s#$b#*gulp*... I... I think I'm going to be sick...$s",
+      "translation": "...Т... Ти...?$s#$b#*ковть*... М... Мене, здається, зараз знудить...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "dumped_Guys",
+      "english": "I'm busy with my work. I can't speak to you.$s",
+      "translation": "Я зайнятий роботою. Не можу з тобою розмовляти.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "secondChance_Guys",
+      "english": "I want you back in my life, @. I'm willing to forget what happened.$s",
+      "translation": "Я хочу повернути тебе у своє життя, @. Я готовий забути те, що сталося.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Mon",
+      "english": "We sell a few over-the-counter medicines at the clinic... feel free to stop by if you're feeling exhausted.#$b#I know that being a farmer is pretty tiring work... don't overdo it!",
+      "translation": "У клініці ми продаємо кілька безрецептурних ліків... Заходь, якщо відчуєш виснаження.#$b#Я знаю, що фермерська праця доволі виснажлива... Не перенапружуйся!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Mon2",
+      "english": "I feel responsible for the health of this whole community... it's kind of stressful.#$e#It's a pretty small community, and I'm fortunate to be able to build a good relationship with my patients.",
+      "translation": "Я почуваюся відповідальним за здоров’я всієї громади... Це трохи напружує.#$e#Громада в нас невелика, і мені пощастило налагодити добрі стосунки з пацієнтами.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Mon6",
+      "english": "I'd like to stay in Stardew Valley for a while. I'm finally starting to feel involved in the community.#$e#It feels good to know that you're useful.",
+      "translation": "Я хотів би ще деякий час пожити в долині Стардью. Нарешті починаю відчувати себе частиною громади.#$e#Приємно відчувати себе корисним.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Mon10",
+      "english": "Oh! Hi, @.$l#$e#Do you... have any medical questions?$l",
+      "translation": "О! Привіт, @.$l#$e#У тебе... є якісь медичні запитання?$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Tue",
+      "english": "Feel free to stop by my office if you're ever feeling ill.#$e#You're young, though. You'll probably stay healthy without trying.$h",
+      "translation": "Якщо колись захворієш, без вагань заходь до мого кабінету.#$e#Та ти ще в розквіті сил. Напевно, здоров’я не підводитиме й без особливих зусиль.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Tue8",
+      "english": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Don't overwork yourself, @. Doctor's orders!#$e#If our farmers get sick, where will we get our food? We need you!$h|Don't overwork yourself, @. Doctor's orders!#$e#Your health is important to me.$l",
+      "translation": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Не перенапружуйся, @. Лікар наказує!#$e#Якщо наші фермери захворіють, звідки ми братимемо їжу? Ми без тебе не впораємося!$h|Не перенапружуйся, @. Лікар наказує!#$e#Твоє здоров’я важливе для мене.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Wed4",
+      "english": "I'd like to get to know you better, @. Let's put aside our doctor-patient relationship.",
+      "translation": "Я хотів би краще пізнати тебе, @. Облишмо наші стосунки лікаря й пацієнта.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Wed6",
+      "english": "It's nice to have a friend in town.$h",
+      "translation": "Приємно мати друга в містечку.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Wed8",
+      "english": "You have a really healthy glow. That's good.$h",
+      "translation": "У тебе дуже здоровий рум’янець. Це добре.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Wed",
+      "english": "Remember to cover your mouth when you sneeze.#$e#Then make sure to wash your hands.",
+      "translation": "Не забувай прикривати рот, коли чхаєш.#$e#А потім обов’язково мий руки.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Thu8",
+      "english": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#As a doctor, I'm well aware of the benefits of home-cooked food. But I'm so busy, I have a hard time bringing myself to cook.$s|It's a lot of work, being a doctor. I don't eat as well as I should.$s#$e#If I didn't live alone I think it would be easier.$l",
+      "translation": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Як лікар я добре знаю про користь домашньої їжі. Але я такий зайнятий, що мені важко змусити себе готувати.$s|Бути лікарем — важка праця. Я харчуюся не так добре, як варто було б.$s#$e#Гадаю, якби я жив не сам, було б легше.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Thu",
+      "english": "Nutrition is important, so make sure and eat well. Try to increase your vegetable intake!#$e#Home-cooked meals are best. Do you cook?",
+      "translation": "Правильне харчування важливе, тож добре їж. Спробуй додати до раціону більше овочів!#$e#Найкраще — домашня їжа. Ти готуєш?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Fri",
+      "english": "It's a beautiful day, isn't it?#$e#I wish I had less work to do.$s",
+      "translation": "Чудовий день, правда?#$e#Шкода, що в мене стільки роботи.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Fri4",
+      "english": "If you want to hang out in my apartment, that's okay with me. I live above the clinic.",
+      "translation": "Якщо хочеш провести час у моїй квартирі, я не проти. Я живу над клінікою.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Fri10",
+      "english": "Stop by my place if you ever need a confidential check-up.$l",
+      "translation": "Заходь до мене, якщо колись знадобиться конфіденційний огляд.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Sat",
+      "english": "Can I do anything for you?#$e#Take care.",
+      "translation": "Я можу чимось допомогти?#$e#Бережи себе.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Sat4",
+      "english": "I came here because I liked the small-town atmosphere, and the potential for a holistic approach to patient care.#$e#I've grown to really love it.$h",
+      "translation": "Я переїхав сюди через атмосферу маленького містечка й можливість комплексно підходити до догляду за пацієнтами.#$e#Я справді полюбив це місце.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Sat10",
+      "english": "*Sigh*... I'm starting to feel kind of old...#$e#The older you get the more memories you're burdened with. It can be overwhelming.$s#$e#I think I'll stay younger with you around.$l",
+      "translation": "*Зітхання*... Я починаю почуватися старим...#$e#Що старшим стаєш, то більше спогадів несеш на собі. Іноді вони пригнічують.$s#$e#Гадаю, поруч із тобою я довше залишатимуся молодим.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Sun",
+      "english": "Hmm... I'm struggling to make ends meet. I don't have enough patients.#$e#I guess I should try to get patients from the neighboring towns...",
+      "translation": "Хм-м... Мені важко зводити кінці з кінцями. У мене замало пацієнтів.#$e#Мабуть, варто спробувати залучити пацієнтів із сусідніх містечок...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "Sun6",
+      "english": "Imagine having a patient's life completely in your hands, and failing to keep them alive... that's something that will haunt you forever.$s",
+      "translation": "Уяви, що життя пацієнта цілковито у твоїх руках, а врятувати його не вдається... Це переслідуватиме тебе довіку.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_george1",
+      "english": "Thanks, @.$h#$b#You see, George, I'm just trying to help you.",
+      "translation": "Дякую, @.$h#$b#Розумієш, Джордже, я лише намагаюся тобі допомогти.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_george2",
+      "english": "*Sigh*$s#$b#Look, George. If you want to behave like this I'm going to have to tell your wife. I don't think she'll be happy.",
+      "translation": "*Зітхання*$s#$b#Послухай, Джордже. Якщо ти так поводитимешся, мені доведеться розповісти твоїй дружині. Не думаю, що вона зрадіє.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_aerobics1",
+      "english": "Thanks, @. I appreciate that.$h",
+      "translation": "Дякую, @. Я це ціную.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_aerobics2",
+      "english": "*Sigh*... rude.$s",
+      "translation": "*Зітхання*... Як грубо.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_heart1",
+      "english": "Oh! Hospitals make you nervous, huh?#$b#Just try and relax. I'm here to help.$h",
+      "translation": "О! Лікарні змушують тебе нервувати, так?#$b#Просто спробуй розслабитися. Я тут, щоб допомогти.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_heart2",
+      "english": "Okay. That makes sense.",
+      "translation": "Гаразд. Це має сенс.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_heart3",
+      "english": "Um. Okay... If you say so.$s",
+      "translation": "Ем. Гаразд... Якщо ти так кажеш.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_grave1",
+      "english": "...You're right.#$b#...Thanks.",
+      "translation": "...Твоя правда.#$b#...Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "event_grave2",
+      "english": "*sigh*$s",
+      "translation": "*зітхання*$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "summer_Mon",
+      "english": "It's okay to get a moderate amount of sunlight. Just don't get burnt.#$e#Okay. Take care! Stay healthy.",
+      "translation": "Помірна кількість сонячного світла не зашкодить. Головне — не обгоріти.#$e#Гаразд. Бережи себе! Не хворій.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "summer_Thu",
+      "english": "Exercise is important, but don't get too exhausted, or you might end up at my clinic!#$e#Make sure and listen to your body.",
+      "translation": "Фізичні вправи важливі, але не виснажуйся надміру, бо можеш опинитися в моїй клініці!#$e#Обов’язково дослухайся до свого тіла.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "summer_Fri",
+      "english": "People don't get sick much during the summer. That's nice, but it also means less business for me.",
+      "translation": "Улітку люди хворіють нечасто. Це добре, але водночас у мене менше роботи.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "fall_Fri",
+      "english": "Have you been going into the mines, @?#$e#It's a dangerous place. I recommend against it.",
+      "translation": "Ти ходиш у Шахти, @?#$e#Це небезпечне місце. Я не раджу туди ходити.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "fall_Sat",
+      "english": "When you eat certain foods you'll perform better.#$e#Eating a 'Farmer's Lunch' will give you the nutrition you need to water and harvest crops better!",
+      "translation": "Певна їжа може поліпшити твої здібності.#$e#«Фермерський обід» дасть тобі поживні речовини, потрібні, щоб краще поливати й збирати врожай!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "winter_Wed",
+      "english": "It's flu season, so you'd better be extra careful.#$e#Make sure to wash your hands often.",
+      "translation": "Зараз сезон грипу, тож бережи себе особливо ретельно.#$e#Обов’язково часто мий руки.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Harvey",
+      "key": "winter_Sun",
+      "english": "I hate to say this, but I do make a lot more money during flu season.#$e#I guess if people stopped getting sick, I'd be out of business.#$e#Don't get the wrong idea! I want people to be healthy... really!",
+      "translation": "Неприємно це визнавати, але в сезон грипу я заробляю значно більше.#$e#Мабуть, якби люди перестали хворіти, я залишився б без роботи.#$e#Не подумай нічого поганого! Я хочу, щоб люди були здорові... Чесно!",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "locale": "ro",
+  "target": "Data/Events/BathHouse_Pool",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Both Bath House pool event records were reviewed directly against English. The complete Penny scene has seven translated dialogue segments with response commands and IDs preserved exactly; the technical heartbreak continuation has no visible text and remains byte-identical.",
+  "entries": {
+    "38/f Penny 2500/t 1900 2400/n pennySpa": {
+      "source": "echos/-1000 -1000/farmer 13 23 2 Penny 9 29 1/swimming farmer/swimming Penny/skippable/showFrame Penny 31/viewport 13 27 true/pause 2000/playSound slosh/move farmer 0 6 3/positionOffset farmer 0 16/pause 700/speak Penny \"There you are... I was worried you didn't get my note.$6\"/playSound slosh/move Penny 1 0 1/pause 1500/faceDirection Penny 0/speak Penny \"It looks like we're alone.$8\"/pause 800/speak Penny \"The water feels so good after being out in the cold of night, doesn't it?$6\"/faceDirection farmer 0/pause 1300/faceDirection Penny 1/pause 500/playSound slosh/move Penny 1 0 1/faceDirection farmer 3/speak Penny \"$q -1 null#Do you know why I asked you here tonight?$8#$r -1 0 event_pool1#You have something to tell me.#$r -1 0 event_pool2#I'm not exactly sure.#$r -1 0 event_pool3#You wanted to see me in my bathing suit.\"/faceDirection Penny 3/pause 800/faceDirection Penny 1/speak Penny \"Um, how do I say this...$8\"/pause 1000/playSound slosh/move Penny 1 0 1/pause 500/speak Penny \"I've been meaning to tell you for a while now... about how I feel.$8#$b#I can't stop thinking about you...$8#$b#I've never felt this way about anyone.$8\"/speak Penny \"$q -1 null#...$8#$r -1 0 event_pool4#I feel the same way about you.#$r -1 -1500 event_pool5#Sorry, but I don't like you in that way...\"/fork pennyHeartbroken/pause 1000/showFrame Penny 32/pause 200/playSound slosh/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Penny 2 0/positionOffset farmer -2 2/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/specificTemporarySprite heart 13 29/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+      "translation": "echos/-1000 -1000/farmer 13 23 2 Penny 9 29 1/swimming farmer/swimming Penny/skippable/showFrame Penny 31/viewport 13 27 true/pause 2000/playSound slosh/move farmer 0 6 3/positionOffset farmer 0 16/pause 700/speak Penny \"Ai venit... Mă temeam că nu ai primit bilețelul meu.$6\"/playSound slosh/move Penny 1 0 1/pause 1500/faceDirection Penny 0/speak Penny \"Se pare că suntem doar noi.$8\"/pause 800/speak Penny \"Apa este atât de plăcută după ce am stat afară în frigul nopții, nu-i așa?$6\"/faceDirection farmer 0/pause 1300/faceDirection Penny 1/pause 500/playSound slosh/move Penny 1 0 1/faceDirection farmer 3/speak Penny \"$q -1 null#Știi de ce te-am chemat aici în seara asta?$8#$r -1 0 event_pool1#Ai ceva să-mi spui.#$r -1 0 event_pool2#Nu prea știu.#$r -1 0 event_pool3#Ai vrut să mă vezi în costumul de baie.\"/faceDirection Penny 3/pause 800/faceDirection Penny 1/speak Penny \"Ăă, cum să spun...$8\"/pause 1000/playSound slosh/move Penny 1 0 1/pause 500/speak Penny \"Vreau de ceva vreme să-ți spun... ce simt.$8#$b#Nu mă pot opri să mă gândesc la tine...$8#$b#N-am mai simțit niciodată așa ceva pentru nimeni.$8\"/speak Penny \"$q -1 null#...$8#$r -1 0 event_pool4#Și eu simt la fel pentru tine.#$r -1 -1500 event_pool5#Îmi pare rău, dar nu te plac în felul acesta...\"/fork pennyHeartbroken/pause 1000/showFrame Penny 32/pause 200/playSound slosh/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Penny 2 0/positionOffset farmer -2 2/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/pause 50/positionOffset Penny 2 0/positionOffset farmer -2 0/specificTemporarySprite heart 13 29/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+      "eventReview": {
+        "commands": "exactly-preserved",
+        "visibleTextSegments": 7
+      }
+    },
+    "pennyHeartbroken": {
+      "source": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+      "translation": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+      "preservationReason": "Technical continuation with no player-visible text; every event command remains byte-identical.",
+      "eventReview": {
+        "commands": "exactly-preserved",
+        "visibleTextSegments": 0
+      }
+    }
+  }
+}

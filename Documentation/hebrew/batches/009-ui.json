@@ -1,0 +1,385 @@
+{
+  "id": "009-ui",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Strings/UI": "ea02f5523d75e54663b7bd7c1df9487f4c321fb1a1fb126c713d039d33e0710f"
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "TrashCanSale",
+      "english": "Reclaim",
+      "translation": "השבה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemList_ItemsLost",
+      "english": "Items Lost:",
+      "translation": "פריטים שאבדו:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemList_ItemsLostValue",
+      "english": "Total Value: {0}g",
+      "translation": "שווי כולל: {0}g",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Collections_Letters",
+      "english": "Letters",
+      "translation": "מכתבים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FruitTree_Warning",
+      "english": "Your {0} tree wasn't able to grow last night.",
+      "translation": "עץ ה{0} שלכם לא הצליח לגדול הלילה.",
+      "contextNote": "Data/FruitTrees.DisplayName resolves fruit name via Strings/Objects, e.g. Cherry_Name; definite עץ ה{0} supplies tree around fruit."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Workbench_Chest_Warning",
+      "english": "One of the chests near the workbench is in use.",
+      "translation": "אחת התיבות ליד שולחן העבודה נמצאת בשימוש."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_GiftLog",
+      "english": "Gift Log",
+      "translation": "יומן מתנות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_GiftLog_NoGiftsGiven",
+      "english": "You haven't given any gifts of this kind.",
+      "translation": "עדיין לא נתתם מתנות מהסוג הזה."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Status",
+      "english": "Status",
+      "translation": "מצב"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Birthday",
+      "english": "Birthday",
+      "translation": "יום הולדת"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Loved",
+      "english": "Loved Gifts",
+      "translation": "מתנות אהובות מאוד"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Liked",
+      "english": "Liked Gifts",
+      "translation": "מתנות אהובות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Neutral",
+      "english": "Normal Gifts",
+      "translation": "מתנות רגילות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Disliked",
+      "english": "Disliked Gifts",
+      "translation": "מתנות לא אהובות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Hated",
+      "english": "Hated Gifts",
+      "translation": "מתנות שנואות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_LikedGifts",
+      "english": "{0}'s Favorites",
+      "translation": "ההעדפות של {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_FruitsAndVegetables",
+      "english": "Fruits & Vegetables",
+      "translation": "פירות וירקות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_AnimalProduce",
+      "english": "Animal Produce",
+      "translation": "תוצרת בעלי חיים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_ArtisanItems",
+      "english": "Artisan Items",
+      "translation": "מוצרי מלאכה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_CookedItems",
+      "english": "Cooked Items",
+      "translation": "מאכלים מבושלים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_ForagedItems",
+      "english": "Flowers & Foraged Items",
+      "translation": "פרחים ופריטי ליקוט"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_Fish",
+      "english": "Fish",
+      "translation": "דגים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_Ingredients",
+      "english": "Ingredients",
+      "translation": "מרכיבים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_MineralsAndGems",
+      "english": "Metals, Minerals & Gems",
+      "translation": "מתכות, מינרלים ואבני חן"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Profile_Gift_Category_Misc",
+      "english": "Miscellaneous",
+      "translation": "שונות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Mini_JukeBox_Off",
+      "english": "Off",
+      "translation": "כבוי"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Mini_JukeBox_NotFarmPlay",
+      "english": "The Mini-Jukebox can only be played on your farm!",
+      "translation": "אפשר להפעיל את תיבת הנגינה הקטנה רק בחווה שלכם!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Mini_JukeBox_OutdoorRainy",
+      "english": "The Mini-Jukebox cannot be played in the rain!",
+      "translation": "אי אפשר להפעיל את תיבת הנגינה הקטנה בגשם!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_MissingIngredients",
+      "english": "Place cloth or dyeable clothing in the feed and materials in the spool to begin tailoring.",
+      "translation": "הניחו בד או בגד שניתן לצביעה על משטח ההזנה וחומרים בסליל כדי להתחיל לתפור."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Busy",
+      "english": "Now tailoring...",
+      "translation": "תופר כעת..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Valid",
+      "english": "Press the power button to begin tailoring!",
+      "translation": "לחצו על כפתור ההפעלה כדי להתחיל לתפור!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_InvalidRecipe",
+      "english": "The current materials cannot be used to tailor an item!",
+      "translation": "אי אפשר לתפור פריט מהחומרים הנוכחיים!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_NotDyeable",
+      "english": "The clothing item in the feed is not dyeable!",
+      "translation": "הבגד שעל משטח ההזנה אינו ניתן לצביעה!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_MakeResult",
+      "english": "You'll Make:",
+      "translation": "התוצאה:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_MakeResultUnknown",
+      "english": "???",
+      "translation": "???",
+      "preservationReason": "Unknown-result punctuation only."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Feed",
+      "english": "Feed",
+      "translation": "משטח הזנה",
+      "contextNote": "Sewing-machine cloth input/feed surface; not animal food. Other tailor strings explicitly describe cloth placed here."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Tailor_Spool",
+      "english": "Spool",
+      "translation": "סליל"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Clothes_Dyeable",
+      "english": "Dyeable.",
+      "translation": "ניתן לצביעה."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_Help",
+      "english": "Place an item of each color into the dye pots in order to dye any dyeable clothes you're wearing.",
+      "translation": "הניחו פריט מכל צבע בסירי הצבע כדי לצבוע את הבגדים המתאימים לצביעה שאתם לובשים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_CanDye",
+      "english": "Press the Dye button to color your clothes!",
+      "translation": "לחצו על כפתור הצביעה כדי לצבוע את הבגדים שלכם!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_WillDye",
+      "english": "Will dye:",
+      "translation": "פריטים שייצבעו:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DyePot_NoDyeable",
+      "english": "You aren't wearing any dyeable clothes.",
+      "translation": "אינכם לובשים בגדים שניתן לצבוע."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Input_EmoteButton",
+      "english": "Emote Menu",
+      "translation": "תפריט הבעות"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Happy",
+      "english": "Happy",
+      "translation": "שמחה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Sad",
+      "english": "Sad",
+      "translation": "עצב"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Heart",
+      "english": "Heart",
+      "translation": "לב"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Exclamation",
+      "english": "Exclamation",
+      "translation": "סימן קריאה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Note",
+      "english": "Note",
+      "translation": "תו מוזיקלי"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Sleep",
+      "english": "Sleep",
+      "translation": "שינה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Game",
+      "english": "Game",
+      "translation": "משחק"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Question",
+      "english": "Question",
+      "translation": "סימן שאלה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_X",
+      "english": "X",
+      "translation": "X",
+      "preservationReason": "Name of the X-shaped emote symbol, not English prose.",
+      "latinException": {
+        "tokens": [
+          "X"
+        ],
+        "reason": "The source names the X symbol itself."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Pause",
+      "english": "Pause",
+      "translation": "השהיה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Blush",
+      "english": "Blush",
+      "translation": "הסמקה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Angry",
+      "english": "Angry",
+      "translation": "כעס"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Yes",
+      "english": "Yes",
+      "translation": "כן"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_No",
+      "english": "No",
+      "translation": "לא"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Sick",
+      "english": "Sick",
+      "translation": "הרגשה רעה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Laugh",
+      "english": "Laugh",
+      "translation": "צחוק"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Emote_Surprised",
+      "english": "Surprised",
+      "translation": "הפתעה"
+    }
+  ]
+}

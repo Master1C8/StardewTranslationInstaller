@@ -1,0 +1,16 @@
+{
+  "locale": "nl",
+  "target": "Data/Events/IslandSouth",
+  "sourceAssetSha256": "71dbaa62314b0d482616ac61db8110765d17d1625577e8ea98ac11aa7225dc9d",
+  "reviewed": true,
+  "quotedReplacements": {
+    "PlayerKilled": {
+      " ...{2}?": " ...{2}?",
+      " {2}, wake up!": " {2}, word wakker!"
+    }
+  },
+  "preserveSourceEntries": ["IslandDepart"],
+  "notes": {
+    "IslandDepart": "Reviewed departure event; retained source-identical because it contains only engine commands, actor identifiers, music and sound identifiers, and numeric values."
+  }
+}

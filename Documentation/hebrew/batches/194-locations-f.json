@@ -1,0 +1,526 @@
+{
+  "id": "194-locations-f",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Strings/Locations": "892128ef8bb14de2375994caff8212e30574764bd8504c34798162dfe007a376"
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "alreadyGotNuts",
+      "english": "pause 50/pause 50/pause 1000/speak Birdie \"Though you're a stranger, you went out of your way to help an old lady.#$b#Bless your heart!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "translation": "pause 50/pause 50/pause 1000/speak Birdie \"אף שאתם זרים, התאמצתם במיוחד כדי לעזור לזקנה.#$b#תבורכו!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "latinException": {
+        "tokens": [
+          "pause",
+          "pause",
+          "pause",
+          "speak",
+          "Birdie",
+          "emote",
+          "Birdie",
+          "emote",
+          "farmer",
+          "pause",
+          "end"
+        ],
+        "reason": "These Latin tokens are event commands, actor names, asset identifiers, control keywords, and data IDs that the game engine must parse unchanged."
+      }
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "qiNutDoor",
+      "english": "You hear a strange voice from behind the door...#'Only the greatest walnut hunters may enter here.'^    Your current status: {0}/100",
+      "translation": "אתם שומעים קול מוזר מאחורי הדלת...#'רק ציידי אגוזי המלך הגדולים ביותר רשאים להיכנס לכאן.'^    מצבכם הנוכחי: {0}/100"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateBatteries",
+      "english": "Donate 5 battery packs to repair the ticket machine?",
+      "translation": "לתרום 5 מארזי סוללות לתיקון מכונת הכרטיסים?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateHardwood",
+      "english": "Donate 200 hardwood for hull repairs?",
+      "translation": "לתרום 200 יחידות עץ קשה לתיקון גוף הספינה?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateIridium",
+      "english": "Donate 5 iridium bars to repair the anchor?",
+      "translation": "לתרום 5 מטילי אירידיום לתיקון העוגן?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateBatteriesHint",
+      "english": "This machine could be repaired with 5 battery packs.",
+      "translation": "אפשר לתקן את המכונה הזאת באמצעות 5 מארזי סוללות."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateHardwoodHint",
+      "english": "The hull could be repaired with 200 pieces of hardwood.",
+      "translation": "אפשר לתקן את גוף הספינה באמצעות 200 יחידות עץ קשה."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateIridiumHint",
+      "english": "The anchor could be repaired with 5 iridium bars.",
+      "translation": "אפשר לתקן את העוגן באמצעות 5 מטילי אירידיום."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_boatcomplete",
+      "english": "All materials have been found!#The boat will be repaired overnight.",
+      "translation": "כל החומרים נמצאו!#הסירה תתוקן במהלך הלילה."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_firstRide",
+      "english": "She looks good as new!",
+      "translation": "היא נראית כמו חדשה!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_random0",
+      "english": "Sorry if I smell like fish, heh!",
+      "translation": "סליחה אם אני מריח כמו דגים, הה!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_random1",
+      "english": "Ahoy!",
+      "translation": "אהוי!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_Ostrich",
+      "english": "A new ostrich chick hatched... it's a big one!",
+      "translation": "בקע אפרוח יען חדש... והוא גדול!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeFinale",
+      "english": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Wow...#$b#Look how far we've come!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"The collection looks fantastic, and it's all thanks to you, @.\"/emote farmer 32/speak SafariGuy \"Here, as a way of saying 'thanks', I want to teach you something.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Learned how to craft 'Ostrich Incubator'\"/pause 400/speak SafariGuy \"This device will allow you to raise ostriches back home. Just place the incubator in a barn, place an ostrich egg inside, and wait...\"/faceDirection SafariGuy 0/speak SafariGuy \"Getting your hands on an ostrich egg is a different story, though... I'll leave that up to you!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Heh... Well... now the real work begins.#$b#I'll be studying these bones for years to come!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Farewell, @!\"/pause 600/end",
+      "translation": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"וואו...#$b#תראו כמה התקדמנו!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"האוסף נראה נפלא, והכול בזכותכם, @.\"/emote farmer 32/speak SafariGuy \"הנה, כאות תודה, אני רוצה ללמד אתכם משהו.\"/faceDirection farmer 3/pause 700/playSound reward/message \"למדתם ליצור 'מדגרת יענים'\"/pause 400/speak SafariGuy \"המכשיר הזה יאפשר לכם לגדל יענים בבית. פשוט הניחו את המדגרה באסם, הכניסו לתוכה ביצת יען וחכו...\"/faceDirection SafariGuy 0/speak SafariGuy \"אבל להשיג ביצת יען זה כבר סיפור אחר... את זה אשאיר לכם!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"הה... טוב... עכשיו מתחילה העבודה האמיתית.#$b#אחקור את העצמות האלה עוד שנים רבות!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"להתראות, @!\"/pause 600/end",
+      "latinException": {
+        "tokens": [
+          "distantBanjo",
+          "farmer",
+          "addCraftingRecipe",
+          "Ostrich",
+          "Incubator",
+          "addMailReceived",
+          "fieldOfficeFinale",
+          "skippable",
+          "addTemporaryActor",
+          "SafariGuy",
+          "true",
+          "character",
+          "translateName",
+          "SafariGuy",
+          "Strings",
+          "NPCNames",
+          "ProfessorSnail",
+          "pause",
+          "viewport",
+          "true",
+          "pause",
+          "speak",
+          "SafariGuy",
+          "faceDirection",
+          "SafariGuy",
+          "speak",
+          "SafariGuy",
+          "emote",
+          "farmer",
+          "speak",
+          "SafariGuy",
+          "faceDirection",
+          "farmer",
+          "pause",
+          "playSound",
+          "reward",
+          "message",
+          "pause",
+          "speak",
+          "SafariGuy",
+          "faceDirection",
+          "SafariGuy",
+          "speak",
+          "SafariGuy",
+          "pause",
+          "faceDirection",
+          "farmer",
+          "pause",
+          "speak",
+          "SafariGuy",
+          "faceDirection",
+          "SafariGuy",
+          "faceDirection",
+          "farmer",
+          "speak",
+          "SafariGuy",
+          "pause",
+          "end"
+        ],
+        "reason": "These Latin tokens are event commands, actor names, asset identifiers, control keywords, and data IDs that the game engine must parse unchanged."
+      }
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Squawk",
+      "english": "*Awk*",
+      "translation": "*אאק*"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoLava",
+      "english": "Fire mountain... Hidden down fire river...",
+      "translation": "הר אש... חבוי במורד נהר האש..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_BuriedArch",
+      "english": "Buried near bones...",
+      "translation": "קבור ליד עצמות..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Arch",
+      "english": "Help man in tent...",
+      "translation": "עזרו לאיש באוהל..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_NorthBuried",
+      "english": "{0} buried in the north...",
+      "translation": "{0} קבורים בצפון..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_WestBuried",
+      "english": "{0} buried in the west...",
+      "translation": "{0} קבורים במערב..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_NorthHidden",
+      "english": "{0} hidden in the north...",
+      "translation": "{0} חבויים בצפון..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_HutTree",
+      "english": "Bulging very close by...",
+      "translation": "בולט ממש בקרבת מקום..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_TigerSlime",
+      "english": "Stripey slimes to the west...",
+      "translation": "סליימים מפוספסים במערב..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_MusselStone",
+      "english": "{0} stuck in shelly stones by shore...",
+      "translation": "{0} תקועים באבני צדפים ליד החוף..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_IslandFarming",
+      "english": "{0} grow on the farm to the west...",
+      "translation": "{0} גדלים בחווה במערב..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_WestHidden",
+      "english": "{0} hidden in the west...",
+      "translation": "{0} חבויים במערב..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_IslandFishing",
+      "english": "{0} deep in the water...",
+      "translation": "{0} בעומק המים..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoTreasure",
+      "english": "{0} hidden in fire mountain treasures...",
+      "translation": "{0} חבויים באוצרות הר האש..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoBarrel",
+      "english": "{0} encased in fire mountain gadgets...",
+      "translation": "{0} כלואים במתקנים של הר האש..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoMining",
+      "english": "{0} nutty stone in fire mountain...",
+      "translation": "{0} באבנים בהר האש..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoMonsters",
+      "english": "{0} taken by monsters in fire mountain...",
+      "translation": "{0} נלקחו בידי מפלצות בהר האש..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Journal",
+      "english": "Hidden in the pages of the journal...",
+      "translation": "חבוי בדפי היומן..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_SouthEastBuried",
+      "english": "{0} buried... Pirate's cove...",
+      "translation": "{0} קבורים... מפרץ הפיראטים..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_StardropPool",
+      "english": "Bathing in the heart of the star...",
+      "translation": "רוחץ בלב הכוכב..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Caldera",
+      "english": "Atop fire mountain...",
+      "translation": "בפסגת הר האש..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Gourmand",
+      "english": "Kribbit... Gurrrp...",
+      "translation": "קריביביט... גורררפ..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_IslandShrine",
+      "english": "Hidden shrine in rain forest...",
+      "translation": "מקדש חבוי ביער הגשם..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_GoldenCoconut",
+      "english": "Inside hard, gold thing...",
+      "translation": "בתוך דבר קשה וזהוב..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSouth_ResortOpenSign",
+      "english": "The beach resort is open. Temporarily close it down tomorrow?",
+      "translation": "אתר הנופש בחוף פתוח. לסגור אותו זמנית מחר?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSouth_ResortOpenWillCloseSign",
+      "english": "The beach resort will temporarily close tomorrow. Keep it open?",
+      "translation": "אתר הנופש בחוף ייסגר זמנית מחר. להשאיר אותו פתוח?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSouth_ResortClosedSign",
+      "english": "The beach resort is temporarily closed. Open it back up tomorrow?",
+      "translation": "אתר הנופש בחוף סגור זמנית. לפתוח אותו מחדש מחר?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSouth_ResortClosedWillOpenSign",
+      "english": "The beach resort will open back up tomorrow. Keep it closed?",
+      "translation": "אתר הנופש בחוף ייפתח מחדש מחר. להשאיר אותו סגור?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSouth_ResortWillOpenSign",
+      "english": "The beach resort will be open tomorrow.",
+      "translation": "אתר הנופש בחוף יהיה פתוח מחר."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSouth_ResortWillCloseSign",
+      "english": "The beach resort will be closed tomorrow.",
+      "translation": "אתר הנופש בחוף יהיה סגור מחר."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LAF_Check",
+      "english": "The town's 'Lost and Found' box.",
+      "translation": "תיבת 'אבדות ומציאות' של העיירה."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LAF_Check_OrdersUnlocked",
+      "english": "The town's 'Lost and Found' box. You can collect incomplete deliveries from past special orders here.",
+      "translation": "תיבת 'אבדות ומציאות' של העיירה. אפשר לאסוף כאן משלוחים שלא הושלמו מהזמנות מיוחדות קודמות."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LAF_DonationItems",
+      "english": "Collect lost items and incomplete deliveries",
+      "translation": "איסוף חפצים שאבדו ומשלוחים שלא הושלמו"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LAF_FarmhandItems",
+      "english": "Retrieve items from offline farmhands",
+      "translation": "אחזור חפצים של עובדי חווה שאינם מחוברים"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_LAF_FarmhandItemsQuestion",
+      "english": "Who would you like to retrieve items from?",
+      "translation": "ממי תרצו לאחזר חפצים?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeDonated_0",
+      "english": "Ah... Now this is a truly fascinating piece of natural history! Thank you.",
+      "translation": "אה... זו באמת פיסה מרתקת של ההיסטוריה הטבעית! תודה."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeDonated_1",
+      "english": "Beautiful! These bones are exactly what I'm looking for. Now, let me clean my magnifying lens...",
+      "translation": "נהדר! אלה בדיוק העצמות שחיפשתי. עכשיו, תנו לי לנקות את עדשת הזכוכית המגדלת שלי..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeDonated_2",
+      "english": "You've outdone yourself, @. This is one of the most pristine specimens I've ever seen. Thank you!$h",
+      "translation": "התעליתם על עצמכם, @. זו אחת הדגימות השמורות ביותר שראיתי מעודי. תודה!$h"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeDonated_3",
+      "english": "To think... generations have come and gone while this little bone lay hidden beneath the soil. Now it's mine!",
+      "translation": "מי היה מאמין... דורות באו וחלפו בזמן שהעצם הקטנה הזאת שכבה חבויה מתחת לאדמה. עכשיו היא שלי!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeDonated_Reward",
+      "english": "And would you look at that! With this donation, we've got another full set piece completed.$h#$b#I've got a little something waiting for you behind the counter, when you're ready for it!",
+      "translation": "ותראו את זה! בזכות התרומה הזאת השלמנו עוד חלק שלם מן האוסף.$h#$b#מחכה לכם משהו קטן מאחורי הדלפק, כשתהיו מוכנים לקבל אותו!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Volcano_ShortcutOut",
+      "english": "Take the shortcut out of the volcano?",
+      "translation": "לצאת מהר הגעש דרך קיצור הדרך?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "SeedShop_MoneyBox",
+      "english": "I'm taking the day off to visit the island. Please place your money in the box. No cheating!^     -Pierre",
+      "translation": "יצאתי לחופשה היום כדי לבקר באי. נא להניח את הכסף בתיבה. בלי לרמות!^     -פייר"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalShop_MoneyBox",
+      "english": "I'm visiting the island today. If you need to buy anything, just leave the money in this box!^     -Marnie",
+      "translation": "אני מבקרת באי היום. אם אתם צריכים לקנות משהו, פשוט השאירו את הכסף בתיבה הזאת!^     -מארני"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Saloon_MoneyBox",
+      "english": "I'm tending the bar on Ginger Island today, but I won't let that stop you from buying something!^     -Gus",
+      "translation": "אני מטפל היום בבר שבאי הג'ינג'ר, אבל זה לא ימנע מכם לקנות משהו!^     -גאס"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_MoneyBox",
+      "english": "I'm on the island today, but you can still buy something. It's an honor system!^     -Robin",
+      "translation": "אני באי היום, אבל עדיין תוכלו לקנות משהו. אני סומכת על היושר שלכם!^     -רובין"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ChallengeShrine_NotYetHard",
+      "english": "         --Shrine Of Challenge--^Dispel the ancient magi-seal of protection, allowing powerful monsters to ascend from the deep?",
+      "translation": "         --מקדש האתגר--^להסיר את חותם ההגנה הקסום העתיק ולאפשר למפלצות רבות עוצמה לעלות מן המעמקים?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ChallengeShrine_AlreadyHard",
+      "english": "         --Shrine Of Challenge--^Summon an ancient magi-seal protection, returning the mines to their original state?",
+      "translation": "         --מקדש האתגר--^לזמן חותם הגנה קסום עתיק ולהחזיר את המכרות למצבם המקורי?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ChallengeShrine_Activated",
+      "english": "Your request will be granted overnight.",
+      "translation": "בקשתכם תתממש במהלך הלילה."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ChallengeShrine_AlreadyActive",
+      "english": "You've already put in a request.",
+      "translation": "כבר הגשתם בקשה."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ChallengeShrine_OnQiChallenge",
+      "english": "There's a note from Mr. Qi: ^ I've temporarily disabled this shrine. Come back tomorrow!",
+      "translation": "יש פתק ממר צ'י: ^ השבתתי זמנית את המקדש הזה. חזרו מחר!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Gil_Telephone",
+      "english": "Hey. 150 Magma Sprites, huh? I'm impressed.#$b#Tell you what... I'm gonna give you Marlon's tellie-phone number. He don't like me givin' it out, but I think you've earned it.#$b#If you ever need to use the Item Recovery Service, but don't wanna run all the way out here... just give us a ring. Sound good?",
+      "translation": "היי. 150 שדוני מאגמה, מה? התרשמתי.#$b#אגיד לכם מה... אני אתן לכם את מספר הטלפון של מרלון. הוא לא אוהב שאני מוסר אותו, אבל נראה לי שהרווחתם אותו ביושר.#$b#אם אי פעם תצטרכו להשתמש בשירות השבת פריטים, אבל לא תרצו לרוץ עד לכאן... פשוט תתקשרו אלינו. נשמע טוב?"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_MagmaSprite",
+      "english": "Magma Sprites",
+      "translation": "שדוני מאגמה"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_HouseFull",
+      "english": "An egg is ready to hatch, but the building is full.",
+      "translation": "ביצה מוכנה לבקוע, אבל המבנה מלא."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_Carpenter_CommunityUpgrade2",
+      "english": "...What's that? You'd like me to add a few shortcuts around the valley? Sure, I can do that!^I'll just need 300,000g...",
+      "translation": "...מה אמרתם? אתם רוצים שאוסיף כמה קיצורי דרך ברחבי העמק? בטח, אני יכולה לעשות את זה!^אני רק אצטרך 300,000g...",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "These Latin tokens are event commands, actor names, asset identifiers, control keywords, and data IDs that the game engine must parse unchanged."
+      }
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_GoldenEgg",
+      "english": "A sparkling golden chick hatched!",
+      "translation": "בקע אפרוח זהוב ונוצץ!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "SummitBoulder",
+      "english": "It seems impossible to budge...",
+      "translation": "לא נראה שאפשר להזיז את זה..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Hint",
+      "english": "Hint",
+      "translation": "רמז"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Backwoods_MonsterGrave",
+      "english": "Abigail took a life to save mine...#I'll never forget that.",
+      "translation": "אביגייל נטלה חיים כדי להציל את חיי...#לעולם לא אשכח זאת."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "0508-characters-080-084",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/Characters",
+  "status": "reviewed",
+  "entries": {
+    "MovieTheater_CurrentlyShowing": "В момента прожектират филм. Върни се по-късно.",
+    "MovieTheater_AlreadySeen": "Тази седмица вече изгледа един филм.",
+    "MovieTheater_WatchAlonePrompt": "Искаш ли да използваш билета си за кино и да гледаш филма без компания?",
+    "MovieTheater_WatchWithFriendPrompt": "Искаш ли да използваш билета си за кино и да гледаш филма с {0}?",
+    "MovieTheater_LeavePrompt": "Наистина ли искаш да напуснеш Киносалона, без да гледаш филма?"
+  },
+  "sourceHashes": {
+    "MovieTheater_CurrentlyShowing": "f4bf4d079318f6046ba106ed0ddc05ba3b4776ed3be4cd3ed90ffc4da4f63fb0",
+    "MovieTheater_AlreadySeen": "29d6df819d45811f93a741e18823c3f6e7f8710333837c4a033807fdc28a15ca",
+    "MovieTheater_WatchAlonePrompt": "c2ef795ffb3f3e0d13f8e1bb850eda79a876dd864ce4eeaaf1862a0e4f03cb5a",
+    "MovieTheater_WatchWithFriendPrompt": "146dd20e2213f565290c4165faff761de932bf185fda47b689363c8559257cf5",
+    "MovieTheater_LeavePrompt": "149d643c1df28cd3705d5041efa277d5706364aa6062be15a6f0760f12f982b5"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 5,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated five complete Movie Theater state and confirmation prompts directly from English.",
+      "Applied locked Киносалон and билет за кино terminology and used „без компания“ to express watching alone without assigning a player gender.",
+      "Reread screening availability, weekly viewing state, ticket consumption, friend placeholder and leave-without-watching confirmation; refined the weekly line to preserve the explicit watched-film meaning."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "84390d41466c53d058d2c3ad3e113438798316f11661bd5cedf30dca50636469"
+  }
+}

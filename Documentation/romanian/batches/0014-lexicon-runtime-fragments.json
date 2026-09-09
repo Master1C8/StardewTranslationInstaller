@@ -1,0 +1,97 @@
+{
+  "locale": "ro",
+  "target": "Strings/Lexicon",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Complete 20-entry lexical asset translated directly after inspecting installed Lexicon and every call site in full assembly decompilation. Child/adult gender suffixes select speaker vocabulary, not adjective agreement: PurchasedItem_5_Cooking applies those adjectives to Pierre as chef. All adjective variants use masculine singular; future Romanian caller clauses must use bucătar, miros, preparat or ceva. PurchasedItem_1 descriptions take adjective 3 for miros; PurchasedItem_3 uses adjective 4 for food and optional noun 5 for rubbish. NPC.cs.4135/.4138 must describe item as ceva before adjective 1. Child and pronoun forms match the already reviewed Chat_Baby; possessives match Chat_HouseUpgrade. All # alternatives remain in source order and none is empty. Editorial follow-up uses familiar fain for nifty and established vomitiv for sickening. For PurchasedItem_1, use Mirosea a ceva {3} în toată casa so every culinary adjective, including sățios, has a natural referent.",
+  "entries": {
+    "RandomNegativeItemNoun": {
+      "source": "garbage#trash#junk#slop#crap",
+      "translation": "gunoi#deșeu#rebut#terci#rahat"
+    },
+    "RandomPositiveAdjective_Child": {
+      "source": "cool#fun#neat#nice#nifty#super#great",
+      "translation": "cool#distractiv#grozav#plăcut#fain#super#minunat",
+      "previousTranslation": "cool#distractiv#grozav#plăcut#șic#super#minunat"
+    },
+    "RandomPositiveAdjective_AdultMale": {
+      "source": "interesting#exciting#neat#fun#great#terrific",
+      "translation": "interesant#captivant#grozav#distractiv#minunat#formidabil"
+    },
+    "RandomPositiveAdjective_AdultFemale": {
+      "source": "wonderful#amazing#heart-warming#magical#incredible#lovely#exhilarating#delightful",
+      "translation": "minunat#uimitor#înduioșător#magic#incredibil#fermecător#însuflețitor#încântător"
+    },
+    "RandomPositiveAdjective_PlaceOrEvent": {
+      "source": "wonderful#amazing#heart-warming#magical#incredible#lovely#exhilarating#delightful",
+      "translation": "minunat#uimitor#înduioșător#magic#incredibil#fermecător#însuflețitor#încântător"
+    },
+    "RandomDeliciousAdjective": {
+      "source": "delicious#tasty#wonderful#satisfying#filling#scrumptious#appetizing#delightful",
+      "translation": "delicios#gustos#minunat#satisfăcător#sățios#savuros#apetisant#încântător"
+    },
+    "RandomDeliciousAdjective_Child": {
+      "source": "yummy",
+      "translation": "bun-bun"
+    },
+    "RandomNegativeFoodAdjective_Child": {
+      "source": "gross",
+      "translation": "scârbos"
+    },
+    "RandomNegativeFoodAdjective_Polite": {
+      "source": "...interesting#...unusual#...different#...unconventional",
+      "translation": "...interesant#...neobișnuit#...diferit#...neconvențional"
+    },
+    "RandomNegativeFoodAdjective": {
+      "source": "nasty#gross#disgusting#despicable#revolting#sickening#awful#repulsive#nauseating#foul#horrendous#putrid",
+      "translation": "scârbos#grețos#dezgustător#detestabil#respingător#vomitiv#groaznic#repulsiv#grețos#infect#îngrozitor#putred",
+      "previousTranslation": "scârbos#grețos#dezgustător#detestabil#respingător#îngrețoșător#groaznic#repulsiv#grețos#infect#îngrozitor#putred"
+    },
+    "RandomSlightlyPositiveFoodAdjective": {
+      "source": "decent#good#edible",
+      "translation": "acceptabil#bun#comestibil"
+    },
+    "ChildTerm_Male": {
+      "source": "boy",
+      "translation": "băiețel"
+    },
+    "ChildTerm_Female": {
+      "source": "girl",
+      "translation": "fetiță"
+    },
+    "Pronoun_Male": {
+      "source": "him",
+      "translation": "el"
+    },
+    "Pronoun_Female": {
+      "source": "her",
+      "translation": "ea"
+    },
+    "QuestionDialogue_Yes": {
+      "source": "Yes",
+      "translation": "Da"
+    },
+    "QuestionDialogue_No": {
+      "source": "No",
+      "translation": "Nu"
+    },
+    "GenericPlayerTerm": {
+      "source": "farmer",
+      "translation": "fermier"
+    },
+    "Possessive_Pronoun_Male": {
+      "source": "his",
+      "translation": "lui"
+    },
+    "Possessive_Pronoun_Female": {
+      "source": "her",
+      "translation": "ei"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "Strings/Characters",
+  "records": 171,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All entries read against English: speaker and player gender, source Data/Characters kinship context, phone hours, glossary names, movie insertion grammar, and every Lewis choice/reply",
+  "newTextIssues": 3,
+  "corrections": [
+    {
+      "key": "WipedMemory",
+      "before": "Ти си одскора на фарми, зар не?#$e#Делујеш ми... не. Сигурно се никад нисмо срели.",
+      "after": "Ти си одскора на фарми, зар не?#$e#Делујеш ми... не. Сигурно нам је ово први сусрет.",
+      "reason": "Avoid unsupported gender agreement: generic speaker/player pairing or original Data/Characters Gender.Undefined.",
+      "batch": "0037-characters-family"
+    },
+    {
+      "key": "Henchman2",
+      "before": "Жао ми је, али не могу да те пустим... Изгубио бих посао.",
+      "after": "Жао ми је, али не могу да те пустим... То би ме коштало посла.",
+      "reason": "Avoid unsupported gender agreement: generic speaker/player pairing or original Data/Characters Gender.Undefined.",
+      "batch": "0038-characters-mines-saloon"
+    },
+    {
+      "key": "MovieInvite_Invited_Dwarf",
+      "before": "Фи-шта? Па, сигуран сам да ће ми се допасти! Радо ћу поћи с тобом.",
+      "after": "Фи-шта? Па, сигурно ће ми се допасти! Радо ћу поћи с тобом.",
+      "reason": "Avoid unsupported gender agreement: generic speaker/player pairing or original Data/Characters Gender.Undefined.",
+      "batch": "0039-characters-movie-invites"
+    }
+  ],
+  "allTextFindingsCorrected": true,
+  "translationSha256": "71f36297e6e1f259e8305d554ea6093075dc10e628dd0936590de5c066405252",
+  "finalLocaleCleanAudits": 0
+}

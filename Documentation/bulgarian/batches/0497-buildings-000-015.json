@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0497-buildings-000-015",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/Buildings",
+  "status": "reviewed",
+  "entries": {
+    "UnderConstruction": "В строеж.",
+    "DismountBeforeEntering": "Слез, преди да влезеш",
+    "PiecesOfHay": "Парчета Сено: {0}/{1}",
+    "AddedHay": "В Силоза е добавено Сено ({0} бр.).",
+    "MillFull": "Няма свободно място",
+    "CantMill": "Не може да се смели",
+    "NeedSilo": "Изисква се Силоз",
+    "CantEnter": "Не можеш да влезеш в момента",
+    "WrongFishType": "Рибарник за {1} не е подходящ за {0}.",
+    "WrongFishTypeCoral": "За {0} е подходящ единствено Рибарник за {0}.",
+    "CantPutInPonds": "Там не е подходящо място за {0}.",
+    "NoFish": "В този Рибарник могат да се поставят риби.",
+    "PondFull": "Този Рибарник е пълен.",
+    "Paint_Region_Building": "Сграда",
+    "Paint_Region_Roof": "Покрив",
+    "Paint_Region_Trim": "Кантове"
+  },
+  "sourceHashes": {
+    "UnderConstruction": "686818b03a86839e6f5d3665e8dde2596c163ddd8795ac2c58e87060aee497f9",
+    "DismountBeforeEntering": "0ae96b9cf66be6983fb433ebbab1cddb6ad66922c654df28f5d313580a33a703",
+    "PiecesOfHay": "353eecdc71d46353690ef4dfd1b7465cc4c55dfad60ce9bc18b16ceee430fbd4",
+    "AddedHay": "5c0c58c771fb62958fd9fd879ed9f4b70aea8c8b092e8e582a1ed25bead85b99",
+    "MillFull": "385812e34b2bfa17f1a97dceed143b92b240ae8667eb5c3ee4f8a5d8484d2c39",
+    "CantMill": "a0d3bc5fde6a00f57e30a9ab697c0caeea052a1f55bef3cf28af5be1806ef2de",
+    "NeedSilo": "1321e8ec13d73e52a1de0d0711524e4f850730f07e34f76ef38e7969bfedf431",
+    "CantEnter": "548336dc60f3ee99fd04fb8dcdc013e2209ca1ab6133e669505a202848072014",
+    "WrongFishType": "3578946d76aeead478356514230e6b77429fcb6c02cfb9e94b6086d0ae1d7c20",
+    "WrongFishTypeCoral": "f045e6cee435681d8ce7ee2ba84ec7538d03e696a27ce863a70ed71caec4117b",
+    "CantPutInPonds": "593e415d89952c8fa259755542797398840c70d695746c75fb7ebbbc5033f024",
+    "NoFish": "7c5330dd37298fbd38e803e074364564de197cac581897c93dc23030f63494d1",
+    "PondFull": "52b2c6f74c606b8dd0211a5d78d611f916ffa353466d508630ee6e7d307aecb2",
+    "Paint_Region_Building": "87c5912f2cefdf9d7d1913611187fa8ab653a89a8d4b65f574812f899834e8b1",
+    "Paint_Region_Roof": "c2f6a4d9ec7682e63186abf240fadcaf9a3cd1950c3a16d91330e7589018c039",
+    "Paint_Region_Trim": "aaa5478b266f283fcab0c3616cdf2ddecde6f4a66b918356d53e05db16b7975a"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated the initial construction, hay-storage, mill, fish-pond and building-paint interface records directly from English.",
+      "Applied locked Сено, Силоз and Рибарник terminology and used placeholder-safe Bulgarian constructions that avoid assigning unsupported grammatical gender to dynamic fish names.",
+      "Reread all sixteen records for state, capacity and placement meaning; a negative fixture removing the {1} pond-type placeholder was rejected by the validator."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "eaa2a6cd1ffc2c323394b555c84eb5728aac265cf1782f4e8a615cb44563d48a"
+  }
+}

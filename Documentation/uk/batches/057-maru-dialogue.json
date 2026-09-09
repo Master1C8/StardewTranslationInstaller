@@ -1,0 +1,797 @@
+{
+  "id": "057-maru-dialogue",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of every Maru dialogue entry. Curious, scientific, warm and practical voice, technical terminology, family relationships, seasonal dialogue, player gender handling, canonical glossary terms, response identifiers, conditional branches, gender variants, placeholders, emotes, and control tokens were checked against English. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "f625ae0ebdcfc3ab0502559bbb4211e1f7cb9d18fd1205deed3e87d218abc35f",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 16
+  },
+  "records": [
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Introduction",
+      "english": "Oh! Aren't you the one who just moved in?#$b#I'm Maru. I've been looking forward to meeting you!$h#$e#You know, with a small town like this, a new face can really alter the community dynamic. It's exciting!",
+      "translation": "О! Це ж ти тепер живеш тут?#$b#Я Мару. Я з нетерпінням чекала на знайомство з тобою!$h#$e#Знаєш, у такому маленькому містечку нове обличчя може суттєво змінити життя громади. Це захопливо!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "FlowerDance_Accept",
+      "english": "Heh... sure! Suddenly, the dance sounds a lot more fun.$h",
+      "translation": "Хе-хе... Звісно! Тепер цей танець здається набагато веселішим.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptBirthdayGift_Positive",
+      "english": "Hey, what's this, a birthday gift? It's great! Thanks for remembering me!$h",
+      "translation": "Гей, що це — подарунок на день народження? Він чудовий! Дякую, що пам’ятаєш про мене!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptBirthdayGift_Negative",
+      "english": "Hey, what's this, a birthday gift? It's... uh, well, it's a gift! Thanks for remembering me, anyway.",
+      "translation": "Гей, що це — подарунок на день народження? Це... е-е, ну, це подарунок! Усе одно дякую, що пам’ятаєш про мене.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptGift_(O)StardropTea",
+      "english": "Mmm... How does it taste so good? This is really a great gift.",
+      "translation": "М-м-м... Як він може бути таким смачним? Це справді чудовий подарунок.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptGift_(O)787",
+      "english": "This will be perfect for powering my latest project! Thanks, @!$h",
+      "translation": "Це ідеально живитиме мій найновіший проєкт! Дякую, @!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptGift_(O)336",
+      "english": "Ah, pure gold... It's not the strongest material, but it has some really useful properties!$h",
+      "translation": "А, чисте золото... Це не найміцніший матеріал, але він має кілька дуже корисних властивостей!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptGift_(O)337",
+      "english": "Oh, wow! That's a rare element. It's theorized that all the iridium in our world comes from meteorites...$h",
+      "translation": "Ого! Це рідкісний елемент. Існує теорія, що весь іридій у нашому світі потрапив сюди з метеоритами...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptGift_(O)122",
+      "english": "Ooh, this is exciting! I'll deconstruct it and see if I can reverse-engineer the technology.$h",
+      "translation": "О-о, як захопливо! Я розберу це й спробую відтворити технологію.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "AcceptGift_(O)910",
+      "english": "Ahh! Be careful with that! Are you touching it with your bare hands?$9#$b#... Sorry... hehe... With proper handling, this will be perfect for an exotic machine I'm building.",
+      "translation": "А-а! Обережніше з цим! Ти торкаєшся його голими руками?$9#$b#...Вибач... Хе-хе... За належного поводження це ідеально підійде для екзотичної машини, яку я будую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "dating_Maru",
+      "english": "Ummm... Don't break the news to my Dad, okay? I'll handle it.",
+      "translation": "Е-е-е... Тільки не кажи моєму татові, гаразд? Я сама з ним поговорю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "dating_Maru_memory_oneday",
+      "english": "Mmm... I'm having a hard time focusing on my work today.$l",
+      "translation": "М-м-м... Сьогодні мені важко зосередитися на роботі.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "GreenRain",
+      "english": "I want to go collect samples with my dad, but my Mom is insisting we stay here...",
+      "translation": "Я хочу піти збирати зразки з татом, але мама наполягає, щоб ми залишалися тут...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "GreenRain_2",
+      "english": "This is a rare opportunity to study a unique phenomenon... every moment counts!",
+      "translation": "Це рідкісна нагода дослідити унікальне явище... Кожна мить важлива!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "eventSeen_9",
+      "english": "I should've spent more time on that piece before showing you...$s",
+      "translation": "Треба було довше попрацювати над тим пристроєм, перш ніж показувати його тобі...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "eventSeen_9_memory_oneweek",
+      "english": "How's your hand feeling?#$b#Let me see it... Hey, it looks all better!$h",
+      "translation": "Як твоя рука?#$b#Дай погляну... Гей, вона вже зовсім загоїлася!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "married_Sebastian",
+      "english": "Hey, I guess we're brother and sister now!$h^Hey, I guess we're sisters now!$h#$e#I'm glad that Sebastian found a way out of the basement...#$e#I wish you two all the best!",
+      "translation": "Гей, схоже, тепер ми брат і сестра!$h^Гей, схоже, тепер ми сестри!$h#$e#Я рада, що Себастьян знайшов спосіб вибратися з підвалу...#$e#Бажаю вам обом усього найкращого!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "married_Penny",
+      "english": "Hey, congratulations!$h#$b#I remember the first time Penny told me she had feelings for you...#$b#She was all shy about it, but I knew right away it was serious... she wouldn't say something like that if she didn't mean it!",
+      "translation": "Гей, вітаю!$h#$b#Пам’ятаю, як Пенні вперше зізналася мені у своїх почуттях до тебе...#$b#Вона дуже соромилася, але я відразу зрозуміла, що все серйозно... Вона не сказала б такого, якби не говорила щиро!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "married_Harvey",
+      "english": "You always seemed far too healthy to be at the clinic so often... Now it's all starting to make sense...",
+      "translation": "У тебе завжди надто здоровий вигляд як для таких частих відвідин клініки... Тепер усе стає зрозуміло...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Resort_Entering",
+      "english": "Willy mentioned that you helped fix the boat. Thanks for doing that!",
+      "translation": "Віллі розповів про твою допомогу з ремонтом човна. Дякую!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Resort_Leaving",
+      "english": "That was fun!",
+      "translation": "Було весело!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Resort",
+      "english": "I've been noticing a few different starfish species. My favorite are the big purple ones, but they're all very interesting!",
+      "translation": "Я помітила тут кілька різних видів морських зірок. Найбільше мені подобаються великі фіолетові, але всі вони дуже цікаві!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Resort_Towel",
+      "english": "*gasp*... It's a solar eclipse!$3#$b#Oh... never mind. It's just your body blocking the sun.",
+      "translation": "*зойк*... Сонячне затемнення!$3#$b#Ой... Ні. Це просто твоє тіло затуляє сонце.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Resort_Towel_2",
+      "english": "We're so far removed from civilization out here.#$b#Imagine the stars you could see at night.#$e#Who knows, maybe we'd even see a flying saucer or two!$h",
+      "translation": "Тут ми так далеко від цивілізації.#$b#Уяви, які зорі можна побачити вночі.#$e#Хтозна, може, ми навіть побачимо одну-дві летючі тарілки!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Resort_Bar",
+      "english": "Mmmm... Why are tropical fruits so good?",
+      "translation": "М-м-м... Чому тропічні фрукти такі смачні?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Resort_Shore",
+      "english": "I wonder if Willy would let me bring my telescope here sometime...#The sky is so clear here, I bet I could spot Pelican Town out in the horizon.#Maybe I'd even see you running around %farm Farm!",
+      "translation": "Цікаво, чи дозволив би Віллі якось узяти сюди мій телескоп...#Небо тут таке ясне — певно, я змогла б розгледіти містечко Пелікан на обрії.#Може, навіть побачила б, як ти бігаєш фермою «%farm»!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "FlowerDance_Accept_Spouse",
+      "english": "Of course... *whisper* Then can we go home and snuggle?$l",
+      "translation": "Звісно... *пошепки* А потім ми зможемо піти додому й пообійматися?$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "FlowerDance_Decline",
+      "english": "I'm flattered! But... No.",
+      "translation": "Мені дуже приємно! Але... Ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "divorced",
+      "english": "We have nothing to say to each other.$a",
+      "translation": "Нам немає про що говорити.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "breakUp",
+      "english": "Not good enough for you, huh?$a#$b#Fine...$s",
+      "translation": "Отже, я недостатньо хороша для тебе?$a#$b#Гаразд...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "dumped_Girls",
+      "english": "You've got some nerve, speaking to me!$a",
+      "translation": "І тобі ще вистачає нахабства зі мною говорити!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "secondChance_Girls",
+      "english": "You've lost some respect with me, @... but I'm willing to forgive you.$s",
+      "translation": "Я втратила частину поваги до тебе, @... Але готова тебе пробачити.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Mon",
+      "english": "Whenever I'm struggling with a technical problem, I always take a walk.#$e#It's surprising how much a change of scenery can help.",
+      "translation": "Коли я ніяк не можу розв’язати технічну проблему, то завжди йду прогулятися.#$e#Дивовижно, наскільки може допомогти зміна обстановки.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Tue",
+      "english": "Have you met my mother? She's the town's carpenter.",
+      "translation": "Тобі вже доводилося зустрічати мою маму? Вона місцева теслярка.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Wed",
+      "english": "On Tuesdays and Thursdays I work at Harvey's clinic.#$b#He says he likes having me around in case his medical equipment goes haywire!$h#$e#Being a farmer must be pretty easy, huh?",
+      "translation": "Щовівторка й щочетверга я працюю в Клініці Гарві.#$b#Він каже, що йому спокійніше, коли я поруч, якщо медичне обладнання раптом почне барахлити!$h#$e#Бути фермером, мабуть, доволі легко, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Thu",
+      "english": "I plan on spending a lot of time with my telescope this summer.",
+      "translation": "Цього літа я планую проводити багато часу з телескопом.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Thu4",
+      "english": "Sometimes, when I'm looking into space with my telescope, I get struck with this eerie feeling... Like we aren't meant to see this.#$e#It's silly, I know...$h",
+      "translation": "Іноді, коли я дивлюся в космос крізь телескоп, мене охоплює моторошне відчуття... Ніби нам не судилося цього бачити.#$e#Знаю, це безглуздо...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sat",
+      "english": "Do you know my Dad, Demetrius? He's a scientist. I have a lot of fun helping him out in the laboratory.",
+      "translation": "Знаєш мого тата, Деметріуса? Він науковець. Мені дуже подобається допомагати йому в лабораторії.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sat2",
+      "english": "It's really satisfying when you can repair something yourself, instead of just throwing it away.",
+      "translation": "Так приємно, коли можеш самотужки щось полагодити, а не просто викинути.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sat4",
+      "english": "Some people say 'magic isn't real'... but have they ever stopped and really thought about magnetism?",
+      "translation": "Дехто каже: «Магії не існує»... Але чи замислювалися вони по-справжньому над магнетизмом?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sat6",
+      "english": "If you think about the human body, it's hard to believe that somehow, it all just 'works'.",
+      "translation": "Якщо замислитися над людським тілом, важко повірити, що воно якимось чином просто «працює».",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sat8",
+      "english": "You know, I was thinking... even with all the technology in the world, nothing beats having a real human friend.",
+      "translation": "Знаєш, я тут подумала... Навіть з усіма технологіями світу ніщо не зрівняється зі справжньою дружбою з людиною.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Fri",
+      "english": "Hey, sorry if I seem cranky... I'm a little sore from work yesterday.#$c .5# I had to carry ten boxes of medical files to the attic!#$e#I had to sort patient records for four hours straight! ",
+      "translation": "Гей, вибач, якщо здаюся сердитою... Після вчорашньої роботи в мене трохи все болить.#$c .5# Мені довелося віднести на горище десять коробок із медичними картами!#$e#Мені довелося чотири години поспіль упорядковувати картки пацієнтів! ",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sun",
+      "english": "Hi!#$q 3/4 Sun_01_old#Do you have fun working on the farm?#$r 3 0 Sun_01_01#Yes.#$r 4 0 Sun_01_02#No.",
+      "translation": "Привіт!#$q 3/4 Sun_01_old#Тобі подобається працювати на фермі?#$r 3 0 Sun_01_01#Так.#$r 4 0 Sun_01_02#Ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sun_01_old",
+      "english": "$p 3#Hey, you've made another week of progress on the farm! It seems like things are going well for you.$h|Another tiring week on the farm, huh? It must really be a lot of work...$s",
+      "translation": "$p 3#Гей, твоя ферма розвивалася ще один тиждень! Схоже, у тебе все йде добре.$h|Ще один виснажливий тиждень на фермі, так? Мабуть, це справді важка праця...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sun_01_01",
+      "english": "Well that's good, isn't it?$h",
+      "translation": "Це ж добре, правда?$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Sun_01_02",
+      "english": "Yikes! I'm sorry. Have you ever thought of doing something different...?$s",
+      "translation": "Ой! Мені шкода. Тобі не спадало на думку зайнятися чимось іншим...?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Tue2",
+      "english": "Stop by our house when you need to upgrade your buildings.#$e#It's always nice to have visitors.",
+      "translation": "Заходь до нас, коли захочеш покращити свої будівлі.#$e#Ми завжди раді гостям.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Fri4",
+      "english": "My mother is a carpenter and my dad is a scientist. I guess it makes sense that I'm into building gadgets.",
+      "translation": "Моя мама — теслярка, а тато — науковець. Тож, мабуть, не дивно, що я люблю майструвати пристрої.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Fri6",
+      "english": "My Dad is very logical, and my Mom is very intuitive. That difference leads to conflict, sometimes...$s",
+      "translation": "Мій тато дуже логічний, а мама покладається на інтуїцію. Іноді ця відмінність призводить до суперечок...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Mon6",
+      "english": "Sometimes my head gets so cluttered with nonsense I can hardly think. Does that ever happen to you?#$e#Getting some fresh air usually helps.",
+      "translation": "Іноді в голові стільки всіляких дурниць, що я ледь можу думати. З тобою таке буває?#$e#Зазвичай свіже повітря допомагає.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Wed8",
+      "english": "I'm glad to have a job at the clinic... I feel like I'm helping people in town.#$e#Dr. Harvey? He's nice, but not really my type...",
+      "translation": "Я рада, що працюю в клініці... Відчуваю, що допомагаю жителям містечка.#$e#Доктор Гарві? Він милий, але зовсім не в моєму смаку...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Thu10",
+      "english": "Oh, @! Is there anything you want to talk to me about?$l",
+      "translation": "О, @! Хочеш про щось зі мною поговорити?$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Event_Hospital_1",
+      "english": "Of course he'll know the difference! This sample is completely ruined!%fork$s",
+      "translation": "Звісно, він помітить різницю! Цей зразок цілковито зіпсований!%fork$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Event_Hospital_2",
+      "english": "Okay. I'll blame it on you, then.$u",
+      "translation": "Гаразд. Тоді я звинувачу тебе.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Event_Hospital_3",
+      "english": "You're right. I should just tell him the truth.%fork$u",
+      "translation": "Твоя правда. Треба просто сказати йому правду.%fork$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Event_Space1",
+      "english": "It's amazing, isn't it?",
+      "translation": "Дивовижно, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Event_Space2",
+      "english": "I guess you could see it like that...$s#$b#But it's still incredible, isn't it?",
+      "translation": "Мабуть, можна подивитися й так...$s#$b#Але це все одно неймовірно, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Event_Cut1",
+      "english": "Oh no?$8#$b#Well, that makes me feel a little better, then. Thanks.",
+      "translation": "Ні?$8#$b#Що ж, тоді мені трохи легше. Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Event_Cut2",
+      "english": "Oh no! Aghh... I'm really really sorry.$s",
+      "translation": "О ні! А-а... Мені так, так шкода.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "event_robot1",
+      "english": "Thanks. That means a lot to me, @.#$b#I know gadgets aren't really your kind of thing... but I do appreciate that you're showing interest in what I do.#$b#I wish I could return the favor somehow.$l",
+      "translation": "Дякую. Для мене це дуже багато означає, @.#$b#Я знаю, що всілякі пристрої — не зовсім твоє... Але ціную, що ти цікавишся моєю справою.#$b#Хотілося б якось віддячити тобі.$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "event_robot2",
+      "english": "What? After she said point-blank that she doesn't want to be a slave? How cold...%fork$a",
+      "translation": "Що? Після того, як вона прямо сказала, що не хоче бути рабинею? Як жорстоко...%fork$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "event_robot3",
+      "english": "Heh...$8#$b#Yeah I guess he did kinda say that, didn't he?$l#$b#...Um...$l",
+      "translation": "Хе-хе...$8#$b#Так, мабуть, він справді щось таке сказав, еге ж?$l#$b#...Ем...$l",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "event_robot4",
+      "english": "...$8#$b#@...$8",
+      "translation": "...$8#$b#@...$8",
+      "preserveReason": "Only runtime placeholders, dialogue separators, and emote control tokens; no player-facing English text.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "event_robot_explain1",
+      "english": "...$s#$b#You have a point, I did program her to act human... but her neural net is so complex, I can't be sure consciousness didn't emerge on its own.$8#$b#Furthermore, isn't it a little arrogant to assume that human-like consciousness is the only worthwhile vessel of existence? Computer brains are different than ours, but that doesn't mean we can disregard them.$8",
+      "translation": "...$s#$b#У твоїх словах є сенс: я запрограмувала її поводитися як людина... Але її нейронна мережа настільки складна, що я не можу бути певна, чи свідомість не виникла сама собою.$8#$b#До того ж хіба не дещо зарозуміло вважати, що лише людська свідомість є гідною формою існування? Комп’ютерний мозок відрізняється від нашого, але це не означає, що ним можна нехтувати.$8",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "event_robot_explain2",
+      "english": "I see. Well it wasn't a very funny joke.$a",
+      "translation": "Зрозуміло. Що ж, жарт був зовсім не смішний.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "event_robot_explain3",
+      "english": "That's horrible! What's gotten into you, @?$a#$b#I'm just going to forget about this conversation... you aren't acting yourself.$a",
+      "translation": "Це жахливо! Що на тебе найшло, @?$a#$b#Я просто забуду про цю розмову... Ти поводишся не як завжди.$a",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_1",
+      "english": "This is going to be a great season for stargazing.",
+      "translation": "Це буде чудова пора для спостереження за зорями.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Mon",
+      "english": "Hmm... What sort of gadget should I tinker with this summer?",
+      "translation": "Гм... З яким би пристроєм повозитися цього літа?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Mon6",
+      "english": "Come to my room if you ever want to tinker with my gadgets.",
+      "translation": "Заходь до моєї кімнати, якщо захочеш повозитися з моїми пристроями.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Tue",
+      "english": "Sebastian is my half-brother, if you didn't know already.#$e#We look totally different.",
+      "translation": "Якщо ти ще не знаєш, Себастьян — мій брат по матері.#$e#Ми зовсім не схожі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Tue4",
+      "english": "Sebastian hardly ever talks to me. I wonder if he even likes me at all?#$e#It's sad, I want to have a brother but he doesn't act like one.",
+      "translation": "Себастьян майже ніколи зі мною не розмовляє. Цікаво, чи я йому взагалі подобаюся?#$e#Це сумно: я хочу мати брата, але він зовсім не поводиться як брат.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Wed",
+      "english": "Are you enjoying the season?#$e#It's been so warm this year.$h",
+      "translation": "Тобі подобається ця пора року?#$e#Цього року так тепло.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Wed4",
+      "english": "Penny and I have been doing a seasonal book club.#$b#It's just the two of us, but it's still fun to discuss what we're reading!",
+      "translation": "Ми з Пенні влаштували сезонний книжковий клуб.#$b#Нас лише двоє, але обговорювати прочитане все одно весело!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Thu",
+      "english": "Sorry, I was just thinking about some gadgets I'm making.#$q 35/36 Thu_01_old#I've decided I'm going to build a robot someday.#$r 35 30 Thu_0#That should be very easy for you.#$r 36 -50 Thu_01_01#You should be more realistic.#$r 35 40 Thu_01_02#It sounds challenging.",
+      "translation": "Вибач, я просто замислилася над кількома пристроями, які майструю.#$q 35/36 Thu_01_old#Я вирішила, що колись збудую робота.#$r 35 30 Thu_0#Для тебе це має бути дуже легко.#$r 36 -50 Thu_01_01#Тобі слід дивитися на речі реалістичніше.#$r 35 40 Thu_01_02#Звучить складно.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Thu_01_old",
+      "english": "See you later.",
+      "translation": "До зустрічі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Thu_0",
+      "english": "Really? Are you sure you're not just trying to flatter me?",
+      "translation": "Справді? Ти точно не намагаєшся просто мені лестити?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Thu_01_01",
+      "english": "You don't think I could do it?$s",
+      "translation": "Тобі здається, що я не впораюся?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "Thu_01_02",
+      "english": "You're right, but I love a challenge!$h",
+      "translation": "Твоя правда, але я люблю складні завдання!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Sat",
+      "english": "Hey, have any interesting farm stories to tell me?#$e#Guess not.",
+      "translation": "Гей, розкажеш якусь цікаву історію з ферми?#$e#Мабуть, ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Fri",
+      "english": "I worked at the clinic yesterday. We didn't have a single patient.#$e#I guess people get sick less during summer.",
+      "translation": "Учора я працювала в клініці. У нас не було жодного пацієнта.#$e#Мабуть, улітку люди хворіють рідше.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Sun",
+      "english": "I bet you're growing some interesting crops right now.#$b#Dad says a lot of exotic plants grow in the valley this time of year.",
+      "translation": "Певно, зараз ти вирощуєш якісь цікаві культури.#$b#Тато каже, що цієї пори в долині росте багато екзотичних рослин.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Fri2",
+      "english": "Hey, tell me a story about farming.#$e#That's really interesting!",
+      "translation": "Гей, розкажи мені якусь історію про фермерство.#$e#Це дуже цікаво!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Wed2",
+      "english": "Is it just me or did it suddenly get really hot?#$e#I guess it's just me.",
+      "translation": "Це мені здається чи раптом стало дуже спекотно?#$e#Мабуть, лише мені.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Sun6",
+      "english": "Some day I'm going to be a world-class inventor.$u#$e#You're lucky to be friends with me!#$b#...just kidding.",
+      "translation": "Колись я стану винахідницею світового рівня.$u#$e#Тобі пощастило дружити зі мною!#$b#...Я лише жартую.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Tue8",
+      "english": "@, you're looking sharp today.$h",
+      "translation": "@, сьогодні ти маєш чудовий вигляд.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "summer_Thu10",
+      "english": "How do your hands stay so soft with all that farm work?",
+      "translation": "Як твої руки залишаються такими ніжними після всієї цієї роботи на фермі?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Mon",
+      "english": "Have you explored the mines much? I've heard you can find some useful materials there.",
+      "translation": "Тобі вже вдалося добре дослідити Шахти? Кажуть, там можна знайти корисні матеріали.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Tue",
+      "english": "The trees look beautiful today!$h",
+      "translation": "Сьогодні дерева такі гарні!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Thu",
+      "english": "In other parts of the world it's spring right now. Imagine that!",
+      "translation": "В інших частинах світу зараз весна. Лише уяви!",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Wed",
+      "english": "Bleh... I don't feel like working tomorrow.",
+      "translation": "Бе-е... Завтра зовсім не хочеться працювати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Fri",
+      "english": "I bet we'll start seeing more people at the clinic this season.$s#$e#I hope everyone stays healthy.",
+      "translation": "Б’юся об заклад, цього сезону в клініці побільшає пацієнтів.$s#$e#Сподіваюся, усі залишаться здоровими.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Sat",
+      "english": "All these falling leaves will provide food for mushrooms and other small organisms.$u#$e#Interesting, isn't it?",
+      "translation": "Усе це опале листя стане їжею для грибів та інших дрібних організмів.$u#$e#Цікаво, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Sun",
+      "english": "Hey, here's to another good week! *toast*",
+      "translation": "Гей, вип’ємо за ще один чудовий тиждень! *цок*",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Tue2",
+      "english": "@, I just love how the trees look right now!#$e#I know you like them too.",
+      "translation": "@, мені так подобається, які зараз дерева!#$e#Знаю, тобі вони теж подобаються.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Wed4",
+      "english": "If you have any extra metal laying around, I could always use it for one of my projects.#$e#But only if you don't need it yourself.",
+      "translation": "Якщо в тебе є зайвий метал, я завжди знайду йому застосування в одному зі своїх проєктів.#$e#Але лише якщо він не потрібен тобі.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Fri6",
+      "english": "I've been feeling especially optimistic lately...$h",
+      "translation": "Останнім часом я сповнена особливого оптимізму...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Mon8",
+      "english": "You should come visit me at the clinic tomorrow. I work from 10 a.m. to 4 p.m.$h",
+      "translation": "Завтра заходь до мене в клініку. Я працюю з 10 ранку до 4 дня.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "fall_Thu10",
+      "english": "You have a leaf in your hair. Let me get it for you.#$e#...$h",
+      "translation": "У тебе листок у волоссі. Дозволь, я його приберу.#$e#...$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_1",
+      "english": "Oh man, it's so cold...$s",
+      "translation": "Ой лишенько, як же холодно...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Mon",
+      "english": "Did you see the snowman I built?$h",
+      "translation": "Тобі вже траплявся на очі сніговик, якого я зліпила?$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Tue",
+      "english": "My hair gets so frizzy in this dry weather. *sigh*",
+      "translation": "Від цієї сухої погоди моє волосся так пушиться. *зітхає*",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Wed",
+      "english": "I guess winter is a good time to work on my gadgets.#$e#I wonder if I could make anything useful for farmers?",
+      "translation": "Мабуть, зима — добра пора, щоб працювати над пристроями.#$e#Цікаво, чи могла б я зробити щось корисне для фермерів?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Thu",
+      "english": "Hey! What's up?#$e#It's a good time to explore the caves.#$e#I would go but my Dad would flip.",
+      "translation": "Гей! Як справи?#$e#Зараз добра пора для дослідження печер.#$e#Я б пішла, але тато буде лютувати.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Fri",
+      "english": "I hope I don't catch the flu this year.",
+      "translation": "Сподіваюся, цього року я не підхоплю грип.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Sat",
+      "english": "Have you built a furnace yet?#$e#You can use them to turn raw material like ores into more useful products.$u",
+      "translation": "У тебе вже є Піч?#$e#У ній можна перетворювати сировину на кшталт руди на корисніші матеріали.$u",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Sun",
+      "english": "I get so sleepy when it's cold...",
+      "translation": "Коли холодно, мене так хилить на сон...",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Sat2",
+      "english": "Hey, if any of your farming machines need to be fixed, just let me know.$h",
+      "translation": "Гей, якщо якась із твоїх сільськогосподарських машин потребуватиме ремонту, просто скажи мені.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Tue4",
+      "english": "Hey, do you have any ideas for a new gadget I can make?#$e#Mhmm. I trust your opinion.",
+      "translation": "Гей, у тебе є ідеї для якогось нового пристрою, який я могла б зробити?#$e#М-м. Я довіряю твоїй думці.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Fri6",
+      "english": "You look fresh today. I guess it's that crisp winter air.",
+      "translation": "Сьогодні ти аж сяєш. Мабуть, це завдяки свіжому зимовому повітрю.",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Mon8",
+      "english": "Hi @!$h#$e#Hey, don't you think my snowman looks kind of like you?",
+      "translation": "Привіт, @!$h#$e#Гей, тобі не здається, що мій сніговик трохи схожий на тебе?",
+      "reviewed": true
+    },
+    {
+      "target": "Characters/Dialogue/Maru",
+      "key": "winter_Thu10",
+      "english": "@, come closer. I'm cold.$l#$e#My hands are so dry from the winter air. I'm sorry about that.$l",
+      "translation": "@, підійди ближче. Мені холодно.$l#$e#Через зимове повітря мої руки такі сухі. Вибач за це.$l",
+      "reviewed": true
+    }
+  ]
+}

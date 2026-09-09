@@ -1,0 +1,45 @@
+{
+  "id": "248-events-h",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/Events/Farm": "bd8807acbd5582969afc334b1cd543cc8923758edae5ee76dc2cd832f3fd6397"
+  },
+  "records": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "992559/t 600 1130/n clothFound/O Emily/w sunny",
+      "english": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Good morning, @.$h\"/pause 500/speak Emily \"I just remembered... I have a sewing machine at my old place!\"/pause 500/speak Emily \"If you ever feel like making clothes, you should swing by and check it out.$h\"/pause 800/playSound reward/message \"You can now access Emily's sewing machine!\"/pause 800/speak Emily \"To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!#$b#I'm going to have a lot of fun seeing you in all kinds of different outfits!$h\"/pause 500/emote Emily 20/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"בוקר טוב, @.$h\"/pause 500/speak Emily \"הרגע נזכרתי... יש לי מכונת תפירה בביתי הישן!\"/pause 500/speak Emily \"אם אי פעם יתחשק לכם להכין בגדים, כדאי שתבואו ותעיפו בה מבט.$h\"/pause 800/playSound reward/message \"כעת תוכלו להשתמש במכונת התפירה של אמילי!\"/pause 800/speak Emily \"כדי להתחיל לתפור תזדקקו לפיסת בד ולפריט משני. התנסו וגלו אילו סגנונות ייחודיים קיימים!#$b#יהיה לי כיף גדול לראות אתכם בכל מיני תלבושות שונות!$h\"/pause 500/emote Emily 20/pause 500/end",
+      "latinException": {
+        "tokens": [
+          "continue",
+          "farmer",
+          "Emily",
+          "skippable",
+          "pause",
+          "speak",
+          "Emily",
+          "pause",
+          "speak",
+          "Emily",
+          "pause",
+          "speak",
+          "Emily",
+          "pause",
+          "playSound",
+          "reward",
+          "message",
+          "pause",
+          "speak",
+          "Emily",
+          "pause",
+          "emote",
+          "Emily",
+          "pause",
+          "end"
+        ],
+        "reason": "The preserved event script uses engine-defined ASCII commands, actor names, identifiers, and directives."
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0253-event-town-000",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "4/f Abigail 1500/t 2100 2400/w sunny": "cc91d415937b3c873bad6ffb74775d36b4a4275f95b8cfc111de1d6bd945ebd6"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "4/f Abigail 1500/t 2100 2400/w sunny": "nightTime/-4442 39/farmer 47 95 0 Abigail 47 87 0 Pierre 52 91 3/skippable/addLantern 735 46 86 1/specificTemporarySprite abbyGraveyard/faceDirection Abigail 2/animate Abigail false true 500 24 27/viewport 47 87 true/pause 4000/move farmer 0 -4 0/pause 500/animate Abigail false false 150 24 25 24 26 0/pause 700/stopAnimation Abigail 0/pause 1500/emote farmer 8/pause 600/animate Abigail false true 100 28 29/pause 1200/stopAnimation Abigail/pause 500/playMusic echos/speak Abigail \"Предполагам, че се чудиш защо съм в гробището по това време...\"/pause 500/move farmer 0 -1 0/pause 400/speak Abigail \"Е, тук съм, защото това е най-доброто място в града, където мога да остана насаме.\"/pause 500/emote Abigail 40/pause 250/faceDirection Abigail 1/pause 400/speak Abigail \"А цялата съм потна, защото тренирах бой с меч.$l\"/emote farmer 16/pause 400/faceDirection Abigail 2/pause 300/speak Abigail \"Хей! Какво... мислиш, че съм твърде слаба, за да размахвам меч?$a\"/pause 300/faceDirection Abigail 3/pause 500/faceDirection Abigail 2/speak Abigail \"Съжалявам, май се засегнах.$8#$b#Разбираш ли, искам да изследвам планинските пещери... Но знам, че е твърде опасно да ходя там невъоръжена.\"/move farmer 0 -2 0/speak Abigail \"$q 847951 null#Случвало ли ти се е да използваш меч?#$r 847951 10 Event_Grave1#Да, и е вълнуващо!#$r 847951 10 Event_Grave2#Да, но само при самозащита#$r 847951 -100 Event_Grave3#Да, но е опасно. Трябва да се пазиш.#$r 847951 0 Event_Grave4#Не\"/faceDirection Abigail 0/pause 2000/playMusic nightTime/speak Pierre \"Абигейл?!$4\"/pause 100/faceDirection Abigail 2 true/faceDirection farmer 2 true/emote Abigail 16/speak Abigail \"Татко?$7\"/move Pierre -3 0 0/move Pierre 0 -4 3/faceDirection Abigail 1/faceDirection farmer 1/speak Pierre \"Търсих те навсякъде! Майка ти иска да се прибереш и да помогнеш с вечерята!$u\"/pause 300/faceDirection Pierre 2/pause 700/faceDirection Pierre 1/pause 700/faceDirection Pierre 3/pause 500/speak Pierre \"И какво изобщо правиш в гробището? Това не е място за млада дама!$u\"/faceDirection Abigail 3/emote Abigail 12/pause 400/faceDirection Abigail 1/speak Abigail \"Не е твоя работа! Мислиш, че трябва да съм вкъщи и да готвя вечеря, защото съм момиче, нали?!$a\"/speak Abigail \"Наистина си заседнал в миналото, татко... $a\"/showFrame Pierre 16/textAboveHead Pierre \"...!\"/faceDirection Abigail 2/speak Abigail \"Да се махаме оттук, @.$a\"/showFrame Pierre 0/move Abigail -1 0 2 true/faceDirection farmer 3/move Abigail 0 2 2/faceDirection farmer 2 true/move Abigail 0 3 2 true/faceDirection Pierre 2 true/pause 1000/pause 500/faceDirection Abigail 0/speak Abigail \"Е, идваш ли, или не?$u\"/pause 600/faceDirection farmer 1/pause 1000/move farmer 0 8 2 true/move Abigail 0 4 1 false/move farmer 8 0 2 true/move Abigail 8 0 2 true/textAboveHead Pierre \"Върни се!\"/globalFade/viewport -4000 0/pause 400/playSound grassyStep/pause 500/playSound grassyStep/pause 300/playSound leafrustle/pause 700/playSound leafrustle/pause 700/message \"Добре, татко няма да ни намери тук...\"/speak Abigail \"*въздишка*... Можеш ли да повярваш, че родителите ми някога са били млади? Те изобщо не разбират гледната ми точка.$8#$b#Знам, знам... израснали са в друга епоха, с други ценности. Но понякога пак ме вбесява, ясно?$u\"/pause 1000/speak Abigail \"Е, благодаря, че ме изслуша, @.#$b#Ъм, а сега ще ми помогнеш ли да разплета косата си от този храст?$h\"/pause 500/playSound grassyStep/pause 300/playSound leafrustle/pause 500/playSound grassyStep/pause 200/playSound grassyStep/pause 400/playSound leafrustle/pause 300/playSound leafrustle/pause 600/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all nineteen quoted graveyard, sword-practice, family-conflict and aftermath fields in Town source ordinal 0.",
+      "Preserved all question-response branches, friendship effects, event commands, actor identifiers, emotion markers and control tokens.",
+      "Kept Abigail’s voice, her criticism of gender expectations and every player-directed response natural without imposing a player gender."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "35f73d1bbc1a6830a2041a1b3fe21a3d8303cd85349c9a66aaecaf11a3ce2d52"
+  }
+}

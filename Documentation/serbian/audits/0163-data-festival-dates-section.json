@@ -1,0 +1,29 @@
+{
+  "scope": "Data/Festivals/FestivalDates",
+  "records": 8,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All eight calendar values were checked directly against English and the frozen glossary. Every title exactly matches its canonical Serbian festival name; season/day keys remain source-defined metadata.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_festival_date",
+  "schemaNegativeChecks": [
+    {
+      "case": "empty-title",
+      "rejected": true,
+      "reason": "Empty festival title"
+    },
+    {
+      "case": "structured-delimiter",
+      "rejected": true,
+      "reason": "Unsupported festival title structure"
+    },
+    {
+      "case": "canonical-title",
+      "rejected": true,
+      "reason": "Exact glossary mismatch"
+    }
+  ],
+  "translationSha256": "56d1a76cdc3114679fa42732fbc1273e4df1a07b4afc9054d62185239da8cd59",
+  "finalLocaleCleanAudits": 0
+}

@@ -1,0 +1,216 @@
+{
+  "locale": "ro",
+  "target": "Strings/Locations",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Location strings 236–285 were translated directly from English. Witch shrines, Krobus eviction prompts, theater posters, Island Field Office survey text, and Professor Snail’s embedded event preserve commands byte-for-byte while translating all four dialogue fields; placeholders, line layout, controls, and glossary terms were reviewed in context.",
+  "entries": {
+    "WitchHut_EvilShrineLeft": {
+      "source": "-Dark Shrine of Selfishness-^Your children will turn into doves and fly away...^Make an offering of one Prismatic Shard?",
+      "translation": "-Altarul Întunecat al Egoismului-^Copiii tăi se vor transforma în porumbei și vor zbura departe...^Oferi un Ciob prismatic?"
+    },
+    "WitchHut_EvilShrineLeftInactive": {
+      "source": "-Dark Shrine of Selfishness-^The statue stares through you...",
+      "translation": "-Altarul Întunecat al Egoismului-^Statuia privește prin tine..."
+    },
+    "WitchHut_EvilShrineCenter": {
+      "source": "-Dark Shrine of Memory-^The relationship between you and your ex-spouses will be wiped from memory. It will be like you've never met.^Make an offering of 30,000g?",
+      "translation": "-Altarul Întunecat al Amintirii-^Relația dintre tine și foștii parteneri de viață va fi ștearsă din memorie. Va fi ca și cum nu v-ați fi cunoscut niciodată.^Oferi 30.000g?"
+    },
+    "WitchHut_Goodbye": {
+      "source": "Goodbye, {0}.",
+      "translation": "Rămas-bun, {0}."
+    },
+    "WitchHut_EvilShrineCenterInactive": {
+      "source": "-Dark Shrine of Memory-^The statue stares through you...",
+      "translation": "-Altarul Întunecat al Amintirii-^Statuia privește prin tine..."
+    },
+    "WitchHut_EvilShrineRightActivate": {
+      "source": "-Dark Shrine of Night Terrors-^The ancient magi-seal of protection will be lifted, allowing monsters to appear on your farm at night.^Make an offering of one Strange Bun?",
+      "translation": "-Altarul Întunecat al Terorilor Nopții-^Sigiliul magic străvechi de protecție va fi ridicat, permițând monștrilor să apară noaptea la ferma ta.^Oferi o Chiflă Ciudată?"
+    },
+    "WitchHut_EvilShrineRightDeActivate": {
+      "source": "\n        -Dark Shrine of Night Terrors-^The ancient magi-seal of protection will be restored, preventing monsters from appearing on your farm at night.^Make an offering of one Strange Bun?\n      ",
+      "translation": "\n        -Altarul Întunecat al Terorilor Nopții-^Sigiliul magic străvechi de protecție va fi refăcut, împiedicând monștrii să apară noaptea la ferma ta.^Oferi o Chiflă Ciudată?\n      "
+    },
+    "WitchHut_NoOffering": {
+      "source": "You don't have the necessary offering.",
+      "translation": "Nu ai ofranda necesară."
+    },
+    "Sewer_MagicSeal": {
+      "source": "There's some kind of force-field blocking your path.",
+      "translation": "Un fel de câmp de forță îți blochează drumul."
+    },
+    "Woods_Statue": {
+      "source": "--Old Master Cannoli--\n...Still searching for the sweetest taste...",
+      "translation": "--Bătrânul Maestru Cannoli--\n...Încă în căutarea celui mai dulce gust..."
+    },
+    "ScienceHouse_CarpenterMenu_UpgradeCabin": {
+      "source": "Upgrade Cabin",
+      "translation": "Îmbunătățește cabana"
+    },
+    "AdventureGuild_ItemRecovery": {
+      "source": "Item Recovery Service",
+      "translation": "Serviciu de recuperare a obiectelor"
+    },
+    "AdventureGuild_Greeting": {
+      "source": "Need something?",
+      "translation": "Ai nevoie de ceva?"
+    },
+    "ManorHouse_DivorceBook_Question_Krobus": {
+      "source": "Kick {0} out of your house?",
+      "translation": "Îl dai afară pe {0} din casă?"
+    },
+    "ManorHouse_DivorceBook_CancelQuestion_Krobus": {
+      "source": "Cancel your eviction?",
+      "translation": "Anulezi evacuarea?"
+    },
+    "ManorHouse_DivorceBook_Cancelled_Krobus": {
+      "source": "You've changed your mind about kicking {0} out.",
+      "translation": "Te-ai răzgândit în privința evacuării lui {0}."
+    },
+    "ManorHouse_DivorceBook_Filed_Krobus": {
+      "source": "You've decided to kick {0} out of the house. If you change your mind, come back here before night's end.",
+      "translation": "Ai hotărât să-l dai afară pe {0} din casă. Dacă te răzgândești, revino aici înainte de sfârșitul nopții."
+    },
+    "Theater_Poster_0": {
+      "source": "Now Playing: \"{0}.\"",
+      "translation": "Acum rulează: „{0}”."
+    },
+    "Theater_Poster_1": {
+      "source": "\"{0}\"",
+      "translation": "„{0}”"
+    },
+    "Theater_Poster_Coming_Soon": {
+      "source": "Coming soon: \"{0}.\"",
+      "translation": "În curând: „{0}”."
+    },
+    "Theater_MovieEnd": {
+      "source": "The movie has concluded for tonight. We hope you enjoyed the show!",
+      "translation": "Filmul din seara aceasta s-a încheiat. Sperăm că ți-a plăcut spectacolul!"
+    },
+    "Theater_MovieEndReEntry": {
+      "source": "The movie has concluded.",
+      "translation": "Filmul s-a încheiat."
+    },
+    "HaleyHouse_SewingMachine": {
+      "source": "It's a sewing machine... But I'm not sure how to use it.",
+      "translation": "Este o mașină de cusut... Dar nu știu sigur cum se folosește."
+    },
+    "HaleyHouse_DyePot": {
+      "source": "An array of brightly colored dyes.",
+      "translation": "O mulțime de vopsele în culori vii."
+    },
+    "Caroline_Sunroom_Door": {
+      "source": "Caroline only lets her friends enter here...",
+      "translation": "Caroline le permite doar prietenilor ei să intre aici..."
+    },
+    "Caroline_Tea_Event1": {
+      "source": "When I'm alone with relaxing tea...",
+      "translation": "Când sunt singură cu un ceai liniștitor..."
+    },
+    "Caroline_Tea_Event2": {
+      "source": "My mind is empty and free to wander...",
+      "translation": "Mintea mea se golește și este liberă să rătăcească..."
+    },
+    "Caroline_Tea_Event3": {
+      "source": "Who knows what might appear?",
+      "translation": "Cine știe ce ar putea să apară?"
+    },
+    "Desert_Trader_Closed": {
+      "source": "Closed until the 18th for the Pelican Town night market.",
+      "translation": "Închis până pe 18 pentru Piața de Noapte din Orașul Pelican."
+    },
+    "Farm_OtherPlayerMailbox": {
+      "source": "That's not your mailbox.",
+      "translation": "Aceasta nu este cutia ta poștală."
+    },
+    "BuyTicket": {
+      "source": "Buy a ticket for {0}g?",
+      "translation": "Cumperi un bilet pentru {0}g?"
+    },
+    "IslandNorth_CaveHelp_0": {
+      "source": "Help!",
+      "translation": "Ajutor!"
+    },
+    "IslandNorth_CaveHelp_1": {
+      "source": "Anyone there?",
+      "translation": "Este cineva acolo?"
+    },
+    "IslandNorth_CaveHelp_2": {
+      "source": "I'm stuck!",
+      "translation": "Sunt blocat aici!"
+    },
+    "IslandNorth_CaveHelp_3": {
+      "source": "Over here!",
+      "translation": "Aici!"
+    },
+    "IslandNorth_CaveTool_0": {
+      "source": "That won't work.",
+      "translation": "Asta nu va merge."
+    },
+    "IslandNorth_CaveTool_1": {
+      "source": "It's too weak.",
+      "translation": "Nu are destulă putere."
+    },
+    "IslandNorth_CaveTool_2": {
+      "source": "Hmm...",
+      "translation": "Hmm...",
+      "preservationReason": "The hesitation is already language-neutral and contains no translatable lexical content."
+    },
+    "IslandNorth_CaveTool_3": {
+      "source": "Try something else.",
+      "translation": "Încearcă altceva."
+    },
+    "IslandNorth_Event_SafariManAppear": {
+      "source": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"Thank you! I thought I was done for... $h#$b#I've been stuck in this cave for months!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...One more cave mushroom salad and I would've gone off the deep end... *shudder* ...so rubbery...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"Anyway... I'm Professor Snail.#$b#I've been conducting a survey of this island's flora and fauna for the last year. Truly a remarkable place!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"Well, I think I'll go back to my tent and freshen up a little. I'm afraid I smell like mushrooms...$s#$b#Hey... you should stop by the tent sometime! An enterprising individual like yourself could be a major asset in my projects... hee hee! Farewell.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48",
+      "translation": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"Mulțumesc! Credeam că mi-a venit sfârșitul... $h#$b#Am rămas blocat în peștera aceasta luni întregi!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...Încă o salată de ciuperci de peșteră și mi-aș fi pierdut mințile... *se cutremură* ...atât de cauciucată...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"Oricum... Eu sunt Profesorul Melc.#$b#În ultimul an am studiat flora și fauna insulei. Un loc cu adevărat remarcabil!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"Ei bine, cred că mă voi întoarce la cort ca să mă aranjez puțin. Mă tem că miros a ciuperci...$s#$b#Hei... ar trebui să treci cândva pe la cort! O persoană întreprinzătoare ca tine mi-ar putea fi de mare ajutor în proiecte... hi hi! Rămas-bun.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48"
+    },
+    "IslandFieldOffice_Welcome_0": {
+      "source": "Greetings!",
+      "translation": "Salutări!"
+    },
+    "IslandFieldOffice_Welcome_1": {
+      "source": "Hello!",
+      "translation": "Salut!"
+    },
+    "IslandFieldOffice_Welcome_2": {
+      "source": "Hey!",
+      "translation": "Hei!"
+    },
+    "IslandFieldOffice_Welcome_3": {
+      "source": "Welcome!",
+      "translation": "Bun venit!"
+    },
+    "IslandFieldOffice_Survey_Yes": {
+      "source": "Ready to report",
+      "translation": "Gata să raportez"
+    },
+    "IslandFieldOffice_Survey_Notyet": {
+      "source": "Not ready",
+      "translation": "Nu sunt gata"
+    },
+    "IslandFieldOffice_Survey_Prompt_LeftPlant": {
+      "source": "Island Survey -- Please report the number of purple flowers present on the island.",
+      "translation": "Studiul insulei -- Raportează numărul florilor mov de pe insulă."
+    },
+    "IslandFieldOffice_Survey_PurpleFlower_Question": {
+      "source": "How many purple flowers can be found on the island?",
+      "translation": "Câte flori mov se găsesc pe insulă?"
+    },
+    "IslandFieldOffice_Survey_PurpleFlower_Wrong": {
+      "source": "Hmm... That number doesn't fit my models at all... Maybe you should give it another shot tomorrow.$s",
+      "translation": "Hmm... Numărul acesta nu se potrivește deloc cu modelele mele... Poate ar trebui să mai încerci o dată mâine.$s"
+    },
+    "IslandFieldOffice_Survey_PurpleFlower_Correct": {
+      "source": "Yes, yes... that seems very accurate. Thank you!$h",
+      "translation": "Da, da... pare foarte precis. Mulțumesc!$h"
+    }
+  }
+}

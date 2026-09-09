@@ -1,0 +1,23 @@
+{
+  "locale": "ro",
+  "target": "Strings/UI",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Deferred runtime contexts resolved against the installed original assembly. CharacterCustomization.draw draws FarmNameSuffix separately to the RIGHT of the editable name, so parenthetical (fermă) labels its type without treating Romanian farm as an English noun suffix. BirthingEvent passes child sex term and object pronoun from Strings/Lexicon; the chosen clause supports băiețel/fetiță and el/ea without inferred gender or inflection. Lexicon translations must honor those forms when that section is authored.",
+  "entries": {
+    "Character_FarmNameSuffix": {
+      "source": "Farm",
+      "translation": "(fermă)"
+    },
+    "Chat_Baby": {
+      "source": "{0} and {1} welcomed a baby {2} to the family! They named {3} {4}.",
+      "translation": "{0} și {1} au un nou membru în familie: {2}! Au ales numele {4} pentru {3}."
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "id": "260-locations-dark-shrine-theater-caroline-island-cave-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 30 location strings covering Night Terrors shrine, item recovery, Krobus eviction, theater, sewing and dye objects, Caroline tea room, Desert Trader and Island cave. Glossary service, character, festival and town names, placeholders, currency, shrine page separators and exact leading and trailing layout whitespace were preserved.",
+    "reviewedTextSHA256": "2bfa953777623a276da8927fe811494b575440865636a9e3ba54d7ee4c4afe17",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 45
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_EvilShrineRightActivate",
+      "english": "-Dark Shrine of Night Terrors-^The ancient magi-seal of protection will be lifted, allowing monsters to appear on your farm at night.^Make an offering of one Strange Bun?",
+      "translation": "— Темне святилище нічних жахіть —^Стародавню магічну печать захисту буде знято, і вночі на вашій фермі зможуть з’являтися чудовиська.^Пожертвувати одну Дивну булочку?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_EvilShrineRightDeActivate",
+      "english": "\n        -Dark Shrine of Night Terrors-^The ancient magi-seal of protection will be restored, preventing monsters from appearing on your farm at night.^Make an offering of one Strange Bun?\n      ",
+      "translation": "\n        — Темне святилище нічних жахіть —^Стародавню магічну печать захисту буде відновлено, і чудовиська не зможуть з’являтися вночі на вашій фермі.^Пожертвувати одну Дивну булочку?\n      ",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "WitchHut_NoOffering",
+      "english": "You don't have the necessary offering.",
+      "translation": "У вас немає потрібної пожертви.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Sewer_MagicSeal",
+      "english": "There's some kind of force-field blocking your path.",
+      "translation": "Шлях перекриває якесь силове поле.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Woods_Statue",
+      "english": "--Old Master Cannoli--\n...Still searching for the sweetest taste...",
+      "translation": "— Старий майстер Каннолі —\n...Досі шукає найсолодший смак...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ScienceHouse_CarpenterMenu_UpgradeCabin",
+      "english": "Upgrade Cabin",
+      "translation": "Поліпшити хатину",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_ItemRecovery",
+      "english": "Item Recovery Service",
+      "translation": "Служба повернення предметів",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_Greeting",
+      "english": "Need something?",
+      "translation": "Щось потрібно?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_Question_Krobus",
+      "english": "Kick {0} out of your house?",
+      "translation": "Виселити {0} зі свого будинку?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_CancelQuestion_Krobus",
+      "english": "Cancel your eviction?",
+      "translation": "Скасувати виселення?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_Cancelled_Krobus",
+      "english": "You've changed your mind about kicking {0} out.",
+      "translation": "Ви передумали виселяти {0}.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "ManorHouse_DivorceBook_Filed_Krobus",
+      "english": "You've decided to kick {0} out of the house. If you change your mind, come back here before night's end.",
+      "translation": "Ви вирішили виселити {0} з будинку. Якщо передумаєте, поверніться сюди до кінця ночі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Theater_Poster_0",
+      "english": "Now Playing: \"{0}.\"",
+      "translation": "Зараз у прокаті: «{0}».",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Theater_Poster_1",
+      "english": "\"{0}\"",
+      "translation": "«{0}»",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Theater_Poster_Coming_Soon",
+      "english": "Coming soon: \"{0}.\"",
+      "translation": "Незабаром у прокаті: «{0}».",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Theater_MovieEnd",
+      "english": "The movie has concluded for tonight. We hope you enjoyed the show!",
+      "translation": "На сьогодні показ фільму завершено. Сподіваємося, вам сподобалося!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Theater_MovieEndReEntry",
+      "english": "The movie has concluded.",
+      "translation": "Показ фільму завершено.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "HaleyHouse_SewingMachine",
+      "english": "It's a sewing machine... But I'm not sure how to use it.",
+      "translation": "Це швейна машина... Але я не знаю, як нею користуватися.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "HaleyHouse_DyePot",
+      "english": "An array of brightly colored dyes.",
+      "translation": "Безліч яскравих барвників.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Caroline_Sunroom_Door",
+      "english": "Caroline only lets her friends enter here...",
+      "translation": "Керолайн пускає сюди лише своїх друзів...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Caroline_Tea_Event1",
+      "english": "When I'm alone with relaxing tea...",
+      "translation": "Коли я залишаюся наодинці із заспокійливим чаєм...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Caroline_Tea_Event2",
+      "english": "My mind is empty and free to wander...",
+      "translation": "Мій розум порожніє й вільно мандрує...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Caroline_Tea_Event3",
+      "english": "Who knows what might appear?",
+      "translation": "Хто знає, що може з’явитися?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Desert_Trader_Closed",
+      "english": "Closed until the 18th for the Pelican Town night market.",
+      "translation": "Зачинено до 18-го через Нічний ринок у містечку Пелікан.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Farm_OtherPlayerMailbox",
+      "english": "That's not your mailbox.",
+      "translation": "Це не ваша поштова скринька.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BuyTicket",
+      "english": "Buy a ticket for {0}g?",
+      "translation": "Купити квиток за {0}g?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveHelp_0",
+      "english": "Help!",
+      "translation": "Допоможіть!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveHelp_1",
+      "english": "Anyone there?",
+      "translation": "Тут хтось є?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveHelp_2",
+      "english": "I'm stuck!",
+      "translation": "Я застряг!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_CaveHelp_3",
+      "english": "Over here!",
+      "translation": "Я тут!",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "091-sebastian-room-game-finale",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the final eight Solarion tabletop-game branch records, including both healer targets, all wizard and warrior boss choices, the capsule escape, and the closing dialogue. Every narration line, embedded action choice, spell name, fantasy title, combat outcome, repeated victory state, and character reaction was reviewed in sequence and against every reachable branch. Event commands, branch keys, actors, movement, timing, prior-choice conditions, response delimiters, placeholders, emotion markers, music and sound IDs, and non-text payloads were preserved and structurally compared with English. Together with the two preceding batches, all Sebastian Room records are covered. The full-locale final audits remain pending.",
+    "reviewedTextSHA256": "f128edf3732d51cbf0200b78f5fe16630f8448d25099c90a36b0db2215edbf7e",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 1
+  },
+  "records": [
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "Necromancer",
+      "english": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"Xarth: Intruders? How dare you trespass in my private chambers!\"/pause 800/message \"Ah, so you've come for the Solarion Staff...\"/pause 800/message \"Hehehe... fools. You'll make a nice addition to my skeleton army!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"Dreadlord Xarth casts shadow beam!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"You were able to dodge the spell, but your companions are gravely injured!\"/pause 500/question fork0 \"What do you do?#Heal the Warrior (Sam).#Heal the Wizard (Sebastian).\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"Thanks, @.$7\"/speak Sam \"...$s\"/pause 1000/playMusic none/message \"Sebastian casts 'Pure Bolt'... A beam of white light hits Xarth square in the face. The Dreadlord shrieks and crumbles into dust.\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"You pick up the Solarion Staff and hold it high. Order has been restored to the world.\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"Зарт: Непрохані гості? Як ви смієте вриватися до моїх особистих покоїв!\"/pause 800/message \"А, то ви прийшли по Посох Соляріона...\"/pause 800/message \"Хе-хе-хе... Дурні. Ви чудово поповните мою армію скелетів!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"Повелитель жаху Зарт застосовує промінь тіні!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"Тобі вдалося ухилитися від закляття, але твої супутники тяжко поранені!\"/pause 500/question fork0 \"Що робити?#Зцілити Воїна (Сема).#Зцілити Чарівника (Себастьяна).\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"Дякую, @.$7\"/speak Sam \"...$s\"/pause 1000/playMusic none/message \"Себастьян застосовує «Чистий заряд»... Промінь білого світла влучає Зартові просто в обличчя. Повелитель жаху верещить і розсипається на порох.\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Ти підіймаєш Посох Соляріона й здіймаєш його вгору. У світі відновлено порядок.\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "healedSam",
+      "english": "playSound healSound/pause 500/speak Sam \"Thanks, @.\"/speak Sebastian \"...$s\"/pause 1000/playMusic none/message \"Sam charges ahead and strikes down Xarth, freeing the Solarion Staff from his clutches and restoring peace and order to the world.\"/pause 500/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "playSound healSound/pause 500/speak Sam \"Дякую, @.\"/speak Sebastian \"...$s\"/pause 1000/playMusic none/message \"Сем кидається вперед і вражає Зарта, вириваючи Посох Соляріона з його лап і повертаючи світові мир та порядок.\"/pause 500/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "finalBossWizard",
+      "english": "pause 500/resetVariable/message \"Dreadlord Xarth is muttering an incantation...\"/pause 500/question fork0 \"What do you do?#Cast 'Pure Beam' at Xarth.#Put a 'Shield Charm' on your friends.\"/fork castBeam/pause 800/playSound debuffHit/message \"You place a 'Shield Charm' on Sam and Sebastian.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"Xarth sends bolts of pure dark energy flying. One of them strikes Sebastian, but your 'Shield Charm' reflects it back into Xarth's face!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Xarth is defeated, and the Solarion Staff glows peacefully. Order has been restored to the world.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/resetVariable/message \"Повелитель жаху Зарт бурмоче закляття...\"/pause 500/question fork0 \"Що робити?#Застосувати проти Зарта «Чистий промінь».#Накласти на друзів «Захисні чари».\"/fork castBeam/pause 800/playSound debuffHit/message \"Ти накладаєш «Захисні чари» на Сема й Себастьяна.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"Зарт випускає заряди чистої темної енергії. Один із них влучає в Себастьяна, але твої «Захисні чари» відбивають його просто Зартові в обличчя!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Зарта переможено, а Посох Соляріона мирно сяє. У світі відновлено порядок.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "castBeam",
+      "english": "pause 500/message \"Before you have a chance to cast your spell, Xarth sends a shadow beam at your companions!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sam and Sebastian are fried to a crisp...\"/pause 500/playSound yoba/pause 800/message \"Your spell hits Xarth square in the face.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"He lets out a shriek and crumbles into dust. You pick up the Solarion Staff and hold it high. Peace and order have been restored to the world.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/message \"Перш ніж ти встигаєш застосувати закляття, Зарт спрямовує промінь тіні на твоїх супутників!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Сем і Себастьян підсмажені до хрусткої скоринки...\"/pause 500/playSound yoba/pause 800/message \"Твоє закляття влучає Зартові просто в обличчя.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"Він верещить і розсипається на порох. Ти підіймаєш Посох Соляріона й здіймаєш його вгору. У світі відновлено мир та порядок.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "chargeAhead",
+      "english": "pause 500/message \"You charge forward, but Xarth slips past you and sends a shadow beam at your companions!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sebastian and Sam are fried to a crisp...\"/pause 800/message \"You swing your sword again and land a solid blow. Xarth shrieks and crumbles into dust.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"You pick up the Solarion Staff and hold it high. Peace and order have been restored to the world.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/message \"Ти кидаєшся вперед, але Зарт прослизає повз і спрямовує промінь тіні на твоїх супутників!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Себастьян і Сем підсмажені до хрусткої скоринки...\"/pause 800/message \"Ти знову замахуєшся мечем і завдаєш потужного удару. Зарт верещить і розсипається на порох.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Ти підіймаєш Посох Соляріона й здіймаєш його вгору. У світі відновлено мир та порядок.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "finalBossWarrior",
+      "english": "pause 500/resetVariable/message \"Dreadlord Xarth is muttering an incantation...\"/pause 500/question fork0 \"What do you do?#Charge ahead, swinging your sword.#Use your shield to defend your friends.\"/fork chargeAhead/pause 1200/message \"Xarth casts 'Shadow Bolt' at Sebastian... but you raise your shield just in time to deflect the attack!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"As Xarth prepares another spell, you charge forward and strike him down with your sword.\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"The Solarion Staff glows peacefully as you hold it high. Order has been restored to the world!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/resetVariable/message \"Повелитель жаху Зарт бурмоче закляття...\"/pause 500/question fork0 \"Що робити?#Кинутися вперед, розмахуючи мечем.#Захистити друзів щитом.\"/fork chargeAhead/pause 1200/message \"Зарт спрямовує «Тіньовий заряд» у Себастьяна... але ти саме вчасно підіймаєш щит і відбиваєш атаку!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"Коли Зарт готує наступне закляття, ти кидаєшся вперед і вражаєш його мечем.\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"Посох Соляріона мирно сяє у твоїх піднятих руках. У світі відновлено порядок!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "leave",
+      "english": "pause 500/message \"Putting the disturbing sight of the prisoners out of your mind, you and your companions quickly climb the ladder.\"/pause 800/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor",
+      "translation": "pause 500/message \"Викинувши з голови моторошне видовище полонених, ти із супутниками швидко підіймаєшся драбиною.\"/pause 800/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "end",
+      "english": "playMusic Hospital_Ambient/pause 9000/viewport 5 5 true/pause 800/showFrame Sebastian 29/speak Sebastian \"Hey, not bad!$7#$b#It took me like, three or four tries to beat my first scenario.$7\"/emote farmer 32/pause 1000/speak Sebastian \"Thanks for stopping by... I'll see you later.$7\"/globalFade/viewport -1000 -1000/pause 1000/end",
+      "translation": "playMusic Hospital_Ambient/pause 9000/viewport 5 5 true/pause 800/showFrame Sebastian 29/speak Sebastian \"Гей, непогано!$7#$b#Мені знадобилося десь три-чотири спроби, щоб пройти перший сценарій.$7\"/emote farmer 32/pause 1000/speak Sebastian \"Дякую за візит... Ще побачимося.$7\"/globalFade/viewport -1000 -1000/pause 1000/end",
+      "reviewed": true
+    }
+  ]
+}

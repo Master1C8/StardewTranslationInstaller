@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SebastianRoom",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "ranAway": "pause 300/message \"Обръщаш се и побягваш по сумрачен коридор. Студеният каменен под се спуска и вие надолу сякаш цяла вечност. Накрая излизаш на ново място.\"/pause 400/switchEvent sewer",
+        "backEntrance": "pause 300/playSound leafrustle/pause 500/playSound grassyStep/pause 400/playSound leafrustle/pause 500/updateMinigame 2/pause 600/message \"След като оглеждаш около основата на кулата, откриваш капак, скрит сред храстите. Под него има стълба, по която се спуска дружината ти.\"/pause 800/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent sewer",
+        "sewer": "updateMinigame 4/resetVariable/playMusic pool_ambient/pause 1600/message \"Озоваваш се в коридор, подобен на канализация. Отляво проход сияе с необичайна зелена светлина. Отдясно стълбище води нагоре в мрака.\"/pause 500/question fork1 \"Какво правиш?#Влез в прохода отляво.#Изкачи стълбите отдясно.\"/fork wizardDoor/switchEvent podRoom",
+        "podRoom": "pause 500/updateMinigame 7/resetVariable/playMusic Hospital_Ambient/pause 1600/message \"Озоваваш се в стая. Отляво има стълба. Отдясно трима затворници се носят в странни светещи капсули. Изглежда, че претърпяват някаква трансформация.\"/pause 500/message \"Дали това не е някакъв болен експеримент на Лорда на ужаса?\"/pause 500/question fork0 \"Какво правиш?#Махни се оттам възможно най-бързо.#Унищожи капсулите.\"/fork leave/pause 500/pause 500/playSound swordswipe/pause 200/playSound breakingGlass/updateMinigame -1/pause 1000/message \"След като дарявате тези нещастни души с покой, ти и спътниците ти се изкачвате по стълбата.\"/pause 800/addMailReceived destroyedPods/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor"
+      }
+    }
+  ]
+}

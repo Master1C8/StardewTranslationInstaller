@@ -1,0 +1,181 @@
+{
+  "id": "166-flower-dance-dialogue-b",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of Spring 24 records 25–48. Villager and spouse voices, flower and dance context, sound actions, rain lore, placeholders, dialogue delimiters, emotion markers, and the year-two runtime setup were checked together. Keys and control structure were preserved; the setup command is explicitly justified as language-independent runtime data.",
+    "reviewedTextSHA256": "d5f5fd2233a1e351c8a569217a755a58a499bc9b7eaf4b314204469e13d1b0bd",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 15
+  },
+  "records": [
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sam",
+      "english": "You know what? I admit it... I really like flowers!",
+      "translation": "Знаєш що? Визнаю... Я справді люблю квіти!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Leah",
+      "english": "Hi @. Glad to see you here.$h",
+      "translation": "Привіт, @. Рада тебе тут бачити.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Shane",
+      "english": "Mmm... excellent sauce. *slurp*#$e#Ah, this green stuff is spicy! *munch*#$b#*crunch* ...ow.$s",
+      "translation": "М-м-м... чудовий соус. *сьорбає*#$e#О, ця зелена штука гостра! *жує*#$b#*хрумтить* ...ой.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Marnie",
+      "english": "*sigh*... Love is in the air... And I'm still single.$s",
+      "translation": "*зітхає*... У повітрі витає кохання... А я досі самотня.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Elliott",
+      "english": "I wore my best shirt for the dance... This sort of thing doesn't happen very often!",
+      "translation": "Я вдягнув на танець свою найкращу сорочку... Таке трапляється нечасто!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Gus",
+      "english": "Frog season is really starting to pick up.",
+      "translation": "Сезон жаб уже набирає обертів.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Dwarf",
+      "english": "You say it's raining up above? *gasp*#$e#Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it.",
+      "translation": "Кажеш, нагорі дощить? *ахає*#$e#Дощ... Для нас він майже міфічний. Дехто з нас проживає все життя, так його й не побачивши.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Wizard",
+      "english": "You shouldn't be up here.",
+      "translation": "Тобі не слід тут бути.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Harvey",
+      "english": "I'm working up the courage to ask someone to dance with me.$11",
+      "translation": "Я намагаюся набратися сміливості й запросити когось на танець.$11",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sandy",
+      "english": "I heard it's raining back home. Is that why you came here?$h#$e#I kind of miss the rain, actually...$s",
+      "translation": "Я чула, що вдома дощить. Тому ти сюди прийшов?$h#$e#Насправді я трохи сумую за дощем...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Jas",
+      "english": "Some day, I'm going to be the flower queen!",
+      "translation": "Колись я стану королевою квітів!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Vincent",
+      "english": "That's not fair... Why can't I be the flower queen?",
+      "translation": "Це нечесно... Чому я не можу бути королевою квітів?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Willy",
+      "english": "I should've brought my fishing pole.",
+      "translation": "Треба було взяти вудку.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Leo",
+      "english": "The flowers here are nice, but they aren't as colorful as back home!$h#$e#I wonder if I'll ever have to get up there and dance...$u",
+      "translation": "Тут гарні квіти, але вони не такі барвисті, як удома!$h#$e#Цікаво, чи доведеться мені колись піднятися туди й танцювати...$u",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "set-up_y2",
+      "english": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival2/viewport -1000 -1000/loadActors Set-Up/advancedMove Jas true 3 620 4 620 1 620 2 620/advancedMove Vincent true 0 4 2 0 0 -4 -2 0/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Alex true 4 12500 1 2000/advancedMove Gus true 4 8000 -2 0 3 400 4 6000 2 0 4 1000/advancedMove Elliott true 4 14500 1 2350/advancedMove Emily true 2 2000 1 1200 1 0 3 1750 4 650 3 600 2 500 1 675 4 1000 0 -1 4 1250 3 600 2 600 1 600 4 600 3 1000 -1 0 3 1000 2 800 1 800 4 800 3 800 2 2000 0 1 2 2000 1 500 2 500 3 500 4 500 1 500 2 500/positionOffset Sebastian -6 -20/positionOffset Leah -24 10/positionOffset Clint -12 24/positionOffset Caroline -12 12/positionOffset Jodi 16 6/positionOffset Robin -6 12/positionOffset Kent? -12 24/positionOffset Marlon -16 0/positionOffset Penny -20 -9/positionOffset Sam 6 12/positionOffset Shane 12 -12/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival2/viewport -1000 -1000/loadActors Set-Up/advancedMove Jas true 3 620 4 620 1 620 2 620/advancedMove Vincent true 0 4 2 0 0 -4 -2 0/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Alex true 4 12500 1 2000/advancedMove Gus true 4 8000 -2 0 3 400 4 6000 2 0 4 1000/advancedMove Elliott true 4 14500 1 2350/advancedMove Emily true 2 2000 1 1200 1 0 3 1750 4 650 3 600 2 500 1 675 4 1000 0 -1 4 1250 3 600 2 600 1 600 4 600 3 1000 -1 0 3 1000 2 800 1 800 4 800 3 800 2 2000 0 1 2 2000 1 500 2 500 3 500 4 500 1 500 2 500/positionOffset Sebastian -6 -20/positionOffset Leah -24 10/positionOffset Clint -12 24/positionOffset Caroline -12 12/positionOffset Jodi 16 6/positionOffset Robin -6 12/positionOffset Kent? -12 24/positionOffset Marlon -16 0/positionOffset Penny -20 -9/positionOffset Sam 6 12/positionOffset Shane 12 -12/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "reviewed": true,
+      "preserveReason": "Festival runtime setup; language-independent commands, actor IDs, coordinates, and movement data."
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Abigail_spouse_y2",
+      "english": "We don't have to dance if you don't want to!$1",
+      "translation": "Якщо не хочеш, нам не обов’язково танцювати!$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Penny_spouse_y2",
+      "english": "I could imagine us moving to a spot like this, someday.$h",
+      "translation": "Уявляю, як одного дня ми оселимося в такому місці.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Leah_spouse_y2",
+      "english": "We should go hiking in these woods someday! I bet there's mushrooms...",
+      "translation": "Треба якось піти в похід цими лісами! Закладаюся, тут є гриби...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Haley_spouse_y2",
+      "english": "Today is the big day! We'll be the centerpiece of the whole dance!$1",
+      "translation": "Сьогодні великий день! Ми будемо в центрі всього танцю!$1",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Maru_spouse_y2",
+      "english": "I didn't practice much beforehand but I'll give it my best for the both of us.$0",
+      "translation": "Я майже не тренувалася заздалегідь, але заради нас обох викладуся на повну.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Emily_spouse_y2",
+      "english": "Hey, I was wondering what you were up to!$0",
+      "translation": "Гей, а я вже думала, де ти подівся!$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Harvey_spouse_y2",
+      "english": "I wore my best tie for the occasion.$4",
+      "translation": "Заради цієї події я вдягнув свою найкращу краватку.$4",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Alex_spouse_y2",
+      "english": "Hey, I'm feeling pretty good about today. We'll do great during the ceremony... just follow my lead.$0",
+      "translation": "Слухай, у мене гарне передчуття щодо сьогоднішнього дня. На церемонії ми чудово впораємося... просто повторюй за мною.$0",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sam_spouse_y2",
+      "english": "Whoa, you look really great today.$0",
+      "translation": "Ого, сьогодні в тебе чудовий вигляд.$0",
+      "reviewed": true
+    }
+  ]
+}

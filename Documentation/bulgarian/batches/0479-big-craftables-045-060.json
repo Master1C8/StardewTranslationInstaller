@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "0479-big-craftables-045-060",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Strings/BigCraftables",
+  "status": "reviewed",
+  "entries": {
+    "Cask_Name": "Бъчва за отлежаване",
+    "Cask_Description": "Използвай в избата, за да отлежаваш продукти като вино и сирене.",
+    "CharcoalKiln_Name": "Пещ за дървени въглища",
+    "CharcoalKiln_Description": "Превръща 10 къса дървесина в една единица въглища.",
+    "CheesePress_Name": "Преса за сирене",
+    "CheesePress_Description": "Превръща млякото в сирене.",
+    "Chest_Name": "Сандък",
+    "Chest_Description": "Място за съхранение на предметите ти.",
+    "ChickenStatue_Name": "Статуя на кокошка",
+    "ChickenStatue_Description": "Дървена статуя на кокошка.",
+    "CoffeeMaker_Name": "Кафемашина",
+    "CoffeeMaker_Description": "Автоматично приготвя прясна чаша кафе всяка сутрин.",
+    "Crate_Name": "Каса",
+    "Crate_Description": "...",
+    "Crystalarium_Name": "Кристалариум",
+    "Crystalarium_Description": "Постави скъпоценен камък по избор и Кристалариумът ще създава негови копия."
+  },
+  "preserveReasons": {
+    "Crate_Description": "Player-facing description contains only an ellipsis and must remain byte-exact."
+  },
+  "sourceHashes": {
+    "Cask_Name": "ebb6ec275cba28814e65bf39da2064b2d49615086cbcf6f2aeaa62dd9062acb9",
+    "Cask_Description": "eadf1a49fbc35ab3a7c4dac15bd8f08f6fc21a9b7f350d0abd7d56827caf2ef4",
+    "CharcoalKiln_Name": "82e0da97aaccc783ff1377a94e324023c9d9b0646ec8a9ba3b35fce6b27075ab",
+    "CharcoalKiln_Description": "7bfd54cd4c470af141eee6fa991adf4fb284523cae94accb38897e9464419151",
+    "CheesePress_Name": "8b765c733cc3dbf2aab8002d0b71b420cf1c8d0896176fdf9397d08cb78241cd",
+    "CheesePress_Description": "a36a6d60f126a781c0224f54c5da11ef691931698dbe313c9d0f8731aa3adfdc",
+    "Chest_Name": "378d83808237a4459f234bbfbf1380fff27049305cb4235819c3091f5856ba5f",
+    "Chest_Description": "1b535f53cf799b4a051ebccde480fa2c1fb76c3a4ffe878820b15ef6699b4571",
+    "ChickenStatue_Name": "57f6e2b5b2e4b9c8157408755fa747ccff84a118707b828a272b1fc4b82b6259",
+    "ChickenStatue_Description": "8115019188386210604512f7b5d6c08ff3770d36cb2ebab6ec94648be41fab1c",
+    "CoffeeMaker_Name": "a7c9ac52a64b790c620e98caa9c13932bd37b2c279b2463df647423d78a3ad5e",
+    "CoffeeMaker_Description": "140e33059459adbaf7f3d10832621374ede8b0a37f915d76ff45a12efbad6be0",
+    "Crate_Name": "ef90fcddc4f05f0101c43667f9a898edb9da4511f88883b553c5a140137456f0",
+    "Crate_Description": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46",
+    "Crystalarium_Name": "f411ecea930f3dd11274ecaad783f069ed142617e8f06c36ba13bc161304d844",
+    "Crystalarium_Description": "165759d893273e47b344735ed36c7f381a2fbfd705969dbde0912bb5448ad0cb"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 16,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated eight Big Craftable names and seven descriptions directly from English; retained the punctuation-only Crate description byte-exact with a documented reason.",
+      "Applied locked Бъчва за отлежаване, Пещ за дървени въглища, Преса за сирене, Сандък, Кафемашина and Кристалариум terminology while preserving the ten-piece input quantity.",
+      "Read every name-description pair together; corrected the coal output to express the English word-number without adding a runtime numeric marker and made the Coffee Maker’s cup explicitly a cup of coffee."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "5109cd03f3f5bbf393247bbf7a16d0606ab17514d5439c91606423bc80f0f59c"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0248-event-seed-shop-007",
+  "target": "Data/Events/SeedShop",
+  "status": "reviewed",
+  "sourceHashes": {
+    "963113/n pierreQualityCrops": "ed13910f8da2f237acfe90f34fd365a376bbecf68ee33d9d2ed47858b3250290"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "963113/n pierreQualityCrops": "distantBanjo/5 19/farmer 5 23 0 Pierre 5 17 2 Gus 5 19 0 Jodi 5 21 0 Marnie 10 20 0 Robin 2 24 3 Evelyn 9 26 1/hostMail MSB_Pierre/skippable/pause 3000/speak Pierre \"Гъс, имам точното нещо за теб...\"/speak Gus \"Целият съм в слух.\"/speak Pierre \"Това е пакет местни, органични зеленчуци от наследствени сортове...#$b#Подбрани и сортирани са на ръка, за да се гарантира само най-високо качество и най-добър вкус.#$b#Подобно предложение се среща веднъж в живота!\"/speak Gus \"Звучи доста добре! Трябват ми качествени зеленчуци за салона. Колко струват?\"/jump Pierre/pause 800/speak Pierre \"САМО... *мънкане* мънкане*\"/emote Gus 8/speak Gus \"Какво каза?#$b#Хахаха... за миг ми се стори, че чух „25 000g“.$h\"/emote Pierre 40/speak Pierre \"Хех... точно така. Наистина е изгодно, нали?\"/jump Gus/shake Gus 1000/pause 1000/speak Gus \"Пиер, ти луд ли си? Няма начин да си го позволя. Ще трябва да продам салона!$3\"/advancedMove Gus false 3 0 4 9999/move Jodi 0 -2 0 true/move farmer 0 -2 0 false/speak Jodi \"Дочух цената... това е възмутително! Засрами се.$3\"/move Jodi 1 0 1/speak Pierre \"Чакай! А какво ще кажеш за 10 000g!?$4\"/textAboveHead Jodi \"Няма начин!\"/move Jodi 1 0 1/faceDirection Gus 3/pause 1000/emote Pierre 28/pause 100/proceedPosition Jodi/move farmer 0 -1 0/pause 500/speak Pierre \"Пълен провал е, @... $s#$b#Мислех, че това е безотказна бизнес стратегия.$s#$b#Но се оказва, че никой не иска да купи зеленчуци на цена 10 пъти по-висока, дори ако им залепя малък етикет „органични“.$s\"/pause 400/quickQuestion #Понякога печелиш, понякога губиш#Трябва да си по-малко алчен#Обижда ме, че не поискаха зеленчуците ми(break)pause 300\\speak Pierre \"Така е, бизнес не се управлява без известен риск.\"(break)emote Pierre 12\\speak Pierre \"Хей, не принуждавам никого да го купува! Ако цената не им харесва, могат просто да си тръгнат.$3\"\\pause 1000\\speak Pierre \"...Но май има нещо вярно в думите ти. Ако ядосам всичките си клиенти, скоро изобщо няма да имам клиенти...$s\"(break)faceDirection Jodi 3\\speak Jodi \"Зеленчуците ти изглеждат чудесно, @. Цената на Пиер ни отказа.\"\\faceDirection Jodi 1\\pause 1000/emote Pierre 40/speak Pierre \"Между другото, @... май тази вечер наистина ти трябва зеленчукова вечеря.#$b#Какво ще кажеш, искаш ли да си ги купиш обратно на ниската, ниска цена от 2 501g?\"/emote farmer 12/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all seventeen quoted quality-crop sales, price dispute, aftermath and buyback fields plus all three quick-question choices in Seed Shop source ordinal 7.",
+      "Preserved all amounts, currency markers, response branches, friendship effects, event commands, identifiers and control tokens.",
+      "Maintained Pierre’s sales pitch and comic desperation, Gus and Jodi’s objections, and the fact that the vegetables belong to the player."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "6d99f2564ab77acb4f1abc7e76bc29efc5906210a6c858a27a2910f3b0de1d5e"
+  }
+}

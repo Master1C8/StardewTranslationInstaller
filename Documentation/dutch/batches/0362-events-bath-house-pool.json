@@ -1,0 +1,21 @@
+{
+  "locale": "nl",
+  "target": "Data/Events/BathHouse_Pool",
+  "sourceAssetSha256": "6edd08837115c1ee55ad8d2f8602de681c378d1cbbc5746f5a953fb612788bd9",
+  "reviewed": true,
+  "quotedReplacements": {
+    "38/f Penny 2500/t 1900 2400/n pennySpa": {
+      "There you are... I was worried you didn't get my note.$6": "Daar ben je... Ik was bang dat je mijn briefje niet had gekregen.$6",
+      "It looks like we're alone.$8": "Het lijkt erop dat we alleen zijn.$8",
+      "The water feels so good after being out in the cold of night, doesn't it?$6": "Het water voelt zo lekker nadat je buiten in de koude nacht bent geweest, vind je niet?$6",
+      "$q -1 null#Do you know why I asked you here tonight?$8#$r -1 0 event_pool1#You have something to tell me.#$r -1 0 event_pool2#I'm not exactly sure.#$r -1 0 event_pool3#You wanted to see me in my bathing suit.": "$q -1 null#Weet je waarom ik je vanavond hierheen heb gevraagd?$8#$r -1 0 event_pool1#Je wilt me iets vertellen.#$r -1 0 event_pool2#Ik weet het niet precies.#$r -1 0 event_pool3#Je wilde me in mijn badpak zien.",
+      "Um, how do I say this...$8": "Eh, hoe zal ik dit zeggen...$8",
+      "I've been meaning to tell you for a while now... about how I feel.$8#$b#I can't stop thinking about you...$8#$b#I've never felt this way about anyone.$8": "Ik wil je al een tijdje vertellen... wat ik voel.$8#$b#Ik kan niet stoppen aan je te denken...$8#$b#Zo heb ik me nog nooit over iemand gevoeld.$8",
+      "$q -1 null#...$8#$r -1 0 event_pool4#I feel the same way about you.#$r -1 -1500 event_pool5#Sorry, but I don't like you in that way...": "$q -1 null#...$8#$r -1 0 event_pool4#Ik voel hetzelfde voor jou.#$r -1 -1500 event_pool5#Sorry, maar ik voel zo niet voor jou..."
+    }
+  },
+  "preserveSourceEntries": ["pennyHeartbroken"],
+  "notes": {
+    "pennyHeartbroken": "Reviewed event branch; retained source-identical because it contains only engine commands, actor identifiers, and numeric values."
+  }
+}

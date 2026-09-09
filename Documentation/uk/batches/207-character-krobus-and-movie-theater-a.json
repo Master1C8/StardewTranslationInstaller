@@ -1,0 +1,222 @@
+{
+  "id": "207-character-krobus-and-movie-theater-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 30 character strings covering the alternate Dark Talisman dialogue and movie invitation, entry, viewing and concession states. System prompts and player-facing choices use gender-neutral wording; placeholders and dialogue controls were preserved.",
+    "reviewedTextSHA256": "46bd528a566fce95e72470b69db15df26ea4870aa8517e038aa5cf130e8909d6",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 46
+  },
+  "records": [
+    {
+      "target": "Strings/Characters",
+      "key": "Saloon_neutralEvent_4",
+      "english": "Go for it!",
+      "translation": "Давай!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "KrobusDarkTalisman_elsewhere",
+      "english": "What's that... you're looking for a dark talisman?#$b#...Hmmm. Now that you mention it, I did have one in my possession not too long ago.#$b#Unfortunately, I dropped it while exploring a tunnel in the sewers.#$b#Things started heating up in there, so I left in a hurry and sealed the entrance.#$b#You seem pretty sturdy, though... So I'll open it back up for you. Just be careful, okay?",
+      "translation": "Що таке... шукаєш Темний талісман?#$b#...Хм-м. Тепер, коли ти про нього згадуєш, ще не так давно він був у мене.#$b#На жаль, я впустив його, коли досліджував тунель у Каналізації.#$b#Там ставало дедалі гарячіше, тож я поспіхом пішов і запечатав вхід.#$b#Але витривалості тобі не бракує... Тож я знову відкрию його для тебе. Тільки бережи себе, гаразд?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Festival",
+      "english": "The movie theater isn't open on festival days!",
+      "translation": "У дні фестивалів кінотеатр не працює!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Closed",
+      "english": "The movie theater is closed for the night...",
+      "translation": "Кінотеатр уже зачинений на ніч...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_AlreadyInvitedSomeone",
+      "english": "You've already made plans to see a movie with {0} today!",
+      "translation": "На сьогодні у вас уже запланований похід у кіно з {0}!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_NoTheater",
+      "english": "{0} looks puzzled...",
+      "translation": "На обличчі {0} — спантеличення...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_CantInvite",
+      "english": "You cannot invite {0} to the movies.",
+      "translation": "Ви не можете запросити {0} у кіно.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_InvitedBySomeoneElse",
+      "english": "Sorry, I've already got plans to see a movie today, but maybe you can join us there?",
+      "translation": "Пробач, я вже планую сьогодні піти в кіно, але, може, приєднаєшся до нас там?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_FarmerAlreadySeen",
+      "english": "I don't feel like going to the movies again just yet...",
+      "translation": "Мені поки що не хочеться знову йти в кіно...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_AlreadySeen",
+      "english": "Sorry, I've already seen a movie this week...",
+      "translation": "Пробач, на цей тиждень із мене досить кіно...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Sandy",
+      "english": "Ooh.. I'd love to join you.  You go on ahead and I'll meet you there, honey... I have to freshen up!",
+      "translation": "О-о... З радістю піду з тобою. Йди вперед, любонько... а я трохи причепурюся!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Dwarf",
+      "english": "A moo-what? Well, I'm sure I'll like it! I'd be happy to go with you.",
+      "translation": "Кі-що? Що ж, мені напевно сподобається! Із радістю піду з тобою.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Krobus",
+      "english": "Oh? I normally hide myself from humans...#$b#But I have an idea... I'll meet you at the theater later.",
+      "translation": "О? Зазвичай я ховаюся від людей...#$b#Але маю одну ідею... Зустрінемося в кінотеатрі пізніше.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Wizard",
+      "english": "Hmmph... Very well. I will join you for this... spectacle.",
+      "translation": "Гмпф... Гаразд. Я приєднаюся до тебе на цьому... видовищі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited",
+      "english": "A movie? Sure. I'll meet you at the theater.",
+      "translation": "Кіно? Авжеж. Зустрінемося в кінотеатрі.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Rude",
+      "english": "A movie? Yeah, whatever, sounds good. See you at the theater...",
+      "translation": "Кіно? Та байдуже, звучить непогано. Побачимося в кінотеатрі...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Child",
+      "english": "A movie? Yay! Let's meet up at the theater!",
+      "translation": "Кіно? Ура! Зустрінемося в кінотеатрі!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Reject_Child",
+      "english": "I don't think I'm allowed to see this...",
+      "translation": "Мені, здається, не дозволено це дивитися...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Reject",
+      "english": "Sorry, I'm not in the mood to see a movie right now...",
+      "translation": "Пробач, зараз я не в настрої дивитися кіно...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_NoTicket",
+      "english": "You cannot enter the theater without a ticket!",
+      "translation": "Без квитка до кінотеатру не можна!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_CurrentlyShowing",
+      "english": "A movie is currently being screened, come back again later.",
+      "translation": "Зараз триває сеанс. Завітайте пізніше.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_AlreadySeen",
+      "english": "You've already seen a movie this week.",
+      "translation": "Цього тижня ви вже були в кіно.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_WatchAlonePrompt",
+      "english": "Would you like to spend your movie ticket to see a movie by yourself?",
+      "translation": "Витратити квиток і подивитися фільм наодинці?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_WatchWithFriendPrompt",
+      "english": "Would you like to spend your movie ticket to see a movie with {0}?",
+      "translation": "Витратити квиток і подивитися фільм разом із {0}?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LeavePrompt",
+      "english": "Are you sure you want to leave the theater without seeing the movie?",
+      "translation": "Справді вийти з кінотеатру, не подивившись фільм?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ClosedFestival",
+      "english": "The movie theater is closed for the festival.",
+      "translation": "Кінотеатр зачинений на час фестивалю.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_Closed",
+      "english": "The movie theater is closed.",
+      "translation": "Кінотеатр зачинений.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_BoxOfficeClosed",
+      "english": "The box office is empty.",
+      "translation": "Каса порожня.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_Concession",
+      "english": "Welcome to the concessions stand! Would you like to order a snack for your guest?",
+      "translation": "Ласкаво просимо до буфету! Бажаєте замовити перекуску для запрошеної людини?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ConcessionAlone",
+      "english": "Oh, it looks like you're here by yourself. If you come here with a guest, you can order them a snack. Try it out some time!",
+      "translation": "О, схоже, ви прийшли без компанії. Якщо завітаєте з кимось, зможете замовити цій людині перекуску. Спробуйте якось!",
+      "reviewed": true
+    }
+  ]
+}

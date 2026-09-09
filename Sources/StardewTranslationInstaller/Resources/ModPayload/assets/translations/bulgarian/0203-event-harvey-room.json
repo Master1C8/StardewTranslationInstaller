@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HarveyRoom",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "normal": "pause 400/speak Harvey \"Извинявай за разрошения ми вид... Не знаех, че ще идваш.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Хей, май чувам самолет над нас...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, ела тук!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Погледни!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"Като дете винаги мечтаех да стана пилот.\"/pause 1000/speak Harvey \"...Но заради лошото ми зрение и парализиращия страх от височини тази мечта започна да избледнява.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"Всичко е наред... не тъжи.#$b#Вече приех мястото си в живота. Не всеки може да осъществи мечтите си... светът просто е устроен така.\"/pause 1600/speak Harvey \"Хей, нека ти покажа моделите си на самолети. Тъкмо завърших новия луксозен комплект TR-Starbird.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end"
+      }
+    }
+  ]
+}

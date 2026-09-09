@@ -1,0 +1,152 @@
+{
+  "id": "150-extra-dialogue-purchased-items-b-and-dumpsters",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of twenty ExtraDialogue records covering Pierre, villager, and Willy purchased-item reactions plus all dumpster-diving comments. Every placeholder, quantity, price, quality judgment, food and fish description, character-specific voice, shop name, and control marker was reviewed against its key context and the canonical Ukrainian glossary. Keys, placeholders, dialogue delimiters, emotion markers, and non-text payloads were preserved. Remaining ExtraDialogue records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "3ae0e058179a3ed0578b2a2442bf33d5001932a6278a452a8312187a9e97df90",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 16
+  },
+  "records": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityLow",
+      "english": "Hey, remember that {2} you sold me the other day? I ended up serving it to the family for a special dinner.#$b#I can't say it was a hit... $s#$b#... well,... back to business, huh?",
+      "translation": "Гей, пам’ятаєш той товар «{2}», який нещодавно надійшов від тебе? Зрештою я подав його родині на особливу вечерю.#$b#Не можу сказати, що він усім сподобався... $s#$b#...Що ж... Повернімося до справ, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityHigh",
+      "english": "Hey, remember that {2} you sold me the other day? I ended up serving it to the family for a special dinner.#$b#My wife loved it! ...And Abby even started going to town on it after I smothered the thing in hoisin sauce. $h#$b#... well,... back to business, huh?",
+      "translation": "Гей, пам’ятаєш той товар «{2}», який нещодавно надійшов від тебе? Зрештою я подав його родині на особливу вечерю.#$b#Дружині дуже сподобалося! ...А Еббі навіть накинулася на страву, коли я щедро полив її соусом хойсін. $h#$b#...Що ж... Повернімося до справ, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Haley",
+      "english": "Emily tried to serve me {1} {2} for dinner last night... I threw it away when she wasn't looking.#$e#I don't like health food...$s",
+      "translation": "Учора Емілі намагалася подати мені на вечерю {1} {2}... Я викинула все, коли вона не бачила.#$e#Не люблю здорову їжу...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Elliott",
+      "english": "I saw that Pierre had fresh {2} in the shop the other day! Marvelous. It smelled just perfect... and firm, too!",
+      "translation": "Днями я побачив у крамниці П’єра свіжий продукт «{2}»! Дивовижно. Запах був ідеальний... і на дотик він теж був пружний!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Alex",
+      "english": "Hey, so I picked up {1} {2} at the store last night. Grandma made her special casserole...",
+      "translation": "Гей, учора я купив у крамниці {1} {2}. Бабуся приготувала свою особливу запіканку...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Leah",
+      "english": "The other day I bought {1} {2} at Pierre's. It was perfect on a bed of greens and a dash of my 'special' vinaigrette.",
+      "translation": "Днями я купила в П’єра {1} {2}. Це було бездоганно на подушці із зелені та з краплею мого «особливого» вінегрету.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityHigh_Willy",
+      "english": "Hey, {0}.#$b# So I stopped by Willy's the other day and bought {1} {2}. I've never seen one so fresh! #$b#So I cooked it up for dinner last night, and it filled the house with a {3} smell.. It was a hit!$h#$b#He told me you caught it yourself... I'm impressed!#$e# Anyways...",
+      "translation": "Привіт, {0}.#$b# Днями довелося зазирнути до Віллі й купити {1} {2}. Ще ніколи не траплялося нічого настільки свіжого! #$b#Учора це пішло на вечерю й наповнило будинок {3} ароматом... Усім сподобалося!$h#$b#Він сказав, що цей улов належить тобі... Вражає!#$e# Хай там як...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityLow_Willy",
+      "english": "Hey, {0}.#$b# So I stopped by Willy's the other day and bought {1} {2}. He said you caught it yourself! #$b#I cooked it up for dinner last night... and, uh... It filled the house with a {3} odor. I don't even want to know where you found that thing...$s#$e#Anyways...",
+      "translation": "Привіт, {0}.#$b# Днями довелося зазирнути до Віллі й купити {1} {2}. Він сказав, що цей улов належить тобі! #$b#Учора це пішло на вечерю... і, е-е... Будинок наповнився {3} смородом. Навіть знати не хочу, де знайшлася ця річ...$s#$e#Хай там як...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh_Willy",
+      "english": "Hi... did you sell {1} {2} to the fish shop the other day? I think I bought it...#$e#It was pretty high-quality stuff. I'm impressed.",
+      "translation": "Привіт... Чи не від тебе до Рибальської крамниці днями потрапили {1} {2}? Здається, ця покупка дісталася мені...#$e#Якість була дуже висока. Вражає.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh_Jodi_Willy",
+      "english": "Hi... did you sell {1} {2} to the fish shop the other day? I think I bought it...#$e#It was pretty high-quality stuff. Very firm meat.",
+      "translation": "Привіт... Чи не від тебе до Рибальської крамниці днями потрапили {1} {2}? Здається, ця покупка дісталася мені...#$e#Якість була дуже висока. М’ясо дуже пружне.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityLow_Willy",
+      "english": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It smelled kind of fishy, but it was alright.",
+      "translation": "Привіт... Чи не від тебе до універсальної крамниці днями потрапили {1} {2}? Здається, ця покупка дісталася мені...#$e#Запах був трохи рибний, але загалом усе гаразд.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityLow_Rude_Willy",
+      "english": "I went shopping last night and picked up {1} {2} on a 'chum-bucket' sale for only {3}g.#$e# It was {4}! No wonder Willy was practically giving that {5} away...",
+      "translation": "Учора під час закупів вдалося придбати {1} {2} на розпродажі «відро наживки» лише за {3}g.#$e# Це було {4}! Не дивно, що Віллі майже задарма віддавав цей товар «{5}»...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityHigh_Rude_Willy",
+      "english": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was actually pretty {4}.",
+      "translation": "Учора під час закупів вдалося придбати {1} {2} на розпродажі лише за {3}g.#$e# Насправді це було доволі {4}.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_NonRude_Willy",
+      "english": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# I couldn't pass up that great price.",
+      "translation": "Учора під час закупів вдалося придбати {1} {2} на розпродажі лише за {3}g.#$e# Неможливо було пройти повз таку чудову ціну.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_4_Willy",
+      "english": "So I was at Willy's other day and he showed me {1} {2} you brought in.#$e#I cooked it up for dinner with some lemon and a side of rice pilaf. Pretty good!$h",
+      "translation": "Днями у Віллі мені показали {1} {2}, що надійшли від тебе.#$e#На вечерю це приготували з лимоном і гарніром із рисового плову. Доволі смачно!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityLow_Willy",
+      "english": "Ahoy... you know that {2} you sold me the other day? Well, I sizzled it up in me cabin last night...#$b#T'was the mealiest fish I've ever set me gums on...$s",
+      "translation": "Йо-хо... Пам’ятаєш той товар «{2}», який нещодавно надійшов від тебе? Учора я засмажив його у своїй хатині...#$b#Це була найбільш борошниста риба, яку мені доводилося жувати...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityHigh_Willy",
+      "english": "Ahoy! Remember that {2} you brought in the other day? Well, I sizzled it up in me cabin last night...#$b#T'was the finest fish I've had since I was a wee lad!$h",
+      "translation": "Йо-хо! Пам’ятаєш той товар «{2}», який нещодавно принесли? Учора я засмажив його у своїй хатині...#$b#Такої чудової риби я не куштував із самого дитинства!$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Town_DumpsterDiveComment_Child",
+      "english": "Eww... What are you doing?$s",
+      "translation": "Фу-у... Що ти робиш?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Town_DumpsterDiveComment_Teen",
+      "english": "Um... Why are you digging in the trash?$s",
+      "translation": "Ем... Чому ти риєшся у смітті?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Town_DumpsterDiveComment_Adult",
+      "english": "Hey, Stop that! ...Yuck!$s",
+      "translation": "Гей, припини! ...Фу!$s",
+      "reviewed": true
+    }
+  ]
+}

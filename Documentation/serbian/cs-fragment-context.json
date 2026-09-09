@@ -1,0 +1,37 @@
+{
+  "sourceEvidence": "Installed DefaultCommands.MineDeath and HospitalDeath, Buff.getTimeLeft and Dialogue.ReplacePlayerEnteredStrings inspected directly.",
+  "lossFragments": {
+    "1058": "Money loss prefix, no final punctuation.",
+    "1060": "Item-only loss prefix with trailing space.",
+    "1061": "Singular accusative item with final period.",
+    "1062": "Plural accusative items, count in parentheses, final period.",
+    "1063": "Money+item comma-and connector with trailing space.",
+    "1068": "Paid doctor visit, period+trailing space.",
+    "1070": "Free doctor visit, period+trailing space.",
+    "1071": "Post-hospital item loss prefix, trailing space."
+  },
+  "contract": "Gender-neutral first-person aorist изгубих takes both singular and plural accusative objects. Preserve source spaces and punctuation; numeric values are unchanged.",
+  "fortuneAndAwards": {
+    "runtimeEvidence": "Installed Event.readFortune, eggHuntWinner, iceFishingWinner, chooseSecretSantaGift, Farmer.Update and performTenMinuteClockUpdate callback; read-only dump /tmp/stardew-sr-cs-fortune-awards-il.txt.",
+    "nameInitial": "Event1837/1838 uses localized displayName[0], not internal English Name. No additional initial-letter fix required.",
+    "tie": "1864prefix then raw display-name list, source commas and1865connector. Use nominative list after colon.",
+    "birthday": "1813nominative celebrant+trailing space then1815/1816gendered continuation about NPC.",
+    "itemReceipt": "1919{0}item/{1}emptyLexiconarticle;1922{0}count/{1}item.",
+    "skillLevel": "2003{0}localized skill name, nominative after colon.",
+    "festivalOpening": "2640prefix +2634/2635/2637/2639location phrase; upcoming2640must end with space."
+  },
+  "stardrop": "3094/3095 end in a colon and space, then arbitrary favorite-thing string is appended, then3101 initial period and ^^energy sentence.3100retains =name marker and trailing space.3099preserves ConcernedApe identifier.",
+  "relationshipNames": "Shared dated/breakup templates use nominative coordinated subject ти и {0}; gift recipient/count uses separate labels where needed.3962preserves two slash speaker-gender branches and per-branch control tokens.",
+  "giftTasteAndSpouseMood": {
+    "relativeComposition": "4079/4080 receive an uninflected relative display name;4083 formats that fragment and4084 appends a leading-space gift-taste predicate. Serbian uses a generic apposition to avoid dynamic name declension.",
+    "favorites": "4109-4128 and4135-4178 preserve their leading spaces because runtime appends them to preceding clauses. Male/female variants retain subject/reference gender.",
+    "birthdayBranches": "4276/4278/4279/4281 retain two slash speaker-gender branches with identical Serbian wording because each line is naturally gender-neutral.",
+    "spouseMood": "4406-4447 can be spoken by spouses of either gender. Serbian recasts unspecified first-person past forms without adding slash markup."
+  },
+  "spouseHelpWeddingMusic": {
+    "spouseActions": "4462-4490 can be spoken by any spouse. Gender-neutral aorist or impersonal forms preserve agency without slash markup.",
+    "petName": "4463 places an arbitrary pet name after the nominative label по имену, so the dynamic name is not declined.",
+    "wedding": "5367/5369 are explicit player-gender variants. Dynamic season names stay nominative inside quotation marks; @ and %spouse remain uninflected names in a coordinated object.",
+    "musicTitles": "5718-5740 are jukebox/soundtrack display titles, translated as standalone titles rather than runtime sentence fragments."
+  }
+}

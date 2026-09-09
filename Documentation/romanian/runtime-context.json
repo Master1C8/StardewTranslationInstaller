@@ -1,0 +1,64 @@
+{
+  "assembly": "/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS/Stardew Valley.dll",
+  "sha256": "8937c582cad1c1127017944778c4102467bf299aea44869491f28ab0ec84cd73",
+  "tool": "ILSpy 9.1.0.7988 (local, original installed game only)",
+  "findings": [
+    {
+      "type": "StardewValley.Menus.CharacterCustomization",
+      "method": "draw",
+      "key": "Strings/UI:Character_FarmNameSuffix",
+      "finding": "Drawn as a separate label to the right of the editable farm-name field; Romanian parenthetical (fermă) avoids an ungrammatical English noun suffix."
+    },
+    {
+      "type": "StardewValley.Menus.ProfileMenu",
+      "method": "draw",
+      "key": "Strings/UI:BirthdayOrder",
+      "finding": "Argument 0 is numeric day, argument 1 localized season. Romanian uses {0} {1}."
+    },
+    {
+      "type": "StardewValley.Events.BirthingEvent",
+      "method": "tickUpdate / morning queue",
+      "key": "Strings/UI:Chat_Baby",
+      "finding": "Arguments 2 and 3 are tokenized Strings/Lexicon ChildTerm_Male/Female and Pronoun_Male/Female. Use child noun as apposition and object pronoun after pentru."
+    },
+    {
+      "type": "StardewValley.BellsAndWhistles.Lexicon",
+      "method": "getProperArticleForWord / makePlural",
+      "finding": "No article and no plural transformation when language code is not built-in English. Custom locale item names remain dictionary display names."
+    },
+    {
+      "type": "StardewValley.Menus.PondQueryMenu",
+      "method": "UpdateState",
+      "key": "Strings/UI:PondQuery_StatusRequestOneCount",
+      "finding": "Fallback applied only for neededItemCount<=1 when article helper returns empty. Romanian 1 with (×quantity) item notation preserves exact amount and avoids invalid runtime inflection."
+    },
+    {
+      "type": "StardewValley.Menus.CarpenterMenu",
+      "method": "receiveLeftClick",
+      "key": "Strings/UI:Chat_BuildingBuild",
+      "finding": "Article placeholder is aOrAn: plus tokenized building name, followed by separate tokenized building name. Keep empty article adjacent to name for a custom locale."
+    },
+    {
+      "type": "StardewValley.Game1",
+      "method": "pressUseToolButton",
+      "key": "Strings/UI:Options_StowingMode",
+      "finding": "Toggles netItemStowed on held item; does not deposit inventory in external storage."
+    },
+    {
+      "type": "StardewValley.Menus.CharacterCustomization",
+      "method": "name change easter egg",
+      "key": "Strings/UI:NameChange_EasterEgg6",
+      "finding": "Argument 0 is getProperArticleForWord(item name), argument 1 item display name; custom-locale article is empty."
+    }
+  ],
+  "fullAssemblyDecompilation": "/private/tmp/stardew-ro-runtime-context/StardewValley.all.cs",
+  "lexicalAgreementContract": {
+    "adjectiveGender": "Masculine singular: Child/AdultMale/AdultFemale selects speaker vocabulary, not referent grammatical gender.",
+    "PurchasedItem_1": "Use Mirosea a ceva {3} în toată casa for every culinary/negative variant, including sățios.",
+    "PurchasedItem_3": "Use ceva before adjective 4 and acel before masculine/neuter slander noun 5.",
+    "PurchasedItem_5_Cooking": "Adjective 4 describes Pierre as bucătar regardless of speaker gender; article 3 is empty for custom locale.",
+    "NPC.cs.4135_and_NPC.cs.4138": "Untranslated callers must describe the arbitrary item as ceva before masculine adjective 1.",
+    "Pronouns": "Chat_Baby uses el/ea after pentru, and băiețel/fetiță as apposition. HouseUpgrade possessive uses lui/ei.",
+    "percentYear": "Dialogue.parseDialogueString replaces %year with Game1.year.ToString; no inflection support."
+  }
+}

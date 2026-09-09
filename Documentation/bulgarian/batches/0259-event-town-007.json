@@ -1,0 +1,27 @@
+{
+  "id": "0259-event-town-007",
+  "target": "Data/Events/Town",
+  "status": "reviewed",
+  "sourceHashes": {
+    "639373/f Lewis 1500/f Marnie 1500/t 1900 2300/w sunny": "5d8d1f9bad8a7a2a39f3bded738a539899c5ffd9bf5e2a87decc48bce8cba4f7"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "639373/f Lewis 1500/f Marnie 1500/t 1900 2300/w sunny": "nightTime/68 84/farmer 65 79 1 Lewis 69 83 1 Marnie 69 84 0/skippable/pause 500/faceDirection Lewis 2/pause 200/emote Lewis 28/speak Lewis \"Марни... не можем. Ако се разчуе, това може да подкопае авторитета ми в града!$s\"/pause 300/faceDirection Marnie 1/emote Marnie 12/speak Lewis \"Разбираш... нали?$s\"/pause 1000/speak Marnie \"Прекалено много държиш на работата си, Луис. В живота има и други неща, знаеш.$u\"/faceDirection Marnie 2/pause 500/speak Marnie \"...но да, разбирам. Май ще трябва да пазим... връзката си... в тайна.$s\"/pause 600/playSound leafrustle/faceDirection Marnie 3 true/faceDirection Lewis 3 true/showFrame Lewis 24/showFrame Marnie 16/jump Lewis/jump Marnie/shake Lewis 2000/shake Marnie 2000/move farmer 4 0 2/showFrame Lewis 12/showFrame Marnie 12/faceDirection Lewis 0/faceDirection Marnie 0/emote Lewis 16/speak Marnie \"Аах!$4\"/pause 800/speak Lewis \"$q 200 null#@... Чу всичко, нали?$s#$r 200 50 event_secret1#Да... но ще го запазя в тайна.#$r 201 -100 event_secret2#Да... и ще разкажа на всички.\"/pause 800/move Marnie 0 1 2/pause 800/faceDirection Marnie 3/faceDirection farmer 2/speak Marnie \"И защо изобщо се криеше там?$u\"/faceDirection farmer 2/pause 300/jump farmer/pause 1000/speed farmer 4/move farmer -4 0 3/speed farmer 4/move farmer 0 -2 3/speed farmer 4/move farmer -3 0 3/playSound leafrustle/pause 600/faceDirection Lewis 2/faceDirection Marnie 0/pause 300/emote Lewis 8 true/emote Marnie 8 true/pause 1000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread all seven quoted Lewis-and-Marnie relationship, discovery and player-response fields in Town source ordinal 7.",
+      "Preserved both response branches, distinct friendship effects, event commands, actor identifiers, emotion markers and control tokens.",
+      "Kept Lewis’s concern about public authority and Marnie’s reluctant agreement explicit while wording the overheard response without a player-gender assumption."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "90538503ecb7ab4c3fe235036f92705c8a9192ab4d8a58f1cbbc177dedf16b8a"
+  }
+}

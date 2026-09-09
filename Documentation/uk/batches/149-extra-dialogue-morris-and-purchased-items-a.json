@@ -1,0 +1,222 @@
+{
+  "id": "149-extra-dialogue-morris-and-purchased-items-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of thirty ExtraDialogue records covering every Morris greeting and membership state, both Community Development Form gender variants, and the first seventeen purchased-item reactions. Every response branch, placeholder, price, organization and building term, quality judgment, food description, NPC-specific memory, and control marker was reviewed against its key context and the canonical Ukrainian glossary. Keys, placeholders, response identifiers, dialogue delimiters, emotion markers, and non-text payloads were preserved. Remaining ExtraDialogue records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "97273c95c3c78480eaeeb2bc2ac708ef09280b44746eca40d3d894529917ca87",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 21
+  },
+  "records": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_ComeBackLater",
+      "english": "Come back tomorrow and we can see about getting some community improvements started... Just make sure to bring a lot of money. Hehe.",
+      "translation": "Повертайся завтра, і ми подумаємо, з яких громадських поліпшень почати... Тільки обов’язково принеси багато грошей. Хе-хе.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_Greeting",
+      "english": "Welcome to JojaMart! How are you doing today?#$b#I don't believe we've met. I'm Morris, Joja Customer Satisfaction Representative.#$b#When you decide you want to become a Joja Member, I'll be delighted to help make your transition a joyous experience.",
+      "translation": "Ласкаво просимо до JojaMart! Як ваші справи сьогодні?#$b#Здається, ми ще не знайомі. Я Морріс, представник служби задоволення клієнтів Joja.#$b#Коли вирішите стати членом Joja, я з радістю зроблю перехід приємним і безтурботним.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting",
+      "english": "Welcome to JojaMart! How is your weekend going?#$b#We're currently in the process of setting up a brand-new membership system for our customers. Please check back soon to join!",
+      "translation": "Ласкаво просимо до JojaMart! Як минають вихідні?#$b#Зараз ми впроваджуємо цілком нову систему членства для наших клієнтів. Завітайте незабаром, щоб приєднатися!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting",
+      "english": "Welcome to JojaMart! How are you doing today?#$b#We're currently in the process of setting up a brand-new membership system for our customers. Please check back soon to join!",
+      "translation": "Ласкаво просимо до JojaMart! Як ваші справи сьогодні?#$b#Зараз ми впроваджуємо цілком нову систему членства для наших клієнтів. Завітайте незабаром, щоб приєднатися!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting_CommunityCenterComplete",
+      "english": "Welcome to JojaMart! How are you doing today?#$b#Unfortunately, due to unforeseen circumstances our Joja Membership offer is not currently available. I'm certain it will get sorted out soon!",
+      "translation": "Ласкаво просимо до JojaMart! Як ваші справи сьогодні?#$b#На жаль, через непередбачені обставини наша пропозиція членства Joja зараз недоступна. Певен, незабаром усе владнається!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting_CommunityCenterComplete",
+      "english": "Welcome to JojaMart! How is your weekend going?#$b#Unfortunately, due to unforeseen circumstances our Joja Membership offer is not currently available. I'm certain it will get sorted out soon!",
+      "translation": "Ласкаво просимо до JojaMart! Як минають вихідні?#$b#На жаль, через непередбачені обставини наша пропозиція членства Joja зараз недоступна. Певен, незабаром усе владнається!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting_MembershipAvailable",
+      "english": "Welcome to JojaMart! How is your weekend going?#$b#Membership is now available! With a Joja Membership, you'll be able to make improvements in the community with the help of our dedicated personnel... for a fee, of course.#$b#Oh, and another thing... Mayor Lewis promised us that if anyone else joined up, he'd let us turn that old community center into a Joja Warehouse. Isn't that wonderful?#$q -1 -1#Membership costs {0}g. Well, would you like to join us?#$r -1 -1 Yes#Yes.#$r -1 -1 No#No.",
+      "translation": "Ласкаво просимо до JojaMart! Як минають вихідні?#$b#Членство вже доступне! Членство Joja дасть вам змогу поліпшувати громаду за допомогою нашого відданого персоналу... звісно, за певну плату.#$b#О, і ще дещо... Мер Льюїс пообіцяв, що якщо приєднається ще хтось, він дозволить перетворити старий Громадський центр на Склад Joja. Хіба не чудово?#$q -1 -1#Членство коштує {0}g. Отже, бажаєте приєднатися?#$r -1 -1 Yes#Так.#$r -1 -1 No#Ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting_MembershipAvailable",
+      "english": "Welcome to JojaMart! How are you doing today?#$b#Membership is now available! With a Joja Membership, you'll be able to make improvements in the community with the help of our dedicated personnel... for a fee, of course.#$b#Oh, and another thing... Mayor Lewis promised us that if anyone else joined up, he'd let us turn that old community center into a Joja Warehouse. Isn't that wonderful?#$q -1 -1#Membership costs {0}g. Well, would you like to join us?#$r -1 -1 Yes#Yes.#$r -1 -1 No#No.",
+      "translation": "Ласкаво просимо до JojaMart! Як ваші справи сьогодні?#$b#Членство вже доступне! Членство Joja дасть вам змогу поліпшувати громаду за допомогою нашого відданого персоналу... звісно, за певну плату.#$b#О, і ще дещо... Мер Льюїс пообіцяв, що якщо приєднається ще хтось, він дозволить перетворити старий Громадський центр на Склад Joja. Хіба не чудово?#$q -1 -1#Членство коштує {0}g. Отже, бажаєте приєднатися?#$r -1 -1 Yes#Так.#$r -1 -1 No#Ні.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting_SecondPlayer",
+      "english": "Welcome to JojaMart! How is your weekend going?#$b#Hmm... Our records show that you live on a farm with some other folks... I'm sorry, but we can only sell a membership to the owner of your residence.",
+      "translation": "Ласкаво просимо до JojaMart! Як минають вихідні?#$b#Гм... За нашими даними, ви живете на фермі з іншими людьми... Перепрошую, але ми можемо продати членство лише власникові помешкання.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting_SecondPlayer",
+      "english": "Welcome to JojaMart! How are you doing today?#$b#Hmm... Our records show that you live on a farm with some other folks... I'm sorry, but we can only sell a membership to the owner of your residence.",
+      "translation": "Ласкаво просимо до JojaMart! Як ваші справи сьогодні?#$b#Гм... За нашими даними, ви живете на фермі з іншими людьми... Перепрошую, але ми можемо продати членство лише власникові помешкання.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_StillProcessingOrder",
+      "english": "We're currently processing your last Community Development order. Please come back after the work is complete.",
+      "translation": "Ми ще виконуємо ваше попереднє замовлення з громадського розвитку. Повертайтеся після завершення робіт.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_CommunityDevelopmentForm_PlayerMale",
+      "english": "$q -1 -1#I've got the Joja Community Development Form right here for you, sir. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+      "translation": "$q -1 -1#Пане, ось ваша Форма громадського розвитку Joja. Бажаєте поглянути?#$r -1 -1 Yes#Так#$r -1 -1 No#Ні",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_CommunityDevelopmentForm_PlayerFemale",
+      "english": "$q -1 -1#I've got the Joja Community Development Form right here for you, miss. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+      "translation": "$q -1 -1#Пані, ось ваша Форма громадського розвитку Joja. Бажаєте поглянути?#$r -1 -1 Yes#Так#$r -1 -1 No#Ні",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityHigh",
+      "english": "Hey, {0}.#$b# So I stopped by Pierre's the other day and bought {1} {2}. It was the first time I've seen one of those there in a while... #$b#I cooked it up for dinner last night... It filled the house with a {3} smell.. It was a hit!$h#$b#I'm glad Pierre's stock is starting to expand again.#$e# Anyways...",
+      "translation": "Привіт, {0}.#$b# Днями довелося зазирнути до П’єра й купити {1} {2}. Такого товару там давно не було... #$b#Учора він пішов на вечерю... Будинок наповнився {3} ароматом... Усім сподобалося!$h#$b#Радісно бачити, що асортимент П’єра знову розширюється.#$e# Хай там як...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityLow",
+      "english": "Hey, {0}.#$b# So I stopped by Pierre's the other day and bought {1} {2}. It was the first time I've seen one of those there in a while... #$b#I cooked it up for dinner last night... It filled the house with a {3} odor. I don't even want to know where Pierre found that thing.$s#$e# Anyways...",
+      "translation": "Привіт, {0}.#$b# Днями довелося зазирнути до П’єра й купити {1} {2}. Такого товару там давно не було... #$b#Учора він пішов на вечерю... Будинок наповнився {3} смородом. Навіть знати не хочу, де П’єр знайшов цю річ.$s#$e# Хай там як...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh",
+      "english": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It was pretty high-quality stuff. I'm impressed.",
+      "translation": "Привіт... Чи не від тебе до універсальної крамниці днями потрапили {1} {2}? Здається, ця покупка дісталася мені...#$e#Якість була дуже висока. Вражає.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh_Jodi",
+      "english": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It was pretty high-quality stuff. As soon as I smelled it I was back in Granny's old cottage...",
+      "translation": "Привіт... Чи не від тебе до універсальної крамниці днями потрапили {1} {2}? Здається, ця покупка дісталася мені...#$e#Якість була дуже висока. Щойно я відчула запах, одразу опинилася в старому бабусиному будиночку...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityLow",
+      "english": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#The quality was decent.",
+      "translation": "Привіт... Чи не від тебе до універсальної крамниці днями потрапили {1} {2}? Здається, ця покупка дісталася мені...#$e#Якість була пристойна.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityLow_Rude",
+      "english": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was {4}! No wonder Pierre was selling that {5} for so cheap...",
+      "translation": "Учора під час закупів вдалося придбати {1} {2} на розпродажі лише за {3}g.#$e# Це було {4}! Не дивно, що П’єр продавав цей товар «{5}» так дешево...",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityHigh_Rude",
+      "english": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was actually pretty {4}.",
+      "translation": "Учора під час закупів вдалося придбати {1} {2} на розпродажі лише за {3}g.#$e# Насправді це було доволі {4}.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_NonRude",
+      "english": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# I couldn't pass up that great price.",
+      "translation": "Учора під час закупів вдалося придбати {1} {2} на розпродажі лише за {3}g.#$e# Неможливо було пройти повз таку чудову ціну.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_4",
+      "english": "So I was at the store the other day and Pierre showed me {1} {2} you brought in.#$e#I bought it.$h",
+      "translation": "Днями в крамниці П’єр показав мені {1} {2}, що надійшли від тебе.#$e#Товар було придбано.$h",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_5_VegetableOrFruit",
+      "english": "I bought the tastiest {2} from Pierre's shop the other day. #$b#He said that he grew the thing in his own backyard. I didn't know Pierre was such a talented farmer!$h#$b#Looks like you might have some competition, huh?",
+      "translation": "Нещодавно в крамниці П’єра вдалося купити найсмачніший продукт: {2}. #$b#Він сказав, що виростив його на власному подвір’ї. Хто б подумав, що П’єр такий талановитий фермер!$h#$b#Схоже, у тебе з’явився конкурент, еге ж?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_5_Cooking",
+      "english": "I bought the tastiest {2} from Pierre's shop the other day. #$b#He said he cooked the thing himself using local ingredients. I didn't know Pierre was such {3} {4} chef!",
+      "translation": "Нещодавно в крамниці П’єра вдалося купити найсмачнішу страву: {2}. #$b#Він сказав, що приготував її сам із місцевих складників. Хто б подумав, що П’єр — такий {3} {4} кухар!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_5_Foraged",
+      "english": "I bought the tastiest {2} from Pierre's shop the other day. He said he found it himself while exploring the mountains. I didn't know Pierre was such a talented forager!",
+      "translation": "Нещодавно в крамниці П’єра вдалося купити найсмачніший продукт: {2}. Він сказав, що сам знайшов його, досліджуючи гори. Хто б подумав, що П’єр такий талановитий збирач!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Teen",
+      "english": "Hey, so I picked up {2} at the store last night. My mom wanted something good for dinner.",
+      "translation": "Гей, учора в крамниці трапився товар «{2}». Мама хотіла чогось смачного на вечерю.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Abigail_QualityLow",
+      "english": "Hey. We had one of those {2}s you sold at the shop for dinner last night... I guess it was starting to go bad and my Dad couldn't bear to throw it out.$h#$b#Unfortunately it tasted like {3}.$s",
+      "translation": "Гей. Учора на вечерю в нас був один із тих продуктів «{2}», що від тебе потрапили до крамниці... Мабуть, він уже почав псуватися, а тато не зміг його викинути.$h#$b#На жаль, на смак він був як {3}.$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Abigail_QualityHigh",
+      "english": "Hey. We had one of those {2}s you sold at the shop for dinner last night... I guess it was starting to go bad and my Dad couldn't bear to throw it out.$h#$b#It was still pretty good, though.",
+      "translation": "Гей. Учора на вечерю в нас був один із тих продуктів «{2}», що від тебе потрапили до крамниці... Мабуть, він уже почав псуватися, а тато не зміг його викинути.$h#$b#Але на смак він усе одно був доволі добрий.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Caroline_QualityLow",
+      "english": "Oh, @... This is embarrassing. I threw one of your {2}s you sold us into my compost bin.$s#$b#Now the whole thing smells horrendous. Where did you find that thing again?",
+      "translation": "О, @... Як ніяково. Я кинула один із продуктів «{2}», що надійшли від тебе, до компостера.$s#$b#Тепер звідти жахливо смердить. Де вдалося знайти цю річ?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Caroline_QualityHigh",
+      "english": "Oh, @... This is embarrassing. I threw one of your {2}s you sold us into my compost bin.$s#$b#But on the bright side, the worms are really loving it! They've never looked happier!",
+      "translation": "О, @... Як ніяково. Я кинула один із продуктів «{2}», що надійшли від тебе, до компостера.$s#$b#Але є й добра новина: черв’якам він дуже подобається! Вони ще ніколи не мали такого щасливого вигляду!",
+      "reviewed": true
+    }
+  ]
+}

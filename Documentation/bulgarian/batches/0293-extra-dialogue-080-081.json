@@ -1,0 +1,29 @@
+{
+  "id": "0293-extra-dialogue-080-081",
+  "target": "Data/ExtraDialogue",
+  "status": "reviewed",
+  "sourceHashes": {
+    "SkullCavern_100_event": "18b8a357447ec3a6a2924a77d01301ff95cb8140db1f4943e6e3cdc78b8e7d8c",
+    "SkullCavern_100_event_honorable": "930720e7a98297c25dec1c838e35b0860f099a1781709e277c66ca8b35bece11"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "SkullCavern_100_event": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"Е, е, е... стигна дотук.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"Ела по-близо... не се стеснявай.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"Чух, че днес се опитваш да стигнеш дълбоко в тези пещери...#$b#Трябваше да го видя лично!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"Впечатляващо... много впечатляващо. Да стигнеш чак дотук е истински подвиг!#$b#...макар че прескочи куп нива чрез изработване на Стълбища. Умно, няма спор... но не особено почтено.$1#$b#И все пак, добивът на толкова много камък сигурно е изисквал много труд. Такава отдаденост заслужава похвала. Рядко се среща човек като теб, хлапе.\"/pause 500/speak MrQi \"А сега... отиди до масата и изпий специалното мляко, което приготвих за теб.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"Казва се „Иридиево змийско мляко“... една голяма глътка ще ти даде още повече сила.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"Вкусът е ужасен, а консистенцията е още по-лоша.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... Но Здравето ти се увеличи трайно с 25!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"Успех там, хлапе.\"/pause 500/playSound boop/end",
+    "SkullCavern_100_event_honorable": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"Е, е, е... стигна дотук.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"Ела по-близо... не се стеснявай.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"Чух, че днес се опитваш да стигнеш дълбоко в тези пещери...#$b#Трябваше да го видя лично!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"Впечатляващо... много впечатляващо. Издържа изпитанието ми с отличен резултат, хлапе.#$b#Много съм доволен, че прие предизвикателството и слезе дотук по почтения начин, вместо да прескачаш всички нива чрез изработване на Стълбища.#$b#Това доказва, че наистина те бива, хлапе. Имаш принципи.#$b#Разбираш колко е важно да предизвикваш себе си и да изискваш от себе си най-доброто, дори когато никой не гледа.#$b#Затова се отличаваш, хлапе... разбираш ли? Даваш пример. Това ми харесва.\"/pause 500/speak MrQi \"А сега... отиди до масата и изпий специалното мляко, което приготвих за теб.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"Казва се „Иридиево змийско мляко“... една голяма глътка ще ти даде още повече сила.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"Вкусът е ужасен, а консистенцията е още по-лоша.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... Но Здравето ти се увеличи трайно с 25!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"Успех там, хлапе.\"/pause 500/playSound boop/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 2,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread both complete Skull Cavern level-100 event scripts in ExtraDialogue source ordinals 80 and 81, covering all eighteen quoted fields.",
+      "Preserved every event command, actor and sprite identifier, quest and reward ID, animation sequence, numeric timing, the 25-point increase, dialogue break and quoted-field boundary.",
+      "Applied the locked Стълбище and Здраве terms, kept the honorable and staircase-assisted evaluations distinct, and phrased every player reference without an unsupported gender assumption."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "2ece18f61c33ada4bfbd3b017122f36cd86d5cc4d8376c8cc066a2ef84eab6bf"
+  }
+}

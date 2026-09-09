@@ -1,0 +1,24 @@
+{
+  "locale": "nl",
+  "target": "Data/Festivals/spring24",
+  "sourceAssetSha256": "b980a6ac6baa32e583ba25ee3dee9fa8a8fb4d21f48cf6afa3587e3b5fcd1867",
+  "reviewed": true,
+  "entries": {
+    "name": "Bloemendans"
+  },
+  "preserveSourceEntries": [
+    "conditions",
+    "set-up",
+    "set-up_y2"
+  ],
+  "quotedReplacements": {
+    "mainEvent": {
+      "That was fun! Time to go home...": "Dat was leuk! Tijd om naar huis te gaan..."
+    }
+  },
+  "notes": {
+    "conditions": "Reviewed festival location and schedule data; retained source-identical because it contains only engine tokens and numeric values.",
+    "set-up": "Reviewed year-one event setup commands; retained source-identical because they contain only engine commands, actor identifiers, map identifiers, animation and movement instructions, and numeric values.",
+    "set-up_y2": "Reviewed year-two event setup commands; retained source-identical because they contain only engine commands, actor identifiers, map identifiers, animation and movement instructions, and numeric values."
+  }
+}

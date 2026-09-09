@@ -1,0 +1,1283 @@
+{
+  "id": "054-technical-cooking-b-crafting-a",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/CookingRecipes": "2a78872cd2c06f2bfe56f09d4e4a7914f37fe44d69af8754d8c6666fa1f0acc6",
+    "Data/CraftingRecipes": "703bd3b166d9d3f086ccdb61eead4d5e46dbd6196cf399991feff277534496f1"
+  },
+  "records": [
+    {
+      "target": "Data/CookingRecipes",
+      "key": "Moss Soup",
+      "english": "Moss 20/1 10/MossSoup/s Foraging 3/",
+      "translation": "Moss 20/1 10/MossSoup/s Foraging 3/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, yield data, output IDs, unlock-condition codes, skill identifiers, NPC identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Moss",
+          "MossSoup",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Wood Fence",
+      "english": "388 2/Field/322/false/default/",
+      "translation": "388 2/Field/322/false/default/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "default"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Stone Fence",
+      "english": "390 2/Field/323/false/s Farming 2/",
+      "translation": "390 2/Field/323/false/s Farming 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Iron Fence",
+      "english": "335 1/Field/324 10/false/s Farming 4/",
+      "translation": "335 1/Field/324 10/false/s Farming 4/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Hardwood Fence",
+      "english": "709 1/Field/298/false/s Farming 6/",
+      "translation": "709 1/Field/298/false/s Farming 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Grass Starter",
+      "english": "771 10/Field/297/false/null/",
+      "translation": "771 10/Field/297/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Blue Grass Starter",
+      "english": "771 25 Moss 10 MysticSyrup 1/Field/BlueGrassStarter/false/null/",
+      "translation": "771 25 Moss 10 MysticSyrup 1/Field/BlueGrassStarter/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Moss",
+          "MysticSyrup",
+          "Field",
+          "BlueGrassStarter",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Gate",
+      "english": "388 10/Home/325/false/default/",
+      "translation": "388 10/Home/325/false/default/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "default"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Chest",
+      "english": "388 50/Home/130/true/default/",
+      "translation": "388 50/Home/130/true/default/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "default"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Big Chest",
+      "english": "388 120 334 2/Home/BigChest/true/null/",
+      "translation": "388 120 334 2/Home/BigChest/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "BigChest",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Stone Chest",
+      "english": "390 50/Home/232/true/null/",
+      "translation": "390 50/Home/232/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Big Stone Chest",
+      "english": "390 250/Home/BigStoneChest/true/null/",
+      "translation": "390 250/Home/BigStoneChest/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "BigStoneChest",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Torch",
+      "english": "388 1 92 2/Field/93/false/default/",
+      "translation": "388 1 92 2/Field/93/false/default/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "default"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Scarecrow",
+      "english": "388 50 382 1 771 20/Home/8/true/s Farming 1/",
+      "translation": "388 50 382 1 771 20/Home/8/true/s Farming 1/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Deluxe Scarecrow",
+      "english": "388 50 386 1 771 40/Home/167/true/null/",
+      "translation": "388 50 386 1 771 40/Home/167/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Bee House",
+      "english": "388 40 382 8 335 1 724 1/Home/10/true/s Farming 3/",
+      "translation": "388 40 382 8 335 1 724 1/Home/10/true/s Farming 3/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Keg",
+      "english": "388 30 334 1 335 1 725 1/Home/12/true/s Farming 8/",
+      "translation": "388 30 334 1 335 1 725 1/Home/12/true/s Farming 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Cask",
+      "english": "388 20 709 1/Home/163/true/null/",
+      "translation": "388 20 709 1/Home/163/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Dehydrator",
+      "english": "388 30 330 2 82 1/Home/Dehydrator/true/null/",
+      "translation": "388 30 330 2 82 1/Home/Dehydrator/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "Dehydrator",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Furnace",
+      "english": "378 20 390 25/Home/13/true/l 2/",
+      "translation": "378 20 390 25/Home/13/true/l 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "l"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Heavy Furnace",
+      "english": "(BC)13 2 335 3 390 50/Home/HeavyFurnace/true/l 2/",
+      "translation": "(BC)13 2 335 3 390 50/Home/HeavyFurnace/true/l 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "BC",
+          "Home",
+          "HeavyFurnace",
+          "true",
+          "l"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Anvil",
+      "english": "335 50/Home/Anvil/true/l 2/",
+      "translation": "335 50/Home/Anvil/true/l 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "Anvil",
+          "true",
+          "l"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mini-Forge",
+      "english": "852 5 335 10 336 10 337 5/Home/MiniForge/true/l 2/",
+      "translation": "852 5 335 10 336 10 337 5/Home/MiniForge/true/l 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "MiniForge",
+          "true",
+          "l"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Garden Pot",
+      "english": "330 1 390 10 338 1/Home/62/true/null/",
+      "translation": "330 1 390 10 338 1/Home/62/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Wood Sign",
+      "english": "388 25/Home/37/true/default/",
+      "translation": "388 25/Home/37/true/default/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "default"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Stone Sign",
+      "english": "390 25/Home/38/true/default/",
+      "translation": "390 25/Home/38/true/default/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "default"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Dark Sign",
+      "english": "767 5 881 5/Home/39/true/f Krobus 3/",
+      "translation": "767 5 881 5/Home/39/true/f Krobus 3/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "f",
+          "Krobus"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Text Sign",
+      "english": "388 25/Home/TextSign/true/default/",
+      "translation": "388 25/Home/TextSign/true/default/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "TextSign",
+          "true",
+          "default"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Cheese Press",
+      "english": "388 45 390 45 709 10 334 1/Home/16/true/s Farming 6/",
+      "translation": "388 45 390 45 709 10 334 1/Home/16/true/s Farming 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mayonnaise Machine",
+      "english": "388 15 390 15 86 1 334 1/Home/24/true/s Farming 2/",
+      "translation": "388 15 390 15 86 1 334 1/Home/24/true/s Farming 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Seed Maker",
+      "english": "388 25 382 10 336 1/Home/25/true/s Farming 9/",
+      "translation": "388 25 382 10 336 1/Home/25/true/s Farming 9/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Loom",
+      "english": "388 60 771 30 726 1/Home/17/true/s Farming 7/",
+      "translation": "388 60 771 30 726 1/Home/17/true/s Farming 7/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Oil Maker",
+      "english": "766 50 709 20 336 1/Home/19/true/s Farming 8/",
+      "translation": "766 50 709 20 336 1/Home/19/true/s Farming 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Recycling Machine",
+      "english": "388 25 390 25 335 1/Home/20/true/s Fishing 4/",
+      "translation": "388 25 390 25 335 1/Home/20/true/s Fishing 4/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Fishing"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Worm Bin",
+      "english": "709 15 336 1 335 1 771 50/Home/154/true/s Fishing 4/",
+      "translation": "709 15 336 1 335 1 771 50/Home/154/true/s Fishing 4/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Fishing"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Deluxe Worm Bin",
+      "english": "(BC)154 1 Moss 30/Home/DeluxeWormBin/true/s Fishing 8/",
+      "translation": "(BC)154 1 Moss 30/Home/DeluxeWormBin/true/s Fishing 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "BC",
+          "Moss",
+          "Home",
+          "DeluxeWormBin",
+          "true",
+          "s",
+          "Fishing"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Bait Maker",
+      "english": "335 3 393 3 397 1/Home/BaitMaker/true/s Fishing 6/",
+      "translation": "335 3 393 3 397 1/Home/BaitMaker/true/s Fishing 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "BaitMaker",
+          "true",
+          "s",
+          "Fishing"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Fish Smoker",
+      "english": "709 10 SeaJelly 1 RiverJelly 1 CaveJelly 1/Home/FishSmoker/true/null/",
+      "translation": "709 10 SeaJelly 1 RiverJelly 1 CaveJelly 1/Home/FishSmoker/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "SeaJelly",
+          "RiverJelly",
+          "CaveJelly",
+          "Home",
+          "FishSmoker",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Preserves Jar",
+      "english": "388 50 390 40 382 8/Home/15/true/s Farming 4/",
+      "translation": "388 50 390 40 382 8/Home/15/true/s Farming 4/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Charcoal Kiln",
+      "english": "388 20 334 2/Home/114/true/s Foraging 2/",
+      "translation": "388 20 334 2/Home/114/true/s Foraging 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Tapper",
+      "english": "388 40 334 2/Home/105/true/s Foraging 4/",
+      "translation": "388 40 334 2/Home/105/true/s Foraging 4/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mushroom Log",
+      "english": "709 10 Moss 10/Home/MushroomLog/true/s Foraging 4/",
+      "translation": "709 10 Moss 10/Home/MushroomLog/true/s Foraging 4/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Moss",
+          "Home",
+          "MushroomLog",
+          "true",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Lightning Rod",
+      "english": "335 1 338 1 767 5/Home/9/true/s Foraging 6/",
+      "translation": "335 1 338 1 767 5/Home/9/true/s Foraging 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Slime Incubator",
+      "english": "337 2 766 100/Home/156/true/s Combat 8/",
+      "translation": "337 2 766 100/Home/156/true/s Combat 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Combat"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Slime Egg-Press",
+      "english": "382 25 82 1 787 1/Home/158/true/s Combat 6/",
+      "translation": "382 25 82 1 787 1/Home/158/true/s Combat 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Combat"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Crystalarium",
+      "english": "390 99 336 5 337 2 787 1/Home/21/true/s Mining 9/",
+      "translation": "390 99 336 5 337 2 787 1/Home/21/true/s Mining 9/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "s",
+          "Mining"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mini-Jukebox",
+      "english": "335 2 787 1/Home/209/true/null/",
+      "translation": "335 2 787 1/Home/209/true/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "true",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Sprinkler",
+      "english": "334 1 335 1/Home/599/false/s Farming 2/",
+      "translation": "334 1 335 1/Home/599/false/s Farming 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Quality Sprinkler",
+      "english": "335 1 336 1 338 1/Home/621/false/s Farming 6/",
+      "translation": "335 1 336 1 338 1/Home/621/false/s Farming 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Iridium Sprinkler",
+      "english": "336 1 337 1 787 1/Home/645/false/s Farming 9/",
+      "translation": "336 1 337 1 787 1/Home/645/false/s Farming 9/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Staircase",
+      "english": "390 99/Field/71/true/s Mining 2/",
+      "translation": "390 99/Field/71/true/s Mining 2/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "true",
+          "s",
+          "Mining"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Flute Block",
+      "english": "388 10 378 2 771 20/Home/464/false/null/",
+      "translation": "388 10 378 2 771 20/Home/464/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Drum Block",
+      "english": "390 10 378 2 771 20/Home/463/false/null/",
+      "translation": "390 10 378 2 771 20/Home/463/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Basic Fertilizer",
+      "english": "92 2/Field/368/false/s Farming 1/",
+      "translation": "92 2/Field/368/false/s Farming 1/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Tree Fertilizer",
+      "english": "771 5 390 5/Field/805/false/s Foraging 7/",
+      "translation": "771 5 390 5/Field/805/false/s Foraging 7/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mystic Tree Seed",
+      "english": "309 5 310 5 311 5 292 5/Field/MysticTreeSeed/false/null/",
+      "translation": "309 5 310 5 311 5 292 5/Field/MysticTreeSeed/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "MysticTreeSeed",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Quality Fertilizer",
+      "english": "92 4 -4 1/Field/369 2/false/s Farming 9/",
+      "translation": "92 4 -4 1/Field/369 2/false/s Farming 9/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Basic Retaining Soil",
+      "english": "390 2/Field/370/false/s Farming 4/",
+      "translation": "390 2/Field/370/false/s Farming 4/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Quality Retaining Soil",
+      "english": "390 3 330 1/Field/371 2/false/s Farming 7/",
+      "translation": "390 3 330 1/Field/371 2/false/s Farming 7/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Speed-Gro",
+      "english": "726 1 Moss 5/Field/465 5/false/s Farming 3/",
+      "translation": "726 1 Moss 5/Field/465 5/false/s Farming 3/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Moss",
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Deluxe Speed-Gro",
+      "english": "725 1 881 5/Field/466 5/false/s Farming 8/",
+      "translation": "725 1 881 5/Field/466 5/false/s Farming 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Farming"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Hyper Speed-Gro",
+      "english": "909 1 881 3 768 1/Field/918/false/null/",
+      "translation": "909 1 881 3 768 1/Field/918/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Deluxe Fertilizer",
+      "english": "337 1 92 40/Field/919 5/false/null/",
+      "translation": "337 1 92 40/Field/919 5/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Deluxe Retaining Soil",
+      "english": "390 5 771 3 330 1/Field/920/false/null/",
+      "translation": "390 5 771 3 330 1/Field/920/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Cherry Bomb",
+      "english": "378 4 382 1/Field/286/false/s Mining 1/",
+      "translation": "378 4 382 1/Field/286/false/s Mining 1/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Mining"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Bomb",
+      "english": "380 4 382 1/Field/287/false/s Mining 6/",
+      "translation": "380 4 382 1/Field/287/false/s Mining 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Mining"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Mega Bomb",
+      "english": "384 4 768 1 769 1/Field/288/false/s Mining 8/",
+      "translation": "384 4 768 1 769 1/Field/288/false/s Mining 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Mining"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Explosive Ammo",
+      "english": "335 1 382 2/Home/441 5/false/s Combat 8/",
+      "translation": "335 1 382 2/Home/441 5/false/s Combat 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "s",
+          "Combat"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Transmute (Fe)",
+      "english": "334 3/Home/335/false/s Mining 4/[LocalizedText Strings\\Objects:CraftingRecipe_IronBar]",
+      "translation": "334 3/Home/335/false/s Mining 4/[LocalizedText Strings\\Objects:CraftingRecipe_IronBar]",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "s",
+          "Mining"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Transmute (Au)",
+      "english": "335 2/Home/336/false/s Mining 7/[LocalizedText Strings\\Objects:CraftingRecipe_GoldBar]",
+      "translation": "335 2/Home/336/false/s Mining 7/[LocalizedText Strings\\Objects:CraftingRecipe_GoldBar]",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "s",
+          "Mining"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Ancient Seeds",
+      "english": "114 1/Field/499/false/null/",
+      "translation": "114 1/Field/499/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Wild Seeds (Sp)",
+      "english": "16 1 18 1 20 1 22 1/Field/495 10/false/s Foraging 1/[LocalizedText Strings\\Objects:CraftingRecipe_SpringSeeds]",
+      "translation": "16 1 18 1 20 1 22 1/Field/495 10/false/s Foraging 1/[LocalizedText Strings\\Objects:CraftingRecipe_SpringSeeds]",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Wild Seeds (Su)",
+      "english": "396 1 398 1 402 1/Field/496 10/false/s Foraging 4/[LocalizedText Strings\\Objects:CraftingRecipe_SummerSeeds]",
+      "translation": "396 1 398 1 402 1/Field/496 10/false/s Foraging 4/[LocalizedText Strings\\Objects:CraftingRecipe_SummerSeeds]",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Wild Seeds (Fa)",
+      "english": "404 1 406 1 408 1 410 1/Field/497 10/false/s Foraging 6/[LocalizedText Strings\\Objects:CraftingRecipe_FallSeeds]",
+      "translation": "404 1 406 1 408 1 410 1/Field/497 10/false/s Foraging 6/[LocalizedText Strings\\Objects:CraftingRecipe_FallSeeds]",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Wild Seeds (Wi)",
+      "english": "412 1 414 1 416 1 418 1/Field/498 10/false/s Foraging 7/[LocalizedText Strings\\Objects:CraftingRecipe_WinterSeeds]",
+      "translation": "412 1 414 1 416 1 418 1/Field/498 10/false/s Foraging 7/[LocalizedText Strings\\Objects:CraftingRecipe_WinterSeeds]",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Fiber Seeds",
+      "english": "770 1 92 5 330 1/Home/885 4/false/null/",
+      "translation": "770 1 92 5 330 1/Home/885 4/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Home",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Tea Sapling",
+      "english": "-777 2 771 5 388 5/Field/251/false/null/",
+      "translation": "-777 2 771 5 388 5/Field/251/false/null/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "null"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Warp Totem: Farm",
+      "english": "709 1 340 1 771 20/Field/688/false/s Foraging 8/",
+      "translation": "709 1 340 1 771 20/Field/688/false/s Foraging 8/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Warp Totem: Mountains",
+      "english": "709 1 335 1 390 25/Field/689/false/s Foraging 7/",
+      "translation": "709 1 335 1 390 25/Field/689/false/s Foraging 7/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "key": "Warp Totem: Beach",
+      "english": "709 1 393 2 771 10/Field/690/false/s Foraging 6/",
+      "translation": "709 1 393 2 771 10/Field/690/false/s Foraging 6/",
+      "preservationReason": "The slash-delimited value contains exact ingredient IDs, placement categories, output IDs, unlock-condition codes, skill identifiers, and parser flags; the recipe name is the record key and is localized through object strings, so this value must remain unchanged.",
+      "latinException": {
+        "tokens": [
+          "Field",
+          "false",
+          "s",
+          "Foraging"
+        ],
+        "reason": "These ASCII words are exact internal item, category, skill, condition, NPC, or parser identifiers and must remain unchanged."
+      }
+    }
+  ]
+}
+

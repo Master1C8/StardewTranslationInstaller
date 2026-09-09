@@ -1,0 +1,1215 @@
+{
+  "id": "049-technical-paint-hair-chairs-a",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Data/PaintData": "13ac36fbc07ea1a898ca64654b8c69ae0966dca35b4efa8a7a1a2da31c45fe71",
+    "Data/HairData": "ad4c6c00714e03bfb196d962f2d3dc6a480229369d54a02bf5b4f5e7eeb16c3e",
+    "Data/ChairTiles": "f5fa7b592a4d80378a6cbeebdc4c7b5b1f1e2a927bb0e9051e5961dfd926536a"
+  },
+  "records": [
+    {
+      "target": "Data/PaintData",
+      "key": "House",
+      "english": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+      "translation": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Log Cabin",
+      "english": "Building/-20 20/Roof/-15 5/Trim/-10 5",
+      "translation": "Building/-20 20/Roof/-15 5/Trim/-10 5",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Stone Cabin",
+      "english": "Building/-15 25/Roof/-15 5/Trim/-5 5",
+      "translation": "Building/-15 25/Roof/-15 5/Trim/-5 5",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Plank Cabin",
+      "english": "Building/-55 -20/Roof/-10 5/Trim/-55 -30",
+      "translation": "Building/-55 -20/Roof/-10 5/Trim/-55 -30",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Beach Cabin",
+      "english": "Building/-10 0/Roof/0 5/Trim/-5 5",
+      "translation": "Building/-10 0/Roof/0 5/Trim/-5 5",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Neighbor Cabin",
+      "english": "Building/-10 0/Roof/-15 10/Trim/-10 5",
+      "translation": "Building/-10 0/Roof/-15 10/Trim/-10 5",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Rustic Cabin",
+      "english": "Building/-20 5/Roof/-5 5/Trim/-5 0",
+      "translation": "Building/-20 5/Roof/-5 5/Trim/-5 0",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Trailer Cabin",
+      "english": "Building/-5 0/Roof/-5 5/Trim/-5 0",
+      "translation": "Building/-5 0/Roof/-5 5/Trim/-5 0",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Stable",
+      "english": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+      "translation": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Big Shed",
+      "english": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+      "translation": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Deluxe Coop",
+      "english": "Building/-25 0/Roof/-15 5/Trim/-25 0",
+      "translation": "Building/-25 0/Roof/-15 5/Trim/-25 0",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Deluxe Barn",
+      "english": "Building/-15 0/Roof/-10 5/Trim/-10 5",
+      "translation": "Building/-15 0/Roof/-10 5/Trim/-10 5",
+      "preservationReason": "The value contains exact building-layer identifiers and numeric paint-mask offsets; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "Building",
+          "Roof",
+          "Trim"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "100",
+      "english": "hairstyles2/0/0/true/-1/false",
+      "translation": "hairstyles2/0/0/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "101",
+      "english": "hairstyles2/1/0/true/-101/false",
+      "translation": "hairstyles2/1/0/true/-101/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "102",
+      "english": "hairstyles2/2/0/true/-1/false",
+      "translation": "hairstyles2/2/0/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "103",
+      "english": "hairstyles2/3/0/true/-1/false",
+      "translation": "hairstyles2/3/0/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "104",
+      "english": "hairstyles2/4/0/true/103/false",
+      "translation": "hairstyles2/4/0/true/103/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "105",
+      "english": "hairstyles2/5/0/true/-1/false",
+      "translation": "hairstyles2/5/0/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "106",
+      "english": "hairstyles2/6/0/true/105/false",
+      "translation": "hairstyles2/6/0/true/105/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "107",
+      "english": "hairstyles2/7/0/true/-111/false",
+      "translation": "hairstyles2/7/0/true/-111/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "108",
+      "english": "hairstyles2/0/8/true/116/false",
+      "translation": "hairstyles2/0/8/true/116/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "109",
+      "english": "hairstyles2/1/8/true/-111/false",
+      "translation": "hairstyles2/1/8/true/-111/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "110",
+      "english": "hairstyles2/2/8/true/-110/false",
+      "translation": "hairstyles2/2/8/true/-110/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "111",
+      "english": "hairstyles2/3/8/true/112/false",
+      "translation": "hairstyles2/3/8/true/112/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "112",
+      "english": "hairstyles2/4/8/true/-1/false",
+      "translation": "hairstyles2/4/8/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "113",
+      "english": "hairstyles2/5/8/true/-1/false",
+      "translation": "hairstyles2/5/8/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "114",
+      "english": "hairstyles2/6/8/true/-114/false",
+      "translation": "hairstyles2/6/8/true/-114/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "115",
+      "english": "hairstyles2/7/8/true/-115/false",
+      "translation": "hairstyles2/7/8/true/-115/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "116",
+      "english": "hairstyles2/0/16/true/-1/false",
+      "translation": "hairstyles2/0/16/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "117",
+      "english": "hairstyles2/1/16/true/112/false",
+      "translation": "hairstyles2/1/16/true/112/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-101",
+      "english": "hairstyles2/2/16/true/-1/false",
+      "translation": "hairstyles2/2/16/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-114",
+      "english": "hairstyles2/3/16/true/-1/false",
+      "translation": "hairstyles2/3/16/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-115",
+      "english": "hairstyles2/4/16/true/-1/false",
+      "translation": "hairstyles2/4/16/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-110",
+      "english": "hairstyles2/5/16/true/-1/false",
+      "translation": "hairstyles2/5/16/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-111",
+      "english": "hairstyles2/6/16/true/-1/false",
+      "translation": "hairstyles2/6/16/true/-1/false",
+      "preservationReason": "The value contains an exact sprite-sheet identifier, numeric offsets, and Boolean flags; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "hairstyles2",
+          "true",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/8/1",
+      "english": "1/2/right/bench/0/0/true",
+      "translation": "1/2/right/bench/0/0/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "right",
+          "bench",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/22/1",
+      "english": "1/2/left/bench/4/0/true",
+      "translation": "1/2/left/bench/4/0/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "left",
+          "bench",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/2/10",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/3/10",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/7/10",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/27/33",
+      "english": "3/1/down/picnic/0/4/true",
+      "translation": "3/1/down/picnic/0/4/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "picnic",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/27/34",
+      "english": "3/1/up/picnic/0/5/true",
+      "translation": "3/1/up/picnic/0/5/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "up",
+          "picnic",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/8/39",
+      "english": "1/1/down/swings/-1/-1/true",
+      "translation": "1/1/down/swings/-1/-1/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "swings",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/10/39",
+      "english": "1/1/down/swings/-1/-1/true",
+      "translation": "1/1/down/swings/-1/-1/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "swings",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/10/34",
+      "english": "2/1/left/playground/-1/-1/true",
+      "translation": "2/1/left/playground/-1/-1/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "left",
+          "playground",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/21/36",
+      "english": "1/1/down/chair/-1/-1/true",
+      "translation": "1/1/down/chair/-1/-1/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "chair",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_beach/12/18",
+      "english": "3/1/down/bench/-1/-1/true",
+      "translation": "3/1/down/bench/-1/-1/true",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "true"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "DesertTiles/13/2",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "DesertTiles/14/2",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "DesertTiles/8/16",
+      "english": "1/1/down/stool short/-1/-1/false",
+      "translation": "1/1/down/stool short/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "stool",
+          "short",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/22/27",
+      "english": "1/1/down/stool/-1/-1/false",
+      "translation": "1/1/down/stool/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "stool",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/30/27",
+      "english": "2/1/down/booth/8/0/false",
+      "translation": "2/1/down/booth/8/0/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "booth",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/30/28",
+      "english": "1/1/up/booth/8/1/false",
+      "translation": "1/1/up/booth/8/1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "up",
+          "booth",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/31/28",
+      "english": "1/1/up/booth/9/1/false",
+      "translation": "1/1/up/booth/9/1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "up",
+          "booth",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/18",
+      "english": "1/2/left/couch/10/0/false",
+      "translation": "1/2/left/couch/10/0/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "left",
+          "couch",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/13/16",
+      "english": "1/1/down/couch/-1/-1/false",
+      "translation": "1/1/down/couch/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "couch",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/13/18",
+      "english": "1/1/down/couch/-1/-1/false",
+      "translation": "1/1/down/couch/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "couch",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/16/17",
+      "english": "1/1/down/couch/-1/-1/false",
+      "translation": "1/1/down/couch/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "couch",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/13/23",
+      "english": "1/2/right/couch/11/0/false",
+      "translation": "1/2/right/couch/11/0/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "right",
+          "couch",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/15/23",
+      "english": "1/2/right/couch/12/0/false",
+      "translation": "1/2/right/couch/12/0/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "right",
+          "couch",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/22",
+      "english": "1/1/right/chair/-1/-1/false",
+      "translation": "1/1/right/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "right",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/22",
+      "english": "1/1/down/chair/-1/-1/false",
+      "translation": "1/1/down/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/24",
+      "english": "1/1/left/chair/-1/-1/false",
+      "translation": "1/1/left/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "left",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/24",
+      "english": "1/1/up/highback_chair/13/1/false",
+      "translation": "1/1/up/highback_chair/13/1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "up",
+          "highback",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/8/12",
+      "english": "1/1/right/chair/-1/-1/false",
+      "translation": "1/1/right/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "right",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/9/16",
+      "english": "1/1/down/chair/-1/-1/false",
+      "translation": "1/1/down/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/8/14",
+      "english": "1/1/left/chair/-1/-1/false",
+      "translation": "1/1/left/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "left",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/16",
+      "english": "1/1/up/highback_chair/14/1/false",
+      "translation": "1/1/up/highback_chair/14/1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "up",
+          "highback",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/15",
+      "english": "1/1/down/stool/-1/-1/false",
+      "translation": "1/1/down/stool/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "stool",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/16",
+      "english": "1/1/down/stool/-1/-1/false",
+      "translation": "1/1/down/stool/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "stool",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/9/17",
+      "english": "1/1/down/stool/-1/-1/false",
+      "translation": "1/1/down/stool/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "stool",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/27/36",
+      "english": "1/1/down/stool/-1/-1/false",
+      "translation": "1/1/down/stool/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "stool",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/26",
+      "english": "1/1/right/chair/-1/-1/false",
+      "translation": "1/1/right/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "right",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/26",
+      "english": "1/1/left/chair/-1/-1/false",
+      "translation": "1/1/left/chair/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "left",
+          "chair",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/12/26",
+      "english": "1/1/down/stool/-1/-1/false",
+      "translation": "1/1/down/stool/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "stool",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/25/33",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/26/33",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/27/33",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/28/33",
+      "english": "1/1/down/bench/-1/-1/false",
+      "translation": "1/1/down/bench/-1/-1/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "bench",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/30/33",
+      "english": "2/1/down/booth/0/2/false",
+      "translation": "2/1/down/booth/0/2/false",
+      "preservationReason": "The value contains exact seat geometry, direction, seat-type identifiers, offsets, and a Boolean flag; translating it would break data parsing.",
+      "latinException": {
+        "tokens": [
+          "down",
+          "booth",
+          "false"
+        ],
+        "reason": "These ASCII words are exact identifiers or Boolean literals in the parsed data value and must remain unchanged."
+      }
+    }
+  ]
+}
+

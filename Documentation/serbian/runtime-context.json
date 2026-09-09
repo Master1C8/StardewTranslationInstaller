@@ -1,0 +1,56 @@
+{
+  "assemblySha256": "c5b4ae84c1d3dd54e159e91344f1b25928147738ccf51bdb34702a294d09da53",
+  "version": "Stardew Valley 1.6.15 build 24356",
+  "inspection": "Read-only managed IL inspection using dnfile 0.18.0 and dncil 1.0.2 installed in /tmp/stardew-sr-il; no game writes.",
+  "findings": [
+    {
+      "id": "sr-english-indefinite-article",
+      "status": "implemented-built-standalone-and-live-runtime-passed",
+      "evidence": "Stardew Valley 1.6.15 Utility.AOrAn returns a/an for mod locales (only special case Hungarian az), unlike Lexicon.getProperArticleForWord which returns empty outside en. Multiplayer.receiveChatInfoMessage uses Utility.AOrAn for aOrAn: tokens.",
+      "requiredChange": "Add a Harmony postfix scoped exactly to mod + sr-vnrevival which returns empty from Utility.AOrAn; preserve every other locale. Integrate and build shared switcher when registering sr. Test both Serbian suppression and unchanged other locales, plus direct VN switching.",
+      "affectedRecords": [
+        "Strings/UI::Chat_BuildingBuild",
+        "Strings/UI::Chat_BuildingMagicBuild"
+      ],
+      "implementation": "VN Revival Language Switcher 1.5.0 patches Utility.AOrAn only for active mod locale sr-vnrevival; shared-source probe verifies Serbian suppression and unchanged non-Serbian behavior."
+    },
+    {
+      "id": "pond-quantity",
+      "evidence": "PondQueryMenu.UpdateState uses getProperArticleForWord for count <=1, then OneCount if article empty. For sr custom language this is empty; {1} can thus be мало. Parenthetical quantity handles both words and numbers without inflecting display name."
+    },
+    {
+      "id": "house-possessive",
+      "evidence": "Possessive_Pronoun_Male=његов; Possessive_Pronoun_Female=њен used before nominative дом. Verify all other insertion contexts before accepting Lexicon."
+    },
+    {
+      "id": "name-easter-egg-article",
+      "evidence": "CharacterCustomization.optionButtonClick passes Lexicon.getProperArticleForWord(itemName) to argument 0 and itemName to argument 1 of NameChange_EasterEgg6. Article is already empty for sr mod language."
+    },
+    {
+      "id": "sr-random-adjective-noun-agreement",
+      "status": "implemented-built-standalone-and-live-runtime-passed",
+      "evidence": "Dialogue.checkForSpecialCharacters independently substitutes the 20 random adjectives and 23 random nouns. Serbian adjectives are stored in masculine nominative while 13 nouns are feminine.",
+      "implementation": "The locale-scoped Harmony prefix/postfix runs only when an input contains both %adj and %noun under sr-vnrevival. SerbianGrammar classifies all 23 nouns and inflects all 20 adjectives, preserving masculine forms and initial capitalization.",
+      "verification": "Scripts/test-serbian-language-switcher.sh compiled the shared production grammar source and passed all 460 adjective/noun combinations, word-boundary cases, capitalization, Serbian article suppression, and non-Serbian preservation."
+    }
+  ],
+  "switcherVersion": "1.6.0",
+  "liveRuntimeQA": {
+    "status": "passed",
+    "contentPackVersion": "1.13.0",
+    "switcherVersion": "1.6.0",
+    "switchChain": [
+      "sr-vnrevival",
+      "pl-vnrevival",
+      "sr-vnrevival"
+    ],
+    "serbianAssets": [
+      "Fonts/SpriteFont1.sr-vnrevival",
+      "Fonts/SmallFont.sr-vnrevival",
+      "Minigames/TitleButtons.sr-vnrevival"
+    ],
+    "articleScope": "Serbian empty; Polish non-empty",
+    "smapiLogSha256": "78720b2492dd2df3c159053d366df21e873922fceb73b7636e0b30496b5b02fe",
+    "unexpectedErrors": 0
+  }
+}

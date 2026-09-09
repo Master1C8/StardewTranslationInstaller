@@ -1,0 +1,317 @@
+{
+  "id": "001-ui",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Strings/UI": "ea02f5523d75e54663b7bd7c1df9487f4c321fb1a1fb126c713d039d33e0710f"
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe_cooking",
+      "english": "cooking",
+      "translation": "בישול"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe_crafting",
+      "english": "crafting",
+      "translation": "יצירה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe",
+      "english": "You've learned a new {0} recipe: {1}",
+      "translation": "למדתם מתכון חדש ל{0}: {1}",
+      "contextNote": "{0} substitutes בישול or יצירה; plural direct address matches neutral UI prompts."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FarmerFile_1",
+      "english": "File on: {0}\nSteps Taken: {1}\nGifts Given: {2}\nDays In Stardew Valley: {3}\nDirt Hoed: {4}\nItems Crafted: {5}\nItems Cooked: {6}\nTrash Recycled: {7}",
+      "translation": "תיק על: {0}\nצעדים שנעשו: {1}\nמתנות שניתנו: {2}\nימים בעמק סטארדיו: {3}\nמשבצות אדמה שעובדו במעדר: {4}\nפריטים שנוצרו: {5}\nפריטים שבושלו: {6}\nאשפה שמוחזרה: {7}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FarmerFile_2",
+      "english": "Monsters Slain: {0}\nFish Caught: {1}\nLines Cast: {2}\nSeeds Sown: {3}\nItems Shipped: {4} ",
+      "translation": "מפלצות שחוסלו: {0}\nדגים שנלכדו: {1}\nהטלות חכה: {2}\nזרעים שנזרעו: {3}\nפריטים שנשלחו: {4} "
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney1",
+      "english": "You don't have enough money.",
+      "translation": "אין לכם מספיק כסף."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney2",
+      "english": "Not enough money.",
+      "translation": "אין מספיק כסף."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney3",
+      "english": "You don't have enough money...",
+      "translation": "אין לכם מספיק כסף..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Toggle_ColorPicker",
+      "english": "Toggle Color Picker",
+      "translation": "החלפת מצב בורר הצבעים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Move",
+      "english": "Change Home Building",
+      "translation": "שינוי מבנה המגורים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_HomeChanged",
+      "english": "Home changed",
+      "translation": "מבנה המגורים שונה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_BuildingFull",
+      "english": "That Building Is Full",
+      "translation": "המבנה הזה מלא"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_AlreadyHome",
+      "english": "That Is My Home",
+      "translation": "זה כבר הבית שלי"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_CantLiveThere",
+      "english": "{0}s Can't Live There.",
+      "translation": "אי אפשר לשכן שם {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Sell",
+      "english": "Sell for {0}g",
+      "translation": "מכירה תמורת {0}g",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix required by gold-currency glossary ID."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AllowReproduction",
+      "english": "Allow Pregnancy",
+      "translation": "אפשרות להיריון"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Age1",
+      "english": "Age: 1 month",
+      "translation": "גיל: חודש אחד"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AgeN",
+      "english": "Age: {0} months",
+      "translation": "גיל: {0} חודשים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AgeBaby",
+      "english": " (Baby)",
+      "translation": " (צעיר)",
+      "contextNote": "Age tag shared by young farm animals, including birds; species-neutral young label avoids mammal-only גור."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Parent",
+      "english": "Parent: {0}",
+      "translation": "הורה: {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_ConfirmSell",
+      "english": "Are you sure?",
+      "translation": "האם אתם בטוחים?"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_ChooseBuilding",
+      "english": "Please choose a {0} for your {1}",
+      "translation": "בחרו מבנה מסוג {0} עבור {1} שלכם"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_Birthday",
+      "english": "{0}'s Birthday",
+      "translation": "יום ההולדת של {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_SBirthday",
+      "english": "{0}' Birthday",
+      "translation": "יום ההולדת של {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_Year",
+      "english": "Year {0}",
+      "translation": "שנה {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_NothingPosted",
+      "english": "Nothing is posted today.",
+      "translation": "לא פורסמה מודעה היום."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_NightMarket",
+      "english": "Night Market",
+      "translation": "שוק הלילה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AcceptQuest",
+      "english": "Accept Quest",
+      "translation": "קבלת המשימה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "BobberBar_Perfect",
+      "english": "Perfect!",
+      "translation": "מושלם!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Confirm",
+      "english": "OK",
+      "translation": "אישור"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_ChangeAppearance",
+      "english": "Change Appearance",
+      "translation": "שינוי מראה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Demolish",
+      "english": "Demolish Buildings",
+      "translation": "הריסת מבנים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_MoveBuildings",
+      "english": "Move Buildings",
+      "translation": "העברת מבנים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Upgrade",
+      "english": "Upgrade from {0}",
+      "translation": "שדרוג מ{0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Build",
+      "english": "Build",
+      "translation": "בנייה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_DuringConstruction",
+      "english": "Can't demolish during construction",
+      "translation": "אי אפשר להרוס בזמן הבנייה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_AnimalsHere",
+      "english": "Can't demolish until animals are relocated",
+      "translation": "אי אפשר להרוס לפני העברת בעלי החיים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_PlayerHere",
+      "english": "Can't demolish while a player is in here",
+      "translation": "אי אפשר להרוס כל עוד נמצא כאן שחקן"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_LockFailed",
+      "english": "Can't demolish this right now",
+      "translation": "אי אפשר להרוס את המבנה כרגע"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantUpgrade_BuildingType",
+      "english": "Incorrect Building Type",
+      "translation": "סוג המבנה אינו מתאים"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantBuild",
+      "english": "Can't Build There",
+      "translation": "אי אפשר לבנות שם"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Upgrade",
+      "english": "Select a {0} to upgrade",
+      "translation": "בחרו מבנה מסוג {0} לשדרוג"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Demolish",
+      "english": "Choose a structure to demolish",
+      "translation": "בחרו מבנה להריסה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Move",
+      "english": "Choose a building to move",
+      "translation": "בחרו מבנה להעברה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Paint",
+      "english": "Select a building to paint",
+      "translation": "בחרו מבנה לצביעה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_ChooseLocation",
+      "english": "Choose a location",
+      "translation": "בחירת מקום"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Name",
+      "english": "Name",
+      "translation": "שם"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Wallets",
+      "english": "Money Style",
+      "translation": "אופן ניהול הכסף"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_SharedWallet",
+      "english": "Shared",
+      "translation": "משותף"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_SeparateWallet",
+      "english": "Separate",
+      "translation": "נפרד"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "0396-quests-050-059",
+  "locale": "bg",
+  "languageCode": "bg-vnrevival",
+  "target": "Data/Quests",
+  "status": "reviewed",
+  "entries": {
+    "119": "ItemDelivery/Звездата на войника/Кент иска да подари на съпругата си Звезден плод за годишнината им./Занеси Звезден плод на Кент./Kent (O)268/-1/500/-1/true/Хей. Шшт... Джоди да не види.#$b#А, изглежда сочен. Ще ѝ хареса. Много ти благодаря.$h",
+    "120": "ItemDelivery/Нуждата на кмета/Кмет Луис иска Трюфелово масло. Не обяснява за какво му е. Може би не е твоя работа./Занеси бутилка Трюфелово масло на Луис./Lewis (O)432/-1/750/-1/true/Донесе ли маслото? Нека видя...#$b#Висококачествено е... много хлъзгаво. Чудесно. Благодаря.",
+    "121": "ItemDelivery/Търси се: Омар/Гас публикува обява, че търси пресен Омар./Занеси Омар на Гас./Gus (O)715/-1/800/-1/true/Нещо мирише на пресен Омар. О, чудесно.$h#$b#Пази се, дружище.",
+    "122": "ItemDelivery/Пам има нужда от ток/Дистанционното на Пам е останало без ток. Трудно ѝ е постоянно да става от дивана, за да сменя каналите от телевизора./Занеси Батерия на Пам./Pam (O)787/-1/400/-1/true/Хей, успя с Батерията! Благодаря, хлапе... Ти ме спаси!$h",
+    "123": "ItemDelivery/Жезъл на силата/Магьосникът създава жезъл с изключителна мощ. Кой знае за какво му е. Трябва му Иридиево кюлче, за да го завърши./Занеси Иридиево кюлче на Магьосника./Wizard (O)337/-1/5000/-1/true/А, скъпоценен иридий. Справи се добре, @. Имаш благодарността ми. А сега си върви.",
+    "124": "ItemDelivery/Улови Лингкод/Уили те предизвиква да уловиш Лингкод./Занеси Лингкод на Уили./Willy (O)707/-1/550/-1/true/Хей, това е истински исполин! Рибарството определено ти е в кръвта.$h",
+    "125": "ItemDelivery/Екзотични напитки/Гас иска да направи „Коко-но-но“, но му липсва основната съставка./Занеси Кокос на Гас./Gus (O)88/-1/600/-1/true/Кокос! Ето успокояваща гледка за зимните ми очи.$h#$b#Ще бъде идеален за моето „Коко-но-но“. Благодаря!",
+    "126": "ItemDelivery/Поръчение от съпругата ти/Съпругата ти поиска да ѝ занесеш 200 Влакна за таен проект./Занеси 200 Влакна на Емили./Emily (O)771 200/-1/0/-1/false/О, изглежда идеално... и е добито по устойчив начин! Много ти благодаря, @.$h#$b#А сега ме чака доста работа. Ще минат още няколко дни, преди да е готово...",
+    "127": "Basic/Тортената разходка на Хейли/Съпругата ти организира благотворителна разходка с торти на градския площад. Помоли да ѝ занесеш Шоколадова торта./Влез в града в слънчева сутрин с Шоколадова торта./-1/-1/0/-1/true",
+    "128": "SecretLostItem/.../.../.../Abigail (O)191 100 129/-1/0/-1/false/Тази огърлица! Къде я намери?$7#$b#Е, благодаря, че ми я донесе, @. Майка ми никога няма да разбере...$h"
+  },
+  "preserveReasons": {},
+  "sourceHashes": {
+    "119": "3bb4ee726cff015325a057125526d732995e1a44b4f82689b4bf576c00095002",
+    "120": "a711c3f54414b228ff9fc10c1140e94c752f743c4b979783e79e44f506cac9dd",
+    "121": "2344933c584ba252150d8f0f7b9e6c0bb8b4c64075f617b7256c1d44b22ecb6b",
+    "122": "cc25661aa56f5c819fc775c44111f5ccd1500e31aabdb8b1664d699215b3533c",
+    "123": "85b1a029f29601babafcce4d5c7076efc43e0f6ced85aab404c463c15a7736d6",
+    "124": "d0612c249dc11fd863eb3e4e53dda85a5442c8879e75a2ef2e25e01dd5ad3379",
+    "125": "be8f25bab2638b0cae068794877798dbfcb14eaa41da1cefd1a2cfaa0a4949fe",
+    "126": "ee54c77cd20d054bfb6f00af9e0561a937e4745f1f7b6b6f77d7b50dafda372b",
+    "127": "ed314ad44ef146f2cc6c4bef7ab211dff2101f63722eee1f83ba81f2a7cd3892",
+    "128": "9e7c3e050cbde845e6de5e93f84c01b5324dedbf39a7790406fcaef0b12d7473"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "editorialReview": {
+    "date": "2026-09-08",
+    "recordsRead": 10,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated all ten titles, descriptions and objectives and the nine available completion reactions directly from English while preserving the complete quest metadata skeleton.",
+      "Applied the reviewed Омар and Лингкод names and locked Влакна terminology; retained all quantities, player-name, dialogue, emotion and stage-direction markers exactly.",
+      "Reread the batch for quest-log clarity, character voice and player-neutral address, including the cake-walk event context and the intentionally hidden necklace quest text."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "8723c0ac44d2254e7f54cb585d53d65908cfba438e8123a06a18ed982f650c00"
+  }
+}

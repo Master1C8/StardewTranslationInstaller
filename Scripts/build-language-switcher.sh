@@ -41,4 +41,5 @@ payload="$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwi
   -pdb:"$payload/VNRevival.LanguageSwitcher.pdb" \
   "${references[@]}" \
   "$project_root/Tools/VNRevivalLanguageSwitcher/AssemblyInfo.cs" \
+  "$project_root/Tools/VNRevivalLanguageSwitcher/SerbianGrammar.cs" \
   "$project_root/Tools/VNRevivalLanguageSwitcher/ModEntry.cs"

@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "alreadyGotNuts": "pause 50/pause 50/pause 1000/speak Birdie \"Макар да не те познавам, направи всичко възможно да помогнеш на една стара жена.#$b#Добро ти е сърцето!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+        "qiNutDoor": "Чуваш странен глас иззад вратата...#„Само най-великите ловци на орехи могат да влязат тук.“^    Текущ напредък: {0}/100",
+        "BoatTunnel_DonateBatteries": "Да дариш ли 5 Батерии за ремонта на билетната машина?",
+        "BoatTunnel_DonateHardwood": "Да дариш ли 200 Твърда дървесина за ремонта на корпуса?",
+        "BoatTunnel_DonateIridium": "Да дариш ли 5 Иридиеви кюлчета за ремонта на котвата?",
+        "BoatTunnel_DonateBatteriesHint": "Тази машина може да се поправи с 5 Батерии.",
+        "BoatTunnel_DonateHardwoodHint": "Корпусът може да се поправи с 200 къса Твърда дървесина.",
+        "BoatTunnel_DonateIridiumHint": "Котвата може да се поправи с 5 Иридиеви кюлчета.",
+        "BoatTunnel_boatcomplete": "Всички материали са намерени!#Лодката ще бъде поправена през нощта.",
+        "BoatTunnel_willyText_firstRide": "Изглежда като нова!",
+        "BoatTunnel_willyText_random0": "Извинявай, ако мириша на риба, хех!",
+        "BoatTunnel_willyText_random1": "Ахой!",
+        "AnimalHouse_Incubator_Hatch_Ostrich": "Излюпи се ново щраусче... и то доста голямо!",
+        "FieldOfficeFinale": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Уау...#$b#Виж докъде стигнахме!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"Колекцията изглежда великолепно и всичко е благодарение на теб, @.\"/emote farmer 32/speak SafariGuy \"Ето, в знак на благодарност искам да те науча на нещо.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Вече можеш да изработваш „Инкубатор за щрауси“\"/pause 400/speak SafariGuy \"Това устройство ще ти позволи да отглеждаш щрауси у дома. Просто постави инкубатора в Обор, сложи вътре щраусово яйце и изчакай...\"/faceDirection SafariGuy 0/speak SafariGuy \"Да се сдобиеш с щраусово яйце обаче е друга история... Оставям това на теб!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Хех... Е... сега започва истинската работа.#$b#Ще изучавам тези кости години наред!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Довиждане, @!\"/pause 600/end",
+        "NutHint_Squawk": "*Граак*",
+        "NutHint_VolcanoLava": "Огнена планина... Скрито надолу по огнената река...",
+        "NutHint_BuriedArch": "Заровено близо до кости...",
+        "NutHint_Arch": "Помогни на човека в палатката...",
+        "NutHint_NorthBuried": "{0} заровени на север...",
+        "NutHint_WestBuried": "{0} заровени на запад...",
+        "NutHint_NorthHidden": "{0} скрити на север...",
+        "NutHint_HutTree": "Издуто съвсем наблизо...",
+        "NutHint_TigerSlime": "Раирани слаймове на запад...",
+        "NutHint_MusselStone": "{0} заседнали в мидени камъни край брега...",
+        "NutHint_IslandFarming": "{0} растат във фермата на запад...",
+        "NutHint_WestHidden": "{0} скрити на запад...",
+        "NutHint_IslandFishing": "{0} дълбоко във водата...",
+        "NutHint_VolcanoTreasure": "{0} скрити в съкровищата на огнената планина...",
+        "NutHint_VolcanoBarrel": "{0} затворени в приспособленията на огнената планина...",
+        "NutHint_VolcanoMining": "{0} орехови камъни в огнената планина...",
+        "NutHint_VolcanoMonsters": "{0} взети от чудовища в огнената планина...",
+        "NutHint_Journal": "Скрити в страниците на дневника...",
+        "NutHint_SouthEastBuried": "{0} заровени... Пиратският залив...",
+        "NutHint_StardropPool": "Къпе се в сърцето на звездата...",
+        "NutHint_Caldera": "На върха на огнената планина...",
+        "NutHint_Gourmand": "Кръбибит... Гърррп..."
+      }
+    }
+  ]
+}

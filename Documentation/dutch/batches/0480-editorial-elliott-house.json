@@ -1,0 +1,12 @@
+{
+  "locale": "nl",
+  "target": "Data/Events/ElliottHouse",
+  "sourceAssetSha256": "bc00c88432d230996f94be962c2b47d09cf04138a86a05488227a0dbb5d652f5",
+  "reviewed": true,
+  "entries": {
+    "elliottPianoJoin": "pause 800/showFrame Elliott 0/animate Elliott false true 220 0 1 2 3/playSound woodyStep/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/stopAnimation Elliott/faceDirection Elliott 2/pause 500/move Elliott 1 0 1 true/faceDirection farmer 1/pause 1500/showFrame Elliott 31/pause 800/emote Elliott 28/pause 800/speak Elliott \"Ik werk dag en nacht om mijn boek af te krijgen... Ik word er gek van, @.$s\"/showFrame Elliott 4/pause 800/move Elliott -2 0 0/pause 800/speak Elliott \"Af en toe een melodie spelen is de enige ontspanning die ik mezelf gun.$7\"/pause 600/faceDirection Elliott 2/speak Elliott \"Er is gewoon te veel werk! En mijn bankrekening begint leeg te raken.$7#$b#Soms wou ik dat ik alles kon opgeven en net als jij boer kon worden.$h\"/pause 300/faceDirection farmer 0/question fork1 \"#Boer zijn is net zo zwaar, hoor.#Kom op de boerderij wonen, ik kan wel wat extra hulp gebruiken.\"/fork extraHelp/pause 500/emote Elliott 16/speak Elliott \"Je hebt gelijk... dat was ongevoelig van me.$8\"/move Elliott 0 1 3/faceDirection farmer 1/speak Elliott \"Ik bedoelde dat ik graag aan deze donkere, muffe gevangenis wil ontsnappen en iets van het echte leven wil meemaken... meer niet.$s\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*zucht*... Sorry dat ik zo klaag. Ik heb gewoon af en toe iemand nodig om mee te praten.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end"
+  },
+  "notes": {
+    "elliottPianoJoin": "Corrects “throw it all away” from literally discarding objects to giving up the writing life."
+  }
+}

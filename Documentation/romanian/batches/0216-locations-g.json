@@ -1,0 +1,215 @@
+{
+  "locale": "ro",
+  "target": "Strings/Locations",
+  "glossarySha256": "004bc6882d1d77a65d15482e9c2f4dd596880aaf52c5d65509a31c78c0e9680a",
+  "reviewChecks": [
+    "english-fidelity",
+    "context",
+    "terminology",
+    "romanian-editorial",
+    "tokens"
+  ],
+  "reviewNotes": "Location strings 286–335 were translated directly from English. Field Office, Parrot Boy, Birdie and finale events preserve commands while translating all quoted messages and Birdie choices; renovation fields, Gourmand alternatives, boat repairs, arcade labels, placeholders, controls, and glossary terms were reviewed in context.",
+  "entries": {
+    "IslandFieldOffice_Survey_Prompt_RightPlant": {
+      "source": "Island Survey -- Please report the number of purple starfish present on the island.",
+      "translation": "Studiul insulei -- Raportează numărul stelelor de mare mov de pe insulă."
+    },
+    "IslandFieldOffice_Survey_PurpleStarfish_Question": {
+      "source": "How many purple starfish can be found on the island?",
+      "translation": "Câte stele de mare mov se găsesc pe insulă?"
+    },
+    "IslandFieldOffice_Survey_Failed": {
+      "source": "Hmm... I think you should take a break and try doing the survey again tomorrow...",
+      "translation": "Hmm... Cred că ar trebui să iei o pauză și să încerci din nou studiul mâine..."
+    },
+    "IslandFieldOffice_Intro_Event": {
+      "source": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ah... Come in!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Welcome to my field office.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"As you can see... it's quite empty.$s#$b#Getting stuck in that cave was a huge setback to my project.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"But that's where you come in! Hee hee...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"I'm in the bone business, you see...#$b#Ancient bones, in particular... And this island is full of them.#$b#So if you ever encounter any bones, fossils, or mummified specimens on this island, bring them to my desk, okay? I'll make it worth your while!$h\"/pause 200/faceDirection SafariGuy 1/end",
+      "translation": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ah... Intră!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Bun venit la biroul meu de teren.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"După cum vezi... este cam gol aici.$s#$b#Faptul că am rămas blocat în peșteră mi-a întârziat enorm proiectul.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"Dar aici intervii tu! Hi hi...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"Eu mă ocup cu oasele, să știi...#$b#Mai ales cu oasele străvechi... Iar insula aceasta este plină de ele.#$b#Așadar, dacă găsești vreodată oase, fosile sau specimene mumificate pe insulă, adu-le la biroul meu, bine? Te voi răsplăti cum se cuvine!$h\"/pause 200/faceDirection SafariGuy 1/end"
+    },
+    "ScienceHouse_CarpenterMenu_RenovateHouse": {
+      "source": "Make House Renovations",
+      "translation": "Renovează casa"
+    },
+    "ScienceHouse_CarpenterMenu_RenovateCabin": {
+      "source": "Make Cabin Renovations",
+      "translation": "Renovează cabana"
+    },
+    "ScienceHouse_Renovation_RemoveCrib": {
+      "source": "Remove Crib/Remove the crib from your home./Select a crib to remove.",
+      "translation": "Elimină pătuțul/Elimină pătuțul din casă./Alege pătuțul pe care vrei să-l elimini."
+    },
+    "ScienceHouse_Renovation_BuildCrib": {
+      "source": "Build Crib/Builds a crib in your home./Select a location for the crib.",
+      "translation": "Construiește un pătuț/Construiește un pătuț în casă./Alege locul pătuțului."
+    },
+    "ScienceHouse_Renovation_OpenBedroom": {
+      "source": "Open Bedroom/Removes the wall separating your bedroom and the entrance room./Select an area for the renovation.",
+      "translation": "Deschide dormitorul/Îndepărtează peretele dintre dormitor și camera de la intrare./Alege zona pe care vrei să o renovezi."
+    },
+    "ScienceHouse_Renovation_CloseBedroom": {
+      "source": "Close Bedroom/Builds a wall separating your bedroom and the entrance room./Select an area for the renovation.",
+      "translation": "Închide dormitorul/Construiește un perete între dormitor și camera de la intrare./Alege zona pe care vrei să o renovezi."
+    },
+    "ScienceHouse_Renovation_AddSouthernRoom": {
+      "source": "Add Southern Room/Adds a room to the south of your bedroom./Select an area for the renovation.",
+      "translation": "Adaugă camera sudică/Adaugă o cameră la sud de dormitor./Alege zona pe care vrei să o renovezi."
+    },
+    "ScienceHouse_Renovation_RemoveSouthernRoom": {
+      "source": "Remove Southern Room/Removes the room to the south of your bedroom./Select an area for the renovation.",
+      "translation": "Elimină camera sudică/Elimină camera aflată la sud de dormitor./Alege zona pe care vrei să o renovezi."
+    },
+    "ScienceHouse_Renovation_AddCornerRoom": {
+      "source": "Add Corner Room/Adds a room in the northeast corner of the house./Select an area for the renovation.",
+      "translation": "Adaugă camera din colț/Adaugă o cameră în colțul nord-estic al casei./Alege zona pe care vrei să o renovezi."
+    },
+    "ScienceHouse_Renovation_RemoveCornerRoom": {
+      "source": "Remove Corner Room/Removes the room in the northeast corner of the house./Select an area for the renovation.",
+      "translation": "Elimină camera din colț/Elimină camera din colțul nord-estic al casei./Alege zona pe care vrei să o renovezi."
+    },
+    "Journal_Name": {
+      "source": "Journal Scrap",
+      "translation": "Fragment de jurnal"
+    },
+    "Gourmand_Intro": {
+      "source": "*Kribbibbit*... Who dares to enter my nest?|Ah... A humble farmer, come to cultivate my lands... How fortunate!|Oh, how the rains have blessed me!",
+      "translation": "*Oac-oac*... Cine îndrăznește să intre în cuibul meu?|Ah... Cineva smerit, venit să-mi cultive pământurile... Ce noroc!|Oh, cât m-au binecuvântat ploile!"
+    },
+    "Gourmand_RequestIntro": {
+      "source": "*Gurrp*... You see... my fields once teemed with fresh fruit and vegetables...|But I have grown old, and without the vigor of youth, my fields have turned to worthless dust...|*sigh*... What I would give to feast my eyes upon that banquet of delights, once more...|That's where you come in.",
+      "translation": "*Oac*... Vezi tu... odinioară, câmpurile mele fremătau de fructe și legume proaspete...|Dar am îmbătrânit și, fără vigoarea tinereții, câmpurile mele s-au prefăcut în țărână fără valoare...|*oftează*... Ce n-aș da să-mi desfăt iar privirea cu acel ospăț de bunătăți...|Aici intervii tu."
+    },
+    "Gourmand_RequestQuestion": {
+      "source": "Ah... You have something to show me?",
+      "translation": "Ah... Ai ceva să-mi arăți?"
+    },
+    "Gourmand_RequestFailed": {
+      "source": "*Kriibbitt*... What is the meaning of this?! You haven't grown the thing which I seek... Now go!",
+      "translation": "*Oac-oac*... Ce înseamnă asta?! Nu ai cultivat lucrul pe care îl caut... Acum pleacă!"
+    },
+    "Gourmand_Request_0": {
+      "source": "You must grow for me... that sweet delight, which is both pink and juicy...|Do not pluck it from the earth! I wish to see it in its natural state...",
+      "translation": "Trebuie să cultivi pentru mine... acea desfătare dulce, deopotrivă roz și zemoasă...|Să nu o smulgi din pământ! Doresc să o văd în starea ei firească..."
+    },
+    "Gourmand_Request_0_Success": {
+      "source": "*Gurrrp*... Yes... This is it!|...It's bringing me back to the old days... sunny days, when things were sweeter...|*slurp*... Oh, I could take a big, juicy bite...|...But, I won't.",
+      "translation": "*Oac*... Da... Aceasta este!|...Mă poartă înapoi în vremurile de demult... zile însorite, când lucrurile erau mai dulci...|*plescăie*... Oh, aș putea să mușc zdravăn din ea...|...Dar nu o voi face."
+    },
+    "Gourmand_Request_1": {
+      "source": "I wish to see the long yellow thing, which tickles the skin, and waves in the wind.",
+      "translation": "Doresc să văd lucrul lung și galben, care gâdilă pielea și se unduiește în vânt."
+    },
+    "Gourmand_Request_1_Success": {
+      "source": "*Gurrrp*... Yes... This is it!|Heh... It reminds me of an old girlfriend... *gurp*...|Look here... I could tickle you with this!|...But, I won't.",
+      "translation": "*Oac*... Da... Acesta este!|Heh... Îmi amintește de o iubită din tinerețe... *oac*...|Privește... Aș putea să te gâdil cu el!|...Dar nu o voi face."
+    },
+    "Gourmand_Request_2": {
+      "source": "I would like to see the zesty ground fruit, which maketh the breath stink...",
+      "translation": "Aș dori să văd fructul aromat al pământului, cel ce face răsuflarea urât mirositoare..."
+    },
+    "Gourmand_Request_2_Success": {
+      "source": "*Gurrrp*... Yes... I ate this once, long ago. It gave me a pungent aroma for days...|...Reminds me of Papa, when I was just a tadpole...|Heh... I could take a bite, and produce that poignant odor once more...|...But, I won't.",
+      "translation": "*Oac*... Da... Am mâncat așa ceva odată, cu mult timp în urmă. Mi-a dat o aromă înțepătoare zile întregi...|...Îmi amintește de tata, când eram doar un mormoloc...|Heh... Aș putea să mușc și să răspândesc iar mirosul acela pătrunzător...|...Dar nu o voi face."
+    },
+    "Gourmand_Reward": {
+      "source": "*Kriibbitt*... Yes... I am very pleased.|Here... This is for you.",
+      "translation": "*Oac-oac*... Da... Sunt foarte mulțumit.|Poftim... Acesta este pentru tine."
+    },
+    "Gourmand_LastReward": {
+      "source": "*Kriibbitt*... Yes... You have done me a great service. You've given an old toad one last trip down memory lane...|Here's one last reward for you, friend.",
+      "translation": "*Oac-oac*... Da... Mi-ai făcut un mare serviciu. I-ai oferit unui broscoi bătrân o ultimă călătorie pe cărarea amintirilor...|Iată o ultimă recompensă pentru tine, suflet bun."
+    },
+    "Gourmand_Finished": {
+      "source": "*Kriibbitt*... Good to see you again, my friend.|You have my blessing to cultivate these fields. May the rains be with you!",
+      "translation": "*Oac-oac*... Mă bucur să te văd din nou, suflet bun.|Ai binecuvântarea mea să cultivi aceste câmpuri. Fie ca ploile să fie cu tine!"
+    },
+    "Gourmand_InProgress": {
+      "source": "Ah... I see you are growing the thing I seek. However, it is still but a child. Come back when it has matured...",
+      "translation": "Ah... Văd că lucrezi la cultivarea lucrului pe care îl caut. Totuși, este încă doar un prunc. Revino după ce s-a maturizat..."
+    },
+    "Saloon_Arcade_Cowboy_Menu": {
+      "source": "= Journey Of The Prairie King =",
+      "translation": "= Călătoria Regelui Preriei ="
+    },
+    "Saloon_Arcade_Cowboy_Continue": {
+      "source": "Continue Journey",
+      "translation": "Continuă călătoria"
+    },
+    "Saloon_Arcade_Cowboy_NewGame": {
+      "source": "Start New Journey",
+      "translation": "Începe o călătorie nouă"
+    },
+    "IslandHut_Event_ParrotBoyIntro": {
+      "source": "continue/-1000 -1000/farmer 7 7 3/skippable/specificTemporarySprite removeSprite 777/addTemporaryActor ParrotBoy 16 32 5 2 2 true ???/pause 2000/viewport 5 7 true/pause 2000/emote ParrotBoy 8/pause 1500/message \"The boy looks at you with curious eyes...\"/pause 1500/animate ParrotBoy false true 500 17 0/playSound parrot_squawk/pause 1000/playSound parrot_squawk/pause 800/stopAnimation ParrotBoy/specificTemporarySprite parrotHutSquawk/pause 800/move farmer -2 0 0/pause 500/emote farmer 8/pause 1000/message \"He seems to have a close bond with the parrots.\"/pause 500/message \"But he's too shy to approach you right now.\"/pause 1400/faceDirection farmer 1/pause 500/message \"Perhaps making friends with the parrots could earn his trust?\"/pause 1000/end position 5 7",
+      "translation": "continue/-1000 -1000/farmer 7 7 3/skippable/specificTemporarySprite removeSprite 777/addTemporaryActor ParrotBoy 16 32 5 2 2 true ???/pause 2000/viewport 5 7 true/pause 2000/emote ParrotBoy 8/pause 1500/message \"Băiatul te privește cu ochi curioși...\"/pause 1500/animate ParrotBoy false true 500 17 0/playSound parrot_squawk/pause 1000/playSound parrot_squawk/pause 800/stopAnimation ParrotBoy/specificTemporarySprite parrotHutSquawk/pause 800/move farmer -2 0 0/pause 500/emote farmer 8/pause 1000/message \"Pare să aibă o legătură strânsă cu papagalii.\"/pause 500/message \"Dar acum este prea timid ca să se apropie de tine.\"/pause 1400/faceDirection farmer 1/pause 500/message \"Poate că prietenia cu papagalii te-ar ajuta să-i câștigi încrederea?\"/pause 1000/end position 5 7"
+    },
+    "IslandSecret_Event_BirdieIntro": {
+      "source": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/skippable/addTemporaryActor Birdie 32 32 17 58 3 true ???/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 1000/emote Birdie 8/pause 1000/speak Birdie \"Oh... a visitor?#$b#Come closer, child.\"/pause 400/move farmer -1 0 3/pause 300/emote Birdie 40/speak Birdie \"I haven't had a visitor in many moons...$s#$b#I almost forgot what other people looked like!\"/pause 1000/speak Birdie \"Well, I suppose now that you're here, I may as well ask you for a favor.\"/pause 500/textAboveHead Birdie \"Come...\"/pause 500/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/viewport move 1 0 2000/move Birdie 0 -1 2/move Birdie 2 0 1/move farmer 1 0 1/pause 500/speak Birdie \"Have you seen that wrecked ship on the south shore?#$b# My husband was the captain. A pirate, he was.#$b#He set sail one day, never to return. Took me three years sailing the high seas to find his remains.$s\"/emote Birdie 28/speak Birdie \"*sigh*...$s#$b#I've been here ever since, dear.$s#$b#...Guarding his bones...\"/faceDirection farmer 2 true/playSound batScreech/animate farmer false true 100 94/jump farmer/pause 1500/stopAnimation farmer/faceDirection farmer 0/faceDirection Birdie 2/speak Birdie \"My child... If I could only find a keepsake of his, it would bring me such peace.$s\"/pause 400/textAboveHead Birdie \"Wait here...\"/move Birdie -1 0 0/move Birdie 0 -1 3/warp Birdie -100 -100/playSound doorClose/faceDirection farmer 0/faceDirection Birdie 2/pause 1000/playSound Ship/pause 1000/playSound Ship/playSound crafting/pause 1000/playSound doorClose/warp Birdie 20 56/move Birdie 0 1 2/speak Birdie \"Here, take this. It's an old photograph that washed up on shore.#$b#It's all I have to offer... but somehow, I think it will help you find what I seek.\"/pause 500/unskippable/playSound coin/awardFestivalPrize memento true/pause 10/addQuest 130/pause 1700/end",
+      "translation": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/skippable/addTemporaryActor Birdie 32 32 17 58 3 true ???/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 1000/emote Birdie 8/pause 1000/speak Birdie \"Oh... cineva în vizită?#$b#Apropie-te, dragă suflete.\"/pause 400/move farmer -1 0 3/pause 300/emote Birdie 40/speak Birdie \"Nu am mai avut un vizitator de multe luni...$s#$b#Aproape că uitasem cum arată alți oameni!\"/pause 1000/speak Birdie \"Ei bine, dacă tot ești aici, cred că aș putea să-ți cer o favoare.\"/pause 500/textAboveHead Birdie \"Vino...\"/pause 500/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/viewport move 1 0 2000/move Birdie 0 -1 2/move Birdie 2 0 1/move farmer 1 0 1/pause 500/speak Birdie \"Ai văzut epava de pe țărmul sudic?#$b# Soțul meu era căpitanul. Pirat, așa era.#$b#A plecat pe mare într-o zi și nu s-a mai întors. Am cutreierat mările timp de trei ani ca să-i găsesc rămășițele.$s\"/emote Birdie 28/speak Birdie \"*oftează*...$s#$b#De atunci am rămas aici, dragă suflete.$s#$b#...Păzindu-i oasele...\"/faceDirection farmer 2 true/playSound batScreech/animate farmer false true 100 94/jump farmer/pause 1500/stopAnimation farmer/faceDirection farmer 0/faceDirection Birdie 2/speak Birdie \"Dragă suflete... Dacă aș putea găsi măcar o amintire de la el, mi-ar aduce atâta liniște.$s\"/pause 400/textAboveHead Birdie \"Așteaptă aici...\"/move Birdie -1 0 0/move Birdie 0 -1 3/warp Birdie -100 -100/playSound doorClose/faceDirection farmer 0/faceDirection Birdie 2/pause 1000/playSound Ship/pause 1000/playSound Ship/playSound crafting/pause 1000/playSound doorClose/warp Birdie 20 56/move Birdie 0 1 2/speak Birdie \"Poftim, ia asta. Este o fotografie veche adusă de valuri la mal.#$b#Este tot ce îți pot oferi... dar simt că te va ajuta să găsești ceea ce caut.\"/pause 500/unskippable/playSound coin/awardFestivalPrize memento true/pause 10/addQuest 130/pause 1700/end"
+    },
+    "IslandSecret_Event_BirdieFinished": {
+      "source": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/removeQuest 130/skippable/addTemporaryActor Birdie 32 32 17 58 3 true/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 2300/playMusic none/animate farmer true true 100 35/addObject 19 58 870/playSound sandyStep/pause 800/stopAnimation farmer/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/move Birdie 0 -1 2/move Birdie 1 0 2/pause 500/jump Birdie/pause 500/playMusic desolate/speak Birdie \"It's his...$s\"/emote Birdie 20/pause 1200/playSound coin/removeObject 19 58/showFrame Birdie 20/pause 2500/speak Birdie \"Heh... It still has his smell, after all these years...#$b#...that familiar, putrid funk...$h\"/pause 300/faceDirection farmer 2 true/playSound croak/animate farmer false false 350 104 105 104 105 104 105/pause 1000/faceDirection farmer 3/speak Birdie \"You know... It's been a lonely life here, child... but I don't regret it at all.#$b#I'm doin' right by my old man... and we'll be together again some day soon... hehe\"/pause 500/stopAnimation Birdie/move Birdie 0 1 3/playMusic tropical_island_day_ambient/faceDirection Birdie 1/quickQuestion #It's an honorable thing to do.#He's gone. You should live your life.(break)speak Birdie \"You have great wisdom, child.#$b#And you've brought me great peace... this locket will comfort me for the rest of my days.$h\"(break)emote Birdie 28\\speak Birdie \"An old woman like me? I think it's too late, dear...$s#$b#Besides... I like it here! It's relaxing and beautiful. And I have an endless supply of fresh fish, oysters, and monkey meat. Hehehe.$h#$b#...I'm kidding about the monkey meat.\"/pause 1000/speak Birdie \"Now... how can I repay you for this?\"/jump Birdie/pause 500/speak Birdie \"Oh... How about I teach you a special recipe... Something I discovered in the many years I've spent here.\"/pause 1000/playSound reward/addCraftingRecipe Fairy Dust/message \"Learned to craft 'Fairy Dust'.\"/pause 1000/fork gotBirdieReward Strings\\\\Locations:alreadyGotNuts true/speak Birdie \"You can take these, too...\"/awardFestivalPrize birdieReward true/pause 1000/speak Birdie \"Though you're a stranger, you went out of your way to help an old lady.#$b#Bless your heart!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "translation": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/removeQuest 130/skippable/addTemporaryActor Birdie 32 32 17 58 3 true/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 2300/playMusic none/animate farmer true true 100 35/addObject 19 58 870/playSound sandyStep/pause 800/stopAnimation farmer/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/move Birdie 0 -1 2/move Birdie 1 0 2/pause 500/jump Birdie/pause 500/playMusic desolate/speak Birdie \"Este al lui...$s\"/emote Birdie 20/pause 1200/playSound coin/removeObject 19 58/showFrame Birdie 20/pause 2500/speak Birdie \"Heh... După atâția ani, încă îi păstrează mirosul...#$b#...duhoarea aceea cunoscută și putredă...$h\"/pause 300/faceDirection farmer 2 true/playSound croak/animate farmer false false 350 104 105 104 105 104 105/pause 1000/faceDirection farmer 3/speak Birdie \"Știi... Am dus o viață singuratică aici, dragă suflete... dar nu regret nimic.#$b#Îmi cinstesc cum se cuvine răposatul... și într-o bună zi vom fi din nou împreună... hehe\"/pause 500/stopAnimation Birdie/move Birdie 0 1 3/playMusic tropical_island_day_ambient/faceDirection Birdie 1/quickQuestion #Este un gest onorabil.#El nu mai este. Ar trebui să-ți trăiești viața.(break)speak Birdie \"Ai multă înțelepciune, dragă suflete.#$b#Și mi-ai adus multă liniște... medalionul acesta mă va alina pentru tot restul zilelor.$h\"(break)emote Birdie 28\\speak Birdie \"O bătrână ca mine? Cred că este prea târziu, dragă suflete...$s#$b#În plus... îmi place aici! Este liniște și frumusețe. Și am provizii nesfârșite de pește proaspăt, stridii și carne de maimuță. Hehehe.$h#$b#...Glumeam despre carnea de maimuță.\"/pause 1000/speak Birdie \"Acum... cum te pot răsplăti?\"/jump Birdie/pause 500/speak Birdie \"Oh... Ce-ar fi să te învăț o rețetă specială... Ceva ce am descoperit în numeroșii ani petrecuți aici.\"/pause 1000/playSound reward/addCraftingRecipe Fairy Dust/message \"Ai învățat să confecționezi „Praf de Zână”.\"/pause 1000/fork gotBirdieReward Strings\\\\Locations:alreadyGotNuts true/speak Birdie \"Poți să le iei și pe acestea...\"/awardFestivalPrize birdieReward true/pause 1000/speak Birdie \"Deși abia mă cunoști, ai făcut tot posibilul ca să ajuți o bătrână.#$b#Să-ți fie inima binecuvântată!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end"
+    },
+    "alreadyGotNuts": {
+      "source": "pause 50/pause 50/pause 1000/speak Birdie \"Though you're a stranger, you went out of your way to help an old lady.#$b#Bless your heart!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "translation": "pause 50/pause 50/pause 1000/speak Birdie \"Deși abia mă cunoști, ai făcut tot posibilul ca să ajuți o bătrână.#$b#Să-ți fie inima binecuvântată!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end"
+    },
+    "qiNutDoor": {
+      "source": "You hear a strange voice from behind the door...#'Only the greatest walnut hunters may enter here.'^    Your current status: {0}/100",
+      "translation": "Auzi o voce ciudată din spatele ușii...#„Numai cei mai iscusiți vânători de nuci pot intra aici.”^    Starea ta actuală: {0}/100"
+    },
+    "BoatTunnel_DonateBatteries": {
+      "source": "Donate 5 battery packs to repair the ticket machine?",
+      "translation": "Donezi 5 Pachete de baterii pentru repararea automatului de bilete?"
+    },
+    "BoatTunnel_DonateHardwood": {
+      "source": "Donate 200 hardwood for hull repairs?",
+      "translation": "Donezi 200 de bucăți de Lemn de esență tare pentru repararea carenei?"
+    },
+    "BoatTunnel_DonateIridium": {
+      "source": "Donate 5 iridium bars to repair the anchor?",
+      "translation": "Donezi 5 Lingouri de iridiu pentru repararea ancorei?"
+    },
+    "BoatTunnel_DonateBatteriesHint": {
+      "source": "This machine could be repaired with 5 battery packs.",
+      "translation": "Automatul acesta ar putea fi reparat cu 5 Pachete de baterii."
+    },
+    "BoatTunnel_DonateHardwoodHint": {
+      "source": "The hull could be repaired with 200 pieces of hardwood.",
+      "translation": "Carena ar putea fi reparată cu 200 de bucăți de Lemn de esență tare."
+    },
+    "BoatTunnel_DonateIridiumHint": {
+      "source": "The anchor could be repaired with 5 iridium bars.",
+      "translation": "Ancora ar putea fi reparată cu 5 Lingouri de iridiu."
+    },
+    "BoatTunnel_boatcomplete": {
+      "source": "All materials have been found!#The boat will be repaired overnight.",
+      "translation": "Toate materialele au fost găsite!#Barca va fi reparată peste noapte."
+    },
+    "BoatTunnel_willyText_firstRide": {
+      "source": "She looks good as new!",
+      "translation": "Arată ca nouă!"
+    },
+    "BoatTunnel_willyText_random0": {
+      "source": "Sorry if I smell like fish, heh!",
+      "translation": "Scuze dacă miros a pește, heh!"
+    },
+    "BoatTunnel_willyText_random1": {
+      "source": "Ahoy!",
+      "translation": "Ahoi!"
+    },
+    "AnimalHouse_Incubator_Hatch_Ostrich": {
+      "source": "A new ostrich chick hatched... it's a big one!",
+      "translation": "A eclozat un pui de struț... și este mare!"
+    },
+    "FieldOfficeFinale": {
+      "source": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Wow...#$b#Look how far we've come!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"The collection looks fantastic, and it's all thanks to you, @.\"/emote farmer 32/speak SafariGuy \"Here, as a way of saying 'thanks', I want to teach you something.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Learned how to craft 'Ostrich Incubator'\"/pause 400/speak SafariGuy \"This device will allow you to raise ostriches back home. Just place the incubator in a barn, place an ostrich egg inside, and wait...\"/faceDirection SafariGuy 0/speak SafariGuy \"Getting your hands on an ostrich egg is a different story, though... I'll leave that up to you!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Heh... Well... now the real work begins.#$b#I'll be studying these bones for years to come!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Farewell, @!\"/pause 600/end",
+      "translation": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Uau...#$b#Uite cât de departe am ajuns!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"Colecția arată fantastic și totul ți se datorează ție, @.\"/emote farmer 32/speak SafariGuy \"Ca să-ți mulțumesc, vreau să te învăț ceva.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Ai învățat să confecționezi „Incubator pentru struți”\"/pause 400/speak SafariGuy \"Dispozitivul acesta îți va permite să crești struți acasă. Așază incubatorul într-un grajd, pune înăuntru un Ou de struț și așteaptă...\"/faceDirection SafariGuy 0/speak SafariGuy \"Totuși, să faci rost de un Ou de struț este altă poveste... Asta îți rămâne ție!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Heh... Ei bine... acum începe adevărata muncă.#$b#Voi studia oasele acestea ani întregi!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Rămas-bun, @!\"/pause 600/end"
+    },
+    "NutHint_Squawk": {
+      "source": "*Awk*",
+      "translation": "*Cra*"
+    }
+  }
+}

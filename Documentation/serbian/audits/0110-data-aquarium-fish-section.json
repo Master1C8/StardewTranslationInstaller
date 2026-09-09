@@ -1,0 +1,34 @@
+{
+  "scope": "Data/AquariumFish",
+  "records": 72,
+  "sourceCoverage": 100,
+  "fullEditorialPass": 1,
+  "review": "All records classified directly against English as non-visible aquarium sprite-placement, movement-behavior and animation metadata and preserved exactly.",
+  "newTextIssues": 0,
+  "allTextFindingsCorrected": true,
+  "schemaValidator": "Scripts/serbian-batch.py::validate_aquarium_fish",
+  "schemaNegativeChecks": [
+    {
+      "case": "behavior",
+      "rejected": true,
+      "reason": "Invalid aquarium fish behavior"
+    },
+    {
+      "case": "sprite-index",
+      "rejected": true,
+      "reason": "Invalid aquarium fish sprite index"
+    },
+    {
+      "case": "animation",
+      "rejected": true,
+      "reason": "Invalid aquarium fish animation metadata"
+    },
+    {
+      "case": "changed-record",
+      "rejected": true,
+      "reason": "Aquarium fish technical record changed"
+    }
+  ],
+  "translationSha256": "67cbdf333787b4d1268e9e427139741cdfb5f3aefde1d7dea7509a1ebd6dd2ab",
+  "finalLocaleCleanAudits": 0
+}

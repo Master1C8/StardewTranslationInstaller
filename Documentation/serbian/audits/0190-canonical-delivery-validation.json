@@ -1,0 +1,36 @@
+{
+  "scope": "canonical Desktop delivery",
+  "result": "clean",
+  "canonicalRoot": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+  "branch": "main",
+  "headBeforeAndAfter": "bfe9263275065357b3059bbdf451ff2e505b8688",
+  "delivery": {
+    "method": "binary git patch generated against the exact dirty canonical preimage",
+    "preflight": "git apply --check passed",
+    "unrelatedOwnerChangesPreserved": true,
+    "sourceTreeMatchesVerifiedMerge": true,
+    "commitCreated": false,
+    "pushPerformed": false,
+    "productionDeploymentPerformed": false
+  },
+  "canonicalValidation": {
+    "serbianAudit": {
+      "records": 14720,
+      "warnings": 0,
+      "errors": 0,
+      "result": "passed"
+    },
+    "serbianGrammarProbe": {
+      "combinations": 460,
+      "result": "passed"
+    },
+    "swiftTests": {
+      "tests": 8,
+      "failures": 0,
+      "result": "passed"
+    },
+    "gitDiffCheck": "passed",
+    "releaseArtifact": "Built and codesign --verify --deep --strict passed from the byte-identical verified merge tree before delivery.",
+    "liveRuntimeQA": "audits/0189-runtime-package-deliverable.json"
+  }
+}

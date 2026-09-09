@@ -1,0 +1,222 @@
+{
+  "id": "148-extra-dialogue-family-work-museum-and-mines",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of the first thirty ExtraDialogue records, covering lost-item thanks, children, spouse and house lines, private-container reactions, tool pickup, museum introduction, casino-club dialogue, upgrade acceptances, mine rescues, and Joja enrollment. Every user-facing sentence, placeholder, gender-specific spouse record, character voice, canonical location and organization term, and control marker was reviewed against its key context and the canonical Ukrainian glossary. Keys, placeholders, dialogue delimiters, emotion markers, and all non-text payloads were preserved. Remaining ExtraDialogue records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "e7215287388f55fd0938c0be19626dfbcfd7f078e6185ddb8cab98f562bb862f",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 19
+  },
+  "records": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "LostItemQuest_DefaultThankYou",
+      "english": "You found it! Thank you.",
+      "translation": "Знайшлося! Дякую.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "NewChild_SecondChild1",
+      "english": "Just look at our little family... We've come a long way, haven't we?",
+      "translation": "Лише поглянь на нашу маленьку родину... Ми пройшли довгий шлях, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "NewChild_SecondChild2",
+      "english": "Two beautiful children... We've come a long way, haven't we?",
+      "translation": "Двоє прекрасних дітей... Ми пройшли довгий шлях, правда?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "NewChild_Adoption",
+      "english": "It's so wonderful to welcome little {0} into our life.",
+      "translation": "Як же чудово прийняти маля {0} в наше життя.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "NewChild_FirstChild",
+      "english": "Everything went well, and now little {0} is part of the family. We're very fortunate.",
+      "translation": "Усе пройшло добре, і тепер маля {0} стало частиною родини. Нам дуже пощастило.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Spouse_MonstersInHouse",
+      "english": "Um... Honey? Why are there monsters in the house?",
+      "translation": "Ем... Сонечко? Чому в будинку чудовиська?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Farm_RobinWorking_ReadyTomorrow",
+      "english": "Your new {0} will be finished tomorrow! Are you excited?",
+      "translation": "Новий об’єкт «{0}» буде готовий завтра! Вже не терпиться?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Farm_RobinWorking1",
+      "english": "Your new {0} will be ready in {1} days. Just pretend I'm not here.",
+      "translation": "До завершення роботи над об’єктом «{0}» залишилося днів: {1}. Просто вдавай, що мене тут немає.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Farm_RobinWorking2",
+      "english": "Your new {0} will be ready in {1} days. I'm going to be working on this thing day and night!",
+      "translation": "До завершення роботи над об’єктом «{0}» залишилося днів: {1}. Працюватиму над ним день і ніч!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "JoshHouse_Alex_Trash",
+      "english": "Uh.. What are you doing?$s",
+      "translation": "Е-е... Що ти робиш?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SamHouse_Sam_Trash",
+      "english": "Hey, don't look in there!$a",
+      "translation": "Гей, не дивися туди!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SeedShop_Abigail_Drawers",
+      "english": "Hey, don't even think about it! That's private!$a",
+      "translation": "Гей, навіть не думай! Це особисте!$a",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Wizard_Hatch",
+      "english": "What are you doing? I only allow those I trust to enter there.  ",
+      "translation": "Що ти робиш? Я дозволяю входити туди лише тим, кому довіряю.  ",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Clint_NoInventorySpace",
+      "english": "Hey. Your tool is ready but you don't have any room in your inventory.",
+      "translation": "Гей. Твій інструмент готовий, але в інвентарі немає місця.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Clint_StillWorking",
+      "english": "Um, I'm still working on your {0}. It won't be ready today.",
+      "translation": "Ем, я ще працюю над об’єктом «{0}». Сьогодні він готовий не буде.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Gunther_MuseumComplete",
+      "english": "The museum looks amazing! Thanks again for all your help.",
+      "translation": "Музей має дивовижний вигляд! Ще раз дякую за всю допомогу.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Gunther_NothingToDonate",
+      "english": "It doesn't seem like you have anything to donate to the museum. Better get out there and do some treasure hunting, huh?",
+      "translation": "Схоже, тобі нічого пожертвувати музею. Може, час вирушити на пошуки скарбів?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Gunther_NoArtifactsFound",
+      "english": "Hello there! Welcome to the Stardew Valley Archaeological Office.#$b#Uh... This is embarrassing, but the previous curator made off with the entire collection. We don't have any artifacts for display.#$b#But I'm hoping to remedy that soon! Hey, if you find any artifacts or minerals out there... would you let me know?",
+      "translation": "Вітаю! Ласкаво просимо до Археологічної служби долини Стардью.#$b#Е-е... Ніяково це казати, але попередній куратор утік з усією колекцією. Нам нічого виставляти.#$b#Та я сподіваюся незабаром це виправити! Гей, якщо знайдеш якісь артефакти чи мінерали... повідомиш мені?",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Sandy_PlayerClubMember",
+      "english": "What happened? You're a club member?!",
+      "translation": "Що сталося? У тебе членство в клубі?!",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "MisterQi_PlayerClubMember",
+      "english": "Well, well, well... Look who made it inside my exclusive clubhouse.#$e#You've got the 'spark'... that's why I singled you out.#$e#What spark? Ah... The conduit of mystery, of art...#$b#People like us have a responsibility to keep the world alive, to give folks a taste of the extraordinary.#$e#You see, kid... The world's like a bowl of rice. It's got substance, but it ain't worth nothin' without a good, zesty sauce. That's where we come in.#$b#Didn't you ever wonder who put those treasure chests in the old mineshaft? I like to give people surprises.#$e#You'll understand someday. Just keep doing your best and never give up.",
+      "translation": "Так-так-так... Погляньмо, хто потрапив до мого ексклюзивного клубу.#$e#У тобі є «іскра»... Саме тому я тебе й обрав.#$e#Яка іскра? Ах... Провідник таємниці, мистецтва...#$b#Такі люди, як ми, мають підтримувати життя у світі й давати іншим скуштувати чогось надзвичайного.#$e#Розумієш, малечо... Світ схожий на миску рису. Основа в нього є, але без доброго пікантного соусу він нічого не вартий. Ось тут і з’являємося ми.#$b#Невже тобі ніколи не було цікаво, хто поклав скрині зі скарбами в старій шахті? Я люблю влаштовувати людям сюрпризи.#$e#Колись ти зрозумієш. Просто й далі старайся і ніколи не здавайся.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Robin_HouseUpgrade_Accepted",
+      "english": "Thank you! I'll get started tomorrow. I should be finished in around three days.",
+      "translation": "Дякую! Почну завтра. Приблизно за три дні все буде готово.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Robin_PamUpgrade_Accepted",
+      "english": "That's so generous of you! I'll start working on the upgrade tomorrow. It should take around three days.",
+      "translation": "Це дуже щедро! Завтра почну працювати над поліпшенням. Знадобиться приблизно три дні.",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Robin",
+      "english": "...I found you unconscious in the mines. I almost mistook you for a piece of exotic wood!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Я знайшла тебе без тями в шахтах. Мало не сплутала зі шматком екзотичної деревини!#$b#Наступного разу будь трохи обережніше, гаразд?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Clint",
+      "english": "...I found you unconscious in the mines. I think I blew my back out, dragging you all the way up here.#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Я знайшов тебе без тями в шахтах. Здається, я надірвав спину, поки тягнув тебе нагору.#$b#Наступного разу будь трохи обережніше, гаразд?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Maru_Spouse",
+      "english": "...I found you unconscious in the mines. You were gone so long I started to get worried about you!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Я знайшла тебе без тями в шахтах. Тебе так довго не було, що я почала хвилюватися!#$b#Наступного разу будь трохи обережніше, гаразд?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Maru_NotSpouse",
+      "english": "...I found you unconscious in the mines. I was hunting for minerals and I almost stepped on your head!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Я знайшла тебе без тями в шахтах. Шукала мінерали й мало не наступила тобі на голову!#$b#Наступного разу будь трохи обережніше, гаразд?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Linus",
+      "english": "...I found you unconscious in the mines. You're lucky I happened to pass by!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Я знайшов тебе без тями в шахтах. На щастя, я саме проходив поруч!#$b#Наступного разу будь трохи обережніше, гаразд?$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Spouse_PlayerMale",
+      "english": "You were gone so long I started to get worried about you! I started crying when I saw your limp body...$s",
+      "translation": "Тебе так довго не було — це почало мене непокоїти! Від твого нерухомого тіла в мене полилися сльози...$s",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Spouse_PlayerFemale",
+      "english": "You were gone so long I started to get worried about you! I almost had a heart attack when I saw your limp body...$a",
+      "translation": "Тебе так довго не було — це почало мене непокоїти! Твоє нерухоме тіло мало не довело мене до серцевого нападу...$a",
+      "reviewed": true
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_PlayerSignedUp",
+      "english": "Excellent! Welcome to Joja Corporation! Come back tomorrow and we can see about getting started on some community development projects... Oh, and don't forget your wallet! Hehe.#$b#Now, let me call Mayor Lewis and see about gutting that nasty old community center...",
+      "translation": "Чудово! Ласкаво просимо до корпорації Joja! Повертайся завтра, і ми подумаємо, з яких проєктів громадського розвитку почати... О, і не забудь гаманець! Хе-хе.#$b#А тепер я зателефоную меру Льюїсу й домовлюся випатрати той огидний старий Громадський центр...",
+      "reviewed": true
+    }
+  ]
+}

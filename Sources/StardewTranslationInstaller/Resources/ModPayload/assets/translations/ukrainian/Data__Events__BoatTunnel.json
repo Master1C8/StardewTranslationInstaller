@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "uk-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"Еге ж... Сумне видовище, правда?\"/pause 500/speak Willy \"Це був човен мого батька... Він добре служив йому понад 50 років.#$b#А тепер ледве тримається на воді.$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Я б і сам його полагодив, та потрібних матеріалів немає, ${хлопче^панянко}$.\"/faceDirection Willy 0/speak Willy \"Еге ж... Для початку знадобляться 200 шматків Твердої деревини, щоб залатати корпус.#$b#А ще треба відновити квитковий автомат і полагодити іридієвий якір.\"/faceDirection farmer 0/pause 400/speak Willy \"Якби мені вдалося дістати потрібні матеріали й полагодити старий човен... Тоді я зміг би відвезти тебе на Папоротеві острови.\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Кажуть, це вулканічні острови, повні дивних папуг...\"/pause 400/quickQuestion #Я хочу допомогти#Ні, обійдуся...(break)emote Willy 32\\speak Willy \"Еге ж... Я так і думав, ${хлопче^панянко}$.$h\"\\speak Willy \"Я залишу ці двері незамкненими... Можеш приносити матеріали, коли заманеться.\"(break)emote Willy 28\\speak Willy \"Гаразд, як знаєш...$s#$b#Якщо передумаєш, завжди можна повернутися й допомогти. Хай там як, я залишу ці двері незамкненими.\"/pause 2000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "id": "007-ui",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Strings/UI": "ea02f5523d75e54663b7bd7c1df9487f4c321fb1a1fb126c713d039d33e0710f",
+    "Strings/Lexicon": "1fb22d5e9c934fdb09df4fe06e8b562275925350109e35901585aa8895bbbc9d"
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Baby",
+      "english": "{0} and {1} welcomed a baby {2} to the family! They named {3} {4}.",
+      "translation": "למשפחה של {0} ו{1} יש עכשיו {2}! הם כינו {3} בשם {4}.",
+      "contextNote": "BirthingEvent passes localized ChildTerm_Male/Female (בן/בת) and Pronoun_Male/Female (אותו/אותה); Hebrew כינו takes these direct-object pronouns. Same message used for adoption."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_EvilShrine",
+      "english": "{0} visited an evil shrine...",
+      "translation": "נערך ביקור של {0} במקדש מרושע..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonstersActivated",
+      "english": "{0} has removed the farm's ancient magi-seal of protection. Watch out!",
+      "translation": "חותם ההגנה הקסום והעתיק של החווה הוסר בידי {0}. היזהרו!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonstersDeActivated",
+      "english": "{0} has restored the farm's ancient magi-seal of protection.",
+      "translation": "חותם ההגנה הקסום והעתיק של החווה הושב בידי {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SleepAnnounceModeSet",
+      "english": "Sleep announce mode is now: {0}.",
+      "translation": "מצב ההודעות על שינה הוא כעת: {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LostBook",
+      "english": "{0} has found a Lost Book!",
+      "translation": "ספר אבוד נמצא בידי {0}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieInviteAccept",
+      "english": "{0} has invited {1} to a movie!",
+      "translation": "הזמנה לסרט נשלחה מ{0} אל {1}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieInviteReject",
+      "english": "{1} has turned down {0}'s offer to see a movie...",
+      "translation": "ההצעה של {0} לצפות בסרט נדחתה בידי {1}..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieStart",
+      "english": "The next showing of '{0}' is about to begin!",
+      "translation": "ההקרנה הבאה של '{0}' עומדת להתחיל!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieEnd",
+      "english": "The showing of '{0}' has concluded.",
+      "translation": "ההקרנה של '{0}' הסתיימה."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned15k",
+      "english": "{0} Farm has earned 15,000g.",
+      "translation": "חוות {0} הרוויחה 15,000g.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned50k",
+      "english": "{0} Farm has earned 50,000g.",
+      "translation": "חוות {0} הרוויחה 50,000g.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned250k",
+      "english": "{0} Farm has earned 250,000g.",
+      "translation": "חוות {0} הרוויחה 250,000g.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned1m",
+      "english": "{0} Farm has earned 1,000,000g.",
+      "translation": "חוות {0} הרוויחה 1,000,000g.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned10m",
+      "english": "{0} Farm has earned 10,000,000g.",
+      "translation": "חוות {0} הרוויחה 10,000,000g.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned100m",
+      "english": "{0} Farm has earned 100,000,000g.",
+      "translation": "חוות {0} הרוויחה 100,000,000g.",
+      "latinException": {
+        "tokens": [
+          "g"
+        ],
+        "reason": "Exact gold currency suffix."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GalaxySword",
+      "english": "{0} found the Galaxy Sword.",
+      "translation": "חרב הגלקסיה נמצאה בידי {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Achievement",
+      "english": "{0} has earned the '{1}' achievement.",
+      "translation": "ההישג '{1}' הושג בידי {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Jackpot",
+      "english": "{0} hit the ultimate jackpot in Calico Spin.",
+      "translation": "הפרס הגדול ביותר בסיבוב קליקו הגיע ל{0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Slingshot_Hit",
+      "english": "{0} pelted {1} with {2}!",
+      "translation": "ירי של {2} בידי {0} פגע ב{1}!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Caught_Snooping",
+      "english": "{0} was caught snooping through {1}'s private belongings!",
+      "translation": "החיטוט של {0} בחפצים האישיים של {1} נחשף!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerLeft",
+      "english": "{0} has quit.",
+      "translation": "{0} כבר לא במשחק."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Paused",
+      "english": "The host has paused the game.",
+      "translation": "המארח השהה את המשחק."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Resumed",
+      "english": "The host has resumed the game.",
+      "translation": "המארח חידש את המשחק."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SelfPlayerID",
+      "english": "you",
+      "translation": "אתם"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_CheatsOnly",
+      "english": "This command can only be used when cheats are enabled.",
+      "translation": "אפשר להשתמש בפקודה הזאת רק כשקודי רמאות מופעלים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_HostOnly",
+      "english": "Only the host can use this command.",
+      "translation": "רק המארח יכול להשתמש בפקודה הזאת."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_MultiplayerOnly",
+      "english": "This command can only be used in multiplayer mode.",
+      "translation": "אפשר להשתמש בפקודה הזאת רק במצב מרובה משתתפים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NiceTry",
+      "english": "ConcernedApe: Nice try...",
+      "translation": "ConcernedApe: ניסיון יפה...",
+      "latinException": {
+        "tokens": [
+          "ConcernedApe"
+        ],
+        "reason": "Developer pseudonym/brand, preserved spelling."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchOnlinePlayer",
+      "english": "No online player with that name",
+      "translation": "אין שחקן מחובר בשם הזה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchPlayer",
+      "english": "No player with that name",
+      "translation": "אין שחקן בשם הזה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayers",
+      "english": "The following players are present:",
+      "translation": "השחקנים הבאים נמצאים במשחק:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayersEntry",
+      "english": " - {0}",
+      "translation": " - {0}",
+      "preservationReason": "List-entry punctuation/substitution only; no translatable prose."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Help",
+      "english": "{0} [farmer name/user id]: bans the player from this farm.",
+      "translation": "{0} [שם חקלאי/מזהה משתמש]: חסימת השחקן מהחווה הזאת."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Done",
+      "english": "{0} was banned",
+      "translation": "הגישה של {0} נחסמה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Failed",
+      "english": "Failed to ban player",
+      "translation": "חסימת השחקן נכשלה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Clear_Help",
+      "english": "{0}: clear chat log.",
+      "translation": "{0}: ניקוי יומן הצ'אט."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Color_Help",
+      "english": "{0} [color]: sets your default text color.",
+      "translation": "{0} [צבע]: הגדרת צבע הטקסט שלכם כברירת מחדל."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ColorList_Help",
+      "english": "{0}: lists the available text colors.",
+      "translation": "{0}: הצגת צבעי הטקסט הזמינים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_1",
+      "english": "ConcernedApe: Hello. I hope you're enjoying your new life here. Take care! [126]",
+      "translation": "ConcernedApe: שלום. אני מקווה שאתם נהנים מהחיים החדשים שלכם כאן. שמרו על עצמכם! [126]",
+      "latinException": {
+        "tokens": [
+          "ConcernedApe"
+        ],
+        "reason": "Developer pseudonym/brand, preserved spelling."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_2",
+      "english": "ConcernedApe is hard at work...",
+      "translation": "ConcernedApe עובד במרץ...",
+      "latinException": {
+        "tokens": [
+          "ConcernedApe"
+        ],
+        "reason": "Developer pseudonym/brand, preserved spelling."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Emote_Help",
+      "english": "{0} [emote id]: perform an emote (omit the argument for a list of emotes).",
+      "translation": "{0} [מזהה הבעה]: ביצוע הבעה (השמיטו את הפרמטר כדי להציג רשימת הבעות)."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandDescription",
+      "english": " - {0}",
+      "translation": " - {0}",
+      "preservationReason": "List-entry punctuation/substitution only; no translatable prose."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandList",
+      "english": "Supported commands: {0}.",
+      "translation": "פקודות נתמכות: {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_Intro",
+      "english": "Enter '/help commandName' for help with a specific command.",
+      "translation": "הזינו '/help commandName' לקבלת עזרה על פקודה מסוימת.",
+      "latinException": {
+        "tokens": [
+          "help",
+          "commandName"
+        ],
+        "reason": "Exact executable /help syntax and example argument placeholder from English."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_MultiplayerCommandList",
+      "english": "Multiplayer commands: {0}.",
+      "translation": "פקודות למשחק מרובה משתתפים: {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_NoSuchCommand",
+      "english": "No command found matching '{0}'.",
+      "translation": "לא נמצאה פקודה התואמת ל-'{0}'."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Kick_Help",
+      "english": "{0} [farmer name/user id]: disconnects the player.",
+      "translation": "{0} [שם חקלאי/מזהה משתמש]: ניתוק השחקן."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_List_Help",
+      "english": "{0}: list online players.",
+      "translation": "{0}: הצגת השחקנים המחוברים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_MapScreenshot_Help",
+      "english": "{0}: save a screenshot of the current location's full map.",
+      "translation": "{0}: שמירת צילום מסך של המפה המלאה של המקום הנוכחי."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Message_Help",
+      "english": "{0} [farmer name]: sends a private message to a player.",
+      "translation": "{0} [שם חקלאי]: שליחת הודעה פרטית לשחקן."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Pause_Help",
+      "english": "{0}: pause the game for all players.",
+      "translation": "{0}: השהיית המשחק לכל השחקנים."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_1",
+      "english": "Mr. Qi: Hey, kid. Yeah, I'm here. What'd you expect?",
+      "translation": "מר צ'י: היי, ${ילד^ילדה}$. כן, אני כאן. למה ציפית?",
+      "genderAdaptation": {
+        "subject": "current-player",
+        "evidence": "Stardew Valley1.6.15 LocalizedContentManager.PreprocessString applies Dialogue.applyGenderSwitchBlocks(Game1.player.Gender) to LoadString; Qi chat command response addresses the invoking local player. TRANSLATION_GUIDE section6 requires native ${male^female}$ where gender agreement is needed."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_2",
+      "english": "Mr. Qi: Hey... keep up the good work, and never stop striving for success!      I'll see you soon, kid...",
+      "translation": "מר צ'י: היי... ${המשך ככה, ולעולם אל תפסיק^המשיכי ככה, ולעולם אל תפסיקי}$ לשאוף להצלחה!      נתראה בקרוב, ${ילד^ילדה}$...",
+      "genderAdaptation": {
+        "subject": "current-player",
+        "evidence": "Stardew Valley1.6.15 LocalizedContentManager.PreprocessString applies Dialogue.applyGenderSwitchBlocks(Game1.player.Gender) to LoadString; Qi chat command response addresses the invoking local player. TRANSLATION_GUIDE section6 requires native ${male^female}$ where gender agreement is needed."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_3",
+      "english": "Mr. Qi is away",
+      "translation": "מר צ'י אינו נמצא"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Help",
+      "english": "{0}: replies to a private message.",
+      "translation": "{0}: מענה להודעה פרטית."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Failed",
+      "english": "Could not send reply",
+      "translation": "שליחת התשובה נכשלה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_NoMessageFound",
+      "english": "No player to reply to",
+      "translation": "אין שחקן שאפשר להשיב לו"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Resume_Help",
+      "english": "{0}: resume a paused game.",
+      "translation": "{0}: חידוש משחק שהושהה."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_All",
+      "english": "All",
+      "translation": "הכול"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "ChildTerm_Male",
+      "english": "boy",
+      "translation": "בן"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "ChildTerm_Female",
+      "english": "girl",
+      "translation": "בת"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "Pronoun_Male",
+      "english": "him",
+      "translation": "אותו"
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "Pronoun_Female",
+      "english": "her",
+      "translation": "אותה"
+    }
+  ]
+}

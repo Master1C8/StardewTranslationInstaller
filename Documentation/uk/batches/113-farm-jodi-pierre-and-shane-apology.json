@@ -1,0 +1,33 @@
+{
+  "id": "113-farm-jodi-pierre-and-shane-apology",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of Jodi’s dinner invitation, Pierre’s first-year seed announcement, and Shane’s apology and therapy decision. Every spoken line, invitation detail, fish and casserole reference, sales pitch, response option, mental-health statement, and emotional beat was reviewed in full event context with consistent Ukrainian terminology. Event commands, actors, movement, timing, quest state, response IDs and friendship deltas, gender and dialogue delimiters, emotion markers, music and sound IDs, and non-text payloads were preserved and structurally compared with English. The remaining Farm records and full-locale final audits remain pending.",
+    "reviewedTextSHA256": "0f3442522c97b8a53d06e9d3bba187fdee28b864bf88693cf918a18615029692",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 6
+  },
+  "records": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "93/f Jodi 1000/t 600 930/d Tue Wed Thu Fri Sat Sun",
+      "english": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/skippable/speak Jodi \"*puff* ...hi @! *pant* Whew... that was quite a workout, walking all the way up here.$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"Anyway... I came by to ask if you wanted to have dinner with us tonight!#$b#You don't have to... but if you decide to come, could you please bring a largemouth bass with you?#$b#...that's right. One of those big, slimy fish from the lake. I need one for the casserole I'm making.$h#$b#Okay, well... it'll be at our house at around 7:00 PM tonight... don't forget the largemouth bass! Bye.\"/pause 300/end dialogue Jodi \"Fish casserole always hits the spot.\"",
+      "translation": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/skippable/speak Jodi \"*хух*... Привіт, @! *пихтить* Ох... Піднятися сюди пішки — це ще те тренування.$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"Хай там як... Я прийшла запитати, чи не хочеш ти сьогодні повечеряти з нами!#$b#Приходити не обов’язково... але якщо вирішиш завітати, принеси, будь ласка, великоротого окуня.#$b#...Так, одну з тих великих слизьких риб з озера. Вона потрібна мені для запіканки.$h#$b#Ну гаразд... Чекатимемо в нас удома близько 7-ї години вечора... Не забудь великоротого окуня! Бувай.\"/pause 300/end dialogue Jodi \"Рибна запіканка завжди смакує як слід.\"",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "102/z spring/z summer/z fall/d Mon Tue Wed Thu Fri Sat/y 1/H",
+      "english": "continue/64 15/farmer 64 16 2 Pierre 64 18 0/broadcastEvent/skippable/pause 1500/speak Pierre \"Hello there, @. So! Your first year in Stardew Valley is almost over, huh?#$b#If you keep buying seeds from me, you'll be twice as productive next year!$h#$b#And I have some exciting news...#$b#I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season.#$b#...Well, that's all I wanted to say. Have a good one.\"/pause 300/move Pierre 0 1 2/pause 1000/faceDirection Pierre 0/speak Pierre \"You know... I wouldn't even bother trying my competitor's seeds.$u#$b# Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise.$h\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Pierre 64 18 0/broadcastEvent/skippable/pause 1500/speak Pierre \"Вітаю, @. Отже! Твій перший рік у долині Стардью майже завершився, еге ж?#$b#Якщо й надалі купуватимеш у мене насіння, наступного року твоє господарство стане вдвічі продуктивнішим!$h#$b#І в мене є захопливі новини...#$b#Наступного року я продаватиму в крамниці нові сорти насіння! Має з’явитися по одному новому сорту на кожну пору року.#$b#...Що ж, це все, що я хотів сказати. Гарного дня.\"/pause 300/move Pierre 0 1 2/pause 1000/faceDirection Pierre 0/speak Pierre \"Знаєш... Я б навіть не марнував часу на насіння мого конкурента.$u#$b# Насіння П’єра — *найякісніше* насіння, яке лише можна знайти. Даю слово.$h\"/pause 500/end",
+      "reviewed": true
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "2118991/e 3910975/t 600 800",
+      "english": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Hey...\"/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 0/speak Shane \"Oh man... Uh... How do I say this?$s#$b#I'm really sorry about what happened at the cliffs. That was... embarrassing...\"/pause 500/speak Shane \"$q -1 null#  #$r -1 10 event_apologize1#I'm glad I was there to help.#$r -1 -10 event_apologize2#You needed a serious wake-up call.#$r -1 10 event_apologize3#I'm just happy you're still here.\"/pause 1000/faceDirection Shane 1/pause 1000/speak Shane \"I've decided I want to see a therapist. Harvey got me in touch with a colleague of his...$s\"/pause 500/faceDirection Shane 0/speak Shane \"Anyway... I just wanted to thank you for taking care of me. And I want you to know that I'm going to take things a little more seriously from now on.#$b#I don't want to be a burden on anyone...\"/pause 1000/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 500/showFrame Shane 19/pause 2000/end",
+      "translation": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Привіт...\"/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 0/speak Shane \"Ох... Е-е... Як би це сказати?$s#$b#Мені дуже шкода через те, що сталося біля урвища. Це було... незручно...\"/pause 500/speak Shane \"$q -1 null#  #$r -1 10 event_apologize1#Добре, що вдалося бути поруч і допомогти.#$r -1 -10 event_apologize2#Тобі був потрібен серйозний струс.#$r -1 10 event_apologize3#Я просто радію, що ти досі тут.\"/pause 1000/faceDirection Shane 1/pause 1000/speak Shane \"Я вирішив звернутися до психотерапевта. Гарві познайомив мене зі своїм колегою...$s\"/pause 500/faceDirection Shane 0/speak Shane \"Хай там як... Я просто хотів подякувати за турботу. І повідомити: відтепер я ставитимуся до всього трохи серйозніше.#$b#Я не хочу бути ні для кого тягарем...\"/pause 1000/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 500/showFrame Shane 19/pause 2000/end",
+      "reviewed": true
+    }
+  ]
+}

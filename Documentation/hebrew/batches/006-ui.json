@@ -1,0 +1,378 @@
+{
+  "id": "006-ui",
+  "glossarySHA256": "69b01e59cc3b57fb5a7f809f019c5be65fbc2db95ca5e8fd0e6b3a243dcad69c",
+  "sourceHashes": {
+    "Strings/UI": "ea02f5523d75e54663b7bd7c1df9487f4c321fb1a1fb126c713d039d33e0710f"
+  },
+  "records": [
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_IPConnections",
+      "english": "Accept IP connections",
+      "translation": "קבלת חיבורים באמצעות IP",
+      "latinException": {
+        "tokens": [
+          "IP"
+        ],
+        "reason": "Standard network acronym, as in enter-ip glossary ID."
+      }
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_FarmhandCreation",
+      "english": "Enable new character creation",
+      "translation": "הפעלת יצירת דמות חדשה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowInviteCode",
+      "english": "Show Invite Code",
+      "translation": "הצגת קוד הזמנה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowReadyStatus",
+      "english": "Show Overnight Player Status List",
+      "translation": "הצגת רשימת מצבי השחקנים בלילה"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ScreenshotHeader",
+      "english": "Screenshot:",
+      "translation": "צילום מסך:"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_RemotelyDisconnected",
+      "english": "The server has closed the connection.",
+      "translation": "השרת סגר את החיבור."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_FarmhandOnline",
+      "english": "Can't demolish while this cabin's farmhand is online",
+      "translation": "אי אפשר להרוס כל עוד עובד החווה של הבקתה מחובר"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_DemolishCabinConfirm",
+      "english": "This will permanently remove {0} from the game. Are you sure you want to demolish this cabin?",
+      "translation": "הריסת הבקתה תסיר את {0} מהמשחק לצמיתות. האם אתם בטוחים שברצונכם להרוס את הבקתה הזאת?"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostAvailability",
+      "english": "Waiting for the host's event to finish...",
+      "translation": "ממתין לסיום האירוע של המארח..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostLoad",
+      "english": "Waiting for the host to finish setting up...",
+      "translation": "ממתין לסיום ההכנות של המארח..."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UnknownUserName",
+      "english": "???",
+      "translation": "???",
+      "preservationReason": "Punctuation/substitution-only chat template, no translatable prose."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerName",
+      "english": "{0} ({1})",
+      "translation": "{0} ({1})",
+      "preservationReason": "Punctuation/substitution-only chat template, no translatable prose."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ChatMessageFormat",
+      "english": "{0}: {1}",
+      "translation": "{0}: {1}",
+      "preservationReason": "Punctuation/substitution-only chat template, no translatable prose."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ErrorMessageFormat",
+      "english": "[Error] {0}",
+      "translation": "[שגיאה] {0}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PrivateMessageFormat",
+      "english": "{0} [Private]: {1}",
+      "translation": "{0} [פרטי]: {1}"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UserNotificationMessageFormat",
+      "english": "> {0}",
+      "translation": "> {0}",
+      "preservationReason": "Punctuation/substitution-only chat template, no translatable prose."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoined",
+      "english": "{0} has joined.",
+      "translation": "{0} עכשיו במשחק."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoinedNewName",
+      "english": "Unnamed Farmhand",
+      "translation": "עובד חווה ללא שם"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerDeath",
+      "english": "{0} was knocked unconscious.",
+      "translation": "ל{0} אבדה ההכרה.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CaughtLegendaryFish",
+      "english": "{0} caught the legendary '{1}' fish.",
+      "translation": "הדג האגדי '{1}' נלכד בידי {0}."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_TrashCan",
+      "english": "{1} caught {0} digging through the trash...",
+      "translation": "החיטוט של {0} באשפה התגלה לעיני {1}...",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LinusTrashCan",
+      "english": "Linus was impressed!",
+      "translation": "לינוס התרשם!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Bundle",
+      "english": "Bundle complete!",
+      "translation": "החבילה הושלמה!"
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Stardrop",
+      "english": "{0} found a stardrop.",
+      "translation": "טיפת כוכב נמצאה בידי {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HorseNamed",
+      "english": "{0} named a horse {1}.",
+      "translation": "השם {1} ניתן לסוס בידי {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PrairieKing",
+      "english": "{0} beat Journey of the Prairie King.",
+      "translation": "מסעו של מלך הערבה הושלם בידי {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_JunimoKart",
+      "english": "{0} beat Junimo Kart.",
+      "translation": "ג'ונימו קארט הושלם בידי {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Dating",
+      "english": "{0} is dating {1}.",
+      "translation": "{0} ו{1} בקשר רומנטי."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BreakUp",
+      "english": "{0} broke up with {1}.",
+      "translation": "הקשר עם {1} הסתיים ביוזמת {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Engaged",
+      "english": "{0} got engaged to {1}.",
+      "translation": "{0} ו{1} התארסו."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MuseumComplete",
+      "english": "{0} Farm has completed the museum collection.",
+      "translation": "חוות {0} השלימה את אוסף המוזיאון."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Museum40",
+      "english": "{0} Farm has donated 40 pieces to the museum.",
+      "translation": "חוות {0} תרמה 40 פריטים למוזיאון."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_donation",
+      "english": "{0} donated '{1}' to the museum.",
+      "translation": "הפריט '{1}' נתרם למוזיאון בידי {0}.",
+      "contextNote": "Item names and quantities have variable grammatical gender/number; generic noun or quantity phrase keeps correct agreement even for one item."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked10k",
+      "english": "{0} has walked 10,000 paces.",
+      "translation": "מספר הצעדים של {0} הגיע ל-10,000.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked100k",
+      "english": "{0} has walked 100,000 paces.",
+      "translation": "מספר הצעדים של {0} הגיע ל-100,000.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked1m",
+      "english": "{0} has walked 1,000,000 paces.",
+      "translation": "מספר הצעדים של {0} הגיע ל-1,000,000.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked10m",
+      "english": "{0} has walked 10,000,000 paces.",
+      "translation": "מספר הצעדים של {0} הגיע ל-10,000,000.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Divorce",
+      "english": "{0} has filed for divorce.",
+      "translation": "הוגשה בקשה לגירושים מטעם {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BackpackLarge",
+      "english": "{0} bought the Large Pack.",
+      "translation": "התרמיל הגדול נרכש בידי {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BackpackDeluxe",
+      "english": "{0} bought the Deluxe Pack.",
+      "translation": "התרמיל המפואר נרכש בידי {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Makeover",
+      "english": "{0} got a magical makeover.",
+      "translation": "המראה של {0} השתנה באורח קסום.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Makeover_Pet",
+      "english": "{0} and {1} got a magical makeover.",
+      "translation": "{0} ו{1} עברו שינוי מראה קסום."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DivorceCancel",
+      "english": "{0} has canceled the divorce.",
+      "translation": "הגירושים בוטלו ביוזמת {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly0",
+      "english": "{0} is calling it an early night.",
+      "translation": "אצל {0}, היום נגמר מוקדם.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly1",
+      "english": "{0} is going to bed early today.",
+      "translation": "היום שעת השינה של {0} מוקדמת.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly2",
+      "english": "{0} is turning in early today.",
+      "translation": "{0} במיטה מוקדם היום.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed0",
+      "english": "{0} has gone to bed.",
+      "translation": "{0} כבר במיטה.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed1",
+      "english": "{0} has tucked into bed.",
+      "translation": "{0} כבר מתחת לשמיכה.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed2",
+      "english": "{0} is hitting the sack.",
+      "translation": "זמן לישון אצל {0}.",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate0",
+      "english": "{0} has made it to bed!",
+      "translation": "{0} במיטה בזמן!",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate1",
+      "english": "{0} has made it to bed, safe and sound!",
+      "translation": "{0} במיטה, והכול בסדר!",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate2",
+      "english": "Whew! {0} has made it to bed!",
+      "translation": "פיו! {0} במיטה בזמן!",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut0",
+      "english": "{0} has passed out!",
+      "translation": "עילפון אצל {0}!",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut1",
+      "english": "{0} didn't make it to bed...",
+      "translation": "השינה תפסה את {0} לפני המיטה...",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut2",
+      "english": "{0} stayed out too late...",
+      "translation": "אצל {0}, הלילה בחוץ נמשך יותר מדי...",
+      "contextNote": "Multiplayer.receiveChatInfoMessage passes localized text substitutions without subject gender; neutral syntax avoids misgendering a remote farmer."
+    }
+  ]
+}

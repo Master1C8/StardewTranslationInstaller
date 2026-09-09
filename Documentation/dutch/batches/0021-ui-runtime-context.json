@@ -1,0 +1,15 @@
+{
+  "locale": "nl", "target": "Strings/UI",
+  "sourceAssetSha256": "ea02f5523d75e54663b7bd7c1df9487f4c321fb1a1fb126c713d039d33e0710f",
+  "reviewed": true,
+  "entries": {
+    "Chat_BuildingBuild": "{0} heeft de bouw van {1} {2} aangevraagd!",
+    "Chat_BuildingMagicBuild": "{0} heeft {1} {2} opgeroepen!",
+    "NameChange_EasterEgg6": "Alle wagens opgelet! Alle wagens opgelet! Er loopt een {0}{1}-dief vrij rond!"
+  },
+  "notes": {
+    "Chat_BuildingBuild":"{1} comes from Utility.AOrAn via aOrAn:. The Dutch-only postfix returns een; verified by the actual Harmony probe on .NET 6.0.32 x64.",
+    "Chat_BuildingMagicBuild":"Same proven aOrAn: argument path as normal construction; preserve every format placeholder.",
+    "NameChange_EasterEgg6":"{0} is Lexicon.getProperArticleForWord, which is empty outside built-in English. Keep it adjacent to the item placeholder and use Dutch een before the thief compound."
+  }
+}

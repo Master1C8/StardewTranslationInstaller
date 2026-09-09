@@ -1,0 +1,222 @@
+{
+  "id": "264-locations-qi-door-boat-field-office-nut-hints-a",
+  "locale": "uk",
+  "audit": {
+    "method": "Direct model translation followed by a complete source-target editorial reading of 30 location strings covering Qi walnut door, Willy boat repairs, Field Office finale and parrot walnut hints. Glossary item, material, character and creature names, event commands and IDs, placeholders, quantities, currency, dialogue markers and terse directional clue meaning were preserved.",
+    "reviewedTextSHA256": "42586acc2657a31256aa84157670cf956311746c7de6ef653ff7c8fa259e26be",
+    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedAfterFullRead": 48
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "qiNutDoor",
+      "english": "You hear a strange voice from behind the door...#'Only the greatest walnut hunters may enter here.'^    Your current status: {0}/100",
+      "translation": "Ти чуєш дивний голос із-за дверей...#«Сюди можуть увійти лише найвидатніші мисливці за горіхами».^    Ваш поточний результат: {0}/100",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateBatteries",
+      "english": "Donate 5 battery packs to repair the ticket machine?",
+      "translation": "Пожертвувати 5 акумуляторів для ремонту квиткового автомата?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateHardwood",
+      "english": "Donate 200 hardwood for hull repairs?",
+      "translation": "Пожертвувати 200 одиниць Твердої деревини для ремонту корпусу?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateIridium",
+      "english": "Donate 5 iridium bars to repair the anchor?",
+      "translation": "Пожертвувати 5 Іридієвих зливків для ремонту якоря?",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateBatteriesHint",
+      "english": "This machine could be repaired with 5 battery packs.",
+      "translation": "Цей автомат можна полагодити за допомогою 5 акумуляторів.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateHardwoodHint",
+      "english": "The hull could be repaired with 200 pieces of hardwood.",
+      "translation": "Для ремонту корпусу потрібно 200 одиниць Твердої деревини.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_DonateIridiumHint",
+      "english": "The anchor could be repaired with 5 iridium bars.",
+      "translation": "Для ремонту якоря потрібно 5 Іридієвих зливків.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_boatcomplete",
+      "english": "All materials have been found!#The boat will be repaired overnight.",
+      "translation": "Усі матеріали знайдено!#Човен полагодять за ніч.",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_firstRide",
+      "english": "She looks good as new!",
+      "translation": "Вона як новенька!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_random0",
+      "english": "Sorry if I smell like fish, heh!",
+      "translation": "Пробач за рибний запах, хе-хе!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BoatTunnel_willyText_random1",
+      "english": "Ahoy!",
+      "translation": "Агов!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_Ostrich",
+      "english": "A new ostrich chick hatched... it's a big one!",
+      "translation": "Вилупилося нове страуся... Яке ж велике!",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "FieldOfficeFinale",
+      "english": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Wow...#$b#Look how far we've come!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"The collection looks fantastic, and it's all thanks to you, @.\"/emote farmer 32/speak SafariGuy \"Here, as a way of saying 'thanks', I want to teach you something.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Learned how to craft 'Ostrich Incubator'\"/pause 400/speak SafariGuy \"This device will allow you to raise ostriches back home. Just place the incubator in a barn, place an ostrich egg inside, and wait...\"/faceDirection SafariGuy 0/speak SafariGuy \"Getting your hands on an ostrich egg is a different story, though... I'll leave that up to you!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Heh... Well... now the real work begins.#$b#I'll be studying these bones for years to come!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Farewell, @!\"/pause 600/end",
+      "translation": "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Овва...#$b#Поглянь, скільки всього ми досягли!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"Колекція має фантастичний вигляд, і все це завдяки тобі, @.\"/emote farmer 32/speak SafariGuy \"Ось, на знак подяки я хочу дечого тебе навчити.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Вивчено рецепт «Інкубатора для страусів»\"/pause 400/speak SafariGuy \"Цей пристрій дасть змогу розводити страусів удома. Просто постав інкубатор у хліві, поклади всередину страусове яйце й чекай...\"/faceDirection SafariGuy 0/speak SafariGuy \"А от роздобути страусове яйце — зовсім інша справа... Це вже твоє завдання!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Хе-хе... Що ж... Тепер починається справжня робота.#$b#Я вивчатиму ці кістки ще багато років!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Бувай, @!\"/pause 600/end",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Squawk",
+      "english": "*Awk*",
+      "translation": "*Кра-а*",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoLava",
+      "english": "Fire mountain... Hidden down fire river...",
+      "translation": "Вогняна гора... Заховано нижче за вогняною рікою...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_BuriedArch",
+      "english": "Buried near bones...",
+      "translation": "Закопано біля кісток...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_Arch",
+      "english": "Help man in tent...",
+      "translation": "Допоможи чоловікові в наметі...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_NorthBuried",
+      "english": "{0} buried in the north...",
+      "translation": "{0} закопано на півночі...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_WestBuried",
+      "english": "{0} buried in the west...",
+      "translation": "{0} закопано на заході...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_NorthHidden",
+      "english": "{0} hidden in the north...",
+      "translation": "{0} заховано на півночі...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_HutTree",
+      "english": "Bulging very close by...",
+      "translation": "Опуклість зовсім поруч...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_TigerSlime",
+      "english": "Stripey slimes to the west...",
+      "translation": "Смугасті слизні на заході...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_MusselStone",
+      "english": "{0} stuck in shelly stones by shore...",
+      "translation": "{0} застрягло в мушлястих каменях біля берега...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_IslandFarming",
+      "english": "{0} grow on the farm to the west...",
+      "translation": "{0} виростає на фермі на заході...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_WestHidden",
+      "english": "{0} hidden in the west...",
+      "translation": "{0} заховано на заході...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_IslandFishing",
+      "english": "{0} deep in the water...",
+      "translation": "{0} глибоко у воді...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoTreasure",
+      "english": "{0} hidden in fire mountain treasures...",
+      "translation": "{0} заховано в скарбах Вогняної гори...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoBarrel",
+      "english": "{0} encased in fire mountain gadgets...",
+      "translation": "{0} ув’язнено в пристроях Вогняної гори...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoMining",
+      "english": "{0} nutty stone in fire mountain...",
+      "translation": "{0} у горіховому камені на Вогняній горі...",
+      "reviewed": true
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "NutHint_VolcanoMonsters",
+      "english": "{0} taken by monsters in fire mountain...",
+      "translation": "{0} забрали чудовиська на Вогняній горі...",
+      "reviewed": true
+    }
+  ]
+}

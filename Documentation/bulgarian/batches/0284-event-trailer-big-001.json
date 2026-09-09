@@ -1,0 +1,27 @@
+{
+  "id": "0284-event-trailer-big-001",
+  "target": "Data/Events/Trailer_Big",
+  "status": "reviewed",
+  "sourceHashes": {
+    "positive": "d07681bba8995465b459eb4ca68975c4cca529fb3c5d0fad1c8e942992cdea71"
+  },
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "entries": {
+    "positive": "pause 100/emote farmer 56/pause 500/speak Pam \"Ха! Я ме виж! Май на стари години станах голяма сантименталка, а? ...хехехе.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Благодаря, че ме изслуша, хлапе\"/pause 5000/end"
+  },
+  "preserveReasons": {},
+  "editorialReview": {
+    "date": "2026-09-07",
+    "recordsRead": 1,
+    "sourceFidelity": true,
+    "targetLanguage": true,
+    "glossaryConsistency": true,
+    "corrections": [
+      "Translated and reread both quoted positive-response fields in Trailer_Big source ordinal 1.",
+      "Preserved the response-branch command script, actor identifier, emotion marker and event ending.",
+      "Refined Pam’s self-mocking sentimentality line for natural Bulgarian and retained her colloquial thanks for being heard."
+    ],
+    "finalChangedEntriesReread": true,
+    "entriesSha256": "b9d6f64891ee1a9c6dff9b5dd07cfd00462b3e63a4fcfd569191518acd1a7f53"
+  }
+}

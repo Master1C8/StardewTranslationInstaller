@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/ScienceHouse",
+      "When": {
+        "Language": "bg-vnrevival"
+      },
+      "Entries": {
+        "25/f Demetrius 1500/p Demetrius/p Robin": "jaunty/-1000 -1000/farmer -10 -10 0 Demetrius 6 21 3 Robin 5 21 1/skippable/showFrame Demetrius 28/viewport 6 21 true/pause 900/speak Robin \"Деметриус, не ти казах да вземеш домати. Казах да вземеш плодове.\"/emote Demetrius 8/speak Demetrius \"Не разбирам. Доматите са плодове!\"/emote Robin 12/speak Robin \"Когато нормален човек каже, че иска плодове, НИКОГА няма предвид домати. Няма значение каква е научната класификация.\"/warp farmer 6 24/playSound doorClose/pause 500/showFrame Demetrius 29/faceDirection Robin 2/speak Demetrius \"@! Радвам се, че си тук. Ще можеш да сложиш край на този спор.\"/move farmer 0 -2 0/emote farmer 8/speak Demetrius \"$q 59 null#Как се класифицира един домат според теб?#$r 59 -30 Event_tomato1#Зеленчук#$r 59 50 Event_tomato2#Плод\"/pause 500/showFrame Demetrius 28/speak Demetrius \"Искам само да разбереш гледната ми точка.#$b#Трудно ми е да знам какви точно предположения трябва да правя, когато ми казваш нещо.\"/pause 300/faceDirection Robin 1/pause 300/speak Demetrius \"Но ще се опитам да се подобря.\"/pause 600/emote Robin 20/pause 300/showFrame Demetrius 29/pause 600/speak Demetrius \"Благодаря за помощта, @.$h\"/pause 800/end",
+        "33/f Robin 1500/p Robin": "jaunty/5 17/farmer 6 24 0 Robin 5 17 3/skippable/move farmer 0 -3 1/move farmer -1 0 0/move farmer 0 -3 0/pause 200/faceDirection Robin 2/speak Robin \"Здравей, @. Тъкмо почиствах малко прах от триона си.\"/pause 400/faceDirection Robin 3/pause 500/faceDirection Robin 2/speak Robin \"$q 66 null#Случвало ли ти се е да изработиш нещо от дърво, @?#$r 66 50 event_wood1#Да#$r 66 50 event_wood2#Не\"/pause 500/speak Robin \"Мисля, че приятелството ни вече е достатъчно силно, за да ти поверя дърводелските си тайни!$h#$b#Ето, нека ти покажа чертежите.\"/move Robin 2 0 1/pause 600/playSound openBox/pause 600/move Robin -2 0 2/pause 400/playMusic none/playSound coin/pause 1500/playSound reward/addCraftingRecipe Flute Block/addCraftingRecipe Drum Block/message \"Вече можеш да изработваш „Флейтов блок“ и „Барабанен блок“\"/pause 700/speak Robin \"Можеш да ги използваш за творчески проекти във фермата си. #$b#Хубаво е да украсяваш дома си със собственоръчно изработени неща!$h\"/pause 700/end"
+      }
+    }
+  ]
+}

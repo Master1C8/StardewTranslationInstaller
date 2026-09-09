@@ -18,7 +18,7 @@
       "target": "Data/Festivals/winter8",
       "key": "afterIceFishing",
       "source": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Wow, that's a lot of fish!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*gag*... the smell...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"Now, for the winner of this year's ice fishing competition...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Here's your prize! Enjoy.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Well, that's it for this year's Festival of Ice. Thanks for coming, everyone! #$b#Now let's release these poor fish...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"I can't believe I won! Well, time to head home.\"/waitForOtherPlayers festivalEnd/end",
-      "translation": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"ว้าว ปลาเยอะมาก!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*สำลัก*... กลิ่น...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"และผู้ชนะการแข่งขันตกปลาน้ำแข็งปีนี้คือ...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"นี่คือรางวัลของคุณ! ขอให้สนุก\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"เอาละ เทศกาลน้ำแข็งปีนี้จบแล้ว ขอบคุณทุกคนที่มา! #$b#ทีนี้ปล่อยปลาน่าสงสารพวกนี้กัน...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"ไม่อยากเชื่อว่าฉันชนะ! เอาละ ได้เวลากลับบ้าน\"/waitForOtherPlayers festivalEnd/end"
+      "translation": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"ว้าว ปลาเยอะมาก!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*ขย้อน*... กลิ่น...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"และผู้ชนะการแข่งขันตกปลาน้ำแข็งปีนี้คือ...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"นี่คือรางวัลของคุณ! ขอให้สนุก\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"เอาละ เทศกาลน้ำแข็งปีนี้จบแล้ว ขอบคุณทุกคนที่มา! #$b#ทีนี้ปล่อยปลาน่าสงสารพวกนี้กัน...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"ไม่อยากเชื่อว่าฉันชนะ! เอาละ ได้เวลากลับบ้าน\"/waitForOtherPlayers festivalEnd/end"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -48,19 +48,19 @@
       "target": "Data/Festivals/winter8",
       "key": "Haley_spouse",
       "source": "Brr... my hands are freezing from making this snowman.$l",
-      "translation": "บรื๋อ... มือฉันแข็งจากการปั้นตุ๊กตาหิมะ$l"
+      "translation": "บรื๋อ... มือฉันเย็นจนแข็งเพราะปั้นตุ๊กตาหิมะ$l"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Sebastian_spouse",
       "source": "Don't worry about me, I never get cold...",
-      "translation": "ไม่ต้องห่วงฉัน ฉันไม่เคยหนาว..."
+      "translation": "ไม่ต้องห่วงผม ผมไม่เคยหนาว..."
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Sam_spouse",
       "source": "Aren't you cold? Are you sure you don't want my jacket?",
-      "translation": "ไม่หนาวเหรอ? แน่ใจนะว่าไม่เอาเสื้อแจ็กเก็ตฉัน?"
+      "translation": "ไม่หนาวเหรอ? แน่ใจนะว่าไม่เอาเสื้อแจ็กเก็ตผม?"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -84,25 +84,25 @@
       "target": "Data/Festivals/winter8",
       "key": "Maru",
       "source": "I'm not very creative when it comes to snowmen.$s",
-      "translation": "ฉันไม่ค่อยสร้างสรรค์เรื่องตุ๊กตาหิมะ$s"
+      "translation": "ฉันไม่ค่อยมีความคิดสร้างสรรค์เรื่องตุ๊กตาหิมะ$s"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Sebastian",
       "source": "Cold? Nah, I never get cold.",
-      "translation": "หนาวเหรอ? ไม่ ฉันไม่เคยหนาว"
+      "translation": "หนาวเหรอ? ไม่ ผมไม่เคยหนาว"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Pierre",
       "source": "This snow is so cold I can't feel my fingers anymore...$s",
-      "translation": "หิมะนี่เย็นจนฉันไม่รู้สึกถึงนิ้วแล้ว...$s"
+      "translation": "หิมะนี่เย็นจนผมไม่รู้สึกถึงนิ้วแล้ว...$s"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Shane",
       "source": "If it was up to me, I'd probably have a pizza festival at the saloon, instead...",
-      "translation": "ถ้าให้ฉันเลือก คงจัดเทศกาลพิซซ่าที่โรงเหล้าแทน..."
+      "translation": "ถ้าให้ผมเลือก คงจัดเทศกาลพิซซ่าที่โรงเหล้าแทน..."
     },
     {
       "target": "Data/Festivals/winter8",
@@ -114,19 +114,19 @@
       "target": "Data/Festivals/winter8",
       "key": "Linus",
       "source": "Igloo-building's an art I picked up from the tundra dwellers who live beyond the frozen sea.#$e#That was many years ago.$h#$e#An Igloo makes a nice home, but it's easier to just stay in my tent year-round.",
-      "translation": "การสร้างอิกลูเป็นศิลปะที่ผมเรียนจากชาวทุนดราหลังทะเลเยือกแข็ง#$e#นั่นหลายปีมาแล้ว$h#$e#อิกลูเป็นบ้านดี แต่พักในเต็นท์ตลอดปีง่ายกว่า"
+      "translation": "การสร้างอิกลูเป็นศิลปะที่ผมเรียนจากชาวทุนดราซึ่งอยู่พ้นอีกฟากของทะเลเยือกแข็ง#$e#นั่นหลายปีมาแล้ว$h#$e#อิกลูเป็นบ้านดี แต่พักในเต็นท์ตลอดปีง่ายกว่า"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Alex",
       "source": "Snowmen are okay, I guess. But mostly I'm looking forward to the spring.",
-      "translation": "ตุ๊กตาหิมะก็ใช้ได้มั้ง แต่ส่วนใหญ่ฉันตั้งตารอฤดูใบไม้ผลิ"
+      "translation": "ตุ๊กตาหิมะก็ใช้ได้มั้ง แต่ส่วนใหญ่ผมตั้งตารอฤดูใบไม้ผลิ"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "George",
       "source": "Hmmph... Wife dragged me out into the cold for this?",
-      "translation": "ฮึ่ม... ภรรยาลากฉันออกมาหนาวเพื่อสิ่งนี้เหรอ?"
+      "translation": "ฮึ่ม... ภรรยาลากฉันออกมาตากหนาวเพื่องานนี้เหรอ?"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -156,7 +156,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Penny",
       "source": "$y 'Hmm... What kind of snowman should we make?_A classic one. Carrot nose, top-hat, scarf._I guess maybe it's best to stick with the classics, huh?$h_Something funky. Icicle antennas, pine cone eyes._Okay! That sounds like fun.$h_Snowmen are boring. Think outside of the box!_Um, okay... I think I might stick with something more conventional.'",
-      "translation": "$y 'อืม... เราควรทำตุ๊กตาหิมะแบบไหน?_แบบคลาสสิก จมูกแครอต หมวกทรงสูง ผ้าพันคอ_ยึดแบบคลาสสิกคงดีที่สุดใช่ไหม?$h_แบบแปลก ๆ หนวดน้ำแข็ง ตาลูกสน_ตกลง! ฟังดูสนุก$h_ตุ๊กตาหิมะน่าเบื่อ คิดนอกกรอบสิ!_เอ่อ ตกลง... ฉันคิดว่าจะทำแบบธรรมดากว่า'"
+      "translation": "$y 'อืม... เราควรทำตุ๊กตาหิมะแบบไหน?_แบบคลาสสิก จมูกแครอต หมวกทรงสูง ผ้าพันคอ_ยึดแบบคลาสสิกคงดีที่สุดใช่ไหม?$h_แบบแปลก ๆ เสาอากาศแท่งน้ำแข็ง ตาลูกสน_ตกลง! ฟังดูสนุก$h_ตุ๊กตาหิมะน่าเบื่อ คิดนอกกรอบสิ!_เอ่อ ตกลง... ฉันคิดว่าจะทำแบบธรรมดากว่า'"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -186,7 +186,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Sam",
       "source": "Hey, @. Are you gonna enter the ice fishing competition?#$e#Oh, not me. I don't know how to fish.",
-      "translation": "เฮ้ @ จะเข้าการแข่งขันตกปลาน้ำแข็งไหม?#$e#โอ้ ฉันไม่เข้า ตกปลาไม่เป็น"
+      "translation": "เฮ้ @ จะเข้าการแข่งขันตกปลาน้ำแข็งไหม?#$e#โอ้ ผมไม่เข้า ตกปลาไม่เป็น"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -198,7 +198,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Marnie",
       "source": "I feel bad for all the poor, cold animals out there.$s",
-      "translation": "ฉันสงสารสัตว์น่าสงสารที่หนาวอยู่ข้างนอก$s"
+      "translation": "ฉันสงสารสัตว์ทุกตัวที่กำลังหนาวอยู่ข้างนอก$s"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -240,7 +240,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Vincent",
       "source": "I saw a big fish down there!",
-      "translation": "ฉันเห็นปลาใหญ่ข้างล่าง!"
+      "translation": "ผมเห็นปลาใหญ่ข้างล่าง!"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -270,25 +270,25 @@
       "target": "Data/Festivals/winter8",
       "key": "Haley_spouse_y2",
       "source": "Come here, let me fix your hair... I'm going to take an action shot of you during the contest!",
-      "translation": "มานี่ ให้ฉันจัดผม... ฉันจะถ่ายภาพคุณขณะแข่งขัน!"
+      "translation": "มานี่ ให้ฉันจัดผม... ฉันจะถ่ายภาพแอ็กชันของคุณระหว่างการแข่งขัน!"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Sebastian_spouse_y2",
       "source": "Hey, you really need to win the contest today.$0#$e#Uh... well, I guess I made a little bet with Marlon...$1",
-      "translation": "เฮ้ วันนี้คุณต้องชนะจริง ๆ$0#$e#เอ่อ... ฉันพนันกับมาร์ลอนไว้นิดหน่อย...$1"
+      "translation": "เฮ้ วันนี้คุณต้องชนะจริง ๆ$0#$e#เอ่อ... ผมพนันกับมาร์ลอนไว้นิดหน่อย...$1"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Sam_spouse_y2",
       "source": "You should teach me how to use a fishing rod sometime. I think I'd be good at it.",
-      "translation": "สักครั้งสอนฉันใช้คันเบ็ดสิ คิดว่าน่าจะเก่ง"
+      "translation": "สักครั้งสอนผมใช้คันเบ็ดสิ คิดว่าน่าจะเก่ง"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Alex_spouse_y2",
       "source": "Hey! You're going to win by a longshot today, I know it. Make us proud!",
-      "translation": "เฮ้! วันนี้คุณจะชนะขาด ฉันรู้ ทำให้เราภูมิใจนะ!"
+      "translation": "เฮ้! วันนี้คุณจะชนะขาดแน่นอน ผมมั่นใจ ทำให้เราภูมิใจนะ!"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -312,7 +312,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Robin_y2",
       "source": "Ice sculpting is a rewarding challenge for me. It's a distinct material that I'm not used to!",
-      "translation": "การแกะสลักน้ำแข็งเป็นความท้าทายที่คุ้มค่าสำหรับฉัน เป็นวัสดุเฉพาะที่ไม่คุ้นเคย!"
+      "translation": "การแกะสลักน้ำแข็งเป็นความท้าทายที่คุ้มค่าสำหรับฉัน เป็นวัสดุที่แตกต่างจากสิ่งที่ฉันคุ้นเคย!"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -330,7 +330,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Shane_y2",
       "source": "Winter can be really hard on animals. Did you install heaters in your coops and barns?",
-      "translation": "ฤดูหนาวลำบากสำหรับสัตว์ ติดตั้งเครื่องทำความร้อนในเล้าไก่และโรงนาหรือยัง?"
+      "translation": "ฤดูหนาวลำบากสำหรับสัตว์ ติดตั้งเครื่องทำความร้อนในเล้าสัตว์ปีกและโรงนาหรือยัง?"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -360,7 +360,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Alex_y2",
       "source": "You think anyone would mind if I took a dip in the frozen lake after the festival?#$e#I've heard ice baths are good for the muscles.",
-      "translation": "คิดว่าจะมีใครว่าไหมถ้าฉันลงแช่ทะเลสาบเยือกแข็งหลังงาน?#$e#ได้ยินว่าการแช่น้ำแข็งดีต่อกล้ามเนื้อ"
+      "translation": "คิดว่าจะมีใครว่าไหมถ้าผมลงแช่ในทะเลสาบเยือกแข็งหลังงาน?#$e#ได้ยินว่าการแช่น้ำแข็งดีต่อกล้ามเนื้อ"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -384,25 +384,25 @@
       "target": "Data/Festivals/winter8",
       "key": "Clint_y2",
       "source": "These lumps of snow won't form into balls...$0#$e#I think I'm better working in the heat than in the cold.$2",
-      "translation": "ก้อนหิมะพวกนี้ปั้นเป็นลูกไม่ได้...$0#$e#ผมคงทำงานในความร้อนได้ดีกว่าความหนาว$2"
+      "translation": "ก้อนหิมะพวกนี้ปั้นเป็นลูกไม่ได้...$0#$e#ผมคงทำงานในที่ร้อนได้ดีกว่าในที่หนาว$2"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Emily_y2",
       "source": "A snowman has to look the part! Isn't the top hat and scarf stylish?",
-      "translation": "ตุ๊กตาหิมะต้องดูสมบทบาท! หมวกทรงสูงกับผ้าพันคอมีสไตล์ไหม?"
+      "translation": "ตุ๊กตาหิมะต้องดูให้สมกับเป็นตุ๊กตาหิมะสิ! หมวกทรงสูงกับผ้าพันคอดูมีสไตล์ไหม?"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Penny_y2",
       "source": "I'm too nervous to walk on the frozen lake...#$e#I read a book once, where a girl fell through the ice.#$b#She was okay! But... I've been cautious about it ever since.",
-      "translation": "ฉันประหม่าเกินกว่าจะเดินบนทะเลสาบเยือกแข็ง...#$e#เคยอ่านหนังสือที่เด็กหญิงตกทะลุน้ำแข็ง#$b#เธอปลอดภัย! แต่... ตั้งแต่นั้นฉันก็ระวัง"
+      "translation": "ฉันกลัวเกินกว่าจะเดินบนทะเลสาบเยือกแข็ง...#$e#เคยอ่านหนังสือที่เด็กหญิงตกทะลุน้ำแข็ง#$b#เธอปลอดภัย! แต่... ตั้งแต่นั้นฉันก็ระวัง"
     },
     {
       "target": "Data/Festivals/winter8",
       "key": "Pam_y2",
       "source": "$y 'I lost last year because I chose a bad spot. I have a good feeling things will be different this time around._I don't think the location matters._Hah. Says you! I'll prove you wrong._I'll beat you anyway._...$4_Well, good luck._Same to you, kid.'",
-      "translation": "$y 'ปีที่แล้วฉันแพ้เพราะเลือกจุดไม่ดี คราวนี้รู้สึกว่าจะต่างออกไป_ฉันคิดว่าสถานที่ไม่สำคัญ_ฮ่า คุณพูดเอง! ฉันจะพิสูจน์ว่าคุณผิด_ยังไงฉันก็ชนะคุณ_...$4_ขอให้โชคดี_คุณก็เหมือนกัน เจ้าหนู'"
+      "translation": "$y 'ปีที่แล้วฉันแพ้เพราะเลือกจุดไม่ดี คราวนี้รู้สึกว่าจะต่างออกไป_ฉันคิดว่าสถานที่ไม่สำคัญ_ฮ่า คุณก็พูดได้สิ! ฉันจะพิสูจน์ว่าคุณผิด_ยังไงฉันก็ชนะคุณ_...$4_ขอให้โชคดี_คุณก็เหมือนกัน เจ้าหนู'"
     },
     {
       "target": "Data/Festivals/winter8",
@@ -474,7 +474,7 @@
       "target": "Data/Festivals/winter8",
       "key": "Vincent_y2",
       "source": "My big brother is helping me build a snowman!$0",
-      "translation": "พี่ชายช่วยฉันปั้นตุ๊กตาหิมะ!$0"
+      "translation": "พี่ชายช่วยผมปั้นตุ๊กตาหิมะ!$0"
     },
     {
       "target": "Data/Festivals/winter8",

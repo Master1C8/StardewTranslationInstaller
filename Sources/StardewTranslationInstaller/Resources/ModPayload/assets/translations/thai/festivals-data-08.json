@@ -7,16 +7,16 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "name": "เทศกาลน้ำแข็ง",
-        "mainEvent": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"เอาละทุกคน เริ่มการแข่งขันตกปลาน้ำแข็งปีนี้กัน\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"ผู้เข้าแข่งขัน เป้าหมายคือจับปลาให้มากที่สุดในสองนาทีด้วยคันเบ็ดที่จัดไว้#$b#ต้องจับปลาที่นี่ จากหลุมเหล่านี้ในน้ำแข็ง\"/pause 600/speak Lewis \"เอาละ ทุกคนพร้อมไหม?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"เริ่มได้!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
-        "afterIceFishing": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"ว้าว ปลาเยอะมาก!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*สำลัก*... กลิ่น...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"และผู้ชนะการแข่งขันตกปลาน้ำแข็งปีนี้คือ...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"นี่คือรางวัลของคุณ! ขอให้สนุก\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"เอาละ เทศกาลน้ำแข็งปีนี้จบแล้ว ขอบคุณทุกคนที่มา! #$b#ทีนี้ปล่อยปลาน่าสงสารพวกนี้กัน...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"ไม่อยากเชื่อว่าฉันชนะ! เอาละ ได้เวลากลับบ้าน\"/waitForOtherPlayers festivalEnd/end",
-        "OtherPlayerWin": "message \"ฉันไม่ชนะการแข่งขัน แต่ก็สนุก! ได้เวลากลับบ้าน\"/waitForOtherPlayers festivalEnd/end",
-        "DickWin": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"นี่คือรางวัลของคุณ วิลลี ขอให้สนุก\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"เอาละ เทศกาลน้ำแข็งปีนี้จบแล้ว ขอบคุณทุกคนที่มา!#$b#ทีนี้ปล่อยปลาน่าสงสารพวกนี้กัน...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"ฉันไม่ชนะการแข่งขัน แต่ก็สนุก! ได้เวลากลับบ้าน\"/waitForOtherPlayers festivalEnd/end",
-        "Abigail_spouse": "นี่ ที่รัก... ดูสิ นั่นคุณ!$h",
-        "Penny_spouse": "ปีนี้จะเข้าการแข่งขันตกปลาไหม @? แม่ฉันจริงจังกับการชนะมาก",
-        "Haley_spouse": "บรื๋อ... มือฉันแข็งจากการปั้นตุ๊กตาหิมะ$l",
-        "Sebastian_spouse": "ไม่ต้องห่วงฉัน ฉันไม่เคยหนาว...",
-        "Sam_spouse": "ไม่หนาวเหรอ? แน่ใจนะว่าไม่เอาเสื้อแจ็กเก็ตฉัน?"
+        "name": "",
+        "mainEvent": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \" \"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \" #$b# \"/pause 600/speak Lewis \" ?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+        "afterIceFishing": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \" !$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"**... ...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"! \"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"  ! #$b#...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"!  \"/waitForOtherPlayers festivalEnd/end",
+        "OtherPlayerWin": "message \" ! \"/waitForOtherPlayers festivalEnd/end",
+        "DickWin": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"  \"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"  !#$b#...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \" ! \"/waitForOtherPlayers festivalEnd/end",
+        "Abigail_spouse": " ...  !$h",
+        "Penny_spouse": " @? ",
+        "Haley_spouse": "... $l",
+        "Sebastian_spouse": " ...",
+        "Sam_spouse": "? ?"
       }
     },
     {
@@ -26,16 +26,16 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Abigail": "คิดอย่างไรกับนักเลงหิมะของฉัน?",
-        "Robin": "ขอโทษนะ แต่การแกะสลักเชิงเทินน้ำแข็งต้องใช้สมาธิเต็มที่!",
-        "Demetrius": "รู้อะไรไหม? ผมน่าจะใส่เสื้อแจ็กเก็ต",
-        "Maru": "ฉันไม่ค่อยสร้างสรรค์เรื่องตุ๊กตาหิมะ$s",
-        "Sebastian": "หนาวเหรอ? ไม่ ฉันไม่เคยหนาว",
-        "Pierre": "หิมะนี่เย็นจนฉันไม่รู้สึกถึงนิ้วแล้ว...$s",
-        "Shane": "ถ้าให้ฉันเลือก คงจัดเทศกาลพิซซ่าที่โรงเหล้าแทน...",
-        "Caroline": "ฤดูหนาวเป็นอย่างไรบ้าง @?$h",
-        "Linus": "การสร้างอิกลูเป็นศิลปะที่ผมเรียนจากชาวทุนดราหลังทะเลเยือกแข็ง#$e#นั่นหลายปีมาแล้ว$h#$e#อิกลูเป็นบ้านดี แต่พักในเต็นท์ตลอดปีง่ายกว่า",
-        "Alex": "ตุ๊กตาหิมะก็ใช้ได้มั้ง แต่ส่วนใหญ่ฉันตั้งตารอฤดูใบไม้ผลิ"
+        "Abigail": "?",
+        "Robin": " !",
+        "Demetrius": "? ",
+        "Maru": "$s",
+        "Sebastian": "?  ",
+        "Pierre": "...$s",
+        "Shane": " ...",
+        "Caroline": " @?$h",
+        "Linus": "#$e#$h#$e# ",
+        "Alex": " "
       }
     },
     {
@@ -45,15 +45,15 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "George": "ฮึ่ม... ภรรยาลากฉันออกมาหนาวเพื่อสิ่งนี้เหรอ?",
-        "Evelyn": "เคยเล่าไหมว่าฉันกับจอร์จพบกันครั้งแรกอย่างไร? เขาปาก้อนหิมะใส่ฉันในเทศกาลนี้#$e#ตอนนั้นเขาเป็นสุภาพบุรุษ เดินมาดูว่าฉันเป็นอะไรไหม$h",
-        "Lewis": "ยินดีต้อนรับสู่เทศกาลน้ำแข็ง!#$e#ไฮไลต์ของวันนี้คือการแข่งขันตกปลาน้ำแข็ง เราสร้าง 'ทะเลสาบเยือกแข็ง' และปล่อยปลาไว้เต็ม#$b#บอกผมเมื่อพร้อมแข่งขัน",
-        "Clint": "เอมิลีเข้ามาช่วยผมเองโดยไม่ได้ขอ... มีความหมายอะไรไหม? *กลืนน้ำลาย*$4",
-        "Emily": "ว้าว ตุ๊กตาหิมะตัวนี้ต้องปรับโฉม ใครทำ?$s",
-        "Penny": "$y 'อืม... เราควรทำตุ๊กตาหิมะแบบไหน?_แบบคลาสสิก จมูกแครอต หมวกทรงสูง ผ้าพันคอ_ยึดแบบคลาสสิกคงดีที่สุดใช่ไหม?$h_แบบแปลก ๆ หนวดน้ำแข็ง ตาลูกสน_ตกลง! ฟังดูสนุก$h_ตุ๊กตาหิมะน่าเบื่อ คิดนอกกรอบสิ!_เอ่อ ตกลง... ฉันคิดว่าจะทำแบบธรรมดากว่า'",
-        "Pam": "ฉันวางแผนจะชนะการแข่งขันตกปลาน้ำแข็ง!#$e#แต่วิลลีคงเอาชนะยาก... เขาทำเรื่องแบบนี้ทั้งวันทั้งคืน$s",
-        "Haley": "ฤดูหนาวคงไม่ได้แย่ไปเสียทั้งหมด... เล่นหิมะก็สนุก!",
-        "Jodi": "ป่าดูสวยในฤดูหนาวนะ ว่าไหม?"
+        "George": "... ?",
+        "Evelyn": "? #$e# $h",
+        "Lewis": "!#$e#  '' #$b#",
+        "Clint": "... ? **$4",
+        "Emily": "  ?$s",
+        "Penny": "$y '... ?_   _?$h_   _! $h_ !_ ... '",
+        "Pam": "!#$e#... $s",
+        "Haley": "... !",
+        "Jodi": " ?"
       }
     },
     {
@@ -63,15 +63,15 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Kent": "ผมชอบฤดูหนาว สงบดี",
-        "Sam": "เฮ้ @ จะเข้าการแข่งขันตกปลาน้ำแข็งไหม?#$e#โอ้ ฉันไม่เข้า ตกปลาไม่เป็น",
-        "Leah": "โอ้ น้ำแข็ง วัสดุแกะสลักงดงามแต่ไม่ยั่งยืน#$e#แต่สิ่งนั้นอาจทำให้งานศิลปะดียิ่งขึ้น",
-        "Marnie": "ฉันสงสารสัตว์น่าสงสารที่หนาวอยู่ข้างนอก$s",
-        "Elliott": "วันนี้ผมจะเข้าการแข่งขันตกปลาน้ำแข็ง ทำไมจะไม่ล่ะ?#$e#แต่วิลลีแพ้ยากมาก",
-        "Gus": "ขอโทษที่ไม่มีอาหาร#$e#รอถึงงานเลี้ยงดาวฤดูหนาว คุณจะอิ่มไปหลายวัน",
-        "Wizard": "แอบมาเยือนหอคอยประหลาดของข้าหรือ? ในหมู่คนธรรมดา เจ้านี่แปลกจริง",
-        "Harvey": "อุณหภูมิสุดขั้วสร้างภาระแก่ร่างกายมาก แต่งตัวให้อบอุ่น!#$e#อ้อ และสนุกกับเทศกาลนะ!$h",
-        "Sandy": "ได้ยินว่าที่บ้านฝนตก นั่นเป็นเหตุผลที่มาที่นี่เหรอ?$h#$e#ที่จริงฉันคิดถึงฝนอยู่นิดหน่อย...$s"
+        "Kent": " ",
+        "Sam": " @ ?#$e#  ",
+        "Leah": "  #$e#",
+        "Marnie": "$s",
+        "Elliott": " ?#$e#",
+        "Gus": "#$e# ",
+        "Wizard": "?  ",
+        "Harvey": " !#$e# !$h",
+        "Sandy": " ?$h#$e#...$s"
       }
     },
     {
@@ -81,16 +81,16 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Jas": "ฉันอยากทำจมูกแครอตให้เขา!$h",
-        "Vincent": "ฉันเห็นปลาใหญ่ข้างล่าง!",
-        "Marlon": "เฮ้ สวัสดีตอนบ่าย",
-        "Leo": "อิกลูจะอุ่นขึ้นสองเท่าถ้ายัดขนนกในผนัง!",
-        "Abigail_spouse_y2": "ลองนึกว่าเราอยู่ในอิกลูด้วยกัน!$h#$e#คงสนุก แต่ฉันมีความสุขที่ได้อยู่กับคุณไม่ว่าที่ไหน$l",
-        "Penny_spouse_y2": "กลับบ้านแล้วก่อไฟและดื่มโกโก้ร้อนกัน$0#$e#...ใส่มาร์ชแมลโลว์ไหม?$h",
-        "Haley_spouse_y2": "มานี่ ให้ฉันจัดผม... ฉันจะถ่ายภาพคุณขณะแข่งขัน!",
-        "Sebastian_spouse_y2": "เฮ้ วันนี้คุณต้องชนะจริง ๆ$0#$e#เอ่อ... ฉันพนันกับมาร์ลอนไว้นิดหน่อย...$1",
-        "Sam_spouse_y2": "สักครั้งสอนฉันใช้คันเบ็ดสิ คิดว่าน่าจะเก่ง",
-        "Alex_spouse_y2": "เฮ้! วันนี้คุณจะชนะขาด ฉันรู้ ทำให้เราภูมิใจนะ!"
+        "Jas": "!$h",
+        "Vincent": "!",
+        "Marlon": " ",
+        "Leo": "!",
+        "Abigail_spouse_y2": "!$h#$e# $l",
+        "Penny_spouse_y2": "$0#$e#...?$h",
+        "Haley_spouse_y2": " ... !",
+        "Sebastian_spouse_y2": "  $0#$e#... ...$1",
+        "Sam_spouse_y2": " ",
+        "Alex_spouse_y2": "!   !"
       }
     },
     {
@@ -100,16 +100,16 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Harvey_spouse_y2": "สวัสดี ที่รัก ขอให้โชคดีกับการแข่งขันตกปลาน้ำแข็งวันนี้$0",
-        "Elliott_spouse_y2": "ผมฝึกเทคนิคตกปลาแล้ว จะไม่ออมมือให้คุณ ที่รัก$1",
-        "Abigail_y2": "เคยโยนก้อนกรวดหลายก้อนลงทะเลสาบเยือกแข็งไหม? เสียงเพราะมาก#$e#...อย่าบอกพ่อนะ ฉันใส่เสื้อกันหนาวดาวฤดูหนาวใต้เสื้อคลุม",
-        "Robin_y2": "การแกะสลักน้ำแข็งเป็นความท้าทายที่คุ้มค่าสำหรับฉัน เป็นวัสดุเฉพาะที่ไม่คุ้นเคย!",
-        "Demetrius_y2": "น้ำแข็ง... ช่างเป็นสสารอันลึกซึ้งจริง ๆ จำเป็นต่อชีวิต จึงเหมาะเป็นวัสดุทำรูปปั้นที่แสดงถึงสิ่งมีชีวิต",
-        "Maru_y2": "หัวใจของตุ๊กตาหิมะฝีมือดีเริ่มจากฐานที่ได้ระดับและหลีกเลี่ยงน้ำหนักส่วนบนมากเกินไป$3",
-        "Shane_y2": "ฤดูหนาวลำบากสำหรับสัตว์ ติดตั้งเครื่องทำความร้อนในเล้าไก่และโรงนาหรือยัง?",
-        "Sebastian_y2": "เคยสังเกตไหมว่าในหิมะเงียบเพียงใด?",
-        "Pierre_y2": "ครอบครัวเรามีเสื้อกันหนาวดาวฤดูหนาวเข้าชุดกัน#$e#ถ้าอบิเกลยอมใส่ของเธอ...$2",
-        "Caroline_y2": "สวัสดี @ ฤดูหนาวนี้หาเวลาพักจากงานฟาร์มได้บ้างไหม?$0"
+        "Harvey_spouse_y2": "  $0",
+        "Elliott_spouse_y2": "  $1",
+        "Abigail_y2": "? #$e#... ",
+        "Robin_y2": " !",
+        "Demetrius_y2": "...    ",
+        "Maru_y2": "$3",
+        "Shane_y2": " ?",
+        "Sebastian_y2": "?",
+        "Pierre_y2": "#$e#...$2",
+        "Caroline_y2": " @ ?$0"
       }
     },
     {
@@ -119,16 +119,16 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Linus_y2": "อา... ป่าเข้าสู่การหลับใหลยาวนานในฤดูหนาว...$1",
-        "Alex_y2": "คิดว่าจะมีใครว่าไหมถ้าฉันลงแช่ทะเลสาบเยือกแข็งหลังงาน?#$e#ได้ยินว่าการแช่น้ำแข็งดีต่อกล้ามเนื้อ",
-        "George_y2": "เมื่อแก่และหัวล้านเหมือนฉัน ต้องมีหมวกอุ่น ๆ ดี ๆ",
-        "Evelyn_y2": "เราไม่มีทางรู้... นี่อาจเป็นครั้งสุดท้ายที่ฉันปั้นตุ๊กตาหิมะกับอเล็กซ์#$e#ชีวิตสั้นนะ ที่รัก จงเห็นค่าทุกช่วงเวลา",
-        "Lewis_y2": "สวัสดี @ ถึงช่วงเทศกาลตกปลาน้ำแข็งของปีอีกครั้ง#$b#คุยกับผมเมื่อพร้อมเริ่มการแข่งขัน!$1",
-        "Clint_y2": "ก้อนหิมะพวกนี้ปั้นเป็นลูกไม่ได้...$0#$e#ผมคงทำงานในความร้อนได้ดีกว่าความหนาว$2",
-        "Emily_y2": "ตุ๊กตาหิมะต้องดูสมบทบาท! หมวกทรงสูงกับผ้าพันคอมีสไตล์ไหม?",
-        "Penny_y2": "ฉันประหม่าเกินกว่าจะเดินบนทะเลสาบเยือกแข็ง...#$e#เคยอ่านหนังสือที่เด็กหญิงตกทะลุน้ำแข็ง#$b#เธอปลอดภัย! แต่... ตั้งแต่นั้นฉันก็ระวัง",
-        "Pam_y2": "$y 'ปีที่แล้วฉันแพ้เพราะเลือกจุดไม่ดี คราวนี้รู้สึกว่าจะต่างออกไป_ฉันคิดว่าสถานที่ไม่สำคัญ_ฮ่า คุณพูดเอง! ฉันจะพิสูจน์ว่าคุณผิด_ยังไงฉันก็ชนะคุณ_...$4_ขอให้โชคดี_คุณก็เหมือนกัน เจ้าหนู'",
-        "Haley_y2": "ดีที่ใส่ที่ปิดหู ข้างนอกหนาวจัด!$0#$e#ปีนี้ฉันนำกล้องมา แสงเหมาะกับการถ่ายภาพฤดูหนาว!"
+        "Linus_y2": "... ...$1",
+        "Alex_y2": "?#$e#",
+        "George_y2": "    ",
+        "Evelyn_y2": "... #$e#  ",
+        "Lewis_y2": " @ #$b#!$1",
+        "Clint_y2": "...$0#$e#$2",
+        "Emily_y2": "! ?",
+        "Penny_y2": "...#$e##$b#! ... ",
+        "Pam_y2": "$y ' __ ! __...$4__ '",
+        "Haley_y2": " !$0#$e# !"
       }
     },
     {
@@ -138,16 +138,16 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Jodi_y2": "งานรวมตัวแบบนี้ช่วยสร้างความสัมพันธ์ในชุมชนกับเพื่อนบ้าน#$e#ดีที่อากาศหนาวดูเหมือนพาผู้คนมาใกล้กัน",
-        "Kent_y2": "พร้อมแข่งไหม? เราทุกคนคิดว่าคุณจะชนะ",
-        "Sam_y2": "เฮ้ หัวเราะทำไม? เขายังไม่เสร็จ!#$e#รอก่อน... เมื่อเสร็จแล้วเขาจะเป็นตุ๊กตาหิมะชั้นเยี่ยม",
-        "Leah_y2": "ต้องปรับอุณหภูมิน้ำแข็งก่อนตัด ไม่เช่นนั้นขึ้นรูปไม่ได้!",
-        "Marnie_y2": "อ๋า... หมูน้อยตัวนั้นใส่เสื้อกันหนาวเต็มที่แล้วน่ารักมาก!$1",
-        "Elliott_y2": "ดูนี่ อาวุธลับของผม... ขวดเหล้าชั้นดีไว้แตะริมฝีปากก่อนเสียงนกหวีด...",
-        "Gus_y2": "ผมขังตัวอยู่ข้างในดูกริดบอลนานเกินไป... ได้ออกมาสูดอากาศฤดูหนาวสดชื่นก็ดี",
-        "Wizard_y2": "หืม? เจ้ามาที่นี่ได้อย่างไร?#$e#ไม่ต้องสนใจข้า ข้าเพียงสังเกตการณ์...",
-        "Harvey_y2": "เช้านี้ผมไม่น่าลงแว็กซ์หนวดเลย มันแข็งเป็นน้ำแข็ง! โอ้...$2#$e#ถ้าต้องการเหล็กเจาะน้ำแข็ง คุณรู้ว่าจะพบผมที่ไหน...$h",
-        "Jas_y2": "ปลาไม่หนาวอยู่ข้างล่างเหรอ?$3"
+        "Jodi_y2": "#$e#",
+        "Kent_y2": "? ",
+        "Sam_y2": " ? !#$e#... ",
+        "Leah_y2": " !",
+        "Marnie_y2": "... !$1",
+        "Elliott_y2": " ... ...",
+        "Gus_y2": "... ",
+        "Wizard_y2": "? ?#$e# ...",
+        "Harvey_y2": " ! ...$2#$e# ...$h",
+        "Jas_y2": "?$3"
       }
     },
     {
@@ -157,9 +157,9 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Vincent_y2": "พี่ชายช่วยฉันปั้นตุ๊กตาหิมะ!$0",
-        "Marlon_y2": "ช่วงนี้ของปีไม่เลว ฤดูหนาวไม่มีแมลง...#$e#คิดว่าปีนี้จะชนะวิลลีไหม? เขาเป็นคู่แข่งที่แข็งแกร่ง...",
-        "Leo_y2": "*กรอบแกรบ* *กรอบแกรบ* หิมะส่งเสียงตลกเวลาเหยียบ!$1"
+        "Vincent_y2": "!$0",
+        "Marlon_y2": " ...#$e#? ...",
+        "Leo_y2": "** ** !$1"
       }
     },
     {
@@ -169,11 +169,11 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "Alex_spouse": "ฉันจะเอาใจช่วยคุณในการแข่งขันตกปลา",
-        "Harvey_spouse": "ผมกำลังฝันถึงกองไฟอุ่น ๆ ที่บ้าน...$l",
-        "Elliott_spouse": "ผมรู้ว่าคุณจะเอาชนะผมในการแข่งขันตกปลา แต่ไม่เป็นไร ผมมาเพื่อความสนุก$h",
-        "Willy": "$y 'เฮ้ @ พร้อมตกปลาน้ำแข็งไหม?_พร้อม จะทำให้ดีที่สุด!_ต้องแบบนี้สิ!$h_พร้อม และฉันจะชนะคุณ!_คอยดูแล้วกัน$h_พูดตามตรง ไม่ ฉันตกปลาไม่เก่ง_งั้นก็คิดว่าเป็นการฝึกที่ดี!$h'",
-        "mainEvent_y2": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 69 36 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 37 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 0/faceDirection Elliott 1/faceDirection Willy 3/positionOffset Harvey 12 24/viewport 71 35 true/pause 2000/speak Lewis \"เอาละทุกคน เริ่มการแข่งขันตกปลาน้ำแข็งปีนี้กัน\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"ผู้เข้าแข่งขัน ใช้คันเบ็ดที่จัดไว้จับปลาให้มากที่สุดจากหลุมเหล่านี้ในน้ำแข็ง\"/pause 600/speak Lewis \"ทุกคนพร้อมไหม?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"เริ่มได้!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Maru true 3 3000 4 300 0 -3 4 250 3 6400 2 300 0 3 2 300 3 4250/advancedMove Vincent true 2 6500 1 300 3 0 1 300 2 7400 3 300 -3 0 3 300 2 1000/advancedMove Penny true 4 5750 3 300 -5 0 3 300 4 6100 1 300 5 0 1 300 4 1000/advancedMove Clint false 4 6000 1 1500 4 4000 1 2000 1 0 0 -1 4 15000 1 2000 4 1000/advancedMove Emily false 4 17000 3 1750 4 4000 1 350 2 0 0 -2 1 0 1 250 4 250 3 5000/advancedMove Jas true 1 4500 4 5750/advancedMove Abigail true 1 8400 2 3650/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/animate Haley true true 150 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 33 33 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 24 24 31 30 30 30 30 30 30 30 33/playMusic fallFest/playerControl iceFishing"
+        "Alex_spouse": "",
+        "Harvey_spouse": "  ...$l",
+        "Elliott_spouse": "  $h",
+        "Willy": "$y ' @ ?_ !_!$h_ !_$h_  _!$h'",
+        "mainEvent_y2": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 69 36 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 37 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 0/faceDirection Elliott 1/faceDirection Willy 3/positionOffset Harvey 12 24/viewport 71 35 true/pause 2000/speak Lewis \" \"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \" \"/pause 600/speak Lewis \"?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Maru true 3 3000 4 300 0 -3 4 250 3 6400 2 300 0 3 2 300 3 4250/advancedMove Vincent true 2 6500 1 300 3 0 1 300 2 7400 3 300 -3 0 3 300 2 1000/advancedMove Penny true 4 5750 3 300 -5 0 3 300 4 6100 1 300 5 0 1 300 4 1000/advancedMove Clint false 4 6000 1 1500 4 4000 1 2000 1 0 0 -1 4 15000 1 2000 4 1000/advancedMove Emily false 4 17000 3 1750 4 4000 1 350 2 0 0 -2 1 0 1 250 4 250 3 5000/advancedMove Jas true 1 4500 4 5750/advancedMove Abigail true 1 8400 2 3650/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/animate Haley true true 150 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 33 33 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 24 24 31 30 30 30 30 30 30 30 33/playMusic fallFest/playerControl iceFishing"
       }
     },
     {
@@ -183,13 +183,13 @@
         "Language": "th-vnrevival"
       },
       "Entries": {
-        "afterIceFishing_y2": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 3/faceDirection Elliott 1/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"น่าประทับใจ จับปลาได้มากจริง ๆ!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*สำลัก*... ผมไม่มีวันชินกับกลิ่นเหม็นนั้น...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"และผู้ชนะการแข่งขันตกปลาน้ำแข็งปีนี้คือ...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"นี่คือรางวัลของคุณ! ขอให้สนุก\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"เอาละ เทศกาลน้ำแข็งปีนี้จบแล้ว ขอบคุณทุกคนที่มา!#$b#ทีนี้ปล่อยปลาน่าสงสารพวกนี้กัน...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -3 0 0 true/advancedMove Willy false 3 300 2 300 1 1000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"ไม่อยากเชื่อว่าฉันชนะ! เอาละ ได้เวลากลับบ้าน\"/waitForOtherPlayers festivalEnd/end",
-        "DickWin_y2": "pause 100/jump Willy/pause 800/move Willy -3 0 0/speak Lewis \"นี่คือรางวัลของคุณ วิลลี ขอให้สนุก\"/pause 500/move Willy 0 -1 0/move Lewis 1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"เอาละ เทศกาลน้ำแข็งปีนี้จบแล้ว ขอบคุณทุกคนที่มา!#$b#ทีนี้ปล่อยปลาน่าสงสารพวกนี้กัน...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -4 0 0 true/advancedMove Willy false 4 300 1 300 4 0 1 200 2 3000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"ฉันไม่ชนะการแข่งขัน แต่ก็สนุก! ได้เวลากลับบ้าน\"/waitForOtherPlayers festivalEnd/end",
-        "Leah_spouse_y2": "สักวันฉันควรสอนคุณแกะสลักน้ำแข็ง! คงสนุก!$h#$e#ฉันอยากรู้มากว่าคุณจะสร้างอะไร",
-        "Maru_spouse_y2": "คุณจะทำได้ดี ที่รัก! แค่สงบใจและมีสมาธิ",
-        "Emily_spouse_y2": "ทาด้า! นี่คือคุณ!#$e#อะไรนะ? มองไม่เห็นความเหมือนเหรอ? ฉันคิดว่าสมบูรณ์แบบ!",
-        "Shane_spouse_y2": "จำตอนเรานั่งริมบ่อน้ำเก่าแล้วแบ่งเบียร์กันได้ไหม? อยู่แถวนี้สักแห่ง#$e#เอาเถอะ อย่าหมกมุ่นกับอดีตดีกว่า... แม้ความทรงจำดีก็ทำให้ฉันเจ็บปวด",
-        "Willy_y2": "ใช่ วันนี้คนทั้งเมืองจะดูการแข่งขันเล็ก ๆ ของเรา มาแสดงฝีมือให้พวกเขาดูกัน"
+        "afterIceFishing_y2": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 3/faceDirection Elliott 1/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"  !$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"**... ...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"! \"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"  !#$b#...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -3 0 0 true/advancedMove Willy false 3 300 2 300 1 1000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"!  \"/waitForOtherPlayers festivalEnd/end",
+        "DickWin_y2": "pause 100/jump Willy/pause 800/move Willy -3 0 0/speak Lewis \"  \"/pause 500/move Willy 0 -1 0/move Lewis 1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"  !#$b#...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -4 0 0 true/advancedMove Willy false 4 300 1 300 4 0 1 200 2 3000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \" ! \"/waitForOtherPlayers festivalEnd/end",
+        "Leah_spouse_y2": "! !$h#$e#",
+        "Maru_spouse_y2": " ! ",
+        "Emily_spouse_y2": "! !#$e#? ? !",
+        "Shane_spouse_y2": "? #$e# ... ",
+        "Willy_y2": "    "
       }
     }
   ]

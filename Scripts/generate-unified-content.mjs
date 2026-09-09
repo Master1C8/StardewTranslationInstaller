@@ -117,6 +117,22 @@ const languages = [
       { target: "Fonts/ChineseTraditional_0", file: "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb" },
     ],
   },
+  {
+    directory: "thai",
+    suffix: "Thai",
+    code: "th-vnrevival",
+    buttonTarget: "ButtonThai",
+    button: "assets/button-thai.png",
+    title: "assets/title/TitleButtons-thai.png",
+    fonts: "assets/fonts/thai",
+    useLatinFont: false,
+    fontFile: "Fonts/Thai",
+    fontPixelZoom: 3,
+    bitmapFonts: [
+      { target: "Fonts/Thai", file: "assets/fonts/thai/Thai.xnb" },
+      { target: "Fonts/Thai_0", file: "assets/fonts/thai/Thai_0.xnb" },
+    ],
+  },
 ];
 
 const entries = {};

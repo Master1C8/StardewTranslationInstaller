@@ -2,25 +2,126 @@
   "id": "th-long-0173",
   "kind": "long",
   "records": [
-    {"target":"Strings/MovieReactions","key":"Penny_family_AfterMovie","source":"I should totally bring the kids to see this sometime!","translation":"คราวหน้าฉันต้องพาเด็ก ๆ มาดูเรื่องนี้ให้ได้!"},
-    {"target":"Strings/MovieReactions","key":"Penny_comedy_BeforeMovie","source":"I'm excited, I'm in the mood for a good laugh!","translation":"ตื่นเต้นจัง ฉันกำลังอยากหัวเราะให้เต็มที่เลย!"},
-    {"target":"Strings/MovieReactions","key":"Penny_comedy_DuringMovie","source":"Did they just...?! Hahahaha!","translation":"เมื่อกี้พวกเขา...?! ฮ่า ๆๆ ๆ!"},
-    {"target":"Strings/MovieReactions","key":"Penny_comedy_AfterMovie","source":"Whew, I've got a cramp from all that laughing...!","translation":"ฟู่ว์ หัวเราะมากจนเป็นตะคริวเลย...!"},
-    {"target":"Strings/MovieReactions","key":"Penny_horror_BeforeMovie","source":"I'm a little nervous... I don't usually watch scary movies.$s","translation":"ฉันประหม่านิดหน่อย... ปกติไม่ค่อยดูภาพยนตร์น่ากลัว$s"},
-    {"target":"Strings/MovieReactions","key":"Penny_horror_DuringMovie","source":"I can't look...$s","translation":"ฉันดูไม่ไหว...$s"},
-    {"target":"Strings/MovieReactions","key":"Penny_horror_AfterMovie","source":"I hope I don't have nightmares tonight!$s","translation":"หวังว่าคืนนี้จะไม่ฝันร้ายนะ!$s"},
-    {"target":"Strings/MovieReactions","key":"Penny_love_BeforeMovie","source":"Oooh, I've been dying to see this!","translation":"โอ้ ฉันอยากดูเรื่องนี้มานานแล้ว!"},
-    {"target":"Strings/MovieReactions","key":"Penny_love_AfterMovie","source":"Amazing! I hope they make another one!","translation":"ยอดเยี่ยม! หวังว่าจะสร้างภาคต่ออีกนะ!"},
-    {"target":"Strings/MovieReactions","key":"Penny_like_BeforeMovie","source":"Hey, I've heard some good things about this one!","translation":"นี่ ฉันได้ยินคำชมเรื่องนี้มาเยอะเลย!"},
-    {"target":"Strings/MovieReactions","key":"Penny_like_AfterMovie","source":"That was great! Thanks for seeing this with me!","translation":"ยอดเยี่ยมมาก! ขอบคุณที่มาดูด้วยกันนะ!"},
-    {"target":"Strings/MovieReactions","key":"Penny_dislike_BeforeMovie","source":"I can't say I would've picked this one myself, but I'll try to keep an open mind...","translation":"คงพูดไม่ได้ว่าฉันจะเลือกเรื่องนี้เอง แต่จะลองเปิดใจดู..."},
-    {"target":"Strings/MovieReactions","key":"Penny_dislike_DuringMovie","source":"...","translation":"...","reviewedPreserve":true},
-    {"target":"Strings/MovieReactions","key":"Penny_dislike_AfterMovie","source":"Sorry if I ruined the movie for you, it just wasn't really my favorite...","translation":"ขอโทษถ้าฉันทำให้คุณหมดสนุกนะ แค่เรื่องนี้ไม่ใช่แนวที่ชอบจริง ๆ..."},
-    {"target":"Strings/MovieReactions","key":"Penny_seen_love_BeforeMovie","source":"Ooh, '{0}'! I saw this one with {2}!","translation":"โอ้ '{0}'! ฉันเคยดูเรื่องนี้กับ {2}!"},
-    {"target":"Strings/MovieReactions","key":"Penny_seen_like_BeforeMovie","source":"I saw this with {2}, it was pretty good!","translation":"ฉันเคยดูเรื่องนี้กับ {2} สนุกดีนะ!"},
-    {"target":"Strings/MovieReactions","key":"Penny_seen_dislike_BeforeMovie","source":"Hmm, I think {2} took me to see this...","translation":"อืม จำได้ว่า {2} เคยพาฉันมาดูเรื่องนี้..."},
-    {"target":"Strings/MovieReactions","key":"Pam_*_BeforeMovie","source":"Hey, kid. Thanks for inviting me.","translation":"นี่ เจ้าหนู ขอบใจที่ชวนนะ"},
-    {"target":"Strings/MovieReactions","key":"Pam_*_AfterMovie","source":"Heh, that wasn't too bad!","translation":"ฮึ ก็ไม่เลวเท่าไร!"},
-    {"target":"Strings/MovieReactions","key":"Krobus_fall_movie_0_BeforeMovie","source":"Psst... Hey, it's me, Krobus. Could you recognize me?$8#$b#If anyone approaches us, you do the talking, okay?$8","translation":"ชู่ว์... นี่ ผมเอง โครบัส จำได้ไหม?$8#$b#ถ้ามีใครเข้ามาใกล้ คุณเป็นคนพูดนะ ตกลงไหม?$8"}
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_family_AfterMovie",
+      "source": "I should totally bring the kids to see this sometime!",
+      "translation": "คราวหน้าฉันต้องพาเด็ก ๆ มาดูเรื่องนี้ให้ได้!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_comedy_BeforeMovie",
+      "source": "I'm excited, I'm in the mood for a good laugh!",
+      "translation": "ตื่นเต้นจัง ฉันกำลังอยากหัวเราะให้เต็มที่เลย!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_comedy_DuringMovie",
+      "source": "Did they just...?! Hahahaha!",
+      "translation": "เมื่อกี้พวกเขา...?! ฮ่า ๆ ๆ ๆ!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_comedy_AfterMovie",
+      "source": "Whew, I've got a cramp from all that laughing...!",
+      "translation": "ฟู่ว์ หัวเราะมากจนเป็นตะคริวเลย...!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_horror_BeforeMovie",
+      "source": "I'm a little nervous... I don't usually watch scary movies.$s",
+      "translation": "ฉันประหม่านิดหน่อย... ปกติไม่ค่อยดูภาพยนตร์น่ากลัว$s"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_horror_DuringMovie",
+      "source": "I can't look...$s",
+      "translation": "ฉันดูไม่ไหว...$s"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_horror_AfterMovie",
+      "source": "I hope I don't have nightmares tonight!$s",
+      "translation": "หวังว่าคืนนี้จะไม่ฝันร้ายนะ!$s"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_love_BeforeMovie",
+      "source": "Oooh, I've been dying to see this!",
+      "translation": "โอ้ ฉันอยากดูเรื่องนี้มานานแล้ว!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_love_AfterMovie",
+      "source": "Amazing! I hope they make another one!",
+      "translation": "ยอดเยี่ยม! หวังว่าจะสร้างภาคต่ออีกนะ!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_like_BeforeMovie",
+      "source": "Hey, I've heard some good things about this one!",
+      "translation": "นี่ ฉันได้ยินคำชมเรื่องนี้มาเยอะเลย!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_like_AfterMovie",
+      "source": "That was great! Thanks for seeing this with me!",
+      "translation": "ยอดเยี่ยมมาก! ขอบคุณที่มาดูด้วยกันนะ!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_dislike_BeforeMovie",
+      "source": "I can't say I would've picked this one myself, but I'll try to keep an open mind...",
+      "translation": "ถ้าให้เลือกเอง ฉันคงไม่เลือกเรื่องนี้ แต่จะลองเปิดใจดู..."
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_dislike_DuringMovie",
+      "source": "...",
+      "translation": "...",
+      "reviewedPreserve": true
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_dislike_AfterMovie",
+      "source": "Sorry if I ruined the movie for you, it just wasn't really my favorite...",
+      "translation": "ขอโทษถ้าฉันทำให้คุณหมดสนุกนะ แค่เรื่องนี้ไม่ใช่แนวที่ชอบจริง ๆ..."
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_seen_love_BeforeMovie",
+      "source": "Ooh, '{0}'! I saw this one with {2}!",
+      "translation": "โอ้ '{0}'! ฉันเคยดูเรื่องนี้กับ {2}!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_seen_like_BeforeMovie",
+      "source": "I saw this with {2}, it was pretty good!",
+      "translation": "ฉันเคยดูเรื่องนี้กับ {2} สนุกดีนะ!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Penny_seen_dislike_BeforeMovie",
+      "source": "Hmm, I think {2} took me to see this...",
+      "translation": "อืม จำได้ว่า {2} เคยพาฉันมาดูเรื่องนี้..."
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Pam_*_BeforeMovie",
+      "source": "Hey, kid. Thanks for inviting me.",
+      "translation": "นี่ เจ้าหนู ขอบใจที่ชวนนะ"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Pam_*_AfterMovie",
+      "source": "Heh, that wasn't too bad!",
+      "translation": "ฮึ ก็ไม่เลวเท่าไร!"
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Krobus_fall_movie_0_BeforeMovie",
+      "source": "Psst... Hey, it's me, Krobus. Could you recognize me?$8#$b#If anyone approaches us, you do the talking, okay?$8",
+      "translation": "ชู่ว์... นี่ ผมเอง โครบัส ดูออกไหมว่าเป็นผม?$8#$b#ถ้ามีใครเข้ามาใกล้ คุณเป็นคนพูดนะ ตกลงไหม?$8"
+    }
   ]
 }

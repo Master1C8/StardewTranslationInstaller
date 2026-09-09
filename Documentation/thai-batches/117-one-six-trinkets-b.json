@@ -2,25 +2,125 @@
   "id": "th-long-0117",
   "kind": "long",
   "records": [
-    {"target":"Strings/1_6_Strings","key":"ParrotEgg_Name","source":"Parrot Egg","translation":"ไข่นกแก้ว"},
-    {"target":"Strings/1_6_Strings","key":"ParrotEgg_Description","source":"Summons a level {0} parrot companion, who grants you a {1} chance to find gold coins when slaying monsters.","translation":"เรียกนกแก้วเพื่อนร่วมทางระดับ {0} ซึ่งมอบโอกาส {1} ที่จะพบเหรียญทองเมื่อสังหารสัตว์ประหลาด"},
-    {"target":"Strings/1_6_Strings","key":"IceRod_Name","source":"Ice Rod","translation":"คทาน้ำแข็ง"},
-    {"target":"Strings/1_6_Strings","key":"IceRod_Description","source":"Shoots an orb of ice every {0} seconds, freezing any enemies in its path for {1} seconds.","translation":"ยิงลูกแก้วน้ำแข็งทุก {0} วินาที แช่แข็งศัตรูที่ขวางทางเป็นเวลา {1} วินาที"},
-    {"target":"Strings/1_6_Strings","key":"IridiumSpur_Name","source":"Golden Spur","translation":"เดือยทองคำ"},
-    {"target":"Strings/1_6_Strings","key":"IridiumSpur_Description","source":"Critical strikes give you a speed boost for {0} seconds.","translation":"การโจมตีคริติคอลเพิ่มความเร็วให้คุณเป็นเวลา {0} วินาที"},
-    {"target":"Strings/1_6_Strings","key":"BasiliskPaw_Name","source":"Basilisk Paw","translation":"อุ้งเท้าบาซิลิสก์"},
-    {"target":"Strings/1_6_Strings","key":"BasiliskPaw_Description","source":"You are immune to debuffs.","translation":"คุณมีภูมิคุ้มกันต่อสถานะลดความสามารถ"},
-    {"target":"Strings/1_6_Strings","key":"PerfectIceRod","source":"Perfect Ice Rod","translation":"คทาน้ำแข็งสมบูรณ์แบบ"},
-    {"target":"Strings/1_6_Strings","key":"RapidMagicQuiver","source":"Rapid Magic Quiver","translation":"กระบอกธนูวิเศษรวดเร็ว"},
-    {"target":"Strings/1_6_Strings","key":"HeavyMagicQuiver","source":"Heavy Magic Quiver","translation":"กระบอกธนูวิเศษหนัก"},
-    {"target":"Strings/1_6_Strings","key":"PerfectMagicQuiver","source":"Perfect Magic Quiver","translation":"กระบอกธนูวิเศษสมบูรณ์แบบ"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_0","source":"Green Frog Egg","translation":"ไข่กบสีเขียว"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_1","source":"Brown Frog Egg","translation":"ไข่กบสีน้ำตาล"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_2","source":"Blue-Green Frog Egg","translation":"ไข่กบสีเขียวอมฟ้า"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_3","source":"Blue Frog Egg","translation":"ไข่กบสีน้ำเงิน"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_4","source":"Red Frog Egg","translation":"ไข่กบสีแดง"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_5","source":"Yellow Frog Egg","translation":"ไข่กบสีเหลือง"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_6","source":"Void Frog Egg","translation":"ไข่กบวอยด์"},
-    {"target":"Strings/1_6_Strings","key":"frog_variant_7","source":"Prismatic Frog Egg","translation":"ไข่กบปริซึม"}
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "ParrotEgg_Name",
+      "source": "Parrot Egg",
+      "translation": "ไข่นกแก้ว"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "ParrotEgg_Description",
+      "source": "Summons a level {0} parrot companion, who grants you a {1} chance to find gold coins when slaying monsters.",
+      "translation": "เรียกนกแก้วเพื่อนร่วมทางระดับ {0} ซึ่งทำให้คุณมีโอกาส {1} ที่จะพบเหรียญทองเมื่อกำจัดมอนสเตอร์"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "IceRod_Name",
+      "source": "Ice Rod",
+      "translation": "คทาน้ำแข็ง"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "IceRod_Description",
+      "source": "Shoots an orb of ice every {0} seconds, freezing any enemies in its path for {1} seconds.",
+      "translation": "ยิงลูกแก้วน้ำแข็งออกไปทุก {0} วินาที แช่แข็งศัตรูทุกตัวที่อยู่ในเส้นทางเป็นเวลา {1} วินาที"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "IridiumSpur_Name",
+      "source": "Golden Spur",
+      "translation": "เดือยทองคำ"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "IridiumSpur_Description",
+      "source": "Critical strikes give you a speed boost for {0} seconds.",
+      "translation": "การโจมตีคริติคอลจะมอบสถานะเพิ่มความเร็วให้คุณเป็นเวลา {0} วินาที"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "BasiliskPaw_Name",
+      "source": "Basilisk Paw",
+      "translation": "อุ้งเท้าบาซิลิสก์"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "BasiliskPaw_Description",
+      "source": "You are immune to debuffs.",
+      "translation": "คุณมีภูมิคุ้มกันต่อดีบัฟ"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "PerfectIceRod",
+      "source": "Perfect Ice Rod",
+      "translation": "คทาน้ำแข็งไร้ที่ติ"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "RapidMagicQuiver",
+      "source": "Rapid Magic Quiver",
+      "translation": "กระบอกลูกธนูวิเศษฉับไว"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "HeavyMagicQuiver",
+      "source": "Heavy Magic Quiver",
+      "translation": "กระบอกลูกธนูวิเศษหนัก"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "PerfectMagicQuiver",
+      "source": "Perfect Magic Quiver",
+      "translation": "กระบอกลูกธนูวิเศษไร้ที่ติ"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_0",
+      "source": "Green Frog Egg",
+      "translation": "ไข่กบสีเขียว"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_1",
+      "source": "Brown Frog Egg",
+      "translation": "ไข่กบสีน้ำตาล"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_2",
+      "source": "Blue-Green Frog Egg",
+      "translation": "ไข่กบสีเขียวอมฟ้า"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_3",
+      "source": "Blue Frog Egg",
+      "translation": "ไข่กบสีน้ำเงิน"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_4",
+      "source": "Red Frog Egg",
+      "translation": "ไข่กบสีแดง"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_5",
+      "source": "Yellow Frog Egg",
+      "translation": "ไข่กบสีเหลือง"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_6",
+      "source": "Void Frog Egg",
+      "translation": "ไข่กบวอยด์"
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "frog_variant_7",
+      "source": "Prismatic Frog Egg",
+      "translation": "ไข่กบปริซึม"
+    }
   ]
 }

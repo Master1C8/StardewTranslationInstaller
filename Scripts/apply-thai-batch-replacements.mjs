@@ -23,7 +23,41 @@ if (!Array.isArray(replacements) || replacements.length === 0) {
   throw new Error(`Replacement file must contain a non-empty array: ${replacementsFile}`);
 }
 
-for (const entry of replacements) {
+const batchName = path.basename(batchPath);
+const applicableReplacements = replacements.filter(
+  (entry) => entry.batch === undefined || entry.batch === batchName,
+);
+if (applicableReplacements.length === 0) {
+  throw new Error(`Replacement file has no entries for batch: ${batchName}`);
+}
+
+let applied = 0;
+let alreadyApplied = 0;
+
+function isSuperseded(entry, index, translation) {
+  let chainedValue = entry.to;
+  for (let laterIndex = index + 1; laterIndex < applicableReplacements.length; laterIndex += 1) {
+    const later = applicableReplacements[laterIndex];
+    if (later.target !== entry.target || later.key !== entry.key || later.from !== chainedValue) continue;
+    chainedValue = later.to;
+    if (translation === chainedValue) return true;
+  }
+  return false;
+}
+
+function occurrenceIndexes(value, needle) {
+  const indexes = [];
+  let offset = 0;
+  while (offset <= value.length - needle.length) {
+    const index = value.indexOf(needle, offset);
+    if (index === -1) break;
+    indexes.push(index);
+    offset = index + needle.length;
+  }
+  return indexes;
+}
+
+for (const [index, entry] of applicableReplacements.entries()) {
   const { target, key, from, to } = entry;
   if (![target, key, from, to].every((value) => typeof value === "string")) {
     throw new Error("Each replacement needs string target, key, from, and to fields");
@@ -38,14 +72,40 @@ for (const entry of replacements) {
   }
 
   const record = matches[0];
-  const occurrences = record.translation.split(from).length - 1;
-  if (occurrences !== 1) {
+  const fromIndexes = occurrenceIndexes(record.translation, from);
+  const toIndexes = occurrenceIndexes(record.translation, to);
+  const uncoveredFromIndexes = fromIndexes.filter(
+    (fromIndex) =>
+      !toIndexes.some(
+        (toIndex) => fromIndex >= toIndex && fromIndex + from.length <= toIndex + to.length,
+      ),
+  );
+  if (isSuperseded(entry, index, record.translation)) {
+    alreadyApplied += 1;
+    continue;
+  }
+  if (uncoveredFromIndexes.length === 0 && toIndexes.length === 1) {
+    alreadyApplied += 1;
+    continue;
+  }
+  if (uncoveredFromIndexes.length === 1) {
+    const fromIndex = uncoveredFromIndexes[0];
+    record.translation = `${record.translation.slice(0, fromIndex)}${to}${record.translation.slice(fromIndex + from.length)}`;
+    applied += 1;
+    continue;
+  }
+  {
     throw new Error(
-      `Expected one exact translation occurrence for ${target} :: ${key}, found ${occurrences}: ${from}`,
+      `Expected one exact source or final translation occurrence for ${target} :: ${key}, found from=${fromIndexes.length}, uncoveredFrom=${uncoveredFromIndexes.length}, to=${toIndexes.length}: ${from}`,
     );
   }
-  record.translation = record.translation.replace(from, to);
 }
 
 fs.writeFileSync(batchPath, `${JSON.stringify(batch, null, 2)}\n`);
-console.log(`Applied ${replacements.length} Thai batch replacements to ${batchFile}.`);
+console.log(JSON.stringify({
+  batch: batchFile,
+  replacements: applicableReplacements.length,
+  manifestReplacements: replacements.length,
+  applied,
+  alreadyApplied,
+}, null, 2));

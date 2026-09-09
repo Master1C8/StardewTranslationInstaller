@@ -12,8 +12,8 @@ temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-th-cluster-fonts.XXXXXX)
 trap '/bin/rm -rf "$temp_root"' EXIT
 
 /bin/mkdir -p "$temp_root/base-packed" "$temp_root/base-unpacked" "$temp_root/generated" "$temp_root/packed" "$temp_root/verify"
-/bin/cp "$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/tamil/SpriteFont1.xnb" "$temp_root/base-packed/SpriteFont1.xnb"
-/bin/cp "$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/tamil/SmallFont.xnb" "$temp_root/base-packed/SmallFont.xnb"
+/bin/cp "$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/russian/SpriteFont1.xnb" "$temp_root/base-packed/SpriteFont1.xnb"
+/bin/cp "$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/russian/SmallFont.xnb" "$temp_root/base-packed/SmallFont.xnb"
 "$xnbcli" unpack "$temp_root/base-packed" "$temp_root/base-unpacked"
 
 SWIFT_MODULECACHE_PATH=/private/tmp/stardew-swift-module-cache \

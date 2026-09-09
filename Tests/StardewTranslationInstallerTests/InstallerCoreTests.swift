@@ -79,7 +79,7 @@ struct InstallerCoreTests {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "hi-vnrevival", "zh-TW-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "pl-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "hi-vnrevival", "zh-TW-vnrevival"])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales == [
             "zh", "en", "ru", "es", "pt-BR", "ja", "de", "ko", "fr", "tr", "pl", "zh-TW",
@@ -104,7 +104,7 @@ struct InstallerCoreTests {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 9)
+        expect(languageEntries.count == 10)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "pl-vnrevival": ("ButtonPolish", "assets/button.png", "assets/title/TitleButtons.png"),
@@ -113,6 +113,7 @@ struct InstallerCoreTests {
             "fa-vnrevival": ("ButtonPersian", "assets/button-persian.png", "assets/title/TitleButtons-persian.png"),
             "ar-vnrevival": ("ButtonArabic", "assets/button-arabic.png", "assets/title/TitleButtons-arabic.png"),
             "id-vnrevival": ("ButtonIndonesian", "assets/button-indonesian.png", "assets/title/TitleButtons-indonesian.png"),
+            "fil-vnrevival": ("ButtonFilipino", "assets/button-filipino.png", "assets/title/TitleButtons-filipino.png"),
             "hi-vnrevival": ("ButtonHindi", "assets/button-hindi.png", "assets/title/TitleButtons-hindi.png"),
             "zh-TW-vnrevival": ("ButtonTraditionalChinese", "assets/button-traditional-chinese.png", "assets/title/TitleButtons-traditional-chinese.png"),
         ]
@@ -160,6 +161,7 @@ struct InstallerCoreTests {
             ("ru-vnrevival", "russian"),
             ("pl-vnrevival", "polish"),
             ("vi-vnrevival", "vietnamese"),
+            ("fil-vnrevival", "filipino"),
             ("fa-vnrevival", "persian"),
             ("ar-vnrevival", "arabic"),
             ("hi-vnrevival", "hindi"),
@@ -311,6 +313,30 @@ struct InstallerCoreTests {
                 == "03997fa4db85d3e0638a7db5210cf8020bd7aacd658cf00d1ba2112a9c62722a"
         )
 
+        let filipinoButtonPath = "assets/button-filipino.png"
+        try expect(try pngDimensions(filipinoButtonPath) == (174, 78))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(filipinoButtonPath))
+                == "d134b7337d24394bed1ec515586d29d9c5553b71addb8601369ac49393db4c8b"
+        )
+        let filipinoTitlePath = "assets/title/TitleButtons-filipino.png"
+        try expect(try pngDimensions(filipinoTitlePath) == (400, 655))
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent(filipinoTitlePath))
+                == "d6e4b47e0ccf257c655f8c52f4c1ad5205231957ad19a701ea70da33419c1007"
+        )
+
+        let filipinoFontHashes = [
+            "assets/fonts/filipino/SpriteFont1.xnb": "6c22d21660baa07c2a86f99da9c3f70019a77b68c0640a111096bfaf21195f6d",
+            "assets/fonts/filipino/SmallFont.xnb": "d5ab8bcd224288b7401ece73ba9af6ccfb2306012e39d0d92175fd527e3b5d82",
+        ]
+        for (fontPath, expectedHash) in filipinoFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
         try expect(try pngDimensions("assets/button-persian.png") == (174, 78))
         try expect(try pngDimensions("assets/title/TitleButtons-persian.png") == (400, 655))
         try expect(
@@ -419,7 +445,7 @@ struct InstallerCoreTests {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 2_100)
+        expect(includes.count == 2_252)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var hindiPrivateUseGlyphs = 0
@@ -450,6 +476,8 @@ struct InstallerCoreTests {
                 expectedLanguage = "ar-vnrevival"
             } else if relativePath.contains("/indonesian/") {
                 expectedLanguage = "id-vnrevival"
+            } else if relativePath.contains("/filipino/") {
+                expectedLanguage = "fil-vnrevival"
             } else if relativePath.contains("/hindi/") {
                 expectedLanguage = "hi-vnrevival"
             } else if relativePath.contains("/traditional-chinese/") {

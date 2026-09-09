@@ -1,0 +1,196 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "name": "Pista ng Yelo",
+        "mainEvent": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"Sige, kayong lahat. Simulan na natin ang paligsahan sa pangingisda sa yelo ngayong taon.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Mga kalahok, layunin ninyong makahuli ng pinakamaraming isda sa loob ng dalawang minuto gamit ang mga ibinigay na pamingwit.#$b#Kailangan ninyong hulihin ang mga isda rito, mula sa mga butas na ito sa yelo.\"/pause 600/speak Lewis \"Handa na ba ang lahat?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Magsimula!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+        "afterIceFishing": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Wow, napakaraming isda niyan!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*naduwal*... ang amoy...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"Ngayon, para sa nagwagi sa paligsahan sa pangingisda sa yelo ngayong taon...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Narito ang premyo mo! Sana magustuhan mo.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Iyon na ang Pista ng Yelo ngayong taon. Salamat sa pagpunta ninyong lahat! #$b#Ngayon, pakawalan natin ang mga kawawang isdang ito...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"Hindi ako makapaniwalang nanalo ako! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end",
+        "OtherPlayerWin": "message \"Hindi ako nanalo sa paligsahan, pero masaya pa rin! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end",
+        "DickWin": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"Narito ang premyo mo, Willy. Sana magustuhan mo.\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Iyon na ang Pista ng Yelo ngayong taon. Salamat sa pagpunta ninyong lahat!#$b#Ngayon, pakawalan natin ang mga kawawang isdang ito...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"Hindi ako nanalo sa paligsahan, pero masaya pa rin! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end",
+        "Abigail_spouse": "Hoy, mahal... tingnan mo, ikaw iyan!$h",
+        "Penny_spouse": "Sasali ka ba sa paligsahan sa pangingisda ngayong taon, @? Talagang determinado si Nanay na manalo.",
+        "Haley_spouse": "Brr... Naninigas sa lamig ang mga kamay ko sa paggawa ng taong-niyebe na ito.$l",
+        "Sebastian_spouse": "Huwag kang mag-alala sa akin, hindi ako kailanman nilalamig...",
+        "Sam_spouse": "Hindi ka ba nilalamig? Tiyak ka bang ayaw mong hiramin ang dyaket ko?"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Abigail": "Ano sa tingin mo sa halimaw-niyebe ko?",
+        "Robin": "Paumanhin, pero kailangan kong ituon ang buong pansin ko sa pag-ukit ng mga muog na yelo!",
+        "Demetrius": "Alam mo? Dapat pala nagsuot ako ng dyaket.",
+        "Maru": "Hindi ako gaanong malikhain pagdating sa mga taong-niyebe.$s",
+        "Sebastian": "Nilalamig? Hindi, hindi ako kailanman nilalamig.",
+        "Pierre": "Napakalamig ng niyebeng ito at hindi ko na maramdaman ang mga daliri ko...$s",
+        "Shane": "Kung ako ang masusunod, malamang na magdaraos ako ng pista ng pizza sa Saloon sa halip...",
+        "Caroline": "Kumusta ang taglamig mo, @?$h",
+        "Linus": "Isang sining ang paggawa ng igloo na natutuhan ko sa mga naninirahan sa tundra sa kabila ng nagyeyelong dagat.#$e#Napakatagal na niyon.$h#$e#Magandang tahanan ang igloo, pero mas madali pa ring manatili sa tolda ko buong taon.",
+        "Alex": "Ayos lang ang mga taong-niyebe, siguro. Pero higit sa lahat, inaasam ko ang tagsibol."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "George": "Hmph... Kinaladkad ako ni Misis sa lamig para rito?",
+        "Evelyn": "Nasabi ko na ba sa iyo kung paano kami unang nagkakilala ni George? Binato niya talaga ako ng niyebeng binilog sa pista ring ito.#$e#Maginoo siya noon at lumapit para tingnan kung ayos lang ako.$h",
+        "Lewis": "Maligayang pagdating sa Pista ng Yelo!#$e#Ang tampok ng pista ngayon ay ang paligsahan sa pangingisda sa yelo. Inihanda namin ang 'nagyeyelong lawa' na ito at pinunô ng mga isda.#$b#Sabihin mo lang kapag handa ka nang makipagpaligsahan.",
+        "Clint": "Sinimulan akong tulungan ni Emily nang hindi ko hinihingi... may ibig sabihin kaya iyon? *lunok*$4",
+        "Emily": "Wow, kailangan ng bagong ayos ang taong-niyebeng ito. Sino ang gumawa nito?$s",
+        "Penny": "$y 'Hmm... Anong uri ng taong-niyebe ang gagawin natin?_Karaniwan. Ilong na karot, sombrerong silindro, at bandana._Mukhang pinakamabuti ngang manatili sa nakasanayan, hindi ba?$h_Isang kakaiba. Mga antenang yelong tulis at matang bunga ng pino._Sige! Mukhang masaya iyon.$h_Nakakabagot ang mga taong-niyebe. Mag-isip nang kakaiba!_Um, sige... Sa tingin ko, mas gusto ko ang mas nakasanayan.'",
+        "Pam": "Balak kong manalo sa paligsahan sa pangingisda sa yelo!#$e#Pero mahirap talunin si Willy... Araw-gabi niyang ginagawa ang ganitong bagay.$s",
+        "Haley": "Mukhang hindi naman ganap na masama ang taglamig... masayang maglaro sa niyebe!",
+        "Jodi": "Napakaganda ng gubat sa taglamig, hindi ba?"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Kent": "Gusto ko ang taglamig. Payapa ito.",
+        "Sam": "Hoy, @. Sasali ka ba sa paligsahan sa pangingisda sa yelo?#$e#Oh, ako, hindi. Hindi ako marunong mangisda.",
+        "Leah": "Oh, yelo. Napakagandang materyal na lililukin, pero hindi ito nagtatagal.#$e#Pero baka lalo nitong pinahuhusay ang sining.",
+        "Marnie": "Naaawa ako sa lahat ng kawawa at nilalamig na hayop sa labas.$s",
+        "Elliott": "Sasali ako sa paligsahan sa pangingisda sa yelo ngayon. Bakit hindi?#$e#Pero bihirang matalo si Willy.",
+        "Gus": "Pasensiya na at walang pagkain.#$e#Hintayin mo lang ang Piging ng Bituin ng Taglamig. Ilang araw kang mabubusog.",
+        "Wizard": "Palihim kang pumunta para dalawin ang kakaiba kong tore? Kakaiba ka para sa isang ordinaryong tao.",
+        "Harvey": "Maaaring labis na pahirapan ng matinding temperatura ang katawan mo, kaya tiyaking magsuot ng makapal na damit!#$e#Oh, at magsaya ka sa pista!$h",
+        "Sandy": "Narinig kong umuulan sa inyo. Iyon ba ang dahilan kung bakit ka pumunta rito?$h#$e#Sa totoo lang, medyo hinahanap-hanap ko rin ang ulan...$s"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Jas": "Gusto kong bigyan siya ng ilong na karot!$h",
+        "Vincent": "May nakita akong malaking isda roon sa ilalim!",
+        "Marlon": "Hoy, magandang hapon.",
+        "Leo": "Magagawa mong doblehin ang init ng isang igloo kung pupunuin mo ng mga balahibo ang mga dingding!",
+        "Abigail_spouse_y2": "Isipin mo kung magkasama tayong nakatira sa isang igloo!$h#$e#Magiging masaya, pero masaya akong tumira kahit saan kasama ka.$l",
+        "Penny_spouse_y2": "Pag-uwi natin, magsindi tayo ng apoy at uminom ng mainit na tsokolate.$0#$e#...na may mga marshmallow?$h",
+        "Haley_spouse_y2": "Halika, ayusin ko ang buhok mo... Kukuhanan kita ng larawan habang kumikilos sa paligsahan!",
+        "Sebastian_spouse_y2": "Hoy, kailangan mo talagang manalo sa paligsahan ngayon.$0#$e#Uh... kasi, may maliit akong pustahan kay Marlon...$1",
+        "Sam_spouse_y2": "Turuan mo ako minsan kung paano gumamit ng pamingwit. Sa tingin ko, magiging mahusay ako roon.",
+        "Alex_spouse_y2": "Hoy! Alam kong mananalo ka nang may malaking lamang ngayon. Bigyan mo kami ng maipagmamalaki!"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Harvey_spouse_y2": "Kumusta, mahal. Sana palarin ka sa paligsahan sa pangingisda sa yelo ngayon.$0",
+        "Elliott_spouse_y2": "Sinasanay ko ang pamamaraan ko sa pangingisda. Hindi kita pagbibigyan, mahal ko.$1",
+        "Abigail_y2": "Nakapaghagis ka na ba ng maraming maliliit na bato sa isang nagyeyelong lawa? Napakaganda ng tunog niyon.#$e#...Huwag mong sabihin kay Tatay, pero suot ko ang suweter ng Bituin ng Taglamig sa ilalim ng amerikana ko.",
+        "Robin_y2": "Isang kasiya-siyang hamon sa akin ang paglililok ng yelo. Kakaiba itong materyal na hindi ko nakasanayan!",
+        "Demetrius_y2": "Yelong mula sa tubig... tunay ngang napakalalim na sangkap. Kailangan sa buhay, kaya angkop itong materyal para sa estatuwang kumakatawan sa anyong buhay.",
+        "Maru_y2": "Nagsisimula ang paggawa ng mahusay na taong-niyebe sa pagtiyak na pantay ang pundasyon at pag-iwas sa labis na bigat sa itaas na bahagi.$3",
+        "Shane_y2": "Talagang mahirap ang taglamig para sa mga hayop. Naglagay ka ba ng mga pampainit sa mga Kulungan at Kamalig mo?",
+        "Sebastian_y2": "Napansin mo na ba kung gaano katahimik kapag may niyebe?",
+        "Pierre_y2": "Magkakatugma ang mga suweter ng Bituin ng Taglamig ng pamilya namin.#$e#Kung isusuot lang sana ni Abigail ang kaniya...$2",
+        "Caroline_y2": "Kumusta, @. Nakakahanap ka ba ng oras para magpahinga mula sa mga tungkulin mo sa bukid ngayong taglamig?$0"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Linus_y2": "Ahh... Nagsimula na ang mahabang pagtulog ng gubat ngayong taglamig...$1",
+        "Alex_y2": "May tututol kaya kung lumangoy ako sa nagyeyelong lawa pagkatapos ng pista?#$e#Narinig kong mabuti sa mga kalamnan ang paliligo sa yelo.",
+        "George_y2": "Kapag matanda at kalbo ka nang tulad ko, kailangan mo ng magandang mainit na sombrero.",
+        "Evelyn_y2": "Hindi mo masasabi... baka ito na ang huling pagkakataong gagawa ako ng taong-niyebe kasama si Alex.#$e#Maikli ang buhay, mahal. Tiyaking pahalagahan ang bawat sandali.",
+        "Lewis_y2": "Kumusta, @. Panahon na muli para sa Pista ng Yelo.#$b#Kausapin mo ako kapag handa ka nang simulan ang paligsahan!$1",
+        "Clint_y2": "Ayaw mabilog ng mga bunton ng niyebeng ito...$0#$e#Sa tingin ko, mas mahusay akong magtrabaho sa init kaysa sa lamig.$2",
+        "Emily_y2": "Kailangang magmukhang tunay na taong-niyebe ang isang taong-niyebe! Hindi ba makisig ang sombrerong silindro at bandana?",
+        "Penny_y2": "Masyado akong kinakabahang maglakad sa nagyeyelong lawa...#$e#Minsan akong nagbasa ng aklat kung saan lumusot sa yelo ang isang babae.#$b#Ayos lang siya! Pero... naging maingat na ako mula noon.",
+        "Pam_y2": "$y 'Natalo ako noong nakaraang taon dahil pumili ako ng masamang puwesto. Malakas ang pakiramdam kong mag-iiba ang mga bagay ngayon._Sa tingin ko, hindi mahalaga ang puwesto._Hah. Sabi mo lang iyan! Patutunayan kong mali ka._Tatalunin pa rin kita._...$4_Sana palarin ka._Ikaw rin, bata.'",
+        "Haley_y2": "Mabuti na lang at nagsuot ako ng pantakip sa tainga, napakaginaw dito!$0#$e#Dinala ko ang kamera ko ngayong taon. Perpekto ang liwanag para sa pagkuha ng mga larawan sa taglamig!"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Jodi_y2": "Magandang paraan ang mga pagtitipong tulad nito para patatagin ang ugnayan natin sa mga kapitbahay.#$e#Maganda kung paanong tila pinaglalapit ng malamig na panahon ang mga tao.",
+        "Kent_y2": "Handa ka na ba sa paligsahan? Naniniwala kaming lahat na mananalo ka.",
+        "Sam_y2": "Hoy, bakit ka tumatawa? Hindi pa nga siya tapos!#$e#Hintayin mo lang... kapag tapos na kami, magiging napakagandang taong-niyebe siya.",
+        "Leah_y2": "Kailangan mong iayon muna ang temperatura ng yelo bago ito putulin, kung hindi ay hindi mo ito mahuhubog!",
+        "Marnie_y2": "Aww... Napakagiliw ng biik na iyan habang nakabalot nang husto!$1",
+        "Elliott_y2": "Tingnan mo, ito ang lihim kong sandata... isang prasko ng mainam na alak para basain ang mga labi ko bago tumunog ang sipol...",
+        "Gus_y2": "Napakatagal kong nakakulong sa loob at nanonood ng Gridball... mabuting lumabas sa preskong hangin ng taglamig.",
+        "Wizard_y2": "Hmm? Paano ka nakarating dito?#$e#Huwag mo akong pansinin. Nagmamasid lamang ako...",
+        "Harvey_y2": "Hindi ko sana nilagyan ng pagkit ang bigote ko kaninang umaga, nanigas ito sa yelo! Naku...$2#$e#Kung kailangan mo ng pantibag ng yelo, alam mo kung saan ako matatagpuan...$h",
+        "Jas_y2": "Hindi ba nilalamig ang mga isda sa ilalim niyan?$3"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Vincent_y2": "Tinutulungan ako ni Kuya na gumawa ng taong-niyebe!$0",
+        "Marlon_y2": "Hindi naman ganoon kasama ang panahong ito. Walang mga kulisap sa taglamig...#$e#Sa tingin mo, matatalo mo si Willy ngayong taon? Mahusay siyang kalaban...",
+        "Leo_y2": "*langutngot* *langutngot* Nakakatawa ang tunog ng niyebe kapag inaapakan!$1"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "Alex_spouse": "Susuportahan kita sa paligsahan sa pangingisda.",
+        "Harvey_spouse": "Pinapangarap ko ang mainit nating apoy sa bahay...$l",
+        "Elliott_spouse": "Alam kong matatalo mo ako sa paligsahan sa pangingisda, pero ayos lang. Narito lang ako para magsaya.$h",
+        "Willy": "$y 'Hoy, @. Handa ka na bang mangisda sa yelo?_Oo. Gagawin ko ang lahat!_Iyan ang gusto ko!$h_Oo, at tatalunin kita!_Tingnan natin.$h_Sa totoo lang, hindi. Hindi ako mahusay mangisda._Kung gayon, isipin mo na lang na magandang pagsasanay ito!$h'",
+        "mainEvent_y2": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 69 36 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 37 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 0/faceDirection Elliott 1/faceDirection Willy 3/positionOffset Harvey 12 24/viewport 71 35 true/pause 2000/speak Lewis \"Sige, kayong lahat. Simulan na natin ang paligsahan sa pangingisda sa yelo ngayong taon.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Mga kalahok, gamit ang mga ibinigay na pamingwit, kailangan ninyong makahuli ng pinakamaraming isda mula sa mga butas na ito sa yelo.\"/pause 600/speak Lewis \"Handa na ba kayong lahat?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Magsimula!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Maru true 3 3000 4 300 0 -3 4 250 3 6400 2 300 0 3 2 300 3 4250/advancedMove Vincent true 2 6500 1 300 3 0 1 300 2 7400 3 300 -3 0 3 300 2 1000/advancedMove Penny true 4 5750 3 300 -5 0 3 300 4 6100 1 300 5 0 1 300 4 1000/advancedMove Clint false 4 6000 1 1500 4 4000 1 2000 1 0 0 -1 4 15000 1 2000 4 1000/advancedMove Emily false 4 17000 3 1750 4 4000 1 350 2 0 0 -2 1 0 1 250 4 250 3 5000/advancedMove Jas true 1 4500 4 5750/advancedMove Abigail true 1 8400 2 3650/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/animate Haley true true 150 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 33 33 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 24 24 31 30 30 30 30 30 30 30 33/playMusic fallFest/playerControl iceFishing"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "Language": "fil-vnrevival"
+      },
+      "Entries": {
+        "afterIceFishing_y2": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 3/faceDirection Elliott 1/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Kahanga-hanga, napakarami ninyong nahuling isda!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*naduwal*... Hindi ako kailanman masasanay sa bahong iyon...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"Ngayon, para sa nagwagi sa paligsahan sa pangingisda sa yelo ngayong taon...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Narito ang premyo mo! Sana magustuhan mo.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Iyon na ang Pista ng Yelo ngayong taon. Salamat sa pagpunta ninyong lahat!#$b#Ngayon, pakawalan natin ang mga kawawang isdang ito...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -3 0 0 true/advancedMove Willy false 3 300 2 300 1 1000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"Hindi ako makapaniwalang nanalo ako! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end",
+        "DickWin_y2": "pause 100/jump Willy/pause 800/move Willy -3 0 0/speak Lewis \"Narito ang premyo mo, Willy. Sana magustuhan mo.\"/pause 500/move Willy 0 -1 0/move Lewis 1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Iyon na ang Pista ng Yelo ngayong taon. Salamat sa pagpunta ninyong lahat!#$b#Ngayon, pakawalan natin ang mga kawawang isdang ito...$s\"/pause 500/faceDirection Lewis 3 true/pause 250/move Lewis -4 0 0 true/advancedMove Willy false 4 300 1 300 4 0 1 200 2 3000/advancedMove Pam false 4 100 3 150 -4 0 3 200 4 2000/advancedMove Elliott false 1 500 2 200 0 2 1 0 1 1000/pause 1000/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"Hindi ako nanalo sa paligsahan, pero masaya pa rin! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end",
+        "Leah_spouse_y2": "Balang araw, dapat kitang turuang maglilok gamit ang yelo! Magiging masaya iyon!$h#$e#Sabik akong makita kung ano ang maiisip mong gawin.",
+        "Maru_spouse_y2": "Magiging mahusay ka roon, mahal! Kumalma ka lang at magpokus.",
+        "Emily_spouse_y2": "Ta-da! Ikaw iyan!#$e#Ano? Hindi mo nakikita ang pagkakahawig? Sa tingin ko, perpekto ito!",
+        "Shane_spouse_y2": "Naaalala mo noong umupo tayo sa lumang lawa at nagsalo ng serbesa? Dito iyon sa paligid.#$e#Pero pinakamabuting huwag palaging balikan ang nakaraan... kahit ang magagandang alaala ay nagpapasakit sa akin.",
+        "Willy_y2": "Aye, manonood ang buong bayan sa munting paligsahan natin ngayon. Bigyan natin sila ng magandang palabas."
+      }
+    }
+  ]
+}

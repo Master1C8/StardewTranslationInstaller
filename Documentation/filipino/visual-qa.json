@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-08",
+  "locale": "fil-vnrevival",
+  "game": "Stardew Valley 1.6.15 build 24356",
+  "smapi": "4.5.2",
+  "contentPatcher": "2.9.0",
+  "packageVersion": "1.11.0",
+  "unifiedLanguages": 12,
+  "testedPayload": "/Users/antonkrutov/Desktop/StardewTranslationInstaller/Sources/StardewTranslationInstaller/Resources/ModPayload",
+  "method": "temporary local SMAPI QA mod instantiated the real TitleMenu, LanguageSelectionMenu, CharacterCustomization, InventoryPage, SkillsPage, OptionsPage, and DialogueBox, then captured the live backbuffer; the font-proof page rendered the two loaded game SpriteFont assets",
+  "result": "pass",
+  "contentPatcherErrors": 0,
+  "contentPatcherWarnings": 0,
+  "stageFailures": 0,
+  "runtimeAssets": [
+    "Fonts/SpriteFont1.fil-vnrevival",
+    "Fonts/SmallFont.fil-vnrevival",
+    "Minigames/TitleButtons.fil-vnrevival",
+    "Mods/VNRevival.StardewValleyTranslations/ButtonFilipino"
+  ],
+  "screenshots": [
+    {
+      "file": "01-title-menu.png",
+      "sha256": "cbc63075eaa28aff45a1debaaee8312ddf06d5399d58783498dc9fd21fccad75",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: localized Bagong Laro, I-load, Co-op, Lumabas buttons render from the Filipino TitleButtons asset"
+    },
+    {
+      "file": "02-language-page-1.png",
+      "sha256": "26593e880dea0520ca560a547711317ba39b088d97de3fccd2eddfc48e25de96",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: base language page renders normally alongside the unified package"
+    },
+    {
+      "file": "02-language-page-2.png",
+      "sha256": "73c0c1ed758d81e78150221894841fd2a7a9bd5344b4f12fee8f9c9747d7bcc9",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: Filipino VN language button is present, legible, and not clipped in the final 12-language package"
+    },
+    {
+      "file": "03-character-creation.png",
+      "sha256": "1e35ac68795fc27fb51d58299287e35c512e1ab0714e730077a05511078be308",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: Filipino labels and SpriteFont1 glyphs render without missing glyphs"
+    },
+    {
+      "file": "04-inventory.png",
+      "sha256": "c3e555a07c9857e859ddbb779e9d55aba6d2c4ea4322ac8f62fe3241d092acf5",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: live InventoryPage renders Filipino wallet/farm/funds/cave labels without missing glyphs"
+    },
+    {
+      "file": "05-skills.png",
+      "sha256": "7c9ed6a6479c78f53359076174ceec716734d27aec8852d3bdf2bf2d308a2c8d",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: live SkillsPage renders Filipino skill labels and small-font text without missing glyphs"
+    },
+    {
+      "file": "06-options-small-font.png",
+      "sha256": "68865182958f6f434e048923f3185f3ff4ce966d0f2d7a5ebb35c0854a2df8af",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: live OptionsPage renders Filipino labels, wrapping, checkboxes, and dropdown text without missing glyphs"
+    },
+    {
+      "file": "07-dialogue-system.png",
+      "sha256": "1eb271c5b60deb0568ee7eae9540436c087585a75a8a487b89387de0ec75a761",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: live DialogueBox renders Filipino dialogue text completely without missing glyphs"
+    },
+    {
+      "file": "08-font-proof.png",
+      "sha256": "063bbc175f6af92b48754b3adf4faf0f4e651cd899225befec54f49a256b60d2",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGBA",
+      "review": "pass: SpriteFont1 and SmallFont render Filipino diacritics, digits, punctuation, peso, minus, multiplication, and control-key text without missing glyphs"
+    }
+  ],
+  "smapiLog": {
+    "file": "smapi-visual-qa-2026-09-08.log",
+    "sha256": "86f753395ad667fdb2b1cde46a160ce3c1e25c6b6be7098d62bceb06e4eb2bf1",
+    "note": "The only ERROR is the expected Steam-achievements message from launching SMAPI directly without Steam; no Content Patcher error or warning occurred."
+  },
+  "restoration": {
+    "startupPreferencesSHA256": "34ca03875be69ade984236be6d13bfa8d449effacd0fe5b0dc7f41186bafd50a",
+    "installedManifestSHA256": "f0bf808f54b6bf25d4162338387390c6779fba959431ac90aed0a6751a355a96",
+    "installedContentSHA256": "b06aa90dfc2cd6b2c0514fa791efa6ab8f13faa7971575507413da00be026161",
+    "verified": true
+  }
+}

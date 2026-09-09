@@ -86,6 +86,15 @@ const languages = [
     title: "assets/title/TitleButtons-indonesian.png",
   },
   {
+    directory: "filipino",
+    suffix: "Filipino",
+    code: "fil-vnrevival",
+    buttonTarget: "ButtonFilipino",
+    button: "assets/button-filipino.png",
+    title: "assets/title/TitleButtons-filipino.png",
+    fonts: "assets/fonts/filipino",
+  },
+  {
     directory: "hindi",
     suffix: "Hindi",
     code: "hi-vnrevival",

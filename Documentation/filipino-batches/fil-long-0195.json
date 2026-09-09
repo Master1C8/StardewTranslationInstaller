@@ -1,0 +1,150 @@
+{
+  "id": "fil-long-0195",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "name",
+      "source": "Festival of Ice",
+      "translation": "Pista ng Yelo"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "mainEvent",
+      "source": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"Alright, everyone. Let's begin this year's ice fishing competition.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Contestants, your goal is to catch as many fish as you possibly can in two minutes using the provided fishing rods.#$b#You must catch your fish here, from these holes in the ice.\"/pause 600/speak Lewis \"Well, is everyone ready?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Begin!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+      "translation": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"Sige, kayong lahat. Simulan na natin ang paligsahan sa pangingisda sa yelo ngayong taon.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Mga kalahok, layunin ninyong makahuli ng pinakamaraming isda sa loob ng dalawang minuto gamit ang mga ibinigay na pamingwit.#$b#Kailangan ninyong hulihin ang mga isda rito, mula sa mga butas na ito sa yelo.\"/pause 600/speak Lewis \"Handa na ba ang lahat?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Magsimula!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "afterIceFishing",
+      "source": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Wow, that's a lot of fish!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*gag*... the smell...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"Now, for the winner of this year's ice fishing competition...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Here's your prize! Enjoy.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Well, that's it for this year's Festival of Ice. Thanks for coming, everyone! #$b#Now let's release these poor fish...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"I can't believe I won! Well, time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Wow, napakaraming isda niyan!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*naduwal*... ang amoy...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"Ngayon, para sa nagwagi sa paligsahan sa pangingisda sa yelo ngayong taon...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Narito ang premyo mo! Sana magustuhan mo.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Iyon na ang Pista ng Yelo ngayong taon. Salamat sa pagpunta ninyong lahat! #$b#Ngayon, pakawalan natin ang mga kawawang isdang ito...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"Hindi ako makapaniwalang nanalo ako! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "OtherPlayerWin",
+      "source": "message \"I didn't win the competition, but it was still fun! Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "message \"Hindi ako nanalo sa paligsahan, pero masaya pa rin! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "DickWin",
+      "source": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"Here's your prize, Willy. Enjoy.\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Well, that's it for this year's Festival of Ice. Thanks for coming, everyone!#$b#Now let's release these poor fish...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"I didn't win the competition, but it was still fun! Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"Narito ang premyo mo, Willy. Sana magustuhan mo.\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Iyon na ang Pista ng Yelo ngayong taon. Salamat sa pagpunta ninyong lahat!#$b#Ngayon, pakawalan natin ang mga kawawang isdang ito...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"Hindi ako nanalo sa paligsahan, pero masaya pa rin! Oras nang umuwi.\"/waitForOtherPlayers festivalEnd/end"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Abigail_spouse",
+      "source": "Hey, honey... look, it's you!$h",
+      "translation": "Hoy, mahal... tingnan mo, ikaw iyan!$h"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Penny_spouse",
+      "source": "Are you entering the fishing contest this year, @? My mom's pretty serious about winning.",
+      "translation": "Sasali ka ba sa paligsahan sa pangingisda ngayong taon, @? Talagang determinado si Nanay na manalo."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Haley_spouse",
+      "source": "Brr... my hands are freezing from making this snowman.$l",
+      "translation": "Brr... Naninigas sa lamig ang mga kamay ko sa paggawa ng taong-niyebe na ito.$l"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Sebastian_spouse",
+      "source": "Don't worry about me, I never get cold...",
+      "translation": "Huwag kang mag-alala sa akin, hindi ako kailanman nilalamig..."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Sam_spouse",
+      "source": "Aren't you cold? Are you sure you don't want my jacket?",
+      "translation": "Hindi ka ba nilalamig? Tiyak ka bang ayaw mong hiramin ang dyaket ko?"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Abigail",
+      "source": "What do you think of my snow-goon?",
+      "translation": "Ano sa tingin mo sa halimaw-niyebe ko?"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Robin",
+      "source": "I'm sorry, but carving ice parapets requires my undivided attention!",
+      "translation": "Paumanhin, pero kailangan kong ituon ang buong pansin ko sa pag-ukit ng mga muog na yelo!"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Demetrius",
+      "source": "You know what? I probably should've worn a jacket.",
+      "translation": "Alam mo? Dapat pala nagsuot ako ng dyaket."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Maru",
+      "source": "I'm not very creative when it comes to snowmen.$s",
+      "translation": "Hindi ako gaanong malikhain pagdating sa mga taong-niyebe.$s"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Sebastian",
+      "source": "Cold? Nah, I never get cold.",
+      "translation": "Nilalamig? Hindi, hindi ako kailanman nilalamig."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Pierre",
+      "source": "This snow is so cold I can't feel my fingers anymore...$s",
+      "translation": "Napakalamig ng niyebeng ito at hindi ko na maramdaman ang mga daliri ko...$s"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Shane",
+      "source": "If it was up to me, I'd probably have a pizza festival at the saloon, instead...",
+      "translation": "Kung ako ang masusunod, malamang na magdaraos ako ng pista ng pizza sa Saloon sa halip..."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Caroline",
+      "source": "How's winter coming along for you, @?$h",
+      "translation": "Kumusta ang taglamig mo, @?$h"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Linus",
+      "source": "Igloo-building's an art I picked up from the tundra dwellers who live beyond the frozen sea.#$e#That was many years ago.$h#$e#An Igloo makes a nice home, but it's easier to just stay in my tent year-round.",
+      "translation": "Isang sining ang paggawa ng igloo na natutuhan ko sa mga naninirahan sa tundra sa kabila ng nagyeyelong dagat.#$e#Napakatagal na niyon.$h#$e#Magandang tahanan ang igloo, pero mas madali pa ring manatili sa tolda ko buong taon."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Alex",
+      "source": "Snowmen are okay, I guess. But mostly I'm looking forward to the spring.",
+      "translation": "Ayos lang ang mga taong-niyebe, siguro. Pero higit sa lahat, inaasam ko ang tagsibol."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "George",
+      "source": "Hmmph... Wife dragged me out into the cold for this?",
+      "translation": "Hmph... Kinaladkad ako ni Misis sa lamig para rito?"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Evelyn",
+      "source": "Did I ever tell you how George and I first met? He actually pelted me with a snowball in this very festival.#$e#He was a gentleman back then, and came over to see if I was okay.$h",
+      "translation": "Nasabi ko na ba sa iyo kung paano kami unang nagkakilala ni George? Binato niya talaga ako ng niyebeng binilog sa pista ring ito.#$e#Maginoo siya noon at lumapit para tingnan kung ayos lang ako.$h"
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Lewis",
+      "source": "Welcome to the Festival of Ice!#$e#The highlight of today's festival is the ice fishing competition. We set up this 'frozen lake' and stocked it full of fish.#$b#Just let me know when you're ready to compete.",
+      "translation": "Maligayang pagdating sa Pista ng Yelo!#$e#Ang tampok ng pista ngayon ay ang paligsahan sa pangingisda sa yelo. Inihanda namin ang 'nagyeyelong lawa' na ito at pinunô ng mga isda.#$b#Sabihin mo lang kapag handa ka nang makipagpaligsahan."
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Clint",
+      "source": "Emily started helping me without any provocation... does that mean something? *gulp*$4",
+      "translation": "Sinimulan akong tulungan ni Emily nang hindi ko hinihingi... may ibig sabihin kaya iyon? *lunok*$4"
+    }
+  ]
+}

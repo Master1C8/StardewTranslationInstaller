@@ -1,0 +1,71 @@
+{
+  "locale": "fil",
+  "entries": 673,
+  "audits": [
+    {
+      "kind": "initial source and editorial review",
+      "rangeInclusive": [
+        0,
+        672
+      ],
+      "newCorrectedEntries": 37,
+      "clean": false
+    },
+    {
+      "kind": "full source-fidelity audit",
+      "rangeInclusive": [
+        0,
+        672
+      ],
+      "inputSHA256": "98f73cb39ec5c89f73f85429aab5579ff0efbf202553ec1d2d3e008f9de8f809",
+      "findings": {
+        "calico-desert": "Joja equivalent is a project, not completion of the whole route",
+        "skull-cavern": "Bottomless describes depth, not a general infinity",
+        "day": "Reset is returning to initial state, not just repetition",
+        "crop": "Removed tautology inaani bilang ani",
+        "crab-pot": "Shellfish are not restricted to marine waters",
+        "bait-maker": "Restore exact tiyakang pain terminology after paraphrase"
+      },
+      "clean": false,
+      "outputSHA256": "0b37ee67fd0f2ed2ed15c54c16504af46a335f51376f8da9b46f1c6130b69b14"
+    },
+    {
+      "kind": "full source-fidelity audit after second correction round",
+      "rangeInclusive": [
+        0,
+        672
+      ],
+      "inputSHA256": "0b37ee67fd0f2ed2ed15c54c16504af46a335f51376f8da9b46f1c6130b69b14",
+      "outputSHA256": "0b37ee67fd0f2ed2ed15c54c16504af46a335f51376f8da9b46f1c6130b69b14",
+      "newIssues": 0,
+      "clean": true,
+      "method": "Direct model reading of all English terms/meanings and Filipino terms/meanings in five bounded packets; re-read truncated entries 70–71 separately."
+    },
+    {
+      "kind": "separate full Filipino prose and terminology audit",
+      "rangeInclusive": [
+        0,
+        672
+      ],
+      "inputSHA256": "0b37ee67fd0f2ed2ed15c54c16504af46a335f51376f8da9b46f1c6130b69b14",
+      "outputSHA256": "0b37ee67fd0f2ed2ed15c54c16504af46a335f51376f8da9b46f1c6130b69b14",
+      "newIssues": 0,
+      "clean": true,
+      "method": "Direct model reading of all 673 Filipino terms and meanings in four complete packets, checking grammar, idiom, register, name consistency and cross-references; not an automated heuristic."
+    }
+  ],
+  "consecutiveCleanFullAudits": 2,
+  "candidateSHA256": "0b37ee67fd0f2ed2ed15c54c16504af46a335f51376f8da9b46f1c6130b69b14",
+  "pending": [],
+  "canonicalSync": {
+    "status": "complete",
+    "entries": 673,
+    "candidateParity": true,
+    "canonicalFileSHA256": "acb15f4f36527810e7d11f1187ac5a888eeb9d0ee11b7c577f650054ec672752",
+    "publicationPerformed": true,
+    "publicationResult": "applied",
+    "publicEntries": 673,
+    "publicVsCanonicalDifferences": 0,
+    "publicResponseSHA256": "c3ac9632f92b29a7648c1f565851cf08ca7ed378cf83bee88e7cd49665c2cecd"
+  }
+}

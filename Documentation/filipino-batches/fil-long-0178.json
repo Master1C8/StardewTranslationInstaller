@@ -1,0 +1,126 @@
+{
+  "id": "fil-long-0178",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "name",
+      "source": "Egg Festival",
+      "translation": "Pista ng Itlog"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "afterEggHunt",
+      "source": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/globalFade/viewport -1000 -1000/playMusic event1/loadActors MainEvent/warpFarmers 27 69 0 26 67 1 32 67 3 28 71 0 22 65 1 25 63 2 32 65 3 32 62 2 right 31 71 0/pause 1000/viewport 27 67 true/pause 2000/speak Lewis \"Wow, look at all these eggs!$h#$b#Now if only I could get you kids to pick up litter this efficiently, we'd have the cleanest town this side of the Gem Sea! *chuckle*$h\"/pause 800/playMusic none/speak Lewis \"And now, the winner of this year's egg hunt...\"/playMusic none/pause 3000/cutscene eggHuntWinner/null/playMusic event1/pause 500/fork AbbyWin/move Lewis 0 1 2/speak Lewis \"Here's your prize! Enjoy.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Well, that's it for this year's Egg Festival. Thanks for coming, everyone!\"/pause 600/viewport move 1 0 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/globalFade/viewport -1000 -1000/playMusic event1/loadActors MainEvent/warpFarmers 27 69 0 26 67 1 32 67 3 28 71 0 22 65 1 25 63 2 32 65 3 32 62 2 right 31 71 0/pause 1000/viewport 27 67 true/pause 2000/speak Lewis \"Wow, tingnan ninyo ang lahat ng itlog na ito!$h#$b#Kung mapapapulot ko lang sa inyo ang basura nang ganito kabilis, tayo na sana ang may pinakamalinis na bayan sa panig na ito ng Dagat ng Gem! *mahinang tawa*$h\"/pause 800/playMusic none/speak Lewis \"At ngayon, ang nagwagi sa paghahanap ng itlog ngayong taon...\"/playMusic none/pause 3000/cutscene eggHuntWinner/null/playMusic event1/pause 500/fork AbbyWin/move Lewis 0 1 2/speak Lewis \"Narito ang premyo mo! Sana magustuhan mo.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Iyon na ang Pista ng Itlog ngayong taon. Salamat sa pagpunta ninyong lahat!\"/pause 600/viewport move 1 0 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "AbbyWin",
+      "source": "pause 100/jump Abigail/faceDirection Vincent 3/pause 800/move Abigail 0 -1 0/faceDirection Vincent 0/speak Lewis \"Here's your prize, Abigail. Enjoy!\"/pause 500/move Abigail 0 -1 0/playSound coin/pause 400/move Abigail 0 2 0/faceDirection Lewis 0/speak Lewis \"Well, that's it for this year's Egg Festival. Thanks for coming, everyone!\"/pause 1000/viewport move 1 -1 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 100/jump Abigail/faceDirection Vincent 3/pause 800/move Abigail 0 -1 0/faceDirection Vincent 0/speak Lewis \"Narito ang premyo mo, Abigail. Sana magustuhan mo!\"/pause 500/move Abigail 0 -1 0/playSound coin/pause 400/move Abigail 0 2 0/faceDirection Lewis 0/speak Lewis \"Iyon na ang Pista ng Itlog ngayong taon. Salamat sa pagpunta ninyong lahat!\"/pause 1000/viewport move 1 -1 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "afterEggHunt_y2",
+      "source": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/globalFade/viewport -1000 -1000/playMusic event1/loadActors MainEvent/warpFarmers 29 70 0 26 68 1 27 70 0 33 68 3 33 70 3 30 71 0 29 72 0 27 72 0 right 34 70 3/pause 1000/positionOffset Demetrius 5 -10/positionOffset Jodi 5 -8/positionOffset Marnie -12 10/positionOffset Shane -6 -6/viewport 29 69 true/pause 2000/speak Lewis \"Wow, look at all these eggs!$h#$b#Now if only I could get you kids to pick up litter this efficiently, we'd have the cleanest town this side of the Gem Sea! *chuckle*$h\"/pause 800/playMusic none/speak Lewis \"And now, the winner of this year's egg hunt...\"/playMusic none/pause 3000/cutscene eggHuntWinner/null/playMusic event1/pause 500/fork AbbyWin/move Lewis 0 1 2/speak Lewis \"Here's your prize! Enjoy.\"/awardFestivalPrize/null/pause 300/faceDirection Lewis 1/faceDirection Lewis 0/move Lewis 0 -1 0/speak Lewis \"Well, that's it for this year's Egg Festival. Thanks for coming, everyone!\"/pause 600/viewport move 1 0 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/globalFade/viewport -1000 -1000/playMusic event1/loadActors MainEvent/warpFarmers 29 70 0 26 68 1 27 70 0 33 68 3 33 70 3 30 71 0 29 72 0 27 72 0 right 34 70 3/pause 1000/positionOffset Demetrius 5 -10/positionOffset Jodi 5 -8/positionOffset Marnie -12 10/positionOffset Shane -6 -6/viewport 29 69 true/pause 2000/speak Lewis \"Wow, tingnan ninyo ang lahat ng itlog na ito!$h#$b#Kung mapapapulot ko lang sa inyo ang basura nang ganito kabilis, tayo na sana ang may pinakamalinis na bayan sa panig na ito ng Dagat ng Gem! *mahinang tawa*$h\"/pause 800/playMusic none/speak Lewis \"At ngayon, ang nagwagi sa paghahanap ng itlog ngayong taon...\"/playMusic none/pause 3000/cutscene eggHuntWinner/null/playMusic event1/pause 500/fork AbbyWin/move Lewis 0 1 2/speak Lewis \"Narito ang premyo mo! Sana magustuhan mo.\"/awardFestivalPrize/null/pause 300/faceDirection Lewis 1/faceDirection Lewis 0/move Lewis 0 -1 0/speak Lewis \"Iyon na ang Pista ng Itlog ngayong taon. Salamat sa pagpunta ninyong lahat!\"/pause 600/viewport move 1 0 5000/pause 2000/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/end"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Event.cs.1862",
+      "source": "By combining their collected eggs... Jas and Vincent!$1",
+      "translation": "Sa pagsasama-sama ng mga nakolekta nilang itlog... sina Jas at Vincent!$1"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Abigail_spouse",
+      "source": "Go away, we're adversaries until the egg hunt is over!$h",
+      "translation": "Lumayo ka, magkalaban tayo hanggang matapos ang paghahanap ng itlog!$h"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Leah_spouse",
+      "source": "I never had many friends in town, so these events are always kind of boring for me. I enjoy the buffet, though.",
+      "translation": "Hindi ako nagkaroon ng maraming kaibigan sa bayan, kaya medyo nakakabagot para sa akin ang mga ganitong pagtitipon. Pero nasisiyahan ako sa handaan."
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Maru_spouse",
+      "source": "I'm just catching up with Penny. Have you had your fill of eggs?",
+      "translation": "Nakikipagkuwentuhan lang ako kay Penny. Nagsawa ka na ba sa mga itlog?"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Penny_spouse",
+      "source": "Maru's trying to convince me to eat a deviled egg. I'm just not sure I can stomach it...",
+      "translation": "Sinusubukan akong kumbinsihin ni Maru na kumain ng pinalamang itlog. Hindi ko lang tiyak kung kakayanin ng sikmura ko..."
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Haley_spouse",
+      "source": "I was going to eat some eggs, but then I remembered I'm on a spring diet.",
+      "translation": "Kakain sana ako ng ilang itlog, pero naalala kong nagdidiyeta ako ngayong tagsibol."
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Sebastian_spouse",
+      "source": "I'll be rooting for you in the egg hunt.$h",
+      "translation": "Susuportahan kita sa paghahanap ng itlog.$h"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Sam_spouse",
+      "source": "The gang's just the same as always. Are you having a good time?",
+      "translation": "Gaya pa rin ng dati ang barkada. Nagsasaya ka ba?"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Alex_spouse",
+      "source": "Ungh... I think I ate a dozen too many hard boiled eggs...$s",
+      "translation": "Ungh... Mukhang napasobra ako ng isang dosenang nilagang itlog...$s"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Harvey_spouse",
+      "source": "How is everyone doing? I'm just taking a break for a little while. I'm looking forward to seeing you in the egg hunt!",
+      "translation": "Kumusta ang lahat? Nagpapahinga lang ako sandali. Sabik akong mapanood ka sa paghahanap ng itlog!"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Elliott_spouse",
+      "source": "I enjoy seeing you so relaxed, my dear.$h",
+      "translation": "Nasisiyahan akong makita kang panatag, mahal ko.$h"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Abigail",
+      "source": "Searching for eggs is like going on a treasure hunt.$h",
+      "translation": "Ang paghahanap ng mga itlog ay parang paghahanap ng kayamanan.$h"
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Robin",
+      "source": "Spring is a busy time of year... so it's nice to have a day off to catch up with friends.",
+      "translation": "Abalang panahon ng taon ang tagsibol... kaya masarap magkaroon ng isang araw na pahinga para makipagkuwentuhan sa mga kaibigan."
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Demetrius",
+      "source": "Egg... what a strange thing to eat.",
+      "translation": "Itlog... kakaibang bagay na kainin."
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Maru",
+      "source": "I always look forward to these gatherings... it makes the valley feel like a real community.",
+      "translation": "Lagi kong inaasam ang mga pagtitipong ito... ipinadarama nitong isa talagang komunidad ang lambak."
+    },
+    {
+      "target": "Data/Festivals/spring13",
+      "key": "Sebastian",
+      "source": "We used to do a rotten egg toss...#$b#Mayor Lewis put an end to that pretty quick.",
+      "translation": "Dati, naghahagisan kami ng bulok na itlog...#$b#Mabilis iyong ipinatigil ni Alkalde Lewis."
+    }
+  ]
+}

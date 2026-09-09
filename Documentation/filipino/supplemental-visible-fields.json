@@ -1,0 +1,47 @@
+{
+  "locale": "fil",
+  "sourceVersion": "Stardew Valley 1.6.15 build 24356",
+  "supplementalAssets": 51,
+  "explicitReferenceOccurrences": 4216,
+  "explicitReferenceTargets": 3597,
+  "directVisibleFields": [
+    {
+      "target": "Data/Pets",
+      "path": [
+        "Turtle",
+        "DisplayName"
+      ],
+      "source": "Turtle",
+      "translation": "Pagong",
+      "patch": "pets.json"
+    }
+  ],
+  "implicitLocalization": [
+    {
+      "target": "Data/RandomBundles",
+      "field": "Name",
+      "records": 43,
+      "strategy": "Each name is either a translated display label in Data/Bundles or a key translated in Strings/BundleNames. Random-bundle item and reward names remain internal English lookup values."
+    }
+  ],
+  "technicalVisibleFieldExceptions": [
+    {
+      "target": "Data/Buildings",
+      "path": [
+        "Farmhouse",
+        "Description"
+      ],
+      "source": "Farmhouse",
+      "reason": "The non-buildable base farmhouse record is not listed in the construction menu; it has no builder, cost, materials, or build days."
+    },
+    {
+      "target": "Data/Characters",
+      "path": [
+        "???",
+        "DisplayName"
+      ],
+      "source": "???",
+      "reason": "Deliberate unknown-character placeholder, not English prose."
+    }
+  ]
+}

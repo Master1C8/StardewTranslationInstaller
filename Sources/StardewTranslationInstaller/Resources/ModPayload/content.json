@@ -85,6 +85,17 @@
           "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
           "NumberComma": " "
         },
+        "{{ModId}}_Filipino": {
+          "ID": "{{ModId}}_Filipino",
+          "LanguageCode": "fil-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonFilipino",
+          "UseLatinFont": true,
+          "FontPixelZoom": 1,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
+        },
         "{{ModId}}_Hindi": {
           "ID": "{{ModId}}_Hindi",
           "LanguageCode": "hi-vnrevival",
@@ -279,6 +290,29 @@
       "Target": "Minigames/TitleButtons",
       "TargetLocale": "id-vnrevival",
       "FromFile": "assets/title/TitleButtons-indonesian.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonFilipino",
+      "FromFile": "assets/button-filipino.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "fil-vnrevival",
+      "FromFile": "assets/title/TitleButtons-filipino.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "fil-vnrevival",
+      "FromFile": "assets/fonts/filipino/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "fil-vnrevival",
+      "FromFile": "assets/fonts/filipino/SmallFont.xnb"
     },
     {
       "Action": "Load",
@@ -7570,6 +7604,614 @@
     {
       "Action": "Include",
       "FromFile": "assets/translations/indonesian/world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/pets.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/filipino/world-map.json"
     },
     {
       "Action": "Include",

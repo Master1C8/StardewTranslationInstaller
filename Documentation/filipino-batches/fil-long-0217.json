@@ -1,0 +1,98 @@
+{
+  "id": "fil-long-0217",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/Forest",
+      "key": "eventEnd",
+      "source": "faceDirection Penny 3/emote Penny 12/end dialogue Penny \"I can't believe you refused to help me out.$a\"",
+      "translation": "faceDirection Penny 3/emote Penny 12/end dialogue Penny \"Hindi ako makapaniwalang tumanggi kang tulungan ako.$a\""
+    },
+    {
+      "target": "Data/Events/BathHouse_Pool",
+      "key": "pennyHeartbroken",
+      "source": "move Penny 0 -2 0/faceDirection farmer 0/shake Penny 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Penny/end warpOut",
+      "reviewedPreserve": true,
+      "preserveReason": "This event record contains only runtime movement, camera, location, and state commands with no player-facing lexical text."
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "howLong",
+      "source": "pause 500/resetVariable/speak Elliott \"Oh, I'm not sure... I've been dabbling in piano since I was a kid.$7#$b#I'm not very good, but it's fun.\"/switchEvent elliottPianoJoin",
+      "translation": "pause 500/resetVariable/speak Elliott \"Oh, hindi ko tiyak... Paminsan-minsan akong tumutugtog ng piyano mula pa noong bata ako.$7#$b#Hindi ako gaanong mahusay, pero masaya ito.\"/switchEvent elliottPianoJoin"
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "tooBold",
+      "source": "showFrame 6/playMusic none/positionOffset farmer -8 0/positionOffset Elliott 8 0/showFrame Elliott 12/jump Elliott/pause 1000/faceDirection Elliott 1/pause 1000/end dialogue Elliott \"I'm so embarrassed...$8\"",
+      "translation": "showFrame 6/playMusic none/positionOffset farmer -8 0/positionOffset Elliott 8 0/showFrame Elliott 12/jump Elliott/pause 1000/faceDirection Elliott 1/pause 1000/end dialogue Elliott \"Hiyang-hiya ako...$8\""
+    },
+    {
+      "target": "Data/Events/IslandSouth",
+      "key": "PlayerKilled",
+      "source": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end",
+      "translation": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, gumising ka!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end"
+    },
+    {
+      "target": "Data/Events/Trailer_Big",
+      "key": "positive",
+      "source": "pause 100/emote farmer 56/pause 500/speak Pam \"Hah! Well, look at me! I'm gettin' real sappy in my old age, aren't I?  ...hehehe.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Thanks for lendin' an ear, kid\"/pause 5000/end",
+      "translation": "pause 100/emote farmer 56/pause 500/speak Pam \"Hah! Tingnan mo nga naman ako! Nagiging madamdamin na talaga ako sa pagtanda, hindi ba?  ...hehehe.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Salamat sa pakikinig, bata\"/pause 5000/end"
+    },
+    {
+      "target": "Data/Events/IslandSouth",
+      "key": "IslandDepart",
+      "source": "none/-1000 -1000/farmer 15 43 2 Willy 17 45 2/playMusic none/skippable true/playSound furnace/beginSimultaneousCommand/viewport 16 44 clamp true/globalFadeToClear 0.007/endSimultaneousCommand/locationSpecificCommand boat_reset/locationSpecificCommand boat_depart/globalFade/viewport -1000 -1000/end islandDepart",
+      "reviewedPreserve": true,
+      "preserveReason": "This event record contains only runtime movement, camera, location, and state commands with no player-facing lexical text."
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "decorate",
+      "source": "speak Haley \"Decorate?$s#$b#Um, okay.$u\"/faceDirection Haley 1/speak Haley \"So that's the best thing you can think of doing right now? Here... in this small, dark room with me?$u#$b#Interesting.$u\"/faceDirection farmer 0/faceDirection Haley 2/showFrame Haley 22/pause 1000/end dialogue Haley \"Well, the dark room looks great now... Thanks, @.$u\"",
+      "translation": "speak Haley \"Magdekorasyon?$s#$b#Um, okey.$u\"/faceDirection Haley 1/speak Haley \"Iyon ang pinakamagandang naisip mong gawin ngayon? Dito... sa maliit at silid-dilim na ito kasama ako?$u#$b#Kawili-wili.$u\"/faceDirection farmer 0/faceDirection Haley 2/showFrame Haley 22/pause 1000/end dialogue Haley \"Maganda na ngayon ang madilim na silid... Salamat, @.$u\""
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "PlayerKilled",
+      "source": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Someone found you unconscious and battered... I had to perform an emergency surgery on you!#$b#Be a little more careful next time, okay?$s\"/showFrame 0/pause 1000/emote farmer 28/hospitaldeath/end",
+      "translation": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Dahan-dahan lang... huwag kang magmadali.\"/viewport 20 12 true/pause 1000/speak Harvey \"May nakakita sa iyong walang malay at sugatan... Kinailangan kitang operahan agad!#$b#Mag-ingat ka nang kaunti sa susunod, okey?$s\"/showFrame 0/pause 1000/emote farmer 28/hospitaldeath/end"
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "leave",
+      "source": "speak Haley \"Oh, you have to leave already?$s#$b#Well... alright. Bye.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"Wow... I didn't think ${he^she}$ was that dense.$s\"/end dialogue Haley \"I thought you had something important to do...$u\"",
+      "translation": "speak Haley \"Oh, kailangan mo nang umalis?$s#$b#Sige... paalam.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"Wow... Hindi ko akalaing ganoon kamanhid si ${siya^siya}$.$s\"/end dialogue Haley \"Akala ko ay may mahalaga kang gagawin...$u\""
+    },
+    {
+      "target": "Data/Events/Mountain",
+      "key": "8357109/w sunny/t 600 1900/n linusTrashCleanup",
+      "source": "spring_day_ambient/-1000 -1000/farmer -100 -100 2 Linus 63 21 2/skippable/hideShadow Linus true/showFrame Linus 24/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 129 241 14 15 60 20/viewport 63 21 true/pause 5000/speak Linus \"Ahhh... that feels good.$4\"/pause 1000/speak Linus \"The water's never been cleaner.$4\"/pause 2000/speak Linus \"...And the same goes for me! Hehehe.$5\"/pause 3000/end",
+      "translation": "spring_day_ambient/-1000 -1000/farmer -100 -100 2 Linus 63 21 2/skippable/hideShadow Linus true/showFrame Linus 24/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 129 241 14 15 60 20/viewport 63 21 true/pause 5000/speak Linus \"Ahhh... ang sarap sa pakiramdam.$4\"/pause 1000/speak Linus \"Ngayon lamang naging ganito kalinis ang tubig.$4\"/pause 2000/speak Linus \"...At ganoon din ako! Hehehe.$5\"/pause 3000/end"
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "choseAnimals",
+      "source": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!\"/speak Penny \"Vincent! Behave yourself. ${Mr.^Ms.}$ @ makes ${his^her}$ living working on the farm! It's not a playground.$h\"/switchEvent fieldTripEnd",
+      "translation": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Oo, Vincent?\"/speak Vincent \"Magsasaka @? Maaari ko bang lagyan ng siyahan ang isa sa mga baka mo at sakyan iyon papunta sa bayan? Gusto kong maging tunay na koboy!\"/speak Penny \"Vincent! Magpakabait ka. Ikinabubuhay ni ${G.^Bb.}$ @ ang pagtatrabaho sa bukid! Hindi iyon ${niya^niya}$ palaruan.$h\"/switchEvent fieldTripEnd"
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "extraHelp",
+      "source": "pause 500/emote Elliott 16/speak Elliott \"Seriously?$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"It sounds wonderful... but I can't give up on my novel. It's already half-way done.$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*sigh*... sorry I'm complaining like this. I just need someone to talk to now and then.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "translation": "pause 500/emote Elliott 16/speak Elliott \"Talaga?$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"Napakaganda sana niyon... pero hindi ko maaaring talikuran ang nobela ko. Kalahati na ang natapos ko.$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*buntong-hininga*... paumanhin sa pagrereklamo ko nang ganito. Kailangan ko lamang ng makakausap paminsan-minsan.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end"
+    },
+    {
+      "target": "Data/Events/SandyHouse",
+      "key": "67/m 10",
+      "source": "none/4 5/farmer 4 9 0 Sandy 2 5 2/skippable/move farmer 0 -2 0/emote Sandy 8/speak Sandy \"A... customer?\"/speed Sandy 4/move Sandy 2 0 2/speed Sandy 4/move Sandy 0 1 2/emote Sandy 16/speak Sandy \"Hi! Welcome to 'Sandy's Oasis'!#$b#Hey, you look just like the new farmer that Emily wrote to me about!#$b#Then... the bus line to Stardew Valley is back in service!$h#$b#Oh, I'm so happy!$h\"/emote Sandy 32/move Sandy 0 -1 0/move Sandy -2 0 2/emote Sandy 32/end dialogue Sandy \"Please visit again soon, I get so bored out here.\"",
+      "translation": "none/4 5/farmer 4 9 0 Sandy 2 5 2/skippable/move farmer 0 -2 0/emote Sandy 8/speak Sandy \"I... isang mamimili?\"/speed Sandy 4/move Sandy 2 0 2/speed Sandy 4/move Sandy 0 1 2/emote Sandy 16/speak Sandy \"Kumusta! Maligayang pagdating sa 'Sandy's Oasis'!#$b#Hoy, kamukha mo ang bagong magsasakang ikinuwento ni Emily sa liham niya sa akin!#$b#Kung gayon... umaandar na muli ang ruta ng bus papuntang Stardew Valley!$h#$b#Oh, napakasaya ko!$h\"/emote Sandy 32/move Sandy 0 -1 0/move Sandy -2 0 2/emote Sandy 32/end dialogue Sandy \"Dumalaw ka ulit agad. Inip na inip ako rito.\""
+    },
+    {
+      "target": "Data/Events/Mountain",
+      "key": "BadAnswer",
+      "source": "speak Maru \"$q 18982 null#You must have a good reason for saying that...$a#$r 18982 50 event_robot_explain1#MarILDA's just a piece of machinery designed to act human.#$r 18982 50 event_robot_explain2#I was just kidding. MarILDA deserves her freedom.#$r 18982 -50 event_robot_explain3#I would've put her to work on the farm.\"/faceDirection Maru 1/emote Maru 12/pause 300/faceDirection Maru 3/speak Maru \"Well, I should go. Thanks for sticking with me today, @.$8\"/globalFade/viewport -3000 -3000/changeLocation ScienceHouse/end",
+      "translation": "speak Maru \"$q 18982 null#Tiyak na may mabuti kang dahilan sa pagsasabi niyon...$a#$r 18982 50 event_robot_explain1#Isa lamang makina si MarILDA na dinisenyong kumilos na parang tao.#$r 18982 50 event_robot_explain2#Nagbibiro lamang ako. Karapat-dapat si MarILDA sa kaniyang kalayaan.#$r 18982 -50 event_robot_explain3#Pinagtrabaho ko sana siya sa bukid.\"/faceDirection Maru 1/emote Maru 12/pause 300/faceDirection Maru 3/speak Maru \"Sige, kailangan ko nang umalis. Salamat sa pananatili sa tabi ko ngayong araw, @.$8\"/globalFade/viewport -3000 -3000/changeLocation ScienceHouse/end"
+    }
+  ]
+}

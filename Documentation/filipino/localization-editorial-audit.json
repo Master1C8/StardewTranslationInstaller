@@ -1,0 +1,317 @@
+{
+  "locale": "fil",
+  "languageCode": "fil-vnrevival",
+  "completedAt": "2026-09-09T20:12:56+07:00",
+  "status": "complete",
+  "scope": {
+    "reviewedRecords": 14721,
+    "canonicalPatchRecords": 14720,
+    "supplementalRecords": 1,
+    "translationFiles": 152,
+    "targets": 188
+  },
+  "editorialPass": {
+    "method": "Manual full-entry comparison with the English source, Filipino prose review, and mandatory glossary enforcement.",
+    "findingsApplied": 1938,
+    "netTranslationChanges": 1924,
+    "postPassAuditCorrections": {
+      "total": 17,
+      "exactGlossaryLabels": 12,
+      "markerContentRepairs": 2,
+      "reviewMetadataRepairs": 3
+    }
+  },
+  "consecutiveCleanFullAudits": [
+    {
+      "sequence": 1,
+      "errors": 0,
+      "warnings": 0,
+      "editorialRecords": 14720,
+      "acceptedIntentionalDuplicates": 24,
+      "requiredFontCharacters": 182
+    },
+    {
+      "sequence": 2,
+      "errors": 0,
+      "warnings": 0,
+      "editorialRecords": 14720,
+      "acceptedIntentionalDuplicates": 24,
+      "requiredFontCharacters": 182
+    }
+  ],
+  "checks": {
+    "jsonKeysPlaceholdersAndGlossary": "passed",
+    "supplementalAssets": "passed: 51 assets and 4,216 explicit reference occurrences",
+    "editorialGate": "passed: no unresolved repeats, spacing errors, English residue, modifier apostrophe errors, inconsistent project spelling, canonical-name variants, or semantic-consistency errors",
+    "runtime": "passed: 152 includes and 4 required locale-specific loads",
+    "fonts": "passed: SpriteFont1 and SmallFont each contain all 182 required characters",
+    "swiftTests": "passed: 8 tests in InstallerCoreTests"
+  },
+  "hashes": {
+    "translationTreeSHA256": "9f3e1fe4282545641132397d0fbc5b456f7615991e6fa8a94e9a05a863e17c29",
+    "batchTreeSHA256": "693c4037f492c8cef5075b68b39dc0b30ff64acd2291e6a39f4b4e9ca6642fc2",
+    "glossaryCandidateSHA256": "0b37ee67fd0f2ed2ed15c54c16504af46a335f51376f8da9b46f1c6130b69b14"
+  },
+  "canonicalSync": {
+    "status": "complete",
+    "checkout": "/Users/antonkrutov/Desktop/StardewTranslationInstaller",
+    "sourceRecordsUpdated": 2108,
+    "batchRecordsUpdated": 2108,
+    "latestPassSourceRecordsUpdated": 35,
+    "latestPassBatchTranslationRecordsUpdated": 35,
+    "latestPassBatchMetadataRecordsUpdated": 0,
+    "sourceParity": true,
+    "batchParity": true,
+    "auditScriptParity": true,
+    "commitPerformed": true,
+    "pushPerformed": false,
+    "deploymentPerformed": false
+  },
+  "additionalEditorialPasses": [
+    {
+      "sequence": 2,
+      "completedAt": "2026-09-08T19:35:21+07:00",
+      "method": "A new complete all-entry editorial review against the English source, expanded retained-English and duplicate-source analysis, corrections, then two consecutive clean full audits.",
+      "uniqueRecordsCorrected": 29,
+      "categories": {
+        "hiddenFestivalChoiceLabels": 3,
+        "residualEnglishDialogue": 1,
+        "fictionalTitleConsistency": 2,
+        "projectOrthography": 12,
+        "objectTerminologyAndConsistency": 11,
+        "dialogueTypoAndNaturalness": 1,
+        "overlappingCategoryRecords": 1
+      },
+      "auditEnhancements": [
+        "inspect bare $y festival choice labels",
+        "flag residual English cute in prose",
+        "enforce the project spelling kaniyang"
+      ],
+      "consecutiveCleanFullAudits": [
+        {
+          "sequence": 1,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182
+        },
+        {
+          "sequence": 2,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182
+        }
+      ],
+      "swiftTests": {
+        "tests": 8,
+        "failures": 0,
+        "status": "passed"
+      }
+    },
+    {
+      "sequence": 3,
+      "completedAt": "2026-09-08T20:43:56+07:00",
+      "method": "A new complete all-entry editorial review against the English source, a second semantic visible-text parser, dictionary-backed retained-English analysis, exact-source consistency analysis, corrections, then two consecutive clean full audits.",
+      "uniqueTranslationRecordsCorrected": 12,
+      "metadataRecordsCorrected": 1,
+      "categories": {
+        "projectLoanwordSpelling": 2,
+        "guineaPigTerminology": 4,
+        "repeatedTitleAndItemNameConsistency": 2,
+        "glossaryDebuffTerminology": 2,
+        "glossaryLocationCapitalization": 1,
+        "semanticDiacriticConsistency": 1
+      },
+      "auditEnhancements": [
+        "flag the project-inconsistent napakacute spelling",
+        "flag untranslated guinea pig where the locale uses dagang-gini"
+      ],
+      "consecutiveCleanFullAudits": [
+        {
+          "sequence": 1,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182
+        },
+        {
+          "sequence": 2,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182
+        }
+      ],
+      "swiftTests": {
+        "tests": 8,
+        "failures": 0,
+        "status": "passed"
+      }
+    },
+    {
+      "sequence": 4,
+      "completedAt": "2026-09-09T03:52:14+07:00",
+      "method": "A new complete all-entry editorial review against the English source, full-corpus canonical item and title cross-reference, manual exclusion of technical/raw fields and valid contextual inflections, corrections, then two consecutive clean full audits.",
+      "uniqueTranslationRecordsCorrected": 149,
+      "categories": {
+        "cookingObjectAndEquipmentNames": 31,
+        "questMailNoteAndOrderTerms": 47,
+        "dialogueFestivalAndEventReferences": 44,
+        "interfaceWorldAndMiscellaneousText": 27
+      },
+      "auditEnhancements": [
+        "cross-reference repeated item and title names across all 14,721 reviewed records",
+        "fail the deterministic editorial gate on the canonical-name variants corrected by this pass"
+      ],
+      "consecutiveCleanFullAudits": [
+        {
+          "sequence": 1,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "explicitReferenceOccurrences": 4216,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182,
+          "canonicalNameVariantErrors": 0
+        },
+        {
+          "sequence": 2,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "explicitReferenceOccurrences": 4216,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182,
+          "canonicalNameVariantErrors": 0
+        }
+      ],
+      "swiftTests": {
+        "tests": 8,
+        "failures": 0,
+        "status": "passed"
+      },
+      "releaseVerification": {
+        "build": "passed",
+        "codesign": "passed",
+        "archiveIntegrity": "passed",
+        "worktreeZipSHA256": "badd238b63d13361f7094f13989f6cf9ab7a1cc34c6dfb92c221f90a7c729b96"
+      },
+      "deliveryVerification": {
+        "fullAudit": {
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "canonicalNameVariantErrors": 0
+        },
+        "swiftTests": {
+          "tests": 8,
+          "failures": 0,
+          "status": "passed"
+        },
+        "build": "passed",
+        "codesign": "passed",
+        "archiveIntegrity": "passed",
+        "zipSHA256": "9e9c5a4bc481e777bf7afc14d104bae7adc7a18a57cb7b67417541fe2b515707"
+      }
+    },
+    {
+      "sequence": 5,
+      "completedAt": "2026-09-09T20:12:56+07:00",
+      "method": "A new complete all-entry editorial review against the English source, exact-source divergence, polarity, number, length, retained-English and near-typo analysis, manual review of every resulting candidate class, corrections, then two consecutive clean full audits.",
+      "uniqueTranslationRecordsCorrected": 35,
+      "categories": {
+        "speakerContextAndRepeatedDialogue": 13,
+        "actionCueNaturalness": 2,
+        "marriageDialogueGrammarAndNaturalness": 15,
+        "retainedEnglishGenericNoun": 4,
+        "sourceMeaningRestoration": 1
+      },
+      "auditEnhancements": [
+        "fail on lowercase adventurer retained outside the proper Adventurer's Guild name",
+        "fail on the corrected Sandy home-context, Dwarf action-cue, jealousy, Pam-negation, and gift-anecdote regressions",
+        "independently compare exact-source divergences and scan polarity, numbers, length, retained English, and near-typos"
+      ],
+      "consecutiveCleanFullAudits": [
+        {
+          "sequence": 1,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "explicitReferenceOccurrences": 4216,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182,
+          "canonicalNameVariantErrors": 0,
+          "semanticConsistencyErrors": 0
+        },
+        {
+          "sequence": 2,
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "editorialRecords": 14720,
+          "acceptedIntentionalDuplicates": 24,
+          "supplementalAssets": 51,
+          "explicitReferenceOccurrences": 4216,
+          "runtimeIncludes": 152,
+          "requiredFontCharacters": 182,
+          "canonicalNameVariantErrors": 0,
+          "semanticConsistencyErrors": 0
+        }
+      ],
+      "swiftTests": {
+        "worktreeTests": 8,
+        "deliveryCheckoutTests": 8,
+        "failures": 0,
+        "status": "passed"
+      },
+      "releaseVerification": {
+        "worktreeBuild": "passed",
+        "worktreeCodesign": "passed"
+      },
+      "deliveryVerification": {
+        "fullAudit": {
+          "errors": 0,
+          "warnings": 0,
+          "reviewedRecords": 14721,
+          "canonicalNameVariantErrors": 0,
+          "semanticConsistencyErrors": 0
+        },
+        "swiftTests": {
+          "tests": 8,
+          "failures": 0,
+          "status": "passed"
+        },
+        "build": "passed",
+        "codesign": "passed",
+        "archiveIntegrity": "passed",
+        "zipSHA256": "7737ce64987642170d1402a47b03b51d1626bc6650202c929aa2339240b61298"
+      }
+    }
+  ]
+}

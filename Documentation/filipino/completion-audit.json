@@ -1,0 +1,65 @@
+{
+  "auditedAt": "2026-09-09T20:12:56+07:00",
+  "objective": "release-quality Filipino Stardew Valley 1.6 localization",
+  "status": "complete",
+  "requirements": [
+    {
+      "id": "coverage",
+      "status": "proven",
+      "evidence": "14,721/14,721 reviewed player-facing records across 152 JSON files and 188 targets; editorial pass 5 corrected 35 records; two consecutive aggregate audits reported 0 errors and 0 warnings; translation tree SHA-256 9f3e1fe4282545641132397d0fbc5b456f7615991e6fa8a94e9a05a863e17c29"
+    },
+    {
+      "id": "source-and-structure",
+      "status": "proven",
+      "evidence": "187 prepared English assets match fresh xnbcli extraction; 51 supplemental modern assets and 4,216 references accounted for; keys, tokens, placeholders, technical fields, includes, and residue covered by audit-filipino-all.sh"
+    },
+    {
+      "id": "editorial-and-glossary",
+      "status": "proven-for-candidate",
+      "evidence": "A new complete all-entry English-source review used exact-source divergence, polarity, number, length, retained-English and near-typo analysis; 35 records were corrected and every remaining candidate class was manually reviewed. Two consecutive audits found 0 canonical-name variant and 0 semantic-consistency errors. The published 673-entry glossary remains unchanged and exact."
+    },
+    {
+      "id": "endpoint-comparison",
+      "status": "proven-current",
+      "evidence": "2026-09-09 public endpoint response has 673 entries in exact canonical/candidate ID order, 0 Filipino translation differences, and 0 English field differences; raw response SHA-256 c3ac9632f92b29a7648c1f565851cf08ca7ed378cf83bee88e7cd49665c2cecd"
+    },
+    {
+      "id": "canonical-siteformods-fil",
+      "status": "proven",
+      "evidence": "local canonical fil and public endpoint exactly match the reviewed 673-entry candidate; whole-file SHA-256 acb15f4f36527810e7d11f1187ac5a888eeb9d0ee11b7c577f650054ec672752; publication returned applied; public response SHA-256 c3ac9632f92b29a7648c1f565851cf08ca7ed378cf83bee88e7cd49665c2cecd; English and every non-fil locale preserved"
+    },
+    {
+      "id": "swift-tests",
+      "status": "proven",
+      "evidence": "xcrun swift test --disable-sandbox passed 8/8 after editorial pass 5 in both the worktree and final Desktop checkout"
+    },
+    {
+      "id": "xnb-fonts",
+      "status": "proven",
+      "evidence": "SpriteFont1 and SmallFont each round-trip with 351 sorted glyphs and all 182 required characters; metadata lists align"
+    },
+    {
+      "id": "smapi-and-visual",
+      "status": "proven",
+      "evidence": "final unified package 1.11.0 passed Stardew Valley 1.6.15 / SMAPI 4.5.2 runtime QA; nine 1280x720 captures cover title, both language pages, character creation, inventory, skills, options, dialogue and both fonts; 0 Content Patcher errors/warnings and 0 QA stage failures"
+    },
+    {
+      "id": "release-artifacts",
+      "status": "proven",
+      "evidence": "rebuilt Desktop app passes codesign --verify --deep --strict; ZIP passes unzip -t; ZIP SHA-256 7737ce64987642170d1402a47b03b51d1626bc6650202c929aa2339240b61298"
+    },
+    {
+      "id": "delivery-parity",
+      "status": "proven",
+      "evidence": "All 152 Filipino translation files, 341 editorial batch files, the Filipino editorial gate, and evidence documents are synchronized with /Users/antonkrutov/Desktop/StardewTranslationInstaller; its full audit reports 0 errors/warnings and Swift passes 8/8."
+    },
+    {
+      "id": "scope-constraints",
+      "status": "proven",
+      "evidence": "Editorial pass 5 changed only Filipino translations, Filipino review evidence, and its locale-specific audit; English, every non-fil locale, and unrelated owner changes were preserved. The verified Filipino change was committed to canonical main at the owner's request; no application deployment or push was performed."
+    }
+  ],
+  "remainingAction": null,
+  "completedAt": "2026-09-09",
+  "publicationEvidence": "Documentation/filipino/glossary-publication.json"
+}

@@ -194,6 +194,22 @@ const languages = [
     fontFile: "Fonts/Russian",
     fontPixelZoom: 3,
   },
+  {
+    directory: "thai",
+    suffix: "Thai",
+    code: "th-vnrevival",
+    buttonTarget: "ButtonThai",
+    button: "assets/button-thai.png",
+    title: "assets/title/TitleButtons-thai.png",
+    fonts: "assets/fonts/thai",
+    useLatinFont: false,
+    fontFile: "Fonts/Thai",
+    fontPixelZoom: 3,
+    bitmapFonts: [
+      { target: "Fonts/Thai", file: "assets/fonts/thai/Thai.xnb" },
+      { target: "Fonts/Thai_0", file: "assets/fonts/thai/Thai_0.xnb" },
+    ],
+  },
 ];
 
 const entries = {};

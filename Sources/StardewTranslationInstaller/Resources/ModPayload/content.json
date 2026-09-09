@@ -188,6 +188,18 @@
           "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
           "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
           "NumberComma": " "
+        },
+        "{{ModId}}_Thai": {
+          "ID": "{{ModId}}_Thai",
+          "LanguageCode": "th-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonThai",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/Thai",
+          "FontPixelZoom": 3,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
         }
       }
     },
@@ -584,6 +596,39 @@
       "Target": "Fonts/SmallFont",
       "TargetLocale": "bg-vnrevival",
       "FromFile": "assets/fonts/bulgarian/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonThai",
+      "FromFile": "assets/button-thai.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "th-vnrevival",
+      "FromFile": "assets/title/TitleButtons-thai.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "th-vnrevival",
+      "FromFile": "assets/fonts/thai/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "th-vnrevival",
+      "FromFile": "assets/fonts/thai/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Thai",
+      "FromFile": "assets/fonts/thai/Thai.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/Thai_0",
+      "FromFile": "assets/fonts/thai/Thai_0.xnb"
     },
     {
       "Action": "Include",
@@ -16152,6 +16197,610 @@
     {
       "Action": "Include",
       "FromFile": "assets/translations/bulgarian/0609-supplement-jukebox-disabled.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/animation-descriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/aquarium-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/caroline-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/characters-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/clint-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/cooking-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/cooking-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/crafting-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/data-reference-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/demetrius-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/dwarf-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/enchantment-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/evelyn-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-quality-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-reference-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-reference-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events-reference-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/extra-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-01-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-02.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-03.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-04.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-05.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-06.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-07.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-data-08.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-reference.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/festivals-structure-fix.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/furniture-data-polish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/george-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/gil-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/gus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/jas-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/jodi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/kent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/leo-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/leo-mainland-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/lewis-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/linus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marnie-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-abigail-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-alex-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-elliott-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-emily-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-haley-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-harvey-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-krobus-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-leah-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/marriage-shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/maru-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/mister-qi-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/monsters-01.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/one-six-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/pam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/penny-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/pierre-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/rainy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/robin-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/sam-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/sandy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-george.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/schedules-willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/sebastian-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/secret-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/shane-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/simple-dialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/strings-from-cs-files.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/strings-from-maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/tip-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/vincent-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/willy-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/wizard-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/thai/world-map.json"
     }
   ]
 }

@@ -14,10 +14,10 @@ CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
 /usr/bin/swiftc "$project_root/Scripts/render-shaped-text.swift" -o "$renderer"
 
 VN_SHAPED_TEXT_RENDERER="$renderer" VN_LANGUAGE_LABEL='ภาษาไทย' \
-/usr/bin/python3 "$project_root/Scripts/generate-kannada-button.py" "$assets/button-tamil.png" "$font_file" "$button_output"
+/usr/bin/python3 "$project_root/Scripts/generate-kannada-button.py" "$assets/button-hindi.png" "$font_file" "$button_output"
 
 VN_SHAPED_TEXT_RENDERER="$renderer" VN_TITLE_LOCALE=th \
-/usr/bin/python3 "$project_root/Scripts/generate-kannada-title.py" "$assets/title/TitleButtons-tamil.png" "$font_file" "$title_output"
+/usr/bin/python3 "$project_root/Scripts/generate-kannada-title.py" "$assets/title/TitleButtons-hindi.png" "$font_file" "$title_output"
 
 /bin/cp "$button_output" "$assets/button-thai.png"
 /bin/cp "$title_output" "$assets/title/TitleButtons-thai.png"

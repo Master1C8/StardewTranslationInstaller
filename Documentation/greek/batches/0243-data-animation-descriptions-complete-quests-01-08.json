@@ -1,0 +1,142 @@
+{
+  "id": "0243-data-animation-descriptions-complete-quests-01-08",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "e327e440614295471ddbe0f379367e08b5cd1978cb58a734ff8d60b34ef1e50d",
+    "notes": "Checked the final seven animation records and first eight quest definitions twice against authoritative English assets. Animation frame sequences are preserved exactly as technical data. Quest type/location/reward/item fields and slash layouts are unchanged; titles, descriptions, and objectives received two editorial passes for natural modern Greek, gender-neutral player wording, clear tutorial instructions, and current glossary terms for the Wizard, Mr. Qi, Community Center, Robin, Coop, Barn, Farming, and Scarecrow."
+  },
+  "records": [
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_beach_towel",
+      "source": "20/20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 22 22 22 22 22 22 22 22 22 21 20 20 20 20 20 20 20 20 20 20 20 20 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23/20",
+      "translation": "20/20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 22 22 22 22 22 22 22 22 22 21 20 20 20 20 20 20 20 20 20 20 20 20 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23/20",
+      "preserveReason": "Technical animation frame sequence."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_beach_umbrella",
+      "source": "16/16 16 16 16 16 16 16 16 17 17 17 17 17 17 17 17 18 18 18 18 17 17 17 17 19 19 19 19 17 17 17 17 18 18 18 18 17 17 17 17 19 19 19 19 17 17 17 17 16 16 16 16 16 16 16 16/16",
+      "translation": "16/16 16 16 16 16 16 16 16 17 17 17 17 17 17 17 17 18 18 18 18 17 17 17 17 19 19 19 19 17 17 17 17 18 18 18 18 17 17 17 17 19 19 19 19 17 17 17 17 16 16 16 16 16 16 16 16/16",
+      "preserveReason": "Technical animation frame sequence."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "shane_beach_drink",
+      "source": "16/16 16 17 17 18 18 19 19 20 20 20 20 20 20 20 20 19 19 18 18 17 17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/16",
+      "translation": "16/16 16 17 17 18 18 19 19 20 20 20 20 20 20 20 20 19 19 18 18 17 17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/16",
+      "preserveReason": "Technical animation frame sequence."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leah_beach_drink",
+      "source": "16/16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 19 16 16 16 16 16 16 16 16 16 16 16 16 17 18 18 18 18 17 16 16 16 16 16 16 16 16 17 18 18 18 17 16 16 16 16 16 16 19/16",
+      "translation": "16/16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 19 16 16 16 16 16 16 16 16 16 16 16 16 17 18 18 18 18 17 16 16 16 16 16 16 16 16 17 18 18 18 17 16 16 16 16 16 16 19/16",
+      "preserveReason": "Technical animation frame sequence."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leo_sleep",
+      "source": "23/23/23",
+      "translation": "23/23/23",
+      "preserveReason": "Technical animation frame sequence."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leo_sit_up",
+      "source": "24/24/24",
+      "translation": "24/24/24",
+      "preserveReason": "Technical animation frame sequence."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sandy_wave",
+      "source": "16/16 16 17 17/16",
+      "translation": "16/16 16 17 17/16",
+      "preserveReason": "Technical animation frame sequence."
+    },
+    {
+      "target": "Data/Quests",
+      "key": "1",
+      "source": "Location/Meet The Wizard/You received a letter from the local wizard. He claims to have information regarding the old community center./Enter the wizard's tower./WizardHouse/-1/0/-1/false",
+      "translation": "Location/Γνώρισε τον Μάγο/Έλαβες ένα γράμμα από τον ντόπιο μάγο. Ισχυρίζεται ότι έχει πληροφορίες για το παλιό Κοινοτικό Κέντρο./Μπες στον Πύργο του Μάγου./WizardHouse/-1/0/-1/false",
+      "glossaryIds": [
+        "wizard-rasmodius",
+        "community-center",
+        "wizards-tower"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "2",
+      "source": "Basic/The Mysterious Qi/Within a secret lock-box, you found a note with peculiar instructions. It's signed by a 'Mr. Qi'./Leave a rainbow shell in the box at the train platform./null/-1/0/-1/false",
+      "translation": "Basic/Ο Μυστηριώδης Τσι/Μέσα σε ένα κρυφό κλειδωμένο κουτί, βρήκες ένα σημείωμα με παράξενες οδηγίες. Το υπογράφει κάποιος «κ. Τσι»./Άφησε ένα Κοχύλι Ουράνιου Τόξου στο κουτί, στην αποβάθρα του τρένου./null/-1/0/-1/false",
+      "glossaryIds": [
+        "mr-qi"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "3",
+      "source": "Basic/The Mysterious Qi/You've found another note written by 'Mr. Qi'. The request is even more unusual this time./Place 10 beets inside Mayor Lewis' fridge./null/-1/0/-1/false",
+      "translation": "Basic/Ο Μυστηριώδης Τσι/Βρήκες άλλο ένα σημείωμα γραμμένο από τον «κ. Τσι». Αυτή τη φορά, το αίτημα είναι ακόμη πιο ασυνήθιστο./Βάλε 10 παντζάρια στο ψυγείο του Δημάρχου Λιούις./null/-1/0/-1/false",
+      "glossaryIds": [
+        "mr-qi",
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "4",
+      "source": "Basic/The Mysterious Qi/You've found yet another strange note within the Mayor's fridge. This time, the instructions are more cryptic./\"Give the sand dragon his final meal.\"/null/-1/0/-1/false",
+      "translation": "Basic/Ο Μυστηριώδης Τσι/Βρήκες ακόμη ένα παράξενο σημείωμα μέσα στο ψυγείο του Δημάρχου. Αυτή τη φορά, οι οδηγίες είναι πιο αινιγματικές./«Δώσε στον δράκο της ερήμου το τελευταίο του γεύμα.»/null/-1/0/-1/false",
+      "glossaryIds": [
+        "mr-qi"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "5",
+      "source": "Basic/The Mysterious Qi/You found another note in the sand dragon's eye. It seems Mr. Qi's strange scavenger hunt has come to an end./Inspect the lumber pile beside your house./null/-1/0/-1/false",
+      "translation": "Basic/Ο Μυστηριώδης Τσι/Βρήκες άλλο ένα σημείωμα στο μάτι του δράκου της ερήμου. Φαίνεται πως το παράξενο κυνήγι θησαυρού του κ. Τσι έφτασε στο τέλος του./Εξέτασε τη στοίβα ξυλείας δίπλα στο σπίτι σου./null/-1/0/-1/false",
+      "glossaryIds": [
+        "mr-qi"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "6",
+      "source": "ItemHarvest/Getting Started/If you want to become a farmer, you have to start with the basics. Use your hoe to till the soil, then use a seed packet on the tilled soil to sow a crop. Water every day until the crop is ready for harvest./Cultivate and harvest a parsnip./(O)24/h7 8/100/-1/true",
+      "translation": "ItemHarvest/Πρώτα βήματα/Για να ξεκινήσεις τη γεωργία, πρέπει να μάθεις τα βασικά. Χρησιμοποίησε την τσάπα σου για να οργώσεις το χώμα και μετά χρησιμοποίησε ένα πακέτο σπόρων στο οργωμένο χώμα για να σπείρεις. Πότιζε κάθε μέρα μέχρι να είναι έτοιμη η καλλιέργεια για συγκομιδή./Καλλιέργησε και μάζεψε ένα παστινάκι./(O)24/h7 8/100/-1/true",
+      "glossaryIds": [
+        "farming-skill"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "7",
+      "source": "Building/Raising Animals/Robin, the local carpenter, lives north of town. In exchange for raw materials and money, she'll construct new buildings on your farm. You'll need her to build a coop or barn so that you can raise animals./Build a Coop./Coop/-1/100/-1/true",
+      "translation": "Building/Εκτροφή Ζώων/Η Ρόμπιν, η ντόπια ξυλουργός, ζει βόρεια της πόλης. Με αντάλλαγμα πρώτες ύλες και χρήματα, θα κατασκευάσει νέα κτίρια στο αγρόκτημά σου. Θα χρειαστεί να σου φτιάξει ένα Κοτέτσι ή έναν Στάβλο για να εκτρέφεις ζώα./Κατασκεύασε ένα Κοτέτσι./Coop/-1/100/-1/true",
+      "glossaryIds": [
+        "robin",
+        "coop",
+        "barn",
+        "farm"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "8",
+      "source": "Crafting/Advancement/As you gain experience, you'll discover new crafting recipes to increase profit and make life easier. A scarecrow, for example, will prevent crows from snacking on your precious crops./Reach Farming level 1 and craft a scarecrow./(BC)8/-1/100/-1/true",
+      "translation": "Crafting/Πρόοδος/Καθώς αποκτάς εμπειρία, θα ανακαλύπτεις νέες συνταγές κατασκευής που αυξάνουν τα κέρδη και κάνουν τη ζωή ευκολότερη. Ένα Σκιάχτρο, για παράδειγμα, εμποδίζει τα κοράκια να τσιμπολογούν τις πολύτιμες καλλιέργειές σου./Φτάσε στο επίπεδο 1 της Γεωργίας και κατασκεύασε ένα Σκιάχτρο./(BC)8/-1/100/-1/true",
+      "glossaryIds": [
+        "farming-skill",
+        "scarecrow-rarecrow"
+      ]
+    }
+  ]
+}

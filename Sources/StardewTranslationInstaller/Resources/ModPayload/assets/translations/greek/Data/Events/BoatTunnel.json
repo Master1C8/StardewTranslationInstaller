@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "el-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"Αμέ... θλιβερό θέαμα, έτσι δεν είναι;\"/pause 500/speak Willy \"Ήταν η βάρκα του πατέρα μου... Τον υπηρέτησε καλά για πάνω από 50 χρόνια.#$b#Τώρα όμως μετά βίας επιπλέει.$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Θα την επισκεύαζα μόνος μου, αλλά δεν έχω τα κατάλληλα υλικά, ${παλικάρι μου^δεσποινίς μου}$.\"/faceDirection Willy 0/speak Willy \"Αμέ... 200 κομμάτια Σκληρό Ξύλο για να μπαλώσουμε το κύτος θα ήταν καλή αρχή.#$b#Αλλά πρέπει επίσης να ξαναλειτουργήσει το μηχάνημα εισιτηρίων και να επισκευαστεί η άγκυρα από ιρίδιο.\"/faceDirection farmer 0/pause 400/speak Willy \"Αν μπορούσα να βρω τα κατάλληλα υλικά και να επισκευάσω τη γριούλα... τότε θα μπορούσα να σε πάω στα Νησιά Φερν.\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Ηφαιστειακά νησιά γεμάτα παράξενους παπαγάλους, λένε...\"/pause 400/quickQuestion #Θα ήθελα να βοηθήσω#Μπα, θα το αφήσω...(break)emote Willy 32\\speak Willy \"Αμέ... Το περίμενα από σένα, ${παλικάρι μου^δεσποινίς μου}$.$h\"\\speak Willy \"Θα αφήσω ξεκλείδωτη αυτή την πόρτα... μπορείς να έρχεσαι και να αφήνεις τα υλικά όποτε θέλεις.\"(break)emote Willy 28\\speak Willy \"Εντάξει, όπως θέλεις...$s#$b#Αν αλλάξεις γνώμη, μπορείς πάντα να επιστρέψεις και να βοηθήσεις. Θα αφήσω πάντως αυτή την πόρτα ξεκλείδωτη.\"/pause 2000/end"
+      }
+    }
+  ]
+}

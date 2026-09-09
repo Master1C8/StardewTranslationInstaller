@@ -1,0 +1,154 @@
+{
+  "id": "0453-mail-061-075",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "d56cc44e69d4d3b368becf362f80b5114e1e8c67d9af01cd8deb1f8b935fc28d",
+    "notes": "Editorial pass 1 and pass 2 complete: checked all 15 letters against the English asset; reviewed awards, Willy heirloom dialect, adoption placeholder, mines, fertilizers, Hat Mouse speech, arcade titles, event invitations, subject lines, glossary terms, item commands, IDs, and quantities."
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "quest35",
+      "source": "Dear @,^You've been such a help around town since you moved here... everyone keeps telling me all the wonderful things you've done for them! Please accept this thank-you prize. ^   -Mayor%item money 2500 2501 %%[#]Thank-you From Lewis",
+      "translation": "Γεια σου, @,^Έχεις βοηθήσει τόσο πολύ στην πόλη από τότε που μετακόμισες εδώ... όλοι μού λένε συνεχώς για τα υπέροχα πράγματα που έχεις κάνει για εκείνους! Παρακαλώ, δέξου αυτό το βραβείο ως ευχαριστία. ^   -Δήμαρχος%item money 2500 2501 %%[#]Ευχαριστήριο από τον Λιούις",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "quest100",
+      "source": "@,^I am pleased to announce that you've been chosen as \"Neighbor of the year\"! That comes with a 10,000g prize! Congratulations! Everyone in town wants to say 'thanks' for all you've done. ^   -Mayor%item money 10000 10001 %%[#]Neighbor Of The Year",
+      "translation": "@,^Με χαρά ανακοινώνω ότι επιλέχθηκες ως το «Πρόσωπο της Χρονιάς στη Γειτονιά»! Ο τίτλος συνοδεύεται από έπαθλο 10,000g! Συγχαρητήρια! Όλοι στην πόλη θέλουν να πουν «ευχαριστώ» για όσα έχεις κάνει. ^   -Δήμαρχος%item money 10000 10001 %%[#]Πρόσωπο της Χρονιάς στη Γειτονιά",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "CF_Fish",
+      "source": "Dear @,^ Your angling skills surpass even my ol' Pappy's... I'm impressed. ^ This stardrop's been passed down from Willy Sr. to Willy Jr. for... oh, heck. Prob'ly a thousand years.^Seein' as I don't have any kids... I want you to have it.^^ -Willy   ^  %item id (O)434 1 %%[#]Willy's Family Heirloom",
+      "translation": "Γεια σου, @,^ Οι ικανότητές σου στο ψάρεμα ξεπερνούν ακόμη και του γερο-πατέρα μου... Έχω εντυπωσιαστεί. ^ Αυτή η Αστεροσταγόνα περνά από τον Γουίλι τον Πρεσβύτερο στον Γουίλι τον Νεότερο εδώ και... αχ, ποιος ξέρει. Κοντά χίλια χρόνια.^Κι αφού δεν έχω παιδιά... θέλω να την πάρεις εσύ.^^ -Γουίλι   ^  %item id (O)434 1 %%[#]Το Οικογενειακό Κειμήλιο του Γουίλι",
+      "glossaryIds": [
+        "willy",
+        "stardrop"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "adoptionLetter",
+      "source": "Dear @ and spouse,^Congratulations! Your adoption application has been approved.^We're working hard to choose the perfect baby to match your profile.^Your new family member will arrive in 2 weeks.^^-Ferngill Adoption Agency[#]Adoption Notice",
+      "translation": "Προς @ και spouse,^Συγχαρητήρια! Η αίτησή σας για υιοθεσία εγκρίθηκε.^Εργαζόμαστε σκληρά για να επιλέξουμε το ιδανικό μωρό που ταιριάζει στο προφίλ σας.^Το νέο μέλος της οικογένειάς σας θα φτάσει σε 2 εβδομάδες.^^-Υπηρεσία Υιοθεσιών Φέργκιλ[#]Ειδοποίηση Υιοθεσίας",
+      "glossaryIds": [
+        "ferngill-republic"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "stardewHeroMine",
+      "source": "Secret Message: If you can reach the bottom of the mines one more time, a secret awaits you. Be careful, the mines have become more dangerous.[#]Secret Message",
+      "translation": "Μυστικό Μήνυμα: Αν καταφέρεις να φτάσεις στον πυθμένα των Ορυχείων άλλη μία φορά, σε περιμένει ένα μυστικό. Πρόσεχε, τα Ορυχεία έχουν γίνει πιο επικίνδυνα.[#]Μυστικό Μήνυμα",
+      "glossaryIds": [
+        "the-mines"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fertilizers",
+      "source": "Dear neighbor,^I hope you are feeling settled in your new home. I am writing to let you know that Pierre's store is now selling fertilizers! Why don't you swing by and see if you can afford a few dozen boxes or so?  ^   -Pierre[#]Pierre's Fertilizers",
+      "translation": "Αγαπητό μέλος της γειτονιάς,^Ελπίζω να έχεις τακτοποιηθεί στο νέο σου σπίτι. Σου γράφω για να σε ενημερώσω ότι το Παντοπωλείο του Πιερ πουλά πλέον λιπάσματα! Γιατί δεν περνάς να δεις αν μπορείς να αγοράσεις μερικές δεκάδες κουτιά;  ^   -Πιερ[#]Τα Λιπάσματα του Πιερ",
+      "glossaryIds": [
+        "pierre",
+        "pierres-general-store",
+        "fertilizer"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fertilizers2",
+      "source": "Dear @,^I am now selling higher quality fertilizers, as well as new crop selections! See you soon. ^   -Pierre[#]Pierre's High Quality Fertilizers",
+      "translation": "Γεια σου, @,^Πλέον πουλάω λιπάσματα ανώτερης ποιότητας, καθώς και νέες επιλογές καλλιεργειών! Τα λέμε σύντομα. ^   -Πιερ[#]Τα Λιπάσματα Υψηλής Ποιότητας του Πιερ",
+      "glossaryIds": [
+        "pierre",
+        "fertilizer"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "abbySpiritBoard",
+      "source": "Hi @.^One of these days you should come to my room after dark... Maybe around 8pm. ^I want to show you something. ^   -Abby[#]Abby's Note",
+      "translation": "Γεια σου, @.^Κάποια μέρα πρέπει να έρθεις στο δωμάτιό μου αφού νυχτώσει... Ίσως γύρω στις 8 μ.μ. ^Θέλω να σου δείξω κάτι. ^   -Άμπι[#]Σημείωμα της Άμπι",
+      "glossaryIds": [
+        "abigail"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "pennySpa",
+      "source": "Meet me in the bath house after dark. ^   -Penny[#]Penny's Note",
+      "translation": "Συνάντησέ με στο Λουτρό αφού νυχτώσει. ^   -Πένι[#]Σημείωμα της Πένι",
+      "glossaryIds": [
+        "penny",
+        "bath-house"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "incubator",
+      "source": "Dear @,^^Thank you for purchasing a coop upgrade! In addition to doubling the capacity of your coop, I've taken the liberty of installing an incubator. ^To use the incubator, simply place an egg inside. If you have space left in your coop, the egg will hatch in several days!^^As always, thanks for your business.^-Robin[#]About The Incubator",
+      "translation": "Γεια σου, @,^^Ευχαριστώ που αγόρασες αναβάθμιση για το Κοτέτσι! Εκτός από τον διπλασιασμό της χωρητικότητας του Κοτετσιού σου, πήρα την πρωτοβουλία να εγκαταστήσω ένα Εκκολαπτήριο. ^Για να χρησιμοποιήσεις το Εκκολαπτήριο, απλώς τοποθέτησε μέσα ένα αυγό. Αν υπάρχει ελεύθερος χώρος στο Κοτέτσι σου, το αυγό θα εκκολαφθεί μέσα σε λίγες μέρες!^^Όπως πάντα, ευχαριστώ για την προτίμηση.^-Ρόμπιν[#]Σχετικά με το Εκκολαπτήριο",
+      "glossaryIds": [
+        "robin",
+        "coop",
+        "incubator"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "hatter",
+      "source": "Hi.^^Me sell hats. Okay, poke?^^Come to old old old haus, poke. Bring coines.^^-hat mouse[#]Hiyo, Poke",
+      "translation": "Γεια.^^Εγώ πουλά καπέλα. Εντάξει, ποκ;^^Έλα παλιό παλιό παλιό σπίτ, ποκ. Φέρε νομισματ.^^-ποντίκι καπέλων[#]Γειαα, Ποκ"
+    },
+    {
+      "target": "Data/mail",
+      "key": "Beat_PK",
+      "source": "Congratulations!!^^You beat 'Journey Of The Prairie King', and were randomly selected in our exclusive winner's sweepstakes! ^You've won a Prairie King Arcade System of your very own!^Now you can enjoy 'Journey Of The Prairie King' from the comfort of your own home.^^You deserve it!^-Prairie King Development Team %item id (BC)141 %%[#]P.K. Congratulations!",
+      "translation": "Συγχαρητήρια!!^^Ολοκλήρωσες το παιχνίδι «Το Ταξίδι του Βασιλιά του Λιβαδιού» και επιλέχθηκες τυχαία στην αποκλειστική μας κλήρωση νικητών! ^Κέρδισες το δικό σου Σύστημα Arcade του Βασιλιά του Λιβαδιού!^Τώρα μπορείς να απολαμβάνεις από την άνεση του σπιτιού σου το παιχνίδι «Το Ταξίδι του Βασιλιά του Λιβαδιού».^^Το αξίζεις!^-Ομάδα Ανάπτυξης του Βασιλιά του Λιβαδιού %item id (BC)141 %%[#]Συγχαρητήρια Β.Λ.!",
+      "glossaryIds": [
+        "prairie-king"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "JunimoKart",
+      "source": "Congratulations!!^^You beat all the levels in 'JunimoKart'... you're actually the first person in the entire Ferngill Republic to do so!^Your prize: a home version of Junimo Kart!^^Have fun!^-Junimo Kart Development Team %item id (BC)159 %%[#]Junimo Kart Success!",
+      "translation": "Συγχαρητήρια!!^^Ολοκλήρωσες όλες τις πίστες στο «Καρτ Τζουνίμο»... είσαι το πρώτο πρόσωπο σε ολόκληρη τη Δημοκρατία Φέργκιλ που το καταφέρνει!^Το βραβείο σου: μια οικιακή έκδοση του Καρτ Τζουνίμο!^^Καλή διασκέδαση!^-Ομάδα Ανάπτυξης του Καρτ Τζουνίμο %item id (BC)159 %%[#]Επιτυχία στο Καρτ Τζουνίμο!",
+      "glossaryIds": [
+        "junimo-kart",
+        "ferngill-republic"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottReading",
+      "source": "@,^I have great news... my novel is finished!! I'm giving a public reading this afternoon at the library. Hope to see you there! ^   -Elliott[#]Elliott's Reading",
+      "translation": "@,^Έχω υπέροχα νέα... το μυθιστόρημά μου ολοκληρώθηκε!! Θα κάνω μια δημόσια ανάγνωση σήμερα το απόγευμα στη βιβλιοθήκη. Ελπίζω να σε δω εκεί! ^   -Έλιοτ[#]Η Ανάγνωση του Έλιοτ",
+      "glossaryIds": [
+        "elliott"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottBoat",
+      "source": "Meet me at the docks on a sunny morning. I've got something in mind. ^   -Elliott[#]Elliott's Note",
+      "translation": "Συνάντησέ με στις αποβάθρες ένα ηλιόλουστο πρωινό. Έχω κάτι κατά νου. ^   -Έλιοτ[#]Σημείωμα του Έλιοτ",
+      "glossaryIds": [
+        "elliott"
+      ]
+    }
+  ]
+}

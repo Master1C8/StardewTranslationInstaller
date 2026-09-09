@@ -1,0 +1,149 @@
+{
+  "id": "0247-data-quests-complete-hats-01-02",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "a9e72e4a56b8ce8954f41f5c5c668d89deeda71186afd96e8ea848ecf0931a24",
+    "notes": "Checked the final 13 quest definitions and first two hat records twice against authoritative English source. Preserved all quest types, NPC/item/location metadata, quantities, rewards, booleans, numeric forms, slash layouts, placeholders, dialogue controls, hat flags, and empty fields exactly. Player-visible titles, instructions, dialogue, hat names, and descriptions received two editorial passes for idiomatic Greek, gender-neutral player wording, distinct character voices, unambiguous quest clues, and current glossary terms for Pam, the Wizard, Willy, Gus, Emily, Haley, Abigail, Caroline, Ginger Island, Birdie, Fiber, Hay, Silo, Scythe, farm, and Hardwood."
+  },
+  "records": [
+    {
+      "target": "Data/Quests",
+      "key": "122",
+      "source": "ItemDelivery/Pam Needs Juice/Pam's TV Remote is dead. She's having a tough time going back and forth between the couch and the TV dial./Bring Pam a Battery Pack./Pam (O)787/-1/400/-1/true/Hey, you pulled through with the battery pack! Thanks, kid... You're a life-saver!$h",
+      "translation": "ItemDelivery/Η Παμ Χρειάζεται Ρεύμα/Το τηλεχειριστήριο της τηλεόρασης της Παμ ξεφόρτισε. Την ταλαιπωρεί να πηγαινοέρχεται ανάμεσα στον καναπέ και τα κουμπιά της τηλεόρασης./Πήγαινε μια Μπαταρία στην Παμ./Pam (O)787/-1/400/-1/true/Έι, τα κατάφερες με την Μπαταρία! Ευχαριστώ, παιδί μου... Με έσωσες!$h",
+      "glossaryIds": [
+        "pam"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "123",
+      "source": "ItemDelivery/Staff Of Power/The Wizard is creating a staff of phenomenal power. Who knows what it's for. He needs an iridium bar to finish it./Bring Wizard an Iridium Bar./Wizard (O)337/-1/5000/-1/true/Ah, precious iridium. You've done well, @. You have my gratitude. Now, leave.",
+      "translation": "ItemDelivery/Ράβδος Δύναμης/Ο Μάγος δημιουργεί μια ράβδο απίστευτης δύναμης. Ποιος ξέρει πού τη χρειάζεται. Για να την ολοκληρώσει, χρειάζεται μια Ράβδο Ιριδίου./Πήγαινε μια Ράβδο Ιριδίου στον Μάγο./Wizard (O)337/-1/5000/-1/true/Α, πολύτιμο Ιρίδιο. Τα πήγες καλά, @. Έχεις την ευγνωμοσύνη μου. Τώρα φύγε.",
+      "glossaryIds": [
+        "wizard-rasmodius"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "124",
+      "source": "ItemDelivery/Catch a Lingcod/Willy is challenging you to catch a Lingcod./Bring Willy a Lingcod./Willy (O)707/-1/550/-1/true/Hey, that's a real lunker! You've certainly got the angler's blood in you.$h",
+      "translation": "ItemDelivery/Πιάσε έναν Λινγκόδο/Ο Γουίλι σε προκαλεί να πιάσεις έναν Λινγκόδο./Πήγαινε έναν Λινγκόδο στον Γουίλι./Willy (O)707/-1/550/-1/true/Έι, αυτό κι αν είναι θηρίο! Σίγουρα κυλάει αίμα ψαρά στις φλέβες σου.$h",
+      "glossaryIds": [
+        "willy"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "125",
+      "source": "ItemDelivery/Exotic Spirits/Gus wants to make a Coco-no-no, but he's missing the main ingredient./Bring Gus a Coconut./Gus (O)88/-1/600/-1/true/Coconut! Now there's a soothing sight for my winter eyes.$h#$b#It's going to be perfect for my coco-no-no. Thanks!",
+      "translation": "ItemDelivery/Εξωτικά Ποτά/Ο Γκας θέλει να φτιάξει ένα Κόκο-νόου-νόου, αλλά του λείπει το βασικό συστατικό./Πήγαινε μια Καρύδα στον Γκας./Gus (O)88/-1/600/-1/true/Καρύδα! Τι ανακουφιστικό θέαμα για τα χειμωνιάτικα μάτια μου.$h#$b#Θα είναι τέλεια για το Κόκο-νόου-νόου μου. Ευχαριστώ!",
+      "glossaryIds": [
+        "gus"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "126",
+      "source": "ItemDelivery/Errand for your Wife/Your wife asked you to bring her 200 pieces of fiber for a secret project./Bring Emily 200 fiber./Emily (O)771 200/-1/0/-1/false/Oh, this looks perfect... and it's sustainably sourced, too! Thanks so much, @.$h#$b#Now, I've got my work cut out for me. It'll be a few more days before it's ready...",
+      "translation": "ItemDelivery/Μια Δουλειά για τη Σύζυγό σου/Η σύζυγός σου σού ζήτησε να της φέρεις 200 Ίνες για ένα μυστικό έργο./Πήγαινε 200 Ίνες στην Έμιλι./Emily (O)771 200/-1/0/-1/false/Α, φαίνονται τέλειες... και προέρχονται από βιώσιμες πηγές! Ευχαριστώ πάρα πολύ, @.$h#$b#Τώρα με περιμένει πολλή δουλειά. Θα χρειαστούν λίγες ακόμη μέρες μέχρι να είναι έτοιμο...",
+      "glossaryIds": [
+        "emily",
+        "fiber"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "127",
+      "source": "Basic/Haley's Cake-Walk/Your wife is organizing a charity cake-walk in the town square. She asked you to bring a chocolate cake./Enter Town on a sunny morning with a chocolate cake./-1/-1/0/-1/true",
+      "translation": "Basic/Ο Γλυκός Περίπατος της Χέιλι/Η σύζυγός σου οργανώνει έναν φιλανθρωπικό περίπατο με κέικ στην πλατεία της πόλης. Σου ζήτησε να φέρεις ένα Σοκολατένιο Κέικ./Μπες στην Πόλη ένα ηλιόλουστο πρωινό έχοντας μαζί σου ένα Σοκολατένιο Κέικ./-1/-1/0/-1/true",
+      "glossaryIds": [
+        "haley"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "128",
+      "source": "SecretLostItem/.../.../.../Abigail (O)191 100 129/-1/0/-1/false/That necklace! Where did you find it?$7#$b#Well, thanks for bringing it to me, @. My mom will never know...$h",
+      "translation": "SecretLostItem/.../.../.../Abigail (O)191 100 129/-1/0/-1/false/Αυτό το κολιέ! Πού το βρήκες;$7#$b#Λοιπόν, ευχαριστώ που μου το έφερες, @. Η μαμά μου δεν θα το μάθει ποτέ...$h",
+      "glossaryIds": [
+        "abigail"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "129",
+      "source": "SecretLostItem/.../.../.../Caroline (O)191 50 128/-1/0/-1/false/What's this? My old necklace?$s#$b#That's strange, I didn't even notice it was missing... Well, thanks for bringing it back, @.$h",
+      "translation": "SecretLostItem/.../.../.../Caroline (O)191 50 128/-1/0/-1/false/Τι είναι αυτό; Το παλιό μου κολιέ;$s#$b#Περίεργο, δεν είχα καν προσέξει ότι έλειπε... Λοιπόν, ευχαριστώ που μου το επέστρεψες, @.$h",
+      "glossaryIds": [
+        "caroline"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "130",
+      "source": "Basic/The Pirate's Wife/An old lady living on Ginger Island is asking you to find a keepsake of her husband's. She gave you an old photograph of a soldier that washed up on shore, hoping it would help in some way./Find a keepsake that belonged to Birdie's husband./-1/-1/0/-1/false",
+      "translation": "Basic/Η Γυναίκα του Πειρατή/Μια ηλικιωμένη γυναίκα που ζει στο Νησί Τζίντζερ σού ζητά να βρεις ένα ενθύμιο του συζύγου της. Σου έδωσε μια παλιά φωτογραφία ενός στρατιώτη, η οποία ξεβράστηκε στην ακτή, ελπίζοντας ότι θα βοηθήσει με κάποιον τρόπο./Βρες ένα ενθύμιο που ανήκε στον σύζυγο της Μπέρντι./-1/-1/0/-1/false",
+      "glossaryIds": [
+        "ginger-island",
+        "birdie"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "131",
+      "source": "Fishing/Willy's Challenge/Willy has challenged you to catch 3 Sandfish./Catch 3 Sandfish./-1/-1/0/-1/false",
+      "translation": "Fishing/Η Πρόκληση του Γουίλι/Ο Γουίλι σε προκάλεσε να πιάσεις 3 Αμμόψαρα./Πιάσε 3 Αμμόψαρα./-1/-1/0/-1/false",
+      "glossaryIds": [
+        "willy"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "132",
+      "source": "ItemHarvest/Getting Started/If you want to become a farmer, you have to start with the basics. Feed your chickens each day by letting them eat grass outside, or by placing hay into their troughs. Once they are mature, harvest an egg!/Harvest an egg from your chickens./-5/h8 133/100/-1/true",
+      "translation": "ItemHarvest/Πρώτα βήματα/Για να ξεκινήσεις τη γεωργία, πρέπει να μάθεις τα βασικά. Τάιζε τις κότες σου κάθε μέρα, αφήνοντάς τες να τρώνε γρασίδι έξω ή βάζοντας Σανό στις ταΐστρες τους. Όταν μεγαλώσουν, μάζεψε ένα αυγό!/Μάζεψε ένα αυγό από τις κότες σου./-5/h8 133/100/-1/true",
+      "glossaryIds": [
+        "hay"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "133",
+      "source": "Building/Feeding Animals/Robin, the local carpenter, lives north of town. In exchange for raw materials and money, she'll construct new buildings on your farm. If you build a silo, you can start harvesting your own grass with the scythe, and store it to feed your animals./Build a Silo./Silo/-1/100/-1/true",
+      "translation": "Building/Τάισμα Ζώων/Η Ρόμπιν, η ντόπια ξυλουργός, ζει βόρεια της πόλης. Με αντάλλαγμα πρώτες ύλες και χρήματα, θα κατασκευάσει νέα κτίρια στο αγρόκτημά σου. Αν φτιάξεις ένα Σιλό, θα μπορείς να θερίζεις το δικό σου γρασίδι με το Δρεπάνι και να το αποθηκεύεις για να ταΐζεις τα ζώα σου./Κατασκεύασε ένα Σιλό./Silo/-1/100/-1/true",
+      "glossaryIds": [
+        "robin",
+        "farm",
+        "silo",
+        "scythe"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "134",
+      "source": "Basic/The Giant Stump/The big tree to the south of my farm blew down. With 100 hardwood, I could turn the stump into something interesting.../Fix up the giant stump./-1/-1/0/-1/false",
+      "translation": "Basic/Το Γιγάντιο Κούτσουρο/Το μεγάλο δέντρο νότια του αγροκτήματός μου έπεσε από τον άνεμο. Με 100 κομμάτια Σκληρού Ξύλου, θα μπορούσα να μετατρέψω το κούτσουρο σε κάτι ενδιαφέρον.../Επισκεύασε το γιγάντιο κούτσουρο./-1/-1/0/-1/false",
+      "glossaryIds": [
+        "farm",
+        "hardwood"
+      ]
+    },
+    {
+      "target": "Data/hats",
+      "key": "0",
+      "source": "Cowboy Hat/The leather is old and cracked, but surprisingly supple. It smells musty./false/true//Cowboy Hat",
+      "translation": "Καουμπόικο Καπέλο/Το δέρμα είναι παλιό και σκασμένο, αλλά αναπάντεχα εύκαμπτο. Μυρίζει κλεισούρα./false/true//Καουμπόικο Καπέλο"
+    },
+    {
+      "target": "Data/hats",
+      "key": "1",
+      "source": "Bowler Hat/Made from smooth felt./false/true//Bowler Hat",
+      "translation": "Καπέλο Μπόουλερ/Φτιαγμένο από απαλό τσόχινο ύφασμα./false/true//Καπέλο Μπόουλερ"
+    }
+  ]
+}

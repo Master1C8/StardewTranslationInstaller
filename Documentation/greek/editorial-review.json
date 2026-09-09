@@ -1,0 +1,49 @@
+{
+  "locale": "el",
+  "languageCode": "el-vnrevival",
+  "sourceLanguage": "en",
+  "date": "2026-09-09",
+  "coverageDenominator": 14722,
+  "reviewedRecords": 14722,
+  "reviewedBatches": 514,
+  "corpusSHA256": "ffd0c5475c7d3b93eefa25ed63169ec99f4988759189267fb27953ecaf1a58d6",
+  "scope": [
+    1,
+    14722
+  ],
+  "methodology": [
+    "Direct comparison with the extracted English source",
+    "Greek meaning, grammar, register, readability, and natural phrasing",
+    "Current Greek glossary consistency by stable glossary ID",
+    "Speaker and player gender agreement",
+    "Visible English leakage and documented technical preservation reasons",
+    "Placeholders, markup, event commands, and control-token preservation",
+    "Generated patch structure and exact source-key coverage"
+  ],
+  "passes": [
+    {
+      "pass": 1,
+      "date": "2026-09-09",
+      "scope": [
+        1,
+        14722
+      ],
+      "result": "clean",
+      "newFindings": 0,
+      "technicalCommand": "python3 Scripts/audit-greek.py --idempotence"
+    },
+    {
+      "pass": 2,
+      "date": "2026-09-09",
+      "scope": [
+        1,
+        14722
+      ],
+      "result": "clean",
+      "newFindings": 0,
+      "technicalCommand": "python3 Scripts/audit-greek.py --idempotence"
+    }
+  ],
+  "consecutiveCleanFullPasses": 2,
+  "status": "passed"
+}

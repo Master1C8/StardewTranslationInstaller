@@ -1,0 +1,228 @@
+{
+  "id": "0492-festival-spring24-01-30",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "name",
+      "source": "Flower Dance",
+      "translation": "Χορός των Λουλουδιών",
+      "glossaryIds": [
+        "flower-dance"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "conditions",
+      "source": "Forest/900 1400",
+      "translation": "Forest/900 1400",
+      "glossaryIds": [],
+      "preserveReason": "Technical festival location and time condition; no player-facing text."
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "set-up",
+      "source": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "glossaryIds": [],
+      "preserveReason": "Technical festival setup script with no player-facing text."
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "mainEvent",
+      "source": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"That was fun! Time to go home...\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"Περάσαμε ωραία! Ώρα να γυρίσουμε σπίτι...\"/waitForOtherPlayers festivalEnd/end",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Abigail",
+      "source": "I really hate dancing in front of everyone... It's so embarrassing.#$e#Mom makes me do it.$u",
+      "translation": "Πραγματικά μισώ να χορεύω μπροστά σε όλους... Είναι τόσο ντροπιαστικό.#$e#Η μαμά με αναγκάζει.$u",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Robin",
+      "source": "Ahh... The air smells so sweet with all these flowers.$h",
+      "translation": "Αχ... Ο αέρας μοσχοβολά τόσο γλυκά με όλα αυτά τα λουλούδια.$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Demetrius",
+      "source": "These springtime dances can be traced back to ancient fertility rituals.#$e#Hey... You should know about this stuff, farmer.",
+      "translation": "Οι ανοιξιάτικοι αυτοί χοροί ανάγονται σε αρχαίες τελετές γονιμότητας.#$e#Έι... Εσύ πρέπει να τα ξέρεις αυτά, με όσα κάνεις στο αγρόκτημα.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Maru",
+      "source": "I like dancing, but this one is a little stilted. The old timers really love it, though.",
+      "translation": "Μου αρέσει ο χορός, αλλά αυτός είναι λίγο άκαμπτος. Οι παλιότεροι πάντως τον λατρεύουν.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sebastian",
+      "source": "Ugh...",
+      "translation": "Ουφ...",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Linus",
+      "source": "Oh, hello there. It's nice of you to talk to me.#$b#Spring is almost over... what a shame.",
+      "translation": "Α, γεια σου. Είναι ευγενικό που μου μιλάς.#$b#Η άνοιξη κοντεύει να τελειώσει... τι κρίμα.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Pierre",
+      "source": "What! How'd you get back here?$u#$b#Don't touch anything.",
+      "translation": "Τι! Πώς βρέθηκες εδώ πίσω;$u#$b#Μην αγγίζεις τίποτα.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Caroline",
+      "source": "I wish Pierre would spend this time with the family...$s",
+      "translation": "Μακάρι ο Πιέρ να περνούσε αυτόν τον χρόνο με την οικογένεια...$s",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Alex",
+      "source": "I'm just enjoying the scenery... hehe.",
+      "translation": "Απλώς απολαμβάνω το τοπίο... χεχε.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "George",
+      "source": "Flowers? I can hardly see them.#$e#It's too bright out here!",
+      "translation": "Λουλούδια; Με το ζόρι τα βλέπω.#$e#Έχει υπερβολικό φως εδώ έξω!",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Evelyn",
+      "source": "I've been working on these floral arrangements for a week. Do you like them?",
+      "translation": "Δουλεύω πάνω σε αυτές τις ανθοσυνθέσεις εδώ και μία εβδομάδα. Σου αρέσουν;",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Lewis",
+      "source": "If you'd like to dance with the other young people, you'll need to find a partner.",
+      "translation": "Αν θέλεις να χορέψεις με τους άλλους νέους, θα πρέπει να βρεις ταίρι.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Clint",
+      "source": "I wonder if Emily would dance with me?",
+      "translation": "Αναρωτιέμαι αν η Έμιλι θα χόρευε μαζί μου.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Penny",
+      "source": "*gulp*... I'm nervous.$s",
+      "translation": "*ξεροκατάπιασμα*... Έχω άγχος.$s",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Pam",
+      "source": "Now this is the life... Huh, kid? Sweet wine, a babbling brook, warm air... Did I mention wine?",
+      "translation": "Αυτό θα πει ζωή... Έτσι, παιδί μου; Γλυκό κρασί, ένα κελαρυστό ρυάκι, ζεστός αέρας... Ανέφερα το κρασί;",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Emily",
+      "source": "Whoo... I'm stuffed. Hey, have you tried the red jelly yet?",
+      "translation": "Ουφ... Έσκασα. Έι, δοκίμασες ήδη το κόκκινο ζελέ;",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Haley",
+      "source": "I'm practicing my dance moves... It needs to be perfect.#$e#I've been flower queen for the past 5 years and I'm not ready to step off the throne just yet!",
+      "translation": "Εξασκώ τις χορευτικές μου φιγούρες... Πρέπει να είναι τέλειες.#$e#Είμαι Βασίλισσα των Λουλουδιών τα τελευταία 5 χρόνια και δεν είμαι ακόμα έτοιμη να κατέβω από τον θρόνο!",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Jodi",
+      "source": "Are you going to be dancing today, @?$h",
+      "translation": "Θα χορέψεις σήμερα, @;$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Kent",
+      "source": "This open field... it makes me nervous.#$e#*whisper* Happy thoughts, Kent. Happy Thoughts.",
+      "translation": "Αυτό το ανοιχτό λιβάδι... με κάνει να νιώθω νευρικός.#$e#*ψίθυρος* Χαρούμενες σκέψεις, Κεντ. Χαρούμενες σκέψεις.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Marlon",
+      "source": "Marnie looks lovely today...",
+      "translation": "Η Μάρνι είναι πανέμορφη σήμερα...",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sam",
+      "source": "You know what? I admit it... I really like flowers!",
+      "translation": "Ξέρεις κάτι; Το παραδέχομαι... Μου αρέσουν πολύ τα λουλούδια!",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Leah",
+      "source": "Hi @. Glad to see you here.$h",
+      "translation": "Γεια σου, @. Χαίρομαι που σε βλέπω εδώ.$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Shane",
+      "source": "Mmm... excellent sauce. *slurp*#$e#Ah, this green stuff is spicy! *munch*#$b#*crunch* ...ow.$s",
+      "translation": "Μμμ... εξαιρετική σάλτσα. *ρούφηγμα*#$e#Α, αυτό το πράσινο πράγμα είναι πικάντικο! *μασούλημα*#$b#*κρίτσι κρίτσι* ...άου.$s",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Marnie",
+      "source": "*sigh*... Love is in the air... And I'm still single.$s",
+      "translation": "*αναστεναγμός*... Ο έρωτας πλανάται στον αέρα... Κι εγώ είμαι ακόμα μόνη.$s",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Elliott",
+      "source": "I wore my best shirt for the dance... This sort of thing doesn't happen very often!",
+      "translation": "Φόρεσα το καλύτερο πουκάμισό μου για τον χορό... Κάτι τέτοιο δεν συμβαίνει πολύ συχνά!",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Gus",
+      "source": "Frog season is really starting to pick up.",
+      "translation": "Η εποχή των βατράχων αρχίζει πραγματικά να φουντώνει.",
+      "glossaryIds": []
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "f54e0f55b6eb56e79f1b680c6bbb520cd4cf057945f27c1fb5f4795f6bd69a1a",
+    "notes": "Editorial pass 1 and pass 2 complete: all thirty Flower Dance entries checked against the English asset in context; verified festival glossary wording, character voice, gendered speaker lines, player-neutral farmer address, event-script commands and translated closing message, token and numeric signatures, and natural Greek."
+  }
+}

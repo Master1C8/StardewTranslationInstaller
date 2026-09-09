@@ -15,8 +15,13 @@ import unicodedata
 ROOT = Path(__file__).resolve().parents[1]
 DOC = ROOT / 'Documentation/greek'
 OUT = ROOT / 'Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/greek'
-EVENT_TEXT = re.compile(r'(?P<head>(?:^|/)(?:speak\s+[^/\s"]+|message)\s+")'
-                        r'(?P<text>[^"]*)(?P<tail>")')
+EVENT_TEXT = re.compile(
+    r'(?P<head>(?:(?:^|[/\\])(?:speak\s+[^/\s"]+|splitSpeak\s+[^/\s"]+|message'
+    r'|textAboveHead\s+[^/\s"]+|question\s+[^/\s"]+|spriteText\s+\d+'
+    r'|end\s+(?:dialogue|dialogueWarpOut)\s+[^/\s"]+)\s+"'
+    r'|(?<=\(break\))speak\s+[^/\s"]+\s+"))(?P<text>(?:\\.|[^"])*)(?P<tail>")')
+EVENT_QUICK_QUESTION = re.compile(
+    r'(?P<head>(?:^|/)quickQuestion\s+)(?P<text>.*?)(?P<tail>\(break\))')
 
 def unique_object(pairs):
     result = {}
@@ -41,15 +46,27 @@ def event_parts(value):
     All other command bytes, including quoted technical arguments, stay locked.
     Extend supported commands only after inspecting their native argument rules.
     """
-    parts = [match.group('text') for match in EVENT_TEXT.finditer(value)]
-    skeleton = EVENT_TEXT.sub(lambda match: match.group('head') + '<EVENT_TEXT>'
-                              + match.group('tail'), value)
-    return skeleton, parts
+    matches = list(EVENT_TEXT.finditer(value)) + list(EVENT_QUICK_QUESTION.finditer(value))
+    matches.sort(key=lambda match: match.start())
+    parts = []
+    chunks = []
+    cursor = 0
+    for match in matches:
+        assert match.start() >= cursor, 'Overlapping event text fields'
+        chunks.append(value[cursor:match.start()])
+        chunks.append(match.group('head') + '<EVENT_TEXT>' + match.group('tail'))
+        parts.append(match.group('text'))
+        cursor = match.end()
+    chunks.append(value[cursor:])
+    return ''.join(chunks), parts
 
 def validate_event(source, translated):
     original_skeleton, original_parts = event_parts(source)
     translated_skeleton, translated_parts = event_parts(translated)
-    assert original_parts and len(original_parts) == len(translated_parts), 'Event text field mismatch'
+    if not original_parts:
+        assert translated == source, 'Text-free event script changed'
+        return
+    assert len(original_parts) == len(translated_parts), 'Event text field mismatch'
     assert original_skeleton == translated_skeleton, 'Event command or technical argument changed'
     assert all(signature(before) == signature(after)
                for before, after in zip(original_parts, translated_parts)), 'Event text controls changed'
@@ -257,9 +274,20 @@ def main():
                                ('Characters/Dialogue/Sam', 'Resort_Towel_2', None),
                                ('Characters/Dialogue/Sam', 'Mon', None),
                                ('Characters/Dialogue/Sam', 'winter_Fri', None),
+                               ('Characters/Dialogue/MarriageDialogue', 'Bad_2', None),
+                               ('Characters/Dialogue/MarriageDialogueAlex', 'summer_10', None),
+                               ('Characters/Dialogue/MarriageDialogueSam', 'Good_6', None),
+                               ('Data/EngagementDialogue', 'Abigail1', None),
+                               ('Characters/Dialogue/Sandy', 'Wed10', None),
                                ('Characters/Dialogue/Sebastian', 'fall_Fri6', None),
                                ('Characters/Dialogue/Sebastian', 'winter_Wed4', None),
                                ('Characters/Dialogue/Vincent', 'Introduction', None),
+                               ('Characters/Dialogue/Vincent', 'Thu2', None),
+                               ('Characters/Dialogue/Willy', 'Sun10', None),
+                               ('Characters/Dialogue/Wizard', 'Introduction', None),
+                               ('Characters/Dialogue/Wizard', 'Mon', None),
+                               ('Characters/Dialogue/rainy', 'Demetrius', None),
+                               ('Characters/Dialogue/rainy', 'Sebastian', None),
                                ('Data/ExtraDialogue', 'Morris_BuyMovieTheater', None),
                                ('Data/ExtraDialogue', 'Morris_NoMoreCD', None),
                                ('Data/ExtraDialogue', 'SummitEvent_Outro_Lewis', None),
@@ -323,7 +351,11 @@ def main():
             'When': {'Language': 'el-vnrevival'}}]})
     # Preserve the complete list shape; don't expose a partly translated credits asset.
     if credits and len(credits) == sum(1 for t, _, _ in sources if t == 'Strings/credits'):
-        expected['credits-data.json'] = serialized([credits[i] for i in range(len(credits))])
+        expected['credits.json'] = serialized({'Changes': [{
+            'Action': 'EditData', 'Target': 'Strings/credits',
+            'When': {'Language': 'el-vnrevival'},
+            'Entries': {str(i): credits[i] for i in range(len(credits))},
+        }]})
     if args.apply:
         for relative, value in expected.items():
             path = OUT / relative

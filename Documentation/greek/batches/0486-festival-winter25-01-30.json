@@ -1,0 +1,233 @@
+{
+  "id": "0486-festival-winter25-01-30",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "name",
+      "source": "Feast of the Winter Star",
+      "translation": "Γιορτή του Χειμερινού Αστεριού",
+      "glossaryIds": [
+        "feast-winter-star"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "conditions",
+      "source": "Town/900 1400",
+      "translation": "Town/900 1400",
+      "glossaryIds": [],
+      "preserveReason": "Technical festival location and time condition; no player-facing text."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "set-up",
+      "source": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+      "translation": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+      "glossaryIds": [],
+      "preserveReason": "Technical festival setup script with no player-facing text."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "secretSanta",
+      "source": "none/-1000 -1000/farmer 30 69 0/warp Emily 37 59/warp Haley 35 74/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 300/faceDirection farmer 0/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Emily 29 72/warp Haley 30 72/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "translation": "none/-1000 -1000/farmer 30 69 0/warp Emily 37 59/warp Haley 35 74/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 300/faceDirection farmer 0/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Emily 29 72/warp Haley 30 72/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+      "glossaryIds": [],
+      "preserveReason": "Technical secret-gift cutscene whose dialogue fields are runtime lookup keys, not player-facing English."
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Abigail_spouse",
+      "source": "I wonder if I could lick one of those canes...",
+      "translation": "Αναρωτιέμαι αν θα μπορούσα να γλείψω ένα από εκείνα τα μπαστούνια...",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Leah_spouse",
+      "source": "I'm thankful for our simple life on the farm.$h",
+      "translation": "Νιώθω ευγνωμοσύνη για την απλή ζωή μας στο αγρόκτημα.$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Maru_spouse",
+      "source": "Hey, @. I'm ready to head home whenever you are.",
+      "translation": "Έι, @. Μπορούμε να γυρίσουμε σπίτι όποτε θελήσεις.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Penny_spouse",
+      "source": "I'm thankful to have met you...$l",
+      "translation": "Νιώθω ευγνωμοσύνη που σε γνώρισα...$l",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Haley_spouse",
+      "source": "Me?... Oh, I'm thankful for... how about I just show you when we get home tonight?$l",
+      "translation": "Εγώ;... Α, νιώθω ευγνωμοσύνη για... Μήπως να σου δείξω όταν γυρίσουμε σπίτι απόψε;$l",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sebastian_spouse",
+      "source": "Hey, @. As you can see, I'm fulfilling my family obligations...",
+      "translation": "Έι, @. Όπως βλέπεις, εκπληρώνω τις οικογενειακές μου υποχρεώσεις...",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sam_spouse",
+      "source": "*yawn*... I'm here for the gifts and the cookies.$h",
+      "translation": "*χασμουρητό*... Ήρθα για τα δώρα και τα μπισκότα.$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Alex_spouse",
+      "source": "What am I thankful for? I'll show you when we get back home...$l",
+      "translation": "Για ποιο πράγμα νιώθω ευγνωμοσύνη; Θα σου δείξω όταν γυρίσουμε σπίτι...$l",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Harvey_spouse",
+      "source": "I'm feeling a little overwhelmed... thank goodness for this crisp air...$l",
+      "translation": "Νιώθω λίγο καταβεβλημένος... Ευτυχώς που υπάρχει αυτός ο δροσερός αέρας...$l",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Elliott_spouse",
+      "source": "You don't need to get me anything, you've already given me the greatest gift of all...$l",
+      "translation": "Δεν χρειάζεται να μου πάρεις τίποτα, μου έχεις ήδη χαρίσει το μεγαλύτερο δώρο απ' όλα...$l",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Abigail",
+      "source": "Nothing like a piping hot feast on a cold winter's day, huh?$h",
+      "translation": "Δεν υπάρχει τίποτα σαν ένα καυτό γεύμα σε μια κρύα χειμωνιάτικη μέρα, έτσι;$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Robin",
+      "source": "Hiya, @. You're welcome to join our family table if you need company.$h",
+      "translation": "Γεια σου, @. Αν θέλεις παρέα, μπορείς να καθίσεις στο οικογενειακό μας τραπέζι.$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Demetrius",
+      "source": "I'll probably get another tool set this year... *sigh*",
+      "translation": "Μάλλον θα πάρω άλλο ένα σετ εργαλείων φέτος... *αναστεναγμός*",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Maru",
+      "source": "Hi, @.$h",
+      "translation": "Γεια σου, @.$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Shane",
+      "source": "I've met some people who believe in spirits, and magic... but me? I've never seen anything that couldn't be explained by science.",
+      "translation": "Έχω γνωρίσει ανθρώπους που πιστεύουν στα πνεύματα και στη μαγεία... Εγώ όμως; Δεν έχω δει ποτέ κάτι που να μην εξηγείται από την επιστήμη.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Sebastian",
+      "source": "Spending time with family is tiring sometimes.",
+      "translation": "Μερικές φορές είναι κουραστικό να περνάς χρόνο με την οικογένεια.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Pierre",
+      "source": "My sales figures have been phenomenal lately... thanks to the Feast of the Winter Star!$h#$e#Boy, holidays are good for business. I wonder if I could invent some new ones...",
+      "translation": "Οι πωλήσεις μου είναι εκπληκτικές τελευταία... χάρη στη Γιορτή του Χειμερινού Αστεριού!$h#$e#Πω πω, οι γιορτές κάνουν καλό στις δουλειές. Αναρωτιέμαι αν θα μπορούσα να επινοήσω μερικές καινούργιες...",
+      "glossaryIds": [
+        "feast-winter-star"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Caroline",
+      "source": "Ooohh... I've had too much nog.$h",
+      "translation": "Ωωωχ... Ήπια πάρα πολύ αβγόποτο.$h",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Linus",
+      "source": "I'd join in... but I don't think I'm welcome.$s",
+      "translation": "Θα συμμετείχα... αλλά δεν νομίζω πως είμαι ευπρόσδεκτος.$s",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Alex",
+      "source": "Oh, hello.$s",
+      "translation": "Α, γεια σου.$s",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "George",
+      "source": "A feast for some stupid star? Humbug!",
+      "translation": "Γιορτή για κάποιο χαζό αστέρι; Ανοησίες!",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Evelyn",
+      "source": "Oh, my! Aren't you cold, dear? It's freezing!",
+      "translation": "Αχ, Θεέ μου! Δεν κρυώνεις; Έχει παγωνιά!",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Lewis",
+      "source": "Today is a time to be thankful for this year's good fortune. Forget your worries for a day and relax!",
+      "translation": "Σήμερα είναι μέρα για να νιώσουμε ευγνωμοσύνη για την καλοτυχία της χρονιάς. Ξέχνα τις ανησυχίες σου για μία μέρα και χαλάρωσε!",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Clint",
+      "source": "*sigh*... All these happy families. But for me, just another lonely year.",
+      "translation": "*αναστεναγμός*... Όλες αυτές οι ευτυχισμένες οικογένειες. Για μένα όμως είναι άλλη μια μοναχική χρονιά.",
+      "glossaryIds": []
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Emily",
+      "source": "$y '@! What are you hoping to find under the spirit tree?_A new watering can._All work and no play? That's not very fun.$s_A jug of spiced mead._Ooo... that sounds nice. Make sure to give me a taste.$h_A pair of stylish boots._I see. That would be a great gift!'",
+      "translation": "$y '@! Τι ελπίζεις να βρεις κάτω από το δέντρο των πνευμάτων;_Ένα καινούργιο Ποτιστήρι._Μόνο δουλειά και καθόλου παιχνίδι; Αυτό δεν έχει πολλή πλάκα.$s_Μια κανάτα με καρυκευμένο Υδρόμελο._Ωωω... ακούγεται ωραίο. Φρόντισε να μου δώσεις να δοκιμάσω.$h_Ένα ζευγάρι κομψές μπότες._Κατάλαβα. Θα ήταν υπέροχο δώρο!'",
+      "glossaryIds": [
+        "watering-can"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter25",
+      "key": "Penny",
+      "source": "What a beautiful tree.$h",
+      "translation": "Τι όμορφο δέντρο.$h",
+      "glossaryIds": []
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "3a18fa799effbc10269ff11243f0e5dd7f3a4b2975e695057308d0e5045921ac",
+    "notes": "Editorial pass 1 and pass 2 complete: all thirty Winter Star entries checked against English context, token signatures, glossary, natural Greek, and player-neutral wording; technical setup and Secret Santa scripts intentionally preserved."
+  }
+}

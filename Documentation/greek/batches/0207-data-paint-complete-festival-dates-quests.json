@@ -1,0 +1,133 @@
+{
+  "id": "0207-data-paint-complete-festival-dates-quests",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "f0ca096f455d539c26156813677fb82909866da03af8260cc16440aa54d0cc02",
+    "notes": "Full all-entry editorial review completed; the remaining paint records preserve only technical color-region data, all eight festival names match the reviewed Greek glossary exactly, and both lost-item quest strings preserve placeholders while using established gender-neutral UI phrasing."
+  },
+  "records": [
+    {
+      "target": "Data/PaintData",
+      "key": "Trailer Cabin",
+      "source": "Building/-5 0/Roof/-5 5/Trim/-5 0",
+      "translation": "Building/-5 0/Roof/-5 5/Trim/-5 0",
+      "preserveReason": "Paint-region identifiers and hue, saturation, and lightness offsets are technical runtime data with no player-facing wording."
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Stable",
+      "source": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+      "translation": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+      "preserveReason": "Paint-region identifiers and hue, saturation, and lightness offsets are technical runtime data with no player-facing wording."
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Big Shed",
+      "source": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+      "translation": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+      "preserveReason": "Paint-region identifiers and hue, saturation, and lightness offsets are technical runtime data with no player-facing wording."
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Deluxe Coop",
+      "source": "Building/-25 0/Roof/-15 5/Trim/-25 0",
+      "translation": "Building/-25 0/Roof/-15 5/Trim/-25 0",
+      "preserveReason": "Paint-region identifiers and hue, saturation, and lightness offsets are technical runtime data with no player-facing wording."
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Deluxe Barn",
+      "source": "Building/-15 0/Roof/-10 5/Trim/-10 5",
+      "translation": "Building/-15 0/Roof/-10 5/Trim/-10 5",
+      "preserveReason": "Paint-region identifiers and hue, saturation, and lightness offsets are technical runtime data with no player-facing wording."
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "spring13",
+      "source": "Egg Festival",
+      "translation": "Γιορτή Αυγών",
+      "glossaryIds": [
+        "egg-festival"
+      ]
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "spring24",
+      "source": "Flower Dance",
+      "translation": "Χορός των Λουλουδιών",
+      "glossaryIds": [
+        "flower-dance"
+      ]
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "summer11",
+      "source": "Luau",
+      "translation": "Λουάου",
+      "glossaryIds": [
+        "luau"
+      ]
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "summer28",
+      "source": "Dance of the Moonlight Jellies",
+      "translation": "Χορός των Μεδουσών του Σεληνόφωτος",
+      "glossaryIds": [
+        "moonlight-jellies"
+      ]
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "fall16",
+      "source": "Stardew Valley Fair",
+      "translation": "Έκθεση Stardew Valley",
+      "glossaryIds": [
+        "stardew-valley-fair"
+      ]
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "fall27",
+      "source": "Spirit's Eve",
+      "translation": "Παραμονή των Πνευμάτων",
+      "glossaryIds": [
+        "spirits-eve"
+      ]
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "winter8",
+      "source": "Festival of Ice",
+      "translation": "Γιορτή του Πάγου",
+      "glossaryIds": [
+        "festival-of-ice"
+      ]
+    },
+    {
+      "target": "Data/Festivals/FestivalDates",
+      "key": "winter25",
+      "source": "Feast of the Winter Star",
+      "translation": "Γιορτή του Χειμερινού Αστεριού",
+      "glossaryIds": [
+        "feast-winter-star"
+      ]
+    },
+    {
+      "target": "Strings/Quests",
+      "key": "MessageFoundLostItem",
+      "source": "You found the {0}. Better return it to {1}.",
+      "translation": "Βρήκατε το αντικείμενο «{0}». Καλύτερα να το επιστρέψετε στο πρόσωπο «{1}»."
+    },
+    {
+      "target": "Strings/Quests",
+      "key": "ObjectiveReturnToNPC",
+      "source": "Return to {0}.",
+      "translation": "Επιστρέψτε στο πρόσωπο «{0}»."
+    }
+  ]
+}

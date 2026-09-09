@@ -1,0 +1,155 @@
+{
+  "id": "0456-mail-106-120",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "8246d2a076b7feb51161814c2b9fad5a2b317acd8d789fa7b409a96bef9710b4",
+    "notes": "Editorial pass 1 and pass 2 complete: checked all 15 quest letters against the English asset; reviewed item names, sender voices, urgency and secrecy, gender neutral player address, subject lines, glossary terms, quest commands, IDs, and reward values."
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "spring_11_1",
+      "source": "MISSING:^I lost my favorite Axe! If you find it, please return ASAP. I'm having a tough time without it. There's 250g in it for whoever finds the thing.^   -Robin%item quest 100 %%[#]Robin Lost Her Axe",
+      "translation": "ΑΓΝΟΕΙΤΑΙ:^Έχασα το αγαπημένο μου Τσεκούρι! Αν το βρεις, σε παρακαλώ επίστρεψέ το ΤΟ ΣΥΝΤΟΜΟΤΕΡΟ. Περνάω δύσκολα χωρίς αυτό. Όποιος το βρει θα πάρει 250g.^   -Ρόμπιν%item quest 100 %%[#]Η Ρόμπιν Έχασε το Τσεκούρι της",
+      "glossaryIds": [
+        "robin",
+        "axe"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_19_1",
+      "source": "Farmer @-^I have a request for you. I need fresh cauliflower for a recipe I want to make. Could you bring me one?^   -Jodi%item quest 101 %%[#]Jodi Asks For Cauliflower",
+      "translation": "Γεια σου, @-^Έχω ένα αίτημα για σένα. Χρειάζομαι ένα φρέσκο Κουνουπίδι για μια συνταγή που θέλω να φτιάξω. Μπορείς να μου φέρεις ένα;^   -Τζόντι%item quest 101 %%[#]Η Τζόντι Ζητά ένα Κουνουπίδι",
+      "glossaryIds": [
+        "jodi",
+        "recipe"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_3_1",
+      "source": "@-^This is embarrassing... I lost my lucky purple shorts. I'm telling you because I think I can trust you.^If you find them, bring them back to me DISCREETLY. I'll pay well.^Thanks.^   -Mayor Lewis%item quest 102 %%[#]Lewis Asks For A Favor",
+      "translation": "@-^Αυτό είναι ντροπιαστικό... Έχασα το τυχερό μοβ σορτσάκι μου. Στο λέω επειδή νομίζω πως μπορώ να σε εμπιστευτώ.^Αν το βρεις, φέρε το πίσω ΔΙΑΚΡΙΤΙΚΑ. Θα πληρώσω καλά.^Ευχαριστώ.^   -Δήμαρχος Λιούις%item quest 102 %%[#]Ο Λιούις Ζητά μια Χάρη",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_14_1",
+      "source": "Hey Kid,^My throat's about as dry as a desert bone. I'm real thirsty for a pale ale. You got one? Regular old beer won't do. I need a pale ale.^   -Pam%item quest 103 %%[#]Pam's Request",
+      "translation": "Έι, παιδί μου,^Ο λαιμός μου είναι ξερός σαν κόκαλο στην έρημο. Διψάω πολύ για μια Ξανθιά Μπίρα. Έχεις μία; Η συνηθισμένη μπίρα δεν κάνει. Χρειάζομαι μια Ξανθιά Μπίρα.^   -Παμ%item quest 103 %%[#]Το Αίτημα της Παμ",
+      "glossaryIds": [
+        "pam"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_20_1",
+      "source": "@-^I'm gathering data on the correlation between soil alkalinity and crop fructose levels. Long story short, I need a fresh melon from your farm. If you brought me one I'd be very grateful.^   -Demetrius%item quest 104 %%[#]Demetrius Asks For A Sample",
+      "translation": "@-^Συλλέγω δεδομένα για τη συσχέτιση μεταξύ της αλκαλικότητας του εδάφους και των επιπέδων φρουκτόζης στις καλλιέργειες. Με λίγα λόγια, χρειάζομαι ένα φρέσκο Πεπόνι από το αγρόκτημά σου. Αν μου έφερνες ένα, θα σου ήμουν πολύ ευγνώμων.^   -Ντιμίτριους%item quest 104 %%[#]Ο Ντιμίτριους Ζητά ένα Δείγμα",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_25_1",
+      "source": "To Farmer @:^My knee's acting up again, and you know what helps? ^Rubbing the darn thing with hot pepper.^ Trouble is, my supply's run dry. If you've got one to spare I'd be much obliged.^   -George %item quest 105 %%[#]George Needs A Pepper",
+      "translation": "Προς @:^Το γόνατό μου με ενοχλεί πάλι, και ξέρεις τι βοηθά; ^Να τρίβω το άτιμο με Καυτερή Πιπεριά.^ Το πρόβλημα είναι πως μου τελείωσαν. Αν σου περισσεύει μία, θα σου ήμουν υπόχρεος.^   -Τζορτζ %item quest 105 %%[#]Ο Τζορτζ Χρειάζεται μια Πιπεριά",
+      "glossaryIds": [
+        "george"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_3_1",
+      "source": "Dear @,^I'd like to give my cows a special treat. They're such good girls and hungry, too. Could you bring me one bunch of amaranth? They love the stuff. ^Thanks, Dear.^   -Marnie %item quest 106 %%[#]Marnie's Request",
+      "translation": "Γεια σου, @,^Θα ήθελα να δώσω στις αγελάδες μου μια ξεχωριστή λιχουδιά. Είναι τόσο καλά κορίτσια και πεινάνε κιόλας. Μπορείς να μου φέρεις ένα ματσάκι Αμάρανθο; Τον λατρεύουν. ^Ευχαριστώ, αγαπημένο μου παιδί.^   -Μάρνι %item quest 106 %%[#]Το Αίτημα της Μάρνι",
+      "glossaryIds": [
+        "marnie",
+        "cow"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_8_1",
+      "source": "Hello,^It's blackberry season right now. The bushes are full of them. I want to pick some, but I lost my basket. Can you help?^   -Linus%item quest 107 %%[#]Linus Lost His Basket",
+      "translation": "Γεια σου,^Τώρα είναι η εποχή των Βατόμουρων. Οι θάμνοι είναι γεμάτοι. Θέλω να μαζέψω μερικά, αλλά έχασα το καλάθι μου. Μπορείς να βοηθήσεις;^   -Λάινους%item quest 107 %%[#]Ο Λάινους Έχασε το Καλάθι του",
+      "glossaryIds": [
+        "linus"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fall_19_1",
+      "source": "@-^I'd like to buy a pumpkin from you. My daughter and I want to carve a jack-o-lantern for the upcoming Spirit's Eve festival. ^   -Caroline%item quest 108 %%[#]Caroline's Request",
+      "translation": "@-^Θα ήθελα να αγοράσω μια Κολοκύθα από σένα. Η κόρη μου κι εγώ θέλουμε να σκαλίσουμε ένα Φανάρι Κολοκύθας για την επερχόμενη γιορτή της Παραμονής των Πνευμάτων. ^   -Κάρολαϊν%item quest 108 %%[#]Το Αίτημα της Κάρολαϊν",
+      "glossaryIds": [
+        "caroline",
+        "spirits-eve"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_2_1",
+      "source": "Hey, I've got a little challenge for you:^    Catch me a squid.^You can fish them from the ocean at night. They only show up in the winter, though.^   -Willy%item quest 109 %%[#]Willy's Challenge",
+      "translation": "Έι, έχω μια μικρή πρόκληση για σένα:^    Πιάσε μου ένα Καλαμάρι.^Μπορείς να τα ψαρέψεις στον ωκεανό τη νύχτα. Εμφανίζονται όμως μόνο τον χειμώνα.^   -Γουίλι%item quest 109 %%[#]Η Πρόκληση του Γουίλι",
+      "glossaryIds": [
+        "willy"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_6_1",
+      "source": "I've got an unusual request. Could you keep this a secret?^ I want you to deliver an amethyst to Emily. It's her favorite stone. Tell her it's from me.^   -Clint %item quest 110 %%[#]Clint's Unusual Request",
+      "translation": "Έχω ένα ασυνήθιστο αίτημα. Μπορείς να το κρατήσεις μυστικό;^ Θέλω να παραδώσεις έναν Αμέθυστο στην Έμιλι. Είναι η αγαπημένη της πέτρα. Πες της ότι είναι από μένα.^   -Κλιντ %item quest 110 %%[#]Το Ασυνήθιστο Αίτημα του Κλιντ",
+      "glossaryIds": [
+        "clint",
+        "emily"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_12_1",
+      "source": "@-^I am researching the forgotten art of shadow divination. I require an item known as 'Void Essence'. Bring it to me and you will be rewarded.^ -M. Rasmodius, Wizard %item quest 111 %%[#]Wizard's Request",
+      "translation": "@-^Ερευνώ τη λησμονημένη τέχνη της μαντείας των σκιών. Χρειάζομαι ένα αντικείμενο γνωστό ως «Ουσία του Κενού». Φέρε το σε μένα και θα ανταμειφθείς.^ -Μ. Ρασμόντιους, Μάγος %item quest 111 %%[#]Το Αίτημα του Μάγου",
+      "glossaryIds": [
+        "wizard-rasmodius"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_17_1",
+      "source": "@,^Sorry to bother you again, but I need another favor.^I got a new hammer and I want to try it on a variety of metals.^Could you smelt an iron bar and bring it to me? ^Thanks.^ -Clint %item quest 112 %%[#]Clint's Request",
+      "translation": "@,^Συγγνώμη που σε ενοχλώ πάλι, αλλά χρειάζομαι άλλη μία χάρη.^Πήρα ένα καινούριο σφυρί και θέλω να το δοκιμάσω σε διάφορα μέταλλα.^Μπορείς να φτιάξεις μια Ράβδο Σιδήρου στο καμίνι και να μου τη φέρεις; ^Ευχαριστώ.^ -Κλιντ %item quest 112 %%[#]Το Αίτημα του Κλιντ",
+      "glossaryIds": [
+        "clint"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_21_1",
+      "source": "@-^How are you doing? Hope the winter hasn't been too hard on you.^Anyway, I'm writing to ask you for some hardwood. I need about ten pieces, if you've got it.^If not, no worries. Take Care!^  -Robin%item quest 113 %%[#]Robin's Request",
+      "translation": "@-^Τι κάνεις; Ελπίζω ο χειμώνας να μη σε δυσκόλεψε πολύ.^Τέλος πάντων, σου γράφω για να ζητήσω λίγο Σκληρό Ξύλο. Χρειάζομαι περίπου δέκα κομμάτια, αν έχεις.^Αν όχι, μην ανησυχείς. Να προσέχεις!^  -Ρόμπιν%item quest 113 %%[#]Το Αίτημα της Ρόμπιν",
+      "glossaryIds": [
+        "robin",
+        "hardwood"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_26_1",
+      "source": "Dear @-^I want to make fish stew, but I need an albacore! I know they're almost out of season... sorry about the short notice. Could you catch one for me?^   -Gus%item quest 114 %%[#]Gus Needs A Certain Fish",
+      "translation": "Γεια σου, @-^Θέλω να φτιάξω ψαρόσουπα, αλλά χρειάζομαι έναν Μακρύπτερο Τόνο! Ξέρω πως η εποχή τους κοντεύει να τελειώσει... συγγνώμη για τη σύντομη προειδοποίηση. Μπορείς να μου πιάσεις έναν;^   -Γκας%item quest 114 %%[#]Ο Γκας Χρειάζεται ένα Συγκεκριμένο Ψάρι",
+      "glossaryIds": [
+        "gus"
+      ]
+    }
+  ]
+}

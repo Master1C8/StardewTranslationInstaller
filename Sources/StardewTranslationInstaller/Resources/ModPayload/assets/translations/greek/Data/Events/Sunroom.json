@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Sunroom",
+      "When": {
+        "Language": "el-vnrevival"
+      },
+      "Entries": {
+        "719926/t 900 1700/w sunny": "spring_day_ambient/-885 8/farmer -500 -500 0 Caroline 5 7 1/mail CarolineTea/skippable/specificTemporarySprite sunroom/viewport 5 8 true/pause 1000/showFrame Caroline 22/doAction 6 7/pause 500/doAction 6 7/pause 1000/showFrame Caroline 4/pause 500/warp farmer 5 13/playSound doorClose/move farmer 0 -4 0/faceDirection Caroline 2/pause 100/speak Caroline \"Α, γεια σου! Καλημέρα, @. Χαίρομαι που μπήκες...#$b#Ήθελα να σου δείξω αυτό... Είναι το ιδιωτικό μου ηλιόλουστο δωμάτιο.\"/pause 500/pause 500/speak Caroline \"Λοιπόν, τι λες;\"/pause 500/quickQuestion #Είναι πανέμορφο!#Είναι πολύ χαλαρωτικό.#Κάνει πολλή ζέστη εδώ μέσα...#Δεν είναι τόσο καλό όσο το αγρόκτημά μου!(break)pause 100\\speak Caroline \"Ευχαριστώ! Δούλεψα πολύ σκληρά για να γίνει έτσι...$h\"(break)pause 100\\speak Caroline \"Ναι... όταν μπαίνω εδώ, νιώθω αμέσως ήρεμη και χαλαρή. Είναι πραγματικά θεραπευτικό!\"(break)pause 100\\speak Caroline \"Α; Εμένα η ζεστασιά με ανακουφίζει.$s#$b#Είναι καλύτερα αν δεν κινείσαι.\"(break)emote Caroline 16\\pause 100\\speak Caroline \"Α, μα εσύ είσαι επαγγελματίας... Για μένα είναι απλώς χόμπι.\"/pause 500/faceDirection Caroline 1/speak Caroline \"Βλέπεις, αυτό είναι το καταφύγιό μου... ένα μέρος όπου μπορώ πάντα να βρίσκω γαλήνη...\"/pause 300/faceDirection Caroline 2/speak Caroline \"Και είναι το τέλειο μέρος για να πίνω το τσάι που καλλιεργώ! Έλα, ας πιούμε ένα φλιτζάνι...\"/pause 300/playSound coin/showFrame Caroline 20/pause 1000/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound gulp/pause 1000/quickQuestion Να πιεις ένα φλιτζάνι;#Ναι#Όχι(break)farmerEat 614\\pause 1000(break)pause 100\\speak Caroline \"Βέβαια, κανένα πρόβλημα...\"/pause 500/faceDirection farmer 0/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/textAboveHead Caroline \"Πεντανόστιμο\"/playMusic SunRoom/pause 1500/speak Caroline \"Μου αρέσει να έρχομαι εδώ κάθε μέρα για ένα φλιτζάνι φρέσκο τσάι.#$b#Είναι η μικρή μου τελετουργία... #$b#Εε... άσε με να προσπαθήσω να εξηγήσω...$h\"/fade/viewport -1000 -1000/pause 1000/cutscene greenTea/pause 1000/viewport 5 8 true/pause 1000/speak Caroline \"Ελπίζω να βγάζει νόημα... #$b#Η ζωή μπορεί να γίνει αρκετά χαοτική, οπότε είναι ωραίο να έχεις ένα τέτοιο χόμπι.\"/pause 150/showFrame Caroline 0/pause 200/speak Caroline \"Μπορείς να έρχεσαι εδώ και να χαλαρώνεις όποτε θέλεις, εντάξει;\"/emote farmer 32/pause 1000/move farmer 0 4 2 true/fade/viewport -5000 1000/pause 1000/end warpOut"
+      }
+    }
+  ]
+}

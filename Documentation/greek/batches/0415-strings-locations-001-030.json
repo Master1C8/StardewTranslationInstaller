@@ -1,0 +1,264 @@
+{
+  "id": "0415-strings-locations-001-030",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "cea38169c6d299fd1978b5be30e762ed3fa9c65332aa22f989e78adc58246242",
+    "notes": "Editorial pass 1 and pass 2 complete: checked all 30 entries against the English asset; verified goal-board formatting, monster terminology, hatch messages, Night Market voices, trailing whitespace, controls, numbers, and glossary terms."
+  },
+  "records": [
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Header",
+      "source": "------------------------------\n\t\t\t --Monster Eradication Goals--\n             \"Help us keep the valley safe.\"\n------------------------------",
+      "translation": "------------------------------\n\t\t\t --Στόχοι Εξόντωσης Τεράτων--\n             «Βοηθήστε μας να κρατήσουμε ασφαλή την κοιλάδα.»\n------------------------------",
+      "glossaryIds": [
+        "adventurers-guild",
+        "monster-eradication-goals"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat",
+      "source": "{0}/{1} {2}",
+      "translation": "{0}/{1} {2}",
+      "preserveReason": "Runtime-only numeric goal progress and dynamic monster label."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat_None",
+      "source": "{0}/{1} ????",
+      "translation": "{0}/{1} ????",
+      "preserveReason": "Runtime-only numeric goal progress and unknown-target marker."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat_OverTarget",
+      "source": "{0} {2} *",
+      "translation": "{0} {2} *",
+      "preserveReason": "Runtime-only numeric progress, dynamic monster label, and completion marker."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Slimes",
+      "source": "Slimes",
+      "translation": "Γλίτσες",
+      "glossaryIds": [
+        "slime-monster"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_VoidSpirits",
+      "source": "Void Spirits",
+      "translation": "Πνεύματα του Κενού",
+      "glossaryIds": [
+        "void-spirit"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Bats",
+      "source": "Bats",
+      "translation": "Νυχτερίδες",
+      "glossaryIds": [
+        "bat-monster"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Skeletons",
+      "source": "Skeletons",
+      "translation": "Σκελετοί",
+      "glossaryIds": [
+        "skeleton-monster"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_CaveInsects",
+      "source": "Cave Insects",
+      "translation": "Έντομα Σπηλιάς",
+      "glossaryIds": [
+        "cave-insect"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Duggies",
+      "source": "Duggies",
+      "translation": "Ντάγκι",
+      "glossaryIds": [
+        "duggy"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_DustSprites",
+      "source": "Dust Sprites",
+      "translation": "Ξωτικά Σκόνης",
+      "glossaryIds": [
+        "dust-sprite"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_RockCrabs",
+      "source": "Rock Crabs",
+      "translation": "Καβούρια Βράχοι",
+      "glossaryIds": [
+        "rock-crab"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Mummies",
+      "source": "Mummies",
+      "translation": "Μούμιες",
+      "glossaryIds": [
+        "mummy"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_PepperRex",
+      "source": "Pepper Rex",
+      "translation": "Πέπερ Ρεξ",
+      "glossaryIds": [
+        "pepper-rex"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Serpent",
+      "source": "Serpents",
+      "translation": "Ερπετά",
+      "glossaryIds": [
+        "serpent-monster"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Footer",
+      "source": "\n  -See Gil to claim your rewards.",
+      "translation": "\n  -Μίλησε στον Γκιλ για να πάρεις τις ανταμοιβές σου.",
+      "glossaryIds": [
+        "gil"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_VoidEgg",
+      "source": "A new chick hatched... It looks odd.",
+      "translation": "Εκκολάφθηκε ένα νέο κλωσσόπουλο... Φαίνεται παράξενο."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_RegularEgg",
+      "source": "A new baby chick hatched!",
+      "translation": "Εκκολάφθηκε ένα νέο κοτοπουλάκι!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_DuckEgg",
+      "source": "A new baby duckling hatched!",
+      "translation": "Εκκολάφθηκε ένα νέο παπάκι!"
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_DinosaurEgg",
+      "source": "A new baby ...lizard?... hatched.",
+      "translation": "Εκκολάφθηκε ένα μικρό... σαυράκι;..."
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_Closed",
+      "source": "Opens at 5pm.",
+      "translation": "Ανοίγει στις 5 μ.μ.",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_SubmarineInUse",
+      "source": "The submarine is currently in use. Come back later.",
+      "translation": "Το υποβρύχιο χρησιμοποιείται αυτή τη στιγμή. Έλα ξανά αργότερα.",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverClosed",
+      "source": "Merchant: The night market starts at 5pm... visit me then for a free cup of coffee! ",
+      "translation": "Έμπορος: Η Νυχτερινή Αγορά αρχίζει στις 5 μ.μ... έλα τότε να σου προσφέρω ένα δωρεάν φλιτζάνι καφέ! ",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverQuestion",
+      "source": "Merchant: Hello there! Care for a cup of coffee?",
+      "translation": "Έμπορος: Γεια σου! Θα ήθελες ένα φλιτζάνι καφέ;",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverEnjoy",
+      "source": "Merchant: Mmm... smells great, doesn't it?",
+      "translation": "Έμπορος: Μμμ... μυρίζει υπέροχα, έτσι;",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterClosed",
+      "source": "Famous Painter Lupini: Come back when the market opens, if you wish to purchase my fine work.",
+      "translation": "Διάσημος Ζωγράφος Λουπίνι: Έλα ξανά όταν ανοίξει η αγορά, αν θέλεις να αγοράσεις το εξαίσιο έργο μου.",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterQuestion",
+      "source": "Famous Painter Lupini: I'm selling this painting for 1200g. What do you say?",
+      "translation": "Διάσημος Ζωγράφος Λουπίνι: Πουλάω αυτόν τον πίνακα για 1200g. Τι λες;",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterSold",
+      "source": "Famous Painter Lupini: My apologies... I have no more paintings to sell today.",
+      "translation": "Διάσημος Ζωγράφος Λουπίνι: Ζητώ συγγνώμη... Δεν έχω άλλους πίνακες να πουλήσω σήμερα.",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_WarperQuestion",
+      "source": "Shrouded Figure: I can send you home for 250g.",
+      "translation": "Μορφή με Κουκούλα: Μπορώ να σε στείλω σπίτι για 250g.",
+      "glossaryIds": [
+        "night-market"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_FixBridge_Question",
+      "source": "Use 300 pieces of wood to fix the bridge?",
+      "translation": "Να χρησιμοποιήσεις 300 κομμάτια ξύλου για να επισκευάσεις τη γέφυρα;"
+    }
+  ]
+}

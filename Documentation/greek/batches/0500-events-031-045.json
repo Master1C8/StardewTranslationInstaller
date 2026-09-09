@@ -1,0 +1,141 @@
+{
+  "id": "0500-events-031-045",
+  "kind": "long",
+  "records": [
+    {
+      "target": "Data/Events/DesertFestival",
+      "key": "PlayerKilled",
+      "source": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "translation": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "glossaryIds": [],
+      "structure": "event",
+      "preserveReason": "Technical event script with no player-facing text fields."
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "39/f Elliott 500/p Elliott",
+      "source": "50s/2 5/farmer 3 9 0 Elliott 1 5 0/skippable/move farmer 0 -1 0/pause 400/faceDirection Elliott 2/emote Elliott 16/speak Elliott \"@! Come in.\"/pause 500/move farmer 0 -2 3/move farmer -2 0 0/pause 500/speak Elliott \"Welcome to my humble... well, shack.\"/faceDirection Elliott 0/speak Elliott \"This is my writing desk. It's where I spend most of my time.\"/pause 500/faceDirection Elliott 2/speak Elliott \"For as long as I can remember, I've wanted to be a writer. Have I told you that?#$b#That's why I live out here by myself. I figured a lonely life by the sea would help me focus on my literary aspirations...$s\"/faceDirection Elliott 1/speak Elliott \"Everyone back home said I was nuts... that I could never make it as a writer.#$b#Can you believe it? They said 'For every successful author there's 1000 who fail miserably'. Such pessimism... it's sickening.\"/pause 700/faceDirection Elliott 2/speak Elliott \"I can see it in your eyes... you believe in me, @. You've got that spark.#$b#Now that's inspiring! That's what I'm looking for...\"/pause 500/emote Elliott 16/speak Elliott \"$q 958699 null#A question... What kind of books do you like, @?#$r 958699 30 event_idea1#Mystery#$r 958700 30 event_idea2#Romance#$r 958701 30 event_idea3#Sci-Fi\"/pause 500/speak Elliott \"Well! Enough talk about me!\"/pause 400/emote Elliott 16/speak Elliott \"Hmm... you probably know a lot about plants, don't you?\"/pause 500/faceDirection Elliott 1/speak Elliott \"Would you mind taking a look at this rose, here? I'm afraid it's not doing so well.$7\"/pause 400/move farmer 2 0 0/move farmer 0 -2 3/pause 400/animate farmer true true 100 35/pause 200/end dialogue Elliott \"Thanks for talking with me... I'll be thinking about what you said.\"",
+      "translation": "50s/2 5/farmer 3 9 0 Elliott 1 5 0/skippable/move farmer 0 -1 0/pause 400/faceDirection Elliott 2/emote Elliott 16/speak Elliott \"@! Πέρασε μέσα.\"/pause 500/move farmer 0 -2 3/move farmer -2 0 0/pause 500/speak Elliott \"Καλώς ήρθες στο ταπεινό μου... λοιπόν, καλύβι.\"/faceDirection Elliott 0/speak Elliott \"Αυτό είναι το γραφείο όπου γράφω. Εδώ περνάω τον περισσότερο χρόνο μου.\"/pause 500/faceDirection Elliott 2/speak Elliott \"Από τότε που θυμάμαι τον εαυτό μου, ήθελα να γίνω συγγραφέας. Σου το έχω πει;#$b#Γι' αυτό ζω εδώ έξω μόνος μου. Σκέφτηκα πως μια μοναχική ζωή δίπλα στη θάλασσα θα με βοηθούσε να αφοσιωθώ στις λογοτεχνικές μου φιλοδοξίες...$s\"/faceDirection Elliott 1/speak Elliott \"Όλοι πίσω στην πατρίδα έλεγαν πως ήμουν τρελός... πως δεν θα πετύχαινα ποτέ ως συγγραφέας.#$b#Το πιστεύεις; Έλεγαν «Για κάθε επιτυχημένο συγγραφέα υπάρχουν 1000 που αποτυγχάνουν παταγωδώς». Τόση απαισιοδοξία... είναι αηδιαστική.\"/pause 700/faceDirection Elliott 2/speak Elliott \"Το βλέπω στα μάτια σου... πιστεύεις σ' εμένα, @. Έχεις εκείνη τη σπίθα.#$b#Αυτό είναι έμπνευση! Αυτό ακριβώς ψάχνω...\"/pause 500/emote Elliott 16/speak Elliott \"$q 958699 null#Μια ερώτηση... Τι είδους βιβλία σου αρέσουν, @;#$r 958699 30 event_idea1#Μυστήριο#$r 958700 30 event_idea2#Ρομαντικά#$r 958701 30 event_idea3#Επιστημονική φαντασία\"/pause 500/speak Elliott \"Λοιπόν! Αρκετά μιλήσαμε για μένα!\"/pause 400/emote Elliott 16/speak Elliott \"Χμμ... μάλλον ξέρεις πολλά για τα φυτά, έτσι δεν είναι;\"/pause 500/faceDirection Elliott 1/speak Elliott \"Θα σε πείραζε να ρίξεις μια ματιά σ' αυτό το τριαντάφυλλο; Φοβάμαι πως δεν τα πάει πολύ καλά.$7\"/pause 400/move farmer 2 0 0/move farmer 0 -2 3/pause 400/animate farmer true true 100 35/pause 200/end dialogue Elliott \"Ευχαριστώ που μίλησες μαζί μου... Θα σκεφτώ όσα είπες.\"",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "423502/f Elliott 1500/p Elliott",
+      "source": "elliottPiano/-200 -1000/farmer 3 9 0 Elliott 8 4 0/skippable/positionOffset Elliott 32 16/animate Elliott false true 400 25 26 26 27 27 26 26 25 26 27 27 26 26 25/pause 1000/viewport 8 4 true/pause 24000/stopAnimation Elliott/showFrame Elliott 24/move farmer 0 -3 0/move farmer 4 0 0/showFrame Elliott 28/pause 1000/speak Elliott \"Ah... I thought someone was there.$7\"/pause 1000/showFrame Elliott 30/animate Elliott false false 200 28 29 30/playSound dwop/pause 1000/question fork1 \"#That was wonderful.#How long have you been playing?\"/fork howLong/pause 500/emote Elliott 32/speak Elliott \"Thank you. I'm not very good, but it's fun to play.$h\"/switchEvent elliottPianoJoin",
+      "translation": "elliottPiano/-200 -1000/farmer 3 9 0 Elliott 8 4 0/skippable/positionOffset Elliott 32 16/animate Elliott false true 400 25 26 26 27 27 26 26 25 26 27 27 26 26 25/pause 1000/viewport 8 4 true/pause 24000/stopAnimation Elliott/showFrame Elliott 24/move farmer 0 -3 0/move farmer 4 0 0/showFrame Elliott 28/pause 1000/speak Elliott \"Α... Νόμιζα πως ήταν κάποιος εκεί.$7\"/pause 1000/showFrame Elliott 30/animate Elliott false false 200 28 29 30/playSound dwop/pause 1000/question fork1 \"#Ήταν υπέροχο.#Πόσο καιρό παίζεις;\"/fork howLong/pause 500/emote Elliott 32/speak Elliott \"Ευχαριστώ. Δεν είμαι πολύ καλός, αλλά έχει πλάκα.$h\"/switchEvent elliottPianoJoin",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "howLong",
+      "source": "pause 500/resetVariable/speak Elliott \"Oh, I'm not sure... I've been dabbling in piano since I was a kid.$7#$b#I'm not very good, but it's fun.\"/switchEvent elliottPianoJoin",
+      "translation": "pause 500/resetVariable/speak Elliott \"Α, δεν είμαι σίγουρος... Ασχολούμαι λίγο με το πιάνο από τότε που ήμουν παιδί.$7#$b#Δεν είμαι πολύ καλός, αλλά έχει πλάκα.\"/switchEvent elliottPianoJoin",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "elliottPianoJoin",
+      "source": "pause 800/showFrame Elliott 0/animate Elliott false true 220 0 1 2 3/playSound woodyStep/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/stopAnimation Elliott/faceDirection Elliott 2/pause 500/move Elliott 1 0 1 true/faceDirection farmer 1/pause 1500/showFrame Elliott 31/pause 800/emote Elliott 28/pause 800/speak Elliott \"I've been working day and night to try and finish my book... It's been driving me insane, @.$s\"/showFrame Elliott 4/pause 800/move Elliott -2 0 0/pause 800/speak Elliott \"An occasional tune is the only recreation I allow myself.$7\"/pause 600/faceDirection Elliott 2/speak Elliott \"There's just too much work to do! And my bank account's starting to run dry.$7#$b#Sometimes I wish I could just throw it all away and become a farmer like you.$h\"/pause 300/faceDirection farmer 0/question fork1 \"#It's just as hard to be a farmer, you know.#Come live on the farm, I could use the extra help.\"/fork extraHelp/pause 500/emote Elliott 16/speak Elliott \"You're right... that was an insensitive thing to say.$8\"/move Elliott 0 1 3/faceDirection farmer 1/speak Elliott \"What I meant is that I'd like to get away from this dark, musty prison and experience a little bit of real life... that's all.$s\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*sigh*... sorry I'm complaining like this. I just need someone to talk to now and then.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "translation": "pause 800/showFrame Elliott 0/animate Elliott false true 220 0 1 2 3/playSound woodyStep/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/stopAnimation Elliott/faceDirection Elliott 2/pause 500/move Elliott 1 0 1 true/faceDirection farmer 1/pause 1500/showFrame Elliott 31/pause 800/emote Elliott 28/pause 800/speak Elliott \"Δουλεύω μέρα νύχτα προσπαθώντας να τελειώσω το βιβλίο μου... Με έχει τρελάνει, @.$s\"/showFrame Elliott 4/pause 800/move Elliott -2 0 0/pause 800/speak Elliott \"Μια περιστασιακή μελωδία είναι η μοναδική ψυχαγωγία που επιτρέπω στον εαυτό μου.$7\"/pause 600/faceDirection Elliott 2/speak Elliott \"Υπάρχει υπερβολικά πολλή δουλειά! Και ο τραπεζικός μου λογαριασμός αρχίζει να αδειάζει.$7#$b#Μερικές φορές εύχομαι να μπορούσα απλώς να τα παρατήσω όλα και να ασχοληθώ με το αγρόκτημα, όπως εσύ.$h\"/pause 300/faceDirection farmer 0/question fork1 \"#Η ζωή στο αγρόκτημα είναι εξίσου δύσκολη, ξέρεις.#Έλα να ζήσεις στο αγρόκτημα, θα μου ήταν χρήσιμη η επιπλέον βοήθεια.\"/fork extraHelp/pause 500/emote Elliott 16/speak Elliott \"Έχεις δίκιο... Αυτό που είπα ήταν αναίσθητο.$8\"/move Elliott 0 1 3/faceDirection farmer 1/speak Elliott \"Αυτό που εννοούσα είναι πως θα ήθελα να ξεφύγω από αυτή τη σκοτεινή, μουχλιασμένη φυλακή και να ζήσω λίγη αληθινή ζωή... αυτό είναι όλο.$s\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*αναστεναγμός*... συγγνώμη που παραπονιέμαι έτσι. Απλώς χρειάζομαι κάποιον να μιλάω πού και πού.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "extraHelp",
+      "source": "pause 500/emote Elliott 16/speak Elliott \"Seriously?$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"It sounds wonderful... but I can't give up on my novel. It's already half-way done.$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*sigh*... sorry I'm complaining like this. I just need someone to talk to now and then.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "translation": "pause 500/emote Elliott 16/speak Elliott \"Σοβαρά;$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"Ακούγεται υπέροχο... αλλά δεν μπορώ να εγκαταλείψω το μυθιστόρημά μου. Έχω ήδη τελειώσει το μισό.$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*αναστεναγμός*... συγγνώμη που παραπονιέμαι έτσι. Απλώς χρειάζομαι κάποιον να μιλάω πού και πού.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "5/e 3/v Abigail/t 600 800",
+      "source": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Hi. Um... I just wanted to say sorry for acting so weird yesterday.#$b#You probably understand what happened...$l#$b#Uh, okay...bye.\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Γεια. Εμ... Ήθελα απλώς να ζητήσω συγγνώμη που φέρθηκα τόσο περίεργα χθες.#$b#Μάλλον καταλαβαίνεις τι συνέβη...$l#$b#Εε, εντάξει... γεια.\"/pause 500/end",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "47/f Sam 2000/t 600 800/e 44",
+      "source": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Hi @. Guess what? My band is playing a show tonight, in Zuzu City!#$b#Meet me at the bus stop around 4:00 this afternoon to leave for the show. You better be there!\"/pause 300/end dialogue Sam \"I'm excited and a little nervous for the show tonight. I'm sure everything will turn out okay.\"",
+      "translation": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Γεια σου, @. Μάντεψε! Το συγκρότημά μου δίνει συναυλία απόψε στην Πόλη Ζούζου!#$b#Συνάντησέ με στη στάση του λεωφορείου γύρω στις 4:00 το απόγευμα για να φύγουμε για τη συναυλία. Φρόντισε να είσαι εκεί!\"/pause 300/end dialogue Sam \"Είμαι ενθουσιασμένος και λίγο αγχωμένος για την αποψινή συναυλία. Είμαι σίγουρος πως όλα θα πάνε καλά.\"",
+      "glossaryIds": [
+        "zuzu-city"
+      ],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "2146991/y 3/H",
+      "source": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+      "translation": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+      "glossaryIds": [],
+      "structure": "event",
+      "preserveReason": "Technical event script with no player-facing text fields."
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion",
+      "source": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Hi @! Are you free this afternoon?#$b#I finally got my act together and I'm doing my art show tonight in the town square!$h#$b#Come into town between 3:00 and 5:00 pm if you want to be there!\"/pause 300/end dialogue Leah \"I'm nervous...$l\"",
+      "translation": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Γεια σου, @! Έχεις χρόνο σήμερα το απόγευμα;#$b#Επιτέλους οργανώθηκα και παρουσιάζω την έκθεση τέχνης μου απόψε στην πλατεία της πόλης!$h#$b#Έλα στην πόλη μεταξύ 3:00 και 5:00 μ.μ. αν θέλεις να είσαι εκεί!\"/pause 300/end dialogue Leah \"Έχω άγχος...$l\"",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "63/y 2/t 600 1800/H",
+      "source": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"Um, hello there. My name's Kent. I just got back last night... from overseas. My wife told me that a new farmer had moved in while I was gone.\"/pause 500/speak Kent \"Well, I just wanted to introduce myself... I'll see you around.\"/pause 300/end",
+      "translation": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"Εμ, γεια σου. Με λένε Κεντ. Μόλις επέστρεψα χθες βράδυ... από το εξωτερικό. Η γυναίκα μου μού είπε πως ένα νέο πρόσωπο ανέλαβε το αγρόκτημα όσο έλειπα.\"/pause 500/speak Kent \"Λοιπόν, ήθελα απλώς να συστηθώ... Θα τα ξαναπούμε.\"/pause 300/end",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "992553/t 600 1130/n copperFound",
+      "source": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"Uh... Hi there. Good morning.#$b#I noticed that you've been breaking some rocks open and finding ore. That's good!\"/pause 500/speak Clint \"If you want to get the most out of the ores you find, you'll need a furnace.\"/pause 500/speak Clint \"Just so happens I had an extra set of blueprints lying around. Here, I want you to have them.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"Learned how to craft a 'Furnace'\"/pause 800/speak Clint \"The furnace allows you to smelt metal bars. The bars can be used for crafting, construction, and tool upgrades.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \" When you've smelted a few copper bars, consider having me upgrade one of your tools. It can make your work a lot easier.#$b#Well, okay. I'm heading home. Take it easy.\"/pause 200/addQuest 11/end",
+      "translation": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"Εε... Γεια σου. Καλημέρα.#$b#Παρατήρησα πως σπας πέτρες και βρίσκεις μετάλλευμα. Πολύ καλό!\"/pause 500/speak Clint \"Αν θέλεις να αξιοποιήσεις όσο γίνεται καλύτερα τα μεταλλεύματα που βρίσκεις, θα χρειαστείς Καμίνι.\"/pause 500/speak Clint \"Τυχαίνει να είχα εδώ γύρω ένα επιπλέον σετ σχεδίων. Ορίστε, θέλω να τα πάρεις.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"Έμαθες πώς να κατασκευάζεις ένα «Καμίνι»\"/pause 800/speak Clint \"Το Καμίνι σού επιτρέπει να λιώνεις μέταλλο σε ράβδους. Οι ράβδοι μπορούν να χρησιμοποιηθούν για κατασκευές, οικοδομικές εργασίες και αναβαθμίσεις εργαλείων.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \" Όταν λιώσεις μερικές ράβδους χαλκού, σκέψου να μου αναθέσεις την αναβάθμιση ενός εργαλείου σου. Μπορεί να κάνει τη δουλειά σου πολύ ευκολότερη.#$b#Λοιπόν, εντάξει. Πηγαίνω σπίτι. Να προσέχεις.\"/pause 200/addQuest 11/end",
+      "glossaryIds": [
+        "furnace",
+        "ore-bar"
+      ],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "900553/t 600 1130/Hn ccPantry/A cc_Greenhouse/w sunny",
+      "source": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"Good morning, dear.\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"It was a lovely walk out here... I haven't seen this old farm in a long time.$s#$b#It looks even better than I remember!$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"Here, I brought you a little something.#$b#It's a gift... from one gardener to another.$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"Received a 'Garden Pot'\"/pause 800/speak Evelyn \"These pots are really handy. You can use them to grow crops of any season indoors!#$b#They also look nice outside... but out here they can only house in-season crops.\"/pause 500/speak Evelyn \"If you need more, they're really easy to make, too... here, I've got an old magazine clipping with instructions.\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"Learned how to craft a 'Garden Pot'\"/pause 800/speak Evelyn \"Well, I'd better go. George gets grumpy if he doesn't have his oatmeal on time...#$b#You have a great day, honey!$h\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"Καλημέρα, καλή μου ψυχή.\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"Ήταν υπέροχος ο περίπατος ως εδώ... Είχα πολύ καιρό να δω αυτό το παλιό αγρόκτημα.$s#$b#Φαίνεται ακόμα καλύτερο απ' όσο το θυμάμαι!$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"Ορίστε, σου έφερα κάτι μικρό.#$b#Είναι δώρο... από μια φίλη της κηπουρικής σε μια συγγενική ψυχή.$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"Έλαβες μια «Γλάστρα Κήπου»\"/pause 800/speak Evelyn \"Αυτές οι γλάστρες είναι πραγματικά χρήσιμες. Μπορείς να τις χρησιμοποιείς για να καλλιεργείς φυτά κάθε εποχής σε εσωτερικούς χώρους!#$b#Δείχνουν επίσης όμορφες έξω... αλλά εδώ μπορούν να φιλοξενήσουν μόνο φυτά της τρέχουσας εποχής.\"/pause 500/speak Evelyn \"Αν χρειαστείς κι άλλες, φτιάχνονται επίσης πολύ εύκολα... Ορίστε, έχω ένα παλιό απόκομμα περιοδικού με οδηγίες.\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"Έμαθες πώς να κατασκευάζεις μια «Γλάστρα Κήπου»\"/pause 800/speak Evelyn \"Λοιπόν, καλύτερα να φύγω. Ο Τζορτζ γκρινιάζει αν δεν φάει το κουάκερ του στην ώρα του...#$b#Να περάσεις υπέροχη μέρα, καλή μου ψυχή!$h\"/pause 500/end",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "992253/t 600 1130/f Leah 1500/w sunny",
+      "source": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Hi, @. Beautiful day, isn't it?\"/pause 500/speak Leah \"I brought you a gift.#$b#It's a sculpture I've been working on, just for you.\"/pause 500/pause 800/itemAboveHead sculpture/pause 3300/pause 800/awardFestivalPrize sculpture/pause 800/pause 50/speak Leah \"It's called... 'How I Feel About @'. I hope you like it.\"/pause 50/pause 50/end",
+      "translation": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Γεια σου, @. Πανέμορφη μέρα, έτσι δεν είναι;\"/pause 500/speak Leah \"Σου έφερα ένα δώρο.#$b#Είναι ένα γλυπτό που έφτιαχνα μόνο για σένα.\"/pause 500/pause 800/itemAboveHead sculpture/pause 3300/pause 800/awardFestivalPrize sculpture/pause 800/pause 50/speak Leah \"Το ονόμασα... «Πώς Νιώθω για το @». Ελπίζω να σου αρέσει.\"/pause 50/pause 50/end",
+      "glossaryIds": [],
+      "structure": "event"
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "65/m 25000/t 600 1200/H",
+      "source": "continue/64 15/farmer 64 16 2 Demetrius 64 18 0/pause 1500/speak Demetrius \"Hi @! I have some good news for you. A few days ago I made a breakthrough in my research on the local environment.$h#$b#I'll spare you the technical details and get to the point... You know that empty cave you have, over in the cliffs?#$b#Well, I have a way to turn it into something useful... for both of us.#$b#I'd like to set up the cave to attract some local species. That way I can observe them in a more controlled environment. And you can harvest whatever products they produce.#$b#I can either set up the cave to attract mushrooms or fruit bats. The bats will sometimes leave fruit for you to collect.\"/cave/speak Demetrius \"Alright! I'll go set it up for you right now! It shouldn't take any time at all.$h#$b#Thanks for letting me do this.\"/end dialogue Demetrius \"I'm excited to see what happens with that cave. Aren't you?#$e#I hope you're pleased with the work I did.\"",
+      "translation": "continue/64 15/farmer 64 16 2 Demetrius 64 18 0/pause 1500/speak Demetrius \"Γεια σου, @! Έχω καλά νέα. Πριν από λίγες μέρες έκανα μια σημαντική ανακάλυψη στην έρευνά μου για το τοπικό περιβάλλον.$h#$b#Θα σε απαλλάξω από τις τεχνικές λεπτομέρειες και θα μπω στο θέμα... Ξέρεις την άδεια σπηλιά που έχεις, πάνω στους γκρεμούς;#$b#Λοιπόν, έχω έναν τρόπο να τη μετατρέψω σε κάτι χρήσιμο... και για τους δυο μας.#$b#Θα ήθελα να διαμορφώσω τη σπηλιά ώστε να προσελκύει ορισμένα τοπικά είδη. Έτσι θα μπορώ να τα παρατηρώ σε πιο ελεγχόμενο περιβάλλον. Κι εσύ θα μπορείς να συλλέγεις ό,τι παράγουν.#$b#Μπορώ να διαμορφώσω τη σπηλιά ώστε να προσελκύει είτε μανιτάρια είτε φρουτοφάγες νυχτερίδες. Οι νυχτερίδες θα αφήνουν μερικές φορές φρούτα για να μαζεύεις.\"/cave/speak Demetrius \"Εντάξει! Θα πάω να την ετοιμάσω για σένα αμέσως! Δεν θα πάρει σχεδόν καθόλου χρόνο.$h#$b#Ευχαριστώ που μου το επέτρεψες.\"/end dialogue Demetrius \"Ανυπομονώ να δω τι θα συμβεί με εκείνη τη σπηλιά. Εσύ όχι;#$e#Ελπίζω να σου αρέσει η δουλειά που έκανα.\"",
+      "glossaryIds": [],
+      "structure": "event"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "5052f80f198dbaf60f6e3ed8c17449ad620743b57f3d96fc2d501fb66758d7b8",
+    "notes": "Editorial pass 1 and pass 2 complete: all fifteen events reviewed scene by scene; translated every detected speech, response menu, choice branch, item-receipt and recipe text; preserved three text-free scripts; verified event skeletons, all numeric and control signatures, glossary terms, consistent repeated dialogue, character voice, and player-neutral wording."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "0246-data-quests-39-53",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "21a6a33634d03c434145be5a77ccae4a942ed18df734784911f068a4400df900",
+    "notes": "Checked all 15 quest definitions twice against authoritative English source. Preserved quest types, NPC/item/location metadata, coordinates, quantities, rewards, booleans, numeric forms, slash layouts, placeholders, and dialogue branch/emotion controls exactly; translated sound captions without changing their delimiter structure. Titles, descriptions, objectives, and completion dialogue received two editorial passes for natural Greek, gender-neutral player address, distinct character voices, and consistent established names and item terminology, including Linus, Caroline, Abigail, Willy, Clint, Emily, the Wizard, the Mines, Robin, Hardwood, Gus, Evelyn, George, Pierre, Demetrius, Kent, Jodi, Mayor Lewis, Pam, fish names, and seasonal capitalization."
+  },
+  "records": [
+    {
+      "target": "Data/Quests",
+      "key": "107",
+      "source": "LostItem/Blackberry Basket/It's blackberry season, but Linus can't find his basket! He's asking you to help him find it. He has no idea where it is./Find Linus' basket and return it to him./Linus (O)790 Backwoods 27 27/-1/0/-1/true/My basket! Thank you. This means a lot to me.$h",
+      "translation": "LostItem/Το Καλάθι για Βατόμουρα/Είναι η εποχή των βατόμουρων, αλλά ο Λάινους δεν βρίσκει το καλάθι του! Σου ζητά να τον βοηθήσεις να το βρει. Δεν έχει ιδέα πού βρίσκεται./Βρες το καλάθι του Λάινους και δώσ' του το πίσω./Linus (O)790 Backwoods 27 27/-1/0/-1/true/Το καλάθι μου! Ευχαριστώ. Σημαίνει πολλά για μένα.$h",
+      "glossaryIds": [
+        "linus"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "108",
+      "source": "ItemDelivery/Carving Pumpkins/Caroline wants to carve a pumpkin with her daughter. She asked you to bring her one from the farm./Bring Caroline a pumpkin./Caroline (O)276/-1/500/-1/true/Oh, the pumpkin! It's a good one... Abigail will be so happy when she sees this. Thanks, @!$h",
+      "translation": "ItemDelivery/Σκάλισμα Κολοκύθας/Η Κάρολαϊν θέλει να σκαλίσει μια κολοκύθα με την κόρη της. Σου ζήτησε να της φέρεις μία από το αγρόκτημα./Πήγαινε μια κολοκύθα στην Κάρολαϊν./Caroline (O)276/-1/500/-1/true/Α, η κολοκύθα! Είναι πολύ καλή... Η Άμπιγκεϊλ θα χαρεί τόσο πολύ όταν τη δει. Ευχαριστώ, @!$h",
+      "glossaryIds": [
+        "caroline",
+        "abigail",
+        "farm"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "109",
+      "source": "ItemDelivery/Catch A Squid/Willy is challenging you to catch a squid. He says you can fish them from the ocean on winter nights./Bring Willy a squid./Willy (O)151/-1/800/-1/true/Hey, you did it! Not bad. Not bad at all. I'm impressed.#$b#Winter's a good time to break out the old fishing rod, isn't it?",
+      "translation": "ItemDelivery/Πιάσε ένα Καλαμάρι/Ο Γουίλι σε προκαλεί να πιάσεις ένα καλαμάρι. Λέει πως μπορείς να τα ψαρέψεις στον ωκεανό τις νύχτες του Χειμώνα./Πήγαινε ένα Καλαμάρι στον Γουίλι./Willy (O)151/-1/800/-1/true/Έι, τα κατάφερες! Καθόλου άσχημα. Καθόλου άσχημα, λέμε. Εντυπωσιάστηκα.#$b#Ο Χειμώνας είναι καλή εποχή για να ξαναβγάλεις το παλιό καλάμι ψαρέματος, έτσι δεν είναι;",
+      "glossaryIds": [
+        "willy"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "110",
+      "source": "ItemDelivery/Clint's Attempt/Clint wants you to give Emily an amethyst. He wants you to tell her it's from him./Bring Emily an Amethyst./Emily (O)66/-1/0/-1/true/Oh, my favorite stone! You're so sweet!$h#$b#Huh? It's from who?$u#$b#Oh, you got it at Clint's? Well I don't care where you got it from, it's beautiful! Thank you! *smooch*$h",
+      "translation": "ItemDelivery/Η Προσπάθεια του Κλιντ/Ο Κλιντ θέλει να δώσεις έναν αμέθυστο στην Έμιλι. Θέλει να της πεις ότι είναι από εκείνον./Πήγαινε έναν Αμέθυστο στην Έμιλι./Emily (O)66/-1/0/-1/true/Α, η αγαπημένη μου πέτρα! Τι γλυκό εκ μέρους σου!$h#$b#Ε; Από ποιον είναι;$u#$b#Α, το πήρες από το μαγαζί του Κλιντ; Δεν με νοιάζει από πού το πήρες, είναι πανέμορφο! Ευχαριστώ! *φιλί*$h",
+      "glossaryIds": [
+        "clint",
+        "emily"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "111",
+      "source": "ItemDelivery/A Dark Reagent/The wizard wants you to descend into the mines and fetch him a Void Essence. He needs it for some kind of dark magic./Bring Wizard a Void Essence./Wizard (O)769/-1/1000/-1/true/Ah, you've brought it. You've earned my gratitude, and a 1000g reward. Now go.",
+      "translation": "ItemDelivery/Ένα Σκοτεινό Αντιδραστήριο/Ο Μάγος θέλει να κατεβείς στα Ορυχεία και να του φέρεις μια Ουσία του Κενού. Τη χρειάζεται για κάποιου είδους σκοτεινή μαγεία./Πήγαινε μια Ουσία του Κενού στον Μάγο./Wizard (O)769/-1/1000/-1/true/Α, την έφερες. Κέρδισες την ευγνωμοσύνη μου και μια ανταμοιβή 1000g. Τώρα φύγε.",
+      "glossaryIds": [
+        "wizard-rasmodius",
+        "the-mines"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "112",
+      "source": "ItemDelivery/A Favor For Clint/Clint got a new hammer and he wants to test it out on a variety of metals./Bring Clint an Iron Bar./Clint (O)335/-1/500/-1/true/Hey, it's the iron bar I asked for. It looks strong... perfect.#$b#Thanks, @. I appreciate this.",
+      "translation": "ItemDelivery/Μια Χάρη για τον Κλιντ/Ο Κλιντ απέκτησε ένα καινούριο σφυρί και θέλει να το δοκιμάσει σε διάφορα μέταλλα./Πήγαινε μια Ράβδο Σιδήρου στον Κλιντ./Clint (O)335/-1/500/-1/true/Έι, είναι η Ράβδος Σιδήρου που ζήτησα. Φαίνεται γερή... τέλεια.#$b#Ευχαριστώ, @. Το εκτιμώ.",
+      "glossaryIds": [
+        "clint"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "113",
+      "source": "ItemDelivery/Robin's Request/Robin wrote to you asking for some hardwood./Bring Robin 10 pieces of Hardwood./Robin (O)709 10/-1/500/-1/true/Oh, you brought it! I know I can always count on you, @.$h#$b#Mmhmm... This wood is perfect. It's exactly what I need. Thanks!",
+      "translation": "ItemDelivery/Το Αίτημα της Ρόμπιν/Η Ρόμπιν σού έγραψε ζητώντας λίγο Σκληρό Ξύλο./Πήγαινε 10 κομμάτια Σκληρού Ξύλου στη Ρόμπιν./Robin (O)709 10/-1/500/-1/true/Α, το έφερες! Ξέρω ότι μπορώ πάντα να βασίζομαι πάνω σου, @.$h#$b#Μμμ... Αυτό το ξύλο είναι τέλειο. Είναι ακριβώς αυτό που χρειάζομαι. Ευχαριστώ!",
+      "glossaryIds": [
+        "robin",
+        "hardwood"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "114",
+      "source": "ItemDelivery/Fish Stew/Gus wants to make fish stew, but he needs an albacore./Bring Gus an Albacore./Gus (O)705/-1/400/-1/true/*sniff*...*sniff*... What's that? Something smells like albacore!#$b#Aha! You brought it! Thanks a million!",
+      "translation": "ItemDelivery/Ψαρόσουπα/Ο Γκας θέλει να φτιάξει ψαρόσουπα, αλλά χρειάζεται έναν Μακρύπτερο Τόνο./Πήγαινε έναν Μακρύπτερο Τόνο στον Γκας./Gus (O)705/-1/400/-1/true/*σνιφ*... *σνιφ*... Τι είναι αυτό; Κάτι μυρίζει μακρύπτερο τόνο!#$b#Αχά! Τον έφερες! Χίλια ευχαριστώ!",
+      "glossaryIds": [
+        "gus"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "115",
+      "source": "ItemDelivery/Fresh Fruit/Emily wants a taste of spring. She's asking for a fresh apricot./Bring Emily an Apricot./Emily (O)634/-1/600/-1/true/Oh... You followed through! Thanks, this looks delicious!$h",
+      "translation": "ItemDelivery/Φρέσκο Φρούτο/Η Έμιλι θέλει μια γεύση από Άνοιξη. Ζητά ένα φρέσκο βερίκοκο./Πήγαινε ένα Βερίκοκο στην Έμιλι./Emily (O)634/-1/600/-1/true/Α... Το έκανες τελικά! Ευχαριστώ, φαίνεται πεντανόστιμο!$h",
+      "glossaryIds": [
+        "emily"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "116",
+      "source": "ItemDelivery/Granny's Gift/Evelyn wants to surprise her husband with a gift./Bring Evelyn a Leek./Evelyn (O)20/-1/500/-1/true/Oh, thank you, dear. This leek looks delicious. George will be so happy.#$b#He loves when I make eggs with leeks for breakfast.",
+      "translation": "ItemDelivery/Το Δώρο της Γιαγιάς/Η Έβελιν θέλει να κάνει έκπληξη στον σύζυγό της με ένα δώρο./Πήγαινε ένα Πράσο στην Έβελιν./Evelyn (O)20/-1/500/-1/true/Αχ, ευχαριστώ, παιδί μου. Αυτό το πράσο φαίνεται πεντανόστιμο. Ο Τζορτζ θα χαρεί πολύ.#$b#Του αρέσει πολύ όταν φτιάχνω αυγά με πράσα για πρωινό.",
+      "glossaryIds": [
+        "evelyn",
+        "george"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "117",
+      "source": "ItemDelivery/Pierre's Notice/Pierre will pay \"top coin\" to whoever brings him a plate of sashimi. Apparently he's really craving the stuff./Bring Pierre some Sashimi./Pierre (O)227/-1/1000/-1/true/It's about time! I was starting to get the shakes, I wanted this fish so bad. *munch*... Mmm, now that's good.#$b#Thanks, @.$h",
+      "translation": "ItemDelivery/Η Ανακοίνωση του Πιερ/Ο Πιερ θα δώσει «γερή αμοιβή» σε όποιον του πάει ένα πιάτο σασίμι. Απ' ό,τι φαίνεται, το λαχταρά πραγματικά./Πήγαινε λίγο Σασίμι στον Πιερ./Pierre (O)227/-1/1000/-1/true/Καιρός ήταν! Είχα αρχίσει να τρέμω, τόσο πολύ ήθελα αυτό το ψάρι. *μασούλημα*... Μμμ, αυτό μάλιστα.#$b#Ευχαριστώ, @.$h",
+      "glossaryIds": [
+        "pierre"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "118",
+      "source": "ItemDelivery/Aquatic Research/Demetrius is studying the toxin levels of the local pufferfish. He'd like you to bring him one./Bring Demetrius a Pufferfish./Demetrius (O)128/-1/1000/-1/true/There you are. The specimen looks perfect. I'm going to get it on ice straight away. Thanks, @!",
+      "translation": "ItemDelivery/Υδρόβια Έρευνα/Ο Ντιμίτριους μελετά τα επίπεδα τοξινών στους ντόπιους λαγοκέφαλους. Θα ήθελε να του φέρεις έναν./Πήγαινε έναν Λαγοκέφαλο στον Ντιμίτριους./Demetrius (O)128/-1/1000/-1/true/Να τος. Το δείγμα φαίνεται τέλειο. Θα το βάλω αμέσως στον πάγο. Ευχαριστώ, @!",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "119",
+      "source": "ItemDelivery/A Soldier's Star/Kent wants to give his wife a starfruit for their anniversary./Bring Kent a Starfruit./Kent (O)268/-1/500/-1/true/Hey. Shhh... Don't let Jodi see.#$b#Ah, this looks juicy. She'll love it. Thank you so much.$h",
+      "translation": "ItemDelivery/Το Αστέρι ενός Στρατιώτη/Ο Κεντ θέλει να δώσει στη σύζυγό του ένα Αστερόφρουτο για την επέτειό τους./Πήγαινε ένα Αστερόφρουτο στον Κεντ./Kent (O)268/-1/500/-1/true/Έι. Σσσ... Μην το δει η Τζόντι.#$b#Α, φαίνεται ζουμερό. Θα το λατρέψει. Ευχαριστώ πάρα πολύ.$h",
+      "glossaryIds": [
+        "kent",
+        "jodi"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "120",
+      "source": "ItemDelivery/Mayor's Need/Mayor Lewis wants truffle oil. He won't explain what it's for. Maybe it's none of your business./Bring Lewis a bottle of Truffle Oil./Lewis (O)432/-1/750/-1/true/You got the oil? Let me see...#$b#It's high quality... very slick. Great. Thank you.",
+      "translation": "ItemDelivery/Η Ανάγκη του Δημάρχου/Ο Δήμαρχος Λιούις θέλει Λάδι Τρούφας. Δεν εξηγεί πού το χρειάζεται. Ίσως να μη σε αφορά./Πήγαινε ένα μπουκάλι Λάδι Τρούφας στον Λιούις./Lewis (O)432/-1/750/-1/true/Έφερες το λάδι; Για να δω...#$b#Είναι υψηλής ποιότητας... πολύ ολισθηρό. Υπέροχα. Ευχαριστώ.",
+      "glossaryIds": [
+        "mayor-lewis"
+      ]
+    },
+    {
+      "target": "Data/Quests",
+      "key": "121",
+      "source": "ItemDelivery/Wanted: Lobster/Gus put out a notice requesting a fresh lobster./Bring Gus a Lobster./Gus (O)715/-1/800/-1/true/Something smells like fresh lobster. Oh, that's good.$h#$b#Take care, friend.",
+      "translation": "ItemDelivery/Ζητείται: Αστακός/Ο Γκας δημοσίευσε μια ανακοίνωση ζητώντας έναν φρέσκο αστακό./Πήγαινε έναν Αστακό στον Γκας./Gus (O)715/-1/800/-1/true/Κάτι μυρίζει σαν φρέσκος αστακός. Α, τι ωραία.$h#$b#Να προσέχεις.",
+      "glossaryIds": [
+        "gus"
+      ]
+    }
+  ]
+}

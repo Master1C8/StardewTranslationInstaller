@@ -1,0 +1,300 @@
+{
+  "id": "0451-mail-001-030",
+  "kind": "long",
+  "review": {
+    "status": "reviewed",
+    "sourceFidelity": true,
+    "greekReadability": true,
+    "glossarySHA256": "1ca6160ba2f1a9df6dcec2349aae7c68c8dfb9492e578d8bc6e0b576cbbfe629",
+    "recordsSHA256": "481e31eac19bac98053e9f6bf85bccbf4b088d882cf9e64f2f46d7033d1dfb2d",
+    "notes": "Editorial pass 1 and pass 2 complete: checked all 30 letters against the English asset; reviewed sender voices, subject lines, gender neutral player address, gifts, livestock, marriage items, glossary terms, item commands, control markers, IDs, and quantities."
+  },
+  "records": [
+    {
+      "target": "Data/mail",
+      "key": "Robin",
+      "source": "Hey there!^I had some extra wood lying around... I thought maybe you could use it. Take care!  ^   -Robin %item id (O)388 50 %%[#]A Gift From Robin",
+      "translation": "Γεια σου!^Μου περίσσευαν μερικά ξύλα... Σκέφτηκα ότι ίσως σου φανούν χρήσιμα. Να προσέχεις!  ^   -Ρόμπιν %item id (O)388 50 %%[#]Ένα Δώρο από τη Ρόμπιν",
+      "glossaryIds": [
+        "robin"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Demetrius",
+      "source": "Dear @,^I was conducting a field study the other day, and I found this specimen. ^I hope you find it as interesting as I did.    ^   -Demetrius%item id (O)392 1 (O)394 1 (O)132 1 (O)66 1 %%[#]A Gift From Demetrius",
+      "translation": "Γεια σου, @,^Τις προάλλες πραγματοποιούσα μια έρευνα πεδίου και βρήκα αυτό το δείγμα. ^Ελπίζω να το βρεις τόσο ενδιαφέρον όσο κι εγώ.    ^   -Ντιμίτριους%item id (O)392 1 (O)394 1 (O)132 1 (O)66 1 %%[#]Ένα Δώρο από τον Ντιμίτριους",
+      "glossaryIds": [
+        "demetrius"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Linus",
+      "source": "Hello, friend.^The mountain lake has been kind to me lately. I'd like to share my good fortune with you.  ^   -Linus %item id (O)136 1 (O)143 1 (O)202 1 (O)227 1 (O)228 1 %%[#]A Gift From Linus",
+      "translation": "Γεια χαρά.^Η ορεινή λίμνη μού φέρεται καλά τελευταία. Θα ήθελα να μοιραστώ την καλή μου τύχη μαζί σου.  ^   -Λάινους %item id (O)136 1 (O)143 1 (O)202 1 (O)227 1 (O)228 1 %%[#]Ένα Δώρο από τον Λάινους",
+      "glossaryIds": [
+        "linus"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Pierre",
+      "source": "Dear valued customer,^Thanks for visiting 'Pierre's'! Enclosed is your 'Cash-back Rewards Program' rebate. See you soon! ^   -Pierre^  P.S. Sorry for the stock message, @. Enjoy! %item money 250 601  %%[#]A Gift From Pierre",
+      "translation": "Αξιότιμο μέλος της πελατείας μας,^Ευχαριστούμε που επισκεφθήκατε το «Παντοπωλείο του Πιερ»! Εσωκλείεται η επιστροφή χρημάτων σας από το «Πρόγραμμα Επιβράβευσης με Επιστροφή Μετρητών». Τα λέμε σύντομα! ^   -Πιερ^  Υ.Γ. Συγγνώμη για το τυποποιημένο μήνυμα, @. Απόλαυσέ το! %item money 250 601  %%[#]Ένα Δώρο από τον Πιερ",
+      "glossaryIds": [
+        "pierre",
+        "pierres-general-store"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Caroline",
+      "source": "Dear @,^Here's a vegetable from the little garden I keep out back. You probably have more veggies than you know what to do with, but oh well.   ^   -Caroline%item id (O)190 1 (O)192 1 (O)24 1 %%[#]A Gift From Caroline",
+      "translation": "Γεια σου, @,^Ορίστε ένα λαχανικό από τον μικρό κήπο που έχω πίσω από το σπίτι. Μάλλον έχεις ήδη περισσότερα λαχανικά από όσα ξέρεις τι να τα κάνεις, αλλά δεν πειράζει.   ^   -Κάρολαϊν%item id (O)190 1 (O)192 1 (O)24 1 %%[#]Ένα Δώρο από την Κάρολαϊν",
+      "glossaryIds": [
+        "caroline"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "George",
+      "source": "Found some good quality stone. ^Maybe you can build with it or something.  ^   -George %item id (O)390 35 %%[#]A Gift From George",
+      "translation": "Βρήκα πέτρα καλής ποιότητας. ^Ίσως μπορέσεις να χτίσεις κάτι με αυτή ή κάτι τέτοιο.  ^   -Τζορτζ %item id (O)390 35 %%[#]Ένα Δώρο από τον Τζορτζ",
+      "glossaryIds": [
+        "george"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Evelyn",
+      "source": "Hello there, dear,  I hope your farm is doing well.^ I'm sending you a little something from my kitchen... I hope it didn't crumble in the mail.  ^   -Evelyn  %item id (O)216 1 (O)220 1 (O)223 1 %%[#]A Gift From Evelyn",
+      "translation": "Γεια σου, αγαπημένο μου παιδί,  ελπίζω το αγρόκτημά σου να πηγαίνει καλά.^ Σου στέλνω κάτι μικρό από την κουζίνα μου... Ελπίζω να μη θρυμματίστηκε στο ταχυδρομείο.  ^   -Έβελιν  %item id (O)216 1 (O)220 1 (O)223 1 %%[#]Ένα Δώρο από την Έβελιν",
+      "glossaryIds": [
+        "evelyn"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Pam",
+      "source": "Hey. ^I found this in a drawer somewhere. Thought you could use it.   ^   -Pam %item id (O)346 1 (O)349 1 (O)787 1 %%[#]A Gift From Pam",
+      "translation": "Έι. ^Το βρήκα σε κάποιο συρτάρι. Σκέφτηκα ότι ίσως σου φανεί χρήσιμο.   ^   -Παμ %item id (O)346 1 (O)349 1 (O)787 1 %%[#]Ένα Δώρο από την Παμ",
+      "glossaryIds": [
+        "pam"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Lewis",
+      "source": "@,^I'm really glad you've become part of our community! I've enclosed a 500g check from the Stardew Valley Agricultural Fund to help you continue your good work. ^Maybe you can buy some more seeds with it.  ^  Sincerely, Mr. Lewis%item money 500 501 %%[#]A Gift From Lewis",
+      "translation": "@,^Χαίρομαι πραγματικά που έγινες μέλος της κοινότητάς μας! Εσωκλείω μια επιταγή 500g από το Γεωργικό Ταμείο της Stardew Valley, για να σε βοηθήσω να συνεχίσεις την καλή δουλειά. ^Ίσως μπορέσεις να αγοράσεις κι άλλους σπόρους με αυτά τα χρήματα.  ^  Με εκτίμηση, κ. Λιούις%item money 500 501 %%[#]Ένα Δώρο από τον Λιούις",
+      "glossaryIds": [
+        "mayor-lewis",
+        "stardew-valley"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Gus",
+      "source": "@!^I made you a little treat this morning in the saloon. Dig in!   ^   -Your friend, Gus%item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 (O)200 1 (O)195 1 (O)198 1 %%[#]A Gift From Gus",
+      "translation": "@!^Σου ετοίμασα μια μικρή λιχουδιά σήμερα το πρωί στο Σαλούν της Αστεροσταγόνας. Καλή όρεξη!   ^   -Ο φίλος σου, Γκας%item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 (O)200 1 (O)195 1 (O)198 1 %%[#]Ένα Δώρο από τον Γκας",
+      "glossaryIds": [
+        "gus",
+        "stardrop-saloon"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Clint",
+      "source": "Um, Hello...     ^Sorry, I'm not good at writing letters. I made one metal bar too many, and I thought you might need it.  ^   -Clint, the blacksmith %item id (O)334 1 (O)335 1 (O)336 1 %%[#]A Gift From Clint",
+      "translation": "Εμμ, γεια...     ^Συγγνώμη, δεν είμαι καλός στο γράψιμο. Έφτιαξα μία μεταλλική ράβδο παραπάνω και σκέφτηκα ότι ίσως τη χρειάζεσαι.  ^   -Κλιντ, ο σιδηρουργός %item id (O)334 1 (O)335 1 (O)336 1 %%[#]Ένα Δώρο από τον Κλιντ",
+      "glossaryIds": [
+        "clint"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Jodi",
+      "source": "Dear @,^I ordered too much fertilizer for the garden!! I bet you can put it to some good use. Take care!  ^   -Jodi %item id (O)368 5 (O)369 5 (O)370 5 %%[#]A Gift From Jodi",
+      "translation": "Γεια σου, @,^Παρήγγειλα πάρα πολύ λίπασμα για τον κήπο!! Στοιχηματίζω πως εσύ θα το αξιοποιήσεις. Να προσέχεις!  ^   -Τζόντι %item id (O)368 5 (O)369 5 (O)370 5 %%[#]Ένα Δώρο από την Τζόντι",
+      "glossaryIds": [
+        "jodi",
+        "fertilizer"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Kent",
+      "source": "Hello, @.^This item was collecting dust in the tool shed. I figured you might be able to use it.  ^   -Kent%item id (O)286 1 (O)287 1 (O)288 1 (O)787 1 %%[#]A Gift From Kent",
+      "translation": "Γεια σου, @.^Αυτό το αντικείμενο μάζευε σκόνη στην αποθήκη εργαλείων. Σκέφτηκα ότι ίσως μπορέσεις να το χρησιμοποιήσεις.  ^   -Κεντ%item id (O)286 1 (O)287 1 (O)288 1 (O)787 1 %%[#]Ένα Δώρο από τον Κεντ",
+      "glossaryIds": [
+        "kent"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Emily",
+      "source": "Hi!^How are you doing? I hope you enjoy the gift I've sent you... Well, goodbye! +   ^   -Emily %item id (O)397 1 (O)428 1 (O)440 1 %%[#]A Gift From Emily",
+      "translation": "Γεια!^Τι κάνεις; Ελπίζω να απολαύσεις το δώρο που σου έστειλα... Λοιπόν, αντίο! +   ^   -Έμιλι %item id (O)397 1 (O)428 1 (O)440 1 %%[#]Ένα Δώρο από την Έμιλι",
+      "glossaryIds": [
+        "emily"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Marnie",
+      "source": "Dear @,^You're such a good neighbor I thought I'd send over some animal feed to make your job easier. Keep it up! ^   -Marnie %item id (O)178 30 %%[#]A Gift From Marnie",
+      "translation": "Γεια σου, @,^Είσαι τόσο εξαιρετικό μέλος της γειτονιάς μας, που σκέφτηκα να σου στείλω λίγο Σανό για να κάνω τη δουλειά σου ευκολότερη. Συνέχισε έτσι! ^   -Μάρνι %item id (O)178 30 %%[#]Ένα Δώρο από τη Μάρνι",
+      "glossaryIds": [
+        "marnie",
+        "hay"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Shane",
+      "source": "Hey,^I thought it would be fun to send you a letter. I don't really know what to write, though.^ Here, I've enclosed a treat for you. Don't tell anyone, but I snagged this from the back room of JojaMart ages ago.^Okay, see you soon. ^   -Shane %item id (O)215 1 (O)206 1 %%[#]A Gift From Shane",
+      "translation": "Έι,^Σκέφτηκα πως θα είχε πλάκα να σου στείλω ένα γράμμα. Δεν ξέρω όμως τι να γράψω.^ Ορίστε, σου εσωκλείω μια λιχουδιά. Μην το πεις σε κανέναν, αλλά την άρπαξα πριν από πολύ καιρό από την πίσω αποθήκη του JojaMart.^Εντάξει, τα λέμε σύντομα. ^   -Σέιν %item id (O)215 1 (O)206 1 %%[#]Ένα Δώρο από τον Σέιν",
+      "glossaryIds": [
+        "shane",
+        "joja"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Wizard",
+      "source": "Greetings, young adept.^I have enclosed in this package an item of arcane significance. Use it wisely.   ^   -M. Rasmodius, Wizard%item id (O)422 1 (O)82 1 (O)84 1 (O)70 1 %%[#]A Gift From the Wizard",
+      "translation": "Χαιρετισμούς, νεοφώτιστη ψυχή.^Εσωκλείω σε αυτό το δέμα ένα αντικείμενο απόκρυφης σημασίας. Χρησιμοποίησέ το με σύνεση.   ^   -Μ. Ρασμόντιους, Μάγος%item id (O)422 1 (O)82 1 (O)84 1 (O)70 1 %%[#]Ένα Δώρο από τον Μάγο",
+      "glossaryIds": [
+        "wizard-rasmodius"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Sandy",
+      "source": "Greetings from Calico Desert!^Come visit me soon, I'm really bored out here :(. I've included a gift from the desert. You can come and thank me in person!   ^   -Sandy %item id (O)88 1 (O)90 1 (O)218 1 %%[#]A Gift From Sandy",
+      "translation": "Χαιρετισμούς από την Έρημο Κάλικο!^Έλα να με επισκεφθείς σύντομα, βαριέμαι αφόρητα εδώ έξω :(. Σου έβαλα ένα δώρο από την έρημο. Μπορείς να έρθεις να με ευχαριστήσεις αυτοπροσώπως!   ^   -Σάντι %item id (O)88 1 (O)90 1 (O)218 1 %%[#]Ένα Δώρο από τη Σάντι",
+      "glossaryIds": [
+        "sandy",
+        "calico-desert"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "afterSamShow",
+      "source": "@,^the show was a rockin' success! I wanted to say thanks again for all your help in creating this amazing band. We couldn't have done it without you!   ^   -Sam[#]Sam's Thank-you Note",
+      "translation": "@,^η συναυλία είχε τρομερή επιτυχία! Ήθελα να σε ευχαριστήσω ξανά για όλη τη βοήθειά σου στη δημιουργία αυτού του καταπληκτικού συγκροτήματος. Δεν θα τα είχαμε καταφέρει χωρίς εσένα!   ^   -Σαμ[#]Ευχαριστήριο Σημείωμα του Σαμ",
+      "glossaryIds": [
+        "sam"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "afterArtShow",
+      "source": "Dear @,^Thanks again for coming to my art show. It was such a success! I sold nearly all of my sculptures, and everyone was so positive and encouraging! I hope to see you again soon.  ^   -Leah[#]Leah's Thank-you Note",
+      "translation": "Γεια σου, @,^Ευχαριστώ ξανά που ήρθες στην έκθεση τέχνης μου. Είχε τεράστια επιτυχία! Πούλησα σχεδόν όλα τα γλυπτά μου και όλοι ήταν τόσο θετικοί και ενθαρρυντικοί! Ελπίζω να σε ξαναδώ σύντομα.  ^   -Λία[#]Ευχαριστήριο Σημείωμα της Λία",
+      "glossaryIds": [
+        "leah"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "haleyGarden",
+      "source": "@,^I thought it would be fun to write you a note.^ I had so much fun with the cows yesterday... I'm starting to understand why you chose the farmer's life! Hope to see you soon.  ^   -Haley[#]Haley's Note",
+      "translation": "@,^Σκέφτηκα πως θα είχε πλάκα να σου γράψω ένα σημείωμα.^ Πέρασα τόσο όμορφα με τις αγελάδες χθες... Αρχίζω να καταλαβαίνω γιατί επέλεξες τη ζωή στο αγρόκτημα! Ελπίζω να σε δω σύντομα.  ^   -Χέιλι[#]Σημείωμα της Χέιλι",
+      "glossaryIds": [
+        "haley"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "PennyCleanTrailer",
+      "source": "Sorry about what happened at my place yesterday... My mom can get into bad moods sometimes.^Please just forget it happened.  ^   -Penny[#]Penny's Apology",
+      "translation": "Συγγνώμη για όσα συνέβησαν στο σπίτι μου χθες... Η μαμά μου έχει καμιά φορά άσχημη διάθεση.^Σε παρακαλώ, ξέχνα απλώς ότι συνέβη.  ^   -Πένι[#]Η Συγγνώμη της Πένι",
+      "glossaryIds": [
+        "penny",
+        "pam"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Duck",
+      "source": "Dear @,^You've proven your ability to raise chickens, so I'm now selling ducks at my shop!       ^   -Marnie[#]Ducks For Sale!",
+      "translation": "Γεια σου, @,^Απέδειξες πως μπορείς να εκτρέφεις κοτόπουλα, οπότε πλέον πουλάω πάπιες στο κατάστημά μου!       ^   -Μάρνι[#]Πάπιες προς Πώληση!",
+      "glossaryIds": [
+        "marnie",
+        "duck"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Rabbits",
+      "source": "Dear @,^I now have rabbits in the animal shop! They will provide you with fluffy wool ...and more!       ^   -Marnie[#]Rabbits For Sale!",
+      "translation": "Γεια σου, @,^Τώρα έχω κουνέλια στο κατάστημα ζώων! Θα σου δίνουν αφράτο μαλλί ...και άλλα!       ^   -Μάρνι[#]Κουνέλια προς Πώληση!",
+      "glossaryIds": [
+        "marnie",
+        "rabbit"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Sheep",
+      "source": "Dear @,^You've proven your ability to raise cows, so I'm now selling sheep at my shop!       ^   -Marnie[#]Sheep For Sale!",
+      "translation": "Γεια σου, @,^Απέδειξες πως μπορείς να εκτρέφεις αγελάδες, οπότε πλέον πουλάω πρόβατα στο κατάστημά μου!       ^   -Μάρνι[#]Πρόβατα προς Πώληση!",
+      "glossaryIds": [
+        "marnie",
+        "sheep"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Goats",
+      "source": "Dear @,^I now have goats available for purchase at the animal shop. You've done well so far!       ^   -Marnie[#]Goats For Sale!",
+      "translation": "Γεια σου, @,^Τώρα μπορείς να αγοράσεις κατσίκες στο κατάστημα ζώων. Τα έχεις πάει καλά μέχρι τώρα!       ^   -Μάρνι[#]Κατσίκες προς Πώληση!",
+      "glossaryIds": [
+        "marnie",
+        "goat"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Pigs",
+      "source": "Dear @,^You've come a long way since you first arrived. As a result, I've decided to start selling pigs at my shop. These pigs are trained at finding gourmet truffles!       ^   -Marnie[#]Pigs For Sale!",
+      "translation": "Γεια σου, @,^Έχεις προοδεύσει πολύ από τότε που πρωτοήρθες. Γι' αυτό, αποφάσισα να αρχίσω να πουλάω γουρούνια στο κατάστημά μου. Αυτά τα γουρούνια είναι εκπαιδευμένα να βρίσκουν εκλεκτές τρούφες!       ^   -Μάρνι[#]Γουρούνια προς Πώληση!",
+      "glossaryIds": [
+        "marnie",
+        "pig"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "SeaAmulet",
+      "source": "@,^I'm going to give you this advice because I like you and I want you to stay in Pelican Town. If there comes a day that you want to ask for someone's hand in marriage, you'll need to give them a 'Mermaid's Pendant'. Don't worry, everyone in Pelican Town understands the significance of the amulet. It's an ancient tradition in this region. Good luck! ^   -Lewis[#]About Mermaid's Pendants",
+      "translation": "@,^Θα σου δώσω αυτή τη συμβουλή επειδή σε συμπαθώ και θέλω να μείνεις στην Πόλη Πέλικαν. Αν έρθει η μέρα που θα θελήσεις να κάνεις πρόταση γάμου, θα χρειαστεί να προσφέρεις ένα «Μενταγιόν της Γοργόνας». Μην ανησυχείς, όλοι στην Πόλη Πέλικαν καταλαβαίνουν τη σημασία του μενταγιόν. Είναι αρχαία παράδοση αυτής της περιοχής. Καλή τύχη! ^   -Λιούις[#]Σχετικά με τα Μενταγιόν της Γοργόνας",
+      "glossaryIds": [
+        "mayor-lewis",
+        "pelican-town",
+        "mermaids-pendant-bouquet"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Bouquet",
+      "source": "@,^It seems like you're starting to get close with some of the townspeople. If you want to show someone that you're romantically interested, you've got to give them one of my beautiful flower bouquets. I'm selling them now, for a very fair price! If you want to start a family someday, this is the first step! ^   -Pierre[#]About Bouquets",
+      "translation": "@,^Φαίνεται πως αρχίζεις να έρχεσαι κοντά με κάποιους κατοίκους της πόλης. Αν θέλεις να δείξεις σε κάποιο πρόσωπο ότι ενδιαφέρεσαι ερωτικά, πρέπει να του δώσεις ένα από τα όμορφα μπουκέτα λουλουδιών μου. Πλέον τα πουλάω σε πολύ καλή τιμή! Αν θέλεις κάποτε να κάνεις οικογένεια, αυτό είναι το πρώτο βήμα! ^   -Πιερ[#]Σχετικά με τα Μπουκέτα",
+      "glossaryIds": [
+        "pierre",
+        "mermaids-pendant-bouquet"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "RobinCooking",
+      "source": "Dear @,^here is an old recipe that my grandma passed down to me. Enjoy!   ^   -Robin%item cookingRecipe %%[#]Robin's Family Recipe",
+      "translation": "Γεια σου, @,^ορίστε μια παλιά συνταγή που μου άφησε η γιαγιά μου. Καλή όρεξη!   ^   -Ρόμπιν%item cookingRecipe %%[#]Οικογενειακή Συνταγή της Ρόμπιν",
+      "glossaryIds": [
+        "robin"
+      ]
+    }
+  ]
+}

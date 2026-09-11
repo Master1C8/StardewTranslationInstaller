@@ -1,0 +1,14 @@
+{
+  "id": "677-hidden-character-typed-field",
+  "kind": "short",
+  "target": "Data/Characters",
+  "fields": {
+    "???": {
+      "DisplayName": "???"
+    }
+  },
+  "preservationReasons": {
+    "???.DisplayName": "The question marks intentionally conceal this character's identity and are language-neutral UI punctuation."
+  },
+  "complexityReason": "This is the only player-facing English field in the typed hidden-character record, independently exported through the game runtime and hash-verified against the manifest."
+}

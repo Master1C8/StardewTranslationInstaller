@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "9333219/O Sebastian/f Sebastian 3500/w rainy/t 600 1900": "rain/48 36/farmer 49 31 2 Sebastian 50 36 3/makeInvisible 44 31 5 5/addConversationTopic sebastianFrog 0/skippable/move farmer 0 4 2/faceDirection Sebastian 0/speak Sebastian \"Ahoj, @... Jsem rád, že tě vidím.\"/emote farmer 8/faceDirection Sebastian 3/speak Sebastian \"V tom křoví je zraněný žabák... musím ho zachránit!\"/emote farmer 28/faceDirection Sebastian 0/speak Sebastian \"Potřebuju tvou pomoc. Jdi ke křoví a zkus ho přimět, aby se vydal ke mně. Já tady počkám a chytím ho.\"/pause 500/faceDirection Sebastian 3/move farmer -5 0 2/pause 500/showFrame Sebastian 54/playSound grassyStep/pause 500/speak Sebastian \"Tak... můžeme?\"/emote farmer 56/textAboveHead Sebastian \"Teď!\"/pause 500/doAction 44 36/pause 1000/doAction 44 36/pause 1000/doAction 44 36/playSound croak/specificTemporarySprite sebastianFrog/pause 10000/playSound coin/showFrame Sebastian 55/jump Sebastian/textAboveHead Sebastian \"Mám ho!\"/move farmer 5 0 2/move farmer 0 1 1/speak Sebastian \"Chudáček... má nohu úplně zřízenou. $s\"/emote farmer 28/quickQuestion #Co s ním uděláme?#Je to náš nový syn...#Myslím, že to nepřežije#Zkusme ho uzdravit!(break)speak Sebastian \"Prozatím ho vezmu domů a udělám mu pohodlí.#$b#Asi si něco nastuduju o péči o žáby. Možná o tom něco ví Marnie.\"(break)speak Sebastian \"Ha... Jo, asi ano.$h#$b#Rozhodně má tvůj nos...$7\"\\faceDirection farmer 2 true\\jump farmer\\showFrame farmer 94\\startJittering(break)emote Sebastian 12\\speak Sebastian \"Promiň, ale tvému názoru tentokrát věřit nebudu... Dám tomu chudáčkovi šanci.\"(break)speak Sebastian \"Uděláme, co bude v našich silách. Ale zatím si k němu nevytvářej příliš silné pouto...\"/pause 300/stopJittering/stopAnimation farmer/faceDirection farmer 1/pause 500/speak Sebastian \"Vezmeme ho domů.\"/pause 500/playSound croak/pause 2000/end"
+      }
+    }
+  ]
+}

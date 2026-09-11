@@ -1,0 +1,47 @@
+{
+  "id": "410-hospital-maru-sample",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed the complete sample accident and truth fork against English; verified Maru and Harvey's voices, all three advice responses, truth and player-blame alternatives, neutral player reference, sample recollection and financial terminology, emotional markers and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Hospital",
+      "key": "7/f Maru 1000/p Maru",
+      "field": null,
+      "source": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*sigh*... I'm so sick of preparing these samples...$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"Agh! Oh no!... $4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"The whole sample is ruined... Harvey's going to kill me...$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#@, what should I do?#$r 38 -50 Event_Hospital_1#Just scoop it off the floor. He won't know the difference.#$r 39 -20 Event_Hospital_2#Tell Harvey it was my fault.#$r 38 50 Event_Hospital_3#Tell Harvey it was an accident.\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"What happened? I heard something break.\"/pause 500/speak Maru \"$p 38#I accidentally dropped one of the samples... I'm so sorry.$s|@ came in and slammed the door so loud I dropped this sample.$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"You shouldn't blame others for your own problems, Maru.$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*sigh*... I'll have to call the patient back in to recollect this sample.$s#$b#This'll probably put us in the red for another month...$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+      "translation": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*povzdech*... Už mám přípravy těch vzorků plné zuby...$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"Áá! Ale ne!... $4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"Celý vzorek je zničený... Harvey mě zabije...$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#@, co mám dělat?#$r 38 -50 Event_Hospital_1#Prostě to seber z podlahy. Rozdíl nepozná.#$r 39 -20 Event_Hospital_2#Řekni Harveymu, že za to můžu já.#$r 38 50 Event_Hospital_3#Řekni Harveymu, že to byla nehoda.\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"Co se stalo? Slyšel jsem, jak se něco rozbilo.\"/pause 500/speak Maru \"$p 38#Jeden vzorek mi omylem spadl... Moc mě to mrzí.$s|Při příchodu @ dveře tak hlasitě práskly, až mi ten vzorek vypadl.$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"Neměla bys své problémy svádět na druhé, Maru.$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*povzdech*... Budu muset pacienta zavolat zpátky a odebrat nový vzorek.$s#$b#Kvůli tomu budeme nejspíš další měsíc v červených číslech...$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+      "sourceSHA256": "a05834da25e811199cb2dbb92973326bb79a44e2c5e2077ee97c41c87aa35b26",
+      "translationSHA256": "0a87b65c82fad7824147bedd143dca126677f9174984165bcb3357329b52369b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Hospital",
+      "key": "toldTruth",
+      "field": null,
+      "source": "move Harvey 0 2 3/speak Harvey \"Thanks for telling me the truth, Maru.#$b#Don't worry about the sample, we'll just get another one.\"/pause 500/emote Harvey 32/pause 500/speak Maru \"Thanks for being patient with me, Doctor Harvey.\"/pause 500/speak Harvey \"Of course... you've been a big help around here. I don't know what I'd do without you!\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"@? You look a little pale... are you feeling okay?\"/pause 500/faceDirection farmer 2/emote farmer 28/end",
+      "translation": "move Harvey 0 2 3/speak Harvey \"Díky, že jsi řekla pravdu, Maru.#$b#Se vzorkem si nedělej starosti, prostě odebereme další.\"/pause 500/emote Harvey 32/pause 500/speak Maru \"Děkuji, že se mnou máte trpělivost, doktore Harvey.\"/pause 500/speak Harvey \"Samozřejmě... tolik jsi mi tu pomohla. Nevím, co bych si bez tebe počal!\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"@? Vypadáš trochu bledě... je ti dobře?\"/pause 500/faceDirection farmer 2/emote farmer 28/end",
+      "sourceSHA256": "ccb57dcb82be1dbf0dfec03d2609e79ab43f7471497957e651f11b053c5e9a23",
+      "translationSHA256": "cdd54d0ea385b0926d520556d07dc7decd88aaf1fa70ea0cb214953ed6457fac",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "375-farm-willy-fishing-lesson",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read the complete fishing-lesson event after both audit corrections. Recast the beginner clause without assigning masculine gender to the player and rendered sea legs idiomatically as getting accustomed to fishing instead of the literal mořské nohy. Verified Willy voice and self-gender, explicit lad/miss variants, Tréninkový prut terminology, item and skill commands, all messages, markers and event structure; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "980559/t 600 1130/w sunny/e 739330/j 27/!Skill Fishing 1",
+      "field": null,
+      "source": "spring_day_ambient/64 15/farmer 64 16 2 Willy 64 18 0/skippable/pause 1500/speak Willy \"Good morning, ${lad^miss}$!\"/pause 800/speak Willy \"Sorry to bother you so early, but, eh... I've noticed you haven't been fishing much.\"/pause 200/emote farmer 28/pause 200/speak Willy \"Aye... it can be difficult to get into the sport, for a beginner.\"/pause 400/speak Willy \"So, I figured I'd give you a few pointers... maybe it'll help you develop yer sea legs!\"/pause 500/playMusic distantBanjo/pause 500/speak Willy \"So, you'll want to hold the rod like this, see?...\"/pause 300/fade/viewport -1000 -1000/pause 1000/message \"Willy gave you a quick lesson on fishing basics.\"/gainSkill Fishing 1/pause 500/message \"You feel more confident already!\"/pause 400/viewport 64 15 clamp true/pause 1000/speak Willy \"One more thing... I wanted to give you this.#$b#It's called a 'training rod'. It should make catching fish a lot easier.#$b#Just be aware that you'll only be able to catch basic fish with this. But it's a great way to develop your skills early on!\"/pause 800/itemAboveHead (T)TrainingRod/pause 3300/awardFestivalPrize (T)TrainingRod/pause 200/pause 500/speak Willy \"I hope you'll give fishing another try. Once you get the hang of it, you'll be having a great time.#$b#Good luck out there!$h\"/pause 1000/end",
+      "translation": "spring_day_ambient/64 15/farmer 64 16 2 Willy 64 18 0/skippable/pause 1500/speak Willy \"Dobré ráno, ${mladíku^slečno}$!\"/pause 800/speak Willy \"Promiň, že ruším tak brzy, ale, ehm... všiml jsem si, že moc nerybaříš.\"/pause 200/emote farmer 28/pause 200/speak Willy \"Jo... zpočátku může být těžké se do tohohle sportu dostat.\"/pause 400/speak Willy \"Tak mě napadlo, že ti dám pár rad... třeba se díky nim v rybaření trochu otrkáš!\"/pause 500/playMusic distantBanjo/pause 500/speak Willy \"Tak, prut budeš držet takhle, vidíš?...\"/pause 300/fade/viewport -1000 -1000/pause 1000/message \"Willy ti dal krátkou lekci základů rybaření.\"/gainSkill Fishing 1/pause 500/message \"Už teď si věříš víc!\"/pause 400/viewport 64 15 clamp true/pause 1000/speak Willy \"Ještě něco... Chtěl jsem ti dát tohle.#$b#Říká se tomu ‚Tréninkový prut‘. Chytání ryb s ním bude mnohem snazší.#$b#Jen pamatuj, že s ním chytíš pouze běžné ryby. Na začátku je to ale skvělý způsob, jak si zlepšit dovednosti!\"/pause 800/itemAboveHead (T)TrainingRod/pause 3300/awardFestivalPrize (T)TrainingRod/pause 200/pause 500/speak Willy \"Doufám, že dáš rybaření ještě jednu šanci. Jakmile tomu přijdeš na kloub, budeš se skvěle bavit.#$b#Hodně štěstí!$h\"/pause 1000/end",
+      "sourceSHA256": "75b6881211184e7d83ea9575f99f55e547a81ec3538bbec488c7fdbb9f803ecf",
+      "translationSHA256": "33c618fb8e73ca7be1a9469452d9d63d427ad9efa03576d12cbd4b151f2012a6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

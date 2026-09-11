@@ -1,0 +1,9 @@
+{
+  "id": "336-archaeology-house-romance-reading",
+  "kind": "long",
+  "target": "Data/Events/ArchaeologyHouse",
+  "complexityReason": "Translate Elliott's complete romance-novel branch while preserving the shared reading choreography, literary excerpts, dialogue controls and emotional cues.",
+  "entries": {
+    "romanceBook": "pause 400/speak Elliott \"Po bezpočtu hodin strávených psaním vám představuji svůj první román: ‚Nádraží Kamélie‘... Je to milostný román o vlakové stevardce, která se zamiluje do architekta na cestách...\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Kapitola první.#$b#‚Váš lístek, pane?‘ Průvodčí Gozman natáhl k mladému cestujícímu ruku v rukavici. ‚Ach, ano. Mám ho přímo tady,‘ odpověděl mladík a sáhl do kapsy kabátu. S hrůzou zjistil, že lístek zmizel.\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Abigail -1000 -1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"...‚Claro, musím ti něco říct,‘ vyhrkl, když se otočila k odchodu. Clara se pomalu obrátila a spatřila zoufalství v Horatiově pohledu. Vtom do kupé vpadl Gozman, celý rudý v obličeji.\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Tak, tím mé čtení končí. U recepce budu prodávat podepsané výtisky knihy. Děkuji, že jste poslouchali!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Tak co, jaké to bylo?\"/emote farmer 32/speak Elliott \"Děkuji. $h#$b#Víš, nápad napsat milostný román jsem dostal díky tobě. Vzpomínáš si?#$b#Proto jsem tuto knihu věnoval právě tobě...$l\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end"
+  }
+}

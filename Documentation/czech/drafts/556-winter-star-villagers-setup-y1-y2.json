@@ -1,0 +1,26 @@
+{
+  "id": "556-winter-star-villagers-setup-y1-y2",
+  "kind": "long",
+  "target": "Data/Festivals/winter25",
+  "entries": {
+    "Leah": "Gus mi právě vyprávěl o svých ručně vyráběných cukrových hůlkách. *zívnutí*$u#$e#Myslím, že vypil příliš mnoho skořicového vaječného koňaku.",
+    "Marnie": "Vítej na Slavnosti Zimní hvězdy!$h",
+    "Elliott": "Ale, ahoj, @. Je chladno, viď?",
+    "Gus": "Výroba cukrových hůlek je skutečné umění. Pro ty nejlepší suroviny musíš pátrat široko daleko. V dnešní době není snadné je sehnat!$h#$e#Na své prvotřídní hůlky obvykle používám kruhoplod z Kapradinového ostrova. Té zářivě červené barvě se nic nevyrovná... A je zcela přírodní!#$e#Ach, chceš znát tajemství mých luxusních dvojitých hůlek? Dobře, ale musíš slíbit naprostou mlčenlivost. *šeptem* Do bílé cukrovinky přidávám kapku vanilky, která doplňuje třešňovou chuť.$h#$e#Samozřejmě jsou standardem mátové cukrové hůlky a těch vždycky také připravím pořádnou várku.#$e#Hej, vypadáš ospale. Je všechno v pořádku?$s",
+    "Willy": "$y 'Chceš slyšet Legendu o Zimní hvězdě?_Ano_Na zimní noční obloze září jasná hvězda, kterou lze spatřit jen z tohoto údolí. Nikdo neví proč... ale za dávných časů se na ni sjížděli lidé ze široka daleka.*Věřili, že každému, kdo spatří Zimní hvězdu, přinese štěstí. Někteří dokonce tvrdí, že tajemné ovoce zvané =Stardrop je nějakým způsobem se Zimní hvězdou spojené._Ne, díky_Jak chceš.'",
+    "Wizard": "Ach, tajemná Zimní hvězda. Jeden z důvodů, proč jsem si pro svůj... výzkum vybral právě toto údolí.",
+    "Harvey": "Jsem vděčný, že letos nedošlo k žádnému naléhavému zdravotnímu případu!",
+    "Sandy": "Slyšela jsem, že doma prší. To tě sem přivedlo?$h#$e#Vlastně mi déšť docela chybí...$s",
+    "Jas": "Jé! Dárky!$h",
+    "Vincent": "Můžeme už otevřít dárky?!",
+    "Marlon": "Hej, dobré odpoledne.",
+    "Leo": "Linus se necítí dobře, když se má přidat k ostatním, a tak mu budu dělat společnost.#$e#Uspořádáme si vlastní malou hostinu... šťouchaný zimní kořen a rybu s kořenitou bobulí!$h",
+    "set-up_y2": "christmasTheme/-1000 -1000/farmer 12 54 1/changeToTemporaryMap Town-Christmas2/viewport -1000 -1000/loadActors Set-Up/viewport player clamp true unfreeze/globalFadeToClear/playerControl christmas",
+    "secretSanta_y2": "none/-1000 -1000/farmer 30 69 0/warp Abigail 35 73/warp Caroline 16 54/warp secretSanta 29 75/faceDirection secretSanta 0/viewport 30 67 true/pause 2000/move secretSanta 0 -4 0/move secretSanta 1 0 0/pause 500/shake secretSanta 100/playSound stoneStep/specificTemporarySprite secretGift/pause 100/faceDirection farmer 2/pause 200/jump farmer/pause 700/emote farmer 16/pause 100/move secretSanta -1 0 0/move secretSanta 0 -2 0/pause 700/faceDirection farmer 3/pause 500/faceDirection secretSanta 1/pause 500/speak secretSanta \"dialogue1\"/pause 300/faceDirection farmer 2/pause 800/showFrame 4/pause 300/playSound cut/specificTemporarySprite secretGiftOpen/pause 400/stopAnimation farmer/faceDirection farmer 2/pause 1000/cutscene addSecretSantaItem/pause 3000/null/faceDirection farmer 3/speak secretSanta \"dialogue2\"/pause 600/eyes 1 -1500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp Abigail 29 71/warp Caroline 30 71/faceDirection Caroline 0 true/faceDirection Abigail 0 true/warp secretSanta warpX warpY/faceDirection farmer 2/cutscene clearTempSprites/playMusic christmasTheme/viewport 30 67 true/playerControl christmas2",
+    "Abigail_spouse_y2": "Brr... Je zima! Chci se vrátit pod peřinu..."
+  },
+  "preservationReasons": {
+    "set-up_y2": "Festival map, music, actor, viewport, and player-control commands are runtime data and contain no player-facing prose.",
+    "secretSanta_y2": "Secret-Santa actor, movement, animation, gift, dialogue-identifier, viewport, and player-control commands are runtime data; dialogue1 and dialogue2 are lookup identifiers and must remain unchanged."
+  }
+}

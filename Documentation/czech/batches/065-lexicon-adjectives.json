@@ -1,0 +1,218 @@
+{
+  "id": "065-lexicon-adjectives",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all eleven source/Czech rows and all 63 individual alternatives, then reread the complete group. Random alternatives retain source order and # counts, polite hesitation and child/adult register. Adjectives are neuter singular or indeclinable; slander nouns are nominative. Natural Czech synonyms deliberately recur for overlapping English disgust synonyms rather than introducing unnatural morphology. Original caller inspection found NPC gift tastes, FishShop/ShopLocation purchase dialogue, and the PositiveAdjective token in Shops reaching ShopMenu.cs.11464. Those remaining host sentences must preserve the chosen grammatical cases. Super/prima are established Czech colloquialisms, not untranslated prose.",
+  "rows": [
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeItemNoun",
+      "field": null,
+      "source": "garbage#trash#junk#slop#crap",
+      "translation": "odpad#smetí#harampádí#šlichta#svinstvo",
+      "sourceSHA256": "5c727cc1bf733cf46f417f593303f52a8d4a4fa24dc294ef2d23c3f3dccd8ead",
+      "translationSHA256": "6143e12dfa30c3592ec6deb0213269bc9d200cc659a06d732de94dc9c31ca865",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_Child",
+      "field": null,
+      "source": "cool#fun#neat#nice#nifty#super#great",
+      "translation": "bezva#zábavné#prima#pěkné#parádní#super#skvělé",
+      "sourceSHA256": "61ac23164d792eccaeaa9c50d2e04cacf054ed5bedbaca5a11bffa37d1ccbefc",
+      "translationSHA256": "dc8a83546817a40173fc61edf6eb82258c4da2b74824f173639fe704f2501769",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_AdultMale",
+      "field": null,
+      "source": "interesting#exciting#neat#fun#great#terrific",
+      "translation": "zajímavé#vzrušující#prima#zábavné#skvělé#báječné",
+      "sourceSHA256": "df0969940a3a87a469500bf14e7d8e23673e075208ec61ae41ec27ba5c776b77",
+      "translationSHA256": "3385984d431d751b12b2c5cc67f1914155149bd8d021e65f22b6914b3fc4db58",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_AdultFemale",
+      "field": null,
+      "source": "wonderful#amazing#heart-warming#magical#incredible#lovely#exhilarating#delightful",
+      "translation": "báječné#úžasné#hřejivé#kouzelné#neuvěřitelné#půvabné#povznášející#rozkošné",
+      "sourceSHA256": "e096434cd5564e94317cb2217a06af97afd6c001f3ac00e3f6ffffdacbfcbc69",
+      "translationSHA256": "29d059e93221e80c34c45591dcd07a34cb0eddc9dd490e0381f8e0e0e357a04a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomPositiveAdjective_PlaceOrEvent",
+      "field": null,
+      "source": "wonderful#amazing#heart-warming#magical#incredible#lovely#exhilarating#delightful",
+      "translation": "báječné#úžasné#hřejivé#kouzelné#neuvěřitelné#půvabné#povznášející#rozkošné",
+      "sourceSHA256": "e096434cd5564e94317cb2217a06af97afd6c001f3ac00e3f6ffffdacbfcbc69",
+      "translationSHA256": "29d059e93221e80c34c45591dcd07a34cb0eddc9dd490e0381f8e0e0e357a04a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomDeliciousAdjective",
+      "field": null,
+      "source": "delicious#tasty#wonderful#satisfying#filling#scrumptious#appetizing#delightful",
+      "translation": "lahodné#chutné#báječné#uspokojivé#syté#výtečné#lákavé#skvostné",
+      "sourceSHA256": "5716de8ed2c4a4d4774b0826350ba8d6a297e4136ee138096263eab79f650743",
+      "translationSHA256": "10c722252695eaaf86fc11f8f22146ba4863258c70051c07964d0380729a058b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomDeliciousAdjective_Child",
+      "field": null,
+      "source": "yummy",
+      "translation": "mňamózní",
+      "sourceSHA256": "10f902fa9a78b5a8edc529fa2f3a67d4445d0820d1814b81337a559f0655c142",
+      "translationSHA256": "6ae77fda90b16c9e0fb34a4350762fef81d6c7d1db4d3b48ff7b5e18fd75e290",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeFoodAdjective_Child",
+      "field": null,
+      "source": "gross",
+      "translation": "hnusné",
+      "sourceSHA256": "6914401398f629ac563fd35c979e93993dc940b21abbec975346bcc721ea0a30",
+      "translationSHA256": "9ae202e732b0e1177190616bc5fb12ce3ec0204263b45fbb1a74d0963cd8078b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeFoodAdjective_Polite",
+      "field": null,
+      "source": "...interesting#...unusual#...different#...unconventional",
+      "translation": "...zajímavé#...neobvyklé#...jiné#...netradiční",
+      "sourceSHA256": "5778c30051d605d637d6c88d096ed3e278938bcd446b5472a5880c307b6cf533",
+      "translationSHA256": "9e792e2e8010bf97489cb74bbecb1fa4d92c6f183095f815726dc20796b200f9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomNegativeFoodAdjective",
+      "field": null,
+      "source": "nasty#gross#disgusting#despicable#revolting#sickening#awful#repulsive#nauseating#foul#horrendous#putrid",
+      "translation": "hnusné#nechutné#odporné#zavrženíhodné#ohavné#nechutné#příšerné#odpuzující#odporné#hnusné#strašné#hnilobné",
+      "sourceSHA256": "7c2467be8de7d4233334d9669d8a82cc99df1c612748cdf8f866c9791e11b951",
+      "translationSHA256": "95e204a03ea43c3a23a35716fd93de53eed68dd0d783ada0bde28cc1f3eec445",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Lexicon",
+      "key": "RandomSlightlyPositiveFoodAdjective",
+      "field": null,
+      "source": "decent#good#edible",
+      "translation": "slušné#dobré#jedlé",
+      "sourceSHA256": "ad465f9e840360a09bce8f5ce0fa0c6a866b1cf858e7a840083ea84d7049656a",
+      "translationSHA256": "e71bf673bbf2784842b5378e1676801190cef96749794a45a2fac732f08813d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

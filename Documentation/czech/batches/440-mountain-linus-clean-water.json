@@ -1,0 +1,28 @@
+{
+  "id": "440-mountain-linus-clean-water",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all three dialogue segments against English; verified Linus's clean-water setup and self-deprecating punchline, emotional markers, preserved static-sprite asset path, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Mountain",
+      "key": "8357109/w sunny/t 600 1900/n linusTrashCleanup",
+      "field": null,
+      "source": "spring_day_ambient/-1000 -1000/farmer -100 -100 2 Linus 63 21 2/skippable/hideShadow Linus true/showFrame Linus 24/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 129 241 14 15 60 20/viewport 63 21 true/pause 5000/speak Linus \"Ahhh... that feels good.$4\"/pause 1000/speak Linus \"The water's never been cleaner.$4\"/pause 2000/speak Linus \"...And the same goes for me! Hehehe.$5\"/pause 3000/end",
+      "translation": "spring_day_ambient/-1000 -1000/farmer -100 -100 2 Linus 63 21 2/skippable/hideShadow Linus true/showFrame Linus 24/specificTemporarySprite staticSprite LooseSprites\\\\Cursors2 129 241 14 15 60 20/viewport 63 21 true/pause 5000/speak Linus \"Ach... to je příjemné.$4\"/pause 1000/speak Linus \"Voda nikdy nebyla čistší.$4\"/pause 2000/speak Linus \"...A totéž platí i o mně! Hehehe.$5\"/pause 3000/end",
+      "sourceSHA256": "e68030e58b4311c40d789b0b77115bcd36b90c8add6d901c0263b110e5da7788",
+      "translationSHA256": "4cb4f90d37c10047a050d713e811f21513b3cde9dc84d871e25633f8d5a864f7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

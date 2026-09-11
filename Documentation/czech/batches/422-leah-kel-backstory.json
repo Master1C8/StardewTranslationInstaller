@@ -1,0 +1,47 @@
+{
+  "id": "422-leah-kel-backstory",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Naturalized odd-jobs wording and removed Kel-gender leakage from the shared finances sentence.",
+  "rows": [
+    {
+      "target": "Data/Events/LeahHouse",
+      "key": "51/f Leah 1000/p Leah",
+      "field": null,
+      "source": "sadpiano/-1000 -1000/farmer 7 9 0 Leah 13 8 0/skippable/showFrame Leah 20/changeMapTile Front 14 7 1453/viewport 12 8/move farmer 0 -1 1/speak Leah \"Kel...How many times do I have to tell you? I don't want to come back to the city!$8#$b#Stop calling me... I don't want to hear from you anymore! *click*$8\"/playSound openBox/faceDirection Leah 1/changeMapTile Front 14 7 1454/emote Leah 12/pause 1000/move farmer 4 0 1/faceDirection Leah 3/speak Leah \"@...$6\"/pause 300/emote Leah 28/speak Leah \"So I guess you heard me yelling on the phone?$s\"/faceDirection Leah 2/move farmer 1 0 1/pause 1000/playMusic desolate/speak Leah \"That was my ex...$s\"/faceDirection Leah 3/emote farmer 16/pause 600/speak Leah \"I guess I'd better tell you a little about it...$u\"/pause 500/faceDirection Leah 2/pause 500/speak Leah \"We had an apartment together, back in the city.$u#$b#I did odd jobs during the day and spent all night working on art projects... we barely made enough to scrape by.$u#$b#${He^She}$ was always nagging me to go back to school and study business or medicine... something with a lot of money in it.$a#$b#I guess the idea was to save up for a normal life. You know... a house in the suburbs, kids, PTA meetings... that sort of thing.$u\"/faceDirection Leah 3/speak Leah \"I wasn't ready for that kind of life, @... I had to leave. So I came here to pursue my dream of being an artist.\"/pause 900/faceDirection Leah 2/speak Leah \"$q 83 null#Was that selfish of me, @?$s#$r 83 0 event_parents1#No, it had to be done.#$r 83 0 event_parents2#No, and your ex sounds like an idiot.#$r 83 -20 event_parents3#No, but you would've been better off staying in the city.#$r 83 -20 event_parents4#Yeah, a little.#$r 83 -20 event_parents5#Yeah, but it's natural to care about yourself first.\"/faceDirection Leah 3/fork angry/pause 200/fork LeahInternet internet2/fork LeahArtShowSuggestion artShowSuggest/speak Leah \"Well, thanks for listening to me. It's good to have a friend.\"/pause 1500/globalFade/viewport -1000 -1000/end dialogueWarpOut Leah \"Hey, thanks for listening to me so patiently earlier.\"",
+      "translation": "sadpiano/-1000 -1000/farmer 7 9 0 Leah 13 8 0/skippable/showFrame Leah 20/changeMapTile Front 14 7 1453/viewport 12 8/move farmer 0 -1 1/speak Leah \"Kel... Kolikrát ti to mám říkat? Nechci se vrátit do města!$8#$b#Přestaň mi volat... Už o tobě nechci slyšet! *klik*$8\"/playSound openBox/faceDirection Leah 1/changeMapTile Front 14 7 1454/emote Leah 12/pause 1000/move farmer 4 0 1/faceDirection Leah 3/speak Leah \"@...$6\"/pause 300/emote Leah 28/speak Leah \"Takže ten můj křik do telefonu asi nešel přeslechnout?$s\"/faceDirection Leah 2/move farmer 1 0 1/pause 1000/playMusic desolate/speak Leah \"Byl to člověk, se kterým jsem dřív chodila...$s\"/faceDirection Leah 3/emote farmer 16/pause 600/speak Leah \"Asi bych ti o tom měla něco říct...$u\"/pause 500/faceDirection Leah 2/pause 500/speak Leah \"Kdysi jsme spolu ve městě měli byt.$u#$b#Přes den jsem dělala různé příležitostné práce a celé noci trávila uměleckými projekty... sotva nám to stačilo na přežití.$u#$b#${Pořád mě nutil^Pořád mě nutila}$ vrátit se do školy a studovat ekonomii nebo medicínu... něco, v čem se vydělává hodně peněz.$a#$b#Představa asi byla, že si našetříme na normální život. Víš... dům na předměstí, děti, schůzky rodičů a učitelů... takové věci.$u\"/faceDirection Leah 3/speak Leah \"Na takový život jsem nebyla připravená, @... Musela jsem odejít. Tak jsem přišla sem, abych si splnila sen a stala se umělkyní.\"/pause 900/faceDirection Leah 2/speak Leah \"$q 83 null#Bylo ode mě sobecké, @?$s#$r 83 0 event_parents1#Ne, musela jsi to udělat.#$r 83 0 event_parents2#Ne, a Kel se chová hloupě.#$r 83 -20 event_parents3#Ne, ale ve městě by ses měla lépe.#$r 83 -20 event_parents4#Ano, trochu.#$r 83 -20 event_parents5#Ano, ale je přirozené myslet nejdřív na sebe.\"/faceDirection Leah 3/fork angry/pause 200/fork LeahInternet internet2/fork LeahArtShowSuggestion artShowSuggest/speak Leah \"Díky, že mi nasloucháš. Je dobré mít někoho blízkého.\"/pause 1500/globalFade/viewport -1000 -1000/end dialogueWarpOut Leah \"Hej, ještě jednou díky za trpělivé vyslechnutí.\"",
+      "sourceSHA256": "d2893828a47413c3d73b3956685b94bbfa43fe84dad9441155bbcf63e8ff1cf1",
+      "translationSHA256": "8ad36d5d67f2b3d88878aeeaf31c85c5b283b7ecf584486b57164a278fcf0745",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/LeahHouse",
+      "key": "angry",
+      "field": null,
+      "source": "emote Leah 12/faceDirection Leah 1/speak Leah \"Sorry... I shouldn't get angry.$s\"/emote Leah 40/speak Leah \"Maybe you're right... my life would've been a lot easier if I had stayed.$u#$b#Maybe it's better to be practical and realistic... for all I know my art career will never pan out and I'll live my final years in squalor.$s\"/pause 500/faceDirection Leah 3/pause 500/speak Leah \"Well, thanks for listening to me. It's good to have a friend.\"/pause 1500/globalFade/viewport -1000 -1000/end warpOut",
+      "translation": "emote Leah 12/faceDirection Leah 1/speak Leah \"Promiň... Neměla bych se zlobit.$s\"/emote Leah 40/speak Leah \"Možná máš pravdu... kdybych zůstala, měla bych život mnohem snazší.$u#$b#Možná je lepší být praktická a realistická... třeba se moje umělecká kariéra nikdy nerozjede a poslední roky života strávím v bídě.$s\"/pause 500/faceDirection Leah 3/pause 500/speak Leah \"Díky, že mi nasloucháš. Je dobré mít někoho blízkého.\"/pause 1500/globalFade/viewport -1000 -1000/end warpOut",
+      "sourceSHA256": "7e0f6d9a615f6c33fe7e1d02b5f76c1880610830bf8827c4139c272f9968ec92",
+      "translationSHA256": "cc51db3968b0ed44b7a07514126201d922574e87b44c9cfc5e5096ad572a1ae6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

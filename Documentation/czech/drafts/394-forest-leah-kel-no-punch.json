@@ -1,0 +1,9 @@
+{
+  "id": "394-forest-leah-kel-no-punch",
+  "kind": "long",
+  "target": "Data/Events/Forest",
+  "complexityReason": "Translate the nonviolent Kel-confrontation branch while preserving Kel's insult, Leah's defense, male/female comparison token, shared romantic outcome, movement commands, control markers and exact event structure.",
+  "entries": {
+    "noPunch": "pause 10/message \"KEL: Nemám ti co říct. Uhni mi z cesty.\"/speed farmer 2/move farmer 1 0 3/move LeahEx 0 2 2/message \"KEL: Vážně, Leah... Co tu děláš s touhle prostoduchou vesnickou nulou?\"/faceDirection farmer 2/showFrame Leah 26/pause 1000/showFrame Leah 27/showFrame 94/playSound clubhit/screenFlash .25/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/stopAnimation farmer/speak Leah \"@ je v každém ohledu ${lepší chlap^lepší člověk}$ než ty!$a#$b#Teď odsud vypadni a už se nikdy nevracej!$a\"/move Leah -1 0 0/move Leah 0 -4 1/speak Leah \"Pojď, @. Myslím, že Kel už nás nebude obtěžovat.\"/move farmer 0 1 2/faceDirection Leah 2 true/move farmer -2 0 0/move Leah 0 -11 0 true/move farmer 0 -11 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"Tentokrát najdeme odlehlejší místo...$l\"/playMusic none/pause 2000/end dialogue Leah \"No, piknik nedopadl tak, jak jsem chtěla.$h\""
+  }
+}

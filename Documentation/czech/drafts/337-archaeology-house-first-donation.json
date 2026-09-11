@@ -1,0 +1,9 @@
+{
+  "id": "337-archaeology-house-first-donation",
+  "kind": "long",
+  "target": "Data/Events/ArchaeologyHouse",
+  "complexityReason": "Translate Gunther's museum introduction and donation request while preserving quest changes, event choreography, dialogue controls and all technical commands.",
+  "entries": {
+    "0/n somethingToDonate/l somethingWasDonated": "libraryTheme/29 12/farmer 22 13 1 Gunther 31 12 2/removeQuest 23/addQuest 24/skippable/pause 1000/showFrame Gunther 4/pause 500/showFrame Gunther 0/pause 500/showFrame Gunther 12/pause 500/showFrame Gunther 0/pause 1000/showFrame Gunther 1/pause 500/speak Gunther \"Žalostné...#$b#V celé sbírce není jediný exponát.\"/move farmer 7 0 1/showFrame Gunther 12/pause 800/emote Gunther 16/jump Gunther/pause 800/speak Gunther \"Co to je? Nějaký nález? Ukaž mi ho!\"/move farmer 0 -1 1/move farmer 1 0 1/pause 500/playSound coin/animate Gunther false true 500 2 3/pause 3000/speak Gunther \"Pozoruhodné!#$b#Je to velmi staré.#$b#Rád bych to prozkoumal podrobněji... Ale patří to tobě.\"/stopAnimation Gunther/showFrame Gunther 12/pause 1000/speak Gunther \"Hmm...#$b#Chtěl bych tě o něco požádat.#$b#Zvážíš, zda muzeu darovat nové artefakty nebo minerály, které najdeš?#$b#Společně bychom mohli učinit převratný objev!#$b#A kdoví... Pokud budeš dál přispívat, možná narazím na zajímavé předměty, které ti budu moci poslat.\"/pause 1000/showFrame Gunther 0/pause 500/speak Gunther \"Promysli si to, ano?#$b#Pokud se rozhodneš něco darovat, stačí předměty přinést k přepážce.\"/move farmer -3 0 2 true/pause 400/showFrame Gunther 1/proceedPosition farmer/move farmer 0 1 3/move farmer -7 0 3 true/pause 1000/globalFade/viewport -1000 -1000/end"
+  }
+}

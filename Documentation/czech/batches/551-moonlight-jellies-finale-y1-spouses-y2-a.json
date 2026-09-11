@@ -1,0 +1,295 @@
+{
+  "id": "551-moonlight-jellies-finale-y1-spouses-y2-a",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 15 EN/CS rows; preserved the complete year-two setup command stream, translated the event message in place without changing command syntax, and maintained spouse intimacy, child and fisher voices, species terminology, emotes, and dialogue breaks.",
+  "rows": [
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Vincent",
+      "field": null,
+      "source": "I wanna see the rare green jelly!",
+      "translation": "Chci vidět tu vzácnou zelenou medúzu!",
+      "sourceSHA256": "0afacbec03c6794f24239405d599959919130d146a286dba322d1807508b6636",
+      "translationSHA256": "139f85d2e0363b2467b8b6891eef0e7f3114ec4815f3f8b8b3d335ecf945fbab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Willy",
+      "field": null,
+      "source": "Most night-fish would be scared of the light... these are strange ones.",
+      "translation": "Většina nočních ryb by se světla bála... tyhle jsou ale zvláštní.",
+      "sourceSHA256": "bf1443d2a2a8dee2a2f36fbf00413781310650191c91a4573ad87ba6989ee646",
+      "translationSHA256": "6deeab5fb95c3c292ea312c05202ea79514b0ace6ddb101aa488a52e5d4bf389",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Leo",
+      "field": null,
+      "source": "The moonlight jellies are my old friends... they come to the island every year, too.",
+      "translation": "Měsíční medúzy jsou mé staré kamarádky... na ostrov připlouvají také každý rok.",
+      "sourceSHA256": "1915e7ab7e0c5b7b5dd88261f9f23c7cb81d16c4165d8e5ba4521f41363a8eed",
+      "translationSHA256": "f99b796ca1b2d50c1d5495336a4aaa893b345824f2d7fd8c978c04c9c77c65dc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "set-up_y2",
+      "field": null,
+      "source": "ocean/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Jellies2/viewport -1000 01000/loadActors Set-Up/positionOffset Willy 0 -20/advancedMove Haley true 3 6750 4 300 0 -2 4 300 3 5500 2 300 0 2 2 250 3 2000/advancedMove Vincent true 3 4000 2 300 1 250 3 0 0 -2 4 250 1 5350 4 300 0 -3 4 300 1 5750 2 300 0 3 2 300 1 5000 2 250 0 2 -3 0 3 2000/advancedMove Abigail true 3 4250 2 250 0 5 2 300 3 7500 4 300 0 -5 4 250 3 1000/advancedMove Caroline false 2 12500 -2 0 0 1 -13 0 0 8 2 300 3 1000/advancedMove Alex true 2 7250 1 250 3 0 1 250 2 5000 3 300 -3 0 2 3000/playerControl jellies/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "ocean/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Jellies2/viewport -1000 01000/loadActors Set-Up/positionOffset Willy 0 -20/advancedMove Haley true 3 6750 4 300 0 -2 4 300 3 5500 2 300 0 2 2 250 3 2000/advancedMove Vincent true 3 4000 2 300 1 250 3 0 0 -2 4 250 1 5350 4 300 0 -3 4 300 1 5750 2 300 0 3 2 300 1 5000 2 250 0 2 -3 0 3 2000/advancedMove Abigail true 3 4250 2 250 0 5 2 300 3 7500 4 300 0 -5 4 250 3 1000/advancedMove Caroline false 2 12500 -2 0 0 1 -13 0 0 8 2 300 3 1000/advancedMove Alex true 2 7250 1 250 3 0 1 250 2 5000 3 300 -3 0 2 3000/playerControl jellies/viewport player clamp true unfreeze/globalFadeToClear",
+      "sourceSHA256": "058db612bf1948ac0d9ff61238a357f38aaea7a92a102d91c7ec6a04ccde28d9",
+      "translationSHA256": "058db612bf1948ac0d9ff61238a357f38aaea7a92a102d91c7ec6a04ccde28d9",
+      "preservationReason": "Festival map, actor, movement, viewport, and player-control commands are runtime data and contain no player-facing prose.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "mainEvent_y2",
+      "field": null,
+      "source": "pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/changeLocation Beach/warpFarmers 28 36 2 26 36 2 33 35 2 40 35 2 27 35 2 30 35 2 37 34 2 39 34 2 up 42 35 3/positionOffset farmer 0 16/warp spouse 29 36/faceDirection spouse 2/warp Caroline 36 35/faceDirection Caroline 2 true/warp Pierre 37 35/faceDirection Pierre 2 true/specificTemporarySprite candleBoat/viewport 26 36 true/pause 2000/move Lewis 0 1 2/move Lewis -2 0 3/pause 400/showFrame Lewis 16 true/animate Lewis false false 200 25 16 17 17/pause 800/playSound parry/specificTemporarySprite candleBoatMove/pause 500/showFrame Lewis 0 true/animate Lewis false false 200 25 12/pause 400/faceDirection Lewis 2/pause 6000/specificTemporarySprite moonlightJellies/pause 10000/playMusic moonlightJellies/pause 18000/emote Robin 16/pause 500/emote Jodi 56/pause 500/jump Maru/pause 500/emote Penny 20/pause 1250/emote Caroline 16/pause 1250/faceDirection Robin 1 true/pause 750/faceDirection Demetrius 3 true/pause 2000/faceDirection Robin 2 true/pause 750/faceDirection Demetrius 2 true/pause 2500/showFrame Willy 24/pause 500/showFrame Willy 25/pause 1500/viewport move -1 0 8000/pause 2650/showFrame Kent 16/pause 1500/move Jodi 0 1 2/pause 1500/showFrame Jodi 25/pause 4500/faceDirection Vincent 2 true/pause 300/faceDirection Vincent 1 true/pause 150/move Vincent 1 0 2/move Vincent 0 2 2/pause 600/jump Vincent/pause 400/viewport move 1 0 20000/pause 2000/faceDirection Vincent 1 true/pause 1000/faceDirection Vincent 2 true/pause 1000/move Lewis 1 0 2/move Lewis 0 1 2/showFrame Lewis 18/pause 4300/showFrame Demetrius 19/pause 3000/faceDirection Caroline 1 true/pause 1000/faceDirection Pierre 3 true/pause 2000/globalFade/viewport -1000 -1000/pause 2000/pause 1000/message \"The glow of summer has faded, now... and the moonlight jellies carry on toward the great unknown.\"/playMusic none/pause 2000/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/changeLocation Beach/warpFarmers 28 36 2 26 36 2 33 35 2 40 35 2 27 35 2 30 35 2 37 34 2 39 34 2 up 42 35 3/positionOffset farmer 0 16/warp spouse 29 36/faceDirection spouse 2/warp Caroline 36 35/faceDirection Caroline 2 true/warp Pierre 37 35/faceDirection Pierre 2 true/specificTemporarySprite candleBoat/viewport 26 36 true/pause 2000/move Lewis 0 1 2/move Lewis -2 0 3/pause 400/showFrame Lewis 16 true/animate Lewis false false 200 25 16 17 17/pause 800/playSound parry/specificTemporarySprite candleBoatMove/pause 500/showFrame Lewis 0 true/animate Lewis false false 200 25 12/pause 400/faceDirection Lewis 2/pause 6000/specificTemporarySprite moonlightJellies/pause 10000/playMusic moonlightJellies/pause 18000/emote Robin 16/pause 500/emote Jodi 56/pause 500/jump Maru/pause 500/emote Penny 20/pause 1250/emote Caroline 16/pause 1250/faceDirection Robin 1 true/pause 750/faceDirection Demetrius 3 true/pause 2000/faceDirection Robin 2 true/pause 750/faceDirection Demetrius 2 true/pause 2500/showFrame Willy 24/pause 500/showFrame Willy 25/pause 1500/viewport move -1 0 8000/pause 2650/showFrame Kent 16/pause 1500/move Jodi 0 1 2/pause 1500/showFrame Jodi 25/pause 4500/faceDirection Vincent 2 true/pause 300/faceDirection Vincent 1 true/pause 150/move Vincent 1 0 2/move Vincent 0 2 2/pause 600/jump Vincent/pause 400/viewport move 1 0 20000/pause 2000/faceDirection Vincent 1 true/pause 1000/faceDirection Vincent 2 true/pause 1000/move Lewis 1 0 2/move Lewis 0 1 2/showFrame Lewis 18/pause 4300/showFrame Demetrius 19/pause 3000/faceDirection Caroline 1 true/pause 1000/faceDirection Pierre 3 true/pause 2000/globalFade/viewport -1000 -1000/pause 2000/pause 1000/message \"Letní záře nyní pohasla... a měsíční medúzy pokračují dál vstříc velkému neznámu.\"/playMusic none/pause 2000/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "bf41f3dd9982db7c1556aedc6fa1714bd89f14fa220875f6a8e563ec08f28401",
+      "translationSHA256": "a23da172ab494021d18ecca095a712c2c4e032e33bec9e4149aa22726fc1afc7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Abigail_spouse_y2",
+      "field": null,
+      "source": "I brought a blanket for us in case we get cold later.$0#$e#It's a little small, but I'm sure we can make it work...$4",
+      "translation": "Přinesla jsem pro nás deku, kdyby nám později byla zima.$0#$e#Je trochu malá, ale určitě se pod ni nějak vejdeme...$4",
+      "sourceSHA256": "6ea5ae433314c9f4e1f23f85d776c0783b993ced1dca7d26fd72c4ed3eabfa16",
+      "translationSHA256": "dbe41736d8b307b7722ef30d9ac4791b8a0cb9482a4f355dacaa4866cdcbeccb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Haley_spouse_y2",
+      "field": null,
+      "source": "Aww... It's so romantic, with all the candles.$4#$e#Goodbye, Summer...$s",
+      "translation": "Áá... Se všemi těmi svíčkami je to tak romantické.$4#$e#Sbohem, léto...$s",
+      "sourceSHA256": "f124f24e56e8cffc46cb23e4dfe2afb2675524b0a3ec80564ebaa7b01026b56c",
+      "translationSHA256": "8588f070103895e2129c9b1494938d1effb5cff845842c6c1bb494008af344b4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Maru_spouse_y2",
+      "field": null,
+      "source": "Do you think I have enough time to grab my telescope from the farmhouse?$0#$e#Hmm... probably not. I don't want to miss this!$0",
+      "translation": "Myslíš, že mám dost času dojít si domů na farmu pro dalekohled?$0#$e#Hmm... asi ne. Nechci to zmeškat!$0",
+      "sourceSHA256": "a9c7543ade81cf04a94cda6c3da6f71fbf32183bc80bd486d4c3fedcfd418797",
+      "translationSHA256": "c2bae8326ad916ed5c60a6c88e2d5c1af3062fb2907673f43e75db0e9c05f0a0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Emily_spouse_y2",
+      "field": null,
+      "source": "Hey, there you are!$0#$e#The ocean holds so many secrets and wonders. It's truly amazing.$0",
+      "translation": "Ahoj, tady jsi!$0#$e#Moře ukrývá tolik tajemství a divů. Je opravdu úžasné.$0",
+      "sourceSHA256": "65b81e957376decb48f4d3df1817d4617da1218d129a771d677d619ee7632425",
+      "translationSHA256": "bde3cb7c3f586ae343a1a1d3ebaac80ee862753c8a5c902f74abf856caadcd54",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Leah_spouse_y2",
+      "field": null,
+      "source": "I brought some sparkling wine for the main event... Summer's not over yet!$0",
+      "translation": "Přinesla jsem na hlavní podívanou šumivé víno... Léto ještě neskončilo!$0",
+      "sourceSHA256": "6bc29c065b77b1c2cb1b5d38dafc586af588601112a50965184a638420e1d7e2",
+      "translationSHA256": "6467b37f9004c0b7ec77d1e49fe105090ffbf30a81907bfda963e7bd290466c0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Penny_spouse_y2",
+      "field": null,
+      "source": "I would've brought us a pot of tea if I had known it would be this chilly!$0",
+      "translation": "Kdybych věděla, že bude tak chladno, přinesla bych nám konvici čaje!$0",
+      "sourceSHA256": "9a62a602a8b5139aa4a76bce637d6d944973d3a1d4da7eb0427bdc55f1f9265a",
+      "translationSHA256": "cd0ee2a9ac2b3dd5cc79f508239f23661235f7b7a9e8ac5fd465407a14d5a5ba",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Alex_spouse_y2",
+      "field": null,
+      "source": "I'm just spending some time with the family for a moment. I'll meet you on the docks soon, okay?$0",
+      "translation": "Trávím chvilku s rodinou. Brzy se sejdeme na mole, dobře?$0",
+      "sourceSHA256": "c3fa56f1aca9538391cf76e4a276a756bc46e58ed5d492be026f7d57eb6da188",
+      "translationSHA256": "2e433aa3b9b91d5bd1887bdae00df112a8e7db36bb3a1d57511a96f863aee1a8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Sam_spouse_y2",
+      "field": null,
+      "source": "Wow... you look great tonight!$10",
+      "translation": "Páni... dnes večer ti to sluší!$10",
+      "sourceSHA256": "20d8ee0dc0ecdfc31543f85872512ead60bb743fa887d18a45e331441b3d095d",
+      "translationSHA256": "5234a355313ce3a444265179b01ed10c58d6d91475ff5ebc0f7b8f2375650725",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Harvey_spouse_y2",
+      "field": null,
+      "source": "Hi, honey. It'll be any moment now when the jellies show up... It never gets old!$0",
+      "translation": "Ahoj, drahoušku. Medúzy se objeví každou chvíli... Nikdy se to neomrzí!$0",
+      "sourceSHA256": "c2e8269c32d8ff1e71a6a42a3a999edbba9431a2b2040296c44312d234731ff5",
+      "translationSHA256": "11bb222d0f5e2367d47c6b1e5a2cf68b50224bcccaae533a2c11dcfa35bc29e7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Shane_spouse_y2",
+      "field": null,
+      "source": "Are you all prepared for the fall? I am...#$e#Huh? Oh, I bought a king size bag of pumpkin chips. You can have one, if you want.",
+      "translation": "Máš všechno připravené na podzim? Já ano...#$e#Cože? Ach, koupil jsem obří balení dýňových chipsů. Jestli chceš, jeden ti dám.",
+      "sourceSHA256": "0be1ea4df9ef379829be16abdaa3a98d23646f3869b87081b761d9920edf03dd",
+      "translationSHA256": "16fd4f27930a0931bd8b8ce5e9cc43a4b87159307381b174b417f0c2cc76841a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

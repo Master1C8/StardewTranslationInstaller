@@ -1,0 +1,1529 @@
+{
+  "id": "009-ui",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "All 80 pairs checked in full for fish-request responses, repeated placeholders and voice, gamepad/advanced-game options, kitchen/bed conditions, session states, building-owner permissions and Beach Farm qualifications. Preserved exact control placeholders including the local-controller * marker and farm-description underscore. Item responses use case-safe wording for runtime noun labels. Complete final reread found no issue.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff1",
+      "field": null,
+      "source": "\"This {0} is satisfactory for our needs.\"",
+      "translation": "„Předmět {0} našim potřebám vyhovuje.“",
+      "sourceSHA256": "406b8be41dc6169f22b9a6796a905863e5aa8c33e580072e77da2613e79da762",
+      "translationSHA256": "1921c141fb413e2279850beeb310ca54f6a8b3d7a49719debe72f503ea8203ae",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff2",
+      "field": null,
+      "source": "The fish look satisfied with the {0}.",
+      "translation": "Ryby vypadají s dárkem ({0}) spokojeně.",
+      "sourceSHA256": "e5ec056b20afdb775ba69a6d03f185db181784f69a0fd99d7bcfd58301998f30",
+      "translationSHA256": "5672fb009557e1a4d87b512fc0156384ecde32c34820062fd5321107f208dc14",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Demanding0",
+      "field": null,
+      "source": "\"Thank you! Thank you!\"",
+      "translation": "„Děkujeme! Děkujeme!“",
+      "sourceSHA256": "90220bfcdd80dd11ae1d7e21c0dc95b33ae078e930286cdfe76d7c3a17cc757f",
+      "translationSHA256": "9a9e4fd4ce233286b4ab7a870b0a3875f58b654c999ed568b68dbed3677b0904",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Demanding1",
+      "field": null,
+      "source": "\"{0}! {0}! {0}! We're happy!\"",
+      "translation": "„{0}! {0}! {0}! Máme radost!“",
+      "sourceSHA256": "83b294987a6d9602295d0834d77ec2ccec78491df564e2778ae8e3984c3452d9",
+      "translationSHA256": "337c9e5d958b864fa916427b675b84cbcce2d66d7836ea125e49831035dfd352",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Demanding2",
+      "field": null,
+      "source": "The fish are swimming in circles.",
+      "translation": "Ryby plavou v kruzích.",
+      "sourceSHA256": "1702714af77b2b28e54850becb64eccd0d3b5bec415d2fd245bed05149c5286f",
+      "translationSHA256": "e12bec7e313dbad66f72a65635b7d52016cc332dd91eee087578ec552eab2c41",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Carnivore0",
+      "field": null,
+      "source": "\"Looks like {0} is on the menu tonight!\"",
+      "translation": "„Vypadá to, že dnes večer bude na jídelníčku {0}!“",
+      "sourceSHA256": "5b8d8d9e9b21e395b9e0e0b6d51915ed140453e23d9d33f9b8874b859f311107",
+      "translationSHA256": "a6d25089c75d27d247d9819b8fcfbe30089b7bc5602717a73aa71f74c86bf715",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Carnivore1",
+      "field": null,
+      "source": "\"Fresh {0}! Yum...\"",
+      "translation": "„Čerstvá dobrota: {0}! Mňam...“",
+      "sourceSHA256": "8459994bbce9ada5da8cab263a7c6ea5d83883f57ca9faeea9512185811672c3",
+      "translationSHA256": "e3215fc2028e3f547ff87bcfff2a03a29bd85a14fea9eca95ef17addaaf9e20a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Carnivore2",
+      "field": null,
+      "source": "\"This {0} looks delicious. Thank you!\"",
+      "translation": "„To vypadá chutně: {0}. Děkujeme!“",
+      "sourceSHA256": "cadb89b259b3fea6c543b52a56d0f05a023a7beb3c179d3a536c3fddc0cb0f4d",
+      "translationSHA256": "3989e585151d4804ed443fc2321b421e3fe07a6c53439852e80aca26584be5d8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete0",
+      "field": null,
+      "source": "\"Wow, thanks for the {0}!\"",
+      "translation": "„Páni, díky za dárek: {0}!“",
+      "sourceSHA256": "125a3c76e90ae79cbf5d9a0e4882a3f0585ab2b2b0e867cada116db13174e98a",
+      "translationSHA256": "64910bfbad4407009ea41064084f8a54bfafd5032df23a0d9cf9e207fb4c6992",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete1",
+      "field": null,
+      "source": "\"Hey, look, it's {0}. Just what we needed!\"",
+      "translation": "„Hej, koukejte: {0}. Přesně to jsme potřebovali!“",
+      "sourceSHA256": "20317a9b95d4895adab6ee3e96cefb99bb6b28b022e701ac9919e2dc75b9591d",
+      "translationSHA256": "9899fb672b9554e91d36d75c73a65d6604607ba7cfda33e2e1448844da00dc3e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete2",
+      "field": null,
+      "source": "\"Hey! This {0} looks pretty nice!\"",
+      "translation": "„Hej! To vypadá moc hezky: {0}!“",
+      "sourceSHA256": "2d7f89cc25d4a1d0c71d8049907f4a7912e10d24cde02c52079c280dfba87920",
+      "translationSHA256": "6ea978c4966601f78b1380127f40174c37edf66cdbe9f78f68d0603ffdf98c6a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete3",
+      "field": null,
+      "source": "\"Thank you! This {0} will keep us healthy.\"",
+      "translation": "„Děkujeme! Tenhle dárek ({0}) nás udrží zdravé.“",
+      "sourceSHA256": "6d579abe7a2512efe37891ebe979bc4dd5a47c8977237c95a692ce013e10962c",
+      "translationSHA256": "2966b4edac5ecfd88f006af9e487690c803b366129fd71cdb4418bd5ff1d5b93",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete4",
+      "field": null,
+      "source": "\"Ah, {0}... this really makes us feel at home.\"",
+      "translation": "„Á, {0}... s tímhle se tu opravdu cítíme jako doma.“",
+      "sourceSHA256": "92d0e2611dbbec7d2f774368e29dfe2a4053e3b6fdc3220c2e6221c6912ff0e3",
+      "translationSHA256": "8ecef80557df51cb4758a8e5e3ec8ee4dd2d4316bd5d7514aebef48999d10e39",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete5",
+      "field": null,
+      "source": "\"Everyone, look... fresh {0}!\"",
+      "translation": "„Všichni se koukněte... {0}, čerstvě dodané!“",
+      "sourceSHA256": "ca01b8d9b8214adb8b8f06ed9c5d43d0998c2565e3d58840f552d04b1e61a314",
+      "translationSHA256": "1ef87a5850290dcd28b3f79ff1bfa0e0c1732717c534a0167648ed3bf703ee64",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete6",
+      "field": null,
+      "source": "The fish seem happy.",
+      "translation": "Ryby vypadají spokojeně.",
+      "sourceSHA256": "2b935fe605978b9120858d142fcb4d11aa04e4bc696c12a3f8761d1ded697f9c",
+      "translationSHA256": "b3296f284ea57b99c700d7d20497dcf130a9620bc4cd6503dd95d43549d04d1a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AlreadyDatingBouquet",
+      "field": null,
+      "source": "You are already dating {0}.",
+      "translation": "S postavou {0} už chodíte.",
+      "sourceSHA256": "bd79068465a6d41bff58de38aa2b05a083d9114b1adab4bdd39e3744cee316fb",
+      "translationSHA256": "ee032843a897177a469a68d35872d653a134ba0cdd96397dda3b6792ad507354",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "MovieStartRequest",
+      "field": null,
+      "source": "The movie is about to begin!",
+      "translation": "Film za chvíli začne!",
+      "sourceSHA256": "48a128b49b7e0824c95aa643b7742227ad65e0d330f5be654c6c17d7d19802bc",
+      "translationSHA256": "699550fb77ee893fe73135a7ff70be16459dda71deaa3fd29f027ec85aafe465",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "MiniFridge_NoKitchen",
+      "field": null,
+      "source": "The Mini-Fridge can only be placed in a house with a kitchen.",
+      "translation": "Minilednici lze umístit pouze do domu s kuchyní.",
+      "sourceSHA256": "0bd18446ac1651c58967cabb30d1d5073126e20467433f97cbed2054e9767b24",
+      "translationSHA256": "9718dbe3ffe04022b6f10b6aa6fa626fa9b83b82d6051f377bda3972c6278412",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Kitchen_InUse",
+      "field": null,
+      "source": "A kitchen appliance is currently in use, please try again later.",
+      "translation": "Kuchyňský spotřebič právě někdo používá. Zkuste to později.",
+      "sourceSHA256": "424b458a9324d9646e0656efedc0de51dbb8da6f54e0aa3dbaba8f32e2406a25",
+      "translationSHA256": "9e3f020fc2134f7b1b49e7c00f9b199901e020eb85eb00a9089976e5ada6c56d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemGrab_FillStacks",
+      "field": null,
+      "source": "Add To Existing Stacks",
+      "translation": "Přidat k existujícím hromádkám",
+      "sourceSHA256": "a826733bd69a1bc1a9908d6cd820555775a388f49e3aba5bee0c5ef8e0e77094",
+      "translationSHA256": "b7f0d550f9945b227254f8d95303ddbeaa5f81f9173850b259fc59a96b7b7e41",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_OpenFolder",
+      "field": null,
+      "source": "Open Destination Folder",
+      "translation": "Otevřít cílovou složku",
+      "sourceSHA256": "43df1a85f7a02162adc9f8752fd43be1c881281e8019cc3360f41a6231dc34c7",
+      "translationSHA256": "6c65298496568a4aebf42caae9b2e41ab54de374a8b745cb107d64f2bd9a639f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Calendar_Wedding",
+      "field": null,
+      "source": "{0} and {1}'s Wedding",
+      "translation": "Svatba: {0} a {1}",
+      "sourceSHA256": "0ec2fe63120f4e2384501c0c1ea5d792ca3788b7ad2caae62e79864d5efda122",
+      "translationSHA256": "a54d6c4b55e477400f71cf8d589c2c0f4c9aee31adafd35c65a69ac09dde67ae",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_Vsync",
+      "field": null,
+      "source": "VSync",
+      "translation": "Vertikální synchronizace",
+      "sourceSHA256": "052810dae19607f552aa564781c53684750b211d124585f6f8fb070a2dc51b07",
+      "translationSHA256": "4a50333313a61e2727d800a0efacdb74e7de86825bd1ef5be46cd02e940cd4af",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "VersionMismatch",
+      "field": null,
+      "source": "Version mismatch ({0})",
+      "translation": "Neshoda verzí ({0})",
+      "sourceSHA256": "42969d3e559cfe9b69c44078f1220f7dd38cb77d4b9b1077fa04039b06e97243",
+      "translationSHA256": "e748bdd187235f194145c735d9f7c4fec0572c825205d5c95de0046e6a1a1bed",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode",
+      "field": null,
+      "source": "Gamepad Mode",
+      "translation": "Režim gamepadu",
+      "sourceSHA256": "40e41a404c1f67ffe6fb3e13ba5fc1c0de7fd53c1b141d09a10bea31c86a892a",
+      "translationSHA256": "19b480ebf60da7fd2c2a15425b3927f908f449bbaf32f25df642b1f8e18e15f9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode_Auto",
+      "field": null,
+      "source": "Auto-detect",
+      "translation": "Automatická detekce",
+      "sourceSHA256": "89ebfb7a88ca8e6cafba752d40719e9ebdbf1d4250b0b3a275566a9b7c00b5c4",
+      "translationSHA256": "7a0fc0af7d0bdd0d15e56b021b9dbde660f47debb07aa9a1264feae64e2b56db",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode_ForceOn",
+      "field": null,
+      "source": "Force On",
+      "translation": "Vynutit zapnutí",
+      "sourceSHA256": "a54982c4cd4b8f1fd6ef3f508edde799dbe82a07f079864da00388cdbfcefad5",
+      "translationSHA256": "d94c08d8165a271303897c26998d11564d8b60c6c8ad76afc60b2156456c5eeb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_GamepadMode_ForceOff",
+      "field": null,
+      "source": "Force Off",
+      "translation": "Vynutit vypnutí",
+      "sourceSHA256": "bb877c3db9f8b332106343c8980b22d0297065c06210b55b683e615b63e4cb93",
+      "translationSHA256": "10740875f5b89dde021295ea916e7e53a84e468dcfefd3e7ac3ee1e62f6e36eb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_Label",
+      "field": null,
+      "source": "Advanced Game Options:",
+      "translation": "Pokročilé možnosti hry:",
+      "sourceSHA256": "862812719af8f98510c240166f7606d85850690e96ca32cb3074b6d1d6cda995",
+      "translationSHA256": "dd27d3b38fc4c15e4725844c474e1f8b6509e509410b641f92ebcb77d3f712c9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB",
+      "field": null,
+      "source": "Community Center Bundles:",
+      "translation": "Balíčky Komunitního centra:",
+      "sourceSHA256": "a02ffc9f71b614460417cbfd0da09b13a1cbd11f12f2c8f76b2a87016dfe7b24",
+      "translationSHA256": "dc8b55792a600a9db86d178bb12138f8bd2150ac2810d2362a889ebdb274929a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB_Tooltip",
+      "field": null,
+      "source": "Modifies the bundles that appear in the Community Center.",
+      "translation": "Upraví balíčky, které se objeví v Komunitním centru.",
+      "sourceSHA256": "e16117b2e23e3125bc9369ccac5feb7db7ba08ed16575e78d7fbe4e43ba1019c",
+      "translationSHA256": "e8db7190ce2eec09567d69a6ab54f9616e8ae7ec6aff148a1e4ebc5d5388194c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB_Normal",
+      "field": null,
+      "source": "Normal",
+      "translation": "Běžné",
+      "sourceSHA256": "a7248eeb45eb1ce247f81693283e22e8b39e8a50890cecd22d02e75025547d90",
+      "translationSHA256": "f552d72b6d54a9e8146e1c18cd90c04e43ba67d575a5e0379ce54f2ce1e22491",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CCB_Remixed",
+      "field": null,
+      "source": "Remixed",
+      "translation": "Obměněné",
+      "sourceSHA256": "41c2f7a25ba55d5a9419d1512ad37143d2095042171ed533415b57ad81b6e992",
+      "translationSHA256": "a2ae558cd78a10fb6d6185883ee955ebd061d2bbc70924746367927f94424524",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_Year1Completable",
+      "field": null,
+      "source": "Guarantee Year 1 Completable",
+      "translation": "Zaručit dokončení v 1. roce",
+      "sourceSHA256": "1d6027d8db04b742e3be28aa30946c850ab687e88d2b8561f0fc5cde74c6eaf9",
+      "translationSHA256": "f4eccfbf72f72dac71ebe59e950de4748466a1b5efa0ebaf164e62f2ae463508",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_Year1Completable_Tooltip",
+      "field": null,
+      "source": "Ensures that the Traveling Merchant sells a Red Cabbage seed some time during the first year.",
+      "translation": "Zajistí, že v Pojízdném obchodě bude někdy během prvního roku na prodej semeno červeného zelí.",
+      "sourceSHA256": "d452f5a51401c41be7126faed5b9bad13840ddbfe18b3e518c3672c19e8ae3c7",
+      "translationSHA256": "56bd17a2336fd6d4780da0bba266baa26c6947e0a94c037d8e37475a9b9661d9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_MineTreasureShuffle",
+      "field": null,
+      "source": "Mine Rewards:",
+      "translation": "Odměny v dolech:",
+      "sourceSHA256": "018d5895d8210a9cd8420b8173239aaa7dd4f905be4b234e15b600ac8bf817f4",
+      "translationSHA256": "c73a679bc33cac6d95f1dd0f64098fced9f4a471435e68879ab350378f076f7c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_MineTreasureShuffle_Tooltip",
+      "field": null,
+      "source": "Modifies the rewards that appear in the Mines.",
+      "translation": "Upraví odměny, které se objeví v Dolech.",
+      "sourceSHA256": "eec25b72af1802a0c1be52fa0805f4609edf29b107cad7363b4bf4836244f246",
+      "translationSHA256": "4cb9ee02feb14d61107a1c32de1fb80963918951e73d288e39213ec53eaa3294",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_FarmMonsters",
+      "field": null,
+      "source": "Spawn monsters on the farm",
+      "translation": "Nechat na farmě objevovat příšery",
+      "sourceSHA256": "7c84e25b9a1c420d839bdd305bd0b7c92a23309cdcd1291cb6c22d36f3f9ccc3",
+      "translationSHA256": "fd66cf24af7bf45c0fe08f53d156ceee33f7766750adf0f90162706b63584341",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_FarmMonsters_Tooltip",
+      "field": null,
+      "source": "Allows monsters to spawn at night.",
+      "translation": "Umožní příšerám objevovat se v noci.",
+      "sourceSHA256": "bfe5c0695e6cbb33640473fff2a8b08333bd334c076995a2598856d87d7c6108",
+      "translationSHA256": "948064067d593b625937fa07a446b580ee4da9a1fc2536cf82c84f21040b573d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_ProfitMargin_Tooltip",
+      "field": null,
+      "source": "A multiplier applied to the price of items sold.",
+      "translation": "Násobitel použitý na cenu prodaných předmětů.",
+      "sourceSHA256": "b3a0d5989750c5e64ac32e8d0a91b4db09b81bf0a224277cbc66fe7faadf6eaf",
+      "translationSHA256": "8ad9c33a94ba818c50ec83f588af0e2f6886e4e7ba0624f84bc1d92b436a5e50",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_MPOptions_Label",
+      "field": null,
+      "source": "Multiplayer Options:",
+      "translation": "Možnosti hry pro více hráčů:",
+      "sourceSHA256": "7bb19b884f682ecab463dfbda4cdc4671efbb4fcabf88f96b3304f633d652d1b",
+      "translationSHA256": "9c7c9de20d74d1925d4ebee44644d337e30fc89627e23a64860b958ea9cd8a24",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_StartingCabins_Tooltip",
+      "field": null,
+      "source": "The number of starting cabins.",
+      "translation": "Počet počátečních chatek.",
+      "sourceSHA256": "4c321b6a78bf12b797e6e85cbf56c63ad21802b89876467a82284c8b12d72f12",
+      "translationSHA256": "98b839a0a8165868f20148ef0a85269b7cc6ca361a1118e8e19f4b29d5891c1d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_OtherOptions_Label",
+      "field": null,
+      "source": "Other Options:",
+      "translation": "Další možnosti:",
+      "sourceSHA256": "2766cd84df41dc83b678fad848d36a7dda65f0257a5d4e4a4f844f37c0299dbe",
+      "translationSHA256": "3b3c2eec4457b212198f171bed1fc98281e16dfdd94f2e1efb91927204727279",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_CabinLayout_Tooltip",
+      "field": null,
+      "source": "Whether the cabins are placed closer or further away from one another.",
+      "translation": "Určuje, zda budou chatky umístěné blíž u sebe, nebo dál od sebe.",
+      "sourceSHA256": "f97560f31277c03ea53d8060a6b5e5d175b13504376ec9d9f81c837421f041e3",
+      "translationSHA256": "90cc27d1e4cb1e6d47c92e44aa5127682b6c7ccf90ee960ff2b098090d0984bc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_RandomSeed",
+      "field": null,
+      "source": "Random Seed:",
+      "translation": "Počáteční hodnota generátoru:",
+      "sourceSHA256": "1fa50158044356ffa3b1bb96cb7dc8f5cbb2265615ab4bd9a42315c786efdffc",
+      "translationSHA256": "60111ee51f40aab2ae2db9d61f168173eec34b1b91fc12927bb58a8ce0a24164",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_RandomSeed_Tooltip",
+      "field": null,
+      "source": "The seed used to randomize the game world.",
+      "translation": "Počáteční hodnota použitá k náhodnému vytvoření herního světa.",
+      "sourceSHA256": "6a2235e1f16242f8fd1bbbf1c6a2a4af1d443fbae72db71217871e1f7f4dba00",
+      "translationSHA256": "84a8bfc1414ea54c2a526ed64169bb311926b4ff226584ec7354102bd01a2d24",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_LegacyRandomization",
+      "field": null,
+      "source": "Use Legacy Randomization",
+      "translation": "Použít původní náhodné generování",
+      "sourceSHA256": "18a9caca3e9b54bd65ec4426eeb3d8a6fb41038e669275e394278d8b8da8a526",
+      "translationSHA256": "adca591882d5d5b4cc6f1c534577be54e9a980b4bb4f961baf944482cba94e6a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AGO_LegacyRandomization_Tooltip",
+      "field": null,
+      "source": "Make random choices in a way that often repeats patterns. Most players should keep this disabled.",
+      "translation": "Náhodné volby provádí způsobem, při kterém se často opakují stejné vzorce. Většina hráčů by tuto volbu měla nechat vypnutou.",
+      "sourceSHA256": "245f8bbd928a48edc2849362a229d367e3f5c8790d9f687451793f93a6d604ed",
+      "translationSHA256": "5ad54f5405355bf3bf0ab24f95432459557deeef389f7e600a218c24ddaa8059",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_SlingshotMode",
+      "field": null,
+      "source": "Slingshot Fire Mode",
+      "translation": "Režim střelby z praku",
+      "sourceSHA256": "e944c01e8e0596e0fc004767db89f3479848a3585d1e17511c385bf4bbb79873",
+      "translationSHA256": "b41974b270d52fee277acdde928a7f3373ee55a57a7007ba2cabbe9f35d2f7cf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_SlingshotMode_Hold",
+      "field": null,
+      "source": "Hold and release",
+      "translation": "Podržet a pustit",
+      "sourceSHA256": "1cf5ce5e197d2ce162fda63745ee957d1a2500775a23f7c53705474bee57da66",
+      "translationSHA256": "6ae90a9fe945efd56e0444a7a45a5b91e2f3b62f2c52c6f42528e506640704ab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Options_SlingshotMode_Pull",
+      "field": null,
+      "source": "Pull in opposite direction",
+      "translation": "Táhnout opačným směrem",
+      "sourceSHA256": "fb5eff9ca5b52e208fed92bd52887896bdb1c723cc534f99be785978d8726d04",
+      "translationSHA256": "b2711f9908491a370a98d4282968014593c247744db9c0dbcc74121e5da73a5f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Bed_InUse",
+      "field": null,
+      "source": "Cannot move a bed that is currently being used.",
+      "translation": "Postel nelze přesunout, dokud ji někdo používá.",
+      "sourceSHA256": "a8c269550e94d7ed80d329a3596adfb0f3800e023b84acca1a51baa7976f01cd",
+      "translationSHA256": "7d279a4962e309256d2552a2c0ff8e1c9a11373e0db941a5f9b226cb1694d59b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Bed_CantMoveOthersBeds",
+      "field": null,
+      "source": "You cannot move beds in another player's house.",
+      "translation": "Nemůžete přesouvat postele v domě jiného hráče.",
+      "sourceSHA256": "58a214f9e22c1d9d69b905414c180a1a078194194a8fb0e4c528e0a2d3474724",
+      "translationSHA256": "135be4a66419e16b2a2c7f55543faa0071d087a580427b67b5db6bf31e8488e6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Bed_NeedsUpgrade",
+      "field": null,
+      "source": "Bed type cannot be placed without further house upgrades.",
+      "translation": "Tento typ postele nelze umístit bez dalšího vylepšení domu.",
+      "sourceSHA256": "6ffb26a7046e905fc257872bc2c539c2d1982611b6bef9221b8c40206ad1e757",
+      "translationSHA256": "0a42bbb09614459669fa8c707343ffefe3243360a6558ed045d3f0556cdbd1cb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost",
+      "field": null,
+      "source": "Disconnected from the game session. {0}",
+      "translation": "Odpojeno od herní relace. {0}",
+      "sourceSHA256": "3cf2945f3e740be412b6ee276b6dad82a9c9f6bf0068b6a5e31558109cfc01e2",
+      "translationSHA256": "91c18a9b99b972dd34ea4d361f50e7f76ed5cc045be6a48e9ff03f5f0c494d9f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost_UserLeft",
+      "field": null,
+      "source": "(User left session)",
+      "translation": "(Uživatel opustil relaci)",
+      "sourceSHA256": "3f8c736ca9df6d2b3c407325fcbe19c564f61a2e57ec9d9ffd794e863b50c921",
+      "translationSHA256": "9fc0023c9cd73bf14155e36e82cc4aceafb5ba74aa75a43614c402356581f1d5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost_LobbyClosed",
+      "field": null,
+      "source": "(Session ended)",
+      "translation": "(Relace skončila)",
+      "sourceSHA256": "9334fea2ef5ccf92c995d866abb49eb4af052f9c5eafa00d6998b718cbad6562",
+      "translationSHA256": "e15a11440a4d73374ee268a669f6a37a90f605940fc030d57d8c2b1beea8bd3e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyLost_ConnectionLost",
+      "field": null,
+      "source": "(Lost connection to lobby server)",
+      "translation": "(Připojení k serveru lobby bylo ztraceno)",
+      "sourceSHA256": "e3940ece0368114738ff3c5ad185a12288b6c4d2d5d8c5c0bbd5b143b9a08bbb",
+      "translationSHA256": "f75685e3f745343f481b04b73562adcc839718b3f8923d9dcfa50bd369e16898",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyJoined",
+      "field": null,
+      "source": "Connected to game session. {0}",
+      "translation": "Připojeno k herní relaci. {0}",
+      "sourceSHA256": "3cb6f1c38eaddd4074ff078eaac0dd4bd5c34f8dd331f90750a951773a1e9da6",
+      "translationSHA256": "7ce858760b3e1c2a9f116f351f022c59050a685028a441dc70c5f21c53bdc4b5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyRecreated",
+      "field": null,
+      "source": "Established a new game session. {0}",
+      "translation": "Byla vytvořena nová herní relace. {0}",
+      "sourceSHA256": "fdc87ba8097b19921e69127d10db5f8cc0bd2903e89470b5f423578bc765dc99",
+      "translationSHA256": "8066839f4829194723adb7771213de1220142f4c18b16296c871d19515189c5c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyJoined_InviteCode",
+      "field": null,
+      "source": "(Invite code: {0})",
+      "translation": "(Kód pozvánky: {0})",
+      "sourceSHA256": "8826e0af28812ad49c97922f9fa5fae76a0c2f144142568f4a5c45cf410507ed",
+      "translationSHA256": "adda3a7f91286fdd228a53203d2c1219b71178e598a3a37657eb3fb51c53c0c7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LobbyCreateFail",
+      "field": null,
+      "source": "Failed to create a new game session...",
+      "translation": "Novou herní relaci se nepodařilo vytvořit...",
+      "sourceSHA256": "c3d5b1d800af8e3d7979e5f5e27792e3ad84c1a3d0b4dd7827e46d03f5630c0b",
+      "translationSHA256": "af91d4823689e464998b1669868fedf61b9cb349818587f64e86c00e73ded4f9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_StartingServer",
+      "field": null,
+      "source": "You are now hosting a multiplayer game.",
+      "translation": "Nyní hostíte hru pro více hráčů.",
+      "sourceSHA256": "278bba5d9fbfbf7652b9c199a9ca44d0ee2fa764aeb24f53388ddab5fff5c54d",
+      "translationSHA256": "ad764f8f250eba6a26470827e385d4ea05712c783d7416e5b3997809f3e7ce8c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DisablingServer",
+      "field": null,
+      "source": "You are no longer hosting a multiplayer game.",
+      "translation": "Už nehostíte hru pro více hráčů.",
+      "sourceSHA256": "34a906bc6f956bd1128aac8211179b37b757b3b2fd41abfd689fed8d1db63800",
+      "translationSHA256": "d1060d6c8775d5429dc659b28d4950425450107ab6678e8e425674fc46a60582",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Farmhand_Locked",
+      "field": null,
+      "source": "This character belongs to another player.",
+      "translation": "Tato postava patří jinému hráči.",
+      "sourceSHA256": "6006e8e8d45d45ad8ea3de283db03facf3e196828510cbfa6181804e1e7097c8",
+      "translationSHA256": "b68009ca83eae8d3d01698a891a2f097c21453c05fdb9e71de656ab8ff7f46e9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_Unforge",
+      "field": null,
+      "source": "Unforge",
+      "translation": "Zrušit kování",
+      "sourceSHA256": "0d1feb4e232facbcb5caa238dd7ff253d389330908303bad8b44194a58a2a1e8",
+      "translationSHA256": "edc375d00148938eed8ff7689c60aca39b4b1fe00b65a104649655da823fdf9a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Item_Tooltip_Forged",
+      "field": null,
+      "source": "Forged",
+      "translation": "Vylepšeno kováním",
+      "sourceSHA256": "ac158f51e859b3b25071e168f07f843e83df5ed9ff273ff7f958397cc8075667",
+      "translationSHA256": "565134b080ee52c6ecc7b32d3d6ebe081bd6336bf6a70e0615ecba3574554596",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LocalJoinPrompt",
+      "field": null,
+      "source": "Press * to join game.",
+      "translation": "Ke hře se připojíte stisknutím *.",
+      "sourceSHA256": "de53daa8a36f43082cc01423ce15e845c06bff36a43abe352f5801bca6ef7616",
+      "translationSHA256": "05102a7ef6365cefa216df6754c722ef1898c4faceb863c50acbeec7837a33ac",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "StartLocalMulti",
+      "field": null,
+      "source": "Start Local Co-op",
+      "translation": "Spustit místní společnou hru",
+      "sourceSHA256": "8d297e90923479eb7cbcf5bdc634cf8577291ae1a8675945864aaa74bef7c4e5",
+      "translationSHA256": "23a25593ba148d45400361d4df10d8f397520b3796a26a580f324826fcaa0325",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "DropOutLocalMulti",
+      "field": null,
+      "source": "Leave Game",
+      "translation": "Opustit hru",
+      "sourceSHA256": "f9a17d49e30072542bea788b1d3ad573e32b3c18ae8e687d68df0652fa488bde",
+      "translationSHA256": "6b67f29063c22886c8928d86dfdef7b0acec6941618feb6b62d295fc7db1c4dc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChooseOne",
+      "field": null,
+      "source": "Choose One:",
+      "translation": "Vyberte jednu možnost:",
+      "sourceSHA256": "a40d41e40a8ed5125190b035422372095633296ed94ff3f57947621a13f020e6",
+      "translationSHA256": "c0682d6a19de65e8ad11b0f4a31e62dfdc71c372b38af473e4bc5d606eee0be9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_PaintBuildings",
+      "field": null,
+      "source": "Paint Buildings",
+      "translation": "Natřít budovy",
+      "sourceSHA256": "e4846793ef90041ab72bf5cd27a5bd5a19052b0ae7a9501c97c350808652fbea",
+      "translationSHA256": "813a35b9fa3b4683560239c9b391fa23bb1f0aaf4f98e226498ad2f23f0464cf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CannotPaint",
+      "field": null,
+      "source": "This building cannot be painted",
+      "translation": "Tuto budovu nelze natřít",
+      "sourceSHA256": "fa2858e04c0ffaaa7355515af1c709865572997ae236af654932dd6802b5560b",
+      "translationSHA256": "2f166e8f0a881b65676ccddf8fc767de210e379a8a3cf94c8a6a062230d3f093",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CannotPaint_Permission",
+      "field": null,
+      "source": "You do not have permission to paint this building",
+      "translation": "Nemáte oprávnění natřít tuto budovu",
+      "sourceSHA256": "e09fa4aa555b98d1a59a334f070dfcd8982acde15cecd2e83f6ab549c088d50e",
+      "translationSHA256": "3dc29c46d1e036db577df37208f724dcf85c293c0b98d240baba9724e47dd383",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions",
+      "field": null,
+      "source": "Building Move Mode",
+      "translation": "Režim přesouvání budov",
+      "sourceSHA256": "9ca1e76cdc908f5e55c6d67f719297053a7ac00e5e6d80244d48d51e885a61cf",
+      "translationSHA256": "f6a59c7e3f650290f630b448d950e7b0786d20fc57d18827514d284f3de49fc6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_Off",
+      "field": null,
+      "source": "Host Only",
+      "translation": "Pouze hostitel",
+      "sourceSHA256": "db09bd845aeb8a16120362590171664a51d4927ab85514ca785b147d839cc1c6",
+      "translationSHA256": "9742d5786ff9675aa2d4d488877446103b6a9f61eace393b14bc084a237f208c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_Owned",
+      "field": null,
+      "source": "Building Owner Only",
+      "translation": "Pouze vlastník budovy",
+      "sourceSHA256": "83c9bc924ba66bd3ac999e0c915bf4e6525b4ccd2310c66984c2ddb4a279b44b",
+      "translationSHA256": "2f55eb2bc4db06f33f9197944b0551a6c9c0203becbb6e2ce6eb2dce22776264",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GameMenu_MoveBuildingPermissions_On",
+      "field": null,
+      "source": "Everyone",
+      "translation": "Všichni",
+      "sourceSHA256": "da2e5dc515b188dcac1afa88c93f859834ad57dfd921581172c9a74ab190e9f1",
+      "translationSHA256": "936513c1130a7289087ba64733282cdb5d104a6b657d33efac056e47ad0364e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_FarmBeach",
+      "field": null,
+      "source": "Beach Farm_Good foraging and fishing, and tons of open space. Sometimes, supply crates wash up on shore. However, sprinklers don't work in the sandy soil.",
+      "translation": "Plážová farma_Dobré podmínky pro sběr a rybaření a spousta volného místa. Občas moře na břeh vyplaví bedny se zásobami. V písčité půdě ale nefungují zavlažovače.",
+      "sourceSHA256": "548d23bf0c18e4383a0159745fe70c782ac2a4e9478d547833956a4ccce21107",
+      "translationSHA256": "f8b1bba2617fdb5dd2d328f53c326132d3fa31642ed0210fcb85b0005a81efde",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_enchanting",
+      "field": null,
+      "source": "Now enchanting...",
+      "translation": "Očarovávání...",
+      "sourceSHA256": "f51b7dc2a71c36197d7dd65ce721218b6324e78a4249882f8b2426e7d873210a",
+      "translationSHA256": "7c0b51979c8282c7e65db130cee78f6d3af44b63d6d3c1d220b75b92950f55bd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

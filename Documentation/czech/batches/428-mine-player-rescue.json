@@ -1,0 +1,28 @@
+{
+  "id": "428-mine-player-rescue",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed both rescue messages against English; verified natural neutral wake-up wording, preserved the intentional ellipsis-only name call, all dynamic placeholders, leading spaces, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Mine",
+      "key": "PlayerKilled",
+      "field": null,
+      "source": "none/-100 -100/farmer 19 10 2 {0} 18 10 1/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 19 10 true/pause 1000/speak {0} {1}/move {0} 0 3 2/warp {0} -100 -100/showFrame 0/pause 1000/emote farmer 28/minedeath/end",
+      "translation": "none/-100 -100/farmer 19 10 2 {0} 18 10 1/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, prober se!\"/viewport 19 10 true/pause 1000/speak {0} {1}/move {0} 0 3 2/warp {0} -100 -100/showFrame 0/pause 1000/emote farmer 28/minedeath/end",
+      "sourceSHA256": "83db40ec3fe69357bf97f583b2b3a06e248ae9a11f0c58f06d16182b1cae226f",
+      "translationSHA256": "459875ca00808d48eb1cea1d9e40ea84afc43e1b4ff9c288ed7495af449f44a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

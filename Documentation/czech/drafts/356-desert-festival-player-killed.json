@@ -1,0 +1,12 @@
+{
+  "id": "356-desert-festival-player-killed",
+  "kind": "long",
+  "target": "Data/Events/DesertFestival",
+  "complexityReason": "Preserve the silent lost-items event exactly, including timing and the item-loss display command.",
+  "entries": {
+    "PlayerKilled": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end"
+  },
+  "preservationReasons": {
+    "PlayerKilled": "Technical event with no embedded player-facing text; showItemsLost renders separately localized UI content, so preserve the event commands exactly."
+  }
+}

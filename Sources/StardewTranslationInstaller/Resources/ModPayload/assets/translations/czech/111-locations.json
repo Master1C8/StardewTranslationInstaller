@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "IslandSecret_Event_BirdieFinished": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/removeQuest 130/skippable/addTemporaryActor Birdie 32 32 17 58 3 true/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 2300/playMusic none/animate farmer true true 100 35/addObject 19 58 870/playSound sandyStep/pause 800/stopAnimation farmer/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/move Birdie 0 -1 2/move Birdie 1 0 2/pause 500/jump Birdie/pause 500/playMusic desolate/speak Birdie \"Je to jeho...$s\"/emote Birdie 20/pause 1200/playSound coin/removeObject 19 58/showFrame Birdie 20/pause 2500/speak Birdie \"Heh... I po všech těch letech je z něj pořád cítit jeho pach...#$b#...ten známý, hnilobný puch...$h\"/pause 300/faceDirection farmer 2 true/playSound croak/animate farmer false false 350 104 105 104 105 104 105/pause 1000/faceDirection farmer 3/speak Birdie \"Víš... život tady byl osamělý, dítě... ale vůbec toho nelituji.#$b#Jsem věrná svému starému... a brzy zase budeme spolu... he he\"/pause 500/stopAnimation Birdie/move Birdie 0 1 3/playMusic tropical_island_day_ambient/faceDirection Birdie 1/quickQuestion #Je to čestný čin.#Je pryč. Měla bys žít svůj život.(break)speak Birdie \"Je v tobě veliká moudrost, dítě.#$b#A díky tobě jsem našla velký klid... tento medailon mi bude útěchou až do konce mých dnů.$h\"(break)emote Birdie 28\\speak Birdie \"Stará žena jako já? Myslím, že pro mě už je pozdě, drahoušku...$s#$b#Kromě toho... líbí se mi tu! Je tu klid a krásně. A mám nekonečnou zásobu čerstvých ryb, ústřic a opičího masa. Hehehe.$h#$b#...O tom opičím mase si dělám legraci.\"/pause 1000/speak Birdie \"A teď... jak se ti za to mohu odvděčit?\"/jump Birdie/pause 500/speak Birdie \"Ach... Co kdybych tě naučila zvláštní recept... Něco, co jsem objevila během dlouhých let strávených tady.\"/pause 1000/playSound reward/addCraftingRecipe Fairy Dust/message \"Nyní umíte vyrábět „Vílí prach“.\"/pause 1000/fork gotBirdieReward Strings\\\\Locations:alreadyGotNuts true/speak Birdie \"Můžeš si vzít i tyhle...\"/awardFestivalPrize birdieReward true/pause 1000/speak Birdie \"Přestože se vůbec neznáme, dostalo se mi od tebe veliké pomoci.#$b#Máš zlaté srdce!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+        "alreadyGotNuts": "pause 50/pause 50/pause 1000/speak Birdie \"Přestože se vůbec neznáme, dostalo se mi od tebe veliké pomoci.#$b#Máš zlaté srdce!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "id": "538-flower-dance-opening-y1",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 16 EN/CS rows; verified byte-exact setup, identical masked main-event command skeleton with only the quoted message translated, and preserved every placeholder, branch, emote, canonical Květinový tanec term, and character voice.",
+  "rows": [
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "name",
+      "field": null,
+      "source": "Flower Dance",
+      "translation": "Květinový tanec",
+      "sourceSHA256": "919b8f09e524c30f075957998c197f91a4462147a1cf97b2a4488dbe2590d76b",
+      "translationSHA256": "187d07c2015a1395b3bd93c29731fa6e2fb353b31ff83764100a265064866ec0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "conditions",
+      "field": null,
+      "source": "Forest/900 1400",
+      "translation": "Forest/900 1400",
+      "sourceSHA256": "ae388d824db6ec6eb21b8b5827887553632f8ace708be330f768a39dd28ca673",
+      "translationSHA256": "ae388d824db6ec6eb21b8b5827887553632f8ace708be330f768a39dd28ca673",
+      "preservationReason": "Technical festival location and time condition; no translatable text.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "set-up",
+      "field": null,
+      "source": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "sourceSHA256": "aa1716c5d3ae5a1b9577eebd9a422fc3b69f880453428940f3b1c46d9cf44b9a",
+      "translationSHA256": "aa1716c5d3ae5a1b9577eebd9a422fc3b69f880453428940f3b1c46d9cf44b9a",
+      "preservationReason": "Technical first-year festival setup command stream; map, actor, movement, audio, and control identifiers must remain exact.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "mainEvent",
+      "field": null,
+      "source": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"That was fun! Time to go home...\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"To byla zábava! Čas jít domů...\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "697063a2a38ae51f3dcc7c376ea856068f5fe761af015f93163fd4a58c14ebbc",
+      "translationSHA256": "87b132da3f9a181ff7456d685930559b33018a970248d68a79826bf71b5f832c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Abigail",
+      "field": null,
+      "source": "I really hate dancing in front of everyone... It's so embarrassing.#$e#Mom makes me do it.$u",
+      "translation": "Opravdu nesnáším tančit před všemi... Je to tak trapné.#$e#Máma mě k tomu nutí.$u",
+      "sourceSHA256": "f7f3c5d681a9ce34ce6b54b729d355f3bcc77840e4009d19092abd612e0de3a6",
+      "translationSHA256": "4e2cabd291e32134d3a76e3654807e8033ed0b47d2405935a3355836e19b0d46",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Robin",
+      "field": null,
+      "source": "Ahh... The air smells so sweet with all these flowers.$h",
+      "translation": "Ach... Se všemi těmi květinami vzduch nádherně voní.$h",
+      "sourceSHA256": "2ecec301165c5d67836c88c8f52df88e1cda3dc870943ce80c0d7ce0b4660144",
+      "translationSHA256": "98c8591f85103c96028cece6606dc90db8efe2764b73a155faf25f600f7b0777",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Demetrius",
+      "field": null,
+      "source": "These springtime dances can be traced back to ancient fertility rituals.#$e#Hey... You should know about this stuff, farmer.",
+      "translation": "Tyto jarní tance mají původ ve starodávných rituálech plodnosti.#$e#Hej... Něco takového se ti při práci na farmě může hodit.",
+      "sourceSHA256": "9ac78793ce150171c650f71588af4cdd039e6ae66fd9249812b04c580dabed65",
+      "translationSHA256": "7653e321581c5f0a522b8e482f6ece57137d1f76e85b12092c2d5fb60737db68",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Maru",
+      "field": null,
+      "source": "I like dancing, but this one is a little stilted. The old timers really love it, though.",
+      "translation": "Ráda tančím, ale tenhle tanec je trochu škrobený. Starší generace ho ale opravdu miluje.",
+      "sourceSHA256": "2905dadfa13637161db159f557b79c5559b3fb1e981a468f704d7464b7374465",
+      "translationSHA256": "47696027952ccb8e64cef2bf18e3c6a1ebf2e0187598f2e0b09e5a7828ca704e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sebastian",
+      "field": null,
+      "source": "Ugh...",
+      "translation": "Ech...",
+      "sourceSHA256": "06291b224a144910230c82e405033b9c44430e653d65e3e83990a7a1576c2cdd",
+      "translationSHA256": "477a367059d142d9807437bf167cbd424bef4cdf91c7a8a2b6cdedff21f2051b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Linus",
+      "field": null,
+      "source": "Oh, hello there. It's nice of you to talk to me.#$b#Spring is almost over... what a shame.",
+      "translation": "Ale, ahoj. Je od tebe milé, že si se mnou povídáš.#$b#Jaro je skoro u konce... jaká škoda.",
+      "sourceSHA256": "4ddae5fd1edd0bfe1402ea40f4a04c66ff2e0c4762386af7cb18f2d33343ea51",
+      "translationSHA256": "40ece58eb6cb08f91a693fcc5f99bed9a81d85202bb97e0cddf72f43f7ed3e7b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Pierre",
+      "field": null,
+      "source": "What! How'd you get back here?$u#$b#Don't touch anything.",
+      "translation": "Cože! Jak je možné, že jsi tady vzadu?$u#$b#Na nic nesahej.",
+      "sourceSHA256": "f0ced59050206ee2572d28e03c25bf7ada3678780dd4d44c62a787ace5b246c0",
+      "translationSHA256": "40bc7bc12e705d273bfd184838ea98852451e55f41ba273426885194bf8ea924",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Caroline",
+      "field": null,
+      "source": "I wish Pierre would spend this time with the family...$s",
+      "translation": "Kéž by Pierre trávil tento čas s rodinou...$s",
+      "sourceSHA256": "8257c6b0aad7e64f7182a62b46026702c1ff6354532928cda0b6a632a6e20bcc",
+      "translationSHA256": "b6a17de421313dc8ddaf684dac69082a848e3022dbad661a0cbca3b5313afe6c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Alex",
+      "field": null,
+      "source": "I'm just enjoying the scenery... hehe.",
+      "translation": "Jen se kochám výhledem... hehe.",
+      "sourceSHA256": "cf05a7c2e9eab4ee1b699130ea02fff1c18504cd71d69e13ccf16a3a5f30479f",
+      "translationSHA256": "f56d78dafda0de624b53a4466e3abb2a6ab53e940d9936526020563aac477a1f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "George",
+      "field": null,
+      "source": "Flowers? I can hardly see them.#$e#It's too bright out here!",
+      "translation": "Květiny? Sotva je vidím.#$e#Je tu příliš jasno!",
+      "sourceSHA256": "8e0cb6d784f51698b10f74e6841ac9c31249c5f1be13732b18f1d46ecd902b84",
+      "translationSHA256": "d558d03df8e93941dcfa2598065271b258d6ea43d225ab318650529c36cb1475",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Evelyn",
+      "field": null,
+      "source": "I've been working on these floral arrangements for a week. Do you like them?",
+      "translation": "Na těchto květinových aranžmá pracuji už týden. Líbí se ti?",
+      "sourceSHA256": "4be540f8b2f2c15e8ae0ec0dd3dab2171c20c00ce1550f136d6cb71c310701fd",
+      "translationSHA256": "9a7c415192e79396bead80520376310368122217d4d878b0a41b84152dbdbe5b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Lewis",
+      "field": null,
+      "source": "If you'd like to dance with the other young people, you'll need to find a partner.",
+      "translation": "Pokud si chceš zatančit s ostatními mladými lidmi, musíš si někoho najít.",
+      "sourceSHA256": "c496cf149a85526bbf044725545c80fa7599dd451e1f4508d94b98ce74fb2519",
+      "translationSHA256": "bad4b6fb97d0b3c48fdc710026618838898c82346130d5315961603cfdb23591",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

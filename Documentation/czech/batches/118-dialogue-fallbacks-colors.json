@@ -1,0 +1,370 @@
+{
+  "id": "118-dialogue-fallbacks-colors",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 19 entries twice. Original IL confirms Ahoj as the empty-dialogue fallback and dítě/druhé dítě as %kid1/%kid2 missing-child substitutions. Verified every legacy color shade and each leading/internal slash exactly; the color array has no original runtime consumer beyond initialization, and feminine forms consistently imply barva.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.792",
+      "field": null,
+      "source": "Hello.",
+      "translation": "Ahoj.",
+      "sourceSHA256": "2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7",
+      "translationSHA256": "9a83f033d960ac318deda721a98636f283b8a06cc235073c19bf0e89c131ae65",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.793",
+      "field": null,
+      "source": "baby",
+      "translation": "dítě",
+      "sourceSHA256": "a3ca38ef0e8554b39ce6fd34b011f9aa197cda1f17e2b08b1816142c4bc67199",
+      "translationSHA256": "67693cc88729a02ba0dd1f99cd51449214390df52c4b6e5163d7e9bab350ec07",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.794",
+      "field": null,
+      "source": "the second baby",
+      "translation": "druhé dítě",
+      "sourceSHA256": "08b64dedd438ce966732d3893f753764470aac55373de8204dd60db4d417dd33",
+      "translationSHA256": "1ddddcf4a6fb1a9ad69a146cb1ba53c6edbd3c67ac1252ac0dc229b1c99aadd4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.795",
+      "field": null,
+      "source": "/crimson",
+      "translation": "/karmínová",
+      "sourceSHA256": "3da653e353891533fb376e4e7a1f6c98a24805a50cbf6178cbb084ac2c283b3e",
+      "translationSHA256": "a120a59e7f4cc96ff68d9d04827a6afcbf4dfb32096c54a2b95cdeefaef3a33e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.796",
+      "field": null,
+      "source": "/green",
+      "translation": "/zelená",
+      "sourceSHA256": "1ef147a81ae45317d63dbcbc484e1958daa4b307f46243657d73e69bf1ef714c",
+      "translationSHA256": "d0fa2718790438a7430751dacbc2ea24248806d9026c56b70cb14961a3d4f2c6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.797",
+      "field": null,
+      "source": "/tan",
+      "translation": "/hnědožlutá",
+      "sourceSHA256": "f652e75b4c5f5ecc3105bc7bc622eec851077201d34f460aacfaafd293e82670",
+      "translationSHA256": "2837d211a0af6e0da2bcbe6953929ac13d4ebcf2237e59297513657f3ce08635",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.798",
+      "field": null,
+      "source": "/purple",
+      "translation": "/fialová",
+      "sourceSHA256": "d17b5536437ec91512d1c7cc23c4b71a5b78efa5ae13e93bf918e8d9c38b3a9d",
+      "translationSHA256": "3ddd2c7ef0aec5811bc4e1d2db7b9d7e3aee9060aa0a3979f17da997aa505016",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.799",
+      "field": null,
+      "source": "/deep blue",
+      "translation": "/tmavě modrá",
+      "sourceSHA256": "d146c1fdc9f0529f7fa11a59f2f0c190d7a624bf40ccb91f07b9a09c4e87afda",
+      "translationSHA256": "6b1a418af904e75e84f5dc0eacee07d534768299d9c4dc00da1f795b5995563d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.800",
+      "field": null,
+      "source": "/neon pink",
+      "translation": "/neonově růžová",
+      "sourceSHA256": "2e6d7d65d5dff7acade19ea447377ec4be68674e15993ab5b0138114ea3c697a",
+      "translationSHA256": "95b66595d1b39aa8b0ab98534a05a096d4db8e6ef857215edba74377a2b6d706",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.801",
+      "field": null,
+      "source": "/pale/yellow",
+      "translation": "/bledá/žlutá",
+      "sourceSHA256": "d3291971b2b23b302d573cee53ae2979647b98fc416a1dfb8f33c4d098175324",
+      "translationSHA256": "2307d289e1ce5ddee462d8e098b5ea9dd224e95830b26e71f3a8f1e4449d0dd8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.802",
+      "field": null,
+      "source": "/chocolate/brown",
+      "translation": "/čokoládová/hnědá",
+      "sourceSHA256": "4753105f1c383a769caed96520b4860646299d8d68e2bda366ec659fdfaf97c5",
+      "translationSHA256": "ea474043f68dbc517861fc5cb46edb891801eb204d282212c5fb2dc3b2f092e9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.803",
+      "field": null,
+      "source": "/sky/blue",
+      "translation": "/nebeská/modrá",
+      "sourceSHA256": "643cca9c2e1910d28c2d0dd9ac4b4b3e152f8883c9a38c491daf9f873ecd6152",
+      "translationSHA256": "3c9d4eda8b3b71938ec091e80c234431d4f7576e0659db6e46754be5c2b01c98",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.804",
+      "field": null,
+      "source": "/bubblegum/pink",
+      "translation": "/žvýkačková/růžová",
+      "sourceSHA256": "5a5096cbe99fff0274056beb9631bd3269151c2778876ba3eeb63d20450c5941",
+      "translationSHA256": "f4111bad85a642532ddf75f492b9da0129cb737aebf9922df320e0a3640b0ebf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.805",
+      "field": null,
+      "source": "/blood/red",
+      "translation": "/krvavá/červená",
+      "sourceSHA256": "d0f187bafd5e0040159ed14c2f25717f0103016f17d35dde4869da4f81ee04d3",
+      "translationSHA256": "6cdd0c0ad516455abb8cbbdac3e0d1db968a4d58207012f6f478d9a2a8620b76",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.806",
+      "field": null,
+      "source": "/bright/orange",
+      "translation": "/zářivá/oranžová",
+      "sourceSHA256": "33d0f99f2cb59166732dc704f3bb53d98e849ec3c008a68da17fff0736434abd",
+      "translationSHA256": "6762eb1a07f13bb4db2b315a65119ebc6a40dad3a9bfa3b2d729311dae559bfc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.807",
+      "field": null,
+      "source": "/aquamarine",
+      "translation": "/akvamarínová",
+      "sourceSHA256": "3652548a33c830f32664f4ee36ed4d37d4f8e7c377378f6244f3cea0760d4b40",
+      "translationSHA256": "09c33e15a6c8a3ca313a983054ab5bd75ba6e90b1155d668b4312cb41fd2f291",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.808",
+      "field": null,
+      "source": "/silvery",
+      "translation": "/stříbřitá",
+      "sourceSHA256": "8544fecc1c0981f9476ce81bcebbd1e3376232f8c0ca8b9a8af288ed615383a6",
+      "translationSHA256": "84a23fe0736fa278987ca9677d0c3214c72ba6faaeae25b874715bf6c48d1b68",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.809",
+      "field": null,
+      "source": "/glimmering/gold",
+      "translation": "/třpytivá/zlatá",
+      "sourceSHA256": "e8c0e49c7a54728f3d46ea0e9516c9ad4ff15f46ec4e1a2e068be955bcaea9ee",
+      "translationSHA256": "a2cb8093e57cf776fe502c3bebad2c803c90def19e0987cda6a40f834cac8855",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Dialogue.cs.810",
+      "field": null,
+      "source": "/rainbow",
+      "translation": "/duhová",
+      "sourceSHA256": "9ab49681ac9d8789f9eb45a3eca073cd7a1fb03b094032f9c733cf637a4cabfa",
+      "translationSHA256": "f18a06c8cf8e92b853e3e77429fe33e2b8367eedf77987cdc0470ccd50fb554c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

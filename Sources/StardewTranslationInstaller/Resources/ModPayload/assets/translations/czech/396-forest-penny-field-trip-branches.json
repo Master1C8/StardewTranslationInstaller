@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "choseFarming": "pause 500/question fork0 \"#Půda v údolí je ideální pro pěstování lahodné zeleniny.#Vzduch a tráva v údolí jsou ideální pro chov zvířat.\"/fork choseAnimals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Ano, Vincente?\"/speak Vincent \"Ehm, @? Když budu jíst tvoji zeleninu, vyrostu silný jako můj velký bratr Sam?#$b#Je tak silný! Včera večer jsem viděl, jak zvedl slečnu Penny úplně ze země, když lezli na strom.$h\"/showFrame Penny 27/jump Penny/pause 800/showFrame Penny 0/faceDirection farmer 3 true/emote Penny 12/speak Penny \"Vincente! Nemá se pomlouvat!$a\"/switchEvent fieldTripEnd/",
+        "choseAnimals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Ano, Vincente?\"/speak Vincent \"@? Můžu osedlat jednu z tvých krav a jet na ní do města? Chci být opravdový kovboj!\"/speak Penny \"Vincente! Chovej se slušně. ${Pan^Paní}$ @ se živí prací na ${své farmě^své farmě}$! Není to hřiště.$h\"/switchEvent fieldTripEnd",
+        "choseMinerals": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Ano, Vincente?\"/speak Vincent \"@? Je pravda, že hluboko v jeskyních žijí goblinové... a že rádi unášejí malé holčičky, aby je snědli k večeři?\"/jump Jas/pause 800/faceDirection Jas 3/emote Jas 28/animate farmer false true 100 102 103/speak Penny \"Vincente! Děsíš Jas. O příšerách mluvit nebudeme.$a\"/faceDirection Penny 1/faceDirection Jas 0/emote Penny 12/pause 400/stopAnimation farmer/pause 300/faceDirection farmer 3/emote farmer 40/faceDirection Penny 2/faceDirection farmer 2/switchEvent fieldTripEnd"
+      }
+    }
+  ]
+}

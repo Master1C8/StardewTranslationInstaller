@@ -1,0 +1,28 @@
+{
+  "id": "330-animal-shop-cave-carrot-event",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed the full event row against the English source; verified Marnie’s cave-carrot thanks, self-deprecating food joke, goat message and honorific gender macro, and independently confirmed exact equality of every event command, quest and item mutation, actor, coordinate, animation, timing, sound and separator outside quoted dialogue.",
+  "rows": [
+    {
+      "target": "Data/Events/AnimalShop",
+      "key": "92/e 91/i 78/t 900 1700",
+      "field": null,
+      "source": "jaunty/13 17/farmer 13 19 0 Marnie 13 14 2/move farmer 0 -1 0/removeQuest 21/removeItem 78/friendship Marnie 100/skippable/emote Marnie 16/speed Marnie 4/move Marnie 0 -1 2/speed Marnie 4/move Marnie 2 0 2/speed Marnie 4/move Marnie 0 3 2/move Marnie -2 0 2/pause 300/speak Marnie \"Oh! You brought the cave carrot! Thank you so much, ${Mr.^Ms.}$ @.$h\"/pause 500/move farmer 0 -1 1/faceDirection farmer 1/pause 500/playSound woodyStep/addObject 14 17 78/showFrame 35/pause 500/showFrame 6/pause 400/faceDirection farmer 1/move Marnie 1 0 2/emote Marnie 32/speak Marnie \"This looks great... I almost want to eat it myself!$h#$b#...almost.\"/faceDirection farmer 1/pause 600/speak Marnie \"I hope it wasn't too much trouble... I really do appreciate it.\"/pause 300/removeObject 14 17/pause 400/end dialogue Marnie \"Thanks again for helping me out.$h#$e#...and my goats say 'thanks' too.\"",
+      "translation": "jaunty/13 17/farmer 13 19 0 Marnie 13 14 2/move farmer 0 -1 0/removeQuest 21/removeItem 78/friendship Marnie 100/skippable/emote Marnie 16/speed Marnie 4/move Marnie 0 -1 2/speed Marnie 4/move Marnie 2 0 2/speed Marnie 4/move Marnie 0 3 2/move Marnie -2 0 2/pause 300/speak Marnie \"Jé! Přinášíte jeskynní mrkev! Moc vám děkuji, ${pane^slečno}$ @.$h\"/pause 500/move farmer 0 -1 1/faceDirection farmer 1/pause 500/playSound woodyStep/addObject 14 17 78/showFrame 35/pause 500/showFrame 6/pause 400/faceDirection farmer 1/move Marnie 1 0 2/emote Marnie 32/speak Marnie \"Vypadá skvěle... Skoro mám chuť ji sníst sama!$h#$b#... skoro.\"/faceDirection farmer 1/pause 600/speak Marnie \"Doufám, že s tím nebylo moc potíží... Opravdu si toho vážím.\"/pause 300/removeObject 14 17/pause 400/end dialogue Marnie \"Ještě jednou děkuji za pomoc.$h#$e#... a moje kozy také vzkazují ‚děkujeme‘.\"",
+      "sourceSHA256": "ab7ca50eaab5f922cdb5851b926a87f587c328d4dc3f238fb479548b245a879f",
+      "translationSHA256": "47067f56fe7310207aabeb7b99a7d7434104aee4ef81dcd5987d0ab7797d4a8a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

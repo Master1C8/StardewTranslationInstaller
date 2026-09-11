@@ -1,0 +1,28 @@
+{
+  "id": "409-harvey-pilot-dream",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all eight visible segments against English; verified Harvey's gentle and self-conscious voice, childhood pilot dream, eyesight and fear-of-heights context, accepting reflection, model-airplane terminology, TR-Starbird name, emotional markers, placeholder and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/HarveyRoom",
+      "key": "normal",
+      "field": null,
+      "source": "pause 400/speak Harvey \"Sorry I'm all disheveled... I didn't know you were coming over.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Hey, I think I hear a plane overhead...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, get over here!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Look!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"As a kid, my dream was always to be a pilot.\"/pause 1000/speak Harvey \"...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"It's okay... don't be sad.#$b#I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.\"/pause 1600/speak Harvey \"Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end",
+      "translation": "pause 400/speak Harvey \"Promiň, že vypadám tak rozcuchaně... Nevěděl jsem, že přijdeš.$h\"/move farmer 0 -2 0/pause 600/speak Harvey \"Hej, myslím, že nad námi slyším letadlo...\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"@, pojď sem!\"/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \"Podívej!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"Jako kluk jsem vždycky snil o tom, že budu pilotem.\"/pause 1000/speak Harvey \"...Ale kvůli špatnému zraku a ochromujícímu strachu z výšek se ten sen začal rozplývat.$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \"To nic... netrap se.#$b#Naučil jsem se přijmout své místo v životě. Ne každý může dosáhnout svých snů... tak už svět funguje.\"/pause 1600/speak Harvey \"Hej, ukážu ti svoje modely letadel. Právě jsem dokončil novou luxusní stavebnici TR-Starbird.$h\"/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end",
+      "sourceSHA256": "54a831d5be4dd984b085ccdfe373c777452ea2e7638b776fb112916912a3b8a2",
+      "translationSHA256": "0e569998385e5863637573bcd199a0397eb0158f64cdb9d9c6f589845b480bfb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "95/e 93/k 94/t 1800 1950/i 136/y 2": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0 Kent 3 15 1/removeItem 136/removeQuest 22/pause 300/faceDirection Kent 2/speak Kent \"Ahoj, @. Pojď dál.\"/move farmer 0 -3 0/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Ach, @, jsem moc ráda, že tě vidím! A máš s sebou rybu! Báječné.\"/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Kent 1/faceDirection Jodi 1/speak Jodi \"Same! Pojď mi prosím pomoct očistit tu rybu.\"/pause 300/speak Sam \"...Ano, madam.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 500/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/speak Jodi \"Páni, vypadá nádherně... a voní tak čerstvě! Moc děkuju za všechnu tu práci, @.#$b#Kent také chytil rybu, ale sám sní skoro celou!$u\"/pause 200/faceDirection farmer 3/pause 1000/speak Kent \"Heh heh.$h\"/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... ten křupavý okoun velkoústý byl výtečný! Ta krusta byla přímo božská...\"/pause 500/message \"Teď už skoro mám pocit, že do rodiny patřím.\"/pause 1500/end warpOut",
+        "94/e 93/k 95/t 1800 1950/i 136/y 1": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0/removeItem 136/removeQuest 22/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Ahoj, @! Pojď dál! Je to vůně čerstvé ryby?\"/move farmer 0 -3 1/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Jodi 1/speak Jodi \"Same! Přijdeš mi pomoct s večeří?\"/pause 300/speak Sam \"...Ano, madam.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 300/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/pause 400/speak Jodi \"Páni, tohle vypadá jako kvalitní okoun velkoústý, @. Moc děkuju, že ho máš s sebou.$h\"/pause 1000/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... ten křupavý okoun velkoústý byl výtečný! Ta krusta byla jako z jiného světa...\"/pause 500/message \"Teď už skoro mám pocit, že do rodiny patřím.\"/pause 1500/end warpOut"
+      }
+    }
+  ]
+}

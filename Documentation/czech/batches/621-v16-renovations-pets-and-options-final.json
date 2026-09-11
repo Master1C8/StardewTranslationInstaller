@@ -1,0 +1,617 @@
+{
+  "id": "621-v16-renovations-pets-and-options-final",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full 32-row final-asset EN/CS review completed; every renovation triplet, pet workflow, profession effect, option label and warning is complete, locked terms for Tvrdé dřevo, Miska pro mazlíčka, Stáčedlo mízy, Houbový špalek, Lebeční jeskyně and Talisman are consistent, and all placeholders, percent markers and slash fields match.",
+  "rows": [
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_AddCubby",
+      "field": null,
+      "source": "Add Cubby/Adds a little cubby next to the front door./Select an area for the renovation.",
+      "translation": "Přidat výklenek/Přidá malý výklenek vedle hlavních dveří./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "317a6f0cab7c5d327ba5a9c991c44c886233e9f3b3aee93ef36b8966ea6a3bc0",
+      "translationSHA256": "e0ef9fd951b46d429432c844c74ec2a3269660fe1915a60ae927ca4b198ed52d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_RemoveCubby",
+      "field": null,
+      "source": "Remove Cubby/Removes the little cubby next to the front door./Select an area for the renovation.",
+      "translation": "Odstranit výklenek/Odstraní malý výklenek vedle hlavních dveří./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "0dff58b5c74f10fef0db1199946fdcbe2c8ce191bb105382db49e8df63470f27",
+      "translationSHA256": "09290e6473054499b74e12949138088d08c940f5ce71e09d65c7c07cf3068459",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_AddAttic",
+      "field": null,
+      "source": "Add Attic/Adds another staircase up, and a room at the top./Select an area for the renovation.",
+      "translation": "Přidat podkroví/Přidá další schodiště nahoru a místnost v horním patře./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "e2bc8e5c5277be6561233bf733bd350a0ba03f65e2285b392cfc7e1c2183ce7e",
+      "translationSHA256": "a2143a0dd52949b6a2a44db8b4ad360290ec885f2a89a9c4d43f0a9202206fbf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_RemoveAttic",
+      "field": null,
+      "source": "Remove Attic/Removes the attic./Select an area for the renovation.",
+      "translation": "Odstranit podkroví/Odstraní podkroví./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "123b3ad8cb8556cc60392f78bc37c070d4835ad91bc3c8825b5eb9f06fab336c",
+      "translationSHA256": "876d9c68b68e13b1376c6614edd7c4b00625275f81a3fa716aee9ffab31d50c4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_AddExtendedCornerRoom",
+      "field": null,
+      "source": "Expand Corner Room/Extends the corner room, adding a large new area./Select an area for the renovation.",
+      "translation": "Rozšířit rohovou místnost/Rozšíří rohovou místnost o velký nový prostor./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "3a1aaa2b9ced8bf11a53a890598f70dfe5fa42a5027e349a6ecac37098231a32",
+      "translationSHA256": "8fb8c678176ab6da8780c13a67f9dd210e50b37233048b582106bc7e50ae7005",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_RemoveExtendedCornerRoom",
+      "field": null,
+      "source": "Shrink Corner Room/Removes the expansion to the corner room, returning it to its original size./Select an area for the renovation.",
+      "translation": "Zmenšit rohovou místnost/Odstraní přístavbu rohové místnosti a vrátí jí původní velikost./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "1b82e4e7961cbb72da73212d5b1d9249449c335e512a28025f906f869d68a116",
+      "translationSHA256": "f7877d94ecd870871a525bd325c9988a298f838ed01b1018cf3ace04dd4da01e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_OpenDiningRoom",
+      "field": null,
+      "source": "Open Dining Room/Removes the wall between the dining room and kitchen./Select an area for the renovation.",
+      "translation": "Otevřít jídelnu/Odstraní zeď mezi jídelnou a kuchyní./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "a25e68bcd509796d6277ddb142c72db242a2b5e306ab82a6e2cf0d9295fb164e",
+      "translationSHA256": "908968b95fac7995c970a18e8c1a8259f52de078eea2cbfa0ce774e57bcec926",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Renovation_CloseDiningRoom",
+      "field": null,
+      "source": "Close Dining Room/Restores the wall between the dining room and kitchen./Select an area for the renovation.",
+      "translation": "Uzavřít jídelnu/Obnoví zeď mezi jídelnou a kuchyní./Vyber oblast pro rekonstrukci.",
+      "sourceSHA256": "c2f37df8b63363917485874030f05884871472a9256eed06f3749fd098f2ffef",
+      "translationSHA256": "070c4af25abb8760c1786f4104a71ac66be040c0edfe48da982f37b7c8d315b4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Marnie_Pet_Adoption",
+      "field": null,
+      "source": "These sweeties could use a good home...",
+      "translation": "Tihle miláčci by potřebovali dobrý domov...",
+      "sourceSHA256": "c71906210d94b3213912dd0f2f4f703d50243b32b7b9a20e838fa55894caf7c2",
+      "translationSHA256": "69ef8af5429bc5918a4d4a8f965e02b24a279fed569326c7c6a0c96cdec2c193",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "AdoptPets",
+      "field": null,
+      "source": "Adopt Pets",
+      "translation": "Adoptovat mazlíčky",
+      "sourceSHA256": "19f0e1938f086f11240fe4ea056d06606aa0e563d36610ce423cf62443595eae",
+      "translationSHA256": "e432026aefc1578db9a579bb6aaff4f5577fa875fe2c9d918e11d563a2f50e3f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "AdoptedPet",
+      "field": null,
+      "source": "Your new pet '{0}' has been sent to your home.",
+      "translation": "Nový mazlíček „{0}“ už míří k tobě domů.",
+      "sourceSHA256": "a722cf018e7a659fc5f62856e565160ff693e3a8a8ec15cd3d0e4d97988b1b38",
+      "translationSHA256": "cfaff913a138a0bee7a124a9684f7a10033f0e28e5401f78a896429f4b30feee",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "AdoptedPet_Marnie",
+      "field": null,
+      "source": "Great! I'll send little {0} to your home right away.$h",
+      "translation": "Skvělé! Mazlíček {0} hned poputuje k tobě domů.$h",
+      "sourceSHA256": "56634affc96dc7036930cb4ab9bbde6dac753219eb7938e5914f48fb41ec2efc",
+      "translationSHA256": "ad1714e9506c476be05d947f3193632a516dc580eb206f401642a20c459693f6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "ButterflyPowder_Question",
+      "field": null,
+      "source": "Are you sure? {0} will be permanently removed from your farm.",
+      "translation": "Určitě? Z farmy bude natrvalo odstraněn mazlíček {0}.",
+      "sourceSHA256": "4dfd97d860407d23ca35d3e5f37e61c4f1cc2bd3eb532d49186f651eefe8d324",
+      "translationSHA256": "6ae231aaf177279d8a9e70b1530b56e7a6c3edabf783876377c788ccecf1747e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "ButterflyPowder_Goodbye",
+      "field": null,
+      "source": "Goodbye, {0}...",
+      "translation": "Sbohem, {0}...",
+      "sourceSHA256": "50e008b00726c5166f98e9855785a4d3dd0b7e2fd90ffff03a84899fbe0ab1fe",
+      "translationSHA256": "026be1d3e8d06034f21a6e07eef25d897fcf0551fcb7d105906cef7ba4dd50be",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "FestivalTentWarning",
+      "field": null,
+      "source": "Tomorrow is a festival.",
+      "translation": "Zítra se koná slavnost.",
+      "sourceSHA256": "dd43136d11b3def57aad14a8268e7ddc81ab29cf5fe92b36ac4568f63d8dd321",
+      "translationSHA256": "19386f02269894447677ea4cf919b0f3f097857e50f013b7b367401c50f0313e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "PetBowlName",
+      "field": null,
+      "source": "{0}'s Bowl",
+      "translation": "Miska mazlíčka {0}",
+      "sourceSHA256": "7b8b1cc59f5790977cf435086d03cd7823d14a8a4def408e953402d530ba272a",
+      "translationSHA256": "77c12f02b80cac55eebcdda0a705bbef5fab9c305a0f21a03d613d797a4ffb3d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "TrashCatalogueDescription",
+      "field": null,
+      "source": "Access a free supply of trash decorations. Wash hands after use.",
+      "translation": "Poskytuje bezplatný přístup k zásobě odpadkových dekorací. Po použití si umyj ruce.",
+      "sourceSHA256": "531567b5266ae9d91481b110f4300d87ab1c0f51cd280932f625f8113a45cd7a",
+      "translationSHA256": "421a149353fe08f9b4674bd20ed3afde098a00063637ed402376732b74db1d2f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "GameMenu_Animals",
+      "field": null,
+      "source": "Animals",
+      "translation": "Zvířata",
+      "sourceSHA256": "85c3f9fa6f300eea6f1e388a6f988f52e2cc968d344ea763e92e4bce9c7292f0",
+      "translationSHA256": "41532b4ebcf29b4f49c0d868db890ee78bec4d84592f704e793778ca6db85de0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Pam_busSign_generic",
+      "field": null,
+      "source": "I'm off duty today, kid! You'll have to drive yourself.       -Pam",
+      "translation": "Dneska mám volno, děcko! Autobus si musíš odřídit beze mě.       – Pam",
+      "sourceSHA256": "27e796121b8d31704723b89f3d2da992828868c63c66347c0f762a394cdd08e5",
+      "translationSHA256": "2e5b8c7c3afcd5e4a97d4d7687b3c7de05c9b03a96fcefa453e0727d13ae5fa5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Anvil_wrongtrinket",
+      "field": null,
+      "source": "This trinket cannot be re-forged.",
+      "translation": "Tento talisman nelze překovat.",
+      "sourceSHA256": "f1fa6bc0f0521d90ec7e4d245f03184667183ca7f729072469c5ee18de5bb58f",
+      "translationSHA256": "1ae1fe5884c5b4a623c629ab870fc88be3c2babd19927c4981890150a621966b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Mastery_newlevel",
+      "field": null,
+      "source": "You've reached a new level of understanding...",
+      "translation": "Dosahuješ nové úrovně poznání...",
+      "sourceSHA256": "f8566b4da55e804c425aac9bf696c8fcaeb6b941bbaa73b8d1e7c15bca1fedfd",
+      "translationSHA256": "82bbf26344782ecf71253d61a021b8d1ddfff00c4162010d5e28c67ff816b5db",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "options_menubg_0",
+      "field": null,
+      "source": "Standard",
+      "translation": "Standardní",
+      "sourceSHA256": "ef6691545d2c5523efed00424407cb261aeb0037d165ca5792f7f8bac3381362",
+      "translationSHA256": "3a56fbe8fb554d134fb8c22c9209827161d255dd4abf5fff7c1978419db985ba",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "options_menubg_1",
+      "field": null,
+      "source": "Graphical",
+      "translation": "Grafické",
+      "sourceSHA256": "d76b10622a0cca54c92b2ebc997f914c781d16bdbbed2f3cf05c7d4ba7f8226a",
+      "translationSHA256": "efc1697be5b909bf71d11cca809aa7977ae81ce9beb656043f5ec1a74a8d6849",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "options_menubg_2",
+      "field": null,
+      "source": "None",
+      "translation": "Žádné",
+      "sourceSHA256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "translationSHA256": "ac06993bf0334b32f9c387937e1a40a5ea06110a02afd91173f64546bc449be0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "tapper_profession_possible",
+      "field": null,
+      "source": "+1 tapper output per harvest.",
+      "translation": "+1 produkt ze Stáčedla mízy při každém sběru.",
+      "sourceSHA256": "e354f94aec5df716ca7a786ad2e72fce5869a0807ce19a0890a2f08659933239",
+      "translationSHA256": "4f45478a8e6054e25d1106dd3fe26bc53e2b16ee79f80857344c185b184fcafb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "forester_profession_possible",
+      "field": null,
+      "source": "Mushroom logs and boxes have a {0}% chance to produce double.",
+      "translation": "Houbové špalky a houbové krabice mají {0}% šanci vytvořit dvojnásobné množství.",
+      "sourceSHA256": "d444cd00b4106a88e85a4a45ff3affa99f3d7143ea7427bd8f79fe2601bc21d9",
+      "translationSHA256": "1edf1ac067a884187c2a020f35e010779e9575f5d6e82c5a42f66830ee26571d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "lumberjack_profession_possible",
+      "field": null,
+      "source": "Removing a wild tree stump always produces a seed.",
+      "translation": "Při odstranění pařezu divokého stromu vždy získáš semeno.",
+      "sourceSHA256": "ff6ef0c19e5c22dc5c35236dcad40e237d736c91bdfbbe5569a3f4831bb225ac",
+      "translationSHA256": "14d221c9d03d816e257168f6b5dd2c7442aa07584b8d75d576c80419ee46a1e4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "SkullCaveKickWarning",
+      "field": null,
+      "source": "Any players currently inside the Skull Cavern will be removed. Do you want to proceed?",
+      "translation": "Všichni hráči, kteří jsou právě v Lebeční jeskyni, budou přemístěni ven. Chceš pokračovat?",
+      "sourceSHA256": "76ec21ba3e8b8c0e95f693176dcf17411f9fd3d00991fa1ab1b1bd016d64651a",
+      "translationSHA256": "7acc66cafb0e5eff06a690b36d8df015d7a3397e7f814d8410b4bbca46ebdd45",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "ChooseBobber",
+      "field": null,
+      "source": "Bobber Style:",
+      "translation": "Styl splávku:",
+      "sourceSHA256": "85397e1d763272059b6986a8a10c4b34bdb001937bbf472f52a9eec3bd214320",
+      "translationSHA256": "97e35a2d5aa1285b7e80620102706427d70f3ffe9607b1b69af4b546c3f38cf6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "FirstCatch",
+      "field": null,
+      "source": "First Catch!",
+      "translation": "První úlovek!",
+      "sourceSHA256": "6f8990ca3a6bf8b83427ebe8fb215758a9940475db6c5e8f46aa94f84216aa21",
+      "translationSHA256": "c8435b8944fff68a03f42b4b25a4551962ca0d5987836bd5f5ef7b4e908aac1d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Trinket",
+      "field": null,
+      "source": "Trinket",
+      "translation": "Talisman",
+      "sourceSHA256": "ae23c10ce73df3c95f54835e819ce1f8a0e7d7c348cad46662f78e48bce99801",
+      "translationSHA256": "6d015df4f46c068378a1571e9d958befc17842a1441068d41f7363bc8cafa96d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "LearnedANewPower",
+      "field": null,
+      "source": "You've learned a new power!",
+      "translation": "Získáváš novou schopnost!",
+      "sourceSHA256": "15c33368387bdf0ba86a6ebdc650510afd53e9e1d44dcd6d67884f6a855782e7",
+      "translationSHA256": "2fd9de3716f444f3f6d9ba1c70995fb243d8f856388a97b0cc727f97b4d3aca2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

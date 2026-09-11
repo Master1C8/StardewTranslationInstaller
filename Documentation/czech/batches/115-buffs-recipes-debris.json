@@ -1,0 +1,903 @@
+{
+  "id": "115-buffs-recipes-debris",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 47 pairs twice. Cross-checked the buff name/description roles and debuff/effect context against the original Data/Buffs export; verified noun-form player-neutral status labels, Yoba and garlic wording, exact leading/trailing spaces, and the established skill/stat terms. Checked all eight recipe ingredient categories, fallback item labels, full-inventory message and ten debris resource names; Iridium has a specific justified same-spelling preservation.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.453",
+      "field": null,
+      "source": "Burnt",
+      "translation": "Popálení",
+      "sourceSHA256": "a78f6e8d747f80cbd0947bb44568a04d95d45833cb148cb8bfe23312e75bc82e",
+      "translationSHA256": "70b0f2b58344ff639bf186d65eb2ca44d779ac9b67214ebdd7b14198b4b16e6b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.456",
+      "field": null,
+      "source": "Full",
+      "translation": "Nasycení",
+      "sourceSHA256": "008dacb6d1e85bd8c0ae9661c4472810ef75537f690dd75d77fc74ca62f78fec",
+      "translationSHA256": "7c5fabb7037e14517fecd4b2be75072adea385efb3f46625281f6b31b28bd669",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.457",
+      "field": null,
+      "source": "Quenched",
+      "translation": "Uhašení žízně",
+      "sourceSHA256": "1d2055ff57c189f408b43bf46be7fbcc9d73bdfb92a6e4bebe5d94820f7864e0",
+      "translationSHA256": "38af04a968c0d5cde7a11b74a153ea018c1668a7e21a7724dc250faee6377be3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.458",
+      "field": null,
+      "source": "Tipsy",
+      "translation": "Podnapilost",
+      "sourceSHA256": "64879e33e2a36964723b4a73a588ec751cc18d316710324bbd1ba28270e57879",
+      "translationSHA256": "beaf9d2d4bbdb0a64aab0610bebeca704ad2eb2a34501e197d850049ee916427",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.460",
+      "field": null,
+      "source": "Slimed",
+      "translation": "Pokrytí slizem",
+      "sourceSHA256": "5575ec78f741b82b269aa549c5709d602ff883e2ddd1fd64a4365b9896c8a94a",
+      "translationSHA256": "d2559c0e77a677519a8123bef739ab300dc252696ec8865ba41f33e5f8abf97a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.462",
+      "field": null,
+      "source": "Spooked",
+      "translation": "Vyděšení",
+      "sourceSHA256": "e30d96143f810d654b68e5fe0a8f67001f7109225829824796cd7d21e239181d",
+      "translationSHA256": "556db8bfdc6a836739916f9814119879a2fc69bb04dab64eb3140ec2e7bf5457",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.464",
+      "field": null,
+      "source": "Jinxed",
+      "translation": "Prokletí",
+      "sourceSHA256": "b1abf1c9a8a5293d708bddc497c5328f94e495e3285eda1dd4dd7ef7ab6d264e",
+      "translationSHA256": "489e1e062aa88840e69f92a7a88761a8cc3283a2a3b48ef3463decc2d8dfacb2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.466",
+      "field": null,
+      "source": "Frozen",
+      "translation": "Zmrazení",
+      "sourceSHA256": "8fdac69c6fe9cdbc7838eb4a48aa6f6bcfc35088370847233061054f30f25b34",
+      "translationSHA256": "a357e4f036ca2af0d513d0ba1d82c884608d068cdb24739cf5311e3b0322d8a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.468",
+      "field": null,
+      "source": "Warrior Energy",
+      "translation": "Energie válečníka",
+      "sourceSHA256": "799af79c902531f0914dea4857b785f88d0614e98c6f9885c648cffd8535d4ac",
+      "translationSHA256": "d19b9292039ec4f58fd89d317faab75234969017625e80b363b013b7c4d41543",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.470",
+      "field": null,
+      "source": "Yoba's Blessing",
+      "translation": "Yobovo požehnání",
+      "sourceSHA256": "8fba63b73444898510eeddf8b4cf241b4de49bff07806b01ba1cbb72996f09bd",
+      "translationSHA256": "efeef2c30d42c7d7832c2dbec5f5df7dfab7d3f7db4c47c2b07ca8bc999baedc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.471",
+      "field": null,
+      "source": "Invincible",
+      "translation": "Nezranitelnost",
+      "sourceSHA256": "7aa17b13c72fd0864654ea3883ccaf4a171d5b43700a78026b0891c41910ae73",
+      "translationSHA256": "fd4bbfc61aaecfa377de701bb36ad235548876c0275f2d75e5ce26a2d568bb19",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.472",
+      "field": null,
+      "source": "Adrenaline Rush",
+      "translation": "Příval adrenalinu",
+      "sourceSHA256": "cd2f6d85c92e4169f867be79988c5ec0a55a09c6029ec286b65c144dc210c263",
+      "translationSHA256": "d452c1feaf799f8c82e8ee353114fb81ec94827904e605e785be8ad4c394fa7c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.474",
+      "field": null,
+      "source": "Oil of Garlic",
+      "translation": "Česnekový olej",
+      "sourceSHA256": "4a5c306b2bc708bba028409f9ec5f88d50e20baa16ef3eecd0bbc0cd1d3f0b3b",
+      "translationSHA256": "f7518325c5ee9ce87589fdc57b9442cd5e9d6ea363a39fadcbb933e91b2e4f2b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.475",
+      "field": null,
+      "source": "Your skin exudes a pungent aroma",
+      "translation": "Z vaší kůže se line štiplavý pach",
+      "sourceSHA256": "dfe7030b8e50635adfa06d2443d1208295f8cfeb75ea7c09093dae4f798949bd",
+      "translationSHA256": "ce96f7dae44f45de74cfb2f4c490feb4acc07d1a3d81e0cb3afea342b9263af0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.476",
+      "field": null,
+      "source": "Duration: ",
+      "translation": "Trvání: ",
+      "sourceSHA256": "43d4682b1f6810837d80f48f81f61c9975d8147dc6a8c9fff06304ddca4b6472",
+      "translationSHA256": "08c0f30723afabc2435fd493380a9f8eebd2fea5337bb715fc9f008038b9efbe",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.480",
+      "field": null,
+      "source": " Farming",
+      "translation": " Zemědělství",
+      "sourceSHA256": "f32eaf895eb6a7a52693e1df05a86756bb7a44366aaf66e6ad7570975da99eb1",
+      "translationSHA256": "2a36f626f498ba3966298686de1858817e96140bff729db570ff51f049ff2263",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.483",
+      "field": null,
+      "source": " Fishing",
+      "translation": " Rybaření",
+      "sourceSHA256": "172ebcd256ecc155732a2dae865f423c66036e3331acd130de94e18654f38052",
+      "translationSHA256": "ea0a5accaf643d14b52a05ee104322bbe0421e512b88b598756087bff2428315",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.486",
+      "field": null,
+      "source": " Mining",
+      "translation": " Těžba",
+      "sourceSHA256": "8efc3c35a25b2b75a2d8aa6b9721490a146d1d620d4f769f4d200529371fb6d6",
+      "translationSHA256": "2e303d2ca17f6c16c3eea37c3ab0cb0f0c15bf93fa0637d3d22a12a208c5805a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.489",
+      "field": null,
+      "source": " Luck",
+      "translation": " Štěstí",
+      "sourceSHA256": "3d860b1a5616408d53b3459d610159450cd7c1a84c66dd53a195204c643ea867",
+      "translationSHA256": "4428a421c654dfa9577f4caa7b4bd09a2eec938c6f1cbc5eeef0a82ff81a974b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.492",
+      "field": null,
+      "source": " Foraging",
+      "translation": " Sběračství",
+      "sourceSHA256": "99b9ff841d5aa109bb7be5cef98ac5e527b818a351f62ab7315ba11071fbe66f",
+      "translationSHA256": "3d2f12998c3ab9f844630a4e49d02e03d107c0cb6f052c3c25cd564249124a34",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.495",
+      "field": null,
+      "source": " Max Energy",
+      "translation": " Max. energie",
+      "sourceSHA256": "8db6fe74138a8c0fe623dd82a6d4ac1ffe3434ca8e0062d94dff8aab791bc253",
+      "translationSHA256": "82c0b51ff53e836884137ca716801c43f24fa11a59e8cd3757231bc329a2aabf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.498",
+      "field": null,
+      "source": " Magnetic Radius",
+      "translation": " Magnetismus",
+      "sourceSHA256": "c921efa86f18324ad6ce325fc4f193807540a304632eb63aaf13cd0d6c55889f",
+      "translationSHA256": "9388a3b2269403ebd091427643de0e9b06ee8921cf683a4f7d43ec104147041d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.501",
+      "field": null,
+      "source": " Defense",
+      "translation": " Obrana",
+      "sourceSHA256": "1fb51355a7c8d5725e0a8208d7b5b69ebcaa67e07956ba536c767e48ee3454e2",
+      "translationSHA256": "3b0cb3c885ee6d6dc75a3b4de953be78504804b9cd89a514a6bce050c7e8cb5d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.504",
+      "field": null,
+      "source": " Attack",
+      "translation": " Útok",
+      "sourceSHA256": "404ba96ff970f65851f9214c062073fb0992f0cead062a5d13dd29a429bdee12",
+      "translationSHA256": "ad54685e77c18916ef55e1ffef135049827f3d596c6515d58a6cdd5d2f372572",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.507",
+      "field": null,
+      "source": " Speed",
+      "translation": " Rychlost",
+      "sourceSHA256": "c18b440ed5265a21096df1b4bb197149880daa7594997211a22c4bdc141e3cff",
+      "translationSHA256": "2bf8baf6401e1fb9ffba5b1c3adc1ee3e1e9cdac2ff89c23f80adc228e5febf0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Buff.cs.508",
+      "field": null,
+      "source": "Source: ",
+      "translation": "Zdroj: ",
+      "sourceSHA256": "1a5ac0bd0b6b5765b31354264a6dac2c517f709a3a092230cb2c4fae34b4a88f",
+      "translationSHA256": "ed6b5153bd9aaa875f80d4125e4d013d625b7ad589f52dc0ea9bc575c48bfaa8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.567",
+      "field": null,
+      "source": "Ingredients:",
+      "translation": "Ingredience:",
+      "sourceSHA256": "181b526eb39cac0d0467bd58a40614d5088f9768821bd8139b42be6f20f1e7a1",
+      "translationSHA256": "c31b81835bc3ae168f98a7d725745a48980203a0b16e32c583582d08373321c8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.568",
+      "field": null,
+      "source": "Greens (Any)",
+      "translation": "Listová zelenina (libovolná)",
+      "sourceSHA256": "4405fa8a00659035f67f1921e10bdbce06f1be59d4332fa165de5cc4e4b7b1e1",
+      "translationSHA256": "2398bfe9973af8ead161e30d414133e1f348faf7aaf9cea721e395da168ecc7a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.569",
+      "field": null,
+      "source": "Gem (Any)",
+      "translation": "Drahokam (libovolný)",
+      "sourceSHA256": "aeabd58af4544080f87229e0859789a3981a49257457b2d813ca6a10b8e9858f",
+      "translationSHA256": "6c27b5c7211ba231a92ad44601961a4ff01c961bd9448801ae352cc0a30839fd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.570",
+      "field": null,
+      "source": "Vegetable (Any)",
+      "translation": "Zelenina (libovolná)",
+      "sourceSHA256": "40e5a6ed87ae356ab2f0fab5a8108f609a72d063ebfaa054e5bae45986433e5e",
+      "translationSHA256": "8169e3a2fd153f786395b5d8a464798b68b735b6e21b63a19144f22a88749e8b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.571",
+      "field": null,
+      "source": "Fish (Any)",
+      "translation": "Ryba (libovolná)",
+      "sourceSHA256": "df4c0db1d449c320568b0e0d7e0a000e14cba76a5c3dc0678a129c57d7321f99",
+      "translationSHA256": "7fd4fdb6d2c6c731b7b132540913af082fdde590ddaceff0d46c397d368ab648",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.572",
+      "field": null,
+      "source": "Egg (Any)",
+      "translation": "Vejce (libovolné)",
+      "sourceSHA256": "53f4551ecee4d422bf625114c52bd56d37c9dcbedbbe687154f336ca52d0992e",
+      "translationSHA256": "06eeaf44be0401b58df2cbd98d1b958b854339b98893d0a7483a2e238fc7e1a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.573",
+      "field": null,
+      "source": "Milk (Any)",
+      "translation": "Mléko (libovolné)",
+      "sourceSHA256": "e86ca32c8ca8dd3b6582cacdd8e61e913150329abf6ae5a5a66bf5a58d76b7bc",
+      "translationSHA256": "c1421c9bf8abfaa94392974ec723d73bc250b286e1fd5ac24f15893554dccbd6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.574",
+      "field": null,
+      "source": "Wild Seeds (Any)",
+      "translation": "Planá semena (libovolná)",
+      "sourceSHA256": "9268181d7bb1136e5f722cc0a96d9a5972cad588da2e6fec0370cf9accefd113",
+      "translationSHA256": "277d1376cfc751f5ca07f7de31bfdc99ca429ba78d1c0ee147e1a77b3a196f80",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CraftingRecipe.cs.575",
+      "field": null,
+      "source": "Error Item",
+      "translation": "Chybný předmět",
+      "sourceSHA256": "48682b62f1258cb8fe0873620a7d493fcdc6c42ee7393ae8ebb3f32d92f21b1c",
+      "translationSHA256": "318c2fbb7f31c15af2e477a51004ce00545e96f4867e81ba9e4cb49ab0c08dd9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "UnnamedItem",
+      "field": null,
+      "source": "Unnamed Item",
+      "translation": "Nepojmenovaný předmět",
+      "sourceSHA256": "d6aea056f6bf6badb050b446b457d6d82b563b713deeb461abca1f18236a7344",
+      "translationSHA256": "7801bdaeea209acc00ce04d309e0c5847907d5dcc254227590eb39e345130add",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Crop.cs.588",
+      "field": null,
+      "source": "Inventory Full",
+      "translation": "Inventář je plný",
+      "sourceSHA256": "370859dab59b0eaef5dd8adc2ae7a3e17546088d56096ab5393084886c36110e",
+      "translationSHA256": "41ab131f408afd1ef8a5b9a4113029058142a9a4da6c4a727a7ba84421c4a166",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.621",
+      "field": null,
+      "source": "Copper",
+      "translation": "Měď",
+      "sourceSHA256": "d35b0efe21288fd59dac3436ab3bd1c3b741261ef75b8b2af53ad8eb881f0c04",
+      "translationSHA256": "174f3e839bcdd687c39eb2bb0a2a47ed208506d74349bb6119c56377b05c4247",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.622",
+      "field": null,
+      "source": "Iron",
+      "translation": "Železo",
+      "sourceSHA256": "bd223c81de7e86da43eee0f9abf0b2b87e7a9b0ad3b6e215ee55e68d49b31ba9",
+      "translationSHA256": "d96812450d8ffab336ccdc0dd276d6a4de0ac66c71083de4a11b6a57f950f276",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.623",
+      "field": null,
+      "source": "Coal",
+      "translation": "Uhlí",
+      "sourceSHA256": "4cc1d6e9f8574bb528cdd79cae8787905a88a115135a173257caa65f51f12104",
+      "translationSHA256": "2fef190f9301bbe5937ccd08a8f44ce1205478abce176be0de996fdc39dc6547",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.624",
+      "field": null,
+      "source": "Gold",
+      "translation": "Zlato",
+      "sourceSHA256": "6249df4367d0a2e088c8eb1117ef59430f0d7dad4bf0fcf8a01d7f0415f4d511",
+      "translationSHA256": "f47a0c5c4d2df194ffadd4c019f1276d6d3f6149e0afee21c691cfca15e1f76b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.625",
+      "field": null,
+      "source": "Coins",
+      "translation": "Mince",
+      "sourceSHA256": "7ae57d9d0e8c44f9756c2b5531af3a47f624de1067be52dd373688ba7a8ab2a8",
+      "translationSHA256": "9439643a92ce3aa577a5245bd9a95c5904afb298845c752a4be6c8c4e229fd2c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.626",
+      "field": null,
+      "source": "Iridium",
+      "translation": "Iridium",
+      "sourceSHA256": "3113c496c4544abb4b18ea53fcfb886e751ae964e3d0aa35038720b165fc8c2b",
+      "translationSHA256": "3113c496c4544abb4b18ea53fcfb886e751ae964e3d0aa35038720b165fc8c2b",
+      "preservationReason": "Iridium is the established Czech material name and is spelled identically to the English source.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.627",
+      "field": null,
+      "source": "Wood",
+      "translation": "Dřevo",
+      "sourceSHA256": "731140284eac4aca18aa8cfd15ad56f45d4423067910729caccaf21683e013e1",
+      "translationSHA256": "1a2473bbcb1e0fe8f238afe624259dd00c2d8ef7de72bb8039d40141c02a335c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.628",
+      "field": null,
+      "source": "Stone",
+      "translation": "Kámen",
+      "sourceSHA256": "6ffa6b8b1c9fa11cb67a0a54b7e3e175dfb7edcb8e8d322148a3b00affc4a842",
+      "translationSHA256": "5f4c45f074b8b2db54540793be28118c0df6e98953c9ddba82d8f93c725304eb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.629",
+      "field": null,
+      "source": "Fuel",
+      "translation": "Palivo",
+      "sourceSHA256": "a80f942f4112036dfc2da86daf6d2ef6ede3164dd56d1000eb82fa87c992450f",
+      "translationSHA256": "f7e88bddb30959d7c6afafbaac217a6fd92d4aba201c0c0c9649a178692555ec",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Debris.cs.630",
+      "field": null,
+      "source": "Quartz",
+      "translation": "Křemen",
+      "sourceSHA256": "6dbfeeb207b36340969e7258f1662ee6f3dd81c7dd9520cd7f12e16f8fa3989e",
+      "translationSHA256": "3f051b978c8ba4d411308bf3cb557d126e053d027d982a196d781f43caa78fd5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

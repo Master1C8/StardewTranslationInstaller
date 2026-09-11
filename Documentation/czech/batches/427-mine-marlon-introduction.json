@@ -1,0 +1,28 @@
+{
+  "id": "427-mine-marlon-introduction",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all five dialogue segments against English; verified Marlon's terse veteran voice, Doly and Cech dobrodruhů terminology, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Mine",
+      "key": "100162/t 600 2600",
+      "field": null,
+      "source": "MarlonsTheme/21 9/farmer -100 -100 0 Marlon 23 6 2/addQuest 14/skippable/pause 1000/move Marlon 0 2 2/pause 500/showFrame Marlon 4/pause 1000/speak Marlon \"Hmmm... \"/pause 500/warp farmer 18 13/playSound stoneStep/move farmer 0 -3 1/move farmer 5 0 0/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"...I was just peering down into this old mine shaft.#$b#It's been abandoned for decades.\"/pause 500/showFrame Marlon 4/speak Marlon \"Still, there's probably good ore down there.#$b#But a dark place, undisturbed for so long... I'm afraid ore isn't the only thing you'll find...\"/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"Here, take this. You might need it.\"/pause 500/playSound dwop/faceDirection farmer 1 true/pause 50/faceDirection farmer 2/itemAboveHead sword/pause 3300/awardFestivalPrize sword/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 500/speak Marlon \"Name's Marlon, by the way. I run the adventurer's guild right outside.#$b#I'll keep my eye on you. Prove yourself and I might think about making you a member.\"/pause 500/end",
+      "translation": "MarlonsTheme/21 9/farmer -100 -100 0 Marlon 23 6 2/addQuest 14/skippable/pause 1000/move Marlon 0 2 2/pause 500/showFrame Marlon 4/pause 1000/speak Marlon \"Hmm... \"/pause 500/warp farmer 18 13/playSound stoneStep/move farmer 0 -3 1/move farmer 5 0 0/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"...Zrovna jsem se díval do téhle staré důlní šachty.#$b#Je už celá desetiletí opuštěná.\"/pause 500/showFrame Marlon 4/speak Marlon \"Přesto se tam nejspíš najde kvalitní ruda.#$b#Je to však temné místo, tak dlouho ničím nerušené... a obávám se, že ruda nebude to jediné, co tam najdeš...\"/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"Vezmi si tohle. Mohlo by se ti to hodit.\"/pause 500/playSound dwop/faceDirection farmer 1 true/pause 50/faceDirection farmer 2/itemAboveHead sword/pause 3300/awardFestivalPrize sword/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 500/speak Marlon \"Mimochodem, jmenuji se Marlon. Vedu Cech dobrodruhů hned před dolem.#$b#Budu tě mít na očích. Dokaž, co umíš, a možná tě přijmu mezi nás.\"/pause 500/end",
+      "sourceSHA256": "3cd398e18bea9f7ae59431bdddaf5cc64991f745c214059599062b72f62a3049",
+      "translationSHA256": "3457c90fe0320df1e271e810d0fc64b483e3307d6d2c794abb4c8e3304c4ff34",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

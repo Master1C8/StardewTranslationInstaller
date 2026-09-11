@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "900553/t 600 1130/Hn ccPantry/A cc_Greenhouse/w sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"Dobré ráno, drahoušku.\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"Byla to příjemná procházka až sem... Tuhle starou farmu jsem dlouho neviděla.$s#$b#Vypadá ještě lépe, než si ji pamatuju!$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"Tady, přinesla jsem ti maličkost.#$b#Je to dárek... od jedné zahradnické duše druhé.$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"Získáváš ‚Květináč‘\"/pause 800/speak Evelyn \"Tyto květináče jsou opravdu praktické. Uvnitř v nich můžeš pěstovat plodiny z kteréhokoli ročního období!#$b#Také vypadají hezky venku... tam v nich však mohou růst jen sezónní plodiny.\"/pause 500/speak Evelyn \"Pokud potřebuješ další, dají se také velmi snadno vyrobit... Tady mám starý výstřižek z časopisu s návodem.\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"Teď umíš vyrábět ‚Květináč‘\"/pause 800/speak Evelyn \"Tak, raději půjdu. George bývá mrzutý, když nedostane ovesnou kaši včas...#$b#Měj se krásně, zlatíčko!$h\"/pause 500/end"
+      }
+    }
+  ]
+}

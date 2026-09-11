@@ -1,0 +1,29 @@
+{
+  "id": "356-desert-festival-player-killed",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed the full source-equal row; it contains no embedded player-facing text, showItemsLost renders separately localized UI, and every timing, actor and item-loss display command remains byte-for-byte exact.",
+  "rows": [
+    {
+      "target": "Data/Events/DesertFestival",
+      "key": "PlayerKilled",
+      "field": null,
+      "source": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "translation": "none/-100 -100/farmer -2000 -2000 2/pause 1000/showItemsLost/pause 200/end",
+      "sourceSHA256": "4a534ade8bf5b8360778ce93d5fa76388bc7de278bedf0d09768aaf6f889c4d4",
+      "translationSHA256": "4a534ade8bf5b8360778ce93d5fa76388bc7de278bedf0d09768aaf6f889c4d4",
+      "preservationReason": "Technical event with no embedded player-facing text; showItemsLost renders separately localized UI content, so preserve the event commands exactly.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

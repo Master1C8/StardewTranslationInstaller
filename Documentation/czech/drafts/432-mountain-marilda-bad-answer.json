@@ -1,0 +1,9 @@
+{
+  "id": "432-mountain-marilda-bad-answer",
+  "kind": "long",
+  "target": "Data/Events/Mountain",
+  "complexityReason": "Translate Maru's MarILDA follow-up after a hostile answer, preserving all three explanation choices, robot-personhood framing, player-neutral wording, emotional markers, and exact event commands.",
+  "entries": {
+    "BadAnswer": "speak Maru \"$q 18982 null#Musíš mít dobrý důvod, proč to říkáš...$a#$r 18982 50 event_robot_explain1#MarILDA je jen kus techniky, který má napodobovat člověka.#$r 18982 50 event_robot_explain2#Jen žertuju. MarILDA si zaslouží svobodu.#$r 18982 -50 event_robot_explain3#Pro mě by pracovala na farmě.\"/faceDirection Maru 1/emote Maru 12/pause 300/faceDirection Maru 3/speak Maru \"Tak já půjdu. Díky za dnešní společnost, @.$8\"/globalFade/viewport -3000 -3000/changeLocation ScienceHouse/end"
+  }
+}

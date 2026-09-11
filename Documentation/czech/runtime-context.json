@@ -1,0 +1,34 @@
+[
+  {
+    "target": "Strings/UI",
+    "keys": "PondQuery_StatusRequestPending* and PondQuery_StatusRequestOneCount",
+    "originalAssembly": "Stardew Valley.dll 1.6.15.24356",
+    "evidence": {
+      "PondQueryMenu.UpdateState": "IL_00c4–010e: when neededItemCount <= 1, getProperArticleForWord returns an article; empty article falls back to PondQuery_StatusRequestOneCount. Requests pass makePlural(DisplayName, count == 1), count/article, and singular DisplayName as {0}, {1}, {2}.",
+      "Lexicon.makePlural": "IL_0000–000e: returns unchanged for nonzero language code (including modded Czech).",
+      "Lexicon.getProperArticleForWord": "IL_0000–000c: returns empty for nonzero language code."
+    },
+    "decision": "Use item-label ×quantity notation to avoid unsupported Czech noun declension. Translate fallback some as 1 because this branch represents exactly one requested item in the Czech runtime, not an indefinite amount. {2} is the singular item label, not the farmer name. Preserve every substitution and occurrence.",
+    "inspectionSHA256": {
+      "pond-request-il.txt": "7f6d6e2922ceeb80d0994020f7660af23cdc0136a829adfb4f1f47f3525f39d9",
+      "plural-il.txt": "a6e819be096ef31e95d8a3bccc33394a3921ebec7e14964cfd60525cfceaeeb7",
+      "matching-il.txt": "cf0958af535b5743844e4aef57f0ecf28e34056da4c9a21832a1a00fd377093c"
+    }
+  },
+  {
+    "target": "Strings/Lexicon",
+    "keys": "GenericPlayerTerm",
+    "originalAssembly": "Stardew Valley.dll 1.6.15.24356",
+    "evidence": {
+      "general-store purchase dialogue": "Method body starts by loading Strings\\Lexicon:GenericPlayerTerm, splitting the localized value on bare ^, keeping element 0 for a male player and selecting element 1 for a female player. The selected value is passed as {0} to Data\\ExtraDialogue:PurchasedItem_1_QualityHigh or PurchasedItem_1_QualityLow.",
+      "fish-shop purchase dialogue": "The Willy-specific method repeats the same gender selection and passes the selected value as {0} to PurchasedItem_1_QualityHigh_Willy or PurchasedItem_1_QualityLow_Willy.",
+      "visible context": "All four English rows begin with Hey, {0}.; Czech therefore needs vocative forms rather than the nominative glossary label."
+    },
+    "decision": "Use farmáři^farmářko. This preserves the glossary identity farmář while using the gender branch explicitly implemented by the two call sites and the correct Czech vocative for either player gender.",
+    "inspectionSHA256": {
+      "Stardew Valley.dll": "8937c582cad1c1127017944778c4102467bf299aea44869491f28ab0ec84cd73",
+      "Willy method body": "b0f8e3bf2de82a587d83a7958031e96c7c6684733a21dfca5538ba11e13fb445",
+      "general-store method body": "d5d1982d899f03e0387026a4e6c375574235290b2f2a9cfd71e1c3a6728e7dc3"
+    }
+  }
+]

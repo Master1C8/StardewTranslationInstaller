@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "7/f Maru 1000/p Maru": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*povzdech*... Už mám přípravy těch vzorků plné zuby...$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"Áá! Ale ne!... $4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"Celý vzorek je zničený... Harvey mě zabije...$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#@, co mám dělat?#$r 38 -50 Event_Hospital_1#Prostě to seber z podlahy. Rozdíl nepozná.#$r 39 -20 Event_Hospital_2#Řekni Harveymu, že za to můžu já.#$r 38 50 Event_Hospital_3#Řekni Harveymu, že to byla nehoda.\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"Co se stalo? Slyšel jsem, jak se něco rozbilo.\"/pause 500/speak Maru \"$p 38#Jeden vzorek mi omylem spadl... Moc mě to mrzí.$s|Při příchodu @ dveře tak hlasitě práskly, až mi ten vzorek vypadl.$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"Neměla bys své problémy svádět na druhé, Maru.$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*povzdech*... Budu muset pacienta zavolat zpátky a odebrat nový vzorek.$s#$b#Kvůli tomu budeme nejspíš další měsíc v červených číslech...$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+        "toldTruth": "move Harvey 0 2 3/speak Harvey \"Díky, že jsi řekla pravdu, Maru.#$b#Se vzorkem si nedělej starosti, prostě odebereme další.\"/pause 500/emote Harvey 32/pause 500/speak Maru \"Děkuji, že se mnou máte trpělivost, doktore Harvey.\"/pause 500/speak Harvey \"Samozřejmě... tolik jsi mi tu pomohla. Nevím, co bych si bez tebe počal!\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"@? Vypadáš trochu bledě... je ti dobře?\"/pause 500/faceDirection farmer 2/emote farmer 28/end"
+      }
+    }
+  ]
+}

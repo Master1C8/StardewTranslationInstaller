@@ -1,0 +1,47 @@
+{
+  "id": "459-sam-house-romance-branches",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all six visible segments across both branches against English; verified Sam's earnest accepted-romance tone, hurt rejection response, both intentional silent ending messages, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "stayPut",
+      "field": null,
+      "source": "playMusic musicboxsong/pause 1800/move Sam 1 0 1/pause 1200/move Sam 1 0 1/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/animate farmer true true 100 101/showFrame Sam 36/pause 3000/speak Sam \"I always knew there was something special between us...$l\"/globalFade/viewport -1000 -1000/pause 7000/speak Sam \"I'm going to be thinking about this night for a long time...$l\"/pause 1000/end dialogue Sam \"...$l\"",
+      "translation": "playMusic musicboxsong/pause 1800/move Sam 1 0 1/pause 1200/move Sam 1 0 1/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/positionOffset Sam 2 0/positionOffset farmer -2 0/pause 50/animate farmer true true 100 101/showFrame Sam 36/pause 3000/speak Sam \"Vždycky jsem věděl, že je mezi námi něco zvláštního...$l\"/globalFade/viewport -1000 -1000/pause 7000/speak Sam \"Na dnešní noc budu ještě dlouho myslet...$l\"/pause 1000/end dialogue Sam \"...$l\"",
+      "sourceSHA256": "602f05c6512946f3d7bcb9a4bbf92d23ee93c7d1ebf666ba735151b9016fc0ca",
+      "translationSHA256": "8852d73e8d6997b2975d693381674676cb64fa0e2eca0d7dcf24b8b8c87326b9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "rejectSam",
+      "field": null,
+      "source": "pause 800/move farmer 0 3 2/faceDirection Sam 2/pause 800/showFrame Sam 37/emote Sam 28/speak Sam \"I see...$s\"/pause 800/faceDirection Sam 0/speak Sam \"I'm sorry... I had the wrong idea. I'll see you around.$7\"/move farmer 0 2 2/warp farmer -1000 -1000/playSound woodyStep/pause 1000/end dialogue Sam \"...$s\"",
+      "translation": "pause 800/move farmer 0 3 2/faceDirection Sam 2/pause 800/showFrame Sam 37/emote Sam 28/speak Sam \"Chápu...$s\"/pause 800/faceDirection Sam 0/speak Sam \"Promiň... vyložil jsem si to špatně. Uvidíme se.$7\"/move farmer 0 2 2/warp farmer -1000 -1000/playSound woodyStep/pause 1000/end dialogue Sam \"...$s\"",
+      "sourceSHA256": "1e5c50447c008b5ffe4d8f47559b97abb3b02b4752be352365d6ec092580bd2d",
+      "translationSHA256": "6b0cd0656cd38690fef017344ef5a2235f27e36b0bf872afc92046ef695c53bc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

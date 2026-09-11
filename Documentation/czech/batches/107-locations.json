@@ -1,0 +1,28 @@
+{
+  "id": "107-locations",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read the full scripted introduction twice after correcting the cave-setback idiom and player-gender phrasing. Verified every command, actor, movement, timing, frame, emote, translated-name reference, quote, #$b# break and $s/$h token. Rechecked the Field Office welcome, cave setback, bone-research remit, fossils and mummified specimens, desk delivery and promised reward.",
+  "rows": [
+    {
+      "target": "Strings/Locations",
+      "key": "IslandFieldOffice_Intro_Event",
+      "field": null,
+      "source": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ah... Come in!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Welcome to my field office.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"As you can see... it's quite empty.$s#$b#Getting stuck in that cave was a huge setback to my project.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"But that's where you come in! Hee hee...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"I'm in the bone business, you see...#$b#Ancient bones, in particular... And this island is full of them.#$b#So if you ever encounter any bones, fossils, or mummified specimens on this island, bring them to my desk, okay? I'll make it worth your while!$h\"/pause 200/faceDirection SafariGuy 1/end",
+      "translation": "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ach... pojďte dál!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Vítejte v mé terénní stanici.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"Jak vidíte... je tu docela prázdno.$s#$b#Uvíznout v té jeskyni znamenalo pro můj projekt velkou komplikaci.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"A právě proto jste tady vy! He he...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"Mým oborem jsou kosti, víte...#$b#Především pradávné kosti... A tento ostrov je jich plný.#$b#Pokud tedy na ostrově narazíte na jakékoli kosti, zkameněliny nebo mumifikované exempláře, přineste je na můj stůl, ano? Odměna vás nemine!$h\"/pause 200/faceDirection SafariGuy 1/end",
+      "sourceSHA256": "7dabd49be2d26accd4d0e0938e18aa67373cccc76ed9e8dc63bdd50df82efa88",
+      "translationSHA256": "4f106b87c287fb329e52fffbddecf43b8726255a8daf6dd96f1dda40a2f713de",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

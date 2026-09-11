@@ -1,0 +1,9 @@
+{
+  "id": "449-saloon-alex-rejection",
+  "kind": "short",
+  "target": "Data/Events/Saloon",
+  "complexityReason": "Translate Alex's rejected-confession branch, preserving his stammering hurt, the intentional silent romantic marker, emotional markers, and exact event commands.",
+  "entries": {
+    "rejectJosh": "pause 100/playMusic none/shake Alex 2000/emote Alex 28/speak Alex \"...Ach...$s#$b#P... Promiň, jestli ti to bylo nepříjemné...$s\"/pause 2000/speak Alex \"Už nemám hlad...$s\"/viewport move 1 1 5000/globalFade/viewport -1000 -1000/pause 4000/end dialogue Alex \"...$l\""
+  }
+}

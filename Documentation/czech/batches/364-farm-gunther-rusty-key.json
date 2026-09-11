@@ -1,0 +1,28 @@
+{
+  "id": "364-farm-gunther-rusty-key",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all three complete Gunther segments and the gender token against English; verified museum, award, Rezavý klíč and wallet terminology, formal voice, neutral player wording, Czech grammar, and exact broadcast, key-award and event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "66/e 295672/t 600 700/H",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/broadcastEvent/rustyKey/skippable/pause 1500/speak Gunther \"Oh, good morning ${Mr.^Ms.}$ @!#$b#I hope it's not too early...$s#$b#Well, I just wanted to stop by and thank you in person for all the wonderful artifacts and minerals you've discovered... you've done so much for one person!$h#$b#In fact, I've just received a letter from the office of the regional secretary of artifacts... We're being honored with the coveted 'golden shovel' award for our significant contributions to the field!#$b#And it's all thanks to you!$h#$b#Well, I should let you get back to your work...\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"Oh! I almost forgot!#$b#I have a gift for you... It's an old key that's been sealed in the museum vault for at least 100 years. It's a little rusty, but still beautiful.$h\"/pause 500/pause 500/playSound reward/message \"You got the 'Rusty Key'! It's been added to your wallet.\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/broadcastEvent/rustyKey/skippable/pause 1500/speak Gunther \"Ach, dobré ráno, ${pane^slečno}$ @!#$b#Doufám, že není příliš brzy...$s#$b#Chtěl jsem se jen zastavit a osobně ti poděkovat za všechny úžasné artefakty a minerály, které se ti podařilo objevit... Na jednoho člověka je to ohromný výkon!$h#$b#Právě jsem totiž obdržel dopis z kanceláře krajského tajemníka pro artefakty... Za významný přínos oboru získáváme prestižní cenu ‚Zlatá lopata‘!#$b#A to vše díky tobě!$h#$b#Tak, měl bych tě nechat pokračovat v práci...\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"Ach! Málem bych zapomněl!#$b#Mám pro tebe dárek... Je to starý klíč, který byl nejméně sto let zapečetěný v muzejním trezoru. Je trochu rezavý, ale stále krásný.$h\"/pause 500/pause 500/playSound reward/message \"Získáváš ‚Rezavý klíč‘! Byl přidán do tvé peněženky.\"/pause 500/end",
+      "sourceSHA256": "970bd984bd18692939ff00a534be427141ff5e33816e25c891fbdd3b463dd7dc",
+      "translationSHA256": "20e9abc1b559ff74b31ec736b8d3a4ea8180ad727ef2f3149fb00b635967b422",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "337-archaeology-house-first-donation",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all five visible Gunther segments against English; verified museum terminology, formal voice, exact meaning, natural Czech, neutral player phrasing, dialogue controls and punctuation, and confirmed the complete quest and event-command skeleton is unchanged.",
+  "rows": [
+    {
+      "target": "Data/Events/ArchaeologyHouse",
+      "key": "0/n somethingToDonate/l somethingWasDonated",
+      "field": null,
+      "source": "libraryTheme/29 12/farmer 22 13 1 Gunther 31 12 2/removeQuest 23/addQuest 24/skippable/pause 1000/showFrame Gunther 4/pause 500/showFrame Gunther 0/pause 500/showFrame Gunther 12/pause 500/showFrame Gunther 0/pause 1000/showFrame Gunther 1/pause 500/speak Gunther \"Abysmal...#$b#Not a single piece in the entire collection.\"/move farmer 7 0 1/showFrame Gunther 12/pause 800/emote Gunther 16/jump Gunther/pause 800/speak Gunther \"What's this? You found something? Let me see it!\"/move farmer 0 -1 1/move farmer 1 0 1/pause 500/playSound coin/animate Gunther false true 500 2 3/pause 3000/speak Gunther \"Remarkable!#$b#It's very old.#$b#I'd love to study this in greater detail... But it is yours.\"/stopAnimation Gunther/showFrame Gunther 12/pause 1000/speak Gunther \"Hmmm...#$b#I've got a favor to ask you.#$b#Would you consider donating any new artifacts or minerals that you find?#$b#We could make a groundbreaking discovery together!#$b#Oh, and who knows... If you keep donating I might come across some interesting items to send your way.\"/pause 1000/showFrame Gunther 0/pause 500/speak Gunther \"Think about it, will you?#$b#If you decide to donate, just bring the objects to the front desk.\"/move farmer -3 0 2 true/pause 400/showFrame Gunther 1/proceedPosition farmer/move farmer 0 1 3/move farmer -7 0 3 true/pause 1000/globalFade/viewport -1000 -1000/end",
+      "translation": "libraryTheme/29 12/farmer 22 13 1 Gunther 31 12 2/removeQuest 23/addQuest 24/skippable/pause 1000/showFrame Gunther 4/pause 500/showFrame Gunther 0/pause 500/showFrame Gunther 12/pause 500/showFrame Gunther 0/pause 1000/showFrame Gunther 1/pause 500/speak Gunther \"Žalostné...#$b#V celé sbírce není jediný exponát.\"/move farmer 7 0 1/showFrame Gunther 12/pause 800/emote Gunther 16/jump Gunther/pause 800/speak Gunther \"Co to je? Nějaký nález? Ukaž mi ho!\"/move farmer 0 -1 1/move farmer 1 0 1/pause 500/playSound coin/animate Gunther false true 500 2 3/pause 3000/speak Gunther \"Pozoruhodné!#$b#Je to velmi staré.#$b#Rád bych to prozkoumal podrobněji... Ale patří to tobě.\"/stopAnimation Gunther/showFrame Gunther 12/pause 1000/speak Gunther \"Hmm...#$b#Chtěl bych tě o něco požádat.#$b#Zvážíš, zda muzeu darovat nové artefakty nebo minerály, které najdeš?#$b#Společně bychom mohli učinit převratný objev!#$b#A kdoví... Pokud budeš dál přispívat, možná narazím na zajímavé předměty, které ti budu moci poslat.\"/pause 1000/showFrame Gunther 0/pause 500/speak Gunther \"Promysli si to, ano?#$b#Pokud se rozhodneš něco darovat, stačí předměty přinést k přepážce.\"/move farmer -3 0 2 true/pause 400/showFrame Gunther 1/proceedPosition farmer/move farmer 0 1 3/move farmer -7 0 3 true/pause 1000/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "d9cbd77f81e286dc1dc8eeb3efa022d0899ef9c0c1aad9fe0aa0db8623279289",
+      "translationSHA256": "b76c520e6f8297e201cd702a0315cd10aeb1209994efbe48246043d27661a4af",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

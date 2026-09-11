@@ -1,0 +1,769 @@
+{
+  "id": "618-v16-books-powers-and-animal-names",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full 40-row EN/CS review completed twice; skills, powers, Mýval dialogue, Luční farma description and localized starter chicken name pairs preserve the full source structure and voice, locked glossary terms are applied, and every placeholder, stat token, underscore and list separator matches.",
+  "rows": [
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "SkillName_1",
+      "field": null,
+      "source": "Fishing",
+      "translation": "Rybaření",
+      "sourceSHA256": "79cea8ff2ba190bbb1bdb045610c272c4c3c56fd19ac0cc07b380e08f736a476",
+      "translationSHA256": "e09259488d1b20641faa1e4e576ccd0dc06fb902375f4915622d228c82c60705",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "SkillName_2",
+      "field": null,
+      "source": "Foraging",
+      "translation": "Sběračství",
+      "sourceSHA256": "a4966b4bc08a051c29a86ac61ee96052c82db586f26e29d0d953b1b26d591f77",
+      "translationSHA256": "f4aeea4a789ab3c53cf7c68a5f1d80fa2230e62bb8b9594bbb0a25461a01a163",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "SkillName_3",
+      "field": null,
+      "source": "Mining",
+      "translation": "Těžba",
+      "sourceSHA256": "bf94ba9e2d861e6c1478d938a5d58d71506368426b5dfa9e9f56bfa12422c95e",
+      "translationSHA256": "2c6830efb46f6b330f386c01399cb21b0030cd2edfee335f2a6ff9d5725dd9f2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "SkillName_4",
+      "field": null,
+      "source": "Combat",
+      "translation": "Boj",
+      "sourceSHA256": "49fcf2c78b506b3e32115f752124e4ee1b998f4f578cc2d35425e6ee3eb203a6",
+      "translationSHA256": "154da59cb1be8eecf36c153917c09ee9d8458bb8c719cdba8e6e8d51d7e7e22c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "QoS_Cookbook",
+      "field": null,
+      "source": "You learned {0} new recipes.",
+      "translation": "Počet nově naučených receptů: {0}.",
+      "sourceSHA256": "3b2893c54856431d661ef9d06ef5b9ecfe0bc80e8c72d2e02ba7e0413a5f9e4a",
+      "translationSHA256": "997ce83a4bb2ab1abbc902acb0a60bbee58fa866efe624b94990223114f31720",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "guild_door",
+      "field": null,
+      "source": "Slay 1000 monsters to enter here. ([FarmerStat monstersKilled]/1000)",
+      "translation": "Pro vstup zabij 1000 příšer. ([FarmerStat monstersKilled]/1000)",
+      "sourceSHA256": "202e9655e8e3d66f2aa9840518e55af367f84fc0c672933b2851a3111641907e",
+      "translationSHA256": "23c792517ba97f0672d34762bd28ccf8760fd4596e064aae4a138cb617bdf6c5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "FoundABook",
+      "field": null,
+      "source": "You found a copy of '{0}'.",
+      "translation": "Nalezen výtisk knihy „{0}“.",
+      "sourceSHA256": "622646fb586300d499fbdd3c25415325c4c994f16f0cdad5dc164f303a750a38",
+      "translationSHA256": "56215a9860cdd883ed00b9c093786db02349b53882432310c302e08b58556c14",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "ForestMagic",
+      "field": null,
+      "source": "Forest Magic",
+      "translation": "Lesní magie",
+      "sourceSHA256": "a5b9cae1feeee3c6983de7cab974debfa0af8cb8bcc0067fe5c9c1dfcaad80fa",
+      "translationSHA256": "aab900753edac141b194292d8406722e75d5015ff93021aaee7e359734675214",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "ForestMagic_Description",
+      "field": null,
+      "source": "You are one with forest magic...",
+      "translation": "Lesní magie s tebou splynula...",
+      "sourceSHA256": "784876982459dbd81c920d083caa77245aabe60226c8288ca6e82066316dcd3e",
+      "translationSHA256": "9fd3f4a17ba484a8201d07749bbb1bab59f6541ae263a352b8151545636e62b4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "BearPaw_Description",
+      "field": null,
+      "source": "Blackberries and Salmonberries are worth 3x the gold.",
+      "translation": "Ostružiny a Lososbobule mají trojnásobnou cenu.",
+      "sourceSHA256": "3e51948d54f1cb4b61951d8e0d0e5e501002b1b8354da75d8438e0e1e7fe8a67",
+      "translationSHA256": "5856e5ba62344940752dcb5d6f3647643527558c1f7864af1fe1b7853856eb77",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "SpringOnionMastery_Description",
+      "field": null,
+      "source": "Spring onions are worth 5x the gold.",
+      "translation": "Jarní cibulky mají pětinásobnou cenu.",
+      "sourceSHA256": "a76f5a5771cd569828c019e76ac271bdbced233be087fbc27b34e6ddfabe22f6",
+      "translationSHA256": "56e4fc001ca1c530217d859ba8e6cf9d2211062837731a91032a72db3cb601e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Marnie_Counter",
+      "field": null,
+      "source": "'I'm not around, but you can still make a purchase using the animal catalogue!'  -Marnie",
+      "translation": "„Nejsem tu, ale pořád můžeš nakupovat pomocí katalogu zvířat!“ – Marnie",
+      "sourceSHA256": "e896e8041212994fc8a8a8edca83807390ad81591ffd2eb9116ddd193a79d374",
+      "translationSHA256": "a215fa725bfc58505615bf0909800dd7a671b40b5f45748256107f422d18e22c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "GameMenu_Powers",
+      "field": null,
+      "source": "Special Items & Powers",
+      "translation": "Zvláštní předměty a schopnosti",
+      "sourceSHA256": "ef820ce8ed735c682b4ee2c0ca48a325e7ef638f8cd162e6db4972f812ecbe18",
+      "translationSHA256": "c7e353e407ea8eb5f7991f79d34c30cdef50679cac098ce9b3b03ca89df45d8c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "FixRaccoonStump_Hint",
+      "field": null,
+      "source": "The old tree is gone... However, with 100 pieces of hardwood, this could be fixed up.",
+      "translation": "Starý strom je pryč... Tento pařez by však šel opravit pomocí 100 kusů Tvrdého dřeva.",
+      "sourceSHA256": "2b1e3b4124b1badf226e29bdeab2311b9fb7515181d6adc982ab37ea42e95146",
+      "translationSHA256": "09ba9a31e9b82eaf727e87abd2b33041880e7400a2d4c565dbde9caa0982f05b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "FixRaccoonStump_Question",
+      "field": null,
+      "source": "Use 100 pieces of hardwood to fix up the stump?",
+      "translation": "Použít 100 kusů Tvrdého dřeva k opravě pařezu?",
+      "sourceSHA256": "24239fed502449ab760271de9be445af0ad0c9f6f23490e272d2400e359625c2",
+      "translationSHA256": "ab5ab56e4221725f7c3c146fe01d18f32d74f8e79a8c2c7794f947f0f7a54037",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "FixRaccoonStump_Done",
+      "field": null,
+      "source": "Maybe someone will decide to move in...",
+      "translation": "Možná se sem někdo nastěhuje...",
+      "sourceSHA256": "aedd2704cb53de599ad9ed3a08fc8bf0f1aae124053107c0551e40a31be393a0",
+      "translationSHA256": "4e5615737765f56890457364df81411e1557e82450275dea38e4a2d76c9bb732",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "GreenRainForecast",
+      "field": null,
+      "source": "Um... There appears to be some kind of... anomalous reading... I... don't know what this means...",
+      "translation": "Ehm... Objevily se tu nějaké... neobvyklé hodnoty... Já... nevím, co to znamená...",
+      "sourceSHA256": "50a64baeb19cbe4a7ec1b6e9595deb24832ae1c3c4fe6640c00d9686b6d0467d",
+      "translationSHA256": "88fcf31772bd5baad31082732116c504ff95d30e1064777716fa21a06d081fef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_expanded",
+      "field": null,
+      "source": "The raccoon shop has been expanded.",
+      "translation": "Mývalův obchod se rozšířil.",
+      "sourceSHA256": "3bb8c1b728b2df40b30ec4a9a7ae60385396969ef762e1710cb4ecf5a46d44f0",
+      "translationSHA256": "56c293cdfff2810276f3b807e5233444ae72c12ea780610d48f428bcd394c434",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_busy",
+      "field": null,
+      "source": "Another player is talking to the Raccoon right now.",
+      "translation": "S Mývalem právě mluví jiný hráč.",
+      "sourceSHA256": "3de1dcddfb86ddebdd1d51cb3f66af157b896f3158732056dd849ff472dfdffe",
+      "translationSHA256": "2b3cad4f6b02c7921313d7799cdc424ec334918805815bb3f2bb9e70460656ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_intro_0",
+      "field": null,
+      "source": "Raccoon: Hungry... need fish...",
+      "translation": "Mýval: Hlad... potřebovat rybu...",
+      "sourceSHA256": "a3ffac5b72b7be5de59072c2cc7544077267563e8e6203560c501e6da8be7ca0",
+      "translationSHA256": "229205dc5cc3f1ceb150bb284887b9a71fec827d43951978944bac27a3db300d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_interim_1",
+      "field": null,
+      "source": "Raccoon: Now, maybe I find a wife...",
+      "translation": "Mýval: Teď možná najít manželku...",
+      "sourceSHA256": "50d0ad22cf30b5095e4d595eb51ffd23d8a83b271706f5bb2f2de35eec1a28a3",
+      "translationSHA256": "3cbd688c52784e0b469b86d3d99216bdf4f111fed0d9cdc1f4e84c49081ef53a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_intro_1",
+      "field": null,
+      "source": "Raccoon: Hungry... need fruit...",
+      "translation": "Mýval: Hlad... potřebovat ovoce...",
+      "sourceSHA256": "4eaca6d0f3e0b048188235cf2be3952b3f7ded1f2eb19d72a0f46d6a408458b0",
+      "translationSHA256": "d2d7ff973666132adb03b6eea77af2864c92ea351a0138f5e946e015dfe1862a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_interim_2",
+      "field": null,
+      "source": "Raccoon: Now, we start a family...",
+      "translation": "Mýval: Teď založit rodinu...",
+      "sourceSHA256": "1407c6a78d5ab7547943767f6b2b731189808473c95c20e3b470c4ba23f75949",
+      "translationSHA256": "08717fb899bc9da0bdda976d1bb7866aa5b0dc764ca712bb48295f87a2d5212b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_intro_2",
+      "field": null,
+      "source": "Raccoon: Hungry... need mushroom...",
+      "translation": "Mýval: Hlad... potřebovat houbu...",
+      "sourceSHA256": "05c0d49e1cee6718975424cc5c69006f218fd790f7b17c2931129bf8e4b0fb45",
+      "translationSHA256": "60f8eb2ce66add27898b527cc10e9705583fc8e0001d15a8b0d08fbdd5ea6483",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_interim_3",
+      "field": null,
+      "source": "Raccoon: Now we can grow the family bigger...",
+      "translation": "Mýval: Teď můžeme rodinu zvětšit...",
+      "sourceSHA256": "4a6923eaa0d7715d7be9e933cad3a742f9d568daa1d469384c035083e4d738ea",
+      "translationSHA256": "f5a0657a94d84d6f3381bb5d343be3e1b82677517d62c945dce5af6988cc4aad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_intro_3",
+      "field": null,
+      "source": "Raccoon: Thirsty... need juice...",
+      "translation": "Mýval: Žízeň... potřebovat džus...",
+      "sourceSHA256": "40b792bd8f8682243a819b6cb4c6d50e4d94942c2f542c660d004b68a64dc20b",
+      "translationSHA256": "a409c580f73335a2042ee319b4f4e99537d7822b8c8dd30a96ca30b6db929998",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_interim_4",
+      "field": null,
+      "source": "Raccoon: You're a good friend, bobo. Now we can have another...",
+      "translation": "Mýval: Ty naše dobrá duše, bobo. Teď můžeme mít další...",
+      "sourceSHA256": "b7ecab72acd9870d853c85ee4ac157e7e2a36b3211f1fb4ae21dfd037278fb37",
+      "translationSHA256": "a1d0cd38c2abf916b12491cef246acf2de3b11fcc9d04c584d56aaf61d71dcca",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_intro_4",
+      "field": null,
+      "source": "Raccoon: Psst... bobo. I need a gift for the missus.",
+      "translation": "Mýval: Psst... bobo. Potřebovat dárek pro manželku.",
+      "sourceSHA256": "79a8fa3d844a56968e0be586d563f89a74c9ace8856fef2243f3706b5ae814e1",
+      "translationSHA256": "db4bb7a3fb69ab1b7b78ed94ee39db3922ac5cd73308faea51aeed6c7cdb1b20",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_interim_5",
+      "field": null,
+      "source": "Raccoon: We're happy for now, bobo...",
+      "translation": "Mýval: Zatím jsme šťastní, bobo...",
+      "sourceSHA256": "695c6e43c38899de654e639acd8158642b2916c11f7a669098fa6c458361237a",
+      "translationSHA256": "b69cfc93d37470e836691d4aba78ad8880ebb4225b2bbce45d490148e4812589",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_intro",
+      "field": null,
+      "source": "Raccoon: Help us, and I'll give you something nice.",
+      "translation": "Mýval: Pomoz nám a já ti dám něco pěkného.",
+      "sourceSHA256": "add90c90714e1191cbe217a4705b32ecd890c2683f5ba65051df586b52a1960b",
+      "translationSHA256": "fada78dfc25751d405feca6b1a39c89a1f0b8e7f99e5247d8594be9c6b6c5c66",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_interim",
+      "field": null,
+      "source": "Raccoon: We're doing great, bobo...",
+      "translation": "Mýval: Daří se nám skvěle, bobo...",
+      "sourceSHA256": "e987849954203b6c26c572778eff551eea407aec98821fb576867c9c97206b26",
+      "translationSHA256": "0734fedcf080d56390ad68cf3909a750aa9efe6bb292cfe08b750efa32dc68a3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Raccoon_receive",
+      "field": null,
+      "source": "Raccoon: Thanks, bobo. Take this...",
+      "translation": "Mýval: Díky, bobo. Vezmi si tohle...",
+      "sourceSHA256": "bdbb87d5f3f3b2e9acbda577cb7cecaf80d0ebb800200fa96bd921b2f87dd333",
+      "translationSHA256": "40710f1d6df9ac67b86e9dbbb955d622ec4a075fde13b4daec62de82d2959558",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "bigtree",
+      "field": null,
+      "source": "It's a big tree, but the wood is starting to rot...",
+      "translation": "Je to velký strom, ale dřevo už začíná trouchnivět...",
+      "sourceSHA256": "101088f12c8b5511e51601abe890c7f81608e84ec5b2c07027681adaa6a4f61e",
+      "translationSHA256": "17669133b641f3b429ee4a0b44d23cb62a7e2a0b759e0fd3e01ab54c57dff8bc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "windstorm",
+      "field": null,
+      "source": "There was a strong wind storm during the night...",
+      "translation": "V noci se přehnala silná vichřice...",
+      "sourceSHA256": "b89a842b2668704fcdcd58cded7a9284f34ecb6ac504c578034f73fd775261e5",
+      "translationSHA256": "0fbce8cd8649f610c1de662bc7af1ca2178f26f0da46f9d9973e7483bc157ade",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "MasteryRequirement",
+      "field": null,
+      "source": "You don't yet have the knowledge to use this...",
+      "translation": "Zatím nemáš znalosti potřebné k použití tohoto předmětu...",
+      "sourceSHA256": "d9810721656528ed55a946d3539553bbc7123c40ac98e664b89b530ce4d37e68",
+      "translationSHA256": "1bd0c93106d5dedc76609596932d166950a436c4e5e29ad843e787d4bbf71940",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "MysteryBoxAnnounce",
+      "field": null,
+      "source": "Mystery Boxes can now be found...",
+      "translation": "Nyní můžeš najít Tajemné krabičky...",
+      "sourceSHA256": "e2b8a6fc2c7765f667d4806247f1c7df01d9cb170851b09a7e6cd714f652fcd0",
+      "translationSHA256": "47ed49740e59dc613ccd200d23f0bf5628b4184a29076439fdca53b00ca2b1f7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "MasteryHint",
+      "field": null,
+      "source": "You sense that a new way is open...",
+      "translation": "Cítíš, že se otevřela nová cesta...",
+      "sourceSHA256": "5300507cc3d60d219f01ac0e7e00d1c73401c995be5535cfb93eda972e1e0da1",
+      "translationSHA256": "b5997b5d6a28f0fef67a1544eb9effe699a76b77c6f44cd3f79a5cda38c6d33f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Farm_Ranching_Description",
+      "field": null,
+      "source": "Meadowlands Farm_It's not the best for growing crops, but there's a chewy blue grass that animals love. You start with two chickens.",
+      "translation": "Luční farma_Není nejlepší pro pěstování plodin, ale roste na ní modrá tráva, kterou zvířata ráda žvýkají. Začínáš se dvěma slepicemi.",
+      "sourceSHA256": "e8235ffe9416e76f2acad9fb1c729e7e24c94b96db7394574f9da0521ad3a50c",
+      "translationSHA256": "27bbe5f052796267eb021c3daab29b8c02ee06112aa884ec4d15a587685aca2a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "StarterChicken_Names",
+      "field": null,
+      "source": "Portobello,Porcini | Chicky,Grushenka | Lucky,Clover | Salt,Pepper | Pecky,Clucky | Brunhilde,Gretchen | Billie,Bertha | Pickle,Zucchini | Peachie,Papaya | Potpourri,Ann | Buster,Scrappy | Petal,Twig | Cheeper,Squeaks | Skwash,Pumpkin | Goldie,Cocoa | Toast,Beans | Chip,Dip | Hazel,Peanut | Winky,Nod | Huffy,Puffy | Eggy,Ollie | Polka,Dot | Tiny,Shrimp | Fishy,Roe | Princess,Lady | Misty,Beluga | Snowy,Gingersnap | Honey,Biscuit | Piccolo,Viola | Potatoes,Gravy",
+      "translation": "Portobello,Hříbek | Kuřátko,Grušenka | Štístko,Čtyřlístek | Sůl,Pepř | Zobka,Kdákalka | Brunhilda,Gréta | Billie,Berta | Okurka,Cuketa | Broskvička,Papája | Potpourri,Anna | Buster,Rváčka | Lístek,Větvička | Pípka,Pískalka | Dýňka,Dýně | Zlatka,Kakao | Topinka,Fazole | Lupínek,Omáčka | Líska,Arašídek | Mrkačka,Dřímka | Funilka,Naducánek | Vajíčko,Oli | Polka,Tečka | Drobek,Krevetka | Rybička,Jikra | Princezna,Dáma | Mlženka,Běluha | Sněženka,Perníček | Medulka,Sušenka | Pikola,Viola | Brambory,Omáčka",
+      "sourceSHA256": "43dfdf747bd028e7b4267a75052c8dee7c6e344c5cfe073e335f52e29be3327b",
+      "translationSHA256": "fdde2b99e8752b10b26682a93d73ef56daf18ce58b7b9a649f64819ecaa6e326",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "FishFrenzy_town",
+      "field": null,
+      "source": "{1} {0} frenzy has begun in town.",
+      "translation": "Ve městě začalo rybí šílenství: {1} {0}.",
+      "sourceSHA256": "8f240b7cecb8767e8d727304a8eb89e45f999f8e9b65bee0b3ac2a16b3cd0c14",
+      "translationSHA256": "1acdefbdedd1aff5ccbef094b928de9275796aea8aaccc766fdafce56ddbfddc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

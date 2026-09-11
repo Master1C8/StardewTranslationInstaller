@@ -1,0 +1,28 @@
+{
+  "id": "431-mountain-linus-wild-bait",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Replaced a comma-calque with natural Czech when Linus gives the Wild Bait recipe.",
+  "rows": [
+    {
+      "target": "Data/Events/Mountain",
+      "key": "26/f Linus 1000/w sunny/t 2000 2400",
+      "field": null,
+      "source": "nightTime/-1000 -1000/farmer 18 8 1 Linus 29 8 2/skippable/specificTemporarySprite linusCampfire/viewport 29 7 clamp true/move farmer 8 0 1/faceDirection Linus 3/emote Linus 32/speak Linus \"@! Come stand next to the firepit. It feels great.\"/pause 400/move farmer 2 0 2/move farmer 0 1 1/move Linus 1 0 2/move Linus 0 1 3/pause 1500/speak Linus \"I was hoping you'd come by sometime.\"/pause 500/emote Linus 28/pause 500/faceDirection Linus 2/pause 500/showFrame Linus 19/pause 500/speak Linus \"I wanted to say sorry for mistrusting you at first.$s#$b#Most people don't treat me well, so I've learned to be cautious.$s\"/pause 500/showFrame Linus 0/faceDirection Linus 3/speak Linus \"But you've been uncommonly nice to me. You're a unique person.$h#$b#...And I consider you a good friend.\"/pause 500/faceDirection Linus 3/emote farmer 32/pause 1000/faceDirection Linus 3/move Linus 0 -1 3/move Linus -1 0 0/speak Linus \"Hey, I want to show you something. Come inside.$h\"/move farmer 0 -1 1/move Linus 0 -1 0/playSound grassyStep/warp Linus -10 -10/move farmer 1 0 0/move farmer 0 -1 0/playSound grassyStep/warp farmer -10 -10/playMusic none/pause 1500/playSound fishSlap/pause 500/playSound fishSlap/pause 500/playSound fishSlap/pause 500/playSound fishSlap/pause 800/playSound dirtyHit/pause 1200/playSound slimeHit/pause 300/playSound slimeHit/pause 300/playSound slimeHit/pause 300/playSound slimeHit/pause 600/playSound slimedead/pause 1000/speak Linus \"Ah... there we go. See this? It's a special kind of fish bait that I make.#$b#It's top quality stuff... I'd eat it myself!#$b#Here, I want you to have the recipe.\"/pause 500/playSound coin/pause 500/faceDirection farmer 2/warp farmer 29 7/playSound grassyStep/move farmer 0 1 2/pause 1000/showFrame 84/playSound reward/addCraftingRecipe Wild Bait/message \"Learned how to craft 'Wild Bait'\"/pause 900/end",
+      "translation": "nightTime/-1000 -1000/farmer 18 8 1 Linus 29 8 2/skippable/specificTemporarySprite linusCampfire/viewport 29 7 clamp true/move farmer 8 0 1/faceDirection Linus 3/emote Linus 32/speak Linus \"@! Pojď si stoupnout k ohništi. Je u něj krásně.\"/pause 400/move farmer 2 0 2/move farmer 0 1 1/move Linus 1 0 2/move Linus 0 1 3/pause 1500/speak Linus \"Doufal jsem, že se tu někdy zastavíš.\"/pause 500/emote Linus 28/pause 500/faceDirection Linus 2/pause 500/showFrame Linus 19/pause 500/speak Linus \"Chtěl jsem se omluvit, že jsem ti zpočátku nedůvěřoval.$s#$b#Většina lidí se ke mně nechová dobře, takže jsem se naučil být opatrný.$s\"/pause 500/showFrame Linus 0/faceDirection Linus 3/speak Linus \"Ale ke mně se chováš neobyčejně hezky. Takových lidí moc není.$h#$b#...A vážím si našeho přátelství.\"/pause 500/faceDirection Linus 3/emote farmer 32/pause 1000/faceDirection Linus 3/move Linus 0 -1 3/move Linus -1 0 0/speak Linus \"Chci ti něco ukázat. Pojď dovnitř.$h\"/move farmer 0 -1 1/move Linus 0 -1 0/playSound grassyStep/warp Linus -10 -10/move farmer 1 0 0/move farmer 0 -1 0/playSound grassyStep/warp farmer -10 -10/playMusic none/pause 1500/playSound fishSlap/pause 500/playSound fishSlap/pause 500/playSound fishSlap/pause 500/playSound fishSlap/pause 800/playSound dirtyHit/pause 1200/playSound slimeHit/pause 300/playSound slimeHit/pause 300/playSound slimeHit/pause 300/playSound slimeHit/pause 600/playSound slimedead/pause 1000/speak Linus \"Ach... tak. Vidíš to? Je to zvláštní druh rybí návnady, kterou vyrábím.#$b#Je prvotřídní... sám bych ji snědl!#$b#Tady máš. Ten recept je pro tebe.\"/pause 500/playSound coin/pause 500/faceDirection farmer 2/warp farmer 29 7/playSound grassyStep/move farmer 0 1 2/pause 1000/showFrame 84/playSound reward/addCraftingRecipe Wild Bait/message \"Získán recept na „Divokou návnadu“\"/pause 900/end",
+      "sourceSHA256": "42b4b2fad65b6cb8da97193813786ad6cb6f9221db97ecccf64859da214ea2bf",
+      "translationSHA256": "e51a2aa5160ef843f612b8e72b00cc804d9963a0e0f603e84760128bd23e76d8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

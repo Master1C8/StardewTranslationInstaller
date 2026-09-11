@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "5183338/e 3917666/O Maru/w sunny/t 2200 2500": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/changeToTemporaryMap NightSceneMaruMap2 false/bgColor 0 0 0/ambientLight 0 0 0/viewport 14 25 true clamp/pause 1000/move farmer -8 0 3/faceDirection Maru 1/pause 800/showFrame Maru 32/pause 700/showFrame Maru 4/speak Maru \"Ahoj, @. Přicházíš právě včas... Kometa se každou chvíli objeví.\"/pause 500/faceDirection Maru 2/pause 1000/faceDirection farmer 2/pause 1000/speak Maru \"Krásná noc, že?\"/pause 2000/faceDirection Maru 1/faceDirection farmer 3/pause 1000/speak Maru \"Pamatuješ, jak jsme to dělali poprvé? Už je to nějaká doba...\"/faceDirection Maru 2/speak Maru \"Tenkrát jsem málem prozradila své skutečné city... ale bála jsem se, že mě odmítneš.\"/faceDirection Maru 1/speak Maru \"Kdo by čekal, že se tak brzy vezmeme!$h\"/pause 500/emote farmer 20/pause 500/jump Maru/pause 400/speak Maru \"Ach! Už je čas...\"/faceDirection Maru 3/faceDirection farmer 3 true/showFrame Maru 28/emote Maru 40/pause 1000/textAboveHead Maru \"Páni!\"/pause 3000/showFrame Maru 12/move Maru 0 1 0/speak Maru \"Podívej!\"/pause 500/move farmer -1 0 3/pause 1000/animate farmer true true 100 35/pause 1000/fade/viewport -1000 -1000/pause 1000/playMusic spaceMusic/warp Maru 15 29/faceDirection Maru 3/cutscene marucomet/pause 1000/viewport 14 25 true clamp/pause 3000/stopAnimation farmer/pause 1000/faceDirection farmer 1/pause 500/speak Maru \"Když člověk uvidí kometu, má si něco přát...\"/pause 500/quickQuestion Co si budeš přát?#Nové miminko#Abychom spolu zestárli#Víc peněz(break)jump Maru\\pause 500\\speak Maru \"Ach! To určitě můžeme zkusit...$l\"\\emote Maru 20(break)emote Maru 20\\speak Maru \"To je... opravdu milé!$l#$b#Mám stejné přání.$l\"(break)speak Maru \"Peníze? Ach...$s#$b#No, asi by to bylo praktické...$8\"\\emote Maru 28\\speak Maru \"Moje přání je trochu romantičtější...\"/pause 2000/animate Maru false true 100 28/animate farmer false true 100 101/positionOffset farmer 16 0/specificTemporarySprite heart 15 29/pause 2000/specificTemporarySprite maruTelescope/viewport move 0 -1 13000/pause 16000/fade/viewport -1000 -1000/pause 3000/end newDay"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "371-farm-emily-leah-projects",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all seven visible spouse-project segments against English; verified Emily's affectionate voice, 200-piece fiber quest wording, Leah's relaxed creative voice, Cindersap Forest naming, noon and weather conditions, dialogue markers and exact event command skeletons.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "3917600/f Emily 3500/O Emily/t 500 820",
+      "field": null,
+      "source": "continue/-10000 -1000/farmer -100 -100 2 Emily -100 -100 2/warp Emily -100 -100/warp farmer -100 -100/faceDirection Emily 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Emily 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Emily \"Hey, honey... before you get to work today, do you have a moment?#$b#I've been working on something special for you... but I need a little help finishing it.\"/move farmer 0 -1 0/speak Emily \"It's a secret, so I can't tell you what it is... but could you bring me 200 pieces of fiber?\"/addQuest 126/pause 500/speak Emily \"That's all I need! Just bring the 200 fiber by when you have a chance... no rush!\"/pause 2000/end dialogue Emily \"No peeking! You'll see the end result soon.\"",
+      "translation": "continue/-10000 -1000/farmer -100 -100 2 Emily -100 -100 2/warp Emily -100 -100/warp farmer -100 -100/faceDirection Emily 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Emily 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Emily \"Ahoj, zlato... než se dnes pustíš do práce, máš chvilku?#$b#Pracuju na něčem zvláštním pro tebe... ale potřebuji trochu pomoct, abych to dokončila.\"/move farmer 0 -1 0/speak Emily \"Je to tajemství, takže ti nemůžu říct, co to je... ale přineseš mi 200 kusů vlákna?\"/addQuest 126/pause 500/speak Emily \"To je všechno, co potřebuji! Přines mi těch 200 kusů vlákna, až budeš mít příležitost... není kam spěchat!\"/pause 2000/end dialogue Emily \"Žádné nakukování! Výsledek brzy uvidíš.\"",
+      "sourceSHA256": "edf6457df089292fa8ebebaca67559df2cb66cb0f30468b93fdcbfc10145b3e6",
+      "translationSHA256": "b06665766c59e596f3ee58576452d495147041f67428310d37d6f0b2162ac451",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "3911124/f Leah 3500/O Leah/t 500 820/w sunny/z winter/d Sun",
+      "field": null,
+      "source": "continue/-10000 -1000/farmer -100 -100 2 Leah -100 -100 2/warp Leah -100 -100/addConversationTopic leahPaint 0/warp farmer -100 -100/faceDirection Leah 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Leah 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Leah \"Hey, @. I have an idea...#$b#I want you to meet me in Cindersap Forest tomorrow, at noon.#$b#I'm gonna teach you how to paint!$h\"/pause 1000/speak Leah \"If the weather's bad, we'll do it the next day. Okay?\"/emote farmer 32/end dialogue Leah \"It'll be nice to explore your creative side a bit more, don't you think?\"",
+      "translation": "continue/-10000 -1000/farmer -100 -100 2 Leah -100 -100 2/warp Leah -100 -100/addConversationTopic leahPaint 0/warp farmer -100 -100/faceDirection Leah 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Leah 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Leah \"Ahoj, @. Mám nápad...#$b#Zítra v poledne se se mnou setkej v lese Cindersap.#$b#Naučím tě malovat!$h\"/pause 1000/speak Leah \"Pokud bude špatné počasí, uděláme to další den. Platí?\"/emote farmer 32/end dialogue Leah \"Bude fajn trochu víc prozkoumat tvou tvořivou stránku, nemyslíš?\"",
+      "sourceSHA256": "b76a207aa88dae34c5d516282eb5af6017a2791d9c60bf69581babd709ea497c",
+      "translationSHA256": "1c1e860a7f517f543b902f30e63916310b18848e7cb3aa8b48db2ba35d49cd95",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

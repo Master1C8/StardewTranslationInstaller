@@ -1,0 +1,1531 @@
+{
+  "id": "006-ui",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full source/Czech comparison reread after corrections; all 80 command and multiplayer UI strings verified for meaning, grammar, capitalization, placeholders, and markers.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_CheatsOnly",
+      "field": null,
+      "source": "This command can only be used when cheats are enabled.",
+      "translation": "Tento příkaz lze použít jen se zapnutými cheaty.",
+      "sourceSHA256": "c0541ddf82b7dcb64260e65319861ea1ce70b3f2130d0b3b742b236290fbebab",
+      "translationSHA256": "fc7e5b0272939eb74f3dd926c702bbd920d4640b4c215a5afed6cdad3efdea16",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_HostOnly",
+      "field": null,
+      "source": "Only the host can use this command.",
+      "translation": "Tento příkaz může použít pouze hostitel.",
+      "sourceSHA256": "17f1792537323b4a186d9332f1152d1b515735fe1e6936793d5ed94321ef35dd",
+      "translationSHA256": "36424eb72763691166ca1e2af5ed6554406d82847bedff36f7a558cbf13e9c17",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_MultiplayerOnly",
+      "field": null,
+      "source": "This command can only be used in multiplayer mode.",
+      "translation": "Tento příkaz lze použít pouze ve hře pro více hráčů.",
+      "sourceSHA256": "3a8b02ac0ebb41e39a9277768046f5103182a4a176da52d5c67377aa45597562",
+      "translationSHA256": "31d256bfe7a98c8bbe613b2996ba43eba3d78d061c141431eeb2ca01d6e6ad87",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NiceTry",
+      "field": null,
+      "source": "ConcernedApe: Nice try...",
+      "translation": "ConcernedApe: Dobrý pokus...",
+      "sourceSHA256": "06a92da8ff487a0238f330f1504031500c03378b6426056687076f744607d7d0",
+      "translationSHA256": "d373afec404926456a5e153f3e5b0f5e0ef39745bc426a42b8daeba49bfb0689",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchOnlinePlayer",
+      "field": null,
+      "source": "No online player with that name",
+      "translation": "Žádný hráč s tímto jménem není online",
+      "sourceSHA256": "ef2b3162927964b4fa0b21a964ef96a193a14fa1222bcd67582588359e1e03bb",
+      "translationSHA256": "0f6a40e8f20c22bbfb726ad3238bfa77c0ae2f992aac5978b0c99902e954f000",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Error_NoSuchPlayer",
+      "field": null,
+      "source": "No player with that name",
+      "translation": "Žádný hráč s tímto jménem neexistuje",
+      "sourceSHA256": "aeef38a2c3280909ec9c53c9d9c80bcbef872ee2636b00e1529e9867481d24a3",
+      "translationSHA256": "345a8b0a67c89808ba2e0f906f281856ffe330e843f9dc676dad0625939c3f4c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayers",
+      "field": null,
+      "source": "The following players are present:",
+      "translation": "Přítomní hráči:",
+      "sourceSHA256": "348559d3103b0382ea40d49cbc1d204f922a068f2d1a784abd4eceff5fd8df04",
+      "translationSHA256": "f854768e3603946e23e7e23c75072ec03a1739731f72508ff5cc7ca3cfe553dc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ListOnlinePlayersEntry",
+      "field": null,
+      "source": " - {0}",
+      "translation": " - {0}",
+      "sourceSHA256": "a01b89841daf67e3edf59f788013aae16a907bc21c8e79027cdffec6f96ed3a4",
+      "translationSHA256": "a01b89841daf67e3edf59f788013aae16a907bc21c8e79027cdffec6f96ed3a4",
+      "preservationReason": "Formatting-only list row: hyphen and player-name placeholder contain no English wording.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Help",
+      "field": null,
+      "source": "{0} [farmer name/user id]: bans the player from this farm.",
+      "translation": "{0} [jméno farmáře/ID uživatele]: zakáže hráči přístup na tuto farmu.",
+      "sourceSHA256": "a331653f5fb2f2df0ad75190b1410b80b890e8faa4df3c643e8fd1c81471804b",
+      "translationSHA256": "168f53617593cf11887530ac48aa4dbeedd48a61c00a940df5aa2c44d0beed59",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Done",
+      "field": null,
+      "source": "{0} was banned",
+      "translation": "Hráč {0} má nyní zakázaný přístup",
+      "sourceSHA256": "776c5465224f2858ae2d5eca9c3057f06d67537d41a6a9130cff51e4013d8824",
+      "translationSHA256": "fb45a3215f81e4e5d0d6fc88cff9f3e5f9f59573b381e385347f701199de9f25",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Ban_Failed",
+      "field": null,
+      "source": "Failed to ban player",
+      "translation": "Zákaz přístupu pro hráče se nepodařilo nastavit.",
+      "sourceSHA256": "90713ded8631c5567a4a717461520dc2bc6212eef241571409934131b1cf3a14",
+      "translationSHA256": "6c1a87a051141ebe1c351731b240d4f80f4d27ef8a16f78d6f3955cdb3ef1bbe",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Clear_Help",
+      "field": null,
+      "source": "{0}: clear chat log.",
+      "translation": "{0}: vymaže historii chatu.",
+      "sourceSHA256": "afee0afbd18be7d7c6410793bea77ffbe196193a4dcab9538e3099d1a1280e98",
+      "translationSHA256": "cf1563378a2a318340f3e5d7c43e91728cb7cb8961c648dfb307616a71f7c8bb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Color_Help",
+      "field": null,
+      "source": "{0} [color]: sets your default text color.",
+      "translation": "{0} [barva]: nastaví vaši výchozí barvu textu.",
+      "sourceSHA256": "d4c492505405655d473df0627683a2ebeb84d2ff94bccc34f475d5830b925c22",
+      "translationSHA256": "914f5c411486c0106e5a4ebada95e5aa246d740dbc9c2cd42f826b8228bcd8a5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ColorList_Help",
+      "field": null,
+      "source": "{0}: lists the available text colors.",
+      "translation": "{0}: vypíše dostupné barvy textu.",
+      "sourceSHA256": "c8c83fe2ac901cd238c3066856a29d2ef71b0b186d4aa75c8c46bf6d78bb4ce7",
+      "translationSHA256": "84257de637ee6e0109464eedb904ba21ebb009c4b5736f13dfba56e1354909ee",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_1",
+      "field": null,
+      "source": "ConcernedApe: Hello. I hope you're enjoying your new life here. Take care! [126]",
+      "translation": "ConcernedApe: Zdravím. Doufám, že se ti tu tvůj nový život líbí. Opatruj se! [126]",
+      "sourceSHA256": "ee67f00c1401c5f76fc8d53d2334e6141686ab11b24a246e6b1a3ca49e17ba77",
+      "translationSHA256": "3bec048785100ddfa48597a051a6b75f9e462fdafa1f3f6ec0b872fdaa9eb062",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_ConcernedApe_2",
+      "field": null,
+      "source": "ConcernedApe is hard at work...",
+      "translation": "ConcernedApe pilně pracuje...",
+      "sourceSHA256": "f23918a22aa4cf7d95d48b8e5e0ae0b0e57d4f3e81bc6bbba63be71df31b6aea",
+      "translationSHA256": "d8777e9b3cc4cec4619b127deeab9cf440a15d050ff3150752f0c32832e75227",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Emote_Help",
+      "field": null,
+      "source": "{0} [emote id]: perform an emote (omit the argument for a list of emotes).",
+      "translation": "{0} [ID gesta]: provede gesto (bez argumentu vypíše seznam gest).",
+      "sourceSHA256": "67ade3da6534808ee591bf08849ac6c1634f3882ea45b2152b2a70be660d7d09",
+      "translationSHA256": "1cc680e0e642478cd5a3eece6725a6dfb49425c6cae7ae85658b7e6967635e9b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandDescription",
+      "field": null,
+      "source": " - {0}",
+      "translation": " - {0}",
+      "sourceSHA256": "a01b89841daf67e3edf59f788013aae16a907bc21c8e79027cdffec6f96ed3a4",
+      "translationSHA256": "a01b89841daf67e3edf59f788013aae16a907bc21c8e79027cdffec6f96ed3a4",
+      "preservationReason": "Formatting-only help-list row: hyphen and command-description placeholder contain no English wording.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_CommandList",
+      "field": null,
+      "source": "Supported commands: {0}.",
+      "translation": "Podporované příkazy: {0}.",
+      "sourceSHA256": "b55bc66dc27f0df41cfb9e631bd0ee07a14d90e46e8b1bbc1416f11092e6610f",
+      "translationSHA256": "27d0be193df0fce225682e69ffdb5f7a7e3d3dc35895bdd555c70c831ab08936",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_Intro",
+      "field": null,
+      "source": "Enter '/help commandName' for help with a specific command.",
+      "translation": "Nápovědu ke konkrétnímu příkazu zobrazíte zadáním '/help commandName'.",
+      "sourceSHA256": "c65ace8fdb31b2f215a811b6d55e83817f95087afa1ac640e82b11292439a101",
+      "translationSHA256": "7d4600a94c1422bd2460dac4671d0fbbeb8704311d945afa6ab048e1b4647b9f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_MultiplayerCommandList",
+      "field": null,
+      "source": "Multiplayer commands: {0}.",
+      "translation": "Příkazy pro hru více hráčů: {0}.",
+      "sourceSHA256": "08cc05de1a57d3de6b78653a5359fcbb3b75ccffea57b941e6233c56100b5c0b",
+      "translationSHA256": "01abe0bacaa998217f8145463fa39ba9592b20fe53c94552ef054a6e8ba1b97f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Help_NoSuchCommand",
+      "field": null,
+      "source": "No command found matching '{0}'.",
+      "translation": "Příkaz odpovídající zadání „{0}“ nebyl nalezen.",
+      "sourceSHA256": "05e59bdd5334a69546e5224a8e823de88dbe69f914a346afdab9d22e882ca243",
+      "translationSHA256": "6ff13d757a5e600de44141e21274bd3566887f41d23703e5afce4ddbd0dae951",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Kick_Help",
+      "field": null,
+      "source": "{0} [farmer name/user id]: disconnects the player.",
+      "translation": "{0} [jméno farmáře/ID uživatele]: odpojí hráče.",
+      "sourceSHA256": "2d7c4d9195dfcc72e5dfb3612d78bde66c23f5e4d30528205f181463ef668539",
+      "translationSHA256": "aeff7242ea5f3d6b3ebf71c5df16b270dfae052869dd891c29aca86c7ab46173",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_List_Help",
+      "field": null,
+      "source": "{0}: list online players.",
+      "translation": "{0}: vypíše hráče, kteří jsou online.",
+      "sourceSHA256": "653abf42ff20f3ff412bda79ce4aa55723932e6d6e2741a64b1462204d75faa4",
+      "translationSHA256": "94ad149a451fdbceda2c4ae5185b457c252a2f0f40afc58223fb811647f12891",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_MapScreenshot_Help",
+      "field": null,
+      "source": "{0}: save a screenshot of the current location's full map.",
+      "translation": "{0}: uloží snímek celé mapy aktuální lokace.",
+      "sourceSHA256": "82e3255851c698f64280e78babae3c60c80b343a0fe98336db9b12d0759c6b96",
+      "translationSHA256": "f41abe582e1c58836023ed955dd7e6051d885244fa68387ee4516f3fce79fb7f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Message_Help",
+      "field": null,
+      "source": "{0} [farmer name]: sends a private message to a player.",
+      "translation": "{0} [jméno farmáře]: odešle hráči soukromou zprávu.",
+      "sourceSHA256": "4ecc26059f811b5d399ccf2faf6194abacf4742ed0a371bf153a905dc9643f49",
+      "translationSHA256": "51e072105ce67bcc9e054f34d76da6be1894fe918341897ed89584d7ace0d8b9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Pause_Help",
+      "field": null,
+      "source": "{0}: pause the game for all players.",
+      "translation": "{0}: pozastaví hru všem hráčům.",
+      "sourceSHA256": "c57f2025827ae2411b95b319fdf56cfc93461ea49d4af2a0aa9ba125eb581e95",
+      "translationSHA256": "efde6634cb1e2dda53611b60081b8b8b24356a09311979caa8b2eb7dfc3aa4b8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_1",
+      "field": null,
+      "source": "Mr. Qi: Hey, kid. Yeah, I'm here. What'd you expect?",
+      "translation": "Pan Qi: Hej, děcko. Jo, jsem tady. Snad tě to nepřekvapuje?",
+      "sourceSHA256": "8867a38045c335441210c563fa6d3511714d5c7ac6602629ba3875a9967ed600",
+      "translationSHA256": "0afb18bcc251254b2023770bf5471ed33157e22aef7121f6d910ff9550558326",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_2",
+      "field": null,
+      "source": "Mr. Qi: Hey... keep up the good work, and never stop striving for success!      I'll see you soon, kid...",
+      "translation": "Pan Qi: Hej... jen tak dál a nikdy nepřestávej usilovat o úspěch!      Brzy se uvidíme, děcko...",
+      "sourceSHA256": "ea50a2a2d859109952970803d599bd5b627da165a885aea307cd054512b37622",
+      "translationSHA256": "8b127a3349e13333673cdeab05270e2f5ccf4b68d8dea6a6619e6e1c87eea14e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Qi_3",
+      "field": null,
+      "source": "Mr. Qi is away",
+      "translation": "Pan Qi je pryč",
+      "sourceSHA256": "64b3e2952bb558b7557928bf70764ce701521db338134116a0140d46817a8c7d",
+      "translationSHA256": "fe77b7d1fb6da54aac943965a36486957d8f5456922352be13b6d50ef216da01",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Help",
+      "field": null,
+      "source": "{0}: replies to a private message.",
+      "translation": "{0}: odpoví na soukromou zprávu.",
+      "sourceSHA256": "cd0bdfcb736639f6e8f1d31c7be746961843172e4a2c0dd736ee25a509927272",
+      "translationSHA256": "23d7eb87def396abcfb772c82d12371ae33c9329eb2fd233aa5cc9b5c3cb68c1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_Failed",
+      "field": null,
+      "source": "Could not send reply",
+      "translation": "Odpověď se nepodařilo odeslat",
+      "sourceSHA256": "438a6453ca29868ec7d0c97fd74bab98c655843a34d55c5d687ade322f8a5810",
+      "translationSHA256": "aa1ac82f2a93a552aa7465bdfb290447508111fc6e078d36289abd15194992c5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Reply_NoMessageFound",
+      "field": null,
+      "source": "No player to reply to",
+      "translation": "Není komu odpovědět",
+      "sourceSHA256": "d14c2bb7296ab202cd30628df775d062928a0064c563e89256f230a61e22e0f6",
+      "translationSHA256": "8a994011031fcd4ea7e6681495aa27ad3b3d675486228cfdf6f845aae79a6837",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Resume_Help",
+      "field": null,
+      "source": "{0}: resume a paused game.",
+      "translation": "{0}: obnoví pozastavenou hru.",
+      "sourceSHA256": "d7324602c286d91037b128e9694fc73ae1dededd16df12e21c4296dab3739054",
+      "translationSHA256": "5826e279da6f67bdcc24680918b4fdd2523327d59991cfc36c56858690f62eb2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_All",
+      "field": null,
+      "source": "All",
+      "translation": "Všichni",
+      "sourceSHA256": "a52ace420f2175d08b1577a1bea5445e36801229c074ef9ed6c55a73401fd9c2",
+      "translationSHA256": "936513c1130a7289087ba64733282cdb5d104a6b657d33efac056e47ad0364e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_First",
+      "field": null,
+      "source": "First",
+      "translation": "První",
+      "sourceSHA256": "a151ceb1711aad529a7704248f03333990022ebbfa07a7f04c004d70c167919f",
+      "translationSHA256": "a2d38099391982aa1bd71a6652b7517d96e2e771d80a51152368ad6f809cb8c4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_SleepAnnounceMode_Off",
+      "field": null,
+      "source": "Off",
+      "translation": "Vypnuto",
+      "sourceSHA256": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+      "translationSHA256": "dafac89bbdc4870f2b0fb1c76b94b78642de0656d87e40cf9d9baca01a074215",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_Help",
+      "field": null,
+      "source": "{0} [farmer name/user id]: unbans the player from this farm.",
+      "translation": "{0} [jméno farmáře/ID uživatele]: zruší hráči zákaz přístupu na tuto farmu.",
+      "sourceSHA256": "924b011acfc1309d7c9fce99f30a6ad7fa94ef92f6bdd227214c70c8b87799ef",
+      "translationSHA256": "f6322b12295cc6c5cb10347ad8f26dd0ac26829423abf1ad0eba06587645b84d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_Done",
+      "field": null,
+      "source": "{0} was unbanned",
+      "translation": "Hráč {0} už nemá zakázaný přístup",
+      "sourceSHA256": "d192e2544d2713f35df8ab5b4758a2452a6c29f1f69492295eaff0f2777adde9",
+      "translationSHA256": "83b57cb49f3378a77f3c9f74fae68db1924ca2f6f01bfb55646ecbf952433a19",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_NoPlayersBanned",
+      "field": null,
+      "source": "No players are banned",
+      "translation": "Žádný hráč nemá zakázaný přístup",
+      "sourceSHA256": "39ffe57948712c55a2e993966cfe2b4e20d2fbde0f07047e4253376ae1a31bdf",
+      "translationSHA256": "eca3cd7134b73581064356ef05d9c4b1a277f392236a02e7fdc60259240b7b74",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_PlayerList",
+      "field": null,
+      "source": "Banned Players:",
+      "translation": "Hráči se zakázaným přístupem:",
+      "sourceSHA256": "69f4ec13e7b0a71514d60f34b18fd38c464f81856ce90e1666aac69ec68bb15c",
+      "translationSHA256": "fe0cb3930aab2c025f1468998977ff822e93f911060ec4a5ad500ac99c13c617",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_Unban_PlayerNotFound",
+      "field": null,
+      "source": "Could not find a banned player with that name or id.",
+      "translation": "Hráč se zakázaným přístupem a tímto jménem či ID nebyl nalezen.",
+      "sourceSHA256": "5007d4c9fbf1ad2f86160351ac3a5c826da1eba23e929f37637d11ef7f4f25eb",
+      "translationSHA256": "473b6a5e2d7ffd7cd90635375cd71d920fd744cf3d7a39cc19030181756692f3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnbanAll_Help",
+      "field": null,
+      "source": "{0}: unbans all players from this farm.",
+      "translation": "{0}: zruší všem hráčům zákaz přístupu na tuto farmu.",
+      "sourceSHA256": "aa6cc4296309d36d8ead7245735727c440a4ddcbb886dfbbb011bcd1af04bfd7",
+      "translationSHA256": "246d986a96193837a45785c763f3ca136db05ffc0d4cc48fdfe806f2476205d3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnbanAll_Done",
+      "field": null,
+      "source": "All banned players were unbanned",
+      "translation": "Zákaz přístupu byl zrušen všem hráčům",
+      "sourceSHA256": "c73cfb0111fdf6f79e3c403868bb13da255f87e86f909d1de6b996d823cd345d",
+      "translationSHA256": "048f6d8af965685a12e0ac92f198b34053be2d6073b03bc4336609f0e5b3ef07",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ChatCommands_UnlinkPlayer_Help",
+      "field": null,
+      "source": "{0} [farmer name/user id]: let anyone claim this character when they connect.",
+      "translation": "{0} [jméno farmáře/ID uživatele]: umožní komukoli převzít tuto postavu při připojení.",
+      "sourceSHA256": "cc7b9f79f87f3d967a2a5101e6cdc3a5dc1f0b71b178627808e8ad9d9ba605d1",
+      "translationSHA256": "c15e89dd1952aae8ff98af2c1623134cf0a90d369866485d3ba00b4eaebe9305",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "SocialPage_Relationship_MarriedToOtherPlayer_FemaleNpc",
+      "field": null,
+      "source": "(married)",
+      "translation": "(vdaná)",
+      "sourceSHA256": "686a3c533b036938cc6f79c88252ca55cae221c778ad6cd912c042e43892644b",
+      "translationSHA256": "43b769491aad2db7d95029f6837a2f017dc12387c0df3ddc6840e861e7c539e6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "SocialPage_Relationship_MarriedToOtherPlayer_MaleNpc",
+      "field": null,
+      "source": "(married)",
+      "translation": "(ženatý)",
+      "sourceSHA256": "686a3c533b036938cc6f79c88252ca55cae221c778ad6cd912c042e43892644b",
+      "translationSHA256": "39f7d0d59e5b590b4cb58b4dd2aef068851b76e25f6a392be43bfff08a1bb1af",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ReadyCheck",
+      "field": null,
+      "source": "Waiting for other players... ({0}/{1})",
+      "translation": "Čekání na ostatní hráče... ({0}/{1})",
+      "sourceSHA256": "7fb1293642bf2f8e1a775b745b27af7dab88942e82cdf9a5dae79f933d1d7642",
+      "translationSHA256": "97e424f01ecbd1c7230a9f3b2635bd0fcc1011f9e0ba31587658f40e1023643f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PendingProposal",
+      "field": null,
+      "source": "Waiting for the other player...",
+      "translation": "Čekání na druhého hráče...",
+      "sourceSHA256": "73e8590e4887bf74e8307b78dfb3099ac03b2cffcc027a972c386c88a52d7f7f",
+      "translationSHA256": "2f709e2c7ca59547b0474dfeea2267e4b43ed946561fb624880263662008d3bc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_Male",
+      "field": null,
+      "source": "Offer your {0} to {1}?",
+      "translation": "Nabídnout hráči {1} váš předmět {0}?",
+      "sourceSHA256": "570f92327ac5ce193d2a5b4405ba36396e34b41d24267717295350e3854e5f22",
+      "translationSHA256": "8fd38e16ee11f5eb51a94b776dd4a7e2fe51c8a5d4079cde3b407c42c9601f22",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_Female",
+      "field": null,
+      "source": "Offer your {0} to {1}?",
+      "translation": "Nabídnout hráčce {1} váš předmět {0}?",
+      "sourceSHA256": "570f92327ac5ce193d2a5b4405ba36396e34b41d24267717295350e3854e5f22",
+      "translationSHA256": "198ee50430c449170194b93ae7ebcec4542fe39ad8f6ce517b6513c877cd875f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_NoInventorySpace_Male",
+      "field": null,
+      "source": "{0} doesn't have space for this item.",
+      "translation": "{0} nemá pro tento předmět místo.",
+      "sourceSHA256": "b60537cccd744b36baa1a920c3745e180f40ef115a25f2a76f552cf611b67635",
+      "translationSHA256": "3cebe08dfd105b58bcc17ac13470f8821e9bc597063a9302e5daed30c7022c79",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "GiftPlayerItem_NoInventorySpace_Female",
+      "field": null,
+      "source": "{0} doesn't have space for this item.",
+      "translation": "{0} nemá pro tento předmět místo.",
+      "sourceSHA256": "b60537cccd744b36baa1a920c3745e180f40ef115a25f2a76f552cf611b67635",
+      "translationSHA256": "3cebe08dfd105b58bcc17ac13470f8821e9bc597063a9302e5daed30c7022c79",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Proposal_PlayerBusy_Male",
+      "field": null,
+      "source": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "{0} teď nemůže vaši žádost vyřídit. Zkuste to za chvíli znovu.",
+      "sourceSHA256": "b18ffc8d7808a86be8c1110fc30eba4ac1fd2a06a7b85b7738d4b05609fb7401",
+      "translationSHA256": "70929995a8f9b6e6a9c4f911b8e5208e755229c8cc4aeb8b3e4419c6009501d2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Proposal_PlayerBusy_Female",
+      "field": null,
+      "source": "{0} can't handle your request right now. Try again in a moment.",
+      "translation": "{0} teď nemůže vaši žádost vyřídit. Zkuste to za chvíli znovu.",
+      "sourceSHA256": "b18ffc8d7808a86be8c1110fc30eba4ac1fd2a06a7b85b7738d4b05609fb7401",
+      "translationSHA256": "70929995a8f9b6e6a9c4f911b8e5208e755229c8cc4aeb8b3e4419c6009501d2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Male",
+      "field": null,
+      "source": "{0} has asked you to dance with him. Will you dance with {0}?",
+      "translation": "{0} vás požádal o tanec. Zatančíte si s hráčem {0}?",
+      "sourceSHA256": "58bfbe369eba945c9abe6d0b3062151f8fd3767fe959e51ba3d3ea668be963fd",
+      "translationSHA256": "1a7fa86d926c10c9a2e4fcfe4cf1bb36b4dae29d21a9f173380c7d40d5914d97",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Female",
+      "field": null,
+      "source": "{0} has asked you to dance with her. Will you dance with {0}?",
+      "translation": "{0} vás požádala o tanec. Zatančíte si s hráčkou {0}?",
+      "sourceSHA256": "6c25c2153d0ba999ee829fa0454aa374de5e5c507a8e208fb75783c0c103031e",
+      "translationSHA256": "65fc41de1919c4bcd38e4fed86161e0f71ce1a43adad855097eab6fafb4c680c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Male",
+      "field": null,
+      "source": "{0} has asked you to marry him! Will you accept his offer of marriage?",
+      "translation": "{0} vás požádal o ruku! Přijmete jeho nabídku k sňatku?",
+      "sourceSHA256": "3ccc9a6fd96bb055fb844832c9af94928014ee902c489683bb63903177f04f05",
+      "translationSHA256": "a254037fc3fd5cea3bef59f51c8921f0cc7fa208e4528458ac01a6ab938f2fb3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Female",
+      "field": null,
+      "source": "{0} has asked you to marry her! Will you accept her offer of marriage?",
+      "translation": "{0} vás požádala o ruku! Přijmete její nabídku k sňatku?",
+      "sourceSHA256": "a8eee26175da49600990129ddb38c34c64355d04c1a563b0dd56b3d51ef06f7d",
+      "translationSHA256": "d0d94c8a7d11fd1d13487d110a64bc76d6eacc79091213d87e94d91f08143492",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Male",
+      "field": null,
+      "source": "{0} has asked you to have a baby with him! Do you want to have a baby?",
+      "translation": "{0} se vás zeptal, jestli spolu budete mít miminko! Chcete mít dítě?",
+      "sourceSHA256": "b367462703e327e8471f7816095f666b49aaf040b0d573e5a5fd51eb945cef7c",
+      "translationSHA256": "16f86ff1b51d4b03e3807375f50e7912b1040d656b4885bdb9d60b0053b41dc3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Female",
+      "field": null,
+      "source": "{0} has asked you to have a baby with her! Do you want to have a baby?",
+      "translation": "{0} se vás zeptala, jestli spolu budete mít miminko! Chcete mít dítě?",
+      "sourceSHA256": "17d8615a301d036ec369c1a7d2a47cf369fb78e92a762a8bd9ab989a609a9755",
+      "translationSHA256": "705292e53be236da63bd42d164081b777bd3098b8eed1c70cedfd9bd173d7432",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToAdoptBaby_Male",
+      "field": null,
+      "source": "{0} has asked you to adopt a baby with him! Do you want to have a baby?",
+      "translation": "{0} se vás zeptal, jestli spolu adoptujete miminko! Chcete mít dítě?",
+      "sourceSHA256": "af8bd9f25003855bf6e51978dd9ef5a00c7d9c33d8101ab11a0a618ac5d37645",
+      "translationSHA256": "b753066216ec259e327f0fa880480c2edf905e22cf31ae5a3608ee1c580f7178",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToAdoptBaby_Female",
+      "field": null,
+      "source": "{0} has asked you to adopt a baby with her! Do you want to have a baby?",
+      "translation": "{0} se vás zeptala, jestli spolu adoptujete miminko! Chcete mít dítě?",
+      "sourceSHA256": "93b012ba5bd6bf249de7834daf44bee3db35a496f4aceeb710a9ab3b2ab0480e",
+      "translationSHA256": "fae774f21de0fdd682df472f1ed279fe2e93e1f7124302b93edee73885b1e994",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Accepted_Male",
+      "field": null,
+      "source": "{0} accepted your offer to dance!",
+      "translation": "{0} přijal vaše pozvání k tanci!",
+      "sourceSHA256": "4a6816361740cd9674284024c1867e194e453a11127478eab89ece11e0c5a4a6",
+      "translationSHA256": "c7c2c8f0928fbeba04b3dbd59eb3e6887694dd13b4b1b4bdcffb4ced24657122",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Accepted_Female",
+      "field": null,
+      "source": "{0} accepted your offer to dance!",
+      "translation": "{0} přijala vaše pozvání k tanci!",
+      "sourceSHA256": "4a6816361740cd9674284024c1867e194e453a11127478eab89ece11e0c5a4a6",
+      "translationSHA256": "4fe6110449132cfc218bffc86ae0b259b1c63c0cfa79e6a62811ab094adbe7ba",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Accepted_Male",
+      "field": null,
+      "source": "{0} accepted your offer of marriage!^The ceremony will take place in 3 days.",
+      "translation": "{0} přijal vaši nabídku k sňatku!^Obřad se bude konat za 3 dny.",
+      "sourceSHA256": "6f1f7d31cef74c960effaef728ab7c02ea9a54b04471c5d001b30c8c7d09413d",
+      "translationSHA256": "d06654f253b40d1b245c9f14be987dda85ec37f211247f9fe0c86f888bde5325",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Accepted_Female",
+      "field": null,
+      "source": "{0} accepted your offer of marriage!^The ceremony will take place in 3 days.",
+      "translation": "{0} přijala vaši nabídku k sňatku!^Obřad se bude konat za 3 dny.",
+      "sourceSHA256": "6f1f7d31cef74c960effaef728ab7c02ea9a54b04471c5d001b30c8c7d09413d",
+      "translationSHA256": "2047c6b313bac4dfa3fe12834b12dff2bc64dc7e9472c24aee1ac52fa2b8ac5a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Accepted_Male",
+      "field": null,
+      "source": "{0} agreed to have a baby with you! It's due in 14 days.",
+      "translation": "{0} souhlasil, že s vámi bude mít miminko! Narodí se za 14 dní.",
+      "sourceSHA256": "be89d6e1244e0f7ec36604b9b46d7f7ea6151f7afbe4598323e22d824eaeb0de",
+      "translationSHA256": "7283f562b7b9260d7585ed8f44ef3271df62cb1429a668d22e7d0f76c032f967",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Accepted_Female",
+      "field": null,
+      "source": "{0} agreed to have a baby with you! It's due in 14 days.",
+      "translation": "{0} souhlasila, že s vámi bude mít miminko! Narodí se za 14 dní.",
+      "sourceSHA256": "be89d6e1244e0f7ec36604b9b46d7f7ea6151f7afbe4598323e22d824eaeb0de",
+      "translationSHA256": "d31dc99f1e26b1cc2dd6012b3219d830007ed27cbb983e4ccf800c7b470f2e18",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Rejected_Male",
+      "field": null,
+      "source": "{0} has decided he'd rather not have a baby at this point.",
+      "translation": "{0} se rozhodl, že teď raději miminko mít nechce.",
+      "sourceSHA256": "d27d3585cf48a4f87d9439198ae72cd76a78d0647b04341bcbae120fcb354393",
+      "translationSHA256": "be290635cf74e66affbb007b08035272ff4e8fb577cd58efa787b79cb9772b50",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToHaveBaby_Rejected_Female",
+      "field": null,
+      "source": "{0} has decided she'd rather not have a baby at this point.",
+      "translation": "{0} se rozhodla, že teď raději miminko mít nechce.",
+      "sourceSHA256": "4ce875d2cfd3a673eb31afdd18da0da10e0fd629f1423c6bf0a92662c0b76bd4",
+      "translationSHA256": "dab0de6304eac4773938dc3c392a551f30ca448109a33c5925294a4d564642c9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToAdoptBaby_Accepted_Male",
+      "field": null,
+      "source": "{0} agreed to adopt a baby with you! The paperwork has all been filed. The baby is due to arrive in 14 days.",
+      "translation": "{0} souhlasil, že s vámi adoptuje miminko! Všechny dokumenty jsou podané. Miminko by mělo dorazit za 14 dní.",
+      "sourceSHA256": "1f8e011b16d064748250976268a3d09ccb38d750e3a8416e0b6f67f8b4907720",
+      "translationSHA256": "f4a39a21f49bff29d5c5c612bb74f63c686b564c476192bcf1669273009f861a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToAdoptBaby_Accepted_Female",
+      "field": null,
+      "source": "{0} agreed to adopt a baby with you! The paperwork has all been filed. The baby is due to arrive in 14 days.",
+      "translation": "{0} souhlasila, že s vámi adoptuje miminko! Všechny dokumenty jsou podané. Miminko by mělo dorazit za 14 dní.",
+      "sourceSHA256": "1f8e011b16d064748250976268a3d09ccb38d750e3a8416e0b6f67f8b4907720",
+      "translationSHA256": "f0f4a0686d6049da17a7bbe311e1caf733829abc4bc3b0e22125216066460880",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToAdoptBaby_Rejected_Male",
+      "field": null,
+      "source": "{0} has decided he'd rather not adopt a baby at the moment.",
+      "translation": "{0} se rozhodl, že teď raději miminko adoptovat nechce.",
+      "sourceSHA256": "f72c679d6fc47464c8e4d4e4f2de385287da93e3fbbbd78f76d9d7e264c4d45d",
+      "translationSHA256": "2c0d9e0facee593b1a4129e743e3a3f09f574802f5a1ef60f812f293612b4fd4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToAdoptBaby_Rejected_Female",
+      "field": null,
+      "source": "{0} has decided she'd rather not adopt a baby at the moment.",
+      "translation": "{0} se rozhodla, že teď raději miminko adoptovat nechce.",
+      "sourceSHA256": "b907ead0a11e52ace2302caac089f831662092f4ee9b738b32c312faeee963fb",
+      "translationSHA256": "801cbdf74e78b28ace9dd6e561fc20c823f94f6a34def0752297cd86164aab10",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_NotSingle_Male",
+      "field": null,
+      "source": "{0} is not single!",
+      "translation": "{0} není nezadaný!",
+      "sourceSHA256": "5cd9e3c880a4688bec4cf4522d7c106c78eb8dcfcae6930142f3a5191c05d1c4",
+      "translationSHA256": "b527259bc112b115fa99de42404840b9da851ecd2d6c736777562b5d30e93b52",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_NotSingle_Female",
+      "field": null,
+      "source": "{0} is not single!",
+      "translation": "{0} není nezadaná!",
+      "sourceSHA256": "5cd9e3c880a4688bec4cf4522d7c106c78eb8dcfcae6930142f3a5191c05d1c4",
+      "translationSHA256": "ba92f17fc6bdeeb2b75bcddd5c8d61923bf9aa365a382f4e1c2966c1c981e1d3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Rejected_Male",
+      "field": null,
+      "source": "{0} refused your offer to dance.",
+      "translation": "{0} odmítl vaše pozvání k tanci.",
+      "sourceSHA256": "7cf7f40ca83d3a2c8d588ca39c7c5244e2846d1b4a83765cc20557821e9902e6",
+      "translationSHA256": "09e8c3232426759cfbf653221b7dab4f398c20cadac453823b5caa6598a4a0bb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToDance_Rejected_Female",
+      "field": null,
+      "source": "{0} refused your offer to dance.",
+      "translation": "{0} odmítla vaše pozvání k tanci.",
+      "sourceSHA256": "7cf7f40ca83d3a2c8d588ca39c7c5244e2846d1b4a83765cc20557821e9902e6",
+      "translationSHA256": "e3dc86037f32cf1512bf749e9acf73b4db838e51db3f32dd7bc9f0c20818e9a6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AskedToMarry_Rejected_Male",
+      "field": null,
+      "source": "{0} turned down your offer of marriage.",
+      "translation": "{0} odmítl vaši nabídku k sňatku.",
+      "sourceSHA256": "000719e7149969472a035e7b36b5975bf57dab2be76c72af911c350d1289a69c",
+      "translationSHA256": "b9046f77c8c1e39503bafac02b4dc90f6fd1b2e8415f08b6fba19a9db4e22286",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

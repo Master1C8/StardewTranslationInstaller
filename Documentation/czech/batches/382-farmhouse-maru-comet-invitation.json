@@ -1,0 +1,28 @@
+{
+  "id": "382-farmhouse-maru-comet-invitation",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read the complete comet invitation after the audit correction. Reordered the comet sentence into natural Czech while preserving the rare-event meaning. Verified Maru feminine voice, spouse-neutral address, time and weather fallback, @ placeholder, markers and all commands; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "3917666/f Maru 3500/O Maru/t 610 1700/p Maru/d Sun/z winter",
+      "field": null,
+      "source": "sweet/-1000 -1000/farmer 23 24 3 Maru 22 24 1/makeInvisible 23 24/viewport -100 -100 true unfreeze/pause 3000/speak Maru \"Hi Honey.#$b#Tomorrow night, there's a rare astronomical event happening... A comet is passing very close to our planet!#$b#I was thinking... maybe we should observe it together?$l\"/pause 100/emote farmer 32/speak Maru \"Great!$h#$b#Meet me in the mountains at midnight tomorrow night.#$b#If it rains, we'll do it on the next night... the comet is here for a few days.\"/pause 500/pause 500/end",
+      "translation": "sweet/-1000 -1000/farmer 23 24 3 Maru 22 24 1/makeInvisible 23 24/viewport -100 -100 true unfreeze/pause 3000/speak Maru \"Ahoj, zlato.#$b#Zítra v noci nastane vzácný astronomický úkaz... Velmi blízko naší planety proletí kometa!#$b#Napadlo mě... možná bychom ji mohli pozorovat spolu?$l\"/pause 100/emote farmer 32/speak Maru \"Skvělé!$h#$b#Sejdeme se zítra o půlnoci v horách.#$b#Pokud bude pršet, zkusíme to následující noc... kometa tu bude několik dní.\"/pause 500/pause 500/end",
+      "sourceSHA256": "43abf8322b3b30bda27e9d9ebf7ee70b6bf5212881a253e3f5e54305e17e6e80",
+      "translationSHA256": "c894ddb2f06b858681feee3919a29d0732556ec111ed144e7df145adeddece2a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

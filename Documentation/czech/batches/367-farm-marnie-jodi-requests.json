@@ -1,0 +1,47 @@
+{
+  "id": "367-farm-marnie-jodi-requests",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read both complete Marnie and Jodi request events after the audit correction. Replaced the calqued dinner invitation with the idiomatic pozvat na dnešní večeři k nám. Verified character voice and gender, explicit player title variants, quest IDs, cave carrot and largemouth bass terms, times, dialogue markers and all event commands; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "91/f Marnie 750/t 600 930",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/skippable/speak Marnie \"Good morning, ${Mr.^Ms.}$ @!$h#$b#I came by to ask you a favor, since you're such a kind neighbor.#$b#You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots!$u#$b#So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?#$b#There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye.\"/pause 300/end dialogue Marnie \"My goats go wild over cave carrot... I can't imagine why.\"",
+      "translation": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/skippable/speak Marnie \"Dobré ráno, ${pane^slečno}$ @!$h#$b#Přišla jsem tě požádat o laskavost. Vždycky se na tebe dá spolehnout.#$b#Víš, snažím se naučit své kozy říkat ‚ahoj‘... ale prostě mi nevěnují pozornost, pokud nemám jejich oblíbený pamlsek: jeskynní mrkev!$u#$b#Takže... protože mám z Dolů strach... napadlo mě, zda by se ti někdy nechtělo přinést mi jeskynní mrkev, až bude příležitost?#$b#Žádný nátlak... ale pokud chceš, zastav se u mě doma mezi 9:00 a 17:00 s jeskynní mrkví. Uděláš jedné staré holce velkou radost. Ahoj.\"/pause 300/end dialogue Marnie \"Moje kozy po jeskynní mrkvi šílí... Nechápu proč.\"",
+      "sourceSHA256": "13b3ffed63efa92b5456290b81884e8e42740913fc5698e79e2eba779f4b9993",
+      "translationSHA256": "6eb480272ef25c2c94391f268d2f5f0fbad7e6cb1c411fa134eb9c05fcdcfd98",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "93/f Jodi 1000/t 600 930/d Tue Wed Thu Fri Sat Sun",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/skippable/speak Jodi \"*puff* ...hi @! *pant* Whew... that was quite a workout, walking all the way up here.$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"Anyway... I came by to ask if you wanted to have dinner with us tonight!#$b#You don't have to... but if you decide to come, could you please bring a largemouth bass with you?#$b#...that's right. One of those big, slimy fish from the lake. I need one for the casserole I'm making.$h#$b#Okay, well... it'll be at our house at around 7:00 PM tonight... don't forget the largemouth bass! Bye.\"/pause 300/end dialogue Jodi \"Fish casserole always hits the spot.\"",
+      "translation": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/skippable/speak Jodi \"*funí*... ahoj, @! *oddechuje* Uf... Vyjít celou cestu až sem, to byla pořádná rozcvička.$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"Každopádně... Chtěla jsem tě pozvat na dnešní večeři k nám!#$b#Nemusíš chodit... ale pokud se rozhodneš přijít, přines prosím okouna velkoústého.#$b#...přesně tak. Jednu z těch velkých, slizkých ryb z jezera. Potřebuji ji do nákypu, který připravuju.$h#$b#Tak dobře... dnes kolem 19:00 u nás doma... Nezapomeň na okouna velkoústého! Ahoj.\"/pause 300/end dialogue Jodi \"Rybí nákyp vždycky přijde k chuti.\"",
+      "sourceSHA256": "a55c40db99d559ca11e28c74e032644ce8695930cdba0e67859a45c013d5e521",
+      "translationSHA256": "450acea0c86893c7c0814728782956bf3bc1e558a102034fe2e2e104d163f55e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

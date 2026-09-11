@@ -1,0 +1,296 @@
+{
+  "id": "560-ice-festival-events-spouses-y1",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 15 EN/CS rows; preserved the festival setup and every event command outside quoted text, translated all event speech and result messages in place, and maintained the canonical festival and ice-fishing terms, spouse voices, emotes, and player tokens.",
+  "rows": [
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "name",
+      "field": null,
+      "source": "Festival of Ice",
+      "translation": "Ledový festival",
+      "sourceSHA256": "3a2130899af0f9f9ef50767ee9bcbfd4bb94d70f2f99b5285065a055b432cd34",
+      "translationSHA256": "8c359e7c29f3e3b4795cc9e906bd67b4257f2e85484b5513a0c2242ba74050f4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "conditions",
+      "field": null,
+      "source": "Forest/900 1400",
+      "translation": "Forest/900 1400",
+      "sourceSHA256": "ae388d824db6ec6eb21b8b5827887553632f8ace708be330f768a39dd28ca673",
+      "translationSHA256": "ae388d824db6ec6eb21b8b5827887553632f8ace708be330f768a39dd28ca673",
+      "preservationReason": "Festival location and time-window syntax are runtime data and must remain unchanged.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "set-up",
+      "field": null,
+      "source": "christmasTheme/-1000 -1000/farmer 68 0 1/changeToTemporaryMap Forest-IceFestival/viewport -1000 -1000/loadActors Set-Up/animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27/advancedMove Pierre true -1 0 0 -1 1 5000 0 1 1 0 4 5000/advancedMove Vincent true 0 3 3 0 2 5000 0 -5 2 0 1 5000 -5 0 0 2 3 5000/advancedMove Pam true -5 0 0 1 2 5000 0 -1 5 0 2 7000/playerControl iceFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "christmasTheme/-1000 -1000/farmer 68 0 1/changeToTemporaryMap Forest-IceFestival/viewport -1000 -1000/loadActors Set-Up/animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27/advancedMove Pierre true -1 0 0 -1 1 5000 0 1 1 0 4 5000/advancedMove Vincent true 0 3 3 0 2 5000 0 -5 2 0 1 5000 -5 0 0 2 3 5000/advancedMove Pam true -5 0 0 1 2 5000 0 -1 5 0 2 7000/playerControl iceFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "sourceSHA256": "0844013615ce31501b271060f34eadc01667e0e6f39f4a047fc830828dd208dd",
+      "translationSHA256": "0844013615ce31501b271060f34eadc01667e0e6f39f4a047fc830828dd208dd",
+      "preservationReason": "Festival map, music, actor, animation, movement, viewport, and player-control commands are runtime data and contain no player-facing prose.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "mainEvent",
+      "field": null,
+      "source": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"Alright, everyone. Let's begin this year's ice fishing competition.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Contestants, your goal is to catch as many fish as you possibly can in two minutes using the provided fishing rods.#$b#You must catch your fish here, from these holes in the ice.\"/pause 600/speak Lewis \"Well, is everyone ready?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Begin!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+      "translation": "globalFade/viewport -1000 -1000/playMusic none/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/loadActors Main-Event/faceDirection Pam 1/faceDirection Elliott 0/faceDirection Willy 0/viewport 71 35 true/pause 2000/speak Lewis \"Dobře, všichni. Zahajme letošní soutěž v lovu ryb pod ledem.\"/pause 200/faceDirection Lewis 3/pause 300/faceDirection Lewis 2/faceDirection Lewis 1/pause 300/faceDirection Lewis 2/pause 400/speak Lewis \"Soutěžící, vaším cílem je během dvou minut nachytat se zapůjčenými pruty co nejvíce ryb.#$b#Ryby musíte chytat tady, v těchto dírách v ledu.\"/pause 600/speak Lewis \"Tak co, jsou všichni připravení?\"/pause 500/waitForOtherPlayers startContest/jump Lewis/faceDirection Pam 2 true/faceDirection Elliott 1 true/faceDirection Willy 2 true/speak Lewis \"Začněte!\"/advancedMove Lewis false 0 -4 2 1000/advancedMove Marnie true 4 6000 -2 0 4 5000 2 0/advancedMove Maru true 3 4000 0 2 3 7000 0 -2/advancedMove Jas true 2 0 0 -9 -4 0 2 20000 4 0 0 9 -2 0 3 15000/advancedMove Jodi true 1 6000 -1 0 0 2 1 8000 0 -1 1 6000 0 -1 1 0/jump Willy/shake Pam 700/showFrame Pam 16/extendSourceRect Pam 0 32/showFrame Elliott 40/extendSourceRect Elliott 16 0/shake Elliott 400/pause 300/showFrame Willy 16/extendSourceRect Willy 0 32/playMusic fallFest/playerControl iceFishing",
+      "sourceSHA256": "f40d67731c50c228c1204a245deca0561598bf3c557b118ba469908da3c700ee",
+      "translationSHA256": "e3e15eafb98f6502c5ae078778d3b9ca8233ff89c2c84b5b059a85288e5d75d4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "afterIceFishing",
+      "field": null,
+      "source": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Wow, that's a lot of fish!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*gag*... the smell...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"Now, for the winner of this year's ice fishing competition...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Here's your prize! Enjoy.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Well, that's it for this year's Festival of Ice. Thanks for coming, everyone! #$b#Now let's release these poor fish...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"I can't believe I won! Well, time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 100/playSound whistle/waitForOtherPlayers endContest/pause 1000/restoreStashedItem/globalFade/viewport -1000 -1000/extendSourceRect Pam reset/extendSourceRect Willy reset/extendSourceRect Elliott reset/specificTemporarySprite iceFishingCatch/faceDirection Pam 0/faceDirection Willy 0/faceDirection Elliott 0/playMusic event1/warpFarmers 71 35 0 72 35 0 70 35 0 69 35 0 73 35 0 71 36 0 70 36 0 72 36 0 69 36 0 73 36 0 left 73 37 0/pause 1000/viewport 71 35 true/pause 2000/move Lewis 0 4 2/speak Lewis \"Páni, to je spousta ryb!$h\"/pause 300/showFrame Lewis 18/shake Lewis 1000/speak Lewis \"*dávení*... ten zápach...$s\"/pause 500/showFrame Lewis 0/pause 600/move Lewis 0 1 2/speak Lewis \"A teď vyhlásíme vítěze letošní soutěže v lovu ryb pod ledem...\"/pause 800/playMusic none/pause 3000/cutscene iceFishingWinner/null/playMusic event1/pause 500/fork DickWin/move Lewis 0 1 2/speak Lewis \"Tady je tvoje cena! Užij si ji.\"/awardFestivalPrize/null/move Lewis 0 -1 0/speak Lewis \"Tak, a to je pro letošní Ledový festival vše. Děkuji všem, že jste přišli! #$b#Teď ty ubohé ryby vypusťme...$s\"/move Lewis -3 0 0/move Lewis 0 -1 0/advancedMove Willy true 0 3 -2 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/cutscene iceFishingWinnerMP/fork OtherPlayerWin/message \"Nemůžu uvěřit, že vítězství patří mně! Tak, je čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "0f4d805913a905384905d20224f3660ad97e102ee9e44553f778c991ada42563",
+      "translationSHA256": "f1fc2f15604d058da4ac016b1f47c4873f7ec02efd17e8f282bd3fce33fe6d1e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "OtherPlayerWin",
+      "field": null,
+      "source": "message \"I didn't win the competition, but it was still fun! Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "message \"Vítězství mi uniklo, ale i tak to byla zábava! Je čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "1732ccbbba3f221c80a4c42085b8a3a1d2f451610a5a3e2d31003ebe7f525bb0",
+      "translationSHA256": "6c41825a2de0854e8886f8c9935cb61918d57b3ca63d648739885c1121e22330",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "DickWin",
+      "field": null,
+      "source": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"Here's your prize, Willy. Enjoy.\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Well, that's it for this year's Festival of Ice. Thanks for coming, everyone!#$b#Now let's release these poor fish...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"I didn't win the competition, but it was still fun! Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 100/jump Willy/faceDirection Elliott 3/pause 800/move Willy 0 -1 0/faceDirection Elliott 0/speak Lewis \"Tady je tvoje cena, Willy. Užij si ji.\"/pause 500/move Willy 0 -2 0/move Lewis -1 0 2/move Lewis 0 1 2/playSound coin/pause 400/move Lewis 0 -1 0/pause 500/speak Lewis \"Tak, a to je pro letošní Ledový festival vše. Děkuji všem, že jste přišli!#$b#Teď ty ubohé ryby vypusťme...$s\"/move Lewis -2 0 0/pause 600/viewport move 1 0 5000/pause 2000/playMusic none/globalFade/viewport -1000 -1000/pause 1000/message \"Vítězství mi uniklo, ale i tak to byla zábava! Je čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "a9c8696bfc52d215f928821c08770d48987ad847b55b2dbc906eb1472e2a5bb7",
+      "translationSHA256": "eec71ba34a2ef32dbb372f2456e67c62310ad507d5e3a7805f968e0cbc595610",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Abigail_spouse",
+      "field": null,
+      "source": "Hey, honey... look, it's you!$h",
+      "translation": "Ahoj, zlato... podívej, to jsi ty!$h",
+      "sourceSHA256": "d6b03475cdc40bfc7f218f5721f74c84e257d1a59b498d6dfef400260d41108c",
+      "translationSHA256": "08ff5b6cc3e7a9f24f09e32fe6d94c0c0936874b2bdb6e429e78fb7004e78bcf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Penny_spouse",
+      "field": null,
+      "source": "Are you entering the fishing contest this year, @? My mom's pretty serious about winning.",
+      "translation": "Zúčastníš se letos rybářské soutěže, @? Moje máma bere vítězství dost vážně.",
+      "sourceSHA256": "96f9e538dc7a7cd03136b49f2ffab68925b74b6416b5cc7032839e75737bba7f",
+      "translationSHA256": "42d0ee27e4bd84d9c367f3faf8e6451b06e16c59388af2817573cb114f271296",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Haley_spouse",
+      "field": null,
+      "source": "Brr... my hands are freezing from making this snowman.$l",
+      "translation": "Brr... z toho stavění sněhuláka mi mrznou ruce.$l",
+      "sourceSHA256": "504bb29c8a045736f96ffa2c92c5b5d00f7d6d4a40e8f0d3890804672595bf35",
+      "translationSHA256": "728369c918a5a76f11ad6b6c2078b660788636c1bbe186432475071f056e3c49",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Sebastian_spouse",
+      "field": null,
+      "source": "Don't worry about me, I never get cold...",
+      "translation": "O mě se neboj, mně nikdy není zima...",
+      "sourceSHA256": "7d909e0cff6e45a0f13f5d18f635dc3d852bdc04ff1a9e2bec56ac53f453f69e",
+      "translationSHA256": "2ae6e191179c806068f88f87595938a3635887a774abab29e355e00a06015a71",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Sam_spouse",
+      "field": null,
+      "source": "Aren't you cold? Are you sure you don't want my jacket?",
+      "translation": "Není ti zima? Určitě nechceš mou bundu?",
+      "sourceSHA256": "5c696338db10b4cc0a35396a435b6109e734c37ced8bfdec2cc2e6111647eeb5",
+      "translationSHA256": "fa5ad598ceae49879eb38c8b0697a1c41e8066147e71f320d903fd41ffbaf6cf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Alex_spouse",
+      "field": null,
+      "source": "I'll be rooting for you in the fishing competition.",
+      "translation": "V soutěži v lovu ryb ti budu fandit.",
+      "sourceSHA256": "eff2053e18b25784cbf983997ed83b6e0a6c55f63985882b297139419c3b8eb1",
+      "translationSHA256": "e7d3b8c8be2dd8421e6f907b394f9f214d6f324b3f626ab74d2cf659ed846950",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Harvey_spouse",
+      "field": null,
+      "source": "I'm dreaming of our warm fire back home...$l",
+      "translation": "Sním o teple našeho domácího krbu...$l",
+      "sourceSHA256": "76ab8cb9a51fd5277b3d9fa2eac65da30db65de9c6afe611a6e6077d524c5959",
+      "translationSHA256": "5bcde5daee70e1785f1199399637378660b7c4a020faeb4075424a337c85dbd6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/winter8",
+      "key": "Elliott_spouse",
+      "field": null,
+      "source": "I know you'll beat me in the fishing competition, but I don't mind. I'm just here for the fun of it.$h",
+      "translation": "Vím, že mě v rybářské soutěži porazíš, ale nevadí mi to. Jsem tu jen pro zábavu.$h",
+      "sourceSHA256": "2a46d6c4d7247d399d3f7a6ea514e4b3b8a512f7bb71638c6849bf443bdcd5e3",
+      "translationSHA256": "997617acb737e61d257e3f4bdaf6d042fe93b14450abd51be67f5a94867e6ae4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "398-forest-children-sewer-key",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read the complete six-dialogue sewer-key event after the audit correction. Recast the key inference so the large rusty key naturally fits the creepy sewer door rather than the door belonging to a key. Verified Jas and Vincent voice, Kanalizace terminology, event meaning, markers and all commands; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Forest",
+      "key": "318560/j 10/t 900 1600/d Tue Wed Fri Sat",
+      "field": null,
+      "source": "communityCenter/94 99/farmer 98 88 2 Jas 95 100 3 Vincent 93 100 1/playMusic communityCenter/skippable/move farmer 0 6 2 true/pause 1000/speak Jas \"Ew... it smells.$s\"/pause 600/jump Vincent/pause 500/faceDirection Vincent 0/pause 500/showFrame Vincent 16/shake Vincent 400/playSound clank/pause 800/shake Vincent 400/playSound clank/pause 800/showFrame Vincent 8/speak Vincent \"...$s#$b#Why is it locked? I wanna explore the sewers!$s\"/pause 800/faceDirection Jas 0/pause 800/speak Jas \"I think Gunther has the key.\"/pause 300/faceDirection Vincent 1/speak Vincent \"Professor Gunther? The man who runs the museum? Why do you think he has it?$u\"/pause 500/faceDirection Jas 3/speak Jas \"I saw a big rusty old key fall out of his pocket one time.#$b#A creepy sewer door like this has just got to be a match for a big rusty old key.$4\"/playMusic none/pause 2000/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 500/emote Vincent 8 true/emote Jas 8 true/pause 900/faceDirection Vincent 0 true/faceDirection Jas 0 true/pause 1600/playSound shadowpeep/shake Vincent 5000/shake Jas 5000/jump Jas/jump Vincent/faceDirection farmer 3 true/faceDirection Vincent 0 true/faceDirection Jas 0 true/pause 1500/playSound shadowDie/jump Vincent/jump Jas/pause 800/speed Vincent 6/speed Jas 6/advancedMove Jas false 4 0 0 -7 -1 0/advancedMove Vincent false 6 0 0 -8 -1 0/proceedPosition Vincent 98 92/faceDirection farmer 0 true/faceDirection Jas 2 true/faceDirection Vincent 2 true/speak Jas \"There's something moving around in there!$u\"/shake Jas 4000/shake Vincent 4000/pause 1000/faceDirection farmer 2/pause 1000/move farmer 0 6 3 false/move farmer -4 0 0/pause 800/emote farmer 40/pause 1600/playSound shadowpeep/faceDirection farmer 2 true/jump farmer/showFrame 94/jump Vincent/jump Jas/speed Jas 4/speed Vincent 4/move Jas 0 -6 0 true/move Vincent 0 -6 0 true/pause 1000/globalFade/viewport -1000 -1000/end",
+      "translation": "communityCenter/94 99/farmer 98 88 2 Jas 95 100 3 Vincent 93 100 1/playMusic communityCenter/skippable/move farmer 0 6 2 true/pause 1000/speak Jas \"Fuj... smrdí to.$s\"/pause 600/jump Vincent/pause 500/faceDirection Vincent 0/pause 500/showFrame Vincent 16/shake Vincent 400/playSound clank/pause 800/shake Vincent 400/playSound clank/pause 800/showFrame Vincent 8/speak Vincent \"...$s#$b#Proč je zamčeno? Chci prozkoumat Kanalizaci!$s\"/pause 800/faceDirection Jas 0/pause 800/speak Jas \"Myslím, že klíč má Gunther.\"/pause 300/faceDirection Vincent 1/speak Vincent \"Profesor Gunther? Ten pán, co vede muzeum? Proč myslíš, že ho má?$u\"/pause 500/faceDirection Jas 3/speak Jas \"Jednou jsem viděla, jak mu z kapsy vypadl velký starý rezavý klíč.#$b#K takovým strašidelným dveřím do Kanalizace musí přece pasovat velký starý rezavý klíč.$4\"/playMusic none/pause 2000/playSound slimeHit/pause 400/playSound slimeHit/pause 400/playSound slimeHit/pause 500/emote Vincent 8 true/emote Jas 8 true/pause 900/faceDirection Vincent 0 true/faceDirection Jas 0 true/pause 1600/playSound shadowpeep/shake Vincent 5000/shake Jas 5000/jump Jas/jump Vincent/faceDirection farmer 3 true/faceDirection Vincent 0 true/faceDirection Jas 0 true/pause 1500/playSound shadowDie/jump Vincent/jump Jas/pause 800/speed Vincent 6/speed Jas 6/advancedMove Jas false 4 0 0 -7 -1 0/advancedMove Vincent false 6 0 0 -8 -1 0/proceedPosition Vincent 98 92/faceDirection farmer 0 true/faceDirection Jas 2 true/faceDirection Vincent 2 true/speak Jas \"Uvnitř se něco hýbe!$u\"/shake Jas 4000/shake Vincent 4000/pause 1000/faceDirection farmer 2/pause 1000/move farmer 0 6 3 false/move farmer -4 0 0/pause 800/emote farmer 40/pause 1600/playSound shadowpeep/faceDirection farmer 2 true/jump farmer/showFrame 94/jump Vincent/jump Jas/speed Jas 4/speed Vincent 4/move Jas 0 -6 0 true/move Vincent 0 -6 0 true/pause 1000/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "3664a3f13108c0942bae8249b578c57104182c3d0fd131ff4d5ffda74ff35fc9",
+      "translationSHA256": "41254b40da2d3eccddac9579f935b6dc5b867678d0cab89b915a785881ac9fae",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

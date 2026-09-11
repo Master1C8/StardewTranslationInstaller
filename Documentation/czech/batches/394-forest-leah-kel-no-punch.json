@@ -1,0 +1,28 @@
+{
+  "id": "394-forest-leah-kel-no-punch",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all six visible nonviolent-confrontation segments against English; verified Kel's insult, Leah's forceful defense, exact male/female comparison token, shared romantic outcome, movement and impact sequence, control markers and exact event skeleton.",
+  "rows": [
+    {
+      "target": "Data/Events/Forest",
+      "key": "noPunch",
+      "field": null,
+      "source": "pause 10/message \"KEL: I have nothing to say to you. Get out of my way.\"/speed farmer 2/move farmer 1 0 3/move LeahEx 0 2 2/message \"KEL: Seriously, Leah... What are you doing out here with this simple-minded bumpkin?\"/faceDirection farmer 2/showFrame Leah 26/pause 1000/showFrame Leah 27/showFrame 94/playSound clubhit/screenFlash .25/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/stopAnimation farmer/speak Leah \"@'s a better ${man^person}$ than you in every respect!$a#$b#Now get out of here and never come back!$a\"/move Leah -1 0 0/move Leah 0 -4 1/speak Leah \"Let's go, @. I don't think Kel will be bothering us anymore.\"/move farmer 0 1 2/faceDirection Leah 2 true/move farmer -2 0 0/move Leah 0 -11 0 true/move farmer 0 -11 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"Let's find a more secluded spot this time...$l\"/playMusic none/pause 2000/end dialogue Leah \"Well, the picnic didn't pan out like I wanted it to.$h\"",
+      "translation": "pause 10/message \"KEL: Nemám ti co říct. Uhni mi z cesty.\"/speed farmer 2/move farmer 1 0 3/move LeahEx 0 2 2/message \"KEL: Vážně, Leah... Co tu děláš s touhle prostoduchou vesnickou nulou?\"/faceDirection farmer 2/showFrame Leah 26/pause 1000/showFrame Leah 27/showFrame 94/playSound clubhit/screenFlash .25/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/stopAnimation farmer/speak Leah \"@ je v každém ohledu ${lepší chlap^lepší člověk}$ než ty!$a#$b#Teď odsud vypadni a už se nikdy nevracej!$a\"/move Leah -1 0 0/move Leah 0 -4 1/speak Leah \"Pojď, @. Myslím, že Kel už nás nebude obtěžovat.\"/move farmer 0 1 2/faceDirection Leah 2 true/move farmer -2 0 0/move Leah 0 -11 0 true/move farmer 0 -11 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"Tentokrát najdeme odlehlejší místo...$l\"/playMusic none/pause 2000/end dialogue Leah \"No, piknik nedopadl tak, jak jsem chtěla.$h\"",
+      "sourceSHA256": "405a9e2aa131b0b1eb7ab91f85c371e81c3875bafbfd481b565b322a41d8cf5e",
+      "translationSHA256": "c9f3bcf9886ea80fbff1742e420248003b6a3f17941019e9e17f099bffdebc50",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "438-mountain-maru-comet-wish",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all thirteen quoted segments and the complete three-choice wish menu against English; verified the earlier-stargazing callback, married romantic tone, all response branches, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Mountain",
+      "key": "5183338/e 3917666/O Maru/w sunny/t 2200 2500",
+      "field": null,
+      "source": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/changeToTemporaryMap NightSceneMaruMap2 false/bgColor 0 0 0/ambientLight 0 0 0/viewport 14 25 true clamp/pause 1000/move farmer -8 0 3/faceDirection Maru 1/pause 800/showFrame Maru 32/pause 700/showFrame Maru 4/speak Maru \"Hey, @. You made it just in time... The comet's about to appear.\"/pause 500/faceDirection Maru 2/pause 1000/faceDirection farmer 2/pause 1000/speak Maru \"Beautiful night, isn't it?\"/pause 2000/faceDirection Maru 1/faceDirection farmer 3/pause 1000/speak Maru \"Remember the first time we did this? It was a while ago...\"/faceDirection Maru 2/speak Maru \"I almost revealed my true feelings on that night... but I was afraid you'd reject me.\"/faceDirection Maru 1/speak Maru \"Who knew we'd be married so soon after!$h\"/pause 500/emote farmer 20/pause 500/jump Maru/pause 400/speak Maru \"Oh! It's time...\"/faceDirection Maru 3/faceDirection farmer 3 true/showFrame Maru 28/emote Maru 40/pause 1000/textAboveHead Maru \"Wow!\"/pause 3000/showFrame Maru 12/move Maru 0 1 0/speak Maru \"Take a look!\"/pause 500/move farmer -1 0 3/pause 1000/animate farmer true true 100 35/pause 1000/fade/viewport -1000 -1000/pause 1000/playMusic spaceMusic/warp Maru 15 29/faceDirection Maru 3/cutscene marucomet/pause 1000/viewport 14 25 true clamp/pause 3000/stopAnimation farmer/pause 1000/faceDirection farmer 1/pause 500/speak Maru \"After seeing a comet, it's customary to make a wish...\"/pause 500/quickQuestion What will you wish for?#A new baby#For us to grow old together#More money(break)jump Maru\\pause 500\\speak Maru \"Oh! We can certainly try...$l\"\\emote Maru 20(break)emote Maru 20\\speak Maru \"That's... really sweet!$l#$b#I have the same wish.$l\"(break)speak Maru \"Money? Oh...$s#$b#Well I guess that would be practical...$8\"\\emote Maru 28\\speak Maru \"My wish is a little more romantic...\"/pause 2000/animate Maru false true 100 28/animate farmer false true 100 101/positionOffset farmer 16 0/specificTemporarySprite heart 15 29/pause 2000/specificTemporarySprite maruTelescope/viewport move 0 -1 13000/pause 16000/fade/viewport -1000 -1000/pause 3000/end newDay",
+      "translation": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/changeToTemporaryMap NightSceneMaruMap2 false/bgColor 0 0 0/ambientLight 0 0 0/viewport 14 25 true clamp/pause 1000/move farmer -8 0 3/faceDirection Maru 1/pause 800/showFrame Maru 32/pause 700/showFrame Maru 4/speak Maru \"Ahoj, @. Přicházíš právě včas... Kometa se každou chvíli objeví.\"/pause 500/faceDirection Maru 2/pause 1000/faceDirection farmer 2/pause 1000/speak Maru \"Krásná noc, že?\"/pause 2000/faceDirection Maru 1/faceDirection farmer 3/pause 1000/speak Maru \"Pamatuješ, jak jsme to dělali poprvé? Už je to nějaká doba...\"/faceDirection Maru 2/speak Maru \"Tenkrát jsem málem prozradila své skutečné city... ale bála jsem se, že mě odmítneš.\"/faceDirection Maru 1/speak Maru \"Kdo by čekal, že se tak brzy vezmeme!$h\"/pause 500/emote farmer 20/pause 500/jump Maru/pause 400/speak Maru \"Ach! Už je čas...\"/faceDirection Maru 3/faceDirection farmer 3 true/showFrame Maru 28/emote Maru 40/pause 1000/textAboveHead Maru \"Páni!\"/pause 3000/showFrame Maru 12/move Maru 0 1 0/speak Maru \"Podívej!\"/pause 500/move farmer -1 0 3/pause 1000/animate farmer true true 100 35/pause 1000/fade/viewport -1000 -1000/pause 1000/playMusic spaceMusic/warp Maru 15 29/faceDirection Maru 3/cutscene marucomet/pause 1000/viewport 14 25 true clamp/pause 3000/stopAnimation farmer/pause 1000/faceDirection farmer 1/pause 500/speak Maru \"Když člověk uvidí kometu, má si něco přát...\"/pause 500/quickQuestion Co si budeš přát?#Nové miminko#Abychom spolu zestárli#Víc peněz(break)jump Maru\\pause 500\\speak Maru \"Ach! To určitě můžeme zkusit...$l\"\\emote Maru 20(break)emote Maru 20\\speak Maru \"To je... opravdu milé!$l#$b#Mám stejné přání.$l\"(break)speak Maru \"Peníze? Ach...$s#$b#No, asi by to bylo praktické...$8\"\\emote Maru 28\\speak Maru \"Moje přání je trochu romantičtější...\"/pause 2000/animate Maru false true 100 28/animate farmer false true 100 101/positionOffset farmer 16 0/specificTemporarySprite heart 15 29/pause 2000/specificTemporarySprite maruTelescope/viewport move 0 -1 13000/pause 16000/fade/viewport -1000 -1000/pause 3000/end newDay",
+      "sourceSHA256": "c23aca494c2fc26c4bc241e61d89595abb8316a379c7c9fe7fb95026404f02cb",
+      "translationSHA256": "2cd84be5307c6be36f8a625de00d1b3531d2f303686aa17e12cee09a6ccc2a33",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

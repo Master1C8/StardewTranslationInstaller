@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "fieldTripEnd": "pause 400/emote Penny 40/speak Penny \"Tak, to by pro dnešek asi stačilo. Vy dva si běžte hrát.\"/speed Jas 4/move Jas 0 3 1/speed Jas 4/move Jas 9 0 3 true/faceDirection Vincent 2 true/jump Vincent/pause 800/speed Vincent 4/move Vincent 0 3 1 false/speed Vincent 4/move Vincent 9 0 1/pause 500/faceDirection Vincent 2/faceDirection Jas 2/faceDirection Penny 1/faceDirection farmer 3/speak Penny \"Starat se o tyhle děti dá hodně práce...$u#$b#Ale vlastně mi to nevadí. Ráda je pozoruji, jak se učí... a snad jim můžu pomoct vyrůst v dobré lidi.\"/faceDirection Penny 2/pause 500/faceDirection Penny 1/speak Penny \"$q -1 null#Lákalo by tě někdy rodičovství, @?#$r -1 0 event_speaker_kids1#Zatím o tom nemám jasno.#$r -1 20 event_speaker_kids2#Rozhodně. Chci velkou rodinu.#$r -1 20 event_speaker_kids3#Asi ano. Je to přirozená touha.#$r -1 10 event_speaker_kids4#Ne, rodičovství by mi asi nešlo.#$r -1 -10 event_speaker_kids5#Ne, svět je už tak dost přelidněný.#$r -1 -10 event_speaker_kids6#Ne, nechci, aby mě rodina svazovala.\"/viewport move 1 0 10000/pause 7000/stopMusic/globalFade/viewport -2000 -2000/speak Penny \"Jsem ráda za tvou návštěvu, @. Myslím, že děti si to moc užily.$h\"/end dialogue Penny \"Díky tobě byl dnešní výlet úspěšný.\"",
+        "eventEnd": "faceDirection Penny 3/emote Penny 12/end dialogue Penny \"Nemůžu uvěřit, že jsi mi ${odmítl^odmítla}$ pomoct.$a\""
+      }
+    }
+  ]
+}

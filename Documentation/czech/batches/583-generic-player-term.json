@@ -1,0 +1,29 @@
+{
+  "id": "583-generic-player-term",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed the complete one-row Lexicon asset after tracing both installed 1.6.15 call sites and rereading all four dependent Pierre/Willy purchase greetings. The game splits this localized key on bare caret, keeps the first branch for a male player, selects the second for a female player, and inserts the result as the direct-address {0}; farmáři^farmářko preserves the locked farmář glossary identity and supplies the correct Czech vocative for both player genders.",
+  "rows": [
+    {
+      "target": "Strings/Lexicon",
+      "key": "GenericPlayerTerm",
+      "field": null,
+      "source": "farmer",
+      "translation": "farmáři^farmářko",
+      "sourceSHA256": "51bf5502a7102c96f3ffb54d6d8762c0077dd473aa673701e233e4f3f989a149",
+      "translationSHA256": "2ad90cab75e439259a36df05db3aeeb838fbe9af2cf35d8e92fa013898cc7b28",
+      "structureReason": "Installed Stardew Valley 1.6.15 IL loads this localized key in both purchased-item dialogue methods, splits it on a bare caret, defaults to index 0, and selects index 1 for a female player. The two resulting values are passed as {0} to the greeting 'Hey, {0}.', so Czech intentionally adds the runtime-supported male/female vocative branch farmáři^farmářko.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

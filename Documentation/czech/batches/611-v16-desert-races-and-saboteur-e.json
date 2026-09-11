@@ -1,0 +1,769 @@
+{
+  "id": "611-v16-desert-races-and-saboteur-e",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full source/Czech comparison reread after corrections; no remaining objective issue.",
+  "rows": [
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Guess",
+      "field": null,
+      "source": "Race Announcer: Who do you think will win?",
+      "translation": "Hlasatel závodu: Kdo podle tebe vyhraje?",
+      "sourceSHA256": "aadb894f0c312457129f2aadb57b688964856806dcb04143df8f522facdc4aa9",
+      "translationSHA256": "455c51b2024528713ddfdc2c6c01df97e5997d15321adc43122775c6a0cca5f7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Guess_Made",
+      "field": null,
+      "source": "Race Announcer: {0}? Okay. Now sit back and enjoy the race!",
+      "translation": "Hlasatel závodu: {0}? Dobře. Teď se pohodlně usaď a užij si závod!",
+      "sourceSHA256": "002b42cb0adbe413e5ba1a5ebed5a7d4b23bc9b3caa35047776adf09ba11e224",
+      "translationSHA256": "6be7a53d67d1615ce4ba6f3f2a7eb18b7fe32d2761bbd083a702731124356e5a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Guess_Already_Made",
+      "field": null,
+      "source": "Race Announcer: Let's see if {0} can pull this off!",
+      "translation": "Hlasatel závodu: Uvidíme, jestli to {0} zvládne!",
+      "sourceSHA256": "2e855ce4a70c8a5bca2bfd16d170a9d1178c355c5e2ed61e9e44994e1f0b5f56",
+      "translationSHA256": "84487a3bff65bc238c413aa7e1a3df591e4c014d05056b085aebf520d550bbb8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Collect_Prize_Special",
+      "field": null,
+      "source": "Race Announcer: Escar-go... how?? Um...Well, here's your big payout...",
+      "translation": "Hlasatel závodu: Šnek-go... Jak?? Ehm... Tady je tvá velká výhra...",
+      "sourceSHA256": "256750b933d86de9e6650c5d819c53a2fedb258735af7262f97e0d2c0695c8f6",
+      "translationSHA256": "2294412fc5cce1de31d4c222678cdbf77b0558c9802ed0866922141895d28053",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Collect_Prize",
+      "field": null,
+      "source": "Race Announcer: Congratulations! Here's your prize!",
+      "translation": "Hlasatel závodu: Blahopřeji! Tady je tvá cena!",
+      "sourceSHA256": "fa5e81ac6176bd92796e4f948309b3515a869a7e301e63c96ed595e13838df2b",
+      "translationSHA256": "b9ceac6d91623ca8fd05114c3d0fe4142b6a1c1682896694ebf9a188b9d78b2e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Late_Guess",
+      "field": null,
+      "source": "Race Announcer: Whoops. Looks like the race has already started. Try again later!",
+      "translation": "Hlasatel závodu: Jejda. Vypadá to, že závod už začal. Zkus to znovu později!",
+      "sourceSHA256": "0f45957de1659cca6a3398ef3ad01b699a9b83533b1ec42673049b740bf962b7",
+      "translationSHA256": "a94b754be36eb221df7c4249cb66870cf089116164670a1db6576dee00c0c13a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Ongoing",
+      "field": null,
+      "source": "Race Announcer: The race is currently in progress! Let's talk later...",
+      "translation": "Hlasatel závodu: Závod právě probíhá! Promluvíme si později...",
+      "sourceSHA256": "8702566d81ab57284d02fab4657010ba6f75efe760449a2ad9afdf84d6ad3c28",
+      "translationSHA256": "77ae2a4302483f2d9cc58cd70b09cb403125ad5589866a0f2c51f8a2d699a6d8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Ended",
+      "field": null,
+      "source": "Race Announcer: The races have ended for the day. I hope you had fun!",
+      "translation": "Hlasatel závodu: Dnešní závody skončily. Doufám, že to byla zábava!",
+      "sourceSHA256": "5e09f098ed1059af9fd953004d3be57396aafa3cd6e45a0827ddd998c6fd7bb1",
+      "translationSHA256": "96220a4b65081b2c96e12f4d9a9c5c9d398bcc7eafad00ebefd80193591fd4f6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Begin",
+      "field": null,
+      "source": "The next race is about to begin...",
+      "translation": "Další závod už brzy začne...",
+      "sourceSHA256": "5b232d82f6c1d7bc199e93f1d7505e32fa55abe8f9dc2136ad9c31ebce796c57",
+      "translationSHA256": "916df2b372672f386f92155b953442a57f232b49c7b9ae6a162eda16102dc568",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Ready",
+      "field": null,
+      "source": "On your marks...",
+      "translation": "Na místa...",
+      "sourceSHA256": "ac4ddd5c9ba9945ce3bb231080eed8031b7aaaa94ea314fa0b9536506745df32",
+      "translationSHA256": "dc353d8305897974e08ef92d5e6145aa29ebe1e7f48e027fabeef20a4287324d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Set",
+      "field": null,
+      "source": "Get set...",
+      "translation": "Připravit se...",
+      "sourceSHA256": "8d064324d0b1e73c0fe7c0eaecb8aac9c42cacd0b9078ccf81c556e04a97e7d5",
+      "translationSHA256": "6f97f1091fd0f0c7640a28f8e639d85f95b16469fbd953d22fd791519e2a43b3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Go",
+      "field": null,
+      "source": "GO!",
+      "translation": "START!",
+      "sourceSHA256": "64db8c5cb274ab2324798469f1a99183ffabe00ea2ff3b62af38e3c7a43c52e3",
+      "translationSHA256": "aef2c27aad4198c9df5fd19517286423d7737f5dfd1d85aafb1471deba90362a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Finish",
+      "field": null,
+      "source": "Finish!",
+      "translation": "Cíl!",
+      "sourceSHA256": "370ba7b7b2559be34a7eed96810df1564dbb966addb36b274d53053e853cb60d",
+      "translationSHA256": "9e91c563ac4abebf3132371513114f008f7b90d2b46ec83e054b4356774f1552",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Comment_1",
+      "field": null,
+      "source": "That was a close one!",
+      "translation": "To bylo těsné!",
+      "sourceSHA256": "f485e084e70bd653ec5ac92ee83459f578aba69502b1fb2f5d56d9b135dadd4a",
+      "translationSHA256": "bc8736c62f2c74d4417400026af2812c9f2e8fec1816cc01ac904b5eee904108",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Comment_2",
+      "field": null,
+      "source": "It was neck-and-neck!",
+      "translation": "Byli bok po boku!",
+      "sourceSHA256": "a6ba4aed4f5947f4a602bed9f964cd5f26280c8f62bf00d75a5fabeba25e3c36",
+      "translationSHA256": "c30b5a742002c8d3585041e4899324ac2e5c40cd92299a2d440a53e2a03db226",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Comment_3",
+      "field": null,
+      "source": "Such speed has rarely been seen!",
+      "translation": "Takovou rychlost vídáme jen zřídka!",
+      "sourceSHA256": "db1972a68aa880eb0ae045e4f7845505ae05349be4d1373c08ee530b779d89b2",
+      "translationSHA256": "7d07015aef9f2017f1188c701a1b6edfe8e05af2fbf21af8f40910d09c93467c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Comment_4",
+      "field": null,
+      "source": "And now, the moment you've all been waiting for...",
+      "translation": "A nyní okamžik, na který jste všichni čekali...",
+      "sourceSHA256": "cd2ba94cdc80f7e6a8f8bf03e41377e1f129d64ad910db2d78104efc9073b6c2",
+      "translationSHA256": "01b11e7dbac738a847b9188837bfb198a1c189e058e430978e3e1993cac465e7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Close",
+      "field": null,
+      "source": "That's the last race for today. We'll see you tomorrow!",
+      "translation": "To byl dnešní poslední závod. Uvidíme se zítra!",
+      "sourceSHA256": "92ed0ddbe9c4bb85e209d6800d52905dad51408c2da0de4979e3b2d3a5ea4463",
+      "translationSHA256": "329599337a43a46fd51f4e8ee6ef767c00ed9772fd48ddc6783aa7e33847ec99",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Close_LastDay",
+      "field": null,
+      "source": "And that's it for this year's races! See you next time!",
+      "translation": "A tím letošní závody končí! Zase někdy na viděnou!",
+      "sourceSHA256": "c5c0ea8052aac3450bf2c738873a2f3abe48bcf1c6bd3d0ca6d83f0d52cbc49c",
+      "translationSHA256": "ac67b51fd07381c62475a864436bfb90c9341079d03a9c354eb1c1e22645e71b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Winner",
+      "field": null,
+      "source": "This race's winner is...",
+      "translation": "Vítězem tohoto závodu se stává...",
+      "sourceSHA256": "f5316be5a66e94de1c02fb2e035c9e71d5d51ecbe476b0117eeb8e7aa93227d7",
+      "translationSHA256": "9814f1994289d63d3abba48df6ce66393fc0f1ec5f9196fbc3734446ad6c011c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Win",
+      "field": null,
+      "source": "Come by to collect your prize!",
+      "translation": "Zastav se pro svou cenu!",
+      "sourceSHA256": "56ad96cd89eb8358cfa127e61f6b9d830809ab2467c7e7d16f086d0993405d48",
+      "translationSHA256": "e304b3aa1f0814cd78dd8ca5d98eafe960c21df262fc2ea35dd6655047d3cef2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Race_Lose",
+      "field": null,
+      "source": "Better luck next time!",
+      "translation": "Příště budeš mít víc štěstí!",
+      "sourceSHA256": "0c4d73be807682ec25fa68d95d30791a70e5ab1d035003d01a9b2f389937e12e",
+      "translationSHA256": "d4afeeb979d5d2cdb61c801beef337451109773493c1edc2fc88df976ff68af5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Racer_0",
+      "field": null,
+      "source": "Speed Rooster",
+      "translation": "Rychlý kohout",
+      "sourceSHA256": "2696bcad3e57e524f47cd7ad7842e2a4e15a1f2f687be3f96cedc4c56a1a8179",
+      "translationSHA256": "95bf9c3758f4da400b4b2542fc685f241bbc65c55858755917708e5e03fb11c3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Racer_1",
+      "field": null,
+      "source": "King Sting",
+      "translation": "Král Žihadlo",
+      "sourceSHA256": "1ced3479549e864d1207672d7a49c554c8517afda28ec11ed94720ac99557178",
+      "translationSHA256": "c01f9ba6d0183cdd0b4cc37088ec10b6965a3e7211ce1451f98b7a4dd4e8d8f5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Racer_2",
+      "field": null,
+      "source": "Shoebiscuit",
+      "translation": "Botokeks",
+      "sourceSHA256": "546ac2272cb138cb56c9c40deee0ed9bff975596b65f8577ba775b67a8fb3afb",
+      "translationSHA256": "8a8b91b903b73295f0c0c93d838ce6f1963e2c086efd5b67af271d568b326b20",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Racer_3",
+      "field": null,
+      "source": "Escar-go",
+      "translation": "Šnek-go",
+      "sourceSHA256": "aa7461d9adca90530501f5fa07f2ac853a64b2f449a131a861ba9ac33a1f6108",
+      "translationSHA256": "3630e93517d6ac59ba0d902aaa6b557d9a24f7e5f8a6590a33b32249cd316089",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Racer_4",
+      "field": null,
+      "source": "Cactus Crawler",
+      "translation": "Kaktusový plazivec",
+      "sourceSHA256": "b7006248ffad8e88d18f4f0fb216c69b1bde24ce75ed3a6d5c4c6f5509bd189d",
+      "translationSHA256": "124ff939279bddbca68dddda5b471cc64a965d101e8cdd4596d209c641eefc05",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Closed",
+      "field": null,
+      "source": "Suspicious Guy: Heh... not now, kid. Come back later, and we can talk.",
+      "translation": "Podezřelý chlápek: Heh... Teď ne, děcko. Vrať se později a promluvíme si.",
+      "sourceSHA256": "d2d174d57ce635e2578284f6e755ec8c1323f851ebde73063ae3d80a9bc19723",
+      "translationSHA256": "1df079a55d31a7d5cbb1097e77f74f0e25c5894dbfe308d6580e40c5a56ea84c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Ended",
+      "field": null,
+      "source": "Suspicious Guy: It's too late, kid. Come back when the races are happening.",
+      "translation": "Podezřelý chlápek: Už je pozdě, děcko. Vrať se, až budou probíhat závody.",
+      "sourceSHA256": "21b53829951086187b8c0379702e1091d0ca65517e8b72d531c1c0d9175539d1",
+      "translationSHA256": "0716c3e8382a3cd17205af7b505b4569fc747dba7971524b790ac7c5194ea0a8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Ongoing",
+      "field": null,
+      "source": "Suspicious Guy: Eyes on the race, kid! We can talk later...",
+      "translation": "Podezřelý chlápek: Sleduj závod, děcko! Promluvíme si později...",
+      "sourceSHA256": "f4ea0574aa373282388829e140e7a3a969b67c8e5b0f8581554af42c548c24ae",
+      "translationSHA256": "d0110c282e9eef283e0549b0a5b3705fd2fdc1a8cb13a6f9864be0ffd284aa31",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Late",
+      "field": null,
+      "source": "Suspicious Guy: Too late, the race's started. Let's talk again later...",
+      "translation": "Podezřelý chlápek: Pozdě, závod už začal. Promluvíme si jindy...",
+      "sourceSHA256": "1d46d9b4adb7de01cc1a3995cf3ca8e742eeec5b9f09168db46293035efd6767",
+      "translationSHA256": "18791ba5f25eaaef7bdb2f708b4d290b9a0c4af28d0dc46748a2fc574950e239",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Intro",
+      "field": null,
+      "source": "Suspicious Guy: Psst... Hey, kid. You been watching these races? Pretty exciting, huh?",
+      "translation": "Podezřelý chlápek: Psst... Hej, děcko. Sleduješ tyhle závody? Docela napínavé, co?",
+      "sourceSHA256": "eddf7fd1f438d973e3fe507f60e74b11ac8ed93612324649067dfe6d69b771e1",
+      "translationSHA256": "cf548a3b8d3b8bdcb1e05a1a86bb38cc4a0cd487cfd5b0e52ce45a2c0f4cadf9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Intro_2",
+      "field": null,
+      "source": "Suspicious Guy: ... Say, I got a little 'proposition' for ya.",
+      "translation": "Podezřelý chlápek: ... Hele, mám pro tebe malou „nabídku“.",
+      "sourceSHA256": "6e4f70c8cf092d18c95eb34c5f445b1c87a6db9e4b36f0f901f41180883e1ad2",
+      "translationSHA256": "695d120d83fb7c7cb2319e0126244d20e5d380b2db858c8c3a27872b9a525e8f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Intro_3",
+      "field": null,
+      "source": "Suspicious Guy: Just pick a racer, and their next race will be a real stinker... catch my drift?",
+      "translation": "Podezřelý chlápek: Stačí vybrat závodníka a jeho příští závod bude pořádný propadák... Chápeš, kam tím mířím?",
+      "sourceSHA256": "a42225cd108d869e5bf03b51fd1cae041874ff9882f2f215179dba50763bcc1d",
+      "translationSHA256": "d2e89b8ea5b5e579b100cc235c13b9aee6edd8eb80e55d02c12e25e902c2fca8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy",
+      "field": null,
+      "source": "Suspicious Guy: It'll just cost ya 1 Calico Egg. A small price to pay for the 'edge' you'll get.",
+      "translation": "Podezřelý chlápek: Bude tě to stát jen 1 Vejce Calico. Malá cena za „výhodu“, kterou získáš.",
+      "sourceSHA256": "c5a7ee02456c7c122f72b0919186570e0aeea57bb48be8d05fb49b1fec4395c4",
+      "translationSHA256": "cc0e3aaac741feb2bd29db52af4120f66245bc2113b6b3bd594e42ac505d0360",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_2nd",
+      "field": null,
+      "source": "Suspicious Guy: Need my 'services'? It'll just cost ya 1 Calico Egg.",
+      "translation": "Podezřelý chlápek: Potřebuješ mé „služby“? Bude tě to stát jen 1 Vejce Calico.",
+      "sourceSHA256": "28fc0c4f789e114515b4a0b0c7226361ea1d98200d5ed8388b46b16966b733f4",
+      "translationSHA256": "84ca83acf927180b6652c7f8e7f2f36924a98b630509a0721f2bc42504e257df",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Question",
+      "field": null,
+      "source": "Suspicious Guy: Alright, so who's gonna be the unlucky racer?",
+      "translation": "Podezřelý chlápek: Tak dobře, který závodník bude mít smůlu?",
+      "sourceSHA256": "9491349acc266263ccb24061e0867452a1657f2e7708d531195c892c6db7c1ed",
+      "translationSHA256": "09d78dd58b30f88dfcaa293b996f96c6631ac6e389eeebd74d338d4b1df669aa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_NoEgg",
+      "field": null,
+      "source": "Suspicious Guy: Looks like you don't have any Calico Eggs, kid. Stop wastin' my time.",
+      "translation": "Podezřelý chlápek: Vypadá to, že nemáš žádná Vejce Calico, děcko. Neplýtvej mým časem.",
+      "sourceSHA256": "48832c87d19849a0655f2f295aa7983527a2a52be74801267e72e25c13f271ff",
+      "translationSHA256": "df03c88b8363e72cccbef0c0d174569b44a8415c8322992e095cc6999d0e9a49",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Selected_1",
+      "field": null,
+      "source": "Suspicious Guy: {0}, huh? You got it, kid.",
+      "translation": "Podezřelý chlápek: {0}, jo? Zařídím to, děcko.",
+      "sourceSHA256": "ab1c2b9be26c5f4a21096d7d619dbf8745672c5435ecaf95a64942972c56b481",
+      "translationSHA256": "054db944afe7ab5fe954cab4efe738d50200fb413067b15e5cf56bc5f7e13938",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/1_6_Strings",
+      "key": "Shady_Guy_Selected_2",
+      "field": null,
+      "source": "Suspicious Guy: {0} it is. Now excuse me, I've got a phone call to make...",
+      "translation": "Podezřelý chlápek: Tak tedy {0}. Teď mě omluv, musím si zavolat...",
+      "sourceSHA256": "0bcabe06558848bbbaf08fae00b2b9853dfac17840d7621025dc7a8990514a16",
+      "translationSHA256": "91b0d7e2b81dbeb596d44dac7d90c608b272f8f6b66a250a604a7478dc7038ae",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -79,7 +79,7 @@ struct InstallerCoreTests {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "sr-vnrevival", "pl-vnrevival", "uk-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "nl-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival", "el-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "sr-vnrevival", "pl-vnrevival", "uk-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "nl-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival", "el-vnrevival", "cs-vnrevival"])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales == [
             "zh", "en", "ru", "es", "pt-BR", "ja", "de", "ko", "fr", "tr", "pl", "zh-TW",
@@ -104,7 +104,7 @@ struct InstallerCoreTests {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 18)
+        expect(languageEntries.count == 19)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "sr-vnrevival": ("ButtonSerbian", "assets/button-serbian.png", "assets/title/TitleButtons-serbian.png"),
@@ -124,6 +124,7 @@ struct InstallerCoreTests {
             "bg-vnrevival": ("ButtonBulgarian", "assets/button-bulgarian.png", "assets/title/TitleButtons-bulgarian.png"),
             "th-vnrevival": ("ButtonThai", "assets/button-thai.png", "assets/title/TitleButtons-thai.png"),
             "el-vnrevival": ("ButtonGreek", "assets/button-greek.png", "assets/title/TitleButtons-greek.png"),
+            "cs-vnrevival": ("ButtonCzech", "assets/button-czech.png", "assets/title/TitleButtons-czech.png"),
         ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
@@ -188,6 +189,7 @@ struct InstallerCoreTests {
             ("ro-vnrevival", "romanian"),
             ("he-vnrevival", "hebrew"),
             ("bg-vnrevival", "bulgarian"),
+            ("cs-vnrevival", "czech"),
             ("th-vnrevival", "thai"),
             ("el-vnrevival", "greek"),
         ] {
@@ -313,11 +315,46 @@ struct InstallerCoreTests {
             return (integer(at: 16), integer(at: 20))
         }
 
+        let unifiedButtonHashes = [
+            "assets/button-russian.png": "7fb83fe1686a0763d73bbdb3e968359bdb7f5f9e1681e3e4ddfd665ef02185bd",
+            "assets/button-serbian.png": "e78e09f61fd7b0d2d299a2624c1024d30c9bd0d17b4c0f5e6c13a3616a954d4d",
+            "assets/button.png": "caa993be8fe77bbcbbd41839491cdcc28a521763cd8464a17aa4ac0d4be31390",
+            "assets/button-ukrainian.png": "83c1b40a193998557996c911ca22c444d5cc26db18c720c2a0cb5acf822d6bbe",
+            "assets/button-vietnamese.png": "0710621892a3721c4894fc4d14e4c236415618d7071bfc95a62a51b5ca07196a",
+            "assets/button-swahili.png": "93b9513bea383134065d78b19d117764fbf4ee759ed5965ec41c8bff5f4edd02",
+            "assets/button-persian.png": "20fbc414552532ec5733593b9b046bd0693e2935b3fb1055c67fe77b5cc5bd42",
+            "assets/button-arabic.png": "ce4e948bf08ed79e560609c9ae44c8c957b591ef9a786d4936d63ba9e0d2e427",
+            "assets/button-indonesian.png": "d73341a05b4e48a8c259753991261de717767fcd21470b7e5bf45e5262b635f7",
+            "assets/button-filipino.png": "e757c90ce49171b0a46cfb0dc532d1eb7678bfb43f7a9b7c440ecf02e891fe53",
+            "assets/button-dutch.png": "b72bbaecd761eba63b086bf6dc486a83e2b94f60bfc8f79ca5b25259179031d6",
+            "assets/button-hindi.png": "2f80e575dda0e0a85a3235206fc31f66c515ea27a0be33770afc1254a23e4e39",
+            "assets/button-traditional-chinese.png": "7a56211fad950f3669e5a391474e88575d9bdd2a3937fa9a32042cb3c8e34895",
+            "assets/button-romanian.png": "42f77d03d9f937f23648cc9410de50bdb22c72bc74dc586bd283fbf946e2abb7",
+            "assets/button-hebrew.png": "60507a5982af69dc66183b36983c33a086e5a57788a633753d01d27fcabe1a42",
+            "assets/button-bulgarian.png": "46c912b48b3363601c7649369b6b20638e45ff0227a523919fd24344f1e83e18",
+            "assets/button-thai.png": "7df00816b3e08e1473df6f562ab06d941f5fbd67218fc55191d022ef68954281",
+            "assets/button-greek.png": "30494d3c6e69ecd1d563b80ec0a08533b857ed3a3d6dd5ecd28ba2db4409e515",
+            "assets/button-czech.png": "de506bdc07c1f133615cf9e3f46bd9360915b441a145b6f2cb125c8f74d286ce",
+        ]
+        for (buttonPath, expectedHash) in unifiedButtonHashes {
+            try expect(try pngDimensions(buttonPath) == (174, 78))
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(buttonPath))
+                    == expectedHash
+            )
+        }
+        try expect(
+            try DependencyInstaller.sha256(of: payload.appendingPathComponent("assets/button.png"))
+                == DependencyInstaller.sha256(
+                    of: payload.appendingPathComponent("assets/button-polish.png")
+                )
+        )
+
         let vietnameseButtonPath = "assets/button-vietnamese.png"
         try expect(try pngDimensions(vietnameseButtonPath) == (174, 78))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(vietnameseButtonPath))
-                == "be0551c7dd7214b17e7e1b42c9808063ec91e2ce4e67dfe51ebb9994bd3018ba"
+                == "0710621892a3721c4894fc4d14e4c236415618d7071bfc95a62a51b5ca07196a"
         )
         let vietnameseTitlePath = "assets/title/TitleButtons-vietnamese.png"
         try expect(try pngDimensions(vietnameseTitlePath) == (400, 655))
@@ -330,7 +367,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(hindiButtonPath) == (174, 78))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(hindiButtonPath))
-                == "63d1b99db23dbc7237b254804cbf347716d2a8dd8cf5132697085c7cdd80fd67"
+                == "2f80e575dda0e0a85a3235206fc31f66c515ea27a0be33770afc1254a23e4e39"
         )
         let hindiTitlePath = "assets/title/TitleButtons-hindi.png"
         try expect(try pngDimensions(hindiTitlePath) == (400, 655))
@@ -343,7 +380,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(swahiliButtonPath) == (174, 78))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(swahiliButtonPath))
-                == "5c8cc1b9736ce2f60b4aecea2f619ca6ac192732ef25ed21901972ad70346d31"
+                == "93b9513bea383134065d78b19d117764fbf4ee759ed5965ec41c8bff5f4edd02"
         )
         let swahiliTitlePath = "assets/title/TitleButtons-swahili.png"
         try expect(try pngDimensions(swahiliTitlePath) == (400, 655))
@@ -356,7 +393,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(indonesianButtonPath) == (174, 78))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(indonesianButtonPath))
-                == "6e5a4b156c988f2dc7f94fed5c44d31f94604acf65bfd20d3f07fe26e22c0743"
+                == "d73341a05b4e48a8c259753991261de717767fcd21470b7e5bf45e5262b635f7"
         )
         let indonesianTitlePath = "assets/title/TitleButtons-indonesian.png"
         try expect(try pngDimensions(indonesianTitlePath) == (400, 655))
@@ -370,7 +407,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(filipinoButtonPath) == (174, 78))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(filipinoButtonPath))
-                == "d134b7337d24394bed1ec515586d29d9c5553b71addb8601369ac49393db4c8b"
+                == "e757c90ce49171b0a46cfb0dc532d1eb7678bfb43f7a9b7c440ecf02e891fe53"
         )
         let filipinoTitlePath = "assets/title/TitleButtons-filipino.png"
         try expect(try pngDimensions(filipinoTitlePath) == (400, 655))
@@ -394,7 +431,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(romanianButtonPath) == (174, 78))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(romanianButtonPath))
-                == "7092f18d812e1b3128762b7c89a8983df24487ae30c7af6022b783c575a11389"
+                == "42f77d03d9f937f23648cc9410de50bdb22c72bc74dc586bd283fbf946e2abb7"
         )
         let romanianTitlePath = "assets/title/TitleButtons-romanian.png"
         try expect(try pngDimensions(romanianTitlePath) == (400, 655))
@@ -408,7 +445,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/button-persian.png")
-            ) == "ae33c27660fe31e4b8c70f5c63094b0131ad99cb61bd9223bf2473cf6f9f2765"
+            ) == "20fbc414552532ec5733593b9b046bd0693e2935b3fb1055c67fe77b5cc5bd42"
         )
         try expect(
             try DependencyInstaller.sha256(
@@ -421,7 +458,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/button-arabic.png")
-            ) == "be46227a1a3a0e2d98bb17d9d70fe11d705143badcaee6a01ce8141b38a4a8dc"
+            ) == "ce4e948bf08ed79e560609c9ae44c8c957b591ef9a786d4936d63ba9e0d2e427"
         )
         try expect(
             try DependencyInstaller.sha256(
@@ -430,7 +467,7 @@ struct InstallerCoreTests {
         )
 
         let bulgarianAssetHashes = [
-            "assets/button-bulgarian.png": "4e0f6f90cbcc0993e6ef9072023125e5e6ce80eea376c9c993b17ff04fe365d2",
+            "assets/button-bulgarian.png": "46c912b48b3363601c7649369b6b20638e45ff0227a523919fd24344f1e83e18",
             "assets/title/TitleButtons-bulgarian.png": "3186a547e368601d4d694c5df8fca33c3d0473a6c36d5b023e15932bcecfc08d",
             "assets/fonts/bulgarian/SpriteFont1.xnb": "79b0bc55244a90a81a68e36aec198c42f22d8dd98f5a4489f425adc4d52dd233",
             "assets/fonts/bulgarian/SmallFont.xnb": "79b0bc55244a90a81a68e36aec198c42f22d8dd98f5a4489f425adc4d52dd233",
@@ -449,7 +486,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/button-thai.png")
-            ) == "92185f27f8f673f2be3ad9d273d98457d890de39c3de0dfd843e3abeb347cd74"
+            ) == "7df00816b3e08e1473df6f562ab06d941f5fbd67218fc55191d022ef68954281"
         )
         try expect(
             try DependencyInstaller.sha256(
@@ -472,13 +509,28 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/button-greek.png")
-            ) == "7179ce8375733d0064bce58dca08799ace3a1f002e838f78d55cdb161648ad5a"
+            ) == "30494d3c6e69ecd1d563b80ec0a08533b857ed3a3d6dd5ecd28ba2db4409e515"
         )
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/title/TitleButtons-greek.png")
             ) == "ec8697fd82a9c6430aec0e3353d6f1bf58378c69a2e1da87be3b0754fac901d0"
         )
+
+        let czechAssetHashes = [
+            "assets/button-czech.png": "de506bdc07c1f133615cf9e3f46bd9360915b441a145b6f2cb125c8f74d286ce",
+            "assets/title/TitleButtons-czech.png": "72a9fac00d0e0e7d5616bd0643ce6fac78df5a63aa166fbf3b796128d50be886",
+            "assets/fonts/czech/SpriteFont1.xnb": "65b107082554a8c747c97443f94f8f9f3311b2529da5875c4f2fd7801d52c5ab",
+            "assets/fonts/czech/SmallFont.xnb": "88589cae57b67fae0b1c958b4e1554ffeba51bd7774f51f1a178fe6712253dfe",
+        ]
+        try expect(try pngDimensions("assets/button-czech.png") == (174, 78))
+        try expect(try pngDimensions("assets/title/TitleButtons-czech.png") == (400, 655))
+        for (assetPath, expectedHash) in czechAssetHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(assetPath))
+                    == expectedHash
+            )
+        }
 
         let retiredLanguages = [
             "uzbek", "amharic", "kannada", "malayalam", "marathi",
@@ -562,7 +614,7 @@ struct InstallerCoreTests {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 4_233)
+        expect(includes.count == 4_910)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var hindiPrivateUseGlyphs = 0
@@ -617,6 +669,8 @@ struct InstallerCoreTests {
                 expectedLanguage = "th-vnrevival"
             } else if relativePath.contains("/greek/") {
                 expectedLanguage = "el-vnrevival"
+            } else if relativePath.contains("/czech/") {
+                expectedLanguage = "cs-vnrevival"
             } else {
                 throw RequiredValueMissing()
             }

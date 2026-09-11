@@ -1,0 +1,28 @@
+{
+  "id": "349-beach-willy-bug-meat",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read the complete event command and both languages after the neutral recipe message correction. Verified Willy voice, explicit male and female branches, recipe identifier, all dialogue, sound, animation and control structure. No further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Beach",
+      "key": "3131209/n willyBugWadCutscene",
+      "field": null,
+      "source": "ocean/-2000 -2000/farmer 49 22 2/addTemporaryActor Willy 16 64 52 26 2/addCraftingRecipe Quality Bobber/skippable/specificTemporarySprite WillyWad/animate Willy false true 500 8 9 10 11/pause 1000/speak Willy \"Hehe... they love it... Look at 'em go!$h\"/pause 1000/playSound slosh/pause 500/playSound slosh/pause 500/playSound slosh/pause 500/viewport 52 24 true/pause 1000/move farmer 0 2 2/textAboveHead Willy \"Ahoy!\"/pause 2000/speak Willy \"I was just thinkin' of you, lad.^I was just thinkin' of you, miss.#$b#This bug meat you found is perfect!#$b#Hehe... When I said 'fresh', I didn't expect it to still be wrigglin'!#$b#But I'm not complaining! The fish love it...  Hehehe...$h\"/emote farmer 28 true/pause 300/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 1000/speak Willy \"As a way of saying 'thanks', I wanted to teach you an old fisherman's secret... My ol' Pappy taught me this on a fishing trip many years ago.\"/pause 500/playSound reward/message \"Learned how to craft 'Quality Bobber'\"/pause 500/speak Willy \"Using that bobber will attract higher quality fish.#$b#That means more money in yer pocket, ${lad^lass}$. Hehe...$h\"/pause 1500/pause 300/playSound fishBite/pause 500/pause 400/playSound FishHit/animate Willy false true 100 17 18/textAboveHead Willy \"Got one!\"/shake Willy 5000/pause 200/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/fade/viewport -1000 -1000/end",
+      "translation": "ocean/-2000 -2000/farmer 49 22 2/addTemporaryActor Willy 16 64 52 26 2/addCraftingRecipe Quality Bobber/skippable/specificTemporarySprite WillyWad/animate Willy false true 500 8 9 10 11/pause 1000/speak Willy \"He he... chutná jim to... Jen se podívej, jak řádí!$h\"/pause 1000/playSound slosh/pause 500/playSound slosh/pause 500/playSound slosh/pause 500/viewport 52 24 true/pause 1000/move farmer 0 2 2/textAboveHead Willy \"Hola!\"/pause 2000/speak Willy \"Zrovna jsem na tebe myslel, mladíku.^Zrovna jsem na tebe myslel, slečno.#$b#To nalezené hmyzí maso je dokonalé!#$b#He he... Když jsem říkal ‚čerstvé‘, nečekal jsem, že se bude ještě svíjet!#$b#Ale nestěžuju si! Rybám chutná... Hehehe...$h\"/emote farmer 28 true/pause 300/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 1000/speak Willy \"Na poděkování tě chci naučit jedno staré rybářské tajemství... Můj taťka mě to naučil na rybářské výpravě před mnoha lety.\"/pause 500/playSound reward/message \"Teď umíš vyrábět ‚Kvalitní splávek‘\"/pause 500/speak Willy \"S tímhle splávkem přilákáš kvalitnější ryby.#$b#To znamená víc peněz do kapsy, ${mladíku^slečno}$. He he...$h\"/pause 1500/pause 300/playSound fishBite/pause 500/pause 400/playSound FishHit/animate Willy false true 100 17 18/textAboveHead Willy \"Mám ji!\"/shake Willy 5000/pause 200/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/fade/viewport -1000 -1000/end",
+      "sourceSHA256": "6b7a7f4c01c85c4fad822c0c8cacec1342975bd16fc93368f5523bb3ee00fd63",
+      "translationSHA256": "179ef97c1c74e17451cbd0a43b83a2453c4d1ed242c373cfc31ec4be77dc6905",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

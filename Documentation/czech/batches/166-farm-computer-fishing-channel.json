@@ -1,0 +1,427 @@
+{
+  "id": "166-farm-computer-fishing-channel",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full 22-entry source/Czech reread completed; Farm Computer labels, farm/location title argument order, 24-hour shop hours, F.I.B.S. identity and joke reference, weather/location fragments, bone-mill context, placeholders, and Lost and Found destination verified.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_Intro_Farm",
+      "field": null,
+      "source": "{0} Farm Analysis:",
+      "translation": "Analýza farmy {0}:",
+      "sourceSHA256": "fe799315a2460467965735abb3e11f7d2b7880d8238831d3183c9f57bf1451f3",
+      "translationSHA256": "e01ca383faae2e840eb32eadbe0863139ca5a2ea1808371e7bdcc4ac6e1e6511",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_Intro_NamedLocation",
+      "field": null,
+      "source": "{0} Analysis:",
+      "translation": "Analýza lokace {0}:",
+      "sourceSHA256": "f94603a301cc33b5f6805061359a4d4c79ad6b2f2703cf0e6f2acd3ca31dd4b3",
+      "translationSHA256": "954c125149cbe6fd886b08e22f73f70c0c7dc767133c0161d2042765cb8f270c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_Intro_Generic",
+      "field": null,
+      "source": "Location Analysis:",
+      "translation": "Analýza lokace:",
+      "sourceSHA256": "89e6c8b3f097cb6c27213e530abad0aef74b8cc0eb2f9161d802233d69b07bf1",
+      "translationSHA256": "2fe30e37ae1a08816eb983a0f738b3685dc34e457249957b9f217ee1c2b77041",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_PiecesHay",
+      "field": null,
+      "source": "Pieces Of Hay: {0}/{1}",
+      "translation": "Seno: {0}/{1}",
+      "sourceSHA256": "019489f8532be9461d7233e687c346be71daf9614c5f69576ab4dfc7832015af",
+      "translationSHA256": "fe4eb2bdb27f2e45a5594620aade42adf6b6f0e353afff191f25a1d8928e8bd5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_FarmCave",
+      "field": null,
+      "source": "Farm Cave Ready: {0}",
+      "translation": "Jeskyně na farmě připravena: {0}",
+      "sourceSHA256": "dfc25c0d742a1f113122afbef7a394a18689d53ad53bd86faa3e010426281c38",
+      "translationSHA256": "ba8abb7530b74329fcc774beeab69fa850855ba423522421d3523596e2ce680e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_TotalCrops",
+      "field": null,
+      "source": "Total Crops: {0}",
+      "translation": "Plodiny celkem: {0}",
+      "sourceSHA256": "927bfef90e582df33420676bf369656079eabe3106aa728a22164084e7a82f13",
+      "translationSHA256": "c014b976fbc141e373a91586863819b25de8ae7e9be7d6bd6a4216605a02b36c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_CropsReadyForHarvest",
+      "field": null,
+      "source": "Crops Ready: {0}",
+      "translation": "Plodiny připravené ke sklizni: {0}",
+      "sourceSHA256": "7e9c24f016bb850fb6f75bc306f4892d23a2168cf0bb10be5f970919d6476fb2",
+      "translationSHA256": "5c0e139781342a59be2645fde3134c84fadff1b46327f55ae195948728fcb61a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_CropsReadyForHarvest_Greenhouse",
+      "field": null,
+      "source": "Crops Ready In Greenhouse: {0}",
+      "translation": "Plodiny připravené ke sklizni ve Skleníku: {0}",
+      "sourceSHA256": "aa5edd3f68480ad66996ad3f8e002586eb65fad93632a6aa05cacecf7dc4ad48",
+      "translationSHA256": "f72b074ee9b7aafb3a0baef15fdcf95c984a5806fd8e5cb63707aad6a83de19f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_TotalOpenHoeDirt",
+      "field": null,
+      "source": "Open Tilled Soil: {0}",
+      "translation": "Volná zoraná půda: {0}",
+      "sourceSHA256": "ec632f22e7f069dfeef9830fe18066add080c4c1966f342ac0421d3269888897",
+      "translationSHA256": "9777b8c1c7da340704e00bdf6c7c6867d9b639c9b0e5118646fde0ccb07667e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_TotalForage",
+      "field": null,
+      "source": "Forage Items: {0}",
+      "translation": "Sběratelské předměty: {0}",
+      "sourceSHA256": "f5de98cc4265a99d7bdca974b18b88b17416d7916b9913f0e8b80a3567705aa0",
+      "translationSHA256": "d0ac6fe5428ebf1371f2a740dfc07ee965c3e6e0d65544521991ee074eb374dd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_MachinesReady",
+      "field": null,
+      "source": "Machines Ready: {0}",
+      "translation": "Stroje s hotovým produktem: {0}",
+      "sourceSHA256": "5d3b2668395326f99c44cd2ec84cb624d96915d78bc4fc2b8b1df4d706c792b1",
+      "translationSHA256": "94f804202f36850c63b173135724c86d7a3e6df353363a904e8b39cf9645ddd2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "FarmComputer_CropsUnwatered",
+      "field": null,
+      "source": "Unwatered Crops: {0}",
+      "translation": "Nezalité plodiny: {0}",
+      "sourceSHA256": "839a8b2802cc717d0ca5ede243b044af4b3f9ae9491e7cbf9e54a7f39c5a5858",
+      "translationSHA256": "e7992c701551c9339a01ff622511a9c194a3265e5d0c2e92c1f5eff9537b6e2b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11108_newHours",
+      "field": null,
+      "source": "Open 8:00AM to 5:00PM",
+      "translation": "Otevřeno od 8:00 do 17:00",
+      "sourceSHA256": "cd8b7f6fde42f97a2d87e99d0165ba969adf399b962dddda0ac6f8b173a0e47e",
+      "translationSHA256": "ea13902a6a3ad20fbfede3eca7924619b240b78c14108042abc14e0bd8c19b4c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV_Fishing_Channel",
+      "field": null,
+      "source": "Fishing Info",
+      "translation": "Rybářské informace",
+      "sourceSHA256": "405e96ddbf82ffb75425de5a631cb7ade5fba79173b7300005661a327da57398",
+      "translationSHA256": "6427faa556f43937d30ac080e27fcbb4481e08076563558522a38c4a19175f96",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Fishing_Channel_Intro",
+      "field": null,
+      "source": "Thank you for tuning in to F.I.B.S., the Fishing Information Broadcast Service. Despite our unfortunate name, you can rest assured that we provide only the most trustworthy information about this season's fishing opportunities.",
+      "translation": "Děkujeme, že sledujete F.I.B.S., rybářskou informační vysílací službu. Navzdory našemu nešťastnému názvu se můžete spolehnout, že přinášíme jen ty nejdůvěryhodnější informace o rybolovu v tomto ročním období.",
+      "sourceSHA256": "308646542fb32bfaf0b330742ba08e292ed04d8b02ce4cad63d57330b476f8c5",
+      "translationSHA256": "3db29cabcba495b0910a6aa3c12a88ace89d7503bbded5ccec8a09cecdc6ac68",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV_Fishing_Channel_sunny",
+      "field": null,
+      "source": "sunny days",
+      "translation": "slunečné dny",
+      "sourceSHA256": "2e2a49f443c8187734565c2ce8f631384d64780fdb196ef8cc3d50aebca0c752",
+      "translationSHA256": "a94bfa423a93b32489f2b3cd46b5551a7cb055027cec0e097cf08bb976094fb4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV_Fishing_Channel_rainy",
+      "field": null,
+      "source": "rainy days",
+      "translation": "deštivé dny",
+      "sourceSHA256": "10367ac6c60f6012912bca7967ab5a8fd5050eabb4a26bb91682ba652f0c6813",
+      "translationSHA256": "7fa4e56df7d8e67da801b688fba77fbcad22d3d244736f7ec2306bd0553d6df4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV_Fishing_Channel_River",
+      "field": null,
+      "source": "river",
+      "translation": "řeka",
+      "sourceSHA256": "5f5a8ed8f139be6df7cf8f4a91d3e4649961a98c82fd521c18d6f292b031a319",
+      "translationSHA256": "589ae7ada1d41b350a91e6a1decbaca6adef8717494780453e76bb0077fdd9d9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV_Fishing_Channel_Lake",
+      "field": null,
+      "source": "lake",
+      "translation": "jezero",
+      "sourceSHA256": "6f021f0268d5dd0d4e286ad5202f57335f2a8cc568704c4f7865c97879443ef8",
+      "translationSHA256": "a1cac9fdb4b23b0406cb73ca0bf4bf200662a1859b14c0ae26793374dcc35c24",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "TV_Fishing_Channel_Ocean",
+      "field": null,
+      "source": "ocean",
+      "translation": "oceán",
+      "sourceSHA256": "47afad612b1f9cc8fd0ab7ba2360845d7b932a9d88e6b704e1f5804295c6ee97",
+      "translationSHA256": "2e79d4370a8d7cc506af700eda9cd2fd6a39ad7cdc2d446403f2f7bdc2345f82",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "bonemill_5",
+      "field": null,
+      "source": "Requires 5 fragments.",
+      "translation": "Vyžaduje 5 kostěných úlomků.",
+      "sourceSHA256": "77e47273b0a9d4e5712bac3780addeba66df825832d5ff6890fb2c7e4f7ae8d3",
+      "translationSHA256": "9e0e51144b17676826916cb414738282f1b9bcbd8de5bf53bb59a7e888950b1d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NewLostAndFoundItems",
+      "field": null,
+      "source": "Some items were placed in the town Lost and Found.",
+      "translation": "Některé předměty byly uloženy do městské schránky ztrát a nálezů.",
+      "sourceSHA256": "4cd956e26d91f6034362c7cca4b4c611773974f354d9375241c767bddd0edc0d",
+      "translationSHA256": "232ebcf79d5bb8fc570e22aa8ad5c983d1e8b03da0c38c19d6fa002223fa0d32",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

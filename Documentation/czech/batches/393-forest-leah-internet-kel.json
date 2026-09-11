@@ -1,0 +1,28 @@
+{
+  "id": "393-forest-leah-internet-kel",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all twelve visible internet-store confrontation segments and both player choices against English; verified the Mr. K reveal, Leah and Kel voices, Kel-neutral Czech, single gender branch shape, shared outcomes, control markers and exact event skeleton.",
+  "rows": [
+    {
+      "target": "Data/Events/Forest",
+      "key": "choseInternet",
+      "field": null,
+      "source": "pause 10/message \"KEL: I found your online art store... weren't you wondering about the 'Mr. K' who kept buying all your sculptures?\"/pause 90/speak Leah \"You're 'Mr. K'? I... I thought it was just a rich guy who truly loved my art.$s\"/move LeahEx 0 1 2/message \"KEL: Heh. Well, you were half right...\"/pause 1000/message \"KEL: Look, Leah. I want you back. I miss you, babe.\"/emote Leah 12/faceDirection Leah 0/speak Leah \"Ew, don't call me that!$a#$b#You never supported my art before... now that I've had some success you want me back? You make me sick.$a\"/move Leah 0 2 2/showFrame LeahEx 4/message \"KEL: Hey! Come Here!\"/speed farmer 4/move farmer -2 0 0 false/question fork1 \"#Punch Kel in the face.#Try reasoning with Kel.\"/fork noPunch/pause 300/screenFlash .25/animate farmer false false 650 15/positionOffset farmer 0 -8/faceDirection Leah 0 true/playSound clubhit/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/speak Leah \"Oh my God!$6\"/speed Leah 4/move Leah -1 0 0/speed Leah 4/move Leah 0 -4 1/emote Leah 40/pause 1700/speak Leah \"Well, he's fine... but that was pretty violent, @.^She's fine... but that was pretty violent, @.\"/faceDirection Leah 2/speak Leah \"Let's get out of here. I don't think Kel will be bothering us anymore.\"/speed farmer 2/positionOffset farmer 2 0/move farmer -1 0 0/move Leah 0 -8 0 true/move farmer 0 -8 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"Let's find a more secluded spot this time...$l\"/playMusic none/pause 2000/end dialogue Leah \"Well, the picnic didn't pan out like I wanted it to.$h\"",
+      "translation": "pause 10/message \"KEL: Vím o tvém internetovém obchodě s uměním... Nenapadlo tě, kdo je ten ‚pan K.‘, který pořád kupoval všechny tvé sochy?\"/pause 90/speak Leah \"Ty jsi ‚pan K.‘? Já... myslela jsem, že je to jen bohatý člověk, který mé umění opravdu miluje.$s\"/move LeahEx 0 1 2/message \"KEL: Heh. No, napůl jsi měla pravdu...\"/pause 1000/message \"KEL: Podívej, Leah. Chci tě zpátky. Chybíš mi, zlato.\"/emote Leah 12/faceDirection Leah 0/speak Leah \"Fuj, tak mi neříkej!$a#$b#Dřív jsem od tebe pro své umění žádnou podporu neměla... a teď, když mám trochu úspěchu, mě chceš zpátky? Je mi z tebe špatně.$a\"/move Leah 0 2 2/showFrame LeahEx 4/message \"KEL: Hej! Pojď sem!\"/speed farmer 4/move farmer -2 0 0 false/question fork1 \"#Udeřit Kel do obličeje.#Zkusit Kel přesvědčit rozumem.\"/fork noPunch/pause 300/screenFlash .25/animate farmer false false 650 15/positionOffset farmer 0 -8/faceDirection Leah 0 true/playSound clubhit/showFrame LeahEx 6/jump LeahEx/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset farmer 0 8/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/positionOffset LeahEx 0 -4/pause 25/pause 200/playSound clubSmash/showFrame LeahEx 7/shake LeahEx 1000/speak Leah \"Proboha!$6\"/speed Leah 4/move Leah -1 0 0/speed Leah 4/move Leah 0 -4 1/emote Leah 40/pause 1700/speak Leah \"Kel bude v pořádku... ale bylo to dost násilné, @.^Kel bude v pořádku... ale bylo to dost násilné, @.\"/faceDirection Leah 2/speak Leah \"Pojďme odsud. Myslím, že Kel už nás nebude obtěžovat.\"/speed farmer 2/positionOffset farmer 2 0/move farmer -1 0 0/move Leah 0 -8 0 true/move farmer 0 -8 0 true/globalFade/viewport -1000 -1000/pause 1000/speak Leah \"Tentokrát najdeme odlehlejší místo...$l\"/playMusic none/pause 2000/end dialogue Leah \"No, piknik nedopadl tak, jak jsem chtěla.$h\"",
+      "sourceSHA256": "57044743295c12a95aaa346dc14a209388dae941e356b032217e65d79a1b6bc7",
+      "translationSHA256": "8408881dc3f0fc27b505b80f6964eac109cdfed805eff4986487c0c5f7f5ab7d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "id": "509-extra-dialogue-mines-morris",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 23 mine-rescue and Morris rows against English; verified speaker and player gender handling, neutral spouse narration, Joja and community-development terminology, contextual greeting variants, response IDs, placeholders, and all dialogue markers.",
+  "rows": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Robin_HouseUpgrade_Accepted",
+      "field": null,
+      "source": "Thank you! I'll get started tomorrow. I should be finished in around three days.",
+      "translation": "Děkuji! Začnu zítra. Hotovo by mělo být zhruba za tři dny.",
+      "sourceSHA256": "aaada28168d71e44fed5b419da5e599773fd94dd902b0b4c426ccfdbddf865be",
+      "translationSHA256": "445aabba4da48df54fe2c7cf37ccd7df9f3bcb1985191a57d35b4e22969887c2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Robin_PamUpgrade_Accepted",
+      "field": null,
+      "source": "That's so generous of you! I'll start working on the upgrade tomorrow. It should take around three days.",
+      "translation": "To je od tebe tak štědré! Na vylepšení začnu pracovat zítra. Hotové by mělo být asi za tři dny.",
+      "sourceSHA256": "3bb38451daf24a74d3da4303016220ea9a23b72c88cfd5d80e8fd3e61b574f07",
+      "translationSHA256": "59eaa8a8805abd1be9cd86f2f0bb0aecbc4fc1402412314f1d70593b4fef6578",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Robin",
+      "field": null,
+      "source": "...I found you unconscious in the mines. I almost mistook you for a piece of exotic wood!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...V dole jsem narazila na tvé bezvládné tělo. Málem jsem si tě spletla s kusem exotického dřeva!#$b#Příště si dávej větší pozor, ano?$s",
+      "sourceSHA256": "74df9e69fe2b48e78d3f9aa0fb2c7e41f815b3c39cfddce7b24c84222d350f98",
+      "translationSHA256": "679c004eb0a92f8c59a5552f3024ae46105c470989633f6fefa450e82997bc84",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Clint",
+      "field": null,
+      "source": "...I found you unconscious in the mines. I think I blew my back out, dragging you all the way up here.#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Našel jsem tě v dole v bezvědomí. Když jsem tě táhl až sem nahoru, málem jsem si zničil záda.#$b#Příště si dávej větší pozor, ano?$s",
+      "sourceSHA256": "7f192a308ccfb09af35250888663dd26578b3e99616a27972ed98d9d258ba2b0",
+      "translationSHA256": "ace0f979cb194a35eca3b131392e9e1205ed22d1d2fead7454adbb768eb6c6c6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Maru_Spouse",
+      "field": null,
+      "source": "...I found you unconscious in the mines. You were gone so long I started to get worried about you!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Našla jsem tě v dole v bezvědomí. Tak dlouho o tobě nebylo ani vidu, že jsem si začala dělat starosti!#$b#Příště si dávej větší pozor, ano?$s",
+      "sourceSHA256": "a9f9d768cfd0cd8dee818f4e3fb3bb41ebaed6b701320d53ffcdefecae295d65",
+      "translationSHA256": "b1b1c07771a50bb628fa5a3c8e5d7ae494fca245e8514691ebe0ed7c0779e053",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Maru_NotSpouse",
+      "field": null,
+      "source": "...I found you unconscious in the mines. I was hunting for minerals and I almost stepped on your head!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Našla jsem tě v dole v bezvědomí. Hledala jsem minerály a málem jsem ti šlápla na hlavu!#$b#Příště si dávej větší pozor, ano?$s",
+      "sourceSHA256": "ab876208a46ff86d0761796be3f08b0483bdb57c04ab016a57c0340e2ff18d51",
+      "translationSHA256": "7831f4f177673dce64d92d81c9273ddf11bc7be69ecabef5815194cebd200267",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Linus",
+      "field": null,
+      "source": "...I found you unconscious in the mines. You're lucky I happened to pass by!#$b#Be a little more careful next time, okay?$s",
+      "translation": "...Našel jsem tě v dole v bezvědomí. Máš štěstí, že jsem šel náhodou kolem!#$b#Příště si dávej větší pozor, ano?$s",
+      "sourceSHA256": "7ea652b00e084ba3f82a669ffdc0c0fa1d99dd7cd6f8d06eeb45fa444e1652ee",
+      "translationSHA256": "0f92621fc7d25cfab4e7ac86c51b54e5f427ad8e6baeabeeca912399150bc20f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Spouse_PlayerMale",
+      "field": null,
+      "source": "You were gone so long I started to get worried about you! I started crying when I saw your limp body...$s",
+      "translation": "Byl jsi pryč tak dlouho, až mě přepadl strach! Při pohledu na tvé bezvládné tělo mi vyhrkly slzy...$s",
+      "sourceSHA256": "39c04486a16760b3d478362d0c84736b99158d64304ced426dcdd11a36255535",
+      "translationSHA256": "8a0c590ecf10f8d7ce786ef3ccd35c5287a224b03ebbdaca4ae67188074f64a6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Mines_PlayerKilled_Spouse_PlayerFemale",
+      "field": null,
+      "source": "You were gone so long I started to get worried about you! I almost had a heart attack when I saw your limp body...$a",
+      "translation": "Byla jsi pryč tak dlouho, až mě přepadl strach! Při pohledu na tvé bezvládné tělo mě málem ranila mrtvice...$a",
+      "sourceSHA256": "3b0f77a880bd7b9a2aff1d979526b65e1d0b1a016e61bbf48643d3ffa74ce9ba",
+      "translationSHA256": "bbc9ecb626513cf125b51493f86f2c379732c394c2e227f89ed48a48cefbecff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_PlayerSignedUp",
+      "field": null,
+      "source": "Excellent! Welcome to Joja Corporation! Come back tomorrow and we can see about getting started on some community development projects... Oh, and don't forget your wallet! Hehe.#$b#Now, let me call Mayor Lewis and see about gutting that nasty old community center...",
+      "translation": "Výtečně! Vítej ve Společnosti Joja! Vrať se zítra a můžeme začít s projekty rozvoje obce... A nezapomeň na peněženku! Hehe.#$b#Teď zavolám starostovi Lewisovi a proberu s ním vyklizení toho ohavného starého Komunitního centra...",
+      "sourceSHA256": "d5c4bf8a4de4c9cf7ad652f9008aa4e80430fbefa2e889f4fac8b90cad77df98",
+      "translationSHA256": "a31941f55c1effa910c39e967ab48a910de02d5c630cf52d59674ec6564c1097",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_ComeBackLater",
+      "field": null,
+      "source": "Come back tomorrow and we can see about getting some community improvements started... Just make sure to bring a lot of money. Hehe.",
+      "translation": "Vrať se zítra a můžeme začít s vylepšováním obce... Jen si nezapomeň přinést hodně peněz. Hehe.",
+      "sourceSHA256": "7b0235123b1532bb1e48b6bd1972bc247cad47dc9511f2f9c5bf2fb7d12cb645",
+      "translationSHA256": "0ba687dc725fd22019f3df7e65c9493e6167799a2bfc47c9b3b1722df5939e4f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_Greeting",
+      "field": null,
+      "source": "Welcome to JojaMart! How are you doing today?#$b#I don't believe we've met. I'm Morris, Joja Customer Satisfaction Representative.#$b#When you decide you want to become a Joja Member, I'll be delighted to help make your transition a joyous experience.",
+      "translation": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Myslím, že jsme se ještě nesetkali. Jsem Morris, zástupce pro spokojenost zákazníků společnosti Joja.#$b#Až se rozhodneš pořídit si členství ve společnosti Joja, s radostí ti pomohu, aby přechod proběhl co nejpříjemněji.",
+      "sourceSHA256": "520333f02d3291b2e96d81129130e1c38d3d60cda997072ce7c5c320099f3ff2",
+      "translationSHA256": "7739241e639c750a72c373a48457cee6ffd1370f77e65412a2e5df46a78a9760",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting",
+      "field": null,
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#We're currently in the process of setting up a brand-new membership system for our customers. Please check back soon to join!",
+      "translation": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Právě pro naše zákazníky zavádíme zcela nový členský systém. Brzy se vrať a přidej se!",
+      "sourceSHA256": "badcc6b3b41bc3865fa5e8e90720dd45c91ca6e7e73e5142321683677c9b8c77",
+      "translationSHA256": "4945185960d4e09afe19be06f41a3d60a4d3d820fce4eaf63ae0a98c86fe82fa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting",
+      "field": null,
+      "source": "Welcome to JojaMart! How are you doing today?#$b#We're currently in the process of setting up a brand-new membership system for our customers. Please check back soon to join!",
+      "translation": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Právě pro naše zákazníky zavádíme zcela nový členský systém. Brzy se vrať a přidej se!",
+      "sourceSHA256": "73365f3e952bfbab8e5ee8fd88950a0c8fa1f3a6835b311566ed219f2d597d1d",
+      "translationSHA256": "da594d275512d7b24808425354b42eb0b2514ef98b1591ce5f3baa1ac1795cbb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting_CommunityCenterComplete",
+      "field": null,
+      "source": "Welcome to JojaMart! How are you doing today?#$b#Unfortunately, due to unforeseen circumstances our Joja Membership offer is not currently available. I'm certain it will get sorted out soon!",
+      "translation": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Bohužel kvůli nepředvídaným okolnostem naše nabídka členství ve společnosti Joja momentálně není dostupná. Jistě se to brzy vyřeší!",
+      "sourceSHA256": "b3b993cc732a90ed383cadf76528bf43cd8f061a816db892f6ea792fded7c4aa",
+      "translationSHA256": "10bff70d71a9e740ff3b4f5643c0590069ad68d03e8194b12df2302646001e8f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting_CommunityCenterComplete",
+      "field": null,
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#Unfortunately, due to unforeseen circumstances our Joja Membership offer is not currently available. I'm certain it will get sorted out soon!",
+      "translation": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Bohužel kvůli nepředvídaným okolnostem naše nabídka členství ve společnosti Joja momentálně není dostupná. Jistě se to brzy vyřeší!",
+      "sourceSHA256": "3a0c5efd09be406db19f344dce47f95ce93c6fb8b395d17fcc49fa7c3c727c7c",
+      "translationSHA256": "b50acd2efa6786958be81d165d20b92a15bcc4db934db147e14a9697ae0510cd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting_MembershipAvailable",
+      "field": null,
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#Membership is now available! With a Joja Membership, you'll be able to make improvements in the community with the help of our dedicated personnel... for a fee, of course.#$b#Oh, and another thing... Mayor Lewis promised us that if anyone else joined up, he'd let us turn that old community center into a Joja Warehouse. Isn't that wonderful?#$q -1 -1#Membership costs {0}g. Well, would you like to join us?#$r -1 -1 Yes#Yes.#$r -1 -1 No#No.",
+      "translation": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Členství je nyní dostupné! S členstvím ve společnosti Joja můžeš s pomocí našeho specializovaného personálu vylepšovat obec... samozřejmě za poplatek.#$b#A ještě něco... Starosta Lewis nám slíbil, že pokud se přidá ještě někdo, dovolí nám proměnit staré Komunitní centrum ve sklad společnosti Joja. Není to báječné?#$q -1 -1#Členství stojí {0}g. Chceš se k nám přidat?#$r -1 -1 Yes#Ano.#$r -1 -1 No#Ne.",
+      "sourceSHA256": "24298df347fd74e350f8bbbf64fbb2478b5b319fc4136e7eb94a12826eb29a38",
+      "translationSHA256": "26b8e636f3b634aaa626b191effc62a7f52bd83aebf6e98e674fc3e99b54eb14",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting_MembershipAvailable",
+      "field": null,
+      "source": "Welcome to JojaMart! How are you doing today?#$b#Membership is now available! With a Joja Membership, you'll be able to make improvements in the community with the help of our dedicated personnel... for a fee, of course.#$b#Oh, and another thing... Mayor Lewis promised us that if anyone else joined up, he'd let us turn that old community center into a Joja Warehouse. Isn't that wonderful?#$q -1 -1#Membership costs {0}g. Well, would you like to join us?#$r -1 -1 Yes#Yes.#$r -1 -1 No#No.",
+      "translation": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Členství je nyní dostupné! S členstvím ve společnosti Joja můžeš s pomocí našeho specializovaného personálu vylepšovat obec... samozřejmě za poplatek.#$b#A ještě něco... Starosta Lewis nám slíbil, že pokud se přidá ještě někdo, dovolí nám proměnit staré Komunitní centrum ve sklad společnosti Joja. Není to báječné?#$q -1 -1#Členství stojí {0}g. Chceš se k nám přidat?#$r -1 -1 Yes#Ano.#$r -1 -1 No#Ne.",
+      "sourceSHA256": "a383a5cc74c210e691b6a0980717a1f623fd584ae3c64ab5fd0d8f8c3abdc99a",
+      "translationSHA256": "a450836460b57808c1d408d9d9a510ae549d9ead419eb930978fbe20b35acc75",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_WeekendGreeting_SecondPlayer",
+      "field": null,
+      "source": "Welcome to JojaMart! How is your weekend going?#$b#Hmm... Our records show that you live on a farm with some other folks... I'm sorry, but we can only sell a membership to the owner of your residence.",
+      "translation": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Hm... Podle našich záznamů žiješ na farmě s dalšími lidmi... Je mi líto, ale členství můžeme prodat pouze majiteli usedlosti, na které bydlíš.",
+      "sourceSHA256": "3562b8d8542e472c9bb448248214fb7d747f8b9dd84c754314c6fc7e64f38bdf",
+      "translationSHA256": "33cb6c40b582bd596c39f3011915e7022ee74b72e2bce569a105463d9ca39c7c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_FirstGreeting_SecondPlayer",
+      "field": null,
+      "source": "Welcome to JojaMart! How are you doing today?#$b#Hmm... Our records show that you live on a farm with some other folks... I'm sorry, but we can only sell a membership to the owner of your residence.",
+      "translation": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Hm... Podle našich záznamů žiješ na farmě s dalšími lidmi... Je mi líto, ale členství můžeme prodat pouze majiteli usedlosti, na které bydlíš.",
+      "sourceSHA256": "cc3bbd803ba4de9584e7c84414ede01f0c8a3dcdb34096ab8e92b0c03caeaa10",
+      "translationSHA256": "b6b4b84d4bb33047d23b38a8e77e0e2bdc479b96efcf77f7759642a4eddb777e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_StillProcessingOrder",
+      "field": null,
+      "source": "We're currently processing your last Community Development order. Please come back after the work is complete.",
+      "translation": "Právě zpracováváme tvou poslední objednávku komunitního rozvoje. Vrať se prosím, až budou práce dokončeny.",
+      "sourceSHA256": "f48cad74c66095f0748fd9a00ffe23d590c70ef0173bbca5fb9a69b96f13e331",
+      "translationSHA256": "7c79f32dab9953ae77215af259eaae518370df2c565a9f5da138a1cf6d0d4d67",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_CommunityDevelopmentForm_PlayerMale",
+      "field": null,
+      "source": "$q -1 -1#I've got the Joja Community Development Form right here for you, sir. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+      "translation": "$q -1 -1#Mám tu pro vás Formulář komunitního rozvoje Joja, pane. Chcete se podívat?#$r -1 -1 Yes#Ano#$r -1 -1 No#Ne",
+      "sourceSHA256": "512fc11c474a3fb11f8e687e7a3455ad6fb39f1f3e57f5052cc7bc8bbcc2c2fd",
+      "translationSHA256": "bbbe18620438cd5e174c1a149e2c407d18ee3fbc8d7203682ad18b7ef2bfd8a0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Morris_CommunityDevelopmentForm_PlayerFemale",
+      "field": null,
+      "source": "$q -1 -1#I've got the Joja Community Development Form right here for you, miss. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+      "translation": "$q -1 -1#Mám tu pro vás Formulář komunitního rozvoje Joja, slečno. Chcete se podívat?#$r -1 -1 Yes#Ano#$r -1 -1 No#Ne",
+      "sourceSHA256": "ba4cdd5a2165ee606a008b900ed52a076a01e7c353156cac8987d75839da8298",
+      "translationSHA256": "63fa356bf6863433eee8e5f9e6c93311c6b146409ee2b049ef495ed20722efd4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

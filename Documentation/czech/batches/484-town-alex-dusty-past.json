@@ -1,0 +1,47 @@
+{
+  "id": "484-town-alex-dusty-past",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed both complete branches and all nineteen dialogue and choice strings against English; verified Alex's guarded account of parental abuse, grief, resilience, and trust, his bond with Dusty, player-neutral overhearing responses, consistent repeated story details, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Town",
+      "key": "2481135/f Alex 1000/t 900 1600",
+      "field": null,
+      "source": "sweet/-1000 -1000/farmer 44 65 1 Alex 50 68 1/skippable/specificTemporarySprite joshDog/viewport 53 67 true/pause 3000/speak Alex \"That's a good boy, Dusty.\"/pause 2000/speak Alex \"You might be the only one around here who understands me.$s#$b#No one else has seen the kind of stuff you and I have.$s\"/faceDirection Alex 2/pause 700/emote Alex 28/playSound leafrustle/move farmer 6 0 2/pause 500/faceDirection Alex 0/jump Alex/pause 800/speak Alex \"@! Did you overhear me talking?$7\"/move farmer 0 1 2/question fork1 \"#Yes, I heard everything.#Not really... why?\"/fork didntHear/pause 500/faceDirection Alex 2/pause 1000/showFrame Alex 27/pause 600/playMusic desolate/emote Alex 28/speak Alex \"I don't really like to talk about it, but I guess I'll explain...$s\"/pause 1000/showFrame Alex 0 true/faceDirection Alex 0/pause 500/speak Alex \"Have you ever wondered why I live with my grandparents?$s#$b#You see, my father wasn't a good guy... He... Well, he ruined everything for me and my mom.$a#$b#Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything.$a#$b#I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life.\"/faceDirection Alex 1/speak Alex \"Well... that's my take on it, anyway. Who knows what was going on in his mind.$a\"/pause 800/speak Alex \"One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents.$s\"/move farmer 0 1 1/pause 3000/emote Alex 40/faceDirection Alex 0/playMusic spring_day_ambient/speak Alex \"You seem like someone I can trust... That's why I'm telling you this, @. I don't want any sympathy.$s#$b#If there's one good thing about my past, it's that it made me strong.\"/pause 500/faceDirection farmer 2/pause 500/speak Alex \"Now... let me show you what Dusty will do for a barbecued steak.$h\"/faceDirection Alex 1/faceDirection farmer 1/showFrame Alex 26/specificTemporarySprite joshSteak/playSound dwop/pause 500/pause 500/speak Alex \"Ha! Look at him slobbering. I think he might like steak as much as I do.$h\"/playSound dogWhining/pause 3000/globalFade/viewport -1000 -1000/end",
+      "translation": "sweet/-1000 -1000/farmer 44 65 1 Alex 50 68 1/skippable/specificTemporarySprite joshDog/viewport 53 67 true/pause 3000/speak Alex \"Hodný kluk, Dusty.\"/pause 2000/speak Alex \"Možná jsi jediný široko daleko, kdo mi rozumí.$s#$b#Nikdo jiný nezažil to, co ty a já.$s\"/faceDirection Alex 2/pause 700/emote Alex 28/playSound leafrustle/move farmer 6 0 2/pause 500/faceDirection Alex 0/jump Alex/pause 800/speak Alex \"@! To všechno bylo slyšet?$7\"/move farmer 0 1 2/question fork1 \"#Ano, úplně všechno.#Vlastně ne... proč?\"/fork didntHear/pause 500/faceDirection Alex 2/pause 1000/showFrame Alex 27/pause 600/playMusic desolate/emote Alex 28/speak Alex \"Nerad o tom mluvím, ale asi ti to vysvětlím...$s\"/pause 1000/showFrame Alex 0 true/faceDirection Alex 0/pause 500/speak Alex \"Napadlo tě někdy, proč žiju u prarodičů?$s#$b#Víš, můj otec nebyl dobrý člověk... On... Zkrátka nám s mámou všechno zničil.$a#$b#Polovinu času byl pryč... a druhou polovinu celou noc pil a říkal mi, že jsem k ničemu a nikdy nic nedokážu.$a#$b#Myslím, že mi zazlíval, že jsem mladý... Byl zatrpklý, protože své mládí promarnil nicneděláním a v životě se nikam nedostal.\"/faceDirection Alex 1/speak Alex \"Takhle to tedy vidím já. Kdo ví, co se mu odehrávalo v hlavě.$a\"/pause 800/speak Alex \"Jednoho dne odešel a brzy nato máma onemocněla a zemřela. Nezbývalo mi než se přestěhovat k prarodičům.$s\"/move farmer 0 1 1/pause 3000/emote Alex 40/faceDirection Alex 0/playMusic spring_day_ambient/speak Alex \"Připadáš mi jako někdo, komu můžu věřit... Proto ti to vyprávím, @. O žádný soucit nestojím.$s#$b#Jestli je na mé minulosti něco dobrého, pak to, že mě posílila.\"/pause 500/faceDirection farmer 2/pause 500/speak Alex \"A teď... ukážu ti, co Dusty udělá za grilovaný steak.$h\"/faceDirection Alex 1/faceDirection farmer 1/showFrame Alex 26/specificTemporarySprite joshSteak/playSound dwop/pause 500/pause 500/speak Alex \"Ha! Podívej, jak slintá. Myslím, že má steak možná stejně rád jako já.$h\"/playSound dogWhining/pause 3000/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "409152345dbe2b091fe68edf4d77c11228878c9dfc80da085bdaaf25c30bd0fc",
+      "translationSHA256": "173f4ae4da3a23f8b9fc5a044a89c78cb8d29a5a771e3bf47a5d98b1b6cfb60d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "didntHear",
+      "field": null,
+      "source": "pause 400/pause 100/faceDirection Alex 1/speak Alex \"Oh... I was talking to Dusty.#$b#He and I have a lot in common, actually.$s\"/faceDirection Alex 2/pause 1000/showFrame Alex 27/pause 600/playMusic desolate/emote Alex 28/speak Alex \"I don't usually like to talk about it... But we've been friends for a while now and I think I can trust you.$s\"/pause 1000/faceDirection Alex 0/pause 500/speak Alex \"Have you ever wondered why I live with my grandparents?$s#$b#My father wasn't a good guy... He... Well he ruined everything for me and my mom.$a#$b#Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything.$a#$b#I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life.$a\"/faceDirection Alex 1/speak Alex \"Well... that's my take on it, anyway. Who knows what was going on in his mind.$a\"/pause 800/speak Alex \"One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents.$s\"/move farmer 0 1 1/pause 3000/emote Alex 40/faceDirection Alex 0/playMusic spring_day_ambient/pause 500/faceDirection farmer 2/pause 500/speak Alex \"You know what? There's no sense dwelling on this stuff... I don't want any sympathy from anyone.#$b#You have to look on the positive side of things... My childhood wasn't great, but it did make me strong. I had to be.\"/pause 1000/speak Alex \"Here, let me show you what Dusty will do for a barbecued steak.$h\"/faceDirection Alex 1/faceDirection farmer 1/showFrame Alex 26/specificTemporarySprite joshSteak/playSound dwop/pause 500/pause 500/speak Alex \"Ha! Look at him slobbering. I think he might like steak as much as I do.$h\"/playSound dogWhining/pause 3000/end",
+      "translation": "pause 400/pause 100/faceDirection Alex 1/speak Alex \"Aha... Mluvil jsem s Dustym.#$b#Vlastně toho máme hodně společného.$s\"/faceDirection Alex 2/pause 1000/showFrame Alex 27/pause 600/playMusic desolate/emote Alex 28/speak Alex \"Obvykle o tom nerad mluvím... Ale už jsme nějakou dobu přátelé a myslím, že ti můžu věřit.$s\"/pause 1000/faceDirection Alex 0/pause 500/speak Alex \"Napadlo tě někdy, proč žiju u prarodičů?$s#$b#Můj otec nebyl dobrý člověk... On... Zkrátka nám s mámou všechno zničil.$a#$b#Polovinu času byl pryč... a druhou polovinu celou noc pil a říkal mi, že jsem k ničemu a nikdy nic nedokážu.$a#$b#Myslím, že mi zazlíval, že jsem mladý... Byl zatrpklý, protože své mládí promarnil nicneděláním a v životě se nikam nedostal.$a\"/faceDirection Alex 1/speak Alex \"Takhle to tedy vidím já. Kdo ví, co se mu odehrávalo v hlavě.$a\"/pause 800/speak Alex \"Jednoho dne odešel a brzy nato máma onemocněla a zemřela. Nezbývalo mi než se přestěhovat k prarodičům.$s\"/move farmer 0 1 1/pause 3000/emote Alex 40/faceDirection Alex 0/playMusic spring_day_ambient/pause 500/faceDirection farmer 2/pause 500/speak Alex \"Víš co? Nemá smysl se tím pořád zabývat... O soucit od nikoho nestojím.#$b#Člověk se musí dívat na věci z té lepší stránky... Mé dětství nebylo skvělé, ale posílilo mě. Musel jsem být silný.\"/pause 1000/speak Alex \"Ukážu ti, co Dusty udělá za grilovaný steak.$h\"/faceDirection Alex 1/faceDirection farmer 1/showFrame Alex 26/specificTemporarySprite joshSteak/playSound dwop/pause 500/pause 500/speak Alex \"Ha! Podívej, jak slintá. Myslím, že má steak možná stejně rád jako já.$h\"/playSound dogWhining/pause 3000/end",
+      "sourceSHA256": "8c5be8d2c330a5de335a1e33ae5bdf069150db9cdb683a594737057f273ced9d",
+      "translationSHA256": "60d1b510d330c36772147a8b9a5f0a549ab1893c8694e61f27f2da1a97dfbd58",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

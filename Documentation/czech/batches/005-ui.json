@@ -1,0 +1,1514 @@
+{
+  "id": "005-ui",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full source/Czech comparison reread after corrections; all 79 UI/chat strings verified for meaning, grammar, terminology, currency typography, placeholders, and markers.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_IPConnections",
+      "field": null,
+      "source": "Accept IP connections",
+      "translation": "Přijímat připojení přes IP adresu",
+      "sourceSHA256": "e7598a8c3aed5f689295e1b759ffc7c94fe95dfe5f3c837dbffa7dff6e007b53",
+      "translationSHA256": "fbe3ad6036f19852ce0026c9dacd0c18159b01690452da5b1c2218c82815711c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_FarmhandCreation",
+      "field": null,
+      "source": "Enable new character creation",
+      "translation": "Povolit tvorbu nové postavy",
+      "sourceSHA256": "aeace34b4aa34e1e65638469610771ef5c478683cffec4fa9667d9c3eca8592c",
+      "translationSHA256": "bb5bb1e4e1b767d1e08cd7858cf217ad748426fdc8dddc0f32d79d9f17fbb3a1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowInviteCode",
+      "field": null,
+      "source": "Show Invite Code",
+      "translation": "Zobrazit kód pozvánky",
+      "sourceSHA256": "d0d638f8a9fccb1519d9850f0b8166de254baef8f629cbdec0808b9b5c3a7ef4",
+      "translationSHA256": "3690ac597a141081c079d46ab733ca564e279a8b5f4876465dc80b849907ec7f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ShowReadyStatus",
+      "field": null,
+      "source": "Show Overnight Player Status List",
+      "translation": "Zobrazovat seznam stavů hráčů na konci dne",
+      "sourceSHA256": "a0605b5165d6c430c97aa1c8621eb84827c87cd25a2618ffe9c4d253002b4088",
+      "translationSHA256": "b3bdd4143577baccc33000fbf52fa7c12b01ea3e3e22c68fd805db6ac5077093",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "OptionsPage_ScreenshotHeader",
+      "field": null,
+      "source": "Screenshot:",
+      "translation": "Snímek obrazovky:",
+      "sourceSHA256": "fca7dc5207e518bb5d1f986e4a650e5bd3ca31c9551885381dcbaea482aa1d48",
+      "translationSHA256": "b84d8b3010151f9aad774b637fe8d3b6a4f560da2ee137d7581c52546ad46698",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_RemotelyDisconnected",
+      "field": null,
+      "source": "The server has closed the connection.",
+      "translation": "Server ukončil připojení.",
+      "sourceSHA256": "ac91f530db865637940c9016f2e99096fad6fe67bb53ce81260f6d6a178272c9",
+      "translationSHA256": "f830669c91f8f9e59d94480c5be687b0ef60f49d9ced4ea9d0e3cb432483115b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_FarmhandOnline",
+      "field": null,
+      "source": "Can't demolish while this cabin's farmhand is online",
+      "translation": "Chatku nelze zbourat, dokud je její obyvatel online",
+      "sourceSHA256": "715bb7ef7872fdb27f48fcd689a5d2df5b421e59f15abf8565f61c04e8e352fe",
+      "translationSHA256": "28752baef1038e4be49b272268263739bbf89372f80224d987b963b8702a6059",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_DemolishCabinConfirm",
+      "field": null,
+      "source": "This will permanently remove {0} from the game. Are you sure you want to demolish this cabin?",
+      "translation": "Tímto ze hry trvale odstraníte postavu {0}. Opravdu chcete tuto chatku zbourat?",
+      "sourceSHA256": "68b004a2eeb7b4aed3c2a07ccbe03b0388f4a8e59398820326133811f9b5beed",
+      "translationSHA256": "4f4e7d5d5a3da0d1c7d6aa6ab3d28cfb750d82ac91d1c0416034d99a39e46c97",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostAvailability",
+      "field": null,
+      "source": "Waiting for the host's event to finish...",
+      "translation": "Čekání na dokončení hostitelovy události...",
+      "sourceSHA256": "412eae0c6bd56b9cfd8ef0b70de3356942df18753480c735d492e59bc5ed6b04",
+      "translationSHA256": "fa640d767e620c58e50eaaac2f512639c5dd0ae934d56064288c8ffc976401a8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Client_WaitForHostLoad",
+      "field": null,
+      "source": "Waiting for the host to finish setting up...",
+      "translation": "Čekání na dokončení příprav hostitele...",
+      "sourceSHA256": "232641975d59048ebae72927528c2f79aa83d8c505c7bc1f18f4536c3a4307a9",
+      "translationSHA256": "064bfc2e9c096816ba61f13c2387ed9aa09f0bdcd6303d3c45c1e6766af10d4e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UnknownUserName",
+      "field": null,
+      "source": "???",
+      "translation": "???",
+      "sourceSHA256": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615",
+      "translationSHA256": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615",
+      "preservationReason": "The unknown-name placeholder is punctuation only and must remain ???.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerName",
+      "field": null,
+      "source": "{0} ({1})",
+      "translation": "{0} ({1})",
+      "sourceSHA256": "fa1e7180cf6c8ea611aeffecae3ff04d94f9558bbd8f2c69960ac883c1f31595",
+      "translationSHA256": "fa1e7180cf6c8ea611aeffecae3ff04d94f9558bbd8f2c69960ac883c1f31595",
+      "preservationReason": "Formatting-only template: player display name and ID placeholders must be preserved.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ChatMessageFormat",
+      "field": null,
+      "source": "{0}: {1}",
+      "translation": "{0}: {1}",
+      "sourceSHA256": "fb62fe2ae6b2ae6cd472717ded838cce62600f4789e31aa5873e7e69407848bc",
+      "translationSHA256": "fb62fe2ae6b2ae6cd472717ded838cce62600f4789e31aa5873e7e69407848bc",
+      "preservationReason": "Formatting-only template joining player name and message; no English prose.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_ErrorMessageFormat",
+      "field": null,
+      "source": "[Error] {0}",
+      "translation": "[Chyba] {0}",
+      "sourceSHA256": "15e478d6abfcb879da2b11d91ef74cb4dbee03ab86f4f49b434266efba55008e",
+      "translationSHA256": "bfb5d9d1dbf057ce4209b08e0a2768645e00208d820bbba5613fb355c3017b6c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PrivateMessageFormat",
+      "field": null,
+      "source": "{0} [Private]: {1}",
+      "translation": "{0} [Soukromé]: {1}",
+      "sourceSHA256": "b784f2ff8b277c2282f942d220109152dae4b52793ca58dc2342645d74c749ef",
+      "translationSHA256": "4a458b2c1ed1363f056330676e8195fc2d1e0e3bf23f8cdf12384bd20fb76aec",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UserNotificationMessageFormat",
+      "field": null,
+      "source": "> {0}",
+      "translation": "> {0}",
+      "sourceSHA256": "ab4832ada1d5aa553bbbbd49b518e3dc9ddcdaac4077512f29490c001f66cf63",
+      "translationSHA256": "ab4832ada1d5aa553bbbbd49b518e3dc9ddcdaac4077512f29490c001f66cf63",
+      "preservationReason": "Formatting-only notification template with a literal arrow and placeholder.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoined",
+      "field": null,
+      "source": "{0} has joined.",
+      "translation": "{0} je nyní ve hře.",
+      "sourceSHA256": "e8541ec08bc3e45294e24a19c8ef6e13d074ba2823cb66881dc683a6e6620626",
+      "translationSHA256": "932dc15765d4d9c656bfe19171a9212a6c92a61507ff13686d465e1029b3188f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerJoinedNewName",
+      "field": null,
+      "source": "Unnamed Farmhand",
+      "translation": "Bezejmenný pomocník na farmě",
+      "sourceSHA256": "40bca915321e45cae92ddccdaa90aa591374933f708db4042ea381880c2ea864",
+      "translationSHA256": "9df833567774562c883840bfb31badb6e3954982dc2286d0a34ea36ba7aa26a8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerDeath",
+      "field": null,
+      "source": "{0} was knocked unconscious.",
+      "translation": "{0} upadá do bezvědomí.",
+      "sourceSHA256": "e923fd77fa76fbc725cbacd65c28cecab8fc4fa6ecda3c50956f59377a9727c5",
+      "translationSHA256": "3a610f44d8262b95fdccd56f3b6d3597299dc8cc5ddb02a206c43a58017be00d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CaughtLegendaryFish",
+      "field": null,
+      "source": "{0} caught the legendary '{1}' fish.",
+      "translation": "Postava {0} ulovila legendární rybu „{1}“.",
+      "sourceSHA256": "47a66cf9af03d3b566ffd3605c991476bad44dab0d2cb1b23793d8994616b35e",
+      "translationSHA256": "862c7679a0ae6edec6c716dda681e05e332b46640d2659c866e1b2a837be5392",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_TrashCan",
+      "field": null,
+      "source": "{1} caught {0} digging through the trash...",
+      "translation": "Postava {1} přistihuje postavu {0} při přehrabování odpadků...",
+      "sourceSHA256": "7df6263ecdb328792573269f168d439581d38af76075704a8add646597b232fb",
+      "translationSHA256": "91aaa82c24d06234d6d67af75895923e9f0db929ca8426a9514de010873c8b60",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LinusTrashCan",
+      "field": null,
+      "source": "Linus was impressed!",
+      "translation": "Na Linuse to udělalo dojem!",
+      "sourceSHA256": "d1f1bdc351bbdb56ad94cddb4a2b24e3d4cc23f25e48503199eb5d2e1775c630",
+      "translationSHA256": "7f62688deea6f9336f0dc29863957ce6856192cc631ff4561ecd9b47c4492f1f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Bundle",
+      "field": null,
+      "source": "Bundle complete!",
+      "translation": "Balíček splněn!",
+      "sourceSHA256": "c13041716b81090fcd2d40baf0c7fb3b69ed841798bec76beaa4b451531f3367",
+      "translationSHA256": "979c554dead7e2994ac1dcd5e324786dcf44aff690eb5be4d58625d51a88a154",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Stardrop",
+      "field": null,
+      "source": "{0} found a stardrop.",
+      "translation": "{0} nachází Hvězdnou kapku.",
+      "sourceSHA256": "e4bfe7f40a33cb6090425294d01454a8c926b19dee7d2d16bfa284af32173659",
+      "translationSHA256": "613605e91dcd4e38b1c03d84d5edbd98c5cb24b13143c53d0103233828336e9c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HorseNamed",
+      "field": null,
+      "source": "{0} named a horse {1}.",
+      "translation": "{0} dává koni jméno {1}.",
+      "sourceSHA256": "10a6acaa5ee35f41be15b153c3dc74c46a31cc76812e8a8ce1ef76e522ea5a78",
+      "translationSHA256": "7509ec510dd4e48bdb9c0eaf00ab02994c9dbead351c40d4d99974c7b6fce18e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PrairieKing",
+      "field": null,
+      "source": "{0} beat Journey of the Prairie King.",
+      "translation": "{0} vítězí ve hře Putování krále prérie.",
+      "sourceSHA256": "034e79c07af24123507ec2e10ceab01c4b6820714e22d89823e2d0f8bd142c09",
+      "translationSHA256": "0d49b65aafee9448cec952b1d55e9484389cd7e3fe8211ca42107d2d84b51c3c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_JunimoKart",
+      "field": null,
+      "source": "{0} beat Junimo Kart.",
+      "translation": "{0} vítězí ve hře Junimo Kart.",
+      "sourceSHA256": "7658f7cd52a836c804cbbfe2eecf2cf2a65ca54e4dad4aa0fdf4b55d962bc3da",
+      "translationSHA256": "8982a8440284f3cd0508b754e75b2f8681f0a5a674e4c1de53f40ec42a4f2fea",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Dating",
+      "field": null,
+      "source": "{0} is dating {1}.",
+      "translation": "Postavy {0} a {1} spolu chodí.",
+      "sourceSHA256": "8f06b92f133227c914b7706869edf3c86ee630b6c19a7142e10a261e22dcfd96",
+      "translationSHA256": "9e91f7ed9db90bcefc2c0ee87e847f6a331c39174f646e315ebe30235a20f893",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BreakUp",
+      "field": null,
+      "source": "{0} broke up with {1}.",
+      "translation": "Postava {0} se rozchází s postavou {1}.",
+      "sourceSHA256": "9fd6a29e856e494d51bf4b454efdc44085a0f8fc87fe1eddd44f66ad466c3512",
+      "translationSHA256": "4a4a596b6c8de5b91ac59b614e0d7eb26dbd71c5784d98cb4ecad4820707f354",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Engaged",
+      "field": null,
+      "source": "{0} got engaged to {1}.",
+      "translation": "Postavy {0} a {1} se zasnoubily.",
+      "sourceSHA256": "094f376ef56a2686fbf4bdca283c51d91fa115d7ea2f712b8428a2fe09012551",
+      "translationSHA256": "97f27538b82dd4ad47b77460aa16508e207ac30ba270027d2c5558af7f24667a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MuseumComplete",
+      "field": null,
+      "source": "{0} Farm has completed the museum collection.",
+      "translation": "Farma {0} dokončila muzejní sbírku.",
+      "sourceSHA256": "693de83dccc841f765f53bef44a6eddfdd477ea98e9da6497cf302df9130de6f",
+      "translationSHA256": "1d913d3be008dfcb043585d54f17c363a0365de843b316c73c46aced6c150c78",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Museum40",
+      "field": null,
+      "source": "{0} Farm has donated 40 pieces to the museum.",
+      "translation": "Farma {0} darovala muzeu 40 exponátů.",
+      "sourceSHA256": "8398355f278b55f174924806355911c3456b0c740687b791fde9134fa64b3add",
+      "translationSHA256": "a639c3c4699e47ceea354e9a4da36c6f58d3937b713709997b1460883799f092",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_donation",
+      "field": null,
+      "source": "{0} donated '{1}' to the museum.",
+      "translation": "Postava {0} darovala muzeu předmět „{1}“.",
+      "sourceSHA256": "23a3531f86fa81fce29e84c79d44b696e6bf921ac42a43c497f31a75fb63ac15",
+      "translationSHA256": "35b3b82e91acad1698b382f6e71afe796f7e6c49aedd8cd2e57d4b7997a2bfc9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked10k",
+      "field": null,
+      "source": "{0} has walked 10,000 paces.",
+      "translation": "{0} má za sebou 10 000 kroků.",
+      "sourceSHA256": "087ac7f4bc27a5113947555ff1f47c5e49bb6077bd66cd2f0338a9ddab1f1a8e",
+      "translationSHA256": "311d2b4776cbf0afddfd31c3f2d3715f0dc6274074ff61bb4b9a1ad4d2aa6fa0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked100k",
+      "field": null,
+      "source": "{0} has walked 100,000 paces.",
+      "translation": "{0} má za sebou 100 000 kroků.",
+      "sourceSHA256": "3c22a22daf1bb6eeac06f78f8c9a751f892a98145e8daff4c08302d027994c4b",
+      "translationSHA256": "e9f7af6920430da8c017f3c0ea03fba4b5a20b6a4d1614b0c4ae696090e7388d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked1m",
+      "field": null,
+      "source": "{0} has walked 1,000,000 paces.",
+      "translation": "{0} má za sebou 1 000 000 kroků.",
+      "sourceSHA256": "14e411a2a973de44640ebf485844aa1ed85f06d05c2fd6d541eac50d6caaff3e",
+      "translationSHA256": "bfcd33fd1a46914d6e8e8f2c35b814f60a68f71dc43e12a2ab1f5531f5789580",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Walked10m",
+      "field": null,
+      "source": "{0} has walked 10,000,000 paces.",
+      "translation": "{0} má za sebou 10 000 000 kroků.",
+      "sourceSHA256": "f291043156b8858a0776c8f3cfc93dd114406bf42d3998a07a3f093bc48f562e",
+      "translationSHA256": "97a7bf0dbc675a9eadb6b08e6d24de6b140264b01a6fd92ecdaef2ec49464f7e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Divorce",
+      "field": null,
+      "source": "{0} has filed for divorce.",
+      "translation": "{0} podává žádost o rozvod.",
+      "sourceSHA256": "76fe58dcc3b17c9a76384d94eb6de761b4a48c0473d6cfa25ed3a81170355c9e",
+      "translationSHA256": "35d43b042b96448c5aede3821b760579350150b484952ad3985693f015fb134d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BackpackLarge",
+      "field": null,
+      "source": "{0} bought the Large Pack.",
+      "translation": "{0} kupuje velký batoh.",
+      "sourceSHA256": "5f113250b012a7bd6b098703a44cc7c5afc7163be7edea039232a090d633c44d",
+      "translationSHA256": "3b1e6f831e972d02d3b44f02e6349017d4f8d85536286c4eaf298adacd40c209",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BackpackDeluxe",
+      "field": null,
+      "source": "{0} bought the Deluxe Pack.",
+      "translation": "{0} kupuje luxusní batoh.",
+      "sourceSHA256": "8d6142cd085549e63a4f1a1028cd0ba83d57dfb2d9665b285306db5a04705fa8",
+      "translationSHA256": "b95a5c0ba6bc2552bb393e6488b89ad60acab7a5d6d54a23492b5061a83346fb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Makeover",
+      "field": null,
+      "source": "{0} got a magical makeover.",
+      "translation": "{0} má díky kouzlu nový vzhled.",
+      "sourceSHA256": "d6926d6499747eb3a9c5e35281aa53963be2beae4a1e9209b271a705db7e1d2a",
+      "translationSHA256": "488b69cf07049c94619acf9d02e096b9cc465b00e46c0fc30593f4836a58edf5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Makeover_Pet",
+      "field": null,
+      "source": "{0} and {1} got a magical makeover.",
+      "translation": "{0} a {1} mají díky kouzlu nový vzhled.",
+      "sourceSHA256": "b1e16d67d086f38dde76601efb29b37779756ff634d818450775ba8d7f13d63c",
+      "translationSHA256": "6e9fc0e986d7819f0072e2c3a22d090efbd786b14df1bfe04922e45f1ab7b912",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DivorceCancel",
+      "field": null,
+      "source": "{0} has canceled the divorce.",
+      "translation": "{0} ruší rozvod.",
+      "sourceSHA256": "f0d359ab4efcf6a9a110d60f8bfef785828db63adfd2140b277d6a99f4881f7b",
+      "translationSHA256": "2eda1ef731e52b18339087ccd8024e09cb95f2b8a37bf55e5a596a13dff0341a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly0",
+      "field": null,
+      "source": "{0} is calling it an early night.",
+      "translation": "{0} to dnes balí dřív a jde spát.",
+      "sourceSHA256": "39022fcd9e1172e05b290ce02b11da61d8a0673c07fc7af618131b13b8e4eb42",
+      "translationSHA256": "6a260beac826be76dbb91e03b2001b529737c055db058e8b06eda3d2628eaf47",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly1",
+      "field": null,
+      "source": "{0} is going to bed early today.",
+      "translation": "{0} jde dnes brzy spát.",
+      "sourceSHA256": "0f8c4f957d80515f3ed3072ebff3d6c156097787fcc04189743d1deae698cb8f",
+      "translationSHA256": "976638711ec9adc5fb1f27542c047323f6173b27528c560c655761f28c686767",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedEarly2",
+      "field": null,
+      "source": "{0} is turning in early today.",
+      "translation": "{0} se dnes ukládá ke spánku dřív.",
+      "sourceSHA256": "88a92f35ef904bb52ab0be94f92bc03dbe7b943911670e90fd4b048d0952fe98",
+      "translationSHA256": "87459fe4bcd7f2fe8e9bb2fbfd5fc84fd3e3b89aa14b998bfb27cafa04254425",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed0",
+      "field": null,
+      "source": "{0} has gone to bed.",
+      "translation": "{0} už je v posteli.",
+      "sourceSHA256": "b07ff32bd6390ee6b238207bf20d55bafc953853fdaaca712838665406dc89a0",
+      "translationSHA256": "3f17b43111b888fb15999a7904f11dcfc2b14f52043e554659d4fedc2c581733",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed1",
+      "field": null,
+      "source": "{0} has tucked into bed.",
+      "translation": "{0} už je pod peřinou.",
+      "sourceSHA256": "5a996899c62f12c24f95e644a9849a7305c677d2e1bd4d52d757b06b10a602ef",
+      "translationSHA256": "80c30f8cf318749ad027b242a88c99cb28d9a45daf3faa0d60ec52da137e47b3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBed2",
+      "field": null,
+      "source": "{0} is hitting the sack.",
+      "translation": "{0} jde na kutě.",
+      "sourceSHA256": "a78830f31108fafc0313ae93e52138c9e91af7ed56ea3f5f6b4c35bfbff1f8a6",
+      "translationSHA256": "d74f628d66331df814bb9d741ddb61c06133d7851c932eaff17df014709c4739",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate0",
+      "field": null,
+      "source": "{0} has made it to bed!",
+      "translation": "Postava {0} se dostala do postele!",
+      "sourceSHA256": "504ec700dc6844254a84e9cfc4aff295baf7a0a700be1c35ea86f9e0aba65098",
+      "translationSHA256": "246295dd610ea5bc13fa53f786331d0bf4ec47dc31b6cb502d2c44f847c822f6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate1",
+      "field": null,
+      "source": "{0} has made it to bed, safe and sound!",
+      "translation": "{0} je v posteli, v pořádku a bez úhony!",
+      "sourceSHA256": "25da9fa22307a652c439a10c91a2028bdebf1ca6b8a987085de7a8d9e40ee0b1",
+      "translationSHA256": "3e9ffd73999069befc0cfc570d495a20a8736e2a320b13466ae6ce072e2bfdfa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GoneToBedLate2",
+      "field": null,
+      "source": "Whew! {0} has made it to bed!",
+      "translation": "Uf! {0} už je v posteli!",
+      "sourceSHA256": "4809cbeb8210b5d2a9d39ebdfc78ac19d65c61666096731dc398bc17218a4319",
+      "translationSHA256": "f9cf987665aae0337bdc97611edce7eac1b988fadcdb406b78083369a9ffdba7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut0",
+      "field": null,
+      "source": "{0} has passed out!",
+      "translation": "{0} omdlévá!",
+      "sourceSHA256": "2c32f6e63f143da71255bf855b12485237f4a58b02347f5980bb77dbd5259a8b",
+      "translationSHA256": "95fc3a5b90996cf2e36ab1d30e457ee52821a5f7e48da57bf8bfb0c6506ed0c7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut1",
+      "field": null,
+      "source": "{0} didn't make it to bed...",
+      "translation": "Postava {0} se do postele nedostala...",
+      "sourceSHA256": "ad2a148f6901d381c5da70ccd329236e63690cc07dd278811e9eb93035ddcffc",
+      "translationSHA256": "40e8b2984f1a5dcbf34d6f5a7e3564ebb6e28f2dc082f3c372b136126d5b9adc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut2",
+      "field": null,
+      "source": "{0} stayed out too late...",
+      "translation": "Postava {0} zůstala venku příliš dlouho...",
+      "sourceSHA256": "d9754aee3223f20551356249dab14c6666b3973ef0381ae9036fb1c6236dd942",
+      "translationSHA256": "cc6ec4472e5f7d18e86f30d7cbb8f49547ad9789d0ed9347933c0901312a317f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_EvilShrine",
+      "field": null,
+      "source": "{0} visited an evil shrine...",
+      "translation": "Postava {0} navštívila zlou svatyni...",
+      "sourceSHA256": "41c0ed979b019d0a77753491ea47fbb8eaa961540e288f9ad8fb244348021223",
+      "translationSHA256": "2ee99d03f3263afd167c40f933163968e588635e43485706682d6bade7b9a537",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonstersActivated",
+      "field": null,
+      "source": "{0} has removed the farm's ancient magi-seal of protection. Watch out!",
+      "translation": "{0} odstraňuje prastarou kouzelnou pečeť, která farmu chránila. Pozor!",
+      "sourceSHA256": "9ef94706339307cfb67313de88dd50af6ffe76b09ca7ad50e0a6c389668dd5e1",
+      "translationSHA256": "bf0600950d76fb02db4088108e43733944c242254949d3fd54fd8e9311e7baf9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonstersDeActivated",
+      "field": null,
+      "source": "{0} has restored the farm's ancient magi-seal of protection.",
+      "translation": "{0} obnovuje prastarou kouzelnou pečeť, která farmu chrání.",
+      "sourceSHA256": "f9669f7a56a13faedc0d90227cbc32e58dea4029b51795cead0df7a6dde724bc",
+      "translationSHA256": "0d6376735a60129225e55025dbf195180844ebb669b88f2ec1146c5dd408356c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SleepAnnounceModeSet",
+      "field": null,
+      "source": "Sleep announce mode is now: {0}.",
+      "translation": "Režim oznámení o spánku je nyní: {0}.",
+      "sourceSHA256": "3935879c615dbcd9b72a3cbca153faed87b9a8d22a24d91b486403747d30bc10",
+      "translationSHA256": "d2c130fbcc40e858e88d1f7d31efd15626c2c3af2d8136f321681f6a50b0f37d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LostBook",
+      "field": null,
+      "source": "{0} has found a Lost Book!",
+      "translation": "{0} nachází Ztracenou knihu!",
+      "sourceSHA256": "bfeb14e00e3fe65120aef2b8e112cdc219a8c89b5c6528f670090e8a191fe6d1",
+      "translationSHA256": "c2b853ec371d206d62e7d714b2ca883d5b0c343bf3cca21ded84d266f6592a26",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieInviteAccept",
+      "field": null,
+      "source": "{0} has invited {1} to a movie!",
+      "translation": "Postava {0} zve postavu {1} do kina!",
+      "sourceSHA256": "8af99079aab65c5bcea105fe3b8b500edf87931c2424df812d33753a06797618",
+      "translationSHA256": "3fa50fe75fa6abe3bdc560abb29cde079289418034b140b0db10b98e8855a964",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieInviteReject",
+      "field": null,
+      "source": "{1} has turned down {0}'s offer to see a movie...",
+      "translation": "Postava {1} odmítá pozvání do kina od postavy {0}...",
+      "sourceSHA256": "d862e0758daca338cfdefd50d80894ded31752580cd833b72cfe3daffe407d32",
+      "translationSHA256": "f57c8aa7b86809d55d8410c0246ec49a1d3a5db0147368c37400f8722726fa5f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieStart",
+      "field": null,
+      "source": "The next showing of '{0}' is about to begin!",
+      "translation": "Další promítání filmu „{0}“ za chvíli začne!",
+      "sourceSHA256": "9e378631b35c660738997e746edd637ec73f22ef5cba6fbc195abe399595aa88",
+      "translationSHA256": "abb17cb2c7c21b415de5cbcf63930951e9ec9137a4ec7c0f9b736b15978d4806",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MovieEnd",
+      "field": null,
+      "source": "The showing of '{0}' has concluded.",
+      "translation": "Promítání filmu „{0}“ skončilo.",
+      "sourceSHA256": "44e764018420af803393e7c2e9999e29f55f9cb2b7b501caec78f811f44c596f",
+      "translationSHA256": "6bb22f9e12a709e0b8fa74652074d87125c11560f6562e3e641efd50d183a6a4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned15k",
+      "field": null,
+      "source": "{0} Farm has earned 15,000g.",
+      "translation": "Farma {0} vydělala 15 000 g.",
+      "sourceSHA256": "ee8ad0c1438c9ad3353ba0a8bbe6157b6983cc5adeaf27863d92d8c30a8b7230",
+      "translationSHA256": "1f2d58be2e798d8cfe9abf0e7d6a9cc5aa30408d6f502f188ac75ae1df1c4ee6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned50k",
+      "field": null,
+      "source": "{0} Farm has earned 50,000g.",
+      "translation": "Farma {0} vydělala 50 000 g.",
+      "sourceSHA256": "0594ecb041332774e577d6a9683be11b233ef9d5441d6ae670a0ab089205c747",
+      "translationSHA256": "01ec91b43de010a72b21fc865c1085bc9e7194a1c9984ea7b93e90736822de9c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned250k",
+      "field": null,
+      "source": "{0} Farm has earned 250,000g.",
+      "translation": "Farma {0} vydělala 250 000 g.",
+      "sourceSHA256": "be4fc7f32b7f4da1e2a97e889eb608a450399ae350549728750ab31e0ae8d2af",
+      "translationSHA256": "308a2463911b1081acfa412160b3138eefd3901e5c6e8172122460f3713dee17",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned1m",
+      "field": null,
+      "source": "{0} Farm has earned 1,000,000g.",
+      "translation": "Farma {0} vydělala 1 000 000 g.",
+      "sourceSHA256": "168ef7308ff88831e55e3eb3e80ee513b9496317d9e78d7152819ac5444056a9",
+      "translationSHA256": "36d891855261a0533e34fde0ad0ec1db5091887f25851d5414306e192cced593",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned10m",
+      "field": null,
+      "source": "{0} Farm has earned 10,000,000g.",
+      "translation": "Farma {0} vydělala 10 000 000 g.",
+      "sourceSHA256": "4a7373b1518f557bfe9f454c3e63e88caa44d69a828885b61d95d784ede95165",
+      "translationSHA256": "80ae44964810f91bb74039130a66b0c7a2cc7a1d8020fd6750b5b46bf3c9af2e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Earned100m",
+      "field": null,
+      "source": "{0} Farm has earned 100,000,000g.",
+      "translation": "Farma {0} vydělala 100 000 000 g.",
+      "sourceSHA256": "08eb7e893d0aa02d33184f9a75f33f9bd9c966c282b9b4985afdc74da7dff8de",
+      "translationSHA256": "a402e28a44dce3485fc3d5771b190456b31b9791303deb5fde385fd5f50725d2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_GalaxySword",
+      "field": null,
+      "source": "{0} found the Galaxy Sword.",
+      "translation": "{0} nachází Galaktický meč.",
+      "sourceSHA256": "3a71ed63200842e64da0448d8f464135e63e9f5195889c2bcd00b51231c30fcd",
+      "translationSHA256": "b04171eb4350d4522c7209a0b791f61d9899e3cc59bd225d48982cb60991e8e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Achievement",
+      "field": null,
+      "source": "{0} has earned the '{1}' achievement.",
+      "translation": "{0} získává úspěch „{1}“.",
+      "sourceSHA256": "a51e333b68c47b8412eb34a65c9667408c60cbd305023c829243074a32f035a9",
+      "translationSHA256": "4467c4587fed37202d8b577d8c414c82347e6a91c4b4e22fa25128c1b6637f88",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Jackpot",
+      "field": null,
+      "source": "{0} hit the ultimate jackpot in Calico Spin.",
+      "translation": "{0} vyhrává nejvyšší jackpot ve hře Calico Spin.",
+      "sourceSHA256": "4e546af629e0d97a27d8625fc304862c3a0ac092a59b228230df3ac910eaaba4",
+      "translationSHA256": "fe20fa062a6960c0924ea68fd7c9bda841df0f1219648629db9e5920e1e3ccbd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Slingshot_Hit",
+      "field": null,
+      "source": "{0} pelted {1} with {2}!",
+      "translation": "Postava {0} zasahuje postavu {1} předmětem {2}!",
+      "sourceSHA256": "25b84600b446f0e6d4082fb8e28c66d69c98c6846ebd31440da19f27e3c78769",
+      "translationSHA256": "ad23e4da3865b6607a32c7ffae2b34f55bb7cef110a382055a4ff329b85cdb59",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Caught_Snooping",
+      "field": null,
+      "source": "{0} was caught snooping through {1}'s private belongings!",
+      "translation": "Postava {0} byla přistižena při prohrabávání osobních věcí postavy {1}!",
+      "sourceSHA256": "ba967f24fe903d5214852e6f10d8087d6ab6a11a09c9121f172f46e9eb5930da",
+      "translationSHA256": "6e8735179ea7c034009a7d0750667f71e75cd91236f524af1c464fc370b9a2c3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PlayerLeft",
+      "field": null,
+      "source": "{0} has quit.",
+      "translation": "{0} opouští hru.",
+      "sourceSHA256": "795a884fe26edd15cd0fbfb60e64bce2650c2c1c75478941f86e70f6cb943b6e",
+      "translationSHA256": "37a78d23993c6963d2af445809d22345fbdeb081485ff80371907631d5256b20",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Paused",
+      "field": null,
+      "source": "The host has paused the game.",
+      "translation": "Hostitel pozastavil hru.",
+      "sourceSHA256": "3179f59e24a760738cf0b5484a9506c42196c596ecfff81a109cf820b022542c",
+      "translationSHA256": "606ee9975192a107a76a480f373e7913f1665bb15cca9344833c7c0ccdc33c67",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Resumed",
+      "field": null,
+      "source": "The host has resumed the game.",
+      "translation": "Hostitel obnovil hru.",
+      "sourceSHA256": "df2b7e4441a31b099511e8fb64bceee54cef264f040f6106c3d176265da23fdd",
+      "translationSHA256": "107824dc821297889bb65f16b160c26cc4098dd1111c4342e95c6d117b1ab1b6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SelfPlayerID",
+      "field": null,
+      "source": "you",
+      "translation": "vy",
+      "sourceSHA256": "bb0347a468d97e98a9c00e37cebec1ab930f6f1221cae0f1fbb92b07e1900ba2",
+      "translationSHA256": "0e1c0f0eda0a4029d4e4062a635e132e65e880352ebc004528702722dd9493ba",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

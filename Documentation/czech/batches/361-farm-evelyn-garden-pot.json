@@ -1,0 +1,28 @@
+{
+  "id": "361-farm-evelyn-garden-pot",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read the complete event command in both languages after the neutral recipe message correction. Verified Evelyn voice, gift and recipe identifiers, Garden Pot terminology, all dialogue, timing and control structure. No further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "900553/t 600 1130/Hn ccPantry/A cc_Greenhouse/w sunny",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"Good morning, dear.\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"It was a lovely walk out here... I haven't seen this old farm in a long time.$s#$b#It looks even better than I remember!$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"Here, I brought you a little something.#$b#It's a gift... from one gardener to another.$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"Received a 'Garden Pot'\"/pause 800/speak Evelyn \"These pots are really handy. You can use them to grow crops of any season indoors!#$b#They also look nice outside... but out here they can only house in-season crops.\"/pause 500/speak Evelyn \"If you need more, they're really easy to make, too... here, I've got an old magazine clipping with instructions.\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"Learned how to craft a 'Garden Pot'\"/pause 800/speak Evelyn \"Well, I'd better go. George gets grumpy if he doesn't have his oatmeal on time...#$b#You have a great day, honey!$h\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"Dobré ráno, drahoušku.\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"Byla to příjemná procházka až sem... Tuhle starou farmu jsem dlouho neviděla.$s#$b#Vypadá ještě lépe, než si ji pamatuju!$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"Tady, přinesla jsem ti maličkost.#$b#Je to dárek... od jedné zahradnické duše druhé.$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"Získáváš ‚Květináč‘\"/pause 800/speak Evelyn \"Tyto květináče jsou opravdu praktické. Uvnitř v nich můžeš pěstovat plodiny z kteréhokoli ročního období!#$b#Také vypadají hezky venku... tam v nich však mohou růst jen sezónní plodiny.\"/pause 500/speak Evelyn \"Pokud potřebuješ další, dají se také velmi snadno vyrobit... Tady mám starý výstřižek z časopisu s návodem.\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"Teď umíš vyrábět ‚Květináč‘\"/pause 800/speak Evelyn \"Tak, raději půjdu. George bývá mrzutý, když nedostane ovesnou kaši včas...#$b#Měj se krásně, zlatíčko!$h\"/pause 500/end",
+      "sourceSHA256": "9c8ed8a2577a2b3e46b3312ab02f2b15ea79a467adc0ae0040f79e5acbc6281c",
+      "translationSHA256": "6ac33358a31cb7566484437f07e087f50b8ec6ffdfece5286f1291a4f1d5f16c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

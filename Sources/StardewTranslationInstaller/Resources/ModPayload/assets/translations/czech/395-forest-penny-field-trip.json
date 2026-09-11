@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "181928/f Penny 2000/t 900 1600/w sunny/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19": "50s/-1000 -1000/farmer 75 40 2 Penny 71 45 2 Jas 71 49 3 Vincent 70 49 1/skippable/specificTemporarySprite pennyFieldTrip/positionOffset Penny 0 -16/animate Jas false true 90 16 17 18 19/viewport 71 45 true/move farmer 0 5 3/pause 600/faceDirection Penny 1/pause 600/speak Penny \"Ach, @! Přicházíš právě včas.\"/emote farmer 8/speak Penny \"Vzala jsem děti na malý výlet do přírody.#$b#Ty se v životě na venkově vyznáš, že?$h\"/speak Penny \"$q -1 null#Napadlo mě... Nechtělo by se ti dnes dětem něco povědět o životě na venkově?#$r -1 10 event_speaker_yes#To by bylo skvělé!#$r -1 0 event_speaker_yes#Jistě.#$r -1 -1500 event_speaker_no#Ne... děti nesnáším.\"/fork eventEnd/faceDirection Penny 2/faceDirection farmer 2/showFrame Penny 26/pause 500/shake Penny 500/speak Penny \"Jas! Vincente! Věnujte mi prosím pozornost!\"/pause 80/stopAnimation Jas/faceDirection Jas 0 true/faceDirection Vincent 0/jump Vincent/jump Jas/pause 800/speed Vincent 4/speed Jas 4/move Vincent 0 -3 0 true/move Jas 0 -3 0 true/showFrame Penny 0/faceDirection Penny 2/faceDirection farmer 3/speak Penny \"Dnes je tu s námi velmi vzácná návštěva... @ z místní farmy.#$b#Jako farmář má osobní zkušenost se životem na venkově... takže se vyzná v ‚přírodních zdrojích‘ tohoto údolí!^Jako farmářka má osobní zkušenost se životem na venkově... takže se vyzná v ‚přírodních zdrojích‘ tohoto údolí!\"/pause 500/speak Penny \"Dokáže mi někdo říct, co je ‚přírodní zdroj‘?\"/animate Jas false true 50 20 21/animate Vincent false true 50 16 17/playSound dwop/pause 1200/speak Penny \"Jas?\"/stopAnimation Vincent/stopAnimation Jas/speak Jas \"Přírodní zdroj je materiální zdroj bohatství, který se vyskytuje v přirozeném stavu a má hospodářskou hodnotu.$4\"/faceDirection Vincent 1/speak Penny \"Výborně! Za to máš dva hvězdičkové body, Jas.\"/speak Jas \"Jóóó!$h\"/faceDirection Vincent 0/speak Penny \"Dobře, teď věnujme @ plnou pozornost.\"/move Penny -1 0 1/move farmer -4 0 2/question fork0 \"#Život na venkově je hlavně o hospodaření.#Život na venkově je hlavně o sběru v přírodě.\"/fork choseFarming/pause 500/question fork0 \"#Údolí je plné vzácných minerálů.#Zdejší vody překypují čerstvými plody moře.#Lepší dřevo jižně od Grampletonu nenajdete.\"/fork choseMinerals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Ano, Vincente?\"/speak Vincent \"Pane @, vezmete si někdy slečnu Penny?$s^Slečno @... Ehm, máte přítele?\"/speak Penny \"Vincente! To je nevhodná otázka! Chovej se slušně, nebo ti za dnešek odeberu všechny hvězdičkové body.$a\"/emote Vincent 28/switchEvent fieldTripEnd"
+      }
+    }
+  ]
+}

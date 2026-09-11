@@ -1,0 +1,28 @@
+{
+  "id": "456-sam-house-band-genre",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all seven dialogue segments against English; verified all four genre choices, music terminology, Sam's exuberant confidence, Sebastian's reserve, player-neutral preference wording, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "44/f Sam 500/p Sam",
+      "field": null,
+      "source": "sampractice/-1000 -1000/farmer 4 15 1 Sam 17 16 2 Sebastian 18 18 0/positionOffset Sebastian 32 -31/skippable/animate Sam false true 200 20 21/showFrame Sebastian 41/viewport 17 16 true/move farmer 8 0 0/pause 500/doAction 12 14/move farmer 0 -2 1/move farmer 4 0 2/pause 9000/stopAnimation Sam/showFrame Sebastian 8/pause 1000/faceDirection Sam 0/pause 800/speak Sam \"Oh, hi @! Sebastian and I were just having a little 'jam session'.\"/move farmer 0 3 1/faceDirection Sam 3/faceDirection Sebastian 3/speak Sam \"We're trying to start a band, but we still don't know what kind of music to make. There's too many possibilities.\"/pause 500/emote Sebastian 28/faceDirection Sam 2/pause 500/emote Sam 16/faceDirection Sam 3/speak Sam \"#$q 76 null#Say, @... what kind of music do you like?#$r 76 50 Event_band1#Cheerful pop music.#$r 77 50 Event_band2#Experimental noise rock.#$r 78 50 Event_band3#Hi-Energy dance music.#$r 79 50 Event_band4#Honky-tonky country music.\"/move Sam 0 2 1/speak Sam \"What do you say, Sebastian? Should we do this?\"/pause 300/faceDirection Sebastian 0/pause 300/faceDirection Sebastian 3/speak Sebastian \"...Okay.\"/pause 500/faceDirection Sam 0/move Sam 0 -2 3/speak Sam \"Thanks for the help, @. With my guitar skills, and Sebastian's wizardry on the synthesizer, we're gonna be a screaming success. I'm convinced of it!$h\"/faceDirection Sam 2/speak Sam \"Now I just need to find someone to play drums...$u\"/pause 500/end",
+      "translation": "sampractice/-1000 -1000/farmer 4 15 1 Sam 17 16 2 Sebastian 18 18 0/positionOffset Sebastian 32 -31/skippable/animate Sam false true 200 20 21/showFrame Sebastian 41/viewport 17 16 true/move farmer 8 0 0/pause 500/doAction 12 14/move farmer 0 -2 1/move farmer 4 0 2/pause 9000/stopAnimation Sam/showFrame Sebastian 8/pause 1000/faceDirection Sam 0/pause 800/speak Sam \"Ahoj, @! Se Sebastianem jsme zrovna měli menší ‚jam session‘.\"/move farmer 0 3 1/faceDirection Sam 3/faceDirection Sebastian 3/speak Sam \"Snažíme se založit kapelu, ale pořád nevíme, jakou hudbu hrát. Je příliš mnoho možností.\"/pause 500/emote Sebastian 28/faceDirection Sam 2/pause 500/emote Sam 16/faceDirection Sam 3/speak Sam \"#$q 76 null#Hele, @... jaký druh hudby se ti líbí?#$r 76 50 Event_band1#Veselá popová hudba.#$r 77 50 Event_band2#Experimentální noise rock.#$r 78 50 Event_band3#Energická taneční hudba.#$r 79 50 Event_band4#Honky-tonkové country.\"/move Sam 0 2 1/speak Sam \"Co myslíš, Sebastiane? Půjdeme do toho?\"/pause 300/faceDirection Sebastian 0/pause 300/faceDirection Sebastian 3/speak Sebastian \"...Dobře.\"/pause 500/faceDirection Sam 0/move Sam 0 -2 3/speak Sam \"Díky za pomoc, @. S mým uměním na kytaru a Sebastianovými kouzly na syntezátor budeme mít ohromný úspěch. Jsem o tom přesvědčený!$h\"/faceDirection Sam 2/speak Sam \"Teď už jen musím najít někoho na bicí...$u\"/pause 500/end",
+      "sourceSHA256": "18e844413ef5ab5d8fc46b5640b4e26666e8ba93e25e0361eba770892644a5ef",
+      "translationSHA256": "95b9181035679ee45672d7ab8bbd95f31d987e77f73f3f225fd8fae0ee9808bc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/ArchaeologyHouse",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "mysteryBook": "pause 400/speak Elliott \"Po bezpočtu hodin strávených psaním vám představuji svou první knihu: ‚Modrá věž‘... Je to detektivní román zasazený do surreálné dystopické budoucnosti.\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"Kapitola první.#$b#Ze stínů vystoupil muž, z něhož vyzařovala záhadná vševědoucnost. ‚Dobrý večer, pane Lu,‘ řekl a koutky úst se mu chvěly. Lu vypadal ohromeně. ‚Jak znáte mé jméno?‘\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Abigail -1000 -1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"Lu prohledal Jenuovy kapsy, pak vstal a vešel do ložnice. Brzy našel malý zlatý klíč, který hledal, a strčil si ho do kapsy kabátu.\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"Tak, tím mé čtení končí. U recepce budu prodávat podepsané výtisky knihy. Děkuji, že jste poslouchali!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"Tak co, jaké to bylo?\"/emote farmer 32/speak Elliott \"Děkuji. $h#$b#Víš, nápad napsat detektivní román jsem dostal díky tobě. Vzpomínáš si?#$b#Proto jsem tuto knihu věnoval právě tobě...$l\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end"
+      }
+    }
+  ]
+}

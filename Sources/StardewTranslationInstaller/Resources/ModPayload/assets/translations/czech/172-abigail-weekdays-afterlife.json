@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "Tue2": "...*povzdech*...$s#$e#Vím, že to rodiče myslí dobře, ale někdy prostě nedokážou pochopit můj pohled na věc. Copak nikdy nebyli mladí?",
+        "Wed": "Ahoj. Předem se omlouvám, kdybych řekla něco hrubého. V noci jsem se moc nevyspala.#$e#Co chceš?",
+        "Thu": "#$1 Abigail1#Ach ne, myslím, že dnes bude večeři vařit táta...$s#$e#Dnes se mi vůbec nic nechce...$u",
+        "Fri": "Páni, právě mi došlo, že je pátek. $u#$e#Někdy úplně ztrácím pojem o čase.",
+        "Fri2": "Dnes večer se všichni sejdeme v Saloonu U Hvězdné kapky. Asi je to taková páteční tradice.",
+        "Sat": "V takový den je čerstvý horský vzduch příjemný.$h#$e#Zajímalo by mě, jestli se brzy ukážou žáby.",
+        "Sun": "Ach jo... Celý víkend odkládám domácí úkoly. Vypadá to na další probdělou noc...$s",
+        "Sun2": "Zajímalo by mě, co by se stalo, kdybych strávila celou noc na hřbitově.#$q 17/18 Sun_old#@, co myslíš, že se s námi stane po smrti?#$r 17 0 Sun_17#Nemám tušení.#$r 18 40 Sun_18#Vrátíme se jako strašidelní duchové.#$r 17 0 Sun_17#Půjdeme do nebe.#$r 18 0 Sun_17#Naše energetická těla vstoupí do astrální roviny.#$r 17 30 Sun_nothing#Nic. Prostě přestaneme existovat.",
+        "Sun_old": "$p 17#Asi si myslíš, že by se nic nestalo, že?$u|Možná by se objevil nějaký zlý duch!",
+        "Sun_17": "Hmm, zajímavé...",
+        "Sun_18": "To je ale zajímavá teorie!$h",
+        "Sun_nothing": "Víš, to by nebylo tak špatné.$8",
+        "Wed2": "Jé, ahoj, @. Dáváš si pauzu od práce?#$e#Já taky. Ale žádná fyzická práce... jen pár online kurzů.",
+        "Tue4": "Ahoj, ráda tě vidím.$h#$e#Chci na chvíli přijít na jiné myšlenky... jak se dnes máš?",
+        "Sat6": "Taková cesta jen kvůli návštěvě? To je milé.$h#$e#Prozkoumáváš vůbec horské jeskyně?#$e#Zajímavé. Jednou bych se tam chtěla podívat sama.$l",
+        "Mon8": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Vzpomínám si na tvůj první den ve městě. Bylo mi trochu líto, že se z těch starých lesů stanou pole. Teď jsem ale opravdu ráda, že tu žiješ!$h|...Jé, @! Ahoj.$h#$e#Nechceš tu chvíli zůstat? Podej mi ruku, přečtu ti z dlaně. *hihihi*$h",
+        "Thu10": "Ahoj.$l#$e#Máš v poslední době pocit, že všechno působí neskutečně?$l#$b#Ale ne ve špatném smyslu.$h",
+        "Fri6": "Dnes ptáci vesele cvrlikali. Jsou příliš prostí na to, aby chápali budoucnost.#$e#Je lepší být jako oni, nemyslíš?"
+      }
+    }
+  ]
+}

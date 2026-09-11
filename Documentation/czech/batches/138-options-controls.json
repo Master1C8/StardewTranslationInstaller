@@ -1,0 +1,978 @@
+{
+  "id": "138-options-controls",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full all-row options reread aligned the duplicated typing-sound label and clarified flash effects; every key-binding action, visual/audio setting, inventory position marker, register choice and literal control mark is complete and consistent.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsElement.cs.11225",
+      "field": null,
+      "source": "Press new key...",
+      "translation": "Stiskněte novou klávesu...",
+      "sourceSHA256": "aa766c13ce229af9bccf7ff40107df7825f154fccc26d2d31c37900621e05a72",
+      "translationSHA256": "05e75728616df674918ab5748f16258ddb8fb0deaf93f7ff7dbf7bbbd5f810c4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsElement.cs.11228",
+      "field": null,
+      "source": "Key already in use. Try again...",
+      "translation": "Tato klávesa se již používá. Zkuste jinou...",
+      "sourceSHA256": "fe300597341eecd70d81fb17243dea82a91d48bff420d59978de8bfaa7062ee3",
+      "translationSHA256": "35bc9679e020b189fcca5a0bd2ac1a244b2c09db03609f34008d71d2b9c46ded",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11233",
+      "field": null,
+      "source": "General:",
+      "translation": "Obecné:",
+      "sourceSHA256": "e8aa0d0525277032a97211912c58a3f0f543d2f0cebbb42d1d9ce5e81315b586",
+      "translationSHA256": "0eefbca1ee6f33de72514a077fe8b56ddb915c5af132a1864c197697e81ce238",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11234",
+      "field": null,
+      "source": "Auto Run",
+      "translation": "Automatický běh",
+      "sourceSHA256": "719637fc665f9d9eaff31575aa6f2d3901cff24b9e65f38a51be01cbd176aaa2",
+      "translationSHA256": "665076103a493bf9547164004e379110e7ac6388ee4429c04e705329a6ae24b7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11235",
+      "field": null,
+      "source": "Show Portraits",
+      "translation": "Zobrazovat portréty",
+      "sourceSHA256": "15dc42fe93e0cdf7e13c1e3ebdab80e1079f1ef1c8d0a4caf0d4ca01d43fc1c9",
+      "translationSHA256": "850fbd1b59425458e9a1d5bbda52b25679f73e920fd1c745061fba3084620232",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11236",
+      "field": null,
+      "source": "Show Merchant Portraits",
+      "translation": "Zobrazovat portréty obchodníků",
+      "sourceSHA256": "b3f522310a7b0cc771f9bcd9ed056595dfb4ef3f1723bdc83c14910f345f5a9c",
+      "translationSHA256": "9909a7a478a619cba436c2dceea1c62f90fce88dddb3828b3f3389b34c24ebc0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11237",
+      "field": null,
+      "source": "Always Show Tool Hit Location",
+      "translation": "Vždy zobrazovat místo zásahu nástrojem",
+      "sourceSHA256": "4001d1bb425fe3acb22fc593c86a3b6100e2840c0f8b2b8189aee3564c3fd6b3",
+      "translationSHA256": "d8b3a99dae7591319e094a34bec7d14693b0111ffc589fd7ad0120b10991d062",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11238",
+      "field": null,
+      "source": "Hide Tool Hit Location When Moving",
+      "translation": "Při pohybu skrýt místo zásahu nástrojem",
+      "sourceSHA256": "52f102216127c0d3dd933b488eca0dcb8f853abe92fc8a3f3b850afc121a8720",
+      "translationSHA256": "1961da179f8309abb7f1baee3bdc54dce418166cae388e453af5cedd3755f1a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11240",
+      "field": null,
+      "source": "Pause When Game Window Is Inactive",
+      "translation": "Pozastavit při neaktivním okně hry",
+      "sourceSHA256": "d76be764cead3a72ca496e308b3a4e4877c88b3a0bc8cba6eb07a3c1cbadef9c",
+      "translationSHA256": "6f81959cba7a7c779cccbf143d1644c1e9cf69fe2aa824747a898853efe8b96c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11241",
+      "field": null,
+      "source": "Sound:",
+      "translation": "Zvuk:",
+      "sourceSHA256": "bf33f9072236608e6408fb429699dedd1ddf41db92217f9bc0c9fe0ff13cd369",
+      "translationSHA256": "472dd6bd80762af8b072a4927e72d8a49871c29fd77522821e9aee1a6c53c053",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11242",
+      "field": null,
+      "source": "Music Volume",
+      "translation": "Hlasitost hudby",
+      "sourceSHA256": "b3f848c2a09aa9edaeebc4ebd601839b2777403991aa366387d7c13cea1945b3",
+      "translationSHA256": "69f3590dad23eaf75a726a87fb4ed5f7f094e709d93b8195a95e4debd729a0fe",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11243",
+      "field": null,
+      "source": "Sound Volume",
+      "translation": "Hlasitost zvukových efektů",
+      "sourceSHA256": "d565967c0e5ab49ecfbaa056ad925d83df431222fd68a4f1debc45fecbef1247",
+      "translationSHA256": "5d28a4dd916033ade6bd367c9089e51658db2d462cdcd75ee96490ad0f56a1a1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11244",
+      "field": null,
+      "source": "Ambient Volume",
+      "translation": "Hlasitost okolních zvuků",
+      "sourceSHA256": "37dbcad4e441e42be6b56b56d5cffe658dc497d8fc398445e06ff5ebb06f762a",
+      "translationSHA256": "fe0babd9585bea210dbd92a7feb67f0251632a15d67c74f3ed3692ede75ee866",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11245",
+      "field": null,
+      "source": "Footstep Volume",
+      "translation": "Hlasitost kroků",
+      "sourceSHA256": "7137dbc9f8b8723b7560d8ea09fac519fdf2fe3f3bdb8c6d9b156e725b0d4932",
+      "translationSHA256": "8e6aed198aede29a71ac1609c073dea34334bea12aaa267e258c40ba64efd9bb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11246",
+      "field": null,
+      "source": "Dialogue Typing Sound",
+      "translation": "Zvuk psaní",
+      "sourceSHA256": "61f9bf437c00fc97adddc3e8536e89d4af8996787825269b09b19e639c9d5d9c",
+      "translationSHA256": "c638f526b661a3cc3774a1aaaca3e9db452a4259c8429872abc90f6e8edc0f09",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11247",
+      "field": null,
+      "source": "Graphics:",
+      "translation": "Grafika:",
+      "sourceSHA256": "a835e1e014ce6625717d2e942f8a12b68b991f00a2a1429354f711bdd28f02a0",
+      "translationSHA256": "4ef4b5b618fc26724fef01caee7416aec093918dbba927a517658344f7118356",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11248",
+      "field": null,
+      "source": "Window Mode",
+      "translation": "Režim okna",
+      "sourceSHA256": "b63e857488f49396979935294718cbc9462fe7e9f0514dfd9eeb586c922eeb17",
+      "translationSHA256": "40cf26e2ce889c949d69e3f219e0c39d307e9e68f2b487e7ffbf6e8426c58d82",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11251",
+      "field": null,
+      "source": "Resolution",
+      "translation": "Rozlišení",
+      "sourceSHA256": "d4055fafa3794fa88b1e89e70c167d5a9575067a1442a6d94e9520d65a575378",
+      "translationSHA256": "cc95b0741314127dcba0821e9606129b01dea13d646ca17d9a3d3588aa6c50a9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11252",
+      "field": null,
+      "source": "Menu Backgrounds",
+      "translation": "Pozadí nabídek",
+      "sourceSHA256": "19e9b67550fff49bd8df370bfe832d4a552b6dad92ecf09983dbab34b0c77393",
+      "translationSHA256": "2e9f11f2494c2c6472dfff2b856efdbab330cf051d19e190cde54fe6a2ed1ace",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11253",
+      "field": null,
+      "source": "Lock Toolbar",
+      "translation": "Uzamknout panel nástrojů",
+      "sourceSHA256": "6d5104d2c9d3cc8101caa427fb3514dbd37bcf8ae964aa9fd7dcdacadd1151e0",
+      "translationSHA256": "d49dc5f780ec8d08953b44896b87184f1115fa84c8979cb1637983722cb72915",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11254",
+      "field": null,
+      "source": "Zoom Level",
+      "translation": "Úroveň přiblížení",
+      "sourceSHA256": "066f3e2d70f3886f66789f0027e2e039a9b6026f6e4b07a90b894df5ccdd98bf",
+      "translationSHA256": "31524a7d311e35251258cd3a1f89c0f408e99813b7858235cb600174d13d86e4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11266",
+      "field": null,
+      "source": "Zoom Buttons",
+      "translation": "Tlačítka přiblížení",
+      "sourceSHA256": "b5c0eccf142497e994e97959b4c68a2408fd822be6f93e964fbc497b8a96dad0",
+      "translationSHA256": "63e8404a63d20ed9d5a296621f3edd9013f3b96d7b006477581fb6bafda2cd71",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11271",
+      "field": null,
+      "source": "Snow Transparency",
+      "translation": "Průhlednost sněhu",
+      "sourceSHA256": "1797165a9c9172f35b67682cf6d967dd85584926ef56e284f4318091842a1cff",
+      "translationSHA256": "c432ae13e706664c618efcfd357a893718886123e577fa0c541526ba930b4193",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11272",
+      "field": null,
+      "source": "Show Flash Effects",
+      "translation": "Zobrazovat efekty záblesků",
+      "sourceSHA256": "7e367cdc04026ad10194d6617db7946cfe42a6f0d51468e448b4a4960f8cfd4f",
+      "translationSHA256": "2f7c36cffff0ae809eab4cb739de77432937c751ba1ca126f93308204d195f5f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11273",
+      "field": null,
+      "source": "Use Hardware Cursor",
+      "translation": "Používat hardwarový kurzor",
+      "sourceSHA256": "f8fa8c97e348b657cc065796dcdfb79f4ef8419fa941cc8ec8ea12dfba9085ac",
+      "translationSHA256": "529051d6533a98ef0bd6bd81ea60dc6058d2e5c5b70ec03d85dd73e227a2665e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11274",
+      "field": null,
+      "source": "Controls:",
+      "translation": "Ovládání:",
+      "sourceSHA256": "87cdc0c8a42eb3bc311a02be6b07a1b4eaaf30062fd77072e5c3c18703a0ffa1",
+      "translationSHA256": "a721a6eac18f89f6cff9f14df4493b85ddf0b68faf6109f4db9f1b3b262bec15",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11276",
+      "field": null,
+      "source": "Invert Toolbar Scroll Direction",
+      "translation": "Obrátit směr posouvání panelu nástrojů",
+      "sourceSHA256": "c7983c6ff5941740f202568cbd5b8c551cfa4e75dbcc28142a2969fea3ebc6a1",
+      "translationSHA256": "bcdc1d7044a08384608919e54eb68396deb4adb851dee37370587fe95f5b2cf2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11277",
+      "field": null,
+      "source": "Reset Controls To Default",
+      "translation": "Obnovit výchozí ovládání",
+      "sourceSHA256": "9be768af9892abcd80b044c72c258cc4f69a22fba34edb996f71046667f76a10",
+      "translationSHA256": "dd25174d36f47e54d30fd6dd10441a8069183dd917770c636c2ebabc8d2eb614",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11278",
+      "field": null,
+      "source": "Check/Do Action",
+      "translation": "Zkontrolovat / provést akci",
+      "sourceSHA256": "ec8645025ecefd8b48520385c3691d83368ccff4515011b6886bdf26a2feddb0",
+      "translationSHA256": "76c51360113a71b8a885689bf6de965b316605b4f41bab95a16d3c8de68e9bed",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11279",
+      "field": null,
+      "source": "Use Tool",
+      "translation": "Použít nástroj",
+      "sourceSHA256": "f4c1263cab08af9395c89ed3319fbdf636a901a456ee42a0b488a2bb881644ae",
+      "translationSHA256": "7ecc989caadf7fe2f76bfd539c5ba75410c7fb7ae4dbc7f48cb096d9ddb8e618",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11280",
+      "field": null,
+      "source": "Access Menu",
+      "translation": "Otevřít nabídku",
+      "sourceSHA256": "e28cfcdf355eff2bdae05c2b311ae04a619f4d65ae5f6c7cf0767e3c606402be",
+      "translationSHA256": "34120da2dfff0e02a042119e3076d50a713420d014f1e4ed96b10450237ab57f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11281",
+      "field": null,
+      "source": "Access Journal",
+      "translation": "Otevřít deník",
+      "sourceSHA256": "d1a08e12607ac9a1aecf16d21d9671a280110f166a6d6979bd272720dfd12930",
+      "translationSHA256": "819a61d3e782cf2429471f83b3df4b0520cb68e3253a506b7a3682a3874fb746",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11282",
+      "field": null,
+      "source": "Access Map",
+      "translation": "Otevřít mapu",
+      "sourceSHA256": "90189ab963a159a322001399c9b51b2f8ee190f864139104eb664188152e08f9",
+      "translationSHA256": "305cc59a6fea434c1938811cb4c0c825bf7d70924e0f59c6d3e8ed03e4810f32",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11283",
+      "field": null,
+      "source": "Move Up",
+      "translation": "Pohyb nahoru",
+      "sourceSHA256": "1359626e7b6964345896285446db7977e67469251bb0cc52808db2a85ed940c1",
+      "translationSHA256": "6418baac27c0325d342ebeeaa19dd14359d6d6079f033053d7ad157f759695bb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11284",
+      "field": null,
+      "source": "Move Left",
+      "translation": "Pohyb vlevo",
+      "sourceSHA256": "4f165b969549d5ec444ab2e482c5b9137327c0aa34b74ac2121635449acb9f24",
+      "translationSHA256": "7dad4d8bf3f2e6cb22068c63fc0038120819c348c7f0bfe6f16a423947fe8261",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11285",
+      "field": null,
+      "source": "Move Down",
+      "translation": "Pohyb dolů",
+      "sourceSHA256": "b58330ac25057a441365f4f4f1be20daba2d6d940142c891231e0eac66843ff4",
+      "translationSHA256": "88748fec90728e022d33866c13c125a9fc5c6956eed75e98d19bd7d689b60bf8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11286",
+      "field": null,
+      "source": "Move Right",
+      "translation": "Pohyb vpravo",
+      "sourceSHA256": "338f0879bcb2333ec5c3eed1e3b2b1640bf606b5b1f578a82c32e568769276d4",
+      "translationSHA256": "20db53482b8f6bc99e3b1c9a97c6b51b7e39e307143d1c6abd8e80d15b7d9ea8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11287",
+      "field": null,
+      "source": "Chat Box",
+      "translation": "Chat",
+      "sourceSHA256": "59d1bb3f59dc6af9782c190e48d1c8b42f988845261bcb6b348cff79bcab805a",
+      "translationSHA256": "460b3a7da007b7af9d35bca54181dc91382263b2bf133ca214871ca1fed1fc1c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11288",
+      "field": null,
+      "source": "Run",
+      "translation": "Běh",
+      "sourceSHA256": "00d60e31a4e6b8344d4201f25a6a7dee770713107f6d097abb01559d32b17f26",
+      "translationSHA256": "b041f6515b7219e6209acf71735b2c939afc688d12fc470e7370e5e23979e2dc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11289",
+      "field": null,
+      "source": "Inventory Slot #1",
+      "translation": "Pozice inventáře #1",
+      "sourceSHA256": "e7e595e349d8aeb875c055f2bcfd77c071d762d1d5abc83496f74feed0bf001d",
+      "translationSHA256": "fc3f932d42f856854aba9d76b0fc316cf9247e859adb71b48d390c009d7cf706",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11290",
+      "field": null,
+      "source": "Inventory Slot #2",
+      "translation": "Pozice inventáře #2",
+      "sourceSHA256": "3622c038b09575f2140e17b70f9a9ab44498001ed5eb0fff44cece3ad609cf94",
+      "translationSHA256": "278917143246f7d049f169ed4a416001de7ee032fff7b26ba0129e295f44073f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11291",
+      "field": null,
+      "source": "Inventory Slot #3",
+      "translation": "Pozice inventáře #3",
+      "sourceSHA256": "afd637b2ebadb4013d68c94f18f5d3603f6466d0fefe777c39f48f1ddb7422fc",
+      "translationSHA256": "6e04079913a1c36e35f9cecb3bdf5d1599ce6590007a7c920e3d2d3d4055871c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11292",
+      "field": null,
+      "source": "Inventory Slot #4",
+      "translation": "Pozice inventáře #4",
+      "sourceSHA256": "beb5ff9efdcdba2eae4af1e3a5f68952e5725c7bf1ae545f8ce8369e1f858eb8",
+      "translationSHA256": "3f70d82f96ad1566cad697e2862cca3bde06be2016a6d46b2ea7fbb5939310b2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11293",
+      "field": null,
+      "source": "Inventory Slot #5",
+      "translation": "Pozice inventáře #5",
+      "sourceSHA256": "9a95572e4c37ee1a2323a2ef682f98c00ad201c4a213b014da3d51bc9d53bd6a",
+      "translationSHA256": "a600d306ad96c92820e3ffa3467f90aca74dbd6afa54aedbf3ec4d3f0038f6d9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11294",
+      "field": null,
+      "source": "Inventory Slot #6",
+      "translation": "Pozice inventáře #6",
+      "sourceSHA256": "36a1e56c01bbe62ddb84d83115dd0f03537d66e03892f1d7c9d85761d845324e",
+      "translationSHA256": "af4c8fb6d7a55db738c153f24977836d2b0dcb64fc19314c4a8576b4d86dfa32",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11295",
+      "field": null,
+      "source": "Inventory Slot #7",
+      "translation": "Pozice inventáře #7",
+      "sourceSHA256": "0e7cd744213cb432d50591d84a37d1fc01297e5a49d5f994875060f2e848f8e2",
+      "translationSHA256": "48eb62d5681ef3f00cfd700dcf97e818e8256a2631fb33ab1372d65ad92ac5ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11296",
+      "field": null,
+      "source": "Inventory Slot #8",
+      "translation": "Pozice inventáře #8",
+      "sourceSHA256": "e0b10aaa4eb841e6addb11b90494b56c891d085248821f5477f945334fc1a352",
+      "translationSHA256": "527dd02096d72529363316eddfbe9074f92780acde82575564c0e3b790c8d511",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11297",
+      "field": null,
+      "source": "Inventory Slot #9",
+      "translation": "Pozice inventáře #9",
+      "sourceSHA256": "76058a9bddc819e604a9115f962e24e8a753452a17aa8fa0e4ab5b993049318b",
+      "translationSHA256": "a189088e0ee3fe9ee6b294776d757ebe409aa50bf0631cf41c6ac348e3a38d49",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11298",
+      "field": null,
+      "source": "Inventory Slot #10",
+      "translation": "Pozice inventáře #10",
+      "sourceSHA256": "dd58ac5b7d85c32b6ca06d04876565406486d580eb3d2544705beee682583e4a",
+      "translationSHA256": "0560681fd73394451526bd8c2146d90156096e50b6bfdabb032ea32668399885",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11299",
+      "field": null,
+      "source": "Inventory Slot #11",
+      "translation": "Pozice inventáře #11",
+      "sourceSHA256": "6a26989497ecf162619ea47ace5832763c031f647dac85225ef660a3d52ee3ac",
+      "translationSHA256": "2d1af81f08702ac7a93a6973d25368aa66f078166db921f3f9f903ddd160df7e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OptionsPage.cs.11300",
+      "field": null,
+      "source": "Inventory Slot #12",
+      "translation": "Pozice inventáře #12",
+      "sourceSHA256": "94308a5e0368d28970cb7c59639f2b91fa46f7cb38ee41d9399be0d445210cf3",
+      "translationSHA256": "12378e91251ad86135bc538bea12b54dd6399874d3905e732f66d96de2bd9a61",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

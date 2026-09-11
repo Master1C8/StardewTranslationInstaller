@@ -1,0 +1,959 @@
+{
+  "id": "046-movie-reactions",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 50 complete English/Czech pairs after correcting Sam’s question to avoid assuming the player’s gender. Verified Harvey’s medical voice and Harveyho inflection, Gus’s gluten-food joke, Lewis’s civic tone and locked Stardew/Pelikánov terms, Jodi’s fatigue, Sam’s distracted reactions, Vincent’s child voice and Kent’s civilian adjustment and distress. Rechecked every placeholder, reaction marker and source detail; final full reading found no further issue.",
+  "rows": [
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Harvey_dislike_DuringMovie",
+      "field": null,
+      "source": "I feel faint...$8",
+      "translation": "Je mi na omdlení...$8",
+      "sourceSHA256": "7658852fb59abf75daac7dbc6715e89c19941995b208e50b7e09620c5f46fe95",
+      "translationSHA256": "d2e3a1b77605cc51ee0e261620cf50592024b3ec7c5f42cf18fb329e21171231",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Harvey_dislike_DuringMovie_2",
+      "field": null,
+      "source": "Harvey's blood pressure is skyrocketing!",
+      "translation": "Harveyho krevní tlak prudce stoupá!",
+      "sourceSHA256": "738b5605835fccf1c8777665e7e40ed4166b38f0a434ce97a847d80d907da8fb",
+      "translationSHA256": "dfbe6a55a481cd2024e49d6db9d5127ff329a83a35fbb29b7720e7b5df888251",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Harvey_dislike_AfterMovie",
+      "field": null,
+      "source": "My body feels inflamed after that movie...$s",
+      "translation": "Po tom filmu mám pocit, jako bych měl v celém těle zánět...$s",
+      "sourceSHA256": "94be6b89328e4db81ff792169796bcaeabbdbdc7f0e78dab678a442df114b675",
+      "translationSHA256": "c104a7b5660ecc88986201583f09c9f32cb46beb8f0a518400bc9a59a4dc56ab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_summer_movie_1_BeforeMovie",
+      "field": null,
+      "source": "I saw a commercial for this on the TV. It looks really funny!",
+      "translation": "Viděl jsem na to reklamu v televizi. Vypadá to opravdu vtipně!",
+      "sourceSHA256": "4200744b2d06c1efe659d2d4b2595a06e3bfd9d7de4734945c9104a09f490c74",
+      "translationSHA256": "f3f55ea065de653b1033933a1546695d976180f569bf8c53d9d55ded3a0b7388",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_summer_movie_1_AfterMovie",
+      "field": null,
+      "source": "As an amateur connoisseur, the weird obsession with gluten-based food was hilarious.$h",
+      "translation": "Jako amatérský gurmán jsem se tou podivnou posedlostí lepkovými pokrmy báječně bavil.$h",
+      "sourceSHA256": "fe021cb4c57d9e3f440d2601fcb8901b3f72a44a7061094eafcd98e772215106",
+      "translationSHA256": "c156712be8c87e1eb7659830158da0c47fac216243b396bbc39b54c9679771e9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_winter_movie_0_BeforeMovie",
+      "field": null,
+      "source": "It doesn't feel like the holidays until you've seen '{0}'!",
+      "translation": "Bez filmu „{0}“ to nejsou ty pravé svátky!",
+      "sourceSHA256": "f489500fc9ba109e02f38d25d3a74ff558127a6c268266c134a3c3b4f8ff5595",
+      "translationSHA256": "cc9d0bf1c6648892caaf558fc4108d0e0f84627bedbc0e7be699eacb44e6ba34",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_winter_movie_0_AfterMovie",
+      "field": null,
+      "source": "That was heartwarming... and somehow they make that fabled fruit seem so delicious. I'd love to taste it one day.",
+      "translation": "To zahřálo u srdce... A nějak zařídili, že to bájné ovoce vypadá tak lahodně. Jednou bych ho rád ochutnal.",
+      "sourceSHA256": "0e920262d8f48940f226272c19705de495797751f457d0e4f240b0668f6c43a3",
+      "translationSHA256": "1dde06c7ab5527f5a9721388a1eadb7608e8e8e84f38b7fce1ef5e623d322128",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_fall_movie_0_BeforeMovie",
+      "field": null,
+      "source": "They say this movie is 'unconventional'... does that mean it's bad?$s",
+      "translation": "Říká se, že tenhle film je „nekonvenční“... Znamená to, že je špatný?$s",
+      "sourceSHA256": "5fc8d7295af8e4f4c5b84a08e5d1189e49b35eaadd0af7905e59b46483fee141",
+      "translationSHA256": "fdc1e86993f3f767ef91f99dee42e1a2c2319159cdf191b4614dde693cd27bfe",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_fall_movie_0_AfterMovie",
+      "field": null,
+      "source": "What was the point of that one? I don't get it. Maybe I'm too old.$s",
+      "translation": "Jaký to mělo smysl? Nechápu to. Možná už jsem moc starý.$s",
+      "sourceSHA256": "04ade0c6910896a879a5be313486ae19f0ebe71984582a7f1568469b347dcba0",
+      "translationSHA256": "91255219a65b44c7153905028fa74e3b8efeb0071bcb7ae1b61c59a4f2ea47bd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_like_BeforeMovie",
+      "field": null,
+      "source": "*sniff* *sniff* ... I smell something delicious...",
+      "translation": "*čichá* *čichá* ... Něco tu lahodně voní...",
+      "sourceSHA256": "dafda9c00400d6bc3b808e1b749dfa774ab4c2b7361b4c04aa872e7f3b62cfdc",
+      "translationSHA256": "4901f93c44ff08bb092df7bcba33a8b42f7929cdce13dcec39c104648d0fa235",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Gus_like_AfterMovie",
+      "field": null,
+      "source": "Not bad at all. I'm really glad I came!",
+      "translation": "Vůbec to nebylo špatné. Jsem moc rád, že jsem přišel!",
+      "sourceSHA256": "7e592b88df81ef694434a3bc1b679e7fa893eb1989a768a78ff595a229a781d9",
+      "translationSHA256": "a3a6ae86616897b35122dce711e81462ace2cb68655531b48a64f5c7240cedd0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_summer_movie_0_BeforeMovie",
+      "field": null,
+      "source": "I watched cowboy movies when I was a kid... I'm glad to see the art is still alive!",
+      "translation": "Jako kluk jsem se díval na kovbojky... Jsem rád, že tohle umění stále žije!",
+      "sourceSHA256": "7069d61a67d09f7ac775f7c6b27e790964451749712d6ab9103a70da57a88271",
+      "translationSHA256": "c5f84f045af48f6c811895baa3f5c4276e0ea307f940180674c3e5fec1da58cc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_summer_movie_0_DuringMovie",
+      "field": null,
+      "source": "(I wonder what kind of moustache wax he uses?)",
+      "translation": "(Jaký vosk na knír asi používá?)",
+      "sourceSHA256": "44101a941f344d4b9ef63d7e70660f19fc900efcd084fa21d8b4cd81b619239c",
+      "translationSHA256": "bd27fed977c648bfce94c48df30d7004f61d41c0212e3c10677bc4de622c0daa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_summer_movie_0_DuringMovie_2",
+      "field": null,
+      "source": "Mayor Lewis seems deep in thought...",
+      "translation": "Starosta Lewis vypadá hluboce zamyšleně...",
+      "sourceSHA256": "c34e5c5fecdc4f4b03e648f1271b6630eb1044a20e52044dfc893aed5f1917ba",
+      "translationSHA256": "b1e31ac57abc1d954b8bdecaf05a7e397be0c205b9e97252f4c9f2be906821fb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_summer_movie_0_AfterMovie",
+      "field": null,
+      "source": "Heh, that was great! Really brought me back...$h",
+      "translation": "Heh, to bylo skvělé! Tolik vzpomínek se mi vrátilo...$h",
+      "sourceSHA256": "bc613a3bf891f63d507987ce2b64b23981ed4209d66da95925fe6ee727b20040",
+      "translationSHA256": "1626b6406f07e01028a8c361ec700f78d4945cc8d23252e2bf54c6e37eee9620",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_spring_movie_1_BeforeMovie",
+      "field": null,
+      "source": "The governor himself recommended this movie to me!",
+      "translation": "Tenhle film mi doporučil sám guvernér!",
+      "sourceSHA256": "6b2eac995d74d2cd4fce33b8d0bf1959069f8624a5678675ee41e3ab248c5234",
+      "translationSHA256": "212c3e96bb7375a64d2f07c4cb0ac56d1f3c13a3f973cc3d0b09d3b27a10879f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_spring_movie_1_AfterMovie",
+      "field": null,
+      "source": "Fantastic! They really made Stardew Valley look beautiful, didn't they? If only they had featured Pelican Town itself...$h",
+      "translation": "Fantastické! Údolí Stardew v jejich podání vypadalo opravdu krásně, že? Kéž by ukázali i samotný Pelikánov...$h",
+      "sourceSHA256": "9a108c137c7aad26ae9a046e0abe8c5b1ee3b34ef97051fe8f66ef1469b1a220",
+      "translationSHA256": "20e8adc17bc91a9e80bad131b59325353aa5db514fadf6362eb45301fdbf3d0b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_like_BeforeMovie",
+      "field": null,
+      "source": "As mayor, I need to know what kinds of movies are being shown in our community. We have the tender minds of the next generation to worry about!",
+      "translation": "Jako starosta musím vědět, jaké filmy se u nás promítají. Musíme dbát na citlivé dětské duše příští generace!",
+      "sourceSHA256": "a9a96abff316186078ad8189d27448ac16f1971250605f8065d97a5da8382bdc",
+      "translationSHA256": "d44c24572554eff6e0a833e6f2c72fda556d6d2b45aa0b6dee248798c044da03",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_like_AfterMovie",
+      "field": null,
+      "source": "Hah! That wasn't bad at all... I'd say this one's 'Mayor Approved'.$h",
+      "translation": "Ha! To vůbec nebylo špatné... Řekl bych, že tenhle film je „schválen starostou“.$h",
+      "sourceSHA256": "9640be261973036968df69084c96661527e1a85683f096aaf7090a05fab27ffc",
+      "translationSHA256": "d24f33d809ea0add373d7bfc12e8084f0d92fe46c1c91db5f2597f808adb6839",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_dislike_BeforeMovie",
+      "field": null,
+      "source": "Hmm... I guess it will be interesting to see what the young people are watching these days...",
+      "translation": "Hmm... Asi bude zajímavé zjistit, na co se dnešní mládež dívá...",
+      "sourceSHA256": "3e1713884966fbe801828c6c4ed6031ef8c45fd5b0e1990cb95160e67f22987b",
+      "translationSHA256": "cc305555985ddc319fcb9ff8fb36bab9893a1f903f9901e654457da3b67fb222",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Lewis_dislike_AfterMovie",
+      "field": null,
+      "source": "Huh... I wonder if the messages in this movie are good for our community?",
+      "translation": "Hm... Jsou poselství tohohle filmu dobrá pro naše společenství?",
+      "sourceSHA256": "7fca65db200fac5a76b54e39a3362c7d06d8808d9b63d5d7ff15edfbb1f7299a",
+      "translationSHA256": "8ec0eff55fb686debc48bd1f5f298c021fabd1bb89ea9fdb71f1ea305a0b82fa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Jodi_love_BeforeMovie",
+      "field": null,
+      "source": "I saw this movie once, a long time ago. It's very romantic!",
+      "translation": "Tenhle film jsem už jednou viděla, před dlouhou dobou. Je moc romantický!",
+      "sourceSHA256": "ae61a6949e33e852d409c0b3723951b5509186b6ff8a993f51f254c92db83884",
+      "translationSHA256": "e20f6b0f58be98e5049097720714341627ab083fafaa645929de8ee7af4f462d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Jodi_love_AfterMovie",
+      "field": null,
+      "source": "That was lovely... The theme of the movie really resonated with me. Thanks for bringing me!",
+      "translation": "To bylo nádherné... Téma filmu mi bylo opravdu blízké. Díky za pozvání!",
+      "sourceSHA256": "e1312b7101d1c7f7debbcf340b0f5b05e010fd63b40ac97239b768af73ae8b60",
+      "translationSHA256": "1c971a75d308d6057df5b1e7d4272e69418cef2b993272641657aaa9fbe749fc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Jodi_like_BeforeMovie",
+      "field": null,
+      "source": "I hope the seats are plush, I've been on my feet all day!",
+      "translation": "Doufám, že mají měkká sedadla, celý den jsem na nohou!",
+      "sourceSHA256": "48586f598c9a63b0776c4d436a0dd7f804e59c23038541eb39b76868eaae5e4d",
+      "translationSHA256": "784078209faf38dd22dfac1ecb4c28f0bde721b48e20f94b3e42a4beb005add6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Jodi_like_AfterMovie",
+      "field": null,
+      "source": "I'm not much of a movie buff... but I had a good time! Thanks, @.",
+      "translation": "Nejsem žádná velká filmová fanynka... Ale bavila jsem se! Díky, @.",
+      "sourceSHA256": "63d644c75366c4eab3bf3416e0476833c8fd9f18dc81f1244fe0b7eb4d8c3636",
+      "translationSHA256": "19bb12c939539e07f0863ac1b9ceab11641376d6ab540c61866b73f697559f37",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_summer_movie_1_BeforeMovie",
+      "field": null,
+      "source": "Oh man, I'm so excited for this! I heard it has a great soundtrack.",
+      "translation": "Ty jo, na tohle se tak těším! Slyšel jsem, že to má skvělý soundtrack.",
+      "sourceSHA256": "c3eee98c1aaaeaa5b40ddc12409d0f70c2efb25c33adb733f7a2e9829b53cc95",
+      "translationSHA256": "b67ac3307dbb4669be8425e3129e2862139c5b4906cb0d1c19942cc9a3dfe639",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_summer_movie_1_DuringMovie",
+      "field": null,
+      "source": "This movie's hilarious! How do they come up with this stuff?$h",
+      "translation": "Tenhle film je k popukání! Jak je takové věci vůbec napadají?$h",
+      "sourceSHA256": "849890a6e754593c9bdcce5f670419f1e0288c00dca5326d35fe7dbbccec1002",
+      "translationSHA256": "c8d47d4d8dee53f4b077e175b972ab7e0ddc090235f8c27d71aa55d2ffddf810",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_summer_movie_1_DuringMovie_2",
+      "field": null,
+      "source": "Sam can't contain his laughter!",
+      "translation": "Sam se nemůže přestat smát!",
+      "sourceSHA256": "f064305828b643170943ed107ff9ed649313fc8a569d117214933015ba896144",
+      "translationSHA256": "cfd94dfa451df9824bb96b557c909f645e21a59115ef7d0d115d4f2473b6fb8a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_summer_movie_1_AfterMovie",
+      "field": null,
+      "source": "*psst*... Don't tell anyone, but I wear the same type of socks as Wumbus.",
+      "translation": "*psst*... Nikomu to neříkej, ale nosím stejný typ ponožek jako Wumbus.",
+      "sourceSHA256": "a3fd564d1310e44ff6729dc96da6912a042f70c9f4b5ae3bdeaf62dcdf64833f",
+      "translationSHA256": "60f0d83868ff3617aa7d4f330ce60b9e73b505af7cb519aae10842a81322ca06",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_horror_BeforeMovie",
+      "field": null,
+      "source": "So you like scary movies, huh? I'm a little surprised!",
+      "translation": "Takže se ti líbí strašidelné filmy, co? To mě trochu překvapuje!",
+      "sourceSHA256": "f918626797967e13cce2ca81ecceb3ee17eec12eb1c4f2e3943a63c1276ca2bf",
+      "translationSHA256": "14ee5287ff25f861d47a5d6c44b379c4d65dd1affe2c958a257a6fd369b25f9a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_horror_AfterMovie",
+      "field": null,
+      "source": "That was pretty good! I'm usually not scared by movies, but that one got to me a little... I don't think I'll take Vincent to see this.",
+      "translation": "To bylo docela dobré! Filmy mě obvykle nevyděsí, ale tenhle mě trochu dostal... Myslím, že Vincenta na to nevezmu.",
+      "sourceSHA256": "c8e0125e46a490f0b6255145e7c5cc11a4025caa7c545d99385ecb20d514f177",
+      "translationSHA256": "e56228ad83172d0ceaf2be661d66f93bf43325c6ea99081f5f803f8efff02782",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_like_BeforeMovie",
+      "field": null,
+      "source": "Hey, thanks for inviting me, @... It's really great that we have a movie theater in town now.",
+      "translation": "Hele, díky za pozvání, @... Je vážně skvělé, že teď máme ve městě kino.",
+      "sourceSHA256": "4cbf32a2394d526fa921298287fc9d1a6275a27ce4e7483f63034d892e4a1d79",
+      "translationSHA256": "423153c0c1a810331ecdce87b8aa01b5ee14985b3bbe839bb7679454e5ecf007",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_like_AfterMovie",
+      "field": null,
+      "source": "That wasn't bad! I might have to take Vincent to see this.",
+      "translation": "To nebylo špatné! Možná na to budu muset vzít Vincenta.",
+      "sourceSHA256": "4e91ccc63d41efe620a949921ce2afb02b0ad775544adebf68de01716a060a5d",
+      "translationSHA256": "f47705b5bc79d5da59f8a24bac3992c7262e4c353a266e32c705a85b2bb95889",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_dislike_BeforeMovie",
+      "field": null,
+      "source": "It's an old movie with lots of talking, right? Hmm... $s",
+      "translation": "To je nějaký starý film, ve kterém se hodně mluví, že? Hmm... $s",
+      "sourceSHA256": "90289b5e591522843c3d0ec7b23b442d5d642ad763146e0cd596a4bc796663a8",
+      "translationSHA256": "43966135e30f4e0ea1431d84f00d1eecce0ac79db17d2fc4e619129b74ac23ce",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_dislike_DuringMovie",
+      "field": null,
+      "source": "Huh? Oh! Yeah... The movie's... interesting...$10",
+      "translation": "Cože? Aha! Jo... Ten film je... zajímavý...$10",
+      "sourceSHA256": "190f45f58f2f03cda08d7892e8046702c3f054ea56bcd5712be0437971d5470e",
+      "translationSHA256": "2fad93acdb6c891f929b3cca8a246dd84ddf61153152edb8f4c4b667a9b6f288",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_dislike_DuringMovie_2",
+      "field": null,
+      "source": "Sam is playing his handheld video game system.",
+      "translation": "Sam hraje na své přenosné herní konzoli.",
+      "sourceSHA256": "f66bd39c01915e1f2e44506ca715345ed6007adcfe447f3bf71f282e628715a4",
+      "translationSHA256": "e95ea4d1185639960aefa15ccc1fd041532dcb6ca80b1f0091e9ae9a4dd67751",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Sam_dislike_AfterMovie",
+      "field": null,
+      "source": "Yeah... Uh... That one character was interesting... And, um... heh...$10",
+      "translation": "Jo... Ehm... Ta jedna postava byla zajímavá... A, no... heh...$10",
+      "sourceSHA256": "2288b5c8d82549fa341d1ba7f6b43e6fa2498b565cbf2731ca132936239d487a",
+      "translationSHA256": "b5bba76390857f5836b427b55235631bc1831d239e023d9b815dc316e1115c8d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Vincent_love_BeforeMovie",
+      "field": null,
+      "source": "I'm so excited! My mom said I can have candy, too!$h",
+      "translation": "Já se tak těším! Máma říkala, že si můžu dát i sladkosti!$h",
+      "sourceSHA256": "3f91b87654615216d8128d8d50a09c7c43d0f69baf8283e365c439d5e52aac4d",
+      "translationSHA256": "703e4876743567de87967ea05107e61619d1aa33af8ee6444716dd4fbc6fb559",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Vincent_love_DuringMovie",
+      "field": null,
+      "source": "Vincent is having a blast!",
+      "translation": "Vincent se báječně baví!",
+      "sourceSHA256": "8cd9a2a557fa52e79641fbf208d87252c00a48071ef9c4a47f54b89941cabfc2",
+      "translationSHA256": "1ab07202312e281f6dcd5946fc3d9bdad8b6d6ed003485b902d9a7213821185e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Vincent_love_AfterMovie",
+      "field": null,
+      "source": "That was so fun! I wanna go see it again!$h",
+      "translation": "To byla taková zábava! Chci na to jít znovu!$h",
+      "sourceSHA256": "861380bcfef7c96f2cc55db066beb05170b59d00860906ff4d0b411edd388753",
+      "translationSHA256": "89653e0063863da394fafc729323d06d23596ee6f11579c95df5ba23cfd494ad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Vincent_dislike_BeforeMovie",
+      "field": null,
+      "source": "B... But... This movie is for grown-ups, isn't it?$s",
+      "translation": "A... Ale... Tenhle film je pro dospělé, viď?$s",
+      "sourceSHA256": "c2fb7ed78a506c0910e84d738725dc622dbc415d19751ca9300546f89025a59e",
+      "translationSHA256": "d98ce23423d8ad0eb7501caa756a5b6038702fd8c8c04cbfdb4c24c727ea2ee1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Vincent_dislike_DuringMovie",
+      "field": null,
+      "source": "Vincent is fidgeting in his seat.",
+      "translation": "Vincent se na sedadle vrtí.",
+      "sourceSHA256": "52741fcdd819193ee90569afe531c945f3201739cb5300b86358ccd3b33a67b2",
+      "translationSHA256": "32f387dfcfb134ab6f9a82a0fee3944a293143d3628d45915b37c9ebff8e3b19",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Vincent_dislike_AfterMovie",
+      "field": null,
+      "source": "That was boring... I didn't understand anything.$s",
+      "translation": "To byla nuda... Vůbec ničemu jsem nerozuměl.$s",
+      "sourceSHA256": "f479524a5e0b2a74756c507bf0a4e66e3d98fc5cf6b6b825afb6216e98247692",
+      "translationSHA256": "43753011767c598286b538aaede21a357f0add9c4e175a805359e931ee450221",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Kent_like_BeforeMovie",
+      "field": null,
+      "source": "Thanks for inviting me to the movies, @. It's not easy to adjust back into the civilian lifestyle, but you've helped me feel really welcome.",
+      "translation": "Díky za pozvání do kina, @. Není snadné si zase zvyknout na civilní život, ale díky tobě mám pocit, že jsem tu opravdu vítaný.",
+      "sourceSHA256": "23a3e7f51da10edce297033dd89d4b4f32b987508a3cd965220934126c3f4834",
+      "translationSHA256": "ee74e7f39e152f6cc5afd5de3b3044c60b56fdf19ce71ffcb7f966e416fcce7d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Kent_like_DuringMovie",
+      "field": null,
+      "source": "This is great... it reminds me of simpler times...$h",
+      "translation": "To je skvělé... Připomíná mi to jednodušší časy...$h",
+      "sourceSHA256": "105be3ac07b46a64c970261ea47e7604101b6f9081521789c4bd359008042865",
+      "translationSHA256": "6ef3ef145f694db5b653732cba9664f92130bc9923367f034eef7aba303b3ee0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Kent_like_DuringMovie_2",
+      "field": null,
+      "source": "Kent has a rare smile on his face.",
+      "translation": "Na Kentově tváři se objevil vzácný úsměv.",
+      "sourceSHA256": "133e47ecbc49e754d81824d413a859e9c6e576c97b4edf8c73df015b8a7f2db5",
+      "translationSHA256": "5ea2a376a47b06b2bc9fa2e0bbb13811625341ce0ea41e22afcbc69a611a4f97",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Kent_like_AfterMovie",
+      "field": null,
+      "source": "That was fun. When you're engrossed in a movie, all your cares and worries disappear.",
+      "translation": "To bylo zábavné. Když se ponoříš do filmu, všechny starosti a obavy zmizí.",
+      "sourceSHA256": "112d85604e4d686f4b4da07c908150e2fdd37247145778738af7fad7282e1522",
+      "translationSHA256": "42f98cd4f13659bf24dbd3ae81cf14645e1ab4a627bdb57ff66059da1ee43fe7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Kent_dislike_BeforeMovie",
+      "field": null,
+      "source": "I'm not sure about this movie...",
+      "translation": "S tímhle filmem si nejsem jistý...",
+      "sourceSHA256": "e3671b9888d01caa21e6966b8c0b4b6277c2f690bfc36ca3ef73f552ebe9aa8b",
+      "translationSHA256": "f98a23aa33264e4c8783b083b3550067d851410d834e4e6f7ae72c5b83ea488c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Kent_dislike_DuringMovie",
+      "field": null,
+      "source": "Kent is breaking out into a cold sweat...",
+      "translation": "Kenta polévá studený pot...",
+      "sourceSHA256": "41d1299692e5f57d621390f3ba24fd15ab68446cd9931f0b48b6ea5a2b0d9c74",
+      "translationSHA256": "4c25b11649ba534212c86621481e2fd257c343c18573358b6ed4c6967fe7dece",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/MovieReactions",
+      "key": "Kent_dislike_AfterMovie",
+      "field": null,
+      "source": "That was challenging for me. Still, I appreciate you inviting me to this.",
+      "translation": "To pro mě bylo náročné. I tak si vážím tvého pozvání.",
+      "sourceSHA256": "625a07bd4b78dabdd59c59dcbfcb6c5d2db3a9935d5903ca2e1ccae13327380f",
+      "translationSHA256": "3b318d59cf3f808ef4b7a6730f3b2f42f8c2acdf1d3e505220c9862e612cde97",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

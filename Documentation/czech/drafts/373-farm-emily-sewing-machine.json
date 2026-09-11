@@ -1,0 +1,10 @@
+{
+  "id": "373-farm-emily-sewing-machine",
+  "kind": "long",
+  "target": "Data/Events/Farm",
+  "complexityReason": "Translate both sewing-machine unlock variants while preserving spouse-state conditions, Cloth and tailoring terminology, tutorial meaning, reward messages, emotion markers and exact event commands.",
+  "entries": {
+    "992559/t 600 1130/n clothFound/o Emily/w sunny": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Ahoj, @! Dobré ráno!\"/pause 500/faceDirection Emily 3/pause 800/faceDirection Emily 0/speak Emily \"Vypadá to, že se ti daří... farma vypadá skvěle!$h\"/pause 500/emote farmer 32/pause 500/speak Emily \"Takže... už jsi tu nějakou dobu a určitě se ti podařilo získat nějakou ‚látku‘... že?\"/pause 500/speak Emily \"No, víš, že z látky můžeš ušít nejrůznější oblečení? Stačí mít přístup k šicímu stroji...#$b#A jeden mám shodou okolností doma! Klidně se kdykoli zastav a použij ho.$h\"/pause 800/playSound reward/message \"Nyní můžeš používat Emilyin šicí stroj!\"/pause 800/speak Emily \"K šití budeš potřebovat kus látky a další předmět. Experimentuj a zjisti, jaké jedinečné styly lze vytvořit!\"/pause 500/emote Emily 32/pause 500/end",
+    "992559/t 600 1130/n clothFound/O Emily/w sunny": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Dobré ráno, @.$h\"/pause 500/speak Emily \"Právě jsem si vzpomněla... Ve svém bývalém domově mám šicí stroj!\"/pause 500/speak Emily \"Jestli si někdy budeš chtít ušít nějaké oblečení, určitě se tam zastav a vyzkoušej ho.$h\"/pause 800/playSound reward/message \"Nyní můžeš používat Emilyin šicí stroj!\"/pause 800/speak Emily \"K šití budeš potřebovat kus látky a další předmět. Experimentuj a zjisti, jaké jedinečné styly lze vytvořit!#$b#Moc ráda tě uvidím v nejrůznějších modelech!$h\"/pause 500/emote Emily 20/pause 500/end"
+  }
+}

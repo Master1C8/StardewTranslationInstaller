@@ -1,0 +1,28 @@
+{
+  "id": "460-sandy-house-introduction",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all three dialogue segments against English; verified Sandy's excited lonely voice, established Sandyina oáza and údolí Stardew naming, player-neutral customer and farm identity phrasing, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/SandyHouse",
+      "key": "67/m 10",
+      "field": null,
+      "source": "none/4 5/farmer 4 9 0 Sandy 2 5 2/skippable/move farmer 0 -2 0/emote Sandy 8/speak Sandy \"A... customer?\"/speed Sandy 4/move Sandy 2 0 2/speed Sandy 4/move Sandy 0 1 2/emote Sandy 16/speak Sandy \"Hi! Welcome to 'Sandy's Oasis'!#$b#Hey, you look just like the new farmer that Emily wrote to me about!#$b#Then... the bus line to Stardew Valley is back in service!$h#$b#Oh, I'm so happy!$h\"/emote Sandy 32/move Sandy 0 -1 0/move Sandy -2 0 2/emote Sandy 32/end dialogue Sandy \"Please visit again soon, I get so bored out here.\"",
+      "translation": "none/4 5/farmer 4 9 0 Sandy 2 5 2/skippable/move farmer 0 -2 0/emote Sandy 8/speak Sandy \"Z... někdo sem přišel?\"/speed Sandy 4/move Sandy 2 0 2/speed Sandy 4/move Sandy 0 1 2/emote Sandy 16/speak Sandy \"Ahoj! Vítej v ‚Sandyině oáze‘!#$b#Hej, o tobě mi Emily psala! Prý je v údolí někdo nový a vede tam farmu!#$b#Takže... autobusová linka do údolí Stardew je znovu v provozu!$h#$b#Ach, to mám radost!$h\"/emote Sandy 32/move Sandy 0 -1 0/move Sandy -2 0 2/emote Sandy 32/end dialogue Sandy \"Brzy zase přijď, tady se tak nudím.\"",
+      "sourceSHA256": "d6b00954705f77c0239fc648d866084757c6acfc9c32120705aa899b7e8e922d",
+      "translationSHA256": "ce70cc5303ff52f8a898d27a615142e4ef5bc5149188a1bb1db11d05a1f9e006",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

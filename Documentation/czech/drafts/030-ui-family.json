@@ -1,0 +1,10 @@
+{
+  "id": "030-ui-family",
+  "kind": "short",
+  "target": "Strings/UI",
+  "entries": {
+    "Chat_Baby": "Rodiče {0} a {1} přivítali do rodiny miminko! Je to {2}. Dali {3} jméno {4}.",
+    "Chat_HouseUpgrade": "Postava {0} požádala o stavební úpravy {1} domu!"
+  },
+  "complexityReason": "Small coupled runtime-context batch: complete original IL caller analysis determines the exact Czech noun/pronoun case. Review alongside the dependent family messages."
+}

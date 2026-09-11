@@ -1,0 +1,47 @@
+{
+  "id": "373-farm-emily-sewing-machine",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all eleven visible sewing-machine segments across both spouse-state variants; verified Emily's bright voice, Látka and šicí stroj terminology, tutorial clarity, shared reward text, quest conditions, emotion markers and exact event command skeletons.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "992559/t 600 1130/n clothFound/o Emily/w sunny",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Hi @! Good morning!\"/pause 500/faceDirection Emily 3/pause 800/faceDirection Emily 0/speak Emily \"You seem to be doing well... the farm looks great!$h\"/pause 500/emote farmer 32/pause 500/speak Emily \"So... you've been here a while, and I'm sure you've acquired some 'cloth' by now... right?\"/pause 500/speak Emily \"Well, did you know that you can use cloth to tailor all kinds of clothes? All you need is access to a sewing machine...#$b#And I happen to have one at home! Feel free to swing by and use it any time.$h\"/pause 800/playSound reward/message \"You can now access Emily's sewing machine!\"/pause 800/speak Emily \"To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!\"/pause 500/emote Emily 32/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Ahoj, @! Dobré ráno!\"/pause 500/faceDirection Emily 3/pause 800/faceDirection Emily 0/speak Emily \"Vypadá to, že se ti daří... farma vypadá skvěle!$h\"/pause 500/emote farmer 32/pause 500/speak Emily \"Takže... už jsi tu nějakou dobu a určitě se ti podařilo získat nějakou ‚látku‘... že?\"/pause 500/speak Emily \"No, víš, že z látky můžeš ušít nejrůznější oblečení? Stačí mít přístup k šicímu stroji...#$b#A jeden mám shodou okolností doma! Klidně se kdykoli zastav a použij ho.$h\"/pause 800/playSound reward/message \"Nyní můžeš používat Emilyin šicí stroj!\"/pause 800/speak Emily \"K šití budeš potřebovat kus látky a další předmět. Experimentuj a zjisti, jaké jedinečné styly lze vytvořit!\"/pause 500/emote Emily 32/pause 500/end",
+      "sourceSHA256": "1895282029dbaf7f3305bfd02b82f877dfcaf5bea00d438811d96daec93eab16",
+      "translationSHA256": "21a5e04c7d32294d4e5c4a1c5a407f0e2e358337a334467ed0d17d5c8b09da62",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "992559/t 600 1130/n clothFound/O Emily/w sunny",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Good morning, @.$h\"/pause 500/speak Emily \"I just remembered... I have a sewing machine at my old place!\"/pause 500/speak Emily \"If you ever feel like making clothes, you should swing by and check it out.$h\"/pause 800/playSound reward/message \"You can now access Emily's sewing machine!\"/pause 800/speak Emily \"To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!#$b#I'm going to have a lot of fun seeing you in all kinds of different outfits!$h\"/pause 500/emote Emily 20/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Emily 64 18 0/skippable/pause 1500/speak Emily \"Dobré ráno, @.$h\"/pause 500/speak Emily \"Právě jsem si vzpomněla... Ve svém bývalém domově mám šicí stroj!\"/pause 500/speak Emily \"Jestli si někdy budeš chtít ušít nějaké oblečení, určitě se tam zastav a vyzkoušej ho.$h\"/pause 800/playSound reward/message \"Nyní můžeš používat Emilyin šicí stroj!\"/pause 800/speak Emily \"K šití budeš potřebovat kus látky a další předmět. Experimentuj a zjisti, jaké jedinečné styly lze vytvořit!#$b#Moc ráda tě uvidím v nejrůznějších modelech!$h\"/pause 500/emote Emily 20/pause 500/end",
+      "sourceSHA256": "b969e4603e0978ef2b7017b0daafe4d0161ae5e5dfd5d2302c3c8509ebf8027d",
+      "translationSHA256": "90cade0a17c1b02f1a2952d51dd9ebda3db7ddc16b68361bd148f4c2ef81f6c9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "369-farm-shane-recovery-invitation",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all eight visible recovery and invitation segments against English; verified Shane's restrained voice, sensitive mental-health wording, all three response choices and friendship effects, Tunnelers terminology, Czech time style, control markers and exact event command skeletons.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "2118991/e 3910975/t 600 800",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Hey...\"/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 0/speak Shane \"Oh man... Uh... How do I say this?$s#$b#I'm really sorry about what happened at the cliffs. That was... embarrassing...\"/pause 500/speak Shane \"$q -1 null#  #$r -1 10 event_apologize1#I'm glad I was there to help.#$r -1 -10 event_apologize2#You needed a serious wake-up call.#$r -1 10 event_apologize3#I'm just happy you're still here.\"/pause 1000/faceDirection Shane 1/pause 1000/speak Shane \"I've decided I want to see a therapist. Harvey got me in touch with a colleague of his...$s\"/pause 500/faceDirection Shane 0/speak Shane \"Anyway... I just wanted to thank you for taking care of me. And I want you to know that I'm going to take things a little more seriously from now on.#$b#I don't want to be a burden on anyone...\"/pause 1000/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 500/showFrame Shane 19/pause 2000/end",
+      "translation": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Čau...\"/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 0/speak Shane \"Ach jo... Ehm... Jak to říct?$s#$b#Je mi opravdu líto toho, co se stalo u útesu. Bylo to... trapné...\"/pause 500/speak Shane \"$q -1 null#  #$r -1 10 event_apologize1#Mám radost, že se mi podařilo pomoct.#$r -1 -10 event_apologize2#Potřeboval jsi pořádně otevřít oči.#$r -1 10 event_apologize3#Hlavně že jsi pořád tady.\"/pause 1000/faceDirection Shane 1/pause 1000/speak Shane \"Rozhodl jsem se, že začnu chodit k terapeutovi. Harvey mě spojil s jedním svým kolegou...$s\"/pause 500/faceDirection Shane 0/speak Shane \"Každopádně... chtěl jsem ti poděkovat za všechnu tu péči. A taky ti chci říct, že odteď budu brát věci trochu vážněji.#$b#Nechci být nikomu na obtíž...\"/pause 1000/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 500/showFrame Shane 19/pause 2000/end",
+      "sourceSHA256": "68eb2a133065507a433b543745a99b5cd964f3dd518fac4d7bec81c4eca25377",
+      "translationSHA256": "4377d59ca822215f12d499b2fca1ea9ddd5b4266704804d726c96db1353e7771",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "2128292/e 3900074/t 600 630/f Shane 2500/D Shane",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Hey, @!$6\"/pause 1000/speak Shane \"Uh... So I got two tickets to the Tunnelers game tonight.$6\"/pause 2000/speak Shane \"If you want to come, meet me at the bus stop around 5pm.$6\"/pause 1000/end",
+      "translation": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"Čau, @!$6\"/pause 1000/speak Shane \"Ehm... Takže mám na dnešní zápas Tunnelers dva lístky.$6\"/pause 2000/speak Shane \"Jestli chceš jít se mnou, sejdeme se kolem 17:00 na autobusové zastávce.$6\"/pause 1000/end",
+      "sourceSHA256": "0bf439596c49806540afd386588c1c9584947686af4373e9a6d5fdac70196543",
+      "translationSHA256": "74b07012b4b00216c014186ad8df315daa50e0310bab8575b8f5b894bba133cb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

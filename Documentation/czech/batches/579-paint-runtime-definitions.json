@@ -1,0 +1,249 @@
+{
+  "id": "579-paint-runtime-definitions",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 12 PaintData records in full; Building, Roof and Trim are stable runtime mask identifiers and every other component is a numeric color offset, so exact preservation is required and no player-facing English remains in this technical table.",
+  "rows": [
+    {
+      "target": "Data/PaintData",
+      "key": "House",
+      "field": null,
+      "source": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+      "translation": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+      "sourceSHA256": "bd8d2636a16a2f95fc6ddb7123963af3780b7ff518a19f19dd819334543993f0",
+      "translationSHA256": "bd8d2636a16a2f95fc6ddb7123963af3780b7ff518a19f19dd819334543993f0",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Log Cabin",
+      "field": null,
+      "source": "Building/-20 20/Roof/-15 5/Trim/-10 5",
+      "translation": "Building/-20 20/Roof/-15 5/Trim/-10 5",
+      "sourceSHA256": "b2469d2a9c301afb43db9f6f68f0a601f7ce7585d5792af46d01d23ef06e9cc7",
+      "translationSHA256": "b2469d2a9c301afb43db9f6f68f0a601f7ce7585d5792af46d01d23ef06e9cc7",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Stone Cabin",
+      "field": null,
+      "source": "Building/-15 25/Roof/-15 5/Trim/-5 5",
+      "translation": "Building/-15 25/Roof/-15 5/Trim/-5 5",
+      "sourceSHA256": "9ed7b48ef1edd89a2da72e9b97760475895bfcf10de91d890110abe96707f615",
+      "translationSHA256": "9ed7b48ef1edd89a2da72e9b97760475895bfcf10de91d890110abe96707f615",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Plank Cabin",
+      "field": null,
+      "source": "Building/-55 -20/Roof/-10 5/Trim/-55 -30",
+      "translation": "Building/-55 -20/Roof/-10 5/Trim/-55 -30",
+      "sourceSHA256": "0c65bbd6baf186ddc522e15ede09bb98009e1537175347b1cf55b0cc6f8e6679",
+      "translationSHA256": "0c65bbd6baf186ddc522e15ede09bb98009e1537175347b1cf55b0cc6f8e6679",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Beach Cabin",
+      "field": null,
+      "source": "Building/-10 0/Roof/0 5/Trim/-5 5",
+      "translation": "Building/-10 0/Roof/0 5/Trim/-5 5",
+      "sourceSHA256": "c4968bb31c99442116d9a163301a84bb88bbcd9c60f68f47c25219b43371ba4b",
+      "translationSHA256": "c4968bb31c99442116d9a163301a84bb88bbcd9c60f68f47c25219b43371ba4b",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Neighbor Cabin",
+      "field": null,
+      "source": "Building/-10 0/Roof/-15 10/Trim/-10 5",
+      "translation": "Building/-10 0/Roof/-15 10/Trim/-10 5",
+      "sourceSHA256": "cd85d4b90fd4272b3ad61e5fc3dbd32835623a7bfc5bef05d0fbbd797a0bdcf2",
+      "translationSHA256": "cd85d4b90fd4272b3ad61e5fc3dbd32835623a7bfc5bef05d0fbbd797a0bdcf2",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Rustic Cabin",
+      "field": null,
+      "source": "Building/-20 5/Roof/-5 5/Trim/-5 0",
+      "translation": "Building/-20 5/Roof/-5 5/Trim/-5 0",
+      "sourceSHA256": "f6978fe3bd233ace63c8abc530be5eefb6771384eb8dcc69438b11316a55f840",
+      "translationSHA256": "f6978fe3bd233ace63c8abc530be5eefb6771384eb8dcc69438b11316a55f840",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Trailer Cabin",
+      "field": null,
+      "source": "Building/-5 0/Roof/-5 5/Trim/-5 0",
+      "translation": "Building/-5 0/Roof/-5 5/Trim/-5 0",
+      "sourceSHA256": "cb036479b101793fad710d8b006a9e3f43cf49a3cfa702faecf0e1581990f338",
+      "translationSHA256": "cb036479b101793fad710d8b006a9e3f43cf49a3cfa702faecf0e1581990f338",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Stable",
+      "field": null,
+      "source": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+      "translation": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+      "sourceSHA256": "1acd8439577ea65247c865a9ccd3774d3d0a0c0ad7cec7126989794d7abdf7d6",
+      "translationSHA256": "1acd8439577ea65247c865a9ccd3774d3d0a0c0ad7cec7126989794d7abdf7d6",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Big Shed",
+      "field": null,
+      "source": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+      "translation": "Building/-45 -10/Roof/-20 5/Trim/-25 0",
+      "sourceSHA256": "26872f530e02364f3da7886be258127640f9fedb19f636c1409b9cb7e211b74b",
+      "translationSHA256": "26872f530e02364f3da7886be258127640f9fedb19f636c1409b9cb7e211b74b",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Deluxe Coop",
+      "field": null,
+      "source": "Building/-25 0/Roof/-15 5/Trim/-25 0",
+      "translation": "Building/-25 0/Roof/-15 5/Trim/-25 0",
+      "sourceSHA256": "04add56e37fc39bf2783055b378b6b800aaf7328278633ba68af2650ef8a99b1",
+      "translationSHA256": "04add56e37fc39bf2783055b378b6b800aaf7328278633ba68af2650ef8a99b1",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/PaintData",
+      "key": "Deluxe Barn",
+      "field": null,
+      "source": "Building/-15 0/Roof/-10 5/Trim/-10 5",
+      "translation": "Building/-15 0/Roof/-10 5/Trim/-10 5",
+      "sourceSHA256": "b1d91a9538855caa0bcbbfdcaa9a660f9a9252fe95cd8585aae6088d5d38e927",
+      "translationSHA256": "b1d91a9538855caa0bcbbfdcaa9a660f9a9252fe95cd8585aae6088d5d38e927",
+      "preservationReason": "Every value is a language-neutral paint-mask definition: Building, Roof, and Trim are stable runtime region identifiers paired with numeric color offsets, not displayed labels; translating them would break region lookup.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

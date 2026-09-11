@@ -1,0 +1,296 @@
+{
+  "id": "549-moonlight-jellies-opening-y1-a",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full post-edit EN/CS review completed; objective correction verified and no remaining issue found in this package.",
+  "rows": [
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "name",
+      "field": null,
+      "source": "Dance Of The Moonlight Jellies",
+      "translation": "Tanec měsíčních medúz",
+      "sourceSHA256": "cc9f8627f06b0dbacf0cb63e1e83bf7821df9b018dfad473ad509e9740d98879",
+      "translationSHA256": "3ed5a4fc250dd56b2a04a8c43336861510ef3799fb7b333700c23050c0c20517",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "conditions",
+      "field": null,
+      "source": "Beach/2200 2400",
+      "translation": "Beach/2200 2400",
+      "sourceSHA256": "119c615e7594a91c21e25aebc8f8bd37fd96294501f90e4f01ace286f7ee099e",
+      "translationSHA256": "119c615e7594a91c21e25aebc8f8bd37fd96294501f90e4f01ace286f7ee099e",
+      "preservationReason": "Festival location and time-window syntax are runtime data and must remain unchanged.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "set-up",
+      "field": null,
+      "source": "ocean/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Jellies/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true 0 12 3 3000 2 0 1 3000 0 -12 -2 0 3 3000/advancedMove Jas true 0 2 3 5000 0 -2 3 5000/advancedMove Clint false 2 50000 -2 0 3 500 2 1000 3 1000 1 0 2 1000/advancedMove Harvey True 0 -12 -10 0 0 6 2 25000 0 -6 10 0 0 12 2 25000/playerControl jellies/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "ocean/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Jellies/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true 0 12 3 3000 2 0 1 3000 0 -12 -2 0 3 3000/advancedMove Jas true 0 2 3 5000 0 -2 3 5000/advancedMove Clint false 2 50000 -2 0 3 500 2 1000 3 1000 1 0 2 1000/advancedMove Harvey True 0 -12 -10 0 0 6 2 25000 0 -6 10 0 0 12 2 25000/playerControl jellies/viewport player clamp true unfreeze/globalFadeToClear",
+      "sourceSHA256": "8c27356b9e39d17d654ed60cefd875589d15c0a8bbcf58e19097d8d33e2c1128",
+      "translationSHA256": "8c27356b9e39d17d654ed60cefd875589d15c0a8bbcf58e19097d8d33e2c1128",
+      "preservationReason": "Festival map, actor, movement, viewport, and player-control commands are runtime data and contain no player-facing prose.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "mainEvent",
+      "field": null,
+      "source": "pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/changeLocation Beach/warpFarmers 28 36 2 29 35 2 34 36 2 37 35 2 25 36 2 10 39 3 30 35 2 33 35 2 36 35 2 up 25 33 3/positionOffset farmer 0 16/warp spouse 29 36/faceDirection spouse 2/specificTemporarySprite candleBoat/showFrame Pam 24/positionOffset Pam 0 12/showFrame Haley 30/viewport 26 36 true/pause 2000/move Lewis 0 1 2/move Lewis -2 0 3/pause 400/showFrame Lewis 16 true/animate Lewis false false 200 25 16 17 17/pause 800/playSound parry/specificTemporarySprite candleBoatMove/pause 500/showFrame Lewis 0 true/animate Lewis false false 200 25 12/pause 400/move Lewis 1 0 2/pause 6000/specificTemporarySprite moonlightJellies/pause 10000/playMusic moonlightJellies/pause 18000/emote Jodi 16 true/pause 800/emote Emily 16 true/pause 700/emote Abigail 56 true/pause 8500/move Jas 0 1 2/pause 300/faceDirection Jas 3 true/pause 300/jump Jas 8 true/pause 500/emote Jas 20/pause 500/viewport move -1 0 8000/pause 4000/move Caroline -2 0 3 true/pause 4000/faceDirection Sebastian 2/move Abigail 1 0 2/showFrame Abigail 24/pause 500/viewport move 1 0 21000/pause 5000/move Lewis 0 1 2/showFrame Lewis 18/pause 3000/showFrame Haley 31/pause 100/showFrame Haley 24/pause 1000/showFrame Haley 31/pause 100/showFrame Haley 30/pause 1800/showFrame Jodi 25/pause 1000/showFrame Emily 27/showFrame Haley 31/pause 100/showFrame Haley 24/pause 1000/showFrame Haley 31/pause 100/showFrame Haley 30/pause 1000/move Clint -1 0 2/pause 2000/globalFade/viewport -1000 -1000/pause 2000/pause 1000/message \"The glow of summer has faded, now... and the moonlight jellies carry on toward the great unknown.\"/playMusic none/pause 2000/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/changeLocation Beach/warpFarmers 28 36 2 29 35 2 34 36 2 37 35 2 25 36 2 10 39 3 30 35 2 33 35 2 36 35 2 up 25 33 3/positionOffset farmer 0 16/warp spouse 29 36/faceDirection spouse 2/specificTemporarySprite candleBoat/showFrame Pam 24/positionOffset Pam 0 12/showFrame Haley 30/viewport 26 36 true/pause 2000/move Lewis 0 1 2/move Lewis -2 0 3/pause 400/showFrame Lewis 16 true/animate Lewis false false 200 25 16 17 17/pause 800/playSound parry/specificTemporarySprite candleBoatMove/pause 500/showFrame Lewis 0 true/animate Lewis false false 200 25 12/pause 400/move Lewis 1 0 2/pause 6000/specificTemporarySprite moonlightJellies/pause 10000/playMusic moonlightJellies/pause 18000/emote Jodi 16 true/pause 800/emote Emily 16 true/pause 700/emote Abigail 56 true/pause 8500/move Jas 0 1 2/pause 300/faceDirection Jas 3 true/pause 300/jump Jas 8 true/pause 500/emote Jas 20/pause 500/viewport move -1 0 8000/pause 4000/move Caroline -2 0 3 true/pause 4000/faceDirection Sebastian 2/move Abigail 1 0 2/showFrame Abigail 24/pause 500/viewport move 1 0 21000/pause 5000/move Lewis 0 1 2/showFrame Lewis 18/pause 3000/showFrame Haley 31/pause 100/showFrame Haley 24/pause 1000/showFrame Haley 31/pause 100/showFrame Haley 30/pause 1800/showFrame Jodi 25/pause 1000/showFrame Emily 27/showFrame Haley 31/pause 100/showFrame Haley 24/pause 1000/showFrame Haley 31/pause 100/showFrame Haley 30/pause 1000/move Clint -1 0 2/pause 2000/globalFade/viewport -1000 -1000/pause 2000/pause 1000/message \"Letní záře nyní pohasla... a měsíční medúzy pokračují dál vstříc velkému neznámu.\"/playMusic none/pause 2000/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "5a514782d0440b335371261e4ee8481a9d48d48d0934379509290fb3e6fc9d63",
+      "translationSHA256": "163c1cef770b0612ad1968c7319468227d4faef14249c7e09fc2f79d219f5312",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Leah_spouse",
+      "field": null,
+      "source": "Hey. I'm paying my respects to another bygone summer. I'll come meet up with you when we launch the candle-boat.",
+      "translation": "Ahoj. Loučím se s dalším uplynulým létem. Přijdu za tebou, až budeme pouštět lodičku se svíčkou.",
+      "sourceSHA256": "052a6b51b0f69704dea278632d33812c447306ca0da95c59ec66899545b07f87",
+      "translationSHA256": "d2c9aec20a653093c438c3da067a765f06836964b5a876504d4bfb6a7d15244c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Abigail",
+      "field": null,
+      "source": "Such a rare and exciting thing... ",
+      "translation": "Tak vzácná a vzrušující podívaná...",
+      "sourceSHA256": "8c2e35f82301672d4d69c9ae754ab9e47c7dc9c36608ab96be04ec9cd5dc2b63",
+      "translationSHA256": "b26bc55a5631563636f3b05d1ce5750d0f5864745dad86ed5bd348ee041d6696",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Robin",
+      "field": null,
+      "source": "*yawn*... It's past my bed-time.$s#$e#Hey, did you see that candle-boat? I crafted it myself.$h",
+      "translation": "*zívnutí*... Už dávno mám být v posteli.$s#$e#Hej, vidíš tu lodičku se svíčkou? Vyrobila jsem ji sama.$h",
+      "sourceSHA256": "65109fe00f6b3693e84e6ff2ec8c797913d57f84d8923b83185a81de148c1d88",
+      "translationSHA256": "c6af9e08491f22ccfc21921fd74e55e1fc970e2ca6e4049e2a234df065324d72",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Demetrius",
+      "field": null,
+      "source": "The 'Moonlight Jelly'... what a remarkable species! We're very lucky that they stop here on their long journey south.#$e#It's unknown why they are attracted to light... very curious.",
+      "translation": "‚Měsíční medúza‘... jak pozoruhodný druh! Máme velké štěstí, že se tu zastavují během své dlouhé cesty na jih.#$e#Není známo, proč je přitahuje světlo... velmi zvláštní.",
+      "sourceSHA256": "1d16fe94b901238b318ec0ba5e7aa965c651bfa06043260fadd8dbc7a410f22c",
+      "translationSHA256": "f9992f9733e3e8af76b7b2efec0c8779a69a046646c1ad94a981d0ffc94a2517",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Maru",
+      "field": null,
+      "source": "It's kind of cold, actually. I guess fall is right around the corner.",
+      "translation": "Vlastně je docela zima. Podzim už je asi za rohem.",
+      "sourceSHA256": "ea7ff228a3c8d421267059b669a884575ded0ee4c8b3c689409b57a679f8d8f8",
+      "translationSHA256": "741cbff7a95602f04fc4fdc06b860abf4ae86de56d221c9a79c8be5370039d22",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Sebastian",
+      "field": null,
+      "source": "I thought I saw something moving in there... something big, something dark.#$e#Just trying to scare you...$h",
+      "translation": "Zdálo se mi, že se tam něco pohnulo... něco velkého, něco temného.#$e#Jen tě straším...$h",
+      "sourceSHA256": "965bb865bca0dc3757328cbc2523faf92fae9eaed5ece703d51c555bc31af4a9",
+      "translationSHA256": "2c6b3905678f708a372c117154c2b691ce91d7dda85ff57b7ea17606a28894a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Pierre",
+      "field": null,
+      "source": "Psst... Make sure to swing by the shop tomorrow to get your fall seeds!",
+      "translation": "Psst... Nezapomeň zítra zaskočit do obchodu pro podzimní semena!",
+      "sourceSHA256": "08ef1ff74e58f1882ef14dfad65565a9872a3c79cb4658f9e24f9b49527dd087",
+      "translationSHA256": "80d75ecbbfcfe37464de0e09e80c9ffdf2024c54c32fca90ef1cd3c2b00d7934",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Caroline",
+      "field": null,
+      "source": "These candles are romantic, aren't they?",
+      "translation": "Ty svíčky jsou romantické, viď?",
+      "sourceSHA256": "6ad1eeb32fec15e95296a47ebbb59302749f80ccc9ec16f8505163523718528e",
+      "translationSHA256": "267b4b3546b3b7797442e72fa70d9266e5f1e2b38e2f58802f88eef42da925e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Linus",
+      "field": null,
+      "source": "I'll just sneak up when the jellies arrive... I don't want to bother anyone.",
+      "translation": "Až medúzy dorazí, nenápadně se přiblížím... Nechci nikoho rušit.",
+      "sourceSHA256": "b6faa2dd497dfc353b40b7f622d4841d261b37c274f8f008d778e6f08d17495a",
+      "translationSHA256": "56a34df4d248580baab6c74dfd9ffe861fc59d3e738dffd27f869c2f6be37aed",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "Alex",
+      "field": null,
+      "source": "I can't believe summer's over... I feel like it just started.$s",
+      "translation": "Nemůžu uvěřit, že léto končí... Připadá mi, jako by právě začalo.$s",
+      "sourceSHA256": "6ee1c361243d0890ad9854286d3ca082d63045a324a7ae98d67784102b9ceb1c",
+      "translationSHA256": "877d034ad2985161d3f66ffa6bfccf9b7297834365d0e1b03f531a9cdda3080c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer28",
+      "key": "George",
+      "field": null,
+      "source": "What, why are you looking at me like that? You think I'm too old to enjoy something like this?",
+      "translation": "Co je, proč se na mě tak díváš? Myslíš si, že jsem na něco takového moc starý?",
+      "sourceSHA256": "bf41fafb079993673daef20e114e4908a2702f73522e1627d16bb5dbcffad9f9",
+      "translationSHA256": "dfd7587fa1671a2216fd5db2f4fd4f8866b4fb91dc9ff069590213f3c1e41aae",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

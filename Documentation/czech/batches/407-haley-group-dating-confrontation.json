@@ -1,0 +1,66 @@
+{
+  "id": "407-haley-group-dating-confrontation",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read all three complete confrontation rows after the audit correction, including the main gender split and both explanation branches. Replaced Umím to vysvětlit with the intended Můžu to vysvětlit. Verified all twelve player choices, six women’s voices and plural agreement, male/female player branches, Zuzu and bouquet references, markers, dump outcomes, escaped commands and exact choreography; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "195012/f Haley 2500/f Emily 2500/f Penny 2500/f Abigail 2500/f Leah 2500/f Maru 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 38/e 2123343/e 10/e 901756/e 54/e 15/k 195019",
+      "field": null,
+      "source": "playful/-1000 -1000/farmer 8 19 1 Haley 18 18 1 Emily 19 17 2 Penny 20 17 2 Maru 21 17 2 Leah 22 18 3 Abigail 20 20 0 Pierre -1000 -1000 1/move farmer 5 0 1 true/viewport 17 19 true/move false/pause 500/startJittering/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/showFrame farmer 0/stopJittering/playSound thudStep/faceDirection farmer 3 true/showFrame farmer 7 true/startJittering/faceDirection Haley 3 true/faceDirection Emily 3 true/faceDirection Penny 3 true/faceDirection Maru 3 true/faceDirection Leah 3 true/faceDirection Abigail 3 true/textAboveHead Haley \"Not so fast!\"/textAboveHead Abigail \"Hold it!\"/textAboveHead Leah \"Stop!\"/pause 3000/stopJittering/showFrame farmer 6 true/pause 500/faceDirection farmer 1/move farmer 3 0 1/playMusic none/emote farmer 28/pause 500/speak Abigail \"Never thought you'd find all your 'girlfriends' in one room, huh @?$a\"/pause 500/speak Leah \"I... I thought you were different than other men...$s^You tricked all of us into thinking we loved you... You're horrible...$a\"/pause 500/speak Penny \"How could you do this to us, @?$s\"/pause 500/speak Maru \"You think you're real smooth, don't you? Thought you'd sample the whole 'buffet', huh? What a sleeze...$a\"/pause 500/speak Emily \"Th... That night in the tent... you whispered such sweet things to me in the dark...$s#$b#Now I have to face each day knowing it was all a lie.$s\"/pause 500/playMusic ragtime/speak Haley \"Well, us women stick together! And we're not going to put up with this!$a^Well, we're not going to put up with your abuse any longer!$a\"/textAboveHead Leah \"That's right!\"/pause 500/speak Abigail \"Well? What do you have to say for yourself?$a\"/pause 1000/question fork1 \"#I'm sorry... what I did was wrong.#Ladies, calm down! I can explain...\"/fork choseToExplain/pause 500/textAboveHead Maru \"Hmmph...\"/pause 500/speak Abigail \"Nice try, but that's not going to cut it...$u\"/pause 1000/playMusic none/speak Haley \"...so we've come to a decision... isn't that right, girls?$u\"/pause 500/speak Penny \"...yes.$s\"/speak Leah \"Absolutely.$a\"/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"We're all gonna give you the cold shoulder!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 3/end warpOut",
+      "translation": "playful/-1000 -1000/farmer 8 19 1 Haley 18 18 1 Emily 19 17 2 Penny 20 17 2 Maru 21 17 2 Leah 22 18 3 Abigail 20 20 0 Pierre -1000 -1000 1/move farmer 5 0 1 true/viewport 17 19 true/move false/pause 500/startJittering/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/showFrame farmer 0/stopJittering/playSound thudStep/faceDirection farmer 3 true/showFrame farmer 7 true/startJittering/faceDirection Haley 3 true/faceDirection Emily 3 true/faceDirection Penny 3 true/faceDirection Maru 3 true/faceDirection Leah 3 true/faceDirection Abigail 3 true/textAboveHead Haley \"Ani hnout!\"/textAboveHead Abigail \"Počkej!\"/textAboveHead Leah \"Stůj!\"/pause 3000/stopJittering/showFrame farmer 6 true/pause 500/faceDirection farmer 1/move farmer 3 0 1/playMusic none/emote farmer 28/pause 500/speak Abigail \"Ani ve snu tě nenapadlo, že najdeš všechny svoje „přítelkyně“ v jedné místnosti, co, @?$a\"/pause 500/speak Leah \"J... Já si myslela, že jsi jiný než ostatní muži...$s^Přiměla jsi nás všechny uvěřit, že tě milujeme... Jsi hrozná...$a\"/pause 500/speak Penny \"Jak nám něco takového můžeš udělat, @?$s\"/pause 500/speak Maru \"Myslíš si, že ti všechno hladce projde, co? Chceš ochutnat celý „bufet“, co? To je teda hnus...$a\"/pause 500/speak Emily \"T... Tehdy v tom stanu... jsem od tebe ve tmě slyšela tak sladká slova...$s#$b#Teď musím každý den žít s vědomím, že to všechno byla lež.$s\"/pause 500/playMusic ragtime/speak Haley \"My ženy držíme při sobě! A tohle si nenecháme líbit!$a^Už si od tebe nenecháme dál takhle ubližovat!$a\"/textAboveHead Leah \"Přesně tak!\"/pause 500/speak Abigail \"Tak co? Co nám k tomu řekneš?$a\"/pause 1000/question fork1 \"#Omlouvám se... Bylo to ode mě špatné.#Dámy, uklidněte se! Můžu to vysvětlit...\"/fork choseToExplain/pause 500/textAboveHead Maru \"Hmpf...\"/pause 500/speak Abigail \"Dobrý pokus, ale tohle nestačí...$u\"/pause 1000/playMusic none/speak Haley \"...Takže jsme se rozhodly... že jo, holky?$u\"/pause 500/speak Penny \"...Ano.$s\"/speak Leah \"Rozhodně.$a\"/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"Všechny se k tobě otočíme zády!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 3/end warpOut",
+      "sourceSHA256": "43005e621866e932ffb2dda509d95c3e8972ad12c8a88bc2bef42cbe33838b6a",
+      "translationSHA256": "bbc08ccaebfab18daa84cb2f74289052a8589a5a35b230fc6639d527851ccda5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "choseToExplain",
+      "field": null,
+      "source": "pause 100/textAboveHead Haley \"I doubt it...\"/pause 500/resetVariable/question fork2 \"#I thought we were just friends! I didn't know it was so serious!#Pierre pressured me! He wanted to sell more bouquets!#Ladies, this is completely normal! It's just a lifestyle choice...\"/pause 100/fork lifestyleChoice/textAboveHead Haley \"Liar!\"/textAboveHead Maru \"Yeah, right!\"/speak Emily \"Do you really expect us to believe that? You're just digging yourself into a deeper hole...$a\"/pause 1000/faceDirection Haley 2/playMusic none/speak Haley \"...I think we've come to a decision... isn't that right, girls?$u\"/pause 500/speak Penny \"...yes.$s\"/speak Leah \"Absolutely.$a\"/faceDirection Haley 3/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"We're all gonna give you the cold shoulder!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 4/end warpOut",
+      "translation": "pause 100/textAboveHead Haley \"O tom pochybuju...\"/pause 500/resetVariable/question fork2 \"#Měl to být jen kamarádský vztah! Vůbec mi nedošlo, že je to tak vážné!#Pierre na mě tlačil! Chtěl prodat víc kytic!#Dámy, tohle je úplně normální! Je to prostě životní styl...\"/pause 100/fork lifestyleChoice/textAboveHead Haley \"Lžeš!\"/textAboveHead Maru \"To určitě!\"/speak Emily \"Opravdu čekáš, že ti to uvěříme? Jen se do toho zaplétáš čím dál víc...$a\"/pause 1000/faceDirection Haley 2/playMusic none/speak Haley \"...Myslím, že jsme se rozhodly... že jo, holky?$u\"/pause 500/speak Penny \"...Ano.$s\"/speak Leah \"Rozhodně.$a\"/faceDirection Haley 3/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"Všechny se k tobě otočíme zády!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 4/end warpOut",
+      "sourceSHA256": "932f826e0f7e080bb1a15c655bc532790cb0a46543e5454b9e6fad1efc36a686",
+      "translationSHA256": "59f0ea277591a2435a06eba52ec01dfe12bd3bfb9d71790c75d01581f18804f0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "lifestyleChoice",
+      "field": null,
+      "source": "pause 100/speak Penny \"Hmmph! I don't know what's considered 'normal' in Zuzu City, but I'm definitely not okay with this arrangement!$a\"/speak Maru \"It's not a 'choice' if none of us even know about it!$a\"/pause 100/speak Abigail \"You can't weasel your way out of this one, @.$a\"/pause 1000/faceDirection Haley 2/playMusic none/speak Haley \"...I think we've come to a decision... isn't that right, girls?$u\"/pause 500/speak Penny \"...yes.$s\"/speak Leah \"Absolutely.$a\"/faceDirection Haley 3/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"We're all gonna give you the cold shoulder!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 4/end warpOut",
+      "translation": "pause 100/speak Penny \"Hmpf! Nevím, co se ve městě Zuzu považuje za „normální“, ale s takovým uspořádáním rozhodně nesouhlasím!$a\"/speak Maru \"Není to „volba“, když o tom žádná z nás ani neví!$a\"/pause 100/speak Abigail \"Z tohohle se nevykroutíš, @.$a\"/pause 1000/faceDirection Haley 2/playMusic none/speak Haley \"...Myslím, že jsme se rozhodly... že jo, holky?$u\"/pause 500/speak Penny \"...Ano.$s\"/speak Leah \"Rozhodně.$a\"/faceDirection Haley 3/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/jump Haley/jump Abigail/jump Emily/jump Leah/jump Maru/jump Penny/pause 1000/speak Maru \"Všechny se k tobě otočíme zády!$a\"/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump girls 4/end warpOut",
+      "sourceSHA256": "e1782fd221de622eb4eb81bdefad803481c355c0f9a1dbef18b03a2dad94c306",
+      "translationSHA256": "7f4745a03efae8ed7d5b6b9e5c20fb069ae76eea89fcba101cabd806b28ab435",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

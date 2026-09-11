@@ -1,0 +1,47 @@
+{
+  "id": "376-farmhouse-grandpa-evaluations",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all five visible evaluation segments against English; verified Grandpa's solemn affectionate voice, exact grandson/granddaughter branches, two-year and repeat-summoning context, phrase-safe %farm placement, Stardew Valley naming, control markers and exact event skeletons.",
+  "rows": [
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "558291/y 3/H",
+      "field": null,
+      "source": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"My dear boy...^My dearest grand-daughter...#$b#It's been many years since we last spoke. You were just a little boy... Do you remember?^It's been many years since we last spoke. You were just a little girl... Do you remember?#$b#Look how far you've come!#$b#Though you may have forgotten me, I've been here all along.#$b#You see... My body has departed this world, but my heart will always remain in Stardew Valley.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"You've been here two years now...\"/grandpaEvaluation/pause 3000/speak Grandpa \"The future of %farm Farm is in your hands, now.#$b#Farewell!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+      "translation": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Můj drahý vnuku...^Má nejdražší vnučko...#$b#Už je to mnoho let, co jsme spolu naposledy mluvili. Byl jsi tehdy jen malý chlapec... Pamatuješ?^Už je to mnoho let, co jsme spolu naposledy mluvili. Byla jsi tehdy jen malá holčička... Pamatuješ?#$b#Podívej, kam až tě život zavedl!#$b#Možná už tvé vzpomínky na mě vybledly, ale celou dobu jsem byl nablízku.#$b#Víš... Mé tělo tento svět opustilo, ale mé srdce navždy zůstane v údolí Stardew.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Už tu žiješ dva roky...\"/grandpaEvaluation/pause 3000/speak Grandpa \"Budoucnost farmy %farm je nyní ve tvých rukou.#$b#Sbohem!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+      "sourceSHA256": "27351d450a3e38fd95f3a8749978fd9733dffe06b304f373d43e1dc9a156cd2a",
+      "translationSHA256": "3a95ca8cd276060e6e2a426c612f81c5dff8774009faae6d6c58738c9161ce9b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "558292/e 321777/t 600 620/H",
+      "field": null,
+      "source": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"My dear boy...^My dearest grand-daughter...#$b#I'm glad you summoned me. I... was perhaps a little too harsh with you last time.#$b#Forgive me. You've been working very hard, and I'm proud of it.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Let's see...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+      "translation": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Můj drahý vnuku...^Má nejdražší vnučko...#$b#Tvé přivolání mě potěšilo. Minule jsem na tebe byl možná trochu příliš přísný.#$b#Odpusť mi. Pracuješ velmi tvrdě a jsem na tebe hrdý.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Tak se podíváme...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+      "sourceSHA256": "0c5e0cd90356e7d63e61af596eeb6ec90609994afdf327b646468d9149ac19da",
+      "translationSHA256": "0a5bffebd4275a40f91fe7feb7098956080fd896eaaada29a3da98b89f69ee09",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

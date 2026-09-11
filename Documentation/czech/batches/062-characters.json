@@ -1,0 +1,1073 @@
+{
+  "id": "062-characters",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 56 pairs and then reread the complete corrected batch. Removed a male-only generic speaker form; retained each known spouse voice while avoiding assumptions about player gender. Checked named companion placeholders in nominative clauses and snack labels behind občerstvení, including generic/female/male variants and love/like/dislike intensity. Dwarf misunderstanding is re-created directly as Ki-co from kino. Festival/night/week restrictions, ticket use, concession delivery and every dialogue marker remain faithful.",
+  "rows": [
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Festival",
+      "field": null,
+      "source": "The movie theater isn't open on festival days!",
+      "translation": "Ve dnech slavností je kino zavřené!",
+      "sourceSHA256": "e86bb670ec5dff31420b4cf44b9eaf69fa8e4074a9ce193e5b0a59853cbb4ebb",
+      "translationSHA256": "df7cda46b2f23564d6fe56c1c2cde93d18d0cef0d8da3634c75a643de5d5ae6b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Closed",
+      "field": null,
+      "source": "The movie theater is closed for the night...",
+      "translation": "Kino je na noc zavřené...",
+      "sourceSHA256": "4f9d169cf1e0019ccf3a341e54f612fa7ced98b860aaa8de1b9b7a52c80c50f5",
+      "translationSHA256": "3acde3a5695c095c8b99f1489062d0f50c279f6a42c1ecc307255e870cd0b958",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_AlreadyInvitedSomeone",
+      "field": null,
+      "source": "You've already made plans to see a movie with {0} today!",
+      "translation": "Dnešní návštěva kina už je domluvená. Doprovodí vás {0}!",
+      "sourceSHA256": "2f92a3aeca3120122a25d68f33cbd9c374a5d590acf82f486638f909a4262fa4",
+      "translationSHA256": "b9f5512072aae57bfe4879f24c53098c0476913e3813730c05b7db0e8978f5c9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_NoTheater",
+      "field": null,
+      "source": "{0} looks puzzled...",
+      "translation": "{0} tomu zřejmě nerozumí...",
+      "sourceSHA256": "ceabd233c2bcd47b39ee112df1e6717490a79ff9fdf8d5b539a00b16c41b7d53",
+      "translationSHA256": "ffbac0c9ef927175ac3c8de4cc7ebcbb2f4eb66fa485afd335608ebf7332bfc4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_CantInvite",
+      "field": null,
+      "source": "You cannot invite {0} to the movies.",
+      "translation": "Postavu {0} nelze pozvat do kina.",
+      "sourceSHA256": "fe0657ca82b0bd531206b1ff6827885910f98061cd0c6afd11a14b192e3bff47",
+      "translationSHA256": "64ca8ba37f1f07b4b6d1d3e26dc68ee0ec22fe22ea6b366e6ed6c12854b0527b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_InvitedBySomeoneElse",
+      "field": null,
+      "source": "Sorry, I've already got plans to see a movie today, but maybe you can join us there?",
+      "translation": "Promiň, na dnešek už mám kino domluvené s někým jiným, ale třeba se k nám tam můžeš přidat?",
+      "sourceSHA256": "a13d12ab5410d893f0f250dc55d5b810eac85e7f3c87ffe6d587463cb2959f2f",
+      "translationSHA256": "72db056de63b3e67de748d325e092c6821f08e9a58804842b228cc9e335fd55d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_FarmerAlreadySeen",
+      "field": null,
+      "source": "I don't feel like going to the movies again just yet...",
+      "translation": "Zatím se mi nechce jít znovu do kina...",
+      "sourceSHA256": "4d06a99b2bcdf56a0027164ac4c1b4a71598da614649f6f206a3baaf31e4d9e7",
+      "translationSHA256": "9afec28c9aea5020a20f89e77a7d759fd723c8c674a90d2661fb828c41c3a076",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_AlreadySeen",
+      "field": null,
+      "source": "Sorry, I've already seen a movie this week...",
+      "translation": "Promiň, tenhle týden už mám jedno kino za sebou...",
+      "sourceSHA256": "513b568f5394c502b5c992b63555193bb5d6f7667039b9915a7c804c817cb4bb",
+      "translationSHA256": "e5022ae326d8167be2fc19cf233a204d77513d34cbbba87c770f1423e3e9659a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Sandy",
+      "field": null,
+      "source": "Ooh.. I'd love to join you.  You go on ahead and I'll meet you there, honey... I have to freshen up!",
+      "translation": "Jé.. moc ráda půjdu s tebou. Jdi napřed a sejdeme se tam, zlato... Musím se trochu upravit!",
+      "sourceSHA256": "a67e15893eda537e67619683203ec6f2a3f1db0895eb62694ab3daf9b14f7e09",
+      "translationSHA256": "c21353094751517d18686c89791815625b9c493ace41f75ed8fc77b285bada1e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Dwarf",
+      "field": null,
+      "source": "A moo-what? Well, I'm sure I'll like it! I'd be happy to go with you.",
+      "translation": "Ki-co? No, určitě se mi to bude líbit! Rád půjdu s tebou.",
+      "sourceSHA256": "f3f350dc1ff3a793bcc91ef9e97ea2c23aca0aefcde3cdd86f9ff296a2305a03",
+      "translationSHA256": "0234a88217fee9338bcdda87bfcd57e9b60fe56a0f8f5b2a5b6f69e7b331dd4b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Krobus",
+      "field": null,
+      "source": "Oh? I normally hide myself from humans...#$b#But I have an idea... I'll meet you at the theater later.",
+      "translation": "Opravdu? Obvykle se před lidmi schovávám...#$b#Ale mám nápad... Sejdeme se později u kina.",
+      "sourceSHA256": "2c128bf2be2985e858ed8f221122318acee2c77feb3f38bc4ded500c531e26fe",
+      "translationSHA256": "f2bc67274cc52fbce07cb1259edaba43917d239fc8525803fbe4dbceb4feeaa8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Wizard",
+      "field": null,
+      "source": "Hmmph... Very well. I will join you for this... spectacle.",
+      "translation": "Hmm... Dobrá tedy. Připojím se k tobě na téhle... podívané.",
+      "sourceSHA256": "1e97298202cb0eb159409d2433346ed9d8da6d581d22ce92de04eb0a93272d03",
+      "translationSHA256": "bac5bb5612658cdaa3038f48897588070d5fb80941fe426975e7827a5151adf0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited",
+      "field": null,
+      "source": "A movie? Sure. I'll meet you at the theater.",
+      "translation": "Kino? Jasně. Sejdeme se tam.",
+      "sourceSHA256": "a0e62206f1ddb6bdb1d5a3088bccd3b2c85fb23b9a64d681a689921b60f04bcd",
+      "translationSHA256": "42c7869c71f97df1f41bfffbb5655ac8ff49b3e7b3c9c4781baa2d48840df3b0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Rude",
+      "field": null,
+      "source": "A movie? Yeah, whatever, sounds good. See you at the theater...",
+      "translation": "Kino? Jo, proč ne, to zní dobře. Tak se tam uvidíme...",
+      "sourceSHA256": "1ea1481654e7424fea40318f92db7e1ac8e4bdd1fa9676ef4eda00463679a56a",
+      "translationSHA256": "a1755f18455f9e93758ad67c5e9d290d85ba378edb60b4a1d5f5498a43bdc826",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Invited_Child",
+      "field": null,
+      "source": "A movie? Yay! Let's meet up at the theater!",
+      "translation": "Kino? Jupí! Sejdeme se tam!",
+      "sourceSHA256": "6ca326fb0c78e3832bb49dcb81c73693bb7a92efc2dcad0f5feb3231a4ccae9b",
+      "translationSHA256": "3f41ac4ad07568853f812439338cba937350f71f109a75901f051d0e5bbe0ed3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Reject_Child",
+      "field": null,
+      "source": "I don't think I'm allowed to see this...",
+      "translation": "Myslím, že na tohle nesmím...",
+      "sourceSHA256": "a670a919ab1a7e26bec65fa37de4a7e76cc11ac0bca39854716226835a6dae67",
+      "translationSHA256": "adf5b494fa73005aeb5e601da5778ca532c355371d49b96ed8668ddab81b2130",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Reject",
+      "field": null,
+      "source": "Sorry, I'm not in the mood to see a movie right now...",
+      "translation": "Promiň, teď nemám náladu na kino...",
+      "sourceSHA256": "b9effb1e698483f0be96eade52b4a4e3b372fc72d9c100b8f19f16bb9416a09f",
+      "translationSHA256": "84f8fe9ba1165ef85a7e6e922278312f29dc1a760a469ef257d32713db567fbc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_NoTicket",
+      "field": null,
+      "source": "You cannot enter the theater without a ticket!",
+      "translation": "Bez vstupenky nemůžete do kina vstoupit!",
+      "sourceSHA256": "d505c8abe86f876fc390ccf11ed075e7ae2645a5f8130406e8e584a0380aa147",
+      "translationSHA256": "8b76d07c0714117e9cbb81cf65741aab9444b2100a702fe3711384ad32efeba1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_CurrentlyShowing",
+      "field": null,
+      "source": "A movie is currently being screened, come back again later.",
+      "translation": "Právě probíhá promítání, přijďte později.",
+      "sourceSHA256": "f4bf4d079318f6046ba106ed0ddc05ba3b4776ed3be4cd3ed90ffc4da4f63fb0",
+      "translationSHA256": "a46dacea8558934e9508d4d09f370e9412591a3cad52e6971f4138f473d7a770",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_AlreadySeen",
+      "field": null,
+      "source": "You've already seen a movie this week.",
+      "translation": "Tento týden už máte jednu návštěvu kina za sebou.",
+      "sourceSHA256": "29d6df819d45811f93a741e18823c3f6e7f8710333837c4a033807fdc28a15ca",
+      "translationSHA256": "18b05b1b18bed7a3a6f352c3bbd9a2121cb3cd294565af3b8e385afba80d58e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_WatchAlonePrompt",
+      "field": null,
+      "source": "Would you like to spend your movie ticket to see a movie by yourself?",
+      "translation": "Chcete využít svou vstupenku a podívat se na film bez doprovodu?",
+      "sourceSHA256": "c2ef795ffb3f3e0d13f8e1bb850eda79a876dd864ce4eeaaf1862a0e4f03cb5a",
+      "translationSHA256": "4dfe44055d95df05a95f7f027ef282dd9cc454bdc7bde4a97313095d1bd9d44b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_WatchWithFriendPrompt",
+      "field": null,
+      "source": "Would you like to spend your movie ticket to see a movie with {0}?",
+      "translation": "Chcete využít svou vstupenku na film, na který s vámi půjde {0}?",
+      "sourceSHA256": "146dd20e2213f565290c4165faff761de932bf185fda47b689363c8559257cf5",
+      "translationSHA256": "5714a7a2c8469769029cbc571d3744310d0e9a1bd42765f0225906a51b915757",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LeavePrompt",
+      "field": null,
+      "source": "Are you sure you want to leave the theater without seeing the movie?",
+      "translation": "Opravdu chcete odejít z kina, aniž byste viděli film?",
+      "sourceSHA256": "149d643c1df28cd3705d5041efa277d5706364aa6062be15a6f0760f12f982b5",
+      "translationSHA256": "df531a78a4921cc705526213a5cbeb0edb4e94d8e54788f76b7ab7e10132e9ad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ClosedFestival",
+      "field": null,
+      "source": "The movie theater is closed for the festival.",
+      "translation": "Kvůli slavnosti je kino zavřené.",
+      "sourceSHA256": "66faf211444749a6b9babef23b4f637d1caa447277ab0edfc4a490fb5117ae35",
+      "translationSHA256": "73894f90cdfc1baec336fa9f793841c3b7ed7371cd20517c32c02b5eb11dbce6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_Closed",
+      "field": null,
+      "source": "The movie theater is closed.",
+      "translation": "Kino je zavřené.",
+      "sourceSHA256": "159bcb4b5c896d1f494034223c91e1496d8f98456063f6ec2cb31a10c9c4fe0d",
+      "translationSHA256": "e8a513a6463ac64a7820a5bd59d0b2ebab5676943d20f2e023357f4e152ede69",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_BoxOfficeClosed",
+      "field": null,
+      "source": "The box office is empty.",
+      "translation": "U pokladny nikdo není.",
+      "sourceSHA256": "41fd99eec551a716340f1484337fa38b3061604e535ab72533a709dae8115c57",
+      "translationSHA256": "e876ba0544550be5d6350be86a220fa43fcc44f5cf3ad5399a4837bc1fe6a65c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_Concession",
+      "field": null,
+      "source": "Welcome to the concessions stand! Would you like to order a snack for your guest?",
+      "translation": "Vítejte u stánku s občerstvením! Chcete pro svůj doprovod něco objednat?",
+      "sourceSHA256": "8e69ca1c4780ef24b1e3b47e357a07062c01fb18b40c3f4e8c16428237611759",
+      "translationSHA256": "805a74266ae72dedd0f30de4c5813df1d370afe0fab84967db418d099509a92e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ConcessionAlone",
+      "field": null,
+      "source": "Oh, it looks like you're here by yourself. If you come here with a guest, you can order them a snack. Try it out some time!",
+      "translation": "Aha, zdá se, že jste tu bez doprovodu. Když sem někoho pozvete, můžete mu objednat občerstvení. Někdy to zkuste!",
+      "sourceSHA256": "8ff3e77dc2ad035da55bb85575a59e204a7cc610a838f4ec24e1b43e280914ae",
+      "translationSHA256": "579b204a7fe7a695c8638e3e9548c38baa36c6b9ad2fdacb5340e34acc46e587",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ConcessionPurchased",
+      "field": null,
+      "source": "You wanted the {0}, right? We'll deliver it to {1}'s seat once the movie starts!",
+      "translation": "Objednávka zněla: {0}, že? Až film začne, doručíme ji k sedadlu, kde sedí {1}!",
+      "sourceSHA256": "4c904719e8dd5a48785c48354c0122de8dc19233c2b739a6852746c20633e926",
+      "translationSHA256": "14a113cd2cf51ae143f5a5a9c187c98ffe49049b32c97bd3bbd1c17cafa2bf1d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_ConcessionAfterMovie",
+      "field": null,
+      "source": "So, how was the movie?",
+      "translation": "Tak co, jaký byl film?",
+      "sourceSHA256": "6551de96bac09d67eb83d479eb66516f334ba8dc6fb22a9ad4e1222cd2517bab",
+      "translationSHA256": "58efaf359c4d7dc5eb4eb4279957ba8a2bff41a857e2a4a733f4f62da185d62a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_AfterMovieAlone",
+      "field": null,
+      "source": "{0} is thinking silently about the film.",
+      "translation": "{0} v tichosti přemýšlí o filmu.",
+      "sourceSHA256": "9ee8c2362842d67d63da7c992d2758b90f6c60fc1b1e1016185fbe53fe1e1cd6",
+      "translationSHA256": "019401090a51b3dbdcb68b0c5d1b33c6baab06129b508b34ebd22444a24d6c58",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_AfterMovie",
+      "field": null,
+      "source": "{0} is engaging in lively discussion about the film.",
+      "translation": "{0} živě diskutuje o filmu.",
+      "sourceSHA256": "9a0d561c3b5f99b583b7be6b6eb3aab1343e515750c58cb8b7b3fd5473d9e31c",
+      "translationSHA256": "f0db3e8ea6ca0e859d441f5ce60379d99af86afc8748e517bc8244b58c1fe0a8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LoveMovie",
+      "field": null,
+      "source": "{0} is absolutely enthralled...!",
+      "translation": "{0} od filmu nemůže odtrhnout oči...!",
+      "sourceSHA256": "950fca3a3bb0b04c2994c20a3ded2d3e39530ae06b422758c6ab5ce2c2f7d0e2",
+      "translationSHA256": "d38fd4764555e7ac1cd8eb774fbbc95695cf629978d495703968ac69e899247c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LikeMovie",
+      "field": null,
+      "source": "{0} seems to be having a good time!",
+      "translation": "{0} se zřejmě dobře baví!",
+      "sourceSHA256": "c90c394c667146ea781e79a6a3547a34124fb90510029cb379ef84e44fc6e0c4",
+      "translationSHA256": "f838f6b95d47fc432579e73b89dcde05d2623a8f893ed6e8214ca49fa224b846",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_DislikeMovie",
+      "field": null,
+      "source": "{0} is dozing off...",
+      "translation": "{0} podřimuje...",
+      "sourceSHA256": "3fb5290628780e9575867cd5495265328e57c5bdf246624601f5ba90f5b91bcc",
+      "translationSHA256": "ff5dec1bddbe4c601f3a9ac116b86ec016ba0f07465695b3193fd46f92c56dba",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LoveConcession",
+      "field": null,
+      "source": "{0} is really enjoying their {1}!",
+      "translation": "Na občerstvení „{1}“ si {0} opravdu pochutnává!",
+      "sourceSHA256": "ab9a2404d48982c5bcdddd083d2074326a8988863e1fb467b8413db1068cbc93",
+      "translationSHA256": "e437a9ba92396de346a2a34dd037d94eee248566bd06efb1932147d616d82116",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LikeConcession",
+      "field": null,
+      "source": "{0} is enjoying their {1}.",
+      "translation": "Na občerstvení „{1}“ si {0} pochutnává.",
+      "sourceSHA256": "e2a4b9f344eab7e9cecac84a961f3de8bbd2f0d711c42288a2ae4e3c7a2df5ef",
+      "translationSHA256": "4477807a2b1d823d4c459b00a80cfcb814f6a05bb85b4f42b702363f01a18752",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_DislikeConcession",
+      "field": null,
+      "source": "{0} hasn't touched their {1} at all...",
+      "translation": "{0} se zatím občerstvení „{1}“ vůbec nedotýká...",
+      "sourceSHA256": "5b44a6d0eea48a1f7181bd9c7aafee2d3cd112246a85770ff924e2c62d6792b3",
+      "translationSHA256": "329aed7858a7ce45ff7f4fe01a45e407a5dcfd8e40a84ed5cc1ed5a50a9ce0f6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LoveConcession_Female",
+      "field": null,
+      "source": "{0} is really enjoying her {1}!",
+      "translation": "Na občerstvení „{1}“ si {0} opravdu pochutnává!",
+      "sourceSHA256": "98003a3078e6dd642325266e274c8a1132c9d14eabae60a984f6327eec6548a1",
+      "translationSHA256": "e437a9ba92396de346a2a34dd037d94eee248566bd06efb1932147d616d82116",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LikeConcession_Female",
+      "field": null,
+      "source": "{0} is enjoying her {1}.",
+      "translation": "Na občerstvení „{1}“ si {0} pochutnává.",
+      "sourceSHA256": "6624af47098d507ce4e7765a17af0d3a015f92e01c84aec162b760ee4db78a0f",
+      "translationSHA256": "4477807a2b1d823d4c459b00a80cfcb814f6a05bb85b4f42b702363f01a18752",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_DislikeConcession_Female",
+      "field": null,
+      "source": "{0} hasn't touched her {1} at all...",
+      "translation": "{0} se občerstvení „{1}“ ještě ani nedotkla...",
+      "sourceSHA256": "f4754043fd39c89ff13eb01e0a559ee193f050fa95076384bb7e317b4f143960",
+      "translationSHA256": "b3068ac2e9cd4258d475186b47ecda7d8bf5677c23d805042cc41cbcc40c9e08",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LoveConcession_Male",
+      "field": null,
+      "source": "{0} is really enjoying his {1}!",
+      "translation": "Na občerstvení „{1}“ si {0} opravdu pochutnává!",
+      "sourceSHA256": "4294ef397e4e7503496c5effd59686571b050ffe06d1cf573c9a8188fdfd0cac",
+      "translationSHA256": "e437a9ba92396de346a2a34dd037d94eee248566bd06efb1932147d616d82116",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_LikeConcession_Male",
+      "field": null,
+      "source": "{0} is enjoying his {1}.",
+      "translation": "Na občerstvení „{1}“ si {0} pochutnává.",
+      "sourceSHA256": "53333c95068d6bfa584c9e2aa0297b22003068b0149dd0276901bc68f4a00357",
+      "translationSHA256": "4477807a2b1d823d4c459b00a80cfcb814f6a05bb85b4f42b702363f01a18752",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieTheater_DislikeConcession_Male",
+      "field": null,
+      "source": "{0} hasn't touched his {1} at all...",
+      "translation": "{0} se občerstvení „{1}“ ještě ani nedotkl...",
+      "sourceSHA256": "a5542ed7d5ce91f356b1acda67c6c70424a9f4ebca91fcfe94d5f07775dad48b",
+      "translationSHA256": "2b08303cae9e815a4a52135d26c0abd1e6edf70d31ae986e21f34eb6061ceec2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Abigail",
+      "field": null,
+      "source": "A movie? Sure, sounds fun! I'll meet you at the theater.$h#$e#I hope it's an exciting one.",
+      "translation": "Kino? Jasně, to zní skvěle! Sejdeme se tam.$h#$e#Snad to bude napínavé.",
+      "sourceSHA256": "cddf76c358755de3c6faaee5d31ffdb1684df8d169f6b723c0e11b2f6399aa5a",
+      "translationSHA256": "1e57753e22b0ed18904904c8d1419a82684b7cf10691ea185e1faba1730b0c8c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Penny",
+      "field": null,
+      "source": "A movie ticket? Yes, I'd love to go with you! I'll meet you at the theater, honey.$h",
+      "translation": "Vstupenka do kina? Ano, moc ráda půjdu s tebou! Sejdeme se tam, zlato.$h",
+      "sourceSHA256": "387e02cf5bf767723cb73908c7141844cb51c4721e69530e08d1d6af2e256c32",
+      "translationSHA256": "7dd186ffbbe64bcd86f3a34092d0f6a3a3f8cb678bf6872f42f55f9eccc037f5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Haley",
+      "field": null,
+      "source": "Oooh... date night, huh? Let me just freshen up a little and I'll meet you at the theater.$h",
+      "translation": "Jéé... večerní rande, co? Jen se trochu upravím a sejdeme se v kině.$h",
+      "sourceSHA256": "09e3d40a0359ccaafce52e9a231344903732b41b80b3d009d9f9bdab671c56da",
+      "translationSHA256": "347ec02b2a4d87d090cd1e44ea0e1e86055311a5c524bbb3b2e94325dae6afc0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Emily",
+      "field": null,
+      "source": "A movie ticket! You know, I was thinking about the movies all day. You must've read my mind! $h#$e#I'll meet you at the theater.",
+      "translation": "Vstupenka do kina! Víš, celý den jsem na kino myslela. Snad mi čteš myšlenky! $h#$e#Sejdeme se tam.",
+      "sourceSHA256": "175a317f3467c04019da2ab297dc50a937bebbd579a0e9325e9941d5869bd2da",
+      "translationSHA256": "9f8f607ed5f3066ab43daa04da9d4a04224168d3c1a839c06b45affc5fceacbf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Leah",
+      "field": null,
+      "source": "Oh, a movie? Sure, sounds fun.... It'll be like we're dating again, hehe.$h#$e#I'll meet you at the theater.",
+      "translation": "Jé, kino? Jasně, to zní skvěle.... Bude to, jako bychom zase randili, hehe.$h#$e#Sejdeme se tam.",
+      "sourceSHA256": "5eda9c53a990242675bb4b510c87ba7d1915fc742f5d8e789ca0df4b3e1081e9",
+      "translationSHA256": "6edbe0bf6399dbf5ac604aded94bf78c44d137c06d0505e6a067130a366b16e2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Maru",
+      "field": null,
+      "source": "Oh! You planned a date night for us? $h#$b#I'd love to go! I'll see you at the theater.$h",
+      "translation": "Jé! Tak ty máš pro nás naplánované večerní rande? $h#$b#Moc ráda půjdu! Uvidíme se v kině.$h",
+      "sourceSHA256": "ce9a694463b9979770d00bc9dc9d4e2580cd852dd87573c2d8bdfd04c4743814",
+      "translationSHA256": "b861ee40038b897f0c55ce32da614e1ff6df7d799590a430dce2fab4d2008b72",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Alex",
+      "field": null,
+      "source": "Hey, sounds fun! I've been wanting to see this one... and I'd rather see it with you!#$b#I'll meet you at the theater.",
+      "translation": "Hele, to zní skvěle! Na tenhle film jsem se chtěl podívat... a s tebou to bude ještě lepší!#$b#Sejdeme se v kině.",
+      "sourceSHA256": "513ef74e1d096f271fcaad81866eb9f091e51bb47d950dd6684d7164a2445856",
+      "translationSHA256": "ac3142fac733a443a05a92d9e33d373cc5a3ce671ecc12bd26ab5115e8ed2da7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Sam",
+      "field": null,
+      "source": "Nice! You got us tickets? You're the best! I'll wait for you at the theater.$h",
+      "translation": "Paráda! Máš pro nás lístky? Jsi poklad! Počkám na tebe v kině.$h",
+      "sourceSHA256": "598c9ffaaf162bf50386c89e1bd75a6beb9f25a2acfae71de85656e85216f63a",
+      "translationSHA256": "9a78c0cf75b57066f13c1c043f3d0428ea80a638b62d94aede510ae89185de45",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Sebastian",
+      "field": null,
+      "source": "Oh, you want to go to the movies? Sounds pretty good. I'll meet you there.$h",
+      "translation": "Aha, chceš jít do kina? To zní docela dobře. Sejdeme se tam.$h",
+      "sourceSHA256": "d3ac7a7a62507bad2424dbaa7ae6239a9b0eb87d3431645ca7239e11ab4ad2b0",
+      "translationSHA256": "d3979ea4fdc92d448ee19fb31c2780c27c5cc9abdc92f2b3a0ea276d602fb1e3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Shane",
+      "field": null,
+      "source": "Oh, you want to see a show, huh? Buy me a snack and it's a deal, hehe...$h#$e#I'll meet you there.",
+      "translation": "Aha, chceš se jít na něco podívat, co? Kup mi něco na zub a platí, hehe...$h#$e#Sejdeme se tam.",
+      "sourceSHA256": "c22ac47359fb56b70a9b04ec905300a9923f3c9fd065fae7e4536eaa97a13adc",
+      "translationSHA256": "16d09470bc8c515a8dc1a74413f1174f456fb61536b731df2c186410622b4800",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Elliott",
+      "field": null,
+      "source": "Yes, my dear, I'd love to see a movie with you! I'll meet you at the theater.",
+      "translation": "Ano, má lásko, moc rád s tebou půjdu na film! Sejdeme se v kině.",
+      "sourceSHA256": "3a47d9117481403522ed66d45305202ec3f5661d9c3cb557be78cf6c8ee16479",
+      "translationSHA256": "6ff90702802a94ecec6ea4c9dc3991b5c1e50e18eceb239e8ff384d66f04c929",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Characters",
+      "key": "MovieInvite_Spouse_Harvey",
+      "field": null,
+      "source": "Movie tickets? Well... yes, I'd love to go with you!$h#$e#It's good to do things like this, I don't want married life to get boring for you!",
+      "translation": "Lístky do kina? No... ano, moc rád půjdu s tebou!$h#$e#Je dobré podnikat takové věci. Nechci, aby tě život v manželství začal nudit!",
+      "sourceSHA256": "6cbb25b8c94de7bdffdd25c99f7c826d6d4c98f530530db5975b86c408bdd963",
+      "translationSHA256": "ae84462fabcd501b91044b1a296309931607698581bdee4aba4806795eb8abd6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

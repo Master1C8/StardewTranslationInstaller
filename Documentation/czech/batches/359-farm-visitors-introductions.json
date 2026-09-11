@@ -1,0 +1,105 @@
+{
+  "id": "359-farm-visitors-introductions",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read all 5 complete farm-introduction rows after the audit correction. Recast Kent’s report as někdo nastěhoval na farmu to avoid assigning masculine gender to the player. Verified Abigail, Sam, Leah and Kent speaker gender, Zuzu terminology, times, @ placeholder, dialogue markers, event commands and the silent grandfather-candles row; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "5/e 3/v Abigail/t 600 800",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Hi. Um... I just wanted to say sorry for acting so weird yesterday.#$b#You probably understand what happened...$l#$b#Uh, okay...bye.\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Ahoj. Ehm... Chtěla jsem se jen omluvit, že jsem se včera chovala tak divně.#$b#Asi chápeš, co se stalo...$l#$b#Ehm, dobře... tak zatím.\"/pause 500/end",
+      "sourceSHA256": "097d41577b7274a5bc01a9493b1649bc6dfdc6057c2f3f5e12f8d7ff89e72cf5",
+      "translationSHA256": "ebdc5a0df3ee4acf685bd4b95e71e969ffb410d773721ffeec2063afd1b267fb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "47/f Sam 2000/t 600 800/e 44",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Hi @. Guess what? My band is playing a show tonight, in Zuzu City!#$b#Meet me at the bus stop around 4:00 this afternoon to leave for the show. You better be there!\"/pause 300/end dialogue Sam \"I'm excited and a little nervous for the show tonight. I'm sure everything will turn out okay.\"",
+      "translation": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Ahoj, @. Hádej co? Moje kapela dnes večer hraje koncert ve městě Zuzu!#$b#Sejdeme se u autobusové zastávky kolem 16:00 a vyrazíme na koncert. Koukej tam být!\"/pause 300/end dialogue Sam \"Na dnešní koncert se těším a jsem trochu nervózní. Určitě všechno dobře dopadne.\"",
+      "sourceSHA256": "c846fb6401fbf84158a31123d1bc4540200de24072690f5e41238bf40deecba8",
+      "translationSHA256": "d18a5450d16511929a4c3f3107d21ae23254b6119292565567ab0df0c794736d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "2146991/y 3/H",
+      "field": null,
+      "source": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+      "translation": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+      "sourceSHA256": "3381da8494f1927f170d915c4de32f6c546e5ce821a7e3cb3e98c863d83bfe32",
+      "translationSHA256": "3381da8494f1927f170d915c4de32f6c546e5ce821a7e3cb3e98c863d83bfe32",
+      "preservationReason": "Silent broadcast event with no player-facing text; preserve the ambient music, camera, Grandpa-candles action, timing and transition commands exactly.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Hi @! Are you free this afternoon?#$b#I finally got my act together and I'm doing my art show tonight in the town square!$h#$b#Come into town between 3:00 and 5:00 pm if you want to be there!\"/pause 300/end dialogue Leah \"I'm nervous...$l\"",
+      "translation": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Ahoj, @! Máš dnes odpoledne volno?#$b#Konečně jsem se dala dohromady a dnes večer pořádám na náměstí svou výstavu!$h#$b#Jestli chceš přijít, doraz do města mezi 15:00 a 17:00!\"/pause 300/end dialogue Leah \"Jsem nervózní...$l\"",
+      "sourceSHA256": "a23b0ba7f8da9c2689abcf39b22f2a6f37f9d3ca3212d8ec1fa36bc1b4504e73",
+      "translationSHA256": "521697a89a12734b16b6a17a3c1bbc895c55b11b5930feef375e79d3546862c2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "63/y 2/t 600 1800/H",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"Um, hello there. My name's Kent. I just got back last night... from overseas. My wife told me that a new farmer had moved in while I was gone.\"/pause 500/speak Kent \"Well, I just wanted to introduce myself... I'll see you around.\"/pause 300/end",
+      "translation": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"Ehm, zdravím. Jmenuju se Kent. Vrátil jsem se teprve včera večer... ze zámoří. Manželka mi řekla, že se během mé nepřítomnosti někdo nastěhoval na farmu.\"/pause 500/speak Kent \"Tak, chtěl jsem se jen představit... Uvidíme se.\"/pause 300/end",
+      "sourceSHA256": "09d4ff5711b0448c3018a5c7e1a11540d3f3dabc332da9b8d784806c965d00ee",
+      "translationSHA256": "c45b5ead7ac0d10be4344b0705517756ec56b52049bbe7e44ec7afd49350b633",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

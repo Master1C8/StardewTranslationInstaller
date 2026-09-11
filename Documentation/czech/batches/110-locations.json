@@ -1,0 +1,28 @@
+{
+  "id": "110-locations",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read the full Birdie introduction event twice. Verified every actor, animation, viewport, movement, frame, warp, sound, temporary object, award, quest and pause command; all quotes, #$b# breaks and $s tokens; Birdie female voice and informal address; the shipwreck, pirate husband, three-year search, guarded remains, missing keepsake and old photograph.",
+  "rows": [
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSecret_Event_BirdieIntro",
+      "field": null,
+      "source": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/skippable/addTemporaryActor Birdie 32 32 17 58 3 true ???/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 1000/emote Birdie 8/pause 1000/speak Birdie \"Oh... a visitor?#$b#Come closer, child.\"/pause 400/move farmer -1 0 3/pause 300/emote Birdie 40/speak Birdie \"I haven't had a visitor in many moons...$s#$b#I almost forgot what other people looked like!\"/pause 1000/speak Birdie \"Well, I suppose now that you're here, I may as well ask you for a favor.\"/pause 500/textAboveHead Birdie \"Come...\"/pause 500/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/viewport move 1 0 2000/move Birdie 0 -1 2/move Birdie 2 0 1/move farmer 1 0 1/pause 500/speak Birdie \"Have you seen that wrecked ship on the south shore?#$b# My husband was the captain. A pirate, he was.#$b#He set sail one day, never to return. Took me three years sailing the high seas to find his remains.$s\"/emote Birdie 28/speak Birdie \"*sigh*...$s#$b#I've been here ever since, dear.$s#$b#...Guarding his bones...\"/faceDirection farmer 2 true/playSound batScreech/animate farmer false true 100 94/jump farmer/pause 1500/stopAnimation farmer/faceDirection farmer 0/faceDirection Birdie 2/speak Birdie \"My child... If I could only find a keepsake of his, it would bring me such peace.$s\"/pause 400/textAboveHead Birdie \"Wait here...\"/move Birdie -1 0 0/move Birdie 0 -1 3/warp Birdie -100 -100/playSound doorClose/faceDirection farmer 0/faceDirection Birdie 2/pause 1000/playSound Ship/pause 1000/playSound Ship/playSound crafting/pause 1000/playSound doorClose/warp Birdie 20 56/move Birdie 0 1 2/speak Birdie \"Here, take this. It's an old photograph that washed up on shore.#$b#It's all I have to offer... but somehow, I think it will help you find what I seek.\"/pause 500/unskippable/playSound coin/awardFestivalPrize memento true/pause 10/addQuest 130/pause 1700/end",
+      "translation": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/skippable/addTemporaryActor Birdie 32 32 17 58 3 true ???/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 1000/emote Birdie 8/pause 1000/speak Birdie \"Ach... návštěva?#$b#Pojď blíž, dítě.\"/pause 400/move farmer -1 0 3/pause 300/emote Birdie 40/speak Birdie \"Celé měsíce mě nikdo nenavštívil...$s#$b#Už jsem skoro zapomněla, jak vypadají ostatní lidé!\"/pause 1000/speak Birdie \"Když už jsi tady, mohla bych tě požádat o laskavost.\"/pause 500/textAboveHead Birdie \"Pojď...\"/pause 500/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/viewport move 1 0 2000/move Birdie 0 -1 2/move Birdie 2 0 1/move farmer 1 0 1/pause 500/speak Birdie \"Víš o tom vraku lodi na jižním pobřeží?#$b# Můj manžel byl jeho kapitánem. Byl to pirát.#$b#Jednoho dne vyplul a už se nevrátil. Tři roky jsem brázdila širé moře, než jsem našla jeho ostatky.$s\"/emote Birdie 28/speak Birdie \"*povzdech*...$s#$b#Od té doby jsem tady, drahoušku.$s#$b#...Střežím jeho kosti...\"/faceDirection farmer 2 true/playSound batScreech/animate farmer false true 100 94/jump farmer/pause 1500/stopAnimation farmer/faceDirection farmer 0/faceDirection Birdie 2/speak Birdie \"Dítě moje... Kdybych jen našla nějakou památku po něm, přineslo by mi to tolik klidu.$s\"/pause 400/textAboveHead Birdie \"Počkej tady...\"/move Birdie -1 0 0/move Birdie 0 -1 3/warp Birdie -100 -100/playSound doorClose/faceDirection farmer 0/faceDirection Birdie 2/pause 1000/playSound Ship/pause 1000/playSound Ship/playSound crafting/pause 1000/playSound doorClose/warp Birdie 20 56/move Birdie 0 1 2/speak Birdie \"Tady, vezmi si tohle. Je to stará fotografie, kterou moře vyplavilo na břeh.#$b#Je to všechno, co ti mohu nabídnout... ale nějak mám pocit, že ti pomůže najít to, co hledám.\"/pause 500/unskippable/playSound coin/awardFestivalPrize memento true/pause 10/addQuest 130/pause 1700/end",
+      "sourceSHA256": "d11cce0a5aa9ff1260e60616def344118b1c09322faaa984fd4f00970e2e5173",
+      "translationSHA256": "a66d5bf94cbdcec54f5cdc4e4daa089f01d1208aa87269f62c69cffa7ba97de1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

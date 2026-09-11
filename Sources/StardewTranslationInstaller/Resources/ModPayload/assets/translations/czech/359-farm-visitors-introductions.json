@@ -1,0 +1,18 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "5/e 3/v Abigail/t 600 800": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"Ahoj. Ehm... Chtěla jsem se jen omluvit, že jsem se včera chovala tak divně.#$b#Asi chápeš, co se stalo...$l#$b#Ehm, dobře... tak zatím.\"/pause 500/end",
+        "47/f Sam 2000/t 600 800/e 44": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Ahoj, @. Hádej co? Moje kapela dnes večer hraje koncert ve městě Zuzu!#$b#Sejdeme se u autobusové zastávky kolem 16:00 a vyrazíme na koncert. Koukej tam být!\"/pause 300/end dialogue Sam \"Na dnešní koncert se těším a jsem trochu nervózní. Určitě všechno dobře dopadne.\"",
+        "2146991/y 3/H": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+        "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Ahoj, @! Máš dnes odpoledne volno?#$b#Konečně jsem se dala dohromady a dnes večer pořádám na náměstí svou výstavu!$h#$b#Jestli chceš přijít, doraz do města mezi 15:00 a 17:00!\"/pause 300/end dialogue Leah \"Jsem nervózní...$l\"",
+        "63/y 2/t 600 1800/H": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/skippable/pause 1500/speak Kent \"Ehm, zdravím. Jmenuju se Kent. Vrátil jsem se teprve včera večer... ze zámoří. Manželka mi řekla, že se během mé nepřítomnosti někdo nastěhoval na farmu.\"/pause 500/speak Kent \"Tak, chtěl jsem se jen představit... Uvidíme se.\"/pause 300/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "3131209/n willyBugWadCutscene": "ocean/-2000 -2000/farmer 49 22 2/addTemporaryActor Willy 16 64 52 26 2/addCraftingRecipe Quality Bobber/skippable/specificTemporarySprite WillyWad/animate Willy false true 500 8 9 10 11/pause 1000/speak Willy \"He he... chutná jim to... Jen se podívej, jak řádí!$h\"/pause 1000/playSound slosh/pause 500/playSound slosh/pause 500/playSound slosh/pause 500/viewport 52 24 true/pause 1000/move farmer 0 2 2/textAboveHead Willy \"Hola!\"/pause 2000/speak Willy \"Zrovna jsem na tebe myslel, mladíku.^Zrovna jsem na tebe myslel, slečno.#$b#To nalezené hmyzí maso je dokonalé!#$b#He he... Když jsem říkal ‚čerstvé‘, nečekal jsem, že se bude ještě svíjet!#$b#Ale nestěžuju si! Rybám chutná... Hehehe...$h\"/emote farmer 28 true/pause 300/playSound slimeHit/pause 500/playSound slimeHit/pause 500/playSound slimeHit/pause 1000/speak Willy \"Na poděkování tě chci naučit jedno staré rybářské tajemství... Můj taťka mě to naučil na rybářské výpravě před mnoha lety.\"/pause 500/playSound reward/message \"Teď umíš vyrábět ‚Kvalitní splávek‘\"/pause 500/speak Willy \"S tímhle splávkem přilákáš kvalitnější ryby.#$b#To znamená víc peněz do kapsy, ${mladíku^slečno}$. He he...$h\"/pause 1500/pause 300/playSound fishBite/pause 500/pause 400/playSound FishHit/animate Willy false true 100 17 18/textAboveHead Willy \"Mám ji!\"/shake Willy 5000/pause 200/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/playSound slosh/pause 220/playSound slosh/pause 160/playSound slosh/pause 200/fade/viewport -1000 -1000/end"
+      }
+    }
+  ]
+}

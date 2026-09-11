@@ -1,0 +1,28 @@
+{
+  "id": "500-town-alex-sunday-reminder",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-reviewed the complete Sunday reminder event after correcting the full Saloon venue name; player-facing message meaning and all event commands remain exact.",
+  "rows": [
+    {
+      "target": "Data/Events/Town",
+      "key": "3917589/n gaveAlexMoney/O Alex/d Mon/d Tue/d Wed/d Thu/d Fri/d Sat",
+      "field": null,
+      "source": "continue/-1000 -1000/farmer 100 100 2/addWorldState saloonSportsRoom/addMailReceived saloonSportsRoom/message \"It's Sunday... I should swing by the saloon later and see what Alex has been up to!\"/end",
+      "translation": "continue/-1000 -1000/farmer 100 100 2/addWorldState saloonSportsRoom/addMailReceived saloonSportsRoom/message \"Je neděle... Později se stavím v Saloonu U Hvězdné kapky a podívám se, co má Alex za lubem!\"/end",
+      "sourceSHA256": "1277bd53e523696729b44aee5f0f8a858689f2a47e388dc9017d260057fe6bb7",
+      "translationSHA256": "41d9696e81604a1675b004519737cb9b576f0a3b9c244528284710d2a618eeb9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "id": "602-mail-events-quests-and-festivals-e",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full package was previously read entry by entry; unchanged rows remain identical. Rechecked all affected currency contexts after consistently separating and grouping Czech g amounts; source keys and control-token structure still match.",
+  "rows": [
+    {
+      "target": "Data/mail",
+      "key": "EmilyClothingTherapy",
+      "field": null,
+      "source": "@,^I have this crazy new idea that I want to involve you in... It's called \"Clothing Therapy\".^^Please come to the Mayor's house today to see what it's all about.^^ Love, Emily[#]Emily's Idea",
+      "translation": "@,^mám bláznivý nový nápad a chci tě do něj zapojit... Říkám mu „Oděvní terapie“.^^Přijď dnes prosím do Starostova sídla a uvidíš, o co jde.^^ S láskou, Emily[#]Emilyin nápad",
+      "sourceSHA256": "85429a8da4f09ab06f1f159141a6d84cf7755ff91af4de700c719a3961f6671d",
+      "translationSHA256": "41b6d51708ffe6a936e6bace5ecb51ff79b1a90cc16d9f5ecc38b2eaa4ff6259",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "EmilyCamping",
+      "field": null,
+      "source": "@,^Let's go camping! ^^ Meet me in the secret woods after 10pm.^^ Love, Emily[#]Emily's Invitation",
+      "translation": "@,^pojďme tábořit! ^^ Sejdeme se po desáté večer v Tajném lese.^^ S láskou, Emily[#]Emilyina pozvánka",
+      "sourceSHA256": "838c34bf2117b30ce443c9aa814e95adb635c51d65b08357a9a5b6eaef444e30",
+      "translationSHA256": "c53fa8d824764df87c9ab1df3a7f0603c95214ed8a7c8ea3ca657e59e72f9012",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "EmilyDoneCamping",
+      "field": null,
+      "source": "Thanks for joining me last night... I had a great time.^I'm actually glad that bear showed up!^^See you soon^^  Love, Emily[#]Emily's Note",
+      "translation": "Děkuju za včerejší společnost... Moc jsem si to užila.^Vlastně jsem ráda, že se tam objevil ten medvěd!^^Brzy na viděnou^^  S láskou, Emily[#]Vzkaz od Emily",
+      "sourceSHA256": "5d37aa7c989fae70f98c1c381101aecdea31f67c109e002f2b1807d7a4b10d15",
+      "translationSHA256": "c55f3d637b6c7f824039fbc4d8a24757020a1c72f426973e8b87347ee6555d2b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "foundLostTools",
+      "field": null,
+      "source": "Dear @,^Someone dropped your tools into the lost and found bin last night.^^Stop by the mayor's office to pick them up. ^^  -Mayor Lewis[#]Lost Tools",
+      "translation": "Ahoj, @,^někdo včera v noci vhodil tvé nástroje do schránky Ztráty a nálezy.^^Vyzvedni si je ve starostově kanceláři. ^^  -Starosta Lewis[#]Ztracené nástroje",
+      "sourceSHA256": "e516d246f51ff7785c1d6a5d90b3454d72df5621195b5b21f133fca3a30bae75",
+      "translationSHA256": "1bcdf254c5dd36f655328360435cdbaccfad9e04bbbcdeffbd2da6d7d993367d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fishing2",
+      "field": null,
+      "source": "I've got some new items in stock...^A deluxe fishing pole and some bait that you can attach to it!^You can use bait to make fish bite faster. Hope to see you soon! ^   -Willy[#]Willy's New Items",
+      "translation": "Mám na skladě pár novinek...^Luxusní rybářský prut a návnadu, kterou na něj můžeš připevnit!^S návnadou ryby zaberou rychleji. Brzy na viděnou! ^   -Willy[#]Willyho nové zboží",
+      "sourceSHA256": "2ce959b6804ae21f96afb25a7eb93f0eb751316feadf3973a139977c46e87d6d",
+      "translationSHA256": "ff5437071459b6218dec8b618d94d648508902054c161a76e9da743c52bce81f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fishing6",
+      "field": null,
+      "source": "Come by the shop and check out the new rods I'm selling.^They're the best money can buy... and you can customize them with different kinds of tackle!^Hope to see you soon! ^   -Willy[#]Willy's New Items #2",
+      "translation": "Zastav se v obchodě a prohlédni si nové pruty, které prodávám.^Jsou to ty nejlepší, jaké se dají za peníze koupit... a můžeš na ně nasadit různé druhy rybářského náčiní!^Brzy na viděnou! ^   -Willy[#]Willyho nové zboží #2",
+      "sourceSHA256": "1e397c3b67309e7160debc6ea80464652db2b92da4c743794f80db0fcd676e9d",
+      "translationSHA256": "075f580c69dce49e8b6ef7ae07ad413c5a6810b6c563fb22479728a02f2ea4e3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "wizardJunimoNote",
+      "field": null,
+      "source": "My sources tell me you've been poking around inside the old community center.^Why don't you pay me a visit?^My chambers are west of the forest lake, in the stone tower. I may have information concerning your... 'rat problem'.^   -M. Rasmodius, Wizard %item quest 1 true %%[#]Wizard's Summons",
+      "translation": "Mé zdroje mi sdělily, že se potuluješ ve starém Komunitním centru.^Co takhle mě navštívit?^Mé komnaty najdeš západně od lesního jezera, v kamenné věži. Možná mám informace o tvém... „problému s krysami“.^   -M. Rasmodius, čaroděj %item quest 1 true %%[#]Čarodějovo předvolání",
+      "sourceSHA256": "6abc9ba1c189567697182fa8ddd2edcd54d905011c1095fd06fbc4abff3c0122",
+      "translationSHA256": "0cfa4f97c16f03037541f1ac198b279bac6096f529602965d31b4f11227cec08",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "winter_18",
+      "field": null,
+      "source": "Dear @,^I would like to give you some information about an upcoming event: the Feast of the Winter Star. It's a time for the community to come together and think back on all the good fortune we've had this year.^A favorite tradition is the \"secret gift exchange\", where everyone in town is randomly assigned to someone else. On the day of the festival, everyone brings a gift for their secret friend and surprises them with something special!^This year, your secret friend is:^    %secretsanta ^Don't tell anyone! The feast will take place on the 25th from 9AM to 2PM at the town square. See you then! ^   -Mayor Lewis[#]Secret Gift-Giver",
+      "translation": "Ahoj, @,^rád bych ti sdělil informace o blížící se události: Slavnosti Zimní hvězdy. Tehdy se celá komunita schází a vzpomíná na všechno štěstí, které nás letos potkalo.^Oblíbenou tradicí je „tajná výměna dárků“, při níž je každému ve městě náhodně přidělena jiná osoba. V den slavnosti každý přinese dárek pro svou tajně přidělenou osobu a překvapí ji něčím výjimečným!^Letos máš obdarovat tuto osobu:^    %secretsanta ^Nikomu to neříkej! Slavnost se koná 25. dne od 9:00 do 14:00 na náměstí. Tak na viděnou! ^   -Starosta Lewis[#]Tajné obdarování",
+      "sourceSHA256": "bc021e82f18ace9fde7ca17d766f5c64a28c6faa8089c3556912da0563e7394a",
+      "translationSHA256": "e17a589a6561043b0f7303cfb25f008f078a92344d3a4bad0840481a50ac051d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "ccBulletinThankYou",
+      "field": null,
+      "source": "Dear @,^Everyone around town has been talking about your great generosity lately!^Apparently, packages have been appearing in people's houses containing items they posted about years ago on the community center bulletin! And the packages are all addressed from your farm!^Thanks for going out of your way to do something like that... all of us in town are delighted! ^   -Mayor Lewis[#]Bulletin Board Thank-you",
+      "translation": "Ahoj, @,^všichni ve městě v poslední době mluví o tvé ohromné štědrosti!^V domech lidí se prý objevují balíčky s věcmi, o které před lety žádali na nástěnce v Komunitním centru! A všechny balíčky jsou odeslané z tvé farmy!^Děkuju, že ti stálo za to něco takového udělat... celé město má obrovskou radost! ^   -Starosta Lewis[#]Poděkování za splnění nástěnky",
+      "sourceSHA256": "7f0035ee78242c3a4ee2bb0d8ba43005a8371540fd1ce6650c0c025e85ee3111",
+      "translationSHA256": "6b461879ffb6fec2acef8775de92eafd2a8674c188278187fc46550d28ea9afd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "guildQuest",
+      "field": null,
+      "source": "I see you've been exploring the old mine. You've got the adventurer's spirit, that much I can tell.^If you can slay 10 slimes, you'll have earned your place in my adventurer's guild. ^Be careful.    -Marlon %item quest 15 true %%[#]Quest To Slay Slimes",
+      "translation": "Vidím, že prozkoumáváš staré Doly. Dobrodružného ducha ti upřít nemůžu.^Když porazíš 10 slizů, vysloužíš si místo v mém Cechu dobrodruhů. ^Dávej pozor.    -Marlon %item quest 15 true %%[#]Úkol: porazit slizy",
+      "sourceSHA256": "fcf8fabe0e3b02fa708c291a9e4d10b2f0b54991aa7b26ae0d68adebf963279f",
+      "translationSHA256": "d46851ecd4b29b730eb5213cfe15590df92756de6f78faed1215f4e39b351ec3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "skullCave",
+      "field": null,
+      "source": "I see you've entered the Skull Cavern. Well done.^I've got a better challenge for you, kid. Make it at least 25 levels deep. I've got a mountain of $ to send if you can do it.^  Your friend, Mr. Qi %item quest 20 %%[#]Qi's Challenge",
+      "translation": "Vidím, že se ti podařilo vstoupit do Lebeční jeskyně. Výborně.^Mám pro tebe těžší výzvu, děcko. Sestup alespoň do 25. podlaží. Když to zvládneš, pošlu ti horu $.^  Tvůj přítel, pan Qi %item quest 20 %%[#]Qiho výzva",
+      "sourceSHA256": "32952eee81f09d4653c01e5fbf0c885babb3a741e044f7ed23b5e3195f802ceb",
+      "translationSHA256": "daee4560a9f79b5d9cf35cfa55234726f7ae30100a9c22e56c321c3ca84c129a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "robinWell",
+      "field": null,
+      "source": "Robin here!^I know there's a lot of stone scattered around your farm.^If you have a surplus, you might consider having me build a well for you.^Wells can be placed all over your farm, and serve as convenient places to refill your watering can.^^Just swing by my shop with 75 stones and 1000g when you're ready for it.^-Robin[#]Build A Well",
+      "translation": "Tady Robin!^Vím, že je po tvé farmě rozeseto hodně kamení.^Jestli ho máš nadbytek, můžeš mě požádat, abych ti postavila studnu.^Studny lze rozmístit po celé farmě a pohodlně si u nich doplníš Konev.^^Až budeš mít zájem, stačí se zastavit v mém obchodě se 75 kameny a 1 000 g.^-Robin[#]Postav si studnu",
+      "sourceSHA256": "e53384b00218317479e3f789d3155d4319de5f6a13040ae763b3d1f5cedb1048",
+      "translationSHA256": "de4607822f4b6f6087a2c3bcd0b7b349f44ae29ca6d2a7368dd409e9ff530c27",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "landslideDone",
+      "field": null,
+      "source": "To our valued JojaMart customers:^Our team members have removed the landslide caused by our drilling operation near the mountain lake. I'd like to remind you that our drilling operation is entirely legal (pursuant to init. L61091, JojaCo Amendment). Responsible stewardship of the local environment is our top priority! ^^We apologize for any inconvenience this accident may have caused.^As always, we value your continued support and patronage!^^-Morris,^Joja Customer Satisfaction Representative[#]Joja Removed Landslide",
+      "translation": "Vážení zákazníci JojaMartu:^naši pracovníci odstranili sesuv půdy způsobený vrtnými pracemi u horského jezera. Dovoluji si připomenout, že naše vrtné práce jsou zcela legální (v souladu s ust. L61091 dodatku společnosti Joja). Odpovědná péče o místní životní prostředí je naší nejvyšší prioritou! ^^Omlouváme se za případné nepříjemnosti způsobené touto nehodou.^Jako vždy si velice vážíme vaší trvalé podpory a přízně!^^-Morris,^zástupce péče o zákazníky společnosti Joja[#]Joja odstranila sesuv půdy",
+      "sourceSHA256": "25685ef29ed6b86c6fecfe6825901e9d2ee7ac3b18f501b73bb25210977cd7d2",
+      "translationSHA256": "076aa87bacfded7f2167c80478d1c9ba305019221bc957a0873b0619e1e92133",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "QiChallengeComplete",
+      "field": null,
+      "source": "You did it.^ I'm very impressed.^ Enjoy your reward.^   -Qi. %item money 10000 %%[#]Qi Challenge Complete",
+      "translation": "Máš to za sebou.^ Udělalo to na mě velký dojem.^ Užij si odměnu.^   -Qi. %item money 10000 %%[#]Qiho výzva splněna",
+      "sourceSHA256": "e7063bc2eb7e833bae47c90ccea0e21fb96745e649ca304edce9f114c6caa2d4",
+      "translationSHA256": "6d674d458d424a41e56de845fb33b6bb38dfcd1df717560e014de59e755781fd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_2_1",
+      "field": null,
+      "source": "Hello there,^Just got back from a fishing trip. You should come down to the beach some time.^I've got something for ya.^-Willy %item quest 13 true %%[#]Willy's Invitation",
+      "translation": "Ahoj,^právě jsem se vrátil z rybolovu. Někdy se zastav na pláži.^Něco pro tebe mám.^-Willy %item quest 13 true %%[#]Willyho pozvánka",
+      "sourceSHA256": "3abb24490b0d8f7014bbf7cbbd209bcb772d8df74e0f75161cc488c840a0320b",
+      "translationSHA256": "ae1f0bded633a25d9e1b687c5cf33012d988fc35bbd9830dda17009365bdd321",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_12",
+      "field": null,
+      "source": "Dear @,^Tomorrow we're holding the Egg Festival in the town square. ^^You should arrive between 9 AM and 2 PM if you'd like to attend.^You wouldn't want to miss the annual egg hunt!^  -Mayor Lewis[#]Egg Festival Notice",
+      "translation": "Ahoj, @,^zítra pořádáme na náměstí Slavnost vajec. ^^Pokud se chceš zúčastnit, přijď mezi 9:00 a 14:00.^Každoroční hledání vajec si přece nechceš nechat ujít!^  -Starosta Lewis[#]Oznámení o Slavnosti vajec",
+      "sourceSHA256": "2687c1d0745b25158d4a0f81a198a717ab629be7c95634f4936c864780bdaf90",
+      "translationSHA256": "61c99d5258c9947f0e739f71cd6c7e9b3fd41de6998e01146933f299663ddfbb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_15_1",
+      "field": null,
+      "source": "Hello, dear...^^I know you're just getting started as a gardener, so I wanted to give you a little tip.^^Most crops only grow in one season. When summer arrives, your spring crops will all die out. So plan ahead!^^-Granny Evelyn[#]Evelyn's Tip",
+      "translation": "Ahoj, drahoušku...^^Vím, že se zahradničením teprve začínáš, a tak pro tebe mám malou radu.^^Většina plodin roste jen během jednoho ročního období. Až přijde léto, všechny jarní plodiny odumřou. Takže plánuj dopředu!^^-Babička Evelyn[#]Evelynina rada",
+      "sourceSHA256": "de995acb1d2f10019ea832c982fdd3a2ca180bf166107a1cfdb4a47c1f1e0b2d",
+      "translationSHA256": "ba44f20de5be39deca0f5a864f16d78096674b9691ff875d61d4a015064d7be0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "spring_23",
+      "field": null,
+      "source": "Dear @,^Tomorrow we're all getting together for the Flower Dance.^^If you can find a partner, you might even want to participate in the dance yourself!^There's a little clearing beyond the forest west of town where we hold the dance. Arrive between 9 AM and 2 PM if you're interested.^  -Mayor Lewis[#]Flower Dance Notice",
+      "translation": "Ahoj, @,^zítra se všichni sejdeme na Květinovém tanci.^^Když si najdeš taneční protějšek, můžeš se do tance dokonce zapojit!^Tančíme na malé mýtině za lesem západně od města. Pokud máš zájem, přijď mezi 9:00 a 14:00.^  -Starosta Lewis[#]Oznámení o Květinovém tanci",
+      "sourceSHA256": "cd51f3d3c1ac0e0eaafeec1b9a8f8a16b45e5a4c25cbd7dd6123ce4208d7f69d",
+      "translationSHA256": "a31e47d36149ac700903cc39237c6c6b599e6777be198d0126bdfa7b8133fb53",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_10",
+      "field": null,
+      "source": "Dear @,^Tomorrow we're all gathering at the beach for the annual Pelican Town Luau.^^The highlight of the event is the communal potluck. Make sure you bring something good to contribute!^The governor himself is attending the event, so make sure you're on your best behavior.^Come to the beach sometime between 9 AM and 2 PM.^   -Mayor Lewis[#]Luau Notice",
+      "translation": "Ahoj, @,^zítra se všichni sejdeme na pláži na každoročním pelikanovském Luau.^^Vrcholem události je společná polévka. Nezapomeň přinést něco dobrého, čím přispěješ!^Události se zúčastní samotný guvernér, tak se chovej co nejlépe.^Přijď na pláž mezi 9:00 a 14:00.^   -Starosta Lewis[#]Oznámení o Luau",
+      "sourceSHA256": "f0c4d4e57c2719f5b56c49731228b829f6b6e3a9b5a95c89b9b503d97c890c21",
+      "translationSHA256": "b9fd9b2eb59949202c988dd00ffe3f57c7ce901361175e53b4ccca4c06310620",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "summer_28",
+      "field": null,
+      "source": "Dear @,^Tonight at around 10 o'clock PM, a rare and beautiful event will take place.^^The moonlight jellies will be passing by Pelican Town on their long journey south for the winter.^^We're all gathering at the beach to watch. You don't want to miss this!^See you tonight,^ -Demetrius[#]Dance Of The Moonlight Jellies",
+      "translation": "Ahoj, @,^dnes kolem desáté večer nastane vzácná a nádherná událost.^^Měsíční medúzy budou na své dlouhé zimní cestě na jih proplouvat kolem Pelikánova.^^Všichni se sejdeme na pláži a budeme je pozorovat. Tohle si nenech ujít!^Večer na viděnou,^ -Demetrius[#]Tanec měsíčních medúz",
+      "sourceSHA256": "5f27ff62e331ef0015f4933900a398bb90a0c39302b7d0a6c9c0ee8418116910",
+      "translationSHA256": "cbafe35f901199ae4bb801403556c4e03879953684c3f7fefe86a6e10d93d829",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

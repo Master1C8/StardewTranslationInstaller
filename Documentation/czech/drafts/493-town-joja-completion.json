@@ -1,0 +1,10 @@
+{
+  "id": "493-town-joja-completion",
+  "locale": "cs",
+  "kind": "long",
+  "target": "Data/Events/Town",
+  "complexityReason": "A Joja completion ceremony requires an exact farmer gender branch, Morris’s corporate jargon and theatrical voice, canonical Pelikánov and Joja terminology, dialogue markers, and event commands.",
+  "entries": {
+    "502261/J/w sunny/H": "sweet/-1000 -1000/farmer 53 34 0/broadcastEvent/addTemporaryActor Morris 16 32 -100 -100 2 true/pause 500/speak Morris \"Tady ho máme, vážení! Do pozoru!^Tady ji máme, vážení! Do pozoru!\"/specificTemporarySprite jojaCeremony/viewport 53 14 true/viewport move 0 1 8000/pause 9000/move farmer 0 -10 0/pause 4000/speak Morris \"*odkašle si*...\"/pause 500/speak Morris \"Ještě před několika málo lety přišli velcí inovátoři v ústředí Joja s novou myšlenkou: Projekt komunitního rozvoje Joja.#$b#Projekt vznikl jako způsob, jak poskytovat důležité stavební služby milovaným obcím, které jsou našemu srdci tak drahé...*popotáhne*... a přitom vytvářet značné příjmy!#$b#Pelikánov se svou chátrající infrastrukturou byl dokonalým testovacím prostředím.\"/pause 500/speak Morris \"Díky tobě měl náš Pilotní program komunitního rozvoje velký úspěch!#$b#Od oprav starých mostů přes opravu autobusů až po proměnu hromad suti ve skleník jsme tohle město opravdu postavili na nohy!#$b#Také jsem dostal velké povýšení! Hehehe.\"/pause 1000/speak Morris \"Prezident společnosti mě požádal, abych ti jako poděkování předal tento exkluzivní dar.\"/playMusic none/pause 1000/awardFestivalPrize joja/null/itemAboveHead joja/null/pause 1000/globalFade/viewport -1000 -1000/end Position 52 27/end"
+  }
+}

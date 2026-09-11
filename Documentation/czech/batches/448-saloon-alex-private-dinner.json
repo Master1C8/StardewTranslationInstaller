@@ -1,0 +1,28 @@
+{
+  "id": "448-saloon-alex-private-dinner",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all thirteen visible segments against English; verified the complete paired player-gender menu and confession branches, both response choices, Alex's vulnerable voice, kadeřávek and dinner details, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Saloon",
+      "key": "911526/f Alex 2500/t 1900 2200/n joshMessage",
+      "field": null,
+      "source": "gusviolin/-1000 -1000/farmer 5 5 1 Gus 10 6 2 Alex 9 5 3 Emily 9 17 2/skippable/showFrame 117/showFrame Alex 39/positionOffset farmer 12 8/positionOffset Alex -12 0/animate Gus false true 723 16 17/viewport 7 4 true/pause 23000/stopAnimation Gus/pause 1000/faceDirection Gus 3/speak Alex \"Thanks, Gus. That was great.\"/move Gus 0 1 1/move Gus 1 0 2/move Gus 0 1 2/doAction 11 9/move Gus 0 3 1/move Gus 12 0 3 true/speak Alex \"This is nice... I've never dined in here before.\"/pause 1000/emote Alex 40/speak Alex \"Um, anyway... I reserved this private room so we could talk...$l\"/warp Emily 11 11 true/playSound woodyStep/move Emily 0 -4 3/move Emily -4 0 0/move Emily 0 -1 0/speak Emily \"I've got a linguini with mushroom cream sauce for Mr. @.^I've got a kale and walnut salad for the lady.#$b#...and a grilled steak for Alex.^And a grilled steak for the gentleman.\"/playSound woodyHit/specificTemporarySprite joshDinner/speak Alex \"Thanks.\"/move Emily 4 0 2/move Emily 0 5 1/move Emily 11 0 1 true/speak Alex \"So, what I wanted to say was...$9\"/playMusic musicboxsong/speak Alex \"*gulp*$s\"/pause 600/speak Alex \"Well... when we first met, I was instantly drawn to you. It was confusing... I'd never felt that way about anyone.$l^When I first met you, I thought you were really cute.$l#$b#I kept telling myself 'You can't have these kinds of feelings for another guy'.$l^Normally, when I have a crush on someone, the feeling goes away pretty quick...$l\"/pause 800/speak Alex \"...But my heart was telling me something else.^...But with you, it kept growing.$l\"/pause 400/emote Alex 40/pause 600/question fork1 \"#I feel the same way.#I'm sorry... I don't feel that way about you.\"/pause 400/fork rejectJosh/speak Alex \"...$l#$b#I can't believe it took this long to say that to each other.$l\"/emote Alex 32/pause 800/animate Alex false false 400 40 41 41 40 41 41 40 41 41 40 41 41 40/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound gulp/pause 400/speak Alex \"Mmm... this steak is outstanding. Can you smell that fragrant sauce?$10\"/eyes 1 -4000/animate Alex false false 400 40 41 41 40 41 41 40/pause 1000/specificTemporarySprite alexDiningDog/playSound dogWhining/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Alex \"...$l\"",
+      "translation": "gusviolin/-1000 -1000/farmer 5 5 1 Gus 10 6 2 Alex 9 5 3 Emily 9 17 2/skippable/showFrame 117/showFrame Alex 39/positionOffset farmer 12 8/positionOffset Alex -12 0/animate Gus false true 723 16 17/viewport 7 4 true/pause 23000/stopAnimation Gus/pause 1000/faceDirection Gus 3/speak Alex \"Díky, Gusi. Bylo to skvělé.\"/move Gus 0 1 1/move Gus 1 0 2/move Gus 0 1 2/doAction 11 9/move Gus 0 3 1/move Gus 12 0 3 true/speak Alex \"Je to tu hezké... Nikdy předtím jsem se tu nenavečeřel.\"/pause 1000/emote Alex 40/speak Alex \"Ehm, každopádně... zamluvil jsem tenhle soukromý salonek, abychom si mohli promluvit...$l\"/warp Emily 11 11 true/playSound woodyStep/move Emily 0 -4 3/move Emily -4 0 0/move Emily 0 -1 0/speak Emily \"Pro pana @ mám linguine se smetanovou houbovou omáčkou.^Pro dámu mám salát z kadeřávku a vlašských ořechů.#$b#...a grilovaný steak pro Alexe.^A grilovaný steak pro pána.\"/playSound woodyHit/specificTemporarySprite joshDinner/speak Alex \"Díky.\"/move Emily 4 0 2/move Emily 0 5 1/move Emily 11 0 1 true/speak Alex \"Chtěl jsem říct...$9\"/playMusic musicboxsong/speak Alex \"*polkne*$s\"/pause 600/speak Alex \"No... když jsme se poprvé potkali, hned mě to k tobě táhlo. Bylo to matoucí... Nikdy předtím jsem k nikomu nic takového necítil.$l^Když jsme se poprvé potkali, připadala jsi mi opravdu roztomilá.$l#$b#Pořád jsem si říkal: ‚K jinému klukovi přece nemůžeš něco takového cítit.‘$l^Když se mi někdo líbí, ten pocit obvykle docela rychle přejde...$l\"/pause 800/speak Alex \"...Ale srdce mi říkalo něco jiného.^...Ale u tebe ten cit stále sílil.$l\"/pause 400/emote Alex 40/pause 600/question fork1 \"#Cítím to stejně.#Promiň... necítím to k tobě stejně.\"/pause 400/fork rejectJosh/speak Alex \"...$l#$b#Nemůžu uvěřit, že nám tak dlouho trvalo říct si to.$l\"/emote Alex 32/pause 800/animate Alex false false 400 40 41 41 40 41 41 40 41 41 40 41 41 40/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound gulp/pause 400/speak Alex \"Mmm... ten steak je vynikající. Cítíš tu voňavou omáčku?$10\"/eyes 1 -4000/animate Alex false false 400 40 41 41 40 41 41 40/pause 1000/specificTemporarySprite alexDiningDog/playSound dogWhining/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Alex \"...$l\"",
+      "sourceSHA256": "e5066cd112b2ca16303131732e79be05f17824b39a76e6c760fb45ebef009534",
+      "translationSHA256": "db5b9a54f04f8fab428debc0c62b6bb4665e70711dab5d9c8ff941aebabc328f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

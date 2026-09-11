@@ -1,0 +1,161 @@
+{
+  "id": "471-sebastian-room-solarion-finale",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all eight combat and ending branches against English; verified Pán děsu Xarth and Solarionova hůl continuity, Očistný výboj/Očistný paprsek/Ochranné zaklínadlo/Stínový výboj spell terms, player-neutral narration and options, Sam and Sebastian reactions, repeated outcomes, markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "Necromancer",
+      "field": null,
+      "source": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"Xarth: Intruders? How dare you trespass in my private chambers!\"/pause 800/message \"Ah, so you've come for the Solarion Staff...\"/pause 800/message \"Hehehe... fools. You'll make a nice addition to my skeleton army!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"Dreadlord Xarth casts shadow beam!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"You were able to dodge the spell, but your companions are gravely injured!\"/pause 500/question fork0 \"What do you do?#Heal the Warrior (Sam).#Heal the Wizard (Sebastian).\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"Thanks, @.$7\"/speak Sam \"...$s\"/pause 1000/playMusic none/message \"Sebastian casts 'Pure Bolt'... A beam of white light hits Xarth square in the face. The Dreadlord shrieks and crumbles into dust.\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"You pick up the Solarion Staff and hold it high. Order has been restored to the world.\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/updateMinigame 6/resetVariable/playMusic Lava_Ambient/pause 1600/message \"Xarth: Vetřelci? Jak se opovažujete vniknout do mých soukromých komnat!\"/pause 800/message \"Á, takže jste si přišli pro Solarionovu hůl...\"/pause 800/message \"Hehehe... hlupáci. Skvěle doplníte mou armádu kostlivců!\"/pause 500/fork choseWizard finalBossWizard/fork choseWarrior finalBossWarrior/message \"Pán děsu Xarth sesílá stínový paprsek!\"/pause 500/playSound flameSpell/pause 800/playSound flameSpellHit/updateMinigame -1/pause 1000/message \"Kouzlu se vyhneš, ale tvoji společníci jsou těžce zraněni!\"/pause 500/question fork0 \"Co uděláš?#Vyléčit válečníka (Sama).#Vyléčit kouzelníka (Sebastiana).\"/pause 500/fork healedSam/playSound healSound/pause 500/speak Sebastian \"Díky, @.$7\"/speak Sam \"...$s\"/pause 1000/playMusic none/message \"Sebastian sesílá ‚Očistný výboj‘... Paprsek bílého světla zasáhne Xartha přímo do obličeje. Pán děsu zaječí a rozpadne se v prach.\"/playSound debuffSpell/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Zvedneš Solarionovu hůl vysoko nad hlavu. Ve světě byl obnoven řád.\"/addMailReceived savedFriends/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "sourceSHA256": "90a6b900c60aeb0fa7af82625341b05113544dcc0815084a86c5ad5dfd3aa616",
+      "translationSHA256": "ec037481596afaf9dc72a6e7c13016b368b777a9e807ae28a4a3166553d85f09",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "healedSam",
+      "field": null,
+      "source": "playSound healSound/pause 500/speak Sam \"Thanks, @.\"/speak Sebastian \"...$s\"/pause 1000/playMusic none/message \"Sam charges ahead and strikes down Xarth, freeing the Solarion Staff from his clutches and restoring peace and order to the world.\"/pause 500/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "playSound healSound/pause 500/speak Sam \"Díky, @.\"/speak Sebastian \"...$s\"/pause 1000/playMusic none/message \"Sam vyrazí vpřed a skolí Xartha, vyrve Solarionovu hůl z jeho spárů a obnoví ve světě mír a řád.\"/pause 500/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "sourceSHA256": "02f89cf88b0cc1bf74fa23da6a441d29a4d98ce4358e1a3ac459a63ed7d9a763",
+      "translationSHA256": "ad703416059e246a36fa4d3e38d3ae980e6e1a4b713e3c739d2e2833add7e4d9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "finalBossWizard",
+      "field": null,
+      "source": "pause 500/resetVariable/message \"Dreadlord Xarth is muttering an incantation...\"/pause 500/question fork0 \"What do you do?#Cast 'Pure Beam' at Xarth.#Put a 'Shield Charm' on your friends.\"/fork castBeam/pause 800/playSound debuffHit/message \"You place a 'Shield Charm' on Sam and Sebastian.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"Xarth sends bolts of pure dark energy flying. One of them strikes Sebastian, but your 'Shield Charm' reflects it back into Xarth's face!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Xarth is defeated, and the Solarion Staff glows peacefully. Order has been restored to the world.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/resetVariable/message \"Pán děsu Xarth mumlá zaříkávadlo...\"/pause 500/question fork0 \"Co uděláš?#Seslat na Xartha ‚Očistný paprsek‘.#Seslat na přátele ‚Ochranné zaklínadlo‘.\"/fork castBeam/pause 800/playSound debuffHit/message \"Sešleš na Sama a Sebastiana ‚Ochranné zaklínadlo‘.\"/pause 500/playSound debuffSpell/updateMinigame -1/pause 1000/message \"Xarth vypustí salvu výbojů čiré temné energie. Jeden zasáhne Sebastiana, ale tvé ‚Ochranné zaklínadlo‘ ho odrazí zpět Xarthovi přímo do obličeje!\"/pause 800/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Xarth je poražen a Solarionova hůl pokojně září. Ve světě byl obnoven řád.\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "sourceSHA256": "69da62ec47dbb5756ac878d815daa7c913fd109c5cc7e954cd7b4f0bff168e0d",
+      "translationSHA256": "35dead1fe5ec2b6597022ee49a9be6cf427807ad3d49c75f1460967bd74d0f01",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "castBeam",
+      "field": null,
+      "source": "pause 500/message \"Before you have a chance to cast your spell, Xarth sends a shadow beam at your companions!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sam and Sebastian are fried to a crisp...\"/pause 500/playSound yoba/pause 800/message \"Your spell hits Xarth square in the face.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"He lets out a shriek and crumbles into dust. You pick up the Solarion Staff and hold it high. Peace and order have been restored to the world.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/message \"Dřív než stihneš seslat kouzlo, vyšle Xarth stínový paprsek na tvé společníky!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sam a Sebastian jsou usmaženi do křupava...\"/pause 500/playSound yoba/pause 800/message \"Tvé kouzlo zasáhne Xartha přímo do obličeje.\"/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/message \"Zaječí a rozpadne se v prach. Zvedneš Solarionovu hůl vysoko nad hlavu. Ve světě byl obnoven mír a řád.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "sourceSHA256": "e743e06b93981aa719c056b8a58801438fc25e133aa32b15d8d8748e70182cde",
+      "translationSHA256": "f0cc23540e42b1457f9cf9e0b7354a29a18dedf41f070bad71c1dee524c6b1b2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "chargeAhead",
+      "field": null,
+      "source": "pause 500/message \"You charge forward, but Xarth slips past you and sends a shadow beam at your companions!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sebastian and Sam are fried to a crisp...\"/pause 800/message \"You swing your sword again and land a solid blow. Xarth shrieks and crumbles into dust.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"You pick up the Solarion Staff and hold it high. Peace and order have been restored to the world.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/message \"Vyrazíš vpřed, ale Xarth kolem tebe proklouzne a vyšle stínový paprsek na tvé společníky!\"/pause 500/playSound flameSpell/pause 500/playSound flameSpellHit/updateMinigame -1/pause 800/message \"Sebastian a Sam jsou usmaženi do křupava...\"/pause 800/message \"Znovu máchneš mečem a zasadíš přesný úder. Xarth zaječí a rozpadne se v prach.\"/playSound swordswipe/pause 400/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 800/message \"Zvedneš Solarionovu hůl vysoko nad hlavu. Ve světě byl obnoven mír a řád.\"/pause 1000/playSound getNewSpecialItem/updateMinigame -2/switchEvent end",
+      "sourceSHA256": "82d392d374fec59fe46bae696518893082c59727951b46859d21c43980a1259f",
+      "translationSHA256": "6b3e39eb8aa8f924f3c95b741cb7588a9b9fc3374f96f1f46d4fae7665dad283",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "finalBossWarrior",
+      "field": null,
+      "source": "pause 500/resetVariable/message \"Dreadlord Xarth is muttering an incantation...\"/pause 500/question fork0 \"What do you do?#Charge ahead, swinging your sword.#Use your shield to defend your friends.\"/fork chargeAhead/pause 1200/message \"Xarth casts 'Shadow Bolt' at Sebastian... but you raise your shield just in time to deflect the attack!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"As Xarth prepares another spell, you charge forward and strike him down with your sword.\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"The Solarion Staff glows peacefully as you hold it high. Order has been restored to the world!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "translation": "pause 500/resetVariable/message \"Pán děsu Xarth mumlá zaříkávadlo...\"/pause 500/question fork0 \"Co uděláš?#Vrhnout se vpřed s rozmáchlým mečem.#Bránit své přátele štítem.\"/fork chargeAhead/pause 1200/message \"Xarth sešle na Sebastiana ‚Stínový výboj‘... ale ty právě včas zvedneš štít a útok odrazíš!\"/pause 500/playSound debuffSpell/pause 400/playSound parry/updateMinigame -1/pause 1000/message \"Zatímco Xarth chystá další kouzlo, vyrazíš vpřed a skolíš ho mečem.\"/playSound swordswipe/pause 500/playSound killAnimal/updateMinigame 9/updateMinigame -1/pause 1000/message \"Solarionova hůl pokojně září, když ji zvedneš vysoko nad hlavu. Ve světě byl obnoven řád!\"/pause 1000/playSound getNewSpecialItem/addMailReceived savedFriends/updateMinigame -2/switchEvent end",
+      "sourceSHA256": "a4d7a41cce408cf8b4d583a30ee3823e2a27c44330883009402c20e334378650",
+      "translationSHA256": "881393428edd4c1cebf88c4e41c39d43d3f6f2d2b0040340029e1988a4f89312",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "leave",
+      "field": null,
+      "source": "pause 500/message \"Putting the disturbing sight of the prisoners out of your mind, you and your companions quickly climb the ladder.\"/pause 800/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor",
+      "translation": "pause 500/message \"Odvrátíš myšlenky od znepokojivého pohledu na vězně a se svými společníky rychle vylezeš po žebříku.\"/pause 800/playSound woodyStep/pause 400/playSound woodyStep/pause 400/playSound woodyStep/pause 500/switchEvent wizardDoor",
+      "sourceSHA256": "dcccf45d8cb66126fd712124dc8565b8d77f075b871e0c128be4a5664e82c967",
+      "translationSHA256": "83d48c899ab6744e1e34051c5959ffcd174077c88674eb77efe459334a09f340",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SebastianRoom",
+      "key": "end",
+      "field": null,
+      "source": "playMusic Hospital_Ambient/pause 9000/viewport 5 5 true/pause 800/showFrame Sebastian 29/speak Sebastian \"Hey, not bad!$7#$b#It took me like, three or four tries to beat my first scenario.$7\"/emote farmer 32/pause 1000/speak Sebastian \"Thanks for stopping by... I'll see you later.$7\"/globalFade/viewport -1000 -1000/pause 1000/end",
+      "translation": "playMusic Hospital_Ambient/pause 9000/viewport 5 5 true/pause 800/showFrame Sebastian 29/speak Sebastian \"Hej, to nebylo špatné!$7#$b#Já svůj první scénář dokončil až tak na třetí nebo čtvrtý pokus.$7\"/emote farmer 32/pause 1000/speak Sebastian \"Díky za návštěvu... Tak zase někdy.$7\"/globalFade/viewport -1000 -1000/pause 1000/end",
+      "sourceSHA256": "be8dbf9d3abc75b6a17a2e91955a325e1a629a955fcba227a1b6775986b8bf41",
+      "translationSHA256": "2a17fa1c518dbe559898980be847c6a111a06022120f1aceff1efe56242be4e4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

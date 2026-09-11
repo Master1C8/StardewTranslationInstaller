@@ -1,0 +1,28 @@
+{
+  "id": "432-mountain-marilda-bad-answer",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed both dialogue blocks against English; verified all three MarILDA explanation choices, robot-personhood framing, player-neutral wording, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Mountain",
+      "key": "BadAnswer",
+      "field": null,
+      "source": "speak Maru \"$q 18982 null#You must have a good reason for saying that...$a#$r 18982 50 event_robot_explain1#MarILDA's just a piece of machinery designed to act human.#$r 18982 50 event_robot_explain2#I was just kidding. MarILDA deserves her freedom.#$r 18982 -50 event_robot_explain3#I would've put her to work on the farm.\"/faceDirection Maru 1/emote Maru 12/pause 300/faceDirection Maru 3/speak Maru \"Well, I should go. Thanks for sticking with me today, @.$8\"/globalFade/viewport -3000 -3000/changeLocation ScienceHouse/end",
+      "translation": "speak Maru \"$q 18982 null#Musíš mít dobrý důvod, proč to říkáš...$a#$r 18982 50 event_robot_explain1#MarILDA je jen kus techniky, který má napodobovat člověka.#$r 18982 50 event_robot_explain2#Jen žertuju. MarILDA si zaslouží svobodu.#$r 18982 -50 event_robot_explain3#Pro mě by pracovala na farmě.\"/faceDirection Maru 1/emote Maru 12/pause 300/faceDirection Maru 3/speak Maru \"Tak já půjdu. Díky za dnešní společnost, @.$8\"/globalFade/viewport -3000 -3000/changeLocation ScienceHouse/end",
+      "sourceSHA256": "dd4856d45076721366b4e9c68ae0726a04f176c57c0faa186b2288477706c175",
+      "translationSHA256": "20405d4a7aacb16c44e2d491460fd40f254579821106cbe1fd007e47840ff6b8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

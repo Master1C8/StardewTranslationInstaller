@@ -1,0 +1,28 @@
+{
+  "id": "105-locations",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read the complete event script twice. Verified all commands, actors, coordinates, timings, sound names, translated-name reference, quotes, #$b# breaks, $h/$s disposition tokens and end position against the English source. Rechecked Professor Snail male voice, cave confinement, mushroom-salad joke, island flora/fauna research, tent invitation and player-neutral phrasing.",
+  "rows": [
+    {
+      "target": "Strings/Locations",
+      "key": "IslandNorth_Event_SafariManAppear",
+      "field": null,
+      "source": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"Thank you! I thought I was done for... $h#$b#I've been stuck in this cave for months!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...One more cave mushroom salad and I would've gone off the deep end... *shudder* ...so rubbery...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"Anyway... I'm Professor Snail.#$b#I've been conducting a survey of this island's flora and fauna for the last year. Truly a remarkable place!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"Well, I think I'll go back to my tent and freshen up a little. I'm afraid I smell like mushrooms...$s#$b#Hey... you should stop by the tent sometime! An enterprising individual like yourself could be a major asset in my projects... hee hee! Farewell.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48",
+      "translation": "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"Děkuji! Myslel jsem, že je se mnou konec... $h#$b#V téhle jeskyni jsem uvízl na celé měsíce!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...Ještě jeden salát z jeskynních hub a úplně by mi přeskočilo... *otřese se* ...tak gumové...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"Každopádně... jsem profesor Šnek.#$b#Poslední rok provádím průzkum flóry a fauny tohoto ostrova. Opravdu pozoruhodné místo!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"Nuže, myslím, že se vrátím do stanu a trochu se dám do pořádku. Obávám se, že páchnu po houbách...$s#$b#Hej... někdy se u mě ve stanu zastavte! Někdo tak podnikavý jako vy by mohl být pro mé projekty velkým přínosem... he he! Sbohem.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48",
+      "sourceSHA256": "0cff5801581235852d3c90b709b959da41004de4085bf6621b85e297d77efb8a",
+      "translationSHA256": "088ba921d530abfa121e2c2630c91b29a03315d544d3eb3d4f0608630e9abe47",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

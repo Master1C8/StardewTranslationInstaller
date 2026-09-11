@@ -1,0 +1,66 @@
+{
+  "id": "396-forest-penny-field-trip-branches",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read all three complete field-trip branch rows after the audit correction. Clarified that the goblins kidnap girls in order to eat them for dinner, removing the unintended invitation reading. Verified Vincent voice and masculine self-reference, Penny’s explicit title variants, all farming/animal/mineral choices, markers and switchEvent commands; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Forest",
+      "key": "choseFarming",
+      "field": null,
+      "source": "pause 500/question fork0 \"#The valley's soil is ideal for growing delicious vegetables.#The valley's air and grass are perfect for raising animals.\"/fork choseAnimals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Um, Farmer @? If I eat your veggies will I grow up strong like my big brother Sam?#$b#He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree.$h\"/showFrame Penny 27/jump Penny/pause 800/showFrame Penny 0/faceDirection farmer 3 true/emote Penny 12/speak Penny \"Vincent! It's not good to gossip!$a\"/switchEvent fieldTripEnd/",
+      "translation": "pause 500/question fork0 \"#Půda v údolí je ideální pro pěstování lahodné zeleniny.#Vzduch a tráva v údolí jsou ideální pro chov zvířat.\"/fork choseAnimals/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Ano, Vincente?\"/speak Vincent \"Ehm, @? Když budu jíst tvoji zeleninu, vyrostu silný jako můj velký bratr Sam?#$b#Je tak silný! Včera večer jsem viděl, jak zvedl slečnu Penny úplně ze země, když lezli na strom.$h\"/showFrame Penny 27/jump Penny/pause 800/showFrame Penny 0/faceDirection farmer 3 true/emote Penny 12/speak Penny \"Vincente! Nemá se pomlouvat!$a\"/switchEvent fieldTripEnd/",
+      "sourceSHA256": "9497cc373ad33fca8b0b0794f4367ecc11807f71c4081423d8df6b174e0ecc3e",
+      "translationSHA256": "73a01332f18a5ef89f5c0b7600379390ef3b165ceb2b5d91fec0c712364da333",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "choseAnimals",
+      "field": null,
+      "source": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!\"/speak Penny \"Vincent! Behave yourself. ${Mr.^Ms.}$ @ makes ${his^her}$ living working on the farm! It's not a playground.$h\"/switchEvent fieldTripEnd",
+      "translation": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Ano, Vincente?\"/speak Vincent \"@? Můžu osedlat jednu z tvých krav a jet na ní do města? Chci být opravdový kovboj!\"/speak Penny \"Vincente! Chovej se slušně. ${Pan^Paní}$ @ se živí prací na ${své farmě^své farmě}$! Není to hřiště.$h\"/switchEvent fieldTripEnd",
+      "sourceSHA256": "5453308d95c2a17947efdbe95835a44b3523c6f50ee2dd41bb68f6e421ae42e5",
+      "translationSHA256": "a419a9870fbe85585fd2263861e90d24c7aca50abf367d4c094f8321761deb7e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "choseMinerals",
+      "field": null,
+      "source": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Yes, Vincent?\"/speak Vincent \"Farmer @? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?\"/jump Jas/pause 800/faceDirection Jas 3/emote Jas 28/animate farmer false true 100 102 103/speak Penny \"Vincent! You're scaring Jas. Let's not talk about monsters.$a\"/faceDirection Penny 1/faceDirection Jas 0/emote Penny 12/pause 400/stopAnimation farmer/pause 300/faceDirection farmer 3/emote farmer 40/faceDirection Penny 2/faceDirection farmer 2/switchEvent fieldTripEnd",
+      "translation": "pause 500/animate Vincent false true 50 16 17/playSound dwop/pause 300/faceDirection Penny 2/pause 500/stopAnimation Vincent/speak Penny \"Ano, Vincente?\"/speak Vincent \"@? Je pravda, že hluboko v jeskyních žijí goblinové... a že rádi unášejí malé holčičky, aby je snědli k večeři?\"/jump Jas/pause 800/faceDirection Jas 3/emote Jas 28/animate farmer false true 100 102 103/speak Penny \"Vincente! Děsíš Jas. O příšerách mluvit nebudeme.$a\"/faceDirection Penny 1/faceDirection Jas 0/emote Penny 12/pause 400/stopAnimation farmer/pause 300/faceDirection farmer 3/emote farmer 40/faceDirection Penny 2/faceDirection farmer 2/switchEvent fieldTripEnd",
+      "sourceSHA256": "19d1e6e96232e5a7ba64c9463e16ff42515c78fc29265498461719a5410ff3fd",
+      "translationSHA256": "2463a37fc3a7720ffcb5da43cb342c0608a8ef409cf3a9b846857ad1977eb0b8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

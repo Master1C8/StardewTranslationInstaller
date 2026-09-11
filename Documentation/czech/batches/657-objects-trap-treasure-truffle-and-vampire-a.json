@@ -1,0 +1,769 @@
+{
+  "id": "657-objects-trap-treasure-truffle-and-vampire-a",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full source/Czech comparison reread after corrections; meaning, Czech grammar, glossary terms, names, tone, placeholders, markup, and control tokens verified with no remaining objective issue.",
+  "rows": [
+    {
+      "target": "Strings/Objects",
+      "key": "TrapBobber_Name",
+      "field": null,
+      "source": "Trap Bobber",
+      "translation": "Záchytný splávek",
+      "sourceSHA256": "51d6eb7c1a78b64580989053d276d3a7c7775e25501f72cafcb497153df1c431",
+      "translationSHA256": "248cf6e66737ec7d1d6815dfd043e108a680da8e7c51a1f3379237e7b8ae2c73",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TrapBobber_Description",
+      "field": null,
+      "source": "Causes fish to escape slower when you aren't reeling them in.",
+      "translation": "Způsobí, že ryby unikají pomaleji, když je nenavíjíš.",
+      "sourceSHA256": "9833d25bbe4dc85dae7e3c7f34cb0d6521f3dee66a304e97521088c5bf1bf072",
+      "translationSHA256": "9e59688b13b7f838d94adfc758443bc43f6434da9e46146957cf6a67aea5184c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Trash_Name",
+      "field": null,
+      "source": "Trash",
+      "translation": "Odpadky",
+      "sourceSHA256": "c560122ac4706dcb19bcb43defe2afa6e84809176688807abd297bf17cd76388",
+      "translationSHA256": "fe805809ce3abd799e9cd5ef6a9a753a8f503ab13d5eecf8a1a4833322283386",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Trash_Description",
+      "field": null,
+      "source": "It's junk.",
+      "translation": "Je to smetí.",
+      "sourceSHA256": "c64140b7c60b0c9d5550651effb15c13fb1365b4dbf910633a0098f673504602",
+      "translationSHA256": "d0079bf2b8479e7cf273723e98082d8437356dc349e539d5d72a172fd8abb16e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreasureChest_Name",
+      "field": null,
+      "source": "Treasure Chest",
+      "translation": "Truhla s pokladem",
+      "sourceSHA256": "47542b2d69ecd600c9089aed4469a80cfbeb286aab892a5b4e0612148ed13fba",
+      "translationSHA256": "f53489227420666fd990fd623c5ff4372d1967396a430bc17ba11e97d01bd210",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreasureChest_Description",
+      "field": null,
+      "source": "Wow, it's loaded with treasure! This is sure to fetch a good price.",
+      "translation": "Páni, je plná pokladů! Určitě se prodá za dobrou cenu.",
+      "sourceSHA256": "994cc5018b2c4527445abcb0c2a4c879804c388840d184a012fdbfd0ab9a4803",
+      "translationSHA256": "f0208212585dbc77ff995fb752439f0a5ef65b281e888b25b73889691ad666a1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreasureHunter_Name",
+      "field": null,
+      "source": "Treasure Hunter",
+      "translation": "Lovec pokladů",
+      "sourceSHA256": "391b4e14a6ac07093188b967dee259bef4f8692e3d1e87e6bb28cf249f3e788a",
+      "translationSHA256": "0ead8ea67c614fcf4eb77a94d40511a81eeeb1688b258c72902ca88d81470ca7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreasureHunter_Description",
+      "field": null,
+      "source": "Fish don't escape while collecting treasures. Also slightly increases the chance to find treasures.",
+      "translation": "Při vybírání pokladů ryby neunikají. Také mírně zvyšuje šanci najít poklad.",
+      "sourceSHA256": "2f571e7ca9c1d048d2e415faf8d97906f0f614b9e0fca3542378da3f5b53916f",
+      "translationSHA256": "52e17f57abb62d1b153c8520135dde6eeff4f567c97b8094af6ef35fde386df0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreasureTotem_Name",
+      "field": null,
+      "source": "Treasure Totem",
+      "translation": "Pokladový totem",
+      "sourceSHA256": "3ceaf5f7853d5c62f5c0b5a7b4306ae8fd8402fa59568e67753b5ae51d7ef376",
+      "translationSHA256": "959bda0a3617965eb3f5eae5f1ebc6ab09d6369578739ad704fe137a29fa1aaa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreasureTotem_Description",
+      "field": null,
+      "source": "Use on diggable terrain to summon a ring of treasure spots.",
+      "translation": "Použij ho na místě, kde lze kopat, a vyvoláš kolem sebe kruh pokladových míst.",
+      "sourceSHA256": "30cd06e11531cfe88d7081e5b5a7d711db32edd56a16df0a21bee87936f6b0af",
+      "translationSHA256": "a6c1a216d4f8c6105b16eac3f15d272b470af2d8b966fe8fd512df6878d34ad6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreeFertilizer_Name",
+      "field": null,
+      "source": "Tree Fertilizer",
+      "translation": "Hnojivo na stromy",
+      "sourceSHA256": "d08ffb6f929e00cf1feb45c54f2d977dadec3b5b7ad4d1836774359bc9938634",
+      "translationSHA256": "21c5fde964626331164eb90ca7c6109a1583f02d56dc684267cd17c1e64b2605",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TreeFertilizer_Description",
+      "field": null,
+      "source": "Sprinkle on a wild tree to ensure rapid growth, even in winter. Doesn't work on fruit trees.",
+      "translation": "Nasyp ho na planý strom a zajistíš jeho rychlý růst i v zimě. Na ovocné stromy nefunguje.",
+      "sourceSHA256": "438769a85f8c58c32403d4a37850773b920cb0eb05057ed16294e1e5797d60f9",
+      "translationSHA256": "943c59b5e44215d5de272bda2e4c06dc23a8eef113961e0b2bf0745c95998f30",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Trilobite_Name",
+      "field": null,
+      "source": "Trilobite",
+      "translation": "Trilobit",
+      "sourceSHA256": "9bfb184128ae140e018351fce6feff26ca5ecbf556be1d6531606d74cc446e33",
+      "translationSHA256": "9d58bd2f32f467f91a13a39bc06a73d3116c7a39b24043bb08ebf12e06946aa2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Trilobite_Description",
+      "field": null,
+      "source": "A long extinct relative of the crab.",
+      "translation": "Dávno vyhynulý příbuzný krabů.",
+      "sourceSHA256": "0f357eee47cc42eecd62144b5c8c2acb1796e8fb5c7c1848ca83e2baed52fc8d",
+      "translationSHA256": "19218a0475976c6457326199be2fc5cfb0ebca4d1fae1c1afc9998d3543c8f5a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TrimmedLuckyPurpleShorts_Name",
+      "field": null,
+      "source": "Trimmed Lucky Purple Shorts",
+      "translation": "Zlatě lemované šťastné fialové trenýrky",
+      "sourceSHA256": "10020e3839e2edf798482b17c39b1b4a67374ad3917e653458093b3102f33913",
+      "translationSHA256": "c9f0695a0f181628956d348add8b69aaa4a3903b47fdf827d1c6956f5efa8770",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TrimmedLuckyPurpleShorts_Description",
+      "field": null,
+      "source": "Purple silk shorts trimmed in luxurious gold...",
+      "translation": "Fialové hedvábné trenýrky lemované přepychovým zlatem...",
+      "sourceSHA256": "dbd684ba0609224279fc90b38dc675c0e034892a8192eb4ecdb3fce4455a346b",
+      "translationSHA256": "b79844cb5cca9bd8d1ede65a22aea90e2528b812b81504908d3dedacdb98e8a9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TripleShotEspresso_Name",
+      "field": null,
+      "source": "Triple Shot Espresso",
+      "translation": "Trojité espresso",
+      "sourceSHA256": "df4a8ba90cad89328408d85d0a7e02ee9ff9b72682b2373fe81e9e572c7c8ddb",
+      "translationSHA256": "176e95129d30e3c687c6d28480a15a656d4c17a32e57e48e9a73475d1cd28363",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TripleShotEspresso_Description",
+      "field": null,
+      "source": "It's more potent than regular coffee!",
+      "translation": "Je silnější než obyčejná káva!",
+      "sourceSHA256": "6ebeb58a01880adb5c3011f770cd2046a717f88cd5903067f7efca5c49eea7b4",
+      "translationSHA256": "3e16182a8727cee0219ad8a9555f3a55df509d42f44aedaf2fd49d8a497807e1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TropicalCurry_Name",
+      "field": null,
+      "source": "Tropical Curry",
+      "translation": "Tropické kari",
+      "sourceSHA256": "5a5d164529e130f89eeb7a8bcecb90daeeb880aa74a99e5ab493506739ed7f56",
+      "translationSHA256": "4a812c29288e77024a6947b39c22b3acc1a81fae32412065dffb1ba2141ebc19",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TropicalCurry_Description",
+      "field": null,
+      "source": "An exotic, fragrant curry served in a pineapple bowl.",
+      "translation": "Exotické voňavé kari servírované v ananasové misce.",
+      "sourceSHA256": "10583b7a74f67733ab75a4821d366e257bfe569c84189e1e48e545dd2320efdf",
+      "translationSHA256": "14244c8ca84cac236bfac67f30f716fbfe063c1d720d9e747ffe83b784d2123c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TroutDerbyTag_Name",
+      "field": null,
+      "source": "Golden Tag",
+      "translation": "Zlatý štítek",
+      "sourceSHA256": "788520476ece248009a992c6856d76e6405781ba34acb3c1e9a39e8a6c55e9e5",
+      "translationSHA256": "9a9cbb3b39af946d96a9e23ad57dde3b75d4cbc98a92014e8228c25df56d463a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TroutDerbyTag_Description",
+      "field": null,
+      "source": "Turn this in to the Trout Derby booth for a reward.",
+      "translation": "Odevzdej ho ve stánku Pstruhového derby a dostaneš odměnu.",
+      "sourceSHA256": "3e82c57f17ea0763522632cdddca8c22bfebdcbcfe0e93e8fc4dd91071582bb1",
+      "translationSHA256": "2ec226685f32c2ddee063bd7ca0bc5f7c15f466efee56225cdaf460ecaa5b17a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TroutSoup_Name",
+      "field": null,
+      "source": "Trout Soup",
+      "translation": "Pstruhová polévka",
+      "sourceSHA256": "211f7f644f08b70361b11eac9f71458054157da1046fe686a0db4115d858e211",
+      "translationSHA256": "95fdd8127a8639cbae6e11cef2e30288d56cf3499808fcf5b7cdabc00a67c8bb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TroutSoup_Description",
+      "field": null,
+      "source": "Pretty salty.",
+      "translation": "Docela slaná.",
+      "sourceSHA256": "907f66d093a148b37e1e7d098da67008bce95af2a472775006c4de25c1175b9f",
+      "translationSHA256": "ed7f392bfff7eb08d3cca6761a52d6d079f22c0f2d7143d6514fc76f134604eb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Truffle_Name",
+      "field": null,
+      "source": "Truffle",
+      "translation": "Lanýž",
+      "sourceSHA256": "8713a2b546d0f0a257ceb4ae48f66fd409f4e922c9ec207956dc8a3a35deae8a",
+      "translationSHA256": "bbd797410d3d3eb848e772c670c10799523e57e863928df2336b62be71127f17",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Truffle_Description",
+      "field": null,
+      "source": "A gourmet type of mushroom with a unique taste.",
+      "translation": "Houba s jedinečnou chutí, kterou oceňují gurmáni.",
+      "sourceSHA256": "328c6ab2c99e2bd8b1f3b58951e69db87b210cc9465e398edc0331419513ed60",
+      "translationSHA256": "25d04fa1b8edd30882293e8fabe0a168efd6a78063d097bdf1c9ae2011b0ad6b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TruffleOil_Name",
+      "field": null,
+      "source": "Truffle Oil",
+      "translation": "Lanýžový olej",
+      "sourceSHA256": "61761919299f878b8dda24edd3103e308903e0e5bdb63ebf9c0ed1c66bfbed05",
+      "translationSHA256": "7bc9c1e884ab84e2a1143c8a9370e785126f50cd9878240fc7238cde60a67e2a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TruffleOil_Description",
+      "field": null,
+      "source": "A gourmet cooking ingredient.",
+      "translation": "Gurmánská přísada do pokrmů.",
+      "sourceSHA256": "4e14231cee049bbb0a6a1a520e8b515ba048974f46de6ebbad0b2bf5e71e4623",
+      "translationSHA256": "530044ecd79efe4cde7d034a53a83b48bc0a868566ea1a1ef5a59705e3b5605f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Tulip_Name",
+      "field": null,
+      "source": "Tulip",
+      "translation": "Tulipán",
+      "sourceSHA256": "0a99c90e2ffd9d01669dbdfc6e204addac5c9a1aa51d88b754de10907c9936c3",
+      "translationSHA256": "b7c90d9abeb218c0518df8536410a1479a1cdefe313230499a1ebf5f4bb86edb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Tulip_Description",
+      "field": null,
+      "source": "The most popular spring flower. Has a very faint sweet smell.",
+      "translation": "Nejoblíbenější jarní květina. Má velmi jemnou sladkou vůni.",
+      "sourceSHA256": "995e38889c68073772e274c54464b5a239f24f3125cfa6d3e51ae86fb5930121",
+      "translationSHA256": "28a13c4caa9ef19047829472d80c9a52a07656af3faf568fd65113b631461533",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TulipBulb_Name",
+      "field": null,
+      "source": "Tulip Bulb",
+      "translation": "Cibulka tulipánu",
+      "sourceSHA256": "1ea1baa4409a381e4b1e11d7dab6f664a44123f50acc744022aa60b289cb046a",
+      "translationSHA256": "87e9d21ea9a6866b0be357eac6b2b6a2f4f0cbb7abe6ea78f37f1573ae3285d3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "TulipBulb_Description",
+      "field": null,
+      "source": "Plant in spring. Takes 6 days to produce a colorful flower. Assorted colors.",
+      "translation": "Zasaď ji na jaře. Za 6 dní z ní vyroste barevný květ. Různé barvy.",
+      "sourceSHA256": "1b5bae15e85fe8319a6e172665fd96192e649b3ba26a5c0e1d571445fcd33a75",
+      "translationSHA256": "9868c29f4b7b95ab46532d0c25b9264f84aa927d6284e0bd96ddc300438e7937",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Tuna_Name",
+      "field": null,
+      "source": "Tuna",
+      "translation": "Tuňák",
+      "sourceSHA256": "16437a1d61a391a00e480e8faa1b18039fe5953eac80b0c9b2bc3b281f1592bd",
+      "translationSHA256": "e841e42f6d4ed79f3cda3cbb64c30d0263dfe78ec85da457c3fafc5424ae6def",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Tuna_Description",
+      "field": null,
+      "source": "A large fish that lives in the ocean.",
+      "translation": "Velká ryba žijící v oceánu.",
+      "sourceSHA256": "fe50b8d11a3b544cde54165ebb7f28e2cdd672690f5e6b804066afcb54fe6ff6",
+      "translationSHA256": "1bd44fefb9d372392f14b4884fb366046cd95ae5d50f1b102d4ea2c155af7c47",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Twig_Name",
+      "field": null,
+      "source": "Twig",
+      "translation": "Větvička",
+      "sourceSHA256": "1d8154e1b461bc4c1badb057ae334a6408bd89af44c0ad82c566791069e9f5a4",
+      "translationSHA256": "2861b08797a72cabb5bae857ffb578b42cf8161233abee1ad6e4a344ca9d0a92",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "Twig_Description",
+      "field": null,
+      "source": "A broken branch. Chop with an axe to obtain wood.",
+      "translation": "Ulomená větev. Rozsekej ji sekerou a získáš dřevo.",
+      "sourceSHA256": "88a03d21b6393e42481260bd7e6bcd65cb1a3fecee8aa977fb0742dafdd8c6f8",
+      "translationSHA256": "6fbdafe486cc2e712aad2731697c743bf367a5a8c7dc16fe6cc17bac7d618962",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "UnmilledRice_Name",
+      "field": null,
+      "source": "Unmilled Rice",
+      "translation": "Neloupaná rýže",
+      "sourceSHA256": "9362187ab7d856321459684bbee51f11dfaab67ae417734440da5e2c3eea45bc",
+      "translationSHA256": "815c8e46e887ca9861d017995c154ab1d46d2914df633ae3f9190f3a24c24ffd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "UnmilledRice_Description",
+      "field": null,
+      "source": "Rice in its rawest form. Run this through a mill to increase the value.",
+      "translation": "Rýže v nejméně zpracované podobě. Prožeň ji mlýnem a zvýšíš její hodnotu.",
+      "sourceSHA256": "ed07bdf4f89656524da509da00a0e268c915806eb6d056d5dcf4b88ecf178e62",
+      "translationSHA256": "183b55109b21349f4a179c904e6befac807fd3aa9342be9c12f1fecc30778cc9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "VampireRing_Name",
+      "field": null,
+      "source": "Vampire Ring",
+      "translation": "Upírský prsten",
+      "sourceSHA256": "067acce1cc47aa8bd38b72117ab3c2446fa34baa2e60bfea0ed155c888cde1c7",
+      "translationSHA256": "a3a84ddf9efe68d85dba6f6c27358287e7135d4ddbc0753e1fe6bc17d0032b2f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Objects",
+      "key": "VampireRing_Description",
+      "field": null,
+      "source": "Gain a little health every time you slay a monster.",
+      "translation": "Pokaždé, když zabiješ příšeru, obnoví ti trochu zdraví.",
+      "sourceSHA256": "570a465648dfc36c69ae6e3c18876681a247f289754bbac4ce2b6dfab2689c3e",
+      "translationSHA256": "2fa41b10039adec8089d1f5d03af9e1c32f84963eedb1eb5145e4331207e6359",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "id": "162-keyboard-punctuation-special-keys",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full 28-entry source/Czech reread completed; punctuation, mouse buttons, and explainable legacy key functions were translated, while opaque or standardized terminal identifiers were retained with explicit reasons. Left/right mouse distinctions and key meanings verified.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Semicolon",
+      "field": null,
+      "source": "Semicolon",
+      "translation": "Středník",
+      "sourceSHA256": "1a68548f90da2bfcb7adc4c2a80f4b612643ee7f89259b998b008c4309397b8a",
+      "translationSHA256": "ccfdf8d7c29b7529e43032b34933d85c1c275b2239dcfcb1c1da8208ba2534fc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Plus",
+      "field": null,
+      "source": "Plus",
+      "translation": "Plus",
+      "sourceSHA256": "8a7843789f8d740a31d34a22d8bd67368041e0b12698db0d8bb0b7d3e365bc71",
+      "translationSHA256": "8a7843789f8d740a31d34a22d8bd67368041e0b12698db0d8bb0b7d3e365bc71",
+      "preservationReason": "Plus is the standard Czech name of the mathematical and numeric-keypad key.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Comma",
+      "field": null,
+      "source": "Comma",
+      "translation": "Čárka",
+      "sourceSHA256": "80f2d0366b04000c4d7a149b2501209b8ed15a91b12215da9f8e06c8ce2bb22d",
+      "translationSHA256": "0532e2bdddb179bf2175658503d51972a92e5af9ea9dc86f4949560511cf229d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Minus",
+      "field": null,
+      "source": "Minus",
+      "translation": "Minus",
+      "sourceSHA256": "9befa3c6323990ca1c95e4bfc4ad20dffbe201521817abc21233223ce6bf0720",
+      "translationSHA256": "9befa3c6323990ca1c95e4bfc4ad20dffbe201521817abc21233223ce6bf0720",
+      "preservationReason": "Minus is the standard Czech name of the mathematical and numeric-keypad key.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Period",
+      "field": null,
+      "source": "Period",
+      "translation": "Tečka",
+      "sourceSHA256": "6e795d4d3cc21c5ca8349ab5e917482197aa612d1a218f9e9411467db73242bb",
+      "translationSHA256": "64f2075c14e18ba666ab91ac0190f381e7c08cf434c8956896579208e9a34474",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Question",
+      "field": null,
+      "source": "Question",
+      "translation": "Otazník",
+      "sourceSHA256": "289aff12b04274cb04b8f7dbf486ba8b3528c6fd16b60b9a31d31ce23b339236",
+      "translationSHA256": "8951b25560ced12b5663525b235a80e36a128a04030256ef49cf8e7877af8625",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Tilde",
+      "field": null,
+      "source": "Tilde",
+      "translation": "Tilda",
+      "sourceSHA256": "66042131f7b533a3f86e55461a70fa04b6fd2aecd8fec78fdcba76bd18b18fdf",
+      "translationSHA256": "7e994beaf1e9e9fa6eb21e29c4f76f167e638ef15405b0f88fdf5d95b1ecab50",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ChatPadGreen",
+      "field": null,
+      "source": "ChatPadGreen",
+      "translation": "Zelené tlačítko ChatPadu",
+      "sourceSHA256": "2101c6827e1373b59c548c28dcf350a2a80e6d47edfa6ac19536992582a209fa",
+      "translationSHA256": "85fca3fb40f2cc6d440f4016ae9ecdd1e69747a05d066fbe1489274751bf99a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ChatPadOrange",
+      "field": null,
+      "source": "ChatPadOrange",
+      "translation": "Oranžové tlačítko ChatPadu",
+      "sourceSHA256": "a622bffc82971985071231ff9239a6719eba6a21a0e03d4530cda97e8f030a37",
+      "translationSHA256": "2302d7a822d6316129d9cffcfc8fe091dba907576e5717bec2ffdf17fab35c41",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "OpenBrackets",
+      "field": null,
+      "source": "OpenBrackets",
+      "translation": "Levá hranatá závorka",
+      "sourceSHA256": "957b786e15786c89afff7687be2976f95187517c5845a76cb1396895d013d2d7",
+      "translationSHA256": "7224c01740dc4b0057c9696a3faeda2478ae4fc500f112b5adc85c28454e879f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Pipe",
+      "field": null,
+      "source": "Pipe",
+      "translation": "Svislá čára",
+      "sourceSHA256": "3725dbfedcd5114eb5165c9ab336fc69cacf50e81e5c369e1c662a19d17cdf39",
+      "translationSHA256": "9584d6bef3888df8ee2399983720d224462642f70ec13995cb4dfff06736ef13",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "CloseBrackets",
+      "field": null,
+      "source": "CloseBrackets",
+      "translation": "Pravá hranatá závorka",
+      "sourceSHA256": "6d32084ccad4177a232d314767352889cb989dd79b3092dcd32a6a320a33bfd5",
+      "translationSHA256": "533db10c9812ff86ddc7ddeea56f0d8c57ded0416eca51bea4fc070f1aaede05",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Quotes",
+      "field": null,
+      "source": "Quotes",
+      "translation": "Uvozovky",
+      "sourceSHA256": "8dc37869d63b05bdda85dc47d06976975ee238de6526a124ac082a5e2fa4c533",
+      "translationSHA256": "546573cfba7ca0385effbd72535f52887082b517f7756599f00b07feb8d29cc5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Backslash",
+      "field": null,
+      "source": "Backslash",
+      "translation": "Zpětné lomítko",
+      "sourceSHA256": "f144a3e6da53871b0c0ca2b3c17d31f08efa1511ddee61e88013d90e89ebb886",
+      "translationSHA256": "45ba62d7fc889ed412b8eeccdf783b2ab41da14f05fe0f7e04497dcd90942282",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "ProcessKey",
+      "field": null,
+      "source": "ProcessKey",
+      "translation": "Procesní klávesa",
+      "sourceSHA256": "65c8498d2d8ec1210583803ef5b0a13cdb65cdd289b54f4114bdb1df1903b282",
+      "translationSHA256": "92b73263d245ea1eda33547ab314def27d7894f557d79ae7459299a84bfc2926",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Copy",
+      "field": null,
+      "source": "Copy",
+      "translation": "Kopírovat",
+      "sourceSHA256": "e21f935f11d7e966dbbae78da9daa378fe8142a14e7c0cd7434183005faa6c5c",
+      "translationSHA256": "89c0199fee4eea4db1b343ca89b0d2bcbfab4a065dea6b0b9b65ff6a28c7fe3e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Auto",
+      "field": null,
+      "source": "Auto",
+      "translation": "Automaticky",
+      "sourceSHA256": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+      "translationSHA256": "ce62739b48a8a2d6add41163751187934cbe17206c0885e31cb78828719a7ac4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "EnlW",
+      "field": null,
+      "source": "EnlW",
+      "translation": "EnlW",
+      "sourceSHA256": "3f1527a448add1a6f2e7fe121bf319b115eea1cda493fa8c164c48d1eb104f8a",
+      "translationSHA256": "3f1527a448add1a6f2e7fe121bf319b115eea1cda493fa8c164c48d1eb104f8a",
+      "preservationReason": "EnlW is an opaque platform virtual-key identifier with no established Czech expansion, so changing it would invent a meaning.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Attn",
+      "field": null,
+      "source": "Attn",
+      "translation": "Attn",
+      "sourceSHA256": "e0b6d40a95973a3528955defe93c53233d4c8351fcab8a2516e07d73f240f02a",
+      "translationSHA256": "e0b6d40a95973a3528955defe93c53233d4c8351fcab8a2516e07d73f240f02a",
+      "preservationReason": "Attn is the standardized legacy terminal-key label and is retained so it can be matched to hardware.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Crsel",
+      "field": null,
+      "source": "Crsel",
+      "translation": "Výběr kurzorem",
+      "sourceSHA256": "f27004ebe1593ed5bb463da72a865273fa883be8123e1f27062704a8f8e2e0ea",
+      "translationSHA256": "8d5ba144df94b8d5ef9c3dab33005f8c995da15be987088566c3ec0d277c7363",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Exsel",
+      "field": null,
+      "source": "Exsel",
+      "translation": "Rozšířit výběr",
+      "sourceSHA256": "37eb82d685e42921337d6e14d9c9bd1e81a9d331033de04405fc39c20b162b02",
+      "translationSHA256": "b4d7d7bcde17118ddb3338effb095fc67f5b90f939608e85eaf56ac7536f4028",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "EraseEof",
+      "field": null,
+      "source": "EraseEof",
+      "translation": "Vymazat do konce souboru",
+      "sourceSHA256": "52e0a24493eaac0cdb8e9198fba29340b548251c343b853debeee92bd2750fa1",
+      "translationSHA256": "66b93cf312076be756d6e4d431c4a80f7919b1c7948dfbab2ba59bb1dfd572c9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Play",
+      "field": null,
+      "source": "Play",
+      "translation": "Přehrát",
+      "sourceSHA256": "436e61016e26fcb773b9725745cbbf0afe7f001ea26041a814a7712c2925c442",
+      "translationSHA256": "98cd4ceebbddc7cf977cb8318e216be06eca83ce7b03cee31ec13ddc92c5f59c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Zoom",
+      "field": null,
+      "source": "Zoom",
+      "translation": "Přiblížení",
+      "sourceSHA256": "509c517ede79fef060a5f3a109fd1f45951eef2c7970b25c20992011e36a4070",
+      "translationSHA256": "e4a6a87be909cca7bd47d822bcb9f01aacbdf5bb6d4e063f2798d3f51455f027",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Pa1",
+      "field": null,
+      "source": "Pa1",
+      "translation": "Pa1",
+      "sourceSHA256": "a1b979f08b8efa66e94fe1d4af1cff432cff74e10fbc3345ea179409015ba940",
+      "translationSHA256": "a1b979f08b8efa66e94fe1d4af1cff432cff74e10fbc3345ea179409015ba940",
+      "preservationReason": "Pa1 is the standardized legacy terminal-key identifier and has no Czech lexical form.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Clear",
+      "field": null,
+      "source": "Clear",
+      "translation": "Vymazat",
+      "sourceSHA256": "83b12c2216efb4fdc924e1deb5182e905e4926ed0c1c324d467107f46d5a26a9",
+      "translationSHA256": "8dce6280b32cf7f5b082d36e802d50b4dbe179d3d6ddaa1a78056aa4db6b2577",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Left-Click",
+      "field": null,
+      "source": "Left-Click",
+      "translation": "Levé tlačítko myši",
+      "sourceSHA256": "da1a5a89a01e466ca54cdf10573f4fcc83ca68e63e9f49c18bacafeb584f1e2e",
+      "translationSHA256": "2958e0888b68ddab90029e71983314ebff484ade4f6530521898755ab87305be",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Right-Click",
+      "field": null,
+      "source": "Right-Click",
+      "translation": "Pravé tlačítko myši",
+      "sourceSHA256": "0189fc2b576190b7c415bfc2b5a9d273eb72bc072856d33e0d932a0c5adf040f",
+      "translationSHA256": "e3fc713304a805822f86ed657fe6ab9fc05311771ae98f940be4a65996debcae",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

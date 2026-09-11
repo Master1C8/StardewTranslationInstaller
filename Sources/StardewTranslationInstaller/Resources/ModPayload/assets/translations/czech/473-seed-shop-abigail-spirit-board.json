@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SeedShop",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "3/f Abigail 2000/p Abigail/t 2000 2200/n abbySpiritBoard": "echos/-1000 -1000/farmer 13 6 3 Abigail 6 8 1/skippable/specificTemporarySprite abbyOuijaCandles/viewport 7 5/speak Abigail \"Ahoj! Doufala jsem, že přijdeš. Chci ti něco ukázat.\"/move farmer -5 0 0/move farmer 0 2 3/faceDirection Abigail 2/speak Abigail \"Vidíš to? Říká se tomu spiritistická tabulka. Už ji znáš?\"/emote farmer 8/move Abigail 0 2 1/move farmer 0 2 3/pause 500/speak Abigail \"Polož se mnou ruce na ukazovátko...$l\"/showFrame Abigail 30/pause 200/animate farmer true true 9999 89/pause 600/speak Abigail \"Teď nás duchové povedou k...$h\"/showFrame Abigail 31/pause 500/speak Abigail \"PODÍVEJ, hýbe se!$7\"/emote farmer 16/speak Abigail \"První písmeno je... ‚I‘...\"/pause 600/speak Abigail \"Další je... ‚<‘...\"/pause 800/speak Abigail \"Páni, podívej, jak se pohybuje! Hláskuje... ‚%firstnameletter‘...#$b#I < %firstnameletter...?\"/emote Abigail 16/showFrame Abigail 12/faceDirection Abigail 3/stopMusic/pause 200/stopAnimation farmer/faceDirection Abigail 1/pause 400/specificTemporarySprite abbyOuija/playSound swordswipe/pause 900/playSound seeds/pause 500/speak Abigail \"Jejda, omylem jsem tabulku převrhla! He he...$h#$b#Je to jen hloupá hra, nic to neznamená.$9\"/faceDirection Abigail 3/emote Abigail 60/faceDirection Abigail 1/speak Abigail \"Já, ehm, musím něco udělat. Budeš muset jít... Promiň.$9\"/faceDirection Abigail 2/emote farmer 28/pause 500/move farmer 0 -3 0/pause 800/faceDirection farmer 2/pause 1000/move farmer 5 0 1 true/globalFade/viewport -1000 -1000/end invisibleWarpOut Abigail"
+      }
+    }
+  ]
+}

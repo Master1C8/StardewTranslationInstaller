@@ -1,0 +1,28 @@
+{
+  "id": "493-town-joja-completion",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all five ceremony strings twice against English after correcting the project-title apposition; verified the exact male/female farmer branch, Morris’s corporate jargon and theatrical delivery, canonical Pelikánov and Joja program terms, all dialogue markers, and the complete event command sequence.",
+  "rows": [
+    {
+      "target": "Data/Events/Town",
+      "key": "502261/J/w sunny/H",
+      "field": null,
+      "source": "sweet/-1000 -1000/farmer 53 34 0/broadcastEvent/addTemporaryActor Morris 16 32 -100 -100 2 true/pause 500/speak Morris \"There he is, everyone! Look sharp!^There she is, everyone! Look sharp!\"/specificTemporarySprite jojaCeremony/viewport 53 14 true/viewport move 0 1 8000/pause 9000/move farmer 0 -10 0/pause 4000/speak Morris \"*Ahem*...\"/pause 500/speak Morris \"Just a few short years ago, the great innovators at Joja Headquarters came up with a new idea, the Joja Community Development Project.#$b#The project was conceived as a way to provide important construction services to the beloved communities we hold so dear...*sniff*... all while generating substantial revenue!#$b#Pelican Town, with its run-down infrastructure, was a perfect testing ground.\"/pause 500/speak Morris \"Well, thanks to you, our Community Development Pilot Program has been a major success!#$b#From repairing old bridges, to fixing buses, to turning piles of rubble into a greenhouse, we've really turned this city around!#$b#I've also received a big promotion! Hehehe.\"/pause 1000/speak Morris \"The president of the company asked me to give you this exclusive gift as a way of saying 'thanks'.\"/playMusic none/pause 1000/awardFestivalPrize joja/null/itemAboveHead joja/null/pause 1000/globalFade/viewport -1000 -1000/end Position 52 27/end",
+      "translation": "sweet/-1000 -1000/farmer 53 34 0/broadcastEvent/addTemporaryActor Morris 16 32 -100 -100 2 true/pause 500/speak Morris \"Tady ho máme, vážení! Do pozoru!^Tady ji máme, vážení! Do pozoru!\"/specificTemporarySprite jojaCeremony/viewport 53 14 true/viewport move 0 1 8000/pause 9000/move farmer 0 -10 0/pause 4000/speak Morris \"*odkašle si*...\"/pause 500/speak Morris \"Ještě před několika málo lety přišli velcí inovátoři v ústředí Joja s novou myšlenkou: Projekt komunitního rozvoje Joja.#$b#Projekt vznikl jako způsob, jak poskytovat důležité stavební služby milovaným obcím, které jsou našemu srdci tak drahé...*popotáhne*... a přitom vytvářet značné příjmy!#$b#Pelikánov se svou chátrající infrastrukturou byl dokonalým testovacím prostředím.\"/pause 500/speak Morris \"Díky tobě měl náš Pilotní program komunitního rozvoje velký úspěch!#$b#Od oprav starých mostů přes opravu autobusů až po proměnu hromad suti ve skleník jsme tohle město opravdu postavili na nohy!#$b#Také jsem dostal velké povýšení! Hehehe.\"/pause 1000/speak Morris \"Prezident společnosti mě požádal, abych ti jako poděkování předal tento exkluzivní dar.\"/playMusic none/pause 1000/awardFestivalPrize joja/null/itemAboveHead joja/null/pause 1000/globalFade/viewport -1000 -1000/end Position 52 27/end",
+      "sourceSHA256": "eb55df4ceae8a00ac4b68b431a8bef522c1829fe1e16f0e1beadc38665680813",
+      "translationSHA256": "df17f3e98549986e48e3db0ff8b37f3d9a4cc807335d50732b9b284787827f9f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

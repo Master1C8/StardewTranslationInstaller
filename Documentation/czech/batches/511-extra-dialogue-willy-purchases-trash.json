@@ -1,0 +1,275 @@
+{
+  "id": "511-extra-dialogue-willy-purchases-trash",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 14 Willy purchase and trash-reaction rows against English; verified dynamic placeholder safety, random-speaker and player neutrality, Rybářství terminology, Willy’s established Ahój voice and dásně joke, food wording, and every dialogue marker.",
+  "rows": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityHigh_Willy",
+      "field": null,
+      "source": "Hey, {0}.#$b# So I stopped by Willy's the other day and bought {1} {2}. I've never seen one so fresh! #$b#So I cooked it up for dinner last night, and it filled the house with a {3} smell.. It was a hit!$h#$b#He told me you caught it yourself... I'm impressed!#$e# Anyways...",
+      "translation": "Ahoj, {0}.#$b# Nedávno se mi u Willyho podařilo koupit {1} {2}. Tak čerstvý kus se jen tak nevidí! #$b#Včera to přišlo k večeři a celý dům naplnila {3} vůně.. Všem to chutnalo!$h#$b#Řekl mi, že je to tvůj vlastní úlovek... Působivé!#$e# Každopádně...",
+      "sourceSHA256": "ddd872ce93b1cd5e5e28bcbc43f4ebf151f015a5faa043372d04e495c896bcef",
+      "translationSHA256": "9f8a89bd63e6a72bef20e2b5af2d1b3aa998ad67f87e2915cbc50f90fdc8982e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_1_QualityLow_Willy",
+      "field": null,
+      "source": "Hey, {0}.#$b# So I stopped by Willy's the other day and bought {1} {2}. He said you caught it yourself! #$b#I cooked it up for dinner last night... and, uh... It filled the house with a {3} odor. I don't even want to know where you found that thing...$s#$e#Anyways...",
+      "translation": "Ahoj, {0}.#$b# Nedávno se mi u Willyho podařilo koupit {1} {2}. Řekl mi, že je to tvůj úlovek! #$b#Včera to přišlo k večeři... a, ehm... celý dům naplnil {3} zápach. Ani nechci vědět, kde se ta věc vzala...$s#$e#Každopádně...",
+      "sourceSHA256": "2a76df2ac7e131ae4dd51dd5db7da05472636cf1916eafed4b7ef381b8394b1d",
+      "translationSHA256": "7238e7c90d8fc8a9224ddeb3cd8e222bbc167818e710c1344d60565389c07a45",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh_Willy",
+      "field": null,
+      "source": "Hi... did you sell {1} {2} to the fish shop the other day? I think I bought it...#$e#It was pretty high-quality stuff. I'm impressed.",
+      "translation": "Ahoj... neprodávalo se nedávno v Rybářství {1} {2}? Myslím, že to pak skončilo u mě...#$e#Kvalita byla opravdu vysoká. Působivé.",
+      "sourceSHA256": "e4fc403061a2d2b3d43f4b2132ca47bf064b11022c6e4d30460883bb11c6a2c0",
+      "translationSHA256": "9dca1bcf782a51587b598933d65a970b58cd214aad5e1ecf313b773fb36baca9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityHigh_Jodi_Willy",
+      "field": null,
+      "source": "Hi... did you sell {1} {2} to the fish shop the other day? I think I bought it...#$e#It was pretty high-quality stuff. Very firm meat.",
+      "translation": "Ahoj... neprodávalo se nedávno v Rybářství {1} {2}? Myslím, že jsem to koupila...#$e#Kvalita byla opravdu vysoká. Maso bylo krásně pevné.",
+      "sourceSHA256": "193eb0d35308ee30fa5c0a9503f061c89eb96a5c25291ab360f84cfbe0830efd",
+      "translationSHA256": "2eb670d1dbe97006bc43144f92450c5bc28f2c8fa64dd977ae5ac60065fd78d8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_2_QualityLow_Willy",
+      "field": null,
+      "source": "Hi... did you sell {1} {2} to the general store the other day? I think I bought it...#$e#It smelled kind of fishy, but it was alright.",
+      "translation": "Ahoj... neprodávalo se nedávno v obchodě {1} {2}? Myslím, že to pak skončilo u mě...#$e#Bylo to trochu cítit rybinou, ale jinak v pořádku.",
+      "sourceSHA256": "521fbdb0b827dabd8e1c8bb9a019b71124e916915f3c3a70765ffec67240d018",
+      "translationSHA256": "4779e12d1409432f801575735195a6c34c9428857a8fba68df99804ac57aeb3f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityLow_Rude_Willy",
+      "field": null,
+      "source": "I went shopping last night and picked up {1} {2} on a 'chum-bucket' sale for only {3}g.#$e# It was {4}! No wonder Willy was practically giving that {5} away...",
+      "translation": "Včera večer při nákupu padla volba na {1} {2} v akci „kýbl návnady“ za pouhých {3}g.#$e# Bylo to {4}! Není divu, že Willy rozdával {5} skoro zadarmo...",
+      "sourceSHA256": "eef9f15c26ba0d01780aeea7a64fbec09aea7e9c2d0c76b7c85697291a296964",
+      "translationSHA256": "d94736b86a95056239f64888648681693acf0416ce950aad48f228bf0afdd821",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_QualityHigh_Rude_Willy",
+      "field": null,
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# It was actually pretty {4}.",
+      "translation": "Včera večer při nákupu padla volba na {1} {2} ve slevě za pouhých {3}g.#$e# Bylo to vlastně docela {4}.",
+      "sourceSHA256": "8973bff6b2c08cb3cd1b37125698c0bf1fea8cf47dec087237b7cb9a5fcbf353",
+      "translationSHA256": "3bcf0307d4cbeab97b6fb12622a65248fdc761d761d3fc6b1e79e0db4e6611cd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_3_NonRude_Willy",
+      "field": null,
+      "source": "I went shopping last night and picked up {1} {2} on sale for only {3}g.#$e# I couldn't pass up that great price.",
+      "translation": "Včera večer při nákupu padla volba na {1} {2} ve slevě za pouhých {3}g.#$e# Tak skvělá cena se nedala odmítnout.",
+      "sourceSHA256": "f931ae58e351294607783374dff6d44f83eb698572b9db5916fce61f040d3a6a",
+      "translationSHA256": "888d6d20158ab931f498e4106fa2cea7557ab050899c95feacbc61e8954955fc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_4_Willy",
+      "field": null,
+      "source": "So I was at Willy's other day and he showed me {1} {2} you brought in.#$e#I cooked it up for dinner with some lemon and a side of rice pilaf. Pretty good!$h",
+      "translation": "Nedávno mi Willy ukázal {1} {2} z tvé dodávky.#$e#K večeři to přišlo s citronem a rýžovým pilafem. Docela dobré!$h",
+      "sourceSHA256": "42308efb6a3b78ed07a02f0c8f1d9af5a62cb2f8ec40c1ac12bd13f9c3875b50",
+      "translationSHA256": "2adfb5f5cc7d22a2a0725ec6cc4bda24ffdfeed68481e5d141b64f87837ba54f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityLow_Willy",
+      "field": null,
+      "source": "Ahoy... you know that {2} you sold me the other day? Well, I sizzled it up in me cabin last night...#$b#T'was the mealiest fish I've ever set me gums on...$s",
+      "translation": "Ahój... pamatuješ na {2} z tvé nedávné dodávky? Včera jsem si to osmahl v kajutě...#$b#Byla to nejmoučnatější ryba, jakou kdy sevřely mé dásně...$s",
+      "sourceSHA256": "9dbad31b546a83dfd57cfa2e58948799c0cc84a1068dd6f643e69052e74dbf0c",
+      "translationSHA256": "de509b1fc1cb5d78bb853e70c2eb3c19ed17c7097d68e6e70c169443cfecbdda",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "PurchasedItem_Pierre_QualityHigh_Willy",
+      "field": null,
+      "source": "Ahoy! Remember that {2} you brought in the other day? Well, I sizzled it up in me cabin last night...#$b#T'was the finest fish I've had since I was a wee lad!$h",
+      "translation": "Ahój! Pamatuješ na {2} z tvé nedávné dodávky? Včera jsem si to osmahl v kajutě...#$b#Byla to nejlepší ryba, jakou jsem jedl od dob, kdy jsem byl malý kluk!$h",
+      "sourceSHA256": "2c9c94c4b92ac2cea8ad9360dfc385ed6fb63bbf633381bb1b310c86d151baec",
+      "translationSHA256": "eb2daab25ae7e56a37386c790eabcf2eacfb639ee7bfb2ccdcda96ef33675ee3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Town_DumpsterDiveComment_Child",
+      "field": null,
+      "source": "Eww... What are you doing?$s",
+      "translation": "Fuj... Co to děláš?$s",
+      "sourceSHA256": "6469884574dc53b03c121b606c98bd0aebaa13eda31c91b5f63dc132201d27cf",
+      "translationSHA256": "4b6e2b5b3977246262c59302b5b3cb173c0fdd411c12664002ef77d3b77d4b48",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Town_DumpsterDiveComment_Teen",
+      "field": null,
+      "source": "Um... Why are you digging in the trash?$s",
+      "translation": "Ehm... Proč se hrabeš v odpadcích?$s",
+      "sourceSHA256": "a36d4a886328d9ddc74388c672e0058f8ccff9f4e0f267708883f5c043bb4136",
+      "translationSHA256": "e259c22c7cc0632de1749a9bd15fe5c54fa27a0d2ae0df1c54deeb70ba4280ff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "Town_DumpsterDiveComment_Adult",
+      "field": null,
+      "source": "Hey, Stop that! ...Yuck!$s",
+      "translation": "Hej, přestaň! ...Fuj!$s",
+      "sourceSHA256": "e3046501e4f18530caec871cff1dea5c0a82f8d4ad15836956f994634250df75",
+      "translationSHA256": "038304f68da6f050a3a5df1e3b136e924a702be1e9a68df6650ac129e281fd8f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

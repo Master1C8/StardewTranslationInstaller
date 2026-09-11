@@ -1,0 +1,47 @@
+{
+  "id": "418-josh-house-alex-self-doubt",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed both complete Alex events against English; verified literacy insecurity, every book-scene response, motivational recovery and halting philosophy joke, plus his strength-training context, professional-sports doubts, apology and neutral friendship wording. Checked Alex's voice, emotional markers, placeholder and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "21/f Alex 1250/p Alex",
+      "field": null,
+      "source": "sadpiano/12 5/farmer 10 11 0 Alex 13 5 0/skippable/pause 500/speak Alex \"*sigh*$s\"/doAction 10 9/move farmer 0 -5 1/move farmer 3 0 0/pause 500/faceDirection Alex 2/pause 600/speak Alex \"Oh, Hi @.$s\"/faceDirection Alex 0/move farmer 1 0 0/move farmer 0 -1 3/emote farmer 8/pause 500/emote Alex 28/speak Alex \"Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous.$s#$b#But you can't make a decent living in this world without a brain...$s\"/faceDirection Alex 1/speak Alex \"$q 57 null#I'm worthless...$s#$r 57 0 Event_books1#That's crazy. You're a genius!#$r 57 50 Event_books2#We all have our strengths and weaknesses.#$r 57 -50 Event_books3#Worthless? Yeah, that about sums it up.\"/faceDirection Alex 0/pause 1000/emote Alex 16/speak Alex \"Well, I'm not going to give up!$a\"/faceDirection Alex 1/speak Alex \"If I work hard, I can do anything!\"/jump farmer/pause 800/speak Alex \"Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about?$h\"/faceDirection farmer 2/animate farmer false true 100 102 103/pause 2000/globalFade/viewport -1000 -1000/stopAnimation farmer/end",
+      "translation": "sadpiano/12 5/farmer 10 11 0 Alex 13 5 0/skippable/pause 500/speak Alex \"*povzdech*$s\"/doAction 10 9/move farmer 0 -5 1/move farmer 3 0 0/pause 500/faceDirection Alex 2/pause 600/speak Alex \"Ach, ahoj, @.$s\"/faceDirection Alex 0/move farmer 1 0 0/move farmer 0 -1 3/emote farmer 8/pause 500/emote Alex 28/speak Alex \"Podívej na všechny ty knihy. Nepřečetl jsem ani jednu. Už jen pomyšlení, že nějakou otevřu, mě znervózňuje.$s#$b#Jenže bez mozku se v tomhle světě nedá slušně uživit...$s\"/faceDirection Alex 1/speak Alex \"$q 57 null#Jsem k ničemu...$s#$r 57 0 Event_books1#To je nesmysl. Jsi génius!#$r 57 50 Event_books2#Všichni máme své silné a slabé stránky.#$r 57 -50 Event_books3#K ničemu? Jo, to tě docela vystihuje.\"/faceDirection Alex 0/pause 1000/emote Alex 16/speak Alex \"No, já se nevzdám!$a\"/faceDirection Alex 1/speak Alex \"Když budu tvrdě pracovat, dokážu cokoli!\"/jump farmer/pause 800/speak Alex \"Hej, možná spolu brzy zajdeme na večeři a probereme... fi-lo-zo-fii. O tom vy chytří lidé mluvíte, ne?$h\"/faceDirection farmer 2/animate farmer false true 100 102 103/pause 2000/globalFade/viewport -1000 -1000/stopAnimation farmer/end",
+      "sourceSHA256": "9cb847118a3aca1618016f387e4783eec4dde16656347c74264ed2038ced7e83",
+      "translationSHA256": "a645347d62577a968fc216463907c1d779a84f7361e6fe35d9c8eb0611cc7a61",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "2119820/f Alex 1500/p Alex",
+      "field": null,
+      "source": "jaunty/-1000 -1000/farmer 10 10 0 Alex 13 6 2/skippable/showFrame Alex 28/animate Alex false true 100 28 29 30 31 32 32 31 30 29 28/viewport 13 6 true/pause 6500/stopAnimation Alex/pause 1000/doAction 10 9/move farmer 0 -3 1/move farmer 2 0 0/showFrame Alex 34 true/animate Alex false false 100 28 33 34/pause 600/speak Alex \"Oh! Hey... I was just doing my daily strength training routine.$6#$b#... sorry I have no shirt on.$6\"/pause 1000/emote Alex 40/speak Alex \"Uh... @? I've been meaning to talk to you about something...$8\"/emote farmer 8/pause 1000/speak Alex \"I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that.$8\"/pause 1000/showFrame Alex 33/pause 1000/speak Alex \"I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know?$8#$b#Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that.$6\"/move farmer 1 0 0/pause 1000/jump farmer/pause 800/showFrame Alex 34/pause 800/emote Alex 32/pause 1200/showFrame Alex 29/pause 100/showFrame Alex 28/pause 100/showFrame Alex 29/pause 100/animate Alex false true 50 30 31 32 32 31 30/pause 3000/globalFade/viewport -1000 -1000/end",
+      "translation": "jaunty/-1000 -1000/farmer 10 10 0 Alex 13 6 2/skippable/showFrame Alex 28/animate Alex false true 100 28 29 30 31 32 32 31 30 29 28/viewport 13 6 true/pause 6500/stopAnimation Alex/pause 1000/doAction 10 9/move farmer 0 -3 1/move farmer 2 0 0/showFrame Alex 34 true/animate Alex false false 100 28 33 34/pause 600/speak Alex \"Ach! Ahoj... Zrovna jsem dělal svůj každodenní silový trénink.$6#$b#... promiň, že nemám tričko.$6\"/pause 1000/emote Alex 40/speak Alex \"Ehm... @? Už nějakou dobu jsem si s tebou chtěl o něčem promluvit...$8\"/emote farmer 8/pause 1000/speak Alex \"Začínám si uvědomovat, že... no, že jsem se k tobě dřív choval opravdu hrubě. Víš, kvůli tomu, jak jsem pořád mluvil o profesionální kariéře a tak.$8\"/pause 1000/showFrame Alex 33/pause 1000/speak Alex \"Možná se na profesionální sport vlastně vůbec nehodím... třeba to byl jen dětský sen... víš?$8#$b#Každopádně... chci se ti omluvit, že jsem se vytahoval a byl otravný. Vážím si toho, že naše přátelství přes to všechno vydrželo.$6\"/move farmer 1 0 0/pause 1000/jump farmer/pause 800/showFrame Alex 34/pause 800/emote Alex 32/pause 1200/showFrame Alex 29/pause 100/showFrame Alex 28/pause 100/showFrame Alex 29/pause 100/animate Alex false true 50 30 31 32 32 31 30/pause 3000/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "68ae14f8781ffb783da6740dd72e404e6a6ca1c31ad5388fe4be854b1829dd34",
+      "translationSHA256": "d1fde976587746ba13ef24315642ed2bccda90b80803ff7f5ffeb64d86b1ccc2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "id": "601-mail-rewards-invitations-and-notices-d",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read all 20 EN/CS mail rows after normalizing Hat Mouse's catchphrase; verified meaning, character voice, gender, item/money commands, IDs, placeholders, separators, and subjects. The recurring 'poke' address now consistently uses 'kámo'; no further objective issue found in this batch.",
+  "rows": [
+    {
+      "target": "Data/mail",
+      "key": "quest35",
+      "field": null,
+      "source": "Dear @,^You've been such a help around town since you moved here... everyone keeps telling me all the wonderful things you've done for them! Please accept this thank-you prize. ^   -Mayor%item money 2500 2501 %%[#]Thank-you From Lewis",
+      "translation": "Ahoj, @,^od svého příchodu do města tu všem tolik pomáháš... každý mi vypráví, jak úžasně mu pomáháš! Přijmi prosím tuto odměnu jako poděkování. ^   -Starosta%item money 2500 2501 %%[#]Poděkování od Lewise",
+      "sourceSHA256": "4242c43291e9f49d3c8e51d4c25458efde8fc02cd18768918f5c761b7ff6fb5f",
+      "translationSHA256": "0297a1c09b01506832966d86822c232620f696ed314027cbb0e188a895b1cf9a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "quest100",
+      "field": null,
+      "source": "@,^I am pleased to announce that you've been chosen as \"Neighbor of the year\"! That comes with a 10,000g prize! Congratulations! Everyone in town wants to say 'thanks' for all you've done. ^   -Mayor%item money 10000 10001 %%[#]Neighbor Of The Year",
+      "translation": "@,^s potěšením ti oznamuji, že získáváš titul „Sousedská hvězda roku“! S titulem se pojí odměna 10 000 g! Blahopřeji! Všichni ve městě ti chtějí poděkovat za všechno, co pro ně děláš. ^   -Starosta%item money 10000 10001 %%[#]Sousedská hvězda roku",
+      "sourceSHA256": "7a68a53e0297ac469951a3bd77e24e16345eea7179df5dccb3b7a5e0c282c5b7",
+      "translationSHA256": "de27d75aa690cc023640c1841b477c5cade3c2047262fb11552fc3ca46488b22",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "CF_Fish",
+      "field": null,
+      "source": "Dear @,^ Your angling skills surpass even my ol' Pappy's... I'm impressed. ^ This stardrop's been passed down from Willy Sr. to Willy Jr. for... oh, heck. Prob'ly a thousand years.^Seein' as I don't have any kids... I want you to have it.^^ -Willy   ^  %item id (O)434 1 %%[#]Willy's Family Heirloom",
+      "translation": "Ahoj, @,^ tvé rybářské umění překonává dokonce i mého starého tátu... To na mě udělalo dojem. ^ Tahle Hvězdná kapka se dědí z Willyho staršího na Willyho mladšího už... inu, nejspíš tisíc let.^A protože nemám děti... chci ji dát tobě.^^ -Willy   ^  %item id (O)434 1 %%[#]Willyho rodinné dědictví",
+      "sourceSHA256": "98071f5b697dbde919aacf0feef91a0fd4b4031421f36ef6d83734b41b7fc437",
+      "translationSHA256": "83e31c11aa299773484606c9238efbd1024bf1c562525a73a476049149612e16",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "adoptionLetter",
+      "field": null,
+      "source": "Dear @ and spouse,^Congratulations! Your adoption application has been approved.^We're working hard to choose the perfect baby to match your profile.^Your new family member will arrive in 2 weeks.^^-Ferngill Adoption Agency[#]Adoption Notice",
+      "translation": "Pro @ a spouse,^blahopřejeme! Vaše žádost o adopci byla schválena.^Usilovně vybíráme to pravé dítě, které bude odpovídat vašim požadavkům.^Nový člen rodiny dorazí za 2 týdny.^^-Adopční agentura Republiky Ferngill[#]Oznámení o adopci",
+      "sourceSHA256": "b3ea3a5af6f22472f8a6d32ed318db89cde6f8c542ee6c4f61813371006657b8",
+      "translationSHA256": "d33761ccffa4234b3710c9419128aa67fa4ccede1f09ca833fee1e3a9afaf081",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "stardewHeroMine",
+      "field": null,
+      "source": "Secret Message: If you can reach the bottom of the mines one more time, a secret awaits you. Be careful, the mines have become more dangerous.[#]Secret Message",
+      "translation": "Tajná zpráva: Pokud se ještě jednou dostaneš na dno Dolů, čeká tam na tebe tajemství. Dávej pozor, Doly jsou teď nebezpečnější.[#]Tajná zpráva",
+      "sourceSHA256": "a03e97af5d7070cac26294d73a49a81baefea7d5d49c39229858f234151ea10a",
+      "translationSHA256": "651318da499f29a1b615595b3b9cdeebb6c395b758b54286b58c5c14b414c51f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fertilizers",
+      "field": null,
+      "source": "Dear neighbor,^I hope you are feeling settled in your new home. I am writing to let you know that Pierre's store is now selling fertilizers! Why don't you swing by and see if you can afford a few dozen boxes or so?  ^   -Pierre[#]Pierre's Fertilizers",
+      "translation": "Zdravím ze sousedství,^doufám, že se v novém domově už cítíš dobře. Píšu ti, abych ti oznámil, že Pierreův obchod teď prodává hnojiva! Co takhle se zastavit a podívat se, jestli si můžeš dovolit tak pár desítek balení?  ^   -Pierre[#]Hnojiva od Pierra",
+      "sourceSHA256": "327f31bd97173f9708a7253a9a101bf7fc230d0d1b065217181aa00456d96a17",
+      "translationSHA256": "4adb0f5fdd8abb7cc9526100a897e22a6b0b46a3ea92dcd008dbbd49bb724984",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "fertilizers2",
+      "field": null,
+      "source": "Dear @,^I am now selling higher quality fertilizers, as well as new crop selections! See you soon. ^   -Pierre[#]Pierre's High Quality Fertilizers",
+      "translation": "Ahoj, @,^teď prodávám kvalitnější hnojiva a také nové druhy plodin! Brzy na viděnou. ^   -Pierre[#]Kvalitní hnojiva od Pierra",
+      "sourceSHA256": "2077b41cb9197966fdb7d63b303e2d1b1d67607f69bfe4cba0e5e00d1309253c",
+      "translationSHA256": "fb9679e98af1fbe1725e1a07b90c3dff79313f534f417441eaf5b19b93a2e8c5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "abbySpiritBoard",
+      "field": null,
+      "source": "Hi @.^One of these days you should come to my room after dark... Maybe around 8pm. ^I want to show you something. ^   -Abby[#]Abby's Note",
+      "translation": "Ahoj, @.^Někdy se po setmění zastav v mém pokoji... Třeba kolem osmé večer. ^Chci ti něco ukázat. ^   -Abby[#]Vzkaz od Abby",
+      "sourceSHA256": "3f4d756978a568e12ca25dde5312c15172c2228fecfdcf159b073c68eb9b439f",
+      "translationSHA256": "a58732b781bc20f4ad5b1667f2d9406a1da065c37876c116d1b946c4edd4e14d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "pennySpa",
+      "field": null,
+      "source": "Meet me in the bath house after dark. ^   -Penny[#]Penny's Note",
+      "translation": "Sejdeme se po setmění v lázních. ^   -Penny[#]Vzkaz od Penny",
+      "sourceSHA256": "9df22af110a54d5d029e415ed707ce4b4727bd80137348cdebacea318f70b8ce",
+      "translationSHA256": "1b9d5e7b2640421a1c3fc51a1f3716bf8ce5a5d3e07b9a1c7e945604b86a0c2b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "incubator",
+      "field": null,
+      "source": "Dear @,^^Thank you for purchasing a coop upgrade! In addition to doubling the capacity of your coop, I've taken the liberty of installing an incubator. ^To use the incubator, simply place an egg inside. If you have space left in your coop, the egg will hatch in several days!^^As always, thanks for your business.^-Robin[#]About The Incubator",
+      "translation": "Ahoj, @,^^děkuji za zakoupení vylepšení kurníku! Kromě zdvojnásobení jeho kapacity jsem do něj rovnou nainstalovala Inkubátor. ^Stačí do Inkubátoru vložit vejce. Pokud v kurníku zbývá místo, za několik dní se z vejce něco vylíhne!^^Jako vždy děkuji za tvou objednávku.^-Robin[#]O Inkubátoru",
+      "sourceSHA256": "ae3ac06dc12d9596d3a7cee2fb56deb29623e19b68039637e77659fc6f2e2975",
+      "translationSHA256": "def6d5546f63d04cb1dfc3ba7c3a5abe2a9491a48f09c7accc03b94c1d4c0c13",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "hatter",
+      "field": null,
+      "source": "Hi.^^Me sell hats. Okay, poke?^^Come to old old old haus, poke. Bring coines.^^-hat mouse[#]Hiyo, Poke",
+      "translation": "Ahoj.^^Já prodávat klobouky. Dobře, kámo?^^Přijít do starý starý starý domek, kámo. Přinést penízky.^^-klobouková myš[#]Čauky, kámo",
+      "sourceSHA256": "3f41f78c6b4b6685e0b63536f8b24e1274223974c482cabf6178871caee48fdd",
+      "translationSHA256": "8960419461a15447ec3601cd4bd66473b5678d7822478d24217930b35066dfd3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "Beat_PK",
+      "field": null,
+      "source": "Congratulations!!^^You beat 'Journey Of The Prairie King', and were randomly selected in our exclusive winner's sweepstakes! ^You've won a Prairie King Arcade System of your very own!^Now you can enjoy 'Journey Of The Prairie King' from the comfort of your own home.^^You deserve it!^-Prairie King Development Team %item id (BC)141 %%[#]P.K. Congratulations!",
+      "translation": "Blahopřejeme!!^^Podařilo se ti dokončit Putování krále prérie a náhodně jsme tě vybrali do naší exkluzivní výherní loterie! ^Vyhráváš vlastní arkádový automat Krále prérie!^Teď si můžeš Putování krále prérie užívat z pohodlí domova.^^Zasloužíš si ho!^-Vývojářský tým Putování krále prérie %item id (BC)141 %%[#]Blahopřání od Krále prérie!",
+      "sourceSHA256": "3d6abc03ae61d29d30f97cd25cad1b6125f040aebc8ee2ffd9e4b0ffc3c9470a",
+      "translationSHA256": "ec416e513b2851f737e8eb0433a8aaa6fd2a8eaea189a0e9a9ee31080a2d01de",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "JunimoKart",
+      "field": null,
+      "source": "Congratulations!!^^You beat all the levels in 'JunimoKart'... you're actually the first person in the entire Ferngill Republic to do so!^Your prize: a home version of Junimo Kart!^^Have fun!^-Junimo Kart Development Team %item id (BC)159 %%[#]Junimo Kart Success!",
+      "translation": "Blahopřejeme!!^^Podařilo se ti dokončit všechny úrovně Junimo Kart... a v celé Republice Ferngill se to před tebou nikomu nepovedlo!^Tvá odměna: domácí verze Junimo Kart!^^Příjemnou zábavu!^-Vývojářský tým Junimo Kart %item id (BC)159 %%[#]Úspěch v Junimo Kart!",
+      "sourceSHA256": "70379f6fd61bcfbf43e8b8edbfe49124ff0766914f55599501d1332e0dac299e",
+      "translationSHA256": "03bdf54b7c59e4a923e3e8b4ebb46bfd06cae14d2e1f18c2f3796e8caa756196",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottReading",
+      "field": null,
+      "source": "@,^I have great news... my novel is finished!! I'm giving a public reading this afternoon at the library. Hope to see you there! ^   -Elliott[#]Elliott's Reading",
+      "translation": "@,^mám skvělou zprávu... Můj román je hotový!! Dnes odpoledne pořádám veřejné čtení v knihovně. Doufám, že dorazíš! ^   -Elliott[#]Elliottovo čtení",
+      "sourceSHA256": "d30c5a96bfdc2d3e6ee5a3466be9998c674196126c621e9fde821af889cee858",
+      "translationSHA256": "43223f117528b43073043a5b984853dac5e27d59be7b099513c8f1e24a44e48c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "elliottBoat",
+      "field": null,
+      "source": "Meet me at the docks on a sunny morning. I've got something in mind. ^   -Elliott[#]Elliott's Note",
+      "translation": "Sejdeme se za slunečného rána v docích. Něco mám v plánu. ^   -Elliott[#]Vzkaz od Elliotta",
+      "sourceSHA256": "8a54934429f14fec3cbf688a7d4700c235e59e4697fefc048366a6ad7351e893",
+      "translationSHA256": "f97083a23954ac76ff62762d4e5f9deefa58876dac730b87f773f2230de3362a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "harveyBalloon",
+      "field": null,
+      "source": "@,^I have a surprise for you. Meet me by the railroad tracks. ^   -Harvey[#]Harvey's Surprise",
+      "translation": "@,^mám pro tebe překvapení. Sejdeme se u železniční trati. ^   -Harvey[#]Harveyho překvapení",
+      "sourceSHA256": "27a3dd6fe9daf256203e9a0a781c30b7ea1c2ee8fa6a42a694319ac75dcd7be1",
+      "translationSHA256": "2b01313517545bf5a6e971c8c859d0a576f763c139659998f25561077956c750",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "samMessage",
+      "field": null,
+      "source": "@,^meet me in front of my house tonight after dark. ^   -Sam[#]Sam's Note",
+      "translation": "@,^sejdeme se dnes v noci po setmění před mým domem. ^   -Sam[#]Vzkaz od Sama",
+      "sourceSHA256": "54b15684953ff77dacd5181e0100daa7d0a95e760b13a8558b5daa4bdbe562ae",
+      "translationSHA256": "7655b6975f8024f2a53dd40e0f458ec4019b873122e8cbb4c78475f764bf5cd3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "joshMessage",
+      "field": null,
+      "source": "@,^meet me at the saloon tonight after dark. ^   -Alex[#]Alex' Invitation",
+      "translation": "@,^sejdeme se dnes v noci po setmění v saloonu. ^   -Alex[#]Alexova pozvánka",
+      "sourceSHA256": "550d92ae77cd331f8073f2ce5ebf84ce5962bc3c31836bd0a7a0b90dafed93a4",
+      "translationSHA256": "27627dc8a23fb42eac4a917483adfaf85db2f5d90f93b596bbe0559480d2767d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "lewisStatue",
+      "field": null,
+      "source": "@,^^In the future, I'd appreciate it very much if you refrained from placing my PRIVATE belongings in town for all to see!^^I'm very displeased!^^Take this money and never speak of my 'project' to anyone.%item money 750 751 %%[#]Lewis' Angry Letter",
+      "translation": "@,^^do budoucna tě důrazně žádám: přestaň vystavovat mé SOUKROMÉ věci ve městě všem na odiv!^^Jsem krajně nespokojený!^^Vezmi si tyto peníze a nikdy se před nikým nezmiňuj o mém „projektu“.%item money 750 751 %%[#]Lewisův rozzlobený dopis",
+      "sourceSHA256": "034f263183bc28fc344036dca264c93861f0857eaedac345db2679341aa6fb0b",
+      "translationSHA256": "60931b370f5fda9326f62adbcf58a3a85d6281a16ef469e6aa4e19535d533b48",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/mail",
+      "key": "marnieAutoGrabber",
+      "field": null,
+      "source": "@,^I've got a new item in stock... It's called the \"Auto-Grabber\".^^This thing can milk your cows and goats, shear your sheep, gather eggs, and pluck your wooly rabbits... all on its own!^^It's considered a 'luxury item', so I'm charging 25,000g.^^    -Marnie[#]Auto-Grabber Notice",
+      "translation": "@,^mám na skladě novinku... Jmenuje se „Automatický sběrač“.^^Sám dokáže podojit krávy a kozy, ostříhat ovce, posbírat vejce a sebrat vlnu od huňatých králíků... úplně bez pomoci!^^Považuje se za „luxusní zboží“, takže za něj účtuji 25 000 g.^^    -Marnie[#]Oznámení o Automatickém sběrači",
+      "sourceSHA256": "b563d3542d12c149c967d735c8a80e0a5a44880b30c0949be0b7b3fc3d3a6d5c",
+      "translationSHA256": "b3d9d1147a4db2f9d9556cfa7f4efe25f84f7df33b3e634b150b03b6c9f15798",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

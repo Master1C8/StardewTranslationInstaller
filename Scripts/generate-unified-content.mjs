@@ -219,6 +219,15 @@ const languages = [
     title: "assets/title/TitleButtons-greek.png",
     fonts: "assets/fonts/greek",
   },
+  {
+    directory: "czech",
+    suffix: "Czech",
+    code: "cs-vnrevival",
+    buttonTarget: "ButtonCzech",
+    button: "assets/button-czech.png",
+    title: "assets/title/TitleButtons-czech.png",
+    fonts: "assets/fonts/czech",
+  },
 ];
 
 const entries = {};

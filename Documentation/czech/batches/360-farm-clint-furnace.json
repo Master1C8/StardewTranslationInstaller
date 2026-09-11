@@ -1,0 +1,28 @@
+{
+  "id": "360-farm-clint-furnace",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read the complete event command and both languages after the neutral recipe message correction. Verified Clint voice, furnace terminology, recipe and quest identifiers, all dialogue, timing, movement and control structure. No further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "992553/t 600 1130/n copperFound",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"Uh... Hi there. Good morning.#$b#I noticed that you've been breaking some rocks open and finding ore. That's good!\"/pause 500/speak Clint \"If you want to get the most out of the ores you find, you'll need a furnace.\"/pause 500/speak Clint \"Just so happens I had an extra set of blueprints lying around. Here, I want you to have them.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"Learned how to craft a 'Furnace'\"/pause 800/speak Clint \"The furnace allows you to smelt metal bars. The bars can be used for crafting, construction, and tool upgrades.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \" When you've smelted a few copper bars, consider having me upgrade one of your tools. It can make your work a lot easier.#$b#Well, okay. I'm heading home. Take it easy.\"/pause 200/addQuest 11/end",
+      "translation": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"Ehm... Ahoj. Dobré ráno.#$b#Všiml jsem si, že rozbíjíš kameny a nacházíš rudu. To je dobře!\"/pause 500/speak Clint \"Jestli chceš z nalezené rudy vytěžit co nejvíc, budeš potřebovat pec.\"/pause 500/speak Clint \"Náhodou se mi tu povalovala jedna sada plánů navíc. Tady, jsou tvoje.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"Teď umíš vyrábět ‚Pec‘\"/pause 800/speak Clint \"V peci můžeš tavit kovové ingoty. Ingoty lze použít k výrobě, stavbě a vylepšování nástrojů.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \"Až vytavíš několik měděných ingotů, zvaž, jestli si u mě nenechat vylepšit některý nástroj. Mohlo by ti to práci výrazně usnadnit.#$b#Tak dobře. Mířím domů. Měj se.\"/pause 200/addQuest 11/end",
+      "sourceSHA256": "9ecc8ac793b663c972fc6844037aaee88b564b003f8ea7a3849a83af0eb4b302",
+      "translationSHA256": "81dac1c98c6f7bd57a3c04cf4c0edccb26433b87b44d59ea7909f45d6b3411e2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

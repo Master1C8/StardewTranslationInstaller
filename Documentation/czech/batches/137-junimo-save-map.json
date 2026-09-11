@@ -1,0 +1,1399 @@
+{
+  "id": "137-junimo-save-map",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full source/Czech comparison reread after corrections; meaning, grammar, terminology, placeholders, markup, and control tokens verified with no remaining objective issue.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "JunimoNoteMenu.cs.10786",
+      "field": null,
+      "source": "We    the  Junimo are    happy to    aid  you.  In     return we     ask for gifts   of      the valley.    If you   are one     with    forest   magic    then you    will   see    the true    nature   of  this scroll.",
+      "translation": "My    junimové vám    rádi    pomůžeme.  Na     oplátku vás     žádáme o dary   z      údolí.    Pokud jste   zajedno     s    lesní   magií,    spatříte    pravou   podstatu    tohoto   svitku.",
+      "sourceSHA256": "35a29f62e244d84c819aca81b66726a00ec8859dd591352b455ea63ce5c64899",
+      "translationSHA256": "8590a7fc716a0008b0d1d41e27c53ac4b6f69582f22aefee6330b4e3f3dac973",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10992",
+      "field": null,
+      "source": "OK",
+      "translation": "Potvrdit",
+      "sourceSHA256": "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3",
+      "translationSHA256": "93496613a9ff55593fe9f91b6c2724361a33fc9de54a4683f1598867314aad4c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10993",
+      "field": null,
+      "source": "Cancel",
+      "translation": "Zrušit",
+      "sourceSHA256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translationSHA256": "6c77d8a4b0adf05e8febe203fe3676c4d66994cd1b147a1ed4b7d3e9a90d2ca0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.10994",
+      "field": null,
+      "source": "Delete File",
+      "translation": "Smazat soubor",
+      "sourceSHA256": "e1e5fe2043bd3003147a785a42a5edddccbf57d465ca32ad0f033cf7b64f04c8",
+      "translationSHA256": "ef846e5dbc512abdab4c234423e215250bb71c28fe1f1fae57164314c402d9d1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11019",
+      "field": null,
+      "source": "{0} Farm",
+      "translation": "Farma {0}",
+      "sourceSHA256": "2fc11db3c7d866545ad11747d3b3135f8a8de11167eb36fa9e46331ee45daa88",
+      "translationSHA256": "14facd9a3b29ad232bab1e9af13527ae86f420c41c228bca9189e8b8a9d1e55e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11020",
+      "field": null,
+      "source": "{0}g",
+      "translation": "{0} g",
+      "sourceSHA256": "40eee5c71b68a8a29103ebd7617151f4291a1472a37e7455be4122e7ee7f63b7",
+      "translationSHA256": "e4c523bf9c258cf01dfeb02e2ad90065796c04b61e08beb027ca51e7bc77cd10",
+      "preservationReason": "The g currency suffix is language-independent game notation and remains attached directly to the numeric placeholder.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11022",
+      "field": null,
+      "source": "No Saved Games Found",
+      "translation": "Nebyla nalezena žádná uložená hra",
+      "sourceSHA256": "a5f41366adf6846662cf3818e4e152b4b9831a23181b2ff31e5d4f1f16501119",
+      "translationSHA256": "fbbc14e88e4e01673e409ae5fed964d826133dd8c86650bca87002d1a6b9ad02",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LoadGameMenu.cs.11023",
+      "field": null,
+      "source": "Really delete file: {0}?",
+      "translation": "Opravdu smazat soubor {0}?",
+      "sourceSHA256": "c1dc8d8f08864db397c43ba2459bb6ce0a8fdccd9583d1c11c3e2ed6b3c809cb",
+      "translationSHA256": "25e21e954844d7b4620c28953b237a0f1ca9542a299d630390bfdad48d83bd22",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11062",
+      "field": null,
+      "source": "Calico Desert",
+      "translation": "Poušť Calico",
+      "sourceSHA256": "4fa0c0ca2e2f640ac2bfd063e49a105c88ebfc6a17bfafa3770ffdd6c0a4933b",
+      "translationSHA256": "e6a7f291bc5af5385c1bb93d92f3048df7c4c45cc10eb99fe0f4ba6621f98494",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11064",
+      "field": null,
+      "source": "{0} Farm",
+      "translation": "Farma {0}",
+      "sourceSHA256": "2fc11db3c7d866545ad11747d3b3135f8a8de11167eb36fa9e46331ee45daa88",
+      "translationSHA256": "14facd9a3b29ad232bab1e9af13527ae86f420c41c228bca9189e8b8a9d1e55e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11065",
+      "field": null,
+      "source": "Backwoods",
+      "translation": "Zálesí",
+      "sourceSHA256": "259697c9441848f9512d27e9771a60260bca1fea0c076d0b2301eaa1efe92f56",
+      "translationSHA256": "2fe253779c990be97103bcab31401552053bde2eff8a3cb4af80a1a7a8d5878a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11066",
+      "field": null,
+      "source": "Bus Stop",
+      "translation": "Autobusová zastávka",
+      "sourceSHA256": "026cdef0904d004f58bc54cd2064c094da2347fb79edc3b62d1aa5bb1f0f6a8f",
+      "translationSHA256": "907b18cda7047989f9c2fd45528d1983c64dea835a3e5e16d54fee8a2bbbdefa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11067",
+      "field": null,
+      "source": "Wizard's Tower",
+      "translation": "Čarodějova věž",
+      "sourceSHA256": "8f9668b59451763219f2fc5b7953747e9c93cc40906f898bee74b526055b2e1b",
+      "translationSHA256": "62e03af7092274e745b170279017e156602ed96b009e693918444b600395844f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11068",
+      "field": null,
+      "source": "Marnie's Ranch",
+      "translation": "Ranč Marnie",
+      "sourceSHA256": "2f65e7dafab60e3f980be028cfa470979be5b872b2a3aeebd15a6a319fc9a145",
+      "translationSHA256": "2a34a18c5cb225c27c3533bbcc51a4fe473df38ed2478e603209a2b7bb674e38",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11069",
+      "field": null,
+      "source": "Open 9:00AM to 4:00PM most days",
+      "translation": "Většinu dní otevřeno 9:00–16:00",
+      "sourceSHA256": "cca4ed71b07fedf32aeb83647eecedb4a204ef4d5bd0a969aa3a75a2e6110112",
+      "translationSHA256": "6c1e703a46256535804693fc1cd6f59bfd8b68a853406d119158a0aefcc8c41f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11070",
+      "field": null,
+      "source": "Leah's Cottage",
+      "translation": "Leahina chalupa",
+      "sourceSHA256": "774a35ec156f3a46046e3f5144a10e68f44677295dbf40f06ed194ef83476190",
+      "translationSHA256": "889a7e7f903bee0b3638a7aa228eaddab9b502c14f9b0f62b18b0c5e8c7ddb8b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11071",
+      "field": null,
+      "source": "1 Willow Lane",
+      "translation": "Vrbová 1",
+      "sourceSHA256": "45cc71a17beb27f8d7cf98a88a32b92fccba8a67b1486c7f3624d37578567e40",
+      "translationSHA256": "edb433c55fef38ea8ba6f0051094ab20ae7010a4365aa934575a8b9e0e39c653",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11072",
+      "field": null,
+      "source": "Home of Jodi, Kent & Sam",
+      "translation": "Domov Jodi, Kenta a Sama",
+      "sourceSHA256": "a04e55948d3b27379ff6892902018007c70606fc551f959962fbc2c061d10365",
+      "translationSHA256": "17c1e0f248e0676aabf26c80f675bf266d4da0f58b6add6bf54b496fbe382688",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11073",
+      "field": null,
+      "source": "2 Willow Lane",
+      "translation": "Vrbová 2",
+      "sourceSHA256": "30b559a611b5ac75f91a89a63a78e43005bcb3e2d150b654fae5067f74eb2547",
+      "translationSHA256": "048ced5661feba9608e87a470ef7e8ccf6f7de09d814be1838eb269faaa01071",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11074",
+      "field": null,
+      "source": "Home of Emily & Haley",
+      "translation": "Domov Emily a Haley",
+      "sourceSHA256": "6f779632a0b96da5de8d3cdc367bdd97c730bdfe6812b46cd8eb913476f81364",
+      "translationSHA256": "2926633acd5f921701db458ab8c7f9d42d526e265125dcf922071f3adb5d094c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11075",
+      "field": null,
+      "source": "Town Square",
+      "translation": "Náměstí",
+      "sourceSHA256": "9472f75823a1c7e0487fa98c7d83e68bd1143849ac1b23d7943db5565f22115d",
+      "translationSHA256": "9e892dafb8b57d4dc28169d35fcbe8d769570c6e4d45e4997e4fcad72f02b3d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11076",
+      "field": null,
+      "source": "Harvey's Clinic",
+      "translation": "Harveyho klinika",
+      "sourceSHA256": "d4ef525fc8765f0d71a5234952a2e802bf475ac31a8022214072036ebb2ef263",
+      "translationSHA256": "ec5c2883eea733fa6fc0a4db1c405a86835bf825c004ceaeab0f76a25cf9b0de",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11077",
+      "field": null,
+      "source": "Open 9:00AM to 3:00PM",
+      "translation": "Otevřeno 9:00–15:00",
+      "sourceSHA256": "a12b721315f1f80bc98f5edeba186d749bba3c9b9fbfd4544dca646dba00867c",
+      "translationSHA256": "5960ab4fce7d2ed1c3a1d7017db7ded86b2de2fbfde8f1649f213e521d30c080",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11078",
+      "field": null,
+      "source": "Pierre's General Store",
+      "translation": "Pierreův obchod se smíšeným zbožím",
+      "sourceSHA256": "e939e2d1217f7a30fafe2b5e3f9a97419f0589fb434b07bfca1eb90f49494d90",
+      "translationSHA256": "194dcd6d3e954f890487cdc9647a91066dc34f9fa60fd5e2781ad52e074b01ca",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11079",
+      "field": null,
+      "source": "Home of Pierre, Caroline & Abigail ",
+      "translation": "Domov Pierra, Caroline a Abigail",
+      "sourceSHA256": "0c2fc4995cb23067546cbde9bde44b7fa9d6c07b1b5ce14b8f71025aebf8067e",
+      "translationSHA256": "cee8dc471fa2bfbb049011f6994b5942e7b7baccd9d7f7176c0c632d5ed5d60d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11080",
+      "field": null,
+      "source": "Open 9:00AM to 5:00PM (Closed Wednesday)",
+      "translation": "Otevřeno 9:00–17:00 (ve středu zavřeno)",
+      "sourceSHA256": "539db9755bdd0c065681b4bf5d3d2cf170c24272e25518a9a491eb1f958090c7",
+      "translationSHA256": "640fcda49c42d66faedaa8dca09d203786873b08081aaeaf970de7e5d9f60dfc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11080_ExtendedHours",
+      "field": null,
+      "source": "Open 9:00AM to 5:00PM",
+      "translation": "Otevřeno 9:00–17:00",
+      "sourceSHA256": "ba5452e5cfb67ecb7718f9ef7c133dc4e8f2d0e1a2af7bc41d216762485a6f4b",
+      "translationSHA256": "c5e88dd7b198fe65c3fcd109a7cc41660235bc7afa51e868c3656a0aa5f7774d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11081",
+      "field": null,
+      "source": "Blacksmith",
+      "translation": "Kovárna",
+      "sourceSHA256": "b919e17acb83badd40911d7b4c6ec63828b11f8d0c365e041c24db1e73e155c0",
+      "translationSHA256": "1b6994a31ba3aaf54d57bb21255dbe487565517bc5c7951e391d674a901af211",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11082",
+      "field": null,
+      "source": "Open 9:00AM to 4:00PM",
+      "translation": "Otevřeno 9:00–16:00",
+      "sourceSHA256": "19c208d03f70319110481674347b63962598ac6ccf8ecc51b2a12109d392de16",
+      "translationSHA256": "1a5dd12da8d3130a7bc0b75ef9701bfa77373d0e59f9314fff754312da5c81b3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11083",
+      "field": null,
+      "source": "Saloon",
+      "translation": "Saloon",
+      "sourceSHA256": "2f8eb68a47bd5c8d318c1097956ccbd6da3841a98b465e07660197a62ffa7ec5",
+      "translationSHA256": "2f8eb68a47bd5c8d318c1097956ccbd6da3841a98b465e07660197a62ffa7ec5",
+      "preservationReason": "Saloon is an established, natural Czech loanword and the glossary uses it for this venue category and in the full venue name.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11084",
+      "field": null,
+      "source": "Open 12:00PM To 12:00AM",
+      "translation": "Otevřeno 12:00–00:00",
+      "sourceSHA256": "f923f8e16fb2e6f8846c18b8c5b39b335f43363561a2124ee4d62cb53d51f2cf",
+      "translationSHA256": "dde52977bde34cdc887eda75cdb5c1f2928311d89025b2f3acbf8b6b58f821ec",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11085",
+      "field": null,
+      "source": "Mayor's Manor",
+      "translation": "Starostovo sídlo",
+      "sourceSHA256": "64b0e40539d61287a055bf19e520e8a93fd3bab0e66a3cee599e5af5dc69aa88",
+      "translationSHA256": "02ab358fee4eccc0a84920a86730f8c59aed2d464e14dc2f3443470199f9fb74",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11086",
+      "field": null,
+      "source": "Stardew Valley Museum & Library",
+      "translation": "Muzeum a knihovna údolí Stardew",
+      "sourceSHA256": "c79da6a1c9d213d4c5de97c3252d04726a20efa9ff1d99e65a44a7a8f13dfaf9",
+      "translationSHA256": "4c1e61f03475cd442303b5ba6af49132a8815aaf59056fc1ed280768d68ed00e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11087",
+      "field": null,
+      "source": "Open 8:00AM to 6:00PM",
+      "translation": "Otevřeno 8:00–18:00",
+      "sourceSHA256": "8934720faf3d6ab34d6e458fcb80c793d574fb4924b6736f0e4bea7c17f2361b",
+      "translationSHA256": "bb97c7081d999ff837b1d97a69012e87e6fb732cb4a4bb3e7f45848f21139d60",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11088",
+      "field": null,
+      "source": "Elliott's Cabin",
+      "translation": "Elliottova chatka",
+      "sourceSHA256": "79c8847eee8ba8c111e24c6427e4452bcf37fb5b6b30bf126f002b86e64ca3b8",
+      "translationSHA256": "ee29e54023e5e86621e865e869c3ceb14ed79b0f43a4dd3811d06a3ed9f58476",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11089",
+      "field": null,
+      "source": "Sewer",
+      "translation": "Kanalizace",
+      "sourceSHA256": "e98a0e959b1aae794410269816f0a0d7f61b456f3c783a19d32615391511eb1c",
+      "translationSHA256": "32a6434ccf9fe5ac7bd28321f5684323121f8965d7f0b54f5e1214705fd78d89",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11090",
+      "field": null,
+      "source": "Graveyard",
+      "translation": "Hřbitov",
+      "sourceSHA256": "3561a4b89ed11c9871f20e3597048d2c42c16d08f79492748d66e982177ee410",
+      "translationSHA256": "53a036d5226c4457ed25c0a8d053f1967d0a1656a433d92adf88e0d1d4c64fcc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11091",
+      "field": null,
+      "source": "Trailer",
+      "translation": "Obytný přívěs",
+      "sourceSHA256": "6a7b20d1da8aeaa45676ba887ac32143a33323079f95d711e979e6cbf1e678c9",
+      "translationSHA256": "0f9d591dfd9f9c9fbb3333639878ff638ba9a46041c416b4f9d769730d299380",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.PamHouse",
+      "field": null,
+      "source": "2 River Road",
+      "translation": "Říční 2",
+      "sourceSHA256": "8ddbd1321883afbab71bb7a1b267b16c7dc7a09fe622d37436be930c8159bc9b",
+      "translationSHA256": "15d056b7af408cc81ea31dd0afce422495f465fc713790b65c8747ac1922789d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.PamHouseHomeOf",
+      "field": null,
+      "source": "Home of Pam & Penny",
+      "translation": "Domov Pam a Penny",
+      "sourceSHA256": "9532281fc551ee6f9ee45388e933a95835662e761ea4cc7bd7668a967ebba2f5",
+      "translationSHA256": "bf160fe7e566148d75347fcc24bbc369d9a64d3a2093e97c5f9919b1000b57c1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11092",
+      "field": null,
+      "source": "1 River Road",
+      "translation": "Říční 1",
+      "sourceSHA256": "bcd0754c3c2aec5b04bf1e760023053fbc6d8cc6bdec1d5132dff38f602a7e97",
+      "translationSHA256": "9839b0dd5cec19d8d627dc3f28e8d1953783afc902d40fbde012f67c3ba7ed95",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11093",
+      "field": null,
+      "source": "Home of George, Evelyn & Alex",
+      "translation": "Domov George, Evelyn a Alexe",
+      "sourceSHA256": "f36bc33e91051b6e072f0ab57d44b1b7051cf6c04b30bbe900ceca1cb44086fd",
+      "translationSHA256": "0a1ac36a03d6466e9a2e918396dbd28ba2d434a9483f591f75d0283b8c6c3f68",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11094",
+      "field": null,
+      "source": "Carpenter's Shop",
+      "translation": "Tesařství",
+      "sourceSHA256": "3a6b72a407e7c5759ab5cd2f8cb647a70b6fd616ae9c900f2268ed3c7763bd8a",
+      "translationSHA256": "902e745bd016d7f9ccd40c0224d5cade002a372e0f4ebbfbd5223649c24594dd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11095",
+      "field": null,
+      "source": "Home of Robin, Demetrius, Sebastian & Maru",
+      "translation": "Domov Robin, Demetria, Sebastiana a Maru",
+      "sourceSHA256": "1ec44b346a8b85f46cc09603094c5da3e77da4e29215337ef9ecaadfff13b125",
+      "translationSHA256": "57b459702cc634a20e6f7495dd70edc7094cd9d7baf6ac46c2b82afd317abb5e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11096",
+      "field": null,
+      "source": "Shop open 9:00AM to 5:00PM most days",
+      "translation": "Obchod je většinu dní otevřen 9:00–17:00",
+      "sourceSHA256": "0def6485ddf83e9d2800f2d44d74b8b0af0e259449bd9c3bfb20272fe115373f",
+      "translationSHA256": "7bb5bdd619104cde125934e764f31f27f14cd447a551216f1961cc09477db7a3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11097",
+      "field": null,
+      "source": "Tent",
+      "translation": "Stan",
+      "sourceSHA256": "180aca3484f545e8cc04558238030e25b4fdc2905650a31abbe5663ab2cb5710",
+      "translationSHA256": "317ecd32308a1385e1d3cef0744eafbeb55366d15e2ae711085532132795675e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11098",
+      "field": null,
+      "source": "Mines",
+      "translation": "Doly",
+      "sourceSHA256": "dd4add0cdd92f13cd707e0370d26efc631c7a30c97f981a093af97a5396e8e0f",
+      "translationSHA256": "603e81ef46c819973e1e501e9bd20b21a52c2dc047b9c7e1fd76d75eb49f0121",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11099",
+      "field": null,
+      "source": "Adventurer's Guild",
+      "translation": "Cech dobrodruhů",
+      "sourceSHA256": "1b1d74d8ced945b2580b71b5486845e557f8053bf41bab0a23be8385f77baa96",
+      "translationSHA256": "647e152160b8c341e0da65a401482d3044b9c47bc18b8a9c30f983f7a2fd5730",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11100",
+      "field": null,
+      "source": "Open 2:00PM to 2:00AM",
+      "translation": "Otevřeno 14:00–02:00",
+      "sourceSHA256": "c1f3d0490d815f9e70989657e53d198770755027db8bddb5acbe04b1d713a443",
+      "translationSHA256": "c5213fb4d2f0445dc9bb32b76b536a791fdaad7ba6624f1b4187bc4c7c01552f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11103",
+      "field": null,
+      "source": "Quarry",
+      "translation": "Lom",
+      "sourceSHA256": "2f42610cc5d51a3d4791323084b2f3bdbeeecc294295f195fddf7b3c1fc00349",
+      "translationSHA256": "75e99b6598ac7f51a72ad0b0026ca476793b589dc20013ed3d28672f9af9a7b5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11105",
+      "field": null,
+      "source": "JojaMart",
+      "translation": "JojaMart",
+      "sourceSHA256": "93e7407d749b641fefeb4cb44360dd48029f7651649b727158e2efae2752965f",
+      "translationSHA256": "93e7407d749b641fefeb4cb44360dd48029f7651649b727158e2efae2752965f",
+      "preservationReason": "JojaMart is the unchanged fictional brand name used consistently throughout the approved glossary and Czech locale.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "AbandonedJojaMart",
+      "field": null,
+      "source": "Abandoned JojaMart",
+      "translation": "Opuštěný JojaMart",
+      "sourceSHA256": "23d91712c55c9f791103b1d7f461f20c50c53e7cb336edab634c550211eaa8fe",
+      "translationSHA256": "709f7a6cf659b1687c7f0459b3f88b038ebbe7bb78abf2d8bf9e59c82e6a4bf6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MovieTheater_Map",
+      "field": null,
+      "source": "Movie Theater",
+      "translation": "Kino",
+      "sourceSHA256": "f8b75803b9babe6fb9e4b8f3d87ea94a9e257c84ad6ca4590833a07c761e3125",
+      "translationSHA256": "6e16ea985bbea4b8d27f96ac825254182cf184cc2340f220a8959224364536d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MovieTheater_Hours",
+      "field": null,
+      "source": "(Open 9:00AM to 9:00PM)",
+      "translation": "(Otevřeno 9:00–21:00)",
+      "sourceSHA256": "ffb5a3d10bcc769c0027199ed4a5fbe9724ece2800adc413f507a43a5ce5d2ff",
+      "translationSHA256": "22d0827fe10206aa09ae17d39213495f3a1ceff9341d3fd2065532b313950196",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11106",
+      "field": null,
+      "source": "Open 9:00AM to 11:00PM",
+      "translation": "Otevřeno 9:00–23:00",
+      "sourceSHA256": "332b71bf9b97fa334aed76f93a53c289ba3caf5b3ec362f39807a7e02705c939",
+      "translationSHA256": "3cb83e85cfdaa6292fa96a1548bc5ed741ae5bfef53d4a790f4e1054ada706ee",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11107",
+      "field": null,
+      "source": "Fish Shop",
+      "translation": "Rybářství",
+      "sourceSHA256": "6f9b0be93936ac064cd14738493dd5f6b45d2ecb4348513b6934d3a8bec00016",
+      "translationSHA256": "524ec48217dbd70f591c068eeb9e28124f15dd174c2eb04b321af0cf3609f521",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11108",
+      "field": null,
+      "source": "Open 9:00AM to 5:00PM",
+      "translation": "Otevřeno 9:00–17:00",
+      "sourceSHA256": "ba5452e5cfb67ecb7718f9ef7c133dc4e8f2d0e1a2af7bc41d216762485a6f4b",
+      "translationSHA256": "c5e88dd7b198fe65c3fcd109a7cc41660235bc7afa51e868c3656a0aa5f7774d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11110",
+      "field": null,
+      "source": "Spa",
+      "translation": "Lázně",
+      "sourceSHA256": "0cc1445f0ee8ff26e3d7da596b5cd23d47a72da51e2d9516429213af9823b8f8",
+      "translationSHA256": "989eb90c58e2c2dca4c832df99224971acce3a076a4cdb728d54bbc0b745a7bf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11111",
+      "field": null,
+      "source": "Open all day",
+      "translation": "Otevřeno celý den",
+      "sourceSHA256": "b6c0d9ecd2fb97fd83ada049138f2f1f4cee3704f010c0e57b773417b598c076",
+      "translationSHA256": "81fd0160e6617a14d6132f2eba6d3921c548007fec825bbeee8b302b7b5bea3c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11114",
+      "field": null,
+      "source": "Secret Woods",
+      "translation": "Tajný les",
+      "sourceSHA256": "9945d1d4079b661230ebb6fac1706bf8aa1b97296d38c2dc195bb6f90de81b6f",
+      "translationSHA256": "e0f58d0e7d37873fe070e6ec5259976161cb7c42299625ef0872eed0315f0066",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11116",
+      "field": null,
+      "source": "Ruined House",
+      "translation": "Dům Kloboukové myši",
+      "sourceSHA256": "19b486d12c8a129ba7d170229597c2e306e69f147d1cb25efbd34b3255ffdbea",
+      "translationSHA256": "852f5fed0b8187d1345d1db1abf9bbda9ecc55a7944e5324c9b3f62669080c62",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11117",
+      "field": null,
+      "source": "Community Center",
+      "translation": "Komunitní centrum",
+      "sourceSHA256": "39e03c8db4491eface99db4a5adfb47ae57559976efdf3a096aee04947196263",
+      "translationSHA256": "2f2ab5e2cf5ef7a8e7dfc6261329eaaffff506a4d5e3fcbbe743c830b886900f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11118",
+      "field": null,
+      "source": "Sewer Pipe",
+      "translation": "Kanalizační potrubí",
+      "sourceSHA256": "5ed3cd08898c81ab56561e0a5e47bff05c1b3c70a3056a47484b803957bff112",
+      "translationSHA256": "83fdf1bb081f56b53cae1fdb325c2f5ce6fe43f411666cd680674bf86d1ceee1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11119",
+      "field": null,
+      "source": "Railroad",
+      "translation": "Železnice",
+      "sourceSHA256": "090f49b6648dfebd821706c96ce1b2e9aea73a288bec3a796988e24579f2f299",
+      "translationSHA256": "1408a3376a04d2ef6453edc60a869d18f099731a35fdf3a52904d64cc141557d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11122",
+      "field": null,
+      "source": "Lonely Stone",
+      "translation": "Osamělý kámen",
+      "sourceSHA256": "9dfe30b6c5984fbdb6a26acec7edb2ff843cdbf99d045f0e166567b92844516d",
+      "translationSHA256": "f98f19a5e75c532bbea53f4d7fe19a7ff9b17facecf34c5781d254ea6aaa19fc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11172",
+      "field": null,
+      "source": "Stardrop Saloon",
+      "translation": "Saloon U Hvězdné kapky",
+      "sourceSHA256": "6549bc210b477ac5faf6d0ded558539e89e6257541094faf7b7584fe2e8cbddc",
+      "translationSHA256": "9135bf817614c5687efbf06e408bcd74ab915a524b2321768c95d44e593bf8e6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11174",
+      "field": null,
+      "source": "Pelican Beach",
+      "translation": "Pláž Pelikánova",
+      "sourceSHA256": "010199e54174143c92bc69f54eac1831dd2cd4cafc63306ea54f5c783a425214",
+      "translationSHA256": "8876659236a02b8b9830655596c9743ce78868a79cbb291b3f1eb8eaad445f11",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11176",
+      "field": null,
+      "source": "Mountains",
+      "translation": "Hory",
+      "sourceSHA256": "0e9b3aa04e8a8308827108f4a300821d9c6b657f033c29275ca63c9f10ae8993",
+      "translationSHA256": "f6a163f5d5ff458116d4b631f04d8c2028072a7ae53e6e2916ea14aa80851723",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11177",
+      "field": null,
+      "source": "Mountain Lake",
+      "translation": "Horské jezero",
+      "sourceSHA256": "c464412a0665d0625b5ded215ede221457942bfca2343a5955a8ee96d1ea0e4f",
+      "translationSHA256": "0a3abe7a921cfaef0138f75c0435487e08e6530db1d86969b485c9b79dc66f8a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11178",
+      "field": null,
+      "source": "Quarry",
+      "translation": "Lom",
+      "sourceSHA256": "2f42610cc5d51a3d4791323084b2f3bdbeeecc294295f195fddf7b3c1fc00349",
+      "translationSHA256": "75e99b6598ac7f51a72ad0b0026ca476793b589dc20013ed3d28672f9af9a7b5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11179",
+      "field": null,
+      "source": "Tunnel",
+      "translation": "Tunel",
+      "sourceSHA256": "cf23f35d540d432361fdb8a26dafdc97aa2445250679bb2063945a45327ab0c0",
+      "translationSHA256": "a55636f8361547ddb3e84ba2930e601f582cc0f044e5c974d8be5d1f4353ebb6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11186",
+      "field": null,
+      "source": "Cindersap Forest",
+      "translation": "Les Cindersap",
+      "sourceSHA256": "7efe241323aeb04c4601f243d4ea6670b904d91d9fb754df9ba7e2b4100563b0",
+      "translationSHA256": "1f7dff1b75ad1bb4f864cb1f6874dd0e1dede89ae0f66e448b22ac96205de12a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MapPage.cs.11190",
+      "field": null,
+      "source": "Pelican Town",
+      "translation": "Pelikánov",
+      "sourceSHA256": "f8000e9a80e7cbed6728d1d723bf3ae85003134c2501aba0621b91205ab7b7c5",
+      "translationSHA256": "692da432a8451085e756b53dba0e72a50ee52af32b63d77dc9fb738c065cad7f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

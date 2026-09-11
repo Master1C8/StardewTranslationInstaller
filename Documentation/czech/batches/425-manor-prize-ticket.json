@@ -1,0 +1,28 @@
+{
+  "id": "425-manor-prize-ticket",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Naturalized goodwill and occasional-help wording and corrected the Czech government of soucit.",
+  "rows": [
+    {
+      "target": "Data/Events/ManorHouse",
+      "key": "prizeTicketIntro/n completedFirstBillboardQuest",
+      "field": null,
+      "source": "distantBanjo/3 6/farmer -2000 -2000 0 Lewis 1 6 0/skippable/pause 2000/warp farmer 5 11/playSound doorClose/pause 400/move farmer 0 -5 0/move farmer -3 0 3/pause 400/faceDirection Lewis 1/pause 500/emote Lewis 16/speak Lewis \"Ah, hello there, @.\"/pause 500/faceDirection Lewis 0/speak Lewis \"I was just loading some more prizes into this machine here...\"/pause 300/faceDirection farmer 0/emote farmer 8/pause 500/speak Lewis \"It's a new program I've come up with, to help promote a spirit of goodwill among the townsfolk... You included!#$b#It's pretty simple... sometimes, when you help out others in town, you'll receive a 'Prize Ticket'. You can turn them in for rewards.#$b#There's some special stuff in there!$h\"/pause 500/emote farmer 56/faceDirection Lewis 1/emote Lewis 40/speak Lewis \"My only worry is that people will just go after the tickets, rather than cultivating a true compassion for their fellow man...$s\"/faceDirection farmer 3/quickQuestion #I just want to help.#Yep, I'm in it for the prizes.(break)pause 100\\emote Lewis 32\\speak Lewis \"Is that so? Well, I'm glad to hear that!$h\"(break)pause 50\\jump Lewis\\pause 500\\speak Lewis \"I see!$u#$b#Well... that's not what I hoped to hear, but I appreciate the honesty.\"/pause 500/speak Lewis \"At any rate... keep checking the 'Help Wanted' board in town. That's a good way to get your hands on more tickets.#$b#Good luck out there.\"/pause 500/end",
+      "translation": "distantBanjo/3 6/farmer -2000 -2000 0 Lewis 1 6 0/skippable/pause 2000/warp farmer 5 11/playSound doorClose/pause 400/move farmer 0 -5 0/move farmer -3 0 3/pause 400/faceDirection Lewis 1/pause 500/emote Lewis 16/speak Lewis \"Ach, zdravím tě, @.\"/pause 500/faceDirection Lewis 0/speak Lewis \"Právě jsem do tohoto automatu doplňoval další odměny...\"/pause 300/faceDirection farmer 0/emote farmer 8/pause 500/speak Lewis \"Je to nový program, který jsem vymyslel, abych mezi obyvateli města podpořil vzájemnou ochotu pomáhat... Včetně tebe!#$b#Je to docela jednoduché... občas za pomoc někomu ve městě dostaneš „Lístek na odměnu“. Lístky můžeš vyměnit za odměny.#$b#Jsou tam opravdu výjimečné věci!$h\"/pause 500/emote farmer 56/faceDirection Lewis 1/emote Lewis 40/speak Lewis \"Jenom se bojím, že lidé půjdou jen po lístcích, místo aby si pěstovali opravdový soucit se svými bližními...$s\"/faceDirection farmer 3/quickQuestion #Chci jen pomáhat.#Jo, jde mi o odměny.(break)pause 100\\emote Lewis 32\\speak Lewis \"Opravdu? To rád slyším!$h\"(break)pause 50\\jump Lewis\\pause 500\\speak Lewis \"Aha!$u#$b#No... to jsem zrovna slyšet nechtěl, ale vážím si tvé upřímnosti.\"/pause 500/speak Lewis \"Každopádně... dál sleduj městskou vývěsku „Hledá se pomoc“. Je to dobrý způsob, jak získat další lístky.#$b#Hodně štěstí.\"/pause 500/end",
+      "sourceSHA256": "b841dd24fbab66a8051e220b2fae2cda27d114f89a37ce0827ad429942385895",
+      "translationSHA256": "96e868edab2a856eadbd4da9c5ff0051276fb9435bef635ea5b9f90ee44c9849",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

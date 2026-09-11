@@ -1,0 +1,47 @@
+{
+  "id": "455-sam-house-jodi-fish-dinner",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all fourteen visible segments across both year variants against English; verified Kent's added dialogue, Jodi's warmth, Sam's reluctant reply, established okoun velkoústý terminology, player-neutral family narration, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "95/e 93/k 94/t 1800 1950/i 136/y 2",
+      "field": null,
+      "source": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0 Kent 3 15 1/removeItem 136/removeQuest 22/pause 300/faceDirection Kent 2/speak Kent \"Hi @. Please, come in.\"/move farmer 0 -3 0/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Ah, I'm so glad you came, @! And you brought the fish! Wonderful.\"/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Kent 1/faceDirection Jodi 1/speak Jodi \"Sam! Could you come in here and help clean this fish?\"/pause 300/speak Sam \"...Yes, ma'am.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 500/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/speak Jodi \"Wow, it looks wonderful... and it smells so fresh! Thanks so much for doing this, @.#$b#Kent caught a fish, too, but he eats about a whole fish to himself!$u\"/pause 200/faceDirection farmer 3/pause 1000/speak Kent \"Heh heh.$h\"/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... that crispy bass was delicious! The breading was to die for...\"/pause 500/message \"I almost feel like part of the family, now.\"/pause 1500/end warpOut",
+      "translation": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0 Kent 3 15 1/removeItem 136/removeQuest 22/pause 300/faceDirection Kent 2/speak Kent \"Ahoj, @. Pojď dál.\"/move farmer 0 -3 0/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Ach, @, jsem moc ráda, že tě vidím! A máš s sebou rybu! Báječné.\"/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Kent 1/faceDirection Jodi 1/speak Jodi \"Same! Pojď mi prosím pomoct očistit tu rybu.\"/pause 300/speak Sam \"...Ano, madam.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 500/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/speak Jodi \"Páni, vypadá nádherně... a voní tak čerstvě! Moc děkuju za všechnu tu práci, @.#$b#Kent také chytil rybu, ale sám sní skoro celou!$u\"/pause 200/faceDirection farmer 3/pause 1000/speak Kent \"Heh heh.$h\"/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... ten křupavý okoun velkoústý byl výtečný! Ta krusta byla přímo božská...\"/pause 500/message \"Teď už skoro mám pocit, že do rodiny patřím.\"/pause 1500/end warpOut",
+      "sourceSHA256": "a50bc6664f2bd9a3fa8089750e24f6320536b81125ad945e2f6f435e3d7df583",
+      "translationSHA256": "c356b3e79c5b4b8f20d01dd81b9a385d480e043ce9c6b54ab645975858dd2b77",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/SamHouse",
+      "key": "94/e 93/k 95/t 1800 1950/i 136/y 1",
+      "field": null,
+      "source": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0/removeItem 136/removeQuest 22/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Oh hi, @! Come in! Do I smell fresh fish?\"/move farmer 0 -3 1/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Jodi 1/speak Jodi \"Sam! Could you come in here and help with dinner?\"/pause 300/speak Sam \"...Yes, ma'am.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 300/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/pause 400/speak Jodi \"Wow, this looks like quality bass, @. Thanks so much for bringing this.$h\"/pause 1000/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... that crispy bass was delicious! The breading was out of this world...\"/pause 500/message \"I almost feel like part of the family, now.\"/pause 1500/end warpOut",
+      "translation": "50s/6 15/farmer 4 19 0 Sam 17 13 0 Jodi 7 4 0/removeItem 136/removeQuest 22/speed Jodi 4/move Jodi 0 10 2/speak Jodi \"Ahoj, @! Pojď dál! Je to vůně čerstvé ryby?\"/move farmer 0 -3 1/move farmer 2 0 0/move farmer 0 -1 1/faceDirection Jodi 1/speak Jodi \"Same! Přijdeš mi pomoct s večeří?\"/pause 300/speak Sam \"...Ano, madam.$a\"/move Sam -5 0 3 true/proceedPosition Sam/stopAnimation farmer/doAction 12 14/move Sam 0 2 3 false/move Sam -4 0 3/faceDirection Jodi 2/pause 300/showFrame 35/addObject 7 15 136/playSound fishSlap/pause 800/stopAnimation farmer/pause 400/speak Jodi \"Páni, tohle vypadá jako kvalitní okoun velkoústý, @. Moc děkuju, že ho máš s sebou.$h\"/pause 1000/globalFade/viewport -1000 -1000/pause 1000/message \"Mmm... ten křupavý okoun velkoústý byl výtečný! Ta krusta byla jako z jiného světa...\"/pause 500/message \"Teď už skoro mám pocit, že do rodiny patřím.\"/pause 1500/end warpOut",
+      "sourceSHA256": "3313a2d9d8e1384ec7816e84f97d08521d1b80686b9c3dd8f8e7451a1f13af07",
+      "translationSHA256": "9e5b7786794efffa7a4237dd282f6346c28e273610a04ab0dcbc7b65378fee36",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

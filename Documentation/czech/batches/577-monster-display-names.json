@@ -1,0 +1,978 @@
+{
+  "id": "577-monster-display-names",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 51 monster records against their English display-name fields and gameplay context; Czech monster names are distinct, idiomatic and consistent with established guild and quest terminology, while every stat, drop, behavior and combat field remains byte-identical.",
+  "rows": [
+    {
+      "target": "Data/Monsters",
+      "key": "Green Slime",
+      "field": null,
+      "source": "24/5/0/0/false/1000/766 .75 766 .05 153 .1 66 .015 92 .15 96 .005 99 .001/1/.01/4/2/.00/true/3/Green Slime",
+      "translation": "24/5/0/0/false/1000/766 .75 766 .05 153 .1 66 .015 92 .15 96 .005 99 .001/1/.01/4/2/.00/true/3/Zelený sliz",
+      "sourceSHA256": "633580d1b6d308fdfe8ba91ae81cb8dbdc64154b5284dcb688f1f89b044d7173",
+      "translationSHA256": "4cadb4c26643cf521149574c2c1f1a03572aa1e74c67958514dd1cdccb7213da",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Dust Spirit",
+      "field": null,
+      "source": "40/6/0/0/false/1000/382 .5 433 .01 336 .001 84 .02 414 .02 97 .005 99 .001/2/.00/4/3/.00/true/2/Dust Sprite",
+      "translation": "40/6/0/0/false/1000/382 .5 433 .01 336 .001 84 .02 414 .02 97 .005 99 .001/2/.00/4/3/.00/true/2/Prachový skřítek",
+      "sourceSHA256": "411d578a6de572614a8a5a6516e602b6fd7b95c9c7a7c759b55a99b858c2188c",
+      "translationSHA256": "156b51993b0694a9a64c1366fe7f5cc69115d0752325fc57dde47b3d53e23dc3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Bat",
+      "field": null,
+      "source": "24/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Bat",
+      "translation": "24/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Netopýr",
+      "sourceSHA256": "7c600c0628063a71977c0c372ed8cd610a995160b16f74a5f98c43ba8f8662d5",
+      "translationSHA256": "d0b4ae11301717faca797d643cec0bf393021ec8e84a011bee8d4c68a14ac195",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frost Bat",
+      "field": null,
+      "source": "36/7/0/0/true/1000/767 .9 767 .55 108 .001 287 .02 97 .005 99 .001/1/.01/4/3/.00/true/7/Frost Bat",
+      "translation": "36/7/0/0/true/1000/767 .9 767 .55 108 .001 287 .02 97 .005 99 .001/1/.01/4/3/.00/true/7/Mrazivý netopýr",
+      "sourceSHA256": "6ac8e0e5bb59332dd97a4a05bd09ff337892ed14693e977329eebefe72b193be",
+      "translationSHA256": "1970d0d8499d4c3c6f9d219bbdbc8ce813079345ea2e975277705debc544e666",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Lava Bat",
+      "field": null,
+      "source": "80/15/0/0/true/1000/767 .9 767 .7 108 .001 287 .02 98 .005 99 .001/1/.01/4/3/.00/true/15/Lava Bat",
+      "translation": "80/15/0/0/true/1000/767 .9 767 .7 108 .001 287 .02 98 .005 99 .001/1/.01/4/3/.00/true/15/Lávový netopýr",
+      "sourceSHA256": "3d9eb9d2e2e2b2e48a7d3223b1e19e99ac35f7841f0457987ef5cfd6e118f861",
+      "translationSHA256": "e642d50d557c7900a057e08215e09e4dcd13ebeeb185fe295a5ea8751ec63215",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Bat",
+      "field": null,
+      "source": "300/30/0/0/true/1000/386 .9 386 .5 386 .25 386 .1 288 .05 768 .5 773 .05 349 .05 787 .05 337 .008/1/.01/4/3/.00/true/22/Iridium Bat",
+      "translation": "300/30/0/0/true/1000/386 .9 386 .5 386 .25 386 .1 288 .05 768 .5 773 .05 349 .05 787 .05 337 .008/1/.01/4/3/.00/true/22/Iridiový netopýr",
+      "sourceSHA256": "3416781ea65089a6c9c69222fef5b716ce1bfc851f5f39e9ae9047b4bf8d1398",
+      "translationSHA256": "4a593c6788666bd90d7d74292b6df0eb193feee06ea38aeac2695ce597e117d0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Stone Golem",
+      "field": null,
+      "source": "45/5/0/0/false/1000/390 .9 80 .1 382 .1 380 .1 96 .005 99 .001/5/.01/3/2/.00/true/5/Stone Golem",
+      "translation": "45/5/0/0/false/1000/390 .9 80 .1 382 .1 380 .1 96 .005 99 .001/5/.01/3/2/.00/true/5/Kamenný golem",
+      "sourceSHA256": "88221dd18801e8eeb1b0479082263444f938d3b9c97b901c9c2633de67bbebd9",
+      "translationSHA256": "a4db4e16d17aff730487a76ebecd18fa226167bd49060552afdafd3d59cf234e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Wilderness Golem",
+      "field": null,
+      "source": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "translation": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Divoký golem",
+      "sourceSHA256": "5f207f2bed1bd4c933697edaf46bc16bc9a5fbe922d80f976415814b1819b3fc",
+      "translationSHA256": "dfe82c9d28e3167e0f0589a8cb9969574bcf0b056d6259bbb4f04940847b9e54",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Golem",
+      "field": null,
+      "source": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Wilderness Golem",
+      "translation": "30/5/0/0/false/1000/771 .9 771 .5 770 .5 382 .1 86 .005 72 .001/1/.01/3/2/.00/true/5/Divoký golem",
+      "sourceSHA256": "5f207f2bed1bd4c933697edaf46bc16bc9a5fbe922d80f976415814b1819b3fc",
+      "translationSHA256": "dfe82c9d28e3167e0f0589a8cb9969574bcf0b056d6259bbb4f04940847b9e54",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Grub",
+      "field": null,
+      "source": "20/4/0/0/false/1000/684 .6 273 .05 273 .05 157 .02 114 .005 96 .005 99 .001/0/.005/3/1/.00/true/2/Grub",
+      "translation": "20/4/0/0/false/1000/684 .6 273 .05 273 .05 157 .02 114 .005 96 .005 99 .001/0/.005/3/1/.00/true/2/Larva",
+      "sourceSHA256": "2074f241c51111d740fa8c8dfa6fadae6ec5140e78a5ae0365d0cfa8595cd231",
+      "translationSHA256": "9f6298228778101ac3ff30e8e218c6fa477812d5c94a49b40e7e6bfb6d51a530",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Fly",
+      "field": null,
+      "source": "22/6/0/0/true/1000/684 .9 157 .02 114 .005 96 .005 99 .001/1/.005/13/2/.0/true/10/Fly",
+      "translation": "22/6/0/0/true/1000/684 .9 157 .02 114 .005 96 .005 99 .001/1/.005/13/2/.0/true/10/Moucha",
+      "sourceSHA256": "4c448b35f900fd625035b319cdfdfc687e6ab82a0a83cc69f7186ee2d0ac5104",
+      "translationSHA256": "d21317b282e6e2a3d8f20286d926dc094cd816b245b340255a4b56bc14a37454",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frost Jelly",
+      "field": null,
+      "source": "106/7/0/0/false/1000/766 .75 412 .08 70 .02 98 .015 92 .5 97 .005 99 .001/0/.01/4/2/.0/true/6/Frost Jelly",
+      "translation": "106/7/0/0/false/1000/766 .75 412 .08 70 .02 98 .015 92 .5 97 .005 99 .001/0/.01/4/2/.0/true/6/Mrazivý sliz",
+      "sourceSHA256": "bc6ce3c36c974ffc516455150cac685cdea9b626ea843f58c8b1963eb123ed3d",
+      "translationSHA256": "699a20acc1841ed7b52174138b90d1f1e87ae03f320756d514dfab02722437c6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Sludge",
+      "field": null,
+      "source": "205/16/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/10/Sludge",
+      "translation": "205/16/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/10/Kalový sliz",
+      "sourceSHA256": "d797dcf7916d02c4d96f1409cf7d93fff561cb070fe71772eebe37bba19e3f3c",
+      "translationSHA256": "befb9e640162629b55d3c0fe10a370992e3d6ec010b1ac1c56b0fdbd6708aae7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Guy",
+      "field": null,
+      "source": "125/20/0/0/false/0/769 .75 769 .1 329 .02 337 .002 336 .01 335 .02 334 .04 203 .04 293 .03 108 .003 -4 .1 98 .005 99 .001/2/.01/-1/2/.0/true/15/Shadow Guy",
+      "translation": "125/20/0/0/false/0/769 .75 769 .1 329 .02 337 .002 336 .01 335 .02 334 .04 203 .04 293 .03 108 .003 -4 .1 98 .005 99 .001/2/.01/-1/2/.0/true/15/Stínový chlapík",
+      "sourceSHA256": "2e0bcc9a79a1621dd3f54f302116630075853647aec603fcaed53d3b182ebf2a",
+      "translationSHA256": "ee7892f20e8ab8d36bdec538c74f590bad1dfac1221c6fa6c559315524c27013",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Ghost",
+      "field": null,
+      "source": "96/10/0/3/false/0/768 .95 768 .1 156 .08 338 .08 -6 .2 97 .005 99 .001/3/.01/12/4/.0/true/15/Ghost",
+      "translation": "96/10/0/3/false/0/768 .95 768 .1 156 .08 338 .08 -6 .2 97 .005 99 .001/3/.01/12/4/.0/true/15/Duch",
+      "sourceSHA256": "a2bb1c661518ddd714989f7d6271a35097771c0211000805f11500ee34c4c2fe",
+      "translationSHA256": "72c769e20aa1a09f86f7e9c175405affc3c7dfe0176bdc01fa46073b18abe2fc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Carbon Ghost",
+      "field": null,
+      "source": "190/25/0/3/false/0/749 .99 338 .1/3/.01/12/4/.0/true/20/Carbon Ghost",
+      "translation": "190/25/0/3/false/0/749 .99 338 .1/3/.01/12/4/.0/true/20/Uhlíkový duch",
+      "sourceSHA256": "1217e560118e1af88cea9f2da339912463720c6456681214f7bab3990fce99a7",
+      "translationSHA256": "a7966eca2d59240a66e5dbcf21fdc975633b8d0bd40b2de0c1ed6468ab7431ca",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Duggy",
+      "field": null,
+      "source": "40/6/0/0/false/0/286 .25 535 .25 280 .03 105 .02 86 .1 72 .01 96 .005 99 .001/0/.01/1/2/.0/true/10/Duggy",
+      "translation": "40/6/0/0/false/0/286 .25 535 .25 280 .03 105 .02 86 .1 72 .01 96 .005 99 .001/0/.01/1/2/.0/true/10/Krták",
+      "sourceSHA256": "7be3dd36cee8834dc157f057d24f250ed2a720ee3548df792bb6d9c0f79ddff0",
+      "translationSHA256": "ca6ea5b41a19dbdf88ec3506a6e46935093ff6d09f0ff30b258a48a73ff01889",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Rock Crab",
+      "field": null,
+      "source": "30/5/0/0/false/0/717 .15 286 .4 96 .005 99 .001/1/0/1/2/.0/true/4/Rock Crab",
+      "translation": "30/5/0/0/false/0/717 .15 286 .4 96 .005 99 .001/1/0/1/2/.0/true/4/Kamenný krab",
+      "sourceSHA256": "4b9f8cfeca1d858a9c99a88eab7a51fb7bd00b2b5510e1ca06debb1e04fdea8f",
+      "translationSHA256": "6e25a91eb1f3ace4f8345c75aefed19bba616f1689eb1df87d7ea08cc8f0762e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Truffle Crab",
+      "field": null,
+      "source": "30/5/0/0/false/0/430 .999 430 .5 430 .1 717 .25 432 .1/1/0/1/2/.0/true/4/Rock Crab",
+      "translation": "30/5/0/0/false/0/430 .999 430 .5 430 .1 717 .25 432 .1/1/0/1/2/.0/true/4/Kamenný krab",
+      "sourceSHA256": "dc191f840476e2ac5637468e3d61450d7318b1ea02c150550cbf0009f0a2cbcc",
+      "translationSHA256": "423975dd63b2cd61c726a040f195d563ee2d2a79059c4facb087788016101777",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Lava Crab",
+      "field": null,
+      "source": "120/15/0/0/false/0/717 .25 287 .4 98 .005 99 .001/3/0/1/3/.0/true/12/Lava Crab",
+      "translation": "120/15/0/0/false/0/717 .25 287 .4 98 .005 99 .001/3/0/1/3/.0/true/12/Lávový krab",
+      "sourceSHA256": "861ab06ab83d521cd5f70c46313e2e646113ab7d6604c4d72c1a4107769b18ae",
+      "translationSHA256": "8a6b8dbb301f446e0899ec9ca151330e63e2128b902ff7c8fb169d3f5c0b9ce1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Iridium Crab",
+      "field": null,
+      "source": "240/15/0/0/false/0/732 .5 386 .5 386 .5 386 .5/3/0/1/3/.0/true/20/Iridium Crab",
+      "translation": "240/15/0/0/false/0/732 .5 386 .5 386 .5 386 .5/3/0/1/3/.0/true/20/Iridiový krab",
+      "sourceSHA256": "7dc30c55c26f42a045d7cf6a6608068a81e902a55f8c48f943c59587b95276f5",
+      "translationSHA256": "66e9dea4afc8027abd0ed339516dcd0a781a06d3453f6e377d49e34ca2295b9b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Fireball",
+      "field": null,
+      "source": "1/18/0/0/true/0/72 .0000001/0/0/-1/3/.00/false/0/Fireball",
+      "translation": "1/18/0/0/true/0/72 .0000001/0/0/-1/3/.00/false/0/Ohnivá koule",
+      "sourceSHA256": "10b5e821663ded79c100cc4a86da24bf5d9b4e6f461846e77e8993c0a08807c5",
+      "translationSHA256": "a5152a8e003cfc8da3790008c53ad0bb2e1011a3477aa788c7c4c2c0031c92da",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Squid Kid",
+      "field": null,
+      "source": "1/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Squid Kid",
+      "translation": "1/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Oliheňák",
+      "sourceSHA256": "eaee768dc98296d319e2d9c3575ce8a8b354aa6ab32f6ee863ed205d32de8851",
+      "translationSHA256": "1d0b6737c863336338e1da1d94ee33d04507996916ab96ab06e317fba4a732e0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Skeleton Warrior",
+      "field": null,
+      "source": "300/12/1/3/false/0/769 .25 105 .03 106 .03 166 .001 60 .04 232 .04 72 .03 74 .01 97 .005 99 .001/3/0/5/2/.0/true/15/Skeleton Warrior",
+      "translation": "300/12/1/3/false/0/769 .25 105 .03 106 .03 166 .001 60 .04 232 .04 72 .03 74 .01 97 .005 99 .001/3/0/5/2/.0/true/15/Kostlivý válečník",
+      "sourceSHA256": "306d66bcba81b3125c75e84b7e97e26fc4dab0edc5e6be9810f88341b93e56bb",
+      "translationSHA256": "bac09345a31514acdde1514bb58ffead7f9d40254d50613ccd664976e154d6f4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Crow",
+      "field": null,
+      "source": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Crow",
+      "translation": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Vrána",
+      "sourceSHA256": "832623296282905bb8bd6a160a06547724539ce2afe6bab834669869e11fc89c",
+      "translationSHA256": "d0c2ee6cd5805a4287a14c0f7da893f2d4098969ef9f90a1d07e860e1bc102ee",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Frog",
+      "field": null,
+      "source": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Frog",
+      "translation": "1/0/0/1/false/0/-4 .9/3/0/5/2/.0/false/1/Žába",
+      "sourceSHA256": "4a34b7837ee3496d24ef5e1e9346c2ae54b9cacb2d1bcbb3de513a7c60985dd1",
+      "translationSHA256": "8a85477874382f7cd60029ae1c844fd6f433ab981ce8f28fd64bf7b0370589e1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Cat",
+      "field": null,
+      "source": "300/0/0/0/false/0/-6 .001/3/0/6/2/.0/false/0/Cat",
+      "translation": "300/0/0/0/false/0/-6 .001/3/0/6/2/.0/false/0/Kočka",
+      "sourceSHA256": "3b5548fefa286999d5c64591ee9eca639388c2f7bbd44ae9cf9891ff90c5ec90",
+      "translationSHA256": "1e9f072589e0ee4a54215364b875038b95614a9a0458f20572653c4af7cee4ab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Brute",
+      "field": null,
+      "source": "160/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Brute",
+      "translation": "160/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Stínový rváč",
+      "sourceSHA256": "d091c04132948c23da459925544b7f0ca2548a82caccbb7287ff52848ad72463",
+      "translationSHA256": "8ea41efb55ec7c3fcf8404ec0d803c23b129e93cb4e1fc0c383acd9c8e453aa5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Shaman",
+      "field": null,
+      "source": "80/17/0/0/false/0/769 .75 769 .2 337 .002 336 .01 335 .02 334 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Shaman",
+      "translation": "80/17/0/0/false/0/769 .75 769 .2 337 .002 336 .01 335 .02 334 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Stínový šaman",
+      "sourceSHA256": "499a64c85cc762583f4cef45f17cff2cfc2d86fbd0c7605b3c8998f7008f9749",
+      "translationSHA256": "bbfdc772e8909f6cbff89dbeabc041816641e35bb56ba88c49997f7b6d3394d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Skeleton",
+      "field": null,
+      "source": "140/10/0/2/false/2000/881 .5 881 .4 881 .2 579 .005/1/.01/8/2/.0/true/8/Skeleton",
+      "translation": "140/10/0/2/false/2000/881 .5 881 .4 881 .2 579 .005/1/.01/8/2/.0/true/8/Kostlivec",
+      "sourceSHA256": "716e9bf7200287681b095fb233e27c334fcf5eaa2601316eebbe3035d3c3f9e1",
+      "translationSHA256": "eaa5eda709e32a254920c8fca967b2580d922121d72ae1a240504bd9f917763f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Skeleton Mage",
+      "field": null,
+      "source": "60/5/0/2/false/2000/80 0/1/.01/8/2/.0/true/8/Skeleton Mage",
+      "translation": "60/5/0/2/false/2000/80 0/1/.01/8/2/.0/true/8/Kostlivý mág",
+      "sourceSHA256": "6b903c536f2e0adb0264268bc35dbd0a764c54c5389be0a21ac247d505540858",
+      "translationSHA256": "ab992d6f0b9bcfc50f0e6fad0ccee473751790528795a1c386fad82a2d2c0b06",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Metal Head",
+      "field": null,
+      "source": "40/15/0/0/false/2000/768 .65 378 .1 378 .1 380 .1 380 .1 382 .1 98 .005 99 .001/8/.01/8/2/.0/true/6/Metal Head",
+      "translation": "40/15/0/0/false/2000/768 .65 378 .1 378 .1 380 .1 380 .1 382 .1 98 .005 99 .001/8/.01/8/2/.0/true/6/Kovová hlava",
+      "sourceSHA256": "a19d6ae5be20d120aec2e8dc27f755218329b72191b8a8a73459d6ce16c7592f",
+      "translationSHA256": "ca294d1fd7813808b0fdc6dffb4cd342ccb1716a7773490291c1b881eb4cd112",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Spiker",
+      "field": null,
+      "source": "5/15/0/0/false/2000/378 .1 378 .1 380 .1 380 .1 382 .1/4/.01/8/2/.0/true/1/Spiker",
+      "translation": "5/15/0/0/false/2000/378 .1 378 .1 380 .1 380 .1 382 .1/4/.01/8/2/.0/true/1/Bodlináč",
+      "sourceSHA256": "8712395f20c924c3fda88497e36d5e8870235d19551edaf46d8efe1edd1b41ef",
+      "translationSHA256": "1003920a4406e432db4d52af817b1c67894b01921ce86189ecc285e044f60134",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Bug",
+      "field": null,
+      "source": "1/8/0/0/false/2000/684 .76 157 .02 114 .005 96 .005 99 .001/0/0/-1/2/.0/true/1/Bug",
+      "translation": "1/8/0/0/false/2000/684 .76 157 .02 114 .005 96 .005 99 .001/0/0/-1/2/.0/true/1/Brouk",
+      "sourceSHA256": "b9e95f308e6ae3fd2698d1903e0ae344222acb03585750e4dfc7c86a8d17506e",
+      "translationSHA256": "640039be60cd24c4a6afe5bf898d1656125a2694c1190dffe2a73fa808a327de",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Mummy",
+      "field": null,
+      "source": "260/30/0/3/false/1000/768 .99 428 .2 428 .05 768 .15 243 .04 856 .01 99 .001 74 .001/0/.01/8/2/.0/true/20/Mummy",
+      "translation": "260/30/0/3/false/1000/768 .99 428 .2 428 .05 768 .15 243 .04 856 .01 99 .001 74 .001/0/.01/8/2/.0/true/20/Mumie",
+      "sourceSHA256": "dad054815419b9fe99e7cbfa31eb81f5b517595e0756227b015076afc4ea1969",
+      "translationSHA256": "0239824330c20a50a50783005af33e33ffdab4e6d3859b4a82d421683e0352d6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Big Slime",
+      "field": null,
+      "source": "60/5/0/0/false/1000/766 .99 766 .9 766 .4 99 .001/0/.01/5/2/.0/true/7/Big Slime",
+      "translation": "60/5/0/0/false/1000/766 .99 766 .9 766 .4 99 .001/0/.01/5/2/.0/true/7/Velký sliz",
+      "sourceSHA256": "2db560d5e7db3658c85b48edbb1d6cf53ccf17a88b952fc0b1a6897fa7163d8b",
+      "translationSHA256": "2cf5f6eddf79c090a063438d48cba48b132baf9aa1a61fdb92325a0a4f0189ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Serpent",
+      "field": null,
+      "source": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Serpent",
+      "translation": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Had",
+      "sourceSHA256": "386bbfdc19ca39d833eaec1d801da1e7af2c88877a17012da32a308d82218e09",
+      "translationSHA256": "c9c1911f8b0a6f8913e6671d3a7c7003404e36ef952c9c41b17698225a5aac29",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Pepper Rex",
+      "field": null,
+      "source": "300/15/0/0/false/1000/80 0/5/.01/3/2/.0/true/7/Pepper Rex",
+      "translation": "300/15/0/0/false/1000/80 0/5/.01/3/2/.0/true/7/Pepřový rex",
+      "sourceSHA256": "17bb5b67c5f01647660a2caf6125f7da94812b51433550c07c3aa01116f4e961",
+      "translationSHA256": "c967f55c0d450ca473b46bd6f5650eb04552fde786c84fee86c7d0df49e38831",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Tiger Slime",
+      "field": null,
+      "source": "415/23/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/20/Tiger Slime",
+      "translation": "415/23/0/0/false/1000/766 .8 157 .1 -4 .1 72 .01 92 .5 98 .005 99 .001/0/.01/4/2/.0/true/20/Tygří sliz",
+      "sourceSHA256": "02d17a98bd67c0946414547c67d7c488087fc03b3887fa40ef6d60ed5f46e8b8",
+      "translationSHA256": "cce614700067f0ef87d846f40fca783fad29fdb86b5c74fb612b5c80491cda32",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Lava Lurk",
+      "field": null,
+      "source": "220/15/0/0/false/1000/881 .5 881 .4 881 .2 852 .15/5/.01/3/2/.0/true/12/Lava Lurk",
+      "translation": "220/15/0/0/false/1000/881 .5 881 .4 881 .2 852 .15/5/.01/3/2/.0/true/12/Lávový číhavec",
+      "sourceSHA256": "58e898f5957d0fee1cc1af3fa24ef63cf9a073b2c45772da0e031c160d1ecc8a",
+      "translationSHA256": "8a44c5d091aec61e0c195c7ef378b222c0e035d6356f9cfd033753035fd1e205",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Hot Head",
+      "field": null,
+      "source": "250/18/0/0/false/2000/768 .65 287 .1 378 .1 378 .1 380 .1 380 .1 382 .1 833 .1 833 .1 98 .005 99 .001/8/.01/8/2/.0/true/16/Hot Head",
+      "translation": "250/18/0/0/false/2000/768 .65 287 .1 378 .1 378 .1 380 .1 380 .1 382 .1 833 .1 833 .1 98 .005 99 .001/8/.01/8/2/.0/true/16/Žhavá hlava",
+      "sourceSHA256": "5bb53003a43b74b0605d5254cd49ceff1ff714b9e80fe9e20326258c4674e5d4",
+      "translationSHA256": "9c05a3f98d6b750d2cd8d3f407b6574d7b96a40aa2ef52df64c994bfa23b518a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Magma Sprite",
+      "field": null,
+      "source": "220/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/15/Magma Sprite",
+      "translation": "220/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/15/Magmatický skřítek",
+      "sourceSHA256": "710d1a11e2fd863eb6799dbfd33e2049ab45b1e93b6342e5fc1c76c8aea62618",
+      "translationSHA256": "fbbbefbacae00cb82ab887752653aad5fcd68c83ad4eeaa2a67ab58c102f1342",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Magma Duggy",
+      "field": null,
+      "source": "380/16/0/0/false/0/831 .5 831 .5 288 .4 848 .4 848 .15/0/.01/1/2/.0/true/18/Magma Duggy",
+      "translation": "380/16/0/0/false/0/831 .5 831 .5 288 .4 848 .4 848 .15/0/.01/1/2/.0/true/18/Magmatický krták",
+      "sourceSHA256": "985624e064d0ca3b2d13eb2104398d3785fbcad19364e1a2087ea450f6adf8ac",
+      "translationSHA256": "8f08ab3066cd7bda7daff00f378a3f94d429058ed18601ec23f3b3342f8eb067",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Magma Sparker",
+      "field": null,
+      "source": "310/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/17/Magma Sparker",
+      "translation": "310/15/0/0/true/2000/848 .5 848 .2/8/.01/8/2/.0/true/17/Magmatický jiskrák",
+      "sourceSHA256": "ab7aeabfc49e746c073d5af0556c1054c613e02722b26f0a0f848c17b4848d0b",
+      "translationSHA256": "04851881019fba2f1a5a5b1be780c8d7a2abbd910538877a32d3bfef36b1768e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "False Magma Cap",
+      "field": null,
+      "source": "290/15/0/0/false/0/851 .99 848 .5 848 .2/3/0/1/3/.0/true/14/False Magma Cap",
+      "translation": "290/15/0/0/false/0/851 .99 848 .5 848 .2/3/0/1/3/.0/true/14/Falešná magmatická čepička",
+      "sourceSHA256": "786f7ae14316247b8930d4ff577f2e040342531fadd6993253a8d14f1cb489b3",
+      "translationSHA256": "94cd6119383d3a05a026638969d71798df4c296caf4f15e020159bd5ba41fbc7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Dwarvish Sentry",
+      "field": null,
+      "source": "300/18/0/0/true/0/60 .1 62 .1 64 .1 66 .1 68 .1 70 .1 72 .1/5/0/-1/3/.0/true/15/Dwarvish Sentry",
+      "translation": "300/18/0/0/true/0/60 .1 62 .1 64 .1 66 .1 68 .1 70 .1 72 .1/5/0/-1/3/.0/true/15/Trpasličí strážce",
+      "sourceSHA256": "f59f50f372394218d4e5d93fc03f0c9744ba7ac50939841c10c0cf2280ca6183",
+      "translationSHA256": "b3b13e9b392ef9934bd25a9bb3d540145c4ea50d3132748a439615ee87df3c17",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Putrid Ghost",
+      "field": null,
+      "source": "500/25/0/3/false/0/749 .99/3/.01/12/4/.0/true/25/Putrid Ghost",
+      "translation": "500/25/0/3/false/0/749 .99/3/.01/12/4/.0/true/25/Hnilobný duch",
+      "sourceSHA256": "8f90b0075a5b86c61b0f2fa9545b865ba49dfff794a72f0edda31e9b95a4c753",
+      "translationSHA256": "68df67bfdaaddc28151be0864d6ab19825dd9e314873994733f058168c7c063d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Shadow Sniper",
+      "field": null,
+      "source": "300/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/20/Shadow Sniper",
+      "translation": "300/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/20/Stínový odstřelovač",
+      "sourceSHA256": "df38cf4a55b125a94d74527a029abda652dfe7dcbd792ad7186876e30c9de959",
+      "translationSHA256": "ca7bb7890a013577c82f233adeefec4cb80c9e3716f8505cb215d9a41442bce3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Spider",
+      "field": null,
+      "source": "200/15/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/15/Spider",
+      "translation": "200/15/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.1/8/3/.0/true/15/Pavouk",
+      "sourceSHA256": "17f1c9b0914f84dc37a85c483dc90b44ac38c9114eb2c1b6234ddd3c51481588",
+      "translationSHA256": "8cdfc40a034a8720d19aa8b351d31ff7b652e3e99cfc6dc32d7cac14288285b6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Royal Serpent",
+      "field": null,
+      "source": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Royal Serpent",
+      "translation": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Královský had",
+      "sourceSHA256": "f69e6504a1687ea1c1ac682cde511399a4fcfc2b96f5673b62380a3a2672b582",
+      "translationSHA256": "3c7ea6d638f8bc966f394f0a7a92dfabb651437f9b87af310a67657db5e97be7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Monsters",
+      "key": "Blue Squid",
+      "field": null,
+      "source": "80/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Blue Squid",
+      "translation": "80/18/0/0/true/0/768 .75 814 .2 336 .05 287 .1 288 .05 98 .005 99 .001/2/0/6/3/.0/true/15/Modrá oliheň",
+      "sourceSHA256": "aa1ba026376de3bb77504e443fcd585ba9b04c0337dbe77702e41b9fd8cfa680",
+      "translationSHA256": "aab3318419e82ca27f2b7b135e177be45dc8b7e4f082a7c62d2fbada3a188ab2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "388-farmhouse-penny-bedroom-reveal",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all seven visible bedroom-reveal segments and both feedback choices against English; verified Penny's gentle spouse voice, handmade quilt meaning, furniture restoration note, positive and hurt responses, household messages, escaped branch commands and exact event structure.",
+  "rows": [
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "4324303/e 4325434/O Penny/A pennyRedecorating/l noQuilt/B",
+      "field": null,
+      "source": "spring_day_ambient/-1000 -1000/farmer 27 13 0 Penny 26 13 1/fade unfade/makeInvisible 26 13/makeInvisible 20 4/eyes 1 -10/positionOffset farmer 0 8/viewport -100 -100 true unfreeze/pause 1000/emote farmer 24/pause 3000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/speak Penny \"@... Good morning...$11\"/pause 1000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/faceDirection farmer 3/emote Penny 32/pause 500/faceDirection farmer 2/emote farmer 16/jump farmer/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 500/speak Penny \"Notice anything unusually soft? I quilted this custom bedspread by hand.$11\"/eyes -1 2000/startJittering/pause 2000/stopJittering/speak Penny \"So, what do you think?$11\"/quickQuestion #Looks great!#I don't like it.(break)emote Penny 20\\speak Penny \"I'm glad you like it. The house is starting to look really cozy, isn't it?$h\"\\faceDirection Penny 2\\faceDirection farmer 2\\emote farmer 20\\faceDirection farmer 3\\faceDirection Penny 1\\pause 1000\\animate Penny false true 100 35\\animate farmer true true 100 101(break)emote Penny 28\\speak Penny \"Oh.. okay.$s#$b#I put the old furniture in a chest... feel free to change it back...$s\"\\faceDirection Penny 3/pause 3000/fade/viewport -1000 -1000/pause 500/message \"Penny's been working very hard around the house...\"/pause 500/message \"It really feels like home!\"/pause 2000/end",
+      "translation": "spring_day_ambient/-1000 -1000/farmer 27 13 0 Penny 26 13 1/fade unfade/makeInvisible 26 13/makeInvisible 20 4/eyes 1 -10/positionOffset farmer 0 8/viewport -100 -100 true unfreeze/pause 1000/emote farmer 24/pause 3000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/speak Penny \"@... Dobré ráno...$11\"/pause 1000/showFrame Penny 21/startJittering/pause 500/stopJittering/showFrame Penny 4/pause 500/faceDirection farmer 3/emote Penny 32/pause 500/faceDirection farmer 2/emote farmer 16/jump farmer/pause 1000/animate Penny false true 150 4 5 6 7/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/pause 100/positionOffset Penny 2 0/stopAnimation Penny/showFrame Penny 21/pause 500/speak Penny \"Připadá ti něco nezvykle měkké? Tenhle přehoz na postel jsem ušila ručně přímo na míru.$11\"/eyes -1 2000/startJittering/pause 2000/stopJittering/speak Penny \"Tak co tomu říkáš?$11\"/quickQuestion #Vypadá skvěle!#Nelíbí se mi.(break)emote Penny 20\\speak Penny \"Jsem ráda, že se ti líbí. Dům začíná vypadat opravdu útulně, viď?$h\"\\faceDirection Penny 2\\faceDirection farmer 2\\emote farmer 20\\faceDirection farmer 3\\faceDirection Penny 1\\pause 1000\\animate Penny false true 100 35\\animate farmer true true 100 101(break)emote Penny 28\\speak Penny \"Ach... dobře.$s#$b#Starý nábytek jsem dala do truhly... klidně to můžeš vrátit...$s\"\\faceDirection Penny 3/pause 3000/fade/viewport -1000 -1000/pause 500/message \"Penny se po domě opravdu hodně napracovala...\"/pause 500/message \"Je to tu opravdu jako doma!\"/pause 2000/end",
+      "sourceSHA256": "520eb5e18740fef9f9970ff19d983c75e4b4c2465ec8d22f6c3cf639fce1cfa5",
+      "translationSHA256": "2f508dfb58e2e62bf0abd50758e119749e14ece3840e1ac15f58c9c53f1a6fb8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

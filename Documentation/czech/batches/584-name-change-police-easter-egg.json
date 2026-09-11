@@ -1,0 +1,28 @@
+{
+  "id": "584-name-change-police-easter-egg",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed the remaining immediately translatable name-change UI easter egg against the English source; the police-dispatch joke is natural Czech and both runtime placeholders retain their order and spacing.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "NameChange_EasterEgg6",
+      "field": null,
+      "source": "Calling all cars! Calling all cars! We've got {0} {1} thief on the loose!",
+      "translation": "Volám všechny hlídky! Volám všechny hlídky! Na útěku máme zloděje {0} {1}!",
+      "sourceSHA256": "0a0d7fcc64cb3a8b6b548b72df771166eb7fadcce6ddd2b0803586d7341b0a87",
+      "translationSHA256": "75c6d1f580e58320ebef72e9750b81b278ff97bee6810526770f1496ca64c92b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

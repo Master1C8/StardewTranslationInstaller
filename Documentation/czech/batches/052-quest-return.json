@@ -1,0 +1,47 @@
+{
+  "id": "052-quest-return",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read both complete English/Czech messages against original LostItemQuest.OnItemReceived IL: the found-item message receives item DisplayName then NPC displayName, while the objective receives the NPC. Used explicit item/character carrier nouns to retain nominative dynamic labels without guessing Czech declension or player gender. Preserved the discovery, recommendation to return the item, return objective and every placeholder. Complete final reading found no issue.",
+  "rows": [
+    {
+      "target": "Strings/Quests",
+      "key": "MessageFoundLostItem",
+      "field": null,
+      "source": "You found the {0}. Better return it to {1}.",
+      "translation": "Ztracený předmět nalezen: {0}. Je načase ho vrátit postavě {1}.",
+      "sourceSHA256": "ed9a8b5e741b863e53400fd99a9704c7c8527d72976dd95815b379b5f76a85ff",
+      "translationSHA256": "02b4156282d12c2a2e34bdd90f152fde7faabb5a481abb0800de8b8aedd55185",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Quests",
+      "key": "ObjectiveReturnToNPC",
+      "field": null,
+      "source": "Return to {0}.",
+      "translation": "Vraťte se k postavě {0}.",
+      "sourceSHA256": "ed41de1cf8a58c6bdf201418692734cd0acbf57f30ae55fa9326f09762ce4615",
+      "translationSHA256": "c96bc6ab381235a781d591a7e93967d249d2489446bcb14df488087fe117f67e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

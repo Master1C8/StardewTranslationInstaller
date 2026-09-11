@@ -1,0 +1,1453 @@
+{
+  "id": "010-ui",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full source/Czech comparison reread after correction; all 76 forge, island, chat, darts, and Easter-egg UI strings verified for meaning, grammar, capitalization, glossary terminology, placeholders, and markers.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "Forge_forging",
+      "field": null,
+      "source": "Now forging...",
+      "translation": "Kování...",
+      "sourceSHA256": "b3dfb2a50ab1dba5aad65bcd4f4ede6355390f34408728776fb6e6a75902f617",
+      "translationSHA256": "68c059ea6ddd23107484765051551fe976b3ce729a5bf73f8467798105bf59af",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_description1",
+      "field": null,
+      "source": "Place weapon or tool in the left slot. Place gemstone in the right slot.",
+      "translation": "Vložte zbraň nebo nástroj do levého slotu. Do pravého slotu vložte drahokam.",
+      "sourceSHA256": "04742c8fb0af44c73a102a0918ccb82301f48e46306271493f371840921c12f1",
+      "translationSHA256": "8c691f551eaa9f4dd047170d6396a432401dd727d1ae1d345b96040f21625237",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_description2",
+      "field": null,
+      "source": "You can also combine two rings.",
+      "translation": "Můžete také spojit dva prsteny.",
+      "sourceSHA256": "734512831cd6d1d2030d695cd739d8e81528b5797cfc3b2489117daaba4b0f4f",
+      "translationSHA256": "ea896cc83bbfd8e81d57bb1d96f1683590e138cf90123c3ea70277120e446e00",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_shards",
+      "field": null,
+      "source": "Cinder shards are automatically consumed when forging.",
+      "translation": "Škvárové úlomky se při kování spotřebovávají automaticky.",
+      "sourceSHA256": "81a8349aca529795b53f385a84574805a9aca320340ab1533e8c392881c252db",
+      "translationSHA256": "9fc88dfeb13dfb55378802d28c057056fe951770d38fd49791a7dce029f877aa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_notenoughshards",
+      "field": null,
+      "source": "Not enough cinder shards...",
+      "translation": "Nedostatek škvárových úlomků...",
+      "sourceSHA256": "9d9020ba44908e2d78696a62f0e47b0b3ba5ba49968bd1a0bce626aea009aefb",
+      "translationSHA256": "f0c67cb69c496945df471aefe3f354c5486ab0e4e9451c73857d43ccb036f614",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_wrongorder",
+      "field": null,
+      "source": "Incorrect order",
+      "translation": "Nesprávné pořadí",
+      "sourceSHA256": "15d75f191ad34b3fb1c830ece3950fa2c75230108281c2d389aae58efd209e38",
+      "translationSHA256": "4314890adacf12a2236550928b120aa2912d550a8146843bd9c0b5a70ef3818c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_noroom",
+      "field": null,
+      "source": "No room in inventory...",
+      "translation": "V inventáři není místo...",
+      "sourceSHA256": "a3bf82dd7c1b95ab70fc66490979bffd4f6d4b3e7f4abaf589725f381f6196b1",
+      "translationSHA256": "4767b1b93e32848fc2934a31d9aa75bfc004326dbe40a2ab18cc4ffb9bcec4b8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_unforge_right_slot",
+      "field": null,
+      "source": "Empty out the right slot to unforge...",
+      "translation": "Chcete-li zrušit kování, vyprázdněte pravý slot...",
+      "sourceSHA256": "e7dc55f1da1bc6e7ad417b0862ff75d31aa723d019a144238286aa7d33323ce6",
+      "translationSHA256": "8b30e22195491b769d034f00cf937877e585f0e505a1c0a5f56637191869ebf1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_unforge_invalid",
+      "field": null,
+      "source": "Only forged items and combined rings can be unforged...",
+      "translation": "Kování lze zrušit jen u předmětů vylepšených kováním a spojených prstenů...",
+      "sourceSHA256": "8bd38156ecd9138c18fcffea21d76b684d63064c2a4f273baa3accd5c4bd8e99",
+      "translationSHA256": "0edf5245b2b4524042ac2cbaa25eef53486679b113072410157a66c2a3fba8ce",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Forge_valid",
+      "field": null,
+      "source": "Press the power button to begin forging!",
+      "translation": "Začněte kovat stisknutím vypínače!",
+      "sourceSHA256": "8832b754242448b94500fa1ccdcc21cac204204289681b2849174074c961524c",
+      "translationSHA256": "f451ac1c3d06540f7a5404eb852c885a3a9bfcf6785875697d9a1e2d2be7cd0a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CommunityUpgrade",
+      "field": null,
+      "source": "{0} has requested a community upgrade!",
+      "translation": "Postava {0} požádala o komunitní vylepšení!",
+      "sourceSHA256": "f8980c3940707f57d221c4908ed73e11fc495dede418738f469a2cd81cb6dc8d",
+      "translationSHA256": "06fd5da1a31d359af7c7702572a7b25d34057cbcddb8344ff8b7793bee89b1e2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_AcceptedSpecialOrder",
+      "field": null,
+      "source": "{0} has accepted the special order '{1}'!",
+      "translation": "Postava {0} přijala zvláštní zakázku „{1}“!",
+      "sourceSHA256": "f842b7e24e85ac01e9737975fcfbea20a6ed17dc41740bab6eaf0d5d7eeb2d2e",
+      "translationSHA256": "c0f0c5875cc8217973a06e7a0ed303775122773c638879ed1c2d10c797295500",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_CompletedSpecialOrder",
+      "field": null,
+      "source": "The special order '{0}' has been fulfilled!",
+      "translation": "Zvláštní zakázka „{0}“ je splněna!",
+      "sourceSHA256": "f1bc47a4ede6363392c449bd7905cc0ffd2d0100182610af4668f9edc741941b",
+      "translationSHA256": "4ea3571b46250e4efc3f4952f27ce059b45232fcd0da734eed60ddc1b383d1d0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DartsWin",
+      "field": null,
+      "source": "{0} has won a game of darts in {1} throws!",
+      "translation": "Postava {0} vyhrála v šipkách s počtem hodů: {1}!",
+      "sourceSHA256": "f97c2a7ae011c780161078409531d50a1af1e943ca26584a7cb0d2268d11cf1c",
+      "translationSHA256": "68488a8a7b54d054dfa4f8e710b11a6c6cd5b3dc19e21dc3bd418b7c121dd29a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_DartsWinPerfect",
+      "field": null,
+      "source": "{0} has won a perfect game of darts!",
+      "translation": "Postava {0} vyhrála v šipkách perfektní hrou!",
+      "sourceSHA256": "235af22ac945cee6d03fef0c28dfbbed729dc16adb7c1a302e8fbe12a456a175",
+      "translationSHA256": "4434ee38cc59749391f12b9637acc5fd7257c6f2bc418c0619dd6944026a93f2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_OffTheIsland",
+      "field": null,
+      "source": "Off the island...",
+      "translation": "Mimo ostrov...",
+      "sourceSHA256": "6747473450cff1456eeaaf319f2d7bc3c30e4f64cae75eb058ca49d39b6085ba",
+      "translationSHA256": "a248035bbbec5943adf4b39764699c78cf44d5aabb1be38c5e53266d7756dcad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_Bull",
+      "field": null,
+      "source": "Bull!",
+      "translation": "Střed!",
+      "sourceSHA256": "f4447e1e4a40dbaa6b3d86cb499e126c221dd6904f54029fa879e4d6892b165d",
+      "translationSHA256": "6ac766e21d58aa4e07059869a349a5d1dcc9f164166908dda0debeceb99dec13",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_Bullseye",
+      "field": null,
+      "source": "Bullseye!",
+      "translation": "Přímo do středu!",
+      "sourceSHA256": "77a0de32ea4b43a70a2bbce87cce2c43490d100076269585969ccd32b2e9b0a0",
+      "translationSHA256": "8b53178352a6825e34d86e2523937a870fa3039295dc7fd04383d36281a0e424",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_PointsToGo",
+      "field": null,
+      "source": "{0} Points to Go",
+      "translation": "Zbývající body: {0}",
+      "sourceSHA256": "444c57191865bb8e8581492f99a2892b1223c50663c4357b85e9fd17d3541368",
+      "translationSHA256": "e5dc852b51c410c73bab803248850ec895b0ce872f332251d53e97073af1a5be",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_PointToGo",
+      "field": null,
+      "source": "{0} Point to Go",
+      "translation": "Zbývající body: {0}",
+      "sourceSHA256": "d3d8830b507080bafa3ca89553187dba6347d690ce44cb5333a3a70a55bdbc2a",
+      "translationSHA256": "e5dc852b51c410c73bab803248850ec895b0ce872f332251d53e97073af1a5be",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_WinText",
+      "field": null,
+      "source": "You won in {0} throws!",
+      "translation": "Výhra! Počet hodů: {0}",
+      "sourceSHA256": "5ae052c8c4248c664a58f341af7b18192b89c4480b6b21da9170b64d07501ba4",
+      "translationSHA256": "190128dcc5d9787240c686a15b777baf5bf34cc6c05ed13e98d32a79698772f9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Darts_WinTextPerfect",
+      "field": null,
+      "source": "Perfect game!",
+      "translation": "Perfektní hra!",
+      "sourceSHA256": "e0ea4667af7bae067657253aa299021dd7c9a0743fe45cdc4af401917f8fdf9a",
+      "translationSHA256": "f0c6f2c3bf5f21f2e144377a5a708585cfdbced73ea21b07fc37fb495d74d1fe",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_FieldOfficeDonation",
+      "field": null,
+      "source": "{0} has donated {1} to the island field office.",
+      "translation": "Postava {0} darovala Ostrovní terénní stanici předmět {1}.",
+      "sourceSHA256": "cfcf58ca7735ec702dc189b2febe4c93ca4cb9a850f8fc18a475000dc9152fda",
+      "translationSHA256": "521335ba4fac9b6457d7f06df586664c42b88350746e0a59fb2f6a28ac4c46e5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoatAnchor",
+      "field": null,
+      "source": "{0} has repaired the anchor of Willy's boat!",
+      "translation": "Postava {0} opravila kotvu Willyho lodi!",
+      "sourceSHA256": "e8293a9ff6c87ca576ad96367257996a8123be096484b2ea5ac24b299a1c6e3c",
+      "translationSHA256": "44019b58555fd698fe09bf751e6685370bc129d872f60b22a70b7ef64d1d75f3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoatHull",
+      "field": null,
+      "source": "{0} has repaired the hull of Willy's boat!",
+      "translation": "Postava {0} opravila trup Willyho lodi!",
+      "sourceSHA256": "77deccdf387ae9d7aa631a390eae8f441821abf56136f06b6d314a8094e1febb",
+      "translationSHA256": "b7a6d3d6fb3bd29f25bbab74f1b5d670698d450ac27bde98c56a842e6c61df5f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoatMachine",
+      "field": null,
+      "source": "{0} has repaired the ticket machine by Willy's boat!",
+      "translation": "Postava {0} opravila automat na jízdenky u Willyho lodi!",
+      "sourceSHA256": "e880a0ab0fcdeb54570f8afa87c955da5704d72f17798dc8e73a3a202eb2470e",
+      "translationSHA256": "98d9b6e27d6f4793a7f49092c891528f5eec68fe5510d4805fee1e8307aa2dab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_RepairBoat",
+      "field": null,
+      "source": "The preparations to repair Willy's boat are complete!",
+      "translation": "Přípravy na opravu Willyho lodi jsou hotové!",
+      "sourceSHA256": "4bae5a9730a4e8a6bdc766bc68030e381c7e927ffec6ff0557c165c9433348a9",
+      "translationSHA256": "32b5bf3b1d764510e05c9d0d83315e6545ce2a17dc3930dc38ca6d036b2b2a16",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_House",
+      "field": null,
+      "source": "{0} has asked the parrots to restore the island farmhouse!",
+      "translation": "Postava {0} požádala papoušky o opravu domu na ostrovní farmě!",
+      "sourceSHA256": "72005fd0f1f8aa70e4f61c9eb102701a5a005e9d1e0294da2614f9c12118ac91",
+      "translationSHA256": "7bc3519b1776b288b2e3565858d11b9e103479727340b151c1a06bc377d310d5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_House_Mailbox",
+      "field": null,
+      "source": "{0} has asked the parrots to begin delivering mail to the island!",
+      "translation": "Postava {0} požádala papoušky, aby začali doručovat poštu na ostrov!",
+      "sourceSHA256": "f92fe4663447157720ef7dc988e2444f414f92200fb2ffbdaee40023d84219fc",
+      "translationSHA256": "617b4d07c84b6652dd19378ca7b9585154cbc2ee79c421957029bed8d92ba9ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_VolcanoShortcutOut",
+      "field": null,
+      "source": "{0} has asked the parrots to build a shortcut out of the volcano!",
+      "translation": "Postava {0} požádala papoušky o vybudování zkratky ven ze sopky!",
+      "sourceSHA256": "d56581a4abe33ad916141ca131e5b5a950bc438986c62bca1e2f6b814d74bb16",
+      "translationSHA256": "28ade071b155977216865fca7c8737c4ec441aeac772cfb4d8c7fdfe6706aeab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_VolcanoBridge",
+      "field": null,
+      "source": "{0} has asked the parrots to build a bridge in the volcano!",
+      "translation": "Postava {0} požádala papoušky o stavbu mostu v sopce!",
+      "sourceSHA256": "79c5cbdf9191d1d331618429c4df48581dce2a27d6c6d61da7006e0f8948342f",
+      "translationSHA256": "7976889c35994241c78d1088252a67bffe678ccee5a937e9b5311e32078eb78c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Turtle",
+      "field": null,
+      "source": "{0} has asked the parrots to clear the path to the west side of the island!",
+      "translation": "Postava {0} požádala papoušky o uvolnění cesty na západ ostrova!",
+      "sourceSHA256": "0caca6c921542469ea643d28f0af0a4f166488e87e17ec89fa56b5cdd1d9cf73",
+      "translationSHA256": "a07195a7c454b0c1b3ae2557cd44eae8aabe9e4e8a54075824d31cf8f8f5b150",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_ParrotPlatforms",
+      "field": null,
+      "source": "{0} has asked the parrots to resume the Parrot Express!",
+      "translation": "Postava {0} požádala papoušky o obnovení Papouščího expresu!",
+      "sourceSHA256": "51045a70af7a418c2eee9cda56c29fa4b2514f5c9852e2f14f271ce632d6122d",
+      "translationSHA256": "c8f8b9cf87362d14d9f31bc856d6033623cab1d2a5154da60f018d89027d4774",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Bridge",
+      "field": null,
+      "source": "{0} has asked the parrots to fix the bridge near the tent!",
+      "translation": "Postava {0} požádala papoušky o opravu mostu u stanu!",
+      "sourceSHA256": "be15349107d009b514fcad962d3fcae14f27b485ff0e299ea3dbcdf701458a96",
+      "translationSHA256": "d2b87999a75237d94ae01a20145db87703af4469172b742411f0ca3cd13cb03e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Resort",
+      "field": null,
+      "source": "{0} has asked the parrots to restore the island resort!",
+      "translation": "Postava {0} požádala papoušky o obnovu Ostrovního letoviska!",
+      "sourceSHA256": "8e613b05aa54a7ae2adcfd27bb49ac7bedbbee707d56d9aede0d93302f7b308a",
+      "translationSHA256": "41350eeabe29d9089d145849a488283a37f1d4509282a8bb31c7583af8c941dd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Hut",
+      "field": null,
+      "source": "{0} has fed a parrot a walnut!",
+      "translation": "Postava {0} nakrmila papouška ořechem!",
+      "sourceSHA256": "a5db5cd36694eb358bd41de9d0c712ee3a7012c4a97ae16e31c70583bb66402a",
+      "translationSHA256": "7796f4aa80c6fbb000710d8b2b285d407e366e6fddbd656d86c500c0c6d58c65",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_Hut",
+      "field": null,
+      "source": "*Awk*... Walnut! *Awk*... Give?",
+      "translation": "*Krá*... Ořech! *Krá*... Dáš?",
+      "sourceSHA256": "6efe912b04c0e0a75d3e940be86c460e4837be353d16ba093cd44d37339a64e9",
+      "translationSHA256": "f87b846000fb59541042fa6c94f38acddebc899f05dada2ba44cfc4e5456d09c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_Resort",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*...  Build resort!",
+      "translation": "*Krá*... {0} ořechů! *Krá*...  Postavit letovisko!",
+      "sourceSHA256": "e2779358bb8723a22dacc513ba765aaa326f2e576015adc1ad46cfbc4389089a",
+      "translationSHA256": "beffa6eae345bb293a5033bb50a769016175f243f144d364509ff852a2a2a0d9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_House",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Repair sleep hut!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Opravit spací chýši!",
+      "sourceSHA256": "2476a1f1cff6c280a062abb2299969dea1001509801c99bebdee99ba8c5b58e2",
+      "translationSHA256": "5886735b7f4fbed39759f6440d520ebbbd069174f090a5160d7bfe6a3c497b91",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_House_Mailbox",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Deliver mail!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Doručovat poštu!",
+      "sourceSHA256": "5dff9ad4bae92bd276ad3ad2d04611281e467578b08319c3ac3d2b1aec4207bf",
+      "translationSHA256": "1afcdd91d2962ea9799e56d812c9b565d4825928184b5b6126b268eb26de6cc1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_VolcanoShortcutOut",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Exit shortcut!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Zkratka ven!",
+      "sourceSHA256": "f66a39c9da2428b5e9558ffcb3aec5d14ad4b032e672831af62f1b49014dd7da",
+      "translationSHA256": "92231f907a2b5c49ce6a124d5595b48d0f2780272a96fdca7d1c730a159e2fb2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_VolcanoBridge",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Build bridge!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Postavit most!",
+      "sourceSHA256": "72f18f308ab754b9272e2fd5e804ed49a91addb68d25a495981ed27a91c33043",
+      "translationSHA256": "c658ec997b1c4208a001c0d2293ba6def4528ddd917aa1e159be105c7eda356b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_Turtle",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Wake turtle!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Vzbudit želvu!",
+      "sourceSHA256": "aba149375c87db55532c92e9d0cfbfe3df178ad3846aa9bdf209e26e36f89cd3",
+      "translationSHA256": "f0ad24db69c7f859dc3572496e53c959775dbc52cd2d0d5419b14158cc6d9dc5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_ParrotPlatforms",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Parrot Express!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Papouščí expres!",
+      "sourceSHA256": "51b4002d0a31569f04848c2307da0fd55a20c582145773c4d1827f0b07c17c4d",
+      "translationSHA256": "02a3417dc3b2f2709b2c753c4212067b6e08f9971f4f26eabc657b42eb5d09c9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_Bridge",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Repair bridge!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Opravit most!",
+      "sourceSHA256": "b7289f7b904b1dba2cbe712eea3e329285e3e46bff9e2662f9c8555716a9c80b",
+      "translationSHA256": "c61d0ec3125c61f44c90aa9e7e8d25ba108efb59043463d4b0f1715ac4b8f28f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_DiamondForge_Singular",
+      "field": null,
+      "source": "+{0} Random Forge",
+      "translation": "Náhodná vylepšení kováním: +{0}",
+      "sourceSHA256": "0f402bd819ade94fd3cd88072e623cff07b990c6cbde2ffa8cf38c42e1b95184",
+      "translationSHA256": "65b94c3a30d3937233d107a46a0db958a4416ac4338b5167cd2253971248a888",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ItemHover_DiamondForge_Plural",
+      "field": null,
+      "source": "+{0} Random Forges",
+      "translation": "Náhodná vylepšení kováním: +{0}",
+      "sourceSHA256": "48b0b4b6a3ca86b44a0257175fe29c068d4cd035c5547b11f5f51d7e2d27e351",
+      "translationSHA256": "65b94c3a30d3937233d107a46a0db958a4416ac4338b5167cd2253971248a888",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_Trader",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Build trading hut!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Postavit obchodní chýši!",
+      "sourceSHA256": "c8355c5ec688da4c2d305c90464673a916be44c305be900fd0db5874902b67db",
+      "translationSHA256": "5290879ed061ffbe4659eff67b0ea1d92bf05c1b300b266243f9ccf20f16f513",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "UpgradePerch_Obelisk",
+      "field": null,
+      "source": "*Awk*... {0} walnuts! *Awk*... Build warp tower!",
+      "translation": "*Krá*... {0} ořechů! *Krá*... Postavit teleportační věž!",
+      "sourceSHA256": "85e895abf8bcc89a6a0d4371129488dc581f4ce637fcfcbba8408497642aceb4",
+      "translationSHA256": "de2efce059e7dbc20444debdc612861bd88f1c31407f9db999688489e64276ff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Trader",
+      "field": null,
+      "source": "{0} has asked the parrots to build an island trading hut!",
+      "translation": "Postava {0} požádala papoušky o stavbu obchodní chýše na ostrově!",
+      "sourceSHA256": "96c80f33030957b2b7bbcac2e40cc7b34d92bc7a47b76bce9c01dff703e82fe3",
+      "translationSHA256": "ff5bc543c71ba18af5804b416bdb0e6dadd548ccc14968f842f9f79f99ccd847",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_UpgradePerch_Obelisk",
+      "field": null,
+      "source": "{0} has asked the parrots to build a 'Farm Obelisk'!",
+      "translation": "Postava {0} požádala papoušky o stavbu „Farmářského obelisku“!",
+      "sourceSHA256": "eed15f174a4b86dba0c54712b756174e3b1b8e5719e26e55c5fc1f8ed31c2ae2",
+      "translationSHA256": "7a567a8d44f55d01cde829d077b32c3dce2118c8c1d406558a00ea06a70e8085",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_FieldOfficeCompleteSet",
+      "field": null,
+      "source": "{0} has finished a set piece in the island field office!",
+      "translation": "Postava {0} zkompletovala jeden exponát v Ostrovní terénní stanici!",
+      "sourceSHA256": "5ec3ef467b4b814fe083a75414254693010cf105b39182880fb9ae56a51bd4e7",
+      "translationSHA256": "cc77caedca53b996584999b1205826ceef489c8c50d7c0b365982ba9c626edd5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut_VolcanoDungeon",
+      "field": null,
+      "source": "{0} is sleeping in the volcano tonight...",
+      "translation": "{0} dnes v noci spí v sopce...",
+      "sourceSHA256": "5b7b3cac356d910b4acb2aaa149582a9ef9c38295c0be155b2073875980973df",
+      "translationSHA256": "886001d6f21c6982f938599f69a9e3135c1f468e9f40bdcb53f7b99a3cf366ff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut_Hospital",
+      "field": null,
+      "source": "{0} is spending the night in the hospital.",
+      "translation": "{0} tráví noc v nemocnici.",
+      "sourceSHA256": "ca7cab709ac7e01bd80effde6b8c5194aed574bcf357512451f2feb539bd7ea3",
+      "translationSHA256": "4a509a95a3f21486f1ab0edd3ee842e99ad15d573c392ebea1a5706d8e5e0391",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut_Saloon",
+      "field": null,
+      "source": "{0} fell asleep in the saloon.",
+      "translation": "Postava {0} usnula v saloonu.",
+      "sourceSHA256": "e5d63f44475ad7dd5090917f1107645acf4ec7f60bfc0f8ae6be22dea58a497d",
+      "translationSHA256": "0559dec08d6b963def727b22ade9d181f028cde623e06f1bbf03734103424341",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut_Tent",
+      "field": null,
+      "source": "{0} fell asleep in Linus' tent.",
+      "translation": "Postava {0} usnula v Linusově stanu.",
+      "sourceSHA256": "7029999ee961f94d9664ce811a70210477dccc121b54860785ccca2b20640bbf",
+      "translationSHA256": "528af7d03a1d4abb0105be01cbc6d0b838312b71d98ebf08003211e15e1ca281",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_PassedOut_Sewer",
+      "field": null,
+      "source": "{0} nodded off in the sewer.",
+      "translation": "Postava {0} podřimuje v kanalizaci.",
+      "sourceSHA256": "038d769932713cf27e788909fb4d8ecf8436cf38aa51cdd6f4e981049dd067af",
+      "translationSHA256": "c66b1d407d76016fa5ea8eb8b55cb9a0f7b6ccfabe71d5af3383bc09f2d66e7f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_StockList",
+      "field": null,
+      "source": "Pierre is now selling seeds from all seasons.",
+      "translation": "Pierre teď prodává semena pro všechna roční období.",
+      "sourceSHA256": "45ab4efdfa05d6118b7636a3d087b0a9795b52a2bc172ac2ac2a80e7dbbfa820",
+      "translationSHA256": "254e6f9da300ddcdf6eba14a135276d54066708efb20e1377589f530108fcb6e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_FinishedSurvey",
+      "field": null,
+      "source": "{0} took an accurate survey of island life.",
+      "translation": "Postava {0} provedla přesný průzkum ostrovní přírody.",
+      "sourceSHA256": "0b609df01ed24d7addab8ad9601508b697709fa4caaa008744f6b8ca9e40ca65",
+      "translationSHA256": "fc3f71dc37273b13cec6f706fdd47c1ea6266e1045f59ad0a7a5d8fcfbd0b03a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HardModeMinesActivated",
+      "field": null,
+      "source": "{0} has removed an ancient magi-seal of protection in the mines. Tonight, powerful monsters will ascend from the deep...",
+      "translation": "Postava {0} odstranila v dolech prastarou ochrannou kouzelnou pečeť. Dnes v noci z hlubin vystoupají mocné příšery...",
+      "sourceSHA256": "2d6cfc6878c1d99e3bdb690d4602c9a05d9a3b637d70387a81c691d6d8ea10fc",
+      "translationSHA256": "55376420c886d2aaf75de30e2320de889d9d8f95e01ac80807528cd7f0e45cf3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HardModeMinesDeactivated",
+      "field": null,
+      "source": "{0} has restored an ancient magi-seal of protection in the mines. Tomorrow, the mines will return to normal...",
+      "translation": "Postava {0} obnovila v dolech prastarou ochrannou kouzelnou pečeť. Zítra se doly vrátí do normálu...",
+      "sourceSHA256": "801436863c183e18060f5f65b26eaa20e1f2bc31aad317b0cec1dfabf1947af5",
+      "translationSHA256": "d62e404a31f203d7af7c458927bae445fae00b5b1dc1c9c3b7817caa5f7d61ff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ParrotPlatform_Volcano",
+      "field": null,
+      "source": "Volcano",
+      "translation": "Sopka",
+      "sourceSHA256": "e36bc30435af85595d81bb998ce4c91990c6883ea2d597a38e2a5fc37fe87723",
+      "translationSHA256": "afc25c0ae36e32a72d5dbb7953b4a2d7404faf12e73d49d6f19cee0c486b75c5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ParrotPlatform_Archaeology",
+      "field": null,
+      "source": "Dig Site",
+      "translation": "Naleziště vykopávek",
+      "sourceSHA256": "5111c6ae883144903589a25d9d42004f88e21f478192bb26334c78c7794104f8",
+      "translationSHA256": "a5072efc6edd83188fa1056fa8779f8195f9ed92e401023179a57a471ceff71c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ParrotPlatform_Forest",
+      "field": null,
+      "source": "Jungle",
+      "translation": "Džungle",
+      "sourceSHA256": "349b3190be299fcce50a5d411d5d4155e9885d1dc76cda6858ac60bf965d6f30",
+      "translationSHA256": "b5d41119eff4138f8da0f30cd1b19d1fb34ff19512620b50a7db24a269d4ac24",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ParrotPlatform_Farm",
+      "field": null,
+      "source": "Farm",
+      "translation": "Farma",
+      "sourceSHA256": "3457b1617fe56912104fc55806c28dfca8a70a42ac40e6569982a79a71141365",
+      "translationSHA256": "07d2eac60939628bdbb79e6edfc8342d9a3e7a8f5e0a335dbd213056410b8612",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "ParrotPlatform_Docks",
+      "field": null,
+      "source": "Docks",
+      "translation": "Doky",
+      "sourceSHA256": "5d61c77911cb5fccbd6dcbb66f25c4e70ae794041bf9385077f350c58a430639",
+      "translationSHA256": "bf1cb241e19778b65c63301ae1444c0ee10eb5bce8baa792097e5ec2aca8f140",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Item_CantBeUsedHere",
+      "field": null,
+      "source": "This item can't be used here.",
+      "translation": "Tento předmět zde nelze použít.",
+      "sourceSHA256": "866f164ce443eb078faba7567fcfef0fb3fc86fd813abacc67834a0bc4002e55",
+      "translationSHA256": "f9de8dceac86c741eae5a713aefaaaf1e68155574680c8d8b0bc491190c2b750",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Item_Tooltip_GalaxyForged",
+      "field": null,
+      "source": "Soul",
+      "translation": "Duše",
+      "sourceSHA256": "70629416ece0407f8118ec37871763a520cf5ef56dce2818fd847ed84ea4d483",
+      "translationSHA256": "c4dd1fcff9b49754ccca958829d6e1901286bd2992cecc694dd9acfb185e720d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_InfinityWeapon",
+      "field": null,
+      "source": "{0} forged an {1}.",
+      "translation": "Postava {0} vykovala zbraň {1}.",
+      "sourceSHA256": "6ac7bded97d80765877595809f1c2bfb881a5ef895534a732900927840ebf44e",
+      "translationSHA256": "9b1b1defe5b5301b0b0113ab97266d3cb9885271923dfd6e595583bd02fbbee9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Lupini",
+      "field": null,
+      "source": "{0} bought an original Lupini.",
+      "translation": "Postava {0} koupila originál od Lupiniho.",
+      "sourceSHA256": "3f1ffd165542eaa40c75189978ca90f08f8e7d09359c6c0393f7e16693770706",
+      "translationSHA256": "0cc42c2a26ba54a7432285d5c1c420dbaa816fc4fc1b9395cba076ff845d5043",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FruitTree_PlacementWarning",
+      "field": null,
+      "source": "Your {0} won't be able to grow here.",
+      "translation": "Váš strom ({0}) tu nebude moci růst.",
+      "sourceSHA256": "bb54b79837d982169fce939107ba3314e6cdad4b65e3023296ea6853f0872524",
+      "translationSHA256": "2c7547354c50198b2a329aea3852b86075b46f43944268d2255fc6c9d375de6f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Eternal1",
+      "field": null,
+      "source": "You feel it in your heart: somewhere, somehow... Grandpa is beaming with pride.",
+      "translation": "V srdci cítíte, že někde, nějak... dědeček září pýchou.",
+      "sourceSHA256": "26d78e00c21bb49949e540eb86d7e4bea92f004f5b8bcd78557ace48f11e0c1a",
+      "translationSHA256": "caf203813dcc6d6f6f7be51f787bf07fe780c82553a239716d472085d49b0b55",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Eternal2",
+      "field": null,
+      "source": "The legacy of {0} Farm is eternal.",
+      "translation": "Odkaz farmy {0} je věčný.",
+      "sourceSHA256": "e1fed2667ac6927c3851470c95cb0077e5e254a09d8d40dbaae5d4b637c23d09",
+      "translationSHA256": "3ad14f19f2df78b4721d58cf235a6521175e83a5b94c7df40e0fd28de831670f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Eternal3",
+      "field": null,
+      "source": "A rumbling sound was heard in the distance...",
+      "translation": "V dálce se ozvalo dunění...",
+      "sourceSHA256": "0dae85ea8fe7b6f67f71f5b4939ebba438f0b006ffeaedd1f82d2fa48c8792ec",
+      "translationSHA256": "e6d9175f37136731d9819c611ce2233260d65bfbc507b088217f02c5e50310e0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NameChange_EasterEgg1",
+      "field": null,
+      "source": "ConcernedApe: What kind of a name is that? Seems fishy...",
+      "translation": "ConcernedApe: Co je to za jméno? Něco mi tu nehraje...",
+      "sourceSHA256": "bdc0be819dc1a767871e487fc3020bd9f049ec92fe4d283c18487ff700b92f78",
+      "translationSHA256": "928bda8af1d1f1c6e6660e69c56b03167796409a6af96293c415ead2627968ac",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NameChange_EasterEgg2",
+      "field": null,
+      "source": "Mr. Qi: Easy {0}, huh? I'm disappointed, kid. I thought you wanted to beat this game fair and square?",
+      "translation": "Pan Qi: Snadno získaný předmět {0}, co? Jsem zklamaný, děcko. Myslel jsem, že chceš tuhle hru dohrát poctivě?",
+      "sourceSHA256": "b1ac1ad1ead135b0d7567c144d99d9b9cb0d874a6d67bf4a810d548db62d0d27",
+      "translationSHA256": "a37e3d81749a8dc18bfc3adbdc577337e7a119e446edd9209d8a1e1e3104c661",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

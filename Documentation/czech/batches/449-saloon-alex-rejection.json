@@ -1,0 +1,28 @@
+{
+  "id": "449-saloon-alex-rejection",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all three visible segments against English; verified Alex's stammering hurt, natural player-neutral discomfort wording, the intentional silent romantic marker, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Saloon",
+      "key": "rejectJosh",
+      "field": null,
+      "source": "pause 100/playMusic none/shake Alex 2000/emote Alex 28/speak Alex \"...Oh...$s#$b#I...I'm sorry if I made you uncomfortable...$s\"/pause 2000/speak Alex \"I'm not hungry anymore...$s\"/viewport move 1 1 5000/globalFade/viewport -1000 -1000/pause 4000/end dialogue Alex \"...$l\"",
+      "translation": "pause 100/playMusic none/shake Alex 2000/emote Alex 28/speak Alex \"...Ach...$s#$b#P... Promiň, jestli ti to bylo nepříjemné...$s\"/pause 2000/speak Alex \"Už nemám hlad...$s\"/viewport move 1 1 5000/globalFade/viewport -1000 -1000/pause 4000/end dialogue Alex \"...$l\"",
+      "sourceSHA256": "04b7be8a06159598513a71856b079cb429d000ca54251c84f8dbdb99452dfa88",
+      "translationSHA256": "0581795e00f281af5d414be71a1312f2eb69b9734c155b6cc003e83f940cfc2a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

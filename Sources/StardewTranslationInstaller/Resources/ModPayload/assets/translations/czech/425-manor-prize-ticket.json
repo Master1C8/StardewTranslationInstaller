@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/ManorHouse",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "prizeTicketIntro/n completedFirstBillboardQuest": "distantBanjo/3 6/farmer -2000 -2000 0 Lewis 1 6 0/skippable/pause 2000/warp farmer 5 11/playSound doorClose/pause 400/move farmer 0 -5 0/move farmer -3 0 3/pause 400/faceDirection Lewis 1/pause 500/emote Lewis 16/speak Lewis \"Ach, zdravím tě, @.\"/pause 500/faceDirection Lewis 0/speak Lewis \"Právě jsem do tohoto automatu doplňoval další odměny...\"/pause 300/faceDirection farmer 0/emote farmer 8/pause 500/speak Lewis \"Je to nový program, který jsem vymyslel, abych mezi obyvateli města podpořil vzájemnou ochotu pomáhat... Včetně tebe!#$b#Je to docela jednoduché... občas za pomoc někomu ve městě dostaneš „Lístek na odměnu“. Lístky můžeš vyměnit za odměny.#$b#Jsou tam opravdu výjimečné věci!$h\"/pause 500/emote farmer 56/faceDirection Lewis 1/emote Lewis 40/speak Lewis \"Jenom se bojím, že lidé půjdou jen po lístcích, místo aby si pěstovali opravdový soucit se svými bližními...$s\"/faceDirection farmer 3/quickQuestion #Chci jen pomáhat.#Jo, jde mi o odměny.(break)pause 100\\emote Lewis 32\\speak Lewis \"Opravdu? To rád slyším!$h\"(break)pause 50\\jump Lewis\\pause 500\\speak Lewis \"Aha!$u#$b#No... to jsem zrovna slyšet nechtěl, ale vážím si tvé upřímnosti.\"/pause 500/speak Lewis \"Každopádně... dál sleduj městskou vývěsku „Hledá se pomoc“. Je to dobrý způsob, jak získat další lístky.#$b#Hodně štěstí.\"/pause 500/end"
+      }
+    }
+  ]
+}

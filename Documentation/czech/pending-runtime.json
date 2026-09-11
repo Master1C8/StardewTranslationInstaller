@@ -1,0 +1,21 @@
+[
+  {
+    "target": "Strings/UI",
+    "keys": [
+      "Chat_BuildingBuild",
+      "Chat_BuildingMagicBuild"
+    ],
+    "draftEntries": {
+      "Chat_BuildingBuild": "Postava {0} požádala o stavbu budovy {1}{2}!",
+      "Chat_BuildingMagicBuild": "Postava {0} přivolala budovu {1}{2}!"
+    },
+    "status": "resolved",
+    "resolution": "VN Revival Language Switcher 1.8.0 suppresses Utility.AOrAn only for Czech (and the pre-existing Bulgarian branch) while preserving {1}; both Czech strings are reviewed in batch 674-runtime-article-building-chat.json.",
+    "originalEvidence": {
+      "sender": "GameLocation/CarpenterMenu send aOrAn:tokenized building name as {1} and tokenized name as {2}.",
+      "receiver": "Multiplayer.receiveChatInfoMessage delegate parses the name then calls Utility.AOrAn.",
+      "Utility.AOrAn": "IL_0000–004c returns a/an unconditionally for non-Hungarian languages; unlike Lexicon this has no mod-language early return."
+    },
+    "ilSHA256": "cf0958af535b5743844e4aef57f0ecf28e34056da4c9a21832a1a00fd377093c"
+  }
+]

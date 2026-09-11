@@ -1,0 +1,47 @@
+{
+  "id": "030-ui-family",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read both complete source/target messages and both child-sex renderings with the actual translated Lexicon forms. Replaced a stilted colon label with Je to chlapec/dívka, reread the full final messages, and verified parents, welcome, naming, construction request, self-owned home and every placeholder occurrence. No unsupported player-name inflection or gender assumption.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Baby",
+      "field": null,
+      "source": "{0} and {1} welcomed a baby {2} to the family! They named {3} {4}.",
+      "translation": "Rodiče {0} a {1} přivítali do rodiny miminko! Je to {2}. Dali {3} jméno {4}.",
+      "sourceSHA256": "2ea8f37eefe60ab6a22f1f70a3253c42b4fff5aa2a2585cfbc2cfca9157ffdcf",
+      "translationSHA256": "6482dfe15cdbeafd6233012364e9c66996c0a6b1b804efebeef87b7515675a98",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_HouseUpgrade",
+      "field": null,
+      "source": "{0} has requested construction on {1} home!",
+      "translation": "Postava {0} požádala o stavební úpravy {1} domu!",
+      "sourceSHA256": "3658b44caf79da25bbb3e524e3aa8ef08bc78f60ada93b2e50deb0e64fb5d869",
+      "translationSHA256": "18788dea2634475b318c4f0d69bef5069aad59b59bf8f4c2292fcc357bb282b6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

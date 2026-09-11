@@ -1,0 +1,28 @@
+{
+  "id": "362-farm-leah-sculpture",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all three visible segments against English; verified Leah's warm artistic voice, personalized sculpture title, natural player-neutral Czech, typography and meaning, and confirmed every sculpture gift, timing and event command is exact.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "992253/t 600 1130/f Leah 1500/w sunny",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Hi, @. Beautiful day, isn't it?\"/pause 500/speak Leah \"I brought you a gift.#$b#It's a sculpture I've been working on, just for you.\"/pause 500/pause 800/itemAboveHead sculpture/pause 3300/pause 800/awardFestivalPrize sculpture/pause 800/pause 50/speak Leah \"It's called... 'How I Feel About @'. I hope you like it.\"/pause 50/pause 50/end",
+      "translation": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Ahoj, @. Krásný den, viď?\"/pause 500/speak Leah \"Přinesla jsem ti dárek.#$b#Je to socha, na které jsem pracovala jen pro tebe.\"/pause 500/pause 800/itemAboveHead sculpture/pause 3300/pause 800/awardFestivalPrize sculpture/pause 800/pause 50/speak Leah \"Jmenuje se... ‚Co cítím k @‘. Doufám, že se ti líbí.\"/pause 50/pause 50/end",
+      "sourceSHA256": "80bc12d0170e69d7fe112968aecc73af70ad012e23a92c65cdc67521d1a9c260",
+      "translationSHA256": "053843b62181e8357c0bd912c6709cb24f99baf3b7e8ccdb0338bd281614ca46",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

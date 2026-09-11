@@ -1,0 +1,28 @@
+{
+  "id": "365-farm-marlon-slime-hutch",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all seven visible Marlon segments against English; verified veteran voice, joke timing, canonical Slizí příbytek, slizové vejce and Slizový inkubátor terminology, tutorial meaning, Czech grammar and exact gift, sprite and broadcast commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "690006/n slimeHutchBuilt/H",
+      "field": null,
+      "source": "continue/64 15/farmer 64 16 2 Marlon 66 15 2/broadcastEvent/skippable/pause 1000/move farmer -1 0 2/move farmer 0 1 1/pause 500/showFrame Marlon 12/pause 1000/speak Marlon \"Bumped into Robin this morning... she told me you've got a new Slime Hutch!\"/showFrame Marlon 8/shake Marlon 1600/textAboveHead Marlon \"Not bad!\"/pause 1600/showFrame Marlon 12/pause 500/speak Marlon \"I was into slime breeding at your age. It's a great hobby... but dangerous.#$b#How'd you think I lost this eye?\"/shake Marlon 1000/showFrame Marlon 12/textAboveHead Marlon \"Hah!\"/pause 1000/textAboveHead Marlon \"Just Kidding.\"/showFrame Marlon 12/pause 200/showFrame Marlon 7/animate Marlon false false 120 4 5 6 7/pause 800/speak Marlon \"Here, I've got something for you.\"/faceDirection farmer 2/itemAboveHead slimeEgg/pause 1000/pause 1000/pause 1300/awardFestivalPrize slimeEgg/pause 300/faceDirection farmer 1 true/pause 500/showFrame Marlon 12/speak Marlon \"It's a slime egg. You can place that inside a slime incubator to hatch it.#$b#Now, take a good hard look at that egg. Next time you're out slime-hunting keep your eyes peeled for more eggs. They're rare, but slimes do drop them from time to time.#$b#Collect eggs from different slimes to add some variety to your herd!\"/pause 500/end",
+      "translation": "continue/64 15/farmer 64 16 2 Marlon 66 15 2/broadcastEvent/skippable/pause 1000/move farmer -1 0 2/move farmer 0 1 1/pause 500/showFrame Marlon 12/pause 1000/speak Marlon \"Dnes ráno jsem narazil na Robin... řekla mi, že máš nový Slizí příbytek!\"/showFrame Marlon 8/shake Marlon 1600/textAboveHead Marlon \"To není špatné!\"/pause 1600/showFrame Marlon 12/pause 500/speak Marlon \"Když jsem byl ve tvém věku, choval jsem slizy. Je to skvělý koníček... ale nebezpečný.#$b#Jak myslíš, že jsem přišel o oko?\"/shake Marlon 1000/showFrame Marlon 12/textAboveHead Marlon \"Ha!\"/pause 1000/textAboveHead Marlon \"Jen žertuji.\"/showFrame Marlon 12/pause 200/showFrame Marlon 7/animate Marlon false false 120 4 5 6 7/pause 800/speak Marlon \"Tady, něco pro tebe mám.\"/faceDirection farmer 2/itemAboveHead slimeEgg/pause 1000/pause 1000/pause 1300/awardFestivalPrize slimeEgg/pause 300/faceDirection farmer 1 true/pause 500/showFrame Marlon 12/speak Marlon \"Je to slizové vejce. Když ho vložíš do Slizového inkubátoru, vylíhne se z něj sliz.#$b#Teď si to vejce pořádně prohlédni. Až příště vyrazíš lovit slizy, dávej pozor, jestli nenajdeš další vejce. Jsou vzácná, ale slizové příšery je čas od času upustí.#$b#Sbírej vejce od různých slizů, ať máš ve stádě pestřejší výběr!\"/pause 500/end",
+      "sourceSHA256": "d52d40af830d8426f519fe85042bae23ccd420f12ba37add78063103aa3e4de9",
+      "translationSHA256": "3767dc1c2f051c43119b6e4976a33ecd41ea7bf564cb46bc92ee057c751c2abc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

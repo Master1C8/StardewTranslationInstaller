@@ -1,0 +1,85 @@
+{
+  "id": "358-elliott-house-piano",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read all 4 complete piano-event rows after applying the audit correction. Recast the player response as práce na farmě je stejně těžká to avoid assigning masculine farmářem to a player of unknown gender while preserving the meaning. Verified all piano branches, Elliott masculine self-reference, response boundaries, @ placeholder, emotion markers, commands, switchEvent and fork targets; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "423502/f Elliott 1500/p Elliott",
+      "field": null,
+      "source": "elliottPiano/-200 -1000/farmer 3 9 0 Elliott 8 4 0/skippable/positionOffset Elliott 32 16/animate Elliott false true 400 25 26 26 27 27 26 26 25 26 27 27 26 26 25/pause 1000/viewport 8 4 true/pause 24000/stopAnimation Elliott/showFrame Elliott 24/move farmer 0 -3 0/move farmer 4 0 0/showFrame Elliott 28/pause 1000/speak Elliott \"Ah... I thought someone was there.$7\"/pause 1000/showFrame Elliott 30/animate Elliott false false 200 28 29 30/playSound dwop/pause 1000/question fork1 \"#That was wonderful.#How long have you been playing?\"/fork howLong/pause 500/emote Elliott 32/speak Elliott \"Thank you. I'm not very good, but it's fun to play.$h\"/switchEvent elliottPianoJoin",
+      "translation": "elliottPiano/-200 -1000/farmer 3 9 0 Elliott 8 4 0/skippable/positionOffset Elliott 32 16/animate Elliott false true 400 25 26 26 27 27 26 26 25 26 27 27 26 26 25/pause 1000/viewport 8 4 true/pause 24000/stopAnimation Elliott/showFrame Elliott 24/move farmer 0 -3 0/move farmer 4 0 0/showFrame Elliott 28/pause 1000/speak Elliott \"Ach... Myslel jsem, že tam někdo je.$7\"/pause 1000/showFrame Elliott 30/animate Elliott false false 200 28 29 30/playSound dwop/pause 1000/question fork1 \"#To bylo nádherné.#Jak dlouho hraješ?\"/fork howLong/pause 500/emote Elliott 32/speak Elliott \"Děkuji. Nejsem moc dobrý, ale hraní mě baví.$h\"/switchEvent elliottPianoJoin",
+      "sourceSHA256": "407e7f85a6efd1b19cd009cdbb3c0ffbaa388e7c44cc9e0cefd2ba5177c4dcfe",
+      "translationSHA256": "dec9ee5c2e391e17ec9e85d744ec67a06f65530bd4673ca55241bacf7762a029",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "howLong",
+      "field": null,
+      "source": "pause 500/resetVariable/speak Elliott \"Oh, I'm not sure... I've been dabbling in piano since I was a kid.$7#$b#I'm not very good, but it's fun.\"/switchEvent elliottPianoJoin",
+      "translation": "pause 500/resetVariable/speak Elliott \"Ach, nejsem si jistý... Na klavír si jen tak hraju už od dětství.$7#$b#Nejsem moc dobrý, ale baví mě to.\"/switchEvent elliottPianoJoin",
+      "sourceSHA256": "65f2b9f5e3666b49031eca73bf8f3b9af0fab3143d478f4f301d14eda2e33863",
+      "translationSHA256": "e20cc7225983dcc8ed3ce3757bdf0de3329c9389747a39ae39ce915b118f240d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "elliottPianoJoin",
+      "field": null,
+      "source": "pause 800/showFrame Elliott 0/animate Elliott false true 220 0 1 2 3/playSound woodyStep/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/stopAnimation Elliott/faceDirection Elliott 2/pause 500/move Elliott 1 0 1 true/faceDirection farmer 1/pause 1500/showFrame Elliott 31/pause 800/emote Elliott 28/pause 800/speak Elliott \"I've been working day and night to try and finish my book... It's been driving me insane, @.$s\"/showFrame Elliott 4/pause 800/move Elliott -2 0 0/pause 800/speak Elliott \"An occasional tune is the only recreation I allow myself.$7\"/pause 600/faceDirection Elliott 2/speak Elliott \"There's just too much work to do! And my bank account's starting to run dry.$7#$b#Sometimes I wish I could just throw it all away and become a farmer like you.$h\"/pause 300/faceDirection farmer 0/question fork1 \"#It's just as hard to be a farmer, you know.#Come live on the farm, I could use the extra help.\"/fork extraHelp/pause 500/emote Elliott 16/speak Elliott \"You're right... that was an insensitive thing to say.$8\"/move Elliott 0 1 3/faceDirection farmer 1/speak Elliott \"What I meant is that I'd like to get away from this dark, musty prison and experience a little bit of real life... that's all.$s\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*sigh*... sorry I'm complaining like this. I just need someone to talk to now and then.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "translation": "pause 800/showFrame Elliott 0/animate Elliott false true 220 0 1 2 3/playSound woodyStep/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/stopAnimation Elliott/faceDirection Elliott 2/pause 500/move Elliott 1 0 1 true/faceDirection farmer 1/pause 1500/showFrame Elliott 31/pause 800/emote Elliott 28/pause 800/speak Elliott \"Ve dne v noci se snažím dokončit knihu... Přivádí mě to k šílenství, @.$s\"/showFrame Elliott 4/pause 800/move Elliott -2 0 0/pause 800/speak Elliott \"Občasná melodie je jediná zábava, kterou si dopřeju.$7\"/pause 600/faceDirection Elliott 2/speak Elliott \"Je toho prostě příliš! A na bankovním účtu mi začínají docházet peníze.$7#$b#Někdy si přeju, abych to mohl všechno zahodit a stát se farmářem jako ty.$h\"/pause 300/faceDirection farmer 0/question fork1 \"#Víš, práce na farmě je stejně těžká.#Pojď bydlet na farmu, pomoc navíc by se mi hodila.\"/fork extraHelp/pause 500/emote Elliott 16/speak Elliott \"Máš pravdu... Tohle ode mě bylo necitlivé.$8\"/move Elliott 0 1 3/faceDirection farmer 1/speak Elliott \"Chtěl jsem tím říct, že bych rád unikl z tohoto temného, zatuchlého vězení a okusil trochu skutečného života... to je celé.$s\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*povzdechne si*... promiň, že si tak stěžuju. Jen si potřebuji čas od času s někým promluvit.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "30010edf9ca9d9ed3dfcd46f3d61d75bc1ffdd505c22910cf594958c30cac9f3",
+      "translationSHA256": "4e4a648121c705c12f6325295630aa108f7ad915ecbccda84dae1d96e85da5a4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/ElliottHouse",
+      "key": "extraHelp",
+      "field": null,
+      "source": "pause 500/emote Elliott 16/speak Elliott \"Seriously?$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"It sounds wonderful... but I can't give up on my novel. It's already half-way done.$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*sigh*... sorry I'm complaining like this. I just need someone to talk to now and then.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "translation": "pause 500/emote Elliott 16/speak Elliott \"Vážně?$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"Zní to báječně... ale svého románu se nemůžu vzdát. Už je z poloviny hotový.$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*povzdechne si*... promiň, že si tak stěžuju. Jen si potřebuji čas od času s někým promluvit.$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "a41c6e528fdb380febdfc51769a6d796a4c37c08b3c21eacb2c7c0a6ca3630c0",
+      "translationSHA256": "db12520e13bfc7fe71d117f35111489d80b6edefe3f11038f373f61d110a2ed8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

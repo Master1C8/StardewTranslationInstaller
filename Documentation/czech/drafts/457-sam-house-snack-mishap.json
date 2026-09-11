@@ -1,0 +1,9 @@
+{
+  "id": "457-sam-house-snack-mishap",
+  "kind": "long",
+  "target": "Data/Events/SamHouse",
+  "complexityReason": "Translate Sam's spilled-snack event, preserving all three blame choices, both remembered-response branches, player-neutral self-blame and lie wording, Jodi and Sam's voices, emotional markers, and exact event commands.",
+  "entries": {
+    "46/f Sam 1000/p Sam": "playful/7 4/farmer 7 12 0 Sam 7 5 0 Jodi 17 7 0/skippable/move farmer 0 -6 0/faceDirection Sam 2/pause 300/speak Sam \"Ahoj, @. Zrovna jsem si chtěl dát svačinu.\"/pause 500/speak Sam \"Počkej, něco ti přinesu.\"/faceDirection Sam 0/pause 500/playSound openBox/pause 500/faceDirection Sam 3/playSound dwop/specificTemporarySprite dropEgg/showFrame Sam 33/jump Sam/pause 1000/emote Sam 12/showFrame Sam 12/speak Sam \"Ale ne... To je nepořádek.$s\"/speed Jodi 4/move Jodi -10 0 0/speak Jodi \"Co to bylo za zvuk?\"/emote Jodi 16/speak Jodi \"*zalapá po dechu*$s\"/move Jodi -1 0 0/move Jodi 0 -1 0/speak Jodi \"To je naprostá hrůza! Co se stalo?$u\"/speak Sam \"$q 80 null#...Řekni jí to, @.$s#$r 80 -10 event_snack1#Sam upustil svačinu, když mi ji podával.#$r 80 50 event_snack2#Sam mi podal svačinu a pak mi upadla.#$r 81 -50 event_snack3#Sam ji upustil schválně. Myslel si, že to bude legrační.\"/pause 300/speak Jodi \"$p 80#Díky, že říkáš pravdu, @. O nic vážného nejde.|Cos to UDĚLAL, Same?! Co to do tebe vjelo?!$u\"/faceDirection Jodi 0/speak Sam \"Promiň, mami. Uklidím to.$s\"/emote Jodi 20/speak Jodi \"Díky, zlato.$h\"/move Jodi 0 1 1/move Jodi 1 0 2 /faceDirection Sam 2 true/move Jodi 0 7 2 true/globalFade/viewport -1000 -1000/end dialogue Sam \"$p 81#Zlobím se na tebe. Nechápu, k čemu byla taková lež.$s|Mrzí mě, co se předtím stalo.\""
+  }
+}

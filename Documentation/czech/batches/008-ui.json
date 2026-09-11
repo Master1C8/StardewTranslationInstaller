@@ -1,0 +1,1530 @@
+{
+  "id": "008-ui",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full package was previously read entry by entry; unchanged rows remain identical. Rechecked all affected currency contexts after consistently separating and grouping Czech g amounts; source keys and control-token structure still match.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparatedWallets",
+      "field": null,
+      "source": "{0} has split up the farm's funds. Everyone gets {1}g for themselves.",
+      "translation": "Postava {0} rozdělila finance farmy. Každý dostává vlastních {1} g.",
+      "sourceSHA256": "6a6191bcabe4c46ff4f35da009370d0a7cbcf56a3c20aaddff81c9fcc028230e",
+      "translationSHA256": "422ac23ae3e446517aef8475e7796fb6da6bdca99892f47c25b1f958f0c1b139",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergedWallets",
+      "field": null,
+      "source": "{0} has merged everyone's funds.",
+      "translation": "Postava {0} sloučila finance všech hráčů.",
+      "sourceSHA256": "ad1eb0d5436570c2a2d60b7cbd641d711f8252a01d2b8acd8d8cf4c828d83d59",
+      "translationSHA256": "f72be48b998f9706c142fc76073745d782d40391ef689b0e424adedea45906d0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SentMoney",
+      "field": null,
+      "source": "{0} has sent {1} {2}g",
+      "translation": "Postava {0} poslala postavě {1} částku {2} g",
+      "sourceSHA256": "ef33c56eb70ddd55033b66aed8ed23d747ce0cc23ec51b827699a5e84c301a05",
+      "translationSHA256": "e7a3b10a7527c626494c9000911f3b9ac68de2581430ae18236d86983c96a0da",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergeWallets",
+      "field": null,
+      "source": "{0} has filed for everyone's funds to be combined.",
+      "translation": "Postava {0} podala žádost o sloučení financí všech hráčů.",
+      "sourceSHA256": "646e6dc4e1fc3e9ab1cb15d6eab9bac12e56efcdcd4f879ea91bc7ed96fd1147",
+      "translationSHA256": "85d6bbe94837aaa73dee08eb9c3de44da9773cfdd2dcdc2d8aed12f78ed3fa0d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MergeWalletsCancel",
+      "field": null,
+      "source": "{0} has cancelled combining everyone's funds.",
+      "translation": "Postava {0} zrušila sloučení financí všech hráčů.",
+      "sourceSHA256": "85e2edb74e80566f2b204a5da35bfd422f64e682b01551576cd19e838976174b",
+      "translationSHA256": "03b10abe19568a027d0bbbea2375d2f74fc534ac5bffa1846b7fdd551a5a7ec2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparateWallets",
+      "field": null,
+      "source": "{0} has filed for everyone's funds to be split up.",
+      "translation": "Postava {0} podala žádost o rozdělení financí všech hráčů.",
+      "sourceSHA256": "0b50017198237167c02219cbf9ee0694bb238adc847341b5f4eb2d0a4eebe3e1",
+      "translationSHA256": "53de6c03f5bcff80dcac3e65f6d0f4c6da3dbaed491a49be037aba07df03e407",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SeparateWalletsCancel",
+      "field": null,
+      "source": "{0} has cancelled splitting up everyone's funds.",
+      "translation": "Postava {0} zrušila rozdělení financí všech hráčů.",
+      "sourceSHA256": "fe7b7acb884d22ae1bb98aec530fd7eec6ff41ec01a5913b5fee9649eb909c51",
+      "translationSHA256": "5dad10980bea0025c08caf39ff1449f23c18181f2dc4310af9ff210a4e7add84",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted1mil",
+      "field": null,
+      "source": "{0} has gifted over 1,000,000g in total. That's very generous!",
+      "translation": "Postava {0} už darovala celkem přes 1 000 000 g. To je opravdu štědré!",
+      "sourceSHA256": "4c1689a8424a33b1ca48bf81a7c32b7044845858030b1473c46187c988ebb256",
+      "translationSHA256": "5f713bee3c4d293cccea0333d3c96eddbedd5c9800dcb3faa6c03ea096390fcf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted100k",
+      "field": null,
+      "source": "{0} has gifted over 100,000g in total. Not bad!",
+      "translation": "Postava {0} už darovala celkem přes 100 000 g. To není špatné!",
+      "sourceSHA256": "9fe85bf2824d625ff2aca2f7d3533c7bbbd98f39278b60dcd6b657c40a420be1",
+      "translationSHA256": "7bb0fac8e8f9f9ecc79e5ccd24b313f3a8294b81a94ab17e4e261555e2a03129",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted10k",
+      "field": null,
+      "source": "{0} has gifted over 10,000g in total.",
+      "translation": "Postava {0} už darovala celkem přes 10 000 g.",
+      "sourceSHA256": "aee7d43d5adff505b6a3e8d468f5c94a55d68084fa235a4904d3bcdc4f5e970c",
+      "translationSHA256": "01e6e2fbddd75c8bb59c55757ca42d87e06124937e3d5fc3e845318cdccb460c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Gifted1k",
+      "field": null,
+      "source": "{0} has gifted over 1,000g in total.",
+      "translation": "Postava {0} už darovala celkem přes 1 000 g.",
+      "sourceSHA256": "60f817eea975c50e95f9c6bbcbba87edf54c5d03ecce58358dbb5bfd463ab8fb",
+      "translationSHA256": "5fbb0519cc71f03192db2d221c5dd2b2a8f5dbbf8360b10424bc6f942fd323f4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_Sent1g",
+      "field": null,
+      "source": "{0} sent {1} 1g... Don't spend it all in one place!",
+      "translation": "Postava {0} poslala postavě {1} 1 g... Neutrať to všechno na jednom místě!",
+      "sourceSHA256": "8b22f0fb0ca6bf5fc45cd32b38c241da159b8b96035f611d2ee0ed9c6ba9d031",
+      "translationSHA256": "b084f2a968b923c093702b488269d7bf3ece034ac20a3f1d3c71b63fdf68aa64",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1mil_Male",
+      "field": null,
+      "source": "{0} has earned 1,000,000g on his own.",
+      "translation": "{0} sám vydělal 1 000 000 g.",
+      "sourceSHA256": "2ddc9a69a8e8c41fb8f5e313fa0758f8b978525aded8fd72388ad782b1c5b5d0",
+      "translationSHA256": "92b1af6117d02b3e988846fb8f952a992ec7bd618b2add4b9176fcec32abb5b6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned100k_Male",
+      "field": null,
+      "source": "{0} has earned 100,000g on his own.",
+      "translation": "{0} sám vydělal 100 000 g.",
+      "sourceSHA256": "631b507a2e36e9844001478c5b522d45f71b2166de0e434b1c586acfd7417704",
+      "translationSHA256": "ce82fad952b25950a25509d2cddc4220c57ff29a32d263f6e0ddd7d1fefd5160",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned10k_Male",
+      "field": null,
+      "source": "{0} has earned 10,000g on his own.",
+      "translation": "{0} sám vydělal 10 000 g.",
+      "sourceSHA256": "93b557419e2d6336fcffec491631611e4726f52dbfdccd26fb271e19db5ae697",
+      "translationSHA256": "2e19f4d067723063dc8ea5b00db3fd30d49b13141ff43194c1a94108d4a68eb6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1k_Male",
+      "field": null,
+      "source": "{0} has earned 1,000g on his own.",
+      "translation": "{0} sám vydělal 1 000 g.",
+      "sourceSHA256": "d6d23fa4ec6cf8cd44bf45bd8511167b6a2107cf4a25febc9d20b2303bf33659",
+      "translationSHA256": "b42529529ae42c40a66ed33944df2069a5e5cc43089f39ea4731b3914b71fad8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1mil_Female",
+      "field": null,
+      "source": "{0} has earned 1,000,000g on her own.",
+      "translation": "{0} sama vydělala 1 000 000 g.",
+      "sourceSHA256": "2deebb9ad79f82b8a0d898636623b69398d981cddf1a64e8e22dc574a7292a16",
+      "translationSHA256": "fab3147be14e6a366c220600755e8d48e3780988eac06620f95618ec3e2e9aed",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned100k_Female",
+      "field": null,
+      "source": "{0} has earned 100,000g on her own.",
+      "translation": "{0} sama vydělala 100 000 g.",
+      "sourceSHA256": "c0e473ae6fa9a7a12cbff9046610a9826753c901891fc26ee2f18220a224c8c1",
+      "translationSHA256": "ccc332fcaaaf1a0b6ebb087d4acc3f27d540eddcbbfb2c8130776f1aaba5c35f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned10k_Female",
+      "field": null,
+      "source": "{0} has earned 10,000g on her own.",
+      "translation": "{0} sama vydělala 10 000 g.",
+      "sourceSHA256": "57eec5cff1b108c0d38c2c9a103a5ec99afc224ef67ccd2bca1bf68f12371830",
+      "translationSHA256": "e6c79afcc5d14624e240d5547a1b827311d5082d64e30afd5b025e3eb10b1588",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_SoloEarned1k_Female",
+      "field": null,
+      "source": "{0} has earned 1,000g on her own.",
+      "translation": "{0} sama vydělala 1 000 g.",
+      "sourceSHA256": "dba142da2655f0b81d7f8f7797b85c97e132ea6cb751b825a053b5763577adfd",
+      "translationSHA256": "7e0ce59fbde2d0883487dc374bf2235b594d6555649ef5d4752e8e66426dc765",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_BundleDonate",
+      "field": null,
+      "source": "{0} donated '{1}' to a bundle.",
+      "translation": "Postava {0} darovala do balíčku předmět „{1}“.",
+      "sourceSHA256": "2b410f0519a76959353ce7767f3e4c9724d0d4743824ef50b3fe5f6a37ecb353",
+      "translationSHA256": "ba4eb1d4300aecdc27b0ce111d2754a35bacc727242da54c1402ff02d0352441",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer0",
+      "field": null,
+      "source": "{0} just defeated a {1}, completing a monster eradication goal.",
+      "translation": "Postava {0} právě porazila příšeru typu {1} a splnila tak cíl hubení příšer.",
+      "sourceSHA256": "9b950bc400cdb5896cf594b09b6b8c867e4cbcbc8225a7821475fa46feb60fe8",
+      "translationSHA256": "8269dff75ffe10199ca47e0c3dcd1ec887bb68828362aadddd938d2c0bd23025",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer1",
+      "field": null,
+      "source": "{0} just defeated a {1}, and Marlon is very pleased.",
+      "translation": "Postava {0} právě porazila příšeru typu {1} a Marlon má velkou radost.",
+      "sourceSHA256": "8764db89a78dfb895b09aa3232afcd6c870d50d0bffa74193ac2dfe60009ce45",
+      "translationSHA256": "a3eebe888fc61268e38838d96428c9400d1381da3f2dcf903f8d979b5cd09e76",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer2",
+      "field": null,
+      "source": "{0} kept the valley safe by defeating a {1}.",
+      "translation": "Postava {0} ochránila údolí poražením příšery typu {1}.",
+      "sourceSHA256": "12d6429da5c0cd0b295909298846b069a59bac5cd29a4139a5886ecf3e31ba5e",
+      "translationSHA256": "0ed7e80b9f976f29b9d359ec7d931e3d7cd4e7e54c860e4f9a68b9f9ae36260f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_MonsterSlayer3",
+      "field": null,
+      "source": "{0} has culled the local {1} population, and everyone feels a little safer!",
+      "translation": "Postava {0} snížila místní populaci příšer typu {1} a všichni se cítí o něco bezpečněji!",
+      "sourceSHA256": "2b874abdc17b31f0364b0d30e8a1660185c25e1ff5e69418484414237ee64d7e",
+      "translationSHA256": "8b417ad4fa6ea5a0178c6c2c78df2ec092e715d9ec16a2815a72e3bf0a226156",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_IridiumToolUpgrade",
+      "field": null,
+      "source": "{0} got the {1}.",
+      "translation": "Postava {0} získala nástroj {1}.",
+      "sourceSHA256": "006c9fd115fc56ab5efa878da46dd4d0b6e8aefb7a9393c681b56e026d587e52",
+      "translationSHA256": "af7033652f3ad6de6237a8e01a4ee4d0aba5dd45a8171f6cd7f39e62f884db57",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_LuauSoup",
+      "field": null,
+      "source": "{0} put '{1}' into the potluck soup.",
+      "translation": "Postava {0} přidala do společné polévky přísadu „{1}“.",
+      "sourceSHA256": "4057da9140d39af66f9426e0c415daaafaae89718fcb33024e4f5c8efed22617",
+      "translationSHA256": "6fc6c08002fcbb93997f7d68364d34a328047c016e4cbd925e4e432ffb961c41",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Chat_JunimoKartHighScore",
+      "field": null,
+      "source": "{0} just got a new 'Best Score' in Junimo Kart!",
+      "translation": "Postava {0} právě dosáhla nového nejlepšího skóre ve hře Junimo Kart!",
+      "sourceSHA256": "5a7107e9ad6d86ad00292d7a801188d9ce395c5997893c0a781b87aaab815fe6",
+      "translationSHA256": "52e8ebf87528961eef920e36a40dc7826b042e33b7d0d11f224bd60d6b117851",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_0",
+      "field": null,
+      "source": "Crumble Cavern",
+      "translation": "Drolivá jeskyně",
+      "sourceSHA256": "0192ce6b22c24add116a70a1a6890168b6cf5eeb86263c4524c77bbec3e91dac",
+      "translationSHA256": "7517ac261ac3ea8e93dee1f087483b910d3b26f297a2773e866df446e0363d59",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_1",
+      "field": null,
+      "source": "Slippery Slopes",
+      "translation": "Kluzké svahy",
+      "sourceSHA256": "22232d0dcd88cfe017ac4bf140b5aff73e2bf934e12c58230c29c240c89c343a",
+      "translationSHA256": "2c9f89995cf6496535ebb195e57fea65debf10e99b6d33f016cba47df0f3990b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_4",
+      "field": null,
+      "source": "Red Hot Rollercoaster",
+      "translation": "Rozžhavená horská dráha",
+      "sourceSHA256": "1f3cb4e2945b58efcb2e212067c660bd6d21e7d448741f983a029d107086e101",
+      "translationSHA256": "c8534b72b5df124ef48b117d033b3ae034b3d04eaa58e80e7f8df26f37680938",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_2",
+      "field": null,
+      "source": "The Gem Sea Giant",
+      "translation": "Obr Drahokamového moře",
+      "sourceSHA256": "049b13a5dc11ad23163a06c7480eae027fcce1c5f1362b412e01eed9dfd10d80",
+      "translationSHA256": "fd9093add2404f092539635a9b389b0e7d0135c8b1f728631eca7a24944c5eb7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_3",
+      "field": null,
+      "source": "Ghastly Galleon",
+      "translation": "Strašidelná galeona",
+      "sourceSHA256": "4aa7fb0d9084c1f5be1c9b734515e437f1dd7b6824eb4e4447bc37f7a41237f4",
+      "translationSHA256": "faee9266394b5f4f8e0aa7c935dcb360bec8a7b6d07251aae55dfd448d1aa461",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_5",
+      "field": null,
+      "source": "Slomp's Stomp",
+      "translation": "Slompův dupot",
+      "sourceSHA256": "337756dbc654b1e2e75d8be7efef809aa1357f0432db10d1bb390be6cc5e2081",
+      "translationSHA256": "534141d89871c1ce749b093f9c11f755f3266d4beda63c62b71add6f80a6d2b3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_6",
+      "field": null,
+      "source": "Sunset Speedway",
+      "translation": "Závodiště za soumraku",
+      "sourceSHA256": "06653d2a36dad301ad90ce282e819d2bbd0cdfd4413c42fb2b122aae8265c4fa",
+      "translationSHA256": "a84331274b967c2b52a0911fa2509c5585ab827babe066f313f72b848626da71",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_8",
+      "field": null,
+      "source": "???",
+      "translation": "???",
+      "sourceSHA256": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615",
+      "translationSHA256": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615",
+      "preservationReason": "The original level label is the punctuation-only mystery marker ???.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Junimo_Kart_Level_9",
+      "field": null,
+      "source": "Glowshroom Grotto",
+      "translation": "Jeskyně světélkujících hub",
+      "sourceSHA256": "616fdade43dc99b9747214af62bbe91c3e843f470d5b9596a10e730af6e0d4a0",
+      "translationSHA256": "00b8262752f3006e435e71ee639c8c8b41136b4f5bacb196912618bf701067a0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NPC_Busy",
+      "field": null,
+      "source": "{0} is busy right now...",
+      "translation": "{0} má teď práci...",
+      "sourceSHA256": "014123c673008f69aac442285f11a39f8a43236d70852cae213cb06ff8457bd4",
+      "translationSHA256": "663602055c072d735c87118361a17bea6cf98eba9819cf5cba72f42cdc341295",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_Name",
+      "field": null,
+      "source": "{0} Pond",
+      "translation": "Rybník: {0}",
+      "sourceSHA256": "31ac38aeaa10d86eb7d92829812351f8589c17f22efa892a4cac9589f6ff833c",
+      "translationSHA256": "ea0ccea8a56ac4501f3917a3bfa6f23284ae8463f0af2d910e44959720c2f18b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_EmptyPond",
+      "field": null,
+      "source": "Empty Pond",
+      "translation": "Vyprázdnit rybník",
+      "sourceSHA256": "97d0f4f202dda9116a43f21fc11c7b3f4401b8c8edeafff48b7d7619ec771049",
+      "translationSHA256": "0dfa8485e44ad1d1d57d07cac763a16e8d94d0f8136aff69937f0beb1efc7d0a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ConfirmEmpty",
+      "field": null,
+      "source": "Are you sure you want to remove all the fish and return the pond to its original state?",
+      "translation": "Opravdu chcete odstranit všechny ryby a vrátit rybník do původního stavu?",
+      "sourceSHA256": "c8810d57ab24ecc259c7d8c0bc7dc745b1e9664456525d96ac5e0184fdc515be",
+      "translationSHA256": "f3906f322b7444793bfd6d6a2d291e4a90d3bf70f970c2edeee8d945bd8ce8c4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_ChangeNetting",
+      "field": null,
+      "source": "Change Appearance",
+      "translation": "Změnit vzhled",
+      "sourceSHA256": "bed8196282f38e2f850ef46f4de76fb24bd9c4890be69a39d10ea25b7da2adfe",
+      "translationSHA256": "322075d228883f556d83fcaf62ff5147ffd6a193a6692543125c388a52578853",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_Population",
+      "field": null,
+      "source": "Population: {0}/{1}",
+      "translation": "Populace: {0}/{1}",
+      "sourceSHA256": "5b3962ebca3b98a4ba90477c9112aec85703900c0fe5ddc0f19ac12b9a00f105",
+      "translationSHA256": "b5c9f76630620a88ca44cfe408fe72f4c3c9b51ac46e75ecb53079aec87fa97f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusNoFish",
+      "field": null,
+      "source": "This pond is empty...",
+      "translation": "Tento rybník je prázdný...",
+      "sourceSHA256": "9d390cb2b7f8769cb0ab3a7bbbd38a336d6ee11c98eb190af4178b2e1083f57d",
+      "translationSHA256": "06a5d22fec7798fc6da1eba0e9c26118162c77b6333a69334958a5f49486fa08",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk0",
+      "field": null,
+      "source": "\"We're doing fine!\"",
+      "translation": "„Daří se nám dobře!“",
+      "sourceSHA256": "501efa1e0fc4c6c44046fe8ee14b093dc1e0feadbb0ad7da98354248e11d0c5d",
+      "translationSHA256": "216ccb627ddf5ddd9b3308b2a9e98b16e889c110823a4d77ebf049db3dee6e4e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk1",
+      "field": null,
+      "source": "\"Nothing to complain about!\"",
+      "translation": "„Nemáme si na co stěžovat!“",
+      "sourceSHA256": "fed26ce3c2486696dc50748f579d4934ef80c557d37b3d67b138eba11a6a5d20",
+      "translationSHA256": "b3d9b4acbaa576ff725c88b87fbe6f0042b45b61d872578ed39eb913769c6247",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk2",
+      "field": null,
+      "source": "\"Everything is okay!\"",
+      "translation": "„Všechno je v pořádku!“",
+      "sourceSHA256": "44d1c1eb8cdc943c80dbb1bd3bcf1d385d7b5f50233dc67d7890ad77153c200f",
+      "translationSHA256": "ac3bf90d4a7006fbc9bd0edcefafc25e4d80f002335f6c67a1123ad4f99ffd20",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk3",
+      "field": null,
+      "source": "\"We're feeling pretty good!\"",
+      "translation": "„Cítíme se docela dobře!“",
+      "sourceSHA256": "b6556bd0d9cffc81e1e33eccccb653d1b84eae53113773b2ba6eacebd8b490a4",
+      "translationSHA256": "1717bc802d386cf248a130db62b4b908f9bf3813569812a1ec31b2d476c3a76a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk4",
+      "field": null,
+      "source": "\"We're feeling healthy!\"",
+      "translation": "„Cítíme se zdravě!“",
+      "sourceSHA256": "fd0791c92730bc15ebb744b901b52d75d59e2472cc9a5a43a84e701e86c1b618",
+      "translationSHA256": "49861ab77b2f4cc4afc279e736620fcf1b5ea26202fd5d236a61e26292c1a1a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk5",
+      "field": null,
+      "source": "The fish look happy.",
+      "translation": "Ryby vypadají spokojeně.",
+      "sourceSHA256": "c5a61f8884a0bb14131b2d79cf43974d1d2b82ce3b501154d889de9d480b1fd3",
+      "translationSHA256": "b3296f284ea57b99c700d7d20497dcf130a9620bc4cd6503dd95d43549d04d1a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk6",
+      "field": null,
+      "source": "The fish seem to be thriving.",
+      "translation": "Rybám se očividně daří.",
+      "sourceSHA256": "906f7b9b47497025f5c61260c2b0d1314a3e321cb137d374187f52cb9d44e770",
+      "translationSHA256": "894a91d41d65259e87068fdd80040d9e8629fd7bfe74bb6969489478f0ee2eac",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusOk_Coral",
+      "field": null,
+      "source": "The {0} are doing well.",
+      "translation": "Tomuto druhu se daří dobře: {0}.",
+      "sourceSHA256": "853390f587c484f192ce35fcbf6d4e65222f39612c1d0319edf471f27b56e18a",
+      "translationSHA256": "bcfba6a3a3ed9c72ca737ef38d2bfcb9b7b8ffd5824b0fdd4f60195b2d7065ed",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequest_Bring",
+      "field": null,
+      "source": "Bring",
+      "translation": "Přinést",
+      "sourceSHA256": "d75025a6a12f4d057835aa0d6ddea377caa2fed94b4ec9409dd3eb6f80f85fed",
+      "translationSHA256": "98073083c97e5538a36e7e80364460c8f0fbf8f417a14b862c0274a5c0e42305",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending0",
+      "field": null,
+      "source": "\"You know, {1} {0} would liven things up around here!\"",
+      "translation": "„Víš, tohle by to tu oživilo: {0} ×{1}!“",
+      "sourceSHA256": "0b08d3d9d3b2fa44ab4946f1137647f17833387aa2762bde5ba86b1ba0901df9",
+      "translationSHA256": "6ff16633cda12e13f6449f69209034769a138538e5e3a4f4ed6791f24a3d4761",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending1",
+      "field": null,
+      "source": "\"If it's not too much to ask... could you bring us {1} {0}?\"",
+      "translation": "„Jestli to není moc velká prosba... přineseš nám tohle: {0} ×{1}?“",
+      "sourceSHA256": "69ac596803f88fa87006761d46e3f17480ccb333ee467f1b4cde7efe114f7f9c",
+      "translationSHA256": "c41037f44ddfff421fe870c13382fa83e22a39d52fa60f76e56bee92ea7c4495",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending2",
+      "field": null,
+      "source": "\"We'd be more comfortable if we had {1} {0} in here.\"",
+      "translation": "„Bylo by nám tu pohodlněji, kdybychom měli tohle: {0} ×{1}.“",
+      "sourceSHA256": "a519542c0e2f625c421b24de72e8b7f2d528e93c381350ee8896713258d683b4",
+      "translationSHA256": "b4338b128c71c597e41408c316e7f42a5e81b148680b1bc0eeb3d0bcfb97127e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending3",
+      "field": null,
+      "source": "\"Please... could you bring us {1} {0}?\"",
+      "translation": "„Prosím... přineseš nám tohle: {0} ×{1}?“",
+      "sourceSHA256": "e4e8e03b4016a9983edbe95cd45f488c159d4d05eae8a86d1659d46f8c6e2260",
+      "translationSHA256": "c982093441448fd1b7804fa0b5a43fe8cb23cbb4e4f78cc9ee4b6746506bfb52",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending4",
+      "field": null,
+      "source": "\"We're doing okay, but we'd be happier with {1} {0}...\"",
+      "translation": "„Máme se dobře, ale s tímhle bychom byli šťastnější: {0} ×{1}...“",
+      "sourceSHA256": "080b7d770c998bbb521efe98cec8d042c1023cba1957d1b47b84f798a3dd4b31",
+      "translationSHA256": "079452f8d16e17e1d7c033a1ec848f6d0213b596b88833eaa788ef1dc958abe1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending5",
+      "field": null,
+      "source": "\"Excuse me... we'd like {1} {0}, please.\"",
+      "translation": "„Promiň... chtěli bychom prosím tohle: {0} ×{1}.“",
+      "sourceSHA256": "3378665b6b8799cfa5a22755b31decfa69094d97fb2bd82ce57c549d51a93f7f",
+      "translationSHA256": "501d2d6395d81da901bdb606dcee30a7412d96829809e3f0dc99b807abbc6a87",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending6",
+      "field": null,
+      "source": "\"We'd feel more at home with {1} {0}...\"",
+      "translation": "„S tímhle bychom se tu cítili víc doma: {0} ×{1}...“",
+      "sourceSHA256": "df4fbfe776e02d1b6d65614622bbeb0d2e4c970cfed612133c973e39e92a0f7d",
+      "translationSHA256": "bb93b3b74da9bce7423f23ffcc770196cffb908fe03dd3eba8dc32e7c5a1ffad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude0_Male",
+      "field": null,
+      "source": "\"Hey, landlubber, you think you could bring us {1} {0}?\"",
+      "translation": "„Hej, suchozemče, co kdybys nám přinesl tohle: {0} ×{1}?“",
+      "sourceSHA256": "2cad8cfb640de8c2aaa220ca79300a76d9b4078048ce986449861553b150acac",
+      "translationSHA256": "7947d826054dd9a6b741a1c1c871e776af7b4fd37903156b5eceb51f7afa92fc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude1_Male",
+      "field": null,
+      "source": "\"Oi... leg boy! How about bringing us {1} {0}, huh?\"",
+      "translation": "„Hej... nožkatej! Co kdybys nám přinesl tohle: {0} ×{1}, hm?“",
+      "sourceSHA256": "b8d7386b94d493072ee83e46ba09f2fb5d1f5e33af7abc761523dd35ab373b8b",
+      "translationSHA256": "9a0feb3cb7de99fd4cdcd6d2b9a286c1fb940bc2364e1147d5705f097c48d2fd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude2_Male",
+      "field": null,
+      "source": "\"Psst... Hey, buddy... think you could send {1} {0} our way?\"",
+      "translation": "„Psst... Hej, kámo... poslal bys nám sem tohle: {0} ×{1}?“",
+      "sourceSHA256": "f71fa549a135c8aeb44dc8e1f2bf607331f7f98c31f86d4c6582f70dd11e26eb",
+      "translationSHA256": "d374909726747b0fb6d834c142e9a71cce5181823f867a723012ed83c7eb56ad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude0_Female",
+      "field": null,
+      "source": "\"Hey, land dweller, you think you could bring us {1} {0}?\"",
+      "translation": "„Hej, suchozemko, co kdybys nám přinesla tohle: {0} ×{1}?“",
+      "sourceSHA256": "65b1ed2a9c6b243f1bf81999e6aaa7c43e89f79e1e1290755ea2e6cc757feb48",
+      "translationSHA256": "64f5727975738971e1ba76312d7225296d98352b0c91f9c43f5b5c9859869efa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude1_Female",
+      "field": null,
+      "source": "\"Hey, lady... You got {1} {0} you can send our way?\"",
+      "translation": "„Hej, paninko... Máš pro nás tohle: {0} ×{1}?“",
+      "sourceSHA256": "6d8c26899c82cc5b59ab4f7bbdc352bbd641784b8dabd74dfa86c7383a4dff19",
+      "translationSHA256": "87fe16f29bde896c1df657bcd1a03f855f53989110febb109680a781f59ffb06",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Rude2_Female",
+      "field": null,
+      "source": "\"Psst... think you could nab us {1} {0} on the sly?\"",
+      "translation": "„Psst... zvládla bys nám potají šlohnout tohle: {0} ×{1}?“",
+      "sourceSHA256": "81a24ed1f37193a8828f506b02c6e05b5d0bafb4d7c90a9708360e4b876e1a52",
+      "translationSHA256": "606f301ed3a1ad7e42af880d1779d962ed1ee43bf0dbcab535a2b6ecc642ef6f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding0",
+      "field": null,
+      "source": "\"{2}! {2}! We want {1} {0}...!\"",
+      "translation": "„{2}! {2}! Chceme: {0} ×{1}...!“",
+      "sourceSHA256": "4299023f296de8761e41f3c48773f62905a4bf4cdb377a79f817e4c45ecbcbb3",
+      "translationSHA256": "61850265a9eda204ad8b813a89c1a258ab86fc378d0edfd5a689ab8a4fa70921",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding1",
+      "field": null,
+      "source": "\"We need {1} {0}! We need {1} {0}!\"",
+      "translation": "„Potřebujeme: {0} ×{1}! Potřebujeme: {0} ×{1}!“",
+      "sourceSHA256": "b2b0091cf9bb281fcace94506bae8962020e9970a309ebeaf76a37addbc3d023",
+      "translationSHA256": "b0b3cf9a65fe89b66197494430aa09b19b5e5c2a14206602523faae2e5067498",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Demanding2",
+      "field": null,
+      "source": "\"Where's the {2}? We need {1} {0}!\"",
+      "translation": "„Kde je předmět {2}? Potřebujeme: {0} ×{1}!“",
+      "sourceSHA256": "648e0f535a3fcd2e12812d65403c9c1da594af52a96c40d736232b1d177a77ff",
+      "translationSHA256": "4c1e3c025fc8f8123bb225f32218aa4493973c086d98606aebd0a3d4c405f05a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff0",
+      "field": null,
+      "source": "\"We require {1} {0}...\"",
+      "translation": "„Požadujeme následující: {0} ×{1}...“",
+      "sourceSHA256": "5771f0c591f4592d1a73b3945744f309691b1e022e8b277805c2ab5f36e0933e",
+      "translationSHA256": "7538793c78e3f991385b8b71f4b9959ac81764a766cb91be7ec55eaca4fc99e8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff1",
+      "field": null,
+      "source": "\"{1} {0} would allow us to multiply further.\"",
+      "translation": "„Díky tomuto bychom se mohli dále množit: {0} ×{1}.“",
+      "sourceSHA256": "0e65937dc1c0176afae91922b3d086c6cb623748436e619f1d33e32307952855",
+      "translationSHA256": "b4d59367eb6dbc24f04b2280a92102108d9c759103639fb7226b6ebd408e4b5d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Stiff2",
+      "field": null,
+      "source": "\"We've decided that we need {1} {0}.\"",
+      "translation": "„Rozhodli jsme se, že potřebujeme: {0} ×{1}.“",
+      "sourceSHA256": "9bf9dd19354d24933d5f9458d43e0a7171831e158e44613d066699c85c7df99e",
+      "translationSHA256": "f65774713025f20710560a945428f785a804a80ebcb65112a361c91d3b15f6eb",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore0",
+      "field": null,
+      "source": "\"We're hungry... could you bring us {1} {0}?\"",
+      "translation": "„Máme hlad... přineseš nám tohle: {0} ×{1}?“",
+      "sourceSHA256": "d200b59e92e83819facf8c5ff8de0ebeeee5827a19202f4f00f181ce3982e1ca",
+      "translationSHA256": "3b3da01b8c977e7e31338cc413dcef9b0387ef57e5827eda0fdffc5437525b15",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore1",
+      "field": null,
+      "source": "\"Could you bring us {1} {0} for our dinner?\"",
+      "translation": "„Přineseš nám k večeři tohle: {0} ×{1}?“",
+      "sourceSHA256": "a0b05c977bcac16a5b6e5c5b34f972cc2a1aa15eddf397628517b297d7de0a1e",
+      "translationSHA256": "901ab5aed92fcb673289a641d3258b05288870b1de70af5587ebee90d10c3b8d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestPending_Carnivore2",
+      "field": null,
+      "source": "\"We need protein... {1} {0} should do the trick!\"",
+      "translation": "„Potřebujeme bílkoviny... Tohle by mělo stačit: {0} ×{1}!“",
+      "sourceSHA256": "3de89a39e9d4cb18e65c5e554bd23a926256a034f123924f370cdd5591862808",
+      "translationSHA256": "aa96b58a77a266fb470e296f7de156590e4c1cf9e2857bc78c74d11d34e19e66",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude0",
+      "field": null,
+      "source": "\"Cha cha cha! We're in business.\"",
+      "translation": "„Cha cha cha! A už to jede.“",
+      "sourceSHA256": "c21323ea54adab0c53fe3db925474cc288757e9d716f4502bd3093f0c7143e9d",
+      "translationSHA256": "e7b63abd2f6478c86b9f489d169f49847f19116689f85146377a38736f3c17ab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude1",
+      "field": null,
+      "source": "\"Ah... it's the good stuff. Thanks, kid.\"",
+      "translation": "„Á... to je ono. Díky, děcko.“",
+      "sourceSHA256": "67449a0f7b7f2dd48e46db413ef309e96034fdfd8ad4831359157bb3774439b6",
+      "translationSHA256": "4b14930b0e73f5ee91eeb19bdd0d585f9d6e85a88dba562dea4e3dfac75d8e7b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Rude2",
+      "field": null,
+      "source": "\"Thanks, boss!\"",
+      "translation": "„Díky, vrchnosti!“",
+      "sourceSHA256": "d427f45734775bb15ade69f3d4cf42633ed7d4bb9a20960ac2bb62ecf60cb521",
+      "translationSHA256": "15e9c82eacd8a29060c49c6e063000ebb6f4805260725b61d8364c4a767a8c87",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestComplete_Stiff0",
+      "field": null,
+      "source": "\"Ah... the {0} we requested.\"",
+      "translation": "„Ach... požadovaný předmět {0}.“",
+      "sourceSHA256": "80f4c4b8b486158d77cfef6700f75699df26f29786582e054a45d308e8c0da64",
+      "translationSHA256": "3322db7de173b70dba19ac1222ec633d31646512564a9316aadf9bf386f47b06",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "PondQuery_StatusRequestOneCount",
+      "field": null,
+      "source": "some",
+      "translation": "1",
+      "sourceSHA256": "a6b46dd0d1ae5e86cbc8f37e75ceeb6760230c1ca4ffbcb0c97b96dd7d9c464b",
+      "translationSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

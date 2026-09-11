@@ -1,0 +1,29 @@
+{
+  "id": "351-bus-stop-krobus-silent",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed the full source-equal event; it contains no player-facing text, and every quest, seasonal condition, actor, movement, sound, timing and transition command remains byte-for-byte exact.",
+  "rows": [
+    {
+      "target": "Data/Events/BusStop",
+      "key": "520702/a 11 23 11 24/t 600 1600/z spring/z fall/z summer",
+      "field": null,
+      "source": "winter_day_ambient/-1000 -1000/farmer 10 23 1 Krobus 26 23 3/viewport 24 23 clamp true/addQuest 31/skippable/move Krobus -2 0 3/pause 1000/emote Krobus 16/jump Krobus/pause 500/speed Krobus 8/move Krobus 20 0 1 true/move farmer 2 0 1 true/move false/playSound shadowpeep/warp Krobus -1000 -1000/pause 500/emote farmer 8/pause 1000/end",
+      "translation": "winter_day_ambient/-1000 -1000/farmer 10 23 1 Krobus 26 23 3/viewport 24 23 clamp true/addQuest 31/skippable/move Krobus -2 0 3/pause 1000/emote Krobus 16/jump Krobus/pause 500/speed Krobus 8/move Krobus 20 0 1 true/move farmer 2 0 1 true/move false/playSound shadowpeep/warp Krobus -1000 -1000/pause 500/emote farmer 8/pause 1000/end",
+      "sourceSHA256": "3a1e115f86596011897f0fa070a7f691b72d1f17d3dc1d177ad8a8c7f0c4d10f",
+      "translationSHA256": "3a1e115f86596011897f0fa070a7f691b72d1f17d3dc1d177ad8a8c7f0c4d10f",
+      "preservationReason": "Silent event with no player-facing text; preserve every quest, movement, sound, actor and transition command exactly.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

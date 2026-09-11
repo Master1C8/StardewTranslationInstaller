@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "IslandHut_Event_ParrotBoyIntro": "continue/-1000 -1000/farmer 7 7 3/skippable/specificTemporarySprite removeSprite 777/addTemporaryActor ParrotBoy 16 32 5 2 2 true ???/pause 2000/viewport 5 7 true/pause 2000/emote ParrotBoy 8/pause 1500/message \"Chlapec si vás zvědavě prohlíží...\"/pause 1500/animate ParrotBoy false true 500 17 0/playSound parrot_squawk/pause 1000/playSound parrot_squawk/pause 800/stopAnimation ParrotBoy/specificTemporarySprite parrotHutSquawk/pause 800/move farmer -2 0 0/pause 500/emote farmer 8/pause 1000/message \"Zdá se, že ho s papoušky pojí silné pouto.\"/pause 500/message \"Je ale příliš plachý na to, aby k vám teď přišel.\"/pause 1400/faceDirection farmer 1/pause 500/message \"Možná si jeho důvěru získáte, když se spřátelíte s papoušky?\"/pause 1000/end position 5 7"
+      }
+    }
+  ]
+}

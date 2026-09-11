@@ -1,0 +1,28 @@
+{
+  "id": "452-saloon-shane-arcade-recovery",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all four dialogue segments against English; verified Shane's defensive but candid recovery voice, addiction subtext, player-neutral spouse trust phrasing, gender-neutral mixed-group closing line, emphasis, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Saloon",
+      "key": "wewereworried",
+      "field": null,
+      "source": "emote farmer 40/faceDirection Marnie 1/pause 1000/faceDirection Shane 2/emote Shane 12/speak Shane \"I'm your husband... you should trust me. I've always been honest with you about my problems.$a#$b#Look... I know I haven't been able to quit cold turkey... but, I'm trying my best... and I'm getting a lot healthier.#$b#My life is better now than it's ever been. I'm not in such a dark place anymore...\"/pause 500/emote Marnie 20 true/emote farmer 20 true/pause 1300/faceDirection Shane 0/speak Shane \"You know, when I'm playing this game, I become so focused that I can't think about anything else. It really helps when I've got 'the urge'...\"/faceDirection Shane 2/speak Shane \"Anyway... I'll just... eh... play ONE more round and head home. Okay?\"/pause 500/emote farmer 32/pause 1000/end dialogue Shane \"You guys must have been really confused when you came in and saw me in front of the arcade machine!$h\"",
+      "translation": "emote farmer 40/faceDirection Marnie 1/pause 1000/faceDirection Shane 2/emote Shane 12/speak Shane \"Jsem tvůj manžel... měl bych mít tvou důvěru. Vždycky jsem k tobě byl upřímný ohledně svých problémů.$a#$b#Podívej... vím, že jsem nedokázal přestat ze dne na den... ale snažím se ze všech sil... a můj zdravotní stav se hodně zlepšil.#$b#Můj život je teď lepší než kdy dřív. Už nejsem na tak temném místě...\"/pause 500/emote Marnie 20 true/emote farmer 20 true/pause 1300/faceDirection Shane 0/speak Shane \"Víš, když hraju tuhle hru, soustředím se tak, že nedokážu myslet na nic jiného. Opravdu mi to pomáhá, když dostanu ‚chuť‘...\"/faceDirection Shane 2/speak Shane \"Každopádně... jen si... ehm... zahraju JEŠTĚ jedno kolo a půjdu domů. Dobře?\"/pause 500/emote farmer 32/pause 1000/end dialogue Shane \"Při příchodu vás pohled na mě před automatem musel pořádně zmást!$h\"",
+      "sourceSHA256": "78622bd46938f3f11567b8b52c196c11e31ef5b576467d8822bf713b02c7cc33",
+      "translationSHA256": "210721b8051597e54815413ba2f23291a708791d7d5ccb0587523309202cd000",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

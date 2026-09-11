@@ -1,0 +1,47 @@
+{
+  "id": "111-locations",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read both complete paths twice after correcting Birdie’s loyalty idiom, honorable-choice label, peace response and crafting message. Verified the full event command stream, quest removal, actor/object/animation/sound state, quickQuestion choices and both (break) branches, recipe and reward identifiers, fork target and exact repeated closing path. Birdie remains female and informal; player phrasing is gender-neutral; the locket, odor joke, widowhood, recipe, Vílí prach and closing blessing are complete.",
+  "rows": [
+    {
+      "target": "Strings/Locations",
+      "key": "IslandSecret_Event_BirdieFinished",
+      "field": null,
+      "source": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/removeQuest 130/skippable/addTemporaryActor Birdie 32 32 17 58 3 true/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 2300/playMusic none/animate farmer true true 100 35/addObject 19 58 870/playSound sandyStep/pause 800/stopAnimation farmer/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/move Birdie 0 -1 2/move Birdie 1 0 2/pause 500/jump Birdie/pause 500/playMusic desolate/speak Birdie \"It's his...$s\"/emote Birdie 20/pause 1200/playSound coin/removeObject 19 58/showFrame Birdie 20/pause 2500/speak Birdie \"Heh... It still has his smell, after all these years...#$b#...that familiar, putrid funk...$h\"/pause 300/faceDirection farmer 2 true/playSound croak/animate farmer false false 350 104 105 104 105 104 105/pause 1000/faceDirection farmer 3/speak Birdie \"You know... It's been a lonely life here, child... but I don't regret it at all.#$b#I'm doin' right by my old man... and we'll be together again some day soon... hehe\"/pause 500/stopAnimation Birdie/move Birdie 0 1 3/playMusic tropical_island_day_ambient/faceDirection Birdie 1/quickQuestion #It's an honorable thing to do.#He's gone. You should live your life.(break)speak Birdie \"You have great wisdom, child.#$b#And you've brought me great peace... this locket will comfort me for the rest of my days.$h\"(break)emote Birdie 28\\speak Birdie \"An old woman like me? I think it's too late, dear...$s#$b#Besides... I like it here! It's relaxing and beautiful. And I have an endless supply of fresh fish, oysters, and monkey meat. Hehehe.$h#$b#...I'm kidding about the monkey meat.\"/pause 1000/speak Birdie \"Now... how can I repay you for this?\"/jump Birdie/pause 500/speak Birdie \"Oh... How about I teach you a special recipe... Something I discovered in the many years I've spent here.\"/pause 1000/playSound reward/addCraftingRecipe Fairy Dust/message \"Learned to craft 'Fairy Dust'.\"/pause 1000/fork gotBirdieReward Strings\\\\Locations:alreadyGotNuts true/speak Birdie \"You can take these, too...\"/awardFestivalPrize birdieReward true/pause 1000/speak Birdie \"Though you're a stranger, you went out of your way to help an old lady.#$b#Bless your heart!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "translation": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/removeQuest 130/skippable/addTemporaryActor Birdie 32 32 17 58 3 true/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 2300/playMusic none/animate farmer true true 100 35/addObject 19 58 870/playSound sandyStep/pause 800/stopAnimation farmer/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/move Birdie 0 -1 2/move Birdie 1 0 2/pause 500/jump Birdie/pause 500/playMusic desolate/speak Birdie \"Je to jeho...$s\"/emote Birdie 20/pause 1200/playSound coin/removeObject 19 58/showFrame Birdie 20/pause 2500/speak Birdie \"Heh... I po všech těch letech je z něj pořád cítit jeho pach...#$b#...ten známý, hnilobný puch...$h\"/pause 300/faceDirection farmer 2 true/playSound croak/animate farmer false false 350 104 105 104 105 104 105/pause 1000/faceDirection farmer 3/speak Birdie \"Víš... život tady byl osamělý, dítě... ale vůbec toho nelituji.#$b#Jsem věrná svému starému... a brzy zase budeme spolu... he he\"/pause 500/stopAnimation Birdie/move Birdie 0 1 3/playMusic tropical_island_day_ambient/faceDirection Birdie 1/quickQuestion #Je to čestný čin.#Je pryč. Měla bys žít svůj život.(break)speak Birdie \"Je v tobě veliká moudrost, dítě.#$b#A díky tobě jsem našla velký klid... tento medailon mi bude útěchou až do konce mých dnů.$h\"(break)emote Birdie 28\\speak Birdie \"Stará žena jako já? Myslím, že pro mě už je pozdě, drahoušku...$s#$b#Kromě toho... líbí se mi tu! Je tu klid a krásně. A mám nekonečnou zásobu čerstvých ryb, ústřic a opičího masa. Hehehe.$h#$b#...O tom opičím mase si dělám legraci.\"/pause 1000/speak Birdie \"A teď... jak se ti za to mohu odvděčit?\"/jump Birdie/pause 500/speak Birdie \"Ach... Co kdybych tě naučila zvláštní recept... Něco, co jsem objevila během dlouhých let strávených tady.\"/pause 1000/playSound reward/addCraftingRecipe Fairy Dust/message \"Nyní umíte vyrábět „Vílí prach“.\"/pause 1000/fork gotBirdieReward Strings\\\\Locations:alreadyGotNuts true/speak Birdie \"Můžeš si vzít i tyhle...\"/awardFestivalPrize birdieReward true/pause 1000/speak Birdie \"Přestože se vůbec neznáme, dostalo se mi od tebe veliké pomoci.#$b#Máš zlaté srdce!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "sourceSHA256": "6a03f6fb21aa2b85dded53e194c96eef6c087381e1e5e00d0cdc49eba9e47270",
+      "translationSHA256": "c1c676313aa48666c1252a808593ce50ce4e545256c5feff72fd486ef6576921",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "alreadyGotNuts",
+      "field": null,
+      "source": "pause 50/pause 50/pause 1000/speak Birdie \"Though you're a stranger, you went out of your way to help an old lady.#$b#Bless your heart!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "translation": "pause 50/pause 50/pause 1000/speak Birdie \"Přestože se vůbec neznáme, dostalo se mi od tebe veliké pomoci.#$b#Máš zlaté srdce!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+      "sourceSHA256": "11c3b3a2806710f0cad12946d0e15f6a2038542bf91005199710debb9d8ecbed",
+      "translationSHA256": "f23e4b3b4642f087b9483d6cc061573c3a3fa49a795463ad29b2fd7496817697",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

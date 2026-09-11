@@ -1,0 +1,352 @@
+{
+  "id": "540-flower-dance-technical-spouses-y2",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 18 source and translation pairs after the player neutral Sebastian spouse correction. Verified every villager and spouse voice, speaker gender, festival setup command, emotion markers and all source details. No further issue found.",
+  "rows": [
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Jas",
+      "field": null,
+      "source": "Some day, I'm going to be the flower queen!",
+      "translation": "Jednou ze mě bude květinová královna!",
+      "sourceSHA256": "b5aba07b1065c12d7b4d02fa332834062f36f2f85dab486959e124c852648836",
+      "translationSHA256": "b8098dc2086d069a503ea3b10629876639d76279dc9b5189af3bbcdffd5af8a0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Vincent",
+      "field": null,
+      "source": "That's not fair... Why can't I be the flower queen?",
+      "translation": "To není fér... Proč nemůžu být květinovou královnou já?",
+      "sourceSHA256": "049d8a18b2af892d7b968502f1a2e2426f9fa0a8243aac54291ba1cb7cc1678c",
+      "translationSHA256": "3c7bd5bff1c279815838c96c0c35214497b45728cb4f9607dfdf428436ef10c4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Willy",
+      "field": null,
+      "source": "I should've brought my fishing pole.",
+      "translation": "Měl jsem si vzít rybářský prut.",
+      "sourceSHA256": "29293deb70c84fd632c2ce5baa430cc107a8f9a5bb548a7596b70e0adee6759c",
+      "translationSHA256": "79e48e10f0d8a834de88d4ea1d2633d61117cf596fee5f3c44d4fe1106c6fcc2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Leo",
+      "field": null,
+      "source": "The flowers here are nice, but they aren't as colorful as back home!$h#$e#I wonder if I'll ever have to get up there and dance...$u",
+      "translation": "Zdejší květiny jsou hezké, ale nejsou tak barevné jako doma!$h#$e#Zajímalo by mě, jestli tam někdy budu muset vystoupit a tančit...$u",
+      "sourceSHA256": "a699fc93e4c67e2c011b1b49a95899f1eef891c2c8f03532da40b25fe46a1a51",
+      "translationSHA256": "a9c184d06f71ee55bd5ee3afce4c6f9a75428b724caf1e655ad3b9e3175097db",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "set-up_y2",
+      "field": null,
+      "source": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival2/viewport -1000 -1000/loadActors Set-Up/advancedMove Jas true 3 620 4 620 1 620 2 620/advancedMove Vincent true 0 4 2 0 0 -4 -2 0/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Alex true 4 12500 1 2000/advancedMove Gus true 4 8000 -2 0 3 400 4 6000 2 0 4 1000/advancedMove Elliott true 4 14500 1 2350/advancedMove Emily true 2 2000 1 1200 1 0 3 1750 4 650 3 600 2 500 1 675 4 1000 0 -1 4 1250 3 600 2 600 1 600 4 600 3 1000 -1 0 3 1000 2 800 1 800 4 800 3 800 2 2000 0 1 2 2000 1 500 2 500 3 500 4 500 1 500 2 500/positionOffset Sebastian -6 -20/positionOffset Leah -24 10/positionOffset Clint -12 24/positionOffset Caroline -12 12/positionOffset Jodi 16 6/positionOffset Robin -6 12/positionOffset Kent? -12 24/positionOffset Marlon -16 0/positionOffset Penny -20 -9/positionOffset Sam 6 12/positionOffset Shane 12 -12/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "translation": "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival2/viewport -1000 -1000/loadActors Set-Up/advancedMove Jas true 3 620 4 620 1 620 2 620/advancedMove Vincent true 0 4 2 0 0 -4 -2 0/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Alex true 4 12500 1 2000/advancedMove Gus true 4 8000 -2 0 3 400 4 6000 2 0 4 1000/advancedMove Elliott true 4 14500 1 2350/advancedMove Emily true 2 2000 1 1200 1 0 3 1750 4 650 3 600 2 500 1 675 4 1000 0 -1 4 1250 3 600 2 600 1 600 4 600 3 1000 -1 0 3 1000 2 800 1 800 4 800 3 800 2 2000 0 1 2 2000 1 500 2 500 3 500 4 500 1 500 2 500/positionOffset Sebastian -6 -20/positionOffset Leah -24 10/positionOffset Clint -12 24/positionOffset Caroline -12 12/positionOffset Jodi 16 6/positionOffset Robin -6 12/positionOffset Kent? -12 24/positionOffset Marlon -16 0/positionOffset Penny -20 -9/positionOffset Sam 6 12/positionOffset Shane 12 -12/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+      "sourceSHA256": "8cc2f4287e96c35de2b53d70954653a43ab54c96c20fad1a6cbe00c767be4019",
+      "translationSHA256": "8cc2f4287e96c35de2b53d70954653a43ab54c96c20fad1a6cbe00c767be4019",
+      "preservationReason": "Technical second-year festival setup command stream; map, actor, movement, animation, and control identifiers must remain exact.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Abigail_spouse_y2",
+      "field": null,
+      "source": "We don't have to dance if you don't want to!$1",
+      "translation": "Nemusíme tančit, jestli nechceš!$1",
+      "sourceSHA256": "abf3af28b1a647cb918c30ccfb0e606828d2e1c1d894e5cd7caa1e2b986478ed",
+      "translationSHA256": "476055a9254e974738598bad10b9771fc0645b8e56ebf052d1706f253b3ef31c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Penny_spouse_y2",
+      "field": null,
+      "source": "I could imagine us moving to a spot like this, someday.$h",
+      "translation": "Dokázala bych si představit, že se jednou přestěhujeme na podobné místo.$h",
+      "sourceSHA256": "40cb4af89ae175c6d0e0708b67c834c369508dbcdaaecec644ecef68b3f3001c",
+      "translationSHA256": "fd91ea44fdfff0fb5a9c7d29c99026d938b94a26392c0de34e26fcdc2c224e5c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Leah_spouse_y2",
+      "field": null,
+      "source": "We should go hiking in these woods someday! I bet there's mushrooms...",
+      "translation": "Někdy bychom si měli vyjít na túru do těchto lesů! Vsadím se, že tu rostou houby...",
+      "sourceSHA256": "5687db94b77b0b3523a5c94f5d8adf614caec3e359fe43e26b14fdf419f08f26",
+      "translationSHA256": "5d02ee93218dd9dbfbc86d1e447c8969466f9726fb047fefd06ac60eab6bcf8b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Haley_spouse_y2",
+      "field": null,
+      "source": "Today is the big day! We'll be the centerpiece of the whole dance!$1",
+      "translation": "Dnes je ten velký den! Při celém tanci budeme středem pozornosti!$1",
+      "sourceSHA256": "702d809f645d75078460391f35d45513947b55c26a06774b7f770888dedcb7cf",
+      "translationSHA256": "732dc8b00efe2ed06fa56b26d55ae019271f726c3444fd0bf4a20b7ef2de7878",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Maru_spouse_y2",
+      "field": null,
+      "source": "I didn't practice much beforehand but I'll give it my best for the both of us.$0",
+      "translation": "Předem jsem moc netrénovala, ale udělám maximum, aby se nám tanec povedl.$0",
+      "sourceSHA256": "e994618fa1977ed209f3cae584eae010a4751b3ec4254d14bde107987fd4907f",
+      "translationSHA256": "ca74e911e2644071d0ba4acc97179703860f1d6b4ab2c52d63eb3eaa0aa0aa52",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Emily_spouse_y2",
+      "field": null,
+      "source": "Hey, I was wondering what you were up to!$0",
+      "translation": "Ahoj, už jsem si říkala, co máš za lubem!$0",
+      "sourceSHA256": "8053e1aeda80211d5e61291e6a7a21a8583271595db151fbe5787eb568479d94",
+      "translationSHA256": "65ca43a031e5243d4cb68a4bcd6b2eeb9fb52330d95f894942a107bb8fb1e6a8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Harvey_spouse_y2",
+      "field": null,
+      "source": "I wore my best tie for the occasion.$4",
+      "translation": "Pro tuto příležitost jsem si vzal svou nejlepší kravatu.$4",
+      "sourceSHA256": "02313f4b48b234682052239bdbba8a85d1a15eb68a15c640288a4227cce7cc9f",
+      "translationSHA256": "f3d4fc4963056d64df425427816f2d0346d495158c3d259e7c8f0606ba60d8a7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Alex_spouse_y2",
+      "field": null,
+      "source": "Hey, I'm feeling pretty good about today. We'll do great during the ceremony... just follow my lead.$0",
+      "translation": "Ahoj, z dneška mám docela dobrý pocit. Během obřadu nám to půjde skvěle... jen mě následuj.$0",
+      "sourceSHA256": "a4e121499286535e65075296dd86a8d07112935211fb136a7446cda47b473566",
+      "translationSHA256": "63ab3d50622f33d1477d1278029e2f01ed805b8777aa12bc5c74aa76077b61ee",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sam_spouse_y2",
+      "field": null,
+      "source": "Whoa, you look really great today.$0",
+      "translation": "Páni, dnes ti to opravdu sluší.$0",
+      "sourceSHA256": "a415a7ea0faa189c6b0bc7ff3b1bcdccf8dd4e98de63d35b4161db3e31564b3a",
+      "translationSHA256": "3f6ce12a45f1f5b2305c0ea7b7873f64fa66df20e9ffa92e063ea74f4e6217fe",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Sebastian_spouse_y2",
+      "field": null,
+      "source": "You're the only reason I came all the way out here...$1",
+      "translation": "Jedině kvůli tobě jsem vážil tak dlouhou cestu až sem...$1",
+      "sourceSHA256": "cffe130804515ba5fd7b6eb7ee065a6f3ca1510213e336ce521ba65bfe736c91",
+      "translationSHA256": "8aaa29a34216c05b47d0b310788e4b4ade0d3b77b53561fa5f0ed0b21e978f55",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Elliott_spouse_y2",
+      "field": null,
+      "source": "May I have this dance?$4",
+      "translation": "Smím prosit?$4",
+      "sourceSHA256": "08cc587be9f0ed3622724ebdc4c4f3b47f6534a0ab94c7b488b9b45f17cca038",
+      "translationSHA256": "9bcece188eaefe04ea3c9e755d417e27bd69a7f6b15329ac5033847b0202c13b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Shane_spouse_y2",
+      "field": null,
+      "source": "*burp* I might've eaten too much to dance... sorry.$0",
+      "translation": "*říhnutí* Možná jsem se přejedl a teď nemůžu tančit... promiň.$0",
+      "sourceSHA256": "21fe84113ce18f7c655adf0b15f5765124526431bb8b4e2d9306e734aa73606f",
+      "translationSHA256": "da1a2012f770f576e6ebb6207bd50fafd09adc56791912008fd70f3087bbfdc3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/spring24",
+      "key": "Abigail_y2",
+      "field": null,
+      "source": "They should make the seniors dance this year. I bet they'd love it!",
+      "translation": "Letos by měli nechat tančit starší. Vsadím se, že by se jim to líbilo!",
+      "sourceSHA256": "98d554c4312e339c2ff96afdf0c411f840070826f4db6fc8d89f6f3a483b39be",
+      "translationSHA256": "50eb948334114fbdcfac5f7e2aa0b6678fc64043d233818b6e1a9742f024c933",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

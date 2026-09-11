@@ -1,0 +1,28 @@
+{
+  "id": "381-farmhouse-sam-song-premiere",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all nine visible premiere and gift segments against English; verified Vincent and Jas child voices, Sam's career resolution, children's-music meaning, established Samův radiomagnetofon terminology, reward context, emotion markers and exact event skeleton.",
+  "rows": [
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "3918603/e 3918602/O Sam/t 610 1700/A samJob3/p Sam/L",
+      "field": null,
+      "source": "distantBanjo/-1000 -1000/farmer 51 27 0 Sam 51 24 2 Jas 53 27 0 Vincent 52 27 0/skippable/makeInvisible 52 27/makeInvisible 53 27/makeInvisible 51 27/specificTemporarySprite samTV/viewport -100 -100 true unfreeze/pause 2000/speak Vincent \"I'm really excited, Sam!\"/jump Vincent/pause 1000/speak Sam \"Okay, okay, Vince... I'm gonna put the song on right away.$h#$b#Now, you gotta listen really close, so you can tell me if you like it afterwards. Okay?\"/pause 500/jump Vincent/textAboveHead Vincent \"OK!\"/pause 1500/playMusic none/faceDirection Sam 1/pause 3000/playSound openBox/pause 2000/playMusic sam_acoustic1/pause 1000/specificTemporarySprite junimoShow/pause 2000/faceDirection Sam 2 true/pause 9000/animate Vincent false true 100 8 21 8 20/pause 11000/animate Jas false true 100 8 9 10 11/pause 23000/stopAnimation Jas/stopAnimation Vincent/jump Vincent/pause 800/jump Jas/pause 500/jump Vincent/pause 800/jump Jas/pause 500/jump Vincent/pause 800/jump Jas/pause 500/speak Jas \"I loved it!$h\"/textAboveHead Vincent \"Me too!\"/pause 1500/jump Sam/pause 1000/emote Sam 20/pause 500/speak Sam \"Wow! I wasn't expecting such an overwhelming response!$8#$b#That's great! This is really fun!$h\"/pause 50/faceDirection Vincent 1 true/faceDirection Jas 3 true/move Sam 0 2 2/move Sam -1 0 2/move Sam 0 1 1/faceDirection farmer 3/speak Sam \"Hey, thanks for all the support with this.#$b#You know... I kind of like making children's music. It's not very glamorous, but I'm making these kids really happy. That's important!$h\"/pause 100/emote farmer 20/pause 500/speak Sam \"Here, I wanted to give you this. It's a boombox with the song on it... So you can listen to it whenever you want.\"/pause 500/faceDirection farmer 2/itemAboveHead samBoombox/pause 4200/awardFestivalPrize samBoombox/pause 1500/end dialogue Sam \"I'm just glad to know that my music makes people happy...\"",
+      "translation": "distantBanjo/-1000 -1000/farmer 51 27 0 Sam 51 24 2 Jas 53 27 0 Vincent 52 27 0/skippable/makeInvisible 52 27/makeInvisible 53 27/makeInvisible 51 27/specificTemporarySprite samTV/viewport -100 -100 true unfreeze/pause 2000/speak Vincent \"Už se nemůžu dočkat, Same!\"/jump Vincent/pause 1000/speak Sam \"Dobře, dobře, Vincente... hned tu písničku pustím.$h#$b#Teď musíš pozorně poslouchat, abys mi pak mohl říct, jestli se ti líbí. Dobře?\"/pause 500/jump Vincent/textAboveHead Vincent \"DOBŘE!\"/pause 1500/playMusic none/faceDirection Sam 1/pause 3000/playSound openBox/pause 2000/playMusic sam_acoustic1/pause 1000/specificTemporarySprite junimoShow/pause 2000/faceDirection Sam 2 true/pause 9000/animate Vincent false true 100 8 21 8 20/pause 11000/animate Jas false true 100 8 9 10 11/pause 23000/stopAnimation Jas/stopAnimation Vincent/jump Vincent/pause 800/jump Jas/pause 500/jump Vincent/pause 800/jump Jas/pause 500/jump Vincent/pause 800/jump Jas/pause 500/speak Jas \"Moc se mi to líbilo!$h\"/textAboveHead Vincent \"Mně taky!\"/pause 1500/jump Sam/pause 1000/emote Sam 20/pause 500/speak Sam \"Páni! Tak nadšenou reakci jsem nečekal!$8#$b#To je skvělé! Tohle je vážně zábava!$h\"/pause 50/faceDirection Vincent 1 true/faceDirection Jas 3 true/move Sam 0 2 2/move Sam -1 0 2/move Sam 0 1 1/faceDirection farmer 3/speak Sam \"Hej, díky za všechnu podporu.#$b#Víš... tvořit hudbu pro děti se mi docela líbí. Není to zrovna okouzlující, ale dělám těmhle dětem opravdovou radost. A to je důležité!$h\"/pause 100/emote farmer 20/pause 500/speak Sam \"Tady, chtěl jsem ti dát tohle. Je to radiomagnetofon s tou písničkou... Ať si ji můžeš pustit, kdykoli budeš chtít.\"/pause 500/faceDirection farmer 2/itemAboveHead samBoombox/pause 4200/awardFestivalPrize samBoombox/pause 1500/end dialogue Sam \"Jsem rád, že moje hudba přináší lidem radost...\"",
+      "sourceSHA256": "aa357212015c978b7dc004b9e4ad84057ea19f2ab90b61c4461d0f55cdd85689",
+      "translationSHA256": "4cdc54fe0e64a539fc3afe7f8fb3ac91a8543d9e5130bf5d1d92407b958b7859",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

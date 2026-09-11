@@ -1,0 +1,1321 @@
+{
+  "id": "016-buildings",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 69 pairs in full against English and building glossary entries. Verified 4/8/12 capacities, breeding/incubator/autofeed unlocks and specific animals, doubled shed, construction subsidy, teleport destinations, year-round greenhouse, slime water requirement, included horse and one-pet capacity. Corrected the hay-count idiom, made coral placement a strict restriction, clarified that the horse comes with the stable, and used glossary-aligned slizové příšery. Full final reread found no issue; Silo has an explicit Czech-name preservation reason.",
+  "rows": [
+    {
+      "target": "Strings/Buildings",
+      "key": "UnderConstruction",
+      "field": null,
+      "source": "Under construction.",
+      "translation": "Ve výstavbě.",
+      "sourceSHA256": "686818b03a86839e6f5d3665e8dde2596c163ddd8795ac2c58e87060aee497f9",
+      "translationSHA256": "a5097a7a9ec71ecf055ca8d16d4492ec0db302d917c8e3d683ebd42fc1ceaa44",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DismountBeforeEntering",
+      "field": null,
+      "source": "Dismount before entering",
+      "translation": "Před vstupem sesedněte",
+      "sourceSHA256": "0ae96b9cf66be6983fb433ebbab1cddb6ad66922c654df28f5d313580a33a703",
+      "translationSHA256": "d58c10da0597ab6117231a3caaecae01e21cce0dbc1d3c4ebebf97c62a7ea758",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PiecesOfHay",
+      "field": null,
+      "source": "Pieces of Hay: {0}/{1}",
+      "translation": "Kusy sena: {0}/{1}",
+      "sourceSHA256": "353eecdc71d46353690ef4dfd1b7465cc4c55dfad60ce9bc18b16ceee430fbd4",
+      "translationSHA256": "944fde907252b721813e2cf266e995b9a92836ff15549bd7ef40015ec45cd18e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "AddedHay",
+      "field": null,
+      "source": "Added {0} pieces of hay to the silo.",
+      "translation": "Do sila přibylo {0} ks sena.",
+      "sourceSHA256": "5c0c58c771fb62958fd9fd879ed9f4b70aea8c8b092e8e582a1ed25bead85b99",
+      "translationSHA256": "b765eada58d3dc8e52ca45bc8e156fd595170881811dd3d3c944f80e2ab355b1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "MillFull",
+      "field": null,
+      "source": "No space left",
+      "translation": "Už tu není místo",
+      "sourceSHA256": "385812e34b2bfa17f1a97dceed143b92b240ae8667eb5c3ee4f8a5d8484d2c39",
+      "translationSHA256": "c43a9e1d3dc8b52d0f18a9853ecbbf6578c115a9fb72f94a1e3acee79ac1f6c1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "CantMill",
+      "field": null,
+      "source": "Can't be milled",
+      "translation": "Nelze semlít",
+      "sourceSHA256": "a0d3bc5fde6a00f57e30a9ab697c0caeea052a1f55bef3cf28af5be1806ef2de",
+      "translationSHA256": "4a9a6783ed390949e1e65b22dbf5b6a487b9a5dfe274001ed7b2df469be3ea6a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "NeedSilo",
+      "field": null,
+      "source": "Silo Required",
+      "translation": "Vyžaduje silo",
+      "sourceSHA256": "1321e8ec13d73e52a1de0d0711524e4f850730f07e34f76ef38e7969bfedf431",
+      "translationSHA256": "68e97d557b74c0a32fa56a4d1f1b08762c37057df83cb586ddcd2f9ace9d56b6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "CantEnter",
+      "field": null,
+      "source": "Can't enter right now",
+      "translation": "Teď nelze vstoupit",
+      "sourceSHA256": "548336dc60f3ee99fd04fb8dcdc013e2209ca1ab6133e669505a202848072014",
+      "translationSHA256": "c1daa1dbe786bade0438be67aed2a05b8fb324bdb8bc1ae3d99592c8b45d4ac5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WrongFishType",
+      "field": null,
+      "source": "Your {0} doesn't want to live in a {1} pond.",
+      "translation": "Váš úlovek ({0}) nechce žít v rybníku s druhem {1}.",
+      "sourceSHA256": "3578946d76aeead478356514230e6b77429fcb6c02cfb9e94b6086d0ae1d7c20",
+      "translationSHA256": "f32643fc8b9f5dfeec6c5ee2a6a3af79c7565647491b842d0949497a82a66b77",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WrongFishTypeCoral",
+      "field": null,
+      "source": "{0} can only be placed in a {0} Pond.",
+      "translation": "Druh {0} lze umístit jen do rybníka druhu {0}.",
+      "sourceSHA256": "f045e6cee435681d8ce7ee2ba84ec7538d03e696a27ce863a70ed71caec4117b",
+      "translationSHA256": "e2eaf65b0134f2a2478dbed910cf550d160b34e6b59414118507c272b6ebf26b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "CantPutInPonds",
+      "field": null,
+      "source": "The {0} wouldn't be happy in there.",
+      "translation": "Úlovek {0} by tu nebyl spokojený.",
+      "sourceSHA256": "593e415d89952c8fa259755542797398840c70d695746c75fb7ebbbc5033f024",
+      "translationSHA256": "54ad0b386e0f0d021596373acf433ba1b9be8a2f43bf56701dec94f6563950d8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "NoFish",
+      "field": null,
+      "source": "Fish can be placed into this pond.",
+      "translation": "Do tohoto rybníka můžete umístit ryby.",
+      "sourceSHA256": "7c5330dd37298fbd38e803e074364564de197cac581897c93dc23030f63494d1",
+      "translationSHA256": "054b8d1dd3f9ff13976c73be62c5b99e041a2452f912c66bf98417f69ffc4c9c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PondFull",
+      "field": null,
+      "source": "This pond is full.",
+      "translation": "Tento rybník je plný.",
+      "sourceSHA256": "52b2c6f74c606b8dd0211a5d78d611f916ffa353466d508630ee6e7d307aecb2",
+      "translationSHA256": "c4627637f98b19fa9d1896b20705799cb20e9dbdbe02fc46fad15f1a348126e7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Paint_Region_Building",
+      "field": null,
+      "source": "Building",
+      "translation": "Budova",
+      "sourceSHA256": "87c5912f2cefdf9d7d1913611187fa8ab653a89a8d4b65f574812f899834e8b1",
+      "translationSHA256": "71fd505432c9b0176181532468c95be6b570ef5c2ee2f3e8588928dea5aa97ed",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Paint_Region_Roof",
+      "field": null,
+      "source": "Roof",
+      "translation": "Střecha",
+      "sourceSHA256": "c2f6a4d9ec7682e63186abf240fadcaf9a3cd1950c3a16d91330e7589018c039",
+      "translationSHA256": "ed3e70ea24d55961277df6a558173fdd817db54b7a3cfd7fa918a7466bcfd613",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Paint_Region_Trim",
+      "field": null,
+      "source": "Trim",
+      "translation": "Obložení",
+      "sourceSHA256": "aaa5478b266f283fcab0c3616cdf2ddecde6f4a66b918356d53e05db16b7975a",
+      "translationSHA256": "82aeef5fc178cde70d418ccbd384244a2856ed365b0b1a5bd2ac74e6e8ce939a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BuildingSkinMenu_ChooseAppearance",
+      "field": null,
+      "source": "Select an appearance for your {0}.",
+      "translation": "Vyberte vzhled své stavby ({0}).",
+      "sourceSHA256": "a83bea7ea2c6653b6790979c31f100810cf2c416c758a0306750f9e3eac5a940",
+      "translationSHA256": "26f3fb5c4ceb640b42ac282aad5ecc673bdcf56335b24162490ffebe9a0a71b9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Construction_ChooseLocation",
+      "field": null,
+      "source": "Where do you want to manage buildings?",
+      "translation": "Kde chcete spravovat budovy?",
+      "sourceSHA256": "23b007268185999c921b6ecb8761d914455153588d265c08d151a551da52e1d3",
+      "translationSHA256": "a40212e5a2fdba4d21d2dffb89568bec8e5face7275807f730690b14313e9458",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Barn_Name",
+      "field": null,
+      "source": "Barn",
+      "translation": "Stodola",
+      "sourceSHA256": "84113c4f55bd0a7ca7ca9a7d0fab602f26839f3142d6f40000dd0ca3a1ae8b8f",
+      "translationSHA256": "52a91b36906f575e21c054d58a78a0d17b665a2442a6c2bef61bac4cf9455d21",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Barn_Description",
+      "field": null,
+      "source": "Houses 4 barn-dwelling animals.",
+      "translation": "Pojme 4 zvířata chovaná ve stodole.",
+      "sourceSHA256": "123026fbc494ef3bbbd7f37aa7fefe826a7656ae0127d7a71c38c5f1643c717e",
+      "translationSHA256": "2c4834dc8e3c33a338e93c267ede28da350a95abe4e195dc864365e93e28787f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Barn_GeneralName",
+      "field": null,
+      "source": "Barn",
+      "translation": "Stodola",
+      "sourceSHA256": "84113c4f55bd0a7ca7ca9a7d0fab602f26839f3142d6f40000dd0ca3a1ae8b8f",
+      "translationSHA256": "52a91b36906f575e21c054d58a78a0d17b665a2442a6c2bef61bac4cf9455d21",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigBarn_Name",
+      "field": null,
+      "source": "Big Barn",
+      "translation": "Velká stodola",
+      "sourceSHA256": "f7ddc96ebb5f891fda55bb2bd248eabfd2892306d82924a1b65d16db4b15c248",
+      "translationSHA256": "4bcb10765baa1eaf44570066091461302c2e2c216da502c4d747ddde0e5e5b3e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigBarn_Description",
+      "field": null,
+      "source": "Houses 8 barn-dwelling animals. Allows animals to give birth. Unlocks goats.",
+      "translation": "Pojme 8 zvířat chovaných ve stodole. Umožňuje zvířatům rodit mláďata. Odemyká kozy.",
+      "sourceSHA256": "9eeec0def488e802cf25a978ddea92b4d9d3517bf9fd076c2d57ff590f7072c1",
+      "translationSHA256": "631b0137d3e3c2e5f0b9b5a82efd3377403f55f05fca2448260713eb91d22a4b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigCoop_Name",
+      "field": null,
+      "source": "Big Coop",
+      "translation": "Velký kurník",
+      "sourceSHA256": "1eb73c71e5b1b11039316de646fdd6fa67d3f42ea8d6984275fc9f377e04ff54",
+      "translationSHA256": "62e912ab844564046196d0414735523f6fc91ecedb29bb921dd19f7d7bc079a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigCoop_Description",
+      "field": null,
+      "source": "Houses 8 coop-dwelling animals. Comes with an incubator. Unlocks ducks.",
+      "translation": "Pojme 8 zvířat chovaných v kurníku. Je vybaven inkubátorem. Odemyká kachny.",
+      "sourceSHA256": "31a3d0d16f4bebcf1ce77194f1a564ea3670b05a21ee2a567e7c2fb4ae7db1b7",
+      "translationSHA256": "583c8060c8316aa68c8288cca07c7b3a4a34e9a1fea04f9ec0e02e627ec4b4ff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigShed_Name",
+      "field": null,
+      "source": "Big Shed",
+      "translation": "Velká kůlna",
+      "sourceSHA256": "077ce7599492bd337ce83f17486387a0f5c44209446c5b36f7435d18d5fda0c9",
+      "translationSHA256": "2fabc27e7c4cbabbe89c820168e82c510ce5e5a25f20fcd3a6ad6a6b349f67a5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "BigShed_Description",
+      "field": null,
+      "source": "Doubles the size of the shed. The interior can be decorated.",
+      "translation": "Zdvojnásobuje velikost kůlny. Interiér lze vyzdobit.",
+      "sourceSHA256": "2d0d9cd45ce50db1a467ed062a07a8871adc665bb3317236fd1184116418abfe",
+      "translationSHA256": "6fab98fed85ee70610700a19e22f34296cde4fa266521db156ce9a2be38f7960",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Cabin_Name",
+      "field": null,
+      "source": "Cabin",
+      "translation": "Chatka",
+      "sourceSHA256": "dfab94fc4a58cc052d52280bfac90055471d566cb5aeab65af2aa0b28f598e04",
+      "translationSHA256": "9ae1ea7bf0a97d52d60d21ecf34ba7fca27e391ab2d83201dfd2efc0b8ccad94",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Cabin_Description",
+      "field": null,
+      "source": "A home for a friend! Subsidized by the town agricultural fund.",
+      "translation": "Domov pro přítele! Stavbu dotuje městský zemědělský fond.",
+      "sourceSHA256": "5c7ce500b0618734f8c2db6f139f6f820f640cc17824bdfd0168eb5cda338050",
+      "translationSHA256": "42317edea08bfd865365044738fdeaeab04fc79ed2f95537076bb43c3504ab19",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Coop_Name",
+      "field": null,
+      "source": "Coop",
+      "translation": "Kurník",
+      "sourceSHA256": "78a19b6608805ee2bbc61cf5d43ba2b3dc985c1239e4e1ddc6d06dd25c7c9388",
+      "translationSHA256": "d49a18450b60c41ebafc7180a2fd92ba2695dae56a544d0d9ec2810785930e39",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Coop_Description",
+      "field": null,
+      "source": "Houses 4 coop-dwelling animals.",
+      "translation": "Pojme 4 zvířata chovaná v kurníku.",
+      "sourceSHA256": "f8e1fa9722f060eae115b8eeab124da9a35b218e55a210ba1b427ce7231b39ce",
+      "translationSHA256": "8ff3b9e4bf61f959a77e5c7ee9b0e51c53a796394fa6380e98b8598d6ec1ae6a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Coop_GeneralName",
+      "field": null,
+      "source": "Coop",
+      "translation": "Kurník",
+      "sourceSHA256": "78a19b6608805ee2bbc61cf5d43ba2b3dc985c1239e4e1ddc6d06dd25c7c9388",
+      "translationSHA256": "d49a18450b60c41ebafc7180a2fd92ba2695dae56a544d0d9ec2810785930e39",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeBarn_Name",
+      "field": null,
+      "source": "Deluxe Barn",
+      "translation": "Luxusní stodola",
+      "sourceSHA256": "d812e3a4e9cbcfcd268e6428f3835a1222892e15d84d22c4858ee25d1b9304ee",
+      "translationSHA256": "bab69f5b7dc38b36e8be7d96c87d7ab4cd008785eb3468f4a84a4ca0954d4991",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeBarn_Description",
+      "field": null,
+      "source": "Houses 12 barn-dwelling animals. Comes with an auto-feed system. Unlocks sheep and pigs.",
+      "translation": "Pojme 12 zvířat chovaných ve stodole. Má systém automatického krmení. Odemyká ovce a prasata.",
+      "sourceSHA256": "2f92ffa3dad8276948b4c41e7c2ff43bf1d513f507445823a27a2ef96c383c7e",
+      "translationSHA256": "0b62b55c103d5e67244ed3005302849d9664c4954f7eac1d38a6e23c1dd61a04",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeCoop_Name",
+      "field": null,
+      "source": "Deluxe Coop",
+      "translation": "Luxusní kurník",
+      "sourceSHA256": "efc1f9b15ff18efb01d113f1ea3d460ee1c8be4fc92e70c7cd8f3539fc5e9dc0",
+      "translationSHA256": "b142292c111367e8ce2f4441c8f490d70674938807076027564c9c2df5876138",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DeluxeCoop_Description",
+      "field": null,
+      "source": "Houses 12 coop-dwelling animals. Comes with an auto-feed system. Unlocks rabbits.",
+      "translation": "Pojme 12 zvířat chovaných v kurníku. Má systém automatického krmení. Odemyká králíky.",
+      "sourceSHA256": "a87604f6a7e0a713331638e0bdc8b030bf01c1fd0043587b8a77ccde8e6528a0",
+      "translationSHA256": "02ffcdb1d3c5a6e24ec4c7454ed2cdb7c8a5a74596c9e8a96a9d5a93290db7c2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DesertObelisk_Name",
+      "field": null,
+      "source": "Desert Obelisk",
+      "translation": "Pouštní obelisk",
+      "sourceSHA256": "a516008e9c61bb3734eea5e9ffe3b318dbaa8b972c521fc8768e75a36acb34a9",
+      "translationSHA256": "5fe990fa87fb5d1d6e377233f2cd3461c79c8e9338c7e120bfd633059f3fde1c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "DesertObelisk_Description",
+      "field": null,
+      "source": "Warps you to the desert.",
+      "translation": "Přenese vás do pouště.",
+      "sourceSHA256": "dd9917c9b185e10546c2eb2c09b1cd9a5f83272c7d4eaa811d385d32588aff1b",
+      "translationSHA256": "0f0a6f290d7841306df6dbd986001b0f7aedc31b510808e710d3239145ed24ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "EarthObelisk_Name",
+      "field": null,
+      "source": "Earth Obelisk",
+      "translation": "Zemský obelisk",
+      "sourceSHA256": "52fe3e9b1039b913f7b9ad74a5e345e3463ac6dc8bfae3d1084f2fd91c3d9954",
+      "translationSHA256": "46c6c84d9d2ef770c863bc9618afc226ad7975ddf8017da9e4721a12ce8fe9e3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "EarthObelisk_Description",
+      "field": null,
+      "source": "Warps you to the mountains.",
+      "translation": "Přenese vás do Hor.",
+      "sourceSHA256": "53ec6b7775718049d433ff3e7b386ec368ee20658d1fd7d10b82d28857e93799",
+      "translationSHA256": "1516bae686f8659a8310dc4f9ef3c36a03f29d9e04ba94f67005ec4c6b1516a3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "FishPond_Name",
+      "field": null,
+      "source": "Fish Pond",
+      "translation": "Rybník",
+      "sourceSHA256": "d7cc702e31ff6dda4f27e073e8bf95e4f7360f83584d8049912b7482d93e74de",
+      "translationSHA256": "77aebacf8ed3c768ac42d39adada6c8363a44ad8e5d2b89d564495d538d1a34f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "FishPond_Description",
+      "field": null,
+      "source": "Raise fish and harvest their produce. Fish multiply over time.",
+      "translation": "Chovejte ryby a sbírejte jejich produkty. Ryby se postupně množí.",
+      "sourceSHA256": "e3128411feab7cbbd83fed9f2f6932bfde747d7a5f92e2388acfc0d700ab5321",
+      "translationSHA256": "6142c445bc0debf65485656d372a3be34a9f996a2f405499eed7b693b78ba076",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "GoldClock_Name",
+      "field": null,
+      "source": "Gold Clock",
+      "translation": "Zlaté hodiny",
+      "sourceSHA256": "a1f710cb5c28a6718f359a1ded547926eb2e0bdb9330de647d0839052db59551",
+      "translationSHA256": "8d518acf03c8201e67fcde2799a36b7e9bc57d8fda48eb92c9eedf77480c8623",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "GoldClock_Description",
+      "field": null,
+      "source": "Prevents debris from appearing on your farm. Keeps fences from decaying.",
+      "translation": "Zabraňují vzniku překážek na farmě. Chrání ploty před chátráním.",
+      "sourceSHA256": "0059e21022ee7f24dadb94273d7848776627ad1456249f9fb7e737314ef912ad",
+      "translationSHA256": "c9d6b8b33147a4fd1d36f085e14bc30c9c8f9356e292231553ae4fa072b477f0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Greenhouse_Name",
+      "field": null,
+      "source": "Greenhouse",
+      "translation": "Skleník",
+      "sourceSHA256": "d5150bb6c5de17cbd7ec80ac70f0938c5e4bcc1820aee57694a8786ce7065fec",
+      "translationSHA256": "37c174abc611a2fb164954c2e7bd59fb347529f30f8704c1bb3b42cf231c2ba6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Greenhouse_Description",
+      "field": null,
+      "source": "A place to grow crops from any season, year round!",
+      "translation": "Místo pro celoroční pěstování plodin ze všech ročních období!",
+      "sourceSHA256": "623a4ad58d5755438c7809330ae6a0374bd6839c8e2847b8bac9ac277381a252",
+      "translationSHA256": "fb82aa790beebe783c5271d45eaf5e7683b6b6bffcb436cdd17f7fe6e928bc71",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "IslandObelisk_Name",
+      "field": null,
+      "source": "Island Obelisk",
+      "translation": "Ostrovní obelisk",
+      "sourceSHA256": "4080850d5554a3bb47d652b4e33fc260b98fee7f41ab7eb96add4cd1ab2e3356",
+      "translationSHA256": "3823f46a0915cdcff5557d741462f3268d35b071e1d7f6176dddee385db819d1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "IslandObelisk_Description",
+      "field": null,
+      "source": "Warps you to Ginger Island.",
+      "translation": "Přenese vás na Zázvorový ostrov.",
+      "sourceSHA256": "8f3ea356f4053fe3c9c681568fc16d13a74ca214ef373dc63f1a7f96d365173d",
+      "translationSHA256": "056cc60e0c764ad2c8482ab4a85a1205dd93ba5f48cc86e028eda74afc210129",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "JunimoHut_Name",
+      "field": null,
+      "source": "Junimo Hut",
+      "translation": "Chýše junimů",
+      "sourceSHA256": "5debe4599f81e5f351d0e0fc122bd3677b5b8729e11253770055f8ebcf56810d",
+      "translationSHA256": "4cd57c7bb413e7dd60b2dacccaa62a3d6b0b9c760cbdc3a10798b9959225e047",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "JunimoHut_Description",
+      "field": null,
+      "source": "Junimos will harvest crops around the hut for you.",
+      "translation": "Junimové za vás sklidí plodiny v okolí chýše.",
+      "sourceSHA256": "8f949512668d64bd0b2bdbc61d1990721bc22952add811be887cbe8e90532376",
+      "translationSHA256": "f573012ac10d6c7dca3287b41d94ff92ae6ac99f83cde3690e250c88211dfe4d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Mill_Name",
+      "field": null,
+      "source": "Mill",
+      "translation": "Mlýn",
+      "sourceSHA256": "a5feb9527e767094e51f94fbb5bed705526f5fff586dbb4dcec2619a76a8864c",
+      "translationSHA256": "6c1b433f9488802e201adb7454d1bc8d3c5da3005ffb6ef38f4508483bace26b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Mill_Description",
+      "field": null,
+      "source": "Allows you to mill wheat, beets and rice.",
+      "translation": "Umožňuje mlít pšenici, řepu a rýži.",
+      "sourceSHA256": "10ab43db867aff56af8a7e3b5719a59efcbc26a6a30f1d5f882a85305df7ef15",
+      "translationSHA256": "b2a7a2bb9c42873eee6e764b730197c2e01aefe09e30adcdbfad4de5c01b2677",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Shed_Name",
+      "field": null,
+      "source": "Shed",
+      "translation": "Kůlna",
+      "sourceSHA256": "6cc9098afd0a9210c99141a8617863c05e45dfdf666a6b2c7aa7e596774d1a9a",
+      "translationSHA256": "edd7ea57ba0ad3790a3ff21357dd744ddea653fdb2f6885dc8589d9371ee7444",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Shed_Description",
+      "field": null,
+      "source": "An empty building. Fill it with whatever you like! The interior can be decorated.",
+      "translation": "Prázdná budova. Naplňte ji, čím chcete! Interiér lze vyzdobit.",
+      "sourceSHA256": "05c48d6ee07bd0ede4f2f0cbff96e1d35f721200bd3b43264148b3b2bf065a01",
+      "translationSHA256": "e575d3d6e4f98dfeea2551c74c9a0fe2dcfeb6d7aac07443cec3b00903ad7924",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Shed_GeneralName",
+      "field": null,
+      "source": "Shed",
+      "translation": "Kůlna",
+      "sourceSHA256": "6cc9098afd0a9210c99141a8617863c05e45dfdf666a6b2c7aa7e596774d1a9a",
+      "translationSHA256": "edd7ea57ba0ad3790a3ff21357dd744ddea653fdb2f6885dc8589d9371ee7444",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "ShippingBin_Name",
+      "field": null,
+      "source": "Shipping Bin",
+      "translation": "Přepravní bedna",
+      "sourceSHA256": "c17867b09ca64a0e96c4fad513977c030ff98768edf4fa244a0dfe216fd61d84",
+      "translationSHA256": "663e9b284a17c0891ea7f3daff9ddfca4ee918e2324faf12e40d894df9f24d65",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "ShippingBin_Description",
+      "field": null,
+      "source": "Throw items inside to sell them overnight.",
+      "translation": "Vhoďte dovnitř předměty, aby se přes noc prodaly.",
+      "sourceSHA256": "1b720b2acc78f2e638c9fbe3f883c799998fbc0a5a9bd93acaf911d9acb6c93a",
+      "translationSHA256": "70498c657be2dc62ed324f7fac98700c94610b7ca8418c698f9ab85b53340927",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Silo_Name",
+      "field": null,
+      "source": "Silo",
+      "translation": "Silo",
+      "sourceSHA256": "d16c3275b35f9f39756bb6bcb34b7c679cc866fccb47908aaed887c88d483d49",
+      "translationSHA256": "d16c3275b35f9f39756bb6bcb34b7c679cc866fccb47908aaed887c88d483d49",
+      "preservationReason": "Silo is the exact approved Czech glossary building name (silo), identical to English.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Silo_Description",
+      "field": null,
+      "source": "Allows you to cut and store grass for feed.",
+      "translation": "Umožňuje sekat trávu na krmivo a uskladnit ho.",
+      "sourceSHA256": "c0bb914ea7fbe8e2e92b262ca82710f466494a60b94b868a0578a889bac7958e",
+      "translationSHA256": "96b7938587a24daaa9634be5e67ae0a5c2f72249c2fd0dca6ab40c45a4e08b68",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "SlimeHutch_Name",
+      "field": null,
+      "source": "Slime Hutch",
+      "translation": "Slizí příbytek",
+      "sourceSHA256": "91a0a67b9fc2f6b73bea956192f55d8526e456d2d3385d5304220e3cfd2c8c16",
+      "translationSHA256": "150c6f29a4f70fcd8b11fba7ef2d6d60f2b1c3afc1f0ab775eb84d9bcdd84073",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "SlimeHutch_Description",
+      "field": null,
+      "source": "Raise up to 20 slimes. Fill water troughs and slimes will create slime balls.",
+      "translation": "Chovejte až 20 slizů. Plňte žlaby vodou a slizové příšery budou vytvářet slizové koule.",
+      "sourceSHA256": "796db8a032ee40e8ff2d6ffe5543096f600f14281d405ef0dd5af229c24a12b8",
+      "translationSHA256": "4b337485df40697a9b01f2c045dbe3776e2dafb31c1395ef36cf511149991503",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Stable_Name",
+      "field": null,
+      "source": "Stable",
+      "translation": "Stáj",
+      "sourceSHA256": "90ee305714d7103317705bfffd734c654b78807e5a0f51fcc61bc1d81105ebd1",
+      "translationSHA256": "63f0a702cb125297170b4edd33984ab510073d02bf71d468a136de2256230774",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Stable_Description",
+      "field": null,
+      "source": "Allows you to keep and ride a horse. Horse included.",
+      "translation": "Umožňuje chovat koně a jezdit na něm. Koně získáte spolu se stájí.",
+      "sourceSHA256": "11a538d60d0ae27188ff0abe0f85ffc0ff0c4c27e4eda1e39bf08813c50b0cfe",
+      "translationSHA256": "873b93c4f8b6441bb0d31c281ca5415de50df477856c910d22018bd3ec81b660",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WaterObelisk_Name",
+      "field": null,
+      "source": "Water Obelisk",
+      "translation": "Vodní obelisk",
+      "sourceSHA256": "f7fcd14ae650739241169e1497e780246429027f7b44aa7fe98a83afd1f51656",
+      "translationSHA256": "860c767e1e26d7dcb3229b8ec660f5b2e7e0fd987f5b94c1b6a064cc822d0db7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "WaterObelisk_Description",
+      "field": null,
+      "source": "Warps you to the beach.",
+      "translation": "Přenese vás na Pláž.",
+      "sourceSHA256": "55e143d50e2eedce0f8a0ed1ac58757d7a8e6a61d34da8eb762296a42265a7cf",
+      "translationSHA256": "da669b8dc08b722af6629d85bca6d7fa7c03c41d66f3804b0b42276667eefdd7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Well_Name",
+      "field": null,
+      "source": "Well",
+      "translation": "Studna",
+      "sourceSHA256": "bdc7e96514483428984b8dc5197479b3cdc3e492a0264b5d6d0cc6987636dcb9",
+      "translationSHA256": "afa0dc4c90ebac111a3bf294cb320246113982f88ae2a7b2a635b6a834a813c3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "Well_Description",
+      "field": null,
+      "source": "Provides a place for you to refill your watering can.",
+      "translation": "Poskytuje místo k doplnění konve.",
+      "sourceSHA256": "37c8b8f2e56f63a80ba703cef633c358515fefe9327638afaf36cd4e15c7f0cd",
+      "translationSHA256": "3b8af897703c0038a9881e949e8320c4465e080b98f62a4302a7f5c5ffa861a9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PetBowl_Name",
+      "field": null,
+      "source": "Pet Bowl",
+      "translation": "Miska pro mazlíčka",
+      "sourceSHA256": "a92e06577042ca284da5391076dae8f85d41310d7e2f7cf7c03424343b4f81e7",
+      "translationSHA256": "3fa7bd6b4982497efb5346eb1c30033a2ee33f31e01c66681c60844f1f5e41d8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Buildings",
+      "key": "PetBowl_Description",
+      "field": null,
+      "source": "Provides a dedicated home for one pet.",
+      "translation": "Poskytuje vlastní domov jednomu mazlíčkovi.",
+      "sourceSHA256": "c52c089a53063a9ddb44861ba26e338af8d9ea950b61b13df163f4578e2795d6",
+      "translationSHA256": "8813b0d70edd9a009d727c018b295f795cb933788113e7689dd1cdfb59a98eb0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

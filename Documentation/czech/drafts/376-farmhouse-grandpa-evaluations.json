@@ -1,0 +1,10 @@
+{
+  "id": "376-farmhouse-grandpa-evaluations",
+  "kind": "long",
+  "target": "Data/Events/FarmHouse",
+  "complexityReason": "Translate Grandpa's first and repeat evaluations while preserving the two-year context, male/female grandchild branches, %farm placeholder, spiritual tone, evaluation actions and exact event commands.",
+  "entries": {
+    "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Můj drahý vnuku...^Má nejdražší vnučko...#$b#Už je to mnoho let, co jsme spolu naposledy mluvili. Byl jsi tehdy jen malý chlapec... Pamatuješ?^Už je to mnoho let, co jsme spolu naposledy mluvili. Byla jsi tehdy jen malá holčička... Pamatuješ?#$b#Podívej, kam až tě život zavedl!#$b#Možná už tvé vzpomínky na mě vybledly, ale celou dobu jsem byl nablízku.#$b#Víš... Mé tělo tento svět opustilo, ale mé srdce navždy zůstane v údolí Stardew.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Už tu žiješ dva roky...\"/grandpaEvaluation/pause 3000/speak Grandpa \"Budoucnost farmy %farm je nyní ve tvých rukou.#$b#Sbohem!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+    "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Můj drahý vnuku...^Má nejdražší vnučko...#$b#Tvé přivolání mě potěšilo. Minule jsem na tebe byl možná trochu příliš přísný.#$b#Odpusť mi. Pracuješ velmi tvrdě a jsem na tebe hrdý.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Tak se podíváme...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+  }
+}

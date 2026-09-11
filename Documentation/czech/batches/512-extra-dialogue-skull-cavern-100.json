@@ -1,0 +1,47 @@
+{
+  "id": "512-extra-dialogue-skull-cavern-100",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read both complete Skull Cavern event commands after the two player neutral Qi corrections. Verified normal and honorable routes, Qi voice, staircase distinction, milk reward, health increase, commands, timing and control structure. No further issue found.",
+  "rows": [
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SkullCavern_100_event",
+      "field": null,
+      "source": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"Well, well, well... you made it.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"Come closer, now... don't be shy.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"I heard you were attempting a deep dive into these caverns today...#$b#I had to see for myself!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"Impressive... very impressive. Making it all the way down here is quite a feat!#$b#...although you did skip a bunch of levels by crafting staircases. Clever, sure... but not very honorable.$1#$b#Even so, it must have been a lot of work to mine all that stone. And that sort of dedication is praiseworthy. You're a rare one, kid.\"/pause 500/speak MrQi \"Now... go over to the table and drink this special milk I've prepared for you.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"It's called 'Iridium Snake Milk'... one healthy swig of that and you'll become even more powerful.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"The taste is awful, and the texture is even worse.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... But your health is permanently increased by 25!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"Good luck out there, kid.\"/pause 500/playSound boop/end",
+      "translation": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"No ne... přece jen jsi tady.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"Pojď blíž... nestyď se.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"Slyšel jsem, že se dnes pokoušíš sestoupit hluboko do těchto jeskyní...#$b#Musel jsem to vidět na vlastní oči!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"Působivé... velmi působivé. Dostat se až sem dolů je pořádný výkon!#$b#...i když ke zvládnutí spousty pater posloužila vyrobená schodiště. Chytré řešení, jistě... ale ne příliš čestné.$1#$b#I tak muselo vytěžení všeho toho kamene dát spoustu práce. A takové odhodlání si zaslouží uznání. To se jen tak nevidí, děcko.\"/pause 500/speak MrQi \"Teď... běž ke stolu a vypij to zvláštní mléko, které jsem pro tebe připravil.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"Jmenuje se „Iridiové hadí mléko“... jeden pořádný doušek a budeš ještě mocnější.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"Chutná příšerně a jeho konzistence je ještě horší.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... Tvé zdraví se však trvale zvýšilo o 25!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"Hodně štěstí, děcko.\"/pause 500/playSound boop/end",
+      "sourceSHA256": "18b8a357447ec3a6a2924a77d01301ff95cb8140db1f4943e6e3cdc78b8e7d8c",
+      "translationSHA256": "3240e4dd3e69297698c7ce1ba0e090ef0889c8bd71b290ac60ff92e8d17908ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/ExtraDialogue",
+      "key": "SkullCavern_100_event_honorable",
+      "field": null,
+      "source": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"Well, well, well... you made it.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"Come closer, now... don't be shy.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"I heard you were attempting a deep dive into these caverns today...#$b#I had to see for myself!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"Impressive... very impressive. You passed my test with flying colors, kid.#$b#I'm very pleased that you challenged yourself and came down the honorable way, instead of skipping all the levels by crafting staircases.#$b#That shows you're the real deal, kid. You've got principles.#$b#You understand the importance of challenging yourself, and holding yourself to the highest standard, even if no one is watching.#$b#That's why you're special, kid... see? You lead by example. I like that.\"/pause 500/speak MrQi \"Now... go over to the table and drink this special milk I've prepared for you.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"It's called 'Iridium Snake Milk'... one healthy swig of that and you'll become even more powerful.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"The taste is awful, and the texture is even worse.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... But your health is permanently increased by 25!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"Good luck out there, kid.\"/pause 500/playSound boop/end",
+      "translation": "clubloop/-100 -100/farmer 6 6 2 MrQi 10 7 0/specificTemporarySprite qiCave/removeQuest 30/viewport 10 7 true/pause 3500/speak MrQi \"No ne... přece jen jsi tady.\"/pause 500/playSound boop/faceDirection MrQi 3 true/pause 50/faceDirection MrQi 2/pause 100/playSound boop/animate MrQi false false 100 0 1 2 3 3 3 2 1 0/pause 1500/speak MrQi \"Pojď blíž... nestyď se.\"/emote farmer 40/playSound boop/pause 500/move farmer 0 4 1/move farmer 4 0 0/pause 500/stopJittering/speak MrQi \"Slyšel jsem, že se dnes pokoušíš sestoupit hluboko do těchto jeskyní...#$b#Musel jsem to vidět na vlastní oči!\"/animate MrQi false false 100 0 1 2 3 3 3 2 1 2 3 3 3 2 1 0/pause 1000/playSound boop/pause 1000/speak MrQi \"Působivé... velmi působivé. Mou zkoušku máš úspěšně za sebou, děcko.#$b#Mám velkou radost. Tvá poctivá cesta dolů byla skutečnou výzvou, zatímco pomocí schodišť by šlo všechna patra přeskočit.#$b#To dokazuje, že to myslíš vážně, děcko. Máš zásady.#$b#Chápeš, jak důležité je překonávat vlastní hranice a vždy od sebe požadovat to nejlepší, i když se nikdo nedívá.#$b#Právě tím vynikáš, děcko... vidíš? Jdeš ostatním příkladem. To se mi líbí.\"/pause 500/speak MrQi \"Teď... běž ke stolu a vypij to zvláštní mléko, které jsem pro tebe připravil.\"/pause 500/move farmer 3 0 0/move farmer 0 -1 0/emote farmer 8/speak MrQi \"Jmenuje se „Iridiové hadí mléko“... jeden pořádný doušek a budeš ještě mocnější.\"/pause 1000/faceDirection farmer 2 true/specificTemporarySprite removeSprite 803/farmerEat 803/awardFestivalPrize qimilk/pause 2000/message \"Chutná příšerně a jeho konzistence je ještě horší.\"/pause 100/pause 500/jump farmer/playSound reward/message \"... Tvé zdraví se však trvale zvýšilo o 25!\"/pause 1000/fade/viewport -1000 -1000/pause 500/playSound boop/speak MrQi \"Hodně štěstí, děcko.\"/pause 500/playSound boop/end",
+      "sourceSHA256": "930720e7a98297c25dec1c838e35b0860f099a1781709e277c66ca8b35bece11",
+      "translationSHA256": "7d184055afd035c430c8d8c2c7a196da532314aec1c60fbeb89c275cbd299c94",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

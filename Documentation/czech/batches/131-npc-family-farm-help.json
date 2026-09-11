@@ -1,0 +1,560 @@
+{
+  "id": "131-npc-family-farm-help",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 29 connected spouse/family/farm-home pairs twice after final corrections, with no new issue. Checked adoption state, explicit female pregnancy roles, generic parenting and mood lines, breakfast refusal, crop/animal/fence help, singular and multiple pet-bowl semantics, greeting trailing spaces, decoration/furnishing ownership and the clutter complaint. Dynamic names stay in safe label or vocative positions; generic speaker/player gender is avoided and all dialogue markers match.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4440",
+      "field": null,
+      "source": "{0}, I hope our adoption request gets approved. I want a baby.$l",
+      "translation": "{0}, doufám, že naši žádost o adopci schválí. Chci dítě.$l",
+      "sourceSHA256": "80f1807cef0e97b50157ba9c169c69ee19859e28b76d3465989e08a1b311ddbd",
+      "translationSHA256": "74efa06d693a1e9c059e15add93b25d92a17b9bf35c9cf45a42926bb3ed364e0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4441",
+      "field": null,
+      "source": "{0}, I filed our adoption papers. Now all we can do is cross our fingers and wait.$l",
+      "translation": "{0}, naše adopční dokumenty už jsou podané. Teď nám nezbývá než držet palce a čekat.$l",
+      "sourceSHA256": "caf779b93001339fbc4544c1e01b5d573ce8d943e133fe911dfa937fd8d1da49",
+      "translationSHA256": "fd4fdc174d0dcc14c80915c9170dc578d9ad1cb21fc14d42aeddd4dd46019b2b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4442",
+      "field": null,
+      "source": "Ugh... I feel a little nauseated this morning.$s",
+      "translation": "Uf... dnes ráno je mi trochu nevolno.$s",
+      "sourceSHA256": "e66d63c9baeb4ba4f55c36dae08bfb3278373dac8f0e825f0b4952f2382646bd",
+      "translationSHA256": "9617a14534fcd55fa245ec17f0b3e4371fe4dd5740883469e078a6ac53895de5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4443",
+      "field": null,
+      "source": "I'm pregnant... can't you make your own breakfast?$s",
+      "translation": "Jsem těhotná... nemůžeš si udělat snídani bez mé pomoci?$s",
+      "sourceSHA256": "168f243327dfd3181cce4587adb10ac32b7229ba978d73eceee2b3ddf3516e7f",
+      "translationSHA256": "c75611ee39529a32e54cba98d1cfd9ff0833e7c027b47c46a03fe138d5778ea3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4444",
+      "field": null,
+      "source": "{0}, we're going to have a baby soon.$l",
+      "translation": "{0}, brzy budeme mít dítě.$l",
+      "sourceSHA256": "dcccd2e258ec2301f031e52eadec5149f8f3b547f9309652073fb087e3287bb0",
+      "translationSHA256": "4c544bcdcf3f9ba84da90a094e4d2f11879b17a89469b42534e33f36d7ace66e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4445",
+      "field": null,
+      "source": "{0}, I'm pregnant. Isn't it wonderful?$l",
+      "translation": "{0}, jsem těhotná. Není to nádherné?$l",
+      "sourceSHA256": "8f8ec5a4a6085a7c7c37b142aa52d4ef56fef894f6326c5fa7deec17a4240a3c",
+      "translationSHA256": "48bfcf87dda891842921da0f2f9627727f4f336c620b4d65148b4fd5fe475e2b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4446",
+      "field": null,
+      "source": "I just feel like sleeping today. Don't worry about it.$a",
+      "translation": "Dnes se mi chce jenom spát. Nedělej si s tím starosti.$a",
+      "sourceSHA256": "160fad4583490e789bed92868d1c37a6e37b845b8e9c736d7e8572293af88458",
+      "translationSHA256": "4c0b32650b0cdfbdc698a135f59da63a0c938a573a25a990beb7d90cdf0d170d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4447",
+      "field": null,
+      "source": "{0}, we're going to have a baby soon.$l",
+      "translation": "{0}, brzy budeme mít dítě.$l",
+      "sourceSHA256": "dcccd2e258ec2301f031e52eadec5149f8f3b547f9309652073fb087e3287bb0",
+      "translationSHA256": "4c544bcdcf3f9ba84da90a094e4d2f11879b17a89469b42534e33f36d7ace66e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4448",
+      "field": null,
+      "source": "{0}, can't you tell? You're pregnant.$l",
+      "translation": "{0}, copak to nepoznáš? Jsi těhotná.$l",
+      "sourceSHA256": "6e16eb6d6a48e380ebc95c1f389f6a52b5892d8fee610e80d551c8b57e3618bb",
+      "translationSHA256": "03cf781c795b9d6807dc143485982b273954eaf6f9b143d706b0a688eb9fe874",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4449",
+      "field": null,
+      "source": "Being a parent is annoying, sometimes...  I just don't feel like getting up.$a",
+      "translation": "Rodičovství někdy leze na nervy... dnes se mi prostě nechce vstávat.$a",
+      "sourceSHA256": "ed4d1492a7277b4613b06b5f4366e05db11961c1f2b010072f3dbd99c8d385a3",
+      "translationSHA256": "f4f4350496196dcac39f4aa42280faeff0a9ddff39befd057d580f233dfecbee",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4452",
+      "field": null,
+      "source": "I need some alone time... Why don't you take care of the kids for a change?$a",
+      "translation": "Potřebuju chvíli o samotě... Pro změnu se postarej o děti ty.$a",
+      "sourceSHA256": "be529e914b342b433896ba9bb77a2fa5d34030850aa25c72f98df56f8337fa59",
+      "translationSHA256": "ddcbf3c03a880a67e39fc11872d2b4bd7e9d22fea374b5a4b0ae1c59101f49d4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4455",
+      "field": null,
+      "source": "I was going to make you breakfast, but I changed my mind.$a",
+      "translation": "Snídaně pro tebe nakonec nebude. Rozmyslelo se mi to.$a",
+      "sourceSHA256": "27a0867cc16d97b1bda323ff34b0f340e1038bbe50a33b6f4993a92c2c1ee75c",
+      "translationSHA256": "73b1f7740e306c4515cd2e2ceeaeb1dab81eb8af5c0931fb892ee8fa77cc6b17",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4462",
+      "field": null,
+      "source": "I got up early and watered some crops for you. I hope it makes your job a little easier today.",
+      "translation": "Dnes časně ráno se mi podařilo zalít několik plodin. Snad ti to trochu usnadní práci.",
+      "sourceSHA256": "182ec4cf1a3133cd1f28dfb513005a05ce15d4a56c3e1ebb24cfbdf9a3f8d711",
+      "translationSHA256": "9505666acda6c33847127bd78584c1e6148a34426ec6c45fd97f1101235c4309",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4463",
+      "field": null,
+      "source": "#$e#I also filled {0}'s water bowl.",
+      "translation": "#$e#Vodu má doplněnou i {0}.",
+      "sourceSHA256": "162a45c22f54be15f17651b0ef791558dde115bae295d32e875d85a02b2a4ad3",
+      "translationSHA256": "b88d5d23482eac572ec598adc68aa365481cae0d8f68d20436f3577aa5d0719d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "MultiplePetBowls_watered",
+      "field": null,
+      "source": "#$e#I also filled the pets' water bowls.",
+      "translation": "#$e#Vodu mají doplněnou i všichni mazlíčci.",
+      "sourceSHA256": "2bf34260581d779dbbd6ab12feae9f0ef6db4914cddc30ce2f2114f896f39c2a",
+      "translationSHA256": "ea94c7282a38d173e457452976f08444ed035c9aaccda5012c0a3f6bac864d8f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4465",
+      "field": null,
+      "source": "Hi {0}! ",
+      "translation": "Ahoj, {0}! ",
+      "sourceSHA256": "f18a2c634180feee4da5ba2e5e8992f4f60ede414652188068f57c43fb15eefc",
+      "translationSHA256": "47c5fa6c321bea40b39b81a8072af952e7acb1f6b80e75ffe9f355b0b8fbbac1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4466",
+      "field": null,
+      "source": "Good Morning, {0}! ",
+      "translation": "Dobré ráno, {0}! ",
+      "sourceSHA256": "9298f6ab6f8012a6711ef3ee6b87ff5eefb95b7385c3062c3792ac30f3cf5e14",
+      "translationSHA256": "6ad4aadd30a8c32eabe7e4ac8ead1f1d42ba00437306e0e3dbeb523cfbe3926c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4470",
+      "field": null,
+      "source": "I got up early to water some crops and they were already done! You've really got this place under control.$h",
+      "translation": "Brzy ráno mě napadlo zalít pár plodin, ale už byly zalité! Tohle místo máš opravdu pod kontrolou.$h",
+      "sourceSHA256": "8453c66e5ce5729809279898358a5bcdc22a2fe089b5626a2239dee0fb903c85",
+      "translationSHA256": "1466b61dddca244bd798a65f6277181bb3db28704af9add0f580f5289d796927",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4474",
+      "field": null,
+      "source": "I got up early and fed all the farm animals. I hope that makes your job a little easier today.",
+      "translation": "Dnes časně ráno se mi podařilo nakrmit všechna hospodářská zvířata. Snad ti to trochu usnadní práci.",
+      "sourceSHA256": "43f87d13168604ead48429de848eb34b1904e88037327b944d428aa64851d47a",
+      "translationSHA256": "97a9ef35c9647319084d17ed71e34d8d1ad9352d89aa6b06dfc2f75ec9542e7b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4481",
+      "field": null,
+      "source": "I spent the morning repairing a few of the fences. They should be as good as new.",
+      "translation": "Dopoledne se mi podařilo opravit několik plotů. Teď by měly být jako nové.",
+      "sourceSHA256": "33595949a8f86a68743ac879681bafcbe07168611158c0a2f9007d7979313e43",
+      "translationSHA256": "5a440f968f0524826f66f7d09067077c65e3971a76b86fe8b03ab49e57196f87",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4486",
+      "field": null,
+      "source": "What do you think, {0}? ",
+      "translation": "Co myslíš, {0}? ",
+      "sourceSHA256": "395b82be1bcc7f4bd080db06c074aab0ecd77794e437ee013650b3c8492d8a90",
+      "translationSHA256": "b5700a09c1add527990c7d0532cc66f4b7bc68c63661ebe2b9519825e994c354",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4488",
+      "field": null,
+      "source": "I ordered this the other day and it just arrived.",
+      "translation": "Tohle právě dorazilo z nedávné objednávky.",
+      "sourceSHA256": "5367075e83e86605ffcfdd205fd68a3583177558f50b269a2dbd87a65de008df",
+      "translationSHA256": "980dcbedb59d9f8a2471ed2a9c8f77bead46db98aefed16110f0496cc0dd48cf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4489",
+      "field": null,
+      "source": "I figured the room could use a little more decoration.",
+      "translation": "Říkám si, že místnost potřebuje trochu víc výzdoby.",
+      "sourceSHA256": "6dcd6cc9b04df24783287614111564bc48e96b2babe73841cff38e100d9de1d8",
+      "translationSHA256": "9e3aec4f0a2946d414c0520de0a48ba5a517a4a4ac17ffbdf8de7a502b9c3596",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4490",
+      "field": null,
+      "source": "I was going to do some decorating today, but I changed my mind.$a",
+      "translation": "Dnes byla v plánu výzdoba, ale rozmyslelo se mi to.$a",
+      "sourceSHA256": "5a43f4ff793dd3930a65096a84d37c6df7befd73f1eb4ac52d76eff5a694d46d",
+      "translationSHA256": "c2987f4138bfc7dfa8ddd09fced95feab8f5866e1f227a58b7a89364a4fd6b99",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4496",
+      "field": null,
+      "source": "What do you think of the new wallpaper I chose?",
+      "translation": "Co říkáš na můj výběr nové tapety?",
+      "sourceSHA256": "5d9e73ea7b251efeeb561415abb66af9a659b9d1f88a84cbc3cb92bdbbb69935",
+      "translationSHA256": "3100324f8fcea623b4c5acb4db9c071bb90658ccf9bab1e5d8738efacdaac4d3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4497",
+      "field": null,
+      "source": "What do you think of the new flooring I chose?",
+      "translation": "Co říkáš na můj výběr nové podlahy?",
+      "sourceSHA256": "18047e948701a01688ec0c2bfaa928a5c78011ba6a8ad6456267b6814dfda379",
+      "translationSHA256": "578d1e3bf1d8ec90fec56e65aa4c866f4248b9a423ae47d95f390b9c1ff20950",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4498",
+      "field": null,
+      "source": "*sigh*... sometimes I miss my old life.$s",
+      "translation": "*povzdech*... někdy mi chybí můj starý život.$s",
+      "sourceSHA256": "b96a11e41f2f21cbc75500d813e76a475db639916bccfe270e811624596763f9",
+      "translationSHA256": "13c9a6d7b58b72a1f1e5f725e0653ddf82bac5a21b562e5b9fd0cdc8e811ab3e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4499",
+      "field": null,
+      "source": "The weather's too gloomy to get out of bed.$s",
+      "translation": "Počasí je příliš pochmurné na to, aby člověk vstával z postele.$s",
+      "sourceSHA256": "1cedaa72d24013c149024a2dd7828b68902473b2f0436d680823925fed0ef965",
+      "translationSHA256": "19f212134ee57a19ec25d9042e260936d8d51d946a8bc32de8eedd57c1baae7f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4500",
+      "field": null,
+      "source": "You could have cleaned up in here a little while I was gone...$a#$e#It's not very nice to have to wade through a bunch of junk after a hard day's work.$a",
+      "translation": "Trocha úklidu za mé nepřítomnosti by ti neuškodila...$a#$e#Po náročném dni není příjemné brodit se hromadou harampádí.$a",
+      "sourceSHA256": "1c7058fa460749d55f836e88801a1a4545318d11b1e2cc7f3dc6c23980e8969d",
+      "translationSHA256": "9f21dc2813d7a6d1b7c1ea7e8a6e1ff1b6e197bb8ae36117acb214f452ea6e65",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

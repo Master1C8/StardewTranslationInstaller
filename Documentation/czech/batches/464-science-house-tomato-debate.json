@@ -1,0 +1,28 @@
+{
+  "id": "464-science-house-tomato-debate",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all eight dialogue segments against English; verified Robin and Demetrius's domestic argument, botanical terminology, natural Czech response labels, addressee-specific grammar, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "25/f Demetrius 1500/p Demetrius/p Robin",
+      "field": null,
+      "source": "jaunty/-1000 -1000/farmer -10 -10 0 Demetrius 6 21 3 Robin 5 21 1/skippable/showFrame Demetrius 28/viewport 6 21 true/pause 900/speak Robin \"Demetrius, I didn't tell you to get tomatoes. I said to get fruit.\"/emote Demetrius 8/speak Demetrius \"I don't understand. Tomatoes are fruits!\"/emote Robin 12/speak Robin \"When a normal person says they want fruit, they NEVER mean tomatoes. It doesn't matter what the scientific classification is.\"/warp farmer 6 24/playSound doorClose/pause 500/showFrame Demetrius 29/faceDirection Robin 2/speak Demetrius \"@! I'm glad you're here. You'll be able to put this argument to rest.\"/move farmer 0 -2 0/emote farmer 8/speak Demetrius \"$q 59 null#How would you classify a tomato?#$r 59 -30 Event_tomato1#Vegetable#$r 59 50 Event_tomato2#Fruit\"/pause 500/showFrame Demetrius 28/speak Demetrius \"I just want you to understand my point of view.#$b#It's hard for me to know exactly what assumptions I should make when you tell me something.\"/pause 300/faceDirection Robin 1/pause 300/speak Demetrius \"But I'll try to get better at it.\"/pause 600/emote Robin 20/pause 300/showFrame Demetrius 29/pause 600/speak Demetrius \"Thanks for your help, @.$h\"/pause 800/end",
+      "translation": "jaunty/-1000 -1000/farmer -10 -10 0 Demetrius 6 21 3 Robin 5 21 1/skippable/showFrame Demetrius 28/viewport 6 21 true/pause 900/speak Robin \"Demetriusi, neříkala jsem ti, abys koupil rajčata. Řekla jsem, ať koupíš ovoce.\"/emote Demetrius 8/speak Demetrius \"Tomu nerozumím. Rajčata jsou ovoce!\"/emote Robin 12/speak Robin \"Když normální člověk řekne, že chce ovoce, NIKDY tím nemyslí rajčata. Na vědeckém zařazení nezáleží.\"/warp farmer 6 24/playSound doorClose/pause 500/showFrame Demetrius 29/faceDirection Robin 2/speak Demetrius \"@! Jsem rád, že jsi tady. Pomůžeš nám ten spor rozhodnout.\"/move farmer 0 -2 0/emote farmer 8/speak Demetrius \"$q 59 null#Kam podle tebe patří rajče?#$r 59 -30 Event_tomato1#Zelenina#$r 59 50 Event_tomato2#Ovoce\"/pause 500/showFrame Demetrius 28/speak Demetrius \"Jen chci, abys pochopila můj úhel pohledu.#$b#Když mi něco řekneš, těžko přesně poznám, co si z toho mám odvodit.\"/pause 300/faceDirection Robin 1/pause 300/speak Demetrius \"Ale zkusím se v tom zlepšit.\"/pause 600/emote Robin 20/pause 300/showFrame Demetrius 29/pause 600/speak Demetrius \"Díky za pomoc, @.$h\"/pause 800/end",
+      "sourceSHA256": "231760b6cb94b2c3cc4c6c8836d0ab456ede3095f2a922cf1c5206b753f699d7",
+      "translationSHA256": "9b2511b5e4f581aa6c6fb8136c526b1489b19fc732d9e9c4e52a08cbe785854c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

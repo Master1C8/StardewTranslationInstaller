@@ -1,0 +1,1248 @@
+{
+  "id": "100-locations",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full package was previously read entry by entry; unchanged rows remain identical. Rechecked all affected currency contexts after consistently separating and grouping Czech g amounts; source keys and control-token structure still match.",
+  "rows": [
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Header",
+      "field": null,
+      "source": "------------------------------\n\t\t\t --Monster Eradication Goals--\n             \"Help us keep the valley safe.\"\n------------------------------",
+      "translation": "------------------------------\n\t\t\t --Cíle hubení příšer--\n             „Pomozte nám chránit údolí.“\n------------------------------",
+      "sourceSHA256": "6c1ee42db7b330b2709b3a766cf062a19957fc6a16358d22828d7efcf05fe8c8",
+      "translationSHA256": "582d9dcf89a4d929f75af662919c27e501f18f7b96278c1e519c10c14bf8c8f8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat",
+      "field": null,
+      "source": "{0}/{1} {2}",
+      "translation": "{0}/{1} {2}",
+      "sourceSHA256": "5a13e139b3cb01b5d6ff5a242a7b6064dd42829ca5a6a8c21a5bc4a50ec78029",
+      "translationSHA256": "5a13e139b3cb01b5d6ff5a242a7b6064dd42829ca5a6a8c21a5bc4a50ec78029",
+      "preservationReason": "This row is entirely placeholders and punctuation; changing it would alter the compact kill-count layout rather than translate English wording.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat_None",
+      "field": null,
+      "source": "{0}/{1} ????",
+      "translation": "{0}/{1} ????",
+      "sourceSHA256": "63416181bd893d548a227ed5d363437a43b2d64c3cd8e7f49d5f8e6ece08abe8",
+      "translationSHA256": "63416181bd893d548a227ed5d363437a43b2d64c3cd8e7f49d5f8e6ece08abe8",
+      "preservationReason": "This row is entirely placeholders and the intentionally hidden ???? label; it contains no English wording.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_LineFormat_OverTarget",
+      "field": null,
+      "source": "{0} {2} *",
+      "translation": "{0} {2} *",
+      "sourceSHA256": "95083d86a24fbe28913fe16d92e9deca3f5703eee615d00c6d5390477c8cec72",
+      "translationSHA256": "95083d86a24fbe28913fe16d92e9deca3f5703eee615d00c6d5390477c8cec72",
+      "preservationReason": "This row is entirely placeholders and the completion asterisk; it contains no English wording.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Slimes",
+      "field": null,
+      "source": "Slimes",
+      "translation": "Slizové příšery",
+      "sourceSHA256": "afb5807e3f728c257c780dd193bea3b43d7549132341385a89c30b4e7156a70e",
+      "translationSHA256": "295a46a8d33d818b51a4c062a1d89cb4ce910a229d4c6b3dffa3e81875445008",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_VoidSpirits",
+      "field": null,
+      "source": "Void Spirits",
+      "translation": "Duchové prázdnoty",
+      "sourceSHA256": "d5c13f04be493aed7bfd25949ba243651f3843fa67b1274220be4f9ca40c45a2",
+      "translationSHA256": "eb23e74d7ec545ad356552fd2ef7277de023de3c189434ca2c66cb308db53701",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Bats",
+      "field": null,
+      "source": "Bats",
+      "translation": "Netopýři",
+      "sourceSHA256": "a7aa07008b379970e7c1ba891629e95a779084a73792dfaf4c660cc524422346",
+      "translationSHA256": "ec0052812771a0b49ee8c4971283f822ca96d1dadef810083b2a3db9506ad8af",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Skeletons",
+      "field": null,
+      "source": "Skeletons",
+      "translation": "Kostlivci",
+      "sourceSHA256": "f6fb698c6074f81c66ff5320be7fd8c69f2790b518f08606fd204f14e1f7af72",
+      "translationSHA256": "5b41a9f47be8703512bfc677ad61a8a784b2b44fd4d8aa7364ae8dfe18b5b0c5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_CaveInsects",
+      "field": null,
+      "source": "Cave Insects",
+      "translation": "Jeskynní hmyz",
+      "sourceSHA256": "ed7f8bfabe91ab5580afdee97221f3948381322abf3cc55e1ce9e7c7a6100259",
+      "translationSHA256": "537d446cd5323a4cb69ad88c51e0e035d857aaa8c3e5afb55f46053cac02c78f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Duggies",
+      "field": null,
+      "source": "Duggies",
+      "translation": "Krtáci",
+      "sourceSHA256": "27ead2840eecda8da100117e6be452266e2d956abde530107df6f8b975c7266a",
+      "translationSHA256": "375d79fd3a94d6897070721482ecfe0ad5990c55f723cf8f3a3eb9b0f26a9b19",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_DustSprites",
+      "field": null,
+      "source": "Dust Sprites",
+      "translation": "Prachoví skřítci",
+      "sourceSHA256": "2fe018cc51efbff21ab12576fb873f21d5b33792c439a1f0ef40f37da6a551d4",
+      "translationSHA256": "704a7caa9d7a6e483396e3961aaff10a78eabcc38fe86531b2d47c0eea65b546",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_RockCrabs",
+      "field": null,
+      "source": "Rock Crabs",
+      "translation": "Kamenní krabi",
+      "sourceSHA256": "13947680e19a7b9752a2db1f222288a6536bcac01fb9a4158ae08e3a36a5b23b",
+      "translationSHA256": "639b41463cc633ef32779b69e0f08f9f6dd337190fb63dd9cd472a327f0af745",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Mummies",
+      "field": null,
+      "source": "Mummies",
+      "translation": "Mumie",
+      "sourceSHA256": "085a2e3b587f90cda1153f750cb55d87eaebb3ed024bb274ba1bfcad952f1cb7",
+      "translationSHA256": "2eec1ed52142449d057da3dc1b3e88f634b1282e8f143a7a0049c956dd8138a4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_PepperRex",
+      "field": null,
+      "source": "Pepper Rex",
+      "translation": "Pepřoví rexové",
+      "sourceSHA256": "f235f1eda2494471fccccc28e42d802db8debdc500afee315a7eaef7a309bf9f",
+      "translationSHA256": "e31944ea6f69334b0c2824a11effd95d20c0b2ee3ff3a715dedacf8cfa22086d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Serpent",
+      "field": null,
+      "source": "Serpents",
+      "translation": "Hadi",
+      "sourceSHA256": "7f1bbdc508bc6a4945eef56f0a6e16794045bee9ad4f43a52c195bd5a7cd8596",
+      "translationSHA256": "a28a45c1cac79570a2b7e72238834710b99962acc47f41b579ea4c98a5584eaf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AdventureGuild_KillList_Footer",
+      "field": null,
+      "source": "\n  -See Gil to claim your rewards.",
+      "translation": "\n  -O odměny se přihlaste u Gila.",
+      "sourceSHA256": "45432a1a21e5952e5d6a71e6010b61ee148c2539e7b1bd3f00cd6332ed3f957f",
+      "translationSHA256": "59873be30db2ac7b5249cd08f0e449158fb731b880b3a129d716d8e5b352f2ca",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_VoidEgg",
+      "field": null,
+      "source": "A new chick hatched... It looks odd.",
+      "translation": "Vylíhlo se nové kuřátko... Vypadá podivně.",
+      "sourceSHA256": "9aa08931bbf19b4098dc17550c08148aec9d94f177403bebaec046e376db6415",
+      "translationSHA256": "9d3180d0c2b03eabb8e86332fc4b4a907cdb36da7d82c6ac0cc2cb188cb8f160",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_RegularEgg",
+      "field": null,
+      "source": "A new baby chick hatched!",
+      "translation": "Vylíhlo se nové kuřátko!",
+      "sourceSHA256": "9889a061bc5fd47a17f1f84ec27f4a9c73cc90403c79420d55bb4fbe36a7435d",
+      "translationSHA256": "7abb7b6fa4132bf7b9c1541b7113516b820d2938d1f600a7a462413eaca7e6d1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_DuckEgg",
+      "field": null,
+      "source": "A new baby duckling hatched!",
+      "translation": "Vylíhlo se nové kachňátko!",
+      "sourceSHA256": "4dca77d85ebdc22cc912a8e863ee1b4d1f8fc7753895c35a0e47f586795b231f",
+      "translationSHA256": "2946d56c29d77513b56328d18368b242cb19b1a30b5a891c9fd007e84d9f4a08",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "AnimalHouse_Incubator_Hatch_DinosaurEgg",
+      "field": null,
+      "source": "A new baby ...lizard?... hatched.",
+      "translation": "Vylíhlo se nové... ještěrčí?... mládě.",
+      "sourceSHA256": "e0853b1e32122d3b1c9726a414b4af5450204c03ec5af72ef9dea6ab33c983a4",
+      "translationSHA256": "5d614268de882c27625bae66624a776faec829cc08e002701e26ed32f4dc6fdd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_Closed",
+      "field": null,
+      "source": "Opens at 5pm.",
+      "translation": "Otevírá v 17:00.",
+      "sourceSHA256": "4ba71615ce12ccdf0596ed2e2a8a678b6915c635dbfa8e38399e4e6ce76c9fe8",
+      "translationSHA256": "b626d46cd365d3ec54d373058a6cc67ae27771ded803d513a6a094d90d2777dd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_SubmarineInUse",
+      "field": null,
+      "source": "The submarine is currently in use. Come back later.",
+      "translation": "Ponorka se právě používá. Přijďte později.",
+      "sourceSHA256": "65761bfac652b646f3d1481c3f4e83ff5b4d959b0905fc9afc934375b7ee0980",
+      "translationSHA256": "f45831578284905a6d0e6135829400e63faa759d4d256348d8b1f0877a972828",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverClosed",
+      "field": null,
+      "source": "Merchant: The night market starts at 5pm... visit me then for a free cup of coffee! ",
+      "translation": "Obchodník: Noční trh začíná v 17:00... přijďte pak ke mně na šálek kávy zdarma! ",
+      "sourceSHA256": "1e8f5f82a4b515da6cc1610e77874371fbc7a46247ecfcefca62bd626b938682",
+      "translationSHA256": "86d9cd6008e15d3574a97f5f34496673d79be305629743e88d463976a82efb18",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverQuestion",
+      "field": null,
+      "source": "Merchant: Hello there! Care for a cup of coffee?",
+      "translation": "Obchodník: Zdravím! Dáte si šálek kávy?",
+      "sourceSHA256": "948e7a265bb42471519968836ac13eb6c4b726e4de13648b96b22b99b8238db0",
+      "translationSHA256": "ad0c98473936d0c75a592a1c9b3711f26203872d77d7096d206b3c180ce05496",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_GiftGiverEnjoy",
+      "field": null,
+      "source": "Merchant: Mmm... smells great, doesn't it?",
+      "translation": "Obchodník: Mmm... nádherně voní, že?",
+      "sourceSHA256": "abb351f0b7161004e59d6b8724c57d0e48954321c90f8c3ec26c426863339576",
+      "translationSHA256": "b5135639a970c8e7b74314c7cc3588e41ea335102bbb7b86eb5ba62eae2cae35",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterClosed",
+      "field": null,
+      "source": "Famous Painter Lupini: Come back when the market opens, if you wish to purchase my fine work.",
+      "translation": "Slavný malíř Lupini: Pokud si chcete koupit mé znamenité dílo, vraťte se po otevření trhu.",
+      "sourceSHA256": "7e013eee8ba0ad3d5eacdb1e9302c7507536a517ce973b3fa962db07d2a1521e",
+      "translationSHA256": "5204b3103da888c7d82ea8ddc526e4b6b5a4d72385c8896f1881d4289d99f22e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterQuestion",
+      "field": null,
+      "source": "Famous Painter Lupini: I'm selling this painting for 1200g. What do you say?",
+      "translation": "Slavný malíř Lupini: Tento obraz prodávám za 1 200 g. Co vy na to?",
+      "sourceSHA256": "a85862ea363639590161b70c04829ee5a06d5ffd4e1243a6feda5686c34d72a9",
+      "translationSHA256": "8a5f340371258ef8543c1b5a994b1ac51856e7c49eee6326ddeafd05ae96bcc5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_PainterSold",
+      "field": null,
+      "source": "Famous Painter Lupini: My apologies... I have no more paintings to sell today.",
+      "translation": "Slavný malíř Lupini: Omlouvám se... dnes už nemám žádné další obrazy na prodej.",
+      "sourceSHA256": "478b791a575d152bc94b9ab2fb857071b82f86b55ca447340ebd8bd119ddf607",
+      "translationSHA256": "678c54490b9065eb6affffbbaaaac35b0118a844f30dc363fe1d11b6ef82341b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BeachNightMarket_WarperQuestion",
+      "field": null,
+      "source": "Shrouded Figure: I can send you home for 250g.",
+      "translation": "Zahalená postava: Mohu vás za 250 g poslat domů.",
+      "sourceSHA256": "589ef7e9708c5c4365208b4652013b526abf6b73039dac968e7a7127a850a2db",
+      "translationSHA256": "2fe60ce700ba1ad0b951636ee7901315165cd3fdeaec738eaadfcc11461b6464",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_FixBridge_Question",
+      "field": null,
+      "source": "Use 300 pieces of wood to fix the bridge?",
+      "translation": "Použít 300 kusů dřeva k opravě mostu?",
+      "sourceSHA256": "1529b3b22c9eeb5440b583b930dac41402a72ce1334f388ef33326cac0f80282",
+      "translationSHA256": "40d321541429b063120ad7f3abed1aee69ef2d41e4ad6e89e18670d11c5deac8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_FixBridge_Hint",
+      "field": null,
+      "source": "Hmmm... With 300 pieces of wood this could be fixed.",
+      "translation": "Hmmm... S 300 kusy dřeva by se to dalo opravit.",
+      "sourceSHA256": "29c32ea4fa79edeaecd468d4988e9e438e284e8937f0cad297a9c569a557a88f",
+      "translationSHA256": "ad4ca75047fc97e3b932c631b56c57e730dd2e6bdec82f1c5cea05a66318ab65",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_GoneFishingMessage",
+      "field": null,
+      "source": "    Gone fishing.\n\n   I'll be back tomorrow.",
+      "translation": "    Jsem na rybách.\n\n   Vrátím se zítra.",
+      "sourceSHA256": "1fde41aa2411ccd0a18937eec3b7b36699f706d55ee9e8f008243d62174ce97d",
+      "translationSHA256": "ea8f9f59e17d866b613b02da493fe27e3b004220b03fd3d9e392ea9010bfedb9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_Player_Male",
+      "field": null,
+      "source": "lad",
+      "translation": "mladíku",
+      "sourceSHA256": "a5f02630dd666a73979b38bdce3c848d9520e429498a6142e3dfd18a8d7e854d",
+      "translationSHA256": "bce4d9dd282f4a08cee66546298b3d0130a1f447102352cec2eb3ce16feabd12",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_Player_Female",
+      "field": null,
+      "source": "miss",
+      "translation": "slečno",
+      "sourceSHA256": "80688fc3d5f88a06909e3ff7575018a520bfdb239cc0f95aee985007254423da",
+      "translationSHA256": "0040653d7697777e1d658233f3c1ed7c359df4263ebf9c147e8b0ec598ae9e16",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerMarried",
+      "field": null,
+      "source": "Old Mariner: Glad the amulet worked out for ye, {0}.",
+      "translation": "Starý námořník: Jsem rád, že ti ten amulet posloužil, {0}.",
+      "sourceSHA256": "6808a6be9855db4c8af3ce83f019ee527ce18088e5da5ec7fb1e4470acaca7ae",
+      "translationSHA256": "1834d557ed2a88ee9d18252da2c6c0b3f75972dca0e4314f1e007ae6a6057395",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerHasItem",
+      "field": null,
+      "source": "Old Mariner: Don't be shy, now. Show that amulet to the one you intend to marry.",
+      "translation": "Starý námořník: Jen se nestyď. Ukaž ten amulet osobě, kterou si chceš vzít.",
+      "sourceSHA256": "a22b194930a9448f56db6139a5eb1d242015480a490b368fe0498407fb6d5153",
+      "translationSHA256": "48c5bccf17298319fad026cef66bb2ed0679a970e76b57ef41cad6a0b6a840d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerNotUpgradedHouse",
+      "field": null,
+      "source": "Old Mariner: I can see that sparkle in yer eye, {0}. Ye must be head over heels in love. But I'm afraid a bigger house is essential for a happy marriage.",
+      "translation": "Starý námořník: Vidím ti tu jiskru v oku, {0}. Láska tě úplně pohltila. Obávám se ale, že pro šťastné manželství je větší dům nezbytný.",
+      "sourceSHA256": "dc4e5b12f1fe05d683336846562ca4470d80c047bb64fd74d94efe201f39c655",
+      "translationSHA256": "f8ca4548a990bf0e04327f6b00f182a911a8f3beea1893fb688d686650f692c8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerBuyItem_Question",
+      "field": null,
+      "source": "Old Mariner: Ah, I can see it in yer eyes... There be a special someone in yer heart. Just so happens I'm sellin' a 'Mermaid's Pendant'. Give that to yer intended and they'll know exactly what you mean.",
+      "translation": "Starý námořník: Á, vidím ti to na očích... Ve tvém srdci je někdo výjimečný. A zrovna náhodou prodávám „Přívěsek mořské panny“. Dej ho osobě, kterou si chceš vzít, a hned pochopí, co tím myslíš.",
+      "sourceSHA256": "f22baa200646691f09c380d0e63fbbb184076ed4db09a66c923f57ef4f571ae9",
+      "translationSHA256": "1201b21ebb2c9531fb63629893714f282dc901d33b2b793e56b6bbbb71114b48",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerBuyItem_AnswerYes",
+      "field": null,
+      "source": "Buy (5000g)",
+      "translation": "Koupit (5 000 g)",
+      "sourceSHA256": "509888d1a5adec56f7b38f946f1e35caef7b0a1ba672be447fb1584c1f8fa645",
+      "translationSHA256": "99d4c81f70560b837fd70769e4dc785c8f10b91a4da5c02e778f8093d2e208a7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerBuyItem_AnswerNo",
+      "field": null,
+      "source": "Not now...",
+      "translation": "Teď ne...",
+      "sourceSHA256": "9c31d0a26abfb5d501ccafe46b36930e568d198fbeb6e56bfec89da79b444c10",
+      "translationSHA256": "6ad2944ce908abd32861e143ae39c05d0a7b6102ffa3638b838e94d3575d4383",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Beach_Mariner_PlayerNoRelationship",
+      "field": null,
+      "source": "Old Mariner: I've got this old amulet to sell... but somethin' tells me yer not ready for it, {0}.",
+      "translation": "Starý námořník: Mám na prodej tenhle starý amulet... ale něco mi říká, že pro tebe ještě nenastal správný čas, {0}.",
+      "sourceSHA256": "d244a88d8ce5a217957e2ea2d12f6cb8811087e79ccc98aa502abc2c03d1f26a",
+      "translationSHA256": "04f5d093ee23392d915ac9086927216d5a7965d9e2a1733d9cbad23e2e45057a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Mines",
+      "field": null,
+      "source": "Mines",
+      "translation": "Doly",
+      "sourceSHA256": "dd4add0cdd92f13cd707e0370d26efc631c7a30c97f981a093af97a5396e8e0f",
+      "translationSHA256": "603e81ef46c819973e1e501e9bd20b21a52c2dc047b9c7e1fd76d75eb49f0121",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Town",
+      "field": null,
+      "source": "Town",
+      "translation": "Město",
+      "sourceSHA256": "390f25134ba04a8eff7bfd0ff9d2eede5f8b139fb6af326732f2f57c2b210e83",
+      "translationSHA256": "850fab0b2469f869289414009c113c9a0aea8dfb7f8c6ca5522d367cfef9303d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_BusStop",
+      "field": null,
+      "source": "Bus Stop",
+      "translation": "Autobusová zastávka",
+      "sourceSHA256": "026cdef0904d004f58bc54cd2064c094da2347fb79edc3b62d1aa5bb1f0f6a8f",
+      "translationSHA256": "907b18cda7047989f9c2fd45528d1983c64dea835a3e5e16d54fee8a2bbbdefa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Quarry",
+      "field": null,
+      "source": "Quarry",
+      "translation": "Lom",
+      "sourceSHA256": "2f42610cc5d51a3d4791323084b2f3bdbeeecc294295f195fddf7b3c1fc00349",
+      "translationSHA256": "75e99b6598ac7f51a72ad0b0026ca476793b589dc20013ed3d28672f9af9a7b5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_Destination_Cancel",
+      "field": null,
+      "source": "Cancel",
+      "translation": "Zrušit",
+      "sourceSHA256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translationSHA256": "6c77d8a4b0adf05e8febe203fe3676c4d66994cd1b147a1ed4b7d3e9a90d2ca0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_ChooseDestination",
+      "field": null,
+      "source": "Choose destination:",
+      "translation": "Vyberte cíl:",
+      "sourceSHA256": "345a8e6b474b50681bf246a6dfbed603499fa0b50ac4dcc6abd51ee3f032ef94",
+      "translationSHA256": "dc8917141e2fb0b0689fe42c4b39c32cdb3d33bed3bf6fdeb48364c13f32b4e2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_OutOfOrder",
+      "field": null,
+      "source": "Out of order",
+      "translation": "Mimo provoz",
+      "sourceSHA256": "24d8f84a780c7168cc3fb21c147b9adc9b27107333c9dfe841f04d5d17c9b2ab",
+      "translationSHA256": "5ae2a9366e93e321d263792f22d428d21c8eeaaba0b1acc3a0bccca0639e4079",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "MineCart_DestinationWithPrice",
+      "field": null,
+      "source": "{0} ({1}g)",
+      "translation": "{0} ({1}g)",
+      "sourceSHA256": "699c2d11752d690716c2cb7b811d985b1f8f44156732609923cd2da5d4903d6b",
+      "translationSHA256": "699c2d11752d690716c2cb7b811d985b1f8f44156732609923cd2da5d4903d6b",
+      "preservationReason": "This row is entirely placeholders, currency symbol and punctuation; it contains no English wording.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_BuyTicketToDesert",
+      "field": null,
+      "source": "Buy a ticket to Calico Desert for {0}g?",
+      "translation": "Koupit za {0}g jízdenku do pouště Calico?",
+      "sourceSHA256": "2ee1f2523d5f53dc4300da00edcf77b09a3921e86061d077d513eab14ae2340a",
+      "translationSHA256": "d814887a3dc31d7281cbcc37f034768aca2de18c6259d697b9ef3cf07ae8393e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_DesertOutOfService",
+      "field": null,
+      "source": "The bus to Calico Desert is out of service.",
+      "translation": "Autobus do pouště Calico je mimo provoz.",
+      "sourceSHA256": "7baf968f1054299522facecd716ae8b47302cf7afeef870661b237fecab8d141",
+      "translationSHA256": "05e49585a5708a60ee4e7d46d25cbb062b0267043e9fbb2ed45fe38612bf14b8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_NotEnoughMoneyForTicket",
+      "field": null,
+      "source": "You don't have enough money.",
+      "translation": "Nemáte dost peněz.",
+      "sourceSHA256": "ed134892f9bf843b023368e1f574805ebfddb80d3bdb5bd278c7ed3c36ab3161",
+      "translationSHA256": "92ea01e7464671255d6c2efc5129c3b04561dbe3d25b88edb744703d8c783ecd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_NoDriver",
+      "field": null,
+      "source": "Please return when a bus driver is present.",
+      "translation": "Vraťte se prosím, až bude přítomen řidič autobusu.",
+      "sourceSHA256": "e48dd351043a8dbbdee0cf74570c17dabd9714d46054a566616e5a30567b7b6d",
+      "translationSHA256": "4fc413360347c60c2e708e60f535c9bff0aa0bce614ebbf61a1377ecd7b83c5e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_ReturnToHorse1",
+      "field": null,
+      "source": "{0} is wondering where you've been.",
+      "translation": "{0} si říká, kdepak jste.",
+      "sourceSHA256": "9cb9c4735008e012f2255bccdd983379c52df18f86a0f59289bbdad02ff138bd",
+      "translationSHA256": "427cf1a6a6ab90da19bc42b6f859694a4c2ee44e49af5faa89a2e7cdd83ef1e0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "BusStop_ReturnToHorse2",
+      "field": null,
+      "source": "Your loyal horse waits patiently for your return.",
+      "translation": "Váš věrný kůň trpělivě čeká na váš návrat.",
+      "sourceSHA256": "48dc8754a982fbc44a02bb5b3fa4394a7fa6714b5798311aa7217dca867fdc23",
+      "translationSHA256": "62a6f6779da1e04855476ff649eaab174e36949573bb4441965175ea7fd71ed0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Club_Bouncer_TextAboveHead1",
+      "field": null,
+      "source": "Now I'm angry!",
+      "translation": "Teď už mám vztek!",
+      "sourceSHA256": "f25ab3d13113bd5a7610a1588aea13b60ffea29b90641539baf915ae236be30b",
+      "translationSHA256": "4e82ea3d8d564867ea0bf406c055eda55539e9f75c73335273b5b8bf0ebb908d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "Club_Bouncer_TextAboveHead2",
+      "field": null,
+      "source": "You little punk...",
+      "translation": "Ty jeden spratku...",
+      "sourceSHA256": "f12d1ef5ba9d98d84d43a98cbc41759cb0ff54abbf32031ec22d157ad751ca07",
+      "translationSHA256": "d3025153ba8e692a7fb8eaab317afa47a3493db5ab9ad60e1d37f8fdc75ab128",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion1",
+      "field": null,
+      "source": "We are the Junimos... Keepers of the forest.",
+      "translation": "Jsme junimové... strážci lesa.",
+      "sourceSHA256": "4c6c9c6cc894b81c34e93a0b7a29961b0f6c80108a6a733bcb2333af421f2abd",
+      "translationSHA256": "1cf6b4bfdfdfcf1f14c55c4a40d5268f7bc0cf28f2c5b8d141dc997de5eb3b0e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion2",
+      "field": null,
+      "source": "This house was empty for years... The trees moved in and so did we.",
+      "translation": "Tento dům byl celé roky prázdný... Nastěhovaly se sem stromy a s nimi i my.",
+      "sourceSHA256": "e02a62ce1bbebbc08371aac5d172c72112a0a888cacc3e8ef95dbb72fe4d439b",
+      "translationSHA256": "79f7f84af31e6d367e98dd000594aa03fd9662432670a7b06def912223bff97b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion3",
+      "field": null,
+      "source": "We're happy to help... It's not our house, after all.",
+      "translation": "Rádi pomůžeme... Koneckonců to není náš dům.",
+      "sourceSHA256": "74b24bec86033da725d84a63fda897a81f7813bf557ddea0e5d5833b3422fb2d",
+      "translationSHA256": "c7a52c0b94c78971a054e265403c5f3d9e6fbf292a9ce4f55476d1d7280a6625",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion4",
+      "field": null,
+      "source": "So many wonderful bundles... thank you! Thank you!",
+      "translation": "Tolik úžasných balíčků... děkujeme! Děkujeme!",
+      "sourceSHA256": "883337ae435430b2fbd41dc5a14d21efd1ef15facfd9c1bda1224ba4b48060c8",
+      "translationSHA256": "830d5146601de999870f4394ba560fd57231265301313cdcd1756b441bbf9906",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion5",
+      "field": null,
+      "source": "When we're done here, we'll return to the other world.",
+      "translation": "Až tu skončíme, vrátíme se do onoho světa.",
+      "sourceSHA256": "710791a6152ce903b1f0e8b9f40423f531b49844bc473839ce5fd9232926009f",
+      "translationSHA256": "21a5640b4ffd7ee8936e49bdc1a8c8c22399bac250860f1640ca794ec0c9cad1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaCompletion6",
+      "field": null,
+      "source": "The last bundle... Farewell... {0}.",
+      "translation": "Poslední balíček... Sbohem... {0}.",
+      "sourceSHA256": "e9655fdf0f5e4e620c02f93e6a7f824d9dfa1f40b3919bfb640104a9572ca625",
+      "translationSHA256": "9e50360ff1c9b44c4ec1275fa2638815c3e545067de45212f67808fb660dac75",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_JunimosReturned",
+      "field": null,
+      "source": "The Junimos have returned to the spirit world.",
+      "translation": "Junimové se vrátili do světa duchů.",
+      "sourceSHA256": "8adbc37f5205414e0497fb843585836c21e34aa1ca31fc30e01bc2361cdf4c74",
+      "translationSHA256": "ab014ebea463a5dd00be4244df22e9ea182858e2788393d6264c65fc9f80b127",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Locations",
+      "key": "CommunityCenter_AreaName_BoilerRoom",
+      "field": null,
+      "source": "Boiler Room",
+      "translation": "Kotelna",
+      "sourceSHA256": "00cfe2b8af6c8a02225e46132aedef1d3dd4a309ceefbba64eb52160a1a321b5",
+      "translationSHA256": "dfae752257df43000292472bf17458d030bb558d93d81c30e2d68b9fbf86f4c0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

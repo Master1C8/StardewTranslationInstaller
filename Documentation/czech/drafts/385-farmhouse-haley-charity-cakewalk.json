@@ -1,0 +1,9 @@
+{
+  "id": "385-farmhouse-haley-charity-cakewalk",
+  "kind": "long",
+  "target": "Data/Events/FarmHouse",
+  "complexityReason": "Translate Haley's charity cake-walk request while preserving the musical-chairs explanation, chocolate and pink cake items, two answer tones, spouse humor, quest trigger, branch escapes and exact event structure.",
+  "entries": {
+    "8675611/e 6184643/O Haley/A haleyCakewalk1/t 620 1700/p Haley": "continue/-1000 -1000/farmer 23 24 3 Haley 22 24 1/makeInvisible 23 24/addQuest 127/addConversationTopic haleyCakewalk2 0/skippable/viewport -100 -100 true unfreeze/pause 3000/speak Haley \"Ahoj, zlato.#$b#Hej... Mám nápad... Chci všechny sezvat na charitativní dortovou hru.\"/pause 500/emote farmer 8/pause 1000/speak Haley \"Ehm... Je to něco jako hra na židle, ale všichni vyhrají a dostanou dort! Uvidíš...$h#$b#Bude se konat příští slunečný den na náměstí.#$b#Ehm... přineseš čokoládový dort?\"/quickQuestion Souhlasíš, že přineseš čokoládový dort?#Ano#Ano (s nechutí)(break)speak Haley \"Skvělé! Zítra se sejdeme na náměstí, pokud počasí dovolí.$h\"\\animate Haley false true 100 28\\animate farmer true true 100 101\\positionOffset Haley 8 0\\positionOffset farmer -8 0(break)emote Haley 12\\speak Haley \"Co má znamenat ten jízlivý tón?$3#$b#Fajn. Zítra přijdeš s čokoládovým dortem, jinak budeš spát v boudě. Takhle se ti to líbí víc?$3\"/pause 2000/fade/viewport -1000 -1000/end dialogue Haley \"Já přinesu růžový dort.\""
+  }
+}

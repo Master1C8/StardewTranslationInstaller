@@ -1,0 +1,260 @@
+{
+  "id": "543-luau-events",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all 13 EN/CS rows in full; verified byte-exact name/condition/setup streams, identical masked command skeletons for all nine translated events, all 41 quoted dialogue/message segments, every marker, neutral player narration, and canonical Festival Luau/shared-polévka terminology.",
+  "rows": [
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "name",
+      "field": null,
+      "source": "Luau",
+      "translation": "Luau",
+      "sourceSHA256": "be140fca8d99392d36607f990862c056a1d32de8011b4f4890c22e1b0ff4235e",
+      "translationSHA256": "be140fca8d99392d36607f990862c056a1d32de8011b4f4890c22e1b0ff4235e",
+      "preservationReason": "Luau is the canonical Czech festival name and intentionally remains identical to the source proper name.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "conditions",
+      "field": null,
+      "source": "Beach/900 1400",
+      "translation": "Beach/900 1400",
+      "sourceSHA256": "7ec93e2a56e2b5860a3df9d9e78cb5dd8c1551c392c9ba3339713cb4b0388967",
+      "translationSHA256": "7ec93e2a56e2b5860a3df9d9e78cb5dd8c1551c392c9ba3339713cb4b0388967",
+      "preservationReason": "Technical festival location and time condition; no translatable text.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "set-up",
+      "field": null,
+      "source": "event2/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Luau/viewport -1000 -1000/loadActors Set-Up/addTemporaryActor Governor 16 32 32 4 2/advancedMove Vincent true 3 0 3 3000 -3 0 3 3000/advancedMove Jas true 3 0 1 3000 -3 0 1 3000/advancedMove Pam true 4 25000 -5 0 4 20000 5 0/advancedMove Gus True 0 -1 3 4000 0 1 3 4000/advancedMove Shane true 1 10000 0 1 1 10000 0 -1/advancedMove Clint true 4 15000 -3 0 4 15000 6 0 4 10000 -3 0/animate Emily false true 250 16 17 16 17 20 21 20 21 18 19 18 19 22 23 22 23/animate Robin false true 500 20 21 20 22/animate Demetrius false true 500 24 25 24 26/animate Marnie false true 200 17 18 17 19/positionOffset Marnie 0 16/viewport player clamp true unfreeze/globalFadeToClear/playerControl luau",
+      "translation": "event2/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Luau/viewport -1000 -1000/loadActors Set-Up/addTemporaryActor Governor 16 32 32 4 2/advancedMove Vincent true 3 0 3 3000 -3 0 3 3000/advancedMove Jas true 3 0 1 3000 -3 0 1 3000/advancedMove Pam true 4 25000 -5 0 4 20000 5 0/advancedMove Gus True 0 -1 3 4000 0 1 3 4000/advancedMove Shane true 1 10000 0 1 1 10000 0 -1/advancedMove Clint true 4 15000 -3 0 4 15000 6 0 4 10000 -3 0/animate Emily false true 250 16 17 16 17 20 21 20 21 18 19 18 19 22 23 22 23/animate Robin false true 500 20 21 20 22/animate Demetrius false true 500 24 25 24 26/animate Marnie false true 200 17 18 17 19/positionOffset Marnie 0 16/viewport player clamp true unfreeze/globalFadeToClear/playerControl luau",
+      "sourceSHA256": "0b37eedd0b5454b59171d050b1b51b8ce530e26ec96d3fbea183343e61b705ba",
+      "translationSHA256": "0b37eedd0b5454b59171d050b1b51b8ce530e26ec96d3fbea183343e61b705ba",
+      "preservationReason": "Technical first-year festival setup command stream; map, actor, movement, animation, and control identifiers must remain exact.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "mainEvent",
+      "field": null,
+      "source": "pause 500/playMusic ocean/globalFade/viewport -1000 -1000/loadActors MainEvent/addTemporaryActor Governor 16 32 35 10 2/warpFarmers 33 19 0 32 19 0 40 19 0 28 9 1 42 9 3 37 19 0 38 19 0 34 19 0 right 36 6 2/viewport 35 12 true/pause 2000/faceDirection Lewis 3/pause 100/faceDirection Lewis 2/pause 100/faceDirection Lewis 1/pause 100/faceDirection Lewis 2/speak Lewis \"Well folks, it's time once again for the potluck ceremony.#$b#I trust that you all put high-quality ingredients in the pot this year. We don't want the governor to regret his visit to the valley!\"/pause 1000/faceDirection Lewis 3/pause 500/speak Lewis \"Well... Governor? Would you do us the honor of tasting the soup?\"/pause 500/speak Governor \"Of course! I've been looking forward to this all year.\"/playMusic none/pause 500/move Governor 0 1 2/pause 1000/playSound dwop/showFrame Governor 8 true/pause 1000/animate Governor false false 200 8 8 9 10 11 11/pause 1100/playSound sipTea/pause 1000/playSound gulp/pause 500/showFrame Governor 8 true/animate Governor false false 200 11 10 9 8/pause 900/speak Governor \"...$h\"/pause 300/cutscene governorTaste/null",
+      "translation": "pause 500/playMusic ocean/globalFade/viewport -1000 -1000/loadActors MainEvent/addTemporaryActor Governor 16 32 35 10 2/warpFarmers 33 19 0 32 19 0 40 19 0 28 9 1 42 9 3 37 19 0 38 19 0 34 19 0 right 36 6 2/viewport 35 12 true/pause 2000/faceDirection Lewis 3/pause 100/faceDirection Lewis 2/pause 100/faceDirection Lewis 1/pause 100/faceDirection Lewis 2/speak Lewis \"Tak přátelé, opět nastal čas obřadu společné hostiny.#$b#Věřím, že letos všichni dali do hrnce kvalitní suroviny. Nechceme, aby guvernér litoval návštěvy údolí!\"/pause 1000/faceDirection Lewis 3/pause 500/speak Lewis \"Nuže... pane guvernére? Prokážete nám čest a ochutnáte polévku?\"/pause 500/speak Governor \"Samozřejmě! Těším se na to celý rok.\"/playMusic none/pause 500/move Governor 0 1 2/pause 1000/playSound dwop/showFrame Governor 8 true/pause 1000/animate Governor false false 200 8 8 9 10 11 11/pause 1100/playSound sipTea/pause 1000/playSound gulp/pause 500/showFrame Governor 8 true/animate Governor false false 200 11 10 9 8/pause 900/speak Governor \"...$h\"/pause 300/cutscene governorTaste/null",
+      "sourceSHA256": "91195a4d56666344d574f743fbf6132f087cbeec6b9f77c0f27b2a3812f6091f",
+      "translationSHA256": "cd466baf854ab5671bb9724df37b1e0b0e60ce250ee9577486229bbe218e0185",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "governorReaction6",
+      "field": null,
+      "source": "pause 1000/playMusic ocean/speak Governor \"Hmm... It's a bit tangy... but actually, the flavor is quite good!\"/pause 600/emote Governor 8/speak Governor \"Just one minute... there's something in my bowl... what's this?$2\"/pause 500/showFrame Governor 14/playSound slimeHit/jump Governor/pause 500/showFrame Lewis 24/jump Lewis/textAboveHead Lewis \"Whaaaat?!\"/showFrame Emily 26/pause 1000/showFrame Marnie 16/jump Marnie/textAboveHead Marnie \"*gasp*\"/pause 1000/shake Governor 2000/emote Governor 12/pause 500/showFrame Emily 4/showFrame Marnie 8/speak Governor \"This... This is outrageous!$1#$b#I've never been so insulted in all my life!$1\"/pause 600/showFrame Governor 13/playSound throw/specificTemporarySprite luauShorts/pause 500/jump Lewis/pause 1000/speak Governor \"Blech... my tongue is swelling up... I think I'm going to be sick.$u\"/pause 400/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/playSound slimedead/faceDirection Lewis 2/viewport Lewis clamp true/pause 1000/speak Lewis \"Whoever took part in this appalling act is truly reprehensible. Using my very private item for this sick purpose!$4#$b#And to ruin a perfectly good soup... unforgivable! I've never been more ashamed of this community... Truly disgusting.$4\"/pause 500/faceDirection Lewis 0/emote Lewis 12/speak Lewis \"Go home, the festival is over.$s\"/pause 500/globalFade/viewport -1000 -1000/message \"I guess the 'little prank' didn't go over too well...\"/pause 500/message \"Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 1000/playMusic ocean/speak Governor \"Hmm... Je trochu nakyslá... ale ve skutečnosti chutná velmi dobře!\"/pause 600/emote Governor 8/speak Governor \"Moment... něco mám v misce... co je tohle?$2\"/pause 500/showFrame Governor 14/playSound slimeHit/jump Governor/pause 500/showFrame Lewis 24/jump Lewis/textAboveHead Lewis \"Cožééé?!\"/showFrame Emily 26/pause 1000/showFrame Marnie 16/jump Marnie/textAboveHead Marnie \"*zalapání po dechu*\"/pause 1000/shake Governor 2000/emote Governor 12/pause 500/showFrame Emily 4/showFrame Marnie 8/speak Governor \"Tohle... Tohle je nehoráznost!$1#$b#Nikdy v životě mě nikdo tak neurazil!$1\"/pause 600/showFrame Governor 13/playSound throw/specificTemporarySprite luauShorts/pause 500/jump Lewis/pause 1000/speak Governor \"Ble... otéká mi jazyk... Myslím, že budu zvracet.$u\"/pause 400/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/playSound slimedead/faceDirection Lewis 2/viewport Lewis clamp true/pause 1000/speak Lewis \"Kdokoli se podílel na tomto otřesném činu, zaslouží si opovržení. Použít můj velmi soukromý předmět k tak zvrácenému účelu!$4#$b#A zkazit dokonale dobrou polévku... neodpustitelné! Nikdy jsem se za tuto komunitu nestyděl víc... Opravdu odporné.$4\"/pause 500/faceDirection Lewis 0/emote Lewis 12/speak Lewis \"Jděte domů, festival skončil.$s\"/pause 500/globalFade/viewport -1000 -1000/message \"Zdá se, že ten „malý žertík“ příliš dobře nedopadl...\"/pause 500/message \"Čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "e9d955eab3c725698a6a512554c805da139da465f6c1fb72a6575c1dc5063c12",
+      "translationSHA256": "2a22b887afcc7aa918b8398f6d71b281b04708d82abad02ba6c7fec0c9dc89b6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "governorReaction5",
+      "field": null,
+      "source": "emote Governor 40/pause 400/speak Governor \"Hmmm... Well it's not bad, but it's missing something...$s#$b#Did everyone in town contribute an ingredient to the soup? I feel like it's missing someone's unique voice.\"/showFrame Governor 0/pause 400/showFrame Lewis 18/emote Lewis 28/pause 600/showFrame Lewis 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"You're right... It's a little bland.$s\"/pause 1000/speak Lewis \"Well, thanks for joining us this year, Governor. Sorry the soup wasn't anything special.\"/pause 500/faceDirection Lewis 2/speak Lewis \"Now... who else wants some soup?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"The soup was bland, but the luau was still fun!\"/pause 500/message \"Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "emote Governor 40/pause 400/speak Governor \"Hmmm... Není špatná, ale něco jí chybí...$s#$b#Přidal do polévky surovinu opravdu každý ve městě? Připadá mi, že v ní chybí něčí jedinečný rukopis.\"/showFrame Governor 0/pause 400/showFrame Lewis 18/emote Lewis 28/pause 600/showFrame Lewis 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"Máte pravdu... Je trochu mdlá.$s\"/pause 1000/speak Lewis \"Nuže, děkujeme, že jste se k nám letos připojil, pane guvernére. Omlouvám se, že polévka nebyla ničím výjimečná.\"/pause 500/faceDirection Lewis 2/speak Lewis \"Tak... kdo další chce trochu polévky?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"Polévka byla mdlá, ale Festival Luau byl i tak zábavný!\"/pause 500/message \"Čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "eb984a5e85aa9fa041a4c32d40582937dbb6b667dfaa1fb8af4f02dd63d42626",
+      "translationSHA256": "5c62aeb4a93e1d3acbc7539eb361ed3f6e6ead34aae2b8271e2d4a40eed313ff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "governorReaction4",
+      "field": null,
+      "source": "emote Governor 16/pause 600/shake Governor 1000/jump Governor/pause 800/playMusic SettlingIn/speak Governor \"Oh my... that's the best soup I've ever tasted!$h\"/shake Governor 5000/animate Governor false true 100 9 10 11 11 10/pause 800/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"You're right... It's delicious!$h\"/pause 500/faceDirection Lewis 2/speak Lewis \"Wonderful job, everyone! Now... who else wants a taste?$h\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"The Governor wasn't kidding... the soup was out of this world!\"/pause 500/message \"Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "emote Governor 16/pause 600/shake Governor 1000/jump Governor/pause 800/playMusic SettlingIn/speak Governor \"Propána... to je nejlepší polévka, jakou jsem kdy ochutnal!$h\"/shake Governor 5000/animate Governor false true 100 9 10 11 11 10/pause 800/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"Máte pravdu... Je vynikající!$h\"/pause 500/faceDirection Lewis 2/speak Lewis \"Skvělá práce, všichni! Tak... kdo další chce ochutnat?$h\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"Guvernér nežertoval... ta polévka byla nadpozemská!\"/pause 500/message \"Čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "ce5d1e1884a8ecbca1a06642f827b84f47a18c5b635a141bf4a94ff60c16b6a5",
+      "translationSHA256": "e3d5f30b1f5d5f82be1b58f710f7a72d05dd9228ca1f5fd9521170b23ada4404",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "governorReaction3",
+      "field": null,
+      "source": "emote Governor 32/pause 400/playMusic jaunty/speak Governor \"Ah... that's a very pleasant soup. The produce from this valley never disappoints!\"/showFrame Governor 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"Mmm... tasty. You all did very well today.\"/pause 500/faceDirection Lewis 2/speak Lewis \"Now... who else wants some soup?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"The Luau was a success! Good thing I brought something tasty for the soup.\"/pause 500/message \"Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "emote Governor 32/pause 400/playMusic jaunty/speak Governor \"Ach... to je velmi příjemná polévka. Plodiny z tohoto údolí nikdy nezklamou!\"/showFrame Governor 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"Mmm... chutné. Dnes jste si všichni vedli velmi dobře.\"/pause 500/faceDirection Lewis 2/speak Lewis \"Tak... kdo další chce trochu polévky?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"Festival Luau se vydařil! Ještě že můj příspěvek do polévky byl chutný.\"/pause 500/message \"Čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "ebc272629df57630c774abf696b2c44eebaca45837dd41047eb97af617453a48",
+      "translationSHA256": "c3e0a4e84d489bda6b4ad869b6587115a5e641447d017123f67789f09aab0873",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "governorReaction2",
+      "field": null,
+      "source": "pause 400/playMusic ocean/speak Governor \"Hmm... I don't have much to say about this. It's an average soup.\"/showFrame Governor 0/pause 400/showFrame Lewis 18/emote Lewis 28/pause 600/showFrame Lewis 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"He's right... It's nothing special. Not bad, though.\"/pause 500/faceDirection Lewis 2/speak Lewis \"Well... who else wants some soup?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"The soup was just average, but otherwise the Luau was a success!\"/pause 500/message \"Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 400/playMusic ocean/speak Governor \"Hmm... K tomu nemám moc co říct. Je to průměrná polévka.\"/showFrame Governor 0/pause 400/showFrame Lewis 18/emote Lewis 28/pause 600/showFrame Lewis 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"Má pravdu... Není ničím výjimečná. Ale špatná také není.\"/pause 500/faceDirection Lewis 2/speak Lewis \"Nuže... kdo další chce trochu polévky?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"Polévka byla jen průměrná, ale jinak se Festival Luau vydařil!\"/pause 500/message \"Čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "d7ff2459190c9cc6f71816bdb240e2a287c03b9abe443b8e7a614e63d79d89b9",
+      "translationSHA256": "ad80e035bac913066e9ea391c98be35a23c92187a69e6ed2e3da99f08df28e5b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "governorReaction1",
+      "field": null,
+      "source": "emote Governor 28/pause 400/playMusic ocean/speak Governor \"Um... It's actually kind of disgusting. I think I'll pass on the soup this year.$s\"/showFrame Governor 0/pause 400/showFrame Lewis 18/emote Lewis 28/pause 600/showFrame Lewis 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"Yuck. Someone must have ruined it with a poor-quality ingredient.$s\"/pause 500/faceDirection Lewis 2/speak Lewis \"Well... does anyone want any?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"The soup wasn't very good, but otherwise the Luau was a success!\"/pause 500/message \"Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "emote Governor 28/pause 400/playMusic ocean/speak Governor \"Ehm... Popravdě je docela odporná. Myslím, že letos polévku vynechám.$s\"/showFrame Governor 0/pause 400/showFrame Lewis 18/emote Lewis 28/pause 600/showFrame Lewis 0/pause 400/move Lewis 2 0 2/move Lewis 0 2 3/pause 500/animate Lewis false false 200 19 19 22 23 23 22 23 23 22 19 19/pause 800/playSound gulp/pause 600/playSound gulp/pause 1000/speak Lewis \"Fuj. Někdo ji musel zkazit nekvalitní surovinou.$s\"/pause 500/faceDirection Lewis 2/speak Lewis \"Nuže... dá si někdo?\"/faceDirection Marnie 0 true/moveToSoup/pause 1000/globalFade/viewport -1000 -1000/pause 300/message \"Polévka nebyla moc dobrá, ale jinak se Festival Luau vydařil!\"/pause 500/message \"Čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "efed9ff5bbd80337c628147105a9612a0599e89872de7867308c7df88689154d",
+      "translationSHA256": "83dc12cebeb60903713137abdd27d94061dcc38599896cd9c8f01b6a40dee7d8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "governorReaction0",
+      "field": null,
+      "source": "pause 500/showFrame Governor 13/pause 500/shake Governor 2000/emote Governor 12/pause 500/speak Governor \"Blech! This is vile! I think I'm going to be sick... $u\"/showFrame Governor 13/jump Lewis/pause 800/speak Governor \"I need to lie down...$u\"/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/playSound slimedead/faceDirection Lewis 2/viewport 35 12 true/pause 1000/speak Lewis \"Good going, people... Whoever put that foul ingredient in the soup made the Governor pass out! I'm ashamed.$4\"/pause 500/faceDirection Lewis 0/emote Lewis 12/speak Lewis \"Go home, the festival is over.$s\"/pause 500/globalFade/viewport -1000 -1000/message \"What a disaster...\"/pause 500/message \"Time to head home.\"/waitForOtherPlayers festivalEnd/end",
+      "translation": "pause 500/showFrame Governor 13/pause 500/shake Governor 2000/emote Governor 12/pause 500/speak Governor \"Ble! Tohle je hnus! Myslím, že budu zvracet...$u\"/showFrame Governor 13/jump Lewis/pause 800/speak Governor \"Musím si lehnout...$u\"/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/playSound slimedead/faceDirection Lewis 2/viewport 35 12 true/pause 1000/speak Lewis \"To se vám povedlo... Kvůli tomu, kdo dal do polévky tu odpornou surovinu, guvernér omdlel! Stydím se.$4\"/pause 500/faceDirection Lewis 0/emote Lewis 12/speak Lewis \"Jděte domů, festival skončil.$s\"/pause 500/globalFade/viewport -1000 -1000/message \"To je ale pohroma...\"/pause 500/message \"Čas vyrazit domů.\"/waitForOtherPlayers festivalEnd/end",
+      "sourceSHA256": "079bac4396e480154305172f2074e82136bc7f4f5be54365f4832e5c3560f16c",
+      "translationSHA256": "e80941c1a6671e0085c532448ea1da8a26ef4c414168ac88623194c1a93f31f1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "set-up_y2",
+      "field": null,
+      "source": "event2/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Luau2/viewport -1000 -1000/loadActors Set-Up/addTemporaryActor Governor 16 32 27 4 2/animate Wizard false true 100 20/positionOffset Governor -8 0/advancedMove Harvey true 2 380 1 500 2 380 3 500/advancedMove Gus true 1 5300 4 300 0 -2 4 300 1 7500 2 300 0 2 2 300 1 1000/animate Emily false true 250 16 17 16 17 20 21 20 21 18 19 18 19 22 23 22 23/advancedMove Abigail true 4 6250 1 300 3 0 1 250 4 4500 3 300 -3 0 3 250 4 1250/advancedMove Caroline true 4 2500 1 350 2 0 1 300 4 8500 3 300 -2 0 3 250 4 1500/advancedMove Clint true 1 7000 2 300 0 2 3 0 0 -3 4 300 3 6500 2 300 0 3 -3 0 0 -2 4 300 1 1000/advancedMove Pam true 3 7500 2 300 0 4 -5 0 3 300 2 5250 1 300 5 0 0 -4 4 300 3 800/advancedMove Leo true 2 4000 2 0 2 5000 4 0 2 4500 -4 0 2 5000 -2 0 2 1000/advancedMove Linus true 4 4000 2 0 0 -1 3 5000 0 -2 -1 0 2 3000 -2 0 0 1 1 4000 0 2 1 0 4 1000/advancedMove Elliott true 2 7300 3 2300/animate Willy true true 250 28 29 30 31/animate Robin false true 500 20 21 20 22/animate Demetrius false true 500 24 25 24 26/animate Marnie false true 200 17 18 17 19/positionOffset Marnie 0 16/positionOffset Leah 0 -12/positionOffset Elliott -8 -12/positionOffset Evelyn -8 8/positionOffset George 12 8/positionOffset Kent? -30 -8/positionOffset Jodi -10 -12/positionOffset Marlon -20 -12/animate Maru false true 100 31/positionOffset Maru 12 24/positionOffset Emily 16 -16/positionOffset Penny -8 16/viewport player clamp true unfreeze/globalFadeToClear/playerControl luau",
+      "translation": "event2/-1000 -1000/farmer 38 3 2/changeToTemporaryMap Beach-Luau2/viewport -1000 -1000/loadActors Set-Up/addTemporaryActor Governor 16 32 27 4 2/animate Wizard false true 100 20/positionOffset Governor -8 0/advancedMove Harvey true 2 380 1 500 2 380 3 500/advancedMove Gus true 1 5300 4 300 0 -2 4 300 1 7500 2 300 0 2 2 300 1 1000/animate Emily false true 250 16 17 16 17 20 21 20 21 18 19 18 19 22 23 22 23/advancedMove Abigail true 4 6250 1 300 3 0 1 250 4 4500 3 300 -3 0 3 250 4 1250/advancedMove Caroline true 4 2500 1 350 2 0 1 300 4 8500 3 300 -2 0 3 250 4 1500/advancedMove Clint true 1 7000 2 300 0 2 3 0 0 -3 4 300 3 6500 2 300 0 3 -3 0 0 -2 4 300 1 1000/advancedMove Pam true 3 7500 2 300 0 4 -5 0 3 300 2 5250 1 300 5 0 0 -4 4 300 3 800/advancedMove Leo true 2 4000 2 0 2 5000 4 0 2 4500 -4 0 2 5000 -2 0 2 1000/advancedMove Linus true 4 4000 2 0 0 -1 3 5000 0 -2 -1 0 2 3000 -2 0 0 1 1 4000 0 2 1 0 4 1000/advancedMove Elliott true 2 7300 3 2300/animate Willy true true 250 28 29 30 31/animate Robin false true 500 20 21 20 22/animate Demetrius false true 500 24 25 24 26/animate Marnie false true 200 17 18 17 19/positionOffset Marnie 0 16/positionOffset Leah 0 -12/positionOffset Elliott -8 -12/positionOffset Evelyn -8 8/positionOffset George 12 8/positionOffset Kent? -30 -8/positionOffset Jodi -10 -12/positionOffset Marlon -20 -12/animate Maru false true 100 31/positionOffset Maru 12 24/positionOffset Emily 16 -16/positionOffset Penny -8 16/viewport player clamp true unfreeze/globalFadeToClear/playerControl luau",
+      "sourceSHA256": "bb94a87abfaafff5f8eb69457ddccd176ba6e26212ee0b8ff619afd5dd9642c2",
+      "translationSHA256": "bb94a87abfaafff5f8eb69457ddccd176ba6e26212ee0b8ff619afd5dd9642c2",
+      "preservationReason": "Technical second-year festival setup command stream; map, actor, movement, animation, and control identifiers must remain exact.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Festivals/summer11",
+      "key": "mainEvent_y2",
+      "field": null,
+      "source": "pause 500/playMusic ocean/globalFade/viewport -1000 -1000/loadActors MainEvent/addTemporaryActor Governor 16 32 24 9 2/warpFarmers 24 18 0 28 18 0 32 15 3 26 19 0 20 19 0 15 10 1 15 13 1 34 11 3 right 29 5 2/showFrame Maru 31/showFrame Penny 34/positionOffset Maru 8 24/positionOffset Penny 0 24/positionOffset Jodi 0 16/positionOffset Kent? 8 16/positionOffset Clint 0 -24/positionOffset Haley -8 12/viewport 24 11 true/pause 2000/faceDirection Lewis 3/pause 100/faceDirection Lewis 2/pause 100/faceDirection Lewis 1/pause 100/faceDirection Lewis 2/speak Lewis \"Hello and welcome, everyone! I'm pleased to announce that the potluck ceremony has begun.#$b#I have high hopes that you all contributed high-quality ingredients! We want to leave the governor with a good impression, now.\"/pause 1000/faceDirection Lewis 3/pause 500/speak Lewis \"Well... Governor? Would you indulge us with an honorary first tasting?\"/pause 500/speak Governor \"I would be delighted! I've been eyeing the soup all afternoon.\"/playMusic none/pause 500/move Governor 0 1 2/pause 1000/playSound dwop/showFrame Governor 8 true/pause 1000/animate Governor false false 200 8 8 9 10 11 11/pause 1100/playSound sipTea/pause 1000/playSound gulp/pause 500/showFrame Governor 8 true/animate Governor false false 200 11 10 9 8/pause 900/speak Governor \"...$h\"/pause 300/cutscene governorTaste/null",
+      "translation": "pause 500/playMusic ocean/globalFade/viewport -1000 -1000/loadActors MainEvent/addTemporaryActor Governor 16 32 24 9 2/warpFarmers 24 18 0 28 18 0 32 15 3 26 19 0 20 19 0 15 10 1 15 13 1 34 11 3 right 29 5 2/showFrame Maru 31/showFrame Penny 34/positionOffset Maru 8 24/positionOffset Penny 0 24/positionOffset Jodi 0 16/positionOffset Kent? 8 16/positionOffset Clint 0 -24/positionOffset Haley -8 12/viewport 24 11 true/pause 2000/faceDirection Lewis 3/pause 100/faceDirection Lewis 2/pause 100/faceDirection Lewis 1/pause 100/faceDirection Lewis 2/speak Lewis \"Dobrý den a vítejte všichni! S radostí oznamuji, že obřad společné hostiny začal.#$b#Pevně doufám, že jste všichni přispěli kvalitními surovinami! Chceme přece na guvernéra udělat dobrý dojem.\"/pause 1000/faceDirection Lewis 3/pause 500/speak Lewis \"Nuže... pane guvernére? Poctíte nás slavnostní první ochutnávkou?\"/pause 500/speak Governor \"S radostí! Na polévku se těším celé odpoledne.\"/playMusic none/pause 500/move Governor 0 1 2/pause 1000/playSound dwop/showFrame Governor 8 true/pause 1000/animate Governor false false 200 8 8 9 10 11 11/pause 1100/playSound sipTea/pause 1000/playSound gulp/pause 500/showFrame Governor 8 true/animate Governor false false 200 11 10 9 8/pause 900/speak Governor \"...$h\"/pause 300/cutscene governorTaste/null",
+      "sourceSHA256": "5d5d136e2bfcd29fabdd1848ef4b515824d1c36ef67042341704bf2a590a1ce3",
+      "translationSHA256": "a57194310801df61fa792f143e21813c8e0d118c27c6b0f39a65aa863958d1c1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

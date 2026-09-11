@@ -1,0 +1,47 @@
+{
+  "id": "366-farm-marnie-pets",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all eight visible pet-adoption segments against English; verified Marnie's warm voice, cat/dog-specific Czech gender, %pet placeholder placement, adoption context, grammar and exact catQuestion, animation and event command skeletons.",
+  "rows": [
+    {
+      "target": "Data/Events/Farm",
+      "key": "1590166/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h cat/H",
+      "field": null,
+      "source": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 pet 63 16 2/skippable/faceDirection PetActor 2/pause 500/animate PetActor false false 120 16 17 18 18/pause 480/animate PetActor false true 120 18/pause 2000/speak Marnie \"Hello @!$h#$b#You see this cat here?\"/faceDirection Marnie 3/pause 400/showFrame PetActor 18/playPetSound cat/pause 1200/faceDirection Marnie 0/speak Marnie \"I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing.$s\"/showFrame PetActor 19/pause 500/showFrame PetActor 18/playPetSound cat/shake PetActor 150/pause 1500/speak Marnie \"I think it likes this place! Hey, um.... Don't you think this farm could use a good cat?$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"Well, little %pet... You be a good kitty now... okay?\"/pause 500/showFrame PetActor 19/shake PetActor 100/playPetSound cat/pause 800/animate PetActor false false 120 20 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23/pause 200/globalFade/viewport -1000 -1000/end",
+      "translation": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 pet 63 16 2/skippable/faceDirection PetActor 2/pause 500/animate PetActor false false 120 16 17 18 18/pause 480/animate PetActor false true 120 18/pause 2000/speak Marnie \"Ahoj, @!$h#$b#Vidíš tuhle kočku?\"/faceDirection Marnie 3/pause 400/showFrame PetActor 18/playPetSound cat/pause 1200/faceDirection Marnie 0/speak Marnie \"Našla jsem ji, jak sedí před vchodem na tvou farmu! Myslím, že je toulavá... chudinka.$s\"/showFrame PetActor 19/pause 500/showFrame PetActor 18/playPetSound cat/shake PetActor 150/pause 1500/speak Marnie \"Myslím, že se jí tu líbí! Hej, ehm... Nemyslíš, že by se na farmě hodila hodná kočka?$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"Tak, %pet... Buď teď hodná kočička... ano?\"/pause 500/showFrame PetActor 19/shake PetActor 100/playPetSound cat/pause 800/animate PetActor false false 120 20 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23/pause 200/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "62bc4fb3c7e3759c533967acad1459a5ca1769305665d08490d2be7f89d9482f",
+      "translationSHA256": "ce991cc7ee0984b07d2d6f0f8fb852a60b82280ea6c46d7e3d84b7e00c034bf0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Farm",
+      "key": "897405/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h dog/H",
+      "field": null,
+      "source": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 pet 63 16 2/skippable/faceDirection PetActor 1/pause 500/animate PetActor false false 120 20 21 22 23 23/pause 480/animate PetActor false true 120 23/pause 2000/speak Marnie \"Hello @!$h#$b#You see this dog here?\"/faceDirection Marnie 3/pause 400/showFrame PetActor 26/playPetSound dog_bark/pause 200/showFrame PetActor 23/pause 600/showFrame PetActor 26/playPetSound dog_bark/pause 200/showFrame PetActor 23/pause 1000/animate PetActor false true 200 24 25/playPetSound dog_pant/pause 400/playPetSound dog_pant/pause 400/playPetSound dog_pant/pause 1200/faceDirection Marnie 0/speak Marnie \"I found it sitting outside the entrance to your farm! I think it's a stray... poor thing.$s\"/pause 500/animate PetActor false true 400 23 31/pause 1500/speak Marnie \"Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog?$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"Well,  %pet... You be a good pooch now... okay?\"/pause 500/stopAnimation PetActor/showFrame PetActor 26/playPetSound dog_bark/pause 200/showFrame PetActor 23/pause 1000/globalFade/viewport -1000 -1000/end",
+      "translation": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 pet 63 16 2/skippable/faceDirection PetActor 1/pause 500/animate PetActor false false 120 20 21 22 23 23/pause 480/animate PetActor false true 120 23/pause 2000/speak Marnie \"Ahoj, @!$h#$b#Vidíš tohohle psa?\"/faceDirection Marnie 3/pause 400/showFrame PetActor 26/playPetSound dog_bark/pause 200/showFrame PetActor 23/pause 600/showFrame PetActor 26/playPetSound dog_bark/pause 200/showFrame PetActor 23/pause 1000/animate PetActor false true 200 24 25/playPetSound dog_pant/pause 400/playPetSound dog_pant/pause 400/playPetSound dog_pant/pause 1200/faceDirection Marnie 0/speak Marnie \"Našla jsem ho, jak sedí před vchodem na tvou farmu! Myslím, že je toulavý... chudák.$s\"/pause 500/animate PetActor false true 400 23 31/pause 1500/speak Marnie \"Hej, zdá se, že se mu tu líbí! Hej, ehm... Nemyslíš, že by se na farmě hodil hodný pes?$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"Tak, %pet... Buď teď hodný pejsek... ano?\"/pause 500/stopAnimation PetActor/showFrame PetActor 26/playPetSound dog_bark/pause 200/showFrame PetActor 23/pause 1000/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "30427c975b09bc5504262a21ad6d384a99c81cfb5a4437bf7a11daeff1798508",
+      "translationSHA256": "ee65b2f86d41c7de343eec017e995a01e618999e56be40ed7c498835f38eef40",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

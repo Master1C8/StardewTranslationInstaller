@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/LeahHouse",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "51/f Leah 1000/p Leah": "sadpiano/-1000 -1000/farmer 7 9 0 Leah 13 8 0/skippable/showFrame Leah 20/changeMapTile Front 14 7 1453/viewport 12 8/move farmer 0 -1 1/speak Leah \"Kel... Kolikrát ti to mám říkat? Nechci se vrátit do města!$8#$b#Přestaň mi volat... Už o tobě nechci slyšet! *klik*$8\"/playSound openBox/faceDirection Leah 1/changeMapTile Front 14 7 1454/emote Leah 12/pause 1000/move farmer 4 0 1/faceDirection Leah 3/speak Leah \"@...$6\"/pause 300/emote Leah 28/speak Leah \"Takže ten můj křik do telefonu asi nešel přeslechnout?$s\"/faceDirection Leah 2/move farmer 1 0 1/pause 1000/playMusic desolate/speak Leah \"Byl to člověk, se kterým jsem dřív chodila...$s\"/faceDirection Leah 3/emote farmer 16/pause 600/speak Leah \"Asi bych ti o tom měla něco říct...$u\"/pause 500/faceDirection Leah 2/pause 500/speak Leah \"Kdysi jsme spolu ve městě měli byt.$u#$b#Přes den jsem dělala různé příležitostné práce a celé noci trávila uměleckými projekty... sotva nám to stačilo na přežití.$u#$b#${Pořád mě nutil^Pořád mě nutila}$ vrátit se do školy a studovat ekonomii nebo medicínu... něco, v čem se vydělává hodně peněz.$a#$b#Představa asi byla, že si našetříme na normální život. Víš... dům na předměstí, děti, schůzky rodičů a učitelů... takové věci.$u\"/faceDirection Leah 3/speak Leah \"Na takový život jsem nebyla připravená, @... Musela jsem odejít. Tak jsem přišla sem, abych si splnila sen a stala se umělkyní.\"/pause 900/faceDirection Leah 2/speak Leah \"$q 83 null#Bylo ode mě sobecké, @?$s#$r 83 0 event_parents1#Ne, musela jsi to udělat.#$r 83 0 event_parents2#Ne, a Kel se chová hloupě.#$r 83 -20 event_parents3#Ne, ale ve městě by ses měla lépe.#$r 83 -20 event_parents4#Ano, trochu.#$r 83 -20 event_parents5#Ano, ale je přirozené myslet nejdřív na sebe.\"/faceDirection Leah 3/fork angry/pause 200/fork LeahInternet internet2/fork LeahArtShowSuggestion artShowSuggest/speak Leah \"Díky, že mi nasloucháš. Je dobré mít někoho blízkého.\"/pause 1500/globalFade/viewport -1000 -1000/end dialogueWarpOut Leah \"Hej, ještě jednou díky za trpělivé vyslechnutí.\"",
+        "angry": "emote Leah 12/faceDirection Leah 1/speak Leah \"Promiň... Neměla bych se zlobit.$s\"/emote Leah 40/speak Leah \"Možná máš pravdu... kdybych zůstala, měla bych život mnohem snazší.$u#$b#Možná je lepší být praktická a realistická... třeba se moje umělecká kariéra nikdy nerozjede a poslední roky života strávím v bídě.$s\"/pause 500/faceDirection Leah 3/pause 500/speak Leah \"Díky, že mi nasloucháš. Je dobré mít někoho blízkého.\"/pause 1500/globalFade/viewport -1000 -1000/end warpOut"
+      }
+    }
+  ]
+}

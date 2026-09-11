@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "980559/t 600 1130/w sunny/e 739330/j 27/!Skill Fishing 1": "spring_day_ambient/64 15/farmer 64 16 2 Willy 64 18 0/skippable/pause 1500/speak Willy \"Dobré ráno, ${mladíku^slečno}$!\"/pause 800/speak Willy \"Promiň, že ruším tak brzy, ale, ehm... všiml jsem si, že moc nerybaříš.\"/pause 200/emote farmer 28/pause 200/speak Willy \"Jo... zpočátku může být těžké se do tohohle sportu dostat.\"/pause 400/speak Willy \"Tak mě napadlo, že ti dám pár rad... třeba se díky nim v rybaření trochu otrkáš!\"/pause 500/playMusic distantBanjo/pause 500/speak Willy \"Tak, prut budeš držet takhle, vidíš?...\"/pause 300/fade/viewport -1000 -1000/pause 1000/message \"Willy ti dal krátkou lekci základů rybaření.\"/gainSkill Fishing 1/pause 500/message \"Už teď si věříš víc!\"/pause 400/viewport 64 15 clamp true/pause 1000/speak Willy \"Ještě něco... Chtěl jsem ti dát tohle.#$b#Říká se tomu ‚Tréninkový prut‘. Chytání ryb s ním bude mnohem snazší.#$b#Jen pamatuj, že s ním chytíš pouze běžné ryby. Na začátku je to ale skvělý způsob, jak si zlepšit dovednosti!\"/pause 800/itemAboveHead (T)TrainingRod/pause 3300/awardFestivalPrize (T)TrainingRod/pause 200/pause 500/speak Willy \"Doufám, že dáš rybaření ještě jednu šanci. Jakmile tomu přijdeš na kloub, budeš se skvěle bavit.#$b#Hodně štěstí!$h\"/pause 1000/end"
+      }
+    }
+  ]
+}

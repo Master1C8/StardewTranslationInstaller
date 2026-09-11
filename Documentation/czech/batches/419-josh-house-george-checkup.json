@@ -1,0 +1,28 @@
+{
+  "id": "419-josh-house-george-checkup",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Naturalized Harvey’s recommendation as moderate arm exercise.",
+  "rows": [
+    {
+      "target": "Data/Events/JoshHouse",
+      "key": "56/f Harvey 500/p George",
+      "field": null,
+      "source": "jaunty/16 18/farmer 9 24 0 George 16 18 1 Harvey 15 18 1/skippable/move farmer 0 -4 1/move farmer 1 0 1/speak Harvey \"Okay, George. I want you take a deep breath for me.\"/pause 700/speak Harvey \"Mmhmm... turn around, please.\"/pause 300/faceDirection George 2/faceDirection George 3/speak Harvey \"George, I'll be honest with you. You need to make some changes in your lifestyle if you want to stay healthy.#$b#I'd like you to reduce your sodium intake, and try to get some moderate exercise with your arms.\"/emote George 12/speak George \"Hmmph... I know what's best for me. Who do you think you are, telling me how to live my life?\"/pause 500/speak Harvey \"I'm your doctor, George. That's who I am...#$b#And I went to school for 8 years so I could learn how to help people stay healthy.\"/move farmer 0 -1 1/move farmer 5 0 0/faceDirection Harvey 2 true/faceDirection George 2/speak Harvey \"Oh!#$b#I'm sorry, but you shouldn't be here... these check-ups are supposed to be private.\"/faceDirection farmer 3/speak George \"Not so fast! I'd like to get a second opinion from this young man.^Not so fast! I'd like to get a second opinion from this young lady.\"/faceDirection farmer 1/speak Harvey \"Very well...\"/speak Harvey \"$q 84 null#@, what do you think George should do?#$r 84 40 event_george1 friend_George_-20#George should follow Dr. Harvey's advice.#$r 84 40 event_george1 friend_George_-20#George knows what's best for his own body.\"/faceDirection Harvey 1/faceDirection George 2/emote George 28/speak George \"Fine. I'll do what you say, doctor.\"/pause 500/faceDirection Harvey 2/speak Harvey \"$p 84#Thanks for your help, @. I appreciate it.$h|It's better not to give my patients mixed messages, @. Please remember that in the future.\"/end",
+      "translation": "jaunty/16 18/farmer 9 24 0 George 16 18 1 Harvey 15 18 1/skippable/move farmer 0 -4 1/move farmer 1 0 1/speak Harvey \"Dobře, Georgi. Zhluboka se nadechni.\"/pause 700/speak Harvey \"Mhm... otoč se prosím.\"/pause 300/faceDirection George 2/faceDirection George 3/speak Harvey \"Georgi, budu k tobě upřímný. Jestli chceš zůstat zdravý, musíš trochu změnit svůj životní styl.#$b#Chtěl bych, abys omezil příjem sodíku a zařadil mírné cvičení paží.\"/emote George 12/speak George \"Hmpf... Sám nejlíp vím, co je pro mě dobré. Kdo si myslíš, že jsi, když mi říkáš, jak mám žít?\"/pause 500/speak Harvey \"Jsem tvůj lékař, Georgi. Proto ti to říkám...#$b#A osm let jsem studoval, abych se naučil pomáhat lidem zůstat zdraví.\"/move farmer 0 -1 1/move farmer 5 0 0/faceDirection Harvey 2 true/faceDirection George 2/speak Harvey \"Ach!#$b#Promiň, ale tohle je soukromá prohlídka... neměl by tu být nikdo další.\"/faceDirection farmer 3/speak George \"Tak moment! Chtěl bych slyšet i názor tohohle mladíka.^Tak moment! Chtěl bych slyšet i názor téhle mladé dámy.\"/faceDirection farmer 1/speak Harvey \"Dobrá...\"/speak Harvey \"$q 84 null#@, co by podle tebe měl George udělat?#$r 84 40 event_george1 friend_George_-20#George by se měl řídit radou doktora Harveyho.#$r 84 40 event_george1 friend_George_-20#George sám nejlépe ví, co jeho tělo potřebuje.\"/faceDirection Harvey 1/faceDirection George 2/emote George 28/speak George \"Dobře. Udělám, co říkáte, doktore.\"/pause 500/faceDirection Harvey 2/speak Harvey \"$p 84#Díky za pomoc, @. Vážím si toho.$h|Není dobré dávat mým pacientům protichůdné rady, @. Příště na to prosím pamatuj.\"/end",
+      "sourceSHA256": "efc8ab0b6661d743702453d80cf305b35ff05646be8fc96c8b108274f8dae30f",
+      "translationSHA256": "ec0a72ab467d9172d915696dbcd50feb3f78f47794814e500edd29c6875c3b2f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

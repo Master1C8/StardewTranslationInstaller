@@ -1,0 +1,29 @@
+{
+  "id": "677-hidden-character-typed-field",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full EN/CS editorial review completed for every row; meaning, Czech grammar, glossary usage, UI register, placeholders, typed fields, and the documented source-equal concealment marker are correct.",
+  "rows": [
+    {
+      "target": "Data/Characters",
+      "key": "???",
+      "field": "DisplayName",
+      "source": "???",
+      "translation": "???",
+      "sourceSHA256": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615",
+      "translationSHA256": "a03b221c6c6eae7122ca51695d456d5222e524889136394944b2f9763b483615",
+      "preservationReason": "The question marks intentionally conceal this character's identity and are language-neutral UI punctuation.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

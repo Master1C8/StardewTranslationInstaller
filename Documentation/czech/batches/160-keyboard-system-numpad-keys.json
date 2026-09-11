@@ -1,0 +1,373 @@
+{
+  "id": "160-keyboard-system-numpad-keys",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Full 19-entry source/Czech reread completed; system and numeric-keypad functions were translated clearly, while Insert, Delete, and NumLock retain their physical keyboard labels. Left/right Windows distinctions and Scroll Lock semantics verified.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Select",
+      "field": null,
+      "source": "Select",
+      "translation": "Vybrat",
+      "sourceSHA256": "2a78025de6aae5e7ff88e5a951bb3a78ddd67388913529cf9e2dd9653e62b02d",
+      "translationSHA256": "8fb522043bf7bcea54620c49eca08edaccc4cd7378dd2c7a544a60e7fe08e1b5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Print",
+      "field": null,
+      "source": "Print",
+      "translation": "Tisk",
+      "sourceSHA256": "df0fe79898ef413ea686b3c25368cff678815b14862c796aa366ca40bdb547c7",
+      "translationSHA256": "cf6a081acafddc832008cb218652e1ce93fc9657280f3df7c9e9ef640fda1a67",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Execute",
+      "field": null,
+      "source": "Execute",
+      "translation": "Provést",
+      "sourceSHA256": "e3a67d9540e9a204f7dc4aa9d44a0ec652856cfa932a21196bf9df23aa0e4cd1",
+      "translationSHA256": "89478eb2c058b8887cc4c1dce2a77b887a1cd1c296e2eff78c74635c18bc294e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Insert",
+      "field": null,
+      "source": "Insert",
+      "translation": "Insert",
+      "sourceSHA256": "8aa318eb7eaa233aada0d332bec14cb6a631c8fda25deb2c7d4f402888f1b1e2",
+      "translationSHA256": "8aa318eb7eaa233aada0d332bec14cb6a631c8fda25deb2c7d4f402888f1b1e2",
+      "preservationReason": "Insert is the standard physical key label used on Czech keyboards.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Delete",
+      "field": null,
+      "source": "Delete",
+      "translation": "Delete",
+      "sourceSHA256": "e2d0a54968ead24efc0dffa6ac78fc606dceec34a0f586177a74a54cc2272cf8",
+      "translationSHA256": "e2d0a54968ead24efc0dffa6ac78fc606dceec34a0f586177a74a54cc2272cf8",
+      "preservationReason": "Delete is the standard physical key label used on Czech keyboards.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Help",
+      "field": null,
+      "source": "Help",
+      "translation": "Nápověda",
+      "sourceSHA256": "b79cac926e0b2e347e72cc91d5174037c9e17ae7733fd7bdb570f71b10cd7bfc",
+      "translationSHA256": "249ae863e9638ddc5c6da4048b0bf87f32ec8ca024d1ecd24d5488f952d0d614",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "PrintScreen",
+      "field": null,
+      "source": "PrintScreen",
+      "translation": "Print Screen",
+      "sourceSHA256": "dcb7fa3eadb36ec3505c6e1fdff1d87a801970269bb2d9ca28356a78181c5281",
+      "translationSHA256": "7c1e1c50bf76612ceb86212df06657e2642137a3bb9c1ce615f9394e09221851",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "LeftWindows",
+      "field": null,
+      "source": "LeftWindows",
+      "translation": "Levá klávesa Windows",
+      "sourceSHA256": "476fcbb4d99075304b1be0871c8849760647af5e8f45f9404a5a54d7157a23c9",
+      "translationSHA256": "1b752bfc564e78839e93f80b8709828090381aa7267b2327e03f367d4a9ddb6f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "RightWindows",
+      "field": null,
+      "source": "RightWindows",
+      "translation": "Pravá klávesa Windows",
+      "sourceSHA256": "ccbf494926019e5aa7afb85e9455b36a323d72151775f9575be03170a97e4ad9",
+      "translationSHA256": "d15bcfea00c3a663ba886e1a294bdde42fe6b10c061bf0909f6982f1c11197d5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Apps",
+      "field": null,
+      "source": "Apps",
+      "translation": "Nabídka aplikací",
+      "sourceSHA256": "89dd748442c194857825848e1500abbbc5f52fb067ad27fb05dc9fb23eebba3b",
+      "translationSHA256": "db87c0ea64ec897aced248adc0179843c027fd7b77c177ae55002a7b9d4fe970",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Sleep",
+      "field": null,
+      "source": "Sleep",
+      "translation": "Režim spánku",
+      "sourceSHA256": "d466bcf52eb6921b1e747e51bf2cc1441926455ba146ecc477bed1574e44f9c0",
+      "translationSHA256": "75d864e331db483c2825462b1d10e83c28a186dbfe1d90c6b488c256296f6978",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Multiply",
+      "field": null,
+      "source": "Multiply",
+      "translation": "Násobit",
+      "sourceSHA256": "33bcea6384893df24be86e47c484400d57c5c0b3f1a6c8a9219d8a659d5ae844",
+      "translationSHA256": "006b1774ea3cee0c1ed35e201b5c90e477b5630546f2a55fbed8d3a5ba1488d2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Add",
+      "field": null,
+      "source": "Add",
+      "translation": "Sčítat",
+      "sourceSHA256": "9fd728c66c9a256b121472dabf32a34317aed01d8427d70ec830289cf23a7cc8",
+      "translationSHA256": "e353feefa767dd06e3fbee83c4f60c4f150da1bd2ec487c5e34bc9fc767fa687",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Separator",
+      "field": null,
+      "source": "Separator",
+      "translation": "Oddělovač",
+      "sourceSHA256": "be237eda7fff4fd3596647c9665e5ec5f502602c74167b939b587a2abcbda156",
+      "translationSHA256": "6e533fb2445a39e9eb08967960cf9e588c7cf6d5a5a2b2d032c5336c94298680",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Subtract",
+      "field": null,
+      "source": "Subtract",
+      "translation": "Odčítat",
+      "sourceSHA256": "63df016f961c5684d4c795008031fd4d9483e23dc827fe95dc385c782038b22b",
+      "translationSHA256": "e8d1d22c1570b0899ec87fda09f82b0984d9885e559f2e95fd24c387c7eed211",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Decimal",
+      "field": null,
+      "source": "Decimal",
+      "translation": "Desetinná čárka",
+      "sourceSHA256": "18517d332d1bb90b830cc1d70de9891d8aaafd7a14cf56c049874310c1fb9fb0",
+      "translationSHA256": "40aa61bebe0b987005f01e7c57feec8ebeb9543409012b54365b034c5d8f3702",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Divide",
+      "field": null,
+      "source": "Divide",
+      "translation": "Dělit",
+      "sourceSHA256": "2972ba5864ffcce707a64d6fab4b4c6c464e19451f63a6120160842d5fe022af",
+      "translationSHA256": "dfb26e127ce3d4b2cdc58a5cd965d1550a6ea60c0b73ec8517de79e64fbe4377",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NumLock",
+      "field": null,
+      "source": "NumLock",
+      "translation": "NumLock",
+      "sourceSHA256": "5746ae843158310abe313731abb28dfda349f4ce700d8693bc871f5f139a2ee9",
+      "translationSHA256": "5746ae843158310abe313731abb28dfda349f4ce700d8693bc871f5f139a2ee9",
+      "preservationReason": "NumLock is the recognizable physical key label and established Czech technical name.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Scroll",
+      "field": null,
+      "source": "Scroll",
+      "translation": "Scroll Lock",
+      "sourceSHA256": "291873e31ccb2289508f7e02cb47ce5e8f62b31a51f07513b407d359a9aaa2c7",
+      "translationSHA256": "1b686428404673543310d412c5ed314ffb084bfd40c9c4585a3fe10a6fe666ee",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

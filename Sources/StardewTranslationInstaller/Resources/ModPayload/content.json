@@ -211,6 +211,17 @@
           "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
           "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
           "NumberComma": " "
+        },
+        "{{ModId}}_Czech": {
+          "ID": "{{ModId}}_Czech",
+          "LanguageCode": "cs-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonCzech",
+          "UseLatinFont": true,
+          "FontPixelZoom": 1,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
         }
       }
     },
@@ -663,6 +674,29 @@
       "Target": "Fonts/SmallFont",
       "TargetLocale": "el-vnrevival",
       "FromFile": "assets/fonts/greek/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonCzech",
+      "FromFile": "assets/button-czech.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "cs-vnrevival",
+      "FromFile": "assets/title/TitleButtons-czech.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "cs-vnrevival",
+      "FromFile": "assets/fonts/czech/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "cs-vnrevival",
+      "FromFile": "assets/fonts/czech/SmallFont.xnb"
     },
     {
       "Action": "Include",
@@ -17595,6 +17629,2714 @@
     {
       "Action": "Include",
       "FromFile": "assets/translations/greek/grammar-load.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/001-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/002-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/003-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/004-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/005-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/006-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/007-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/008-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/009-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/010-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/011-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/012-ui.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/013-ui-help.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/014-tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/015-npc-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/016-buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/017-big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/018-big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/019-big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/020-big-craftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/021-weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/022-weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/023-enchantments.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/024-farm-animals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/025-world-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/026-animation-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/027-movie-concessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/028-pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/029-lexicon-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/030-ui-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/031-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/032-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/033-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/034-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/035-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/036-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/037-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/038-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/039-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/040-movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/041-movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/042-movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/043-movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/044-movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/045-movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/046-movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/047-movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/048-movie-reactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/049-speech-bubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/050-fishing-visitors.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/051-bundle-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/052-quest-return.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/053-shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/054-shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/055-shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/056-shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/057-shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/058-shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/059-library-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/060-library-notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/061-characters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/062-characters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/063-characters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/064-gift-taste-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/065-lexicon-adjectives.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/066-shop-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/067-special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/068-special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/069-special-orders.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/070-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/071-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/072-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/073-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/074-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/075-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/076-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/077-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/078-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/079-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/080-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/081-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/082-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/083-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/084-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/085-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/086-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/087-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/088-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/089-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/090-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/091-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/092-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/093-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/094-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/095-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/096-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/097-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/098-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/099-schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/100-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/101-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/102-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/103-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/104-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/105-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/106-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/107-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/108-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/109-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/110-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/111-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/112-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/113-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/114-locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/115-buffs-recipes-debris.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/116-dialogue-random-adjectives-nouns.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/117-dialogue-random-verbs-places.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/118-dialogue-fallbacks-colors.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/119-event-followups-losses-pet.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/120-elliott-book-followups.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/121-grandpa-evaluations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/122-festival-gifts-games.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/123-fair-results-shane-pets.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/124-welwick-visions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/125-festival-results-farmer-status.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/126-farmer-titles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/127-game-core-messages.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/128-npc-romance-proposals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/129-npc-greetings-loved-gifts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/130-npc-birthdays-low-mood.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/131-npc-family-farm-help.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/132-endearments-options-loading.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/133-wedding-calendar.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/134-music-titles-one.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/135-music-titles-two.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/136-animal-unlocks-diaries-minigame.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/137-junimo-save-map.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/138-options-controls.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/139-animals-quest-shipping.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/140-wallet-social-strength.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/141-title-tutorial-prairie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/142-calico-jack.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/143-grandpa-story.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/144-minigame-items-categories.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/145-object-discoveries-wallet.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/146-television.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/147-wallpaper-fishing-quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/148-item-delivery-requests-one.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/149-item-delivery-requests-two.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/150-item-delivery-requests-three.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/151-item-delivery-requests-four.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/152-item-delivery-completions-wizard.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/153-item-delivery-character-requests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/154-resource-collection-quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/155-slay-monster-quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/156-socialize-terrain-tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/157-fishing-weapons-tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/158-languages-random-sentences.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/159-keyboard-navigation-keys.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/160-keyboard-system-numpad-keys.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/161-keyboard-modifier-media-keys.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/162-keyboard-punctuation-special-keys.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/163-rewards-recovery-krobus-cinema.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/164-cinema-music-trader-furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/165-volcano-shop-buffs-placement.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/166-farm-computer-fishing-channel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/167-island-trader-music-wallet-items.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/168-island-horse-buffs-options.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/169-abigail-introduction-gifts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/170-abigail-memories-relationships-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/171-abigail-resort-romance-weekdays.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/172-abigail-weekdays-afterlife.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/173-abigail-event-responses.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/174-abigail-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/175-abigail-fall-winter.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/176-abigail-festivals-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/177-alex-introduction-eggs-gifts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/178-alex-memories-resort-relationships.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/179-alex-breakup-spring-weekdays.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/180-alex-events-early-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/181-alex-late-summer-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/182-alex-late-fall-winter.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/183-caroline-introduction-memories-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/184-caroline-family-spring.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/185-caroline-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/186-clint-introduction-mines-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/187-clint-work-life.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/188-demetrius-introduction-research-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/189-demetrius-family-science-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/190-demetrius-fall-winter.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/191-dwarf-complete.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/192-elliott-introduction-gifts-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/193-elliott-resort-relationships-spring.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/194-elliott-friendship-events-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/195-elliott-late-summer-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/196-elliott-fall-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/197-emily-introduction-gifts-memories.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/198-emily-resort-relationships-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/199-emily-tailoring-spirituality-early-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/200-emily-summer-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/201-emily-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/202-evelyn-introduction-spring.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/203-evelyn-summer-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/204-evelyn-fall-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/205-george-introduction-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/206-george-friendship-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/207-gus-introduction-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/208-gus-saloon-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/209-haley-introduction-memories.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/210-haley-resort-breakup-spring.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/211-haley-growth-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/212-haley-beach-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/213-haley-late-summer-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/214-haley-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/215-harvey-introduction-relationships.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/216-harvey-resort-weekdays.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/217-harvey-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/218-gil-complete.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/219-jas-introduction-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/220-jas-daily-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/221-jodi-introduction-weekdays.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/222-jodi-family-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/223-kent-return-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/224-kent-home-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/225-krobus-complete.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/226-leah-introduction-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/227-leah-relationships-weekdays.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/228-leah-art-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/229-leah-fall-winter.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/230-leo-island.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/231-leo-mainland.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/232-lewis-introduction-community.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/233-lewis-town-spring-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/234-lewis-seasons-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/235-linus-introduction-nature.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/236-linus-wilderness-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/237-marnie-complete.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/238-marriage-rainy-days-nights.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/239-marriage-home-life.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/240-marriage-evenings-outdoors.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/241-marriage-work-kids-good.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/242-marriage-strain-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/243-marriage-seasonal-voices.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/244-marriage-winter-spouse-rooms.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/245-marriage-spouse-rooms-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/246-abigail-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/247-abigail-outdoors-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/248-abigail-seasons-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/249-alex-rain-home-outdoors.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/250-alex-family-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/251-elliott-rain-home-outdoors.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/252-elliott-family-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/253-emily-rain-home-outdoors.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/254-emily-family-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/255-haley-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/256-haley-outdoors-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/257-harvey-rain-home-outdoors.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/258-harvey-family-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/259-krobus-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/260-krobus-family-moods.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/261-krobus-seasons-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/262-leah-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/263-leah-outdoors-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/264-leah-moods-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/265-maru-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/266-maru-outdoors-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/267-maru-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/268-penny-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/269-penny-family-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/270-penny-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/271-sam-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/272-sam-family-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/273-sebastian-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/274-sebastian-family-moods.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/275-sebastian-seasons-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/276-shane-rain-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/277-shane-family-moods.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/278-shane-seasons-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/279-maru-introduction-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/280-maru-shore-weekly.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/281-maru-events-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/282-maru-summer-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/283-maru-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/284-mister-qi-complete.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/285-pam-introduction-home.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/286-pam-saloon-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/287-pam-fall-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/288-penny-introduction-memories.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/289-penny-resort-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/290-penny-town-ethics.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/291-penny-events-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/292-penny-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/293-pierre-introduction-shop.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/294-pierre-business-seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/295-pierre-fall-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/296-robin-introduction-buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/297-robin-community-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/298-robin-seasons-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/299-sam-introduction-memories.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/300-sam-music-family.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/301-sam-family-festivals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/302-sam-summer-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/303-sam-winter-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/304-sandy-complete.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/305-sebastian-introduction-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/306-sebastian-solitude-friends.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/307-sebastian-hobbies-events-summer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/308-sebastian-summer-festivals-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/309-sebastian-books-winter.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/310-shane-birthday-recovery-resort.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/311-shane-isolation-family-recovery.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/312-shane-chickens-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/313-vincent-family-school.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/314-willy-gifts-legendary-fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/315-willy-fishing-advice-fair.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/316-wizard-magic-complete.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/317-rainy-character-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/318-achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/319-aquarium-fish-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/320-boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/321-community-center-bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/322-chair-tiles-technical.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/323-cooking-recipes-technical-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/324-cooking-recipes-technical-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/325-crafting-recipes-technical-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/326-crafting-recipes-technical-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/327-crafting-recipes-technical-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/328-engagement-dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/329-abandoned-jojamart-event.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/330-animal-shop-cave-carrot-event.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/331-animal-shop-shane-crisis-event.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/332-animal-shop-shane-recovery-event.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/333-animal-shop-blue-chickens-event.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/334-archaeology-house-sci-fi-reading.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/335-archaeology-house-mystery-reading.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/336-archaeology-house-romance-reading.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/337-archaeology-house-first-donation.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/338-backwoods-abigail-golem.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/339-bathhouse-pool-penny-confession.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/340-beach-haley-bracelet.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/341-beach-alex-gridball.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/342-beach-alex-mother.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/343-beach-sebastian-rain.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/344-beach-elliott-boat.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/345-beach-sam-vincent-war.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/346-beach-willy-introduction.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/347-beach-willy-crabs.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/348-beach-krobus-sea-creature.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/349-beach-willy-bug-meat.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/350-boat-tunnel-willy-repair.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/351-bus-stop-krobus-silent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/352-bus-stop-arrival.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/353-bus-stop-sam-show.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/354-bus-stop-shane-stadium.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/355-community-center-punch.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/356-desert-festival-player-killed.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/357-elliott-house-writing.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/358-elliott-house-piano.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/359-farm-visitors-introductions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/360-farm-clint-furnace.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/361-farm-evelyn-garden-pot.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/362-farm-leah-sculpture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/363-farm-demetrius-cave.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/364-farm-gunther-rusty-key.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/365-farm-marlon-slime-hutch.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/366-farm-marnie-pets.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/367-farm-marnie-jodi-requests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/368-farm-pierre-year-two-seeds.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/369-farm-shane-recovery-invitation.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/370-farm-alex-secret-project.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/371-farm-emily-leah-projects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/372-farm-elliott-reading-tour.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/373-farm-emily-sewing-machine.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/374-farm-gus-minijukebox.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/375-farm-willy-fishing-lesson.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/376-farmhouse-grandpa-evaluations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/377-farmhouse-emily-magic-outfit.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/378-farmhouse-sam-music-work.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/379-farmhouse-sam-junior-composer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/380-farmhouse-sam-song-progress.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/381-farmhouse-sam-song-premiere.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/382-farmhouse-maru-comet-invitation.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/383-farmhouse-elliott-returns.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/384-farmhouse-harvey-dinner.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/385-farmhouse-haley-charity-cakewalk.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/386-farmhouse-sebastian-frog-sanctuary.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/387-farmhouse-penny-bedroom-plan.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/388-farmhouse-penny-bedroom-reveal.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/389-fish-shop-willy-business.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/390-forest-haley-cow-photos.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/391-forest-leah-fruit-tree.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/392-forest-leah-picnic-kel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/393-forest-leah-internet-kel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/394-forest-leah-kel-no-punch.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/395-forest-penny-field-trip.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/396-forest-penny-field-trip-branches.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/397-forest-penny-field-trip-ending.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/398-forest-children-sewer-key.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/399-forest-shane-night-drink.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/400-forest-shane-cliff-crisis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/401-forest-spring-onion-mastery.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/402-forest-leah-painting-lesson.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/403-haley-household-chores.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/404-haley-jar-and-darkroom.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/405-emily-dance-and-dream.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/406-haley-rabbits-foot-gathering.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/407-haley-group-dating-confrontation.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/408-emily-gemstone-meditation.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/409-harvey-pilot-dream.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/410-hospital-maru-sample.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/411-hospital-harvey-checkup-radio.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/412-hospital-emergency-surgery.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/413-island-hut-leo-origin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/414-island-north-leo-normality.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/415-island-south-leo-departure.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/416-island-west-leo-belonging.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/417-josh-house-george-evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/418-josh-house-alex-self-doubt.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/419-josh-house-george-checkup.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/420-josh-house-george-gifts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/421-leah-sculpture-business-choice.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/422-leah-kel-backstory.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/423-leah-art-business-followups.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/424-manor-clothing-therapy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/425-manor-prize-ticket.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/426-mine-abigail-confession.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/427-mine-marlon-introduction.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/428-mine-player-rescue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/429-mountain-abigail-rain.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/430-mountain-maru-stargazing.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/431-mountain-linus-wild-bait.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/432-mountain-marilda-bad-answer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/433-mountain-sebastian-motorcycle.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/434-mountain-sebastian-city-overlook.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/435-mountain-willy-panning.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/436-mountain-linus-housing-choice.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/437-mountain-linus-well-response.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/438-mountain-maru-comet-wish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/439-mountain-sebastian-frog-rescue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/440-mountain-linus-clean-water.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/441-mountain-leo-belonging-montage.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/442-qi-walnut-room-intro.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/443-railroad-harvey-balloon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/444-railroad-wizard-dark-talisman.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/445-saloon-elliott-toast.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/446-saloon-pam-tab.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/447-saloon-clint-advice.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/448-saloon-alex-private-dinner.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/449-saloon-alex-rejection.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/450-saloon-rabbit-foot-pool.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/451-saloon-bachelors-confrontation.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/452-saloon-shane-arcade-recovery.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/453-saloon-alex-sports-room.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/454-saloon-gus-giant-omelet.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/455-sam-house-jodi-fish-dinner.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/456-sam-house-band-genre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/457-sam-house-snack-mishap.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/458-sam-house-kent-popcorn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/459-sam-house-romance-branches.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/460-sandy-house-introduction.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/461-science-house-maru-demetrius-warning.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/462-science-house-dad-weird.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/463-science-house-maru-electrocution.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/464-science-house-tomato-debate.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/465-science-house-robin-carpentry-secrets.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/466-science-house-marilda-freedom.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/467-science-house-robin-deluxe-bed.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/468-sebastian-room-programming.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/469-sebastian-room-solarion-setup.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/470-sebastian-room-solarion-journey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/471-sebastian-room-solarion-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/472-seed-shop-abigail-prairie-king.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/473-seed-shop-abigail-spirit-board.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/474-seed-shop-pierre-secret-stash.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/475-seed-shop-abigail-caroline-argument.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/476-seed-shop-harvey-aerobics.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/477-seed-shop-pierre-business.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/478-sewer-dwarf-krobus-peace.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/479-sunroom-caroline-tea.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/480-temp-romance-branches.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/481-temp-sam-band-concerts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/482-town-abigail-graveyard.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/483-town-shane-joja-ad.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/484-town-alex-dusty-past.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/485-town-penny-george-mailbox.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/486-town-sam-skateboard.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/487-town-leah-art-show.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/488-town-lewis-marnie-secret.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/489-town-clint-date.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/490-town-sam-romance.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/491-town-community-center-intro.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/492-town-community-center-completion.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/493-town-joja-completion.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/494-town-linus-trash.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/495-town-emily-parrot.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/496-town-pam-house-anonymous.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/497-town-pam-house-known.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/498-town-pam-house-gift.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/499-town-shane-arcade-recovery.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/500-town-alex-sunday-reminder.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/501-town-penny-books.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/502-town-haley-cakewalk.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/503-town-special-orders-board.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/504-trailer-penny-pam-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/505-trailer-big-pam-faith.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/506-wizard-house-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/507-woods-emily-bear-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/508-extra-dialogue-family-services-qi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/509-extra-dialogue-mines-morris.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/510-extra-dialogue-pierre-purchases.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/511-extra-dialogue-willy-purchases-trash.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/512-extra-dialogue-skull-cavern-100.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/513-extra-dialogue-construction-joja-theater.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/514-extra-dialogue-island-rescues-birdie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/515-extra-dialogue-professor-snail-hints.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/516-extra-dialogue-summit-lewis-morris.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/517-extra-dialogue-summit-spouses.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/518-extra-dialogue-summit-closing.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/519-festival-dates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/520-fall-fair-setup-spouses-y1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/521-fall-fair-villagers-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/522-fall-fair-villagers-y1-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/523-fall-fair-setup-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/524-fall-fair-spouses-villagers-y2-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/525-fall-fair-villagers-y2-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/526-fall-fair-villagers-y2-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/527-spirit-eve-opening-y1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/528-spirit-eve-villagers-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/529-spirit-eve-villagers-technical-y1-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/530-spirit-eve-spouses-villagers-y2-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/531-spirit-eve-villagers-y2-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/532-spirit-eve-villagers-y2-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/533-egg-festival-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/534-egg-festival-spouses-villagers-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/535-egg-festival-villagers-y1-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/536-egg-festival-villagers-y1-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/537-egg-festival-villagers-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/538-flower-dance-opening-y1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/539-flower-dance-villagers-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/540-flower-dance-technical-spouses-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/541-flower-dance-villagers-y2-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/542-flower-dance-villagers-y2-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/543-luau-events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/544-luau-governor-spouses-villagers-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/545-luau-villagers-y1-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/546-luau-villagers-spouses-y1-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/547-luau-spouses-villagers-y2-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/548-luau-villagers-y2-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/549-moonlight-jellies-opening-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/550-moonlight-jellies-villagers-y1-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/551-moonlight-jellies-finale-y1-spouses-y2-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/552-moonlight-jellies-spouses-villagers-y2-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/553-moonlight-jellies-villagers-y2-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/554-winter-star-opening-spouses-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/555-winter-star-villagers-y1-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/556-winter-star-villagers-setup-y1-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/557-winter-star-spouses-villagers-y2-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/558-winter-star-villagers-y2-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/559-winter-star-villagers-y2-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/560-ice-festival-events-spouses-y1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/561-ice-festival-villagers-y1-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/562-ice-festival-finale-y1-events-y2.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/563-ice-festival-spouses-villagers-y2-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/564-ice-festival-villagers-y2-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/565-ice-festival-villagers-y2-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/566-fish-names-and-runtime-data.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/567-furniture-seating-and-tables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/568-furniture-tea-tables-decor-and-rugs.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/569-furniture-televisions-fireplaces-and-rugs.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/570-furniture-seasonal-decor-and-plants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/571-furniture-festival-and-themed-decor.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/572-furniture-joja-and-wizard-collections.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/573-furniture-wizard-and-junimo-collections.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/574-furniture-portraits-and-retro-collection.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/575-furniture-household-trash-and-final-items.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/576-hair-data-runtime-definitions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/577-monster-display-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/578-npc-gift-tastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/579-paint-runtime-definitions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/580-secret-notes-town-residents-and-clues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/581-secret-notes-island-journals-and-forging.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/582-cooking-channel-recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/583-generic-player-term.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/584-name-change-police-easter-egg.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/585-tip-channel-spring-through-fall.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/586-tip-channel-winter-through-artisan.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/587-tip-channel-late-game-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/588-animation-runtime-definitions-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/589-animation-runtime-definitions-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/590-hats-classics-and-accessories-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/591-hats-costumes-and-caps-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/592-hats-magic-pirates-and-masks-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/593-hats-special-rewards-d.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/594-hats-pans-and-finale-e.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/595-quests-main-progression-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/596-quests-community-and-requests-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/597-quests-requests-and-island-finale-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/598-mail-gifts-and-thanks-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/599-mail-notes-sales-recipes-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/600-mail-recipes-family-and-services-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/601-mail-rewards-invitations-and-notices-d.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/602-mail-events-quests-and-festivals-e.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/603-mail-festivals-and-help-requests-f.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/604-mail-requests-and-rescue-notices-g.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/605-mail-elliott-and-special-order-rewards-h.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/606-mail-rewards-island-and-pets-i.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/607-v16-pylon-squidfest-desert-dialogue-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/608-v16-desert-dialogue-cactus-and-willy-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/609-v16-willy-and-scholar-quiz-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/610-v16-chef-dishes-and-race-start-d.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/611-v16-desert-races-and-saboteur-e.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/612-v16-guild-challenges-and-makeover-f.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/613-v16-makeover-shops-and-cavern-guide.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/614-v16-calico-statues-and-fishing-signs.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/615-v16-fishing-events-and-mastery-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/616-v16-blessings-mastery-and-trinkets.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/617-v16-trinket-variants-parrot-and-fizz-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/618-v16-books-powers-and-animal-names.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/619-v16-frenzies-grandpa-joja-and-enchantments.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/620-v16-machines-food-and-renovations-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/621-v16-renovations-pets-and-options-final.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/622-objects-wallet-seeds-and-minerals-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/623-objects-ancient-artifacts-fruit-and-gems-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/624-objects-artifacts-food-and-fertilizer-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/625-objects-crops-berries-and-blue-items-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/626-objects-bones-and-books-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/627-objects-books-crops-trash-and-rings-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/628-objects-calico-crops-fish-and-food-c.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/629-objects-artifacts-materials-and-coffee-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/630-objects-copper-corn-crab-and-cranberry-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/631-objects-winter-forage-fertilizer-and-dinosaur-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/632-objects-dried-goods-duck-and-dwarf-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/633-objects-dwarf-gems-fairy-and-equipment-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/634-objects-fairy-fiber-fish-and-fossil-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/635-objects-fossils-fried-food-and-geodes-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/636-objects-geodes-ginger-gold-and-glacier-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/637-objects-golden-items-grass-and-green-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/638-objects-halibut-honey-horse-and-ice-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/639-objects-ice-iridium-iron-and-jade-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/640-objects-jelly-juice-kale-and-legends-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/641-objects-lemon-luck-magic-and-magma-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/642-objects-magnets-mango-melon-and-midnight-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/643-objects-milk-moss-mummies-and-mystery-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/644-objects-mystic-nautilus-omni-and-orange-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/645-objects-ornaments-parsnips-peppers-and-pets-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/646-objects-pickles-pineapple-pizza-and-poppy-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/647-objects-powdermelon-prehistory-prismatic-and-pumpkin-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/648-objects-purple-qi-quality-and-radioactive-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/649-objects-radish-rainbow-red-and-rhubarb-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/650-objects-rice-roots-rust-and-salmon-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/651-objects-sand-sea-skeletons-and-skill-books-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/652-objects-skill-books-slime-smoked-and-snow-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/653-objects-solar-specific-spring-and-squid-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/654-objects-stardrop-stone-and-strange-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/655-objects-strawberry-summer-super-and-sweet-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/656-objects-taro-tea-tiger-tomato-and-torch-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/657-objects-trap-treasure-truffle-and-vampire-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/658-objects-vegetable-void-warp-and-weeds-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/659-objects-weeds-wheat-wild-and-wood-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/660-objects-woodskip-wool-worm-and-yam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/661-map-inspections-animal-shop-museum-and-lockers-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/662-map-inspections-blacksmith-fish-shop-and-haley-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/663-map-inspections-haley-harvey-hospital-and-joja-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/664-map-inspections-joja-products-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/665-map-inspections-joja-products-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/666-map-inspections-joja-alex-leah-and-manor-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/667-map-inspections-manor-sam-science-and-seed-shop-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/668-map-inspections-seed-shop-town-trailer-and-witch-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/669-map-movie-theater-and-pirates-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/670-map-pirate-darts-finale.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/671-credits-creation-updates-and-translators-a.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/672-credits-translators-ports-links-and-thanks-b.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/673-runtime-article-receipt-strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/674-runtime-article-building-chat.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/675-farmhouse-typed-fields.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/676-turtle-typed-field.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/czech/677-hidden-character-typed-field.json"
     }
   ]
 }

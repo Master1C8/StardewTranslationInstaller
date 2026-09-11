@@ -1,0 +1,28 @@
+{
+  "id": "433-mountain-sebastian-motorcycle",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Rendered seeing Sebastian’s motorcycle for the first time accurately and without player-gender marking.",
+  "rows": [
+    {
+      "target": "Data/Events/Mountain",
+      "key": "384883/f Sebastian 1000/t 1100 1700",
+      "field": null,
+      "source": "spring_day_ambient/-1000 -1000/farmer 12 27 1 Sebastian 18 26 2/skippable/specificTemporarySprite sebastianGarage/showFrame Sebastian 33/animate Sebastian false true 100 32 32 32 36 32 32 36 36 36 36/positionOffset Sebastian 24 16/viewport 18 25 clamp true/move farmer 5 0 0/playSound clank/move farmer 0 -1 1/pause 100/playSound clank/pause 600/playSound clank/pause 300/playSound clank/pause 800/stopAnimation Sebastian/showFrame Sebastian 35/animate Sebastian false false 100 32 33 34 35/playSound dwoop/pause 500/speak Sebastian \"Oh, hello @.$8\"/pause 800/faceDirection farmer 0/emote farmer 8/pause 400/speak Sebastian \"What, you haven't seen my motorcycle before? Hmmm... I guess I haven't shown it to you.$8\"/pause 900/showFrame Sebastian 32/animate Sebastian false false 100 35 34 33 32/pause 500/faceDirection farmer 1/animate Sebastian false true 200 32 32 32 36 32 32 36 36 36/pause 600/playSound clank/pause 600/playSound clank/pause 300/pause 800/playSound parry/pause 800/playSound clank/playMusic echos/pause 2000/glow 80 70 255 true/pause 1000/speak Sebastian \"Sometimes, after sundown, I make the long ride out of Stardew Valley...$8\"/pause 800/speak Sebastian \"There's nothing else like it, blazing along the empty stretch of road toward the faint city glow...$9\"/pause 200/playSound clank/pause 500/playSound clank/pause 200/speak Sebastian \"Once I've saved up enough money, I'm going to head out on my own... to the city and beyond. Just me and my bike.$9\"/pause 900/playSound clank/pause 900/stopAnimation Sebastian/playSound Milking/pause 1500/stopGlowing/playMusic spring_day_ambient/speak Sebastian \"There we go, oil's changed.$8\"/pause 1200/showFrame Sebastian 35/animate Sebastian false false 100 32 33 34 35/playSound dwoop/pause 1900/speak Sebastian \"$q -1 null#Hey... Maybe I'll let you ride sometime, if you want.$8^Hey... maybe I'll take you for a ride some day.$8#$r -1 10 event_garage1#That sounds fun.#$r -1 -10 event_garage2#No thanks. That sounds stupid.#$r -1 0 event_garage3#I'm scared of motorcycles.\"/pause 900/viewport move 1 -1 8000/pause 4000/globalFade/viewport -1000 -1000/end",
+      "translation": "spring_day_ambient/-1000 -1000/farmer 12 27 1 Sebastian 18 26 2/skippable/specificTemporarySprite sebastianGarage/showFrame Sebastian 33/animate Sebastian false true 100 32 32 32 36 32 32 36 36 36 36/positionOffset Sebastian 24 16/viewport 18 25 clamp true/move farmer 5 0 0/playSound clank/move farmer 0 -1 1/pause 100/playSound clank/pause 600/playSound clank/pause 300/playSound clank/pause 800/stopAnimation Sebastian/showFrame Sebastian 35/animate Sebastian false false 100 32 33 34 35/playSound dwoop/pause 500/speak Sebastian \"Ach, ahoj, @.$8\"/pause 800/faceDirection farmer 0/emote farmer 8/pause 400/speak Sebastian \"Cože, mou motorku vidíš poprvé? Hmm... asi jsem ti ji ještě neukázal.$8\"/pause 900/showFrame Sebastian 32/animate Sebastian false false 100 35 34 33 32/pause 500/faceDirection farmer 1/animate Sebastian false true 200 32 32 32 36 32 32 36 36 36/pause 600/playSound clank/pause 600/playSound clank/pause 300/pause 800/playSound parry/pause 800/playSound clank/playMusic echos/pause 2000/glow 80 70 255 true/pause 1000/speak Sebastian \"Někdy po západu slunce vyjedu na dlouhou cestu za hranice údolí Stardew...$8\"/pause 800/speak Sebastian \"Není nic lepšího než se řítit prázdným úsekem silnice směrem ke slabé záři města...$9\"/pause 200/playSound clank/pause 500/playSound clank/pause 200/speak Sebastian \"Až našetřím dost peněz, vyrazím na vlastní pěst... do města a ještě dál. Jen já a moje motorka.$9\"/pause 900/playSound clank/pause 900/stopAnimation Sebastian/playSound Milking/pause 1500/stopGlowing/playMusic spring_day_ambient/speak Sebastian \"Tak, olej je vyměněný.$8\"/pause 1200/showFrame Sebastian 35/animate Sebastian false false 100 32 33 34 35/playSound dwoop/pause 1900/speak Sebastian \"$q -1 null#Hele... možná ti ji někdy půjčím na projížďku, jestli chceš.$8^Hele... možná tě někdy vezmu na projížďku.$8#$r -1 10 event_garage1#To zní zábavně.#$r -1 -10 event_garage2#Ne, díky. To zní pitomě.#$r -1 0 event_garage3#Mám z motorek strach.\"/pause 900/viewport move 1 -1 8000/pause 4000/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "ea8e056770a34cad15456616a95a43d95e1687a68a7d236d895e0cb5cd555ed0",
+      "translationSHA256": "90fa0c683fbee10e79ef86522bb1a183d661acd81132ed795bf2f40d5716544b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

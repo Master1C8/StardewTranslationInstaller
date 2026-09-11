@@ -1,0 +1,33 @@
+{
+  "id": "306-sebastian-solitude-friends",
+  "kind": "long",
+  "target": "Characters/Dialogue/Sebastian",
+  "complexityReason": "Continue Sebastian's resort and relationship states through his existential routine, friendships, Maru resentment, farm-life query and motorcycle/free-time question routes in one reserved voice pass.",
+  "entries": {
+    "Resort_Towel": "Je příjemné občas se odtrhnout od počítače a podívat se na skutečný svět. Zapomínám, jak hezký dokáže být.$h",
+    "Resort_Bar": "Obvykle nosím černou, ale v tomhle vedru...",
+    "FlowerDance_Accept_Spouse": "Uf... Musíme? Tak dobře.",
+    "FlowerDance_Decline": "Ne... Chci tančit s někým jiným.",
+    "divorced": "Proč mě pořád otravuješ? Snažím se na tebe zapomenout.$s",
+    "dumped_Guys": "Nějakou dobu tě nechci vidět.$u",
+    "breakUp": "... Tak dobře...$s#$b#Tak se asi někdy uvidíme...$s",
+    "secondChance_Guys": "Hej...",
+    "Mon": "Ehm... Něco potřebuješ?",
+    "Mon4": "Kdybych prostě zmizel, záleželo by na tom vůbec?$s",
+    "Tue": "Přemýšlel jsem... Lidé jsou jako kamínky odrážející se od vodní hladiny.#$b#Nakonec se všichni potopíme.",
+    "Tue6": "Sam je vážně společenský, takže když jsme spolu, většinu času mluví on.#$b#Mně to vyhovuje!||Představ si, že by byl Sam stejně uzavřený jako já... Trávili bychom spolu čas a neřekli ani slovo.$h||Někteří lidé rádi mluví, jiní poslouchají. Já spíš poslouchám.",
+    "Wed": "Co budu dnes dělat?#$e#Nejspíš nic.",
+    "Wed2": "Sam je v tomhle městě nejspíš můj jediný přítel.#$e#No, Abby je taky milá, ale...$h#$e#Ehm... To je jedno.",
+    "Wed2_inlaw_Abigail": "Sam je teď v tomhle městě nejspíš můj jediný přítel...",
+    "Wed6": "Ty a Sam jste v tomhle městě nejspíš moji jediní přátelé.$s",
+    "Wed10": "Nevím, kde bych bez tebe skončil... Nejspíš někde v příkopu.$l",
+    "Thu": "#$1 Sebastian1#Včera v noci jsem se vplížil do jeskyní a skalní krab mě ošklivě pořezal. Nikomu to neříkej, ano?#$e#Ahoj.#$e#... Něco chceš?",
+    "Mountain_47_23": "Chodím sem za klidem a tichem.",
+    "Thu4": "Proč mají všichni Maru tolik rádi? Jistě, je chytrá a přátelská, ale copak nevidí, že je to jen trik, jak na sebe strhnout pozornost?#$e#Promiň...$s",
+    "Thu6": "Dokážeš si představit, že by někdo jako já žil na farmě? Zní to směšně.$h",
+    "Thu8": "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Hej... Jak to jde na farmě?#$e#Pořád stejná rutina, co? Jo, o té něco vím...|Dokážeš si představit, že bych žil na farmě?#$e#Zní to směšně, ale poslední dobou o tom přemýšlím.",
+    "Fri": "Ehm... Vlastně tě vůbec neznám.",
+    "Fri2": "*povzdechne si*... Kdyby benzín nebyl tak drahý, vyrazil bych dnes na motorce do města.#$e#$q 15/16 Fri_old#Co tedy děláš, když nepracuješ?#$r 15 0 Fri_bad#Ještě víc farmařím#$r 16 30 Fri_good#Čtu komiksy#$r 15 -30 Fri_bad#Nakupuji#$r 15 -30 Fri_bad#Sportuji",
+    "Fri_old": "$p 16#Hej, jestli se nudíš, klidně se stav v mém pokoji...$h|Tobě asi víc vyhovuje život v malém městě, co?"
+  }
+}

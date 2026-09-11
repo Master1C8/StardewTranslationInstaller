@@ -1,0 +1,522 @@
+{
+  "id": "031-events",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 27 source/target pairs with original BirthingEvent/PlayerCoupleBirthingEvent/QuestionEvent arguments and approved Lexicon forms. Checked mother-only feminine grammar, adoption versus birth, baby sex/naming, parent-defined names and animal types without invented inflection. Read the original Mountain 5183338 comet scene and ArchaeologyHouse romanceBook context; Maru voice, cosmic imagery and book titles retain source meanings. Player handles remain verbatim in the intimate address.",
+  "rows": [
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_Adoption",
+      "field": null,
+      "source": "During the night, the adoption agency dropped off your new baby {0}.",
+      "translation": "V noci vám adopční agentura přivezla nové miminko. Je to {0}.",
+      "sourceSHA256": "2d44134b1aea878d96d01d1d2fe71ead079b8bfc3a5cdb87659ee844b0df7cf1",
+      "translationSHA256": "972ab040f953a31890f1979575a7c77decb06bae7de2e14f3f8f4e83c63df1b7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_PlayerMother",
+      "field": null,
+      "source": "During the night, you gave birth to a baby {0}.",
+      "translation": "V noci jste porodila miminko. Je to {0}.",
+      "sourceSHA256": "ab91a6803d050cca8aacac2712e8fc3c569ecfddc0a2f466fd028d31b751f4a3",
+      "translationSHA256": "865a4583294ed7a9a54a9faf14d4aa80bb2f51cf2ab4d7859200d7581bcaae56",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_SpouseMother",
+      "field": null,
+      "source": "During the night, {1} gave birth to a baby {0}.",
+      "translation": "V noci {1} porodila miminko. Je to {0}.",
+      "sourceSHA256": "62eb4b7f93d6bfc7959e1db466ceef5c66f5d1e96f69cab23f0985af03b3ed4d",
+      "translationSHA256": "cf78650f146ab9ed191f4beba869534f6ecdfe16c2d3bfe7cbbfdcfbb369542a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_SpouseNaming_Male",
+      "field": null,
+      "source": "{0} is naming your baby boy.",
+      "translation": "{0} vybírá jméno pro vašeho chlapečka.",
+      "sourceSHA256": "00e7a5eaa744bf79d4a1ff361cd22237b66d3276034baaf1482d18c98c56fccc",
+      "translationSHA256": "cda75e0a9de420a54da55ecfefd981dac7ad800c4ed3bd23b8df117841fbb60b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BirthMessage_SpouseNaming_Female",
+      "field": null,
+      "source": "{0} is naming your baby girl.",
+      "translation": "{0} vybírá jméno pro vaši holčičku.",
+      "sourceSHA256": "a67e9d50e6e275c6f7e2c8318f6b397247b37829c225bc96a483e1c33284b4e3",
+      "translationSHA256": "7b6b9d7c115403c9e72a4eba64a5ae136d3441bfedf72d28c8a40b894499bf83",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BabyNamingTitle_Male",
+      "field": null,
+      "source": "What should we name him?",
+      "translation": "Jak ho pojmenujeme?",
+      "sourceSHA256": "c2d12efceb68a6524d1debda3f0c2f9a24ab5fb148c5f94b8c378d588766ae31",
+      "translationSHA256": "67f7e921cb01d071ac8c4cdbf7cc91e781f3c4583463adf2cf303b754846ce75",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BabyNamingTitle_Female",
+      "field": null,
+      "source": "What should we name her?",
+      "translation": "Jak ji pojmenujeme?",
+      "sourceSHA256": "07066c76ec8377e8d8c3a7c015e0c875371b17c90a1dc649e75a99ee610c2c9e",
+      "translationSHA256": "494c0d6c1e7bfadba7ae6e7b2ef569e31fd4dad5f015fca1c951597ad4670b5b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "HaveBabyQuestion",
+      "field": null,
+      "source": "Should we have a baby, {0}?",
+      "translation": "{0}… Co kdybychom měli miminko?",
+      "sourceSHA256": "b2b1517fa9d470faed588c5def3f61d063c9e2506d7c80459446e25141f1970e",
+      "translationSHA256": "fdd87cb61c24444497e841d26d71b2d4b69e8231fa7edea486d82118a59ed1bf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "HaveBabyQuestion_Adoption",
+      "field": null,
+      "source": "Should we adopt a baby, {0}?",
+      "translation": "{0}… Co kdybychom adoptovali miminko?",
+      "sourceSHA256": "a4fe0a657a4a80ca3faaa3efcd5c4e42f03bed0facacfd18c4c2eff2d0aa2441",
+      "translationSHA256": "e1c878a7b279b6f8539b5a3201a895f071573639c77ba87c1b83629586cddf43",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "HaveBabyAnswer_Yes",
+      "field": null,
+      "source": "Yes",
+      "translation": "Ano",
+      "sourceSHA256": "85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e",
+      "translationSHA256": "1c5b7004153d4a6bee2be0c45652a0e46c050db5e27cb41a5c92772f031e5d6b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "HaveBabyAnswer_No",
+      "field": null,
+      "source": "Not now...",
+      "translation": "Teď ne...",
+      "sourceSHA256": "9c31d0a26abfb5d501ccafe46b36930e568d198fbeb6e56bfec89da79b444c10",
+      "translationSHA256": "6ad2944ce908abd32861e143ae39c05d0a7b6102ffa3638b838e94d3575d4383",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "HavePlayerBabyQuestion",
+      "field": null,
+      "source": "Do you want to have a baby with {0}?",
+      "translation": "Chcete mít miminko společně s postavou {0}?",
+      "sourceSHA256": "0ea608ad1496f786bf7cf564db460ca46dbcb4239dd9ae5e5f68f4bc8e5b700b",
+      "translationSHA256": "93c29b61e28581f5d6f34f2939a51e736fb38ad350843020a78539357f5a748b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "HavePlayerBabyQuestion_Adoption",
+      "field": null,
+      "source": "Do you want to adopt a baby with {0}?",
+      "translation": "Chcete adoptovat miminko společně s postavou {0}?",
+      "sourceSHA256": "23fbaa835d9ce9d3e22747c2adeef07dd003268310d0d313677321df50f48566",
+      "translationSHA256": "95bd73f3d82d361d6441cbdd4a62051da6b740aa56da256c11e1734fadda88f4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "AnimalBirth",
+      "field": null,
+      "source": "During the night, {0} gave birth to a baby {1}.",
+      "translation": "Zvíře jménem {0} v noci přivedlo na svět mládě ({1}).",
+      "sourceSHA256": "2875dc963c82855243c1dabca174389dd0e166928f6ea34484c9638473c80ab8",
+      "translationSHA256": "8fa826ed8136171f264c3d82ff84a4ef4f08360d08e5604a60f8f5280f10ce1f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "AnimalNamingTitle",
+      "field": null,
+      "source": "Name your new baby {0}:",
+      "translation": "Pojmenujte nové mládě ({0}):",
+      "sourceSHA256": "6521f60260272791635e27068e28627ba5de5eccade8c1a2e1e8e44d1483ee59",
+      "translationSHA256": "9593831fe74bdba3c7d343f8f45431cd3e0412e81aed034f22fc9a42bc515221",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "SoundInTheNight_UFO",
+      "field": null,
+      "source": "A strange sound was heard in the night...",
+      "translation": "V noci se ozval podivný zvuk...",
+      "sourceSHA256": "428a322a76fb47edea95b4b8e2d85d0ca06b4730e66a9e3c3ad0a00703df4b5c",
+      "translationSHA256": "e0f93df762a7201a0e1bebfd7b04852f0d32aef16e9eae30b2f6f493f4649b6d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "SoundInTheNight_Meteorite",
+      "field": null,
+      "source": "An explosion was heard in the night...",
+      "translation": "V noci se ozval výbuch...",
+      "sourceSHA256": "c512b880b82e74d4a0c0b96211d9b582939d6861818a0ead98750309512e68e1",
+      "translationSHA256": "6f1524841e6d801cb8278d318805c51a50ede5732826281ef0705297b16f4b0a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "SoundInTheNight_Earthquake",
+      "field": null,
+      "source": "There was an earthquake during the night.",
+      "translation": "V noci došlo k zemětřesení.",
+      "sourceSHA256": "39dcaaa54b6b603a8571bc65db88609b71bfcf3d979e5f141ab9f9f770684a1d",
+      "translationSHA256": "b0cc9d83152bb1f77e49be8d74498876fe49a9497c9fc9786a77a4d5e3f3f38b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "BeachNightMarket_NowOpen",
+      "field": null,
+      "source": "The Night Market is now open.",
+      "translation": "Noční trh je nyní otevřený.",
+      "sourceSHA256": "b89b7207c1093fc00bf5fbc64527f75f7c9f0f37f55ce320d75ea0ed72bd6562",
+      "translationSHA256": "7e9b55d01615a70b5bcd3ea585a7f61764ebcdd5bbe45d2140776bf5743f6d5f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "Maru_comet5",
+      "field": null,
+      "source": "It makes me glad to live on this vibrant world with you!",
+      "translation": "Jsem ráda, že s tebou žiju na tomhle světě plném života!",
+      "sourceSHA256": "298f2dd1ab21909aa8aa6658a4cb31d0cd3699b3e07418bc22761e42e84977be",
+      "translationSHA256": "e327553ff6bab0cd746b69062a0bf5827853e8c956e2bed287ac9126cf0d18c7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "Maru_comet4",
+      "field": null,
+      "source": "So empty, so lonely...",
+      "translation": "Tak prázdná, tak osamělá...",
+      "sourceSHA256": "427336ecd7ed9ebf3849d2aade3b3698ceb7d37ec6c613475f7c20d7a55a66be",
+      "translationSHA256": "25fe24491dac0d346056e66de1cf5e9e0b164baebe42c336e4867305419e5648",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "Maru_comet3",
+      "field": null,
+      "source": "Here for one fleeting moment on its infinite journey.",
+      "translation": "Na své nekonečné pouti je tu jen na prchavý okamžik.",
+      "sourceSHA256": "b19a1fb9f21ba2b53697abd1db44b2a6206e21bd54fbc779ce4ff1a8e6094185",
+      "translationSHA256": "b65b09f553f979c4a7ae60947439992d3d92d82f10fb160ca41592a8e5d09e4a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "Maru_comet2",
+      "field": null,
+      "source": "A rare wonder of the cosmos...",
+      "translation": "Vzácný div vesmíru...",
+      "sourceSHA256": "b8e0b63611b98383f376b5ec48cc7b17b04febff61f384d7bd2b0e4c5beb19b3",
+      "translationSHA256": "e29146c2613b657d3b70567cd4db25182016deaced6602486031c973c179aa8e",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "Maru_comet1",
+      "field": null,
+      "source": "Beautiful, isn't it?",
+      "translation": "Nádhera, viď?",
+      "sourceSHA256": "2025fea09272ca6a45154a28ed175af840d9ab4ecc3b550ac6c5a03a92d187f9",
+      "translationSHA256": "4ad1b568676fec8b40b733ab186d56ec51f7e2b47a0c5c04bc204b642bddcf02",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "ElliottBook_mystery",
+      "field": null,
+      "source": "Blue Tower",
+      "translation": "Modrá věž",
+      "sourceSHA256": "3f331b264c7bd22741aaea319182816998c082fc7847903d6b8f22c6c3d0b84d",
+      "translationSHA256": "eb6f1ce55831f3463975bcee6927f145a3737f2a245d03f791b8156a31125cc6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "ElliottBook_romance",
+      "field": null,
+      "source": "Camellia Station",
+      "translation": "Stanice Kamélie",
+      "sourceSHA256": "f535001fd17ec1e9897f27e9b8daca6847f510e3c0c95d86aeecdca7fca65c26",
+      "translationSHA256": "6606edf1466e172402c530c8dd2f378bf7444071ff788504bf1562c640a8d3ab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/Events",
+      "key": "ElliottBook_default",
+      "field": null,
+      "source": "The Rise And Fall Of Planet Yazzo",
+      "translation": "Vzestup a pád planety Yazzo",
+      "sourceSHA256": "fdda839ecbd4b6d2c61aa3f9d3b33798546243e6aec7db83b5f4bf28fd022e08",
+      "translationSHA256": "7e64ec3572d5bb6370d59b363dfe126919e1d7b0d52c2e91559db87cf7aa95ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

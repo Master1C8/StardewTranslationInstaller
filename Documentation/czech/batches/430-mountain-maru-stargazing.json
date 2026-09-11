@@ -1,0 +1,28 @@
+{
+  "id": "430-mountain-maru-stargazing",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all eleven visible segments against English; verified Maru's reflective and hesitant voice, astronomy terminology, both response options, player-neutral phrasing, journal text, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Mountain",
+      "key": "8/f Maru 1500/w sunny/t 2100 2340",
+      "field": null,
+      "source": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/bgColor 0 0 0/changeToTemporaryMap NightSceneMaruMap false/ambientLight 0 0 0/viewport 14 23 true/pause 2000/playSound leafrustle/pause 200/faceDirection Maru 1/pause 400/emote Maru 8/pause 800/move farmer -5 0 3/speak Maru \"@! I'm surprised to see you here so late.\"/faceDirection Maru 3/pause 1000/speak Maru \"The night sky looks amazing right now.\"/faceDirection Maru 1/speak Maru \"Come over here, I want to show you something.\"/move farmer -3 0 3/speak Maru \"Here, take a peek.\"/move Maru 0 1 0/move farmer -1 0 3/pause 200/animate farmer true true 100 35/pause 1200/playMusic spaceMusic/speak Maru \"$q 40 null#What do you see?#$r 40 30 Event_Space1#A beautiful planet.#$r 40 -30 Event_Space2#A cold, dark abyss.\"/stopAnimation farmer/faceDirection farmer 2/pause 1000/speak Maru \"By the time any of these stars are visited, you and I will be long gone...$8\"/emote farmer 28/pause 400/speak Maru \"I guess that's the trouble with being human, huh?\"/faceDirection Maru 0/pause 1200/faceDirection Maru 2/emote Maru 40/pause 500/faceDirection Maru 0/speak Maru \"@, um...$8\"/pause 500/faceDirection Maru 2/pause 1500/speak Maru \"Never mind...$s\"/pause 500/faceDirection Maru 0/pause 800/speak Maru \"Here, let me show you a binary star system...\"/pause 500/faceDirection farmer 3 true/animate farmer true true 100 35/pause 800/specificTemporarySprite maruTelescope/viewport move 0 -1 16000/pause 16000/globalFade .003/viewport -1000 -1000/pause 500/message \"What a beautiful night! Maru showed me something new...\"/pause 1000 /stopAnimation farmer/changeLocation Mountain/end",
+      "translation": "nightTime/-1000 -1000/farmer 23 29 3 Maru 14 29 3/skippable/bgColor 0 0 0/changeToTemporaryMap NightSceneMaruMap false/ambientLight 0 0 0/viewport 14 23 true/pause 2000/playSound leafrustle/pause 200/faceDirection Maru 1/pause 400/emote Maru 8/pause 800/move farmer -5 0 3/speak Maru \"@! Nečekala jsem, že tě tu uvidím tak pozdě.\"/faceDirection Maru 3/pause 1000/speak Maru \"Noční obloha teď vypadá úžasně.\"/faceDirection Maru 1/speak Maru \"Pojď sem, chci ti něco ukázat.\"/move farmer -3 0 3/speak Maru \"Tak, podívej se.\"/move Maru 0 1 0/move farmer -1 0 3/pause 200/animate farmer true true 100 35/pause 1200/playMusic spaceMusic/speak Maru \"$q 40 null#Co vidíš?#$r 40 30 Event_Space1#Nádhernou planetu.#$r 40 -30 Event_Space2#Chladnou, temnou propast.\"/stopAnimation farmer/faceDirection farmer 2/pause 1000/speak Maru \"Než některou z těch hvězd někdo navštíví, budeme už dávno pryč...$8\"/emote farmer 28/pause 400/speak Maru \"To je asi úskalí lidského života, co?\"/faceDirection Maru 0/pause 1200/faceDirection Maru 2/emote Maru 40/pause 500/faceDirection Maru 0/speak Maru \"@, ehm...$8\"/pause 500/faceDirection Maru 2/pause 1500/speak Maru \"To nic...$s\"/pause 500/faceDirection Maru 0/pause 800/speak Maru \"Tady, ukážu ti dvojhvězdný systém...\"/pause 500/faceDirection farmer 3 true/animate farmer true true 100 35/pause 800/specificTemporarySprite maruTelescope/viewport move 0 -1 16000/pause 16000/globalFade .003/viewport -1000 -1000/pause 500/message \"Jaká nádherná noc! Maru mi ukázala něco nového...\"/pause 1000 /stopAnimation farmer/changeLocation Mountain/end",
+      "sourceSHA256": "442f5d60a6ec66aa8e061aedd2fe1968e20b30cab894d90b0ba52cd9acee6250",
+      "translationSHA256": "9d75fe8a329ec03c45e92a2f855ad30927c4ae2cf6808c4b23dbaa9dc54dbb0f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

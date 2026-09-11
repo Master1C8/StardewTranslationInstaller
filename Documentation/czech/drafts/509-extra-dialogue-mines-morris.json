@@ -1,0 +1,34 @@
+{
+  "id": "509-extra-dialogue-mines-morris",
+  "locale": "cs",
+  "kind": "short",
+  "target": "Data/ExtraDialogue",
+  "complexityReason": "These 23 rows combine mine rescues with speaker and explicit player gender, spouse-gender-neutral phrasing, Joja membership and community-development terminology, repeated contextual greetings, response directive IDs, placeholders, and Morris’s polished corporate voice.",
+  "entries": {
+    "Robin_HouseUpgrade_Accepted": "Děkuji! Začnu zítra. Hotovo by mělo být zhruba za tři dny.",
+    "Robin_PamUpgrade_Accepted": "To je od tebe tak štědré! Na vylepšení začnu pracovat zítra. Hotové by mělo být asi za tři dny.",
+    "Mines_PlayerKilled_Robin": "...V dole jsem narazila na tvé bezvládné tělo. Málem jsem si tě spletla s kusem exotického dřeva!#$b#Příště si dávej větší pozor, ano?$s",
+    "Mines_PlayerKilled_Clint": "...Našel jsem tě v dole v bezvědomí. Když jsem tě táhl až sem nahoru, málem jsem si zničil záda.#$b#Příště si dávej větší pozor, ano?$s",
+    "Mines_PlayerKilled_Maru_Spouse": "...Našla jsem tě v dole v bezvědomí. Tak dlouho o tobě nebylo ani vidu, že jsem si začala dělat starosti!#$b#Příště si dávej větší pozor, ano?$s",
+    "Mines_PlayerKilled_Maru_NotSpouse": "...Našla jsem tě v dole v bezvědomí. Hledala jsem minerály a málem jsem ti šlápla na hlavu!#$b#Příště si dávej větší pozor, ano?$s",
+    "Mines_PlayerKilled_Linus": "...Našel jsem tě v dole v bezvědomí. Máš štěstí, že jsem šel náhodou kolem!#$b#Příště si dávej větší pozor, ano?$s",
+    "Mines_PlayerKilled_Spouse_PlayerMale": "Byl jsi pryč tak dlouho, až mě přepadl strach! Při pohledu na tvé bezvládné tělo mi vyhrkly slzy...$s",
+    "Mines_PlayerKilled_Spouse_PlayerFemale": "Byla jsi pryč tak dlouho, až mě přepadl strach! Při pohledu na tvé bezvládné tělo mě málem ranila mrtvice...$a",
+    "Morris_PlayerSignedUp": "Výtečně! Vítej ve Společnosti Joja! Vrať se zítra a můžeme začít s projekty rozvoje obce... A nezapomeň na peněženku! Hehe.#$b#Teď zavolám starostovi Lewisovi a proberu s ním vyklizení toho ohavného starého Komunitního centra...",
+    "Morris_ComeBackLater": "Vrať se zítra a můžeme začít s vylepšováním obce... Jen si nezapomeň přinést hodně peněz. Hehe.",
+    "Morris_Greeting": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Myslím, že jsme se ještě nesetkali. Jsem Morris, zástupce pro spokojenost zákazníků společnosti Joja.#$b#Až se rozhodneš pořídit si členství ve společnosti Joja, s radostí ti pomohu, aby přechod proběhl co nejpříjemněji.",
+    "Morris_WeekendGreeting": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Právě pro naše zákazníky zavádíme zcela nový členský systém. Brzy se vrať a přidej se!",
+    "Morris_FirstGreeting": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Právě pro naše zákazníky zavádíme zcela nový členský systém. Brzy se vrať a přidej se!",
+    "Morris_FirstGreeting_CommunityCenterComplete": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Bohužel kvůli nepředvídaným okolnostem naše nabídka členství ve společnosti Joja momentálně není dostupná. Jistě se to brzy vyřeší!",
+    "Morris_WeekendGreeting_CommunityCenterComplete": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Bohužel kvůli nepředvídaným okolnostem naše nabídka členství ve společnosti Joja momentálně není dostupná. Jistě se to brzy vyřeší!",
+    "Morris_WeekendGreeting_MembershipAvailable": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Členství je nyní dostupné! S členstvím ve společnosti Joja můžeš s pomocí našeho specializovaného personálu vylepšovat obec... samozřejmě za poplatek.#$b#A ještě něco... Starosta Lewis nám slíbil, že pokud se přidá ještě někdo, dovolí nám proměnit staré Komunitní centrum ve sklad společnosti Joja. Není to báječné?#$q -1 -1#Členství stojí {0}g. Chceš se k nám přidat?#$r -1 -1 Yes#Ano.#$r -1 -1 No#Ne.",
+    "Morris_FirstGreeting_MembershipAvailable": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Členství je nyní dostupné! S členstvím ve společnosti Joja můžeš s pomocí našeho specializovaného personálu vylepšovat obec... samozřejmě za poplatek.#$b#A ještě něco... Starosta Lewis nám slíbil, že pokud se přidá ještě někdo, dovolí nám proměnit staré Komunitní centrum ve sklad společnosti Joja. Není to báječné?#$q -1 -1#Členství stojí {0}g. Chceš se k nám přidat?#$r -1 -1 Yes#Ano.#$r -1 -1 No#Ne.",
+    "Morris_WeekendGreeting_SecondPlayer": "Vítej v JojaMartu! Jak si užíváš víkend?#$b#Hm... Podle našich záznamů žiješ na farmě s dalšími lidmi... Je mi líto, ale členství můžeme prodat pouze majiteli usedlosti, na které bydlíš.",
+    "Morris_FirstGreeting_SecondPlayer": "Vítej v JojaMartu! Jak se ti dnes daří?#$b#Hm... Podle našich záznamů žiješ na farmě s dalšími lidmi... Je mi líto, ale členství můžeme prodat pouze majiteli usedlosti, na které bydlíš.",
+    "Morris_StillProcessingOrder": "Právě zpracováváme tvou poslední objednávku komunitního rozvoje. Vrať se prosím, až budou práce dokončeny.",
+    "Morris_CommunityDevelopmentForm_PlayerMale": "$q -1 -1#Mám tu pro vás Formulář komunitního rozvoje Joja, pane. Chcete se podívat?#$r -1 -1 Yes#Ano#$r -1 -1 No#Ne",
+    "Morris_CommunityDevelopmentForm_PlayerFemale": "$q -1 -1#Mám tu pro vás Formulář komunitního rozvoje Joja, slečno. Chcete se podívat?#$r -1 -1 Yes#Ano#$r -1 -1 No#Ne"
+  }
+}
+
+

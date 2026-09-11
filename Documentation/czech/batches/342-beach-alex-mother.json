@@ -1,0 +1,28 @@
+{
+  "id": "342-beach-alex-mother",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read the complete event command and both languages after two player neutral corrections. Verified every Alex line, all four response choices, mother backstory, event commands, markers, movement, music and emotion codes. No further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Beach",
+      "key": "288847/f Alex 2000/p Alex/w sunny/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest",
+      "field": null,
+      "source": "ocean/-100 -100/farmer 52 13 2 Alex 53 24 2/showFrame Alex 38/skippable/viewport 53 24 true/pause 2000/speak Alex \"*sniff*...$s\"/move farmer 0 11 2/pause 1000/showFrame Alex 36/pause 500/showFrame Alex 37/pause 500/speak Alex \"Oh... @. You saw me crying.$s\"/pause 500/showFrame Alex 36/pause 1000/showFrame 95/pause 2000/speak Alex \"It was today, twelve years ago... that my Mom died.$9\"/pause 1000/speak Alex \"I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard.$9#$b#She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever.$9\"/pause 1000/showFrame Alex 38/pause 1000/speak Alex \"This is the only keepsake I have left... her secret music box.$s\"/pause 1000/playSound openBox/showFrame Alex 35/pause 500/playMusic tinymusicbox/pause 10000/specificTemporarySprite JoshMom/pause 20000/playMusic ocean/pause 900/showFrame Alex 37/pause 900/showFrame Alex 36/pause 800/speak Alex \"$q -1 null#So... What are you thinking right now, @?$9#$r -1 0 event_box1#Honor your mother's memory by always doing your best.#$r -1 0 event_box2#You shouldn't dwell in the past.#$r -1 0 event_box3#I'll always be here for you if you get lonely.#$r -1 0 event_box4#Get over it. Life is hard for everyone.\"/pause 1000/showFrame Alex 36/pause 1000/speak Alex \"Well, there's no sense sitting around sniveling... let's head back to town.$9\"/showFrame Alex 0/stopAnimation farmer/move Alex 0 -2 0 true/move farmer 0 -2 0 false/pause 1000/faceDirection Alex 3/pause 800/speak Alex \"Um... @?$9\"/pause 800/faceDirection farmer 1/pause 500/speak Alex \"Don't tell anyone I was crying. Okay?$7\"/pause 500/faceDirection farmer 2/animate farmer false true 100 102 103/pause 100/jump Alex/pause 1500/stopAnimation farmer/move farmer 0 -8 0 true/faceDirection Alex 0/emote Alex 16/speak Alex \"Hey!$7\"/move Alex 0 -8 0 true/globalFade/viewport -1000 -1000/end",
+      "translation": "ocean/-100 -100/farmer 52 13 2 Alex 53 24 2/showFrame Alex 38/skippable/viewport 53 24 true/pause 2000/speak Alex \"*popotáhne nosem*...$s\"/move farmer 0 11 2/pause 1000/showFrame Alex 36/pause 500/showFrame Alex 37/pause 500/speak Alex \"Ach... @. Vidíš mě plakat.$s\"/pause 500/showFrame Alex 36/pause 1000/showFrame 95/pause 2000/speak Alex \"Právě dnes je to dvanáct let... co mi zemřela máma.$9\"/pause 1000/speak Alex \"Pořád si ji dobře pamatuju... Dělávala mi k obědu sendviče se solenými ředkvičkami... a na dvorku si se mnou házela gridballovým míčem.$9#$b#Dobře se o mě starala... a já byl moc malý na to, abych jí pořádně poděkoval. Teď je navždy pryč.$9\"/pause 1000/showFrame Alex 38/pause 1000/speak Alex \"Tohle je jediná památka, která mi po ní zůstala... její tajná hrací skříňka.$s\"/pause 1000/playSound openBox/showFrame Alex 35/pause 500/playMusic tinymusicbox/pause 10000/specificTemporarySprite JoshMom/pause 20000/playMusic ocean/pause 900/showFrame Alex 37/pause 900/showFrame Alex 36/pause 800/speak Alex \"$q -1 null#Takže... Na co teď myslíš, @?$9#$r -1 0 event_box1#Ucti památku své matky tím, že vždycky uděláš maximum.#$r -1 0 event_box2#Nemá smysl se utápět v minulosti.#$r -1 0 event_box3#Jestli ti bude někdy smutno, vždycky tu pro tebe budu.#$r -1 0 event_box4#Vzchop se. Život je těžký pro každého.\"/pause 1000/showFrame Alex 36/pause 1000/speak Alex \"Nemá smysl tu sedět a fňukat... Vraťme se do města.$9\"/showFrame Alex 0/stopAnimation farmer/move Alex 0 -2 0 true/move farmer 0 -2 0 false/pause 1000/faceDirection Alex 3/pause 800/speak Alex \"Ehm... @?$9\"/pause 800/faceDirection farmer 1/pause 500/speak Alex \"Nikomu neříkej, že jsem brečel. Dobře?$7\"/pause 500/faceDirection farmer 2/animate farmer false true 100 102 103/pause 100/jump Alex/pause 1500/stopAnimation farmer/move farmer 0 -8 0 true/faceDirection Alex 0/emote Alex 16/speak Alex \"Hej!$7\"/move Alex 0 -8 0 true/globalFade/viewport -1000 -1000/end",
+      "sourceSHA256": "42e738ca1d32f11c2f298992aa6fb543903206a967fa4fb7dc60a3aafca36b1f",
+      "translationSHA256": "0f2bb2cb414f5fc9e450fd9ae8ca759863273f0607b0156f3547cd3864526119",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

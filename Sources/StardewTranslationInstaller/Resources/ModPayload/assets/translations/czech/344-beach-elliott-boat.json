@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "43/f Elliott 2500/w sunny/t 700 1300/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"Ahoj.\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"Podívej... Opravil jsem ten starý člun, který stál u mého domu. Docela pěkný, co?\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... Prokážeš mi tu čest a připojíš se ke mně na jeho první plavbu?$l\"/faceDirection farmer 2/question fork1 \"Nastoupit do člunu?#Ano#Ne\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea false/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"Tak, moje kniha už je nějakou dobu vydaná... Není to žádný bestseller, ale kritici na ni napsali pár dobrých recenzí.#$b#A bez tvé morální podpory bych ji opravdu nedokončil.$l\"/pause 1000/speak Elliott \"Vlastně to vůbec není pravda. Dokončil bych ji tak jako tak.$h#$b#Ale jsem vděčný za tvou víru ve mě... v mou vizi. A... no...\"/pause 500/speak Elliott \"Ehm... @? Jak to jen říct...$8\"/emote Elliott 40/speak Elliott \"Už nějakou dobu jsme přátelé... Ale já... Už si nejsem jistý, jestli k tobě stále cítím jen přátelství.$l\"/emote farmer 16/speak Elliott \"Ne! Neříkám, že s tebou chci zpřetrhat všechna pouta!$8#$b#Vlastně... právě naopak.$l\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"...Jak to jen vyjádřit...?$l#$b#Pro jednou mi došla slova...\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 24 8/positionOffset farmer -20 16/faceDirection farmer 1 true/showFrame 101/specificTemporarySprite heart 26 20/playSound dwop/pause 1500/startJittering/pause 700/speak Elliott \"$q -1 null#@? Ty se třeseš...$l#$r -1 50 event_boat1#Mám radost.#$r -1 -50 event_boat2#Je mi to velmi nepříjemné. Přestaň.\"/stopJittering/fork tooBold/pause 1800/globalFade/viewport -1000 -1000/speak Elliott \"Měli bychom se vrátit, než zesílí jižní vítr.$l^Jejda... Chvění tvého těla přilákalo Karmínovou rybu... Měli bychom odsud zmizet.$l\"/pause 1400/speak Elliott \"Podívej se odtud na údolí... Konečně vypadá jako ‚domov‘.\"/pause 4000/speak Elliott \"*povzdechne si*... To byl den...$l\"/end",
+        "NoToElliott": "emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"Chápu.$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"...$a\""
+      }
+    }
+  ]
+}

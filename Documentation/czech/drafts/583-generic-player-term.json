@@ -1,0 +1,12 @@
+{
+  "id": "583-generic-player-term",
+  "kind": "short",
+  "target": "Strings/Lexicon",
+  "complexityReason": "The only remaining Lexicon entry is reviewed as a complete one-row asset and must stay aligned with the locked farmer glossary term.",
+  "entries": {
+    "GenericPlayerTerm": "farmáři^farmářko"
+  },
+  "structureReasons": {
+    "GenericPlayerTerm": "Installed Stardew Valley 1.6.15 IL loads this localized key in both purchased-item dialogue methods, splits it on a bare caret, defaults to index 0, and selects index 1 for a female player. The two resulting values are passed as {0} to the greeting 'Hey, {0}.', so Czech intentionally adds the runtime-supported male/female vocative branch farmáři^farmářko."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "505-trailer-big-pam-faith",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed Pam’s faith crisis, Yoba and Sign of the Vessel terminology, neutral phrasing, choices, voice, commands, and markers against English.",
+  "rows": [
+    {
+      "target": "Data/Events/Trailer_Big",
+      "key": "503180/f Pam 2250/A pamHouseUpgrade/A pamHouseUpgradeAnonymous/Hn pamHouseUpgrade",
+      "field": null,
+      "source": "shaneTheme/-1000 -1000/farmer 18 11 1 Pam 25 9 1/skippable/specificTemporarySprite pamYobaStatue/viewport 25 9 true/move farmer 6 0 1/move farmer 0 -1 1/faceDirection Pam 2/pause 300/speak Pam \"Hey, kid...\"/faceDirection Pam 1/pause 500/speak Pam \"You caught me prayin'...\"/pause 500/move farmer 3 0 0/move farmer 0 -1 3/pause 500/speak Pam \"This here's my new 'Sign Of The Vessel' statue.#$b#...Ordered it from Joja.com with free 2-day shipping. Don't tell Pierre.\"/pause 1000/faceDirection Pam 2/pause 400/faceDirection Pam 3/pause 500/faceDirection Pam 2/pause 500/faceDirection Pam 1/speak Pam \"...I've been settling in to the new house. It's really a great place. Feels like home already. I really do appreciate this new comfort.$h\"/pause 500/faceDirection Pam 2/pause 1000/showFrame Pam 25/pause 1000/animate Pam false true 250 26 27/pause 400/emote farmer 8/pause 500/textAboveHead Pam \"Oh, Sorry...\"/pause 1000/stopAnimation Pam/pause 950/speak Pam \"*sniff*... It's just...$s#$b#...I should be so happy...$s\"/showFrame Pam 0/faceDirection Pam 1/speak Pam \"...But I haven't been able to cut back on the beer... I haven't changed at all...$s\"/pause 500/emote farmer 28/pause 500/speak Pam \"For a long time, now... I've felt like there's something missing from my life, @... $s#$b#I always thought it was about money... Just bein' poor... ya know? So I figured gettin' this house would solve everything. But ...it didn't.$s#$b#So that's... That's why I ordered this statue.\"/pause 1000/question fork0 \"Say something to Pam:#I'm glad you're feeling hopeful#Sorry Pam, but Yoba isn't real...\"/fork positive/friendship Pam -1000/pause 500/speak Pam \"That ain't funny! ...I pour my heart out to you and that's how you respond? What in the void is wrong with you?$u\"/faceDirection Pam 3/shake Pam 10000/emote Pam 12/pause 1000/speak Pam \"I don't care what you say... I have faith in Yoba! Plenty of us do! Now get out.$4\"/pause 1000/move farmer 0 1 3/move farmer -6 0 3 true/end",
+      "translation": "shaneTheme/-1000 -1000/farmer 18 11 1 Pam 25 9 1/skippable/specificTemporarySprite pamYobaStatue/viewport 25 9 true/move farmer 6 0 1/move farmer 0 -1 1/faceDirection Pam 2/pause 300/speak Pam \"Hej, děcko...\"/faceDirection Pam 1/pause 500/speak Pam \"Zrovna jsem se modlila...\"/pause 500/move farmer 3 0 0/move farmer 0 -1 3/pause 500/speak Pam \"Tohle je moje nová socha ‚Znamení nádoby‘.#$b#...Objednala jsem ji na Joja.com s bezplatným doručením do dvou dnů. Pierreovi ani slovo.\"/pause 1000/faceDirection Pam 2/pause 400/faceDirection Pam 3/pause 500/faceDirection Pam 2/pause 500/faceDirection Pam 1/speak Pam \"...Pomalu si zvykám na nový dům. Je to opravdu skvělé místo. Už se tu cítím jako doma. Tohoto nového pohodlí si opravdu vážím.$h\"/pause 500/faceDirection Pam 2/pause 1000/showFrame Pam 25/pause 1000/animate Pam false true 250 26 27/pause 400/emote farmer 8/pause 500/textAboveHead Pam \"Ach, promiň...\"/pause 1000/stopAnimation Pam/pause 950/speak Pam \"*popotáhne*... Jde jen o to...$s#$b#...Měla bych být tak šťastná...$s\"/showFrame Pam 0/faceDirection Pam 1/speak Pam \"...Ale nedokázala jsem omezit pivo... Vůbec jsem se nezměnila...$s\"/pause 500/emote farmer 28/pause 500/speak Pam \"Už dlouho... mám pocit, že mi v životě něco chybí, @... $s#$b#Vždycky jsem si myslela, že jde o peníze... Prostě o chudobu... víš? Takže jsem si říkala, že tenhle dům všechno vyřeší. Ale... nevyřešil.$s#$b#Tak proto... Proto jsem si objednala tuhle sochu.\"/pause 1000/question fork0 \"Řekni něco Pam:#Je dobře, že máš naději#Promiň, Pam, ale Yoba není skutečný...\"/fork positive/friendship Pam -1000/pause 500/speak Pam \"To není k smíchu! ...Otevřu ti své srdce a takhle odpovíš? Co je s tebou, u Prázdnoty?$u\"/faceDirection Pam 3/shake Pam 10000/emote Pam 12/pause 1000/speak Pam \"Je mi jedno, co říkáš... V Yobu věřím! A spousta dalších lidí také! Teď vypadni.$4\"/pause 1000/move farmer 0 1 3/move farmer -6 0 3 true/end",
+      "sourceSHA256": "c218cd06aa8f49efafe81290ac227c05877b36f7edad7960c9da9027016d0465",
+      "translationSHA256": "af51206b908c0ba483cc86d884594961c7fd11afbbd32987a123aee5fc9c6cec",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Trailer_Big",
+      "key": "positive",
+      "field": null,
+      "source": "pause 100/emote farmer 56/pause 500/speak Pam \"Hah! Well, look at me! I'm gettin' real sappy in my old age, aren't I?  ...hehehe.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Thanks for lendin' an ear, kid\"/pause 5000/end",
+      "translation": "pause 100/emote farmer 56/pause 500/speak Pam \"Ha! Jen se na mě podívej! Na stará kolena začínám být pěkně sentimentální, co?  ...hehehe.$h\"/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \"Díky, že mi nasloucháš, děcko\"/pause 5000/end",
+      "sourceSHA256": "d07681bba8995465b459eb4ca68975c4cca529fb3c5d0fad1c8e942992cdea71",
+      "translationSHA256": "362a8e59b5debf0591856f417a908933a7e83c7034e420ec9be92435b2459c64",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

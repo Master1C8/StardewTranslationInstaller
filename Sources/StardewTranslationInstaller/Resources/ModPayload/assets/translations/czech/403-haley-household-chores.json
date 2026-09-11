@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HaleyHouse",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "11/f Haley 500/p Haley/p Emily": "50s/6 20/farmer -10 -10 0 Haley 5 20 1 Emily 8 20 3/skippable/pause 1000/shake Haley 500/pause 500/speak Haley \"Uááá! Vždycky uklízím pod polštáři já! Tenhle týden jsi na řadě TY!$a\"/emote Emily 12/speak Emily \"Chováš se dětinsky, Haley. Většinu práce v tomhle domě dělám já, a ty to víš.$u\"/pause 200/warp farmer 2 24/playSound doorClose/pause 400/faceDirection Haley 2/faceDirection Emily 2/speak Haley \"Ach, to je ${ten nový farmář^ta nová farmářka}$.$7\"/faceDirection Emily 3/speak Emily \"${On^Ona}$ má jméno, abys věděla.$u\"/move farmer 0 -1 1/move farmer 3 0 0/faceDirection Emily 2/speak Haley \"Hej, vsadím se, že ty můj názor pochopíš.\"/emote farmer 8/speak Emily \"*povzdech*... Opravdu mě mrzí, že tě do toho zatahuju, @. Haley si stěžuje, protože jsem ji požádala, aby uklidila pod polštáři.$u\"/faceDirection Haley 1/speak Haley \"$q 45 null#Jen proto, že minulý týden jsem je uklízela já!$a#$r 46 -50 Event_clean2#Přestaň fňukat a prostě to ukliď!#$r 45 30 Event_clean1#Haley, proč by to nemohla být tvoje jediná týdenní povinnost?#$r 46 -30 Event_clean3#Emily, povznes se nad to a tentokrát to udělej ty.\"/fork haleyWontDoIt/stopMusic/faceDirection Haley 3/emote Haley 12/pause 400/faceDirection Haley 1/speak Haley \"Dobře, vyhráváš. Asi to může být každý týden moje práce. Pak už nebude důvod se o tom hádat.$u\"/faceDirection Haley 2/speak Emily \"Díky, @. To bylo skvělé řešení.$h\"/pause 1000/end",
+        "haleyWontDoIt": "move Haley -2 0 0/move Haley 0 -2 0/emote Haley 12/faceDirection Emily 1/emote Emily 28/speak Emily \"*povzdech*... Tak to asi udělám sama...$s\"/pause 1000/end"
+      }
+    }
+  ]
+}

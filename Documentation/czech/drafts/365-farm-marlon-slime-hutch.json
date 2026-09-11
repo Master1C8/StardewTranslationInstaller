@@ -1,0 +1,9 @@
+{
+  "id": "365-farm-marlon-slime-hutch",
+  "kind": "long",
+  "target": "Data/Events/Farm",
+  "complexityReason": "Translate Marlon's complete Slime Hutch visit and slime-egg tutorial while preserving canonical slime terminology, veteran humor, gift award, event state and dialogue controls.",
+  "entries": {
+    "690006/n slimeHutchBuilt/H": "continue/64 15/farmer 64 16 2 Marlon 66 15 2/broadcastEvent/skippable/pause 1000/move farmer -1 0 2/move farmer 0 1 1/pause 500/showFrame Marlon 12/pause 1000/speak Marlon \"Dnes ráno jsem narazil na Robin... řekla mi, že máš nový Slizí příbytek!\"/showFrame Marlon 8/shake Marlon 1600/textAboveHead Marlon \"To není špatné!\"/pause 1600/showFrame Marlon 12/pause 500/speak Marlon \"Když jsem byl ve tvém věku, choval jsem slizy. Je to skvělý koníček... ale nebezpečný.#$b#Jak myslíš, že jsem přišel o oko?\"/shake Marlon 1000/showFrame Marlon 12/textAboveHead Marlon \"Ha!\"/pause 1000/textAboveHead Marlon \"Jen žertuji.\"/showFrame Marlon 12/pause 200/showFrame Marlon 7/animate Marlon false false 120 4 5 6 7/pause 800/speak Marlon \"Tady, něco pro tebe mám.\"/faceDirection farmer 2/itemAboveHead slimeEgg/pause 1000/pause 1000/pause 1300/awardFestivalPrize slimeEgg/pause 300/faceDirection farmer 1 true/pause 500/showFrame Marlon 12/speak Marlon \"Je to slizové vejce. Když ho vložíš do Slizového inkubátoru, vylíhne se z něj sliz.#$b#Teď si to vejce pořádně prohlédni. Až příště vyrazíš lovit slizy, dávej pozor, jestli nenajdeš další vejce. Jsou vzácná, ale slizové příšery je čas od času upustí.#$b#Sbírej vejce od různých slizů, ať máš ve stádě pestřejší výběr!\"/pause 500/end"
+  }
+}

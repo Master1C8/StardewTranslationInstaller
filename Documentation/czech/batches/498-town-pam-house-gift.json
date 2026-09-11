@@ -1,0 +1,47 @@
+{
+  "id": "498-town-pam-house-gift",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed both five-string gift-resolution branches against English; verified Pam’s singular versus plural poverty agreement, Penny’s spouse and non-spouse reassurance, player-neutral family wording, Pelikánov reference, emotional and paragraph markers, and exact branch command sequences.",
+  "rows": [
+    {
+      "target": "Data/Events/Town",
+      "key": "itsagift",
+      "field": null,
+      "source": "pause 200/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"Then... I'll just have to swallow my pride...\"/pause 500/speak Pam \"*ahem*... Thank you, @.$s\"/pause 500/speak Penny \"Mom...$s\"/faceDirection Pam 0/speak Penny \"Don't worry... @ just wants to make us happy. No one in Pelican Town looks down on us for being poor.$s\"/faceDirection Robin 1/pause 500/speak Pam \"...We aren't 'poor' anymore, kid... put that thought out of your mind!#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end",
+      "translation": "pause 200/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"Takže... budu muset spolknout svou hrdost...\"/pause 500/speak Pam \"*odkašle si*... Děkuji, @.$s\"/pause 500/speak Penny \"Mami...$s\"/faceDirection Pam 0/speak Penny \"Neboj se... @ nám chce jen udělat radost. Nikdo v Pelikánově námi nepohrdá kvůli naší chudobě.$s\"/faceDirection Robin 1/pause 500/speak Pam \"...Už nejsme ‚chudé‘, zlatíčko... vyžeň tu myšlenku z hlavy!#$b#Odteď budeme jako opravdová rodina... slyšíš?#$b#Nechci už být pořád tak zahořklá...$s#$b#Pokusím se svůj život obrátit k lepšímu...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end",
+      "sourceSHA256": "dee4fc6ca06a8bbc2cb5936f62e71dc0b2e0c6c8b9efd848c35290ae42338443",
+      "translationSHA256": "14361137f03002de79dff8e47995ddd3fe8eb91a911fd054aa18ff0f12cce2cf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Town",
+      "key": "itsagift_pennySpouse",
+      "field": null,
+      "source": "pause 200/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"Then... I'll just have to swallow my pride...\"/pause 500/speak Pam \"*ahem*... Thank you, @.$s\"/pause 500/speak Penny \"Mom...$s\"/faceDirection Pam 0/speak Penny \"Don't worry, Mom... we just want to make you happy. No one in Pelican Town looks down on us for being poor.$s\"/faceDirection Robin 1/pause 500/speak Pam \"...I ain't 'poor' anymore, kid... put that thought out of your mind!#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end",
+      "translation": "pause 200/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"Takže... budu muset spolknout svou hrdost...\"/pause 500/speak Pam \"*odkašle si*... Děkuji, @.$s\"/pause 500/speak Penny \"Mami...$s\"/faceDirection Pam 0/speak Penny \"Neboj se, mami... chceme ti jen udělat radost. Nikdo v Pelikánově námi nepohrdá kvůli naší chudobě.$s\"/faceDirection Robin 1/pause 500/speak Pam \"...Už nejsem ‚chudá‘, zlatíčko... vyžeň tu myšlenku z hlavy!#$b#Odteď budeme jako opravdová rodina... slyšíš?#$b#Nechci už být pořád tak zahořklá...$s#$b#Pokusím se svůj život obrátit k lepšímu...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end",
+      "sourceSHA256": "7c532c0b62a13487b3e4d076d9cbc74b802517728da75bd64681666e0df35be8",
+      "translationSHA256": "325965678d4b7cabc5809edb027bb8898d4b76a3e2790f8091d4fd5a9c256335",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

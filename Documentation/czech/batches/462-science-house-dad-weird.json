@@ -1,0 +1,28 @@
+{
+  "id": "462-science-house-dad-weird",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all three dialogue segments against English; verified Maru and Demetrius family voices, the player pronoun gender branch, natural apology and lab terminology, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/ScienceHouse",
+      "key": "DadWeird",
+      "field": null,
+      "source": "speak Maru \"Huh? What did you say to ${him^her}$, Dad?$a\"/pause 500/faceDirection Demetrius 2/emote Demetrius 28/speak Demetrius \"Okay, okay... we were talking about you, sweetie.$5#$b#I wanted to say a few things to @ about you... but I didn't want to embarrass you. I shouldn't have lied about it.$s\"/faceDirection Demetrius 0/pause 300/emote Maru 28/move Maru 2 0 0/speak Maru \"That's okay, Dad. I understand.#$b#We should get back to work before these samples crystallize.\"/faceDirection Demetrius 2/emote Demetrius 32/move Maru 3 0 1/faceDirection Demetrius 0/faceDirection farmer 1/end Maru1",
+      "translation": "speak Maru \"Cože? Co jsi ${mu^jí}$ řekl, tati?$a\"/pause 500/faceDirection Demetrius 2/emote Demetrius 28/speak Demetrius \"Dobře, dobře... mluvili jsme o tobě, zlatíčko.$5#$b#Chtěl jsem @ něco říct o tobě... ale nechtěl jsem tě přivést do rozpaků. Neměl jsem o tom lhát.$s\"/faceDirection Demetrius 0/pause 300/emote Maru 28/move Maru 2 0 0/speak Maru \"To je v pořádku, tati. Chápu.#$b#Měli bychom se vrátit k práci, než ty vzorky zkrystalizují.\"/faceDirection Demetrius 2/emote Demetrius 32/move Maru 3 0 1/faceDirection Demetrius 0/faceDirection farmer 1/end Maru1",
+      "sourceSHA256": "049212586e41ff7fd3ade76f6e4e6d81476647beb367cdebcc04582e47eb6cc4",
+      "translationSHA256": "6c64d6c04abc04ed5478c5ce65674a68cf7c329e6dbc94a1bf1ce129df930c85",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

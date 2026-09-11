@@ -1,0 +1,28 @@
+{
+  "id": "377-farmhouse-emily-magic-outfit",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all seven visible outfit-reveal segments against English; verified Emily's affectionate craft-focused voice, established magic clothing names, Fiber callback, complete reward contents, player-neutral phrasing, romantic marker, animations and exact event skeleton.",
+  "rows": [
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "3917601/f Emily 3500/O Emily/n emilyFiber/A emilyFiber/t 2000 2400/p Emily",
+      "field": null,
+      "source": "EmilyTheme/-1000 -1000/farmer 8 14 3 Emily 7 14 1/makeInvisible 8 14/viewport -100 -100 true unfreeze/pause 3000/speak Emily \"Welcome home, @. I hope you had a nice day.\"/pause 1000/emote farmer 20/pause 1200/speak Emily \"So... I finished that secret project I was working on.\"/emote farmer 8/pause 500/speak Emily \"It's a brand new hand-made outfit for you!$h\"/pause 500/awardFestivalPrize emilyClothes/pause 500/playSound coin/message \"Received Emily's Magic Hat, Emily's Magic Boots, Emily's Magic Shirt, and a matching set of pants!\"/pause 500/speak Emily \"I've always loved sewing and making crafts... So I thought it'd be nice to make you something by hand. I had a lot of fun!#$b#I hope it fits right... and that the fiber isn't too itchy.#$b#There's boots, a hat, a shirt, and pants! It's a complete outfit.\"/pause 800/speak Emily \"Now, when you wear those clothes, you'll think of me... and you'll know I'm here waiting for you to come home safe... okay?$l\"/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 52 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/faceDirection farmer 2 true/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 500/eyes 1 -4500/pause 3000/fade/viewport -100 -100/pause 500/end dialogue Emily \"Time for bed.\"",
+      "translation": "EmilyTheme/-1000 -1000/farmer 8 14 3 Emily 7 14 1/makeInvisible 8 14/viewport -100 -100 true unfreeze/pause 3000/speak Emily \"Vítej doma, @. Doufám, že dnešek byl příjemný.\"/pause 1000/emote farmer 20/pause 1200/speak Emily \"Takže... dokončila jsem ten tajný projekt, na kterém jsem pracovala.\"/emote farmer 8/pause 500/speak Emily \"Je to úplně nový ručně ušitý komplet pro tebe!$h\"/pause 500/awardFestivalPrize emilyClothes/pause 500/playSound coin/message \"Získáváš Emilyin kouzelný klobouk, Emilyiny kouzelné boty, Emilyinu kouzelnou košili a sladěné kalhoty!\"/pause 500/speak Emily \"Šití a ruční práce jsem měla vždycky ráda... Tak mě napadlo, že by bylo hezké vyrobit ti něco vlastníma rukama. Moc jsem si to užila!#$b#Doufám, že ti všechno dobře padne... a že vlákno nebude příliš škrábat.#$b#Jsou tam boty, klobouk, košile a kalhoty! Je to celý komplet.\"/pause 800/speak Emily \"Až budeš nosit tohle oblečení, vzpomeneš si na mě... a budeš vědět, že tu čekám, až se v pořádku vrátíš domů... dobře?$l\"/pause 500/faceDirection Emily 2/pause 500/animate Emily false true 250 52 53/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/faceDirection farmer 2 true/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/pause 250/playSound dwop/positionOffset Emily 4 0/pause 250/stopAnimation Emily/pause 3000/showFrame Emily 55/pause 500/eyes 1 -4500/pause 3000/fade/viewport -100 -100/pause 500/end dialogue Emily \"Je čas jít spát.\"",
+      "sourceSHA256": "f3aa61125e193c2f970375a0eb159b895aa4b3c0de988f9319f2f327ae9ae7ab",
+      "translationSHA256": "2b6678c96438a99cb1945f6ac7092dd69ff3e4e84d30b17b28d4a1a5b178d715",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

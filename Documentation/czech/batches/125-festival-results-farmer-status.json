@@ -1,0 +1,390 @@
+{
+  "id": "125-festival-results-farmer-status",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 20 source/translation pairs twice after final corrections, with no new issue. Checked soup item insertion, the exact multiplayer egg/fishing winner concatenation including the comma-compatible final conjunction, fixed and counted fish results, starter-letter carets and voice, plural item placeholder order, canonical skill names, neutral player status wording and level/journal labels. Event.cs.1862 is an explicitly preserved canonical name; singular Farmer.cs.1919 remains deferred for its runtime English article.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1857",
+      "field": null,
+      "source": "You added {0} to the soup.",
+      "translation": "Do polévky přidáno: {0}.",
+      "sourceSHA256": "916cbe1d4a25e4f4d1051fa87c9d616aaf5fbfe6f9125e5683fd67c490722ca0",
+      "translationSHA256": "fd69a1bd4fe7dc34fe87053b398ca0b11a05c52380297ce76227de7309b1dea0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1862",
+      "field": null,
+      "source": "Abigail!",
+      "translation": "Abigail!",
+      "sourceSHA256": "36d1385da72181744d8dfcd30eab721a450bc5c69c77f5b4c5d020b27284a360",
+      "translationSHA256": "36d1385da72181744d8dfcd30eab721a450bc5c69c77f5b4c5d020b27284a360",
+      "preservationReason": "Abigail is the canonical proper name announced when she wins the egg hunt and remains unchanged in Czech.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1864",
+      "field": null,
+      "source": "It's a tie between",
+      "translation": "Remíza! Na prvním místě jsou",
+      "sourceSHA256": "11041944ab3f25f51c8cb61defa4cc40b485353d636507b373fb49c3622061b5",
+      "translationSHA256": "4ca7c56b4578d54ad43830129fee5c7b0fa29d8a766bb4fff7ff6b888074f987",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1865",
+      "field": null,
+      "source": " and",
+      "translation": " jakož i",
+      "sourceSHA256": "2e5f769687c7731726bb738d6137d86e89691a3a164a80588c046c79ce99d749",
+      "translationSHA256": "de8849ffc125190d97e4826b3da2f2b1728740edafdbd2615a70283f5508c2ce",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1871",
+      "field": null,
+      "source": "Willy, with 5 big, fresh fish!",
+      "translation": "Willy – 5 velkých čerstvých ryb!",
+      "sourceSHA256": "089fb42cc30cd1ec20b0223a3159b3af9d88793e6f7e2666c9e3b09e1615c55f",
+      "translationSHA256": "cd2e0fe0893354a92c41bbd358fe740da91cf95c74efa1a9946dce17c3b65cc1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Event.cs.1872",
+      "field": null,
+      "source": "{0}, with {1} big, slimy fish!",
+      "translation": "{0} – velké slizké ryby, počet: {1}!",
+      "sourceSHA256": "8404dc4c965212253407bf16bbc7b73566846a54b1405a0bf4735317a6aaf709",
+      "translationSHA256": "f5aa80705a4a355b50b2f4297df11749a2eeed958709736503cbc043abc340d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1918",
+      "field": null,
+      "source": "You received 15 Parsnip Seeds!^^'Here's a little something to get you started.^-Mayor Lewis'",
+      "translation": "Získali jste 15 semínek pastináku!^^„Tady je něco málo do začátku.^–starosta Lewis“",
+      "sourceSHA256": "398175942c323be548a284be7390346931e6cc588c9445aa23b3b37218dfa843",
+      "translationSHA256": "a4213f7743f376644d1042cd7612d6ccba7e0c8a77f65f2bea167c4093cd8442",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1922",
+      "field": null,
+      "source": "You received {1} x{0} !",
+      "translation": "Získali jste: {1} × {0}!",
+      "sourceSHA256": "4a69ae2160b5b3aeff41ae981e564e4c77774183a807b4a0de1540c418a48f07",
+      "translationSHA256": "8d4ed9fc273ffec289ebcc825b50d50ce087391e6ddf6ff2976ef1c4d147f2ef",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1972",
+      "field": null,
+      "source": "the farm",
+      "translation": "farma",
+      "sourceSHA256": "77ad3c1d7f9786ffd6e1499c52ebaf96b628774285bcc78c735758aa1e2a5d82",
+      "translationSHA256": "bd5fc77588bcfdbaed5d322b90bb0073fc5795e7b30ca919dd5ae92b0be0ed87",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1986",
+      "field": null,
+      "source": "You feel sluggish from over-exertion.",
+      "translation": "Po nadměrné námaze se cítíte malátně.",
+      "sourceSHA256": "467821008f9548ac15a8d46f0912b8308aafbbd418506cc3b318b2a418386aed",
+      "translationSHA256": "ee7cfa9bfb1b8d765caeb3b2037d85f979d4f60476a50a9b98c4b23827a633cf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1987",
+      "field": null,
+      "source": "You're starting to feel exhausted.",
+      "translation": "Začíná vás zmáhat vyčerpání.",
+      "sourceSHA256": "989ce59e536a6645847f8c07f55de3617d2a3ed3c5c8310a80007094b0c7e879",
+      "translationSHA256": "a5a38d150d1d38ff9b1a4783187b49fd8c0d1aa43b0c1886cfee453bd0b3928f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1991",
+      "field": null,
+      "source": "Farming",
+      "translation": "Zemědělství",
+      "sourceSHA256": "a61abd5d17a01f86ae8e95c1fd18e81621bb3ab208601726376fca10a917f5d7",
+      "translationSHA256": "87d1d070d365142ef0716d064f0547efeae54b03c9ae624d5e7f5d68677491ab",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1992",
+      "field": null,
+      "source": "Mining",
+      "translation": "Těžba",
+      "sourceSHA256": "bf94ba9e2d861e6c1478d938a5d58d71506368426b5dfa9e9f56bfa12422c95e",
+      "translationSHA256": "2c6830efb46f6b330f386c01399cb21b0030cd2edfee335f2a6ff9d5725dd9f2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1993",
+      "field": null,
+      "source": "Fishing",
+      "translation": "Rybaření",
+      "sourceSHA256": "79cea8ff2ba190bbb1bdb045610c272c4c3c56fd19ac0cc07b380e08f736a476",
+      "translationSHA256": "e09259488d1b20641faa1e4e576ccd0dc06fb902375f4915622d228c82c60705",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1994",
+      "field": null,
+      "source": "Foraging",
+      "translation": "Sběračství",
+      "sourceSHA256": "a4966b4bc08a051c29a86ac61ee96052c82db586f26e29d0d953b1b26d591f77",
+      "translationSHA256": "f4aeea4a789ab3c53cf7c68a5f1d80fa2230e62bb8b9594bbb0a25461a01a163",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1995",
+      "field": null,
+      "source": "Luck",
+      "translation": "Štěstí",
+      "sourceSHA256": "382e766581df7c496ef87244f943dedcd74d6b6aab8af8789df88a6a22d170eb",
+      "translationSHA256": "bbc6a35734132b3894ac65e6a8e1f4f33858384c8bc855044536dfc3f6aeea08",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.1996",
+      "field": null,
+      "source": "Combat",
+      "translation": "Boj",
+      "sourceSHA256": "49fcf2c78b506b3e32115f752124e4ee1b998f4f578cc2d35425e6ee3eb203a6",
+      "translationSHA256": "154da59cb1be8eecf36c153917c09ee9d8458bb8c719cdba8e6e8d51d7e7e22c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2003",
+      "field": null,
+      "source": "{0} Level Up",
+      "translation": "Vyšší úroveň dovednosti: {0}",
+      "sourceSHA256": "7a84dac7cef33c1976d56b34597718fbc7016fc4940ea6b04100159813c16fe0",
+      "translationSHA256": "5232fbeb73201372fe4ca28eb142b73c474a007c7396ae83642b9faca2b1e383",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2010",
+      "field": null,
+      "source": "Nice try...",
+      "translation": "Dobrý pokus...",
+      "sourceSHA256": "4ca3ec63e15d6edf802e67909331af9aff9bca7fa878f8dfed662e9cda148d15",
+      "translationSHA256": "9eaed7232aa45576522cf8aa5b6b1e119932130cee02585ae05781903bb8a6d2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "Farmer.cs.2011",
+      "field": null,
+      "source": "New Journal Entry",
+      "translation": "Nový záznam v deníku",
+      "sourceSHA256": "c34ae063ba67b9345cb2cb8308e0f0840343067c4634199e33c1a2eaae4a51ce",
+      "translationSHA256": "052721de1ce3fe5527fcf54a98caec129e8c708c3779bb6b694446bfdb02e206",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

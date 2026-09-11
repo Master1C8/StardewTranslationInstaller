@@ -1,0 +1,998 @@
+{
+  "id": "001-ui",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "All 52 source/target pairs read for meaning, exact placeholders, UI function, Czech grammar and glossary. Corrected generic udice to vlasec per the glossary and clarified the building-upgrade source label. Complete final batch reread found no remaining issue. Month counts and names use case-safe labels; OK is explicitly justified.",
+  "rows": [
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe_cooking",
+      "field": null,
+      "source": "cooking",
+      "translation": "kuchařský",
+      "sourceSHA256": "82bd81ea4b0302554165ae91628c0965b68b976a62ecf107c2e79688833f7599",
+      "translationSHA256": "3cbaba70ad6d45f3a63a45e9cf263d81e2a2dba2d6348da1003316197963b29a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe_crafting",
+      "field": null,
+      "source": "crafting",
+      "translation": "výrobní",
+      "sourceSHA256": "1ecf8bd1f3b8b5e9e9aad892ca7add643d41bc700df682b6a0d12f9d3df81ff8",
+      "translationSHA256": "aa0f4399b7342062132ca9b2075e727113cb53a3e81dea664b9f26218592f2e8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "LearnedRecipe",
+      "field": null,
+      "source": "You've learned a new {0} recipe: {1}",
+      "translation": "Naučili jste se nový {0} recept: {1}",
+      "sourceSHA256": "b6f15b2594ba38d16daabcb46ebfb9f46f5e8ac20c534625c2d6e9fba8dfb12e",
+      "translationSHA256": "98344128ca73cb4e388244286d7b1770d4ab69173733492392495ee925cbac6c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FarmerFile_1",
+      "field": null,
+      "source": "File on: {0}\nSteps Taken: {1}\nGifts Given: {2}\nDays In Stardew Valley: {3}\nDirt Hoed: {4}\nItems Crafted: {5}\nItems Cooked: {6}\nTrash Recycled: {7}",
+      "translation": "Spis: {0}\nPočet kroků: {1}\nRozdané dárky: {2}\nDny v údolí Stardew: {3}\nObdělaná políčka: {4}\nVyrobené předměty: {5}\nUvařená jídla: {6}\nRecyklované odpadky: {7}",
+      "sourceSHA256": "93f08e5133c9e37095cb5cd6ad782637464931d1472454b876718e1df5078b18",
+      "translationSHA256": "3ab50ba2d00b7d6b237d72d5112264ba624b4e1279094e34510ebf7961f31640",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "FarmerFile_2",
+      "field": null,
+      "source": "Monsters Slain: {0}\nFish Caught: {1}\nLines Cast: {2}\nSeeds Sown: {3}\nItems Shipped: {4} ",
+      "translation": "Zabité příšery: {0}\nUlovené ryby: {1}\nNahození vlasce: {2}\nZasetá semena: {3}\nOdeslané předměty: {4} ",
+      "sourceSHA256": "cc30705e609aa51a69218f275b2a680f5e4a8ed947624fd34dbcb666fc3b7f96",
+      "translationSHA256": "b632e0de59d7b0deb66112dfc0d1b4af29a1fb6680f4b0feb4616422aea41c15",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney1",
+      "field": null,
+      "source": "You don't have enough money.",
+      "translation": "Nemáte dost peněz.",
+      "sourceSHA256": "ed134892f9bf843b023368e1f574805ebfddb80d3bdb5bd278c7ed3c36ab3161",
+      "translationSHA256": "92ea01e7464671255d6c2efc5129c3b04561dbe3d25b88edb744703d8c783ecd",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney2",
+      "field": null,
+      "source": "Not enough money.",
+      "translation": "Nedostatek peněz.",
+      "sourceSHA256": "19f27030a2e112b07e5992d8e94f4130aa0f02267d816f3c94b7d4a579f6fb9c",
+      "translationSHA256": "b9e7be2c01b7067c2f17e9141485632f85a5a72c063e2e1e5363cb466f4a0ea2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "NotEnoughMoney3",
+      "field": null,
+      "source": "You don't have enough money...",
+      "translation": "Nemáte dost peněz...",
+      "sourceSHA256": "676e7ac3423eeab35bf6d8456376bff727b6eb5c95a0cdb3f429ae730dd6a6b3",
+      "translationSHA256": "1c720deeeb7cac052e83151465833da0fbe5a7cda1a1b6de6a54f8a49845a7d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Toggle_ColorPicker",
+      "field": null,
+      "source": "Toggle Color Picker",
+      "translation": "Přepnout výběr barvy",
+      "sourceSHA256": "3f4b6249c332ec2a752055dad7039dec82574345c653de6cd2a5bbdf9522311a",
+      "translationSHA256": "837a281f76a2530c15790a37af17407d1ebcee56d0162011f37d672da97ae73c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Move",
+      "field": null,
+      "source": "Change Home Building",
+      "translation": "Změnit domovskou budovu",
+      "sourceSHA256": "bfce501830b7aaf018074718450f6ea775fca5cb669dcd44e12f280d658c2c47",
+      "translationSHA256": "7452e7fac2d2d765a426b96b4794b1047fda1ecaae398c4ff1b66b3a3fca24da",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_HomeChanged",
+      "field": null,
+      "source": "Home changed",
+      "translation": "Domov byl změněn",
+      "sourceSHA256": "cad918f5b920a2a1abe213f42c432b05c5049a840e11d05ae8437bc8bb7911d7",
+      "translationSHA256": "1f9ca1e85b933006c0edbacb74cacf7d3d43516e5787fb91198b1f035a86f26f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_BuildingFull",
+      "field": null,
+      "source": "That Building Is Full",
+      "translation": "Tato budova je plná",
+      "sourceSHA256": "4e85222ad8765c334e1fd309fc5dc0ee05313e51c06a043256cdc42c6eb94899",
+      "translationSHA256": "d8e1cfd522df879fcf59533d3a8dd56d99b6d30e3cd3ab9023f26ea42f923192",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_AlreadyHome",
+      "field": null,
+      "source": "That Is My Home",
+      "translation": "Tady už bydlím",
+      "sourceSHA256": "c65bc989df3326cd74b78d756c95c5528c9f107910fa6455a52b2c1301e01280",
+      "translationSHA256": "09c48c166df23433d620cff1720d6e69e680651b8bc0f31b85e055d91c7b809c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Moving_CantLiveThere",
+      "field": null,
+      "source": "{0}s Can't Live There.",
+      "translation": "{0} tu nemůže žít.",
+      "sourceSHA256": "d54d9ef40e16f1b94ab05ba83dcf5fc6b0d41a8cbe95d8aa06b49bfbc82d0460",
+      "translationSHA256": "68b20f31d208b9e78edad3d5cf6e1e77e916c48132c99d5880e51d8897baeba6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Sell",
+      "field": null,
+      "source": "Sell for {0}g",
+      "translation": "Prodat za {0}g",
+      "sourceSHA256": "d80efee206f33199645512dce6d9ec7ea0d0fc2c215cc0dd8edd3401ae3ad829",
+      "translationSHA256": "dbcfc235f63d2513197cb8338e1b5afb33148625bdf1bff18e510df268210d5d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AllowReproduction",
+      "field": null,
+      "source": "Allow Pregnancy",
+      "translation": "Povolit březost",
+      "sourceSHA256": "e47125cb9a6bc45e477b220b1210504bd517a0f4519aa53def28c3ad4ea0472f",
+      "translationSHA256": "557a0243e11f02d6d1e3cbc9581751e354847d58f3f1c056a8f4bfb02737919f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Age1",
+      "field": null,
+      "source": "Age: 1 month",
+      "translation": "Věk: 1 měsíc",
+      "sourceSHA256": "401d103d12d971d9f33e3aa0d1a766f816a3d8c5c06df434d12cf4abdef21110",
+      "translationSHA256": "6838f274565033b82f602b06482e2bc497badf6083f93fdeded1acc54ca73a6f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AgeN",
+      "field": null,
+      "source": "Age: {0} months",
+      "translation": "Věk v měsících: {0}",
+      "sourceSHA256": "971f6ca83135ef2c47953cbf88d83c5d5686a6e68eb6ad99613ae76967cfa453",
+      "translationSHA256": "6ab81f2a89969e389d021c3552264789aea4e8b66711a833e37d1908abed0115",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_AgeBaby",
+      "field": null,
+      "source": " (Baby)",
+      "translation": " (Mládě)",
+      "sourceSHA256": "53f94a0c99646c2dc3d6c7c7114d882afa534b76aa7c47626bfbd53869cf4d23",
+      "translationSHA256": "50739463b5a404470beb072df59dd567925c5ae4afa512ba4d168cb625010bdf",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_Parent",
+      "field": null,
+      "source": "Parent: {0}",
+      "translation": "Rodič: {0}",
+      "sourceSHA256": "aa45c8d549a71bc37096ac9aa574d9197a309322bd8d626768a289cdf6673cbe",
+      "translationSHA256": "f3c6f5c4c4ecd377c96846d6de59cb9b55e85d9f5c27674764617c5f700e712c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_ConfirmSell",
+      "field": null,
+      "source": "Are you sure?",
+      "translation": "Opravdu?",
+      "sourceSHA256": "f0762c4f3bfcd695e32e7fcd087dc2a60bc26cda108b4fc0a643445b397168c7",
+      "translationSHA256": "ed8e1915156a28d6d67ccffbd46777d9f79531934dd49444d4b0cafe61903871",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AnimalQuery_ChooseBuilding",
+      "field": null,
+      "source": "Please choose a {0} for your {1}",
+      "translation": "Vyberte budovu typu {0} pro zvíře: {1}",
+      "sourceSHA256": "4d649cd4941a057af576d0e27840e52f09bfedfc8e35106c7e789fc22372637e",
+      "translationSHA256": "f9f71dcc2509537adfa7aec4b0cfd3e76d0e447c41fb86b4a7b5fb4811d772a2",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_Birthday",
+      "field": null,
+      "source": "{0}'s Birthday",
+      "translation": "Narozeniny: {0}",
+      "sourceSHA256": "2b55cf06e7377a1ce08a2d49cbaa8b040a7129dab92cf756cb2612396ae40bf3",
+      "translationSHA256": "858863c297ad5eb2c27878915a90455515f929ff84195734ba1ca14761ea3a12",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_SBirthday",
+      "field": null,
+      "source": "{0}' Birthday",
+      "translation": "Narozeniny: {0}",
+      "sourceSHA256": "0bce934b8edfacc49cddff7f37193d2e3714b53a8048ed6d6e9e6e31eb906e6b",
+      "translationSHA256": "858863c297ad5eb2c27878915a90455515f929ff84195734ba1ca14761ea3a12",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_Year",
+      "field": null,
+      "source": "Year {0}",
+      "translation": "Rok {0}",
+      "sourceSHA256": "b8ebd81ef96d7af67c547a75b4b0f12017d195dd2f042d44fb9bbc45d259f924",
+      "translationSHA256": "6ddf8d332924635d191375dff31a0a06f929e353df567c653c7e419f640b7fd4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_NothingPosted",
+      "field": null,
+      "source": "Nothing is posted today.",
+      "translation": "Dnes tu nic nevisí.",
+      "sourceSHA256": "6c7fba299d5507c5ada6211ab1d62323da15d40968b71f6dc97d05886bde1ee7",
+      "translationSHA256": "91f99f8cde854d31a57583a5b5d521204ec826c237d40f4442178834632fc19c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Billboard_NightMarket",
+      "field": null,
+      "source": "Night Market",
+      "translation": "Noční trh",
+      "sourceSHA256": "ba38b60917604dbfcd8bc3106661a04c54be47453c7419865f982ca08532f3c5",
+      "translationSHA256": "9e7184d5e39211d17159e9b4ac17184174e40e7125ba42e380d4ea9c4f2fdb99",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "AcceptQuest",
+      "field": null,
+      "source": "Accept Quest",
+      "translation": "Přijmout úkol",
+      "sourceSHA256": "6f63391be04daa376e6ee122c164e0316d8bdafb94ecf03589473e54de94b617",
+      "translationSHA256": "40a97888f8936fdda142d3ab2bb04eadba082c15f60fcf8b7d773e01ee3787c6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "BobberBar_Perfect",
+      "field": null,
+      "source": "Perfect!",
+      "translation": "Perfektní!",
+      "sourceSHA256": "bd57f3b934e2ccaafa024220729dc6940788443dd570878dfc255ffc0e18f97b",
+      "translationSHA256": "3efb0aea26779688921a0120d0054d33f32bfc606e478dcfe463c80220044ed9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Confirm",
+      "field": null,
+      "source": "OK",
+      "translation": "OK",
+      "sourceSHA256": "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3",
+      "translationSHA256": "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3",
+      "preservationReason": "OK is the canonical Czech glossary confirmation label (ok-cancel), shared with English.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_ChangeAppearance",
+      "field": null,
+      "source": "Change Appearance",
+      "translation": "Změnit vzhled",
+      "sourceSHA256": "bed8196282f38e2f850ef46f4de76fb24bd9c4890be69a39d10ea25b7da2adfe",
+      "translationSHA256": "322075d228883f556d83fcaf62ff5147ffd6a193a6692543125c388a52578853",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Demolish",
+      "field": null,
+      "source": "Demolish Buildings",
+      "translation": "Zbourat budovy",
+      "sourceSHA256": "cc37969b1c29679332085498c135d4c5985174e9ae2ed2bd38880ce86d34104e",
+      "translationSHA256": "d4843454ab8215384a8c148aab3200f30a9ecfd2e1ef700fbec79751234ffa88",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_MoveBuildings",
+      "field": null,
+      "source": "Move Buildings",
+      "translation": "Přesunout budovy",
+      "sourceSHA256": "796a9051f84d73c3f16ae3c428a2ae334beeaf2b2aa4b83728d777e951ac8158",
+      "translationSHA256": "c5709b514e98da330f962b7a7657bdd76252a8048e1c91eed09cff648443eb01",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Upgrade",
+      "field": null,
+      "source": "Upgrade from {0}",
+      "translation": "Vylepšení z budovy typu {0}",
+      "sourceSHA256": "89b2d70fa1a2430ac789ccd8ae25622c21c9a35992e9e130b72266c9975ea8b4",
+      "translationSHA256": "a5f5caa9612301f787b9cff63479d685dcc5568338012254f0776459dc5e00e9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_Build",
+      "field": null,
+      "source": "Build",
+      "translation": "Postavit",
+      "sourceSHA256": "bdd254b65baac169f6ac50e8175ce6d930c1fcb086dec59808d3e0170ae2291d",
+      "translationSHA256": "7f0ba4f9070944578ca3142b0590560172873e585294bd1dd32c4d4f52e291e0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_DuringConstruction",
+      "field": null,
+      "source": "Can't demolish during construction",
+      "translation": "Během stavby nelze bourat",
+      "sourceSHA256": "5ff0b764924ac394b4f698f44bae9ccee296977fcdb4ad09b124df1e2be70b65",
+      "translationSHA256": "78c16cd312c86e5d6441f8938a9ea55f05a9e3da66607ee64ad08bd28f917527",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_AnimalsHere",
+      "field": null,
+      "source": "Can't demolish until animals are relocated",
+      "translation": "Než bude možné budovu zbourat, přestěhujte zvířata",
+      "sourceSHA256": "d56213efbc08f82c1e4d8fc86aa8316e88a21190eff10bc1d92a8bfadb143539",
+      "translationSHA256": "1a7c6397ffe5042e2157e3855ba3b333e69590959a49b31d1524784370594913",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_PlayerHere",
+      "field": null,
+      "source": "Can't demolish while a player is in here",
+      "translation": "Nelze zbourat, dokud je uvnitř hráč",
+      "sourceSHA256": "7e2758a4d6b2ce339f9dcb92aa671bdefab67b6f21973b1087991bd20a51dda1",
+      "translationSHA256": "2bc0902fd49fb3c267ad82ee290ad0cd2ad248b8e497332f99ed592891edce28",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantDemolish_LockFailed",
+      "field": null,
+      "source": "Can't demolish this right now",
+      "translation": "Tuto budovu teď nelze zbourat",
+      "sourceSHA256": "0edefbd417d650df2348516aa6f55d7ff06c3aa0898fecc27d3dbc98f1b67fb5",
+      "translationSHA256": "ffd72485c5b2ad18c870b1d2a320ffcf10515ffbf530d1beab9bbb05b65d3fc9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantUpgrade_BuildingType",
+      "field": null,
+      "source": "Incorrect Building Type",
+      "translation": "Nesprávný typ budovy",
+      "sourceSHA256": "a95f6bc5a3f81dbd579949cbc2061d001e9a1e6b0c6f64abd2eb589ee504e667",
+      "translationSHA256": "e79011b5b770bf9d5da617f772e6236c2b5137e2f0c102fb8aab7aec992470e8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_CantBuild",
+      "field": null,
+      "source": "Can't Build There",
+      "translation": "Tady nelze stavět",
+      "sourceSHA256": "f71ea1099c9600d64312ea79db9d3ba48d5b1d877308d8cec424755a1179408a",
+      "translationSHA256": "f6ab9da1c0f8c8a34d917a445d1ee1a2d573693b53a3d76b781c6bcfb5e585dc",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Upgrade",
+      "field": null,
+      "source": "Select a {0} to upgrade",
+      "translation": "Vyberte budovu typu {0} k vylepšení",
+      "sourceSHA256": "7c0bbba3fe4fb9ba38329346108640c54b0778f27f0bb80f2792fe8ce8890aa9",
+      "translationSHA256": "05778b90cc0e1a0c9b6b8e6383e6de3d5c5e9a591232e1f6935a7e104ebeebad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Demolish",
+      "field": null,
+      "source": "Choose a structure to demolish",
+      "translation": "Vyberte stavbu ke zbourání",
+      "sourceSHA256": "0fc1b766e69747a36e718d918e9418cf87fb995d2617a2750954cf234f9eb602",
+      "translationSHA256": "937e5dfaeaa6aa982a54cc25041a1928d45b725be20443e4e76ff51315424fac",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Move",
+      "field": null,
+      "source": "Choose a building to move",
+      "translation": "Vyberte budovu k přesunutí",
+      "sourceSHA256": "dd9c62b7fc88bb4de8168b191d5d2045fd3e4b1bbf31b9f1eac8b6b1389dad0e",
+      "translationSHA256": "20cd662a36ca55d62bd469af29292d153931954458f4a0b7ccd66ee37259d1d7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_SelectBuilding_Paint",
+      "field": null,
+      "source": "Select a building to paint",
+      "translation": "Vyberte budovu k natření",
+      "sourceSHA256": "70cef33f234e13f04e24c4a44794becbf47d4e85b4ab2d9db31a035ec881bab4",
+      "translationSHA256": "9cd80831efbc2174ec0577b3d8b0626b820fdd94a0fd2ae1c145bf512482b283",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Carpenter_ChooseLocation",
+      "field": null,
+      "source": "Choose a location",
+      "translation": "Vyberte umístění",
+      "sourceSHA256": "9c96b1df63e4c26565a5eca1023888c19958eb12e43ace20e8053d8454ae1dc7",
+      "translationSHA256": "5690b6fc7fd736eca6a80fb5920449e415ff6aa5c334568b45bef87d28a976a0",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Name",
+      "field": null,
+      "source": "Name",
+      "translation": "Jméno",
+      "sourceSHA256": "dcd1d5223f73b3a965c07e3ff5dbee3eedcfedb806686a05b9b3868a2c3d6d50",
+      "translationSHA256": "86069372236f4af50b9753b3e5ad19296d929fa885d200a7db6a579dc9b00ba4",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Wallets",
+      "field": null,
+      "source": "Money Style",
+      "translation": "Peníze",
+      "sourceSHA256": "f6f6f58b7774a129e38bc416ca46e3c03716e68cf17a547c8a5b37a751ca704e",
+      "translationSHA256": "8a2a1f5ec8953a9c788d7637e76cfcae7b6de1781aee2ad2d46f80bf0d2ebb4a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_SharedWallet",
+      "field": null,
+      "source": "Shared",
+      "translation": "Společné",
+      "sourceSHA256": "e3c4b39d6d5013477c98cd58236fed455f37aa7017b7168ce1980a449aaf438a",
+      "translationSHA256": "9aed6c090d95d018863dcc2f20b7c24ab3c4de73188316449fad562e6be96609",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_SeparateWallet",
+      "field": null,
+      "source": "Separate",
+      "translation": "Oddělené",
+      "sourceSHA256": "726c1269604d059f8ef7966d88f703535a2d16f8dde76b58a24073ab299687b2",
+      "translationSHA256": "d820a009fbc9452231d27f4dea76d5dcacbef0609aa8960728eb14ea8d7164fe",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Difficulty",
+      "field": null,
+      "source": "Profit Margin",
+      "translation": "Zisková marže",
+      "sourceSHA256": "30242b1819ad986773652ecd3986966558a47cc4a7c4de4ca47b6a36a5ed09d7",
+      "translationSHA256": "f80e54e0f083b38fee1ec982eedb217de07b3f29a05fb2577c18bb62bd6b5e69",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/UI",
+      "key": "Character_Close",
+      "field": null,
+      "source": "Nearby",
+      "translation": "Poblíž",
+      "sourceSHA256": "a994cd47d47c8a03a904a1ff4628e8a9d0406e1e55917e8c11ec9f146134fbdc",
+      "translationSHA256": "c6593bfdde8ba4ad4c9dfe8d69598751aab24ee107b4e520661de9a20818ad0d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

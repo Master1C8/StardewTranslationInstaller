@@ -1,0 +1,28 @@
+{
+  "id": "380-farmhouse-sam-song-progress",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read the complete song-progress event after the audit correction. Replaced the calqued všechny různé nástroje with idiomatic ostatní nástroje while preserving the arrangement meaning. Verified Sam voice, Veselý junimo continuity, music cue, @ placeholder, markers and full command sequence; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "3918602/e 3918601/O Sam/t 610 1700/A samJob2/p Sam/L",
+      "field": null,
+      "source": "none/-1000 -1000/farmer 52 24 1 Sam 53 24 3/addConversationTopic samJob3 3/skippable/makeInvisible 52 24/viewport -100 -100 true unfreeze/pause 2000/speak Sam \"Hey, @. I'm making progress on the song... check it out.\"/pause 400/faceDirection Sam 2/animate Sam false true 400 52 53/playMusic sam_acoustic2/pause 26000/stopAnimation Sam/showFrame Sam 52/pause 1000/showFrame Sam 0/faceDirection Sam 3/speak Sam \"It's kinda bare-bones right now... but when I add in all the different instruments, it'll come together. You'll see.\"/emote farmer 32/speak Sam \"You know... I'm not too upset about this kid's show idea anymore.#$b#You gotta start somewhere, right?#$b#And hey, maybe I'll be a big hit in the children's concert circuit!$h\"/emote farmer 56/pause 1200/end dialogue Sam \"I'll have the finished song ready soon. I hope they're happy with it!\"",
+      "translation": "none/-1000 -1000/farmer 52 24 1 Sam 53 24 3/addConversationTopic samJob3 3/skippable/makeInvisible 52 24/viewport -100 -100 true unfreeze/pause 2000/speak Sam \"Ahoj, @. Na té písničce jsem zase pokročil... poslechni si ji.\"/pause 400/faceDirection Sam 2/animate Sam false true 400 52 53/playMusic sam_acoustic2/pause 26000/stopAnimation Sam/showFrame Sam 52/pause 1000/showFrame Sam 0/faceDirection Sam 3/speak Sam \"Zatím je to jen kostra... ale až přidám ostatní nástroje, všechno si sedne. Uvidíš.\"/emote farmer 32/speak Sam \"Víš... ten nápad s dětským pořadem už mě tolik netrápí.#$b#Někde se začít musí, ne?#$b#A třeba budu mít velký úspěch na dětské koncertní scéně!$h\"/emote farmer 56/pause 1200/end dialogue Sam \"Hotovou písničku budu mít brzy. Doufám, že se jim bude líbit!\"",
+      "sourceSHA256": "2c5c9e586cb9e30b239a644d9a93a922027e349190dc925d6773fb94e0f8f9c0",
+      "translationSHA256": "74814f83d9d9b7b6115bf9da35ed3f9ec4ac9ef1628642c1107302240fa5f4b1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "129-npc-greetings-loved-gifts",
+  "kind": "short",
+  "target": "Strings/StringsFromCSFiles",
+  "complexityReason": "Complete the twelve generic NPC greeting variants through NPC.cs.4072. The following loved-gift gossip template group was already completed and approved in batch 064, so it is deliberately excluded here.",
+  "entries": {
+    "NPC.cs.4058": "Ahoj...",
+    "NPC.cs.4059": "Ahoj!",
+    "NPC.cs.4060": "Zdravím.",
+    "NPC.cs.4061": "Ahoj.",
+    "NPC.cs.4062": "Zdravím!",
+    "NPC.cs.4063": "Dobré ráno",
+    "NPC.cs.4064": "Dobré odpoledne",
+    "NPC.cs.4065": "Dobrý večer",
+    "NPC.cs.4066": "{0}!",
+    "NPC.cs.4068": "Ahoj, {0}!",
+    "NPC.cs.4071": "Ahoj, {0}",
+    "NPC.cs.4072": "Ahoj."
+  },
+  "preservationReasons": {
+    "NPC.cs.4066": "This greeting consists only of a dynamic display-name placeholder and language-neutral exclamation mark, so both must remain exactly unchanged."
+  }
+}

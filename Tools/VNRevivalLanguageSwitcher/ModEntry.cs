@@ -20,6 +20,7 @@ namespace VNRevival.LanguageSwitcher
 public sealed class ModEntry : Mod
 {
     private const string BulgarianLanguageCode = "bg-vnrevival";
+    private const string CzechLanguageCode = "cs-vnrevival";
     private const string PersianLanguageCode = "fa-vnrevival";
     private const string ArabicLanguageCode = "ar-vnrevival";
     private const string HebrewLanguageCode = "he-vnrevival";
@@ -103,7 +104,7 @@ public sealed class ModEntry : Mod
         string? languageCode = LocalizedContentManager.CurrentModLanguage?.LanguageCode;
         if (languageCode == DutchLanguageCode)
             __result = "een";
-        else if (languageCode == BulgarianLanguageCode)
+        else if (languageCode == BulgarianLanguageCode || languageCode == CzechLanguageCode)
             __result = string.Empty;
         else
             __result = SerbianGrammar.SuppressIndefiniteArticle(__result, languageCode == SerbianLanguageCode);

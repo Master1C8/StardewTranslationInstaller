@@ -1,0 +1,9 @@
+{
+  "id": "360-farm-clint-furnace",
+  "kind": "long",
+  "target": "Data/Events/Farm",
+  "complexityReason": "Translate Clint's complete furnace tutorial and recipe award while preserving ore-processing terminology, quest activation, recipe command, event choreography and dialogue controls.",
+  "entries": {
+    "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"Ehm... Ahoj. Dobré ráno.#$b#Všiml jsem si, že rozbíjíš kameny a nacházíš rudu. To je dobře!\"/pause 500/speak Clint \"Jestli chceš z nalezené rudy vytěžit co nejvíc, budeš potřebovat pec.\"/pause 500/speak Clint \"Náhodou se mi tu povalovala jedna sada plánů navíc. Tady, jsou tvoje.\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"Teď umíš vyrábět ‚Pec‘\"/pause 800/speak Clint \"V peci můžeš tavit kovové ingoty. Ingoty lze použít k výrobě, stavbě a vylepšování nástrojů.\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \"Až vytavíš několik měděných ingotů, zvaž, jestli si u mě nenechat vylepšit některý nástroj. Mohlo by ti to práci výrazně usnadnit.#$b#Tak dobře. Mířím domů. Měj se.\"/pause 200/addQuest 11/end"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "403-haley-household-chores",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed both household-chores rows against English; verified Haley and Emily's contrasting voices, cushion-cleaning dispute, both source gender tokens, all four response choices, refusal fork, emotional markers, placeholders and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "11/f Haley 500/p Haley/p Emily",
+      "field": null,
+      "source": "50s/6 20/farmer -10 -10 0 Haley 5 20 1 Emily 8 20 3/skippable/pause 1000/shake Haley 500/pause 500/speak Haley \"Urgghh! I always clean under the cushions! It's YOUR turn this week!$a\"/emote Emily 12/speak Emily \"You're being childish, Haley. I do the vast majority of work in this house, and you know it.$u\"/pause 200/warp farmer 2 24/playSound doorClose/pause 400/faceDirection Haley 2/faceDirection Emily 2/speak Haley \"Oh, it's that new ${farm boy^girl from the farm}$.$7\"/faceDirection Emily 3/speak Emily \"${He^She}$ has a name, you know.$u\"/move farmer 0 -1 1/move farmer 3 0 0/faceDirection Emily 2/speak Haley \"Hey, I bet you'll understand my point of view here.\"/emote farmer 8/speak Emily \"*sigh*... I'm really sorry to involve you in this, @. Haley is complaining because I asked her to clean under the cushions.$u\"/faceDirection Haley 1/speak Haley \"$q 45 null#It's only because I cleaned them last week!$a#$r 46 -50 Event_clean2#Stop whining and just clean it!#$r 45 30 Event_clean1#Haley, why not have this be your one weekly job?#$r 46 -30 Event_clean3#Emily, take the high road and do it this time.\"/fork haleyWontDoIt/stopMusic/faceDirection Haley 3/emote Haley 12/pause 400/faceDirection Haley 1/speak Haley \"Alright, you win. I guess this can be my job every week. Then there won't be any reason to argue over it.$u\"/faceDirection Haley 2/speak Emily \"Thanks, @. That was a great solution.$h\"/pause 1000/end",
+      "translation": "50s/6 20/farmer -10 -10 0 Haley 5 20 1 Emily 8 20 3/skippable/pause 1000/shake Haley 500/pause 500/speak Haley \"Uááá! Vždycky uklízím pod polštáři já! Tenhle týden jsi na řadě TY!$a\"/emote Emily 12/speak Emily \"Chováš se dětinsky, Haley. Většinu práce v tomhle domě dělám já, a ty to víš.$u\"/pause 200/warp farmer 2 24/playSound doorClose/pause 400/faceDirection Haley 2/faceDirection Emily 2/speak Haley \"Ach, to je ${ten nový farmář^ta nová farmářka}$.$7\"/faceDirection Emily 3/speak Emily \"${On^Ona}$ má jméno, abys věděla.$u\"/move farmer 0 -1 1/move farmer 3 0 0/faceDirection Emily 2/speak Haley \"Hej, vsadím se, že ty můj názor pochopíš.\"/emote farmer 8/speak Emily \"*povzdech*... Opravdu mě mrzí, že tě do toho zatahuju, @. Haley si stěžuje, protože jsem ji požádala, aby uklidila pod polštáři.$u\"/faceDirection Haley 1/speak Haley \"$q 45 null#Jen proto, že minulý týden jsem je uklízela já!$a#$r 46 -50 Event_clean2#Přestaň fňukat a prostě to ukliď!#$r 45 30 Event_clean1#Haley, proč by to nemohla být tvoje jediná týdenní povinnost?#$r 46 -30 Event_clean3#Emily, povznes se nad to a tentokrát to udělej ty.\"/fork haleyWontDoIt/stopMusic/faceDirection Haley 3/emote Haley 12/pause 400/faceDirection Haley 1/speak Haley \"Dobře, vyhráváš. Asi to může být každý týden moje práce. Pak už nebude důvod se o tom hádat.$u\"/faceDirection Haley 2/speak Emily \"Díky, @. To bylo skvělé řešení.$h\"/pause 1000/end",
+      "sourceSHA256": "87dccd558131f889780beebc7d510c7c6c07ed740e4810e4455d8f0104a2af90",
+      "translationSHA256": "b41494d1b635ca11a2ec2e6939405f8221560ea107f9bf882352cb6e587100e1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/HaleyHouse",
+      "key": "haleyWontDoIt",
+      "field": null,
+      "source": "move Haley -2 0 0/move Haley 0 -2 0/emote Haley 12/faceDirection Emily 1/emote Emily 28/speak Emily \"*sigh*... I guess I'll just do it, then...$s\"/pause 1000/end",
+      "translation": "move Haley -2 0 0/move Haley 0 -2 0/emote Haley 12/faceDirection Emily 1/emote Emily 28/speak Emily \"*povzdech*... Tak to asi udělám sama...$s\"/pause 1000/end",
+      "sourceSHA256": "0641d797813fa64886014f1bd6e754cbdc0cbbcd947abaae9ec6fbcdada7c375",
+      "translationSHA256": "fa9f06e8db8f65c03b09ce87d3a7efe84b2076302ebf4231ff229e8fb7505c84",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

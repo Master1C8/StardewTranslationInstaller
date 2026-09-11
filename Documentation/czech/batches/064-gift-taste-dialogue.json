@@ -1,0 +1,845 @@
+{
+  "id": "064-gift-taste-dialogue",
+  "locale": "cs",
+  "kind": "short",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Read all 44 source/translation pairs and reread the complete corrected batch. Original NPC.loadCurrentDialogue proves 4079/4080 select relative gender and insert the nominative relationship label; every template now keeps that person nominative, including friendship and cruel-joke formulations. Explicit recipient gender is retained; removed male player mohl and kept first-person generic speaker neutral. Raw item labels have a carrier noun. Prefix/suffix spaces, capitalization composition and emotional markers checked. 4135/4138 call getRandomNegativeFoodAdjective(null), whose remaining Czech Lexicon values must be neuter singular to agree with to; purchase-dialogue callers can use the same case.",
+  "rows": [
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4079",
+      "field": null,
+      "source": "my {0}",
+      "translation": "můj {0}",
+      "sourceSHA256": "429decd362e3922436b04f5cc55472e65af0ab3c974616ae8df73eae03a619ff",
+      "translationSHA256": "caae0348b00a4c7ac053896ea99496212ed699949ef6013780e063d44088d647",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4080",
+      "field": null,
+      "source": "my {0}",
+      "translation": "moje {0}",
+      "sourceSHA256": "429decd362e3922436b04f5cc55472e65af0ab3c974616ae8df73eae03a619ff",
+      "translationSHA256": "104d44d084ebc042c241d7fab9735e927eb31f0482017b3089a6484d05612500",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4083",
+      "field": null,
+      "source": "Did you know that {0}",
+      "translation": "Víš, že {0}",
+      "sourceSHA256": "cab0f517c365360f09a3c3c59073cc5b40ff7006d1f5d27257f18735c6f874a2",
+      "translationSHA256": "4cbc4a941e847eb02fc822cc9369145d2bb5c15afc5b566b8bfb91f8f543267f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4084",
+      "field": null,
+      "source": " loves '{0}'?",
+      "translation": " miluje dárek „{0}“?",
+      "sourceSHA256": "593daac7ae0c4280f047689dc92afaa653e2db87ae9c4bee01837b9b8e2dfb28",
+      "translationSHA256": "a7834378fa3d1811001761fe3f9114083a9a26877608d60509870f717c3ca279",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4086",
+      "field": null,
+      "source": "{0} loves '{1}'! ",
+      "translation": "{0} miluje dárek „{1}“! ",
+      "sourceSHA256": "9c305f5e99a8f978120e15ec2cc03374ba2b66c8cf44ddbdad073040e81efff3",
+      "translationSHA256": "3ce45600cebc40df013813761da5f365c1e23588be5d89b8e82a1c5270e924c3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4088",
+      "field": null,
+      "source": "He told me.$h",
+      "translation": "Řekl mi to.$h",
+      "sourceSHA256": "32a5357260ece54f159f6fe9e7148500a69aa3b2a78d16108c24a397ffce01e8",
+      "translationSHA256": "25c5250afa0c21b68fc0ed9af7e3c073ab5e68e178320f940f97913ff81c16f5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4089",
+      "field": null,
+      "source": "She told me.$h",
+      "translation": "Řekla mi to.$h",
+      "sourceSHA256": "316d039f4f020a5659d045e228148c180c64600d08a72306160e2d263a70cb1f",
+      "translationSHA256": "a2d1f8a6a5cdb733d777f369047e745a165388a6d3b47c5a73ec797cc59a22b5",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4091",
+      "field": null,
+      "source": "Here's a secret, {0} loves '{1}'.",
+      "translation": "Prozradím ti tajemství: {0} miluje dárek „{1}“.",
+      "sourceSHA256": "e3be79f11bb8f640400e9f17ae8bee77931f038c81a04095a4b8c204bf9b423e",
+      "translationSHA256": "3e3f0495f6fd8c31afba9be6f83241dca2b96481c780c82fbad4184596a1b198",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4094",
+      "field": null,
+      "source": "If you want {0} to like you, give him '{1}'.",
+      "translation": "Chceš, aby si tě {0} oblíbil? Daruj mu předmět „{1}“.",
+      "sourceSHA256": "9172a22855259e9f8c84b6e90a8a87893988caf3583f5b080fc68d9a22202978",
+      "translationSHA256": "9dcbf43781407fc7788973b42dff167f5f9b756b1c3ea8e718b20a279b2a0d57",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4097",
+      "field": null,
+      "source": "If you want {0} to like you, give her '{1}'.",
+      "translation": "Chceš, aby si tě {0} oblíbila? Daruj jí předmět „{1}“.",
+      "sourceSHA256": "891fdc2c058f143e2aed41d04147dc3796a07cb08c554945eb4f75da8fbf061b",
+      "translationSHA256": "8b853c044a8910457ddaaaf053c8eff5f411ad072274d6f8dedcba634299061d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4100",
+      "field": null,
+      "source": "If you want to get on {0}'s good side, give him '{1}'.",
+      "translation": "Chceš, aby ti byl {0} nakloněný? Daruj mu předmět „{1}“.",
+      "sourceSHA256": "1f604a6b9a5d7fdc474e1c770c36a4496e23b85884d2def0558d253cfb69dca0",
+      "translationSHA256": "404edaad9318cd599c61dc65084c3a457769257580523d0f5c447e5e8b0b88f7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4103",
+      "field": null,
+      "source": "If you want to get on {0}'s good side, give her '{1}'.",
+      "translation": "Chceš, aby ti byla {0} nakloněná? Daruj jí předmět „{1}“.",
+      "sourceSHA256": "8886f14598fc18d9d94d3b4d18f2da49fd86d16b0a826cf353a1f2974383141f",
+      "translationSHA256": "296771eee5414c0e42963a6dad320c6c534736d10408b1b0627e684d8eac856d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4106",
+      "field": null,
+      "source": "If you want to make friends with {0}, you can't go wrong with '{1}'.",
+      "translation": "Pokud stojíš o přátelství, {0} určitě ocení dárek „{1}“.",
+      "sourceSHA256": "d27fc3cfe155a2de723adeebf19a5f4351f7f0cf545942de57ea68ee8574e34c",
+      "translationSHA256": "857fa456fbde06dbb4eb55b4d8644aa0025e0f28d95999d7c0612ed1bd9f9a6a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4109",
+      "field": null,
+      "source": " It's his favorite.",
+      "translation": " To má ze všeho nejradši.",
+      "sourceSHA256": "da03176fe0610445124daf667186cacd31b06c46ac8285f1c8a97f3611251d53",
+      "translationSHA256": "680172c010d10288aaa8265fda6147a612fe8a0b62f8a97ffa9e417f8100e619",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4111",
+      "field": null,
+      "source": " It's her favorite.",
+      "translation": " To má ze všeho nejradši.",
+      "sourceSHA256": "5182b8812e364e75396af2ab7b7c54a6a790622c9e018f019cc2012fefe6d58a",
+      "translationSHA256": "680172c010d10288aaa8265fda6147a612fe8a0b62f8a97ffa9e417f8100e619",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4113",
+      "field": null,
+      "source": " He loves it.",
+      "translation": " Miluje to.",
+      "sourceSHA256": "5fa37f0be8a08f4a4a11523543a6612c3353d323528147f94a2f6b5a968f59f0",
+      "translationSHA256": "6020daf11271d106ce2b3a135099e0f81b0cabe16fba15b306968b4d9cfa874b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4114",
+      "field": null,
+      "source": " He loves that stuff.",
+      "translation": " Takové věci miluje.",
+      "sourceSHA256": "12e61785ba3b059196c3a2c9d09873e78da61958010f3f22f689a5ac5805f08f",
+      "translationSHA256": "df1b4505a4a9cd81563eeb6b3f33251508f689767f6a2b98fb1968435360d956",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4115",
+      "field": null,
+      "source": " She loves it.",
+      "translation": " Miluje to.",
+      "sourceSHA256": "87512dd29156b43952de5505c02e1c713103423ae35995d5bdd4484ab3039e9c",
+      "translationSHA256": "6020daf11271d106ce2b3a135099e0f81b0cabe16fba15b306968b4d9cfa874b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4116",
+      "field": null,
+      "source": " She loves that stuff.",
+      "translation": " Takové věci miluje.",
+      "sourceSHA256": "d9fc42678b31bec69e3198bdbd8322933806d90a6f8b7d7e5143e094889c9f3a",
+      "translationSHA256": "df1b4505a4a9cd81563eeb6b3f33251508f689767f6a2b98fb1968435360d956",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4118",
+      "field": null,
+      "source": " I gave it to him one year and he wouldn't stop talking about it.",
+      "translation": " Jednou to ode mě dostal jako dárek a nemohl o tom přestat mluvit.",
+      "sourceSHA256": "823ecd8db157ca81f77ff7fe2bfb46efff43d54ba84673add898a0deadf43333",
+      "translationSHA256": "1a0eb99779f5faff9aeb858742919eca0af7c910133a105b9eb8e1687ea00859",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4120",
+      "field": null,
+      "source": " I gave it to her one year and she wouldn't stop talking about it.",
+      "translation": " Jednou to ode mě dostala jako dárek a nemohla o tom přestat mluvit.",
+      "sourceSHA256": "18b8fbeb3e8df146dc7eacb7e4c0563be891a6def210655136ee0dc2b70787fc",
+      "translationSHA256": "3725701205655c6d883cdc63fd3391938f3e1c87b94f43ead0afd1711cd0da95",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4125",
+      "field": null,
+      "source": " It would make a great gift.",
+      "translation": " Byl by to skvělý dárek.",
+      "sourceSHA256": "851fa72e4a76d9b51a3689fcc0431620dc66255d25aafe87af19217d4d615c27",
+      "translationSHA256": "3bf650cf7b48308b4691faf5b6dfcb9e4d98896deec14995a5fe5aafd17f6b30",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4126",
+      "field": null,
+      "source": " You could really make him happy with that.",
+      "translation": " Tím mu můžeš udělat velkou radost.",
+      "sourceSHA256": "1ffaba8e1e70ce5676fe855a99184a49023189f8bf4021874282bfd378397802",
+      "translationSHA256": "4342c224dfa389f97860b13bca08993bbe34e8e42b9c0ea1feacd16b914d2ef9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4128",
+      "field": null,
+      "source": " You could really make her happy with that.",
+      "translation": " Tím jí můžeš udělat velkou radost.",
+      "sourceSHA256": "d3fc2221fcf5dbc3772d3daa0a0457b918f65bca2e924411b6f1969766dac17f",
+      "translationSHA256": "cb4b39bab353bce6473fa062ad705a842b29f5bf6acd9df713a89e3c9685fde7",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4135",
+      "field": null,
+      "source": " hates '{0}'? He finds it absolutely {1}.",
+      "translation": " nesnáší dárek „{0}“? Připadá mu to naprosto {1}.",
+      "sourceSHA256": "a88f16bca82d591f723cf2a88734dada1b617484b845f109e50e32e7fc0c5e07",
+      "translationSHA256": "18b81c9243a70ea4ed856d0728d4521f836e455c7139d92c9f2855a40f2ade0c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4138",
+      "field": null,
+      "source": " hates '{0}'? She finds it absolutely {1}.",
+      "translation": " nesnáší dárek „{0}“? Připadá jí to naprosto {1}.",
+      "sourceSHA256": "1be6892489bc608bb840f7246813c161e9b27353075e726281b47b22ab8bdcb6",
+      "translationSHA256": "fa318a197b209e6184d7a3a0b2ca9bd79acfa2ea1395b1aecb43896e0a800ca1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4141",
+      "field": null,
+      "source": "{0} really hates '{1}'! He told me.$h",
+      "translation": "{0} vážně nesnáší dárek „{1}“! Řekl mi to.$h",
+      "sourceSHA256": "07562dacceca7d583f42b1063f1c6f5c72cec06f3715692636a351e763083965",
+      "translationSHA256": "87c0ae474beccec9aa86b9480264326509779545442c494c72dcf16019661217",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4144",
+      "field": null,
+      "source": "{0} really hates '{1}'! She told me.$h",
+      "translation": "{0} vážně nesnáší dárek „{1}“! Řekla mi to.$h",
+      "sourceSHA256": "9244064f76f313656a2742b24735d73bbb403efbbe1b802999fa124332f3287a",
+      "translationSHA256": "f1bfe5625a388d0acf384d1fefc938a358ec448058e8a9eaa490de51a48daa73",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4146",
+      "field": null,
+      "source": "A word of warning: ",
+      "translation": "Malé varování: ",
+      "sourceSHA256": "f9c05d843729bbf6c51f5482beaf80d6460af14944dfe6033217d9c99f98d0c4",
+      "translationSHA256": "63b9ec7fce274e4b89ad594cb5177c8f8c5cbdb6f25b40e214538ffbd8e90b43",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4147",
+      "field": null,
+      "source": "{0} really hates '{1}'.",
+      "translation": "{0} vážně nesnáší dárek „{1}“.",
+      "sourceSHA256": "24f22854baf801c4ad8adbc9360526c94a2a825f58c17f1d2cc170075f2793cf",
+      "translationSHA256": "6feac687ddf6ee23e2e6047940b7d3e9d9fe0eb8b14bd157ef93d9ff32e60d1f",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4149",
+      "field": null,
+      "source": "If you want {0} to dislike you, give him '{1}'. He hates it with a passion.",
+      "translation": "Chceš, aby tě {0} neměl rád? Daruj mu předmět „{1}“. Z duše to nenávidí.",
+      "sourceSHA256": "0edfc99456eda8e07cdfddd81becc4df7c68dc9e16a7f93f9c89142e02a1b4c0",
+      "translationSHA256": "acdeed9097b98cf6c2ecdcd62db4170b2e59de958ebc08fa2e01939a168a4859",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4152",
+      "field": null,
+      "source": "If you want {0} to dislike you, give him '{1}'. He hates that stuff with a passion.",
+      "translation": "Chceš, aby tě {0} neměl rád? Daruj mu předmět „{1}“. Takové věci z duše nenávidí.",
+      "sourceSHA256": "5d36771ebc8e594b5937d4e4be5ed1b89f8f4c2b8b61f392fa6c71ae9d50b7f3",
+      "translationSHA256": "12141cb6aa9e0029c103d7f16f09c2f5b12ff4ab1a5f7b11d542b6b84beb8cc8",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4153",
+      "field": null,
+      "source": "If you want {0} to dislike you, give her '{1}'. She hates it with a passion.",
+      "translation": "Chceš, aby tě {0} neměla ráda? Daruj jí předmět „{1}“. Z duše to nenávidí.",
+      "sourceSHA256": "f91f1188db26da6c8710efe3e1f66afa6968517cfa4b3b39880c61f6f28aaad9",
+      "translationSHA256": "e6d9535c409581aa00b19f09b575f43503ac6a14e7bc399a7ffaa78482fdb71b",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4154",
+      "field": null,
+      "source": "If you want {0} to dislike you, give her '{1}'. She hates that stuff with a passion.",
+      "translation": "Chceš, aby tě {0} neměla ráda? Daruj jí předmět „{1}“. Takové věci z duše nenávidí.",
+      "sourceSHA256": "9da21888b8d7a3d745aa383f4b456ca44c21be28421f2d53576aa39de7878f3e",
+      "translationSHA256": "0fe4f8c048c4cdf59a86dab795d7e629619f0917e1a8303a656da948fe91ca43",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4161",
+      "field": null,
+      "source": "If you want to play a cruel joke on {0}, give him '{1}'. He might not forgive you, though.",
+      "translation": "Pokud má být {0} terčem tvého krutého žertu, dej mu předmět „{1}“. Možná ti to ale neodpustí.",
+      "sourceSHA256": "d1a585bff8f818a34c91122f48b23e34e86f57f71f10b26124159b46a5d672ea",
+      "translationSHA256": "3310822610c9e6b58d067b7523eafaa5c5a83435c5d329b6d12227b06cbd6dc3",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4164",
+      "field": null,
+      "source": "If you want to play a cruel joke on {0}, give her '{1}'. She might not forgive you, though.",
+      "translation": "Pokud má být {0} terčem tvého krutého žertu, dej jí předmět „{1}“. Možná ti to ale neodpustí.",
+      "sourceSHA256": "46bf1e58fc7cb1ed867abd2ca3d97022bd956fdfd3b0c4a3aefc29d6e2a38b20",
+      "translationSHA256": "77e84986984cd1db6e98a5ebb38e2476779572f9490fba28b2d5558ada46135c",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4170",
+      "field": null,
+      "source": " I learned that one the hard way.",
+      "translation": " To vím z vlastní neblahé zkušenosti.",
+      "sourceSHA256": "0aff6d0ef022f8d859cfdc7802e69f896002f35fe3a0304d75cda0a8e5c8bbdd",
+      "translationSHA256": "a425fed59f90310ca898c332b3fb792dd87a4989a82cc8bc0336ae5d995c3ff6",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4171",
+      "field": null,
+      "source": " I'm not sure why.",
+      "translation": " Nevím přesně proč.",
+      "sourceSHA256": "0137d22b0048557ebbab36a0e0100b2aea34778ca2b69ccb5e1c364ed68e5687",
+      "translationSHA256": "758ff139a18110472b0057efbd72e07711ba2090928f7d5901c12cca13638543",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4172",
+      "field": null,
+      "source": " Just the thought of it can make him depressed.",
+      "translation": " Už jen pomyšlení na to ho dokáže sklíčit.",
+      "sourceSHA256": "05f0d5d9a04fc66cb4205696603bbab963a81bb89d747dd99a375285823d4dee",
+      "translationSHA256": "e5f8a372c8d02c5e652ca76430072ccd86dd756323fff779e865c04f7b672166",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4174",
+      "field": null,
+      "source": " Just the thought of it can make her depressed.",
+      "translation": " Už jen pomyšlení na to ji dokáže sklíčit.",
+      "sourceSHA256": "513a1b0e3bb430d273b86390100de41ba51b4570b6ef0e9ac562d282cc5ef24c",
+      "translationSHA256": "281ec980821b29a94b1e17759da4bc7e1f3d9c0952876d440306d8f0b897ef8a",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4176",
+      "field": null,
+      "source": " I think he might be allergic.",
+      "translation": " Myslím, že je na to možná alergický.",
+      "sourceSHA256": "72ec5f2a05b2c66b8bbe60cff8358046e229b8247cd1482f4f3aab0ff44e50df",
+      "translationSHA256": "fed8681dd8b24014263226a1180c8df06585aca1be13d57d0b169ead46603933",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4178",
+      "field": null,
+      "source": " I think she might be allergic.",
+      "translation": " Myslím, že je na to možná alergická.",
+      "sourceSHA256": "56a58059dcd2091824915f45bfd0d888338bd18eb20d2554d133c33ce2396b61",
+      "translationSHA256": "774913ff75c3bb7597d9a81e973ed6b3fbdd753dac4cf263153bef151368729d",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4180",
+      "field": null,
+      "source": " I guess everyone has their hang-ups.",
+      "translation": " Každý má asi své vrtochy.",
+      "sourceSHA256": "573a4965b9f7b86845a5908b7861ea382f3e421f01afde8546df392dd86ed60e",
+      "translationSHA256": "473a4431ebd7f39ef14e4bf4fdc4c8edd3753b2779a446312ab81c3d54a3f608",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Strings/StringsFromCSFiles",
+      "key": "NPC.cs.4182",
+      "field": null,
+      "source": "{0} hates '{1}'. You don't want to know the details. Trust me.",
+      "translation": "{0} nesnáší dárek „{1}“. Podrobnosti radši nechtěj znát. Věř mi.",
+      "sourceSHA256": "840bb8cbfbb18ebe6ec6434f0feae17b7e17601c0fda7d7f942a408b53fea981",
+      "translationSHA256": "cbda504922f174b08390c452e9b6ee6c801df4eecfac26915636864ec89ef447",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

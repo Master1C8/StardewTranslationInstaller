@@ -1,0 +1,66 @@
+{
+  "id": "480-temp-romance-branches",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all three romance branches and seven dialogue strings against English; verified Haley's darkroom double meaning, established fotokomora term, exact player-gender branch, her disappointed voice, Elliott's embarrassed reaction, emotional markers, and exact event commands.",
+  "rows": [
+    {
+      "target": "Data/Events/Temp",
+      "key": "decorate",
+      "field": null,
+      "source": "speak Haley \"Decorate?$s#$b#Um, okay.$u\"/faceDirection Haley 1/speak Haley \"So that's the best thing you can think of doing right now? Here... in this small, dark room with me?$u#$b#Interesting.$u\"/faceDirection farmer 0/faceDirection Haley 2/showFrame Haley 22/pause 1000/end dialogue Haley \"Well, the dark room looks great now... Thanks, @.$u\"",
+      "translation": "speak Haley \"Vyzdobit?$s#$b#Ehm, dobře.$u\"/faceDirection Haley 1/speak Haley \"Takže tohle je to nejlepší, co tě právě teď napadá? Tady... v téhle malé temné komoře se mnou?$u#$b#Zajímavé.$u\"/faceDirection farmer 0/faceDirection Haley 2/showFrame Haley 22/pause 1000/end dialogue Haley \"Tak, fotokomora teď vypadá skvěle... Díky, @.$u\"",
+      "sourceSHA256": "87b59708d1071deeec9f07b46e29486c8ef6214bc2ca607fa76306b82498528a",
+      "translationSHA256": "272864a7f8d68abdfdf18d132d64f2ca44e34b2d7391a0c7b29b8cd388c51c30",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "leave",
+      "field": null,
+      "source": "speak Haley \"Oh, you have to leave already?$s#$b#Well... alright. Bye.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"Wow... I didn't think ${he^she}$ was that dense.$s\"/end dialogue Haley \"I thought you had something important to do...$u\"",
+      "translation": "speak Haley \"Ty už musíš jít?$s#$b#No... dobře. Ahoj.$s\"/pause 500/move farmer 0 1 1/faceDirection Haley 2 true/move farmer 1 0 2/move farmer 0 1 2/playSound doorClose/warp farmer -1000 -1000/pause 1000/showFrame Haley 22/pause 1000/speak Haley \"Páni... netušila jsem, že ${je tak natvrdlý^je tak natvrdlá}$.$s\"/end dialogue Haley \"Myslela jsem, že musíš udělat něco důležitého...$u\"",
+      "sourceSHA256": "6ac05282dc280ff89d68e23ad77891fe05688f538622f6e99b1da7c2ea630ec5",
+      "translationSHA256": "8025c14d426749c037e0a8fa1bd6d512a3d9532bcd45125e87d071f738f00ffa",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Temp",
+      "key": "tooBold",
+      "field": null,
+      "source": "showFrame 6/playMusic none/positionOffset farmer -8 0/positionOffset Elliott 8 0/showFrame Elliott 12/jump Elliott/pause 1000/faceDirection Elliott 1/pause 1000/end dialogue Elliott \"I'm so embarrassed...$8\"",
+      "translation": "showFrame 6/playMusic none/positionOffset farmer -8 0/positionOffset Elliott 8 0/showFrame Elliott 12/jump Elliott/pause 1000/faceDirection Elliott 1/pause 1000/end dialogue Elliott \"Je mi tak trapně...$8\"",
+      "sourceSHA256": "56088169b129cedebd92397c7bd59e7c8ecd3f089024dda8c05b3d0da8a6fa01",
+      "translationSHA256": "9414e0b1f933c2bbb7276528b125f1afcfdfc451dd6527f48f32c979499ce3ae",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "029-lexicon-family",
+  "kind": "short",
+  "target": "Strings/Lexicon",
+  "entries": {
+    "ChildTerm_Male": "chlapec",
+    "ChildTerm_Female": "dívka",
+    "Pronoun_Male": "mu",
+    "Pronoun_Female": "jí",
+    "QuestionDialogue_Yes": "Ano",
+    "QuestionDialogue_No": "Ne",
+    "Possessive_Pronoun_Male": "svého",
+    "Possessive_Pronoun_Female": "svého"
+  },
+  "complexityReason": "Small coupled runtime-context batch: complete original IL caller analysis determines the exact Czech noun/pronoun case. Review alongside the dependent family messages."
+}

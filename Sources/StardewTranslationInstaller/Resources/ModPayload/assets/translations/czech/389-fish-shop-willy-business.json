@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FishShop",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "16253595/j 29/X": "distantBanjo/6 6/farmer 5 9 0 Willy -100 -100 2/skippable/move farmer 0 -1 0/pause 1000/warp Willy 4 4/playsound doorClose/pause 100/textAboveHead Willy \"Hola!\"/pause 500/move Willy 1 0 2/speak Willy \"Pojď dál... chovej se jako doma...\"/move farmer 0 -1 0/move farmer -1 0 3/pause 1000/animate farmer true true 9999 35/playSound quickSlosh/pause 800/playSound quickSlosh/pause 800/speak Willy \"Jo... tohle je dobrá věc. Ryby po tom šílí.#$b#Jen... ehm... si po kontaktu s tou šťávou pořádně umyj ruce...$s\"/speak Willy \"Ten pach se tě prý drží až sedm týdnů, ${mladíku^slečno}$...\"/stopAnimation farmer/startJittering/jump farmer/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/positionOffset farmer 4 0/pause 50/stopJittering/pause 1000/speak Willy \"Takže... chytáš hodně ryb?\"/pause 300/stopAnimation farmer/faceDirection farmer 0/pause 500/quickQuestion #Ano#Ne#Je to příliš těžké...(break)emote Willy 20\\speak Willy \"Aha! ${Rybář^Rybářka}$ podle mého gusta...$h\"\\pause 500\\speak Willy \"${Rybáři můžeš vždycky věřit^Na rybářku je vždycky spoleh}$...\"\\speak Willy \"Alespoň to říkával můj starý taťka. Haha!$h#$b#Jen tak dál... jestli chytíš každou rybu v těchto vodách, čeká na tebe zvláštní odměna...\"(break)emote Willy 28\\speak Willy \"Rybaření není nic pro tebe, co? To je škoda...$s\"(break)emote Willy 16\\speak Willy \"Jo, je to těžký sport... zvlášť v začátcích.#$b#Co takhle zkusit ‚Tréninkový prut‘? Prodávám ho přímo tady a velmi levně.#$b#Používej ‚Tréninkový prut‘, dokud nezískáš trochu víc zkušeností.\"/pause 1500/faceDirection Willy 3/emote Willy 28/quickQuestion #Co se děje?#Je všechno v pořádku?(break)pause 100(break)pause 100/pause 400/speak Willy \"Jo... obchod v poslední době moc nejde.$s#$b#Začalo to přibližně v době, kdy staré Komunitní centrum zpustlo... moje ryby už se neprodávají jako dřív...#$b#Musím pracovat dvakrát tolik, abych vůbec vyšel s penězi!\"/faceDirection Willy 2/pause 300/speak Willy \"Na vlastní projekty mi nezbývá čas...$s#$b#Kdyby se tu ale věci zase zlepšily, možná bych měl čas ti něco ukázat...\"/move Willy -1 0 0/playMusic none/speak Willy \"He he... jo. Je tam vzadu... ‚stará přítelkyně‘, která už zažila lepší časy...$h\"/pause 500/emote farmer 8/pause 1000/playMusic ocean/playSound shwip/faceDirection Willy 1 true/pause 40/faceDirection Willy 2/speak Willy \"Jednou, ${mladíku^slečno}$... pochopíš, co tím myslím.\"/pause 2000/end"
+      }
+    }
+  ]
+}

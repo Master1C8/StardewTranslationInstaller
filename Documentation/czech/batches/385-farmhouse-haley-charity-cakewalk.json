@@ -1,0 +1,28 @@
+{
+  "id": "385-farmhouse-haley-charity-cakewalk",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed all five visible charity-event segments and both answer tones against English; verified Haley's spouse voice, cake-walk explanation, cake item names, weather timing, dog-house joke, quest and conversation triggers, escaped branches and exact event structure.",
+  "rows": [
+    {
+      "target": "Data/Events/FarmHouse",
+      "key": "8675611/e 6184643/O Haley/A haleyCakewalk1/t 620 1700/p Haley",
+      "field": null,
+      "source": "continue/-1000 -1000/farmer 23 24 3 Haley 22 24 1/makeInvisible 23 24/addQuest 127/addConversationTopic haleyCakewalk2 0/skippable/viewport -100 -100 true unfreeze/pause 3000/speak Haley \"Hi, honey.#$b#Hey... I have an idea... I want to get everyone together for a charity cake-walk.\"/pause 500/emote farmer 8/pause 1000/speak Haley \"Uh... It's kind of like musical chairs, but everyone wins and gets cake! You'll see...$h#$b#It'll be on the next sunny day in the town square.#$b#Um... would you mind bringing a chocolate cake?\"/quickQuestion Do you agree to bring chocolate cake?#Yes#Yes (begrudgingly)(break)speak Haley \"Great! I'll meet you in the town square tomorrow, weather permitting.$h\"\\animate Haley false true 100 28\\animate farmer true true 100 101\\positionOffset Haley 8 0\\positionOffset farmer -8 0(break)emote Haley 12\\speak Haley \"What's up with the snarky attitude?$3#$b#Fine. You're going to show up tomorrow with a chocolate cake, or else you're in the dog house. You like that better?$3\"/pause 2000/fade/viewport -1000 -1000/end dialogue Haley \"I'm bringing a pink cake.\"",
+      "translation": "continue/-1000 -1000/farmer 23 24 3 Haley 22 24 1/makeInvisible 23 24/addQuest 127/addConversationTopic haleyCakewalk2 0/skippable/viewport -100 -100 true unfreeze/pause 3000/speak Haley \"Ahoj, zlato.#$b#Hej... Mám nápad... Chci všechny sezvat na charitativní dortovou hru.\"/pause 500/emote farmer 8/pause 1000/speak Haley \"Ehm... Je to něco jako hra na židle, ale všichni vyhrají a dostanou dort! Uvidíš...$h#$b#Bude se konat příští slunečný den na náměstí.#$b#Ehm... přineseš čokoládový dort?\"/quickQuestion Souhlasíš, že přineseš čokoládový dort?#Ano#Ano (s nechutí)(break)speak Haley \"Skvělé! Zítra se sejdeme na náměstí, pokud počasí dovolí.$h\"\\animate Haley false true 100 28\\animate farmer true true 100 101\\positionOffset Haley 8 0\\positionOffset farmer -8 0(break)emote Haley 12\\speak Haley \"Co má znamenat ten jízlivý tón?$3#$b#Fajn. Zítra přijdeš s čokoládovým dortem, jinak budeš spát v boudě. Takhle se ti to líbí víc?$3\"/pause 2000/fade/viewport -1000 -1000/end dialogue Haley \"Já přinesu růžový dort.\"",
+      "sourceSHA256": "50768db1aeff8254e96b1724c8aa74c0b7c6f362253ce45b461dd7a6e5a0b88a",
+      "translationSHA256": "78d4e9bffd701d2e485b46fd66b1ca5e5f915c92488c3d18a6bd666bd7043aad",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

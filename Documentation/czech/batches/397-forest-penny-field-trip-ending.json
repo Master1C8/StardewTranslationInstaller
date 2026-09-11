@@ -1,0 +1,48 @@
+{
+  "id": "397-forest-penny-field-trip-ending",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-reviewed both event records against English after correcting eventEnd tense; Penny voice, six parenthood choices, event commands, control markers, and the documented Czech player-gender selector are correct.",
+  "rows": [
+    {
+      "target": "Data/Events/Forest",
+      "key": "fieldTripEnd",
+      "field": null,
+      "source": "pause 400/emote Penny 40/speak Penny \"Well, that's probably enough for today. You two run along and play.\"/speed Jas 4/move Jas 0 3 1/speed Jas 4/move Jas 9 0 3 true/faceDirection Vincent 2 true/jump Vincent/pause 800/speed Vincent 4/move Vincent 0 3 1 false/speed Vincent 4/move Vincent 9 0 1/pause 500/faceDirection Vincent 2/faceDirection Jas 2/faceDirection Penny 1/faceDirection farmer 3/speak Penny \"It's a lot of work to take care of these kids...$u#$b#But I don't really mind. I enjoy seeing them learn... and hopefully I can help them grow up to be good people.\"/faceDirection Penny 2/pause 500/faceDirection Penny 1/speak Penny \"$q -1 null#Would you ever want to be a parent, @?#$r -1 0 event_speaker_kids1#I haven't really thought about it.#$r -1 20 event_speaker_kids2#Absolutely. I want a big family.#$r -1 20 event_speaker_kids3#I guess so. It's a natural urge.#$r -1 10 event_speaker_kids4#No, I don't think I'd be good at it.#$r -1 -10 event_speaker_kids5#No, the world's crowded enough already.#$r -1 -10 event_speaker_kids6#No, I don't want to be tied down with a family.\"/viewport move 1 0 10000/pause 7000/stopMusic/globalFade/viewport -2000 -2000/speak Penny \"Well, I'm glad you showed up, @. I think the kids had a great time.$h\"/end dialogue Penny \"Thanks for making my field trip a success today.\"",
+      "translation": "pause 400/emote Penny 40/speak Penny \"Tak, to by pro dnešek asi stačilo. Vy dva si běžte hrát.\"/speed Jas 4/move Jas 0 3 1/speed Jas 4/move Jas 9 0 3 true/faceDirection Vincent 2 true/jump Vincent/pause 800/speed Vincent 4/move Vincent 0 3 1 false/speed Vincent 4/move Vincent 9 0 1/pause 500/faceDirection Vincent 2/faceDirection Jas 2/faceDirection Penny 1/faceDirection farmer 3/speak Penny \"Starat se o tyhle děti dá hodně práce...$u#$b#Ale vlastně mi to nevadí. Ráda je pozoruji, jak se učí... a snad jim můžu pomoct vyrůst v dobré lidi.\"/faceDirection Penny 2/pause 500/faceDirection Penny 1/speak Penny \"$q -1 null#Lákalo by tě někdy rodičovství, @?#$r -1 0 event_speaker_kids1#Zatím o tom nemám jasno.#$r -1 20 event_speaker_kids2#Rozhodně. Chci velkou rodinu.#$r -1 20 event_speaker_kids3#Asi ano. Je to přirozená touha.#$r -1 10 event_speaker_kids4#Ne, rodičovství by mi asi nešlo.#$r -1 -10 event_speaker_kids5#Ne, svět je už tak dost přelidněný.#$r -1 -10 event_speaker_kids6#Ne, nechci, aby mě rodina svazovala.\"/viewport move 1 0 10000/pause 7000/stopMusic/globalFade/viewport -2000 -2000/speak Penny \"Jsem ráda za tvou návštěvu, @. Myslím, že děti si to moc užily.$h\"/end dialogue Penny \"Díky tobě byl dnešní výlet úspěšný.\"",
+      "sourceSHA256": "07214b181162dd26be87c2fcea31403ded5f07d0f84f869f810685a7d9eef32f",
+      "translationSHA256": "99cee4f677bbf0114b5f0119a8c25d5569b7037877626fafaab6db4ea03bb8e1",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Forest",
+      "key": "eventEnd",
+      "field": null,
+      "source": "faceDirection Penny 3/emote Penny 12/end dialogue Penny \"I can't believe you refused to help me out.$a\"",
+      "translation": "faceDirection Penny 3/emote Penny 12/end dialogue Penny \"Nemůžu uvěřit, že jsi mi ${odmítl^odmítla}$ pomoct.$a\"",
+      "sourceSHA256": "5da0e401d6fd2e2de608b8c0c2a003fb0a09328c75350bafde75ff74079f3aae",
+      "translationSHA256": "9f24f4c0ca80c033200940a4214f574c7fa75c395e819ab582e802a8370df3fb",
+      "structureReason": "Adds one runtime gender selector so the Czech past-tense verb agrees with the player character; event commands and existing control tokens remain unchanged.",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

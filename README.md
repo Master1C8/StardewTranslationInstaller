@@ -1,8 +1,8 @@
 # Stardew Valley — VN Revival Translation Installer
 
-Единый нативный установщик языковых пакетов VN Revival для Stardew Valley. Текущая сборка за один запуск устанавливает русский, сербский, польский, украинский, вьетнамский, суахили, персидский, арабский, индонезийский, филиппинский, нидерландский, хинди-, традиционно-китайский, румынский переводы и перевод на иврит. Пользователь просто открывает приложение: оно автоматически устанавливает всё необходимое и показывает кнопку запуска игры.
+Единый нативный установщик языковых пакетов VN Revival для Stardew Valley. Текущая сборка за один запуск устанавливает русский, сербский, польский, украинский, вьетнамский, суахили, персидский, арабский, индонезийский, филиппинский, нидерландский, хинди-, традиционно-китайский, румынский, болгарский, тайский, греческий и чешский переводы, а также перевод на иврит. Пользователь просто открывает приложение: оно автоматически устанавливает всё необходимое и показывает кнопку запуска игры.
 
-Все языки находятся в одном Content Patcher-пакете, но регистрируются в игре независимо (`ru-vnrevival`, `sr-vnrevival`, `pl-vnrevival`, `uk-vnrevival`, `vi-vnrevival`, `sw-vnrevival`, `fa-vnrevival`, `ar-vnrevival`, `id-vnrevival`, `fil-vnrevival`, `nl-vnrevival`, `hi-vnrevival`, `zh-TW-vnrevival`, `ro-vnrevival`, `he-vnrevival`). Интерфейс установщика остаётся однокнопочным; выбора языков перед установкой нет.
+Все языки находятся в одном Content Patcher-пакете, но регистрируются в игре независимо (`ru-vnrevival`, `sr-vnrevival`, `pl-vnrevival`, `uk-vnrevival`, `vi-vnrevival`, `sw-vnrevival`, `fa-vnrevival`, `ar-vnrevival`, `id-vnrevival`, `fil-vnrevival`, `nl-vnrevival`, `hi-vnrevival`, `zh-TW-vnrevival`, `ro-vnrevival`, `he-vnrevival`, `bg-vnrevival`, `th-vnrevival`, `el-vnrevival`, `cs-vnrevival`). Интерфейс установщика остаётся однокнопочным; выбора языков перед установкой нет.
 
 ## Что уже работает
 
@@ -12,7 +12,7 @@
 - проверка SHA-256 каждого загруженного архива до запуска или распаковки;
 - атомарная установка и обновление только принадлежащего приложению мода;
 - запуск игры через Steam одной кнопкой после установки;
-- пятнадцать независимых локалей VN Revival в меню выбора языка;
+- девятнадцать независимых локалей VN Revival в меню выбора языка;
 - отдельные кнопки, титульные атласы и локальные шрифты для нужных языков;
 - безопасная миграция старых отдельных пакетов VN Revival в единый пакет;
 - отдельная папка `assets/translations`, куда добавляются патчи перевода.
@@ -80,11 +80,11 @@ git push origin main
 ## Структура мода
 
 - `manifest.json` — метаданные Content Patcher-пакета;
-- `content.json` — регистрация пятнадцати дополнительных языков и подключение всех переводов;
+- `content.json` — регистрация девятнадцати дополнительных языков и подключение всех переводов;
 - `assets/button*.png` — отдельные двухкадровые кнопки языков;
 - `assets/title/TitleButtons*.png` — локализованные атласы главного меню;
-- `assets/fonts/{russian,serbian,polish,ukrainian,vietnamese,persian,arabic,filipino,dutch,hindi,traditional-chinese,romanian,hebrew}/*.xnb` — локализованные игровые шрифты;
-- `assets/translations/{russian,serbian,polish,ukrainian,vietnamese,swahili,persian,arabic,indonesian,filipino,dutch,hindi,traditional-chinese,romanian,hebrew}/*.json` — языковые патчи с независимыми условиями.
+- `assets/fonts/{russian,serbian,polish,ukrainian,vietnamese,persian,arabic,filipino,dutch,hindi,traditional-chinese,romanian,hebrew,bulgarian,thai,greek,czech}/*.xnb` — локализованные игровые шрифты;
+- `assets/translations/{russian,serbian,polish,ukrainian,vietnamese,swahili,persian,arabic,indonesian,filipino,dutch,hindi,traditional-chinese,romanian,hebrew,bulgarian,thai,greek,czech}/*.json` — языковые патчи с независимыми условиями.
 
 Официальная документация: [Custom languages](https://stardewvalleywiki.com/Modding:Custom_languages), [Content Patcher](https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/README.md), [SMAPI](https://github.com/Pathoschild/SMAPI).
 

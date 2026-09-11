@@ -1,0 +1,47 @@
+{
+  "id": "341-beach-alex-gridball",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Reviewed both complete rows, all twelve spoken/menu segments and both player choices against English; verified Alex's early boastful voice, gridball and Tunnelers terminology, relationship-tone contrast, Czech grammar and control markers, with identical non-text event skeletons.",
+  "rows": [
+    {
+      "target": "Data/Events/Beach",
+      "key": "20/f Alex 500/z winter/p Alex/w sunny",
+      "field": null,
+      "source": "playful/-100 -100/farmer 27 7 2 Alex 25 17 2/showFrame Alex 23/skippable/animate Alex false true 125 16 17 18 19 20 21 22 23 23 23 23 23 23 23 23 23 23 23 23/viewport 28 14 true/move farmer 0 10 2/stopAnimation Alex/showFrame Alex 24/pause 600/showFrame Alex 23/speak Alex \"Oh, hi.\"/pause 300/emote Alex 40/speak Alex \"Um, it's @, right?\"/pause 800/faceDirection farmer 3/pause 800/faceDirection farmer 2/speak Alex \"I'm just enjoying this great weather, @.\"/pause 1000/faceDirection Alex 1/pause 500/showFrame Alex 24/speak Alex \"Hmm...$u#$b#Hey, go long!$h\"/pause 500/move farmer 2 0 3/pause 1000/showFrame Alex 4/animate Alex false false 80 24 25 25 26 4/pause 240/playSound throw/animate farmer true true 100 30/specificTemporarySprite joshFootball/null/pause 500/stopAnimation farmer/pause 700/speak Alex \"Heh... Nice try.\"/pause 500/move farmer -2 0 2/pause 800/faceDirection Alex 2/speak Alex \"I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind.#$b#I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!\"/pause 1000/question fork1 \"#I believe in you!#Wow, you're really arrogant.\"/fork arrogantJosh/faceDirection Alex 1/pause 500/speak Alex \"Thanks, @. I'll remember that.\"/move Alex 1 0 1/pause 500/end dialogue Alex \"Hey, that was fun, huh?\"",
+      "translation": "playful/-100 -100/farmer 27 7 2 Alex 25 17 2/showFrame Alex 23/skippable/animate Alex false true 125 16 17 18 19 20 21 22 23 23 23 23 23 23 23 23 23 23 23 23/viewport 28 14 true/move farmer 0 10 2/stopAnimation Alex/showFrame Alex 24/pause 600/showFrame Alex 23/speak Alex \"Ahoj.\"/pause 300/emote Alex 40/speak Alex \"Ehm, ty jsi @, že?\"/pause 800/faceDirection farmer 3/pause 800/faceDirection farmer 2/speak Alex \"Jen si užívám tohle skvělé počasí, @.\"/pause 1000/faceDirection Alex 1/pause 500/showFrame Alex 24/speak Alex \"Hmm...$u#$b#Hej, běž dál!$h\"/pause 500/move farmer 2 0 3/pause 1000/showFrame Alex 4/animate Alex false false 80 24 25 25 26 4/pause 240/playSound throw/animate farmer true true 100 30/specificTemporarySprite joshFootball/null/pause 500/stopAnimation farmer/pause 700/speak Alex \"Heh... Dobrý pokus.\"/pause 500/move farmer -2 0 2/pause 800/faceDirection Alex 2/speak Alex \"Budu prvním profesionálním hráčem gridballu z údolí Stardew... O tom vůbec nepochybuju.#$b#Už jsem dovedl školní tým do regionálního play-off... Teď jen trénuju a sílím, abych si vybojoval místo v sestavě týmu Tunnelers z města Zuzu. Jen počkej!\"/pause 1000/question fork1 \"#Věřím ti!#Páni, ty jsi vážně namyšlený.\"/fork arrogantJosh/faceDirection Alex 1/pause 500/speak Alex \"Díky, @. To si budu pamatovat.\"/move Alex 1 0 1/pause 500/end dialogue Alex \"Hej, byla to zábava, co?\"",
+      "sourceSHA256": "1d785caa3923008ec59b1bfe1de0541716eb3c9b83a9bad59a181b08a329202d",
+      "translationSHA256": "15c2622f3df098481f95c70667d5a708a3f30fb289c21cfd7a1a9978335619ff",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    },
+    {
+      "target": "Data/Events/Beach",
+      "key": "arrogantJosh",
+      "field": null,
+      "source": "pause 500/faceDirection Alex 3/emote Alex 12/faceDirection Alex 2/speak Alex \"Hmmph... I think someone's a little jealous.$a\"/move Alex 0 -15 0 true/speak Alex \"I'm out of here.$a\"/faceDirection farmer 0/end dialogue Alex \"...$a\"",
+      "translation": "pause 500/faceDirection Alex 3/emote Alex 12/faceDirection Alex 2/speak Alex \"Hmf... Někdo tu asi trochu žárlí.$a\"/move Alex 0 -15 0 true/speak Alex \"Jdu pryč.$a\"/faceDirection farmer 0/end dialogue Alex \"...$a\"",
+      "sourceSHA256": "b55a27325df02cc44027617368aaf86e90eb73f3c53dbccb272ea5b593a74508",
+      "translationSHA256": "c7525aa018546cb253b0189a4fd48fb08c3c34c78a7ccd8f3be98333bd9b91a9",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

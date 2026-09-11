@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "When": {
+        "Language": "cs-vnrevival"
+      },
+      "Entries": {
+        "3910975/f Shane 1500/e 3910674/t 900 2000/w rainy": "echos/-2000 -2000/farmer 83 92 2 Shane -3000 -3000 2 Harvey -3000 -3000 2/skippable/specificTemporarySprite shaneCliffs/viewport 83 99 clamp true/pause 1000/move farmer 0 5 2/pause 500/speak Shane \"...$7#$b#@...$7\"/pause 1000/showFrame farmer 4/pause 1000/speak Shane \"J... je mi to líto...*škyt*$7#$b#...$7#$b#M... Můj život...$7#$b#Je to ubohý vtip...$7#$b#Podívej se na mě...$7#$b#...$7#$b#Proč se vůbec snažím? ...*vzlyk*$7#$b#Jsem příliš bezvýznamný a hloupý na to, abych... abych vzal svůj život do vlastních rukou...$7#$b#Jsem jen k... kus špinavého odpadu poletujícího ve větru... *krk*$7#$b#.........$7#$b#Poslední dobou sem chodím často... dívám se dolů... $7#$b#Tady mám šanci konečně vzít svůj život do vlastních rukou... Ty útesy...$7#$b#...$7#$b#A... al... *bléé*... ale moc se bojím, moc mě svírá úzkost. Jako vždycky... $7\"/pause 1000/showFrame farmer 0/pause 2000/speak Shane \"@... Jen pracuju, spím a piju ...a... abych otupil pocity sebenenávisti.$7#$b#Proč bych měl vůbec pokračovat? Řekni mi... Ř... Řekni mi, proč bych se neměl hned skutálet z toho útesu...$7\"/pause 1000/showFrame farmer 0/pause 1000/question shaneCliffs \"#Protože máš tolik důvodů žít!#Jas tě potřebuje. Jsi pro ni jako otec.#Byl by to hřích.#Je to na tobě. Jen věz, že jsem tu pro tebe.\"/pause 500/pause 500/pause 500/pause 1000/speak Shane \"@...$7\"/pause 500/showFrame farmer 4/pause 1000/speak Shane \"...Myslím, že mě teď musíš vzít do nemocnice.$7\"/pause 500/showFrame farmer 0/jump farmer/pause 1500/globalFade/viewport -1000 -1000/playMusic none/changeLocation Hospital/warp farmer 16 7/playMusic Hospital_Ambient/warp Harvey 16 6/faceDirection farmer 0/specificTemporarySprite shaneHospital/viewport 16 6 true/pause 2000/speak Harvey \"...Vypláchl jsem mu žaludek a doplnil tekutiny. Bude v pořádku.#$b#Je ale dobře, že se sem díky tobě dostal.\"/faceDirection Harvey 1/emote Harvey 28/speak Harvey \"Nadměrné pití alkoholu tělu velmi škodí... ale právě teď mám největší starost o jeho duševní zdraví...$s#$b#Až se probere, promluvím s ním o možnostech léčby. Znám výborného terapeuta ve městě Zuzu...\"/pause 500/faceDirection farmer 1/pause 1000/speak Harvey \"Život někdy bolí...#$b#Ale vždycky existuje naděje na lepší budoucnost. Musíš v ni věřit.\"/pause 2000/end invisible Shane"
+      }
+    }
+  ]
+}

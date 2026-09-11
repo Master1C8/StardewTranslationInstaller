@@ -1,0 +1,28 @@
+{
+  "id": "412-hospital-emergency-surgery",
+  "locale": "cs",
+  "kind": "long",
+  "glossarySHA256": "cb0b94baf37d83f13a5401acdc21e0c6ef37e2bfd7c91616b1db7ae966dc2161",
+  "reviewNote": "Re-read the complete emergency-surgery row after the audit correction. Replaced the misleading nouzově operovat with natural okamžitě operovat. Verified Harvey masculine voice, player-neutral wording, {0} placeholder, markers and hospitaldeath command sequence; no further issue found.",
+  "rows": [
+    {
+      "target": "Data/Events/Hospital",
+      "key": "PlayerKilled",
+      "field": null,
+      "source": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Easy, now... take it slow.\"/viewport 20 12 true/pause 1000/speak Harvey \"Someone found you unconscious and battered... I had to perform an emergency surgery on you!#$b#Be a little more careful next time, okay?$s\"/showFrame 0/pause 1000/emote farmer 28/hospitaldeath/end",
+      "translation": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/pause 1500/showFrame 5/message \" ...{0}?\"/pause 1000/message \"Klid... pomalu.\"/viewport 20 12 true/pause 1000/speak Harvey \"Někdo tě našel v bezvědomí a v hrozném stavu... Musel jsem tě okamžitě operovat!#$b#Příště buď trochu opatrnější, ano?$s\"/showFrame 0/pause 1000/emote farmer 28/hospitaldeath/end",
+      "sourceSHA256": "2b2d09d4714cc33c28df696277aaf7a5a55994445d7f7b593866ec9b6f4c3238",
+      "translationSHA256": "b5d018f3d7cf1ba77a636aad345bfbc84364bdeee4d0ba855a2b35036bf005ce",
+      "reviewChecks": [
+        "sourceMeaning",
+        "detailsAndTone",
+        "glossary",
+        "czechGrammar",
+        "englishResidue",
+        "characterVoice",
+        "context",
+        "tokensAndStructure"
+      ]
+    }
+  ]
+}

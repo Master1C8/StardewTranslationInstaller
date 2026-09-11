@@ -48,7 +48,7 @@ do {
     let alphaThreshold = CommandLine.arguments.count == 7
         ? Int(CommandLine.arguments[6])
         : 96
-    guard let alphaThreshold, (0...255).contains(alphaThreshold) else { throw RenderError.usage }
+    guard let alphaThreshold, (-1...255).contains(alphaThreshold) else { throw RenderError.usage }
     guard
           let fontName = CTFontDescriptorCopyAttribute(descriptor, kCTFontNameAttribute) as? String,
           let font = NSFont(name: fontName, size: size) else { throw RenderError.font }
@@ -87,11 +87,17 @@ do {
     for y in 0..<result.pixelsHigh {
         for x in 0..<result.pixelsWide {
             let offset = y * result.bytesPerRow + x * bytesPerPixel
-            let opaque = Int(pixels[offset + 3]) >= alphaThreshold
-            pixels[offset] = opaque ? 255 : 0
-            pixels[offset + 1] = opaque ? 255 : 0
-            pixels[offset + 2] = opaque ? 255 : 0
-            pixels[offset + 3] = opaque ? 255 : 0
+            if alphaThreshold == -1 {
+                pixels[offset] = 255
+                pixels[offset + 1] = 255
+                pixels[offset + 2] = 255
+            } else {
+                let opaque = Int(pixels[offset + 3]) >= alphaThreshold
+                pixels[offset] = opaque ? 255 : 0
+                pixels[offset + 1] = opaque ? 255 : 0
+                pixels[offset + 2] = opaque ? 255 : 0
+                pixels[offset + 3] = opaque ? 255 : 0
+            }
         }
     }
     guard let data = result.representation(using: .png, properties: [:]) else {
@@ -99,6 +105,6 @@ do {
     }
     try data.write(to: outputURL)
 } catch {
-    fputs("Usage: render-shaped-text <font-file> <text> <size> <output.png> [font-index] [alpha-threshold]\n", stderr)
+    fputs("Usage: render-shaped-text <font-file> <text> <size> <output.png> [font-index] [alpha-threshold|-1 for antialiasing]\n", stderr)
     exit(1)
 }

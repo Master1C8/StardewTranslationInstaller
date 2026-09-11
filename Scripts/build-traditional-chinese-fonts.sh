@@ -4,7 +4,12 @@ set -euo pipefail
 script_dir=${0:A:h}
 project_root=${script_dir:h}
 xnbcli=${XNBCLI:-${HOME}/Developer/tools/xnbcli/xnbcli}
-font_file=${VN_TRADITIONAL_CHINESE_FONT:-/System/Library/Fonts/Supplemental/Songti.ttc}
+if [[ -n "${VN_TRADITIONAL_CHINESE_FONT:-}" ]]; then
+  font_file=$VN_TRADITIONAL_CHINESE_FONT
+else
+  font_file=$("$script_dir/fetch-fusion-pixel-font.sh")
+fi
+font_name=${VN_TRADITIONAL_CHINESE_FONT_NAME:-Fusion-Pixel-12px-Prop-zh_hant-Regular}
 font_assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/traditional-chinese"
 translations="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/traditional-chinese"
 temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-zh-tw-fonts.XXXXXX)
@@ -17,12 +22,14 @@ trap '/bin/rm -rf "$temp_root"' EXIT
 
 SWIFT_MODULECACHE_PATH=/private/tmp/stardew-swift-module-cache \
 CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
-VN_FONT_NAME=STSongti-TC-Regular \
+VN_FONT_NAME="$font_name" \
 VN_GENERATE_BITMAP_FONT=1 \
 VN_BITMAP_FONT_NAME=ChineseTraditional \
 VN_SPRITEFONT_ATLAS_SIZE=4096 \
 VN_SMALLFONT_ATLAS_SIZE=2048 \
 VN_BITMAP_FONT_ATLAS_SIZE=2048 \
+VN_SPRITEFONT_SIZE=36 \
+VN_SMALLFONT_SIZE=24 \
 /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
   "$temp_root/base-unpacked" \
   "$translations" \

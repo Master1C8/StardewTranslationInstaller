@@ -88,6 +88,7 @@ def render_text(text: str, font: ImageFont.FreeTypeFont, font_file=None) -> Imag
 
 def render_label(max_width: int = 132, max_height: int = 17) -> Image.Image:
     latin_font_path = Path("/System/Library/Fonts/Supplemental/Arial Bold.ttf")
+    include_vn = os.environ.get("VN_INCLUDE_VN", "0") == "1"
     font_size = 18
     while True:
         kannada = render_text(
@@ -95,16 +96,21 @@ def render_label(max_width: int = 132, max_height: int = 17) -> Image.Image:
             ImageFont.truetype(str(font_path), font_size, index=font_index),
             font_path,
         )
-        latin = render_text("VN", ImageFont.truetype(str(latin_font_path), font_size - 2))
-        width = kannada.width + 7 + latin.width
-        height = max(kannada.height, latin.height)
+        latin = (
+            render_text("VN", ImageFont.truetype(str(latin_font_path), font_size - 2))
+            if include_vn
+            else None
+        )
+        width = kannada.width + (7 + latin.width if latin is not None else 0)
+        height = max(kannada.height, latin.height if latin is not None else 0)
         if (width <= max_width and height <= max_height) or font_size == 8:
             break
         font_size -= 1
 
     mask = Image.new("L", (width, height), 0)
     mask.paste(kannada, (0, (height - kannada.height) // 2), kannada)
-    mask.paste(latin, (kannada.width + 7, (height - latin.height) // 2), latin)
+    if latin is not None:
+        mask.paste(latin, (kannada.width + 7, (height - latin.height) // 2), latin)
     return mask
 
 

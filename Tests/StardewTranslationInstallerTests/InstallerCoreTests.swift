@@ -80,6 +80,17 @@ struct InstallerCoreTests {
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
         expect(package.languageCodes == ["ru-vnrevival", "sr-vnrevival", "pl-vnrevival", "uk-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "nl-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival", "el-vnrevival", "cs-vnrevival"])
+        expect(Array(package.languageCodes.prefix(12)) == [
+            "ru-vnrevival", "sr-vnrevival", "pl-vnrevival",
+            "uk-vnrevival", "vi-vnrevival", "sw-vnrevival",
+            "fa-vnrevival", "ar-vnrevival", "id-vnrevival",
+            "fil-vnrevival", "nl-vnrevival", "hi-vnrevival",
+        ])
+        expect(Array(package.languageCodes.dropFirst(12)) == [
+            "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival",
+            "bg-vnrevival", "th-vnrevival", "el-vnrevival",
+            "cs-vnrevival",
+        ])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(TranslationPackage.supportedSiteLocales == [
             "zh", "en", "ru", "es", "pt-BR", "ja", "de", "ko", "fr", "tr", "pl", "zh-TW",
@@ -283,6 +294,26 @@ struct InstallerCoreTests {
             )
         }
 
+        let traditionalChineseFontHashes = [
+            "assets/fonts/traditional-chinese/SpriteFont1.xnb": "818a2389124a19eb54184b229c4ea9b8c28cfeddddb670c806a5b809d263db35",
+            "assets/fonts/traditional-chinese/SmallFont.xnb": "8e95e0b73c1a3d15cc86c4e233970a96bcfdf5796567a0a3236c1f4a2686e883",
+            "assets/fonts/traditional-chinese/ChineseTraditional.xnb": "1e5c1107e47f4439880cd1f02a2b02c3936a8155bd4c9cc5a9d03a81d6197d76",
+            "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb": "6e1c3336240e12986e009b9efaf2cf350a8679263d196f2924306cf0136322dd",
+        ]
+        for (fontPath, expectedHash) in traditionalChineseFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+        let traditionalChineseLicense = try String(
+            contentsOf: payload.appendingPathComponent(
+                "assets/fonts/traditional-chinese/OFL.txt"
+            ),
+            encoding: .utf8
+        )
+        expect(traditionalChineseLicense.contains("SIL OPEN FONT LICENSE Version 1.1"))
+
         let thaiFontHashes = [
             "assets/fonts/thai/SpriteFont1.xnb": "e44f9fc41d5c9d6138f2b9225b8790f50c4bbbbff83bc66cd0339890d979e1f1",
             "assets/fonts/thai/SmallFont.xnb": "01c3dd9f30325734c3e1987cf671c1037322ed2b3ad70efe3c3e499f4beccbca",
@@ -322,7 +353,7 @@ struct InstallerCoreTests {
             "assets/button-filipino.png": "55fec7c86d0cb720209c7d7e496ba2bf4467bf25f377666e7876ace2016df2e5",
             "assets/button-dutch.png": "c567e578d74f39a1c35c778f20b321e0d57281ed3d148e00fb988e55fb55fcb0",
             "assets/button-hindi.png": "ee04a25bd92e48a06f7a9e691986e1315da06afb81cdb3f027258defadb95037",
-            "assets/button-traditional-chinese.png": "0aef2b1e3be469af403fa93bbcce02e07e8fd3678d0dbd684c0a2ce66249fa25",
+            "assets/button-traditional-chinese.png": "6d1d4042524218805b1519720b499f24611c16112693f19b4230215aa469a14b",
             "assets/button-romanian.png": "44c5d1aaad0246f2b48e966d33d978ef835c72f3165a8704b70fc3283e8a7771",
             "assets/button-hebrew.png": "5489bc7393c7b5525fd8dfd9e66047997338361b655398f736216a2398417e36",
             "assets/button-bulgarian.png": "0663820648d16e88f5d0f94736d30e14e6e64b688e312b21e9b85934a266ddad",
@@ -357,7 +388,7 @@ struct InstallerCoreTests {
             "assets/title/TitleButtons-filipino.png": "06e57bd4199a50f863edaa974ca75a14d6320046f43b508451b1d435f90de052",
             "assets/title/TitleButtons-dutch.png": "6d899dcf793f16dbad7966be5f4df30d3cdc7bb5fb55d80bfbfa7d5191e48b6c",
             "assets/title/TitleButtons-hindi.png": "0a2c925d6532ff0c2cfe21d96583dd208046350c39cd63cad1c99103422db4cb",
-            "assets/title/TitleButtons-traditional-chinese.png": "8eb01e40314d7c98c9b5ed3876cc4864c186629ba61903b2a6b017d807761d3b",
+            "assets/title/TitleButtons-traditional-chinese.png": "a188a006342c890442e9c99d1c598e4f54ab19a1f6c52d4f36dc2526b97623c5",
             "assets/title/TitleButtons-romanian.png": "13bd788ec3e9b34adf0f94f9e860381d328396a49b4215a90c6224c5dc6b6d55",
             "assets/title/TitleButtons-hebrew.png": "d0992d6f7034f6d81d712d588d78d567582a20c1199009ab8cc1d07d4470a0f4",
             "assets/title/TitleButtons-bulgarian.png": "04733e38da6820d7b43281d5df3dfb74c1d049ef06e1ed97f8837328fa37e5e6",

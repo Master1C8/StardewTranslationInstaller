@@ -11,6 +11,7 @@ CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
 /usr/bin/swiftc "$project_root/Scripts/render-shaped-text.swift" -o "$renderer"
 
 /usr/bin/python3 "$project_root/Scripts/generate-language-buttons.py" \
-  "$assets" "$renderer" "$@"
+  "$assets" "$renderer" \
+  --template "$project_root/Scripts/assets/language-button-template.png" "$@"
 
 print "Built 19 unified language buttons."

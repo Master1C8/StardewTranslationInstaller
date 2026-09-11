@@ -91,33 +91,7 @@ BUTTONS = (
 FRAME_WIDTH = 174
 FRAME_HEIGHT = 39
 ATLAS_HEIGHT = FRAME_HEIGHT * 2
-INK_COLORS = ((206, 82, 82, 255), (239, 115, 115, 255))
-
-
-def clean_template(source: Image.Image) -> Image.Image:
-    """Remove the old label without sampling pixels that may contain text."""
-    if source.size != (FRAME_WIDTH, ATLAS_HEIGHT):
-        raise ValueError(f"Unexpected language-button atlas size: {source.size}")
-
-    button = source.copy().convert("RGBA")
-    pixels = button.load()
-    for y0 in (5, 44):
-        for y in range(y0, y0 + 28):
-            left = tuple(
-                sum(button.getpixel((x, y))[channel] for x in range(12, 20)) // 8
-                for channel in range(4)
-            )
-            right = tuple(
-                sum(button.getpixel((x, y))[channel] for x in range(155, 163)) // 8
-                for channel in range(4)
-            )
-            for x in range(20, 155):
-                amount = (x - 20) / 134
-                pixels[x, y] = tuple(
-                    round(left[channel] * (1 - amount) + right[channel] * amount)
-                    for channel in range(4)
-                )
-    return button
+INK_COLORS = ((206, 82, 82, 255), (238, 116, 116, 255))
 
 
 def render_with_pillow(text: str, font_path: Path, size: int, index: int) -> Image.Image:
@@ -180,7 +154,9 @@ def build_button(template: Image.Image, spec: LanguageButton, renderer: Path) ->
     return result
 
 
-def validate_button(button: Image.Image, spec: LanguageButton) -> None:
+def validate_button(
+    button: Image.Image, template: Image.Image, spec: LanguageButton
+) -> None:
     if button.size != (FRAME_WIDTH, ATLAS_HEIGHT):
         raise ValueError(f"Invalid dimensions for {spec.filename}: {button.size}")
     for frame, color in enumerate(INK_COLORS):
@@ -195,6 +171,14 @@ def validate_button(button: Image.Image, spec: LanguageButton) -> None:
             raise ValueError(f"Missing label ink in {spec.filename}, frame {frame}")
         if max(spans) >= spec.max_width:
             raise ValueError(f"Solid ink band in {spec.filename}, frame {frame}")
+        for y in range(frame * FRAME_HEIGHT, (frame + 1) * FRAME_HEIGHT):
+            for x in range(FRAME_WIDTH):
+                pixel = button.getpixel((x, y))
+                if pixel != color and pixel != template.getpixel((x, y)):
+                    raise ValueError(
+                        f"Button art differs outside label ink in "
+                        f"{spec.filename} at {x},{y}"
+                    )
 
 
 def write_preview(buttons: list[Image.Image], output: Path) -> None:
@@ -202,21 +186,22 @@ def write_preview(buttons: list[Image.Image], output: Path) -> None:
     columns = 3
     gap = 8
     rows = (len(buttons) + columns - 1) // columns
+    atlas_height = ATLAS_HEIGHT * scale
     sheet = Image.new(
         "RGB",
         (
             columns * FRAME_WIDTH * scale + (columns + 1) * gap,
-            rows * FRAME_HEIGHT * scale + (rows + 1) * gap,
+            rows * atlas_height + (rows + 1) * gap,
         ),
         (0, 16, 23),
     )
     for index, button in enumerate(buttons):
-        frame = button.crop((0, 0, FRAME_WIDTH, FRAME_HEIGHT)).resize(
-            (FRAME_WIDTH * scale, FRAME_HEIGHT * scale), Image.Resampling.NEAREST
+        atlas = button.resize(
+            (FRAME_WIDTH * scale, atlas_height), Image.Resampling.NEAREST
         )
         x = gap + (index % columns) * (FRAME_WIDTH * scale + gap)
-        y = gap + (index // columns) * (FRAME_HEIGHT * scale + gap)
-        sheet.paste(frame.convert("RGB"), (x, y))
+        y = gap + (index // columns) * (atlas_height + gap)
+        sheet.paste(atlas.convert("RGB"), (x, y))
     output.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(output, format="PNG", optimize=False)
 
@@ -225,14 +210,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("assets", type=Path)
     parser.add_argument("renderer", type=Path)
+    parser.add_argument("--template", type=Path, required=True)
     parser.add_argument("--preview", type=Path)
     args = parser.parse_args()
 
-    source_path = args.assets / "button.png"
-    template = clean_template(Image.open(source_path).convert("RGBA"))
+    template = Image.open(args.template).convert("RGBA")
+    if template.size != (FRAME_WIDTH, ATLAS_HEIGHT):
+        raise ValueError(f"Unexpected language-button template size: {template.size}")
     rendered = [build_button(template, spec, args.renderer) for spec in BUTTONS]
     for spec, button in zip(BUTTONS, rendered):
-        validate_button(button, spec)
+        validate_button(button, template, spec)
         button.save(args.assets / spec.filename, format="PNG", optimize=False)
     # Keep the historical alias byte-identical even though content.json uses button.png.
     rendered[2].save(args.assets / "button-polish.png", format="PNG", optimize=False)

@@ -49,6 +49,7 @@ LABELS = (
 NATIVE_WIDTH = 174
 NATIVE_HEIGHT = 39
 REFERENCE_SCALE = 3.1
+REDUCTION_THRESHOLD = 224
 
 
 def red_ink_mask(crop: Image.Image) -> Image.Image:
@@ -125,8 +126,13 @@ def native_mask(source: Image.Image, spec: LabelCrop) -> Image.Image:
         max(1, round(mask.width / REFERENCE_SCALE)),
         max(1, round(mask.height / REFERENCE_SCALE)),
     )
-    reduced = mask.resize(target_size, Image.Resampling.LANCZOS)
-    reduced = reduced.point(lambda value: 255 if value >= 112 else 0)
+    # Area reduction preserves the amount of ink in each native pixel. A high
+    # coverage threshold keeps the small counters and stroke gaps visible once
+    # Stardew scales the atlas with nearest-neighbour sampling.
+    reduced = mask.resize(target_size, Image.Resampling.BOX)
+    reduced = reduced.point(
+        lambda value: 255 if value >= REDUCTION_THRESHOLD else 0
+    )
     if reduced.width > 155 or reduced.height > 28:
         raise ValueError(
             f"Extracted label is too large for {spec.filename}: {reduced.size}"

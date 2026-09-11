@@ -20,14 +20,14 @@ class TitleButtons:
     font_index: int = 0
     shaped: bool = False
     max_size: int = 13
-    threshold: int = -1
+    threshold: int = 96
 
 
 ARIAL_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 GEEZA = "/System/Library/Fonts/GeezaPro.ttc"
-DEVANAGARI = "/System/Library/Fonts/Supplemental/Devanagari Sangam MN.ttc"
 SONGTI = "/System/Library/Fonts/Supplemental/Songti.ttc"
-NEW_PENINIM = "/System/Library/Fonts/Supplemental/NewPeninimMT.ttc"
+ARIAL_HEBREW = "/System/Library/Fonts/ArialHB.ttc"
+KOHINOOR = "/System/Library/Fonts/Kohinoor.ttc"
 THONBURI = "/System/Library/Fonts/Supplemental/Thonburi.ttc"
 
 BUTTONS = (
@@ -37,17 +37,17 @@ BUTTONS = (
     TitleButtons("TitleButtons-ukrainian.png", (("НОВА", "ГРА"), ("ЗАВАН-", "ТАЖИТИ"), ("СПІЛЬНА", "ГРА"), ("ВИЙТИ", "З ГРИ")), ARIAL_BOLD),
     TitleButtons("TitleButtons-vietnamese.png", (("CHƠI MỚI",), ("TẢI", "TRÒ CHƠI"), ("CHƠI", "CHUNG"), ("THOÁT",)), ARIAL_BOLD),
     TitleButtons("TitleButtons-swahili.png", (("MCHEZO", "MPYA"), ("PAKIA",), ("PAMOJA",), ("TOKA",)), ARIAL_BOLD),
-    TitleButtons("TitleButtons-persian.png", (("بازی", "جدید"), ("بارگیری",), ("چندنفره",), ("خروج",)), GEEZA, shaped=True, max_size=14),
-    TitleButtons("TitleButtons-arabic.png", (("لعبة", "جديدة"), ("تحميل",), ("تعاوني",), ("خروج",)), GEEZA, shaped=True, max_size=14),
+    TitleButtons("TitleButtons-persian.png", (("بازی", "جدید"), ("بارگیری",), ("چندنفره",), ("خروج",)), GEEZA, font_index=1, shaped=True, max_size=14, threshold=128),
+    TitleButtons("TitleButtons-arabic.png", (("لعبة", "جديدة"), ("تحميل",), ("تعاوني",), ("خروج",)), GEEZA, font_index=1, shaped=True, max_size=14, threshold=128),
     TitleButtons("TitleButtons-indonesian.png", (("PERMAINAN", "BARU"), ("MUAT",), ("MAIN", "BERSAMA"), ("KELUAR",)), ARIAL_BOLD),
     TitleButtons("TitleButtons-filipino.png", (("BAGONG", "LARO"), ("I-LOAD",), ("CO-OP",), ("LUMABAS",)), ARIAL_BOLD),
     TitleButtons("TitleButtons-dutch.png", (("NIEUW", "SPEL"), ("LADEN",), ("COÖP",), ("AFSLUITEN",)), ARIAL_BOLD),
-    TitleButtons("TitleButtons-hindi.png", (("नया", "खेल"), ("लोड",), ("सहकारी",), ("बाहर", "निकलें")), DEVANAGARI, shaped=True, max_size=14),
+    TitleButtons("TitleButtons-hindi.png", (("नया", "खेल"), ("लोड",), ("सहकारी",), ("बाहर", "निकलें")), KOHINOOR, font_index=1, shaped=True, max_size=14, threshold=112),
     TitleButtons("TitleButtons-traditional-chinese.png", (("新遊戲",), ("載入",), ("合作",), ("離開",)), SONGTI, font_index=2, max_size=14),
     TitleButtons("TitleButtons-romanian.png", (("JOC", "NOU"), ("ÎNCARCĂ",), ("CO-OP",), ("IEȘIRE",)), ARIAL_BOLD),
-    TitleButtons("TitleButtons-hebrew.png", (("משחק חדש",), ("טעינה",), ("משותף",), ("יציאה",)), NEW_PENINIM, shaped=True, max_size=14),
+    TitleButtons("TitleButtons-hebrew.png", (("משחק חדש",), ("טעינה",), ("משותף",), ("יציאה",)), ARIAL_HEBREW, font_index=1, shaped=True, max_size=14, threshold=112),
     TitleButtons("TitleButtons-bulgarian.png", (("НОВА", "ИГРА"), ("ЗАРЕДИ",), ("ЗАЕДНО",), ("ИЗХОД",)), ARIAL_BOLD),
-    TitleButtons("TitleButtons-thai.png", (("เกมใหม่",), ("โหลด",), ("ร่วมกัน",), ("ออก",)), THONBURI, shaped=True, max_size=14),
+    TitleButtons("TitleButtons-thai.png", (("เกมใหม่",), ("โหลด",), ("ร่วมกัน",), ("ออก",)), THONBURI, font_index=1, shaped=True, max_size=14, threshold=112),
     TitleButtons("TitleButtons-greek.png", (("ΝΕΟ", "ΠΑΙΧΝΙΔΙ"), ("ΦΟΡΤΩΣΗ",), ("ΜΑΖΙ",), ("ΕΞΟΔΟΣ",)), ARIAL_BOLD),
     TitleButtons("TitleButtons-czech.png", (("NOVÁ HRA",), ("NAČÍST",), ("KO-OP",), ("UKONČIT",)), ARIAL_BOLD),
 )
@@ -73,8 +73,6 @@ def render_pillow(text: str, font_path: Path, size: int, index: int, threshold: 
     bounds = ImageDraw.Draw(probe).textbbox((0, 0), text, font=font)
     mask = Image.new("L", (bounds[2] - bounds[0], bounds[3] - bounds[1]), 0)
     ImageDraw.Draw(mask).text((-bounds[0], -bounds[1]), text, font=font, fill=255)
-    if threshold == -1:
-        return mask
     return mask.point(lambda value: 255 if value >= threshold else 0)
 
 
@@ -136,6 +134,8 @@ def validate_atlas(
         raise ValueError(f"Invalid atlas dimensions for {spec.filename}: {atlas.size}")
     strip = atlas.crop((0, 184, 296, 300))
     for index, (box, mask) in enumerate(zip(LABEL_BOXES, masks)):
+        if any(value not in (0, 255) for value in mask.getdata()):
+            raise ValueError(f"Antialiased pixels in label {index} of {spec.filename}")
         bounds = mask.getbbox()
         if bounds is None or sum(1 for value in mask.getdata() if value >= 64) < 12:
             raise ValueError(f"Unreadable or missing label {index} in {spec.filename}")
@@ -156,6 +156,26 @@ def validate_atlas(
         for x in range(STRIP_SIZE[0]):
             if (x, y) not in allowed and strip.getpixel((x, y)) != template.getpixel((x, y)):
                 raise ValueError(f"Frame art changed in {spec.filename} at {x},{y}")
+    for state, color in enumerate(INK_COLORS):
+        offset_y = state * STATE_OFFSET
+        changed = []
+        for left, top, right, bottom in LABEL_BOXES:
+            points = set()
+            for y in range(top + offset_y, bottom + offset_y):
+                for x in range(left, right):
+                    pixel = strip.getpixel((x, y))
+                    original = template.getpixel((x, y))
+                    if pixel != original:
+                        if pixel != color:
+                            raise ValueError(
+                                f"Non-pixel text color in {spec.filename} at {x},{y}"
+                            )
+                        points.add((x, y - offset_y))
+            changed.append(points)
+        if state == 0:
+            normal_geometry = changed
+        elif changed != normal_geometry:
+            raise ValueError(f"Normal/hover geometry differs in {spec.filename}")
 
 
 def write_preview(atlases: list[Image.Image], output: Path) -> None:

@@ -30,7 +30,7 @@ func alphaBounds(of bitmap: NSBitmapImageRep) -> CGRect? {
 }
 
 do {
-    guard (CommandLine.arguments.count == 5 || CommandLine.arguments.count == 6),
+    guard (5...7).contains(CommandLine.arguments.count),
           let size = Double(CommandLine.arguments[3]) else { throw RenderError.usage }
     let fontURL = URL(fileURLWithPath: CommandLine.arguments[1])
     let text = CommandLine.arguments[2]
@@ -39,12 +39,16 @@ do {
     _ = CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, &registrationError)
     guard let descriptors = CTFontManagerCreateFontDescriptorsFromURL(fontURL as CFURL) as? [CTFontDescriptor]
     else { throw RenderError.font }
-    let descriptorIndex = CommandLine.arguments.count == 6
+    let requestedDescriptorIndex = CommandLine.arguments.count >= 6
         ? Int(CommandLine.arguments[5])
         : descriptors.indices.last
-    guard let descriptorIndex,
-          descriptors.indices.contains(descriptorIndex) else { throw RenderError.font }
-    let descriptor = descriptors[descriptorIndex]
+    guard let requestedDescriptorIndex,
+          descriptors.indices.contains(requestedDescriptorIndex) else { throw RenderError.font }
+    let descriptor = descriptors[requestedDescriptorIndex]
+    let alphaThreshold = CommandLine.arguments.count == 7
+        ? Int(CommandLine.arguments[6])
+        : 96
+    guard let alphaThreshold, (0...255).contains(alphaThreshold) else { throw RenderError.usage }
     guard
           let fontName = CTFontDescriptorCopyAttribute(descriptor, kCTFontNameAttribute) as? String,
           let font = NSFont(name: fontName, size: size) else { throw RenderError.font }
@@ -83,7 +87,7 @@ do {
     for y in 0..<result.pixelsHigh {
         for x in 0..<result.pixelsWide {
             let offset = y * result.bytesPerRow + x * bytesPerPixel
-            let opaque = pixels[offset + 3] >= 96
+            let opaque = Int(pixels[offset + 3]) >= alphaThreshold
             pixels[offset] = opaque ? 255 : 0
             pixels[offset + 1] = opaque ? 255 : 0
             pixels[offset + 2] = opaque ? 255 : 0
@@ -95,6 +99,6 @@ do {
     }
     try data.write(to: outputURL)
 } catch {
-    fputs("Usage: render-shaped-text <font-file> <text> <size> <output.png> [font-index]\n", stderr)
+    fputs("Usage: render-shaped-text <font-file> <text> <size> <output.png> [font-index] [alpha-threshold]\n", stderr)
     exit(1)
 }

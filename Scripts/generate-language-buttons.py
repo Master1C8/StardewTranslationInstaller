@@ -23,6 +23,7 @@ class LanguageButton:
     max_size: int = 16
     max_width: int = 132
     max_height: int = 17
+    threshold: int = 96
 
 
 ARIAL_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
@@ -36,11 +37,13 @@ BUTTONS = (
     LanguageButton("button-swahili.png", "KISWAHILI", ARIAL_BOLD),
     LanguageButton(
         "button-persian.png", "فارسی", "/System/Library/Fonts/GeezaPro.ttc",
-        font_index=1, shaped=True, max_size=23, max_width=140, max_height=23,
+        font_index=0, shaped=True, max_size=22, max_width=140, max_height=22,
+        threshold=160,
     ),
     LanguageButton(
         "button-arabic.png", "العربية", "/System/Library/Fonts/GeezaPro.ttc",
-        font_index=1, shaped=True, max_size=23, max_width=140, max_height=23,
+        font_index=0, shaped=True, max_size=22, max_width=140, max_height=22,
+        threshold=160,
     ),
     LanguageButton("button-indonesian.png", "BAHASA INDONESIA", ARIAL_BOLD),
     LanguageButton("button-filipino.png", "FILIPINO", ARIAL_BOLD),
@@ -49,11 +52,12 @@ BUTTONS = (
         "button-hindi.png",
         "हिन्दी",
         "/System/Library/Fonts/Supplemental/Devanagari Sangam MN.ttc",
-        font_index=1,
+        font_index=0,
         shaped=True,
-        max_size=23,
+        max_size=22,
         max_width=140,
-        max_height=23,
+        max_height=22,
+        threshold=160,
     ),
     LanguageButton(
         "button-traditional-chinese.png",
@@ -65,18 +69,20 @@ BUTTONS = (
     LanguageButton(
         "button-hebrew.png", "עברית",
         "/System/Library/Fonts/Supplemental/NewPeninimMT.ttc",
-        font_index=3, shaped=True, max_size=22, max_width=140, max_height=22,
+        font_index=0, shaped=True, max_size=21, max_width=140, max_height=21,
+        threshold=160,
     ),
     LanguageButton("button-bulgarian.png", "БЪЛГАРСКИ", ARIAL_BOLD),
     LanguageButton(
         "button-thai.png",
         "ภาษาไทย",
         "/System/Library/Fonts/Supplemental/Thonburi.ttc",
-        font_index=1,
+        font_index=0,
         shaped=True,
-        max_size=23,
+        max_size=22,
         max_width=140,
-        max_height=23,
+        max_height=22,
+        threshold=160,
     ),
     LanguageButton("button-greek.png", "ΕΛΛΗΝΙΚΑ", ARIAL_BOLD),
     LanguageButton("button-czech.png", "ČEŠTINA", ARIAL_BOLD),
@@ -124,11 +130,14 @@ def render_with_pillow(text: str, font_path: Path, size: int, index: int) -> Ima
 
 
 def render_shaped(
-    text: str, font_path: Path, size: int, renderer: Path, index: int
+    text: str, font_path: Path, size: int, renderer: Path, index: int, threshold: int
 ) -> Image.Image:
     with tempfile.NamedTemporaryFile(suffix=".png") as output:
         subprocess.run(
-            [str(renderer), str(font_path), text, str(size), output.name, str(index)],
+            [
+                str(renderer), str(font_path), text, str(size), output.name,
+                str(index), str(threshold),
+            ],
             check=True,
         )
         return Image.open(output.name).convert("RGBA").getchannel("A").copy()
@@ -136,7 +145,9 @@ def render_shaped(
 
 def render_text(spec: LanguageButton, text: str, size: int, renderer: Path) -> Image.Image:
     if spec.shaped:
-        return render_shaped(text, Path(spec.font), size, renderer, spec.font_index)
+        return render_shaped(
+            text, Path(spec.font), size, renderer, spec.font_index, spec.threshold
+        )
     return render_with_pillow(text, Path(spec.font), size, spec.font_index)
 
 

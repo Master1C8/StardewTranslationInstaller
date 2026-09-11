@@ -126,40 +126,39 @@ struct InstallerCoreTests {
             "el-vnrevival": ("ButtonGreek", "assets/button-greek.png", "assets/title/TitleButtons-greek.png"),
             "cs-vnrevival": ("ButtonCzech", "assets/button-czech.png", "assets/title/TitleButtons-czech.png"),
         ]
+        let expectedBitmapFonts = [
+            "sr-vnrevival": ("Serbian", "serbian"),
+            "pl-vnrevival": ("Polish", "polish"),
+            "uk-vnrevival": ("Ukrainian", "ukrainian"),
+            "vi-vnrevival": ("Vietnamese", "vietnamese"),
+            "sw-vnrevival": ("Swahili", "swahili"),
+            "fa-vnrevival": ("Persian", "persian"),
+            "ar-vnrevival": ("Arabic", "arabic"),
+            "id-vnrevival": ("Indonesian", "indonesian"),
+            "fil-vnrevival": ("Filipino", "filipino"),
+            "nl-vnrevival": ("Dutch", "dutch"),
+            "hi-vnrevival": ("Hindi", "hindi"),
+            "zh-TW-vnrevival": ("ChineseTraditional", "traditional-chinese"),
+            "ro-vnrevival": ("Romanian", "romanian"),
+            "he-vnrevival": ("Hebrew", "hebrew"),
+            "bg-vnrevival": ("Bulgarian", "bulgarian"),
+            "th-vnrevival": ("Thai", "thai"),
+            "el-vnrevival": ("Greek", "greek"),
+            "cs-vnrevival": ("Czech", "czech"),
+        ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
             let language = try require(languageEntries.values.compactMap { $0 as? [String: Any] }.first {
                 ($0["LanguageCode"] as? String) == code
             })
             expect(language["ButtonTexture"] as? String == "Mods/{{ModId}}/\(expected.0)")
-            expect(language["UseLatinFont"] as? Bool == !["ru-vnrevival", "sr-vnrevival", "fa-vnrevival", "ar-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival"].contains(code))
-            if code == "ru-vnrevival" || code == "sr-vnrevival" || code == "bg-vnrevival" {
+            expect(language["UseLatinFont"] as? Bool == false)
+            expect(language["FontPixelZoom"] as? Int == 3)
+            if code == "ru-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Russian")
-                expect(language["FontPixelZoom"] as? Int == 3)
-            }
-            if code == "fa-vnrevival" {
-                expect(language["FontFile"] as? String == "Fonts/Persian")
-                expect(language["FontPixelZoom"] as? Int == 3)
-            }
-            if code == "ar-vnrevival" {
-                expect(language["FontFile"] as? String == "Fonts/Arabic")
-                expect(language["FontPixelZoom"] as? Int == 3)
-            }
-            if code == "hi-vnrevival" {
-                expect(language["FontFile"] as? String == "Fonts/Hindi")
-                expect(language["FontPixelZoom"] as? Int == 3)
-            }
-            if code == "zh-TW-vnrevival" {
-                expect(language["FontFile"] as? String == "Fonts/ChineseTraditional")
-                expect(language["FontPixelZoom"] as? Int == 3)
-            }
-            if code == "he-vnrevival" {
-                expect(language["FontFile"] as? String == "Fonts/Hebrew")
-                expect(language["FontPixelZoom"] as? Int == 3)
-            }
-            if code == "th-vnrevival" {
-                expect(language["FontFile"] as? String == "Fonts/Thai")
-                expect(language["FontPixelZoom"] as? Int == 3)
+            } else {
+                let bitmapFont = try require(expectedBitmapFonts[code])
+                expect(language["FontFile"] as? String == "Fonts/\(bitmapFont.0)")
             }
             let button = try require(changes.first {
                 ($0["Action"] as? String) == "Load"
@@ -180,10 +179,12 @@ struct InstallerCoreTests {
             ("pl-vnrevival", "polish"),
             ("uk-vnrevival", "ukrainian"),
             ("vi-vnrevival", "vietnamese"),
+            ("sw-vnrevival", "swahili"),
             ("fil-vnrevival", "filipino"),
             ("nl-vnrevival", "dutch"),
             ("fa-vnrevival", "persian"),
             ("ar-vnrevival", "arabic"),
+            ("id-vnrevival", "indonesian"),
             ("hi-vnrevival", "hindi"),
             ("zh-TW-vnrevival", "traditional-chinese"),
             ("ro-vnrevival", "romanian"),
@@ -206,26 +207,19 @@ struct InstallerCoreTests {
           }
         }
 
-        for (target, fontPath) in [
-            ("Fonts/Persian", "assets/fonts/persian/Persian.xnb"),
-            ("Fonts/Persian_0", "assets/fonts/persian/Persian_0.xnb"),
-            ("Fonts/Arabic", "assets/fonts/arabic/Arabic.xnb"),
-            ("Fonts/Arabic_0", "assets/fonts/arabic/Arabic_0.xnb"),
-            ("Fonts/Hindi", "assets/fonts/hindi/Hindi.xnb"),
-            ("Fonts/Hindi_0", "assets/fonts/hindi/Hindi_0.xnb"),
-            ("Fonts/Hebrew", "assets/fonts/hebrew/Hebrew.xnb"),
-            ("Fonts/Hebrew_0", "assets/fonts/hebrew/Hebrew_0.xnb"),
-            ("Fonts/Thai", "assets/fonts/thai/Thai.xnb"),
-            ("Fonts/Thai_0", "assets/fonts/thai/Thai_0.xnb"),
-        ] {
-            let font = try require(changes.first {
-                ($0["Action"] as? String) == "Load"
-                    && ($0["Target"] as? String) == target
-                    && $0["TargetLocale"] == nil
-            })
-            expect(font["FromFile"] as? String == fontPath)
-            let fontData = try Data(contentsOf: payload.appendingPathComponent(fontPath))
-            expect(Array(fontData.prefix(3)) == Array("XNB".utf8))
+        for (_, bitmapFont) in expectedBitmapFonts {
+            for name in [bitmapFont.0, "\(bitmapFont.0)_0"] {
+                let target = "Fonts/\(name)"
+                let fontPath = "assets/fonts/\(bitmapFont.1)/\(name).xnb"
+                let font = try require(changes.first {
+                    ($0["Action"] as? String) == "Load"
+                        && ($0["Target"] as? String) == target
+                        && $0["TargetLocale"] == nil
+                })
+                expect(font["FromFile"] as? String == fontPath)
+                let fontData = try Data(contentsOf: payload.appendingPathComponent(fontPath))
+                expect(Array(fontData.prefix(3)) == Array("XNB".utf8))
+            }
         }
 
         let vietnameseFontHashes = [

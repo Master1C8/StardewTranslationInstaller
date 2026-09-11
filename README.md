@@ -46,6 +46,7 @@ Git и восстанавливается из `pyproject.toml` и `uv.lock`.
 ```sh
 swift test --disable-sandbox
 node Scripts/audit-character-creation-layout.mjs
+node Scripts/audit-bitmap-font-coverage.mjs
 ```
 
 Полный Xcode выбирается через shell-профиль, `mise.toml` и сам сборочный
@@ -55,6 +56,12 @@ node Scripts/audit-character-creation-layout.mjs
 Второй скрипт измеряет 31 фиксированную подпись редактора персонажа во всех
 19 локалях по метрикам соответствующих игровых `SmallFont` и отклоняет строки,
 которые заходят в соседние поля, стрелки, ползунки или флажки.
+
+Третий скрипт распаковывает растровые шрифты всех дополнительных языков и
+проверяет, что в каждом атласе есть все символы соответствующего перевода.
+Расширенные латинские, кириллические и греческие атласы пересобираются командой
+`./Scripts/build-extended-bitmap-fonts.sh`; при необходимости ей можно передать
+имена отдельных каталогов локалей, например `greek czech`.
 
 ## Приватный репозиторий
 
@@ -88,7 +95,7 @@ git push origin main
 - `content.json` — регистрация девятнадцати дополнительных языков и подключение всех переводов;
 - `assets/button*.png` — отдельные двухкадровые кнопки языков;
 - `assets/title/TitleButtons*.png` — локализованные атласы главного меню;
-- `assets/fonts/{russian,serbian,polish,ukrainian,vietnamese,persian,arabic,filipino,dutch,hindi,traditional-chinese,romanian,hebrew,bulgarian,thai,greek,czech}/*.xnb` — локализованные игровые шрифты;
+- `assets/fonts/{russian,serbian,polish,ukrainian,vietnamese,swahili,persian,arabic,indonesian,filipino,dutch,hindi,traditional-chinese,romanian,hebrew,bulgarian,thai,greek,czech}/*.xnb` — локализованные игровые шрифты;
 - `assets/translations/{russian,serbian,polish,ukrainian,vietnamese,swahili,persian,arabic,indonesian,filipino,dutch,hindi,traditional-chinese,romanian,hebrew,bulgarian,thai,greek,czech}/*.json` — языковые патчи с независимыми условиями.
 
 Официальная документация: [Custom languages](https://stardewvalleywiki.com/Modding:Custom_languages), [Content Patcher](https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/README.md), [SMAPI](https://github.com/Pathoschild/SMAPI).

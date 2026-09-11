@@ -3,6 +3,18 @@
 `language-button-template.png` contains the text-free normal and hover frames
 recovered from Stardew Valley 1.6.15's `LooseSprites/LanguageButtons.xnb`.
 
+`language-button-labels.png` contains the approved native-resolution pixel
+lettering for all 19 VN Revival language buttons, in selector order. It is
+derived directly from the owner's two visual references, rather than rendered
+from substitute system fonts. To rebuild it from those 1774x887 references:
+
+```sh
+/usr/bin/python3 Scripts/extract-reference-language-labels.py \
+  /path/to/language-page-1.png \
+  /path/to/language-page-2.png \
+  Scripts/assets/language-button-labels.png
+```
+
 Regenerate it from an unpacked original atlas with:
 
 ```sh

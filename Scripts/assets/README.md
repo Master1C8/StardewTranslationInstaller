@@ -38,3 +38,15 @@ from another language. Regenerate it with:
   Scripts/assets/title-button-template.png \
   /path/to/unpacked/TitleButtons*.png
 ```
+
+`title-button-labels.png` contains the approved native-resolution lettering for
+the four main-menu buttons in all 19 retained locales, in installer order. It
+is extracted from the owner's 977×1610 visual reference; the generated game
+atlases use only these monochrome masks and retain the original template's
+frames, parchment, icons, normal state, and hover state:
+
+```sh
+/usr/bin/python3 Scripts/extract-reference-title-labels.py \
+  /path/to/approved-title-menu-reference.png \
+  Scripts/assets/title-button-labels.png
+```

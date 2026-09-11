@@ -30,15 +30,22 @@ func alphaBounds(of bitmap: NSBitmapImageRep) -> CGRect? {
 }
 
 do {
-    guard CommandLine.arguments.count == 5,
+    guard (CommandLine.arguments.count == 5 || CommandLine.arguments.count == 6),
           let size = Double(CommandLine.arguments[3]) else { throw RenderError.usage }
     let fontURL = URL(fileURLWithPath: CommandLine.arguments[1])
     let text = CommandLine.arguments[2]
     let outputURL = URL(fileURLWithPath: CommandLine.arguments[4])
     var registrationError: Unmanaged<CFError>?
     _ = CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, &registrationError)
-    guard let descriptors = CTFontManagerCreateFontDescriptorsFromURL(fontURL as CFURL) as? [CTFontDescriptor],
-          let descriptor = descriptors.last,
+    guard let descriptors = CTFontManagerCreateFontDescriptorsFromURL(fontURL as CFURL) as? [CTFontDescriptor]
+    else { throw RenderError.font }
+    let descriptorIndex = CommandLine.arguments.count == 6
+        ? Int(CommandLine.arguments[5])
+        : descriptors.indices.last
+    guard let descriptorIndex,
+          descriptors.indices.contains(descriptorIndex) else { throw RenderError.font }
+    let descriptor = descriptors[descriptorIndex]
+    guard
           let fontName = CTFontDescriptorCopyAttribute(descriptor, kCTFontNameAttribute) as? String,
           let font = NSFont(name: fontName, size: size) else { throw RenderError.font }
 
@@ -88,6 +95,6 @@ do {
     }
     try data.write(to: outputURL)
 } catch {
-    fputs("Usage: render-shaped-text <font-file> <text> <size> <output.png>\n", stderr)
+    fputs("Usage: render-shaped-text <font-file> <text> <size> <output.png> [font-index]\n", stderr)
     exit(1)
 }

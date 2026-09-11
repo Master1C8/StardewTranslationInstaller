@@ -322,17 +322,17 @@ struct InstallerCoreTests {
             "assets/button-ukrainian.png": "83c1b40a193998557996c911ca22c444d5cc26db18c720c2a0cb5acf822d6bbe",
             "assets/button-vietnamese.png": "0710621892a3721c4894fc4d14e4c236415618d7071bfc95a62a51b5ca07196a",
             "assets/button-swahili.png": "93b9513bea383134065d78b19d117764fbf4ee759ed5965ec41c8bff5f4edd02",
-            "assets/button-persian.png": "20fbc414552532ec5733593b9b046bd0693e2935b3fb1055c67fe77b5cc5bd42",
-            "assets/button-arabic.png": "ce4e948bf08ed79e560609c9ae44c8c957b591ef9a786d4936d63ba9e0d2e427",
+            "assets/button-persian.png": "4ff331ebe2eadb95fa2bf3098309255c288d7b441e01069dd186cbb92f4f88cf",
+            "assets/button-arabic.png": "79fbcb90927b978673e79fa11e32d7f049e1ab6188d5e878b0cd3e9006e21b3e",
             "assets/button-indonesian.png": "d73341a05b4e48a8c259753991261de717767fcd21470b7e5bf45e5262b635f7",
             "assets/button-filipino.png": "e757c90ce49171b0a46cfb0dc532d1eb7678bfb43f7a9b7c440ecf02e891fe53",
             "assets/button-dutch.png": "b72bbaecd761eba63b086bf6dc486a83e2b94f60bfc8f79ca5b25259179031d6",
-            "assets/button-hindi.png": "2f80e575dda0e0a85a3235206fc31f66c515ea27a0be33770afc1254a23e4e39",
+            "assets/button-hindi.png": "d707fc36c7eb8ea5da03faa3aa8e930e97e3e528ff2a137896934e0e400fac65",
             "assets/button-traditional-chinese.png": "7a56211fad950f3669e5a391474e88575d9bdd2a3937fa9a32042cb3c8e34895",
             "assets/button-romanian.png": "42f77d03d9f937f23648cc9410de50bdb22c72bc74dc586bd283fbf946e2abb7",
-            "assets/button-hebrew.png": "60507a5982af69dc66183b36983c33a086e5a57788a633753d01d27fcabe1a42",
+            "assets/button-hebrew.png": "6be2209822525b24574bea223f59712c27c9c40620fd8aaba5b736d397f4d369",
             "assets/button-bulgarian.png": "46c912b48b3363601c7649369b6b20638e45ff0227a523919fd24344f1e83e18",
-            "assets/button-thai.png": "7df00816b3e08e1473df6f562ab06d941f5fbd67218fc55191d022ef68954281",
+            "assets/button-thai.png": "434f051fbe9a0982445b8846448c91d9790beb6c1f5d8568ed6e892f20a04b08",
             "assets/button-greek.png": "30494d3c6e69ecd1d563b80ec0a08533b857ed3a3d6dd5ecd28ba2db4409e515",
             "assets/button-czech.png": "de506bdc07c1f133615cf9e3f46bd9360915b441a145b6f2cb125c8f74d286ce",
         ]
@@ -367,7 +367,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(hindiButtonPath) == (174, 78))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(hindiButtonPath))
-                == "2f80e575dda0e0a85a3235206fc31f66c515ea27a0be33770afc1254a23e4e39"
+                == "d707fc36c7eb8ea5da03faa3aa8e930e97e3e528ff2a137896934e0e400fac65"
         )
         let hindiTitlePath = "assets/title/TitleButtons-hindi.png"
         try expect(try pngDimensions(hindiTitlePath) == (400, 655))
@@ -445,7 +445,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/button-persian.png")
-            ) == "20fbc414552532ec5733593b9b046bd0693e2935b3fb1055c67fe77b5cc5bd42"
+            ) == "4ff331ebe2eadb95fa2bf3098309255c288d7b441e01069dd186cbb92f4f88cf"
         )
         try expect(
             try DependencyInstaller.sha256(
@@ -458,7 +458,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/button-arabic.png")
-            ) == "ce4e948bf08ed79e560609c9ae44c8c957b591ef9a786d4936d63ba9e0d2e427"
+            ) == "79fbcb90927b978673e79fa11e32d7f049e1ab6188d5e878b0cd3e9006e21b3e"
         )
         try expect(
             try DependencyInstaller.sha256(
@@ -486,7 +486,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/button-thai.png")
-            ) == "7df00816b3e08e1473df6f562ab06d941f5fbd67218fc55191d022ef68954281"
+            ) == "434f051fbe9a0982445b8846448c91d9790beb6c1f5d8568ed6e892f20a04b08"
         )
         try expect(
             try DependencyInstaller.sha256(

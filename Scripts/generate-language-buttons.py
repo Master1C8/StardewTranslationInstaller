@@ -20,10 +20,12 @@ class LanguageButton:
     font_index: int = 0
     shaped: bool = False
     show_vn: bool = False
+    max_size: int = 16
+    max_width: int = 132
+    max_height: int = 17
 
 
 ARIAL_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-ARIAL_UNICODE = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
 
 BUTTONS = (
     LanguageButton("button-russian.png", "РУССКИЙ", ARIAL_BOLD, show_vn=True),
@@ -32,8 +34,14 @@ BUTTONS = (
     LanguageButton("button-ukrainian.png", "УКРАЇНСЬКА", ARIAL_BOLD),
     LanguageButton("button-vietnamese.png", "TIẾNG VIỆT", ARIAL_BOLD),
     LanguageButton("button-swahili.png", "KISWAHILI", ARIAL_BOLD),
-    LanguageButton("button-persian.png", "فارسی", ARIAL_UNICODE, shaped=True),
-    LanguageButton("button-arabic.png", "العربية", ARIAL_UNICODE, shaped=True),
+    LanguageButton(
+        "button-persian.png", "فارسی", "/System/Library/Fonts/GeezaPro.ttc",
+        font_index=1, shaped=True, max_size=23, max_width=140, max_height=23,
+    ),
+    LanguageButton(
+        "button-arabic.png", "العربية", "/System/Library/Fonts/GeezaPro.ttc",
+        font_index=1, shaped=True, max_size=23, max_width=140, max_height=23,
+    ),
     LanguageButton("button-indonesian.png", "BAHASA INDONESIA", ARIAL_BOLD),
     LanguageButton("button-filipino.png", "FILIPINO", ARIAL_BOLD),
     LanguageButton("button-dutch.png", "NEDERLANDS", ARIAL_BOLD),
@@ -41,7 +49,11 @@ BUTTONS = (
         "button-hindi.png",
         "हिन्दी",
         "/System/Library/Fonts/Supplemental/Devanagari Sangam MN.ttc",
+        font_index=1,
         shaped=True,
+        max_size=23,
+        max_width=140,
+        max_height=23,
     ),
     LanguageButton(
         "button-traditional-chinese.png",
@@ -50,13 +62,21 @@ BUTTONS = (
         font_index=2,
     ),
     LanguageButton("button-romanian.png", "ROMÂNĂ", ARIAL_BOLD),
-    LanguageButton("button-hebrew.png", "עברית", ARIAL_UNICODE, shaped=True),
+    LanguageButton(
+        "button-hebrew.png", "עברית",
+        "/System/Library/Fonts/Supplemental/NewPeninimMT.ttc",
+        font_index=3, shaped=True, max_size=22, max_width=140, max_height=22,
+    ),
     LanguageButton("button-bulgarian.png", "БЪЛГАРСКИ", ARIAL_BOLD),
     LanguageButton(
         "button-thai.png",
         "ภาษาไทย",
         "/System/Library/Fonts/Supplemental/Thonburi.ttc",
+        font_index=1,
         shaped=True,
+        max_size=23,
+        max_width=140,
+        max_height=23,
     ),
     LanguageButton("button-greek.png", "ΕΛΛΗΝΙΚΑ", ARIAL_BOLD),
     LanguageButton("button-czech.png", "ČEŠTINA", ARIAL_BOLD),
@@ -65,8 +85,6 @@ BUTTONS = (
 FRAME_WIDTH = 174
 FRAME_HEIGHT = 39
 ATLAS_HEIGHT = FRAME_HEIGHT * 2
-MAX_LABEL_WIDTH = 132
-MAX_LABEL_HEIGHT = 17
 INK_COLORS = ((206, 82, 82, 255), (239, 115, 115, 255))
 
 
@@ -105,10 +123,12 @@ def render_with_pillow(text: str, font_path: Path, size: int, index: int) -> Ima
     return mask.point(lambda value: 255 if value >= 96 else 0)
 
 
-def render_shaped(text: str, font_path: Path, size: int, renderer: Path) -> Image.Image:
+def render_shaped(
+    text: str, font_path: Path, size: int, renderer: Path, index: int
+) -> Image.Image:
     with tempfile.NamedTemporaryFile(suffix=".png") as output:
         subprocess.run(
-            [str(renderer), str(font_path), text, str(size), output.name],
+            [str(renderer), str(font_path), text, str(size), output.name, str(index)],
             check=True,
         )
         return Image.open(output.name).convert("RGBA").getchannel("A").copy()
@@ -116,12 +136,12 @@ def render_shaped(text: str, font_path: Path, size: int, renderer: Path) -> Imag
 
 def render_text(spec: LanguageButton, text: str, size: int, renderer: Path) -> Image.Image:
     if spec.shaped:
-        return render_shaped(text, Path(spec.font), size, renderer)
+        return render_shaped(text, Path(spec.font), size, renderer, spec.font_index)
     return render_with_pillow(text, Path(spec.font), size, spec.font_index)
 
 
 def render_label(spec: LanguageButton, renderer: Path) -> Image.Image:
-    for size in range(16, 7, -1):
+    for size in range(spec.max_size, 7, -1):
         native = render_text(spec, spec.label, size, renderer)
         vn = (
             render_with_pillow("VN", Path(ARIAL_BOLD), max(8, size - 2), 0)
@@ -130,7 +150,7 @@ def render_label(spec: LanguageButton, renderer: Path) -> Image.Image:
         )
         width = native.width + (7 + vn.width if vn else 0)
         height = max(native.height, vn.height if vn else 0)
-        if width <= MAX_LABEL_WIDTH and height <= MAX_LABEL_HEIGHT:
+        if width <= spec.max_width and height <= spec.max_height:
             label = Image.new("L", (width, height), 0)
             label.paste(native, (0, (height - native.height) // 2), native)
             if vn:
@@ -162,7 +182,7 @@ def validate_button(button: Image.Image, spec: LanguageButton) -> None:
                 ink_count += len(xs)
         if ink_count < 10:
             raise ValueError(f"Missing label ink in {spec.filename}, frame {frame}")
-        if max(spans) >= MAX_LABEL_WIDTH:
+        if max(spans) >= spec.max_width:
             raise ValueError(f"Solid ink band in {spec.filename}, frame {frame}")
 
 

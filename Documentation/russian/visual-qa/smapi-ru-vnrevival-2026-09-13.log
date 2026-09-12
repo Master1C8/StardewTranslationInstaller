@@ -1,0 +1,192 @@
+[00:42:44 INFO  SMAPI] SMAPI 4.5.2 with Stardew Valley 1.6.15 build 24356 on macOS Unix 26.6.2
+[00:42:44 INFO  SMAPI] Mods go here: /Volumes/KINGSTONMAC/SteamLibrary/common/Stardew Valley/Contents/MacOS/Mods
+[00:42:44 TRACE SMAPI] Log started at 2026-09-12T17:42:44 UTC
+[00:43:10 DEBUG SMAPI] Waiting for game to launch...
+[00:43:14 TRACE game] Instance_Initialize() finished, elapsed = '00:00:01.9505190'
+[00:43:15 TRACE SMAPI] Scanning for malicious files...
+[00:43:15 DEBUG SMAPI] Loading mod metadata...
+[00:43:15 DEBUG SMAPI] Loading mods...
+[00:43:16 TRACE SMAPI]    Console Commands (from Mods/ConsoleCommands/ConsoleCommands.dll, ID: SMAPI.ConsoleCommands, assembly version: 4.5.2)...
+[00:43:17 TRACE SMAPI]    Save Backup (from Mods/SaveBackup/SaveBackup.dll, ID: SMAPI.SaveBackup, assembly version: 4.5.2)...
+[00:43:17 TRACE SMAPI]       Detected direct console access (System.Console type) in assembly SaveBackup.dll.
+[00:43:17 TRACE SMAPI]    Content Patcher (from Mods/ContentPatcher/ContentPatcher.dll, ID: Pathoschild.ContentPatcher, assembly version: 2.9.1)...
+[00:43:18 TRACE SMAPI]    Stardew Valley — VN Revival Languages (from Mods/[CP] VN Revival Languages, ID: VNRevival.StardewValleyTranslations) [content pack]...
+[00:43:18 TRACE SMAPI]    VN Revival Language Switcher (from Mods/[SMAPI] VN Revival Language Switcher/VNRevival.LanguageSwitcher.dll, ID: VNRevival.LanguageSwitcher, assembly version: 1.9.13)...
+[00:43:18 TRACE SMAPI]       Detected game patcher in assembly VNRevival.LanguageSwitcher.dll.
+[00:43:18 TRACE SMAPI]    VN Revival Small Game Updater (from Mods/VN Revival Small Game Updater/VNRevival.SmallGameUpdater.dll, ID: VNRevival.SmallGameUpdater, assembly version: 1.0.0)...
+[00:43:18 INFO  SMAPI] Loaded 5 mods:
+[00:43:18 INFO  SMAPI]    Console Commands 4.5.2 by SMAPI | Adds SMAPI console commands that let you manipulate the game.
+[00:43:18 INFO  SMAPI]    Content Patcher 2.9.1 by Pathoschild | Loads content packs which edit game data, images, and maps without changing the game files.
+[00:43:18 INFO  SMAPI]    Save Backup 4.5.2 by SMAPI | Automatically backs up all your saves once per day into its folder.
+[00:43:18 INFO  SMAPI]    VN Revival Language Switcher 1.9.13 by VN Revival | Fixes custom-language behavior and draws readable high-resolution labels on the title menu and developer card.
+[00:43:18 INFO  SMAPI]    VN Revival Small Game Updater 1.0.0 by VN Revival | Checks VN Revival for translation updates and applies them before Content Patcher loads.
+
+[00:43:18 INFO  SMAPI] Loaded 1 content packs:
+[00:43:18 INFO  SMAPI]    Stardew Valley — VN Revival Languages 1.17.21 by VN Revival | for Content Patcher | Adds Russian, Serbian, Polish, Ukrainian, Vietnamese, Swahili, Persian, Arabic, Indonesian, Filipino, Dutch, Hindi, Traditional Chinese, Romanian, Hebrew, Bulgarian, Thai, Greek, and Czech as separate VN Revival languages in Stardew Valley.
+
+[00:43:19 INFO  SMAPI]    Patched game code
+[00:43:19 INFO  SMAPI]    --------------------------------------------------
+[00:43:19 INFO  SMAPI]       These mods directly change the game code. They're more likely to cause errors or bugs in-game; if
+[00:43:19 INFO  SMAPI]       your game has issues, try removing these first. Otherwise you can ignore this warning.
+
+[00:43:19 INFO  SMAPI]       - VN Revival Language Switcher
+
+[00:43:19 TRACE SMAPI]    Direct console access
+[00:43:19 TRACE SMAPI]    --------------------------------------------------
+[00:43:19 TRACE SMAPI]       These mods access the SMAPI console window directly. This is more fragile, and their output may not
+[00:43:19 TRACE SMAPI]       be logged by SMAPI.
+
+[00:43:19 TRACE SMAPI]       - Save Backup
+
+[00:43:19 DEBUG SMAPI]    No update keys
+[00:43:19 DEBUG SMAPI]    --------------------------------------------------
+[00:43:19 DEBUG SMAPI]       These mods have no update keys in their manifest. SMAPI may not notify you about updates for these
+[00:43:19 DEBUG SMAPI]       mods. Consider notifying the mod authors about this problem.
+
+[00:43:19 DEBUG SMAPI]       - Stardew Valley — VN Revival Languages
+[00:43:19 DEBUG SMAPI]       - VN Revival Language Switcher
+[00:43:19 DEBUG SMAPI]       - VN Revival Small Game Updater
+
+[00:43:19 DEBUG SMAPI] Launching mods...
+[00:43:19 TRACE Save Backup] Already backed up today.
+[00:43:19 TRACE SMAPI]    Found mod-provided API (ContentPatcher.Framework.ContentPatcherAPI).
+[00:43:20 TRACE VN Revival Language Switcher] Persian, Arabic, and Hebrew shaping/bidi adapters enabled for 15 text methods.
+[00:43:20 DEBUG SMAPI] Mods loaded and ready!
+[00:43:20 TRACE SMAPI] Checking for updates...
+[00:43:23 TRACE SMAPI]    SMAPI okay.
+[00:43:23 TRACE SMAPI]    Checking for updates to 4 mods...
+[00:43:24 TRACE game] setGameMode( 'titleScreenGameMode (0)' )
+[00:43:24 TRACE SMAPI]    All mods up to date.
+[00:43:24 TRACE game] Instance_LoadContent() finished, elapsed = '00:00:10.0166377'
+[00:43:24 TRACE game] Steam logged on: True
+[00:43:24 TRACE game] Initializing GalaxySDK
+[00:43:24 TRACE game] Requesting Steam app ticket
+[00:43:25 INFO  SMAPI] Type 'help' for help, or 'help <cmd>' for a command's usage
+[00:43:25 TRACE game] Signing into GalaxySDK
+[00:43:25 TRACE SMAPI]    Mod blacklist OK.
+[00:43:27 TRACE game] Registered trigger action handler 'Pathoschild.ContentPatcher_MigrateIds'.
+[00:43:49 TRACE Content Patcher] Requested cache invalidation for all assets matching a predicate.
+[00:43:49 TRACE game] Successfully loaded ContentHashes.json containing 3560 file(s);
+[00:43:49 TRACE game] EnsureManifestInitialized() finished, elapsed = '00:00:00.0337209'
+[00:43:49 TRACE SMAPI] Invalidated 3 asset names (Fonts/SmallFont, Fonts/SpriteFont1, Minigames/TitleButtons).
+Propagated 3 core assets (Fonts/SmallFont, Fonts/SpriteFont1, Minigames/TitleButtons).
+[00:43:50 TRACE game] Galaxy auth success
+[00:43:50 TRACE game] Galaxy signed in
+[00:43:50 TRACE game] Galaxy logged on
+[00:43:50 TRACE SMAPI] Content Patcher edited Data/AdditionalLanguages (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:43:51 TRACE game] LocalizedContentManager.CurrentLanguageCode CHANGING from 'en' to 'ru'
+[00:43:52 TRACE game] LocalizedContentManager.CurrentLanguageCode CHANGED from 'en' to 'ru'
+[00:43:52 TRACE SMAPI] Context: locale set to ru (ru-RU).
+[00:43:52 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1600}
+[00:43:52 TRACE game] Successfully set GOG Galaxy profile name.
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonRussian' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonSerbian' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonPolish' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonUkrainian' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonVietnamese' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonSwahili' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonPersian' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonArabic' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonIndonesian' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonFilipino' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonDutch' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonHindi' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonTraditionalChinese' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonRomanian' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonHebrew' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonBulgarian' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonThai' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonGreek' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:44:41 TRACE SMAPI] Content Patcher loaded asset 'Mods/VNRevival.StardewValleyTranslations/ButtonCzech' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:18 TRACE game] LocalizedContentManager.CurrentLanguageCode CHANGING from 'ru' to 'mod'
+[00:45:18 TRACE Content Patcher] Requested cache invalidation for all assets matching a predicate.
+[00:45:18 TRACE SMAPI] Content Patcher edited Data/Achievements (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:18 TRACE SMAPI] Content Patcher edited Data/NPCGiftTastes (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:18 TRACE SMAPI] Content Patcher edited Data/CraftingRecipes (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:18 TRACE SMAPI] Content Patcher edited Data/CookingRecipes (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:18 TRACE SMAPI] Content Patcher edited Strings/StringsFromCSFiles (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:18 TRACE SMAPI] Invalidated 13 asset names (Data/Achievements, Data/Achievements.ru-RU, Data/Boots, Data/CookingRecipes, Data/CraftingRecipes, Data/Furniture, Data/hats, Data/NPCGiftTastes, Data/NPCGiftTastes.ru-RU, Strings/StringsFromCSFiles, Strings/StringsFromCSFiles.ru-RU, Strings/Tools, Strings/Weapons).
+Propagated 11 core assets (Data/Achievements, Data/Achievements.ru-RU, Data/Boots, Data/CookingRecipes, Data/CraftingRecipes, Data/Furniture, Data/hats, Data/NPCGiftTastes, Data/NPCGiftTastes.ru-RU, Strings/StringsFromCSFiles, Strings/StringsFromCSFiles.ru-RU).
+[00:45:19 TRACE SMAPI] Content Patcher loaded asset 'Fonts/SpriteFont1.ru-vnrevival' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:19 TRACE SMAPI] Content Patcher loaded asset 'Fonts/SmallFont.ru-vnrevival' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:19 TRACE SMAPI] Content Patcher loaded asset 'Minigames/TitleButtons.ru-vnrevival' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:19 TRACE SMAPI] Content Patcher edited Strings/StringsFromCSFiles (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:19 TRACE game] LocalizedContentManager.CurrentLanguageCode CHANGED from 'ru' to 'mod'
+[00:45:19 TRACE VN Revival Language Switcher] Centered high-resolution title labels enabled for ru-vnrevival; button bounds: 800,1402 222x174 scale 3/3, 1046,1402 222x174 scale 3/3, 1292,1402 222x174 scale 3/3, 1538,1402 222x174 scale 3/3.
+[00:45:19 TRACE SMAPI] Context: locale set to mod (ru-vnrevival).
+[00:45:21 TRACE SMAPI] Content Patcher loaded asset 'Minigames/TitleButtons.ru-vnrevival' (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:49 TRACE SMAPI] Synchronizing 'Farm_SpaceCheck' task...
+[00:45:49 TRACE SMAPI]    task complete.
+[00:45:51 TRACE SMAPI] Content Patcher edited Data/Furniture (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:51 TRACE SMAPI] Content Patcher edited Data/Boots (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:51 TRACE SMAPI] Content Patcher edited Data/hats (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:51 TRACE SMAPI] Content Patcher edited Strings/Tools (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:51 TRACE SMAPI] Content Patcher edited Strings/Weapons (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:51 TRACE SMAPI] Content Patcher edited Strings/UI (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:51 TRACE SMAPI] Content Patcher edited Strings/1_6_Strings (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:52 TRACE SMAPI] Content Patcher edited Data/HairData (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:52 TRACE SMAPI] Content Patcher edited Strings/Shirts (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:52 TRACE SMAPI] Content Patcher edited Strings/Pants (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:45:52 TRACE VN Revival Language Switcher] Native back label enabled for ru-vnrevival; bounds 198x81, source 66x27, scale 3/3, overlay 0.75.
+[00:46:14 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1600}
+[00:46:14 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1600}
+[00:46:21 TRACE SMAPI] Synchronizing 'Find Save Games' task...
+[00:46:22 TRACE SMAPI]    task complete.
+[00:46:22 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1600}
+[00:47:59 TRACE game] gameMode was 'titleScreenGameMode (0)', set to 'loadingMode (6)'.
+[00:47:59 TRACE SMAPI] Game loader synchronizing...
+[00:47:59 TRACE game] getLoadEnumerator('zc_448908119')
+[00:47:59 TRACE SMAPI] Synchronizing 'Load_ReadSave' task...
+[00:48:00 TRACE SMAPI] Content Patcher edited Strings/BigCraftables (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:00 TRACE SMAPI] Content Patcher edited Data/Festivals/FestivalDates (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:01 TRACE SMAPI] Content Patcher edited Strings/NPCNames (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:01 TRACE SMAPI] Content Patcher edited Data/Bundles (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:01 TRACE SMAPI] Content Patcher edited Strings/Objects (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:02 TRACE SMAPI]    task complete.
+[00:48:02 TRACE SMAPI] Content Patcher edited Data/Festivals/FestivalDates (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:02 TRACE SMAPI] Synchronizing 'Load_LoadForNewGame' task...
+[00:48:02 TRACE SMAPI] Content Patcher edited Strings/Furniture (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:03 TRACE SMAPI] Content Patcher edited Data/Fish (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:03 TRACE SMAPI] Content Patcher edited Data/Quests (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:03 TRACE SMAPI]    task complete.
+[00:48:03 TRACE SMAPI] Synchronizing 'Load_Farmer' task...
+[00:48:03 TRACE SMAPI]    task complete.
+[00:48:03 TRACE SMAPI] Synchronizing 'Load_Locations' task...
+[00:48:03 TRACE SMAPI] Content Patcher edited Data/ChairTiles (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:04 TRACE SMAPI]    task complete.
+[00:48:04 TRACE game] gameMode was 'loadingMode (6)', set to 'playingGameMode (3)'.
+[00:48:04 TRACE game] getLoadEnumerator() exited, elapsed = '00:00:05.4146019'
+[00:48:04 TRACE SMAPI] Content Patcher edited Data/Events/FarmHouse (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:04 TRACE game] setGameMode( 'playingGameMode (3)' )
+[00:48:04 TRACE SMAPI] Game loader done.
+[00:48:05 TRACE SMAPI] Content Patcher edited Data/Festivals/FestivalDates (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:05 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1600}
+[00:48:05 TRACE SMAPI] Context: loaded save 'zc_448908119', starting spring 1 Y1, locale set to ru-vnrevival. Single-player.
+[00:48:12 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Haley (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:12 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Lewis (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:12 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Pierre (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:12 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Gus (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:12 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Maru (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:12 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Linus (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Vincent (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Abigail (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Pam (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Penny (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Elliott (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Jas (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Shane (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:19 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Dwarf (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:26 TRACE SMAPI] Content Patcher edited Characters/Dialogue/George (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:26 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Alex (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:26 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Sandy (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:34 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Clint (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:34 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Marnie (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:34 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Mister Qi (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:41 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Jodi (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:41 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Leah (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:48 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Harvey (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:48 TRACE SMAPI] Content Patcher edited Characters/Dialogue/Demetrius (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:48 TRACE SMAPI] Content Patcher edited Data/animationDescriptions (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:54 TRACE SMAPI] Content Patcher edited Data/mail (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:54 TRACE SMAPI] Content Patcher edited Strings/BundleNames (for the 'Stardew Valley — VN Revival Languages' content pack).
+[00:48:54 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1600}

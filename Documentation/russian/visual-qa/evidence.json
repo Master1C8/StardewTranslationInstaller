@@ -6,12 +6,13 @@
   "gameVersion": "1.6.15 build 24356",
   "smapiVersion": "4.5.2",
   "contentPatcherVersion": "2.9.1",
+  "quickSaveVersion": "1.5.0",
   "packageVersion": "1.17.21",
   "resolution": {
     "width": 2560,
     "height": 1600
   },
-  "method": "A live fullscreen game session was switched through the in-game language menu to Русский VN. macOS captured each stable screen at native resolution; the locale label was added afterward without resizing the source frame.",
+  "method": "A live fullscreen game session was switched through the in-game language menu to Русский VN. The prepared save was loaded once through the normal menu, then its QuickSave snapshot was loaded with F7 for the gameplay captures. macOS captured each stable screen at native resolution; the locale label was added afterward without resizing the source frame.",
   "result": "pass",
   "exactLocaleLoads": [
     "Fonts/SpriteFont1.ru-vnrevival",
@@ -32,32 +33,32 @@
       "review": "Russian labels render without missing glyphs; the repaired НАЗАД button is visible below the farm selector."
     },
     {
-      "file": "03-save-selection.png",
-      "sha256": "a765214b928ed68735a616aa4506cd5f530bdd8db2b4252bc99e9479bb4ab816",
-      "review": "Save metadata and the НАЗАД button render without clipping or missing glyphs."
+      "file": "03-gus-dialogue.png",
+      "sha256": "038f909f7c18274a4396e48b9ea64a146c7dce831b42b1dbf674d189a719b110",
+      "review": "Gus's portrait, localized name Гас, and multi-line Russian dialogue render without clipping or missing glyphs."
     },
     {
-      "file": "04-inventory.png",
-      "sha256": "372b980c76b8d85165704cd4c994bd47cc8a9fe80fb31de8b2beb5e9f18eda87",
-      "review": "Inventory labels, currency, date, and farm metadata render with the locale-specific fonts."
+      "file": "04-item-description.png",
+      "sha256": "ba0a6f4929a5b5b2faa5f32b35414a2784c1b49ed45cee71b9ee45ec837efd0b",
+      "review": "The axe name, category, and wrapped item description render legibly together with the localized inventory metadata."
     },
     {
-      "file": "05-options.png",
-      "sha256": "b5e1c6dd94a5e87b3ae2c1341f48bc1b123f383b9d2ccf41ea4e9937fc81e3c9",
-      "review": "Options labels, checkboxes, and dropdown text are readable and remain within the menu bounds."
+      "file": "05-journal.png",
+      "sha256": "83ccfea5940e4f8353a32cb8a656cf308687f3e18a4a6fd4a88469e165b2354a",
+      "review": "The expanded Знакомства journal entry, body copy, and 3/28 progress line render within the quest panel."
     }
   ],
   "contactSheet": {
     "file": "contact-sheet.png",
-    "sha256": "ec1eda62e75fd74c87ed0d5f544ac503eb509413d431fd5944a25777c267649d"
+    "sha256": "5dadaf77495a245821b41791c6b0c5eca1a6e93de3c0a7960d9fa80d6f0adf19"
   },
   "smapiLog": {
     "file": "smapi-ru-vnrevival-2026-09-13.log",
-    "sha256": "d6fe20ca827c30342ab5d5c32564147222b6e74af8f7fbf0b6091e7c2ecad013",
-    "note": "The log records the exact custom locale, all three locale-specific asset loads, the repaired native back-label overlay, and no ERROR or WARN entries."
+    "sha256": "899f147a1619a4a6f115bd6e85c9cef1f6308b315b69576a501faba1605159fa",
+    "note": "The log records the exact custom locale, all three locale-specific asset loads, the repaired native back-label overlay, the QuickSave F7 load, and no Content Patcher ERROR or WARN entries. SMAPI emits its expected changed-save-serializer warning for QuickSave."
   },
   "restoration": {
     "testSaveWritten": false,
-    "startupLanguageCodeRestoredTo": "VNRevival.StardewValleyTranslations_Polish"
+    "startupLanguageCodeAfterCapture": "VNRevival.StardewValleyTranslations_Russian"
   }
 }

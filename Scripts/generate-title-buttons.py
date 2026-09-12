@@ -48,6 +48,26 @@ FRAME_HEIGHT = 58
 RUNTIME_FRAME_SIZE = (888, 174)
 RUNTIME_BUTTON_WIDTH = 222
 INK_COLORS = ((210, 34, 69, 255), (239, 72, 101, 255))
+TITLE_VERTICAL_OFFSETS = {
+    "traditional-chinese": -24,
+}
+
+
+def offset_overlay(overlay: Image.Image, y_offset: int) -> Image.Image:
+    if y_offset == 0:
+        return overlay
+    shifted = Image.new("RGBA", overlay.size, (0, 0, 0, 0))
+    if y_offset < 0:
+        shifted.alpha_composite(
+            overlay.crop((0, -y_offset, overlay.width, overlay.height)),
+            (0, 0),
+        )
+    else:
+        shifted.alpha_composite(
+            overlay.crop((0, 0, overlay.width, overlay.height - y_offset)),
+            (0, y_offset),
+        )
+    return shifted
 
 
 def tint_overlay(overlay: Image.Image, color: tuple[int, int, int, int]) -> Image.Image:
@@ -139,6 +159,7 @@ def main() -> None:
     overlays: list[Image.Image] = []
     for index, spec in enumerate(BUTTONS):
         overlay = label_sheet.crop((0, index * RUNTIME_FRAME_SIZE[1], RUNTIME_FRAME_SIZE[0], (index + 1) * RUNTIME_FRAME_SIZE[1]))
+        overlay = offset_overlay(overlay, TITLE_VERTICAL_OFFSETS.get(spec.slug, 0))
         validate_overlay(overlay, spec)
         overlay.save(args.overlays / f"TitleLabels-{spec.slug}.png", format="PNG", optimize=False)
 

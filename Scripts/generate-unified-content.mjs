@@ -151,7 +151,7 @@ const languages = [
     fonts: "assets/fonts/traditional-chinese",
     useLatinFont: false,
     fontFile: "Fonts/ChineseTraditional",
-    fontPixelZoom: 3,
+    fontPixelZoom: 1,
     bitmapFonts: [
       { target: "Fonts/ChineseTraditional", file: "assets/fonts/traditional-chinese/ChineseTraditional.xnb" },
       { target: "Fonts/ChineseTraditional_0", file: "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb" },

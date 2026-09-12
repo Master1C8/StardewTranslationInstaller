@@ -39,11 +39,14 @@ from another language. Regenerate it with:
   /path/to/unpacked/TitleButtons*.png
 ```
 
-`title-button-labels.png` contains the approved native-resolution lettering for
-the four main-menu buttons in all 19 retained locales, in installer order. It
-is extracted from the owner's 977×1610 visual reference; the generated game
-atlases use only these monochrome masks and retain the original template's
-frames, parchment, icons, normal state, and hover state:
+`title-button-labels.png` contains the approved 3× screen-resolution lettering
+for the four main-menu buttons in all 19 retained locales, in installer order.
+It is extracted from the owner's 977×1610 visual reference with continuous
+alpha coverage, so curves remain smooth. Generated `TitleButtons` atlases keep
+only the original frames, parchment, icons, and hover art; the shared language
+switcher draws each locale's `title-overlays/TitleLabels-*.png` at screen scale.
+This avoids Stardew's point-sampled 74×58 atlas cells, which make either blocky
+or blurry text:
 
 ```sh
 /usr/bin/python3 Scripts/extract-reference-title-labels.py \

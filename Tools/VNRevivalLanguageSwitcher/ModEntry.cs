@@ -8,11 +8,13 @@ using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using HarmonyLib;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.BellsAndWhistles;
 using StardewValley.GameData;
+using StardewValley.Menus;
 
 namespace VNRevival.LanguageSwitcher
 {
@@ -29,9 +31,41 @@ public sealed class ModEntry : Mod
     private static ArabicScriptTextAdapter? PersianAdapter;
     private static ArabicScriptTextAdapter? ArabicAdapter;
     private static ArabicScriptTextAdapter? HebrewAdapter;
+    private static IModHelper? ModHelper;
+    private static IMonitor? ModMonitor;
+    private static bool LoggedTitleOverlay;
+    private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
+    private static readonly Dictionary<string, string> TitleOverlayFiles = new(StringComparer.Ordinal)
+    {
+        ["ru-vnrevival"] = "russian",
+        ["sr-vnrevival"] = "serbian",
+        ["pl-vnrevival"] = "polish",
+        ["uk-vnrevival"] = "ukrainian",
+        ["vi-vnrevival"] = "vietnamese",
+        ["sw-vnrevival"] = "swahili",
+        ["fa-vnrevival"] = "persian",
+        ["ar-vnrevival"] = "arabic",
+        ["id-vnrevival"] = "indonesian",
+        ["fil-vnrevival"] = "filipino",
+        ["nl-vnrevival"] = "dutch",
+        ["hi-vnrevival"] = "hindi",
+        ["zh-TW-vnrevival"] = "traditional-chinese",
+        ["ro-vnrevival"] = "romanian",
+        ["he-vnrevival"] = "hebrew",
+        ["bg-vnrevival"] = "bulgarian",
+        ["th-vnrevival"] = "thai",
+        ["el-vnrevival"] = "greek",
+        ["cs-vnrevival"] = "czech",
+    };
+    private static readonly Color NormalTitleInk = new(210, 34, 69);
+    private static readonly Color HoverTitleInk = new(239, 72, 101);
+    private const int TitleOverlayButtonWidth = 222;
+    private const int TitleOverlayHeight = 174;
 
     public override void Entry(IModHelper helper)
     {
+        ModHelper = helper;
+        ModMonitor = Monitor;
         MethodInfo? target = AccessTools.Method(
             typeof(LocalizedContentManager),
             nameof(LocalizedContentManager.SetModLanguage)
@@ -42,6 +76,16 @@ public sealed class ModEntry : Mod
 
         Harmony harmony = new(ModManifest.UniqueID);
         harmony.Patch(target, prefix: new HarmonyMethod(prefix));
+
+        MethodInfo titleDrawTarget = AccessTools.Method(
+            typeof(TitleMenu),
+            nameof(TitleMenu.draw),
+            new[] { typeof(SpriteBatch) }
+        ) ?? throw new InvalidOperationException("The Stardew Valley title-menu draw method was not found.");
+        harmony.Patch(
+            titleDrawTarget,
+            postfix: new HarmonyMethod(typeof(ModEntry), nameof(AfterTitleMenuDraw))
+        );
 
         MethodInfo articleTarget = AccessTools.Method(typeof(Utility), nameof(Utility.AOrAn))
             ?? throw new InvalidOperationException("The Stardew Valley article method was not found.");
@@ -88,6 +132,47 @@ public sealed class ModEntry : Mod
             patched += 1;
         }
         Monitor.Log($"Persian, Arabic, and Hebrew shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
+    }
+
+    private static void AfterTitleMenuDraw(TitleMenu __instance, SpriteBatch b)
+    {
+        if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod)
+            return;
+
+        string? languageCode = LocalizedContentManager.CurrentModLanguage?.LanguageCode;
+        if (languageCode is null
+            || !TitleOverlayFiles.TryGetValue(languageCode, out string? slug)
+            || ModHelper is null
+            || __instance.buttons is null)
+            return;
+
+        if (!TitleOverlayTextures.TryGetValue(languageCode, out Texture2D? overlay))
+        {
+            overlay = ModHelper.ModContent.Load<Texture2D>($"title-overlays/TitleLabels-{slug}.png");
+            TitleOverlayTextures[languageCode] = overlay;
+        }
+
+        int buttonCount = Math.Min(4, __instance.buttons.Count);
+        for (int index = 0; index < buttonCount; index += 1)
+        {
+            ClickableTextureComponent button = __instance.buttons[index];
+            if (!button.visible || button.bounds.Width <= 0 || button.bounds.Height <= 0)
+                continue;
+
+            Rectangle source = new(index * TitleOverlayButtonWidth, 0, TitleOverlayButtonWidth, TitleOverlayHeight);
+            Color ink = button.sourceRect.Y == button.startingSourceRect.Y
+                ? NormalTitleInk
+                : HoverTitleInk;
+            b.Draw(overlay, button.bounds, source, ink);
+        }
+
+        if (!LoggedTitleOverlay)
+        {
+            string bounds = string.Join(", ", __instance.buttons.Take(buttonCount)
+                .Select(button => $"{button.bounds.Width}x{button.bounds.Height}"));
+            ModMonitor?.Log($"High-resolution title labels enabled for {languageCode}; button bounds: {bounds}.", LogLevel.Trace);
+            LoggedTitleOverlay = true;
+        }
     }
 
     private static bool IsTextParameter(ParameterInfo parameter)

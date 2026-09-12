@@ -16,7 +16,7 @@ const languages = [
     fonts: "assets/fonts/russian",
     useLatinFont: false,
     fontFile: "Fonts/Russian",
-    fontPixelZoom: 3,
+    fontPixelZoom: 2,
     clockDateFormat: "[DAY_OF_WEEK] [DAY_OF_MONTH]",
   },
   {

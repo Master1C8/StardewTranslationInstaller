@@ -164,7 +164,7 @@ struct InstallerCoreTests {
             })
             expect(language["ButtonTexture"] as? String == "Mods/{{ModId}}/\(expected.0)")
             expect(language["UseLatinFont"] as? Bool == false)
-            expect(language["FontPixelZoom"] as? Int == 3)
+            expect(language["FontPixelZoom"] as? Int == (code == "zh-TW-vnrevival" ? 2 : 3))
             if code == "ru-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Russian")
             } else {
@@ -297,8 +297,8 @@ struct InstallerCoreTests {
         let traditionalChineseFontHashes = [
             "assets/fonts/traditional-chinese/SpriteFont1.xnb": "ea7f73c93a3af65a9e40e7f195b15c82856cdd3c5be32b5cf8b92ae3e4a2afeb",
             "assets/fonts/traditional-chinese/SmallFont.xnb": "aedaf7a77e849edfa5a734b1fe62ccef4f199dc068eb89615a7ba983e67603b4",
-            "assets/fonts/traditional-chinese/ChineseTraditional.xnb": "8ce78fa9e824d05ae9e0288bb8eb6d17793103da63b7047d15478f1d1fc9b105",
-            "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb": "caaf23f1a64649253607171d7c575f3333b379dd0af989b6a74c8b920a079e53",
+            "assets/fonts/traditional-chinese/ChineseTraditional.xnb": "21809b967acb4a16887d6fb53be1f51ed440a731c20eee545dd595a02b315e08",
+            "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb": "382069bb194730958dd771b0586133f2333326ac77a0aaca74aebe7c3323b793",
         ]
         for (fontPath, expectedHash) in traditionalChineseFontHashes {
             try expect(

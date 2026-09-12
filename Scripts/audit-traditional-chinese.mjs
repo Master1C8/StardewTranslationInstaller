@@ -353,7 +353,7 @@ if (traditionalChineseLanguage?.LanguageCode !== "zh-TW-vnrevival"
   || traditionalChineseLanguage?.ButtonTexture !== "Mods/{{ModId}}/ButtonTraditionalChinese"
   || traditionalChineseLanguage?.UseLatinFont !== false
   || traditionalChineseLanguage?.FontFile !== "Fonts/ChineseTraditional"
-  || traditionalChineseLanguage?.FontPixelZoom !== 3) {
+  || traditionalChineseLanguage?.FontPixelZoom !== 2) {
   errors.push("content.json lacks the complete Traditional Chinese AdditionalLanguages entry");
 }
 

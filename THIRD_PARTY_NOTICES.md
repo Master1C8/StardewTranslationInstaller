@@ -41,8 +41,9 @@ from this font.
 - Light font SHA-256: `a49db53f6aac529d91a036606e55d68e2ab1df1360f507504ac4ff2cbb0f9407`
 
 The pinned font is downloaded only when rebuilding the Traditional Chinese
-runtime fonts. The distributed XNB assets use Regular at 36 and 24 pixels,
-and as a fallback for the few characters absent from Cubic 11.
+runtime fonts. The distributed XNB assets use antialiased Regular at 36 and 24
+pixels, plus the custom-language BMFont at 16 pixels and a twofold in-game
+pixel zoom.
 
 ## Cubic 11 1.500
 
@@ -52,7 +53,6 @@ and as a fallback for the few characters absent from Cubic 11.
 - License: SIL Open Font License 1.1
 - Font SHA-256: `0193f5f033612496df6b45ee92ac3b335bc6a5a24ff95da55ca87b33e57dcf62`
 
-The pinned font is downloaded only when rebuilding the Traditional Chinese
-runtime BMFont. It is rendered without antialiasing at the existing 16-pixel
-layout size; Noto Sans CJK TC supplies 13 rare Han glyphs it does not contain,
-and the macOS Arial face supplies two Latin glyphs used in the credits.
+The pinned helper remains available for comparison builds of the Traditional
+Chinese runtime BMFont. The current distributed runtime assets use Noto Sans
+CJK TC instead.

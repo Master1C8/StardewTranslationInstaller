@@ -39,21 +39,17 @@ from another language. Regenerate it with:
   /path/to/unpacked/TitleButtons*.png
 ```
 
-`title-button-overlays.png` contains the approved complete 888×174 main-menu
-row for each of the 19 retained locales, in installer order. Each 222×174 cell
-already contains its frame, parchment, text, and icon. The source sheet is
-cropped to its left 888 pixels without resampling; the localization labels at
-the right of the presentation image are not retained:
+`title-button-labels.png` contains the approved 3× screen-resolution lettering
+for the four main-menu buttons in all 19 retained locales, in installer order.
+It is extracted from the owner's 977×1610 visual reference with continuous
+alpha coverage, so curves remain smooth. Generated `TitleButtons` atlases keep
+only the original frames, parchment, icons, and hover art; the shared language
+switcher draws each locale's `title-overlays/TitleLabels-*.png` at screen scale.
+This avoids Stardew's point-sampled 74×58 atlas cells, which make either blocky
+or blurry text:
 
 ```sh
-/usr/bin/python3 Scripts/extract-ready-title-buttons.py \
-  /path/to/language_menu_exact_222x174.png \
-  Scripts/assets/title-button-overlays.png
+/usr/bin/python3 Scripts/extract-reference-title-labels.py \
+  /path/to/approved-title-menu-reference.png \
+  Scripts/assets/title-button-labels.png
 ```
-
-`generate-title-buttons.py` cuts that sheet into
-`title-overlays/TitleButtons-*.png`. The shared language switcher draws each
-222×174 cell directly into the matching 222×174 game button bounds with white
-colour multiplication. It does not scale, filter, recolour, redraw, or process
-the supplied art. Because the approved sheet has one state, hover uses the same
-image.

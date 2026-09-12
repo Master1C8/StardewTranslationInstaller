@@ -33,9 +33,9 @@ public sealed class ModEntry : Mod
     private static ArabicScriptTextAdapter? HebrewAdapter;
     private static IModHelper? ModHelper;
     private static IMonitor? ModMonitor;
-    private static bool LoggedTitleButtons;
-    private static readonly Dictionary<string, Texture2D> TitleButtonTextures = new(StringComparer.Ordinal);
-    private static readonly Dictionary<string, string> TitleButtonFiles = new(StringComparer.Ordinal)
+    private static bool LoggedTitleOverlay;
+    private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
+    private static readonly Dictionary<string, string> TitleOverlayFiles = new(StringComparer.Ordinal)
     {
         ["ru-vnrevival"] = "russian",
         ["sr-vnrevival"] = "serbian",
@@ -57,6 +57,8 @@ public sealed class ModEntry : Mod
         ["el-vnrevival"] = "greek",
         ["cs-vnrevival"] = "czech",
     };
+    private static readonly Color NormalTitleInk = new(210, 34, 69);
+    private static readonly Color HoverTitleInk = new(239, 72, 101);
     private const int TitleOverlayButtonWidth = 222;
     private const int TitleOverlayHeight = 174;
 
@@ -139,7 +141,7 @@ public sealed class ModEntry : Mod
 
         string? languageCode = LocalizedContentManager.CurrentModLanguage?.LanguageCode;
         if (languageCode is null
-            || !TitleButtonFiles.TryGetValue(languageCode, out string? slug)
+            || !TitleOverlayFiles.TryGetValue(languageCode, out string? slug)
             || ModHelper is null
             || __instance.buttons is null
             || __instance.fadeFromWhiteTimer > 0
@@ -147,10 +149,10 @@ public sealed class ModEntry : Mod
             || __instance.buttonsToShow <= 0)
             return;
 
-        if (!TitleButtonTextures.TryGetValue(languageCode, out Texture2D? overlay))
+        if (!TitleOverlayTextures.TryGetValue(languageCode, out Texture2D? overlay))
         {
-            overlay = ModHelper.ModContent.Load<Texture2D>($"title-overlays/TitleButtons-{slug}.png");
-            TitleButtonTextures[languageCode] = overlay;
+            overlay = ModHelper.ModContent.Load<Texture2D>($"title-overlays/TitleLabels-{slug}.png");
+            TitleOverlayTextures[languageCode] = overlay;
         }
 
         int buttonCount = Math.Min(Math.Min(4, __instance.buttons.Count), __instance.buttonsToShow);
@@ -161,16 +163,33 @@ public sealed class ModEntry : Mod
                 continue;
 
             Rectangle source = new(index * TitleOverlayButtonWidth, 0, TitleOverlayButtonWidth, TitleOverlayHeight);
-            Vector2 position = new(button.bounds.X, button.bounds.Y);
-            b.Draw(overlay, position, source, Color.White);
+            float overlayScale = button.baseScale > 0f
+                ? button.scale / button.baseScale
+                : 1f;
+            Vector2 position = new(button.bounds.Center.X, button.bounds.Center.Y);
+            Vector2 origin = new(TitleOverlayButtonWidth / 2f, TitleOverlayHeight / 2f);
+            Color ink = button.sourceRect.Y == button.startingSourceRect.Y
+                ? NormalTitleInk
+                : HoverTitleInk;
+            b.Draw(
+                overlay,
+                position,
+                source,
+                ink,
+                0f,
+                origin,
+                overlayScale,
+                SpriteEffects.None,
+                0f
+            );
         }
 
-        if (!LoggedTitleButtons)
+        if (!LoggedTitleOverlay)
         {
             string bounds = string.Join(", ", __instance.buttons.Take(buttonCount)
-                .Select(button => $"{button.bounds.Width}x{button.bounds.Height}"));
-            ModMonitor?.Log($"Full-resolution title buttons enabled for {languageCode}; button bounds: {bounds}.", LogLevel.Trace);
-            LoggedTitleButtons = true;
+                .Select(button => $"{button.bounds.X},{button.bounds.Y} {button.bounds.Width}x{button.bounds.Height} scale {button.scale:0.###}/{button.baseScale:0.###}"));
+            ModMonitor?.Log($"Centered high-resolution title labels enabled for {languageCode}; button bounds: {bounds}.", LogLevel.Trace);
+            LoggedTitleOverlay = true;
         }
     }
 

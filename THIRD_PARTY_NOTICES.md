@@ -28,5 +28,18 @@ The archives are downloaded to a temporary directory, verified before use, and d
 - Font SHA-256: `743ddb744884f81289bc7422a936d251615a721c804415fdb820aa55369494f6`
 
 The pinned font is downloaded only when rebuilding the Traditional Chinese
-font and menu assets. The distributed XNB and PNG assets contain rasterized
-glyphs derived from this font.
+menu assets. The distributed PNG assets contain rasterized glyphs derived
+from this font.
+
+## Noto Sans CJK TC 2.004
+
+- Project: https://github.com/notofonts/noto-cjk
+- Release: https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004
+- Variant: Noto Sans CJK Traditional Chinese Regular (`NotoSansCJKtc-Regular`)
+- License: SIL Open Font License 1.1
+- Font SHA-256: `dce08bd4fd91aa8aa76ed8fea4b694c2dfb8550f67871e326843212ddbeb88b4`
+
+The pinned font is downloaded only when rebuilding the Traditional Chinese
+runtime fonts. The distributed XNB assets contain rasterized glyphs derived
+from this font at native 36, 24, and 32 pixel sizes so complex ideographs
+remain legible.

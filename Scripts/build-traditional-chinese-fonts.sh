@@ -7,9 +7,9 @@ xnbcli=${XNBCLI:-${HOME}/Developer/tools/xnbcli/xnbcli}
 if [[ -n "${VN_TRADITIONAL_CHINESE_FONT:-}" ]]; then
   font_file=$VN_TRADITIONAL_CHINESE_FONT
 else
-  font_file=$("$script_dir/fetch-fusion-pixel-font.sh")
+  font_file=$("$script_dir/fetch-noto-sans-cjk-tc-font.sh")
 fi
-font_name=${VN_TRADITIONAL_CHINESE_FONT_NAME:-Fusion-Pixel-12px-Prop-zh_hant-Regular}
+font_name=${VN_TRADITIONAL_CHINESE_FONT_NAME:-NotoSansCJKtc-Regular}
 font_assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/traditional-chinese"
 translations="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/traditional-chinese"
 temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-zh-tw-fonts.XXXXXX)
@@ -30,6 +30,10 @@ VN_SMALLFONT_ATLAS_SIZE=2048 \
 VN_BITMAP_FONT_ATLAS_SIZE=2048 \
 VN_SPRITEFONT_SIZE=36 \
 VN_SMALLFONT_SIZE=24 \
+VN_BITMAP_FONT_SIZE=32 \
+VN_BITMAP_FONT_LINE_HEIGHT=33 \
+VN_BITMAP_FONT_BASE=26 \
+VN_BITMAP_FONT_ANTIALIAS=1 \
 /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
   "$temp_root/base-unpacked" \
   "$translations" \

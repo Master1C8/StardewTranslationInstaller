@@ -295,10 +295,10 @@ struct InstallerCoreTests {
         }
 
         let traditionalChineseFontHashes = [
-            "assets/fonts/traditional-chinese/SpriteFont1.xnb": "818a2389124a19eb54184b229c4ea9b8c28cfeddddb670c806a5b809d263db35",
-            "assets/fonts/traditional-chinese/SmallFont.xnb": "8e95e0b73c1a3d15cc86c4e233970a96bcfdf5796567a0a3236c1f4a2686e883",
-            "assets/fonts/traditional-chinese/ChineseTraditional.xnb": "1e5c1107e47f4439880cd1f02a2b02c3936a8155bd4c9cc5a9d03a81d6197d76",
-            "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb": "6e1c3336240e12986e009b9efaf2cf350a8679263d196f2924306cf0136322dd",
+            "assets/fonts/traditional-chinese/SpriteFont1.xnb": "ea7f73c93a3af65a9e40e7f195b15c82856cdd3c5be32b5cf8b92ae3e4a2afeb",
+            "assets/fonts/traditional-chinese/SmallFont.xnb": "aedaf7a77e849edfa5a734b1fe62ccef4f199dc068eb89615a7ba983e67603b4",
+            "assets/fonts/traditional-chinese/ChineseTraditional.xnb": "182384f801d7083b7455a436b3f34f8ba30540a43aaf0ea4f0fca5e2e131533d",
+            "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb": "c080a2be1092617d79bda984fc9858c62bf235e82dc6d46198759227314c0434",
         ]
         for (fontPath, expectedHash) in traditionalChineseFontHashes {
             try expect(

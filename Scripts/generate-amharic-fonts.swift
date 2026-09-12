@@ -191,21 +191,23 @@ func makeBitmap(width: Int, height: Int) -> NSBitmapImageRep? {
     )
 }
 
-func writePNG(_ bitmap: NSBitmapImageRep, to url: URL) throws {
+func writePNG(_ bitmap: NSBitmapImageRep, to url: URL, binaryAlpha: Bool = true) throws {
     guard let pixels = bitmap.bitmapData else {
         throw GeneratorError.renderFailed(url.lastPathComponent)
     }
-    // The game's texture uses binary alpha. Thresholding avoids coloured DXT
-    // fringes around antialiased system-font glyphs after XNB packing.
-    let bytesPerPixel = bitmap.bitsPerPixel / 8
-    for y in 0..<bitmap.pixelsHigh {
-        for x in 0..<bitmap.pixelsWide {
-            let offset = y * bitmap.bytesPerRow + x * bytesPerPixel
-            let opaque = pixels[offset + 3] >= 96
-            pixels[offset] = opaque ? 255 : 0
-            pixels[offset + 1] = opaque ? 255 : 0
-            pixels[offset + 2] = opaque ? 255 : 0
-            pixels[offset + 3] = opaque ? 255 : 0
+    if binaryAlpha {
+        // SpriteFont textures use binary alpha. Thresholding avoids coloured
+        // DXT fringes around antialiased system-font glyphs after XNB packing.
+        let bytesPerPixel = bitmap.bitsPerPixel / 8
+        for y in 0..<bitmap.pixelsHigh {
+            for x in 0..<bitmap.pixelsWide {
+                let offset = y * bitmap.bytesPerRow + x * bytesPerPixel
+                let opaque = pixels[offset + 3] >= 96
+                pixels[offset] = opaque ? 255 : 0
+                pixels[offset + 1] = opaque ? 255 : 0
+                pixels[offset + 2] = opaque ? 255 : 0
+                pixels[offset + 3] = opaque ? 255 : 0
+            }
         }
     }
     guard let data = bitmap.representation(using: .png, properties: [:]) else {
@@ -404,6 +406,9 @@ func xmlEscaped(_ value: String) -> String {
 func processBmFont(
     name: String,
     fontSize: CGFloat,
+    lineHeight: Int,
+    base: Int,
+    antialias: Bool,
     atlasSize: Int,
     outputDirectory: URL,
     requiredCharacters: Set<String>,
@@ -413,8 +418,6 @@ func processBmFont(
     guard let font = NSFont(name: fontName, size: fontSize) else {
         throw GeneratorError.missingFont
     }
-    let lineHeight = 18
-    let base = 14
     let orderedCharacters = requiredCharacters
         .filter { $0 != "\n" && $0 != "\r" && $0 != "\t" }
         .sorted { left, right in
@@ -475,12 +478,16 @@ func processBmFont(
     atlasContext.flushGraphics()
     NSGraphicsContext.restoreGraphicsState()
     try FileManager.default.createDirectory(at: outputDirectory, withIntermediateDirectories: true)
-    try writePNG(atlas, to: outputDirectory.appendingPathComponent("\(name)_0.png"))
+    try writePNG(
+        atlas,
+        to: outputDirectory.appendingPathComponent("\(name)_0.png"),
+        binaryAlpha: !antialias
+    )
 
     var lines = [
         "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
         "<font>",
-        "  <info face=\"\(xmlEscaped(font.displayName ?? font.fontName))\" size=\"\(Int(fontSize))\" bold=\"0\" italic=\"0\" charset=\"\" unicode=\"1\" stretchH=\"100\" smooth=\"0\" aa=\"1\" padding=\"0,0,0,0\" spacing=\"1,1\" outline=\"0\" />",
+        "  <info face=\"\(xmlEscaped(font.displayName ?? font.fontName))\" size=\"\(Int(fontSize))\" bold=\"0\" italic=\"0\" charset=\"\" unicode=\"1\" stretchH=\"100\" smooth=\"\(antialias ? 1 : 0)\" aa=\"1\" padding=\"0,0,0,0\" spacing=\"1,1\" outline=\"0\" />",
         "  <common lineHeight=\"\(lineHeight)\" base=\"\(base)\" scaleW=\"\(atlasSize)\" scaleH=\"\(atlasSize)\" pages=\"1\" packed=\"0\" alphaChnl=\"0\" redChnl=\"4\" greenChnl=\"4\" blueChnl=\"4\" />",
         "  <pages>",
         "    <page id=\"0\" file=\"\(name)_0\" />",
@@ -630,7 +637,12 @@ do {
         let bitmapFontName = ProcessInfo.processInfo.environment["VN_BITMAP_FONT_NAME"] ?? "Malayalam"
         try processBmFont(
             name: bitmapFontName,
-            fontSize: 12,
+            fontSize: CGFloat(
+                Double(ProcessInfo.processInfo.environment["VN_BITMAP_FONT_SIZE"] ?? "") ?? 12
+            ),
+            lineHeight: Int(ProcessInfo.processInfo.environment["VN_BITMAP_FONT_LINE_HEIGHT"] ?? "") ?? 18,
+            base: Int(ProcessInfo.processInfo.environment["VN_BITMAP_FONT_BASE"] ?? "") ?? 14,
+            antialias: ProcessInfo.processInfo.environment["VN_BITMAP_FONT_ANTIALIAS"] == "1",
             atlasSize: bitmapAtlasSize,
             outputDirectory: outputDirectory,
             requiredCharacters: requiredCharacters,

@@ -34,6 +34,7 @@ public sealed class ModEntry : Mod
     private static IModHelper? ModHelper;
     private static IMonitor? ModMonitor;
     private static bool LoggedTitleOverlay;
+    private static bool LoggedBackOverlay;
     private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleBackOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, string> TitleOverlayFiles = new(StringComparer.Ordinal)
@@ -203,9 +204,14 @@ public sealed class ModEntry : Mod
                 TitleBackOverlayTextures[languageCode] = backOverlay;
             }
 
-            float overlayScale = backButton.baseScale > 0f
-                ? backButton.scale / backButton.baseScale
-                : 1f;
+            float renderedButtonWidth = backButton.sourceRect.Width * backButton.scale;
+            float renderedButtonHeight = backButton.sourceRect.Height * backButton.scale;
+            float overlayScale = Math.Min(
+                renderedButtonWidth / TitleBackOverlayWidth,
+                renderedButtonHeight / TitleBackOverlayHeight
+            );
+            if (overlayScale <= 0f)
+                overlayScale = 1f;
             Color ink = backButton.sourceRect.Y == backButton.startingSourceRect.Y
                 ? NormalTitleInk
                 : HoverTitleInk;
@@ -220,6 +226,17 @@ public sealed class ModEntry : Mod
                 SpriteEffects.None,
                 0f
             );
+
+            if (!LoggedBackOverlay)
+            {
+                ModMonitor?.Log(
+                    $"Native back label enabled for {languageCode}; bounds {backButton.bounds.Width}x{backButton.bounds.Height}, "
+                    + $"source {backButton.sourceRect.Width}x{backButton.sourceRect.Height}, "
+                    + $"scale {backButton.scale:0.###}/{backButton.baseScale:0.###}, overlay {overlayScale:0.###}.",
+                    LogLevel.Trace
+                );
+                LoggedBackOverlay = true;
+            }
         }
 
         if (!LoggedTitleOverlay)

@@ -23,16 +23,16 @@ enum DependencyError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .badResponse(let name):
-            return "Не удалось скачать \(name) с официального сервера."
+            return "Could not download \(name) from the official server."
         case .checksumMismatch(let name):
-            return "Контрольная сумма \(name) не совпала. Установка остановлена."
+            return "The \(name) checksum did not match. Installation was stopped."
         case .archiveLayout(let name):
-            return "В архиве \(name) нет ожидаемых файлов."
+            return "The \(name) archive does not contain the expected files."
         case .commandFailed(let name, let code, let output):
             let details = output.trimmingCharacters(in: .whitespacesAndNewlines)
-            return "\(name) завершился с кодом \(code).\(details.isEmpty ? "" : "\n\(details)")"
+            return "\(name) exited with code \(code).\(details.isEmpty ? "" : "\n\(details)")"
         case .installationDidNotComplete(let name):
-            return "\(name) не появился в папке игры после установки."
+            return "\(name) was not found in the game folder after installation."
         }
     }
 }
@@ -87,7 +87,7 @@ actor DependencyInstaller {
         _ = try await Self.runProcess(
             executable: URL(fileURLWithPath: "/usr/bin/ditto"),
             arguments: ["-x", "-k", archive.path, extracted.path],
-            name: "Распаковка SMAPI"
+            name: "Extracting SMAPI"
         )
 
         guard let executable = findFile(named: "SMAPI.Installer", below: extracted),
@@ -102,7 +102,7 @@ actor DependencyInstaller {
                 "--game-path", installation.executableDirectory.path,
                 "--no-prompt",
             ],
-            name: "Установщик SMAPI"
+            name: "SMAPI installer"
         )
     }
 
@@ -115,7 +115,7 @@ actor DependencyInstaller {
         _ = try await Self.runProcess(
             executable: URL(fileURLWithPath: "/usr/bin/ditto"),
             arguments: ["-x", "-k", archive.path, extracted.path],
-            name: "Распаковка Content Patcher"
+            name: "Extracting Content Patcher"
         )
         guard let payload = findFolder(
             uniqueID: "Pathoschild.ContentPatcher",
@@ -188,7 +188,7 @@ actor DependencyInstaller {
             let logURL = fileManager.temporaryDirectory
                 .appendingPathComponent("stardew-installer-\(UUID().uuidString).log")
             guard fileManager.createFile(atPath: logURL.path, contents: nil) else {
-                throw DependencyError.commandFailed(name, -1, "Не удалось создать временный журнал.")
+                throw DependencyError.commandFailed(name, -1, "Could not create a temporary log file.")
             }
             defer { try? fileManager.removeItem(at: logURL) }
 

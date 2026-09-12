@@ -92,6 +92,11 @@ struct InstallerCoreTests {
             "cs-vnrevival",
         ])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
+        expect(package.copy.windowTitle == "VN Revival Languages for Stardew Valley")
+        expect(package.copy.preparingTitle == "VN Revival Languages for Stardew Valley")
+        expect(package.copy.installingTitle == "Installing translations")
+        expect(package.copy.installedMessage == "All translations installed")
+        expect(package.copy.launchButton == "Launch game")
         expect(TranslationPackage.supportedSiteLocales == [
             "zh", "en", "ru", "es", "pt-BR", "ja", "de", "ko", "fr", "tr", "pl", "zh-TW",
             "it", "th", "vi", "id", "uk", "ar", "cs", "hu", "nl", "fa", "ro", "hi", "fil",

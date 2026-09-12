@@ -143,9 +143,9 @@ final class AppState: ObservableObject {
 
 private extension InstallerCopy {
     static let fallback = InstallerCopy(
-        windowTitle: "Stardew Valley Translation",
-        preparingTitle: "Stardew Valley Translation",
-        installingTitle: "Installing translation",
+        windowTitle: "VN Revival Languages for Stardew Valley",
+        preparingTitle: "VN Revival Languages for Stardew Valley",
+        installingTitle: "Installing translations",
         readyTitle: "Ready",
         failedTitle: "Installation failed",
         preparingMessage: "Preparing installation…",
@@ -154,8 +154,8 @@ private extension InstallerCopy {
         chooseGameTitle: "Choose Stardew Valley",
         chooseGameMessage: "Choose the Stardew Valley or Contents/MacOS folder.",
         chooseGamePrompt: "Choose",
-        installingTranslationMessage: "Installing translation…",
-        installedMessage: "Translation installed",
+        installingTranslationMessage: "Installing all VN Revival language packs…",
+        installedMessage: "All translations installed",
         launchingMessage: "Launching Stardew Valley…",
         steamFailedMessage: "Steam could not be opened. Launch Stardew Valley from your Steam library.",
         installationErrorMessage: "Installation did not finish. Check your internet connection and try again.",

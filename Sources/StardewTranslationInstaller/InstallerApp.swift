@@ -5,7 +5,7 @@ struct StardewTranslationInstallerApp: App {
     @StateObject private var state = AppState()
 
     var body: some Scene {
-        WindowGroup("Stardew Valley Translation") {
+        WindowGroup(state.copy.windowTitle) {
             ContentView(state: state)
                 .frame(width: 460, height: 350)
         }

@@ -31,17 +31,17 @@ enum InstallerError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidGameFolder:
-            return "В выбранной папке не найдена Stardew Valley."
+            return "Stardew Valley was not found in the selected folder."
         case .missingPrerequisites:
-            return "Сначала установите SMAPI и Content Patcher."
+            return "Install SMAPI and Content Patcher first."
         case .missingPayload:
-            return "В приложении отсутствует пакет мода."
+            return "The mod package is missing from the application."
         case .packageMismatch:
-            return "Конфигурация языка не совпадает с пакетом перевода."
+            return "The language configuration does not match the translation package."
         case .foreignFolder(let url):
-            return "Папка \(url.lastPathComponent) принадлежит другому моду и не будет перезаписана."
+            return "The \(url.lastPathComponent) folder belongs to another mod and will not be overwritten."
         case .malformedManifest(let url):
-            return "Не удалось проверить manifest.json в \(url.path)."
+            return "Could not validate manifest.json in \(url.path)."
         }
     }
 }

@@ -128,6 +128,12 @@ try {
     if (/bold|полужир/i.test(face)) {
       throw new Error(`${code} bitmap font unexpectedly uses a bold face: ${face}`);
     }
+    const latinCapitalA = xml.match(/<char id="65"[^>]* yoffset="(-?\d+)"/);
+    if (!latinCapitalA || Number(latinCapitalA[1]) >= 0) {
+      throw new Error(
+        `${code} bitmap font is not raised above the default baseline: ASCII A yoffset=${latinCapitalA?.[1] ?? "missing"}`,
+      );
+    }
     const available = new Set(
       [...xml.matchAll(/<char id="(\d+)"/g)].map((match) => Number(match[1])),
     );

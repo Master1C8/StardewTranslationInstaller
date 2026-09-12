@@ -22,6 +22,7 @@ VN_BITMAP_FONT_NAME=Hebrew \
 VN_BITMAP_FONT_SIZE=32 \
 VN_BITMAP_FONT_LINE_HEIGHT=36 \
 VN_BITMAP_FONT_BASE=28 \
+VN_BITMAP_FONT_Y_OFFSET=-9 \
 VN_BITMAP_FONT_ANTIALIAS=1 \
 /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
   "$temp_root/base-unpacked" \

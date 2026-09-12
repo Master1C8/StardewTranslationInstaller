@@ -4,7 +4,7 @@
   "audit": {
     "method": "Complete all-entry source audit of all 150 CraftingRecipes records. Every value was read and classified field by field as a slash-delimited runtime recipe definition containing ingredient IDs and counts, recipe category, output ID and count, the big-craftable flag, and an unlock condition. Player-facing recipe names occur only as JSON keys, and project rules prohibit translating keys. All values are therefore explicitly preserved byte for byte with individual justification. Record count, key identity, source equality, slash-field payloads, item qualifiers, skill and friendship conditions, special-rule tokens, and null/default sentinels were verified. The full-locale final audits remain pending.",
     "reviewedTextSHA256": "510aba7111d6cecee8ef69436fdbdcc448791d980faf23ede75fa4c5deeae215",
-    "glossarySHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "glossarySHA256": "2f9eef19553710937e63381abc6f17bcdee10e5a221e5261f9f2e3d1c7a50d96",
     "correctedAfterFullRead": 0
   },
   "records": [

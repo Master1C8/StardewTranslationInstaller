@@ -7,13 +7,13 @@
   "sourceRoot": "/Users/antonkrutov/Developer/data/stardew-english-unpacked",
   "glossaryEndpoint": "https://vnrevival.fun/games/stardew-valley/glossary?locale=uk&offset=0&limit=1000",
   "glossaryEntries": 673,
-  "endpointCanonicalDifferences": 0,
+  "endpointCanonicalDifferences": 88,
   "glossaryAudit": {
-    "pass": 4,
+    "pass": 6,
     "readThroughIndex": 672,
     "consecutiveCleanFullPasses": 2,
-    "correctedEntries": 89,
-    "lockedFingerprint": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedEntries": 90,
+    "lockedFingerprint": "2f9eef19553710937e63381abc6f17bcdee10e5a221e5261f9f2e3d1c7a50d96",
     "history": "Documentation/uk/glossary-audit-history.json",
     "snapshot": "Documentation/glossary/glossary.uk.json"
   },
@@ -65,7 +65,7 @@
     "classification": "complete",
     "completed": [
       "All 14725 inventory records are reviewed: 13398 translated and 1327 explicitly justified language-independent or technical preserves.",
-      "Two consecutive full clean editorial audits passed at wording fingerprint eee4bf34eabf67de178c52e2b7a7eff7bff061430a2c59cee9258767155eef48.",
+      "Two consecutive full clean editorial audits passed at wording fingerprint 9c38a7489912ed9e47a2b5a139a5a008863c255aab57620ff232ba59a17aafaa.",
       "Ukrainian locale registration, 191 exact includes, language button, TitleButtons, both locale fonts, XNB round-trip, repeat-build idempotence, 8 Swift tests, release build, deep strict signature verification, and fresh SMAPI locale/font/title loading all passed.",
       "The pre-QA installed mod, updater, and Burmese startup language were restored.",
       "The complete Ukrainian change set was safely merged into the Desktop checkout; its concurrent Dutch and unrelated owner changes were preserved. The combined checkout contains 11 locale registrations, 2478 unique translation includes (191 Ukrainian and 187 Dutch), passes all 8 Swift tests, builds a valid signed app, and passes the Ukrainian release audit with zero warnings or errors."
@@ -101,8 +101,9 @@
   },
   "canonicalGlossarySync": {
     "entries": 673,
-    "correctedEntries": 89,
-    "ukSHA256": "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3",
+    "correctedEntries": 88,
+    "semanticCorrectionsAfterLock": 1,
+    "ukSHA256": "2f9eef19553710937e63381abc6f17bcdee10e5a221e5261f9f2e3d1c7a50d96",
     "otherLocaleBytesUnchanged": true,
     "englishSourceUnchanged": true,
     "published": false,

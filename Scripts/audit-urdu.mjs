@@ -377,6 +377,17 @@ for (const entry of englishGlossary ?? []) {
 const contextualGlossaryExceptions = new Set([
   "Strings/UI\u0000LearnedRecipe_cooking",
 ]);
+const compactGlossaryLabels = new Map(
+  glossaryLocale === "fa"
+    ? [["Strings/UI\u0000Character_StartingCabins", "کلبه آغازین"]]
+    : [],
+);
+for (const [id, compact] of compactGlossaryLabels) {
+  const record = records.get(id);
+  if (!record || record.translated !== compact) {
+    errors.push(`compact glossary label mismatch (${compact}): ${id}`);
+  }
+}
 for (const entry of englishGlossary ?? []) {
   const canonical = urduGlossary?.[entry.id]?.term;
   if (!canonical || entry.term.includes("/") || canonical.includes("/")) continue;
@@ -389,6 +400,7 @@ for (const entry of englishGlossary ?? []) {
   ]);
   for (const [id, record] of records) {
     if (record.translated === record.original) continue;
+    if (compactGlossaryLabels.has(id)) continue;
     if (
       exactEnglishLabels.has(record.original.trim())
       && !record.translated.includes(canonical)

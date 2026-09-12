@@ -1,7 +1,7 @@
 {
   "locale": "uk",
   "records": 14725,
-  "wordingFingerprint": "eee4bf34eabf67de178c52e2b7a7eff7bff061430a2c59cee9258767155eef48",
+  "wordingFingerprint": "9c38a7489912ed9e47a2b5a139a5a008863c255aab57620ff232ba59a17aafaa",
   "passes": [
     {
       "pass": 1,
@@ -16,6 +16,22 @@
       "date": "2026-09-08",
       "scope": "A separate repeat audit of all 14,725 records against the unchanged English extraction, canonical Ukrainian glossary, generated includes, and locale registration.",
       "method": "Repeated the full all-entry audit from a clean state; independently rechecked all candidate classes and the complete source-to-patch mapping without changing wording.",
+      "findings": 0,
+      "clean": true
+    },
+    {
+      "pass": 3,
+      "date": "2026-09-12",
+      "scope": "All 14,725 records: unchanged records verified against the two clean full audits; Spring Onion Mastery and ten compact character-creation labels rechecked against English, the glossary, measured layout limits, and generated patches.",
+      "method": "Verified every wording delta, then repeated source, review-ledger, glossary, placeholder, Unicode, structure, layout, and patch-parity checks over the complete record set.",
+      "findings": 0,
+      "clean": true
+    },
+    {
+      "pass": 4,
+      "date": "2026-09-12",
+      "scope": "Independent full-set regression pass over all 14,725 reviewed records and 191 generated includes after the Ukrainian mastery and layout-source corrections.",
+      "method": "Repeated the complete deterministic release and measured-layout audits from regenerated includes; separately confirmed that the obsolete mistranslation and overlong regenerated labels have no remaining occurrence.",
       "findings": 0,
       "clean": true
     }

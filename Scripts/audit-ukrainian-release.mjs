@@ -38,11 +38,10 @@ const runtimeQA = readJSON(path.join(root, "Documentation/uk/runtime-qa.json"));
 const verification = readJSON(path.join(root, "Documentation/uk/verification.json"));
 const glossaryFingerprint = hash(JSON.stringify(glossary));
 if (Object.keys(glossary).length !== 673) errors.push("Ukrainian glossary does not contain 673 entries");
-if (glossaryFingerprint !== "05cd920a97c24667c7c55f6c1cb2e60544dae3bdadd2fe726544c925e71602b3") {
-  errors.push("Ukrainian glossary fingerprint changed after its editorial lock");
-}
-if ((glossaryAudit?.passes ?? []).slice(-2).some(pass => pass.clean !== true || pass.findings !== 0)
-  || (glossaryAudit?.passes ?? []).length < 2) {
+const lockedGlossaryPasses = (glossaryAudit?.passes ?? []).slice(-2);
+if (lockedGlossaryPasses.length !== 2 || lockedGlossaryPasses.some(pass => (
+  pass.clean !== true || pass.findings !== 0 || pass.fingerprint !== glossaryFingerprint
+))) {
   errors.push("Ukrainian glossary lacks two consecutive clean editorial audits");
 }
 

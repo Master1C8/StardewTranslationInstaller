@@ -161,12 +161,24 @@ for (const entry of englishGlossary) {
   }
 }
 for (const term of conflictingExactTerms) exactGlossary.delete(term);
+const compactGlossaryLabels = new Map([
+  ["Strings/UI\u0000Character_SeparateWallet", "Hiwalay"],
+  ["Strings/UI\u0000Character_Difficulty", "Kita"],
+  ["Strings/UI\u0000Character_Separate", "Hiwalay"],
+  ["Strings/UI\u0000Character_StartingCabins", "Unang Kubo"],
+  ["Strings/UI\u0000Character_Shirt", "Damit"],
+  ["Strings/UI\u0000Character_SkipIntro", "Laktawan Panimula"],
+  ["Strings/UI\u0000Character_Pants", "Pantal."],
+]);
 for (const [id, record] of records) {
   const original = record.supplemental
     ? supplementalSources.get(id)
     : source(record.target)[record.key];
   const expected = exactGlossary.get(original);
-  if (expected !== undefined && !reviewed.get(id)?.reviewedPreserve && record.value !== expected) {
+  const compact = compactGlossaryLabels.get(id);
+  if (compact !== undefined && record.value !== compact) {
+    errors.push(`compact glossary label mismatch: ${record.target} :: ${record.key}`);
+  } else if (compact === undefined && expected !== undefined && !reviewed.get(id)?.reviewedPreserve && record.value !== expected) {
     errors.push(`exact glossary label mismatch: ${record.target} :: ${record.key}`);
   }
 }

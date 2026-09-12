@@ -59,8 +59,10 @@ for the 66×27 back button. `title-back-labels.png` contains regular-weight
 native-resolution lettering for that button in all 19 retained locales. The
 build slices those labels into `title-overlays/TitleBack-*.png`, clears the tiny
 atlas labels, and the switcher draws a label only while a closable title submenu
-is visible. This prevents the back label from leaking beside the message/help
-buttons on the plain title screen.
+is visible. Each label is centered inside the parchment panel and automatically
+reduced until it stays within the same safe inner margins. This prevents the
+back label from leaking beside the message/help buttons on the plain title
+screen.
 
 The checked-in back-label sheet can be regenerated without scaling any glyphs:
 

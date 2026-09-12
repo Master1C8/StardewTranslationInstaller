@@ -52,7 +52,8 @@ BACK_HOVER_POSITION = (300, 287)
 BACK_TEMPLATE_SIZE = (45, 28)
 BACK_TEMPLATE_FRAME_SIZE = (45, 14)
 RUNTIME_BACK_SIZE = (264, 108)
-RUNTIME_BACK_LABEL_WIDTH = 200
+RUNTIME_BACK_LABEL_LEFT = 24
+RUNTIME_BACK_LABEL_RIGHT = 216
 INK_COLORS = ((210, 34, 69, 255), (239, 72, 101, 255))
 TITLE_VERTICAL_OFFSETS = {
     "traditional-chinese": -24,
@@ -117,7 +118,7 @@ def validate_back_overlay(overlay: Image.Image, spec: TitleButtons) -> None:
     bounds = overlay.getchannel("A").getbbox()
     if bounds is None:
         raise ValueError(f"Missing back label for {spec.locale}")
-    if bounds[0] < 5 or bounds[2] > RUNTIME_BACK_LABEL_WIDTH - 5:
+    if bounds[0] < RUNTIME_BACK_LABEL_LEFT or bounds[2] > RUNTIME_BACK_LABEL_RIGHT:
         raise ValueError(f"Back label touches its frame for {spec.locale}: {bounds}")
 
 

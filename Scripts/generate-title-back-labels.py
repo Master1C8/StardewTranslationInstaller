@@ -42,8 +42,10 @@ LABELS = (
 )
 
 OVERLAY_SIZE = (264, 108)
-LABEL_AREA_WIDTH = 200
-MARGIN_X = 12
+LABEL_AREA_LEFT = 24
+LABEL_AREA_RIGHT = 216
+LABEL_AREA_WIDTH = LABEL_AREA_RIGHT - LABEL_AREA_LEFT
+MARGIN_X = 16
 MARGIN_Y = 12
 
 
@@ -92,7 +94,7 @@ def main() -> None:
             overlay.alpha_composite(
                 glyph,
                 (
-                    (LABEL_AREA_WIDTH - mask.width) // 2,
+                    LABEL_AREA_LEFT + (LABEL_AREA_WIDTH - mask.width) // 2,
                     (OVERLAY_SIZE[1] - mask.height) // 2,
                 ),
             )

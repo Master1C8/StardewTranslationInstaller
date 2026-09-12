@@ -399,7 +399,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(titleBackLabels) == (264, 2_052))
         try expect(
             try DependencyInstaller.sha256(of: titleBackLabels)
-                == "751654c5a677c7735fce35a2459403290e112beb95ee980aec50327338e0ac0f"
+                == "c848778c46ee54c8a91741453909b7ff3b59a0264a93e55489ba573f76d4fa2b"
         )
 
         let unifiedTitleButtonHashes = [
@@ -646,7 +646,7 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.7")
+        expect(manifest["Version"] as? String == "1.9.8")
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {
@@ -684,7 +684,7 @@ struct InstallerCoreTests {
         expect(arabicBackOverlayDimensions == (264, 108))
         try expect(
             try DependencyInstaller.sha256(of: arabicBackOverlay)
-                == "edf8548afed69de9f3ac19c3f7b7fa15736954ba29ef79bd9d025b9e6e3cd100"
+                == "88ef21f47451bcaa5a2dbc352d30136ca34f0fa22e38d721b452c9cbeb00e3ff"
         )
         expect(!fm.fileExists(atPath: source.appendingPathComponent("urdu-shaping-map.json").path))
         let persianShapingMap = try require(

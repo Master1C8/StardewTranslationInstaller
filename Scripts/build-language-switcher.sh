@@ -9,7 +9,9 @@ if command -v "$dotnet_bin" >/dev/null 2>&1; then
   "$dotnet_bin" build \
     "$project_root/Tools/VNRevivalLanguageSwitcher/VNRevivalLanguageSwitcher.csproj" \
     --configuration Release \
-    -p:StardewGamePath="$game_path"
+    -p:StardewGamePath="$game_path" \
+    -p:ContinuousIntegrationBuild=true \
+    -p:PathMap="$project_root=."
 else
   csc_bin="${CSC_BIN:-csc}"
   if ! command -v "$csc_bin" >/dev/null 2>&1; then
@@ -34,6 +36,7 @@ else
     -langversion:9.0 \
     -target:library \
     -deterministic \
+    -pathmap:"$project_root"=. \
     -debug:portable \
     -out:"$payload/VNRevival.LanguageSwitcher.dll" \
     -pdb:"$payload/VNRevival.LanguageSwitcher.pdb" \

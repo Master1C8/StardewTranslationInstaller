@@ -176,6 +176,26 @@ func renderGlyph(_ character: String, index: Int, font: NSFont, lineHeight: Int)
     return GlyphBitmap(index: index, character: character, image: image)
 }
 
+func fontSupports(_ text: String, font: NSFont) -> Bool {
+    let characters = Array(text.utf16)
+    var glyphs = [CGGlyph](repeating: 0, count: characters.count)
+    let coreTextFont = CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil)
+    return characters.withUnsafeBufferPointer { characterBuffer in
+        glyphs.withUnsafeMutableBufferPointer { glyphBuffer in
+            guard let characterAddress = characterBuffer.baseAddress,
+                  let glyphAddress = glyphBuffer.baseAddress else {
+                return false
+            }
+            return CTFontGetGlyphsForCharacters(
+                coreTextFont,
+                characterAddress,
+                glyphAddress,
+                characterBuffer.count
+            )
+        }
+    }
+}
+
 func makeBitmap(width: Int, height: Int) -> NSBitmapImageRep? {
     NSBitmapImageRep(
         bitmapDataPlanes: nil,
@@ -413,9 +433,14 @@ func processBmFont(
     outputDirectory: URL,
     requiredCharacters: Set<String>,
     fontName: String,
+    fallbackFontNames: [String],
     renderTextByCharacter: [String: String]
 ) throws {
     guard let font = NSFont(name: fontName, size: fontSize) else {
+        throw GeneratorError.missingFont
+    }
+    let fallbackFonts = fallbackFontNames.compactMap { NSFont(name: $0, size: fontSize) }
+    if fallbackFonts.count != fallbackFontNames.count {
         throw GeneratorError.missingFont
     }
     let orderedCharacters = requiredCharacters
@@ -426,6 +451,7 @@ func processBmFont(
     var bitmaps: [GlyphBitmap] = []
     var advances: [Int: Int] = [:]
     var yOffsets: [Int: Int] = [:]
+    var fallbackCharacters: [String] = []
     for (index, character) in orderedCharacters.enumerated() {
         let renderedText = renderTextByCharacter[character] ?? character
         if renderedText.unicodeScalars.allSatisfy({ CharacterSet.whitespacesAndNewlines.contains($0) }) {
@@ -448,9 +474,17 @@ func processBmFont(
             yOffsets[index] = base
             continue
         }
-        let glyph = try renderGlyph(renderedText, index: index, font: font, lineHeight: lineHeight)
+        guard let renderFont = ([font] + fallbackFonts).first(where: {
+            fontSupports(renderedText, font: $0)
+        }) else {
+            throw GeneratorError.renderFailed(character)
+        }
+        if renderFont.fontName != font.fontName {
+            fallbackCharacters.append(character)
+        }
+        let glyph = try renderGlyph(renderedText, index: index, font: renderFont, lineHeight: lineHeight)
         bitmaps.append(GlyphBitmap(index: index, character: character, image: glyph.image))
-        advances[index] = max(1, Int(ceil((renderedText as NSString).size(withAttributes: [.font: font]).width)))
+        advances[index] = max(1, Int(ceil((renderedText as NSString).size(withAttributes: [.font: renderFont]).width)))
         yOffsets[index] = max(0, (lineHeight - glyph.image.height) / 2)
     }
     let placements = try pack(bitmaps, atlasSize: atlasSize, padding: 1)
@@ -526,7 +560,7 @@ func processBmFont(
         let data = try JSONSerialization.data(withJSONObject: value, options: [.prettyPrinted, .sortedKeys])
         try (data + Data("\n".utf8)).write(to: outputDirectory.appendingPathComponent(filename))
     }
-    print("\(name): generated \(bitmaps.count) BMFont glyphs in a \(atlasSize)x\(atlasSize) atlas")
+    print("\(name): generated \(bitmaps.count) BMFont glyphs in a \(atlasSize)x\(atlasSize) atlas; fallback \(fallbackCharacters.count)")
 }
 
 do {
@@ -666,6 +700,9 @@ do {
             outputDirectory: outputDirectory,
             requiredCharacters: requiredCharacters,
             fontName: bitmapFontFace,
+            fallbackFontNames: ProcessInfo.processInfo.environment["VN_BITMAP_FALLBACK_FONT_FACES"]?
+                .split(separator: ",")
+                .map(String.init) ?? [],
             renderTextByCharacter: renderTextByCharacter
         )
     }

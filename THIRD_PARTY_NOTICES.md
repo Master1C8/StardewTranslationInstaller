@@ -42,5 +42,17 @@ from this font.
 
 The pinned font is downloaded only when rebuilding the Traditional Chinese
 runtime fonts. The distributed XNB assets use Regular at 36 and 24 pixels,
-plus an antialiased Light face at the custom-language 16-pixel layout size so
-complex ideographs remain legible without changing the interface scale.
+and as a fallback for the few characters absent from Cubic 11.
+
+## Cubic 11 1.500
+
+- Project: https://github.com/ACh-K/Cubic-11
+- Release: https://github.com/ACh-K/Cubic-11/releases/tag/v1.500
+- Variant: Cubic 11 / 俐方體11號 Regular
+- License: SIL Open Font License 1.1
+- Font SHA-256: `0193f5f033612496df6b45ee92ac3b335bc6a5a24ff95da55ca87b33e57dcf62`
+
+The pinned font is downloaded only when rebuilding the Traditional Chinese
+runtime BMFont. It is rendered without antialiasing at the existing 16-pixel
+layout size; Noto Sans CJK TC supplies 13 rare Han glyphs it does not contain,
+and the macOS Arial face supplies two Latin glyphs used in the credits.

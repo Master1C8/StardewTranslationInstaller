@@ -40,6 +40,7 @@ if [[ -d "$resource_bundle" ]]; then
   cp -R "$resource_bundle" "$app/Contents/Resources/"
 fi
 cp "$project_dir/App/Info.plist" "$app/Contents/Info.plist"
+cp "$project_dir/App/App.icns" "$app/Contents/Resources/App.icns"
 identity="${CODESIGN_IDENTITY:--}"
 if [[ "$identity" == "-" ]]; then
   codesign --force --deep --sign - "$app"

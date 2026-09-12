@@ -24,8 +24,13 @@ const config = JSON.parse(fs.readFileSync(path.join(resources, "PackageConfig.js
 const content = JSON.parse(fs.readFileSync(path.join(payload, "content.json"), "utf8"));
 const payloadManifest = JSON.parse(fs.readFileSync(path.join(payload, "manifest.json"), "utf8"));
 const infoPlist = fs.readFileSync(path.join(root, "App/Info.plist"), "utf8");
+const appIcon = fs.readFileSync(path.join(root, "App/App.icns"));
 const appVersion = infoPlist.match(/<key>CFBundleShortVersionString<\/key><string>([^<]+)<\/string>/)?.[1];
 const appBuild = infoPlist.match(/<key>CFBundleVersion<\/key><string>([^<]+)<\/string>/)?.[1];
+const appIconFile = infoPlist.match(/<key>CFBundleIconFile<\/key><string>([^<]+)<\/string>/)?.[1];
+if (appIconFile !== "App.icns" || appIcon.subarray(0, 4).toString("ascii") !== "icns") {
+  throw new Error("The installer must bundle App/App.icns and reference it through CFBundleIconFile.");
+}
 if (!appVersion || payloadManifest.Version !== appVersion) {
   throw new Error(`App and ModPayload versions differ: ${String(appVersion)} / ${String(payloadManifest.Version)}`);
 }

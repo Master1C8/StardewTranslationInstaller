@@ -66,8 +66,8 @@ def main() -> int:
         "LanguageCode": LANGUAGE,
         "ButtonTexture": "Mods/{{ModId}}/ButtonBulgarian",
         "UseLatinFont": False,
-        "FontFile": "Fonts/Russian",
-        "FontPixelZoom": 3,
+        "FontFile": "Fonts/Bulgarian",
+        "FontPixelZoom": 1,
         "TimeFormat": "[HOURS_24_00]:[MINUTES]",
         "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
         "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
@@ -81,6 +81,8 @@ def main() -> int:
         ("Minigames/TitleButtons", LANGUAGE, "assets/title/TitleButtons-bulgarian.png"),
         ("Fonts/SpriteFont1", LANGUAGE, "assets/fonts/bulgarian/SpriteFont1.xnb"),
         ("Fonts/SmallFont", LANGUAGE, "assets/fonts/bulgarian/SmallFont.xnb"),
+        ("Fonts/Bulgarian", None, "assets/fonts/bulgarian/Bulgarian.xnb"),
+        ("Fonts/Bulgarian_0", None, "assets/fonts/bulgarian/Bulgarian_0.xnb"),
     ]
     for target, locale, source in expected_loads:
         matches = [change for change in changes if change.get("Action") == "Load"

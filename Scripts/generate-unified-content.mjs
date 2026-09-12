@@ -16,7 +16,7 @@ const languages = [
     fonts: "assets/fonts/russian",
     useLatinFont: false,
     fontFile: "Fonts/Russian",
-    fontPixelZoom: 2,
+    fontPixelZoom: 3,
     clockDateFormat: "[DAY_OF_WEEK] [DAY_OF_MONTH]",
   },
   {
@@ -28,8 +28,12 @@ const languages = [
     title: "assets/title/TitleButtons-serbian.png",
     fonts: "assets/fonts/serbian",
     useLatinFont: false,
-    fontFile: "Fonts/Russian",
-    fontPixelZoom: 3,
+    fontFile: "Fonts/Serbian",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Serbian", file: "assets/fonts/serbian/Serbian.xnb" },
+      { target: "Fonts/Serbian_0", file: "assets/fonts/serbian/Serbian_0.xnb" },
+    ],
     clockDateFormat: "[DAY_OF_WEEK] [DAY_OF_MONTH]",
   },
   {
@@ -40,6 +44,13 @@ const languages = [
     button: "assets/button.png",
     title: "assets/title/TitleButtons.png",
     fonts: "assets/fonts/polish",
+    useLatinFont: false,
+    fontFile: "Fonts/Polish",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Polish", file: "assets/fonts/polish/Polish.xnb" },
+      { target: "Fonts/Polish_0", file: "assets/fonts/polish/Polish_0.xnb" },
+    ],
   },
   {
     directory: "ukrainian",
@@ -49,6 +60,13 @@ const languages = [
     button: "assets/button-ukrainian.png",
     title: "assets/title/TitleButtons-ukrainian.png",
     fonts: "assets/fonts/ukrainian",
+    useLatinFont: false,
+    fontFile: "Fonts/Ukrainian",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Ukrainian", file: "assets/fonts/ukrainian/Ukrainian.xnb" },
+      { target: "Fonts/Ukrainian_0", file: "assets/fonts/ukrainian/Ukrainian_0.xnb" },
+    ],
   },
   {
     directory: "vietnamese",
@@ -58,6 +76,13 @@ const languages = [
     button: "assets/button-vietnamese.png",
     title: "assets/title/TitleButtons-vietnamese.png",
     fonts: "assets/fonts/vietnamese",
+    useLatinFont: false,
+    fontFile: "Fonts/Vietnamese",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Vietnamese", file: "assets/fonts/vietnamese/Vietnamese.xnb" },
+      { target: "Fonts/Vietnamese_0", file: "assets/fonts/vietnamese/Vietnamese_0.xnb" },
+    ],
   },
   {
     directory: "swahili",
@@ -66,6 +91,14 @@ const languages = [
     buttonTarget: "ButtonSwahili",
     button: "assets/button-swahili.png",
     title: "assets/title/TitleButtons-swahili.png",
+    fonts: "assets/fonts/swahili",
+    useLatinFont: false,
+    fontFile: "Fonts/Swahili",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Swahili", file: "assets/fonts/swahili/Swahili.xnb" },
+      { target: "Fonts/Swahili_0", file: "assets/fonts/swahili/Swahili_0.xnb" },
+    ],
   },
   {
     directory: "persian",
@@ -77,7 +110,7 @@ const languages = [
     fonts: "assets/fonts/persian",
     useLatinFont: false,
     fontFile: "Fonts/Persian",
-    fontPixelZoom: 3,
+    fontPixelZoom: 1,
     bitmapFonts: [
       { target: "Fonts/Persian", file: "assets/fonts/persian/Persian.xnb" },
       { target: "Fonts/Persian_0", file: "assets/fonts/persian/Persian_0.xnb" },
@@ -93,7 +126,7 @@ const languages = [
     fonts: "assets/fonts/arabic",
     useLatinFont: false,
     fontFile: "Fonts/Arabic",
-    fontPixelZoom: 3,
+    fontPixelZoom: 1,
     bitmapFonts: [
       { target: "Fonts/Arabic", file: "assets/fonts/arabic/Arabic.xnb" },
       { target: "Fonts/Arabic_0", file: "assets/fonts/arabic/Arabic_0.xnb" },
@@ -106,6 +139,14 @@ const languages = [
     buttonTarget: "ButtonIndonesian",
     button: "assets/button-indonesian.png",
     title: "assets/title/TitleButtons-indonesian.png",
+    fonts: "assets/fonts/indonesian",
+    useLatinFont: false,
+    fontFile: "Fonts/Indonesian",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Indonesian", file: "assets/fonts/indonesian/Indonesian.xnb" },
+      { target: "Fonts/Indonesian_0", file: "assets/fonts/indonesian/Indonesian_0.xnb" },
+    ],
   },
   {
     directory: "filipino",
@@ -115,6 +156,13 @@ const languages = [
     button: "assets/button-filipino.png",
     title: "assets/title/TitleButtons-filipino.png",
     fonts: "assets/fonts/filipino",
+    useLatinFont: false,
+    fontFile: "Fonts/Filipino",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Filipino", file: "assets/fonts/filipino/Filipino.xnb" },
+      { target: "Fonts/Filipino_0", file: "assets/fonts/filipino/Filipino_0.xnb" },
+    ],
   },
   {
     directory: "dutch",
@@ -124,6 +172,13 @@ const languages = [
     button: "assets/button-dutch.png",
     title: "assets/title/TitleButtons-dutch.png",
     fonts: "assets/fonts/dutch",
+    useLatinFont: false,
+    fontFile: "Fonts/Dutch",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Dutch", file: "assets/fonts/dutch/Dutch.xnb" },
+      { target: "Fonts/Dutch_0", file: "assets/fonts/dutch/Dutch_0.xnb" },
+    ],
   },
   {
     directory: "hindi",
@@ -135,7 +190,7 @@ const languages = [
     fonts: "assets/fonts/hindi",
     useLatinFont: false,
     fontFile: "Fonts/Hindi",
-    fontPixelZoom: 3,
+    fontPixelZoom: 1,
     bitmapFonts: [
       { target: "Fonts/Hindi", file: "assets/fonts/hindi/Hindi.xnb" },
       { target: "Fonts/Hindi_0", file: "assets/fonts/hindi/Hindi_0.xnb" },
@@ -165,6 +220,13 @@ const languages = [
     button: "assets/button-romanian.png",
     title: "assets/title/TitleButtons-romanian.png",
     fonts: "assets/fonts/romanian",
+    useLatinFont: false,
+    fontFile: "Fonts/Romanian",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Romanian", file: "assets/fonts/romanian/Romanian.xnb" },
+      { target: "Fonts/Romanian_0", file: "assets/fonts/romanian/Romanian_0.xnb" },
+    ],
   },
   {
     directory: "hebrew",
@@ -176,7 +238,7 @@ const languages = [
     fonts: "assets/fonts/hebrew",
     useLatinFont: false,
     fontFile: "Fonts/Hebrew",
-    fontPixelZoom: 3,
+    fontPixelZoom: 1,
     bitmapFonts: [
       { target: "Fonts/Hebrew", file: "assets/fonts/hebrew/Hebrew.xnb" },
       { target: "Fonts/Hebrew_0", file: "assets/fonts/hebrew/Hebrew_0.xnb" },
@@ -191,8 +253,12 @@ const languages = [
     title: "assets/title/TitleButtons-bulgarian.png",
     fonts: "assets/fonts/bulgarian",
     useLatinFont: false,
-    fontFile: "Fonts/Russian",
-    fontPixelZoom: 3,
+    fontFile: "Fonts/Bulgarian",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Bulgarian", file: "assets/fonts/bulgarian/Bulgarian.xnb" },
+      { target: "Fonts/Bulgarian_0", file: "assets/fonts/bulgarian/Bulgarian_0.xnb" },
+    ],
   },
   {
     directory: "thai",
@@ -204,7 +270,7 @@ const languages = [
     fonts: "assets/fonts/thai",
     useLatinFont: false,
     fontFile: "Fonts/Thai",
-    fontPixelZoom: 3,
+    fontPixelZoom: 1,
     bitmapFonts: [
       { target: "Fonts/Thai", file: "assets/fonts/thai/Thai.xnb" },
       { target: "Fonts/Thai_0", file: "assets/fonts/thai/Thai_0.xnb" },
@@ -218,6 +284,13 @@ const languages = [
     button: "assets/button-greek.png",
     title: "assets/title/TitleButtons-greek.png",
     fonts: "assets/fonts/greek",
+    useLatinFont: false,
+    fontFile: "Fonts/Greek",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Greek", file: "assets/fonts/greek/Greek.xnb" },
+      { target: "Fonts/Greek_0", file: "assets/fonts/greek/Greek_0.xnb" },
+    ],
   },
   {
     directory: "czech",
@@ -227,6 +300,13 @@ const languages = [
     button: "assets/button-czech.png",
     title: "assets/title/TitleButtons-czech.png",
     fonts: "assets/fonts/czech",
+    useLatinFont: false,
+    fontFile: "Fonts/Czech",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/Czech", file: "assets/fonts/czech/Czech.xnb" },
+      { target: "Fonts/Czech_0", file: "assets/fonts/czech/Czech_0.xnb" },
+    ],
   },
 ];
 

@@ -219,8 +219,8 @@ else:
         'LanguageCode': LANGUAGE,
         'ButtonTexture': 'Mods/{{ModId}}/ButtonSerbian',
         'UseLatinFont': False,
-        'FontFile': 'Fonts/Russian',
-        'FontPixelZoom': 3,
+        'FontFile': 'Fonts/Serbian',
+        'FontPixelZoom': 1,
         'TimeFormat': '[HOURS_24_00]:[MINUTES]',
         'ClockTimeFormat': '[HOURS_24_00]:[MINUTES]',
         'ClockDateFormat': '[DAY_OF_WEEK] [DAY_OF_MONTH]',
@@ -244,6 +244,8 @@ expected_loads = {
     ('Minigames/TitleButtons', LANGUAGE): 'assets/title/TitleButtons-serbian.png',
     ('Fonts/SpriteFont1', LANGUAGE): 'assets/fonts/serbian/SpriteFont1.xnb',
     ('Fonts/SmallFont', LANGUAGE): 'assets/fonts/serbian/SmallFont.xnb',
+    ('Fonts/Serbian', None): 'assets/fonts/serbian/Serbian.xnb',
+    ('Fonts/Serbian_0', None): 'assets/fonts/serbian/Serbian_0.xnb',
 }
 for (target, locale), source_file in expected_loads.items():
     matches = [change for change in root_changes

@@ -4,7 +4,7 @@ set -euo pipefail
 script_dir=${0:A:h}
 project_root=${script_dir:h}
 xnbcli=${XNBCLI:-/Users/antonkrutov/Developer/tools/xnbcli/xnbcli}
-font_file=${VN_SERBIAN_FONT:-/System/Library/Fonts/Supplemental/Arial\ Bold.ttf}
+font_file=${VN_SERBIAN_FONT:-/System/Library/Fonts/Supplemental/Arial.ttf}
 font_assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/serbian"
 base_assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/russian"
 translations="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/serbian"

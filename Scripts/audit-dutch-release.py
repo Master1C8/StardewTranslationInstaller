@@ -36,7 +36,8 @@ expected_entry = {
     "ID": "{{ModId}}_Dutch",
     "LanguageCode": LANGUAGE,
     "ButtonTexture": "Mods/{{ModId}}/ButtonDutch",
-    "UseLatinFont": True,
+    "UseLatinFont": False,
+    "FontFile": "Fonts/Dutch",
     "FontPixelZoom": 1,
     "TimeFormat": "[HOURS_24_00]:[MINUTES]",
     "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
@@ -65,6 +66,8 @@ require_load("Mods/{{ModId}}/ButtonDutch", "assets/button-dutch.png")
 require_load("Minigames/TitleButtons", "assets/title/TitleButtons-dutch.png", locale=LANGUAGE)
 require_load("Fonts/SpriteFont1", "assets/fonts/dutch/SpriteFont1.xnb", locale=LANGUAGE)
 require_load("Fonts/SmallFont", "assets/fonts/dutch/SmallFont.xnb", locale=LANGUAGE)
+require_load("Fonts/Dutch", "assets/fonts/dutch/Dutch.xnb")
+require_load("Fonts/Dutch_0", "assets/fonts/dutch/Dutch_0.xnb")
 
 files = sorted(TRANSLATIONS.rglob("*.json"))
 expected_includes = {f"assets/translations/dutch/{p.relative_to(TRANSLATIONS).as_posix()}" for p in files}

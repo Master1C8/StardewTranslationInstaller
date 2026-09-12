@@ -184,6 +184,19 @@ func renderGlyph(
 
     guard let bounds = alphaBounds(of: bitmap),
           let image = bitmap.cgImage?.cropping(to: bounds) else {
+        // A few zero-advance marks disappear in AppKit's antialiased path even
+        // though the same face can rasterize them without smoothing. Keep the
+        // native-resolution atlas smooth while falling back only for those
+        // individual glyphs.
+        if antialias {
+            return try renderGlyph(
+                character,
+                index: index,
+                font: font,
+                lineHeight: lineHeight,
+                antialias: false
+            )
+        }
         throw GeneratorError.renderFailed(character)
     }
     return GlyphBitmap(index: index, character: character, image: image)
@@ -488,21 +501,27 @@ func processBmFont(
             yOffsets[index] = base + yOffsetAdjustment
             continue
         }
-        guard let renderFont = ([font] + fallbackFonts).first(where: {
-            fontSupports(renderedText, font: $0)
-        }) else {
+        var renderedGlyph: GlyphBitmap?
+        var renderFont: NSFont?
+        for candidate in [font] + fallbackFonts where fontSupports(renderedText, font: candidate) {
+            if let glyph = try? renderGlyph(
+                renderedText,
+                index: index,
+                font: candidate,
+                lineHeight: lineHeight,
+                antialias: antialias
+            ) {
+                renderedGlyph = glyph
+                renderFont = candidate
+                break
+            }
+        }
+        guard let renderFont, let glyph = renderedGlyph else {
             throw GeneratorError.renderFailed(character)
         }
         if renderFont.fontName != font.fontName {
             fallbackCharacters.append(character)
         }
-        let glyph = try renderGlyph(
-            renderedText,
-            index: index,
-            font: renderFont,
-            lineHeight: lineHeight,
-            antialias: antialias
-        )
         bitmaps.append(GlyphBitmap(index: index, character: character, image: glyph.image))
         advances[index] = max(1, Int(ceil((renderedText as NSString).size(withAttributes: [.font: renderFont]).width)))
         yOffsets[index] = (lineHeight - glyph.image.height) / 2 + yOffsetAdjustment

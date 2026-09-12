@@ -4,7 +4,7 @@ set -euo pipefail
 script_dir=${0:A:h}
 project_root=${script_dir:h}
 xnbcli=${XNBCLI:-/Users/antonkrutov/Developer/tools/xnbcli/xnbcli}
-font_file=${VN_UKRAINIAN_FONT:-/System/Library/Fonts/Supplemental/Arial\ Bold.ttf}
+font_file=${VN_UKRAINIAN_FONT:-/System/Library/Fonts/Supplemental/Arial.ttf}
 assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets"
 temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-uk-fonts.XXXXXX)
 trap '/bin/rm -rf "$temp_root"' EXIT

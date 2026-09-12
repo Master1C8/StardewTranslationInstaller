@@ -57,7 +57,8 @@ const expectedLanguage = {
   ID: "{{ModId}}_Filipino",
   LanguageCode: "fil-vnrevival",
   ButtonTexture: "Mods/{{ModId}}/ButtonFilipino",
-  UseLatinFont: true,
+  UseLatinFont: false,
+  FontFile: "Fonts/Filipino",
   FontPixelZoom: 1,
   TimeFormat: "[HOURS_24_00]:[MINUTES]",
   ClockTimeFormat: "[HOURS_24_00]:[MINUTES]",
@@ -73,6 +74,8 @@ const expectedLoads = [
   ["Minigames/TitleButtons", "fil-vnrevival", "assets/title/TitleButtons-filipino.png"],
   ["Fonts/SpriteFont1", "fil-vnrevival", "assets/fonts/filipino/SpriteFont1.xnb"],
   ["Fonts/SmallFont", "fil-vnrevival", "assets/fonts/filipino/SmallFont.xnb"],
+  ["Fonts/Filipino", null, "assets/fonts/filipino/Filipino.xnb"],
+  ["Fonts/Filipino_0", null, "assets/fonts/filipino/Filipino_0.xnb"],
 ];
 for (const [target, locale, fromFile] of expectedLoads) {
   const load = requireSingle(

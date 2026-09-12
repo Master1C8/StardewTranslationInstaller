@@ -4,7 +4,7 @@ set -euo pipefail
 script_dir=${0:A:h}
 project_root=${script_dir:h}
 xnbcli=${XNBCLI:-/Users/antonkrutov/Developer/tools/xnbcli/xnbcli}
-font_file=${VN_EXTENDED_BITMAP_FONT:-/System/Library/Fonts/Supplemental/Arial\ Bold.ttf}
+font_file=${VN_EXTENDED_BITMAP_FONT:-/System/Library/Fonts/Supplemental/Arial.ttf}
 payload="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload"
 base_assets="$payload/assets/fonts/polish"
 temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-extended-bitmap-fonts.XXXXXX)
@@ -53,6 +53,10 @@ for specification in $locales; do
   CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
   VN_GENERATE_BITMAP_FONT=1 \
   VN_BITMAP_FONT_NAME="$font_name" \
+  VN_BITMAP_FONT_SIZE=32 \
+  VN_BITMAP_FONT_LINE_HEIGHT=36 \
+  VN_BITMAP_FONT_BASE=28 \
+  VN_BITMAP_FONT_ANTIALIAS=1 \
   /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
     "$temp_root/base-unpacked" \
     "$translations" \

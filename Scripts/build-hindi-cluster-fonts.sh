@@ -12,13 +12,19 @@ temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-hi-cluster-fonts.XXXXXX)
 trap '/bin/rm -rf "$temp_root"' EXIT
 
 /bin/mkdir -p "$temp_root/base-packed" "$temp_root/base-unpacked" "$temp_root/generated" "$temp_root/packed" "$temp_root/verify"
-/bin/cp "$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/marathi/SpriteFont1.xnb" "$temp_root/base-packed/SpriteFont1.xnb"
-/bin/cp "$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/marathi/SmallFont.xnb" "$temp_root/base-packed/SmallFont.xnb"
+/bin/cp "$font_assets/SpriteFont1.xnb" "$temp_root/base-packed/SpriteFont1.xnb"
+/bin/cp "$font_assets/SmallFont.xnb" "$temp_root/base-packed/SmallFont.xnb"
 "$xnbcli" unpack "$temp_root/base-packed" "$temp_root/base-unpacked"
 
 SWIFT_MODULECACHE_PATH=/private/tmp/stardew-swift-module-cache \
 CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
 VN_BITMAP_FONT_NAME=Hindi \
+VN_BITMAP_FALLBACK_FONT_FACES=ArialMT \
+VN_BITMAP_FONT_ATLAS_SIZE=2048 \
+VN_BITMAP_FONT_SIZE=32 \
+VN_BITMAP_FONT_LINE_HEIGHT=36 \
+VN_BITMAP_FONT_BASE=28 \
+VN_BITMAP_FONT_ANTIALIAS=1 \
 /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
   "$temp_root/base-unpacked" \
   "$translations" \

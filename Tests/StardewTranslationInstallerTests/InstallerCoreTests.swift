@@ -164,7 +164,7 @@ struct InstallerCoreTests {
             })
             expect(language["ButtonTexture"] as? String == "Mods/{{ModId}}/\(expected.0)")
             expect(language["UseLatinFont"] as? Bool == false)
-            expect(language["FontPixelZoom"] as? Int == (code == "zh-TW-vnrevival" ? 1 : 3))
+            expect(language["FontPixelZoom"] as? Int == (code == "ru-vnrevival" ? 3 : 1))
             if code == "ru-vnrevival" {
                 expect(language["FontFile"] as? String == "Fonts/Russian")
             } else {
@@ -234,8 +234,8 @@ struct InstallerCoreTests {
         }
 
         let vietnameseFontHashes = [
-            "assets/fonts/vietnamese/SpriteFont1.xnb": "460c192146c5c7099aaebaff9e1dbb39ce00843670a9d79fdb96d897ce3494dd",
-            "assets/fonts/vietnamese/SmallFont.xnb": "812f32313bdebe4a2b240a4ad4818a41b445d70a0bad630c3d26997f5596b72a",
+            "assets/fonts/vietnamese/SpriteFont1.xnb": "41d7c962969516c780989b963b11bf5d3ed9d65a60e18b9a75307b728163e7cd",
+            "assets/fonts/vietnamese/SmallFont.xnb": "219d0bdfafcfea991c7f7655a0cd0f6cb9b59c3631620a56971c282109962692",
         ]
         for (fontPath, expectedHash) in vietnameseFontHashes {
             try expect(
@@ -245,8 +245,8 @@ struct InstallerCoreTests {
         }
 
         let romanianFontHashes = [
-            "assets/fonts/romanian/SpriteFont1.xnb": "58225c91ec5985d39a6aba44958cef63c9e256dd11903822e48a7f4ff9c4c85a",
-            "assets/fonts/romanian/SmallFont.xnb": "b777da7dc4fa4bc7ae77d68320ec7f50a9d7a3fb361a44c6c81d16a3c5b7eff7",
+            "assets/fonts/romanian/SpriteFont1.xnb": "7eafc7286a8c84adf4041c13b2ca9dcca1ff0a6beb51e3b530b274dc9597e767",
+            "assets/fonts/romanian/SmallFont.xnb": "4f163bee218ac4fec57d527a952092b7042ecb54798c47cb4d407a9312eb4a75",
         ]
         for (fontPath, expectedHash) in romanianFontHashes {
             try expect(
@@ -256,10 +256,10 @@ struct InstallerCoreTests {
         }
 
         let persianFontHashes = [
-            "assets/fonts/persian/SpriteFont1.xnb": "763d7805feef033a1d4c5cfd3dce5d430758b353bd8570a5f4b8daffefe7c5da",
-            "assets/fonts/persian/SmallFont.xnb": "446d9bab23f4d36e6b0494711a9bc1de6f042b5cde31f3d59bde83eddd5f946a",
-            "assets/fonts/persian/Persian.xnb": "e07656aeedc1a1ef578b354334dd84a5052da6301310b5bbb416c9ceac3f8fe0",
-            "assets/fonts/persian/Persian_0.xnb": "7d528e00b6080746408844a1672fe93dec92a30f1a2e762818a1ac368ea22da8",
+            "assets/fonts/persian/SpriteFont1.xnb": "1e8c57bc97e395e0fb39806c701b5b198360f91e720e91df4295c51c4fda1927",
+            "assets/fonts/persian/SmallFont.xnb": "f4c7662913e6808ceadae41cc690228cc47a83c58f6ee5a2540a56aff2991a0d",
+            "assets/fonts/persian/Persian.xnb": "e42815d711e39f69b81567ed463f0e592fb43b90395af2b29cd81362026fa75c",
+            "assets/fonts/persian/Persian_0.xnb": "edcbd92966775bf4e8526447ede71c14e12b10a7ec9a651e17a55e6c9d687b06",
         ]
         for (fontPath, expectedHash) in persianFontHashes {
             try expect(
@@ -271,8 +271,8 @@ struct InstallerCoreTests {
         let arabicFontHashes = [
             "assets/fonts/arabic/SpriteFont1.xnb": "f437e6068eb98369c941499e885bd1f9efb70de1503ea656927bd38814fdde92",
             "assets/fonts/arabic/SmallFont.xnb": "6d44e66e157890fcefabe44f72edaeb765777ecc7650c3b0dd21e0160c8a2267",
-            "assets/fonts/arabic/Arabic.xnb": "bdb595905f1f7033fe63b59413b8ff954df89a73ad12f8ddddf0ffcfe7a14f91",
-            "assets/fonts/arabic/Arabic_0.xnb": "e789a4688f0ab61263155172914788910aaa883599e3c31133abb14b1e8d5199",
+            "assets/fonts/arabic/Arabic.xnb": "56f5d694a70225a0b1650ba2c40868a31c4f9d373b9b24714995ab4c00b58ee2",
+            "assets/fonts/arabic/Arabic_0.xnb": "942718d6ccc3b59012b00753a3ba555d4dfac05299e930b1abab2f3214501059",
         ]
         for (fontPath, expectedHash) in arabicFontHashes {
             try expect(
@@ -284,8 +284,8 @@ struct InstallerCoreTests {
         let hindiFontHashes = [
             "assets/fonts/hindi/SpriteFont1.xnb": "690371af4bcbb60748efc616a7e437cca91955f5d7583093d2979802775ac796",
             "assets/fonts/hindi/SmallFont.xnb": "ead57d283edf138d6e3baf5d3d8924d48326c8b7a1cd443c54b9d36ee31d09eb",
-            "assets/fonts/hindi/Hindi.xnb": "dc929c21e434e8414243ef21a169aa8e4370ed7fd3694234d8a39435fe07b861",
-            "assets/fonts/hindi/Hindi_0.xnb": "79e16c38128299e038a339535e6f81dfaf154ee32bf92d1f473f5292cf82c90a",
+            "assets/fonts/hindi/Hindi.xnb": "a5ee49a39719468a6dffcacd502732403f2097baac26ffb920dc76b545a86a5d",
+            "assets/fonts/hindi/Hindi_0.xnb": "9bedfed1924b2d069a19075a23876cd65b6470d1b0050e4ebcd0b60fcdc35bca",
         ]
         for (fontPath, expectedHash) in hindiFontHashes {
             try expect(
@@ -317,8 +317,8 @@ struct InstallerCoreTests {
         let thaiFontHashes = [
             "assets/fonts/thai/SpriteFont1.xnb": "e44f9fc41d5c9d6138f2b9225b8790f50c4bbbbff83bc66cd0339890d979e1f1",
             "assets/fonts/thai/SmallFont.xnb": "01c3dd9f30325734c3e1987cf671c1037322ed2b3ad70efe3c3e499f4beccbca",
-            "assets/fonts/thai/Thai.xnb": "b62808844ea469b780f933baaa0e5d86aacf2ecb9c7272778a40f752f460a17e",
-            "assets/fonts/thai/Thai_0.xnb": "73b95aac51b3e69bf37ec1d56490728929204ff53f5e6fa4b31d7a4dd64b78f1",
+            "assets/fonts/thai/Thai.xnb": "a02a137124463046efa1a40cd76e310283549f605c3400994f95fa26ac03ff33",
+            "assets/fonts/thai/Thai_0.xnb": "fc788fbcf79910af5fee8ec8947be5ee2525695c87d67e224a286afe27843543",
         ]
         for (fontPath, expectedHash) in thaiFontHashes {
             try expect(
@@ -479,8 +479,8 @@ struct InstallerCoreTests {
         )
 
         let filipinoFontHashes = [
-            "assets/fonts/filipino/SpriteFont1.xnb": "6c22d21660baa07c2a86f99da9c3f70019a77b68c0640a111096bfaf21195f6d",
-            "assets/fonts/filipino/SmallFont.xnb": "d5ab8bcd224288b7401ece73ba9af6ccfb2306012e39d0d92175fd527e3b5d82",
+            "assets/fonts/filipino/SpriteFont1.xnb": "530c656db956e21ca0ffd62263bd9270aab3c3cd14616bf1a6603203e055642b",
+            "assets/fonts/filipino/SmallFont.xnb": "982a7bffe36de91989ba6768956965b6a028777a52ab9e3d2d32e69d5ae73992",
         ]
         for (fontPath, expectedHash) in filipinoFontHashes {
             try expect(
@@ -557,8 +557,8 @@ struct InstallerCoreTests {
         )
 
         let greekFontHashes = [
-            "assets/fonts/greek/SpriteFont1.xnb": "247798383dfa9b9d2bce83ae1cdc4d942afbd3c1e83c4b94ba2ebb2172a3c000",
-            "assets/fonts/greek/SmallFont.xnb": "83b9c73b735a0250318326c7f5b65b99accfbd262ec07552ce8b9133178a8f20",
+            "assets/fonts/greek/SpriteFont1.xnb": "aa512867f7faff6ce29bf0797fc936728317372b7525045ed2ecf777e0dc8413",
+            "assets/fonts/greek/SmallFont.xnb": "6fc4a311335bf9a4f5b1a550640e77d6df26935a4a445de93fc67becd8ce6b8c",
         ]
         for (fontPath, expectedHash) in greekFontHashes {
             try expect(
@@ -582,8 +582,8 @@ struct InstallerCoreTests {
         let czechAssetHashes = [
             "assets/button-czech.png": "98266efc2c8d4bdf1213c617ec40f95b09a1f14be77b92310ae0745f79287071",
             "assets/title/TitleButtons-czech.png": "1a3fe033a958e5516a6c09a6caf817dc9cf54fe9ea9c055e1239eda79ff2eda1",
-            "assets/fonts/czech/SpriteFont1.xnb": "65b107082554a8c747c97443f94f8f9f3311b2529da5875c4f2fd7801d52c5ab",
-            "assets/fonts/czech/SmallFont.xnb": "88589cae57b67fae0b1c958b4e1554ffeba51bd7774f51f1a178fe6712253dfe",
+            "assets/fonts/czech/SpriteFont1.xnb": "4e73922c73a398ae6e833b5680883bab6b33f93e1365b150519d712cd7df2334",
+            "assets/fonts/czech/SmallFont.xnb": "da13be7533bdb70d4859ad7c3857b5fa50a61e006ac34f42705a177642eae280",
         ]
         try expect(try pngDimensions("assets/button-czech.png") == (174, 78))
         try expect(try pngDimensions("assets/title/TitleButtons-czech.png") == (400, 655))

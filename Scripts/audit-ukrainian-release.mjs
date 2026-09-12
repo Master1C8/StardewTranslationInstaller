@@ -137,7 +137,8 @@ const changes = content?.Changes ?? [];
 const entry = changes.find(change => change.Action === "EditData" && change.Target === "Data/AdditionalLanguages")
   ?.Entries?.["{{ModId}}_Ukrainian"];
 if (entry?.LanguageCode !== "uk-vnrevival" || entry?.ButtonTexture !== "Mods/{{ModId}}/ButtonUkrainian"
-  || entry?.UseLatinFont !== true || entry?.FontPixelZoom !== 1) {
+  || entry?.UseLatinFont !== false || entry?.FontFile !== "Fonts/Ukrainian"
+  || entry?.FontPixelZoom !== 1) {
   errors.push("Invalid Ukrainian AdditionalLanguages entry");
 }
 function requireLoad(target, fromFile, locale) {
@@ -149,6 +150,8 @@ requireLoad("Mods/{{ModId}}/ButtonUkrainian", "assets/button-ukrainian.png", und
 requireLoad("Minigames/TitleButtons", "assets/title/TitleButtons-ukrainian.png", "uk-vnrevival");
 requireLoad("Fonts/SpriteFont1", "assets/fonts/ukrainian/SpriteFont1.xnb", "uk-vnrevival");
 requireLoad("Fonts/SmallFont", "assets/fonts/ukrainian/SmallFont.xnb", "uk-vnrevival");
+requireLoad("Fonts/Ukrainian", "assets/fonts/ukrainian/Ukrainian.xnb", undefined);
+requireLoad("Fonts/Ukrainian_0", "assets/fonts/ukrainian/Ukrainian_0.xnb", undefined);
 const includes = changes.filter(change => change.Action === "Include").map(change => change.FromFile);
 for (const file of translationFiles) {
   const include = `assets/translations/ukrainian/${path.relative(translationRoot, file)}`;
@@ -167,7 +170,12 @@ function requirePNG(relative, width, height) {
 }
 requirePNG("assets/button-ukrainian.png", 174, 78);
 requirePNG("assets/title/TitleButtons-ukrainian.png", 400, 655);
-for (const relative of ["assets/fonts/ukrainian/SpriteFont1.xnb", "assets/fonts/ukrainian/SmallFont.xnb"]) {
+for (const relative of [
+  "assets/fonts/ukrainian/SpriteFont1.xnb",
+  "assets/fonts/ukrainian/SmallFont.xnb",
+  "assets/fonts/ukrainian/Ukrainian.xnb",
+  "assets/fonts/ukrainian/Ukrainian_0.xnb",
+]) {
   const file = path.join(payload, relative);
   if (!fs.existsSync(file) || fs.readFileSync(file).subarray(0, 3).toString("ascii") !== "XNB") {
     errors.push(`Missing or invalid XNB: ${relative}`);

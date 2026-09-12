@@ -19,6 +19,11 @@ trap '/bin/rm -rf "$temp_root"' EXIT
 SWIFT_MODULECACHE_PATH=/private/tmp/stardew-swift-module-cache \
 CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
 VN_BITMAP_FONT_NAME=Thai \
+VN_BITMAP_FONT_ATLAS_SIZE=2048 \
+VN_BITMAP_FONT_SIZE=32 \
+VN_BITMAP_FONT_LINE_HEIGHT=36 \
+VN_BITMAP_FONT_BASE=28 \
+VN_BITMAP_FONT_ANTIALIAS=1 \
 /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
   "$temp_root/base-unpacked" "$translations" "$temp_root/generated" "$font_file" "$cluster_map"
 

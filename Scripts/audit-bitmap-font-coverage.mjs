@@ -84,7 +84,10 @@ try {
     const directory = languageDirectories.get(code);
     if (!directory) throw new Error(`unexpected language code ${code}`);
     if (language.UseLatinFont !== false) throw new Error(`${code} still enables the incomplete Latin bitmap font`);
-    if (language.FontPixelZoom !== 3) throw new Error(`${code} has unexpected FontPixelZoom ${language.FontPixelZoom}`);
+    const expectedZoom = code === "ru-vnrevival" ? 3 : 1;
+    if (language.FontPixelZoom !== expectedZoom) {
+      throw new Error(`${code} has unexpected FontPixelZoom ${language.FontPixelZoom}; expected ${expectedZoom}`);
+    }
     if (!fontTarget) throw new Error(`${code} has no FontFile`);
 
     // Russian is a complete font shipped by Stardew Valley itself. Every other
@@ -116,6 +119,15 @@ try {
     execFileSync(xnbcli, ["unpack", fontPath, unpacked], { stdio: "ignore" });
     const xmlPath = path.join(unpacked, `${fontName}.xml`);
     const xml = fs.readFileSync(xmlPath, "utf8");
+    const info = xml.match(/<info face="([^"]+)" size="(\d+)"[^>]*smooth="(\d+)"/);
+    if (!info) throw new Error(`${code} bitmap font has no readable info metadata`);
+    const [, face, size, smooth] = info;
+    if (Number(size) < 28 || smooth !== "1") {
+      throw new Error(`${code} bitmap font must be native-resolution and antialiased; found ${size}px smooth=${smooth}`);
+    }
+    if (/bold|полужир/i.test(face)) {
+      throw new Error(`${code} bitmap font unexpectedly uses a bold face: ${face}`);
+    }
     const available = new Set(
       [...xml.matchAll(/<char id="(\d+)"/g)].map((match) => Number(match[1])),
     );

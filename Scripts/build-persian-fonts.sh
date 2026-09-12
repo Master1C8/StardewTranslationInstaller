@@ -6,7 +6,7 @@ project_root=${script_dir:h}
 xnbcli=${XNBCLI:-${HOME}/Developer/tools/xnbcli/xnbcli}
 font_file=${VN_PERSIAN_FONT:-/System/Library/Fonts/Supplemental/Arial\ Unicode.ttf}
 font_assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/persian"
-base_assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/urdu"
+base_assets="$font_assets"
 translations="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/persian"
 font_map="$project_root/Documentation/persian-cluster-map.json"
 temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-fa-fonts.XXXXXX)
@@ -20,6 +20,12 @@ node "$project_root/Scripts/generate-persian-font-map.mjs"
 SWIFT_MODULECACHE_PATH=/private/tmp/stardew-swift-module-cache \
 CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
 VN_BITMAP_FONT_NAME=Persian \
+VN_BITMAP_FALLBACK_FONT_FACES=ArialMT \
+VN_BITMAP_FONT_ATLAS_SIZE=2048 \
+VN_BITMAP_FONT_SIZE=32 \
+VN_BITMAP_FONT_LINE_HEIGHT=36 \
+VN_BITMAP_FONT_BASE=28 \
+VN_BITMAP_FONT_ANTIALIAS=1 \
 /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
   "$temp_root/base-unpacked" \
   "$translations" \

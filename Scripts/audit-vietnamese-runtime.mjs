@@ -54,7 +54,8 @@ const expectedLanguage = {
   ID: "{{ModId}}_Vietnamese",
   LanguageCode: "vi-vnrevival",
   ButtonTexture: "Mods/{{ModId}}/ButtonVietnamese",
-  UseLatinFont: true,
+  UseLatinFont: false,
+  FontFile: "Fonts/Vietnamese",
   FontPixelZoom: 1,
   TimeFormat: "[HOURS_24_00]:[MINUTES]",
   ClockTimeFormat: "[HOURS_24_00]:[MINUTES]",
@@ -70,6 +71,8 @@ const expectedLoads = [
   ["Minigames/TitleButtons", "vi-vnrevival", "assets/title/TitleButtons-vietnamese.png"],
   ["Fonts/SpriteFont1", "vi-vnrevival", "assets/fonts/vietnamese/SpriteFont1.xnb"],
   ["Fonts/SmallFont", "vi-vnrevival", "assets/fonts/vietnamese/SmallFont.xnb"],
+  ["Fonts/Vietnamese", null, "assets/fonts/vietnamese/Vietnamese.xnb"],
+  ["Fonts/Vietnamese_0", null, "assets/fonts/vietnamese/Vietnamese_0.xnb"],
 ];
 for (const [target, locale, fromFile] of expectedLoads) {
   const load = requireSingle(

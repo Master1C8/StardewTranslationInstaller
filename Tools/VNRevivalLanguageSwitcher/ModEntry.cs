@@ -147,49 +147,60 @@ public sealed class ModEntry : Mod
         if (languageCode is null
             || !TitleOverlayFiles.TryGetValue(languageCode, out string? slug)
             || ModHelper is null
-            || __instance.buttons is null
             || __instance.fadeFromWhiteTimer > 0
-            || !__instance.titleInPosition
-            || __instance.buttonsToShow <= 0)
+            || !__instance.titleInPosition)
             return;
 
-        if (!TitleOverlayTextures.TryGetValue(languageCode, out Texture2D? overlay))
+        IClickableMenu? subMenu = TitleMenu.subMenu;
+        if (subMenu is null
+            && __instance.buttons is not null
+            && __instance.buttonsToShow > 0)
         {
-            overlay = ModHelper.ModContent.Load<Texture2D>($"title-overlays/TitleLabels-{slug}.png");
-            TitleOverlayTextures[languageCode] = overlay;
-        }
+            if (!TitleOverlayTextures.TryGetValue(languageCode, out Texture2D? overlay))
+            {
+                overlay = ModHelper.ModContent.Load<Texture2D>($"title-overlays/TitleLabels-{slug}.png");
+                TitleOverlayTextures[languageCode] = overlay;
+            }
 
-        int buttonCount = Math.Min(Math.Min(4, __instance.buttons.Count), __instance.buttonsToShow);
-        for (int index = 0; index < buttonCount; index += 1)
-        {
-            ClickableTextureComponent button = __instance.buttons[index];
-            if (!button.visible || button.bounds.Width <= 0 || button.bounds.Height <= 0)
-                continue;
+            int buttonCount = Math.Min(Math.Min(4, __instance.buttons.Count), __instance.buttonsToShow);
+            for (int index = 0; index < buttonCount; index += 1)
+            {
+                ClickableTextureComponent button = __instance.buttons[index];
+                if (!button.visible || button.bounds.Width <= 0 || button.bounds.Height <= 0)
+                    continue;
 
-            Rectangle source = new(index * TitleOverlayButtonWidth, 0, TitleOverlayButtonWidth, TitleOverlayHeight);
-            float overlayScale = button.baseScale > 0f
-                ? button.scale / button.baseScale
-                : 1f;
-            Vector2 position = new(button.bounds.Center.X, button.bounds.Center.Y);
-            Vector2 origin = new(TitleOverlayButtonWidth / 2f, TitleOverlayHeight / 2f);
-            Color ink = button.sourceRect.Y == button.startingSourceRect.Y
-                ? NormalTitleInk
-                : HoverTitleInk;
-            b.Draw(
-                overlay,
-                position,
-                source,
-                ink,
-                0f,
-                origin,
-                overlayScale,
-                SpriteEffects.None,
-                0f
-            );
+                Rectangle source = new(index * TitleOverlayButtonWidth, 0, TitleOverlayButtonWidth, TitleOverlayHeight);
+                float overlayScale = button.baseScale > 0f
+                    ? button.scale / button.baseScale
+                    : 1f;
+                Vector2 position = new(button.bounds.Center.X, button.bounds.Center.Y);
+                Vector2 origin = new(TitleOverlayButtonWidth / 2f, TitleOverlayHeight / 2f);
+                Color ink = button.sourceRect.Y == button.startingSourceRect.Y
+                    ? NormalTitleInk
+                    : HoverTitleInk;
+                b.Draw(
+                    overlay,
+                    position,
+                    source,
+                    ink,
+                    0f,
+                    origin,
+                    overlayScale,
+                    SpriteEffects.None,
+                    0f
+                );
+            }
+
+            if (!LoggedTitleOverlay)
+            {
+                string bounds = string.Join(", ", __instance.buttons.Take(buttonCount)
+                    .Select(button => $"{button.bounds.X},{button.bounds.Y} {button.bounds.Width}x{button.bounds.Height} scale {button.scale:0.###}/{button.baseScale:0.###}"));
+                ModMonitor?.Log($"Centered high-resolution title labels enabled for {languageCode}; button bounds: {bounds}.", LogLevel.Trace);
+                LoggedTitleOverlay = true;
+            }
         }
 
         ClickableTextureComponent? backButton = __instance.backButton;
-        IClickableMenu? subMenu = TitleMenu.subMenu;
         if (subMenu is not null
             && subMenu.readyToClose()
             && backButton is not null
@@ -239,13 +250,6 @@ public sealed class ModEntry : Mod
             }
         }
 
-        if (!LoggedTitleOverlay)
-        {
-            string bounds = string.Join(", ", __instance.buttons.Take(buttonCount)
-                .Select(button => $"{button.bounds.X},{button.bounds.Y} {button.bounds.Width}x{button.bounds.Height} scale {button.scale:0.###}/{button.baseScale:0.###}"));
-            ModMonitor?.Log($"Centered high-resolution title labels enabled for {languageCode}; button bounds: {bounds}.", LogLevel.Trace);
-            LoggedTitleOverlay = true;
-        }
     }
 
     private static bool IsTextParameter(ParameterInfo parameter)

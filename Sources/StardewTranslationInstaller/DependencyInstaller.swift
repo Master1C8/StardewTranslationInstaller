@@ -40,15 +40,15 @@ enum DependencyError: LocalizedError {
 actor DependencyInstaller {
     static let smapi = DependencySpec(
         name: "SMAPI",
-        version: "4.5.2",
+        version: InstallerCore.minimumSMAPIVersion,
         url: URL(string: "https://github.com/Pathoschild/SMAPI/releases/download/4.5.2/SMAPI-4.5.2-installer.zip")!,
         sha256: "dd01ddca7b566bfe0d3b3d2d03833496abc56c53da976241f2ab443f5484acc4"
     )
     static let contentPatcher = DependencySpec(
         name: "Content Patcher",
-        version: "2.9.0",
-        url: URL(string: "https://www.curseforge.com/api/v1/mods/275441/files/7448774/download")!,
-        sha256: "a6681b105b8f5d13300f0a9ff0324e6368291db3a6074d806c78b37a65bbad99"
+        version: InstallerCore.minimumContentPatcherVersion,
+        url: URL(string: "https://www.curseforge.com/api/v1/mods/275441/files/7759981/download")!,
+        sha256: "22962ecbeda204d207f66f4dded727a2ce67134f7decdd249c1024bbc4576817"
     )
 
     private let fileManager = FileManager.default

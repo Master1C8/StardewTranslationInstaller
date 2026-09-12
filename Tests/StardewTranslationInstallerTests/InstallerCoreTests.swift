@@ -651,7 +651,7 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.11")
+        expect(manifest["Version"] as? String == "1.9.12")
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {
@@ -853,6 +853,37 @@ struct InstallerCoreTests {
         )
     }
 
+    @Test func testDependencyStatusRequiresPinnedMinimumVersions() throws {
+        let fm = FileManager.default
+        let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
+        defer { try? fm.removeItem(at: temporary) }
+        let executable = temporary.appendingPathComponent("Contents/MacOS", isDirectory: true)
+        let contentPatcher = executable.appendingPathComponent("Mods/ContentPatcher", isDirectory: true)
+        try fm.createDirectory(at: contentPatcher, withIntermediateDirectories: true)
+        try Data().write(to: executable.appendingPathComponent("Stardew Valley.dll"))
+        let smapiMetadata = "dependency 13.0.3+abcdef0123456789"
+            + String(repeating: "x", count: 256)
+            + "4.5.2+abcdef0123456789 SMAPI"
+        try Data(smapiMetadata.utf8)
+            .write(to: executable.appendingPathComponent("StardewModdingAPI.dll"))
+        try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.1"}"#
+            .data(using: .utf8)!.write(to: contentPatcher.appendingPathComponent("manifest.json"))
+
+        let core = InstallerCore(fileManager: fm)
+        let installation = try require(core.resolveInstallation(temporary))
+        expect(core.status(for: installation).readyToInstall)
+
+        try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.0"}"#
+            .data(using: .utf8)!.write(to: contentPatcher.appendingPathComponent("manifest.json"))
+        expect(!core.status(for: installation).contentPatcherFound)
+
+        try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.1"}"#
+            .data(using: .utf8)!.write(to: contentPatcher.appendingPathComponent("manifest.json"))
+        try Data("metadata 4.5.1+abcdef0123456789 SMAPI".utf8)
+            .write(to: executable.appendingPathComponent("StardewModdingAPI.dll"))
+        expect(!core.status(for: installation).smapiFound)
+    }
+
     @Test func testInstallAndRemove() throws {
         let fm = FileManager.default
         let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
@@ -904,6 +935,48 @@ struct InstallerCoreTests {
                 requirePrerequisites: false
             )
         }
+    }
+
+    @Test func testRecoversInterruptedAtomicReplacement() throws {
+        let fm = FileManager.default
+        let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
+        defer { try? fm.removeItem(at: temporary) }
+        let executable = temporary.appendingPathComponent("Contents/MacOS", isDirectory: true)
+        let mods = executable.appendingPathComponent("Mods", isDirectory: true)
+        try fm.createDirectory(at: mods, withIntermediateDirectories: true)
+        try Data().write(to: executable.appendingPathComponent("Stardew Valley.dll"))
+
+        let package = try translationPackage()
+        let payload = temporary.appendingPathComponent("Payload", isDirectory: true)
+        try fm.createDirectory(at: payload, withIntermediateDirectories: true)
+        try writePayloadIdentity(at: payload, package: package)
+        try Data("new".utf8).write(to: payload.appendingPathComponent("generation.txt"))
+
+        let backup = mods.appendingPathComponent(".vn-revival-backup-interrupted", isDirectory: true)
+        try fm.createDirectory(at: backup, withIntermediateDirectories: true)
+        try writePayloadIdentity(at: backup, package: package)
+        let staging = mods.appendingPathComponent(
+            ".vn-revival-staging-\(package.uniqueID)-interrupted",
+            isDirectory: true
+        )
+        try fm.createDirectory(at: staging, withIntermediateDirectories: true)
+        try Data("partial".utf8).write(to: staging.appendingPathComponent("partial.txt"))
+
+        let core = InstallerCore(fileManager: fm)
+        let installation = try require(core.resolveInstallation(temporary))
+        try core.install(
+            payload: payload,
+            package: package,
+            into: installation,
+            requirePrerequisites: false
+        )
+
+        let installed = installation.modDirectory(for: package)
+        try expect(String(contentsOf: installed.appendingPathComponent("generation.txt")) == "new")
+        let leftovers = try fm.contentsOfDirectory(atPath: mods.path).filter {
+            $0.hasPrefix(".vn-revival-staging-") || $0.hasPrefix(".vn-revival-backup-")
+        }
+        expect(leftovers.isEmpty)
     }
 
     @Test func testMigratesLegacyPackages() throws {

@@ -81,7 +81,8 @@ final class AppState: ObservableObject {
             phase = .ready
             message = copy.installedMessage
         } catch {
-            fail(copy.installationErrorMessage)
+            let details = error.localizedDescription.trimmingCharacters(in: .whitespacesAndNewlines)
+            fail(details.isEmpty ? copy.installationErrorMessage : details)
         }
     }
 

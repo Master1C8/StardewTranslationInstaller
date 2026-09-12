@@ -203,7 +203,7 @@ if (/Error loading patch|Can't apply patch|incorrectly set asset to a null value
 if (verification?.translationBuild?.repeatBuildIdentical !== true
   || verification?.fonts?.roundTripPassed !== true
   || verification?.fonts?.repeatBuildIdentical !== true
-  || verification?.swiftTests?.failed !== 0 || verification?.swiftTests?.passed !== 8
+  || verification?.swiftTests?.failed !== 0 || verification?.swiftTests?.passed < 10
   || verification?.releaseBuild?.succeeded !== true
   || verification?.releaseBuild?.codesignDeepStrictPassed !== true) {
   errors.push("Recorded build, test, font, or signing verification is incomplete");
@@ -241,7 +241,9 @@ const report = {
   warnings: 0,
   errors,
 };
-fs.writeFileSync(path.join(root, "Documentation/uk/release-audit.json"), `${JSON.stringify(report, null, 2)}\n`);
+if (process.argv.includes("--write-report")) {
+  fs.writeFileSync(path.join(root, "Documentation/uk/release-audit.json"), `${JSON.stringify(report, null, 2)}\n`);
+}
 console.log(JSON.stringify({ ...report, errors: errors.length }, null, 2));
 for (const error of errors) console.error(`ERROR ${error}`);
 process.exitCode = errors.length ? 1 : 0;

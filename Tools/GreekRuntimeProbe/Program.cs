@@ -57,8 +57,11 @@ internal static class Program
                 SetLanguage(item.Code, item.ModCode);
                 foreach (string label in labels) baseline.Add(Article(label));
             }
-            harmony.Patch(article, postfix: new HarmonyMethod(
-                typeof(ModEntry), "AfterIndefiniteArticle"));
+            harmony.Patch(
+                article,
+                prefix: new HarmonyMethod(typeof(ModEntry), "BeforeGreekArticle"),
+                postfix: new HarmonyMethod(typeof(ModEntry), "AfterIndefiniteArticle")
+            );
             int index = 0;
             foreach (var item in cases)
             {

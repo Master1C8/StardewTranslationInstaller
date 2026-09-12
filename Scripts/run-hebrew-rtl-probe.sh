@@ -2,7 +2,7 @@
 set -euo pipefail
 
 project_root="$(cd "$(dirname "$0")/.." && pwd)"
-game_path="${STARDREW_GAME_PATH:-$HOME/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS}"
+game_path="${STARDEW_GAME_PATH:-${STARDREW_GAME_PATH:-$HOME/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS}}"
 csc_bin="${CSC_BIN:-csc}"
 probe_dir="$(mktemp -d "${TMPDIR:-/tmp}/vnrevival-hebrew-probe.XXXXXX")"
 trap 'rm -rf "$probe_dir"' EXIT

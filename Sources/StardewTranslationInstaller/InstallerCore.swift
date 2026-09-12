@@ -20,6 +20,29 @@ struct InstallationStatus: Sendable {
     var readyToInstall: Bool { gameFound && smapiFound && contentPatcherFound }
 }
 
+struct SemanticVersion: Comparable, Equatable, Sendable {
+    let major: Int
+    let minor: Int
+    let patch: Int
+
+    init?(_ value: String) {
+        let core = value.split(separator: "+", maxSplits: 1)[0]
+            .split(separator: "-", maxSplits: 1)[0]
+        let parts = core.split(separator: ".")
+        guard parts.count >= 3,
+              let major = Int(parts[0]),
+              let minor = Int(parts[1]),
+              let patch = Int(parts[2]) else { return nil }
+        self.major = major
+        self.minor = minor
+        self.patch = patch
+    }
+
+    static func < (lhs: Self, rhs: Self) -> Bool {
+        (lhs.major, lhs.minor, lhs.patch) < (rhs.major, rhs.minor, rhs.patch)
+    }
+}
+
 enum InstallerError: LocalizedError {
     case invalidGameFolder
     case missingPrerequisites
@@ -49,6 +72,8 @@ enum InstallerError: LocalizedError {
 struct InstallerCore {
     static let languageSwitcherUniqueID = "VNRevival.LanguageSwitcher"
     static let languageSwitcherFolderName = "[SMAPI] VN Revival Language Switcher"
+    static let minimumSMAPIVersion = "4.5.2"
+    static let minimumContentPatcherVersion = "2.9.1"
 
     let fileManager: FileManager
 
@@ -88,15 +113,19 @@ struct InstallerCore {
     }
 
     func status(for installation: GameInstallation, package: TranslationPackage?) -> InstallationStatus {
-        let directory = installation.executableDirectory
-        let smapiMarkers = ["StardewModdingAPI", "StardewModdingAPI.exe", "StardewModdingAPI.dll"]
-        let smapiFound = smapiMarkers.contains {
-            fileManager.fileExists(atPath: directory.appendingPathComponent($0).path)
-        }
-        let contentPatcherFound = ownsFolder(
-            installation.modsDirectory.appendingPathComponent("ContentPatcher", isDirectory: true),
-            uniqueID: "Pathoschild.ContentPatcher"
+        let smapiFound = installedSMAPIVersion(in: installation).map {
+            $0 >= SemanticVersion(Self.minimumSMAPIVersion)!
+        } ?? false
+        let contentPatcher = installation.modsDirectory.appendingPathComponent(
+            "ContentPatcher",
+            isDirectory: true
         )
+        let contentPatcherFound = folderHasUniqueID(
+            contentPatcher,
+            uniqueID: "Pathoschild.ContentPatcher"
+        ) && manifestVersion(in: contentPatcher).map {
+            $0 >= SemanticVersion(Self.minimumContentPatcherVersion)!
+        } ?? false
         return InstallationStatus(
             gameFound: true,
             smapiFound: smapiFound,
@@ -188,6 +217,35 @@ struct InstallerCore {
         return containsLanguageCode(json, expected: languageCode)
     }
 
+    func installedSMAPIVersion(in installation: GameInstallation) -> SemanticVersion? {
+        let assembly = installation.executableDirectory.appendingPathComponent("StardewModdingAPI.dll")
+        guard let data = try? Data(contentsOf: assembly, options: .mappedIfSafe) else { return nil }
+        let strings = String(decoding: data, as: UTF8.self)
+        let pattern = #"(?<![0-9])([0-9]+\.[0-9]+\.[0-9]+)(?:\.[0-9]+)?\+[0-9a-fA-F]{7,64}"#
+        guard let expression = try? NSRegularExpression(pattern: pattern) else { return nil }
+        let fullRange = NSRange(strings.startIndex..., in: strings)
+        let cocoa = strings as NSString
+        for match in expression.matches(in: strings, range: fullRange) {
+            let contextStart = max(0, match.range.location - 128)
+            let contextEnd = min(cocoa.length, match.range.location + match.range.length + 128)
+            let context = cocoa.substring(
+                with: NSRange(location: contextStart, length: contextEnd - contextStart)
+            )
+            guard context.localizedCaseInsensitiveContains("SMAPI"),
+                  let range = Range(match.range(at: 1), in: strings) else { continue }
+            return SemanticVersion(String(strings[range]))
+        }
+        return nil
+    }
+
+    func manifestVersion(in folder: URL) -> SemanticVersion? {
+        let manifest = folder.appendingPathComponent("manifest.json")
+        guard let data = try? Data(contentsOf: manifest),
+              let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let version = json["Version"] as? String else { return nil }
+        return SemanticVersion(version)
+    }
+
     private func containsLanguageCode(_ value: Any, expected: String) -> Bool {
         if let object = value as? [String: Any] {
             if object["LanguageCode"] as? String == expected { return true }
@@ -206,12 +264,13 @@ struct InstallerCore {
     private func replaceOwnedFolder(payload: URL, destination: URL, uniqueID: String) throws {
         let parent = destination.deletingLastPathComponent()
         try fileManager.createDirectory(at: parent, withIntermediateDirectories: true)
+        try recoverInterruptedReplacement(destination: destination, uniqueID: uniqueID)
         if fileManager.fileExists(atPath: destination.path),
            !folderHasUniqueID(destination, uniqueID: uniqueID) {
             throw InstallerError.foreignFolder(destination)
         }
 
-        let token = UUID().uuidString
+        let token = "\(uniqueID)-\(UUID().uuidString)"
         let staging = parent.appendingPathComponent(".vn-revival-staging-\(token)", isDirectory: true)
         let backup = parent.appendingPathComponent(".vn-revival-backup-\(token)", isDirectory: true)
         try fileManager.copyItem(at: payload, to: staging)
@@ -230,6 +289,49 @@ struct InstallerCore {
                 try? fileManager.moveItem(at: backup, to: destination)
             }
             throw error
+        }
+    }
+
+    private func recoverInterruptedReplacement(destination: URL, uniqueID: String) throws {
+        let parent = destination.deletingLastPathComponent()
+        let entries = try fileManager.contentsOfDirectory(
+            at: parent,
+            includingPropertiesForKeys: [.contentModificationDateKey],
+            options: []
+        )
+        let specificStagingPrefix = ".vn-revival-staging-\(uniqueID)-"
+        let specificBackupPrefix = ".vn-revival-backup-\(uniqueID)-"
+        let staging = entries.filter {
+            $0.lastPathComponent.hasPrefix(specificStagingPrefix)
+                || ($0.lastPathComponent.hasPrefix(".vn-revival-staging-")
+                    && folderHasUniqueID($0, uniqueID: uniqueID))
+        }
+        var backups = entries.filter {
+            $0.lastPathComponent.hasPrefix(specificBackupPrefix)
+                || ($0.lastPathComponent.hasPrefix(".vn-revival-backup-")
+                    && folderHasUniqueID($0, uniqueID: uniqueID))
+        }
+
+        for artifact in staging {
+            try fileManager.removeItem(at: artifact)
+        }
+
+        if !fileManager.fileExists(atPath: destination.path), !backups.isEmpty {
+            backups.sort {
+                let left = (try? $0.resourceValues(forKeys: [.contentModificationDateKey]))?
+                    .contentModificationDate ?? .distantPast
+                let right = (try? $1.resourceValues(forKeys: [.contentModificationDateKey]))?
+                    .contentModificationDate ?? .distantPast
+                return left > right
+            }
+            try fileManager.moveItem(at: backups.removeFirst(), to: destination)
+        }
+
+        if fileManager.fileExists(atPath: destination.path),
+           folderHasUniqueID(destination, uniqueID: uniqueID) {
+            for artifact in backups {
+                try fileManager.removeItem(at: artifact)
+            }
         }
     }
 

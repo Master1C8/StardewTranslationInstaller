@@ -36,6 +36,8 @@ public sealed class ModEntry : Mod
     private static bool LoggedTitleOverlay;
     private static bool LoggedBackOverlay;
     private static bool LoggedDeveloperOverlay;
+    [ThreadStatic]
+    private static int TextRenderingDepth;
     private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleBackOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleDeveloperOverlayTextures = new(StringComparer.Ordinal);
@@ -120,7 +122,10 @@ public sealed class ModEntry : Mod
         HebrewAdapter = ArabicScriptTextAdapter.CreateBidiOnly();
         MethodInfo textPrefix = AccessTools.Method(typeof(ModEntry), nameof(BeforeTextRendering))
             ?? throw new InvalidOperationException("The Arabic-script rendering adapter was not found.");
+        MethodInfo textFinalizer = AccessTools.Method(typeof(ModEntry), nameof(FinishTextRendering))
+            ?? throw new InvalidOperationException("The Arabic-script rendering cleanup was not found.");
         HarmonyMethod textHarmonyPrefix = new(textPrefix);
+        HarmonyMethod textHarmonyFinalizer = new(textFinalizer);
 
         IEnumerable<MethodInfo> spriteTextMethods = AccessTools.GetDeclaredMethods(typeof(SpriteText))
             .Where(method =>
@@ -137,7 +142,7 @@ public sealed class ModEntry : Mod
         int patched = 0;
         foreach (MethodInfo method in spriteTextMethods.Concat(monoGameMethods).Distinct())
         {
-            harmony.Patch(method, prefix: textHarmonyPrefix);
+            harmony.Patch(method, prefix: textHarmonyPrefix, finalizer: textHarmonyFinalizer);
             patched += 1;
         }
         Monitor.Log($"Persian, Arabic, and Hebrew shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
@@ -210,6 +215,8 @@ public sealed class ModEntry : Mod
 
         ClickableTextureComponent? backButton = __instance.backButton;
         if (subMenu is not null
+            && !__instance.isTransitioningButtons
+            && subMenu is not CharacterCustomization
             && subMenu.readyToClose()
             && backButton is not null
             && backButton.visible
@@ -526,8 +533,11 @@ public sealed class ModEntry : Mod
             .SetValue(null, LocalizedContentManager.LanguageCode.en);
     }
 
-    private static void BeforeTextRendering(object[] __args)
+    private static void BeforeTextRendering(object[] __args, out bool __state)
     {
+        __state = false;
+        if (TextRenderingDepth > 0)
+            return;
         if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod)
             return;
 
@@ -540,13 +550,31 @@ public sealed class ModEntry : Mod
         };
         if (adapter is null) return;
 
-        for (int index = 0; index < __args.Length; index += 1)
+        TextRenderingDepth += 1;
+        __state = true;
+        try
         {
-            if (__args[index] is string text)
-                __args[index] = adapter.Transform(text);
-            else if (__args[index] is StringBuilder builder)
-                __args[index] = new StringBuilder(adapter.Transform(builder.ToString()));
+            for (int index = 0; index < __args.Length; index += 1)
+            {
+                if (__args[index] is string text)
+                    __args[index] = adapter.Transform(text);
+                else if (__args[index] is StringBuilder builder)
+                    __args[index] = new StringBuilder(adapter.Transform(builder.ToString()));
+            }
         }
+        catch
+        {
+            TextRenderingDepth -= 1;
+            __state = false;
+            throw;
+        }
+    }
+
+    private static Exception? FinishTextRendering(Exception? __exception, bool __state)
+    {
+        if (__state)
+            TextRenderingDepth = Math.Max(0, TextRenderingDepth - 1);
+        return __exception;
     }
 }
 

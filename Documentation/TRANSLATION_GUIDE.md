@@ -1,8 +1,8 @@
 # Руководство по переводу Stardew Valley
 
-Этот документ предназначен для модели или переводчика, продолжающего польский перевод **VN Revival**. Цель проекта — добавить в Stardew Valley отдельный язык `pl-vnrevival` через Content Patcher, не заменяя оригинальные XNB-файлы игры.
+Этот документ предназначен для модели или переводчика, продолжающего любой перевод **VN Revival**. Цель проекта — добавлять в Stardew Valley отдельные языки `*-vnrevival` через Content Patcher, не заменяя оригинальные XNB-файлы игры.
 
-Текущая сборка — единый установщик завершённых языков VN Revival. Один `ModPayload` регистрирует русский, польский, вьетнамский, суахили, персидский, арабский, индонезийский, хинди и традиционный китайский языки независимо. Пользователь получает простой сценарий: открыть → дождаться установки всех переводов → нажать кнопку запуска. Нужный язык выбирается уже внутри Stardew Valley; отдельный выбор в установщике не нужен.
+Текущая сборка — единый установщик 19 завершённых языков VN Revival. Точный канонический список кодов хранится в `PackageConfig.json`. Пользователь получает простой сценарий: открыть → дождаться установки всех переводов → нажать кнопку запуска. Нужный язык выбирается уже внутри Stardew Valley; отдельный выбор в установщике не нужен.
 
 ## 0. Универсальный контракт языкового пакета
 
@@ -52,17 +52,19 @@ Sources/StardewTranslationInstaller/Resources/ModPayload/
 ├── content.json
 └── assets/
     └── translations/
-        └── polish/
+        ├── polish/
             ├── ui.json
+            └── …
+        └── <other-language>/
             └── …
 ```
 
-`content.json` регистрирует дополнительный язык `pl-vnrevival`, загружает польскую кнопку языка и явно подключает каждый файл перевода через `Include`. Все текущие патчи лежат в `assets/translations/polish`.
+`content.json` регистрирует каждый код из `PackageConfig.json`, загружает соответствующие кнопки и шрифты и явно подключает каждый файл перевода через `Include`. Патчи разнесены по языковым каталогам в `assets/translations/`.
 
 Во время сборки каталог `ModPayload` помещается внутрь приложения. Во время установки он атомарно копируется в:
 
 ```text
-Stardew Valley/Contents/MacOS/Mods/[CP] VN Revival Polish/
+Stardew Valley/Contents/MacOS/Mods/[CP] VN Revival Languages/
 ```
 
 Исходники в этом репозитории — источник истины для мода. Никогда не редактировать установленную копию как основную: следующая установка её перезапишет.
@@ -347,8 +349,7 @@ find Sources/StardewTranslationInstaller/Resources/ModPayload -name '*.json' -ty
 DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
 CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-installer-swift-cache \
 swift test --disable-sandbox
-./Scripts/build-app.sh
-codesign --verify --deep --strict --verbose=2 'dist/Stardew Translation Installer.app'
+./Scripts/release-audit.sh
 ```
 
 Дополнительно сравнить оригинал и перевод:

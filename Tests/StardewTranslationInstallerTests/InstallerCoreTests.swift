@@ -391,7 +391,7 @@ struct InstallerCoreTests {
             "assets/title/TitleButtons-vietnamese.png": "4cd74af0209539e082ed6cc5f728726d4c95c6f26d6300fff2167c5e88370e30",
             "assets/title/TitleButtons-swahili.png": "ec23fd908becb5ffe2d7fe0255553b30eb6b9dec4c63342168eb95430594fbf9",
             "assets/title/TitleButtons-persian.png": "64ca9b94e1713cc61474bf92e2050b5cd135e1ad699695ace83045ac81fc0c65",
-            "assets/title/TitleButtons-arabic.png": "444c1a21262122c0d2fa871da119ae079126a5fc368264a675337c105288763f",
+            "assets/title/TitleButtons-arabic.png": "448d260ff256b9b90394b196b3c193c42ec358d74917acf23dbe5f81f0556e95",
             "assets/title/TitleButtons-indonesian.png": "fd6006d4ea114db552b45f229f47c5dfa2f1dc05cd7b5f92bc50ea577dc2ab30",
             "assets/title/TitleButtons-filipino.png": "81bb60f1fa41345a875ad566f23125f193214c8d02d456fd2efa8e15836ed284",
             "assets/title/TitleButtons-dutch.png": "f9d9b07bd7e0cf2ab8a05868b9efb54065a72c0c0935f53a9a80ebd04e934ac2",
@@ -525,7 +525,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/title/TitleButtons-arabic.png")
-            ) == "444c1a21262122c0d2fa871da119ae079126a5fc368264a675337c105288763f"
+            ) == "448d260ff256b9b90394b196b3c193c42ec358d74917acf23dbe5f81f0556e95"
         )
 
         let bulgarianAssetHashes = [
@@ -627,7 +627,7 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.4")
+        expect(manifest["Version"] as? String == "1.9.5")
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {
@@ -655,6 +655,14 @@ struct InstallerCoreTests {
             let dimensions = try imageDimensions(overlay)
             expect(dimensions == (888, 174))
         }
+        let arabicBackOverlay = titleOverlays.appendingPathComponent("TitleBack-arabic.png")
+        expect(fm.fileExists(atPath: arabicBackOverlay.path))
+        let arabicBackOverlayDimensions = try imageDimensions(arabicBackOverlay)
+        expect(arabicBackOverlayDimensions == (264, 108))
+        try expect(
+            try DependencyInstaller.sha256(of: arabicBackOverlay)
+                == "edf8548afed69de9f3ac19c3f7b7fa15736954ba29ef79bd9d025b9e6e3cd100"
+        )
         expect(!fm.fileExists(atPath: source.appendingPathComponent("urdu-shaping-map.json").path))
         let persianShapingMap = try require(
             JSONSerialization.jsonObject(

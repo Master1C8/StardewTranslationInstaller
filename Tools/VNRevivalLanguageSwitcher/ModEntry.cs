@@ -35,6 +35,7 @@ public sealed class ModEntry : Mod
     private static IMonitor? ModMonitor;
     private static bool LoggedTitleOverlay;
     private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
+    private static readonly Dictionary<string, Texture2D> TitleBackOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, string> TitleOverlayFiles = new(StringComparer.Ordinal)
     {
         ["ru-vnrevival"] = "russian",
@@ -57,10 +58,16 @@ public sealed class ModEntry : Mod
         ["el-vnrevival"] = "greek",
         ["cs-vnrevival"] = "czech",
     };
+    private static readonly Dictionary<string, string> TitleBackOverlayFiles = new(StringComparer.Ordinal)
+    {
+        [ArabicLanguageCode] = "arabic",
+    };
     private static readonly Color NormalTitleInk = new(210, 34, 69);
     private static readonly Color HoverTitleInk = new(239, 72, 101);
     private const int TitleOverlayButtonWidth = 222;
     private const int TitleOverlayHeight = 174;
+    private const int TitleBackOverlayWidth = 264;
+    private const int TitleBackOverlayHeight = 108;
 
     public override void Entry(IModHelper helper)
     {
@@ -178,6 +185,38 @@ public sealed class ModEntry : Mod
                 ink,
                 0f,
                 origin,
+                overlayScale,
+                SpriteEffects.None,
+                0f
+            );
+        }
+
+        ClickableTextureComponent? backButton = __instance.backButton;
+        if (backButton is not null
+            && backButton.visible
+            && backButton.bounds.Width > 0
+            && backButton.bounds.Height > 0
+            && TitleBackOverlayFiles.TryGetValue(languageCode, out string? backSlug))
+        {
+            if (!TitleBackOverlayTextures.TryGetValue(languageCode, out Texture2D? backOverlay))
+            {
+                backOverlay = ModHelper.ModContent.Load<Texture2D>($"title-overlays/TitleBack-{backSlug}.png");
+                TitleBackOverlayTextures[languageCode] = backOverlay;
+            }
+
+            float overlayScale = backButton.baseScale > 0f
+                ? backButton.scale / backButton.baseScale
+                : 1f;
+            Color ink = backButton.sourceRect.Y == backButton.startingSourceRect.Y
+                ? NormalTitleInk
+                : HoverTitleInk;
+            b.Draw(
+                backOverlay,
+                new Vector2(backButton.bounds.Center.X, backButton.bounds.Center.Y),
+                null,
+                ink,
+                0f,
+                new Vector2(TitleBackOverlayWidth / 2f, TitleBackOverlayHeight / 2f),
                 overlayScale,
                 SpriteEffects.None,
                 0f

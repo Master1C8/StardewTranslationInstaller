@@ -53,3 +53,8 @@ or blurry text:
   /path/to/approved-title-menu-reference.png \
   Scripts/assets/title-button-labels.png
 ```
+
+Arabic also uses `title-overlays/TitleBack-arabic.png` for the 66×27 back
+button. `build-arabic-static-labels.sh` clears the tiny atlas label and renders
+the replacement at the button's native 264×108 screen size; the switcher keeps
+it centered and scales it with the stock hover animation.

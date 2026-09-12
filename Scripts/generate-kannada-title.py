@@ -83,6 +83,32 @@ def erase_label(
                 pixels[x, y] = background
 
 
+def write_back_overlay(
+    output_path: Path,
+    text: str,
+    font_path: Path,
+) -> None:
+    """Render the back label at its native on-screen size instead of atlas scale."""
+    overlay_size = (264, 108)
+    label_area_width = 200
+    rendered = shaped_mask(text, font_path, 44)
+    if rendered is None:
+        raise RuntimeError("VN_SHAPED_TEXT_RENDERER is required for a title back overlay")
+    if rendered.width > label_area_width - 24 or rendered.height > overlay_size[1] - 24:
+        raise ValueError(f"Back label is too large for its button: {rendered.size}")
+
+    overlay = Image.new("RGBA", overlay_size, (255, 255, 255, 0))
+    glyph = Image.new("RGBA", rendered.size, (255, 255, 255, 255))
+    glyph.putalpha(rendered)
+    position = (
+        (label_area_width - rendered.width) // 2,
+        (overlay_size[1] - rendered.height) // 2,
+    )
+    overlay.alpha_composite(glyph, position)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    overlay.save(output_path, format="PNG", optimize=False)
+
+
 if len(sys.argv) != 4:
     usage()
 
@@ -210,7 +236,6 @@ for box, lines, size in buttons:
 back_selected = (300, 259, 345, 273)
 back_hover = (300, 287, 345, 301)
 erase_label(image, back_selected, {selected_foreground, selected_shadow}, selected_background)
-draw_label(image, back_selected, [back_label], font_path, 9, selected_foreground, selected_shadow)
 back_hover_background = (255, 255, 191, 255)
 back_hover_foreground = (235, 111, 111, 255)
 back_hover_shadow = (173, 94, 81, 255)
@@ -220,15 +245,20 @@ erase_label(
     {back_hover_foreground, back_hover_shadow},
     back_hover_background,
 )
-draw_label(
-    image,
-    back_hover,
-    [back_label],
-    font_path,
-    9,
-    back_hover_foreground,
-    back_hover_shadow,
-)
+back_overlay_output = os.environ.get("VN_TITLE_BACK_OVERLAY")
+if back_overlay_output:
+    write_back_overlay(Path(back_overlay_output), back_label, font_path)
+else:
+    draw_label(image, back_selected, [back_label], font_path, 9, selected_foreground, selected_shadow)
+    draw_label(
+        image,
+        back_hover,
+        [back_label],
+        font_path,
+        9,
+        back_hover_foreground,
+        back_hover_shadow,
+    )
 
 developer_background = (74, 140, 239, 255)
 developer_foreground = (254, 254, 255, 255)

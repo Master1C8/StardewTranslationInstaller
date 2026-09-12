@@ -110,8 +110,12 @@ try {
     const texturePath = path.join(payload, textureLoad.FromFile);
     for (const assetPath of [fontPath, texturePath]) {
       if (!fs.existsSync(assetPath)) throw new Error(`${code} is missing ${path.relative(projectRoot, assetPath)}`);
-      const header = fs.readFileSync(assetPath).subarray(0, 3).toString("ascii");
+      const bytes = fs.readFileSync(assetPath);
+      const header = bytes.subarray(0, 3).toString("ascii");
       if (header !== "XNB") throw new Error(`${code} has an invalid XNB asset: ${assetPath}`);
+      if (bytes.length < 14 || (bytes[5] & 0x40) === 0 || (bytes[5] & 0x80) !== 0) {
+        throw new Error(`${code} has an XNB asset without MonoGame LZ4 compression: ${assetPath}`);
+      }
     }
 
     const unpacked = path.join(temporaryRoot, directory);

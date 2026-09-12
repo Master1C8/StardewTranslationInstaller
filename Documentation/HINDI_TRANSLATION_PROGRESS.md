@@ -39,7 +39,7 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 - Hindi runtime configuration integrated: yes (`hi-vnrevival`, `Fonts/Hindi`)
 - Shaped Hindi clusters: 1,389
 - Runtime encoding: 420,976 PUA scalars, 0 raw Devanagari scalars
-- Hindi XNB fonts built and round-trip verified: yes (SpriteFont1, SmallFont, Hindi, Hindi_0)
+- Hindi XNB fonts built, MonoGame LZ4-compressed, and round-trip verified: yes (SpriteFont1, SmallFont, Hindi, Hindi_0)
 - Static Hindi language and title labels built and verified: yes
 - Final full Hindi audit: 0 errors, 0 warnings in two consecutive full runs
 - Glossary audit: 0 errors, 0 warnings in two consecutive full runs
@@ -57,9 +57,9 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 
 - Encoded Hindi translation tree: `bee5dd18e5269beee9892a294046e3f360dfb9f49a679a84805196de087263ab`
 - Generated root `content.json`: `546ecf11de4d1bc02cdded9f6c96925f3107d2c8e92a45f219134c7e6e1fb837`
-- `SpriteFont1.xnb`: `690371af4bcbb60748efc616a7e437cca91955f5d7583093d2979802775ac796`
-- `SmallFont.xnb`: `ead57d283edf138d6e3baf5d3d8924d48326c8b7a1cd443c54b9d36ee31d09eb`
-- `Hindi.xnb`: `dc929c21e434e8414243ef21a169aa8e4370ed7fd3694234d8a39435fe07b861`
-- `Hindi_0.xnb`: `79e16c38128299e038a339535e6f81dfaf154ee32bf92d1f473f5292cf82c90a`
+- `SpriteFont1.xnb`: `5674a9c057d4300b0e486fc967baae9290abc57ca00b084bc9b91ee91095daea`
+- `SmallFont.xnb`: `4605ca474a407c9a45d87ab3e10298da50c36e3bac53d72adf6dca52c8f42481`
+- `Hindi.xnb`: `45d33ae7514da6af02f3628639f5e5ccf3847dab3089ee41ef4d6c817877c53d`
+- `Hindi_0.xnb`: `63799d747543ece08c3d145ba827b407075453db89318c9c11dd3f77c906db35`
 - `button-hindi.png`: `63d1b99db23dbc7237b254804cbf347716d2a8dd8cf5132697085c7cdd80fd67`
 - `TitleButtons-hindi.png`: `85e12d552629e046f774807531e3ff5b4ca2cc05be86e37992aa845815970768`

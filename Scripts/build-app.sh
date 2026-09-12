@@ -11,6 +11,7 @@ export SWIFTPM_MODULECACHE_OVERRIDE="${SWIFTPM_MODULECACHE_OVERRIDE:-$CLANG_MODU
 scratch_root="${VN_SWIFT_SCRATCH_PATH:-$project_dir/.build-app}"
 architectures=(arm64 x86_64)
 
+"$project_dir/Scripts/compress-xnb-fonts.swift" --verify
 "$project_dir/Scripts/build-language-switcher.sh"
 
 for architecture in "${architectures[@]}"; do

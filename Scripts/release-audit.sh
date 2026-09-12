@@ -11,6 +11,7 @@ export SWIFTPM_MODULECACHE_OVERRIDE="${SWIFTPM_MODULECACHE_OVERRIDE:-$CLANG_MODU
 python_bin="${PYTHON_BIN:-python3}"
 
 node Scripts/audit-release-structure.mjs
+./Scripts/compress-xnb-fonts.swift --verify
 swift test --disable-sandbox
 node Scripts/audit-character-creation-layout.mjs
 node Scripts/audit-bitmap-font-coverage.mjs

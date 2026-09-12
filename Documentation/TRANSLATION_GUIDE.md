@@ -349,6 +349,7 @@ find Sources/StardewTranslationInstaller/Resources/ModPayload -name '*.json' -ty
 DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
 CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-installer-swift-cache \
 swift test --disable-sandbox
+./Scripts/compress-xnb-fonts.swift --verify
 ./Scripts/release-audit.sh
 ```
 

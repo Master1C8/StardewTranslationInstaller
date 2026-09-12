@@ -9,4 +9,4 @@ assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/a
   "$assets" \
   --overlays "$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/title-overlays" \
   --template "$project_root/Scripts/assets/title-button-template.png" \
-  --labels "$project_root/Scripts/assets/title-button-labels.png" "$@"
+  --buttons "$project_root/Scripts/assets/title-button-overlays.png" "$@"

@@ -375,12 +375,12 @@ struct InstallerCoreTests {
                 )
         )
 
-        let approvedTitleLabels = projectRoot().appendingPathComponent(
-            "Scripts/assets/title-button-labels.png"
+        let approvedTitleButtons = projectRoot().appendingPathComponent(
+            "Scripts/assets/title-button-overlays.png"
         )
         try expect(
-            try DependencyInstaller.sha256(of: approvedTitleLabels)
-                == "c4b1e89e08009295f43e4958118d3378cb090b91dbb243407323d047ffcb8ce6"
+            try DependencyInstaller.sha256(of: approvedTitleButtons)
+                == "72554ee8e8a37698d9fb8ef45937f207919a72e0efd7b967c07c6d7a70b51da0"
         )
 
         let unifiedTitleButtonHashes = [
@@ -627,7 +627,7 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.1")
+        expect(manifest["Version"] as? String == "1.9.2")
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {
@@ -643,17 +643,33 @@ struct InstallerCoreTests {
             return (integer(at: 16), integer(at: 20))
         }
         let titleOverlays = source.appendingPathComponent("title-overlays")
-        let overlayNames = [
-            "russian", "serbian", "polish", "ukrainian", "vietnamese", "swahili",
-            "persian", "arabic", "indonesian", "filipino", "dutch", "hindi",
-            "traditional-chinese", "romanian", "hebrew", "bulgarian", "thai",
-            "greek", "czech",
+        let titleButtonHashes = [
+            "russian": "a261af515174634cebf44cb5c23a3c67221e0e0a8e6d2e1d4fc37c6cdf5cd1b6",
+            "serbian": "b3fe85a5e4179daac85d099cc81444af4489f94a33c9e439d07732cfe42afc57",
+            "polish": "b1665a3c8c61de98ab4b9ee7b2db76591272488a47859eacf1ad39ddb5e41cd0",
+            "ukrainian": "3efad66f7df609c74c9745b39ede10dd957f3c6bf61dd1c9ca068a7eaf3c673e",
+            "vietnamese": "912f170343fe67d3fd78f5eb5f56491ca61038b18755f2b1609624b9684e4fce",
+            "swahili": "e518578145e941c7e2e521017df9a3bcc298a9ce6253498560ed435081b322cf",
+            "persian": "502a06571d500a0d66428f71575ee57b887fb4f4b3751c04a482b1fb8690d1d1",
+            "arabic": "de19366d9c01f68ad54fe2b991c38f4412961d2cf4c4801f16945f6d842b6b2a",
+            "indonesian": "380d29f663f5f6ef87ee53c6772a6a6a1d73e04eec96307920d1ee6e4c72db24",
+            "filipino": "3b331c31d52d8a26a5b0d493c5a0ef2d36f8e146ae43a7dc221493627a9b6d24",
+            "dutch": "31634fd823197115c4e9e5b0d6ba6659e69b22eee3faf269b1b4bf5d7c0c738f",
+            "hindi": "cbe389273d8d07734d1ac7664f9b29c26f3046d4bc5c1fa509f0ca678d3ef6f6",
+            "traditional-chinese": "321773fd71b2bf9fa4d74dd25668d8582e861c41b5da8a8c64acccdd6e5f890b",
+            "romanian": "5993a25f2a8cbcdea12bba875803b762dd3cec141fa2ed869f6cbd9feb244a43",
+            "hebrew": "a9a2c160ae5f9127ed5e5cfb46e0d7b91307e4edb410903e53047fcbe4690c0b",
+            "bulgarian": "482f712956e00d7398ab72792608c29fe35feef28b13b913d91839a2f8888116",
+            "thai": "20b7c05c05355d3528e38761e7ee8ce5fe96a6b61ed755bdd99f17216e3385f1",
+            "greek": "0c060e7810cbb2f55605b110fe2d12e0b14e531961f43cc87f650157c3f6b3db",
+            "czech": "424d8f6ceac9a90b897a1707d8c7ae9ed49d0f0601a18c2e04a81facce5910b1",
         ]
-        for name in overlayNames {
-            let overlay = titleOverlays.appendingPathComponent("TitleLabels-\(name).png")
+        for (name, expectedHash) in titleButtonHashes {
+            let overlay = titleOverlays.appendingPathComponent("TitleButtons-\(name).png")
             expect(fm.fileExists(atPath: overlay.path))
             let dimensions = try imageDimensions(overlay)
             expect(dimensions == (888, 174))
+            try expect(try DependencyInstaller.sha256(of: overlay) == expectedHash)
         }
         expect(!fm.fileExists(atPath: source.appendingPathComponent("urdu-shaping-map.json").path))
         let persianShapingMap = try require(

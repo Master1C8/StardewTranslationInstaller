@@ -192,7 +192,10 @@ public sealed class ModEntry : Mod
         }
 
         ClickableTextureComponent? backButton = __instance.backButton;
-        if (backButton is not null
+        IClickableMenu? subMenu = TitleMenu.subMenu;
+        if (subMenu is not null
+            && subMenu.readyToClose()
+            && backButton is not null
             && backButton.visible
             && backButton.bounds.Width > 0
             && backButton.bounds.Height > 0

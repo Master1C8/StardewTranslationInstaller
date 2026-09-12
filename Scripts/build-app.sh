@@ -8,24 +8,25 @@ export DEVELOPER_DIR="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Develope
 export CLANG_MODULE_CACHE_PATH="${CLANG_MODULE_CACHE_PATH:-/private/tmp/stardew-installer-swift-cache}"
 export SWIFT_MODULECACHE_PATH="${SWIFT_MODULECACHE_PATH:-$CLANG_MODULE_CACHE_PATH}"
 export SWIFTPM_MODULECACHE_OVERRIDE="${SWIFTPM_MODULECACHE_OVERRIDE:-$CLANG_MODULE_CACHE_PATH}"
-scratch_path="${VN_SWIFT_SCRATCH_PATH:-$project_dir/.build}"
+scratch_root="${VN_SWIFT_SCRATCH_PATH:-$project_dir/.build-app}"
 architectures=(arm64 x86_64)
 
 "$project_dir/Scripts/build-language-switcher.sh"
 
 for architecture in "${architectures[@]}"; do
+  architecture_scratch="$scratch_root/$architecture"
   swift build \
     -c release \
     --disable-sandbox \
-    --scratch-path "$scratch_path" \
+    --scratch-path "$architecture_scratch" \
     --triple "${architecture}-apple-macosx14.0"
 done
 
 app="$project_dir/dist/Stardew Translation Installer.app"
-arm_binary="$scratch_path/arm64-apple-macosx/release/StardewTranslationInstaller"
-x86_binary="$scratch_path/x86_64-apple-macosx/release/StardewTranslationInstaller"
-resource_bundle="$scratch_path/arm64-apple-macosx/release/StardewTranslationInstaller_StardewTranslationInstaller.bundle"
-universal_binary="$scratch_path/StardewTranslationInstaller-universal"
+arm_binary="$scratch_root/arm64/arm64-apple-macosx/release/StardewTranslationInstaller"
+x86_binary="$scratch_root/x86_64/x86_64-apple-macosx/release/StardewTranslationInstaller"
+resource_bundle="$scratch_root/arm64/arm64-apple-macosx/release/StardewTranslationInstaller_StardewTranslationInstaller.bundle"
+universal_binary="$scratch_root/StardewTranslationInstaller-universal"
 
 lipo -create "$arm_binary" "$x86_binary" -output "$universal_binary"
 

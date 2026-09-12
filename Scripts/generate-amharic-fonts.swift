@@ -441,6 +441,7 @@ func processBmFont(
     fontSize: CGFloat,
     lineHeight: Int,
     base: Int,
+    yOffsetAdjustment: Int,
     antialias: Bool,
     atlasSize: Int,
     outputDirectory: URL,
@@ -484,7 +485,7 @@ func processBmFont(
             }
             bitmaps.append(GlyphBitmap(index: index, character: character, image: image))
             advances[index] = 4
-            yOffsets[index] = base
+            yOffsets[index] = base + yOffsetAdjustment
             continue
         }
         guard let renderFont = ([font] + fallbackFonts).first(where: {
@@ -504,7 +505,7 @@ func processBmFont(
         )
         bitmaps.append(GlyphBitmap(index: index, character: character, image: glyph.image))
         advances[index] = max(1, Int(ceil((renderedText as NSString).size(withAttributes: [.font: renderFont]).width)))
-        yOffsets[index] = max(0, (lineHeight - glyph.image.height) / 2)
+        yOffsets[index] = (lineHeight - glyph.image.height) / 2 + yOffsetAdjustment
     }
     let placements = try pack(bitmaps, atlasSize: atlasSize, padding: 1)
     guard let atlas = makeBitmap(width: atlasSize, height: atlasSize) else {
@@ -714,6 +715,7 @@ do {
             ),
             lineHeight: Int(ProcessInfo.processInfo.environment["VN_BITMAP_FONT_LINE_HEIGHT"] ?? "") ?? 18,
             base: Int(ProcessInfo.processInfo.environment["VN_BITMAP_FONT_BASE"] ?? "") ?? 14,
+            yOffsetAdjustment: Int(ProcessInfo.processInfo.environment["VN_BITMAP_FONT_Y_OFFSET"] ?? "") ?? 0,
             antialias: ProcessInfo.processInfo.environment["VN_BITMAP_FONT_ANTIALIAS"] == "1",
             atlasSize: bitmapAtlasSize,
             outputDirectory: outputDirectory,

@@ -54,6 +54,14 @@ BACK_TEMPLATE_FRAME_SIZE = (45, 14)
 RUNTIME_BACK_SIZE = (264, 108)
 RUNTIME_BACK_LABEL_LEFT = 24
 RUNTIME_BACK_LABEL_RIGHT = 216
+RUNTIME_DEVELOPER_SIZE = (333, 180)
+DEVELOPER_CARD_POSITIONS = ((171, 311), (282, 311))
+DEVELOPER_LABEL_BOX = (10, 1, 102, 19)
+DEVELOPER_BACKGROUND = (74, 140, 239, 255)
+DEVELOPER_TEXT_COLORS = {
+    (254, 254, 255, 255),
+    (159, 182, 255, 255),
+}
 INK_COLORS = ((210, 34, 69, 255), (239, 72, 101, 255))
 TITLE_VERTICAL_OFFSETS = {
     "traditional-chinese": -24,
@@ -122,10 +130,38 @@ def validate_back_overlay(overlay: Image.Image, spec: TitleButtons) -> None:
         raise ValueError(f"Back label touches its frame for {spec.locale}: {bounds}")
 
 
+def validate_developer_overlay(overlay: Image.Image, spec: TitleButtons) -> None:
+    if overlay.size != RUNTIME_DEVELOPER_SIZE:
+        raise ValueError(f"Invalid developer-overlay dimensions for {spec.locale}: {overlay.size}")
+    bounds = overlay.getchannel("A").getbbox()
+    if bounds is None:
+        raise ValueError(f"Missing developer label for {spec.locale}")
+    if bounds[0] < 20 or bounds[2] > RUNTIME_DEVELOPER_SIZE[0] - 20:
+        raise ValueError(f"Developer label touches its card for {spec.locale}: {bounds}")
+
+
 def clear_back_label(atlas: Image.Image, template: Image.Image) -> None:
     width, height = BACK_TEMPLATE_FRAME_SIZE
     atlas.paste(template.crop((0, 0, width, height)), BACK_SELECTED_POSITION)
     atlas.paste(template.crop((0, height, width, height * 2)), BACK_HOVER_POSITION)
+
+
+def clear_developer_labels(
+    atlas: Image.Image,
+    alpha_templates: tuple[Image.Image, Image.Image],
+) -> None:
+    left, top, right, bottom = DEVELOPER_LABEL_BOX
+    pixels = atlas.load()
+    for (card_x, card_y), alpha_template in zip(DEVELOPER_CARD_POSITIONS, alpha_templates):
+        alpha = alpha_template.load()
+        for relative_y in range(top, bottom):
+            for relative_x in range(left, right):
+                x = card_x + relative_x
+                y = card_y + relative_y
+                if alpha[relative_x, relative_y] == 0:
+                    pixels[x, y] = (0, 0, 0, 0)
+                elif pixels[x, y] in DEVELOPER_TEXT_COLORS:
+                    pixels[x, y] = DEVELOPER_BACKGROUND
 
 
 def validate_back_template(atlas: Image.Image, template: Image.Image, spec: TitleButtons) -> None:
@@ -181,6 +217,7 @@ def main() -> None:
     parser.add_argument("--labels", type=Path, required=True)
     parser.add_argument("--back-template", type=Path, required=True)
     parser.add_argument("--back-labels", type=Path, required=True)
+    parser.add_argument("--developer-labels", type=Path, required=True)
     parser.add_argument("--preview", type=Path)
     parser.add_argument("--labeled-preview", type=Path)
     args = parser.parse_args()
@@ -201,8 +238,25 @@ def main() -> None:
         raise ValueError(
             f"Unexpected back-label sheet size: {back_label_sheet.size}; expected {expected_back_size}"
         )
+    developer_label_sheet = Image.open(args.developer_labels).convert("RGBA")
+    expected_developer_size = (
+        RUNTIME_DEVELOPER_SIZE[0],
+        RUNTIME_DEVELOPER_SIZE[1] * len(BUTTONS),
+    )
+    if developer_label_sheet.size != expected_developer_size:
+        raise ValueError(
+            f"Unexpected developer-label sheet size: {developer_label_sheet.size}; "
+            f"expected {expected_developer_size}"
+        )
 
     args.overlays.mkdir(parents=True, exist_ok=True)
+    developer_shape_source = Image.open(
+        args.assets / "TitleButtons-romanian.png"
+    ).convert("RGBA")
+    developer_alpha_templates = tuple(
+        developer_shape_source.crop((x, y, x + 111, y + 60)).getchannel("A")
+        for x, y in DEVELOPER_CARD_POSITIONS
+    )
     atlases: list[Image.Image] = []
     overlays: list[Image.Image] = []
     for index, spec in enumerate(BUTTONS):
@@ -226,11 +280,27 @@ def main() -> None:
             optimize=False,
         )
 
+        developer_overlay = developer_label_sheet.crop(
+            (
+                0,
+                index * RUNTIME_DEVELOPER_SIZE[1],
+                RUNTIME_DEVELOPER_SIZE[0],
+                (index + 1) * RUNTIME_DEVELOPER_SIZE[1],
+            )
+        )
+        validate_developer_overlay(developer_overlay, spec)
+        developer_overlay.save(
+            args.overlays / f"TitleDeveloper-{spec.slug}.png",
+            format="PNG",
+            optimize=False,
+        )
+
         path = args.assets / spec.filename
         source = Image.open(path).convert("RGBA")
         atlas = source.copy()
         atlas.paste(template, STRIP_POSITION)
         clear_back_label(atlas, back_template)
+        clear_developer_labels(atlas, developer_alpha_templates)
         validate_atlas(atlas, template, spec)
         validate_back_template(atlas, back_template, spec)
         atlas.save(path, format="PNG", optimize=False)

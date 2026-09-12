@@ -35,8 +35,10 @@ public sealed class ModEntry : Mod
     private static IMonitor? ModMonitor;
     private static bool LoggedTitleOverlay;
     private static bool LoggedBackOverlay;
+    private static bool LoggedDeveloperOverlay;
     private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleBackOverlayTextures = new(StringComparer.Ordinal);
+    private static readonly Dictionary<string, Texture2D> TitleDeveloperOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, string> TitleOverlayFiles = new(StringComparer.Ordinal)
     {
         ["ru-vnrevival"] = "russian",
@@ -65,6 +67,9 @@ public sealed class ModEntry : Mod
     private const int TitleOverlayHeight = 174;
     private const int TitleBackOverlayWidth = 264;
     private const int TitleBackOverlayHeight = 108;
+    private const int TitleDeveloperOverlayWidth = 333;
+    private const int TitleDeveloperOverlayHeight = 180;
+    private const float TitleDeveloperReferenceZoom = 3f;
 
     public override void Entry(IModHelper helper)
     {
@@ -146,9 +151,12 @@ public sealed class ModEntry : Mod
         string? languageCode = LocalizedContentManager.CurrentModLanguage?.LanguageCode;
         if (languageCode is null
             || !TitleOverlayFiles.TryGetValue(languageCode, out string? slug)
-            || ModHelper is null
-            || __instance.fadeFromWhiteTimer > 0
-            || !__instance.titleInPosition)
+            || ModHelper is null)
+            return;
+
+        DrawDeveloperOverlay(__instance, b, languageCode, slug);
+
+        if (__instance.fadeFromWhiteTimer > 0 || !__instance.titleInPosition)
             return;
 
         IClickableMenu? subMenu = TitleMenu.subMenu;
@@ -250,6 +258,55 @@ public sealed class ModEntry : Mod
             }
         }
 
+    }
+
+    private static void DrawDeveloperOverlay(
+        TitleMenu menu,
+        SpriteBatch spriteBatch,
+        string languageCode,
+        string slug
+    )
+    {
+        if (menu.logoFadeTimer <= 0 || menu.specialSurprised || ModHelper is null)
+            return;
+
+        if (!TitleDeveloperOverlayTextures.TryGetValue(languageCode, out Texture2D? overlay))
+        {
+            overlay = ModHelper.ModContent.Load<Texture2D>($"title-overlays/TitleDeveloper-{slug}.png");
+            TitleDeveloperOverlayTextures[languageCode] = overlay;
+        }
+
+        float alpha;
+        if (menu.logoFadeTimer < 500)
+            alpha = menu.logoFadeTimer / 500f;
+        else if (menu.logoFadeTimer > 4500)
+            alpha = 1f - (menu.logoFadeTimer - 4500) / 500f;
+        else
+            alpha = 1f;
+
+        float overlayScale = TitleMenu.pixelZoom / TitleDeveloperReferenceZoom;
+        spriteBatch.Draw(
+            overlay,
+            new Vector2(menu.width / 2f, menu.height / 2f - 30f * TitleMenu.pixelZoom),
+            null,
+            Color.White * Math.Clamp(alpha, 0f, 1f),
+            0f,
+            Vector2.Zero,
+            overlayScale,
+            SpriteEffects.None,
+            0.2f
+        );
+
+        if (!LoggedDeveloperOverlay)
+        {
+            ModMonitor?.Log(
+                $"Readable developer-card label enabled for {languageCode}; "
+                + $"overlay {TitleDeveloperOverlayWidth}x{TitleDeveloperOverlayHeight}, "
+                + $"zoom {TitleMenu.pixelZoom}, scale {overlayScale:0.###}.",
+                LogLevel.Trace
+            );
+            LoggedDeveloperOverlay = true;
+        }
     }
 
     private static bool IsTextParameter(ParameterInfo parameter)

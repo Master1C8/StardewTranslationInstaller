@@ -11,4 +11,5 @@ assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/a
   --template "$project_root/Scripts/assets/title-button-template.png" \
   --labels "$project_root/Scripts/assets/title-button-labels.png" \
   --back-template "$project_root/Scripts/assets/title-back-template.png" \
-  --back-labels "$project_root/Scripts/assets/title-back-labels.png" "$@"
+  --back-labels "$project_root/Scripts/assets/title-back-labels.png" \
+  --developer-labels "$project_root/Scripts/assets/title-developer-labels.png" "$@"

@@ -76,3 +76,19 @@ cjk_font=$(./Scripts/fetch-cubic-11-font.sh)
   --font '/System/Library/Fonts/Supplemental/Arial Unicode.ttf' \
   --cjk-font "$cjk_font"
 ```
+
+`title-developer-labels.png` contains readable screen-resolution labels for the
+animated ConcernedApe card shown before the title menu. The switcher covers only
+the tiny localized heading baked into `Minigames/TitleButtons`; the original
+card, animation, and `ConcernedApe` wordmark remain unchanged. Regenerate it with:
+
+```sh
+renderer=/private/tmp/stardew-render-shaped-text
+cjk_font=$(./Scripts/fetch-cubic-11-font.sh)
+/usr/bin/swiftc Scripts/render-shaped-text.swift -o "$renderer"
+/usr/bin/python3 Scripts/generate-title-developer-labels.py \
+  Scripts/assets/title-developer-labels.png \
+  --renderer "$renderer" \
+  --font '/System/Library/Fonts/Supplemental/Arial Unicode.ttf' \
+  --cjk-font "$cjk_font"
+```

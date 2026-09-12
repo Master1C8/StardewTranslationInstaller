@@ -7,9 +7,11 @@ xnbcli=${XNBCLI:-${HOME}/Developer/tools/xnbcli/xnbcli}
 if [[ -n "${VN_TRADITIONAL_CHINESE_FONT:-}" ]]; then
   font_file=$VN_TRADITIONAL_CHINESE_FONT
 else
-  font_file=$("$script_dir/fetch-noto-sans-cjk-tc-font.sh")
+  font_file=$("$script_dir/fetch-noto-sans-cjk-tc-font.sh" Regular)
 fi
 font_name=${VN_TRADITIONAL_CHINESE_FONT_NAME:-NotoSansCJKtc-Regular}
+bitmap_font_file=${VN_TRADITIONAL_CHINESE_BITMAP_FONT:-$("$script_dir/fetch-noto-sans-cjk-tc-font.sh" Light)}
+bitmap_font_face=${VN_TRADITIONAL_CHINESE_BITMAP_FONT_NAME:-NotoSansCJKtc-Light}
 font_assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/fonts/traditional-chinese"
 translations="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/traditional-chinese"
 temp_root=$(/usr/bin/mktemp -d /private/tmp/stardew-zh-tw-fonts.XXXXXX)
@@ -23,6 +25,8 @@ trap '/bin/rm -rf "$temp_root"' EXIT
 SWIFT_MODULECACHE_PATH=/private/tmp/stardew-swift-module-cache \
 CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
 VN_FONT_NAME="$font_name" \
+VN_BITMAP_FONT_FILE="$bitmap_font_file" \
+VN_BITMAP_FONT_FACE="$bitmap_font_face" \
 VN_GENERATE_BITMAP_FONT=1 \
 VN_BITMAP_FONT_NAME=ChineseTraditional \
 VN_SPRITEFONT_ATLAS_SIZE=4096 \
@@ -30,9 +34,9 @@ VN_SMALLFONT_ATLAS_SIZE=2048 \
 VN_BITMAP_FONT_ATLAS_SIZE=2048 \
 VN_SPRITEFONT_SIZE=36 \
 VN_SMALLFONT_SIZE=24 \
-VN_BITMAP_FONT_SIZE=32 \
-VN_BITMAP_FONT_LINE_HEIGHT=33 \
-VN_BITMAP_FONT_BASE=26 \
+VN_BITMAP_FONT_SIZE=16 \
+VN_BITMAP_FONT_LINE_HEIGHT=18 \
+VN_BITMAP_FONT_BASE=14 \
 VN_BITMAP_FONT_ANTIALIAS=1 \
 /usr/bin/swift "$project_root/Scripts/generate-amharic-fonts.swift" \
   "$temp_root/base-unpacked" \

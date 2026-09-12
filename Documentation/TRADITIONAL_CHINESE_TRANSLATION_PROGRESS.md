@@ -32,7 +32,7 @@ Canonical working copy: `/Users/antonkrutov/Desktop/StardewTranslationInstaller`
 - Editorial batches: 310
 - Traditional Chinese patch files integrated into `ModPayload`: 151 / 151
 - Runtime configuration integrated: yes
-- XNB fonts built and round-trip verified: yes (3,307 required glyphs; dialogue bitmap matches the game's native CJK metrics at 32 px / 33 px line height)
+- XNB fonts built and round-trip verified: yes (3,307 required glyphs; the dialogue bitmap uses a dedicated antialiased Light face at the game's custom-language 16 px / 18 px layout size)
 - Static language and title labels built and verified: yes
 - Final full translation audits: 2 / 2 (14,720 / 14,720 records, 0 errors, 0 warnings on both passes)
 - Batch and editorial replay: idempotent (310 / 310 batches changed 0 records)

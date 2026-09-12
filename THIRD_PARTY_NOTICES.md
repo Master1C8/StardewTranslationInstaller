@@ -35,11 +35,12 @@ from this font.
 
 - Project: https://github.com/notofonts/noto-cjk
 - Release: https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004
-- Variant: Noto Sans CJK Traditional Chinese Regular (`NotoSansCJKtc-Regular`)
+- Variants: Noto Sans CJK Traditional Chinese Regular and Light
 - License: SIL Open Font License 1.1
-- Font SHA-256: `dce08bd4fd91aa8aa76ed8fea4b694c2dfb8550f67871e326843212ddbeb88b4`
+- Regular font SHA-256: `dce08bd4fd91aa8aa76ed8fea4b694c2dfb8550f67871e326843212ddbeb88b4`
+- Light font SHA-256: `a49db53f6aac529d91a036606e55d68e2ab1df1360f507504ac4ff2cbb0f9407`
 
 The pinned font is downloaded only when rebuilding the Traditional Chinese
-runtime fonts. The distributed XNB assets contain rasterized glyphs derived
-from this font at native 36, 24, and 32 pixel sizes so complex ideographs
-remain legible.
+runtime fonts. The distributed XNB assets use Regular at 36 and 24 pixels,
+plus an antialiased Light face at the custom-language 16-pixel layout size so
+complex ideographs remain legible without changing the interface scale.

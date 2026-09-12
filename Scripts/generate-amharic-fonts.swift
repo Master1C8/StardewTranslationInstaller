@@ -567,6 +567,25 @@ do {
         throw GeneratorError.missingFont
     }
 
+    var bitmapFontFace = fontName
+    if let bitmapFontPath = ProcessInfo.processInfo.environment["VN_BITMAP_FONT_FILE"] {
+        let bitmapFontURL = URL(fileURLWithPath: bitmapFontPath)
+        var bitmapRegistrationError: Unmanaged<CFError>?
+        _ = CTFontManagerRegisterFontsForURL(bitmapFontURL as CFURL, .process, &bitmapRegistrationError)
+        guard let bitmapDescriptors = CTFontManagerCreateFontDescriptorsFromURL(bitmapFontURL as CFURL) as? [CTFontDescriptor] else {
+            throw GeneratorError.missingFont
+        }
+        let bitmapFontNames = bitmapDescriptors.compactMap {
+            CTFontDescriptorCopyAttribute($0, kCTFontNameAttribute) as? String
+        }
+        bitmapFontFace = ProcessInfo.processInfo.environment["VN_BITMAP_FONT_FACE"]
+            ?? bitmapFontNames.first
+            ?? fontName
+        guard bitmapFontNames.contains(bitmapFontFace) else {
+            throw GeneratorError.missingFont
+        }
+    }
+
     var requiredCharacters = Set<String>()
     // Save slots keep player/farm names across language switches. Include the
     // character inventory of every language in the unified pack, plus the
@@ -646,7 +665,7 @@ do {
             atlasSize: bitmapAtlasSize,
             outputDirectory: outputDirectory,
             requiredCharacters: requiredCharacters,
-            fontName: fontName,
+            fontName: bitmapFontFace,
             renderTextByCharacter: renderTextByCharacter
         )
     }

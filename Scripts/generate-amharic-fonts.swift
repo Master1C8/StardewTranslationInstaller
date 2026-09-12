@@ -117,7 +117,13 @@ func alphaBounds(of bitmap: NSBitmapImageRep) -> CGRect? {
     return CGRect(x: minX, y: minY, width: maxX - minX + 1, height: maxY - minY + 1)
 }
 
-func renderGlyph(_ character: String, index: Int, font: NSFont, lineHeight: Int) throws -> GlyphBitmap {
+func renderGlyph(
+    _ character: String,
+    index: Int,
+    font: NSFont,
+    lineHeight: Int,
+    antialias: Bool = true
+) throws -> GlyphBitmap {
     if character.unicodeScalars.allSatisfy({ $0.properties.generalCategory == .format }) {
         guard let bitmap = NSBitmapImageRep(
             bitmapDataPlanes: nil,
@@ -157,6 +163,13 @@ func renderGlyph(_ character: String, index: Int, font: NSFont, lineHeight: Int)
         throw GeneratorError.renderFailed(character)
     }
     NSGraphicsContext.current = context
+    // Disable smoothing before rasterization for pixel faces. Thresholding an
+    // antialiased glyph afterward expands its edge pixels and makes it bold.
+    context.shouldAntialias = antialias
+    context.cgContext.setAllowsAntialiasing(antialias)
+    context.cgContext.setShouldAntialias(antialias)
+    context.cgContext.setAllowsFontSmoothing(antialias)
+    context.cgContext.setShouldSmoothFonts(antialias)
     NSColor.clear.setFill()
     NSRect(x: 0, y: 0, width: canvasWidth, height: canvasHeight).fill()
     (character as NSString).draw(
@@ -482,7 +495,13 @@ func processBmFont(
         if renderFont.fontName != font.fontName {
             fallbackCharacters.append(character)
         }
-        let glyph = try renderGlyph(renderedText, index: index, font: renderFont, lineHeight: lineHeight)
+        let glyph = try renderGlyph(
+            renderedText,
+            index: index,
+            font: renderFont,
+            lineHeight: lineHeight,
+            antialias: antialias
+        )
         bitmaps.append(GlyphBitmap(index: index, character: character, image: glyph.image))
         advances[index] = max(1, Int(ceil((renderedText as NSString).size(withAttributes: [.font: renderFont]).width)))
         yOffsets[index] = max(0, (lineHeight - glyph.image.height) / 2)

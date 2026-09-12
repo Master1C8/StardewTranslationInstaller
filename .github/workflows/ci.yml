@@ -29,5 +29,16 @@ jobs:
       - name: Audit package structure and JSON
         run: node Scripts/audit-release-structure.mjs
 
+      - name: Verify compressed XNB assets
+        run: ./Scripts/compress-xnb-fonts.swift --verify
+
+      - name: Verify generated Content Patcher root
+        run: |
+          node Scripts/generate-unified-content.mjs
+          git diff --exit-code -- Sources/StardewTranslationInstaller/Resources/ModPayload/content.json
+
+      - name: Check release shell scripts
+        run: bash -n Scripts/audit-locale-data.sh Scripts/release-audit.sh Scripts/run-hebrew-rtl-probe.sh Scripts/run-language-switcher-probe.sh
+
       - name: Run installer tests
         run: swift test --disable-sandbox

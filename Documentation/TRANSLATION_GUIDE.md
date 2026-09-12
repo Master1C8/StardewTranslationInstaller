@@ -75,21 +75,34 @@ Stardew Valley/Contents/MacOS/Mods/[CP] VN Revival Languages/
 
 Каждая английская запись содержит стабильный `id`, `priority`, `term`, пояснение `meaning`, категорию и необязательную точную ссылку на источник. Каждый переводной слой сопоставляет тот же `id` с полями `term` и `meaning`. Стабильные ID нельзя менять после появления переводов.
 
-В репозитории сохранены рабочие снимки для активных и незавершённых пакетов:
+В репозитории сохранены рабочие снимки для 19 активных языков единого пакета:
 
 ```text
 Documentation/glossary/glossary.en.json
 Documentation/glossary/glossary.ru.json
+Documentation/glossary/glossary.sr.json
 Documentation/glossary/glossary.pl.json
-Documentation/glossary/glossary.ar.json
-Documentation/glossary/glossary.zh-TW.json
-Documentation/glossary/glossary.th.json
+Documentation/glossary/glossary.uk.json
 Documentation/glossary/glossary.vi.json
-Documentation/glossary/glossary.id.json
-Documentation/glossary/glossary.fa.json
-Documentation/glossary/glossary.hi.json
 Documentation/glossary/glossary.sw.json
+Documentation/glossary/glossary.fa.json
+Documentation/glossary/glossary.ar.json
+Documentation/glossary/glossary.id.json
+Documentation/glossary/glossary.fil.json
+Documentation/glossary/glossary.nl.json
+Documentation/glossary/glossary.hi.json
+Documentation/glossary/glossary.zh-TW.json
+Documentation/glossary/glossary.ro.json
+Documentation/glossary/glossary.he.json
+Documentation/glossary/glossary.bg.json
+Documentation/glossary/glossary.th.json
+Documentation/glossary/glossary.el.json
+Documentation/glossary/glossary.cs.json
 ```
+
+Снимки `am`, `bn`, `kn`, `ml`, `mr`, `my`, `ta`, `te`, `ur` и `uz` сохранены
+только как архив незавершённых или выведенных из сборки пакетов. Они не входят в
+`languageCodes` и не являются активными редакторскими слоями текущего выпуска.
 
 В английском снимке 673 записи, и каждый переводной снимок содержит ровно 673 соответствия внутри объекта своей локали. У термина без подходящей конкретной страницы `sourceUrl` намеренно отсутствует; общую статью нельзя подставлять вместо точного источника.
 

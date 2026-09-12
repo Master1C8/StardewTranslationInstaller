@@ -29,10 +29,21 @@ struct ContentView: View {
                 Text(state.phaseTitle)
                     .font(.system(size: 27, weight: .bold, design: .rounded))
                     .multilineTextAlignment(.center)
-                Text(state.message)
-                    .foregroundStyle(state.phase == .failed ? Color.red : Color.secondary)
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: 380)
+                if state.phase == .failed {
+                    ScrollView {
+                        Text(state.message)
+                            .foregroundStyle(Color.red)
+                            .multilineTextAlignment(.leading)
+                            .textSelection(.enabled)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .frame(maxWidth: 380, maxHeight: 105)
+                } else {
+                    Text(state.message)
+                        .foregroundStyle(Color.secondary)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: 380)
+                }
             }
 
             if state.phase == .preparing || state.phase == .installing {

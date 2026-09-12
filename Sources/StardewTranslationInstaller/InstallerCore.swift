@@ -49,6 +49,7 @@ enum InstallerError: LocalizedError {
     case missingPayload
     case packageMismatch
     case foreignFolder(URL)
+    case duplicateMod(String, [URL])
     case malformedManifest(URL)
 
     var errorDescription: String? {
@@ -63,6 +64,9 @@ enum InstallerError: LocalizedError {
             return "The language configuration does not match the translation package."
         case .foreignFolder(let url):
             return "The \(url.lastPathComponent) folder belongs to another mod and will not be overwritten."
+        case .duplicateMod(let uniqueID, let folders):
+            let names = folders.map(\.lastPathComponent).joined(separator: ", ")
+            return "Multiple copies of \(uniqueID) were found in Mods: \(names). Remove the duplicate and try again."
         case .malformedManifest(let url):
             return "Could not validate manifest.json in \(url.path)."
         }
@@ -116,16 +120,14 @@ struct InstallerCore {
         let smapiFound = installedSMAPIVersion(in: installation).map {
             $0 >= SemanticVersion(Self.minimumSMAPIVersion)!
         } ?? false
-        let contentPatcher = installation.modsDirectory.appendingPathComponent(
-            "ContentPatcher",
-            isDirectory: true
+        let contentPatcherFolders = modFolders(
+            withUniqueID: "Pathoschild.ContentPatcher",
+            below: installation.modsDirectory
         )
-        let contentPatcherFound = folderHasUniqueID(
-            contentPatcher,
-            uniqueID: "Pathoschild.ContentPatcher"
-        ) && manifestVersion(in: contentPatcher).map {
-            $0 >= SemanticVersion(Self.minimumContentPatcherVersion)!
-        } ?? false
+        let contentPatcherFound = contentPatcherFolders.count == 1
+            && (manifestVersion(in: contentPatcherFolders[0]).map {
+                $0 >= SemanticVersion(Self.minimumContentPatcherVersion)!
+            } ?? false)
         return InstallationStatus(
             gameFound: true,
             smapiFound: smapiFound,
@@ -163,10 +165,20 @@ struct InstallerCore {
     }
 
     func installContentPatcher(payload: URL, into installation: GameInstallation) throws {
-        let destination = installation.modsDirectory.appendingPathComponent("ContentPatcher", isDirectory: true)
         guard folderHasUniqueID(payload, uniqueID: "Pathoschild.ContentPatcher") else {
             throw InstallerError.malformedManifest(payload)
         }
+        let existing = modFolders(
+            withUniqueID: "Pathoschild.ContentPatcher",
+            below: installation.modsDirectory
+        )
+        guard existing.count <= 1 else {
+            throw InstallerError.duplicateMod("Pathoschild.ContentPatcher", existing)
+        }
+        let destination = existing.first ?? installation.modsDirectory.appendingPathComponent(
+            "ContentPatcher",
+            isDirectory: true
+        )
         try replaceOwnedFolder(
             payload: payload,
             destination: destination,
@@ -206,6 +218,18 @@ struct InstallerCore {
             return false
         }
         return foundID == uniqueID
+    }
+
+    func modFolders(withUniqueID uniqueID: String, below modsDirectory: URL) -> [URL] {
+        guard let entries = try? fileManager.contentsOfDirectory(
+            at: modsDirectory,
+            includingPropertiesForKeys: [.isDirectoryKey],
+            options: [.skipsHiddenFiles]
+        ) else { return [] }
+        return entries.filter { folder in
+            let values = try? folder.resourceValues(forKeys: [.isDirectoryKey])
+            return values?.isDirectory == true && folderHasUniqueID(folder, uniqueID: uniqueID)
+        }.sorted { $0.lastPathComponent.localizedStandardCompare($1.lastPathComponent) == .orderedAscending }
     }
 
     func payloadHasLanguageCode(_ folder: URL, languageCode: String) -> Bool {

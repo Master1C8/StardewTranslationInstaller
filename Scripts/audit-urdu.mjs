@@ -434,7 +434,7 @@ if (release) {
     ButtonTexture: `Mods/{{ModId}}/Button${releaseConfig.suffix}`,
     UseLatinFont: false,
     FontFile: `Fonts/${releaseConfig.suffix}`,
-    FontPixelZoom: 3,
+    FontPixelZoom: 1,
     TimeFormat: "[HOURS_24_00]:[MINUTES]",
     ClockTimeFormat: "[HOURS_24_00]:[MINUTES]",
     ClockDateFormat: "[DAY_OF_MONTH] [DAY_OF_WEEK]",

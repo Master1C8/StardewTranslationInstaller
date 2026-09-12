@@ -91,6 +91,18 @@ def tint_overlay(overlay: Image.Image, color: tuple[int, int, int, int]) -> Imag
     return tinted
 
 
+def save_if_pixels_changed(image: Image.Image, output: Path, check: bool = False) -> None:
+    """Preserve canonical PNG bytes when a newer Pillow encoder changes only compression."""
+    if output.exists():
+        with Image.open(output) as source:
+            existing = source.convert(image.mode)
+        if existing.size == image.size and ImageChops.difference(existing, image).getbbox() is None:
+            return
+    if check:
+        raise ValueError(f"Generated image differs from the canonical asset: {output}")
+    image.save(output, format="PNG", optimize=False)
+
+
 def compose_state(atlas: Image.Image, overlay: Image.Image, state: int) -> Image.Image:
     state_top = STRIP_POSITION[1] + state * FRAME_HEIGHT
     strip = atlas.crop((0, state_top, FRAME_WIDTH, state_top + FRAME_HEIGHT))
@@ -106,7 +118,8 @@ def validate_overlay(overlay: Image.Image, spec: TitleButtons) -> None:
     for column in range(4):
         cell = alpha.crop((column * RUNTIME_BUTTON_WIDTH, 0, (column + 1) * RUNTIME_BUTTON_WIDTH, RUNTIME_FRAME_SIZE[1]))
         bounds = cell.getbbox()
-        if bounds is None or sum(1 for value in cell.getdata() if value >= 24) < 100:
+        pixels = cell.get_flattened_data() if hasattr(cell, "get_flattened_data") else cell.getdata()
+        if bounds is None or sum(1 for value in pixels if value >= 24) < 100:
             raise ValueError(f"Missing title label {column + 1} for {spec.locale}")
         if bounds[0] < 5 or bounds[2] > RUNTIME_BUTTON_WIDTH - 5:
             raise ValueError(f"Title label {column + 1} touches its frame for {spec.locale}: {bounds}")
@@ -220,6 +233,7 @@ def main() -> None:
     parser.add_argument("--developer-labels", type=Path, required=True)
     parser.add_argument("--preview", type=Path)
     parser.add_argument("--labeled-preview", type=Path)
+    parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
 
     template = Image.open(args.template).convert("RGBA")
@@ -263,7 +277,7 @@ def main() -> None:
         overlay = label_sheet.crop((0, index * RUNTIME_FRAME_SIZE[1], RUNTIME_FRAME_SIZE[0], (index + 1) * RUNTIME_FRAME_SIZE[1]))
         overlay = offset_overlay(overlay, TITLE_VERTICAL_OFFSETS.get(spec.slug, 0))
         validate_overlay(overlay, spec)
-        overlay.save(args.overlays / f"TitleLabels-{spec.slug}.png", format="PNG", optimize=False)
+        save_if_pixels_changed(overlay, args.overlays / f"TitleLabels-{spec.slug}.png", args.check)
 
         back_overlay = back_label_sheet.crop(
             (
@@ -274,11 +288,7 @@ def main() -> None:
             )
         )
         validate_back_overlay(back_overlay, spec)
-        back_overlay.save(
-            args.overlays / f"TitleBack-{spec.slug}.png",
-            format="PNG",
-            optimize=False,
-        )
+        save_if_pixels_changed(back_overlay, args.overlays / f"TitleBack-{spec.slug}.png", args.check)
 
         developer_overlay = developer_label_sheet.crop(
             (
@@ -289,10 +299,10 @@ def main() -> None:
             )
         )
         validate_developer_overlay(developer_overlay, spec)
-        developer_overlay.save(
+        save_if_pixels_changed(
+            developer_overlay,
             args.overlays / f"TitleDeveloper-{spec.slug}.png",
-            format="PNG",
-            optimize=False,
+            args.check,
         )
 
         path = args.assets / spec.filename
@@ -303,7 +313,7 @@ def main() -> None:
         clear_developer_labels(atlas, developer_alpha_templates)
         validate_atlas(atlas, template, spec)
         validate_back_template(atlas, back_template, spec)
-        atlas.save(path, format="PNG", optimize=False)
+        save_if_pixels_changed(atlas, path, args.check)
         atlases.append(atlas)
         overlays.append(overlay)
 

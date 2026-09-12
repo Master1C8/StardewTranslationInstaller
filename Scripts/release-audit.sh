@@ -8,15 +8,17 @@ export DEVELOPER_DIR="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Develope
 export CLANG_MODULE_CACHE_PATH="${CLANG_MODULE_CACHE_PATH:-/private/tmp/stardew-installer-swift-cache}"
 export SWIFT_MODULECACHE_PATH="${SWIFT_MODULECACHE_PATH:-$CLANG_MODULE_CACHE_PATH}"
 export SWIFTPM_MODULECACHE_OVERRIDE="${SWIFTPM_MODULECACHE_OVERRIDE:-$CLANG_MODULE_CACHE_PATH}"
-python_bin="${PYTHON_BIN:-python3}"
+python_bin="${PYTHON_BIN:-$project_root/.venv/bin/python}"
 
-node Scripts/audit-release-structure.mjs
+PYTHON_BIN="$python_bin" ./Scripts/audit-locale-data.sh
+./Scripts/build-title-buttons.sh --check
 ./Scripts/compress-xnb-fonts.swift --verify
 swift test --disable-sandbox
 node Scripts/audit-character-creation-layout.mjs
 node Scripts/audit-bitmap-font-coverage.mjs
 ./Scripts/build-language-switcher.sh
 ./Scripts/run-hebrew-rtl-probe.sh
+./Scripts/run-language-switcher-probe.sh
 "$python_bin" Scripts/greek-runtime-probe.py
 "$python_bin" Scripts/check-bulgarian-runtime.py
 ./Scripts/build-app.sh
@@ -24,4 +26,4 @@ codesign --verify --deep --strict "dist/Stardew Translation Installer.app"
 lipo "dist/Stardew Translation Installer.app/Contents/MacOS/Stardew Translation Installer" \
   -verify_arch arm64 x86_64
 
-echo "Technical release audit passed. Locale editorial and glossary gates remain separate mandatory checks."
+echo "Technical release audit passed. Glossary publication and live visual gates remain separate mandatory checks."

@@ -29,11 +29,18 @@ enum DependencyError: LocalizedError {
         case .archiveLayout(let name):
             return "The \(name) archive does not contain the expected files."
         case .commandFailed(let name, let code, let output):
-            let details = output.trimmingCharacters(in: .whitespacesAndNewlines)
+            let details = Self.boundedDetails(output)
             return "\(name) exited with code \(code).\(details.isEmpty ? "" : "\n\(details)")"
         case .installationDidNotComplete(let name):
             return "\(name) was not found in the game folder after installation."
         }
+    }
+
+    private static func boundedDetails(_ output: String) -> String {
+        let details = output.trimmingCharacters(in: .whitespacesAndNewlines)
+        let limit = 800
+        guard details.count > limit else { return details }
+        return "\(details.prefix(limit))\n… Output truncated."
     }
 }
 

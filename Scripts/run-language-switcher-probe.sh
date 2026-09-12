@@ -4,7 +4,7 @@ set -euo pipefail
 project_root="$(cd "$(dirname "$0")/.." && pwd)"
 game_path="${STARDEW_GAME_PATH:-${STARDREW_GAME_PATH:-$HOME/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS}}"
 csc_bin="${CSC_BIN:-csc}"
-probe_dir="$(mktemp -d "${TMPDIR:-/tmp}/vnrevival-hebrew-probe.XXXXXX")"
+probe_dir="$(mktemp -d "${TMPDIR:-/tmp}/vnrevival-language-switcher-probe.XXXXXX")"
 trap 'rm -rf "$probe_dir"' EXIT
 
 if ! command -v "$csc_bin" >/dev/null 2>&1; then
@@ -24,7 +24,8 @@ for directory in "$game_path" "$game_path/smapi-internal"; do
     fi
   done < <(find "$directory" -maxdepth 1 -type f -name '*.dll' -print0)
 done
-references+=("-r:$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/VNRevival.LanguageSwitcher.dll")
+payload="$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload"
+references+=("-r:$payload/VNRevival.LanguageSwitcher.dll")
 
 "$csc_bin" \
   -noconfig \
@@ -32,33 +33,36 @@ references+=("-r:$project_root/Sources/StardewTranslationInstaller/Resources/Lan
   -nullable:enable \
   -langversion:9.0 \
   -target:exe \
-  -out:"$probe_dir/HebrewProbe.dll" \
+  -out:"$probe_dir/LSProbe.dll" \
   "${references[@]}" \
-  "$project_root/Tools/VNRevivalHebrewProbe/Program.cs"
+  "$project_root/Tools/VNRevivalLanguageSwitcherProbe/Program.cs"
 
 find "$game_path" -maxdepth 1 -type f -exec ln -s '{}' "$probe_dir/" \;
-ln -s "$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/VNRevival.LanguageSwitcher.dll" \
-  "$probe_dir/VNRevival.LanguageSwitcher.dll"
-cp "$game_path/StardewModdingAPI" "$probe_dir/HebrewProbe"
-cp "$game_path/StardewModdingAPI.runtimeconfig.json" "$probe_dir/HebrewProbe.runtimeconfig.json"
-cp "$game_path/StardewModdingAPI.deps.json" "$probe_dir/HebrewProbe.deps.json"
+ln -s "$payload/VNRevival.LanguageSwitcher.dll" "$probe_dir/VNRevival.LanguageSwitcher.dll"
+cp "$game_path/StardewModdingAPI" "$probe_dir/LanguageSwitcherProbe"
+cp "$game_path/StardewModdingAPI.runtimeconfig.json" "$probe_dir/LSProbe.runtimeconfig.json"
+cp "$game_path/StardewModdingAPI.deps.json" "$probe_dir/LSProbe.deps.json"
+
 python3 -c 'import json, sys
-path, manifest_path = sys.argv[1:]
-with open(path, encoding="utf-8") as stream: document = json.load(stream)
+deps_path, manifest_path = sys.argv[1:]
+with open(deps_path, encoding="utf-8") as stream: document = json.load(stream)
 with open(manifest_path, encoding="utf-8") as stream: manifest = json.load(stream)
 target = document["runtimeTarget"]["name"]
 version = manifest["Version"]
 identity = f"VNRevival.LanguageSwitcher/{version}"
 document["targets"][target][identity] = {"runtime": {"VNRevival.LanguageSwitcher.dll": {}}}
 document["libraries"][identity] = {"type": "reference", "serviceable": False, "sha512": ""}
-with open(path, "w", encoding="utf-8") as stream: json.dump(document, stream, separators=(",", ":"))' \
-  "$probe_dir/HebrewProbe.deps.json" \
-  "$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/manifest.json"
+with open(deps_path, "w", encoding="utf-8") as stream: json.dump(document, stream, separators=(",", ":"))' \
+  "$probe_dir/LSProbe.deps.json" \
+  "$payload/manifest.json"
 
 python3 -c 'from pathlib import Path; import sys
 p = Path(sys.argv[1]); data = p.read_bytes()
-old = b"StardewModdingAPI.dll"; new = b"HebrewProbe.dll" + b"\0" * 6
-assert len(old) == len(new) and data.count(old) == 1
-p.write_bytes(data.replace(old, new))' "$probe_dir/HebrewProbe"
+old = b"StardewModdingAPI.dll"; new = b"LSProbe.dll"
+assert len(new) <= len(old) and data.count(old) == 1
+p.write_bytes(data.replace(old, new + b"\0" * (len(old) - len(new))))' \
+  "$probe_dir/LanguageSwitcherProbe"
 
-"$probe_dir/HebrewProbe"
+"$probe_dir/LanguageSwitcherProbe" \
+  "$payload/persian-shaping-map.json" \
+  "$payload/arabic-shaping-map.json"

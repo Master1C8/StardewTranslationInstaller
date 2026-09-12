@@ -855,6 +855,13 @@ struct InstallerCoreTests {
         )
     }
 
+    @Test func testBoundsExternalCommandFailureDetails() throws {
+        let error = DependencyError.commandFailed("SMAPI installer", 1, String(repeating: "x", count: 5_000))
+        let description = try require(error.errorDescription)
+        expect(description.count < 900)
+        expect(description.hasSuffix("… Output truncated."))
+    }
+
     @Test func testDependencyStatusRequiresPinnedMinimumVersions() throws {
         let fm = FileManager.default
         let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
@@ -884,6 +891,60 @@ struct InstallerCoreTests {
         try Data("metadata 4.5.1+abcdef0123456789 SMAPI".utf8)
             .write(to: executable.appendingPathComponent("StardewModdingAPI.dll"))
         expect(!core.status(for: installation).smapiFound)
+    }
+
+    @Test func testFindsAndUpdatesRenamedContentPatcherFolderWithoutCreatingDuplicate() throws {
+        let fm = FileManager.default
+        let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
+        defer { try? fm.removeItem(at: temporary) }
+        let executable = temporary.appendingPathComponent("Contents/MacOS", isDirectory: true)
+        let mods = executable.appendingPathComponent("Mods", isDirectory: true)
+        let renamed = mods.appendingPathComponent("Content Patcher 2.9", isDirectory: true)
+        try fm.createDirectory(at: renamed, withIntermediateDirectories: true)
+        try Data().write(to: executable.appendingPathComponent("Stardew Valley.dll"))
+        try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.0"}"#
+            .data(using: .utf8)!.write(to: renamed.appendingPathComponent("manifest.json"))
+
+        let payload = temporary.appendingPathComponent("ContentPatcherPayload", isDirectory: true)
+        try fm.createDirectory(at: payload, withIntermediateDirectories: true)
+        try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.1"}"#
+            .data(using: .utf8)!.write(to: payload.appendingPathComponent("manifest.json"))
+        try Data("payload".utf8).write(to: payload.appendingPathComponent("ContentPatcher.dll"))
+
+        let core = InstallerCore(fileManager: fm)
+        let installation = try require(core.resolveInstallation(temporary))
+        expect(!core.status(for: installation).contentPatcherFound)
+        try core.installContentPatcher(payload: payload, into: installation)
+        expect(core.status(for: installation).contentPatcherFound)
+        expect(fm.fileExists(atPath: renamed.appendingPathComponent("ContentPatcher.dll").path))
+        expect(!fm.fileExists(atPath: mods.appendingPathComponent("ContentPatcher").path))
+    }
+
+    @Test func testRejectsDuplicateContentPatcherFolders() throws {
+        let fm = FileManager.default
+        let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
+        defer { try? fm.removeItem(at: temporary) }
+        let executable = temporary.appendingPathComponent("Contents/MacOS", isDirectory: true)
+        let mods = executable.appendingPathComponent("Mods", isDirectory: true)
+        try fm.createDirectory(at: mods, withIntermediateDirectories: true)
+        try Data().write(to: executable.appendingPathComponent("Stardew Valley.dll"))
+        for name in ["ContentPatcher", "Content Patcher Copy"] {
+            let folder = mods.appendingPathComponent(name, isDirectory: true)
+            try fm.createDirectory(at: folder, withIntermediateDirectories: true)
+            try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.1"}"#
+                .data(using: .utf8)!.write(to: folder.appendingPathComponent("manifest.json"))
+        }
+        let payload = temporary.appendingPathComponent("ContentPatcherPayload", isDirectory: true)
+        try fm.createDirectory(at: payload, withIntermediateDirectories: true)
+        try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.1"}"#
+            .data(using: .utf8)!.write(to: payload.appendingPathComponent("manifest.json"))
+
+        let core = InstallerCore(fileManager: fm)
+        let installation = try require(core.resolveInstallation(temporary))
+        expect(!core.status(for: installation).contentPatcherFound)
+        expect(throws: InstallerError.self) {
+            try core.installContentPatcher(payload: payload, into: installation)
+        }
     }
 
     @Test func testInstallAndRemove() throws {

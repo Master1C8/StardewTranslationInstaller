@@ -22,6 +22,16 @@ for (const file of files(root).filter(file => file.endsWith(".json"))) {
 
 const config = JSON.parse(fs.readFileSync(path.join(resources, "PackageConfig.json"), "utf8"));
 const content = JSON.parse(fs.readFileSync(path.join(payload, "content.json"), "utf8"));
+const payloadManifest = JSON.parse(fs.readFileSync(path.join(payload, "manifest.json"), "utf8"));
+const infoPlist = fs.readFileSync(path.join(root, "App/Info.plist"), "utf8");
+const appVersion = infoPlist.match(/<key>CFBundleShortVersionString<\/key><string>([^<]+)<\/string>/)?.[1];
+const appBuild = infoPlist.match(/<key>CFBundleVersion<\/key><string>([^<]+)<\/string>/)?.[1];
+if (!appVersion || payloadManifest.Version !== appVersion) {
+  throw new Error(`App and ModPayload versions differ: ${String(appVersion)} / ${String(payloadManifest.Version)}`);
+}
+if (appBuild !== appVersion.replaceAll(".", "")) {
+  throw new Error(`App build ${String(appBuild)} does not match version ${appVersion}.`);
+}
 if (content.Format !== "2.9.0" || !Array.isArray(content.Changes)) {
   throw new Error("The root content.json must contain Format 2.9.0 and a Changes array.");
 }

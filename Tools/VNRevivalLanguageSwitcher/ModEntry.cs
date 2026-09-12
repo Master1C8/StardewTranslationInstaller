@@ -58,10 +58,6 @@ public sealed class ModEntry : Mod
         ["el-vnrevival"] = "greek",
         ["cs-vnrevival"] = "czech",
     };
-    private static readonly Dictionary<string, string> TitleBackOverlayFiles = new(StringComparer.Ordinal)
-    {
-        [ArabicLanguageCode] = "arabic",
-    };
     private static readonly Color NormalTitleInk = new(210, 34, 69);
     private static readonly Color HoverTitleInk = new(239, 72, 101);
     private const int TitleOverlayButtonWidth = 222;
@@ -199,7 +195,7 @@ public sealed class ModEntry : Mod
             && backButton.visible
             && backButton.bounds.Width > 0
             && backButton.bounds.Height > 0
-            && TitleBackOverlayFiles.TryGetValue(languageCode, out string? backSlug))
+            && TitleOverlayFiles.TryGetValue(languageCode, out string? backSlug))
         {
             if (!TitleBackOverlayTextures.TryGetValue(languageCode, out Texture2D? backOverlay))
             {

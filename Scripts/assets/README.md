@@ -54,7 +54,23 @@ or blurry text:
   Scripts/assets/title-button-labels.png
 ```
 
-Arabic also uses `title-overlays/TitleBack-arabic.png` for the 66×27 back
-button. `build-arabic-static-labels.sh` clears the tiny atlas label and renders
-the replacement at the button's native 264×108 screen size; the switcher keeps
-it centered and scales it with the stock hover animation.
+`title-back-template.png` contains the text-free normal and hover label areas
+for the 66×27 back button. `title-back-labels.png` contains regular-weight
+native-resolution lettering for that button in all 19 retained locales. The
+build slices those labels into `title-overlays/TitleBack-*.png`, clears the tiny
+atlas labels, and the switcher draws a label only while a closable title submenu
+is visible. This prevents the back label from leaking beside the message/help
+buttons on the plain title screen.
+
+The checked-in back-label sheet can be regenerated without scaling any glyphs:
+
+```sh
+renderer=/private/tmp/stardew-render-shaped-text
+cjk_font=$(./Scripts/fetch-cubic-11-font.sh)
+/usr/bin/swiftc Scripts/render-shaped-text.swift -o "$renderer"
+/usr/bin/python3 Scripts/generate-title-back-labels.py \
+  Scripts/assets/title-back-labels.png \
+  --renderer "$renderer" \
+  --font '/System/Library/Fonts/Supplemental/Arial Unicode.ttf' \
+  --cjk-font "$cjk_font"
+```

@@ -47,6 +47,12 @@ FRAME_WIDTH = 296
 FRAME_HEIGHT = 58
 RUNTIME_FRAME_SIZE = (888, 174)
 RUNTIME_BUTTON_WIDTH = 222
+BACK_SELECTED_POSITION = (300, 259)
+BACK_HOVER_POSITION = (300, 287)
+BACK_TEMPLATE_SIZE = (45, 28)
+BACK_TEMPLATE_FRAME_SIZE = (45, 14)
+RUNTIME_BACK_SIZE = (264, 108)
+RUNTIME_BACK_LABEL_WIDTH = 200
 INK_COLORS = ((210, 34, 69, 255), (239, 72, 101, 255))
 TITLE_VERTICAL_OFFSETS = {
     "traditional-chinese": -24,
@@ -105,6 +111,36 @@ def validate_atlas(atlas: Image.Image, template: Image.Image, spec: TitleButtons
         raise ValueError(f"Title strip is not the clean template in {spec.filename}")
 
 
+def validate_back_overlay(overlay: Image.Image, spec: TitleButtons) -> None:
+    if overlay.size != RUNTIME_BACK_SIZE:
+        raise ValueError(f"Invalid back-overlay dimensions for {spec.locale}: {overlay.size}")
+    bounds = overlay.getchannel("A").getbbox()
+    if bounds is None:
+        raise ValueError(f"Missing back label for {spec.locale}")
+    if bounds[0] < 5 or bounds[2] > RUNTIME_BACK_LABEL_WIDTH - 5:
+        raise ValueError(f"Back label touches its frame for {spec.locale}: {bounds}")
+
+
+def clear_back_label(atlas: Image.Image, template: Image.Image) -> None:
+    width, height = BACK_TEMPLATE_FRAME_SIZE
+    atlas.paste(template.crop((0, 0, width, height)), BACK_SELECTED_POSITION)
+    atlas.paste(template.crop((0, height, width, height * 2)), BACK_HOVER_POSITION)
+
+
+def validate_back_template(atlas: Image.Image, template: Image.Image, spec: TitleButtons) -> None:
+    width, height = BACK_TEMPLATE_FRAME_SIZE
+    selected = atlas.crop(
+        (*BACK_SELECTED_POSITION, BACK_SELECTED_POSITION[0] + width, BACK_SELECTED_POSITION[1] + height)
+    )
+    hover = atlas.crop(
+        (*BACK_HOVER_POSITION, BACK_HOVER_POSITION[0] + width, BACK_HOVER_POSITION[1] + height)
+    )
+    if ImageChops.difference(selected, template.crop((0, 0, width, height))).getbbox() is not None:
+        raise ValueError(f"Selected back label was not cleared in {spec.filename}")
+    if ImageChops.difference(hover, template.crop((0, height, width, height * 2))).getbbox() is not None:
+        raise ValueError(f"Hover back label was not cleared in {spec.filename}")
+
+
 def write_preview(atlases: list[Image.Image], overlays: list[Image.Image], output: Path) -> None:
     gap = 8
     width = RUNTIME_FRAME_SIZE[0] * 2 + gap * 3
@@ -142,6 +178,8 @@ def main() -> None:
     parser.add_argument("--overlays", type=Path, required=True)
     parser.add_argument("--template", type=Path, required=True)
     parser.add_argument("--labels", type=Path, required=True)
+    parser.add_argument("--back-template", type=Path, required=True)
+    parser.add_argument("--back-labels", type=Path, required=True)
     parser.add_argument("--preview", type=Path)
     parser.add_argument("--labeled-preview", type=Path)
     args = parser.parse_args()
@@ -153,6 +191,15 @@ def main() -> None:
     expected_size = (RUNTIME_FRAME_SIZE[0], RUNTIME_FRAME_SIZE[1] * len(BUTTONS))
     if label_sheet.size != expected_size:
         raise ValueError(f"Unexpected title-label sheet size: {label_sheet.size}; expected {expected_size}")
+    back_template = Image.open(args.back_template).convert("RGBA")
+    if back_template.size != BACK_TEMPLATE_SIZE:
+        raise ValueError(f"Unexpected back-button template size: {back_template.size}")
+    back_label_sheet = Image.open(args.back_labels).convert("RGBA")
+    expected_back_size = (RUNTIME_BACK_SIZE[0], RUNTIME_BACK_SIZE[1] * len(BUTTONS))
+    if back_label_sheet.size != expected_back_size:
+        raise ValueError(
+            f"Unexpected back-label sheet size: {back_label_sheet.size}; expected {expected_back_size}"
+        )
 
     args.overlays.mkdir(parents=True, exist_ok=True)
     atlases: list[Image.Image] = []
@@ -163,11 +210,28 @@ def main() -> None:
         validate_overlay(overlay, spec)
         overlay.save(args.overlays / f"TitleLabels-{spec.slug}.png", format="PNG", optimize=False)
 
+        back_overlay = back_label_sheet.crop(
+            (
+                0,
+                index * RUNTIME_BACK_SIZE[1],
+                RUNTIME_BACK_SIZE[0],
+                (index + 1) * RUNTIME_BACK_SIZE[1],
+            )
+        )
+        validate_back_overlay(back_overlay, spec)
+        back_overlay.save(
+            args.overlays / f"TitleBack-{spec.slug}.png",
+            format="PNG",
+            optimize=False,
+        )
+
         path = args.assets / spec.filename
         source = Image.open(path).convert("RGBA")
         atlas = source.copy()
         atlas.paste(template, STRIP_POSITION)
+        clear_back_label(atlas, back_template)
         validate_atlas(atlas, template, spec)
+        validate_back_template(atlas, back_template, spec)
         atlas.save(path, format="PNG", optimize=False)
         atlases.append(atlas)
         overlays.append(overlay)

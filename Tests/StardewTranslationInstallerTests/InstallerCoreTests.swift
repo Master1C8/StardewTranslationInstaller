@@ -327,8 +327,8 @@ struct InstallerCoreTests {
             )
         }
 
-        func pngDimensions(_ relativePath: String) throws -> (Int, Int) {
-            let data = try Data(contentsOf: payload.appendingPathComponent(relativePath))
+        func pngDimensions(_ file: URL) throws -> (Int, Int) {
+            let data = try Data(contentsOf: file)
             expect(data.count >= 24)
             expect(Array(data.prefix(8)) == [137, 80, 78, 71, 13, 10, 26, 10])
             func integer(at offset: Int) -> Int {
@@ -338,6 +338,9 @@ struct InstallerCoreTests {
                     | Int(data[offset + 3])
             }
             return (integer(at: 16), integer(at: 20))
+        }
+        func pngDimensions(_ relativePath: String) throws -> (Int, Int) {
+            try pngDimensions(payload.appendingPathComponent(relativePath))
         }
 
         let unifiedButtonHashes = [
@@ -382,27 +385,43 @@ struct InstallerCoreTests {
             try DependencyInstaller.sha256(of: approvedTitleLabels)
                 == "c4b1e89e08009295f43e4958118d3378cb090b91dbb243407323d047ffcb8ce6"
         )
+        let titleBackTemplate = projectRoot().appendingPathComponent(
+            "Scripts/assets/title-back-template.png"
+        )
+        try expect(try pngDimensions(titleBackTemplate) == (45, 28))
+        try expect(
+            try DependencyInstaller.sha256(of: titleBackTemplate)
+                == "a79d95a79d46713a9a51a4a1ac204309ee4cf9accac873e3ea484b3a5a6b3c01"
+        )
+        let titleBackLabels = projectRoot().appendingPathComponent(
+            "Scripts/assets/title-back-labels.png"
+        )
+        try expect(try pngDimensions(titleBackLabels) == (264, 2_052))
+        try expect(
+            try DependencyInstaller.sha256(of: titleBackLabels)
+                == "751654c5a677c7735fce35a2459403290e112beb95ee980aec50327338e0ac0f"
+        )
 
         let unifiedTitleButtonHashes = [
-            "assets/title/TitleButtons-russian.png": "c53671f7192f0986d31265cf8e1310b19b5a04fb88dbfd5d261b231263ba31c3",
-            "assets/title/TitleButtons-serbian.png": "fd2938f28fd110d08acbaf188cbc15a89443868183597f742ed34a2a910a974e",
-            "assets/title/TitleButtons.png": "d3539af84c48f1c468f40be7a8aec942da76d6069ee41f4d941c11b65d9ca74f",
-            "assets/title/TitleButtons-ukrainian.png": "95bc74ae86edeca318f77243f335267b4b5311c40ab49b8d7a0b85133f2f9599",
-            "assets/title/TitleButtons-vietnamese.png": "4cd74af0209539e082ed6cc5f728726d4c95c6f26d6300fff2167c5e88370e30",
-            "assets/title/TitleButtons-swahili.png": "ec23fd908becb5ffe2d7fe0255553b30eb6b9dec4c63342168eb95430594fbf9",
-            "assets/title/TitleButtons-persian.png": "64ca9b94e1713cc61474bf92e2050b5cd135e1ad699695ace83045ac81fc0c65",
+            "assets/title/TitleButtons-russian.png": "303667ad30a7bb0cb3f6e9cb8384ec39982bf6c0a33b4ed087760dacf9648887",
+            "assets/title/TitleButtons-serbian.png": "4851f86425392e7778cb765bbd6764ba61777b58105c61c366682870479612d3",
+            "assets/title/TitleButtons.png": "9051846d8eedd2296df3c0b375e55b2db6fcda27fc61d71b2801de43192efb74",
+            "assets/title/TitleButtons-ukrainian.png": "c7aefd26a49a87210a25d277e5e0b6c778068f6f11ee7e232a6c572fcd664e27",
+            "assets/title/TitleButtons-vietnamese.png": "f65cd0fa3849305e67a52f4498d539333ea7da010a973e0a87fbbe573697da42",
+            "assets/title/TitleButtons-swahili.png": "82f56d29ce9ed6b9230352f41796f546fc04420239c012c4f103a612f6954a86",
+            "assets/title/TitleButtons-persian.png": "6d4106e288a1f109ea9918e13fba523fbd764befe67b3091fab2409fcd7df0bc",
             "assets/title/TitleButtons-arabic.png": "448d260ff256b9b90394b196b3c193c42ec358d74917acf23dbe5f81f0556e95",
-            "assets/title/TitleButtons-indonesian.png": "fd6006d4ea114db552b45f229f47c5dfa2f1dc05cd7b5f92bc50ea577dc2ab30",
-            "assets/title/TitleButtons-filipino.png": "81bb60f1fa41345a875ad566f23125f193214c8d02d456fd2efa8e15836ed284",
-            "assets/title/TitleButtons-dutch.png": "f9d9b07bd7e0cf2ab8a05868b9efb54065a72c0c0935f53a9a80ebd04e934ac2",
-            "assets/title/TitleButtons-hindi.png": "d919c0845c18d951e33a28d65b55d5029921f8f1de93adabe701ade8a79b2677",
-            "assets/title/TitleButtons-traditional-chinese.png": "7a7518c8362a708a000e6ee1a7773498a95bbd6b3cfba4da9a12a43ee7d14545",
-            "assets/title/TitleButtons-romanian.png": "1d269151332a8da3468b415ab1672dd1f878b3b9ba61608e83083f8f58f97ec6",
-            "assets/title/TitleButtons-hebrew.png": "47ef0f1584e76f273f0fde3b107bee1a1abf49499e1700ace223b424abf733da",
-            "assets/title/TitleButtons-bulgarian.png": "05615e53e5dcacaa46ef66973fcc911d8655e96c2dc6bef4f4c0d33931108329",
-            "assets/title/TitleButtons-thai.png": "77c48a03adb90a6c07d52140cf07bedfc8ef25367fa3c9d18e62462309fa67df",
-            "assets/title/TitleButtons-greek.png": "0dd9daa70d813a1b3e73fe38f19a1ba9bce467870e33d42cb6ac45ac2756e2bf",
-            "assets/title/TitleButtons-czech.png": "1a3fe033a958e5516a6c09a6caf817dc9cf54fe9ea9c055e1239eda79ff2eda1",
+            "assets/title/TitleButtons-indonesian.png": "665bf215c90c77f4f4c0d5eed91357f3e0ac3a3ebec624b2df79412d093995a8",
+            "assets/title/TitleButtons-filipino.png": "9814007c0bf21155bcc55c940633f82962fc4fd9539739f8ac115cc6b1ae1389",
+            "assets/title/TitleButtons-dutch.png": "25400a8789b7c87a3c727764233eee2fb2db0a8237e76a4a136627336d3df042",
+            "assets/title/TitleButtons-hindi.png": "9d2c7be3f20d868904f0b8966fb4654e91d5daa1320bb7a506e246897e1b9611",
+            "assets/title/TitleButtons-traditional-chinese.png": "5a6576f0d2b605c3bfa6abd921c0d3c792205bc80019644743deb16db56425bc",
+            "assets/title/TitleButtons-romanian.png": "a9835954dc3c0a404c20b3503abcef4c214d7c54ba4a14f11f802a0a54a79afa",
+            "assets/title/TitleButtons-hebrew.png": "1e33bfc39391b2203cbde3286c1a6fbbffb68abd6b87fecf9ecd7cd6804c02f1",
+            "assets/title/TitleButtons-bulgarian.png": "68f51af5ed8d8042e5e7ef5f39fbc5524867f817bd99327fd413fc01b0b37cd2",
+            "assets/title/TitleButtons-thai.png": "24c561fa562ff360046a8c7a603a35fa711bc586710f948335e612b045414a01",
+            "assets/title/TitleButtons-greek.png": "de3945b35a52360c117d77c3b27fa825dd0d15a92ed0ab51a3991d69c5cb3729",
+            "assets/title/TitleButtons-czech.png": "c5f52ceab181d9c97746cf4e4a535d6b5f850bdb5e03c9ad754ef995d8210e3d",
         ]
         for (titlePath, expectedHash) in unifiedTitleButtonHashes {
             try expect(try pngDimensions(titlePath) == (400, 655))
@@ -422,7 +441,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(vietnameseTitlePath) == (400, 655))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(vietnameseTitlePath))
-                == "4cd74af0209539e082ed6cc5f728726d4c95c6f26d6300fff2167c5e88370e30"
+                == "f65cd0fa3849305e67a52f4498d539333ea7da010a973e0a87fbbe573697da42"
         )
 
         let hindiButtonPath = "assets/button-hindi.png"
@@ -435,7 +454,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(hindiTitlePath) == (400, 655))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(hindiTitlePath))
-                == "d919c0845c18d951e33a28d65b55d5029921f8f1de93adabe701ade8a79b2677"
+                == "9d2c7be3f20d868904f0b8966fb4654e91d5daa1320bb7a506e246897e1b9611"
         )
 
         let swahiliButtonPath = "assets/button-swahili.png"
@@ -448,7 +467,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(swahiliTitlePath) == (400, 655))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(swahiliTitlePath))
-                == "ec23fd908becb5ffe2d7fe0255553b30eb6b9dec4c63342168eb95430594fbf9"
+                == "82f56d29ce9ed6b9230352f41796f546fc04420239c012c4f103a612f6954a86"
         )
 
         let indonesianButtonPath = "assets/button-indonesian.png"
@@ -461,7 +480,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(indonesianTitlePath) == (400, 655))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(indonesianTitlePath))
-                == "fd6006d4ea114db552b45f229f47c5dfa2f1dc05cd7b5f92bc50ea577dc2ab30"
+                == "665bf215c90c77f4f4c0d5eed91357f3e0ac3a3ebec624b2df79412d093995a8"
         )
 
 
@@ -475,7 +494,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(filipinoTitlePath) == (400, 655))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(filipinoTitlePath))
-                == "81bb60f1fa41345a875ad566f23125f193214c8d02d456fd2efa8e15836ed284"
+                == "9814007c0bf21155bcc55c940633f82962fc4fd9539739f8ac115cc6b1ae1389"
         )
 
         let filipinoFontHashes = [
@@ -499,7 +518,7 @@ struct InstallerCoreTests {
         try expect(try pngDimensions(romanianTitlePath) == (400, 655))
         try expect(
             try DependencyInstaller.sha256(of: payload.appendingPathComponent(romanianTitlePath))
-                == "1d269151332a8da3468b415ab1672dd1f878b3b9ba61608e83083f8f58f97ec6"
+                == "a9835954dc3c0a404c20b3503abcef4c214d7c54ba4a14f11f802a0a54a79afa"
         )
 
         try expect(try pngDimensions("assets/button-persian.png") == (174, 78))
@@ -512,7 +531,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/title/TitleButtons-persian.png")
-            ) == "64ca9b94e1713cc61474bf92e2050b5cd135e1ad699695ace83045ac81fc0c65"
+            ) == "6d4106e288a1f109ea9918e13fba523fbd764befe67b3091fab2409fcd7df0bc"
         )
 
         try expect(try pngDimensions("assets/button-arabic.png") == (174, 78))
@@ -530,7 +549,7 @@ struct InstallerCoreTests {
 
         let bulgarianAssetHashes = [
             "assets/button-bulgarian.png": "99e095ea1435174b7129769e27e539bf310f2641791cb69846c1160064893119",
-            "assets/title/TitleButtons-bulgarian.png": "05615e53e5dcacaa46ef66973fcc911d8655e96c2dc6bef4f4c0d33931108329",
+            "assets/title/TitleButtons-bulgarian.png": "68f51af5ed8d8042e5e7ef5f39fbc5524867f817bd99327fd413fc01b0b37cd2",
             "assets/fonts/bulgarian/SpriteFont1.xnb": "79b0bc55244a90a81a68e36aec198c42f22d8dd98f5a4489f425adc4d52dd233",
             "assets/fonts/bulgarian/SmallFont.xnb": "79b0bc55244a90a81a68e36aec198c42f22d8dd98f5a4489f425adc4d52dd233",
         ]
@@ -553,7 +572,7 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/title/TitleButtons-thai.png")
-            ) == "77c48a03adb90a6c07d52140cf07bedfc8ef25367fa3c9d18e62462309fa67df"
+            ) == "24c561fa562ff360046a8c7a603a35fa711bc586710f948335e612b045414a01"
         )
 
         let greekFontHashes = [
@@ -576,12 +595,12 @@ struct InstallerCoreTests {
         try expect(
             try DependencyInstaller.sha256(
                 of: payload.appendingPathComponent("assets/title/TitleButtons-greek.png")
-            ) == "0dd9daa70d813a1b3e73fe38f19a1ba9bce467870e33d42cb6ac45ac2756e2bf"
+            ) == "de3945b35a52360c117d77c3b27fa825dd0d15a92ed0ab51a3991d69c5cb3729"
         )
 
         let czechAssetHashes = [
             "assets/button-czech.png": "98266efc2c8d4bdf1213c617ec40f95b09a1f14be77b92310ae0745f79287071",
-            "assets/title/TitleButtons-czech.png": "1a3fe033a958e5516a6c09a6caf817dc9cf54fe9ea9c055e1239eda79ff2eda1",
+            "assets/title/TitleButtons-czech.png": "c5f52ceab181d9c97746cf4e4a535d6b5f850bdb5e03c9ad754ef995d8210e3d",
             "assets/fonts/czech/SpriteFont1.xnb": "4e73922c73a398ae6e833b5680883bab6b33f93e1365b150519d712cd7df2334",
             "assets/fonts/czech/SmallFont.xnb": "da13be7533bdb70d4859ad7c3857b5fa50a61e006ac34f42705a177642eae280",
         ]
@@ -627,7 +646,7 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.6")
+        expect(manifest["Version"] as? String == "1.9.7")
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {
@@ -654,6 +673,10 @@ struct InstallerCoreTests {
             expect(fm.fileExists(atPath: overlay.path))
             let dimensions = try imageDimensions(overlay)
             expect(dimensions == (888, 174))
+            let backOverlay = titleOverlays.appendingPathComponent("TitleBack-\(name).png")
+            expect(fm.fileExists(atPath: backOverlay.path))
+            let backDimensions = try imageDimensions(backOverlay)
+            expect(backDimensions == (264, 108))
         }
         let arabicBackOverlay = titleOverlays.appendingPathComponent("TitleBack-arabic.png")
         expect(fm.fileExists(atPath: arabicBackOverlay.path))

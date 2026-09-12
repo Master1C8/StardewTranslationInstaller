@@ -653,7 +653,17 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.12")
+        expect(manifest["Version"] as? String == "1.9.13")
+        let switcherImplementation = try String(
+            contentsOf: projectRoot().appendingPathComponent(
+                "Tools/VNRevivalLanguageSwitcher/ModEntry.cs"
+            ),
+            encoding: .utf8
+        )
+        expect(switcherImplementation.contains(
+            "if (subMenu is not null\n            && !__instance.isTransitioningButtons\n            && subMenu.readyToClose()"
+        ))
+        expect(!switcherImplementation.contains("subMenu is not CharacterCustomization"))
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {

@@ -216,7 +216,6 @@ public sealed class ModEntry : Mod
         ClickableTextureComponent? backButton = __instance.backButton;
         if (subMenu is not null
             && !__instance.isTransitioningButtons
-            && subMenu is not CharacterCustomization
             && subMenu.readyToClose()
             && backButton is not null
             && backButton.visible

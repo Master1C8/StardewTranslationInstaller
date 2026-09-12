@@ -627,7 +627,7 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.0")
+        expect(manifest["Version"] as? String == "1.9.1")
         let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
         try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {

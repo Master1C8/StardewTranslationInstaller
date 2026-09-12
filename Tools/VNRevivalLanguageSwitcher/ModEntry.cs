@@ -143,7 +143,10 @@ public sealed class ModEntry : Mod
         if (languageCode is null
             || !TitleOverlayFiles.TryGetValue(languageCode, out string? slug)
             || ModHelper is null
-            || __instance.buttons is null)
+            || __instance.buttons is null
+            || __instance.fadeFromWhiteTimer > 0
+            || !__instance.titleInPosition
+            || __instance.buttonsToShow <= 0)
             return;
 
         if (!TitleOverlayTextures.TryGetValue(languageCode, out Texture2D? overlay))
@@ -152,7 +155,7 @@ public sealed class ModEntry : Mod
             TitleOverlayTextures[languageCode] = overlay;
         }
 
-        int buttonCount = Math.Min(4, __instance.buttons.Count);
+        int buttonCount = Math.Min(Math.Min(4, __instance.buttons.Count), __instance.buttonsToShow);
         for (int index = 0; index < buttonCount; index += 1)
         {
             ClickableTextureComponent button = __instance.buttons[index];

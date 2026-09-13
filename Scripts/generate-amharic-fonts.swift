@@ -470,7 +470,12 @@ func processBmFont(
     if fallbackFonts.count != fallbackFontNames.count {
         throw GeneratorError.missingFont
     }
-    let orderedCharacters = requiredCharacters
+    var bitmapCharacters = requiredCharacters
+    // Translation scanning intentionally excludes whitespace, but BMFont's
+    // renderer still needs an explicit U+0020 entry. Without it, dialogue
+    // words are laid out with zero advance and visibly run together.
+    bitmapCharacters.insert(" ")
+    let orderedCharacters = bitmapCharacters
         .filter { $0 != "\n" && $0 != "\r" && $0 != "\t" }
         .sorted { left, right in
             left.unicodeScalars.first!.value < right.unicodeScalars.first!.value
@@ -497,7 +502,9 @@ func processBmFont(
                 throw GeneratorError.renderFailed(character)
             }
             bitmaps.append(GlyphBitmap(index: index, character: character, image: image))
-            advances[index] = 4
+            advances[index] = max(1, Int(ceil(
+                (renderedText as NSString).size(withAttributes: [.font: font]).width
+            )))
             yOffsets[index] = base + yOffsetAdjustment
             continue
         }

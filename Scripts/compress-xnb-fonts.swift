@@ -141,15 +141,33 @@ private func validatedBytes(at url: URL) throws -> [UInt8] {
     return bytes
 }
 
-private func verifyCompressed(at url: URL, codec: RawLZ4) throws -> Int {
+private func verifyCompressed(at url: URL, codec: RawLZ4) throws -> [UInt8] {
     let bytes = try validatedBytes(at: url)
     let flags = bytes[5]
     guard flags & lz4Flag != 0, flags & lzxFlag == 0, bytes.count >= 14 else {
         throw XNBError.invalid("Expected MonoGame LZ4-compressed XNB: \(url.path)")
     }
     let expectedSize = readUInt32(bytes, at: 10)
-    _ = try codec.decompress(bytes[14...], expectedSize: expectedSize)
-    return expectedSize
+    return try codec.decompress(bytes[14...], expectedSize: expectedSize)
+}
+
+private func verifyDialogueBmFontSpace(_ payload: [UInt8], at url: URL) throws {
+    let name = url.deletingPathExtension().lastPathComponent
+    guard name != "SpriteFont1", name != "SmallFont", !name.hasSuffix("_0") else {
+        return
+    }
+    let text = String(decoding: payload, as: UTF8.self)
+    guard let start = text.range(of: #"<char id="32""#) else {
+        throw XNBError.invalid("Dialogue BMFont has no U+0020 space glyph: \(url.path)")
+    }
+    let remainder = text[start.lowerBound...]
+    guard let end = remainder.range(of: "/>"),
+          remainder[..<end.upperBound].range(
+              of: #"xadvance="[1-9][0-9]*""#,
+              options: .regularExpression
+          ) != nil else {
+        throw XNBError.invalid("Dialogue BMFont space has no positive advance: \(url.path)")
+    }
 }
 
 private func compress(at url: URL, codec: RawLZ4) throws -> (before: Int, after: Int, changed: Bool) {
@@ -225,11 +243,14 @@ do {
     var changed = 0
     for file in files {
         if verifyOnly {
-            let decodedSize = try verifyCompressed(at: file, codec: codec)
-            originalBytes += decodedSize + 10
+            let payload = try verifyCompressed(at: file, codec: codec)
+            try verifyDialogueBmFontSpace(payload, at: file)
+            originalBytes += payload.count + 10
             finalBytes += Int((try file.resourceValues(forKeys: [.fileSizeKey])).fileSize ?? 0)
         } else {
             let result = try compress(at: file, codec: codec)
+            let payload = try verifyCompressed(at: file, codec: codec)
+            try verifyDialogueBmFontSpace(payload, at: file)
             originalBytes += result.before
             finalBytes += result.after
             if result.changed { changed += 1 }

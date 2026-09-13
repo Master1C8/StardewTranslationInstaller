@@ -292,6 +292,7 @@ func compactJSON(_ value: Any) throws -> String {
 func processFont(
     name: String,
     fontSize: CGFloat,
+    lineHeightOverride: Int?,
     atlasSize: Int,
     englishDirectory: URL,
     outputDirectory: URL,
@@ -308,9 +309,11 @@ func processFont(
           var glyphs = content["glyphs"] as? [[String: Int]],
           var cropping = content["cropping"] as? [[String: Int]],
           var kerning = content["kerning"] as? [[String: Int]],
-          let lineHeight = content["verticalLineSpacing"] as? Int else {
+          let sourceLineHeight = content["verticalLineSpacing"] as? Int else {
         throw GeneratorError.invalidJSON(jsonURL.path)
     }
+    let lineHeight = lineHeightOverride ?? sourceLineHeight
+    content["verticalLineSpacing"] = lineHeight
     guard let baseImage = NSImage(contentsOf: imageURL),
           let baseCG = baseImage.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
         throw GeneratorError.missingImage(imageURL.path)
@@ -746,6 +749,7 @@ do {
         fontSize: CGFloat(
             Double(ProcessInfo.processInfo.environment["VN_SPRITEFONT_SIZE"] ?? "") ?? 34
         ),
+        lineHeightOverride: Int(ProcessInfo.processInfo.environment["VN_SPRITEFONT_LINE_HEIGHT"] ?? ""),
         atlasSize: spriteAtlasSize,
         englishDirectory: englishDirectory,
         outputDirectory: outputDirectory,
@@ -758,6 +762,7 @@ do {
         fontSize: CGFloat(
             Double(ProcessInfo.processInfo.environment["VN_SMALLFONT_SIZE"] ?? "") ?? 22
         ),
+        lineHeightOverride: Int(ProcessInfo.processInfo.environment["VN_SMALLFONT_LINE_HEIGHT"] ?? ""),
         atlasSize: smallAtlasSize,
         englishDirectory: englishDirectory,
         outputDirectory: outputDirectory,

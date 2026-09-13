@@ -322,9 +322,9 @@ struct InstallerCoreTests {
         expect(traditionalChineseLicense.contains("SIL OPEN FONT LICENSE Version 1.1"))
 
         let thaiFontHashes = [
-            "assets/fonts/thai/SpriteFont1.xnb": "35393514d41b8d553bb0a607d6556473a38ce6f5ae69d269e018ce2c0570d386",
-            "assets/fonts/thai/SmallFont.xnb": "786a1c6c0925ef6d45a30a38461acd7da9270f1e3b98d0dcc13422d5b2d28422",
-            "assets/fonts/thai/Thai.xnb": "79a546e02aa09063d685afd2e1f81e39f24d737f20b36ea28a5b1178a7997c3a",
+            "assets/fonts/thai/SpriteFont1.xnb": "be7f2dcfa7a045fd7b9095e00c5234048d75dc85fc2b0053cf8d20c83a385fff",
+            "assets/fonts/thai/SmallFont.xnb": "dbaada486ae694b2a5a506e87f7cfe9dcb5203ed0045c6126893ad13f22ec123",
+            "assets/fonts/thai/Thai.xnb": "274354b953cd1bf863e912c9035dd5e5f565ea5a1ec7ec9914dfadb3741110eb",
             "assets/fonts/thai/Thai_0.xnb": "bc768b383d7cd1cdfbd364e74b792fa1b22d438b28c9fae3467354b6ba2b2468",
         ]
         for (fontPath, expectedHash) in thaiFontHashes {

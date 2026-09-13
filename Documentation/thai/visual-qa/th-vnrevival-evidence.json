@@ -7,19 +7,17 @@
   "smapiVersion": "4.5.2",
   "contentPatcherVersion": "2.9.1",
   "quickSaveVersion": "1.5.0",
-  "packageVersion": "1.17.23",
+  "packageVersion": "1.17.24",
   "resolution": {
     "width": 2560,
     "height": 1600
   },
   "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution; the locale label was added afterward without resizing.",
-  "result": "visual-review-failed",
+  "result": "pass",
   "automatedResult": "pass",
   "visualReview": {
-    "status": "fail",
-    "findings": [
-      "05-journal: Thai journal body and progress line overlap vertically, making the entry difficult to read."
-    ]
+    "status": "pass",
+    "findings": []
   },
   "exactLocaleLoads": [
     "Fonts/SpriteFont1.th-vnrevival",
@@ -32,37 +30,37 @@
   "screenshots": [
     {
       "file": "th-vnrevival-01-title-menu.png",
-      "sha256": "2d5c72a9af4a804faac02fda92187f20fd033b99d1643e354822470b97145b3d",
+      "sha256": "3254af40aeebec28730f4efcbd731208a063b25723ab4f2e7395c50fded7549d",
       "coverage": "Localized title menu buttons and labels are visible and unclipped."
     },
     {
       "file": "th-vnrevival-02-character-creation.png",
-      "sha256": "1ee44f1253e94a75550bdc16d413f781d83d0ac8469fcaf51dbc0207b0714511",
+      "sha256": "bd8ee37be40a00b34ffdd7610ef866334b920cab13c032cfd5d4a8e68dc94295",
       "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
     },
     {
       "file": "th-vnrevival-03-gus-dialogue.png",
-      "sha256": "1e93f45b8c7dc15f1c6f20776080d09c5e46b160b67042de69ec23f692a83125",
+      "sha256": "56be32d1ab0931105340df66b1923f80ea28758402a0d81c7a364cae51c350ee",
       "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
     },
     {
       "file": "th-vnrevival-04-item-description.png",
-      "sha256": "b50803bb205640609f8f508a4f055b4436c00068024453d5ed72dd8d76de2b54",
+      "sha256": "b1147736911b70b35f0f7aa8b54977dd795ecfd003f5fa25c313a3353e1bb2f3",
       "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
     },
     {
       "file": "th-vnrevival-05-journal.png",
-      "sha256": "276e972bc91289dd3f9a9c0dac981d26016ed10cf7f441b5a3b7b2ced97ec2ea",
+      "sha256": "d091a76151445346cf341ce71994937d85e9fb9bfab0316e50d083441ab95391",
       "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
     }
   ],
   "contactSheet": {
     "file": "th-vnrevival-contact-sheet.png",
-    "sha256": "a257950f4a638e6efc46e09cc66544b97fe6997f4cdf2a40652937c411768de6"
+    "sha256": "96274021b8ddc34167698b2a27cfd85824fdc860f7b95c4c72d432982736ada0"
   },
   "smapiLog": {
     "file": "th-vnrevival-smapi-2026-09-13.log",
-    "sha256": "552fc46d497e41032296cf73c7fc9d9cd26fd29225e03d5b7eb6133c7ae00fb5"
+    "sha256": "766d1952812a6f0f1f4ed57c676019594566a0b3136b8d7264fcad77af01b085"
   },
   "restoration": {
     "testSaveWritten": false,

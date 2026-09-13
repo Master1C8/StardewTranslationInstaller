@@ -26,8 +26,26 @@ for (const name of ["SpriteFont1", "SmallFont"]) {
   }
   const available = new Set(characterMap);
   for (const glyph of mappedGlyphs) if (!available.has(glyph)) throw new Error(`${name} lacks Thai cluster glyph U+${glyph.codePointAt(0).toString(16)}`);
+  const thaiBounds = characterMap
+    .map((glyph, index) => ({ glyph, crop: cropping[index], source: glyphs[index] }))
+    .filter(({ glyph }) => mappedGlyphs.includes(glyph))
+    .map(({ crop, source }) => ({ top: crop.y, bottom: crop.y + source.height }));
+  const top = Math.min(...thaiBounds.map((bounds) => bounds.top));
+  const bottom = Math.max(...thaiBounds.map((bounds) => bounds.bottom));
+  if (bottom - top > document.content.verticalLineSpacing) {
+    throw new Error(`${name} line spacing ${document.content.verticalLineSpacing} is smaller than its ${bottom - top}px Thai glyph extent`);
+  }
 }
 const xml = fs.readFileSync(path.join(unpacked, "Thai.xml"), "utf8");
 const ids = new Set([...xml.matchAll(/<char id="(\d+)"/g)].map((match) => Number(match[1])));
 for (const glyph of mappedGlyphs) if (!ids.has(glyph.codePointAt(0))) throw new Error(`Thai BMFont lacks cluster glyph U+${glyph.codePointAt(0).toString(16)}`);
+const lineHeight = Number(xml.match(/<common lineHeight="(\d+)"/)?.[1]);
+const verticalBounds = [...xml.matchAll(/<char id="\d+"[^>]*height="(\d+)"[^>]*yoffset="(-?\d+)"/g)]
+  .map((match) => ({ height: Number(match[1]), yOffset: Number(match[2]) }));
+if (!Number.isInteger(lineHeight) || verticalBounds.length === 0) throw new Error("Thai BMFont lacks usable vertical metrics");
+const top = Math.min(...verticalBounds.map(({ yOffset }) => yOffset));
+const bottom = Math.max(...verticalBounds.map(({ height, yOffset }) => yOffset + height));
+if (bottom - top > lineHeight) {
+  throw new Error(`Thai BMFont line height ${lineHeight} is smaller than its ${bottom - top}px glyph extent`);
+}
 console.log(`Verified ${mappedGlyphs.length} shaped Thai glyphs in both SpriteFonts and BMFont.`);

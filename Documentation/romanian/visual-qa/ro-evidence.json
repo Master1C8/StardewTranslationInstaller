@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "date": "2026-09-13",
-  "localeLabel": "Tiếng Việt · Vietnamese · vi-vnrevival",
-  "exactLocale": "vi-vnrevival",
+  "localeLabel": "Română · Romanian · ro-vnrevival",
+  "exactLocale": "ro-vnrevival",
   "gameVersion": "1.6.15 build 24356",
   "smapiVersion": "4.5.2",
   "contentPatcherVersion": "2.9.1",
@@ -20,50 +20,51 @@
     "findings": []
   },
   "exactLocaleLoads": [
-    "Fonts/SpriteFont1.vi-vnrevival",
-    "Fonts/SmallFont.vi-vnrevival",
-    "Minigames/TitleButtons.vi-vnrevival"
+    "Fonts/SpriteFont1.ro-vnrevival",
+    "Fonts/SmallFont.ro-vnrevival",
+    "Minigames/TitleButtons.ro-vnrevival"
   ],
   "missingLocaleLoads": [],
   "contentPatcherErrors": 0,
   "contentPatcherWarnings": 0,
   "screenshots": [
     {
-      "file": "vi-vnrevival-01-title-menu.png",
-      "sha256": "6aa25b0f2cad25ce37193174c9a9fa5b461dc4d9f7b5ce8b2dfb2d9821b734f7",
+      "file": "../../visual-qa-upload/ro-01-title-menu.png",
+      "sha256": "91408790b9661ed837b99f4a9cf4bc6ef5d89bcd6810222b754296a2870e1bfc",
       "coverage": "Localized title menu buttons and labels are visible and unclipped."
     },
     {
-      "file": "vi-vnrevival-02-character-creation.png",
-      "sha256": "e8fd45c180cfe9d9a9901d54623bc3e35fdf5573c23ee7fb7fbdd209b8af88c6",
+      "file": "../../visual-qa-upload/ro-02-character-creation.png",
+      "sha256": "b38b7a9fa4090ff0dab93e7409d9990d021f47a7767846ec181a36bc3e6346ae",
       "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
     },
     {
-      "file": "vi-vnrevival-03-gus-dialogue.png",
-      "sha256": "96fee7c04b1177b17b2ab69d458fa354fa09625d7346d56fba11ca0ed02cb3bc",
+      "file": "../../visual-qa-upload/ro-03-gus-dialogue.png",
+      "sha256": "38a2a44281b8aea3a89e4cf587dc418c151be85c3ce965739b2143bd4c3ac5f7",
       "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
     },
     {
-      "file": "vi-vnrevival-04-item-description.png",
-      "sha256": "b8afea7cdc1282b42d2a7b5677f8840421224a1478c8f8037196db29f710530f",
+      "file": "../../visual-qa-upload/ro-04-item-description.png",
+      "sha256": "ee8c4965a8a7bde6a09247078fdf9d81ebd91681fb572a883c628430179e234f",
       "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
     },
     {
-      "file": "vi-vnrevival-05-journal.png",
-      "sha256": "967bbbf864f65e994a8d137931b803f9c8c15bc368e1a0a33c3625df06d23f26",
+      "file": "../../visual-qa-upload/ro-05-journal.png",
+      "sha256": "3cf1f470ee3a4fe908b0f294ac3e7b0d4813271b658c7c1ab361e6eedd8da85a",
       "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
     }
   ],
   "contactSheet": {
-    "file": "vi-vnrevival-contact-sheet.png",
-    "sha256": "72e645605782a8f862167b125665dc080cf62a43437ab145e12a8691c77e14f0"
+    "file": "ro-contact-sheet.png",
+    "sha256": "38854bcf118319669844b8400a9ce7ecd88316c8ddf30e2c56c0303f988ecbbd"
   },
   "smapiLog": {
-    "file": "vi-vnrevival-smapi-2026-09-13.log",
-    "sha256": "f2a33057465c5e180d836aef12c63589b3f1ed880e1a019a6d772941b48bb26a"
+    "file": "ro-smapi-2026-09-13.log",
+    "sha256": "7ae3cccc976f775c45d29a631d20856d0162b02f8218553ef8b2d5fac4d68c50"
   },
   "restoration": {
     "testSaveWritten": false,
     "startupLanguageRestored": true
-  }
+  },
+  "publishingLocale": "ro"
 }

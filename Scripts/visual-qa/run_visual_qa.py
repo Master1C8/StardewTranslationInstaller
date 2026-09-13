@@ -73,6 +73,11 @@ def load_configuration() -> tuple[list[dict[str, str]], dict[str, object]]:
     codes = [locale["code"] for locale in locales]
     if codes != package["languageCodes"]:
         raise RuntimeError("visual-QA locale order differs from PackageConfig.json")
+    site_locales = [locale.get("siteLocale") for locale in locales]
+    if any(not isinstance(site_locale, str) or not site_locale for site_locale in site_locales):
+        raise RuntimeError("every visual-QA locale requires an explicit siteLocale")
+    if len(site_locales) != len(set(site_locales)):
+        raise RuntimeError("visual-QA siteLocale values must be unique")
     entries = content["Changes"][0]["Entries"]
     for locale in locales:
         key = "{{ModId}}_" + locale["entry"]
@@ -250,8 +255,16 @@ def image_size(magick: str, path: Path) -> str:
     return result.stdout
 
 
-def postprocess(magick: str, runtime: Path, output: Path, locale: dict[str, str], smapi_log: Path) -> list[Path]:
-    output.mkdir(parents=True, exist_ok=True)
+def postprocess(
+    magick: str,
+    runtime: Path,
+    review_output: Path,
+    upload_output: Path,
+    locale: dict[str, str],
+    smapi_log: Path,
+) -> list[Path]:
+    review_output.mkdir(parents=True, exist_ok=True)
+    upload_output.mkdir(parents=True, exist_ok=True)
     produced: list[Path] = []
     for stem, _ in CAPTURES:
         raw = runtime / "raw" / f"{locale['code']}-{stem}-raw.png"
@@ -259,7 +272,7 @@ def postprocess(magick: str, runtime: Path, output: Path, locale: dict[str, str]
             raise RuntimeError(f"automation did not produce {raw.name}")
         if image_size(magick, raw) != EXPECTED_SIZE:
             raise RuntimeError(f"{raw.name} is {image_size(magick, raw)}, expected {EXPECTED_SIZE}")
-        destination = output / f"{locale['code']}-{stem}.png"
+        destination = upload_output / f"{locale['siteLocale']}-{stem}.png"
         run_checked([
             str(runtime / "label-overlay"), str(raw), str(destination), locale["label"],
         ])
@@ -267,7 +280,7 @@ def postprocess(magick: str, runtime: Path, output: Path, locale: dict[str, str]
             raise RuntimeError(f"labeling resized {destination.name}")
         produced.append(destination)
 
-    contact_sheet = output / f"{locale['code']}-contact-sheet.png"
+    contact_sheet = review_output / f"{locale['siteLocale']}-contact-sheet.png"
     run_checked([
         magick, "montage", *[str(path) for path in produced],
         "-font", "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
@@ -277,7 +290,7 @@ def postprocess(magick: str, runtime: Path, output: Path, locale: dict[str, str]
     produced.append(contact_sheet)
 
     if smapi_log.is_file():
-        dated_log = output / f"{locale['code']}-smapi-{dt.date.today().isoformat()}.log"
+        dated_log = review_output / f"{locale['siteLocale']}-smapi-{dt.date.today().isoformat()}.log"
         log_text = smapi_log.read_text(encoding="utf-8", errors="replace")
         dated_log.write_text(log_text.replace("\r\n", "\n").replace("\r", "\n"), encoding="utf-8")
         produced.append(dated_log)
@@ -289,10 +302,21 @@ def version_from_log(text: str, pattern: str, default: str = "unknown") -> str:
     return match.group(1) if match else default
 
 
-def write_evidence(output: Path, locale: dict[str, str], package: dict[str, object], produced: list[Path], log_text: str, restored: bool) -> Path:
+def write_evidence(
+    review_output: Path,
+    locale: dict[str, str],
+    package: dict[str, object],
+    produced: list[Path],
+    log_text: str,
+    restored: bool,
+) -> Path:
     screenshots = []
     for (stem, coverage), path in zip(CAPTURES, produced[:5]):
-        screenshots.append({"file": path.name, "sha256": sha256(path), "coverage": coverage})
+        screenshots.append({
+            "file": os.path.relpath(path, review_output),
+            "sha256": sha256(path),
+            "coverage": coverage,
+        })
     contact = produced[5]
     log_file = next((path for path in produced if path.suffix == ".log"), None)
     cp_errors = len(re.findall(
@@ -313,10 +337,11 @@ def write_evidence(output: Path, locale: dict[str, str], package: dict[str, obje
     missing_loads = [asset for asset in exact_loads if asset not in log_text]
     automated_result = "pass" if not cp_errors and not missing_loads else "fail"
     evidence = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "date": dt.date.today().isoformat(),
         "localeLabel": locale["label"],
         "exactLocale": locale["code"],
+        "publishingLocale": locale["siteLocale"],
         "gameVersion": version_from_log(log_text, r"Stardew Valley ([0-9.]+(?: build [0-9]+)?)"),
         "smapiVersion": version_from_log(log_text, r"SMAPI ([0-9.]+)"),
         "contentPatcherVersion": version_from_log(log_text, r"Content Patcher ([0-9.]+)"),
@@ -336,7 +361,7 @@ def write_evidence(output: Path, locale: dict[str, str], package: dict[str, obje
         "smapiLog": None if log_file is None else {"file": log_file.name, "sha256": sha256(log_file)},
         "restoration": {"testSaveWritten": False, "startupLanguageRestored": restored},
     }
-    evidence_path = output / f"{locale['code']}-evidence.json"
+    evidence_path = review_output / f"{locale['siteLocale']}-evidence.json"
     evidence_path.write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if automated_result != "pass":
         raise RuntimeError(f"evidence failed: missing loads={missing_loads}, Content Patcher errors={cp_errors}")
@@ -367,17 +392,20 @@ def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> 
     completed = 0
     skipped = 0
     for locale in locales:
-        output = args.output_root / locale["slug"] / "visual-qa"
-        if output.exists() and not args.replace:
-            evidence = output / f"{locale['code']}-evidence.json"
-            screenshots = [output / f"{locale['code']}-{stem}.png" for stem, _ in CAPTURES]
+        review_output = args.output_root / locale["slug"] / "visual-qa"
+        upload_output = args.output_root / "visual-qa-upload"
+        screenshots = [upload_output / f"{locale['siteLocale']}-{stem}.png" for stem, _ in CAPTURES]
+        if not args.replace:
+            evidence = review_output / f"{locale['siteLocale']}-evidence.json"
             if evidence.is_file() and all(path.is_file() for path in screenshots):
-                print(f"Skipping {locale['code']}: complete output already exists ({output})")
+                print(f"Skipping {locale['code']}: complete output already exists ({review_output})")
                 skipped += 1
                 continue
-            if any(output.iterdir()):
-                raise RuntimeError(f"incomplete output requires review or --replace: {output}")
-            output.rmdir()
+            has_review_output = review_output.exists() and any(review_output.iterdir())
+            if has_review_output or any(path.exists() for path in screenshots):
+                raise RuntimeError(f"incomplete output requires review or --replace: {review_output}")
+            if review_output.exists():
+                review_output.rmdir()
         command = [
             sys.executable,
             str(Path(__file__).resolve()),
@@ -413,7 +441,7 @@ def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> 
                 raise
             if not returncode:
                 break
-            if attempt == 1 and not output.exists():
+            if attempt == 1 and not review_output.exists():
                 print(
                     f"Retrying {locale['code']} after transient capture failure "
                     f"(exit code {returncode}).",
@@ -438,7 +466,7 @@ def main() -> int:
     by_code = {locale["code"]: locale for locale in locales}
     if args.list:
         for locale in locales:
-            print(f"{locale['code']}: {locale['label']}")
+            print(f"{locale['code']} -> {locale['siteLocale']}: {locale['label']}")
         return 0
     if args.all_locales:
         return run_all_locales(args, locales)
@@ -462,11 +490,16 @@ def main() -> int:
         if running:
             raise RuntimeError("Stardew Valley is already running; close it first:\n" + "\n".join(running))
         locale = by_code[args.locale]
-        output = args.output_root / locale["slug"] / "visual-qa"
-        if output.exists():
+        review_output = args.output_root / locale["slug"] / "visual-qa"
+        upload_output = args.output_root / "visual-qa-upload"
+        upload_screenshots = [
+            upload_output / f"{locale['siteLocale']}-{stem}.png" for stem, _ in CAPTURES
+        ]
+        if review_output.exists() or any(path.exists() for path in upload_screenshots):
             if not args.replace:
-                raise RuntimeError(f"output exists (pass --replace to replace it): {output}")
-            shutil.rmtree(output)
+                raise RuntimeError(f"output exists (pass --replace to replace it): {review_output}")
+            if review_output.exists():
+                shutil.rmtree(review_output)
         prepare_runtime(runtime, dependencies["magick"])
         driver_dir = build_smapi_driver(runtime, args.game_dir, dependencies["csc"])
         language_id = f"{package['uniqueID']}_{locale['entry']}"
@@ -510,10 +543,13 @@ def main() -> int:
             if installed_driver is not None and installed_driver.exists():
                 remove_smapi_driver(installed_driver)
         time.sleep(1)
-        produced = postprocess(dependencies["magick"], runtime, output, locale, DEFAULT_SMAPI_LOG)
+        produced = postprocess(
+            dependencies["magick"], runtime, review_output, upload_output, locale, DEFAULT_SMAPI_LOG
+        )
         log_text = DEFAULT_SMAPI_LOG.read_text(encoding="utf-8", errors="replace") if DEFAULT_SMAPI_LOG.is_file() else ""
-        evidence = write_evidence(output, locale, package, produced, log_text, restored)
-        print(f"Visual QA complete: {output}")
+        evidence = write_evidence(review_output, locale, package, produced, log_text, restored)
+        print(f"Visual QA complete: {review_output}")
+        print(f"Upload-ready screenshots: {upload_output}")
         print(f"Evidence: {evidence}")
     return 0
 

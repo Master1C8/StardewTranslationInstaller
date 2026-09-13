@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "date": "2026-09-13",
-  "localeLabel": "Українська · Ukrainian · uk-vnrevival",
-  "exactLocale": "uk-vnrevival",
+  "localeLabel": "ภาษาไทย · Thai · th-vnrevival",
+  "exactLocale": "th-vnrevival",
   "gameVersion": "1.6.15 build 24356",
   "smapiVersion": "4.5.2",
   "contentPatcherVersion": "2.9.1",
   "quickSaveVersion": "1.5.0",
-  "packageVersion": "1.17.23",
+  "packageVersion": "1.17.24",
   "resolution": {
     "width": 2560,
     "height": 1600
@@ -20,50 +20,51 @@
     "findings": []
   },
   "exactLocaleLoads": [
-    "Fonts/SpriteFont1.uk-vnrevival",
-    "Fonts/SmallFont.uk-vnrevival",
-    "Minigames/TitleButtons.uk-vnrevival"
+    "Fonts/SpriteFont1.th-vnrevival",
+    "Fonts/SmallFont.th-vnrevival",
+    "Minigames/TitleButtons.th-vnrevival"
   ],
   "missingLocaleLoads": [],
   "contentPatcherErrors": 0,
   "contentPatcherWarnings": 0,
   "screenshots": [
     {
-      "file": "uk-vnrevival-01-title-menu.png",
-      "sha256": "19b05485847895f823d835b32e55049d88a1fd203cd9d92facc67a5c2a11a50a",
+      "file": "../../visual-qa-upload/th-01-title-menu.png",
+      "sha256": "3254af40aeebec28730f4efcbd731208a063b25723ab4f2e7395c50fded7549d",
       "coverage": "Localized title menu buttons and labels are visible and unclipped."
     },
     {
-      "file": "uk-vnrevival-02-character-creation.png",
-      "sha256": "dbd570bef1822b9c4e8827166fc609b8bc57421f9dea64190c82a09496d4ff5f",
+      "file": "../../visual-qa-upload/th-02-character-creation.png",
+      "sha256": "bd8ee37be40a00b34ffdd7610ef866334b920cab13c032cfd5d4a8e68dc94295",
       "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
     },
     {
-      "file": "uk-vnrevival-03-gus-dialogue.png",
-      "sha256": "1030f6ce84574e45ed3f86594210dd4ef2b2634be68713edbd0c8c804560a7ff",
+      "file": "../../visual-qa-upload/th-03-gus-dialogue.png",
+      "sha256": "56be32d1ab0931105340df66b1923f80ea28758402a0d81c7a364cae51c350ee",
       "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
     },
     {
-      "file": "uk-vnrevival-04-item-description.png",
-      "sha256": "dd4a0a8be77029f21b224594b6211032e816f215d195a5c780c976b77c4f58e3",
+      "file": "../../visual-qa-upload/th-04-item-description.png",
+      "sha256": "b1147736911b70b35f0f7aa8b54977dd795ecfd003f5fa25c313a3353e1bb2f3",
       "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
     },
     {
-      "file": "uk-vnrevival-05-journal.png",
-      "sha256": "65427b9f91746a57d121c1476a6c773e0b433edddd35a084a0b14c22947ee59c",
+      "file": "../../visual-qa-upload/th-05-journal.png",
+      "sha256": "d091a76151445346cf341ce71994937d85e9fb9bfab0316e50d083441ab95391",
       "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
     }
   ],
   "contactSheet": {
-    "file": "uk-vnrevival-contact-sheet.png",
-    "sha256": "726af81412c42b831f9397b6f9e78aef6edb1bd902357667616e8cd6c5f8d1a1"
+    "file": "th-contact-sheet.png",
+    "sha256": "96274021b8ddc34167698b2a27cfd85824fdc860f7b95c4c72d432982736ada0"
   },
   "smapiLog": {
-    "file": "uk-vnrevival-smapi-2026-09-13.log",
-    "sha256": "04bd500b55a7cbf65962c6af0d09120d2f6fd95da247748ba536f70e882bd731"
+    "file": "th-smapi-2026-09-13.log",
+    "sha256": "766d1952812a6f0f1f4ed57c676019594566a0b3136b8d7264fcad77af01b085"
   },
   "restoration": {
     "testSaveWritten": false,
     "startupLanguageRestored": true
-  }
+  },
+  "publishingLocale": "th"
 }

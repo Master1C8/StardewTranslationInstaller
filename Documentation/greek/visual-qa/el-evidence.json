@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "date": "2026-09-13",
   "localeLabel": "Ελληνικά · Greek · el-vnrevival",
   "exactLocale": "el-vnrevival",
@@ -29,41 +29,42 @@
   "contentPatcherWarnings": 0,
   "screenshots": [
     {
-      "file": "el-vnrevival-01-title-menu.png",
+      "file": "../../visual-qa-upload/el-01-title-menu.png",
       "sha256": "ef0fd23318fd3b33248e38ef171162b6d51dcc9d3ebbb5daf21a0cca30f06f74",
       "coverage": "Localized title menu buttons and labels are visible and unclipped."
     },
     {
-      "file": "el-vnrevival-02-character-creation.png",
+      "file": "../../visual-qa-upload/el-02-character-creation.png",
       "sha256": "a82bfe2b81082f6d276763c990fcf467d11aa5ce4afc064ef1e1f548ee27e26b",
       "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
     },
     {
-      "file": "el-vnrevival-03-gus-dialogue.png",
+      "file": "../../visual-qa-upload/el-03-gus-dialogue.png",
       "sha256": "36b6dfa8e61c6e8500574c29bb6c6c510ae19e795a24af5c9c233c724045bebf",
       "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
     },
     {
-      "file": "el-vnrevival-04-item-description.png",
+      "file": "../../visual-qa-upload/el-04-item-description.png",
       "sha256": "850387cf067e5b18952c42472633a91bf01e80d2d14d838cb7febaabc01ee101",
       "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
     },
     {
-      "file": "el-vnrevival-05-journal.png",
+      "file": "../../visual-qa-upload/el-05-journal.png",
       "sha256": "38fded4a913bcf5fb8fd7507a672c29100df79757db83a2c30b52112d461c086",
       "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
     }
   ],
   "contactSheet": {
-    "file": "el-vnrevival-contact-sheet.png",
+    "file": "el-contact-sheet.png",
     "sha256": "5cdd851f3791be5597893af16984cb0af5b2cb00995643464d470e6693622dde"
   },
   "smapiLog": {
-    "file": "el-vnrevival-smapi-2026-09-13.log",
+    "file": "el-smapi-2026-09-13.log",
     "sha256": "0408523ed4f4698c871f9f318fd32495a71b0d70385585eecd1c1c5d37387346"
   },
   "restoration": {
     "testSaveWritten": false,
     "startupLanguageRestored": true
-  }
+  },
+  "publishingLocale": "el"
 }

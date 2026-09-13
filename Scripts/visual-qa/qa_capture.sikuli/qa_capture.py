@@ -166,6 +166,10 @@ def run_capture(screen, runtime_dir, code):
         dialogue = find_marker(screen, runtime_dir, "gus-dialogue", 15, 0.68)
     if not dialogue:
         fail("state marker 'gus-dialogue' did not appear after two interactions", screen, runtime_dir)
+    # The dialogue frame is detectable before Stardew's typewriter animation
+    # has finished. Give long localized introductions time to render fully so
+    # the evidence never captures a partially typed final word.
+    wait(5.0)
     capture(runtime_dir, code + "-03-gus-dialogue-raw.png")
 
     signal_driver(runtime_dir, "inventory")

@@ -6,6 +6,16 @@ struct GlyphBitmap {
     let index: Int
     let character: String
     let image: CGImage
+    // Highest glyph-path point above the typographic baseline. BMFont uses it
+    // to preserve that baseline after each glyph is cropped to alpha bounds.
+    let topExtent: Int
+
+    init(index: Int, character: String, image: CGImage, topExtent: Int = 0) {
+        self.index = index
+        self.character = character
+        self.image = image
+        self.topExtent = topExtent
+    }
 }
 
 struct AtlasRectangle {
@@ -117,6 +127,13 @@ func alphaBounds(of bitmap: NSBitmapImageRep) -> CGRect? {
     return CGRect(x: minX, y: minY, width: maxX - minX + 1, height: maxY - minY + 1)
 }
 
+func typographicTop(of text: String, font: NSFont) -> Int {
+    let attributed = NSAttributedString(string: text, attributes: [.font: font])
+    let line = CTLineCreateWithAttributedString(attributed)
+    let bounds = CTLineGetBoundsWithOptions(line, [.useGlyphPathBounds])
+    return Int(ceil(bounds.maxY))
+}
+
 func renderGlyph(
     _ character: String,
     index: Int,
@@ -199,7 +216,12 @@ func renderGlyph(
         }
         throw GeneratorError.renderFailed(character)
     }
-    return GlyphBitmap(index: index, character: character, image: image)
+    return GlyphBitmap(
+        index: index,
+        character: character,
+        image: image,
+        topExtent: typographicTop(of: character, font: font)
+    )
 }
 
 func fontSupports(_ text: String, font: NSFont) -> Bool {
@@ -529,9 +551,20 @@ func processBmFont(
         if renderFont.fontName != font.fontName {
             fallbackCharacters.append(character)
         }
-        bitmaps.append(GlyphBitmap(index: index, character: character, image: glyph.image))
+        bitmaps.append(GlyphBitmap(
+            index: index,
+            character: character,
+            image: glyph.image,
+            topExtent: glyph.topExtent
+        ))
         advances[index] = max(1, Int(ceil((renderedText as NSString).size(withAttributes: [.font: renderFont]).width)))
-        yOffsets[index] = (lineHeight - glyph.image.height) / 2 + yOffsetAdjustment
+    }
+    // BMFont yoffset is the distance from the line top to the glyph top. Use
+    // the font's shared baseline and the glyph-path top bearing. The previous
+    // height-based centering moved accented letters down and descenders up by
+    // half their extra height, which made words visibly bounce.
+    for glyph in bitmaps where glyph.character != " " {
+        yOffsets[glyph.index] = base + yOffsetAdjustment - glyph.topExtent
     }
     let placements = try pack(bitmaps, atlasSize: atlasSize, padding: 1)
     guard let atlas = makeBitmap(width: atlasSize, height: atlasSize) else {

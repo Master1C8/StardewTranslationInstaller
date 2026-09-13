@@ -33,7 +33,7 @@ DEFAULT_JAVA = Path("/opt/homebrew/opt/openjdk@17/bin/java")
 DEFAULT_GAME_DIR = Path("/Volumes/KINGSTONMAC/SteamLibrary/common/Stardew Valley/Contents/MacOS")
 DEFAULT_PREFERENCES = Path.home() / ".config/StardewValley/startup_preferences"
 DEFAULT_SMAPI_LOG = Path.home() / ".config/StardewValley/ErrorLogs/SMAPI-latest.txt"
-REFERENCE_DIR = PROJECT_ROOT / "Documentation/russian/visual-qa"
+TEMPLATE_DIR = SCRIPT_DIR / "templates/2x"
 EXPECTED_SIZE = "2560x1600"
 
 CAPTURES = [
@@ -44,14 +44,14 @@ CAPTURES = [
     ("05-journal", "The expanded Introductions journal entry, body, and progress line fit the panel."),
 ]
 
-TEMPLATE_CROPS = {
-    "title": (2415, 1380, 120, 130, "01-title-menu"),
-    "character-creation": (820, 1070, 125, 125, "02-character-creation"),
-    "world": (2480, 1340, 70, 240, "03-gus-dialogue"),
-    "gus-dialogue": (1500, 1160, 330, 300, "03-gus-dialogue"),
-    "inventory": (890, 445, 85, 80, "04-item-description"),
-    "journal": (1660, 515, 75, 75, "05-journal"),
-}
+TEMPLATE_NAMES = (
+    "title",
+    "character-creation",
+    "world",
+    "gus-dialogue",
+    "inventory",
+    "journal",
+)
 
 
 def run_checked(command: list[str], **kwargs: object) -> subprocess.CompletedProcess[str]:
@@ -106,23 +106,18 @@ def ensure_dependencies(java: Path, jar: Path, game_dir: Path, smoke: bool) -> d
         quicksave_config = game_dir / "Mods/QuickSave/config.json"
         if not quicksave_config.is_file():
             raise RuntimeError(f"QuickSave config not found: {quicksave_config}")
-        for _, _, _, _, reference in TEMPLATE_CROPS.values():
-            path = REFERENCE_DIR / f"ru-vnrevival-{reference}.png"
+        for name in TEMPLATE_NAMES:
+            path = TEMPLATE_DIR / f"{name}.png"
             if not path.is_file():
-                raise RuntimeError(f"reference screenshot not found: {path}")
+                raise RuntimeError(f"recognition template not found: {path}")
     return dependencies
 
 
 def prepare_runtime(runtime: Path, magick: str) -> None:
     (runtime / "raw").mkdir(parents=True, exist_ok=True)
     (runtime / "templates/2x").mkdir(parents=True, exist_ok=True)
-    for name, (x, y, width, height, reference) in TEMPLATE_CROPS.items():
-        source = REFERENCE_DIR / f"ru-vnrevival-{reference}.png"
-        two_x = runtime / "templates/2x" / f"{name}.png"
-        run_checked([
-            magick, str(source), "-crop", f"{width}x{height}+{x}+{y}", "+repage",
-            "-alpha", "off", "-depth", "8", "PNG24:" + str(two_x),
-        ])
+    for name in TEMPLATE_NAMES:
+        shutil.copy2(TEMPLATE_DIR / f"{name}.png", runtime / "templates/2x" / f"{name}.png")
     run_checked([
         "/usr/bin/xcrun", "swiftc", str(SCRIPT_DIR / "cg_input.swift"),
         "-o", str(runtime / "cg-input"),
@@ -396,29 +391,43 @@ def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> 
             command.append("--replace")
         if args.keep_language:
             command.append("--keep-language")
-        print(f"\n=== Capturing {locale['label']} ===", flush=True)
-        child = subprocess.Popen(command, start_new_session=True)
-        try:
-            returncode = child.wait()
-        except KeyboardInterrupt:
-            with contextlib.suppress(ProcessLookupError):
-                os.killpg(child.pid, signal.SIGINT)
+        for attempt in range(1, 3):
+            print(f"\n=== Capturing {locale['label']} (attempt {attempt}/2) ===", flush=True)
+            child = subprocess.Popen(command, start_new_session=True)
             try:
-                child.wait(timeout=30)
-            except subprocess.TimeoutExpired:
+                returncode = child.wait()
+            except KeyboardInterrupt:
                 with contextlib.suppress(ProcessLookupError):
-                    os.killpg(child.pid, signal.SIGTERM)
+                    os.killpg(child.pid, signal.SIGINT)
                 try:
-                    child.wait(timeout=10)
+                    child.wait(timeout=30)
                 except subprocess.TimeoutExpired:
                     with contextlib.suppress(ProcessLookupError):
-                        os.killpg(child.pid, signal.SIGKILL)
-                    child.wait(timeout=5)
-            raise
-        if returncode:
+                        os.killpg(child.pid, signal.SIGTERM)
+                    try:
+                        child.wait(timeout=10)
+                    except subprocess.TimeoutExpired:
+                        with contextlib.suppress(ProcessLookupError):
+                            os.killpg(child.pid, signal.SIGKILL)
+                        child.wait(timeout=5)
+                raise
+            if not returncode:
+                break
+            if attempt == 1 and not output.exists():
+                print(
+                    f"Retrying {locale['code']} after transient capture failure "
+                    f"(exit code {returncode}).",
+                    file=sys.stderr,
+                    flush=True,
+                )
+                time.sleep(5)
+                continue
             print(f"Stopped after {locale['code']} failed with exit code {returncode}.", file=sys.stderr)
             return returncode
         completed += 1
+        # Let macOS fully release the game window and input device before the
+        # next Oculix JVM initializes its Screen/Mouse device.
+        time.sleep(3)
     print(f"All-locale run complete: captured {completed}, skipped {skipped}.")
     return 0
 
@@ -472,6 +481,12 @@ def main() -> int:
             process, reader = launch_game(
                 args.game_dir, runtime / "launcher.log", runtime / "quickload.request"
             )
+            # Stardew briefly captures the pointer while its fullscreen window
+            # is being created. Starting Oculix during that interval makes its
+            # Screen initialization fail with "Mouse not useable (blocked)".
+            # Let the game settle at the title sequence before attaching the
+            # automation JVM; its own state timeout still verifies the menu.
+            time.sleep(25)
             result = run_oculix(dependencies["java"], args.oculix_jar, runtime, "capture", args.locale)
             print(result.stdout, end="")
             if result.returncode:

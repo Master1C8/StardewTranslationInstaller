@@ -7,65 +7,63 @@
   "smapiVersion": "4.5.2",
   "contentPatcherVersion": "2.9.1",
   "quickSaveVersion": "1.5.0",
-  "packageVersion": "1.17.21",
+  "packageVersion": "1.17.23",
   "resolution": {
     "width": 2560,
     "height": 1600
   },
-  "method": "A fresh fullscreen game session was switched through the in-game language menu to Русский VN. The prepared save zc was loaded through the normal menu, then its QuickSave snapshot was loaded with F7 for the gameplay captures. macOS captured each stable screen at native 2560×1600 resolution; the locale label was added afterward without resizing the source frames.",
+  "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution; the locale label was added afterward without resizing.",
   "result": "pass",
+  "automatedResult": "pass",
+  "visualReview": {
+    "status": "pass",
+    "findings": []
+  },
   "exactLocaleLoads": [
     "Fonts/SpriteFont1.ru-vnrevival",
     "Fonts/SmallFont.ru-vnrevival",
     "Minigames/TitleButtons.ru-vnrevival"
   ],
+  "missingLocaleLoads": [],
   "contentPatcherErrors": 0,
   "contentPatcherWarnings": 0,
   "screenshots": [
     {
       "file": "ru-vnrevival-01-title-menu.png",
-      "sha256": "f9b6e93c30b9117ba46a5c06aa572372f2c3b49913b92249c135e53a707eee26",
-      "review": "Confirmed ru-vnrevival title menu with Russian buttons; the locale plaque is complete and unobstructed."
+      "sha256": "5206740fee8665823c5f9b359997078daf6484a370d42e21fdf9954bc2aca3ed",
+      "coverage": "Localized title menu buttons and labels are visible and unclipped."
     },
     {
       "file": "ru-vnrevival-02-character-creation.png",
-      "sha256": "769adc880d9a6880543b05ce31ecf797c441ddc07246457766f85412c2dfdd10",
-      "review": "Russian character-creation labels and farm thumbnails render without missing glyphs; the repaired НАЗАД button is visible below them."
+      "sha256": "36f7bc4b5bdd90234156a29c6ab7e966a8c315b05ced93c614dd80303a4448ba",
+      "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
     },
     {
       "file": "ru-vnrevival-03-gus-dialogue.png",
-      "sha256": "172cab6f6952a02096f1bc5ffd45645296f7c1d24d761f4a7ddd85f2c1422308",
-      "review": "Гас's portrait, localized name, and multi-line Russian dialogue render without clipping or missing glyphs."
+      "sha256": "1564a23401dc7e0b5797e757816f5cc9fa86b445ab3d3db6875343c56b2805e1",
+      "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
     },
     {
       "file": "ru-vnrevival-04-item-description.png",
-      "sha256": "166e1a45f8e86c18b43ca4999472a05a0e62066207f7bf7902fe386de19226b9",
-      "review": "The tooltip shows Топор, Инструмент, and Используется для рубки дерева. with the localized inventory metadata."
+      "sha256": "7367a03066b3278d92fda6db0c0996d144e136729fabf5f1c5ca9e62466cb2fc",
+      "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
     },
     {
       "file": "ru-vnrevival-05-journal.png",
-      "sha256": "9487e45b6b49a610752251f1f10c781f35a8a6440968da8e581d3db77ead7936",
-      "review": "The expanded Знакомства entry, Russian body copy, and 3/28 progress line render within the journal panel."
+      "sha256": "4af60477afecf155cab2a4c476031badd0f7fb68224fd60d9dbce42fb9e01842",
+      "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
     }
   ],
   "contactSheet": {
     "file": "ru-vnrevival-contact-sheet.png",
-    "sha256": "2e376fabb1858e30c5461b0524f63c1225d469b431198cd6cd3ae8c72eafd692"
+    "sha256": "46e66f59fc927f56a74b4cc7b4b0a5c3114070b6481aabd46271ef04ec65329b"
   },
   "smapiLog": {
     "file": "ru-vnrevival-smapi-2026-09-13.log",
-    "sha256": "5afe5a967a7c5a0778c5a6daba5efd0104c5316ca336adc8c3def982a9ebe95d",
-    "note": "The fresh log records the exact custom locale, all three locale-specific asset loads, the QuickSave F7 load, and no Content Patcher ERROR or WARN entries. SMAPI separately emits its expected Changed save serializer warning for QuickSave 1.5.0."
+    "sha256": "089b0600ea2c1750f39fcb8b83517fc5241e9ab50faf362063179dfb3cde2cd4"
   },
   "restoration": {
     "testSaveWritten": false,
-    "startupLanguageCodeAfterCapture": "VNRevival.StardewValleyTranslations_Russian"
-  },
-  "automatedResult": "pass",
-  "visualReview": {
-    "status": "pass",
-    "findings": [
-
-    ]
+    "startupLanguageRestored": true
   }
 }

@@ -53,6 +53,10 @@ exits nonzero instead of continuing with blind clicks. Interrupting `--all`
 forwards the signal to the active locale and gives its cleanup handler time to
 restore the original language and remove the temporary SMAPI driver.
 
+Stable recognition crops are stored under `templates/2x/`. They are input
+assets rather than generated evidence, so every locale output directory can be
+deleted before a fresh run without making the runner depend on an old capture.
+
 Successful output is written to `Documentation/<locale>/visual-qa/`. Each PNG
 keeps the native 2560x1600 frame and starts with the exact locale code. The
 runner also writes a contact sheet, the fresh SMAPI log, hashes, and an evidence

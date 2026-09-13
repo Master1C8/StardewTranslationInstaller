@@ -7,68 +7,60 @@
   "smapiVersion": "4.5.2",
   "contentPatcherVersion": "2.9.1",
   "quickSaveVersion": "1.5.0",
-  "packageVersion": "1.17.21",
+  "packageVersion": "1.17.23",
   "resolution": {
     "width": 2560,
     "height": 1600
   },
   "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution; the locale label was added afterward without resizing.",
-  "result": "visual-review-failed",
+  "result": "pass",
   "automatedResult": "pass",
   "visualReview": {
-    "status": "fail",
-    "findings": [
-      {
-        "severity": "high",
-        "screen": "vi-vnrevival-03-gus-dialogue.png",
-        "issue": "Spaces and character advances collapse in Gus’s SpriteFont1 dialogue even though the source contains spaces; words join together and the line is difficult to read."
-      }
-    ]
+    "status": "pass",
+    "findings": []
   },
   "exactLocaleLoads": [
     "Fonts/SpriteFont1.vi-vnrevival",
     "Fonts/SmallFont.vi-vnrevival",
     "Minigames/TitleButtons.vi-vnrevival"
   ],
-  "missingLocaleLoads": [
-
-  ],
+  "missingLocaleLoads": [],
   "contentPatcherErrors": 0,
   "contentPatcherWarnings": 0,
   "screenshots": [
     {
       "file": "vi-vnrevival-01-title-menu.png",
-      "sha256": "c9fd895f0285693f0272a68abbe7d302cdbc3d5f286020d4f730e3b1c0840ec1",
+      "sha256": "6aa25b0f2cad25ce37193174c9a9fa5b461dc4d9f7b5ce8b2dfb2d9821b734f7",
       "coverage": "Localized title menu buttons and labels are visible and unclipped."
     },
     {
       "file": "vi-vnrevival-02-character-creation.png",
-      "sha256": "01b40f4c0b50abd8e7a838a05a527a80e2e5b0df350c749947ef71eddd6f87b6",
+      "sha256": "e8fd45c180cfe9d9a9901d54623bc3e35fdf5573c23ee7fb7fbdd209b8af88c6",
       "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
     },
     {
       "file": "vi-vnrevival-03-gus-dialogue.png",
-      "sha256": "714627384b86cbf5a056b44b41eec7e93d71815d7690afc4303db29e2c3ec379",
+      "sha256": "96fee7c04b1177b17b2ab69d458fa354fa09625d7346d56fba11ca0ed02cb3bc",
       "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
     },
     {
       "file": "vi-vnrevival-04-item-description.png",
-      "sha256": "b4d33722a7f27e95f483389fc127c53458ae962e4e25ad46b9d8a13f690d75e0",
+      "sha256": "b8afea7cdc1282b42d2a7b5677f8840421224a1478c8f8037196db29f710530f",
       "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
     },
     {
       "file": "vi-vnrevival-05-journal.png",
-      "sha256": "c0284a1dbdacf4cb433776003caeb3f41054c12168629ad2a1bff44189626bbd",
+      "sha256": "967bbbf864f65e994a8d137931b803f9c8c15bc368e1a0a33c3625df06d23f26",
       "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
     }
   ],
   "contactSheet": {
     "file": "vi-vnrevival-contact-sheet.png",
-    "sha256": "9c5eabbf6c0a3b0ada8de8d29db6d992d1003f6bab5a2dc06c3844a1fb1b97aa"
+    "sha256": "72e645605782a8f862167b125665dc080cf62a43437ab145e12a8691c77e14f0"
   },
   "smapiLog": {
     "file": "vi-vnrevival-smapi-2026-09-13.log",
-    "sha256": "6c7a6b98cf8fb0bce6fd4076dfbe646a9c96411ad5fa5e39513bdcee78ef0237"
+    "sha256": "f2a33057465c5e180d836aef12c63589b3f1ed880e1a019a6d772941b48bb26a"
   },
   "restoration": {
     "testSaveWritten": false,

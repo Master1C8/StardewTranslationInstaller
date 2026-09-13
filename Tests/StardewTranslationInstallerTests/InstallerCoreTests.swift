@@ -265,7 +265,7 @@ struct InstallerCoreTests {
         let persianFontHashes = [
             "assets/fonts/persian/SpriteFont1.xnb": "b4a1309ff96d648d6f2c62cb3cf7d409bc5a00b24625f987e51dc0bac0120935",
             "assets/fonts/persian/SmallFont.xnb": "4e9b04ab7144ac61d68e23922f03a4264a5baee6af455f78269bfef734757969",
-            "assets/fonts/persian/Persian.xnb": "383d144183c129cd766971d81e483182cb27889d2d80ae0f17f157390d543ce9",
+            "assets/fonts/persian/Persian.xnb": "5378841b991054ab37ab8e43f87218597ad6cca3aa4ee52f7688e5f4287d2289",
             "assets/fonts/persian/Persian_0.xnb": "7636466d6f7b84c9caa26ab4598672f18da927dc9be47b96e6c597e3a3461b04",
         ]
         for (fontPath, expectedHash) in persianFontHashes {
@@ -278,7 +278,7 @@ struct InstallerCoreTests {
         let arabicFontHashes = [
             "assets/fonts/arabic/SpriteFont1.xnb": "ef03a896307f93b14d60db2da267b82fe8cb197de73999f61ecbb4cabe7579ba",
             "assets/fonts/arabic/SmallFont.xnb": "7f332a694f40fbe82e77b0da9128de3298f260db1e2903777b1802969aeeebfa",
-            "assets/fonts/arabic/Arabic.xnb": "89ef759ea22b100b1f0f197d55c53368d0e5372eb97185f6f9fe971b42499471",
+            "assets/fonts/arabic/Arabic.xnb": "fa5c545e26e9b37192a353c564266be345c631d1b6634ac2b34b7a759fd52b3d",
             "assets/fonts/arabic/Arabic_0.xnb": "36c0fa014a26eef241a16dc35139bd11e4dcf5b8c6be5860ce2c7ccda1caf9d4",
         ]
         for (fontPath, expectedHash) in arabicFontHashes {
@@ -291,7 +291,7 @@ struct InstallerCoreTests {
         let hindiFontHashes = [
             "assets/fonts/hindi/SpriteFont1.xnb": "5674a9c057d4300b0e486fc967baae9290abc57ca00b084bc9b91ee91095daea",
             "assets/fonts/hindi/SmallFont.xnb": "4605ca474a407c9a45d87ab3e10298da50c36e3bac53d72adf6dca52c8f42481",
-            "assets/fonts/hindi/Hindi.xnb": "604542baa005667173a02231c930724899a16176109030d1705bc5e967aa3e34",
+            "assets/fonts/hindi/Hindi.xnb": "7bf0c2d5fdf940d3d2223ccc8682ab142ef673ef5a09776e2465eee6fe32c242",
             "assets/fonts/hindi/Hindi_0.xnb": "63799d747543ece08c3d145ba827b407075453db89318c9c11dd3f77c906db35",
         ]
         for (fontPath, expectedHash) in hindiFontHashes {
@@ -304,7 +304,7 @@ struct InstallerCoreTests {
         let traditionalChineseFontHashes = [
             "assets/fonts/traditional-chinese/SpriteFont1.xnb": "58cc635bca5544520ddfc92966b577478923e7c3aff640d075771c54bd470b89",
             "assets/fonts/traditional-chinese/SmallFont.xnb": "7407549bb569e7bdca384be434335322a22a0295663ad50d624fdc96eb81ff2e",
-            "assets/fonts/traditional-chinese/ChineseTraditional.xnb": "96c7a1c75d446f29483ad0e527f1e8ba0f3390681e7aa09bd9e30500ea8ec8ba",
+            "assets/fonts/traditional-chinese/ChineseTraditional.xnb": "1f24e1ddb44783c746bbf48706ad270ad99856a623634d08c3653b7677867470",
             "assets/fonts/traditional-chinese/ChineseTraditional_0.xnb": "feaef04007687f3f98b6f08d64188813ce46cfd7db30b59020750cebf9d1132b",
         ]
         for (fontPath, expectedHash) in traditionalChineseFontHashes {
@@ -324,7 +324,7 @@ struct InstallerCoreTests {
         let thaiFontHashes = [
             "assets/fonts/thai/SpriteFont1.xnb": "35393514d41b8d553bb0a607d6556473a38ce6f5ae69d269e018ce2c0570d386",
             "assets/fonts/thai/SmallFont.xnb": "786a1c6c0925ef6d45a30a38461acd7da9270f1e3b98d0dcc13422d5b2d28422",
-            "assets/fonts/thai/Thai.xnb": "9a4f146eed09711a6161552fe634858a43159883ecd6447e1fa6846391e5e738",
+            "assets/fonts/thai/Thai.xnb": "79a546e02aa09063d685afd2e1f81e39f24d737f20b36ea28a5b1178a7997c3a",
             "assets/fonts/thai/Thai_0.xnb": "bc768b383d7cd1cdfbd364e74b792fa1b22d438b28c9fae3467354b6ba2b2468",
         ]
         for (fontPath, expectedHash) in thaiFontHashes {

@@ -6,7 +6,7 @@
 
 ## Что уже работает
 
-- автоматическое обнаружение Steam-версии Stardew Valley на macOS;
+- автоматическое обнаружение Steam-версии Stardew Valley на macOS и Steam/GOG-версий на Windows;
 - автоматический старт установки сразу после открытия приложения;
 - автоматическая загрузка SMAPI 4.5.2 и Content Patcher 2.9.1;
 - обновление найденных, но устаревших SMAPI и Content Patcher до закреплённых версий;
@@ -56,6 +56,21 @@ NOTARY_KEYCHAIN_PROFILE='vn-revival' \
 
 Релизный сценарий включает hardened runtime, timestamp, нотариализацию и staple;
 без обеих переменных он останавливается до создания распространяемого архива.
+
+Нативный Windows x64-выпуск собирается на macOS через MinGW-w64. Для сборки
+нужны `x86_64-w64-mingw32-gcc`, `x86_64-w64-mingw32-windres` и ImageMagick:
+
+```sh
+brew install mingw-w64 imagemagick
+./Scripts/build-windows-release.sh
+```
+
+Сценарий создаёт архив
+`dist/Stardew Translation Installer-Windows-<version>.zip`. Пользователь должен
+сначала полностью распаковать его, сохранив папку `Resources` рядом с EXE.
+Windows-приложение использует встроенный Windows PowerShell, автоматически
+находит игру, проверяет контрольные суммы зависимостей и устанавливает тот же
+единый пакет всех языков без отдельного выбора локали.
 
 ## Тесты
 

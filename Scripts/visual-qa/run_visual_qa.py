@@ -353,6 +353,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("locale", nargs="?", help="exact locale code, for example sr-vnrevival")
     parser.add_argument("--list", action="store_true", help="list supported locale codes")
+    parser.add_argument("--all", dest="all_locales", action="store_true", help="capture every locale sequentially")
     parser.add_argument("--smoke", action="store_true", help="only test Oculix capture and macOS permissions")
     parser.add_argument("--replace", action="store_true", help="replace an existing locale visual-QA directory")
     parser.add_argument("--keep-language", action="store_true", help="leave the selected locale in startup_preferences")
@@ -363,6 +364,43 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> int:
+    if args.locale:
+        raise RuntimeError("a locale code can't be combined with --all")
+    if args.smoke:
+        raise RuntimeError("--smoke can't be combined with --all")
+
+    completed = 0
+    skipped = 0
+    for locale in locales:
+        output = args.output_root / locale["slug"] / "visual-qa"
+        if output.exists() and not args.replace:
+            print(f"Skipping {locale['code']}: output already exists ({output})")
+            skipped += 1
+            continue
+        command = [
+            sys.executable,
+            str(Path(__file__).resolve()),
+            locale["code"],
+            "--oculix-jar", str(args.oculix_jar),
+            "--java", str(args.java),
+            "--game-dir", str(args.game_dir),
+            "--output-root", str(args.output_root),
+        ]
+        if args.replace:
+            command.append("--replace")
+        if args.keep_language:
+            command.append("--keep-language")
+        print(f"\n=== Capturing {locale['label']} ===", flush=True)
+        result = subprocess.run(command)
+        if result.returncode:
+            print(f"Stopped after {locale['code']} failed with exit code {result.returncode}.", file=sys.stderr)
+            return result.returncode
+        completed += 1
+    print(f"All-locale run complete: captured {completed}, skipped {skipped}.")
+    return 0
+
+
 def main() -> int:
     args = parse_args()
     locales, package = load_configuration()
@@ -371,6 +409,8 @@ def main() -> int:
         for locale in locales:
             print(f"{locale['code']}: {locale['label']}")
         return 0
+    if args.all_locales:
+        return run_all_locales(args, locales)
     dependencies = ensure_dependencies(args.java, args.oculix_jar, args.game_dir, args.smoke)
     with tempfile.TemporaryDirectory(prefix="vn-visual-qa-") as temporary:
         runtime = Path(temporary)

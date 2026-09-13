@@ -40,12 +40,15 @@ override the three machine-specific paths.
 python3 Scripts/visual-qa/run_visual_qa.py --smoke
 python3 Scripts/visual-qa/run_visual_qa.py --list
 python3 Scripts/visual-qa/run_visual_qa.py sr-vnrevival
+python3 Scripts/visual-qa/run_visual_qa.py --all
 ```
 
 The full run refuses to start while another Stardew Valley process is active
 and refuses to overwrite an existing visual-QA directory. Use `--replace` only
-after reviewing the existing evidence. A mismatch saves a failure screenshot
-at the project root and exits nonzero instead of continuing with blind clicks.
+after reviewing the existing evidence. In `--all` mode, existing locale
+directories are safely skipped unless `--replace` is present, and the batch
+stops on its first failed locale. A mismatch saves a failure screenshot at the
+project root and exits nonzero instead of continuing with blind clicks.
 
 Successful output is written to `Documentation/<locale>/visual-qa/`. Each PNG
 keeps the native 2560x1600 frame and starts with the exact locale code. The

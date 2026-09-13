@@ -1,0 +1,16 @@
+{
+  "Name": "VN Revival Visual QA Driver",
+  "Author": "VN Revival",
+  "Version": "1.0.0",
+  "Description": "Temporary local-only bridge which triggers QuickSave for automated visual QA.",
+  "UniqueID": "VNRevival.VisualQADriver",
+  "EntryDll": "VNRevival.VisualQADriver.dll",
+  "MinimumApiVersion": "4.1.10",
+  "Dependencies": [
+    {
+      "UniqueID": "DLX.QuickSave",
+      "IsRequired": true
+    }
+  ],
+  "UpdateKeys": []
+}

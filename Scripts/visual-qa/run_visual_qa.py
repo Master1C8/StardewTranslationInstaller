@@ -127,6 +127,10 @@ def prepare_runtime(runtime: Path, magick: str) -> None:
         "/usr/bin/xcrun", "swiftc", str(SCRIPT_DIR / "cg_input.swift"),
         "-o", str(runtime / "cg-input"),
     ])
+    run_checked([
+        "/usr/bin/xcrun", "swiftc", str(SCRIPT_DIR / "label_overlay.swift"),
+        "-o", str(runtime / "label-overlay"),
+    ])
 
 
 def build_smapi_driver(runtime: Path, game_dir: Path, csc: str) -> Path:
@@ -262,12 +266,7 @@ def postprocess(magick: str, runtime: Path, output: Path, locale: dict[str, str]
             raise RuntimeError(f"{raw.name} is {image_size(magick, raw)}, expected {EXPECTED_SIZE}")
         destination = output / f"{locale['code']}-{stem}.png"
         run_checked([
-            magick, str(raw),
-            "-fill", "#101827CC", "-stroke", "#FFFFFF66", "-strokewidth", "2",
-            "-draw", "roundrectangle 64,64 930,148 18,18",
-            "-font", "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
-            "-pointsize", "34", "-fill", "white", "-stroke", "none",
-            "-gravity", "NorthWest", "-annotate", "+96+87", locale["label"], str(destination),
+            str(runtime / "label-overlay"), str(raw), str(destination), locale["label"],
         ])
         if image_size(magick, destination) != EXPECTED_SIZE:
             raise RuntimeError(f"labeling resized {destination.name}")
@@ -375,9 +374,15 @@ def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> 
     for locale in locales:
         output = args.output_root / locale["slug"] / "visual-qa"
         if output.exists() and not args.replace:
-            print(f"Skipping {locale['code']}: output already exists ({output})")
-            skipped += 1
-            continue
+            evidence = output / f"{locale['code']}-evidence.json"
+            screenshots = [output / f"{locale['code']}-{stem}.png" for stem, _ in CAPTURES]
+            if evidence.is_file() and all(path.is_file() for path in screenshots):
+                print(f"Skipping {locale['code']}: complete output already exists ({output})")
+                skipped += 1
+                continue
+            if any(output.iterdir()):
+                raise RuntimeError(f"incomplete output requires review or --replace: {output}")
+            output.rmdir()
         command = [
             sys.executable,
             str(Path(__file__).resolve()),
@@ -392,10 +397,27 @@ def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> 
         if args.keep_language:
             command.append("--keep-language")
         print(f"\n=== Capturing {locale['label']} ===", flush=True)
-        result = subprocess.run(command)
-        if result.returncode:
-            print(f"Stopped after {locale['code']} failed with exit code {result.returncode}.", file=sys.stderr)
-            return result.returncode
+        child = subprocess.Popen(command, start_new_session=True)
+        try:
+            returncode = child.wait()
+        except KeyboardInterrupt:
+            with contextlib.suppress(ProcessLookupError):
+                os.killpg(child.pid, signal.SIGINT)
+            try:
+                child.wait(timeout=30)
+            except subprocess.TimeoutExpired:
+                with contextlib.suppress(ProcessLookupError):
+                    os.killpg(child.pid, signal.SIGTERM)
+                try:
+                    child.wait(timeout=10)
+                except subprocess.TimeoutExpired:
+                    with contextlib.suppress(ProcessLookupError):
+                        os.killpg(child.pid, signal.SIGKILL)
+                    child.wait(timeout=5)
+            raise
+        if returncode:
+            print(f"Stopped after {locale['code']} failed with exit code {returncode}.", file=sys.stderr)
+            return returncode
         completed += 1
     print(f"All-locale run complete: captured {completed}, skipped {skipped}.")
     return 0

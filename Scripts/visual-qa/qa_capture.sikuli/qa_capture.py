@@ -157,7 +157,15 @@ def run_capture(screen, runtime_dir, code):
     wait(1.5)
 
     native_input(runtime_dir, "right-click", 850, 1025)
-    require_marker(screen, runtime_dir, "gus-dialogue", 15, 0.68)
+    dialogue = find_marker(screen, runtime_dir, "gus-dialogue", 15, 0.68)
+    if not dialogue:
+        # Gus occasionally finishes a facing/movement tick just as the first
+        # interaction arrives. The speech bubble appears, but the dialogue does
+        # not open. Retrying the same safe interaction removes that race.
+        native_input(runtime_dir, "right-click", 850, 1025)
+        dialogue = find_marker(screen, runtime_dir, "gus-dialogue", 15, 0.68)
+    if not dialogue:
+        fail("state marker 'gus-dialogue' did not appear after two interactions", screen, runtime_dir)
     capture(runtime_dir, code + "-03-gus-dialogue-raw.png")
 
     signal_driver(runtime_dir, "inventory")

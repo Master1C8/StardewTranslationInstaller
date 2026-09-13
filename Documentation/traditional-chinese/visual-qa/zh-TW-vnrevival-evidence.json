@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-13",
+  "localeLabel": "繁體中文 · Traditional Chinese · zh-TW-vnrevival",
+  "exactLocale": "zh-TW-vnrevival",
+  "gameVersion": "1.6.15 build 24356",
+  "smapiVersion": "4.5.2",
+  "contentPatcherVersion": "2.9.1",
+  "quickSaveVersion": "1.5.0",
+  "packageVersion": "1.17.21",
+  "resolution": {
+    "width": 2560,
+    "height": 1600
+  },
+  "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution; the locale label was added afterward without resizing.",
+  "result": "pass",
+  "automatedResult": "pass",
+  "visualReview": {
+    "status": "pass",
+    "findings": [
+
+    ]
+  },
+  "exactLocaleLoads": [
+    "Fonts/SpriteFont1.zh-TW-vnrevival",
+    "Fonts/SmallFont.zh-TW-vnrevival",
+    "Minigames/TitleButtons.zh-TW-vnrevival"
+  ],
+  "missingLocaleLoads": [
+
+  ],
+  "contentPatcherErrors": 0,
+  "contentPatcherWarnings": 0,
+  "screenshots": [
+    {
+      "file": "zh-TW-vnrevival-01-title-menu.png",
+      "sha256": "96f8b95ca5beafb2aab7e955af3ffbbb6d7c7bea0df2a187cd8f57987c6bc9ad",
+      "coverage": "Localized title menu buttons and labels are visible and unclipped."
+    },
+    {
+      "file": "zh-TW-vnrevival-02-character-creation.png",
+      "sha256": "b20edda30abea192f3e6442f1a1b3426f3c24ac8aa8de416fca724b633f6ab58",
+      "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
+    },
+    {
+      "file": "zh-TW-vnrevival-03-gus-dialogue.png",
+      "sha256": "daddf66679fcf9be73b4579d4c94266eafa8f0776c798f5c2644f298142ab33b",
+      "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
+    },
+    {
+      "file": "zh-TW-vnrevival-04-item-description.png",
+      "sha256": "d2108c3a42b946e15beb2ca5df6774e52ae2dc6ff2fbb3f6e0ffa532fbc9fde3",
+      "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
+    },
+    {
+      "file": "zh-TW-vnrevival-05-journal.png",
+      "sha256": "f8eefbfe174feb2494389ca4452763037eae7e5a9eadc236c19d3d2dc5978d1a",
+      "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
+    }
+  ],
+  "contactSheet": {
+    "file": "zh-TW-vnrevival-contact-sheet.png",
+    "sha256": "b4a3d0a9c519ea044e6dc3e603313498f16000d1c8fb463d0dcbfa28cf017c0c"
+  },
+  "smapiLog": {
+    "file": "zh-TW-vnrevival-smapi-2026-09-13.log",
+    "sha256": "e14b61103c0e362c825d739b1eb379eea09e6c308bea9ee985fbca4e03da2104"
+  },
+  "restoration": {
+    "testSaveWritten": false,
+    "startupLanguageRestored": true
+  }
+}

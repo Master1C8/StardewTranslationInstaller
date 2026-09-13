@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-13",
+  "localeLabel": "हिन्दी · Hindi · hi-vnrevival",
+  "exactLocale": "hi-vnrevival",
+  "gameVersion": "1.6.15 build 24356",
+  "smapiVersion": "4.5.2",
+  "contentPatcherVersion": "2.9.1",
+  "quickSaveVersion": "1.5.0",
+  "packageVersion": "1.17.21",
+  "resolution": {
+    "width": 2560,
+    "height": 1600
+  },
+  "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution; the locale label was added afterward without resizing.",
+  "result": "visual-review-failed",
+  "automatedResult": "pass",
+  "visualReview": {
+    "status": "fail",
+    "findings": [
+      {
+        "severity": "high",
+        "screen": "hi-vnrevival-03-gus-dialogue.png",
+        "issue": "Spaces and character advances collapse in Gus’s SpriteFont1 dialogue even though the source contains spaces; words join together and the line is difficult to read."
+      }
+    ]
+  },
+  "exactLocaleLoads": [
+    "Fonts/SpriteFont1.hi-vnrevival",
+    "Fonts/SmallFont.hi-vnrevival",
+    "Minigames/TitleButtons.hi-vnrevival"
+  ],
+  "missingLocaleLoads": [
+
+  ],
+  "contentPatcherErrors": 0,
+  "contentPatcherWarnings": 0,
+  "screenshots": [
+    {
+      "file": "hi-vnrevival-01-title-menu.png",
+      "sha256": "2c0405d9fd1fe8ec55ea5e25fae318993ff29ac8cda5820ab9224a20b95b6fef",
+      "coverage": "Localized title menu buttons and labels are visible and unclipped."
+    },
+    {
+      "file": "hi-vnrevival-02-character-creation.png",
+      "sha256": "e8b06709d41280aed50cea632614c0a0c7b4ad537f23967eb53dd18eacf611c2",
+      "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
+    },
+    {
+      "file": "hi-vnrevival-03-gus-dialogue.png",
+      "sha256": "fda61091a8aa62516b31ab3ff7447d12489e73cf9a13199a6e36339bb5a3b399",
+      "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
+    },
+    {
+      "file": "hi-vnrevival-04-item-description.png",
+      "sha256": "637fb603b72546bf72d6f06014af3b09b54fd362e1087b81e09ffc16796709a6",
+      "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
+    },
+    {
+      "file": "hi-vnrevival-05-journal.png",
+      "sha256": "e9d6f933e422d659fc8b73133300cad76dfb3b16ee60fad3a3f907dac75c7f35",
+      "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
+    }
+  ],
+  "contactSheet": {
+    "file": "hi-vnrevival-contact-sheet.png",
+    "sha256": "5e952853930b179d5482fa597a4ce3acca620a61ff955098b82d778c9a37e6b4"
+  },
+  "smapiLog": {
+    "file": "hi-vnrevival-smapi-2026-09-13.log",
+    "sha256": "5bc47d16b7d1cc265855caac2f416e1d21f83db15b465b2db268680bced12eae"
+  },
+  "restoration": {
+    "testSaveWritten": false,
+    "startupLanguageRestored": true
+  }
+}

@@ -58,6 +58,26 @@ or blurry text:
   Scripts/assets/title-button-labels.png
 ```
 
+Latin American Spanish intentionally keeps Stardew Valley 1.6.15's complete
+`TitleButtons.es-ES` texture instead. Its main-menu, Back, and developer-card
+labels are already neutral for `es-419`, and reusing the original pixel art
+keeps the custom locale visually identical to the built-in Spanish UI. The
+generator marks this atlas as `baked_labels` and never clears it or draws the
+language-switcher overlays on top.
+
+The same locale also reuses all other 28 Spanish `Texture2D` resources shipped
+with Stardew Valley 1.6.15: the localized `LooseSprites`, map tile sheets, and
+minigame art are stored under `ModPayload/assets/textures/es-419/`. They are
+loaded only for `es-419-vnrevival`. Text dictionaries and Spanish fonts are not
+copied; the VN Revival translation and its generated font package remain
+authoritative. Import and verify the pinned assets with:
+
+```sh
+/usr/bin/python3 Scripts/add-es-419-label-assets.py \
+  --spanish-content-root '/path/to/Stardew Valley/Contents/Resources/Content' \
+  --spanish-title-atlas '/path/to/unpacked/TitleButtons.es-ES.png'
+```
+
 `title-back-template.png` contains the text-free normal and hover label areas
 for the 66×27 back button. `title-back-labels.png` contains regular-weight
 native-resolution lettering for that button in all 20 retained locales. The

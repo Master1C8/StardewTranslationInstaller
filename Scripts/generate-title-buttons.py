@@ -16,6 +16,7 @@ class TitleButtons:
     slug: str
     locale: str
     display_name: str
+    baked_labels: bool = False
 
 
 BUTTONS = (
@@ -38,7 +39,13 @@ BUTTONS = (
     TitleButtons("TitleButtons-thai.png", "thai", "Thai", "Тайская"),
     TitleButtons("TitleButtons-greek.png", "greek", "Greek", "Греческая"),
     TitleButtons("TitleButtons-czech.png", "czech", "Czech", "Чешская"),
-    TitleButtons("TitleButtons-latin-american-spanish.png", "latin-american-spanish", "Latin American Spanish", "Латиноамериканская испанская"),
+    TitleButtons(
+        "TitleButtons-latin-american-spanish.png",
+        "latin-american-spanish",
+        "Latin American Spanish",
+        "Латиноамериканская испанская",
+        True,
+    ),
 )
 
 ATLAS_SIZE = (400, 655)
@@ -276,9 +283,12 @@ def main() -> None:
     overlays: list[Image.Image] = []
     for index, spec in enumerate(BUTTONS):
         overlay = label_sheet.crop((0, index * RUNTIME_FRAME_SIZE[1], RUNTIME_FRAME_SIZE[0], (index + 1) * RUNTIME_FRAME_SIZE[1]))
-        overlay = offset_overlay(overlay, TITLE_VERTICAL_OFFSETS.get(spec.slug, 0))
-        validate_overlay(overlay, spec)
-        save_if_pixels_changed(overlay, args.overlays / f"TitleLabels-{spec.slug}.png", args.check)
+        if spec.baked_labels:
+            overlay = Image.new("RGBA", RUNTIME_FRAME_SIZE, (0, 0, 0, 0))
+        else:
+            overlay = offset_overlay(overlay, TITLE_VERTICAL_OFFSETS.get(spec.slug, 0))
+            validate_overlay(overlay, spec)
+            save_if_pixels_changed(overlay, args.overlays / f"TitleLabels-{spec.slug}.png", args.check)
 
         back_overlay = back_label_sheet.crop(
             (
@@ -288,8 +298,9 @@ def main() -> None:
                 (index + 1) * RUNTIME_BACK_SIZE[1],
             )
         )
-        validate_back_overlay(back_overlay, spec)
-        save_if_pixels_changed(back_overlay, args.overlays / f"TitleBack-{spec.slug}.png", args.check)
+        if not spec.baked_labels:
+            validate_back_overlay(back_overlay, spec)
+            save_if_pixels_changed(back_overlay, args.overlays / f"TitleBack-{spec.slug}.png", args.check)
 
         developer_overlay = developer_label_sheet.crop(
             (
@@ -299,21 +310,26 @@ def main() -> None:
                 (index + 1) * RUNTIME_DEVELOPER_SIZE[1],
             )
         )
-        validate_developer_overlay(developer_overlay, spec)
-        save_if_pixels_changed(
-            developer_overlay,
-            args.overlays / f"TitleDeveloper-{spec.slug}.png",
-            args.check,
-        )
+        if not spec.baked_labels:
+            validate_developer_overlay(developer_overlay, spec)
+            save_if_pixels_changed(
+                developer_overlay,
+                args.overlays / f"TitleDeveloper-{spec.slug}.png",
+                args.check,
+            )
 
         path = args.assets / spec.filename
         source = Image.open(path).convert("RGBA")
         atlas = source.copy()
-        atlas.paste(template, STRIP_POSITION)
-        clear_back_label(atlas, back_template)
-        clear_developer_labels(atlas, developer_alpha_templates)
-        validate_atlas(atlas, template, spec)
-        validate_back_template(atlas, back_template, spec)
+        if spec.baked_labels:
+            if atlas.size != ATLAS_SIZE:
+                raise ValueError(f"Invalid atlas dimensions for {spec.filename}: {atlas.size}")
+        else:
+            atlas.paste(template, STRIP_POSITION)
+            clear_back_label(atlas, back_template)
+            clear_developer_labels(atlas, developer_alpha_templates)
+            validate_atlas(atlas, template, spec)
+            validate_back_template(atlas, back_template, spec)
         save_if_pixels_changed(atlas, path, args.check)
         atlases.append(atlas)
         overlays.append(overlay)

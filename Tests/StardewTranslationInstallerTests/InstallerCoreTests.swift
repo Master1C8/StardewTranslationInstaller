@@ -433,7 +433,7 @@ struct InstallerCoreTests {
             "assets/title/TitleButtons-thai.png": "2f0a61fff35c40991804baa0b8821a989b30c6f5e58b26324db5086430a8e0e2",
             "assets/title/TitleButtons-greek.png": "2f0a61fff35c40991804baa0b8821a989b30c6f5e58b26324db5086430a8e0e2",
             "assets/title/TitleButtons-czech.png": "1c2253e99bfd70f04a05162cc0a299e2d0a37ca26a357c2e8d3d0ecc45391ff4",
-            "assets/title/TitleButtons-latin-american-spanish.png": "1c2253e99bfd70f04a05162cc0a299e2d0a37ca26a357c2e8d3d0ecc45391ff4",
+            "assets/title/TitleButtons-latin-american-spanish.png": "36e7d299c0bc4eb0720953fad06dc5a152e7b8c918618e190400883928535170",
         ]
         for (titlePath, expectedHash) in unifiedTitleButtonHashes {
             try expect(try pngDimensions(titlePath) == (400, 655))
@@ -441,6 +441,41 @@ struct InstallerCoreTests {
                 try DependencyInstaller.sha256(of: payload.appendingPathComponent(titlePath))
                     == expectedHash
             )
+        }
+
+        let nativeSpanishTextureHashes = [
+            "LooseSprites/Billboard.xnb": "08e8826a56c679c60837b2c22d7a81b6459d8155967e099f95ecbc9d6315579a",
+            "LooseSprites/ControllerMaps.xnb": "b430bb1c5dab47e4cf088896a13fa9d6ee87f72ff359e4016f7679bbfa670141",
+            "LooseSprites/Cursors.xnb": "2d6d9938a7ba7a512aa10d5001ca2b03b82e36c9947b2570c411338761352b96",
+            "LooseSprites/JojaCDForm.xnb": "4b16ca3c7fe5328528001fd0eabe9e2fab9b52d39ba08c036e6ef75cb9f17e92",
+            "LooseSprites/JunimoNote.xnb": "3ab37844ea0d56e2cd78b72f2cb23d50af7c2c0a71d464ee588e3fcd766fa8bf",
+            "LooseSprites/MobileAtlas_manually_made.xnb": "d52eeda5901e4d47fd3601e900034dda3399ea7e95d854820d8193506020e0a0",
+            "Maps/DesertTiles.xnb": "845db3343e006dcb8419807ca5f3e6642bc21410b4af6913c43e525d2ed9f51e",
+            "Maps/Festivals.xnb": "331b9914e128ce01023a624028f51a5982fca3087753ef623a64542985cea954",
+            "Maps/bathhouse_tiles.xnb": "a32360999e1cb2439669f2da179883ba57a18d74861a044c4fb464cabe3c4e23",
+            "Maps/coopTiles.xnb": "119ead14adb8f6d96de50ba8a6b21a21306c58e47c9e637436d822bf67b51ee7",
+            "Maps/fall_beach.xnb": "0d84c26c1579e58ee3e87f60d5e7c3c431a4fa16a832342d87bcac11a45acb78",
+            "Maps/fall_outdoorsTileSheet.xnb": "e28a9570d6b835d6eaa72745c945600fe78f114359d61530207fdfe3c731c648",
+            "Maps/fall_town.xnb": "9fa60d8b7ff4ab43565d1c53467ae740c1bcf176d72ad889f46c9f4a90f24acd",
+            "Maps/samshowtiles.xnb": "c7ddc71963e7c019a0fb49bfd42d592ab55ccf6a96af3fcf34c80430b16377fa",
+            "Maps/spring_beach.xnb": "d48e2e5ec0d570052bd3d646b31a6eb68011dcdb115e571903f5f32bb64d1b92",
+            "Maps/spring_outdoorsTileSheet.xnb": "44690eada4950238947a702345f6be2589bb1626d5f6da069397d192f52dd472",
+            "Maps/spring_town.xnb": "2abaee4d97099168c614383f149d76176010782f90b18b2bb8e88c045ababe4e",
+            "Maps/springobjects.xnb": "2b2830e64e1abb58e67c687313453e94a8258d6b62147870c65e87948ab7e049",
+            "Maps/summer_beach.xnb": "724b7d4a3670a2cb11d527bd47f3b02b91c2f78158a6371e927f019d33b1efa3",
+            "Maps/summer_outdoorsTileSheet.xnb": "36e27a8d64c0a80ad0ceb0d5008b190732d28c82bb3f560a844a7fdd730eaa9e",
+            "Maps/summer_town.xnb": "1a5b07a80e17fabdebd22bdc596e99f2a2b4375210cbc4983f13508562d7f3cc",
+            "Maps/townInterior.xnb": "c4d6684153810df27aba5cd8848bae8640c9b49bd8fc5c2f6ccca62a0c9e3663",
+            "Maps/winter_beach.xnb": "32b1ac90db4843c8f3f5f938993ab72554041d09d6611fd3d97781d184626867",
+            "Maps/winter_outdoorsTileSheet.xnb": "d40fe0d24fd4eb7d2213cc3f790f157985013596e7734519d707e62bb0b5b410",
+            "Maps/winter_town.xnb": "1b766313fdf7b13189e6fd3b9f779eafd28527f9564b34f3e0bf3ba8ab099183",
+            "Minigames/Intro.xnb": "2a13f91025f3be4206fa89d22b2170c8e694472882b269c1e376367f84f949ad",
+            "Minigames/Xb1ProfileButton.xnb": "10f93c197b9574fdb50e57c54a8b088fe048a857e0fbee24ec385312ff8651cc",
+            "Minigames/jojacorps.xnb": "8e2c358b80acba2d6f618554e847ade2b1a0d501bc3ae489f22838e3a1af8a8a",
+        ]
+        for (relativePath, expectedHash) in nativeSpanishTextureHashes {
+            let texture = payload.appendingPathComponent("assets/textures/es-419/\(relativePath)")
+            try expect(try DependencyInstaller.sha256(of: texture) == expectedHash)
         }
 
         let vietnameseButtonPath = "assets/button-vietnamese.png"
@@ -689,7 +724,6 @@ struct InstallerCoreTests {
             "persian", "arabic", "indonesian", "filipino", "dutch", "hindi",
             "traditional-chinese", "romanian", "hebrew", "bulgarian", "thai",
             "greek", "czech",
-            "latin-american-spanish",
         ]
         for name in overlayNames {
             let overlay = titleOverlays.appendingPathComponent("TitleLabels-\(name).png")

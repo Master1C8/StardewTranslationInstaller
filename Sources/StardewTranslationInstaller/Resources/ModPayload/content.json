@@ -232,6 +232,18 @@
           "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
           "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
           "NumberComma": " "
+        },
+        "{{ModId}}_LatinAmericanSpanish": {
+          "ID": "{{ModId}}_LatinAmericanSpanish",
+          "LanguageCode": "es-419-vnrevival",
+          "ButtonTexture": "Mods/{{ModId}}/ButtonLatinAmericanSpanish",
+          "UseLatinFont": false,
+          "FontFile": "Fonts/LatinAmericanSpanish",
+          "FontPixelZoom": 1,
+          "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+          "ClockDateFormat": "[DAY_OF_MONTH] [DAY_OF_WEEK]",
+          "NumberComma": " "
         }
       }
     },
@@ -851,6 +863,39 @@
       "Action": "Load",
       "Target": "Fonts/Czech_0",
       "FromFile": "assets/fonts/czech/Czech_0.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ButtonLatinAmericanSpanish",
+      "FromFile": "assets/button-latin-american-spanish.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "TargetLocale": "es-419-vnrevival",
+      "FromFile": "assets/title/TitleButtons-latin-american-spanish.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SpriteFont1",
+      "TargetLocale": "es-419-vnrevival",
+      "FromFile": "assets/fonts/es-419/SpriteFont1.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/SmallFont",
+      "TargetLocale": "es-419-vnrevival",
+      "FromFile": "assets/fonts/es-419/SmallFont.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/LatinAmericanSpanish",
+      "FromFile": "assets/fonts/es-419/LatinAmericanSpanish.xnb"
+    },
+    {
+      "Action": "Load",
+      "Target": "Fonts/LatinAmericanSpanish_0",
+      "FromFile": "assets/fonts/es-419/LatinAmericanSpanish_0.xnb"
     },
     {
       "Action": "Include",
@@ -20491,6 +20536,754 @@
     {
       "Action": "Include",
       "FromFile": "assets/translations/czech/677-hidden-character-typed-field.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Dwarf.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/George.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Gil.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Kent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Krobus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/LeoMainland.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueAbigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueAlex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueElliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueEmily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueHaley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueHarvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueKrobus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueLeah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueMaru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialoguePenny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueSam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueSebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/MarriageDialogueShane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Mister Qi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Willy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/Wizard.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Characters/Dialogue/rainy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Achievements.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/AquariumFish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Boots.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Bundles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/ChairTiles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/CookingRecipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/CraftingRecipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/EngagementDialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/AbandonedJojaMart.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/AnimalShop.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/ArchaeologyHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Backwoods.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/BathHouse_Pool.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Beach.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/BoatTunnel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/BusStop.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/CommunityCenter.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/DesertFestival.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/ElliottHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Farm.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/FarmHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/FishShop.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Forest.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/HaleyHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/HarveyRoom.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Hospital.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/IslandHut.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/IslandNorth.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/IslandSouth.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/IslandWest.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/JoshHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/LeahHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/ManorHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Mine.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Mountain.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/QiNutRoom.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Railroad.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Saloon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/SamHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/SandyHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/ScienceHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/SebastianRoom.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/SeedShop.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Sewer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Sunroom.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Temp.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Town.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Trailer.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Trailer_Big.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/WizardHouse.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Events/Woods.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/ExtraDialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/FestivalDates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/fall16.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/fall27.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/spring13.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/spring24.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/summer11.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/summer28.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/winter25.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Festivals/winter8.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/HairData.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Monsters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/NPCGiftTastes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/PaintData.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/Quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/SecretNotes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/TV/CookingChannel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/TV/TipChannel.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/animationDescriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/hats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Data/mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/1_6_Strings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/BigCraftables.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Buildings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/BundleNames.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Characters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/EnchantmentNames.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Events.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/FarmAnimals.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Lexicon.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Locations.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/MovieConcessions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/MovieReactions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Movies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/NPCNames.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Notes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Pants.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Shirts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/SimpleNonVillagerDialogues.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/SpecialOrderStrings.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/SpeechBubbles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/StringsFromCSFiles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/StringsFromMaps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Tools.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/UI.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/Weapons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/WorldMap.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/animationDescriptions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/credits.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Abigail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Alex.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Caroline.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Clint.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Demetrius.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Elliott.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Emily.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Evelyn.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/George.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Gus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Haley.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Harvey.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Jas.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Jodi.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Leah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Leo.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Lewis.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Linus.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Marnie.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Maru.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Pam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Penny.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Pierre.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Robin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Sam.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Sandy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Sebastian.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Shane.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Vincent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/translations/es-419/Strings/schedules/Willy.json"
     }
   ]
 }

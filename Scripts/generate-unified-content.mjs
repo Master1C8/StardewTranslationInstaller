@@ -308,6 +308,22 @@ const languages = [
       { target: "Fonts/Czech_0", file: "assets/fonts/czech/Czech_0.xnb" },
     ],
   },
+  {
+    directory: "es-419",
+    suffix: "LatinAmericanSpanish",
+    code: "es-419-vnrevival",
+    buttonTarget: "ButtonLatinAmericanSpanish",
+    button: "assets/button-latin-american-spanish.png",
+    title: "assets/title/TitleButtons-latin-american-spanish.png",
+    fonts: "assets/fonts/es-419",
+    useLatinFont: false,
+    fontFile: "Fonts/LatinAmericanSpanish",
+    fontPixelZoom: 1,
+    bitmapFonts: [
+      { target: "Fonts/LatinAmericanSpanish", file: "assets/fonts/es-419/LatinAmericanSpanish.xnb" },
+      { target: "Fonts/LatinAmericanSpanish_0", file: "assets/fonts/es-419/LatinAmericanSpanish_0.xnb" },
+    ],
+  },
 ];
 
 const entries = {};

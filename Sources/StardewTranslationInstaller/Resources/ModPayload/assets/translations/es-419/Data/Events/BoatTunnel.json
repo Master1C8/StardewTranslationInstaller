@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BoatTunnel",
+      "When": {
+        "Language": "es-419-vnrevival"
+      },
+      "Entries": {
+        "9348571/Hl willyBoatFixed": "ocean/6 8/farmer -1000 -1000 0 Willy -1000 -1000 0/skippable/pause 4000/warp farmer 6 12/playSound doorClose/move farmer 0 -2 0/emote farmer 8/pause 1500/warp Willy 6 12/playSound doorClose/move Willy 0 -1 0/pause 500/emote Willy 28/pause 250/move farmer 1 0 0/move Willy 0 -1 0/pause 700/speak Willy \"Sí... Da pena verlo, ¿verdad?\"/pause 500/speak Willy \"Era el barco de mi padre... Le dio buen servicio durante más de 50 años.#$b#Pero ahora apenas se mantiene a flote.$s\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Yo mismo lo repararía, pero no tengo los materiales adecuados, ${muchacho^señorita}$.\"/faceDirection Willy 0/speak Willy \"Sí... 200 piezas de Madera noble para remendar el casco serían un buen comienzo.#$b#Pero también tendremos que volver a poner en marcha la máquina de boletos y reparar el ancla de iridio.\"/faceDirection farmer 0/pause 400/speak Willy \"Si consiguiera los materiales adecuados y reparara el viejo barco... entonces podría llevarte a las Islas Helecho.\"/faceDirection Willy 1/faceDirection farmer 3/speak Willy \"Dicen que son islas volcánicas llenas de loros extraños...\"/pause 400/quickQuestion #Sí, quiero ayudar.#No, paso...(break)emote Willy 32\\speak Willy \"Sí... Sabía que aceptarías, ${muchacho^señorita}$.$h\"\\speak Willy \"Te dejaré esta puerta sin llave... Puedes venir a dejar los materiales cuando quieras.\"(break)emote Willy 28\\speak Willy \"Está bien, como quieras...$s#$b#Si cambias de opinión, siempre puedes volver para ayudar. De todos modos, dejaré esta puerta sin llave.\"/pause 2000/end"
+      }
+    }
+  ]
+}

@@ -35,6 +35,7 @@ BUTTONS = (
     LanguageButton("button-thai.png", "ภาษาไทย"),
     LanguageButton("button-greek.png", "ΕΛΛΗΝΙΚΑ"),
     LanguageButton("button-czech.png", "ČEŠTINA"),
+    LanguageButton("button-latin-american-spanish.png", "ESPAÑOL LATAM"),
 )
 
 FRAME_WIDTH = 174

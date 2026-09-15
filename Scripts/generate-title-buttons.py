@@ -38,6 +38,7 @@ BUTTONS = (
     TitleButtons("TitleButtons-thai.png", "thai", "Thai", "Тайская"),
     TitleButtons("TitleButtons-greek.png", "greek", "Greek", "Греческая"),
     TitleButtons("TitleButtons-czech.png", "czech", "Czech", "Чешская"),
+    TitleButtons("TitleButtons-latin-american-spanish.png", "latin-american-spanish", "Latin American Spanish", "Латиноамериканская испанская"),
 )
 
 ATLAS_SIZE = (400, 655)

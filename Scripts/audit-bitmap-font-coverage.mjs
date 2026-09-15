@@ -34,6 +34,7 @@ const languageDirectories = new Map([
   ["th-vnrevival", "thai"],
   ["el-vnrevival", "greek"],
   ["cs-vnrevival", "czech"],
+  ["es-419-vnrevival", "es-419"],
 ]);
 
 function walkJSON(directory) {

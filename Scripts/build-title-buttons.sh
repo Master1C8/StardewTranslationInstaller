@@ -14,7 +14,7 @@ else
   exit 1
 fi
 
-"${python_command[@]}" -c 'import PIL, fontTools' || {
+"${python_command[@]}" -c 'import PIL' || {
   echo "The graphics dependencies are unavailable. Run 'uv sync --frozen'." >&2
   exit 1
 }

@@ -10,4 +10,4 @@ assets="$project_root/Sources/StardewTranslationInstaller/Resources/ModPayload/a
   --template "$project_root/Scripts/assets/language-button-template.png" \
   --labels "$project_root/Scripts/assets/language-button-labels.png" "$@"
 
-print "Built 19 unified language buttons."
+print "Built 20 unified language buttons."

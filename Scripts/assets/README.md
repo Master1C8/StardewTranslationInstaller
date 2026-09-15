@@ -4,9 +4,11 @@
 recovered from Stardew Valley 1.6.15's `LooseSprites/LanguageButtons.xnb`.
 
 `language-button-labels.png` contains the approved native-resolution pixel
-lettering for all 19 VN Revival language buttons, in selector order. It is
-derived directly from the owner's two visual references, rather than rendered
-from substitute system fonts. To rebuild it from those 1774x887 references:
+lettering for all 20 VN Revival language buttons, in selector order. The first
+19 rows are derived directly from the owner's two visual references. The
+Latin American Spanish row is generated deterministically by
+`Scripts/add-es-419-label-assets.py`. To rebuild the first 19 rows from those
+1774x887 references:
 
 ```sh
 /usr/bin/python3 Scripts/extract-reference-language-labels.py \
@@ -40,9 +42,11 @@ from another language. Regenerate it with:
 ```
 
 `title-button-labels.png` contains the approved 3× screen-resolution lettering
-for the four main-menu buttons in all 19 retained locales, in installer order.
-It is extracted from the owner's 977×1610 visual reference with continuous
-alpha coverage, so curves remain smooth. Generated `TitleButtons` atlases keep
+for the four main-menu buttons in all 20 retained locales, in installer order.
+The first 19 rows are extracted from the owner's 977×1610 visual reference;
+the Latin American Spanish row is generated deterministically by
+`Scripts/add-es-419-label-assets.py`. All rows retain continuous alpha coverage,
+so curves remain smooth. Generated `TitleButtons` atlases keep
 only the original frames, parchment, icons, and hover art; the shared language
 switcher draws each locale's `title-overlays/TitleLabels-*.png` at screen scale.
 This avoids Stardew's point-sampled 74×58 atlas cells, which make either blocky
@@ -56,7 +60,7 @@ or blurry text:
 
 `title-back-template.png` contains the text-free normal and hover label areas
 for the 66×27 back button. `title-back-labels.png` contains regular-weight
-native-resolution lettering for that button in all 19 retained locales. The
+native-resolution lettering for that button in all 20 retained locales. The
 build slices those labels into `title-overlays/TitleBack-*.png`, clears the tiny
 atlas labels, and the switcher draws a label only while a closable title submenu
 is visible. Each label is centered inside the parchment panel and automatically

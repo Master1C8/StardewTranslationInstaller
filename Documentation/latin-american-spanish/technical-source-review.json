@@ -1,0 +1,1849 @@
+{
+  "locale": "es-419",
+  "scope": "1136 source records inspected in full and classified as technical-only preserves; no translated wording generated.",
+  "assetReviews": [
+    {
+      "target": "Data/CookingRecipes",
+      "records": 81,
+      "sourceAssetSha256": "2a78872cd2c06f2bfe56f09d4e4a7914f37fe44d69af8754d8c6666fa1f0acc6",
+      "classification": "technical-preserve",
+      "reason": "Values contain recipe ingredient IDs, output IDs, yields, unlock conditions, skill and NPC identifiers, and engine flags. Dictionary keys are internal recipe identifiers; player-facing recipe names are localized in Strings/Objects."
+    },
+    {
+      "target": "Data/CraftingRecipes",
+      "records": 150,
+      "sourceAssetSha256": "703bd3b166d9d3f086ccdb61eead4d5e46dbd6196cf399991feff277534496f1",
+      "classification": "technical-preserve",
+      "reason": "Values contain ingredient IDs, output IDs and quantities, recipe categories, unlock conditions, skill and NPC identifiers, context tags, and engine flags. Dictionary keys are internal recipe identifiers; player-facing names are localized in Strings/Objects and Strings/BigCraftables."
+    },
+    {
+      "target": "Data/Furniture",
+      "records": 645,
+      "sourceAssetSha256": "fcd475ae3acc754fca864984113ad04b1ee7b1fd410455fe7328a2817ebe2712",
+      "classification": "technical-preserve",
+      "reason": "Values contain internal furniture names, furniture-type enums, sprite geometry, prices, placement flags, and LocalizedText references into Strings/Furniture. Player-facing names are supplied by those referenced Strings/Furniture entries, so every Data/Furniture value must remain exact."
+    }
+  ],
+  "records": [
+    {
+      "target": "Data/AquariumFish",
+      "key": "128",
+      "sourceSha256": "e1ccfe1ca96334b7df43c13815bd6d82a6e73fd9982cd6dd3051ae362bf106c3",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "129",
+      "sourceSha256": "48d9b0db4baae861faf1cecba8505d8dd0dafaa4bc3d6f04003d10375663a65d",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "130",
+      "sourceSha256": "960498189dc6d4af5c65fafb1a8812a642be510ae63913ff951372be0dec3d16",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "131",
+      "sourceSha256": "e6b498f87cf9ba647411c8f8c88e10926e9ae88ea75c664751db04b9f6855e1a",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "132",
+      "sourceSha256": "aa39395a31b8f3c34efa81628aad706bbf71a3efa69c8b0939d250ad145b7a81",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "136",
+      "sourceSha256": "5a2d38a9955147dc05a5f3cf711c3d4ac85995008496c8539bbdf30c8c0afae2",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "137",
+      "sourceSha256": "012fbd065a0ff3b066658744087325137b054a351cfa267b0d3d8dfae3d8fc76",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "138",
+      "sourceSha256": "646677289957b07d4ca6417530a3e19e46fff0b42237166324fb1c8496d01c70",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "139",
+      "sourceSha256": "a7b5623b9ead5cadc3bd5794940e17efbce7bd996c37a5cd99665ba081638a56",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "140",
+      "sourceSha256": "05a816aa8e3b92583cd0b42863dbd0fdc6cb03d0e1d08bac4e7d5662fdd0178f",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "141",
+      "sourceSha256": "4110442234f225ef26c1990561de34aa597757b039521ab67823bc36e3f0b015",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "142",
+      "sourceSha256": "a319fea8f7a4be43f8efd443ea5edfae4aec7ef3d6c63259b6b8250d432df509",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "143",
+      "sourceSha256": "9f815f43ccbd6a9d0df8402c2fea53afe7a1b57e327e55e60b1394a3fbf14b18",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "144",
+      "sourceSha256": "b34dc652b92d365743b39cfde6c271308581dcff3e5da97068eb6e7505113b83",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "145",
+      "sourceSha256": "5a0e8afc2e68fe581164c3a1997ef0cf695a0aa01eeb0c0c32a76a92881f8dcc",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "146",
+      "sourceSha256": "cb9f285e102e9d8f4b9337c64766308ad3f2cd9c14348b5b46200664d9c70c1e",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "147",
+      "sourceSha256": "4bca9c2f267004711a606461079e9f056922bb1ed387c2e522eac1171c287fde",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "148",
+      "sourceSha256": "e468e3d25abda523b5dba74862ff353595eea5a8ae4d41432f973a802dc5c44c",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "149",
+      "sourceSha256": "d77f1699a8d35cb5462466c068312f4518d4af989bf2afd0723fc644d116bd5c",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "150",
+      "sourceSha256": "67c1851060c66c07b4f30024c746225c190a75b9746c01e742b82ab7e915be50",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "151",
+      "sourceSha256": "b72c4d9b9957916ca59928b5196900957592370c4c6b54cffd037c88eafe5e2c",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "154",
+      "sourceSha256": "61628b7533b416809c23116d9a35fa91d12fb7ef0ef763e50521f2e94f932472",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "155",
+      "sourceSha256": "25afaf6bcddb6c8a124472dbf816af775bd1b57c5d2c7d369cfe8b2ee4c81ee7",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "156",
+      "sourceSha256": "2388c1c60e07a22492f4d3d21d4e39d8b7b4921c18a5f8feef4d8d79f61180b3",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "158",
+      "sourceSha256": "5fc8b68a3c9d671564bfa2ed960be81337b259ce1f214645f02cd1817453757d",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "159",
+      "sourceSha256": "cd487f49941fdb4ff90bba74b0655a556e6473cba9f46b521d089e3692d06ccc",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "160",
+      "sourceSha256": "96cb34bf1fc0d5418f58e2d9aac4f43cf0587ea59f05262ea0923ac1f08fcb66",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "161",
+      "sourceSha256": "56710de14b49a106a37c48f91404baf7379cd6da1c7564482fcc4e13580f3152",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "162",
+      "sourceSha256": "0a845737f506b0bd915fe288a8801c5e1e12f18f6d71bbb205c1c1e1b4c2f30f",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "163",
+      "sourceSha256": "743465be1bd77e50d3df2d01141adb1bf7d4f276e72d2cc323fd09294ddbf92e",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "164",
+      "sourceSha256": "1922344e7b074f777d68fac661c3c0d3aa013424b6e63da613b50445520e8213",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "165",
+      "sourceSha256": "a54f543613383f936c3b0f8d79f522d54aac56533d01f6d1a94c30cb5529276c",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "267",
+      "sourceSha256": "944ee980c7ab10ea83ac000ea34bc8e9ff4e12164feda8f083e9e9a8cebfb676",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "269",
+      "sourceSha256": "c4e1f4a1bbf5bddf7db8b62d5ef227b50c5640adc2e0a61a54e0dc209e6fa47f",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "372",
+      "sourceSha256": "8657f6027cb1d67a9b8ef9fd89595197ca9adf0eb1b97a66f4ded502b0d68ecf",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "397",
+      "sourceSha256": "4cd1f385107123c3355bd00b59fc3f31b5b45dafabac0e5d6b8d0f36d78ce5f6",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "682",
+      "sourceSha256": "c33a7cec13adcdbe8179b3f5d49092b89f834d81e236d0d0b8c25e23c121ff2e",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "698",
+      "sourceSha256": "9ac894488b5d99be3cc17aed6a6dd77612c60851f47a157ceb5dc67db5678036",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "699",
+      "sourceSha256": "5e98f323a3d4f1c29386b5109a6f657be8cddbb6f9f5b211888862974b0990ff",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "700",
+      "sourceSha256": "1b6f636d62612de14859ae2b68984b0a0e14b8ef277e049225d2997ac29cfa15",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "701",
+      "sourceSha256": "af177bd5365e8ed296a5a359658eb2364915ad87701ffd41b36c94b619ae0195",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "702",
+      "sourceSha256": "c24ea083a9dd60428e56cd3d6c300b88b0b234db746e6822bdc85687cf5ba154",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "704",
+      "sourceSha256": "df6bfc408cb3464d11e6d4a6ffe227d493ed467833e3cb74af66fc135a257dc6",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "705",
+      "sourceSha256": "dad13b450dff655a268948eea3b72eb9296edcd10dbd6a92d6602728acdc78bd",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "706",
+      "sourceSha256": "97129f54ba6665fce1ac4ea6633efb3011d5f10241cbd99cb275b7a4126da750",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "707",
+      "sourceSha256": "c1e1d31773c68c28ebd74803dd8588929a0f373e53b7af552f447b82e1c53cd8",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "708",
+      "sourceSha256": "0dc9876bd34e92dbd239e523c3f7b9d902596271104a3473dea2b71a37ea443d",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "715",
+      "sourceSha256": "1c92f90962dd87273e5acc1aae1ebb7a4bc22fdcc394c785e379b43656a6b106",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "716",
+      "sourceSha256": "409e15ce1a86dab54da735f13392d701bd624d606a83bb74d4de21b7d930acb7",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "717",
+      "sourceSha256": "ebfa2396452298c5c440c219bc6d15e6cc2c98cd8907cf0e6f0ac9b5197fbf17",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "718",
+      "sourceSha256": "5a29c34c69f7ad84fd50f70b5f0350ac5ef43c3a1eb2d8fbab6692b15795e362",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "719",
+      "sourceSha256": "2ff11e4be4d966d8f3d0de24a78ddee42cac669b04b9f85026343ad6930e15ce",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "720",
+      "sourceSha256": "12b6ddf920447ad3c7346ab24b2dcee0e5d2e27097c8d8274c15ae7ff84a0bae",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "721",
+      "sourceSha256": "2426f10be6895e5153f309cc07bf9c83ad15bf237d0465914473ee9530c0d182",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "722",
+      "sourceSha256": "deb68b84e61fda698ab2c0f880a4dcd777feb94e8067c23e3c76c9cea0e234a1",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "723",
+      "sourceSha256": "3fa2d18e468ce102bd1d2fc8c512a5267039489b3b270eae018385b371c6d666",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "734",
+      "sourceSha256": "7545a219c3ff7c24e97eadff553aa767f33a1d13a0a421ae06edcc363455185e",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "775",
+      "sourceSha256": "1eb89f483c8a044682b9ed5c8f285f0af57f97966c79f4dbd736261d4dc76ad1",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "795",
+      "sourceSha256": "3c640ea3b34c5632152ec19e65a7fa9fd0e18796110cd52ab664a059b1d4298f",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "796",
+      "sourceSha256": "3fd85df7c8d7a84efd5cc33244364e1a3530f85431182a6c7947564be8350273",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "798",
+      "sourceSha256": "3fd562ee3b7b8bb4d790a0c447c75048395cae9dcf47435aa966299eaf6f1619",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "799",
+      "sourceSha256": "7a9e228242d4ac43a79c8a1373b06f21173ee74a0286187894839ab29a8d516c",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "800",
+      "sourceSha256": "4fd668ba30dcbe9f6bb12bacd1d3969d65a7a1ace8a3ce3d0837d0c9f4ac3048",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "836",
+      "sourceSha256": "dc7cfcc02bd2eb51c51ce8b5e8fcb89bee5aea46cfc4a7202ec7b4cc420c3a04",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "837",
+      "sourceSha256": "338b860b1c4cd2ed0e9b5907221e1b2227d0fe88b5104da084b53e6b84f90d84",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "838",
+      "sourceSha256": "ec09b6b26ee3f39f297e01e010a6f4560cffb7c1b39251fbfa0fa720b4f2365f",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "898",
+      "sourceSha256": "7f17426bde6cc2592453369ccf6f08f17eaac36ebd171b4191c4aab0a63879c5",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "899",
+      "sourceSha256": "f594cbaaa9caf2550675d4864bb314e7bec9eda682da5b2b915ba8754f4e0c11",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "900",
+      "sourceSha256": "c5168bae2e203910b84100744a9dbe91aeb96607849e1b5d2eca78d945c44eab",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "901",
+      "sourceSha256": "aa31d3d6a7524b501877eb77ae49bcb5222a8dba7aeeff4853515672962ee450",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "902",
+      "sourceSha256": "6d52874b9ea81fa6eeca2237026c0ac525515da8bab155d3a15a84993e1f53b4",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/AquariumFish",
+      "key": "Goby",
+      "sourceSha256": "8e4d79bfb444e1b15e56d1b4fb4c9508d58995ee034c360094c54a7e0c9b82b4",
+      "classification": "technical-preserve",
+      "reason": "Technical aquarium rendering record: sprite/frame indices, movement-mode enum and animation frame sequences. Enum values such as fish, eel, float, static, ground, crawl and cephalopod are engine identifiers, not visible fish names."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/8/1",
+      "sourceSha256": "32a44c5c65d05be8960f60d3240fffab00f5105fc0e51c5e12ef45626adf026e",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/22/1",
+      "sourceSha256": "7bac26ffd7cfff2b116019c6e4ec0e3f110a23d65db6e84e8b8cb11b81be7a7c",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/2/10",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/3/10",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/7/10",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/27/33",
+      "sourceSha256": "c46ce062d021084614444da8886513ecdaf7c58dcb9ab8850509f59ccedd0dcd",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/27/34",
+      "sourceSha256": "202aea0619406f9d77413d317f0134212b79fa38e4238e3c79c360516241ef38",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/8/39",
+      "sourceSha256": "6636c9b8291c5fef924f8dd2ed644cadff63a0bce9fc5b1b0949742f583201df",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/10/39",
+      "sourceSha256": "6636c9b8291c5fef924f8dd2ed644cadff63a0bce9fc5b1b0949742f583201df",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/10/34",
+      "sourceSha256": "8eee357a3863334b42ac1bd06f8e63fab5e626d38200e9f5c8c81e1c232a8c7f",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_town/21/36",
+      "sourceSha256": "54afd3d9f0f927538fb5dde5a8cb20bf7c4aca3e37a1eb57e486015c32fabe30",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_beach/12/18",
+      "sourceSha256": "5a3efc395b09116d20eb2809fbead4961fb2ba6f8ff2d3a009f83397ad6858ef",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "DesertTiles/13/2",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "DesertTiles/14/2",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "DesertTiles/8/16",
+      "sourceSha256": "d0ad5d1c0a741aa9c7cbf01347d4b343e2f1ea4c2ad3e02bada37b339579c16a",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/22/27",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/30/27",
+      "sourceSha256": "369efec2c9eb87068bece5045c64fb82f3b3c5db23cf71c2d49c62c029333f17",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/30/28",
+      "sourceSha256": "a2bb85017a6bd4c8135e71225c2250995d69525c4f0e28febba3741dd7a8d093",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/31/28",
+      "sourceSha256": "1bade66e8c939bfb52c80135051d3b93a3173d81a0436ea94e0111f294cdbea5",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/18",
+      "sourceSha256": "f183c517333459f5959edd5ecf60be8583a43aa923d192662b4a2713839dfd99",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/13/16",
+      "sourceSha256": "80245e196ddf242ecd5692593952f3946fe09c67e739c2b777f3558b3e07c9d1",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/13/18",
+      "sourceSha256": "80245e196ddf242ecd5692593952f3946fe09c67e739c2b777f3558b3e07c9d1",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/16/17",
+      "sourceSha256": "80245e196ddf242ecd5692593952f3946fe09c67e739c2b777f3558b3e07c9d1",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/13/23",
+      "sourceSha256": "716534dabee684b167b386f9e333a54355e1cdd55bb384377ec6a2f206cc40fb",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/15/23",
+      "sourceSha256": "47992c4de7532421ca5c4581ce1f6af3545763f4ea27e4024e406984420f6f53",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/22",
+      "sourceSha256": "cdba25d5a1a240f5fed21fc619ac7dcfc6464c7599273e447048990830a842f7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/22",
+      "sourceSha256": "b2a5017db60bd8d9d98599c416ae342a927fbdcbc0885ef77ff811c10b45c039",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/24",
+      "sourceSha256": "0be22867b3a02fd8d48b419e990d9e6d575dc5fcd0f79bf5ebde87a4ea364272",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/24",
+      "sourceSha256": "08acc2d8cd774285514a81e3e89615a888e894cefde39aaf1547959f63b59ac1",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/8/12",
+      "sourceSha256": "cdba25d5a1a240f5fed21fc619ac7dcfc6464c7599273e447048990830a842f7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/9/16",
+      "sourceSha256": "b2a5017db60bd8d9d98599c416ae342a927fbdcbc0885ef77ff811c10b45c039",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/8/14",
+      "sourceSha256": "0be22867b3a02fd8d48b419e990d9e6d575dc5fcd0f79bf5ebde87a4ea364272",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/16",
+      "sourceSha256": "79153149c4b74543ea8d87cc462fe4efa9f081f914e1faea10a1e45065553ca1",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/15",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/16",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/9/17",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/27/36",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/10/26",
+      "sourceSha256": "cdba25d5a1a240f5fed21fc619ac7dcfc6464c7599273e447048990830a842f7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/26",
+      "sourceSha256": "0be22867b3a02fd8d48b419e990d9e6d575dc5fcd0f79bf5ebde87a4ea364272",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/12/26",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/25/33",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/26/33",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/27/33",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/28/33",
+      "sourceSha256": "608469ef1b6fa0f695a8ebc524783a67aa4433f50c37886bb97828559edb56b6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/30/33",
+      "sourceSha256": "7935f04d45656e15fa9cdcb4f78e1feff9f39c3dd52b842b11726bbf98c29f7c",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/30/34",
+      "sourceSha256": "56bd3ae78dad16e65b307f01f41138538db1df91a474249bf34a2aa98dbf1cb4",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/31/34",
+      "sourceSha256": "c2193f40e456e8fea66013320042a0b0c4be821fbd9b5463dd40135dbe148e73",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/22/22",
+      "sourceSha256": "8bfb1fcd38455003cdda021c77dc2061379c5933b90a2b249efe55f0101bf0ad",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/24/13",
+      "sourceSha256": "cdba25d5a1a240f5fed21fc619ac7dcfc6464c7599273e447048990830a842f7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "bathhouse_tiles/13/15",
+      "sourceSha256": "c947478808677b571bf34de1207cc816165b945e9c5148e308fbe8faeb03cabd",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "bathhouse_tiles/6/4",
+      "sourceSha256": "c947478808677b571bf34de1207cc816165b945e9c5148e308fbe8faeb03cabd",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "bathhouse_tiles/7/13",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "bathhouse_tiles/8/13",
+      "sourceSha256": "d73f3d62960fa89c093ad61ab6e04e161a654570021fdd846941c818896d3ce3",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "bathhouse_tiles/8/11",
+      "sourceSha256": "110a0006530885be2fb9a4b212a62b2ec11d829b3369244ef89ceba688e83880",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "townInterior/11/49",
+      "sourceSha256": "554356797c5a9e725f26733802d8797e0a2798364bbcf33030217005610f7975",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "island_tilesheet_1/6/41",
+      "sourceSha256": "b2a5017db60bd8d9d98599c416ae342a927fbdcbc0885ef77ff811c10b45c039",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_outdoorsTileSheet/0/48",
+      "sourceSha256": "03b91772f3e2f6e7f125c1530c964f96f369b209f1e546651210f4e80256f6d6",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "ElliottHouseTiles/2/6",
+      "sourceSha256": "90efd70eff122cd968a8cd163db801f74c01cab3d9e4ebcd3deac579f4bd5463",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "WitchHutTiles/2/15",
+      "sourceSha256": "1f917b70f8a6fe934ca31ebf5aa230fa9bab92a2d99cc8c8392d38601ae5c6e7",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/ChairTiles",
+      "key": "spring_outdoorsTileSheet2/13/9",
+      "sourceSha256": "5ed9dfb55245d247301e398a57aa03e22a6dc946cbca69fd81dc86a41645ab03",
+      "classification": "technical-preserve",
+      "reason": "Technical seat definition keyed by tilesheet and coordinates: dimensions, facing direction, seat-type identifier, sprite offsets and boolean. Labels such as bench, chair, opposite and stool tall control seat behavior and are not player-facing prose."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "100",
+      "sourceSha256": "54c0a994a9798c048cbbde536a7fd19631d6a9a331cd97841d05fbf2f99e9e17",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "101",
+      "sourceSha256": "d114923682a0502932d248fef1374b2706f2b6790c4a1cf7044edf1cefc5dbc2",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "102",
+      "sourceSha256": "1f576472b3eeadb16f7bd98e0d70e10c5badda661fd728d79650c7369b4e5c55",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "103",
+      "sourceSha256": "99890945a7ebb1f9fda86a38c072554aed661075c6863dd3dd91409d8b9f8ac8",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "104",
+      "sourceSha256": "a804f776a972392e8d70739c93c1f47aaf1728cfe10bfbaf9a23a494d80ddc81",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "105",
+      "sourceSha256": "31ec5d3c37033c041b7ff7837054dc160cafa1747f1b1920b7a4f6b27ee2cb19",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "106",
+      "sourceSha256": "69e78a68fd56e4a6cda922a3cc64df6a720153c2a2c740d1f7b94b5f506030d9",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "107",
+      "sourceSha256": "f20f2379835595392ecc84a339a2f5d685e7a391c7f55bebb8df0c4992c890bc",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "108",
+      "sourceSha256": "8f1be48a05eff2cce33e1525314ed8d47c42564699742bb0360263b7b6d4c0af",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "109",
+      "sourceSha256": "dcbad15185303dfeeab02a1cec968d3f98baf07c131d770559143a85968b49f7",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "110",
+      "sourceSha256": "a0fd36d91ab34f2d0684f77e3ba44e1c6c9a9e3ed3a36211d266d66e7f30a8fc",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "111",
+      "sourceSha256": "87532ee7cc3df367e83c68d2b878f198d85d42ff9a406948ae5c79f960a4c8d5",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "112",
+      "sourceSha256": "59d72f46e38c630113876e616b64d3e4874ba3f8d9794049dfa96a4141652234",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "113",
+      "sourceSha256": "d29fa3302342b5fe27ac0065d46e0fab2aaf783ef8249df5fc89460e63c35ee6",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "114",
+      "sourceSha256": "817971722e628aef78cffba1786188f3d0ddf0c946185f92aed9fd175bf98f40",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "115",
+      "sourceSha256": "69ab99fa5f3741a2f18efdaabb6a5437320526e84f2337e2dff6f22e254fb69d",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "116",
+      "sourceSha256": "8bc421ebda21e40dbb89b6aeedf458c46dd32966bd9d06ee120ff472939ae835",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "117",
+      "sourceSha256": "2abfd80f0ac35f988165f1b9a9d7492c506a10fe941f6f2440176911bc98df7c",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-101",
+      "sourceSha256": "abc56357ab9ab1e798c6fff389235add61791387795f6c8a0d194a6af86eba10",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-114",
+      "sourceSha256": "441da2aee21bbfc8a2b5f99154989742f0003652400521eeed98cb13e46e4011",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-115",
+      "sourceSha256": "9f068d2b22e09795f4ad8009bddf551be19de7fc7b661e10ad9990e55d4f5b06",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-110",
+      "sourceSha256": "c4c1046bf5e374cd8091c9b53769672136b7e0fc6590b956dcbd88abaaecc6a1",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/HairData",
+      "key": "-111",
+      "sourceSha256": "fe39dbe49bcccfc30821b399e484e51f6153e72706258f2ce93f8866937c5610",
+      "classification": "technical-preserve",
+      "reason": "Technical hairstyle definition: spritesheet asset name, sprite offsets, flags and alternate-style identifiers. hairstyles2 is an asset reference, not a visible hairstyle label."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "abigail_videogames",
+      "sourceSha256": "b91e6b5db86897a3d033712f68c682f96f887ed459255589294591f42f772508",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "abigail_sit_down",
+      "sourceSha256": "18843460eec556d939d278f78562bd4171dd44dcb342882a9e4afa20e512bbc6",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "abigail_flute",
+      "sourceSha256": "b1e59f67818a55d57b8137629342d2a5f46c5102cd2cf41ba61d27515a8373dc",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "birdie_fish",
+      "sourceSha256": "cea46f23b2c5902fa3fd2b7f939328a0517558ea4ea8ea6850bdb052c33fd9c4",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "penny_dishes",
+      "sourceSha256": "29a59f274708022cf462ae473debe3d3ac2e2f9e17a110aabc34e65c07e17735",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "penny_read",
+      "sourceSha256": "2db3c74fdeb236fc019381f6b881232fbd1e9601cf5a6442e6fd6e670ad09f3b",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "dick_fish",
+      "sourceSha256": "eeb3812e2c1f8cff26cb62f21c068b9a1598fc73faeada987d63dcdae27d9387",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "clint_hammer",
+      "sourceSha256": "fd80a20572de201627e75b7f72ccbb358711afd0abed289ff1e30e72a5b11efe",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "elliott_read",
+      "sourceSha256": "86b3bf70778d9949d2a0ae54035a110ec7142bd843c1a4ba230e065247ddb208",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "elliott_sit_down",
+      "sourceSha256": "0d27166674e372d8bacfe6c8693e6dc3c94471896cd5564676d26987e1c402c9",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "elliott_drink",
+      "sourceSha256": "72738499bc734d95710459480b12fbb35da45667773b70537059ff1175120c1a",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "evelyn_sit_left",
+      "sourceSha256": "d2a84f596277915799cd91eefd6f2eed6dcb27b43b06b3c9c16eb1d4d9b9393b",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "evelyn_garden",
+      "sourceSha256": "c0ef5e8db9536174a26a19590e23e61f8e61620283374af9c3d7b5efc9213491",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "haley_photo",
+      "sourceSha256": "6db881320a27813c6e229b6a33a013ead482e42bc56796b8a897ec9b09134093",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "harvey_radio",
+      "sourceSha256": "2800b59e1e0cdd5f187c1819b8db10e53dd4150355b4882fd243fcba29ff749f",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "harvey_eat",
+      "sourceSha256": "ad920a52fe3daea0827174a8c29b2f648ab5c49cd6c000ed789ddba2f6721c06",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "harvey_read",
+      "sourceSha256": "1f64d59f2052200145890cce2add9135bb180a1f1c31be1d1e183df8db32a62a",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "harvey_examine_left",
+      "sourceSha256": "a12698214192c9fbe1f0029b9b3a11321d4f97d5b5d90a2fc90a24889095c916",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "jodi_dishes",
+      "sourceSha256": "4863043325cbc04141dc7f70b0f2dbae5618a6dfaeaaa9a6c423a1cf7d60a905",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "pam_sit_down",
+      "sourceSha256": "ff95064be080fe3015cf2afaf2328c837a9be3b588335b653eb400ebbdd2aada",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "alex_football",
+      "sourceSha256": "ad5172bbcd86bfee66c7b45b0ea0c8aafd4531f74db54d0806a6bd2bddb0dd08",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "alex_lift_weights",
+      "sourceSha256": "5408687b61023224e00dc15b6333f89490f3e5b6f081005adcc2e2987e20f8cd",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "alex_sit_left",
+      "sourceSha256": "9c128b929cdcfc78716c305d1a3f7e2439502d82f5df47972350d0ee78cfe9b4",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "maru_sit_down",
+      "sourceSha256": "64320aa625f5a07ea4ec03ead2e82b97b9106f0174ced00e69549c9b3b4cfcb4",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leah_sculpt",
+      "sourceSha256": "52e6ad34974a8e8ec154358231c99b5572052aab647a9b7283253ca5b0b409d0",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leah_draw",
+      "sourceSha256": "9ed023faf1af6739f2609d7f3c890d83d0989ef6af8238f1bf5492bedbb869ec",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "maru_tinker",
+      "sourceSha256": "6e3f5785563e848d04d9733da7ac008e44658a7b286c1c47cdc9754f76a8bd40",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "lewis_garden",
+      "sourceSha256": "8c32732faf2137dc67e2e4b8b67baeb54b67205551b63df93757b24b49a3cb8c",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "lewis_drink",
+      "sourceSha256": "5d3bd4b5d7e2af5059b23ddbd6222ebcb3bd9ed0927af1acfcaf08b5b6e3252c",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "robin_dance",
+      "sourceSha256": "8214669a6be73a3929a761c1ba1656d2c628dc9dd2100d4e31f94489997a7132",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "demetrius_dance",
+      "sourceSha256": "90ebb48f4d2204c40c98b43fe6d7e1313f2e1baeff2a7cee6ce3bb57520b8baf",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "demetrius_read",
+      "sourceSha256": "b007c0b733cc278f34edf23137922d71c6fb9766a3aca8ee71f2b120cc184438",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "demetrius_hazmat",
+      "sourceSha256": "6c538b6efa103db19a288a41226f26f197681bc700e21c4d4c17ccde94c61be0",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "demetrius_notes",
+      "sourceSha256": "92ab70283ded1a6d0de5d5aa6d6522f9beb719e90b1193f6d3a4e000f1141285",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "emily_exercise",
+      "sourceSha256": "b94e9d4c3ce77ff4ad4d9f107f7be3828f69d1b3fa43a4b7d79bb87aa7e9534e",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "gus_clean",
+      "sourceSha256": "27e54139a0ab8b3d29986a320965e0263fee4f9255d00152837ae8a10f33008e",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "robin_exercise",
+      "sourceSha256": "eac7bd8795ee1b83b37d72a83cba017c71dd2890296254ce17c351cf699b34b5",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "gus_sit_down",
+      "sourceSha256": "27a11470cbbcf0c420456088d3b2c932fdedba1712be0804c7941e151380531a",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "caroline_exercise",
+      "sourceSha256": "8e2157d6bce9b62f91aab320aa502032e01bc813d62fcae388da0647e57acfe8",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "caroline_read",
+      "sourceSha256": "11e0e05be7c38ffa73b11ab36fb4a512cc4b76347af43de2874f9acb5546089d",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "shane_drink",
+      "sourceSha256": "ede13e59637bbab32377955fe7ef128fb3c35f0d6d10a1ded780c11dd8195321",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "shane_work",
+      "sourceSha256": "aef5e1b36053a3108e3dc3e66a38e5f1056f873d5ebd1a1115a1c1177e126f99",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "marnie_exercise",
+      "sourceSha256": "29b965bf49acd600c203f374ad2f5eff81af782638444f81e4be2a88a66869b8",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "marnie_drink",
+      "sourceSha256": "04def68ce8df54a0f2df726ac17d3a87d61f4d77992b85d0322b034b3ea760e4",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "jodi_exercise",
+      "sourceSha256": "5c604b9bd16ee03a43d02b81de8cb6dbb341a2c5e7dcd4c5066c2ed39084b231",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "jodi_sit_down",
+      "sourceSha256": "ec0423af2a3d80052d3a46698bc9d402ba14bda23913a9118a4ebc2d733427d8",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "vincent_read_right",
+      "sourceSha256": "30fccd250f733f259e89a8e41e1bd06c516985b8b5ef2571b8322df162ac19c3",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "vincent_play",
+      "sourceSha256": "458023849b510755dfa2da3a910863ca7ecd472f7dae97c50b3fe4878b07bdbd",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "vincent_beach",
+      "sourceSha256": "51d159c4a87081d32a8f3d46dbc5669c1ac1843ce6011881818d557fea47b71c",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "penny_sit_down",
+      "sourceSha256": "f6fd7a4c90f2ba8d019190e76d2e9b328c27e760bfd0c64da1add78d1f247ad7",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "jas_read",
+      "sourceSha256": "6c538b6efa103db19a288a41226f26f197681bc700e21c4d4c17ccde94c61be0",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "jas_jumprope",
+      "sourceSha256": "87f4032a0f692433511f13d93aa2574866f51d5f85463a038a05239015885605",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "penny_wave_left",
+      "sourceSha256": "0e680fad87e08a2fa40ccaa7e3c59b38d77bdbf4caeb324be5b7bd7c5a39e700",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_computer",
+      "sourceSha256": "687ec5d0267770205699d1efd2b2b2c09764cc83173f930bf64cb30cc5f81867",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_cardsLeft",
+      "sourceSha256": "e32d00c82a7626205208741f6234cc50f2fb1b2c1718831e5a3fa0a34bb3c0a3",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_smoking",
+      "sourceSha256": "da35d24de7ea5c93dedb171f40c90cd10cbc77b86f989bafb1223c4e3fa66e73",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sam_guitar",
+      "sourceSha256": "ceacc09f85d676d7e4ec49bdf5c6f8b1b4abe1567e97a24f2d4f37c59aaa1dd9",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sam_gameboy",
+      "sourceSha256": "6a2608feb493f4c8a52b8fead2ed8539bd9f3fbd039cd3f396c5f914224b7662",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sam_skateboarding",
+      "sourceSha256": "ff004126dc9bae72420b5c72e6b591ac84d00d5f24f6a7799244c7207f005a4b",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sam_pool",
+      "sourceSha256": "249218fffc1f76d7200206ad5fff73ed5fa4b1f8fb7ee708ef937e6528fac874",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sam_work",
+      "sourceSha256": "18779f7bde7a72a1af05047b5dfbdb7fe1ef7ba601c61bb7da9ae69df6003540",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "haley_sleep",
+      "sourceSha256": "9c128b929cdcfc78716c305d1a3f7e2439502d82f5df47972350d0ee78cfe9b4",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "shane_sleep",
+      "sourceSha256": "858a9973f978f753fc7594df81a148c8845c3e71cce9f4e1f2a81d9b93b3a214",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_sleep",
+      "sourceSha256": "e433b5ebbb77de67aa881ebaa1c401447505faf8de811106804c510043fa1bed",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sam_sleep",
+      "sourceSha256": "41671ce3437fbbee3d0487374a47bc9d61b0d9768de75f9699f8ed60f794286b",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "robin_sleep",
+      "sourceSha256": "858a9973f978f753fc7594df81a148c8845c3e71cce9f4e1f2a81d9b93b3a214",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "pierre_sleep",
+      "sourceSha256": "ff95064be080fe3015cf2afaf2328c837a9be3b588335b653eb400ebbdd2aada",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "penny_sleep",
+      "sourceSha256": "d8002bcfb5e2bb1f60f6e9e20e982fe6e4767b15cf6f38c2309612f605b71c0f",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "pam_sleep",
+      "sourceSha256": "56c5b7a9a6786a98bb0745749a5d06dc4312f26f1bac7160abedffe5b6f6c01e",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "maru_sleep",
+      "sourceSha256": "86b3bf70778d9949d2a0ae54035a110ec7142bd843c1a4ba230e065247ddb208",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "marnie_sleep",
+      "sourceSha256": "906648e8f5099c298197f9ed14226812b606eca249119dbe0ab9d17126a26f0d",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "linus_sleep",
+      "sourceSha256": "18843460eec556d939d278f78562bd4171dd44dcb342882a9e4afa20e512bbc6",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "lewis_sleep",
+      "sourceSha256": "dfec6f9ccd643930cfbdfb51e6de6f89516508a97a33cd23101300cdbcc11a43",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leah_sleep",
+      "sourceSha256": "650066b21377902dd4d97ae6c68ce5e63bd5b4ad91d9344b891438ab96697b72",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "kent_sleep",
+      "sourceSha256": "ec0423af2a3d80052d3a46698bc9d402ba14bda23913a9118a4ebc2d733427d8",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "jodi_sleep",
+      "sourceSha256": "ff95064be080fe3015cf2afaf2328c837a9be3b588335b653eb400ebbdd2aada",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "jas_sleep",
+      "sourceSha256": "93f43e3176cbb4fd5dd5741dfc43303590c2444900eacffb2a83e746f04180ff",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "harvey_sleep",
+      "sourceSha256": "41671ce3437fbbee3d0487374a47bc9d61b0d9768de75f9699f8ed60f794286b",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "gus_sleep",
+      "sourceSha256": "dfec6f9ccd643930cfbdfb51e6de6f89516508a97a33cd23101300cdbcc11a43",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "vincent_sleep",
+      "sourceSha256": "b0c564d3c5f89b0e6e93076738c868bfc447c0adba3975adc252ccc4feef47f2",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "george_sleep",
+      "sourceSha256": "d2a84f596277915799cd91eefd6f2eed6dcb27b43b06b3c9c16eb1d4d9b9393b",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "emily_sleep",
+      "sourceSha256": "86b3bf70778d9949d2a0ae54035a110ec7142bd843c1a4ba230e065247ddb208",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "elliott_sleep",
+      "sourceSha256": "650066b21377902dd4d97ae6c68ce5e63bd5b4ad91d9344b891438ab96697b72",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "demetrius_sleep",
+      "sourceSha256": "27a11470cbbcf0c420456088d3b2c932fdedba1712be0804c7941e151380531a",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "clint_sleep",
+      "sourceSha256": "dbe4421fbfb436699c9271dab382167e8bab2549aefc39a412225133950119cf",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "caroline_sleep",
+      "sourceSha256": "18843460eec556d939d278f78562bd4171dd44dcb342882a9e4afa20e512bbc6",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "alex_sleep",
+      "sourceSha256": "650066b21377902dd4d97ae6c68ce5e63bd5b4ad91d9344b891438ab96697b72",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "abigail_sleep",
+      "sourceSha256": "c19e62b85940766b86b3b5ee918d5960171231b11f1263f472d68ee38fe7c1c3",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "penny_beach_towel",
+      "sourceSha256": "28e81349ba434a69bcf5326fa521260bbc544674174260d5d8f7006276a77a82",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "haley_beach_towel",
+      "sourceSha256": "61c3ff1d6cdf300baf5507814826246da9e5620c0b42fa27aa94a7ae5ff5363c",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "haley_beach_towel_2",
+      "sourceSha256": "d1c351b08b3d70ff96b4f32e4648783e3aff4440e1627f12ed5a96b2db50f405",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "haley_desert_festival",
+      "sourceSha256": "301f1a0a064d6eb569226081c1f0bc97fce7daec371c4eaaecc56b77a1924e71",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "abigail_beach_umbrella",
+      "sourceSha256": "6f3a1cd0adaa559e5e1a7949e521bb558c35ca3f8080b62f5fd305c612b6e395",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "alex_beach_towel",
+      "sourceSha256": "8a06367869ca9871e17102fee8ef6a87d9905dc7f8f6b802e712da1a07703b78",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "elliott_beach_drink",
+      "sourceSha256": "f94c9980f69230a3d9185ffa2fb32577a2809300bf4fc8ebee9a6b59aa16d31d",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "maru_beach_towel",
+      "sourceSha256": "19b039720940b2747901c9939b43f3597afe8904fb7560a0b4327691141054b5",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "emily_beach_dance",
+      "sourceSha256": "e8d1db8b44b4b274d89acac7c18428e122ccd58448da5d1f6c195472a7640eac",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sam_beach_towel",
+      "sourceSha256": "cf0d61f62539db64670a79b261fb5c76e95009b3f480146cdb8647b7b4eaec9d",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_beach_towel",
+      "sourceSha256": "0b0aa9026d85e5f68770bd9c0e65e55bd525c071b9cb7074acc96e614b766a34",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sebastian_beach_umbrella",
+      "sourceSha256": "1ca9287170d90e95e5473a95c68d2a34ff33d7b0ab0ca69c11f10293e151902d",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "shane_beach_drink",
+      "sourceSha256": "988240afa542861a1a8575a45354cac7186fe732308d1badd685e08e33661e6e",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leah_beach_drink",
+      "sourceSha256": "8ae542cb1ff4601f4008fab71b13da99b278f94c77702e7a12e6a91db071b8fe",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leo_sleep",
+      "sourceSha256": "18843460eec556d939d278f78562bd4171dd44dcb342882a9e4afa20e512bbc6",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "leo_sit_up",
+      "sourceSha256": "ff95064be080fe3015cf2afaf2328c837a9be3b588335b653eb400ebbdd2aada",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    },
+    {
+      "target": "Data/animationDescriptions",
+      "key": "sandy_wave",
+      "sourceSha256": "edbf4f8515672da102eff9355cb962bd37caad7e7206ac0ec32a6edd53221d87",
+      "classification": "technical-preserve",
+      "reason": "Animation frame sequences, references to Strings\\animationDescriptions entries, and engine flags silent, laying_down and offset. Player-facing descriptions are localized separately in the referenced Strings asset; these animation definitions must remain exact."
+    }
+  ]
+}

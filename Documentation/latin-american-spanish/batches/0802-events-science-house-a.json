@@ -1,0 +1,55 @@
+{
+  "locale": "es-419",
+  "target": "Data/Events/ScienceHouse",
+  "sourceAssetSha256": "0bbc50109a13bdf56004c2215bdcaf5f0f125dea710e64fc177aeacb58177c9f",
+  "reviewed": true,
+  "quotedReplacements": {
+    "6/f Maru 500/p Maru": {
+      "Oh, hello there!": "¡Ah, hola!",
+      "My Dad and I are just testing some soil samples.": "Mi papá y yo estamos analizando unas muestras de suelo.",
+      "Don't be shy! We could use a hand, actually.$h": "¡No tengas pena! La verdad es que nos vendría bien una mano.$h",
+      "Could you watch this beaker for me? I'm gonna grab the last batch of samples.#$b#I'll be right back.": "¿Puedes vigilar este vaso de precipitados? Voy a buscar el último lote de muestras.#$b#Regreso enseguida.",
+      "Thanks for helping out, @.": "Gracias por ayudarnos, @.",
+      "Maru's a good kid. She's my special little girl...": "Maru es una buena chica. Es mi niña... y es muy especial para mí...",
+      "I wouldn't want anything getting in the way of her bright future, know what I mean?$5": "No quisiera que nada se interpusiera en su prometedor futuro, ¿entiendes a qué me refiero?$5",
+      "Just some food for thought... *chuckle*$h": "Solo quería darte algo en qué pensar... *ríe entre dientes*$h",
+      "Hey, sorry about that. I hope you found something to talk about while I was gone.": "Oye, perdón por la demora. Espero que encontraran de qué hablar mientras no estaba.",
+      "...I was just telling @ about the soil samples we're testing.": "...Solo le contaba a @ sobre las muestras de suelo que estamos analizando.",
+      "$q 15933 null#Right, @?#$r 15933 10 Event_Lab_Silence#(Say nothing)#$r 15933 -100 Event_Lab_Rat#Actually, your Dad was being weird.": "$q 15933 null#¿Verdad, @?#$r 15933 10 Event_Lab_Silence#(No decir nada)#$r 15933 -100 Event_Lab_Rat#En realidad, tu papá se estaba comportando de forma extraña.",
+      "Okay! Here, @... let me show you how to use the equipment.": "¡Muy bien! Ven, @... déjame mostrarte cómo usar el equipo."
+    },
+    "DadWeird": {
+      "Huh? What did you say to ${him^her}$, Dad?$a": "¿Qué? ¿Qué le dijiste a ${him^her}$, papá?$a",
+      "Okay, okay... we were talking about you, sweetie.$5#$b#I wanted to say a few things to @ about you... but I didn't want to embarrass you. I shouldn't have lied about it.$s": "Está bien, está bien... hablábamos de ti, cariño.$5#$b#Quería contarle a @ algunas cosas sobre ti... pero no quería avergonzarte. No debí mentir al respecto.$s",
+      "That's okay, Dad. I understand.#$b#We should get back to work before these samples crystallize.": "Está bien, papá. Lo entiendo.#$b#Deberíamos volver al trabajo antes de que estas muestras cristalicen."
+    },
+    "9/f Maru 2000/p Maru": {
+      "@, hi! Come in.": "¡Hola, @! Pasa.",
+      "I've been working on a new project... something big.": "He estado trabajando en un proyecto nuevo... algo grande.",
+      "This is just one component... let me show you a little demonstration.": "Este es solo uno de sus componentes... Déjame hacerte una pequeña demostración.",
+      "Just put your hand here...": "Solo pon la mano aquí...",
+      "And now I'm going to flip this switch...": "Y ahora voy a accionar este interruptor...",
+      "Oh my god, are you alright?!$9": "¡Dios mío! ¿Estás bien?$9",
+      "Here, let me apply this burn cream.$8": "Déjame ponerte esta crema para quemaduras.$8",
+      "$q 41 null#I'm so sorry.$8#$r 41 30 Event_Cut1#It's okay, it doesn't even hurt.#$r 41 -50 Event_Cut2#You'd better be. This hurts like crazy!": "$q 41 null#Lo siento muchísimo.$8#$r 41 30 Event_Cut1#No pasa nada, ni siquiera duele.#$r 41 -50 Event_Cut2#Más te vale. ¡Esto duele muchísimo!",
+      "That kind of ruined the moment, huh? *sigh*$s": "Eso arruinó un poco el momento, ¿no? *suspira*$s"
+    },
+    "25/f Demetrius 1500/p Demetrius/p Robin": {
+      "Demetrius, I didn't tell you to get tomatoes. I said to get fruit.": "Demetrius, no te dije que compraras tomates. Te dije que compraras fruta.",
+      "I don't understand. Tomatoes are fruits!": "No entiendo. ¡Los tomates son frutas!",
+      "When a normal person says they want fruit, they NEVER mean tomatoes. It doesn't matter what the scientific classification is.": "Cuando una persona normal dice que quiere fruta, NUNCA se refiere a tomates. No importa cuál sea la clasificación científica.",
+      "@! I'm glad you're here. You'll be able to put this argument to rest.": "¡@! Me alegra que estés aquí. Tú podrás poner fin a esta discusión.",
+      "$q 59 null#How would you classify a tomato?#$r 59 -30 Event_tomato1#Vegetable#$r 59 50 Event_tomato2#Fruit": "$q 59 null#¿Cómo clasificarías un tomate?#$r 59 -30 Event_tomato1#Verdura#$r 59 50 Event_tomato2#Fruta",
+      "I just want you to understand my point of view.#$b#It's hard for me to know exactly what assumptions I should make when you tell me something.": "Solo quiero que entiendas mi punto de vista.#$b#Me cuesta saber exactamente qué debo dar por sentado cuando me dices algo.",
+      "But I'll try to get better at it.": "Pero intentaré mejorar.",
+      "Thanks for your help, @.$h": "Gracias por tu ayuda, @.$h"
+    },
+    "33/f Robin 1500/p Robin": {
+      "Hi @. I was just cleaning some dust off my saw.": "Hola, @. Estaba quitándole el polvo a mi sierra.",
+      "$q 66 null#Have you ever made anything out of wood, @?#$r 66 50 event_wood1#Yes#$r 66 50 event_wood2#No": "$q 66 null#¿Alguna vez has hecho algo de madera, @?#$r 66 50 event_wood1#Sí#$r 66 50 event_wood2#No",
+      "I think we've become good enough friends that I can trust you with my carpentry secrets!$h#$b#Here, let me show you the blueprints.": "¡Creo que ya tenemos suficiente confianza para compartir contigo mis secretos de carpintería!$h#$b#Ven, déjame mostrarte los planos.",
+      "Learned how to craft 'Flute Block' and 'Drum Block'": "Aprendiste a fabricar «Bloque de flauta» y «Bloque de tambor»",
+      "You can use these to get creative on your farm. #$b#It feels good to be able to decorate your house with things you've made yourself!$h": "Puedes usarlos para dar rienda suelta a tu creatividad en la granja. #$b#¡Da gusto poder decorar tu casa con cosas que creaste por tu cuenta!$h"
+    }
+  }
+}

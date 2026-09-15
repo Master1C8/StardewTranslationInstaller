@@ -1,0 +1,56 @@
+{
+  "locale": "es-419",
+  "languageCode": "es-419-vnrevival",
+  "gameVersion": "1.6.15 build 24356",
+  "phase": "runtime-visual-qa-blocked",
+  "sourceRoot": "/Users/antonkrutov/Developer/data/stardew-english-unpacked",
+  "sourceInventory": {
+    "jsonFiles": 187,
+    "records": 14720,
+    "freshnessVerified": true,
+    "freshnessMethod": "All 187 ready-extraction JSON hashes and installed base-XNB hashes match the pinned inventory.",
+    "xnbcliSha256": "54fff99783dc1946b70214f81e2eff47774acf1829c395f3d9ef147462959aa3"
+  },
+  "glossary": {
+    "sourceEntries": 673,
+    "translatedEntries": 673,
+    "remainingEntries": 0,
+    "sourceSha256": "b8fe9c8f5aaf9bedc990dabd2ce552d4f334450f03afee9949f75e376ab4bff9",
+    "structurallyComplete": true,
+    "consecutiveCleanFullAudits": 2,
+    "locked": true
+  },
+  "gameTranslation": {
+    "reviewedRecords": 14720,
+    "coverageDenominator": 14720,
+    "coveragePercent": 100.0,
+    "consecutiveCleanFullAudits": 2,
+    "snapshotSha256": "d53a98f0c7b8b2aa959f822262817444d48f3a56bd17fee6be1e96a3b3c0e40c"
+  },
+  "technicalRelease": {
+    "languageCode": "es-419-vnrevival",
+    "translationFiles": 187,
+    "packageLocales": 20,
+    "translationIncludes": 5097,
+    "characterCreationLabelsChecked": 620,
+    "bitmapGlyphChecks": 7881,
+    "swiftTests": 13,
+    "universalBuild": true,
+    "releaseAuditPassed": true
+  },
+  "visualQa": {
+    "publishingLocale": "es-419",
+    "automatedResult": "blocked",
+    "visualReview": {
+      "status": "pending"
+    },
+    "result": "automated-blocked",
+    "blocker": "macOS Accessibility blocks Oculix mouse initialization for the Codex process; smoke test reports Mouse not useable (blocked)."
+  },
+  "publication": {
+    "glossaryPublished": false,
+    "siteDeployed": false,
+    "pushPerformed": false
+  },
+  "nextAction": "Grant Accessibility permission to the process that launches Oculix, rerun python3 Scripts/visual-qa/run_visual_qa.py --smoke, then capture es-419-vnrevival and inspect all five screenshots before marking the locale release-ready."
+}

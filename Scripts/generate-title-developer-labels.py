@@ -39,6 +39,7 @@ LABELS = (
     DeveloperLabel("thai", "ผู้พัฒนา"),
     DeveloperLabel("greek", "ΔΗΜΙΟΥΡΓΙΑ"),
     DeveloperLabel("czech", "VYTVOŘIL"),
+    DeveloperLabel("latin-american-spanish", "CREADO POR"),
 )
 
 OVERLAY_SIZE = (333, 180)

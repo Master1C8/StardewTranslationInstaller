@@ -23,6 +23,7 @@ locales=(
   'bulgarian|Bulgarian'
   'greek|Greek'
   'czech|Czech'
+  'es-419|LatinAmericanSpanish'
 )
 
 /bin/mkdir -p "$temp_root/base-packed" "$temp_root/base-unpacked"
@@ -69,14 +70,17 @@ for specification in $locales; do
     test -f "$packed/$name.xnb"
     /bin/cp "$packed/$name.xnb" "$destination/$name.xnb"
   done
-  if [[ "$directory" == "swahili" || "$directory" == "indonesian" ]]; then
+  if [[ "$directory" == "swahili" || "$directory" == "indonesian" || "$directory" == "es-419" ]]; then
     for name in SpriteFont1 SmallFont; do
       test -f "$packed/$name.xnb"
       /bin/cp "$packed/$name.xnb" "$destination/$name.xnb"
     done
   fi
 
-  "$xnbcli" unpack "$packed/$font_name.xnb" "$verify"
+  SWIFT_MODULECACHE_PATH=/private/tmp/stardew-swift-module-cache \
+  CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
+    "$project_root/Scripts/compress-xnb-fonts.swift" "$destination"
+  "$xnbcli" unpack "$destination/$font_name.xnb" "$verify"
   test -f "$verify/$font_name.xml"
   print "Built and round-trip verified $font_name bitmap font."
 done

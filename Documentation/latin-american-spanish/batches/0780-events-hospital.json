@@ -1,0 +1,58 @@
+{
+  "locale": "es-419",
+  "target": "Data/Events/Hospital",
+  "sourceAssetSha256": "ac8b886938b06673581a0ac74ceca61b082276a849f78f1081c3e6a05c0a043d",
+  "reviewed": true,
+  "quotedReplacements": {
+    "57/f Harvey 1000/p Harvey": {
+      "Ah, @! I was just about to write you a letter.": "¡Ah, @! Estaba por escribirte una carta.",
+      "You see, my records indicate that you're due for your annual checkup!": "Verás, mis registros indican que te corresponde el chequeo anual.",
+      "Now, now... There's no need to worry. It'll be quick and painless. Please follow me.": "Vamos... No tienes de qué preocuparte. Será rápido e indoloro. Sígueme, por favor.",
+      "Hmm... Okay. Hold still, please.": "Mmm... Bien. No te muevas, por favor.",
+      "Say 'ahhh...'": "Di «aaa...»",
+      "Okay, you can stop.": "Bien, ya puedes parar.",
+      "I just need to check your vitals.": "Solo necesito revisar tus signos vitales.",
+      "$q 86 null#Hmm... Your pulse is high.$u#$r 86 20 event_heart1#I'm a little nervous...#$r 86 20 event_heart2#I'm out of breath from working on the farm.#$r 86 -50 event_heart3#Are you really a doctor? My pulse is fine!": "$q 86 null#Mmm... Tienes el pulso acelerado.$u#$r 86 20 event_heart1#Es por los nervios...#$r 86 20 event_heart2#Me falta el aire por trabajar en la granja.#$r 86 -50 event_heart3#¿De verdad eres médico? ¡Mi pulso está bien!",
+      "Well, then! You seem very healthy, @.#$b#Just make sure not to overwork yourself on that farm!": "¡Muy bien, entonces! Parece que gozas de muy buena salud, @.#$b#Solo asegúrate de no excederte trabajando en esa granja.",
+      "Thanks for stopping in.$h": "Gracias por venir.$h"
+    },
+    "571102/f Harvey 2000": {
+      "Hello? Hello? Is anyone out there?$9": "¿Hola? ¿Hola? ¿Hay alguien ahí?$9",
+      "This is Dr. H at... 52 North 43.5 East... Seeking aerial response...Anyone out there?$9": "Habla el Dr. H desde... 52 norte, 43.5 este... Solicito respuesta aérea... ¿Hay alguien ahí?$9",
+      "Copy.. Dr. H on the ground... this is Blackbird Fiver Fiver Zuzu. Anything to report?": "Recibido... Dr. H en tierra... Habla Blackbird Fiver Fiver Zuzu. ¿Algún informe?",
+      "Someone's there!?$10#$b#Er... I mean!... Standard ground report: Wind at 3 Clicks, 36 Degrees North of West. Ground Temperature at 42 Kraggs. Humidity 53%. Dr. H out!$10": "¡¿Hay alguien ahí?!$10#$b#Eh... ¡Quiero decir! Informe estándar desde tierra: viento a 3 clics, 36 grados al norte del oeste. Temperatura del suelo: 42 Kraggs. Humedad: 53 %. ¡Dr. H, corto!$10",
+      "Yikes, my pulse is soaring...$7": "Caray, mi pulso se está disparando...$7",
+      "@!": "¡@!",
+      "#Ask Harvey why he's all flustered.#Pretend like everything's normal.": "#Pregúntale a Harvey por qué está tan alterado.#Finge que todo es normal.",
+      "Ah, well... You see, I was just on my radio here... and I made contact with a real pilot!": "Ah, bueno... Verás, estaba usando mi radio... ¡y me comuniqué con un piloto de verdad!",
+      "As a matter of fact, we can probably see him flying overhead right now!": "De hecho, probablemente podamos verlo sobrevolando ahora mismo.",
+      "Quick, get over here!": "¡Rápido, ven aquí!",
+      "Look!": "¡Mira!",
+      "As a kid, my dream was always to be a pilot.": "De niño, mi sueño siempre fue ser piloto.",
+      "...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s": "...Pero, con mi mala vista y un miedo paralizante a las alturas, ese sueño empezó a desvanecerse.$s",
+      "It's okay... don't be sad.#$b#I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.": "Está bien... No te pongas triste.#$b#He aprendido a aceptar mi lugar en la vida. No todas las personas pueden cumplir sus sueños... Así es el mundo.",
+      "Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h": "Oye, déjame mostrarte mis aviones a escala. Acabo de terminar el nuevo kit de lujo TR-Starbird.$h"
+    },
+    "7/f Maru 1000/p Maru": {
+      "*sigh*... I'm so sick of preparing these samples...$s": "*suspira*... Estoy harta de preparar estas muestras...$s",
+      "Agh! Oh no!... $4": "¡Agh! ¡Oh, no!... $4",
+      "The whole sample is ruined... Harvey's going to kill me...$s": "Toda la muestra se arruinó... Harvey va a matarme...$s",
+      "$q 38 null#@, what should I do?#$r 38 -50 Event_Hospital_1#Just scoop it off the floor. He won't know the difference.#$r 39 -20 Event_Hospital_2#Tell Harvey it was my fault.#$r 38 50 Event_Hospital_3#Tell Harvey it was an accident.": "$q 38 null#@, ¿qué hago?#$r 38 -50 Event_Hospital_1#Recógela del suelo. No notará la diferencia.#$r 39 -20 Event_Hospital_2#Dile a Harvey que fue culpa mía.#$r 38 50 Event_Hospital_3#Dile a Harvey que fue un accidente.",
+      "What happened? I heard something break.": "¿Qué pasó? Oí que algo se rompió.",
+      "$p 38#I accidentally dropped one of the samples... I'm so sorry.$s|@ came in and slammed the door so loud I dropped this sample.$u": "$p 38#Dejé caer accidentalmente una de las muestras... Lo siento mucho.$s|@ entró y cerró la puerta con tanta fuerza que dejé caer esta muestra.$u",
+      "You shouldn't blame others for your own problems, Maru.$a": "No deberías culpar a otras personas por tus propios problemas, Maru.$a",
+      "*sigh*... I'll have to call the patient back in to recollect this sample.$s#$b#This'll probably put us in the red for another month...$s": "*suspira*... Tendré que pedir que vuelvan para tomar otra muestra.$s#$b#Esto probablemente nos dejará en números rojos otro mes...$s"
+    },
+    "PlayerKilled": {
+      " ...{0}?": " ...¿{0}?",
+      "Easy, now... take it slow.": "Con calma... No te apresures.",
+      "Someone found you unconscious and battered... I had to perform an emergency surgery on you!#$b#Be a little more careful next time, okay?$s": "Alguien te encontró inconsciente y con muchas lesiones... ¡Tuve que operarte de emergencia!#$b#Ten un poco más de cuidado la próxima vez, ¿de acuerdo?$s"
+    },
+    "toldTruth": {
+      "Thanks for telling me the truth, Maru.#$b#Don't worry about the sample, we'll just get another one.": "Gracias por decirme la verdad, Maru.#$b#No te preocupes por la muestra; conseguiremos otra.",
+      "Thanks for being patient with me, Doctor Harvey.": "Gracias por tenerme paciencia, doctor Harvey.",
+      "Of course... you've been a big help around here. I don't know what I'd do without you!": "Por supuesto... Has sido de gran ayuda aquí. ¡No sé qué haría sin ti!",
+      "@? You look a little pale... are you feeling okay?": "¿@? Tu rostro se ve algo pálido... ¿Te sientes bien?"
+    }
+  }
+}

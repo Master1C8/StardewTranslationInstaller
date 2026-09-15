@@ -62,6 +62,7 @@ public sealed class ModEntry : Mod
         ["th-vnrevival"] = "thai",
         ["el-vnrevival"] = "greek",
         ["cs-vnrevival"] = "czech",
+        ["es-419-vnrevival"] = "latin-american-spanish",
     };
     private static readonly Color NormalTitleInk = new(210, 34, 69);
     private static readonly Color HoverTitleInk = new(239, 72, 101);

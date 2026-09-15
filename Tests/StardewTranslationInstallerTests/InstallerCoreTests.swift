@@ -79,7 +79,7 @@ struct InstallerCoreTests {
         let package = try translationPackage()
         expect(package.schemaVersion == 2)
         expect(package.siteLocale == "ru")
-        expect(package.languageCodes == ["ru-vnrevival", "sr-vnrevival", "pl-vnrevival", "uk-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "nl-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival", "el-vnrevival", "cs-vnrevival"])
+        expect(package.languageCodes == ["ru-vnrevival", "sr-vnrevival", "pl-vnrevival", "uk-vnrevival", "vi-vnrevival", "sw-vnrevival", "fa-vnrevival", "ar-vnrevival", "id-vnrevival", "fil-vnrevival", "nl-vnrevival", "hi-vnrevival", "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival", "bg-vnrevival", "th-vnrevival", "el-vnrevival", "cs-vnrevival", "es-419-vnrevival"])
         expect(Array(package.languageCodes.prefix(12)) == [
             "ru-vnrevival", "sr-vnrevival", "pl-vnrevival",
             "uk-vnrevival", "vi-vnrevival", "sw-vnrevival",
@@ -89,7 +89,7 @@ struct InstallerCoreTests {
         expect(Array(package.languageCodes.dropFirst(12)) == [
             "zh-TW-vnrevival", "ro-vnrevival", "he-vnrevival",
             "bg-vnrevival", "th-vnrevival", "el-vnrevival",
-            "cs-vnrevival",
+            "cs-vnrevival", "es-419-vnrevival",
         ])
         expect(package.uniqueID == "VNRevival.StardewValleyTranslations")
         expect(package.copy.windowTitle == "VN Revival Languages for Stardew Valley")
@@ -120,7 +120,7 @@ struct InstallerCoreTests {
                 && ($0["Target"] as? String) == "Data/AdditionalLanguages"
         })
         let languageEntries = try require(languagePatch["Entries"] as? [String: Any])
-        expect(languageEntries.count == 19)
+        expect(languageEntries.count == 20)
         let expectedButtons = [
             "ru-vnrevival": ("ButtonRussian", "assets/button-russian.png", "assets/title/TitleButtons-russian.png"),
             "sr-vnrevival": ("ButtonSerbian", "assets/button-serbian.png", "assets/title/TitleButtons-serbian.png"),
@@ -141,6 +141,7 @@ struct InstallerCoreTests {
             "th-vnrevival": ("ButtonThai", "assets/button-thai.png", "assets/title/TitleButtons-thai.png"),
             "el-vnrevival": ("ButtonGreek", "assets/button-greek.png", "assets/title/TitleButtons-greek.png"),
             "cs-vnrevival": ("ButtonCzech", "assets/button-czech.png", "assets/title/TitleButtons-czech.png"),
+            "es-419-vnrevival": ("ButtonLatinAmericanSpanish", "assets/button-latin-american-spanish.png", "assets/title/TitleButtons-latin-american-spanish.png"),
         ]
         let expectedBitmapFonts = [
             "sr-vnrevival": ("Serbian", "serbian"),
@@ -161,6 +162,7 @@ struct InstallerCoreTests {
             "th-vnrevival": ("Thai", "thai"),
             "el-vnrevival": ("Greek", "greek"),
             "cs-vnrevival": ("Czech", "czech"),
+            "es-419-vnrevival": ("LatinAmericanSpanish", "es-419"),
         ]
         for code in package.languageCodes {
             let expected = try require(expectedButtons[code])
@@ -209,6 +211,7 @@ struct InstallerCoreTests {
             ("cs-vnrevival", "czech"),
             ("th-vnrevival", "thai"),
             ("el-vnrevival", "greek"),
+            ("es-419-vnrevival", "es-419"),
         ] {
           for target in ["Fonts/SpriteFont1", "Fonts/SmallFont"] {
             let font = try require(changes.first {
@@ -370,6 +373,7 @@ struct InstallerCoreTests {
             "assets/button-thai.png": "3ac5f17beb7afebfd1dc7da8cd336dac44de9051757c65f116c69b80af69f0cd",
             "assets/button-greek.png": "b0669776b789397294e1fe3b2649244b5e43712606e158e6b62a29ae3704027d",
             "assets/button-czech.png": "98266efc2c8d4bdf1213c617ec40f95b09a1f14be77b92310ae0745f79287071",
+            "assets/button-latin-american-spanish.png": "f5dac40334bd09f632a3ab89965cd49112a6da5675e1a1d16b34c916e831b3ba",
         ]
         for (buttonPath, expectedHash) in unifiedButtonHashes {
             try expect(try pngDimensions(buttonPath) == (174, 78))
@@ -390,7 +394,7 @@ struct InstallerCoreTests {
         )
         try expect(
             try DependencyInstaller.sha256(of: approvedTitleLabels)
-                == "c4b1e89e08009295f43e4958118d3378cb090b91dbb243407323d047ffcb8ce6"
+                == "96cdff156f887480240216df82c0d46f56ab75786752ff3b8078c0978ebc87d5"
         )
         let titleBackTemplate = projectRoot().appendingPathComponent(
             "Scripts/assets/title-back-template.png"
@@ -403,10 +407,10 @@ struct InstallerCoreTests {
         let titleBackLabels = projectRoot().appendingPathComponent(
             "Scripts/assets/title-back-labels.png"
         )
-        try expect(try pngDimensions(titleBackLabels) == (264, 2_052))
+        try expect(try pngDimensions(titleBackLabels) == (264, 2_160))
         try expect(
             try DependencyInstaller.sha256(of: titleBackLabels)
-                == "c848778c46ee54c8a91741453909b7ff3b59a0264a93e55489ba573f76d4fa2b"
+                == "ff921910f15252fb564b4da490eaa28a8ee8f2eca5d02d9aef889a93a1ed26af"
         )
 
         let unifiedTitleButtonHashes = [
@@ -429,6 +433,7 @@ struct InstallerCoreTests {
             "assets/title/TitleButtons-thai.png": "2f0a61fff35c40991804baa0b8821a989b30c6f5e58b26324db5086430a8e0e2",
             "assets/title/TitleButtons-greek.png": "2f0a61fff35c40991804baa0b8821a989b30c6f5e58b26324db5086430a8e0e2",
             "assets/title/TitleButtons-czech.png": "1c2253e99bfd70f04a05162cc0a299e2d0a37ca26a357c2e8d3d0ecc45391ff4",
+            "assets/title/TitleButtons-latin-american-spanish.png": "1c2253e99bfd70f04a05162cc0a299e2d0a37ca26a357c2e8d3d0ecc45391ff4",
         ]
         for (titlePath, expectedHash) in unifiedTitleButtonHashes {
             try expect(try pngDimensions(titlePath) == (400, 655))
@@ -684,6 +689,7 @@ struct InstallerCoreTests {
             "persian", "arabic", "indonesian", "filipino", "dutch", "hindi",
             "traditional-chinese", "romanian", "hebrew", "bulgarian", "thai",
             "greek", "czech",
+            "latin-american-spanish",
         ]
         for name in overlayNames {
             let overlay = titleOverlays.appendingPathComponent("TitleLabels-\(name).png")
@@ -756,7 +762,7 @@ struct InstallerCoreTests {
         expect(content["Format"] != nil)
         let changes = try require(content["Changes"] as? [[String: Any]])
         let includes = changes.filter { ($0["Action"] as? String) == "Include" }
-        expect(includes.count == 4_910)
+        expect(includes.count == 5_097)
         let includedPaths = try includes.map { try require($0["FromFile"] as? String) }
         expect(Set(includedPaths).count == includedPaths.count)
         var hindiPrivateUseGlyphs = 0
@@ -813,6 +819,8 @@ struct InstallerCoreTests {
                 expectedLanguage = "el-vnrevival"
             } else if relativePath.contains("/czech/") {
                 expectedLanguage = "cs-vnrevival"
+            } else if relativePath.contains("/es-419/") {
+                expectedLanguage = "es-419-vnrevival"
             } else {
                 throw RequiredValueMissing()
             }

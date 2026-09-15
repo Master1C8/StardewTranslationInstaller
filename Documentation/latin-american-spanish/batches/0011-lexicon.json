@@ -1,0 +1,36 @@
+{
+  "locale": "es-419",
+  "target": "Strings/Lexicon",
+  "sourceAssetSha256": "1fb22d5e9c934fdb09df4fe06e8b562275925350109e35901585aa8895bbbc9d",
+  "reviewed": true,
+  "entries": {
+    "RandomNegativeItemNoun": "basura#desechos#porquería#bazofia#inmundicia",
+    "RandomPositiveAdjective_Child": "genial#divertido#estupendo#agradable#fantástico#súper#excelente",
+    "RandomPositiveAdjective_AdultMale": "interesante#emocionante#estupendo#divertido#excelente#increíble",
+    "RandomPositiveAdjective_AdultFemale": "maravilloso#asombroso#conmovedor#mágico#increíble#encantador#emocionante#delicioso",
+    "RandomPositiveAdjective_PlaceOrEvent": "maravilloso#asombroso#conmovedor#mágico#increíble#encantador#emocionante#delicioso",
+    "RandomDeliciousAdjective": "delicioso#sabroso#maravilloso#satisfactorio#sustancioso#exquisito#apetitoso#encantador",
+    "RandomDeliciousAdjective_Child": "rico",
+    "RandomNegativeFoodAdjective_Child": "asqueroso",
+    "RandomNegativeFoodAdjective_Polite": "...interesante#...peculiar#...diferente#...poco convencional",
+    "RandomNegativeFoodAdjective": "desagradable#asqueroso#repugnante#detestable#revoltante#nauseabundo#espantoso#repulsivo#vomitivo#hediondo#horrendo#pútrido",
+    "RandomSlightlyPositiveFoodAdjective": "aceptable#bueno#comestible",
+    "ChildTerm_Male": "niño",
+    "ChildTerm_Female": "niña",
+    "Pronoun_Male": "él",
+    "Pronoun_Female": "ella",
+    "QuestionDialogue_Yes": "Sí",
+    "QuestionDialogue_No": "No",
+    "GenericPlayerTerm": "granjero^granjera",
+    "Possessive_Pronoun_Male": "su",
+    "Possessive_Pronoun_Female": "su"
+  },
+  "notes": {
+    "QuestionDialogue_No": "The Spanish negative response is spelled identically to the English source.",
+    "GenericPlayerTerm": "ShopLocation and FishShop split this localized value on a bare caret, using the first form for a male player and the second for a female player before inserting it into the purchased-item greeting.",
+    "RandomPositiveAdjective_AdultFemale": "The runtime selects this list by the speaking NPC, but inserts the adjective into PurchasedItem_5_Cooking to describe Pierre as chef; masculine singular agreement is therefore required."
+  },
+  "runtimeStructureReasons": {
+    "GenericPlayerTerm": "Installed Stardew Valley 1.6.15 splits this localized value on a bare caret, selects the second branch for a female player, and inserts the selected profession into purchased-item greetings."
+  }
+}

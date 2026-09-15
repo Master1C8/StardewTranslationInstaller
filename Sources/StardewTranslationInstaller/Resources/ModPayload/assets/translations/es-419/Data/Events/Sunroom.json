@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Sunroom",
+      "When": {
+        "Language": "es-419-vnrevival"
+      },
+      "Entries": {
+        "719926/t 900 1700/w sunny": "spring_day_ambient/-885 8/farmer -500 -500 0 Caroline 5 7 1/mail CarolineTea/skippable/specificTemporarySprite sunroom/viewport 5 8 true/pause 1000/showFrame Caroline 22/doAction 6 7/pause 500/doAction 6 7/pause 1000/showFrame Caroline 4/pause 500/warp farmer 5 13/playSound doorClose/move farmer 0 -4 0/faceDirection Caroline 2/pause 100/speak Caroline \"¡Ah, hola! Buenos días, @. Me alegra que hayas venido...#$b#Hace tiempo que quería mostrarte esto... Es mi solárium privado.\"/pause 500/pause 500/speak Caroline \"Entonces, ¿qué te parece?\"/pause 500/quickQuestion #¡Es precioso!#Es muy relajante.#Hace demasiado calor aquí...#¡No es tan bueno como mi granja!(break)pause 100\\speak Caroline \"¡Gracias! Me esforcé mucho para dejarlo así...$h\"(break)pause 100\\speak Caroline \"Sí... En cuanto entro aquí, me siento tranquila y relajada. ¡Es muy terapéutico!\"(break)pause 100\\speak Caroline \"¿Ah, sí? A mí el calor me resulta reconfortante.$s#$b#Es más agradable si no te mueves.\"(break)emote Caroline 16\\pause 100\\speak Caroline \"Ah, pero tú te dedicas a la agricultura... Para mí solo es un pasatiempo.\"/pause 500/faceDirection Caroline 1/speak Caroline \"Verás, este es mi santuario... un lugar donde siempre puedo encontrar paz...\"/pause 300/faceDirection Caroline 2/speak Caroline \"¡Y es el lugar perfecto para beber el té que cultivo en casa! Ven, tomemos una taza...\"/pause 300/playSound coin/showFrame Caroline 20/pause 1000/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/pause 500/playSound gulp/pause 1000/quickQuestion ¿Quieres tomar una taza?#Sí#No(break)farmerEat 614\\pause 1000(break)pause 100\\speak Caroline \"Claro, no hay problema...\"/pause 500/faceDirection farmer 0/playSound sipTea/showFrame Caroline 21/pause 500/showFrame Caroline 20/textAboveHead Caroline \"Delicioso\"/playMusic SunRoom/pause 1500/speak Caroline \"Me encanta venir aquí todos los días a beber una taza de té recién preparado.#$b#Es mi pequeño ritual... #$b#Eh... intentaré explicarlo...$h\"/fade/viewport -1000 -1000/pause 1000/cutscene greenTea/pause 1000/viewport 5 8 true/pause 1000/speak Caroline \"Espero que tenga sentido... #$b#La vida puede ser bastante agitada, así que es agradable tener un pasatiempo como este.\"/pause 150/showFrame Caroline 0/pause 200/speak Caroline \"Puedes venir a relajarte cuando quieras, ¿de acuerdo?\"/emote farmer 32/pause 1000/move farmer 0 4 2 true/fade/viewport -5000 1000/pause 1000/end warpOut"
+      }
+    }
+  ]
+}

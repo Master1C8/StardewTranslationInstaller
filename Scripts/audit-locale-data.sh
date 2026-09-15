@@ -34,5 +34,8 @@ node Scripts/audit-indonesian.mjs "$source_root"
 "$python_bin" Scripts/audit-serbian.py
 "$python_bin" Scripts/audit-bulgarian-release.py
 "$python_bin" Scripts/czech-full-audit.py status
+"$python_bin" Scripts/audit-es-419-glossary.py
+"$python_bin" Scripts/es-419-work.py audit
+"$python_bin" Scripts/es-419-editorial-audit.py release
 
 echo "Retained-locale data and editorial gates passed."

@@ -39,6 +39,7 @@ LABELS = (
     BackLabel("thai", "กลับ"),
     BackLabel("greek", "ΠΙΣΩ"),
     BackLabel("czech", "ZPĚT"),
+    BackLabel("latin-american-spanish", "ATRÁS"),
 )
 
 OVERLAY_SIZE = (264, 108)

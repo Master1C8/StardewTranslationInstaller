@@ -1,0 +1,42 @@
+{
+  "locale": "es-419",
+  "target": "Strings/Locations",
+  "sourceAssetSha256": "892128ef8bb14de2375994caff8212e30574764bd8504c34798162dfe007a376",
+  "reviewed": true,
+  "entries": {
+    "Saloon_Arcade_Cowboy_Continue": "Continuar el viaje",
+    "Saloon_Arcade_Cowboy_NewGame": "Iniciar un nuevo viaje",
+    "IslandHut_Event_ParrotBoyIntro": "continue/-1000 -1000/farmer 7 7 3/skippable/specificTemporarySprite removeSprite 777/addTemporaryActor ParrotBoy 16 32 5 2 2 true ???/pause 2000/viewport 5 7 true/pause 2000/emote ParrotBoy 8/pause 1500/message \"El niño te mira con curiosidad...\"/pause 1500/animate ParrotBoy false true 500 17 0/playSound parrot_squawk/pause 1000/playSound parrot_squawk/pause 800/stopAnimation ParrotBoy/specificTemporarySprite parrotHutSquawk/pause 800/move farmer -2 0 0/pause 500/emote farmer 8/pause 1000/message \"Parece tener un vínculo estrecho con los loros.\"/pause 500/message \"Pero ahora mismo es demasiado tímido para acercarse a ti.\"/pause 1400/faceDirection farmer 1/pause 500/message \"¿Quizá entablar amistad con los loros te ayude a ganarte su confianza?\"/pause 1000/end position 5 7",
+    "IslandSecret_Event_BirdieIntro": "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/skippable/addTemporaryActor Birdie 32 32 17 58 3 true ???/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 1000/emote Birdie 8/pause 1000/speak Birdie \"Oh... ¿una visita?#$b#Acércate, joven.\"/pause 400/move farmer -1 0 3/pause 300/emote Birdie 40/speak Birdie \"No recibía visitas desde hacía muchas lunas...$s#$b#¡Casi había olvidado qué aspecto tenían las demás personas!\"/pause 1000/speak Birdie \"Bueno, ya que estás aquí, supongo que podría pedirte un favor.\"/pause 500/textAboveHead Birdie \"Ven...\"/pause 500/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/viewport move 1 0 2000/move Birdie 0 -1 2/move Birdie 2 0 1/move farmer 1 0 1/pause 500/speak Birdie \"¿Has visto ese barco naufragado en la costa sur?#$b# Mi esposo era el capitán. Era pirata.#$b#Un día zarpó y nunca regresó. Me tomó tres años navegar por alta mar hasta encontrar sus restos.$s\"/emote Birdie 28/speak Birdie \"*suspira*...$s#$b#Desde entonces he estado aquí, cariño.$s#$b#...Custodiando sus huesos...\"/faceDirection farmer 2 true/playSound batScreech/animate farmer false true 100 94/jump farmer/pause 1500/stopAnimation farmer/faceDirection farmer 0/faceDirection Birdie 2/speak Birdie \"Cariño... Si tan solo pudiera encontrar algún recuerdo suyo, me daría tanta paz.$s\"/pause 400/textAboveHead Birdie \"Espera aquí...\"/move Birdie -1 0 0/move Birdie 0 -1 3/warp Birdie -100 -100/playSound doorClose/faceDirection farmer 0/faceDirection Birdie 2/pause 1000/playSound Ship/pause 1000/playSound Ship/playSound crafting/pause 1000/playSound doorClose/warp Birdie 20 56/move Birdie 0 1 2/speak Birdie \"Toma esto. Es una vieja fotografía que fue arrastrada hasta la orilla.#$b#Es todo lo que puedo ofrecerte... pero, de algún modo, creo que te ayudará a encontrar lo que busco.\"/pause 500/unskippable/playSound coin/awardFestivalPrize memento true/pause 10/addQuest 130/pause 1700/end",
+    "alreadyGotNuts": "pause 50/pause 50/pause 1000/speak Birdie \"Aunque no me conocías, te tomaste la molestia de ayudar a una anciana.#$b#¡Que Dios te bendiga!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end",
+    "qiNutDoor": "Oyes una voz extraña detrás de la puerta...#«Solo quienes sean grandes cazadores de nueces pueden entrar aquí».^    Tu estado actual: {0}/100",
+    "BoatTunnel_DonateBatteries": "¿Donar 5 Baterías para reparar la máquina expendedora de boletos?",
+    "BoatTunnel_DonateHardwood": "¿Donar 200 piezas de Madera noble para reparar el casco?",
+    "BoatTunnel_DonateIridium": "¿Donar 5 Lingotes de iridio para reparar el ancla?",
+    "BoatTunnel_DonateBatteriesHint": "Esta máquina podría repararse con 5 Baterías.",
+    "BoatTunnel_DonateHardwoodHint": "El casco podría repararse con 200 piezas de Madera noble.",
+    "BoatTunnel_DonateIridiumHint": "El ancla podría repararse con 5 Lingotes de iridio.",
+    "BoatTunnel_boatcomplete": "¡Se encontraron todos los materiales!#El barco se reparará durante la noche.",
+    "BoatTunnel_willyText_firstRide": "¡Quedó como nueva!"
+  },
+  "quotedReplacements": {
+    "IslandSecret_Event_BirdieFinished": {
+      "It's his...$s": "Es suyo...$s",
+      "Heh... It still has his smell, after all these years...#$b#...that familiar, putrid funk...$h": "Je... Todavía conserva su olor después de tantos años...#$b#...ese aroma pútrido tan familiar...$h",
+      "You know... It's been a lonely life here, child... but I don't regret it at all.#$b#I'm doin' right by my old man... and we'll be together again some day soon... hehe": "Sabes... He llevado una vida solitaria aquí, cariño... pero no me arrepiento en absoluto.#$b#Estoy honrando a mi viejo... y pronto volveremos a estar juntos... je, je.",
+      "You have great wisdom, child.#$b#And you've brought me great peace... this locket will comfort me for the rest of my days.$h": "Posees gran sabiduría, joven.#$b#Y me has dado mucha paz... este relicario me reconfortará por el resto de mis días.$h",
+      "An old woman like me? I think it's too late, dear...$s#$b#Besides... I like it here! It's relaxing and beautiful. And I have an endless supply of fresh fish, oysters, and monkey meat. Hehehe.$h#$b#...I'm kidding about the monkey meat.": "¿Una anciana como yo? Creo que ya es demasiado tarde, cariño...$s#$b#Además... ¡Me gusta estar aquí! Es un lugar relajante y hermoso. Y tengo un suministro interminable de pescado fresco, ostras y carne de mono. Je, je, je.$h#$b#...Es broma lo de la carne de mono.",
+      "Now... how can I repay you for this?": "Ahora... ¿cómo puedo recompensarte?",
+      "Oh... How about I teach you a special recipe... Something I discovered in the many years I've spent here.": "Oh... ¿Qué te parece si te enseño una receta especial? Algo que descubrí durante los muchos años que he pasado aquí.",
+      "Learned to craft 'Fairy Dust'.": "Aprendiste a fabricar «Polvo de hada».",
+      "You can take these, too...": "También puedes llevártelas...",
+      "Though you're a stranger, you went out of your way to help an old lady.#$b#Bless your heart!$h": "Aunque no me conocías, te tomaste la molestia de ayudar a una anciana.#$b#¡Que Dios te bendiga!$h"
+    }
+  },
+  "quickQuestionReplacements": {
+    "IslandSecret_Event_BirdieFinished": {
+      "#It's an honorable thing to do.#He's gone. You should live your life.": "#Es algo honorable.#Él ya no está. Deberías vivir tu vida."
+    }
+  },
+  "notes": {}
+}

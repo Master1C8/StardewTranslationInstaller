@@ -68,6 +68,7 @@ const fontByLocale = {
   bulgarian: "bulgarian",
   czech: "czech",
   dutch: "dutch",
+  "es-419": "es-419",
   filipino: "filipino",
   greek: "greek",
   hebrew: "hebrew",

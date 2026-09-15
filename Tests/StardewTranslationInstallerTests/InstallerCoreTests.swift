@@ -265,6 +265,19 @@ struct InstallerCoreTests {
             )
         }
 
+        let latinAmericanSpanishFontHashes = [
+            "assets/fonts/es-419/SpriteFont1.xnb": "543ceb5c8c32f270345f086983827fe3540d66c0c4d10c023b2fe72f0756e7b6",
+            "assets/fonts/es-419/SmallFont.xnb": "00d9da48aaf37078ed8cd90c462d6bf8381e6bfdceb840e5eee7352f4c4a5b00",
+            "assets/fonts/es-419/LatinAmericanSpanish.xnb": "f8213fa3bcc3b928ebdd96c72eb1e6a687d499da6952fd2c0e97b931a569128f",
+            "assets/fonts/es-419/LatinAmericanSpanish_0.xnb": "aff54e671c3dd8754a223e4a2baae24e631d1bcae963bd846f05ac05e45d047c",
+        ]
+        for (fontPath, expectedHash) in latinAmericanSpanishFontHashes {
+            try expect(
+                try DependencyInstaller.sha256(of: payload.appendingPathComponent(fontPath))
+                    == expectedHash
+            )
+        }
+
         let persianFontHashes = [
             "assets/fonts/persian/SpriteFont1.xnb": "b4a1309ff96d648d6f2c62cb3cf7d409bc5a00b24625f987e51dc0bac0120935",
             "assets/fonts/persian/SmallFont.xnb": "4e9b04ab7144ac61d68e23922f03a4264a5baee6af455f78269bfef734757969",

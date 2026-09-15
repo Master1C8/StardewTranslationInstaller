@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-09-15",
+  "localeLabel": "Español latinoamericano · Latin American Spanish · es-419-vnrevival",
+  "exactLocale": "es-419-vnrevival",
+  "publishingLocale": "es-419",
+  "gameVersion": "1.6.15 build 24356",
+  "smapiVersion": "4.5.2",
+  "contentPatcherVersion": "2.9.1",
+  "quickSaveVersion": "1.5.0",
+  "packageVersion": "1.17.24",
+  "resolution": {
+    "width": 2560,
+    "height": 1600
+  },
+  "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution; the locale label was added afterward without resizing.",
+  "result": "pass",
+  "automatedResult": "pass",
+  "visualReview": {
+    "status": "pass",
+    "findings": []
+  },
+  "exactLocaleLoads": [
+    "Fonts/SpriteFont1.es-419-vnrevival",
+    "Fonts/SmallFont.es-419-vnrevival",
+    "Minigames/TitleButtons.es-419-vnrevival"
+  ],
+  "missingLocaleLoads": [],
+  "contentPatcherErrors": 0,
+  "contentPatcherWarnings": 0,
+  "screenshots": [
+    {
+      "file": "../../visual-qa-upload/es-419-01-title-menu.png",
+      "sha256": "2182ad5dcfa1e2f25649db58e775980c4ce7d028e9cdab794382266f681691b6",
+      "coverage": "Localized title menu buttons and labels are visible and unclipped."
+    },
+    {
+      "file": "../../visual-qa-upload/es-419-02-character-creation.png",
+      "sha256": "1359f7dac55a5c3228d2666f0247b94cee6f66095d9ae0f6865ee7a4e033f07b",
+      "coverage": "Character-creation labels and the lower-right Back button are visible and unclipped."
+    },
+    {
+      "file": "../../visual-qa-upload/es-419-03-gus-dialogue.png",
+      "sha256": "c30830cab11f717a8fc7e874df18dd2e4b41f08ea8339cd6628bbac71b0343eb",
+      "coverage": "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."
+    },
+    {
+      "file": "../../visual-qa-upload/es-419-04-item-description.png",
+      "sha256": "0ceb1ed86bd1921f4e510f46d1a7bf31d7b89ff1e04a398ed0ea50f2fb2faad4",
+      "coverage": "The axe name, category, wrapped description, and inventory metadata are visible."
+    },
+    {
+      "file": "../../visual-qa-upload/es-419-05-journal.png",
+      "sha256": "c016ac571f4f163147d0dec52af0bce6fbca0bd47f3effc810d05f2c099aaccc",
+      "coverage": "The expanded Introductions journal entry, body, and progress line fit the panel."
+    }
+  ],
+  "contactSheet": {
+    "file": "es-419-contact-sheet.png",
+    "sha256": "86d5849c5ad298c3d504304116f9d551775c7fa203b7c6ac0c9c2c272f7a33bf"
+  },
+  "smapiLog": {
+    "file": "es-419-smapi-2026-09-15.log",
+    "sha256": "5ae0f73b2c5af196292cc0ff063120a9c5af3db316733b2c3685d4feb18958f0"
+  },
+  "restoration": {
+    "testSaveWritten": false,
+    "startupLanguageRestored": true
+  }
+}

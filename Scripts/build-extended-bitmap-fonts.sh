@@ -65,6 +65,10 @@ for specification in $locales; do
     "$generated" \
     "$font_file"
 
+  if [[ "$directory" == "es-419" ]]; then
+    node "$project_root/Scripts/adjust-es-419-font-metrics.mjs" "$generated"
+  fi
+
   "$xnbcli" pack "$generated" "$packed"
   for name in "$font_name" "${font_name}_0"; do
     test -f "$packed/$name.xnb"

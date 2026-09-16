@@ -23,7 +23,9 @@ static HFONT titleFont;
 static volatile LONG installationRunning;
 static WCHAR applicationDirectory[MAX_PATH * 4];
 static WCHAR selectedGamePath[MAX_PATH * 4];
+static WCHAR installedGamePath[MAX_PATH * 4];
 static WCHAR statusFile[MAX_PATH * 4];
+static WCHAR gamePathFile[MAX_PATH * 4];
 
 static void setControlFont(HWND control) {
     SendMessageW(control, WM_SETFONT, (WPARAM)uiFont, TRUE);
@@ -56,8 +58,8 @@ static void showSuccessState(void) {
     ShowWindow(launchButton, SW_SHOW);
 }
 
-static BOOL readStatusMessage(WCHAR *destination, DWORD capacity) {
-    HANDLE file = CreateFileW(statusFile, GENERIC_READ, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+static BOOL readUtf8File(const WCHAR *path, WCHAR *destination, DWORD capacity) {
+    HANDLE file = CreateFileW(path, GENERIC_READ, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
     if (file == INVALID_HANDLE_VALUE) return FALSE;
 
     char buffer[4096];
@@ -69,6 +71,10 @@ static BOOL readStatusMessage(WCHAR *destination, DWORD capacity) {
 
     int converted = MultiByteToWideChar(CP_UTF8, 0, buffer, -1, destination, (int)capacity);
     return converted > 0;
+}
+
+static BOOL readStatusMessage(WCHAR *destination, DWORD capacity) {
+    return readUtf8File(statusFile, destination, capacity);
 }
 
 static DWORD WINAPI installWorker(LPVOID parameter) {
@@ -86,26 +92,30 @@ static DWORD WINAPI installWorker(LPVOID parameter) {
         swprintf(
             commandLine,
             _countof(commandLine),
-            L"\"%ls\" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"%ls\" -BaseDirectory \"%ls\" -StatusFile \"%ls\" -GamePath \"%ls\"",
+            L"\"%ls\" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"%ls\" -BaseDirectory \"%ls\" -StatusFile \"%ls\" -GamePathFile \"%ls\" -GamePath \"%ls\"",
             powershellPath,
             scriptPath,
             applicationDirectory,
             statusFile,
+            gamePathFile,
             selectedGamePath
         );
     } else {
         swprintf(
             commandLine,
             _countof(commandLine),
-            L"\"%ls\" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"%ls\" -BaseDirectory \"%ls\" -StatusFile \"%ls\"",
+            L"\"%ls\" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"%ls\" -BaseDirectory \"%ls\" -StatusFile \"%ls\" -GamePathFile \"%ls\"",
             powershellPath,
             scriptPath,
             applicationDirectory,
-            statusFile
+            statusFile,
+            gamePathFile
         );
     }
 
     DeleteFileW(statusFile);
+    DeleteFileW(gamePathFile);
+    installedGamePath[0] = L'\0';
     STARTUPINFOW startup = {0};
     PROCESS_INFORMATION process = {0};
     startup.cb = sizeof(startup);
@@ -204,7 +214,11 @@ static LRESULT CALLBACK windowProcedure(HWND window, UINT message, WPARAM wParam
         case WM_INSTALL_FINISHED: {
             DWORD exitCode = (DWORD)wParam;
             if (exitCode == 0) {
-                showSuccessState();
+                if (readUtf8File(gamePathFile, installedGamePath, _countof(installedGamePath))) {
+                    showSuccessState();
+                } else {
+                    showFailureState(L"The game path was not recorded. Retry the installation.");
+                }
             } else {
                 WCHAR details[2048] = {0};
                 if (!readStatusMessage(details, _countof(details)) && exitCode == 2) {
@@ -223,10 +237,18 @@ static LRESULT CALLBACK windowProcedure(HWND window, UINT message, WPARAM wParam
                     if (chooseGameFolder(window)) startInstallation(window);
                     return 0;
                 case ID_LAUNCH:
-                    if ((INT_PTR)ShellExecuteW(window, L"open", L"steam://rungameid/413150", NULL, NULL, SW_SHOWNORMAL) <= 32) {
-                        showFailureState(L"Steam could not be opened. Launch Stardew Valley from your Steam library.");
+                    if (installedGamePath[0]) {
+                        WCHAR smapiPath[MAX_PATH * 4];
+                        swprintf(smapiPath, _countof(smapiPath), L"%ls\\StardewModdingAPI.exe", installedGamePath);
+                        if (GetFileAttributesW(smapiPath) == INVALID_FILE_ATTRIBUTES) {
+                            showFailureState(L"SMAPI was not found. Retry the installation.");
+                        } else if ((INT_PTR)ShellExecuteW(window, L"open", smapiPath, NULL, installedGamePath, SW_SHOWNORMAL) <= 32) {
+                            showFailureState(L"SMAPI could not start Stardew Valley. Retry the installation.");
+                        } else {
+                            DestroyWindow(window);
+                        }
                     } else {
-                        DestroyWindow(window);
+                        showFailureState(L"The game path is unavailable. Retry the installation.");
                     }
                     return 0;
             }
@@ -242,6 +264,7 @@ static LRESULT CALLBACK windowProcedure(HWND window, UINT message, WPARAM wParam
             if (uiFont) DeleteObject(uiFont);
             if (titleFont) DeleteObject(titleFont);
             DeleteFileW(statusFile);
+            DeleteFileW(gamePathFile);
             PostQuitMessage(0);
             return 0;
     }
@@ -267,6 +290,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE previous, PWSTR commandLine, i
     WCHAR temporaryDirectory[MAX_PATH * 2];
     GetTempPathW(_countof(temporaryDirectory), temporaryDirectory);
     swprintf(statusFile, _countof(statusFile), L"%lsVNRevival-Stardew-Installer-%lu.txt", temporaryDirectory, GetCurrentProcessId());
+    swprintf(gamePathFile, _countof(gamePathFile), L"%lsVNRevival-Stardew-GamePath-%lu.txt", temporaryDirectory, GetCurrentProcessId());
 
     WNDCLASSEXW windowClass = {0};
     windowClass.cbSize = sizeof(windowClass);

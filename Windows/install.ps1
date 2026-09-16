@@ -1,6 +1,7 @@
 param(
     [Parameter(Mandatory = $true)][string]$BaseDirectory,
     [Parameter(Mandatory = $true)][string]$StatusFile,
+    [Parameter(Mandatory = $true)][string]$GamePathFile,
     [string]$GamePath = ""
 )
 
@@ -239,6 +240,7 @@ try {
             Remove-Item -LiteralPath $legacyFolder -Recurse -Force
         }
     }
+    [IO.File]::WriteAllText($GamePathFile, $gameFolder, [Text.UTF8Encoding]::new($false))
     Write-Status "All translations installed"
     exit 0
 } catch {

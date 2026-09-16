@@ -104,6 +104,24 @@ struct InstallerCoreTests {
         ])
     }
 
+    @Test func testWindowsLauncherStartsInstalledSmapi() throws {
+        let root = projectRoot()
+        let launcher = try String(
+            contentsOf: root.appendingPathComponent("Windows/StardewTranslationInstaller.c"),
+            encoding: .utf8
+        )
+        let installer = try String(
+            contentsOf: root.appendingPathComponent("Windows/install.ps1"),
+            encoding: .utf8
+        )
+
+        expect(launcher.contains("StardewModdingAPI.exe"))
+        expect(!launcher.contains("steam://rungameid/413150"))
+        expect(launcher.contains("-GamePathFile"))
+        expect(installer.contains("[Parameter(Mandatory = $true)][string]$GamePathFile"))
+        expect(installer.contains("WriteAllText($GamePathFile, $gameFolder"))
+    }
+
     @Test func testValidatesCurrentInterfaceAssets() throws {
         let package = try translationPackage()
         let payload = projectRoot().appendingPathComponent(

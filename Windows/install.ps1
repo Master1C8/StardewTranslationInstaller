@@ -205,7 +205,7 @@ try {
         }
     }
 
-    $contentPatcherFolders = Find-ModFolders $modsFolder "Pathoschild.ContentPatcher"
+    $contentPatcherFolders = @(Find-ModFolders $modsFolder "Pathoschild.ContentPatcher")
     if ($contentPatcherFolders.Count -gt 1) { throw "Multiple copies of Content Patcher were found. Remove the duplicate and try again." }
     $contentPatcherCurrent = $null
     if ($contentPatcherFolders.Count -eq 1) {

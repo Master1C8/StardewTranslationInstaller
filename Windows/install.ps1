@@ -124,25 +124,25 @@ function Find-ModFolders([string]$ModsFolder, [string]$UniqueID) {
 function Download-Verified([string]$Name, [string]$Uri, [string]$Sha256, [string]$Destination) {
     # Delimit the parameter explicitly: Windows PowerShell otherwise may fold
     # an adjacent character into the variable name (for example, `$Namea`).
-    Write-Status "Downloading ${Name}…"
+    Write-Status "Downloading ${Name}..."
     Invoke-WebRequest -Uri $Uri -OutFile $Destination -UseBasicParsing -Headers @{ "User-Agent" = "VN Revival Stardew Installer/1.17.24" }
     $actual = (Get-FileHash -LiteralPath $Destination -Algorithm SHA256).Hash.ToLowerInvariant()
     if ($actual -ne $Sha256) { throw "${Name} checksum did not match. Installation was stopped." }
 }
 
 function Install-OwnedFolder([string]$Source, [string]$Destination, [string]$UniqueID) {
-    if (-not (Test-OwnedFolder $Source $UniqueID)) { throw "The bundled $UniqueID payload is invalid." }
+    if (-not (Test-OwnedFolder $Source $UniqueID)) { throw "The bundled ${UniqueID} payload is invalid." }
     $parent = Split-Path -Parent $Destination
     New-Item -ItemType Directory -Path $parent -Force | Out-Null
     if ((Test-Path -LiteralPath $Destination) -and -not (Test-OwnedFolder $Destination $UniqueID)) {
-        throw "The $(Split-Path -Leaf $Destination) folder belongs to another mod and will not be overwritten."
+        throw "The $(Split-Path -Leaf ${Destination}) folder belongs to another mod and will not be overwritten."
     }
 
     $token = [guid]::NewGuid().ToString("N")
-    $staging = "$Destination.vnrevival-new-$token"
-    $backup = "$Destination.vnrevival-old-$token"
+    $staging = "${Destination}.vnrevival-new-${token}"
+    $backup = "${Destination}.vnrevival-old-${token}"
     Copy-Item -LiteralPath $Source -Destination $staging -Recurse
-    if (-not (Test-OwnedFolder $staging $UniqueID)) { throw "The staged $UniqueID payload is invalid." }
+    if (-not (Test-OwnedFolder $staging $UniqueID)) { throw "The staged ${UniqueID} payload is invalid." }
     try {
         if (Test-Path -LiteralPath $Destination) { Move-Item -LiteralPath $Destination -Destination $backup }
         Move-Item -LiteralPath $staging -Destination $Destination
@@ -178,7 +178,7 @@ try {
     $contentText = Get-Content -LiteralPath (Join-Path $modPayload "content.json") -Raw -Encoding UTF8
     foreach ($languageCode in @($config.languageCodes)) {
         if ($contentText -notmatch [regex]::Escape([string]$languageCode)) {
-            throw "The translation payload does not register language code $languageCode."
+            throw "The translation payload does not register language code ${languageCode}."
         }
     }
 
@@ -188,17 +188,17 @@ try {
 
     $installedSmapi = Get-SmapiVersion $gameFolder
     if ($null -eq $installedSmapi -or $installedSmapi -lt [version]$smapiVersion) {
-        $smapiArchive = Join-Path $working "SMAPI-$smapiVersion.zip"
-        Download-Verified "SMAPI $smapiVersion" $smapiUrl $smapiSha256 $smapiArchive
+        $smapiArchive = Join-Path $working "SMAPI-${smapiVersion}.zip"
+        Download-Verified "SMAPI ${smapiVersion}" $smapiUrl $smapiSha256 $smapiArchive
         $smapiExtracted = Join-Path $working "smapi"
         Expand-Archive -LiteralPath $smapiArchive -DestinationPath $smapiExtracted -Force
         $smapiInstaller = Get-ChildItem -LiteralPath $smapiExtracted -Recurse -File -Filter "SMAPI.Installer.exe" | Where-Object {
             $_.FullName -match '[\\/]internal[\\/]windows[\\/]'
         } | Select-Object -First 1
         if ($null -eq $smapiInstaller) { throw "The SMAPI archive does not contain its Windows installer." }
-        Write-Status "Installing SMAPI $smapiVersion…"
+        Write-Status "Installing SMAPI ${smapiVersion}..."
         & $smapiInstaller.FullName --install --game-path $gameFolder --no-prompt
-        if ($LASTEXITCODE -ne 0) { throw "SMAPI installer exited with code $LASTEXITCODE." }
+        if ($LASTEXITCODE -ne 0) { throw "SMAPI installer exited with code ${LASTEXITCODE}." }
         $installedSmapi = Get-SmapiVersion $gameFolder
         if ($null -eq $installedSmapi -or $installedSmapi -lt [version]$smapiVersion) {
             throw "SMAPI was not found after installation."
@@ -212,8 +212,8 @@ try {
         try { $contentPatcherCurrent = [version](Get-Manifest $contentPatcherFolders[0].FullName).Version } catch { }
     }
     if ($null -eq $contentPatcherCurrent -or $contentPatcherCurrent -lt [version]$contentPatcherVersion) {
-        $contentArchive = Join-Path $working "ContentPatcher-$contentPatcherVersion.zip"
-        Download-Verified "Content Patcher $contentPatcherVersion" $contentPatcherUrl $contentPatcherSha256 $contentArchive
+        $contentArchive = Join-Path $working "ContentPatcher-${contentPatcherVersion}.zip"
+        Download-Verified "Content Patcher ${contentPatcherVersion}" $contentPatcherUrl $contentPatcherSha256 $contentArchive
         $contentExtracted = Join-Path $working "content-patcher"
         Expand-Archive -LiteralPath $contentArchive -DestinationPath $contentExtracted -Force
         $contentSource = Get-ChildItem -LiteralPath $contentExtracted -Recurse -Directory | Where-Object {
@@ -225,11 +225,11 @@ try {
         } else {
             Join-Path $modsFolder "ContentPatcher"
         }
-        Write-Status "Installing Content Patcher $contentPatcherVersion…"
+        Write-Status "Installing Content Patcher ${contentPatcherVersion}..."
         Install-OwnedFolder $contentSource.FullName $contentDestination "Pathoschild.ContentPatcher"
     }
 
-    Write-Status "Installing all VN Revival language packs…"
+    Write-Status "Installing all VN Revival language packs..."
     Install-OwnedFolder $switcherPayload (Join-Path $modsFolder "[SMAPI] VN Revival Language Switcher") "VNRevival.LanguageSwitcher"
     Install-OwnedFolder $modPayload (Join-Path $modsFolder ([string]$config.modFolderName)) ([string]$config.uniqueID)
 

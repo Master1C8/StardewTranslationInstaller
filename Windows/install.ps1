@@ -126,7 +126,7 @@ function Download-Verified([string]$Name, [string]$Uri, [string]$Sha256, [string
     # Delimit the parameter explicitly: Windows PowerShell otherwise may fold
     # an adjacent character into the variable name (for example, `$Namea`).
     Write-Status "Downloading ${Name}..."
-    Invoke-WebRequest -Uri $Uri -OutFile $Destination -UseBasicParsing -Headers @{ "User-Agent" = "VN Revival Stardew Installer/1.17.24" }
+    Invoke-WebRequest -Uri $Uri -OutFile $Destination -UseBasicParsing -Headers @{ "User-Agent" = "VN Revival Stardew Installer/1.17.25" }
     $actual = (Get-FileHash -LiteralPath $Destination -Algorithm SHA256).Hash.ToLowerInvariant()
     if ($actual -ne $Sha256) { throw "${Name} checksum did not match. Installation was stopped." }
 }
@@ -155,6 +155,40 @@ function Install-OwnedFolder([string]$Source, [string]$Destination, [string]$Uni
         throw
     } finally {
         if (Test-Path -LiteralPath $staging) { Remove-Item -LiteralPath $staging -Recurse -Force }
+    }
+}
+
+function Install-LaunchShortcut([string]$Root) {
+    $smapiExecutable = Join-Path $Root "StardewModdingAPI.exe"
+    if (-not (Test-Path -LiteralPath $smapiExecutable -PathType Leaf)) {
+        throw "SMAPI was not found while creating the launch shortcut."
+    }
+
+    $desktop = [Environment]::GetFolderPath([Environment+SpecialFolder]::DesktopDirectory)
+    if ([string]::IsNullOrWhiteSpace($desktop)) {
+        throw "The Windows desktop folder could not be found."
+    }
+
+    $shortcutPath = Join-Path $desktop "Stardew Valley - VN Revival.lnk"
+    $shell = New-Object -ComObject WScript.Shell
+    try {
+        $shortcut = $shell.CreateShortcut($shortcutPath)
+        $shortcut.TargetPath = $smapiExecutable
+        $shortcut.WorkingDirectory = $Root
+        $shortcut.Description = "Launch Stardew Valley with VN Revival languages through SMAPI"
+        $gameExecutable = Join-Path $Root "Stardew Valley.exe"
+        if (Test-Path -LiteralPath $gameExecutable -PathType Leaf) {
+            $shortcut.IconLocation = "${gameExecutable},0"
+        }
+        $shortcut.Save()
+    } finally {
+        if ($null -ne $shell) {
+            [void][Runtime.InteropServices.Marshal]::FinalReleaseComObject($shell)
+        }
+    }
+
+    if (-not (Test-Path -LiteralPath $shortcutPath -PathType Leaf)) {
+        throw "The VN Revival desktop shortcut could not be created."
     }
 }
 
@@ -240,6 +274,8 @@ try {
             Remove-Item -LiteralPath $legacyFolder -Recurse -Force
         }
     }
+    Write-Status "Creating the VN Revival desktop shortcut..."
+    Install-LaunchShortcut $gameFolder
     [IO.File]::WriteAllText($GamePathFile, $gameFolder, [Text.UTF8Encoding]::new($false))
     Write-Status "All translations installed"
     exit 0

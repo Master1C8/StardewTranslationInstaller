@@ -120,6 +120,10 @@ struct InstallerCoreTests {
         expect(launcher.contains("-GamePathFile"))
         expect(installer.contains("[Parameter(Mandatory = $true)][string]$GamePathFile"))
         expect(installer.contains("WriteAllText($GamePathFile, $gameFolder"))
+        expect(installer.contains("Stardew Valley - VN Revival.lnk"))
+        expect(installer.contains("$shortcut.TargetPath = $smapiExecutable"))
+        expect(installer.contains("$shortcut.WorkingDirectory = $Root"))
+        expect(installer.contains("$shortcut.Save()"))
     }
 
     @Test func testValidatesCurrentInterfaceAssets() throws {

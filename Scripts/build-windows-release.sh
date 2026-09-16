@@ -52,6 +52,7 @@ cp "$project_dir/Windows/Installer.rc" "$work/Installer.rc"
 
 cp "$project_dir/Windows/install.ps1" "$stage/Resources/install.ps1"
 cp "$project_dir/Windows/README.txt" "$stage/README.txt"
+cp "$project_dir/Windows/vnrevival-locales.json" "$stage/vnrevival-locales.json"
 cp "$project_dir/Sources/StardewTranslationInstaller/Resources/PackageConfig.json" "$stage/Resources/PackageConfig.json"
 cp -R "$project_dir/Sources/StardewTranslationInstaller/Resources/ModPayload" "$stage/Resources/ModPayload"
 cp -R "$project_dir/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload" "$stage/Resources/LanguageSwitcherPayload"

@@ -29,6 +29,14 @@ Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing 
 - Keep `Format` only in the root `ModPayload/content.json`. Every secondary file loaded through `Include` must omit `Format`, have non-empty `Changes`, and be included exactly once.
 - Every retained font-backed package must load locale-specific `Fonts/SpriteFont1`, `Fonts/SmallFont`, and `Minigames/TitleButtons` for its exact locale code. Every generated XNB character map must stay sorted by Unicode with the four SpriteFont metadata lists aligned; `UseLatinFont` alone does not provide missing glyphs.
 - The shared Stardew Valley glossary is mandatory. Start with the repository snapshot in `Documentation/glossary/`, then check whether SiteForMods/CMS has a newer complete export. Apply the translation for the package's `siteLocale` by stable glossary ID consistently across UI, items, locations, quests, and dialogue. The glossary belongs to the game in SiteForMods and is shared by every language project; it is not owned by this installer.
+- For every character, use the glossary's canonically supported gender,
+  pronouns, or explicit unknown/ambiguous/player-variable state when choosing
+  pronouns, agreement, occupations, titles, kinship terms, feminatives, and
+  comparable gender-sensitive forms. Do not infer gender from the character's
+  name, appearance, voice, occupation, relationship, or stereotypes. If the
+  glossary lacks needed evidence, inspect the English assets and official
+  sources, record the exact uncertainty for source-glossary review, and keep
+  affected strings in review instead of silently choosing a gender.
 - Translate from the original English text yourself. Do not call a machine-translation service and do not copy an official localization as the translation. Official localized assets may only be consulted to understand file structure or established control-token syntax.
 - The ready English extraction on this machine is `/Users/antonkrutov/Developer/data/stardew-english-unpacked/`, and the pinned extractor is `/Users/antonkrutov/Developer/tools/xnbcli/xnbcli`. In xnbcli JSON, translate entries from the top-level `content` object. If the extraction is missing or stale, follow section 3 of the translation guide and extract only base XNB files without locale suffixes from the installed game.
 - Never translate JSON keys, Content Patcher targets/actions, IDs, event commands, or control tokens. Preserve placeholders and markup exactly.

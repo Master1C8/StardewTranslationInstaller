@@ -20,7 +20,7 @@ Before editorial review, record:
 - the exact target locale and approved glossary-layer fingerprint;
 - a complete glossary roster of every speaking character, with grammatical
   category `male` or `female`; when the game has a player character, its entry
-  is first and may instead be `player-selected`;
+  is first and may instead be `hidden`;
 - the authored target text, derived artifacts, text-bearing image plans, and
   their hashes;
 - the previous accepted hashes, or an explicit statement that none exist;
@@ -52,7 +52,10 @@ text-bearing image plan once with enough scene and runtime context to judge:
 - naturalness, grammar, voice, register, humor, and repeated callbacks;
 - approved terminology and context-sensitive inflection;
 - every character reference against the glossary's required `male`, `female`,
-  or player-character-only `player-selected` grammatical category;
+  or player-character-only `hidden` grammatical category, with the latter
+  kept as neutral as the target language naturally permits;
+- confirmed translation-relevant context recorded for high-dialogue
+  characters, without requiring or inventing an exhaustive biography;
 - visible UI text, titles, labels, credits, save/load surfaces, and image text.
 
 Record complete coverage and the reviewed hashes. Findings must name a stable
@@ -140,7 +143,7 @@ Every project must define a stable, reviewable catalog of its high-risk
 surfaces. It must include, where applicable:
 
 - gender, pronouns, agreement, titles, professions, kinship, honorifics,
-  feminatives, and both runtime branches for a `player-selected` character;
+  feminatives, and every avoidable gender marker for a `hidden` player;
 - glossary terms affected by edits and protected names or comparison literals;
 - save/load, locale selection, input prompts, HUD, menus, titles, speaker
   labels, credits, environment/location displays, and text-bearing images;

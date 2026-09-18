@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install the reviewed localization prompt into Anton's shared instructions."""
+"""Install the reviewed localization workflow into Anton's shared instructions."""
 
 import argparse
 import hashlib
@@ -31,16 +31,25 @@ def main() -> None:
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--check", action="store_true", help="Validate without writing")
     modes.add_argument("--dry-run", action="store_true", help="Show planned paths without writing")
-    parser.add_argument("--update", action="store_true", help="Back up and replace an existing different prompt")
+    parser.add_argument(
+        "--update",
+        action="store_true",
+        help="Back up and replace existing different workflow files",
+    )
     args = parser.parse_args()
 
     repository = Path(__file__).resolve().parents[1]
-    source = repository / "Documentation/GAME_LOCALIZATION_PROMPT.md"
+    prompt_source = repository / "Documentation/GAME_LOCALIZATION_PROMPT.md"
+    audit_source = repository / "Documentation/GAME_LOCALIZATION_AUDIT_WORKFLOW.md"
     codex = Path.home() / ".codex"
     reference = codex / "instructions/sitefor-mods.md"
-    destination = codex / "instructions/game-localization-prompt.md"
+    prompt_destination = codex / "instructions/game-localization-prompt.md"
+    audit_destination = codex / "instructions/game-localization-audit-workflow.md"
     global_agents = codex / "AGENTS.md"
-    content = source.read_bytes()
+    artifacts = (
+        (prompt_source, prompt_destination, prompt_source.read_bytes()),
+        (audit_source, audit_destination, audit_source.read_bytes()),
+    )
     instructions = reference.read_text()
     if str(reference) not in global_agents.read_text():
         raise SystemExit("Global AGENTS.md does not route to sitefor-mods.md; review that prerequisite first.")
@@ -51,7 +60,7 @@ def main() -> None:
 ### Mandatory game localization workflow
 
 Before starting or resuming a game localization, or preparing its task prompt,
-read `{destination}` in full. Apply it to the current game, repository, slug
+read `{prompt_destination}` and `{audit_destination}` in full. Apply them to the current game, repository, slug
 and target locale. Do not ask Anton to find or paste the template again.
 Continue verified checkpoints, distinguish translation, editorial and technical
 progress, and never loop on unchanged percentage messages.
@@ -61,12 +70,12 @@ publication, deployment or cross-project mutation permission. The current user
 request determines scope; preserve permissions already granted. A request to
 draft a prompt stays a drafting task.
 
-The version-controlled recovery copy is `{source}`.
-If the installed prompt is missing, restore it from that verified copy before
-localization. If both are missing, stop the affected work and report it.
-Maintain the recovery copy in Git, then run
+The version-controlled recovery copies are `{prompt_source}` and
+`{audit_source}`. If an installed file is missing, restore it from its verified
+copy before localization. If both copies of a required file are missing, stop
+the affected work and report it. Maintain the recovery copies in Git, then run
 `python3 {repository / 'Scripts/install-localization-workflow.py'} --update`
-to synchronize the installed prompt. Do not maintain divergent versions.
+to synchronize the installed workflow. Do not maintain divergent versions.
 {end}
 
 """
@@ -83,10 +92,15 @@ to synchronize the installed prompt. Do not maintain divergent versions.
             raise SystemExit("Expected localization entry point is missing or ambiguous.")
         updated = instructions.replace(anchor, section + anchor)
 
-    old_prompt = destination.read_bytes() if destination.exists() else None
-    changes = []
-    if old_prompt != content:
-        changes.append(destination)
+    existing = {
+        destination: destination.read_bytes() if destination.exists() else None
+        for _, destination, _ in artifacts
+    }
+    changes = [
+        destination
+        for _, destination, content in artifacts
+        if existing[destination] != content
+    ]
     if updated != instructions:
         changes.append(reference)
     if not changes:
@@ -98,24 +112,33 @@ to synchronize the installed prompt. Do not maintain divergent versions.
         raise SystemExit(1)
     if args.dry_run:
         return
-    if old_prompt is not None and old_prompt != content and not args.update:
-        raise SystemExit("Installed prompt differs; inspect it and use --update to back it up and replace it.")
+    if any(
+        existing[destination] is not None and existing[destination] != content
+        for _, destination, content in artifacts
+    ) and not args.update:
+        raise SystemExit(
+            "An installed localization workflow file differs; inspect it and use --update "
+            "to back it up and replace it."
+        )
 
     # Install content before adding the reference, so routing never targets a missing file.
-    if old_prompt != content:
-        if old_prompt is not None:
-            digest = hashlib.sha256(old_prompt).hexdigest()
+    for _, destination, content in artifacts:
+        old_content = existing[destination]
+        if old_content == content:
+            continue
+        if old_content is not None:
+            digest = hashlib.sha256(old_content).hexdigest()
             backup = destination.with_name(destination.name + f".{digest}.bak")
-            if backup.exists() and backup.read_bytes() != old_prompt:
+            if backup.exists() and backup.read_bytes() != old_content:
                 raise SystemExit("Backup content mismatch; refusing to replace it.")
             if not backup.exists():
-                write_atomic(backup, old_prompt)
+                write_atomic(backup, old_content)
         write_atomic(destination, content)
     if updated != instructions:
         if reference.read_text() != instructions:
             raise SystemExit("Shared instructions changed during installation; retry after reviewing them.")
         write_atomic(reference, updated.encode())
-    print("Installed localization workflow and linked it from shared instructions.")
+    print("Installed localization prompt and audit workflow and linked them from shared instructions.")
 
 
 if __name__ == "__main__":

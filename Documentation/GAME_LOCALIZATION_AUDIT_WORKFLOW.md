@@ -18,6 +18,9 @@ Before editorial review, record:
 - the supported game/build version and source locale;
 - the canonical source inventory, stable IDs or paths, and fingerprints;
 - the exact target locale and approved glossary-layer fingerprint;
+- a complete glossary roster of every speaking character, with grammatical
+  category `male` or `female`; when the game has a player character, its entry
+  is first and may instead be `player-selected`;
 - the authored target text, derived artifacts, text-bearing image plans, and
   their hashes;
 - the previous accepted hashes, or an explicit statement that none exist;
@@ -48,8 +51,8 @@ text-bearing image plan once with enough scene and runtime context to judge:
 - meaning, omissions, additions, negation, agency, tense, and condition;
 - naturalness, grammar, voice, register, humor, and repeated callbacks;
 - approved terminology and context-sensitive inflection;
-- every known-gender reference and every unknown, ambiguous, non-binary, or
-  player-variable reference required by the source and glossary;
+- every character reference against the glossary's required `male`, `female`,
+  or player-character-only `player-selected` grammatical category;
 - visible UI text, titles, labels, credits, save/load surfaces, and image text.
 
 Record complete coverage and the reviewed hashes. Findings must name a stable
@@ -137,7 +140,7 @@ Every project must define a stable, reviewable catalog of its high-risk
 surfaces. It must include, where applicable:
 
 - gender, pronouns, agreement, titles, professions, kinship, honorifics,
-  feminatives, and unknown/ambiguous/player-variable references;
+  feminatives, and both runtime branches for a `player-selected` character;
 - glossary terms affected by edits and protected names or comparison literals;
 - save/load, locale selection, input prompts, HUD, menus, titles, speaker
   labels, credits, environment/location displays, and text-bearing images;

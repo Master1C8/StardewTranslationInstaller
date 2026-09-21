@@ -1,183 +1,222 @@
-# Универсальный промпт локализации игры для VN Revival
+# Universal VN Revival game-localization prompt
 
-Заполни четыре обязательных поля. Остальные параметры агент определяет из проекта; указывай их только для явного ограничения задачи. Один запуск — одна игра и один целевой язык.
+Fill the four required fields. Derive other settings from the project unless explicitly
+restricting scope. One run covers one game and one target locale.
 
 ---
 
-Ты работаешь над полноценной предварительно подготовленной локализацией игры для VN Revival.
+You are producing a complete pretranslated game localization for VN Revival.
+Use English for task instructions, plans, progress, checkpoints and reports. Russian
+communication is allowed only for Russian translation/localization work or an explicit
+current owner override. Translation content always uses the required language.
 
-Редакторская приёмка игрового текста для всех игр без исключений следует
-единому протоколу
+Every game's editorial acceptance follows
 `/Users/antonkrutov/.codex/instructions/game-localization-audit-workflow.md`.
-Проект может добавлять конкретные regression surfaces и технические команды,
-но не заменять алгоритм другим числом полных модельных перечитываний.
+Projects may add concrete regression surfaces and technical commands, not substitute
+a different algorithm or number of full model rereads.
 
-Параметры:
-- Игра: <НАЗВАНИЕ ИГРЫ>
-- Репозиторий игры: <АБСОЛЮТНЫЙ ПУТЬ>
-- Game slug в SiteForMods: <SLUG>
-- Целевой язык и точный siteLocale: <ЯЗЫК, КОД>
-- Master-репозиторий SiteForMods: /Users/antonkrutov/Desktop/SiteForMods
-- Поддерживаемая версия игры: определи и зафиксируй по проекту и исходным assets.
-- Платформы и формат поставки: существующие в проекте; новые платформы не добавляй.
-- Лимит токенов: не задан. Числовой бюджет не придумывай.
+Parameters:
+- Game: <GAME NAME>
+- Game repository: <ABSOLUTE PATH>
+- SiteForMods game slug: <SLUG>
+- Target language and exact siteLocale: <LANGUAGE, CODE>
+- Master repository: /Users/antonkrutov/Desktop/SiteForMods
+- Supported game version: identify and pin from project/source assets.
+- Platforms/delivery format: existing project targets; do not add platforms.
+- Token limit: unspecified. Do not invent a numeric budget.
 
-## Результат и полномочия
+## Outcome and authority
 
-Самостоятельно доведи целевой язык до готовой локальной поставки: полный проверенный перевод, согласованный глоссарий, рабочие языковые ресурсы, редакторская приёмка, технические проверки, сборка и интеграция в канонические исходники.
+Complete the requested locale as a verified local delivery: full translation, agreed
+glossary, working resources, editorial acceptance, technical checks, build and canonical
+integration. Necessary edits to game translation, local tools/docs/resources/packaging
+and the target NON-source glossary layer in local SiteForMods are within this prompt's
+work scope when the owner invokes it for execution. Preserve other locales and unrelated
+owner changes. Commit verified work and integrate into canonical branches under AGENTS.md;
+never leave the only completed result in a worktree. Reading this template alone does not
+start work or grant authority beyond the actual user request.
 
-Разрешены необходимые изменения перевода, локальных инструментов, документации, ресурсов и упаковки игры, а также целевого НЕанглийского слоя глоссария в локальном SiteForMods. Сохраняй остальные языки и несвязанные изменения владельца. Проверенные изменения зафиксируй и безопасно интегрируй в канонические ветки затронутых репозиториев по их AGENTS.md. Не оставляй завершённый результат только в worktree.
+CMS glossary publication, protected source-glossary edits, game publication/visibility/
+type changes, push and production deployment are excluded. They do not block local delivery.
+Do not create another game card, repository or user task instead of working in the given project.
 
-Публикация глоссария в CMS, изменение английского глоссария, публикация игры, изменение её видимости или типа локализации, push и production-деплой в это задание не входят. Их отсутствие не мешает завершить локальную поставку. Не создавай новую карточку игры, репозиторий или отдельную пользовательскую задачу вместо работы в указанном проекте.
+## 1. Start and resume
 
-## 1. Начало и продолжение работы
+Read applicable AGENTS.md and mandatory references, beginning with
+/Users/antonkrutov/.codex/instructions/sitefor-mods.md. Use existing translation, engine,
+font, packaging and test guides. A missing required document blocks its affected work;
+report the exact path rather than bypassing it.
+Inspect canonical sources, Git state, checkpoint, batches, audits and built locale resources
+before creating files. Resume verified work; do not retranslate accepted parts without cause
+or duplicate a task on the same locale. Create a goal only on explicit owner request;
+continue an applicable existing goal within its scope and tool rules.
+Make routine technical decisions autonomously. Ask only for a missing owner decision,
+required source or authority outside scope. Continue independent work while waiting and
+do not repeat answered permission requests.
 
-Прочитай применимые AGENTS.md и обязательные ссылки из них. На этой машине начни также с `/Users/antonkrutov/.codex/instructions/sitefor-mods.md`. Используй существующие руководства по переводу, движку, шрифтам, упаковке и тестам. Если обязательный документ отсутствует, сообщи точный путь и останови затронутую часть работы.
+## 2. Canonical glossary
 
-Перед созданием новых файлов проверь текущие исходники, Git-состояние, checkpoint, существующие батчи, журналы редакторских проверок и уже собранные ресурсы целевого языка. Продолжай выполненную работу. Готовые и подтверждённые части не переводи заново. Не запускай вторую независимую задачу на тот же язык.
-
-Создавай goal только по явному запросу владельца; существующую цель продолжай в рамках её объёма. Не подменяй завершение цели сообщениями о прогрессе и соблюдай правила инструмента.
-
-Рутинные технические решения принимай самостоятельно. Спрашивай только о реально отсутствующем решении владельца, необходимом источнике или разрешении вне указанного объёма. Пока ждёшь, выполняй независимую полезную работу; не повторяй уже полученные вопросы о разрешении.
-
-## 2. Канонический глоссарий сайта
-
-В master-репозитории начни с `./vnrevival help`, затем прочитай актуальный glossary workflow и выполни:
+In the master repository run ./vnrevival help, read the current glossary workflow, then:
 
 ```text
 ./vnrevival glossary guide
 ./vnrevival glossary work <SLUG> <LOCALE>
 ```
 
-Команды в блоке — шаблон: подставь точные значения параметров.
+Replace placeholders with exact values. Canonical source is data/games/<SLUG>/glossary.json;
+locale layers are in glossary-translations.json. Use stable IDs from the game's shared
+source glossary. Current games use English; honor the declared sourceLanguage/sourceLocale
+for any other source. Verify target codes and official-language exceptions against the
+canonical catalog and game record. Do not choose exceptions or localization type.
 
-Канонический английский слой находится в `data/games/<SLUG>/glossary.json`, переводы — в `glossary-translations.json`. У игры один общий глоссарий; используй целевую локаль по стабильным ID. Точный код языка и исключения для официальных локализаций проверь по актуальному каталогу и данным игры. Не назначай исключения и тип локализации самостоятельно.
+Compare canonical files, project snapshots and complete site exports only through the
+public CLI. Verify pagination/counts/IDs/fingerprints. CMS is a mirror; a later date is
+not proof of authority. Never mix versions. If the site is unavailable, use verified local
+canonical files only when project rules permit and record the unverified mirror check.
+Complete every term and meaning in the target layer directly from source before game text,
+preserving IDs/order/source fields/metadata/other locales. Propose source changes separately;
+do not apply them incidentally.
 
-Сопоставь канонические файлы, локальный снимок проекта и полный экспорт сайта только через предусмотренный публичный CLI. Проверь пагинацию, количество записей, набор ID и fingerprint. CMS — зеркало; более поздняя дата файла или ответа не доказывает его каноничность. Не смешивай версии молча. При недоступном сайте используй проверенные локальные канонические файлы, если правила проекта это разрешают, и зафиксируй, что проверка зеркала не состоялась.
+Resolve all speaking characters in the source glossary before glossary/game translation.
+The player entry, if applicable, comes first. Record evidenced male/female; player-selected
+variants with conditions; deliberate hiddenness (including NPCs); or canonical ambiguity
+with evidence and a defined address strategy. Unknown means unfinished research: investigate
+or obtain an owner decision before source readiness, never guess or defer to game translation.
+Preserve facts, identity, pronouns and agreement rules in meaning, with exact evidence and
+decisions in glossary-sources.md. Do not infer gender from name, appearance, voice, occupation
+or stereotypes. The locale glossary retains canon and specifies language-specific rules.
+An open question blocks translation; protected-source gaps are separate findings.
+See tools/codex-skills/shared/CHARACTERS.md in the master repository for the full contract.
+For major speakers, retain evidenced age, origin, voice and other relevant context without
+inventing exhaustive biographies or blocking on irrelevant details.
 
-До основного перевода доведи ВСЕ `term` и `meaning` целевого слоя до редакторской готовности непосредственно по английскому. Сохраняй ID, порядок, английские поля, metadata и другие локали. Нужные изменения английской основы запиши отдельным предложением; сам их не применяй.
+Follow the canonical full-entry glossary editorial gate: two consecutive clean full audits
+of the same unchanged version after corrections; every edit resets the count. Check every
+term's uses throughout term and meaning, including inflection, compounds and references.
+Structural coverage is not editorial acceptance. Pin the approved locale fingerprint and
+project snapshot before translating the game. A later applicable glossary change invalidates
+prior evidence under the universal audit protocol.
 
-До перевода глоссария и игры исходная база должна содержать всех говорящих
-персонажей с доказательствами и закрытыми правилами обращения. Персонаж игрока
-при наличии стоит первым. Подтверждённый пол — male/female; выбор игрока —
-variable/player-selected с условиями вариантов; намеренно скрытый пол — hidden
-(также для NPC), каноническая неоднозначность — ambiguous с доказательствами
-и заранее определённой стратегией. Unknown означает незавершённое исследование:
-найди сведения или вынеси случай владельцу до готовности исходного глоссария.
-Не назначай пол наугад, не раскрывай скрытое и не переноси вопросы в перевод.
+Reuse existing unchanged glossary reviews only when they cover every entry, pin its hash
+and meet the current contract; a completion claim alone is not evidence. After glossary
+edits run `./vnrevival glossary check`, update the required project snapshot and verify
+canonical parity. Do not publish. Later separately authorized publication must use the
+current single-locale CLI, not legacy publishers or site deployment.
+Apply terms by meaning and ID with natural case, number and register; do not substitute
+synonyms without reason. For hidden gender prefer natural neutral constructions, minimize
+unavoidable gender markers and record deliberate exceptions. After any late terminology
+or character-evidence change, enumerate and recheck every affected use.
 
-Сведения, идентичность, местоимения и правила согласования храни в meaning,
-точные свидетельства и решения — в glossary-sources.md. Не выводи пол из имени,
-внешности, голоса, профессии или стереотипа. В целевом глоссарии сохрани канон
-и конкретизируй правила языка до перевода игры. Открытый вопрос блокирует старт;
-пробел защищённого source оформить отдельно, не исправлять попутно.
-Полный контракт — tools/codex-skills/shared/CHARACTERS.md в master-репозитории.
+## 3. Source inventory and technical feasibility
 
-Для значимых персонажей с большим количеством реплик по возможности фиксируй
-в каноническом глоссарии подтверждённые сведения, влияющие на перевод их речи:
-возраст, национальность или культурное происхождение, манеру общения и другие
-существенные особенности. Не превращай это в исчерпывающую биографию и не
-выдумывай неподтверждённые детали; отсутствие несущественной детали само по
-себе не блокирует локализацию.
+Use original source-language assets of the supported version and the existing verified
+extractor. Other localizations may inform format/control syntax, not translated wording.
+Never reconstruct missing original text from memory.
+Complete the agreed inventory before the first translated phrase: UI/system messages,
+items, quests, dialogue, branches, events, tutorials, credits and text-bearing images.
+Check nested/typed assets; an unpacked directory may be incomplete. Record asset, stable
+key/field path, original and necessary context. Track unique strings, occurrences and
+variants separately. Every target locale uses the same canonical inventory/fingerprint;
+no locale-specific source omissions/additions. A missing asset or changed inventory returns
+work to extraction and invalidates coverage as the universal protocol requires.
 
-Пройди полный редакторский gate из актуального SiteForMods workflow: структурные проверки, построчная сверка с оригиналом, отдельная языковая вычитка и повтор после исправлений. Два последовательных полных аудита без новых объективных замечаний обязательны. Подтверждённые проверки существующего неизменившегося слоя можно использовать, если они покрывают весь слой, фиксируют его hash и соответствуют текущему контракту; декларация «готово» сама по себе не доказательство.
+Separate visible text from IDs, commands and runtime values. Do not count technical records
+as translation. Individually justify intentionally unchanged visible content; source equality
+alone proves neither correctness nor failure. Mixed formats require a complete parser-derived
+preserve-exactly manifest and source-vs-extracted/reinserted equality, including assignments,
+comparisons, boolean/enum values, branching/evidence keys and service prefixes. Structure or
+token-presence checks do not replace exact comparison.
 
-После изменений выполни `./vnrevival glossary check`, обнови требуемый снимок игрового проекта и проверь его соответствие канону. Публикацию не запускай. Если владелец отдельно разрешит её позже, используй актуальную команду публикации одного языка; не применяй legacy publisher и общий деплой сайта.
+Before mass work test the script/renderer on representative original lines in the approved
+isolated environment: glyphs, diacritics, shaping, RTL/bidi, wrapping, numbers and placeholders.
+Do not replace scripts with transliteration. Resolve unsupported rendering or report the blocker.
+New paths additionally require a no-op round trip, read-back and exact checks. In authorized
+runtime, prove the next game state, not merely a rendered frame. Translation samples still
+require complete asset/glossary gates. Without runtime permission, record not-run and obtain
+the owner's decision on mass work with the remaining risk. Reuse proven unchanged paths.
 
-Термины применяй по смыслу и ID во всём переводе. Разрешены необходимые падеж, число и регистр; не подменяй терминологию синонимами без причины. Для персонажей используй подтверждённые глоссарием `male`/`female` при выборе местоимений, согласования прилагательных и причастий, родовых форм глаголов, обращений, профессий, титулов, родства, феминитивов и аналогичных форм целевого языка. Для `hidden` максимально сохраняй скрытый род: предпочитай естественные нейтральные конструкции и не назначай игроку мужской или женский род без необходимости. Неизбежные родовые формы минимизируй и фиксируй как осознанные исключения. Для значимых персонажей применяй также подтверждённые сведения о возрасте, происхождении и манере общения, когда они влияют на речь. При позднем изменении термина или сведений о персонаже найди и перепроверь все затронутые употребления.
+## 4. Translate
 
-## 3. Полный источник и техническая осуществимость
+Author every phrase directly from source and the approved glossary. Do not use other models,
+local LLMs, machine/browser translation or external translation APIs. Do not delegate translation
+or editing without separate owner permission. Scripts may extract/build/validate/apply authored
+wording, never generate it in your place.
+Preserve meaning, character, register, humor, conditions and gameplay distinctions. Write
+natural target-language prose without added explanations or omissions for coverage. Apply
+agreement, player address, plural forms and actual UI constraints.
+Never translate keys, internal names, commands, paths, IDs or control syntax. Preserve placeholders,
+markup, escapes, variants and script structure under engine grammar. Extract only visible
+fragments from mixed events rather than word-replacing an entire script.
+Work in coherent contextual batches: read original/neighbors and glossary IDs, translate,
+review, apply through existing tools, validate and update checkpoint. Do not mix unrelated
+languages in a batch. Check the complete preserve-exactly set after application and before build.
+If context is unclear, inspect scene/conditions/asset use. Record remaining uncertainty precisely
+as needs-review, never as completed. Return new character evidence problems to source review.
 
-Смысл бери только из оригинальных английских assets поддерживаемой версии. Используй существующий проверенный extractor. Другие локализации допустимы для понимания формата и синтаксиса, но не как источник переводных формулировок. Не восстанавливай отсутствующий оригинал по памяти.
+## 5. Efficient execution and honest progress
 
-Построй или актуализируй полный инвентарь: интерфейс, системные сообщения, предметы, задания, диалоги, ветвления, события, обучение, титры и текстовые изображения в согласованном объёме поставки. Проверь также вложенные и типизированные assets: готовая распаковка может покрывать не всё. Для каждой единицы фиксируй asset, устойчивый ключ или путь поля, оригинал и необходимый контекст. Уникальные строки, повторные употребления и варианты учитывай раздельно.
+- Read only needed sources, relevant glossary entries, rules and a compact checkpoint for
+  each batch, while retaining sufficient scene context. Do not print complete dictionaries,
+  histories or large reports unnecessarily.
+- Size batches by text/response volume, not row count. Reference stored data by short stable
+  keys instead of repeating source text and technical wrappers during each application.
+- Use common tools and data batches, not a new one-off script for each batch.
+- Run relevant checks after edits. Repeat full builds/runtime at checkpoints or relevant
+  changes, not after every line. Required final checks must cover final artifact versions.
+- Maintain one current per-locale summary with source/glossary hashes, phase, actual coverage,
+  batches, audits/findings, evidence hashes, blocker and next action; keep history separately.
+  Glossaries track clean full passes; game text tracks semantic coverage and immutable deltas.
+- Derive progress from stored data. Separate translation, editorial pass and technical acceptance.
+  Do not invent near-100% percentages for unfinished or unknown coverage.
+- Do not repeat unchanged status or invoke models just to announce percentages. Observe the
+  environment's update cadence with concrete findings or reasons. Wait for processes through
+  tools, not generation loops.
+- If two consecutive steps change neither artifacts, coverage nor verified knowledge, identify
+  the cause and change approach. Preserve state for external blockers; never claim completion
+  merely to stop looping. Follow turn and goal rules.
+- Record actual exposed usage per language/task/model/phase: input, cached input, output and
+  reasoning. Cached input is part of input; reasoning is part of output. Do not sum cumulative
+  snapshots as separate requests or substitute file-size estimates for measured usage.
 
-Отдели видимый текст от ID, команд и технических значений. Не включай технические записи в процент переведённого текста. Для намеренно сохранённого видимого значения зафиксируй индивидуальное проверяемое основание. Не используй совпадение с английским как автоматическое доказательство ошибки или готовности.
+## 6. Editorial and technical acceptance
 
-До массового перевода проверь осуществимость языка в движке на небольшом репрезентативном наборе: символы, диакритика, shaping, RTL/bidi, переносы и смешанные строки с числами и плейсхолдерами. Используй реальные исходные реплики и предусмотренную проектом изолированную тестовую среду. Не подменяй нужную письменность транслитерацией. Если движок не поддерживает её корректно, сначала реши ограничение или сообщи конкретный блокер.
+After a complete draft, run the universal protocol: deterministic full preflight, one full
+source-to-target semantic audit including image plans, corrections, reproducible dependency
+closure, independent diff review, correction deltas and final machine gate.
+Each cycle preserves new immutable changed/closure/component lists, review rows and hashes.
+After corrections review corrected IDs, current-minus-previous closure IDs and explicitly
+invalidated prior evidence; do not automatically reread the full closure or overwrite its
+only copy. If prior lists/hashes are unavailable, reconstruct exactly or reread current closure.
+Never guess the delta.
+Restart the full audit only under universal source/inventory/glossary/parsing/binding or
+unbounded-systemic-change conditions. Local rules add checks, not another acceptance algorithm.
+Changes need objective reasons, not stylistic taste. Searches/validators assist but do not
+replace full reading. Record verified coverage/hashes; partial passes are not clean full audits.
 
-Для нового технического пути до массового перевода дополнительно выполнить
-no-op round trip, повторное чтение собранных ресурсов и exact-сравнение
-служебных значений. На разрешённом runtime-образце проверить также переход
-к следующему состоянию игры, не только отрисовку кадра. Переводные образцы
-допустимы лишь после полного инвентаря и готового глоссария. Без разрешения
-на runtime сохранить not-run и получить решение о массовой работе с риском.
-Готовый проверенный путь той же версии повторно не исследовать.
+Verify final delivery:
+- Complete inventory and visible-unit coverage; no unexplained omissions or needs-review.
+- Parseable formats; preserved keys, fields, tokens, escapes and branches.
+- Consistent approved glossary and matching canonical snapshot.
+- Character questions resolved before translation; preserve known gender, player variants,
+  hiddenness/ambiguity and apply pronoun/agreement/address/title/kinship rules across the corpus.
+- Correct engine/locale patch bindings and preservation of other languages.
+- Fonts/images actually load; authorized real screens confirm scripts, direction, wrapping/size.
+- Required tests, build, resource checks and project runtime/visual acceptance pass.
 
-## 4. Перевод
+Do not modify original installed files or player saves merely for development. Use the approved
+safe runtime path; never open an auto-installing app for inspection. Missing game/visual access
+leaves an unmet criterion, not a passed test.
 
-Каждую переводную фразу пиши сам непосредственно по оригиналу и согласованному глоссарию. Не вызывай другие модели, локальные LLM, машинные переводчики, browser translation или внешние translation API. Не делегируй перевод или редактуру субагентам без отдельного разрешения владельца. Скрипты могут извлекать, собирать, проверять и переносить написанный текст, но не генерировать его вместо тебя.
+## 7. Finish
 
-Сохраняй смысл, характер персонажей, регистр, юмор, условия и игровые различия. Пиши естественно на целевом языке. Не добавляй объяснений от себя, не сокращай смысл ради процента готовности. Учитывай грамматический род, обращение к игроку, множественное число и реальные ограничения интерфейса.
+Review final diff and unrelated-change preservation. Commit and integrate verified work into
+canonical checkouts under Git rules. Do not overwrite owner changes/divergence or hide permission
+barriers; preserve the result and report the exact obstruction. Do not claim delivery complete
+without mandatory canonical integration. Complete an explicitly created goal only after all
+in-scope criteria pass.
 
-Никогда не переводи ключи, внутренние имена, команды, пути, IDs и управляющие токены. Сохраняй плейсхолдеры, markup, экранирование, варианты и структуру скриптов по правилам движка. В смешанных строках извлекай именно видимые фрагменты; не прогоняй весь event script через замену слов.
-
-Работай проверяемыми батчами связанного контекста. Для каждого: прочитай оригинал и соседние реплики, выбери нужные glossary IDs, напиши перевод, сразу вычитай его, примени через существующий инструмент, проверь структуру и обнови checkpoint. Не объединяй несвязанные языки в один батч.
-
-При неоднозначности сначала изучи сцену, условие или использование asset. Если оригинал остаётся недостаточным, запиши точный вопрос и статус `needs-review`; такую строку не считай завершённой.
-
-## 5. Экономия токенов и контроль исполнения
-
-- На следующий батч читай только необходимые исходники, релевантные термины, правила и краткий checkpoint. Не выводи целиком все словари, переводы, историю или большие отчёты. При этом не обрезай контекст сцены, необходимый для верного перевода.
-- Размер батча определяй по объёму текста и ожидаемому ответу, а не только по числу строк. Используй короткие ключи ссылок на уже сохранённые данные; не заставляй модель повторять английский текст и техническую оболочку при каждом применении.
-- Используй существующие общие команды. Не создавай отдельный одноразовый скрипт для каждого батча, если достаточно файла данных и общего применителя.
-- После изменения сначала запускай относящиеся к нему проверки. Полные сборки и runtime-проверки повторяй на контрольных точках и после релевантных изменений, а не после каждой реплики. Обязательные финальные проверки должны относиться к окончательной версии результата.
-- Веди один компактный checkpoint: версия и hash источника/глоссария, фаза, реальные счётчики покрытия, завершённые батчи, аудиты с hash и замечаниями, блокеры и следующее конкретное действие. Используй существующий формат проекта: одна актуальная сводка по локалям с artifact/evidence hashes, отдельный журнал истории. Не оставляй сверху устаревшие статусы рядом с новой приёмкой. Глоссарий хранит счётчик чистых полных аудитов; игровой текст — semantic coverage и immutable diff/delta evidence.
-- Прогресс вычисляй из сохранённых данных. Отдельно показывай перевод, текущий редакторский проход и техническую приёмку. Не обозначай незавершённую редактуру или неизвестное покрытие искусственными `99,999%`.
-- Не выдавай один и тот же статус без изменений и не запускай модель только ради публикации процента. При продолжающейся работе соблюдай установленную средой частоту обновлений, сообщая конкретный результат или причину задержки. Ожидание внешнего процесса выполняй инструментом ожидания, а не циклом генерации сообщений.
-- Если два последовательных рабочих шага не меняют артефакты, покрытие и проверенные знания, установи причину и измени следующий шаг. Не повторяй заведомо безрезультатное действие. Если необходим внешний ответ, сохрани состояние, ясно назови блокер и соблюдай правила завершения текущего хода и goal. Не объявляй задачу готовой ради прекращения цикла.
-- Когда доступны реальные usage-данные, учитывай расход отдельно по языку, задаче, модели и фазе: вход, кэшированный вход, выход и reasoning. Кэш уже входит во вход, reasoning — в выход. Не суммируй накопительные снимки как отдельные запросы и не выдавай оценку размера текста за измеренный расход.
-
-## 6. Редакторская и техническая приёмка
-
-После полного первичного перевода выполни единый обязательный редакторский
-протокол: полный детерминированный preflight, один полный семантический
-source-to-target аудит всего корпуса и всех текстовых изображений, исправления,
-построение воспроизводимого dependency closure, независимый diff-аудит,
-дельта-проверки после последующих исправлений и финальный полный машинный gate.
-
-Каждый closure-снимок неизменяем: сохраняй списки changed IDs, closure IDs,
-компоненты зависимостей, строки проверки и их hash под новым номером цикла.
-После исправлений проверяй только исправленные ID, новые зависимости
-`closure-N - closure-(N-1)` и ранее проверенные строки с явно
-инвалидированным контекстом. Не перечитывай весь closure автоматически и не
-перезаписывай его предыдущую единственную копию. Если старый список потерян
-или его hash не подтверждается, точно восстанови его либо перечитай весь
-текущий closure; не угадывай дельту.
-
-Полный семантический аудит запускается заново только по универсальным условиям
-протокола: изменение источника, инвентаря, применимого глоссария, парсинга,
-привязки или невозможность надёжно ограничить системную ошибку. Локальные
-правила игры могут добавлять обязательные поверхности и проверки, но не
-создавать исключение из этого алгоритма.
-
-Не переписывай допустимые варианты только ради стилистического предпочтения. Каждое исправление должно иметь основание. Поиск подозрительных строк и структурный валидатор помогают редактору, но не заменяют чтение всего объёма. Сохраняй проверяемое покрытие аудита и hash проверенной версии; не объявляй чистым проход, который выполнен частично.
-
-Проверь окончательную поставку:
-- Полнота инвентаря и обработка всех видимых единиц; нет необъяснённых пропусков и `needs-review`.
-- Форматы парсятся; ключи, поля, токены, escape-последовательности и скриптовые ветвления сохранены.
-- Глоссарий применён последовательно, снимок соответствует согласованному канону.
-- Реестр всех говорящих персонажей закрыт в исходном глоссарии до перевода;
-  подтверждённый пол, выбор игрока и скрытость/неоднозначность сохранены.
-  Правила обращения, местоимения, согласование, профессии, титулы, родство
-  и феминитивы применены и вычитаны во всём корпусе.
-- Патчи включены ровно так, как требует движок, действуют на правильную локаль и не ломают другие языки.
-- Шрифты и изображения действительно загружаются; реальные экраны показывают корректную письменность, направление, переносы и размеры текста.
-- Проходят обязательные тесты, сборка, проверки ресурсов и runtime/визуальная приёмка из документации проекта.
-
-Не меняй оригинальные файлы установленной игры и пользовательские сохранения ради разработки. Runtime проверяй предусмотренным безопасным способом. Не открывай установщик для просмотра, если его запуск автоматически изменяет установленную игру. Отсутствие доступа к игре или визуальной проверке укажи как незакрытый критерий, а не как пройденный тест.
-
-## 7. Завершение
-
-Проверь финальный diff и сохранность несвязанных изменений. Зафиксируй полный проверенный результат и интегрируй его в канонические checkout по действующим правилам Git. Если этому мешают чужие изменения, расхождение веток или отсутствие прав, не перезаписывай их: сохрани работу и назови точное препятствие. Не заявляй завершение поставки, пока обязательная интеграция не выполнена.
-
-Заверши цель только после выполнения всех входящих в неё критериев. Финальный отчёт должен содержать:
-- игру, версию, локаль, объём источника и фактическое покрытие;
-- состояние глоссария, полный семантический аудит, финальный чистый
-  dependency/delta-аудит и оставшиеся неопределённости;
-- результаты технической и визуальной приёмки;
-- пути к сборке и checkpoint, канонические ветки и коммиты;
-- измеренный расход по фазам, если доступен, с явными пробелами данных;
-- статус локальной поставки отдельно от публикации на сайте.
-
-Начни с проверки текущего состояния и продолжай до выполнения указанного объёма. Приоритет — проверенный, пригодный для игры результат с разумным расходом токенов и достоверной отчётностью.
+Report game/version/locale, source size and actual coverage; glossary/full semantic/clean diff
+acceptance and uncertainty; technical/visual results; build/checkpoint paths and canonical
+branches/commits; measured usage by phase with gaps; local delivery separately from publication.
+Start by verifying current state, then complete the requested scope with honest evidence and
+reasonable token use.

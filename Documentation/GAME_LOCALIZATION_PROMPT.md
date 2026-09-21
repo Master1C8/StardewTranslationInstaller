@@ -207,6 +207,11 @@ Do not modify original installed files or player saves merely for development. U
 safe runtime path; never open an auto-installing app for inspection. Missing game/visual access
 leaves an unmet criterion, not a passed test.
 
+Installer language selection is game-dependent. Use a suitable native locale mechanism
+when available; otherwise the installer may select the active language, as Sonic does.
+Do not apply Stardew's project-specific no-picker restriction to other games. Active
+language selection remains separate from installing the complete finished language set.
+
 ## 7. Finish
 
 Review final diff and unrelated-change preservation. Commit and integrate verified work into

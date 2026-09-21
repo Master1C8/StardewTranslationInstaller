@@ -18,9 +18,12 @@ Before editorial review, record:
 - the supported game/build version and source locale;
 - the canonical source inventory, stable IDs or paths, and fingerprints;
 - the exact target locale and approved glossary-layer fingerprint;
-- a complete glossary roster of every speaking character, with grammatical
-  category `male` or `female`; when the game has a player character, its entry
-  is first and may instead be `hidden`;
+- a complete glossary roster of every speaking character, resolved before
+  glossary/game translation: evidenced male/female, player-selected variants,
+  or canonically hidden/ambiguous state with a defined address strategy;
+  insufficient evidence requires research or a recorded owner decision before
+  source-glossary readiness, never guessing or deferral to game translation;
+  the player entry, when present, is first;
 - the authored target text, derived artifacts, text-bearing image plans, and
   their hashes;
 - the previous accepted hashes, or an explicit statement that none exist;
@@ -51,9 +54,9 @@ text-bearing image plan once with enough scene and runtime context to judge:
 - meaning, omissions, additions, negation, agency, tense, and condition;
 - naturalness, grammar, voice, register, humor, and repeated callbacks;
 - approved terminology and context-sensitive inflection;
-- every character reference against the glossary's required `male`, `female`,
-  or player-character-only `hidden` grammatical category, with the latter
-  kept as neutral as the target language naturally permits;
+- every character reference against the glossary's resolved canonical evidence
+  and target-language address rules; preserve player-selected variants and
+  intentional hidden/ambiguous states for players and NPCs without guessing;
 - confirmed translation-relevant context recorded for high-dialogue
   characters, without requiring or inventing an exhaustive biography;
 - visible UI text, titles, labels, credits, save/load surfaces, and image text.
@@ -143,7 +146,7 @@ Every project must define a stable, reviewable catalog of its high-risk
 surfaces. It must include, where applicable:
 
 - gender, pronouns, agreement, titles, professions, kinship, honorifics,
-  feminatives, and every avoidable gender marker for a `hidden` player;
+  feminatives, and every avoidable gender marker for a canonically hidden character;
 - glossary terms affected by edits and protected names or comparison literals;
 - save/load, locale selection, input prompts, HUD, menus, titles, speaker
   labels, credits, environment/location displays, and text-bearing images;
@@ -186,3 +189,13 @@ estimate from file size or row count.
 Historical audits remain evidence of the protocol actually used. Do not
 rewrite their history; apply this protocol to the next audit or invalidated
 revision.
+
+## Current-state summary
+
+Keep one current per-locale summary tied to final artifact and evidence hashes.
+Keep historical events separately and immutable audit cycles intact. Glossary
+clean-pass counts and game-text semantic/delta evidence are different fields.
+Do not inherit passed runtime/visual status from a changed payload without
+verified applicability. An independent reviewer must be identifiable in the
+evidence; a self-reread or validator is not an independent audit. If independent
+review is unavailable under current permissions, leave that criterion pending.

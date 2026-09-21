@@ -35,8 +35,11 @@ Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing 
   comparable gender-sensitive forms. Do not infer gender from the character's
   name, appearance, voice, occupation, relationship, or stereotypes. If the
   glossary lacks needed evidence, inspect the English assets and official
-  sources, record the exact uncertainty for source-glossary review, and keep
-  affected strings in review instead of silently choosing a gender.
+  sources and resolve the question during source-glossary preparation or obtain
+  an explicit owner decision before translation starts. Preserve canonically
+  hidden or player-selected cases with documented address rules; never guess.
+  New evidence discovered later returns to protected source review and the
+  universal audit invalidation protocol.
 - Translate from the original English text yourself. Do not call a machine-translation service and do not copy an official localization as the translation. Official localized assets may only be consulted to understand file structure or established control-token syntax.
 - The ready English extraction on this machine is `/Users/antonkrutov/Developer/data/stardew-english-unpacked/`, and the pinned extractor is `/Users/antonkrutov/Developer/tools/xnbcli/xnbcli`. In xnbcli JSON, translate entries from the top-level `content` object. If the extraction is missing or stale, follow section 3 of the translation guide and extract only base XNB files without locale suffixes from the installed game.
 - Never translate JSON keys, Content Patcher targets/actions, IDs, event commands, or control tokens. Preserve placeholders and markup exactly.

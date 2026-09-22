@@ -26,7 +26,7 @@ Check("English 123", "English 123");
 Check(string.Empty, string.Empty);
 CheckNestedRenderingPatch();
 
-Console.WriteLine("Hebrew bidi probe passed 9 exact cases and the nested DrawString/MeasureString reentrancy case.");
+Console.WriteLine("Hebrew bidi probe passed 9 exact cases plus RTL alignment and nested-rendering cases.");
 
 void Check(string logical, string expected)
 {
@@ -65,27 +65,63 @@ void CheckNestedRenderingPatch()
         languageField.SetValue(null, LocalizedContentManager.LanguageCode.mod);
         modLanguageField.SetValue(null, new ModLanguage { LanguageCode = "he-vnrevival" });
 
-        object[] outerText = { "שלום" };
-        object?[] outerCall = { outerText, false };
+        MethodInfo drawString = typeof(StardewValley.BellsAndWhistles.SpriteText).GetMethods()
+            .Single(method => method.Name == "drawString" && method.GetParameters().Length == 14);
+        ParameterInfo[] drawParameters = drawString.GetParameters();
+        int textIndex = Array.FindIndex(drawParameters, parameter => parameter.ParameterType == typeof(string));
+        int widthIndex = Array.FindIndex(drawParameters, parameter => parameter.Name == "width");
+        int alignmentIndex = Array.FindIndex(
+            drawParameters,
+            parameter => parameter.ParameterType == typeof(StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment)
+        );
+        object?[] outerText = drawParameters.Select(parameter => parameter.HasDefaultValue
+            ? parameter.DefaultValue
+            : parameter.ParameterType.IsValueType
+                ? Activator.CreateInstance(parameter.ParameterType)
+                : null).ToArray();
+        outerText[textIndex] = "שלום";
+        outerText[widthIndex] = 320;
+        outerText[alignmentIndex] = StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Left;
+        object?[] outerCall = { drawString, outerText, false };
         prefix.Invoke(null, outerCall);
-        if ((string)outerText[0] != "םולש" || outerCall[1] is not true)
+        if ((string)outerText[textIndex]! != "םולש"
+            || (StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment)outerText[alignmentIndex]!
+                != StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Right
+            || outerCall[2] is not true)
             throw new InvalidDataException("The outer text-rendering patch did not transform Hebrew exactly once.");
 
-        object[] innerText = { outerText[0] };
-        object?[] innerCall = { innerText, false };
+        object?[] innerText = (object?[])outerText.Clone();
+        object?[] innerCall = { drawString, innerText, false };
         prefix.Invoke(null, innerCall);
-        if ((string)innerText[0] != "םולש" || innerCall[1] is not false)
+        if ((string)innerText[textIndex]! != "םולש" || innerCall[2] is not false)
             throw new InvalidDataException("A forwarding text overload transformed Hebrew a second time.");
 
-        finalizer.Invoke(null, new object?[] { null, innerCall[1] });
-        finalizer.Invoke(null, new object?[] { null, outerCall[1] });
+        finalizer.Invoke(null, new object?[] { null, innerCall[2] });
+        finalizer.Invoke(null, new object?[] { null, outerCall[2] });
 
-        object[] nextText = { "שלום" };
-        object?[] nextCall = { nextText, false };
+        object?[] nextText = (object?[])outerText.Clone();
+        nextText[textIndex] = "שלום";
+        nextText[widthIndex] = -1;
+        nextText[alignmentIndex] = StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Left;
+        object?[] nextCall = { drawString, nextText, false };
         prefix.Invoke(null, nextCall);
-        if ((string)nextText[0] != "םולש" || nextCall[1] is not true)
+        if ((string)nextText[textIndex]! != "םולש"
+            || (StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment)nextText[alignmentIndex]!
+                != StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Left
+            || nextCall[2] is not true)
             throw new InvalidDataException("The text-rendering guard was not released after the outer call.");
-        finalizer.Invoke(null, new object?[] { null, nextCall[1] });
+        finalizer.Invoke(null, new object?[] { null, nextCall[2] });
+
+        object?[] centeredText = (object?[])outerText.Clone();
+        centeredText[textIndex] = "שלום";
+        centeredText[widthIndex] = 320;
+        centeredText[alignmentIndex] = StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Center;
+        object?[] centeredCall = { drawString, centeredText, false };
+        prefix.Invoke(null, centeredCall);
+        if ((StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment)centeredText[alignmentIndex]!
+                != StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Center)
+            throw new InvalidDataException("The RTL adapter changed explicitly centered text.");
+        finalizer.Invoke(null, new object?[] { null, centeredCall[2] });
     }
     finally
     {

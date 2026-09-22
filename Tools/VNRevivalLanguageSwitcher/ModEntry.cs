@@ -532,7 +532,7 @@ public sealed class ModEntry : Mod
             .SetValue(null, LocalizedContentManager.LanguageCode.en);
     }
 
-    private static void BeforeTextRendering(object[] __args, out bool __state)
+    private static void BeforeTextRendering(MethodBase __originalMethod, object[] __args, out bool __state)
     {
         __state = false;
         if (TextRenderingDepth > 0)
@@ -553,6 +553,7 @@ public sealed class ModEntry : Mod
         __state = true;
         try
         {
+            ApplyRightToLeftAlignment(__originalMethod, __args);
             for (int index = 0; index < __args.Length; index += 1)
             {
                 if (__args[index] is string text)
@@ -567,6 +568,40 @@ public sealed class ModEntry : Mod
             __state = false;
             throw;
         }
+    }
+
+    private static void ApplyRightToLeftAlignment(MethodBase method, object[] arguments)
+    {
+        ParameterInfo[] parameters = method.GetParameters();
+        int alignmentIndex = Array.FindIndex(
+            parameters,
+            parameter => parameter.ParameterType == typeof(SpriteText.ScrollTextAlignment)
+        );
+        if (alignmentIndex < 0
+            || alignmentIndex >= arguments.Length
+            || arguments[alignmentIndex] is not SpriteText.ScrollTextAlignment alignment
+            || alignment != SpriteText.ScrollTextAlignment.Left)
+            return;
+
+        // SpriteText treats an omitted width as the distance to the viewport edge.
+        // Right-aligning that default would move short standalone labels across the
+        // screen, so only align text inside an explicit region. Scroll backgrounds
+        // derive their own bounded width from the displayed or placeholder text.
+        bool hasBoundedWidth = method.Name.Contains("Scroll", StringComparison.Ordinal);
+        if (!hasBoundedWidth)
+        {
+            int widthIndex = Array.FindIndex(
+                parameters,
+                parameter => parameter.Name == "width" && parameter.ParameterType == typeof(int)
+            );
+            hasBoundedWidth = widthIndex >= 0
+                && widthIndex < arguments.Length
+                && arguments[widthIndex] is int width
+                && width > 0;
+        }
+
+        if (hasBoundedWidth)
+            arguments[alignmentIndex] = SpriteText.ScrollTextAlignment.Right;
     }
 
     private static Exception? FinishTextRendering(Exception? __exception, bool __state)

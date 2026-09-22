@@ -14,6 +14,7 @@ let package = Package(
                 .copy("Resources/ModPayload"),
                 .copy("Resources/LanguageSwitcherPayload"),
                 .copy("Resources/PackageConfig.json"),
+                .copy("Resources/vnrevival-locales.json"),
             ]
         ),
         .testTarget(

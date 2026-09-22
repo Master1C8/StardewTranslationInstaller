@@ -42,8 +42,11 @@ public sealed class ModEntry : Mod
     [ThreadStatic]
     private static int DialogueRenderingDepth;
     [ThreadStatic]
-    private static bool DialogueHasIcon;
+    private static object? RelocatedDialogueIcon;
+    [ThreadStatic]
+    private static Vector2 RelocatedDialogueIconPosition;
     private static FieldInfo? DialogueIconField;
+    private static FieldInfo? DialogueIconPositionField;
     private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleBackOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleDeveloperOverlayTextures = new(StringComparer.Ordinal);
@@ -128,6 +131,8 @@ public sealed class ModEntry : Mod
         HebrewAdapter = ArabicScriptTextAdapter.CreateBidiOnly();
         DialogueIconField = AccessTools.Field(typeof(DialogueBox), "dialogueIcon")
             ?? throw new InvalidOperationException("The Stardew Valley dialogue icon field was not found.");
+        DialogueIconPositionField = AccessTools.Field(typeof(TemporaryAnimatedSprite), "position")
+            ?? throw new InvalidOperationException("The Stardew Valley dialogue icon position field was not found.");
         MethodInfo dialogueDrawTarget = AccessTools.Method(
             typeof(DialogueBox),
             nameof(DialogueBox.draw),
@@ -169,7 +174,22 @@ public sealed class ModEntry : Mod
     private static void BeginDialogueRendering(DialogueBox __instance)
     {
         if (DialogueRenderingDepth == 0)
-            DialogueHasIcon = DialogueIconField?.GetValue(__instance) is not null;
+        {
+            string? languageCode = LocalizedContentManager.CurrentLanguageCode
+                == LocalizedContentManager.LanguageCode.mod
+                ? LocalizedContentManager.CurrentModLanguage?.LanguageCode
+                : null;
+            bool isRightToLeft = languageCode is PersianLanguageCode or ArabicLanguageCode or HebrewLanguageCode;
+            object? icon = isRightToLeft ? DialogueIconField?.GetValue(__instance) : null;
+            if (icon is not null
+                && DialogueIconPositionField?.GetValue(icon) is Vector2 position)
+            {
+                RelocatedDialogueIcon = icon;
+                RelocatedDialogueIconPosition = position;
+                position.X = __instance.x + 16;
+                DialogueIconPositionField.SetValue(icon, position);
+            }
+        }
         DialogueRenderingDepth += 1;
     }
 
@@ -177,7 +197,11 @@ public sealed class ModEntry : Mod
     {
         DialogueRenderingDepth = Math.Max(0, DialogueRenderingDepth - 1);
         if (DialogueRenderingDepth == 0)
-            DialogueHasIcon = false;
+        {
+            if (RelocatedDialogueIcon is not null)
+                DialogueIconPositionField?.SetValue(RelocatedDialogueIcon, RelocatedDialogueIconPosition);
+            RelocatedDialogueIcon = null;
+        }
         return __exception;
     }
 
@@ -652,14 +676,6 @@ public sealed class ModEntry : Mod
 
         Color? color = arguments[colorIndex] is Color explicitColor ? explicitColor : null;
         int rightPadding = Math.Max(4, (int)Math.Round(SpriteText.fontPixelZoom * 4f));
-        if (DialogueRenderingDepth > 0 && DialogueHasIcon)
-        {
-            // DialogueBox anchors its 36-44 px close/next icon 40 px from the
-            // right edge. Portrait boxes shift that icon into the bounded text
-            // region too. Keep RTL lines outside the exact native icon area and
-            // include a small gap, without changing non-dialogue labels.
-            rightPadding = Math.Max(rightPadding, 64);
-        }
         int availableWidth = Math.Max(1, width - rightPadding * 2);
         List<string> logicalLines = WrapRightToLeftText(logicalText, availableWidth, adapter);
 

@@ -39,6 +39,11 @@ public sealed class ModEntry : Mod
     private static bool LoggedPlainRtlRenderer;
     [ThreadStatic]
     private static int TextRenderingDepth;
+    [ThreadStatic]
+    private static int DialogueRenderingDepth;
+    [ThreadStatic]
+    private static bool DialogueHasIcon;
+    private static FieldInfo? DialogueIconField;
     private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleBackOverlayTextures = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, Texture2D> TitleDeveloperOverlayTextures = new(StringComparer.Ordinal);
@@ -121,6 +126,18 @@ public sealed class ModEntry : Mod
         string arabicShapingMap = Path.Combine(helper.DirectoryPath, "arabic-shaping-map.json");
         ArabicAdapter = ArabicScriptTextAdapter.Load(arabicShapingMap);
         HebrewAdapter = ArabicScriptTextAdapter.CreateBidiOnly();
+        DialogueIconField = AccessTools.Field(typeof(DialogueBox), "dialogueIcon")
+            ?? throw new InvalidOperationException("The Stardew Valley dialogue icon field was not found.");
+        MethodInfo dialogueDrawTarget = AccessTools.Method(
+            typeof(DialogueBox),
+            nameof(DialogueBox.draw),
+            new[] { typeof(SpriteBatch) }
+        ) ?? throw new InvalidOperationException("The Stardew Valley dialogue draw method was not found.");
+        harmony.Patch(
+            dialogueDrawTarget,
+            prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeginDialogueRendering)),
+            finalizer: new HarmonyMethod(typeof(ModEntry), nameof(FinishDialogueRendering))
+        );
         MethodInfo textPrefix = AccessTools.Method(typeof(ModEntry), nameof(BeforeTextRendering))
             ?? throw new InvalidOperationException("The Arabic-script rendering adapter was not found.");
         MethodInfo textFinalizer = AccessTools.Method(typeof(ModEntry), nameof(FinishTextRendering))
@@ -147,6 +164,21 @@ public sealed class ModEntry : Mod
             patched += 1;
         }
         Monitor.Log($"Persian, Arabic, and Hebrew shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
+    }
+
+    private static void BeginDialogueRendering(DialogueBox __instance)
+    {
+        if (DialogueRenderingDepth == 0)
+            DialogueHasIcon = DialogueIconField?.GetValue(__instance) is not null;
+        DialogueRenderingDepth += 1;
+    }
+
+    private static Exception? FinishDialogueRendering(Exception? __exception)
+    {
+        DialogueRenderingDepth = Math.Max(0, DialogueRenderingDepth - 1);
+        if (DialogueRenderingDepth == 0)
+            DialogueHasIcon = false;
+        return __exception;
     }
 
     private static void AfterTitleMenuDraw(TitleMenu __instance, SpriteBatch b)
@@ -620,6 +652,14 @@ public sealed class ModEntry : Mod
 
         Color? color = arguments[colorIndex] is Color explicitColor ? explicitColor : null;
         int rightPadding = Math.Max(4, (int)Math.Round(SpriteText.fontPixelZoom * 4f));
+        if (DialogueRenderingDepth > 0 && DialogueHasIcon)
+        {
+            // DialogueBox anchors its 36-44 px close/next icon 40 px from the
+            // right edge. Portrait boxes shift that icon into the bounded text
+            // region too. Keep RTL lines outside the exact native icon area and
+            // include a small gap, without changing non-dialogue labels.
+            rightPadding = Math.Max(rightPadding, 64);
+        }
         int availableWidth = Math.Max(1, width - rightPadding * 2);
         List<string> logicalLines = WrapRightToLeftText(logicalText, availableWidth, adapter);
 

@@ -554,6 +554,7 @@ public sealed class ModEntry : Mod
         try
         {
             ApplyRightToLeftAlignment(__originalMethod, __args);
+            ApplyProgressiveTextLimit(__originalMethod, __args);
             for (int index = 0; index < __args.Length; index += 1)
             {
                 if (__args[index] is string text)
@@ -568,6 +569,39 @@ public sealed class ModEntry : Mod
             __state = false;
             throw;
         }
+    }
+
+    private static void ApplyProgressiveTextLimit(
+        MethodBase method,
+        object[] arguments
+    )
+    {
+        ParameterInfo[] parameters = method.GetParameters();
+        int characterPositionIndex = Array.FindIndex(
+            parameters,
+            parameter => parameter.Name == "characterPosition"
+                && parameter.ParameterType == typeof(int)
+        );
+        int textIndex = Array.FindIndex(
+            parameters,
+            parameter => parameter.Name == "s" && parameter.ParameterType == typeof(string)
+        );
+        if (characterPositionIndex < 0
+            || characterPositionIndex >= arguments.Length
+            || textIndex < 0
+            || textIndex >= arguments.Length
+            || arguments[characterPositionIndex] is not int characterPosition
+            || arguments[textIndex] is not string text
+            || characterPosition < 0
+            || characterPosition >= text.Length)
+            return;
+
+        // Stardew's typewriter effect normally truncates after bidi conversion,
+        // which reveals the already reversed visual string from left to right.
+        // Build the logical visible prefix first, then let the normal adapter
+        // transform that complete fragment into its current RTL visual form.
+        arguments[textIndex] = text.Substring(0, characterPosition);
+        arguments[characterPositionIndex] = 999999;
     }
 
     private static void ApplyRightToLeftAlignment(MethodBase method, object[] arguments)

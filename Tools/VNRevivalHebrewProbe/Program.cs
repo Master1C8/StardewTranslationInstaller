@@ -26,7 +26,7 @@ Check("English 123", "English 123");
 Check(string.Empty, string.Empty);
 CheckNestedRenderingPatch();
 
-Console.WriteLine("Hebrew bidi probe passed 9 exact cases plus RTL alignment and nested-rendering cases.");
+Console.WriteLine("Hebrew bidi probe passed 9 exact cases plus progressive RTL, alignment, and nested-rendering cases.");
 
 void Check(string logical, string expected)
 {
@@ -122,6 +122,24 @@ void CheckNestedRenderingPatch()
                 != StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Center)
             throw new InvalidDataException("The RTL adapter changed explicitly centered text.");
         finalizer.Invoke(null, new object?[] { null, centeredCall[2] });
+
+        object?[] progressiveText = (object?[])outerText.Clone();
+        progressiveText[textIndex] = "שלום עולם";
+        int characterPositionIndex = Array.FindIndex(
+            drawParameters,
+            parameter => parameter.Name == "characterPosition"
+        );
+        progressiveText[characterPositionIndex] = 4;
+        progressiveText[widthIndex] = 320;
+        progressiveText[alignmentIndex] = StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Left;
+        object?[] progressiveCall = { drawString, progressiveText, false };
+        prefix.Invoke(null, progressiveCall);
+        if ((string)progressiveText[textIndex]! != "םולש"
+            || (int)progressiveText[characterPositionIndex]! != 999999
+            || (StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment)progressiveText[alignmentIndex]!
+                != StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Right)
+            throw new InvalidDataException("The RTL adapter revealed progressive Hebrew in visual LTR order.");
+        finalizer.Invoke(null, new object?[] { null, progressiveCall[2] });
     }
     finally
     {

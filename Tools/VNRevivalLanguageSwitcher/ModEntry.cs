@@ -636,7 +636,13 @@ public sealed class ModEntry : Mod
             string visualLine = adapter.Transform(logicalLine);
             int lineWidth = SpriteText.getWidthOfString(visualLine, 999999);
             int lineX = rightEdge - lineWidth;
-            int lineDrawWidth = Math.Max(1, lineWidth + rightPadding);
+            // SpriteText wraps using a look-ahead calculation which can exceed
+            // getWidthOfString by one word-spacing step. Giving the nested draw
+            // only the measured glyph width can therefore push the final visual
+            // RTL word onto a second, left-anchored line. Use all space from our
+            // calculated origin to the viewport edge; x + width stays within the
+            // native clamp, while the already wrapped line cannot wrap again.
+            int lineDrawWidth = Math.Max(1, viewportWidth - lineX - 4);
             SpriteText.drawString(
                 batch,
                 visualLine,

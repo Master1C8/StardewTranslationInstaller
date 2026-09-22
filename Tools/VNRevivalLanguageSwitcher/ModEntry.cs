@@ -554,7 +554,7 @@ public sealed class ModEntry : Mod
         try
         {
             ApplyRightToLeftAlignment(__originalMethod, __args);
-            ApplyProgressiveTextLimit(__originalMethod, __args);
+            DisableProgressiveRightToLeftText(__originalMethod, __args);
             for (int index = 0; index < __args.Length; index += 1)
             {
                 if (__args[index] is string text)
@@ -571,7 +571,7 @@ public sealed class ModEntry : Mod
         }
     }
 
-    private static void ApplyProgressiveTextLimit(
+    private static void DisableProgressiveRightToLeftText(
         MethodBase method,
         object[] arguments
     )
@@ -582,25 +582,17 @@ public sealed class ModEntry : Mod
             parameter => parameter.Name == "characterPosition"
                 && parameter.ParameterType == typeof(int)
         );
-        int textIndex = Array.FindIndex(
-            parameters,
-            parameter => parameter.Name == "s" && parameter.ParameterType == typeof(string)
-        );
         if (characterPositionIndex < 0
             || characterPositionIndex >= arguments.Length
-            || textIndex < 0
-            || textIndex >= arguments.Length
             || arguments[characterPositionIndex] is not int characterPosition
-            || arguments[textIndex] is not string text
             || characterPosition < 0
-            || characterPosition >= text.Length)
+            || characterPosition == 999999)
             return;
 
-        // Stardew's typewriter effect normally truncates after bidi conversion,
-        // which reveals the already reversed visual string from left to right.
-        // Build the logical visible prefix first, then let the normal adapter
-        // transform that complete fragment into its current RTL visual form.
-        arguments[textIndex] = text.Substring(0, characterPosition);
+        // SpriteText's typewriter effect is anchored to the left edge. Even if a
+        // logical prefix is reordered correctly, each longer fragment still grows
+        // to the right. Keep the complete RTL string and bypass the progressive
+        // cutoff so the renderer can place it once against its stable right edge.
         arguments[characterPositionIndex] = 999999;
     }
 

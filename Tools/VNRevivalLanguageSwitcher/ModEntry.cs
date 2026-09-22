@@ -36,6 +36,7 @@ public sealed class ModEntry : Mod
     private static bool LoggedTitleOverlay;
     private static bool LoggedBackOverlay;
     private static bool LoggedDeveloperOverlay;
+    private static bool LoggedPlainRtlRenderer;
     [ThreadStatic]
     private static int TextRenderingDepth;
     private static readonly Dictionary<string, Texture2D> TitleOverlayTextures = new(StringComparer.Ordinal);
@@ -532,13 +533,13 @@ public sealed class ModEntry : Mod
             .SetValue(null, LocalizedContentManager.LanguageCode.en);
     }
 
-    private static void BeforeTextRendering(MethodBase __originalMethod, object[] __args, out bool __state)
+    private static bool BeforeTextRendering(MethodBase __originalMethod, object[] __args, out bool __state)
     {
         __state = false;
         if (TextRenderingDepth > 0)
-            return;
+            return true;
         if (LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod)
-            return;
+            return true;
 
         ArabicScriptTextAdapter? adapter = LocalizedContentManager.CurrentModLanguage?.LanguageCode switch
         {
@@ -547,12 +548,15 @@ public sealed class ModEntry : Mod
             HebrewLanguageCode => HebrewAdapter,
             _ => null,
         };
-        if (adapter is null) return;
+        if (adapter is null) return true;
 
         TextRenderingDepth += 1;
         __state = true;
         try
         {
+            if (TryDrawBoundedRightToLeftSpriteText(__originalMethod, __args, adapter))
+                return false;
+
             ApplyRightToLeftAlignment(__originalMethod, __args);
             DisableProgressiveRightToLeftText(__originalMethod, __args);
             for (int index = 0; index < __args.Length; index += 1)
@@ -562,6 +566,7 @@ public sealed class ModEntry : Mod
                 else if (__args[index] is StringBuilder builder)
                     __args[index] = new StringBuilder(adapter.Transform(builder.ToString()));
             }
+            return true;
         }
         catch
         {
@@ -569,6 +574,144 @@ public sealed class ModEntry : Mod
             __state = false;
             throw;
         }
+    }
+
+    private static bool TryDrawBoundedRightToLeftSpriteText(
+        MethodBase method,
+        object[] arguments,
+        ArabicScriptTextAdapter adapter
+    )
+    {
+        if (method.DeclaringType != typeof(SpriteText) || method.Name != nameof(SpriteText.drawString))
+            return false;
+
+        ParameterInfo[] parameters = method.GetParameters();
+        int IndexOf(string name) => Array.FindIndex(parameters, parameter => parameter.Name == name);
+        int batchIndex = IndexOf("b");
+        int textIndex = IndexOf("s");
+        int xIndex = IndexOf("x");
+        int yIndex = IndexOf("y");
+        int widthIndex = IndexOf("width");
+        int alphaIndex = IndexOf("alpha");
+        int layerDepthIndex = IndexOf("layerDepth");
+        int junimoTextIndex = IndexOf("junimoText");
+        int backgroundIndex = IndexOf("drawBGScroll");
+        int colorIndex = IndexOf("color");
+        if (new[]
+            {
+                batchIndex, textIndex, xIndex, yIndex, widthIndex, alphaIndex,
+                layerDepthIndex, junimoTextIndex, backgroundIndex, colorIndex,
+            }.Any(index => index < 0 || index >= arguments.Length))
+            return false;
+
+        if (arguments[batchIndex] is not SpriteBatch batch
+            || arguments[textIndex] is not string logicalText
+            || !adapter.ContainsRightToLeftText(logicalText)
+            || arguments[xIndex] is not int x
+            || arguments[yIndex] is not int y
+            || arguments[widthIndex] is not int width
+            || width <= 0
+            || arguments[alphaIndex] is not float alpha
+            || arguments[layerDepthIndex] is not float layerDepth
+            || arguments[junimoTextIndex] is not bool junimoText
+            || arguments[backgroundIndex] is not int drawBackground
+            || drawBackground >= 0)
+            return false;
+
+        Color? color = arguments[colorIndex] is Color explicitColor ? explicitColor : null;
+        int rightPadding = Math.Max(4, (int)Math.Round(SpriteText.fontPixelZoom * 4f));
+        int availableWidth = Math.Max(1, width - rightPadding * 2);
+        List<string> logicalLines = WrapRightToLeftText(logicalText, availableWidth, adapter);
+
+        int contentX = x;
+        int viewportWidth = batch.GraphicsDevice.Viewport.Width;
+        if (contentX + width > viewportWidth - 4)
+            contentX = viewportWidth - width - 4;
+        contentX = Math.Max(0, contentX);
+        int rightEdge = contentX + width - rightPadding;
+        int lineY = y;
+
+        foreach (string logicalLine in logicalLines)
+        {
+            string visualLine = adapter.Transform(logicalLine);
+            int lineWidth = SpriteText.getWidthOfString(visualLine, 999999);
+            int lineX = rightEdge - lineWidth;
+            int lineDrawWidth = Math.Max(1, lineWidth + rightPadding);
+            SpriteText.drawString(
+                batch,
+                visualLine,
+                lineX,
+                lineY,
+                999999,
+                lineDrawWidth,
+                999999,
+                alpha,
+                layerDepth,
+                junimoText,
+                -1,
+                string.Empty,
+                color,
+                SpriteText.ScrollTextAlignment.Left
+            );
+            lineY += Math.Max(1, SpriteText.getHeightOfString(visualLine, lineDrawWidth));
+        }
+
+        if (!LoggedPlainRtlRenderer)
+        {
+            LoggedPlainRtlRenderer = true;
+            ModMonitor?.Log(
+                $"Right-aligned plain SpriteText renderer enabled; width {width}, lines {logicalLines.Count}.",
+                LogLevel.Trace
+            );
+        }
+        return true;
+    }
+
+    private static List<string> WrapRightToLeftText(
+        string logicalText,
+        int availableWidth,
+        ArabicScriptTextAdapter adapter
+    )
+    {
+        List<string> lines = new();
+        string normalized = logicalText.Replace("\r\n", "\n", StringComparison.Ordinal).Replace('^', '\n');
+        foreach (string paragraph in normalized.Split('\n'))
+        {
+            if (paragraph.Length == 0)
+            {
+                lines.Add(string.Empty);
+                continue;
+            }
+
+            string[] words = paragraph.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            if (words.Length == 0)
+            {
+                lines.Add(string.Empty);
+                continue;
+            }
+
+            StringBuilder current = new();
+            foreach (string word in words)
+            {
+                string candidate = current.Length == 0 ? word : current + " " + word;
+                string visualCandidate = adapter.Transform(candidate);
+                int candidateWidth = SpriteText.getWidthOfString(visualCandidate, 999999);
+                if (candidateWidth > availableWidth && current.Length > 0)
+                {
+                    lines.Add(current.ToString());
+                    current.Clear();
+                    current.Append(word);
+                }
+                else
+                {
+                    current.Clear();
+                    current.Append(candidate);
+                }
+            }
+            if (current.Length > 0)
+                lines.Add(current.ToString());
+        }
+        return lines;
     }
 
     private static void DisableProgressiveRightToLeftText(
@@ -709,6 +852,8 @@ public sealed class ArabicScriptTextAdapter
         }
         return result.ToString();
     }
+
+    public bool ContainsRightToLeftText(string value) => ContainsLogicalScript(value);
 
     private string TransformLine(string line)
     {

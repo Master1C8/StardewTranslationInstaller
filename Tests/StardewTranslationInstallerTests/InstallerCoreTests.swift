@@ -126,6 +126,29 @@ struct InstallerCoreTests {
         expect(installer.contains("$shortcut.Save()"))
     }
 
+    @Test func testDetectsGameInMountedSteamLibrary() throws {
+        let fm = FileManager.default
+        let temporary = fm.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
+        defer { try? fm.removeItem(at: temporary) }
+        let volume = temporary.appendingPathComponent("ExternalDisk", isDirectory: true)
+        let game = volume.appendingPathComponent(
+            "CustomSteamLibrary/steamapps/common/Stardew Valley",
+            isDirectory: true
+        )
+        let executable = game.appendingPathComponent("Contents/MacOS", isDirectory: true)
+        try fm.createDirectory(at: executable, withIntermediateDirectories: true)
+        try Data().write(to: executable.appendingPathComponent("Stardew Valley.dll"))
+
+        let core = InstallerCore(
+            fileManager: fm,
+            mountedVolumeURLs: { [volume] },
+            steamLibraryConfigurationURL: temporary.appendingPathComponent("missing.vdf")
+        )
+        let installation = try require(core.detectInstallation())
+        expect(installation.root.standardizedFileURL == game.standardizedFileURL)
+        expect(installation.executableDirectory.standardizedFileURL == executable.standardizedFileURL)
+    }
+
     @Test func testValidatesCurrentInterfaceAssets() throws {
         let package = try translationPackage()
         let payload = projectRoot().appendingPathComponent(

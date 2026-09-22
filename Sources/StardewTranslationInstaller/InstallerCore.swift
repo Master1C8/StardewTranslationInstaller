@@ -80,19 +80,86 @@ struct InstallerCore {
     static let minimumContentPatcherVersion = "2.9.1"
 
     let fileManager: FileManager
+    let mountedVolumeURLs: () -> [URL]
+    let steamLibraryConfigurationURL: URL?
 
-    init(fileManager: FileManager = .default) {
+    init(
+        fileManager: FileManager = .default,
+        mountedVolumeURLs: (() -> [URL])? = nil,
+        steamLibraryConfigurationURL: URL? = nil
+    ) {
         self.fileManager = fileManager
+        self.steamLibraryConfigurationURL = steamLibraryConfigurationURL
+        self.mountedVolumeURLs = mountedVolumeURLs ?? {
+            fileManager.mountedVolumeURLs(
+                includingResourceValuesForKeys: nil,
+                options: [.skipHiddenVolumes]
+            ) ?? []
+        }
     }
 
     func detectInstallation() -> GameInstallation? {
         let home = fileManager.homeDirectoryForCurrentUser
-        let candidates = [
-            home.appendingPathComponent("Library/Application Support/Steam/steamapps/common/Stardew Valley"),
+        let steamRoot = home.appendingPathComponent("Library/Application Support/Steam")
+        var candidates = [
+            steamRoot.appendingPathComponent("steamapps/common/Stardew Valley"),
             URL(fileURLWithPath: "/Applications/Stardew Valley.app"),
             home.appendingPathComponent("Applications/Stardew Valley.app"),
         ]
-        return candidates.compactMap(resolveInstallation).first
+        candidates += steamLibraryRoots(
+            from: steamLibraryConfigurationURL
+                ?? steamRoot.appendingPathComponent("steamapps/libraryfolders.vdf")
+        ).map {
+            $0.appendingPathComponent("steamapps/common/Stardew Valley", isDirectory: true)
+        }
+        candidates += mountedVolumeURLs().flatMap(mountedVolumeCandidates)
+
+        var visited = Set<String>()
+        return candidates.lazy
+            .filter { visited.insert($0.standardizedFileURL.path).inserted }
+            .compactMap(resolveInstallation)
+            .first
+    }
+
+    private func steamLibraryRoots(from configuration: URL) -> [URL] {
+        guard let contents = try? String(contentsOf: configuration, encoding: .utf8) else {
+            return []
+        }
+        let patterns = [
+            #"(?m)^\s*"path"\s*"([^"]+)"\s*$"#,
+            #"(?m)^\s*"\d+"\s*"([^"]+)"\s*$"#,
+        ]
+        return patterns.flatMap { pattern -> [URL] in
+            guard let expression = try? NSRegularExpression(pattern: pattern) else { return [] }
+            let range = NSRange(contents.startIndex..., in: contents)
+            return expression.matches(in: contents, range: range).compactMap { match in
+                guard let capture = Range(match.range(at: 1), in: contents) else { return nil }
+                let path = String(contents[capture])
+                    .replacingOccurrences(of: #"\\"#, with: #"\"#)
+                    .replacingOccurrences(of: #"\""#, with: #"""#)
+                return URL(fileURLWithPath: path, isDirectory: true)
+            }
+        }
+    }
+
+    private func mountedVolumeCandidates(_ volume: URL) -> [URL] {
+        var libraryRoots = [volume]
+        if let entries = try? fileManager.contentsOfDirectory(
+            at: volume,
+            includingPropertiesForKeys: [.isDirectoryKey],
+            options: [.skipsHiddenFiles]
+        ) {
+            libraryRoots += entries.filter {
+                (try? $0.resourceValues(forKeys: [.isDirectoryKey]).isDirectory) == true
+            }
+        }
+
+        var candidates = libraryRoots.map {
+            $0.appendingPathComponent("steamapps/common/Stardew Valley", isDirectory: true)
+        }
+        candidates.append(volume.appendingPathComponent("Applications/Stardew Valley.app"))
+        candidates.append(volume.appendingPathComponent("Stardew Valley.app"))
+        return candidates
     }
 
     func resolveInstallation(_ selectedURL: URL) -> GameInstallation? {

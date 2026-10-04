@@ -54,6 +54,31 @@ Make routine technical decisions autonomously. Ask only for a missing owner deci
 required source or authority outside scope. Continue independent work while waiting and
 do not repeat answered permission requests.
 
+### One process for all languages
+
+Every target language in every chat must use one universal process. Before writing
+target text, follow the fixed stage IDs in the shared ROUTING.md and the process
+contract in `/Users/antonkrutov/Desktop/SiteForMods/tools/codex-skills/shared/CHECKPOINT.md`.
+Pin the universal process references and the project's command binding by path and
+fingerprint/revision in the existing checkpoint. Use the same stage IDs, acceptance
+meanings and report fields for every language. If no binding exists, map existing
+commands to those fixed stages once in the project guide; do not choose another
+algorithm, create a parallel tracker or invent a pipeline for each language.
+
+Follow dependencies even when the requirements below are grouped by topic: verified
+source inventory → approved source/locale glossary → required early technical probe
+→ translation with immediate editing → universal editorial acceptance → final language
+resources and applicable textures → build/delivery and authorized runtime checks.
+Resume from evidenced state instead of restarting earlier completed stages.
+
+Locale, approved terminology/address rules, font/shaping/RTL/layout settings and declared
+tool adapters are parameters. Record reasons for applicability differences; they do not
+permit different editorial algorithms, weakened gates or invented percentages. Use the
+same stable-ID coverage definitions, stage names and report fields in every locale chat.
+Shared recipe fixes identify all affected locales and invalidate only evidence required
+by the universal protocol. Preserve unrelated locale work when updating shared files
+or committing; separate locale chats do not own each other's edits.
+
 ## 2. Canonical glossary
 
 In the master repository run ./vnrevival help, read the current glossary workflow, then:

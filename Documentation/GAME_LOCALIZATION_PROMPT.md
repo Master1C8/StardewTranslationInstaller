@@ -66,8 +66,9 @@ commands to those fixed stages once in the project guide; do not choose another
 algorithm, create a parallel tracker or invent a pipeline for each language.
 
 Follow dependencies even when the requirements below are grouped by topic: verified
-source inventory → approved source/locale glossary → required early technical probe
-→ translation with immediate editing → universal editorial acceptance → final language
+scope and minimal asset/renderer discovery → early technical feasibility gate → complete
+source inventory → approved source/locale glossary → translation with immediate editing
+→ universal editorial acceptance → final language
 resources and applicable textures → build/delivery and authorized runtime checks.
 Resume from evidenced state instead of restarting earlier completed stages.
 
@@ -152,13 +153,21 @@ preserve-exactly manifest and source-vs-extracted/reinserted equality, including
 comparisons, boolean/enum values, branching/evidence keys and service prefixes. Structure or
 token-presence checks do not replace exact comparison.
 
-Before mass work test the script/renderer on representative original lines in the approved
-isolated environment: glyphs, diacritics, shaping, RTL/bidi, wrapping, numbers and placeholders.
-Do not replace scripts with transliteration. Resolve unsupported rendering or report the blocker.
-New paths additionally require a no-op round trip, read-back and exact checks. In authorized
-runtime, prove the next game state, not merely a rendered frame. Translation samples still
-require complete asset/glossary gates. Without runtime permission, record not-run and obtain
-the owner's decision on mass work with the remaining risk. Reuse proven unchanged paths.
+Run the shared EARLY-PROBE.md feasibility gate immediately after scope discovery, before
+exhaustive extraction, substantial source research or multilingual glossary/translation work.
+Inspect the actual engine glyph mapping, atlas/metrics, per-character drawing, shaping, bidi
+and layout limits with minimal original assets. Map every intended locale to its required
+mechanisms and surfaces; a Latin success or font cmap does not prove another script works.
+Use synthetic script samples and a bounded no-op round trip before a complete glossary is
+available; actual translated game phrases still require full source/glossary gates.
+Verify packaged samples in authorized real game paths at real sizes, including difficult
+marks/joining/reordering, mixed direction, dynamic fields, clipping and next-state progression.
+Record a shared versioned feasibility matrix and reuse only applicable unchanged evidence.
+A failed mechanism stops dependent mass work for all affected locales. Runtime unavailable
+means not-run/unverified: finish bounded static research and obtain the owner's risk decision
+before mass investment; do not re-request existing permission. Present concrete repair or
+scope options before substantial engine changes. Do not silently drop locales, transliterate
+or cycle through fonts while continuing translation. Final corpus/resource QA is still required.
 
 ## 4. Translate
 

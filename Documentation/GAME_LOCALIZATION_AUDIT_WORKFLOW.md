@@ -61,11 +61,28 @@ text-bearing image plan once with enough scene and runtime context to judge:
   characters, without requiring or inventing an exhaustive biography;
 - visible UI text, titles, labels, credits, save/load surfaces, and image text.
 
+Trace each reference to its actual subject, object, addressee or possessor in the
+scene. Grammatical noun gender does not establish a person's canonical gender.
+Preserve identity/species, person-versus-object status, relationships and their
+degree, participant number, quantities, negation, modality and chronology. Also
+preserve the information available at that point: naming an anonymous referent
+early can spoil the next question even when the name is canonically true.
+Naturalness, rhyme or neutral wording must not remove facts, transfer agency or
+invent details. A full replacement must retain every unchanged sentence, credit
+name and other fact in its replacement unit; a proposed excerpt is not a full unit.
+
 Record complete coverage and the reviewed hashes. Findings must name a stable
 ID/path, objective reason, and proposed correction. Do not rewrite equivalent
 valid wording merely for preference.
 
 ### 3. Apply corrections and build the dependency closure
+
+Adjudicate each proposal against the source, canonical evidence and actual
+scene before accepting it. Check the complete proposed replacement and its
+assembled consumer output, including branch order, separators, trimming and
+dynamic player/item inputs; flattened JSON neighbors need not be consecutive
+dialogue. Keep authored text distinct from shaped/display representations.
+Preserving IDs and tokens alone does not establish these semantic contracts.
 
 Apply accepted corrections only to authored localization inputs, rebuild all
 derived artifacts, and compute a dependency closure containing only evidence
@@ -78,6 +95,18 @@ actually invalidated by the edits:
   or old/new localized wording;
 - surfaces sharing a runtime binding, layout constraint, or split artifact;
 - the project's mandatory regression catalog.
+
+Reconcile the selector with the canonical stable-ID inventory, affected concept
+and actual consumer topology. Account for justified source spelling variants
+(hyphens, apostrophes and inflections), joined fragments, related inventory labels,
+glossary uses and image plans; one literal regex is not evidence of completeness.
+When a dependency is missed, repair the selector/specification or generation
+recipe and verify that the next normal cycle retains every still-applicable
+dependency. Do not merely append IDs to one generated closure. Keep required
+nontranslatable fragments in a separate, hashed context/runtime component;
+do not fabricate translation IDs or inflate semantic coverage to include them.
+Record justified retired dependencies under the delta algorithm below; this is
+not a requirement to retain all historical closure IDs forever.
 
 Do not add every line spoken by or naming every character merely because one
 character-related line changed. Unchanged units retain the evidence of the

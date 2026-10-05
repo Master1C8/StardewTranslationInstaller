@@ -4,6 +4,25 @@
 
 Текущая сборка — единый установщик 19 завершённых языков VN Revival. Точный канонический список кодов хранится в `PackageConfig.json`. Пользователь получает простой сценарий: открыть → дождаться установки всех переводов → нажать кнопку запуска. Нужный язык выбирается уже внутри Stardew Valley; отдельный выбор в установщике не нужен.
 
+## Current process authority for every locale
+
+This guide supplies Stardew-specific assets, commands and regression surfaces.
+For every locale, follow [GAME_LOCALIZATION_PROMPT.md](GAME_LOCALIZATION_PROMPT.md)
+and [GAME_LOCALIZATION_AUDIT_WORKFLOW.md](GAME_LOCALIZATION_AUDIT_WORKFLOW.md).
+Use the same shared stage IDs, stable-ID coverage and acceptance meanings in
+all chats; declare script/font/grammar differences as configuration. Polish
+examples below illustrate the format, not a different procedure or target language.
+
+The glossary retains its separate full-entry editorial gate. Game text uses
+one complete semantic audit plus independent dependency-aware diff/delta review,
+with the universal invalidation boundaries. Do not add locale-specific full
+rereads or accept a historical clean-pass counter as current readiness.
+See [CZECH_AUDIT_WORKFLOW.md](CZECH_AUDIT_WORKFLOW.md) for the legacy ledger boundary.
+
+Before mass extraction, glossary preparation or translation, apply the shared
+renderer-feasibility gate in the universal prompt. A font's character coverage
+or a successful Latin sample does not establish shaping, bidi or progression.
+
 ## 0. Универсальный контракт языкового пакета
 
 Язык сборки задаёт файл:
@@ -22,14 +41,14 @@ Sources/StardewTranslationInstaller/Resources/PackageConfig.json
 - `steamAppID` — приложение, запускаемое после установки;
 - `copy` — весь видимый текст установщика на языке сборки.
 
-Установщик принимает единый канонический каталог из 30 языков SiteForMods:
-
-```text
-zh en ru es pt-BR ja de ko fr tr pl zh-TW it th vi id uk ar cs hu nl fa ro hi
-fil el bg sr sw he
-```
-
-Список синхронизирован с `SITE_LOCALE_CODES` в `SiteForMods/lib/language-data/site-locales.ts`. При изменении списка сайта нужно вместе обновить `TranslationPackage.supportedSiteLocales` и тесты.
+The canonical site-language catalog is `SITE_LOCALE_CODES` / `SITE_LOCALES`
+in `/Users/antonkrutov/Desktop/SiteForMods/lib/language-data/site-locales.ts`.
+Read the current catalog and the game's official-language exceptions; do not
+copy a fixed language count into a locale workflow. `es` and `es-419` are distinct.
+The installer's retained languages come from its actual `PackageConfig.json`;
+catalog membership alone does not mean a package exists or is ready.
+When the site catalog changes, verify `TranslationPackage.supportedSiteLocales`
+and its tests against the same catalog; do not silently fork the accepted codes.
 
 `PackageConfig.json`, `ModPayload/manifest.json` и `ModPayload/content.json` обязаны совпадать:
 
@@ -113,7 +132,16 @@ data/games/stardew-valley/glossary.json
 data/games/stardew-valley/glossary-translations.json
 ```
 
-После редакторских изменений обновить английский снимок и каждый изменённый переводной снимок из этих файлов. Публикация глоссария — отдельная контентная операция, для неё не нужен деплой сайта. После явного разрешения владельца в доверенной среде SiteForMods выполнить `npm run glossary:check`, затем направить `DATABASE_URL` на нужную CMS и запустить `npm run glossary:sync`. Общий CLI атомарно синхронизирует все канонические игры и локали, сохраняет отсутствующие в каноническом файле переводы и выводит ожидаемые количества записей и локалей. Запуск приложения с новым fingerprint остаётся страховочной сверкой, а не штатным способом публикации глоссария. `scripts/sync-stardew-glossary.ts` — только исторический recovery-инструмент, не обычный publisher. Полный контракт находится в `SiteForMods/docs/GLOSSARY-WORKFLOW.md`.
+After authorized editorial changes, refresh only the affected project snapshots
+from the verified canonical files; do not alter the protected source incidentally.
+Publication is separate and requires explicit owner authorization for that locale.
+In `/Users/antonkrutov/Desktop/SiteForMods`, use `./vnrevival glossary guide`,
+`./vnrevival glossary work stardew-valley <siteLocale>` and
+`./vnrevival glossary check`; publish only the reviewed non-source locale with
+`./vnrevival glossary publish stardew-valley <siteLocale>`. This does not publish
+other locales or the canonical source and does not deploy the site. Source changes
+and source publication retain the separate safeguards in `docs/GLOSSARY-WORKFLOW.md`.
+Legacy bulk sync commands and direct database writes are not current publishers.
 
 Если содержимое различается, не смешивать версии вручную: сначала проверить число записей, набор стабильных ID и выяснить, был ли после последнего изменения выполнен CMS-sync. Сверить канонические файлы и снимки можно так:
 
@@ -335,8 +363,9 @@ jq '.content | to_entries[0:20]' "$SOURCE_ROOT/unpacked/Strings/UI.json"
 - Перевод выполнять самостоятельно с английского оригинала. Не использовать API машинного перевода и не копировать официальную локализацию другого языка.
 - Перед переводом прочитать соседние строки, сцену или описание механики. Короткая строка интерфейса без контекста часто многозначна.
 - Сохранять характер персонажей, степень формальности, шутки и намеренную странность оригинала. Не унифицировать голоса NPC.
-- Писать естественно по-польски, а не калькировать английский порядок слов.
-- Соблюдать польскую орфографию, диакритику, кавычки, тире, прописные буквы и написание имён последовательно. Конкретное решение глоссария важнее личного предпочтения переводчика.
+- Write naturally in the requested target language; do not copy English word order.
+- Apply that locale's spelling, diacritics, punctuation, capitalization and approved
+  names consistently. Follow glossary decisions by meaning and ID rather than taste.
 - Не добавлять смысл, подсказки или цензуру, которых нет в оригинале.
 - Ограничения интерфейса учитывать: короткие кнопки и подписи не раздувать без необходимости.
 - Не считать строку готовой, если неясно, кто говорит, к чему относится плейсхолдер или где она отображается.
@@ -378,7 +407,14 @@ swift test --disable-sandbox
 
 ## 9. Критерий готовности пакета
 
-Пакет перевода готов, когда английский источник и контекст проверены, термины сверены со слоем `siteLocale` единого глоссария, текст отредактирован вручную, технические маркеры сохранены, JSON валиден, файл подключён в `content.json`, тесты проходят, а сомнительные строки явно вынесены на ревью вместо догадки.
+Game-text editorial readiness requires the universal final gate: complete
+source-to-target semantic coverage, a clean independent diff/delta review with
+reproducible immutable closure evidence, the mandatory regression catalog and
+final structural checks on the same pinned artifacts. A remaining unresolved
+translation is `needs-review`, not an accepted locale. Keep glossary, text,
+font/texture, build, runtime, visual and release readiness separate. Missing
+runtime permission or independent review remains explicitly pending; it is not
+replaced by a validator or an extra self-reread.
 
 Техническое устройство польского пакета, точные размеры графических атласов, расширение XNB-шрифтов, обязательные инварианты Content Patcher, воспроизводимая сборка и проверка через журнал SMAPI описаны в [`POLISH_IMPLEMENTATION_RUNBOOK.md`](POLISH_IMPLEMENTATION_RUNBOOK.md). Этот документ обязателен перед изменением кнопки языка, титульного интерфейса, шрифтов, структуры `Include` или процесса упаковки.
 

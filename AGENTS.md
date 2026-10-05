@@ -19,10 +19,18 @@ Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing 
   continue until two consecutive full all-entry audits find no new issue. Only
   an explicit report-only or no-edit instruction disables corrections. A first
   draft, sample review, or structural pass is not completion.
-- Publish reviewed canonical glossary content with the generic SiteForMods CLI
-  `npm run glossary:sync` after `npm run glossary:check` and only after explicit
-  owner authorization. Do not deploy the site merely to publish a glossary and
-  do not use the legacy Stardew-specific sync script as the routine publisher.
+- Game-text editorial acceptance for every locale follows
+  `Documentation/GAME_LOCALIZATION_AUDIT_WORKFLOW.md`: one complete semantic
+  audit, immutable dependency closures and independent diff/delta review.
+  Locale-specific guides supply tools and regression surfaces only. The legacy
+  Czech two-clean-pass ledger does not define the current acceptance gate;
+  preserve its historical evidence without treating its status as current readiness.
+- Publish exactly one reviewed non-source glossary locale only after explicit
+  owner authorization, through the canonical SiteForMods `./vnrevival` CLI:
+  `glossary guide`, `glossary work stardew-valley <siteLocale>`,
+  `glossary check`, then `glossary publish stardew-valley <siteLocale>`.
+  Protected source publication uses its separate guarded workflow. Never use
+  bulk `glossary:sync`, direct database changes or deployment as a substitute.
 - The player-facing workflow stays simple: opening the app starts installation automatically; after success it shows **Запустить игру**. Do not reintroduce dependency lists, setup choices, or an uninstall dashboard unless the user explicitly asks.
 - One app build contains one unified `PackageConfig.json` and one `ModPayload` that installs all finished VN Revival languages. For Stardew Valley specifically, do not add an installer language picker: the app installs the complete set, and the player chooses a language inside the game. This restriction must not be inherited by other games. A game without a suitable native localization mechanism may select its active language in the installer, as The Murder of Sonic the Hedgehog does.
 - Translation work belongs under `Sources/StardewTranslationInstaller/Resources/ModPayload/assets/translations/`. Package identity and localized installer copy belong in `Resources/PackageConfig.json`. Do not modify XNB files inside the installed game's `Content` directory. Generated locale-specific XNB assets belong only under the source `ModPayload/assets/fonts/` and must follow the runbook.

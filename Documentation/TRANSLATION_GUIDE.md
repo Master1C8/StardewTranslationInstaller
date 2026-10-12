@@ -166,15 +166,19 @@ done
 4. Если в тексте появился важный повторяющийся термин, которого нет в глоссарии, сначала предложить новую английскую запись и переводы для всех канонических локалей. Не создавать дубликат под другим ID и не оставлять новый ID только в части слоёв.
 5. Для источника указывать только конкретную страницу, действительно описывающую термин. Если точной страницы нет — ссылка не нужна.
 
-Запрос «переведи глоссарий», «закончи локаль глоссария», «проверь/вычитай/проведи аудит глоссария» или «доведи глоссарий до готовности» без дополнительного ограничения всегда означает полный редакторский цикл, а не один переводческий или проверочный проход. Просьба о проверке по умолчанию включает исправление всех найденных объективных проблем и повтор обеих полных вычиток до прохождения критерия готовности. Только явное указание «только отчёт», «ничего не меняй» или равнозначный запрет превращает проверку в read-only; даже тогда без отдельно ограниченной выборки нужно проверить все записи.
-
-1. Перевести все `term` и `meaning` напрямую с английского слоя и проверить точный набор и порядок ID.
-2. Выполнить отдельную построчную сверку каждой записи с английским оригиналом на полноту условий, списков, исключений, различий и внутренних ссылок.
-3. Выполнить ещё одну полную вычитку каждой записи как естественного текста целевого языка: грамматика, идиоматика, имена, регистр и единообразие терминов.
-4. Исправить все найденные проблемы, снова запустить структурные проверки и начать обе полные вычитки заново.
-5. Считать локаль редакторски готовой только после двух последовательных полных проверок всех записей без новых объективных замечаний. Любая последующая правка сбрасывает счётчик чистых проверок.
-
-Автоматические проверки, поиск подозрительных строк, сравнение длины и выборочная проверка помогают находить кандидатов, но не заменяют построчную вычитку всего слоя. Успешный JSON, точные 673 ID и отсутствие пустых строк доказывают только структурную целостность. Если доступен независимый редактор или явно разрешённый субагент, одну из финальных проверок выполнять как холодное независимое ревью; автор всё равно обязан сам прочитать оригинал и закрыть каждое замечание.
+Glossary translation, completion and review use the canonical SiteForMods
+`docs/GLOSSARY-WORKFLOW.md` and `tools/codex-skills/shared/GLOSSARY-REVIEW.md`.
+Unless explicitly report-only, correct all objective issues. Standard acceptance
+requires two complete clean editorial coverage layers for the final version;
+each starts with an actual all-entry source-fidelity read and separate native-language
+read, including full meanings and every concept use. Corrections invalidate all
+affected semantic dependencies in both layers. Retain verified unaffected receipts,
+actually review repair closures/deltas and reconcile final complete coverage.
+Missing provenance, unbounded dependencies or globally changed rules require broader
+or full rereading. This replaces the legacy blanket clean-pass reset after any edit.
+Scripts/searches/counts never establish semantic quality. Label self-audits honestly;
+independent review uses a distinct currently authorized reviewer. Publication remains
+separately authorized through the canonical CLI. Do not rewrite historical audit records.
 
 Пример поиска одной пары по стабильному ID:
 

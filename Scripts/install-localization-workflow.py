@@ -67,7 +67,9 @@ progress, and never loop on unchanged percentage messages.
 For end-to-end standard localization, establish the shared renderer-feasibility gate
 from minimal assets before substantial glossary preparation or mass language work.
 The glossary remains the first linguistic deliverable; technical feasibility comes first.
-Standalone glossary requests do not authorize game runtime or expand their scope.
+Standalone glossary requests follow the glossary skills and shared bounded review
+contract in SiteForMods, without loading these end-to-end game prompt/audit manuals.
+They do not authorize game runtime or expand their scope.
 
 This reference does not itself start a translation, create a goal, or grant
 publication, deployment or cross-project mutation permission. The current user

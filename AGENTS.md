@@ -15,9 +15,11 @@ Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing 
 
 - An unqualified request to translate, finish, check, review, proofread, or
   audit a glossary means the complete locale and the iterative editorial gate
-  in `Documentation/TRANSLATION_GUIDE.md`: correct every objective issue and
-  continue until two consecutive full all-entry audits find no new issue. Only
-  an explicit report-only or no-edit instruction disables corrections. A first
+  in canonical SiteForMods `docs/GLOSSARY-WORKFLOW.md` and
+  `tools/codex-skills/shared/GLOSSARY-REVIEW.md`: correct every objective issue and
+  obtain two complete clean editorial coverage layers on the final version.
+  Invalidate affected dependencies after changes and retain verified unchanged receipts.
+  Only an explicit report-only or no-edit instruction disables corrections. A first
   draft, sample review, or structural pass is not completion.
 - Game-text editorial acceptance for every locale follows
   `Documentation/GAME_LOCALIZATION_AUDIT_WORKFLOW.md`: one complete semantic

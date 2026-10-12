@@ -116,9 +116,12 @@ See tools/codex-skills/shared/CHARACTERS.md in the master repository for the ful
 For major speakers, retain evidenced age, origin, voice and other relevant context without
 inventing exhaustive biographies or blocking on irrelevant details.
 
-Follow the canonical full-entry glossary editorial gate: two consecutive clean full audits
-of the same unchanged version after corrections; every edit resets the count. Check every
-term's uses throughout term and meaning, including inflection, compounds and references.
+Follow the canonical glossary contract and shared GLOSSARY-REVIEW.md in SiteForMods:
+two complete clean editorial coverage layers on the final version, each originating in
+its own full reading of all terms, meanings and concept uses. Corrections invalidate
+every affected semantic dependency in both layers; retain verified unaffected receipts
+and actually review repair closures/deltas. Unknown bounds or lost evidence require
+broader/full reading. Do not restart unrelated accepted entries for one local fix.
 Structural coverage is not editorial acceptance. Pin the approved locale fingerprint and
 project snapshot before translating the game. A later applicable glossary change invalidates
 prior evidence under the universal audit protocol.
@@ -199,7 +202,7 @@ as needs-review, never as completed. Return new character evidence problems to s
   changes, not after every line. Required final checks must cover final artifact versions.
 - Maintain one current per-locale summary with source/glossary hashes, phase, actual coverage,
   batches, audits/findings, evidence hashes, blocker and next action; keep history separately.
-  Glossaries track clean full passes; game text tracks semantic coverage and immutable deltas.
+  Glossaries track both complete coverage layers and repair deltas; game text tracks semantic coverage and immutable deltas.
 - Derive progress from stored data. Separate translation, editorial pass and technical acceptance.
   Do not invent near-100% percentages for unfinished or unknown coverage.
 - Do not repeat unchanged status or invoke models just to announce percentages. Observe the

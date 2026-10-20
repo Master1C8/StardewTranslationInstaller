@@ -1,5 +1,8 @@
 # Stardew Valley — VN Revival Translation Installer
 
+[Published Windows and macOS 1.17.25 with build evidence](https://github.com/Master1C8/StardewTranslationInstaller/releases/tag/release-1.17.25-0ee3acc6c6d0).
+See [release verification](Documentation/release-verification.md) for hashes and the exact build commit.
+
 The native Windows and macOS application installs the shared VN Revival language
 package for Stardew Valley. It starts installation when opened; after installation,
 choose your language inside the game. There is no installer language picker.

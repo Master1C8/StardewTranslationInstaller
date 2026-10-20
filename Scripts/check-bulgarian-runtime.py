@@ -4,12 +4,12 @@
 Runs our console entry point only; installed assets, saves and mods are read-only.
 The copied apphost points at BGProbe.dll; it does not start Stardew Valley.
 """
-import pathlib,tempfile,subprocess,shutil,json
-r=pathlib.Path('/Users/antonkrutov/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS')
+import pathlib,tempfile,subprocess,shutil,json,os
+r=pathlib.Path(os.environ.get('STARDEW_GAME_PATH', str(pathlib.Path.home()/'Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS')))
 payload=pathlib.Path(__file__).resolve().parents[1]/'Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload'
 with tempfile.TemporaryDirectory(prefix='bg-article-probe-') as d:
  p=pathlib.Path(d); refs=[x for x in r.glob('*.dll') if x.name.startswith('System.') or x.name in ('mscorlib.dll','netstandard.dll','Stardew Valley.dll','StardewValley.GameData.dll','StardewModdingAPI.dll','MonoGame.Framework.dll')]+[r/'smapi-internal/0Harmony.dll',payload/'VNRevival.LanguageSwitcher.dll']
- subprocess.run(['csc','-nologo','-noconfig','-nostdlib','-target:exe','-out:'+str(p/'BGProbe.dll')]+['-r:'+str(x) for x in refs]+[str(pathlib.Path(__file__).resolve().parents[1]/'Tools/BulgarianRuntimeProbe/Program.cs')],check=True)
+ subprocess.run([os.environ.get('CSC_BIN','csc'),'-nologo','-noconfig','-nostdlib','-target:exe','-out:'+str(p/'BGProbe.dll')]+['-r:'+str(x) for x in refs]+[str(pathlib.Path(__file__).resolve().parents[1]/'Tools/BulgarianRuntimeProbe/Program.cs')],check=True)
  for folder in (r/'smapi-internal',r,payload):
   for x in folder.iterdir():
    if x.suffix in ('.dll','.dylib') and not (p/x.name).exists():(p/x.name).symlink_to(x)

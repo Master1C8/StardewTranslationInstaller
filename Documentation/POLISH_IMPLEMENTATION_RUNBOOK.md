@@ -321,12 +321,14 @@ dist/Stardew Translation Installer.app
 
 и затем создать приложение заново. Не удалять весь проект или произвольную папку `dist`.
 
-Для Swift использовать полный Xcode toolchain, а не случайно выбранные Command Line Tools. Проверенная команда тестов:
+Use one coherent selected Apple toolchain and SDK. Full Xcode and the installed
+CLT with its matching Testing framework are supported by `./Scripts/test-swift.sh`.
+The helper adds the framework search/runtime path for CLT and uses the explicit
+SwiftPM native backend. Regression: CLT must execute all native tests, not silently
+skip them when Testing module discovery differs from Xcode.
 
 ```sh
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
-CLANG_MODULE_CACHE_PATH=/private/tmp/stardew-swift-module-cache \
-swift test --disable-sandbox
+./Scripts/test-swift.sh
 ```
 
 Без явного `DEVELOPER_DIR` возможна несовместимость версии компилятора и SDK. В ограниченной среде SwiftPM также может попытаться записать module cache вне разрешённой папки; отдельный путь в `/private/tmp` делает запуск воспроизводимым.

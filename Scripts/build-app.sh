@@ -4,7 +4,7 @@ set -euo pipefail
 project_dir="${0:A:h:h}"
 cd "$project_dir"
 
-export DEVELOPER_DIR="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Developer}"
+export DEVELOPER_DIR="${DEVELOPER_DIR:-$(xcode-select -p)}"
 export CLANG_MODULE_CACHE_PATH="${CLANG_MODULE_CACHE_PATH:-/private/tmp/stardew-installer-swift-cache}"
 export SWIFT_MODULECACHE_PATH="${SWIFT_MODULECACHE_PATH:-$CLANG_MODULE_CACHE_PATH}"
 export SWIFTPM_MODULECACHE_OVERRIDE="${SWIFTPM_MODULECACHE_OVERRIDE:-$CLANG_MODULE_CACHE_PATH}"
@@ -19,6 +19,7 @@ x86_binary_dir=""
 for architecture in "${architectures[@]}"; do
   architecture_scratch="$scratch_root/$architecture"
   build_arguments=(
+    --build-system native \
     -c release \
     --disable-sandbox \
     --scratch-path "$architecture_scratch" \
@@ -33,7 +34,7 @@ for architecture in "${architectures[@]}"; do
   fi
 done
 
-app="$project_dir/dist/Stardew Translation Installer.app"
+app="${VNREVIVAL_RELEASE_DIR:-$project_dir/dist}/Stardew Translation Installer.app"
 arm_binary="$arm_binary_dir/StardewTranslationInstaller"
 x86_binary="$x86_binary_dir/StardewTranslationInstaller"
 resource_bundle="$arm_binary_dir/StardewTranslationInstaller_StardewTranslationInstaller.bundle"

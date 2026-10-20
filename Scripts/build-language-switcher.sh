@@ -5,7 +5,7 @@ project_root="$(cd "$(dirname "$0")/.." && pwd)"
 game_path="${STARDEW_GAME_PATH:-${STARDREW_GAME_PATH:-$HOME/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS}}"
 dotnet_bin="${DOTNET_BIN:-dotnet}"
 
-if command -v "$dotnet_bin" >/dev/null 2>&1; then
+if [[ -z "${CSC_BIN:-}" ]] && command -v "$dotnet_bin" >/dev/null 2>&1; then
   "$dotnet_bin" build \
     "$project_root/Tools/VNRevivalLanguageSwitcher/VNRevivalLanguageSwitcher.csproj" \
     --configuration Release \

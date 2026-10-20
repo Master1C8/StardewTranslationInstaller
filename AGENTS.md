@@ -63,6 +63,6 @@ Read `Documentation/UZBEK_IMPLEMENTATION_RUNBOOK.md` completely before changing 
 2. Every added translation patch is gated by its exact code from `languageCodes` in `PackageConfig.json`.
 3. All source keys and placeholders still match the English source.
 4. Glossary terms for the package's `siteLocale` are applied consistently.
-5. `swift test --disable-sandbox` passes with the Xcode toolchain.
+5. `./Scripts/test-swift.sh` passes with one coherent selected Apple toolchain and SDK. Full Xcode or verified CLT with its matching Testing framework is supported; missing test modules never justify skipping tests.
 6. `./Scripts/build-app.sh` succeeds when producing a deliverable.
 7. A fresh SMAPI launch loads the locale-specific fonts and each retained language's `TitleButtons` without any adjacent Content Patcher error; visual QA covers Polish `ĄĆĘŁŃÓŚŹŻąćęłńóśźż` and the complete character sets used by the retained packages.

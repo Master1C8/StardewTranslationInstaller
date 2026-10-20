@@ -9,7 +9,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--csc', default=os.environ.get('CSC_BIN', 'csc'))
-parser.add_argument('--game-path', type=Path, default=Path.home() / 'Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS')
+parser.add_argument('--game-path', type=Path, default=Path(os.environ.get('STARDEW_GAME_PATH', str(Path.home() / 'Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS'))))
 args = parser.parse_args()
 game = args.game_path
 payload = ROOT / 'Sources/StardewTranslationInstaller/Resources'

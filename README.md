@@ -46,3 +46,16 @@ This project is not affiliated with the original game's developer.
 [Historical working and build notes](Documentation/README-history-2026-10-20.md)
 are retained unchanged for development traceability. They do not replace the current
 download instructions or establish the provenance of newly generated files.
+
+## Local provenance builds
+
+Use `python3 Scripts/build-provenance.py --release dist/NEW_RELEASE_DIRECTORY
+--game-path /path/to/Stardew/Contents/MacOS` from clean, pushed canonical main.
+The recipe runs the complete technical audit and both platform builds locally,
+records the actual source commit, tool identities, resource inventory and read-only
+game-reference hashes, then compares every ZIP entry against the final stage.
+It rejects resource changes during compilation; generated managed binaries must be
+reviewed and committed before the provenance build. No cloud build or paid signing
+service is required. `Scripts/csc-dotnet.sh` uses the installed .NET SDK compiler;
+`CSC_BIN` explicitly selects it without a NuGet dependency restore. Exact older
+archives retain their original provenance status.

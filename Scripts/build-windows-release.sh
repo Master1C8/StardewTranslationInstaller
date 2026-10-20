@@ -19,8 +19,9 @@ grep -Fq "VN Revival Stardew Installer/$version" "$project_dir/Windows/install.p
   exit 1
 }
 
-stage="$project_dir/dist/Stardew Translation Installer-Windows-$version"
-archive="$project_dir/dist/Stardew Translation Installer-Windows-$version.zip"
+release_dir="${VNREVIVAL_RELEASE_DIR:-$project_dir/dist}"
+stage="$release_dir/Stardew Translation Installer-Windows-$version"
+archive="$release_dir/Stardew Translation Installer-Windows-$version.zip"
 work="$(mktemp -d "${TMPDIR:-/tmp}/stardew-windows-release.XXXXXX")"
 trap 'rm -rf "$work"' EXIT
 
@@ -63,7 +64,7 @@ SWIFT_MODULECACHE_PATH="$work/swift-module-cache" \
   "$project_dir/Scripts/compress-xnb-fonts.swift" --verify
 
 (
-  cd "$project_dir/dist"
+  cd "$release_dir"
   /usr/bin/zip -q -r -X "${archive:t}" "${stage:t}"
 )
 /usr/bin/unzip -t "$archive" >/dev/null

@@ -59,3 +59,5 @@ reviewed and committed before the provenance build. No cloud build or paid signi
 service is required. `Scripts/csc-dotnet.sh` uses the installed .NET SDK compiler;
 `CSC_BIN` explicitly selects it without a NuGet dependency restore. Exact older
 archives retain their original provenance status.
+
+The universal audit checks arm64 and x86_64 in separate `lipo -verify_arch` calls: current CLT rejects the legacy combined invocation. Regression: the universal binary passes both checks, while the single-arm64 build fails the x86_64 check.

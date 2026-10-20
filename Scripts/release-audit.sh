@@ -26,7 +26,9 @@ node Scripts/audit-bitmap-font-coverage.mjs
 "$python_bin" Scripts/check-bulgarian-runtime.py
 ./Scripts/build-app.sh
 codesign --verify --deep --strict "${VNREVIVAL_RELEASE_DIR:-dist}/Stardew Translation Installer.app"
-lipo "${VNREVIVAL_RELEASE_DIR:-dist}/Stardew Translation Installer.app/Contents/MacOS/Stardew Translation Installer" \
-  -verify_arch arm64 x86_64
+# Current CLT lipo accepts one architecture per verification invocation.
+for architecture in arm64 x86_64; do
+  lipo -verify_arch "$architecture" "${VNREVIVAL_RELEASE_DIR:-dist}/Stardew Translation Installer.app/Contents/MacOS/Stardew Translation Installer"
+done
 
 echo "Technical release audit passed. Glossary publication and live visual gates remain separate mandatory checks."

@@ -63,6 +63,8 @@ SDK Release and direct compiler builds can have different DLL/PDB bytes from
 the same source. Both capture modes reject an installed DLL that differs from
 the canonical payload. Final runtime evidence must match the actual packaged
 DLL hash; a source-level match alone does not establish that boundary.
+Evidence records the loaded pack version from SMAPI separately from the source
+manifest version. A newer source manifest does not prove the game loaded it.
 
 The bridge uses a native 1280×780 game viewport, verifies each transition on
 the game thread, and captures the backbuffer after `Game1.renderScreenBuffer`

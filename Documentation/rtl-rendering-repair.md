@@ -70,7 +70,24 @@ its game/driver cleaned up, and preferences verified against the original backup
 The owner must manually unlock the Mac before the final three-locale capture.
 The runner now checks source/installed DLL equality before launching either mode.
 
-Final release provenance and production upload remain pending at this checkpoint.
+Both final archives passed `Scripts/build-provenance.py` from clean pushed commit
+`bfaa5f1fbc050aca208eb34e1ef648fc7a7d6f1f` on October 25. They are stored in
+`dist/1.17.26-provenance-20261025/`, alongside `provenance.json`, full source and
+payload inventories, build log and `SHA256SUMS`:
+
+| Platform | Archive | SHA-256 | Verified archive entries |
+| --- | --- | --- | --- |
+| Windows x86-64 | `Stardew-Installer-Windows-1.17.26.zip` | `a4fb19ec8a472621631d9311ea108dca1d31da2e4f0e5a47c927495b9a37629b` | 5318 |
+| macOS arm64/x86-64 | `Stardew-Installer-macOS-1.17.26.zip` | `4062bfc2eef0ebc6aca8721eefc81e5906e49455a6da47fd5bede5104661b369` | 5319 |
+
+The macOS app has an ad hoc signature and is not notarized. The source,
+installed switcher and both archive DLLs have the final direct-compiler hash.
+Complete content-pack inventory comparison found only its old installed manifest
+version differed; that manifest was backed up and updated to 1.17.26. The capture
+runner now reports the actual loaded pack version from SMAPI separately from its
+source manifest version. No game was launched after this installation update.
+
+Final-binary visual recapture and production upload remain pending.
 Native verification is macOS only; these captures do not claim a Windows
 playthrough, exhaustive game coverage, or language-picker navigation coverage.
 

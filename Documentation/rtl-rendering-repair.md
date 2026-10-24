@@ -104,30 +104,65 @@ menu immediately before each framebuffer write. The ordinary Oculix path remains
 interactive. This final three-locale run validates the revised bridge; it does
 not establish the cause of the earlier unexpected input/state change.
 
-Production uploads and the separate post-upload review remain pending.
+Production uploads and complete post-upload inspection finished on October 25.
+The 15 new RTL images pass; the overall gallery gate fails on preserved legacy
+images as documented below.
 Native verification is macOS only; these captures do not claim a Windows
 playthrough, exhaustive game coverage, or language-picker navigation coverage.
 
-## Production handoff
+## Production delivery — 25 October 2026
 
-The read-only Model usage CLI returned zero existing production usage records
-on October 24. The comparison manifest was only a dry run and did not write
-usage. The previous two chats and this chat have measured session telemetry.
-Preserve nonoverlapping application/QA records at a stated cutoff; do not add
-cached input or reasoning subsets twice. Production usage has not been written.
+The owner confirmed the unrelated SiteForMods work was committed. The old dirty
+CLI blocker is resolved. The canonical GitHub account/repository and private
+project URL were verified through their owning tools; the URL was already correct.
+Three measured, nonoverlapping Model usage records for this RTL repair were
+written through the CLI and verified by an unchanged post-upload dry run. These
+records exclude historical translation work and the later publication tail; no
+inferred monetary cost or duplicate cached/reasoning subset is included.
 
-The canonical GitHub profile and repository identity/visibility were verified.
-The private project-URL dry run stopped with:
+The public CLI attached Windows ModFiles **65** and macOS ModFiles **66**, retaining
+the old archive records. It replaced exactly five screenshots each for `ar`, `fa`
+and `he`, preserved all other locale slots, and advanced the published release to
+1.17.26 (release date 2026-10-25). All apply commands completed with cache
+invalidation. Final read-back plans show all 15 screenshots as SKIP (zero
+replacements/additions) and no release-metadata changes. Each platform upload
+and screenshot/metadata operation has its own
+transaction boundary; no global transaction is claimed.
 
-`Production game-card edit failed: commit the game editor implementation before production use`
+The production release capture hashed actual archive bytes and read the embedded
+source provenance. Both hashes, sizes and source commit match the table above.
+The CLI subsequently downloaded both public ZIPs into
+`dist/rtl-repair-20261024/production-{windows,macos}-1.17.26.zip`; exact byte sizes
+and SHA-256 matched again. This verifies delivery, not Windows runtime.
 
-Archive dry runs for both platforms also stopped before transfer with:
+SiteForMods commit `90f1232e21eaa5bd29a6fb3abfccb37dadcc7491` on canonical main
+(pushed) appends the exact production release identities, registers the new guide
+hashes and retains historical records. All 62 generated locale/platform guide
+objects match the previously reviewed wording. The complete SEO test matrix
+passed 418 checks initially, with its sole stale-fingerprint assertion corrected
+after actual delta review and passed separately (1/1, zero skipped). The final
+production `content audit --game stardew-valley` reports no missing content.
 
-`Production mod file sync failed: commit the mod file sync wrapper before production use`
+Registry/guide public rendering awaits a separately authorized application
+deployment. No application deployment or server lifecycle action occurred.
 
-SiteForMods has unrelated staged changes, including `scripts/cli/game.mjs` and
-screenshot export/review infrastructure. Preserve that index and working tree;
-do not commit, stash, reset or deploy it as part of this repair. Once its owning
-work is committed, use the public CLI for exact project-URL/usage verification,
-archive dry runs/apply, screenshot dry run/apply, and complete post-upload
-`vn-game-screenshot-review`. No upload or post-upload acceptance is claimed yet.
+## Complete hosted gallery inspection
+
+The CLI exported 100/100 original hosted WebP images across 20 nonempty locale
+slots with zero download failures. Every frame was opened individually at original
+resolution, including all preserved legacy images. All 15 new RTL images pass
+layout, glyphs, content, contamination and bidi checks. The global gate remains
+**failed**: 85 preserved legacy images have baked-in locale badges, and nine of
+those have additional layout/content findings. No image remains pending.
+
+See [the complete review report](production-gallery-review-20261025.md) for every
+locale count, exact regions, severity, next action and immutable receipt hashes.
+The per-image ledger, export inventory and originals remain in ignored private
+`Documentation/rtl-rendering-20261024/production-final-20261025/` and its sibling
+`production-final-review.json`. These legacy findings do not establish current
+1.17.26 runtime defects and do not authorize unrelated repair/recapture.
+
+Upload plans, individual apply receipts, capture, successful download receipts,
+content audit and test logs remain under `dist/rtl-repair-20261024/`. The private
+`publication-progress.json` distinguishes successful publication from failed
+whole-gallery visual acceptance. Do not resubmit the successful uploads.

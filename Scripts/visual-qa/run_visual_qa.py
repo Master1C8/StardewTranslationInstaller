@@ -94,6 +94,15 @@ def executable(name_or_path: str | Path) -> str:
     return found
 
 
+def verify_installed_switcher(game_dir: Path) -> str:
+    source = PROJECT_ROOT / "Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/VNRevival.LanguageSwitcher.dll"
+    installed = game_dir / "Mods/[SMAPI] VN Revival Language Switcher/VNRevival.LanguageSwitcher.dll"
+    expected = sha256(source)
+    if not installed.is_file() or sha256(installed) != expected:
+        raise RuntimeError("installed language switcher differs from the canonical payload; install the exact release build before capture")
+    return expected
+
+
 def ensure_dependencies(java: Path, jar: Path, game_dir: Path, smoke: bool) -> dict[str, str]:
     dependencies = {
         "java": executable(java),
@@ -105,6 +114,7 @@ def ensure_dependencies(java: Path, jar: Path, game_dir: Path, smoke: bool) -> d
     if not jar.is_file():
         raise RuntimeError(f"Oculix JAR not found: {jar}")
     if not smoke:
+        verify_installed_switcher(game_dir)
         dependencies["game"] = executable(game_dir / "StardewValley")
         if not DEFAULT_PREFERENCES.is_file():
             raise RuntimeError(f"Stardew preferences not found: {DEFAULT_PREFERENCES}")
@@ -393,6 +403,7 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
         raise RuntimeError("--bridge requires one exact locale and restored preferences")
     if current_stardew_processes():
         raise RuntimeError("Stardew Valley is already running")
+    verify_installed_switcher(args.game_dir)
     review = args.output_root / locale["slug"] / "visual-qa"
     upload = args.output_root / "visual-qa-upload"
     if review.exists() or any((upload / f"{locale['siteLocale']}-{stem}.png").exists() for stem, _ in CAPTURES):

@@ -51,6 +51,19 @@ python3 Scripts/visual-qa/run_visual_qa.py ar-vnrevival --bridge \
   --output-root Documentation/rtl-rendering-20261024/reviewed
 ```
 
+Build the switcher with the same compiler path as `Scripts/build-provenance.py`
+before installing it for visual QA:
+
+```sh
+STARDEW_GAME_PATH="<installed-game>/Contents/MacOS" \
+  CSC_BIN="$PWD/Scripts/csc-dotnet.sh" ./Scripts/build-language-switcher.sh
+```
+
+SDK Release and direct compiler builds can have different DLL/PDB bytes from
+the same source. Both capture modes reject an installed DLL that differs from
+the canonical payload. Final runtime evidence must match the actual packaged
+DLL hash; a source-level match alone does not establish that boundary.
+
 The bridge uses a native 1280×780 game viewport, verifies each transition on
 the game thread, and captures the backbuffer after `Game1.renderScreenBuffer`
 has composed the UI. `Rendered` runs too early and may capture the world

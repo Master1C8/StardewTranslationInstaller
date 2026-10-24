@@ -27,6 +27,17 @@ namespace VNRevival.VisualQADriver
                 throw new InvalidOperationException("VN_VISUAL_QA_TRIGGER is not set.");
             Monitor.Log("VN_QA_RUN " + triggerPath, LogLevel.Info);
             helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
+            if (Environment.GetEnvironmentVariable("VN_VISUAL_QA_BRIDGE") == "1")
+            {
+                // Bridge commands invoke game methods directly. Suppress physical
+                // input so a focus/desktop click cannot dismiss the capture state.
+                // Keep the ordinary Oculix path interactive.
+                helper.Events.Input.ButtonsChanged += (_, e) =>
+                {
+                    foreach (SButton button in e.Pressed.Concat(e.Held))
+                        helper.Input.Suppress(button);
+                };
+            }
             instance = this;
             // SMAPI's Rendered event precedes Game1's final UI composition.
             // Capture after the UI target has been blended into the backbuffer.
@@ -45,6 +56,16 @@ namespace VNRevival.VisualQADriver
             if (capturePath == null) return;
             string path = capturePath;
             capturePath = null;
+            string name = Path.GetFileName(path);
+            bool expected = name.Contains("-01-title-menu-")
+                ? Game1.activeClickableMenu is TitleMenu && TitleMenu.subMenu == null
+                : name.Contains("-02-character-creation-") ? TitleMenu.subMenu is CharacterCustomization
+                : name.Contains("-03-gus-dialogue-") ? Game1.activeClickableMenu is DialogueBox
+                : name.Contains("-04-item-description-") ? Game1.activeClickableMenu is GameMenu
+                : name.Contains("-05-journal-") && Game1.activeClickableMenu is QuestLog;
+            if (!expected)
+                throw new InvalidOperationException("Capture state changed before " + name + "; active menu: "
+                    + (Game1.activeClickableMenu?.GetType().Name ?? "world"));
             var device = Game1.graphics.GraphicsDevice;
             if (device.GetRenderTargets().Length != 0)
                 throw new InvalidOperationException("Capture requires the final backbuffer.");

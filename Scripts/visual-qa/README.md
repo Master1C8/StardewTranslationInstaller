@@ -79,6 +79,14 @@ Item hover and the previous mouse sample used for tooltip placement must point
 to the same inventory slot. The prepared save's bytes are checked before/after,
 and the original startup preferences and temporary driver are restored.
 
+Only in bridge mode, SMAPI suppresses physical button input while commands drive
+the game. A desktop/focus click must not dismiss the dialogue between its state
+receipt and capture. The ordinary Oculix path remains interactive. Immediately
+before saving each framebuffer, the driver checks the actual menu against that
+capture's semantic screen; an earlier acknowledgement alone is insufficient.
+Regression: close a dialogue between its open receipt and capture. Reject the
+frame instead of accepting a gameplay image as dialogue or proceeding blindly.
+
 Regressions: all five captures must show their distinct semantic UI, upright,
 with complete panels and the full item tooltip. Capture byte uniqueness alone
 cannot prove those states. Test all three RTL locales with mixed player names,

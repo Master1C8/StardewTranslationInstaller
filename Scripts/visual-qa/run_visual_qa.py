@@ -204,10 +204,11 @@ def set_language(preferences: Path, language_id: str) -> bytes:
     return original
 
 
-def launch_game(game_dir: Path, log_path: Path, trigger_path: Path) -> tuple[subprocess.Popen[bytes], threading.Thread]:
+def launch_game(game_dir: Path, log_path: Path, trigger_path: Path, bridge: bool = False) -> tuple[subprocess.Popen[bytes], threading.Thread]:
     master, slave = pty.openpty()
     environment = os.environ.copy()
     environment["VN_VISUAL_QA_TRIGGER"] = str(trigger_path)
+    environment["VN_VISUAL_QA_BRIDGE"] = "1" if bridge else "0"
     process = subprocess.Popen(
         [str(game_dir / "StardewValley"), "--use-current-shell"],
         cwd=game_dir,
@@ -428,7 +429,7 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
         captured_log = ""
         try:
             set_language(DEFAULT_PREFERENCES, f"{package['uniqueID']}_{locale['entry']}")
-            process, reader = launch_game(args.game_dir, runtime / "launcher.log", trigger)
+            process, reader = launch_game(args.game_dir, runtime / "launcher.log", trigger, bridge=True)
 
             def log() -> str:
                 text = DEFAULT_SMAPI_LOG.read_text(errors="replace") if DEFAULT_SMAPI_LOG.exists() else ""

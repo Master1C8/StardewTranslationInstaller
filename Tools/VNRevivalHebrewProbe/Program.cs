@@ -2,6 +2,9 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Text;
+using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.GameData;
@@ -26,7 +29,7 @@ Check("English 123", "English 123");
 Check(string.Empty, string.Empty);
 CheckNestedRenderingPatch();
 
-Console.WriteLine("Hebrew bidi probe passed 9 exact cases plus RTL typewriter suppression, alignment, and nested-rendering cases.");
+Console.WriteLine("RTL probe passed 9 Hebrew exact cases, layout/typewriter checks, and real Harmony argument/forwarding checks for Hebrew, Arabic, and Persian.");
 
 void Check(string logical, string expected)
 {
@@ -140,6 +143,53 @@ void CheckNestedRenderingPatch()
                 != StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Right)
             throw new InvalidDataException("The RTL adapter did not suppress SpriteText's left-anchored typewriter cutoff.");
         finalizer.Invoke(null, new object?[] { null, progressiveCall[2] });
+
+        // Exercise Harmony's real argument binding and finalizer, not only a
+        // reflection call into the prefix with a manually supplied object array.
+        var harmony = new Harmony("VNRevival.RtlProbe");
+        MethodInfo selector = modEntry.GetMethod("GetTextRenderingPrefix", BindingFlags.Static | BindingFlags.NonPublic)!;
+        foreach (string name in new[] { "Draw", "Forward", "DrawBuilder", "Measure", "MeasureBuilder" })
+        {
+            MethodInfo actualDraw = typeof(ProbeRenderer).GetMethod(name)!;
+            var boundPrefix = (MethodInfo)selector.Invoke(null, new object[] { actualDraw })!;
+            harmony.Patch(actualDraw, prefix: new HarmonyMethod(boundPrefix), finalizer: new HarmonyMethod(finalizer));
+        }
+        harmony.Patch(typeof(ProbeRenderer).GetMethod("Core")!,
+            prefix: new HarmonyMethod(modEntry.GetMethod("BeforeSpriteTextRendering", BindingFlags.Static | BindingFlags.NonPublic)!),
+            finalizer: new HarmonyMethod(finalizer));
+        try
+        {
+            CheckBindings("he-vnrevival", adapter, "שלום Alex 123 עולם");
+            if (args.Length != 2) throw new ArgumentException("Pass the Persian and Arabic map paths.");
+            foreach (var spec in new[] {
+                ("fa-vnrevival", "PersianAdapter", args[0], "سلام Alex 123 دنیا"),
+                ("ar-vnrevival", "ArabicAdapter", args[1], "مرحبا Alex 123 بالعالم") })
+            {
+                FieldInfo field = modEntry.GetField(spec.Item2, BindingFlags.Static | BindingFlags.NonPublic)!;
+                object? original = field.GetValue(null);
+                var mappedAdapter = ArabicScriptTextAdapter.Load(spec.Item3);
+                try { field.SetValue(null, mappedAdapter); CheckBindings(spec.Item1, mappedAdapter, spec.Item4); }
+                finally { field.SetValue(null, original); }
+            }
+            void CheckBindings(string locale, ArabicScriptTextAdapter activeAdapter, string logical)
+            {
+                modLanguageField.SetValue(null, new ModLanguage { LanguageCode = locale });
+                string expected = activeAdapter.Transform(logical);
+                var builder = new StringBuilder(logical);
+                string[] actual = {
+                    ProbeRenderer.Draw(new object(), logical), ProbeRenderer.Forward(new object(), logical),
+                    ProbeRenderer.DrawBuilder(new object(), builder), ProbeRenderer.Measure(logical), ProbeRenderer.MeasureBuilder(builder) };
+                if (actual.Any(value => value != expected) || builder.ToString() != logical)
+                    throw new InvalidDataException("Harmony text binding/forwarding failed for " + locale);
+                var core = ProbeRenderer.Core(new object(), logical, 0, 0, 4, 320, 999999, 1f, 1f, false, -1, "", null,
+                    StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Left);
+                if (core.Text != expected || core.Position != 999999 || core.Alignment != StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment.Right)
+                    throw new InvalidDataException("Harmony did not bind SpriteText layout arguments for " + locale);
+                if (ProbeRenderer.Draw(new object(), "English 123") != "English 123")
+                    throw new InvalidDataException("RTL patch changed a Latin-only label.");
+            }
+        }
+        finally { harmony.UnpatchAll(harmony.Id); }
     }
     finally
     {
@@ -147,4 +197,24 @@ void CheckNestedRenderingPatch()
         languageField.SetValue(null, savedLanguage);
         modLanguageField.SetValue(null, savedModLanguage);
     }
+}
+
+public static class ProbeRenderer
+{
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static string Draw(object context, string text) => text;
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static string Forward(object context, string text) => Draw(context, text);
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static string DrawBuilder(object context, StringBuilder text) => text.ToString();
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static string Measure(string text) => text;
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static string MeasureBuilder(StringBuilder text) => text.ToString();
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static (string Text, int Position, StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment Alignment)
+        Core(object b, string s, int x, int y, int characterPosition, int width, int height, float alpha, float layerDepth,
+            bool junimoText, int drawBGScroll, string placeholder, Microsoft.Xna.Framework.Color? color,
+            StardewValley.BellsAndWhistles.SpriteText.ScrollTextAlignment alignment)
+        => (s, characterPosition, alignment);
 }

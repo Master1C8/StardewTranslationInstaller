@@ -1,7 +1,7 @@
 # Automated visual QA
 
-This runner uses Oculix image recognition, small Swift helpers for
-CoreGraphics input and bidi-aware CoreText labels, and a deterministic QuickSave to
+This runner uses Oculix image recognition, a Swift helper for
+CoreGraphics input, and a deterministic QuickSave to
 capture the same five useful screens for every shipped VN Revival locale:
 
 1. title menu;
@@ -43,6 +43,32 @@ python3 Scripts/visual-qa/run_visual_qa.py sr-vnrevival
 python3 Scripts/visual-qa/run_visual_qa.py --all
 ```
 
+When Oculix cannot initialize its macOS mouse device, use the project-owned
+state bridge for one exact locale and a new output directory:
+
+```sh
+python3 Scripts/visual-qa/run_visual_qa.py ar-vnrevival --bridge \
+  --output-root Documentation/rtl-rendering-20261024/reviewed
+```
+
+The bridge uses a native 1280×780 game viewport, verifies each transition on
+the game thread, and captures the backbuffer after `Game1.renderScreenBuffer`
+has composed the UI. `Rendered` runs too early and may capture the world
+without its dialogue or menus. Final-backbuffer rows already run top to bottom;
+flipping them produces upside-down frames. Do not repair captured PNGs afterward.
+Review each original frame before proceeding to another locale.
+
+Dialogue completion waits for the menu to disappear after its normal typing,
+safety timer and closing animation. A click receipt alone is insufficient.
+Item hover and the previous mouse sample used for tooltip placement must point
+to the same inventory slot. The prepared save's bytes are checked before/after,
+and the original startup preferences and temporary driver are restored.
+
+Regressions: all five captures must show their distinct semantic UI, upright,
+with complete panels and the full item tooltip. Capture byte uniqueness alone
+cannot prove those states. Test all three RTL locales with mixed player names,
+currency and quest progress, and verify return from dialogue to gameplay.
+
 The full run refuses to start while another Stardew Valley process is active
 and refuses to overwrite an existing visual-QA directory. Use `--replace` only
 after reviewing the existing evidence. In `--all` mode, only locales with an
@@ -68,7 +94,8 @@ in the SiteForMods repository.
 
 Review-only output is written to `Documentation/<locale>/visual-qa/`: the
 contact sheet, fresh SMAPI log, hashes, and evidence record. Each uploadable PNG
-keeps the native 2560x1600 frame. The automated result fails if the three exact
+keeps the native game frame (2560×1600 for Oculix, 1280×780 for the bridge),
+without resizing or annotations. The automated result fails if the three exact
 locale assets are absent from the log or if Content Patcher logged an error. A successful capture remains
 `capture-pass-review-pending` until a person reviews the five images; image
 recognition proves that the expected screens opened, not that every glyph and

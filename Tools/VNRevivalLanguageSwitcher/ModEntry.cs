@@ -143,16 +143,13 @@ public sealed class ModEntry : Mod
             prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeginDialogueRendering)),
             finalizer: new HarmonyMethod(typeof(ModEntry), nameof(FinishDialogueRendering))
         );
-        MethodInfo textPrefix = AccessTools.Method(typeof(ModEntry), nameof(BeforeTextRendering))
-            ?? throw new InvalidOperationException("The Arabic-script rendering adapter was not found.");
         MethodInfo textFinalizer = AccessTools.Method(typeof(ModEntry), nameof(FinishTextRendering))
             ?? throw new InvalidOperationException("The Arabic-script rendering cleanup was not found.");
-        HarmonyMethod textHarmonyPrefix = new(textPrefix);
         HarmonyMethod textHarmonyFinalizer = new(textFinalizer);
 
         IEnumerable<MethodInfo> spriteTextMethods = AccessTools.GetDeclaredMethods(typeof(SpriteText))
             .Where(method =>
-                (method.Name.StartsWith("drawString", StringComparison.Ordinal)
+                (method.Name == nameof(SpriteText.drawString)
                     || method.Name is "getWidthOfString" or "getHeightOfString")
                 && method.GetParameters().Any(IsTextParameter));
         IEnumerable<MethodInfo> monoGameMethods = AccessTools.GetDeclaredMethods(typeof(SpriteBatch))
@@ -165,7 +162,7 @@ public sealed class ModEntry : Mod
         int patched = 0;
         foreach (MethodInfo method in spriteTextMethods.Concat(monoGameMethods).Distinct())
         {
-            harmony.Patch(method, prefix: textHarmonyPrefix, finalizer: textHarmonyFinalizer);
+            harmony.Patch(method, prefix: new HarmonyMethod(GetTextRenderingPrefix(method)), finalizer: textHarmonyFinalizer);
             patched += 1;
         }
         Monitor.Log($"Persian, Arabic, and Hebrew shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
@@ -630,6 +627,62 @@ public sealed class ModEntry : Mod
             __state = false;
             throw;
         }
+    }
+
+    private static MethodInfo GetTextRenderingPrefix(MethodBase method)
+    {
+        ParameterInfo[] parameters = method.GetParameters();
+        string name = method.DeclaringType == typeof(SpriteText) && method.Name == nameof(SpriteText.drawString)
+            ? nameof(BeforeSpriteTextRendering)
+            : parameters[0].ParameterType == typeof(string) ? nameof(BeforeStringMeasurement)
+            : parameters[0].ParameterType == typeof(StringBuilder) ? nameof(BeforeBuilderMeasurement)
+            : parameters[1].ParameterType == typeof(string) ? nameof(BeforeStringRendering)
+            : nameof(BeforeBuilderRendering);
+        return AccessTools.Method(typeof(ModEntry), name)
+            ?? throw new MissingMethodException(name);
+    }
+
+    // SMAPI's bundled Harmony restores __args only for parameters which were
+    // already by-ref in the original method. DrawString/MeasureString accept
+    // text by value, so array edits alone never reach the actual renderer.
+    // Bind explicit ref arguments, including SpriteText's layout parameters.
+    private static bool BeforeStringRendering(MethodBase __originalMethod, object[] __args, ref string __1, out bool __state)
+    {
+        bool run = BeforeTextRendering(__originalMethod, __args, out __state);
+        __1 = (string)__args[1];
+        return run;
+    }
+
+    private static bool BeforeBuilderRendering(MethodBase __originalMethod, object[] __args, ref StringBuilder __1, out bool __state)
+    {
+        bool run = BeforeTextRendering(__originalMethod, __args, out __state);
+        __1 = (StringBuilder)__args[1];
+        return run;
+    }
+
+    private static bool BeforeStringMeasurement(MethodBase __originalMethod, object[] __args, ref string __0, out bool __state)
+    {
+        bool run = BeforeTextRendering(__originalMethod, __args, out __state);
+        __0 = (string)__args[0];
+        return run;
+    }
+
+    private static bool BeforeBuilderMeasurement(MethodBase __originalMethod, object[] __args, ref StringBuilder __0, out bool __state)
+    {
+        bool run = BeforeTextRendering(__originalMethod, __args, out __state);
+        __0 = (StringBuilder)__args[0];
+        return run;
+    }
+
+    private static bool BeforeSpriteTextRendering(MethodBase __originalMethod, object[] __args,
+        ref string __1, ref int __4, ref int __5, ref SpriteText.ScrollTextAlignment __13, out bool __state)
+    {
+        bool run = BeforeTextRendering(__originalMethod, __args, out __state);
+        __1 = (string)__args[1];
+        __4 = (int)__args[4];
+        __5 = (int)__args[5];
+        __13 = (SpriteText.ScrollTextAlignment)__args[13];
+        return run;
     }
 
     private static bool TryDrawBoundedRightToLeftSpriteText(

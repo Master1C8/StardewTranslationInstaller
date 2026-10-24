@@ -37,6 +37,9 @@ references+=("-r:$project_root/Sources/StardewTranslationInstaller/Resources/Lan
   "$project_root/Tools/VNRevivalHebrewProbe/Program.cs"
 
 find "$game_path" -maxdepth 1 -type f -exec ln -s '{}' "$probe_dir/" \;
+ln -s "$game_path/smapi-internal/0Harmony.dll" "$probe_dir/0Harmony.dll"
+ln -s "$game_path/smapi-internal/MonoMod.Common.dll" "$probe_dir/MonoMod.Common.dll"
+ln -s "$game_path/smapi-internal/Mono.Cecil.dll" "$probe_dir/Mono.Cecil.dll"
 ln -s "$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/VNRevival.LanguageSwitcher.dll" \
   "$probe_dir/VNRevival.LanguageSwitcher.dll"
 cp "$game_path/StardewModdingAPI" "$probe_dir/HebrewProbe"
@@ -61,4 +64,6 @@ old = b"StardewModdingAPI.dll"; new = b"HebrewProbe.dll" + b"\0" * 6
 assert len(old) == len(new) and data.count(old) == 1
 p.write_bytes(data.replace(old, new))' "$probe_dir/HebrewProbe"
 
-"$probe_dir/HebrewProbe"
+"$probe_dir/HebrewProbe" \
+  "$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/persian-shaping-map.json" \
+  "$project_root/Sources/StardewTranslationInstaller/Resources/LanguageSwitcherPayload/arabic-shaping-map.json"

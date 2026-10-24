@@ -30,7 +30,7 @@ LOCALES_JSON = SCRIPT_DIR / "locales.json"
 OCULIX_SCRIPT = SCRIPT_DIR / "qa_capture.sikuli"
 DEFAULT_OCULIX_JAR = Path("/Users/antonkrutov/Applications/Oculix/oculixide-4.0.0-macos.jar")
 DEFAULT_JAVA = Path("/opt/homebrew/opt/openjdk@17/bin/java")
-DEFAULT_GAME_DIR = Path("/Volumes/KINGSTONMAC/SteamLibrary/common/Stardew Valley/Contents/MacOS")
+DEFAULT_GAME_DIR = Path("/Volumes/KINGSTONMAC/SteamLibrary/steamapps/common/Stardew Valley/Contents/MacOS")
 DEFAULT_PREFERENCES = Path.home() / ".config/StardewValley/startup_preferences"
 DEFAULT_SMAPI_LOG = Path.home() / ".config/StardewValley/ErrorLogs/SMAPI-latest.txt"
 TEMPLATE_DIR = SCRIPT_DIR / "templates/2x"
@@ -39,7 +39,7 @@ EXPECTED_SIZE = "2560x1600"
 CAPTURES = [
     ("01-title-menu", "Localized title menu buttons and labels are visible and unclipped."),
     ("02-character-creation", "Character-creation labels and the lower-right Back button are visible and unclipped."),
-    ("03-gus-dialogue", "Gus's portrait, localized name, and multi-line dialogue are visible and unclipped."),
+    ("03-gus-dialogue", "Gus's portrait, localized name, and dialogue are visible and unclipped."),
     ("04-item-description", "The axe name, category, wrapped description, and inventory metadata are visible."),
     ("05-journal", "The expanded Introductions journal entry, body, and progress line fit the panel."),
 ]
@@ -100,7 +100,7 @@ def ensure_dependencies(java: Path, jar: Path, game_dir: Path, smoke: bool) -> d
         "magick": executable("/opt/homebrew/bin/magick"),
         "screencapture": executable("/usr/sbin/screencapture"),
         "xcrun": executable("/usr/bin/xcrun"),
-        "csc": executable("/opt/homebrew/bin/csc"),
+        "csc": executable(os.environ.get("CSC_BIN", PROJECT_ROOT / "Scripts/csc-dotnet.sh")),
     }
     if not jar.is_file():
         raise RuntimeError(f"Oculix JAR not found: {jar}")
@@ -126,10 +126,6 @@ def prepare_runtime(runtime: Path, magick: str) -> None:
     run_checked([
         "/usr/bin/xcrun", "swiftc", str(SCRIPT_DIR / "cg_input.swift"),
         "-o", str(runtime / "cg-input"),
-    ])
-    run_checked([
-        "/usr/bin/xcrun", "swiftc", str(SCRIPT_DIR / "label_overlay.swift"),
-        "-o", str(runtime / "label-overlay"),
     ])
 
 
@@ -262,6 +258,7 @@ def postprocess(
     upload_output: Path,
     locale: dict[str, str],
     smapi_log: Path,
+    expected_size: str = EXPECTED_SIZE,
 ) -> list[Path]:
     review_output.mkdir(parents=True, exist_ok=True)
     upload_output.mkdir(parents=True, exist_ok=True)
@@ -270,15 +267,16 @@ def postprocess(
         raw = runtime / "raw" / f"{locale['code']}-{stem}-raw.png"
         if not raw.is_file():
             raise RuntimeError(f"automation did not produce {raw.name}")
-        if image_size(magick, raw) != EXPECTED_SIZE:
-            raise RuntimeError(f"{raw.name} is {image_size(magick, raw)}, expected {EXPECTED_SIZE}")
+        if image_size(magick, raw) != expected_size:
+            raise RuntimeError(f"{raw.name} is {image_size(magick, raw)}, expected {expected_size}")
         destination = upload_output / f"{locale['siteLocale']}-{stem}.png"
-        run_checked([
-            str(runtime / "label-overlay"), str(raw), str(destination), locale["label"],
-        ])
-        if image_size(magick, destination) != EXPECTED_SIZE:
-            raise RuntimeError(f"labeling resized {destination.name}")
+        shutil.copy2(raw, destination)
+        if image_size(magick, destination) != expected_size:
+            raise RuntimeError(f"capture copy resized {destination.name}")
         produced.append(destination)
+
+    if len({sha256(path) for path in produced}) != len(CAPTURES):
+        raise RuntimeError("different semantic screens produced duplicate image bytes")
 
     contact_sheet = review_output / f"{locale['siteLocale']}-contact-sheet.png"
     run_checked([
@@ -348,7 +346,7 @@ def write_evidence(
         "quickSaveVersion": version_from_log(log_text, r"QuickSave ([0-9.]+)"),
         "packageVersion": json.loads((PROJECT_ROOT / "Sources/StardewTranslationInstaller/Resources/ModPayload/manifest.json").read_text())["Version"],
         "resolution": {"width": 2560, "height": 1600},
-        "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution; the locale label was added afterward without resizing.",
+        "method": "Oculix focused the live fullscreen game and drove a checked title/character/save/QuickSave/Gus/inventory/journal path. The exact custom locale was selected before launch through Stardew's startup preferences and the original value was restored afterward. macOS captured every stable screen at native resolution without annotations or resizing.",
         "result": "capture-pass-review-pending" if automated_result == "pass" else "automated-fail",
         "automatedResult": automated_result,
         "visualReview": {"status": "pending", "findings": []},
@@ -375,12 +373,135 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--all", dest="all_locales", action="store_true", help="capture every locale sequentially")
     parser.add_argument("--smoke", action="store_true", help="only test Oculix capture and macOS permissions")
     parser.add_argument("--replace", action="store_true", help="replace an existing locale visual-QA directory")
+    parser.add_argument("--bridge", action="store_true", help="use the guarded SMAPI state bridge and native 1280x780 framebuffer capture")
     parser.add_argument("--keep-language", action="store_true", help="leave the selected locale in startup_preferences")
     parser.add_argument("--oculix-jar", type=Path, default=Path(os.environ.get("OCULIX_JAR", DEFAULT_OCULIX_JAR)))
     parser.add_argument("--java", type=Path, default=Path(os.environ.get("OCULIX_JAVA", DEFAULT_JAVA)))
     parser.add_argument("--game-dir", type=Path, default=Path(os.environ.get("STARDEW_GAME_DIR", DEFAULT_GAME_DIR)))
     parser.add_argument("--output-root", type=Path, default=PROJECT_ROOT / "Documentation")
     return parser.parse_args()
+
+
+def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package: dict[str, object]) -> int:
+    """Use the existing local driver when Oculix cannot attach to macOS input.
+
+    Each action is acknowledged by the game thread; SaveLoaded guards both the
+    normal load and the subsequent QuickSave restoration. No player save is made.
+    """
+    locale = next((item for item in locales if item["code"] == args.locale), None)
+    if locale is None or args.all_locales or args.smoke or args.keep_language:
+        raise RuntimeError("--bridge requires one exact locale and restored preferences")
+    if current_stardew_processes():
+        raise RuntimeError("Stardew Valley is already running")
+    review = args.output_root / locale["slug"] / "visual-qa"
+    upload = args.output_root / "visual-qa-upload"
+    if review.exists() or any((upload / f"{locale['siteLocale']}-{stem}.png").exists() for stem, _ in CAPTURES):
+        raise RuntimeError("bridge output already exists; choose a new evidence directory")
+    magick = executable("/opt/homebrew/bin/magick")
+    csc = executable(os.environ.get("CSC_BIN", PROJECT_ROOT / "Scripts/csc-dotnet.sh"))
+    executable(args.game_dir / "StardewValley")
+    save = DEFAULT_PREFERENCES.parent / "Saves/zc_448908119"
+    protected = sorted(path for path in save.iterdir() if path.is_file())
+    before = {str(path): sha256(path) for path in protected}
+    if not (save / "Quicksave").is_file():
+        raise RuntimeError("prepared QuickSave checkpoint is absent")
+    original = DEFAULT_PREFERENCES.read_bytes()
+    with tempfile.TemporaryDirectory(prefix="vn-visual-qa-bridge-") as temporary:
+        runtime = Path(temporary)
+        (runtime / "raw").mkdir()
+        trigger = runtime / "quickload.request"
+        driver = build_smapi_driver(runtime, args.game_dir, csc)
+        installed = install_smapi_driver(driver, args.game_dir)
+        process = reader = None
+        captured_log = ""
+        try:
+            set_language(DEFAULT_PREFERENCES, f"{package['uniqueID']}_{locale['entry']}")
+            process, reader = launch_game(args.game_dir, runtime / "launcher.log", trigger)
+
+            def log() -> str:
+                text = DEFAULT_SMAPI_LOG.read_text(errors="replace") if DEFAULT_SMAPI_LOG.exists() else ""
+                offset = text.find("VN_QA_RUN " + str(trigger))
+                return text[offset:] if offset >= 0 else ""
+
+            def wait_for(needle: str, start: int = 0, timeout: float = 120) -> None:
+                deadline = time.monotonic() + timeout
+                while time.monotonic() < deadline:
+                    current = log()[start:]
+                    if "ERROR VN Revival Visual QA Driver" in current:
+                        raise RuntimeError("visual-QA driver failed: " + current[-2000:])
+                    if needle in current:
+                        return
+                    if process.poll() is not None:
+                        raise RuntimeError("game exited before " + needle)
+                    time.sleep(0.2)
+                raise RuntimeError("game state timed out: " + needle)
+
+            def command(value: str, marker: str, timeout: float = 120) -> None:
+                start = len(log())
+                pending = trigger.with_suffix(".pending")
+                pending.write_text(value + "\n")
+                os.replace(pending, trigger)
+                wait_for(marker, start, timeout)
+
+            def capture(stem: str) -> None:
+                time.sleep(2)
+                name = f"{locale['code']}-{stem}-raw.png"
+                command("capture raw/" + name, "VN_QA_CAPTURE " + str(runtime / name))
+                # The bridge restricts the command to a basename in its runtime.
+                shutil.move(runtime / name, runtime / "raw" / name)
+                size = image_size(magick, runtime / "raw" / name)
+                if size != "1280x780":
+                    raise RuntimeError("bridge viewport is " + size + ", expected 1280x780")
+
+            wait_for("VN_QA_STATE title-ready", timeout=180)
+            wait_for(f"Context: locale set to mod ({locale['code']})")
+            command("viewport", "VN_QA_STATE viewport")
+            capture("01-title-menu")
+            command("setup", "VN_QA_STATE setup")
+            capture("02-character-creation")
+            command("title", "VN_QA_STATE title")
+            command("load", "VN_QA_STATE world", timeout=180)
+            command("quickload", "VN_QA_STATE world", timeout=180)
+            command("dialogue", "VN_QA_STATE dialogue")
+            time.sleep(8)
+            capture("03-gus-dialogue")
+            command("advance", "VN_QA_STATE advanced world")
+            command("inventory-axe", "VN_QA_STATE inventory")
+            capture("04-item-description")
+            command("close", "VN_QA_STATE closed")
+            command("journal-expanded", "VN_QA_STATE journal")
+            capture("05-journal")
+            captured_log = DEFAULT_SMAPI_LOG.read_text(errors="replace")
+        except BaseException:
+            failure = args.output_root / (locale["siteLocale"] + "-bridge-failure")
+            failure.mkdir(parents=True, exist_ok=True)
+            for path in (runtime / "raw").glob("*.png"):
+                shutil.copy2(path, failure / path.name)
+            if DEFAULT_SMAPI_LOG.exists():
+                shutil.copy2(DEFAULT_SMAPI_LOG, failure / "smapi.log")
+            raise
+        finally:
+            if process is not None and reader is not None:
+                stop_game(process, reader)
+            DEFAULT_PREFERENCES.write_bytes(original)
+            remove_smapi_driver(installed)
+        after = {str(path): sha256(path) for path in sorted(save.iterdir()) if path.is_file()}
+        if before != after:
+            raise RuntimeError("protected test-save bytes changed")
+        size = image_size(magick, runtime / "raw" / f"{locale['code']}-01-title-menu-raw.png")
+        if size != "1280x780":
+            raise RuntimeError("bridge viewport is " + size + ", expected 1280x780")
+        produced = postprocess(magick, runtime, review, upload, locale, DEFAULT_SMAPI_LOG, size)
+        evidence = write_evidence(review, locale, package, produced, captured_log, DEFAULT_PREFERENCES.read_bytes() == original)
+        record = json.loads(evidence.read_text())
+        width, height = map(int, size.split("x"))
+        record.update({"resolution": {"width": width, "height": height},
+            "method": "Project-owned SMAPI bridge: guarded title/setup, prepared normal save followed by QuickSave restoration, real Gus interaction, axe hover, expanded quest. Native framebuffer captured without annotation or resizing. Oculix could not initialize its macOS mouse device.",
+            "saveHashesBefore": before, "saveHashesAfter": after,
+            "switcherSha256": sha256(args.game_dir / "Mods/[SMAPI] VN Revival Language Switcher/VNRevival.LanguageSwitcher.dll")})
+        evidence.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n")
+        print("Bridge visual QA complete: " + str(evidence))
+    return 0
 
 
 def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> int:
@@ -470,6 +591,8 @@ def main() -> int:
         return 0
     if args.all_locales:
         return run_all_locales(args, locales)
+    if args.bridge:
+        return run_bridge(args, locales, package)
     dependencies = ensure_dependencies(args.java, args.oculix_jar, args.game_dir, args.smoke)
     with tempfile.TemporaryDirectory(prefix="vn-visual-qa-") as temporary:
         runtime = Path(temporary)

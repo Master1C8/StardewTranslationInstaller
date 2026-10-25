@@ -274,11 +274,12 @@ def postprocess(
     locale: dict[str, str],
     smapi_log: Path,
     expected_size: str = EXPECTED_SIZE,
+    captures: list = CAPTURES,
 ) -> list[Path]:
     review_output.mkdir(parents=True, exist_ok=True)
     upload_output.mkdir(parents=True, exist_ok=True)
     produced: list[Path] = []
-    for stem, _ in CAPTURES:
+    for stem, _ in captures:
         raw = runtime / "raw" / f"{locale['code']}-{stem}-raw.png"
         if not raw.is_file():
             raise RuntimeError(f"automation did not produce {raw.name}")
@@ -290,7 +291,7 @@ def postprocess(
             raise RuntimeError(f"capture copy resized {destination.name}")
         produced.append(destination)
 
-    if len({sha256(path) for path in produced}) != len(CAPTURES):
+    if len({sha256(path) for path in produced}) != len(captures):
         raise RuntimeError("different semantic screens produced duplicate image bytes")
 
     contact_sheet = review_output / f"{locale['siteLocale']}-contact-sheet.png"
@@ -322,15 +323,16 @@ def write_evidence(
     produced: list[Path],
     log_text: str,
     restored: bool,
+    captures: list = CAPTURES,
 ) -> Path:
     screenshots = []
-    for (stem, coverage), path in zip(CAPTURES, produced[:5]):
+    for (stem, coverage), path in zip(captures, produced[:len(captures)]):
         screenshots.append({
             "file": os.path.relpath(path, review_output),
             "sha256": sha256(path),
             "coverage": coverage,
         })
-    contact = produced[5]
+    contact = produced[len(captures)]
     log_file = next((path for path in produced if path.suffix == ".log"), None)
     cp_errors = len(re.findall(
         r"\bERROR\s+Content Patcher\b|\[Content Patcher\].*\bERROR\b",
@@ -390,6 +392,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--smoke", action="store_true", help="only test Oculix capture and macOS permissions")
     parser.add_argument("--replace", action="store_true", help="replace an existing locale visual-QA directory")
     parser.add_argument("--bridge", action="store_true", help="use the guarded SMAPI state bridge and native 1280x780 framebuffer capture")
+    repair = parser.add_mutually_exclusive_group()
+    repair.add_argument("--repair-scenes", nargs="+", choices=["02-character-creation", "04-item-description"], help="with --bridge, capture only explicitly invalidated rendering surfaces")
+    repair.add_argument("--character-only", action="store_true", help="with --bridge, capture only the character-creation repair surface")
     parser.add_argument("--keep-language", action="store_true", help="leave the selected locale in startup_preferences")
     parser.add_argument("--oculix-jar", type=Path, default=Path(os.environ.get("OCULIX_JAR", DEFAULT_OCULIX_JAR)))
     parser.add_argument("--java", type=Path, default=Path(os.environ.get("OCULIX_JAVA", DEFAULT_JAVA)))
@@ -407,12 +412,15 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
     locale = next((item for item in locales if item["code"] == args.locale), None)
     if locale is None or args.all_locales or args.smoke or args.keep_language:
         raise RuntimeError("--bridge requires one exact locale and restored preferences")
+    selected = args.repair_scenes or (["02-character-creation"] if args.character_only else None)
+    captures = [capture for capture in CAPTURES if selected is None or capture[0] in selected]
+    stems = {capture[0] for capture in captures}
     if current_stardew_processes():
         raise RuntimeError("Stardew Valley is already running")
     verify_installed_switcher(args.game_dir)
     review = args.output_root / locale["slug"] / "visual-qa"
     upload = args.output_root / "visual-qa-upload"
-    if review.exists() or any((upload / f"{locale['siteLocale']}-{stem}.png").exists() for stem, _ in CAPTURES):
+    if review.exists() or any((upload / f"{locale['siteLocale']}-{stem}.png").exists() for stem, _ in captures):
         raise RuntimeError("bridge output already exists; choose a new evidence directory")
     magick = executable("/opt/homebrew/bin/magick")
     csc = executable(os.environ.get("CSC_BIN", PROJECT_ROOT / "Scripts/csc-dotnet.sh"))
@@ -490,21 +498,28 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
             wait_for("VN_QA_STATE title-ready", timeout=360, startup=True)
             wait_for(f"Context: locale set to mod ({locale['code']})")
             command("viewport", "VN_QA_STATE viewport")
-            capture("01-title-menu")
-            command("setup", "VN_QA_STATE setup")
-            capture("02-character-creation")
-            command("title", "VN_QA_STATE title")
-            command("load", "VN_QA_STATE world", timeout=180)
-            command("quickload", "VN_QA_STATE world", timeout=180)
-            command("dialogue", "VN_QA_STATE dialogue")
-            time.sleep(8)
-            capture("03-gus-dialogue")
-            command("advance", "VN_QA_STATE advanced world")
-            command("inventory-axe", "VN_QA_STATE inventory")
-            capture("04-item-description")
-            command("close", "VN_QA_STATE closed")
-            command("journal-expanded", "VN_QA_STATE journal")
-            capture("05-journal")
+            if "01-title-menu" in stems:
+                capture("01-title-menu")
+            if "02-character-creation" in stems:
+                command("setup", "VN_QA_STATE setup")
+                capture("02-character-creation")
+            if stems.intersection({"03-gus-dialogue", "04-item-description", "05-journal"}):
+                if "02-character-creation" in stems:
+                    command("title", "VN_QA_STATE title")
+                command("load", "VN_QA_STATE world", timeout=180)
+                command("quickload", "VN_QA_STATE world", timeout=180)
+                if "03-gus-dialogue" in stems:
+                    command("dialogue", "VN_QA_STATE dialogue")
+                    time.sleep(8)
+                    capture("03-gus-dialogue")
+                    command("advance", "VN_QA_STATE advanced world")
+                if "04-item-description" in stems:
+                    command("inventory-axe", "VN_QA_STATE inventory")
+                    capture("04-item-description")
+                    command("close", "VN_QA_STATE closed")
+                if "05-journal" in stems:
+                    command("journal-expanded", "VN_QA_STATE journal")
+                    capture("05-journal")
             captured_log = DEFAULT_SMAPI_LOG.read_text(errors="replace")
         except BaseException:
             failure = args.output_root / (locale["siteLocale"] + "-bridge-failure")
@@ -522,18 +537,19 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
         after = {str(path): sha256(path) for path in sorted(save.iterdir()) if path.is_file()}
         if before != after:
             raise RuntimeError("protected test-save bytes changed")
-        size = image_size(magick, runtime / "raw" / f"{locale['code']}-01-title-menu-raw.png")
+        size = image_size(magick, runtime / "raw" / f"{locale['code']}-{captures[0][0]}-raw.png")
         if size != "1280x780":
             raise RuntimeError("bridge viewport is " + size + ", expected 1280x780")
-        produced = postprocess(magick, runtime, review, upload, locale, DEFAULT_SMAPI_LOG, size)
-        evidence = write_evidence(review, locale, package, produced, captured_log, DEFAULT_PREFERENCES.read_bytes() == original)
+        produced = postprocess(magick, runtime, review, upload, locale, DEFAULT_SMAPI_LOG, size, captures)
+        evidence = write_evidence(review, locale, package, produced, captured_log, DEFAULT_PREFERENCES.read_bytes() == original, captures)
         record = json.loads(evidence.read_text())
         width, height = map(int, size.split("x"))
         focus_samples = re.findall(r"VN_QA_CAPTURE [^\r\n]+ foreground=(True|False)", captured_log)
         record.update({"resolution": {"width": width, "height": height},
             "backgroundLaunch": {"requested": True, "captureForegroundSamples": focus_samples,
-                "verified": len(focus_samples) == len(CAPTURES) and all(value == "False" for value in focus_samples)},
-            "method": "Project-owned SMAPI bridge: guarded title/setup, prepared normal save followed by QuickSave restoration, real Gus interaction, axe hover, expanded quest. Native framebuffer captured without annotation or resizing. Oculix could not initialize its macOS mouse device.",
+                "verified": len(focus_samples) == len(captures) and all(value == "False" for value in focus_samples)},
+            "captureScope": "repair-scenes:" + ",".join(stem for stem, _ in captures) if selected else "complete-five-scenes",
+            "method": "Project-owned SMAPI bridge; guarded scenes: " + ", ".join(stem for stem, _ in captures) + ". World scenes use the prepared normal save followed by QuickSave restoration. Native framebuffer captured without annotation or resizing; background activation verified per frame.",
             "saveHashesBefore": before, "saveHashesAfter": after,
             "switcherSha256": sha256(args.game_dir / "Mods/[SMAPI] VN Revival Language Switcher/VNRevival.LanguageSwitcher.dll")})
         evidence.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n")
@@ -620,6 +636,9 @@ def run_all_locales(args: argparse.Namespace, locales: list[dict[str, str]]) -> 
 
 def main() -> int:
     args = parse_args()
+    if (args.character_only or args.repair_scenes) and (not args.bridge or not args.locale or args.all_locales
+                                or args.smoke or args.keep_language):
+        raise RuntimeError("repair scene selection requires --bridge, one exact locale and restored preferences")
     locales, package = load_configuration()
     by_code = {locale["code"]: locale for locale in locales}
     if args.list:

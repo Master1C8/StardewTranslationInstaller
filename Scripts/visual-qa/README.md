@@ -79,7 +79,7 @@ SDL from forcing the game into the foreground, and
 SDL versions that support it. No desktop focus or input is needed. Every capture
 queries macOS's actual foreground process through NSWorkspace and records the
 result; `Game1.IsActive` alone is not evidence of foreground ownership. Evidence
-marks background launch verified only when all five captures report that the
+marks background launch verified only when every selected capture reports that the
 game was not the foreground process. The Oculix route retains its interactive
 launch behavior. These settings apply only to the temporary QA process.
 
@@ -175,6 +175,22 @@ line break rendered correctly.
 Background capture also suppresses the temporary driver's native software cursor
 through `IClickableMenu.drawMouse`, while semantic hover and the previous input
 sample still determine the tooltip. The bridge must not warp the desktop pointer.
+
+For an isolated character-creation rendering repair, use `--bridge --character-only`
+with one exact locale and a new output root. This captures only slot 02 and records
+`captureScope: character-creation-only`; normal mode still captures all five slots.
+The subset retains native framebuffer dimensions, locale asset checks, foreground
+receipts, preference restoration and unchanged save hashes. It does not load a save.
+Retain other scenes only with an explicit unchanged dependency closure and original
+capture identities. Review every replacement original and every retained slot.
+Regression: appearance captions must clear both selector arrows and the gender row;
+long form captions must also clear input borders and the portrait's wooden ornaments.
+
+For multiple affected surfaces use `--bridge --repair-scenes 02-character-creation
+04-item-description`. It captures only those original slots in canonical order and
+records the selected scope. Selecting only slot 04 still uses guarded normal/QuickSave
+loads. It excludes dialogue and journal; those need their retained dependency receipts.
+Date regression: the final year digit and shadow must clear the inventory frame.
 Regression: the owner's pointer moves while an inventory/journal capture runs;
 no pointer covers the axe description or quest progress, the tooltip remains open,
 and all five macOS foreground checks remain false. This changes only the QA mod.

@@ -41,6 +41,7 @@ public sealed class ModEntry : Mod
     private static bool LoggedSpriteFontRtlRenderer;
     private static bool LoggedCharacterLabelLayout;
     private static bool LoggedLtrCharacterLabelLayout;
+    private static bool LoggedInventoryDateLayout;
     private sealed record CharacterLabelState(ClickableComponent Label, string Text, Rectangle Bounds);
     private static readonly FieldInfo[] CharacterFormLabels = new[] { "nameLabel", "farmLabel", "favoriteLabel" }
         .Select(name => AccessTools.Field(typeof(CharacterCustomization), name)
@@ -227,25 +228,7 @@ public sealed class ModEntry : Mod
                 ? LocalizedContentManager.CurrentModLanguage?.LanguageCode : null;
             if (code is null || !TitleOverlayFiles.ContainsKey(code)) return;
             Dictionary<char, SpriteFont.Glyph> formGlyphs = CharacterFontGlyphs.GetValue(font, value => value.GetGlyphs());
-            (float Left, float Right)? InkBounds(string text)
-            {
-                float advance = 0, first = float.MaxValue, last = float.MinValue;
-                bool lineStart = true;
-                foreach (char character in text)
-                {
-                    if (character == '\n') { advance = 0; lineStart = true; continue; }
-                    if (!formGlyphs.TryGetValue(character, out SpriteFont.Glyph glyph)) return null;
-                    advance += lineStart ? Math.Max(glyph.LeftSideBearing, 0) : font.Spacing + glyph.LeftSideBearing;
-                    lineStart = false;
-                    if (!char.IsWhiteSpace(character))
-                    {
-                        first = Math.Min(first, advance + glyph.Cropping.X);
-                        last = Math.Max(last, advance + glyph.Cropping.X + glyph.BoundsInTexture.Width);
-                    }
-                    advance += glyph.Width + glyph.RightSideBearing;
-                }
-                return first == float.MaxValue ? null : (first, last);
-            }
+            (float Left, float Right)? InkBounds(string text) => SpriteFontInkBounds(font, text);
             ClickableComponent[] formFields = { __instance.nameBoxCC, __instance.farmnameBoxCC, __instance.favThingBoxCC };
             for (int index = 0; index < formFields.Length; index += 1)
             {
@@ -295,6 +278,7 @@ public sealed class ModEntry : Mod
                     ModMonitor?.Log($"LTR character label kept clear of both frames: locale={code}, originalX={originalX}, x={label.bounds.X}, inkLeft={ink.Value.Left}, inkRight={ink.Value.Right}, fieldLeft={field.bounds.Left}, portraitRight={__instance.portraitBox.Right}.", LogLevel.Trace);
                 }
             }
+            PlaceCharacterSelectionLabels(__instance, __state, null);
             return;
         }
         Dictionary<char, SpriteFont.Glyph> glyphs = CharacterFontGlyphs.GetValue(font, value => value.GetGlyphs());
@@ -360,28 +344,7 @@ public sealed class ModEntry : Mod
             Place(__instance.labels.FirstOrDefault(label => label.bounds.Y == pet.Top + 8),
                 __instance.portraitBox.Right + 20, pet.Left - 64 - 20, pet.Center.Y, pet.Height);
 
-        foreach (var selection in CharacterSelectionLabels)
-        {
-            ClickableComponent? label = selection.Label.GetValue(__instance) as ClickableComponent;
-            ClickableComponent? left = __instance.leftSelectionButtons.FirstOrDefault(button => button.name == selection.Button);
-            ClickableComponent? right = __instance.rightSelectionButtons.FirstOrDefault(button => button.name == selection.Button);
-            if (label is null || !label.visible || left is null || right is null
-                || !adapter.ContainsRightToLeftText(label.name)) continue;
-            // The game draws both the caption and its value around bounds.X + 21.
-            // Use the real arrow gap instead of the original fixed caption anchor.
-            saved.Add(new CharacterLabelState(label, label.name, label.bounds));
-            // Native centering must measure the same contextual glyphs it draws.
-            // Measuring logical Arabic letters gives different widths; don't rely
-            // on a MeasureString interception at the game's centering call site.
-            string visual = adapter.Transform(label.name);
-            // PUA shaping is idempotent. Hebrew remains Unicode RTL and must
-            // reach the normal bidi renderer in logical order, exactly once.
-            if (!adapter.ContainsRightToLeftText(visual)) label.name = visual;
-            label.bounds.X = (left.bounds.Right + right.bounds.Left) / 2 - 21;
-            // Keep the caption above the arrows and the value between them.
-            // Long captions (notably Hebrew pants) exceed the native arrow gap.
-            label.bounds.Y -= 28;
-        }
+        PlaceCharacterSelectionLabels(__instance, saved, adapter);
 
         foreach (ColorPicker? picker in new[] { __instance.eyeColorPicker, __instance.hairColorPicker, __instance.pantsColorPicker })
         {
@@ -397,6 +360,84 @@ public sealed class ModEntry : Mod
         {
             LoggedCharacterLabelLayout = true;
             ModMonitor?.Log($"RTL character-creation labels reflowed against native control bounds: {saved.Count} labels.", LogLevel.Trace);
+        }
+    }
+
+    private static void PlaceCharacterSelectionLabels(CharacterCustomization menu,
+        List<CharacterLabelState> saved, ArabicScriptTextAdapter? adapter)
+    {
+        foreach (var selection in CharacterSelectionLabels)
+        {
+            ClickableComponent? label = selection.Label.GetValue(menu) as ClickableComponent;
+            ClickableComponent? left = menu.leftSelectionButtons.FirstOrDefault(button => button.name == selection.Button);
+            ClickableComponent? right = menu.rightSelectionButtons.FirstOrDefault(button => button.name == selection.Button);
+            if (label is null || !label.visible || left is null || right is null
+                || (adapter is not null && !adapter.ContainsRightToLeftText(label.name))) continue;
+            // The game draws both the caption and its value around bounds.X + 21.
+            // Use the real arrow gap instead of the original fixed caption anchor.
+            saved.Add(new CharacterLabelState(label, label.name, label.bounds));
+            // Native centering must measure the same contextual glyphs it draws.
+            // Measuring logical Arabic letters gives different widths; don't rely
+            // on a MeasureString interception at the game's centering call site.
+            string visual = adapter?.Transform(label.name) ?? label.name;
+            // PUA shaping is idempotent. Hebrew remains Unicode RTL and must
+            // reach the normal bidi renderer in logical order, exactly once.
+            if (adapter is not null && !adapter.ContainsRightToLeftText(visual)) label.name = visual;
+            label.bounds.X = (left.bounds.Right + right.bounds.Left) / 2 - 21;
+            // Keep the caption above the arrows and the value between them.
+            // Long captions (notably Hebrew pants) exceed the native arrow gap.
+            label.bounds.Y -= 28;
+        }
+    }
+
+    private static (float Left, float Right)? SpriteFontInkBounds(SpriteFont font, string text)
+    {
+        Dictionary<char, SpriteFont.Glyph> glyphs = CharacterFontGlyphs.GetValue(font, value => value.GetGlyphs());
+        float advance = 0, first = float.MaxValue, last = float.MinValue;
+        bool lineStart = true;
+        foreach (char character in text)
+        {
+            if (character == '\n') { advance = 0; lineStart = true; continue; }
+            if (!glyphs.TryGetValue(character, out SpriteFont.Glyph glyph)) return null;
+            advance += lineStart ? Math.Max(glyph.LeftSideBearing, 0) : font.Spacing + glyph.LeftSideBearing;
+            lineStart = false;
+            if (!char.IsWhiteSpace(character))
+            {
+                first = Math.Min(first, advance + glyph.Cropping.X);
+                last = Math.Max(last, advance + glyph.Cropping.X + glyph.BoundsInTexture.Width);
+            }
+            advance += glyph.Width + glyph.RightSideBearing;
+        }
+        return first == float.MaxValue ? null : (first, last);
+    }
+
+    private static void KeepInventoryDateInsidePanel(object[] arguments, string text, SpriteFont font, Vector2 position)
+    {
+        if (CurrentRtlAdapter() is not null
+            || LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod
+            || LocalizedContentManager.CurrentModLanguage?.LanguageCode is not string code
+            || !TitleOverlayFiles.ContainsKey(code) || !ReferenceEquals(font, Game1.dialogueFont)
+            || Game1.activeClickableMenu is not GameMenu menu || menu.currentTab != GameMenu.inventoryTab
+            || menu.pages[menu.currentTab] is not InventoryPage page
+            || position.Y != page.yPositionOnScreen + IClickableMenu.borderWidth + IClickableMenu.spaceToClearTopBorder + 448
+            || !string.Equals(text, Utility.getDateString(), StringComparison.Ordinal)) return;
+        var ink = SpriteFontInkBounds(font, text);
+        if (ink is null) return;
+        // The native summary anchor is biased toward the right frame. Translate
+        // overflowing dates into the free row beside the portrait, preserving
+        // the original font, wording, baseline and shadow implementation.
+        float left = page.portrait.bounds.Right + 24;
+        float right = page.xPositionOnScreen + page.width - IClickableMenu.borderWidth - 12;
+        if (ink.Value.Right - ink.Value.Left > right - left) return;
+        float x = Math.Clamp(position.X, left - ink.Value.Left, right - ink.Value.Right);
+        if (x != position.X)
+        {
+            arguments[3] = new Vector2(x, position.Y);
+            if (!LoggedInventoryDateLayout)
+            {
+                LoggedInventoryDateLayout = true;
+                ModMonitor?.Log($"Inventory date kept inside panel: locale={code}, originalX={position.X}, x={x}, inkLeft={ink.Value.Left}, inkRight={ink.Value.Right}, safeLeft={left}, safeRight={right}.", LogLevel.Trace);
+            }
         }
     }
 
@@ -431,8 +472,9 @@ public sealed class ModEntry : Mod
     {
         __state = false;
         if (TextRenderingDepth > 0 || __args[1] is not string text
-            || __args[2] is not SpriteFont font || __args[3] is not Vector2 position
-            || !ParsedTextLayouts.TryGetValue(text, out ParsedTextLayout? layout)
+            || __args[2] is not SpriteFont font || __args[3] is not Vector2 position) return true;
+        KeepInventoryDateInsidePanel(__args, text, font, position);
+        if (!ParsedTextLayouts.TryGetValue(text, out ParsedTextLayout? layout)
             || !ReferenceEquals(font, layout.Font) || !ReferenceEquals(CurrentRtlAdapter(), layout.Adapter))
             return true;
 

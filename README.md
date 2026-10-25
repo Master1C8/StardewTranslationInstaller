@@ -65,4 +65,9 @@ service is required. `Scripts/csc-dotnet.sh` uses the installed .NET SDK compile
 `CSC_BIN` explicitly selects it without a NuGet dependency restore. Exact older
 archives retain their original provenance status.
 
+Source JSON audits share `Scripts/lib/source-json-files.mjs` to exclude `dist/`
+and build/environment caches. A malformed saved CLI log must not block a release;
+malformed source JSON must still fail. The release audit runs the matching positive
+and negative fixture before the locale checks and preserves existing output logs.
+
 The universal audit checks arm64 and x86_64 in separate `lipo -verify_arch` calls: current CLT rejects the legacy combined invocation. Regression: the universal binary passes both checks, while the single-arm64 build fails the x86_64 check.

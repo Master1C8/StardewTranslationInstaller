@@ -106,8 +106,10 @@ last line; it must fail review despite clean capture/renderer logs.
 Character-creation regression: Persian farm-name, favorite-thing and pet labels
 must use the available space beside their controls rather than retain forced
 two-line breaks. Form and color captions share a right edge within each column;
-appearance captions and their numbers are centered between the corresponding
-arrows. Check Persian, Arabic and Hebrew after changing this shared layout.
+appearance captions sit above their arrow rows, with the numbers centered between
+the arrows. Check Persian, Arabic and Hebrew after changing this shared layout.
+The long Hebrew pants caption must clear both arrows without font shrinking;
+the first caption must also clear the gender controls above it.
 Pass contextual glyphs to native appearance-caption centering as well as drawing:
 Persian `پیراهن` measures 88 pixels as logical letters but 56 pixels as contextual
 glyphs in the shipped SmallFont. Measuring one and drawing the other shifts the

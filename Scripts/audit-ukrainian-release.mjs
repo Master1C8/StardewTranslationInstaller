@@ -4,6 +4,7 @@ import crypto from "node:crypto";
 import childProcess from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { sourceJSONFiles } from "./lib/source-json-files.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const payload = path.join(root, "Sources/StardewTranslationInstaller/Resources/ModPayload");
@@ -29,7 +30,7 @@ function readJSON(file) {
   }
 }
 
-for (const file of files(root).filter(file => file.endsWith(".json"))) readJSON(file);
+for (const file of sourceJSONFiles(root)) readJSON(file);
 
 const glossary = readJSON(path.join(root, "Documentation/glossary/glossary.uk.json"))?.uk ?? {};
 const glossaryAudit = readJSON(path.join(root, "Documentation/uk/glossary-audit-history.json"));

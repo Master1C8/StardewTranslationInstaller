@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { sourceJSONFiles } from "./lib/source-json-files.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const resources = path.join(root, "Sources/StardewTranslationInstaller/Resources");
@@ -16,7 +17,7 @@ function files(directory) {
   });
 }
 
-for (const file of files(root).filter(file => file.endsWith(".json"))) {
+for (const file of sourceJSONFiles(root)) {
   JSON.parse(fs.readFileSync(file, "utf8"));
 }
 

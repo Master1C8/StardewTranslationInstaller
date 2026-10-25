@@ -13,6 +13,7 @@ if [[ -n "${STARDEW_GAME_PATH:-}" ]]; then
   export STARDEW_SMALL_FONT="${STARDEW_SMALL_FONT:-$STARDEW_GAME_PATH/../Resources/Content/Fonts/SmallFont.xnb}"
 fi
 
+node --test Scripts/lib/source-json-files.test.mjs
 PYTHON_BIN="$python_bin" ./Scripts/audit-locale-data.sh
 ./Scripts/build-title-buttons.sh --check
 ./Scripts/compress-xnb-fonts.swift --verify

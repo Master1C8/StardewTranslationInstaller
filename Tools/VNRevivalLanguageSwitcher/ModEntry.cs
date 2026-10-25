@@ -51,6 +51,7 @@ public sealed class ModEntry : Mod
             ?? throw new MissingFieldException(typeof(CharacterCustomization).FullName, item.Item2))).ToArray();
     private static readonly FieldInfo ColorPickerBounds = AccessTools.Field(typeof(ColorPicker), "bounds")
         ?? throw new MissingFieldException(typeof(ColorPicker).FullName, "bounds");
+    private static readonly ConditionalWeakTable<SpriteFont, Dictionary<char, SpriteFont.Glyph>> CharacterFontGlyphs = new();
     private sealed record ParsedTextLayout(SpriteFont Font, int Width, ArabicScriptTextAdapter Adapter);
     private static readonly ConditionalWeakTable<string, ParsedTextLayout> ParsedTextLayouts = new();
     [ThreadStatic]
@@ -219,6 +220,7 @@ public sealed class ModEntry : Mod
             || __instance.source is not (CharacterCustomization.Source.NewGame
                 or CharacterCustomization.Source.HostNewFarm or CharacterCustomization.Source.NewFarmhand)) return;
         SpriteFont font = Game1.smallFont;
+        Dictionary<char, SpriteFont.Glyph> glyphs = CharacterFontGlyphs.GetValue(font, value => value.GetGlyphs());
         Vector2 Measure(string text)
         {
             // Measure visual glyphs once, without recursively applying bidi.
@@ -244,11 +246,23 @@ public sealed class ModEntry : Mod
             if (line.Length > 0) lines.Add(line);
             string display = string.Join("\n", lines);
             Vector2 size = Measure(display);
-            if (lines.Count == 0 || size.Y > height) return;
+            // Measure visible vertical bounds, rather than the font's padded
+            // line box. Two Hebrew lines can fit a row even when MeasureString.Y
+            // exceeds it. Keep the shared glyph baseline and native line spacing.
+            int lineY = 0, top = int.MaxValue, bottom = int.MinValue;
+            foreach (char character in adapter.Transform(display))
+            {
+                if (character == '\n') { lineY += font.LineSpacing; continue; }
+                if (char.IsWhiteSpace(character)) continue;
+                if (!glyphs.TryGetValue(character, out SpriteFont.Glyph glyph)) return;
+                top = Math.Min(top, lineY + glyph.Cropping.Y);
+                bottom = Math.Max(bottom, lineY + glyph.Cropping.Y + glyph.BoundsInTexture.Height);
+            }
+            if (lines.Count == 0 || top == int.MaxValue || bottom - top > height) return;
             saved.Add(new CharacterLabelState(label, label.name, label.bounds));
             label.name = display;
             label.bounds = new Rectangle(right - (int)Math.Ceiling(size.X),
-                centerY - (int)Math.Ceiling(size.Y / 2f), label.bounds.Width, label.bounds.Height);
+                centerY - (int)Math.Ceiling((top + bottom) / 2f), label.bounds.Width, label.bounds.Height);
         }
 
         ClickableComponent[] fields = { __instance.nameBoxCC, __instance.farmnameBoxCC, __instance.favThingBoxCC };
@@ -256,9 +270,14 @@ public sealed class ModEntry : Mod
         {
             ClickableComponent field = fields[index];
             if (field is not null && field.visible)
+            {
+                int rowHeight = fields.Where(other => other is not null && other.visible && other != field)
+                    .Select(other => Math.Abs(other.bounds.Center.Y - field.bounds.Center.Y))
+                    .Where(distance => distance > 0).DefaultIfEmpty(field.bounds.Height + 8).Min() - 8;
                 Place(CharacterFormLabels[index].GetValue(__instance) as ClickableComponent,
                     __instance.portraitBox.Right + 20, field.bounds.Left - 20,
-                    field.bounds.Center.Y, field.bounds.Height);
+                    field.bounds.Center.Y, rowHeight);
+            }
         }
         if (__instance.petPortraitBox is Rectangle pet)
             Place(__instance.labels.FirstOrDefault(label => label.bounds.Y == pet.Top + 8),
@@ -282,6 +301,9 @@ public sealed class ModEntry : Mod
             // reach the normal bidi renderer in logical order, exactly once.
             if (!adapter.ContainsRightToLeftText(visual)) label.name = visual;
             label.bounds.X = (left.bounds.Right + right.bounds.Left) / 2 - 21;
+            // Keep the caption above the arrows and the value between them.
+            // Long captions (notably Hebrew pants) exceed the native arrow gap.
+            label.bounds.Y -= 28;
         }
 
         foreach (ColorPicker? picker in new[] { __instance.eyeColorPicker, __instance.hairColorPicker, __instance.pantsColorPicker })

@@ -103,6 +103,21 @@ standalone label anchors; do not mirror the frame or move text to the viewport
 edge. Regression: Hebrew journal 1.17.26 had correct bidi and a left-aligned short
 last line; it must fail review despite clean capture/renderer logs.
 
+Character-creation regression: Persian farm-name, favorite-thing and pet labels
+must use the available space beside their controls rather than retain forced
+two-line breaks. Form and color captions share a right edge within each column;
+appearance captions and their numbers are centered between the corresponding
+arrows. Check Persian, Arabic and Hebrew after changing this shared layout.
+Pass contextual glyphs to native appearance-caption centering as well as drawing:
+Persian `پیراهن` measures 88 pixels as logical letters but 56 pixels as contextual
+glyphs in the shipped SmallFont. Measuring one and drawing the other shifts the
+visible caption 16 pixels left. A generic MeasureString hook alone did not protect
+this native centering call site in the observed game runtime.
+The switcher measures shaped glyphs, derives space from native control bounds,
+and restores caption text and bounds after every draw, including exceptions.
+Verify the packaged and installed DLL hashes before capturing; an older installed
+DLL can reproduce the original defect even when the source has been corrected.
+
 The full run refuses to start while another Stardew Valley process is active
 and refuses to overwrite an existing visual-QA directory. Use `--replace` only
 after reviewing the existing evidence. In `--all` mode, only locales with an

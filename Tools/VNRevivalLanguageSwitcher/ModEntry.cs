@@ -39,6 +39,18 @@ public sealed class ModEntry : Mod
     private static bool LoggedDeveloperOverlay;
     private static bool LoggedPlainRtlRenderer;
     private static bool LoggedSpriteFontRtlRenderer;
+    private static bool LoggedCharacterLabelLayout;
+    private sealed record CharacterLabelState(ClickableComponent Label, string Text, Rectangle Bounds);
+    private static readonly FieldInfo[] CharacterFormLabels = new[] { "nameLabel", "farmLabel", "favoriteLabel" }
+        .Select(name => AccessTools.Field(typeof(CharacterCustomization), name)
+            ?? throw new MissingFieldException(typeof(CharacterCustomization).FullName, name)).ToArray();
+    private static readonly (string Button, FieldInfo Label)[] CharacterSelectionLabels = new[]
+        { ("Skin", "skinLabel"), ("Hair", "hairLabel"), ("Shirt", "shirtLabel"),
+          ("Pants Style", "pantsStyleLabel"), ("Acc", "accLabel") }
+        .Select(item => (item.Item1, AccessTools.Field(typeof(CharacterCustomization), item.Item2)
+            ?? throw new MissingFieldException(typeof(CharacterCustomization).FullName, item.Item2))).ToArray();
+    private static readonly FieldInfo ColorPickerBounds = AccessTools.Field(typeof(ColorPicker), "bounds")
+        ?? throw new MissingFieldException(typeof(ColorPicker).FullName, "bounds");
     private sealed record ParsedTextLayout(SpriteFont Font, int Width, ArabicScriptTextAdapter Adapter);
     private static readonly ConditionalWeakTable<string, ParsedTextLayout> ParsedTextLayouts = new();
     [ThreadStatic]
@@ -171,6 +183,11 @@ public sealed class ModEntry : Mod
         }
         Monitor.Log($"Persian, Arabic, and Hebrew shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
 
+        harmony.Patch(AccessTools.Method(typeof(CharacterCustomization), nameof(CharacterCustomization.draw),
+                new[] { typeof(SpriteBatch) }),
+            prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeCharacterCreationDraw)),
+            finalizer: new HarmonyMethod(typeof(ModEntry), nameof(FinishCharacterCreationDraw)));
+
         // SpriteFont paragraphs (journal descriptions/objectives, among others)
         // are wrapped by parseText and drawn separately through Utility. Their
         // DrawString call has no width, so preserve the actual wrapping region
@@ -192,6 +209,104 @@ public sealed class ModEntry : Mod
                 prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeBoundedSpriteFontText)),
                 finalizer: textHarmonyFinalizer);
         }
+    }
+
+    private static void BeforeCharacterCreationDraw(CharacterCustomization __instance, out List<CharacterLabelState> __state)
+    {
+        __state = new();
+        ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
+        if (adapter is null || __instance.showingCoopHelp
+            || __instance.source is not (CharacterCustomization.Source.NewGame
+                or CharacterCustomization.Source.HostNewFarm or CharacterCustomization.Source.NewFarmhand)) return;
+        SpriteFont font = Game1.smallFont;
+        Vector2 Measure(string text)
+        {
+            // Measure visual glyphs once, without recursively applying bidi.
+            TextRenderingDepth += 1;
+            try { return font.MeasureString(adapter.Transform(text)); }
+            finally { TextRenderingDepth -= 1; }
+        }
+        var saved = __state;
+        void Place(ClickableComponent? label, int left, int right, int centerY, int height)
+        {
+            if (label is null || !label.visible || right <= left || !adapter.ContainsRightToLeftText(label.name)) return;
+            string[] words = label.name.Replace('\n', ' ').Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            List<string> lines = new();
+            string line = "";
+            foreach (string word in words)
+            {
+                if (Measure(word).X > right - left) return;
+                string candidate = line.Length == 0 ? word : line + " " + word;
+                if (line.Length > 0 && Measure(candidate).X > right - left)
+                { lines.Add(line); line = word; }
+                else line = candidate;
+            }
+            if (line.Length > 0) lines.Add(line);
+            string display = string.Join("\n", lines);
+            Vector2 size = Measure(display);
+            if (lines.Count == 0 || size.Y > height) return;
+            saved.Add(new CharacterLabelState(label, label.name, label.bounds));
+            label.name = display;
+            label.bounds = new Rectangle(right - (int)Math.Ceiling(size.X),
+                centerY - (int)Math.Ceiling(size.Y / 2f), label.bounds.Width, label.bounds.Height);
+        }
+
+        ClickableComponent[] fields = { __instance.nameBoxCC, __instance.farmnameBoxCC, __instance.favThingBoxCC };
+        for (int index = 0; index < fields.Length; index += 1)
+        {
+            ClickableComponent field = fields[index];
+            if (field is not null && field.visible)
+                Place(CharacterFormLabels[index].GetValue(__instance) as ClickableComponent,
+                    __instance.portraitBox.Right + 20, field.bounds.Left - 20,
+                    field.bounds.Center.Y, field.bounds.Height);
+        }
+        if (__instance.petPortraitBox is Rectangle pet)
+            Place(__instance.labels.FirstOrDefault(label => label.bounds.Y == pet.Top + 8),
+                __instance.portraitBox.Right + 20, pet.Left - 64 - 20, pet.Center.Y, pet.Height);
+
+        foreach (var selection in CharacterSelectionLabels)
+        {
+            ClickableComponent? label = selection.Label.GetValue(__instance) as ClickableComponent;
+            ClickableComponent? left = __instance.leftSelectionButtons.FirstOrDefault(button => button.name == selection.Button);
+            ClickableComponent? right = __instance.rightSelectionButtons.FirstOrDefault(button => button.name == selection.Button);
+            if (label is null || !label.visible || left is null || right is null
+                || !adapter.ContainsRightToLeftText(label.name)) continue;
+            // The game draws both the caption and its value around bounds.X + 21.
+            // Use the real arrow gap instead of the original fixed caption anchor.
+            saved.Add(new CharacterLabelState(label, label.name, label.bounds));
+            // Native centering must measure the same contextual glyphs it draws.
+            // Measuring logical Arabic letters gives different widths; don't rely
+            // on a MeasureString interception at the game's centering call site.
+            string visual = adapter.Transform(label.name);
+            // PUA shaping is idempotent. Hebrew remains Unicode RTL and must
+            // reach the normal bidi renderer in logical order, exactly once.
+            if (!adapter.ContainsRightToLeftText(visual)) label.name = visual;
+            label.bounds.X = (left.bounds.Right + right.bounds.Left) / 2 - 21;
+        }
+
+        foreach (ColorPicker? picker in new[] { __instance.eyeColorPicker, __instance.hairColorPicker, __instance.pantsColorPicker })
+        {
+            if (picker is null) continue;
+            Rectangle bounds = (Rectangle)ColorPickerBounds.GetValue(picker)!;
+            ClickableComponent? label = __instance.labels.FirstOrDefault(item => item.bounds.Y == bounds.Y + 16
+                && item.bounds.X > __instance.portraitBox.Right && item.bounds.X < bounds.Left);
+            int left = __instance.rightSelectionButtons.Where(button => Math.Abs(button.bounds.Center.Y - bounds.Center.Y) <= 8)
+                .Select(button => button.bounds.Right + 12).DefaultIfEmpty(__instance.portraitBox.Right + 20).Max();
+            Place(label, left, bounds.Left - 20, bounds.Center.Y, bounds.Height);
+        }
+        if (saved.Count > 0 && !LoggedCharacterLabelLayout)
+        {
+            LoggedCharacterLabelLayout = true;
+            ModMonitor?.Log($"RTL character-creation labels reflowed against native control bounds: {saved.Count} labels.", LogLevel.Trace);
+        }
+    }
+
+    private static Exception? FinishCharacterCreationDraw(Exception? __exception, List<CharacterLabelState>? __state)
+    {
+        if (__state is not null)
+            foreach (CharacterLabelState state in __state)
+            { state.Label.name = state.Text; state.Label.bounds = state.Bounds; }
+        return __exception;
     }
 
     private static ArabicScriptTextAdapter? CurrentRtlAdapter() =>

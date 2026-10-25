@@ -1,4 +1,50 @@
-# Stardew Valley production gallery review — 25 October 2026
+# Stardew Valley 1.17.27 hosted gallery review — 25 October 2026
+
+The CLI exported 100/100 current original hosted images after the authorized
+fifteen-image replacement, with zero download failures. Each of the fifteen new
+Arabic, Persian and Hebrew WebP originals was opened individually at its actual
+1280×780 resolution. These all pass layout, glyph, visible-content, contamination
+and RTL checks. The journal bodies/objectives now share their intended right
+edge, including short final lines; the Arabic/Persian tooltip descriptions do too.
+Hebrew letter order, Arabic/Persian joining and mixed zc, 500g, 0g, date/time digits
+and 3/28 retain their intended internal order after encoding. Native close-button
+occlusion is documented per frame; hidden weekday glyphs are not credited.
+
+The remaining 85 LTR gallery slots have identical full identity, URL, SHA-256 and
+dimensions to the prior reviewed export. Their existing per-image observations,
+review timestamps and failures are retained, with the prior ledger's hash and
+explicit applicability recorded in each row. The new renderer paths activate
+only for ar/fa/he, so these unchanged legacy receipts remain applicable. They
+were not newly viewed in this cycle. All retain their added-locale-badge finding;
+nine have the additional layout/content findings documented below. No unrelated
+recapture, translation change or screenshot repair was performed.
+
+| Scope | Evidence-covered | Passed | Failed | Pending |
+| --- | ---: | ---: | ---: | ---: |
+| ar | 5 | 5 | 0 | 0 |
+| fa | 5 | 5 | 0 | 0 |
+| he | 5 | 5 | 0 | 0 |
+| Unchanged legacy LTR slots | 85 | 0 | 85 | 0 |
+| Total | 100 | 15 | 85 | 0 |
+
+The ledger checker confirms full current coverage; its nonzero acceptance result
+is expected because the 85 preserved historical failures remain open. Successful
+requested uploads and acceptance of the fifteen new RTL frames are distinct from
+the global gallery gate. No Windows gameplay, full-corpus audit or exhaustive game
+coverage is asserted by this screenshot inspection.
+
+Private evidence is under `Documentation/rtl-alignment-20261025/`. Every newly
+reviewed row has its own observations, image hash, original URL and timestamp;
+reviewer gpt-6.1-sol (Codex). Earlier rejected native cycles and the withdrawn
+1.17.26 acceptance remain preserved.
+
+| Receipt | SHA-256 |
+| --- | --- |
+| production-final/inventory.json | a2c75ad671923dad5df5c7f8bb5bd7af40e57f2c06a8586cc63d19f57e9baa58 |
+| production-final/downloads.json | 11900c402e0d1c1a725643605ad4f00e68684d9c500b4c09899ffb6cc816708d |
+| production-final-review.json | 7e8a34a107f86650b7767621ad5afefd53b024af524295fc441089b86a32aefb |
+
+# Historical 1.17.26 gallery review — RTL alignment acceptance withdrawn
 
 Correction after the owner's Hebrew journal report: the prior `he #5` RTL pass
 was wrong. Its three body lines share a left edge, and its short last line is

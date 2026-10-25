@@ -9,9 +9,9 @@ The 1.17.26 acceptance statements below are historical and withdrawn for that
 criterion. Original images and rejected review cycles are preserved.
 
 The pack/application is now 1.17.27, switcher 1.9.22. Text translations, fonts,
-base-game Content and save contents are unchanged. Native verification, both release builds and replacement uploads are complete.
-Final production read-back, new hosted-image inspection and release registry
-registration are pending the unrelated SiteForMods writer described below.
+base-game Content and save contents are unchanged. Native verification, both release builds, replacement uploads, final production
+read-back, new hosted-image inspection and release registry registration are
+complete. The unrelated FTL files are preserved and do not block this workflow.
 Existing authorization covers both installers and the fifteen RTL screenshots,
 not application deployment or server lifecycle actions.
 
@@ -107,23 +107,62 @@ each of ar, fa and he (15 total, no additions), preserved other locale slots and
 invalidated the page cache. These are separate transaction boundaries. Successful
 apply logs are retained in `dist/rtl-alignment-20261025/`; do not resubmit them.
 
-The immediately following production release capture was refused locally before
-any capture because an unrelated FTL writer created uncommitted
-`data/games/ftl-faster-than-light/glossary-translation-reviews/` in canonical
-SiteForMods (last observed HEAD 5f0cf563). CLI requires clean committed source.
-No unrelated files/index were changed. The owner was asked to finish that work.
-The failed attempt's stderr is retained; it does not undo successful uploads.
+The first production release-capture attempt was refused locally by an overly
+broad whole-checkout guard when the unrelated FTL writer created
+`data/games/ftl-faster-than-light/glossary-translation-reviews/`. The owner instructed
+continuation without treating that folder as a blocker. SiteForMods commit
+`8fc4176478827199e67c4ea999312ed8b2076797` fixes the responsible audit wrapper:
+verify its command path and actual dependency closure, bundle every input from
+one pinned committed revision, and reject changed/staged-only/uncommitted imported
+inputs before SSH. Package manifests and TypeScript configuration are included,
+and the closure/HEAD are rechecked after bundling. Unrelated files are not sent.
+Thirty local tests pass, including real esbuild positive/negative controls; only
+source/bundle behavior is exercised by those fixtures. Actual production capture
+and export then succeeded with 76 verified inputs while the FTL folder remained
+untouched. The failed first receipt remains preserved; no uploads were repeated.
 
-Resume after a confirmed clean-checkout change: capture actual production release
-identities via the CLI, compare hashes/source commit, append exact registry rows,
-register guide hashes while retaining older ones, compare all 62 locale/platform
-guides and run the required SEO/release matrix before renewing its receipt.
-Then commit/push the bounded SiteForMods delta with [skip ci], download/verify both
-public archives, export all 100 hosted originals, and view every new RTL WebP
-individually. Retain unchanged legacy failure receipts only after full slot/hash
-comparison and applicability check; the shared repair activates only in ar/fa/he.
-Do not describe the new hosted images as reviewed until that inspection occurs.
-Registry/guide application deployment remains separately authorized and pending.
+Production capture at 2026-10-25T03:06:19.525Z read exact Windows ModFiles 67 and
+macOS ModFiles 68. Their sizes/hashes match the table above; both ZIP manifests
+record source commit c910e4a7a73a13e49c653196dc8817b32ca72a5d. SiteForMods canonical
+main commit `36cfe333347ad7951b1393df8885946e77d0ba4c` appends those exact identities,
+retains historical records, registers current guide hashes and retains older
+reviewed hashes. All 62 generated locale/platform guide objects remain identical
+to the reviewed baseline. Only the guide selector and registry changed among the
+ten search review inputs. The complete SEO matrix passed 418 checks, with its sole
+expected stale-fingerprint assertion passed separately after bounded delta review
+and receipt renewal (1/1, none skipped). Both commits are pushed with [skip ci].
+
+Final CLI read-back shows no metadata change, 15 screenshot SKIPs and an exact
+match for all four Model usage records. Both public archives were downloaded via
+the CLI into `dist/rtl-alignment-20261025/production-{windows,macos}-1.17.27.zip`;
+exact size and SHA-256 match the final builds again. This verifies delivery,
+not Windows gameplay. Final `content audit --game stardew-valley` passes with no
+missing content. Registry/guide application rendering awaits separately authorized
+deployment; none occurred.
+
+Fresh hosted export covers 100/100 original images without download failures.
+All fifteen new RTL WebPs were opened individually at original 1280×780 resolution
+and pass, including right-aligned short lines and mixed-script runs. The 85 legacy
+LTR slot identities, URLs, dimensions and hashes match the earlier export exactly;
+prior per-image failures are retained with their original review dates, ledger hash
+and explicit non-RTL renderer applicability. They were not reread this cycle.
+The ledger reports 100 total, 15 passed, 85 failed, zero pending; the global gate
+remains failed on their added badges and nine additional historical findings.
+Requested uploads and acceptance of the new RTL images are complete separately.
+See [the updated hosted-gallery report](production-gallery-review-20261025.md).
+
+Private `Documentation/rtl-alignment-20261025/production-final/` holds the new
+inventory, originals and download receipts; sibling `production-final-review.json`
+holds per-image results. Their SHA-256 values are respectively:
+
+- inventory: a2c75ad671923dad5df5c7f8bb5bd7af40e57f2c06a8586cc63d19f57e9baa58
+- downloads: 11900c402e0d1c1a725643605ad4f00e68684d9c500b4c09899ffb6cc816708d
+- review: 7e8a34a107f86650b7767621ad5afefd53b024af524295fc441089b86a32aefb
+
+CLI plans, apply/read-back receipts, capture, downloads and local test logs remain
+under `dist/rtl-alignment-20261025/`. The private publication-progress receipt
+separates successful delivery/new RTL review from the preserved global gallery
+failures. No further submission or repeated full build is required.
 
 ## Historical 1.17.26 checkpoint — alignment acceptance withdrawn
 

@@ -19,6 +19,7 @@ namespace VNRevival.VisualQADriver
         private string? capturePath;
         private bool titleReady;
         private bool startupObserved;
+        private bool bridgeMode;
         private Point? hoverPoint;
         private bool advancingDialogue;
         private static ModEntry? instance;
@@ -44,7 +45,8 @@ namespace VNRevival.VisualQADriver
                 throw new InvalidOperationException("VN_VISUAL_QA_TRIGGER is not set.");
             Monitor.Log("VN_QA_RUN " + triggerPath, LogLevel.Info);
             helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
-            if (Environment.GetEnvironmentVariable("VN_VISUAL_QA_BRIDGE") == "1")
+            bridgeMode = Environment.GetEnvironmentVariable("VN_VISUAL_QA_BRIDGE") == "1";
+            if (bridgeMode)
             {
                 // Bridge commands invoke game methods directly. Suppress physical
                 // input so a focus/desktop click cannot dismiss the capture state.
@@ -62,11 +64,17 @@ namespace VNRevival.VisualQADriver
                 AccessTools.Method(typeof(Game1), "renderScreenBuffer")
                     ?? throw new MissingMethodException("Game1.renderScreenBuffer"),
                 postfix: new HarmonyMethod(typeof(ModEntry), nameof(AfterScreenComposite)));
+            if (bridgeMode)
+                new Harmony(ModManifest.UniqueID).Patch(
+                    AccessTools.Method(typeof(IClickableMenu), "drawMouse")
+                        ?? throw new MissingMethodException("IClickableMenu.drawMouse"),
+                    prefix: new HarmonyMethod(typeof(ModEntry), nameof(DrawMousePrefix)));
             helper.Events.GameLoop.SaveLoaded += (_, _) => Monitor.Log("VN_QA_STATE world", LogLevel.Info);
             Monitor.Log("Waiting for the visual-QA QuickSave trigger.", LogLevel.Trace);
         }
 
         private static void AfterScreenComposite() => instance?.CaptureFrame();
+        private static bool DrawMousePrefix() => instance?.bridgeMode != true;
 
         private void CaptureFrame()
         {
@@ -210,7 +218,7 @@ namespace VNRevival.VisualQADriver
                         .Where(index => Game1.player.Items[index] is StardewValley.Tools.Axe).DefaultIfEmpty(-1).First();
                     if (slot < 0) throw new InvalidOperationException("Prepared save has no axe.");
                     hoverPoint = page.inventory.inventory[slot].bounds.Center;
-                    Game1.setMousePosition(hoverPoint.Value.X, hoverPoint.Value.Y);
+                    if (!bridgeMode) Game1.setMousePosition(hoverPoint.Value.X, hoverPoint.Value.Y);
                     menu.performHoverAction(hoverPoint.Value.X, hoverPoint.Value.Y);
                 }
                 Monitor.Log("VN_QA_STATE inventory", LogLevel.Info);

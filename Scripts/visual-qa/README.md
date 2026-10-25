@@ -171,3 +171,18 @@ locale assets are absent from the log or if Content Patcher logged an error. A s
 `capture-pass-review-pending` until a person reviews the five images; image
 recognition proves that the expected screens opened, not that every glyph and
 line break rendered correctly.
+
+Background capture also suppresses the temporary driver's native software cursor
+through `IClickableMenu.drawMouse`, while semantic hover and the previous input
+sample still determine the tooltip. The bridge must not warp the desktop pointer.
+Regression: the owner's pointer moves while an inventory/journal capture runs;
+no pointer covers the axe description or quest progress, the tooltip remains open,
+and all five macOS foreground checks remain false. This changes only the QA mod.
+
+For LTR form captions, test the Ukrainian two-line `Улюблена річ` against the
+actual favorite-thing input edge. A static 132-pixel label limit alone did not
+prevent its final glyph from touching that border at 1280×780. The switcher moves
+only a colliding caption into available space between portrait and field, retains
+the font/text and row height, and restores its native bounds after drawing.
+For a wide first word above the portrait’s lower ornament (Filipino `Paboritong\nBagay`), right-align the shorter second line with temporary leading spaces and preserve both words, two lines and font size. The first line uses the native input-border inset; the lower line still clears the ornament.
+Verify neighboring VN locales and built-in language isolation after this change.

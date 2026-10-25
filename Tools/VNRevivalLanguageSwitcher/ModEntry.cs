@@ -40,6 +40,7 @@ public sealed class ModEntry : Mod
     private static bool LoggedPlainRtlRenderer;
     private static bool LoggedSpriteFontRtlRenderer;
     private static bool LoggedCharacterLabelLayout;
+    private static bool LoggedLtrCharacterLabelLayout;
     private sealed record CharacterLabelState(ClickableComponent Label, string Text, Rectangle Bounds);
     private static readonly FieldInfo[] CharacterFormLabels = new[] { "nameLabel", "farmLabel", "favoriteLabel" }
         .Select(name => AccessTools.Field(typeof(CharacterCustomization), name)
@@ -216,10 +217,86 @@ public sealed class ModEntry : Mod
     {
         __state = new();
         ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
-        if (adapter is null || __instance.showingCoopHelp
+        if (__instance.showingCoopHelp
             || __instance.source is not (CharacterCustomization.Source.NewGame
                 or CharacterCustomization.Source.HostNewFarm or CharacterCustomization.Source.NewFarmhand)) return;
         SpriteFont font = Game1.smallFont;
+        if (adapter is null)
+        {
+            string? code = LocalizedContentManager.CurrentLanguageCode == LocalizedContentManager.LanguageCode.mod
+                ? LocalizedContentManager.CurrentModLanguage?.LanguageCode : null;
+            if (code is null || !TitleOverlayFiles.ContainsKey(code)) return;
+            Dictionary<char, SpriteFont.Glyph> formGlyphs = CharacterFontGlyphs.GetValue(font, value => value.GetGlyphs());
+            (float Left, float Right)? InkBounds(string text)
+            {
+                float advance = 0, first = float.MaxValue, last = float.MinValue;
+                bool lineStart = true;
+                foreach (char character in text)
+                {
+                    if (character == '\n') { advance = 0; lineStart = true; continue; }
+                    if (!formGlyphs.TryGetValue(character, out SpriteFont.Glyph glyph)) return null;
+                    advance += lineStart ? Math.Max(glyph.LeftSideBearing, 0) : font.Spacing + glyph.LeftSideBearing;
+                    lineStart = false;
+                    if (!char.IsWhiteSpace(character))
+                    {
+                        first = Math.Min(first, advance + glyph.Cropping.X);
+                        last = Math.Max(last, advance + glyph.Cropping.X + glyph.BoundsInTexture.Width);
+                    }
+                    advance += glyph.Width + glyph.RightSideBearing;
+                }
+                return first == float.MaxValue ? null : (first, last);
+            }
+            ClickableComponent[] formFields = { __instance.nameBoxCC, __instance.farmnameBoxCC, __instance.favThingBoxCC };
+            for (int index = 0; index < formFields.Length; index += 1)
+            {
+                ClickableComponent field = formFields[index];
+                ClickableComponent? label = CharacterFormLabels[index].GetValue(__instance) as ClickableComponent;
+                if (field is null || !field.visible || label is null || !label.visible) continue;
+                var ink = InkBounds(label.name);
+                if (ink is null) continue;
+                // The portrait's wooden frame protrudes 20 pixels past its
+                // content bounds. Keep four visible pixels clear on both sides.
+                int right = field.bounds.Left - 4;
+                int left = __instance.portraitBox.Right + 24;
+                int x = (int)Math.Floor(right - ink.Value.Right);
+                string display = label.name;
+                if (label.bounds.X + ink.Value.Right <= right && label.bounds.X + ink.Value.Left >= left) continue;
+                if (x + ink.Value.Left < left)
+                {
+                    // Only the lower favorite-caption line meets the portrait's
+                    // projecting bottom ornament. A wide first word can use the
+                    // native textbox's four-pixel inset; indent the shorter
+                    // second line so it still clears the ornament. Keep wording,
+                    // line count and font unchanged, and restore text after draw.
+                    string[] lines = label.name.Split('\n');
+                    if (index != 2 || lines.Length != 2 || !formGlyphs.TryGetValue(' ', out SpriteFont.Glyph space)) continue;
+                    var firstLine = InkBounds(lines[0]);
+                    var lastLine = InkBounds(lines[1]);
+                    float spaceAdvance = space.LeftSideBearing + space.Width + space.RightSideBearing + font.Spacing;
+                    if (firstLine is null || lastLine is null || spaceAdvance <= 0 || firstLine.Value.Right < lastLine.Value.Right) continue;
+                    int indent = Math.Max(0, (int)Math.Floor((firstLine.Value.Right - lastLine.Value.Right) / spaceAdvance));
+                    lines[1] = new string(' ', indent) + lines[1];
+                    display = string.Join("\n", lines);
+                    var lastIndented = InkBounds(lines[1]);
+                    ink = InkBounds(display);
+                    if (ink is null || lastIndented is null) continue;
+                    right = field.bounds.Left + 1; // Three visible pixels before the painted input border.
+                    x = (int)Math.Floor(right - ink.Value.Right);
+                    if (x + firstLine.Value.Left < __instance.portraitBox.Right + 20
+                        || x + lastIndented.Value.Left < left) continue;
+                }
+                __state.Add(new CharacterLabelState(label, label.name, label.bounds));
+                int originalX = label.bounds.X;
+                label.name = display;
+                label.bounds.X = x;
+                if (!LoggedLtrCharacterLabelLayout)
+                {
+                    LoggedLtrCharacterLabelLayout = true;
+                    ModMonitor?.Log($"LTR character label kept clear of both frames: locale={code}, originalX={originalX}, x={label.bounds.X}, inkLeft={ink.Value.Left}, inkRight={ink.Value.Right}, fieldLeft={field.bounds.Left}, portraitRight={__instance.portraitBox.Right}.", LogLevel.Trace);
+                }
+            }
+            return;
+        }
         Dictionary<char, SpriteFont.Glyph> glyphs = CharacterFontGlyphs.GetValue(font, value => value.GetGlyphs());
         Vector2 Measure(string text)
         {

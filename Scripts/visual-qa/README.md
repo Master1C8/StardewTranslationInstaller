@@ -73,6 +73,16 @@ without its dialogue or menus. Final-backbuffer rows already run top to bottom;
 flipping them produces upside-down frames. Do not repair captured PNGs afterward.
 Review each original frame before proceeding to another locale.
 
+Bridge launches stay in the background: `SDL_MAC_BACKGROUND_APP=1` prevents
+SDL from forcing the game into the foreground, and
+`SDL_WINDOW_NO_ACTIVATION_WHEN_SHOWN=1` requests non-activating window display on
+SDL versions that support it. No desktop focus or input is needed. Every capture
+queries macOS's actual foreground process through NSWorkspace and records the
+result; `Game1.IsActive` alone is not evidence of foreground ownership. Evidence
+marks background launch verified only when all five captures report that the
+game was not the foreground process. The Oculix route retains its interactive
+launch behavior. These settings apply only to the temporary QA process.
+
 Dialogue completion waits for the menu to disappear after its normal typing,
 safety timer and closing animation. A click receipt alone is insufficient.
 Item hover and the previous mouse sample used for tooltip placement must point

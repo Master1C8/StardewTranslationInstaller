@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -21,6 +22,21 @@ namespace VNRevival.VisualQADriver
         private Point? hoverPoint;
         private bool advancingDialogue;
         private static ModEntry? instance;
+        [DllImport("/usr/lib/libobjc.A.dylib")] private static extern IntPtr objc_getClass(string name);
+        [DllImport("/usr/lib/libobjc.A.dylib")] private static extern IntPtr sel_registerName(string name);
+        [DllImport("/usr/lib/libobjc.A.dylib", EntryPoint = "objc_msgSend")]
+        private static extern IntPtr ObjCObject(IntPtr receiver, IntPtr selector);
+        [DllImport("/usr/lib/libobjc.A.dylib", EntryPoint = "objc_msgSend")]
+        private static extern int ObjCInt(IntPtr receiver, IntPtr selector);
+
+        private static bool IsForegroundProcess()
+        {
+            var workspace = ObjCObject(objc_getClass("NSWorkspace"), sel_registerName("sharedWorkspace"));
+            var app = ObjCObject(workspace, sel_registerName("frontmostApplication"));
+            int pid = ObjCInt(app, sel_registerName("processIdentifier"));
+            if (pid <= 0) throw new InvalidOperationException("Cannot verify the foreground application.");
+            return pid == Environment.ProcessId;
+        }
         public override void Entry(IModHelper helper)
         {
             triggerPath = Environment.GetEnvironmentVariable("VN_VISUAL_QA_TRIGGER") ?? string.Empty;
@@ -80,7 +96,7 @@ namespace VNRevival.VisualQADriver
             texture.SetData(pixels);
             using var stream = File.Create(path);
             texture.SaveAsPng(stream, w, h);
-            Monitor.Log($"VN_QA_CAPTURE {path} {w}x{h}", LogLevel.Info);
+            Monitor.Log($"VN_QA_CAPTURE {path} {w}x{h} foreground={IsForegroundProcess()}", LogLevel.Info);
         }
 
         private void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)

@@ -209,6 +209,10 @@ def launch_game(game_dir: Path, log_path: Path, trigger_path: Path, bridge: bool
     environment = os.environ.copy()
     environment["VN_VISUAL_QA_TRIGGER"] = str(trigger_path)
     environment["VN_VISUAL_QA_BRIDGE"] = "1" if bridge else "0"
+    if bridge:
+        # The bridge captures the backbuffer and needs no desktop focus.
+        environment["SDL_MAC_BACKGROUND_APP"] = "1"
+        environment["SDL_WINDOW_NO_ACTIVATION_WHEN_SHOWN"] = "1"
     process = subprocess.Popen(
         [str(game_dir / "StardewValley"), "--use-current-shell"],
         cwd=game_dir,
@@ -525,7 +529,10 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
         evidence = write_evidence(review, locale, package, produced, captured_log, DEFAULT_PREFERENCES.read_bytes() == original)
         record = json.loads(evidence.read_text())
         width, height = map(int, size.split("x"))
+        focus_samples = re.findall(r"VN_QA_CAPTURE [^\r\n]+ foreground=(True|False)", captured_log)
         record.update({"resolution": {"width": width, "height": height},
+            "backgroundLaunch": {"requested": True, "captureForegroundSamples": focus_samples,
+                "verified": len(focus_samples) == len(CAPTURES) and all(value == "False" for value in focus_samples)},
             "method": "Project-owned SMAPI bridge: guarded title/setup, prepared normal save followed by QuickSave restoration, real Gus interaction, axe hover, expanded quest. Native framebuffer captured without annotation or resizing. Oculix could not initialize its macOS mouse device.",
             "saveHashesBefore": before, "saveHashesAfter": after,
             "switcherSha256": sha256(args.game_dir / "Mods/[SMAPI] VN Revival Language Switcher/VNRevival.LanguageSwitcher.dll")})

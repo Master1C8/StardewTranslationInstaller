@@ -31,8 +31,33 @@ Check("מרכז קהילתי\nאי ג'ינג'ר", "יתליהק זכרמ\nר'ג�
 Check("English 123", "English 123");
 Check(string.Empty, string.Empty);
 CheckNestedRenderingPatch();
+CheckAsianWrapping();
 
-Console.WriteLine("RTL probe passed 9 Hebrew exact cases, layout/typewriter checks, real Harmony argument/forwarding and bounded SpriteFont paragraph checks for Hebrew, Arabic, and Persian.");
+Console.WriteLine("RTL probe passed 9 Hebrew exact cases, layout/typewriter checks, real Harmony argument/forwarding and bounded SpriteFont paragraph checks for Hebrew, Arabic, and Persian; Asian SpriteFont wrapping preserves complete CJK/Thai and mixed text.");
+
+void CheckAsianWrapping()
+{
+    MethodInfo wrap = typeof(ModEntry).GetMethod("WrapAsianSpriteFontText", BindingFlags.Static | BindingFlags.NonPublic)!;
+    foreach (string text in new[] { "你好世界你好世界", "你好 zc 3/28 世界", "ยินดีต้อนรับ", "你好\r\n世界", "「你好，世界！」" })
+    {
+        var characters = text.Append('?').Append(' ').Where(c => c is not '\r' and not '\n').Distinct().OrderBy(c => c).ToList();
+        var font = new SpriteFont(null!, characters.Select(_ => new Rectangle(0,0,7,16)).ToList(),
+            characters.Select(_ => new Rectangle(0,0,7,16)).ToList(), characters, 20, 0f,
+            characters.Select(_ => new Vector3(0,7,1)).ToList(), '?');
+        string result = (string)wrap.Invoke(null, new object[] { text, font, 40 })!;
+        if (result.Replace("\r", "").Replace("\n", "") != text.Replace("\r", "").Replace("\n", "")
+            || result.Split('\n').Any(line => font.MeasureString(line.TrimEnd('\r')).X > 40)
+            || result.StartsWith(Environment.NewLine, StringComparison.Ordinal))
+            throw new InvalidDataException("Asian wrapping lost text or exceeded its region: " + text);
+        if (text.Contains("\r\n") && result.Contains(Environment.NewLine + Environment.NewLine))
+            throw new InvalidDataException("CRLF introduced an extra blank line.");
+        if (text == "你好世界你好世界" && result != "你好世界你" + Environment.NewLine + "好世界")
+            throw new InvalidDataException("Unexpected exact CJK line boundary: " + result);
+        string wide = (string)wrap.Invoke(null, new object[] { text, font, 1000 })!;
+        if (wide.Replace(Environment.NewLine, "\n") != text.Replace("\r\n", "\n"))
+            throw new InvalidDataException("Unwrapped positive control changed content.");
+    }
+}
 
 void Check(string logical, string expected)
 {

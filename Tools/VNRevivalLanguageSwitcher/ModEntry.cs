@@ -498,13 +498,44 @@ public sealed class ModEntry : Mod
             _ => null,
         };
 
-    private static void AfterParsedText(string __result, SpriteFont __1, int __2)
+    private static void AfterParsedText(string? __0, SpriteFont __1, int __2, ref string __result)
     {
+        if (TextRenderingDepth == 0 && __0 is not null && __2 > 0
+            && LocalizedContentManager.CurrentLanguageCode == LocalizedContentManager.LanguageCode.mod
+            && LocalizedContentManager.CurrentModLanguage?.LanguageCode is "zh-TW-vnrevival" or "th-vnrevival")
+        {
+            // Native parseText selects Asian spacing by built-in language enum.
+            // Custom languages otherwise take the Latin word/space branch and
+            // unbroken CJK text extends beyond the journal's scissor rectangle.
+            // Reuse the game's own punctuation-aware tokens and glyph metrics.
+            __result = WrapAsianSpriteFontText(Dialogue.applyGenderSwitchBlocks(Game1.player.Gender, __0), __1, __2);
+            return;
+        }
         ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
         if (TextRenderingDepth > 0 || __2 <= 0 || adapter is null
             || !adapter.ContainsRightToLeftText(__result)) return;
         ParsedTextLayouts.Remove(__result);
         ParsedTextLayouts.Add(__result, new ParsedTextLayout(__1, __2, adapter));
+    }
+
+    private static string WrapAsianSpriteFontText(string text, SpriteFont font, int width)
+    {
+        StringBuilder result = new(), line = new();
+        float lineWidth = 0;
+        foreach (Match token in Game1.asianSpacingRegex.Matches(text.Replace("\r\n", "\n").Replace('\r', '\n')))
+        {
+            string value = token.Value;
+            bool newline = value is "\r" or "\n" or "\r\n";
+            float tokenWidth = newline ? 0 : font.MeasureString(value).X + font.Spacing;
+            if (newline || (line.Length > 0 && lineWidth + tokenWidth > width))
+            {
+                result.Append(line).Append(Environment.NewLine);
+                line.Clear();
+                lineWidth = 0;
+            }
+            if (!newline) { line.Append(value); lineWidth += tokenWidth; }
+        }
+        return result.Append(line).ToString();
     }
 
     private static bool BeforeBoundedSpriteFontText(MethodBase __originalMethod, object[] __args, out bool __state)

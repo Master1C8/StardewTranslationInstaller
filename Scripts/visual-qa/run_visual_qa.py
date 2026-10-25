@@ -393,7 +393,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--replace", action="store_true", help="replace an existing locale visual-QA directory")
     parser.add_argument("--bridge", action="store_true", help="use the guarded SMAPI state bridge and native 1280x780 framebuffer capture")
     repair = parser.add_mutually_exclusive_group()
-    repair.add_argument("--repair-scenes", nargs="+", choices=["02-character-creation", "04-item-description"], help="with --bridge, capture only explicitly invalidated rendering surfaces")
+    repair.add_argument("--repair-scenes", nargs="+", choices=[stem for stem, _ in CAPTURES], help="with --bridge, capture only explicitly invalidated rendering surfaces")
     repair.add_argument("--character-only", action="store_true", help="with --bridge, capture only the character-creation repair surface")
     parser.add_argument("--keep-language", action="store_true", help="leave the selected locale in startup_preferences")
     parser.add_argument("--oculix-jar", type=Path, default=Path(os.environ.get("OCULIX_JAR", DEFAULT_OCULIX_JAR)))

@@ -1,6 +1,77 @@
-# RTL rendering repair — 1.17.26
+# RTL rendering repair — 1.17.27
 
-## Current checkpoint
+## Current correction — 25 October 2026
+
+The owner identified left-aligned Hebrew journal text in the published 1.17.26
+image and requested a repair. The previous blanket RTL acceptance was wrong:
+correct letter order and fitting inside a panel did not establish right alignment.
+The 1.17.26 acceptance statements below are historical and withdrawn for that
+criterion. Original images and rejected review cycles are preserved.
+
+The pack/application is now 1.17.27, switcher 1.9.22. Text translations, fonts,
+base-game Content and save contents are unchanged. Native verification is complete;
+release builds and replacement uploads are pending at this source checkpoint.
+Existing authorization covers both installers and the fifteen RTL screenshots,
+not application deployment or server lifecycle actions.
+
+### Responsible boundaries
+
+The existing central SpriteText fix handles dialogue. Journal descriptions and
+objectives take a separate path: Game1.parseText → Utility.drawTextWithShadow →
+SpriteBatch.DrawString. The latter receives no wrapping width. Preserve the exact
+parse-result object's width, font and active adapter in a weak-key table; align
+each transformed line against that actual region, removing only trailing parse
+separators. Require the same font and adapter at draw time. Preserve color,
+shadow, scale, layer and the depth finalizer so shaping/bidi runs once.
+
+Object tooltips can bypass Utility and draw multiline string/StringBuilder
+paragraphs directly through SpriteBatch. Keep their measured block origin/extent,
+right-align shorter lines within it, and retain native single-line anchors and
+centered headings. Rotated, offset-origin and flipped paragraphs retain the
+existing path. No viewport-wide or frame-mirroring heuristic is used.
+
+### Verification and rejected candidate
+
+All fifteen Swift installer tests pass. The RTL probe passes exact Hebrew cases,
+actual Harmony argument/forwarding checks and all three adapters. Added bounded
+paragraph tests cover real MonoGame metrics, four lines including blank/short
+lines, scale/color/Y preservation, and negative controls for a different string
+identity/font, zero width and Latin text. Real SpriteBatch string/StringBuilder
+methods are Harmony-patched and tested for common right edges and guard cleanup;
+only final GPU emission is replaced by an observer. These probes do not establish
+GPU appearance, which is verified by native captures below.
+
+The first candidate fixed all journals but native Arabic/Persian item tooltips
+still exposed left-aligned short lines. That cycle remains rejected under
+`Documentation/rtl-alignment-20261025/native-01/`. The final DLL adds the shared
+SpriteBatch paragraph repair. Its SHA-256 is:
+
+`54bc81c3adcc41fcd7325aaa3954b1ad0412731f98603959c40e11f343523d3b`
+
+All fifteen final native 1280×780 originals were opened individually: title,
+creation, real Gus dialogue, axe tooltip/inventory and expanded journal for ar,
+fa and he. Wrapped text, short last lines and journal objectives now share their
+intended right edge. Mixed zc, 500g, 0g, date digits and 3/28 retain LTR order.
+No screenshot has annotations or post-capture repairs. Native close-button HUD
+occlusion is identified in observations rather than treating hidden glyphs as
+reviewed. The Hebrew journal reproduces the owner's content and viewport.
+
+Each final run loads actual/source pack 1.17.27 and the exact final DLL above,
+loads both exact-locale fonts and TitleButtons, reports zero Content Patcher
+errors/warnings, advances from dialogue normally, preserves all protected save
+hashes, restores startup preferences and removes the temporary driver. Private
+per-image observations, hashes and SMAPI logs are under
+`Documentation/rtl-alignment-20261025/native-02/<locale>/visual-qa/`; the flat
+`native-02/visual-qa-upload/` set is the replacement input. Probe/build logs are
+under `dist/rtl-alignment-20261025/`. These runs are macOS only and do not claim
+Windows gameplay, exhaustive game coverage or language-picker navigation.
+
+The visual-QA recipe now explicitly separates SpriteText, bounded SpriteFont
+and direct multiline SpriteBatch paths. Regression: Hebrew journal 1.17.26 must
+fail alignment review even though bidi and capture logs pass.
+
+## Historical 1.17.26 checkpoint — alignment acceptance withdrawn
+
 
 The owner requested repair of reversed Hebrew/Arabic/Persian text and detached
 Arabic-script letters, followed by installer and screenshot updates. This is

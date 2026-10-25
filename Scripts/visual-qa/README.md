@@ -92,6 +92,17 @@ with complete panels and the full item tooltip. Capture byte uniqueness alone
 cannot prove those states. Test all three RTL locales with mixed player names,
 currency and quest progress, and verify return from dialogue to gameplay.
 
+For RTL paragraphs, inspect the right edge of every wrapped line, especially a
+short final line. Correct letter order and text fitting the panel do not prove
+right alignment. Cover both SpriteText dialogue and SpriteFont journal/body and
+objective paths, plus direct multiline SpriteBatch item tooltips: these are
+separate renderer boundaries. Compare a long first
+line with a much shorter last line and the mixed `3/28` objective. All must end
+against their intended bounded right edge. Preserve centered headings and native
+standalone label anchors; do not mirror the frame or move text to the viewport
+edge. Regression: Hebrew journal 1.17.26 had correct bidi and a left-aligned short
+last line; it must fail review despite clean capture/renderer logs.
+
 The full run refuses to start while another Stardew Valley process is active
 and refuses to overwrite an existing visual-QA directory. Use `--replace` only
 after reviewing the existing evidence. In `--all` mode, only locales with an

@@ -1,5 +1,13 @@
 # Stardew Valley production gallery review — 25 October 2026
 
+Correction after the owner's Hebrew journal report: the prior `he #5` RTL pass
+was wrong. Its three body lines share a left edge, and its short last line is
+left aligned. Correct reading order alone did not satisfy the alignment gate.
+The historical private ledger is preserved unchanged; its blanket 15-image RTL
+acceptance is withdrawn. The 1.17.27 correction cycle in
+`Documentation/rtl-rendering-repair.md` supersedes that acceptance and rechecks
+all three affected RTL locales. The legacy findings below remain applicable.
+
 Review scope: all 100 hosted original WebP images exported through the canonical
 VN Revival CLI after the 15-image RTL replacement. Every image was opened
 individually at original resolution. No image editing or recapture was performed.

@@ -1,7 +1,9 @@
 # Stardew Valley — VN Revival Translation Installer
 
-[Published Windows and macOS 1.17.25 with build evidence](https://github.com/Master1C8/StardewTranslationInstaller/releases/tag/release-1.17.25-0ee3acc6c6d0).
-See [release verification](Documentation/release-verification.md) for hashes and the exact build commit.
+The current download is maintained on the [VN Revival game page](https://vnrevival.fun/ru/games/stardew-valley).
+See [RTL repair verification](Documentation/rtl-rendering-repair.md) for current
+status and exact build evidence. The [1.17.25 GitHub release](https://github.com/Master1C8/StardewTranslationInstaller/releases/tag/release-1.17.25-0ee3acc6c6d0)
+and [its verification](Documentation/release-verification.md) remain historical records.
 
 The native Windows and macOS application installs the shared VN Revival language
 package for Stardew Valley. It starts installation when opened; after installation,

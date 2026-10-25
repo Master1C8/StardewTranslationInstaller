@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -37,6 +38,9 @@ public sealed class ModEntry : Mod
     private static bool LoggedBackOverlay;
     private static bool LoggedDeveloperOverlay;
     private static bool LoggedPlainRtlRenderer;
+    private static bool LoggedSpriteFontRtlRenderer;
+    private sealed record ParsedTextLayout(SpriteFont Font, int Width, ArabicScriptTextAdapter Adapter);
+    private static readonly ConditionalWeakTable<string, ParsedTextLayout> ParsedTextLayouts = new();
     [ThreadStatic]
     private static int TextRenderingDepth;
     [ThreadStatic]
@@ -166,6 +170,95 @@ public sealed class ModEntry : Mod
             patched += 1;
         }
         Monitor.Log($"Persian, Arabic, and Hebrew shaping/bidi adapters enabled for {patched} text methods.", LogLevel.Trace);
+
+        // SpriteFont paragraphs (journal descriptions/objectives, among others)
+        // are wrapped by parseText and drawn separately through Utility. Their
+        // DrawString call has no width, so preserve the actual wrapping region
+        // by result identity rather than guessing from a viewport or longest line.
+        harmony.Patch(AccessTools.Method(typeof(Game1), nameof(Game1.parseText),
+                new[] { typeof(string), typeof(SpriteFont), typeof(int) }),
+            postfix: new HarmonyMethod(typeof(ModEntry), nameof(AfterParsedText)));
+        MethodInfo[] boundedTextMethods = AccessTools.GetDeclaredMethods(typeof(Utility)).Where(method =>
+            method.Name == nameof(Utility.drawTextWithShadow)
+            && method.GetParameters() is var parameters && parameters.Length >= 4
+            && parameters[1].ParameterType == typeof(string)
+            && parameters[2].ParameterType == typeof(SpriteFont)
+            && parameters[3].ParameterType == typeof(Vector2)).ToArray();
+        if (boundedTextMethods.Length == 0)
+            throw new MissingMethodException("The bounded SpriteFont text renderer was not found.");
+        foreach (MethodInfo method in boundedTextMethods)
+        {
+            harmony.Patch(method,
+                prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeBoundedSpriteFontText)),
+                finalizer: textHarmonyFinalizer);
+        }
+    }
+
+    private static ArabicScriptTextAdapter? CurrentRtlAdapter() =>
+        LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod ? null
+        : LocalizedContentManager.CurrentModLanguage?.LanguageCode switch
+        {
+            PersianLanguageCode => PersianAdapter,
+            ArabicLanguageCode => ArabicAdapter,
+            HebrewLanguageCode => HebrewAdapter,
+            _ => null,
+        };
+
+    private static void AfterParsedText(string __result, SpriteFont __1, int __2)
+    {
+        ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
+        if (TextRenderingDepth > 0 || __2 <= 0 || adapter is null
+            || !adapter.ContainsRightToLeftText(__result)) return;
+        ParsedTextLayouts.Remove(__result);
+        ParsedTextLayouts.Add(__result, new ParsedTextLayout(__1, __2, adapter));
+    }
+
+    private static bool BeforeBoundedSpriteFontText(MethodBase __originalMethod, object[] __args, out bool __state)
+    {
+        __state = false;
+        if (TextRenderingDepth > 0 || __args[1] is not string text
+            || __args[2] is not SpriteFont font || __args[3] is not Vector2 position
+            || !ParsedTextLayouts.TryGetValue(text, out ParsedTextLayout? layout)
+            || !ReferenceEquals(font, layout.Font) || !ReferenceEquals(CurrentRtlAdapter(), layout.Adapter))
+            return true;
+
+        TextRenderingDepth += 1;
+        __state = true;
+        try
+        {
+            ParameterInfo[] parameters = __originalMethod.GetParameters();
+            int scaleIndex = Array.FindIndex(parameters, parameter => parameter.Name == "scale"
+                && parameter.ParameterType == typeof(float));
+            float scale = scaleIndex >= 0 ? (float)__args[scaleIndex] : 1f;
+            string[] lines = text.Replace("\r\n", "\n", StringComparison.Ordinal).Split('\n');
+            for (int index = 0; index < lines.Length; index += 1)
+            {
+                // parseText appends a separator after its last word. It is not
+                // visible ink and must not shift the RTL paragraph's right edge.
+                string visualLine = layout.Adapter.Transform(lines[index].TrimEnd(' ', '\r'));
+                float lineWidth = font.MeasureString(visualLine).X;
+                object[] lineArguments = (object[])__args.Clone();
+                lineArguments[1] = visualLine;
+                lineArguments[3] = position + new Vector2((layout.Width - lineWidth) * scale,
+                    index * font.LineSpacing * scale);
+                // Keep the original shadow/color/layer/scale implementation.
+                // The depth guard prevents the nested SpriteBatch prefix from
+                // applying bidi twice and is released by the Harmony finalizer.
+                ((MethodInfo)__originalMethod).Invoke(null, lineArguments);
+            }
+            if (!LoggedSpriteFontRtlRenderer)
+            {
+                LoggedSpriteFontRtlRenderer = true;
+                ModMonitor?.Log($"Right-aligned bounded SpriteFont renderer enabled; width {layout.Width}, lines {lines.Length}, right edge {position.X + layout.Width * scale}.", LogLevel.Trace);
+            }
+            return false;
+        }
+        catch
+        {
+            TextRenderingDepth -= 1;
+            __state = false;
+            throw;
+        }
     }
 
     private static void BeginDialogueRendering(DialogueBox __instance)
@@ -646,18 +739,68 @@ public sealed class ModEntry : Mod
     // already by-ref in the original method. DrawString/MeasureString accept
     // text by value, so array edits alone never reach the actual renderer.
     // Bind explicit ref arguments, including SpriteText's layout parameters.
-    private static bool BeforeStringRendering(MethodBase __originalMethod, object[] __args, ref string __1, out bool __state)
+    private static bool BeforeStringRendering(object? __instance, MethodBase __originalMethod, object[] __args, ref string __1, out bool __state)
     {
+        if (TryDrawSpriteFontParagraph(__instance, __originalMethod, __args, out __state)) return false;
         bool run = BeforeTextRendering(__originalMethod, __args, out __state);
         __1 = (string)__args[1];
         return run;
     }
 
-    private static bool BeforeBuilderRendering(MethodBase __originalMethod, object[] __args, ref StringBuilder __1, out bool __state)
+    private static bool BeforeBuilderRendering(object? __instance, MethodBase __originalMethod, object[] __args, ref StringBuilder __1, out bool __state)
     {
+        if (TryDrawSpriteFontParagraph(__instance, __originalMethod, __args, out __state)) return false;
         bool run = BeforeTextRendering(__originalMethod, __args, out __state);
         __1 = (StringBuilder)__args[1];
         return run;
+    }
+
+    private static bool TryDrawSpriteFontParagraph(object? renderer, MethodBase method, object[] arguments, out bool state)
+    {
+        state = false;
+        if (TextRenderingDepth > 0 || renderer is not SpriteBatch
+            || method.DeclaringType != typeof(SpriteBatch) || arguments[0] is not SpriteFont font
+            || arguments[2] is not Vector2 position) return false;
+        string? text = arguments[1] is string s ? s : (arguments[1] as StringBuilder)?.ToString();
+        ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
+        if (text is null || !text.Contains('\n') || adapter is null || !adapter.ContainsRightToLeftText(text))
+            return false;
+        ParameterInfo[] parameters = method.GetParameters();
+        int IndexOf(string name) => Array.FindIndex(parameters, p => p.Name == name);
+        int rotation = IndexOf("rotation"), origin = IndexOf("origin"), effects = IndexOf("effects"), scaleIndex = IndexOf("scale");
+        if ((rotation >= 0 && (float)arguments[rotation] != 0f)
+            || (origin >= 0 && (Vector2)arguments[origin] != Vector2.Zero)
+            || (effects >= 0 && (SpriteEffects)arguments[effects] != SpriteEffects.None)) return false;
+        Vector2 scale = scaleIndex < 0 ? Vector2.One : arguments[scaleIndex] is Vector2 vector
+            ? vector : new Vector2((float)arguments[scaleIndex]);
+
+        TextRenderingDepth += 1;
+        state = true;
+        try
+        {
+            string[] lines = text.Replace("\r\n", "\n", StringComparison.Ordinal).Split('\n')
+                .Select(line => adapter.Transform(line.TrimEnd(' ', '\r'))).ToArray();
+            float[] widths = lines.Select(line => font.MeasureString(line).X).ToArray();
+            // Unbounded DrawString paragraphs (including tooltip StringBuilders)
+            // own only their measured block. Keep that block's origin and extent;
+            // align its shorter lines without inventing a surrounding UI region.
+            float width = widths.Max();
+            for (int index = 0; index < lines.Length; index += 1)
+            {
+                object[] lineArguments = (object[])arguments.Clone();
+                lineArguments[1] = arguments[1] is StringBuilder ? new StringBuilder(lines[index]) : lines[index];
+                lineArguments[2] = position + new Vector2((width - widths[index]) * scale.X,
+                    index * font.LineSpacing * scale.Y);
+                ((MethodInfo)method).Invoke(renderer, lineArguments);
+            }
+            return true;
+        }
+        catch
+        {
+            TextRenderingDepth -= 1;
+            state = false;
+            throw;
+        }
     }
 
     private static bool BeforeStringMeasurement(MethodBase __originalMethod, object[] __args, ref string __0, out bool __state)

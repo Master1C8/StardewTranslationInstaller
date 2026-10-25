@@ -1,10 +1,13 @@
 using System;
 using System.IO;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using HarmonyLib;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.GameData;
@@ -29,7 +32,7 @@ Check("English 123", "English 123");
 Check(string.Empty, string.Empty);
 CheckNestedRenderingPatch();
 
-Console.WriteLine("RTL probe passed 9 Hebrew exact cases, layout/typewriter checks, and real Harmony argument/forwarding checks for Hebrew, Arabic, and Persian.");
+Console.WriteLine("RTL probe passed 9 Hebrew exact cases, layout/typewriter checks, real Harmony argument/forwarding and bounded SpriteFont paragraph checks for Hebrew, Arabic, and Persian.");
 
 void Check(string logical, string expected)
 {
@@ -157,6 +160,18 @@ void CheckNestedRenderingPatch()
         harmony.Patch(typeof(ProbeRenderer).GetMethod("Core")!,
             prefix: new HarmonyMethod(modEntry.GetMethod("BeforeSpriteTextRendering", BindingFlags.Static | BindingFlags.NonPublic)!),
             finalizer: new HarmonyMethod(finalizer));
+        harmony.Patch(typeof(ProbeRenderer).GetMethod("Parse")!,
+            postfix: new HarmonyMethod(modEntry.GetMethod("AfterParsedText", BindingFlags.Static | BindingFlags.NonPublic)!));
+        harmony.Patch(typeof(ProbeRenderer).GetMethod("DrawBounded")!,
+            prefix: new HarmonyMethod(modEntry.GetMethod("BeforeBoundedSpriteFontText", BindingFlags.Static | BindingFlags.NonPublic)!),
+            finalizer: new HarmonyMethod(finalizer));
+        foreach (MethodInfo method in typeof(SpriteBatch).GetMethods().Where(m => m.Name == "DrawString"
+            && m.GetParameters().Length >= 4 && m.GetParameters()[2].ParameterType == typeof(Vector2)))
+        {
+            harmony.Patch(method, prefix: new HarmonyMethod(typeof(ProbeRenderer).GetMethod("ObserveSpriteBatch")!) { priority = Priority.First });
+            harmony.Patch(method, prefix: new HarmonyMethod((MethodInfo)selector.Invoke(null, new object[] { method })!),
+                finalizer: new HarmonyMethod(finalizer));
+        }
         try
         {
             CheckBindings("he-vnrevival", adapter, "שלום Alex 123 עולם");
@@ -187,6 +202,8 @@ void CheckNestedRenderingPatch()
                     throw new InvalidDataException("Harmony did not bind SpriteText layout arguments for " + locale);
                 if (ProbeRenderer.Draw(new object(), "English 123") != "English 123")
                     throw new InvalidDataException("RTL patch changed a Latin-only label.");
+                CheckBoundedParagraph(locale, activeAdapter, logical);
+                CheckSpriteBatchParagraph(locale, activeAdapter, logical);
             }
         }
         finally { harmony.UnpatchAll(harmony.Id); }
@@ -199,8 +216,89 @@ void CheckNestedRenderingPatch()
     }
 }
 
+void CheckSpriteBatchParagraph(string locale, ArabicScriptTextAdapter activeAdapter, string logical)
+{
+    string text = logical + " 3/28\n" + logical.Split(' ')[0];
+    string[] lines = text.Split('\n').Select(activeAdapter.Transform).ToArray();
+    var chars = string.Join("", lines).Append('?').Append(' ').Distinct().OrderBy(c => c).ToList();
+    var font = new SpriteFont(null!, chars.Select(_ => new Rectangle(0,0,7,16)).ToList(),
+        chars.Select(_ => new Rectangle(0,0,7,16)).ToList(), chars,20,0f,
+        chars.Select(_ => new Vector3(0,7,1)).ToList(), '?');
+    var batch = (SpriteBatch)System.Runtime.Serialization.FormatterServices.GetUninitializedObject(typeof(SpriteBatch));
+    var position = new Vector2(80,100);
+    foreach (bool builder in new[] { false, true })
+    {
+        ProbeRenderer.Lines.Clear();
+        if (builder) batch.DrawString(font, new StringBuilder(text), position, Color.DarkBlue);
+        else batch.DrawString(font, text, position, Color.DarkBlue);
+        if (ProbeRenderer.Lines.Count != 2) throw new InvalidDataException("SpriteBatch paragraph did not split: " + locale);
+        float right = position.X + lines.Max(line => font.MeasureString(line).X);
+        for (int i=0;i<2;i++)
+        {
+            var row=ProbeRenderer.Lines[i];
+            if (row.Text != lines[i] || Math.Abs(row.Position.X + font.MeasureString(row.Text).X-right)>0.01f
+                || row.Position.Y != position.Y+i*font.LineSpacing || row.Color != Color.DarkBlue)
+                throw new InvalidDataException("SpriteBatch paragraph right edge/style/order failed: " + locale);
+        }
+    }
+    if (typeof(ModEntry).GetField("TextRenderingDepth",BindingFlags.Static|BindingFlags.NonPublic)!.GetValue(null) is not 0)
+        throw new InvalidDataException("SpriteBatch paragraph guard leaked.");
+}
+
+void CheckBoundedParagraph(string locale, ArabicScriptTextAdapter activeAdapter, string logical)
+{
+    string paragraph = logical + "  \n" + logical.Split(' ')[0] + "  \n\n" + logical + " ";
+    string[] visual = paragraph.Split('\n').Select(line => activeAdapter.Transform(line.TrimEnd(' ', '\r'))).ToArray();
+    var characters = string.Join("", visual).Append('?').Append(' ').Distinct().OrderBy(c => c).ToList();
+    SpriteFont MakeFont() => new SpriteFont(null!,
+        characters.Select(c => new Rectangle(0, 0, c == ' ' ? 3 : 7, 16)).ToList(),
+        characters.Select(_ => new Rectangle(0, 0, 7, 16)).ToList(),
+        characters, 20, 0f, characters.Select(c => new Vector3(0, c == ' ' ? 3 : 7, 1)).ToList(), '?');
+    SpriteFont font = MakeFont();
+    var position = new Vector2(80, 100);
+    const int width = 360;
+    const float scale = 1.5f;
+    string parsed = ProbeRenderer.Parse(paragraph, font, width);
+    ProbeRenderer.Lines.Clear();
+    ProbeRenderer.DrawBounded(new object(), parsed, font, position, Color.DarkBlue, scale);
+    if (ProbeRenderer.Lines.Count != visual.Length) throw new InvalidDataException("Missing paragraph lines: " + locale);
+    for (int i = 0; i < visual.Length; i++)
+    {
+        var row = ProbeRenderer.Lines[i];
+        if (row.Text != visual[i] || Math.Abs(row.Position.X + font.MeasureString(visual[i]).X * scale
+                - (position.X + width * scale)) > 0.01f
+            || row.Position.Y != position.Y + i * font.LineSpacing * scale
+            || row.Scale != scale || row.Color != Color.DarkBlue)
+            throw new InvalidDataException("Wrong RTL line order/right edge/style: " + locale);
+    }
+    // Same content is insufficient evidence of the same bounded parse result.
+    foreach (var control in new[] {
+        (new string(parsed.ToCharArray()), font), (parsed, MakeFont()),
+        (ProbeRenderer.Parse(paragraph, font, 0), font),
+        (ProbeRenderer.Parse("English 123", font, width), font) })
+    {
+        ProbeRenderer.Lines.Clear();
+        ProbeRenderer.DrawBounded(new object(), control.Item1, control.Item2, position, Color.White, 1f);
+        if (ProbeRenderer.Lines.Count != 1 || ProbeRenderer.Lines[0].Position != position)
+            throw new InvalidDataException("Unbounded/different-font/LTR text was repositioned: " + locale);
+    }
+}
+
 public static class ProbeRenderer
 {
+    public static readonly List<(string Text, Vector2 Position, Color Color, float Scale)> Lines = new();
+    public static bool ObserveSpriteBatch(object[] __args)
+    {
+        if (typeof(ModEntry).GetField("TextRenderingDepth",BindingFlags.Static|BindingFlags.NonPublic)!.GetValue(null) is not int depth || depth==0)
+            return true;
+        Lines.Add((__args[1].ToString()!, (Vector2)__args[2], (Color)__args[3], 1f));
+        return false; // Replace GPU emission only; real Harmony and MonoGame metrics run.
+    }
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static string Parse(string text, SpriteFont font, int width) => new string(text.ToCharArray());
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void DrawBounded(object b, string text, SpriteFont font, Vector2 position, Color color, float scale)
+        => Lines.Add((Draw(b, text), position, color, scale));
     [MethodImpl(MethodImplOptions.NoInlining)]
     public static string Draw(object context, string text) => text;
     [MethodImpl(MethodImplOptions.NoInlining)]

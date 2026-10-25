@@ -444,8 +444,10 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
                           "Loading mods...", "Launching mods...", "Mods loaded and ready!",
                           "VN_QA_STARTUP mode=", "Context: locale set to mod")
                 while time.monotonic() < deadline:
+                    output = (runtime / "launcher.log").read_text(errors="replace") if (runtime / "launcher.log").exists() else ""
+                    if "The game failed to launch:" in output or "Game has ended." in output:
+                        raise RuntimeError("game ended before " + needle + ": " + output[-2500:])
                     if startup:
-                        output = (runtime / "launcher.log").read_text(errors="replace") if (runtime / "launcher.log").exists() else ""
                         for stage in stages:
                             if stage not in seen_stages and stage in output:
                                 seen_stages.add(stage)

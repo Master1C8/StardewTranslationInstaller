@@ -191,6 +191,20 @@ For multiple affected surfaces use `--bridge --repair-scenes 02-character-creati
 records the selected scope. Selecting only slot 04 still uses guarded normal/QuickSave
 loads. It excludes dialogue and journal; those need their retained dependency receipts.
 Date regression: the final year digit and shadow must clear the inventory frame.
+
+Measure actual delivery after renderer interception: the first Polish date repair
+logged a 21-pixel shift but its date pixels were identical to the previous capture.
+The bundled Harmony path did not apply the edited `__args` array to that native call.
+Relocated strings now invoke the existing renderer with explicit position arguments
+and a guarded recursion/finalizer boundary, as the bounded RTL renderer already does.
+Check the pixel displacement as well as the native visual result.
+
+The first appearance row needs separate caption/value placement: gender controls
+occupy the space directly above it. Measure visible glyph top/bottom, place the skin
+caption four pixels inside its row, then retain a six-pixel caption/value separation
+including shadow clearance. Keep the value above the next row and within its arrows.
+Other rows keep the shared above-arrow placement. Never credit a log alone as proof
+that the resulting glyphs moved or clear adjacent controls.
 Regression: the owner's pointer moves while an inventory/journal capture runs;
 no pointer covers the axe description or quest progress, the tooltip remains open,
 and all five macOS foreground checks remain false. This changes only the QA mod.

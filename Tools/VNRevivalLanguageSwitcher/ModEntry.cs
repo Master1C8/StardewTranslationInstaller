@@ -42,6 +42,9 @@ public sealed class ModEntry : Mod
     private static bool LoggedCharacterLabelLayout;
     private static bool LoggedLtrCharacterLabelLayout;
     private static bool LoggedInventoryDateLayout;
+    private sealed record CharacterTextPlacement(string Text, Vector2 From, Vector2 To);
+    [ThreadStatic]
+    private static List<CharacterTextPlacement>? CharacterTextPlacements;
     private sealed record CharacterLabelState(ClickableComponent Label, string Text, Rectangle Bounds);
     private static readonly FieldInfo[] CharacterFormLabels = new[] { "nameLabel", "farmLabel", "favoriteLabel" }
         .Select(name => AccessTools.Field(typeof(CharacterCustomization), name)
@@ -217,6 +220,7 @@ public sealed class ModEntry : Mod
     private static void BeforeCharacterCreationDraw(CharacterCustomization __instance, out List<CharacterLabelState> __state)
     {
         __state = new();
+        CharacterTextPlacements = new();
         ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
         if (__instance.showingCoopHelp
             || __instance.source is not (CharacterCustomization.Source.NewGame
@@ -387,7 +391,40 @@ public sealed class ModEntry : Mod
             // Keep the caption above the arrows and the value between them.
             // Long captions (notably Hebrew pants) exceed the native arrow gap.
             label.bounds.Y -= 28;
+            if (adapter is null && selection.Button == "Skin")
+            {
+                // The first row has gender controls immediately above it. Fit
+                // its caption and value into the real row independently, using
+                // visible glyph bounds; moving both together overlaps gender.
+                string value = (Game1.player.skin.Value + 1).ToString(CultureInfo.InvariantCulture);
+                var captionInk = SpriteFontVerticalInkBounds(Game1.smallFont, label.name);
+                var valueInk = SpriteFontVerticalInkBounds(Game1.smallFont, value);
+                if (captionInk is null || valueInk is null) continue;
+                float center = label.bounds.X + 21;
+                Vector2 captionFrom = new(center - Game1.smallFont.MeasureString(label.name).X / 2, label.bounds.Y);
+                Vector2 valueFrom = new(center - Game1.smallFont.MeasureString(value).X / 2, label.bounds.Y + 32);
+                float captionY = left.bounds.Top + 4 - captionInk.Value.Top;
+                float valueY = Math.Max(valueFrom.Y, captionY + captionInk.Value.Bottom + 6 - valueInk.Value.Top);
+                if (valueY + valueInk.Value.Bottom + 2 > left.bounds.Bottom - 4) continue;
+                CharacterTextPlacements?.Add(new(label.name, captionFrom, new Vector2(captionFrom.X, captionY)));
+                CharacterTextPlacements?.Add(new(value, valueFrom, new Vector2(valueFrom.X, valueY)));
+            }
         }
+    }
+
+    private static (int Top, int Bottom)? SpriteFontVerticalInkBounds(SpriteFont font, string text)
+    {
+        var glyphs = CharacterFontGlyphs.GetValue(font, value => value.GetGlyphs());
+        int top = int.MaxValue, bottom = int.MinValue, lineY = 0;
+        foreach (char character in text)
+        {
+            if (character == '\n') { lineY += font.LineSpacing; continue; }
+            if (char.IsWhiteSpace(character)) continue;
+            if (!glyphs.TryGetValue(character, out SpriteFont.Glyph glyph)) return null;
+            top = Math.Min(top, lineY + glyph.Cropping.Y);
+            bottom = Math.Max(bottom, lineY + glyph.Cropping.Y + glyph.BoundsInTexture.Height);
+        }
+        return top == int.MaxValue ? null : (top, bottom);
     }
 
     private static (float Left, float Right)? SpriteFontInkBounds(SpriteFont font, string text)
@@ -411,7 +448,7 @@ public sealed class ModEntry : Mod
         return first == float.MaxValue ? null : (first, last);
     }
 
-    private static void KeepInventoryDateInsidePanel(object[] arguments, string text, SpriteFont font, Vector2 position)
+    private static Vector2? InventoryDatePosition(string text, SpriteFont font, Vector2 position)
     {
         if (CurrentRtlAdapter() is not null
             || LocalizedContentManager.CurrentLanguageCode != LocalizedContentManager.LanguageCode.mod
@@ -420,29 +457,31 @@ public sealed class ModEntry : Mod
             || Game1.activeClickableMenu is not GameMenu menu || menu.currentTab != GameMenu.inventoryTab
             || menu.pages[menu.currentTab] is not InventoryPage page
             || position.Y != page.yPositionOnScreen + IClickableMenu.borderWidth + IClickableMenu.spaceToClearTopBorder + 448
-            || !string.Equals(text, Utility.getDateString(), StringComparison.Ordinal)) return;
+            || !string.Equals(text, Utility.getDateString(), StringComparison.Ordinal)) return null;
         var ink = SpriteFontInkBounds(font, text);
-        if (ink is null) return;
+        if (ink is null) return null;
         // The native summary anchor is biased toward the right frame. Translate
         // overflowing dates into the free row beside the portrait, preserving
         // the original font, wording, baseline and shadow implementation.
         float left = page.portrait.bounds.Right + 24;
         float right = page.xPositionOnScreen + page.width - IClickableMenu.borderWidth - 12;
-        if (ink.Value.Right - ink.Value.Left > right - left) return;
+        if (ink.Value.Right - ink.Value.Left > right - left) return null;
         float x = Math.Clamp(position.X, left - ink.Value.Left, right - ink.Value.Right);
         if (x != position.X)
         {
-            arguments[3] = new Vector2(x, position.Y);
             if (!LoggedInventoryDateLayout)
             {
                 LoggedInventoryDateLayout = true;
                 ModMonitor?.Log($"Inventory date kept inside panel: locale={code}, originalX={position.X}, x={x}, inkLeft={ink.Value.Left}, inkRight={ink.Value.Right}, safeLeft={left}, safeRight={right}.", LogLevel.Trace);
             }
+            return new Vector2(x, position.Y);
         }
+        return null;
     }
 
     private static Exception? FinishCharacterCreationDraw(Exception? __exception, List<CharacterLabelState>? __state)
     {
+        CharacterTextPlacements = null;
         if (__state is not null)
             foreach (CharacterLabelState state in __state)
             { state.Label.name = state.Text; state.Label.bounds = state.Bounds; }
@@ -473,7 +512,30 @@ public sealed class ModEntry : Mod
         __state = false;
         if (TextRenderingDepth > 0 || __args[1] is not string text
             || __args[2] is not SpriteFont font || __args[3] is not Vector2 position) return true;
-        KeepInventoryDateInsidePanel(__args, text, font, position);
+        Vector2? relocated = CharacterTextPlacements?.FirstOrDefault(item =>
+            string.Equals(item.Text, text, StringComparison.Ordinal) && item.From == position)?.To;
+        relocated ??= InventoryDatePosition(text, font, position);
+        if (relocated is Vector2 relocatedPosition && relocatedPosition != position)
+        {
+            // The bundled Harmony runtime did not propagate edits made only to
+            // __args back into the native call. Invoke the existing renderer
+            // with explicit arguments, as for bounded RTL paragraphs below.
+            TextRenderingDepth += 1;
+            __state = true;
+            try
+            {
+                object[] arguments = (object[])__args.Clone();
+                arguments[3] = relocatedPosition;
+                ((MethodInfo)__originalMethod).Invoke(null, arguments);
+                return false;
+            }
+            catch
+            {
+                TextRenderingDepth -= 1;
+                __state = false;
+                throw;
+            }
+        }
         if (!ParsedTextLayouts.TryGetValue(text, out ParsedTextLayout? layout)
             || !ReferenceEquals(font, layout.Font) || !ReferenceEquals(CurrentRtlAdapter(), layout.Adapter))
             return true;

@@ -17,6 +17,7 @@ namespace VNRevival.VisualQADriver
         private string triggerPath = string.Empty;
         private string? capturePath;
         private bool titleReady;
+        private bool startupObserved;
         private Point? hoverPoint;
         private bool advancingDialogue;
         private static ModEntry? instance;
@@ -85,6 +86,13 @@ namespace VNRevival.VisualQADriver
         private void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)
         {
             if (Game1.options != null) Game1.options.pauseWhenOutOfFocus = false;
+            if (!titleReady && (!startupObserved || e.IsMultipleOf(600)))
+            {
+                startupObserved = true;
+                Monitor.Log("VN_QA_STARTUP mode=" + Game1.gameMode
+                    + " menu=" + (Game1.activeClickableMenu?.GetType().Name ?? "none")
+                    + " active=" + Game1.game1.IsActive, LogLevel.Info);
+            }
             if (!titleReady && Game1.activeClickableMenu is TitleMenu title && title.titleInPosition)
             {
                 titleReady = true;

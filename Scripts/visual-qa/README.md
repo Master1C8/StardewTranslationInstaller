@@ -130,6 +130,16 @@ exits nonzero instead of continuing with blind clicks. Interrupting `--all`
 forwards the signal to the active locale and gives its cleanup handler time to
 restore the original language and remove the temporary SMAPI driver.
 
+Cold Rosetta/SMAPI startup from the external drive permits six minutes without
+a new startup phase and has a fifteen-minute absolute limit. Only new phase
+markers from that process's launcher log extend the wait; the real title-ready
+receipt remains mandatory. A measured run loaded its mods only near minute six;
+the old total deadline killed it before the title animation could finish. The temporary
+driver logs startup mode, menu and focus to distinguish slow startup from an
+unknown screen. Launcher PTY reads forward short messages immediately; a 4096-byte
+buffer must not hide startup output. Run `python3 Scripts/visual-qa/test_launcher.py`
+for that transport regression. It uses a disposable child, not the game renderer.
+
 Stable recognition crops are stored under `templates/2x/`. They are input
 assets rather than generated evidence, so every locale output directory can be
 deleted before a fresh run without making the runner depend on an old capture.

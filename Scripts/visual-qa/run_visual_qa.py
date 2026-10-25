@@ -224,7 +224,7 @@ def launch_game(game_dir: Path, log_path: Path, trigger_path: Path, bridge: bool
         with os.fdopen(master, "rb", closefd=True) as source, log_path.open("wb") as destination:
             while True:
                 try:
-                    chunk = source.read(4096)
+                    chunk = source.read1(4096)
                 except OSError:
                     break
                 if not chunk:
@@ -436,9 +436,21 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
                 offset = text.find("VN_QA_RUN " + str(trigger))
                 return text[offset:] if offset >= 0 else ""
 
-            def wait_for(needle: str, start: int = 0, timeout: float = 120) -> None:
+            def wait_for(needle: str, start: int = 0, timeout: float = 120, startup: bool = False) -> None:
                 deadline = time.monotonic() + timeout
+                hard_deadline = time.monotonic() + 900 if startup else deadline
+                seen_stages: set[str] = set()
+                stages = ("Mods go here:", "Waiting for game to launch", "Loading mod metadata",
+                          "Loading mods...", "Launching mods...", "Mods loaded and ready!",
+                          "VN_QA_STARTUP mode=", "Context: locale set to mod")
                 while time.monotonic() < deadline:
+                    if startup:
+                        output = (runtime / "launcher.log").read_text(errors="replace") if (runtime / "launcher.log").exists() else ""
+                        for stage in stages:
+                            if stage not in seen_stages and stage in output:
+                                seen_stages.add(stage)
+                                deadline = min(time.monotonic() + timeout, hard_deadline)
+                                print("VN_QA_STARTUP_PROGRESS " + stage, flush=True)
                     current = log()[start:]
                     if "ERROR VN Revival Visual QA Driver" in current:
                         raise RuntimeError("visual-QA driver failed: " + current[-2000:])
@@ -466,7 +478,10 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
                 if size != "1280x780":
                     raise RuntimeError("bridge viewport is " + size + ", expected 1280x780")
 
-            wait_for("VN_QA_STATE title-ready", timeout=180)
+            # Cold Rosetta startup may take minutes before the first tick.
+            # Extend only for a new phase from this process's launcher log;
+            # keep an absolute limit and require the real title-ready receipt.
+            wait_for("VN_QA_STATE title-ready", timeout=360, startup=True)
             wait_for(f"Context: locale set to mod ({locale['code']})")
             command("viewport", "VN_QA_STATE viewport")
             capture("01-title-menu")

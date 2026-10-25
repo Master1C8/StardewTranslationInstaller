@@ -9,8 +9,9 @@ The 1.17.26 acceptance statements below are historical and withdrawn for that
 criterion. Original images and rejected review cycles are preserved.
 
 The pack/application is now 1.17.27, switcher 1.9.22. Text translations, fonts,
-base-game Content and save contents are unchanged. Native verification is complete;
-release builds and replacement uploads are pending at this source checkpoint.
+base-game Content and save contents are unchanged. Native verification, both release builds and replacement uploads are complete.
+Final production read-back, new hosted-image inspection and release registry
+registration are pending the unrelated SiteForMods writer described below.
 Existing authorization covers both installers and the fifteen RTL screenshots,
 not application deployment or server lifecycle actions.
 
@@ -69,6 +70,60 @@ Windows gameplay, exhaustive game coverage or language-picker navigation.
 The visual-QA recipe now explicitly separates SpriteText, bounded SpriteFont
 and direct multiline SpriteBatch paths. Regression: Hebrew journal 1.17.26 must
 fail alignment review even though bidi and capture logs pass.
+
+## 1.17.27 delivery checkpoint
+
+Clean pushed canonical source commit:
+`c910e4a7a73a13e49c653196dc8817b32ca72a5d`.
+`Scripts/build-provenance.py` completed at 2026-10-25T02:36:13Z. The full technical
+release audit, all fifteen Swift tests, retained-locale checks, font/layout checks,
+isolated switcher probes, macOS universal build and Windows build passed.
+All ZIP entries were compared with their final stages. Resource inventory stayed
+unchanged through the build, and both archive DLLs match the native-tested hash.
+The macOS app uses an ad hoc signature and is not notarized. This is not a Windows
+runtime result.
+
+| Platform | Archive | Bytes | SHA-256 | Verified entries |
+| --- | --- | ---: | --- | ---: |
+| Windows | Stardew-Installer-Windows-1.17.27.zip | 26038355 | 04b269251f60f709181e1b357c4262ea62e66a0be1ce56cee5290bea7a608166 | 5318 |
+| macOS | Stardew-Installer-macOS-1.17.27.zip | 27454354 | 96c16aa06f5e75e56735b4a0a169493e6a2a6f6986626c47c384c5d0188ddfad | 5319 |
+
+Archives, inventories, source tree, exact tool identities and build log remain in
+`dist/1.17.27-provenance-20261025/`.
+
+The canonical GitHub profile/repository and existing correct private project URL
+were verified. The previous three Model usage records matched production exactly;
+a fourth nonoverlapping cumulative delta was applied through the CLI. It covers
+42,479,028 tokens (input 42,398,137; cached subset 41,854,848; output 80,891;
+reasoning subset 31,594) after the prior cutoff through 2026-10-25T02:36:29.731Z.
+This is mixed publication/review tail of 1.17.26 and alignment/QA/build work for
+1.17.27. Later publication/reporting tail and platform overhead are unmeasured;
+no actual monetary cost is asserted. Historical records were preserved exactly.
+
+Both platform apply commands succeeded, preserving old archive records. The game
+edit advanced releaseVersion to 1.17.27 with the same 2026-10-25 release date and
+a new version changelog entry. Screenshot apply replaced exactly five images for
+each of ar, fa and he (15 total, no additions), preserved other locale slots and
+invalidated the page cache. These are separate transaction boundaries. Successful
+apply logs are retained in `dist/rtl-alignment-20261025/`; do not resubmit them.
+
+The immediately following production release capture was refused locally before
+any capture because an unrelated FTL writer created uncommitted
+`data/games/ftl-faster-than-light/glossary-translation-reviews/` in canonical
+SiteForMods (last observed HEAD 5f0cf563). CLI requires clean committed source.
+No unrelated files/index were changed. The owner was asked to finish that work.
+The failed attempt's stderr is retained; it does not undo successful uploads.
+
+Resume after a confirmed clean-checkout change: capture actual production release
+identities via the CLI, compare hashes/source commit, append exact registry rows,
+register guide hashes while retaining older ones, compare all 62 locale/platform
+guides and run the required SEO/release matrix before renewing its receipt.
+Then commit/push the bounded SiteForMods delta with [skip ci], download/verify both
+public archives, export all 100 hosted originals, and view every new RTL WebP
+individually. Retain unchanged legacy failure receipts only after full slot/hash
+comparison and applicability check; the shared repair activates only in ar/fa/he.
+Do not describe the new hosted images as reviewed until that inspection occurs.
+Registry/guide application deployment remains separately authorized and pending.
 
 ## Historical 1.17.26 checkpoint — alignment acceptance withdrawn
 

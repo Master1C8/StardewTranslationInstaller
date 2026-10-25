@@ -751,7 +751,7 @@ struct InstallerCoreTests {
         )
         expect(manifest["UniqueID"] as? String == InstallerCore.languageSwitcherUniqueID)
         expect(manifest["EntryDll"] as? String == "VNRevival.LanguageSwitcher.dll")
-        expect(manifest["Version"] as? String == "1.9.22")
+        expect(manifest["Version"] as? String == "1.9.23")
         let switcherImplementation = try String(
             contentsOf: projectRoot().appendingPathComponent(
                 "Tools/VNRevivalLanguageSwitcher/ModEntry.cs"

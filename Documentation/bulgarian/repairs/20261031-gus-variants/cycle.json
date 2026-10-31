@@ -1,0 +1,30 @@
+{
+  "kind": "Bulgarian approved-Gus-name variant correction",
+  "previousCycle": "Documentation/bulgarian/repairs/20261025-gus",
+  "previousClosureSha256": "50b5595eeaa3e57996414315e303fe3a6e77d23f7663e807c6786c550c89bf4f",
+  "glossarySha256": "b4261589b67f5d2a0c0a87657f364e2dd8d8cea295862a3eb41e02bc02a7d488",
+  "selector": "Standalone Гюс or Гъс; reject candidates outside previous closure",
+  "preservedUnrelatedWords": [
+    "Гъста",
+    "Гъстата",
+    "гасим"
+  ],
+  "changedCount": 11,
+  "closureCount": 68,
+  "newDependencies": [],
+  "invalidatedEvidenceIds": [
+    "Characters/Dialogue/Lewis:Resort_Bar",
+    "Characters/Dialogue/Lewis:Saloon_Entry",
+    "Characters/Dialogue/Lewis:summer_Thu",
+    "Characters/Dialogue/Lewis:fall_Fri4",
+    "Characters/Dialogue/MarriageDialogueSam:Outdoor_3",
+    "Data/Events/AnimalShop:3910974/f Shane 1700/e 3910975/p Shane",
+    "Data/Events/SeedShop:963113/n pierreQualityCrops",
+    "Data/Events/Town:191393/Hn ccFishTank/Hn ccBulletin/Hn ccPantry/Hn ccVault/Hn ccBoilerRoom/Hn ccCraftsRoom/Hl jojaFishTank/Hl jojaPantry/Hl jojaVault/Hl jojaBoilerRoom/Hl jojaCraftsRoom/Hl JojaMember/w sunny/H",
+    "Strings/SpecialOrderStrings:Gus_Name",
+    "Strings/SpecialOrderStrings:Gus_Text",
+    "Strings/SpecialOrderStrings:Gus_Objective_1_Text"
+  ],
+  "status": "pending-independent-delta-review",
+  "writeBoundary": "Retained before-state, then individual JSON writes; no multi-file transaction"
+}

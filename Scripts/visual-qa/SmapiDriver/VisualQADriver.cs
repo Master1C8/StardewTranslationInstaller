@@ -17,6 +17,8 @@ namespace VNRevival.VisualQADriver
     {
         private string triggerPath = string.Empty;
         private string? capturePath;
+        private bool captureBackgroundWaitLogged;
+        private bool backgroundHiddenLogged;
         private bool titleReady;
         private bool startupObserved;
         private bool bridgeMode;
@@ -29,6 +31,24 @@ namespace VNRevival.VisualQADriver
         private static extern IntPtr ObjCObject(IntPtr receiver, IntPtr selector);
         [DllImport("/usr/lib/libobjc.A.dylib", EntryPoint = "objc_msgSend")]
         private static extern int ObjCInt(IntPtr receiver, IntPtr selector);
+        [DllImport("/usr/lib/libobjc.A.dylib", EntryPoint = "objc_msgSend")]
+        [return: MarshalAs(UnmanagedType.I1)]
+        private static extern bool ObjCBool(IntPtr receiver, IntPtr selector);
+
+        private static IntPtr CurrentApplication() => ObjCObject(objc_getClass("NSRunningApplication"), sel_registerName("currentApplication"));
+        private static bool IsApplicationHidden() => ObjCBool(CurrentApplication(), sel_registerName("isHidden"));
+
+        private void KeepGameHidden()
+        {
+            if (!bridgeMode) return;
+            var app = CurrentApplication();
+            if (!ObjCBool(app, sel_registerName("isHidden"))) ObjCBool(app, sel_registerName("hide"));
+            if (!backgroundHiddenLogged && ObjCBool(app, sel_registerName("isHidden")))
+            {
+                backgroundHiddenLogged = true;
+                Monitor.Log("VN_QA_BACKGROUND_HIDDEN: task-owned game application hidden without activating another app.", LogLevel.Info);
+            }
+        }
 
         private static bool IsForegroundProcess()
         {
@@ -46,6 +66,7 @@ namespace VNRevival.VisualQADriver
             Monitor.Log("VN_QA_RUN " + triggerPath, LogLevel.Info);
             helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
             bridgeMode = Environment.GetEnvironmentVariable("VN_VISUAL_QA_BRIDGE") == "1";
+            KeepGameHidden();
             if (bridgeMode)
             {
                 // Bridge commands invoke game methods directly. Suppress physical
@@ -79,8 +100,17 @@ namespace VNRevival.VisualQADriver
         private void CaptureFrame()
         {
             if (capturePath == null) return;
+            bool foreground = IsForegroundProcess();
+            if (bridgeMode && foreground)
+            {
+                if (!captureBackgroundWaitLogged)
+                {
+                    captureBackgroundWaitLogged = true;
+                    Monitor.Log("VN_QA_BACKGROUND_WAIT: capture waits for the game to leave the foreground; no other app is activated.", LogLevel.Info);
+                }
+                return;
+            }
             string path = capturePath;
-            capturePath = null;
             string name = Path.GetFileName(path);
             bool expected = name.Contains("-01-title-menu-")
                 ? Game1.activeClickableMenu is TitleMenu && TitleMenu.subMenu == null
@@ -98,17 +128,21 @@ namespace VNRevival.VisualQADriver
             int h = device.PresentationParameters.BackBufferHeight;
             var pixels = new Color[w * h];
             device.GetBackBufferData(pixels);
+            foreground = IsForegroundProcess();
+            if (bridgeMode && foreground) return;
+            capturePath = null;
             // GetBackBufferData already returns top-first rows for the final
             // default framebuffer; offscreen render-target orientation differs.
             using var texture = new Texture2D(device, w, h);
             texture.SetData(pixels);
             using var stream = File.Create(path);
             texture.SaveAsPng(stream, w, h);
-            Monitor.Log($"VN_QA_CAPTURE {path} {w}x{h} foreground={IsForegroundProcess()}", LogLevel.Info);
+            Monitor.Log($"VN_QA_CAPTURE {path} {w}x{h} foreground={foreground} hidden={IsApplicationHidden()}", LogLevel.Info);
         }
 
         private void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)
         {
+            KeepGameHidden();
             if (Game1.options != null) Game1.options.pauseWhenOutOfFocus = false;
             if (!titleReady && (!startupObserved || e.IsMultipleOf(600)))
             {
@@ -161,6 +195,7 @@ namespace VNRevival.VisualQADriver
             if (command.StartsWith("capture ", StringComparison.Ordinal))
             {
                 capturePath = Path.Combine(Path.GetDirectoryName(triggerPath)!, Path.GetFileName(command.Substring(8)));
+                captureBackgroundWaitLogged = false;
                 return;
             }
             if (command == "viewport" && Game1.activeClickableMenu is TitleMenu)

@@ -126,7 +126,7 @@ function Download-Verified([string]$Name, [string]$Uri, [string]$Sha256, [string
     # Delimit the parameter explicitly: Windows PowerShell otherwise may fold
     # an adjacent character into the variable name (for example, `$Namea`).
     Write-Status "Downloading ${Name}..."
-    Invoke-WebRequest -Uri $Uri -OutFile $Destination -UseBasicParsing -Headers @{ "User-Agent" = "VN Revival Stardew Installer/1.17.29" }
+    Invoke-WebRequest -Uri $Uri -OutFile $Destination -UseBasicParsing -Headers @{ "User-Agent" = "VN Revival Stardew Installer/1.17.30" }
     $actual = (Get-FileHash -LiteralPath $Destination -Algorithm SHA256).Hash.ToLowerInvariant()
     if ($actual -ne $Sha256) { throw "${Name} checksum did not match. Installation was stopped." }
 }

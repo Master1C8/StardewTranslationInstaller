@@ -74,6 +74,9 @@ INK_COLORS = ((210, 34, 69, 255), (239, 72, 101, 255))
 TITLE_VERTICAL_OFFSETS = {
     "traditional-chinese": -24,
 }
+TITLE_BUTTON_VERTICAL_OFFSETS = {
+    "persian": {0: -24},
+}
 
 
 def offset_overlay(overlay: Image.Image, y_offset: int) -> Image.Image:
@@ -287,6 +290,9 @@ def main() -> None:
             overlay = Image.new("RGBA", RUNTIME_FRAME_SIZE, (0, 0, 0, 0))
         else:
             overlay = offset_overlay(overlay, TITLE_VERTICAL_OFFSETS.get(spec.slug, 0))
+            for column, y_offset in TITLE_BUTTON_VERTICAL_OFFSETS.get(spec.slug, {}).items():
+                box = (column * RUNTIME_BUTTON_WIDTH, 0, (column + 1) * RUNTIME_BUTTON_WIDTH, RUNTIME_FRAME_SIZE[1])
+                overlay.paste(offset_overlay(overlay.crop(box), y_offset), box[:2])
             validate_overlay(overlay, spec)
             save_if_pixels_changed(overlay, args.overlays / f"TitleLabels-{spec.slug}.png", args.check)
 

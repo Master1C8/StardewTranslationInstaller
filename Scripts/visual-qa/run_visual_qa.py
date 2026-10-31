@@ -545,8 +545,11 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
         record = json.loads(evidence.read_text())
         width, height = map(int, size.split("x"))
         focus_samples = re.findall(r"VN_QA_CAPTURE [^\r\n]+ foreground=(True|False)", captured_log)
+        hidden_samples = re.findall(r"VN_QA_CAPTURE [^\r\n]+ hidden=(True|False)", captured_log)
         record.update({"resolution": {"width": width, "height": height},
             "backgroundLaunch": {"requested": True, "captureForegroundSamples": focus_samples,
+                "captureHiddenSamples": hidden_samples,
+                "hiddenVerified": len(hidden_samples) == len(captures) and all(value == "True" for value in hidden_samples),
                 "verified": len(focus_samples) == len(captures) and all(value == "False" for value in focus_samples)},
             "captureScope": "repair-scenes:" + ",".join(stem for stem, _ in captures) if selected else "complete-five-scenes",
             "method": "Project-owned SMAPI bridge; guarded scenes: " + ", ".join(stem for stem, _ in captures) + ". World scenes use the prepared normal save followed by QuickSave restoration. Native framebuffer captured without annotation or resizing; background activation verified per frame.",

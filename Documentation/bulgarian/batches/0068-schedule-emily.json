@@ -4,7 +4,7 @@
   "status": "reviewed",
   "entries": {
     "Fri.000": "Какъв прекрасен тъкачен стан. В момента съм на седмото небе.",
-    "marriage_Mon.002": "Гюс май има проблеми да организира всичко, когато мен ме няма.",
+    "marriage_Mon.002": "Гас май има проблеми да организира всичко, когато мен ме няма.",
     "winter_11.000": "Повечето от нас ходят на годишен лекарски преглед.",
     "marriage_Fri.001": "Идвам тук, за да усетя аромата на плодовете.",
     "winter_11.001": "Докторе, ако е възможно, предпочитам „природно лечение“.",
@@ -45,8 +45,21 @@
     "sourceFidelity": true,
     "targetLanguage": true,
     "glossaryConsistency": true,
-    "corrections": ["Refined Emily's contented mood into her natural conversational register."],
+    "corrections": [
+      "Refined Emily's contented mood into her natural conversational register."
+    ],
     "finalChangedEntriesReread": true,
     "entriesSha256": "937f8bcf8d1557d1dcace1f001d777c64281e7b878165cc4d93924b77dd6407b"
+  },
+  "editorialRepair": {
+    "cycle": "Documentation/bulgarian/repairs/20261025-gus",
+    "status": "independent-diff-review-passed",
+    "changedKeys": [
+      "marriage_Mon.002"
+    ],
+    "priorBatchSha256": "389d0b0f2aad637d8267e5b12b47bbb42915cc8a83c35399205a1b79090c0bfb",
+    "finalReview": "Documentation/bulgarian/repairs/20261031-gus-variants/independent-review.json",
+    "entriesSha256": "7008c986f0af90b7c2318872138cc3afa3e1fe7f38901be58a0ecf8fcc0d23bb",
+    "entriesHashRepresentation": "UTF-8 compact sorted JSON plus LF"
   }
 }

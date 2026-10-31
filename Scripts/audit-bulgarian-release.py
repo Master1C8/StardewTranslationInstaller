@@ -2,6 +2,7 @@
 """Audit the complete Bulgarian package and its runtime registration."""
 
 import json
+import re
 from pathlib import Path
 import struct
 import sys
@@ -35,6 +36,12 @@ def png_size(path: Path):
 
 def main() -> int:
     errors = []
+    gus_name = read(ROOT / "Documentation/glossary/glossary.bg.json")["bg"]["gus"]["term"]
+
+    def check_name(value, identity):
+        if isinstance(value, str) and gus_name == "Гас" and re.search(r"\bг[юъ]с\b", value, re.IGNORECASE):
+            errors.append(f"noncanonical Gus name (expected {gus_name}): {identity}")
+
     files = sorted(TRANSLATIONS.rglob("*.json"))
     expected_includes = [f"assets/translations/bulgarian/{path.relative_to(TRANSLATIONS).as_posix()}"
                          for path in files]
@@ -119,6 +126,7 @@ def main() -> int:
                 records += 1
                 if not isinstance(value, str):
                     errors.append(f"non-string translation: {target} :: {key}")
+                check_name(value, f"{target} :: {key}")
             for key, fields in change.get("Fields", {}).items():
                 if not isinstance(fields, dict) or not fields:
                     errors.append(f"invalid Fields patch: {target} :: {key}")
@@ -131,6 +139,7 @@ def main() -> int:
                     records += 1
                     if not isinstance(value, str):
                         errors.append(f"non-string translation: {target} :: {key}.{field}")
+                    check_name(value, f"{target} :: {key}.{field}")
     if len(files) != 609:
         errors.append(f"Bulgarian patch count is {len(files)}, expected 609")
     if records != 14725 or len(identities) != 14725:

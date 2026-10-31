@@ -142,7 +142,8 @@ struct InstallerCoreTests {
         let core = InstallerCore(
             fileManager: fm,
             mountedVolumeURLs: { [volume] },
-            steamLibraryConfigurationURL: temporary.appendingPathComponent("missing.vdf")
+            steamLibraryConfigurationURL: temporary.appendingPathComponent("missing.vdf"),
+            homeDirectoryURL: temporary.appendingPathComponent("home")
         )
         let installation = try require(core.detectInstallation())
         expect(installation.root.standardizedFileURL == game.standardizedFileURL)
@@ -985,11 +986,38 @@ struct InstallerCoreTests {
             + "4.5.2+abcdef0123456789 SMAPI"
         try Data(smapiMetadata.utf8)
             .write(to: executable.appendingPathComponent("StardewModdingAPI.dll"))
+        try Data("#!/bin/bash\n./StardewModdingAPI \"$@\"\n".utf8)
+            .write(to: executable.appendingPathComponent("StardewValley"))
+        try Data().write(to: executable.appendingPathComponent("StardewModdingAPI"))
+        for name in ["StardewValley", "StardewModdingAPI"] {
+            try fm.setAttributes([.posixPermissions: 0o755], ofItemAtPath: executable.appendingPathComponent(name).path)
+        }
         try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.1"}"#
             .data(using: .utf8)!.write(to: contentPatcher.appendingPathComponent("manifest.json"))
 
         let core = InstallerCore(fileManager: fm)
         let installation = try require(core.resolveInstallation(temporary))
+        expect(core.status(for: installation).readyToInstall)
+
+        let launcher = executable.appendingPathComponent("StardewValley")
+        // A current DLL is insufficient after Steam restores the original launcher.
+        try Data("#!/bin/bash\n# ./StardewModdingAPI \"$@\"\n./\"Stardew Valley\" \"$@\"\n".utf8).write(to: launcher)
+        expect(!core.status(for: installation).smapiFound)
+        expect(!core.status(for: installation).readyToInstall)
+        try Data("#!/bin/bash\n./StardewModdingAPI \"$@\"\n".utf8).write(to: launcher)
+        expect(core.status(for: installation).readyToInstall)
+        try fm.setAttributes([.posixPermissions: 0o644], ofItemAtPath: launcher.path)
+        expect(!core.status(for: installation).smapiFound)
+        try fm.setAttributes([.posixPermissions: 0o755], ofItemAtPath: launcher.path)
+        let runtime = executable.appendingPathComponent("StardewModdingAPI")
+        try fm.setAttributes([.posixPermissions: 0o644], ofItemAtPath: runtime.path)
+        expect(!core.status(for: installation).smapiFound)
+        try fm.setAttributes([.posixPermissions: 0o755], ofItemAtPath: runtime.path)
+        expect(core.status(for: installation).readyToInstall)
+        try fm.removeItem(at: runtime)
+        expect(!core.status(for: installation).smapiFound)
+        try Data().write(to: runtime)
+        try fm.setAttributes([.posixPermissions: 0o755], ofItemAtPath: runtime.path)
         expect(core.status(for: installation).readyToInstall)
 
         try #"{"UniqueID":"Pathoschild.ContentPatcher","Version":"2.9.0"}"#

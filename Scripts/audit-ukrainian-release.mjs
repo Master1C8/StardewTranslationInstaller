@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import crypto from "node:crypto";
-import childProcess from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { sourceJSONFiles } from "./lib/source-json-files.mjs";
@@ -214,12 +213,8 @@ for (const [relative, expected] of [
   ["assets/button-ukrainian.png", verification?.staticAssets?.buttonSHA256],
   ["assets/title/TitleButtons-ukrainian.png", verification?.staticAssets?.titleButtonsSHA256],
 ]) if (hash(fs.readFileSync(path.join(payload, relative))) !== expected) errors.push(`Verified artifact changed: ${relative}`);
-const app = path.join(root, "dist/Stardew Translation Installer.app");
-try {
-  childProcess.execFileSync("codesign", ["--verify", "--deep", "--strict", app], { stdio: "pipe" });
-} catch {
-  errors.push("Release app fails deep strict code-signature verification");
-}
+// This is a pre-build data audit. Scripts/release-audit.sh verifies the actual
+// delivered app's signature after building it, including a clean dist directory.
 
 const wordingFingerprint = hash(JSON.stringify(records.map(record => [record.target, record.key, record.translation])));
 if (editorialAudit?.wordingFingerprint !== wordingFingerprint

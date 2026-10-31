@@ -82,14 +82,17 @@ struct InstallerCore {
     let fileManager: FileManager
     let mountedVolumeURLs: () -> [URL]
     let steamLibraryConfigurationURL: URL?
+    let homeDirectoryURL: URL
 
     init(
         fileManager: FileManager = .default,
         mountedVolumeURLs: (() -> [URL])? = nil,
-        steamLibraryConfigurationURL: URL? = nil
+        steamLibraryConfigurationURL: URL? = nil,
+        homeDirectoryURL: URL? = nil
     ) {
         self.fileManager = fileManager
         self.steamLibraryConfigurationURL = steamLibraryConfigurationURL
+        self.homeDirectoryURL = homeDirectoryURL ?? fileManager.homeDirectoryForCurrentUser
         self.mountedVolumeURLs = mountedVolumeURLs ?? {
             fileManager.mountedVolumeURLs(
                 includingResourceValuesForKeys: nil,
@@ -99,7 +102,7 @@ struct InstallerCore {
     }
 
     func detectInstallation() -> GameInstallation? {
-        let home = fileManager.homeDirectoryForCurrentUser
+        let home = homeDirectoryURL
         let steamRoot = home.appendingPathComponent("Library/Application Support/Steam")
         var candidates = [
             steamRoot.appendingPathComponent("steamapps/common/Stardew Valley"),
@@ -186,7 +189,7 @@ struct InstallerCore {
     func status(for installation: GameInstallation, package: TranslationPackage?) -> InstallationStatus {
         let smapiFound = installedSMAPIVersion(in: installation).map {
             $0 >= SemanticVersion(Self.minimumSMAPIVersion)!
-        } ?? false
+        } == true && hasSMAPILauncher(in: installation)
         let contentPatcherFolders = modFolders(
             withUniqueID: "Pathoschild.ContentPatcher",
             below: installation.modsDirectory
@@ -327,6 +330,21 @@ struct InstallerCore {
             return SemanticVersion(String(strings[range]))
         }
         return nil
+    }
+
+    // Steam can restore the vanilla launcher while leaving SMAPI's DLL intact.
+    // Treat that partial installation as missing so the official installer repairs it.
+    func hasSMAPILauncher(in installation: GameInstallation) -> Bool {
+        let directory = installation.executableDirectory
+        let launcher = directory.appendingPathComponent("StardewValley")
+        let runtime = directory.appendingPathComponent("StardewModdingAPI")
+        guard fileManager.isExecutableFile(atPath: launcher.path),
+              fileManager.isExecutableFile(atPath: runtime.path),
+              let script = try? String(contentsOf: launcher, encoding: .utf8) else {
+            return false
+        }
+        let invocation = #"(?m)^\h*(?:exec\h+)?(?:\./StardewModdingAPI|"\./StardewModdingAPI"|\./"StardewModdingAPI")(?=\h|$)"#
+        return script.range(of: invocation, options: .regularExpression) != nil
     }
 
     func manifestVersion(in folder: URL) -> SemanticVersion? {

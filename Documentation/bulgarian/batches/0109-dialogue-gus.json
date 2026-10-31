@@ -3,7 +3,7 @@
   "target": "Characters/Dialogue/Gus",
   "status": "reviewed",
   "entries": {
-    "Introduction": "Е, здравей! Аз съм Гюс, готвач и собственик на Салона „Звездна капка“.#$e#Отбий се, ако имаш нужда от нещо освежаващо. Винаги имам готови горещо кафе и студена бира.$h",
+    "Introduction": "Е, здравей! Аз съм Гас, готвач и собственик на Салона „Звездна капка“.#$e#Отбий се, ако имаш нужда от нещо освежаващо. Винаги имам готови горещо кафе и студена бира.$h",
     "AcceptGift_(O)StardropTea": "О, уау, благодаря! Изкушавам се да изпия всичко, но ще запазя малко за Салона „Звездна капка“. Обзалагам се, че мога да направя интересен коктейл с това!",
     "AcceptGift_Positive_category_cooking": "*подушва*... Ах. Изискана кухня. Знаеш какво харесвам, @.$h",
     "accept_865": "*подушва* подушва* ... тази остра миризма!#$b#*сърб* *сърб* ... този пикантен вкус! Тази зърнеста текстура!#$b#Това може да е само гурме доматена сол! Ще я разменя с теб.",
@@ -94,5 +94,16 @@
     ],
     "finalChangedEntriesReread": true,
     "entriesSha256": "f63128e4c8b68bdedb0edde8f9b6628f05a3646a68d1c74b106e78240d16b976"
+  },
+  "editorialRepair": {
+    "cycle": "Documentation/bulgarian/repairs/20261025-gus",
+    "status": "independent-diff-review-passed",
+    "changedKeys": [
+      "Introduction"
+    ],
+    "priorBatchSha256": "6cd0352cf5fc51924f953ca50f20edd743aa9a3d1dc73a2aeb1e581a96cf6c97",
+    "finalReview": "Documentation/bulgarian/repairs/20261031-gus-variants/independent-review.json",
+    "entriesSha256": "1bad9b5c0f182845dfe80ec4aec0b8102a731c3c3755d58eca749969a49c3561",
+    "entriesHashRepresentation": "UTF-8 compact sorted JSON plus LF"
   }
 }

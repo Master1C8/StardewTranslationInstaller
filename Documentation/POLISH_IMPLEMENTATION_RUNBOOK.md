@@ -331,6 +331,28 @@ skip them when Testing module discovery differs from Xcode.
 ./Scripts/test-swift.sh
 ```
 
+### macOS launcher integrity
+
+SMAPI's DLL version alone does not establish a working Steam launch. Steam can
+restore the original `StardewValley` script while retaining current SMAPI files.
+`InstallerCore.status` must require executable `StardewValley` and
+`StardewModdingAPI` files and an active SMAPI invocation in the launcher.
+A missing, vanilla, or non-executable launcher makes SMAPI unavailable, causing
+`DependencyInstaller` to reapply the checksum-pinned official installer and
+verify the complete status before reporting success.
+
+Regression: retain a current SMAPI DLL and Content Patcher, restore a vanilla
+launcher containing only a commented SMAPI reference, and verify that readiness
+is false. Restore the official launcher and verify readiness is true; missing
+or non-executable runtime/launcher files must also reject readiness. Native
+fixture tests exercise detection; the delivered-app test must exercise automatic
+repair and a subsequent Steam launch separately.
+
+Data auditors run before packaging and must not require a previous app in `dist/`.
+`Scripts/release-audit.sh` owns deep strict signature verification of the newly
+built app. Regression: a clean output directory passes the data stage, while an
+invalid final signature still fails the common post-build gate.
+
 Без явного `DEVELOPER_DIR` возможна несовместимость версии компилятора и SDK. В ограниченной среде SwiftPM также может попытаться записать module cache вне разрешённой папки; отдельный путь в `/private/tmp` делает запуск воспроизводимым.
 
 При синхронизации проекта на рабочий стол простой `rsync -a` тоже не удаляет устаревшие файлы. Если файл был удалён из исходников, отдельно проверить его отсутствие в:

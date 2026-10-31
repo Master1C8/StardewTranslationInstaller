@@ -57,6 +57,17 @@ public sealed class ModEntry : Mod
     private static readonly FieldInfo ColorPickerBounds = AccessTools.Field(typeof(ColorPicker), "bounds")
         ?? throw new MissingFieldException(typeof(ColorPicker).FullName, "bounds");
     private static readonly ConditionalWeakTable<SpriteFont, Dictionary<char, SpriteFont.Glyph>> CharacterFontGlyphs = new();
+    private sealed class RtlTooltipLayout
+    {
+        public readonly ArabicScriptTextAdapter Adapter;
+        public readonly string? Title;
+        public readonly string Category;
+        public Rectangle? Bounds;
+        public RtlTooltipLayout(ArabicScriptTextAdapter adapter, string? title, string category)
+        { Adapter = adapter; Title = title; Category = category; }
+    }
+    [ThreadStatic]
+    private static RtlTooltipLayout? CurrentTooltipLayout;
     private sealed record ParsedTextLayout(SpriteFont Font, int Width, ArabicScriptTextAdapter Adapter);
     private static readonly ConditionalWeakTable<string, ParsedTextLayout> ParsedTextLayouts = new();
     [ThreadStatic]
@@ -194,6 +205,16 @@ public sealed class ModEntry : Mod
             prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeCharacterCreationDraw)),
             finalizer: new HarmonyMethod(typeof(ModEntry), nameof(FinishCharacterCreationDraw)));
 
+        foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(IClickableMenu)).Where(method =>
+            method.Name == nameof(IClickableMenu.drawHoverText) && method.GetParameters()[1].ParameterType == typeof(StringBuilder)))
+            harmony.Patch(method, prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeginTooltipRendering)),
+                finalizer: new HarmonyMethod(typeof(ModEntry), nameof(FinishTooltipRendering)));
+        foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(IClickableMenu)).Where(method =>
+            method.Name == nameof(IClickableMenu.drawTextureBox) && method.GetParameters().Length >= 8
+            && method.GetParameters()[1].ParameterType == typeof(Texture2D)
+            && method.GetParameters()[2].ParameterType == typeof(Rectangle)))
+            harmony.Patch(method, prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeTooltipBox)));
+
         // SpriteFont paragraphs (journal descriptions/objectives, among others)
         // are wrapped by parseText and drawn separately through Utility. Their
         // DrawString call has no width, so preserve the actual wrapping region
@@ -215,6 +236,28 @@ public sealed class ModEntry : Mod
                 prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeBoundedSpriteFontText)),
                 finalizer: textHarmonyFinalizer);
         }
+    }
+
+    private static void BeginTooltipRendering(object[] __args, out RtlTooltipLayout? __state)
+    {
+        __state = CurrentTooltipLayout;
+        ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
+        // Crafting titles can have a separate count appended on their right;
+        // leave that distinct composite layout to its own binding.
+        CurrentTooltipLayout = adapter is not null && __args[9] is Item item && __args[16] is null
+            ? new RtlTooltipLayout(adapter, __args[6] as string, item.getCategoryName()) : null;
+    }
+
+    private static Exception? FinishTooltipRendering(Exception? __exception, RtlTooltipLayout? __state)
+    {
+        CurrentTooltipLayout = __state;
+        return __exception;
+    }
+
+    private static void BeforeTooltipBox(int __3, int __4, int __5, int __6)
+    {
+        if (CurrentTooltipLayout is { Bounds: null } layout)
+            layout.Bounds = new Rectangle(__3, __4, __5, __6);
     }
 
     private static void BeforeCharacterCreationDraw(CharacterCustomization __instance, out List<CharacterLabelState> __state)
@@ -1090,7 +1133,8 @@ public sealed class ModEntry : Mod
     // Bind explicit ref arguments, including SpriteText's layout parameters.
     private static bool BeforeStringRendering(object? __instance, MethodBase __originalMethod, object[] __args, ref string __1, out bool __state)
     {
-        if (TryDrawSpriteFontParagraph(__instance, __originalMethod, __args, out __state)) return false;
+        if (TryDrawTooltipHeader(__instance, __originalMethod, __args, out __state)
+            || TryDrawSpriteFontParagraph(__instance, __originalMethod, __args, out __state)) return false;
         bool run = BeforeTextRendering(__originalMethod, __args, out __state);
         __1 = (string)__args[1];
         return run;
@@ -1098,10 +1142,54 @@ public sealed class ModEntry : Mod
 
     private static bool BeforeBuilderRendering(object? __instance, MethodBase __originalMethod, object[] __args, ref StringBuilder __1, out bool __state)
     {
-        if (TryDrawSpriteFontParagraph(__instance, __originalMethod, __args, out __state)) return false;
+        if (TryDrawTooltipHeader(__instance, __originalMethod, __args, out __state)
+            || TryDrawSpriteFontParagraph(__instance, __originalMethod, __args, out __state)) return false;
         bool run = BeforeTextRendering(__originalMethod, __args, out __state);
         __1 = (StringBuilder)__args[1];
         return run;
+    }
+
+    private static bool TryDrawTooltipHeader(object? renderer, MethodBase method, object[] arguments, out bool state)
+    {
+        state = false;
+        if (TextRenderingDepth > 0 || renderer is not SpriteBatch
+            || method.DeclaringType != typeof(SpriteBatch) || arguments[0] is not SpriteFont font
+            || arguments[2] is not Vector2 position || CurrentTooltipLayout is not { Bounds: Rectangle bounds } layout
+            || !ReferenceEquals(CurrentRtlAdapter(), layout.Adapter)) return false;
+        string? text = arguments[1] is string value ? value : (arguments[1] as StringBuilder)?.ToString();
+        if (text is null || (text != layout.Title && text != layout.Category)
+            || !layout.Adapter.ContainsRightToLeftText(text)) return false;
+        ParameterInfo[] parameters = method.GetParameters();
+        int IndexOf(string name) => Array.FindIndex(parameters, p => p.Name == name);
+        int rotation = IndexOf("rotation"), origin = IndexOf("origin"), effects = IndexOf("effects"), scaleIndex = IndexOf("scale");
+        if ((rotation >= 0 && (float)arguments[rotation] != 0f)
+            || (origin >= 0 && (Vector2)arguments[origin] != Vector2.Zero)
+            || (effects >= 0 && (SpriteEffects)arguments[effects] != SpriteEffects.None)) return false;
+        Vector2 scale = scaleIndex < 0 ? Vector2.One : arguments[scaleIndex] is Vector2 vector
+            ? vector : new Vector2((float)arguments[scaleIndex]);
+        TextRenderingDepth += 1;
+        state = true;
+        try
+        {
+            float shadowOffset = position.X - (bounds.Left + 16);
+            string[] lines = text.Replace("\r\n", "\n", StringComparison.Ordinal).Split('\n');
+            for (int index = 0; index < lines.Length; index++)
+            {
+                string visual = layout.Adapter.Transform(lines[index]);
+                object[] lineArguments = (object[])arguments.Clone();
+                lineArguments[1] = arguments[1] is StringBuilder ? new StringBuilder(visual) : visual;
+                lineArguments[2] = new Vector2(bounds.Right - 16 - font.MeasureString(visual).X * scale.X + shadowOffset,
+                    position.Y + index * font.LineSpacing * scale.Y);
+                ((MethodInfo)method).Invoke(renderer, lineArguments);
+            }
+            return true;
+        }
+        catch
+        {
+            TextRenderingDepth -= 1;
+            state = false;
+            throw;
+        }
     }
 
     private static bool TryDrawSpriteFontParagraph(object? renderer, MethodBase method, object[] arguments, out bool state)

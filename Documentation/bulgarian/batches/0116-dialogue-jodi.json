@@ -8,7 +8,7 @@
     "Resort_Entering": "Какво удоволствие!",
     "Resort_Leaving": "Мисля тази вечер да приготвя морски дарове.$h",
     "Resort": "Гледката спира дъха! Наситено синьо докъдето поглед стига...",
-    "Resort_Bar": "Всички обичаме, когато Гюс се появи.",
+    "Resort_Bar": "Всички обичаме, когато Гас се появи.",
     "dating_Sam_memory_oneday": "Чух за теб и Сам. Дано не ти създава неприятности!$h",
     "married_Sam": "Толкова се радвам за теб и Сам. Мисля, че сте създадени един за друг!#$e#Не вярвах, че някога ще го кажа... но ще ми липсват ужасните звуци от китарата на Сам...$s",
     "GreenRain": "Добре ли си? Никога преди не сме виждали нещо подобно...$s#$e#Иска ми се съпругът ми да беше тук. Той щеше да знае точно какво да направи.$s",
@@ -119,8 +119,21 @@
     "sourceFidelity": true,
     "targetLanguage": true,
     "glossaryConsistency": true,
-    "corrections": ["Removed unsupported player-gender assumptions and preserved Jodi's domestic register."],
+    "corrections": [
+      "Removed unsupported player-gender assumptions and preserved Jodi's domestic register."
+    ],
     "finalChangedEntriesReread": true,
     "entriesSha256": "149772afa8ef70581e111c49f649bef370d229998ff4a3734745776b159ad35a"
+  },
+  "editorialRepair": {
+    "cycle": "Documentation/bulgarian/repairs/20261025-gus",
+    "status": "independent-diff-review-passed",
+    "changedKeys": [
+      "Resort_Bar"
+    ],
+    "priorBatchSha256": "a5d1662ee8077cec76cc360391c8583106e358f11bfa2585a1308f6f9b780813",
+    "finalReview": "Documentation/bulgarian/repairs/20261031-gus-variants/independent-review.json",
+    "entriesSha256": "27f5a73637505893630e85189db3540816bdbebe430d54eb542167de34d24d9c",
+    "entriesHashRepresentation": "UTF-8 compact sorted JSON plus LF"
   }
 }

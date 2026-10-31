@@ -190,6 +190,8 @@ void CheckNestedRenderingPatch()
         harmony.Patch(typeof(ProbeRenderer).GetMethod("DrawBounded")!,
             prefix: new HarmonyMethod(modEntry.GetMethod("BeforeBoundedSpriteFontText", BindingFlags.Static | BindingFlags.NonPublic)!),
             finalizer: new HarmonyMethod(finalizer));
+        harmony.Patch(typeof(ProbeRenderer).GetMethod("Box")!,
+            prefix: new HarmonyMethod(modEntry.GetMethod("BeforeTooltipBox", BindingFlags.Static | BindingFlags.NonPublic)!));
         foreach (MethodInfo method in typeof(SpriteBatch).GetMethods().Where(m => m.Name == "DrawString"
             && m.GetParameters().Length >= 4 && m.GetParameters()[2].ParameterType == typeof(Vector2)))
         {
@@ -229,6 +231,7 @@ void CheckNestedRenderingPatch()
                     throw new InvalidDataException("RTL patch changed a Latin-only label.");
                 CheckBoundedParagraph(locale, activeAdapter, logical);
                 CheckSpriteBatchParagraph(locale, activeAdapter, logical);
+                CheckTooltipHeaders(locale, activeAdapter, logical);
             }
         }
         finally { harmony.UnpatchAll(harmony.Id); }
@@ -239,6 +242,41 @@ void CheckNestedRenderingPatch()
         languageField.SetValue(null, savedLanguage);
         modLanguageField.SetValue(null, savedModLanguage);
     }
+}
+
+void CheckTooltipHeaders(string locale, ArabicScriptTextAdapter adapter, string logical)
+{
+    Type owner = typeof(ModEntry);
+    Type layoutType = owner.GetNestedType("RtlTooltipLayout", BindingFlags.NonPublic)!;
+    FieldInfo current = owner.GetField("CurrentTooltipLayout", BindingFlags.Static | BindingFlags.NonPublic)!;
+    object? previous = current.GetValue(null);
+    string category = logical.Split(' ')[0];
+    object layout = Activator.CreateInstance(layoutType, new object[] { adapter, logical, category })!;
+    current.SetValue(null, layout);
+    try
+    {
+        ProbeRenderer.Box(null!, null!, Rectangle.Empty, 80, 100, 360, 220);
+        if (layoutType.GetField("Bounds")!.GetValue(layout) is not Rectangle bounds || bounds != new Rectangle(80,100,360,220))
+            throw new InvalidDataException("Tooltip box positional binding failed.");
+        var chars = adapter.Transform(logical).Append('?').Append(' ').Distinct().OrderBy(c => c).ToList();
+        var font = new SpriteFont(null!, chars.Select(_ => new Rectangle(0,0,7,16)).ToList(),
+            chars.Select(_ => new Rectangle(0,0,7,16)).ToList(), chars,20,0f,
+            chars.Select(_ => new Vector3(0,7,1)).ToList(), '?');
+        var batch = (SpriteBatch)System.Runtime.Serialization.FormatterServices.GetUninitializedObject(typeof(SpriteBatch));
+        foreach (string text in new[] { logical, category })
+        foreach (int shadow in new[] { 0, 2 })
+        {
+            ProbeRenderer.Lines.Clear();
+            batch.DrawString(font, text, new Vector2(96+shadow,120+shadow), Color.DarkBlue);
+            if (ProbeRenderer.Lines.Count != 1 || ProbeRenderer.Lines[0].Text != adapter.Transform(text)
+                || Math.Abs(ProbeRenderer.Lines[0].Position.X + font.MeasureString(adapter.Transform(text)).X - (424+shadow)) > .01f
+                || ProbeRenderer.Lines[0].Position.Y != 120+shadow || ProbeRenderer.Lines[0].Color != Color.DarkBlue)
+                throw new InvalidDataException("Tooltip title/category edge/shadow/style failed: " + locale);
+            if (owner.GetField("TextRenderingDepth",BindingFlags.Static|BindingFlags.NonPublic)!.GetValue(null) is not 0)
+                throw new InvalidDataException("Tooltip rendering guard leaked.");
+        }
+    }
+    finally { current.SetValue(null, previous); }
 }
 
 void CheckSpriteBatchParagraph(string locale, ArabicScriptTextAdapter activeAdapter, string logical)
@@ -311,6 +349,8 @@ void CheckBoundedParagraph(string locale, ArabicScriptTextAdapter activeAdapter,
 
 public static class ProbeRenderer
 {
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void Box(object b, Texture2D texture, Rectangle source, int x, int y, int width, int height) { }
     public static readonly List<(string Text, Vector2 Position, Color Color, float Scale)> Lines = new();
     public static bool ObserveSpriteBatch(object[] __args)
     {

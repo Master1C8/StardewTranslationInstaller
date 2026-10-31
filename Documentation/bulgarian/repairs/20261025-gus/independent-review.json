@@ -1,0 +1,149 @@
+{
+  "reviewer": {
+    "task": "/root/bulgarian_diff_review",
+    "sessionId": "01a192ab-172f-7de1-8409-8c89a889467c",
+    "model": "gpt-6.1-sol",
+    "reasoning": "medium"
+  },
+  "status": "findings",
+  "reviewedIds": [
+    "Characters/Dialogue/Abigail:Resort_Bar",
+    "Characters/Dialogue/Caroline:Resort_Bar",
+    "Characters/Dialogue/Elliott:Resort_Bar",
+    "Characters/Dialogue/Elliott:GreenRain",
+    "Characters/Dialogue/Emily:Tue",
+    "Characters/Dialogue/Emily:Tue4",
+    "Characters/Dialogue/Emily:summer_Fri",
+    "Characters/Dialogue/Emily:summer_Fri6",
+    "Characters/Dialogue/Gus:Introduction",
+    "Characters/Dialogue/Haley:Resort_Bar",
+    "Characters/Dialogue/Harvey:Resort_Bar",
+    "Characters/Dialogue/Jodi:Resort_Bar",
+    "Characters/Dialogue/Lewis:Resort_Bar",
+    "Characters/Dialogue/Lewis:Saloon_Entry",
+    "Characters/Dialogue/Lewis:summer_Thu",
+    "Characters/Dialogue/Lewis:fall_Fri4",
+    "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_0",
+    "Characters/Dialogue/MarriageDialogueSam:Outdoor_3",
+    "Characters/Dialogue/Pam:Saloon_Entry",
+    "Characters/Dialogue/Pam:Saloon_Tue",
+    "Characters/Dialogue/Pam:Saloon_Fri",
+    "Characters/Dialogue/Pam:Sun",
+    "Characters/Dialogue/Pierre:Resort_Bar",
+    "Characters/Dialogue/Sam:winter_7",
+    "Data/CookingRecipes:Salmon Dinner",
+    "Data/CookingRecipes:Cran. Sauce",
+    "Data/Events/AnimalShop:3910974/f Shane 1700/e 3910975/p Shane",
+    "Data/Events/Saloon:96/f Gus 1000/f Pam 500/p Gus",
+    "Data/Events/Saloon:911526/f Alex 2500/t 1900 2200/n joshMessage",
+    "Data/Events/Saloon:3917590/n saloonSportsRoom/O Alex",
+    "Data/Events/Saloon:3206194/n gusGiantOmelet",
+    "Data/Events/SeedShop:963113/n pierreQualityCrops",
+    "Data/Events/Town:191393/Hn ccFishTank/Hn ccBulletin/Hn ccPantry/Hn ccVault/Hn ccBoilerRoom/Hn ccCraftsRoom/Hl jojaFishTank/Hl jojaPantry/Hl jojaVault/Hl jojaBoilerRoom/Hl jojaCraftsRoom/Hl JojaMember/w sunny/H",
+    "Data/Festivals/fall16:Evelyn",
+    "Data/Festivals/fall16:Elliott",
+    "Data/Festivals/fall16:Harvey",
+    "Data/Festivals/fall16:set-up_y2",
+    "Data/Festivals/fall27:Evelyn",
+    "Data/Festivals/spring13:set-up_y2",
+    "Data/Festivals/spring13:mainEvent_y2",
+    "Data/Festivals/spring24:set-up_y2",
+    "Data/Festivals/summer11:set-up",
+    "Data/Festivals/summer11:set-up_y2",
+    "Data/Festivals/summer11:Caroline_y2",
+    "Data/Festivals/summer28:Pam",
+    "Data/Festivals/winter25:Leah",
+    "Data/Quests:114",
+    "Data/Quests:121",
+    "Data/Quests:125",
+    "Data/mail:Gus",
+    "Data/mail:GusCooking",
+    "Data/mail:winter_26_1",
+    "Data/mail:fall_6_2",
+    "Data/mail:winter_19_2",
+    "Data/mail:gusGiantOmelet",
+    "Data/mail:GreenRainGus",
+    "Strings/1_6_Strings:Scholar_Question_0_0_Answers",
+    "Strings/Characters:Phone_Gus_Closed",
+    "Strings/Characters:Phone_Gus_Festival",
+    "Strings/Characters:Phone_Gus_Closed_NoDishOfTheDay",
+    "Strings/Locations:Saloon_MoneyBox",
+    "Strings/NPCNames:Gus",
+    "Strings/SpecialOrderStrings:Gus_Name",
+    "Strings/SpecialOrderStrings:Gus_Text",
+    "Strings/SpecialOrderStrings:Gus_Objective_1_Text",
+    "Strings/StringsFromCSFiles:ItemDeliveryQuest.cs.13462",
+    "Strings/schedules/Emily:marriage_Mon.002",
+    "Strings/schedules/Shane:marriage_Fri.002"
+  ],
+  "closureSha256": "50b5595eeaa3e57996414315e303fe3a6e77d23f7663e807c6786c550c89bf4f",
+  "findings": [
+    {
+      "id": "Characters/Dialogue/Lewis:Resort_Bar",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Characters/Dialogue/Lewis:Saloon_Entry",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Characters/Dialogue/Lewis:summer_Thu",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Characters/Dialogue/Lewis:fall_Fri4",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Characters/Dialogue/MarriageDialogueSam:Outdoor_3",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Data/Events/AnimalShop:3910974/f Shane 1700/e 3910975/p Shane",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Data/Events/SeedShop:963113/n pierreQualityCrops",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Data/Events/Town:191393/Hn ccFishTank/Hn ccBulletin/Hn ccPantry/Hn ccVault/Hn ccBoilerRoom/Hn ccCraftsRoom/Hl jojaFishTank/Hl jojaPantry/Hl jojaVault/Hl jojaBoilerRoom/Hl jojaCraftsRoom/Hl JojaMember/w sunny/H",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Strings/SpecialOrderStrings:Gus_Name",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Strings/SpecialOrderStrings:Gus_Text",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    },
+    {
+      "id": "Strings/SpecialOrderStrings:Gus_Objective_1_Text",
+      "reason": "Visible Gus name differs from approved glossary",
+      "before": "Гъс",
+      "after": "Гас"
+    }
+  ],
+  "reviewedAt": "2026-10-31T15:55:32Z"
+}

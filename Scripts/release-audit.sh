@@ -14,6 +14,8 @@ if [[ -n "${STARDEW_GAME_PATH:-}" ]]; then
 fi
 
 node --test Scripts/lib/source-json-files.test.mjs
+"$python_bin" -B -m unittest discover -s Tests -p 'test_build_provenance.py'
+"$python_bin" -B -m unittest discover -s Tests -p 'test_macos_distribution.py'
 PYTHON_BIN="$python_bin" ./Scripts/audit-locale-data.sh
 ./Scripts/build-title-buttons.sh --check
 ./Scripts/compress-xnb-fonts.swift --verify
@@ -32,4 +34,4 @@ for architecture in arm64 x86_64; do
   lipo -verify_arch "$architecture" "${VNREVIVAL_RELEASE_DIR:-dist}/Stardew Translation Installer.app/Contents/MacOS/Stardew Translation Installer"
 done
 
-echo "Technical release audit passed. Glossary publication and live visual gates remain separate mandatory checks."
+echo "Technical release audit passed. macOS Gatekeeper/notarization, glossary publication and live visual gates remain separate mandatory checks."

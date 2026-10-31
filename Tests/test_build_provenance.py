@@ -2,6 +2,7 @@ import importlib.util
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 
 spec = importlib.util.spec_from_file_location("build_provenance", Path(__file__).parents[1] / "Scripts/build-provenance.py")
@@ -10,6 +11,14 @@ spec.loader.exec_module(module)
 
 
 class ProvenanceTests(unittest.TestCase):
+    def test_default_recipe_rejects_unnotarized_distribution_before_build(self):
+        with patch("sys.argv", ["build-provenance.py", "--release", "dist/test", "--game-path", "/fixture"]):
+            with patch.object(module, "git") as git:
+                with self.assertRaises(SystemExit) as result:
+                    module.main()
+                self.assertEqual(result.exception.code, 2)
+                git.assert_not_called()
+
     def test_roundtrip_rejects_modified_or_missing_files(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

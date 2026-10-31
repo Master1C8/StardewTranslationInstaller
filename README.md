@@ -54,7 +54,7 @@ download instructions or establish the provenance of newly generated files.
 
 ## Local provenance builds
 
-Use `python3 Scripts/build-provenance.py --release dist/NEW_RELEASE_DIRECTORY
+Use `python3 Scripts/build-provenance.py --allow-unnotarized-local --release dist/NEW_RELEASE_DIRECTORY
 --game-path /path/to/Stardew/Contents/MacOS` from clean, pushed canonical main.
 The recipe runs the complete technical audit and both platform builds locally,
 records the actual source commit, tool identities, resource inventory and read-only
@@ -64,6 +64,13 @@ reviewed and committed before the provenance build. No cloud build or paid signi
 service is required. `Scripts/csc-dotnet.sh` uses the installed .NET SDK compiler;
 `CSC_BIN` explicitly selects it without a NuGet dependency restore. Exact older
 archives retain their original provenance status.
+
+These are explicitly local test artifacts. A successful local launch and valid
+ad-hoc signature do not establish that a browser-downloaded copy passes Gatekeeper.
+For download-ready macOS distribution, use `Scripts/build-release-app.sh` with an
+available Developer ID Application identity and notary keychain profile. That path
+requires a stapled notarization ticket and a successful `spctl --assess` result.
+The provenance recipe refuses to run without the explicit local-only flag.
 
 Source JSON audits share `Scripts/lib/source-json-files.mjs` to exclude `dist/`
 and build/environment caches. A malformed saved CLI log must not block a release;

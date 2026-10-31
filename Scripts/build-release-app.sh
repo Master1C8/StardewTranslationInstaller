@@ -10,17 +10,20 @@ trap 'rm -rf "$work"' EXIT
 
 : "${CODESIGN_IDENTITY:?Set CODESIGN_IDENTITY to a Developer ID Application identity.}"
 : "${NOTARY_KEYCHAIN_PROFILE:?Set NOTARY_KEYCHAIN_PROFILE to an xcrun notarytool keychain profile.}"
+python3 "$project_dir/Scripts/check-macos-distribution.py" --prerequisites
 
 "$project_dir/Scripts/release-audit.sh"
 CODESIGN_IDENTITY="$CODESIGN_IDENTITY" "$project_dir/Scripts/build-app.sh"
 codesign --verify --deep --strict --verbose=2 "$app"
-lipo "$app/Contents/MacOS/Stardew Translation Installer" -verify_arch arm64 x86_64
+lipo "$app/Contents/MacOS/Stardew Translation Installer" -verify_arch arm64
+lipo "$app/Contents/MacOS/Stardew Translation Installer" -verify_arch x86_64
 ditto -c -k --keepParent "$app" "$work/submission.zip"
 xcrun notarytool submit "$work/submission.zip" \
   --keychain-profile "$NOTARY_KEYCHAIN_PROFILE" \
   --wait
 xcrun stapler staple "$app"
 xcrun stapler validate "$app"
+python3 "$project_dir/Scripts/check-macos-distribution.py" --app "$app"
 ditto -c -k --keepParent "$app" "$archive"
 unzip -t "$archive"
 echo "$archive"

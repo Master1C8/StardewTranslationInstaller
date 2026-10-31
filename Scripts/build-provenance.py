@@ -59,7 +59,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release", required=True, type=Path)
     parser.add_argument("--game-path", required=True, type=Path)
+    parser.add_argument("--allow-unnotarized-local", action="store_true",
+                        help="Explicitly build local test artifacts which Gatekeeper may block after download")
     args = parser.parse_args()
+    if not args.allow_unnotarized_local:
+        parser.error("This recipe creates ad-hoc, unnotarized local artifacts, not a download-ready macOS release. "
+                     "Use Scripts/build-release-app.sh for Developer ID signing and notarization, "
+                     "or explicitly select --allow-unnotarized-local for local testing only.")
     root = Path(__file__).resolve().parents[1]
     out = args.release.resolve()
     game = args.game_path.resolve()
@@ -150,7 +156,7 @@ def main():
                       "gameReferencesSha256": sha(out / "game-reference-materials.json")},
         "artifacts": records,
         "assurance": {"statement": "unsigned local build record", "publisherSignature": None,
-                      "notarization": None,
+                      "notarization": None, "macOSDistributionReady": False,
                       "runtimeBoundary": "Native installer fixtures, isolated language-switcher probes and data/font audits; no new real-game run"}
     }, indent=2) + "\n")
     print(json.dumps({"sourceCommit": commit, "artifacts": records}))

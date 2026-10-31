@@ -7,7 +7,7 @@
     "hudGeometryCasesPassed": 6,
     "fullTechnicalReleaseAudit": "pass"
   },
-  "nativeMacOS": "final universal app automatic repair passed from vanilla launcher/current DLL state; all 5312 installed payload files matched source",
+  "nativeMacOS": "local unquarantined universal app automatic repair passed; all 5312 installed payload files matched source. Browser-downloaded app failed Gatekeeper before installer execution.",
   "visual": "five affected full frames plus repaired Arabic date crop passed; superseded findings retained",
   "windows": "cross-compilation, PE metadata and complete archive materials passed; native Windows run not performed",
   "artifacts": [
@@ -46,5 +46,16 @@
     "archiveReadback": "both exact final archives returned SKIP through public CLI dry runs",
     "cardApply": "three changes applied; cache invalidated; publication and visibility preserved",
     "publicIntegrityGuideRegistry": "new archive evidence is not yet in the deployed site registry; no site deployment performed"
+  },
+  "macOSDistribution": {
+    "status": "blocked",
+    "verifiedOn": "2026-11-01",
+    "archiveSha256": "5618fc084552b7e373a749e54bca9b01d4eee10f40d3ff52e480c6ec97dda12a",
+    "codesign": "valid ad-hoc signature; not publisher-signed",
+    "stapler": "failed: no stapled ticket (exit 65)",
+    "gatekeeper": "rejected (exit 3); syspolicyd terminated downloaded AppTranslocation process 2736 on 2026-11-01 at 00:10:13 local time",
+    "missingPrerequisite": "Developer ID Application identity/private key and configured notarization credentials",
+    "localEvidence": "dist/manual-arabic-launch-20261101/",
+    "scope": "CPU architecture is not the observed failure; Gatekeeper rejected before app code ran. No quarantine removal, security policy bypass or replacement upload performed."
   }
 }

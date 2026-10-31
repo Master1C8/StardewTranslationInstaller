@@ -1,0 +1,50 @@
+{
+  "version": "1.17.30",
+  "buildCommit": "42ee049859be7953f75c54bf5d96278e88ad6a56",
+  "nativeTests": {
+    "swiftPassed": 15,
+    "captureLauncherTestsPassed": 2,
+    "hudGeometryCasesPassed": 6,
+    "fullTechnicalReleaseAudit": "pass"
+  },
+  "nativeMacOS": "final universal app automatic repair passed from vanilla launcher/current DLL state; all 5312 installed payload files matched source",
+  "visual": "five affected full frames plus repaired Arabic date crop passed; superseded findings retained",
+  "windows": "cross-compilation, PE metadata and complete archive materials passed; native Windows run not performed",
+  "artifacts": [
+    {
+      "platform": "windows",
+      "filename": "Stardew-Installer-Windows-1.17.30.zip",
+      "sha256": "fa33e8d340f714da85291ba8dc8957f4061a087b67473f8d491cdbbba640a84b",
+      "sizeBytes": 26051690,
+      "verifiedEntries": 5318
+    },
+    {
+      "platform": "macos",
+      "filename": "Stardew-Installer-macOS-1.17.30.zip",
+      "sha256": "5618fc084552b7e373a749e54bca9b01d4eee10f40d3ff52e480c6ec97dda12a",
+      "sizeBytes": 27469848,
+      "verifiedEntries": 5319
+    }
+  ],
+  "editorial": "25 Bulgarian approved-name corrections; original 68-record independent closure and final 11-record clean delta",
+  "records": "dist/1.17.30-final-20261031/ and dist/macos-launch-repair-20261031/",
+  "publication": {
+    "site": "https://vnrevival.fun",
+    "gameSlug": "stardew-valley",
+    "releaseVersion": "1.17.30",
+    "releaseDate": "2026-10-31T00:00:00.000Z",
+    "archivesAttached": {
+      "windows": {
+        "modFileId": 82,
+        "filename": "stardew-valley-windows-fa33e8d340f7.zip"
+      },
+      "macos": {
+        "modFileId": 83,
+        "filename": "stardew-valley-macos-5618fc084552.zip"
+      }
+    },
+    "archiveReadback": "both exact final archives returned SKIP through public CLI dry runs",
+    "cardApply": "three changes applied; cache invalidated; publication and visibility preserved",
+    "publicIntegrityGuideRegistry": "new archive evidence is not yet in the deployed site registry; no site deployment performed"
+  }
+}

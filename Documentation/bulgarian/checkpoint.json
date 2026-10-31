@@ -1894,15 +1894,20 @@
     "liveEnvironmentAfterQA": "installed Mods and user startup_preferences matched their pre-QA SHA-256 inventories byte-for-byte",
     "desktopSMAPILog": "Documentation/bulgarian/desktop-smapi-final.log"
   },
-  "releaseComplete": false,
+  "releaseComplete": true,
   "editorialRepair20261025": {
     "cycle": "Documentation/bulgarian/repairs/20261025-gus",
     "changedRecords": 14,
     "closureRecords": 68,
-    "status": "independent-diff-and-delta-review-passed-runtime-visual-pending",
+    "status": "editorial-runtime-visual-and-local-release-passed",
     "priorFullAuditsPreserved": true,
     "followupCycle": "Documentation/bulgarian/repairs/20261031-gus-variants",
     "totalChangedRecords": 25,
-    "independentReview": "Documentation/bulgarian/repairs/20261031-gus-variants/independent-review.json"
+    "independentReview": "Documentation/bulgarian/repairs/20261031-gus-variants/independent-review.json",
+    "releaseVersion": "1.17.30",
+    "runtimeVisualEvidence": "dist/macos-launch-repair-20261031/final-visual-verification.json",
+    "nativeGusDialogue": "passed: Гас; source-bound original and independent visual review retained",
+    "sourceCommit": "42ee049859be7953f75c54bf5d96278e88ad6a56",
+    "publication": "separate platform upload receipts in dist/macos-launch-repair-20261031/"
   }
 }

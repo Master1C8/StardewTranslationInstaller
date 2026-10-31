@@ -19,6 +19,8 @@ namespace VNRevival.VisualQADriver
         private string? capturePath;
         private bool captureBackgroundWaitLogged;
         private bool backgroundHiddenLogged;
+        private bool waitingForMoney;
+        private int settledMoneyTicks;
         private bool titleReady;
         private bool startupObserved;
         private bool bridgeMode;
@@ -144,6 +146,15 @@ namespace VNRevival.VisualQADriver
         {
             KeepGameHidden();
             if (Game1.options != null) Game1.options.pauseWhenOutOfFocus = false;
+            if (waitingForMoney && Context.IsWorldReady && Game1.dayTimeMoneyBox?.moneyDial is { } dial)
+            {
+                settledMoneyTicks = dial.currentValue == Game1.player.Money ? settledMoneyTicks + 1 : 0;
+                if (settledMoneyTicks >= 10)
+                {
+                    waitingForMoney = false;
+                    Monitor.Log($"VN_QA_STATE money-ready displayed={dial.currentValue} actual={Game1.player.Money}", LogLevel.Info);
+                }
+            }
             if (!titleReady && (!startupObserved || e.IsMultipleOf(600)))
             {
                 startupObserved = true;
@@ -226,6 +237,15 @@ namespace VNRevival.VisualQADriver
             }
             if (!Context.IsWorldReady)
                 throw new InvalidOperationException("Command requires the prepared world: " + command);
+            if (command == "wait-money")
+            {
+                // The normal HUD animates after QuickSave restores the balance.
+                // Wait in the world before a menu can pause that animation.
+                waitingForMoney = true;
+                settledMoneyTicks = 0;
+                Monitor.Log("VN_QA_WAIT_MONEY: waiting for the native HUD counter to reach the actual balance.", LogLevel.Info);
+                return;
+            }
             if (command == "dialogue")
             {
                 NPC gus = Game1.getCharacterFromName("Gus");

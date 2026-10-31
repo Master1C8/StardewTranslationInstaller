@@ -42,6 +42,9 @@ public sealed class ModEntry : Mod
     private static bool LoggedCharacterLabelLayout;
     private static bool LoggedLtrCharacterLabelLayout;
     private static bool LoggedInventoryDateLayout;
+    private static readonly HashSet<string> LoggedHudDateLayouts = new();
+    private static readonly FieldInfo HudDateText = AccessTools.Field(typeof(DayTimeMoneyBox), "_dateText")
+        ?? throw new MissingFieldException(typeof(DayTimeMoneyBox).FullName, "_dateText");
     private sealed record CharacterTextPlacement(string Text, Vector2 From, Vector2 To);
     [ThreadStatic]
     private static List<CharacterTextPlacement>? CharacterTextPlacements;
@@ -214,6 +217,14 @@ public sealed class ModEntry : Mod
             && method.GetParameters()[1].ParameterType == typeof(Texture2D)
             && method.GetParameters()[2].ParameterType == typeof(Rectangle)))
             harmony.Patch(method, prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeTooltipBox)));
+
+        foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(Utility)).Where(method =>
+            method.Name == nameof(Utility.drawTextWithShadow) && method.GetParameters().Length > 5
+            && method.GetParameters()[1].ParameterType == typeof(StringBuilder)
+            && method.GetParameters()[2].ParameterType == typeof(SpriteFont)
+            && method.GetParameters()[3].ParameterType == typeof(Vector2)
+            && method.GetParameters()[5].ParameterType == typeof(float)))
+            harmony.Patch(method, prefix: new HarmonyMethod(typeof(ModEntry), nameof(BeforeHudDateText)));
 
         // SpriteFont paragraphs (journal descriptions/objectives, among others)
         // are wrapped by parseText and drawn separately through Utility. Their
@@ -520,6 +531,36 @@ public sealed class ModEntry : Mod
             return new Vector2(x, position.Y);
         }
         return null;
+    }
+
+    private static Vector2 RtlHudDatePosition(Vector2 position, Vector2 size, Rectangle closeButton, float right)
+    {
+        const float padding = 8;
+        float left = closeButton.Right + padding;
+        bool overlaps = position.X < left && position.X + size.X > closeButton.Left - padding
+            && position.Y < closeButton.Bottom + padding && position.Y + size.Y > closeButton.Top - padding;
+        return overlaps && left + size.X <= right ? new Vector2(left, position.Y) : position;
+    }
+
+    private static void BeforeHudDateText(StringBuilder __1, SpriteFont __2, ref Vector2 __3, float __5)
+    {
+        ArabicScriptTextAdapter? adapter = CurrentRtlAdapter();
+        // Arabic's full weekday is wider than the accepted Persian/Hebrew HUD
+        // labels. Keep those verified layouts isolated from this repair.
+        if (TextRenderingDepth > 0 || adapter is null
+            || LocalizedContentManager.CurrentModLanguage?.LanguageCode != ArabicLanguageCode
+            || Game1.dayTimeMoneyBox is not { } hud
+            || !ReferenceEquals(__1, HudDateText.GetValue(hud))
+            || Game1.activeClickableMenu is not GameMenu menu || menu.currentTab != GameMenu.inventoryTab
+            || menu.upperRightCloseButton is not { } closeButton) return;
+        Vector2 size;
+        TextRenderingDepth += 1;
+        try { size = __2.MeasureString(adapter.Transform(__1.ToString())) * __5; }
+        finally { TextRenderingDepth -= 1; }
+        Vector2 original = __3;
+        __3 = RtlHudDatePosition(original, size, closeButton.bounds, Game1.uiViewport.Width - 8);
+        if (__3 != original && LoggedHudDateLayouts.Add(LocalizedContentManager.CurrentModLanguage!.LanguageCode))
+            ModMonitor?.Log($"HUD date clears inventory close control: locale={LocalizedContentManager.CurrentModLanguage.LanguageCode}, originalX={original.X}, x={__3.X}, width={size.X}, close={closeButton.bounds}, safeRight={Game1.uiViewport.Width - 8}.", LogLevel.Trace);
     }
 
     private static Exception? FinishCharacterCreationDraw(Exception? __exception, List<CharacterLabelState>? __state)

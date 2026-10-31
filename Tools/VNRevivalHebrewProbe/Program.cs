@@ -32,8 +32,28 @@ Check("English 123", "English 123");
 Check(string.Empty, string.Empty);
 CheckNestedRenderingPatch();
 CheckAsianWrapping();
+CheckHudDateGeometry();
 
 Console.WriteLine("RTL probe passed 9 Hebrew exact cases, layout/typewriter checks, real Harmony argument/forwarding and bounded SpriteFont paragraph checks for Hebrew, Arabic, and Persian; Asian SpriteFont wrapping preserves complete CJK/Thai and mixed text.");
+
+void CheckHudDateGeometry()
+{
+    MethodInfo move = typeof(ModEntry).GetMethod("RtlHudDatePosition", BindingFlags.Static | BindingFlags.NonPublic)!;
+    Rectangle close = new(1072, 32, 48, 48);
+    foreach (var test in new[] {
+        (new Vector2(1080,45), new Vector2(140,24), new Vector2(1128,45)),
+        (new Vector2(1130,45), new Vector2(100,24), new Vector2(1130,45)),
+        (new Vector2(1080,100), new Vector2(140,24), new Vector2(1080,100)),
+        (new Vector2(1080,45), new Vector2(144,24), new Vector2(1128,45)),
+        (new Vector2(1080,45), new Vector2(145,24), new Vector2(1080,45)),
+        (new Vector2(900,45), new Vector2(100,24), new Vector2(900,45)),
+    })
+    {
+        Vector2 result = (Vector2)move.Invoke(null, new object[] { test.Item1, test.Item2, close, 1272f })!;
+        if (result != test.Item3) throw new InvalidDataException("HUD date collision geometry failed.");
+    }
+    Console.WriteLine("HUD date geometry passed 6 overlap, isolation and viewport-boundary cases; real-game capture verifies the native prefix binding.");
+}
 
 void CheckAsianWrapping()
 {

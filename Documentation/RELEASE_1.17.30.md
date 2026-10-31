@@ -13,6 +13,12 @@ guards. Independent Bulgarian review covers the original 68-record dependency
 closure and the final 11-record correction delta; the original 14 changes and
 the 11 delta changes preserve every other translated value.
 
+Arabic's complete HUD weekday now moves into available horizontal space when
+its rendered bounds intersect the inventory-close control. The native font,
+date text, shadow and baseline are preserved. Persian/Hebrew layouts remain
+isolated. The capture bridge also waits for the native money dial to settle
+before opening world-scene menus, preventing transient balance inconsistencies.
+
 The native regression covers a current DLL beside a vanilla launcher with a
 commented SMAPI reference, missing/non-executable runtime and launcher files,
 and restored positive controls. Game-discovery fixtures use an isolated home

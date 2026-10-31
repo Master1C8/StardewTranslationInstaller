@@ -216,3 +216,18 @@ only a colliding caption into available space between portrait and field, retain
 the font/text and row height, and restores its native bounds after drawing.
 For a wide first word above the portrait’s lower ornament (Filipino `Paboritong\nBagay`), right-align the shorter second line with temporary leading spaces and preserve both words, two lines and font size. The first line uses the native input-border inset; the lower line still clears the ornament.
 Verify neighboring VN locales and built-in language isolation after this change.
+
+## Native HUD counter settling
+
+After QuickSave restoration, the HUD money dial animates toward the actual player
+balance. Opening inventory too early can freeze an intermediate HUD value beside
+the final inventory balance. The bridge sends `wait-money` while still in the
+world and requires the native `MoneyDial.currentValue` to equal `player.Money`
+for ten update ticks before opening a world-scene menu. It never assigns money
+or redraws the counter. The capture log records both values in
+`VN_QA_STATE money-ready`; evidence binds the driver source, assembly and runner.
+
+Regression: a restored 500g balance with a HUD still showing 270 must not enter
+the capture sequence. Wait for the ordinary animation, then verify that both
+the HUD and inventory display 500. Keep the earlier frame as needs-review and
+recapture only affected world surfaces. Passed title frames are unaffected.

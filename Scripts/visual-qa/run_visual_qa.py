@@ -436,6 +436,11 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
         (runtime / "raw").mkdir()
         trigger = runtime / "quickload.request"
         driver = build_smapi_driver(runtime, args.game_dir, csc)
+        driver_identity = {
+            "sourceSha256": sha256(SCRIPT_DIR / "SmapiDriver/VisualQADriver.cs"),
+            "assemblySha256": sha256(driver / "VNRevival.VisualQADriver.dll"),
+            "runnerSha256": sha256(SCRIPT_DIR / "run_visual_qa.py"),
+        }
         installed = install_smapi_driver(driver, args.game_dir)
         process = reader = None
         captured_log = ""
@@ -508,6 +513,7 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
                     command("title", "VN_QA_STATE title")
                 command("load", "VN_QA_STATE world", timeout=180)
                 command("quickload", "VN_QA_STATE world", timeout=180)
+                command("wait-money", "VN_QA_STATE money-ready", timeout=120)
                 if "03-gus-dialogue" in stems:
                     command("dialogue", "VN_QA_STATE dialogue")
                     time.sleep(8)
@@ -554,6 +560,8 @@ def run_bridge(args: argparse.Namespace, locales: list[dict[str, str]], package:
             "captureScope": "repair-scenes:" + ",".join(stem for stem, _ in captures) if selected else "complete-five-scenes",
             "method": "Project-owned SMAPI bridge; guarded scenes: " + ", ".join(stem for stem, _ in captures) + ". World scenes use the prepared normal save followed by QuickSave restoration. Native framebuffer captured without annotation or resizing; background activation verified per frame.",
             "saveHashesBefore": before, "saveHashesAfter": after,
+            "captureDriver": driver_identity,
+            "moneyCounterSettled": "VN_QA_STATE money-ready" in captured_log if stems.intersection({"03-gus-dialogue", "04-item-description", "05-journal"}) else None,
             "switcherSha256": sha256(args.game_dir / "Mods/[SMAPI] VN Revival Language Switcher/VNRevival.LanguageSwitcher.dll")})
         evidence.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n")
         print("Bridge visual QA complete: " + str(evidence))

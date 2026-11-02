@@ -228,3 +228,16 @@ Do not inherit passed runtime/visual status from a changed payload without
 verified applicability. An independent reviewer must be identifiable in the
 evidence; a self-reread or validator is not an independent audit. If independent
 review is unavailable under current permissions, leave that criterion pending.
+
+## Project archival after acceptance
+
+At whole-project completion, apply the global source-only archival rule in
+`/Users/antonkrutov/.codex/AGENTS.md`; editorial acceptance alone does not complete
+project archival. Retain the final version/hash bindings, coverage receipts, current
+immutable dependency lists and required clean independent-delta evidence. Keep a
+compact index in source; required referenced evidence must remain recoverable from
+its verified archive location. Retire intermediate records only after proving they
+are no longer dependencies of the retained acceptance or future repair path. Do not
+discard the only proof, fabricate replacement receipts or keep full model transcripts
+by default. Restore/build verification precedes source-only local cleanup and does
+not reopen unchanged accepted editorial work or authorize a game launch.

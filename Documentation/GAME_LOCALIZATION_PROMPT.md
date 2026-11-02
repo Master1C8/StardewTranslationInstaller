@@ -37,7 +37,9 @@ never leave the only completed result in a worktree. Reading this template alone
 start work or grant authority beyond the actual user request.
 
 CMS glossary publication, protected source-glossary edits, game publication/visibility/
-type changes, push and production deployment are excluded. They do not block local delivery.
+type changes and production deployment are excluded. They do not block local delivery.
+Project-final source/archive synchronization follows the workstation's mandatory
+source-only archival rule; honor explicit current-task restrictions on GitHub writes.
 Do not create another game card, repository or user task instead of working in the given project.
 
 ## 1. Start and resume
@@ -250,6 +252,16 @@ Do not apply Stardew's project-specific no-picker restriction to other games. Ac
 language selection remains separate from installing the complete finished language set.
 
 ## 7. Finish
+
+Archival is the final stage of the whole completed project under the global
+`workstation-source-only-archival` rule in `/Users/antonkrutov/.codex/AGENTS.md`.
+A finished locale does not archive an unfinished multilingual project. After the
+agreed delivery is accepted, retain the minimum verified GitHub source/build inputs,
+prove documented restoration and the normal build, then leave only the canonical
+editable source checkout locally. Do not replace minimization with a full work-folder
+backup. Keep required final acceptance evidence recoverable through a compact index.
+Missing restore/build evidence or excluded GitHub authority leaves project archival
+pending; preserve unique inputs and finish other authorized work without restarting jobs.
 
 Review final diff and unrelated-change preservation. Commit and integrate verified work into
 canonical checkouts under Git rules. Do not overwrite owner changes/divergence or hide permission

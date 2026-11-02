@@ -11,6 +11,8 @@ for tool in "$compiler" "$resource_compiler" "$image_converter" /usr/bin/sips /u
   [[ -x "$tool" ]] || { echo "Required build tool is missing: $tool" >&2; exit 1; }
 done
 
+"$project_dir/Scripts/build-language-switcher.sh"
+
 version="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$project_dir/App/Info.plist")"
 [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "Invalid application version: $version" >&2; exit 1; }
 version_parts=("${(@s:.:)version}")

@@ -13,12 +13,20 @@ concurrency:
 
 jobs:
   technical-audit:
-    runs-on: macos-14
+    runs-on: macos-15
     timeout-minutes: 30
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+
+      - name: Verify Apple toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+          swift package dump-package > /dev/null
 
       - name: Set up Node.js
         uses: actions/setup-node@v7
@@ -41,4 +49,4 @@ jobs:
         run: bash -n Scripts/audit-locale-data.sh Scripts/release-audit.sh Scripts/run-hebrew-rtl-probe.sh Scripts/run-language-switcher-probe.sh
 
       - name: Run installer tests
-        run: swift test --disable-sandbox
+        run: ./Scripts/test-swift.sh

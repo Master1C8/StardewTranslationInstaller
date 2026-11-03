@@ -32,3 +32,9 @@ tracked DLL merely to satisfy this unit test.
 `generate-unified-content.mjs` also owns all 28 Latin American Spanish texture
 loads. Regeneration must preserve the committed root byte-for-byte (SHA-256
 `f64872ecb78b448e7f238c62a6a99c196ad4affd72f5f83fad009e521db32f0f`).
+
+The technical CI runs on `macos-15` with Xcode 16.4 explicitly selected and uses
+`Scripts/test-swift.sh`, matching the local test entry point. It parses the Swift
+package manifest before expensive validation. Regression: the old `macos-14`
+default selected Swift 5.10, which cannot read this package's Swift 6 manifest;
+never lower the manifest version or skip the tests to accommodate that runner.

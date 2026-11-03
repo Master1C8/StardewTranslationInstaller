@@ -19,3 +19,16 @@ The superseded standalone working-copy recovery pack/ZIP is retained in normal
 Git history at `3b206fabbb6d038e75ba250acd57c52fab2a070f`, under
 `Documentation/Recovery/2026-10-06-working-copies`. It is not an active source
 folder or a current build dependency. All current authored mod files remain here.
+
+## Source-only CI regression
+
+CI must run from source with no generated language-switcher DLL/PDB. The Swift
+installer test uses a temporary, clearly marked library fixture and checks exact
+bytes after first install and replacement. It tests file installation, not CLR
+loading or gameplay. Real DLL compilation remains in both normal package builders
+and requires the documented game/SMAPI reference assemblies. Never restore a
+tracked DLL merely to satisfy this unit test.
+
+`generate-unified-content.mjs` also owns all 28 Latin American Spanish texture
+loads. Regeneration must preserve the committed root byte-for-byte (SHA-256
+`f64872ecb78b448e7f238c62a6a99c196ad4affd72f5f83fad009e521db32f0f`).

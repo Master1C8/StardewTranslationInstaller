@@ -316,6 +316,36 @@ const languages = [
     button: "assets/button-latin-american-spanish.png",
     title: "assets/title/TitleButtons-latin-american-spanish.png",
     fonts: "assets/fonts/es-419",
+    textureTargets: [
+      "LooseSprites/Billboard",
+      "LooseSprites/ControllerMaps",
+      "LooseSprites/Cursors",
+      "LooseSprites/JojaCDForm",
+      "LooseSprites/JunimoNote",
+      "LooseSprites/MobileAtlas_manually_made",
+      "Maps/DesertTiles",
+      "Maps/Festivals",
+      "Maps/bathhouse_tiles",
+      "Maps/coopTiles",
+      "Maps/fall_beach",
+      "Maps/fall_outdoorsTileSheet",
+      "Maps/fall_town",
+      "Maps/samshowtiles",
+      "Maps/spring_beach",
+      "Maps/spring_outdoorsTileSheet",
+      "Maps/spring_town",
+      "Maps/springobjects",
+      "Maps/summer_beach",
+      "Maps/summer_outdoorsTileSheet",
+      "Maps/summer_town",
+      "Maps/townInterior",
+      "Maps/winter_beach",
+      "Maps/winter_outdoorsTileSheet",
+      "Maps/winter_town",
+      "Minigames/Intro",
+      "Minigames/Xb1ProfileButton",
+      "Minigames/jojacorps",
+    ],
     useLatinFont: false,
     fontFile: "Fonts/LatinAmericanSpanish",
     fontPixelZoom: 1,
@@ -367,6 +397,15 @@ for (const language of languages) {
     TargetLocale: language.code,
     FromFile: language.title,
   });
+  // Keep authored texture loads in the recipe so regeneration preserves them.
+  for (const target of language.textureTargets ?? []) {
+    changes.push({
+      Action: "Load",
+      Target: target,
+      TargetLocale: language.code,
+      FromFile: `assets/textures/${language.directory}/${target}.xnb`,
+    });
+  }
   if (language.fonts) {
     for (const font of ["SpriteFont1", "SmallFont"]) {
       changes.push({

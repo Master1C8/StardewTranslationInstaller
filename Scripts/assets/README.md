@@ -68,7 +68,11 @@ language-switcher overlays on top.
 The same locale also reuses all other 28 Spanish `Texture2D` resources shipped
 with Stardew Valley 1.6.15: the localized `LooseSprites`, map tile sheets, and
 minigame art are stored under `ModPayload/assets/textures/es-419/`. They are
-loaded only for `es-419-vnrevival`. Text dictionaries and Spanish fonts are not
+loaded only for `es-419-vnrevival`. Their target list belongs in the language
+configuration in `Scripts/generate-unified-content.mjs`; never add root loads only
+to the generated `content.json`. Regression: regenerating the root must preserve
+all 28 locale-gated texture loads and leave the checked-in file byte-identical.
+Text dictionaries and Spanish fonts are not
 copied; the VN Revival translation and its generated font package remain
 authoritative. Import and verify the pinned assets with:
 

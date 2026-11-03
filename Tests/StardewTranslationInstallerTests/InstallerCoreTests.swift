@@ -763,8 +763,6 @@ struct InstallerCoreTests {
             "if (subMenu is not null\n            && !__instance.isTransitioningButtons\n            && subMenu.readyToClose()"
         ))
         expect(!switcherImplementation.contains("subMenu is not CharacterCustomization"))
-        let library = source.appendingPathComponent("VNRevival.LanguageSwitcher.dll")
-        try expect(try Data(contentsOf: library).count > 4_096)
         func imageDimensions(_ file: URL) throws -> (Int, Int) {
             let data = try Data(contentsOf: file)
             expect(data.count >= 24)
@@ -835,12 +833,26 @@ struct InstallerCoreTests {
         try Data().write(to: executable.appendingPathComponent("Stardew Valley.dll"))
         let installation = try require(InstallerCore().resolveInstallation(temporary))
 
-        try InstallerCore().installLanguageSwitcher(payload: source, into: installation)
+        // This tests installer file copying, independently of a local game/.NET build.
+        // Normal package builders compile the real DLL before bundling resources.
+        let fixture = temporary.appendingPathComponent("LanguageSwitcherFixture")
+        try fm.copyItem(at: source, to: fixture)
+        let libraryName = try require(manifest["EntryDll"] as? String)
+        let library = fixture.appendingPathComponent(libraryName)
+        let firstLibrary = Data("unit-test-library-fixture-v1".utf8)
+        try firstLibrary.write(to: library)
+
+        try InstallerCore().installLanguageSwitcher(payload: fixture, into: installation)
         let installed = installation.modsDirectory.appendingPathComponent(
             InstallerCore.languageSwitcherFolderName
         )
-        expect(fm.fileExists(atPath: installed.appendingPathComponent("manifest.json").path))
-        expect(fm.fileExists(atPath: installed.appendingPathComponent("VNRevival.LanguageSwitcher.dll").path))
+        try expect(try Data(contentsOf: installed.appendingPathComponent("manifest.json")) == manifestData)
+        try expect(try Data(contentsOf: installed.appendingPathComponent(libraryName)) == firstLibrary)
+
+        let updatedLibrary = Data("unit-test-library-fixture-v2".utf8)
+        try updatedLibrary.write(to: library)
+        try InstallerCore().installLanguageSwitcher(payload: fixture, into: installation)
+        try expect(try Data(contentsOf: installed.appendingPathComponent(libraryName)) == updatedLibrary)
     }
 
     @Test func testValidatesIncludedTranslationFiles() throws {
